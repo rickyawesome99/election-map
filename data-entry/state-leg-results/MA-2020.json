@@ -1,0 +1,1350 @@
+{
+ "house": {
+  "source": "Klarner SLERS 1967-2022",
+  "districts": {
+   "1st Essex": {
+    "demVotes": 13614,
+    "repVotes": 14537,
+    "othVotes": 0,
+    "totalVotes": 28151
+   },
+   "2nd Essex": {
+    "demVotes": 14272,
+    "repVotes": 15026,
+    "othVotes": 0,
+    "totalVotes": 29298
+   },
+   "3rd Essex": {
+    "demVotes": 14495,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 14495,
+    "uncontested": true
+   },
+   "4th Essex": {
+    "demVotes": 0,
+    "repVotes": 22556,
+    "othVotes": 0,
+    "totalVotes": 22556,
+    "uncontested": true
+   },
+   "5th Essex": {
+    "demVotes": 19860,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 19860,
+    "uncontested": true
+   },
+   "6th Essex": {
+    "demVotes": 17910,
+    "repVotes": 0,
+    "othVotes": 4526,
+    "totalVotes": 22436,
+    "uncontested": true
+   },
+   "7th Essex": {
+    "demVotes": 19802,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 19802,
+    "uncontested": true
+   },
+   "8th Essex": {
+    "demVotes": 20536,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 20536,
+    "uncontested": true
+   },
+   "9th Essex": {
+    "demVotes": 0,
+    "repVotes": 18936,
+    "othVotes": 0,
+    "totalVotes": 18936,
+    "uncontested": true
+   },
+   "10th Essex": {
+    "demVotes": 12510,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 12510,
+    "uncontested": true
+   },
+   "11th Essex": {
+    "demVotes": 12673,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 12673,
+    "uncontested": true
+   },
+   "12th Essex": {
+    "demVotes": 17578,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 17578,
+    "uncontested": true
+   },
+   "13th Essex": {
+    "demVotes": 11989,
+    "repVotes": 9617,
+    "othVotes": 4410,
+    "totalVotes": 26016
+   },
+   "14th Essex": {
+    "demVotes": 16355,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 16355,
+    "uncontested": true
+   },
+   "15th Essex": {
+    "demVotes": 17101,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 17101,
+    "uncontested": true
+   },
+   "16th Essex": {
+    "demVotes": 10251,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 10251,
+    "uncontested": true
+   },
+   "17th Essex": {
+    "demVotes": 12561,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 12561,
+    "uncontested": true
+   },
+   "18th Essex": {
+    "demVotes": 17224,
+    "repVotes": 10393,
+    "othVotes": 0,
+    "totalVotes": 27617
+   },
+   "1st Bristol": {
+    "demVotes": 10268,
+    "repVotes": 13092,
+    "othVotes": 0,
+    "totalVotes": 23360
+   },
+   "1st Hampden": {
+    "demVotes": 0,
+    "repVotes": 19073,
+    "othVotes": 0,
+    "totalVotes": 19073,
+    "uncontested": true
+   },
+   "1st Norfolk": {
+    "demVotes": 17072,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 17072,
+    "uncontested": true
+   },
+   "1st Suffolk": {
+    "demVotes": 12218,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 12218,
+    "uncontested": true
+   },
+   "2nd Bristol": {
+    "demVotes": 15940,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 15940,
+    "uncontested": true
+   },
+   "2nd Hampden": {
+    "demVotes": 19101,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 19101,
+    "uncontested": true
+   },
+   "2nd Norfolk": {
+    "demVotes": 16325,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 16325,
+    "uncontested": true
+   },
+   "2nd Suffolk": {
+    "demVotes": 14789,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 14789,
+    "uncontested": true
+   },
+   "3rd Bristol": {
+    "demVotes": 11505,
+    "repVotes": 8320,
+    "othVotes": 0,
+    "totalVotes": 19825
+   },
+   "3rd Hampden": {
+    "demVotes": 8305,
+    "repVotes": 13806,
+    "othVotes": 0,
+    "totalVotes": 22111
+   },
+   "3rd Norfolk": {
+    "demVotes": 14177,
+    "repVotes": 6534,
+    "othVotes": 0,
+    "totalVotes": 20711
+   },
+   "3rd Suffolk": {
+    "demVotes": 17954,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 17954,
+    "uncontested": true
+   },
+   "4th Bristol": {
+    "demVotes": 0,
+    "repVotes": 19346,
+    "othVotes": 0,
+    "totalVotes": 19346,
+    "uncontested": true
+   },
+   "4th Hampden": {
+    "demVotes": 7858,
+    "repVotes": 9476,
+    "othVotes": 1854,
+    "totalVotes": 19188
+   },
+   "4th Norfolk": {
+    "demVotes": 16257,
+    "repVotes": 7622,
+    "othVotes": 0,
+    "totalVotes": 23879
+   },
+   "4th Suffolk": {
+    "demVotes": 21375,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 21375,
+    "uncontested": true
+   },
+   "5th Bristol": {
+    "demVotes": 17809,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 17809,
+    "uncontested": true
+   },
+   "5th Hampden": {
+    "demVotes": 12714,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 12714,
+    "uncontested": true
+   },
+   "5th Norfolk": {
+    "demVotes": 14921,
+    "repVotes": 8190,
+    "othVotes": 0,
+    "totalVotes": 23111
+   },
+   "5th Suffolk": {
+    "demVotes": 13045,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 13045,
+    "uncontested": true
+   },
+   "6th Bristol": {
+    "demVotes": 12928,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 12928,
+    "uncontested": true
+   },
+   "6th Hampden": {
+    "demVotes": 13149,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 13149,
+    "uncontested": true
+   },
+   "6th Norfolk": {
+    "demVotes": 18504,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 18504,
+    "uncontested": true
+   },
+   "6th Suffolk": {
+    "demVotes": 14801,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 14801,
+    "uncontested": true
+   },
+   "7th Bristol": {
+    "demVotes": 9456,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 9456,
+    "uncontested": true
+   },
+   "7th Hampden": {
+    "demVotes": 11262,
+    "repVotes": 11093,
+    "othVotes": 0,
+    "totalVotes": 22355
+   },
+   "7th Norfolk": {
+    "demVotes": 18070,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 18070,
+    "uncontested": true
+   },
+   "7th Suffolk": {
+    "demVotes": 9570,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 9570,
+    "uncontested": true
+   },
+   "8th Bristol": {
+    "demVotes": 11751,
+    "repVotes": 8853,
+    "othVotes": 0,
+    "totalVotes": 20604
+   },
+   "8th Hampden": {
+    "demVotes": 14625,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 14625,
+    "uncontested": true
+   },
+   "8th Norfolk": {
+    "demVotes": 18941,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 18941,
+    "uncontested": true
+   },
+   "8th Suffolk": {
+    "demVotes": 17023,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 17023,
+    "uncontested": true
+   },
+   "9th Bristol": {
+    "demVotes": 15294,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 15294,
+    "uncontested": true
+   },
+   "9th Hampden": {
+    "demVotes": 12311,
+    "repVotes": 0,
+    "othVotes": 3056,
+    "totalVotes": 15367,
+    "uncontested": true
+   },
+   "9th Norfolk": {
+    "demVotes": 11243,
+    "repVotes": 15862,
+    "othVotes": 0,
+    "totalVotes": 27105
+   },
+   "9th Suffolk": {
+    "demVotes": 13674,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 13674,
+    "uncontested": true
+   },
+   "10th Bristol": {
+    "demVotes": 17297,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 17297,
+    "uncontested": true
+   },
+   "10th Hampden": {
+    "demVotes": 9484,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 9484,
+    "uncontested": true
+   },
+   "10th Norfolk": {
+    "demVotes": 19461,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 19461,
+    "uncontested": true
+   },
+   "10th Suffolk": {
+    "demVotes": 18102,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 18102,
+    "uncontested": true
+   },
+   "11th Bristol": {
+    "demVotes": 11780,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 11780,
+    "uncontested": true
+   },
+   "11th Hampden": {
+    "demVotes": 10566,
+    "repVotes": 2056,
+    "othVotes": 0,
+    "totalVotes": 12622
+   },
+   "11th Norfolk": {
+    "demVotes": 19990,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 19990,
+    "uncontested": true
+   },
+   "11th Suffolk": {
+    "demVotes": 18203,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 18203,
+    "uncontested": true
+   },
+   "12th Bristol": {
+    "demVotes": 0,
+    "repVotes": 16865,
+    "othVotes": 0,
+    "totalVotes": 16865,
+    "uncontested": true
+   },
+   "12th Hampden": {
+    "demVotes": 17422,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 17422,
+    "uncontested": true
+   },
+   "12th Norfolk": {
+    "demVotes": 18837,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 18837,
+    "uncontested": true
+   },
+   "12th Suffolk": {
+    "demVotes": 17310,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 17310,
+    "uncontested": true
+   },
+   "13th Bristol": {
+    "demVotes": 12198,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 12198,
+    "uncontested": true
+   },
+   "13th Norfolk": {
+    "demVotes": 21980,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 21980,
+    "uncontested": true
+   },
+   "13th Suffolk": {
+    "demVotes": 15482,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 15482,
+    "uncontested": true
+   },
+   "14th Bristol": {
+    "demVotes": 12406,
+    "repVotes": 10380,
+    "othVotes": 0,
+    "totalVotes": 22786
+   },
+   "14th Norfolk": {
+    "demVotes": 19558,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 19558,
+    "uncontested": true
+   },
+   "14th Suffolk": {
+    "demVotes": 18147,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 18147,
+    "uncontested": true
+   },
+   "15th Norfolk": {
+    "demVotes": 16796,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 16796,
+    "uncontested": true
+   },
+   "15th Suffolk": {
+    "demVotes": 16527,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 16527,
+    "uncontested": true
+   },
+   "16th Suffolk": {
+    "demVotes": 13621,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 13621,
+    "uncontested": true
+   },
+   "17th Suffolk": {
+    "demVotes": 14620,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 14620,
+    "uncontested": true
+   },
+   "18th Suffolk": {
+    "demVotes": 11591,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 11591,
+    "uncontested": true
+   },
+   "19th Suffolk": {
+    "demVotes": 13898,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 13898,
+    "uncontested": true
+   },
+   "1st Franklin": {
+    "demVotes": 21483,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 21483,
+    "uncontested": true
+   },
+   "1st Plymouth": {
+    "demVotes": 12062,
+    "repVotes": 15128,
+    "othVotes": 0,
+    "totalVotes": 27190
+   },
+   "2nd Franklin": {
+    "demVotes": 6907,
+    "repVotes": 0,
+    "othVotes": 14078,
+    "totalVotes": 20985,
+    "uncontested": true
+   },
+   "2nd Plymouth": {
+    "demVotes": 0,
+    "repVotes": 17954,
+    "othVotes": 0,
+    "totalVotes": 17954,
+    "uncontested": true
+   },
+   "3rd Plymouth": {
+    "demVotes": 20770,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 20770,
+    "uncontested": true
+   },
+   "4th Plymouth": {
+    "demVotes": 18186,
+    "repVotes": 9372,
+    "othVotes": 0,
+    "totalVotes": 27558
+   },
+   "5th Plymouth": {
+    "demVotes": 12913,
+    "repVotes": 13278,
+    "othVotes": 0,
+    "totalVotes": 26191
+   },
+   "6th Plymouth": {
+    "demVotes": 15986,
+    "repVotes": 11022,
+    "othVotes": 0,
+    "totalVotes": 27008
+   },
+   "7th Plymouth": {
+    "demVotes": 0,
+    "repVotes": 18369,
+    "othVotes": 0,
+    "totalVotes": 18369,
+    "uncontested": true
+   },
+   "8th Plymouth": {
+    "demVotes": 0,
+    "repVotes": 16461,
+    "othVotes": 0,
+    "totalVotes": 16461,
+    "uncontested": true
+   },
+   "9th Plymouth": {
+    "demVotes": 11743,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 11743,
+    "uncontested": true
+   },
+   "10th Plymouth": {
+    "demVotes": 14516,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 14516,
+    "uncontested": true
+   },
+   "11th Plymouth": {
+    "demVotes": 17186,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 17186,
+    "uncontested": true
+   },
+   "12th Plymouth": {
+    "demVotes": 14338,
+    "repVotes": 11850,
+    "othVotes": 0,
+    "totalVotes": 26188
+   },
+   "1st Berkshire": {
+    "demVotes": 16055,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 16055,
+    "uncontested": true
+   },
+   "1st Hampshire": {
+    "demVotes": 21280,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 21280,
+    "uncontested": true
+   },
+   "1st Middlesex": {
+    "demVotes": 12407,
+    "repVotes": 13203,
+    "othVotes": 0,
+    "totalVotes": 25610
+   },
+   "1st Worcester": {
+    "demVotes": 0,
+    "repVotes": 21981,
+    "othVotes": 0,
+    "totalVotes": 21981,
+    "uncontested": true
+   },
+   "2nd Berkshire": {
+    "demVotes": 18719,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 18719,
+    "uncontested": true
+   },
+   "2nd Hampshire": {
+    "demVotes": 20360,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 20360,
+    "uncontested": true
+   },
+   "2nd Middlesex": {
+    "demVotes": 21762,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 21762,
+    "uncontested": true
+   },
+   "2nd Worcester": {
+    "demVotes": 11646,
+    "repVotes": 8739,
+    "othVotes": 0,
+    "totalVotes": 20385
+   },
+   "3rd Berkshire": {
+    "demVotes": 15449,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 15449,
+    "uncontested": true
+   },
+   "3rd Hampshire": {
+    "demVotes": 12632,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 12632,
+    "uncontested": true
+   },
+   "3rd Middlesex": {
+    "demVotes": 21053,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 21053,
+    "uncontested": true
+   },
+   "3rd Worcester": {
+    "demVotes": 9770,
+    "repVotes": 7802,
+    "othVotes": 0,
+    "totalVotes": 17572
+   },
+   "4th Berkshire": {
+    "demVotes": 20269,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 20269,
+    "uncontested": true
+   },
+   "4th Middlesex": {
+    "demVotes": 13989,
+    "repVotes": 0,
+    "othVotes": 5691,
+    "totalVotes": 19680,
+    "uncontested": true
+   },
+   "4th Worcester": {
+    "demVotes": 12295,
+    "repVotes": 8710,
+    "othVotes": 0,
+    "totalVotes": 21005
+   },
+   "5th Middlesex": {
+    "demVotes": 22061,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 22061,
+    "uncontested": true
+   },
+   "5th Worcester": {
+    "demVotes": 8824,
+    "repVotes": 14609,
+    "othVotes": 0,
+    "totalVotes": 23433
+   },
+   "6th Middlesex": {
+    "demVotes": 17397,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 17397,
+    "uncontested": true
+   },
+   "6th Worcester": {
+    "demVotes": 0,
+    "repVotes": 15947,
+    "othVotes": 0,
+    "totalVotes": 15947,
+    "uncontested": true
+   },
+   "7th Middlesex": {
+    "demVotes": 14072,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 14072,
+    "uncontested": true
+   },
+   "7th Worcester": {
+    "demVotes": 0,
+    "repVotes": 14659,
+    "othVotes": 7993,
+    "totalVotes": 22652,
+    "uncontested": true
+   },
+   "8th Middlesex": {
+    "demVotes": 22069,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 22069,
+    "uncontested": true
+   },
+   "8th Worcester": {
+    "demVotes": 0,
+    "repVotes": 19911,
+    "othVotes": 0,
+    "totalVotes": 19911,
+    "uncontested": true
+   },
+   "9th Middlesex": {
+    "demVotes": 15590,
+    "repVotes": 0,
+    "othVotes": 5579,
+    "totalVotes": 21169,
+    "uncontested": true
+   },
+   "9th Worcester": {
+    "demVotes": 0,
+    "repVotes": 19528,
+    "othVotes": 0,
+    "totalVotes": 19528,
+    "uncontested": true
+   },
+   "10th Middlesex": {
+    "demVotes": 14054,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 14054,
+    "uncontested": true
+   },
+   "10th Worcester": {
+    "demVotes": 17732,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 17732,
+    "uncontested": true
+   },
+   "11th Middlesex": {
+    "demVotes": 18367,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 18367,
+    "uncontested": true
+   },
+   "11th Worcester": {
+    "demVotes": 0,
+    "repVotes": 19757,
+    "othVotes": 0,
+    "totalVotes": 19757,
+    "uncontested": true
+   },
+   "12th Middlesex": {
+    "demVotes": 17585,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 17585,
+    "uncontested": true
+   },
+   "12th Worcester": {
+    "demVotes": 13801,
+    "repVotes": 9700,
+    "othVotes": 0,
+    "totalVotes": 23501
+   },
+   "13th Middlesex": {
+    "demVotes": 17574,
+    "repVotes": 7899,
+    "othVotes": 0,
+    "totalVotes": 25473
+   },
+   "13th Worcester": {
+    "demVotes": 14651,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 14651,
+    "uncontested": true
+   },
+   "14th Middlesex": {
+    "demVotes": 21135,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 21135,
+    "uncontested": true
+   },
+   "14th Worcester": {
+    "demVotes": 14963,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 14963,
+    "uncontested": true
+   },
+   "15th Middlesex": {
+    "demVotes": 19865,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 19865,
+    "uncontested": true
+   },
+   "15th Worcester": {
+    "demVotes": 10212,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 10212,
+    "uncontested": true
+   },
+   "16th Middlesex": {
+    "demVotes": 14314,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 14314,
+    "uncontested": true
+   },
+   "16th Worcester": {
+    "demVotes": 10648,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 10648,
+    "uncontested": true
+   },
+   "17th Middlesex": {
+    "demVotes": 12481,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 12481,
+    "uncontested": true
+   },
+   "17th Worcester": {
+    "demVotes": 12162,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 12162,
+    "uncontested": true
+   },
+   "18th Middlesex": {
+    "demVotes": 8724,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 8724,
+    "uncontested": true
+   },
+   "18th Worcester": {
+    "demVotes": 0,
+    "repVotes": 18238,
+    "othVotes": 0,
+    "totalVotes": 18238,
+    "uncontested": true
+   },
+   "19th Middlesex": {
+    "demVotes": 14139,
+    "repVotes": 10919,
+    "othVotes": 0,
+    "totalVotes": 25058
+   },
+   "1st Barnstable": {
+    "demVotes": 12795,
+    "repVotes": 15623,
+    "othVotes": 0,
+    "totalVotes": 28418
+   },
+   "20th Middlesex": {
+    "demVotes": 9936,
+    "repVotes": 17623,
+    "othVotes": 0,
+    "totalVotes": 27559
+   },
+   "21st Middlesex": {
+    "demVotes": 19307,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 19307,
+    "uncontested": true
+   },
+   "22nd Middlesex": {
+    "demVotes": 10689,
+    "repVotes": 13232,
+    "othVotes": 0,
+    "totalVotes": 23921
+   },
+   "23rd Middlesex": {
+    "demVotes": 23221,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 23221,
+    "uncontested": true
+   },
+   "24th Middlesex": {
+    "demVotes": 21299,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 21299,
+    "uncontested": true
+   },
+   "25th Middlesex": {
+    "demVotes": 16168,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 16168,
+    "uncontested": true
+   },
+   "26th Middlesex": {
+    "demVotes": 18196,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 18196,
+    "uncontested": true
+   },
+   "27th Middlesex": {
+    "demVotes": 20549,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 20549,
+    "uncontested": true
+   },
+   "28th Middlesex": {
+    "demVotes": 12167,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 12167,
+    "uncontested": true
+   },
+   "29th Middlesex": {
+    "demVotes": 20611,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 20611,
+    "uncontested": true
+   },
+   "2nd Barnstable": {
+    "demVotes": 12481,
+    "repVotes": 10507,
+    "othVotes": 0,
+    "totalVotes": 22988
+   },
+   "30th Middlesex": {
+    "demVotes": 16742,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 16742,
+    "uncontested": true
+   },
+   "31st Middlesex": {
+    "demVotes": 17479,
+    "repVotes": 0,
+    "othVotes": 6921,
+    "totalVotes": 24400,
+    "uncontested": true
+   },
+   "32nd Middlesex": {
+    "demVotes": 19458,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 19458,
+    "uncontested": true
+   },
+   "33rd Middlesex": {
+    "demVotes": 13213,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 13213,
+    "uncontested": true
+   },
+   "34th Middlesex": {
+    "demVotes": 17668,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 17668,
+    "uncontested": true
+   },
+   "35th Middlesex": {
+    "demVotes": 16744,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 16744,
+    "uncontested": true
+   },
+   "36th Middlesex": {
+    "demVotes": 18680,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 18680,
+    "uncontested": true
+   },
+   "37th Middlesex": {
+    "demVotes": 16213,
+    "repVotes": 8903,
+    "othVotes": 0,
+    "totalVotes": 25116
+   },
+   "3rd Barnstable": {
+    "demVotes": 0,
+    "repVotes": 19938,
+    "othVotes": 0,
+    "totalVotes": 19938,
+    "uncontested": true
+   },
+   "4th Barnstable": {
+    "demVotes": 25210,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 25210,
+    "uncontested": true
+   },
+   "5th Barnstable": {
+    "demVotes": 12487,
+    "repVotes": 13606,
+    "othVotes": 0,
+    "totalVotes": 26093
+   },
+   "Barnstable-Dukes-Nantucket": {
+    "demVotes": 23565,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 23565,
+    "uncontested": true
+   }
+  }
+ },
+ "senate": {
+  "source": "Klarner SLERS 1967-2022",
+  "note": "8 district key(s) could not be matched to the boundary data's naming",
+  "districts": {
+   "Hampden": {
+    "demVotes": 44038,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 44038,
+    "uncontested": true
+   },
+   "First Essex": {
+    "demVotes": 72722,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 72722,
+    "uncontested": true
+   },
+   "Third Essex": {
+    "demVotes": 62381,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 62381,
+    "uncontested": true
+   },
+   "Second Essex": {
+    "demVotes": 75182,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 75182,
+    "uncontested": true
+   },
+   "First Suffolk": {
+    "demVotes": 67362,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 67362,
+    "uncontested": true
+   },
+   "Second Suffolk": {
+    "demVotes": 64557,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 64557,
+    "uncontested": true
+   },
+   "Fifth Middlesex": {
+    "demVotes": 68055,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 68055,
+    "uncontested": true
+   },
+   "First Middlesex": {
+    "demVotes": 56791,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 56791,
+    "uncontested": true
+   },
+   "First Worcester": {
+    "demVotes": 62439,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 62439,
+    "uncontested": true
+   },
+   "Third Middlesex": {
+    "demVotes": 74850,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 74850,
+    "uncontested": true
+   },
+   "plymouthnorfolk": {
+    "demVotes": 48236,
+    "repVotes": 58965,
+    "othVotes": 0,
+    "totalVotes": 107201
+   },
+   "Cape and Islands": {
+    "demVotes": 89721,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 89721,
+    "uncontested": true
+   },
+   "Fourth Middlesex": {
+    "demVotes": 74955,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 74955,
+    "uncontested": true
+   },
+   "Second Middlesex": {
+    "demVotes": 82607,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 82607,
+    "uncontested": true
+   },
+   "Second Worcester": {
+    "demVotes": 69126,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 69126,
+    "uncontested": true
+   },
+   "worcesternorfolk": {
+    "demVotes": 35651,
+    "repVotes": 54569,
+    "othVotes": 0,
+    "totalVotes": 90220
+   },
+   "plymouthbristol-1": {
+    "demVotes": 66680,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 66680,
+    "uncontested": true
+   },
+   "plymouthbristol-2": {
+    "demVotes": 60517,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 60517,
+    "uncontested": true
+   },
+   "Bristol and Norfolk": {
+    "demVotes": 68917,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 68917,
+    "uncontested": true
+   },
+   "Norfolk and Suffolk": {
+    "demVotes": 71595,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 71595,
+    "uncontested": true
+   },
+   "Norfolk and Plymouth": {
+    "demVotes": 53385,
+    "repVotes": 0,
+    "othVotes": 23469,
+    "totalVotes": 76854,
+    "uncontested": true
+   },
+   "Hampden and Hampshire": {
+    "demVotes": 117044,
+    "repVotes": 28078,
+    "othVotes": 0,
+    "totalVotes": 145122
+   },
+   "Middlesex and Norfolk": {
+    "demVotes": 141090,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 141090,
+    "uncontested": true
+   },
+   "Middlesex and Suffolk": {
+    "demVotes": 59047,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 59047,
+    "uncontested": true
+   },
+   "Suffolk and Middlesex": {
+    "demVotes": 118026,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 118026,
+    "uncontested": true
+   },
+   "norfolkbristolplymouth": {
+    "demVotes": 71530,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 71530,
+    "uncontested": true
+   },
+   "Middlesex and Worcester": {
+    "demVotes": 77958,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 77958,
+    "uncontested": true
+   },
+   "Plymouth and Barnstable": {
+    "demVotes": 56962,
+    "repVotes": 44201,
+    "othVotes": 0,
+    "totalVotes": 101163
+   },
+   "Worcester and Middlesex": {
+    "demVotes": 42188,
+    "repVotes": 40558,
+    "othVotes": 0,
+    "totalVotes": 82746
+   },
+   "norfolkbristolmiddlesex": {
+    "demVotes": 58320,
+    "repVotes": 39290,
+    "othVotes": 0,
+    "totalVotes": 97610
+   },
+   "First Essex and Middlesex": {
+    "demVotes": 0,
+    "repVotes": 86565,
+    "othVotes": 0,
+    "totalVotes": 86565,
+    "uncontested": true
+   },
+   "First Bristol and Plymouth": {
+    "demVotes": 57205,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 57205,
+    "uncontested": true
+   },
+   "Second Essex and Middlesex": {
+    "demVotes": 60176,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 60176,
+    "uncontested": true
+   },
+   "Second Bristol and Plymouth": {
+    "demVotes": 55159,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 55159,
+    "uncontested": true
+   },
+   "Hampshire-Franklin-Worcester": {
+    "demVotes": 68001,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 68001,
+    "uncontested": true
+   },
+   "berkshirehampshirefranklinhampden": {
+    "demVotes": 68973,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 68973,
+    "uncontested": true
+   },
+   "worcesterhampdenhampshiremiddlesex": {
+    "demVotes": 48299,
+    "repVotes": 43117,
+    "othVotes": 0,
+    "totalVotes": 91416
+   }
+  }
+ }
+}

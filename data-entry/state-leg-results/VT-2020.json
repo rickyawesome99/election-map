@@ -1,0 +1,614 @@
+{
+ "house": {
+  "source": "Klarner SLERS 1967-2022",
+  "note": "5 district key(s) could not be matched to the boundary data's naming",
+  "districts": {
+   "Orange-1": {
+    "demVotes": 3296,
+    "repVotes": 3943,
+    "othVotes": 1081,
+    "totalVotes": 8320
+   },
+   "Orange-2": {
+    "demVotes": 1439,
+    "repVotes": 963,
+    "othVotes": 0,
+    "totalVotes": 2402
+   },
+   "Addison-1": {
+    "demVotes": 6011,
+    "repVotes": 1042,
+    "othVotes": 0,
+    "totalVotes": 7053
+   },
+   "Addison-2": {
+    "demVotes": 1984,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 1984,
+    "uncontested": true
+   },
+   "Addison-3": {
+    "demVotes": 5074,
+    "repVotes": 3710,
+    "othVotes": 0,
+    "totalVotes": 8784
+   },
+   "Addison-4": {
+    "demVotes": 6018,
+    "repVotes": 3695,
+    "othVotes": 0,
+    "totalVotes": 9713
+   },
+   "Addison-5": {
+    "demVotes": 1127,
+    "repVotes": 1331,
+    "othVotes": 0,
+    "totalVotes": 2458
+   },
+   "Orleans-1": {
+    "demVotes": 0,
+    "repVotes": 5797,
+    "othVotes": 0,
+    "totalVotes": 5797,
+    "uncontested": true
+   },
+   "Orleans-2": {
+    "demVotes": 0,
+    "repVotes": 5725,
+    "othVotes": 0,
+    "totalVotes": 5725,
+    "uncontested": true
+   },
+   "Rutland-1": {
+    "demVotes": 0,
+    "repVotes": 1283,
+    "othVotes": 513,
+    "totalVotes": 1796,
+    "uncontested": true
+   },
+   "Rutland-2": {
+    "demVotes": 4003,
+    "repVotes": 4616,
+    "othVotes": 0,
+    "totalVotes": 8619
+   },
+   "Rutland-3": {
+    "demVotes": 1671,
+    "repVotes": 4811,
+    "othVotes": 0,
+    "totalVotes": 6482
+   },
+   "Rutland-4": {
+    "demVotes": 1107,
+    "repVotes": 1306,
+    "othVotes": 0,
+    "totalVotes": 2413
+   },
+   "Rutland-5": {
+    "demVotes": 1826,
+    "repVotes": 5024,
+    "othVotes": 0,
+    "totalVotes": 6850
+   },
+   "Rutland-6": {
+    "demVotes": 2112,
+    "repVotes": 4672,
+    "othVotes": 0,
+    "totalVotes": 6784
+   },
+   "Windham-1": {
+    "demVotes": 2136,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 2136,
+    "uncontested": true
+   },
+   "Windham-2": {
+    "demVotes": 5351,
+    "repVotes": 560,
+    "othVotes": 0,
+    "totalVotes": 5911
+   },
+   "Windham-3": {
+    "demVotes": 4214,
+    "repVotes": 0,
+    "othVotes": 1295,
+    "totalVotes": 5509,
+    "uncontested": true
+   },
+   "Windham-4": {
+    "demVotes": 6616,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 6616,
+    "uncontested": true
+   },
+   "Windham-5": {
+    "demVotes": 2037,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 2037,
+    "uncontested": true
+   },
+   "Windham-6": {
+    "demVotes": 1324,
+    "repVotes": 906,
+    "othVotes": 0,
+    "totalVotes": 2230
+   },
+   "Windsor-1": {
+    "demVotes": 4883,
+    "repVotes": 2628,
+    "othVotes": 691,
+    "totalVotes": 8202
+   },
+   "Windsor-2": {
+    "demVotes": 1101,
+    "repVotes": 1059,
+    "othVotes": 309,
+    "totalVotes": 2469
+   },
+   "Windsor-3": {
+    "demVotes": 5870,
+    "repVotes": 3810,
+    "othVotes": 0,
+    "totalVotes": 9680
+   },
+   "Windsor-4": {
+    "demVotes": 7103,
+    "repVotes": 2433,
+    "othVotes": 666,
+    "totalVotes": 10202
+   },
+   "Windsor-5": {
+    "demVotes": 2454,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 2454,
+    "uncontested": true
+   },
+   "Franklin-1": {
+    "demVotes": 0,
+    "repVotes": 1623,
+    "othVotes": 1192,
+    "totalVotes": 2815,
+    "uncontested": true
+   },
+   "Franklin-2": {
+    "demVotes": 0,
+    "repVotes": 0,
+    "othVotes": 2484,
+    "totalVotes": 2484,
+    "uncontested": true
+   },
+   "Franklin-3": {
+    "demVotes": 3296,
+    "repVotes": 5796,
+    "othVotes": 265,
+    "totalVotes": 9357
+   },
+   "Franklin-4": {
+    "demVotes": 1422,
+    "repVotes": 4900,
+    "othVotes": 0,
+    "totalVotes": 6322
+   },
+   "Franklin-5": {
+    "demVotes": 2275,
+    "repVotes": 4427,
+    "othVotes": 0,
+    "totalVotes": 6702
+   },
+   "Franklin-6": {
+    "demVotes": 0,
+    "repVotes": 2287,
+    "othVotes": 0,
+    "totalVotes": 2287,
+    "uncontested": true
+   },
+   "Franklin-7": {
+    "demVotes": 820,
+    "repVotes": 1178,
+    "othVotes": 0,
+    "totalVotes": 1998
+   },
+   "Lamoille-1": {
+    "demVotes": 1403,
+    "repVotes": 1925,
+    "othVotes": 0,
+    "totalVotes": 3328
+   },
+   "Lamoille-2": {
+    "demVotes": 4468,
+    "repVotes": 2793,
+    "othVotes": 0,
+    "totalVotes": 7261
+   },
+   "Lamoille-3": {
+    "demVotes": 1903,
+    "repVotes": 695,
+    "othVotes": 0,
+    "totalVotes": 2598
+   },
+   "Caledonia-1": {
+    "demVotes": 0,
+    "repVotes": 1547,
+    "othVotes": 876,
+    "totalVotes": 2423,
+    "uncontested": true
+   },
+   "Caledonia-2": {
+    "demVotes": 1305,
+    "repVotes": 905,
+    "othVotes": 0,
+    "totalVotes": 2210
+   },
+   "Caledonia-3": {
+    "demVotes": 2776,
+    "repVotes": 3013,
+    "othVotes": 0,
+    "totalVotes": 5789
+   },
+   "Caledonia-4": {
+    "demVotes": 2568,
+    "repVotes": 4055,
+    "othVotes": 0,
+    "totalVotes": 6623
+   },
+   "Bennington-1": {
+    "demVotes": 1324,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 1324,
+    "uncontested": true
+   },
+   "Bennington-2": {
+    "demVotes": 7016,
+    "repVotes": 3056,
+    "othVotes": 773,
+    "totalVotes": 10845
+   },
+   "Bennington-3": {
+    "demVotes": 1331,
+    "repVotes": 967,
+    "othVotes": 0,
+    "totalVotes": 2298
+   },
+   "Bennington-4": {
+    "demVotes": 5448,
+    "repVotes": 0,
+    "othVotes": 2111,
+    "totalVotes": 7559,
+    "uncontested": true
+   },
+   "Chittenden-1": {
+    "demVotes": 1800,
+    "repVotes": 0,
+    "othVotes": 937,
+    "totalVotes": 2737,
+    "uncontested": true
+   },
+   "Chittenden-2": {
+    "demVotes": 7794,
+    "repVotes": 2647,
+    "othVotes": 0,
+    "totalVotes": 10441
+   },
+   "Chittenden-3": {
+    "demVotes": 6744,
+    "repVotes": 3235,
+    "othVotes": 526,
+    "totalVotes": 10505
+   },
+   "Chittenden-4": {
+    "demVotes": 4205,
+    "repVotes": 963,
+    "othVotes": 0,
+    "totalVotes": 5168
+   },
+   "Chittenden-5": {
+    "demVotes": 4753,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 4753,
+    "uncontested": true
+   },
+   "Chittenden-6": {
+    "demVotes": 32451,
+    "repVotes": 0,
+    "othVotes": 1883,
+    "totalVotes": 34334,
+    "uncontested": true
+   },
+   "Chittenden-7": {
+    "demVotes": 9528,
+    "repVotes": 1015,
+    "othVotes": 0,
+    "totalVotes": 10543
+   },
+   "Chittenden-8": {
+    "demVotes": 14264,
+    "repVotes": 7904,
+    "othVotes": 605,
+    "totalVotes": 22773
+   },
+   "Chittenden-9": {
+    "demVotes": 6649,
+    "repVotes": 7178,
+    "othVotes": 0,
+    "totalVotes": 13827
+   },
+   "Washington-1": {
+    "demVotes": 2495,
+    "repVotes": 4116,
+    "othVotes": 251,
+    "totalVotes": 6862
+   },
+   "Washington-2": {
+    "demVotes": 0,
+    "repVotes": 6863,
+    "othVotes": 0,
+    "totalVotes": 6863,
+    "uncontested": true
+   },
+   "Washington-3": {
+    "demVotes": 3711,
+    "repVotes": 2648,
+    "othVotes": 0,
+    "totalVotes": 6359
+   },
+   "Washington-4": {
+    "demVotes": 7086,
+    "repVotes": 0,
+    "othVotes": 1107,
+    "totalVotes": 8193,
+    "uncontested": true
+   },
+   "Washington-5": {
+    "demVotes": 1991,
+    "repVotes": 0,
+    "othVotes": 769,
+    "totalVotes": 2760,
+    "uncontested": true
+   },
+   "Washington-6": {
+    "demVotes": 1929,
+    "repVotes": 0,
+    "othVotes": 769,
+    "totalVotes": 2698,
+    "uncontested": true
+   },
+   "Washington-7": {
+    "demVotes": 8017,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 8017,
+    "uncontested": true
+   },
+   "Chittenden-10": {
+    "demVotes": 3431,
+    "repVotes": 5302,
+    "othVotes": 409,
+    "totalVotes": 9142
+   },
+   "windsorrutland": {
+    "demVotes": 1522,
+    "repVotes": 1069,
+    "othVotes": 0,
+    "totalVotes": 2591
+   },
+   "Addison-Rutland": {
+    "demVotes": 725,
+    "repVotes": 0,
+    "othVotes": 1438,
+    "totalVotes": 2163,
+    "uncontested": true
+   },
+   "Essex-Caledonia": {
+    "demVotes": 732,
+    "repVotes": 1229,
+    "othVotes": 0,
+    "totalVotes": 1961
+   },
+   "Windsororange-1": {
+    "demVotes": 1868,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 1868,
+    "uncontested": true
+   },
+   "Windsororange-2": {
+    "demVotes": 9429,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 9429,
+    "uncontested": true
+   },
+   "Orange-Caledonia": {
+    "demVotes": 1013,
+    "repVotes": 1321,
+    "othVotes": 0,
+    "totalVotes": 2334
+   },
+   "Orleans-Lamoille": {
+    "demVotes": 0,
+    "repVotes": 2003,
+    "othVotes": 0,
+    "totalVotes": 2003,
+    "uncontested": true
+   },
+   "Rutlandwindsor-1": {
+    "demVotes": 0,
+    "repVotes": 2641,
+    "othVotes": 0,
+    "totalVotes": 2641,
+    "uncontested": true
+   },
+   "Rutlandwindsor-2": {
+    "demVotes": 2091,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 2091,
+    "uncontested": true
+   },
+   "orleanscaledonia": {
+    "demVotes": 3430,
+    "repVotes": 4008,
+    "othVotes": 278,
+    "totalVotes": 7716
+   },
+   "windhambennington": {
+    "demVotes": 0,
+    "repVotes": 867,
+    "othVotes": 1520,
+    "totalVotes": 2387,
+    "uncontested": true
+   },
+   "Bennington-Rutland": {
+    "demVotes": 2235,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 2235,
+    "uncontested": true
+   },
+   "Rutland-Bennington": {
+    "demVotes": 1385,
+    "repVotes": 1417,
+    "othVotes": 0,
+    "totalVotes": 2802
+   },
+   "Lamoille-Washington": {
+    "demVotes": 5890,
+    "repVotes": 2523,
+    "othVotes": 0,
+    "totalVotes": 8413
+   },
+   "Caledonia-Washington": {
+    "demVotes": 1931,
+    "repVotes": 878,
+    "othVotes": 0,
+    "totalVotes": 2809
+   },
+   "Grand Isle-Chittenden": {
+    "demVotes": 5011,
+    "repVotes": 5403,
+    "othVotes": 0,
+    "totalVotes": 10414
+   },
+   "Washington-Chittenden": {
+    "demVotes": 6884,
+    "repVotes": 1188,
+    "othVotes": 1417,
+    "totalVotes": 9489
+   },
+   "essexcaledoniaorleans": {
+    "demVotes": 958,
+    "repVotes": 0,
+    "othVotes": 1067,
+    "totalVotes": 2025,
+    "uncontested": true
+   },
+   "windhambenningtonwindsor": {
+    "demVotes": 0,
+    "repVotes": 0,
+    "othVotes": 2539,
+    "totalVotes": 2539,
+    "uncontested": true
+   },
+   "Orange-Washington-Addison": {
+    "demVotes": 4552,
+    "repVotes": 2196,
+    "othVotes": 1436,
+    "totalVotes": 8184
+   }
+  }
+ },
+ "senate": {
+  "source": "Klarner SLERS 1967-2022",
+  "note": "2 district key(s) could not be matched to the boundary data's naming",
+  "districts": {
+   "Orange": {
+    "demVotes": 6420,
+    "repVotes": 5321,
+    "othVotes": 0,
+    "totalVotes": 11741
+   },
+   "Addison": {
+    "demVotes": 25585,
+    "repVotes": 13449,
+    "othVotes": 0,
+    "totalVotes": 39034
+   },
+   "Rutland": {
+    "demVotes": 31810,
+    "repVotes": 40697,
+    "othVotes": 8558,
+    "totalVotes": 81065
+   },
+   "Windham": {
+    "demVotes": 28203,
+    "repVotes": 8624,
+    "othVotes": 1499,
+    "totalVotes": 38326
+   },
+   "Windsor": {
+    "demVotes": 53287,
+    "repVotes": 19334,
+    "othVotes": 8931,
+    "totalVotes": 81552
+   },
+   "Franklin": {
+    "demVotes": 0,
+    "repVotes": 31510,
+    "othVotes": 7997,
+    "totalVotes": 39507,
+    "uncontested": true
+   },
+   "Lamoille": {
+    "demVotes": 0,
+    "repVotes": 11477,
+    "othVotes": 0,
+    "totalVotes": 11477,
+    "uncontested": true
+   },
+   "Caledonia": {
+    "demVotes": 17627,
+    "repVotes": 15615,
+    "othVotes": 1255,
+    "totalVotes": 34497
+   },
+   "Bennington": {
+    "demVotes": 21546,
+    "repVotes": 11932,
+    "othVotes": 1943,
+    "totalVotes": 35421
+   },
+   "Grand Isle": {
+    "demVotes": 11241,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 11241,
+    "uncontested": true
+   },
+   "Washington": {
+    "demVotes": 53388,
+    "repVotes": 27562,
+    "othVotes": 2678,
+    "totalVotes": 83628
+   },
+   "chittenden": {
+    "demVotes": 269276,
+    "repVotes": 112831,
+    "othVotes": 11919,
+    "totalVotes": 394026
+   },
+   "essexorleans": {
+    "demVotes": 13768,
+    "repVotes": 13093,
+    "othVotes": 5033,
+    "totalVotes": 31894
+   }
+  }
+ }
+}

@@ -217,6 +217,10 @@ def parse_year(year):
     heads = list(DISTRICT_HEAD.finditer(wt))
     out = {"D": 0, "R": 0, "O": 0}
     won = {"D": 0, "R": 0, "O": 0}
+    # Same tallies kept per district, for Phase 3's data-entry/state-leg-results/NE-{year}.json.
+    # Neither other source can supply Nebraska at district level either: Klarner omits the state
+    # and MEDSL records every NE candidate as NONPARTISAN, so this parse is the only one there is.
+    by_dist = {}
     unattributed = []
     n = 0
     for i, h in enumerate(heads):
@@ -224,8 +228,10 @@ def parse_year(year):
         m = GENERAL_MARKER.search(block)
         if m:
             block = block[m.end():]
+        d = by_dist.setdefault(h.group(1), {"D": 0, "R": 0, "O": 0})
         for party, votes in CAND_BOX.findall(block):
             out[bucket(party)] += int(votes.replace(",", ""))
+            d[bucket(party)] += int(votes.replace(",", ""))
             n += 1
         for party in WINNER_BOX.findall(block):
             won[bucket(party)] += 1
@@ -239,10 +245,46 @@ def parse_year(year):
                     unattributed.append((dist, nm.strip(), votes))
                     p = "O"
                 out[p] += votes
+                d[p] += votes
                 n += 1
                 if is_winner:
                     won[p] += 1
-    return out, n, len(heads), won, unattributed
+    by_dist = {k: v for k, v in by_dist.items() if sum(v.values()) > 0}
+    return out, n, len(heads), won, unattributed, by_dist
+
+
+RESULTS_DIR = os.path.join(REPO, "data-entry", "state-leg-results")
+
+
+def write_districts(parsed):
+    """Emit each year's per-district tallies as a Phase 3 state-leg-results file.
+
+    Nebraska's unicameral body is filed under the `senate` chamber key everywhere in the
+    boundary data (Census classifies it SLDU), even though state_leg.csv carries its statewide
+    row under "House". Writing it under `house` here would leave the map unable to find it.
+    """
+    os.makedirs(RESULTS_DIR, exist_ok=True)
+    for year, (_v, _total, _won, by_dist) in sorted(parsed.items()):
+        if not by_dist:
+            print(f"{year}: no per-district tallies parsed, skipping")
+            continue
+        payload = {
+            "senate": {
+                "source": "Wikipedia district tables (party = endorsement; NE ballot is nonpartisan)",
+                "districts": {
+                    k: {"demVotes": c["D"], "repVotes": c["R"], "othVotes": c["O"],
+                        "totalVotes": c["D"] + c["R"] + c["O"]}
+                    for k, c in sorted(by_dist.items(), key=lambda kv: int(kv[0]))
+                },
+            }
+        }
+        path = os.path.join(RESULTS_DIR, f"NE-{year}.json")
+        existing = json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {}
+        existing.update(payload)
+        with open(path, "w", encoding="utf-8") as fh:
+            json.dump(existing, fh, indent=1)
+            fh.write("\n")
+        print(f"{year}: wrote {len(by_dist)} districts -> {path}")
 
 
 def main():
@@ -250,14 +292,16 @@ def main():
     g = ap.add_mutually_exclusive_group(required=True)
     g.add_argument("--validate", action="store_true")
     g.add_argument("--write", action="store_true")
+    g.add_argument("--districts", action="store_true",
+                   help="write per-district results to data-entry/state-leg-results/NE-{year}.json")
     args = ap.parse_args()
 
     parsed = {}
     print(f"{'year':6s}{'cands':>6}{'dists':>6}{'D':>10}{'R':>10}{'O':>9}{'total':>10}   check")
     for y in YEARS:
-        v, n, d, won, unattr = parse_year(y)
+        v, n, d, won, unattr, by_dist = parse_year(y)
         total = sum(v.values())
-        parsed[y] = (v, total, won)
+        parsed[y] = (v, total, won, by_dist)
         check = ""
         if y in STATED:
             s = STATED[y]
@@ -268,6 +312,10 @@ def main():
               f"   won {won['D']}D/{won['R']}R/{won['O']}O   {check}")
         for u in unattr:
             print(f"        UNATTRIBUTED  district {u[0]:>3s}  {u[1]:28s}{u[2]:>8,}")
+
+    if args.districts:
+        write_districts(parsed)
+        return
 
     if not args.write:
         return
@@ -283,7 +331,7 @@ def main():
         y = int(r["year"])
         if y not in parsed:
             continue
-        v, total, won = parsed[y]
+        v, total, won, _by_dist = parsed[y]
         if total <= 0:
             continue
         if sum(won.values()):

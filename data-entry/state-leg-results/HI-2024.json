@@ -1,0 +1,271 @@
+{
+ "house": {
+  "source": "MEDSL State Precinct-Level Returns 2024",
+  "note": "only 35 of 51 districts appear; states that declare unopposed candidates elected print no vote count",
+  "districts": {
+   "3": {
+    "demVotes": 5821,
+    "repVotes": 2793,
+    "othVotes": 276,
+    "totalVotes": 8890
+   },
+   "4": {
+    "demVotes": 6573,
+    "repVotes": 2825,
+    "othVotes": 0,
+    "totalVotes": 9398
+   },
+   "5": {
+    "demVotes": 5737,
+    "repVotes": 3466,
+    "othVotes": 300,
+    "totalVotes": 9503
+   },
+   "6": {
+    "demVotes": 6221,
+    "repVotes": 3891,
+    "othVotes": 0,
+    "totalVotes": 10112
+   },
+   "7": {
+    "demVotes": 4920,
+    "repVotes": 3953,
+    "othVotes": 0,
+    "totalVotes": 8873
+   },
+   "8": {
+    "demVotes": 6331,
+    "repVotes": 3822,
+    "othVotes": 0,
+    "totalVotes": 10153
+   },
+   "11": {
+    "demVotes": 6657,
+    "repVotes": 3521,
+    "othVotes": 0,
+    "totalVotes": 10178
+   },
+   "12": {
+    "demVotes": 7794,
+    "repVotes": 3197,
+    "othVotes": 841,
+    "totalVotes": 11832
+   },
+   "13": {
+    "demVotes": 7174,
+    "repVotes": 2577,
+    "othVotes": 0,
+    "totalVotes": 9751
+   },
+   "14": {
+    "demVotes": 4303,
+    "repVotes": 3338,
+    "othVotes": 0,
+    "totalVotes": 7641
+   },
+   "15": {
+    "demVotes": 6656,
+    "repVotes": 2692,
+    "othVotes": 0,
+    "totalVotes": 9348
+   },
+   "16": {
+    "demVotes": 6479,
+    "repVotes": 2848,
+    "othVotes": 0,
+    "totalVotes": 9327
+   },
+   "17": {
+    "demVotes": 6450,
+    "repVotes": 2638,
+    "othVotes": 0,
+    "totalVotes": 9088
+   },
+   "20": {
+    "demVotes": 7556,
+    "repVotes": 3362,
+    "othVotes": 0,
+    "totalVotes": 10918
+   },
+   "21": {
+    "demVotes": 8129,
+    "repVotes": 2491,
+    "othVotes": 0,
+    "totalVotes": 10620
+   },
+   "22": {
+    "demVotes": 8427,
+    "repVotes": 2272,
+    "othVotes": 0,
+    "totalVotes": 10699
+   },
+   "24": {
+    "demVotes": 5973,
+    "repVotes": 2862,
+    "othVotes": 0,
+    "totalVotes": 8835
+   },
+   "27": {
+    "demVotes": 7928,
+    "repVotes": 3501,
+    "othVotes": 0,
+    "totalVotes": 11429
+   },
+   "29": {
+    "demVotes": 4068,
+    "repVotes": 1944,
+    "othVotes": 0,
+    "totalVotes": 6012
+   },
+   "30": {
+    "demVotes": 3397,
+    "repVotes": 1515,
+    "othVotes": 0,
+    "totalVotes": 4912
+   },
+   "31": {
+    "demVotes": 5579,
+    "repVotes": 2505,
+    "othVotes": 0,
+    "totalVotes": 8084
+   },
+   "32": {
+    "demVotes": 4518,
+    "repVotes": 4596,
+    "othVotes": 0,
+    "totalVotes": 9114
+   },
+   "34": {
+    "demVotes": 6840,
+    "repVotes": 3161,
+    "othVotes": 0,
+    "totalVotes": 10001
+   },
+   "37": {
+    "demVotes": 8770,
+    "repVotes": 4066,
+    "othVotes": 0,
+    "totalVotes": 12836
+   },
+   "38": {
+    "demVotes": 3418,
+    "repVotes": 8776,
+    "othVotes": 0,
+    "totalVotes": 12194
+   },
+   "39": {
+    "demVotes": 4701,
+    "repVotes": 4712,
+    "othVotes": 0,
+    "totalVotes": 9413
+   },
+   "40": {
+    "demVotes": 3836,
+    "repVotes": 4300,
+    "othVotes": 253,
+    "totalVotes": 8389
+   },
+   "41": {
+    "demVotes": 3840,
+    "repVotes": 5474,
+    "othVotes": 0,
+    "totalVotes": 9314
+   },
+   "42": {
+    "demVotes": 3646,
+    "repVotes": 4802,
+    "othVotes": 0,
+    "totalVotes": 8448
+   },
+   "45": {
+    "demVotes": 2914,
+    "repVotes": 3123,
+    "othVotes": 0,
+    "totalVotes": 6037
+   },
+   "46": {
+    "demVotes": 5432,
+    "repVotes": 3943,
+    "othVotes": 0,
+    "totalVotes": 9375
+   },
+   "47": {
+    "demVotes": 4616,
+    "repVotes": 3405,
+    "othVotes": 0,
+    "totalVotes": 8021
+   },
+   "48": {
+    "demVotes": 8578,
+    "repVotes": 0,
+    "othVotes": 1791,
+    "totalVotes": 10369
+   },
+   "49": {
+    "demVotes": 7711,
+    "repVotes": 2979,
+    "othVotes": 0,
+    "totalVotes": 10690
+   },
+   "50": {
+    "demVotes": 9791,
+    "repVotes": 4206,
+    "othVotes": 0,
+    "totalVotes": 13997
+   }
+  }
+ },
+ "senate": {
+  "source": "MEDSL State Precinct-Level Returns 2024",
+  "districts": {
+   "3": {
+    "demVotes": 13112,
+    "repVotes": 6273,
+    "othVotes": 0,
+    "totalVotes": 19385
+   },
+   "6": {
+    "demVotes": 11528,
+    "repVotes": 6904,
+    "othVotes": 0,
+    "totalVotes": 18432
+   },
+   "7": {
+    "demVotes": 15892,
+    "repVotes": 5930,
+    "othVotes": 0,
+    "totalVotes": 21822
+   },
+   "12": {
+    "demVotes": 12789,
+    "repVotes": 5380,
+    "othVotes": 0,
+    "totalVotes": 18169
+   },
+   "16": {
+    "demVotes": 16454,
+    "repVotes": 5906,
+    "othVotes": 0,
+    "totalVotes": 22360
+   },
+   "18": {
+    "demVotes": 13706,
+    "repVotes": 6986,
+    "othVotes": 0,
+    "totalVotes": 20692
+   },
+   "22": {
+    "demVotes": 5725,
+    "repVotes": 6859,
+    "othVotes": 0,
+    "totalVotes": 12584
+   },
+   "23": {
+    "demVotes": 9495,
+    "repVotes": 10594,
+    "othVotes": 0,
+    "totalVotes": 20089
+   }
+  }
+ }
+}

@@ -53,3 +53,7 @@ data-entry/medsl/house_2022_precinct.tab
 data-entry/medsl/house_2016_precinct.csv
 data-entry/medsl/house_2018_precinct.csv
 data-entry/medsl/house_2020_precinct.csv
+
+# Python bytecode from importlib-loaded sibling scripts
+__pycache__/
+*.pyc

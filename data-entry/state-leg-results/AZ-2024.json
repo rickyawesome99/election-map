@@ -1,0 +1,372 @@
+{
+ "house": {
+  "source": "Wikipedia district tables",
+  "districts": {
+   "1": {
+    "demVotes": 85110,
+    "repVotes": 176417,
+    "othVotes": 0,
+    "totalVotes": 261527
+   },
+   "2": {
+    "demVotes": 47810,
+    "repVotes": 93752,
+    "othVotes": 15946,
+    "totalVotes": 157508
+   },
+   "3": {
+    "demVotes": 55372,
+    "repVotes": 182289,
+    "othVotes": 0,
+    "totalVotes": 237661
+   },
+   "4": {
+    "demVotes": 130445,
+    "repVotes": 144746,
+    "othVotes": 0,
+    "totalVotes": 275191
+   },
+   "5": {
+    "demVotes": 120976,
+    "repVotes": 31689,
+    "othVotes": 0,
+    "totalVotes": 152665
+   },
+   "6": {
+    "demVotes": 92485,
+    "repVotes": 42806,
+    "othVotes": 0,
+    "totalVotes": 135291
+   },
+   "7": {
+    "demVotes": 69092,
+    "repVotes": 128491,
+    "othVotes": 0,
+    "totalVotes": 197583
+   },
+   "8": {
+    "demVotes": 74399,
+    "repVotes": 27415,
+    "othVotes": 5597,
+    "totalVotes": 107411
+   },
+   "9": {
+    "demVotes": 75864,
+    "repVotes": 71448,
+    "othVotes": 0,
+    "totalVotes": 147312
+   },
+   "10": {
+    "demVotes": 65361,
+    "repVotes": 100628,
+    "othVotes": 0,
+    "totalVotes": 165989
+   },
+   "11": {
+    "demVotes": 55748,
+    "repVotes": 21645,
+    "othVotes": 0,
+    "totalVotes": 77393
+   },
+   "12": {
+    "demVotes": 131046,
+    "repVotes": 49932,
+    "othVotes": 124,
+    "totalVotes": 181102
+   },
+   "13": {
+    "demVotes": 103810,
+    "repVotes": 114400,
+    "othVotes": 3361,
+    "totalVotes": 221571
+   },
+   "14": {
+    "demVotes": 0,
+    "repVotes": 91716,
+    "othVotes": 18355,
+    "totalVotes": 110071
+   },
+   "15": {
+    "demVotes": 36837,
+    "repVotes": 121729,
+    "othVotes": 0,
+    "totalVotes": 158566
+   },
+   "16": {
+    "demVotes": 45373,
+    "repVotes": 102791,
+    "othVotes": 0,
+    "totalVotes": 148164
+   },
+   "17": {
+    "demVotes": 73985,
+    "repVotes": 140524,
+    "othVotes": 0,
+    "totalVotes": 214509
+   },
+   "18": {
+    "demVotes": 111107,
+    "repVotes": 36016,
+    "othVotes": 0,
+    "totalVotes": 147123
+   },
+   "19": {
+    "demVotes": 24958,
+    "repVotes": 77008,
+    "othVotes": 0,
+    "totalVotes": 101966
+   },
+   "20": {
+    "demVotes": 75208,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 75208
+   },
+   "21": {
+    "demVotes": 67923,
+    "repVotes": 24339,
+    "othVotes": 0,
+    "totalVotes": 92262
+   },
+   "22": {
+    "demVotes": 52194,
+    "repVotes": 30425,
+    "othVotes": 0,
+    "totalVotes": 82619
+   },
+   "23": {
+    "demVotes": 73163,
+    "repVotes": 37967,
+    "othVotes": 0,
+    "totalVotes": 111130
+   },
+   "24": {
+    "demVotes": 42695,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 42695
+   },
+   "25": {
+    "demVotes": 28628,
+    "repVotes": 91757,
+    "othVotes": 0,
+    "totalVotes": 120385
+   },
+   "26": {
+    "demVotes": 34204,
+    "repVotes": 17694,
+    "othVotes": 0,
+    "totalVotes": 51898
+   },
+   "27": {
+    "demVotes": 45023,
+    "repVotes": 101023,
+    "othVotes": 0,
+    "totalVotes": 146046
+   },
+   "28": {
+    "demVotes": 43482,
+    "repVotes": 127617,
+    "othVotes": 0,
+    "totalVotes": 171099
+   },
+   "29": {
+    "demVotes": 67242,
+    "repVotes": 101282,
+    "othVotes": 0,
+    "totalVotes": 168524
+   },
+   "30": {
+    "demVotes": 21562,
+    "repVotes": 125416,
+    "othVotes": 0,
+    "totalVotes": 146978
+   }
+  }
+ },
+ "senate": {
+  "source": "Wikipedia district tables",
+  "districts": {
+   "1": {
+    "demVotes": 49108,
+    "repVotes": 94947,
+    "othVotes": 0,
+    "totalVotes": 144055
+   },
+   "2": {
+    "demVotes": 48333,
+    "repVotes": 52100,
+    "othVotes": 2076,
+    "totalVotes": 102509
+   },
+   "3": {
+    "demVotes": 0,
+    "repVotes": 110048,
+    "othVotes": 0,
+    "totalVotes": 110048
+   },
+   "4": {
+    "demVotes": 70614,
+    "repVotes": 76079,
+    "othVotes": 0,
+    "totalVotes": 146693
+   },
+   "5": {
+    "demVotes": 67425,
+    "repVotes": 31296,
+    "othVotes": 0,
+    "totalVotes": 98721
+   },
+   "6": {
+    "demVotes": 72721,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 72721
+   },
+   "7": {
+    "demVotes": 43406,
+    "repVotes": 80750,
+    "othVotes": 0,
+    "totalVotes": 124156
+   },
+   "8": {
+    "demVotes": 53111,
+    "repVotes": 34528,
+    "othVotes": 0,
+    "totalVotes": 87639
+   },
+   "9": {
+    "demVotes": 42072,
+    "repVotes": 39261,
+    "othVotes": 0,
+    "totalVotes": 81333
+   },
+   "10": {
+    "demVotes": 44170,
+    "repVotes": 70561,
+    "othVotes": 0,
+    "totalVotes": 114731
+   },
+   "11": {
+    "demVotes": 52106,
+    "repVotes": 20095,
+    "othVotes": 0,
+    "totalVotes": 72201
+   },
+   "12": {
+    "demVotes": 70499,
+    "repVotes": 50796,
+    "othVotes": 0,
+    "totalVotes": 121295
+   },
+   "13": {
+    "demVotes": 55287,
+    "repVotes": 62670,
+    "othVotes": 0,
+    "totalVotes": 117957
+   },
+   "14": {
+    "demVotes": 50554,
+    "repVotes": 76251,
+    "othVotes": 0,
+    "totalVotes": 126805
+   },
+   "15": {
+    "demVotes": 43769,
+    "repVotes": 87580,
+    "othVotes": 6061,
+    "totalVotes": 137410
+   },
+   "16": {
+    "demVotes": 45888,
+    "repVotes": 58386,
+    "othVotes": 0,
+    "totalVotes": 104274
+   },
+   "17": {
+    "demVotes": 74669,
+    "repVotes": 77714,
+    "othVotes": 0,
+    "totalVotes": 152383
+   },
+   "18": {
+    "demVotes": 89003,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 89003
+   },
+   "19": {
+    "demVotes": 42555,
+    "repVotes": 71192,
+    "othVotes": 0,
+    "totalVotes": 113747
+   },
+   "20": {
+    "demVotes": 65214,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 65214
+   },
+   "21": {
+    "demVotes": 64282,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 64282
+   },
+   "22": {
+    "demVotes": 45253,
+    "repVotes": 24812,
+    "othVotes": 0,
+    "totalVotes": 70065
+   },
+   "23": {
+    "demVotes": 42658,
+    "repVotes": 36602,
+    "othVotes": 0,
+    "totalVotes": 79260
+   },
+   "24": {
+    "demVotes": 38436,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 38436
+   },
+   "25": {
+    "demVotes": 0,
+    "repVotes": 88531,
+    "othVotes": 0,
+    "totalVotes": 88531
+   },
+   "26": {
+    "demVotes": 31198,
+    "repVotes": 15826,
+    "othVotes": 0,
+    "totalVotes": 47024
+   },
+   "27": {
+    "demVotes": 0,
+    "repVotes": 67274,
+    "othVotes": 0,
+    "totalVotes": 67274
+   },
+   "28": {
+    "demVotes": 1112,
+    "repVotes": 97174,
+    "othVotes": 0,
+    "totalVotes": 98286
+   },
+   "29": {
+    "demVotes": 48608,
+    "repVotes": 70924,
+    "othVotes": 0,
+    "totalVotes": 119532
+   },
+   "30": {
+    "demVotes": 25295,
+    "repVotes": 92213,
+    "othVotes": 0,
+    "totalVotes": 117508
+   }
+  }
+ }
+}

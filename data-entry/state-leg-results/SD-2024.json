@@ -1,0 +1,444 @@
+{
+ "house": {
+  "source": "MEDSL State Precinct-Level Returns 2024",
+  "districts": {
+   "1": {
+    "demVotes": 8404,
+    "repVotes": 11492,
+    "othVotes": 1528,
+    "totalVotes": 21424
+   },
+   "2": {
+    "demVotes": 0,
+    "repVotes": 16631,
+    "othVotes": 0,
+    "totalVotes": 16631
+   },
+   "3": {
+    "demVotes": 4515,
+    "repVotes": 11787,
+    "othVotes": 0,
+    "totalVotes": 16302
+   },
+   "4": {
+    "demVotes": 0,
+    "repVotes": 15267,
+    "othVotes": 0,
+    "totalVotes": 15267
+   },
+   "5": {
+    "demVotes": 4261,
+    "repVotes": 14206,
+    "othVotes": 0,
+    "totalVotes": 18467
+   },
+   "6": {
+    "demVotes": 3546,
+    "repVotes": 13750,
+    "othVotes": 0,
+    "totalVotes": 17296
+   },
+   "7": {
+    "demVotes": 6722,
+    "repVotes": 11711,
+    "othVotes": 0,
+    "totalVotes": 18433
+   },
+   "8": {
+    "demVotes": 0,
+    "repVotes": 18235,
+    "othVotes": 1958,
+    "totalVotes": 20193
+   },
+   "9": {
+    "demVotes": 4003,
+    "repVotes": 13033,
+    "othVotes": 0,
+    "totalVotes": 17036
+   },
+   "10": {
+    "demVotes": 9183,
+    "repVotes": 4234,
+    "othVotes": 0,
+    "totalVotes": 13417
+   },
+   "11": {
+    "demVotes": 8860,
+    "repVotes": 12161,
+    "othVotes": 0,
+    "totalVotes": 21021
+   },
+   "12": {
+    "demVotes": 7949,
+    "repVotes": 12218,
+    "othVotes": 0,
+    "totalVotes": 20167
+   },
+   "13": {
+    "demVotes": 0,
+    "repVotes": 15005,
+    "othVotes": 0,
+    "totalVotes": 15005
+   },
+   "14": {
+    "demVotes": 9244,
+    "repVotes": 14222,
+    "othVotes": 0,
+    "totalVotes": 23466
+   },
+   "15": {
+    "demVotes": 8915,
+    "repVotes": 8275,
+    "othVotes": 0,
+    "totalVotes": 17190
+   },
+   "16": {
+    "demVotes": 2918,
+    "repVotes": 15367,
+    "othVotes": 0,
+    "totalVotes": 18285
+   },
+   "17": {
+    "demVotes": 4245,
+    "repVotes": 12196,
+    "othVotes": 0,
+    "totalVotes": 16441
+   },
+   "18": {
+    "demVotes": 6327,
+    "repVotes": 12988,
+    "othVotes": 0,
+    "totalVotes": 19315
+   },
+   "19": {
+    "demVotes": 0,
+    "repVotes": 14690,
+    "othVotes": 0,
+    "totalVotes": 14690
+   },
+   "20": {
+    "demVotes": 0,
+    "repVotes": 12966,
+    "othVotes": 0,
+    "totalVotes": 12966
+   },
+   "21": {
+    "demVotes": 0,
+    "repVotes": 13887,
+    "othVotes": 0,
+    "totalVotes": 13887
+   },
+   "22": {
+    "demVotes": 0,
+    "repVotes": 11918,
+    "othVotes": 0,
+    "totalVotes": 11918
+   },
+   "23": {
+    "demVotes": 0,
+    "repVotes": 15393,
+    "othVotes": 0,
+    "totalVotes": 15393
+   },
+   "24": {
+    "demVotes": 0,
+    "repVotes": 17191,
+    "othVotes": 0,
+    "totalVotes": 17191
+   },
+   "25": {
+    "demVotes": 0,
+    "repVotes": 15760,
+    "othVotes": 0,
+    "totalVotes": 15760
+   },
+   "27": {
+    "demVotes": 6370,
+    "repVotes": 3717,
+    "othVotes": 0,
+    "totalVotes": 10087
+   },
+   "29": {
+    "demVotes": 0,
+    "repVotes": 13581,
+    "othVotes": 0,
+    "totalVotes": 13581
+   },
+   "30": {
+    "demVotes": 3872,
+    "repVotes": 19802,
+    "othVotes": 0,
+    "totalVotes": 23674
+   },
+   "31": {
+    "demVotes": 0,
+    "repVotes": 16868,
+    "othVotes": 7035,
+    "totalVotes": 23903
+   },
+   "32": {
+    "demVotes": 4133,
+    "repVotes": 7659,
+    "othVotes": 0,
+    "totalVotes": 11792
+   },
+   "33": {
+    "demVotes": 0,
+    "repVotes": 14680,
+    "othVotes": 0,
+    "totalVotes": 14680
+   },
+   "34": {
+    "demVotes": 0,
+    "repVotes": 13489,
+    "othVotes": 0,
+    "totalVotes": 13489
+   },
+   "35": {
+    "demVotes": 7776,
+    "repVotes": 17364,
+    "othVotes": 0,
+    "totalVotes": 25140
+   },
+   "26A": {
+    "demVotes": 1531,
+    "repVotes": 904,
+    "othVotes": 559,
+    "totalVotes": 2994
+   },
+   "26B": {
+    "demVotes": 0,
+    "repVotes": 2746,
+    "othVotes": 1831,
+    "totalVotes": 4577
+   },
+   "28A": {
+    "demVotes": 1892,
+    "repVotes": 2563,
+    "othVotes": 0,
+    "totalVotes": 4455
+   },
+   "28B": {
+    "demVotes": 0,
+    "repVotes": 5040,
+    "othVotes": 0,
+    "totalVotes": 5040
+   }
+  }
+ },
+ "senate": {
+  "source": "MEDSL State Precinct-Level Returns 2024",
+  "districts": {
+   "1": {
+    "demVotes": 0,
+    "repVotes": 8449,
+    "othVotes": 0,
+    "totalVotes": 8449
+   },
+   "2": {
+    "demVotes": 0,
+    "repVotes": 10337,
+    "othVotes": 0,
+    "totalVotes": 10337
+   },
+   "3": {
+    "demVotes": 0,
+    "repVotes": 6900,
+    "othVotes": 0,
+    "totalVotes": 6900
+   },
+   "4": {
+    "demVotes": 0,
+    "repVotes": 10375,
+    "othVotes": 0,
+    "totalVotes": 10375
+   },
+   "5": {
+    "demVotes": 3203,
+    "repVotes": 7889,
+    "othVotes": 0,
+    "totalVotes": 11092
+   },
+   "6": {
+    "demVotes": 0,
+    "repVotes": 8961,
+    "othVotes": 0,
+    "totalVotes": 8961
+   },
+   "7": {
+    "demVotes": 0,
+    "repVotes": 7597,
+    "othVotes": 0,
+    "totalVotes": 7597
+   },
+   "8": {
+    "demVotes": 0,
+    "repVotes": 10033,
+    "othVotes": 0,
+    "totalVotes": 10033
+   },
+   "9": {
+    "demVotes": 0,
+    "repVotes": 8137,
+    "othVotes": 0,
+    "totalVotes": 8137
+   },
+   "10": {
+    "demVotes": 5606,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 5606
+   },
+   "11": {
+    "demVotes": 4747,
+    "repVotes": 6796,
+    "othVotes": 0,
+    "totalVotes": 11543
+   },
+   "12": {
+    "demVotes": 4908,
+    "repVotes": 6167,
+    "othVotes": 0,
+    "totalVotes": 11075
+   },
+   "13": {
+    "demVotes": 5948,
+    "repVotes": 8384,
+    "othVotes": 0,
+    "totalVotes": 14332
+   },
+   "14": {
+    "demVotes": 5936,
+    "repVotes": 7127,
+    "othVotes": 0,
+    "totalVotes": 13063
+   },
+   "15": {
+    "demVotes": 5052,
+    "repVotes": 4582,
+    "othVotes": 0,
+    "totalVotes": 9634
+   },
+   "16": {
+    "demVotes": 0,
+    "repVotes": 9368,
+    "othVotes": 0,
+    "totalVotes": 9368
+   },
+   "17": {
+    "demVotes": 0,
+    "repVotes": 7796,
+    "othVotes": 0,
+    "totalVotes": 7796
+   },
+   "18": {
+    "demVotes": 4629,
+    "repVotes": 6189,
+    "othVotes": 0,
+    "totalVotes": 10818
+   },
+   "19": {
+    "demVotes": 0,
+    "repVotes": 8738,
+    "othVotes": 2583,
+    "totalVotes": 11321
+   },
+   "20": {
+    "demVotes": 0,
+    "repVotes": 8184,
+    "othVotes": 0,
+    "totalVotes": 8184
+   },
+   "21": {
+    "demVotes": 2518,
+    "repVotes": 8452,
+    "othVotes": 0,
+    "totalVotes": 10970
+   },
+   "22": {
+    "demVotes": 2666,
+    "repVotes": 7271,
+    "othVotes": 0,
+    "totalVotes": 9937
+   },
+   "23": {
+    "demVotes": 0,
+    "repVotes": 9183,
+    "othVotes": 0,
+    "totalVotes": 9183
+   },
+   "24": {
+    "demVotes": 0,
+    "repVotes": 9555,
+    "othVotes": 0,
+    "totalVotes": 9555
+   },
+   "25": {
+    "demVotes": 3634,
+    "repVotes": 9667,
+    "othVotes": 0,
+    "totalVotes": 13301
+   },
+   "26": {
+    "demVotes": 3221,
+    "repVotes": 4328,
+    "othVotes": 0,
+    "totalVotes": 7549
+   },
+   "27": {
+    "demVotes": 3807,
+    "repVotes": 3518,
+    "othVotes": 0,
+    "totalVotes": 7325
+   },
+   "28": {
+    "demVotes": 2475,
+    "repVotes": 6969,
+    "othVotes": 1436,
+    "totalVotes": 10880
+   },
+   "29": {
+    "demVotes": 0,
+    "repVotes": 8634,
+    "othVotes": 0,
+    "totalVotes": 8634
+   },
+   "30": {
+    "demVotes": 3868,
+    "repVotes": 11216,
+    "othVotes": 0,
+    "totalVotes": 15084
+   },
+   "31": {
+    "demVotes": 0,
+    "repVotes": 10294,
+    "othVotes": 0,
+    "totalVotes": 10294
+   },
+   "32": {
+    "demVotes": 0,
+    "repVotes": 5189,
+    "othVotes": 3463,
+    "totalVotes": 8652
+   },
+   "33": {
+    "demVotes": 0,
+    "repVotes": 9247,
+    "othVotes": 0,
+    "totalVotes": 9247
+   },
+   "34": {
+    "demVotes": 5016,
+    "repVotes": 7586,
+    "othVotes": 0,
+    "totalVotes": 12602
+   },
+   "35": {
+    "demVotes": 0,
+    "repVotes": 9851,
+    "othVotes": 0,
+    "totalVotes": 9851
+   }
+  }
+ }
+}

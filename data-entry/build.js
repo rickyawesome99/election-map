@@ -765,6 +765,12 @@ for (const row of stateLegRows) {
 
   const demSeats   = safeInt(row.dem_seats);
   const repSeats   = safeInt(row.rep_seats);
+  const othSeats   = safeInt(row.oth_seats);
+  const totalSeats = safeInt(row.total_seats);
+  const demSeatsWon = safeInt(row.dem_seats_won);
+  const repSeatsWon = safeInt(row.rep_seats_won);
+  const othSeatsWon = safeInt(row.oth_seats_won);
+  const seatsUp    = safeInt(row.seats_up);
   const demPct     = safeNum(row.dem_pct);
   const repPct     = safeNum(row.rep_pct);
   const othPct     = safeNum(row.oth_pct);
@@ -778,6 +784,12 @@ for (const row of stateLegRows) {
   if (freq       !== null) entry.freq       = freq;
   if (demSeats   !== null) entry.demSeats   = demSeats;
   if (repSeats   !== null) entry.repSeats   = repSeats;
+  if (othSeats   !== null) entry.othSeats   = othSeats;
+  if (totalSeats !== null) entry.totalSeats = totalSeats;
+  if (demSeatsWon !== null) entry.demSeatsWon = demSeatsWon;
+  if (repSeatsWon !== null) entry.repSeatsWon = repSeatsWon;
+  if (othSeatsWon !== null) entry.othSeatsWon = othSeatsWon;
+  if (seatsUp    !== null) entry.seatsUp    = seatsUp;
   if (demPct     !== null) entry.demPct     = demPct;
   if (repPct     !== null) entry.repPct     = repPct;
   if (othPct     !== null) entry.othPct     = othPct;
@@ -1005,6 +1017,19 @@ export type StateLegEntry = {
   freq?: number;
   demSeats?: number;
   repSeats?: number;
+  /** Seats held by neither major party in the chamber's composition AFTER this election. */
+  othSeats?: number;
+  /** Full chamber size. demSeats + repSeats + othSeats. */
+  totalSeats?: number;
+  /**
+   * Seats WON in this cycle. Distinct from demSeats/repSeats/othSeats, which are the
+   * chamber's composition afterwards and include holdovers in a staggered chamber.
+   */
+  demSeatsWon?: number;
+  repSeatsWon?: number;
+  othSeatsWon?: number;
+  /** Seats contested in this cycle. demSeatsWon + repSeatsWon + othSeatsWon. */
+  seatsUp?: number;
   demPct?: number;
   repPct?: number;
   othPct?: number;

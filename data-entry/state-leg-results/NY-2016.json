@@ -1,0 +1,1380 @@
+{
+ "house": {
+  "source": "Klarner SLERS 1967-2022",
+  "districts": {
+   "1": {
+    "demVotes": 35246,
+    "repVotes": 21280,
+    "othVotes": 0,
+    "totalVotes": 56526
+   },
+   "2": {
+    "demVotes": 19575,
+    "repVotes": 39795,
+    "othVotes": 0,
+    "totalVotes": 59370
+   },
+   "3": {
+    "demVotes": 17404,
+    "repVotes": 29087,
+    "othVotes": 0,
+    "totalVotes": 46491
+   },
+   "4": {
+    "demVotes": 31941,
+    "repVotes": 21994,
+    "othVotes": 0,
+    "totalVotes": 53935
+   },
+   "5": {
+    "demVotes": 18313,
+    "repVotes": 33384,
+    "othVotes": 0,
+    "totalVotes": 51697
+   },
+   "6": {
+    "demVotes": 26820,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 26820,
+    "uncontested": true
+   },
+   "7": {
+    "demVotes": 18653,
+    "repVotes": 38235,
+    "othVotes": 0,
+    "totalVotes": 56888
+   },
+   "8": {
+    "demVotes": 19121,
+    "repVotes": 43286,
+    "othVotes": 0,
+    "totalVotes": 62407
+   },
+   "9": {
+    "demVotes": 18841,
+    "repVotes": 41341,
+    "othVotes": 0,
+    "totalVotes": 60182
+   },
+   "10": {
+    "demVotes": 23923,
+    "repVotes": 32671,
+    "othVotes": 0,
+    "totalVotes": 56594
+   },
+   "11": {
+    "demVotes": 26129,
+    "repVotes": 17369,
+    "othVotes": 0,
+    "totalVotes": 43498
+   },
+   "12": {
+    "demVotes": 21243,
+    "repVotes": 39021,
+    "othVotes": 0,
+    "totalVotes": 60264
+   },
+   "13": {
+    "demVotes": 34314,
+    "repVotes": 19735,
+    "othVotes": 0,
+    "totalVotes": 54049
+   },
+   "14": {
+    "demVotes": 23605,
+    "repVotes": 40051,
+    "othVotes": 0,
+    "totalVotes": 63656
+   },
+   "15": {
+    "demVotes": 25381,
+    "repVotes": 31816,
+    "othVotes": 0,
+    "totalVotes": 57197
+   },
+   "16": {
+    "demVotes": 29606,
+    "repVotes": 27118,
+    "othVotes": 0,
+    "totalVotes": 56724
+   },
+   "17": {
+    "demVotes": 21581,
+    "repVotes": 36147,
+    "othVotes": 0,
+    "totalVotes": 57728
+   },
+   "18": {
+    "demVotes": 37011,
+    "repVotes": 5030,
+    "othVotes": 0,
+    "totalVotes": 42041
+   },
+   "19": {
+    "demVotes": 21611,
+    "repVotes": 34648,
+    "othVotes": 0,
+    "totalVotes": 56259
+   },
+   "20": {
+    "demVotes": 26177,
+    "repVotes": 29026,
+    "othVotes": 0,
+    "totalVotes": 55203
+   },
+   "21": {
+    "demVotes": 25402,
+    "repVotes": 34205,
+    "othVotes": 0,
+    "totalVotes": 59607
+   },
+   "22": {
+    "demVotes": 36961,
+    "repVotes": 18751,
+    "othVotes": 0,
+    "totalVotes": 55712
+   },
+   "23": {
+    "demVotes": 27042,
+    "repVotes": 12836,
+    "othVotes": 0,
+    "totalVotes": 39878
+   },
+   "24": {
+    "demVotes": 30036,
+    "repVotes": 6304,
+    "othVotes": 0,
+    "totalVotes": 36340
+   },
+   "25": {
+    "demVotes": 22143,
+    "repVotes": 6856,
+    "othVotes": 0,
+    "totalVotes": 28999
+   },
+   "26": {
+    "demVotes": 33255,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 33255,
+    "uncontested": true
+   },
+   "27": {
+    "demVotes": 32194,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 32194,
+    "uncontested": true
+   },
+   "28": {
+    "demVotes": 32910,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 32910,
+    "uncontested": true
+   },
+   "29": {
+    "demVotes": 41586,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 41586,
+    "uncontested": true
+   },
+   "30": {
+    "demVotes": 24452,
+    "repVotes": 11542,
+    "othVotes": 0,
+    "totalVotes": 35994
+   },
+   "31": {
+    "demVotes": 32132,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 32132,
+    "uncontested": true
+   },
+   "32": {
+    "demVotes": 39305,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 39305,
+    "uncontested": true
+   },
+   "33": {
+    "demVotes": 40212,
+    "repVotes": 4450,
+    "othVotes": 0,
+    "totalVotes": 44662
+   },
+   "34": {
+    "demVotes": 24161,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 24161,
+    "uncontested": true
+   },
+   "35": {
+    "demVotes": 22310,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 22310,
+    "uncontested": true
+   },
+   "36": {
+    "demVotes": 36212,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 36212,
+    "uncontested": true
+   },
+   "37": {
+    "demVotes": 34835,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 34835,
+    "uncontested": true
+   },
+   "38": {
+    "demVotes": 23958,
+    "repVotes": 5795,
+    "othVotes": 0,
+    "totalVotes": 29753
+   },
+   "39": {
+    "demVotes": 20083,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 20083,
+    "uncontested": true
+   },
+   "40": {
+    "demVotes": 16479,
+    "repVotes": 5419,
+    "othVotes": 0,
+    "totalVotes": 21898
+   },
+   "41": {
+    "demVotes": 28316,
+    "repVotes": 7828,
+    "othVotes": 0,
+    "totalVotes": 36144
+   },
+   "42": {
+    "demVotes": 34379,
+    "repVotes": 3562,
+    "othVotes": 0,
+    "totalVotes": 37941
+   },
+   "43": {
+    "demVotes": 39474,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 39474,
+    "uncontested": true
+   },
+   "44": {
+    "demVotes": 34779,
+    "repVotes": 5921,
+    "othVotes": 0,
+    "totalVotes": 40700
+   },
+   "45": {
+    "demVotes": 17895,
+    "repVotes": 0,
+    "othVotes": 4692,
+    "totalVotes": 22587,
+    "uncontested": true
+   },
+   "46": {
+    "demVotes": 20061,
+    "repVotes": 11807,
+    "othVotes": 2951,
+    "totalVotes": 34819
+   },
+   "47": {
+    "demVotes": 18872,
+    "repVotes": 0,
+    "othVotes": 2416,
+    "totalVotes": 21288,
+    "uncontested": true
+   },
+   "48": {
+    "demVotes": 23118,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 23118,
+    "uncontested": true
+   },
+   "49": {
+    "demVotes": 13824,
+    "repVotes": 4474,
+    "othVotes": 0,
+    "totalVotes": 18298
+   },
+   "50": {
+    "demVotes": 33290,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 33290,
+    "uncontested": true
+   },
+   "51": {
+    "demVotes": 24181,
+    "repVotes": 3288,
+    "othVotes": 0,
+    "totalVotes": 27469
+   },
+   "52": {
+    "demVotes": 57578,
+    "repVotes": 5146,
+    "othVotes": 0,
+    "totalVotes": 62724
+   },
+   "53": {
+    "demVotes": 35394,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 35394,
+    "uncontested": true
+   },
+   "54": {
+    "demVotes": 29152,
+    "repVotes": 1513,
+    "othVotes": 0,
+    "totalVotes": 30665
+   },
+   "55": {
+    "demVotes": 35352,
+    "repVotes": 869,
+    "othVotes": 0,
+    "totalVotes": 36221
+   },
+   "56": {
+    "demVotes": 41836,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 41836,
+    "uncontested": true
+   },
+   "57": {
+    "demVotes": 55058,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 55058,
+    "uncontested": true
+   },
+   "58": {
+    "demVotes": 40712,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 40712,
+    "uncontested": true
+   },
+   "59": {
+    "demVotes": 33329,
+    "repVotes": 9348,
+    "othVotes": 0,
+    "totalVotes": 42677
+   },
+   "60": {
+    "demVotes": 37051,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 37051,
+    "uncontested": true
+   },
+   "61": {
+    "demVotes": 31750,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 31750,
+    "uncontested": true
+   },
+   "62": {
+    "demVotes": 0,
+    "repVotes": 44451,
+    "othVotes": 0,
+    "totalVotes": 44451,
+    "uncontested": true
+   },
+   "63": {
+    "demVotes": 34559,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 34559,
+    "uncontested": true
+   },
+   "64": {
+    "demVotes": 0,
+    "repVotes": 34533,
+    "othVotes": 0,
+    "totalVotes": 34533,
+    "uncontested": true
+   },
+   "65": {
+    "demVotes": 29716,
+    "repVotes": 5761,
+    "othVotes": 3519,
+    "totalVotes": 38996
+   },
+   "66": {
+    "demVotes": 50531,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 50531,
+    "uncontested": true
+   },
+   "67": {
+    "demVotes": 52482,
+    "repVotes": 8510,
+    "othVotes": 0,
+    "totalVotes": 60992
+   },
+   "68": {
+    "demVotes": 38759,
+    "repVotes": 3920,
+    "othVotes": 0,
+    "totalVotes": 42679
+   },
+   "69": {
+    "demVotes": 49526,
+    "repVotes": 5334,
+    "othVotes": 0,
+    "totalVotes": 54860
+   },
+   "70": {
+    "demVotes": 45048,
+    "repVotes": 3449,
+    "othVotes": 0,
+    "totalVotes": 48497
+   },
+   "71": {
+    "demVotes": 43183,
+    "repVotes": 3516,
+    "othVotes": 0,
+    "totalVotes": 46699
+   },
+   "72": {
+    "demVotes": 37032,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 37032,
+    "uncontested": true
+   },
+   "73": {
+    "demVotes": 35535,
+    "repVotes": 20538,
+    "othVotes": 0,
+    "totalVotes": 56073
+   },
+   "74": {
+    "demVotes": 39878,
+    "repVotes": 7363,
+    "othVotes": 0,
+    "totalVotes": 47241
+   },
+   "75": {
+    "demVotes": 46186,
+    "repVotes": 8462,
+    "othVotes": 0,
+    "totalVotes": 54648
+   },
+   "76": {
+    "demVotes": 40309,
+    "repVotes": 14851,
+    "othVotes": 0,
+    "totalVotes": 55160
+   },
+   "77": {
+    "demVotes": 27986,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 27986,
+    "uncontested": true
+   },
+   "78": {
+    "demVotes": 21915,
+    "repVotes": 1172,
+    "othVotes": 0,
+    "totalVotes": 23087
+   },
+   "79": {
+    "demVotes": 30038,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 30038,
+    "uncontested": true
+   },
+   "80": {
+    "demVotes": 24959,
+    "repVotes": 3391,
+    "othVotes": 0,
+    "totalVotes": 28350
+   },
+   "81": {
+    "demVotes": 33431,
+    "repVotes": 0,
+    "othVotes": 3010,
+    "totalVotes": 36441,
+    "uncontested": true
+   },
+   "82": {
+    "demVotes": 31091,
+    "repVotes": 5737,
+    "othVotes": 0,
+    "totalVotes": 36828
+   },
+   "83": {
+    "demVotes": 32958,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 32958,
+    "uncontested": true
+   },
+   "84": {
+    "demVotes": 26652,
+    "repVotes": 1606,
+    "othVotes": 0,
+    "totalVotes": 28258
+   },
+   "85": {
+    "demVotes": 25812,
+    "repVotes": 1033,
+    "othVotes": 0,
+    "totalVotes": 26845
+   },
+   "86": {
+    "demVotes": 23196,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 23196,
+    "uncontested": true
+   },
+   "87": {
+    "demVotes": 30128,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 30128,
+    "uncontested": true
+   },
+   "88": {
+    "demVotes": 42527,
+    "repVotes": 0,
+    "othVotes": 7643,
+    "totalVotes": 50170,
+    "uncontested": true
+   },
+   "89": {
+    "demVotes": 34615,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 34615,
+    "uncontested": true
+   },
+   "90": {
+    "demVotes": 32208,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 32208,
+    "uncontested": true
+   },
+   "91": {
+    "demVotes": 34749,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 34749,
+    "uncontested": true
+   },
+   "92": {
+    "demVotes": 45735,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 45735,
+    "uncontested": true
+   },
+   "93": {
+    "demVotes": 41639,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 41639,
+    "uncontested": true
+   },
+   "94": {
+    "demVotes": 23097,
+    "repVotes": 36760,
+    "othVotes": 0,
+    "totalVotes": 59857
+   },
+   "95": {
+    "demVotes": 35377,
+    "repVotes": 16388,
+    "othVotes": 0,
+    "totalVotes": 51765
+   },
+   "96": {
+    "demVotes": 42110,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 42110,
+    "uncontested": true
+   },
+   "97": {
+    "demVotes": 29782,
+    "repVotes": 17670,
+    "othVotes": 0,
+    "totalVotes": 47452
+   },
+   "98": {
+    "demVotes": 19883,
+    "repVotes": 29105,
+    "othVotes": 0,
+    "totalVotes": 48988
+   },
+   "99": {
+    "demVotes": 29590,
+    "repVotes": 26541,
+    "othVotes": 0,
+    "totalVotes": 56131
+   },
+   "100": {
+    "demVotes": 33142,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 33142,
+    "uncontested": true
+   },
+   "101": {
+    "demVotes": 17913,
+    "repVotes": 27639,
+    "othVotes": 5379,
+    "totalVotes": 50931
+   },
+   "102": {
+    "demVotes": 0,
+    "repVotes": 45980,
+    "othVotes": 0,
+    "totalVotes": 45980,
+    "uncontested": true
+   },
+   "103": {
+    "demVotes": 43756,
+    "repVotes": 0,
+    "othVotes": 12416,
+    "totalVotes": 56172,
+    "uncontested": true
+   },
+   "104": {
+    "demVotes": 27959,
+    "repVotes": 0,
+    "othVotes": 6576,
+    "totalVotes": 34535,
+    "uncontested": true
+   },
+   "105": {
+    "demVotes": 21471,
+    "repVotes": 35790,
+    "othVotes": 0,
+    "totalVotes": 57261
+   },
+   "106": {
+    "demVotes": 30325,
+    "repVotes": 23973,
+    "othVotes": 0,
+    "totalVotes": 54298
+   },
+   "107": {
+    "demVotes": 0,
+    "repVotes": 54504,
+    "othVotes": 0,
+    "totalVotes": 54504,
+    "uncontested": true
+   },
+   "108": {
+    "demVotes": 34564,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 34564,
+    "uncontested": true
+   },
+   "109": {
+    "demVotes": 42818,
+    "repVotes": 18481,
+    "othVotes": 0,
+    "totalVotes": 61299
+   },
+   "110": {
+    "demVotes": 36212,
+    "repVotes": 22960,
+    "othVotes": 0,
+    "totalVotes": 59172
+   },
+   "111": {
+    "demVotes": 30197,
+    "repVotes": 17931,
+    "othVotes": 0,
+    "totalVotes": 48128
+   },
+   "112": {
+    "demVotes": 25399,
+    "repVotes": 41267,
+    "othVotes": 0,
+    "totalVotes": 66666
+   },
+   "113": {
+    "demVotes": 33630,
+    "repVotes": 26012,
+    "othVotes": 0,
+    "totalVotes": 59642
+   },
+   "114": {
+    "demVotes": 0,
+    "repVotes": 42777,
+    "othVotes": 7562,
+    "totalVotes": 50339,
+    "uncontested": true
+   },
+   "115": {
+    "demVotes": 25972,
+    "repVotes": 23253,
+    "othVotes": 0,
+    "totalVotes": 49225
+   },
+   "116": {
+    "demVotes": 24473,
+    "repVotes": 21509,
+    "othVotes": 0,
+    "totalVotes": 45982
+   },
+   "117": {
+    "demVotes": 0,
+    "repVotes": 37418,
+    "othVotes": 0,
+    "totalVotes": 37418,
+    "uncontested": true
+   },
+   "118": {
+    "demVotes": 0,
+    "repVotes": 42565,
+    "othVotes": 0,
+    "totalVotes": 42565,
+    "uncontested": true
+   },
+   "119": {
+    "demVotes": 32970,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 32970,
+    "uncontested": true
+   },
+   "120": {
+    "demVotes": 0,
+    "repVotes": 44275,
+    "othVotes": 0,
+    "totalVotes": 44275,
+    "uncontested": true
+   },
+   "121": {
+    "demVotes": 27117,
+    "repVotes": 24667,
+    "othVotes": 0,
+    "totalVotes": 51784
+   },
+   "122": {
+    "demVotes": 0,
+    "repVotes": 41957,
+    "othVotes": 0,
+    "totalVotes": 41957,
+    "uncontested": true
+   },
+   "123": {
+    "demVotes": 32613,
+    "repVotes": 19073,
+    "othVotes": 0,
+    "totalVotes": 51686
+   },
+   "124": {
+    "demVotes": 18219,
+    "repVotes": 34344,
+    "othVotes": 0,
+    "totalVotes": 52563
+   },
+   "125": {
+    "demVotes": 35416,
+    "repVotes": 15264,
+    "othVotes": 0,
+    "totalVotes": 50680
+   },
+   "126": {
+    "demVotes": 23047,
+    "repVotes": 37078,
+    "othVotes": 0,
+    "totalVotes": 60125
+   },
+   "127": {
+    "demVotes": 36604,
+    "repVotes": 24568,
+    "othVotes": 4064,
+    "totalVotes": 65236
+   },
+   "128": {
+    "demVotes": 38890,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 38890,
+    "uncontested": true
+   },
+   "129": {
+    "demVotes": 34747,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 34747,
+    "uncontested": true
+   },
+   "130": {
+    "demVotes": 0,
+    "repVotes": 44195,
+    "othVotes": 0,
+    "totalVotes": 44195,
+    "uncontested": true
+   },
+   "131": {
+    "demVotes": 0,
+    "repVotes": 47714,
+    "othVotes": 0,
+    "totalVotes": 47714,
+    "uncontested": true
+   },
+   "132": {
+    "demVotes": 0,
+    "repVotes": 44758,
+    "othVotes": 0,
+    "totalVotes": 44758,
+    "uncontested": true
+   },
+   "133": {
+    "demVotes": 26353,
+    "repVotes": 34420,
+    "othVotes": 0,
+    "totalVotes": 60773
+   },
+   "134": {
+    "demVotes": 0,
+    "repVotes": 48022,
+    "othVotes": 0,
+    "totalVotes": 48022,
+    "uncontested": true
+   },
+   "135": {
+    "demVotes": 28558,
+    "repVotes": 42616,
+    "othVotes": 0,
+    "totalVotes": 71174
+   },
+   "136": {
+    "demVotes": 46097,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 46097,
+    "uncontested": true
+   },
+   "137": {
+    "demVotes": 31738,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 31738,
+    "uncontested": true
+   },
+   "138": {
+    "demVotes": 32166,
+    "repVotes": 17934,
+    "othVotes": 0,
+    "totalVotes": 50100
+   },
+   "139": {
+    "demVotes": 0,
+    "repVotes": 45594,
+    "othVotes": 0,
+    "totalVotes": 45594,
+    "uncontested": true
+   },
+   "140": {
+    "demVotes": 38335,
+    "repVotes": 13953,
+    "othVotes": 0,
+    "totalVotes": 52288
+   },
+   "141": {
+    "demVotes": 41179,
+    "repVotes": 4376,
+    "othVotes": 0,
+    "totalVotes": 45555
+   },
+   "142": {
+    "demVotes": 55547,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 55547,
+    "uncontested": true
+   },
+   "143": {
+    "demVotes": 30877,
+    "repVotes": 25253,
+    "othVotes": 0,
+    "totalVotes": 56130
+   },
+   "144": {
+    "demVotes": 0,
+    "repVotes": 43506,
+    "othVotes": 0,
+    "totalVotes": 43506,
+    "uncontested": true
+   },
+   "145": {
+    "demVotes": 23609,
+    "repVotes": 28381,
+    "othVotes": 0,
+    "totalVotes": 51990
+   },
+   "146": {
+    "demVotes": 29146,
+    "repVotes": 30560,
+    "othVotes": 0,
+    "totalVotes": 59706
+   },
+   "147": {
+    "demVotes": 0,
+    "repVotes": 51558,
+    "othVotes": 0,
+    "totalVotes": 51558,
+    "uncontested": true
+   },
+   "148": {
+    "demVotes": 0,
+    "repVotes": 40721,
+    "othVotes": 0,
+    "totalVotes": 40721,
+    "uncontested": true
+   },
+   "149": {
+    "demVotes": 40525,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 40525,
+    "uncontested": true
+   },
+   "150": {
+    "demVotes": 13397,
+    "repVotes": 38272,
+    "othVotes": 0,
+    "totalVotes": 51669
+   }
+  }
+ },
+ "senate": {
+  "source": "Klarner SLERS 1967-2022",
+  "districts": {
+   "1": {
+    "demVotes": 47813,
+    "repVotes": 94756,
+    "othVotes": 0,
+    "totalVotes": 142569
+   },
+   "2": {
+    "demVotes": 47623,
+    "repVotes": 91172,
+    "othVotes": 0,
+    "totalVotes": 138795
+   },
+   "3": {
+    "demVotes": 46108,
+    "repVotes": 65713,
+    "othVotes": 0,
+    "totalVotes": 111821
+   },
+   "4": {
+    "demVotes": 45232,
+    "repVotes": 76411,
+    "othVotes": 0,
+    "totalVotes": 121643
+   },
+   "5": {
+    "demVotes": 72265,
+    "repVotes": 74026,
+    "othVotes": 0,
+    "totalVotes": 146291
+   },
+   "6": {
+    "demVotes": 61525,
+    "repVotes": 71623,
+    "othVotes": 0,
+    "totalVotes": 133148
+   },
+   "7": {
+    "demVotes": 66604,
+    "repVotes": 69881,
+    "othVotes": 0,
+    "totalVotes": 136485
+   },
+   "8": {
+    "demVotes": 68599,
+    "repVotes": 68285,
+    "othVotes": 0,
+    "totalVotes": 136884
+   },
+   "9": {
+    "demVotes": 75739,
+    "repVotes": 69217,
+    "othVotes": 0,
+    "totalVotes": 144956
+   },
+   "10": {
+    "demVotes": 84582,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 84582,
+    "uncontested": true
+   },
+   "11": {
+    "demVotes": 72520,
+    "repVotes": 31797,
+    "othVotes": 0,
+    "totalVotes": 104317
+   },
+   "12": {
+    "demVotes": 82328,
+    "repVotes": 13409,
+    "othVotes": 0,
+    "totalVotes": 95737
+   },
+   "13": {
+    "demVotes": 59896,
+    "repVotes": 9162,
+    "othVotes": 0,
+    "totalVotes": 69058
+   },
+   "14": {
+    "demVotes": 97578,
+    "repVotes": 8364,
+    "othVotes": 0,
+    "totalVotes": 105942
+   },
+   "15": {
+    "demVotes": 62460,
+    "repVotes": 35691,
+    "othVotes": 0,
+    "totalVotes": 98151
+   },
+   "16": {
+    "demVotes": 52495,
+    "repVotes": 14856,
+    "othVotes": 0,
+    "totalVotes": 67351
+   },
+   "17": {
+    "demVotes": 63002,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 63002,
+    "uncontested": true
+   },
+   "18": {
+    "demVotes": 87613,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 87613,
+    "uncontested": true
+   },
+   "19": {
+    "demVotes": 90219,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 90219,
+    "uncontested": true
+   },
+   "20": {
+    "demVotes": 90272,
+    "repVotes": 5706,
+    "othVotes": 0,
+    "totalVotes": 95978
+   },
+   "21": {
+    "demVotes": 109682,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 109682,
+    "uncontested": true
+   },
+   "22": {
+    "demVotes": 0,
+    "repVotes": 62033,
+    "othVotes": 0,
+    "totalVotes": 62033,
+    "uncontested": true
+   },
+   "23": {
+    "demVotes": 63866,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 63866,
+    "uncontested": true
+   },
+   "24": {
+    "demVotes": 0,
+    "repVotes": 107357,
+    "othVotes": 0,
+    "totalVotes": 107357,
+    "uncontested": true
+   },
+   "25": {
+    "demVotes": 114943,
+    "repVotes": 3896,
+    "othVotes": 0,
+    "totalVotes": 118839
+   },
+   "26": {
+    "demVotes": 95462,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 95462,
+    "uncontested": true
+   },
+   "27": {
+    "demVotes": 118371,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 118371,
+    "uncontested": true
+   },
+   "28": {
+    "demVotes": 101117,
+    "repVotes": 33788,
+    "othVotes": 0,
+    "totalVotes": 134905
+   },
+   "29": {
+    "demVotes": 56194,
+    "repVotes": 6158,
+    "othVotes": 0,
+    "totalVotes": 62352
+   },
+   "30": {
+    "demVotes": 113144,
+    "repVotes": 5619,
+    "othVotes": 0,
+    "totalVotes": 118763
+   },
+   "31": {
+    "demVotes": 97964,
+    "repVotes": 8719,
+    "othVotes": 7768,
+    "totalVotes": 114451
+   },
+   "32": {
+    "demVotes": 79574,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 79574,
+    "uncontested": true
+   },
+   "33": {
+    "demVotes": 61953,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 61953,
+    "uncontested": true
+   },
+   "34": {
+    "demVotes": 80998,
+    "repVotes": 0,
+    "othVotes": 8766,
+    "totalVotes": 89764,
+    "uncontested": true
+   },
+   "35": {
+    "demVotes": 94864,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 94864,
+    "uncontested": true
+   },
+   "36": {
+    "demVotes": 88233,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 88233,
+    "uncontested": true
+   },
+   "37": {
+    "demVotes": 73116,
+    "repVotes": 58164,
+    "othVotes": 0,
+    "totalVotes": 131280
+   },
+   "38": {
+    "demVotes": 77317,
+    "repVotes": 41612,
+    "othVotes": 0,
+    "totalVotes": 118929
+   },
+   "39": {
+    "demVotes": 47641,
+    "repVotes": 65031,
+    "othVotes": 0,
+    "totalVotes": 112672
+   },
+   "40": {
+    "demVotes": 58737,
+    "repVotes": 80312,
+    "othVotes": 0,
+    "totalVotes": 139049
+   },
+   "41": {
+    "demVotes": 58616,
+    "repVotes": 72942,
+    "othVotes": 0,
+    "totalVotes": 131558
+   },
+   "42": {
+    "demVotes": 43667,
+    "repVotes": 68502,
+    "othVotes": 0,
+    "totalVotes": 112169
+   },
+   "43": {
+    "demVotes": 50660,
+    "repVotes": 85057,
+    "othVotes": 0,
+    "totalVotes": 135717
+   },
+   "44": {
+    "demVotes": 77821,
+    "repVotes": 33036,
+    "othVotes": 0,
+    "totalVotes": 110857
+   },
+   "45": {
+    "demVotes": 0,
+    "repVotes": 92717,
+    "othVotes": 12553,
+    "totalVotes": 105270,
+    "uncontested": true
+   },
+   "46": {
+    "demVotes": 50071,
+    "repVotes": 84716,
+    "othVotes": 0,
+    "totalVotes": 134787
+   },
+   "47": {
+    "demVotes": 0,
+    "repVotes": 87254,
+    "othVotes": 0,
+    "totalVotes": 87254,
+    "uncontested": true
+   },
+   "48": {
+    "demVotes": 0,
+    "repVotes": 86807,
+    "othVotes": 0,
+    "totalVotes": 86807,
+    "uncontested": true
+   },
+   "49": {
+    "demVotes": 38884,
+    "repVotes": 87056,
+    "othVotes": 0,
+    "totalVotes": 125940
+   },
+   "50": {
+    "demVotes": 0,
+    "repVotes": 110089,
+    "othVotes": 0,
+    "totalVotes": 110089,
+    "uncontested": true
+   },
+   "51": {
+    "demVotes": 31990,
+    "repVotes": 84726,
+    "othVotes": 0,
+    "totalVotes": 116716
+   },
+   "52": {
+    "demVotes": 30571,
+    "repVotes": 89180,
+    "othVotes": 0,
+    "totalVotes": 119751
+   },
+   "53": {
+    "demVotes": 82524,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 82524,
+    "uncontested": true
+   },
+   "54": {
+    "demVotes": 40739,
+    "repVotes": 74175,
+    "othVotes": 8350,
+    "totalVotes": 123264
+   },
+   "55": {
+    "demVotes": 0,
+    "repVotes": 101334,
+    "othVotes": 0,
+    "totalVotes": 101334,
+    "uncontested": true
+   },
+   "56": {
+    "demVotes": 42764,
+    "repVotes": 73574,
+    "othVotes": 0,
+    "totalVotes": 116338
+   },
+   "57": {
+    "demVotes": 19136,
+    "repVotes": 93320,
+    "othVotes": 0,
+    "totalVotes": 112456
+   },
+   "58": {
+    "demVotes": 52488,
+    "repVotes": 63270,
+    "othVotes": 0,
+    "totalVotes": 115758
+   },
+   "59": {
+    "demVotes": 37675,
+    "repVotes": 100293,
+    "othVotes": 0,
+    "totalVotes": 137968
+   },
+   "60": {
+    "demVotes": 51036,
+    "repVotes": 77327,
+    "othVotes": 0,
+    "totalVotes": 128363
+   },
+   "61": {
+    "demVotes": 53363,
+    "repVotes": 75255,
+    "othVotes": 0,
+    "totalVotes": 128618
+   },
+   "62": {
+    "demVotes": 0,
+    "repVotes": 89390,
+    "othVotes": 0,
+    "totalVotes": 89390,
+    "uncontested": true
+   },
+   "63": {
+    "demVotes": 89650,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 89650,
+    "uncontested": true
+   }
+  }
+ }
+}

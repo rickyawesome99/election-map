@@ -28,16 +28,25 @@ That is a property of the system, not a gap - the note on each row says so.
 Usage:
     python3 scripts/build-louisiana-2019-leg-votes.py --report
     python3 scripts/build-louisiana-2019-leg-votes.py --write
+    python3 scripts/build-louisiana-2019-leg-votes.py --districts
+
+`--districts` writes the same per-district rows out as Phase 3 district-level results
+(`data-entry/state-leg-results/LA-2019.json`), for `scripts/build-state-leg-results.mjs`.
+Note for the audit page: those districts and the statewide row above come from THIS file, so
+their aggregate check is a plumbing test, not an independent one - the emitted chamber
+`source` string is what the page uses to say so.
 """
 
 import argparse
 import collections
 import csv
+import json
 import os
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATE_LEG_CSV = os.path.join(REPO, "data-entry", "state_leg.csv")
 LA_CSV = os.path.join(REPO, "data-entry", "louisiana_2019_legislature.csv")
+DISTRICTS_JSON = os.path.join(REPO, "data-entry", "state-leg-results", "LA-2019.json")
 
 ROUND = "primary"
 NOTE = ("October jungle primary (the round all voters cast in); unopposed seats are "
@@ -50,7 +59,12 @@ def main():
     g = ap.add_mutually_exclusive_group(required=True)
     g.add_argument("--report", action="store_true")
     g.add_argument("--write", action="store_true")
+    g.add_argument("--districts", action="store_true")
     args = ap.parse_args()
+
+    if args.districts:
+        write_districts()
+        return
 
     agg = collections.defaultdict(collections.Counter)
     with open(LA_CSV, newline="", encoding="utf-8") as fh:
@@ -96,6 +110,34 @@ def main():
             w.writeheader()
             w.writerows(rows)
         print(f"\nupdated {changed} Louisiana 2019 rows in {STATE_LEG_CSV}")
+
+
+def write_districts():
+    """Emit the primary-round per-district rows as a Phase 3 state-leg-results file."""
+    chambers = {}
+    with open(LA_CSV, newline="", encoding="utf-8") as fh:
+        for r in csv.DictReader(fh):
+            if r["round"] != ROUND:
+                continue
+            ch = chambers.setdefault(r["chamber"].lower(), {})
+            ch[r["district"]] = {
+                "demVotes": int(r["dem_votes"]),
+                "repVotes": int(r["rep_votes"]),
+                "othVotes": int(r["oth_votes"]),
+                "totalVotes": int(r["total_votes"]),
+            }
+
+    out = {
+        chamber: {"source": SOURCE, "note": NOTE, "districts": districts}
+        for chamber, districts in sorted(chambers.items())
+    }
+    os.makedirs(os.path.dirname(DISTRICTS_JSON), exist_ok=True)
+    with open(DISTRICTS_JSON, "w", encoding="utf-8") as fh:
+        json.dump(out, fh, indent=1, sort_keys=False)
+        fh.write("\n")
+    for chamber, block in out.items():
+        print(f"{chamber:7s} {len(block['districts']):3d} districts")
+    print(f"wrote {DISTRICTS_JSON}")
 
 
 if __name__ == "__main__":
