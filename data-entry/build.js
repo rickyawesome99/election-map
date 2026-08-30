@@ -767,8 +767,10 @@ for (const row of stateLegRows) {
   const repSeats   = safeInt(row.rep_seats);
   const demPct     = safeNum(row.dem_pct);
   const repPct     = safeNum(row.rep_pct);
+  const othPct     = safeNum(row.oth_pct);
   const demVotes   = safeInt(row.dem_votes);
   const repVotes   = safeInt(row.rep_votes);
+  const othVotes   = safeInt(row.oth_votes);
   const totalVotes = safeInt(row.total_votes);
   const freq       = safeInt(row.freq);
 
@@ -778,11 +780,17 @@ for (const row of stateLegRows) {
   if (repSeats   !== null) entry.repSeats   = repSeats;
   if (demPct     !== null) entry.demPct     = demPct;
   if (repPct     !== null) entry.repPct     = repPct;
+  if (othPct     !== null) entry.othPct     = othPct;
   if (demVotes   !== null) entry.demVotes   = demVotes;
   if (repVotes   !== null) entry.repVotes   = repVotes;
+  if (othVotes   !== null) entry.othVotes   = othVotes;
   if (totalVotes !== null) entry.totalVotes = totalVotes;
   const noteStr = (row.note || "").trim();
   if (noteStr) entry.note = noteStr;
+  // Provenance: distinguishes a row sourced from the Klarner returns dataset from one
+  // still carrying the original Wikipedia figure. Consumed by the state-leg audit page.
+  const sourceStr = (row.source || "").trim();
+  if (sourceStr) entry.source = sourceStr;
 
   (stateLegData[stateName] = stateLegData[stateName] || []).push(entry);
 }
@@ -999,10 +1007,14 @@ export type StateLegEntry = {
   repSeats?: number;
   demPct?: number;
   repPct?: number;
+  othPct?: number;
   demVotes?: number;
   repVotes?: number;
+  othVotes?: number;
   totalVotes?: number;
   note?: string;
+  /** Where the vote figures came from, e.g. "Klarner SLERS 1967-2022". */
+  source?: string;
 };
 
 export const stateLegData: Record<string, StateLegEntry[]> = ${j(stateLegData)};

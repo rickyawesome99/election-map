@@ -53,6 +53,7 @@ const FIPS_TO_ABBR = Object.fromEntries(Object.entries(ABBR_TO_FIPS).map(([abbr,
 const PARTY_MAP = {
   Republican: "R",
   Democratic: "D",
+  "Democratic-Farmer-Labor": "D",
   Independent: "I",
   Nonpartisan: "O",
 };

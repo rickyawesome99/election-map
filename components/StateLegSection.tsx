@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, type ReactNode } from "react";
+import { useState, useCallback, useMemo, type ReactNode } from "react";
 import StateLegDistrictMap from "./StateLegDistrictMap";
 import StateLegDistrictTable from "./StateLegDistrictTable";
 import type { Chamber, StateLegDistrict } from "@/data/stateLegDistricts";
@@ -92,6 +92,70 @@ function SelectedDistrictPanel({
   );
 }
 
+// Tallies whatever the map is currently showing: incumbent seats-by-party in "seats" mode
+// (matching the hero stat row, including multi-member districts as one seat per incumbent),
+// or district-level 2024 presidential winners in "president" mode.
+function DistrictCountBar({
+  districts,
+  pres2024,
+  viewMode,
+}: {
+  districts: StateLegDistrict[];
+  pres2024: Record<string, StateLegPres2024>;
+  viewMode: MapViewMode;
+}) {
+  const stats = useMemo(() => {
+    if (viewMode === "president") {
+      let dem = 0;
+      let rep = 0;
+      let missing = 0;
+      for (const d of districts) {
+        const result = pres2024[d.number];
+        if (!result) missing++;
+        else if (result.margin <= 0) dem++;
+        else rep++;
+      }
+      return [
+        { key: "D", label: "D", value: dem, color: PARTY_COLOR.D },
+        { key: "R", label: "R", value: rep, color: PARTY_COLOR.R },
+        ...(missing > 0 ? [{ key: "missing", label: "No data", value: missing, color: "var(--app-text-very-muted)" }] : []),
+      ];
+    }
+    const counts: Record<string, number> = {};
+    let vacant = 0;
+    for (const d of districts) {
+      const incumbents = d.incumbents ?? [];
+      if (incumbents.length === 0) {
+        vacant++;
+        continue;
+      }
+      for (const inc of incumbents) counts[inc.party] = (counts[inc.party] ?? 0) + 1;
+    }
+    const entries: { key: string; label: string; value: number; color: string }[] = (["D", "R", "I", "O"] as const)
+      .filter((p) => counts[p])
+      .map((p) => ({ key: p, label: p, value: counts[p], color: PARTY_COLOR[p] }));
+    if (vacant > 0) entries.push({ key: "vacant", label: "Vacant", value: vacant, color: "var(--app-text-very-muted)" });
+    return entries;
+  }, [districts, pres2024, viewMode]);
+
+  if (districts.length === 0 || stats.length === 0) return null;
+
+  return (
+    <div className="order-2 flex flex-wrap items-center gap-x-4 gap-y-1">
+      {stats.map((s) => (
+        <span key={s.key} className="flex items-baseline gap-1.5">
+          <span className="text-sm font-extrabold tabular-nums" style={{ color: s.color }}>
+            {s.value}
+          </span>
+          <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>
+            {s.label}
+          </span>
+        </span>
+      ))}
+    </div>
+  );
+}
+
 export default function StateLegSection({
   stateAbbr,
   stateName,
@@ -179,7 +243,9 @@ export default function StateLegSection({
           </div>
         </div>
 
-        <div className="order-2">
+        <DistrictCountBar districts={districts} pres2024={pres2024} viewMode={viewMode} />
+
+        <div className="order-3">
           <StateLegDistrictMap
             stateAbbr={stateAbbr}
             stateName={stateName}
@@ -194,7 +260,7 @@ export default function StateLegSection({
           />
         </div>
 
-        <div className="order-4">
+        <div className="order-5">
           <StateLegDistrictTable
             districts={districts}
             chamber={activeChamber}
@@ -207,7 +273,7 @@ export default function StateLegSection({
 
       <div className="contents md:flex md:flex-col md:gap-8">
         {selected && (
-          <div className="order-3 md:order-1">
+          <div className="order-4 md:order-1">
             <SelectedDistrictPanel
               district={selected}
               viewMode={viewMode}

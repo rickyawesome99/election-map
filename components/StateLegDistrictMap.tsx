@@ -89,7 +89,11 @@ const NO_PRES_DATA_FILL = { light: "#c7cad1", dark: "#454b57" };
 const OTHER_FILL: Record<string, { light: string; dark: string }> = {
   I: { light: "#c9b98a", dark: "#8a7a4a" },
   O: { light: "#c3aee0", dark: "#6a4f8a" },
-  SPLIT: { light: "#d4b96a", dark: "#8a7a4a" },
+  // Multi-member districts whose seats are held by different parties (e.g. NH House) reuse the
+  // indigo the States tab uses for a split delegation (SPLIT_FILL in StatesOverviewMap.tsx) so
+  // "split control" reads the same site-wide. Kept as a literal rather than an import so this
+  // page doesn't pull the national overview map into its bundle - keep the two in sync.
+  SPLIT: { light: "#4B0082", dark: "#4B0082" },
 };
 
 export default function StateLegDistrictMap({

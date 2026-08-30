@@ -9,6 +9,9 @@ type CompositionTab = "us-house" | "state-house" | "state-senate" | "state-legis
 function EntryCard({ entry }: { entry: CompositionEntry }) {
   const hasSeats = entry.demSeats != null && entry.repSeats != null;
   const hasVoteData = entry.demPct != null && entry.repPct != null;
+  // Only StateLegEntry carries the third-party bucket; HouseDelegationEntry does not.
+  const othPct = "othPct" in entry ? entry.othPct : undefined;
+  const othVotes = "othVotes" in entry ? entry.othVotes : undefined;
   const winner = hasVoteData ? (entry.demPct! > entry.repPct! ? "D" : "R") : null;
   const margin = hasVoteData ? Math.abs(entry.demPct! - entry.repPct!).toFixed(1) : null;
   return (
@@ -51,6 +54,17 @@ function EntryCard({ entry }: { entry: CompositionEntry }) {
               {entry.repVotes != null ? entry.repVotes.toLocaleString() : "—"}
             </span>
           </div>
+          {/* Third-party/independent line — only sourced for state-leg rows rebuilt from the
+              Klarner returns data (US House delegation entries have no such field), and only
+              worth a row when it actually moved votes. */}
+          {othPct != null && othPct >= 0.5 && (
+            <div className="flex items-baseline gap-1.5 text-xs">
+              <span className="font-bold" style={{ color: "var(--app-text-secondary)" }}>O {othPct.toFixed(1)}%</span>
+              <span className="tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
+                {othVotes != null ? othVotes.toLocaleString() : "—"}
+              </span>
+            </div>
+          )}
         </div>
       ) : !hasSeats ? (
         <div className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Vote data unavailable</div>
