@@ -57,3 +57,8 @@ data-entry/medsl/house_2020_precinct.csv
 # Python bytecode from importlib-loaded sibling scripts
 __pycache__/
 *.pyc
+
+# raw TIGER shapefile zips for the superseded state-leg map eras (286 MB, re-downloadable by
+# scripts/build-state-leg-districts-historical.mjs; the built TopoJSON in
+# public/state-leg-districts-historical/ IS committed)
+data-entry/tiger-state-leg-historical/

@@ -8,19 +8,15 @@ import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { normalizeGeographyWinding } from "@/lib/geoWinding";
 import { ABBR_TO_FIPS } from "@/lib/fips";
 import { getRaceColor, getRatingColors, fmtMargin } from "@/lib/colorScale";
+import { districtDisplayLabel, indexByNormalizedKey, lookupByDistrictCode } from "@/lib/stateLegDistrictKey";
+import { districtResultMargin } from "@/lib/useStateLegResults";
 import type { Chamber, StateLegDistrict } from "@/data/stateLegDistricts";
 import type { ChamberMapInfo } from "@/data/stateLegMapInfo";
+import type { StateLegDistrictResult } from "@/data/stateLegResults";
 import type { StateLegPres2024, MapViewMode } from "@/data/stateLegPres2024";
 
 const COUNTIES_URL = "/us-counties.json";
 const PARTY_LABEL: Record<string, string> = { D: "Democratic", R: "Republican", I: "Independent", O: "Other" };
-// Per-state, per-chamber TopoJSON — split from the combined national source files by
-// scripts/split-state-leg-districts.mjs so a state page only fetches its own districts instead
-// of every state's (previously 10.9 MB house / 6.5 MB senate on every load).
-const DISTRICTS_DIR: Record<Chamber, string> = {
-  house: "/state-leg-districts/house",
-  senate: "/state-leg-districts/senate",
-};
 
 type CountyGeometry = {
   rsmKey: string;
@@ -48,19 +44,35 @@ type DistrictGeometry = {
 // few states, doesn't correspond to Open States' numbering scheme at all (MA's named districts, AK
 // Senate's lettered districts). The map must key off the same computed code as `number`, or split
 // districts fall through to the default fill with no hover tooltip. Keep in sync with the build
-// script if a future state needs a new override there.
+// script if a future state needs a new override there, and with the copy in
+// scripts/verify-state-leg-historical-maps.mjs, which checks the same join for past years.
+//
+// The suffixes are matched loosely because TIGER has renamed these layers across vintages: a
+// Vermont Senate district is "Bennington Senatorial District" in the current file and "Bennington
+// State Senate District" in the 2020 one, and the historical maps go through this same function.
 const BOUNDARY_CODE_OVERRIDES: Record<string, (properties: { NAMELSAD?: string }) => string | undefined> = {
   MA_house: (properties) => properties.NAMELSAD?.replace(/\s+District$/, ""),
   MA_senate: (properties) => properties.NAMELSAD?.replace(/\s+District$/, ""),
   AK_senate: (properties) => properties.NAMELSAD?.trim().split(/\s+/).pop(),
   // VT districts are named, not numbered — DISTRICT is "NaN". Confirmed via research, 2026-08-26.
-  VT_house: (properties) => properties.NAMELSAD?.replace(/\s+State House District$/, ""),
-  VT_senate: (properties) => properties.NAMELSAD?.replace(/\s+Senatorial District$/, ""),
+  // NH numbers its House districts within each county. The current (custom-sourced) file already
+  // carries them as "BE1"/"CH14" in DISTRICT, but TIGER spells the same district out as "State
+  // House District Belknap County No. 1" with a DISTRICT of "6" that repeats across counties -
+  // so the county's first two letters are put back in front, which is exactly the state's own
+  // code. Returns nothing for the current file, which falls through to its DISTRICT.
+  NH_house: (properties) => {
+    const parts = properties.NAMELSAD?.match(/District\s+(\S+)\s+County\s+No\.\s*(\d+)$/);
+    return parts ? `${parts[1].slice(0, 2).toUpperCase()}${Number(parts[2])}` : undefined;
+  },
+  VT_house: (properties) => properties.NAMELSAD?.replace(/\s+(State\s+)?House\s+District$/, ""),
+  VT_senate: (properties) => properties.NAMELSAD?.replace(/\s+((State\s+)?Senate|Senatorial)\s+District$/, ""),
 };
 
 function extractDistrictCode(stateAbbr: string, chamber: Chamber, properties: { DISTRICT?: string; NAMELSAD?: string }): string | undefined {
-  const override = BOUNDARY_CODE_OVERRIDES[`${stateAbbr}_${chamber}`];
-  if (override) return override(properties);
+  // An override that returns nothing falls through to the default rules - NH_house needs that,
+  // because only the historical files carry the county-phrased name it rewrites.
+  const overridden = BOUNDARY_CODE_OVERRIDES[`${stateAbbr}_${chamber}`]?.(properties);
+  if (overridden) return overridden;
   const { DISTRICT, NAMELSAD } = properties;
   const lastToken = NAMELSAD?.trim().split(/\s+/).pop();
   if (lastToken && DISTRICT && new RegExp(`^0*${DISTRICT}[A-Za-z]+$`).test(lastToken)) {
@@ -77,14 +89,19 @@ const CHAMBER_LABEL: Record<Chamber, string> = {
 // I/O and the mixed-party "SPLIT" case have no site-wide CSS var, so they keep hardcoded
 // light/dark hex pairs. D/R fills use var(--party-dem)/var(--party-rep) directly (see
 // fillForDistrict) so they always match the "Safe D"/"Safe R" colors used elsewhere on the site.
-const PRES_LEGEND = ["Safe D", "Likely D", "Lean D", "Tilt D", "Tilt R", "Lean R", "Likely R", "Safe R"].map(
+const MARGIN_LEGEND = ["Safe D", "Likely D", "Lean D", "Tilt D", "Tilt R", "Lean R", "Likely R", "Safe R"].map(
   (label) => ({ label, ...getRatingColors(label) })
 );
 // Deliberately NOT a pale blue/red (every real margin bucket, including the lightest Tilt D/R,
 // already lives in that hue range) - a partially-sourced chamber (e.g. a staggered Senate where
 // only the half up in 2024 has a same-year race to crosswalk against) needs "no data" to read as
 // unambiguously neutral, not as a faint lean either direction.
-const NO_PRES_DATA_FILL = { light: "#c7cad1", dark: "#454b57" };
+const NO_DATA_FILL = { light: "#c7cad1", dark: "#454b57" };
+// A district that WAS elected but whose race was never counted (an unopposed candidate declared
+// elected in OK/FL/TX/HI). Warm rather than the cool "no data" gray, because the two mean
+// genuinely different things and a reader should not have to consult the legend twice: this seat
+// has a known holder and no ballots, that one has no row at all.
+const NO_COUNT_FILL = { light: "#d9d0bd", dark: "#57503f" };
 
 const OTHER_FILL: Record<string, { light: string; dark: string }> = {
   I: { light: "#c9b98a", dark: "#8a7a4a" },
@@ -102,10 +119,16 @@ export default function StateLegDistrictMap({
   chamber,
   isUnicameral = false,
   mapInfo = null,
+  boundaryUrl,
+  boundaryNote = null,
   districts = [],
   pres2024 = {},
+  results = null,
+  resultsYear = null,
+  resultsSource = null,
+  resultsLoading = false,
   viewMode = "seats",
-  selected = null,
+  selectedKey = null,
   onSelect,
 }: {
   stateAbbr: string;
@@ -113,15 +136,24 @@ export default function StateLegDistrictMap({
   chamber: Chamber;
   isUnicameral?: boolean;
   mapInfo?: ChamberMapInfo | null;
+  /** Boundary file for the year on screen — the current map, or a superseded era's. */
+  boundaryUrl: string;
+  /** Shown under the map when those boundaries aren't the present-day ones. */
+  boundaryNote?: string | null;
   districts?: StateLegDistrict[];
   pres2024?: Record<string, StateLegPres2024>;
+  results?: Record<string, StateLegDistrictResult> | null;
+  resultsYear?: number | null;
+  resultsSource?: string | null;
+  resultsLoading?: boolean;
   viewMode?: MapViewMode;
-  selected?: StateLegDistrict | null;
-  onSelect?: (d: StateLegDistrict | null) => void;
+  /** The selected district's code, which is all the three views have in common. */
+  selectedKey?: string | null;
+  onSelect?: (districtNumber: string | null) => void;
 }) {
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
-  const [hovered, setHovered] = useState<StateLegDistrict | null>(null);
+  const [hoveredKey, setHoveredKey] = useState<string | null>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [mapSize, setMapSize] = useState({ w: 0, h: 0 });
   // Whether the currently selected state/chamber has sourced district boundaries. Recomputed
@@ -154,13 +186,13 @@ export default function StateLegDistrictMap({
     return () => ro.disconnect();
   }, [measure]);
 
-  const selectedId = selected?.id ?? null;
   const stateFips = ABBR_TO_FIPS[stateAbbr];
   const districtFill = darkMode ? "#3a4a72" : "#c3d0ea";
   const districtStroke = darkMode ? "#0d1117" : "#f6f8fa";
   const hoverStroke = darkMode ? "#ffffff" : "#333333";
   const outlineFill = darkMode ? "#2a3550" : "#dbe3f0";
   const chamberLabel = isUnicameral ? "Legislature" : CHAMBER_LABEL[chamber];
+  const isResultsView = viewMode === "results";
 
   // A shared district boundary can have more than one incumbent (multi-member districts, e.g.
   // AZ/WA House). If they're all the same party, color by that party; if they split, use a
@@ -181,13 +213,32 @@ export default function StateLegDistrictMap({
     for (const d of districts) map[d.number] = d;
     return map;
   }, [districts]);
+  // Results are keyed by whatever the canvass called the district, which is the same district but
+  // not always the same string as the boundary file's code — see lib/stateLegDistrictKey.ts.
+  const resultsByKey = useMemo(() => (results ? indexByNormalizedKey(results) : null), [results]);
+  const resultFor = useCallback(
+    (districtNumber?: string) =>
+      districtNumber && resultsByKey ? lookupByDistrictCode(resultsByKey, stateAbbr, chamber, districtNumber) : undefined,
+    [resultsByKey, stateAbbr, chamber]
+  );
+
   const hasPres2024 = Object.keys(pres2024).length > 0;
+  const hasResults = !!results && Object.keys(results).length > 0;
   const fillForDistrict = useCallback((districtNumber?: string) => {
     if (!districtNumber) return districtFill;
+    if (isResultsView) {
+      const result = resultFor(districtNumber);
+      if (!result) return hasResults ? (darkMode ? NO_DATA_FILL.dark : NO_DATA_FILL.light) : districtFill;
+      const margin = districtResultMargin(result);
+      // A seat filled with no count published is not a 0–0 tie; it gets its own fill rather than
+      // the dead centre of the margin scale.
+      if (margin == null) return darkMode ? NO_COUNT_FILL.dark : NO_COUNT_FILL.light;
+      return getRaceColor(margin);
+    }
     if (viewMode === "president") {
       const result = pres2024[districtNumber];
       if (result) return getRaceColor(result.margin);
-      return hasPres2024 ? (darkMode ? NO_PRES_DATA_FILL.dark : NO_PRES_DATA_FILL.light) : districtFill;
+      return hasPres2024 ? (darkMode ? NO_DATA_FILL.dark : NO_DATA_FILL.light) : districtFill;
     }
     const party = partyByNumber[districtNumber];
     if (!party) return districtFill;
@@ -196,28 +247,31 @@ export default function StateLegDistrictMap({
     const colors = OTHER_FILL[party];
     if (!colors) return districtFill;
     return darkMode ? colors.dark : colors.light;
-  }, [viewMode, pres2024, hasPres2024, partyByNumber, darkMode, districtFill]);
-  const handleHoverEnter = useCallback((d: StateLegDistrict) => setHovered(d), []);
-  const handleHoverLeave = useCallback(() => setHovered(null), []);
+  }, [isResultsView, resultFor, hasResults, viewMode, pres2024, hasPres2024, partyByNumber, darkMode, districtFill]);
+
+  const handleHoverEnter = useCallback((key: string) => setHoveredKey(key), []);
+  const handleHoverLeave = useCallback(() => setHoveredKey(null), []);
   const handleClick = useCallback(
-    (d: StateLegDistrict) => onSelect?.(selected?.id === d.id ? null : d),
-    [onSelect, selected]
+    (key: string) => onSelect?.(selectedKey === key ? null : key),
+    [onSelect, selectedKey]
   );
 
   // The district SVG paths are expensive to reconcile (up to ~150 per state, filtered down from
   // a national geography file with thousands of features). Memoizing this element means React
   // bails out of re-rendering it on hover/mousemove-driven re-renders — only real data changes
-  // (chamber switch, dark mode, sourced districts) recompute it.
+  // (chamber switch, year switch, dark mode, sourced districts) recompute it.
   const districtsLayer = useMemo(() => (
     <Geographies
-      geography={`${DISTRICTS_DIR[chamber]}/${stateAbbr}.json`}
+      key={boundaryUrl}
+      geography={boundaryUrl}
       parseGeographies={(geographies: DistrictGeometry[]) => geographies.map(normalizeGeographyWinding)}
     >
       {({ geographies }: { geographies: DistrictGeometry[] }) => {
         // Each file already holds just this state's districts (split by scripts/split-state-leg-
-        // districts.mjs), so no STATEFP filtering is needed here. A missing state/chamber file
-        // 404s, react-simple-maps swallows the fetch error, and geographies comes back empty —
-        // that's what drives the "coming soon" fallback below.
+        // districts.mjs, or built per era by build-state-leg-districts-historical.mjs), so no
+        // STATEFP filtering is needed here. A missing state/chamber file 404s, react-simple-maps
+        // swallows the fetch error, and geographies comes back empty — that's what drives the
+        // "coming soon" fallback below.
         if (hasDistricts !== (geographies.length > 0)) {
           // Defer the state update out of render.
           queueMicrotask(() => setHasDistricts(geographies.length > 0));
@@ -225,10 +279,13 @@ export default function StateLegDistrictMap({
         return geographies.map((geo) => {
           const districtNumber = geo.properties ? extractDistrictCode(stateAbbr, chamber, geo.properties) : undefined;
           const fill = fillForDistrict(districtNumber);
-          const d = districtNumber ? districtByNumber[districtNumber] : undefined;
-          const isSelected = !!d && selectedId === d.id;
+          // In the two present-day views a polygon is only interactive when it maps to a known
+          // district; in the results view the result itself is what makes it interactive, since
+          // a superseded era's districts have no StateLegDistrict record at all.
+          const interactive = !!districtNumber && (isResultsView ? !!resultFor(districtNumber) : !!districtByNumber[districtNumber]);
+          const isSelected = !!districtNumber && selectedKey === districtNumber;
           // Estimated (not precinct-exact) districts get a dashed outline in president view — see
-          // NO_PRES_DATA_FILL comment above for why "no data" and "real but light" already need to
+          // NO_DATA_FILL comment above for why "no data" and "real but light" already need to
           // stay visually distinct; "estimated" is a third state on top of a real color, so it's
           // signaled via stroke style instead of yet another fill color.
           const isEstimated = viewMode === "president" && !!districtNumber && !!pres2024[districtNumber]?.estimated;
@@ -236,20 +293,20 @@ export default function StateLegDistrictMap({
             <Geography
               key={geo.rsmKey}
               geography={geo}
-              onMouseEnter={() => d && handleHoverEnter(d)}
+              onMouseEnter={() => interactive && districtNumber && handleHoverEnter(districtNumber)}
               onMouseLeave={handleHoverLeave}
-              onClick={() => d && handleClick(d)}
+              onClick={() => interactive && districtNumber && handleClick(districtNumber)}
               style={{
-                default: { fill, stroke: isSelected ? hoverStroke : districtStroke, strokeWidth: isSelected ? 1.75 : 0.75, strokeDasharray: isEstimated ? "2,1.5" : undefined, outline: "none", cursor: d ? "pointer" : "default" },
-                hover: { fill, stroke: d ? hoverStroke : districtStroke, strokeWidth: d ? 1.5 : 1, strokeDasharray: isEstimated ? "2,1.5" : undefined, outline: "none", cursor: d ? "pointer" : "default" },
-                pressed: { fill, stroke: d ? hoverStroke : districtStroke, strokeWidth: d ? 1.5 : 1, strokeDasharray: isEstimated ? "2,1.5" : undefined, outline: "none" },
+                default: { fill, stroke: isSelected ? hoverStroke : districtStroke, strokeWidth: isSelected ? 1.75 : 0.75, strokeDasharray: isEstimated ? "2,1.5" : undefined, outline: "none", cursor: interactive ? "pointer" : "default" },
+                hover: { fill, stroke: interactive ? hoverStroke : districtStroke, strokeWidth: interactive ? 1.5 : 1, strokeDasharray: isEstimated ? "2,1.5" : undefined, outline: "none", cursor: interactive ? "pointer" : "default" },
+                pressed: { fill, stroke: interactive ? hoverStroke : districtStroke, strokeWidth: interactive ? 1.5 : 1, strokeDasharray: isEstimated ? "2,1.5" : undefined, outline: "none" },
               }}
             />
           );
         });
       }}
     </Geographies>
-  ), [chamber, stateAbbr, fillForDistrict, districtByNumber, districtStroke, hoverStroke, handleHoverEnter, handleHoverLeave, handleClick, selectedId, hasDistricts, viewMode, pres2024]);
+  ), [boundaryUrl, chamber, stateAbbr, fillForDistrict, districtByNumber, isResultsView, resultFor, districtStroke, hoverStroke, handleHoverEnter, handleHoverLeave, handleClick, selectedKey, hasDistricts, viewMode, pres2024]);
 
   // Fallback plain-outline layer is likewise memoized so it isn't rebuilt on every hover tick
   // while it's showing (rare: only for states/chambers without sourced boundaries yet).
@@ -275,6 +332,10 @@ export default function StateLegDistrictMap({
     ) : null
   ), [hasDistricts, stateFips, outlineFill]);
 
+  const hoveredDistrict = hoveredKey ? districtByNumber[hoveredKey] : undefined;
+  const hoveredLabel = hoveredKey ? hoveredDistrict?.label ?? districtDisplayLabel(hoveredKey, chamberLabel) : "";
+  const showMarginLegend = !!hasDistricts && ((viewMode === "president" && hasPres2024) || (isResultsView && hasResults));
+
   return (
     <div>
       <div
@@ -288,11 +349,17 @@ export default function StateLegDistrictMap({
         }}
       >
         {/* Hover tooltip */}
-        {hovered && (() => {
-          const incumbents = hovered.incumbents ?? [];
-          const hoveredPres = pres2024[hovered.number];
+        {hoveredKey && (() => {
+          const incumbents = hoveredDistrict?.incumbents ?? [];
+          const hoveredPres = pres2024[hoveredKey];
+          const hoveredResult = resultFor(hoveredKey);
+          const hoveredMargin = districtResultMargin(hoveredResult);
           const tipW = 190;
-          const tipH = viewMode === "president" ? (hoveredPres?.estimated ? 76 : 62) : 46 + Math.max(incumbents.length, 1) * 16;
+          const tipH = isResultsView
+            ? (hoveredMargin == null ? 62 : 90)
+            : viewMode === "president"
+              ? (hoveredPres?.estimated ? 76 : 62)
+              : 46 + Math.max(incumbents.length, 1) * 16;
           const offset = 16;
           const edgePad = 8;
           let left = mousePos.x + offset;
@@ -315,8 +382,43 @@ export default function StateLegDistrictMap({
                 boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
               }}
             >
-              <div className="font-bold text-xs mb-1.5">{hovered.label}</div>
-              {viewMode === "president" ? (
+              <div className="font-bold text-xs mb-1.5">{hoveredLabel}</div>
+              {isResultsView ? (
+                hoveredResult ? (
+                  hoveredMargin == null ? (
+                    <div className="italic" style={{ fontSize: 11, color: "var(--app-text-very-muted)" }}>
+                      Seat filled, no vote count published
+                    </div>
+                  ) : (
+                    <div className="flex flex-col gap-0.5">
+                      <div className="flex items-baseline justify-between gap-2">
+                        <span style={{ fontSize: 11, color: "var(--party-dem)" }}>Democratic</span>
+                        <span className="font-semibold tabular-nums" style={{ fontSize: 11 }}>{(hoveredResult.demVotes ?? 0).toLocaleString()}</span>
+                      </div>
+                      <div className="flex items-baseline justify-between gap-2">
+                        <span style={{ fontSize: 11, color: "var(--party-rep)" }}>Republican</span>
+                        <span className="font-semibold tabular-nums" style={{ fontSize: 11 }}>{(hoveredResult.repVotes ?? 0).toLocaleString()}</span>
+                      </div>
+                      {!!hoveredResult.othVotes && (
+                        <div className="flex items-baseline justify-between gap-2">
+                          <span style={{ fontSize: 11, color: "var(--app-text-muted)" }}>Other</span>
+                          <span className="font-semibold tabular-nums" style={{ fontSize: 11 }}>{hoveredResult.othVotes.toLocaleString()}</span>
+                        </div>
+                      )}
+                      <div className="mt-1 pt-1 flex items-baseline justify-between gap-2" style={{ borderTop: "1px solid var(--app-border)" }}>
+                        <span className="font-bold tabular-nums" style={{ fontSize: 11, color: hoveredMargin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
+                          {fmtMargin(hoveredMargin)}
+                        </span>
+                        {hoveredResult.uncontested && (
+                          <span className="italic" style={{ fontSize: 9, color: "var(--app-text-very-muted)" }}>unopposed</span>
+                        )}
+                      </div>
+                    </div>
+                  )
+                ) : (
+                  <div className="italic" style={{ fontSize: 11, color: "var(--app-text-very-muted)" }}>No {resultsYear} result for this district</div>
+                )
+              ) : viewMode === "president" ? (
                 hoveredPres ? (
                   <div className="flex flex-col gap-0.5">
                     <div className="flex items-baseline justify-between gap-2">
@@ -361,9 +463,9 @@ export default function StateLegDistrictMap({
               ) : (
                 <div className="italic" style={{ fontSize: 11, color: "var(--app-text-very-muted)" }}>Vacant</div>
               )}
-              {viewMode !== "president" && hovered.lastElection != null && !incumbents.some((inc) => inc.lastElection != null) && (
+              {viewMode === "seats" && hoveredDistrict?.lastElection != null && !incumbents.some((inc) => inc.lastElection != null) && (
                 <div className="mt-1 pt-1" style={{ fontSize: 10, color: "var(--app-text-very-muted)", borderTop: "1px solid var(--app-border)" }}>
-                  Last elected {hovered.lastElection}
+                  Last elected {hoveredDistrict.lastElection}
                 </div>
               )}
             </div>
@@ -392,11 +494,33 @@ export default function StateLegDistrictMap({
               style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
             >
               <div className="text-xs font-bold" style={{ color: "var(--app-text-primary)" }}>
-                {chamberLabel} district boundaries coming soon
+                {isResultsView
+                  ? `${chamberLabel} boundaries for ${resultsYear} aren't sourced yet`
+                  : `${chamberLabel} district boundaries coming soon`}
               </div>
               <div className="mt-0.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-                {stateName} 2026 map in progress
+                {isResultsView
+                  ? "The district table below still has every result for this year"
+                  : `${stateName} 2026 map in progress`}
               </div>
+            </div>
+          </div>
+        )}
+
+        {hasDistricts && isResultsView && !hasResults && (
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-4">
+            <div
+              className="pointer-events-auto rounded-lg px-4 py-2.5 text-center"
+              style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+            >
+              <div className="text-xs font-bold" style={{ color: "var(--app-text-primary)" }}>
+                {resultsLoading ? `Loading ${resultsYear} results…` : `${resultsYear} results not available`}
+              </div>
+              {!resultsLoading && (
+                <div className="mt-0.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+                  Not yet sourced for {stateName} {chamberLabel} districts
+                </div>
+              )}
             </div>
           </div>
         )}
@@ -428,16 +552,22 @@ export default function StateLegDistrictMap({
         )}
       </div>
 
-      {hasDistricts && viewMode === "president" && hasPres2024 && (
+      {showMarginLegend && (
         <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1">
-          {PRES_LEGEND.map(({ label, bg }) => (
+          {MARGIN_LEGEND.map(({ label, bg }) => (
             <div key={label} className="flex items-center gap-1">
               <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: bg }} />
               <span className="whitespace-nowrap text-[9px] font-medium" style={{ color: "var(--app-text-muted)" }}>{label}</span>
             </div>
           ))}
+          {isResultsView && Object.values(results ?? {}).some((r) => r.totalVotes == null) && (
+            <div className="flex items-center gap-1">
+              <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: darkMode ? NO_COUNT_FILL.dark : NO_COUNT_FILL.light }} />
+              <span className="whitespace-nowrap text-[9px] font-medium" style={{ color: "var(--app-text-muted)" }}>No count published</span>
+            </div>
+          )}
           <div className="flex items-center gap-1">
-            <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: darkMode ? NO_PRES_DATA_FILL.dark : NO_PRES_DATA_FILL.light }} />
+            <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: darkMode ? NO_DATA_FILL.dark : NO_DATA_FILL.light }} />
             <span className="whitespace-nowrap text-[9px] font-medium" style={{ color: "var(--app-text-muted)" }}>No data</span>
           </div>
         </div>
@@ -449,7 +579,14 @@ export default function StateLegDistrictMap({
         </div>
       )}
 
-      {hasDistricts && mapInfo && (
+      {hasDistricts && isResultsView && (
+        <div className="mt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+          {boundaryNote ?? `${chamberLabel} boundaries as used in ${resultsYear}`}
+          {resultsSource && <> · {resultsSource}</>}
+        </div>
+      )}
+
+      {hasDistricts && !isResultsView && mapInfo && (
         <div className="mt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
           {chamberLabel} boundaries enacted {mapInfo.enactedDate} · first used {mapInfo.firstCycle} ({mapInfo.source})
         </div>

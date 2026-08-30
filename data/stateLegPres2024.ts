@@ -8,8 +8,10 @@ import type { Chamber } from "./stateLegDistricts";
 // where only half the districts had a Nov 2024 election to crosswalk against) is a JSON object
 // missing those specific district keys, not a bug.
 
-// Whether the district map colors by current seat-holder party or by 2024 presidential margin.
-export type MapViewMode = "seats" | "president";
+// What the district map colors by: the current seat-holder's party, the 2024 presidential margin,
+// or the margin of a past legislative election ("results", whose year is chosen separately and
+// whose per-district figures come from data/stateLegResults.ts via public/state-leg-results/).
+export type MapViewMode = "seats" | "president" | "results";
 
 export type StateLegPres2024 = {
   demPct: number;

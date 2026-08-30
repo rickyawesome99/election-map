@@ -1,7 +1,11 @@
 "use client";
 
+import { useMemo } from "react";
 import type { Chamber, StateLegDistrict } from "@/data/stateLegDistricts";
-import type { StateLegPres2024 } from "@/data/stateLegPres2024";
+import type { StateLegDistrictResult } from "@/data/stateLegResults";
+import type { StateLegPres2024, MapViewMode } from "@/data/stateLegPres2024";
+import { districtResultMargin } from "@/lib/useStateLegResults";
+import { isUnassignedResultKey } from "@/lib/stateLegDistrictKey";
 import { getRatingColors, fmtMargin } from "@/lib/colorScale";
 
 const CHAMBER_LABEL: Record<Chamber, string> = {
@@ -16,7 +20,17 @@ const PARTY_COLOR: Record<string, string> = {
   O: "var(--app-text-secondary)",
 };
 
-const COLUMN_HEADERS = ["District", "Incumbent", "Party", "Last Election", "Margin", "Rating", "2024 President"];
+const SEATS_COLUMNS = ["District", "Incumbent", "Party", "Last Election", "Margin", "Rating", "2024 President"];
+const RESULTS_COLUMNS = ["District", "Democratic", "Republican", "Other", "Total", "Margin"];
+
+/** "2" before "10", and "12A" before "12B" — a plain string sort scatters a numbered chamber. */
+function compareDistrictKeys(a: string, b: string): number {
+  const [, aNum, aRest] = a.match(/^(\d*)(.*)$/) as RegExpMatchArray;
+  const [, bNum, bRest] = b.match(/^(\d*)(.*)$/) as RegExpMatchArray;
+  if (aNum && bNum && aNum !== bNum) return Number(aNum) - Number(bNum);
+  if (!!aNum !== !!bNum) return aNum ? -1 : 1;
+  return aRest.localeCompare(bRest);
+}
 
 export default function StateLegDistrictTable({
   districts,
@@ -24,14 +38,39 @@ export default function StateLegDistrictTable({
   stateName,
   isUnicameral = false,
   pres2024 = {},
+  results = null,
+  resultsYear = null,
+  resultsLoading = false,
+  viewMode = "seats",
+  selectedKey = null,
 }: {
   districts: StateLegDistrict[];
   chamber: Chamber;
   stateName: string;
   isUnicameral?: boolean;
   pres2024?: Record<string, StateLegPres2024>;
+  results?: Record<string, StateLegDistrictResult> | null;
+  resultsYear?: number | null;
+  resultsLoading?: boolean;
+  viewMode?: MapViewMode;
+  selectedKey?: string | null;
 }) {
   const chamberLabel = isUnicameral ? "Legislature" : CHAMBER_LABEL[chamber];
+  const isResultsView = viewMode === "results";
+
+  // A past election's rows come from the results themselves, not from the current district list:
+  // under a superseded map the chamber can have had different districts entirely, and a staggered
+  // chamber only elected part of itself that year.
+  const resultRows = useMemo(
+    () => (results ? Object.entries(results).sort(([a], [b]) => compareDistrictKeys(a, b)) : []),
+    [results]
+  );
+
+  const columns = isResultsView ? RESULTS_COLUMNS : SEATS_COLUMNS;
+  const rowCount = isResultsView ? resultRows.length : districts.length;
+  // The count in the header is of DISTRICTS, so a row of votes the source left unattributed to
+  // any district (RI 2024) is listed but not counted as one.
+  const districtRowCount = isResultsView ? resultRows.filter(([key]) => !isUnassignedResultKey(key)).length : rowCount;
 
   return (
     <section className="flex min-w-0 flex-col" style={{ height: "25rem" }}>
@@ -40,10 +79,10 @@ export default function StateLegDistrictTable({
         style={{ borderBottom: "2px solid var(--app-text-primary)" }}
       >
         <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>
-          {chamberLabel} Districts
+          {isResultsView ? `${resultsYear} ${chamberLabel} Results` : `${chamberLabel} Districts`}
         </h2>
         <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-          {districts.length} district{districts.length !== 1 ? "s" : ""}
+          {districtRowCount} district{districtRowCount !== 1 ? "s" : ""}
         </span>
       </div>
 
@@ -51,10 +90,10 @@ export default function StateLegDistrictTable({
         <table className="w-full text-sm">
           <thead>
             <tr className="sticky top-0 z-10" style={{ background: "var(--app-bg)" }}>
-              {COLUMN_HEADERS.map((label, i) => (
+              {columns.map((label, i) => (
                 <th
                   key={label}
-                  className={`pb-2 pr-3 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap ${i === 0 ? "text-left" : i === 1 ? "text-left" : "text-right"}`}
+                  className={`pb-2 pr-3 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap ${i === 0 || (!isResultsView && i === 1) ? "text-left" : "text-right"}`}
                   style={{ color: "var(--app-text-muted)" }}
                 >
                   {label}
@@ -63,24 +102,90 @@ export default function StateLegDistrictTable({
             </tr>
           </thead>
           <tbody>
-            {districts.length === 0 ? (
+            {rowCount === 0 ? (
               <tr>
-                <td colSpan={COLUMN_HEADERS.length} className="px-4 py-10 text-center">
+                <td colSpan={columns.length} className="px-4 py-10 text-center">
                   <p className="text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>
-                    District data for {stateName} {chamberLabel} isn&apos;t available yet.
+                    {isResultsView
+                      ? resultsLoading
+                        ? `Loading ${resultsYear} results…`
+                        : `No ${resultsYear} results for the ${stateName} ${chamberLabel}.`
+                      : `District data for ${stateName} ${chamberLabel} isn't available yet.`}
                   </p>
-                  <p className="mt-1 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-                    Check back once 2026 boundaries and results are added.
-                  </p>
+                  {!isResultsView && (
+                    <p className="mt-1 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+                      Check back once 2026 boundaries and results are added.
+                    </p>
+                  )}
                 </td>
               </tr>
+            ) : isResultsView ? (
+              resultRows.map(([key, result]) => {
+                const margin = districtResultMargin(result);
+                const isSelected = selectedKey === key;
+                return (
+                  <tr
+                    key={key}
+                    style={{
+                      borderBottom: "1px solid var(--app-border)",
+                      background: isSelected ? "var(--app-tab-bg)" : undefined,
+                    }}
+                  >
+                    <td
+                      className="py-3 pr-3 text-left font-semibold whitespace-nowrap tabular-nums"
+                      style={{ color: "var(--app-text-primary)" }}
+                      title={isUnassignedResultKey(key) ? "Votes the source could not attribute to a district" : undefined}
+                    >
+                      {key}
+                      {isUnassignedResultKey(key) && (
+                        <span className="ml-1 font-normal italic" style={{ fontSize: 10, color: "var(--app-text-very-muted)" }}>unassigned</span>
+                      )}
+                    </td>
+                    {margin == null ? (
+                      <td colSpan={4} className="py-3 pr-3 text-right italic" style={{ color: "var(--app-text-very-muted)" }}>
+                        No vote count published
+                      </td>
+                    ) : (
+                      <>
+                        <td className="py-3 pr-3 text-right tabular-nums" style={{ color: "var(--app-text-primary)" }}>
+                          {(result.demVotes ?? 0).toLocaleString()}
+                        </td>
+                        <td className="py-3 pr-3 text-right tabular-nums" style={{ color: "var(--app-text-primary)" }}>
+                          {(result.repVotes ?? 0).toLocaleString()}
+                        </td>
+                        <td className="py-3 pr-3 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>
+                          {(result.othVotes ?? 0).toLocaleString()}
+                        </td>
+                        <td className="py-3 pr-3 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>
+                          {(result.totalVotes ?? 0).toLocaleString()}
+                        </td>
+                      </>
+                    )}
+                    <td
+                      className="py-3 text-right tabular-nums font-semibold whitespace-nowrap"
+                      style={{ color: margin == null ? "var(--app-text-very-muted)" : margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}
+                      title={result.uncontested ? "Every contest in this district had a single candidate" : undefined}
+                    >
+                      {margin == null ? "—" : fmtMargin(margin)}
+                      {result.uncontested && margin != null && <span style={{ color: "var(--app-text-very-muted)" }}> *</span>}
+                    </td>
+                  </tr>
+                );
+              })
             ) : (
               districts.map((d) => {
                 const incumbents = d.incumbents ?? [];
                 const { bg, text } = d.rating ? getRatingColors(d.rating) : { bg: "", text: "" };
                 const pres = pres2024[d.number];
+                const isSelected = selectedKey === d.number;
                 return (
-                  <tr key={d.id} style={{ borderBottom: "1px solid var(--app-border)" }}>
+                  <tr
+                    key={d.id}
+                    style={{
+                      borderBottom: "1px solid var(--app-border)",
+                      background: isSelected ? "var(--app-tab-bg)" : undefined,
+                    }}
+                  >
                     <td className="py-3 pr-3 text-left font-semibold whitespace-nowrap tabular-nums" style={{ color: "var(--app-text-primary)" }}>
                       {d.number}
                     </td>
@@ -141,6 +246,12 @@ export default function StateLegDistrictTable({
           </tbody>
         </table>
       </div>
+
+      {isResultsView && resultRows.some(([, r]) => r.uncontested) && (
+        <div className="shrink-0 pt-2 text-[10px] italic" style={{ color: "var(--app-text-very-muted)" }}>
+          * every contest in the district had a single candidate
+        </div>
+      )}
     </section>
   );
 }
