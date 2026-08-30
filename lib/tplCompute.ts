@@ -492,14 +492,26 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
   // State Legislature
   const legEntries = stateLegData[stateName] ?? [];
   const isUnicameral = stateName === "Nebraska";
+  // A year counts once every chamber that WAS on the ballot has a vote total — not once both
+  // chambers do. Staggered senates (MI, MN, SC, KS, NM) sit out specific even years, and demanding
+  // a Senate figure for those years discarded the state's complete House result: Michigan 2024's
+  // 5.4 million House votes were being thrown away because no Senate seat was up.
+  //
+  // The two cases are told apart by the shape of data-entry/state_leg.csv, which carries exactly
+  // one row per chamber-year that actually happened (verified against data/stateLegCalendar.ts —
+  // its election years and the CSV's chamber-years agree exactly). So a chamber that did not elect
+  // has NO ROW, while a chamber that elected but is unsourced has a row with null votes. Requiring
+  // every PRESENT row to carry votes therefore keeps a partially-sourced year out while letting a
+  // genuine single-chamber year in.
   const legYears = [...new Set(legEntries.map((e) => e.year))]
     .filter((year) => {
       if (year < 2018) return false;
       const yearEntries = legEntries.filter((e) => e.year === year);
-      if (isUnicameral) return yearEntries.some((e) => e.demVotes != null && e.repVotes != null);
-      const hasHouseData = yearEntries.some((e) => e.type === "House" && e.demVotes != null && e.repVotes != null);
-      const hasSenateData = yearEntries.some((e) => e.type === "Senate" && e.demVotes != null && e.repVotes != null);
-      return hasHouseData && hasSenateData;
+      const sourced = yearEntries.filter((e) => e.demVotes != null && e.repVotes != null);
+      // Nebraska's unicameral body is stored under "House"; its "Senate" rows are deliberate
+      // empty placeholders marked "Unicameral", so it can never satisfy the all-rows-sourced test.
+      if (isUnicameral) return sourced.length > 0;
+      return sourced.length > 0 && sourced.length === yearEntries.length;
     })
     .sort((a, b) => a - b);
 
