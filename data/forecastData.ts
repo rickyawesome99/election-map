@@ -25877,7 +25877,7 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
     { "year": 2022, "type": "Senate", "note": "Unicameral", "source": "Wikipedia (unverified)" },
     { "year": 2020, "type": "House", "freq": 2, "demSeats": 17, "repSeats": 32, "demPct": 40, "repPct": 59, "othPct": 1, "demVotes": 166676, "repVotes": 245639, "othVotes": 4134, "totalVotes": 416449, "source": "Wikipedia district tables (party = endorsement; NE ballot is nonpartisan)" },
     { "year": 2020, "type": "Senate", "note": "Unicameral", "source": "Wikipedia (unverified)" },
-    { "year": 2018, "type": "House", "freq": 2, "demSeats": 18, "repSeats": 30, "note": "Incomplete Data", "source": "Wikipedia (unverified)" },
+    { "year": 2018, "type": "House", "freq": 2, "demSeats": 18, "repSeats": 30, "demPct": 36.5, "repPct": 60.5, "othPct": 3, "demVotes": 112564, "repVotes": 186420, "othVotes": 9197, "totalVotes": 308181, "source": "Wikipedia district tables (party = endorsement; NE ballot is nonpartisan)" },
     { "year": 2018, "type": "Senate", "note": "Unicameral", "source": "Wikipedia (unverified)" },
     { "year": 2016, "type": "House", "freq": 2, "demSeats": 16, "repSeats": 31, "demPct": 29.1, "repPct": 49.2, "othPct": 21.7, "demVotes": 107392, "repVotes": 181519, "othVotes": 80288, "totalVotes": 369199, "source": "Wikipedia district tables (party = endorsement; NE ballot is nonpartisan)" },
     { "year": 2016, "type": "Senate", "note": "Unicameral", "source": "Wikipedia (unverified)" }

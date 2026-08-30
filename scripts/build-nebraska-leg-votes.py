@@ -56,14 +56,43 @@ CAND_BOX = re.compile(
 WINNER_BOX = re.compile(
     r"\{\{\s*Election box winning candidate[^}]*?\|\s*party\s*=\s*([^|\n]+?)\s*\|",
     re.IGNORECASE | re.DOTALL)
-DISTRICT_HEAD = re.compile(r"^=== *District\s+\d+ *===", re.M | re.IGNORECASE)
+DISTRICT_HEAD = re.compile(r"^=== *District\s+(\d+) *===", re.M | re.IGNORECASE)
 # Nebraska runs a nonpartisan top-two primary, and each district's table shows BOTH rounds
 # in one box: the primary first, then this marker, then the November general. Summing the
 # whole block double-counts every district (2020 came out at D 253k against the article's
 # D 167k). Everything before this marker is the primary and must be dropped.
 GENERAL_MARKER = re.compile(r"\{\{\s*Election box open primary general election",
                             re.IGNORECASE)
+# The 2018 article uses `no party` template variants: name and votes, no affiliation.
+# These are read with a real field parser rather than a regex over the whole template,
+# because a naive split on "|" also splits inside a [[A|B]] wikilink and mangles the name.
+BOX_ANY = re.compile(r"\{\{\s*(Election box[^|}]*)((?:\|[^{}]*)*)\}\}", re.IGNORECASE | re.DOTALL)
 
+
+def box_fields(body):
+    body = re.sub(r"\[\[([^\]]*?)\|([^\]]*?)\]\]",
+                  lambda m: "[[" + m.group(1) + "\x00" + m.group(2) + "]]", body)
+    out = {}
+    for chunk in body.split("|")[1:]:
+        if "=" in chunk:
+            k, v = chunk.split("=", 1)
+            out[k.strip().lower()] = v.replace("\x00", "|").strip()
+    return out
+
+
+def noparty_candidates(block):
+    """(candidate, votes, is_winner) for each `no party` candidate box."""
+    for m in BOX_ANY.finditer(block):
+        name = m.group(1).strip().lower()
+        if "candidate no party" not in name:
+            continue
+        f = box_fields(m.group(2))
+        if "candidate" in f and "votes" in f:
+            yield f["candidate"], int(f["votes"].replace(",", "")), "winning" in name
+
+
+MEMBERS_CSV = os.path.join(REPO, "data-entry", "nebraska_2018_members.csv")
+DEFEATED_CSV = os.path.join(REPO, "data-entry", "nebraska_2018_candidate_parties.csv")
 
 CACHE_DIR = os.environ.get(
     "WIKI_CACHE", "/private/tmp/claude-501/-Users-rickyjia-election-map/wiki-cache")
@@ -91,6 +120,64 @@ def wikitext(page):
     with open(path, "w", encoding="utf-8") as fh:
         fh.write(wt)
     return wt
+
+
+_NICK = {"BOB": "ROBERT", "TIM": "TIMOTHY", "TOM": "THOMAS", "MIKE": "MICHAEL",
+         "MATT": "MATTHEW", "DAN": "DANIEL", "PAT": "PATRICIA", "STEVE": "STEPHEN",
+         "CHUCK": "CHARLES"}
+
+
+def name_key(raw):
+    """first+last, nickname-normalised, middle initials dropped.
+
+    The article writes the same person several ways across cycles - "Bob Hilkemann" vs
+    "Robert Hilkemann", "Timothy J. Gragert" vs "Tim Gragert", "Mark A. Kolterman" - so a
+    literal match misses a third of them.
+    """
+    n = re.sub(r"\[\[(?:[^\]|]*\|)?([^\]]*?)\]?\]?$", r"\1", raw)
+    n = re.sub(r"\[\[(?:[^\]|]*\|)?([^\]]*)\]\]", r"\1", n)
+    n = re.sub(r"\(.*?\)", "", n)                       # "(incumbent)"
+    n = re.sub(r"[^A-Za-z .]", " ", n.replace("'", "")).upper()
+    parts = [x for x in re.split(r"[ .]+", n) if len(x) > 1]
+    if not parts:
+        return ""
+    return _NICK.get(parts[0], parts[0]) + " " + parts[-1]
+
+
+def short_bucket(party):
+    """D/R/O from the short codes the two Nebraska files use ("Dem", "Rep", "Ind", "Lib").
+
+    `bucket()` matches on the full party NAME as Wikipedia writes it ("Democratic Party
+    (United States)"), so it returns O for "Dem" - hence this separate reader.
+    """
+    p = (party or "").strip().upper()
+    if p.startswith("DEM"):
+        return "D"
+    if p.startswith("REP"):
+        return "R"
+    return "O"
+
+
+def load_2018_parties():
+    """Nebraska 2018 needs an external party map: its article records NO affiliation for
+    any candidate (all 102 entries use the `no party` template) because the ballot carries
+    none. Two committed files supply it - the seat-by-seat member list (incumbents and
+    winners) and the researched parties of the 16 defeated non-incumbents the member list
+    cannot cover. Keyed BY DISTRICT for the defeated file so a spelling variant cannot
+    silently drop a candidate.
+    """
+    by_name, by_district = {}, {}
+    if os.path.exists(MEMBERS_CSV):
+        with open(MEMBERS_CSV, newline="", encoding="utf-8") as fh:
+            for r in csv.DictReader(fh):
+                if r["incumbent"].strip().upper() != "VACANT":
+                    by_name[name_key(r["incumbent"])] = short_bucket(r["incumbent_party"])
+                by_name[name_key(r["elected"])] = short_bucket(r["elected_party"])
+    if os.path.exists(DEFEATED_CSV):
+        with open(DEFEATED_CSV, newline="", encoding="utf-8") as fh:
+            for r in csv.DictReader(fh):
+                by_district[(r["district"].strip(), name_key(r["candidate"]))] = short_bucket(r["party"])
+    return by_name, by_district
 
 
 def bucket(party):
@@ -126,9 +213,11 @@ def parse_year(year):
     "Close races"/"Predictions" boxes too.
     """
     wt = wikitext(f"{year}_Nebraska_Legislature_election")
+    by_name, by_district = load_2018_parties() if year == 2018 else ({}, {})
     heads = list(DISTRICT_HEAD.finditer(wt))
     out = {"D": 0, "R": 0, "O": 0}
     won = {"D": 0, "R": 0, "O": 0}
+    unattributed = []
     n = 0
     for i, h in enumerate(heads):
         block = wt[h.end(): heads[i + 1].start() if i + 1 < len(heads) else len(wt)]
@@ -140,7 +229,20 @@ def parse_year(year):
             n += 1
         for party in WINNER_BOX.findall(block):
             won[bucket(party)] += 1
-    return out, n, len(heads), won
+        if by_name or by_district:
+            # 2018: the boxes carry no party, so attribute each candidate by name.
+            dist = h.group(1)
+            for nm, votes, is_winner in noparty_candidates(block):
+                k = name_key(nm)
+                p = by_district.get((dist, k)) or by_name.get(k)
+                if p is None:
+                    unattributed.append((dist, nm.strip(), votes))
+                    p = "O"
+                out[p] += votes
+                n += 1
+                if is_winner:
+                    won[p] += 1
+    return out, n, len(heads), won, unattributed
 
 
 def main():
@@ -153,7 +255,7 @@ def main():
     parsed = {}
     print(f"{'year':6s}{'cands':>6}{'dists':>6}{'D':>10}{'R':>10}{'O':>9}{'total':>10}   check")
     for y in YEARS:
-        v, n, d, won = parse_year(y)
+        v, n, d, won, unattr = parse_year(y)
         total = sum(v.values())
         parsed[y] = (v, total, won)
         check = ""
@@ -164,6 +266,8 @@ def main():
                      else f"MISMATCH article D{s['D']} R{s['R']}")
         print(f"{y:<6d}{n:6d}{d:6d}{v['D']:10,}{v['R']:10,}{v['O']:9,}{total:10,}"
               f"   won {won['D']}D/{won['R']}R/{won['O']}O   {check}")
+        for u in unattr:
+            print(f"        UNATTRIBUTED  district {u[0]:>3s}  {u[1]:28s}{u[2]:>8,}")
 
     if not args.write:
         return
