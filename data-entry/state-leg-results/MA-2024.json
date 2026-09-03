@@ -6,961 +6,3141 @@
     "demVotes": 20721,
     "repVotes": 0,
     "othVotes": 303,
-    "totalVotes": 21024
+    "totalVotes": 21024,
+    "candidates": [
+     {
+      "name": "Dawne Frances Shand",
+      "party": "D",
+      "votes": 20721
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 303
+     }
+    ]
    },
    "2nd Essex": {
     "demVotes": 16063,
     "repVotes": 13562,
     "othVotes": 19,
-    "totalVotes": 29644
+    "totalVotes": 29644,
+    "candidates": [
+     {
+      "name": "Kristin E Kassner",
+      "party": "D",
+      "votes": 16063
+     },
+     {
+      "name": "Mark T Tashjian",
+      "party": "R",
+      "votes": 13562
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 19
+     }
+    ]
    },
    "3rd Essex": {
     "demVotes": 14198,
     "repVotes": 0,
     "othVotes": 86,
-    "totalVotes": 14284
+    "totalVotes": 14284,
+    "candidates": [
+     {
+      "name": "Andres X Vargas",
+      "party": "D",
+      "votes": 14198
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 86
+     }
+    ]
    },
    "4th Essex": {
     "demVotes": 9285,
     "repVotes": 0,
     "othVotes": 406,
-    "totalVotes": 9691
+    "totalVotes": 9691,
+    "candidates": [
+     {
+      "name": "Estela A Reyes",
+      "party": "D",
+      "votes": 9285
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 406
+     }
+    ]
    },
    "5th Essex": {
     "demVotes": 17877,
     "repVotes": 0,
     "othVotes": 8995,
-    "totalVotes": 26872
+    "totalVotes": 26872,
+    "candidates": [
+     {
+      "name": "Ann Margaret Ferrante",
+      "party": "D",
+      "votes": 17877
+     },
+     {
+      "name": "Steven G Leblanc Jr.",
+      "party": "O",
+      "votes": 8926
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 69
+     }
+    ]
    },
    "6th Essex": {
     "demVotes": 16598,
     "repVotes": 5548,
     "othVotes": 1227,
-    "totalVotes": 23373
+    "totalVotes": 23373,
+    "candidates": [
+     {
+      "name": "Jerald A Parisella",
+      "party": "D",
+      "votes": 16598
+     },
+     {
+      "name": "Ty Vitale",
+      "party": "R",
+      "votes": 5548
+     },
+     {
+      "name": "Euplio R Marciano",
+      "party": "O",
+      "votes": 1216
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 11
+     }
+    ]
    },
    "7th Essex": {
     "demVotes": 18548,
     "repVotes": 0,
     "othVotes": 130,
-    "totalVotes": 18678
+    "totalVotes": 18678,
+    "candidates": [
+     {
+      "name": "Manny Cruz",
+      "party": "D",
+      "votes": 18548
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 130
+     }
+    ]
    },
    "8th Essex": {
     "demVotes": 18643,
     "repVotes": 0,
     "othVotes": 293,
-    "totalVotes": 18936
+    "totalVotes": 18936,
+    "candidates": [
+     {
+      "name": "Jennifer Wb Armini",
+      "party": "D",
+      "votes": 18643
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 293
+     }
+    ]
    },
    "9th Essex": {
     "demVotes": 0,
     "repVotes": 18114,
     "othVotes": 195,
-    "totalVotes": 18309
+    "totalVotes": 18309,
+    "candidates": [
+     {
+      "name": "Donald H Wong",
+      "party": "R",
+      "votes": 18114
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 195
+     }
+    ]
    },
    "10th Essex": {
     "demVotes": 10252,
     "repVotes": 0,
     "othVotes": 357,
-    "totalVotes": 10609
+    "totalVotes": 10609,
+    "candidates": [
+     {
+      "name": "Daniel H Cahill",
+      "party": "D",
+      "votes": 10252
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 357
+     }
+    ]
    },
    "11th Essex": {
     "demVotes": 11228,
     "repVotes": 0,
     "othVotes": 438,
-    "totalVotes": 11666
+    "totalVotes": 11666,
+    "candidates": [
+     {
+      "name": "Sean Reid",
+      "party": "D",
+      "votes": 11228
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 438
+     }
+    ]
    },
    "12th Essex": {
     "demVotes": 17194,
     "repVotes": 0,
     "othVotes": 464,
-    "totalVotes": 17658
+    "totalVotes": 17658,
+    "candidates": [
+     {
+      "name": "Thomas P Walsh",
+      "party": "D",
+      "votes": 17194
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 464
+     }
+    ]
    },
    "13th Essex": {
     "demVotes": 18746,
     "repVotes": 0,
     "othVotes": 365,
-    "totalVotes": 19111
+    "totalVotes": 19111,
+    "candidates": [
+     {
+      "name": "Sally P Kerans",
+      "party": "D",
+      "votes": 18746
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 365
+     }
+    ]
    },
    "14th Essex": {
     "demVotes": 18597,
     "repVotes": 0,
     "othVotes": 204,
-    "totalVotes": 18801
+    "totalVotes": 18801,
+    "candidates": [
+     {
+      "name": "Adrianne Pusateri Ramos",
+      "party": "D",
+      "votes": 18597
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 204
+     }
+    ]
    },
    "15th Essex": {
     "demVotes": 16571,
     "repVotes": 0,
     "othVotes": 449,
-    "totalVotes": 17020
+    "totalVotes": 17020,
+    "candidates": [
+     {
+      "name": "Ryan M Hamilton",
+      "party": "D",
+      "votes": 16571
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 449
+     }
+    ]
    },
    "16th Essex": {
     "demVotes": 10187,
     "repVotes": 0,
     "othVotes": 493,
-    "totalVotes": 10680
+    "totalVotes": 10680,
+    "candidates": [
+     {
+      "name": "Francisco E Paulino",
+      "party": "D",
+      "votes": 10187
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 493
+     }
+    ]
    },
    "17th Essex": {
     "demVotes": 9870,
     "repVotes": 0,
     "othVotes": 242,
-    "totalVotes": 10112
+    "totalVotes": 10112,
+    "candidates": [
+     {
+      "name": "Frank A Moran",
+      "party": "D",
+      "votes": 9870
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 242
+     }
+    ]
    },
    "18th Essex": {
     "demVotes": 18998,
     "repVotes": 0,
     "othVotes": 394,
-    "totalVotes": 19392
+    "totalVotes": 19392,
+    "candidates": [
+     {
+      "name": "Tram T Nguyen",
+      "party": "D",
+      "votes": 18998
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 394
+     }
+    ]
    },
    "1st Bristol": {
     "demVotes": 11316,
     "repVotes": 11404,
     "othVotes": 15,
-    "totalVotes": 22735
+    "totalVotes": 22735,
+    "candidates": [
+     {
+      "name": "Michael Chaisson",
+      "party": "R",
+      "votes": 11404
+     },
+     {
+      "name": "Kostas Loukos",
+      "party": "D",
+      "votes": 11316
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 15
+     }
+    ]
    },
    "1st Hampden": {
     "demVotes": 0,
     "repVotes": 19075,
     "othVotes": 163,
-    "totalVotes": 19238
+    "totalVotes": 19238,
+    "candidates": [
+     {
+      "name": "Todd M Smola",
+      "party": "R",
+      "votes": 19075
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 163
+     }
+    ]
    },
    "1st Norfolk": {
     "demVotes": 15517,
     "repVotes": 0,
     "othVotes": 321,
-    "totalVotes": 15838
+    "totalVotes": 15838,
+    "candidates": [
+     {
+      "name": "Bruce J Ayers",
+      "party": "D",
+      "votes": 15517
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 321
+     }
+    ]
    },
    "1st Suffolk": {
     "demVotes": 11326,
     "repVotes": 0,
     "othVotes": 342,
-    "totalVotes": 11668
+    "totalVotes": 11668,
+    "candidates": [
+     {
+      "name": "Adrian C Madaro",
+      "party": "D",
+      "votes": 11326
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 342
+     }
+    ]
    },
    "2nd Bristol": {
     "demVotes": 12769,
     "repVotes": 0,
     "othVotes": 5995,
-    "totalVotes": 18764
+    "totalVotes": 18764,
+    "candidates": [
+     {
+      "name": "James K Hawkins",
+      "party": "D",
+      "votes": 12769
+     },
+     {
+      "name": "Andrew Nelson",
+      "party": "O",
+      "votes": 3540
+     },
+     {
+      "name": "Patricia Bellfield",
+      "party": "O",
+      "votes": 2389
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 66
+     }
+    ]
    },
    "2nd Hampden": {
     "demVotes": 18841,
     "repVotes": 0,
     "othVotes": 419,
-    "totalVotes": 19260
+    "totalVotes": 19260,
+    "candidates": [
+     {
+      "name": "Brian M Ashe",
+      "party": "D",
+      "votes": 18841
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 419
+     }
+    ]
    },
    "2nd Norfolk": {
     "demVotes": 12919,
     "repVotes": 5650,
     "othVotes": 51,
-    "totalVotes": 18620
+    "totalVotes": 18620,
+    "candidates": [
+     {
+      "name": "Tackey Chan",
+      "party": "D",
+      "votes": 12919
+     },
+     {
+      "name": "Sharon Marie Cintolo",
+      "party": "R",
+      "votes": 5650
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 51
+     }
+    ]
    },
    "2nd Suffolk": {
     "demVotes": 12625,
     "repVotes": 0,
     "othVotes": 246,
-    "totalVotes": 12871
+    "totalVotes": 12871,
+    "candidates": [
+     {
+      "name": "Daniel J Ryan",
+      "party": "D",
+      "votes": 12625
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 246
+     }
+    ]
    },
    "3rd Bristol": {
     "demVotes": 15398,
     "repVotes": 0,
     "othVotes": 245,
-    "totalVotes": 15643
+    "totalVotes": 15643,
+    "candidates": [
+     {
+      "name": "Carol Ann Doherty",
+      "party": "D",
+      "votes": 15398
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 245
+     }
+    ]
    },
    "3rd Hampden": {
     "demVotes": 0,
     "repVotes": 20027,
     "othVotes": 360,
-    "totalVotes": 20387
+    "totalVotes": 20387,
+    "candidates": [
+     {
+      "name": "Nicholas A Boldyga",
+      "party": "R",
+      "votes": 20027
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 360
+     }
+    ]
    },
    "3rd Norfolk": {
     "demVotes": 14559,
     "repVotes": 0,
     "othVotes": 386,
-    "totalVotes": 14945
+    "totalVotes": 14945,
+    "candidates": [
+     {
+      "name": "Ronald Mariano",
+      "party": "D",
+      "votes": 14559
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 386
+     }
+    ]
    },
    "3rd Suffolk": {
     "demVotes": 13660,
     "repVotes": 0,
     "othVotes": 254,
-    "totalVotes": 13914
+    "totalVotes": 13914,
+    "candidates": [
+     {
+      "name": "Aaron M Michlewitz",
+      "party": "D",
+      "votes": 13660
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 254
+     }
+    ]
    },
    "4th Bristol": {
     "demVotes": 0,
     "repVotes": 19728,
     "othVotes": 283,
-    "totalVotes": 20011
+    "totalVotes": 20011,
+    "candidates": [
+     {
+      "name": "Steven S Howitt",
+      "party": "R",
+      "votes": 19728
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 283
+     }
+    ]
    },
    "4th Hampden": {
     "demVotes": 9023,
     "repVotes": 12894,
     "othVotes": 16,
-    "totalVotes": 21933
+    "totalVotes": 21933,
+    "candidates": [
+     {
+      "name": "Kelly W Pease",
+      "party": "R",
+      "votes": 12894
+     },
+     {
+      "name": "Bridget Matthews Kane",
+      "party": "D",
+      "votes": 9023
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 16
+     }
+    ]
    },
    "4th Norfolk": {
     "demVotes": 17165,
     "repVotes": 0,
     "othVotes": 367,
-    "totalVotes": 17532
+    "totalVotes": 17532,
+    "candidates": [
+     {
+      "name": "James Michael Murphy",
+      "party": "D",
+      "votes": 17165
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 367
+     }
+    ]
    },
    "4th Suffolk": {
     "demVotes": 17916,
     "repVotes": 0,
     "othVotes": 393,
-    "totalVotes": 18309
+    "totalVotes": 18309,
+    "candidates": [
+     {
+      "name": "David Biele",
+      "party": "D",
+      "votes": 17916
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 393
+     }
+    ]
    },
    "5th Bristol": {
     "demVotes": 11464,
     "repVotes": 12390,
     "othVotes": 15,
-    "totalVotes": 23869
+    "totalVotes": 23869,
+    "candidates": [
+     {
+      "name": "Justin Thurber",
+      "party": "R",
+      "votes": 12390
+     },
+     {
+      "name": "Patricia A Haddad",
+      "party": "D",
+      "votes": 11464
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 15
+     }
+    ]
    },
    "5th Hampden": {
     "demVotes": 12368,
     "repVotes": 0,
     "othVotes": 64,
-    "totalVotes": 12432
+    "totalVotes": 12432,
+    "candidates": [
+     {
+      "name": "Patricia A Duffy",
+      "party": "D",
+      "votes": 12368
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 64
+     }
+    ]
    },
    "5th Norfolk": {
     "demVotes": 16139,
     "repVotes": 0,
     "othVotes": 416,
-    "totalVotes": 16555
+    "totalVotes": 16555,
+    "candidates": [
+     {
+      "name": "Mark J Cusack",
+      "party": "D",
+      "votes": 16139
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 416
+     }
+    ]
    },
    "5th Suffolk": {
     "demVotes": 10588,
     "repVotes": 0,
     "othVotes": 256,
-    "totalVotes": 10844
+    "totalVotes": 10844,
+    "candidates": [
+     {
+      "name": "Christopher J Worrell",
+      "party": "D",
+      "votes": 10588
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 256
+     }
+    ]
    },
    "6th Bristol": {
     "demVotes": 11766,
     "repVotes": 0,
     "othVotes": 424,
-    "totalVotes": 12190
+    "totalVotes": 12190,
+    "candidates": [
+     {
+      "name": "Carole A Fiola",
+      "party": "D",
+      "votes": 11766
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 424
+     }
+    ]
    },
    "6th Hampden": {
     "demVotes": 13944,
     "repVotes": 0,
     "othVotes": 181,
-    "totalVotes": 14125
+    "totalVotes": 14125,
+    "candidates": [
+     {
+      "name": "Michael J Finn",
+      "party": "D",
+      "votes": 13944
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 181
+     }
+    ]
    },
    "6th Norfolk": {
     "demVotes": 17933,
     "repVotes": 0,
     "othVotes": 171,
-    "totalVotes": 18104
+    "totalVotes": 18104,
+    "candidates": [
+     {
+      "name": "William C Galvin",
+      "party": "D",
+      "votes": 17933
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 171
+     }
+    ]
    },
    "6th Suffolk": {
     "demVotes": 12435,
     "repVotes": 0,
     "othVotes": 307,
-    "totalVotes": 12742
+    "totalVotes": 12742,
+    "candidates": [
+     {
+      "name": "Russell E Holmes",
+      "party": "D",
+      "votes": 12435
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 307
+     }
+    ]
    },
    "7th Bristol": {
     "demVotes": 8556,
     "repVotes": 0,
     "othVotes": 265,
-    "totalVotes": 8821
+    "totalVotes": 8821,
+    "candidates": [
+     {
+      "name": "Alan Silvia",
+      "party": "D",
+      "votes": 8556
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 265
+     }
+    ]
    },
    "7th Hampden": {
     "demVotes": 18235,
     "repVotes": 0,
     "othVotes": 153,
-    "totalVotes": 18388
+    "totalVotes": 18388,
+    "candidates": [
+     {
+      "name": "Aaron L Saunders",
+      "party": "D",
+      "votes": 18235
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 153
+     }
+    ]
    },
    "7th Norfolk": {
     "demVotes": 13379,
     "repVotes": 0,
     "othVotes": 7364,
-    "totalVotes": 20743
+    "totalVotes": 20743,
+    "candidates": [
+     {
+      "name": "Richard Gerard Wells Jr.",
+      "party": "D",
+      "votes": 13379
+     },
+     {
+      "name": "Clinton Graham",
+      "party": "O",
+      "votes": 7249
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 115
+     }
+    ]
    },
    "7th Suffolk": {
     "demVotes": 8419,
     "repVotes": 0,
     "othVotes": 182,
-    "totalVotes": 8601
+    "totalVotes": 8601,
+    "candidates": [
+     {
+      "name": "Chynah Tyler",
+      "party": "D",
+      "votes": 8419
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 182
+     }
+    ]
    },
    "8th Bristol": {
     "demVotes": 7497,
     "repVotes": 7236,
     "othVotes": 7428,
-    "totalVotes": 22161
+    "totalVotes": 22161,
+    "candidates": [
+     {
+      "name": "Steven J Ouellette",
+      "party": "D",
+      "votes": 7497
+     },
+     {
+      "name": "Christopher Thrasher",
+      "party": "R",
+      "votes": 7236
+     },
+     {
+      "name": "Jesse St W Gelais",
+      "party": "O",
+      "votes": 4232
+     },
+     {
+      "name": "Manuel Soares Jr.",
+      "party": "O",
+      "votes": 2003
+     },
+     {
+      "name": "Laura A Hadley",
+      "party": "O",
+      "votes": 1169
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 24
+     }
+    ]
    },
    "8th Hampden": {
     "demVotes": 14977,
     "repVotes": 0,
     "othVotes": 538,
-    "totalVotes": 15515
+    "totalVotes": 15515,
+    "candidates": [
+     {
+      "name": "Shirley B Arriaga",
+      "party": "D",
+      "votes": 14977
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 538
+     }
+    ]
    },
    "8th Norfolk": {
     "demVotes": 18161,
     "repVotes": 0,
     "othVotes": 268,
-    "totalVotes": 18429
+    "totalVotes": 18429,
+    "candidates": [
+     {
+      "name": "Ted Philips",
+      "party": "D",
+      "votes": 18161
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 268
+     }
+    ]
    },
    "8th Suffolk": {
     "demVotes": 13445,
     "repVotes": 0,
     "othVotes": 211,
-    "totalVotes": 13656
+    "totalVotes": 13656,
+    "candidates": [
+     {
+      "name": "Jay D Livingstone",
+      "party": "D",
+      "votes": 13445
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 211
+     }
+    ]
    },
    "9th Bristol": {
     "demVotes": 16627,
     "repVotes": 0,
     "othVotes": 183,
-    "totalVotes": 16810
+    "totalVotes": 16810,
+    "candidates": [
+     {
+      "name": "Christopher M Markey",
+      "party": "D",
+      "votes": 16627
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 183
+     }
+    ]
    },
    "9th Hampden": {
     "demVotes": 11453,
     "repVotes": 0,
     "othVotes": 381,
-    "totalVotes": 11834
+    "totalVotes": 11834,
+    "candidates": [
+     {
+      "name": "Orlando Ramos",
+      "party": "D",
+      "votes": 11453
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 381
+     }
+    ]
    },
    "9th Norfolk": {
     "demVotes": 11309,
     "repVotes": 15244,
     "othVotes": 15,
-    "totalVotes": 26568
+    "totalVotes": 26568,
+    "candidates": [
+     {
+      "name": "Marcus S Vaughn",
+      "party": "R",
+      "votes": 15244
+     },
+     {
+      "name": "Kevin Kalkut",
+      "party": "D",
+      "votes": 11309
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 15
+     }
+    ]
    },
    "9th Suffolk": {
     "demVotes": 12852,
     "repVotes": 2734,
     "othVotes": 51,
-    "totalVotes": 15637
+    "totalVotes": 15637,
+    "candidates": [
+     {
+      "name": "John Francis Moran",
+      "party": "D",
+      "votes": 12852
+     },
+     {
+      "name": "Roy A Owens",
+      "party": "R",
+      "votes": 2734
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 51
+     }
+    ]
    },
    "10th Bristol": {
     "demVotes": 13663,
     "repVotes": 12295,
     "othVotes": 23,
-    "totalVotes": 25981
+    "totalVotes": 25981,
+    "candidates": [
+     {
+      "name": "Mark David Sylvia",
+      "party": "D",
+      "votes": 13663
+     },
+     {
+      "name": "Joseph M Pires",
+      "party": "R",
+      "votes": 12295
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 23
+     }
+    ]
    },
    "10th Hampden": {
     "demVotes": 8232,
     "repVotes": 0,
     "othVotes": 236,
-    "totalVotes": 8468
+    "totalVotes": 8468,
+    "candidates": [
+     {
+      "name": "Carlos Gonzalez",
+      "party": "D",
+      "votes": 8232
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 236
+     }
+    ]
    },
    "10th Norfolk": {
     "demVotes": 15597,
     "repVotes": 9653,
     "othVotes": 19,
-    "totalVotes": 25269
+    "totalVotes": 25269,
+    "candidates": [
+     {
+      "name": "Jeffrey N Roy",
+      "party": "D",
+      "votes": 15597
+     },
+     {
+      "name": "Charles F Bailey III",
+      "party": "R",
+      "votes": 9653
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 19
+     }
+    ]
    },
    "10th Suffolk": {
     "demVotes": 19206,
     "repVotes": 0,
     "othVotes": 338,
-    "totalVotes": 19544
+    "totalVotes": 19544,
+    "candidates": [
+     {
+      "name": "William MacGregor",
+      "party": "D",
+      "votes": 19206
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 338
+     }
+    ]
    },
    "11th Bristol": {
     "demVotes": 8940,
     "repVotes": 0,
     "othVotes": 334,
-    "totalVotes": 9274
+    "totalVotes": 9274,
+    "candidates": [
+     {
+      "name": "Christopher Hendricks",
+      "party": "D",
+      "votes": 8940
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 334
+     }
+    ]
    },
    "11th Hampden": {
     "demVotes": 10664,
     "repVotes": 0,
     "othVotes": 449,
-    "totalVotes": 11113
+    "totalVotes": 11113,
+    "candidates": [
+     {
+      "name": "Bud L Williams",
+      "party": "D",
+      "votes": 10664
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 449
+     }
+    ]
    },
    "11th Norfolk": {
     "demVotes": 16431,
     "repVotes": 0,
     "othVotes": 7738,
-    "totalVotes": 24169
+    "totalVotes": 24169,
+    "candidates": [
+     {
+      "name": "Paul Mc Murtry",
+      "party": "D",
+      "votes": 16431
+     },
+     {
+      "name": "Andrew M Pepoli",
+      "party": "O",
+      "votes": 7697
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 41
+     }
+    ]
    },
    "11th Suffolk": {
     "demVotes": 7194,
     "repVotes": 0,
     "othVotes": 32,
-    "totalVotes": 7226
+    "totalVotes": 7226,
+    "candidates": [
+     {
+      "name": "Judith A Garcia",
+      "party": "D",
+      "votes": 7194
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 32
+     }
+    ]
    },
    "12th Bristol": {
     "demVotes": 0,
     "repVotes": 18757,
     "othVotes": 238,
-    "totalVotes": 18995
+    "totalVotes": 18995,
+    "candidates": [
+     {
+      "name": "Norman J Orrall",
+      "party": "R",
+      "votes": 18757
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 238
+     }
+    ]
    },
    "12th Hampden": {
     "demVotes": 18571,
     "repVotes": 0,
     "othVotes": 418,
-    "totalVotes": 18989
+    "totalVotes": 18989,
+    "candidates": [
+     {
+      "name": "Angelo J Puppolo Jr.",
+      "party": "D",
+      "votes": 18571
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 418
+     }
+    ]
    },
    "12th Norfolk": {
     "demVotes": 17443,
     "repVotes": 0,
     "othVotes": 323,
-    "totalVotes": 17766
+    "totalVotes": 17766,
+    "candidates": [
+     {
+      "name": "John H Rogers",
+      "party": "D",
+      "votes": 17443
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 323
+     }
+    ]
    },
    "12th Suffolk": {
     "demVotes": 15339,
     "repVotes": 0,
     "othVotes": 254,
-    "totalVotes": 15593
+    "totalVotes": 15593,
+    "candidates": [
+     {
+      "name": "Brandy Fluker Oakley",
+      "party": "D",
+      "votes": 15339
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 254
+     }
+    ]
    },
    "13th Bristol": {
     "demVotes": 11561,
     "repVotes": 0,
     "othVotes": 355,
-    "totalVotes": 11916
+    "totalVotes": 11916,
+    "candidates": [
+     {
+      "name": "Antonio D F Cabral",
+      "party": "D",
+      "votes": 11561
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 355
+     }
+    ]
    },
    "13th Norfolk": {
     "demVotes": 15180,
     "repVotes": 0,
     "othVotes": 9628,
-    "totalVotes": 24808
+    "totalVotes": 24808,
+    "candidates": [
+     {
+      "name": "Joshua Tarsky",
+      "party": "D",
+      "votes": 15180
+     },
+     {
+      "name": "William R Dermody",
+      "party": "O",
+      "votes": 9520
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 108
+     }
+    ]
    },
    "13th Suffolk": {
     "demVotes": 13061,
     "repVotes": 0,
     "othVotes": 386,
-    "totalVotes": 13447
+    "totalVotes": 13447,
+    "candidates": [
+     {
+      "name": "Daniel J Hunt",
+      "party": "D",
+      "votes": 13061
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 386
+     }
+    ]
    },
    "14th Bristol": {
     "demVotes": 12478,
     "repVotes": 9823,
     "othVotes": 4,
-    "totalVotes": 22305
+    "totalVotes": 22305,
+    "candidates": [
+     {
+      "name": "Adam J Scanlon",
+      "party": "D",
+      "votes": 12478
+     },
+     {
+      "name": "David Cannata Jr.",
+      "party": "R",
+      "votes": 9823
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 4
+     }
+    ]
    },
    "14th Norfolk": {
     "demVotes": 17364,
     "repVotes": 0,
     "othVotes": 145,
-    "totalVotes": 17509
+    "totalVotes": 17509,
+    "candidates": [
+     {
+      "name": "Alice Hanlon Peisch",
+      "party": "D",
+      "votes": 17364
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 145
+     }
+    ]
    },
    "14th Suffolk": {
     "demVotes": 16754,
     "repVotes": 0,
     "othVotes": 352,
-    "totalVotes": 17106
+    "totalVotes": 17106,
+    "candidates": [
+     {
+      "name": "Rob Consalvo",
+      "party": "D",
+      "votes": 16754
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 352
+     }
+    ]
    },
    "15th Norfolk": {
     "demVotes": 16140,
     "repVotes": 0,
     "othVotes": 226,
-    "totalVotes": 16366
+    "totalVotes": 16366,
+    "candidates": [
+     {
+      "name": "Tommy Vitolo",
+      "party": "D",
+      "votes": 16140
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 226
+     }
+    ]
    },
    "15th Suffolk": {
     "demVotes": 16450,
     "repVotes": 0,
     "othVotes": 225,
-    "totalVotes": 16675
+    "totalVotes": 16675,
+    "candidates": [
+     {
+      "name": "Samantha Monta O",
+      "party": "D",
+      "votes": 16450
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 225
+     }
+    ]
    },
    "16th Suffolk": {
     "demVotes": 9141,
     "repVotes": 0,
     "othVotes": 302,
-    "totalVotes": 9443
+    "totalVotes": 9443,
+    "candidates": [
+     {
+      "name": "Jessica Ann Giannino",
+      "party": "D",
+      "votes": 9141
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 302
+     }
+    ]
    },
    "17th Suffolk": {
     "demVotes": 13833,
     "repVotes": 0,
     "othVotes": 245,
-    "totalVotes": 14078
+    "totalVotes": 14078,
+    "candidates": [
+     {
+      "name": "Kevin G Honan",
+      "party": "D",
+      "votes": 13833
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 245
+     }
+    ]
    },
    "18th Suffolk": {
     "demVotes": 9149,
     "repVotes": 0,
     "othVotes": 196,
-    "totalVotes": 9345
+    "totalVotes": 9345,
+    "candidates": [
+     {
+      "name": "Michael J Moran",
+      "party": "D",
+      "votes": 9149
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 196
+     }
+    ]
    },
    "19th Suffolk": {
     "demVotes": 11919,
     "repVotes": 0,
     "othVotes": 412,
-    "totalVotes": 12331
+    "totalVotes": 12331,
+    "candidates": [
+     {
+      "name": "Jeffrey Rosario Turco",
+      "party": "D",
+      "votes": 11919
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 412
+     }
+    ]
    },
    "1st Franklin": {
     "demVotes": 20997,
     "repVotes": 0,
     "othVotes": 214,
-    "totalVotes": 21211
+    "totalVotes": 21211,
+    "candidates": [
+     {
+      "name": "Natalie M Blais",
+      "party": "D",
+      "votes": 20997
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 214
+     }
+    ]
    },
    "1st Plymouth": {
     "demVotes": 15277,
     "repVotes": 13952,
     "othVotes": 11,
-    "totalVotes": 29240
+    "totalVotes": 29240,
+    "candidates": [
+     {
+      "name": "Michelle L Badger",
+      "party": "D",
+      "votes": 15277
+     },
+     {
+      "name": "Jesse G Brown",
+      "party": "R",
+      "votes": 13952
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 11
+     }
+    ]
    },
    "2nd Franklin": {
     "demVotes": 0,
     "repVotes": 7416,
     "othVotes": 14294,
-    "totalVotes": 21710
+    "totalVotes": 21710,
+    "candidates": [
+     {
+      "name": "Susannah M Whipps",
+      "party": "O",
+      "votes": 14235
+     },
+     {
+      "name": "Jeffrey L Raymond",
+      "party": "R",
+      "votes": 7416
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 59
+     }
+    ]
    },
    "2nd Plymouth": {
     "demVotes": 2097,
     "repVotes": 16996,
     "othVotes": 95,
-    "totalVotes": 19188
+    "totalVotes": 19188,
+    "candidates": [
+     {
+      "name": "John Robert Gaskey",
+      "party": "R",
+      "votes": 16996
+     },
+     {
+      "name": "Sarah G Hewins",
+      "party": "D",
+      "votes": 2097
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 95
+     }
+    ]
    },
    "3rd Plymouth": {
     "demVotes": 20424,
     "repVotes": 0,
     "othVotes": 341,
-    "totalVotes": 20765
+    "totalVotes": 20765,
+    "candidates": [
+     {
+      "name": "Joan Meschino",
+      "party": "D",
+      "votes": 20424
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 341
+     }
+    ]
    },
    "4th Plymouth": {
     "demVotes": 22528,
     "repVotes": 0,
     "othVotes": 101,
-    "totalVotes": 22629
+    "totalVotes": 22629,
+    "candidates": [
+     {
+      "name": "Patrick Joseph Kearney",
+      "party": "D",
+      "votes": 22528
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 101
+     }
+    ]
    },
    "5th Plymouth": {
     "demVotes": 0,
     "repVotes": 19410,
     "othVotes": 449,
-    "totalVotes": 19859
+    "totalVotes": 19859,
+    "candidates": [
+     {
+      "name": "David F Decoste",
+      "party": "R",
+      "votes": 19410
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 449
+     }
+    ]
    },
    "6th Plymouth": {
     "demVotes": 13234,
     "repVotes": 14908,
     "othVotes": 24,
-    "totalVotes": 28166
+    "totalVotes": 28166,
+    "candidates": [
+     {
+      "name": "Kenneth Peter Sweezey",
+      "party": "R",
+      "votes": 14908
+     },
+     {
+      "name": "Rebecca W Coletta",
+      "party": "D",
+      "votes": 13234
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 24
+     }
+    ]
    },
    "7th Plymouth": {
     "demVotes": 0,
     "repVotes": 18565,
     "othVotes": 229,
-    "totalVotes": 18794
+    "totalVotes": 18794,
+    "candidates": [
+     {
+      "name": "Alyson M Sullivan Almeida",
+      "party": "R",
+      "votes": 18565
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 229
+     }
+    ]
    },
    "8th Plymouth": {
     "demVotes": 10971,
     "repVotes": 10749,
     "othVotes": 6,
-    "totalVotes": 21726
+    "totalVotes": 21726,
+    "candidates": [
+     {
+      "name": "Dennis C Gallagher",
+      "party": "D",
+      "votes": 10971
+     },
+     {
+      "name": "Sandra M Wright",
+      "party": "R",
+      "votes": 10749
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 6
+     }
+    ]
    },
    "9th Plymouth": {
     "demVotes": 11809,
     "repVotes": 6539,
     "othVotes": 3406,
-    "totalVotes": 21754
+    "totalVotes": 21754,
+    "candidates": [
+     {
+      "name": "Bridget M Plouffe",
+      "party": "D",
+      "votes": 11809
+     },
+     {
+      "name": "Lawrence Peter Novak",
+      "party": "R",
+      "votes": 6539
+     },
+     {
+      "name": "Jonathan Wilshire Gill",
+      "party": "O",
+      "votes": 3398
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 8
+     }
+    ]
    },
    "10th Plymouth": {
     "demVotes": 12409,
     "repVotes": 0,
     "othVotes": 29,
-    "totalVotes": 12438
+    "totalVotes": 12438,
+    "candidates": [
+     {
+      "name": "Michelle Marie Dubois",
+      "party": "D",
+      "votes": 12409
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 29
+     }
+    ]
    },
    "11th Plymouth": {
     "demVotes": 9711,
     "repVotes": 0,
     "othVotes": 29,
-    "totalVotes": 9740
+    "totalVotes": 9740,
+    "candidates": [
+     {
+      "name": "Rita A Mendes",
+      "party": "D",
+      "votes": 9711
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 29
+     }
+    ]
    },
    "12th Plymouth": {
     "demVotes": 14462,
     "repVotes": 12754,
     "othVotes": 11,
-    "totalVotes": 27227
+    "totalVotes": 27227,
+    "candidates": [
+     {
+      "name": "Kathleen R Lanatra",
+      "party": "D",
+      "votes": 14462
+     },
+     {
+      "name": "Eric J Meschino",
+      "party": "R",
+      "votes": 12754
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 11
+     }
+    ]
    },
    "1st Berkshire": {
     "demVotes": 17785,
     "repVotes": 0,
     "othVotes": 131,
-    "totalVotes": 17916
+    "totalVotes": 17916,
+    "candidates": [
+     {
+      "name": "John P Barrett III",
+      "party": "D",
+      "votes": 17785
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 131
+     }
+    ]
    },
    "1st Hampshire": {
     "demVotes": 21348,
     "repVotes": 0,
     "othVotes": 275,
-    "totalVotes": 21623
+    "totalVotes": 21623,
+    "candidates": [
+     {
+      "name": "Lindsay N Sabadosa",
+      "party": "D",
+      "votes": 21348
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 275
+     }
+    ]
    },
    "1st Middlesex": {
     "demVotes": 13545,
     "repVotes": 12833,
     "othVotes": 20,
-    "totalVotes": 26398
+    "totalVotes": 26398,
+    "candidates": [
+     {
+      "name": "Margaret R Scarsdale",
+      "party": "D",
+      "votes": 13545
+     },
+     {
+      "name": "Lynne E Archambault",
+      "party": "R",
+      "votes": 12833
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 20
+     }
+    ]
    },
    "1st Worcester": {
     "demVotes": 0,
     "repVotes": 18371,
     "othVotes": 7973,
-    "totalVotes": 26344
+    "totalVotes": 26344,
+    "candidates": [
+     {
+      "name": "Kimberly N Ferguson",
+      "party": "R",
+      "votes": 18371
+     },
+     {
+      "name": "Anthony L Ferrante",
+      "party": "O",
+      "votes": 7945
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 28
+     }
+    ]
    },
    "2nd Berkshire": {
     "demVotes": 15896,
     "repVotes": 0,
     "othVotes": 141,
-    "totalVotes": 16037
+    "totalVotes": 16037,
+    "candidates": [
+     {
+      "name": "Tricia Farley Bouvier",
+      "party": "D",
+      "votes": 15896
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 141
+     }
+    ]
    },
    "2nd Hampshire": {
     "demVotes": 19102,
     "repVotes": 0,
     "othVotes": 93,
-    "totalVotes": 19195
+    "totalVotes": 19195,
+    "candidates": [
+     {
+      "name": "Homar Gomez",
+      "party": "D",
+      "votes": 19102
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 93
+     }
+    ]
    },
    "2nd Middlesex": {
     "demVotes": 19607,
     "repVotes": 0,
     "othVotes": 351,
-    "totalVotes": 19958
+    "totalVotes": 19958,
+    "candidates": [
+     {
+      "name": "James Arciero",
+      "party": "D",
+      "votes": 19607
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 351
+     }
+    ]
    },
    "2nd Worcester": {
     "demVotes": 10812,
     "repVotes": 9882,
     "othVotes": 25,
-    "totalVotes": 20719
+    "totalVotes": 20719,
+    "candidates": [
+     {
+      "name": "Jonathan D Zlotnik",
+      "party": "D",
+      "votes": 10812
+     },
+     {
+      "name": "Bruce K Chester",
+      "party": "R",
+      "votes": 9882
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 25
+     }
+    ]
    },
    "3rd Berkshire": {
     "demVotes": 13819,
     "repVotes": 0,
     "othVotes": 10268,
-    "totalVotes": 24087
+    "totalVotes": 24087,
+    "candidates": [
+     {
+      "name": "Leigh Susan Davis",
+      "party": "D",
+      "votes": 13819
+     },
+     {
+      "name": "Marybeth F Mitts",
+      "party": "O",
+      "votes": 10222
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 46
+     }
+    ]
    },
    "3rd Hampshire": {
     "demVotes": 10536,
     "repVotes": 0,
     "othVotes": 132,
-    "totalVotes": 10668
+    "totalVotes": 10668,
+    "candidates": [
+     {
+      "name": "Mindy Domb",
+      "party": "D",
+      "votes": 10536
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 132
+     }
+    ]
    },
    "3rd Middlesex": {
     "demVotes": 20537,
     "repVotes": 0,
     "othVotes": 219,
-    "totalVotes": 20756
+    "totalVotes": 20756,
+    "candidates": [
+     {
+      "name": "Kate Hogan",
+      "party": "D",
+      "votes": 20537
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 219
+     }
+    ]
    },
    "3rd Worcester": {
     "demVotes": 13098,
     "repVotes": 0,
     "othVotes": 475,
-    "totalVotes": 13573
+    "totalVotes": 13573,
+    "candidates": [
+     {
+      "name": "Michael P Kushmerek",
+      "party": "D",
+      "votes": 13098
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 475
+     }
+    ]
    },
    "4th Middlesex": {
     "demVotes": 13921,
     "repVotes": 0,
     "othVotes": 194,
-    "totalVotes": 14115
+    "totalVotes": 14115,
+    "candidates": [
+     {
+      "name": "Danielle W Gregoire",
+      "party": "D",
+      "votes": 13921
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 194
+     }
+    ]
    },
    "4th Worcester": {
     "demVotes": 11390,
     "repVotes": 8418,
     "othVotes": 2,
-    "totalVotes": 19810
+    "totalVotes": 19810,
+    "candidates": [
+     {
+      "name": "Natalie Higgins",
+      "party": "D",
+      "votes": 11390
+     },
+     {
+      "name": "Salvatore Perla",
+      "party": "R",
+      "votes": 8418
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 2
+     }
+    ]
    },
    "5th Middlesex": {
     "demVotes": 19141,
     "repVotes": 0,
     "othVotes": 202,
-    "totalVotes": 19343
+    "totalVotes": 19343,
+    "candidates": [
+     {
+      "name": "David Paul Linsky",
+      "party": "D",
+      "votes": 19141
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 202
+     }
+    ]
    },
    "5th Worcester": {
     "demVotes": 0,
     "repVotes": 20333,
     "othVotes": 249,
-    "totalVotes": 20582
+    "totalVotes": 20582,
+    "candidates": [
+     {
+      "name": "Donald R Berthiaume Jr.",
+      "party": "R",
+      "votes": 20333
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 249
+     }
+    ]
    },
    "6th Middlesex": {
     "demVotes": 9374,
     "repVotes": 0,
     "othVotes": 306,
-    "totalVotes": 9680
+    "totalVotes": 9680,
+    "candidates": [
+     {
+      "name": "Priscila S Sousa",
+      "party": "D",
+      "votes": 9374
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 306
+     }
+    ]
    },
    "6th Worcester": {
     "demVotes": 7647,
     "repVotes": 12440,
     "othVotes": 30,
-    "totalVotes": 20117
+    "totalVotes": 20117,
+    "candidates": [
+     {
+      "name": "John J Marsi Jr.",
+      "party": "R",
+      "votes": 12440
+     },
+     {
+      "name": "Jeanne Renaud Costello",
+      "party": "D",
+      "votes": 7647
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 30
+     }
+    ]
    },
    "7th Middlesex": {
     "demVotes": 17674,
     "repVotes": 0,
     "othVotes": 249,
-    "totalVotes": 17923
+    "totalVotes": 17923,
+    "candidates": [
+     {
+      "name": "Jack Patrick Lewis",
+      "party": "D",
+      "votes": 17674
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 249
+     }
+    ]
    },
    "7th Worcester": {
     "demVotes": 0,
     "repVotes": 16472,
     "othVotes": 7383,
-    "totalVotes": 23855
+    "totalVotes": 23855,
+    "candidates": [
+     {
+      "name": "Paul K Frost",
+      "party": "R",
+      "votes": 16472
+     },
+     {
+      "name": "Terry Burke Dotson",
+      "party": "O",
+      "votes": 7325
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 58
+     }
+    ]
    },
    "8th Middlesex": {
     "demVotes": 20170,
     "repVotes": 0,
     "othVotes": 366,
-    "totalVotes": 20536
+    "totalVotes": 20536,
+    "candidates": [
+     {
+      "name": "James Arena de Rosa",
+      "party": "D",
+      "votes": 20170
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 366
+     }
+    ]
    },
    "8th Worcester": {
     "demVotes": 0,
     "repVotes": 20054,
     "othVotes": 328,
-    "totalVotes": 20382
+    "totalVotes": 20382,
+    "candidates": [
+     {
+      "name": "Michael J Soter",
+      "party": "R",
+      "votes": 20054
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 328
+     }
+    ]
    },
    "9th Middlesex": {
     "demVotes": 13465,
     "repVotes": 3829,
     "othVotes": 1219,
-    "totalVotes": 18513
+    "totalVotes": 18513,
+    "candidates": [
+     {
+      "name": "Thomas M Stanley",
+      "party": "D",
+      "votes": 13465
+     },
+     {
+      "name": "Carly Marie Downs",
+      "party": "R",
+      "votes": 3829
+     },
+     {
+      "name": "Sean Diamond",
+      "party": "O",
+      "votes": 1219
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 0
+     }
+    ]
    },
    "9th Worcester": {
     "demVotes": 0,
     "repVotes": 19799,
     "othVotes": 298,
-    "totalVotes": 20097
+    "totalVotes": 20097,
+    "candidates": [
+     {
+      "name": "David Kent Muradian Jr.",
+      "party": "R",
+      "votes": 19799
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 298
+     }
+    ]
    },
    "10th Middlesex": {
     "demVotes": 13208,
     "repVotes": 0,
     "othVotes": 86,
-    "totalVotes": 13294
+    "totalVotes": 13294,
+    "candidates": [
+     {
+      "name": "John J Lawn Jr.",
+      "party": "D",
+      "votes": 13208
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 86
+     }
+    ]
    },
    "10th Worcester": {
     "demVotes": 15108,
     "repVotes": 0,
     "othVotes": 425,
-    "totalVotes": 15533
+    "totalVotes": 15533,
+    "candidates": [
+     {
+      "name": "Brian William Murray",
+      "party": "D",
+      "votes": 15108
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 425
+     }
+    ]
    },
    "11th Middlesex": {
     "demVotes": 16719,
     "repVotes": 3853,
     "othVotes": 47,
-    "totalVotes": 20619
+    "totalVotes": 20619,
+    "candidates": [
+     {
+      "name": "Amy Mah Sangiolo",
+      "party": "D",
+      "votes": 16719
+     },
+     {
+      "name": "Vladislav S Yanovsky",
+      "party": "R",
+      "votes": 3853
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 47
+     }
+    ]
    },
    "11th Worcester": {
     "demVotes": 0,
     "repVotes": 16393,
     "othVotes": 178,
-    "totalVotes": 16571
+    "totalVotes": 16571,
+    "candidates": [
+     {
+      "name": "Hannah E Kane",
+      "party": "R",
+      "votes": 16393
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 178
+     }
+    ]
    },
    "12th Middlesex": {
     "demVotes": 18410,
     "repVotes": 0,
     "othVotes": 305,
-    "totalVotes": 18715
+    "totalVotes": 18715,
+    "candidates": [
+     {
+      "name": "Greg Schwartz",
+      "party": "D",
+      "votes": 18410
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 305
+     }
+    ]
    },
    "12th Worcester": {
     "demVotes": 18684,
     "repVotes": 0,
     "othVotes": 445,
-    "totalVotes": 19129
+    "totalVotes": 19129,
+    "candidates": [
+     {
+      "name": "Meghan Kilcoyne",
+      "party": "D",
+      "votes": 18684
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 445
+     }
+    ]
    },
    "13th Middlesex": {
     "demVotes": 18547,
     "repVotes": 6667,
     "othVotes": 24,
-    "totalVotes": 25238
+    "totalVotes": 25238,
+    "candidates": [
+     {
+      "name": "Carmine Lawrence Gentile",
+      "party": "D",
+      "votes": 18547
+     },
+     {
+      "name": "Virginia A Gardner",
+      "party": "R",
+      "votes": 6667
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 24
+     }
+    ]
    },
    "13th Worcester": {
     "demVotes": 14404,
     "repVotes": 0,
     "othVotes": 464,
-    "totalVotes": 14868
+    "totalVotes": 14868,
+    "candidates": [
+     {
+      "name": "John J Mahoney Jr.",
+      "party": "D",
+      "votes": 14404
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 464
+     }
+    ]
    },
    "14th Middlesex": {
     "demVotes": 20084,
     "repVotes": 0,
     "othVotes": 249,
-    "totalVotes": 20333
+    "totalVotes": 20333,
+    "candidates": [
+     {
+      "name": "Simon Cataldo",
+      "party": "D",
+      "votes": 20084
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 249
+     }
+    ]
    },
    "14th Worcester": {
     "demVotes": 13952,
     "repVotes": 0,
     "othVotes": 490,
-    "totalVotes": 14442
+    "totalVotes": 14442,
+    "candidates": [
+     {
+      "name": "James J O Day",
+      "party": "D",
+      "votes": 13952
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 490
+     }
+    ]
    },
    "15th Middlesex": {
     "demVotes": 17682,
     "repVotes": 0,
     "othVotes": 177,
-    "totalVotes": 17859
+    "totalVotes": 17859,
+    "candidates": [
+     {
+      "name": "Michelle Ciccolo",
+      "party": "D",
+      "votes": 17682
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 177
+     }
+    ]
    },
    "15th Worcester": {
     "demVotes": 8019,
     "repVotes": 0,
     "othVotes": 321,
-    "totalVotes": 8340
+    "totalVotes": 8340,
+    "candidates": [
+     {
+      "name": "Mary S Keefe",
+      "party": "D",
+      "votes": 8019
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 321
+     }
+    ]
    },
    "16th Middlesex": {
     "demVotes": 12892,
     "repVotes": 0,
     "othVotes": 446,
-    "totalVotes": 13338
+    "totalVotes": 13338,
+    "candidates": [
+     {
+      "name": "Rodney M Elliott",
+      "party": "D",
+      "votes": 12892
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 446
+     }
+    ]
    },
    "16th Worcester": {
     "demVotes": 10157,
     "repVotes": 0,
     "othVotes": 433,
-    "totalVotes": 10590
+    "totalVotes": 10590,
+    "candidates": [
+     {
+      "name": "Daniel M Donahue",
+      "party": "D",
+      "votes": 10157
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 433
+     }
+    ]
    },
    "17th Middlesex": {
     "demVotes": 9855,
     "repVotes": 0,
     "othVotes": 3004,
-    "totalVotes": 12859
+    "totalVotes": 12859,
+    "candidates": [
+     {
+      "name": "Vanna Howard",
+      "party": "D",
+      "votes": 9855
+     },
+     {
+      "name": "Joseph Paul Onoroski",
+      "party": "O",
+      "votes": 2802
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 202
+     }
+    ]
    },
    "17th Worcester": {
     "demVotes": 9882,
     "repVotes": 0,
     "othVotes": 477,
-    "totalVotes": 10359
+    "totalVotes": 10359,
+    "candidates": [
+     {
+      "name": "David Henry Argosky Leboeuf",
+      "party": "D",
+      "votes": 9882
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 477
+     }
+    ]
    },
    "18th Middlesex": {
     "demVotes": 7592,
     "repVotes": 0,
     "othVotes": 2183,
-    "totalVotes": 9775
+    "totalVotes": 9775,
+    "candidates": [
+     {
+      "name": "Tara Thorn Hong",
+      "party": "D",
+      "votes": 7592
+     },
+     {
+      "name": "David Michael Ouellette",
+      "party": "O",
+      "votes": 2100
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 83
+     }
+    ]
    },
    "18th Worcester": {
     "demVotes": 0,
     "repVotes": 20544,
     "othVotes": 220,
-    "totalVotes": 20764
+    "totalVotes": 20764,
+    "candidates": [
+     {
+      "name": "Joseph D McKenna",
+      "party": "R",
+      "votes": 20544
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 220
+     }
+    ]
    },
    "19th Middlesex": {
     "demVotes": 12560,
     "repVotes": 9280,
     "othVotes": 2062,
-    "totalVotes": 23902
+    "totalVotes": 23902,
+    "candidates": [
+     {
+      "name": "David Allen Robertson",
+      "party": "D",
+      "votes": 12560
+     },
+     {
+      "name": "Paul Sarnowski",
+      "party": "R",
+      "votes": 9280
+     },
+     {
+      "name": "George Hugh Ferdinand",
+      "party": "O",
+      "votes": 2029
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 33
+     }
+    ]
    },
    "19th Worcester": {
     "demVotes": 16497,
     "repVotes": 0,
     "othVotes": 4793,
-    "totalVotes": 21290
+    "totalVotes": 21290,
+    "candidates": [
+     {
+      "name": "Kate Donaghue",
+      "party": "D",
+      "votes": 16497
+     },
+     {
+      "name": "Boyd Stewart Conklin",
+      "party": "O",
+      "votes": 4732
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 61
+     }
+    ]
    },
    "1st Barnstable": {
     "demVotes": 15607,
     "repVotes": 11996,
     "othVotes": 35,
-    "totalVotes": 27638
+    "totalVotes": 27638,
+    "candidates": [
+     {
+      "name": "Christopher Richard Flanagan",
+      "party": "D",
+      "votes": 15607
+     },
+     {
+      "name": "Gerald Joseph O Connell",
+      "party": "R",
+      "votes": 11996
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 35
+     }
+    ]
    },
    "20th Middlesex": {
     "demVotes": 0,
     "repVotes": 21140,
     "othVotes": 92,
-    "totalVotes": 21232
+    "totalVotes": 21232,
+    "candidates": [
+     {
+      "name": "Bradley H Jones Jr.",
+      "party": "R",
+      "votes": 21140
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 92
+     }
+    ]
    },
    "21st Middlesex": {
     "demVotes": 17829,
     "repVotes": 0,
     "othVotes": 457,
-    "totalVotes": 18286
+    "totalVotes": 18286,
+    "candidates": [
+     {
+      "name": "Kenneth I Gordon",
+      "party": "D",
+      "votes": 17829
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 457
+     }
+    ]
    },
    "22nd Middlesex": {
     "demVotes": 0,
     "repVotes": 13303,
     "othVotes": 8789,
-    "totalVotes": 22092
+    "totalVotes": 22092,
+    "candidates": [
+     {
+      "name": "Marc T Lombardo",
+      "party": "R",
+      "votes": 13303
+     },
+     {
+      "name": "George John Simolaris Jr.",
+      "party": "O",
+      "votes": 8461
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 328
+     }
+    ]
    },
    "23rd Middlesex": {
     "demVotes": 20994,
     "repVotes": 0,
     "othVotes": 203,
-    "totalVotes": 21197
+    "totalVotes": 21197,
+    "candidates": [
+     {
+      "name": "Sean Garballey",
+      "party": "D",
+      "votes": 20994
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 203
+     }
+    ]
    },
    "24th Middlesex": {
     "demVotes": 19562,
     "repVotes": 0,
     "othVotes": 98,
-    "totalVotes": 19660
+    "totalVotes": 19660,
+    "candidates": [
+     {
+      "name": "David M Rogers",
+      "party": "D",
+      "votes": 19562
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 98
+     }
+    ]
    },
    "25th Middlesex": {
     "demVotes": 14074,
     "repVotes": 0,
     "othVotes": 99,
-    "totalVotes": 14173
+    "totalVotes": 14173,
+    "candidates": [
+     {
+      "name": "Marjorie C Decker",
+      "party": "D",
+      "votes": 13724
+     },
+     {
+      "name": "Evan MacKay",
+      "party": "D",
+      "votes": 350
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 99
+     }
+    ]
    },
    "26th Middlesex": {
     "demVotes": 17063,
     "repVotes": 0,
     "othVotes": 197,
-    "totalVotes": 17260
+    "totalVotes": 17260,
+    "candidates": [
+     {
+      "name": "Mike Connolly",
+      "party": "D",
+      "votes": 17063
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 197
+     }
+    ]
    },
    "27th Middlesex": {
     "demVotes": 20475,
     "repVotes": 0,
     "othVotes": 413,
-    "totalVotes": 20888
+    "totalVotes": 20888,
+    "candidates": [
+     {
+      "name": "Erika Uyterhoeven",
+      "party": "D",
+      "votes": 20475
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 413
+     }
+    ]
    },
    "28th Middlesex": {
     "demVotes": 8414,
     "repVotes": 0,
     "othVotes": 350,
-    "totalVotes": 8764
+    "totalVotes": 8764,
+    "candidates": [
+     {
+      "name": "Joseph W McGonagle Jr.",
+      "party": "D",
+      "votes": 8414
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 350
+     }
+    ]
    },
    "29th Middlesex": {
     "demVotes": 19006,
     "repVotes": 0,
     "othVotes": 68,
-    "totalVotes": 19074
+    "totalVotes": 19074,
+    "candidates": [
+     {
+      "name": "Steven C Owens",
+      "party": "D",
+      "votes": 19006
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 68
+     }
+    ]
    },
    "2nd Barnstable": {
     "demVotes": 14147,
     "repVotes": 9686,
     "othVotes": 31,
-    "totalVotes": 23864
+    "totalVotes": 23864,
+    "candidates": [
+     {
+      "name": "Kip A Diggs",
+      "party": "D",
+      "votes": 14147
+     },
+     {
+      "name": "Susanne H Conley",
+      "party": "R",
+      "votes": 9686
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 31
+     }
+    ]
    },
    "30th Middlesex": {
     "demVotes": 17200,
     "repVotes": 0,
     "othVotes": 53,
-    "totalVotes": 17253
+    "totalVotes": 17253,
+    "candidates": [
+     {
+      "name": "Richard M Haggerty",
+      "party": "D",
+      "votes": 17200
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 53
+     }
+    ]
    },
    "31st Middlesex": {
     "demVotes": 16753,
     "repVotes": 0,
     "othVotes": 157,
-    "totalVotes": 16910
+    "totalVotes": 16910,
+    "candidates": [
+     {
+      "name": "Michael Seamus Day",
+      "party": "D",
+      "votes": 16753
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 157
+     }
+    ]
    },
    "32nd Middlesex": {
     "demVotes": 18316,
     "repVotes": 0,
     "othVotes": 373,
-    "totalVotes": 18689
+    "totalVotes": 18689,
+    "candidates": [
+     {
+      "name": "Kate Lipper Garabedian",
+      "party": "D",
+      "votes": 18316
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 373
+     }
+    ]
    },
    "33rd Middlesex": {
     "demVotes": 11360,
     "repVotes": 0,
     "othVotes": 330,
-    "totalVotes": 11690
+    "totalVotes": 11690,
+    "candidates": [
+     {
+      "name": "Steven Ultrino",
+      "party": "D",
+      "votes": 11360
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 330
+     }
+    ]
    },
    "34th Middlesex": {
     "demVotes": 16020,
     "repVotes": 0,
     "othVotes": 320,
-    "totalVotes": 16340
+    "totalVotes": 16340,
+    "candidates": [
+     {
+      "name": "Christine P Barber",
+      "party": "D",
+      "votes": 16020
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 320
+     }
+    ]
    },
    "35th Middlesex": {
     "demVotes": 14995,
     "repVotes": 0,
     "othVotes": 494,
-    "totalVotes": 15489
+    "totalVotes": 15489,
+    "candidates": [
+     {
+      "name": "Paul J Donato Sr.",
+      "party": "D",
+      "votes": 14995
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 494
+     }
+    ]
    },
    "36th Middlesex": {
     "demVotes": 18321,
     "repVotes": 0,
     "othVotes": 0,
-    "totalVotes": 18321
+    "totalVotes": 18321,
+    "candidates": [
+     {
+      "name": "Colleen M Garry",
+      "party": "D",
+      "votes": 18321
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 0
+     }
+    ]
    },
    "37th Middlesex": {
     "demVotes": 18789,
     "repVotes": 0,
     "othVotes": 251,
-    "totalVotes": 19040
+    "totalVotes": 19040,
+    "candidates": [
+     {
+      "name": "Danillo A Sena",
+      "party": "D",
+      "votes": 18789
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 251
+     }
+    ]
    },
    "3rd Barnstable": {
     "demVotes": 12600,
     "repVotes": 16059,
     "othVotes": 16,
-    "totalVotes": 28675
+    "totalVotes": 28675,
+    "candidates": [
+     {
+      "name": "David T Vieira",
+      "party": "R",
+      "votes": 16059
+     },
+     {
+      "name": "Kathleen Fox Alfano",
+      "party": "D",
+      "votes": 12600
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 16
+     }
+    ]
    },
    "4th Barnstable": {
     "demVotes": 22749,
     "repVotes": 0,
     "othVotes": 303,
-    "totalVotes": 23052
+    "totalVotes": 23052,
+    "candidates": [
+     {
+      "name": "Hadley Luddy",
+      "party": "D",
+      "votes": 22749
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 303
+     }
+    ]
    },
    "5th Barnstable": {
     "demVotes": 10305,
     "repVotes": 16384,
     "othVotes": 25,
-    "totalVotes": 26714
+    "totalVotes": 26714,
+    "candidates": [
+     {
+      "name": "Steven G Xiarhos",
+      "party": "R",
+      "votes": 16384
+     },
+     {
+      "name": "Owen G Fletcher",
+      "party": "D",
+      "votes": 10305
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 25
+     }
+    ]
    },
    "Barnstable-Dukes-Nantucket": {
     "demVotes": 21075,
     "repVotes": 0,
     "othVotes": 240,
-    "totalVotes": 21315
+    "totalVotes": 21315,
+    "candidates": [
+     {
+      "name": "Thomas W Moakley",
+      "party": "D",
+      "votes": 21075
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 240
+     }
+    ]
    }
   }
  },
@@ -971,241 +3151,791 @@
     "demVotes": 43211,
     "repVotes": 0,
     "othVotes": 1340,
-    "totalVotes": 44551
+    "totalVotes": 44551,
+    "candidates": [
+     {
+      "name": "Adam Gomez",
+      "party": "D",
+      "votes": 43211
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1340
+     }
+    ]
    },
    "First Essex": {
     "demVotes": 39632,
     "repVotes": 0,
     "othVotes": 1515,
-    "totalVotes": 41147
+    "totalVotes": 41147,
+    "candidates": [
+     {
+      "name": "Pavel M Payano",
+      "party": "D",
+      "votes": 39632
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1515
+     }
+    ]
    },
    "Third Essex": {
     "demVotes": 56430,
     "repVotes": 0,
     "othVotes": 1277,
-    "totalVotes": 57707
+    "totalVotes": 57707,
+    "candidates": [
+     {
+      "name": "Brendan Peter Crighton",
+      "party": "D",
+      "votes": 56430
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1277
+     }
+    ]
    },
    "Second Essex": {
     "demVotes": 58109,
     "repVotes": 28813,
     "othVotes": 86,
-    "totalVotes": 87008
+    "totalVotes": 87008,
+    "candidates": [
+     {
+      "name": "Joan B Lovely",
+      "party": "D",
+      "votes": 58109
+     },
+     {
+      "name": "Damian Mitchell Anketell",
+      "party": "R",
+      "votes": 28813
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 86
+     }
+    ]
    },
    "First Suffolk": {
     "demVotes": 61127,
     "repVotes": 0,
     "othVotes": 1437,
-    "totalVotes": 62564
+    "totalVotes": 62564,
+    "candidates": [
+     {
+      "name": "Nicholas P Collins",
+      "party": "D",
+      "votes": 61127
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1437
+     }
+    ]
    },
    "Third Suffolk": {
     "demVotes": 41690,
     "repVotes": 17681,
     "othVotes": 281,
-    "totalVotes": 59652
+    "totalVotes": 59652,
+    "candidates": [
+     {
+      "name": "Lydia Marie Edwards",
+      "party": "D",
+      "votes": 41690
+     },
+     {
+      "name": "Jeannamarie Tamas",
+      "party": "R",
+      "votes": 17681
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 281
+     }
+    ]
    },
    "Second Suffolk": {
     "demVotes": 52072,
     "repVotes": 0,
     "othVotes": 897,
-    "totalVotes": 52969
+    "totalVotes": 52969,
+    "candidates": [
+     {
+      "name": "Liz Miranda",
+      "party": "D",
+      "votes": 52072
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 897
+     }
+    ]
    },
    "Fifth Middlesex": {
     "demVotes": 63221,
     "repVotes": 0,
     "othVotes": 1043,
-    "totalVotes": 64264
+    "totalVotes": 64264,
+    "candidates": [
+     {
+      "name": "Jason M Lewis",
+      "party": "D",
+      "votes": 63221
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1043
+     }
+    ]
    },
    "First Middlesex": {
     "demVotes": 40887,
     "repVotes": 23422,
     "othVotes": 147,
-    "totalVotes": 64456
+    "totalVotes": 64456,
+    "candidates": [
+     {
+      "name": "Edward J Kennedy Jr.",
+      "party": "D",
+      "votes": 40887
+     },
+     {
+      "name": "Karla J Miller",
+      "party": "R",
+      "votes": 23422
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 147
+     }
+    ]
    },
    "First Worcester": {
     "demVotes": 49613,
     "repVotes": 0,
     "othVotes": 1531,
-    "totalVotes": 51144
+    "totalVotes": 51144,
+    "candidates": [
+     {
+      "name": "Robyn K Kennedy",
+      "party": "D",
+      "votes": 49613
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1531
+     }
+    ]
    },
    "Third Middlesex": {
     "demVotes": 65186,
     "repVotes": 0,
     "othVotes": 496,
-    "totalVotes": 65682
+    "totalVotes": 65682,
+    "candidates": [
+     {
+      "name": "Michael J Barrett",
+      "party": "D",
+      "votes": 65186
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 496
+     }
+    ]
    },
    "Cape and Islands": {
     "demVotes": 64636,
     "repVotes": 38893,
     "othVotes": 2651,
-    "totalVotes": 106180
+    "totalVotes": 106180,
+    "candidates": [
+     {
+      "name": "Julian Andre Cyr",
+      "party": "D",
+      "votes": 64636
+     },
+     {
+      "name": "Christopher Robert Lauzon",
+      "party": "R",
+      "votes": 38893
+     },
+     {
+      "name": "Joe van Nes",
+      "party": "O",
+      "votes": 2493
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 158
+     }
+    ]
    },
    "Fourth Middlesex": {
     "demVotes": 70460,
     "repVotes": 0,
     "othVotes": 1235,
-    "totalVotes": 71695
+    "totalVotes": 71695,
+    "candidates": [
+     {
+      "name": "Cindy F Friedman",
+      "party": "D",
+      "votes": 70460
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1235
+     }
+    ]
    },
    "Second Middlesex": {
     "demVotes": 72232,
     "repVotes": 0,
     "othVotes": 1183,
-    "totalVotes": 73415
+    "totalVotes": 73415,
+    "candidates": [
+     {
+      "name": "Patricia D Jehlen",
+      "party": "D",
+      "votes": 72232
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1183
+     }
+    ]
    },
    "Second Worcester": {
     "demVotes": 59686,
     "repVotes": 0,
     "othVotes": 1052,
-    "totalVotes": 60738
+    "totalVotes": 60738,
+    "candidates": [
+     {
+      "name": "Michael O Moore",
+      "party": "D",
+      "votes": 59686
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1052
+     }
+    ]
    },
    "Bristol and Norfolk": {
     "demVotes": 61252,
     "repVotes": 0,
     "othVotes": 23093,
-    "totalVotes": 84345
+    "totalVotes": 84345,
+    "candidates": [
+     {
+      "name": "Paul R Feeney",
+      "party": "D",
+      "votes": 61252
+     },
+     {
+      "name": "Laura L Saylor",
+      "party": "O",
+      "votes": 22661
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 432
+     }
+    ]
    },
    "Norfolk and Suffolk": {
     "demVotes": 72352,
     "repVotes": 0,
     "othVotes": 1289,
-    "totalVotes": 73641
+    "totalVotes": 73641,
+    "candidates": [
+     {
+      "name": "Michael F Rush",
+      "party": "D",
+      "votes": 72352
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1289
+     }
+    ]
    },
    "Norfolk and Plymouth": {
     "demVotes": 61091,
     "repVotes": 0,
     "othVotes": 1325,
-    "totalVotes": 62416
+    "totalVotes": 62416,
+    "candidates": [
+     {
+      "name": "John F Keenan",
+      "party": "D",
+      "votes": 61091
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1325
+     }
+    ]
    },
    "Hampden and Hampshire": {
     "demVotes": 62335,
     "repVotes": 0,
     "othVotes": 831,
-    "totalVotes": 63166
+    "totalVotes": 63166,
+    "candidates": [
+     {
+      "name": "John C Velis",
+      "party": "D",
+      "votes": 62335
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 831
+     }
+    ]
    },
    "Middlesex and Norfolk": {
     "demVotes": 68762,
     "repVotes": 0,
     "othVotes": 1223,
-    "totalVotes": 69985
+    "totalVotes": 69985,
+    "candidates": [
+     {
+      "name": "Karen E Spilka",
+      "party": "D",
+      "votes": 68762
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1223
+     }
+    ]
    },
    "Middlesex and Suffolk": {
     "demVotes": 47113,
     "repVotes": 0,
     "othVotes": 736,
-    "totalVotes": 47849
+    "totalVotes": 47849,
+    "candidates": [
+     {
+      "name": "Sal N di Domenico",
+      "party": "D",
+      "votes": 47113
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 736
+     }
+    ]
    },
    "Norfolk and Middlesex": {
     "demVotes": 68002,
     "repVotes": 0,
     "othVotes": 924,
-    "totalVotes": 68926
+    "totalVotes": 68926,
+    "candidates": [
+     {
+      "name": "Cynthia Stone Creem",
+      "party": "D",
+      "votes": 68002
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 924
+     }
+    ]
    },
    "Suffolk and Middlesex": {
     "demVotes": 56815,
     "repVotes": 0,
     "othVotes": 685,
-    "totalVotes": 57500
+    "totalVotes": 57500,
+    "candidates": [
+     {
+      "name": "William N Brownsberger",
+      "party": "D",
+      "votes": 56815
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 685
+     }
+    ]
    },
    "Worcester and Hampden": {
     "demVotes": 33911,
     "repVotes": 65438,
     "othVotes": 153,
-    "totalVotes": 99502
+    "totalVotes": 99502,
+    "candidates": [
+     {
+      "name": "Ryan C Fattman",
+      "party": "R",
+      "votes": 65438
+     },
+     {
+      "name": "Anthony Jm Allard",
+      "party": "D",
+      "votes": 33911
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 153
+     }
+    ]
    },
    "Middlesex and Worcester": {
     "demVotes": 75178,
     "repVotes": 0,
     "othVotes": 927,
-    "totalVotes": 76105
+    "totalVotes": 76105,
+    "candidates": [
+     {
+      "name": "James B Eldridge",
+      "party": "D",
+      "votes": 75178
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 927
+     }
+    ]
    },
    "Plymouth and Barnstable": {
     "demVotes": 59137,
     "repVotes": 56335,
     "othVotes": 107,
-    "totalVotes": 115579
+    "totalVotes": 115579,
+    "candidates": [
+     {
+      "name": "Dylan A Fernandes",
+      "party": "D",
+      "votes": 59137
+     },
+     {
+      "name": "Mathew J Muratore",
+      "party": "R",
+      "votes": 56335
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 107
+     }
+    ]
    },
    "Worcester and Hampshire": {
     "demVotes": 37346,
     "repVotes": 52465,
     "othVotes": 160,
-    "totalVotes": 89971
+    "totalVotes": 89971,
+    "candidates": [
+     {
+      "name": "Peter J Durant",
+      "party": "R",
+      "votes": 52465
+     },
+     {
+      "name": "Sheila H Dibb",
+      "party": "D",
+      "votes": 37346
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 160
+     }
+    ]
    },
    "Worcester and Middlesex": {
     "demVotes": 50235,
     "repVotes": 34759,
     "othVotes": 100,
-    "totalVotes": 85094
+    "totalVotes": 85094,
+    "candidates": [
+     {
+      "name": "John J Cronin",
+      "party": "D",
+      "votes": 50235
+     },
+     {
+      "name": "Nicholas A Pirro III",
+      "party": "R",
+      "votes": 34759
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 100
+     }
+    ]
    },
    "Norfolk-Plymouth-Bristol": {
     "demVotes": 63145,
     "repVotes": 0,
     "othVotes": 1010,
-    "totalVotes": 64155
+    "totalVotes": 64155,
+    "candidates": [
+     {
+      "name": "William J Driscoll Jr.",
+      "party": "D",
+      "votes": 63145
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1010
+     }
+    ]
    },
    "First Essex and Middlesex": {
     "demVotes": 0,
     "repVotes": 88918,
     "othVotes": 1112,
-    "totalVotes": 90030
+    "totalVotes": 90030,
+    "candidates": [
+     {
+      "name": "Bruce E Tarr",
+      "party": "R",
+      "votes": 88918
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1112
+     }
+    ]
    },
    "First Bristol and Plymouth": {
     "demVotes": 55377,
     "repVotes": 0,
     "othVotes": 1346,
-    "totalVotes": 56723
+    "totalVotes": 56723,
+    "candidates": [
+     {
+      "name": "Michael J Rodrigues",
+      "party": "D",
+      "votes": 55377
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1346
+     }
+    ]
    },
    "First Plymouth and Norfolk": {
     "demVotes": 0,
     "repVotes": 82720,
     "othVotes": 935,
-    "totalVotes": 83655
+    "totalVotes": 83655,
+    "candidates": [
+     {
+      "name": "Patrick A O Connor",
+      "party": "R",
+      "votes": 82720
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 935
+     }
+    ]
    },
    "Second Essex and Middlesex": {
     "demVotes": 73764,
     "repVotes": 0,
     "othVotes": 1208,
-    "totalVotes": 74972
+    "totalVotes": 74972,
+    "candidates": [
+     {
+      "name": "Barry R Finegold",
+      "party": "D",
+      "votes": 73764
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1208
+     }
+    ]
    },
    "Third Bristol and Plymouth": {
     "demVotes": 44137,
     "repVotes": 45777,
     "othVotes": 4823,
-    "totalVotes": 94737
+    "totalVotes": 94737,
+    "candidates": [
+     {
+      "name": "Kelly A Dooner",
+      "party": "R",
+      "votes": 45777
+     },
+     {
+      "name": "Joseph Richard Pacheco",
+      "party": "D",
+      "votes": 44137
+     },
+     {
+      "name": "James B Dupont",
+      "party": "O",
+      "votes": 4737
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 86
+     }
+    ]
    },
    "Hampden-Hampshire-Worcester": {
     "demVotes": 68420,
     "repVotes": 0,
     "othVotes": 1380,
-    "totalVotes": 69800
+    "totalVotes": 69800,
+    "candidates": [
+     {
+      "name": "Jacob R Oliveira",
+      "party": "D",
+      "votes": 68420
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1380
+     }
+    ]
    },
    "Norfolk-Worcester-Middlesex": {
     "demVotes": 57309,
     "repVotes": 39983,
     "othVotes": 184,
-    "totalVotes": 97476
+    "totalVotes": 97476,
+    "candidates": [
+     {
+      "name": "Rebecca L Rausch",
+      "party": "D",
+      "votes": 57309
+     },
+     {
+      "name": "Dashe M Videira",
+      "party": "R",
+      "votes": 39983
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 184
+     }
+    ]
    },
    "Second Bristol and Plymouth": {
     "demVotes": 55918,
     "repVotes": 0,
     "othVotes": 1229,
-    "totalVotes": 57147
+    "totalVotes": 57147,
+    "candidates": [
+     {
+      "name": "Mark C Montigny",
+      "party": "D",
+      "votes": 55918
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 1229
+     }
+    ]
    },
    "Second Plymouth and Norfolk": {
     "demVotes": 55766,
     "repVotes": 0,
     "othVotes": 487,
-    "totalVotes": 56253
+    "totalVotes": 56253,
+    "candidates": [
+     {
+      "name": "Michael D Brady",
+      "party": "D",
+      "votes": 55766
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 487
+     }
+    ]
    },
    "Hampshire-Franklin-Worcester": {
     "demVotes": 67078,
     "repVotes": 0,
     "othVotes": 988,
-    "totalVotes": 68066
+    "totalVotes": 68066,
+    "candidates": [
+     {
+      "name": "Jo Comerford",
+      "party": "D",
+      "votes": 67078
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 988
+     }
+    ]
    },
    "Berkshire-Hampden-Franklin-Hampshire": {
     "demVotes": 62249,
     "repVotes": 25494,
     "othVotes": 68,
-    "totalVotes": 87811
+    "totalVotes": 87811,
+    "candidates": [
+     {
+      "name": "Paul W Mark",
+      "party": "D",
+      "votes": 62249
+     },
+     {
+      "name": "David A Rosa",
+      "party": "R",
+      "votes": 25494
+     },
+     {
+      "name": "All Others",
+      "party": "O",
+      "votes": 68
+     }
+    ]
    }
   }
  }

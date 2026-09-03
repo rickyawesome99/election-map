@@ -77,6 +77,22 @@ export type StateLegDistrictResult = {
   noCount?: boolean;
   /** True when every contest in this district had a single candidate. */
   uncontested?: boolean;
+  /**
+   * Who was on the ballot, votes descending - PRESENT ONLY FOR 2024, and not for every 2024
+   * district. Names exist only where the source carried them, and just one of ours does:
+   * MEDSL's precinct returns. The 2016-2022 districts come from Klarner's contest file, which
+   * records candidate COUNTS and never a name, and the hand-entered gap files (LA/MS/NJ/NM/NY/
+   * NH/VT/Wikipedia) were transcribed as party columns only. Absent means "this source did not
+   * name anyone", never "nobody ran" - so render the party vote bars whenever this is missing
+   * rather than treating it as an empty field.
+   *
+   * Entries sum EXACTLY to demVotes + repVotes + othVotes (scripts/build-state-leg-candidates-
+   * from-medsl.py drops any district where they do not), write-in and scattering lines
+   * included as their own entry. NO WINNER IS MARKED and the top entry is not always one:
+   * Idaho's SEAT A/B and Washington's POS. 1/2 are separate races merged into one district
+   * here, and multi-member districts elect several people.
+   */
+  candidates?: { name: string; party: "D" | "R" | "O"; votes: number }[];
 };
 
 export type StateLegChamberResults = {

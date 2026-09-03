@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback, useMemo } from "react";
+import { useState, useRef, useEffect, useCallback, useMemo, type ReactNode } from "react";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { useDarkMode } from "@/lib/useDarkMode";
@@ -103,6 +103,9 @@ const NO_DATA_FILL = { light: "#c7cad1", dark: "#454b57" };
 // has a known holder and no ballots, that one has no row at all.
 const NO_COUNT_FILL = { light: "#d9d0bd", dark: "#57503f" };
 
+/** The three shapes the fine print under the map takes, one per view. */
+const NOTE_VARIANTS = ["seats", "president", "results"] as const;
+
 const OTHER_FILL: Record<string, { light: string; dark: string }> = {
   I: { light: "#c9b98a", dark: "#8a7a4a" },
   O: { light: "#c3aee0", dark: "#6a4f8a" },
@@ -130,6 +133,7 @@ export default function StateLegDistrictMap({
   viewMode = "seats",
   selectedKey = null,
   onSelect,
+  overlay = null,
 }: {
   stateAbbr: string;
   stateName: string;
@@ -150,6 +154,9 @@ export default function StateLegDistrictMap({
   /** The selected district's code, which is all the three views have in common. */
   selectedKey?: string | null;
   onSelect?: (districtNumber: string | null) => void;
+  /** Floated over the map's bottom-left corner, where the click that opened it happened.
+   *  Used for the selected-district panel on desktop, so opening it costs no page layout. */
+  overlay?: ReactNode;
 }) {
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
@@ -335,6 +342,7 @@ export default function StateLegDistrictMap({
   const hoveredDistrict = hoveredKey ? districtByNumber[hoveredKey] : undefined;
   const hoveredLabel = hoveredKey ? hoveredDistrict?.label ?? districtDisplayLabel(hoveredKey, chamberLabel) : "";
   const showMarginLegend = !!hasDistricts && ((viewMode === "president" && hasPres2024) || (isResultsView && hasResults));
+  const hasEstimatedPres = Object.values(pres2024).some((p) => p.estimated);
 
   return (
     <div>
@@ -354,9 +362,16 @@ export default function StateLegDistrictMap({
           const hoveredPres = pres2024[hoveredKey];
           const hoveredResult = resultFor(hoveredKey);
           const hoveredMargin = districtResultMargin(hoveredResult);
-          const tipW = 190;
+          // Names where the source carried them (2024 only); zero-vote bookkeeping lines
+          // ("Blank Ballots") are not candidacies and are dropped. See StateLegSection.
+          const hoveredCandidates = isResultsView
+            ? (hoveredResult?.candidates ?? []).filter((c) => c.votes > 0)
+            : [];
+          // Wider only when it has names to fit — a 190px box truncates most of them.
+          const tipW = hoveredCandidates.length > 0 ? 240 : 190;
+          const resultLines = hoveredCandidates.length || 2 + (hoveredResult?.othVotes ? 1 : 0);
           const tipH = isResultsView
-            ? (hoveredMargin == null ? 62 : 90)
+            ? (hoveredMargin == null ? 62 : 46 + resultLines * 16)
             : viewMode === "president"
               ? (hoveredPres?.estimated ? 76 : 62)
               : 46 + Math.max(incumbents.length, 1) * 16;
@@ -391,19 +406,35 @@ export default function StateLegDistrictMap({
                     </div>
                   ) : (
                     <div className="flex flex-col gap-0.5">
-                      <div className="flex items-baseline justify-between gap-2">
-                        <span style={{ fontSize: 11, color: "var(--party-dem)" }}>Democratic</span>
-                        <span className="font-semibold tabular-nums" style={{ fontSize: 11 }}>{(hoveredResult.demVotes ?? 0).toLocaleString()}</span>
-                      </div>
-                      <div className="flex items-baseline justify-between gap-2">
-                        <span style={{ fontSize: 11, color: "var(--party-rep)" }}>Republican</span>
-                        <span className="font-semibold tabular-nums" style={{ fontSize: 11 }}>{(hoveredResult.repVotes ?? 0).toLocaleString()}</span>
-                      </div>
-                      {!!hoveredResult.othVotes && (
-                        <div className="flex items-baseline justify-between gap-2">
-                          <span style={{ fontSize: 11, color: "var(--app-text-muted)" }}>Other</span>
-                          <span className="font-semibold tabular-nums" style={{ fontSize: 11 }}>{hoveredResult.othVotes.toLocaleString()}</span>
-                        </div>
+                      {hoveredCandidates.length > 0 ? (
+                        hoveredCandidates.map((c, i) => (
+                          <div key={i} className="flex items-baseline justify-between gap-2">
+                            <span
+                              className="truncate"
+                              style={{ fontSize: 11, color: `var(--party-${c.party === "D" ? "dem" : c.party === "R" ? "rep" : "ind"})` }}
+                            >
+                              {c.name}
+                            </span>
+                            <span className="font-semibold tabular-nums shrink-0" style={{ fontSize: 11 }}>{c.votes.toLocaleString()}</span>
+                          </div>
+                        ))
+                      ) : (
+                        <>
+                          <div className="flex items-baseline justify-between gap-2">
+                            <span style={{ fontSize: 11, color: "var(--party-dem)" }}>Democratic</span>
+                            <span className="font-semibold tabular-nums" style={{ fontSize: 11 }}>{(hoveredResult.demVotes ?? 0).toLocaleString()}</span>
+                          </div>
+                          <div className="flex items-baseline justify-between gap-2">
+                            <span style={{ fontSize: 11, color: "var(--party-rep)" }}>Republican</span>
+                            <span className="font-semibold tabular-nums" style={{ fontSize: 11 }}>{(hoveredResult.repVotes ?? 0).toLocaleString()}</span>
+                          </div>
+                          {!!hoveredResult.othVotes && (
+                            <div className="flex items-baseline justify-between gap-2">
+                              <span style={{ fontSize: 11, color: "var(--app-text-muted)" }}>Other</span>
+                              <span className="font-semibold tabular-nums" style={{ fontSize: 11 }}>{hoveredResult.othVotes.toLocaleString()}</span>
+                            </div>
+                          )}
+                        </>
                       )}
                       <div className="mt-1 pt-1 flex items-baseline justify-between gap-2" style={{ borderTop: "1px solid var(--app-border)" }}>
                         <span className="font-bold tabular-nums" style={{ fontSize: 11, color: hoveredMargin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
@@ -541,6 +572,14 @@ export default function StateLegDistrictMap({
           </div>
         )}
 
+        {/* Shrink-wraps its content rather than holding a fixed 280px: a two-line panel over the
+            map should cover as little of it as the text actually needs. */}
+        {overlay && (
+          <div className="pointer-events-none absolute bottom-2 left-2 z-30 w-max max-w-[230px] sm:max-w-[260px]">
+            {overlay}
+          </div>
+        )}
+
         {viewChanged && (
           <button
             onClick={() => { setMapKey((k) => k + 1); setViewChanged(false); }}
@@ -552,43 +591,72 @@ export default function StateLegDistrictMap({
         )}
       </div>
 
-      {showMarginLegend && (
-        <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1">
-          {MARGIN_LEGEND.map(({ label, bg }) => (
-            <div key={label} className="flex items-center gap-1">
-              <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: bg }} />
-              <span className="whitespace-nowrap text-[9px] font-medium" style={{ color: "var(--app-text-muted)" }}>{label}</span>
-            </div>
-          ))}
-          {isResultsView && Object.values(results ?? {}).some((r) => r.totalVotes == null) && (
-            <div className="flex items-center gap-1">
-              <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: darkMode ? NO_COUNT_FILL.dark : NO_COUNT_FILL.light }} />
-              <span className="whitespace-nowrap text-[9px] font-medium" style={{ color: "var(--app-text-muted)" }}>No count published</span>
-            </div>
-          )}
-          <div className="flex items-center gap-1">
-            <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: darkMode ? NO_DATA_FILL.dark : NO_DATA_FILL.light }} />
-            <span className="whitespace-nowrap text-[9px] font-medium" style={{ color: "var(--app-text-muted)" }}>No data</span>
+      {/* Seats view has no margin scale to explain, so this row used to vanish there and come back
+          in the other two — shifting everything below it by a line every time the view changed, and
+          on a phone that is the composition cards. Every chip is therefore always laid out; the row
+          only turns invisible. Same for the "no count published" chip, which otherwise changes the
+          wrap within results view from one year to the next. Height is then identical in all three
+          views at every width. */}
+      <div
+        className={`mt-2 flex h-5 items-center gap-x-3 overflow-x-auto scrollbar-none md:h-auto md:flex-wrap md:gap-y-1${showMarginLegend ? "" : " invisible"}`}
+        aria-hidden={!showMarginLegend}
+      >
+        {MARGIN_LEGEND.map(({ label, bg }) => (
+          <div key={label} className="flex items-center gap-1">
+            <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: bg }} />
+            <span className="whitespace-nowrap text-[9px] font-medium" style={{ color: "var(--app-text-muted)" }}>{label}</span>
           </div>
+        ))}
+        <div
+          className={`flex items-center gap-1${isResultsView && Object.values(results ?? {}).some((r) => r.totalVotes == null) ? "" : " invisible"}`}
+        >
+          <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: darkMode ? NO_COUNT_FILL.dark : NO_COUNT_FILL.light }} />
+          <span className="whitespace-nowrap text-[9px] font-medium" style={{ color: "var(--app-text-muted)" }}>No count published</span>
         </div>
-      )}
-
-      {hasDistricts && viewMode === "president" && Object.values(pres2024).some((p) => p.estimated) && (
-        <div className="mt-1 text-[10px] italic" style={{ color: "var(--app-text-very-muted)" }}>
-          Dashed outline = estimated (no 2024 election in that district; modeled from overlapping House-district results)
+        <div className="flex items-center gap-1">
+          <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: darkMode ? NO_DATA_FILL.dark : NO_DATA_FILL.light }} />
+          <span className="whitespace-nowrap text-[9px] font-medium" style={{ color: "var(--app-text-muted)" }}>No data</span>
         </div>
-      )}
+      </div>
 
-      {hasDistricts && isResultsView && (
-        <div className="mt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-          {boundaryNote ?? `${chamberLabel} boundaries as used in ${resultsYear}`}
-          {resultsSource && <> · {resultsSource}</>}
-        </div>
-      )}
-
-      {hasDistricts && !isResultsView && mapInfo && (
-        <div className="mt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-          {chamberLabel} boundaries enacted {mapInfo.enactedDate} · first used {mapInfo.firstCycle} ({mapInfo.source})
+      {/* Every variant of the fine print stacked in one grid cell: the one for the current view is
+          visible, the rest are laid out invisibly behind it. The block is therefore always as tall
+          as this map's tallest note and never changes height when the view does — which matters
+          because on a phone it sits directly above the composition cards, so a note that grew from
+          two lines to three moved the card the reader had just tapped. Sized by the browser, so
+          there is no dead space beyond the real worst case and no note is ever clipped. The
+          mobile min-height is a floor under the one thing the stack cannot measure ahead of
+          time: a past year's source string, which only exists once that year has been fetched. */}
+      {hasDistricts && (
+        <div className="mt-2 grid min-h-[3.4rem] md:min-h-0">
+          {NOTE_VARIANTS.map((variant) => {
+            const active = variant === (isResultsView ? "results" : viewMode === "president" ? "president" : "seats");
+            return (
+              <div
+                key={variant}
+                className={`col-start-1 row-start-1 flex flex-col gap-1${active ? "" : " invisible"}`}
+                aria-hidden={!active}
+              >
+                {variant === "president" && hasEstimatedPres && (
+                  <div className="text-[10px] italic" style={{ color: "var(--app-text-very-muted)" }}>
+                    Dashed outline = estimated (no 2024 election in that district; modeled from overlapping House-district results)
+                  </div>
+                )}
+                {variant === "results" ? (
+                  <div className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+                    {boundaryNote ?? `${chamberLabel} boundaries as used in ${resultsYear}`}
+                    {resultsSource && <> · {resultsSource}</>}
+                  </div>
+                ) : (
+                  mapInfo && (
+                    <div className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+                      {chamberLabel} boundaries enacted {mapInfo.enactedDate} · first used {mapInfo.firstCycle} ({mapInfo.source})
+                    </div>
+                  )
+                )}
+              </div>
+            );
+          })}
         </div>
       )}
     </div>

@@ -9,8 +9,6 @@ import { latestChamberSeats } from "@/lib/stateLegSeats";
 import { notFound } from "next/navigation";
 import BackButton from "@/components/BackButton";
 import StateLegSection from "@/components/StateLegSection";
-import StateLegCompositionBox from "@/components/StateLegCompositionBox";
-import { LedgerSectionHead } from "@/components/RaceDetailSections";
 import StateLegAboutSection from "@/components/StateLegAboutSection";
 import { calculateStateTpl } from "@/lib/tplCompute";
 import Link from "next/link";
@@ -49,13 +47,17 @@ export default async function StateLegislaturePage({ params }: { params: Promise
   // Nebraska's single chamber is classified as "senate" (SLDU) in the boundary data, but its
   // election results are stored under "House" — see StateLegSection.tsx for the same convention.
   // Prefer the verified totalSeats from research (kept internally consistent with the
-  // supermajority math) over the composition-data total, which can undercount vacant/independent seats.
+  // supermajority math shown in the chamber band) over the composition-data total, which can
+  // undercount vacant/independent seats. The chamber band derives the majority threshold from it.
+  const houseTotalSeats = (isUnicameral ? chamberMapInfo.senate?.totalSeats : chamberMapInfo.house?.totalSeats) ?? houseSeats?.total;
+  const senateTotalSeats = chamberMapInfo.senate?.totalSeats ?? senateSeats?.total;
   const aboutBlocks = isUnicameral
-    ? [{ label: "Legislature", mapInfo: chamberMapInfo.senate ?? null, totalSeats: chamberMapInfo.senate?.totalSeats ?? houseSeats?.total ?? null }]
+    ? [{ label: "Legislature", mapInfo: chamberMapInfo.senate ?? null, totalSeats: houseTotalSeats ?? null, seats: houseSeats }]
     : [
-        { label: "State House", mapInfo: chamberMapInfo.house ?? null, totalSeats: chamberMapInfo.house?.totalSeats ?? houseSeats?.total ?? null },
-        { label: "State Senate", mapInfo: chamberMapInfo.senate ?? null, totalSeats: chamberMapInfo.senate?.totalSeats ?? senateSeats?.total ?? null },
+        { label: "State House", mapInfo: chamberMapInfo.house ?? null, totalSeats: houseTotalSeats ?? null, seats: houseSeats },
+        { label: "State Senate", mapInfo: chamberMapInfo.senate ?? null, totalSeats: senateTotalSeats ?? null, seats: senateSeats },
       ];
+
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
 
@@ -73,61 +75,34 @@ export default async function StateLegislaturePage({ params }: { params: Promise
             <BackButton />
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
-            <div className="min-w-0">
-              <div className="flex items-center gap-3">
-                <span
-                  className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0"
-                  style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
-                >
-                  {state.abbr}
-                </span>
-                <h1
-                  className="whitespace-nowrap"
-                  style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
-                >
-                  {state.name}
-                </h1>
-              </div>
-              <div className="mt-3 flex items-center gap-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
-                <span>State Legislature</span>
-                <span style={{ color: "var(--app-text-very-muted)" }}>·</span>
-                <Link href={`/states/${state.id}`} className="hover:underline" style={{ color: "var(--app-text-primary)", fontWeight: 600 }}>
-                  View {state.name} overview
-                </Link>
-              </div>
+          <div className="min-w-0">
+            <div className="flex items-center gap-3">
+              <span
+                className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0"
+                style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
+              >
+                {state.abbr}
+              </span>
+              <h1
+                className="whitespace-nowrap"
+                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
+              >
+                {state.name}
+              </h1>
+            </div>
+            <div className="mt-3 flex items-center gap-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
+              <span>State Legislature</span>
+              <span style={{ color: "var(--app-text-very-muted)" }}>·</span>
+              <Link href={`/states/${state.id}`} className="hover:underline" style={{ color: "var(--app-text-primary)", fontWeight: 600 }}>
+                View {state.name} overview
+              </Link>
             </div>
           </div>
 
-          {/* Stat row */}
-          {(houseSeats || senateSeats) && (
-            <div className="mt-8 pt-5 pb-1 flex flex-wrap gap-x-8 gap-y-4" style={{ borderTop: "1px solid var(--app-border)" }}>
-              {houseSeats && (
-                <div className={senateSeats ? "pr-8" : ""} style={senateSeats ? { borderRight: "1px solid var(--app-border)" } : undefined}>
-                  <div className="text-2xl font-extrabold tabular-nums">
-                    <span style={{ color: "var(--party-dem)" }}>{houseSeats.dem}D</span>
-                    <span style={{ color: "var(--app-text-very-muted)", fontWeight: 500 }}>–</span>
-                    <span style={{ color: "var(--party-rep)" }}>{houseSeats.rep}R</span>
-                  </div>
-                  <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
-                    {isUnicameral ? "Legislature" : "State House"} · {houseSeats.total} seats
-                  </div>
-                </div>
-              )}
-              {senateSeats && (
-                <div>
-                  <div className="text-2xl font-extrabold tabular-nums">
-                    <span style={{ color: "var(--party-dem)" }}>{senateSeats.dem}D</span>
-                    <span style={{ color: "var(--app-text-very-muted)", fontWeight: 500 }}>–</span>
-                    <span style={{ color: "var(--party-rep)" }}>{senateSeats.rep}R</span>
-                  </div>
-                  <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
-                    State Senate · {senateSeats.total} seats
-                  </div>
-                </div>
-              )}
-            </div>
-          )}
+          {/* Chamber facts, formerly the sidebar's "About the ... Legislature" section */}
+          <div className="mt-8 pt-5 pb-1" style={{ borderTop: "1px solid var(--app-border)" }}>
+            <StateLegAboutSection blocks={aboutBlocks} />
+          </div>
         </div>
       </div>
 
@@ -141,22 +116,8 @@ export default async function StateLegislaturePage({ params }: { params: Promise
           calendarByChamber={stateLegCalendar[state.abbr] ?? {}}
           historicalMapsByChamber={stateLegHistoricalMaps[state.abbr] ?? {}}
           isUnicameral={isUnicameral}
-          sidebar={
-            <>
-              <section>
-                <LedgerSectionHead label={`About the ${state.name} Legislature`} />
-                <StateLegAboutSection blocks={aboutBlocks} />
-              </section>
-
-              {(houseEntries.length > 0 || senateEntries.length > 0) && (
-                <StateLegCompositionBox
-                  houseEntries={houseEntries}
-                  senateEntries={senateEntries}
-                  isUnicameral={isUnicameral}
-                />
-              )}
-            </>
-          }
+          compositionHouseEntries={houseEntries}
+          compositionSenateEntries={senateEntries}
         />
       </main>
     </div>
