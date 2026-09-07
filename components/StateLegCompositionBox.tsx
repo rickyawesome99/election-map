@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { HouseDelegationEntry, StateLegEntry } from "@/data/forecastData";
 import type { Chamber } from "@/data/stateLegDistricts";
 import { MajorityPill, majorityStatus } from "./StateLegAboutSection";
@@ -19,12 +19,30 @@ function supermajorityFor(totalSeats: number, info: MajorityInfo): number | null
   return Math.ceil((info.supermajoritySeats / info.totalSeats) * totalSeats);
 }
 
+/**
+ * Seats netted since the chamber last went to the polls — the change in composition against the
+ * previous cycle on the card list, not against the last time this class of seats was up. A
+ * chamber that neither party moved gets nothing at all.
+ */
+function netChange(entry: CompositionEntry, prev: CompositionEntry | undefined): { party: "D" | "R"; seats: number } | null {
+  if (!prev) return null;
+  if (entry.demSeats == null || entry.repSeats == null || prev.demSeats == null || prev.repSeats == null) return null;
+  const demNet = entry.demSeats - prev.demSeats;
+  const repNet = entry.repSeats - prev.repSeats;
+  // Normally mirror images. They diverge only where the chamber changed size or an independent
+  // seat flipped, and there the bigger gain is the one worth naming.
+  if (demNet > repNet && demNet > 0) return { party: "D", seats: demNet };
+  if (repNet > demNet && repNet > 0) return { party: "R", seats: repNet };
+  return null;
+}
+
 function EntryCard({
   entry,
   selectable = false,
   active = false,
   onSelect,
   majorityInfo,
+  net = null,
 }: {
   entry: CompositionEntry;
   /** True where this year's district results exist, so the card can put them on the map. */
@@ -32,6 +50,8 @@ function EntryCard({
   active?: boolean;
   onSelect?: () => void;
   majorityInfo?: MajorityInfo | null;
+  /** Seats netted against the previous cycle, or null when nothing moved. */
+  net?: { party: "D" | "R"; seats: number } | null;
 }) {
   const hasSeats = entry.demSeats != null && entry.repSeats != null;
   const hasVoteData = entry.demPct != null && entry.repPct != null;
@@ -74,6 +94,14 @@ function EntryCard({
           <span style={{ color: "var(--party-dem)" }}>{entry.demSeats}D</span>
           <span style={{ color: "var(--app-text-very-muted)" }}>–</span>
           <span style={{ color: "var(--party-rep)" }}>{entry.repSeats}R</span>
+          {net && (
+            <>
+              <span style={{ color: "var(--app-text-very-muted)" }}>·</span>
+              <span style={{ color: net.party === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>
+                Net +{net.seats} {net.party}
+              </span>
+            </>
+          )}
           {active && (
             <span className="ml-1.5 text-[9px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
               On map
@@ -140,6 +168,7 @@ export default function StateLegCompositionBox({
   selectableYears,
   onSelectYear,
   majorityInfo = null,
+  visibleCards,
 }: {
   federalEntries?: HouseDelegationEntry[];
   houseEntries: StateLegEntry[];
@@ -156,11 +185,35 @@ export default function StateLegCompositionBox({
   /** Chamber size and override threshold, which turn each year's seat split into a majority
    *  label on its card. Supplied only where one chamber is on screen, i.e. with `chamber`. */
   majorityInfo?: MajorityInfo | null;
+  /** Caps the scrollbox at this many cards. Left unset where the box is sized by its column
+   *  instead, as on the legislature page, where it matches the map beside it. */
+  visibleCards?: number;
 }) {
   const hasFederal = federalEntries.length > 0;
   const hasHouse = houseEntries.length > 0;
   const hasSenate = senateEntries.length > 0;
   const [tab, setTab] = useState<CompositionTab>(hasFederal ? "us-house" : isUnicameral ? "state-legislature" : hasHouse ? "state-house" : "state-senate");
+
+  // A capped box is measured rather than given a hardcoded height: a card is a row taller when
+  // the chamber had a third-party vote worth listing, so the same card count is a different
+  // number of pixels per tab. Until the measurement lands (SSR, first paint) the fallback below
+  // holds it near the tallest shape so hydration barely moves it.
+  const listRef = useRef<HTMLDivElement>(null);
+  const [capHeight, setCapHeight] = useState<number | null>(null);
+  useEffect(() => {
+    const list = listRef.current;
+    if (!visibleCards || !list) return;
+    const measure = () => {
+      const cards = Array.from(list.children) as HTMLElement[];
+      if (cards.length === 0) return;
+      const tallest = Math.max(...cards.map((card) => card.offsetHeight));
+      if (tallest > 0) setCapHeight(tallest * Math.min(visibleCards, cards.length));
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(list);
+    return () => observer.disconnect();
+  }, [visibleCards, tab, chamber]);
 
   // Nebraska's one chamber is keyed "senate" in the boundary data but its composition history is
   // filed under House — the same convention StateLegSection follows.
@@ -177,7 +230,7 @@ export default function StateLegCompositionBox({
   ];
 
   return (
-    <section className="flex h-[25rem] min-w-0 flex-col md:h-full">
+    <section className={`flex min-w-0 flex-col${visibleCards ? "" : " h-[25rem] md:h-full"}`}>
       <div className="mb-3 flex shrink-0 flex-col items-start gap-3">
         <h2
           className="text-[11px] uppercase tracking-wider font-bold"
@@ -204,11 +257,22 @@ export default function StateLegCompositionBox({
         ) : null}
       </div>
 
-      <div className="relative min-h-0 min-w-0 flex-1">
-        <div className="stateleg-scroll h-full overflow-x-hidden overflow-y-auto pr-1">
-          <div className="flex flex-col">
+      <div className={`relative min-h-0 min-w-0${visibleCards ? "" : " flex-1"}`}>
+        <div
+          className="stateleg-scroll overflow-x-hidden overflow-y-auto pr-1"
+          style={visibleCards ? { height: capHeight ?? visibleCards * 152 } : { height: "100%" }}
+        >
+          <div ref={listRef} className="flex flex-col">
             {entries.map((entry) => {
               const selectable = !!onSelectYear && !!selectableYears?.includes(entry.year);
+              // The nearest earlier cycle on this list, found by year rather than by position so
+              // the comparison holds however the entries happen to be ordered. The oldest card
+              // has nothing behind it and so carries no net.
+              const prev = entries.reduce<CompositionEntry | undefined>(
+                (best, other) =>
+                  other.year < entry.year && (!best || other.year > best.year) ? other : best,
+                undefined,
+              );
               return (
                 <EntryCard
                   key={`${entry.year}-${"type" in entry ? entry.type : "US House"}`}
@@ -217,6 +281,7 @@ export default function StateLegCompositionBox({
                   active={selectable && entry.year === activeYear}
                   onSelect={selectable ? () => onSelectYear?.(entry.year) : undefined}
                   majorityInfo={chamber ? majorityInfo : null}
+                  net={netChange(entry, prev)}
                 />
               );
             })}

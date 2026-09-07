@@ -1,4 +1,9 @@
-# State Wave Sensitivity Coefficient Calculations
+# State Wave Sensitivity Coefficient Calculations (SUPERSEDED)
+
+> **Superseded 2026-09-07** by the fitted elasticity β* (`getTplFit()` in
+> `lib/tplCompute.ts`; see `docs/TPL_MODEL_SPEC.md`). The swing-ratio SWSC below
+> is no longer used anywhere in the model; this document is kept as a record of
+> the pre-rebuild method.
 
 This document records the State Wave Sensitivity Coefficient (SWSC) calculation for all 50 states using statewide aggregate U.S. House margins from `houseDelegationHistory` and national U.S. House popular-vote margins from `popVoteData`.
 

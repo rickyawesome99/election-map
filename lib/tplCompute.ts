@@ -15,7 +15,6 @@ import { GOVERNOR_MANUAL_MARGINS } from "@/data/manualOverrides";
 import { statesData } from "@/data/statesData";
 import {
   TPL_GLOBAL_CONSTANTS as G,
-  STATE_MODEL_CONSTANTS,
   STATE_RACE_INPUTS,
   WQ_VALUES,
   LQ_VALUES,
@@ -30,6 +29,7 @@ import { countyHouseData } from "@/data/countyHouseData";
 import { popVoteData, presIncParty } from "@/data/popVoteData";
 import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
 import { FIPS_TO_STATE } from "@/lib/fips";
+import { classifyEligibility, type RaceEligibility } from "@/data/raceEligibility";
 
 // ── Generic ballot ────────────────────────────────────────────────────────────
 // R-positive convention: negative = D-favored (e.g. D+5.3 → -5.3).
@@ -54,10 +54,8 @@ export interface RaceStub {
   raceType: "P" | "S" | "G" | "H" | "L";
   detailHref?: string;
   year: number;
+  eligibility: RaceEligibility;
   incumbent: string;
-  wqTier: CQTier;
-  lqTier: CQTier;
-  CQ: number;
   FF: number;
   historicalMargins: { year: number; margin: number }[];
 }
@@ -66,19 +64,15 @@ export interface RaceStub {
 
 export interface ComputedRace extends RaceStub {
   rawMargin: number | null;
-  IF: number;
-  candidateFactor_pts: number | null;
+  incumbencyPts: number | null; // additive strip: R incumbent → −pts, D incumbent → +pts
   FF_pts: number | null;
   adjustedMargin: number | null;
-  competitivenessAdjusted: boolean;
-  blanketApplied: boolean;
-  priorContestedMargin: number | null;
-  priorContestedYear: number | null;
-  presidentialBaselineMargin: number | null;
-  presidentialBaselineYear: number | null;
+  imputed: boolean;
+  imputedSourceYear: number | null;
+  imputedSourceDesc: string | null;
   minValidYear: number;
-  WA: number;
-  WFCapped: boolean;
+  envPts: number | null; // −β*(state) × E(year): strips the fitted national environment
+  aggWeight: number; // weight in aggregation: ×0.5 if imputed, × Huber factor vs the fitted lean (state model)
   NM: number | null;
   inAggregation: boolean;
 }
@@ -89,6 +83,8 @@ export interface YearAggregation {
   redistributedWeights: Record<string, number>;
   typeNMs: Record<string, number | null>;
   WRS: number;
+  coverage: number;    // Σ base type weights of types present — scales the year weight
+  finalWeight: number; // normalized share of TPL contributed by this year
 }
 
 export interface StateModelCalculation {
@@ -115,27 +111,60 @@ export interface DistrictModelCalculation {
   tpl: number;
 }
 
-// ── Competitiveness adjustment constants ──────────────────────────────────────
+// ── Race eligibility & imputation ─────────────────────────────────────────────
+// An ineligible race (missing major-party nominee, or a same-party general such
+// as a CA/WA top-two or LA runoff) has no usable R-vs-D margin. Instead of the
+// old ≥50-pt competitiveness blend, the seat's structural lean is imputed from
+// the nearest presidential result (boundary-vintage-aware for House districts)
+// and the row enters aggregation at IMPUTED_RACE_WEIGHT. Imputed rows skip
+// IF/CQ/FF/WA entirely — the imputed value is already a lean, not an outcome.
 
-const NONCOMPETITIVE_MARGIN_THRESHOLD = 50;
-const PRIOR_CONTESTED_WEIGHT = 0.6;
-const PRESIDENTIAL_BASELINE_WEIGHT = 0.4;
-const BLANKET_ADJUSTMENT_MULTIPLIER = 0.8;
+export const IMPUTED_RACE_WEIGHT = 0.5;
 
-interface CompetitivenessAdjustment {
-  adjustedMargin: number;
-  adjusted: boolean;
-  blanketApplied: boolean;
-  priorContestedMargin: number | null;
-  priorContestedYear: number | null;
-  presidentialBaselineMargin: number | null;
-  presidentialBaselineYear: number | null;
+interface ImputedLean {
+  margin: number;
+  year: number;
+  desc: string;
 }
 
-// ── IF lookup tables ──────────────────────────────────────────────────────────
+function byNearestYear(raceYear: number) {
+  return (a: { year: number }, b: { year: number }) =>
+    Math.abs(a.year - raceYear) - Math.abs(b.year - raceYear) || b.year - a.year;
+}
 
-const IF_INCUMBENT_WINS: Record<string, number> = { P: 0.935, S: 0.875, G: 0.835, H: 0.80, L: 0.875 };
-const IF_CHALLENGER_WINS: Record<string, number> = { P: 1.07, S: 1.14, G: 1.20, H: 1.25, L: 1.14 };
+function nearestPresidentialLean(
+  stateAbbr: string,
+  district: string | undefined,
+  raceYear: number,
+  minValidYear: number,
+  maxValidYear: number
+): ImputedLean | null {
+  if (district) {
+    const districtId = houseData.find((race) => race.name === district)?.id;
+    const entry = districtId
+      ? (houseStatewideResults[districtId] ?? [])
+          .filter((e) => e.race === "President" && e.year >= minValidYear && e.year < maxValidYear)
+          .sort(byNearestYear(raceYear))[0]
+      : undefined;
+    if (entry) return { margin: entry.repPct - entry.demPct, year: entry.year, desc: "district presidential result" };
+  }
+  const entry = (presPastResults[stateAbbr] ?? []).slice().sort(byNearestYear(raceYear))[0];
+  return entry
+    ? { margin: entry.repPct - entry.demPct, year: entry.year, desc: "statewide presidential result" }
+    : null;
+}
+
+// ── Additive incumbency (shared with the forward projection) ─────────────────
+// Points the incumbent's party is worth on the margin. Stripping subtracts them
+// (R incumbent → −pts toward D); forecasting adds them back via computeIncumbentPts.
+// P: national approval effects belong to E(y). L: chamber aggregate, no single incumbent.
+
+function incumbencyPtsFor(raceType: string, incumbent: string): number {
+  const pts = INCUMBENT_ADVANTAGE[raceType] ?? 0;
+  if (incumbent === "R") return -pts;
+  if (incumbent === "D") return pts;
+  return 0;
+}
 
 // ── Helper: incumbent from past result ────────────────────────────────────────
 
@@ -143,148 +172,6 @@ function incumbentFromResult(result?: Pick<PastResult, "demIncumbent" | "repIncu
   if (result?.demIncumbent) return "D";
   if (result?.repIncumbent) return "R";
   return "Open";
-}
-
-// ── getPriorPresidentialResult ────────────────────────────────────────────────
-
-function getPriorPresidentialResult(
-  stateAbbr: string,
-  district: string | undefined,
-  year: number,
-  minValidYear = 0
-): { margin: number; year: number } | null {
-  if (district) {
-    const districtId = houseData.find((race) => race.name === district)?.id;
-    const entry = districtId
-      ? (houseStatewideResults[districtId] ?? [])
-          .filter((e) => e.race === "President" && e.year <= year && e.year >= minValidYear)
-          .sort((a, b) => b.year - a.year)[0]
-      : undefined;
-    return entry ? { margin: entry.repPct - entry.demPct, year: entry.year } : null;
-  }
-
-  const entry = (presPastResults[stateAbbr] ?? [])
-    .filter((e) => e.year < year)
-    .sort((a, b) => b.year - a.year)[0];
-  return entry ? { margin: entry.repPct - entry.demPct, year: entry.year } : null;
-}
-
-// ── computeCompetitivenessAdjustment ─────────────────────────────────────────
-
-function computeCompetitivenessAdjustment(
-  rawMargin: number,
-  stub: RaceStub,
-  minValidYear: number,
-  presidentialResult: { margin: number; year: number } | null
-): CompetitivenessAdjustment {
-  if (Math.abs(rawMargin) < NONCOMPETITIVE_MARGIN_THRESHOLD) {
-    return {
-      adjustedMargin: rawMargin,
-      adjusted: false,
-      blanketApplied: false,
-      priorContestedMargin: null,
-      priorContestedYear: null,
-      presidentialBaselineMargin: null,
-      presidentialBaselineYear: null,
-    };
-  }
-
-  const priorResults = stub.historicalMargins
-    .filter((result) => result.year < stub.year && result.year >= minValidYear)
-    .sort((a, b) => b.year - a.year);
-  const priorContested = priorResults.find(
-    (result) => Math.abs(result.margin) < NONCOMPETITIVE_MARGIN_THRESHOLD
-  );
-
-  if (priorContested == null && presidentialResult == null) {
-    return {
-      adjustedMargin: rawMargin * BLANKET_ADJUSTMENT_MULTIPLIER,
-      adjusted: true,
-      blanketApplied: true,
-      priorContestedMargin: null,
-      priorContestedYear: null,
-      presidentialBaselineMargin: null,
-      presidentialBaselineYear: null,
-    };
-  }
-
-  const priorContestedMargin = priorContested?.margin ?? presidentialResult!.margin;
-  const presidentialMargin = presidentialResult?.margin ?? priorContested!.margin;
-  const blendedMargin =
-    PRIOR_CONTESTED_WEIGHT * priorContestedMargin +
-    PRESIDENTIAL_BASELINE_WEIGHT * presidentialMargin;
-  const adjustedMargin =
-    Math.abs(blendedMargin) > Math.abs(rawMargin) ? rawMargin : blendedMargin;
-
-  return {
-    adjustedMargin,
-    adjusted: true,
-    blanketApplied: false,
-    priorContestedMargin: priorContested?.margin ?? null,
-    priorContestedYear: priorContested?.year ?? null,
-    presidentialBaselineMargin: presidentialResult?.margin ?? null,
-    presidentialBaselineYear: presidentialResult?.year ?? null,
-  };
-}
-
-// ── computeWF ────────────────────────────────────────────────────────────────
-
-function computeWF(
-  base: number,
-  NES: number,
-  S: number,
-  k_mult: number
-): { wf: number; capped: boolean } {
-  if (base === 0) return { wf: 1.0, capped: false };
-  const sign = base > 0 ? 1 : -1;
-  const unclamped = 1 / (1 + NES * S * k_mult * sign);
-  const clamped = Math.max(0.6, Math.min(1.6, unclamped));
-  return { wf: clamped, capped: Math.abs(unclamped - clamped) > 0.0001 };
-}
-
-// ── computeIF ────────────────────────────────────────────────────────────────
-
-export function computeIF(raceType: string, incumbent: string, rawMargin: number | null): number {
-  if (raceType === "P" || incumbent === "Open" || incumbent === "-" || rawMargin === null) return 1.00;
-  const incumbentWon = (incumbent === "R" && rawMargin > 0) || (incumbent === "D" && rawMargin < 0);
-  return incumbentWon ? (IF_INCUMBENT_WINS[raceType] ?? 1.00) : (IF_CHALLENGER_WINS[raceType] ?? 1.00);
-}
-
-// ── computePresidentialIF ────────────────────────────────────────────────────
-// Approval-based IF for President races — a national number, so it's identical whether
-// the race is measured at the state, district, or county level; only the target sign varies.
-
-function computePresidentialIF(year: number): number {
-  const pifRow = popVoteData.find((r) => r.type === "President" && r.year === year);
-  return pifRow ? 1 + pifRow.presMargin * G.k_pif * (presIncParty(pifRow.presInc) === "dem" ? 1 : -1) : 1.00;
-}
-
-// ── computeCandidateFactor / computeNM ───────────────────────────────────────
-// Shared by the state and county models so a formula change to either applies to both.
-
-function computeCandidateFactor(raceType: string, adjustedMargin: number, IF: number, CQ: number): number {
-  const cappedAdj = Math.sign(adjustedMargin) * Math.min(Math.abs(adjustedMargin), G.CQ_MARGIN_CAP);
-  return raceType === "P"
-    ? adjustedMargin * (IF - 1) + cappedAdj * (CQ - 1)
-    : adjustedMargin * (IF * CQ - 1);
-}
-
-function computeNM(adjustedMargin: number, candidateFactor_pts: number, FF_pts: number, WA: number): number {
-  return adjustedMargin + candidateFactor_pts + FF_pts + WA;
-}
-
-// ── computeWaveAdjustment ─────────────────────────────────────────────────────
-
-function computeWaveAdjustment(
-  adjustedMargin: number | null,
-  NES: number | null,
-  S: number | null
-): { WA: number; wfCapped: boolean } {
-  if (adjustedMargin == null || NES == null || S == null) return { WA: 0, wfCapped: false };
-  const WA_add = NES * S * G.k_add;
-  const { wf, capped } = computeWF(adjustedMargin, NES, S, G.k_mult);
-  const WA_mult = adjustedMargin * (1 - wf);
-  return { WA: -(0.70 * WA_add + 0.30 * WA_mult), wfCapped: capped };
 }
 
 // ── aggregateYears ────────────────────────────────────────────────────────────
@@ -297,8 +184,9 @@ function aggregateYears(races: ComputedRace[]): { yearAggregations: YearAggregat
     const typeNMs: Record<string, number | null> = {};
     for (const type of ["P", "G", "S", "H", "L"]) {
       const typeRaces = yearRaces.filter((race) => race.raceType === type);
-      typeNMs[type] = typeRaces.length > 0
-        ? typeRaces.reduce((sum, race) => sum + (race.NM ?? 0), 0) / typeRaces.length
+      const typeWeight = typeRaces.reduce((sum, race) => sum + race.aggWeight, 0);
+      typeNMs[type] = typeWeight > 0
+        ? typeRaces.reduce((sum, race) => sum + race.aggWeight * (race.NM ?? 0), 0) / typeWeight
         : null;
     }
     const racesPresent = ["P", "G", "S", "H", "L"].filter((t) => typeNMs[t] != null);
@@ -308,14 +196,20 @@ function aggregateYears(races: ComputedRace[]): { yearAggregations: YearAggregat
       redistributedWeights[type] = (G.RACE_TYPE_WEIGHTS[type] ?? 0) / totalBase;
     }
     const WRS = racesPresent.reduce((sum, type) => sum + redistributedWeights[type] * (typeNMs[type] ?? 0), 0);
-    return { year, racesPresent, redistributedWeights, typeNMs, WRS };
+    return { year, racesPresent, redistributedWeights, typeNMs, WRS, coverage: totalBase, finalWeight: 0 };
   });
 
+  // Year weight = recency decay × base type-weight coverage, so a sparse year
+  // (an odd-year governor race alone) cannot dominate via redistribution.
   const yearsPresent = yearAggregations.filter((agg) => agg.racesPresent.length > 0);
-  const totalYearWeight = yearsPresent.reduce((sum, agg) => sum + (G.YEAR_WEIGHTS[agg.year] ?? 0), 0);
-  const tpl = totalYearWeight > 0
-    ? yearsPresent.reduce((sum, agg) => sum + ((G.YEAR_WEIGHTS[agg.year] ?? 0) / totalYearWeight) * agg.WRS, 0)
-    : 0;
+  const totalYearWeight = yearsPresent.reduce(
+    (sum, agg) => sum + (G.YEAR_WEIGHTS[agg.year] ?? 0) * agg.coverage,
+    0
+  );
+  for (const agg of yearsPresent) {
+    agg.finalWeight = totalYearWeight > 0 ? ((G.YEAR_WEIGHTS[agg.year] ?? 0) * agg.coverage) / totalYearWeight : 0;
+  }
+  const tpl = yearsPresent.reduce((sum, agg) => sum + agg.finalWeight * agg.WRS, 0);
   return { yearAggregations, tpl };
 }
 
@@ -402,22 +296,18 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
     district?: string,
     incumbent = "Open",
     historicalMargins: RaceStub["historicalMargins"] = [],
-    detailHref?: string
+    detailHref?: string,
+    eligibility: RaceEligibility = "eligible"
   ): RaceStub {
     const inp = overlay(race, year);
-    const presBase = raceType === "P" ? PRESIDENTIAL_INPUTS_BY_YEAR[year] : undefined;
-    const wqTier = inp?.wqTier ?? presBase?.wqTier ?? "Generic";
-    const lqTier = inp?.lqTier ?? presBase?.lqTier ?? "Generic";
     return {
       race,
       district,
       raceType,
       detailHref,
       year,
+      eligibility,
       incumbent,
-      wqTier,
-      lqTier,
-      CQ: WQ_VALUES[wqTier] * LQ_VALUES[lqTier],
       FF: inp?.FF ?? 1.00,
       historicalMargins,
     };
@@ -430,8 +320,8 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
     margin: result.repPct - result.demPct,
   }));
   for (const r of presidentialResults) {
-    if (r.year >= 2017) {
-      stubs.push(makeStub("President", "P", r.year, undefined, incumbentFromResult(r), presidentialMargins, stateHref));
+    if (r.year >= 2016) {
+      stubs.push(makeStub("President", "P", r.year, undefined, incumbentFromResult(r), presidentialMargins, stateHref, classifyEligibility(r)));
     }
   }
 
@@ -441,9 +331,9 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
       margin: result.repPct - result.demPct,
     }));
     for (const r of seat.pastResults ?? []) {
-      if (r.year >= 2017) {
+      if (r.year >= 2016) {
         const raceName = r.electionType === "Special" ? "Senate Special" : "Senate";
-        stubs.push(makeStub(raceName, "S", r.year, undefined, incumbentFromResult(r), historicalMargins, detailHref));
+        stubs.push(makeStub(raceName, "S", r.year, undefined, incumbentFromResult(r), historicalMargins, detailHref, classifyEligibility(r)));
       }
     }
   }
@@ -464,8 +354,8 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
       margin: result.repPct - result.demPct,
     }));
     for (const r of seat.pastResults ?? []) {
-      if (r.year >= 2017) {
-        stubs.push(makeStub("Governor", "G", r.year, undefined, incumbentFromResult(r), historicalMargins, detailHref));
+      if (r.year >= 2016) {
+        stubs.push(makeStub("Governor", "G", r.year, undefined, incumbentFromResult(r), historicalMargins, detailHref, classifyEligibility(r)));
       }
     }
   }
@@ -483,8 +373,8 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
       margin: result.repPct - result.demPct,
     }));
     for (const r of dist.pastResults ?? []) {
-      if (r.year >= 2017) {
-        stubs.push(makeStub(`House ${dist.name}`, "H", r.year, dist.name, incumbentFromResult(r), historicalMargins, `/house/${dist.name.toLowerCase()}`));
+      if (r.year >= 2016) {
+        stubs.push(makeStub(`House ${dist.name}`, "H", r.year, dist.name, incumbentFromResult(r), historicalMargins, `/house/${dist.name.toLowerCase()}`, classifyEligibility(r)));
       }
     }
   }
@@ -505,7 +395,7 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
   // genuine single-chamber year in.
   const legYears = [...new Set(legEntries.map((e) => e.year))]
     .filter((year) => {
-      if (year < 2018) return false;
+      if (year < 2016) return false;
       const yearEntries = legEntries.filter((e) => e.year === year);
       const sourced = yearEntries.filter((e) => e.demVotes != null && e.repVotes != null);
       // Nebraska's unicameral body is stored under "House"; its "Senate" rows are deliberate
@@ -536,48 +426,165 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
   });
 }
 
+// ── Environment & elasticity fit ──────────────────────────────────────────────
+// Alternating robust least squares over the full eligible race panel (all 50
+// states, every office, 2016–2025 incl. odd years):
+//
+//   margin − incumbencyPts  ≈  lean(state) + β(state) × E(year)
+//
+// E(y) is the fitted national environment (R-positive; identified from
+// within-state changes, so which seats happen to be up cannot skew it, and
+// centered so the period average is ≈ 0). β̂ is each state's elasticity,
+// shrunk (β* = 1 + BETA_SHRINK·(β̂−1)) and clamped to [BETA_MIN, BETA_MAX].
+// Huber weights (w = min(1, HUBER_C/|residual|)) keep crossover outliers —
+// Manchin, Scott, Hogan — from dragging a state's lean; those residuals are
+// the raw material for WAR later.
+
+export interface TplFitStateBeta {
+  raw: number;
+  shrunk: number;
+  n: number;
+}
+
+export interface TplFit {
+  E: Record<number, number>;
+  beta: Record<string, TplFitStateBeta>;
+  lean: Record<string, number>; // Huber-protected static lean — anchors race weights in aggregation
+  years: number[];
+  rowsUsed: number;
+}
+
+let _fitCache: TplFit | null = null;
+
+export function getTplFit(): TplFit {
+  if (_fitCache) return _fitCache;
+  interface FitRow { abbr: string; year: number; adj: number; w: number; }
+  const rows: FitRow[] = [];
+  for (const { abbr, name } of statesData) {
+    for (const stub of generateRaceList(abbr, name)) {
+      if (stub.eligibility !== "eligible") continue;
+      const margin = getRawMargin(stub.race, stub.district, stub.year, abbr, name);
+      if (margin == null) continue;
+      rows.push({ abbr, year: stub.year, adj: margin + incumbencyPtsFor(stub.raceType, stub.incumbent), w: 1 });
+    }
+  }
+  const years = [...new Set(rows.map((r) => r.year))].sort((a, b) => a - b);
+  const E: Record<number, number> = Object.fromEntries(years.map((y) => [y, 0]));
+  const lean: Record<string, number> = {};
+  const beta: Record<string, TplFitStateBeta> = {};
+  const rowsByState: Record<string, FitRow[]> = {};
+  const rowsByYear: Record<number, FitRow[]> = {};
+  for (const r of rows) {
+    (rowsByState[r.abbr] ??= []).push(r);
+    (rowsByYear[r.year] ??= []).push(r);
+  }
+  for (const { abbr } of statesData) {
+    const sr = rowsByState[abbr] ?? [];
+    lean[abbr] = sr.length > 0 ? sr.reduce((a, r) => a + r.adj, 0) / sr.length : 0;
+    beta[abbr] = { raw: 1, shrunk: 1, n: sr.length };
+  }
+  for (let iter = 0; iter < G.FIT_ITERATIONS; iter += 1) {
+    for (const r of rows) {
+      const res = r.adj - lean[r.abbr] - beta[r.abbr].shrunk * E[r.year];
+      r.w = Math.abs(res) <= G.HUBER_C ? 1 : G.HUBER_C / Math.abs(res);
+    }
+    for (const y of years) {
+      const yr = rowsByYear[y] ?? [];
+      let num = 0;
+      let den = 0;
+      for (const r of yr) {
+        const b = beta[r.abbr].shrunk;
+        num += r.w * b * (r.adj - lean[r.abbr]);
+        den += r.w * b * b;
+      }
+      E[y] = den > 0 ? (num / den) * (yr.length / (yr.length + G.SPARSE_YEAR_K)) : 0;
+    }
+    for (const abbr of Object.keys(beta)) {
+      const sr = rowsByState[abbr] ?? [];
+      let num = 0;
+      let den = 0;
+      for (const r of sr) {
+        const e = E[r.year];
+        num += r.w * e * (r.adj - lean[abbr]);
+        den += r.w * e * e;
+      }
+      const raw = den > 0 ? num / den : 1;
+      beta[abbr] = {
+        raw,
+        shrunk: Math.max(G.BETA_MIN, Math.min(G.BETA_MAX, 1 + G.BETA_SHRINK * (raw - 1))),
+        n: sr.length,
+      };
+    }
+    for (const abbr of Object.keys(lean)) {
+      const sr = rowsByState[abbr] ?? [];
+      let num = 0;
+      let den = 0;
+      for (const r of sr) {
+        num += r.w * (r.adj - beta[abbr].shrunk * E[r.year]);
+        den += r.w;
+      }
+      if (den > 0) lean[abbr] = num / den;
+    }
+  }
+  _fitCache = { E, beta, lean, years, rowsUsed: rows.length };
+  return _fitCache;
+}
+
 // ── calculateStateModel ───────────────────────────────────────────────────────
 
 export function calculateStateModel(stateAbbr: string, stateName: string): StateModelCalculation {
-  const S = STATE_MODEL_CONSTANTS[stateAbbr]?.S ?? null;
+  const fit = getTplFit();
+  const beta = fit.beta[stateAbbr]?.shrunk ?? 1;
   const stubs = generateRaceList(stateAbbr, stateName);
   const races: ComputedRace[] = stubs.map((stub) => {
     const rawMargin = getRawMargin(stub.race, stub.district, stub.year, stateAbbr, stateName);
-    const NES = G.NES_BY_YEAR[stub.year] ?? null;
     const inAggregation = stub.year in G.YEAR_WEIGHTS;
     let minValidYear = 0;
+    let maxValidYear = Number.POSITIVE_INFINITY;
     if (stub.raceType === "H" && stub.district) {
       const districtId = houseData.find((r) => r.name === stub.district)?.id;
       if (districtId) {
-        const validEntries = (houseDistrictInfo[districtId] ?? []).filter((e) => e.year <= stub.year);
-        if (validEntries.length > 0) minValidYear = Math.max(...validEntries.map((e) => e.year));
+        const infoYears = (houseDistrictInfo[districtId] ?? []).map((e) => e.year);
+        const pastYears = infoYears.filter((y) => y <= stub.year);
+        if (pastYears.length > 0) minValidYear = Math.max(...pastYears);
+        const futureYears = infoYears.filter((y) => y > stub.year);
+        if (futureYears.length > 0) maxValidYear = Math.min(...futureYears);
       }
     }
-    const presidentialBaseline = getPriorPresidentialResult(stateAbbr, stub.district, stub.year, minValidYear);
-    const competitiveness =
-      rawMargin == null ? null : computeCompetitivenessAdjustment(rawMargin, stub, minValidYear, presidentialBaseline);
-    const adjustedMargin = competitiveness?.adjustedMargin ?? null;
-    const IF = stub.raceType === "P" ? computePresidentialIF(stub.year) : computeIF(stub.raceType, stub.incumbent, rawMargin);
-    const candidateFactor_pts = adjustedMargin != null ? computeCandidateFactor(stub.raceType, adjustedMargin, IF, stub.CQ) : null;
-    const FF_pts = adjustedMargin != null ? adjustedMargin * (stub.FF - 1) : null;
-    const { WA, wfCapped } = computeWaveAdjustment(adjustedMargin, NES, S);
-    const NM = adjustedMargin != null ? computeNM(adjustedMargin, candidateFactor_pts ?? 0, FF_pts ?? 0, WA) : null;
+    const ineligible = stub.eligibility !== "eligible";
+    const imputation = ineligible
+      ? nearestPresidentialLean(stateAbbr, stub.district, stub.year, minValidYear, maxValidYear)
+      : null;
+    const imputed = imputation != null;
+    const adjustedMargin = ineligible ? (imputation?.margin ?? null) : rawMargin;
+    // Imputed rows strip the environment of the SOURCE presidential year — the
+    // imputed value inherits that year's national conditions, nothing else.
+    const envYear = imputed ? imputation!.year : stub.year;
+    const envPts = adjustedMargin == null ? null : -(beta * (fit.E[envYear] ?? 0));
+    const incumbencyPts = adjustedMargin == null ? null : imputed ? 0 : incumbencyPtsFor(stub.raceType, stub.incumbent);
+    const FF_pts = adjustedMargin == null ? null : imputed ? 0 : adjustedMargin * (stub.FF - 1);
+    const NM = adjustedMargin != null
+      ? adjustedMargin + (incumbencyPts ?? 0) + (FF_pts ?? 0) + (envPts ?? 0)
+      : null;
+    // Aggregation weight: imputed rows enter at IMPUTED_RACE_WEIGHT, and every row is
+    // Huber-downweighted by its residual against the state's fitted lean — so a
+    // crossover outlier (Manchin, Scott, Hogan) cannot drag the headline TPL either.
+    const stateLean = fit.lean[stateAbbr];
+    const residual = NM != null && stateLean != null ? NM - stateLean : 0;
+    const huberW = Math.abs(residual) <= G.HUBER_C ? 1 : G.HUBER_C / Math.abs(residual);
+    const aggWeight = (imputed ? IMPUTED_RACE_WEIGHT : 1) * huberW;
     return {
       ...stub,
       rawMargin,
-      IF,
-      candidateFactor_pts,
+      incumbencyPts,
       FF_pts,
       adjustedMargin,
-      competitivenessAdjusted: competitiveness?.adjusted ?? false,
-      blanketApplied: competitiveness?.blanketApplied ?? false,
-      priorContestedMargin: competitiveness?.priorContestedMargin ?? null,
-      priorContestedYear: competitiveness?.priorContestedYear ?? null,
-      presidentialBaselineMargin: competitiveness?.presidentialBaselineMargin ?? null,
-      presidentialBaselineYear: competitiveness?.presidentialBaselineYear ?? null,
+      imputed,
+      imputedSourceYear: imputation?.year ?? null,
+      imputedSourceDesc: imputation?.desc ?? null,
       minValidYear,
-      WA,
-      WFCapped: wfCapped,
+      envPts,
+      aggWeight,
       NM,
       inAggregation,
     };
@@ -649,14 +656,9 @@ function getCountyHistoricalMargins(race: string, fips: string): { year: number;
   return out;
 }
 
-function getCountyPriorPresidentialResult(
-  fips: string,
-  year: number,
-  minValidYear: number
-): { margin: number; year: number } | null {
-  return getCountyHistoricalMargins("President", fips)
-    .filter((result) => result.year < year && result.year >= minValidYear)
-    .sort((a, b) => b.year - a.year)[0] ?? null;
+function getCountyNearestPresidential(fips: string, raceYear: number): ImputedLean | null {
+  const entry = getCountyHistoricalMargins("President", fips).sort(byNearestYear(raceYear))[0];
+  return entry ? { margin: entry.margin, year: entry.year, desc: "county presidential result" } : null;
 }
 
 function generateCountyRaceList(fips: string, stateAbbr: string, stateName: string): RaceStub[] {
@@ -672,15 +674,13 @@ function generateCountyRaceList(fips: string, stateAbbr: string, stateName: stri
     }
   }
   const houseStubs: RaceStub[] = houseHistoricalMargins
-    .filter((m) => m.year >= 2017)
+    .filter((m) => m.year >= 2016)
     .map((m) => ({
       race: "House",
       raceType: "H",
       year: m.year,
+      eligibility: "eligible" as const,
       incumbent: "Open",
-      wqTier: "Generic",
-      lqTier: "Generic",
-      CQ: WQ_VALUES.Generic * LQ_VALUES.Generic,
       FF: 1.00,
       historicalMargins: houseHistoricalMargins,
     }));
@@ -699,38 +699,38 @@ export function calculateCountyModel(fips: string): StateModelCalculation | null
   if (!county) return null;
   const stateAbbr = county.state;
   const stateName = FIPS_TO_STATE[fips.slice(0, 2)]?.name ?? stateAbbr;
-  const S = STATE_MODEL_CONSTANTS[stateAbbr]?.S ?? null;
+  const fit = getTplFit();
+  const beta = fit.beta[stateAbbr]?.shrunk ?? 1; // county reuses the parent state's elasticity
   const stubs = generateCountyRaceList(fips, stateAbbr, stateName);
 
   const races: ComputedRace[] = stubs.map((stub) => {
     const rawMargin = stub.historicalMargins.find((m) => m.year === stub.year)?.margin ?? null;
-    const NES = G.NES_BY_YEAR[stub.year] ?? null;
     const inAggregation = stub.year in G.YEAR_WEIGHTS;
-    const presidentialBaseline = getCountyPriorPresidentialResult(fips, stub.year, 0);
-    const competitiveness =
-      rawMargin == null ? null : computeCompetitivenessAdjustment(rawMargin, stub, 0, presidentialBaseline);
-    const adjustedMargin = competitiveness?.adjustedMargin ?? null;
-    const IF = stub.raceType === "P" ? computePresidentialIF(stub.year) : computeIF(stub.raceType, stub.incumbent, rawMargin);
-    const candidateFactor_pts = adjustedMargin != null ? computeCandidateFactor(stub.raceType, adjustedMargin, IF, stub.CQ) : null;
-    const FF_pts = adjustedMargin != null ? adjustedMargin * (stub.FF - 1) : null;
-    const { WA, wfCapped } = computeWaveAdjustment(adjustedMargin, NES, S);
-    const NM = adjustedMargin != null ? computeNM(adjustedMargin, candidateFactor_pts ?? 0, FF_pts ?? 0, WA) : null;
+    const ineligible = stub.eligibility !== "eligible";
+    const imputation = ineligible ? getCountyNearestPresidential(fips, stub.year) : null;
+    const imputed = imputation != null;
+    const adjustedMargin = ineligible ? (imputation?.margin ?? null) : rawMargin;
+    const envYear = imputed ? imputation!.year : stub.year;
+    const envPts = adjustedMargin == null ? null : -(beta * (fit.E[envYear] ?? 0));
+    const incumbencyPts = adjustedMargin == null ? null : imputed ? 0 : incumbencyPtsFor(stub.raceType, stub.incumbent);
+    const FF_pts = adjustedMargin == null ? null : imputed ? 0 : adjustedMargin * (stub.FF - 1);
+    const NM = adjustedMargin != null
+      ? adjustedMargin + (incumbencyPts ?? 0) + (FF_pts ?? 0) + (envPts ?? 0)
+      : null;
     return {
       ...stub,
       rawMargin,
-      IF,
-      candidateFactor_pts,
+      incumbencyPts,
       FF_pts,
       adjustedMargin,
-      competitivenessAdjusted: competitiveness?.adjusted ?? false,
-      blanketApplied: competitiveness?.blanketApplied ?? false,
-      priorContestedMargin: competitiveness?.priorContestedMargin ?? null,
-      priorContestedYear: competitiveness?.priorContestedYear ?? null,
-      presidentialBaselineMargin: competitiveness?.presidentialBaselineMargin ?? null,
-      presidentialBaselineYear: competitiveness?.presidentialBaselineYear ?? null,
+      imputed,
+      imputedSourceYear: imputation?.year ?? null,
+      imputedSourceDesc: imputation?.desc ?? null,
       minValidYear: 0,
-      WA,
-      WFCapped: wfCapped,
+      envPts,
+      // County rows measure the county, so a residual vs the STATE lean is not an
+      // outlier signal — only the imputed discount applies at county granularity.
+      aggWeight: imputed ? IMPUTED_RACE_WEIGHT : 1,
       NM,
       inAggregation,
     };
@@ -821,13 +821,10 @@ export function computeProjectedMargin(race: {
     : structuralMargin;
 }
 
-// ── Effective generic ballot (GB × state S) ──────────────────────────────────
-
-const GB_BLEND_K = 0.3;
+// ── Effective generic ballot (GB × fitted elasticity β*) ─────────────────────
 
 export function effectiveGenericBallot(stateAbbr: string): number {
-  const S = STATE_MODEL_CONSTANTS[stateAbbr]?.S ?? 1;
-  return GENERIC_BALLOT * (1 + (S - 1) * GB_BLEND_K);
+  return GENERIC_BALLOT * (getTplFit().beta[stateAbbr]?.shrunk ?? 1);
 }
 
 // ── Candidate quality (forward projection) ───────────────────────────────────

@@ -243,7 +243,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
     return { ...res, swing };
   });
 
-  // TPL figures are deliberately restricted to 2018+ (see G.YEARS / G.YEAR_WEIGHTS in
+  // TPL aggregation covers 2016–2025 incl. odd years (see G.YEARS / G.YEAR_WEIGHTS in
   // data/tplModelData.ts, which calculateCountyModel already keys off) — only the Past
   // Race Results ledger above reaches back to 2008.
   const calc = calculateCountyModel(fips);

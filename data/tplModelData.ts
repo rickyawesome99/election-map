@@ -39,25 +39,54 @@ export interface RaceModelInputs {
 
 // ── Global TPL model constants (shared across all states) ───────────────────
 
+// Years covered by the state/county TPL aggregation (odd years included since the
+// Phase 3 rebuild — VA/NJ/KY/LA/MS odd-year governor races are first-class).
+const TPL_YEARS = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+
+// Recency decay: weight(y) ∝ YEAR_DECAY^(ANCHOR_YEAR − y), anchored to the cycle
+// being forecast. In aggregation the year weight is additionally scaled by the
+// base type-weight coverage of races actually present that year, so a sparse
+// year (e.g. an odd-year governor race alone) cannot dominate via redistribution.
+// 0.75 chosen by the Phase 4 calibration (scripts/tplCalibrate.ts, 2026-09-07):
+// monotone improvement from 1.0 down to 0.75 on both holdout rounds; 0.65–0.70
+// no better, 0.80+ worse.
+const YEAR_DECAY = 0.75;
+const ANCHOR_YEAR = 2026;
+
 export const TPL_GLOBAL_CONSTANTS = {
-  k_add: 0.35,  // Additive wave scaling: WA_add = NES × SWSC × k_add (placeholder, pending calibration)
-  k_mult: 0.05, // Multiplicative wave scaling: WF = 1/(1 + NES × SWSC × k_mult × sign) (placeholder)
-  k_pif: 0.005, // Presidential IF scaling: IF = 1 + presMargin × k_pif × partySign for P-type races (placeholder)
-  CQ_MARGIN_CAP: 15, // Max margin CQ scales against — limits CQ's absolute effect in structural blowouts
+  // District TPL only — the presidential-only district model keeps the pre-rebuild
+  // pipeline until Phase 6 of the TPL rebuild. Not used by the state/county model.
+  k_pif: 0.005, // District IF scaling: IF = 1 + presMargin × k_pif × partySign
+  CQ_MARGIN_CAP: 15, // Max margin the district CQ term scales against
   DISTRICT_YEAR_WEIGHTS: { 2024: 0.70, 2020: 0.20, 2016: 0.10 } as Record<number, number>,
   DISTRICT_YEARS: [2016, 2020, 2024] as number[],
-  // NES = National Environment Score (positive = R-favored nationally)
-  // Blended President+House popular vote (presidential years) or House alone (midterms)
-  NES_BY_YEAR: { 2018: -7.1, 2020: -2.3, 2022: 4.2, 2024: 3.5 } as Record<number, number>,
-  // Base race type weights before redistribution among present types
-  RACE_TYPE_WEIGHTS: { P: 0.30, S: 0.30, H: 0.30, L: 0.05, G: 0.05 } as Record<string, number>,
-  // Year weights (recency-decay). Only even election years are used in the TPL aggregation.
-  // Odd-year governor races (NJ, VA: 2017, 2021, 2025) appear in the race table but not in aggregation yet.
-  YEAR_WEIGHTS: { 2024: 0.40, 2022: 0.28, 2020: 0.20, 2018: 0.12 } as Record<number, number>,
-  YEARS: [2018, 2020, 2022, 2024] as number[],
+  // Base race type weights before redistribution among present types.
+  // Phase 4 calibration (2026-09-07, scripts/tplCalibrate.ts, leakage-free
+  // two-round holdout): adopted the knee of the P-weight curve. The objective
+  // marginally preferred P .65 (−0.056) and P .70 (−0.076), but those gains come
+  // almost entirely from the 2024 presidential target and erode the multi-office
+  // identity; floors (P .20 / H .10 / S .05 / L .03 / G .02) are the hard bounds.
+  RACE_TYPE_WEIGHTS: { P: 0.60, S: 0.10, H: 0.20, L: 0.07, G: 0.03 } as Record<string, number>,
+  YEAR_WEIGHTS: Object.fromEntries(
+    TPL_YEARS.map((y) => [y, YEAR_DECAY ** (ANCHOR_YEAR - y)])
+  ) as Record<number, number>,
+  YEARS: TPL_YEARS as number[],
+  // Environment/elasticity fit (see getTplFit in lib/tplCompute.ts).
+  // Phase 4 calibration: HUBER_C 4–10, SPARSE_YEAR_K 2–8, BETA_SHRINK 0.3–0.7 and
+  // imputed weight 0.25–1.0 all moved the objective ≤ 0.01 — kept at their
+  // designed values. Disabling Huber entirely won ~0.02 on presidential targets
+  // by sacrificing Senate accuracy and robustness — rejected by design.
+  HUBER_C: 7,          // residual scale (pts) beyond which a race is downweighted
+  FIT_ITERATIONS: 4,   // alternating least-squares rounds
+  SPARSE_YEAR_K: 4,    // E(y) shrink factor n/(n + K) — reins in thin odd years
+  BETA_SHRINK: 0.5,    // β* = 1 + BETA_SHRINK × (β̂ − 1)
+  BETA_MIN: 0.5,
+  BETA_MAX: 1.6,
 };
 
-// ── State Wave Sensitivity Coefficients ─────────────────────────────────────
+// ── State Wave Sensitivity Coefficients (SUPERSEDED) ────────────────────────
+// Superseded by the fitted elasticity β* (getTplFit in lib/tplCompute.ts) as of
+// the Phase 3 rebuild; kept for reference alongside docs/SWSC_CALCULATIONS.md.
 // SWSC is the average of each stable cycle's:
 //   state aggregate U.S. House margin swing ÷ national U.S. House margin swing
 //

@@ -29,8 +29,7 @@ export default function CountyTplCard({
   }
 
   const { races, yearAggregations } = calc;
-  const hasBlend = races.some((r) => r.competitivenessAdjusted && !r.blanketApplied);
-  const hasBlanket = races.some((r) => r.blanketApplied);
+  const hasImputed = races.some((r) => r.imputed);
 
   return (
     <div>
@@ -42,7 +41,7 @@ export default function CountyTplCard({
         <table className="w-full min-w-[520px] text-xs">
           <thead>
             <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-              {["Race", "Year", "Raw", "Adjusted", "IF", "CQ", "WA", "NM"].map((label) => (
+              {["Race", "Year", "Raw", "Adjusted", "IF", "Env", "NM"].map((label) => (
                 <th
                   key={label}
                   className="px-2 py-1.5 text-left text-[9px] uppercase tracking-wider font-semibold whitespace-nowrap"
@@ -82,19 +81,13 @@ export default function CountyTplCard({
                 </td>
                 <td className="px-2 py-1.5 tabular-nums font-semibold" style={{ color: marginColor(r.adjustedMargin) }}>
                   {fmtMargin(r.adjustedMargin)}
-                  {r.blanketApplied && <span className="ml-0.5" style={{ color: "var(--app-text-very-muted)" }}>§</span>}
-                  {r.competitivenessAdjusted && !r.blanketApplied && (
-                    <span className="ml-0.5" style={{ color: "var(--app-text-very-muted)" }}>‡</span>
-                  )}
+                  {r.imputed && <span className="ml-0.5" style={{ color: "var(--app-text-very-muted)" }}>⊘</span>}
                 </td>
-                <td className="px-2 py-1.5 tabular-nums font-mono" style={{ color: r.IF !== 1 ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
-                  {r.IF.toFixed(3)}
-                </td>
-                <td className="px-2 py-1.5 tabular-nums font-mono" style={{ color: r.CQ !== 1 ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
-                  {r.CQ.toFixed(3)}
+                <td className="px-2 py-1.5 tabular-nums font-semibold" style={{ color: r.incumbencyPts != null && r.incumbencyPts !== 0 ? marginColor(r.incumbencyPts) : "var(--app-text-very-muted)" }}>
+                  {r.incumbencyPts != null && r.incumbencyPts !== 0 ? `${r.incumbencyPts > 0 ? "+" : ""}${r.incumbencyPts.toFixed(0)}` : "—"}
                 </td>
                 <td className="px-2 py-1.5 tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
-                  {r.WA !== 0 ? `${r.WA > 0 ? "+" : ""}${r.WA.toFixed(2)}` : "—"}
+                  {r.envPts != null && r.envPts !== 0 ? `${r.envPts > 0 ? "+" : ""}${r.envPts.toFixed(2)}` : "—"}
                 </td>
                 <td className="px-2 py-1.5 tabular-nums font-bold" style={{ color: marginColor(r.NM) }}>
                   {fmtMargin(r.NM)}
@@ -109,9 +102,8 @@ export default function CountyTplCard({
         className="mt-2 flex flex-wrap gap-x-4 gap-y-0.5 text-[9px]"
         style={{ color: "var(--app-text-very-muted)" }}
       >
-        {hasBlend && <span>‡ Raw margin ≥ 50 pts, blended 60% prior contested / 40% presidential.</span>}
-        {hasBlanket && <span>§ Blanket ×0.8 applied (no valid prior data).</span>}
-        <span>House rows are countywide district aggregates — no single incumbent, so IF/CQ default to neutral.</span>
+        {hasImputed && <span>⊘ Ineligible race (missing major-party nominee or same-party general) — imputed from the county&apos;s nearest presidential result, half weight.</span>}
+        <span>House rows are countywide district aggregates — no single incumbent, so no incumbency strip. Env = −β* × E(year) using the parent state&apos;s elasticity.</span>
       </div>
 
       <div className="mt-6">
@@ -139,7 +131,7 @@ export default function CountyTplCard({
             </tr>
           </thead>
           <tbody>
-            {yearAggregations.map((agg, i) => (
+            {yearAggregations.filter((a) => a.racesPresent.length > 0).map((agg, i) => (
               <tr key={agg.year} style={{ background: i % 2 === 0 ? "transparent" : "var(--app-bg)" }}>
                 <td className="px-2 py-1.5 font-semibold tabular-nums" style={{ color: "var(--app-text-primary)" }}>
                   {agg.year}

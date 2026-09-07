@@ -961,6 +961,9 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
           <ZoomableGroup
             center={mapView.center}
             zoom={mapView.zoom}
+            // Default view sits at zoom 1; allow a little headroom below it so the whole
+            // country can breathe, but not enough to shrink the map into the frame.
+            minZoom={0.8}
             filterZoomEvent={filterMapZoomEvent}
             onMoveStart={() => { gestureRef.current = null; }}
             onMove={({ x, y, zoom: k }: { x: number; y: number; zoom: number }) => {
@@ -1164,7 +1167,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
         {/* ── Desktop overlay toolbar (top-left) ── */}
         <div
           className="hidden md:flex absolute z-10 items-center gap-2.5 rounded-xl px-3 py-2 backdrop-blur-sm"
-          style={{ top: 0, left: "1rem", background: t.legendBg, border: `1px solid ${t.border}` }}
+          style={{ top: 0, left: 0, background: t.legendBg, border: `1px solid ${t.border}` }}
         >
           <div className="flex items-center gap-1.5">
             <span className="text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>Geo</span>
@@ -1249,7 +1252,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
         {/* ── Desktop chyron (top-right) ── */}
         <div
           className="hidden md:block absolute z-10 rounded-xl px-3 py-2 text-right backdrop-blur-sm"
-          style={{ top: 0, right: "1rem", background: t.legendBg, border: `1px solid ${t.border}` }}
+          style={{ top: 0, right: 0, background: t.legendBg, border: `1px solid ${t.border}` }}
         >
           <div className="text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>National margin</div>
           <div style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "1.5rem", lineHeight: 1.15, color: stats.margin <= 0 ? t.demText : t.repText }}>

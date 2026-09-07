@@ -4,8 +4,10 @@ import { computeProjectedMargin, calculateStateTpl } from "@/lib/tplCompute";
 import BackButton from "@/components/BackButton";
 import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import StateMapSection from "@/components/StateMapSection";
 import StateLegCompositionBox from "@/components/StateLegCompositionBox";
+import { latestChamberSeats } from "@/lib/stateLegSeats";
 import StatewideVoteHistoryPanel, { type StatewideHistoryEntry } from "@/components/StatewideVoteHistoryPanel";
 import CandidateLink from "@/components/CandidateLink";
 
@@ -137,6 +139,27 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   };
 }
 
+// One chamber's split, rendered the way the Senate stat already renders one: a lone number when
+// the other major party holds nothing, and a separate bucket for anyone in neither caucus.
+function SeatSplit({ dem, rep, oth = 0 }: { dem: number; rep: number; oth?: number }) {
+  const dash = <span style={{ color: "var(--app-text-very-muted)", fontWeight: 500 }}>–</span>;
+  return (
+    <div className="text-2xl font-extrabold tabular-nums">
+      {dem > 0 && <span style={{ color: "var(--party-dem)" }}>{dem}D</span>}
+      {dem > 0 && rep > 0 && dash}
+      {rep > 0 && <span style={{ color: "var(--party-rep)" }}>{rep}R</span>}
+      {oth > 0 && (
+        <>
+          {(dem > 0 || rep > 0) && (
+            <span className="mx-1.5" style={{ color: "var(--app-text-very-muted)", fontWeight: 500 }}>·</span>
+          )}
+          <span style={{ color: "var(--app-text-muted)" }}>{oth}I</span>
+        </>
+      )}
+    </div>
+  );
+}
+
 export default async function StateDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const state = statesData.find((s) => s.id === id);
@@ -217,6 +240,13 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
   const senateDems = [senSeat1, senSeat2].filter((p) => p === "D").length;
   const senateReps = [senSeat1, senSeat2].filter((p) => p === "R").length;
   const senateInds = [senSeat1, senSeat2].filter((p) => p === "I").length;
+
+  // State legislature current composition — the latest cycle on record in the same composition
+  // history the box below draws. Nebraska's one chamber is filed under House (its Senate rows
+  // carry no seats), so the unicameral case resolves to a single cell on its own.
+  const isUnicameralState = state.abbr === "NE";
+  const stateHouseSeats = latestChamberSeats(stateLegEntries, "House");
+  const stateSenateSeats = isUnicameralState ? null : latestChamberSeats(stateLegSenateEntries, "Senate");
 
   // Governor current incumbent party
   const govParty: "D" | "R" | "I" | null = governorRace ? raceParty(governorRace) : (governorNoEl?.party ?? null);
@@ -365,8 +395,19 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
                   {state.name}
                 </h1>
               </div>
+              {/* Mirrors the legislature page's own subtitle row, which links back here the same
+                  way — the two pages are each other's only route in. Kept as inline flow rather
+                  than a flex row so the separator never strands at the head of a wrapped line. */}
               <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
-                {totalRaces2026} race{totalRaces2026 !== 1 ? "s" : ""} on ballot in {electionYear} · General {GENERAL_ELECTION}
+                {totalRaces2026} race{totalRaces2026 !== 1 ? "s" : ""} on ballot in {electionYear}
+                <span style={{ color: "var(--app-text-very-muted)" }}> · </span>
+                <Link
+                  href={`/states/${state.id}/legislature`}
+                  className="whitespace-nowrap hover:underline"
+                  style={{ color: "var(--app-text-primary)", fontWeight: 600 }}
+                >
+                  View {state.name} legislature
+                </Link>
               </div>
             </div>
 
@@ -424,7 +465,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
               </div>
             </div>
 
-            <div>
+            <div className={stateHouseSeats ? "pr-8" : undefined} style={stateHouseSeats ? { borderRight: "1px solid var(--app-border)" } : undefined}>
               {govParty ? (
                 <div
                   className="text-2xl font-extrabold"
@@ -439,6 +480,24 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
                 Governor
               </div>
             </div>
+
+            {stateHouseSeats && (
+              <div className={stateSenateSeats ? "pr-8" : undefined} style={stateSenateSeats ? { borderRight: "1px solid var(--app-border)" } : undefined}>
+                <SeatSplit dem={stateHouseSeats.dem} rep={stateHouseSeats.rep} oth={stateHouseSeats.oth} />
+                <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+                  {isUnicameralState ? "Legislature" : "State House"}
+                </div>
+              </div>
+            )}
+
+            {stateSenateSeats && (
+              <div>
+                <SeatSplit dem={stateSenateSeats.dem} rep={stateSenateSeats.rep} oth={stateSenateSeats.oth} />
+                <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+                  State Senate
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -461,6 +520,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
                     houseEntries={stateLegEntries}
                     senateEntries={stateLegSenateEntries}
                     isUnicameral={state.abbr === "NE"}
+                    visibleCards={4}
                   />
                 </div>
               )}
