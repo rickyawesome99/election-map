@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import ForecastMap from "@/components/ForecastMap";
 
-const SUB_TABS = ["state", "district", "table", "districtTable"] as const;
+const SUB_TABS = ["state", "district", "table", "districtTable", "war"] as const;
 type ModelSubTab = (typeof SUB_TABS)[number];
 
 function parseSubTab(segments: string[] | undefined): ModelSubTab | undefined {

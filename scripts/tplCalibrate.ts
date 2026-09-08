@@ -38,6 +38,7 @@ interface PanelRow {
   imputed: boolean;
   srcYear: number | null;
   incumbent: string;
+  ffGapPct: number | null; // (R$ − D$)/(R$ + D$) × 100, where both receipts known
 }
 
 interface Theta {
@@ -48,6 +49,8 @@ interface Theta {
   sparseK: number;
   typeW: Record<string, number>;
   inc: Record<string, number>;
+  ffK: number;
+  ffCap: number;
 }
 
 const CURRENT: Theta = {
@@ -58,6 +61,8 @@ const CURRENT: Theta = {
   sparseK: G.SPARSE_YEAR_K,
   typeW: { ...G.RACE_TYPE_WEIGHTS },
   inc: { H: 3, S: 2, G: 7 },
+  ffK: 0.02, // adopted 2026-09-07 (FF sweep: clean P-target optimum; S/H targets are
+  ffCap: 2,  // biased against strips — see the IF note below; forward model shares these)
 };
 
 // Weight-vector candidates all respect the decided floors: P.20 H.10 S.05 L.03 G.02
@@ -98,6 +103,9 @@ for (const { abbr, name } of statesData) {
       imputed: r.imputed,
       srcYear: r.imputedSourceYear,
       incumbent: r.incumbent,
+      ffGapPct: r.ffDetail && r.ffDetail.dem + r.ffDetail.rep > 0
+        ? ((r.ffDetail.rep - r.ffDetail.dem) / (r.ffDetail.rep + r.ffDetail.dem)) * 100
+        : null,
     });
   }
   const firstRaw = (t: string, y: number) => races.find((r) => r.raceType === t && r.year === y)?.rawMargin ?? null;
@@ -117,12 +125,24 @@ function incPts(t: Theta, raceType: string, incumbent: string): number {
   return 0;
 }
 
+// Strip of the fundraising advantage present in the margin (0 when unknown).
+function ffPts(t: Theta, gapPct: number | null): number {
+  if (gapPct == null) return 0;
+  return -Math.max(-t.ffCap, Math.min(t.ffCap, gapPct * t.ffK));
+}
+
 interface Fit { E: Record<number, number>; beta: Record<string, number>; lean: Record<string, number>; }
 
 function fitWindow(t: Theta, maxYear: number): Fit {
-  const rows = panel
-    .filter((r) => !r.imputed && r.value != null && r.year <= maxYear)
-    .map((r) => ({ abbr: r.abbr, year: r.year, adj: r.value! + incPts(t, r.type, r.incumbent), w: 1 }));
+  const src = panel.filter((r) => !r.imputed && r.value != null && r.year <= maxYear);
+  const typeCount: Record<string, number> = {};
+  for (const r of src) { const k = `${r.abbr}:${r.year}:${r.type}`; typeCount[k] = (typeCount[k] ?? 0) + 1; }
+  const rows = src.map((r) => ({
+    abbr: r.abbr, year: r.year,
+    adj: r.value! + incPts(t, r.type, r.incumbent) + ffPts(t, r.ffGapPct),
+    base: (t.typeW[r.type] ?? 0.05) / typeCount[`${r.abbr}:${r.year}:${r.type}`],
+    w: 1,
+  }));
   const years = [...new Set(rows.map((r) => r.year))].sort();
   const E: Record<number, number> = Object.fromEntries(years.map((y) => [y, 0]));
   const lean: Record<string, number> = {};
@@ -137,7 +157,7 @@ function fitWindow(t: Theta, maxYear: number): Fit {
   for (let it = 0; it < G.FIT_ITERATIONS; it += 1) {
     for (const r of rows) {
       const res = r.adj - lean[r.abbr] - beta[r.abbr] * E[r.year];
-      r.w = Math.abs(res) <= t.huberC ? 1 : t.huberC / Math.abs(res);
+      r.w = r.base * (Math.abs(res) <= t.huberC ? 1 : t.huberC / Math.abs(res));
     }
     for (const y of years) {
       let num = 0, den = 0;
@@ -173,7 +193,7 @@ function stateTpl(t: Theta, fit: Fit, abbr: string, maxYear: number): number | n
         const envYear = r.imputed ? r.srcYear ?? r.year : r.year;
         const nm = r.imputed
           ? r.value! - beta * (fit.E[envYear] ?? 0)
-          : r.value! + incPts(t, r.type, r.incumbent) - beta * (fit.E[year] ?? 0);
+          : r.value! + incPts(t, r.type, r.incumbent) + ffPts(t, r.ffGapPct) - beta * (fit.E[year] ?? 0);
         const resid = lean != null ? nm - lean : 0;
         const huber = Math.abs(resid) <= t.huberC ? 1 : t.huberC / Math.abs(resid);
         const w = (r.imputed ? t.impW : 1) * huber;

@@ -103,17 +103,20 @@ export default function CountyLeanTrendChart({ yearAggregations }: { yearAggrega
   }, []);
 
   // WRS defaults to 0 even for a year with no races present at all - only trust it
-  // when racesPresent is non-empty (see lib/tplCompute.ts's aggregateYears), otherwise
-  // treat the year as a genuine gap rather than a fabricated EVEN point.
+  // when racesPresent is non-empty (see lib/tplCompute.ts's aggregateYears). A year with
+  // no races isn't a gap in the trend, it's a cycle this state simply doesn't vote in
+  // (odd years outside VA/NJ/KY/MS etc.), so drop it from the axis entirely rather than
+  // plotting a hole that breaks the line into disconnected dots.
   const chartPoints: ChartPoint[] = yearAggregations
     .slice()
     .sort((a, b) => a.year - b.year)
+    .filter((agg) => agg.racesPresent.length > 0)
     .map((agg) => ({
       year: String(agg.year),
-      wrs: agg.racesPresent.length > 0 ? parseFloat(agg.WRS.toFixed(1)) : null,
+      wrs: parseFloat(agg.WRS.toFixed(1)),
     }));
 
-  if (chartPoints.every((p) => p.wrs == null)) return null;
+  if (chartPoints.length === 0) return null;
 
   const vals = chartPoints.map((p) => p.wrs).filter((v): v is number => v != null);
   const axisConfig = niceAxisConfig(vals);

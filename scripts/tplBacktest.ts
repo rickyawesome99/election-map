@@ -23,6 +23,14 @@
 //   P.60/S.10/H.20/L.07/G.03; all other knobs kept — see tplModelData comments):
 //       P 3.02/3.31/3.42/1.93 · S 4.81/4.98/5.00/4.95 · H 3.04/2.76/2.83/2.83
 //     — Senate NM now beats presidential-only outright (4.81 vs 4.95).
+//   Phase 5 (FEC fundraising strip, k=0.02 cap=2 calibrated on the clean P target):
+//       P 2.90/3.30/3.42/1.93 · S 4.82/5.01/5.03/4.95 · H 3.21/2.75/2.82/2.83
+//     — P improves 3.02 → 2.90; H's rise is the target-bias cost (raw H targets
+//       contain the fundraising effect being stripped), halved from k=0.06's 3.50.
+//   Post-Phase-6 fit fixes (LA jungle-fragmentation eligibility + type-weighted fit
+//   rows, so a state-year's House rows share the H weight instead of outvoting its
+//   presidential row): P 2.49/2.96/3.18/1.93 · S 4.88/4.99/5.01/4.95 · H 2.93/2.50/2.69/2.81
+//     — the largest single improvement of the rebuild; fit leans now agree with TPLs.
 // The 0.10 tolerance catches any real formula change, which moves these by far more.
 
 import { calculateStateModel, getTplFit, type ComputedRace } from "@/lib/tplCompute";
@@ -136,10 +144,10 @@ function buildRows(): StateRow[] {
 // ── default mode: holdout + ablation vs baselines ────────────────────────────
 
 const EXPECTED: Record<string, Record<string, number>> = {
-  // reference values (post-Phase-4 calibration, measured in-harness): target → predictor → MAE
-  p24: { nmHold: 3.02, adjHold: 3.31, rawHold: 3.42, pres2020: 1.93 },
-  s24: { nmHold: 4.81, adjHold: 4.98, rawHold: 5.0, pres2020: 4.95 },
-  h24: { nmHold: 3.04, adjHold: 2.76, rawHold: 2.83, pres2020: 2.83 },
+  // reference values (post-Phase-6 fit fixes, measured in-harness): target → predictor → MAE
+  p24: { nmHold: 2.49, adjHold: 2.96, rawHold: 3.18, pres2020: 1.93 },
+  s24: { nmHold: 4.88, adjHold: 4.99, rawHold: 5.01, pres2020: 4.95 },
+  h24: { nmHold: 2.93, adjHold: 2.5, rawHold: 2.69, pres2020: 2.81 },
 };
 
 function runHoldout(): void {

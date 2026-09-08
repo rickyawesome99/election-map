@@ -54,12 +54,8 @@ const YEAR_DECAY = 0.75;
 const ANCHOR_YEAR = 2026;
 
 export const TPL_GLOBAL_CONSTANTS = {
-  // District TPL only — the presidential-only district model keeps the pre-rebuild
-  // pipeline until Phase 6 of the TPL rebuild. Not used by the state/county model.
-  k_pif: 0.005, // District IF scaling: IF = 1 + presMargin × k_pif × partySign
-  CQ_MARGIN_CAP: 15, // Max margin the district CQ term scales against
-  DISTRICT_YEAR_WEIGHTS: { 2024: 0.70, 2020: 0.20, 2016: 0.10 } as Record<number, number>,
-  DISTRICT_YEARS: [2016, 2020, 2024] as number[],
+  // (The pre-rebuild district constants — k_pif, CQ_MARGIN_CAP, DISTRICT_YEAR_WEIGHTS —
+  // were retired in Phase 6: districts now share the state pipeline and constants.)
   // Base race type weights before redistribution among present types.
   // Phase 4 calibration (2026-09-07, scripts/tplCalibrate.ts, leakage-free
   // two-round holdout): adopted the knee of the P-weight curve. The objective

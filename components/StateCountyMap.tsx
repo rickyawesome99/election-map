@@ -45,10 +45,16 @@ type County = {
   tpl: number | null;
 };
 
-function formatTpl(tpl: number | null): string {
-  if (tpl == null) return "TPL unavailable";
-  if (Math.abs(tpl) < 0.05) return "TPL: EVEN";
-  return `TPL: ${tpl > 0 ? "R" : "D"}+${Math.abs(tpl).toFixed(1)}`;
+function formatTplValue(tpl: number | null): string {
+  if (tpl == null) return "unavailable";
+  if (Math.abs(tpl) < 0.05) return "EVEN";
+  return `${tpl > 0 ? "R" : "D"}+${Math.abs(tpl).toFixed(1)}`;
+}
+
+function tplColor(tpl: number | null): string {
+  if (tpl == null) return "var(--app-text-very-muted)";
+  if (Math.abs(tpl) < 0.05) return "var(--app-text-primary)";
+  return tpl > 0 ? "var(--party-rep)" : "var(--party-dem)";
 }
 
 type CountyGeometry = {
@@ -158,8 +164,14 @@ export default function StateCountyMap({
                 {stateName} · {hovered.fips}
               </div>
               {showTpl && (
-                <div className="text-[10px] mt-0.5 font-semibold" style={{ color: hovered.tpl == null ? "var(--app-text-very-muted)" : "var(--app-text-primary)" }}>
-                  {formatTpl(hovered.tpl)}
+                <div className="text-[10px] mt-0.5 font-semibold" style={{ color: "var(--app-text-primary)" }}>
+                  {hovered.tpl == null ? (
+                    <span style={{ color: "var(--app-text-very-muted)" }}>TPL unavailable</span>
+                  ) : (
+                    <>
+                      TPL: <span style={{ color: tplColor(hovered.tpl) }}>{formatTplValue(hovered.tpl)}</span>
+                    </>
+                  )}
                 </div>
               )}
             </div>
@@ -265,7 +277,15 @@ export default function StateCountyMap({
                 {stateName} · FIPS {selected.fips}
               </div>
               <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-                {showTpl ? formatTpl(selected.tpl) : "Election data coming soon"}
+                {!showTpl ? (
+                  "Election data coming soon"
+                ) : selected.tpl == null ? (
+                  "TPL unavailable"
+                ) : (
+                  <>
+                    TPL: <span className="font-semibold" style={{ color: tplColor(selected.tpl) }}>{formatTplValue(selected.tpl)}</span>
+                  </>
+                )}
               </div>
               <a
                 href={`/historical/${selected.fips}`}

@@ -7,13 +7,13 @@ import { getRaceColor } from "@/lib/colorScale";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { NationalLandMask, NationalLandMaskDefinition } from "./StateLandMask";
-import { houseData } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
 import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
 import {
   calculateStateModel,
   calculateDistrictModel,
+  computeWarTable,
   getTplFit,
   INCUMBENT_ADVANTAGE,
 } from "@/lib/tplCompute";
@@ -92,54 +92,14 @@ const FORMULA_PANELS: Record<string, { title: string; rows: { label: string; for
       { label: "Interpretation", formula: "Additive and symmetric: the same points are stripped whether the incumbent won or lost, and added back when forecasting." },
     ],
   },
-  "District CQ ↗": {
-    title: "District Candidate Quality Factor (CQ = WQ × LQ)",
-    rows: [
-      { label: "Formula", formula: "CQ = WQ × LQ" },
-      { label: "WQ — Winning Candidate Quality", formula: "Elite=0.75 · Strong=0.88 · Generic=1.00 · Weak=1.12 · Sacrificial=1.25" },
-      { label: "LQ — Losing Candidate Quality", formula: "Elite=1.25 · Strong=1.12 · Generic=1.00 · Weak=0.88 · Sacrificial=0.75" },
-      { label: "Default", formula: "Generic / Generic  →  CQ = 1.00  →  CQ term in CF = 0" },
-      { label: "2024 (Strong/Weak)", formula: "WQ=0.88 × LQ=0.75 = 0.66" },
-    ],
-  },
-  "District NM ↗": {
-    title: "District Neutralized Margin (NM)",
-    rows: [
-      { label: "Formula", formula: "NM = Raw + CF" },
-      { label: "Expanded", formula: "NM = Raw + Raw×(IF−1) + cappedRaw×(CQ−1)" },
-      { label: "No WA", formula: "Wave adjustment is omitted — three-cycle presidential averaging dampens wave effects" },
-      { label: "No FF", formula: "Fundraising factor is omitted — no per-district campaign finance data" },
-      { label: "Purpose", formula: "What the presidential result would look like with generic candidates and neutral presidential approval" },
-    ],
-  },
-  "District IF ↗": {
-    title: "District Incumbency Factor (IF) — Presidential Approval",
-    rows: [
-      { label: "Formula", formula: "IF = 1 + presMargin × k_pif × partySign" },
-      { label: "presMargin", formula: "Incumbent president's net approval (approval − disapproval) on election day" },
-      { label: "partySign", formula: "+1 if D incumbent president · −1 if R incumbent president" },
-      { label: "k_pif", formula: "0.005  (scaling constant, pending calibration)" },
-      { label: "2016 (Obama D, presMargin = +7.8)", formula: "IF = 1 + 7.8 × 0.005 × (+1) = 1.039" },
-      { label: "2020 (Trump R, presMargin = −6.6)", formula: "IF = 1 + (−6.6) × 0.005 × (−1) = 1.033" },
-      { label: "2024 (Biden D, presMargin = −15.2)", formula: "IF = 1 + (−15.2) × 0.005 × (+1) = 0.924" },
-    ],
-  },
-  "District CF ↗": {
-    title: "District Candidate Factor (CF)",
-    rows: [
-      { label: "Formula", formula: "CF = Raw × (IF − 1) + cappedRaw × (CQ − 1)" },
-      { label: "cappedRaw", formula: "sign(Raw) × min(|Raw|, 15)" },
-      { label: "Default (Generic/Generic)", formula: "CQ = 1.00  →  CF = Raw × (IF − 1)" },
-      { label: "Example: 2024 (IF=0.924, CQ=0.66, Raw=R+13)", formula: "13×(−0.076) + 13×(−0.34) = −0.99 + −4.42 = −5.41" },
-      { label: "Example: 2024 blowout (Raw=R+22, cap=15)", formula: "22×(−0.076) + 15×(−0.34) = −1.67 + −5.10 = −6.77" },
-    ],
-  },
   "FF ↗": {
     title: "Fundraising Points (FF)",
     rows: [
-      { label: "Planned formula", formula: "FF pts = clamp( k × moneyGapPct, ±cap )   — additive, small, capped" },
-      { label: "Today", formula: "0 for every race — awaiting the FEC receipts pipeline (Phase 5 of the rebuild)" },
-      { label: "Scope", formula: "Federal races first (House, Senate); excluded for President; Governor/Leg deferred" },
+      { label: "Advantage in margin", formula: "clamp( k × moneyGapPct, ±cap )    moneyGapPct = (R$ − D$) ⁄ (R$ + D$) × 100" },
+      { label: "Strip", formula: "FF pts = −(that advantage) — subtracted like IF and ENV" },
+      { label: "Data", formula: "FEC candidate-committee total receipts per cycle, 2016–2026 (data/fundraisingData.ts)" },
+      { label: "Coverage", formula: "House & Senate where both candidates' receipts are known. President excluded by design; Governor pending state-level filings; imputed rows carry no FF." },
+      { label: "Endogeneity", formula: "Money follows lean, so k stays small and the cap tight — both harness-calibrated.", note: "$0 means the candidate never crossed the FEC's $5k filing threshold." },
     ],
   },
   "ENV ↗": {
@@ -585,7 +545,7 @@ function TplDistrictMap({
 
 // ── Component ────────────────────────────────────────────────────────────────
 
-export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state" | "district" | "table" | "districtTable" }) {
+export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state" | "district" | "table" | "districtTable" | "war" }) {
   const router = useRouter();
   // Deterministic on both server and client (no `window` check) to avoid a hydration mismatch;
   // corrected to the real `modelState` URL param via useLayoutEffect below, before first paint.
@@ -608,8 +568,6 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
   const [adjustedPopupIdx, setAdjustedPopupIdx] = useState<number | null>(null);
   // Step 1 is a single table; a non-null index opens that race's calculation in a modal.
   const [detailRaceIdx, setDetailRaceIdx] = useState<number | null>(null);
-  const [districtStepMode, setDistrictStepMode] = useState<"table" | "detail">("table");
-  const [districtStepSelectedIdx, setDistrictStepSelectedIdx] = useState(0);
   const [allStatesSort, setAllStatesSort] = useState<"centeredTpl" | "tpl" | "absCenteredTpl" | "name">("centeredTpl");
   const [allStatesSortDir, setAllStatesSortDir] = useState<"asc" | "desc">("asc");
 
@@ -628,8 +586,13 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
   }, [detailRaceIdx, adjustedPopupIdx, formulaOpen]);
 
   // Sub-tab state
-  const [activeSubTab, setActiveSubTab] = useState<"state" | "district" | "table" | "districtTable">(initialSubTab ?? "state");
+  const [activeSubTab, setActiveSubTab] = useState<"state" | "district" | "table" | "districtTable" | "war">(initialSubTab ?? "state");
   const [returnSubTab, setReturnSubTab] = useState<"table" | "districtTable" | null>(null);
+  const [warOffice, setWarOffice] = useState<"All" | "P" | "S" | "G" | "H">("All");
+  const [warParty, setWarParty] = useState<"All" | "D" | "R" | "I">("All");
+  const [warYear, setWarYear] = useState<number | "All">("All");
+  const [warQuery, setWarQuery] = useState("");
+  const [warDir, setWarDir] = useState<"top" | "bottom" | "race">("top");
 
   // District TPL state
   const initialDistrictId = typeof window !== "undefined"
@@ -738,6 +701,43 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
     [selectedDistrictId]
   );
 
+  const warRows = useMemo(() => (activeSubTab === "war" ? computeWarTable().map((row, id) => ({ ...row, id })) : []), [activeSubTab]);
+  const filteredWarRows = useMemo(() => {
+    const terms = warQuery.trim().toLowerCase().split(/[\s,]+/).filter(Boolean);
+    const stateAbbreviations = new Set(statesData.map((state) => state.abbr.toLowerCase()));
+    const rows = warRows.filter((r) =>
+      (warOffice === "All" || r.office === warOffice) &&
+      (warParty === "All" || (warParty === "I" ? r.party !== "D" && r.party !== "R" : r.party === warParty)) &&
+      (warYear === "All" || r.year === warYear) &&
+      terms.every((term) => {
+        if (/^\d{4}$/.test(term)) return String(r.year) === term;
+        if (stateAbbreviations.has(term)) return r.state.toLowerCase() === term;
+        return r.candidate.toLowerCase().includes(term) ||
+          r.race.toLowerCase().includes(term) ||
+          RACE_TYPE_LABELS[r.office].toLowerCase().includes(term);
+      })
+    );
+    if (warDir === "race") {
+      return rows.sort((a, b) => b.year - a.year ||
+        a.state.localeCompare(b.state) ||
+        a.office.localeCompare(b.office) ||
+        a.race.localeCompare(b.race, undefined, { numeric: true }) ||
+        a.candidate.localeCompare(b.candidate));
+    }
+    return warDir === "top" ? rows : [...rows].reverse();
+  }, [warRows, warOffice, warParty, warYear, warQuery, warDir]);
+
+  // Keep the final race together when the display limit falls inside a group.
+  let warDisplayLimit = 150;
+  if (warDir === "race") {
+    const last = filteredWarRows[warDisplayLimit - 1];
+    while (last && filteredWarRows[warDisplayLimit] &&
+      filteredWarRows[warDisplayLimit].year === last.year &&
+      filteredWarRows[warDisplayLimit].state === last.state &&
+      filteredWarRows[warDisplayLimit].office === last.office &&
+      filteredWarRows[warDisplayLimit].race === last.race) warDisplayLimit++;
+  }
+
   const nationalDistrictTpl = useMemo(() => {
     const districtScores = Object.entries(districtPresidentialData).map(([id, d]) => ({
       id,
@@ -794,19 +794,19 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
     }
   }
 
-  function handleSubTabClick(tab: "state" | "district" | "table" | "districtTable") {
+  function handleSubTabClick(tab: "state" | "district" | "table" | "districtTable" | "war") {
     router.push(`/model/${tab}`);
     setReturnSubTab(null);
     setActiveSubTab(tab);
   }
 
-  const SUB_TAB_LABELS = { state: "State TPL", district: "District TPL", table: "Table", districtTable: "District Table" } as const;
+  const SUB_TAB_LABELS = { state: "State TPL", district: "District TPL", table: "Table", districtTable: "District Table", war: "WAR" } as const;
 
   function renderSubTabRow() {
     return (
       <div className="flex h-5 justify-center">
         <div className="flex items-center leading-5" style={{ gap: "14px" }}>
-          {(["state", "district", "table", "districtTable"] as const).flatMap((tab, i) => {
+          {(["state", "district", "table", "districtTable", "war"] as const).flatMap((tab, i) => {
             const isActive = activeSubTab === tab;
             const nodes = [];
             if (i > 0) {
@@ -846,8 +846,6 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
     setSelectedDistrictStateAbbr(state);
     setSelectedDistrictId(id);
     setActiveSubTab("district");
-    setDistrictStepMode("table");
-    setDistrictStepSelectedIdx(0);
     window.scrollTo({ top: 0, behavior: "instant" });
   }
 
@@ -855,9 +853,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
     if (returnSubTab) window.history.back();
   }
 
-  const selectedDistrictHouseHref = selectedDistrictData
-    ? houseData.find((race) => race.name === selectedDistrictData.code)?.name.toLowerCase()
-    : null;
+  const districtTableGridColumns = "grid grid-cols-[minmax(8rem,1.2fr)_3.5rem_5rem_5.5rem_4.5rem_4.5rem_5rem_5.25rem_3.5rem]";
   const raceTableGridColumns = "grid grid-cols-[minmax(8.5rem,1.4fr)_3.5rem_5rem_6.25rem_5.5rem_4.5rem_4.5rem_5rem_5.25rem_3.5rem]";
 
   return (
@@ -1093,7 +1089,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                     ["Adjusted ↗", "Adjusted Margin — equals Raw for eligible races. ⊘ = ineligible race (missing major-party nominee or same-party general): value imputed from the seat's nearest presidential result and given half weight in aggregation."],
                     ["Incumbent", "Incumbent party marker or Open. State Legislature = -."],
                     ["IF ↗", "Incumbency points, additive and party-signed: H 3 · S 2 · G 7 stripped in the incumbent party's direction. 0 for P, Leg, open seats and imputed rows."],
-                    ["FF ↗", "Additive fundraising points. 0 for every race pending FEC data (Phase 5)."],
+                    ["FF ↗", "Fundraising strip = −clamp(k × money-gap%, ±cap), from FEC receipts. Applies where both candidates' receipts are known; Governor pending state filings."],
                     ["ENV ↗", "Environment adjustment = −β* × E(year). Strips the fitted national environment; imputed rows strip their source year's E."],
                     ["NM ↗", "Adjusted × (IF × CQ) + FF pts + WA."],
                     ["Wt", "Weight in aggregation: ×0.5 if imputed, × Huber factor min(1, 7 ⁄ |NM − fitted lean|) — crossover outliers count less."],
@@ -1532,8 +1528,6 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                     setSelectedDistrictStateAbbr(abbr);
                     const first = DISTRICTS_BY_STATE[abbr]?.[0]?.id ?? "";
                     setSelectedDistrictId(first);
-                    setDistrictStepMode("table");
-                    setDistrictStepSelectedIdx(0);
                   }}
                   className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0 cursor-pointer"
                   style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "none" }}
@@ -1545,11 +1539,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                 </select>
                 <select
                   value={selectedDistrictId}
-                  onChange={(e) => {
-                    setSelectedDistrictId(e.target.value);
-                    setDistrictStepMode("table");
-                    setDistrictStepSelectedIdx(0);
-                  }}
+                  onChange={(e) => setSelectedDistrictId(e.target.value)}
                   className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0 cursor-pointer"
                   style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "none" }}
                 >
@@ -1565,7 +1555,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                 {selectedDistrictData?.code ?? "—"}
               </h1>
               <div className="mt-2 text-sm" style={{ color: "var(--app-text-muted)" }}>
-                {selectedDistrictData?.stateName ?? selectedDistrictStateAbbr} · presidential results 2016&ndash;2024, reaggregated to 2026 boundaries
+                {selectedDistrictData?.stateName ?? selectedDistrictCalc.stateAbbr} · presidential results 2016&ndash;2024 on current boundaries + House races from the current boundary era · same additive pipeline as State TPL
               </div>
             </div>
 
@@ -1587,21 +1577,25 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
 
           <div className="mt-7 pt-4 flex flex-wrap gap-x-8 gap-y-4" style={{ borderTop: "1px solid var(--app-border)" }}>
             <div className="pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-              <div className="text-xl font-extrabold" style={{ color: "var(--app-text-primary)" }}>2016&ndash;2024</div>
+              <div className="text-xl font-extrabold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{selectedDistrictCalc.eraStart}&ndash;now</div>
               <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
-                Years Covered
+                Boundary Era
               </div>
             </div>
             <div className="pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-              <div className="text-xl font-extrabold" style={{ color: "var(--app-text-primary)" }}>Presidential Only</div>
+              <div className="text-xl font-extrabold" style={{ color: "var(--app-text-primary)" }}>
+                {selectedDistrictCalc.races.some((r) => r.raceType === "H") ? "P + H" : "P only"}
+              </div>
               <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
                 Race Types
               </div>
             </div>
             <div className="pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-              <div className="text-xl font-extrabold" style={{ color: "var(--app-text-very-muted)" }}>Not Modeled</div>
+              <div className="text-xl font-extrabold tabular-nums" style={{ color: "var(--app-text-primary)" }}>
+                {(tplFit.beta[selectedDistrictCalc.stateAbbr]?.shrunk ?? 1).toFixed(2)}
+              </div>
               <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
-                Wave Adjustment
+                Elasticity β* (state)
               </div>
             </div>
             <div>
@@ -1612,9 +1606,11 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
             </div>
           </div>
 
-          <div className="mt-3 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-            Three-cycle presidential averaging dampens wave effects, so WA and FF are omitted from the district model.
-          </div>
+          {!selectedDistrictCalc.races.some((r) => r.raceType === "H") && (
+            <div className="mt-3 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+              This district was redrawn for {selectedDistrictCalc.eraStart} — no House results exist on its current boundaries yet, so the lean is presidential-only until new-map races are held.
+            </div>
+          )}
         </div>
       </div>
 
@@ -1623,297 +1619,112 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
         <h3 className="text-sm font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-muted)" }}>
           Step 1 — Per-Race Calculations
         </h3>
-        <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
-          {districtStepMode === "table" ? (
-            <>NM = Raw Margin + Candidate Factor. IF encodes presidential approval; CQ encodes candidate quality. Click any race to open its full calculation in Race Detail.</>
-          ) : (
-            <>Pick a presidential cycle to audit its full step-by-step math — Raw Margin → Candidate Factor → Neutralized Margin.</>
-          )}
+        <p className="text-xs mb-3 leading-4" style={{ color: "var(--app-text-muted)" }}>
+          NM = Raw + IF pts + FF pts + ENV pts — the same strips as the state model, using the parent state&apos;s β*. Ineligible House races are skipped (the presidential rows already carry the district&apos;s lean).
         </p>
-
-        <div className="flex items-end gap-4 mb-3" style={{ borderBottom: "1px solid var(--app-border)" }}>
-          {(["table", "detail"] as const).map((mode) => {
-            const active = districtStepMode === mode;
-            return (
-              <button
-                key={mode}
-                onClick={() => setDistrictStepMode(mode)}
-                className="whitespace-nowrap pb-2 text-xs font-semibold transition-colors"
-                style={
-                  active
-                    ? { color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)", marginBottom: "-1px" }
-                    : { color: "var(--app-text-muted)", borderBottom: "2px solid transparent", marginBottom: "-1px" }
-                }
-              >
-                {mode === "table" ? "Table" : "Race Detail"}
-              </button>
-            );
-          })}
-        </div>
-
-        {/* Per-race table */}
-        {districtStepMode === "table" && (
-        <div>
-          <div className="overflow-x-auto">
-            <table className="w-full min-w-[560px] text-xs">
-              <thead>
-                <tr style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
-                  {[
-                    ["Race", "Race type and name"],
-                    ["Year", "Election year"],
-                    ["Raw", "Presidential two-party margin (R-positive). Reaggregated to 2026 boundaries."],
-                    ["IF ↗", "Presidential approval IF = 1 + presMargin × k_pif × partySign. Click for details."],
-                    ["WQ / LQ", "Winning and losing candidate quality tiers"],
-                    ["CQ ↗", "Candidate Quality Factor = WQ × LQ. Click for details."],
-                    ["CF ↗", "Candidate Factor = Raw×(IF−1) + cappedRaw×(CQ−1). Click for full breakdown."],
-                    ["NM ↗", "Neutralized Margin = Raw + CF. Click for details."],
-                  ].map(([label, tip], ci) => {
-                    const panelKey = label === "CF ↗" ? "District CF ↗" : label === "IF ↗" ? "District IF ↗" : label === "CQ ↗" ? "District CQ ↗" : label === "NM ↗" ? "District NM ↗" : null;
-                    return (
+        <div className="mb-3" style={{ borderBottom: "1px solid var(--app-border)" }} />
+        <div className="overflow-x-auto">
+          <table className="w-full min-w-[880px] text-xs" style={{ display: "block" }}>
+            <thead className="block" style={{ background: "var(--app-bg)", boxShadow: "inset 0 -2px 0 var(--app-text-primary)" }}>
+              <tr className={districtTableGridColumns}>
+                {[
+                  ["Race", "Race type and name"],
+                  ["Year", "Election year"],
+                  ["Raw", "Raw margin = repPct − demPct (two-party for presidential rows)"],
+                  ["Incumbent", "Incumbent party, House rows only"],
+                  ["IF ↗", "Additive incumbency points — House rows only"],
+                  ["FF ↗", "Fundraising strip from FEC receipts — House rows only"],
+                  ["ENV ↗", "Environment adjustment = −β*(state) × E(year)"],
+                  ["NM ↗", "Neutralized Margin = Raw + IF + FF + ENV"],
+                  ["Wt", "Aggregation weight: Huber factor vs the district's own aggregate"],
+                ].map(([label, tip]) => {
+                  const isClickable = label in FORMULA_PANELS;
+                  return (
                     <th
                       key={label}
-                      title={panelKey ? `Click to see ${label} formula` : tip}
-                      className={`px-2 py-2 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap text-left ${panelKey ? "cursor-pointer select-none" : ""}`}
-                      style={{ color: ci === 7 ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
-                      onClick={panelKey ? () => setFormulaOpen(panelKey) : undefined}
+                      title={tip}
+                      className={`px-1.5 py-2 text-left text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap ${isClickable ? "cursor-pointer select-none" : ""}`}
+                      style={{ color: "var(--app-text-muted)" }}
+                      onClick={isClickable ? () => setFormulaOpen(label) : undefined}
                     >
-                      {label}{panelKey && <span className="ml-0.5 opacity-50">ⓘ</span>}
+                      {label}
                     </th>
-                    );
-                  })}
-                </tr>
-              </thead>
-              <tbody>
-                {selectedDistrictCalc.races.map((r, i) => (
-                  <tr
-                    key={r.year}
-                    onClick={() => { setDistrictStepSelectedIdx(i); setDistrictStepMode("detail"); }}
-                    className="cursor-pointer hover:bg-[var(--app-tab-bg)] transition-colors"
-                    style={{ borderBottom: "1px solid var(--app-border)" }}
-                  >
-                    <td className="px-2 py-2 whitespace-nowrap" style={{ color: "var(--app-text-primary)" }}>
-                      {selectedDistrictHouseHref ? (
-                        <a
-                          href={`/house/${selectedDistrictHouseHref}`}
-                          onClick={(e) => e.stopPropagation()}
-                          className="font-semibold hover:underline"
-                          style={{ color: "var(--app-text-primary)" }}
-                        >
-                          President
-                        </a>
-                      ) : (
-                        <span className="font-semibold">President</span>
-                      )}
-                    </td>
-                    <td className="px-2 py-2 tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.year}</td>
-                    <td className="px-2 py-2 text-left tabular-nums font-semibold" style={{ color: marginColor(r.rawMargin) }}>
-                      {fmtMargin(r.rawMargin)}
-                    </td>
-                    <td className="px-2 py-2 text-left tabular-nums font-mono" style={{ color: r.IF !== 1 ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
-                      {r.IF.toFixed(3)}
-                    </td>
-                    <td className="px-2 py-2 text-[11px]" style={{ color: "var(--app-text-muted)" }}>
-                      {`${r.wqTier} / ${r.lqTier}`}
-                    </td>
-                    <td className="px-2 py-2 text-left tabular-nums font-mono" style={{ color: r.CQ !== 1 ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
-                      {r.CQ.toFixed(4)}
-                    </td>
-                    <td className="px-2 py-2 text-left tabular-nums font-semibold" style={{ color: r.candidateFactor_pts !== 0 ? marginColor(r.candidateFactor_pts) : "var(--app-text-very-muted)" }}>
-                      {r.candidateFactor_pts !== 0 ? (r.candidateFactor_pts > 0 ? "+" : "") + r.candidateFactor_pts.toFixed(2) : "—"}
-                    </td>
-                    <td className="px-2 py-2 text-left tabular-nums font-bold" style={{ color: marginColor(r.NM), background: marginBg(r.NM) }}>
-                      {fmtMargin(r.NM)}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-        )}
-
-        {/* Race Detail */}
-        {districtStepMode === "detail" && (() => {
-          const idx = Math.min(districtStepSelectedIdx, Math.max(selectedDistrictCalc.races.length - 1, 0));
-          const r = selectedDistrictCalc.races[idx];
-          return (
-            <div className="grid grid-cols-1 md:grid-cols-[19rem_1fr] gap-6 items-start">
-              {/* Race rail */}
-              <div className="overflow-x-auto max-h-[30rem] overflow-y-auto">
-                <table className="w-full text-xs">
-                  <thead>
-                    <tr style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
-                      <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-left" style={{ color: "var(--app-text-muted)" }}>Race</th>
-                      <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>Year</th>
-                      <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-right tabular-nums" style={{ color: "var(--app-text-primary)" }}>NM</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {selectedDistrictCalc.races.map((race, i) => (
-                      <tr
-                        key={race.year}
-                        onClick={() => setDistrictStepSelectedIdx(i)}
-                        className="cursor-pointer hover:bg-[var(--app-tab-bg)] transition-colors"
-                        style={{
-                          borderBottom: "1px solid var(--app-border)",
-                          background: i === idx ? "var(--app-tab-bg)" : "transparent",
-                          boxShadow: i === idx ? "inset 3px 0 0 var(--app-text-primary)" : "none",
-                        }}
-                      >
-                        <td className="px-2 py-2 whitespace-nowrap" style={{ color: "var(--app-text-primary)" }}>
-                          <span className="inline-flex items-center gap-1.5">
-                            <span className="px-1.5 py-0.5 rounded text-[9px] font-bold font-mono" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
-                              P
-                            </span>
-                            <span className="font-semibold">President</span>
-                          </span>
-                        </td>
-                        <td className="px-2 py-2 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{race.year}</td>
-                        <td className="px-2 py-2 text-right tabular-nums font-bold" style={{ color: marginColor(race.NM) }}>{fmtMargin(race.NM)}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-
-              {/* Detail panel */}
-              {r ? (
-                <div>
-                  <div className="flex flex-wrap items-end justify-between gap-4 pb-3.5" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
-                    <div>
-                      <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>
-                        President · {r.year}
-                      </div>
-                      <div style={{ fontFamily: "var(--font-serif)", fontSize: "1.4rem", fontWeight: 700, marginTop: "0.25rem", color: "var(--app-text-primary)" }}>
-                        {selectedDistrictData?.code ?? "—"}
-                      </div>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>Neutralized Margin</div>
-                      <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.75rem", fontWeight: 700, color: marginColor(r.NM) }}>{fmtMargin(r.NM)}</div>
-                    </div>
-                  </div>
-
-                  <table className="w-full text-xs mt-1">
-                    <thead>
-                      <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-                        <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-left" style={{ color: "var(--app-text-muted)" }}>Step</th>
-                        <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-left" style={{ color: "var(--app-text-muted)" }}>Detail</th>
-                        <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-right" style={{ color: "var(--app-text-muted)" }}>Factor</th>
-                        <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-right" style={{ color: "var(--app-text-muted)" }}>Contribution</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-                        <td className="px-2 py-2 font-semibold" style={{ color: "var(--app-text-primary)" }}>Raw Margin</td>
-                        <td className="px-2 py-2" style={{ color: "var(--app-text-muted)" }}>Presidential two-party margin, reaggregated to 2026 boundaries</td>
-                        <td className="px-2 py-2 text-right" style={{ color: "var(--app-text-very-muted)" }}>—</td>
-                        <td className="px-2 py-2 text-right tabular-nums font-semibold" style={{ color: marginColor(r.rawMargin) }}>{fmtMargin(r.rawMargin)}</td>
-                      </tr>
-                      <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-                        <td
-                          className="px-2 py-2 font-semibold cursor-pointer select-none"
-                          style={{ color: "var(--app-text-primary)" }}
-                          onClick={() => setFormulaOpen("District CF ↗")}
-                        >
-                          Candidate Factor<span className="ml-1 opacity-50">ⓘ</span>
-                        </td>
-                        <td className="px-2 py-2" style={{ color: "var(--app-text-muted)" }}>{r.wqTier} / {r.lqTier} candidate quality</td>
-                        <td className="px-2 py-2 text-right tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
-                          <span className="cursor-pointer hover:underline" onClick={() => setFormulaOpen("District IF ↗")}>IF {r.IF.toFixed(3)}</span>
-                          {" × "}
-                          <span className="cursor-pointer hover:underline" onClick={() => setFormulaOpen("District CQ ↗")}>CQ {r.CQ.toFixed(3)}</span>
-                        </td>
-                        <td className="px-2 py-2 text-right tabular-nums font-semibold" style={{ color: r.candidateFactor_pts !== 0 ? marginColor(r.candidateFactor_pts) : "var(--app-text-very-muted)" }}>
-                          {r.candidateFactor_pts !== 0 ? (r.candidateFactor_pts > 0 ? "+" : "") + r.candidateFactor_pts.toFixed(2) : "—"}
-                        </td>
-                      </tr>
-                      <tr style={{ borderTop: "2px solid var(--app-text-primary)" }}>
-                        <td colSpan={3} className="px-2 py-2.5 font-bold" style={{ color: "var(--app-text-primary)" }}>Neutralized Margin</td>
-                        <td className="px-2 py-2.5 text-right tabular-nums font-bold" style={{ color: marginColor(r.NM), background: marginBg(r.NM) }}>{fmtMargin(r.NM)}</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              ) : (
-                <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>No races available.</div>
-              )}
-            </div>
-          );
-        })()}
-      </div>
-
-      {/* ── Step 2: Year aggregation ── */}
-      <div className="mb-7">
-        <h3 className="text-sm font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-muted)" }}>
-          Step 2 — Year Aggregation
-        </h3>
-        <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
-          Weighted average of presidential NMs. Year weights: 2024 = 70% · 2020 = 20% · 2016 = 10%.
-        </p>
-
-        <div className="overflow-x-auto">
-          <table className="w-full min-w-[420px] text-xs">
-            <thead>
-              <tr style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
-                {(["Year", "Weight", "President NM", "Weighted"] as const).map((label) => (
-                  <th
-                    key={label}
-                    className={`px-3 py-2.5 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap ${label === "Year" ? "text-left" : "text-right"}`}
-                    style={{ color: label === "Weighted" ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
-                  >
-                    {label}
-                  </th>
-                ))}
+                  );
+                })}
               </tr>
             </thead>
-            <tbody>
-              {selectedDistrictCalc.races.slice().reverse().map((r, i, arr) => {
-                const w = G.DISTRICT_YEAR_WEIGHTS[r.year] ?? 0;
-                const weighted = w * r.NM;
-                return (
-                  <tr key={r.year} style={{ borderBottom: i < arr.length - 1 ? "1px solid var(--app-border)" : undefined }}>
-                    <td className="px-3 py-2.5 font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{r.year}</td>
-                    <td className="px-3 py-2 text-right tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>{(w * 100).toFixed(0)}%</td>
-                    <td className="px-3 py-2 text-right tabular-nums font-semibold" style={{ color: marginColor(r.NM) }}>{fmtMargin(r.NM)}</td>
-                    <td className="px-3 py-2.5 text-right tabular-nums font-bold" style={{ color: marginColor(weighted), background: marginBg(weighted) }}>{fmtMargin(weighted)}</td>
-                  </tr>
-                );
-              })}
+            <tbody className="block">
+              {selectedDistrictCalc.races.map((r, i) => (
+                <tr key={`${r.race}-${r.year}-${i}`} className={`${districtTableGridColumns} h-9`} style={{ borderBottom: "1px solid var(--app-border)" }}>
+                  <td className="px-1.5 py-2 whitespace-nowrap font-semibold overflow-hidden text-ellipsis" style={{ color: "var(--app-text-primary)" }}>
+                    <span className="mr-1.5 px-1 py-0.5 rounded text-[9px] font-bold font-mono" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>{r.raceType}</span>
+                    {r.race}
+                  </td>
+                  <td className="px-1.5 py-2 tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.year}</td>
+                  <td className="px-1.5 py-2 text-left tabular-nums font-semibold" style={{ color: marginColor(r.rawMargin) }}>{fmtMargin(r.rawMargin)}</td>
+                  <td className="px-1.5 py-2 whitespace-nowrap" style={{ color: "var(--app-text-muted)" }}>
+                    {r.raceType === "P" ? "-" : r.incumbent === "R" && r.rawMargin != null ? (r.rawMargin > 0 ? "R won" : "R lost") : r.incumbent === "D" && r.rawMargin != null ? (r.rawMargin < 0 ? "D won" : "D lost") : r.incumbent}
+                  </td>
+                  <td className="px-1.5 py-2 text-left tabular-nums font-semibold" style={{ color: r.incumbencyPts != null && r.incumbencyPts !== 0 ? marginColor(r.incumbencyPts) : "var(--app-text-very-muted)" }}>
+                    {r.incumbencyPts != null && r.incumbencyPts !== 0 ? (r.incumbencyPts > 0 ? "+" : "") + r.incumbencyPts.toFixed(0) : "—"}
+                  </td>
+                  <td className="px-1.5 py-2 text-left tabular-nums font-mono" style={{ color: r.FF_pts != null && r.FF_pts !== 0 ? marginColor(r.FF_pts) : "var(--app-text-very-muted)" }}>
+                    {r.FF_pts != null && r.FF_pts !== 0 ? (r.FF_pts > 0 ? "+" : "") + r.FF_pts.toFixed(2) : "—"}
+                  </td>
+                  <td className="px-1.5 py-2 text-left tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
+                    {r.envPts != null && r.envPts !== 0 ? (r.envPts > 0 ? "+" : "") + r.envPts.toFixed(2) : "—"}
+                  </td>
+                  <td className="px-1.5 py-2 text-left tabular-nums font-bold" style={{ color: marginColor(r.NM), background: marginBg(r.NM) }}>{fmtMargin(r.NM)}</td>
+                  <td className="px-1.5 py-2 text-left tabular-nums font-mono" style={{ color: r.aggWeight < 0.995 ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
+                    {r.aggWeight >= 0.995 ? "1.0" : r.aggWeight.toFixed(2)}
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
       </div>
 
-      {/* ── Step 3: District TPL card ── */}
+      {/* ── Step 2: Year aggregation ── */}
       <div className="mb-7">
         <h3 className="text-sm font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-muted)" }}>
-          Step 3 — Final Calculation
+          Step 2 — Year-Level Aggregation
         </h3>
-        <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
-          District TPL = weighted average of presidential NMs. Centered District TPL subtracts the 435-district median.
+        <p className="text-xs mb-3 leading-4" style={{ color: "var(--app-text-muted)" }}>
+          Type weights (P {G.RACE_TYPE_WEIGHTS.P} · H {G.RACE_TYPE_WEIGHTS.H}) redistributed among types present; year weight = recency decay × coverage.
         </p>
+        <div className="flex flex-wrap gap-x-8 gap-y-4 mb-2" style={{ borderTop: "1px solid var(--app-border)", paddingTop: "1.1rem" }}>
+          {selectedDistrictCalc.yearAggregations.filter((a) => a.racesPresent.length > 0).slice().reverse().map((agg, i, arr) => (
+            <div key={agg.year} className={i < arr.length - 1 ? "pr-8" : undefined} style={i < arr.length - 1 ? { borderRight: "1px solid var(--app-border)" } : undefined}>
+              <div className="text-xs font-bold" style={{ color: "var(--app-text-muted)" }}>{agg.year}</div>
+              <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.5rem", fontWeight: 700, marginTop: "0.2rem", color: marginColor(agg.WRS) }}>
+                {fmtMargin(agg.WRS)}
+              </div>
+              <div className="text-[10px] mt-1.5" style={{ color: "var(--app-text-very-muted)" }}>{(agg.finalWeight * 100).toFixed(0)}% of TPL</div>
+            </div>
+          ))}
+        </div>
+      </div>
 
+      {/* ── Step 3: Final ── */}
+      <div className="mb-7">
+        <h3 className="text-sm font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-muted)" }}>
+          Step 3 — District TPL
+        </h3>
         <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}>
-          {/* Formula */}
           <div className="px-5 py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
             <p className="text-[10px] font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--app-text-very-muted)" }}>Formula</p>
             <div className="rounded-lg px-4 py-3 font-mono text-xs leading-relaxed" style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}>
               <div style={{ color: "var(--app-text-muted)" }}>District TPL =</div>
-              {selectedDistrictCalc.races.slice().reverse().map((r, i) => {
-                const w = G.DISTRICT_YEAR_WEIGHTS[r.year] ?? 0;
-                return (
-                  <div key={r.year} className="ml-4">
-                    <span style={{ color: "var(--app-text-very-muted)" }}>{i === 0 ? "  " : "+ "}</span>
-                    <span style={{ color: "var(--app-text-primary)" }}>{w.toFixed(2)}</span>
-                    <span style={{ color: "var(--app-text-very-muted)" }}> × </span>
-                    <span style={{ color: r.NM >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
-                      {r.NM >= 0 ? "R" : "D"}+{Math.abs(r.NM).toFixed(2)}
-                    </span>
-                    <span style={{ color: "var(--app-text-very-muted)" }}> ({r.year})</span>
-                  </div>
-                );
-              })}
+              {selectedDistrictCalc.yearAggregations.filter((a) => a.racesPresent.length > 0).map((agg, i) => (
+                <div key={agg.year} className="ml-4">
+                  <span style={{ color: "var(--app-text-very-muted)" }}>{i === 0 ? "  " : "+ "}</span>
+                  <span style={{ color: "var(--app-text-primary)" }}>{agg.finalWeight.toFixed(2)}</span>
+                  <span style={{ color: "var(--app-text-very-muted)" }}> × </span>
+                  <span style={{ color: marginColor(agg.WRS) }}>{fmtMargin(agg.WRS)}</span>
+                  <span style={{ color: "var(--app-text-very-muted)" }}> ({agg.year})</span>
+                </div>
+              ))}
               <div className="mt-2" style={{ color: "var(--app-text-muted)" }}>Centered District TPL =</div>
               <div className="ml-4">
                 <span style={{ color: marginColor(selectedDistrictCalc.tpl) }}>{fmtMargin(selectedDistrictCalc.tpl)}</span>
@@ -1925,7 +1736,6 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
             </div>
           </div>
 
-          {/* Result */}
           <div className="flex flex-col sm:flex-row gap-0">
             <div className="grid grid-cols-2 sm:w-[28rem] sm:shrink-0" style={{ borderRight: "1px solid var(--app-border)" }}>
               <div
@@ -1957,8 +1767,8 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                 The median district TPL is {fmtMargin(nationalDistrictTpl.medianTpl)}. Centered District TPL subtracts this common baseline so the median district sits at EVEN.
               </div>
               <div style={{ color: "var(--app-text-very-muted)" }}>
-                <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>No WA / FF: </span>
-                Three-cycle presidential averaging already dampens wave effects, so the district model omits Wave Adjustment and Fundraising Factor entirely — NM = Raw Margin + Candidate Factor.
+                <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>Same scale as State TPL: </span>
+                Districts now share the state pipeline — additive IF/FF strips, the fitted environment E(y) with the parent state&apos;s β*, calibrated decay and Huber weighting — so House forecasts and Senate/Governor forecasts read off one consistent lean scale.
               </div>
             </div>
           </div>
@@ -2127,6 +1937,101 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
       )}
 
       {/* ── S modal ── */}
+      {/* ── WAR ── */}
+      {activeSubTab === "war" && (
+        <div className="flex flex-col gap-4 pt-2">
+          {renderSubTabRow()}
+          <div>
+            <h2 className="text-lg font-bold" style={{ color: "var(--app-text-primary)" }}>Wins Above Replacement</h2>
+            <p className="text-xs mt-1 max-w-3xl leading-5" style={{ color: "var(--app-text-muted)" }}>
+              How much better (or worse) each candidate ran than a generic nominee of their party: WAR = actual margin − expected margin, where
+              expected = lean + β* × E(year) + incumbency + fundraising. Senate, Governor and President races score against the state&apos;s
+              Huber-fitted lean; House races against their district&apos;s TPL; unopposed-class races (Osborn, McMullin) against their imputed
+              presidential baseline.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2 text-xs">
+            <select aria-label="Filter by race" value={warOffice} onChange={(e) => setWarOffice(e.target.value as typeof warOffice)}
+              className="font-bold px-2.5 py-1 rounded-full cursor-pointer" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "none" }}>
+              {(["All", "P", "S", "G", "H"] as const).map((o) => <option key={o} value={o}>{o === "All" ? "All Offices" : { P: "President", S: "Senate", G: "Governor", H: "House" }[o]}</option>)}
+            </select>
+            <select aria-label="Filter by party" value={warParty} onChange={(e) => setWarParty(e.target.value as typeof warParty)}
+              className="font-bold px-2.5 py-1 rounded-full cursor-pointer" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "none" }}>
+              {(["All", "D", "R", "I"] as const).map((o) => <option key={o} value={o}>{o === "All" ? "All Parties" : o}</option>)}
+            </select>
+            <select aria-label="Filter by year" value={String(warYear)} onChange={(e) => setWarYear(e.target.value === "All" ? "All" : Number(e.target.value))}
+              className="font-bold px-2.5 py-1 rounded-full cursor-pointer" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "none" }}>
+              <option value="All">All Years</option>
+              {[2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025].map((y) => <option key={y} value={y}>{y}</option>)}
+            </select>
+            <select
+              aria-label="Sort performances"
+              value={warDir}
+              onChange={(e) => setWarDir(e.target.value as typeof warDir)}
+              className="font-bold px-2.5 py-1 rounded-full cursor-pointer"
+              style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "none" }}
+            >
+              <option value="top">▲ Overperformers</option>
+              <option value="bottom">▼ Underperformers</option>
+              <option value="race">Race (newest year first)</option>
+            </select>
+            <input
+              value={warQuery}
+              onChange={(e) => setWarQuery(e.target.value)}
+              aria-label="Search performances"
+              placeholder="Search year, state, race, candidate…"
+              className="px-2.5 py-1 rounded-full text-xs"
+              style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "none", minWidth: "14rem" }}
+            />
+            <span style={{ color: "var(--app-text-very-muted)" }}>
+              {filteredWarRows.length.toLocaleString()} candidate-performances{filteredWarRows.length > warDisplayLimit ? ` · showing ${warDisplayLimit}` : ""}
+            </span>
+          </div>
+
+          <div className="overflow-x-auto" style={{ borderTop: "2px solid var(--app-text-primary)" }}>
+            <table className="w-full min-w-[760px] text-xs">
+              <thead>
+                <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
+                  {["#", "Candidate", "Party", "Race", "Year", "Actual", "Expected", "WAR"].map((h) => (
+                    <th key={h} className="px-2 py-2 text-left text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap" style={{ color: h === "WAR" ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>{h}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {filteredWarRows.slice(0, warDisplayLimit).map((r, i) => {
+                  const partyColor = r.party === "R" ? "var(--party-rep)" : r.party === "D" ? "var(--party-dem)" : "var(--app-text-primary)";
+                  return (
+                    <tr key={r.id} style={{ borderBottom: "1px solid var(--app-border)", background: i % 2 === 1 ? "var(--app-bg)" : "transparent" }}>
+                      <td className="px-2 py-2 tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>{i + 1}</td>
+                      <td className="px-2 py-2 font-semibold whitespace-nowrap" style={{ color: "var(--app-text-primary)" }}>{r.candidate}</td>
+                      <td className="px-2 py-2 font-bold" style={{ color: partyColor }}>{r.party}</td>
+                      <td className="px-2 py-2 whitespace-nowrap" style={{ color: "var(--app-text-muted)" }}>{r.race} · {r.state}</td>
+                      <td className="px-2 py-2 tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.year}</td>
+                      <td className="px-2 py-2 tabular-nums font-semibold" style={{ color: marginColor(r.actual) }}>{fmtMargin(r.actual)}</td>
+                      <td className="px-2 py-2 tabular-nums" style={{ color: marginColor(r.expected) }}>{fmtMargin(r.expected)}</td>
+                      <td className="px-2 py-2 tabular-nums font-bold" style={{ color: r.war >= 0 ? partyColor : "var(--app-text-very-muted)" }}>
+                        {r.war >= 0 ? "+" : "−"}{Math.abs(r.war).toFixed(1)}
+                      </td>
+                    </tr>
+                  );
+                })}
+                {filteredWarRows.length === 0 && (
+                  <tr><td colSpan={8} className="px-4 py-6 text-center" style={{ color: "var(--app-text-very-muted)" }}>No performances match the filters.</td></tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+
+          <div className="flex flex-wrap gap-x-5 gap-y-0.5 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>
+            <span>WAR is signed toward the candidate: +5 = ran 5 pts better than a generic nominee of their party.</span>
+            <span>House WAR uses the district&apos;s TPL as baseline, which the candidate&apos;s own races feed — large House WARs are slightly understated.</span>
+            <span>Where FEC receipts are known, WAR reads as quality beyond fundraising.</span>
+            <span>State Legislature races carry no candidate and are excluded.</span>
+          </div>
+        </div>
+      )}
+
       {formulaOpen === "BETA" && (() => {
         const b = tplFit.beta[selectedAbbr];
         return (
@@ -2298,8 +2203,12 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                       >
                         Fundraising<span className="ml-1 opacity-50">ⓘ</span>
                       </td>
-                      <td className="px-1.5 py-2" style={{ color: "var(--app-text-muted)" }}>Additive pts — awaiting FEC data (Phase 5)</td>
-                      <td className="px-1.5 py-2 text-right tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>0</td>
+                      <td className="px-1.5 py-2" style={{ color: "var(--app-text-muted)" }}>
+                        {r.ffDetail
+                          ? `R $${(r.ffDetail.rep / 1e6).toFixed(2)}M vs D $${(r.ffDetail.dem / 1e6).toFixed(2)}M raised`
+                          : "No receipts data (President, imputed, or pending)"}
+                      </td>
+                      <td className="px-1.5 py-2 text-right" style={{ color: "var(--app-text-very-muted)" }}>—</td>
                       <td className="px-1.5 py-2 text-right tabular-nums font-semibold" style={{ color: r.FF_pts != null && r.FF_pts !== 0 ? marginColor(r.FF_pts) : "var(--app-text-very-muted)" }}>
                         {r.FF_pts != null && r.FF_pts !== 0 ? (r.FF_pts > 0 ? "+" : "") + r.FF_pts.toFixed(2) : "—"}
                       </td>

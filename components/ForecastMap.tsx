@@ -160,7 +160,7 @@ function persistRaceType(type: RaceType) {
 
 type TopLevelTab = "forecast" | "overview" | "states" | "historical" | "model" | "district-finder";
 
-type ModelSubTab = "state" | "district" | "table" | "districtTable";
+type ModelSubTab = "state" | "district" | "table" | "districtTable" | "war";
 
 export default function ForecastMap({ activeTab, raceType = "senate", modelSubTab }: { activeTab: TopLevelTab; raceType?: RaceType; modelSubTab?: ModelSubTab }) {
   const router = useRouter();

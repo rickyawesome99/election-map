@@ -43,6 +43,8 @@ the slot party):
 | `no-dem` / `no-rep` | Major party absent (nobody, or a minor-party/independent stand-in) | KY-05 unopposed; Osborn NE-Sen 2024; McMullin UT-Sen 2022 |
 | `same-party` | Top-two / runoff same-party general | CA-34 2022 (D–D); LA jungle runoffs |
 
+| `fragmented` | Louisiana jungle general decided without a runoff — the stored top-two margins understate the split party fields (Kennedy 2022: 61.6% vs the top Dem's 17.9% while the Dem vote split three ways). Detected as `demPct + repPct < 90` in a `JUNGLE_STATES` state. | LA Sen 2020/2022, Gov 2023, most LA House |
+
 `ALIGNED_INDEPENDENTS` (Bernie Sanders, Angus King) count as Democratic
 nominees; every other independent does not. There is no margin threshold — the
 old `|margin| ≥ 50` rule, 60/40 blend, and ×0.8 blanket are gone.
@@ -71,10 +73,25 @@ Senate/House targets are raw margins that still contain incumbency, so that
 objective structurally rewards under-stripping. Proper estimation is via
 retirement natural experiments (same seat, incumbent leaves vs. stays) — open.
 
-## Step 3 — Fundraising (FF pts) — placeholder
+## Step 3 — Fundraising (FF pts)
 
-0 for every race pending the FEC receipts pipeline (Phase 5). Planned shape:
-`clamp(k × moneyGapPct, ±cap)`, federal races only, excluded for President.
+Live for House and Senate (Phase 5). The advantage present in the margin is
+`clamp(FF_K × moneyGapPct, ±FF_MAX)` with `moneyGapPct = (R$ − D$)/(R$ + D$) × 100`;
+the strip is its negative. **FF_K = 0.02, FF_MAX = 2** — calibrated on the clean
+President target (S/H targets contain the fundraising effect and are biased
+against any strip); larger k overcorrects because the receipts gap partly
+double-counts incumbency, which is already stripped separately.
+
+- Data: FEC candidate-committee total receipts per cycle, 2016–2026, from the
+  bulk `webl`/`weball` files name-matched to each race's general-election
+  candidates (`data-entry/fundraising_2016_2026.csv` →
+  `scripts/generate-fundraising-data.py` → `data/fundraisingData.ts`).
+- Applies only where **both** candidates' receipts are known ($0 = candidate
+  never crossed the FEC's $5k filing threshold; null = unknown → FF skipped).
+- Excluded for President by design; 0 for imputed rows; Governor pending —
+  gubernatorial money is filed with the states, not the FEC.
+- The forward projection (`computeProjectedMargin`) adds the same
+  `computeFundraisingPts` for 2026 races using live receipts.
 
 ## Step 4 — Environment & elasticity (`getTplFit()` in `lib/tplCompute.ts`)
 
@@ -82,8 +99,11 @@ Huber-weighted alternating least squares over the full eligible panel
 (~2,600 races, 50 states, 2016–2025 including odd years):
 
 ```
-adj = margin + IF pts  ≈  lean(state) + β(state)·E(year)
-w   = min(1, HUBER_C / |residual|)                       HUBER_C = 7
+adj = margin + IF pts + FF pts  ≈  lean(state) + β(state)·E(year)
+row base weight = RACE_TYPE_WEIGHTS[type] / count(state, year, type)
+   — a state-year's House rows share the House weight instead of outvoting its
+     presidential row, so the fitted lean answers the same question TPL does
+w   = base × min(1, HUBER_C / |residual|)                HUBER_C = 7
 E(y) additionally shrunk by n/(n + SPARSE_YEAR_K)         SPARSE_YEAR_K = 4
 β*  = clamp(1 + BETA_SHRINK·(β̂ − 1), BETA_MIN, BETA_MAX)  = clamp(1 + 0.5(β̂−1), 0.5, 1.6)
 ```
@@ -152,13 +172,33 @@ reference (post-Phase-4): 2024-President NM MAE 3.02 (pres-only baseline 1.93),
 
 ## Scope notes
 
-- **District TPL** is still the pre-rebuild presidential-only pipeline
-  (2024 .70 / 2020 .20 / 2016 .10, k_pif/CQ machinery) — Phase 6 reconciles it.
+- **District TPL** (Phase 6) shares the state pipeline: district presidential
+  results (2016/2020/2024, current boundaries) + the district's House races from
+  its current boundary era only (a district redrawn for 2026 is presidential-only
+  until new-map results exist), with additive IF/FF strips, the parent state's
+  β*, the calibrated decay/coverage aggregation and two-pass Huber weighting.
+  Ineligible House races are skipped (the presidential rows already carry the
+  district's lean). Same scale as State TPL — House and Senate/Governor
+  forecasts read off one consistent lean (review F9 closed).
 - **County TPL** shares the state pipeline (parent state's β*, county-level
   imputation, no state-lean Huber weighting).
 - **State Legislature** aggregates still contain unopposed-seat skew; per-
   district imputation via the pres-by-leg-district data is future work.
-- **Remaining phases**: 5 — FEC fundraising; 6 — WAR layer + District TPL.
+- **Governor fundraising** is the open Phase 5 item (state filings; OpenSecrets/
+  Transparency USA cover it only partially and only via rendered pages).
+- **WAR** (Phase 6): `computeWarTable()` — WAR = actual − expected, signed
+  toward the candidate, where expected = lean + β*·E(year) + incumbency +
+  fundraising advantages. Anchors: S/G/P races vs the state's Huber-fitted lean;
+  House vs the district TPL (slight self-influence, noted in the UI); Osborn-
+  class races vs their imputed presidential baseline; same-party generals are
+  excluded (no R-vs-D margin to sign). Surfaced as the model page's WAR sub-tab
+  (`/model/war`): filterable, sortable leaderboard.
+- **Eligibility refinement** (Phase 6): a slot polling < 5% while the opponent
+  clears 90% is a write-in-scale candidacy, not a ballot nominee (AZ-08/AZ-09
+  2022) — treated as unfilled.
+- The rebuild's six phases are complete. Open items: governor fundraising gaps
+  (92 races), state-leg per-district imputation, IF retirement-experiment
+  estimation, strict refit-per-holdout in the tracking harness.
 
 ## Key files
 
@@ -168,6 +208,9 @@ reference (post-Phase-4): 2024-President NM MAE 3.02 (pres-only baseline 1.93),
 | `data/raceEligibility.ts` | Eligibility classification + aligned-independent crosswalk |
 | `data/tplModelData.ts` | Constants (calibrated values + provenance comments); superseded SWSC code kept for reference |
 | `data/forecastData.ts` | Raw margins, party overrides, incumbent flags |
+| `data/fundraisingData.ts` | Generated FEC receipts per race (edit the CSV, not this) |
+| `data-entry/fundraising_2016_2026.csv` | Fundraising source of truth + match notes |
+| `scripts/generate-fundraising-data.py` | CSV → fundraisingData.ts generator |
 | `scripts/tplBacktest.ts` | Tracking harness (holdout / matrix / fit modes) |
 | `scripts/tplCalibrate.ts` | Leakage-free calibration search (adopted values in header) |
 | `components/TplModelPage.tsx` | Ledger UI (β* popup, E strip, Wt column) |

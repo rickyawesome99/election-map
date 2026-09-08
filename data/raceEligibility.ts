@@ -11,7 +11,7 @@
 // structural lean from the nearest presidential result and gives the row
 // IMPUTED_RACE_WEIGHT in aggregation (see lib/tplCompute.ts).
 
-export type RaceEligibility = "eligible" | "no-dem" | "no-rep" | "same-party";
+export type RaceEligibility = "eligible" | "no-dem" | "no-rep" | "same-party" | "fragmented";
 
 // Independents who function as a major party's nominee: they caucus with the
 // party and the party fields no candidate against them, so their slot margin
@@ -47,9 +47,34 @@ function effectiveParty(
   return override;
 }
 
-export function classifyEligibility(r: EligibilityInput): RaceEligibility {
-  const demFilled = (r.demPct ?? 0) > 0;
-  const repFilled = (r.repPct ?? 0) > 0;
+// States whose general election is an all-party jungle: a race decided without a
+// runoff records the TOP candidate of each party, not the party totals, so the
+// margin is inflated by field fragmentation (Kennedy 2022: 61.6% vs the top Dem's
+// 17.9% while the Dem vote split three ways). Detected by the top-two candidates
+// holding under 90% of the vote — a 1v1 runoff (or a jungle that reduced to one
+// candidate per party) sums to ~100% and stays eligible. Scoped to Louisiana so
+// genuine third-party surges elsewhere (UT-P 2016, ME/AK) are not misflagged.
+const JUNGLE_STATES = new Set(["LA"]);
+
+export function classifyEligibility(r: EligibilityInput, stateAbbr?: string): RaceEligibility {
+  if (
+    stateAbbr != null &&
+    JUNGLE_STATES.has(stateAbbr) &&
+    (r.demPct ?? 0) > 0 &&
+    (r.repPct ?? 0) > 0 &&
+    (r.demPct ?? 0) + (r.repPct ?? 0) < 90
+  ) {
+    return "fragmented";
+  }
+  return classifyBallot(r);
+}
+
+function classifyBallot(r: EligibilityInput): RaceEligibility {
+  // A slot polling under 5% while the opponent clears 90% is a write-in-scale
+  // candidacy, not a ballot nominee (e.g. AZ-08/AZ-09 2022) — treat as unfilled.
+  const writeInScale = (own?: number, other?: number) => (own ?? 0) < 5 && (other ?? 0) >= 90;
+  const demFilled = (r.demPct ?? 0) > 0 && !writeInScale(r.demPct, r.repPct);
+  const repFilled = (r.repPct ?? 0) > 0 && !writeInScale(r.repPct, r.demPct);
   const demSlotParty = demFilled ? effectiveParty(r.demParty, r.demCandidate, "D") : null;
   const repSlotParty = repFilled ? effectiveParty(r.repParty, r.repCandidate, "R") : null;
   const hasDem = demSlotParty === "D" || repSlotParty === "D";
@@ -65,4 +90,5 @@ export const ELIGIBILITY_LABELS: Record<Exclude<RaceEligibility, "eligible">, st
   "no-dem": "No Democratic nominee",
   "no-rep": "No Republican nominee",
   "same-party": "Same-party general",
+  fragmented: "Jungle general — party fields fragmented",
 };
