@@ -9,7 +9,7 @@ test("WAR search and dropdowns keep displayed rows in sync", async ({ page }) =>
   const search = page.getByRole("textbox", { name: "Search performances" });
   const rows = page.locator("tbody tr");
   const checkColumn = async (column: number, pattern: RegExp) => {
-    await expect(rows.first().locator("td")).toHaveCount(8);
+    await expect(rows.first().locator("td")).toHaveCount(10);
     for (const value of await rows.locator(`td:nth-child(${column})`).allTextContents()) {
       expect(value).toMatch(pattern);
     }

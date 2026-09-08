@@ -976,8 +976,66 @@ export interface WarRow {
   year: number;
   actual: number;   // R-positive margin as run
   expected: number; // R-positive expected margin
-  war: number;      // signed toward this candidate
+  residual: number; // actual − expected, signed toward this candidate (the race's net two-candidate effect)
+  effect: number;   // ridge-estimated career candidate effect, signed toward this candidate
+  effectN: number;  // races the effect is estimated from
+  war: number;      // attributed WAR = effect + half the race's unexplained leftover, signed toward this candidate
   note: string;
+}
+
+// Ridge prior on candidate effects. A race yields one residual r = a_R − a_D + ε; the penalty
+// λ·Σa_c² encodes "an unseen candidate is replacement level", which makes the system solvable
+// for one-race candidates (their effect is what is left after the opponent's, shrunk by 1/(1+λ))
+// and splits singleton-vs-singleton residuals evenly. Effects pool across offices by
+// state|party|name. λ=1 matches the observed leave-one-out persistence slope (~0.68) of repeat
+// candidates' residuals; calibration via the harness is a later refinement.
+export const WAR_LAMBDA = 1;
+
+const warCandidateKey = (state: string, party: string, name: string) =>
+  `${state}|${party}|${name.toLowerCase().replace(/[^a-z ]/g, "").replace(/\s+/g, " ").trim()}`;
+
+/** Fit ridge candidate effects over race residuals and fill effect/war on each row (mutates rows). */
+function attributeWar(rows: WarRow[]): void {
+  type Race = { r: number; R?: string; D?: string; rows: WarRow[] };
+  const races = new Map<string, Race>();
+  for (const row of rows) {
+    const k = `${row.state}|${row.office}|${row.race}|${row.year}`;
+    const rc = races.get(k) ?? races.set(k, { r: row.actual - row.expected, rows: [] }).get(k)!;
+    rc.rows.push(row);
+    if (row.party === "R") rc.R = warCandidateKey(row.state, row.party, row.candidate);
+    else rc.D = warCandidateKey(row.state, row.party, row.candidate);
+  }
+  const obs = new Map<string, { race: Race; s: number }[]>();
+  for (const rc of races.values()) {
+    if (rc.R) (obs.get(rc.R) ?? obs.set(rc.R, []).get(rc.R)!).push({ race: rc, s: 1 });
+    if (rc.D) (obs.get(rc.D) ?? obs.set(rc.D, []).get(rc.D)!).push({ race: rc, s: -1 });
+  }
+  const a = new Map<string, number>();
+  const pred = (rc: Race) => (rc.R ? a.get(rc.R) ?? 0 : 0) - (rc.D ? a.get(rc.D) ?? 0 : 0);
+  // Coordinate descent on the ridge normal equations; converges in a few dozen sweeps.
+  for (let it = 0; it < 200; it++) {
+    let maxDelta = 0;
+    for (const [c, o] of obs) {
+      const prev = a.get(c) ?? 0;
+      let num = 0;
+      for (const { race, s } of o) num += s * (race.r - pred(race)) + prev;
+      const next = num / (o.length + WAR_LAMBDA);
+      a.set(c, next);
+      maxDelta = Math.max(maxDelta, Math.abs(next - prev));
+    }
+    if (maxDelta < 1e-6) break;
+  }
+  for (const rc of races.values()) {
+    const eps = rc.r - pred(rc);
+    for (const row of rc.rows) {
+      const s = row.party === "R" ? 1 : -1;
+      const key = warCandidateKey(row.state, row.party, row.candidate);
+      row.residual = s * rc.r;
+      row.effect = a.get(key) ?? 0;
+      row.effectN = obs.get(key)?.length ?? 0;
+      row.war = row.effect + (s * eps) / 2;
+    }
+  }
 }
 
 let _warCache: WarRow[] | null = null;
@@ -989,13 +1047,10 @@ export function computeWarTable(): WarRow[] {
 
   function push(r: ComputedRace, office: WarRow["office"], raceLabel: string, state: string, expected: number, note: string) {
     if (r.rawMargin == null) return;
-    const warR = r.rawMargin - expected;
-    if (r.demCandidate) {
-      out.push({ candidate: r.demCandidate, party: r.demParty ?? "D", office, race: raceLabel, state, year: r.year, actual: r.rawMargin, expected, war: -warR, note });
-    }
-    if (r.repCandidate) {
-      out.push({ candidate: r.repCandidate, party: r.repParty ?? "R", office, race: raceLabel, state, year: r.year, actual: r.rawMargin, expected, war: warR, note });
-    }
+    // residual/effect/war are filled by attributeWar() once every race is collected.
+    const base = { office, race: raceLabel, state, year: r.year, actual: r.rawMargin, expected, residual: 0, effect: 0, effectN: 0, war: 0, note };
+    if (r.demCandidate) out.push({ candidate: r.demCandidate, party: r.demParty ?? "D", ...base });
+    if (r.repCandidate) out.push({ candidate: r.repCandidate, party: r.repParty ?? "R", ...base });
   }
 
   for (const { abbr, name } of statesData) {
@@ -1026,6 +1081,7 @@ export function computeWarTable(): WarRow[] {
     }
   }
 
+  attributeWar(out);
   out.sort((a, b) => b.war - a.war);
   _warCache = out;
   return _warCache;

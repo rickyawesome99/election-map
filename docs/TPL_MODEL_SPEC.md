@@ -186,13 +186,27 @@ reference (post-Phase-4): 2024-President NM MAE 3.02 (pres-only baseline 1.93),
   district imputation via the pres-by-leg-district data is future work.
 - **Governor fundraising** is the open Phase 5 item (state filings; OpenSecrets/
   Transparency USA cover it only partially and only via rendered pages).
-- **WAR** (Phase 6): `computeWarTable()` — WAR = actual − expected, signed
-  toward the candidate, where expected = lean + β*·E(year) + incumbency +
+- **WAR** (Phase 6): `computeWarTable()` — each race yields one residual
+  r = actual − expected, where expected = lean + β*·E(year) + incumbency +
   fundraising advantages. Anchors: S/G/P races vs the state's Huber-fitted lean;
   House vs the district TPL (slight self-influence, noted in the UI); Osborn-
   class races vs their imputed presidential baseline; same-party generals are
-  excluded (no R-vs-D margin to sign). Surfaced as the model page's WAR sub-tab
-  (`/model/war`): filterable, sortable leaderboard.
+  excluded (no R-vs-D margin to sign).
+- **Candidate attribution** (2026-09-08): a residual is the net of two candidate
+  effects, r = a_R − a_D + ε, and a single race cannot split it. `attributeWar()`
+  fits ridge candidate effects over all residuals (coordinate descent on
+  Σ(r − a_R + a_D)² + λ·Σa_c², `WAR_LAMBDA` = 1, effects keyed
+  state|party|normalized name and pooled across offices). The penalty is the
+  "unseen candidate = replacement level" prior: one-race candidates keep what is
+  left after a known opponent's effect, shrunk by 1/(1+λ); two one-race
+  candidates split the residual evenly (±r/2). Per-race WAR = a_c + s·ε/2 (s = +1
+  R, −1 D), so R-WAR − D-WAR = r exactly. Evidence for persistent effects:
+  leave-one-out correlation of repeat candidates' residuals r = 0.66 (0.38
+  excluding |r| > 25), slope 0.68 → λ ≈ 1. Result: Scott effect +42 over 5 races
+  (per-race WAR 42–50), his opponents −24…+2 instead of −74…−40. Refinements
+  deferred: λ via harness leave-one-race-out, recency decay on effects, pre-2016
+  track records (Baker/Manchin/Justice are n=1 in the window). Surfaced as the
+  model page's WAR sub-tab (`/model/war`): Residual / Effect (n) / WAR columns.
 - **Eligibility refinement** (Phase 6): a slot polling < 5% while the opponent
   clears 90% is a write-in-scale candidacy, not a ballot nominee (AZ-08/AZ-09
   2022) — treated as unfilled.

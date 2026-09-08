@@ -4,6 +4,7 @@ import { useState, useMemo, useRef, useEffect, useLayoutEffect } from "react";
 import { useRouter } from "next/navigation";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
+import { APPROVE_COLOR, DISAPPROVE_COLOR } from "@/lib/trumpApprovalAverage";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { NationalLandMask, NationalLandMaskDefinition } from "./StateLandMask";
@@ -1944,10 +1945,13 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
           <div>
             <h2 className="text-lg font-bold" style={{ color: "var(--app-text-primary)" }}>Wins Above Replacement</h2>
             <p className="text-xs mt-1 max-w-3xl leading-5" style={{ color: "var(--app-text-muted)" }}>
-              How much better (or worse) each candidate ran than a generic nominee of their party: WAR = actual margin − expected margin, where
-              expected = lean + β* × E(year) + incumbency + fundraising. Senate, Governor and President races score against the state&apos;s
-              Huber-fitted lean; House races against their district&apos;s TPL; unopposed-class races (Osborn, McMullin) against their imputed
-              presidential baseline.
+              How much better (or worse) each candidate ran than a generic nominee of their party. Each race yields one residual
+              (actual − expected margin, where expected = lean + β* × E(year) + incumbency + fundraising), which is the net of the two
+              candidates&apos; individual effects. Those effects are separated by ridge regression across every race a candidate has run
+              (2016–2025, pooled across offices): a candidate&apos;s Effect is the persistent part, and WAR = Effect + half of the race&apos;s
+              unexplained leftover, so the two candidates&apos; WARs always sum to the residual without mirroring each other. Senate, Governor
+              and President races score against the state&apos;s Huber-fitted lean; House races against their district&apos;s TPL; unopposed-class
+              races (Osborn, McMullin) against their imputed presidential baseline.
             </p>
           </div>
 
@@ -1990,10 +1994,10 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
           </div>
 
           <div className="overflow-x-auto" style={{ borderTop: "2px solid var(--app-text-primary)" }}>
-            <table className="w-full min-w-[760px] text-xs">
+            <table className="w-full min-w-[920px] text-xs">
               <thead>
                 <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-                  {["#", "Candidate", "Party", "Race", "Year", "Actual", "Expected", "WAR"].map((h) => (
+                  {["#", "Candidate", "Party", "Race", "Year", "Actual", "Expected", "Residual", "Effect", "WAR"].map((h) => (
                     <th key={h} className="px-2 py-2 text-left text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap" style={{ color: h === "WAR" ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>{h}</th>
                   ))}
                 </tr>
@@ -2010,21 +2014,30 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                       <td className="px-2 py-2 tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.year}</td>
                       <td className="px-2 py-2 tabular-nums font-semibold" style={{ color: marginColor(r.actual) }}>{fmtMargin(r.actual)}</td>
                       <td className="px-2 py-2 tabular-nums" style={{ color: marginColor(r.expected) }}>{fmtMargin(r.expected)}</td>
-                      <td className="px-2 py-2 tabular-nums font-bold" style={{ color: r.war >= 0 ? partyColor : "var(--app-text-very-muted)" }}>
+                      <td className="px-2 py-2 tabular-nums" style={{ color: "var(--app-text-muted)" }}>
+                        {r.residual >= 0 ? "+" : "−"}{Math.abs(r.residual).toFixed(1)}
+                      </td>
+                      <td className="px-2 py-2 tabular-nums whitespace-nowrap" style={{ color: "var(--app-text-muted)" }} title={`Career effect estimated from ${r.effectN} race${r.effectN === 1 ? "" : "s"}`}>
+                        {r.effect >= 0 ? "+" : "−"}{Math.abs(r.effect).toFixed(1)}
+                        <span className="ml-1 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>n={r.effectN}</span>
+                      </td>
+                      <td className="px-2 py-2 tabular-nums font-bold" style={{ color: r.war > 0 ? APPROVE_COLOR : r.war < 0 ? DISAPPROVE_COLOR : "var(--app-text-primary)" }}>
                         {r.war >= 0 ? "+" : "−"}{Math.abs(r.war).toFixed(1)}
                       </td>
                     </tr>
                   );
                 })}
                 {filteredWarRows.length === 0 && (
-                  <tr><td colSpan={8} className="px-4 py-6 text-center" style={{ color: "var(--app-text-very-muted)" }}>No performances match the filters.</td></tr>
+                  <tr><td colSpan={10} className="px-4 py-6 text-center" style={{ color: "var(--app-text-very-muted)" }}>No performances match the filters.</td></tr>
                 )}
               </tbody>
             </table>
           </div>
 
           <div className="flex flex-wrap gap-x-5 gap-y-0.5 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>
-            <span>WAR is signed toward the candidate: +5 = ran 5 pts better than a generic nominee of their party.</span>
+            <span>All three columns are signed toward the candidate: +5 = 5 pts better than a generic nominee of their party.</span>
+            <span>Residual is the race&apos;s net result, so the two candidates&apos; residuals are mirror images; Effect and WAR are not.</span>
+            <span>A one-race candidate (n=1) facing another one-race candidate gets exactly half the residual — with no other race to compare, the split is even. Track records before 2016 are not in the window.</span>
             <span>House WAR uses the district&apos;s TPL as baseline, which the candidate&apos;s own races feed — large House WARs are slightly understated.</span>
             <span>Where FEC receipts are known, WAR reads as quality beyond fundraising.</span>
             <span>State Legislature races carry no candidate and are excluded.</span>
