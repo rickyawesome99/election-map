@@ -62,16 +62,31 @@ old `|margin| ≥ 50` rule, 60/40 blend, and ×0.8 blanket are gone.
 
 ## Step 2 — Incumbency (IF pts, additive)
 
-`INCUMBENT_ADVANTAGE` (in `lib/tplCompute.ts`, shared verbatim with the forward
-projection): **House 3 · Senate 2 · Governor 7**. Stripped in the incumbent
-party's direction (R incumbent → −pts), added back when forecasting. Zero for
-open seats, presidential races (national approval effects belong to E), state
+Points the incumbent's party is worth on the margin, stripped in the incumbent
+party's direction (R incumbent → −pts) and added back when forecasting via the
+same table (`incumbentAdvantage()` in `lib/tplCompute.ts`). Zero for open
+seats, presidential races (national approval effects belong to E), state
 legislature aggregates, and imputed rows.
 
-These constants are deliberately **not** tuned by the calibration harness: the
-Senate/House targets are raw margins that still contain incumbency, so that
-objective structurally rewards under-stripping. Proper estimation is via
-retirement natural experiments (same seat, incumbent leaves vs. stays) — open.
+- **Senate and Governor are fitted** inside `getTplFit()` (since 2026-09-08):
+  each round, after lean/β/E are updated, inc(office) is the Huber-weighted
+  regression of the incumbency-free residual `margin + FF strip − lean − β·E`
+  on the incumbent sign (±1) over that office's incumbent-held rows. Because
+  the fundraising strip is applied first, the estimate is the advantage **net
+  of the money incumbents raise**, so IF and FF cannot double-count. Current
+  values: **Senate ≈ 2.6 (139 rows) · Governor ≈ 4.0 (68 rows)**; converged
+  by round 4. The hand-set Governor prior of 7 overstated it by ~3 pts
+  (surfaced by the FL Gov 2022 WAR check: DeSantis's expected margin was
+  R+19.1, leaving him at replacement level).
+- **House stays a fixed prior of 3** (`INCUMBENT_ADVANTAGE_FIXED`): against a
+  state-level lean, R incumbents sit in R districts and D incumbents in D
+  districts, so the incumbent-signed residual measures district lean (~20 pts),
+  not incumbency. A district-anchored estimate is future work.
+- These are deliberately **not** tuned by the calibration harness objective:
+  the Senate/House targets are raw margins that still contain incumbency, so
+  that objective structurally rewards under-stripping. `tplCalibrate.ts`
+  mirrors the in-fit estimation (`inc: { S: null, G: null }`) inside each
+  leakage-free window instead.
 
 ## Step 3 — Fundraising (FF pts)
 
@@ -80,7 +95,8 @@ Live for House and Senate (Phase 5). The advantage present in the margin is
 the strip is its negative. **FF_K = 0.02, FF_MAX = 2** — calibrated on the clean
 President target (S/H targets contain the fundraising effect and are biased
 against any strip); larger k overcorrects because the receipts gap partly
-double-counts incumbency, which is already stripped separately.
+double-counts incumbency; the fitted Senate/Governor incumbency (Step 2) is
+estimated with this strip already applied, so the two terms partition cleanly.
 
 - Data: FEC candidate-committee total receipts per cycle, 2016–2026, from the
   bulk `webl`/`weball` files name-matched to each race's general-election
@@ -188,10 +204,28 @@ reference (post-Phase-4): 2024-President NM MAE 3.02 (pres-only baseline 1.93),
   Transparency USA cover it only partially and only via rendered pages).
 - **WAR** (Phase 6): `computeWarTable()` — each race yields one residual
   r = actual − expected, where expected = lean + β*·E(year) + incumbency +
-  fundraising advantages. Anchors: S/G/P races vs the state's Huber-fitted lean;
+  **structural** money advantage. Anchors: S/G/P races vs the state's Huber-fitted lean;
   House vs the district TPL (slight self-influence, noted in the UI); Osborn-
   class races vs their imputed presidential baseline; same-party generals are
   excluded (no R-vs-D margin to sign).
+- **Structural money (2026-09-09):** the TPL strips the full fundraising gap
+  because it wants the seat's lean, but for a quality metric money is partly
+  the candidate. WAR therefore splits the gap. Per office, `gap ≈ a + b·incSign
+  + c·base` is fitted in-sample (OLS over races with both receipts known; base =
+  R-positive expected margin before money = anchor + β*·E + incumbency), giving
+  the gap a generic pair in that situation would have — R² .67 S (n 166) / .50 G
+  (n 48) / .81 H (n 453); incumbency alone is worth 16 / 17 / 34 gap points.
+  `expected` carries only `clamp(FF_K × structuralGap, ±FF_MAX)`; the
+  idiosyncratic remainder (money raised beyond the situation) stays in the
+  residual and is credited to the candidate. The prediction needs no receipts,
+  so every race gets the structural term (imputed-baseline rows excepted).
+  Evidence behind the choice: 53–81% of the gap is structural; the idiosyncratic
+  part correlates with pre-money performance (r .58 S / .37 H / .26 G) but the
+  strip removes only ~a fifth of it; persistence of a candidate's residuals
+  across races is unchanged (slope .366 with the full strip vs .347 without).
+  Exposed as `getWarMoneyModel()` and per-row `moneyGapPct / structuralGapPct /
+  ffStructuralPts` (Expected-cell tooltip). DeSantis 2022: gap R+72%, structural
+  R+38% → 0.76 pts in expected (was 1.44); expected R+15.5, residual +3.9.
 - **Candidate attribution** (2026-09-08): a residual is the net of two candidate
   effects, r = a_R − a_D + ε, and a single race cannot split it. `attributeWar()`
   fits ridge candidate effects over all residuals (coordinate descent on
@@ -202,11 +236,24 @@ reference (post-Phase-4): 2024-President NM MAE 3.02 (pres-only baseline 1.93),
   candidates split the residual evenly (±r/2). Per-race WAR = a_c + s·ε/2 (s = +1
   R, −1 D), so R-WAR − D-WAR = r exactly. Evidence for persistent effects:
   leave-one-out correlation of repeat candidates' residuals r = 0.66 (0.38
-  excluding |r| > 25), slope 0.68 → λ ≈ 1. Result: Scott effect +42 over 5 races
-  (per-race WAR 42–50), his opponents −24…+2 instead of −74…−40. Refinements
-  deferred: λ via harness leave-one-race-out, recency decay on effects, pre-2016
-  track records (Baker/Manchin/Justice are n=1 in the window). Surfaced as the
-  model page's WAR sub-tab (`/model/war`): Residual / Effect (n) / WAR columns.
+  excluding |r| > 25), slope 0.68 → λ ≈ 1.
+  **Recency (2026-09-08):** effects are estimated *as of each race's year*. For
+  target year Y the ridge is weighted, Σ w_j (r_j − a_R + a_D)² + λ·Σa_c² with
+  w_j = `WAR_RECENCY_DECAY`^|year_j − Y| (0.8: 2 yrs 0.64 · 4 yrs 0.41 · 6 yrs
+  0.26 · 8 yrs 0.17), so the race being scored always carries full weight and a
+  candidate's other races fade with distance; one solve per distinct year, warm-
+  started. Measured persistence of repeat candidates' residuals (|r| < 25) by
+  gap: slope ≈ 0.45 at 1–4 yrs, 0.26 at 5–6, ≈ 0 at 7–9 — the curve 0.8 tracks.
+  `effectW` (Σ weights) is the effective race count shown in the Effect tooltip.
+  Example (pre-structural-money numbers): DeSantis 2022 residual +3.2; his 2018
+  open-seat race (−1.4) enters at 0.41 instead of 1, lifting his 2022 WAR from
+  +1.16 to +1.32 (effect +0.68, Crist −1.28, leftover split evenly), while his
+  2018 row is scored against a 2018-weighted effect (+0.14). The remaining gap
+  to the residual is the ridge's even split with a one-race opponent, not
+  recency. With structural money (above) the same row is residual +3.9 / WAR +1.8. Refinements deferred: λ and decay via
+  harness leave-one-race-out, pre-2016 track records (Baker/Manchin/Justice are
+  n=1 in the window). Surfaced as the model page's WAR sub-tab (`/model/war`):
+  Residual / Effect (n) / WAR columns.
 - **Eligibility refinement** (Phase 6): a slot polling < 5% while the opponent
   clears 90% is a write-in-scale candidacy, not a ballot nominee (AZ-08/AZ-09
   2022) — treated as unfilled.

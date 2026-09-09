@@ -948,7 +948,7 @@ export function ForecastCalculationCard({
 
   const showIncumbentRow = incumbentPts !== undefined;
   const incIsOpen = incPts === 0;
-  const incDisplay = incIsOpen ? "Open" : incPts > 0 ? `R+${incPts}` : `D+${Math.abs(incPts)}`;
+  const incDisplay = incIsOpen ? "Open" : incPts > 0 ? `R+${incPts.toFixed(1)}` : `D+${Math.abs(incPts).toFixed(1)}`;
   const incColor = incIsOpen ? "var(--app-text-very-muted)" : incPts > 0 ? "var(--party-rep)" : "var(--party-dem)";
 
   const effectivePollWeight = pollingAvg == null ? 0 : POLL_WEIGHT;

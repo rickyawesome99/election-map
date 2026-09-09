@@ -48,7 +48,7 @@ interface Theta {
   betaShrink: number;
   sparseK: number;
   typeW: Record<string, number>;
-  inc: Record<string, number>;
+  inc: Record<string, number | null>; // null = estimated inside each window's fit (S/G); number = fixed prior (H)
   ffK: number;
   ffCap: number;
 }
@@ -60,7 +60,7 @@ const CURRENT: Theta = {
   betaShrink: G.BETA_SHRINK,
   sparseK: G.SPARSE_YEAR_K,
   typeW: { ...G.RACE_TYPE_WEIGHTS },
-  inc: { H: 3, S: 2, G: 7 },
+  inc: { H: 3, S: null, G: null }, // S/G fitted since 2026-09-08 (FL Gov 2022 sanity check); H fixed
   ffK: 0.02, // adopted 2026-09-07 (FF sweep: clean P-target optimum; S/H targets are
   ffCap: 2,  // biased against strips — see the IF note below; forward model shares these)
 };
@@ -118,8 +118,8 @@ for (const { abbr, name } of statesData) {
 
 // ── parameterized fit + aggregation (mirrors lib/tplCompute.ts) ──────────────
 
-function incPts(t: Theta, raceType: string, incumbent: string): number {
-  const pts = t.inc[raceType] ?? 0;
+function incPts(inc: Record<string, number>, raceType: string, incumbent: string): number {
+  const pts = inc[raceType] ?? 0;
   if (incumbent === "R") return -pts;
   if (incumbent === "D") return pts;
   return 0;
@@ -131,15 +131,22 @@ function ffPts(t: Theta, gapPct: number | null): number {
   return -Math.max(-t.ffCap, Math.min(t.ffCap, gapPct * t.ffK));
 }
 
-interface Fit { E: Record<number, number>; beta: Record<string, number>; lean: Record<string, number>; }
+interface Fit { E: Record<number, number>; beta: Record<string, number>; lean: Record<string, number>; inc: Record<string, number>; }
 
 function fitWindow(t: Theta, maxYear: number): Fit {
   const src = panel.filter((r) => !r.imputed && r.value != null && r.year <= maxYear);
   const typeCount: Record<string, number> = {};
   for (const r of src) { const k = `${r.abbr}:${r.year}:${r.type}`; typeCount[k] = (typeCount[k] ?? 0) + 1; }
+  // Incumbency: fixed entries are used as-is; null entries (S/G) are estimated each
+  // round from the incumbent-signed residual, exactly as getTplFit does.
+  const fittedInc = Object.keys(t.inc).filter((k) => t.inc[k] == null);
+  const inc: Record<string, number> = {};
+  for (const k of Object.keys(t.inc)) inc[k] = t.inc[k] ?? (k === "S" ? 2 : k === "G" ? 7 : 0);
   const rows = src.map((r) => ({
-    abbr: r.abbr, year: r.year,
-    adj: r.value! + incPts(t, r.type, r.incumbent) + ffPts(t, r.ffGapPct),
+    abbr: r.abbr, year: r.year, type: r.type,
+    incSign: r.incumbent === "R" ? 1 : r.incumbent === "D" ? -1 : 0,
+    raw: r.value! + ffPts(t, r.ffGapPct),
+    adj: r.value! + incPts(inc, r.type, r.incumbent) + ffPts(t, r.ffGapPct),
     base: (t.typeW[r.type] ?? 0.05) / typeCount[`${r.abbr}:${r.year}:${r.type}`],
     w: 1,
   }));
@@ -175,8 +182,17 @@ function fitWindow(t: Theta, maxYear: number): Fit {
       for (const r of byState[abbr]) { num += r.w * (r.adj - beta[abbr] * E[r.year]); den += r.w; }
       if (den > 0) lean[abbr] = num / den;
     }
+    for (const type of fittedInc) {
+      let num = 0, den = 0;
+      for (const r of rows) {
+        if (r.type !== type || r.incSign === 0) continue;
+        num += r.w * r.incSign * (r.raw - lean[r.abbr] - beta[r.abbr] * E[r.year]); den += r.w;
+      }
+      if (den > 0) inc[type] = num / den;
+    }
+    for (const r of rows) r.adj = r.raw - r.incSign * (inc[r.type] ?? 0);
   }
-  return { E, beta, lean };
+  return { E, beta, lean, inc };
 }
 
 function stateTpl(t: Theta, fit: Fit, abbr: string, maxYear: number): number | null {
@@ -193,7 +209,7 @@ function stateTpl(t: Theta, fit: Fit, abbr: string, maxYear: number): number | n
         const envYear = r.imputed ? r.srcYear ?? r.year : r.year;
         const nm = r.imputed
           ? r.value! - beta * (fit.E[envYear] ?? 0)
-          : r.value! + incPts(t, r.type, r.incumbent) + ffPts(t, r.ffGapPct) - beta * (fit.E[year] ?? 0);
+          : r.value! + incPts(fit.inc, r.type, r.incumbent) + ffPts(t, r.ffGapPct) - beta * (fit.E[year] ?? 0);
         const resid = lean != null ? nm - lean : 0;
         const huber = Math.abs(resid) <= t.huberC ? 1 : t.huberC / Math.abs(resid);
         const w = (r.imputed ? t.impW : 1) * huber;
@@ -244,7 +260,7 @@ function objective(t: Theta): { obj: number; parts: Record<string, number> } {
 const fmtParts = (p: Record<string, number>) =>
   Object.entries(p).map(([k, v]) => `${k}=${v.toFixed(2)}`).join(" ");
 
-let theta: Theta = JSON.parse(JSON.stringify(CURRENT));
+const theta: Theta = JSON.parse(JSON.stringify(CURRENT));
 let best = objective(theta);
 console.log(`baseline  obj=${best.obj.toFixed(3)}  ${fmtParts(best.parts)}\n`);
 
@@ -258,9 +274,10 @@ const knobs: { name: string; cands: unknown[]; get: (t: Theta) => unknown; set: 
   { name: "betaShrink", cands: [0.3, 0.5, 0.7], get: (t) => t.betaShrink, set: (t, v) => { t.betaShrink = v as number; } },
   { name: "sparseK", cands: [2, 4, 8], get: (t) => t.sparseK, set: (t, v) => { t.sparseK = v as number; } },
   { name: "typeW", cands: WEIGHT_CANDIDATES, get: (t) => t.typeW, set: (t, v) => { t.typeW = v as Record<string, number>; } },
-  // Incumbency constants are deliberately NOT tuned here: the S/H targets are raw
-  // margins that still contain incumbency, so this objective structurally rewards
-  // under-stripping. IF stays H3/S2/G7 pending retirement-experiment estimation.
+  // Incumbency is NOT tuned against this objective: the S/H targets are raw margins
+  // that still contain incumbency, so it structurally rewards under-stripping.
+  // Senate/Governor are instead estimated inside each window's fit (inc: null above),
+  // the same way E and β are; House keeps the fixed prior of 3.
 ];
 
 for (let pass = 1; pass <= 2; pass += 1) {

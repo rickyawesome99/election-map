@@ -31,6 +31,10 @@
 //   rows, so a state-year's House rows share the H weight instead of outvoting its
 //   presidential row): P 2.49/2.96/3.18/1.93 · S 4.88/4.99/5.01/4.95 · H 2.93/2.50/2.69/2.81
 //     — the largest single improvement of the rebuild; fit leans now agree with TPLs.
+//   Fitted S/G incumbency (2026-09-08; S 2.6 / G 4.0 estimated inside getTplFit, H fixed 3,
+//   replacing the hand-set S2/G7): P 2.49/2.96/3.18/1.93 · S 4.88/4.99/5.01/4.95 ·
+//   H 2.94/2.50/2.69/2.81 — no measurable change (S/G carry little TPL weight); the
+//   effect lives in WAR expected margins (DeSantis 2022 R+19.1 → R+16.3).
 // The 0.10 tolerance catches any real formula change, which moves these by far more.
 
 import { calculateStateModel, getTplFit, type ComputedRace } from "@/lib/tplCompute";
@@ -144,10 +148,10 @@ function buildRows(): StateRow[] {
 // ── default mode: holdout + ablation vs baselines ────────────────────────────
 
 const EXPECTED: Record<string, Record<string, number>> = {
-  // reference values (post-Phase-6 fit fixes, measured in-harness): target → predictor → MAE
+  // reference values (fitted S/G incumbency, 2026-09-08, measured in-harness): target → predictor → MAE
   p24: { nmHold: 2.49, adjHold: 2.96, rawHold: 3.18, pres2020: 1.93 },
   s24: { nmHold: 4.88, adjHold: 4.99, rawHold: 5.01, pres2020: 4.95 },
-  h24: { nmHold: 2.93, adjHold: 2.5, rawHold: 2.69, pres2020: 2.81 },
+  h24: { nmHold: 2.94, adjHold: 2.5, rawHold: 2.69, pres2020: 2.81 },
 };
 
 function runHoldout(): void {

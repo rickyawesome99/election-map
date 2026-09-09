@@ -16,7 +16,7 @@ import {
   calculateDistrictModel,
   computeWarTable,
   getTplFit,
-  INCUMBENT_ADVANTAGE,
+  incumbentAdvantage,
 } from "@/lib/tplCompute";
 import { ELIGIBILITY_LABELS } from "@/data/raceEligibility";
 
@@ -53,8 +53,8 @@ const GLOSSARY = [
   { abbr: "⊘", term: "Imputed Race", desc: "An ineligible race (missing major-party nominee or same-party general): the margin is replaced by the seat's nearest presidential result and the row carries half weight in aggregation." },
   { abbr: "Centered TPL", term: "Centered True Partisan Lean", desc: "TPL minus the 50-state median TPL. Shows how a state compares to the typical state, with systematic model bias removed." },
   { abbr: "CQ", term: "Candidate Quality Factor", desc: "District TPL only — removed from the state model in the rebuild. Outlier candidates are handled by Huber downweighting in the fit instead, and quality becomes the WAR layer's output." },
-  { abbr: "FF", term: "Fundraising Factor", desc: "Additive fundraising points, capped. 0 for every race pending FEC data (Phase 5 of the rebuild)." },
-  { abbr: "IF", term: "Incumbency Points", desc: "Additive, party-signed strip: H 3 · S 2 · G 7 pts subtracted in the incumbent party's direction. 0 for open seats, presidential races (E owns national approval effects) and legislature aggregates. Same table the forecast adds back." },
+  { abbr: "FF", term: "Fundraising Factor", desc: "Additive fundraising strip, −clamp(0.02 × money-gap%, ±2), from FEC/state receipts where both candidates are known. The TPL strips the full gap; WAR's expected margin uses only its structural part (see the WAR tab)." },
+  { abbr: "IF", term: "Incumbency Points", desc: "Additive, party-signed strip subtracted in the incumbent party's direction. Senate and Governor values are estimated inside the joint fit (incumbent-held races vs lean + β*×E, with the fundraising strip already applied, so money and incumbency never double-count); House keeps a fixed 3. 0 for open seats, presidential races (E owns national approval effects) and legislature aggregates. Same table the forecast adds back." },
 
   { abbr: "E(y)", term: "Fitted National Environment", desc: "One number per year, 2016–2025 incl. odd years, estimated jointly with every state's lean from within-state changes — so which seats happen to be up cannot skew it. Positive = R-favored; centered so the period average is ≈ 0." },
   { abbr: "NM", term: "Neutralized Margin", desc: "Adjusted Margin + IF pts + FF pts − β*×E(y). Every strip is additive and applied exactly once." },
@@ -1089,7 +1089,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                     ["Raw", "Raw Margin = repPct − demPct. Positive = R wins. Live from site data."],
                     ["Adjusted ↗", "Adjusted Margin — equals Raw for eligible races. ⊘ = ineligible race (missing major-party nominee or same-party general): value imputed from the seat's nearest presidential result and given half weight in aggregation."],
                     ["Incumbent", "Incumbent party marker or Open. State Legislature = -."],
-                    ["IF ↗", "Incumbency points, additive and party-signed: H 3 · S 2 · G 7 stripped in the incumbent party's direction. 0 for P, Leg, open seats and imputed rows."],
+                    ["IF ↗", "Incumbency points, additive and party-signed, stripped in the incumbent party's direction. Senate/Governor fitted (see BETA popup), House fixed 3. 0 for P, Leg, open seats and imputed rows."],
                     ["FF ↗", "Fundraising strip = −clamp(k × money-gap%, ±cap), from FEC receipts. Applies where both candidates' receipts are known; Governor pending state filings."],
                     ["ENV ↗", "Environment adjustment = −β* × E(year). Strips the fitted national environment; imputed rows strip their source year's E."],
                     ["NM ↗", "Adjusted × (IF × CQ) + FF pts + WA."],
@@ -1946,10 +1946,12 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
             <h2 className="text-lg font-bold" style={{ color: "var(--app-text-primary)" }}>Wins Above Replacement</h2>
             <p className="text-xs mt-1 max-w-3xl leading-5" style={{ color: "var(--app-text-muted)" }}>
               How much better (or worse) each candidate ran than a generic nominee of their party. Each race yields one residual
-              (actual − expected margin, where expected = lean + β* × E(year) + incumbency + fundraising), which is the net of the two
+              (actual − expected margin, where expected = lean + β* × E(year) + incumbency + structural money), which is the net of the two
               candidates&apos; individual effects. Those effects are separated by ridge regression across every race a candidate has run
-              (2016–2025, pooled across offices): a candidate&apos;s Effect is the persistent part, and WAR = Effect + half of the race&apos;s
-              unexplained leftover, so the two candidates&apos; WARs always sum to the residual without mirroring each other. Senate, Governor
+              (2016–2025, pooled across offices), estimated as of the race&apos;s year: the race itself carries full weight and the
+              candidate&apos;s other races fade by 0.8 per year of distance (a race 4 years away counts 0.41). A candidate&apos;s Effect is that
+              recency-weighted persistent part, and WAR = Effect + half of the race&apos;s unexplained leftover, so the two candidates&apos; WARs
+              always sum to the residual without mirroring each other. Senate, Governor
               and President races score against the state&apos;s Huber-fitted lean; House races against their district&apos;s TPL; unopposed-class
               races (Osborn, McMullin) against their imputed presidential baseline.
             </p>
@@ -2013,11 +2015,11 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                       <td className="px-2 py-2 whitespace-nowrap" style={{ color: "var(--app-text-muted)" }}>{r.race} · {r.state}</td>
                       <td className="px-2 py-2 tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.year}</td>
                       <td className="px-2 py-2 tabular-nums font-semibold" style={{ color: marginColor(r.actual) }}>{fmtMargin(r.actual)}</td>
-                      <td className="px-2 py-2 tabular-nums" style={{ color: marginColor(r.expected) }}>{fmtMargin(r.expected)}</td>
+                      <td className="px-2 py-2 tabular-nums" style={{ color: marginColor(r.expected) }} title={`Structural money gap ${r.structuralGapPct >= 0 ? "R" : "D"}+${Math.abs(r.structuralGapPct).toFixed(0)}% → ${r.ffStructuralPts >= 0 ? "R" : "D"}+${Math.abs(r.ffStructuralPts).toFixed(2)} pts in Expected · actual gap ${r.moneyGapPct == null ? "unknown" : `${r.moneyGapPct >= 0 ? "R" : "D"}+${Math.abs(r.moneyGapPct).toFixed(0)}%`}`}>{fmtMargin(r.expected)}</td>
                       <td className="px-2 py-2 tabular-nums" style={{ color: "var(--app-text-muted)" }}>
                         {r.residual >= 0 ? "+" : "−"}{Math.abs(r.residual).toFixed(1)}
                       </td>
-                      <td className="px-2 py-2 tabular-nums whitespace-nowrap" style={{ color: "var(--app-text-muted)" }} title={`Career effect estimated from ${r.effectN} race${r.effectN === 1 ? "" : "s"}`}>
+                      <td className="px-2 py-2 tabular-nums whitespace-nowrap" style={{ color: "var(--app-text-muted)" }} title={`Effect as of ${r.year}, estimated from ${r.effectN} race${r.effectN === 1 ? "" : "s"} (${r.effectW.toFixed(2)} effective after recency weighting)`}>
                         {r.effect >= 0 ? "+" : "−"}{Math.abs(r.effect).toFixed(1)}
                         <span className="ml-1 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>n={r.effectN}</span>
                       </td>
@@ -2038,6 +2040,8 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
             <span>All three columns are signed toward the candidate: +5 = 5 pts better than a generic nominee of their party.</span>
             <span>Residual is the race&apos;s net result, so the two candidates&apos; residuals are mirror images; Effect and WAR are not.</span>
             <span>A one-race candidate (n=1) facing another one-race candidate gets exactly half the residual — with no other race to compare, the split is even. Track records before 2016 are not in the window.</span>
+            <span>Effect is as of the race&apos;s year: the same candidate can carry a different Effect in each race, because their other races are weighted by recency (0.8 per year of distance).</span>
+            <span>Money: only the structural part of the fundraising gap — what a generic pair would have given incumbency and the race&apos;s expected margin — is in Expected. Money a candidate raised beyond their situation stays in their WAR. Hover Expected for the split.</span>
             <span>House WAR uses the district&apos;s TPL as baseline, which the candidate&apos;s own races feed — large House WARs are slightly understated.</span>
             <span>Where FEC receipts are known, WAR reads as quality beyond fundraising.</span>
             <span>State Legislature races carry no candidate and are excluded.</span>
@@ -2196,7 +2200,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                         {r.imputed
                           ? "Imputed row — no incumbency to strip"
                           : r.incumbent === "R" || r.incumbent === "D"
-                          ? `${r.incumbent} incumbent — ${INCUMBENT_ADVANTAGE[r.raceType] ?? 0} pts stripped toward ${r.incumbent === "R" ? "D" : "R"}`
+                          ? `${r.incumbent} incumbent — ${(incumbentAdvantage()[r.raceType] ?? 0).toFixed(1)} pts stripped toward ${r.incumbent === "R" ? "D" : "R"}`
                           : r.raceType === "P"
                           ? "President — national approval effects live in E(y)"
                           : r.raceType === "L"

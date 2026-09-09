@@ -1,12 +1,12 @@
 office,state,race,year,election_type,eligible,dem_candidate,dem_receipts,dem_fec_id,rep_candidate,rep_receipts,rep_fec_id,source,notes
-G,AK,AK,2018,Regular,,Mark Begich,,,Mike Dunleavy,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,AK,AK,2022,Regular,,Les Gara,,,Mike Dunleavy,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,AK,AK,2018,Regular,,Mark Begich,816689.69,,Mike Dunleavy,896604.56,,"FollowTheMoney (state filings, total contributions)",
+G,AK,AK,2022,Regular,,Les Gara,2257671.78,,Mike Dunleavy,2757882.04,,"FollowTheMoney (state filings, total contributions)",
 G,AK,AK,2026,Upcoming,,Tom Begich,,,Dave Bronson,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,AL,AL,2018,Regular,,Walt Maddox,2710079,,Kay Ivey,6479977,,"TransparencyUSA (state filings, total contributions)",
 G,AL,AL,2022,Regular,,Yolanda Flowers,47794,,Kay Ivey,10742614,,"TransparencyUSA (state filings, total contributions)",
 G,AL,AL,2026,Upcoming,,Doug Jones,0,,Tommy Tuberville,13792994,,"TransparencyUSA (state filings, total contributions)",
-G,AR,AR,2018,Regular,,Jared Henderson,,,Asa Hutchinson,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,AR,AR,2022,Regular,,Chris Jones,,,Sarah Huckabee Sanders,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,AR,AR,2018,Regular,,Jared Henderson,669231.17,,Asa Hutchinson,7200079.84,,"FollowTheMoney (state filings, total contributions)",
+G,AR,AR,2022,Regular,,Chris Jones,4070118.95,,Sarah Huckabee Sanders,22984656.22,,"FollowTheMoney (state filings, total contributions)",
 G,AR,AR,2026,Upcoming,,Fredrick Love,,,Sarah Huckabee Sanders,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,AZ,AZ,2018,Regular,,David Garcia,2428289,,Doug Ducey,16576773,,"TransparencyUSA (state filings, total contributions)",
 G,AZ,AZ,2022,Regular,,Katie Hobbs,15598312,,Kari Lake,15910951,,"TransparencyUSA (state filings, total contributions)",
@@ -17,48 +17,48 @@ G,CA,CA,2026,Upcoming,,Xavier Becerra,24217949,,Steve Hilton,17445485,,"Transpar
 G,CO,CO,2018,Regular,,Jared Polis,24474055,,Walker Stapleton,4323653,,"TransparencyUSA (state filings, total contributions)",
 G,CO,CO,2022,Regular,,Jared Polis,12527619,,Heidi Ganahl,3725407,,"TransparencyUSA (state filings, total contributions)",
 G,CO,CO,2026,Upcoming,,Michael Bennet,,,Barbara Kirkmeyer,,,,pending: 2026 nominees (Bennet/Kirkmeyer) not yet in TU data
-G,CT,CT,2018,Regular,,Ned Lamont,,,Bob Stefanowski,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,CT,CT,2022,Regular,,Ned Lamont,,,Bob Stefanowski,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,CT,CT,2018,Regular,,Ned Lamont,16355489.36,,Bob Stefanowski,6872012.28,,"FollowTheMoney (state filings, total contributions)",
+G,CT,CT,2022,Regular,,Ned Lamont,31157222.60,,Bob Stefanowski,15225508.90,,"FollowTheMoney (state filings, total contributions)",
 G,CT,CT,2026,Upcoming,,Ned Lamont,,,Ryan Fazio,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,DE,DE,2016,Regular,,John Carney,,,Colin Bonini,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,DE,DE,2020,Regular,,John Carney,,,Julianne Murray,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,DE,DE,2024,Regular,,Matt Meyer,,,Mike Ramone,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,DE,DE,2016,Regular,,John Carney,1594266.85,,Colin Bonini,234146.00,,"FollowTheMoney (state filings, total contributions)",
+G,DE,DE,2020,Regular,,John Carney,830076.05,,Julianne Murray,282516.34,,"FollowTheMoney (state filings, total contributions)",
+G,DE,DE,2024,Regular,,Matt Meyer,3816050.07,,Mike Ramone,546788.82,,"FollowTheMoney (state filings, total contributions)",
 G,FL,FL,2018,Regular,,Andrew Gillum,19488774,,Ron DeSantis,60205948,,"TransparencyUSA (state filings, total contributions)",
 G,FL,FL,2022,Regular,,Charlie Crist,32427595,,Ron DeSantis,198824781,,"TransparencyUSA (state filings, total contributions)",
 G,FL,FL,2026,Upcoming,,David Jolly,,,Byron Donalds,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,GA,GA,2018,Regular,,Stacey Abrams,0,,Brian Kemp,21875250,,"TransparencyUSA (state filings, total contributions)",
 G,GA,GA,2022,Regular,,Stacey Abrams,0,,Brian Kemp,31494464,,"TransparencyUSA (state filings, total contributions)",
 G,GA,GA,2026,Upcoming,,Keisha Lance Bottoms,5774631,,Rick Jackson,118984243,,"TransparencyUSA (state filings, total contributions)",
-G,HI,HI,2018,Regular,,David Ige,,,Andria Tupola,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,HI,HI,2022,Regular,,Josh Green,,,Duke Aiona,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,HI,HI,2018,Regular,,David Ige,2829872.81,,Andria Tupola,521905.94,,"FollowTheMoney (state filings, total contributions)",
+G,HI,HI,2022,Regular,,Josh Green,4116868.08,,Duke Aiona,285405.50,,"FollowTheMoney (state filings, total contributions)",
 G,HI,HI,2026,Upcoming,,Josh Green,,,Republican Candidate,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,IA,IA,2018,Regular,,Fred Hubbell,22575532,,Kim Reynolds,14993149,,"TransparencyUSA (state filings, total contributions)",
 G,IA,IA,2022,Regular,,Deidre DeJear,2460314,,Kim Reynolds,8865353,,"TransparencyUSA (state filings, total contributions)",
 G,IA,IA,2026,Upcoming,,Rob Sand,19860206,,Zach Lahn,1218702,,"TransparencyUSA (state filings, total contributions)",
-G,ID,ID,2018,Regular,,Paulette Jordan,,,Brad Little,,,,pending: TU cycle-scoping broken for Idaho — values identical across cycles; needs manual fill
-G,ID,ID,2022,Regular,,Stephen Heidt,,,Brad Little,,,,pending: TU cycle-scoping broken for Idaho — values identical across cycles; needs manual fill
+G,ID,ID,2018,Regular,,Paulette Jordan,1252283.40,,Brad Little,3370322.89,,"FollowTheMoney (state filings, total contributions)",
+G,ID,ID,2022,Regular,,Stephen Heidt,28353.20,,Brad Little,2381242.80,,"FollowTheMoney (state filings, total contributions)",
 G,ID,ID,2026,Upcoming,,Terri Pickens,,,Brad Little,,,,pending: TU cycle-scoping broken for Idaho — values identical across cycles; needs manual fill
 G,IL,IL,2018,Regular,,JB Pritzker,176492547,,Bruce Rauner,0,,"TransparencyUSA (state filings, total contributions)",
 G,IL,IL,2022,Regular,,JB Pritzker,152678879,,Darren Bailey,17962590,,"TransparencyUSA (state filings, total contributions)",
 G,IL,IL,2026,Upcoming,,JB Pritzker,25619035,,Darren Bailey,2166962,,"TransparencyUSA (state filings, total contributions)",
-G,IN,IN,2016,Regular,,John Gregg,,,Eric Holcomb,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,IN,IN,2016,Regular,,John Gregg,17006424.45,,Eric Holcomb,14851654.72,,"FollowTheMoney (state filings, total contributions)",
 G,IN,IN,2020,Regular,,Woody Myers,1247519,,Eric Holcomb,11240351,,"TransparencyUSA (state filings, total contributions)",
 G,IN,IN,2024,Regular,,Jennifer McCormick,5892427,,Mike Braun,17735776,,"TransparencyUSA (state filings, total contributions)",
-G,KS,KS,2018,Regular,,Laura Kelly,,,Kris Kobach,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,KS,KS,2022,Regular,,Laura Kelly,,,Derek Schmidt,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,KS,KS,2018,Regular,,Laura Kelly,3475427.97,,Kris Kobach,3715117.44,,"FollowTheMoney (state filings, total contributions)",
+G,KS,KS,2022,Regular,,Laura Kelly,7966527.60,,Derek Schmidt,4634549.07,,"FollowTheMoney (state filings, total contributions)",
 G,KS,KS,2026,Upcoming,,Ethan Corson,,,Jeff Colyer,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,KY,KY,2019,Regular,,Andy Beshear,,,Matt Bevin,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,KY,KY,2023,Regular,,Andy Beshear,,,Daniel Cameron,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,LA,LA,2019,Regular,,John Bel Edwards,,,Eddie Rispone,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,LA,LA,2023,Regular,,Shawn Wilson,,,Jeff Landry,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,MA,MA,2018,Regular,,Jay Gonzalez,,,Charlie Baker,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,MA,MA,2022,Regular,,Maura Healey,,,Geoff Diehl,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,KY,KY,2019,Regular,,Andy Beshear,9552283.96,,Matt Bevin,10763042.86,,"FollowTheMoney (state filings, total contributions)",
+G,KY,KY,2023,Regular,,Andy Beshear,25609504.27,,Daniel Cameron,7285735.44,,"FollowTheMoney (state filings, total contributions)",
+G,LA,LA,2019,Regular,,John Bel Edwards,23332374.42,,Eddie Rispone,21011911.63,,"FollowTheMoney (state filings, total contributions)",
+G,LA,LA,2023,Regular,,Shawn Wilson,2610380.02,,Jeff Landry,16221367.41,,"FollowTheMoney (state filings, total contributions)",
+G,MA,MA,2018,Regular,,Jay Gonzalez,,,Charlie Baker,,,,pending: FTM has 0 records for Baker (state OCPF coverage gap) — needs OCPF/manual
+G,MA,MA,2022,Regular,,Maura Healey,15999298.13,,Geoff Diehl,2724024.57,,"FollowTheMoney (state filings, total contributions)",
 G,MA,MA,2026,Upcoming,,Maura Healey,,,Brian Shortsleeve,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,MD,MD,2018,Regular,,Ben Jealous,,,Larry Hogan,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,MD,MD,2022,Regular,,Wes Moore,,,Dan Cox,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,MD,MD,2018,Regular,,Ben Jealous,4423808.92,,Larry Hogan,17773094.16,,"FollowTheMoney (state filings, total contributions)",
+G,MD,MD,2022,Regular,,Wes Moore,14373011.85,,Dan Cox,1555706.46,,"FollowTheMoney (state filings, total contributions)",
 G,MD,MD,2026,Upcoming,,Wes Moore,,,Dan Cox,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,ME,ME,2018,Regular,,Janet Mills,,,Shawn Moody,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,ME,ME,2022,Regular,,Janet Mills,,,Paul LePage,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,ME,ME,2018,Regular,,Janet Mills,3048406.55,,Shawn Moody,1874553.98,,"FollowTheMoney (state filings, total contributions)",
+G,ME,ME,2022,Regular,,Janet Mills,5843923.63,,Paul LePage,2646099.62,,"FollowTheMoney (state filings, total contributions)",
 G,ME,ME,2026,Upcoming,,Hannah Pingree,,,Robert Charles,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,MI,MI,2018,Regular,,Gretchen Whitmer,14371129,,Bill Schuette,0,,"TransparencyUSA (state filings, total contributions)",
 G,MI,MI,2022,Regular,,Gretchen Whitmer,32474199,,Tudor Dixon,8857962,,"TransparencyUSA (state filings, total contributions)",
@@ -66,31 +66,31 @@ G,MI,MI,2026,Upcoming,,Jocelyn Benson,5958887,,John James,4492470,,"Transparency
 G,MN,MN,2018,Regular,,Tim Walz,5779215,,Jeff Johnson,3190007,,"TransparencyUSA (state filings, total contributions)",
 G,MN,MN,2022,Regular,,Tim Walz,9899289,,Scott Jensen,6485090,,"TransparencyUSA (state filings, total contributions)",
 G,MN,MN,2026,Upcoming,,Amy Klobuchar,,,Lisa Demuth,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,MO,MO,2016,Regular,,Chris Koster,,,Eric Greitens,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,MO,MO,2020,Regular,,Nicole Galloway,,,Mike Parson,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,MO,MO,2024,Regular,,Crystal Quade,,,Mike Kehoe,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,MS,MS,2019,Regular,,Jim Hood,,,Tate Reeves,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,MS,MS,2023,Regular,,Brandon Presley,,,Tate Reeves,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,MT,MT,2016,Regular,,Steve Bullock,,,Greg Gianforte,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,MT,MT,2020,Regular,,Mike Cooney,,,Greg Gianforte,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,MT,MT,2024,Regular,,Ryan Busse,,,Greg Gianforte,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,NC,NC,2016,Regular,,Roy Cooper,,,Pat McCrory,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,MO,MO,2016,Regular,,Chris Koster,28709070.80,,Eric Greitens,32111917.95,,"FollowTheMoney (state filings, total contributions)",
+G,MO,MO,2020,Regular,,Nicole Galloway,7384398.56,,Mike Parson,5753313.99,,"FollowTheMoney (state filings, total contributions)",
+G,MO,MO,2024,Regular,,Crystal Quade,2444528.84,,Mike Kehoe,6206941.25,,"FollowTheMoney (state filings, total contributions)",
+G,MS,MS,2019,Regular,,Jim Hood,7531556.19,,Tate Reeves,3914038.57,,"FollowTheMoney (state filings, total contributions)",
+G,MS,MS,2023,Regular,,Brandon Presley,,,Tate Reeves,,,,pending: FTM free API call limit reached mid-pass — refetch when Institute approves the account
+G,MT,MT,2016,Regular,,Steve Bullock,3284519.78,,Greg Gianforte,8581754.86,,"FollowTheMoney (state filings, total contributions)",
+G,MT,MT,2020,Regular,,Mike Cooney,4017006.82,,Greg Gianforte,11510340.41,,"FollowTheMoney (state filings, total contributions)",
+G,MT,MT,2024,Regular,,Ryan Busse,2863695.66,,Greg Gianforte,3209918.85,,"FollowTheMoney (state filings, total contributions)",
+G,NC,NC,2016,Regular,,Roy Cooper,24418705.97,,Pat McCrory,15579318.05,,"FollowTheMoney (state filings, total contributions)",
 G,NC,NC,2020,Regular,,Roy Cooper,38034345,,Dan Forest,10383088,,"TransparencyUSA (state filings, total contributions)",
 G,NC,NC,2024,Regular,,Josh Stein,84527584,,Mark Robinson,15740997,,"TransparencyUSA (state filings, total contributions)",
-G,ND,ND,2016,Regular,,Marvin Nelson,,,Doug Burgum,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,ND,ND,2020,Regular,,Shelley Lenz,,,Doug Burgum,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,ND,ND,2024,Regular,,Merrill Piepkorn,,,Kelly Armstrong,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,NE,NE,2018,Regular,,Bob Krist,,,Pete Ricketts,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,NE,NE,2022,Regular,,Carol Blood,,,Jim Pillen,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,ND,ND,2016,Regular,,Marvin Nelson,108251.04,,Doug Burgum,1853080.55,,"FollowTheMoney (state filings, total contributions)",
+G,ND,ND,2020,Regular,,Shelley Lenz,341656.12,,Doug Burgum,2258541.56,,"FollowTheMoney (state filings, total contributions)",
+G,ND,ND,2024,Regular,,Merrill Piepkorn,186140.53,,Kelly Armstrong,3818871.12,,"FollowTheMoney (state filings, total contributions)",
+G,NE,NE,2018,Regular,,Bob Krist,774010.27,,Pete Ricketts,4884909.84,,"FollowTheMoney (state filings, total contributions)",
+G,NE,NE,2022,Regular,,Carol Blood,635814.11,,Jim Pillen,11518611.94,,"FollowTheMoney (state filings, total contributions)",
 G,NE,NE,2026,Upcoming,,Lynne Walz,,,Jim Pillen,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,NH,NH,2016,Regular,,Colin Van Ostern,,,Chris Sununu,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,NH,NH,2016,Regular,,Colin Van Ostern,1609364.96,,Chris Sununu,1131401.18,,"FollowTheMoney (state filings, total contributions)",
 G,NH,NH,2018,Regular,,Molly Kelly,0,,Chris Sununu,0,,"TransparencyUSA (state filings, total contributions)",
 G,NH,NH,2020,Regular,,Dan Feltes,1013192,,Chris Sununu,0,,"TransparencyUSA (state filings, total contributions)",
 G,NH,NH,2022,Regular,,Tom Sherman,1976758,,Chris Sununu,0,,"TransparencyUSA (state filings, total contributions)",
 G,NH,NH,2024,Regular,,Joyce Craig,0,,Kelly Ayotte,21095361,,"TransparencyUSA (state filings, total contributions)",
 G,NH,NH,2026,Upcoming,,Cinde Warmington,,,Kelly Ayotte,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,NJ,NJ,2017,Regular,,Phil Murphy,,,Kim Guadagno,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,NJ,NJ,2021,Regular,,Phil Murphy,,,Jack Ciattarelli,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,NJ,NJ,2017,Regular,,Phil Murphy,36514490.90,,Kim Guadagno,8916189.45,,"FollowTheMoney (state filings, total contributions)",
+G,NJ,NJ,2021,Regular,,Phil Murphy,24538609.81,,Jack Ciattarelli,23492630.17,,"FollowTheMoney (state filings, total contributions)",
 G,NJ,NJ,2025,Regular,,Mikie Sherrill,,,Jack Ciattarelli,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,NM,NM,2018,Regular,,Michelle Lujan Grisham,0,,Steve Pearce,0,,"TransparencyUSA (state filings, total contributions)",
 G,NM,NM,2022,Regular,,Michelle Lujan Grisham,12987117,,Mark Ronchetti,0,,"TransparencyUSA (state filings, total contributions)",
@@ -104,52 +104,52 @@ G,NY,NY,2026,Upcoming,,Kathy Hochul,16594119,,Bruce Blakeman,13445025,,"Transpar
 G,OH,OH,2018,Regular,,Richard Cordray,19567016,,Mike DeWine,24088464,,"TransparencyUSA (state filings, total contributions)",
 G,OH,OH,2022,Regular,,Nan Whaley,8841328,,Mike DeWine,20425999,,"TransparencyUSA (state filings, total contributions)",
 G,OH,OH,2026,Upcoming,,Amy Acton,15928993,,Vivek Ramaswamy,30306297,,"TransparencyUSA (state filings, total contributions)",
-G,OK,OK,2018,Regular,,Drew Edmondson,,,Kevin Stitt,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,OK,OK,2022,Regular,,Joy Hofmeister,,,Kevin Stitt,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,OK,OK,2018,Regular,,Drew Edmondson,4139279.91,,Kevin Stitt,10691903.23,,"FollowTheMoney (state filings, total contributions)",
+G,OK,OK,2022,Regular,,Joy Hofmeister,3481610.07,,Kevin Stitt,11989881.57,,"FollowTheMoney (state filings, total contributions)",
 G,OK,OK,2026,Upcoming,,Democratic Candidate,,,Genter Drummond,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,OR,OR,2016,Special,,Kate Brown,,,Bud Pierce,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,OR,OR,2018,Regular,,Kate Brown,,,Knute Buehler,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,OR,OR,2022,Regular,,Tina Kotek,,,Christine Drazan,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,OR,OR,2016,Special,,Kate Brown,5411935.90,,Bud Pierce,3469117.36,,"FollowTheMoney (state filings, total contributions)",
+G,OR,OR,2018,Regular,,Kate Brown,20297458.95,,Knute Buehler,19262697.66,,"FollowTheMoney (state filings, total contributions)",
+G,OR,OR,2022,Regular,,Tina Kotek,30342251.91,,Christine Drazan,22600858.99,,"FollowTheMoney (state filings, total contributions)",
 G,OR,OR,2026,Upcoming,,Tina Kotek,,,Christine Drazan,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,PA,PA,2018,Regular,,Tom Wolf,30459181,,Scott Wagner,19019692,,"TransparencyUSA (state filings, total contributions)",
 G,PA,PA,2022,Regular,,Josh Shapiro,72513114,,Doug Mastriano,8175543,,"TransparencyUSA (state filings, total contributions)",
 G,PA,PA,2026,Upcoming,,Josh Shapiro,34960533,,Stacy Garrity,2545436,,"TransparencyUSA (state filings, total contributions)",
-G,RI,RI,2018,Regular,,Gina Raimondo,,,Allan Fung,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,RI,RI,2022,Regular,,Dan McKee,,,Ashley Kalus,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,RI,RI,2018,Regular,,Gina Raimondo,8287905.66,,Allan Fung,2653416.93,,"FollowTheMoney (state filings, total contributions)",
+G,RI,RI,2022,Regular,,Dan McKee,3857748.03,,Ashley Kalus,5009115.32,,"FollowTheMoney (state filings, total contributions)",
 G,RI,RI,2026,Upcoming,,Dan McKee,,,Aaron Guckian,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,SC,SC,2018,Regular,,James Smith,3217280,,Henry McMaster,7884372,,"TransparencyUSA (state filings, total contributions)",
 G,SC,SC,2022,Regular,,Joe Cunningham,3668714,,Henry McMaster,6530197,,"TransparencyUSA (state filings, total contributions)",
 G,SC,SC,2026,Upcoming,,Jermaine Johnson,753609,,Alan Wilson,62585,,"TransparencyUSA (state filings, total contributions)",
-G,SD,SD,2018,Regular,,Billie Sutton,,,Kristi Noem,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,SD,SD,2022,Regular,,Jamie Smith,,,Kristi Noem,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,SD,SD,2018,Regular,,Billie Sutton,3880460.86,,Kristi Noem,7171481.51,,"FollowTheMoney (state filings, total contributions)",
+G,SD,SD,2022,Regular,,Jamie Smith,1311681.39,,Kristi Noem,17527113.75,,"FollowTheMoney (state filings, total contributions)",
 G,SD,SD,2026,Upcoming,,Democratic Candidate,,,Larry Rhoden,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,TN,TN,2018,Regular,,Karl Dean,,,Bill Lee,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,TN,TN,2022,Regular,,Jason Martin,,,Bill Lee,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,TN,TN,2018,Regular,,Karl Dean,,,Bill Lee,,,,pending: FTM free API call limit reached mid-pass — refetch when Institute approves the account
+G,TN,TN,2022,Regular,,Jason Martin,1262621.86,,Bill Lee,6114276.53,,"FollowTheMoney (state filings, total contributions)",
 G,TN,TN,2026,Upcoming,,Jerri Green,,,Marsha Blackburn,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,TX,TX,2018,Regular,,Lupe Valdez,1848696,,Greg Abbott,44875409,,"TransparencyUSA (state filings, total contributions)",
 G,TX,TX,2022,Regular,,Beto O'Rourke,81098843,,Greg Abbott,111730938,,"TransparencyUSA (state filings, total contributions)",
 G,TX,TX,2026,Upcoming,,Gina Hinojosa,8589462,,Greg Abbott,71434049,,"TransparencyUSA (state filings, total contributions)",
-G,UT,UT,2016,Regular,,Mike Weinholtz,,,Gary Herbert,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,UT,UT,2020,Regular,,Chris Peterson,,,Spencer Cox,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,UT,UT,2024,Regular,,Brian King,,,Spencer Cox,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,VA,VA,2017,Regular,,Ralph Northam,,,Ed Gillespie,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,UT,UT,2016,Regular,,Mike Weinholtz,3107337.47,,Gary Herbert,3628548.10,,"FollowTheMoney (state filings, total contributions)",
+G,UT,UT,2020,Regular,,Chris Peterson,172235.04,,Spencer Cox,4526464.36,,"FollowTheMoney (state filings, total contributions)",
+G,UT,UT,2024,Regular,,Brian King,1526546.72,,Spencer Cox,7379974.37,,"FollowTheMoney (state filings, total contributions)",
+G,VA,VA,2017,Regular,,Ralph Northam,37044906.82,,Ed Gillespie,29317941.88,,"FollowTheMoney (state filings, total contributions)",
 G,VA,VA,2021,Regular,,Terry McAuliffe,68384991,,Glenn Youngkin,53653703,,"TransparencyUSA (state filings, total contributions)",
 G,VA,VA,2025,Regular,,Abigail Spanberger,67536246,,Winsome Earle-Sears,42920223,,"TransparencyUSA (state filings, total contributions)",TU lists Winsome Sears = Winsome Earle-Sears (same person)
-G,VT,VT,2016,Regular,,Sue Minter,,,Phil Scott,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,VT,VT,2018,Regular,,Christine Hallquist,,,Phil Scott,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,VT,VT,2020,Regular,,David Zuckerman,,,Phil Scott,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,VT,VT,2022,Regular,,Brenda Siegel,,,Phil Scott,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,VT,VT,2024,Regular,,Esther Charlestin,,,Phil Scott,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,VT,VT,2016,Regular,,Sue Minter,2315405.22,,Phil Scott,1685616.23,,"FollowTheMoney (state filings, total contributions)",
+G,VT,VT,2018,Regular,,Christine Hallquist,559474.45,,Phil Scott,703301.18,,"FollowTheMoney (state filings, total contributions)",
+G,VT,VT,2020,Regular,,David Zuckerman,860307.11,,Phil Scott,510544.60,,"FollowTheMoney (state filings, total contributions)",
+G,VT,VT,2022,Regular,,Brenda Siegel,187256.13,,Phil Scott,264136.23,,"FollowTheMoney (state filings, total contributions)",
+G,VT,VT,2024,Regular,,Esther Charlestin,56227.55,,Phil Scott,356154.00,,"FollowTheMoney (state filings, total contributions)",
 G,VT,VT,2026,Upcoming,,Amanda Janoo,,,Phil Scott,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,WA,WA,2016,Regular,,Jay Inslee,,,Bill Bryant,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,WA,WA,2016,Regular,,Jay Inslee,,,Bill Bryant,,,,pending: FTM free API call limit reached mid-pass — refetch when Institute approves the account
 G,WA,WA,2020,Regular,,Jay Inslee,7163240,,Loren Culp,0,,"TransparencyUSA (state filings, total contributions)",
 G,WA,WA,2024,Regular,,Bob Ferguson,14663732,,Dave Reichert,6782177,,"TransparencyUSA (state filings, total contributions)",
 G,WI,WI,2018,Regular,,Tony Evers,11328829,,Scott Walker,26944468,,"TransparencyUSA (state filings, total contributions)",
 G,WI,WI,2022,Regular,,Tony Evers,41158199,,Tim Michels,34762907,,"TransparencyUSA (state filings, total contributions)",
 G,WI,WI,2026,Upcoming,,Mandela Barnes,,,Tom Tiffany,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,WV,WV,2016,Regular,,Jim Justice,,,Bill Cole,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,WV,WV,2020,Regular,,Ben Salango,,,Jim Justice,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,WV,WV,2024,Regular,,Steve Williams,,,Patrick Morrisey,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,WV,WV,2016,Regular,,Jim Justice,,,Bill Cole,,,,pending: FTM free API call limit reached mid-pass — refetch when Institute approves the account
+G,WV,WV,2020,Regular,,Ben Salango,,,Jim Justice,,,,pending: FTM free API call limit reached mid-pass — refetch when Institute approves the account
+G,WV,WV,2024,Regular,,Steve Williams,,,Patrick Morrisey,,,,pending: FTM free API call limit reached mid-pass — refetch when Institute approves the account
 G,WY,WY,2018,Regular,,Mary Throne,448494,,Mark Gordon,1271172,,"TransparencyUSA (state filings, total contributions)",
 G,WY,WY,2022,Regular,,Theresa Livingston,3330,,Mark Gordon,799545,,"TransparencyUSA (state filings, total contributions)",
 G,WY,WY,2026,Upcoming,,Democratic Candidate,,,Megan Degenfelder,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual

@@ -62,3 +62,6 @@ __pycache__/
 # scripts/build-state-leg-districts-historical.mjs; the built TopoJSON in
 # public/state-leg-districts-historical/ IS committed)
 data-entry/tiger-state-leg-historical/
+
+# FollowTheMoney API response cache (scripts/fetch-governor-fundraising-ftm.py)
+.ftm-cache/
