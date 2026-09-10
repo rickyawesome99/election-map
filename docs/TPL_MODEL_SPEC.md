@@ -104,10 +104,18 @@ estimated with this strip already applied, so the two terms partition cleanly.
   `scripts/generate-fundraising-data.py` → `data/fundraisingData.ts`).
 - Applies only where **both** candidates' receipts are known ($0 = candidate
   never crossed the FEC's $5k filing threshold; null = unknown → FF skipped).
-- Excluded for President by design; 0 for imputed rows; Governor pending —
-  gubernatorial money is filed with the states, not the FEC.
+- Excluded for President by design; 0 for imputed rows. Governor rows come from
+  state filings (TransparencyUSA / FollowTheMoney / OCPF) since gubernatorial
+  money is not filed with the FEC; 15 of the 36 2026 races are still uncollected.
 - The forward projection (`computeProjectedMargin`) adds the same
-  `computeFundraisingPts` for 2026 races using live receipts.
+  `computeFundraisingPts` for 2026 races using live receipts, via
+  `computeRaceFundraisingPts(raceType, raceId)` — the one lookup the House,
+  Senate and Governor pages share with the forecast.
+- Displayed on each 2026 race page: the **Fundraising** section
+  (`FundraisingLedgerSection`) shows both candidates' receipts, their share split
+  and the resulting FF points, and the Forecast Calculation card's Fundraising row
+  carries the same number. Races with a side missing render as TBD. The generator
+  also emits `fundraisingSources` (current cycle only) for the attribution line.
 
 ## Step 4 — Environment & elasticity (`getTplFit()` in `lib/tplCompute.ts`)
 
@@ -233,8 +241,16 @@ reference (post-Phase-4): 2024-President NM MAE 3.02 (pres-only baseline 1.93),
   state|party|normalized name and pooled across offices). The penalty is the
   "unseen candidate = replacement level" prior: one-race candidates keep what is
   left after a known opponent's effect, shrunk by 1/(1+λ); two one-race
-  candidates split the residual evenly (±r/2). Per-race WAR = a_c + s·ε/2 (s = +1
-  R, −1 D), so R-WAR − D-WAR = r exactly. Evidence for persistent effects:
+  candidates split the residual evenly (±r/3 each, leaving ε = r/3).
+  **Opponent-specific expectation (2026-09-10):** WAR is scored against what a
+  generic nominee would do *against this opponent*: `expectedVsOpponent` =
+  expected − s·a_opp (s = +1 R, −1 D; a_opp signed toward the opponent), and
+  per-race WAR = s·(actual − expectedVsOpponent) = a_c + s·ε. The candidate keeps
+  their own effect plus the whole unexplained leftover, so the two sides' WARs
+  no longer sum to the residual (each absorbs ε, as a batter and pitcher both
+  book the same hit); two one-race candidates each get ⅔·r. Superseded: the
+  earlier a_c + s·ε/2 split, which made R-WAR − D-WAR = r but meant no
+  displayable "expected" column could reconcile Actual and WAR. Evidence for persistent effects:
   leave-one-out correlation of repeat candidates' residuals r = 0.66 (0.38
   excluding |r| > 25), slope 0.68 → λ ≈ 1.
   **Recency (2026-09-08):** effects are estimated *as of each race's year*. For
@@ -253,7 +269,10 @@ reference (post-Phase-4): 2024-President NM MAE 3.02 (pres-only baseline 1.93),
   recency. With structural money (above) the same row is residual +3.9 / WAR +1.8. Refinements deferred: λ and decay via
   harness leave-one-race-out, pre-2016 track records (Baker/Manchin/Justice are
   n=1 in the window). Surfaced as the model page's WAR sub-tab (`/model/war`):
-  Residual / Effect (n) / WAR columns.
+  Expected / vs Opp / Residual / Effect (n) / WAR columns (vs Opp tooltip shows
+  the opponent's effect). Under the opponent-specific rule: Scott 2022 expected
+  R−25.3, vs Siegel R−10.1, actual R+47.0 → WAR +57.1 (Siegel −30.3);
+  DeSantis 2022 vs Crist R+16.7 → WAR +2.7 (Crist −3.1).
 - **Eligibility refinement** (Phase 6): a slot polling < 5% while the opponent
   clears 90% is a write-in-scale candidacy, not a ballot nominee (AZ-08/AZ-09
   2022) — treated as unfilled.
@@ -274,5 +293,6 @@ reference (post-Phase-4): 2024-President NM MAE 3.02 (pres-only baseline 1.93),
 | `scripts/generate-fundraising-data.py` | CSV → fundraisingData.ts generator |
 | `scripts/tplBacktest.ts` | Tracking harness (holdout / matrix / fit modes) |
 | `scripts/tplCalibrate.ts` | Leakage-free calibration search (adopted values in header) |
+| `components/RaceDetailSections.tsx` | Race page sections, incl. Fundraising + Forecast Calculation |
 | `components/TplModelPage.tsx` | Ledger UI (β* popup, E strip, Wt column) |
 | `components/CountyTplCard.tsx` | County ledger card |

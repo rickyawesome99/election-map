@@ -3,7 +3,7 @@ import Image from "next/image";
 import CandidateLink from "@/components/CandidateLink";
 import { WinProbabilityLabel } from "@/components/WinProbabilityLabel";
 import { InfoTooltip } from "@/components/InfoTooltip";
-import { POLL_WEIGHT, GENERIC_BALLOT } from "@/lib/tplCompute";
+import { POLL_WEIGHT, GENERIC_BALLOT, FF_K, FF_MAX } from "@/lib/tplCompute";
 
 type PollRow = {
   label: string;
@@ -731,6 +731,130 @@ export function CandidatesLedgerSection({
   );
 }
 
+// ── Fundraising ───────────────────────────────────────────────────────────────
+// Cycle-to-date receipts for the two general-election candidates, shown as a share
+// split. Numbers come from data/fundraisingData.ts (FEC filings for House/Senate,
+// state filings for governors — see the source line). A null side means the race
+// isn't sourced yet, and the section says so rather than showing a one-sided total.
+
+function formatReceipts(v: number): string {
+  if (v >= 100_000_000) return `$${Math.round(v / 1_000_000)}M`;
+  if (v >= 1_000_000) return `$${(v / 1_000_000).toFixed(1)}M`;
+  if (v >= 10_000) return `$${Math.round(v / 1_000)}K`;
+  if (v >= 1_000) return `$${(v / 1_000).toFixed(1)}K`;
+  return `$${v.toLocaleString()}`;
+}
+
+export function FundraisingLedgerSection({
+  dem,
+  rep,
+  demName,
+  repName,
+  source,
+  pendingNote,
+  fundraisingPts,
+}: {
+  // Whole dollars raised; null on either side = not yet sourced.
+  dem: number | null;
+  rep: number | null;
+  demName?: string;
+  repName?: string;
+  source?: string | null;
+  // Why the numbers are missing, e.g. governors filing with the state, not the FEC.
+  pendingNote?: string;
+  // The race's FF points in the forecast, R-positive (see computeRaceFundraisingPts).
+  fundraisingPts?: number | null;
+}) {
+  if (dem == null || rep == null) {
+    return (
+      <div>
+        <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>
+          Fundraising TBD{pendingNote ? ` — ${pendingNote}` : ""}.
+        </p>
+      </div>
+    );
+  }
+
+  const total = dem + rep;
+  const rows = [
+    { party: "D" as const, name: demName ?? "Democrat", amount: dem },
+    { party: "R" as const, name: repName ?? "Republican", amount: rep },
+  ];
+  const leader = dem === rep ? null : dem > rep ? "D" : "R";
+  const gap = Math.abs(dem - rep);
+  const ffPts = fundraisingPts ?? null;
+  const ffDisplay = ffPts == null ? null
+    : Math.abs(ffPts) < 0.05 ? "None"
+    : `${ffPts > 0 ? "R" : "D"}+${Math.abs(ffPts).toFixed(1)}`;
+
+  return (
+    <div>
+      {rows.map((row, i) => {
+        const accentColor = partyAccent(row.party);
+        const share = total > 0 ? (row.amount / total) * 100 : 50;
+        return (
+          <div
+            key={row.party}
+            className="py-3.5"
+            style={{ borderBottom: i === rows.length - 1 ? "none" : "1px solid var(--app-border)" }}
+          >
+            <div className="flex items-baseline justify-between gap-4">
+              <div className="min-w-0">
+                <div className="truncate" style={{ fontFamily: "var(--font-serif)", fontSize: "1.15rem", fontWeight: 700, color: accentColor }}>
+                  {row.name}
+                </div>
+                <div className="text-xs mt-0.5" style={{ color: "var(--app-text-muted)" }}>
+                  {partyLabel(row.party)}
+                </div>
+              </div>
+              <div
+                className="shrink-0 text-2xl font-extrabold tabular-nums"
+                style={{ color: accentColor }}
+                title={`$${row.amount.toLocaleString()}`}
+              >
+                {formatReceipts(row.amount)}
+              </div>
+            </div>
+            <div className="mt-2.5 flex items-center gap-2.5">
+              <div className="h-1.5 flex-1 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }}>
+                <div className="h-full rounded-full" style={{ width: `${share}%`, background: accentColor }} />
+              </div>
+              <span className="shrink-0 text-[11px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
+                {share.toFixed(0)}%
+              </span>
+            </div>
+          </div>
+        );
+      })}
+
+      <div className="flex flex-wrap gap-x-6 gap-y-1.5 pt-3.5" style={{ borderTop: "1px solid var(--app-border)" }}>
+        <div className="text-xs" style={{ color: "var(--app-text-muted)" }}>
+          Total raised <span className="font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{formatReceipts(total)}</span>
+        </div>
+        <div className="text-xs" style={{ color: "var(--app-text-muted)" }}>
+          Advantage{" "}
+          <span className="font-bold tabular-nums" style={{ color: leader ? partyAccent(leader) : "var(--app-text-primary)" }}>
+            {leader ? `${leader}+${formatReceipts(gap)}` : "Even"}
+          </span>
+        </div>
+        {ffDisplay && (
+          <div className="text-xs" style={{ color: "var(--app-text-muted)" }}>
+            Forecast adjustment{" "}
+            <span className="font-bold tabular-nums" style={{ color: ffPts && Math.abs(ffPts) >= 0.05 ? partyAccent(ffPts > 0 ? "R" : "D") : "var(--app-text-primary)" }}>
+              {ffDisplay}
+            </span>
+          </div>
+        )}
+      </div>
+
+      <p className="mt-2.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+        Candidate-committee receipts, cycle to date{source ? ` · ${source}` : ""}.
+        {(dem === 0 || rep === 0) && " $0 means no filings on record."}
+      </p>
+    </div>
+  );
+}
+
 export function MarginAndWinProbabilityCard({
   margin,
   demPct,
@@ -951,6 +1075,10 @@ export function ForecastCalculationCard({
   const incDisplay = incIsOpen ? "Open" : incPts > 0 ? `R+${incPts.toFixed(1)}` : `D+${Math.abs(incPts).toFixed(1)}`;
   const incColor = incIsOpen ? "var(--app-text-very-muted)" : incPts > 0 ? "var(--party-rep)" : "var(--party-dem)";
 
+  const ffIsZero = Math.abs(ffPts) < 0.05;
+  const ffDisplay = fundraisingPts == null ? "—" : ffIsZero ? "0" : ffPts > 0 ? `R+${ffPts.toFixed(1)}` : `D+${Math.abs(ffPts).toFixed(1)}`;
+  const ffColor = fundraisingPts == null || ffIsZero ? "var(--app-text-very-muted)" : ffPts > 0 ? "var(--party-rep)" : "var(--party-dem)";
+
   const effectivePollWeight = pollingAvg == null ? 0 : POLL_WEIGHT;
   const effectiveModelWeight = 1 - effectivePollWeight;
   const rowStyle = {
@@ -984,11 +1112,12 @@ export function ForecastCalculationCard({
   );
   const frTooltip = (
     <>
-      Additive point adjustment based on cash-on-hand advantage.
+      Additive point adjustment based on the two candidates&apos; receipts this cycle.
       <br /><br />
-      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>pts = gap% × 0.06, capped at ±4</span>
+      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>pts = gap% × {FF_K}, capped at ±{FF_MAX}</span>
       <br /><br />
-      gap% = (R cash − D cash) / total × 100. A 50% gap ≈ +3 pts. Pending FEC data entry.
+      gap% = (R receipts − D receipts) / total × 100. A 50% gap ≈ {(50 * FF_K).toFixed(1)} pts.
+      Applies only where both candidates&apos; receipts are known — otherwise 0.
     </>
   );
   const candTooltip = (
@@ -1053,9 +1182,7 @@ export function ForecastCalculationCard({
         )}
         <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
           <InfoTooltip label="Fundraising">{frTooltip}</InfoTooltip>
-          <span className="text-sm font-bold" style={{ color: "var(--app-text-very-muted)" }}>
-            {fundraisingPts == null ? "—" : fundraisingPts > 0 ? `R+${fundraisingPts}` : fundraisingPts < 0 ? `D+${Math.abs(fundraisingPts)}` : "0"}
-          </span>
+          <span className="text-sm font-bold" style={{ color: ffColor }}>{ffDisplay}</span>
         </div>
         <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
           <InfoTooltip label="Candidates">{candTooltip}</InfoTooltip>
@@ -1128,9 +1255,7 @@ export function ForecastCalculationCard({
           )}
           <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-3 py-2.5" style={rowStyle}>
             <InfoTooltip label="Fundraising">{frTooltip}</InfoTooltip>
-            <span className="text-sm font-bold" style={{ color: "var(--app-text-very-muted)" }}>
-              {fundraisingPts == null ? "—" : fundraisingPts > 0 ? `R+${fundraisingPts}` : fundraisingPts < 0 ? `D+${Math.abs(fundraisingPts)}` : "0"}
-            </span>
+            <span className="text-sm font-bold" style={{ color: ffColor }}>{ffDisplay}</span>
           </div>
           <div
             className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-3 py-2.5 rounded-b-lg"

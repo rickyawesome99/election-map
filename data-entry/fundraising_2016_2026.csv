@@ -1,7 +1,7 @@
 office,state,race,year,election_type,eligible,dem_candidate,dem_receipts,dem_fec_id,rep_candidate,rep_receipts,rep_fec_id,source,notes
 G,AK,AK,2018,Regular,,Mark Begich,816689.69,,Mike Dunleavy,896604.56,,"FollowTheMoney (state filings, total contributions)",
 G,AK,AK,2022,Regular,,Les Gara,2257671.78,,Mike Dunleavy,2757882.04,,"FollowTheMoney (state filings, total contributions)",
-G,AK,AK,2026,Upcoming,,Tom Begich,,,Dave Bronson,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,AK,AK,2026,Upcoming,,Jonathan Kreiss-Tomkins,,,Dave Bronson,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,AL,AL,2018,Regular,,Walt Maddox,2710079,,Kay Ivey,6479977,,"TransparencyUSA (state filings, total contributions)",
 G,AL,AL,2022,Regular,,Yolanda Flowers,47794,,Kay Ivey,10742614,,"TransparencyUSA (state filings, total contributions)",
 G,AL,AL,2026,Upcoming,,Doug Jones,0,,Tommy Tuberville,13792994,,"TransparencyUSA (state filings, total contributions)",
@@ -16,7 +16,7 @@ G,CA,CA,2022,Regular,,Gavin Newsom,19177717,,Brian Dahle,2724235,,"TransparencyU
 G,CA,CA,2026,Upcoming,,Xavier Becerra,24217949,,Steve Hilton,17445485,,"TransparencyUSA (state filings, total contributions)",
 G,CO,CO,2018,Regular,,Jared Polis,24474055,,Walker Stapleton,4323653,,"TransparencyUSA (state filings, total contributions)",
 G,CO,CO,2022,Regular,,Jared Polis,12527619,,Heidi Ganahl,3725407,,"TransparencyUSA (state filings, total contributions)",
-G,CO,CO,2026,Upcoming,,Michael Bennet,,,Barbara Kirkmeyer,,,,pending: 2026 nominees (Bennet/Kirkmeyer) not yet in TU data
+G,CO,CO,2026,Upcoming,,Phil Weiser,6951031.64,,Victor Marx,2935521.15,,"TransparencyUSA (state filings, total contributions)",
 G,CT,CT,2018,Regular,,Ned Lamont,16355489.36,,Bob Stefanowski,6872012.28,,"FollowTheMoney (state filings, total contributions)",
 G,CT,CT,2022,Regular,,Ned Lamont,31157222.60,,Bob Stefanowski,15225508.90,,"FollowTheMoney (state filings, total contributions)",
 G,CT,CT,2026,Upcoming,,Ned Lamont,,,Ryan Fazio,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
@@ -25,20 +25,20 @@ G,DE,DE,2020,Regular,,John Carney,830076.05,,Julianne Murray,282516.34,,"FollowT
 G,DE,DE,2024,Regular,,Matt Meyer,3816050.07,,Mike Ramone,546788.82,,"FollowTheMoney (state filings, total contributions)",
 G,FL,FL,2018,Regular,,Andrew Gillum,19488774,,Ron DeSantis,60205948,,"TransparencyUSA (state filings, total contributions)",
 G,FL,FL,2022,Regular,,Charlie Crist,32427595,,Ron DeSantis,198824781,,"TransparencyUSA (state filings, total contributions)",
-G,FL,FL,2026,Upcoming,,David Jolly,,,Byron Donalds,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,GA,GA,2018,Regular,,Stacey Abrams,0,,Brian Kemp,21875250,,"TransparencyUSA (state filings, total contributions)",
-G,GA,GA,2022,Regular,,Stacey Abrams,0,,Brian Kemp,31494464,,"TransparencyUSA (state filings, total contributions)",
+G,FL,FL,2026,Upcoming,,David Jolly,5531881.96,,Byron Donalds,99442170.96,,"TransparencyUSA (state filings, total contributions)",
+G,GA,GA,2018,Regular,,Stacey Abrams,27740647.26,,Brian Kemp,22390930.71,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
+G,GA,GA,2022,Regular,,Stacey Abrams,53109125.25,,Brian Kemp,86033722.59,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
 G,GA,GA,2026,Upcoming,,Keisha Lance Bottoms,5774631,,Rick Jackson,118984243,,"TransparencyUSA (state filings, total contributions)",
 G,HI,HI,2018,Regular,,David Ige,2829872.81,,Andria Tupola,521905.94,,"FollowTheMoney (state filings, total contributions)",
 G,HI,HI,2022,Regular,,Josh Green,4116868.08,,Duke Aiona,285405.50,,"FollowTheMoney (state filings, total contributions)",
-G,HI,HI,2026,Upcoming,,Josh Green,,,Republican Candidate,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,HI,HI,2026,Upcoming,,Josh Green,,,Gary Cordery,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,IA,IA,2018,Regular,,Fred Hubbell,22575532,,Kim Reynolds,14993149,,"TransparencyUSA (state filings, total contributions)",
 G,IA,IA,2022,Regular,,Deidre DeJear,2460314,,Kim Reynolds,8865353,,"TransparencyUSA (state filings, total contributions)",
 G,IA,IA,2026,Upcoming,,Rob Sand,19860206,,Zach Lahn,1218702,,"TransparencyUSA (state filings, total contributions)",
 G,ID,ID,2018,Regular,,Paulette Jordan,1252283.40,,Brad Little,3370322.89,,"FollowTheMoney (state filings, total contributions)",
 G,ID,ID,2022,Regular,,Stephen Heidt,28353.20,,Brad Little,2381242.80,,"FollowTheMoney (state filings, total contributions)",
-G,ID,ID,2026,Upcoming,,Terri Pickens,,,Brad Little,,,,pending: TU cycle-scoping broken for Idaho — values identical across cycles; needs manual fill
-G,IL,IL,2018,Regular,,JB Pritzker,176492547,,Bruce Rauner,0,,"TransparencyUSA (state filings, total contributions)",
+G,ID,ID,2026,Upcoming,,Terri Pickens,,,Brad Little,,,,"pending: TU cycle-scoping broken for Idaho (Little identical $2,057,743.31 in 2018/2022/2026 vs FTM 3.37M/2.38M); needs manual fill"
+G,IL,IL,2018,Regular,,JB Pritzker,176346769.22,,Bruce Rauner,86494273.50,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
 G,IL,IL,2022,Regular,,JB Pritzker,152678879,,Darren Bailey,17962590,,"TransparencyUSA (state filings, total contributions)",
 G,IL,IL,2026,Upcoming,,JB Pritzker,25619035,,Darren Bailey,2166962,,"TransparencyUSA (state filings, total contributions)",
 G,IN,IN,2016,Regular,,John Gregg,17006424.45,,Eric Holcomb,14851654.72,,"FollowTheMoney (state filings, total contributions)",
@@ -46,31 +46,31 @@ G,IN,IN,2020,Regular,,Woody Myers,1247519,,Eric Holcomb,11240351,,"TransparencyU
 G,IN,IN,2024,Regular,,Jennifer McCormick,5892427,,Mike Braun,17735776,,"TransparencyUSA (state filings, total contributions)",
 G,KS,KS,2018,Regular,,Laura Kelly,3475427.97,,Kris Kobach,3715117.44,,"FollowTheMoney (state filings, total contributions)",
 G,KS,KS,2022,Regular,,Laura Kelly,7966527.60,,Derek Schmidt,4634549.07,,"FollowTheMoney (state filings, total contributions)",
-G,KS,KS,2026,Upcoming,,Ethan Corson,,,Jeff Colyer,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,KS,KS,2026,Upcoming,,Cindy Holscher,,,Ty Masterson,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,KY,KY,2019,Regular,,Andy Beshear,9552283.96,,Matt Bevin,10763042.86,,"FollowTheMoney (state filings, total contributions)",
 G,KY,KY,2023,Regular,,Andy Beshear,25609504.27,,Daniel Cameron,7285735.44,,"FollowTheMoney (state filings, total contributions)",
 G,LA,LA,2019,Regular,,John Bel Edwards,23332374.42,,Eddie Rispone,21011911.63,,"FollowTheMoney (state filings, total contributions)",
 G,LA,LA,2023,Regular,,Shawn Wilson,2610380.02,,Jeff Landry,16221367.41,,"FollowTheMoney (state filings, total contributions)",
-G,MA,MA,2018,Regular,,Jay Gonzalez,,,Charlie Baker,,,,pending: FTM has 0 records for Baker (state OCPF coverage gap) — needs OCPF/manual
+G,MA,MA,2018,Regular,,Jay Gonzalez,1257304.07,,Charlie Baker,7813782.12,,"MA OCPF (api.ocpf.us statewide YTD, 2-year campaign window)",sum of OCPF calendar-year receipts 2017+2018 (FTM has 0 records for Baker)
 G,MA,MA,2022,Regular,,Maura Healey,15999298.13,,Geoff Diehl,2724024.57,,"FollowTheMoney (state filings, total contributions)",
-G,MA,MA,2026,Upcoming,,Maura Healey,,,Brian Shortsleeve,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,MA,MA,2026,Upcoming,,Maura Healey,6516289.91,,Michael Minogue,17709313.29,,"MA OCPF (api.ocpf.us statewide YTD, 2-year campaign window)","sum of OCPF calendar-year receipts 2025+2026, cycle to date"
 G,MD,MD,2018,Regular,,Ben Jealous,4423808.92,,Larry Hogan,17773094.16,,"FollowTheMoney (state filings, total contributions)",
 G,MD,MD,2022,Regular,,Wes Moore,14373011.85,,Dan Cox,1555706.46,,"FollowTheMoney (state filings, total contributions)",
 G,MD,MD,2026,Upcoming,,Wes Moore,,,Dan Cox,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,ME,ME,2018,Regular,,Janet Mills,3048406.55,,Shawn Moody,1874553.98,,"FollowTheMoney (state filings, total contributions)",
 G,ME,ME,2022,Regular,,Janet Mills,5843923.63,,Paul LePage,2646099.62,,"FollowTheMoney (state filings, total contributions)",
 G,ME,ME,2026,Upcoming,,Hannah Pingree,,,Robert Charles,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,MI,MI,2018,Regular,,Gretchen Whitmer,14371129,,Bill Schuette,0,,"TransparencyUSA (state filings, total contributions)",
+G,MI,MI,2018,Regular,,Gretchen Whitmer,13326968.52,,Bill Schuette,12354808.99,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
 G,MI,MI,2022,Regular,,Gretchen Whitmer,32474199,,Tudor Dixon,8857962,,"TransparencyUSA (state filings, total contributions)",
 G,MI,MI,2026,Upcoming,,Jocelyn Benson,5958887,,John James,4492470,,"TransparencyUSA (state filings, total contributions)",
 G,MN,MN,2018,Regular,,Tim Walz,5779215,,Jeff Johnson,3190007,,"TransparencyUSA (state filings, total contributions)",
 G,MN,MN,2022,Regular,,Tim Walz,9899289,,Scott Jensen,6485090,,"TransparencyUSA (state filings, total contributions)",
-G,MN,MN,2026,Upcoming,,Amy Klobuchar,,,Lisa Demuth,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,MN,MN,2026,Upcoming,,Amy Klobuchar,9312379.82,,Lisa Demuth,1102118.76,,"TransparencyUSA (state filings, total contributions)",
 G,MO,MO,2016,Regular,,Chris Koster,28709070.80,,Eric Greitens,32111917.95,,"FollowTheMoney (state filings, total contributions)",
 G,MO,MO,2020,Regular,,Nicole Galloway,7384398.56,,Mike Parson,5753313.99,,"FollowTheMoney (state filings, total contributions)",
 G,MO,MO,2024,Regular,,Crystal Quade,2444528.84,,Mike Kehoe,6206941.25,,"FollowTheMoney (state filings, total contributions)",
 G,MS,MS,2019,Regular,,Jim Hood,7531556.19,,Tate Reeves,3914038.57,,"FollowTheMoney (state filings, total contributions)",
-G,MS,MS,2023,Regular,,Brandon Presley,,,Tate Reeves,,,,pending: FTM free API call limit reached mid-pass — refetch when Institute approves the account
+G,MS,MS,2023,Regular,,Brandon Presley,13100000.00,,Tate Reeves,12700000.00,,MS SoS via Mississippi Today 2024-01-17,"full-cycle totals as published (spending-basis figures, treated as raised per user decision 2026-09-09); rounded to $0.1M"
 G,MT,MT,2016,Regular,,Steve Bullock,3284519.78,,Greg Gianforte,8581754.86,,"FollowTheMoney (state filings, total contributions)",
 G,MT,MT,2020,Regular,,Mike Cooney,4017006.82,,Greg Gianforte,11510340.41,,"FollowTheMoney (state filings, total contributions)",
 G,MT,MT,2024,Regular,,Ryan Busse,2863695.66,,Greg Gianforte,3209918.85,,"FollowTheMoney (state filings, total contributions)",
@@ -84,29 +84,29 @@ G,NE,NE,2018,Regular,,Bob Krist,774010.27,,Pete Ricketts,4884909.84,,"FollowTheM
 G,NE,NE,2022,Regular,,Carol Blood,635814.11,,Jim Pillen,11518611.94,,"FollowTheMoney (state filings, total contributions)",
 G,NE,NE,2026,Upcoming,,Lynne Walz,,,Jim Pillen,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,NH,NH,2016,Regular,,Colin Van Ostern,1609364.96,,Chris Sununu,1131401.18,,"FollowTheMoney (state filings, total contributions)",
-G,NH,NH,2018,Regular,,Molly Kelly,0,,Chris Sununu,0,,"TransparencyUSA (state filings, total contributions)",
-G,NH,NH,2020,Regular,,Dan Feltes,1013192,,Chris Sununu,0,,"TransparencyUSA (state filings, total contributions)",
-G,NH,NH,2022,Regular,,Tom Sherman,1976758,,Chris Sununu,0,,"TransparencyUSA (state filings, total contributions)",
-G,NH,NH,2024,Regular,,Joyce Craig,0,,Kelly Ayotte,21095361,,"TransparencyUSA (state filings, total contributions)",
-G,NH,NH,2026,Upcoming,,Cinde Warmington,,,Kelly Ayotte,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,NH,NH,2018,Regular,,Molly Kelly,1289857.80,,Chris Sununu,1585457.01,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
+G,NH,NH,2020,Regular,,Dan Feltes,1485312.55,,Chris Sununu,1693626.46,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
+G,NH,NH,2022,Regular,,Tom Sherman,2449136.20,,Chris Sununu,1741859.86,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
+G,NH,NH,2024,Regular,,Joyce Craig,7927269.09,,Kelly Ayotte,21062518.80,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
+G,NH,NH,2026,Upcoming,,Cinde Warmington,908162.96,,Kelly Ayotte,6079165.50,,"TransparencyUSA (state filings, total contributions)",
 G,NJ,NJ,2017,Regular,,Phil Murphy,36514490.90,,Kim Guadagno,8916189.45,,"FollowTheMoney (state filings, total contributions)",
 G,NJ,NJ,2021,Regular,,Phil Murphy,24538609.81,,Jack Ciattarelli,23492630.17,,"FollowTheMoney (state filings, total contributions)",
-G,NJ,NJ,2025,Regular,,Mikie Sherrill,,,Jack Ciattarelli,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,NM,NM,2018,Regular,,Michelle Lujan Grisham,0,,Steve Pearce,0,,"TransparencyUSA (state filings, total contributions)",
-G,NM,NM,2022,Regular,,Michelle Lujan Grisham,12987117,,Mark Ronchetti,0,,"TransparencyUSA (state filings, total contributions)",
+G,NJ,NJ,2025,Regular,,Mikie Sherrill,21125629.00,,Jack Ciattarelli,21549260.00,,"NJ ELEC (post-general news release, Dec 22 2025, Table 1)","candidate-committee raised, general election through Nov 24 2025 (excludes IEFs and primary)"
+G,NM,NM,2018,Regular,,Michelle Lujan Grisham,9644565.85,,Steve Pearce,4977239.39,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
+G,NM,NM,2022,Regular,,Michelle Lujan Grisham,14417031.73,,Mark Ronchetti,9539334.43,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
 G,NM,NM,2026,Upcoming,,Deb Haaland,13910580,,Gregg Hull,987856,,"TransparencyUSA (state filings, total contributions)",
 G,NV,NV,2018,Regular,,Steve Sisolak,11342811,,Adam Laxalt,8886250,,"TransparencyUSA (state filings, total contributions)",
 G,NV,NV,2022,Regular,,Steve Sisolak,12457573,,Joe Lombardo,4699159,,"TransparencyUSA (state filings, total contributions)",
 G,NV,NV,2026,Upcoming,,Aaron Ford,4285307,,Joe Lombardo,2275075,,"TransparencyUSA (state filings, total contributions)",
 G,NY,NY,2018,Regular,,Andrew Cuomo,22040277,,Marc Molinaro,2522232,,"TransparencyUSA (state filings, total contributions)",
-G,NY,NY,2022,Regular,,Kathy Hochul,54355507,,Lee Zeldin,0,,"TransparencyUSA (state filings, total contributions)",
+G,NY,NY,2022,Regular,,Kathy Hochul,54737970.97,,Lee Zeldin,26330006.21,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
 G,NY,NY,2026,Upcoming,,Kathy Hochul,16594119,,Bruce Blakeman,13445025,,"TransparencyUSA (state filings, total contributions)",
 G,OH,OH,2018,Regular,,Richard Cordray,19567016,,Mike DeWine,24088464,,"TransparencyUSA (state filings, total contributions)",
 G,OH,OH,2022,Regular,,Nan Whaley,8841328,,Mike DeWine,20425999,,"TransparencyUSA (state filings, total contributions)",
 G,OH,OH,2026,Upcoming,,Amy Acton,15928993,,Vivek Ramaswamy,30306297,,"TransparencyUSA (state filings, total contributions)",
 G,OK,OK,2018,Regular,,Drew Edmondson,4139279.91,,Kevin Stitt,10691903.23,,"FollowTheMoney (state filings, total contributions)",
 G,OK,OK,2022,Regular,,Joy Hofmeister,3481610.07,,Kevin Stitt,11989881.57,,"FollowTheMoney (state filings, total contributions)",
-G,OK,OK,2026,Upcoming,,Democratic Candidate,,,Genter Drummond,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,OK,OK,2026,Upcoming,,Cyndi Munson,,,Mike Mazzei,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,OR,OR,2016,Special,,Kate Brown,5411935.90,,Bud Pierce,3469117.36,,"FollowTheMoney (state filings, total contributions)",
 G,OR,OR,2018,Regular,,Kate Brown,20297458.95,,Knute Buehler,19262697.66,,"FollowTheMoney (state filings, total contributions)",
 G,OR,OR,2022,Regular,,Tina Kotek,30342251.91,,Christine Drazan,22600858.99,,"FollowTheMoney (state filings, total contributions)",
@@ -116,14 +116,14 @@ G,PA,PA,2022,Regular,,Josh Shapiro,72513114,,Doug Mastriano,8175543,,"Transparen
 G,PA,PA,2026,Upcoming,,Josh Shapiro,34960533,,Stacy Garrity,2545436,,"TransparencyUSA (state filings, total contributions)",
 G,RI,RI,2018,Regular,,Gina Raimondo,8287905.66,,Allan Fung,2653416.93,,"FollowTheMoney (state filings, total contributions)",
 G,RI,RI,2022,Regular,,Dan McKee,3857748.03,,Ashley Kalus,5009115.32,,"FollowTheMoney (state filings, total contributions)",
-G,RI,RI,2026,Upcoming,,Dan McKee,,,Aaron Guckian,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,RI,RI,2026,Upcoming,,Helena Foulkes,,,Aaron Guckian,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,SC,SC,2018,Regular,,James Smith,3217280,,Henry McMaster,7884372,,"TransparencyUSA (state filings, total contributions)",
 G,SC,SC,2022,Regular,,Joe Cunningham,3668714,,Henry McMaster,6530197,,"TransparencyUSA (state filings, total contributions)",
 G,SC,SC,2026,Upcoming,,Jermaine Johnson,753609,,Alan Wilson,62585,,"TransparencyUSA (state filings, total contributions)",
 G,SD,SD,2018,Regular,,Billie Sutton,3880460.86,,Kristi Noem,7171481.51,,"FollowTheMoney (state filings, total contributions)",
 G,SD,SD,2022,Regular,,Jamie Smith,1311681.39,,Kristi Noem,17527113.75,,"FollowTheMoney (state filings, total contributions)",
-G,SD,SD,2026,Upcoming,,Democratic Candidate,,,Larry Rhoden,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,TN,TN,2018,Regular,,Karl Dean,,,Bill Lee,,,,pending: FTM free API call limit reached mid-pass — refetch when Institute approves the account
+G,SD,SD,2026,Upcoming,,Dan Ahlers,,,Larry Rhoden,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,TN,TN,2018,Regular,,Karl Dean,11186772.44,,Bill Lee,15966555.29,,"FollowTheMoney (state filings, total contributions)",
 G,TN,TN,2022,Regular,,Jason Martin,1262621.86,,Bill Lee,6114276.53,,"FollowTheMoney (state filings, total contributions)",
 G,TN,TN,2026,Upcoming,,Jerri Green,,,Marsha Blackburn,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
 G,TX,TX,2018,Regular,,Lupe Valdez,1848696,,Greg Abbott,44875409,,"TransparencyUSA (state filings, total contributions)",
@@ -141,18 +141,18 @@ G,VT,VT,2020,Regular,,David Zuckerman,860307.11,,Phil Scott,510544.60,,"FollowTh
 G,VT,VT,2022,Regular,,Brenda Siegel,187256.13,,Phil Scott,264136.23,,"FollowTheMoney (state filings, total contributions)",
 G,VT,VT,2024,Regular,,Esther Charlestin,56227.55,,Phil Scott,356154.00,,"FollowTheMoney (state filings, total contributions)",
 G,VT,VT,2026,Upcoming,,Amanda Janoo,,,Phil Scott,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,WA,WA,2016,Regular,,Jay Inslee,,,Bill Bryant,,,,pending: FTM free API call limit reached mid-pass — refetch when Institute approves the account
-G,WA,WA,2020,Regular,,Jay Inslee,7163240,,Loren Culp,0,,"TransparencyUSA (state filings, total contributions)",
+G,WA,WA,2016,Regular,,Jay Inslee,9736277.53,,Bill Bryant,3905582.18,,"FollowTheMoney (state filings, total contributions)",
+G,WA,WA,2020,Regular,,Jay Inslee,7978230.10,,Loren Culp,3312181.92,,"FollowTheMoney (state filings, total contributions)",both sides re-sourced from FTM (TransparencyUSA reported $0 for a real campaign)
 G,WA,WA,2024,Regular,,Bob Ferguson,14663732,,Dave Reichert,6782177,,"TransparencyUSA (state filings, total contributions)",
 G,WI,WI,2018,Regular,,Tony Evers,11328829,,Scott Walker,26944468,,"TransparencyUSA (state filings, total contributions)",
 G,WI,WI,2022,Regular,,Tony Evers,41158199,,Tim Michels,34762907,,"TransparencyUSA (state filings, total contributions)",
-G,WI,WI,2026,Upcoming,,Mandela Barnes,,,Tom Tiffany,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
-G,WV,WV,2016,Regular,,Jim Justice,,,Bill Cole,,,,pending: FTM free API call limit reached mid-pass — refetch when Institute approves the account
-G,WV,WV,2020,Regular,,Ben Salango,,,Jim Justice,,,,pending: FTM free API call limit reached mid-pass — refetch when Institute approves the account
-G,WV,WV,2024,Regular,,Steve Williams,,,Patrick Morrisey,,,,pending: FTM free API call limit reached mid-pass — refetch when Institute approves the account
+G,WI,WI,2026,Upcoming,,David Crowley,1426777.66,,Tom Tiffany,15315779.45,,"TransparencyUSA (state filings, total contributions)",
+G,WV,WV,2016,Regular,,Jim Justice,5449767.88,,Bill Cole,2946763.97,,"FollowTheMoney (state filings, total contributions)",
+G,WV,WV,2020,Regular,,Ben Salango,2165652.20,,Jim Justice,4504865.72,,"FollowTheMoney (state filings, total contributions)",
+G,WV,WV,2024,Regular,,Steve Williams,284784.35,,Patrick Morrisey,5876395.48,,"FollowTheMoney (state filings, total contributions)",
 G,WY,WY,2018,Regular,,Mary Throne,448494,,Mark Gordon,1271172,,"TransparencyUSA (state filings, total contributions)",
 G,WY,WY,2022,Regular,,Theresa Livingston,3330,,Mark Gordon,799545,,"TransparencyUSA (state filings, total contributions)",
-G,WY,WY,2026,Upcoming,,Democratic Candidate,,,Megan Degenfelder,,,,pending: state-level filings (not FEC) — OpenSecrets/TransparencyUSA/manual
+G,WY,WY,2026,Upcoming,,Kenneth Casner,0.00,,Eric Barlow,1673102.99,,"TransparencyUSA (state filings, total contributions)",Casner reported $0 in TU
 H,AK,AK-01,2016,Regular,1,Steve Lindbeck,1102309.77,H6AK00235,Don Young,1103561.86,H6AK00045,FEC bulk (webl/weball 2016-2026),
 H,AK,AK-01,2018,Regular,1,Alyse Galvin,1949643.68,H8AK00140,Don Young,1234680.31,H6AK00045,FEC bulk (webl/weball 2016-2026),
 H,AK,AK-01,2020,Regular,1,Alyse Galvin,5253251.54,H8AK00140,Don Young,1950289.86,H6AK00045,FEC bulk (webl/weball 2016-2026),
@@ -217,7 +217,7 @@ H,AR,AR-03,2016,Regular,0,Steve Isaacson,0,,Steve Womack,931782.13,H0AR03055,FEC
 H,AR,AR-03,2018,Regular,1,Josh Mahony,266234.41,H8AR03074,Steve Womack,1211826.66,H0AR03055,FEC bulk (webl/weball 2016-2026),
 H,AR,AR-03,2020,Regular,1,Celeste Williams,356059.69,H0AR03105,Steve Womack,1128158.85,H0AR03055,FEC bulk (webl/weball 2016-2026),
 H,AR,AR-03,2022,Regular,1,Lauren Mallett-Hays,65741.89,H2AR03283,Steve Womack,1664168.78,H0AR03055,FEC bulk (webl/weball 2016-2026),
-H,AR,AR-03,2024,Regular,1,Caitlin Draper,0,,Steve Womack,2474937.89,H0AR03055,FEC bulk (webl/weball 2016-2026),dem:no-fec-filings(sub-threshold)
+H,AR,AR-03,2024,Regular,1,Caitlin Draper,258728.40,,Steve Womack,2474937.89,H0AR03055,FEC bulk (webl/weball 2016-2026),"dem:no-fec-filings(sub-threshold); dem receipts via FEC API — files as ""MATTELIN, CAITLIN RAE DRAPER"" (bulk name match missed it)"
 H,AR,AR-03,2026,Upcoming,1,Robb Ryerse,120526.35,H6AR03128,Steve Womack,1871760.74,H0AR03055,FEC bulk (webl/weball 2016-2026),
 H,AR,AR-04,2016,Regular,0,Kerry Hicks,0,,Bruce Westerman,716791.26,H4AR04048,FEC bulk (webl/weball 2016-2026),dem:no-fec-filings(sub-threshold)
 H,AR,AR-04,2018,Regular,1,Hayden Catherine Shamel,157247.12,H8AR04130,Bruce Westerman,1624216.85,H4AR04048,FEC bulk (webl/weball 2016-2026),
@@ -618,7 +618,7 @@ H,CO,CO-04,2026,Upcoming,1,Eileen Laubacher,10349940.18,H6CO04202,Lauren Boebert
 H,CO,CO-05,2016,Regular,1,Misty Plowright,14542.37,H6CO05233,Doug Lamborn,590783.39,H6CO05159,FEC bulk (webl/weball 2016-2026),
 H,CO,CO-05,2018,Regular,1,Stephany Rose Spaulding,368323.3,H8CO05130,Doug Lamborn,680006.17,H6CO05159,FEC bulk (webl/weball 2016-2026),
 H,CO,CO-05,2020,Regular,1,Jillian Freeland,191001.24,H0CO05129,Doug Lamborn,601762.36,H6CO05159,FEC bulk (webl/weball 2016-2026),
-H,CO,CO-05,2022,Regular,1,David Torres,0,,Doug Lamborn,506157.3,H6CO05159,FEC bulk (webl/weball 2016-2026),dem:no-fec-filings(sub-threshold)
+H,CO,CO-05,2022,Regular,1,David Torres,26406.22,,Doug Lamborn,506157.3,H6CO05159,FEC bulk (webl/weball 2016-2026),"dem:no-fec-filings(sub-threshold); dem receipts via FEC API — files as ""GOENAGA-TORRES, SANTIAGO DAVID"" (bulk name match missed it)"
 H,CO,CO-05,2024,Regular,1,River Gassen,172285.48,H4CO05105,Jeff Crank,1128627.35,H6CO05142,FEC bulk (webl/weball 2016-2026),
 H,CO,CO-05,2026,Upcoming,1,Jessica Killin,3143744.12,H6CO05324,Jeff Crank,2177287.76,H6CO05142,FEC bulk (webl/weball 2016-2026),
 H,CO,CO-06,2016,Regular,1,Morgan Carroll,3158135.43,H6CO06058,Mike Coffman,3568845.95,H8CO06138,FEC bulk (webl/weball 2016-2026),
@@ -667,7 +667,7 @@ H,CT,CT-05,2022,Regular,1,Jahana Hayes,2779884.08,H8CT05245,George Logan,1297352
 H,CT,CT-05,2024,Regular,1,Jahana Hayes,4218172.13,H8CT05245,George Logan,3011059.71,H2CT05222,FEC bulk (webl/weball 2016-2026),
 H,CT,CT-05,2026,Upcoming,1,Jahana Hayes,1290077.99,H8CT05245,Michele Botelho,56496.71,H2CT05230,FEC bulk (webl/weball 2016-2026),
 H,DE,DE-01,2016,Regular,1,Lisa Blunt Rochester,1576041.65,H6DE00206,Hans Reigle,221665.5,H6DE01071,FEC bulk (webl/weball 2016-2026),
-H,DE,DE-01,2018,Regular,1,Lisa Blunt Rochester,1316505.82,H6DE00206,Scott Walker,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
+H,DE,DE-01,2018,Regular,1,Lisa Blunt Rochester,1316505.82,H6DE00206,Scott Walker,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold); verified non-filer 2026-09-09: FEC candidate H6DE00214 has no committee and no filings; WHYY described a one-man threadbare campaign
 H,DE,DE-01,2020,Regular,1,Lisa Blunt Rochester,2046187.4,H6DE00206,Lee Murphy,131393.78,H8DE01044,FEC bulk (webl/weball 2016-2026),
 H,DE,DE-01,2022,Regular,1,Lisa Blunt Rochester,2899174.85,H6DE00206,Lee Murphy,349933.46,H8DE01044,FEC bulk (webl/weball 2016-2026),
 H,DE,DE-01,2024,Regular,1,Sarah McBride,4091643.35,H4DE00045,John Whalen,20030.44,H4DE00078,FEC bulk (webl/weball 2016-2026),
@@ -696,7 +696,7 @@ H,FL,FL-04,2020,Regular,1,Donna Deegan,1026298.18,H0FL04157,John Rutherford,1025
 H,FL,FL-04,2022,Regular,1,LJ Holloway,10465.32,H6FL05193,Aaron Bean,1198576.19,H2FL04211,FEC bulk (webl/weball 2016-2026),
 H,FL,FL-04,2024,Regular,1,L. J. Holloway,32057.51,H6FL05193,Aaron Bean,1738170.86,H2FL04211,FEC bulk (webl/weball 2016-2026),
 H,FL,FL-04,2026,Upcoming,1,Michael Kirwan,742679.62,H6FL04220,Aaron Bean,2163375.8,H2FL04211,FEC bulk (webl/weball 2016-2026),
-H,FL,FL-05,2016,Regular,1,Al Lawson,444464.07,H0FL02086,Glo Smith,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
+H,FL,FL-05,2016,Regular,1,Al Lawson,444464.07,H0FL02086,Glo Smith,89177.56,,FEC bulk (webl/weball 2016-2026),"rep:no-fec-filings(sub-threshold); rep receipts via FEC API — files as ""SCURRY-SMITH, GLOREATHA (GLO)"" (bulk name match missed it)"
 H,FL,FL-05,2018,Regular,1,Al Lawson,679132.77,H0FL02086,Virginia Fuller,40564.0,H8FL05157,FEC bulk (webl/weball 2016-2026),
 H,FL,FL-05,2020,Regular,1,Al Lawson,884597.08,H0FL02086,Gary Adler,146944.18,H0FL05170,FEC bulk (webl/weball 2016-2026),
 H,FL,FL-05,2022,Regular,0,,,,John Rutherford,785952.63,H6FL04105,FEC bulk (webl/weball 2016-2026),
@@ -935,15 +935,15 @@ H,HI,HI-02,2024,Regular,1,Jill Tokuda,989460.69,H2HI02581,Steve Bond,0,,FEC bulk
 H,HI,HI-02,2026,Upcoming,1,Jill Tokuda,820678.15,H2HI02581,Brenton Awa,122614.57,H6HI02426,FEC bulk (webl/weball 2016-2026),
 H,IA,IA-01,2016,Regular,1,Monica Vernon,2951995.11,H4IA01077,Rod Blum,2406981.12,H2IA01055,FEC bulk (webl/weball 2016-2026),
 H,IA,IA-01,2018,Regular,1,Abby Finkenauer,4601774.98,H8IA01094,Rod Blum,2814962.02,H2IA01055,FEC bulk (webl/weball 2016-2026),
-H,IA,IA-01,2020,Regular,1,Abby Finkenauer,5938111.02,H8IA01094,Ashley Hinson,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
+H,IA,IA-01,2020,Regular,1,Abby Finkenauer,5938111.02,H8IA01094,Ashley Hinson,5178803.11,,FEC bulk (webl/weball 2016-2026),"rep:no-fec-filings(sub-threshold); rep receipts via FEC API — files as ""ARENHOLZ, ASHLEY HINSON"" (bulk name match missed it)"
 H,IA,IA-01,2022,Regular,1,Christina Bohannan,3197822.62,H2IA02111,Mariannette Miller-Meeks,4911923.34,H8IA02043,FEC bulk (webl/weball 2016-2026),
 H,IA,IA-01,2024,Regular,1,Christina Bohannan,6900996.18,H2IA02111,Mariannette Miller-Meeks,5800753.74,H8IA02043,FEC bulk (webl/weball 2016-2026),
 H,IA,IA-01,2026,Upcoming,1,Christina Bohannan,7051745.42,H2IA02111,Mariannette Miller-Meeks,7208271.35,H8IA02043,FEC bulk (webl/weball 2016-2026),
 H,IA,IA-02,2016,Regular,1,David Loebsack,1626574.06,H6IA02146,Christopher Peters,216592.81,H6IA02161,FEC bulk (webl/weball 2016-2026),
 H,IA,IA-02,2018,Regular,1,David Loebsack,2062525.8,H6IA02146,Christopher Peters,846951.16,H6IA02161,FEC bulk (webl/weball 2016-2026),
 H,IA,IA-02,2020,Regular,1,Rita Hart,4262215.2,H0IA02156,Mariannette Miller-Meeks,2192220.49,H8IA02043,FEC bulk (webl/weball 2016-2026),
-H,IA,IA-02,2022,Regular,1,Liz Mathis,4218654.84,H2IA01089,Ashley Hinson,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
-H,IA,IA-02,2024,Regular,1,Sarah Corkery,0,,Ashley Hinson,0,,FEC bulk (webl/weball 2016-2026),dem:no-fec-filings(sub-threshold);rep:no-fec-filings(sub-threshold)
+H,IA,IA-02,2022,Regular,1,Liz Mathis,4218654.84,H2IA01089,Ashley Hinson,7191931.25,,FEC bulk (webl/weball 2016-2026),"rep:no-fec-filings(sub-threshold); rep receipts via FEC API — files as ""ARENHOLZ, ASHLEY HINSON"" (bulk name match missed it)"
+H,IA,IA-02,2024,Regular,1,Sarah Corkery,510625.86,,Ashley Hinson,5600532.30,,FEC bulk (webl/weball 2016-2026),"dem:no-fec-filings(sub-threshold);rep:no-fec-filings(sub-threshold); dem receipts via FEC API — files as ""ALBERTSON-CORKERY, SARAH ELAINE"" (bulk name match missed it); rep receipts via FEC API — files as ""ARENHOLZ, ASHLEY HINSON"" (bulk name match missed it)"
 H,IA,IA-02,2026,Upcoming,1,Lindsay James,1628201.37,H6IA02211,Joe Mitchell,1938593.0,H6IA02237,FEC bulk (webl/weball 2016-2026),
 H,IA,IA-03,2016,Regular,1,Jim Mowrer,1959561.38,H4IA04113,David Young,2522676.6,H4IA03115,FEC bulk (webl/weball 2016-2026),
 H,IA,IA-03,2018,Regular,1,Cindy Axne,5243411.69,H8IA03124,David Young,2842345.87,H4IA03115,FEC bulk (webl/weball 2016-2026),
@@ -1077,9 +1077,9 @@ H,IN,IN-01,2020,Regular,1,Frank Mrvan,590634.89,H0IN01150,Mark Leyva,0,,FEC bulk
 H,IN,IN-01,2022,Regular,1,Frank Mrvan,2483248.03,H0IN01150,Jennifer-Ruth Green,3492664.39,H2IN01172,FEC bulk (webl/weball 2016-2026),
 H,IN,IN-01,2024,Regular,1,Frank Mrvan,3196274.92,H0IN01150,Randy Niemeyer,1107288.15,H4IN01210,FEC bulk (webl/weball 2016-2026),
 H,IN,IN-01,2026,Upcoming,1,Frank Mrvan,2386267.93,H0IN01150,Barb Regnitz,2376255.95,H6IN01231,FEC bulk (webl/weball 2016-2026),
-H,IN,IN-02,2016,Regular,1,Lynn Coleman,663102.74,H6IN02155,Jackie Walorski,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
-H,IN,IN-02,2018,Regular,1,Mel Hall,4123139.0,H8IN02169,Jackie Walorski,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
-H,IN,IN-02,2020,Regular,1,Pat Hackett,885559.08,H8IN02177,Jackie Walorski,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
+H,IN,IN-02,2016,Regular,1,Lynn Coleman,663102.74,H6IN02155,Jackie Walorski,1898007.35,,FEC bulk (webl/weball 2016-2026),"rep:no-fec-filings(sub-threshold); rep receipts via FEC API — files as ""WALORSKI SWIHART, JACKIE"" (bulk name match missed it)"
+H,IN,IN-02,2018,Regular,1,Mel Hall,4123139.0,H8IN02169,Jackie Walorski,2911964.23,,FEC bulk (webl/weball 2016-2026),"rep:no-fec-filings(sub-threshold); rep receipts via FEC API — files as ""WALORSKI SWIHART, JACKIE"" (bulk name match missed it)"
+H,IN,IN-02,2020,Regular,1,Pat Hackett,885559.08,H8IN02177,Jackie Walorski,2381758.79,,FEC bulk (webl/weball 2016-2026),"rep:no-fec-filings(sub-threshold); rep receipts via FEC API — files as ""WALORSKI SWIHART, JACKIE"" (bulk name match missed it)"
 H,IN,IN-02,2022,Regular,1,Paul Steury,103660.38,H2IN02279,Rudy Yakym III,1151524.32,H2IN02295,FEC bulk (webl/weball 2016-2026),
 H,IN,IN-02,2024,Regular,1,Lori Camp,130984.6,H4IN02192,Rudy Yakym III,3726754.51,H2IN02295,FEC bulk (webl/weball 2016-2026),
 H,IN,IN-02,2026,Upcoming,1,Jamee Decio,355589.42,H6IN02189,Rudy Yakym,5246030.32,H2IN02295,FEC bulk (webl/weball 2016-2026),
@@ -1279,7 +1279,7 @@ H,MD,MD-01,2016,Regular,1,Joe Werner,0,,Andy Harris,1293839.02,H8MD01094,FEC bul
 H,MD,MD-01,2018,Regular,1,Jesse Colvin,1876162.65,H8MD01193,Andy Harris,1712469.79,H8MD01094,FEC bulk (webl/weball 2016-2026),
 H,MD,MD-01,2020,Regular,1,Mia Mason,2524.03,H0MD01232,Andy Harris,1477443.1,H8MD01094,FEC bulk (webl/weball 2016-2026),
 H,MD,MD-01,2022,Regular,1,Heather Mizeur,2774380.7,H2MD01220,Andy Harris,1921505.35,H8MD01094,FEC bulk (webl/weball 2016-2026),
-H,MD,MD-01,2024,Regular,1,Blane Miller,0.0,H8MD06143,Andy Harris,1361364.4,H8MD01094,FEC bulk (webl/weball 2016-2026),
+H,MD,MD-01,2024,Regular,1,Blane Miller,0.0,H8MD06143,Andy Harris,1361364.4,H8MD01094,FEC bulk (webl/weball 2016-2026),"verified non-filer 2026-09-09: no FEC committee, no filings; Maryland Matters 2024-10-20 confirms he never filed with the FEC (<$5k)"
 H,MD,MD-01,2026,Upcoming,1,Daniel Schwartz,695169.98,H6MD01320,Andy Harris,2319668.06,H8MD01094,FEC bulk (webl/weball 2016-2026),
 H,MD,MD-02,2016,Regular,1,Dutch Ruppersberger,1144544.26,H2MD02160,Pat McDonough,241824.82,H6MD02211,FEC bulk (webl/weball 2016-2026),
 H,MD,MD-02,2018,Regular,1,Dutch Ruppersberger,1012732.99,H2MD02160,Liz Matory,39521.42,H8MD02118,FEC bulk (webl/weball 2016-2026),
@@ -1296,7 +1296,7 @@ H,MD,MD-03,2026,Upcoming,1,Sarah Elfreth,1141516.05,H4MD03156,Penny Kennedy,0,,F
 H,MD,MD-04,2016,Regular,1,Anthony Brown,1649992.08,H6MD04209,George McDermott,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
 H,MD,MD-04,2018,Regular,1,Anthony Brown,901269.42,H6MD04209,George McDermott,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
 H,MD,MD-04,2020,Regular,1,Anthony Brown,1455776.69,H6MD04209,George McDermott,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
-H,MD,MD-04,2022,Regular,1,Glenn Ivey,0.0,H0MD07387,Jeff Warner,57740.7,H2MD04307,FEC bulk (webl/weball 2016-2026),
+H,MD,MD-04,2022,Regular,1,Glenn Ivey,1896185.07,H0MD07387,Jeff Warner,57740.7,H2MD04307,FEC bulk (webl/weball 2016-2026),dem receipts via FEC committee C00792283 — candidate rollup omits cycle 2022
 H,MD,MD-04,2024,Regular,1,Glenn Ivey,944142.37,H2MD04232,George McDermott,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold);dem:api-backfill
 H,MD,MD-04,2026,Upcoming,1,Glenn Ivey,674406.5,H2MD04232,Generic Republican,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
 H,MD,MD-05,2016,Regular,1,Steny Hoyer,3736291.14,H2MD05155,Mark Arness,53054.16,H4MD05144,FEC bulk (webl/weball 2016-2026),
@@ -1522,7 +1522,7 @@ H,MS,MS-02,2022,Regular,1,Bennie Thompson,1515666.15,H4MS02068,Brian Flowers,494
 H,MS,MS-02,2024,Regular,1,Bennie Thompson,1245200.98,H4MS02068,Ron Eller,160676.12,H2MS02203,FEC bulk (webl/weball 2016-2026),
 H,MS,MS-02,2026,Upcoming,1,Bennie Thompson,770970.73,H4MS02068,Ron Eller,45389.56,H2MS02203,FEC bulk (webl/weball 2016-2026),
 H,MS,MS-03,2016,Regular,1,Dennis Quinn,0,,Gregg Harper,1009225.0,H8MS03067,FEC bulk (webl/weball 2016-2026),dem:no-fec-filings(sub-threshold)
-H,MS,MS-03,2018,Regular,1,Michael Ted Evans,0,,Michael Guest,985526.2,H8MS03125,FEC bulk (webl/weball 2016-2026),dem:no-fec-filings(sub-threshold)
+H,MS,MS-03,2018,Regular,1,Michael Ted Evans,0,,Michael Guest,985526.2,H8MS03125,FEC bulk (webl/weball 2016-2026),"dem:no-fec-filings(sub-threshold); verified non-filer 2026-09-09: FEC candidate H8MS03216 filed only a Form 2 Statement of Candidacy, no financial reports"
 H,MS,MS-03,2020,Regular,1,Dot Benford,0,,Michael Guest,802895.66,H8MS03125,FEC bulk (webl/weball 2016-2026),dem:no-fec-filings(sub-threshold)
 H,MS,MS-03,2022,Regular,1,Shuwaski Young,77359.24,H2MS03136,Michael Guest,1353829.76,H8MS03125,FEC bulk (webl/weball 2016-2026),
 H,MS,MS-03,2024,Regular,0,,,,Michael Guest,925968.2,H8MS03125,FEC bulk (webl/weball 2016-2026),
@@ -1787,8 +1787,8 @@ H,NY,NY-02,2024,Regular,1,Rob Lubin,1036037.9,H4NY02087,Andrew Garbarino,3863201
 H,NY,NY-02,2026,Upcoming,1,Patrick Halpin,461848.14,H6NY02140,Andrew Garbarino,3513016.04,H0NY02234,FEC bulk (webl/weball 2016-2026),
 H,NY,NY-03,2016,Regular,1,Thomas Suozzi,2410013.78,H6NY03247,Jack Martins,1179479.64,H6NY03197,FEC bulk (webl/weball 2016-2026),
 H,NY,NY-03,2018,Regular,1,Thomas Suozzi,2741694.89,H6NY03247,Dan DeBono,454278.18,H8NY03151,FEC bulk (webl/weball 2016-2026),
-H,NY,NY-03,2020,Regular,1,Thomas Suozzi,2960576.85,H6NY03247,George Santos,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
-H,NY,NY-03,2022,Regular,1,Robert Zimmerman,3181505.62,H2NY03188,George Santos,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
+H,NY,NY-03,2020,Regular,1,Thomas Suozzi,2960576.85,H6NY03247,George Santos,706180.93,,FEC bulk (webl/weball 2016-2026),"rep:no-fec-filings(sub-threshold); rep receipts via FEC API — files as ""DEVOLDER-SANTOS, GEORGE ANTHONY"" (bulk name match missed it)"
+H,NY,NY-03,2022,Regular,1,Robert Zimmerman,3181505.62,H2NY03188,George Santos,3000675.52,,FEC bulk (webl/weball 2016-2026),"rep:no-fec-filings(sub-threshold); rep receipts via FEC API — files as ""DEVOLDER-SANTOS, GEORGE ANTHONY"" (bulk name match missed it)"
 H,NY,NY-03,2024,Regular,1,Thomas Suozzi,9646883.39,H6NY03247,Michael LiPetri,970547.97,H0NY02267,FEC bulk (webl/weball 2016-2026),
 H,NY,NY-03,2026,Upcoming,1,Thomas Suozzi,5456697.74,H6NY03247,Gregory Hach,675501.13,H4NY03192,FEC bulk (webl/weball 2016-2026),
 H,NY,NY-04,2016,Regular,1,Kathleen Rice,2119648.91,H4NY04075,David Gurfein,451163.28,H6NY03171,FEC bulk (webl/weball 2016-2026),
@@ -2110,7 +2110,7 @@ H,PA,PA-05,2016,Regular,1,Kerith Strano Taylor,105295.61,H4PA05062,Glenn Thompso
 H,PA,PA-05,2018,Regular,1,Mary Gay Scanlon,1935937.32,H8PA07200,Pearl Kim,521262.95,H8PA05295,FEC bulk (webl/weball 2016-2026),
 H,PA,PA-05,2020,Regular,1,Mary Gay Scanlon,1479735.15,H8PA07200,Dasha Pruett,108445.69,H0PA05094,FEC bulk (webl/weball 2016-2026),
 H,PA,PA-05,2022,Regular,1,Mary Gay Scanlon,1596137.42,H8PA07200,David Galluch,747056.83,H2PA05074,FEC bulk (webl/weball 2016-2026),
-H,PA,PA-05,2024,Regular,1,Mary Gay Scanlon,1532211.38,H8PA07200,Alfeia Goodwin,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
+H,PA,PA-05,2024,Regular,1,Mary Gay Scanlon,1532211.38,H8PA07200,Alfeia Goodwin,20691.95,,FEC bulk (webl/weball 2016-2026),"rep:no-fec-filings(sub-threshold); rep receipts via FEC API — files as ""DEVAUGHN-GOODWIN, ALFEIA"" (bulk name match missed it)"
 H,PA,PA-05,2026,Upcoming,1,Mary Scanlon,990585.93,H8PA07200,Melvin Johnakin,0.0,H6PA05174,FEC bulk (webl/weball 2016-2026),
 H,PA,PA-06,2016,Regular,1,Mike Parrish,411751.58,H4PA06052,Ryan Costello,2484857.41,H0PA06076,FEC bulk (webl/weball 2016-2026),
 H,PA,PA-06,2018,Regular,1,Chrissy Houlahan,4354449.5,H8PA06087,Greg McCauley,270374.99,H8PA07192,FEC bulk (webl/weball 2016-2026),
@@ -2626,7 +2626,7 @@ H,WA,WA-02,2016,Regular,1,Rick Larsen,958052.51,H0WA02080,Marc Hennemann,0,,FEC 
 H,WA,WA-02,2018,Regular,0,Rick Larsen,1148126.68,H0WA02080,Brian Luke,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
 H,WA,WA-02,2020,Regular,1,Rick Larsen,1284956.04,H0WA02080,Timothy Hazelo,49478.22,H0WA02197,FEC bulk (webl/weball 2016-2026),
 H,WA,WA-02,2022,Regular,1,Rick Larsen,1697229.23,H0WA02080,Dan Matthews,145529.16,H2WA02177,FEC bulk (webl/weball 2016-2026),
-H,WA,WA-02,2024,Regular,1,Rick Larsen,2450006.13,H0WA02080,Cody Hart,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
+H,WA,WA-02,2024,Regular,1,Rick Larsen,2450006.13,H0WA02080,Cody Hart,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold); verified non-filer 2026-09-09: FEC candidate H0WA02221 (party OTH) has no committee and no filings
 H,WA,WA-02,2026,Upcoming,1,Rick Larsen,2038786.17,H0WA02080,Generic Republican,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
 H,WA,WA-03,2016,Regular,1,Jim Moeller,112575.05,H6WA03218,Jaime Herrera Beutler,1401198.72,H0WA03187,FEC bulk (webl/weball 2016-2026),
 H,WA,WA-03,2018,Regular,1,Carolyn Long,3883284.0,H8WA03198,Jaime Herrera Beutler,2705354.23,H0WA03187,FEC bulk (webl/weball 2016-2026),
@@ -2662,7 +2662,7 @@ H,WA,WA-08,2016,Regular,1,Tony Ventrella,22619.15,H6WA08092,David Reichert,16631
 H,WA,WA-08,2018,Regular,1,Kim Schrier,8144753.17,H8WA08189,Dino Rossi,4846553.35,H8WA08205,FEC bulk (webl/weball 2016-2026),
 H,WA,WA-08,2020,Regular,1,Kim Schrier,5452642.06,H8WA08189,Jesse Jensen,857594.08,H0WA08103,FEC bulk (webl/weball 2016-2026),
 H,WA,WA-08,2022,Regular,1,Kim Schrier,9640767.33,H8WA08189,Matt Larkin,2810552.79,H2WA08182,FEC bulk (webl/weball 2016-2026),
-H,WA,WA-08,2024,Regular,1,Kim Schrier,6530378.69,H8WA08189,Carmen Goers,0,,FEC bulk (webl/weball 2016-2026),rep:no-fec-filings(sub-threshold)
+H,WA,WA-08,2024,Regular,1,Kim Schrier,6530378.69,H8WA08189,Carmen Goers,258744.90,,FEC bulk (webl/weball 2016-2026),"rep:no-fec-filings(sub-threshold); rep receipts via FEC API — files as ""CARMEN, GOERS"" (bulk name match missed it)"
 H,WA,WA-08,2026,Upcoming,1,Kim Schrier,3016893.52,H8WA08189,Trinh Ha,166733.99,H6WA08159,FEC bulk (webl/weball 2016-2026),
 H,WA,WA-09,2016,Regular,1,Adam Smith,925645.11,H6WA09025,Doug Basler,33301.55,H4WA09061,FEC bulk (webl/weball 2016-2026),
 H,WA,WA-09,2018,Regular,0,Adam Smith,1415993.97,H6WA09025,Sarah Smith,125640.76,H8WA09054,FEC bulk (webl/weball 2016-2026),

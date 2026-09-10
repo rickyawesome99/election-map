@@ -3,11 +3,11 @@ import { getRatingColors, marginToRating, fmtMargin, marginColor } from "@/lib/c
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import { candidatePhotos } from "@/lib/candidatePhotos";
-import { AboutRaceCard, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, LedgerSectionHead, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
+import { AboutRaceCard, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
-import { calculateStateTpl, effectiveGenericBallot, marginToProbability, computeIncumbentPts, computeRcpMargin, computeProjectedMargin } from "@/lib/tplCompute";
+import { calculateStateTpl, effectiveGenericBallot, marginToProbability, computeIncumbentPts, computeRcpMargin, computeProjectedMargin, computeRaceFundraisingPts, raceFundraising2026, raceFundraisingSource2026 } from "@/lib/tplCompute";
 import BackButton from "@/components/BackButton";
 
 const GENERAL_ELECTION = "November 3, 2026";
@@ -251,6 +251,9 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
     : null;
   const incumbentParty = (incumbent?.party === "D" || incumbent?.party === "R") ? incumbent.party : null;
   const incumbentPts = computeIncumbentPts("S", incumbentParty);
+  const fundraising = raceFundraising2026("senate", race.id);
+  const fundraisingSource = raceFundraisingSource2026("senate", race.id);
+  const fundraisingPts = computeRaceFundraisingPts("senate", race.id);
   const gb = effectiveGenericBallot(abbr);
   const rcpMargin = computeRcpMargin(race.rcpDem, race.rcpRep);
   const projectedMargin = computeProjectedMargin(race);
@@ -374,6 +377,19 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           </section>
 
           <section>
+            <LedgerSectionHead label="Fundraising" />
+            <FundraisingLedgerSection
+              dem={fundraising?.dem ?? null}
+              rep={fundraising?.rep ?? null}
+              demName={race.candidates?.dem.name}
+              repName={race.candidates?.rep.name}
+              source={fundraisingSource}
+              pendingNote={`no ${electionYear} FEC filings on record for this race yet`}
+              fundraisingPts={fundraisingPts}
+            />
+          </section>
+
+          <section>
             <LedgerSectionHead label="About this Race" />
             <AboutRaceCard
               bare
@@ -401,7 +417,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
               tplLabel="State TPL"
               tplHref={`/model/state?modelState=${encodeURIComponent(abbr)}`}
               incumbentPts={incumbentPts}
-              fundraisingPts={null}
+              fundraisingPts={fundraising ? fundraisingPts : null}
               candidatePts={null}
               pollingAvg={rcpMargin}
               projectedMargin={projectedMargin}

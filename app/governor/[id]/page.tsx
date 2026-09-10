@@ -4,11 +4,11 @@ import { getRatingColors, marginToRating, fmtMargin, marginColor } from "@/lib/c
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import { candidatePhotos } from "@/lib/candidatePhotos";
-import { AboutRaceCard, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, LedgerSectionHead, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
+import { AboutRaceCard, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
-import { calculateStateTpl, effectiveGenericBallot, marginToProbability, computeIncumbentPts, computeRcpMargin, computeProjectedMargin } from "@/lib/tplCompute";
+import { calculateStateTpl, effectiveGenericBallot, marginToProbability, computeIncumbentPts, computeRcpMargin, computeProjectedMargin, computeRaceFundraisingPts, raceFundraising2026, raceFundraisingSource2026 } from "@/lib/tplCompute";
 import BackButton from "@/components/BackButton";
 
 const GENERAL_ELECTION = "November 3, 2026";
@@ -163,6 +163,9 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
   const incumbentParty = (incumbent?.party === "D" || incumbent?.party === "R") ? incumbent.party : null;
   const standardIncumbentPts = computeIncumbentPts("G", incumbentParty);
   const incumbentPts = GOVERNOR_MANUAL_MARGINS[id.toUpperCase()] ?? standardIncumbentPts;
+  const fundraising = raceFundraising2026("governor", race.id);
+  const fundraisingSource = raceFundraisingSource2026("governor", race.id);
+  const fundraisingPts = computeRaceFundraisingPts("governor", race.id);
   const gb = effectiveGenericBallot(id.toUpperCase());
   const rcpMargin = computeRcpMargin(race.rcpDem, race.rcpRep);
   const projectedMargin = computeProjectedMargin(race);
@@ -285,6 +288,19 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
           </section>
 
           <section>
+            <LedgerSectionHead label="Fundraising" />
+            <FundraisingLedgerSection
+              dem={fundraising?.dem ?? null}
+              rep={fundraising?.rep ?? null}
+              demName={race.candidates?.dem.name}
+              repName={race.candidates?.rep.name}
+              source={fundraisingSource}
+              pendingNote="gubernatorial campaigns file with the state rather than the FEC, and those filings are still being collected"
+              fundraisingPts={fundraisingPts}
+            />
+          </section>
+
+          <section>
             <LedgerSectionHead label="About this Race" />
             <AboutRaceCard
               bare
@@ -312,7 +328,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               tplLabel="State TPL"
               tplHref={`/model/state?modelState=${encodeURIComponent(id.toUpperCase())}`}
               incumbentPts={incumbentPts}
-              fundraisingPts={null}
+              fundraisingPts={fundraising ? fundraisingPts : null}
               candidatePts={null}
               pollingAvg={rcpMargin}
               projectedMargin={projectedMargin}

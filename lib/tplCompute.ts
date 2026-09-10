@@ -14,7 +14,7 @@ import {
 import { GOVERNOR_MANUAL_MARGINS } from "@/data/manualOverrides";
 import { statesData } from "@/data/statesData";
 import { TPL_GLOBAL_CONSTANTS as G, type CQTier } from "@/data/tplModelData";
-import { fundraisingData } from "@/data/fundraisingData";
+import { fundraisingData, fundraisingSources } from "@/data/fundraisingData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
 import { countySenateData } from "@/data/countySenateData";
@@ -153,6 +153,9 @@ function incumbencyPtsFor(raceType: string, incumbent: string): number {
 }
 
 // ── Fundraising lookup (FEC receipts, see data/fundraisingData.ts) ───────────
+// The cycle the forward-looking forecast draws live receipts from.
+const ELECTION_CYCLE = 2026;
+
 // FF applies only where both general-election candidates' receipts are known:
 // a null side means unknown (api-pending, or governor state filings not yet
 // collected), and skipping beats guessing. President is excluded by design and
@@ -178,6 +181,45 @@ function raceFundraisingFor(
 // The strip is the negative of the R-positive advantage present in the margin.
 function ffStripPts(money: { dem: number; rep: number } | null): number {
   return money ? -computeFundraisingPts(money.rep, money.dem) : 0;
+}
+
+// Current-cycle lookups keyed the way the race pages hold a race (raceType + race
+// id, e.g. "house"/"0406" or "senate"/"FL-2"), so computeProjectedMargin and the
+// Fundraising section on the race detail pages read the same rows. A senate seat is
+// tried as a regular election first, then as a special.
+function fundraising2026Keys(raceType: string, raceId: string): string[] {
+  if (raceType === "house") {
+    const districtName = houseData.find((r) => r.id === raceId)?.name;
+    return districtName ? [`H:${districtName}:${ELECTION_CYCLE}`] : [];
+  }
+  // senate/governor ids may carry a seat suffix (e.g. "DE-2"); strip it for the state abbr.
+  const abbr = raceId.replace(/-\d+$/, "");
+  if (raceType === "senate") return [`S:${abbr}:${ELECTION_CYCLE}:Regular`, `S:${abbr}:${ELECTION_CYCLE}:Special`];
+  if (raceType === "governor") return [`G:${abbr}:${ELECTION_CYCLE}`];
+  return [];
+}
+
+// null = at least one side unknown, so no FF applies and the page shows TBD.
+export function raceFundraising2026(raceType: string, raceId: string): { dem: number; rep: number } | null {
+  for (const key of fundraising2026Keys(raceType, raceId)) {
+    const entry = fundraisingData[key];
+    if (entry?.dem != null && entry.rep != null) return { dem: entry.dem, rep: entry.rep };
+  }
+  return null;
+}
+
+// Display-ready attribution for the receipts above ("FEC filings", state filings, …).
+export function raceFundraisingSource2026(raceType: string, raceId: string): string | null {
+  for (const key of fundraising2026Keys(raceType, raceId)) {
+    if (fundraisingSources[key]) return fundraisingSources[key];
+  }
+  return null;
+}
+
+// R-positive fundraising points for a forecast race; 0 where receipts are unknown.
+export function computeRaceFundraisingPts(raceType: string, raceId: string): number {
+  const money = raceFundraising2026(raceType, raceId);
+  return money ? computeFundraisingPts(money.rep, money.dem) : 0;
 }
 
 // ── Helper: incumbent from past result ────────────────────────────────────────
@@ -903,18 +945,7 @@ export function computeProjectedMargin(race: {
 
   // Live 2026 fundraising points from FEC receipts (additive, capped — same
   // computeFundraisingPts the backward model strips with).
-  let ffPts = 0;
-  if (race.raceType === "house") {
-    const districtName = houseData.find((r) => r.id === race.id)?.name;
-    const money = districtName ? raceFundraisingFor("H", "", districtName, "House", 2026) : null;
-    if (money) ffPts = computeFundraisingPts(money.rep, money.dem);
-  } else if (shortType) {
-    const abbr = race.id.replace(/-\d+$/, "");
-    const money =
-      raceFundraisingFor(shortType, abbr, undefined, "Senate", 2026) ??
-      raceFundraisingFor(shortType, abbr, undefined, "Senate Special", 2026);
-    if (money) ffPts = computeFundraisingPts(money.rep, money.dem);
-  }
+  const ffPts = computeRaceFundraisingPts(race.raceType, race.id);
 
   let structuralMargin: number;
   if (race.raceType === "house") {
@@ -962,8 +993,8 @@ export function computeCandidatePts(wqTier: CQTier, lqTier: CQTier): number {
 // overcorrect — the receipts gap partly double-counts incumbency, which is already
 // stripped. S/H targets are biased against any strip (they contain the effect), so
 // the P target is the judge. Shared by the backward strip and forward projection.
-const FF_K = 0.02;
-const FF_MAX = 2;
+export const FF_K = 0.02;
+export const FF_MAX = 2;
 
 // rCash and dCash in any consistent unit (dollars, thousands, etc.)
 // Returns R-positive pts: positive = R fundraising advantage
@@ -993,12 +1024,15 @@ export function computeIncumbentPts(raceType: "H" | "S" | "G", incumbentParty: "
 }
 
 // ── WAR (Wins Above Replacement) ─────────────────────────────────────────────
-// WAR = actual margin − expected margin, signed toward the candidate: how much
-// better (or worse) a candidate ran than a generic nominee of their party.
+// WAR = actual margin − expected margin AGAINST THIS OPPONENT, signed toward the
+// candidate: how much better (or worse) a candidate ran than a generic nominee
+// of their party would have against the same opponent in the same situation.
 //
-//   expected = lean + β*(state) × E(year) + incumbency advantage + STRUCTURAL money advantage
-//   (structural = the money gap a generic pair in this situation would have; the
-//    idiosyncratic remainder stays in the residual — see WarMoneyModel below)
+//   expected           = lean + β*(state) × E(year) + incumbency advantage + STRUCTURAL money advantage
+//                        (generic vs generic; structural = the money gap a generic pair in this
+//                         situation would have — the idiosyncratic remainder stays in the residual)
+//   expectedVsOpponent = expected − opponent's ridge effect   (generic vs this specific opponent)
+//   WAR                = actual − expectedVsOpponent = own effect + the race's unexplained leftover
 //
 // Anchors: Senate/Governor/President races use the state's Huber-fitted lean
 // (stable, outlier-resistant — Manchin's own wins don't inflate his baseline).
@@ -1025,7 +1059,9 @@ export interface WarRow {
   effect: number;   // ridge-estimated candidate effect as of this race's year, signed toward this candidate
   effectN: number;  // races the effect is estimated from (count)
   effectW: number;  // effective races: Σ recency weights over those races (this race = 1)
-  war: number;      // attributed WAR = effect + half the race's unexplained leftover, signed toward this candidate
+  opponentEffect: number;     // the opponent's ridge effect as of this race's year, signed toward the OPPONENT (0 if no opponent)
+  expectedVsOpponent: number; // R-positive expected margin for a generic nominee of this party vs this specific opponent
+  war: number;      // actual − expectedVsOpponent, signed toward this candidate = effect + the race's unexplained leftover
   note: string;
 }
 
@@ -1033,7 +1069,10 @@ export interface WarRow {
 // λ·Σa_c² encodes "an unseen candidate is replacement level", which makes the system solvable
 // for one-race candidates (their effect is what is left after the opponent's, shrunk by 1/(1+λ))
 // and splits singleton-vs-singleton residuals evenly. Effects pool across offices by
-// state|party|name. λ=1 matches the observed leave-one-out persistence slope (~0.68) of repeat
+// state|party|name. WAR itself is scored against the opponent-specific expectation
+// (expected − opponent effect): the candidate keeps their own effect plus the whole
+// unexplained leftover ε, so the two sides' WARs do not sum to the residual — each side
+// is measured against "a generic nominee facing the opponent I actually faced". λ=1 matches the observed leave-one-out persistence slope (~0.68) of repeat
 // candidates' residuals; calibration via the harness is a later refinement.
 export const WAR_LAMBDA = 1;
 // Recency: a candidate's effect is estimated AS OF each race's year. The solve for target year
@@ -1093,12 +1132,17 @@ function attributeWar(rows: WarRow[]): void {
       for (const row of rc.rows) {
         const s = row.party === "R" ? 1 : -1;
         const key = warCandidateKey(row.state, row.party, row.candidate);
+        const oppKey = row.party === "R" ? rc.D : rc.R;
         const o = obs.get(key) ?? [];
         row.residual = s * rc.r;
         row.effect = a.get(key) ?? 0;
         row.effectN = o.length;
         row.effectW = o.reduce((acc, { race }) => acc + wt(race.year), 0);
-        row.war = row.effect + (s * eps) / 2;
+        row.opponentEffect = oppKey ? a.get(oppKey) ?? 0 : 0;
+        // R-positive: an above-replacement D opponent lowers the R-positive expectation; an
+        // above-replacement R opponent raises it. s·(actual − expectedVsOpponent) = effect + s·ε.
+        row.expectedVsOpponent = row.expected - s * row.opponentEffect;
+        row.war = row.effect + s * eps; // = s·(actual − expectedVsOpponent)
       }
     }
   }
@@ -1198,7 +1242,7 @@ export function computeWarTable(): WarRow[] {
     const ffStructuralPts = p.withMoney ? Math.max(-FF_MAX, Math.min(FF_MAX, FF_K * structuralGapPct)) : 0;
     const expected = p.base + ffStructuralPts;
     // residual/effect/war are filled by attributeWar() once every race is collected.
-    const base = { office: p.office, race: p.raceLabel, state: p.state, year: p.r.year, actual: p.r.rawMargin!, expected, moneyGapPct: p.gap, structuralGapPct, ffStructuralPts, residual: 0, effect: 0, effectN: 0, effectW: 0, war: 0, note: p.note };
+    const base = { office: p.office, race: p.raceLabel, state: p.state, year: p.r.year, actual: p.r.rawMargin!, expected, moneyGapPct: p.gap, structuralGapPct, ffStructuralPts, residual: 0, effect: 0, effectN: 0, effectW: 0, opponentEffect: 0, expectedVsOpponent: 0, war: 0, note: p.note };
     if (p.r.demCandidate) out.push({ candidate: p.r.demCandidate, party: p.r.demParty ?? "D", ...base });
     if (p.r.repCandidate) out.push({ candidate: p.r.repCandidate, party: p.r.repParty ?? "R", ...base });
   }

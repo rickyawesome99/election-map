@@ -2071,7 +2071,7 @@ export const governorData: RaceForecast[] = [
     "kalshiDem": 0.4,
     "kalshiRep": 0.6,
     "candidates": {
-      "dem": { "name": "Tom Begich", "party": "D", "incumbent": false },
+      "dem": { "name": "Jonathan Kreiss-Tomkins", "party": "D", "incumbent": false },
       "rep": { "name": "Dave Bronson", "party": "R", "incumbent": false }
     },
     "seatHolder": "Mike Dunleavy",
@@ -2242,8 +2242,8 @@ export const governorData: RaceForecast[] = [
     "polyDem": 0.94,
     "polyRep": 0.06,
     "candidates": {
-      "dem": { "name": "Michael Bennet", "party": "D", "incumbent": false },
-      "rep": { "name": "Barbara Kirkmeyer", "party": "R", "incumbent": false }
+      "dem": { "name": "Phil Weiser", "party": "D", "incumbent": false },
+      "rep": { "name": "Victor Marx", "party": "R", "incumbent": false }
     },
     "seatHolder": "Jared Polis",
     "seatParty": "D",
@@ -2379,7 +2379,7 @@ export const governorData: RaceForecast[] = [
     "kalshiRep": 0.06,
     "candidates": {
       "dem": { "name": "Josh Green", "party": "D", "incumbent": true },
-      "rep": { "name": "Republican Candidate", "party": "R", "incumbent": false }
+      "rep": { "name": "Gary Cordery", "party": "R", "incumbent": false }
     },
     "seatHolder": "Josh Green",
     "seatParty": "D",
@@ -2514,8 +2514,8 @@ export const governorData: RaceForecast[] = [
     "kalshiDem": 0.29,
     "kalshiRep": 0.71,
     "candidates": {
-      "dem": { "name": "Ethan Corson", "party": "D", "incumbent": false },
-      "rep": { "name": "Jeff Colyer", "party": "R", "incumbent": false }
+      "dem": { "name": "Cindy Holscher", "party": "D", "incumbent": false },
+      "rep": { "name": "Ty Masterson", "party": "R", "incumbent": false }
     },
     "seatHolder": "Laura Kelly",
     "seatParty": "D",
@@ -2550,7 +2550,7 @@ export const governorData: RaceForecast[] = [
     "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Maura Healey", "party": "D", "incumbent": true },
-      "rep": { "name": "Brian Shortsleeve", "party": "R", "incumbent": false }
+      "rep": { "name": "Michael Minogue", "party": "R", "incumbent": false }
     },
     "seatHolder": "Maura Healey",
     "seatParty": "D",
@@ -2928,8 +2928,8 @@ export const governorData: RaceForecast[] = [
     "polyDem": 0.07,
     "polyRep": 0.93,
     "candidates": {
-      "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
-      "rep": { "name": "Genter Drummond", "party": "R", "incumbent": false }
+      "dem": { "name": "Cyndi Munson", "party": "D", "incumbent": false },
+      "rep": { "name": "Mike Mazzei", "party": "R", "incumbent": false }
     },
     "seatHolder": "Kevin Stitt",
     "seatParty": "R",
@@ -3033,7 +3033,7 @@ export const governorData: RaceForecast[] = [
     "polyDem": 0.98,
     "polyRep": 0.02,
     "candidates": {
-      "dem": { "name": "Dan McKee", "party": "D", "incumbent": true },
+      "dem": { "name": "Helena Foulkes", "party": "D", "incumbent": false },
       "rep": { "name": "Aaron Guckian", "party": "R", "incumbent": false }
     },
     "seatHolder": "Dan McKee",
@@ -3103,7 +3103,7 @@ export const governorData: RaceForecast[] = [
     "polyDem": 0.05,
     "polyRep": 0.95,
     "candidates": {
-      "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
+      "dem": { "name": "Dan Ahlers", "party": "D", "incumbent": false },
       "rep": { "name": "Larry Rhoden", "party": "R", "incumbent": true }
     },
     "seatHolder": "Larry Rhoden",
@@ -3241,7 +3241,7 @@ export const governorData: RaceForecast[] = [
     "kalshiDem": 0.75,
     "kalshiRep": 0.25,
     "candidates": {
-      "dem": { "name": "Mandela Barnes", "party": "D", "incumbent": false },
+      "dem": { "name": "David Crowley", "party": "D", "incumbent": false },
       "rep": { "name": "Tom Tiffany", "party": "R", "incumbent": false }
     },
     "seatHolder": "Tony Evers",
@@ -3274,8 +3274,8 @@ export const governorData: RaceForecast[] = [
     "kalshiDem": 0.07,
     "kalshiRep": 0.93,
     "candidates": {
-      "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
-      "rep": { "name": "Megan Degenfelder", "party": "R", "incumbent": false }
+      "dem": { "name": "Kenneth Casner", "party": "D", "incumbent": false },
+      "rep": { "name": "Eric Barlow", "party": "R", "incumbent": false }
     },
     "seatHolder": "Mark Gordon",
     "seatParty": "R",

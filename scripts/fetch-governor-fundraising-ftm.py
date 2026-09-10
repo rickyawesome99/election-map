@@ -29,7 +29,7 @@ Usage (from repo root):
   python3 scripts/fetch-governor-fundraising-ftm.py --no-fetch # match from cache only
 Then regenerate: python3 scripts/generate-fundraising-data.py
 """
-import csv, json, os, re, sys, time, urllib.request
+import csv, json, os, re, subprocess, sys, time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CSVP = os.path.join(ROOT, "data-entry", "fundraising_2016_2026.csv")
@@ -54,19 +54,23 @@ def flat(rec):
         o.update(v) if isinstance(v, dict) else o.__setitem__(k, v)
     return o
 
-def fetch(st, yr, k, tries=5):
+def fetch(st, yr, k, tries=3):
+    # curl --http1.1, not urllib: some of their queries take 30-90s and urllib
+    # hangs on them reliably (HTTP/2 negotiation), while curl returns fine.
     url = (f"https://api.followthemoney.org/?dt=1&s={st}&y={yr}&c-exi=1&c-r-ot=G"
            f"&gro=c-t-id%2Cc-t-p&APIKey={k}&mode=json")
     for i in range(tries):
+        r = subprocess.run(["curl", "-s", "--http1.1", "--max-time", "300", url],
+                           capture_output=True, text=True)
         try:
-            with urllib.request.urlopen(url, timeout=100) as r:
-                d = json.loads(r.read().decode("utf-8", "replace"))
-            if "metaInfo" not in d:
-                print(f"  {st}:{yr} API refused: {d.get('error', d)}"); return None
-            return d
-        except Exception as e:
-            print(f"  {st}:{yr} attempt {i+1}: {type(e).__name__}", flush=True)
-            time.sleep(5 * (i + 1))
+            d = json.loads(r.stdout)
+        except Exception:
+            print(f"  {st}:{yr} attempt {i+1}: no/!json response", flush=True)
+            time.sleep(5 * (i + 1)); continue
+        if "metaInfo" not in d:
+            # quota exhaustion lands here - do not burn the remaining retries
+            print(f"  {st}:{yr} API refused: {d.get('error', d)}"); return None
+        return d
     return None
 
 def pick(govs, name, party):
