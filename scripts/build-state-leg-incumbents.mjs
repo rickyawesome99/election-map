@@ -3,14 +3,23 @@
  * Regenerates data/stateLegDistricts.ts from:
  *   - data-entry/state-leg-incumbents/{abbr}_{chamber}.json      (raw Open States /people dumps)
  *   - data-entry/state-leg-party-overrides/{abbr}_{chamber}.json (optional: district -> party overrides)
- *   - data-entry/state-leg-election-years.mjs                    ("most recent regular election" rules)
+ *   - data-entry/state-leg-incumbent-additions/{abbr}_{chamber}.json (optional: sitting members the
+ *     Open States dump omits)
+ *   - data-entry/state-leg-district-structure/{abbr}_{chamber}.json (optional: seats per district,
+ *     and overlay districts that have no boundary of their own — see build-nh-house-district-structure.mjs)
+ *   - data-entry/state-leg-election-years.mjs                    (per-seat "most recent regular
+ *     election" rules, plus the per-chamber term lengths and off-cycle overrides used to derive
+ *     each seat's NEXT regular election)
  *   - data-entry/state-leg-districts-2026-source/state-house-districts-2026.json /
  *     state-senate-districts-2026.json (district list per state; combined source file — the
  *     browser instead fetches per-state splits from public/state-leg-districts/, see
  *     scripts/split-state-leg-districts.mjs)
  *
  * The boundary files are the source of truth for which districts exist in a state/chamber (so
- * a district with no matching incumbent — a vacancy — still gets a row with incumbent: null).
+ * a district with no matching incumbent — a vacancy — still gets a row with incumbent: null). The
+ * one exception is overlay districts, which by construction cannot be in a non-overlapping polygon
+ * layer: NH's floterial districts sit on top of several base districts at once, so they come from
+ * the district-structure file and are appended to whatever the boundary file provides.
  * Only states with a data-entry/state-leg-incumbents/ file are included in the output; states not
  * yet sourced are simply absent, same as before (StateLegDistrictTable/Map already handle that).
  *
@@ -23,7 +32,7 @@
  */
 
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "fs";
-import { electionYears } from "../data-entry/state-leg-election-years.mjs";
+import { electionYears, termYears, nextElectionOverrides } from "../data-entry/state-leg-election-years.mjs";
 
 const INCUMBENTS_DIR = "data-entry/state-leg-incumbents";
 const PARTY_OVERRIDES_DIR = "data-entry/state-leg-party-overrides";
@@ -33,6 +42,13 @@ const PARTY_OVERRIDES_DIR = "data-entry/state-leg-party-overrides";
 // senators stagger WITHIN the shared boundary (one up each even year), so there's no single
 // correct per-district year. See data-entry/state-leg-last-election-overrides/wv_senate.json.
 const LAST_ELECTION_OVERRIDES_DIR = "data-entry/state-leg-last-election-overrides";
+// Sitting members the Open States dump omits — merged in per district. Currently only ND House 11,
+// whose appointed replacement Open States had still not picked up months after he took office.
+const INCUMBENT_ADDITIONS_DIR = "data-entry/state-leg-incumbent-additions";
+// Per-district structural facts the boundary files and Open States both lack: how many members a
+// district elects, and (for NH's floterial overlay districts) which base districts it sits on top
+// of. Currently only NH House — see scripts/build-nh-house-district-structure.mjs.
+const DISTRICT_STRUCTURE_DIR = "data-entry/state-leg-district-structure";
 const BOUNDARY_FILES = {
   house: "data-entry/state-leg-districts-2026-source/state-house-districts-2026.json",
   senate: "data-entry/state-leg-districts-2026-source/state-senate-districts-2026.json",
@@ -70,6 +86,22 @@ function resolveLastElection(abbr, chamber, districtNumber) {
   // (second arg) instead, since parsedNumber is NaN for those.
   if (typeof rule === "function") return rule(parseInt(districtNumber, 10), districtNumber);
   return rule;
+}
+
+// Next regular election for a seat: its last regular election plus the chamber's term length,
+// except where nextElectionOverrides records a seat that is off its chamber's normal interval
+// (a short unexpired term resyncing it to the regular cycle — currently only ND House 9 and 15).
+//
+// `lastElection` is passed in rather than re-derived so that a per-incumbent lastElection
+// override (WV Senate, whose 2 senators per district stagger within the shared boundary) carries
+// through to a per-incumbent nextElection.
+function resolveNextElection(abbr, chamber, districtNumber, lastElection) {
+  const override = nextElectionOverrides[`${abbr}|${chamber}|${districtNumber}`];
+  if (override != null) return override;
+  if (lastElection == null) return null;
+  const term = termYears[abbr]?.[chamber];
+  if (term == null) return null;
+  return lastElection + term;
 }
 
 // The boundary files' DISTRICT property was built with `String(parseInt(code, 10))`, which
@@ -143,6 +175,20 @@ const PEOPLE_CODE_OVERRIDES = {
   },
 };
 
+/**
+ * District codes are usually plain numbers, sometimes a number with a letter suffix ("12A"), and in
+ * New Hampshire a county prefix followed by a number ("BE1", "HI40"). Compare the alphabetic and
+ * numeric parts separately so a chamber lists 2 before 10 and keeps NH's county groups together —
+ * a plain string sort scatters both. Codes with no digits at all (Alaska Senate's "A"-"T") fall
+ * back to a string compare, as they did before.
+ */
+function compareDistrictNumbers(a, b) {
+  const pa = /^([A-Za-z]*)0*(\d+)(.*)$/.exec(a);
+  const pb = /^([A-Za-z]*)0*(\d+)(.*)$/.exec(b);
+  if (!pa || !pb) return a.localeCompare(b);
+  return pa[1].localeCompare(pb[1]) || Number(pa[2]) - Number(pb[2]) || pa[3].localeCompare(pb[3]);
+}
+
 // Used to join district identifiers that refer to the same district but are formatted
 // differently between the boundary file and Open States — e.g. Massachusetts' multi-county
 // Senate districts appear as "Norfolk-Worcester-Middlesex" (NAMELSAD, hyphen-joined) vs. "Norfolk,
@@ -177,7 +223,7 @@ function loadBoundaryDistricts(chamber) {
   for (const f of raw.features) {
     const fips = f.properties.STATEFP;
     const abbr = FIPS_TO_ABBR[fips];
-    (byFips[fips] ??= []).push({ district: extractDistrictCode(abbr, chamber, f.properties), label: f.properties.NAMELSAD });
+    (byFips[fips] ??= []).push({ district: extractDistrictCode(abbr, chamber, f.properties), label: f.properties.NAMELSAD, geoid: f.properties.GEOID });
   }
   return byFips;
 }
@@ -228,35 +274,79 @@ function main() {
       const lastElectionOverridesPath = `${LAST_ELECTION_OVERRIDES_DIR}/${abbr.toLowerCase()}_${chamber}.json`;
       const lastElectionOverrides = existsSync(lastElectionOverridesPath) ? JSON.parse(readFileSync(lastElectionOverridesPath, "utf8")) : {};
 
-      const out = districts
-        .map(({ district, label }) => {
+      const additionsPath = `${INCUMBENT_ADDITIONS_DIR}/${abbr.toLowerCase()}_${chamber}.json`;
+      const additions = existsSync(additionsPath) ? JSON.parse(readFileSync(additionsPath, "utf8")).districts ?? {} : {};
+      for (const [district, people] of Object.entries(additions)) {
+        const key = normalizeDistrictKey(district);
+        // Shaped like an Open States person so it flows through the same party/grouping path.
+        for (const p of people) (peopleByDistrictNumber[key] ??= []).push({ name: p.name, party: p.party });
+      }
+
+      const structurePath = `${DISTRICT_STRUCTURE_DIR}/${abbr.toLowerCase()}_${chamber}.json`;
+      const structure = existsSync(structurePath) ? JSON.parse(readFileSync(structurePath, "utf8")).districts ?? {} : {};
+      // Overlay districts have no polygon of their own by construction (a floterial district covers
+      // several base districts, so it cannot belong to a non-overlapping layer). The boundary file
+      // is still the source of truth for everything it DOES contain; these are appended to it.
+      const overlayDistricts = Object.entries(structure)
+        .filter(([code, d]) => d.overlay && !districts.some((x) => x.district === code))
+        .map(([code]) => ({ district: code, label: null }));
+
+      const out = [...districts, ...overlayDistricts]
+        .map(({ district, label, geoid }) => {
           const peopleHere = (peopleByDistrictNumber[normalizeDistrictKey(district)] ?? []).slice().sort((a, b) => a.name.localeCompare(b.name));
           const override = partyOverrides[district];
           const perPersonLastElection = lastElectionOverrides[district] ?? {};
-          const incumbents = peopleHere.map((p) => ({
-            name: p.name,
-            party: override ?? mapParty(p.party),
-            // Omit entirely (rather than null) for the vast majority of incumbents with no
-            // per-person override, to avoid bloating the generated file with a mostly-unused key.
-            ...(perPersonLastElection[p.name] != null ? { lastElection: perPersonLastElection[p.name] } : {}),
-          }));
+          const incumbents = peopleHere.map((p) => {
+            const personLast = perPersonLastElection[p.name];
+            return {
+              name: p.name,
+              party: override ?? mapParty(p.party),
+              // Omit entirely (rather than null) for the vast majority of incumbents with no
+              // per-person override, to avoid bloating the generated file with a mostly-unused key.
+              // lastElection and nextElection travel together: an incumbent off the district's
+              // shared cycle is off it for both.
+              ...(personLast != null
+                ? {
+                    lastElection: personLast,
+                    nextElection: resolveNextElection(abbr, chamber, district, personLast),
+                  }
+                : {}),
+            };
+          });
+          const lastElection = resolveLastElection(abbr, chamber, district);
+          // Where a chamber has no single per-district cycle (WV Senate, whose 2 senators per
+          // boundary alternate even years), the district-level next election is the EARLIEST of
+          // its seats' — i.e. the next year anything on these lines is on the ballot, which is
+          // what a district lookup should report.
+          const perPersonNext = incumbents.map((i) => i.nextElection).filter((y) => y != null);
+          const nextElection =
+            resolveNextElection(abbr, chamber, district, lastElection) ??
+            (perPersonNext.length > 0 ? Math.min(...perPersonNext) : null);
+          const shape = structure[district];
           return {
             id: `${abbr.toLowerCase()}-${chamber}-${district}`,
             chamber,
             number: district,
-            label: label ?? `District ${district}`,
+            // The structure file's name wins where it exists: New Hampshire's own "Merrimack 18"
+            // says more than the boundary file's "District ME18", and matches what the Census
+            // returns for the same district.
+            label: structure[district]?.name ?? label ?? `District ${district}`,
+            // TIGER's own GEOID for the polygon, which is what an address lookup gets back from
+            // the Census geocoder — the exact join key for the district finder, and far safer than
+            // the district code, which several states spell differently on each side.
+            ...(geoid ? { geoid } : {}),
             incumbents: incumbents.length > 0 ? incumbents : null,
-            lastElection: resolveLastElection(abbr, chamber, district),
+            lastElection,
+            nextElection,
+            // Only present where a chamber's seat counts have been sourced; absent means unknown,
+            // NOT one seat. Without it a vacancy is indistinguishable from a seat that doesn't exist.
+            ...(shape?.seats != null ? { seats: shape.seats } : {}),
+            ...(shape?.overlay ? { overlay: true, components: shape.components } : {}),
             margin: null,
             rating: null,
           };
         })
-        .sort((a, b) => {
-          const na = parseInt(a.number, 10);
-          const nb = parseInt(b.number, 10);
-          if (Number.isNaN(na) || Number.isNaN(nb)) return a.number.localeCompare(b.number);
-          return na - nb || a.number.localeCompare(b.number);
-        });
+        .sort((a, b) => compareDistrictNumbers(a.number, b.number));
       result[abbr][chamber] = out;
       const totalIncumbents = out.reduce((sum, d) => sum + (d.incumbents?.length ?? 0), 0);
       console.log(`${abbr} ${chamber}: ${out.length} districts, ${totalIncumbents} incumbents total`);
@@ -265,7 +355,8 @@ function main() {
 
   const header = `// Per-district state legislature data. Auto-generated by scripts/build-state-leg-incumbents.mjs
 // from data-entry/state-leg-incumbents/*.json (Open States) + data-entry/state-leg-election-years.mjs
-// (regular-election-year rules) + the national district boundary files. Do not edit by hand — rerun
+// (regular-election-year + term-length rules) + the national district boundary files. Do not edit
+// by hand — rerun
 // the build script instead. States not yet sourced are simply absent (map/table render an empty state).
 
 export type Chamber = "house" | "senate";
@@ -273,12 +364,12 @@ export type Chamber = "house" | "senate";
 export type Incumbent = {
   name: string;
   party: "D" | "R" | "I" | "O";
-  // Per-incumbent override of the district's lastElection, only set where a single shared
-  // district-level year would be wrong for one of its multiple incumbents — currently just WV
-  // Senate, where each numbered district's 2 senators are staggered WITHIN the shared boundary
-  // (one up each even year, not both together). Falls back to the district's lastElection when
-  // absent.
+  // Per-incumbent override of the district's lastElection/nextElection, only set where a single
+  // shared district-level year would be wrong for one of its multiple incumbents — currently just
+  // WV Senate, where each numbered district's 2 senators are staggered WITHIN the shared boundary
+  // (one up each even year, not both together). Fall back to the district's values when absent.
   lastElection?: number | null;
+  nextElection?: number | null;
 };
 
 export type StateLegDistrict = {
@@ -286,10 +377,32 @@ export type StateLegDistrict = {
   chamber: Chamber;
   number: string;                                       // "12", "12A"
   label: string;                                        // "District 12"
+  // TIGER GEOID for this district's polygon, e.g. "39071" / "25D01" / "2734A". The join key the
+  // district finder uses, since the Census geocoder returns the same id for a looked-up address.
+  // Absent on overlay districts, which have no polygon of their own. New Hampshire's are
+  // synthesized (STATEFP + the state's own code) and do NOT match the Census's — see
+  // lib/districtLookup.ts, which falls back to the district name there.
+  geoid?: string;
   // Almost always one seat. Some states (AZ/WA House, MD House, ID House, WV Senate, ...) elect
   // more than one member from a single shared district boundary — those get multiple entries.
   incumbents?: Incumbent[] | null;
   lastElection?: number | null;                          // year of the seat's most recent regular election
+  // Year of the seat's next regular election — lastElection + the chamber's term length, except
+  // for seats resyncing to their cycle after a short unexpired term (see nextElectionOverrides in
+  // data-entry/state-leg-election-years.mjs). Where a district's seats are on different cycles
+  // (WV Senate) this is the earliest of them; per-seat years live on each Incumbent.
+  nextElection?: number | null;
+  // How many members the district elects. Only present where a chamber's seat counts have been
+  // sourced (currently NH House, from RSA 662:5) — absent means unknown, not one. It is what makes
+  // a vacancy visible: a district with 2 seats and 1 incumbent is down a member, not a 1-seat
+  // district. See data-entry/state-leg-district-structure/.
+  seats?: number;
+  // True for an overlay district: one that has no boundary of its own because it sits on top of
+  // several ordinary districts, whose voters elect its members in ADDITION to their own district's.
+  // New Hampshire's 39 floterial districts (58 of its 400 House seats) are the only ones in the
+  // country. The components field lists the base districts an overlay covers.
+  overlay?: boolean;
+  components?: string[];
   margin?: number | null;                                // most recent result margin, + = R, - = D
   rating?: string | null;
 };

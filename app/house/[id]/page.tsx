@@ -5,6 +5,8 @@ import { getRatingColors, marginToRating, fmtMargin, marginColor } from "@/lib/c
 import { notFound } from "next/navigation";
 import { candidatePhotos } from "@/lib/candidatePhotos";
 import DistrictMiniMap from "@/components/DistrictMiniMap";
+import DemographicsStrip from "@/components/DemographicsStrip";
+import { districtDemographics, REDRAWN_SINCE_ACS_VINTAGE } from "@/data/demographics";
 import { AboutRaceCard, CandidatesLedgerSection, ForecastCalculationCard, FundraisingLedgerSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, LedgerSectionHead, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
@@ -94,6 +96,13 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const inferredSeat = inferCurrentHouseSeatFromPastResults(race);
   const currentRepName = incumbentCandidate?.name ?? race.seatHolder ?? inferredSeat?.name ?? "TBD";
   const currentRepParty = incumbentCandidate?.party ?? race.seatParty ?? inferredSeat?.party ?? null;
+  // ACS 2020-24 measures congressional districts on 119th Congress lines - the same lines
+  // public/congressional-districts-2026.json still draws. Where a state has since enacted a
+  // different 2026 map, the figures describe the district as it was, and say so.
+  const demographics = districtDemographics[race.id];
+  const demographicsNote = REDRAWN_SINCE_ACS_VINTAGE.has(stateAbbr)
+    ? `ACS 2020–24. ${race.state} enacted a new congressional map for ${electionYear}; these figures are for the district's previous lines.`
+    : "ACS 2020–24 5-year estimates.";
   const pvi2026 = houseDistrictPvi[race.id];
   const pviDisplay = pvi2026 != null
     ? pvi2026 === 0 ? "EVEN" : pvi2026 > 0 ? `R+${pvi2026}` : `D+${Math.abs(pvi2026)}`
@@ -307,16 +316,25 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
 
           <section>
             <LedgerSectionHead label="About this District" />
+            {demographics && (
+              <div className="mb-4">
+                <DemographicsStrip {...demographics} />
+              </div>
+            )}
             <AboutRaceCard
               bare
               title="About this District"
-              description={`[Placeholder — overview of ${districtLabel}, including its geography, key communities, and political history to be filled in.]`}
               items={[
                 { label: "Incumbent", value: currentRepName },
                 { label: "Party", value: currentRepParty ? (currentRepParty === "D" ? "Democrat" : currentRepParty === "R" ? "Republican" : "Independent") : "TBD" },
                 { label: "PVI", value: pviDisplay },
               ]}
             />
+            {demographics && (
+              <p className="text-xs mt-4" style={{ color: "var(--app-text-very-muted)" }}>
+                {demographicsNote}
+              </p>
+            )}
           </section>
 
           <section>

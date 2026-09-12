@@ -192,7 +192,10 @@ export function AboutRaceCard({
   bare = false,
 }: {
   title: string;
-  description: string;
+  // Optional: a race whose lead paragraph has nothing to say yet renders the label/value row on
+  // its own rather than a placeholder line (see the House district page, which leads with the
+  // district's demographics instead).
+  description?: string;
   items: DetailInfoItem[];
   compact?: boolean;
   // Renders as a plain paragraph + inline label/value row, no card chrome or boxed tiles —
@@ -202,9 +205,11 @@ export function AboutRaceCard({
   if (bare) {
     return (
       <div>
-        <p className="text-sm leading-relaxed mb-3" style={{ color: "var(--app-text-primary)" }}>
-          {description}
-        </p>
+        {description && (
+          <p className="text-sm leading-relaxed mb-3" style={{ color: "var(--app-text-primary)" }}>
+            {description}
+          </p>
+        )}
         <div className="flex flex-wrap gap-x-6 gap-y-1.5">
           {items.map(({ label, value }) => (
             <div key={label} className="text-xs" style={{ color: "var(--app-text-muted)" }}>
@@ -229,7 +234,7 @@ export function AboutRaceCard({
       <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-1.5" style={{ color: "var(--app-text-muted)" }}>
         {title}
       </h2>
-      {!compact && (
+      {!compact && description && (
         <p className="text-sm leading-relaxed mb-2.5" style={{ color: "var(--app-text-primary)" }}>
           {description}
         </p>

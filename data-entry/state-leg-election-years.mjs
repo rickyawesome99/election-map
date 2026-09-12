@@ -278,3 +278,85 @@ export const electionYears = {
   // via research, 2026-08-26.
   WY: { house: 2024, senate: (n) => (n % 2 === 0 ? 2024 : 2022) },
 };
+
+// ---------------------------------------------------------------------------------------------
+// Term length per chamber, used with `electionYears` above to derive each seat's NEXT regular
+// election year (next = lastElection + termYears). Values agree with the independently derived
+// `termYears` in data/stateLegCalendar.ts, which Phase 1 of the historical-results project
+// computed from Klarner's seats_up/total_seats rather than from this research.
+//
+// CAVEAT — three chambers do not hold a fixed interval across the decade, so a flat term length
+// is only guaranteed correct for the NEXT election from each seat's CURRENT last election. All
+// three are right as of the 2026 cycle; re-check them when rebuilding after a future election:
+//   - MN senate  4-4-2: elected 2022 -> 2026 -> 2030 -> 2032 (the 2-year term ends the decade).
+//     Flat 4 is correct through the 2030 election, wrong for what follows it.
+//   - IL senate  2-4-4 per district, sequence assigned by lot after each redistricting. The
+//     20-district 2024 group is on 2024 -> 2028 -> 2032; the 39-district group is on 2022 ->
+//     2026 -> then either 2030 or 2028, which the repo has no source for. Flat 4 is correct for
+//     both groups' next election and unverified beyond it.
+//   - NJ senate  2-4-4 with the 2-year term first (2021 -> 2023 -> 2027 -> 2031), so flat 4 is
+//     correct for the rest of this decade.
+export const termYears = {
+  AK: { house: 2, senate: 4 },
+  AL: { house: 4, senate: 4 },
+  AR: { house: 2, senate: 4 },
+  AZ: { house: 2, senate: 2 },
+  CA: { house: 2, senate: 4 },
+  CO: { house: 2, senate: 4 },
+  CT: { house: 2, senate: 2 },
+  DE: { house: 2, senate: 4 },
+  FL: { house: 2, senate: 4 },
+  GA: { house: 2, senate: 2 },
+  HI: { house: 2, senate: 4 },
+  IA: { house: 2, senate: 4 },
+  ID: { house: 2, senate: 2 },
+  IL: { house: 2, senate: 4 },
+  IN: { house: 2, senate: 4 },
+  KS: { house: 2, senate: 4 },
+  KY: { house: 2, senate: 4 },
+  LA: { house: 4, senate: 4 },
+  MA: { house: 2, senate: 2 },
+  MD: { house: 4, senate: 4 },
+  ME: { house: 2, senate: 2 },
+  MI: { house: 2, senate: 4 },
+  MN: { house: 2, senate: 4 },
+  MO: { house: 2, senate: 4 },
+  MS: { house: 4, senate: 4 },
+  MT: { house: 2, senate: 4 },
+  NC: { house: 2, senate: 2 },
+  ND: { house: 4, senate: 4 },
+  NE: { senate: 4 },
+  NH: { house: 2, senate: 2 },
+  NJ: { house: 2, senate: 4 },
+  NM: { house: 2, senate: 4 },
+  NV: { house: 2, senate: 4 },
+  NY: { house: 2, senate: 2 },
+  OH: { house: 2, senate: 4 },
+  OK: { house: 2, senate: 4 },
+  OR: { house: 2, senate: 4 },
+  PA: { house: 2, senate: 4 },
+  RI: { house: 2, senate: 2 },
+  SC: { house: 2, senate: 4 },
+  SD: { house: 2, senate: 2 },
+  TN: { house: 2, senate: 4 },
+  TX: { house: 2, senate: 4 },
+  UT: { house: 2, senate: 4 },
+  VA: { house: 2, senate: 4 },
+  VT: { house: 2, senate: 2 },
+  WA: { house: 2, senate: 4 },
+  WI: { house: 2, senate: 4 },
+  WV: { house: 2, senate: 4 },
+  WY: { house: 2, senate: 4 },
+};
+
+// Seats whose next regular election is NOT lastElection + termYears, keyed `ABBR|chamber|district`.
+//
+// The only current entries are North Dakota House districts 9 and 15. Both are ODD-numbered, so
+// they belong to ND's 2022/2026/2030 class, but each held a court-ordered election in Nov 2024
+// (under the Jan 2024 VRA remedial map) for a 2-year UNEXPIRED term rather than a full 4-year one.
+// That makes their lastElection 2024 while their next regular election is still 2026, when they
+// rejoin the odd-district cycle. See the ND entry in `electionYears` above for the full note.
+export const nextElectionOverrides = {
+  "ND|house|9": 2026,
+  "ND|house|15": 2026,
+};

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { HouseDelegationEntry, StateLegEntry } from "@/data/forecastData";
 import type { Chamber } from "@/data/stateLegDistricts";
+import type { UpcomingChamber } from "@/lib/stateLegUpcoming";
 import { MajorityPill, majorityStatus } from "./StateLegAboutSection";
 
 type CompositionEntry = StateLegEntry | HouseDelegationEntry;
@@ -36,6 +37,80 @@ function netChange(entry: CompositionEntry, prev: CompositionEntry | undefined):
   return null;
 }
 
+/**
+ * The cycle that hasn't happened yet. It sits at the top of the same list as the result cards and
+ * toggles the map the same way, but there is nothing to report about it in the terms the other
+ * cards use — no seat split, no margin, no votes — so it says what is actually known: how much of
+ * the chamber is on the ballot, and which part of it.
+ */
+function UpcomingCard({
+  upcoming,
+  active = false,
+  onSelect,
+}: {
+  upcoming: UpcomingChamber;
+  active?: boolean;
+  onSelect?: () => void;
+}) {
+  const { year, seatsUp, totalSeats, districtsUp, totalDistricts, wholeChamber, parity, termYears } = upcoming;
+  const headline = wholeChamber
+    ? `All ${totalSeats} seats up`
+    : totalSeats != null
+      ? `${seatsUp} of ${totalSeats} seats up`
+      : `${seatsUp} seats up`;
+  // In a one-seat-per-district chamber the district split restates the seat split verbatim, so it
+  // earns a line only where the two actually differ.
+  const districtsWorthSaying = !wholeChamber && !(districtsUp === seatsUp && totalDistricts === totalSeats);
+  const detail = [
+    termYears != null ? `${termYears}-year terms` : null,
+    parity
+      ? `${parity}-numbered districts`
+      : // Every district voting but only some of its seats is WV Senate's within-district stagger:
+        // each boundary has two senators on opposite cycles, so one of the two is always up.
+        districtsUp === totalDistricts && !wholeChamber
+        ? "one seat in every district"
+        : districtsWorthSaying
+          ? `${districtsUp} of ${totalDistricts} districts`
+          : null,
+  ].filter(Boolean).join(" · ");
+
+  return (
+    <button
+      type="button"
+      onClick={onSelect}
+      aria-current={active}
+      className="stateleg-year block w-full py-4 pl-2.5 pr-1 text-left"
+      style={{
+        borderBottom: "1px solid var(--app-border)",
+        borderLeft: `2px solid ${active ? "var(--app-text-primary)" : "transparent"}`,
+        background: active ? "var(--app-tab-bg)" : undefined,
+      }}
+    >
+      <div className="mb-2 flex items-baseline justify-between gap-2">
+        <span className="shrink-0 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.375rem", fontWeight: 700, color: "var(--app-text-primary)" }}>
+          {year}
+        </span>
+        <span className="shrink-0 whitespace-nowrap text-[9px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
+          Upcoming
+        </span>
+      </div>
+
+      <div className="mb-1.5 flex items-baseline gap-1.5 whitespace-nowrap text-lg font-bold leading-none tabular-nums" style={{ color: "var(--app-text-primary)" }}>
+        {headline}
+        {active && (
+          <span className="ml-1.5 text-[9px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
+            On map
+          </span>
+        )}
+      </div>
+
+      {detail && (
+        <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{detail}</div>
+      )}
+    </button>
+  );
+}
+
 function EntryCard({
   entry,
   selectable = false,
@@ -43,6 +118,7 @@ function EntryCard({
   onSelect,
   majorityInfo,
   net = null,
+  seatsUp = null,
 }: {
   entry: CompositionEntry;
   /** True where this year's district results exist, so the card can put them on the map. */
@@ -52,6 +128,9 @@ function EntryCard({
   majorityInfo?: MajorityInfo | null;
   /** Seats netted against the previous cycle, or null when nothing moved. */
   net?: { party: "D" | "R"; seats: number } | null;
+  /** Seats that stood in this cycle, or null where the figure isn't trustworthy — see
+   *  seatsUpByYear in StateLegSection. */
+  seatsUp?: number | null;
 }) {
   const hasSeats = entry.demSeats != null && entry.repSeats != null;
   const hasVoteData = entry.demPct != null && entry.repPct != null;
@@ -74,8 +153,17 @@ function EntryCard({
   const body = (
     <>
       <div className="mb-2 flex items-baseline justify-between gap-2">
-        <span className="shrink-0 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.375rem", fontWeight: 700, color: "var(--app-text-primary)" }}>
-          {entry.year}
+        <span className="flex min-w-0 items-baseline gap-1.5">
+          <span className="shrink-0 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.375rem", fontWeight: 700, color: "var(--app-text-primary)" }}>
+            {entry.year}
+          </span>
+          {/* How much of the chamber stood that cycle — the thing a seat split alone can't tell you
+              in a staggered chamber, where most of the seats behind it never went to the polls. */}
+          {seatsUp != null && (
+            <span className="truncate text-[11px] tabular-nums" style={{ color: "var(--app-text-primary)" }}>
+              {chamberSize != null && seatsUp >= chamberSize ? `all ${seatsUp} up` : `${seatsUp}${chamberSize != null ? ` of ${chamberSize}` : ""} up`}
+            </span>
+          )}
         </span>
         {winner && margin ? (
           <span
@@ -169,6 +257,10 @@ export default function StateLegCompositionBox({
   onSelectYear,
   majorityInfo = null,
   visibleCards,
+  upcoming = null,
+  upcomingActive = false,
+  onSelectUpcoming,
+  seatsUpByYear = null,
 }: {
   federalEntries?: HouseDelegationEntry[];
   houseEntries: StateLegEntry[];
@@ -188,6 +280,15 @@ export default function StateLegCompositionBox({
   /** Caps the scrollbox at this many cards. Left unset where the box is sized by its column
    *  instead, as on the legislature page, where it matches the map beside it. */
   visibleCards?: number;
+  /** The cycle still to come, for the card above the results. Only meaningful with `chamber` set,
+   *  since without it the box is a tabbed view of several chambers at once and this describes one.
+   *  Null where the chamber has nothing on this year's ballot. */
+  upcoming?: UpcomingChamber | null;
+  upcomingActive?: boolean;
+  onSelectUpcoming?: () => void;
+  /** Seats contested per past cycle. Like `upcoming`, describes one chamber, so it is only used
+   *  with `chamber` set — a year absent from it simply gets no figure. */
+  seatsUpByYear?: Record<number, number> | null;
 }) {
   const hasFederal = federalEntries.length > 0;
   const hasHouse = houseEntries.length > 0;
@@ -263,6 +364,9 @@ export default function StateLegCompositionBox({
           style={visibleCards ? { height: capHeight ?? visibleCards * 152 } : { height: "100%" }}
         >
           <div ref={listRef} className="flex flex-col">
+            {upcoming && chamber && (
+              <UpcomingCard upcoming={upcoming} active={upcomingActive} onSelect={onSelectUpcoming} />
+            )}
             {entries.map((entry) => {
               const selectable = !!onSelectYear && !!selectableYears?.includes(entry.year);
               // The nearest earlier cycle on this list, found by year rather than by position so
@@ -282,6 +386,7 @@ export default function StateLegCompositionBox({
                   onSelect={selectable ? () => onSelectYear?.(entry.year) : undefined}
                   majorityInfo={chamber ? majorityInfo : null}
                   net={netChange(entry, prev)}
+                  seatsUp={chamber ? seatsUpByYear?.[entry.year] ?? null : null}
                 />
               );
             })}

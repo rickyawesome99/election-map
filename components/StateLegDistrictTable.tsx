@@ -7,6 +7,7 @@ import type { StateLegPres2024, MapViewMode } from "@/data/stateLegPres2024";
 import { districtResultMargin } from "@/lib/useStateLegResults";
 import { isUnassignedResultKey } from "@/lib/stateLegDistrictKey";
 import { fmtMargin } from "@/lib/colorScale";
+import { electionYear } from "@/data/forecastData";
 
 const CHAMBER_LABEL: Record<Chamber, string> = {
   house: "State House",
@@ -28,6 +29,7 @@ const SEATS_COLUMNS: Column[] = [
   { full: "Incumbent" },
   { full: "Party" },
   { full: "Last Election", short: "Last" },
+  { full: "Next Election", short: "Next" },
   { full: "Margin" },
   { full: "2024 President", short: "2024 Pres" },
 ];
@@ -44,6 +46,13 @@ const RESULTS_COLUMNS: Column[] = [
  *  hover away here, but as columns they cost the width that made this table scroll on a phone. */
 function voteShare(votes: number | null | undefined, total: number): string {
   return `${(((votes ?? 0) / total) * 100).toFixed(1)}%`;
+}
+
+/** Seats standing in the current cycle read as present tense; ones further out are reference
+ *  detail, so they sit back a step. */
+function nextElectionColor(year: number | null | undefined): string {
+  if (year == null) return "var(--app-text-very-muted)";
+  return year <= electionYear ? "var(--app-text-primary)" : "var(--app-text-very-muted)";
 }
 
 /** "2" before "10", and "12A" before "12B" — a plain string sort scatters a numbered chamber. */
@@ -293,6 +302,25 @@ export default function StateLegDistrictTable({
                         ))
                       ) : (
                         <span style={{ color: d.lastElection != null ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>{d.lastElection ?? "—"}</span>
+                      )}
+                    </td>
+                    {/* Next regular election. Seats on this year's ballot are the ones a reader is
+                        usually here for, so they stay in the primary colour and later cycles recede.
+                        Per-incumbent years appear only where a district's seats are on different
+                        cycles (WV Senate), mirroring the Last Election column above. */}
+                    <td className="py-2 pr-2 md:py-3 md:pr-3 text-right tabular-nums whitespace-nowrap">
+                      {incumbents.some((inc) => inc.nextElection != null) ? (
+                        incumbents.map((inc, j) => {
+                          const year = inc.nextElection ?? d.nextElection;
+                          return (
+                            <span key={j} style={{ color: nextElectionColor(year) }}>
+                              {j > 0 && <span style={{ color: "var(--app-text-very-muted)" }}>, </span>}
+                              {year ?? "—"}
+                            </span>
+                          );
+                        })
+                      ) : (
+                        <span style={{ color: nextElectionColor(d.nextElection) }}>{d.nextElection ?? "—"}</span>
                       )}
                     </td>
                     <td className="py-2 pr-2 md:py-3 md:pr-3 text-right tabular-nums font-semibold whitespace-nowrap" style={{ color: d.margin != null ? (d.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)") : "var(--app-text-very-muted)" }}>

@@ -7,6 +7,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import StateMapSection from "@/components/StateMapSection";
 import StateLegCompositionBox from "@/components/StateLegCompositionBox";
+import StateDemographicsSection from "@/components/StateDemographicsSection";
+import { stateDemographics } from "@/data/demographics";
 import { latestChamberSeats } from "@/lib/stateLegSeats";
 import StatewideVoteHistoryPanel, { type StatewideHistoryEntry } from "@/components/StatewideVoteHistoryPanel";
 import CandidateLink from "@/components/CandidateLink";
@@ -630,6 +632,10 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
             <StatewideVoteHistoryPanel entries={statewideHistoryEntries} chartResults={voteHistoryResults} />
           </div>
         </StateMapSection>
+
+        {stateDemographics[state.abbr] && (
+          <StateDemographicsSection stateName={state.name} demographics={stateDemographics[state.abbr]} />
+        )}
       </main>
     </div>
   );

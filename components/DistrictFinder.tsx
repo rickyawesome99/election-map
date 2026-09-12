@@ -6,9 +6,12 @@ import { feature as topoFeature } from "topojson-client";
 import type { Topology } from "topojson-specification";
 import type { FeatureCollection } from "geojson";
 import { useDarkMode } from "@/lib/useDarkMode";
-import { DARK_THEME, LIGHT_THEME } from "@/components/ForecastMap";
+import { DARK_THEME, LIGHT_THEME, type Theme } from "@/components/ForecastMap";
 import { statesData } from "@/data/statesData";
-import { houseData } from "@/data/forecastData";
+import { houseData, electionYear, senateData, senateNoElection, senateHoldovers } from "@/data/forecastData";
+import { officeholders } from "@/data/officeholders";
+import { findRepresentingDistricts } from "@/lib/districtLookup";
+import type { StateLegDistrict } from "@/data/stateLegDistricts";
 
 const DistrictFinderMap = dynamic(() => import("@/components/DistrictFinderMap"), {
   ssr: false,
@@ -18,6 +21,108 @@ const DistrictFinderMap = dynamic(() => import("@/components/DistrictFinderMap")
     </div>
   ),
 });
+
+/**
+ * One office in the result panel: who holds it and the year it is next contested. The year is the
+ * point of the panel, so a seat on this cycle's ballot is called out rather than left as a number
+ * among numbers.
+ */
+function OfficeRow({
+  label,
+  name,
+  party,
+  nextElection,
+  href,
+  t,
+}: {
+  label: string;
+  name: string;
+  party?: string | null;
+  nextElection?: number | null;
+  /** The race or chamber page this seat belongs to. Omitted where there is no page to go to. */
+  href?: string | null;
+  t: Theme;
+}) {
+  const partyColor = party === "D" ? t.demText : party === "R" ? t.repText : t.textMuted;
+  const isThisCycle = nextElection === electionYear;
+  const Tag = href ? "a" : "div";
+  return (
+    <Tag
+      {...(href ? { href } : {})}
+      className={`flex items-baseline justify-between gap-2 py-1${href ? " group" : ""}`}
+    >
+      <div className="min-w-0">
+        <div className="truncate text-[9px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>
+          {label}
+        </div>
+        <div
+          className={`truncate text-[13px] font-semibold leading-snug${href ? " group-hover:underline" : ""}`}
+          style={{ color: t.textPrimary }}
+        >
+          {name}
+          {party && <span className="ml-1 font-bold" style={{ color: partyColor }}>({party})</span>}
+        </div>
+      </div>
+      {nextElection != null && (
+        <span
+          className="shrink-0 rounded-full px-1.5 py-0.5 text-[10px] font-bold tabular-nums"
+          style={
+            isThisCycle
+              ? { background: t.tabBg, color: t.textPrimary }
+              : { color: t.textVeryMuted }
+          }
+          title={isThisCycle ? `On the ballot in ${nextElection}` : `Next up in ${nextElection}`}
+        >
+          {nextElection}
+        </span>
+      )}
+    </Tag>
+  );
+}
+
+/**
+ * The Senate race page for a sitting senator.
+ *
+ * A state's two seats live in three different exports depending on when they are next up — this
+ * cycle's races in senateData, the class after in senateHoldovers, the one after that in
+ * senateNoElection — and the URL differs per bucket ("co" vs "co2"). Matching on the seat holder's
+ * name is what ties an officeholders.ts row to whichever bucket holds it; every one of the 100
+ * senators resolves to a distinct page this way.
+ */
+function senateHref(abbr: string, name: string): string | null {
+  const race = senateData.find((r) => r.id.slice(0, 2) === abbr && r.seatHolder === name);
+  if (race) return `/senate/${race.id.toLowerCase().replace(/-2$/, "2")}`;
+  if (senateNoElection.some((e) => e.abbr === abbr && e.incumbent === name)) return `/senate/${abbr.toLowerCase()}`;
+  if (senateHoldovers.some((e) => e.abbr === abbr && e.incumbent === name)) return `/senate/${abbr.toLowerCase()}2`;
+  return null;
+}
+
+/** A chamber's seats for one address — a district can elect more than one member, and in New
+ *  Hampshire an address is also covered by a floterial district that elects more on top. */
+function chamberRows(districts: StateLegDistrict[], chamberLabel: string, href: string | null) {
+  const rows: { label: string; name: string; party?: string | null; nextElection?: number | null; href?: string | null }[] = [];
+  for (const d of districts) {
+    // An overlay district is named as such: a New Hampshire address really is represented twice
+    // over in the same chamber, and two State House rows would otherwise read as a duplicate.
+    // Boundary labels spell the chamber several ways — "State House District 1", "State
+    // Legislative District 46" (MD), "Delegate District 54" (WV) — and the chamber is already the
+    // first half of this row's label. Named districts ("3rd Suffolk District", "Merrimack 18")
+    // match nothing here and are left whole.
+    const name = (d.label ?? d.number)
+      .replace(/^(State\s+)?(House|Senate|Legislative|Delegate|Assembly)\s+(Sub)?District\s+/i, "District ")
+      .replace(/\s+(State\s+(House|Senate)\s+)?(Senatorial\s+)?District$/i, "");
+    const label = `${chamberLabel} · ${name}${d.overlay ? " (floterial)" : ""}`;
+    const incumbents = d.incumbents ?? [];
+    if (incumbents.length === 0) {
+      rows.push({ label, name: "Vacant", party: null, nextElection: d.nextElection, href });
+      continue;
+    }
+    for (const inc of incumbents) {
+      rows.push({ label, name: inc.name, party: inc.party, nextElection: inc.nextElection ?? d.nextElection, href });
+    }
+  }
+  return rows;
+}
 
 interface GeocodeResult {
   lat: number;
@@ -29,8 +134,11 @@ interface GeocodeResult {
   cdGEOID: string | null;
   sldlName: string | null;
   sldlGEOID: string | null;
+  /** The district in the state's own spelling — the New Hampshire fallback in lib/districtLookup. */
+  sldlBasename: string | null;
   slduName: string | null;
   slduGEOID: string | null;
+  slduBasename: string | null;
 }
 
 // Module-level caches so data is loaded at most once per page session
@@ -86,13 +194,15 @@ function parseCensusGeographies(geo: Record<string, Record<string, string>[]>): 
   const sldlEntry = sldlKey ? (geo[sldlKey] ?? [])[0] : null;
   const sldlGEOID: string | null = sldlEntry?.GEOID ?? null;
   const sldlName: string | null = sldlEntry?.NAME ?? null;
+  const sldlBasename: string | null = sldlEntry?.BASENAME ?? null;
 
   const slduKey = Object.keys(geo).find(k => k.includes("Legislative Districts") && k.endsWith("- Upper"));
   const slduEntry = slduKey ? (geo[slduKey] ?? [])[0] : null;
   const slduGEOID: string | null = slduEntry?.GEOID ?? null;
   const slduName: string | null = slduEntry?.NAME ?? null;
+  const slduBasename: string | null = slduEntry?.BASENAME ?? null;
 
-  return { state: stateName, stateFIPS, cdName, cdGEOID, sldlName, sldlGEOID, slduName, slduGEOID };
+  return { state: stateName, stateFIPS, cdName, cdGEOID, sldlName, sldlGEOID, sldlBasename, slduName, slduGEOID, slduBasename };
 }
 
 async function lookupByCoordinates(lat: number, lng: number): Promise<DistrictInfo> {
@@ -339,12 +449,31 @@ export default function DistrictFinder() {
 
   const cdRace = result?.cdGEOID ? houseData.find(r => r.id === result.cdGEOID) : undefined;
   const stateMatch = result?.state ? statesData.find(s => s.name === result.state) : undefined;
+  const statewide = stateMatch ? officeholders[stateMatch.abbr] : undefined;
+  // Nebraska's one chamber is filed under "senate" in the district data, and the Census returns it
+  // as the upper chamber too, so no special-casing is needed here beyond the label.
+  const senateDistricts = stateMatch
+    ? findRepresentingDistricts(stateMatch.abbr, "senate", result?.slduGEOID ?? null, result?.slduBasename ?? null)
+    : [];
+  const houseDistricts = stateMatch
+    ? findRepresentingDistricts(stateMatch.abbr, "house", result?.sldlGEOID ?? null, result?.sldlBasename ?? null)
+    : [];
+  const isUnicameral = stateMatch?.abbr === "NE";
+  // Nothing to head a year column with when the address resolved to no offices at all (DC).
+  const hasOffices = !!statewide || !!cdRace || senateDistricts.length > 0 || houseDistricts.length > 0;
+  // The legislature page opens on whichever chamber the row belongs to; it reads the hash on load.
+  const legislatureHref = (chamber: "house" | "senate") =>
+    stateMatch ? `/states/${stateMatch.id}/legislature#${chamber}` : null;
+
+  // Phones give the map the rest of the screen: 109px of header and tabs above it plus the
+  // wrapper's 12px bottom padding is all the chrome there is, so subtracting 130 leaves a hair of
+  // breathing room and no more. Wider screens keep the roomier original.
+  const mapBoxHeight = "h-[calc(100svh_-_130px)] sm:h-[calc(100svh_-_162px)]";
 
   return (
     <div
-      className="relative mt-1 overflow-hidden rounded-xl"
+      className={`relative mt-1 overflow-hidden rounded-xl ${mapBoxHeight}`}
       style={{
-        height: "calc(100svh - 162px)",
         border: `1px solid ${t.border}`,
         boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
       }}
@@ -478,48 +607,94 @@ export default function DistrictFinder() {
             {result.matchedAddress}
           </div>
 
-          {stateMatch ? (
-            <a
-              href={`/states/${stateMatch.id}`}
-              className="mt-1 block text-2xl font-bold leading-tight hover:underline"
-              style={{ fontFamily: "var(--font-serif)", color: t.textPrimary }}
-            >
-              {result.state}
-            </a>
-          ) : (
-            <div className="mt-1 text-2xl font-bold leading-tight" style={{ fontFamily: "var(--font-serif)", color: t.textPrimary }}>
-              {result.state ?? "—"}
-            </div>
-          )}
-
-          {result.cdName && (
-            cdRace ? (
+          {/* The state and the year column's heading share a line: the heading has to sit outside
+              the scrollbox to stay put while a long list moves, and giving it a row of its own cost
+              the panel height it does not need on a phone. */}
+          <div className="mt-1 flex items-baseline justify-between gap-2">
+            {stateMatch ? (
               <a
-                href={`/house/${cdRace.name.toLowerCase()}`}
-                className="mt-2 inline-block rounded-full px-2.5 py-1 text-xs font-bold hover:underline"
-                style={{ background: t.tabBg, color: t.demText }}
+                href={`/states/${stateMatch.id}`}
+                className="block min-w-0 truncate text-[1.375rem] font-bold leading-tight hover:underline sm:text-2xl"
+                style={{ fontFamily: "var(--font-serif)", color: t.textPrimary }}
               >
-                {result.cdName}
+                {result.state}
               </a>
             ) : (
-              <div className="mt-2 inline-block rounded-full px-2.5 py-1 text-xs font-bold" style={{ background: t.tabBg, color: t.textMuted }}>
-                {result.cdName}
+              <div className="min-w-0 truncate text-[1.375rem] font-bold leading-tight sm:text-2xl" style={{ fontFamily: "var(--font-serif)", color: t.textPrimary }}>
+                {result.state ?? "—"}
               </div>
-            )
-          )}
+            )}
+            {hasOffices && (
+              <span
+                className="shrink-0 pr-1.5 text-[9px] font-semibold uppercase tracking-wider"
+                style={{ color: t.textMuted }}
+              >
+                Next Election
+              </span>
+            )}
+          </div>
 
-          <div className="mt-3 grid grid-cols-2 gap-3 border-t pt-3" style={{ borderColor: t.border }}>
-            <div>
-              <div className="text-[9px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>State House</div>
-              <div className="mt-0.5 text-sm font-bold leading-snug" style={{ fontFamily: "var(--font-serif)", color: t.textPrimary }}>
-                {result.sldlName ?? "—"}
+          {/* Who represents this address, and when each of those seats is next contested. Capped
+              and scrollable: a New Hampshire address can be represented by a dozen people once its
+              floterial district's members are counted alongside its base district's. */}
+          <div className="mt-2 border-t" style={{ borderColor: t.border }}>
+            <div
+              className="divide-y overflow-y-auto"
+              style={{ borderColor: t.border, maxHeight: "min(46svh, 20rem)" }}
+            >
+            {statewide && stateMatch && (
+              <>
+                <OfficeRow
+                  label="Governor"
+                  name={statewide.governor.name}
+                  party={statewide.governor.party}
+                  nextElection={statewide.governor.nextElection}
+                  href={`/governor/${stateMatch.abbr.toLowerCase()}`}
+                  t={t}
+                />
+                {/* The seat whose page is /senate/{abbr} leads, then /senate/{abbr}2 — the order
+                    the race pages are numbered in. That already matches the seat column this data
+                    is sorted by in all 50 states, but ordering on the resolved page rather than the
+                    column is what actually holds the two in step. */}
+                {statewide.senators
+                  .map(sen => ({ sen, href: senateHref(stateMatch.abbr, sen.name) }))
+                  .sort((a, b) => Number(!!a.href?.endsWith("2")) - Number(!!b.href?.endsWith("2")))
+                  .map(({ sen, href }) => (
+                    <OfficeRow
+                      key={sen.seat}
+                      label="US Senate"
+                      name={sen.name}
+                      party={sen.party}
+                      nextElection={sen.nextElection}
+                      href={href}
+                      t={t}
+                    />
+                  ))}
+              </>
+            )}
+            {/* Every US House seat is up every cycle, so the year here is always the current one. */}
+            {cdRace && (
+              <OfficeRow
+                label={`US House · ${cdRace.name}`}
+                name={cdRace.seatHolder ?? "Vacant"}
+                party={cdRace.seatParty}
+                nextElection={electionYear}
+                href={`/house/${cdRace.name.toLowerCase()}`}
+                t={t}
+              />
+            )}
+            {chamberRows(senateDistricts, isUnicameral ? "Legislature" : "State Senate", legislatureHref("senate")).map((r, i) => (
+              <OfficeRow key={`u${i}`} {...r} t={t} />
+            ))}
+            {!isUnicameral && chamberRows(houseDistricts, "State House", legislatureHref("house")).map((r, i) => (
+              <OfficeRow key={`l${i}`} {...r} t={t} />
+            ))}
+            {/* Fall back to naming the districts when the state's per-seat data isn't sourced. */}
+            {senateDistricts.length === 0 && houseDistricts.length === 0 && (
+              <div className="py-2 text-[11px]" style={{ color: t.textMuted }}>
+                {[result.slduName, result.sldlName].filter(Boolean).join(" · ") || "No state legislative districts found"}
               </div>
-            </div>
-            <div>
-              <div className="text-[9px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>State Senate</div>
-              <div className="mt-0.5 text-sm font-bold leading-snug" style={{ fontFamily: "var(--font-serif)", color: t.textPrimary }}>
-                {result.slduName ?? "—"}
-              </div>
+            )}
             </div>
           </div>
         </div>

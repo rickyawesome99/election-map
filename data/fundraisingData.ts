@@ -2904,7 +2904,7 @@ export const fundraisingData: Record<string, RaceFundraising> = {
   "S:SC:2016:Regular": { dem: 40236, rep: 6194855 },
   "S:SC:2020:Regular": { dem: 132685670, rep: 107747534 },
   "S:SC:2022:Regular": { dem: 135366, rep: 43127151 },
-  "S:SC:2026:Regular": { dem: 10804040, rep: 6766156 },
+  "S:SC:2026:Regular": { dem: 10804040, rep: null },
   "S:SD:2016:Regular": { dem: 70500, rep: 5170324 },
   "S:SD:2020:Regular": { dem: 273833, rep: 3663084 },
   "S:SD:2022:Regular": { dem: 497968, rep: 7547603 },

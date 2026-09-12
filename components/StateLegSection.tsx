@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useState, useCallback, useMemo, useEffect } from "react";
+import { Fragment, useState, useCallback, useMemo, useEffect, useSyncExternalStore } from "react";
 import StateLegDistrictMap from "./StateLegDistrictMap";
 import StateLegDistrictTable, { districtRowCount } from "./StateLegDistrictTable";
 import StateLegCompositionBox from "./StateLegCompositionBox";
@@ -10,6 +10,20 @@ import type { ChamberMapInfo } from "@/data/stateLegMapInfo";
 import type { StateLegCalendar } from "@/data/stateLegCalendar";
 import type { StateLegDistrictResult } from "@/data/stateLegResults";
 import type { StateLegPres2024, MapViewMode } from "@/data/stateLegPres2024";
+import { summarizeUpcoming, seatsUpIn } from "@/lib/stateLegUpcoming";
+
+/** "#senate" / "#house" in the URL, or null for anything else. */
+function getHashChamber(): Chamber | null {
+  const hash = window.location.hash.slice(1).toLowerCase();
+  return hash === "senate" || hash === "house" ? hash : null;
+}
+
+function subscribeToHash(onChange: () => void): () => void {
+  window.addEventListener("hashchange", onChange);
+  return () => window.removeEventListener("hashchange", onChange);
+}
+
+import { electionYear } from "@/data/forecastData";
 import { districtResultMargin, useStateLegResults } from "@/lib/useStateLegResults";
 import { districtDisplayLabel, isUnassignedResultKey } from "@/lib/stateLegDistrictKey";
 import { fmtMargin } from "@/lib/colorScale";
@@ -173,7 +187,7 @@ function SelectedDistrictPanel({
       {footnote && namedCandidates.length > 0 && (
         <div className="text-[10px] leading-snug" style={{ color: "var(--app-text-very-muted)" }}>{footnote}</div>
       )}
-      {viewMode === "seats" && district?.lastElection != null && !incumbents.some((inc) => inc.lastElection != null) && (
+      {(viewMode === "seats" || viewMode === "upcoming") && district?.lastElection != null && !incumbents.some((inc) => inc.lastElection != null) && (
         <div className="text-[10px] leading-snug" style={{ color: "var(--app-text-very-muted)" }}>
           Last elected {district.lastElection}
         </div>
@@ -198,6 +212,22 @@ function DistrictCountBar({
   viewMode: MapViewMode;
 }) {
   const { stats, aggregateMargin } = useMemo(() => {
+    if (viewMode === "upcoming") {
+      let up = 0;
+      let notUp = 0;
+      for (const d of districts) {
+        const n = seatsUpIn(d, electionYear);
+        up += n;
+        notUp += Math.max(0, (d.seats ?? Math.max(d.incumbents?.length ?? 0, 1)) - n);
+      }
+      return {
+        stats: [
+          { key: "up", label: `Up in ${electionYear}`, value: up, color: "var(--app-text-primary)" },
+          ...(notUp > 0 ? [{ key: "notUp", label: "Not up", value: notUp, color: "var(--app-text-very-muted)" }] : []),
+        ],
+        aggregateMargin: null,
+      };
+    }
     if (viewMode === "results") {
       if (!results) return { stats: [], aggregateMargin: null };
       const won: Record<string, number> = { D: 0, R: 0, O: 0 };
@@ -255,10 +285,11 @@ function DistrictCountBar({
     let vacant = 0;
     for (const d of districts) {
       const incumbents = d.incumbents ?? [];
-      if (incumbents.length === 0) {
-        vacant++;
-        continue;
-      }
+      // A multi-member district can be PARTLY vacant, so count empty seats rather than empty
+      // districts. Where seat counts aren't sourced, `seats` is absent and this falls back to the
+      // old behaviour: one vacancy for a district with nobody in it, none otherwise.
+      const seats = d.seats ?? Math.max(incumbents.length, 1);
+      vacant += Math.max(0, seats - incumbents.length);
       for (const inc of incumbents) counts[inc.party] = (counts[inc.party] ?? 0) + 1;
     }
     const entries: { key: string; label: string; value: number; color: string }[] = (["D", "R", "I", "O"] as const)
@@ -322,7 +353,14 @@ export default function StateLegSection({
   compositionHouseEntries?: StateLegEntry[];
   compositionSenateEntries?: StateLegEntry[];
 }) {
-  const [chamber, setChamber] = useState<Chamber>("house");
+  // The chamber comes from the URL hash when one is present, so a link can open the page straight
+  // onto the State Senate — the district finder sends readers here per seat. Read through
+  // useSyncExternalStore rather than an effect so the server render and hydration agree (the server
+  // snapshot is simply "no hash") without a setState-in-effect round trip.
+  const hashChamber = useSyncExternalStore(subscribeToHash, getHashChamber, () => null);
+  // A tab the reader clicks wins over the hash from then on.
+  const [chamberChoice, setChamberChoice] = useState<Chamber | null>(null);
+  const chamber = chamberChoice ?? hashChamber ?? "house";
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<MapViewMode>("seats");
   const [resultsYear, setResultsYear] = useState<number | null>(null);
@@ -338,6 +376,48 @@ export default function StateLegSection({
   const pres2024 = pres2024ByChamber[activeChamber] ?? {};
   const calendar = calendarByChamber[activeChamber];
   const chamberLabel = isUnicameral ? "Legislature" : CHAMBER_LABEL[activeChamber];
+
+  /**
+   * Seats contested in each past cycle, for the history cards.
+   *
+   * `calendar.seatsUp` counts contests the returns actually carry, which is not always the number
+   * of seats that stood. Two corrections:
+   *   - An UNSTAGGERED chamber puts every seat up by definition, so its era's size is exact and
+   *     beats any contest count that came up short.
+   *   - A staggered chamber's figure is dropped when it falls well below the class size the
+   *     chamber's own term structure implies. That is the signature of a sourcing gap — the 2024
+   *     MEDSL returns omit seats whose unopposed candidate was declared elected with no count, so
+   *     e.g. Oklahoma's Senate reads 11 of 48 for a cycle that actually stood 24. An absent figure
+   *     says "not known"; a wrong one would say something false.
+   */
+  const seatsUpByYear = useMemo(() => {
+    if (!calendar) return null;
+    const out: Record<number, number> = {};
+    for (const era of calendar.eras) {
+      for (const year of era.electionYears) {
+        if (!calendar.staggered) { out[year] = era.totalSeats; continue; }
+        const contested = calendar.seatsUp[String(year)];
+        if (contested == null) continue;
+        const classSize = (era.totalSeats * 2) / (calendar.termYears ?? 4);
+        if (contested < classSize * 0.8) continue;
+        out[year] = contested;
+      }
+    }
+    return out;
+  }, [calendar]);
+
+  // What this chamber puts on the ballot this cycle — null for the chambers sitting the year out,
+  // which then get neither a card nor the map view.
+  const upcoming = useMemo(
+    () =>
+      summarizeUpcoming(
+        districts,
+        electionYear,
+        calendar?.eras.at(-1)?.totalSeats ?? mapInfoByChamber[activeChamber]?.totalSeats ?? null,
+        calendar?.termYears ?? null,
+      ),
+    [districts, calendar, mapInfoByChamber, activeChamber],
+  );
 
   // Newest first — a reader looking for a past result almost always wants the most recent one.
   const electionYears = useMemo(
@@ -377,7 +457,7 @@ export default function StateLegSection({
   // A selected district belongs to one chamber's map, and to one era's lines; switching either
   // invalidates it, since the same code can be a different place or no place at all.
   const handleChamberSwitch = useCallback((c: Chamber) => {
-    setChamber(c);
+    setChamberChoice(c);
     setSelectedKey(null);
   }, []);
 
@@ -386,11 +466,17 @@ export default function StateLegSection({
   const handleModeSelect = useCallback((mode: MapViewMode) => {
     if (mode === "results") {
       setResultsYear((y) => (y != null && electionYears.includes(y) ? y : electionYears[0] ?? null));
-    } else {
+    } else if (mode !== "upcoming") {
       setPreResultsMode(mode);
     }
     setViewMode(mode);
   }, [electionYears]);
+
+  // The upcoming card toggles the same way a year card does: clicking the one already on the map
+  // takes it back off and restores whatever shading was there before.
+  const handleUpcomingSelect = useCallback(() => {
+    setViewMode((m) => (m === "upcoming" ? preResultsMode : "upcoming"));
+  }, [preResultsMode]);
 
   // Clicking the card already on the map is an undo, not a no-op: it takes the year back off and
   // returns the map to whatever it was showing beforehand. The year itself is remembered, so
@@ -404,12 +490,18 @@ export default function StateLegSection({
     setViewMode("results");
   }, [viewMode, activeYear, preResultsMode]);
 
+  // The last slot is the cycle rail: it names whichever card is currently on the map, whether that
+  // is a past result or the upcoming cycle, rather than the upcoming view getting a tab of its own.
+  // It stays the "past results" control when clicked — the 2026 card is the way into that view.
+  const cycleLabel = viewMode === "upcoming" && upcoming
+    ? `${upcoming.year} seats up`
+    : viewMode === "results" && activeYear != null
+      ? `${activeYear} results`
+      : "Past results";
   const modeItems: [MapViewMode, string][] = [
     ["seats", "Seats"],
     ["president", "2024 President"],
-    ...(electionYears.length > 0
-      ? ([["results", viewMode === "results" && activeYear != null ? `${activeYear} results` : "Past results"]] as [MapViewMode, string][])
-      : []),
+    ...(electionYears.length > 0 ? ([["results", cycleLabel]] as [MapViewMode, string][]) : []),
   ];
 
   // Whether the year on screen ran on lines that are no longer in effect — the thing the
@@ -561,7 +653,9 @@ export default function StateLegSection({
                     onClick={() => handleModeSelect(mode)}
                     className="whitespace-nowrap text-[12.5px] transition-colors"
                     style={
-                      viewMode === mode
+                      // The cycle slot is also what marks the upcoming view, which has no tab of
+                      // its own — selecting the 2026 card lights this one up.
+                      viewMode === mode || (mode === "results" && viewMode === "upcoming")
                         ? {
                             color: "var(--app-text-primary)",
                             fontWeight: 600,
@@ -609,6 +703,7 @@ export default function StateLegSection({
               pres2024={pres2024}
               results={results}
               resultsYear={activeYear}
+              upcomingYear={electionYear}
               resultsSource={chamberResults?.source ?? null}
               resultsLoading={resultsLoading}
               viewMode={viewMode}
@@ -668,6 +763,10 @@ export default function StateLegSection({
               activeYear={viewMode === "results" ? activeYear : null}
               selectableYears={electionYears}
               onSelectYear={handleYearSelect}
+              upcoming={upcoming}
+              upcomingActive={viewMode === "upcoming"}
+              onSelectUpcoming={handleUpcomingSelect}
+              seatsUpByYear={seatsUpByYear}
             />
           </div>
         </div>

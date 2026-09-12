@@ -19,6 +19,7 @@ import {
   parseFilter,
 } from "@/lib/raceCalendarQuery";
 import { redistrictingTotals, redistrictingYears } from "@/lib/redistrictingCalendar";
+import { UPCOMING_YEAR, hasUpcomingCycle, upcomingTotals } from "@/lib/upcomingElections";
 
 const FIRST_YEAR = Math.min(...raceCalendarYears);
 const LAST_YEAR = Math.max(...raceCalendarYears);
@@ -86,6 +87,7 @@ export default async function CalendarPage({
             Which offices were on the ballot in every state and year from {FIRST_YEAR} to {LAST_YEAR}, and the full
             result of each race behind them, plus when each state redrew the district lines those races were
             run on. Where a race went to a runoff, the runoff is the result shown.
+            {hasUpcomingCycle && ` The last column looks the other way: every seat on the ballot in ${UPCOMING_YEAR}.`}
           </div>
 
           {/* Stat row */}
@@ -97,6 +99,9 @@ export default async function CalendarPage({
               { value: calendarTotals.specials, label: "Special elections" },
               { value: calendarTotals.runoffs, label: "Runoffs" },
               { value: redistrictingTotals.events, label: "Redraws" },
+              ...(hasUpcomingCycle
+                ? [{ value: upcomingTotals.seats.toLocaleString(), label: `Seats up in ${UPCOMING_YEAR}` }]
+                : []),
             ].map((stat, i, all) => (
               <div key={stat.label} className={i < all.length - 1 ? "pr-8" : ""} style={i < all.length - 1 ? { borderRight: "1px solid var(--app-border)" } : undefined}>
                 <div className="text-2xl font-extrabold tabular-nums">{stat.value}</div>
@@ -114,13 +119,24 @@ export default async function CalendarPage({
         <section className="mb-12">
           <LedgerSectionHead
             label="Election Calendar"
-            meta="Which races were up in each state and year — select a cell to open it below"
+            meta={`Which races were up in each state and year — select a cell to open it below${
+              hasUpcomingCycle ? `, or a ${UPCOMING_YEAR} badge to open that race` : ""
+            }`}
           />
           <CalendarJumpLinks targetId={RACE_TABLE_ID}>
             <CalendarHoverCard>
               <ElectionCalendarGrid filter={filter} states={calendarStates} />
             </CalendarHoverCard>
           </CalendarJumpLinks>
+          {hasUpcomingCycle && (
+            <p className="mt-4 max-w-3xl text-xs leading-relaxed" style={{ color: "var(--app-text-very-muted)" }}>
+              The {UPCOMING_YEAR} column is the ballot rather than a result: {upcomingTotals.senate} Senate
+              seats (including {upcomingTotals.specials} specials), {upcomingTotals.governor} governorships and
+              all {upcomingTotals.house} House seats, taken from the forecast rather than from the results
+              files. Its badges are outlined for that reason, and they open the race itself &mdash; the Race
+              Calendar below covers elections already held, so it has no row for any of them yet.
+            </p>
+          )}
         </section>
 
         {/* Redistricting Calendar */}

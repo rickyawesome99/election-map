@@ -198,6 +198,12 @@ body::before {
 .cal-badge[data-kind="SS"] { --cal-badge-color: var(--redistrict-ss); }
 /* A special election is drawn as the same badge with a broken edge. */
 .cal-badge[data-special] { border-style: dashed; border-color: var(--cal-badge-color); }
+/* A race that has not been held yet is an outline rather than a fill — the column is a ballot,
+   not a result. Placed after the special rule so an upcoming special keeps its dashed edge. */
+.cal-badge[data-upcoming] {
+  background: transparent;
+  border-color: color-mix(in srgb, var(--cal-badge-color) 55%, transparent);
+}
 .cal-badge > .count { font-size: 9px; font-weight: 600; opacity: 0.75; }
 .cal-badge > .runoff { font-size: 9px; opacity: 0.9; }
 
@@ -231,6 +237,12 @@ body::before {
   border-bottom: 1px solid var(--app-border);
 }
 .cal-grid tbody td .slots { display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 0.125rem; }
+/* The upcoming cycle is set off from the thirteen columns of results to its left. */
+.cal-grid .upcoming { border-left: 1px solid var(--app-border); }
+.cal-grid thead th.upcoming,
+.cal-grid tbody td.upcoming { background: color-mix(in srgb, var(--app-text-primary) 4%, transparent); }
+.cal-grid thead th.upcoming { color: var(--app-text-primary); }
+.cal-grid .slot-link { display: inline-flex; }
 .cal-grid .empty { color: var(--app-text-very-muted); }
 .cal-grid .abbr { font-size: 0.75rem; font-weight: 700; color: var(--app-text-primary); }
 .cal-grid .full { margin-left: 0.5rem; font-size: 0.75rem; color: var(--app-text-very-muted); }

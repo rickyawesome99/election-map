@@ -15,7 +15,7 @@ import StateCountyMap from "@/components/StateCountyMap";
 import CountyTplCard from "@/components/CountyTplCard";
 import CountySpreadColumns from "@/components/CountySpreadColumns";
 import CountyCompareCard from "@/components/CountyCompareCard";
-import CountyDemographicsStrip from "@/components/CountyDemographicsStrip";
+import DemographicsStrip from "@/components/DemographicsStrip";
 import CountyLeanTrendChart from "@/components/CountyLeanTrendChart";
 import { AboutRaceCard, LedgerSectionHead, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 
@@ -396,7 +396,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
               {countyDemographics[fips] && (
                 <section className="mb-8">
                   <LedgerSectionHead label="Demographics" />
-                  <CountyDemographicsStrip {...countyDemographics[fips]} />
+                  <DemographicsStrip {...countyDemographics[fips]} />
                 </section>
               )}
 

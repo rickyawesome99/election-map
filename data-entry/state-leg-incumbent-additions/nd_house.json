@@ -1,0 +1,13 @@
+{
+  "_comment": "Sitting members that the Open States /people dump is missing, keyed by district. Merged in by scripts/build-state-leg-incumbents.mjs after the dump is grouped by district. `party` uses Open States' own spelling (\"Democratic\", \"Republican\", ...) so it runs through the same mapping as fetched members. Use this only for a seat that is genuinely filled and genuinely absent upstream — a real vacancy should stay empty, and a wrong party is a job for state-leg-party-overrides instead.",
+  "_source": "North Dakota Legislative Branch, District 11 roster (https://ndlegis.gov/districts/2025-2032/district-11), checked 2026-09-11",
+  "districts": {
+    "11": [
+      {
+        "name": "Adam Goldwyn",
+        "party": "Democratic",
+        "note": "Active 2026-06-01, filling the seat of Liz Conmy (D), who died 2026-04-25. North Dakota fills legislative vacancies by district committee appointment rather than by special election, so the seat's last REGULAR election remains 2022 (District 11 is odd-numbered, so it is in ND's 2022/2026/2030 class) and its next is 2026 — the district-level rule already covers this and no per-incumbent override is needed. Open States still reported only 93 of North Dakota's 94 representatives when rechecked on 2026-09-11."
+      }
+    ]
+  }
+}

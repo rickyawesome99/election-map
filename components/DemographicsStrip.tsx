@@ -1,3 +1,5 @@
+import type { Demographics } from "@/data/demographics";
+
 function Stat({ value, label }: { value: string; label: string }) {
   return (
     <span style={{ color: "var(--app-text-primary)" }}>
@@ -6,22 +8,23 @@ function Stat({ value, label }: { value: string; label: string }) {
   );
 }
 
-export default function CountyDemographicsStrip({
+/**
+ * The inline demographic summary shared by county, district and state pages. Takes the same
+ * shape everywhere (data/demographics.ts's Demographics, which data/countyDemographics.ts's
+ * CountyDemographics is a subset of) and simply omits any figure its source does not carry -
+ * counties have no population field, so they render one stat fewer.
+ */
+export default function DemographicsStrip({
+  population,
   collegePct,
   whitePct,
   blackPct,
   hispanicPct,
   asianPct,
   medianHouseholdIncome,
-}: {
-  collegePct?: number;
-  whitePct?: number;
-  blackPct?: number;
-  hispanicPct?: number;
-  asianPct?: number;
-  medianHouseholdIncome?: number;
-}) {
+}: Demographics) {
   const stats: { label: string; value: string }[] = [];
+  if (population != null) stats.push({ label: "population", value: population.toLocaleString() });
   if (collegePct != null) stats.push({ label: "college", value: `${collegePct.toFixed(1)}%` });
   if (whitePct != null) stats.push({ label: "white", value: `${whitePct.toFixed(1)}%` });
   if (blackPct != null) stats.push({ label: "Black", value: `${blackPct.toFixed(1)}%` });

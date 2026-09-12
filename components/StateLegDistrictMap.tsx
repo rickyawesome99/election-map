@@ -10,6 +10,7 @@ import { ABBR_TO_FIPS } from "@/lib/fips";
 import { getRaceColor, getRatingColors, fmtMargin } from "@/lib/colorScale";
 import { districtDisplayLabel, indexByNormalizedKey, lookupByDistrictCode } from "@/lib/stateLegDistrictKey";
 import { districtResultMargin } from "@/lib/useStateLegResults";
+import { isDistrictUp, seatsUpIn } from "@/lib/stateLegUpcoming";
 import type { Chamber, StateLegDistrict } from "@/data/stateLegDistricts";
 import type { ChamberMapInfo } from "@/data/stateLegMapInfo";
 import type { StateLegDistrictResult } from "@/data/stateLegResults";
@@ -104,7 +105,16 @@ const NO_DATA_FILL = { light: "#c7cad1", dark: "#454b57" };
 const NO_COUNT_FILL = { light: "#d9d0bd", dark: "#57503f" };
 
 /** The three shapes the fine print under the map takes, one per view. */
-const NOTE_VARIANTS = ["seats", "president", "results"] as const;
+const NOTE_VARIANTS = ["seats", "upcoming", "president", "results"] as const;
+
+// The upcoming view carries no ratings yet, so it says one thing only: is this seat on the ballot.
+// Two greys rather than a party or margin hue, because any colour here would imply a lean the data
+// does not have. The "up" shade is the high-contrast one in both themes, so the half of a staggered
+// chamber that is actually voting is what the eye lands on.
+const UPCOMING_FILL = {
+  up: { light: "#6b7280", dark: "#9aa3b2" },
+  notUp: { light: "#e2e4e9", dark: "#333a46" },
+};
 
 const OTHER_FILL: Record<string, { light: string; dark: string }> = {
   I: { light: "#c9b98a", dark: "#8a7a4a" },
@@ -131,6 +141,7 @@ export default function StateLegDistrictMap({
   resultsSource = null,
   resultsLoading = false,
   viewMode = "seats",
+  upcomingYear,
   selectedKey = null,
   onSelect,
   overlay = null,
@@ -151,6 +162,8 @@ export default function StateLegDistrictMap({
   resultsSource?: string | null;
   resultsLoading?: boolean;
   viewMode?: MapViewMode;
+  /** The cycle the "upcoming" view shades for. */
+  upcomingYear: number;
   /** The selected district's code, which is all the three views have in common. */
   selectedKey?: string | null;
   onSelect?: (districtNumber: string | null) => void;
@@ -200,6 +213,7 @@ export default function StateLegDistrictMap({
   const outlineFill = darkMode ? "#2a3550" : "#dbe3f0";
   const chamberLabel = isUnicameral ? "Legislature" : CHAMBER_LABEL[chamber];
   const isResultsView = viewMode === "results";
+  const isUpcomingView = viewMode === "upcoming";
 
   // A shared district boundary can have more than one incumbent (multi-member districts, e.g.
   // AZ/WA House). If they're all the same party, color by that party; if they split, use a
@@ -242,6 +256,12 @@ export default function StateLegDistrictMap({
       if (margin == null) return darkMode ? NO_COUNT_FILL.dark : NO_COUNT_FILL.light;
       return getRaceColor(margin);
     }
+    if (viewMode === "upcoming") {
+      const district = districtByNumber[districtNumber];
+      const up = !!district && isDistrictUp(district, upcomingYear);
+      const shade = up ? UPCOMING_FILL.up : UPCOMING_FILL.notUp;
+      return darkMode ? shade.dark : shade.light;
+    }
     if (viewMode === "president") {
       const result = pres2024[districtNumber];
       if (result) return getRaceColor(result.margin);
@@ -254,7 +274,7 @@ export default function StateLegDistrictMap({
     const colors = OTHER_FILL[party];
     if (!colors) return districtFill;
     return darkMode ? colors.dark : colors.light;
-  }, [isResultsView, resultFor, hasResults, viewMode, pres2024, hasPres2024, partyByNumber, darkMode, districtFill]);
+  }, [isResultsView, resultFor, hasResults, viewMode, pres2024, hasPres2024, partyByNumber, darkMode, districtFill, districtByNumber, upcomingYear]);
 
   const handleHoverEnter = useCallback((key: string) => setHoveredKey(key), []);
   const handleHoverLeave = useCallback(() => setHoveredKey(null), []);
@@ -374,7 +394,7 @@ export default function StateLegDistrictMap({
             ? (hoveredMargin == null ? 62 : 46 + resultLines * 16)
             : viewMode === "president"
               ? (hoveredPres?.estimated ? 76 : 62)
-              : 46 + Math.max(incumbents.length, 1) * 16;
+              : 46 + Math.max(incumbents.length, 1) * 16 + (viewMode === "upcoming" ? 16 : 0);
           const offset = 16;
           const edgePad = 8;
           let left = mousePos.x + offset;
@@ -499,6 +519,21 @@ export default function StateLegDistrictMap({
                   Last elected {hoveredDistrict.lastElection}
                 </div>
               )}
+              {/* In the upcoming view the one thing worth saying is whether this district is voting,
+                  and for a partly-staggered boundary (WV Senate) how many of its seats are. */}
+              {isUpcomingView && hoveredDistrict && (() => {
+                const up = seatsUpIn(hoveredDistrict, upcomingYear);
+                const total = hoveredDistrict.seats ?? Math.max(incumbents.length, 1);
+                return (
+                  <div className="mt-1 pt-1" style={{ fontSize: 10, color: "var(--app-text-very-muted)", borderTop: "1px solid var(--app-border)" }}>
+                    {up === 0
+                      ? `Not up until ${hoveredDistrict.nextElection ?? "—"}`
+                      : up < total
+                        ? `${up} of ${total} seats up in ${upcomingYear}`
+                        : `On the ballot in ${upcomingYear}`}
+                  </div>
+                );
+              })()}
             </div>
           );
         })()}
@@ -597,8 +632,9 @@ export default function StateLegDistrictMap({
           only turns invisible. Same for the "no count published" chip, which otherwise changes the
           wrap within results view from one year to the next. Height is then identical in all three
           views at every width. */}
+      <div className="mt-2 grid">
       <div
-        className={`mt-2 flex h-5 items-center gap-x-3 overflow-x-auto scrollbar-none md:h-auto md:flex-wrap md:gap-y-1${showMarginLegend ? "" : " invisible"}`}
+        className={`col-start-1 row-start-1 flex h-5 items-center gap-x-3 overflow-x-auto scrollbar-none md:h-auto md:flex-wrap md:gap-y-1${showMarginLegend ? "" : " invisible"}`}
         aria-hidden={!showMarginLegend}
       >
         {MARGIN_LEGEND.map(({ label, bg }) => (
@@ -618,6 +654,23 @@ export default function StateLegDistrictMap({
           <span className="whitespace-nowrap text-[9px] font-medium" style={{ color: "var(--app-text-muted)" }}>No data</span>
         </div>
       </div>
+      {/* Stacked in the same grid cell as the margin scale above, so swapping views never changes
+          this row's height — see the note on the fine print below for why that matters. */}
+      <div
+        className={`col-start-1 row-start-1 flex h-5 items-center gap-x-3 overflow-x-auto scrollbar-none md:h-auto md:flex-wrap md:gap-y-1${isUpcomingView ? "" : " invisible"}`}
+        aria-hidden={!isUpcomingView}
+      >
+        {([["up", `On the ballot in ${upcomingYear}`], ["notUp", "Not up this cycle"]] as const).map(([key, label]) => (
+          <div key={key} className="flex items-center gap-1">
+            <span
+              className="h-2 w-2 shrink-0 rounded-full"
+              style={{ background: darkMode ? UPCOMING_FILL[key].dark : UPCOMING_FILL[key].light }}
+            />
+            <span className="whitespace-nowrap text-[9px] font-medium" style={{ color: "var(--app-text-muted)" }}>{label}</span>
+          </div>
+        ))}
+      </div>
+      </div>
 
       {/* Every variant of the fine print stacked in one grid cell: the one for the current view is
           visible, the rest are laid out invisibly behind it. The block is therefore always as tall
@@ -630,13 +683,18 @@ export default function StateLegDistrictMap({
       {hasDistricts && (
         <div className="mt-2 grid min-h-[3.4rem] md:min-h-0">
           {NOTE_VARIANTS.map((variant) => {
-            const active = variant === (isResultsView ? "results" : viewMode === "president" ? "president" : "seats");
+            const active = variant === (isResultsView ? "results" : viewMode === "president" || viewMode === "upcoming" ? viewMode : "seats");
             return (
               <div
                 key={variant}
                 className={`col-start-1 row-start-1 flex flex-col gap-1${active ? "" : " invisible"}`}
                 aria-hidden={!active}
               >
+                {variant === "upcoming" && (
+                  <div className="text-[10px] italic" style={{ color: "var(--app-text-very-muted)" }}>
+                    Shading shows only which seats are contested — no ratings have been set for {upcomingYear} yet.
+                  </div>
+                )}
                 {variant === "president" && hasEstimatedPres && (
                   <div className="text-[10px] italic" style={{ color: "var(--app-text-very-muted)" }}>
                     Dashed outline = estimated (no 2024 election in that district; modeled from overlapping House-district results)
