@@ -3,7 +3,7 @@ AK,2022,Regular,Les Gara,Mike Dunleavy,R,24.21,50.29,26.08,"63,851","132,632","6
 AK,2018,Regular,Mark Begich,Mike Dunleavy,None,44.41,51.44,7.03,"125,739","145,631","19,892",283134
 AK,2014,Regular,Bill Walker (I),Sean Parnell,R,48.1,45.88,-2.22,"134,658","128,435","-6,223",279958
 AL,2022,Regular,Yolanda Flowers,Kay Ivey,R,29.18,66.91,37.73,"412,961","946,932","533,971",1415283
-AL,2018,Regular,Walt Maddox,Kay Ivey,R,40.39,59.46,19.07,"694,495","1,022,457","327,962",1719589
+AL,2018,Regular,Walt Maddox,Kay Ivey,R*,40.39,59.46,19.07,"694,495","1,022,457","327,962",1719589
 AL,2014,Regular,Parker Griffith,Robert Bentley,R,36.24,63.56,27.32,"427,787","750,231","322,444",1180413
 AR,2022,Regular,Chris Jones,Sarah Huckabee Sanders,None,35.2,62.96,27.76,"319,242","571,105","251,863",907037
 AR,2018,Regular,Jared Henderson,Asa Hutchinson,R,31.77,65.33,33.56,"283,218","582,406","299,188",891509
@@ -33,7 +33,7 @@ HI,2022,Regular,Josh Green,Duke Aiona,None,63.21,36.79,-26.42,"259,901","151,258
 HI,2018,Regular,David Ige,Andria Tupola,D,62.67,33.7,-28.97,"244,934","131,719","-113,215",390843
 HI,2014,Regular,David Ige,Duke Aiona,None,49.45,37.08,-12.37,"181,106","135,775","-45,331",366210
 IA,2022,Regular,Deidre DeJear,Kim Reynolds,R,39.53,58.04,18.51,"482,950","709,198","226,248",1221846
-IA,2018,Regular,Fred Hubbell,Kim Reynolds,R,47.53,50.26,2.73,"630,986","667,275","36,289",1327603
+IA,2018,Regular,Fred Hubbell,Kim Reynolds,R*,47.53,50.26,2.73,"630,986","667,275","36,289",1327603
 IA,2014,Regular,Jack Hatch,Terry Branstad,R,37.27,58.99,21.72,"420,787","666,032","245,245",1129059
 ID,2022,Regular,Stephen Heidt,Brad Little,R,20.28,60.52,40.24,"120,160","358,598","238,438",592528
 ID,2018,Regular,Paulette Jordan,Brad Little,None,38.19,59.76,21.57,"231,081","361,661","130,580",605150
@@ -100,7 +100,7 @@ NM,2014,Regular,Gary King,Susana Martinez,R,42.78,57.22,14.44,"219,362","293,443
 NV,2022,Regular,Steve Sisolak,Joe Lombardo,D,47.3,48.81,1.51,"481,991","497,377","15,386",1019006
 NV,2018,Regular,Steve Sisolak,Adam Laxalt,None,49.39,45.31,-4.08,"480,007","440,320","-39,687",971837
 NV,2014,Regular,Bob Goodman,Brian Sandoval,R,23.88,70.58,46.7,"130,722","386,340","255,618",547379
-NY,2022,Regular,Kathy Hochul,Lee Zeldin,D,53.2,46.8,-6.4,"3,140,415","2,762,581","-377,834",5903031
+NY,2022,Regular,Kathy Hochul,Lee Zeldin,D*,53.2,46.8,-6.4,"3,140,415","2,762,581","-377,834",5903031
 NY,2018,Regular,Andrew Cuomo,Marc Molinaro,D,59.62,36.21,-23.41,"3,635,340","2,207,602","-1,427,738",6097256
 NY,2014,Regular,Andrew Cuomo,Rob Astorino,D,54.28,40.31,-13.97,"2,069,480","1,537,077","-532,403",3812810
 OH,2022,Regular,Nan Whaley,Mike DeWine,R,37.38,62.41,25.03,"1,545,489","2,580,424","1,034,935",4134632
@@ -119,7 +119,7 @@ RI,2022,Regular,Dan McKee,Ashley Kalus,D,57.92,38.86,-19.06,"207,166","139,001",
 RI,2018,Regular,Gina Raimondo,Allan Fung,D,52.64,37.18,-15.46,"198,122","139,932","-58,190",376372
 RI,2014,Regular,Gina Raimondo,Allan Fung,None,40.7,36.24,-4.46,"131,899","117,428","-14,471",324055
 SC,2022,Regular,Joe Cunningham,Henry McMaster,R,40.67,58.04,17.37,"692,691","988,501","295,810",1703138
-SC,2018,Regular,James Smith,Henry McMaster,R,45.92,53.96,8.04,"784,182","921,342","137,160",1707570
+SC,2018,Regular,James Smith,Henry McMaster,R*,45.92,53.96,8.04,"784,182","921,342","137,160",1707570
 SC,2014,Regular,Vincent Sheheen,Nikki Haley,R,41.42,55.9,14.48,"516,166","696,645","180,479",1246225
 SD,2022,Regular,Jamie Smith,Kristi Noem,R,35.17,61.98,26.81,"123,148","217,035","93,887",350169
 SD,2018,Regular,Billie Sutton,Kristi Noem,None,47.6,50.97,3.37,"161,454","172,912","11,458",339217

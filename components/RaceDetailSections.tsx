@@ -1,9 +1,10 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
 import CandidateLink from "@/components/CandidateLink";
+import { FORECAST_CONSTANTS } from "@/data/tplModelData";
 import { WinProbabilityLabel } from "@/components/WinProbabilityLabel";
 import { InfoTooltip } from "@/components/InfoTooltip";
-import { POLL_WEIGHT, GENERIC_BALLOT, FF_K, FF_MAX } from "@/lib/tplCompute";
+import { POLL_WEIGHT, FF_K, FF_MAX, getNationalEnvironment, incumbentAdvantage } from "@/lib/tplCompute";
 
 type PollRow = {
   label: string;
@@ -1037,8 +1038,11 @@ export function ForecastCalculationCard({
   incumbentPts,
   fundraisingPts,
   candidatePts,
+  candidateDetail,
   pollingAvg,
   projectedMargin,
+  probabilityD,
+  interval80,
   bare = false,
 }: {
   tpl: number;
@@ -1048,10 +1052,15 @@ export function ForecastCalculationCard({
   incumbentPts?: number;
   fundraisingPts?: number | null;
   candidatePts?: number | null;
+  // Phase 4: the nominees' ridge track-record effects behind candidatePts.
+  candidateDetail?: { dem: { name: string; effect: number; n: number; latestYear: number; latestOffice: string } | null; rep: { name: string; effect: number; n: number; latestYear: number; latestOffice: string } | null } | null;
   pollingAvg?: number | null;
   // Sourced from lib/tplCompute.ts computeProjectedMargin() — the same value used by the map,
   // race table, and state page — so this card always displays the number driving the rest of the app.
   projectedMargin: number;
+  // Phase 3: P(D wins) and the 80% margin interval from lib/forecast (forecastRace).
+  probabilityD?: number;
+  interval80?: [number, number];
   // Renders as flat, unboxed ledger rows (no card chrome) for pages using the states-page-style layout.
   bare?: boolean;
 }) {
@@ -1097,22 +1106,24 @@ export function ForecastCalculationCard({
   };
   const finalAccent = marginColor(projectedMargin);
 
+  const env = getNationalEnvironment();
+  const fmtNat = (v: number) => (Math.abs(v) < 0.05 ? "EVEN" : `${v < 0 ? "D" : "R"}+${Math.abs(v).toFixed(1)}`);
   const gbTooltip = (
     <>
-      National environment ({Math.abs(GENERIC_BALLOT) < 0.05 ? "EVEN" : `${GENERIC_BALLOT < 0 ? "D" : "R"}+${Math.abs(GENERIC_BALLOT).toFixed(1)}`}) scaled by this state&apos;s wave sensitivity coefficient S.
+      Generic ballot {fmtNat(env.gb)} converted to the model&apos;s environment scale ({fmtNat(env.eHat)}), then scaled by this state&apos;s elasticity β*.
       <br /><br />
-      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Effective wave = GB × S</span>
+      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>E = c + s × (GB + ½ × historical poll miss) · row = β* × E</span>
       <br /><br />
-      States that historically swing more with national tides get a larger adjustment.
+      The conversion is fitted from the model&apos;s own environment against the House popular vote. Polling error is carried as uncertainty (σ_E ≈ {env.sigmaE.toFixed(1)} pts), not as a prediction.
     </>
   );
   const incTooltip = (
     <>
       Additive point advantage for the incumbent running in 2026.
       <br /><br />
-      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>House ±3 · Senate ±2 · Governor ±7</span>
+      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>House ±{(incumbentAdvantage().H ?? 0).toFixed(1)} · Senate ±{(incumbentAdvantage().S ?? 0).toFixed(1)} · Governor ±{(incumbentAdvantage().G ?? 0).toFixed(1)}</span>
       <br /><br />
-      R incumbent = positive · D incumbent = negative · Open seat = 0.
+      R incumbent = positive · D incumbent = negative · Open seat = 0. An appointed or successor incumbent who has never won the seat receives {Math.round(FORECAST_CONSTANTS.APPOINTED_INCUMBENCY_SHARE * 100)}% of the advantage.
     </>
   );
   const frTooltip = (
@@ -1125,22 +1136,25 @@ export function ForecastCalculationCard({
       Applies only where both candidates&apos; receipts are known — otherwise 0.
     </>
   );
+  const fmtEffect = (v: number) => `${v >= 0 ? "+" : "−"}${Math.abs(v).toFixed(1)}`;
+  const describe = (c: { name: string; effect: number; n: number; latestYear: number; latestOffice: string } | null | undefined, label: string) =>
+    c ? `${c.name}: ${fmtEffect(c.effect)} over ${c.n} race${c.n === 1 ? "" : "s"} (latest ${c.latestYear})` : `${label}: no general-election record on file, scored as a generic nominee`;
   const candTooltip = (
     <>
-      Additive point adjustment based on 2026 candidate quality matchup.
+      Each nominee&apos;s track record: how much better than a generic nominee of their party they have run, net of lean, environment, incumbency and money (ridge-estimated, recency-weighted, replacement level = 0).
       <br /><br />
-      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>pts = WQ pts + LQ pts</span>
+      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>pts = weight × (R effect − D effect) · weight H {FORECAST_CONSTANTS.QUALITY_WEIGHT.H} · S {FORECAST_CONSTANTS.QUALITY_WEIGHT.S} · G {FORECAST_CONSTANTS.QUALITY_WEIGHT.G}</span>
       <br /><br />
-      Your candidate — Elite +4 · Strong +2 · Generic 0 · Weak −2 · Sacrificial −4.
-      Opponent — Elite −4 · Strong −2 · Generic 0 · Weak +2 · Sacrificial +4.
-      Pending manual input per race.
+      {describe(candidateDetail?.dem, "Democrat")}
+      <br />
+      {describe(candidateDetail?.rep, "Republican")}
     </>
   );
   const modelTooltip = (
     <>
-      Sum of State/District TPL, Generic Ballot, Incumbent, Fundraising, and Candidate points.
+      Sum of State/District TPL, Environment, Incumbent, Fundraising, and Candidate points.
       <br /><br />
-      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Model = TPL + GB + Incumbent + Fundraising + Candidates</span>
+      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Model = TPL + Environment + Incumbent + Fundraising + Candidates</span>
     </>
   );
   const pollTooltip = pollingAvg == null
@@ -1176,7 +1190,7 @@ export function ForecastCalculationCard({
           <span className="text-sm font-bold" style={{ color: marginColor(tpl) }}>{fmtMargin(tpl)}</span>
         </div>
         <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
-          <InfoTooltip label="Generic Ballot">{gbTooltip}</InfoTooltip>
+          <InfoTooltip label="Environment">{gbTooltip}</InfoTooltip>
           <span className="text-sm font-bold" style={{ color: gbIsD ? "var(--party-dem)" : "var(--party-rep)" }}>{gbDisplay}</span>
         </div>
         {showIncumbentRow && (
@@ -1191,8 +1205,8 @@ export function ForecastCalculationCard({
         </div>
         <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
           <InfoTooltip label="Candidates">{candTooltip}</InfoTooltip>
-          <span className="text-sm font-bold" style={{ color: "var(--app-text-very-muted)" }}>
-            {candidatePts == null ? "—" : candidatePts > 0 ? `R+${candidatePts}` : candidatePts < 0 ? `D+${Math.abs(candidatePts)}` : "0"}
+          <span className="text-sm font-bold" style={{ color: candidatePts == null || Math.abs(candidatePts) < 0.05 ? "var(--app-text-very-muted)" : candidatePts > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
+            {candidatePts == null ? "—" : Math.abs(candidatePts) < 0.05 ? "0" : candidatePts > 0 ? `R+${candidatePts.toFixed(1)}` : `D+${Math.abs(candidatePts).toFixed(1)}`}
           </span>
         </div>
         <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
@@ -1205,10 +1219,28 @@ export function ForecastCalculationCard({
             {pollingAvg == null ? "—" : fmtMargin(pollingAvg)}
           </span>
         </div>
-        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 pt-3.5">
+        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 pt-3.5" style={probabilityD != null ? { ...ledgerRowStyle, paddingBottom: "0.625rem" } : undefined}>
           <InfoTooltip label="Projected Margin" labelStyle={{ color: "var(--app-text-primary)" }}>{marginTooltip}</InfoTooltip>
           <span className="text-2xl font-extrabold leading-none" style={{ color: finalAccent }}>{fmtMargin(projectedMargin)}</span>
         </div>
+        {probabilityD != null && interval80 && (
+          <>
+            <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
+              <InfoTooltip label="Win Probability">
+                Normal tail of the projected margin over the race&apos;s total spread: this state&apos;s β* × the shared national error, combined with the office&apos;s race-level error from the forward backtest.
+              </InfoTooltip>
+              <span className="text-sm font-bold" style={{ color: probabilityD >= 0.5 ? "var(--party-dem)" : "var(--party-rep)" }}>
+                {probabilityD >= 0.5 ? `D ${Math.round(probabilityD * 100)}%` : `R ${Math.round((1 - probabilityD) * 100)}%`}
+              </span>
+            </div>
+            <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5">
+              <InfoTooltip label="80% Range">Margin ± 1.28 × total spread. Eight times in ten the result should land inside this range.</InfoTooltip>
+              <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-muted)" }}>
+                {fmtMargin(interval80[0])} to {fmtMargin(interval80[1])}
+              </span>
+            </div>
+          </>
+        )}
       </div>
     );
   }
@@ -1249,7 +1281,7 @@ export function ForecastCalculationCard({
             <span className="text-sm font-bold" style={{ color: marginColor(tpl) }}>{fmtMargin(tpl)}</span>
           </div>
           <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-3 py-2.5" style={rowStyle}>
-            <InfoTooltip label="Generic Ballot">{gbTooltip}</InfoTooltip>
+            <InfoTooltip label="Environment">{gbTooltip}</InfoTooltip>
             <span className="text-sm font-bold" style={{ color: gbIsD ? "var(--party-dem)" : "var(--party-rep)" }}>{gbDisplay}</span>
           </div>
           {showIncumbentRow && (
@@ -1268,7 +1300,7 @@ export function ForecastCalculationCard({
           >
             <InfoTooltip label="Candidates">{candTooltip}</InfoTooltip>
             <span className="text-sm font-bold" style={{ color: "var(--app-text-very-muted)" }}>
-              {candidatePts == null ? "—" : candidatePts > 0 ? `R+${candidatePts}` : candidatePts < 0 ? `D+${Math.abs(candidatePts)}` : "0"}
+              {candidatePts == null ? "—" : Math.abs(candidatePts) < 0.05 ? "0" : candidatePts > 0 ? `R+${candidatePts.toFixed(1)}` : `D+${Math.abs(candidatePts).toFixed(1)}`}
             </span>
           </div>
         </div>

@@ -854,7 +854,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
     if (returnSubTab) window.history.back();
   }
 
-  const districtTableGridColumns = "grid grid-cols-[minmax(8rem,1.2fr)_3.5rem_5rem_5.5rem_4.5rem_4.5rem_5rem_5.25rem_3.5rem]";
+  const districtTableGridColumns = "grid grid-cols-[minmax(8rem,1.2fr)_3.5rem_5rem_5.5rem_4.5rem_4.5rem_4.5rem_5rem_5.25rem_3.5rem]";
   const raceTableGridColumns = "grid grid-cols-[minmax(8.5rem,1.4fr)_3.5rem_5rem_6.25rem_5.5rem_4.5rem_4.5rem_5rem_5.25rem_3.5rem]";
 
   return (
@@ -1607,9 +1607,13 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
             </div>
           </div>
 
-          {!selectedDistrictCalc.races.some((r) => r.raceType === "H") && (
+          {!selectedDistrictCalc.races.some((r) => r.raceType === "H") ? (
             <div className="mt-3 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-              This district was redrawn for {selectedDistrictCalc.eraStart} — no House results exist on its current boundaries yet, so the lean is presidential-only until new-map races are held.
+              No usable House result exists for this district in 2016&ndash;2024, so the lean is presidential-only.
+            </div>
+          ) : selectedDistrictCalc.eraStart > 2016 && (
+            <div className="mt-3 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+              This district was redrawn for {selectedDistrictCalc.eraStart}. Earlier House races are still used, relocated onto today&apos;s lines by the presidential delta between the two maps (the BS column), and weighted by how far they had to move.
             </div>
           )}
         </div>
@@ -1621,7 +1625,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
           Step 1 — Per-Race Calculations
         </h3>
         <p className="text-xs mb-3 leading-4" style={{ color: "var(--app-text-muted)" }}>
-          NM = Raw + IF pts + FF pts + ENV pts — the same strips as the state model, using the parent state&apos;s β*. Ineligible House races are skipped (the presidential rows already carry the district&apos;s lean).
+          NM = Raw + IF pts + FF pts + BS pts + ENV pts — the same strips as the state model, using the parent state&apos;s β*, plus a boundary shift that relocates House races run on earlier maps onto today&apos;s district. Ineligible House races are skipped (the presidential rows already carry the district&apos;s lean).
         </p>
         <div className="mb-3" style={{ borderBottom: "1px solid var(--app-border)" }} />
         <div className="overflow-x-auto">
@@ -1631,13 +1635,14 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                 {[
                   ["Race", "Race type and name"],
                   ["Year", "Election year"],
-                  ["Raw", "Raw margin = repPct − demPct (two-party for presidential rows)"],
+                  ["Raw", "Raw margin = repPct − demPct, each a share of the full total vote"],
                   ["Incumbent", "Incumbent party, House rows only"],
                   ["IF ↗", "Additive incumbency points — House rows only"],
                   ["FF ↗", "Fundraising strip from FEC receipts — House rows only"],
+                  ["BS ↗", "Boundary shift: relocates a House race run on older lines onto today's district, by the presidential delta between the two maps"],
                   ["ENV ↗", "Environment adjustment = −β*(state) × E(year)"],
-                  ["NM ↗", "Neutralized Margin = Raw + IF + FF + ENV"],
-                  ["Wt", "Aggregation weight: Huber factor vs the district's own aggregate"],
+                  ["NM ↗", "Neutralized Margin = Raw + IF + FF + BS + ENV"],
+                  ["Wt", "Aggregation weight: Huber factor vs the district's own aggregate, × confidence in the boundary relocation"],
                 ].map(([label, tip]) => {
                   const isClickable = label in FORMULA_PANELS;
                   return (
@@ -1671,6 +1676,15 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                   </td>
                   <td className="px-1.5 py-2 text-left tabular-nums font-mono" style={{ color: r.FF_pts != null && r.FF_pts !== 0 ? marginColor(r.FF_pts) : "var(--app-text-very-muted)" }}>
                     {r.FF_pts != null && r.FF_pts !== 0 ? (r.FF_pts > 0 ? "+" : "") + r.FF_pts.toFixed(2) : "—"}
+                  </td>
+                  <td
+                    className="px-1.5 py-2 text-left tabular-nums font-mono"
+                    style={{ color: r.BS_pts != null && Math.abs(r.BS_pts) >= 0.005 ? marginColor(r.BS_pts) : "var(--app-text-very-muted)" }}
+                    title={r.boundaryShift != null && Math.abs(r.boundaryShift) >= 0.005
+                      ? `Run on the ${r.year} map, which was ${Math.abs(r.boundaryShift).toFixed(1)} pts more ${r.boundaryShift > 0 ? "Republican" : "Democratic"} than today's district — relocated, then weighted ${(r.boundaryWeight ?? 1).toFixed(2)}`
+                      : undefined}
+                  >
+                    {r.BS_pts != null && Math.abs(r.BS_pts) >= 0.005 ? (r.BS_pts > 0 ? "+" : "") + r.BS_pts.toFixed(2) : "—"}
                   </td>
                   <td className="px-1.5 py-2 text-left tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
                     {r.envPts != null && r.envPts !== 0 ? (r.envPts > 0 ? "+" : "") + r.envPts.toFixed(2) : "—"}

@@ -11,11 +11,12 @@ import {
   stateLegData,
   type PastResult,
 } from "@/data/forecastData";
-import { GOVERNOR_MANUAL_MARGINS } from "@/data/manualOverrides";
 import { statesData } from "@/data/statesData";
-import { TPL_GLOBAL_CONSTANTS as G, type CQTier } from "@/data/tplModelData";
+import { TPL_GLOBAL_CONSTANTS as G, FORECAST_CONSTANTS as F } from "@/data/tplModelData";
+import { nationalEnvironmentHistory } from "@/data/nationalEnvironmentHistory";
 import { fundraisingData, fundraisingSources } from "@/data/fundraisingData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
+import { presByBoundaryVintage, boundaryVintageForHouseYear, PRES_YEAR_FOR_VINTAGE } from "@/data/presByBoundaryVintage";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
 import { countySenateData } from "@/data/countySenateData";
 import { countyGovernorData } from "@/data/countyGovernorData";
@@ -41,6 +42,7 @@ export interface RaceStub {
   year: number;
   eligibility: RaceEligibility;
   incumbent: string;
+  incumbentAppointed?: boolean; // the incumbent holds the seat by appointment/succession
   demCandidate?: string;
   repCandidate?: string;
   demParty?: string; // true party of the dem-slot candidate ("I" for independents, etc.)
@@ -62,6 +64,9 @@ export interface ComputedRace extends RaceStub {
   minValidYear: number;
   envPts: number | null; // −β*(state) × E(year): strips the fitted national environment
   aggWeight: number; // weight in aggregation: ×0.5 if imputed, × Huber factor vs the fitted lean (state model)
+  BS_pts?: number | null; // additive strip relocating a pre-2026 House race onto today's lines
+  boundaryShift?: number | null; // the raw shift it undoes, pres(old lines) − pres(2026 lines)
+  boundaryWeight?: number; // confidence in that relocation, 1 / (1 + (|shift| / k)²)
   NM: number | null;
   inAggregation: boolean;
 }
@@ -145,8 +150,8 @@ function nearestPresidentialLean(
 // prior in INCUMBENT_ADVANTAGE_FIXED. P: national approval effects belong to
 // E(y). L: chamber aggregate, no single incumbent.
 
-function incumbencyPtsFor(raceType: string, incumbent: string): number {
-  const pts = getTplFit().incumbency[raceType] ?? 0;
+function incumbencyPtsFor(raceType: string, incumbent: string, appointed = false): number {
+  const pts = (getTplFit().incumbency[raceType] ?? 0) * (appointed ? F.APPOINTED_INCUMBENCY_SHARE : 1);
   if (incumbent === "R") return -pts;
   if (incumbent === "D") return pts;
   return 0;
@@ -223,6 +228,10 @@ export function computeRaceFundraisingPts(raceType: string, raceId: string): num
 }
 
 // ── Helper: incumbent from past result ────────────────────────────────────────
+
+function appointedFromResult(result?: Pick<PastResult, "demIncumbent" | "repIncumbent" | "demAppointed" | "repAppointed">): boolean {
+  return !!((result?.demIncumbent && result.demAppointed) || (result?.repIncumbent && result.repAppointed));
+}
 
 function incumbentFromResult(result?: Pick<PastResult, "demIncumbent" | "repIncumbent">): string {
   if (result?.demIncumbent) return "D";
@@ -318,15 +327,18 @@ export function getRawMargin(
   }
 
   if (race === "State Legislature") {
+    // Chamber-aggregate margin as a share of the FULL total (third parties and
+    // minor-party candidates included), matching every other margin in the model.
+    // Every sourced entry carries totalVotes alongside demVotes/repVotes.
     const entries = (stateLegData[stateName] ?? []).filter((e) => e.year === year);
-    let dem = 0, rep = 0;
+    let dem = 0, rep = 0, total = 0;
     for (const e of entries) {
-      if (e.demVotes != null && e.repVotes != null) {
+      if (e.demVotes != null && e.repVotes != null && e.totalVotes != null) {
         dem += e.demVotes;
         rep += e.repVotes;
+        total += e.totalVotes;
       }
     }
-    const total = dem + rep;
     return total > 0 ? ((rep - dem) / total) * 100 : null;
   }
 
@@ -349,7 +361,8 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
     historicalMargins: RaceStub["historicalMargins"] = [],
     detailHref?: string,
     eligibility: RaceEligibility = "eligible",
-    who?: { demCandidate?: string; repCandidate?: string; demParty?: string; repParty?: string }
+    who?: { demCandidate?: string; repCandidate?: string; demParty?: string; repParty?: string },
+    incumbentAppointed = false
   ): RaceStub {
     return {
       race,
@@ -359,6 +372,7 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
       year,
       eligibility,
       incumbent,
+      incumbentAppointed,
       demCandidate: who?.demCandidate,
       repCandidate: who?.repCandidate,
       demParty: who?.demParty,
@@ -380,7 +394,7 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
   }));
   for (const r of presidentialResults) {
     if (r.year >= 2016) {
-      stubs.push(makeStub("President", "P", r.year, undefined, incumbentFromResult(r), presidentialMargins, stateHref, classifyEligibility(r, stateAbbr), whoOf(r)));
+      stubs.push(makeStub("President", "P", r.year, undefined, incumbentFromResult(r), presidentialMargins, stateHref, classifyEligibility(r, stateAbbr), whoOf(r), appointedFromResult(r)));
     }
   }
 
@@ -392,7 +406,7 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
     for (const r of seat.pastResults ?? []) {
       if (r.year >= 2016) {
         const raceName = r.electionType === "Special" ? "Senate Special" : "Senate";
-        stubs.push(makeStub(raceName, "S", r.year, undefined, incumbentFromResult(r), historicalMargins, detailHref, classifyEligibility(r, stateAbbr), whoOf(r)));
+        stubs.push(makeStub(raceName, "S", r.year, undefined, incumbentFromResult(r), historicalMargins, detailHref, classifyEligibility(r, stateAbbr), whoOf(r), appointedFromResult(r)));
       }
     }
   }
@@ -414,7 +428,7 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
     }));
     for (const r of seat.pastResults ?? []) {
       if (r.year >= 2016) {
-        stubs.push(makeStub("Governor", "G", r.year, undefined, incumbentFromResult(r), historicalMargins, detailHref, classifyEligibility(r, stateAbbr), whoOf(r)));
+        stubs.push(makeStub("Governor", "G", r.year, undefined, incumbentFromResult(r), historicalMargins, detailHref, classifyEligibility(r, stateAbbr), whoOf(r), appointedFromResult(r)));
       }
     }
   }
@@ -433,7 +447,7 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
     }));
     for (const r of dist.pastResults ?? []) {
       if (r.year >= 2016) {
-        stubs.push(makeStub(`House ${dist.name}`, "H", r.year, dist.name, incumbentFromResult(r), historicalMargins, `/house/${dist.name.toLowerCase()}`, classifyEligibility(r, stateAbbr), whoOf(r)));
+        stubs.push(makeStub(`House ${dist.name}`, "H", r.year, dist.name, incumbentFromResult(r), historicalMargins, `/house/${dist.name.toLowerCase()}`, classifyEligibility(r, stateAbbr), whoOf(r), appointedFromResult(r)));
       }
     }
   }
@@ -471,7 +485,9 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
       const entries = legEntries.filter((e) => e.year === historicalYear);
       const demVotes = entries.reduce((sum, e) => sum + (e.demVotes ?? 0), 0);
       const repVotes = entries.reduce((sum, e) => sum + (e.repVotes ?? 0), 0);
-      return { year: historicalYear, margin: ((repVotes - demVotes) / (demVotes + repVotes)) * 100 };
+      // Share of the FULL chamber total, not two-party - see the L branch of getRawMargin.
+      const totalVotes = entries.reduce((sum, e) => sum + (e.totalVotes ?? 0), 0);
+      return { year: historicalYear, margin: ((repVotes - demVotes) / totalVotes) * 100 };
     });
     stubs.push(makeStub("State Legislature", "L", year, undefined, "-", historicalMargins, stateHref));
   }
@@ -538,7 +554,7 @@ export function getTplFit(): TplFit {
       const ff = ffStripPts(raceFundraisingFor(stub.raceType, abbr, stub.district, stub.race, stub.year));
       const key = `${abbr}:${stub.year}:${stub.raceType}`;
       typeCount[key] = (typeCount[key] ?? 0) + 1;
-      const incSign = stub.incumbent === "R" ? 1 : stub.incumbent === "D" ? -1 : 0;
+      const incSign = (stub.incumbent === "R" ? 1 : stub.incumbent === "D" ? -1 : 0) * (stub.incumbentAppointed ? F.APPOINTED_INCUMBENCY_SHARE : 1);
       pending.push({ abbr, year: stub.year, raw: margin + ff, incSign, key, type: stub.raceType });
     }
   }
@@ -661,7 +677,7 @@ export function calculateStateModel(stateAbbr: string, stateName: string): State
     // imputed value inherits that year's national conditions, nothing else.
     const envYear = imputed ? imputation!.year : stub.year;
     const envPts = adjustedMargin == null ? null : -(beta * (fit.E[envYear] ?? 0));
-    const incumbencyPts = adjustedMargin == null ? null : imputed ? 0 : incumbencyPtsFor(stub.raceType, stub.incumbent);
+    const incumbencyPts = adjustedMargin == null ? null : imputed ? 0 : incumbencyPtsFor(stub.raceType, stub.incumbent, stub.incumbentAppointed);
     const money = imputed ? null : raceFundraisingFor(stub.raceType, stateAbbr, stub.district, stub.race, stub.year);
     const FF_pts = adjustedMargin == null ? null : ffStripPts(money);
     const NM = adjustedMargin != null
@@ -709,6 +725,55 @@ export function calculateStateModel(stateAbbr: string, stateName: string): State
 // helpers and constants the state model uses, which puts District TPL on the
 // same scale as State TPL (review finding F9).
 
+// ── Boundary shift (BS pts, additive) ────────────────────────────────────────
+// A House margin is a fact about the map that race was run on; District TPL is a property
+// of the 2026 map. NC-14 2022 and NC-14 2026 are 32 presidential points apart — the same
+// number attached to different territory. Reconstructing the House race on today's lines
+// is not possible even in principle: today's NC-14 is assembled from pieces of three 2022
+// districts, each of which held a DIFFERENT contest, so the summed "result" corresponds to
+// no election anyone ran. (This is why pres-by-CD datasets exist for every vintage and
+// House-by-new-CD datasets exist for none.)
+//
+// So the race is relocated instead, by the presidential delta between the two maps:
+//
+//   BS = pres_P(2026 lines) − pres_P(lines used in year Y)      [same election P, two maps]
+//   NM = Raw + IF + FF + BS + ENV
+//
+// What transfers is the candidate's performance RELATIVE TO the presidential baseline, not
+// their margin: Jackson's D+15.4 on D+16.4 turf becomes R+17.1 on today's R+16.1 turf —
+// "ran a point behind the top of the ticket" carries over, "won by 15" does not. That is
+// the same relative-to-baseline logic the whole model is built on, so BS is a strip of the
+// same kind as IF and FF rather than a new concept.
+//
+// WEIGHT. The uniform shift assumes performance-vs-baseline is constant across the
+// district's territory, which is weakest exactly where the shift is largest: a member's
+// home-county overperformance does not transfer to voters they never represented, and a
+// 32-point rebuild extrapolates far outside the observation's support. So a relocated row
+// is downweighted by how far it was moved:
+//
+//   weight = 1 / (1 + (|shift| / BS_WEIGHT_K)²)
+//
+// Zero-shift races (266 of 435 in the 2022 era, 301 in 2024 — most states did not redraw)
+// keep full weight and are unaffected by the choice of K.
+function boundaryStripFor(
+  districtId: string,
+  houseYear: number,
+  d: { pres16RepPct: number; pres16DemPct: number; pres20RepPct: number; pres20DemPct: number; pres24RepPct: number; pres24DemPct: number }
+): { BS_pts: number; shift: number | null; weight: number } {
+  const vintage = boundaryVintageForHouseYear(houseYear);
+  if (vintage == null) return { BS_pts: 0, shift: null, weight: 1 }; // 2026 IS the reference map
+  const onOldLines = presByBoundaryVintage[vintage][districtId]?.margin;
+  if (onOldLines == null) return { BS_pts: 0, shift: null, weight: 1 };
+  const presYear = PRES_YEAR_FOR_VINTAGE[vintage];
+  const on2026 =
+    presYear === 2016 ? d.pres16RepPct - d.pres16DemPct
+    : presYear === 2020 ? d.pres20RepPct - d.pres20DemPct
+    : d.pres24RepPct - d.pres24DemPct;
+  const shift = onOldLines - on2026;
+  const weight = 1 / (1 + (Math.abs(shift) / G.BS_WEIGHT_K) ** 2);
+  return { BS_pts: -shift, shift, weight };
+}
+
 export function calculateDistrictModel(districtId: string): DistrictModelCalculation {
   const d = districtPresidentialData[districtId];
   if (!d) return { races: [], yearAggregations: [], tpl: 0, stateAbbr: "", eraStart: 2016 };
@@ -736,7 +801,7 @@ export function calculateDistrictModel(districtId: string): DistrictModelCalcula
     });
   }
   for (const r of houseRace?.pastResults ?? []) {
-    if (r.year < Math.max(2016, eraStart) || r.year > 2025) continue;
+    if (r.year < 2016 || r.year > 2025) continue;
     if (classifyEligibility(r, stateAbbr) !== "eligible") continue;
     const margin = r.repPct - r.demPct;
     const incumbent = incumbentFromResult(r);
@@ -744,6 +809,7 @@ export function calculateDistrictModel(districtId: string): DistrictModelCalcula
     const money = raceFundraisingFor("H", stateAbbr, houseRace!.name, "House", r.year);
     const FF_pts = ffStripPts(money);
     const envPts = -(beta * (fit.E[r.year] ?? 0));
+    const { BS_pts, shift, weight } = boundaryStripFor(districtId, r.year, d);
     const x = r as PastResult & { demCandidate?: string; repCandidate?: string; demParty?: string; repParty?: string };
     rows.push({
       race: `House ${houseRace!.name}`, raceType: "H", district: houseRace!.name, year: r.year,
@@ -752,16 +818,20 @@ export function calculateDistrictModel(districtId: string): DistrictModelCalcula
       historicalMargins: [], rawMargin: margin, adjustedMargin: margin,
       incumbencyPts, FF_pts, ffDetail: money,
       imputed: false, imputedSourceYear: null, imputedSourceDesc: null,
-      minValidYear: eraStart, envPts, aggWeight: 1,
-      NM: margin + incumbencyPts + FF_pts + envPts, inAggregation: true,
+      minValidYear: eraStart, envPts, aggWeight: weight,
+      BS_pts, boundaryShift: shift, boundaryWeight: weight,
+      NM: margin + incumbencyPts + FF_pts + BS_pts + envPts, inAggregation: true,
     });
   }
 
   // Two-pass Huber: anchor on the plain aggregate, then downweight outlier races.
+  // A relocated House row carries its boundary weight THROUGH the Huber pass — the two
+  // multiply, since a race can be both a poor relocation and an outlier on its own terms.
   const lean0 = aggregateYears(rows).tpl;
   for (const row of rows) {
     const resid = (row.NM ?? 0) - lean0;
-    row.aggWeight = Math.abs(resid) <= G.HUBER_C ? 1 : G.HUBER_C / Math.abs(resid);
+    const huber = Math.abs(resid) <= G.HUBER_C ? 1 : G.HUBER_C / Math.abs(resid);
+    row.aggWeight = huber * (row.boundaryWeight ?? 1);
   }
   const { yearAggregations, tpl } = aggregateYears(rows);
   return { races: rows, yearAggregations, tpl, stateAbbr, eraStart };
@@ -782,10 +852,19 @@ export function calculateDistrictModel(districtId: string): DistrictModelCalcula
 // - Wave Adjustment reuses the parent state's S (Wave Sensitivity Coefficient); no
 //   separate county-level S is computed.
 
+// A "Senate Special" row must read countySenateData's specialYears bucket, not `years`:
+// the two live in sibling maps whenever a state held a separate special (MN/MS 2018,
+// GA 2020, OK 2022, NE 2024) and in specialYears alone when the special was the only
+// Senate race that cycle (AZ 2020). Reading `years` for a special row therefore either
+// found nothing (AZ 2020 — a blank Senate row on every AZ county) or silently returned
+// the REGULAR race's margin, duplicating it onto both of that year's Senate rows.
+// Governor needs no equivalent split: governor specials (OR 2016) are named plain
+// "Governor" by generateRaceList and countyGovernorData stores them in `years`.
 function getCountyHistoricalMargins(race: string, fips: string): { year: number; margin: number }[] {
   const years =
     race === "President" ? countyPresidentialData[fips]?.years
-    : race === "Senate" || race === "Senate Special" ? countySenateData[fips]?.years
+    : race === "Senate Special" ? countySenateData[fips]?.specialYears
+    : race === "Senate" ? countySenateData[fips]?.years
     : race === "Governor" ? countyGovernorData[fips]?.years
     : undefined;
   if (!years) return [];
@@ -851,7 +930,7 @@ export function calculateCountyModel(fips: string): StateModelCalculation | null
     const adjustedMargin = ineligible ? (imputation?.margin ?? null) : rawMargin;
     const envYear = imputed ? imputation!.year : stub.year;
     const envPts = adjustedMargin == null ? null : -(beta * (fit.E[envYear] ?? 0));
-    const incumbencyPts = adjustedMargin == null ? null : imputed ? 0 : incumbencyPtsFor(stub.raceType, stub.incumbent);
+    const incumbencyPts = adjustedMargin == null ? null : imputed ? 0 : incumbencyPtsFor(stub.raceType, stub.incumbent, stub.incumbentAppointed);
     const money = imputed ? null : raceFundraisingFor(stub.raceType, stateAbbr, stub.district, stub.race, stub.year);
     const FF_pts = adjustedMargin == null ? null : ffStripPts(money);
     const NM = adjustedMargin != null
@@ -931,7 +1010,7 @@ export function computeProjectedMargin(race: {
   id: string;
   state: string;
   raceType: string;
-  candidates?: { dem: { party: "D" | "R" | "I"; incumbent: boolean }; rep: { party: "D" | "R" | "I"; incumbent: boolean } };
+  candidates?: { dem: { name: string; party: "D" | "R" | "I"; incumbent: boolean; appointed?: boolean }; rep: { name: string; party: "D" | "R" | "I"; incumbent: boolean; appointed?: boolean } };
   rcpDem?: number;
   rcpRep?: number;
 }): number {
@@ -941,23 +1020,22 @@ export function computeProjectedMargin(race: {
     ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null
     : null;
   const incumbentParty = (incumbentCandidate?.party === "D" || incumbentCandidate?.party === "R") ? incumbentCandidate.party : null;
-  const incumbentPts = shortType ? computeIncumbentPts(shortType, incumbentParty) : 0;
+  const incumbentPts = shortType ? computeIncumbentPts(shortType, incumbentParty, incumbentCandidate?.appointed ?? false) : 0;
 
   // Live 2026 fundraising points from FEC receipts (additive, capped — same
   // computeFundraisingPts the backward model strips with).
   const ffPts = computeRaceFundraisingPts(race.raceType, race.id);
+  // Candidate quality: the nominees' ridge track-record effects (Phase 4).
+  const qualityPts = candidateQuality(race).pts;
 
   let structuralMargin: number;
   if (race.raceType === "house") {
     const stateAbbr = statesData.find((s) => s.name === race.state)?.abbr ?? "";
-    structuralMargin = calculateDistrictTpl(race.id) + effectiveGenericBallot(stateAbbr) + incumbentPts + ffPts;
+    structuralMargin = calculateDistrictTpl(race.id) + effectiveEnvironment(stateAbbr) + incumbentPts + ffPts + qualityPts;
   } else {
     // senate/governor: id may have a numeric suffix (e.g. "DE-2"); strip it to get state abbr
     const stateAbbr = race.id.replace(/-\d+$/, "");
-    const effectiveIncumbentPts = race.raceType === "governor" && GOVERNOR_MANUAL_MARGINS[stateAbbr] != null
-      ? GOVERNOR_MANUAL_MARGINS[stateAbbr]
-      : incumbentPts;
-    structuralMargin = calculateStateTpl(stateAbbr, race.state) + effectiveGenericBallot(stateAbbr) + effectiveIncumbentPts + ffPts;
+    structuralMargin = calculateStateTpl(stateAbbr, race.state) + effectiveEnvironment(stateAbbr) + incumbentPts + ffPts + qualityPts;
   }
 
   const pollingAvg = computeRcpMargin(race.rcpDem, race.rcpRep);
@@ -966,24 +1044,184 @@ export function computeProjectedMargin(race: {
     : structuralMargin;
 }
 
-// ── Effective generic ballot (GB × fitted elasticity β*) ─────────────────────
+// ── National environment (Phase 2 of the forecast revamp) ────────────────────
+// The generic ballot is not on E's scale. E(y) is centered on the 2016–2025
+// average environment and is fitted jointly across every office, so it is damped
+// relative to the House popular vote. Both are properties of THIS model, so they
+// are estimated from the fitted E against the actual House vote:
+//
+//   E = c + s × PV                      (c, s from the even years on file)
+//
+// Polling error is treated as uncertainty, not a prediction (decision
+// 2026-09-16): only ENV_MISS_SHRINK of the historical mean miss (PV − final
+// generic ballot) moves the point estimate; the miss variance and the
+// September→November drift variance become the shared national error σ_E that
+// every race's probability and the chamber simulation carry.
+//
+//   PV_hat  = GB_now + ENV_MISS_SHRINK × mean(miss)
+//   E_hat   = c + s × PV_hat
+//   σ_E     = |s| × sqrt(sd(miss)² + (horizon × sd(drift))²)
+//   race environment term = β*(state) × E_hat
 
-export function effectiveGenericBallot(stateAbbr: string): number {
-  return GENERIC_BALLOT * (getTplFit().beta[stateAbbr]?.shrunk ?? 1);
+export const ELECTION_DATE = new Date(Date.UTC(2026, 10, 3));
+
+export interface EnvironmentModel {
+  c: number; s: number; pv0: number; // E = c + s × PV; pv0 = the House vote at which E = 0
+  meanMiss: number; sdMiss: number;  // PV − final generic ballot (R-positive)
+  sdDrift: number;                   // final − mid-September generic ballot, RMS around zero
+  years: number[];
 }
 
-// ── Candidate quality (forward projection) ───────────────────────────────────
+const envMean = (v: number[]) => v.reduce((a, b) => a + b, 0) / v.length;
+let environmentModelCache: EnvironmentModel | null = null;
 
-export const WQ_ADDITIVE: Record<CQTier, number> = {
-  Elite: 4, Strong: 2, Generic: 0, Weak: -2, Sacrificial: -4,
-};
+export function getEnvironmentModel(): EnvironmentModel {
+  if (environmentModelCache) return environmentModelCache;
+  const E = getTplFit().E;
+  const rows = nationalEnvironmentHistory.filter((r) => E[r.year] != null && r.housePv != null && r.gbFinal != null && r.gbMidSept != null);
+  const xs = rows.map((r) => r.housePv!), ys = rows.map((r) => E[r.year]);
+  const mx = envMean(xs), my = envMean(ys);
+  let sxy = 0, sxx = 0;
+  for (let i = 0; i < xs.length; i += 1) { sxy += (xs[i] - mx) * (ys[i] - my); sxx += (xs[i] - mx) ** 2; }
+  const s = sxx > 0 ? sxy / sxx : 1;
+  const c = my - s * mx;
+  const miss = rows.map((r) => r.housePv! - r.gbFinal!);
+  const drift = rows.map((r) => r.gbFinal! - r.gbMidSept!);
+  const meanMiss = envMean(miss);
+  const sdMiss = miss.length > 1 ? Math.sqrt(miss.reduce((a, x) => a + (x - meanMiss) ** 2, 0) / (miss.length - 1)) : 0;
+  const sdDrift = drift.length ? Math.sqrt(envMean(drift.map((d) => d * d))) : 0;
+  environmentModelCache = { c, s, pv0: s ? -c / s : 0, meanMiss, sdMiss, sdDrift, years: rows.map((r) => r.year) };
+  return environmentModelCache;
+}
 
-export const LQ_ADDITIVE: Record<CQTier, number> = {
-  Elite: -4, Strong: -2, Generic: 0, Weak: 2, Sacrificial: 4,
-};
+export interface NationalEnvironment {
+  gb: number;             // live generic ballot average (R-positive)
+  pvHat: number;          // GB + shrunk historical miss
+  eHat: number;           // on the model's E scale — the number β* multiplies
+  sigmaE: number;         // shared national error, E scale
+  daysToElection: number;
+  horizon: number;        // days to election / mid-September horizon, capped at 1.5
+}
 
-export function computeCandidatePts(wqTier: CQTier, lqTier: CQTier): number {
-  return WQ_ADDITIVE[wqTier] + LQ_ADDITIVE[lqTier];
+let nationalEnvironmentCache: NationalEnvironment | null = null;
+export function getNationalEnvironment(asOf: Date = new Date()): NationalEnvironment {
+  if (nationalEnvironmentCache) return nationalEnvironmentCache;
+  const m = getEnvironmentModel();
+  const gb = GENERIC_BALLOT;
+  const pvHat = gb + F.ENV_MISS_SHRINK * m.meanMiss;
+  const daysToElection = Math.max(0, (ELECTION_DATE.getTime() - asOf.getTime()) / 86400000);
+  const horizon = Math.min(1.5, daysToElection / F.ENV_DAYS_MID_SEPT_TO_ELECTION);
+  const sigmaPv = Math.sqrt(m.sdMiss ** 2 + (horizon * m.sdDrift) ** 2);
+  nationalEnvironmentCache = { gb, pvHat, eHat: m.c + m.s * pvHat, sigmaE: Math.abs(m.s) * sigmaPv, daysToElection, horizon };
+  return nationalEnvironmentCache;
+}
+
+// The environment points a race receives: β*(state) × E_hat.
+export function effectiveEnvironment(stateAbbr: string): number {
+  return getNationalEnvironment().eHat * (getTplFit().beta[stateAbbr]?.shrunk ?? 1);
+}
+
+// ── Forecast uncertainty (Phase 3 of the forecast revamp) ────────────────────
+// error = β*(state) × national shock (σ_E, shared by every race)  +  race noise
+// (RACE_SIGMA per office). Probability is the normal tail of that total spread.
+
+export function raceSigma(raceType: "H" | "S" | "G", stateAbbr: string): number {
+  const beta = getTplFit().beta[stateAbbr]?.shrunk ?? 1;
+  return Math.sqrt((beta * getNationalEnvironment().sigmaE) ** 2 + F.RACE_SIGMA[raceType] ** 2);
+}
+
+export function normalCdf(z: number): number {
+  // Abramowitz–Stegun 7.1.26 erf approximation (|error| < 1.5e-7)
+  const x = Math.abs(z) / Math.SQRT2;
+  const t = 1 / (1 + 0.3275911 * x);
+  const erf = 1 - (((((1.061405429 * t - 1.453152027) * t) + 1.421413741) * t - 0.284496736) * t + 0.254829592) * t * Math.exp(-x * x);
+  return 0.5 * (1 + Math.sign(z) * erf);
+}
+
+// P(Democrat wins) for an R-positive margin with total spread sigma; clamped so no
+// race is ever shown as certain.
+export function winProbabilityD(margin: number, sigma: number): number {
+  return Math.max(0.005, Math.min(0.995, normalCdf(-margin / sigma)));
+}
+
+// ── Candidate quality (forward projection, Phase 4) ──────────────────────────
+// A nominee's quality is their ridge track-record effect: how much better than a
+// generic nominee of their party they have run, net of lean, environment,
+// incumbency and the FULL money gap (money is a separate forward term, so the
+// effect must not contain it — decision 2026-09-16). Effects are solved "as of
+// 2026" over every race through 2025 (recency-weighted), pooled across offices
+// by state|party|name. A nominee with no record is replacement level (0).
+//   quality pts (R-positive) = QUALITY_WEIGHT[office] × (effect_R − effect_D)
+
+export interface CandidateRecord { effect: number; n: number; w: number; latestYear: number; latestOffice: string; prior: number; }
+export interface CandidateQuality {
+  pts: number;
+  dem: (CandidateRecord & { name: string }) | null;
+  rep: (CandidateRecord & { name: string }) | null;
+}
+
+const _effectsCache = new Map<string, Map<string, CandidateRecord>>();
+const _observablePriorCache = new Map<string, ObservablePrior>();
+
+/** The fitted observable-prior coefficients behind computeCandidateEffects (same cache key). */
+export function getObservablePrior(asOf: number = ELECTION_CYCLE, maxYear: number = ELECTION_CYCLE - 1): ObservablePrior {
+  computeCandidateEffects(asOf, maxYear);
+  return _observablePriorCache.get(`${asOf}:${maxYear}`)!;
+}
+
+/** Candidate effects as of `asOf`, from races with year ≤ maxYear, full-money expected margins. */
+export function computeCandidateEffects(asOf: number = ELECTION_CYCLE, maxYear: number = ELECTION_CYCLE - 1): Map<string, CandidateRecord> {
+  const cacheKey = `${asOf}:${maxYear}`;
+  const hit = _effectsCache.get(cacheKey);
+  if (hit) return hit;
+  const races: EffectRace[] = [];
+  const latest = new Map<string, { year: number; office: string }>();
+  for (const p of buildWarPending()) {
+    if (p.r.year > maxYear) continue;
+    const ffPts = p.withMoney && p.gap != null ? Math.max(-FF_MAX, Math.min(FF_MAX, FF_K * p.gap)) : 0;
+    const race: EffectRace = { r: p.r.rawMargin! - (p.base + ffPts), year: p.r.year, actual: p.r.rawMargin!, inc: p.r.incumbent === "R" ? "R" : p.r.incumbent === "D" ? "D" : null };
+    if (p.r.demCandidate) race.D = warCandidateKey(p.state, p.r.demParty ?? "D", p.r.demCandidate);
+    if (p.r.repCandidate) race.R = warCandidateKey(p.state, p.r.repParty ?? "R", p.r.repCandidate);
+    for (const k of [race.D, race.R]) {
+      if (!k) continue;
+      const l = latest.get(k);
+      if (!l || p.r.year > l.year) latest.set(k, { year: p.r.year, office: p.office });
+    }
+    races.push(race);
+  }
+  const ob = buildObservablePrior(races, asOf);
+  _observablePriorCache.set(cacheKey, ob);
+  const { a, stats } = solveCandidateEffects(races, asOf, undefined, ob.prior);
+  const out = new Map<string, CandidateRecord>();
+  for (const [k, effect] of a) {
+    const st = stats.get(k)!; const l = latest.get(k)!;
+    out.set(k, { effect, n: st.n, w: st.w, latestYear: l.year, latestOffice: l.office, prior: ob.prior.get(k) ?? 0 });
+  }
+  _effectsCache.set(cacheKey, out);
+  return out;
+}
+
+const PLACEHOLDER_NOMINEE = /^(Democratic|Republican|Generic) (Candidate|Democrat|Republican)$|^TBD$/i;
+
+export function candidateQuality(race: {
+  id: string;
+  state: string;
+  raceType: string;
+  candidates?: { dem: { name: string; party: string }; rep: { name: string; party: string } };
+}): CandidateQuality {
+  const abbr = race.raceType === "house"
+    ? statesData.find((s) => s.name === race.state)?.abbr ?? ""
+    : race.id.replace(/-\d+$/, "");
+  const effects = computeCandidateEffects();
+  const lookup = (c?: { name: string; party: string }) => {
+    if (!c || !c.name || PLACEHOLDER_NOMINEE.test(c.name.trim())) return null;
+    const rec = effects.get(warCandidateKey(abbr, c.party, c.name));
+    return rec ? { ...rec, name: c.name } : null;
+  };
+  const dem = lookup(race.candidates?.dem);
+  const rep = lookup(race.candidates?.rep);
+  const office = race.raceType === "house" ? "H" : race.raceType === "senate" ? "S" : "G";
+  return { pts: F.QUALITY_WEIGHT[office] * ((rep?.effect ?? 0) - (dem?.effect ?? 0)), dem, rep };
 }
 
 // ── Fundraising factor (forward projection) ───────────────────────────────────
@@ -1017,9 +1255,9 @@ export function incumbentAdvantage(): Record<string, number> {
   return getTplFit().incumbency;
 }
 
-export function computeIncumbentPts(raceType: "H" | "S" | "G", incumbentParty: "D" | "R" | null): number {
+export function computeIncumbentPts(raceType: "H" | "S" | "G", incumbentParty: "D" | "R" | null, appointed = false): number {
   if (!incumbentParty) return 0;
-  const pts = incumbentAdvantage()[raceType] ?? 0;
+  const pts = (incumbentAdvantage()[raceType] ?? 0) * (appointed ? F.APPOINTED_INCUMBENCY_SHARE : 1);
   return incumbentParty === "R" ? pts : -pts;
 }
 
@@ -1083,12 +1321,101 @@ export const WAR_LAMBDA = 1;
 // solve per distinct year (10), warm-started from the previous year's effects.
 export const WAR_RECENCY_DECAY = 0.8;
 
-const warCandidateKey = (state: string, party: string, name: string) =>
+export const warCandidateKey = (state: string, party: string, name: string) =>
   `${state}|${party}|${name.toLowerCase().replace(/[^a-z ]/g, "").replace(/\s+/g, " ").trim()}`;
 
 /** Fit recency-weighted ridge candidate effects over race residuals and fill effect/war on each row (mutates rows). */
+export interface EffectRace { r: number; year: number; R?: string; D?: string; actual?: number; inc?: "R" | "D" | null; }
+
+// ── Observable prior (Layer B) ────────────────────────────────────────────────
+// What a nominee's record says before their own residuals are read: from the same
+// race rows, whether they have won a general election before (while not being the
+// incumbent in the race at hand) and whether they have lost one. The coefficients
+// come from an OLS of race residuals on the R−D difference of those indicators;
+// the fitted value becomes each candidate's ridge shrinkage target (0 today).
+// Deliberately limited to observables our own data can supply; prior-office tiers
+// from outside the dataset are a data-entry job (spec Phase 4, Layer B).
+export interface ObservablePrior { prior: Map<string, number>; coef: { priorWin: number; priorLoss: number }; n: number; }
+
+export function buildObservablePrior(races: EffectRace[], asOf: number, incumbentsAsOf?: Set<string>): ObservablePrior {
+  const scored = races.filter((rc) => rc.actual != null).sort((x, y) => x.year - y.year);
+  const wins = new Map<string, number[]>(), losses = new Map<string, number[]>();
+  for (const rc of scored) {
+    const rWon = rc.actual! > 0;
+    if (rc.R) (rWon ? wins : losses).set(rc.R, [...((rWon ? wins : losses).get(rc.R) ?? []), rc.year]);
+    if (rc.D) (rWon ? losses : wins).set(rc.D, [...((rWon ? losses : wins).get(rc.D) ?? []), rc.year]);
+  }
+  const before = (m: Map<string, number[]>, k: string | undefined, y: number) => (k ? (m.get(k) ?? []).filter((yr) => yr < y).length : 0);
+  // x = [prior win while NOT the incumbent here, prior loss]; race-level: Δx = x_R − x_D.
+  // Incumbents are excluded from the prior-win indicator because incumbency is its own
+  // term — without that exclusion the coefficient just re-measures incumbency.
+  const X: number[][] = [], Yv: number[] = [];
+  for (const rc of scored) {
+    const xR = [rc.inc !== "R" && before(wins, rc.R, rc.year) > 0 ? 1 : 0, before(losses, rc.R, rc.year) > 0 ? 1 : 0];
+    const xD = [rc.inc !== "D" && before(wins, rc.D, rc.year) > 0 ? 1 : 0, before(losses, rc.D, rc.year) > 0 ? 1 : 0];
+    const dx = [xR[0] - xD[0], xR[1] - xD[1]];
+    if (dx[0] === 0) continue;
+    X.push(dx); Yv.push(rc.r);
+  }
+  // Single-regressor OLS on the prior-win difference (prior-loss is reported for
+  // diagnostics but carries no weight: its sign flipped between backtest windows).
+  let coef = { priorWin: 0, priorLoss: 0 };
+  if (X.length >= 20) {
+    let a11 = 0, b1 = 0;
+    X.forEach((x, i) => { a11 += x[0] * x[0]; b1 += x[0] * Yv[i]; });
+    if (a11 > 0) coef = { priorWin: b1 / a11, priorLoss: 0 };
+  }
+  if (!F.OBSERVABLE_PRIOR) coef = { priorWin: 0, priorLoss: 0 };
+  const prior = new Map<string, number>();
+  for (const k of new Set([...wins.keys(), ...losses.keys()])) {
+    prior.set(k, coef.priorWin * (!incumbentsAsOf?.has(k) && before(wins, k, asOf) > 0 ? 1 : 0) + coef.priorLoss * (before(losses, k, asOf) > 0 ? 1 : 0));
+  }
+  return { prior, coef, n: X.length };
+}
+
+// Ridge solve of candidate effects as of target year Y over the given races
+// (r = actual − expected, R-positive; R/D = candidate keys). Weighted coordinate
+// descent on the normal equations, warm-startable. Returns the effects and each
+// candidate's race count / recency-weighted count.
+export function solveCandidateEffects(
+  races: Iterable<EffectRace>,
+  Y: number,
+  warm?: Map<string, number>,
+  prior?: Map<string, number>
+): { a: Map<string, number>; stats: Map<string, { n: number; w: number }> } {
+  const list = [...races];
+  const obs = new Map<string, { race: EffectRace; s: number }[]>();
+  for (const rc of list) {
+    if (rc.R) (obs.get(rc.R) ?? obs.set(rc.R, []).get(rc.R)!).push({ race: rc, s: 1 });
+    if (rc.D) (obs.get(rc.D) ?? obs.set(rc.D, []).get(rc.D)!).push({ race: rc, s: -1 });
+  }
+  const a = warm ?? new Map<string, number>();
+  const pred = (rc: EffectRace) => (rc.R ? a.get(rc.R) ?? 0 : 0) - (rc.D ? a.get(rc.D) ?? 0 : 0);
+  const wt = (year: number) => WAR_RECENCY_DECAY ** Math.abs(year - Y);
+  for (let it = 0; it < 200; it++) {
+    let maxDelta = 0;
+    for (const [c, o] of obs) {
+      const prev = a.get(c) ?? 0;
+      let num = WAR_LAMBDA * (prior?.get(c) ?? 0);
+      let den = WAR_LAMBDA;
+      for (const { race, s } of o) {
+        const w = wt(race.year);
+        num += w * (s * (race.r - pred(race)) + prev);
+        den += w;
+      }
+      const next = num / den;
+      a.set(c, next);
+      maxDelta = Math.max(maxDelta, Math.abs(next - prev));
+    }
+    if (maxDelta < 1e-6) break;
+  }
+  const stats = new Map<string, { n: number; w: number }>();
+  for (const [c, o] of obs) stats.set(c, { n: o.length, w: o.reduce((acc, { race }) => acc + wt(race.year), 0) });
+  return { a, stats };
+}
+
 function attributeWar(rows: WarRow[]): void {
-  type Race = { r: number; year: number; R?: string; D?: string; rows: WarRow[] };
+  type Race = EffectRace & { rows: WarRow[] };
   const races = new Map<string, Race>();
   for (const row of rows) {
     const k = `${row.state}|${row.office}|${row.race}|${row.year}`;
@@ -1097,35 +1424,13 @@ function attributeWar(rows: WarRow[]): void {
     if (row.party === "R") rc.R = warCandidateKey(row.state, row.party, row.candidate);
     else rc.D = warCandidateKey(row.state, row.party, row.candidate);
   }
-  const obs = new Map<string, { race: Race; s: number }[]>();
-  for (const rc of races.values()) {
-    if (rc.R) (obs.get(rc.R) ?? obs.set(rc.R, []).get(rc.R)!).push({ race: rc, s: 1 });
-    if (rc.D) (obs.get(rc.D) ?? obs.set(rc.D, []).get(rc.D)!).push({ race: rc, s: -1 });
-  }
-  const a = new Map<string, number>();
-  const pred = (rc: Race) => (rc.R ? a.get(rc.R) ?? 0 : 0) - (rc.D ? a.get(rc.D) ?? 0 : 0);
   const years = [...new Set([...races.values()].map((rc) => rc.year))].sort((x, y) => x - y);
+  let a = new Map<string, number>();
   for (const Y of years) {
-    const wt = (year: number) => WAR_RECENCY_DECAY ** Math.abs(year - Y);
-    // Weighted coordinate descent on the ridge normal equations; converges in a few dozen sweeps
-    // (warm-started from the previous target year's solution).
-    for (let it = 0; it < 200; it++) {
-      let maxDelta = 0;
-      for (const [c, o] of obs) {
-        const prev = a.get(c) ?? 0;
-        let num = 0;
-        let den = WAR_LAMBDA;
-        for (const { race, s } of o) {
-          const w = wt(race.year);
-          num += w * (s * (race.r - pred(race)) + prev);
-          den += w;
-        }
-        const next = num / den;
-        a.set(c, next);
-        maxDelta = Math.max(maxDelta, Math.abs(next - prev));
-      }
-      if (maxDelta < 1e-6) break;
-    }
+    // Solve as of Y (warm-started from the previous target year's solution).
+    const solved = solveCandidateEffects(races.values(), Y, a);
+    a = solved.a;
+    const pred = (rc: Race) => (rc.R ? a.get(rc.R) ?? 0 : 0) - (rc.D ? a.get(rc.D) ?? 0 : 0);
     for (const rc of races.values()) {
       if (rc.year !== Y) continue;
       const eps = rc.r - pred(rc);
@@ -1133,11 +1438,11 @@ function attributeWar(rows: WarRow[]): void {
         const s = row.party === "R" ? 1 : -1;
         const key = warCandidateKey(row.state, row.party, row.candidate);
         const oppKey = row.party === "R" ? rc.D : rc.R;
-        const o = obs.get(key) ?? [];
+        const st = solved.stats.get(key);
         row.residual = s * rc.r;
         row.effect = a.get(key) ?? 0;
-        row.effectN = o.length;
-        row.effectW = o.reduce((acc, { race }) => acc + wt(race.year), 0);
+        row.effectN = st?.n ?? 0;
+        row.effectW = st?.w ?? 0;
         row.opponentEffect = oppKey ? a.get(oppKey) ?? 0 : 0;
         // R-positive: an above-replacement D opponent lowers the R-positive expectation; an
         // above-replacement R opponent raises it. s·(actual − expectedVsOpponent) = effect + s·ε.
@@ -1185,19 +1490,16 @@ function fitWarMoneyModel(rows: { gap: number; incSign: number; base: number }[]
 
 let _warCache: WarRow[] | null = null;
 let _warMoneyCache: Record<string, WarMoneyModel> | null = null;
+type WarPending = { r: ComputedRace; office: WarRow["office"]; raceLabel: string; state: string; base: number; incSign: number; gap: number | null; withMoney: boolean; note: string };
+let _warPendingCache: WarPending[] | null = null;
 
-/** Per-office structural money model behind WAR's expected margin (fitted inside computeWarTable). */
-export function getWarMoneyModel(): Record<string, WarMoneyModel> {
-  if (!_warMoneyCache) computeWarTable();
-  return _warMoneyCache!;
-}
-
-export function computeWarTable(): WarRow[] {
-  if (_warCache) return _warCache;
+// Every scorable race with its pre-money expected margin (base = anchor lean + β*E +
+// incumbency), shared by the WAR table (structural money) and the forward candidate
+// effects (full money).
+function buildWarPending(): WarPending[] {
+  if (_warPendingCache) return _warPendingCache;
   const fit = getTplFit();
-  // base = R-positive expected margin BEFORE money: anchor lean + β*E + incumbency.
-  type Pending = { r: ComputedRace; office: WarRow["office"]; raceLabel: string; state: string; base: number; incSign: number; gap: number | null; withMoney: boolean; note: string };
-  const pending: Pending[] = [];
+  const pending: WarPending[] = [];
   const gapOf = (r: ComputedRace) => r.ffDetail && r.ffDetail.dem + r.ffDetail.rep > 0 ? ((r.ffDetail.rep - r.ffDetail.dem) / (r.ffDetail.rep + r.ffDetail.dem)) * 100 : null;
   const incSignOf = (r: ComputedRace) => (r.incumbent === "R" ? 1 : r.incumbent === "D" ? -1 : 0);
 
@@ -1214,7 +1516,7 @@ export function computeWarTable(): WarRow[] {
       } else if (r.imputed && r.NM != null && (r.eligibility === "no-dem" || r.eligibility === "no-rep")) {
         // Same-party and jungle-fragmented generals carry no signable R-vs-D margin.
         // Imputed baselines carry no money term (the imputation is a presidential lean).
-        pending.push({ r, office, raceLabel: r.race, state: abbr, base: r.NM + beta * E - incumbencyPtsFor(r.raceType, r.incumbent), incSign: incSignOf(r), gap: null, withMoney: false, note: "vs imputed presidential baseline" });
+        pending.push({ r, office, raceLabel: r.race, state: abbr, base: r.NM + beta * E - incumbencyPtsFor(r.raceType, r.incumbent, r.incumbentAppointed), incSign: incSignOf(r), gap: null, withMoney: false, note: "vs imputed presidential baseline" });
       }
     }
   }
@@ -1226,6 +1528,19 @@ export function computeWarTable(): WarRow[] {
       pending.push({ r, office: "H", raceLabel: r.race, state: calc.stateAbbr, base: calc.tpl + beta * (fit.E[r.year] ?? 0) - (r.incumbencyPts ?? 0), incSign: incSignOf(r), gap: gapOf(r), withMoney: true, note: "vs district TPL" });
     }
   }
+  _warPendingCache = pending;
+  return pending;
+}
+
+/** Per-office structural money model behind WAR's expected margin (fitted inside computeWarTable). */
+export function getWarMoneyModel(): Record<string, WarMoneyModel> {
+  if (!_warMoneyCache) computeWarTable();
+  return _warMoneyCache!;
+}
+
+export function computeWarTable(): WarRow[] {
+  if (_warCache) return _warCache;
+  const pending = buildWarPending();
 
   // Structural money model per office, from races with both receipts known.
   const money: Record<string, WarMoneyModel> = {};
@@ -1260,8 +1575,8 @@ export function formatForecastMargin(v: number, decimals = 1): string {
   return `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(decimals)}`;
 }
 
-// Logistic curve: P(D wins) = 1 / (1 + e^(0.13 × margin))
-// margin is R-positive convention; result clamped to [0.02, 0.98]
+// Legacy logistic curve, P(D wins) = 1 / (1 + e^(0.13 × margin)), kept only as the
+// comparison baseline in scripts/forwardBacktest.ts. The site uses winProbabilityD.
 export function marginToProbability(margin: number): number {
   const raw = 1 / (1 + Math.exp(0.13 * margin));
   return Math.max(0.02, Math.min(0.98, raw));

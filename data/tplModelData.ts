@@ -78,6 +78,16 @@ export const TPL_GLOBAL_CONSTANTS = {
   BETA_SHRINK: 0.5,    // β* = 1 + BETA_SHRINK × (β̂ − 1)
   BETA_MIN: 0.5,
   BETA_MAX: 1.6,
+  // Boundary-shift confidence (District TPL only — see boundaryStripFor in tplCompute).
+  // A pre-2026 House race is relocated onto current lines by the presidential delta
+  // between the two maps, then weighted 1 / (1 + (|shift| / K)²). At K = 10 a race moved
+  // 5 pts (the median for the 2016–2020 eras) enters at 0.80, one moved 10 pts at 0.50,
+  // and NC-14's 32-pt rebuild at 0.09; an unmoved race is unaffected at 1.0.
+  // NOT CALIBRATED: tplBacktest/tplCalibrate only exercise calculateStateModel, which has
+  // no district-level target, so there is nothing for K to be fitted against yet. This is
+  // a designed value — fitting it needs a district holdout (predict each district's actual
+  // House margin in year Y from its TPL built without that race).
+  BS_WEIGHT_K: 10,
 };
 
 // ── State Wave Sensitivity Coefficients (SUPERSEDED) ────────────────────────
@@ -272,4 +282,37 @@ export const STATE_RACE_INPUTS: Record<string, RaceModelInputs[]> = {
   GA: [
     { race: "Senate Special", raceType: "S", year: 2020, wqTier: "Generic", lqTier: "Weak" },
   ],
+};
+
+// ── Forward forecast constants (Phases 2–3 of the 2026 forecast revamp) ──────
+// ENV_MISS_SHRINK: share of the historical mean generic-ballot miss (House vote −
+//   final generic ballot, R-positive) applied to the point estimate. The rest of the
+//   miss, and its variance, live in the shared national error σ_E — polling error is
+//   uncertainty, not a prediction (decision 2026-09-16).
+// ENV_DAYS_MID_SEPT_TO_ELECTION: the September→November drift variance observed in
+//   the history table is for this horizon; it scales linearly with days remaining.
+// RACE_SIGMA: per-office race-level error (pts) beyond the shared national shock —
+//   robust within-year spread from scripts/forwardBacktest.ts (see its "recommended
+//   constants" block; re-run after any model change).
+export const FORECAST_CONSTANTS = {
+  ENV_MISS_SHRINK: 0.5,
+  ENV_DAYS_MID_SEPT_TO_ELECTION: 49,
+  RACE_SIGMA: { H: 5.3, S: 6.1, G: 9.0 } as Record<"H" | "S" | "G", number>, // forwardBacktest 2026-09-16 (env=struct + quality, robust within-year)
+  // Multiplier on the nominees' ridge track-record effects (effect_R − effect_D) in the
+  // forward model, per office. forwardBacktest --quality (2026-09-16, leakage-free
+  // sweep): House error bottoms near 0.75, Senate at 1.0, Governor keeps improving past
+  // 1.5 (persistent personal brands — Scott, Sununu, Hogan); 1.5 kept off the sweep edge.
+  QUALITY_WEIGHT: { H: 0.75, S: 1.0, G: 1.5 } as Record<"H" | "S" | "G", number>,
+  // Share of the office's incumbency advantage an appointed/successor incumbent (has
+  // never won the seat; "R*"/"D*" in the CSVs) receives — both when the backward model
+  // strips incumbency and when the forward model adds it. forwardBacktest --appointed
+  // (2026-09-16): of the 9 historical cases (Smith, Hyde-Smith, McSally, Loeffler,
+  // Padilla; Ivey, Reynolds, McMaster, Hochul) 8 ran BEHIND an open-seat generic
+  // nominee even at share 0 (mean −5.6, −4.0 without Hochul), so no advantage is
+  // credited; a negative value would be an extrapolation from n=9.
+  APPOINTED_INCUMBENCY_SHARE: 0,
+  // Layer B observable prior on candidate effects (ridge shrinkage target instead of 0):
+  // prior-win-while-not-incumbent only. The prior-loss indicator flipped sign between
+  // backtest windows and is not used. Toggle for the harness / site.
+  OBSERVABLE_PRIOR: false, // harness 2026-09-16: prior-win prior raised pooled House MAE 4.83→4.98 (n=24/52 identifying races); off until outside observables exist
 };

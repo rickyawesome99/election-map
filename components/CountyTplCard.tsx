@@ -53,7 +53,12 @@ export default function CountyTplCard({
             </tr>
           </thead>
           <tbody>
-            {races.map((r, i) => (
+            {races.map((r, i) => {
+              // "Senate Special" keeps its own name — a state can have a regular and a
+              // special Senate race in the SAME year (GA 2020, MN/MS 2018, OK 2022,
+              // NE 2024), and the type label alone would render them as twin rows.
+              const raceLabel = r.race === "Senate Special" ? "Senate Special" : (RACE_TYPE_LABELS[r.raceType] ?? r.race);
+              return (
               <tr
                 key={`${r.raceType}-${r.year}-${i}`}
                 style={{ background: i % 2 === 0 ? "transparent" : "var(--app-bg)", opacity: r.inAggregation ? 1 : 0.75 }}
@@ -67,10 +72,10 @@ export default function CountyTplCard({
                   </span>
                   {r.raceType !== "H" && r.detailHref ? (
                     <a href={r.detailHref} className="hover:underline">
-                      {RACE_TYPE_LABELS[r.raceType] ?? r.race}
+                      {raceLabel}
                     </a>
                   ) : (
-                    RACE_TYPE_LABELS[r.raceType] ?? r.race
+                    raceLabel
                   )}
                 </td>
                 <td className="px-2 py-1.5 tabular-nums" style={{ color: "var(--app-text-muted)" }}>
@@ -93,7 +98,8 @@ export default function CountyTplCard({
                   {fmtMargin(r.NM)}
                 </td>
               </tr>
-            ))}
+              );
+            })}
           </tbody>
         </table>
       </div>

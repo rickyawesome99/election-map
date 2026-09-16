@@ -277,7 +277,7 @@ export const officeholders: Record<string, StateOfficeholders> = {
   OK: {
     governor: { name: "Kevin Stitt", party: "R", nextElection: 2026, termYears: 4 },
     senators: [
-      { seat: 1, seatClass: 2, name: "Markwayne Mullin", party: "R", nextElection: 2026 },
+      { seat: 1, seatClass: 2, name: "Alan S. Armstrong", party: "R", nextElection: 2026 },
       { seat: 2, seatClass: 3, name: "James Lankford", party: "R", nextElection: 2028 },
     ],
   },

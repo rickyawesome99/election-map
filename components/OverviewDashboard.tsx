@@ -2,10 +2,8 @@
 
 import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
 import { computeTrumpApprovalAverage, APPROVE_COLOR, DISAPPROVE_COLOR } from "@/lib/trumpApprovalAverage";
-import {
-  projectedHouseData, projectedSenateData, projectedGovernorData,
-  SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE,
-} from "./ForecastMap";
+import { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE } from "./ForecastMap";
+import { houseForecasts, senateForecasts, governorForecasts, seatTotals, getChamberSimulations } from "@/lib/forecast";
 import type { DARK_THEME } from "./ForecastMap";
 
 type Theme = typeof DARK_THEME;
@@ -18,12 +16,6 @@ function fmtGbDiff(diff: number): string {
 function fmtApprovalDiff(diff: number): string {
   if (Math.abs(diff) < 0.05) return "EVEN";
   return diff < 0 ? `Approve +${Math.abs(diff).toFixed(1)}` : `Disapprove +${diff.toFixed(1)}`;
-}
-
-function seatTotals(data: { margin: number }[], holdover: { dem: number; rep: number }) {
-  const dem = holdover.dem + data.filter((r) => r.margin <= 0).length;
-  const rep = holdover.rep + data.filter((r) => r.margin > 0).length;
-  return { dem, rep };
 }
 
 function ChevronIcon() {
@@ -61,8 +53,8 @@ function MarginTile({ theme: t, label, value, color, caption }: { theme: Theme; 
 }
 
 function SeatTile({
-  theme: t, label, href, dem, rep, total,
-}: { theme: Theme; label: string; href: string; dem: number; rep: number; total: number }) {
+  theme: t, label, href, dem, rep, expectedDem, lo80, hi80, pDemControl, total,
+}: { theme: Theme; label: string; href: string; dem: number; rep: number; expectedDem: number; lo80: number; hi80: number; pDemControl: number | null; total: number }) {
   return (
     <TileShell href={href}>
       <div className="min-h-[2.2em] flex items-start justify-between">
@@ -84,7 +76,15 @@ function SeatTile({
           <span style={{ width: `${(dem / total) * 100}%`, background: t.demText }} />
           <span style={{ width: `${(rep / total) * 100}%`, background: t.repText }} />
         </div>
-        <div className="mt-1.5 text-right text-[10px] font-medium" style={{ color: t.textVeryMuted }}>{total} total seats</div>
+        <div className="mt-1.5 flex items-baseline justify-between gap-2 text-[10px] font-medium" style={{ color: t.textVeryMuted }}>
+          <span title="Simulated Democratic seats: mean and 80% interval">Expected {expectedDem.toFixed(1)} D · 80% {lo80}–{hi80}</span>
+          <span>{total} total seats</span>
+        </div>
+        {pDemControl != null && (
+          <div className="mt-1 text-[10px] font-semibold" style={{ color: pDemControl >= 0.5 ? t.demText : t.repText }} title="Share of simulations in which each party controls the chamber">
+            {pDemControl >= 0.5 ? `D control ${Math.round(pDemControl * 100)}%` : `R control ${Math.round((1 - pDemControl) * 100)}%`}
+          </div>
+        )}
       </div>
     </TileShell>
   );
@@ -94,9 +94,10 @@ export default function OverviewDashboard({ theme: t }: { theme: Theme }) {
   const gb = computeGenericBallotAverage(new Date());
   const approval = computeTrumpApprovalAverage(new Date());
 
-  const house = seatTotals(projectedHouseData, SEAT_HOLDOVERS.house);
-  const senate = seatTotals(projectedSenateData, SEAT_HOLDOVERS.senate);
-  const governor = seatTotals(projectedGovernorData, SEAT_HOLDOVERS.governor);
+  const house = seatTotals(houseForecasts, SEAT_HOLDOVERS.house);
+  const senate = seatTotals(senateForecasts, SEAT_HOLDOVERS.senate);
+  const governor = seatTotals(governorForecasts, SEAT_HOLDOVERS.governor);
+  const sims = getChamberSimulations();
 
   const gbColor = gb.diff < 0 ? "var(--party-dem)" : gb.diff > 0 ? "var(--party-rep)" : t.textPrimary;
   const approvalColor = approval.diff < 0 ? APPROVE_COLOR : approval.diff > 0 ? DISAPPROVE_COLOR : t.textPrimary;
@@ -136,9 +137,9 @@ export default function OverviewDashboard({ theme: t }: { theme: Theme }) {
         className="grid grid-cols-3 [&>*+*]:border-l"
         style={{ borderBottom: `1px solid ${t.border}`, color: t.border }}
       >
-        <SeatTile theme={t} label="House" href="/house" dem={house.dem} rep={house.rep} total={TOTAL_SEATS_BY_TYPE.house} />
-        <SeatTile theme={t} label="Senate" href="/senate" dem={senate.dem} rep={senate.rep} total={TOTAL_SEATS_BY_TYPE.senate} />
-        <SeatTile theme={t} label="Governor" href="/governor" dem={governor.dem} rep={governor.rep} total={TOTAL_SEATS_BY_TYPE.governor} />
+        <SeatTile theme={t} label="House" href="/house" dem={house.called.dem} rep={house.called.rep} expectedDem={sims.house.meanDem} lo80={sims.house.lo80} hi80={sims.house.hi80} pDemControl={sims.house.pDemControl} total={TOTAL_SEATS_BY_TYPE.house} />
+        <SeatTile theme={t} label="Senate" href="/senate" dem={senate.called.dem} rep={senate.called.rep} expectedDem={sims.senate.meanDem} lo80={sims.senate.lo80} hi80={sims.senate.hi80} pDemControl={sims.senate.pDemControl} total={TOTAL_SEATS_BY_TYPE.senate} />
+        <SeatTile theme={t} label="Governor" href="/governor" dem={governor.called.dem} rep={governor.called.rep} expectedDem={sims.governor.meanDem} lo80={sims.governor.lo80} hi80={sims.governor.hi80} pDemControl={sims.governor.pDemControl} total={TOTAL_SEATS_BY_TYPE.governor} />
       </div>
     </section>
   );

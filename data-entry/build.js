@@ -90,66 +90,16 @@ const bool = (v) => { const s = (v || "").trim().toUpperCase(); return s === "TR
 // Treats blank, "N/A", and "TBD" as missing
 const has  = (v) => v != null && v.trim() !== "" && v.trim().toUpperCase() !== "N/A" && v.trim().toUpperCase() !== "TBD";
 
-function rating(margin) {
-  if (margin >= 15)  return "Safe R";
-  if (margin >= 5)   return "Likely R";
-  if (margin >= 1)   return "Lean R";
-  if (margin >= 0)   return "Tilt R";
-  if (margin > -1)   return "Tilt D";
-  if (margin >= -5)  return "Lean D";
-  if (margin >= -15) return "Likely D";
-  return "Safe D";
-}
-
-// Build history array from spreadsheet row.
-// Uses entered monthly values if present; otherwise derives from probability.
-function buildHistory(row, prob01) {
-  const KEYS  = ["history_sep","history_oct","history_nov","history_dec","history_jan","history_feb","history_mar"];
-  const DATES = ["Sep","Oct","Nov","Dec","Jan","Feb","Mar"];
-  const anyFilled = KEYS.some((k) => has(row[k]));
-
-  if (anyFilled) {
-    const base = Math.round(prob01 * 100);
-    return KEYS.map((k, i) => ({
-      date: DATES[i],
-      value: has(row[k]) ? num(row[k], base) : base,
-    }));
-  }
-
-  // Derive (matches the original h() helper in forecastData.ts)
-  const b = Math.round(prob01 * 100);
-  return [
-    { date: "Sep", value: Math.max(1, Math.min(99, b - 5)) },
-    { date: "Oct", value: Math.max(1, Math.min(99, b - 3)) },
-    { date: "Nov", value: Math.max(1, Math.min(99, b - 1)) },
-    { date: "Dec", value: Math.max(1, Math.min(99, b)) },
-    { date: "Jan", value: Math.max(1, Math.min(99, b)) },
-    { date: "Feb", value: Math.max(1, Math.min(99, b)) },
-    { date: "Mar", value: b },
-  ];
-}
+// Forecast margin, win probability and rating are DERIVED at runtime by lib/forecast.ts
+// (forecastRace) from the TPL model — the prob_dem / proj_* CSV columns are ignored.
 
 // Build a RaceForecast object from a spreadsheet row + associated past results
 function buildRaceForecast(row, raceType, id, name, state, pastRows) {
-  // Probability — prob_dem may be 0–1 or 0–100 scale depending on the CSV; auto-detect.
-  // Old format: probability (0–100).
-  const prob01 = has(row.prob_dem)
-    ? (() => { const v = num(row.prob_dem, 50); return Math.max(0, Math.min(1, v > 1 ? v / 100 : v)); })()
-    : Math.max(0, Math.min(1, num(row.probability, 50) / 100));
-
-  // Margin (internal convention: positive = Rep wins, R-positive).
-  // Derived from prob_dem via the forecast formula; proj_dem/proj_rep/proj_margin columns are unused.
-  const margin = parseFloat(((0.5 - prob01) * 42).toFixed(1));
-
   const forecast = {
     id,
     name,
     state,
     raceType,
-    probability: parseFloat(prob01.toFixed(2)),
-    margin,
-    rating:  rating(margin),
-    history: buildHistory(row, prob01),
   };
 
   // termLength — governor only (optional)
@@ -179,7 +129,10 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
 
   // Determine incumbency from the "incumbent" column (R / D / Both / none).
   // Falls back to separate dem_incumbent / rep_incumbent columns (Y/N) if "incumbent" is absent.
-  const incVal = (row.incumbent || "").trim().toUpperCase();
+  // "R*" / "D*" = an appointed or successor incumbent who has never won this seat.
+  const incRaw = (row.incumbent || "").trim().toUpperCase();
+  const incAppointed = incRaw.endsWith("*");
+  const incVal = incRaw.replace(/\*$/, "");
   const isPartyIndicator = ["R", "D", "BOTH", "NONE"].includes(incVal);
   const demInc = isPartyIndicator ? (incVal === "D" || incVal === "BOTH") : bool(row.dem_incumbent);
   const repInc = isPartyIndicator ? (incVal === "R" || incVal === "BOTH") : bool(row.rep_incumbent);
@@ -189,8 +142,8 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
     const demParsed = parseCandidateName(has(row.dem_name) ? row.dem_name : "Democratic Candidate", "D");
     const repParsed = parseCandidateName(has(row.rep_name) ? row.rep_name : "Republican Candidate", "R");
     forecast.candidates = {
-      dem: { name: demParsed.name, party: demParsed.party, incumbent: demInc },
-      rep: { name: repParsed.name, party: repParsed.party, incumbent: repInc },
+      dem: { name: demParsed.name, party: demParsed.party, incumbent: demInc, ...(demInc && incAppointed ? { appointed: true } : {}) },
+      rep: { name: repParsed.name, party: repParsed.party, incumbent: repInc, ...(repInc && incAppointed ? { appointed: true } : {}) },
     };
   }
 
@@ -231,11 +184,15 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
         if (has(r['class'])) pr.seatClass = int2(r['class']);
         if (has(r.type)) pr.electionType = r.type;
         // incumbent column: R/D/Both/none (house) or dem_incumbent/rep_incumbent (gov/senate)
-        const rIncVal = (r.incumbent || "").trim().toUpperCase();
+        const rIncRaw = (r.incumbent || "").trim().toUpperCase();
+        const rAppointed = rIncRaw.endsWith("*");
+        const rIncVal = rIncRaw.replace(/\*$/, "");
         const rIsParty = ["R", "D", "BOTH", "NONE"].includes(rIncVal);
         if (rIsParty) {
           if (rIncVal === "D" || rIncVal === "BOTH") pr.demIncumbent = true;
           if (rIncVal === "R" || rIncVal === "BOTH") pr.repIncumbent = true;
+          if (rAppointed && pr.demIncumbent) pr.demAppointed = true;
+          if (rAppointed && pr.repIncumbent) pr.repAppointed = true;
         } else {
           if (has(r.dem_incumbent)) pr.demIncumbent = bool(r.dem_incumbent);
           if (has(r.rep_incumbent)) pr.repIncumbent = bool(r.rep_incumbent);
@@ -284,11 +241,15 @@ function buildNoElection(row, state, abbr, pastRows) {
         if (has(r.seat)) pr.seat = int2(r.seat);
         if (has(r['class'])) pr.seatClass = int2(r['class']);
         if (has(r.type)) pr.electionType = r.type;
-        const rIncVal = (r.incumbent || "").trim().toUpperCase();
+        const rIncRaw = (r.incumbent || "").trim().toUpperCase();
+        const rAppointed = rIncRaw.endsWith("*");
+        const rIncVal = rIncRaw.replace(/\*$/, "");
         const rIsParty = ["R", "D", "BOTH", "NONE"].includes(rIncVal);
         if (rIsParty) {
           if (rIncVal === "D" || rIncVal === "BOTH") pr.demIncumbent = true;
           if (rIncVal === "R" || rIncVal === "BOTH") pr.repIncumbent = true;
+          if (rAppointed && pr.demIncumbent) pr.demAppointed = true;
+          if (rAppointed && pr.repIncumbent) pr.repAppointed = true;
         } else {
           if (has(r.dem_incumbent)) pr.demIncumbent = bool(r.dem_incumbent);
           if (has(r.rep_incumbent)) pr.repIncumbent = bool(r.rep_incumbent);
@@ -331,18 +292,11 @@ const STATE_INFO = [
   ["55","WI","Wisconsin",8,0.48],["56","WY","Wyoming",1,0.08],
 ];
 
-function proceduralHouseDistrict(fips, abbr, stateName, d, _n, base) {
+function proceduralHouseDistrict(fips, abbr, stateName, d) {
   const distStr  = String(d).padStart(2, "0");
   const id       = fips + distStr;
   const name     = `${abbr}-${String(d).padStart(2, "0")}`;
-  const variation = Math.sin(d * 2.4 + parseInt(fips) * 0.3) * 0.26;
-  const prob     = Math.max(0.03, Math.min(0.97, base + variation));
-  const margin   = parseFloat(((0.5 - prob) * 42).toFixed(1));
-  return {
-    id, name, state: stateName, raceType: "house",
-    probability: parseFloat(prob.toFixed(2)),
-    margin, rating: rating(margin), history: buildHistory({}, prob),
-  };
+  return { id, name, state: stateName, raceType: "house" };
 }
 
 // ── Load all CSVs ─────────────────────────────────────────────────────────────
@@ -509,18 +463,13 @@ for (const [fips, abbr, stateName, n, base] of STATE_INFO) {
     const entered = houseEnteredMap[parseInt(id)];
 
     if (entered) {
-      // Use entered data; if prob_dem is blank, inject procedural probability so map coloring still works
       const row = Object.assign({}, entered);
-      if (!has(row.prob_dem)) {
-        const variation = Math.sin(d * 2.4 + parseInt(fips) * 0.3) * 0.26;
-        row.prob_dem = String(Math.max(0.03, Math.min(0.97, base + variation)).toFixed(4));
-      }
       const past = housePastMap[parseInt(id)] || [];
       houseData.push(buildRaceForecast(row, "house", id,
         `${abbr}-${String(d).padStart(2, "0")}`, stateName, past));
     } else {
       // Fall back to procedural generation
-      houseData.push(proceduralHouseDistrict(fips, abbr, stateName, d, n, base));
+      houseData.push(proceduralHouseDistrict(fips, abbr, stateName, d));
     }
   }
 }
@@ -874,6 +823,7 @@ export type Candidate = {
   name: string;
   party: "D" | "R" | "I";
   incumbent: boolean;
+  appointed?: boolean; // incumbent by appointment/succession — has never won this seat
 };
 
 export type PastResult = {
@@ -893,6 +843,8 @@ export type PastResult = {
   electionType?: string;
   demIncumbent?: boolean;
   repIncumbent?: boolean;
+  demAppointed?: boolean;
+  repAppointed?: boolean;
 };
 
 export type RaceForecast = {
@@ -900,10 +852,6 @@ export type RaceForecast = {
   name: string;
   state: string;
   raceType: RaceType;
-  probability: number;
-  margin: number;
-  rating: string;
-  history: { date: string; value: number }[];
   termLength?: number;
   seat?: number;
   seatClass?: number;
@@ -976,6 +924,8 @@ export type PresResult = {
   repCandidate?: string;
   demIncumbent?: boolean;
   repIncumbent?: boolean;
+  demAppointed?: boolean;
+  repAppointed?: boolean;
 };
 
 export const presPastResults: Record<string, PresResult[]> = ${j(presPastResults)};

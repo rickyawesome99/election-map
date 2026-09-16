@@ -10,7 +10,8 @@ import { districtDemographics, REDRAWN_SINCE_ACS_VINTAGE } from "@/data/demograp
 import { AboutRaceCard, CandidatesLedgerSection, ForecastCalculationCard, FundraisingLedgerSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, LedgerSectionHead, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
-import { calculateDistrictTpl, effectiveGenericBallot, marginToProbability, computeIncumbentPts, computeRcpMargin, computeProjectedMargin, computeRaceFundraisingPts, raceFundraising2026, raceFundraisingSource2026 } from "@/lib/tplCompute";
+import { calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts, computeRcpMargin, computeProjectedMargin, computeRaceFundraisingPts, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
+import { forecastRace } from "@/lib/forecast";
 import BackButton from "@/components/BackButton";
 import { senateCandidatesByYear, specialSenateCandidatesByYear } from "@/data/senateCandidatesByYear";
 import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
@@ -76,7 +77,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   if (!race) return { title: "Race Not Found" };
   return {
     title: `${race.name} House Race — ${electionYear} Forecast`,
-    description: `${electionYear} House forecast for ${race.name}: ${race.rating}, ${Math.round(race.probability * 100)}% Democratic win probability`,
+    description: `${electionYear} House forecast for ${race.name}: ${forecastRace(race).rating}, ${Math.round(forecastRace(race).probability * 100)}% Democratic win probability`,
   };
 }
 
@@ -110,14 +111,16 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const districtTpl = calculateDistrictTpl(race.id);
   const districtTplId = parseInt(race.id, 10).toString();
   const incumbentParty = (incumbentCandidate?.party === "D" || incumbentCandidate?.party === "R") ? incumbentCandidate.party : null;
-  const incumbentPts = computeIncumbentPts("H", incumbentParty);
+  const incumbentPts = computeIncumbentPts("H", incumbentParty, incumbentCandidate?.appointed ?? false);
   const fundraising = raceFundraising2026("house", race.id);
   const fundraisingSource = raceFundraisingSource2026("house", race.id);
   const fundraisingPts = computeRaceFundraisingPts("house", race.id);
-  const gb = effectiveGenericBallot(stateAbbr);
+  const gb = effectiveEnvironment(stateAbbr);
   const rcpMargin = computeRcpMargin(race.rcpDem, race.rcpRep);
   const projectedMargin = computeProjectedMargin(race);
-  const demPct = Math.round(marginToProbability(projectedMargin) * 100);
+  const forecast = forecastRace(race);
+  const quality = candidateQuality(race);
+  const demPct = Math.round(forecast.probability * 100);
   const repPct = 100 - demPct;
   const forecastRating = marginToRating(projectedMargin);
   const { bg, text } = getRatingColors(forecastRating);
@@ -372,9 +375,12 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               tplHref={`/model/district?modelDistrict=${encodeURIComponent(districtTplId)}`}
               incumbentPts={incumbentPts}
               fundraisingPts={fundraising ? fundraisingPts : null}
-              candidatePts={null}
+              candidatePts={quality.pts}
+              candidateDetail={quality}
               pollingAvg={rcpMargin}
               projectedMargin={projectedMargin}
+              probabilityD={forecast.probability}
+              interval80={forecast.interval80}
             />
           </section>
 

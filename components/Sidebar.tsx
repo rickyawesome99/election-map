@@ -1,11 +1,12 @@
 "use client";
 
-import { RaceForecast, RaceType } from "@/data/forecastData";
+import { RaceType } from "@/data/forecastData";
+import type { ForecastedRace } from "@/lib/forecast";
 import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import { Theme } from "./ForecastMap";
 
 type Props = {
-  selected: RaceForecast | null;
+  selected: ForecastedRace | null;
   raceType: RaceType;
   onClose: () => void;
   theme: Theme;

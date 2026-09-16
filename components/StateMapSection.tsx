@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import type { RaceForecast, PastResult } from "@/data/forecastData";
+import type { PastResult } from "@/data/forecastData";
+import type { ForecastedRace } from "@/lib/forecast";
 import { getRatingColors } from "@/lib/colorScale";
 import StateMapToggle from "./StateMapToggle";
 
@@ -16,13 +17,13 @@ export default function StateMapSection({
 }: {
   overview: React.ReactNode;
   children: React.ReactNode;
-  houseRaces: RaceForecast[];
+  houseRaces: ForecastedRace[];
   housePastResults: Record<string, PastResult[]>;
   stateAbbr: string;
   stateName: string;
   stateFips: string;
 }) {
-  const [selected, setSelected] = useState<RaceForecast | null>(null);
+  const [selected, setSelected] = useState<ForecastedRace | null>(null);
   const demPct = selected ? Math.max(0, Math.min(100, 50 - selected.margin / 2)) : 0;
   const repPct = 100 - demPct;
   const { bg: rBg, text: rText } = selected ? getRatingColors(selected.rating) : { bg: "", text: "" };

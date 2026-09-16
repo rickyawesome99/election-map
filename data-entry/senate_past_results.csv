@@ -13,12 +13,12 @@ AR,2016,2,3,,Conner Eldridge,John Boozman,R,36.17,59.77,23.60,400602,661984,2613
 AR,2014,1,2,,Mark Pryor,Tom Cotton,D,39.43,56.50,17.07,334174,478819,144645,847505,https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Arkansas
 AZ,2024,1,1,,Ruben Gallego,Kari Lake,None,50.06,47.65,-2.41,1676335,1595761,-80574,3348814,https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Arizona
 AZ,2022,2,3,,Mark Kelly,Blake Masters,D,51.39,46.51,-4.89,1322027,1196308,-125719,2572294,https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_Arizona
-AZ,2020,2,3,Special,Mark Kelly,Martha McSally,R,51.16,48.81,-2.35,1716467,1637661,-78806,3355317,https://en.wikipedia.org/wiki/2020_United_States_Senate_special_election_in_Arizona
+AZ,2020,2,3,Special,Mark Kelly,Martha McSally,R*,51.16,48.81,-2.35,1716467,1637661,-78806,3355317,https://en.wikipedia.org/wiki/2020_United_States_Senate_special_election_in_Arizona
 AZ,2018,1,1,,Kyrsten Sinema,Martha McSally,None,49.96,47.61,-2.34,1191100,1135200,-55900,2384308,https://en.wikipedia.org/wiki/2018_United_States_Senate_election_in_Arizona
 AZ,2016,2,3,,Ann Kirkpatrick,John McCain,R,40.75,53.71,12.96,1031245,1359267,328022,2530730,https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_Arizona
 AZ,2012,1,1,,Richard Carmona,Jeff Flake,None,46.20,49.23,3.03,1036542,1104457,67915,2243422,https://en.wikipedia.org/wiki/2012_United_States_Senate_election_in_Arizona
 CA,2024,1,1,,Adam Schiff,Steve Garvey,None,58.87,41.13,-17.75,9036252,6312594,-2723658,15348846,https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_California
-CA,2022,2,3,,Alex Padilla,Mark Meuser,D,61.06,38.94,-22.13,6621616,4222025,-2399591,10843641,https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_California
+CA,2022,2,3,,Alex Padilla,Mark Meuser,D*,61.06,38.94,-22.13,6621616,4222025,-2399591,10843641,https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_California
 CA,2018,1,1,,Dianne Feinstein,Kevin de León (D),D,54.16,45.84,-8.32,6019422,5093942,-925480,11113364,https://en.wikipedia.org/wiki/2018_United_States_Senate_election_in_California
 CA,2016,2,3,,Kamala Harris,Loretta Sanchez (D),None,61.60,38.40,-23.20,7542753,4701417,-2841336,12244170,https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_California
 CA,2012,1,1,,Dianne Feinstein,Elizabeth Emken,D,62.52,37.48,-25.05,7864624,4713887,-3150737,12578511,https://en.wikipedia.org/wiki/2012_United_States_Senate_election_in_California
@@ -43,7 +43,7 @@ FL,2016,2,3,,Patrick Murphy,Marco Rubio,R,44.31,51.98,7.67,4122088,4835191,71310
 FL,2012,1,1,,Bill Nelson,Connie Mack,D,55.23,42.23,-13.01,4523451,3458267,-1065184,8189946,https://en.wikipedia.org/wiki/2012_United_States_Senate_election_in_Florida
 GA,2022,2,3,,Raphael Warnock,Herschel Walker,D,51.40,48.60,-2.81,1820633,1721244,-99389,3541877,https://en.wikipedia.org/wiki/2022_United_States_Senate_election_in_Georgia
 GA,2020,1,2,,Jon Ossoff,David Perdue,R,50.61,49.39,-1.23,2269923,2214979,-54944,4484902,https://en.wikipedia.org/wiki/2020%E2%80%9321_United_States_Senate_election_in_Georgia
-GA,2020,2,3,Special,Raphael Warnock,Kelly Loeffler,R,51.04,48.96,-2.08,2289113,2195841,-93272,4484954,https://en.wikipedia.org/wiki/2020%E2%80%9321_United_States_Senate_special_election_in_Georgia
+GA,2020,2,3,Special,Raphael Warnock,Kelly Loeffler,R*,51.04,48.96,-2.08,2289113,2195841,-93272,4484954,https://en.wikipedia.org/wiki/2020%E2%80%9321_United_States_Senate_special_election_in_Georgia
 GA,2016,2,3,,Jim Barksdale,Johnny Isakson,R,41.03,54.78,13.75,1599726,2135806,536080,3898605,https://en.wikipedia.org/wiki/2016_United_States_Senate_election_in_Georgia
 GA,2014,1,2,,Michelle Nunn,David Perdue,None,45.21,52.89,7.68,1160811,1358088,197277,2567805,https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Georgia
 HI,2024,1,1,,Mazie Hirono,Bob McDermott,D,64.61,31.90,-32.71,324194,160075,-164119,501763,https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Hawaii
@@ -104,7 +104,7 @@ MI,2012,1,1,,Debbie Stabenow,Pete Hoekstra,D,58.80,37.98,-20.81,2735826,1767386,
 MN,2024,1,1,,Amy Klobuchar,Royce White,D,56.20,40.50,-15.70,1792441,1291712,-500729,3189323,https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Minnesota
 MN,2020,2,2,,Tina Smith,Jason Lewis,D,48.74,43.50,-5.24,1566522,1398145,-168377,3214256,https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Minnesota
 MN,2018,1,1,,Amy Klobuchar,Jim Newberger,D,60.31,36.21,-24.10,1566174,940437,-625737,2596879,https://en.wikipedia.org/wiki/2018_United_States_Senate_election_in_Minnesota
-MN,2018,2,2,Special,Tina Smith,Karin Housley,D,52.97,42.35,-10.62,1370540,1095777,-274763,2587356,https://en.wikipedia.org/wiki/2018_United_States_Senate_special_election_in_Minnesota
+MN,2018,2,2,Special,Tina Smith,Karin Housley,D*,52.97,42.35,-10.62,1370540,1095777,-274763,2587356,https://en.wikipedia.org/wiki/2018_United_States_Senate_special_election_in_Minnesota
 MN,2014,2,2,,Al Franken,Mike McFadden,D,53.15,42.91,-10.24,1053205,850227,-202978,1981528,https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Minnesota
 MN,2012,1,1,,Amy Klobuchar,Kurt Bills,D,65.23,30.53,-34.70,1854595,867974,-986621,2843207,https://en.wikipedia.org/wiki/2012_United_States_Senate_election_in_Minnesota
 MO,2024,1,1,,Lucas Kunce,Josh Hawley,R,41.84,55.57,13.73,1243728,1651907,408179,2972559,https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Missouri
@@ -115,7 +115,7 @@ MO,2012,1,1,,Claire McCaskill,Todd Akin,D,54.81,39.11,-15.70,1494125,1066159,-42
 MS,2024,1,1,,Ty Pinkins,Roger Wicker,R,37.19,62.81,25.62,451981,763420,311439,1215401,https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Mississippi
 MS,2020,2,2,,Mike Espy,Cindy Hyde-Smith,R,44.13,54.11,9.98,578691,709511,130820,1311354,https://en.wikipedia.org/wiki/2020_United_States_Senate_election_in_Mississippi
 MS,2018,1,1,,David Baria,Roger Wicker,R,39.47,58.49,19.02,369567,547619,178052,936215,https://en.wikipedia.org/wiki/2018_United_States_Senate_election_in_Mississippi
-MS,2018,2,2,Special,Mike Espy,Cindy Hyde-Smith,R,46.37,53.63,7.27,420819,486769,65950,907588,https://en.wikipedia.org/wiki/2018_United_States_Senate_special_election_in_Mississippi
+MS,2018,2,2,Special,Mike Espy,Cindy Hyde-Smith,R*,46.37,53.63,7.27,420819,486769,65950,907588,https://en.wikipedia.org/wiki/2018_United_States_Senate_special_election_in_Mississippi
 MS,2014,2,2,,Travis Childers,Thad Cochran,R,37.89,59.90,22.01,239439,378481,139042,631858,https://en.wikipedia.org/wiki/2014_United_States_Senate_election_in_Mississippi
 MS,2012,1,1,,Albert Gore,Roger Wicker,R,40.55,57.16,16.60,503467,709626,206159,1241568,https://en.wikipedia.org/wiki/2012_United_States_Senate_election_in_Mississippi
 MT,2024,1,1,,Jon Tester,Tim Sheehy,D,45.50,52.64,7.14,276305,319682,43377,607262,https://en.wikipedia.org/wiki/2024_United_States_Senate_election_in_Montana

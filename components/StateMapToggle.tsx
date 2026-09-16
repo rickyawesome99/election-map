@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { RaceForecast, PastResult } from "@/data/forecastData";
+import type { PastResult } from "@/data/forecastData";
+import type { ForecastedRace } from "@/lib/forecast";
 import StateDistrictMap from "./StateDistrictMap";
 import HousePastMap from "./HousePastMap";
 import PastElectionsCountyMap from "./PastElectionsCountyMap";
@@ -21,10 +22,10 @@ export default function StateMapToggle({
   abbr: string;
   stateName: string;
   stateFips: string;
-  houseRaces: RaceForecast[];
+  houseRaces: ForecastedRace[];
   housePastResults: Record<string, PastResult[]>;
-  selected: RaceForecast | null;
-  onSelect: (race: RaceForecast | null) => void;
+  selected: ForecastedRace | null;
+  onSelect: (race: ForecastedRace | null) => void;
 }) {
   const [view, setView] = useState<MapView>("projection");
   const availablePastYears = useMemo(() => {

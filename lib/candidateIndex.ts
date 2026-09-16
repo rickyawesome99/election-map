@@ -1,15 +1,5 @@
-import {
-  senateData,
-  houseData,
-  governorData,
-  senateNoElection,
-  senateHoldovers,
-  governorNoElection,
-  electionYear,
-  presPastResults,
-  type RaceForecast,
-  type NoElectionEntry,
-} from "@/data/forecastData";
+import { senateNoElection, senateHoldovers, governorNoElection, electionYear, presPastResults, type NoElectionEntry } from "@/data/forecastData";
+import { senateForecasts, governorForecasts, houseForecasts, type ForecastedRace } from "@/lib/forecast";
 import { popVoteData } from "@/data/popVoteData";
 import { candidateSlug } from "./candidateSlug";
 
@@ -111,7 +101,7 @@ function positionString(raceType: "house" | "senate" | "governor", state: string
 
 // ── Collectors ────────────────────────────────────────────────────────────────
 
-function collectFromRaces(races: RaceForecast[], racePathPrefix: string): RawEntry[] {
+function collectFromRaces(races: ForecastedRace[], racePathPrefix: string): RawEntry[] {
   const entries: RawEntry[] = [];
 
   for (const race of races) {
@@ -379,9 +369,9 @@ function collectPresidential(): RawEntry[] {
 
 function buildIndex(): Map<string, CandidatePage> {
   const allRaw: RawEntry[] = [
-    ...collectFromRaces(senateData, "/senate"),
-    ...collectFromRaces(houseData, "/house"),
-    ...collectFromRaces(governorData, "/governor"),
+    ...collectFromRaces(senateForecasts, "/senate"),
+    ...collectFromRaces(houseForecasts, "/house"),
+    ...collectFromRaces(governorForecasts, "/governor"),
     ...collectFromNoElection(senateNoElection, "senate", "/senate"),
     ...collectFromNoElection(senateHoldovers, "senate", "/senate", () => "2"),
     ...collectFromNoElection(governorNoElection, "governor", "/governor"),

@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { RaceForecast, RaceType, electionYear } from "@/data/forecastData";
+import { RaceType, electionYear } from "@/data/forecastData";
+import type { ForecastedRace } from "@/lib/forecast";
 import { getRatingColors, marginToRating, fmtMargin } from "@/lib/colorScale";
 import RaceTable, { CandidateName } from "./RaceTable";
 
@@ -165,11 +166,11 @@ function TierHeader({ label, count }: { label: string; count: number }) {
   );
 }
 
-function raceHref(basePath: string, race: RaceForecast): string {
+function raceHref(basePath: string, race: ForecastedRace): string {
   return `${basePath}/${(basePath === "/house" ? race.name : race.id).toLowerCase().replace(/-2$/, "2")}`;
 }
 
-function isSpecialRace(race: RaceForecast): boolean {
+function isSpecialRace(race: ForecastedRace): boolean {
   return !!race.electionType?.toLowerCase().includes("special");
 }
 
@@ -202,7 +203,7 @@ function SpecialBadge() {
   );
 }
 
-function LedgerRow({ race, basePath, showSpecialBadge }: { race: RaceForecast; basePath: string; showSpecialBadge?: boolean }) {
+function LedgerRow({ race, basePath, showSpecialBadge }: { race: ForecastedRace; basePath: string; showSpecialBadge?: boolean }) {
   const margin = race.margin ?? 0;
   const rating = marginToRating(margin);
   return (
@@ -244,7 +245,7 @@ function DesktopTierBlock({
   showSpecialBadge,
 }: {
   tier: Tier;
-  races: RaceForecast[];
+  races: ForecastedRace[];
   basePath: string;
   showSpecialBadge?: boolean;
 }) {
@@ -295,7 +296,7 @@ export function KeyRaces({
   showSpecialBadge = false,
   count = 8,
 }: {
-  races: RaceForecast[];
+  races: ForecastedRace[];
   basePath: string;
   showSpecialBadge?: boolean;
   count?: number;
@@ -321,7 +322,7 @@ export function ForecastRaceCards({
   basePath,
   showSpecialBadge = false,
 }: {
-  races: RaceForecast[];
+  races: ForecastedRace[];
   basePath: string;
   showSpecialBadge?: boolean;
 }) {
@@ -331,7 +332,7 @@ export function ForecastRaceCards({
     [races]
   );
   const byTier = useMemo(() => {
-    const groups: Record<Tier, RaceForecast[]> = { "Toss-Up": [], Lean: [], Likely: [], Safe: [] };
+    const groups: Record<Tier, ForecastedRace[]> = { "Toss-Up": [], Lean: [], Likely: [], Safe: [] };
     for (const r of sorted) groups[tierOf(marginToRating(r.margin ?? 0))].push(r);
     groups.Safe = [...groups.Safe].sort((a, b) => a.name.localeCompare(b.name));
     return groups;

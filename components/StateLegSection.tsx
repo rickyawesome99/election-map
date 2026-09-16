@@ -141,7 +141,7 @@ function SelectedDistrictPanel({
                     {c.name}
                     <span className="ml-1 font-bold">({c.party})</span>
                   </span>
-                  <span className="shrink-0 tabular-nums" style={{ color: "var(--app-text-muted)" }}>
+                  <span className="shrink-0 tabular-nums" style={{ color: PARTY_COLOR[c.party] }}>
                     {c.votes.toLocaleString()}
                   </span>
                 </div>
@@ -152,7 +152,7 @@ function SelectedDistrictPanel({
               {buckets.map(([party, votes]) => (
                 <span key={party} className="whitespace-nowrap">
                   <span className="font-semibold" style={{ color: PARTY_COLOR[party] }}>{party}</span>{" "}
-                  <span className="tabular-nums" style={{ color: "var(--app-text-primary)" }}>{votes.toLocaleString()}</span>
+                  <span className="tabular-nums" style={{ color: PARTY_COLOR[party] }}>{votes.toLocaleString()}</span>
                 </span>
               ))}
               {/* Rides the vote line rather than taking one of its own — two numbers and a year

@@ -4,7 +4,8 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
-import type { RaceForecast } from "@/data/forecastData";
+import type {  } from "@/data/forecastData";
+import type { ForecastedRace } from "@/lib/forecast";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { getLandMaskFips, StateLandMask, StateLandMaskDefinition } from "./StateLandMask";
 
@@ -47,13 +48,13 @@ export default function StateDistrictMap({
   selected,
   onSelect,
 }: {
-  houseRaces: RaceForecast[];
+  houseRaces: ForecastedRace[];
   stateAbbr: string;
   stateName: string;
-  selected: RaceForecast | null;
-  onSelect: (race: RaceForecast | null) => void;
+  selected: ForecastedRace | null;
+  onSelect: (race: ForecastedRace | null) => void;
 }) {
-  const [hovered, setHovered] = useState<RaceForecast | null>(null);
+  const [hovered, setHovered] = useState<ForecastedRace | null>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [mapSize, setMapSize] = useState({ w: 0, h: 0 });
   const [mapKey, setMapKey] = useState(0);

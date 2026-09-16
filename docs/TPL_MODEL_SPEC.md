@@ -21,6 +21,16 @@ TPL = recency- and coverage-weighted aggregate of NMs, 2016–2025, odd years in
 Centered TPL = TPL − median of the 50 state TPLs
 ```
 
+**Margin basis.** Every margin in the model is `repPct − demPct` where each share is
+a **percent of the full total vote**, third parties included — never a two-party
+share. This is what `presPastResults`, the House/Senate/Governor `pastResults` and the
+county datasets have always carried, and what the `fragmented` eligibility test
+(`demPct + repPct < 90`) depends on. Two places used to diverge and were corrected
+(2026-09-15): `districtPresidentialData`, whose generator divided by `dem + rep`, and
+the State Legislature chamber aggregate, which divided by summed `demVotes + repVotes`
+instead of summed `totalVotes`. Both now use the full total. The change is largest in
+2016, where a ~6% third-party vote compresses margins 1–2 points versus two-party.
+
 Candidate quality is deliberately **not** a term: outlier candidates are
 Huber-downweighted (see Robustness), and their residuals are the raw material
 for the future WAR layer.
@@ -117,6 +127,39 @@ estimated with this strip already applied, so the two terms partition cleanly.
   carries the same number. Races with a side missing render as TBD. The generator
   also emits `fundraisingSources` (current cycle only) for the attribution line.
 
+## Step 3b — Boundary shift (BS pts, District TPL only)
+
+A House margin is a fact about the map that race was run on; District TPL is a
+property of the 2026 map. Reconstructing the race on today's lines is impossible
+in principle — today's NC-14 is assembled from pieces of three 2022 districts,
+each of which held a *different* contest — so the race is relocated by the
+presidential delta between the two maps instead:
+
+```
+BS  = pres_P(2026 lines) − pres_P(lines used in year Y)   (same election P, two maps)
+NM  = Raw + IF + FF + BS + ENV
+```
+
+`P` is the election contemporaneous with that map: 2016 and 2018 House races are
+scored against 2016, 2020 and 2022 against 2020, 2024 against 2024. The old-lines
+figures are `data/presByBoundaryVintage.ts`; the 2026 side is
+`districtPresidentialData`. What transfers is performance **relative to the
+presidential baseline**, not the margin — Jackson's D+15.4 on D+16.4 turf becomes
+R+17.1 on today's R+16.1 NC-14.
+
+Relocated rows are downweighted by how far they moved,
+`weight = 1 / (1 + (|shift| / BS_WEIGHT_K)²)` with `BS_WEIGHT_K = 10`, multiplied
+into the Huber factor. The uniform shift assumes performance-vs-baseline is
+constant across the district's territory, which fails hardest where the shift is
+largest (a member's home-county overperformance does not transfer to voters they
+never represented). Unmoved races — 266 of 435 in the 2022 era, 301 in 2024 —
+keep full weight. **`BS_WEIGHT_K` is a designed value, not calibrated**:
+`tplBacktest`/`tplCalibrate` exercise only `calculateStateModel`, so there is no
+district-level target to fit it against; doing so needs a district holdout.
+
+This replaced the old `r.year >= eraStart` filter, which discarded 1,700 of 2,154
+House rows and left 183 districts presidential-only. `eraStart` is now display-only.
+
 ## Step 4 — Environment & elasticity (`getTplFit()` in `lib/tplCompute.ts`)
 
 Huber-weighted alternating least squares over the full eligible panel
@@ -197,9 +240,8 @@ reference (post-Phase-4): 2024-President NM MAE 3.02 (pres-only baseline 1.93),
 ## Scope notes
 
 - **District TPL** (Phase 6) shares the state pipeline: district presidential
-  results (2016/2020/2024, current boundaries) + the district's House races from
-  its current boundary era only (a district redrawn for 2026 is presidential-only
-  until new-map results exist), with additive IF/FF strips, the parent state's
+  results (2016/2020/2024, current boundaries) + **every** House race 2016–2024,
+  with additive IF/FF/**BS** strips, the parent state's
   β*, the calibrated decay/coverage aggregation and two-pass Huber weighting.
   Ineligible House races are skipped (the presidential rows already carry the
   district's lean). Same scale as State TPL — House and Senate/Governor
@@ -296,3 +338,103 @@ reference (post-Phase-4): 2024-President NM MAE 3.02 (pres-only baseline 1.93),
 | `components/RaceDetailSections.tsx` | Race page sections, incl. Fundraising + Forecast Calculation |
 | `components/TplModelPage.tsx` | Ledger UI (β* popup, E strip, Wt column) |
 | `components/CountyTplCard.tsx` | County ledger card |
+
+## Forward forecast (2026) — Phase 0 and Phase 1 of the revamp (2026-09-16)
+
+- **Derived forecast fields.** `lib/forecast.ts` (`forecastRace`, `senateForecasts` /
+  `governorForecasts` / `houseForecasts`, `seatTotals`) is the single source of a
+  2026 race's projected margin, win probability and rating. `data/forecastData.ts`
+  no longer carries `probability`, `margin`, `rating` or `history`; the CSV
+  `prob_dem` / `proj_*` columns are ignored by `data-entry/build.js`. Rating =
+  `marginToRating(margin)`; probability = `marginToProbability(margin)` (interim
+  logistic, to be replaced by per-office spreads from the forward backtest).
+  Overview seat tiles show the called count and the expected count (Σ P(D)).
+- **Forward backtest.** `scripts/forwardBacktest.ts` predicts every eligible
+  Senate / Governor race (and House races on stable lines) in 2018 / 2020 / 2022 /
+  2024 from a fit on years ≤ Y−1 (`scripts/tplWindowFit.ts`, shared with
+  `tplCalibrate.ts`), with no shift removal. Environment modes: `fitted` (oracle),
+  `gb` (the site's current rule), `mapped` (E = a + b·GB_mid_sept, leave-one-year-out),
+  `final`. Inputs in `data-entry/national_environment_history.csv` (mid-September
+  values approximate, flagged). First run: E ≈ +3.6 + 1.05 × GB_sept (R² .91);
+  pooled total sd Senate ≈ 8, House ≈ 7.4, Governor ≈ 20 (in-sample); the raw-GB
+  rule is R-biased in every year (actual more R than predicted by 0.7–5 pts).
+
+## Forward forecast — Phase 2 (environment) and Phase 3 (uncertainty), 2026-09-16
+
+- **Environment term** (`getEnvironmentModel` / `getNationalEnvironment` /
+  `effectiveEnvironment` in `lib/tplCompute.ts`). The generic ballot is converted
+  onto E's scale structurally: `E = c + s × PV` fitted from the model's own E(y)
+  against the House popular vote (2016–2024: c ≈ +0.6, s ≈ 0.73 — E is centered
+  on the period mean and damped across offices). Polling error is uncertainty,
+  not a prediction: `PV_hat = GB + ENV_MISS_SHRINK (0.5) × mean(PV − GB_final)`
+  (mean miss ≈ R+1.3), and `σ_E = |s| × sqrt(sd(miss)² + (horizon × rms(drift))²)`
+  with horizon = days to election / 49. Race term = β* × E_hat. Inputs:
+  `data-entry/national_environment_history.csv` → `data/nationalEnvironmentHistory.ts`
+  (`node data-entry/build-national-environment.js`); mid-September values are
+  approximate and flagged.
+- **Uncertainty** (`raceSigma`, `winProbabilityD`; constants in
+  `FORECAST_CONSTANTS`). `σ_race² = (β* × σ_E)² + RACE_SIGMA[office]²`, RACE_SIGMA =
+  robust within-year spread from the forward backtest (H 5.7 / S 6.6 / G 9.2).
+  P(D) = Φ(−margin / σ_race), clamped 0.5–99.5 %; 80 % interval = margin ± 1.28 σ.
+  The old logistic (`marginToProbability`) survives only as the harness baseline.
+- **Chambers** (`simulateChamber` / `getChamberSimulations` in `lib/forecast.ts`):
+  5,000 seeded simulations, one national shock per run (β* × σ_E) plus
+  independent race noise; expected seats, 80 % seat interval and control
+  probability (House ≥ 218 D, Senate ≥ 51 D since the tie goes to the vice
+  president). Shown on the overview seat tiles; race pages show P(D) and the
+  80 % range under the Forecast Calculation ledger.
+- **Backtest of the rule** (`scripts/forwardBacktest.ts --env struct`, leave-one-
+  year-out): pooled MAE S 5.96 / G 10.95 / H 5.18 (raw-GB rule: 6.30 / 11.29 / 5.87
+  on the same rows); 80 % coverage under the Phase 3 spreads S 76 % / G 73 % /
+  H 78 %, i.e. slightly overconfident. Known gap: House shows an R-ward bias of
+  +1.8 (2022) / +3.1 (2024) under the structural rule — House-specific national
+  offset and the fixed incumbency prior are the suspects (Phase 7).
+
+## Forward forecast — Phase 4 (candidate quality), 2026-09-16
+
+- **Term.** `candidateQuality(race)` in `lib/tplCompute.ts`: quality pts (R-positive)
+  = `QUALITY_WEIGHT[office] × (effect_R − effect_D)`, where each nominee's effect is
+  their ridge track record from `computeCandidateEffects()` — solved "as of 2026"
+  over every scorable race through 2025 (recency decay 0.8/yr, λ = 1, pooled
+  across offices by state|party|exact normalized name), against an expected margin
+  that includes the **full** money gap, so money stays a separate forward term
+  (decision 2026-09-16). No record = replacement level (0). Nominee names must match
+  the historical spelling exactly; surname fallback was rejected (it paired John E.
+  Sununu with Chris Sununu's races). Coverage: 52 of 71 Senate/Governor races and
+  346 of 435 House races have a non-zero term.
+- **Removed.** The manual WQ/LQ quality tiers, and `data/manualOverrides.ts`
+  (VT +60 / NH +20 governor overrides — Phil Scott's effect is now +35.6 from his
+  own record).
+- **Weights** (`FORECAST_CONSTANTS.QUALITY_WEIGHT` H 0.75 / S 1.0 / G 1.5) from the
+  leakage-free sweep in `scripts/forwardBacktest.ts --quality` (effects rebuilt as
+  of each test year from races ≤ Y−1 on the window fit). Pooled MAE with quality:
+  S 5.69 / G 9.38 / H 4.83 (without: 5.96 / 10.95 / 5.18). RACE_SIGMA re-estimated
+  to H 5.3 / S 6.1 / G 8.7; 80 % coverage 75–77 % (spreads ~7 % tight).
+- **Open.** Appointed incumbents (Husted OH) get the full fitted incumbency;
+  Layer B observable priors (prior office, idiosyncratic money) not built; the
+  WAR tab still uses structural money for display.
+
+## Forward forecast — appointed incumbents, uncontested races, observable prior (2026-09-16)
+
+- **Appointed / successor incumbents.** `incumbent` = `R*` / `D*` in the past-results
+  and seat CSVs marks an incumbent who has never won the seat (Candidate.appointed,
+  PastResult.demAppointed/repAppointed). Both directions scale that seat's incumbency
+  by `FORECAST_CONSTANTS.APPOINTED_INCUMBENCY_SHARE`, now **0**: in
+  `forwardBacktest --appointed` 8 of the 9 historical cases (Smith, Hyde-Smith,
+  McSally, Loeffler, Padilla; Ivey, Reynolds, McMaster, Hochul) ran behind an
+  open-seat generic nominee even with no incumbency credited (mean −5.6, −4.0
+  without Hochul). 2026: Husted OH, Moody FL, Graham SC. Tracking harness PASS.
+- **Uncontested races** (`contestOf` in `lib/forecast.ts`): one placeholder nominee
+  and one real one → the race is decided: P = 0.995/0.005, rating Safe, displayed
+  margin floored at ±20 toward the unopposed party, no simulation noise. Both
+  placeholders (LA-05/06 jungle) stay structural. 7 races today, all Democratic.
+- **Observable prior (Layer B, mechanism only).** `buildObservablePrior` fits race
+  residuals on the R−D difference of "won a general before while not the incumbent
+  here" and feeds the fitted value into the ridge as each candidate's shrinkage
+  target (`solveCandidateEffects(..., prior)`). Coefficient ≈ +1.3 / +2.1 in the
+  2022/2024 windows but on only 24/52 identifying races, and it raised pooled House
+  error 4.83→4.98, so `OBSERVABLE_PRIOR` is **false** until outside observables
+  (prior-office tier, state-legislative records) exist. Prior-loss flipped sign and
+  is not used.
+- Harness after this round (env=struct, LOO): pooled MAE S 5.65 / G 9.26 / H 4.83;
+  RACE_SIGMA H 5.3 / S 6.1 / G 9.0. Ohio Senate now R+2.4 (Brown 35 %).

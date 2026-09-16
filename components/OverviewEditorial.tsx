@@ -12,17 +12,15 @@ import { statesData } from "@/data/statesData";
 import {
   DARK_THEME,
   LIGHT_THEME,
-  projectedGovernorData,
-  projectedHouseData,
-  projectedSenateData,
   SEAT_HOLDOVERS,
   type Theme,
 } from "./ForecastMap";
+import { governorForecasts, houseForecasts, senateForecasts } from "@/lib/forecast";
 import PollingAverageCard from "./PollingAverageCard";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 type MapMode = "house" | "senate" | "governor";
-type ForecastRace = (typeof projectedHouseData)[number];
+type ForecastRace = (typeof houseForecasts)[number];
 type GeoFeature = { rsmKey: string; id?: string | number; properties?: Record<string, string | undefined> };
 
 function formatMargin(margin: number) {
@@ -50,9 +48,9 @@ export default function OverviewEditorial() {
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
   const gb = computeGenericBallotAverage(new Date());
   const approval = computeTrumpApprovalAverage(new Date());
-  const house = seatTotals(projectedHouseData, SEAT_HOLDOVERS.house);
-  const senate = seatTotals(projectedSenateData, SEAT_HOLDOVERS.senate);
-  const governor = seatTotals(projectedGovernorData, SEAT_HOLDOVERS.governor);
+  const house = seatTotals(houseForecasts, SEAT_HOLDOVERS.house);
+  const senate = seatTotals(senateForecasts, SEAT_HOLDOVERS.senate);
+  const governor = seatTotals(governorForecasts, SEAT_HOLDOVERS.governor);
 
   const stateMargins = useMemo(() => {
     return new Map(statesData.map((state) => [state.name, calculateStateTpl(state.abbr, state.name)]));
@@ -60,9 +58,9 @@ export default function OverviewEditorial() {
 
   const keyRaces = useMemo(() => {
     const withType: { race: ForecastRace; type: MapMode }[] = [
-      ...projectedSenateData.map((race) => ({ race, type: "senate" as const })),
-      ...projectedGovernorData.map((race) => ({ race, type: "governor" as const })),
-      ...projectedHouseData.map((race) => ({ race, type: "house" as const })),
+      ...senateForecasts.map((race) => ({ race, type: "senate" as const })),
+      ...governorForecasts.map((race) => ({ race, type: "governor" as const })),
+      ...houseForecasts.map((race) => ({ race, type: "house" as const })),
     ];
     return withType.sort((a, b) => Math.abs(a.race.margin) - Math.abs(b.race.margin)).slice(0, 5);
   }, []);

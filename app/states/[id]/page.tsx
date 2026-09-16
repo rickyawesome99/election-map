@@ -1,6 +1,7 @@
 import { statesData } from "@/data/statesData";
-import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, housePastResults, senateCurrent, presPastResults, houseDelegationHistory, stateLegData, PresResult, RaceForecast, NoElectionEntry, electionYear } from "@/data/forecastData";
-import { computeProjectedMargin, calculateStateTpl } from "@/lib/tplCompute";
+import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, housePastResults, senateCurrent, presPastResults, houseDelegationHistory, stateLegData, PresResult, NoElectionEntry, electionYear } from "@/data/forecastData";
+import { calculateStateTpl } from "@/lib/tplCompute";
+import { forecastRace, type ForecastedRace } from "@/lib/forecast";
 import BackButton from "@/components/BackButton";
 import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
@@ -51,7 +52,7 @@ function IncumbentCard({ entry, href, label }: { entry: NoElectionEntry; href: s
   );
 }
 
-function ElectionCard({ race, href, label }: { race: RaceForecast; href: string; label: string }) {
+function ElectionCard({ race, href, label }: { race: ForecastedRace; href: string; label: string }) {
   const dem = race.candidates?.dem;
   const rep = race.candidates?.rep;
   const isD = race.margin <= 0;
@@ -96,7 +97,7 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
   );
 }
 
-function HouseDistrictRow({ race }: { race: RaceForecast }) {
+function HouseDistrictRow({ race }: { race: ForecastedRace }) {
   const parts = race.name.split("-");
   const distNum = parts[1];
   const isAL = distNum === "AL";
@@ -180,10 +181,10 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
   const houseRaces = houseData.filter((r) => r.state === state.name);
 
   // Projected 2026 margins (structural forecast blended with RCP Average polling) for all active races on this state page
-  const projectedHouseRaces = houseRaces.map(r => ({ ...r, margin: computeProjectedMargin(r) }));
-  const projectedGovernorRace = governorRace ? { ...governorRace, margin: computeProjectedMargin(governorRace) } : null;
-  const projectedSenateSeat1Race = senateSeat1Race ? { ...senateSeat1Race, margin: computeProjectedMargin(senateSeat1Race) } : null;
-  const projectedSenateSeat2Race = senateSeat2Race ? { ...senateSeat2Race, margin: computeProjectedMargin(senateSeat2Race) } : null;
+  const projectedHouseRaces = houseRaces.map(forecastRace);
+  const projectedGovernorRace = governorRace ? forecastRace(governorRace) : null;
+  const projectedSenateSeat1Race = senateSeat1Race ? forecastRace(senateSeat1Race) : null;
+  const projectedSenateSeat2Race = senateSeat2Race ? forecastRace(senateSeat2Race) : null;
   const senatePastResults = [
     ...(senateSeat1Race?.pastResults ?? senateSeat1NoEl?.pastResults ?? []).map((r) => ({ ...r, seat: 1 as const })),
     ...(senateSeat2Race?.pastResults ?? senateSeat2Holdover?.pastResults ?? []).map((r) => ({ ...r, seat: 2 as const })),
@@ -196,7 +197,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
     + (governorRace ? 1 : 0);
 
   // Helper: current party from a race — explicit incumbent flag first, then margin sign as fallback
-  function raceParty(race: RaceForecast): "D" | "R" | "I" {
+  function raceParty(race: ForecastedRace): "D" | "R" | "I" {
     if (race.seatParty) return race.seatParty;
     if (race.candidates?.dem.incumbent) return "D";
     if (race.candidates?.rep.incumbent) return "R";
@@ -230,8 +231,8 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
 
   // House current composition — use 2024 delegation history if available, else infer from incumbents
   const houseDel2024 = stateDelegationHistory.find((e) => e.year === 2024);
-  const houseDemCurrent = houseDel2024 ? houseDel2024.demSeats : houseRaces.filter((r) => raceParty(r) === "D").length;
-  const houseRepCurrent = houseDel2024 ? houseDel2024.repSeats : houseRaces.filter((r) => raceParty(r) === "R").length;
+  const houseDemCurrent = houseDel2024 ? houseDel2024.demSeats : projectedHouseRaces.filter((r) => raceParty(r) === "D").length;
+  const houseRepCurrent = houseDel2024 ? houseDel2024.repSeats : projectedHouseRaces.filter((r) => raceParty(r) === "R").length;
 
   // House projected composition (2026 forecast, from projected margins)
   const houseDemProj = projectedHouseRaces.filter((r) => r.margin <= 0).length;
@@ -251,7 +252,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
   const stateSenateSeats = isUnicameralState ? null : latestChamberSeats(stateLegSenateEntries, "Senate");
 
   // Governor current incumbent party
-  const govParty: "D" | "R" | "I" | null = governorRace ? raceParty(governorRace) : (governorNoEl?.party ?? null);
+  const govParty: "D" | "R" | "I" | null = projectedGovernorRace ? raceParty(projectedGovernorRace) : (governorNoEl?.party ?? null);
 
   // Presidential past results for this state (handles ME/NE congressional-district allocations)
   const stateAbbr = state.abbr;

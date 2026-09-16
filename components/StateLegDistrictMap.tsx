@@ -435,18 +435,23 @@ export default function StateLegDistrictMap({
                             >
                               {c.name}
                             </span>
-                            <span className="font-semibold tabular-nums shrink-0" style={{ fontSize: 11 }}>{c.votes.toLocaleString()}</span>
+                            <span
+                              className="font-semibold tabular-nums shrink-0"
+                              style={{ fontSize: 11, color: `var(--party-${c.party === "D" ? "dem" : c.party === "R" ? "rep" : "ind"})` }}
+                            >
+                              {c.votes.toLocaleString()}
+                            </span>
                           </div>
                         ))
                       ) : (
                         <>
                           <div className="flex items-baseline justify-between gap-2">
                             <span style={{ fontSize: 11, color: "var(--party-dem)" }}>Democratic</span>
-                            <span className="font-semibold tabular-nums" style={{ fontSize: 11 }}>{(hoveredResult.demVotes ?? 0).toLocaleString()}</span>
+                            <span className="font-semibold tabular-nums" style={{ fontSize: 11, color: "var(--party-dem)" }}>{(hoveredResult.demVotes ?? 0).toLocaleString()}</span>
                           </div>
                           <div className="flex items-baseline justify-between gap-2">
                             <span style={{ fontSize: 11, color: "var(--party-rep)" }}>Republican</span>
-                            <span className="font-semibold tabular-nums" style={{ fontSize: 11 }}>{(hoveredResult.repVotes ?? 0).toLocaleString()}</span>
+                            <span className="font-semibold tabular-nums" style={{ fontSize: 11, color: "var(--party-rep)" }}>{(hoveredResult.repVotes ?? 0).toLocaleString()}</span>
                           </div>
                           {!!hoveredResult.othVotes && (
                             <div className="flex items-baseline justify-between gap-2">
@@ -474,11 +479,11 @@ export default function StateLegDistrictMap({
                   <div className="flex flex-col gap-0.5">
                     <div className="flex items-baseline justify-between gap-2">
                       <span style={{ fontSize: 11, color: "var(--party-rep)" }}>Trump</span>
-                      <span className="font-semibold tabular-nums" style={{ fontSize: 11 }}>{hoveredPres.repPct.toFixed(1)}%</span>
+                      <span className="font-semibold tabular-nums" style={{ fontSize: 11, color: "var(--party-rep)" }}>{hoveredPres.repPct.toFixed(1)}%</span>
                     </div>
                     <div className="flex items-baseline justify-between gap-2">
                       <span style={{ fontSize: 11, color: "var(--party-dem)" }}>Harris</span>
-                      <span className="font-semibold tabular-nums" style={{ fontSize: 11 }}>{hoveredPres.demPct.toFixed(1)}%</span>
+                      <span className="font-semibold tabular-nums" style={{ fontSize: 11, color: "var(--party-dem)" }}>{hoveredPres.demPct.toFixed(1)}%</span>
                     </div>
                     <div className="mt-1 pt-1 font-bold tabular-nums" style={{ fontSize: 11, color: hoveredPres.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)", borderTop: "1px solid var(--app-border)" }}>
                       {fmtMargin(hoveredPres.margin)}

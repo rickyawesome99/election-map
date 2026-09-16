@@ -4,25 +4,16 @@ import { useState, useEffect, useRef, useMemo, type CSSProperties } from "react"
 import { useRouter } from "next/navigation";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale";
-import { senateData, governorData, houseData, senateNoElection, governorNoElection, RaceForecast, RaceType, NoElectionEntry, senateCurrent, pres2024, statePvi, houseDelegationHistory, stateLegData } from "@/data/forecastData";
+import { senateNoElection, governorNoElection, RaceType, NoElectionEntry, senateCurrent, pres2024, statePvi, houseDelegationHistory, stateLegData } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
-import { computeProjectedMargin } from "@/lib/tplCompute";
+import { senateForecasts, governorForecasts, houseForecasts, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastedRace } from "@/lib/forecast";
 import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
 import { RaceTypeHeader, ForecastHero, ForecastRaceCards, KeyRaces } from "./ForecastLedger";
 
-// Both computeProjectedMargin and forecastData.margin are now R-positive — no negation needed
-export const projectedSenateData = senateData.map(r => ({ ...r, margin: computeProjectedMargin(r) }));
-export const projectedGovernorData = governorData.map(r => ({ ...r, margin: computeProjectedMargin(r) }));
-export const projectedHouseData = houseData.map(r => ({ ...r, margin: computeProjectedMargin(r) }));
 
 // Non-2026 seats already held by each party (Senate classes not up this cycle, Governor terms not up) —
 // added to projected win counts to get full chamber totals.
-export const SEAT_HOLDOVERS = {
-  senate: { dem: 34, rep: 31 },
-  governor: { dem: 6, rep: 8 },
-  house: { dem: 0, rep: 0 },
-};
-export const TOTAL_SEATS_BY_TYPE = { senate: 100, governor: 50, house: 435 };
+export { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE } from "@/lib/forecast";
 import Sidebar from "./Sidebar";
 import NationalCountyMap from "./NationalCountyMap";
 import StatesOverviewMap, { type MapMode, type StateRow } from "./StatesOverviewMap";
@@ -47,7 +38,7 @@ type GeoFeature = {
   properties?: Record<string, string | undefined>;
 };
 
-function racePartyOverview(race: RaceForecast): "D" | "R" | "I" {
+function racePartyOverview(race: ForecastedRace): "D" | "R" | "I" {
   if (race.seatParty) return race.seatParty;
   if (race.candidates?.dem.incumbent) return "D";
   if (race.candidates?.rep.incumbent) return "R";
@@ -55,7 +46,7 @@ function racePartyOverview(race: RaceForecast): "D" | "R" | "I" {
 }
 
 const stateRows: StateRow[] = statesData.map((state) => {
-  const govRace = governorData.find((r) => r.id === state.abbr);
+  const govRace = governorForecasts.find((r) => r.id === state.abbr);
   const govNoEl = !govRace ? governorNoElection.find((e) => e.abbr === state.abbr) : null;
   const govParty: "D" | "R" | "I" | null = govRace ? racePartyOverview(govRace) : (govNoEl?.party ?? null);
   const [senSeat1, senSeat2] = senateCurrent[state.abbr] ?? ["R", "R"];
@@ -63,7 +54,7 @@ const stateRows: StateRow[] = statesData.map((state) => {
   const senateDem = seats.filter((p) => p === "D").length;
   const senateRep = seats.filter((p) => p === "R").length;
   const senateInd = seats.filter((p) => p === "I").length;
-  const houseRaces = houseData.filter((r) => r.state === state.name);
+  const houseRaces = houseForecasts.filter((r) => r.state === state.name);
   const del2024 = (houseDelegationHistory[state.name] ?? []).find((e) => e.year === 2024);
   const houseDem = del2024 ? del2024.demSeats : houseRaces.filter((r) => racePartyOverview(r) === "D").length;
   const houseRep = del2024 ? del2024.repSeats : houseRaces.filter((r) => racePartyOverview(r) === "R").length;
@@ -164,12 +155,12 @@ type ModelSubTab = "state" | "district" | "table" | "districtTable" | "war";
 
 export default function ForecastMap({ activeTab, raceType = "senate", modelSubTab }: { activeTab: TopLevelTab; raceType?: RaceType; modelSubTab?: ModelSubTab }) {
   const router = useRouter();
-  const [selected, setSelected] = useState<RaceForecast | null>(null);
+  const [selected, setSelected] = useState<ForecastedRace | null>(null);
   const [selectedNoElection, setSelectedNoElection] = useState<NoElectionEntry | null>(null);
   const [selectedStateRow, setSelectedStateRow] = useState<StateRow | null>(null);
   const [statesMode, setStatesMode] = useState<MapMode>("legislature");
   const [statesView, setStatesView] = useState<"map" | "cartogram">("map");
-  const [hovered, setHovered] = useState<RaceForecast | null>(null);
+  const [hovered, setHovered] = useState<ForecastedRace | null>(null);
   const [hoveredNoElection, setHoveredNoElection] = useState<NoElectionEntry | null>(null);
   const [mousePos, setMousePos] = useState<{ x: number; y: number; containerW: number; containerH: number }>({ x: 0, y: 0, containerW: 800, containerH: 520 });
   const touchStartRef = useRef<{ x: number; y: number } | null>(null);
@@ -218,7 +209,7 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
   const isHouse = activeTab === "forecast" && raceType === "house";
   const geoUrl = isHouse ? HOUSE_DISTRICTS_2026_URL : STATES_URL;
-  const data = raceType === "house" ? projectedHouseData : raceType === "senate" ? projectedSenateData : projectedGovernorData;
+  const data = raceType === "house" ? houseForecasts : raceType === "senate" ? senateForecasts : governorForecasts;
   const forecastMapKey = `${geoUrl}:${raceType}:${mapKey}`;
   const demSeats = SEAT_HOLDOVERS[raceType].dem + data.filter((race) => race.margin <= 0).length;
   const repSeats = SEAT_HOLDOVERS[raceType].rep + data.filter((race) => race.margin > 0).length;
@@ -230,7 +221,7 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
     [data]
   );
 
-  function findMatch(geo: GeoFeature): RaceForecast | undefined {
+  function findMatch(geo: GeoFeature): ForecastedRace | undefined {
     if (isHouse) {
       const geoId = geo.properties?.GEOID as string | undefined;
       if (!geoId) return undefined;
@@ -885,9 +876,9 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
             )}
             {activeTab === "forecast" && (
               <div className="mt-4 md:mt-3">
-                {raceType === "house" && <ForecastRaceCards races={projectedHouseData} basePath="/house" />}
-                {raceType === "senate" && <ForecastRaceCards races={projectedSenateData} basePath="/senate" showSpecialBadge />}
-                {raceType === "governor" && <ForecastRaceCards races={projectedGovernorData} basePath="/governor" />}
+                {raceType === "house" && <ForecastRaceCards races={houseForecasts} basePath="/house" />}
+                {raceType === "senate" && <ForecastRaceCards races={senateForecasts} basePath="/senate" showSpecialBadge />}
+                {raceType === "governor" && <ForecastRaceCards races={governorForecasts} basePath="/governor" />}
               </div>
             )}
             {activeTab === "model" && <TplModelPage initialSubTab={modelSubTab} />}

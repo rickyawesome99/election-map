@@ -1,0 +1,6 @@
+year,gb_mid_sept,gb_final,approval_net_mid_sept,approval_net_final,president_party,house_pv_margin,notes
+2016,-2.5,-0.6,5,7.8,D,1.1,"gb_final and approval_net_final from data/popVoteData.ts; mid-September values are APPROXIMATE from memory of the RCP averages around Sept 15 — verify against the RCP/538 archives before trusting the mapped-environment numbers"
+2018,-7.5,-7.3,-10.5,-9.7,R,-8.6,"approximate mid-Sept values; see 2016 note"
+2020,-6.5,-6.8,-8,-6.6,R,-3.0,"approximate mid-Sept values; see 2016 note"
+2022,-0.5,2.5,-11,-12.5,D,2.7,"approximate mid-Sept values (RCP flipped to a small D lead in mid-September 2022); see 2016 note"
+2024,-1.0,0.3,-15,-15.2,D,2.6,"approximate mid-Sept values; see 2016 note"

@@ -7,7 +7,8 @@ import { AboutRaceCard, CandidatesLedgerSection, CurrentIncumbentLedgerRow, Fore
 import StateCountyMap from "@/components/StateCountyMap";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
-import { calculateStateTpl, effectiveGenericBallot, marginToProbability, computeIncumbentPts, computeRcpMargin, computeProjectedMargin, computeRaceFundraisingPts, raceFundraising2026, raceFundraisingSource2026 } from "@/lib/tplCompute";
+import { calculateStateTpl, effectiveEnvironment, computeIncumbentPts, computeRcpMargin, computeProjectedMargin, computeRaceFundraisingPts, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
+import { forecastRace } from "@/lib/forecast";
 import BackButton from "@/components/BackButton";
 
 const GENERAL_ELECTION = "November 3, 2026";
@@ -56,7 +57,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const race = senateData.find((r) => senateUrlId(r.id) === id.toLowerCase());
   if (race) return {
     title: `${race.name} Senate Race — ${electionYear} Forecast`,
-    description: `${electionYear} Senate forecast for ${race.name}: ${race.rating}, ${Math.round(race.probability * 100)}% Democratic win probability`,
+    description: `${electionYear} Senate forecast for ${race.name}: ${forecastRace(race).rating}, ${Math.round(forecastRace(race).probability * 100)}% Democratic win probability`,
   };
   const noEl = senateNoElection.find((e) => e.abbr.toLowerCase() === id.toLowerCase());
   if (noEl) return { title: `${noEl.state} Senate — No Election in ${electionYear}` };
@@ -250,14 +251,16 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
     ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null
     : null;
   const incumbentParty = (incumbent?.party === "D" || incumbent?.party === "R") ? incumbent.party : null;
-  const incumbentPts = computeIncumbentPts("S", incumbentParty);
+  const incumbentPts = computeIncumbentPts("S", incumbentParty, incumbent?.appointed ?? false);
   const fundraising = raceFundraising2026("senate", race.id);
   const fundraisingSource = raceFundraisingSource2026("senate", race.id);
   const fundraisingPts = computeRaceFundraisingPts("senate", race.id);
-  const gb = effectiveGenericBallot(abbr);
+  const gb = effectiveEnvironment(abbr);
   const rcpMargin = computeRcpMargin(race.rcpDem, race.rcpRep);
   const projectedMargin = computeProjectedMargin(race);
-  const demPct = Math.round(marginToProbability(projectedMargin) * 100);
+  const forecast = forecastRace(race);
+  const quality = candidateQuality(race);
+  const demPct = Math.round(forecast.probability * 100);
   const repPct = 100 - demPct;
   const forecastRating = marginToRating(projectedMargin);
   const { bg, text } = getRatingColors(forecastRating);
@@ -418,9 +421,12 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
               tplHref={`/model/state?modelState=${encodeURIComponent(abbr)}`}
               incumbentPts={incumbentPts}
               fundraisingPts={fundraising ? fundraisingPts : null}
-              candidatePts={null}
+              candidatePts={quality.pts}
+              candidateDetail={quality}
               pollingAvg={rcpMargin}
               projectedMargin={projectedMargin}
+              probabilityD={forecast.probability}
+              interval80={forecast.interval80}
             />
           </section>
 
