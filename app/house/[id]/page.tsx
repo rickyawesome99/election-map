@@ -7,11 +7,12 @@ import { candidatePhotos } from "@/lib/candidatePhotos";
 import DistrictMiniMap from "@/components/DistrictMiniMap";
 import DemographicsStrip from "@/components/DemographicsStrip";
 import { districtDemographics, REDRAWN_SINCE_ACS_VINTAGE } from "@/data/demographics";
-import { AboutRaceCard, CandidatesLedgerSection, ForecastCalculationCard, FundraisingLedgerSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, LedgerSectionHead, PastElectionResultsSection } from "@/components/RaceDetailSections";
+import { AboutRaceCard, CandidatesLedgerSection, ForecastCalculationCard, FundraisingLedgerSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
-import { calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts, computeRcpMargin, computeProjectedMargin, computeRaceFundraisingPts, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
+import { calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, computeRaceFundraisingPts, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
 import { forecastRace } from "@/lib/forecast";
+import { alignedParty } from "@/data/raceEligibility";
 import BackButton from "@/components/BackButton";
 import { senateCandidatesByYear, specialSenateCandidatesByYear } from "@/data/senateCandidatesByYear";
 import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
@@ -110,13 +111,14 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
     : "TBD";
   const districtTpl = calculateDistrictTpl(race.id);
   const districtTplId = parseInt(race.id, 10).toString();
-  const incumbentParty = (incumbentCandidate?.party === "D" || incumbentCandidate?.party === "R") ? incumbentCandidate.party : null;
+  const incumbentParty = incumbentCandidate ? alignedParty(incumbentCandidate) : null;
   const incumbentPts = computeIncumbentPts("H", incumbentParty, incumbentCandidate?.appointed ?? false);
   const fundraising = raceFundraising2026("house", race.id);
   const fundraisingSource = raceFundraisingSource2026("house", race.id);
   const fundraisingPts = computeRaceFundraisingPts("house", race.id);
   const gb = effectiveEnvironment(stateAbbr);
-  const rcpMargin = computeRcpMargin(race.rcpDem, race.rcpRep);
+  const polling = racePollingFor(race);
+  const pollMargin = polling.avg?.diff ?? null;
   const projectedMargin = computeProjectedMargin(race);
   const forecast = forecastRace(race);
   const quality = candidateQuality(race);
@@ -261,11 +263,11 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
             </div>
 
             <div className="min-w-0 px-2 sm:px-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-              <div className="text-xl font-extrabold tabular-nums sm:text-2xl" style={{ color: marginColor(rcpMargin) }}>
-                {fmtMargin(rcpMargin)}
+              <div className="text-xl font-extrabold tabular-nums sm:text-2xl" style={{ color: pollMargin == null ? "var(--app-text-very-muted)" : marginColor(pollMargin) }}>
+                {pollMargin == null ? "—" : fmtMargin(pollMargin)}
               </div>
               <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-                RCP Avg.
+                Polling Avg.
               </div>
             </div>
 
@@ -365,6 +367,13 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
             </section>
           )}
 
+          {polling.avg && race.candidates && (
+            <section>
+              <LedgerSectionHead label="Polls" meta={`${polling.avg.n} pollster${polling.avg.n === 1 ? "" : "s"} · ${Math.round(polling.weight * 100)}% of the projection`} />
+              <RacePollsSection polling={polling} demName={race.candidates.dem.name} repName={race.candidates.rep.name} />
+            </section>
+          )}
+
           <section>
             <LedgerSectionHead label="Forecast Calculation" />
             <ForecastCalculationCard
@@ -377,7 +386,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               fundraisingPts={fundraising ? fundraisingPts : null}
               candidatePts={quality.pts}
               candidateDetail={quality}
-              pollingAvg={rcpMargin}
+              polling={polling}
               projectedMargin={projectedMargin}
               probabilityD={forecast.probability}
               interval80={forecast.interval80}

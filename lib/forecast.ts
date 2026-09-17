@@ -4,8 +4,8 @@
 // win probability, spread and rating from here, so nothing on the site carries a
 // hand-entered forecast field any more (Phase 0 of the forecast revamp).
 //
-//   margin      R-positive projected margin, from computeProjectedMargin
-//               (structural model blended with the RCP average where one exists)
+//   margin      R-positive projected margin, from projectRace: the structural model
+//               blended with the race poll average by its evidence weight (Phase 5)
 //   sigma       total spread: β*(state) × national σ_E ⊕ per-office race noise
 //   probability P(Democrat wins) = normal tail of margin / sigma
 //   interval80  margin ± 1.28 σ
@@ -25,13 +25,18 @@ import {
 } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
 import { FORECAST_CONSTANTS as F } from "@/data/tplModelData";
-import { computeProjectedMargin, raceSigma, winProbabilityD, getTplFit, getNationalEnvironment } from "@/lib/tplCompute";
+import { projectRace, raceSigma, winProbabilityD, getTplFit, getNationalEnvironment } from "@/lib/tplCompute";
 import { marginToRating } from "@/lib/colorScale";
+import { alignedParty } from "@/data/raceEligibility";
 
 export type Office = "H" | "S" | "G";
 const OFFICE_OF: Record<RaceType, Office> = { house: "H", senate: "S", governor: "G" };
 
-export type Contest = "contested" | "uncontested-D" | "uncontested-R";
+// uncontested-X: the other major party fielded no nominee; same-party-X: both general-election
+// slots belong to party X (CA/WA top-two, an incumbent-vs-incumbent redraw), so the seat is X's
+// whoever wins. Both are "decided": probability pinned, rating Safe, no simulation noise.
+export type Contest = "contested" | "uncontested-D" | "uncontested-R" | "same-party-D" | "same-party-R";
+export const decidedFor = (c: Contest): "D" | "R" | null => (c === "uncontested-D" || c === "same-party-D" ? "D" : c === "uncontested-R" || c === "same-party-R" ? "R" : null);
 
 export interface ForecastFields {
   margin: number;
@@ -42,6 +47,11 @@ export interface ForecastFields {
   office: Office;
   stateAbbr: string;
   beta: number;
+  // Phase 5: the structural model margin and the poll average behind `margin`.
+  model: number;
+  pollMargin: number | null;
+  pollWeight: number;
+  pollCount: number;
   // uncontested-X: the other major party fielded no nominee (build.js placeholder name),
   // so the race is decided — probability pinned, rating Safe, no simulation noise.
   contest: Contest;
@@ -57,7 +67,12 @@ export function contestOf(race: RaceForecast): Contest {
   const repMissing = PLACEHOLDER_NOMINEE.test(c.rep.name.trim());
   if (demMissing && !repMissing) return "uncontested-R";
   if (repMissing && !demMissing) return "uncontested-D";
-  return "contested"; // both missing = nominees unknown (e.g. a jungle primary), scored structurally
+  if (demMissing && repMissing) return "contested"; // nominees unknown (e.g. a jungle primary), scored structurally
+  const pD = alignedParty(c.dem), pR = alignedParty(c.rep);
+  if (pD && pD === pR) return pD === "D" ? "same-party-D" : "same-party-R";
+  // An unaligned independent standing in for a missing party (Osborn, Achilles, Bengs…) stays
+  // contested: scored on the structural margin plus their own record (user decision 2026-09-16).
+  return "contested";
 }
 
 export type ForecastedRace = RaceForecast & ForecastFields;
@@ -71,11 +86,12 @@ export function forecastRace<T extends RaceForecast>(race: T): T & ForecastField
   const office = OFFICE_OF[race.raceType];
   const stateAbbr = stateAbbrOf(race);
   const contest = contestOf(race);
-  const structural = computeProjectedMargin(race);
-  const sigma = raceSigma(office, stateAbbr);
+  const { model, polling, margin: structural } = projectRace(race);
+  const sigma = raceSigma(office, stateAbbr, polling.weight);
+  const pollFields = { model, pollMargin: polling.avg?.diff ?? null, pollWeight: polling.weight, pollCount: polling.avg?.n ?? 0 };
   const beta = getTplFit().beta[stateAbbr]?.shrunk ?? 1;
   if (contest !== "contested") {
-    const sign = contest === "uncontested-R" ? 1 : -1;
+    const sign = decidedFor(contest) === "R" ? 1 : -1;
     const margin = sign * Math.max(UNCONTESTED_FLOOR, sign * structural);
     return {
       ...race,
@@ -87,6 +103,7 @@ export function forecastRace<T extends RaceForecast>(race: T): T & ForecastField
       office,
       stateAbbr,
       beta,
+      ...pollFields,
       contest,
     };
   }
@@ -100,6 +117,7 @@ export function forecastRace<T extends RaceForecast>(race: T): T & ForecastField
     office,
     stateAbbr,
     beta,
+    ...pollFields,
     contest,
   };
 }
@@ -185,7 +203,7 @@ export function simulateChamber(raceType: RaceType, races: ForecastedRace[] = fo
     const z = gaussian(rand) * sigmaE;
     let dem = holdover;
     for (const r of races) {
-      if (r.contest !== "contested") { if (r.contest === "uncontested-D") dem += 1; continue; }
+      if (r.contest !== "contested") { if (decidedFor(r.contest) === "D") dem += 1; continue; }
       const m = r.margin + r.beta * z + gaussian(rand) * F.RACE_SIGMA[r.office];
       if (m <= 0) dem += 1;
     }

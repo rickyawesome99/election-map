@@ -4,7 +4,7 @@ import CandidateLink from "@/components/CandidateLink";
 import { FORECAST_CONSTANTS } from "@/data/tplModelData";
 import { WinProbabilityLabel } from "@/components/WinProbabilityLabel";
 import { InfoTooltip } from "@/components/InfoTooltip";
-import { POLL_WEIGHT, FF_K, FF_MAX, getNationalEnvironment, incumbentAdvantage } from "@/lib/tplCompute";
+import { FF_K, FF_MAX, getNationalEnvironment, incumbentAdvantage, type RacePolling } from "@/lib/tplCompute";
 
 type PollRow = {
   label: string;
@@ -1030,6 +1030,24 @@ export function PollAggregateCard({ rows }: { rows: PollRow[] }) {
   );
 }
 
+// Ledger rows for the bare ForecastCalculationCard: one structural term ("+ label · value")
+// and the small "N% weight" tag on the Model / Polling rows.
+const LEDGER_ROW_STYLE = { borderBottom: "1px solid var(--app-border)" } as const;
+function LedgerTermRow({ label, tooltip, value, color, plus = false }: { label: string; tooltip?: ReactNode; value: string; color: string; plus?: boolean }) {
+  return (
+    <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={LEDGER_ROW_STYLE}>
+      <span className="flex items-center gap-2 min-w-0">
+        <span className="w-3 shrink-0 text-center text-[11px] font-semibold" style={{ color: "var(--app-text-very-muted)" }} aria-hidden>{plus ? "+" : ""}</span>
+        {tooltip ? <InfoTooltip label={label}>{tooltip}</InfoTooltip> : <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{label}</span>}
+      </span>
+      <span className="text-sm font-bold" style={{ color }}>{value}</span>
+    </div>
+  );
+}
+function LedgerWeightTag({ pct }: { pct: number }) {
+  return <span className="text-[10px] font-semibold tabular-nums px-1.5 py-0.5 rounded" style={{ color: "var(--app-text-muted)", background: "var(--app-tab-bg)" }}>{pct}% weight</span>;
+}
+
 export function ForecastCalculationCard({
   tpl,
   genericBallot,
@@ -1039,7 +1057,7 @@ export function ForecastCalculationCard({
   fundraisingPts,
   candidatePts,
   candidateDetail,
-  pollingAvg,
+  polling,
   projectedMargin,
   probabilityD,
   interval80,
@@ -1054,7 +1072,8 @@ export function ForecastCalculationCard({
   candidatePts?: number | null;
   // Phase 4: the nominees' ridge track-record effects behind candidatePts.
   candidateDetail?: { dem: { name: string; effect: number; n: number; latestYear: number; latestOffice: string } | null; rep: { name: string; effect: number; n: number; latestYear: number; latestOffice: string } | null } | null;
-  pollingAvg?: number | null;
+  // Phase 5: the race poll average and its evidence weight (lib/tplCompute.ts racePollingFor).
+  polling?: RacePolling | null;
   // Sourced from lib/tplCompute.ts computeProjectedMargin() — the same value used by the map,
   // race table, and state page — so this card always displays the number driving the rest of the app.
   projectedMargin: number;
@@ -1093,7 +1112,8 @@ export function ForecastCalculationCard({
   const ffDisplay = fundraisingPts == null ? "—" : ffIsZero ? "0" : ffPts > 0 ? `R+${ffPts.toFixed(1)}` : `D+${Math.abs(ffPts).toFixed(1)}`;
   const ffColor = fundraisingPts == null || ffIsZero ? "var(--app-text-very-muted)" : ffPts > 0 ? "var(--party-rep)" : "var(--party-dem)";
 
-  const effectivePollWeight = pollingAvg == null ? 0 : POLL_WEIGHT;
+  const pollingAvg = polling?.avg?.diff ?? null;
+  const effectivePollWeight = polling?.avg ? polling.weight : 0;
   const effectiveModelWeight = 1 - effectivePollWeight;
   const rowStyle = {
     background: "color-mix(in srgb, var(--app-bg) 82%, var(--app-panel))",
@@ -1157,77 +1177,90 @@ export function ForecastCalculationCard({
       <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Model = TPL + Environment + Incumbent + Fundraising + Candidates</span>
     </>
   );
-  const pollTooltip = pollingAvg == null
-    ? "No polls currently available."
-    : "Sourced from the RCP Average margin shown on the Candidates card.";
+  const pollK = FORECAST_CONSTANTS.POLL_K;
+  const pollTooltip = !polling?.avg
+    ? "No general-election polls on file for this race — the projection is the Model alone."
+    : (
+      <>
+        Weighted average of {polling.avg.n} pollster{polling.avg.n === 1 ? "" : "s"}&apos; latest surveys (recency half-life 14 days, weight ∝ √sample) — {polling.avg.nEff.toFixed(1)} effective poll{polling.avg.nEff >= 1.05 || polling.avg.nEff < 0.95 ? "s" : ""}.
+        <br /><br />
+        <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>weight = n_eff / (n_eff + k) · k: House {pollK.H} · Senate {pollK.S} · Governor {pollK.G}</span>
+        <br /><br />
+        k is fitted by the forward backtest (2018–24): polls earn their share by evidence, and Governor polls earn it fastest because the structural model is weakest there.
+      </>
+    );
   const marginTooltip = (
     <>
-      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Projected Margin = 0.8 × Model + 0.2 × Polling Avg</span>
+      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Projected Margin = (1 − w) × Model + w × Polling Avg</span>
       <br /><br />
-      {pollingAvg == null
-        ? "No polls currently available, so this reflects the Model only."
-        : `Blended ${Math.round(effectiveModelWeight * 100)}% Model / ${Math.round(effectivePollWeight * 100)}% Polling Avg.`}
+      {!polling?.avg
+        ? "No polls on file, so this reflects the Model only."
+        : `w = ${effectivePollWeight.toFixed(2)}: blended ${Math.round(effectiveModelWeight * 100)}% Model / ${Math.round(effectivePollWeight * 100)}% Polling Avg.`}
     </>
   );
 
   if (bare) {
+    // Ledger layout: the five structural rows sum to the Model; the Polling Avg is a
+    // separate estimate; the two combine by weight into the Projected Margin.
     const ledgerRowStyle = { borderBottom: "1px solid var(--app-border)" };
+    const wModel = Math.round(effectiveModelWeight * 100);
+    const wPoll = Math.round(effectivePollWeight * 100);
+    const pollMeta = polling?.avg ? `${polling.avg.n} pollster${polling.avg.n === 1 ? "" : "s"} · ${polling.avg.nEff.toFixed(1)} effective` : "no polls on file";
     return (
       <div className="flex flex-col">
+        {/* Structural terms → Model */}
         <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
-          {tplHref ? (
-            <a
-              href={tplHref}
-              className="text-[11px] font-semibold uppercase tracking-wider hover:underline underline-offset-2"
-              style={{ color: "var(--app-text-muted)" }}
-              title={`View ${tplLabel}`}
-            >
-              {tplLabel}
-            </a>
-          ) : (
-            <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{tplLabel}</span>
-          )}
+          <span className="flex items-center gap-2 min-w-0">
+            <span className="w-3 shrink-0" aria-hidden />
+            {tplHref ? (
+              <a href={tplHref} className="text-[11px] font-semibold uppercase tracking-wider hover:underline underline-offset-2" style={{ color: "var(--app-text-muted)" }} title={`View ${tplLabel}`}>{tplLabel}</a>
+            ) : (
+              <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{tplLabel}</span>
+            )}
+          </span>
           <span className="text-sm font-bold" style={{ color: marginColor(tpl) }}>{fmtMargin(tpl)}</span>
         </div>
-        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
-          <InfoTooltip label="Environment">{gbTooltip}</InfoTooltip>
-          <span className="text-sm font-bold" style={{ color: gbIsD ? "var(--party-dem)" : "var(--party-rep)" }}>{gbDisplay}</span>
-        </div>
-        {showIncumbentRow && (
-          <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
-            <InfoTooltip label="Incumbent">{incTooltip}</InfoTooltip>
-            <span className="text-sm font-bold" style={{ color: incColor }}>{incDisplay}</span>
-          </div>
-        )}
-        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
-          <InfoTooltip label="Fundraising">{frTooltip}</InfoTooltip>
-          <span className="text-sm font-bold" style={{ color: ffColor }}>{ffDisplay}</span>
-        </div>
-        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
-          <InfoTooltip label="Candidates">{candTooltip}</InfoTooltip>
-          <span className="text-sm font-bold" style={{ color: candidatePts == null || Math.abs(candidatePts) < 0.05 ? "var(--app-text-very-muted)" : candidatePts > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
-            {candidatePts == null ? "—" : Math.abs(candidatePts) < 0.05 ? "0" : candidatePts > 0 ? `R+${candidatePts.toFixed(1)}` : `D+${Math.abs(candidatePts).toFixed(1)}`}
+        <LedgerTermRow plus label="Environment" tooltip={gbTooltip} value={gbDisplay} color={gbIsD ? "var(--party-dem)" : "var(--party-rep)"} />
+        {showIncumbentRow && <LedgerTermRow plus label="Incumbent" tooltip={incTooltip} value={incDisplay} color={incColor} />}
+        <LedgerTermRow plus label="Fundraising" tooltip={frTooltip} value={ffDisplay} color={ffColor} />
+        <LedgerTermRow plus label="Candidates" tooltip={candTooltip} value={candidatePts == null ? "—" : Math.abs(candidatePts) < 0.05 ? "0" : candidatePts > 0 ? `R+${candidatePts.toFixed(1)}` : `D+${Math.abs(candidatePts).toFixed(1)}`} color={candidatePts == null || Math.abs(candidatePts) < 0.05 ? "var(--app-text-very-muted)" : candidatePts > 0 ? "var(--party-rep)" : "var(--party-dem)"} />
+        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-3" style={{ ...ledgerRowStyle, borderTop: "2px solid var(--app-text-primary)", marginTop: "-1px" }}>
+          <span className="flex items-center gap-2 min-w-0">
+            <span className="w-3 shrink-0 text-center text-[11px] font-semibold" style={{ color: "var(--app-text-very-muted)" }} aria-hidden>=</span>
+            <InfoTooltip label="Model" labelStyle={{ color: "var(--app-text-primary)" }}>{modelTooltip}</InfoTooltip>
+            <LedgerWeightTag pct={wModel} />
           </span>
+          <span className="text-lg font-extrabold leading-none" style={{ color: marginColor(modelMargin) }}>{fmtMargin(modelMargin)}</span>
         </div>
-        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
-          <InfoTooltip label="Model">{modelTooltip}</InfoTooltip>
-          <span className="text-sm font-bold" style={{ color: marginColor(modelMargin) }}>{fmtMargin(modelMargin)}</span>
-        </div>
-        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
-          <InfoTooltip label="Polling Avg">{pollTooltip}</InfoTooltip>
-          <span className="text-sm font-bold" style={{ color: pollingAvg == null ? "var(--app-text-very-muted)" : pollingAvg > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
+
+        {/* Polling: a separate estimate of the same margin */}
+        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-3" style={ledgerRowStyle}>
+          <span className="flex items-center gap-2 min-w-0 flex-wrap">
+            <span className="w-3 shrink-0" aria-hidden />
+            <InfoTooltip label="Polling Avg" labelStyle={{ color: "var(--app-text-primary)" }}>{pollTooltip}</InfoTooltip>
+            <LedgerWeightTag pct={wPoll} />
+            <span className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{pollMeta}</span>
+          </span>
+          <span className="text-lg font-extrabold leading-none" style={{ color: pollingAvg == null ? "var(--app-text-very-muted)" : pollingAvg > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
             {pollingAvg == null ? "—" : fmtMargin(pollingAvg)}
           </span>
         </div>
-        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 pt-3.5" style={probabilityD != null ? { ...ledgerRowStyle, paddingBottom: "0.625rem" } : undefined}>
-          <InfoTooltip label="Projected Margin" labelStyle={{ color: "var(--app-text-primary)" }}>{marginTooltip}</InfoTooltip>
+
+        {/* Weighted combination */}
+        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 pt-3.5" style={probabilityD != null ? { ...ledgerRowStyle, paddingBottom: "0.625rem", borderTop: "2px solid var(--app-text-primary)", marginTop: "-1px" } : { borderTop: "2px solid var(--app-text-primary)", marginTop: "-1px" }}>
+          <span className="flex flex-col gap-0.5 min-w-0">
+            <InfoTooltip label="Projected Margin" labelStyle={{ color: "var(--app-text-primary)" }}>{marginTooltip}</InfoTooltip>
+            <span className="text-[11px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
+              {pollingAvg == null ? "Model only — no polls on file" : `${wModel}% × Model ${fmtMargin(modelMargin)} + ${wPoll}% × Polling ${fmtMargin(pollingAvg)}`}
+            </span>
+          </span>
           <span className="text-2xl font-extrabold leading-none" style={{ color: finalAccent }}>{fmtMargin(projectedMargin)}</span>
         </div>
         {probabilityD != null && interval80 && (
           <>
             <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
               <InfoTooltip label="Win Probability">
-                Normal tail of the projected margin over the race&apos;s total spread: this state&apos;s β* × the shared national error, combined with the office&apos;s race-level error from the forward backtest.
+                Normal tail of the projected margin over the race&apos;s total spread: this state&apos;s β* × the shared national error, combined with the office&apos;s race-level error from the forward backtest (narrower where polls carry weight).
               </InfoTooltip>
               <span className="text-sm font-bold" style={{ color: probabilityD >= 0.5 ? "var(--party-dem)" : "var(--party-rep)" }}>
                 {probabilityD >= 0.5 ? `D ${Math.round(probabilityD * 100)}%` : `R ${Math.round((1 - probabilityD) * 100)}%`}
@@ -2054,5 +2087,61 @@ export function CountyDemographicsCard({
       </h2>
       {content}
     </section>
+  );
+}
+
+
+// ── Race polls table (Phase 5) ───────────────────────────────────────────────
+// Every general-election poll on file for the race, newest first, with the weight
+// each carries in the average (lib/racePollAverage.ts). Flat rows on the page
+// background, like the other ledger sections.
+export function RacePollsSection({ polling, demName, repName }: { polling: RacePolling; demName: string; repName: string }) {
+  const avg = polling.avg;
+  if (!avg) return null;
+  const fmtMargin = (v: number) => (Math.abs(v) < 0.05 ? "EVEN" : `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(1)}`);
+  const marginColor = (v: number) => (Math.abs(v) < 0.05 ? "var(--app-text-primary)" : v > 0 ? "var(--party-rep)" : "var(--party-dem)");
+  const fmtDate = (iso: string) => { const d = new Date(iso + "T12:00:00Z"); return d.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" }); };
+  const maxWeight = Math.max(...avg.polls.map((p) => p.weight));
+  const surname = (n: string) => n.replace(/\s*\(.*\)\s*$/, "").trim().split(/\s+/).slice(-1)[0];
+  return (
+    <div className="flex flex-col">
+      <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={{ borderBottom: "1px solid var(--app-border)" }}>
+        <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
+          Polling average · {avg.n} pollster{avg.n === 1 ? "" : "s"} · {avg.nEff.toFixed(1)} effective · weight {Math.round(polling.weight * 100)}%
+        </span>
+        <span className="text-sm font-bold tabular-nums" style={{ color: marginColor(avg.diff) }}>{fmtMargin(avg.diff)}</span>
+      </div>
+      <div className="overflow-x-auto">
+        <table className="w-full text-xs tabular-nums" style={{ borderCollapse: "collapse" }}>
+          <thead>
+            <tr className="text-[10px] uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>
+              <th className="text-left font-semibold py-2 pr-2">Pollster</th>
+              <th className="text-left font-semibold py-2 pr-2">Dates</th>
+              <th className="text-right font-semibold py-2 pr-2">Sample</th>
+              <th className="text-right font-semibold py-2 pr-2" style={{ color: "var(--party-dem)" }}>{surname(demName)}</th>
+              <th className="text-right font-semibold py-2 pr-2" style={{ color: "var(--party-rep)" }}>{surname(repName)}</th>
+              <th className="text-right font-semibold py-2 pr-2">Margin</th>
+              <th className="text-right font-semibold py-2">Weight</th>
+            </tr>
+          </thead>
+          <tbody>
+            {avg.polls.map((p) => (
+              <tr key={`${p.pollster}-${p.endDate}`} style={{ borderTop: "1px solid color-mix(in srgb, var(--app-border) 72%, transparent)", color: "var(--app-text-primary)" }}>
+                <td className="py-1.5 pr-2 whitespace-nowrap">{p.pollster}{p.partisan ? <span className="ml-1 text-[10px] font-semibold" style={{ color: p.partisan === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>({p.partisan})</span> : null}</td>
+                <td className="py-1.5 pr-2 whitespace-nowrap" style={{ color: "var(--app-text-muted)" }}>{p.startDate === p.endDate ? fmtDate(p.endDate) : `${fmtDate(p.startDate)} – ${fmtDate(p.endDate)}`}</td>
+                <td className="py-1.5 pr-2 text-right whitespace-nowrap" style={{ color: "var(--app-text-muted)" }}>{p.sample != null ? p.sample.toLocaleString() : "—"}{p.population ? ` ${p.population}` : ""}</td>
+                <td className="py-1.5 pr-2 text-right">{p.dem.toFixed(0)}%</td>
+                <td className="py-1.5 pr-2 text-right">{p.rep.toFixed(0)}%</td>
+                <td className="py-1.5 pr-2 text-right font-semibold" style={{ color: marginColor(p.diff) }}>{fmtMargin(p.diff)}</td>
+                <td className="py-1.5 text-right" style={{ color: "var(--app-text-very-muted)" }}>{maxWeight > 0 ? `${Math.round((p.weight / maxWeight) * 100)}%` : "—"}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="mt-2.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+        One survey per pollster (its latest). Weight is relative to the freshest, largest poll: full for 14 days after the field period, halving every 14 days after, times √sample. (D)/(R) marks a party or campaign pollster.
+      </p>
+    </div>
   );
 }

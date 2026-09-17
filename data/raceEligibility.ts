@@ -24,7 +24,16 @@ export type RaceEligibility = "eligible" | "no-dem" | "no-rep" | "same-party" | 
 export const ALIGNED_INDEPENDENTS: Record<string, "D" | "R"> = {
   "Bernie Sanders": "D",
   "Angus King": "D",
+  // CA-06 2026: the Republican incumbent running for re-election as an independent after
+  // the 2026 redraw; modeled as the R-aligned incumbent (user decision 2026-09-16).
+  "Kevin Kiley": "R",
 };
+
+/** A candidate's party for modeling: D/R as filed, or the party an aligned independent stands in for; null for other independents. */
+export function alignedParty(c: { name: string; party: string }): "D" | "R" | null {
+  if (c.party === "D" || c.party === "R") return c.party;
+  return ALIGNED_INDEPENDENTS[c.name.replace(/\s*\((I|D|R)\)\s*$/, "").trim()] ?? null;
+}
 
 export interface EligibilityInput {
   demPct?: number;
@@ -72,7 +81,13 @@ export function classifyEligibility(r: EligibilityInput, stateAbbr?: string): Ra
 function classifyBallot(r: EligibilityInput): RaceEligibility {
   // A slot polling under 5% while the opponent clears 90% is a write-in-scale
   // candidacy, not a ballot nominee (e.g. AZ-08/AZ-09 2022) — treat as unfilled.
-  const writeInScale = (own?: number, other?: number) => (own ?? 0) < 5 && (other ?? 0) >= 90;
+  // Under 2% it is write-in-scale regardless of the opponent: the 90% condition fails
+  // whenever a third party absorbs the rest, which let AZ-07 2018's 0.23% write-in
+  // ("007 Bond IV") stand in as Gallego's Republican opponent while a Green took 14% —
+  // a +26 House WAR outlier. No real major-party nominee polls under 2%; across every
+  // House/Senate/Governor race 2016–2025 this floor changes exactly that one race.
+  const writeInScale = (own?: number, other?: number) =>
+    (own ?? 0) < 5 && ((other ?? 0) >= 90 || (own ?? 0) < 2);
   const demFilled = (r.demPct ?? 0) > 0 && !writeInScale(r.demPct, r.repPct);
   const repFilled = (r.repPct ?? 0) > 0 && !writeInScale(r.repPct, r.demPct);
   const demSlotParty = demFilled ? effectiveParty(r.demParty, r.demCandidate, "D") : null;

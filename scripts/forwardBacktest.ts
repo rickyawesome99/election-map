@@ -47,7 +47,9 @@ import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { fundraisingData } from "@/data/fundraisingData";
 import { classifyEligibility } from "@/data/raceEligibility";
 import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
-import { marginToProbability, solveCandidateEffects, buildObservablePrior, warCandidateKey, type EffectRace } from "@/lib/tplCompute";
+import { computeRacePollAverage } from "@/lib/racePollAverage";
+import type { RacePoll } from "@/data/racePolls";
+import { marginToProbability, solveCandidateEffects, buildObservablePrior, warCandidateKey, recencyDecayFor, WAR_RECENCY_DECAY, priorOfficeTier, type EffectRace, type ObservableFeature, type ObservablePrior } from "@/lib/tplCompute";
 
 // ── CLI ──────────────────────────────────────────────────────────────────────
 const argv = process.argv.slice(2);
@@ -58,8 +60,16 @@ const ABLATE = argv.includes("--ablate");
 const QUALITY_SWEEP = argv.includes("--quality");
 const NO_QUALITY = argv.includes("--no-quality");
 const NO_PRIOR = argv.includes("--no-prior");
+// Observable-prior feature set under test (default: the live FORECAST_CONSTANTS list; "none" = off).
+const PRIOR_FEATURES: ObservableFeature[] = argOf("--prior-features") === "none" ? [] : ((argOf("--prior-features")?.split(",") as ObservableFeature[] | undefined) ?? (F.OBSERVABLE_PRIOR_FEATURES as ObservableFeature[]));
+const PRIOR_SWEEP = argv.includes("--prior-sweep");
 const APPOINTED = argv.includes("--appointed");
+const DECAY_SWEEP = argv.includes("--decay-sweep");
 const DUMP = argv.includes("--dump");
+const POLLS = argv.includes("--polls");
+const NO_PARTISAN = argv.includes("--no-partisan");
+// Shift applied to party/campaign-sponsored polls toward the sponsor's opponent (pts of margin).
+const PARTISAN_SHIFT = Number(argOf("--partisan-shift") ?? 0);
 const THETA: Theta = LIVE;
 const H_INC = 3; // fixed House incumbency prior (INCUMBENT_ADVANTAGE_FIXED)
 
@@ -164,10 +174,32 @@ function districtLeanAsOf(race: typeof houseData[number], Y: number, fit: Fit): 
 // (state lean / β / E / incumbency as of Y−1; House anchored on the district lean as
 // of Y−1) with the FULL money gap in the expected margin — the forward model's
 // quality term, rebuilt without any information from year Y.
-const effectsCache = new Map<number, Map<string, number>>();
-const priorCoefByYear = new Map<number, { priorWin: number; priorLoss: number; n: number }>();
+const effectsCache = new Map<string, Map<string, number>>();
+let statewideDecayOverride: number | null = null;
+const decayFn = (office?: string) => (statewideDecayOverride != null && (office === "S" || office === "G" || office === "P") ? statewideDecayOverride : recencyDecayFor(office));
+const priorByYear = new Map<number, ObservablePrior>();
+let priorFeaturesOverride: ObservableFeature[] | null = null;
+const priorFeatures = () => priorFeaturesOverride ?? PRIOR_FEATURES;
+// Incumbents in the year-Y races: their observable features are zero (incumbency is its own term).
+function incumbentsIn(Y: number): Set<string> {
+  const out = new Set<string>();
+  for (const r of panel) {
+    if (r.year !== Y || (r.type !== "S" && r.type !== "G")) continue;
+    if (r.incumbent === "R" && r.repCandidate) out.add(warCandidateKey(r.abbr, r.repParty ?? "R", r.repCandidate));
+    if (r.incumbent === "D" && r.demCandidate) out.add(warCandidateKey(r.abbr, r.demParty ?? "D", r.demCandidate));
+  }
+  for (const race of houseData) {
+    const dp = districtPresidentialData[String(parseInt(race.id, 10))]; if (!dp) continue;
+    const pr = (race.pastResults ?? []).find((x) => x.year === Y) as (PastResult & { demCandidate?: string; repCandidate?: string; demParty?: string; repParty?: string }) | undefined;
+    if (!pr) continue;
+    if (pr.repIncumbent && pr.repCandidate) out.add(warCandidateKey(dp.state, pr.repParty ?? "R", pr.repCandidate));
+    if (pr.demIncumbent && pr.demCandidate) out.add(warCandidateKey(dp.state, pr.demParty ?? "D", pr.demCandidate));
+  }
+  return out;
+}
 function candidateEffectsAsOf(Y: number): Map<string, number> {
-  if (effectsCache.has(Y)) return effectsCache.get(Y)!;
+  const ck = `${Y}:${statewideDecayOverride ?? "live"}:${priorFeatures().join(",")}`;
+  if (effectsCache.has(ck)) return effectsCache.get(ck)!;
   const fit = fitUpTo(Y - 1);
   const races: EffectRace[] = [];
   for (const r of panel) {
@@ -175,7 +207,7 @@ function candidateEffectsAsOf(Y: number): Map<string, number> {
     if (r.type !== "S" && r.type !== "G" && r.type !== "P") continue;
     const lean = fit.lean[r.abbr]; if (lean == null) continue;
     const expected = lean + (fit.beta[r.abbr] ?? 1) * (fit.E[r.year] ?? 0) + forwardIncS(fit, r.type, r.incumbent, r.incumbentAppointed) + forwardFf(r.ffGapPct);
-    const race: EffectRace = { r: r.value - expected, year: r.year, actual: r.value, inc: r.incumbent === "R" ? "R" : r.incumbent === "D" ? "D" : null };
+    const race: EffectRace = { r: r.value - expected, year: r.year, actual: r.value, inc: r.incumbent === "R" ? "R" : r.incumbent === "D" ? "D" : null, office: r.type };
     if (r.demCandidate) race.D = warCandidateKey(r.abbr, r.demParty ?? "D", r.demCandidate);
     if (r.repCandidate) race.R = warCandidateKey(r.abbr, r.repParty ?? "R", r.repCandidate);
     if (race.D || race.R) races.push(race);
@@ -189,22 +221,28 @@ function candidateEffectsAsOf(Y: number): Map<string, number> {
       const x = pr as PastResult & { demCandidate?: string; repCandidate?: string; demParty?: string; repParty?: string };
       const incumbent = pr.demIncumbent ? "D" : pr.repIncumbent ? "R" : "Open";
       const expected = lean + beta * (fit.E[pr.year] ?? 0) - incPts({ H: H_INC }, "H", incumbent) + forwardFf(gapOf(fundraisingData[`H:${race.name}:${pr.year}`]));
-      const er: EffectRace = { r: pr.repPct - pr.demPct - expected, year: pr.year, actual: pr.repPct - pr.demPct, inc: incumbent === "R" ? "R" : incumbent === "D" ? "D" : null };
+      const er: EffectRace = { r: pr.repPct - pr.demPct - expected, year: pr.year, actual: pr.repPct - pr.demPct, inc: incumbent === "R" ? "R" : incumbent === "D" ? "D" : null, office: "H" };
       if (x.demCandidate) er.D = warCandidateKey(dp.state, x.demParty ?? "D", x.demCandidate);
       if (x.repCandidate) er.R = warCandidateKey(dp.state, x.repParty ?? "R", x.repCandidate);
       if (er.D || er.R) races.push(er);
     }
   }
-  const ob = buildObservablePrior(races, Y);
-  priorCoefByYear.set(Y, { ...ob.coef, n: ob.n });
-  const { a } = solveCandidateEffects(races, Y, undefined, NO_PRIOR ? undefined : ob.prior);
-  effectsCache.set(Y, a);
+  const ob = buildObservablePrior(races, Y, incumbentsIn(Y), priorFeatures());
+  priorByYear.set(Y, ob);
+  const { a } = solveCandidateEffects(races, Y, undefined, NO_PRIOR ? undefined : ob.prior, decayFn);
+  effectsCache.set(ck, a);
   return a;
 }
-function qualityOf(effects: Map<string, number>, abbr: string, dem?: { name?: string; party?: string }, rep?: { name?: string; party?: string }): number {
-  const eD = dem?.name ? effects.get(warCandidateKey(abbr, dem.party ?? "D", dem.name)) ?? 0 : 0;
-  const eR = rep?.name ? effects.get(warCandidateKey(abbr, rep.party ?? "R", rep.name)) ?? 0 : 0;
-  return eR - eD;
+// R-positive quality: a nominee with a record carries their ridge effect; one without
+// any record is worth their observable prior (0 with the prior off or for an incumbent).
+function qualityOf(Y: number, effects: Map<string, number>, abbr: string, incumbent: string, dem?: { name?: string; party?: string }, rep?: { name?: string; party?: string }): number {
+  const ob = priorByYear.get(Y)!;
+  const of = (c: { name?: string; party?: string } | undefined, party: "D" | "R") => {
+    if (!c?.name) return 0;
+    const key = warCandidateKey(abbr, c.party ?? party, c.name);
+    return effects.get(key) ?? (NO_PRIOR ? 0 : ob.valueFor(key, Y, incumbent === party, incumbent === "Open"));
+  };
+  return of(rep, "R") - of(dem, "D");
 }
 
 function buildPreds(Y: number): Pred[] {
@@ -219,7 +257,7 @@ function buildPreds(Y: number): Pred[] {
     out.push({
       office: r.type, year: Y, key: `${r.abbr} ${r.race}`, actual: r.value,
       lean, beta: fit.beta[r.abbr] ?? 1, inc: forwardIncS(fit, r.type, r.incumbent, r.incumbentAppointed), ff: forwardFf(r.ffGapPct),
-      quality: qualityOf(effects, r.abbr, { name: r.demCandidate, party: r.demParty }, { name: r.repCandidate, party: r.repParty }),
+      quality: qualityOf(Y, effects, r.abbr, r.incumbent, { name: r.demCandidate, party: r.demParty }, { name: r.repCandidate, party: r.repParty }),
     });
   }
   for (const race of houseData) {
@@ -234,7 +272,7 @@ function buildPreds(Y: number): Pred[] {
     out.push({
       office: "H", year: Y, key: race.name, actual: pr.repPct - pr.demPct,
       lean, beta: fit.beta[dp.state] ?? 1, inc: -incPts({ H: H_INC }, "H", incumbent), ff: forwardFf(gapOf(fundraisingData[`H:${race.name}:${Y}`])),
-      quality: qualityOf(effects, dp.state, { name: x.demCandidate, party: x.demParty }, { name: x.repCandidate, party: x.repParty }),
+      quality: qualityOf(Y, effects, dp.state, incumbent, { name: x.demCandidate, party: x.demParty }, { name: x.repCandidate, party: x.repParty }),
     });
   }
   return out;
@@ -316,8 +354,9 @@ const modes: EnvMode[] = ENV === "all" ? ["fitted", "pv", "gb", "mapped", "struc
 for (const Y of YEARS) {
   const preds = predsByYear.get(Y)!;
   const fitY1 = fitUpTo(Y - 1);
-  const pc = priorCoefByYear.get(Y);
-  console.log(`\n=== ${Y}  (fit ≤ ${Y - 1}; incumbency S ${fitY1.inc.S?.toFixed(1)} G ${fitY1.inc.G?.toFixed(1)} H ${H_INC}; observable prior: prior-win ${pc ? fmt(pc.priorWin, 2) : "—"} prior-loss ${pc ? fmt(pc.priorLoss, 2) : "—"} n=${pc?.n ?? 0}) ===`);
+  const pc = priorByYear.get(Y);
+  const priorTxt = pc && pc.features.length ? pc.features.map((f) => `${f} ${fmt(pc.coef[f], 2)}`).join(" · ") + ` (n=${pc.n})` : "off";
+  console.log(`\n=== ${Y}  (fit ≤ ${Y - 1}; incumbency S ${fitY1.inc.S?.toFixed(1)} G ${fitY1.inc.G?.toFixed(1)} H ${H_INC}; observable prior: ${priorTxt}) ===`);
   const header = "  office    n  " + modes.map((m) => `| ${m.padEnd(6)} E=${"".padStart(5)} MAE   bias    r    sd   rsd `).join("");
   console.log(header);
   for (const office of OFFICES) {
@@ -411,6 +450,91 @@ if (APPOINTED) {
   }
 }
 
+if (DECAY_SWEEP) {
+  console.log(`\nStatewide recency-decay sweep (House fixed at ${WAR_RECENCY_DECAY}; env=struct): pooled MAE by office`);
+  console.log("  decay    " + OFFICES.map((o) => LABEL[o].padStart(9)).join(""));
+  for (const d of [0.8, 0.85, 0.9, 0.95, 1.0]) {
+    statewideDecayOverride = d;
+    let line = `  ${String(d).padEnd(8)}`;
+    for (const office of OFFICES) {
+      const errs: number[] = [];
+      for (const Y of YEARS) {
+        const E = envEstimate("struct", Y); if (E == null) continue;
+        const ps = buildPreds(Y).filter((p) => p.office === office); if (ps.length < 3) continue;
+        for (const x of ps) errs.push(Math.abs(x.actual - predOf(x, E)));
+      }
+      line += errs.length ? mean(errs).toFixed(2).padStart(9) : "        —";
+    }
+    console.log(line);
+  }
+  statewideDecayOverride = null;
+}
+
+if (argv.includes("--tier-diag")) {
+  // Raw check: mean race residual (signed toward the NON-incumbent side, or toward R in open
+  // seats) by that candidate's prior-office tier, from the 2024 solve's races (≤ 2023).
+  candidateEffectsAsOf(2024);
+  const fit = fitUpTo(2023);
+  const races: EffectRace[] = [];
+  for (const r of panel) {
+    if (r.year > 2023 || r.imputed || r.value == null || r.eligibility !== "eligible" || (r.type !== "S" && r.type !== "G")) continue;
+    const lean = fit.lean[r.abbr]; if (lean == null) continue;
+    const expected = lean + (fit.beta[r.abbr] ?? 1) * (fit.E[r.year] ?? 0) + forwardIncS(fit, r.type, r.incumbent, r.incumbentAppointed) + forwardFf(r.ffGapPct);
+    const race: EffectRace = { r: r.value - expected, year: r.year, actual: r.value, inc: r.incumbent === "R" ? "R" : r.incumbent === "D" ? "D" : null, office: r.type };
+    if (r.demCandidate) race.D = warCandidateKey(r.abbr, r.demParty ?? "D", r.demCandidate);
+    if (r.repCandidate) race.R = warCandidateKey(r.abbr, r.repParty ?? "R", r.repCandidate);
+    races.push(race);
+  }
+  for (const race of houseData) {
+    const dp = districtPresidentialData[String(parseInt(race.id, 10))]; if (!dp) continue;
+    const lean = districtLeanAsOf(race, 2024, fit); if (lean == null) continue;
+    for (const pr of race.pastResults ?? []) {
+      if (pr.year > 2023 || pr.year < 2016 || classifyEligibility(pr, dp.state) !== "eligible") continue;
+      const x = pr as PastResult & { demCandidate?: string; repCandidate?: string; demParty?: string; repParty?: string };
+      const incumbent = pr.demIncumbent ? "D" : pr.repIncumbent ? "R" : "Open";
+      const expected = lean + (fit.beta[dp.state] ?? 1) * (fit.E[pr.year] ?? 0) - incPts({ H: H_INC }, "H", incumbent) + forwardFf(gapOf(fundraisingData[`H:${race.name}:${pr.year}`]));
+      const er: EffectRace = { r: pr.repPct - pr.demPct - expected, year: pr.year, actual: pr.repPct - pr.demPct, inc: incumbent === "R" ? "R" : incumbent === "D" ? "D" : null, office: "H" };
+      if (x.demCandidate) er.D = warCandidateKey(dp.state, x.demParty ?? "D", x.demCandidate);
+      if (x.repCandidate) er.R = warCandidateKey(dp.state, x.repParty ?? "R", x.repCandidate);
+      races.push(er);
+    }
+  }
+  for (const office of ["H", "S", "G"]) {
+    console.log(`\n${LABEL[office as "H"]}: challenger (vs incumbent) residual by challenger's prior-office tier, and open-seat R−D residual by tier difference`);
+    const byTier: Record<number, number[]> = {}; const openByDiff: Record<string, number[]> = {};
+    for (const rc of races) {
+      if (rc.office !== office) continue;
+      if (rc.inc === "R" && rc.D) { const t = priorOfficeTier(rc.D, rc.year); (byTier[t] ??= []).push(-rc.r); }
+      else if (rc.inc === "D" && rc.R) { const t = priorOfficeTier(rc.R, rc.year); (byTier[t] ??= []).push(rc.r); }
+      else if (!rc.inc && rc.R && rc.D) { const d = Math.sign(priorOfficeTier(rc.R, rc.year) - priorOfficeTier(rc.D, rc.year)); (openByDiff[d > 0 ? "R higher" : d < 0 ? "D higher" : "same"] ??= []).push(rc.r); }
+    }
+    for (const t of Object.keys(byTier).map(Number).sort()) console.log(`  challenger tier ${t}: n ${String(byTier[t].length).padStart(4)}  mean resid toward challenger ${fmt(mean(byTier[t]), 2)}  median ${fmt(median(byTier[t]), 2)}`);
+    for (const k of ["R higher", "same", "D higher"]) if (openByDiff[k]) console.log(`  open seat, ${k.padEnd(9)}: n ${String(openByDiff[k].length).padStart(4)}  mean R−D resid ${fmt(mean(openByDiff[k]), 2)}`);
+  }
+}
+
+if (PRIOR_SWEEP) {
+  console.log("\nObservable-prior feature sweep (env=struct, live quality weights): pooled MAE by office; coefficients from the 2024 solve");
+  console.log("  features                                   " + OFFICES.map((o) => LABEL[o].padStart(9)).join("") + "   coef (2024)");
+  const sets: ObservableFeature[][] = [[], ["priorWin"], ["legislator"], ["openLegislator"], ["openLegislator", "priorWin"], ["legislator", "federalStatewide"], ["legislator", "federalStatewide", "local"], ["legislator", "federalStatewide", "local", "priorWin"], ["legislator", "federalStatewide", "priorWin"]];
+  for (const fs of sets) {
+    priorFeaturesOverride = fs;
+    let line = `  ${(fs.length ? fs.join(",") : "none").padEnd(42)}`;
+    for (const office of OFFICES) {
+      const errs: number[] = [];
+      for (const Y of YEARS) {
+        const E = envEstimate("struct", Y); if (E == null) continue;
+        const ps = buildPreds(Y).filter((p) => p.office === office); if (ps.length < 3) continue;
+        for (const x of ps) errs.push(Math.abs(x.actual - predOf(x, E)));
+      }
+      line += errs.length ? mean(errs).toFixed(2).padStart(9) : "        —";
+    }
+    const pc = priorByYear.get(2024);
+    console.log(line + "   " + (pc && fs.length ? fs.map((f) => `${f} ${fmt(pc.coef[f], 2)}`).join(" · ") + ` n=${pc.n}` : ""));
+  }
+  priorFeaturesOverride = null;
+}
+
 if (QUALITY_SWEEP) {
   console.log("\nQuality weight sweep (env=struct): pooled MAE by office, and share of rows with a non-zero quality term");
   console.log("  weight   " + OFFICES.map((o) => LABEL[o].padStart(9)).join("") + "   covered");
@@ -427,6 +551,72 @@ if (QUALITY_SWEEP) {
     }
     console.log(line + `   ${(100 * covered / Math.max(1, total) / OFFICES.length * OFFICES.length / OFFICES.length).toFixed(0)}%`);
   }
+}
+
+if (POLLS) {
+  // ── Phase 5: poll weight by horizon ─────────────────────────────────────────
+  // Historical race polls (data-entry/race_polls_history.csv, from the 538 archive)
+  // averaged as of three dates in year Y with the live recipe; the blend
+  //   m(w) = (1 − w) × model + w × pollAvg,   w = nEff / (nEff + k)
+  // is scored against the actual margin and k chosen per office and horizon by
+  // leave-one-year-out MAE over the polled races. The model side stays the
+  // mid-September prediction at every horizon (only the polls get fresher).
+  const split = (line: string) => { const out: string[] = []; let cur = "", q = false; for (let i = 0; i < line.length; i++) { const ch = line[i]; if (ch === '"') { if (q && line[i + 1] === '"') { cur += '"'; i++; } else q = !q; } else if (ch === "," && !q) { out.push(cur); cur = ""; } else cur += ch; } out.push(cur); return out; };
+  const lines = fs.readFileSync(path.join(process.cwd(), "data-entry", "race_polls_history.csv"), "utf8").split(/\r?\n/).filter((l) => l.trim());
+  const hdr = split(lines[0]);
+  const pollsByRace = new Map<string, RacePoll[]>();
+  for (const line of lines.slice(1)) {
+    const r = split(line); const c = (k: string) => r[hdr.indexOf(k)] ?? "";
+    if (NO_PARTISAN && c("partisan")) continue;
+    const key = `${c("year")}|${c("office")}|${c("state")}|${c("race")}`;
+    // A D-sponsored poll is moved R-ward by PARTISAN_SHIFT (and vice versa), split across the two shares.
+    const adj = c("partisan") === "D" ? PARTISAN_SHIFT / 2 : c("partisan") === "R" ? -PARTISAN_SHIFT / 2 : 0;
+    const dem = Number(c("dem")) - adj, rep = Number(c("rep")) + adj;
+    (pollsByRace.get(key) ?? pollsByRace.set(key, []).get(key)!).push({ pollster: c("pollster"), partisan: (c("partisan") || null) as "D" | "R" | null, startDate: c("start"), endDate: c("end"), sample: c("sample") ? Number(c("sample")) : null, population: c("population") || null, dem, rep, diff: rep - dem });
+  }
+  const pollKeyOf = (x: Pred) => x.office === "H" ? `${x.year}|H|${x.key.slice(0, 2)}|House ${x.key}` : `${x.year}|${x.office}|${x.key.slice(0, 2)}|${x.key.slice(3)}`;
+  const horizons: [string, string][] = [["mid-Sept", "09-15"], ["mid-Oct", "10-15"], ["Nov 1", "11-01"]];
+  const ks = [0.05, 0.1, 0.25, 0.5, 1, 2, 3, 5, 8];
+  interface PRow { office: string; year: number; model: number; poll: number; nEff: number; actual: number; }
+  console.log(`\nRace polls (env=struct; ${pollsByRace.size} race-years with polls${NO_PARTISAN ? ", partisan polls dropped" : ""}${PARTISAN_SHIFT ? `, partisan polls shifted ${PARTISAN_SHIFT} pts toward the opponent` : ""}): blend m = (1−w)·model + w·poll, w = nEff/(nEff+k), k fitted leave-one-year-out`);
+  console.log("  horizon   office    n polled/all   MAE model   MAE poll   k*(LOO)   MAE blend(k*)   MAE blend LOO   σ_poll rsd   σ_blend rsd   mean w");
+  const chosen: Record<string, Record<string, number>> = {};
+  for (const [hname, mmdd] of horizons) {
+    chosen[hname] = {};
+    for (const office of OFFICES) {
+      const rows: PRow[] = []; let all = 0;
+      for (const Y of YEARS) {
+        const E = envEstimate("struct", Y); if (E == null) continue;
+        const asOf = new Date(`${Y}-${mmdd}T12:00:00Z`);
+        for (const x of predsByYear.get(Y)!) {
+          if (x.office !== office) continue; all++;
+          const avg = computeRacePollAverage(pollsByRace.get(pollKeyOf(x)) ?? [], asOf);
+          if (!avg) continue;
+          rows.push({ office, year: Y, model: predOf(x, E), poll: avg.diff, nEff: avg.nEff, actual: x.actual });
+        }
+      }
+      if (rows.length < 10) continue;
+      const blend = (r: PRow, k: number) => { const w = k === Infinity ? 0 : r.nEff / (r.nEff + k); return (1 - w) * r.model + w * r.poll; };
+      const maeAt = (rs: PRow[], k: number) => mean(rs.map((r) => Math.abs(r.actual - blend(r, k))));
+      const bestK = (rs: PRow[]) => ks.reduce((b, k) => (maeAt(rs, k) < maeAt(rs, b) ? k : b), ks[0]);
+      const kStar = bestK(rows);
+      // leave-one-year-out: k chosen on the other years, applied to this one
+      const looErr: number[] = [];
+      for (const Y of YEARS) { const train = rows.filter((r) => r.year !== Y), test = rows.filter((r) => r.year === Y); if (!train.length || !test.length) continue; const k = bestK(train); looErr.push(...test.map((r) => Math.abs(r.actual - blend(r, k)))); }
+      const resPoll = rows.map((r) => r.actual - r.poll), resBlend = rows.map((r) => r.actual - blend(r, kStar));
+      const wMean = mean(rows.map((r) => r.nEff / (r.nEff + kStar)));
+      chosen[hname][office] = kStar;
+      console.log(`  ${hname.padEnd(9)} ${LABEL[office].padEnd(8)} ${String(rows.length).padStart(5)}/${String(all).padEnd(5)}   ${mean(rows.map((r) => Math.abs(r.actual - r.model))).toFixed(2).padStart(9)}   ${mean(resPoll.map(Math.abs)).toFixed(2).padStart(8)}   ${String(kStar).padStart(7)}   ${maeAt(rows, kStar).toFixed(2).padStart(13)}   ${(looErr.length ? mean(looErr) : NaN).toFixed(2).padStart(13)}   ${rsd(resPoll).toFixed(2).padStart(10)}   ${rsd(resBlend).toFixed(2).padStart(11)}   ${wMean.toFixed(2).padStart(6)}`);
+      if (hname === "mid-Sept") {
+        // evidence check: residual of the blend by nEff bucket, and the k grid
+        const buckets: [string, (n: number) => boolean][] = [["nEff < 1", (n) => n < 1], ["1–2", (n) => n >= 1 && n < 2], ["2–4", (n) => n >= 2 && n < 4], ["≥ 4", (n) => n >= 4]];
+        console.log("            " + buckets.map(([b, f]) => { const rs = rows.filter((r) => f(r.nEff)); return rs.length ? `${b}: n ${rs.length} model ${mean(rs.map((r) => Math.abs(r.actual - r.model))).toFixed(1)} poll ${mean(rs.map((r) => Math.abs(r.actual - r.poll))).toFixed(1)} blend ${maeAt(rs, kStar).toFixed(1)}` : `${b}: —`; }).join("  ·  "));
+        console.log("            k grid MAE: " + ks.map((k) => `${k}→${maeAt(rows, k).toFixed(2)}`).join("  "));
+      }
+    }
+  }
+  console.log("  (σ_poll rsd = robust sd of actual − poll average over polled races; σ_blend rsd = the same for the blend at k*.)");
+  console.log(`Recommended FORECAST_CONSTANTS.POLL_K by horizon: ${horizons.map(([h]) => `${h}: ${OFFICES.map((o) => `${o} ${chosen[h][o] ?? "—"}`).join(" · ")}`).join("   |   ")}`);
 }
 
 if (DUMP) {

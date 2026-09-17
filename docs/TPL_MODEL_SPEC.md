@@ -140,10 +140,16 @@ BS  = pres_P(2026 lines) − pres_P(lines used in year Y)   (same election P, tw
 NM  = Raw + IF + FF + BS + ENV
 ```
 
-`P` is the election contemporaneous with that map: 2016 and 2018 House races are
-scored against 2016, 2020 and 2022 against 2020, 2024 against 2024. The old-lines
-figures are `data/presByBoundaryVintage.ts`; the 2026 side is
-`districtPresidentialData`. What transfers is performance **relative to the
+`P` is the election contemporaneous with that map; a **midterm uses both
+neighbours** weighted by distance (2018 = ½·[2016 delta] + ½·[2020 delta], 2022 =
+½·[2020] + ½·[2024]). Each term stays a same-election, two-map difference. The
+old-lines figures are `data/presByBoundaryVintage.ts` (per map, per presidential
+year); the 2026 side is `districtPresidentialData`. Two of those cells had no
+published source and were built from precinct returns
+(`scripts/build-pres-on-old-lines-from-precincts.py`): 2020 president on NC's
+2018 map, and 2024 president on the 2022 maps of AL/GA/LA/NC/NY. Everywhere else a
+midterm map equals the map two years later, so the contemporaneous in-repo rows
+serve. What transfers is performance **relative to the
 presidential baseline**, not the margin — Jackson's D+15.4 on D+16.4 turf becomes
 R+17.1 on today's R+16.1 NC-14.
 
@@ -255,9 +261,25 @@ reference (post-Phase-4): 2024-President NM MAE 3.02 (pres-only baseline 1.93),
 - **WAR** (Phase 6): `computeWarTable()` — each race yields one residual
   r = actual − expected, where expected = lean + β*·E(year) + incumbency +
   **structural** money advantage. Anchors: S/G/P races vs the state's Huber-fitted lean;
-  House vs the district TPL (slight self-influence, noted in the UI); Osborn-
-  class races vs their imputed presidential baseline; same-party generals are
-  excluded (no R-vs-D margin to sign).
+  House vs the district's lean **in that year, on that year's lines** (slight
+  self-influence, noted in the UI); Osborn-class races vs their imputed
+  presidential baseline; same-party generals are excluded (no R-vs-D margin to sign).
+  House anchor (2026-09-16): `TPL + trend(Y) + shift + β*·E(Y) − IF`, where
+  `trend(Y)` = that year's neutral presidential NM minus the aggregation-weighted
+  presidential average TPL embodies, and `shift` is the boundary shift. Both are
+  needed: District TPL is on 2026 lines (shift) and is a single recency-weighted
+  lean dominated by ~2024 politics (trend). Without shift, Doyle's 2016 Pittsburgh
+  PA-14 was scored against today's rural PA-14 (WAR +50.8); without trend, Grace
+  Meng's 2016 NY-06 race was scored against a district that has since swung 34 pts
+  right (+22.0 → +2.9), and Curbelo's Clinton+16 Miami seat read as below
+  replacement (−6.9 → +18.7). Non-presidential years interpolate the trend
+  between the bracketing presidential years (`presInterpWeights`; 2025 clamps to 2024).
+  **State anchors** (Senate/Governor) get the same trend term against the state's fitted
+  lean — median 2016→2024 state trend 2.8 pts, 10 states over 5 (FL 10.1, CA 8.0, NY 7.8)
+  — with one difference: the fitted lean has no recency decay, so its presidential
+  average is EQUAL-year, whereas the district anchor's is recency-weighted to match
+  District TPL. Presidential rows are not trend-anchored (their own margin is the
+  trend input, so the residual would be circular).
 - **Structural money (2026-09-09):** the TPL strips the full fundraising gap
   because it wants the seat's lean, but for a quality metric money is partly
   the candidate. WAR therefore splits the gap. Per office, `gap ≈ a + b·incSign
@@ -438,3 +460,54 @@ reference (post-Phase-4): 2024-President NM MAE 3.02 (pres-only baseline 1.93),
   is not used.
 - Harness after this round (env=struct, LOO): pooled MAE S 5.65 / G 9.26 / H 4.83;
   RACE_SIGMA H 5.3 / S 6.1 / G 9.0. Ohio Senate now R+2.4 (Brown 35 %).
+
+## Candidate-effect recency by office (2026-09-16)
+
+`recencyDecayFor(office)`: Senate / Governor / President races decay at
+`WAR_RECENCY_DECAY_STATEWIDE` = 0.9 per year, House at `WAR_RECENCY_DECAY` = 0.8
+(the decay belongs to the past race being weighted; applies to the WAR tab and
+the forward candidate term alike). `forwardBacktest --decay-sweep` is flat within
+0.06 MAE across 0.8–1.0 (Senate best 0.85, Governor 0.95), so 0.9 is a judgment
+call (user decision) that the data neither reward nor punish. Appointed
+incumbents: `APPOINTED_INCUMBENCY_SHARE` stays 0 — no bonus and no penalty.
+Final harness this round: S 5.65 / G 9.21 / H 4.82; RACE_SIGMA H 5.3 / S 6.0 / G 9.4.
+
+## Forward forecast — Layer B observable prior (office tier), 2026-09-16
+
+`data-entry/candidate_office_history.csv` → `node data-entry/build-candidate-offices.js` → `data/candidateOffices.ts`: every elected office held by each of the 3,501 candidates in the WAR table and the 2026 nominee lists, from the Wikipedia officeholder infobox of the article linked on their election page (1,528 have one). Tiers: 5 Senate/Governor · 4 U.S. House/statewide · 3 state legislature · 2 local · 1 other public office · 0 none.
+
+`buildObservablePrior()` regresses race residuals (full-money expected) on the R−D difference of observable features — `legislator`, `federalStatewide`, `local`, `priorWin`, `openLegislator` — with the incumbent's features zeroed; the fitted value is the ridge shrinkage target and the whole quality term for a nominee with no record. `forwardBacktest --prior-sweep` / `--tier-diag`: net of the full money gap, prior office carries nothing (legislator coefficient −0.2 to −0.8; House challengers with a state-legislative background run −0.78 vs −0.77 for novices; no feature set moves pooled MAE by more than 0.02). The literature's 2–4 pt quality-challenger effect is expressed through receipts, which this model keeps as its own term. `FORECAST_CONSTANTS.OBSERVABLE_PRIOR_FEATURES` is therefore `[]`; the data stays for display and later use.
+
+## Forward forecast — Phase 5 (race polling), 2026-09-16
+
+**Data.** `data-entry/race_polls.csv` (2026: 752 general-election polls, 137 races, scraped from the polling tables on the Wikipedia election pages; a table is used only when its header names both nominees) → `node data-entry/build-race-polls.js` → `data/racePolls.ts`, keyed `"{H|S|G}:{ST}:{race label}"` with the past-results race labels. History for the fit: `scripts/build-race-polls-history.py` → `data-entry/race_polls_history.csv` (6,698 polls, 677 race-years, 2018–2024) from the FiveThirtyEight archive via the Wayback Machine (general stage, no hypotheticals, top DEM/REP share per question; a Senate special is the class not regularly up that year).
+
+**Average** (`lib/racePollAverage.ts`): the generic-ballot recipe — one survey per pollster (its latest), full weight for 14 days after the field period then halving every 14 days, weight ∝ √sample (cap 3,000) — plus `nEff` = Σ recency weights, the evidence behind the average.
+
+**Blend.** `projectRace()` returns model, polling and `margin = (1 − w) × model + w × pollAvg`, `w = nEff / (nEff + POLL_K[office])`. `forwardBacktest --polls` fits k by leave-one-year-out MAE over the polled races at three horizons; k is flat across horizons, so one value per office:
+
+| office | polled / all | MAE model | MAE poll | k | MAE blend (LOO) | mean w |
+|---|---|---|---|---|---|---|
+| Senate | 105 / 133 | 5.40 | 6.64 | 3 | 4.65 (4.93) | .40 |
+| Governor | 80 / 94 | 9.76 | 5.77 | 0.1 | 6.1 (6.2) | .93 |
+| House | 104 / 449 | 4.28 | 5.11 | 1 | 3.57 (3.68) | .29 |
+
+**User decision (2026-09-16):** a single fresh poll may carry at most a third of the projection — at the fitted Governor k a one-poll race (Oregon: model D+13.4, one poll R+2.1) swung 15 pts. `POLL_K` is therefore H 2 · S 3 · G 2 (one poll 33% / 25% / 33%; four polls 67% / 57% / 67%), at a backtest cost of Governor 6.1 → 7.4 and House 3.57 → 3.65 (both still well under model-only).
+
+Dropping partisan polls costs House coverage (104 → 68 polled) and its LOO error (3.68 → 4.16); shifting them 3 or 6 pts toward the sponsor's opponent also hurts (`--no-partisan`, `--partisan-shift`). Polls are used as published, flagged (D)/(R) on the page.
+
+**Spread.** `raceSigma(office, state, w)² = (β* σ_E)² + ((1 − w) RACE_SIGMA)² + (w POLL_SIGMA)²`, `POLL_SIGMA` = robust sd of actual − poll average over the polled races (H 6.4 · S 5.5 · G 6.8). The independent-error formula reproduces the measured spread of the blend (S 4.3 · G 5.8 · H 4.0) within 0.2. The national shock is kept in full: polls miss nationally too.
+
+**Site.** Calculation card "Polling Avg" row (pollsters, effective polls, fitted weight), hero "Polling Avg." stat, and a per-race polls table (`RacePollsSection`) on the Senate, Governor and House pages. The hand-entered RCP fields no longer enter the forecast. The ledger card groups the five structural rows under a "= Model · N% weight" subtotal, shows the Polling Avg as a separate weighted estimate, and spells out the combination under the Projected Margin. Live: House 223.4 D (P control 80%), Senate 49.9 D (P control 37%, up from 21%), Governor 24.7 D.
+
+## Forward forecast — non-two-party generals (2026-09-16)
+
+Rules for the 2026 races that are not a Democrat against a Republican (user decisions 2026-09-16):
+
+- **Same-party generals** (`contestOf` → `same-party-D` / `same-party-R`): both slots belong to one party after alignment — the CA top-two D-vs-D seats (CA-04/07/11/12/14/29/34/37) and the CA-40 Calvert-vs-Kim incumbent pairing. Decided like an unopposed race: probability pinned, rating Safe, displayed margin floored at ±20, no simulation noise. CA-11's second slot was corrected to Scott Wiener (the audit had duplicated Connie Chan).
+- **Aligned independents** (`ALIGNED_INDEPENDENTS`, `alignedParty()` in data/raceEligibility.ts): Kevin Kiley (CA-06) is modeled as the Republican-aligned incumbent — House incumbency applied, his Republican track record used for the candidate term, a win counted as R. King and Sanders remain the Democratic entries.
+- **Unaligned independents standing in for a missing party** (Osborn NE-Sen; Achilles ID-Sen, Bengs SD-Sen, Hill AK-01, Milleron MA-01, Eliopoulos NJ-08, Mahoney PA-03): stay `contested`, scored on the structural D-vs-R margin plus their own record (Osborn's 2024 ridge effect, which was measured against the same imputed baseline) and the polls; a win counts toward the slot's party in the seat totals (Osborn → Democratic control, as King/Sanders). The poll scrape fills an empty major-party slot with the independent, so NE-Sen polls (Ricketts–Osborn) now enter.
+- **Multi-candidate ballots** (AK top-four RCV, LA jungle, pre-primary top-two polls): when a poll table lists more than one candidate of a party, the scrape sums each party's candidates and normalises to a two-party share — the final RCV round / runoff is the quantity the margin describes. Two-candidate tables stay raw, matching the 538 history the poll weight was fitted on. AK past results are already stored as final-round margins.
+- **Louisiana House**: LA-05/06 have no nominees on the post-*Callais* map (jungle primary Nov 3, runoff Dec 12) and are scored structurally on the repo's stale lines — the Phase 7 district-line update is the fix, not a rule.
+
+Live after these rules: NE-Sen R+8.0 (Osborn, polls tied at 44% weight), CA-06 D+10.4, CA-40 Safe R; House 223.4 D (P control 80%), Senate 49.8 D (35%), Governors 24.7 D.

@@ -55,7 +55,14 @@ DB18 = os.path.join(ROOT, "data-entry/downballot/pres_2008_2016_by_2018_lines.cs
 DB22 = os.path.join(ROOT, "data-entry/downballot/pres_2020_by_2022_lines.csv")
 OUT = os.path.join(ROOT, "data-entry/pres_by_boundary_vintage.csv")
 
-PRES_YEAR_FOR_VINTAGE = {2016: 2016, 2018: 2016, 2020: 2020, 2022: 2020, 2024: 2024}
+# Every map carries the presidential election(s) its House races are relocated with: the
+# contemporaneous one for presidential years, BOTH neighbours for a midterm (a 2018 race sits
+# halfway between 2016 and 2020, so its boundary shift is the average of the two).
+PRES_YEARS_FOR_VINTAGE = {2016: [2016], 2018: [2016, 2020], 2020: [2020], 2022: [2020, 2024], 2024: [2024]}
+PRECINCT = os.path.join(ROOT, "data-entry/pres_on_old_lines_precinct.csv")
+# Where a map differs from the contemporaneous one, the in-repo contemporaneous rows cannot stand
+# in; these states come from the precinct join (scripts/build-pres-on-old-lines-from-precincts.py).
+PRECINCT_STATES = {(2018, 2020): {"NC"}, (2022, 2024): {"AL", "GA", "LA", "NC", "NY"}}
 
 STATE_FIPS = {
     "AL": "01", "AK": "02", "AZ": "04", "AR": "05", "CA": "06", "CO": "08", "CT": "09",
@@ -132,16 +139,24 @@ for r in sheet_rows(DB22, 1):
     if code:
         by22[code] = (num(r[3]), num(r[4]), num(r[5]))
 
+# ── precinct-join cells (NC on 2018 lines; AL/GA/LA/NC/NY on 2022 lines) ─────────
+precinct = defaultdict(dict)
+if os.path.exists(PRECINCT):
+    with open(PRECINCT, newline="") as f:
+        for r in csv.DictReader(f):
+            precinct[(int(r["boundary_year"]), int(r["pres_year"]))][r["district_name"]] = (
+                float(r["dem_votes"]), float(r["rep_votes"]), float(r["total_votes"]), r["source"])
+
 rows = []
 problems = []
 
 
-def emit(vintage, code, dem_pct, rep_pct, dv, rv, tv, source, did=None):
+def emit(vintage, code, dem_pct, rep_pct, dv, rv, tv, source, did=None, pres=None):
     rows.append({
         "boundary_year": vintage,
         "district_id": did or district_id(code),
         "district_name": code,
-        "pres_year": PRES_YEAR_FOR_VINTAGE[vintage],
+        "pres_year": pres if pres is not None else PRES_YEARS_FOR_VINTAGE[vintage][0],
         "dem_pct": round(dem_pct, 2),
         "rep_pct": round(rep_pct, 2),
         "margin": round(rep_pct - dem_pct, 2),
@@ -152,38 +167,50 @@ def emit(vintage, code, dem_pct, rep_pct, dv, rv, tv, source, did=None):
     })
 
 
-for vintage, pres in PRES_YEAR_FOR_VINTAGE.items():
-    if vintage == 2022:
-        for code, (dv, rv, tv) in sorted(by22.items()):
-            emit(vintage, code, dv / tv * 100, rv / tv * 100, dv, rv, tv,
-                 "downballot/pres_2020_by_2022_lines.csv")
-        dc = hsr.get((pres, "DC-AL"))
-        if dc:
-            did, dv, rv, tv = dc
-            emit(vintage, "DC-AL", dv / tv * 100, rv / tv * 100, dv, rv, tv,
-                 "house_statewide_results.csv (DC boundary is invariant)", did)
-        continue
-
-    for (year, code), (did, dv, rv, tv) in sorted(hsr.items()):
-        if year != pres:
+for vintage, pres_years in PRES_YEARS_FOR_VINTAGE.items():
+    for pres in pres_years:
+        if (vintage, pres) == (2022, 2020):
+            for code, (dv, rv, tv) in sorted(by22.items()):
+                emit(vintage, code, dv / tv * 100, rv / tv * 100, dv, rv, tv,
+                     "downballot/pres_2020_by_2022_lines.csv", pres=pres)
+            dc = hsr.get((pres, "DC-AL"))
+            if dc:
+                did, dv, rv, tv = dc
+                emit(vintage, "DC-AL", dv / tv * 100, rv / tv * 100, dv, rv, tv,
+                     "house_statewide_results.csv (DC boundary is invariant)", did, pres=pres)
             continue
-        if vintage == 2018 and code.startswith("PA-"):
-            continue  # replaced below
-        emit(vintage, code, dv / tv * 100, rv / tv * 100, dv, rv, tv,
-             "house_statewide_results.csv", did)
-    if vintage == 2018:
-        for code, (dpct, rpct) in sorted(pa18.items()):
-            emit(vintage, code, dpct, rpct, None, None, None,
-                 "downballot/pres_2008_2016_by_2018_lines.csv")
+
+        swap_states = PRECINCT_STATES.get((vintage, pres), set())
+        if swap_states and not precinct.get((vintage, pres)):
+            problems.append(f"{vintage} lines / {pres} pres needs {sorted(swap_states)} from {PRECINCT}, which is missing")
+        for (year, code), (did, dv, rv, tv) in sorted(hsr.items()):
+            if year != pres:
+                continue
+            if vintage == 2018 and pres == 2016 and code.startswith("PA-"):
+                continue  # replaced below
+            if code.split("-")[0] in swap_states:
+                continue  # replaced below
+            # 2016 & 2020 pres rows are on 2016 / 2020 lines, 2024 rows on 2024 lines; a midterm map
+            # equals the map two years later everywhere outside swap_states.
+            emit(vintage, code, dv / tv * 100, rv / tv * 100, dv, rv, tv,
+                 "house_statewide_results.csv", did, pres=pres)
+        for code, (dv, rv, tv, src) in sorted(precinct.get((vintage, pres), {}).items()):
+            if code.split("-")[0] in swap_states:
+                emit(vintage, code, dv / tv * 100, rv / tv * 100, dv, rv, tv,
+                     "pres_on_old_lines_precinct.csv — " + src, pres=pres)
+        if vintage == 2018 and pres == 2016:
+            for code, (dpct, rpct) in sorted(pa18.items()):
+                emit(vintage, code, dpct, rpct, None, None, None,
+                     "downballot/pres_2008_2016_by_2018_lines.csv", pres=pres)
 
 # ── validation ───────────────────────────────────────────────────────────────────
 per_vintage = defaultdict(set)
 for r in rows:
-    per_vintage[r["boundary_year"]].add(r["district_name"])
-for v, codes in sorted(per_vintage.items()):
+    per_vintage[(r["boundary_year"], r["pres_year"])].add(r["district_name"])
+for (v, py), codes in sorted(per_vintage.items()):
     real = {c for c in codes if c != "DC-AL"}
     if len(real) != 435:
-        problems.append(f"vintage {v}: {len(real)} districts, expected 435")
+        problems.append(f"{v} lines / {py} pres: {len(real)} districts, expected 435")
 if len(pa18) != 18:
     problems.append(f"expected 18 Pennsylvania rows on 2018 lines, got {len(pa18)}")
 for r in rows:
@@ -195,11 +222,14 @@ for r in rows:
 
 # The 2018 vintage must equal the 2016 vintage everywhere EXCEPT Pennsylvania, and the
 # 2022 vintage must differ from the 2020 one in every state that redrew (i.e. all of them).
-idx = {(r["boundary_year"], r["district_name"]): r["margin"] for r in rows}
-changed = {c.split("-")[0] for (v, c), m in idx.items()
-           if v == 2018 and abs(m - idx.get((2016, c), m)) > 1.0}
-if changed != {"PA"}:
-    problems.append(f"2016->2018 vintage differs in {sorted(changed)}, expected only PA")
+idx = {(r["boundary_year"], r["pres_year"], r["district_name"]): r["margin"] for r in rows}
+def differs(va, vb, py):
+    return {c.split("-")[0] for (v, p, c), m in idx.items()
+            if v == vb and p == py and (va, py, c) in idx and abs(m - idx[(va, py, c)]) > 1.0}
+for va, vb, py, expect in ((2016, 2018, 2016, {"PA"}), (2020, 2018, 2020, {"NC"}), (2024, 2022, 2024, {"AL", "GA", "LA", "NC", "NY"})):
+    got = differs(va, vb, py)
+    if not got <= expect:
+        problems.append(f"{py} pres: {vb} lines differ from {va} lines in {sorted(got)}, expected only within {sorted(expect)}")
 
 with open(OUT, "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
@@ -207,8 +237,8 @@ with open(OUT, "w", newline="") as f:
     w.writerows(rows)
 
 print(f"Wrote {len(rows)} rows -> {OUT}")
-for v, codes in sorted(per_vintage.items()):
-    print(f"  {v} lines / {PRES_YEAR_FOR_VINTAGE[v]} pres: {len(codes)} districts")
+for (v, py), codes in sorted(per_vintage.items()):
+    print(f"  {v} lines / {py} pres: {len(codes)} districts")
 if problems:
     print("\nPROBLEMS:")
     for p in problems[:20]:

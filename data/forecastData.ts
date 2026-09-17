@@ -3332,7 +3332,7 @@ export const houseData: RaceForecast[] = [
     "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Connie Chan", "party": "D", "incumbent": false },
-      "rep": { "name": "Connie Chan", "party": "D", "incumbent": false }
+      "rep": { "name": "Scott Wiener", "party": "D", "incumbent": false }
     },
     "seatHolder": "Nancy Pelosi",
     "seatParty": "D",
@@ -3450,7 +3450,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Sam Liccardo",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 58.2, "repPct": 41.8, "demCandidate": "Sam Liccardo", "repCandidate": "Evan Low", "demVotes": 179583, "repVotes": 128893, "totalVotes": 308476, "margin": -16.4 },
+      { "year": 2024, "demPct": 58.2, "repPct": 41.8, "demCandidate": "Sam Liccardo", "repCandidate": "Evan Low", "repParty": "D", "demVotes": 179583, "repVotes": 128893, "totalVotes": 308476, "margin": -16.4 },
       { "year": 2022, "demPct": 57.77, "repPct": 42.23, "demCandidate": "Anna Eshoo", "repCandidate": "Rishi Kumar", "repParty": "D", "demVotes": 139235, "repVotes": 101772, "totalVotes": 241007, "margin": -15.54 },
       { "year": 2020, "demPct": 59.38, "repPct": 40.62, "demCandidate": "Jim Costa", "repCandidate": "Kevin Cookingham", "demVotes": 128690, "repVotes": 88039, "totalVotes": 216729, "margin": -18.76, "demIncumbent": true },
       { "year": 2018, "demPct": 57.55, "repPct": 42.45, "demCandidate": "Jim Costa", "repCandidate": "Elizabeth Heng", "demVotes": 82266, "repVotes": 60693, "totalVotes": 142959, "margin": -15.1, "demIncumbent": true },
@@ -8803,7 +8803,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 45.85, "repPct": 52.16, "demCandidate": "Mondaire Jones", "repCandidate": "Michael Lawler", "demVotes": 173899, "repVotes": 197845, "totalVotes": 379274, "margin": 6.31, "repIncumbent": true },
       { "year": 2022, "demPct": 49.65, "repPct": 50.29, "demCandidate": "Sean Patrick Maloney", "repCandidate": "Michael Lawler", "demVotes": 141730, "repVotes": 143550, "totalVotes": 285430, "margin": 0.64 },
       { "year": 2020, "demPct": 59.33, "repPct": 35.26, "demCandidate": "Mondaire Jones", "repCandidate": "Maureen McArdle Schulman", "demVotes": 197354, "repVotes": 117309, "totalVotes": 332658, "margin": -24.07 },
-      { "year": 2018, "demPct": 88.02, "repPct": 11.98, "demCandidate": "Nita Lowey", "repCandidate": "Joseph Ciardullo", "demVotes": 170168, "repVotes": 23150, "totalVotes": 193318, "margin": -76.04, "demIncumbent": true },
+      { "year": 2018, "demPct": 88.02, "repPct": 11.98, "demCandidate": "Nita Lowey", "repCandidate": "Joseph Ciardullo", "repParty": "I", "demVotes": 170168, "repVotes": 23150, "totalVotes": 193318, "margin": -76.04, "demIncumbent": true },
       { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "Nita Lowey", "demVotes": 214530, "repVotes": 0, "totalVotes": 214530, "margin": -100, "demIncumbent": true }
     ]
   },

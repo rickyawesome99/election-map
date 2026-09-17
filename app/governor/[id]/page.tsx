@@ -3,12 +3,13 @@ import { getRatingColors, marginToRating, fmtMargin, marginColor } from "@/lib/c
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import { candidatePhotos } from "@/lib/candidatePhotos";
-import { AboutRaceCard, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
+import { AboutRaceCard, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
-import { calculateStateTpl, effectiveEnvironment, computeIncumbentPts, computeRcpMargin, computeProjectedMargin, computeRaceFundraisingPts, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
+import { calculateStateTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, computeRaceFundraisingPts, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
 import { forecastRace } from "@/lib/forecast";
+import { alignedParty } from "@/data/raceEligibility";
 import BackButton from "@/components/BackButton";
 
 const GENERAL_ELECTION = "November 3, 2026";
@@ -160,13 +161,14 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
   const incumbent = race.candidates
     ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null
     : null;
-  const incumbentParty = (incumbent?.party === "D" || incumbent?.party === "R") ? incumbent.party : null;
+  const incumbentParty = incumbent ? alignedParty(incumbent) : null;
   const incumbentPts = computeIncumbentPts("G", incumbentParty, incumbent?.appointed ?? false);
   const fundraising = raceFundraising2026("governor", race.id);
   const fundraisingSource = raceFundraisingSource2026("governor", race.id);
   const fundraisingPts = computeRaceFundraisingPts("governor", race.id);
   const gb = effectiveEnvironment(id.toUpperCase());
-  const rcpMargin = computeRcpMargin(race.rcpDem, race.rcpRep);
+  const polling = racePollingFor(race);
+  const pollMargin = polling.avg?.diff ?? null;
   const projectedMargin = computeProjectedMargin(race);
   const forecast = forecastRace(race);
   const quality = candidateQuality(race);
@@ -246,11 +248,11 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             </div>
 
             <div className="min-w-0 px-2 sm:px-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-              <div className="text-xl font-extrabold tabular-nums sm:text-2xl" style={{ color: marginColor(rcpMargin) }}>
-                {fmtMargin(rcpMargin)}
+              <div className="text-xl font-extrabold tabular-nums sm:text-2xl" style={{ color: pollMargin == null ? "var(--app-text-very-muted)" : marginColor(pollMargin) }}>
+                {pollMargin == null ? "—" : fmtMargin(pollMargin)}
               </div>
               <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-                RCP Avg.
+                Polling Avg.
               </div>
             </div>
 
@@ -320,6 +322,13 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             <StateCountyMap stateAbbr={id.toUpperCase()} stateName={race.name} height={280} showLabel={false} />
           </section>
 
+          {polling.avg && race.candidates && (
+            <section>
+              <LedgerSectionHead label="Polls" meta={`${polling.avg.n} pollster${polling.avg.n === 1 ? "" : "s"} · ${Math.round(polling.weight * 100)}% of the projection`} />
+              <RacePollsSection polling={polling} demName={race.candidates.dem.name} repName={race.candidates.rep.name} />
+            </section>
+          )}
+
           <section>
             <LedgerSectionHead label="Forecast Calculation" />
             <ForecastCalculationCard
@@ -332,7 +341,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               fundraisingPts={fundraising ? fundraisingPts : null}
               candidatePts={quality.pts}
               candidateDetail={quality}
-              pollingAvg={rcpMargin}
+              polling={polling}
               projectedMargin={projectedMargin}
               probabilityD={forecast.probability}
               interval80={forecast.interval80}

@@ -297,7 +297,7 @@ export const STATE_RACE_INPUTS: Record<string, RaceModelInputs[]> = {
 export const FORECAST_CONSTANTS = {
   ENV_MISS_SHRINK: 0.5,
   ENV_DAYS_MID_SEPT_TO_ELECTION: 49,
-  RACE_SIGMA: { H: 5.3, S: 6.1, G: 9.0 } as Record<"H" | "S" | "G", number>, // forwardBacktest 2026-09-16 (env=struct + quality, robust within-year)
+  RACE_SIGMA: { H: 5.3, S: 6.0, G: 9.4 } as Record<"H" | "S" | "G", number>, // forwardBacktest 2026-09-16 (env=struct + quality, robust within-year)
   // Multiplier on the nominees' ridge track-record effects (effect_R − effect_D) in the
   // forward model, per office. forwardBacktest --quality (2026-09-16, leakage-free
   // sweep): House error bottoms near 0.75, Senate at 1.0, Governor keeps improving past
@@ -311,8 +311,24 @@ export const FORECAST_CONSTANTS = {
   // nominee even at share 0 (mean −5.6, −4.0 without Hochul), so no advantage is
   // credited; a negative value would be an extrapolation from n=9.
   APPOINTED_INCUMBENCY_SHARE: 0,
-  // Layer B observable prior on candidate effects (ridge shrinkage target instead of 0):
-  // prior-win-while-not-incumbent only. The prior-loss indicator flipped sign between
-  // backtest windows and is not used. Toggle for the harness / site.
-  OBSERVABLE_PRIOR: false, // harness 2026-09-16: prior-win prior raised pooled House MAE 4.83→4.98 (n=24/52 identifying races); off until outside observables exist
+  // Layer B observable prior on candidate effects: the ridge shrinkage target (and the
+  // forward term for a nominee with no track record) is an OLS of race residuals on
+  // these features — see buildObservablePrior in lib/tplCompute.ts. Empty = off.
+  // Candidates: legislator · federalStatewide · local · priorWin.
+  OBSERVABLE_PRIOR_FEATURES: [] as string[],
+  // Race polling (Phase 5): the poll average's share of the final margin is
+  //   w = nEff / (nEff + POLL_K[office]),  nEff = effective poll count (lib/racePollAverage.ts)
+  // scripts/forwardBacktest.ts --polls (2026-09-16, 677 polled race-years 2018–24, k by
+  // leave-one-year-out MAE, mid-September horizon) puts the optimum at Senate 3 (5.40 → 4.65),
+  // Governor ≤ 0.1 (9.76 → 6.1 — polls carry the race) and House 1 (4.28 → 3.57); k is flat
+  // across horizons. User decision 2026-09-16: a single fresh poll may carry at most a third
+  // of the projection (a one-poll Governor race was swinging 15 pts), so Governor and House
+  // use k = 2 (one poll 33%, four polls 67%) at a backtest cost of Gov 6.1 → 7.4 and House
+  // 3.57 → 3.65; Senate keeps its fitted 3 (one poll 25%). Partisan polls kept: dropping
+  // or shifting them costs House coverage and error.
+  POLL_K: { H: 2, S: 3, G: 2 } as Record<"H" | "S" | "G", number>,
+  // Robust spread of actual − poll average over the polled races (same run); the blend's
+  // spread is (1 − w)² × RACE_SIGMA² + w² × POLL_SIGMA² on top of the national shock, which
+  // reproduces the measured blend rsd (S 4.3 · G 5.8 · H 4.0) to within 0.2.
+  POLL_SIGMA: { H: 6.4, S: 5.5, G: 6.8 } as Record<"H" | "S" | "G", number>,
 };

@@ -12,18 +12,20 @@ import {
   type PastResult,
 } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
+import { candidateOffices } from "@/data/candidateOffices";
 import { TPL_GLOBAL_CONSTANTS as G, FORECAST_CONSTANTS as F } from "@/data/tplModelData";
 import { nationalEnvironmentHistory } from "@/data/nationalEnvironmentHistory";
 import { fundraisingData, fundraisingSources } from "@/data/fundraisingData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
-import { presByBoundaryVintage, boundaryVintageForHouseYear, PRES_YEAR_FOR_VINTAGE } from "@/data/presByBoundaryVintage";
+import { presByBoundaryVintage, boundaryVintageForHouseYear } from "@/data/presByBoundaryVintage";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
 import { countySenateData } from "@/data/countySenateData";
 import { countyGovernorData } from "@/data/countyGovernorData";
 import { countyHouseData } from "@/data/countyHouseData";
 import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
+import { getRacePollAverage, pollWeight, racePollKey, type RacePollAverage } from "@/lib/racePollAverage";
 import { FIPS_TO_STATE } from "@/lib/fips";
-import { classifyEligibility, type RaceEligibility } from "@/data/raceEligibility";
+import { classifyEligibility, alignedParty, type RaceEligibility } from "@/data/raceEligibility";
 
 // ── Generic ballot ────────────────────────────────────────────────────────────
 // R-positive convention: negative = D-favored (e.g. D+5.3 → -5.3).
@@ -716,9 +718,9 @@ export function calculateStateModel(stateAbbr: string, stateName: string): State
 // ── calculateDistrictModel ────────────────────────────────────────────────────
 // Phase 6 reconciliation: districts run the SAME additive pipeline as states.
 // Inputs: the district's presidential results (2016/2020/2024, reaggregated to
-// current boundaries) plus its House results from the CURRENT boundary era only
-// (a district with a 2026 redraw on file is presidential-only until new-map
-// results exist). House rows get the incumbency and fundraising strips; every
+// current boundaries) plus EVERY House race 2016–2024, each relocated onto today's
+// lines by the boundary shift (BS, below) and weighted by how far it had to move.
+// House rows get the incumbency and fundraising strips; every
 // row strips β*(parent state) × E(year); ineligible House races are skipped —
 // the presidential rows already carry the district's lean, so imputing from
 // them would double-count. Aggregation, decay and Huber weighting are the same
@@ -738,6 +740,11 @@ export function calculateStateModel(stateAbbr: string, stateName: string): State
 //
 //   BS = pres_P(2026 lines) − pres_P(lines used in year Y)      [same election P, two maps]
 //   NM = Raw + IF + FF + BS + ENV
+//
+// P is the presidential year contemporaneous with Y; a MIDTERM uses both neighbours weighted by
+// distance (2018 = ½·[2016 delta] + ½·[2020 delta]). With one election, a 2018 Orange County race
+// was relocated as if 2016 still described its turf, when the old and new CA-45 areas had moved
+// ~17 pts apart by 2020 (shift +16.0 single-election, +7.4 averaged).
 //
 // What transfers is the candidate's performance RELATIVE TO the presidential baseline, not
 // their margin: Jackson's D+15.4 on D+16.4 turf becomes R+17.1 on today's R+16.1 turf —
@@ -762,14 +769,25 @@ function boundaryStripFor(
 ): { BS_pts: number; shift: number | null; weight: number } {
   const vintage = boundaryVintageForHouseYear(houseYear);
   if (vintage == null) return { BS_pts: 0, shift: null, weight: 1 }; // 2026 IS the reference map
-  const onOldLines = presByBoundaryVintage[vintage][districtId]?.margin;
-  if (onOldLines == null) return { BS_pts: 0, shift: null, weight: 1 };
-  const presYear = PRES_YEAR_FOR_VINTAGE[vintage];
-  const on2026 =
-    presYear === 2016 ? d.pres16RepPct - d.pres16DemPct
-    : presYear === 2020 ? d.pres20RepPct - d.pres20DemPct
+  const on2026 = (py: number) =>
+    py === 2016 ? d.pres16RepPct - d.pres16DemPct
+    : py === 2020 ? d.pres20RepPct - d.pres20DemPct
     : d.pres24RepPct - d.pres24DemPct;
-  const shift = onOldLines - on2026;
+  // A midterm is measured with BOTH neighbouring presidential elections, weighted by distance —
+  // the same interpolation the WAR trend term uses (2018 = ½·2016 + ½·2020). Each term is a
+  // same-election, two-map difference, so no election-to-election trend leaks into the shift.
+  // A neighbour missing on the old map (a district number that did not exist) drops out and the
+  // remaining weight is renormalised.
+  let shift = 0;
+  let wsum = 0;
+  for (const [py, w] of presInterpWeights(houseYear)) {
+    const onOld = presByBoundaryVintage[vintage][py]?.[districtId]?.margin;
+    if (onOld == null) continue;
+    shift += w * (onOld - on2026(py));
+    wsum += w;
+  }
+  if (wsum === 0) return { BS_pts: 0, shift: null, weight: 1 };
+  shift /= wsum;
   const weight = 1 / (1 + (Math.abs(shift) / G.BS_WEIGHT_K) ** 2);
   return { BS_pts: -shift, shift, weight };
 }
@@ -993,33 +1011,51 @@ export function calculateDistrictTpl(districtId: string): number {
   return calculateDistrictModel(normalizedId).tpl;
 }
 
-// Weight given to polling (RCP Average) vs. the structural forecast in the final blend.
-export const POLL_WEIGHT = 0.2;
+// ── Race polling (Phase 5) ────────────────────────────────────────────────────
+// The poll average (lib/racePollAverage.ts, from data/racePolls.ts) enters the final
+// margin with weight w = nEff / (nEff + POLL_K[office]): a race with no polls is the
+// model alone; one fresh poll gives a Senate race 25% polling, a Governor race 90%.
+export interface RacePolling { avg: RacePollAverage | null; weight: number; key: string; }
 
-// RCP Average vote shares are stored as 0–1 decimals; convert to an R-positive margin (%).
-export function computeRcpMargin(rcpDem?: number | null, rcpRep?: number | null): number | null {
-  if (rcpDem == null || rcpRep == null) return null;
-  return (rcpRep - rcpDem) * 100;
+export function racePollLabel(race: { raceType: string; name: string; electionType?: string }): string {
+  if (race.raceType === "house") return `House ${race.name}`;
+  if (race.raceType === "governor") return "Governor";
+  return race.electionType?.toLowerCase() === "special" ? "Senate Special" : "Senate";
+}
+
+export function racePollingFor(race: { id: string; state: string; raceType: string; name: string; electionType?: string }, asOf: Date = new Date()): RacePolling {
+  const office = race.raceType === "house" ? "H" : race.raceType === "senate" ? "S" : "G";
+  const stateAbbr = race.raceType === "house" ? statesData.find((s) => s.name === race.state)?.abbr ?? "" : race.id.replace(/-\d+$/, "");
+  const key = racePollKey(office, stateAbbr, racePollLabel(race));
+  const avg = getRacePollAverage(office, stateAbbr, racePollLabel(race), asOf);
+  return { avg, weight: avg ? pollWeight(avg.nEff, office) : 0, key };
 }
 
 // Single source of truth for a race's projected margin: structural forecast (TPL + generic
 // ballot + incumbent, plus fundraising/candidate points once that data exists) blended with the
 // RCP Average when available. Every consumer (map, table, state page, race detail pages) should
 // read margin off this function so changing an input here updates margin everywhere.
-export function computeProjectedMargin(race: {
+export interface ProjectedMarginInput {
   id: string;
   state: string;
+  name: string;
   raceType: string;
+  electionType?: string;
   candidates?: { dem: { name: string; party: "D" | "R" | "I"; incumbent: boolean; appointed?: boolean }; rep: { name: string; party: "D" | "R" | "I"; incumbent: boolean; appointed?: boolean } };
-  rcpDem?: number;
-  rcpRep?: number;
-}): number {
+}
+
+export function computeProjectedMargin(race: ProjectedMarginInput): number {
+  return projectRace(race).margin;
+}
+
+/** The structural model margin, the poll average and the blend behind computeProjectedMargin. */
+export function projectRace(race: ProjectedMarginInput): { model: number; polling: RacePolling; margin: number } {
   const raceTypeMap: Record<string, "H" | "S" | "G"> = { house: "H", senate: "S", governor: "G" };
   const shortType = raceTypeMap[race.raceType];
   const incumbentCandidate = race.candidates
     ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null
     : null;
-  const incumbentParty = (incumbentCandidate?.party === "D" || incumbentCandidate?.party === "R") ? incumbentCandidate.party : null;
+  const incumbentParty = incumbentCandidate ? alignedParty(incumbentCandidate) : null;
   const incumbentPts = shortType ? computeIncumbentPts(shortType, incumbentParty, incumbentCandidate?.appointed ?? false) : 0;
 
   // Live 2026 fundraising points from FEC receipts (additive, capped — same
@@ -1038,10 +1074,9 @@ export function computeProjectedMargin(race: {
     structuralMargin = calculateStateTpl(stateAbbr, race.state) + effectiveEnvironment(stateAbbr) + incumbentPts + ffPts + qualityPts;
   }
 
-  const pollingAvg = computeRcpMargin(race.rcpDem, race.rcpRep);
-  return pollingAvg != null
-    ? (1 - POLL_WEIGHT) * structuralMargin + POLL_WEIGHT * pollingAvg
-    : structuralMargin;
+  const polling = racePollingFor(race);
+  const margin = polling.avg ? (1 - polling.weight) * structuralMargin + polling.weight * polling.avg.diff : structuralMargin;
+  return { model: structuralMargin, polling, margin };
 }
 
 // ── National environment (Phase 2 of the forecast revamp) ────────────────────
@@ -1125,9 +1160,13 @@ export function effectiveEnvironment(stateAbbr: string): number {
 // error = β*(state) × national shock (σ_E, shared by every race)  +  race noise
 // (RACE_SIGMA per office). Probability is the normal tail of that total spread.
 
-export function raceSigma(raceType: "H" | "S" | "G", stateAbbr: string): number {
+// pollWeight = the poll average's share of the margin (0 without polls): the race-level
+// noise is the blend of the model's and the poll average's independent errors, while
+// the national shock applies to both (polls miss nationally too).
+export function raceSigma(raceType: "H" | "S" | "G", stateAbbr: string, pollWeight = 0): number {
   const beta = getTplFit().beta[stateAbbr]?.shrunk ?? 1;
-  return Math.sqrt((beta * getNationalEnvironment().sigmaE) ** 2 + F.RACE_SIGMA[raceType] ** 2);
+  const w = pollWeight;
+  return Math.sqrt((beta * getNationalEnvironment().sigmaE) ** 2 + ((1 - w) * F.RACE_SIGMA[raceType]) ** 2 + (w * F.POLL_SIGMA[raceType]) ** 2);
 }
 
 export function normalCdf(z: number): number {
@@ -1158,6 +1197,9 @@ export interface CandidateQuality {
   pts: number;
   dem: (CandidateRecord & { name: string }) | null;
   rep: (CandidateRecord & { name: string }) | null;
+  /** Layer B observable prior per nominee (the whole term for one with no track record). */
+  demPrior: number;
+  repPrior: number;
 }
 
 const _effectsCache = new Map<string, Map<string, CandidateRecord>>();
@@ -1179,7 +1221,7 @@ export function computeCandidateEffects(asOf: number = ELECTION_CYCLE, maxYear: 
   for (const p of buildWarPending()) {
     if (p.r.year > maxYear) continue;
     const ffPts = p.withMoney && p.gap != null ? Math.max(-FF_MAX, Math.min(FF_MAX, FF_K * p.gap)) : 0;
-    const race: EffectRace = { r: p.r.rawMargin! - (p.base + ffPts), year: p.r.year, actual: p.r.rawMargin!, inc: p.r.incumbent === "R" ? "R" : p.r.incumbent === "D" ? "D" : null };
+    const race: EffectRace = { r: p.r.rawMargin! - (p.base + ffPts), year: p.r.year, actual: p.r.rawMargin!, inc: p.r.incumbent === "R" ? "R" : p.r.incumbent === "D" ? "D" : null, office: p.office, w: p.boundaryWeight ?? 1 };
     if (p.r.demCandidate) race.D = warCandidateKey(p.state, p.r.demParty ?? "D", p.r.demCandidate);
     if (p.r.repCandidate) race.R = warCandidateKey(p.state, p.r.repParty ?? "R", p.r.repCandidate);
     for (const k of [race.D, race.R]) {
@@ -1189,7 +1231,15 @@ export function computeCandidateEffects(asOf: number = ELECTION_CYCLE, maxYear: 
     }
     races.push(race);
   }
-  const ob = buildObservablePrior(races, asOf);
+  // Incumbents of the cycle being forecast get no observable features (incumbency is its own term).
+  const incumbentsAsOf = new Set<string>();
+  if (asOf === ELECTION_CYCLE) {
+    for (const race of [...senateData, ...governorData, ...houseData]) {
+      const abbr = race.raceType === "house" ? statesData.find((s) => s.name === race.state)?.abbr ?? "" : race.id.replace(/-\d+$/, "");
+      for (const c of [race.candidates?.dem, race.candidates?.rep]) if (c?.incumbent && c.name) incumbentsAsOf.add(warCandidateKey(abbr, c.party, c.name));
+    }
+  }
+  const ob = buildObservablePrior(races, asOf, incumbentsAsOf);
   _observablePriorCache.set(cacheKey, ob);
   const { a, stats } = solveCandidateEffects(races, asOf, undefined, ob.prior);
   const out = new Map<string, CandidateRecord>();
@@ -1207,21 +1257,28 @@ export function candidateQuality(race: {
   id: string;
   state: string;
   raceType: string;
-  candidates?: { dem: { name: string; party: string }; rep: { name: string; party: string } };
+  candidates?: { dem: { name: string; party: string; incumbent?: boolean }; rep: { name: string; party: string; incumbent?: boolean } };
 }): CandidateQuality {
   const abbr = race.raceType === "house"
     ? statesData.find((s) => s.name === race.state)?.abbr ?? ""
     : race.id.replace(/-\d+$/, "");
   const effects = computeCandidateEffects();
-  const lookup = (c?: { name: string; party: string }) => {
-    if (!c || !c.name || PLACEHOLDER_NOMINEE.test(c.name.trim())) return null;
-    const rec = effects.get(warCandidateKey(abbr, c.party, c.name));
-    return rec ? { ...rec, name: c.name } : null;
+  const ob = getObservablePrior();
+  const openSeat = !race.candidates?.dem.incumbent && !race.candidates?.rep.incumbent;
+  const lookup = (c?: { name: string; party: string; incumbent?: boolean }) => {
+    if (!c || !c.name || PLACEHOLDER_NOMINEE.test(c.name.trim())) return { rec: null, prior: 0 };
+    // An aligned independent (Kiley) keeps the record filed under their former party.
+    const key = warCandidateKey(abbr, alignedParty(c) ?? c.party, c.name);
+    const rec = effects.get(key);
+    return { rec: rec ? { ...rec, name: c.name } : null, prior: ob.valueFor(key, ELECTION_CYCLE, !!c.incumbent, openSeat) };
   };
   const dem = lookup(race.candidates?.dem);
   const rep = lookup(race.candidates?.rep);
   const office = race.raceType === "house" ? "H" : race.raceType === "senate" ? "S" : "G";
-  return { pts: F.QUALITY_WEIGHT[office] * ((rep?.effect ?? 0) - (dem?.effect ?? 0)), dem, rep };
+  // A nominee with a track record carries their ridge effect (already shrunk toward the
+  // prior); one without any record is worth exactly their observable prior.
+  const effectOf = (x: typeof dem) => x.rec?.effect ?? x.prior;
+  return { pts: F.QUALITY_WEIGHT[office] * (effectOf(rep) - effectOf(dem)), dem: dem.rec, rep: rep.rec, demPrior: dem.prior, repPrior: rep.prior };
 }
 
 // ── Fundraising factor (forward projection) ───────────────────────────────────
@@ -1300,6 +1357,9 @@ export interface WarRow {
   opponentEffect: number;     // the opponent's ridge effect as of this race's year, signed toward the OPPONENT (0 if no opponent)
   expectedVsOpponent: number; // R-positive expected margin for a generic nominee of this party vs this specific opponent
   war: number;      // actual − expectedVsOpponent, signed toward this candidate = effect + the race's unexplained leftover
+  /** < 1 for a House race relocated across a redistricting — how far it had to move, as a
+   *  confidence multiplier. Discounts it in the ridge exactly as it is discounted in TPL. */
+  boundaryWeight?: number;
   note: string;
 }
 
@@ -1319,58 +1379,109 @@ export const WAR_LAMBDA = 1;
 // 6 yrs 0.26 · 8 yrs 0.17). Measured persistence of repeat candidates' residuals (|r| < 25):
 // slope ≈ 0.45 at 1–4 yr gaps, 0.26 at 5–6, ≈ 0 at 7–9 — roughly this curve. One weighted
 // solve per distinct year (10), warm-started from the previous year's effects.
+// Statewide races (Senate / Governor / President) decay more slowly: a personal brand built
+// statewide persists longer than a House record (user decision 2026-09-16; value set by
+// forwardBacktest --decay-sweep). The decay is a property of the PAST race being weighted.
 export const WAR_RECENCY_DECAY = 0.8;
+export const WAR_RECENCY_DECAY_STATEWIDE = 0.9;
+export const recencyDecayFor = (office?: string) => (office === "S" || office === "G" || office === "P" ? WAR_RECENCY_DECAY_STATEWIDE : WAR_RECENCY_DECAY);
 
 export const warCandidateKey = (state: string, party: string, name: string) =>
   `${state}|${party}|${name.toLowerCase().replace(/[^a-z ]/g, "").replace(/\s+/g, " ").trim()}`;
 
 /** Fit recency-weighted ridge candidate effects over race residuals and fill effect/war on each row (mutates rows). */
-export interface EffectRace { r: number; year: number; R?: string; D?: string; actual?: number; inc?: "R" | "D" | null; }
+export interface EffectRace { r: number; year: number; R?: string; D?: string; actual?: number; inc?: "R" | "D" | null; office?: string;
+  /** Extra confidence multiplier on top of recency decay — < 1 for a House race relocated
+   *  across a redistricting, whose residual is a noisy read on the candidate. */
+  w?: number; }
 
 // ── Observable prior (Layer B) ────────────────────────────────────────────────
-// What a nominee's record says before their own residuals are read: from the same
-// race rows, whether they have won a general election before (while not being the
-// incumbent in the race at hand) and whether they have lost one. The coefficients
-// come from an OLS of race residuals on the R−D difference of those indicators;
-// the fitted value becomes each candidate's ridge shrinkage target (0 today).
-// Deliberately limited to observables our own data can supply; prior-office tiers
-// from outside the dataset are a data-entry job (spec Phase 4, Layer B).
-export interface ObservablePrior { prior: Map<string, number>; coef: { priorWin: number; priorLoss: number }; n: number; }
+// What a nominee's record says before their own residuals are read. Features that
+// are knowable in September of the election year:
+//   legislator        held state-legislative or higher elected office by that year
+//   federalStatewide  held U.S. House / statewide or higher office (increment over legislator)
+//   local             highest office held was local (mayor, council, county, DA, sheriff…)
+//   priorWin          won a general election in our own results before that year
+//   openLegislator    legislator-or-higher, counted only in an open seat (no incumbent on either side)
+// Office tiers come from data/candidateOffices.ts (Wikipedia officeholder infoboxes,
+// data-entry/candidate_office_history.csv). Every feature is 0 for the incumbent in the
+// race at hand — incumbency is its own term, and an incumbent's tier just re-measures it.
+// The coefficients are an OLS of race residuals on the R−D feature difference; the fitted
+// value becomes each candidate's ridge shrinkage target, and the forward term for a
+// nominee with no track record at all.
+export type ObservableFeature = "legislator" | "federalStatewide" | "local" | "priorWin" | "openLegislator";
+export const OBSERVABLE_FEATURES: ObservableFeature[] = ["legislator", "federalStatewide", "local", "priorWin", "openLegislator"];
+export interface ObservablePrior {
+  prior: Map<string, number>;
+  coef: Record<ObservableFeature, number>;
+  n: number;
+  features: ObservableFeature[];
+  /** Prior for any candidate key as of `year` (0 for an incumbent, or with no observables); `openSeat` = no incumbent in the race. */
+  valueFor: (key: string, year: number, incumbent: boolean, openSeat: boolean) => number;
+}
 
-export function buildObservablePrior(races: EffectRace[], asOf: number, incumbentsAsOf?: Set<string>): ObservablePrior {
-  const scored = races.filter((rc) => rc.actual != null).sort((x, y) => x.year - y.year);
-  const wins = new Map<string, number[]>(), losses = new Map<string, number[]>();
-  for (const rc of scored) {
-    const rWon = rc.actual! > 0;
-    if (rc.R) (rWon ? wins : losses).set(rc.R, [...((rWon ? wins : losses).get(rc.R) ?? []), rc.year]);
-    if (rc.D) (rWon ? losses : wins).set(rc.D, [...((rWon ? losses : wins).get(rc.D) ?? []), rc.year]);
+/** Highest elected-office tier (1–5, see build-candidate-offices.js) a candidate had held by `year`; 0 = none known. */
+export function priorOfficeTier(key: string, year: number): number {
+  const rec = candidateOffices[key];
+  if (!rec) return 0;
+  let best = 0;
+  for (const o of rec.offices) {
+    const heldBy = o.s != null ? o.s <= year : o.e != null && o.e <= year;
+    if (heldBy && o.t > best) best = o.t;
   }
-  const before = (m: Map<string, number[]>, k: string | undefined, y: number) => (k ? (m.get(k) ?? []).filter((yr) => yr < y).length : 0);
-  // x = [prior win while NOT the incumbent here, prior loss]; race-level: Δx = x_R − x_D.
-  // Incumbents are excluded from the prior-win indicator because incumbency is its own
-  // term — without that exclusion the coefficient just re-measures incumbency.
+  return best;
+}
+
+// Solve M·x = b (small dense system) by Gaussian elimination with partial pivoting; null if singular.
+function solveLinear(M: number[][], b: number[]): number[] | null {
+  const n = b.length; const A = M.map((row, i) => [...row, b[i]]);
+  for (let c = 0; c < n; c++) {
+    let p = c;
+    for (let r = c + 1; r < n; r++) if (Math.abs(A[r][c]) > Math.abs(A[p][c])) p = r;
+    [A[c], A[p]] = [A[p], A[c]];
+    if (Math.abs(A[c][c]) < 1e-9) return null;
+    for (let r = 0; r < n; r++) { if (r === c) continue; const f = A[r][c] / A[c][c]; for (let k = c; k <= n; k++) A[r][k] -= f * A[c][k]; }
+  }
+  return A.map((row, i) => row[n] / row[i]);
+}
+
+export function buildObservablePrior(races: EffectRace[], asOf: number, incumbentsAsOf?: Set<string>, features: ObservableFeature[] = F.OBSERVABLE_PRIOR_FEATURES as ObservableFeature[]): ObservablePrior {
+  const scored = races.filter((rc) => rc.actual != null).sort((x, y) => x.year - y.year);
+  const wins = new Map<string, number[]>();
+  for (const rc of scored) {
+    const winner = rc.actual! > 0 ? rc.R : rc.D;
+    if (winner) wins.set(winner, [...(wins.get(winner) ?? []), rc.year]);
+  }
+  const wonBefore = (k: string, y: number) => (wins.get(k) ?? []).some((yr) => yr < y);
+  const x = (k: string | undefined, y: number, inc: boolean, open: boolean): number[] => {
+    if (!k || inc) return features.map(() => 0);
+    const tier = priorOfficeTier(k, y);
+    return features.map((f) => f === "legislator" ? (tier >= 3 ? 1 : 0) : f === "federalStatewide" ? (tier >= 4 ? 1 : 0) : f === "local" ? (tier === 2 ? 1 : 0) : f === "openLegislator" ? (open && tier >= 3 ? 1 : 0) : (wonBefore(k, y) ? 1 : 0));
+  };
+  // Race-level regressors Δx = x_R − x_D; only races where some feature differs identify anything.
   const X: number[][] = [], Yv: number[] = [];
   for (const rc of scored) {
-    const xR = [rc.inc !== "R" && before(wins, rc.R, rc.year) > 0 ? 1 : 0, before(losses, rc.R, rc.year) > 0 ? 1 : 0];
-    const xD = [rc.inc !== "D" && before(wins, rc.D, rc.year) > 0 ? 1 : 0, before(losses, rc.D, rc.year) > 0 ? 1 : 0];
-    const dx = [xR[0] - xD[0], xR[1] - xD[1]];
-    if (dx[0] === 0) continue;
+    const xr = x(rc.R, rc.year, rc.inc === "R", !rc.inc), xd = x(rc.D, rc.year, rc.inc === "D", !rc.inc);
+    const dx = xr.map((v, i) => v - xd[i]);
+    if (dx.every((v) => v === 0)) continue;
     X.push(dx); Yv.push(rc.r);
   }
-  // Single-regressor OLS on the prior-win difference (prior-loss is reported for
-  // diagnostics but carries no weight: its sign flipped between backtest windows).
-  let coef = { priorWin: 0, priorLoss: 0 };
-  if (X.length >= 20) {
-    let a11 = 0, b1 = 0;
-    X.forEach((x, i) => { a11 += x[0] * x[0]; b1 += x[0] * Yv[i]; });
-    if (a11 > 0) coef = { priorWin: b1 / a11, priorLoss: 0 };
+  const k = features.length;
+  let beta: number[] = features.map(() => 0);
+  if (k > 0 && X.length >= 20) {
+    const M = features.map(() => features.map(() => 0)), b = features.map(() => 0);
+    X.forEach((row, i) => { for (let a = 0; a < k; a++) { b[a] += row[a] * Yv[i]; for (let c = 0; c < k; c++) M[a][c] += row[a] * row[c]; } });
+    beta = solveLinear(M, b) ?? beta;
   }
-  if (!F.OBSERVABLE_PRIOR) coef = { priorWin: 0, priorLoss: 0 };
+  const coef = { legislator: 0, federalStatewide: 0, local: 0, priorWin: 0, openLegislator: 0 } as Record<ObservableFeature, number>;
+  features.forEach((f, i) => { coef[f] = beta[i]; });
+  const valueFor = (key: string, year: number, incumbent: boolean, openSeat: boolean) => x(key, year, incumbent, openSeat).reduce((t, v, i) => t + v * beta[i], 0);
   const prior = new Map<string, number>();
-  for (const k of new Set([...wins.keys(), ...losses.keys()])) {
-    prior.set(k, coef.priorWin * (!incumbentsAsOf?.has(k) && before(wins, k, asOf) > 0 ? 1 : 0) + coef.priorLoss * (before(losses, k, asOf) > 0 ? 1 : 0));
-  }
-  return { prior, coef, n: X.length };
+  const keys = new Set<string>();
+  for (const rc of races) { if (rc.R) keys.add(rc.R); if (rc.D) keys.add(rc.D); }
+  // The shrinkage target cannot know the next race's incumbency; open-seat-only features enter there as 0.
+  for (const key of keys) prior.set(key, valueFor(key, asOf, incumbentsAsOf?.has(key) ?? false, false));
+  return { prior, coef, n: X.length, features, valueFor };
 }
 
 // Ridge solve of candidate effects as of target year Y over the given races
@@ -1381,7 +1492,8 @@ export function solveCandidateEffects(
   races: Iterable<EffectRace>,
   Y: number,
   warm?: Map<string, number>,
-  prior?: Map<string, number>
+  prior?: Map<string, number>,
+  decay: (office?: string) => number = recencyDecayFor
 ): { a: Map<string, number>; stats: Map<string, { n: number; w: number }> } {
   const list = [...races];
   const obs = new Map<string, { race: EffectRace; s: number }[]>();
@@ -1391,7 +1503,7 @@ export function solveCandidateEffects(
   }
   const a = warm ?? new Map<string, number>();
   const pred = (rc: EffectRace) => (rc.R ? a.get(rc.R) ?? 0 : 0) - (rc.D ? a.get(rc.D) ?? 0 : 0);
-  const wt = (year: number) => WAR_RECENCY_DECAY ** Math.abs(year - Y);
+  const wt = (race: EffectRace) => (race.w ?? 1) * decay(race.office) ** Math.abs(race.year - Y);
   for (let it = 0; it < 200; it++) {
     let maxDelta = 0;
     for (const [c, o] of obs) {
@@ -1399,7 +1511,7 @@ export function solveCandidateEffects(
       let num = WAR_LAMBDA * (prior?.get(c) ?? 0);
       let den = WAR_LAMBDA;
       for (const { race, s } of o) {
-        const w = wt(race.year);
+        const w = wt(race);
         num += w * (s * (race.r - pred(race)) + prev);
         den += w;
       }
@@ -1410,7 +1522,7 @@ export function solveCandidateEffects(
     if (maxDelta < 1e-6) break;
   }
   const stats = new Map<string, { n: number; w: number }>();
-  for (const [c, o] of obs) stats.set(c, { n: o.length, w: o.reduce((acc, { race }) => acc + wt(race.year), 0) });
+  for (const [c, o] of obs) stats.set(c, { n: o.length, w: o.reduce((acc, { race }) => acc + wt(race), 0) });
   return { a, stats };
 }
 
@@ -1419,7 +1531,7 @@ function attributeWar(rows: WarRow[]): void {
   const races = new Map<string, Race>();
   for (const row of rows) {
     const k = `${row.state}|${row.office}|${row.race}|${row.year}`;
-    const rc = races.get(k) ?? races.set(k, { r: row.actual - row.expected, year: row.year, rows: [] }).get(k)!;
+    const rc = races.get(k) ?? races.set(k, { r: row.actual - row.expected, year: row.year, office: row.office, w: row.boundaryWeight ?? 1, rows: [] }).get(k)!;
     rc.rows.push(row);
     if (row.party === "R") rc.R = warCandidateKey(row.state, row.party, row.candidate);
     else rc.D = warCandidateKey(row.state, row.party, row.candidate);
@@ -1490,12 +1602,51 @@ function fitWarMoneyModel(rows: { gap: number; incSign: number; base: number }[]
 
 let _warCache: WarRow[] | null = null;
 let _warMoneyCache: Record<string, WarMoneyModel> | null = null;
-type WarPending = { r: ComputedRace; office: WarRow["office"]; raceLabel: string; state: string; base: number; incSign: number; gap: number | null; withMoney: boolean; note: string };
+type WarPending = { r: ComputedRace; office: WarRow["office"]; raceLabel: string; state: string; base: number; incSign: number; gap: number | null; withMoney: boolean; boundaryWeight?: number; note: string };
 let _warPendingCache: WarPending[] | null = null;
 
 // Every scorable race with its pre-money expected margin (base = anchor lean + β*E +
 // incumbency), shared by the WAR table (structural money) and the forward candidate
 // effects (full money).
+// ── Year-local anchoring for WAR ─────────────────────────────────────────────
+// A lean (state fitted lean, or District TPL) is a single number across 2016–2025, but a
+// race is a fact about its own year. Scoring an old race against a present-day lean charges
+// the candidate for everything the electorate did since — NY-06 swung 34 pts right between
+// the 2016 and 2024 presidential results, and Florida 10. So each race's expectation is moved
+// by the TREND: how far that year's environment-neutral presidential margin sat from the
+// presidential average the lean embodies. Presidential margins exist only every four years,
+// so any other year is linearly interpolated between the bracketing ones.
+
+const PRES_ANCHOR_YEARS = [2016, 2020, 2024];
+
+/** Bracketing presidential years for a race year, with linear-interpolation weights.
+ *  2018 → {2016: .5, 2020: .5}; 2017 → {2016: .75, 2020: .25}; 2025 clamps to 2024. */
+export function presInterpWeights(year: number): [number, number][] {
+  const P = PRES_ANCHOR_YEARS;
+  if (year <= P[0]) return [[P[0], 1]];
+  if (year >= P[P.length - 1]) return [[P[P.length - 1], 1]];
+  for (let i = 0; i < P.length - 1; i += 1) {
+    const [a, b] = [P[i], P[i + 1]];
+    if (year < a || year > b) continue;
+    const t = (year - a) / (b - a);
+    return t === 0 ? [[a, 1]] : t === 1 ? [[b, 1]] : [[a, 1 - t], [b, t]];
+  }
+  return [[P[P.length - 1], 1]];
+}
+
+/** Environment-neutral presidential margin interpolated to `year`, from P-row NMs by year. */
+function interpolatedPresNM(presNM: Map<number, number>, year: number): number | null {
+  let acc = 0;
+  let wsum = 0;
+  for (const [py, w] of presInterpWeights(year)) {
+    const v = presNM.get(py);
+    if (v == null) continue;
+    acc += w * v;
+    wsum += w;
+  }
+  return wsum > 0 ? acc / wsum : null;
+}
+
 function buildWarPending(): WarPending[] {
   if (_warPendingCache) return _warPendingCache;
   const fit = getTplFit();
@@ -1507,12 +1658,25 @@ function buildWarPending(): WarPending[] {
     const lean = fit.lean[abbr];
     const beta = fit.beta[abbr]?.shrunk ?? 1;
     if (lean == null) continue;
-    for (const r of calculateStateModel(abbr, name).races) {
+    const stateRaces = calculateStateModel(abbr, name).races;
+    // The fitted lean has NO recency decay (getTplFit is a flat least-squares fit over
+    // 2016–2025), so the presidential average it embodies is an EQUAL-year one — unlike
+    // District TPL, whose recency weighting the district anchor below mirrors. Mixing the two
+    // would bake a decay-shaped bias back in. Huber factors (aggWeight) are kept.
+    const presRows = stateRaces.filter((x) => x.raceType === "P" && x.NM != null && x.year <= 2025);
+    const presWSum = presRows.reduce((a, x) => a + x.aggWeight, 0);
+    const presBar = presWSum > 0 ? presRows.reduce((a, x) => a + x.aggWeight * x.NM!, 0) / presWSum : null;
+    const presNM = new Map(presRows.map((x) => [x.year, x.NM!]));
+    for (const r of stateRaces) {
       if (r.raceType === "L" || r.raceType === "H" || r.year > 2025 || r.rawMargin == null) continue;
       const E = fit.E[r.year] ?? 0;
       const office = r.raceType as WarRow["office"];
       if (!r.imputed && r.eligibility === "eligible") {
-        pending.push({ r, office, raceLabel: r.race, state: abbr, base: lean + beta * E - (r.incumbencyPts ?? 0), incSign: incSignOf(r), gap: gapOf(r), withMoney: true, note: "vs state fitted lean" });
+        // Presidential rows are NOT trend-anchored: their own margin IS the trend input, so the
+        // residual would collapse to the constant down-ballot offset by construction.
+        const yearPres = r.raceType === "P" ? null : interpolatedPresNM(presNM, r.year);
+        const trend = yearPres != null && presBar != null ? yearPres - presBar : 0;
+        pending.push({ r, office, raceLabel: r.race, state: abbr, base: lean + trend + beta * E - (r.incumbencyPts ?? 0), incSign: incSignOf(r), gap: gapOf(r), withMoney: true, note: r.raceType === "P" ? "vs state fitted lean" : `vs state lean in ${r.year}` });
       } else if (r.imputed && r.NM != null && (r.eligibility === "no-dem" || r.eligibility === "no-rep")) {
         // Same-party and jungle-fragmented generals carry no signable R-vs-D margin.
         // Imputed baselines carry no money term (the imputation is a presidential lean).
@@ -1523,9 +1687,39 @@ function buildWarPending(): WarPending[] {
   for (const districtId of Object.keys(districtPresidentialData)) {
     const calc = calculateDistrictModel(districtId);
     const beta = fit.beta[calc.stateAbbr]?.shrunk ?? 1;
+    // District TPL is ONE recency-weighted lean — in practice ~2024 politics. A House race is
+    // a fact about its own year, so scoring a 2016 race against it charges the candidate for
+    // everything the district did since: NY-06 went D+40 → D+29 → D+6 on the 2016/2020/2024
+    // presidential margins, and Grace Meng's 2016 race (12.6 pts ahead of Clinton on the same
+    // turf) was being scored 18 pts more Republican than Clinton's own result, for WAR +22.
+    //
+    // So the expectation is anchored on the district's lean IN THAT YEAR: TPL, moved by how
+    // far that year's environment-neutral presidential margin sat from the presidential
+    // average TPL embodies (the trend), and by the boundary shift (the turf):
+    //
+    //   presBar  = aggregation-weighted mean of the P rows' NM (neutral pres, 2026 lines) —
+    //              RECENCY-weighted, because District TPL is (the state anchor is not)
+    //   trend(Y) = NM interpolated to year Y on 2026 lines − presBar
+    //   base     = TPL + trend(Y) + shift + β·E(Y) − IF
+    //
+    // Midterms interpolate the trend (2018 = ½·2016 + ½·2020). The trend is measured on
+    // today's lines, where all three presidential years exist, so it needs no old-map data;
+    // only the boundary SHIFT depends on what the old maps' presidential results are.
+    const presRows = calc.races.filter((x) => x.raceType === "P" && x.NM != null);
+    const presW = presRows.map((x) => (G.YEAR_WEIGHTS[x.year] ?? 0) * x.aggWeight);
+    const presWSum = presW.reduce((a, b) => a + b, 0);
+    const presBar = presWSum > 0 ? presRows.reduce((acc, x, i) => acc + presW[i] * x.NM!, 0) / presWSum : calc.tpl;
+    const presNM = new Map(presRows.map((x) => [x.year, x.NM!]));
     for (const r of calc.races) {
       if (r.raceType !== "H" || r.rawMargin == null) continue;
-      pending.push({ r, office: "H", raceLabel: r.race, state: calc.stateAbbr, base: calc.tpl + beta * (fit.E[r.year] ?? 0) - (r.incumbencyPts ?? 0), incSign: incSignOf(r), gap: gapOf(r), withMoney: true, note: "vs district TPL" });
+      const yearPres = interpolatedPresNM(presNM, r.year);
+      const trend = yearPres != null ? yearPres - presBar : 0;
+      // `actual` is the margin as recorded on the map the race was RUN on, so the expectation
+      // must sit on that turf too (−BS_pts is the shift). Without it Doyle's D+48.7 in the
+      // 2016 Pittsburgh PA-14 was scored against today's rural R+27 PA-14.
+      const shift = -(r.BS_pts ?? 0);
+      const relocated = r.boundaryShift != null && Math.abs(r.boundaryShift) >= 0.5;
+      pending.push({ r, office: "H", raceLabel: r.race, state: calc.stateAbbr, base: calc.tpl + trend + shift + beta * (fit.E[r.year] ?? 0) - (r.incumbencyPts ?? 0), incSign: incSignOf(r), gap: gapOf(r), withMoney: true, boundaryWeight: r.boundaryWeight ?? 1, note: relocated ? `vs district lean in ${r.year}, on that year's lines` : `vs district lean in ${r.year}` });
     }
   }
   _warPendingCache = pending;
@@ -1557,7 +1751,7 @@ export function computeWarTable(): WarRow[] {
     const ffStructuralPts = p.withMoney ? Math.max(-FF_MAX, Math.min(FF_MAX, FF_K * structuralGapPct)) : 0;
     const expected = p.base + ffStructuralPts;
     // residual/effect/war are filled by attributeWar() once every race is collected.
-    const base = { office: p.office, race: p.raceLabel, state: p.state, year: p.r.year, actual: p.r.rawMargin!, expected, moneyGapPct: p.gap, structuralGapPct, ffStructuralPts, residual: 0, effect: 0, effectN: 0, effectW: 0, opponentEffect: 0, expectedVsOpponent: 0, war: 0, note: p.note };
+    const base = { office: p.office, race: p.raceLabel, state: p.state, year: p.r.year, actual: p.r.rawMargin!, expected, moneyGapPct: p.gap, structuralGapPct, ffStructuralPts, residual: 0, effect: 0, effectN: 0, effectW: 0, opponentEffect: 0, expectedVsOpponent: 0, war: 0, boundaryWeight: p.boundaryWeight ?? 1, note: p.note };
     if (p.r.demCandidate) out.push({ candidate: p.r.demCandidate, party: p.r.demParty ?? "D", ...base });
     if (p.r.repCandidate) out.push({ candidate: p.r.repCandidate, party: p.r.repParty ?? "R", ...base });
   }
