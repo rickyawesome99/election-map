@@ -43,30 +43,30 @@ test("top-level tabs keep the URL and visible page in sync", async ({ page }) =>
   await expect(page).toHaveURL(/\/model$/);
   await expect(page.getByRole("button", { name: "State TPL" })).toBeVisible();
 
-  await page.getByRole("link", { name: "2026 Forecast" }).click();
+  await page.getByRole("link", { name: "Forecast", exact: true }).click();
   await expect(page).toHaveURL(/\/senate$/);
-  await expect(page.getByRole("heading", { name: "Senate Races" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "U.S. Senate" })).toBeVisible();
 });
 
 test("forecast tab returns to the last selected chamber after visiting analysis", async ({ page }) => {
   await page.goto("/senate");
-  await expect(page.getByRole("heading", { name: "Senate Races" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "U.S. Senate" })).toBeVisible();
 
   await page.getByRole("button", { name: "Governor" }).click();
   await expect(page).toHaveURL(/\/governor$/);
-  await expect(page.getByRole("heading", { name: "Governor Races" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Governors" })).toBeVisible();
 
   await page.getByRole("link", { name: "Analysis" }).click();
   await expect(page).toHaveURL(/\/analysis$/);
 
-  await page.getByRole("link", { name: "2026 Forecast" }).click();
+  await page.getByRole("link", { name: "Forecast", exact: true }).click();
   await expect(page).toHaveURL(/\/governor$/);
-  await expect(page.getByRole("heading", { name: "Governor Races" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Governors" })).toBeVisible();
 });
 
 test("forecast map selection exposes a working more-info link", async ({ page }, testInfo) => {
   await page.goto("/senate");
-  await expect(page.getByRole("heading", { name: "Senate Races" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "U.S. Senate" })).toBeVisible();
   await selectFirstInteractiveMapFeature(page, testInfo.project.name);
 
   const moreInfo = page.getByRole("link", { name: "More Info" }).first();
@@ -76,7 +76,7 @@ test("forecast map selection exposes a working more-info link", async ({ page },
 
 test("race table links render the destination page on the first click", async ({ page }) => {
   await page.goto("/senate");
-  await expect(page.getByRole("heading", { name: "Senate Races" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "U.S. Senate" })).toBeVisible();
 
   await page.getByRole("link", { name: "Alabama" }).first().click();
   await expect(page).toHaveURL(/\/senate\/al$/);
@@ -86,15 +86,15 @@ test("race table links render the destination page on the first click", async ({
 
 test("forecast buttons remount a clickable map", async ({ page }, testInfo) => {
   await page.goto("/senate");
-  await expect(page.getByRole("heading", { name: "Senate Races" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "U.S. Senate" })).toBeVisible();
 
   await page.getByRole("button", { name: "House" }).click();
   await expect(page).toHaveURL(/\/house$/);
-  await expect(page.getByRole("heading", { name: "House Races" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "U.S. House" })).toBeVisible();
 
   await page.getByRole("button", { name: "Senate" }).click();
   await expect(page).toHaveURL(/\/senate$/);
-  await expect(page.getByRole("heading", { name: "Senate Races" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "U.S. Senate" })).toBeVisible();
   await selectFirstInteractiveMapFeature(page, testInfo.project.name);
   await expect(page.getByRole("link", { name: "More Info" }).first()).toBeVisible();
 });
@@ -103,5 +103,5 @@ test("analysis links render on the first click", async ({ page }) => {
   await page.goto("/analysis");
   await page.getByRole("link", { name: "OH-31" }).click();
   await expect(page).toHaveURL(/\/analysis\/oh-31$/);
-  await expect(page.getByRole("heading", { name: /OH-31/i })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "House District 31" })).toBeVisible();
 });

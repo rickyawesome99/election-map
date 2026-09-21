@@ -4,7 +4,7 @@ import { useMemo } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
 import { computeTrumpApprovalAverage } from "@/lib/trumpApprovalAverage";
-import { getRaceColor, marginToRating } from "@/lib/colorScale";
+import { fmtMargin, formatProjectedMargin, getRaceColor, marginToRating } from "@/lib/colorScale";
 import { calculateStateTpl } from "@/lib/tplCompute";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { electionYear } from "@/data/forecastData";
@@ -15,18 +15,15 @@ import {
   SEAT_HOLDOVERS,
   type Theme,
 } from "./ForecastMap";
-import { governorForecasts, houseForecasts, senateForecasts } from "@/lib/forecast";
+import { governorForecasts, houseForecasts, senateForecasts, getChamberSimulations, TOTAL_SEATS_BY_TYPE } from "@/lib/forecast";
 import PollingAverageCard from "./PollingAverageCard";
+import SeatHistogram from "./SeatHistogram";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 type MapMode = "house" | "senate" | "governor";
 type ForecastRace = (typeof houseForecasts)[number];
 type GeoFeature = { rsmKey: string; id?: string | number; properties?: Record<string, string | undefined> };
 
-function formatMargin(margin: number) {
-  if (Math.abs(margin) < 0.05) return "EVEN";
-  return `${margin <= 0 ? "D" : "R"}+${Math.abs(margin).toFixed(1)}`;
-}
 
 function seatTotals(data: { margin: number }[], holdover: { dem: number; rep: number }) {
   return {
@@ -51,6 +48,7 @@ export default function OverviewEditorial() {
   const house = seatTotals(houseForecasts, SEAT_HOLDOVERS.house);
   const senate = seatTotals(senateForecasts, SEAT_HOLDOVERS.senate);
   const governor = seatTotals(governorForecasts, SEAT_HOLDOVERS.governor);
+  const sims = getChamberSimulations();
 
   const stateMargins = useMemo(() => {
     return new Map(statesData.map((state) => [state.name, calculateStateTpl(state.abbr, state.name)]));
@@ -77,7 +75,7 @@ export default function OverviewEditorial() {
             </div>
             <div className="shrink-0 md:text-right">
               <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>Generic Ballot</div>
-              <div className="mt-2 tabular-nums" style={{ color: gb.diff <= 0 ? t.demText : t.repText, fontFamily: "var(--font-serif)", fontSize: "clamp(3rem, 6vw, 4.75rem)", fontWeight: 700, lineHeight: 0.9 }}>{formatMargin(gb.diff)}</div>
+              <div className="mt-2 tabular-nums" style={{ color: gb.diff <= 0 ? t.demText : t.repText, fontFamily: "var(--font-serif)", fontSize: "clamp(3rem, 6vw, 4.75rem)", fontWeight: 700, lineHeight: 0.9 }}>{fmtMargin(gb.diff)}</div>
               <div className="mt-2 text-sm font-semibold"><span style={{ color: t.demText }}>D {gb.dem.toFixed(1)}%</span><span className="px-2" style={{ color: t.textVeryMuted }}>·</span><span style={{ color: t.repText }}>R {gb.rep.toFixed(1)}%</span></div>
             </div>
           </div>
@@ -110,7 +108,7 @@ export default function OverviewEditorial() {
                   const state = geo.properties?.name as string;
                   const margin = stateMargins.get(state);
                   const stateSlug = statesData.find((entry) => entry.name === state)?.id;
-                  return <Geography key={geo.rsmKey} geography={geo} onClick={() => { if (stateSlug) window.location.assign(`/states/${stateSlug}`); }} aria-label={`${state}${margin == null ? "" : ` ${formatMargin(margin)}`}`} style={{ default: { fill: margin == null ? t.mapUnfilled : getRaceColor(margin), stroke: t.mapStroke, strokeWidth: 1.2, outline: "none" }, hover: { fill: margin == null ? t.hoverUnfilled : getRaceColor(margin), stroke: t.hoverStroke, strokeWidth: 1.7, outline: "none", cursor: "pointer" }, pressed: { fill: margin == null ? t.mapUnfilled : getRaceColor(margin), stroke: t.hoverStroke, strokeWidth: 2, outline: "none" } }} />;
+                  return <Geography key={geo.rsmKey} geography={geo} onClick={() => { if (stateSlug) window.location.assign(`/states/${stateSlug}`); }} aria-label={`${state}${margin == null ? "" : ` ${formatProjectedMargin(margin)}`}`} style={{ default: { fill: margin == null ? t.mapUnfilled : getRaceColor(margin), stroke: t.mapStroke, strokeWidth: 1.2, outline: "none" }, hover: { fill: margin == null ? t.hoverUnfilled : getRaceColor(margin), stroke: t.hoverStroke, strokeWidth: 1.7, outline: "none", cursor: "pointer" }, pressed: { fill: margin == null ? t.mapUnfilled : getRaceColor(margin), stroke: t.hoverStroke, strokeWidth: 2, outline: "none" } }} />;
                 })}</Geographies>
               </ComposableMap>
             </div>
@@ -121,10 +119,22 @@ export default function OverviewEditorial() {
             <SectionHead theme={t}>Key Races</SectionHead>
             <div>{keyRaces.map(({ race, type }) => {
               const href = `/${type}/${(type === "house" ? race.name : race.id).toLowerCase().replace(/-2$/, "2")}`;
-              return <a key={`${type}-${race.id}`} href={href} className="grid grid-cols-[1fr_auto] gap-3 py-4 transition-opacity hover:opacity-70" style={{ borderBottom: `1px solid ${t.border}` }}><div><div className="font-semibold">{type === "house" ? race.name : race.state}</div><div className="mt-1 text-[10px] uppercase tracking-wider" style={{ color: t.textMuted }}>{type === "house" ? "U.S. House" : type === "senate" ? "U.S. Senate" : "Governor"}</div></div><div className="text-right"><div className="text-lg font-extrabold tabular-nums" style={{ color: race.margin <= 0 ? t.demText : t.repText }}>{formatMargin(race.margin)}</div><div className="text-[10px]" style={{ color: t.textMuted }}>{marginToRating(race.margin)}</div></div></a>;
+              return <a key={`${type}-${race.id}`} href={href} className="grid grid-cols-[1fr_auto] gap-3 py-4 transition-opacity hover:opacity-70" style={{ borderBottom: `1px solid ${t.border}` }}><div><div className="font-semibold">{type === "house" ? race.name : race.state}</div><div className="mt-1 text-[10px] uppercase tracking-wider" style={{ color: t.textMuted }}>{type === "house" ? "U.S. House" : type === "senate" ? "U.S. Senate" : "Governor"}</div></div><div className="text-right"><div className="text-lg font-extrabold tabular-nums" style={{ color: race.margin <= 0 ? t.demText : t.repText }}>{formatProjectedMargin(race.margin)}</div><div className="text-[10px]" style={{ color: t.textMuted }}>{marginToRating(race.margin)}</div></div></a>;
             })}</div>
           </section>
         </div>
+
+        <section className="mt-10">
+          <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b-2 pb-2" style={{ borderColor: t.textPrimary }}>
+            <div className="whitespace-nowrap text-[11px] font-bold uppercase tracking-[0.12em]">Seat Distribution</div>
+            <div className="text-[11px]" style={{ color: t.textMuted }}>Democratic seats across {sims.house.sims.toLocaleString()} simulated elections</div>
+          </div>
+          <div className="grid grid-cols-1 gap-x-10 sm:grid-cols-3">
+            <SeatHistogram label="House" sim={sims.house} total={TOTAL_SEATS_BY_TYPE.house} />
+            <SeatHistogram label="Senate" sim={sims.senate} total={TOTAL_SEATS_BY_TYPE.senate} />
+            <SeatHistogram label="Governors" sim={sims.governor} total={TOTAL_SEATS_BY_TYPE.governor} />
+          </div>
+        </section>
 
         <section className="mt-10">
           <SectionHead theme={t}>National Polling</SectionHead>

@@ -4,7 +4,10 @@ import CandidateLink from "@/components/CandidateLink";
 import { FORECAST_CONSTANTS } from "@/data/tplModelData";
 import { WinProbabilityLabel } from "@/components/WinProbabilityLabel";
 import { InfoTooltip } from "@/components/InfoTooltip";
-import { FF_K, FF_MAX, getNationalEnvironment, incumbentAdvantage, type RacePolling } from "@/lib/tplCompute";
+import PollsterGradeChip from "@/components/PollsterGradeChip";
+import { pollsterGradeOf } from "@/lib/pollsterRatings";
+import { formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
+import { getNationalEnvironment, incumbentAdvantage, type RacePolling, type RaceMoneyTerm } from "@/lib/tplCompute";
 
 type PollRow = {
   label: string;
@@ -759,6 +762,7 @@ export function FundraisingLedgerSection({
   source,
   pendingNote,
   fundraisingPts,
+  typicalGapPct,
 }: {
   // Whole dollars raised; null on either side = not yet sourced.
   dem: number | null;
@@ -768,15 +772,25 @@ export function FundraisingLedgerSection({
   source?: string | null;
   // Why the numbers are missing, e.g. governors filing with the state, not the FEC.
   pendingNote?: string;
-  // The race's FF points in the forecast, R-positive (see computeRaceFundraisingPts).
+  // The race's FF points in the forecast, R-positive (see raceMoneyTerm).
   fundraisingPts?: number | null;
+  // The receipts gap a generic pair of nominees in this situation would have (R-positive %);
+  // the forecast pays points only on the gap beyond it (see raceMoneyTerm).
+  typicalGapPct?: number | null;
 }) {
+  const typical = typicalGapPct == null ? null : Math.abs(typicalGapPct) < 0.5 ? "an even split" : `${typicalGapPct > 0 ? "R" : "D"}+${Math.abs(typicalGapPct).toFixed(0)}%`;
   if (dem == null || rep == null) {
     return (
       <div>
         <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>
           Fundraising TBD{pendingNote ? ` — ${pendingNote}` : ""}.
         </p>
+        {typical && (
+          <p className="text-sm mt-2" style={{ color: "var(--app-text-muted)" }}>
+            Until receipts are on file the forecast assumes the typical money gap for a race like this ({typical} of
+            receipts), which adds no points either way.
+          </p>
+        )}
       </div>
     );
   }
@@ -849,6 +863,7 @@ export function FundraisingLedgerSection({
             <span className="font-bold tabular-nums" style={{ color: ffPts && Math.abs(ffPts) >= 0.05 ? partyAccent(ffPts > 0 ? "R" : "D") : "var(--app-text-primary)" }}>
               {ffDisplay}
             </span>
+            {typical && <span> · measured against the typical gap for a race like this ({typical})</span>}
           </div>
         )}
       </div>
@@ -1054,7 +1069,9 @@ export function ForecastCalculationCard({
   tplLabel = "State TPL",
   tplHref,
   incumbentPts,
+  appointedIncumbent = null,
   fundraisingPts,
+  moneyTerm,
   candidatePts,
   candidateDetail,
   polling,
@@ -1068,7 +1085,12 @@ export function ForecastCalculationCard({
   tplLabel?: string;
   tplHref?: string;
   incumbentPts?: number;
+  // Party of an incumbent who holds the seat by appointment or succession and has never won
+  // it (Candidate.appointed); their advantage is scaled by APPOINTED_INCUMBENCY_SHARE.
+  appointedIncumbent?: "D" | "R" | null;
   fundraisingPts?: number | null;
+  // The pieces behind fundraisingPts, for the tooltip (raceMoneyTerm in lib/tplCompute.ts).
+  moneyTerm?: RaceMoneyTerm;
   candidatePts?: number | null;
   // Phase 4: the nominees' ridge track-record effects behind candidatePts.
   candidateDetail?: { dem: { name: string; effect: number; n: number; latestYear: number; latestOffice: string } | null; rep: { name: string; effect: number; n: number; latestYear: number; latestOffice: string } | null } | null;
@@ -1105,7 +1127,7 @@ export function ForecastCalculationCard({
 
   const showIncumbentRow = incumbentPts !== undefined;
   const incIsOpen = incPts === 0;
-  const incDisplay = incIsOpen ? "Open" : incPts > 0 ? `R+${incPts.toFixed(1)}` : `D+${Math.abs(incPts).toFixed(1)}`;
+  const incDisplay = incIsOpen ? (appointedIncumbent ? "Appointed · 0" : "Open") : incPts > 0 ? `R+${incPts.toFixed(1)}` : `D+${Math.abs(incPts).toFixed(1)}`;
   const incColor = incIsOpen ? "var(--app-text-very-muted)" : incPts > 0 ? "var(--party-rep)" : "var(--party-dem)";
 
   const ffIsZero = Math.abs(ffPts) < 0.05;
@@ -1124,7 +1146,7 @@ export function ForecastCalculationCard({
     border: "1px solid var(--app-border)",
     boxShadow: "inset 0 1px 0 rgba(255,255,255,0.04)",
   };
-  const finalAccent = marginColor(projectedMargin);
+  const finalAccent = projectedMarginColor(projectedMargin);
 
   const env = getNationalEnvironment();
   const fmtNat = (v: number) => (Math.abs(v) < 0.05 ? "EVEN" : `${v < 0 ? "D" : "R"}+${Math.abs(v).toFixed(1)}`);
@@ -1137,23 +1159,42 @@ export function ForecastCalculationCard({
       The conversion is fitted from the model&apos;s own environment against the House popular vote. Polling error is carried as uncertainty (σ_E ≈ {env.sigmaE.toFixed(1)} pts), not as a prediction.
     </>
   );
+  const appointedShare = FORECAST_CONSTANTS.APPOINTED_INCUMBENCY_SHARE;
   const incTooltip = (
     <>
-      Additive point advantage for the incumbent running in 2026.
+      Points for an incumbent seeking re-election. The Senate and Governor values are fitted by the model alongside TPL; the House value is a fixed prior.
       <br /><br />
       <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>House ±{(incumbentAdvantage().H ?? 0).toFixed(1)} · Senate ±{(incumbentAdvantage().S ?? 0).toFixed(1)} · Governor ±{(incumbentAdvantage().G ?? 0).toFixed(1)}</span>
       <br /><br />
-      R incumbent = positive · D incumbent = negative · Open seat = 0. An appointed or successor incumbent who has never won the seat receives {Math.round(FORECAST_CONSTANTS.APPOINTED_INCUMBENCY_SHARE * 100)}% of the advantage.
+      A Republican incumbent moves the margin toward R, a Democratic incumbent toward D, and an open seat scores 0. An independent who caucuses with a party counts as that party&apos;s incumbent.
+      <br /><br />
+      {appointedShare === 0
+        ? "An incumbent who was appointed or succeeded to the seat and has never won it is scored as an open seat: past appointees have run no better than a generic nominee."
+        : `An incumbent who was appointed or succeeded to the seat and has never won it receives ${Math.round(appointedShare * 100)}% of the advantage.`}
+      {appointedIncumbent ? " That applies to this race." : ""}
     </>
   );
+  const fmtGap = (v: number) => (Math.abs(v) < 0.5 ? "even" : `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(0)}%`);
+  const MK = FORECAST_CONSTANTS.MONEY_K, MC = FORECAST_CONSTANTS.MONEY_CAP;
   const frTooltip = (
     <>
-      Additive point adjustment based on the two candidates&apos; receipts this cycle.
+      Points for money raised beyond what a race like this normally sees. Incumbents and the favored party almost always
+      out-raise, and lean and incumbency already account for that, so only the difference from the typical gap counts.
       <br /><br />
-      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>pts = gap% × {FF_K}, capped at ±{FF_MAX}</span>
+      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>pts = k × ({FORECAST_CONSTANTS.PARTIAL_CYCLE_GAP_SCALE.H} × gap% − typical gap%), capped</span>
+      <br />
+      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>k / cap: House {MK.H} / ±{MC.H} · Senate {MK.S} / ±{MC.S} · Governor {MK.G} / ±{MC.G}</span>
       <br /><br />
-      gap% = (R receipts − D receipts) / total × 100. A 50% gap ≈ {(50 * FF_K).toFixed(1)} pts.
-      Applies only where both candidates&apos; receipts are known — otherwise 0.
+      gap% = (R receipts − D receipts) / total × 100, scaled by {FORECAST_CONSTANTS.PARTIAL_CYCLE_GAP_SCALE.H} because September gaps close by about a tenth before
+      election day. Where a side&apos;s receipts are unknown the typical gap is assumed (0 pts).
+      {moneyTerm && (
+        <>
+          <br /><br />
+          {moneyTerm.known && moneyTerm.gapPct != null && moneyTerm.residualGapPct != null
+            ? <>This race: filed gap {fmtGap(moneyTerm.gapPct)} · typical {moneyTerm.structuralGapPct == null ? "n/a" : fmtGap(moneyTerm.structuralGapPct)} · beyond typical {fmtGap(moneyTerm.residualGapPct)}</>
+            : <>This race: receipts not on file · typical gap {moneyTerm.structuralGapPct == null ? "n/a" : fmtGap(moneyTerm.structuralGapPct)}</>}
+        </>
+      )}
     </>
   );
   const fmtEffect = (v: number) => `${v >= 0 ? "+" : "−"}${Math.abs(v).toFixed(1)}`;
@@ -1185,6 +1226,10 @@ export function ForecastCalculationCard({
         Weighted average of {polling.avg.n} pollster{polling.avg.n === 1 ? "" : "s"}&apos; latest surveys (recency half-life 14 days, weight ∝ √sample) — {polling.avg.nEff.toFixed(1)} effective poll{polling.avg.nEff >= 1.05 || polling.avg.nEff < 0.95 ? "s" : ""}.
         <br /><br />
         <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>weight = n_eff / (n_eff + k) · k: House {pollK.H} · Senate {pollK.S} · Governor {pollK.G}</span>
+        <br /><br />
+        Each poll is aged to today: moved by how far the generic ballot has shifted since the poll was in the field, scaled by the state&apos;s elasticity β*{Math.abs(polling.avg.aging) < 0.05 ? "" : ` (${fmtMargin(polling.avg.aging)} on this average)`}.
+        <br /><br />
+        Each poll is also read net of its pollster&apos;s house effect, its lean against the other pollsters in the races they share this cycle{Math.abs(polling.avg.house) < 0.05 ? "" : ` (${fmtMargin(polling.avg.house)} removed from this average)`}. Pollster accuracy grades are not a weight: past accuracy has not predicted the next cycle&apos;s.
         <br /><br />
         k is fitted by the forward backtest (2018–24): polls earn their share by evidence, and Governor polls earn it fastest because the structural model is weakest there.
       </>
@@ -1254,7 +1299,7 @@ export function ForecastCalculationCard({
               {pollingAvg == null ? "Model only — no polls on file" : `${wModel}% × Model ${fmtMargin(modelMargin)} + ${wPoll}% × Polling ${fmtMargin(pollingAvg)}`}
             </span>
           </span>
-          <span className="text-2xl font-extrabold leading-none" style={{ color: finalAccent }}>{fmtMargin(projectedMargin)}</span>
+          <span className="text-2xl font-extrabold leading-none" style={{ color: finalAccent }}>{formatProjectedMargin(projectedMargin)}</span>
         </div>
         {probabilityD != null && interval80 && (
           <>
@@ -1372,7 +1417,7 @@ export function ForecastCalculationCard({
           }}
         >
           <InfoTooltip label="Projected Margin" labelStyle={{ color: "var(--app-text-muted)" }}>{marginTooltip}</InfoTooltip>
-          <span className="text-3xl font-bold leading-none" style={{ color: finalAccent }}>{fmtMargin(projectedMargin)}</span>
+          <span className="text-3xl font-bold leading-none" style={{ color: finalAccent }}>{formatProjectedMargin(projectedMargin)}</span>
         </div>
       </div>
     </section>
@@ -2116,11 +2161,14 @@ export function RacePollsSection({ polling, demName, repName }: { polling: RaceP
           <thead>
             <tr className="text-[10px] uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>
               <th className="text-left font-semibold py-2 pr-2">Pollster</th>
+              <th className="text-left font-semibold py-2 pr-2" title="Historical accuracy grade (Analysis → Pollster Ratings). Shown for reference; it is not a weight.">Grade</th>
               <th className="text-left font-semibold py-2 pr-2">Dates</th>
               <th className="text-right font-semibold py-2 pr-2">Sample</th>
               <th className="text-right font-semibold py-2 pr-2" style={{ color: "var(--party-dem)" }}>{surname(demName)}</th>
               <th className="text-right font-semibold py-2 pr-2" style={{ color: "var(--party-rep)" }}>{surname(repName)}</th>
               <th className="text-right font-semibold py-2 pr-2">Margin</th>
+              <th className="text-right font-semibold py-2 pr-2" title="The pollster's lean against the other pollsters in the races they share this cycle — removed from the poll before averaging">House effect</th>
+              <th className="text-right font-semibold py-2 pr-2" title="The published margin, aged by the generic ballot's movement and net of the pollster's house effect — what the average uses">Adjusted</th>
               <th className="text-right font-semibold py-2">Weight</th>
             </tr>
           </thead>
@@ -2128,11 +2176,14 @@ export function RacePollsSection({ polling, demName, repName }: { polling: RaceP
             {avg.polls.map((p) => (
               <tr key={`${p.pollster}-${p.endDate}`} style={{ borderTop: "1px solid color-mix(in srgb, var(--app-border) 72%, transparent)", color: "var(--app-text-primary)" }}>
                 <td className="py-1.5 pr-2 whitespace-nowrap">{p.pollster}{p.partisan ? <span className="ml-1 text-[10px] font-semibold" style={{ color: p.partisan === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>({p.partisan})</span> : null}</td>
+                <td className="py-1.5 pr-2"><PollsterGradeChip grade={pollsterGradeOf(p.pollster)?.grade ?? null} /></td>
                 <td className="py-1.5 pr-2 whitespace-nowrap" style={{ color: "var(--app-text-muted)" }}>{p.startDate === p.endDate ? fmtDate(p.endDate) : `${fmtDate(p.startDate)} – ${fmtDate(p.endDate)}`}</td>
                 <td className="py-1.5 pr-2 text-right whitespace-nowrap" style={{ color: "var(--app-text-muted)" }}>{p.sample != null ? p.sample.toLocaleString() : "—"}{p.population ? ` ${p.population}` : ""}</td>
                 <td className="py-1.5 pr-2 text-right">{p.dem.toFixed(0)}%</td>
                 <td className="py-1.5 pr-2 text-right">{p.rep.toFixed(0)}%</td>
                 <td className="py-1.5 pr-2 text-right font-semibold" style={{ color: marginColor(p.diff) }}>{fmtMargin(p.diff)}</td>
+                <td className="py-1.5 pr-2 text-right" style={{ color: Math.abs(p.house) < 0.05 ? "var(--app-text-very-muted)" : marginColor(p.house) }}>{Math.abs(p.house) < 0.05 ? "—" : fmtMargin(p.house)}</td>
+                <td className="py-1.5 pr-2 text-right" style={{ color: marginColor(p.diff + p.shift - p.house) }}>{fmtMargin(p.diff + p.shift - p.house)}</td>
                 <td className="py-1.5 text-right" style={{ color: "var(--app-text-very-muted)" }}>{maxWeight > 0 ? `${Math.round((p.weight / maxWeight) * 100)}%` : "—"}</td>
               </tr>
             ))}
@@ -2140,7 +2191,7 @@ export function RacePollsSection({ polling, demName, repName }: { polling: RaceP
         </table>
       </div>
       <p className="mt-2.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-        One survey per pollster (its latest). Weight is relative to the freshest, largest poll: full for 14 days after the field period, halving every 14 days after, times √sample. (D)/(R) marks a party or campaign pollster.
+        One survey per pollster (its latest). Weight is relative to the freshest, largest poll: full for 14 days after the field period, halving every 14 days after, times √sample. Adjusted = the published margin moved by the generic ballot&apos;s shift since the poll was in the field (scaled by the state&apos;s elasticity) and net of the pollster&apos;s house effect, its lean against the other pollsters in the races they share this cycle; the average is taken over the adjusted margins. Grade is the pollster&apos;s <a href="/analysis/pollsters" className="underline">historical accuracy rating</a>, shown for reference and not used as a weight. (D)/(R) marks a party or campaign pollster.
       </p>
     </div>
   );

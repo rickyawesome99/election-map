@@ -43,8 +43,8 @@ function clip(text: string, max = 150): string {
 //
 // houseDistrictInfo carries one entry per district per year its lines changed, so a year
 // present for any of a state's districts is that state redrawing. The `description` is
-// editorial and lags the data — Florida, Louisiana and Tennessee's 2026 redraws are recorded
-// with PVI movement but no prose yet — so it must not be used to decide whether a redraw
+// editorial and lags the data — Florida, Louisiana and Tennessee's 2026 redraws sat for months
+// with PVI movement but no prose — so it must not be used to decide whether a redraw
 // happened, only to describe one.
 // ---------------------------------------------------------------------------------------
 function congressionalEvents(): RedistrictEvent[] {

@@ -25,6 +25,7 @@ import csv, json, os, re
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 SRC = os.path.join(ROOT, "data-entry/demographics.csv")
+CD_2026_SRC = os.path.join(ROOT, "data-entry/demographics_cd_2026_lines.csv")
 DISTRICTS_SRC = os.path.join(ROOT, "data/stateLegDistricts.ts")
 DST = os.path.join(ROOT, "data/demographics.ts")
 LEG_DST = os.path.join(ROOT, "data/stateLegDemographics.ts")
@@ -50,8 +51,9 @@ ELECTION_YEAR = 2026
 
 def redrawn_for_2026():
     """States whose congressional map was redrawn after the 119th Congress convened - the geography
-    the 2024 ACS measures, and for now the geography public/congressional-districts-2026.json still
-    draws. Their district figures describe the previous lines, which the UI says on the page.
+    the 2024 ACS measures. Their published district figures describe the previous lines, so they
+    are replaced by the tract re-aggregation in data-entry/demographics_cd_2026_lines.csv where
+    one exists, and the UI says which kind of figure it is showing.
 
     Read out of forecastData's houseDistrictInfo rather than listed here, because that is where the
     site already records a redraw (an entry for a year IS the redraw) and a hand-kept copy would
@@ -154,6 +156,19 @@ for row in by_level["cd"]:
     key = row["state_fips"] + ("01" if code == "00" else code)
     cd_out[key] = demographics(row)
 
+# States that redrew for 2026 are measured by the ACS on lines they no longer use. Where
+# build-cd-demographics-2026-lines.py has re-aggregated census tracts onto the new map, its
+# estimate replaces the published row - except for districts the redraw left alone, whose
+# published figure is already exact.
+tract_estimated = set()
+if os.path.exists(CD_2026_SRC):
+    for row in csv.DictReader(open(CD_2026_SRC)):
+        if row["lines_unchanged"] == "yes" or row["race_id"] not in cd_out:
+            continue
+        cd_out[row["race_id"]] = demographics(row)
+        tract_estimated.add(row["race_id"])
+STILL_ON_OLD_LINES = [a for a in REDRAWN_FOR_2026 if not any(ABBR_BY_FIPS[k[:2]] == a for k in tract_estimated)]
+
 # ---- state legislative districts ----------------------------------------------------------
 app = load_app_districts()
 CHAMBER_OF_LEVEL = {"sldu": "senate", "sldl": "house"}
@@ -227,6 +242,9 @@ out = [
     "// and live in data/countyDemographics.ts on the 2019-23 vintage, from County Health Rankings",
     "// and USDA ERS. The field names and definitions match, but the years do not exactly.",
     "//",
+    "// Exception: districts in states redrawn for 2026 are tract re-aggregations of the same ACS",
+    "// vintage onto the new lines (see TRACT_ESTIMATED_DISTRICTS at the bottom of this file).",
+    "//",
     "// Race shares are the not-Hispanic-alone categories, so White + Black + Asian + Hispanic",
     "// never double-counts and does not sum to 100 (the remainder is AIAN, NHPI, other and",
     "// multiracial). A field is omitted, never zeroed, where the ACS publishes no value.",
@@ -255,12 +273,19 @@ for key in sorted(cd_out):
 out += [
     "};",
     "",
-    "// The 2024 ACS reports congressional districts on 119th Congress lines, which is also what",
-    "// public/congressional-districts-2026.json still draws. These states have since enacted a",
-    "// different map for 2026 (see houseDistrictInfo's 2026 entries), so their figures describe",
-    "// the district's previous lines until both the boundary file and this pull are refreshed.",
+    "// The 2024 ACS reports congressional districts on 119th Congress lines. For the states that",
+    "// have since enacted a different map for 2026 (houseDistrictInfo's 2026 entries), the districts",
+    "// listed here are ESTIMATES: census tracts re-aggregated onto the 2026 lines by",
+    "// scripts/build-cd-demographics-2026-lines.py (shares good to a few tenths of a point, looser",
+    "// where the boundary file is - see that script). Districts a redraw left alone are not listed;",
+    "// they keep the published figure.",
+    "export const TRACT_ESTIMATED_DISTRICTS: ReadonlySet<string> = new Set([",
+    "  " + ", ".join(f'"{k}"' for k in sorted(tract_estimated)),
+    "]);",
+    "",
+    "// Redrawn states with NO tract estimate yet: their figures still describe the previous lines.",
     "export const REDRAWN_SINCE_ACS_VINTAGE: ReadonlySet<string> = new Set([",
-    "  " + ", ".join(f'"{a}"' for a in REDRAWN_FOR_2026),
+    "  " + ", ".join(f'"{a}"' for a in STILL_ON_OLD_LINES),
     "]);",
     "",
 ]

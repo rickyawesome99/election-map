@@ -9,6 +9,9 @@
  *      or campaign pollster · start/end ISO dates · population lv/rv/a/v · dem/rep = %.
  *      Seeded from the polling tables on the Wikipedia election pages; add new polls
  *      by hand or re-run the scrape.
+ *      EXCEPTION — Alaska Senate (S,AK,Senate) is hand-entered and holds ONLY each poll's
+ *      ranked-choice FINAL ROUND (Sullivan v Peltola); never first-choice, head-to-head or
+ *      party-summed numbers, and a re-scrape must not overwrite those rows.
  *   2. Run:  node data-entry/build-race-polls.js
  *   3. data/racePolls.ts is regenerated
  *
@@ -37,6 +40,7 @@ function splitCSVLine(line) {
 const lines = fs.readFileSync(SRC, "utf8").split(/\r?\n/).filter((l) => l.trim());
 const header = splitCSVLine(lines[0]);
 const col = (row, name) => (row[header.indexOf(name)] ?? "").trim();
+const BIPARTISAN = /^(Beacon Research.*Shaw|Fabrizio.*(Impact Research|GBAO|David Binder|Hart Research)|Hart Research.*Public Opinion Strategies)/i;
 const byRace = new Map();
 for (const line of lines.slice(1)) {
   const row = splitCSVLine(line);
@@ -44,7 +48,9 @@ for (const line of lines.slice(1)) {
   const sample = col(row, "sample");
   const poll = {
     pollster: col(row, "pollster"),
-    partisan: col(row, "partisan") || null,
+    // a bipartisan pair — "Beacon Research (D)/Shaw & Co. Research" (the Fox News poll), "Fabrizio Ward (R)/Impact
+    // Research" (AARP) — is not a partisan poll, whichever firm's party label the scrape picked up
+    partisan: BIPARTISAN.test(col(row, "pollster")) ? null : col(row, "partisan") || null,
     startDate: col(row, "start"),
     endDate: col(row, "end"),
     sample: sample ? Number(sample) : null,

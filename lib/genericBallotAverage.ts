@@ -80,3 +80,32 @@ export function computeGenericBallotAverage(
     polls: weighted,
   };
 }
+
+// ── The average as it stood on a past date ───────────────────────────────────
+// Same recipe, restricted to the polls completed by that date. Used to age race
+// polls (lib/racePollAverage.ts): a poll is moved by how far the national
+// environment has travelled since it was in the field. Dates before the series has
+// MIN_POLLSTERS distinct pollsters are read at the first date that does, so a poll
+// older than the series is aged from the series' start rather than from noise.
+const MIN_POLLSTERS = 5;
+
+export function genericBallotSeries(polls: GenericBallotPoll[] = genericBallotPolls): (isoDate: string) => number | null {
+  const sorted = [...polls].sort((a, b) => a.endDate.localeCompare(b.endDate));
+  const seen = new Set<string>();
+  let firstDate: string | null = null;
+  for (const p of sorted) {
+    seen.add(p.pollster);
+    if (seen.size >= MIN_POLLSTERS) { firstDate = p.endDate; break; }
+  }
+  const cache = new Map<string, number>();
+  return (isoDate: string) => {
+    if (!firstDate) return null;
+    const d = isoDate < firstDate ? firstDate : isoDate;
+    let v = cache.get(d);
+    if (v == null) {
+      v = computeGenericBallotAverage(new Date(`${d}T12:00:00Z`), sorted.filter((p) => p.endDate <= d)).diff;
+      cache.set(d, v);
+    }
+    return v;
+  };
+}

@@ -2636,7 +2636,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Barry Moore",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 21.5, "repPct": 78.4, "demCandidate": "Tom Holmes", "repCandidate": "Barry Moore", "demVotes": 70929, "repVotes": 258619, "totalVotes": 329854, "margin": 56.9 },
+      { "year": 2024, "demPct": 21.5, "repPct": 78.4, "demCandidate": "Tom Holmes", "repCandidate": "Barry Moore", "demVotes": 70929, "repVotes": 258619, "totalVotes": 329854, "margin": 56.9, "repIncumbent": true },
       { "year": 2022, "demPct": 15.68, "repPct": 83.61, "demCandidate": "Alexander Remrey", "demParty": "I", "repCandidate": "Jerry Carl", "demVotes": 26369, "repVotes": 140592, "totalVotes": 168150, "margin": 67.93, "repIncumbent": true },
       { "year": 2020, "demPct": 35.54, "repPct": 64.37, "demCandidate": "James Averhart", "repCandidate": "Jerry Carl", "demVotes": 116949, "repVotes": 211825, "totalVotes": 329075, "margin": 28.83 },
       { "year": 2018, "demPct": 36.78, "repPct": 63.16, "demCandidate": "Robert Kennedy", "repCandidate": "Bradley Byrne", "demVotes": 89226, "repVotes": 153228, "totalVotes": 242617, "margin": 26.38, "repIncumbent": true },
@@ -2817,7 +2817,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 48.09, "repPct": 51.91, "demCandidate": "Amish Shah", "repCandidate": "David Schweikert", "demVotes": 208966, "repVotes": 225538, "totalVotes": 434504, "margin": 3.82, "repIncumbent": true },
-      { "year": 2022, "demPct": 49.56, "repPct": 50.44, "demCandidate": "Jevin Hodge", "repCandidate": "David Schweikert", "demVotes": 179141, "repVotes": 182336, "totalVotes": 361477, "margin": 0.88 },
+      { "year": 2022, "demPct": 49.56, "repPct": 50.44, "demCandidate": "Jevin Hodge", "repCandidate": "David Schweikert", "demVotes": 179141, "repVotes": 182336, "totalVotes": 361477, "margin": 0.88, "repIncumbent": true },
       { "year": 2020, "demPct": 51.61, "repPct": 48.39, "demCandidate": "Tom O'Halleran", "repCandidate": "Tiffany Shedd", "demVotes": 188469, "repVotes": 176709, "totalVotes": 365178, "margin": -3.22, "demIncumbent": true },
       { "year": 2018, "demPct": 53.83, "repPct": 46.14, "demCandidate": "Tom O'Halleran", "repCandidate": "Wendy Rogers", "demVotes": 143240, "repVotes": 122784, "totalVotes": 266089, "margin": -7.69, "demIncumbent": true },
       { "year": 2016, "demPct": 50.66, "repPct": 43.37, "demCandidate": "Tom O'Halleran", "repCandidate": "Paul Babeu", "demVotes": 142219, "repVotes": 121745, "totalVotes": 280710, "margin": -7.29 }
@@ -2838,7 +2838,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 45.51, "repPct": 54.48, "demCandidate": "Jonathan Nez", "repCandidate": "Eli Crane", "demVotes": 184963, "repVotes": 221413, "totalVotes": 406431, "margin": 8.97, "repIncumbent": true },
-      { "year": 2022, "demPct": 46.12, "repPct": 53.86, "demCandidate": "Tom O'Halleran", "repCandidate": "Eli Crane", "demVotes": 149151, "repVotes": 174169, "totalVotes": 323396, "margin": 7.74 },
+      { "year": 2022, "demPct": 46.12, "repPct": 53.86, "demCandidate": "Tom O'Halleran", "repCandidate": "Eli Crane", "demVotes": 149151, "repVotes": 174169, "totalVotes": 323396, "margin": 7.74, "demIncumbent": true },
       { "year": 2020, "demPct": 55.1, "repPct": 44.87, "demCandidate": "Ann Kirkpatrick", "repCandidate": "Brandon Martin", "demVotes": 209945, "repVotes": 170975, "totalVotes": 381054, "margin": -10.23, "demIncumbent": true },
       { "year": 2018, "demPct": 54.73, "repPct": 45.24, "demCandidate": "Ann Kirkpatrick", "repCandidate": "Lea Marquez Peterson", "demVotes": 161000, "repVotes": 133083, "totalVotes": 294152, "margin": -9.49 },
       { "year": 2016, "demPct": 43.04, "repPct": 56.96, "demCandidate": "Matt Heinz", "repCandidate": "Martha McSally", "demVotes": 135873, "repVotes": 179806, "totalVotes": 315679, "margin": 13.92, "repIncumbent": true }
@@ -2861,7 +2861,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 70.9, "repPct": 26.6, "demCandidate": "Yassamin Ansari", "repCandidate": "Jeff Zink", "demVotes": 143336, "repVotes": 53705, "totalVotes": 202065, "margin": -44.3 },
-      { "year": 2022, "demPct": 76.98, "repPct": 23.02, "demCandidate": "Ruben Gallego", "repCandidate": "Jeff Zink", "demVotes": 108599, "repVotes": 32475, "totalVotes": 141074, "margin": -53.96 },
+      { "year": 2022, "demPct": 76.98, "repPct": 23.02, "demCandidate": "Ruben Gallego", "repCandidate": "Jeff Zink", "demVotes": 108599, "repVotes": 32475, "totalVotes": 141074, "margin": -53.96, "demIncumbent": true },
       { "year": 2020, "demPct": 64.57, "repPct": 35.43, "demCandidate": "Raúl Grijalva", "repCandidate": "Daniel Wood", "demVotes": 174243, "repVotes": 95594, "totalVotes": 269837, "margin": -29.14, "demIncumbent": true },
       { "year": 2018, "demPct": 63.87, "repPct": 36.13, "demCandidate": "Raúl Grijalva", "repCandidate": "Nick Pierson", "demVotes": 114650, "repVotes": 64868, "totalVotes": 179518, "margin": -27.74, "demIncumbent": true },
       { "year": 2016, "demPct": 98.63, "repPct": 0.86, "demCandidate": "Raúl Grijalva", "repCandidate": "Bill Abatecola", "demVotes": 148973, "repVotes": 1303, "totalVotes": 151035, "margin": -97.77, "demIncumbent": true }
@@ -2884,7 +2884,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 52.74, "repPct": 45.45, "demCandidate": "Greg Stanton", "repCandidate": "Kelly Cooper", "demVotes": 176428, "repVotes": 152052, "totalVotes": 334545, "margin": -7.29, "demIncumbent": true },
-      { "year": 2022, "demPct": 56.1, "repPct": 43.89, "demCandidate": "Greg Stanton", "repCandidate": "Kelly Cooper", "demVotes": 148941, "repVotes": 116521, "totalVotes": 265498, "margin": -12.21 },
+      { "year": 2022, "demPct": 56.1, "repPct": 43.89, "demCandidate": "Greg Stanton", "repCandidate": "Kelly Cooper", "demVotes": 148941, "repVotes": 116521, "totalVotes": 265498, "margin": -12.21, "demIncumbent": true },
       { "year": 2020, "demPct": 30.23, "repPct": 69.74, "demCandidate": "Delina DiSanto", "repCandidate": "Paul Gosar", "demVotes": 120484, "repVotes": 278002, "totalVotes": 398623, "margin": 39.51, "repIncumbent": true },
       { "year": 2018, "demPct": 30.51, "repPct": 68.17, "demCandidate": "David Brill", "repCandidate": "Paul Gosar", "demVotes": 84521, "repVotes": 188842, "totalVotes": 277035, "margin": 37.66, "repIncumbent": true },
       { "year": 2016, "demPct": 28.55, "repPct": 71.45, "demCandidate": "Mikel Weisser", "repCandidate": "Paul Gosar", "demVotes": 81296, "repVotes": 203487, "totalVotes": 284783, "margin": 42.9, "repIncumbent": true }
@@ -2951,7 +2951,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 63.4, "repPct": 36.6, "demCandidate": "Raul Grijalva", "repCandidate": "Daniel Butierez", "demVotes": 171954, "repVotes": 99057, "totalVotes": 271011, "margin": -26.8, "demIncumbent": true },
-      { "year": 2022, "demPct": 64.54, "repPct": 35.46, "demCandidate": "Raúl Grijalva", "repCandidate": "Luis Pozzolo", "demVotes": 126418, "repVotes": 69444, "totalVotes": 195862, "margin": -29.08 },
+      { "year": 2022, "demPct": 64.54, "repPct": 35.46, "demCandidate": "Raúl Grijalva", "repCandidate": "Luis Pozzolo", "demVotes": 126418, "repVotes": 69444, "totalVotes": 195862, "margin": -29.08, "demIncumbent": true },
       { "year": 2020, "demPct": 76.69, "repPct": 23.28, "demCandidate": "Ruben Gallego", "repCandidate": "Joshua Barnett", "demVotes": 165452, "repVotes": 50226, "totalVotes": 215732, "margin": -53.41, "demIncumbent": true },
       { "year": 2018, "demPct": 85.61, "repPct": 0.23, "demCandidate": "Ruben Gallego", "repCandidate": "007 Bond IV", "demVotes": 113044, "repVotes": 301, "totalVotes": 132051, "margin": -85.38, "demIncumbent": true },
       { "year": 2016, "demPct": 75.22, "repPct": 24.74, "demCandidate": "Ruben Gallego", "repCandidate": "Eve Nunez", "demVotes": 119465, "repVotes": 39286, "totalVotes": 158811, "margin": -50.48, "demIncumbent": true }
@@ -2997,7 +2997,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 34.7, "repPct": 65.3, "demCandidate": "Quacy Smith", "repCandidate": "Paul Gosar", "demVotes": 132640, "repVotes": 249583, "totalVotes": 382223, "margin": 30.6, "repIncumbent": true },
-      { "year": 2022, "demPct": 1.79, "repPct": 97.77, "demCandidate": "Richard Grayson", "repCandidate": "Paul Gosar", "demVotes": 3531, "repVotes": 192796, "totalVotes": 197185, "margin": 95.98 },
+      { "year": 2022, "demPct": 1.79, "repPct": 97.77, "demCandidate": "Richard Grayson", "repCandidate": "Paul Gosar", "demVotes": 3531, "repVotes": 192796, "totalVotes": 197185, "margin": 95.98, "repIncumbent": true },
       { "year": 2020, "demPct": 61.63, "repPct": 38.37, "demCandidate": "Greg Stanton", "repCandidate": "Dave Giles", "demVotes": 217094, "repVotes": 135180, "totalVotes": 352274, "margin": -23.26, "demIncumbent": true },
       { "year": 2018, "demPct": 61.09, "repPct": 38.91, "demCandidate": "Greg Stanton", "repCandidate": "Stephen Ferrara", "demVotes": 159583, "repVotes": 101662, "totalVotes": 261245, "margin": -22.18 },
       { "year": 2016, "demPct": 60.92, "repPct": 39.04, "demCandidate": "Kyrsten Sinema", "repCandidate": "Dave Giles", "demVotes": 169055, "repVotes": 108350, "totalVotes": 277507, "margin": -21.88, "demIncumbent": true }
@@ -3179,7 +3179,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 66.5, "repPct": 33.5, "demCandidate": "Mike Thompson", "repCandidate": "John Munn", "demVotes": 227730, "repVotes": 114950, "totalVotes": 342680, "margin": -33, "demIncumbent": true },
-      { "year": 2022, "demPct": 67.8, "repPct": 32.2, "demCandidate": "Mike Thompson", "repCandidate": "Matt Brock", "demVotes": 176900, "repVotes": 84007, "totalVotes": 260907, "margin": -35.6 },
+      { "year": 2022, "demPct": 67.8, "repPct": 32.2, "demCandidate": "Mike Thompson", "repCandidate": "Matt Brock", "demVotes": 176900, "repVotes": 84007, "totalVotes": 260907, "margin": -35.6, "demIncumbent": true },
       { "year": 2020, "demPct": 44.05, "repPct": 55.95, "demCandidate": "Brynne Kennedy", "repCandidate": "Tom McClintock", "demVotes": 194731, "repVotes": 247291, "totalVotes": 442022, "margin": 11.9, "repIncumbent": true },
       { "year": 2018, "demPct": 45.87, "repPct": 54.13, "demCandidate": "Jessica Morse", "repCandidate": "Tom McClintock", "demVotes": 156253, "repVotes": 184401, "totalVotes": 340654, "margin": 8.26, "repIncumbent": true },
       { "year": 2016, "demPct": 37.28, "repPct": 62.72, "demCandidate": "Robert Derlet", "repCandidate": "Tom McClintock", "demVotes": 130845, "repVotes": 220133, "totalVotes": 350978, "margin": 25.44, "repIncumbent": true }
@@ -3202,7 +3202,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 38.2, "repPct": 61.8, "demCandidate": "Mike Barkley", "repCandidate": "Tom McClintock", "demVotes": 140919, "repVotes": 227643, "totalVotes": 368562, "margin": 23.6, "repIncumbent": true },
-      { "year": 2022, "demPct": 38.69, "repPct": 61.31, "demCandidate": "Mike Barkley", "repCandidate": "Tom McClintock", "demVotes": 109506, "repVotes": 173524, "totalVotes": 283030, "margin": 22.62 },
+      { "year": 2022, "demPct": 38.69, "repPct": 61.31, "demCandidate": "Mike Barkley", "repCandidate": "Tom McClintock", "demVotes": 109506, "repVotes": 173524, "totalVotes": 283030, "margin": 22.62, "repIncumbent": true },
       { "year": 2020, "demPct": 76.09, "repPct": 23.91, "demCandidate": "Mike Thompson", "repCandidate": "Scott Giblin", "demVotes": 271233, "repVotes": 85227, "totalVotes": 356460, "margin": -52.18, "demIncumbent": true },
       { "year": 2018, "demPct": 78.87, "repPct": 21.13, "demCandidate": "Mike Thompson", "repCandidate": "Anthony Mills", "repParty": "I", "demVotes": 205860, "repVotes": 55158, "totalVotes": 261018, "margin": -57.74, "demIncumbent": true },
       { "year": 2016, "demPct": 76.87, "repPct": 23.13, "demCandidate": "Mike Thompson", "repCandidate": "Carlos Santamaria", "demVotes": 224526, "repVotes": 67565, "totalVotes": 292091, "margin": -53.74, "demIncumbent": true }
@@ -3225,7 +3225,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 57.6, "repPct": 42.4, "demCandidate": "Ami Bera", "repCandidate": "Christine Bish", "demVotes": 165408, "repVotes": 121664, "totalVotes": 287072, "margin": -15.2, "demIncumbent": true },
-      { "year": 2022, "demPct": 55.95, "repPct": 44.05, "demCandidate": "Ami Bera", "repCandidate": "Tamika Hamilton", "demVotes": 121058, "repVotes": 95325, "totalVotes": 216383, "margin": -11.9 },
+      { "year": 2022, "demPct": 55.95, "repPct": 44.05, "demCandidate": "Ami Bera", "repCandidate": "Tamika Hamilton", "demVotes": 121058, "repVotes": 95325, "totalVotes": 216383, "margin": -11.9, "demIncumbent": true },
       { "year": 2020, "demPct": 73.34, "repPct": 26.66, "demCandidate": "Doris Matsui", "repCandidate": "Chris Bish", "demVotes": 229648, "repVotes": 83466, "totalVotes": 313114, "margin": -46.68, "demIncumbent": true },
       { "year": 2018, "demPct": 80.43, "repPct": 19.57, "demCandidate": "Doris Matsui", "repCandidate": "Jrmar Jefferson", "repParty": "D", "demVotes": 162411, "repVotes": 39528, "totalVotes": 201939, "margin": -60.86, "demIncumbent": true },
       { "year": 2016, "demPct": 75.43, "repPct": 24.57, "demCandidate": "Doris Matsui", "repCandidate": "Bob Evans", "demVotes": 177565, "repVotes": 57848, "totalVotes": 235413, "margin": -50.86, "demIncumbent": true }
@@ -3248,7 +3248,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 66.8, "repPct": 33.2, "demCandidate": "Doris Matsui", "repCandidate": "Tom Silva", "demVotes": 197429, "repVotes": 98341, "totalVotes": 295770, "margin": -33.6, "demIncumbent": true },
-      { "year": 2022, "demPct": 68.26, "repPct": 31.74, "demCandidate": "Doris Matsui", "repCandidate": "Max Semenenko", "demVotes": 150618, "repVotes": 70033, "totalVotes": 220651, "margin": -36.52 },
+      { "year": 2022, "demPct": 68.26, "repPct": 31.74, "demCandidate": "Doris Matsui", "repCandidate": "Max Semenenko", "demVotes": 150618, "repVotes": 70033, "totalVotes": 220651, "margin": -36.52, "demIncumbent": true },
       { "year": 2020, "demPct": 56.62, "repPct": 43.38, "demCandidate": "Ami Bera", "repCandidate": "Buzz Patterson", "demVotes": 217416, "repVotes": 166549, "totalVotes": 383965, "margin": -13.24, "demIncumbent": true },
       { "year": 2018, "demPct": 55.04, "repPct": 44.96, "demCandidate": "Ami Bera", "repCandidate": "Andrew Grant", "demVotes": 155016, "repVotes": 126601, "totalVotes": 281617, "margin": -10.08, "demIncumbent": true },
       { "year": 2016, "demPct": 51.17, "repPct": 48.83, "demCandidate": "Ami Bera", "repCandidate": "Scott Jones", "demVotes": 152133, "repVotes": 145168, "totalVotes": 297301, "margin": -2.34, "demIncumbent": true }
@@ -3271,7 +3271,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 74, "repPct": 26, "demCandidate": "John Garamendi", "repCandidate": "Rudy Recile", "demVotes": 201962, "repVotes": 71068, "totalVotes": 273030, "margin": -48, "demIncumbent": true },
-      { "year": 2022, "demPct": 75.73, "repPct": 24.27, "demCandidate": "John Garamendi", "repCandidate": "Rudy Recile", "demVotes": 145501, "repVotes": 46634, "totalVotes": 192135, "margin": -51.46 },
+      { "year": 2022, "demPct": 75.73, "repPct": 24.27, "demCandidate": "John Garamendi", "repCandidate": "Rudy Recile", "demVotes": 145501, "repVotes": 46634, "totalVotes": 192135, "margin": -51.46, "demIncumbent": true },
       { "year": 2020, "demPct": 43.94, "repPct": 56.06, "demCandidate": "Christine Bubser", "repCandidate": "Jay Obernolte", "demVotes": 124400, "repVotes": 158711, "totalVotes": 283111, "margin": 12.12 },
       { "year": 2018, "demPct": 40.03, "repPct": 59.97, "demCandidate": "Tim Donnelly", "demParty": "R", "repCandidate": "Paul Cook", "demVotes": 68370, "repVotes": 102415, "totalVotes": 170785, "margin": 19.94, "repIncumbent": true },
       { "year": 2016, "demPct": 37.74, "repPct": 62.26, "demCandidate": "Rita Ramirez", "repCandidate": "Paul Cook", "demVotes": 83035, "repVotes": 136972, "totalVotes": 220007, "margin": 24.52, "repIncumbent": true }
@@ -3292,7 +3292,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 51.8, "repPct": 48.2, "demCandidate": "Josh Harder", "repCandidate": "Kevin Lincoln", "demVotes": 130183, "repVotes": 121174, "totalVotes": 251357, "margin": -3.6, "demIncumbent": true },
-      { "year": 2022, "demPct": 54.82, "repPct": 45.18, "demCandidate": "Josh Harder", "repCandidate": "Tom Patti", "demVotes": 95598, "repVotes": 78802, "totalVotes": 174400, "margin": -9.64 },
+      { "year": 2022, "demPct": 54.82, "repPct": 45.18, "demCandidate": "Josh Harder", "repCandidate": "Tom Patti", "demVotes": 95598, "repVotes": 78802, "totalVotes": 174400, "margin": -9.64, "demIncumbent": true },
       { "year": 2020, "demPct": 57.58, "repPct": 42.42, "demCandidate": "Jerry McNerney", "repCandidate": "Tony Amador", "demVotes": 174252, "repVotes": 128358, "totalVotes": 302610, "margin": -15.16, "demIncumbent": true },
       { "year": 2018, "demPct": 56.49, "repPct": 43.51, "demCandidate": "Jerry McNerney", "repCandidate": "Marla Livengood", "demVotes": 113414, "repVotes": 87349, "totalVotes": 200763, "margin": -12.98, "demIncumbent": true },
       { "year": 2016, "demPct": 57.36, "repPct": 42.64, "demCandidate": "Jerry McNerney", "repCandidate": "Tony Amador", "demVotes": 133163, "repVotes": 98992, "totalVotes": 232155, "margin": -14.72, "demIncumbent": true }
@@ -3315,7 +3315,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 66.5, "repPct": 33.5, "demCandidate": "Mark DeSaulnier", "repCandidate": "Katherine Piccinini", "demVotes": 242325, "repVotes": 122219, "totalVotes": 364544, "margin": -33, "demIncumbent": true },
-      { "year": 2022, "demPct": 78.93, "repPct": 21.07, "demCandidate": "Mark DeSaulnier", "repCandidate": "Michael Ernest Kerr", "repParty": "I", "demVotes": 198415, "repVotes": 52965, "totalVotes": 251380, "margin": -57.86 },
+      { "year": 2022, "demPct": 78.93, "repPct": 21.07, "demCandidate": "Mark DeSaulnier", "repCandidate": "Michael Ernest Kerr", "repParty": "I", "demVotes": 198415, "repVotes": 52965, "totalVotes": 251380, "margin": -57.86, "demIncumbent": true },
       { "year": 2020, "demPct": 55.16, "repPct": 44.84, "demCandidate": "Josh Harder", "repCandidate": "Ted Howze", "demVotes": 166865, "repVotes": 135629, "totalVotes": 302494, "margin": -10.32, "demIncumbent": true },
       { "year": 2018, "demPct": 52.25, "repPct": 47.75, "demCandidate": "Josh Harder", "repCandidate": "Jeff Denham", "demVotes": 115945, "repVotes": 105955, "totalVotes": 221900, "margin": -4.5, "repIncumbent": true },
       { "year": 2016, "demPct": 48.3, "repPct": 51.7, "demCandidate": "Michael Eggman", "repCandidate": "Jeff Denham", "demVotes": 116470, "repVotes": 124671, "totalVotes": 241141, "margin": 3.4, "repIncumbent": true }
@@ -3338,7 +3338,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 81, "repPct": 19, "demCandidate": "Nancy Pelosi", "repCandidate": "Bruce Lou", "demVotes": 274796, "repVotes": 64315, "totalVotes": 339111, "margin": -62, "demIncumbent": true },
-      { "year": 2022, "demPct": 83.95, "repPct": 16.05, "demCandidate": "Nancy Pelosi", "repCandidate": "John Dennis", "demVotes": 220848, "repVotes": 42217, "totalVotes": 263065, "margin": -67.9 },
+      { "year": 2022, "demPct": 83.95, "repPct": 16.05, "demCandidate": "Nancy Pelosi", "repCandidate": "John Dennis", "demVotes": 220848, "repVotes": 42217, "totalVotes": 263065, "margin": -67.9, "demIncumbent": true },
       { "year": 2020, "demPct": 72.99, "repPct": 27.01, "demCandidate": "Mark DeSaulnier", "repCandidate": "Nisha Sharma", "demVotes": 271063, "repVotes": 100293, "totalVotes": 371356, "margin": -45.98, "demIncumbent": true },
       { "year": 2018, "demPct": 74.13, "repPct": 25.87, "demCandidate": "Mark DeSaulnier", "repCandidate": "John Fitzgerald", "demVotes": 204369, "repVotes": 71312, "totalVotes": 275681, "margin": -48.26, "demIncumbent": true },
       { "year": 2016, "demPct": 72.05, "repPct": 27.95, "demCandidate": "Mark DeSaulnier", "repCandidate": "Roger Allen Petersen", "demVotes": 214868, "repVotes": 83341, "totalVotes": 298209, "margin": -44.1, "demIncumbent": true }
@@ -3361,7 +3361,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 65.4, "repPct": 34.6, "demCandidate": "Lateefah Simon", "repCandidate": "Jennifer Tran", "repParty": "D", "demVotes": 185176, "repVotes": 97849, "totalVotes": 283025, "margin": -30.8 },
-      { "year": 2022, "demPct": 90.47, "repPct": 9.53, "demCandidate": "Barbara Lee", "repCandidate": "Stephen Slauson", "demVotes": 217110, "repVotes": 22859, "totalVotes": 239969, "margin": -80.94 },
+      { "year": 2022, "demPct": 90.47, "repPct": 9.53, "demCandidate": "Barbara Lee", "repCandidate": "Stephen Slauson", "demVotes": 217110, "repVotes": 22859, "totalVotes": 239969, "margin": -80.94, "demIncumbent": true },
       { "year": 2020, "demPct": 77.63, "repPct": 22.37, "demCandidate": "Nancy Pelosi", "repCandidate": "Shahid Buttar", "repParty": "D", "demVotes": 281776, "repVotes": 81174, "totalVotes": 362950, "margin": -55.26, "demIncumbent": true },
       { "year": 2018, "demPct": 86.82, "repPct": 13.18, "demCandidate": "Nancy Pelosi", "repCandidate": "Lisa Remmer", "demVotes": 275292, "repVotes": 41780, "totalVotes": 317072, "margin": -73.64, "demIncumbent": true },
       { "year": 2016, "demPct": 80.87, "repPct": 19.13, "demCandidate": "Nancy Pelosi", "repCandidate": "Preston Picus", "repParty": "I", "demVotes": 274035, "repVotes": 64810, "totalVotes": 338845, "margin": -61.74, "demIncumbent": true }
@@ -3405,7 +3405,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 67.7, "repPct": 32.3, "demCandidate": "Eric Swalwell", "repCandidate": "Vin Kruttiventi", "demVotes": 187263, "repVotes": 89125, "totalVotes": 276388, "margin": -35.4, "demIncumbent": true },
-      { "year": 2022, "demPct": 69.34, "repPct": 30.66, "demCandidate": "Eric Swalwell", "repCandidate": "Alison Hayden", "demVotes": 137612, "repVotes": 60852, "totalVotes": 198464, "margin": -38.68 },
+      { "year": 2022, "demPct": 69.34, "repPct": 30.66, "demCandidate": "Eric Swalwell", "repCandidate": "Alison Hayden", "demVotes": 137612, "repVotes": 60852, "totalVotes": 198464, "margin": -38.68, "demIncumbent": true },
       { "year": 2020, "demPct": 79.29, "repPct": 20.71, "demCandidate": "Jackie Speier", "repCandidate": "Ran Petel", "demVotes": 278300, "repVotes": 72705, "totalVotes": 351005, "margin": -58.58, "demIncumbent": true },
       { "year": 2018, "demPct": 79.22, "repPct": 20.78, "demCandidate": "Jackie Speier", "repCandidate": "Cristina Osmeña", "demVotes": 211384, "repVotes": 55439, "totalVotes": 266823, "margin": -58.44, "demIncumbent": true },
       { "year": 2016, "demPct": 80.86, "repPct": 19.14, "demCandidate": "Jackie Speier", "repCandidate": "Angel Cardenas", "demVotes": 231630, "repVotes": 54817, "totalVotes": 286447, "margin": -61.72, "demIncumbent": true }
@@ -3451,7 +3451,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 58.2, "repPct": 41.8, "demCandidate": "Sam Liccardo", "repCandidate": "Evan Low", "repParty": "D", "demVotes": 179583, "repVotes": 128893, "totalVotes": 308476, "margin": -16.4 },
-      { "year": 2022, "demPct": 57.77, "repPct": 42.23, "demCandidate": "Anna Eshoo", "repCandidate": "Rishi Kumar", "repParty": "D", "demVotes": 139235, "repVotes": 101772, "totalVotes": 241007, "margin": -15.54 },
+      { "year": 2022, "demPct": 57.77, "repPct": 42.23, "demCandidate": "Anna Eshoo", "repCandidate": "Rishi Kumar", "repParty": "D", "demVotes": 139235, "repVotes": 101772, "totalVotes": 241007, "margin": -15.54, "demIncumbent": true },
       { "year": 2020, "demPct": 59.38, "repPct": 40.62, "demCandidate": "Jim Costa", "repCandidate": "Kevin Cookingham", "demVotes": 128690, "repVotes": 88039, "totalVotes": 216729, "margin": -18.76, "demIncumbent": true },
       { "year": 2018, "demPct": 57.55, "repPct": 42.45, "demCandidate": "Jim Costa", "repCandidate": "Elizabeth Heng", "demVotes": 82266, "repVotes": 60693, "totalVotes": 142959, "margin": -15.1, "demIncumbent": true },
       { "year": 2016, "demPct": 58.03, "repPct": 41.97, "demCandidate": "Jim Costa", "repCandidate": "Johnny Tacherra", "demVotes": 97473, "repVotes": 70483, "totalVotes": 167956, "margin": -16.06, "demIncumbent": true }
@@ -3497,7 +3497,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 64.63, "repPct": 35.37, "demCandidate": "Zoe Lofgren", "repCandidate": "Peter Hernandez", "demVotes": 147674, "repVotes": 80832, "totalVotes": 228506, "margin": -29.26, "demIncumbent": true },
-      { "year": 2022, "demPct": 65.85, "repPct": 34.15, "demCandidate": "Zoe Lofgren", "repCandidate": "Peter Hernandez", "demVotes": 99776, "repVotes": 51737, "totalVotes": 151513, "margin": -31.7 },
+      { "year": 2022, "demPct": 65.85, "repPct": 34.15, "demCandidate": "Zoe Lofgren", "repCandidate": "Peter Hernandez", "demVotes": 99776, "repVotes": 51737, "totalVotes": 151513, "margin": -31.7, "demIncumbent": true },
       { "year": 2020, "demPct": 63.17, "repPct": 36.83, "demCandidate": "Anna Eshoo", "repCandidate": "Rishi Kumar", "repParty": "D", "demVotes": 217388, "repVotes": 126751, "totalVotes": 344139, "margin": -26.34, "demIncumbent": true },
       { "year": 2018, "demPct": 74.49, "repPct": 25.51, "demCandidate": "Anna Eshoo", "repCandidate": "Christine Russell", "demVotes": 225142, "repVotes": 77096, "totalVotes": 302238, "margin": -48.98, "demIncumbent": true },
       { "year": 2016, "demPct": 71.15, "repPct": 28.85, "demCandidate": "Anna Eshoo", "repCandidate": "Richard Fox", "demVotes": 230460, "repVotes": 93470, "totalVotes": 323930, "margin": -42.3, "demIncumbent": true }
@@ -3520,7 +3520,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 69.3, "repPct": 30.7, "demCandidate": "Jimmy Panetta", "repCandidate": "Jason Michael Anderson", "demVotes": 252458, "repVotes": 111862, "totalVotes": 364320, "margin": -38.6, "demIncumbent": true },
-      { "year": 2022, "demPct": 68.65, "repPct": 31.35, "demCandidate": "Jimmy Panetta", "repCandidate": "Jeff Gorman", "demVotes": 194494, "repVotes": 88816, "totalVotes": 283310, "margin": -37.3 },
+      { "year": 2022, "demPct": 68.65, "repPct": 31.35, "demCandidate": "Jimmy Panetta", "repCandidate": "Jeff Gorman", "demVotes": 194494, "repVotes": 88816, "totalVotes": 283310, "margin": -37.3, "demIncumbent": true },
       { "year": 2020, "demPct": 71.68, "repPct": 28.32, "demCandidate": "Zoe Lofgren", "repCandidate": "Justin James Aguilera", "demVotes": 224385, "repVotes": 88642, "totalVotes": 313027, "margin": -43.36, "demIncumbent": true },
       { "year": 2018, "demPct": 73.75, "repPct": 26.25, "demCandidate": "Zoe Lofgren", "repCandidate": "Justin James Aguilera", "demVotes": 162496, "repVotes": 57823, "totalVotes": 220319, "margin": -47.5, "demIncumbent": true },
       { "year": 2016, "demPct": 73.94, "repPct": 26.06, "demCandidate": "Zoe Lofgren", "repCandidate": "Burt Lancaster", "demVotes": 181802, "repVotes": 64061, "totalVotes": 245863, "margin": -47.88, "demIncumbent": true }
@@ -3543,7 +3543,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 34.95, "repPct": 65.05, "demCandidate": "Mike Boudreaux", "demParty": "R", "repCandidate": "Vince Fong", "demVotes": 100926, "repVotes": 187862, "totalVotes": 288788, "margin": 30.1, "repIncumbent": true },
-      { "year": 2022, "demPct": 32.75, "repPct": 67.25, "demCandidate": "Marisa Wood", "repCandidate": "Kevin McCarthy", "demVotes": 74934, "repVotes": 153847, "totalVotes": 228781, "margin": 34.5 },
+      { "year": 2022, "demPct": 32.75, "repPct": 67.25, "demCandidate": "Marisa Wood", "repCandidate": "Kevin McCarthy", "demVotes": 74934, "repVotes": 153847, "totalVotes": 228781, "margin": 34.5, "repIncumbent": true },
       { "year": 2020, "demPct": 76.78, "repPct": 23.22, "demCandidate": "Jimmy Panetta", "repCandidate": "Jeff Gorman", "demVotes": 236896, "repVotes": 71658, "totalVotes": 308554, "margin": -53.56, "demIncumbent": true },
       { "year": 2018, "demPct": 81.37, "repPct": 18.63, "demCandidate": "Jimmy Panetta", "repCandidate": "Ronald Paul Kabat", "repParty": "I", "demVotes": 183677, "repVotes": 42044, "totalVotes": 225721, "margin": -62.74, "demIncumbent": true },
       { "year": 2016, "demPct": 70.75, "repPct": 29.25, "demCandidate": "Jimmy Panetta", "repCandidate": "Casey Lucius", "demVotes": 180980, "repVotes": 74811, "totalVotes": 255791, "margin": -41.5 }
@@ -3564,7 +3564,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 52.57, "repPct": 47.43, "demCandidate": "Jim Costa", "repCandidate": "Michael Maher", "demVotes": 102798, "repVotes": 92733, "totalVotes": 195531, "margin": -5.14, "demIncumbent": true },
-      { "year": 2022, "demPct": 54.18, "repPct": 45.82, "demCandidate": "Jim Costa", "repCandidate": "Michael Maher", "demVotes": 68074, "repVotes": 57573, "totalVotes": 125647, "margin": -8.36 },
+      { "year": 2022, "demPct": 54.18, "repPct": 45.82, "demCandidate": "Jim Costa", "repCandidate": "Michael Maher", "demVotes": 68074, "repVotes": 57573, "totalVotes": 125647, "margin": -8.36, "demIncumbent": true },
       { "year": 2020, "demPct": 49.55, "repPct": 50.45, "demCandidate": "TJ Cox", "repCandidate": "David Valadao", "demVotes": 84406, "repVotes": 85928, "totalVotes": 170334, "margin": 0.9, "demIncumbent": true },
       { "year": 2018, "demPct": 50.38, "repPct": 49.62, "demCandidate": "TJ Cox", "repCandidate": "David Valadao", "demVotes": 57239, "repVotes": 56377, "totalVotes": 113616, "margin": -0.76, "repIncumbent": true },
       { "year": 2016, "demPct": 43.26, "repPct": 56.74, "demCandidate": "Emilio Huerta", "repCandidate": "David Valadao", "demVotes": 57282, "repVotes": 75126, "totalVotes": 132408, "margin": 13.48, "repIncumbent": true }
@@ -3585,7 +3585,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 46.58, "repPct": 53.42, "demCandidate": "Rudy Salas", "repCandidate": "David Valadao", "demVotes": 78023, "repVotes": 89484, "totalVotes": 167507, "margin": 6.84, "repIncumbent": true },
-      { "year": 2022, "demPct": 48.48, "repPct": 51.52, "demCandidate": "Rudy Salas", "repCandidate": "David Valadao", "demVotes": 49862, "repVotes": 52994, "totalVotes": 102856, "margin": 3.04 },
+      { "year": 2022, "demPct": 48.48, "repPct": 51.52, "demCandidate": "Rudy Salas", "repCandidate": "David Valadao", "demVotes": 49862, "repVotes": 52994, "totalVotes": 102856, "margin": 3.04, "repIncumbent": true },
       { "year": 2020, "demPct": 45.77, "repPct": 54.23, "demCandidate": "Phil Arballo", "repCandidate": "Devin Nunes", "demVotes": 144251, "repVotes": 170888, "totalVotes": 315139, "margin": 8.46, "repIncumbent": true },
       { "year": 2018, "demPct": 47.28, "repPct": 52.72, "demCandidate": "Andrew Janz", "repCandidate": "Devin Nunes", "demVotes": 105136, "repVotes": 117243, "totalVotes": 222379, "margin": 5.44, "repIncumbent": true },
       { "year": 2016, "demPct": 32.43, "repPct": 67.57, "demCandidate": "Louie Campos", "repCandidate": "Devin Nunes", "demVotes": 76211, "repVotes": 158755, "totalVotes": 234966, "margin": 35.14, "repIncumbent": true }
@@ -3608,7 +3608,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 39.86, "repPct": 60.14, "demCandidate": "Derek Marshall", "repCandidate": "Jay Obernolte", "demVotes": 105563, "repVotes": 159286, "totalVotes": 264849, "margin": 20.28, "repIncumbent": true },
-      { "year": 2022, "demPct": 38.97, "repPct": 61.03, "demCandidate": "Derek Marshall", "repCandidate": "Jay Obernolte", "demVotes": 65908, "repVotes": 103197, "totalVotes": 169105, "margin": 22.06 },
+      { "year": 2022, "demPct": 38.97, "repPct": 61.03, "demCandidate": "Derek Marshall", "repCandidate": "Jay Obernolte", "demVotes": 65908, "repVotes": 103197, "totalVotes": 169105, "margin": 22.06, "repIncumbent": true },
       { "year": 2020, "demPct": 37.86, "repPct": 62.14, "demCandidate": "Kim Mangone", "repCandidate": "Kevin McCarthy", "demVotes": 115896, "repVotes": 190222, "totalVotes": 306118, "margin": 24.28, "repIncumbent": true },
       { "year": 2018, "demPct": 36.28, "repPct": 63.72, "demCandidate": "Tatiana Matta", "repCandidate": "Kevin McCarthy", "demVotes": 74661, "repVotes": 131113, "totalVotes": 205774, "margin": 27.44, "repIncumbent": true },
       { "year": 2016, "demPct": 30.82, "repPct": 69.18, "demCandidate": "Wendy Reed", "repCandidate": "Kevin McCarthy", "demVotes": 74468, "repVotes": 167116, "totalVotes": 241584, "margin": 38.36, "repIncumbent": true }
@@ -3654,7 +3654,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 56.25, "repPct": 43.75, "demCandidate": "Raul Ruiz", "repCandidate": "Ian Weeks", "demVotes": 137837, "repVotes": 107194, "totalVotes": 245031, "margin": -12.5, "demIncumbent": true },
-      { "year": 2022, "demPct": 57.38, "repPct": 42.62, "demCandidate": "Raul Ruiz", "repCandidate": "Brian Hawkins", "demVotes": 87641, "repVotes": 65101, "totalVotes": 152742, "margin": -14.76 },
+      { "year": 2022, "demPct": 57.38, "repPct": 42.62, "demCandidate": "Raul Ruiz", "repCandidate": "Brian Hawkins", "demVotes": 87641, "repVotes": 65101, "totalVotes": 152742, "margin": -14.76, "demIncumbent": true },
       { "year": 2020, "demPct": 49.95, "repPct": 50.05, "demCandidate": "Christy Smith", "repCandidate": "Mike Garcia", "demVotes": 169305, "repVotes": 169638, "totalVotes": 338943, "margin": 0.1, "repIncumbent": true },
       { "year": 2018, "demPct": 54.37, "repPct": 45.63, "demCandidate": "Katie Hill", "repCandidate": "Stephen Knight", "demVotes": 133209, "repVotes": 111813, "totalVotes": 245022, "margin": -8.74, "repIncumbent": true },
       { "year": 2016, "demPct": 46.87, "repPct": 53.13, "demCandidate": "Bryan Caforio", "repCandidate": "Stephen Knight", "demVotes": 122406, "repVotes": 138755, "totalVotes": 261161, "margin": 6.26, "repIncumbent": true }
@@ -3698,7 +3698,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 51.33, "repPct": 48.67, "demCandidate": "George Whitesides", "repCandidate": "Mike Garcia", "demVotes": 154040, "repVotes": 146050, "totalVotes": 300090, "margin": -2.66, "repIncumbent": true },
-      { "year": 2022, "demPct": 46.76, "repPct": 53.24, "demCandidate": "Christy Smith", "repCandidate": "Mike Garcia", "demVotes": 91892, "repVotes": 104624, "totalVotes": 196516, "margin": 6.48 },
+      { "year": 2022, "demPct": 46.76, "repPct": 53.24, "demCandidate": "Christy Smith", "repCandidate": "Mike Garcia", "demVotes": 91892, "repVotes": 104624, "totalVotes": 196516, "margin": 6.48, "repIncumbent": true },
       { "year": 2020, "demPct": 69.78, "repPct": 30.22, "demCandidate": "Judy Chu", "repCandidate": "Johnny Nalbandian", "demVotes": 221411, "repVotes": 95907, "totalVotes": 317318, "margin": -39.56, "demIncumbent": true },
       { "year": 2018, "demPct": 79.21, "repPct": 20.79, "demCandidate": "Judy Chu", "repCandidate": "Bryan Witt", "repParty": "D", "demVotes": 160504, "repVotes": 42132, "totalVotes": 202636, "margin": -58.42, "demIncumbent": true },
       { "year": 2016, "demPct": 67.42, "repPct": 32.58, "demCandidate": "Judy Chu", "repCandidate": "Jack Orswell", "demVotes": 168977, "repVotes": 81655, "totalVotes": 250632, "margin": -34.84, "demIncumbent": true }
@@ -3721,7 +3721,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 64.93, "repPct": 35.07, "demCandidate": "Judy Chu", "repCandidate": "April Verlato", "demVotes": 204489, "repVotes": 110455, "totalVotes": 314944, "margin": -29.86, "demIncumbent": true },
-      { "year": 2022, "demPct": 66.24, "repPct": 33.76, "demCandidate": "Judy Chu", "repCandidate": "Wes Hallman", "demVotes": 150062, "repVotes": 76495, "totalVotes": 226557, "margin": -32.48 },
+      { "year": 2022, "demPct": 66.24, "repPct": 33.76, "demCandidate": "Judy Chu", "repCandidate": "Wes Hallman", "demVotes": 150062, "repVotes": 76495, "totalVotes": 226557, "margin": -32.48, "demIncumbent": true },
       { "year": 2020, "demPct": 72.66, "repPct": 27.34, "demCandidate": "Adam Schiff", "repCandidate": "Eric Early", "demVotes": 244271, "repVotes": 91928, "totalVotes": 336199, "margin": -45.32, "demIncumbent": true },
       { "year": 2018, "demPct": 78.37, "repPct": 21.63, "demCandidate": "Adam Schiff", "repCandidate": "Johnny Nalbandian", "demVotes": 196662, "repVotes": 54272, "totalVotes": 250934, "margin": -56.74, "demIncumbent": true },
       { "year": 2016, "demPct": 77.99, "repPct": 22.01, "demCandidate": "Adam Schiff", "repCandidate": "Lenore Solis", "demVotes": 210883, "repVotes": 59526, "totalVotes": 270409, "margin": -55.98, "demIncumbent": true }
@@ -3767,7 +3767,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 68.38, "repPct": 31.62, "demCandidate": "Laura Friedman", "repCandidate": "Alex Balekian", "demVotes": 213100, "repVotes": 98559, "totalVotes": 311659, "margin": -36.76 },
-      { "year": 2022, "demPct": 71.11, "repPct": 28.89, "demCandidate": "Adam Schiff", "repCandidate": "Maebe A. Girl", "repParty": "D", "demVotes": 150100, "repVotes": 60968, "totalVotes": 211068, "margin": -42.22 },
+      { "year": 2022, "demPct": 71.11, "repPct": 28.89, "demCandidate": "Adam Schiff", "repCandidate": "Maebe A. Girl", "repParty": "D", "demVotes": 150100, "repVotes": 60968, "totalVotes": 211068, "margin": -42.22, "demIncumbent": true },
       { "year": 2020, "demPct": 69.48, "repPct": 30.52, "demCandidate": "Brad Sherman", "repCandidate": "Mark Reed", "demVotes": 240038, "repVotes": 105426, "totalVotes": 345464, "margin": -38.96, "demIncumbent": true },
       { "year": 2018, "demPct": 73.4, "repPct": 26.6, "demCandidate": "Brad Sherman", "repCandidate": "Mark Reed", "demVotes": 191573, "repVotes": 69420, "totalVotes": 260993, "margin": -46.8, "demIncumbent": true },
       { "year": 2016, "demPct": 72.64, "repPct": 27.36, "demCandidate": "Brad Sherman", "repCandidate": "Mark Reed", "demVotes": 205279, "repVotes": 77325, "totalVotes": 282604, "margin": -45.28, "demIncumbent": true }
@@ -3790,7 +3790,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 59.73, "repPct": 40.27, "demCandidate": "Gil Cisneros", "repCandidate": "Daniel Jose Bocic Martinez", "demVotes": 148095, "repVotes": 99856, "totalVotes": 247951, "margin": -19.46 },
-      { "year": 2022, "demPct": 59.54, "repPct": 40.46, "demCandidate": "Grace Napolitano", "repCandidate": "Daniel Bocic Martinez", "demVotes": 91472, "repVotes": 62153, "totalVotes": 153625, "margin": -19.08 },
+      { "year": 2022, "demPct": 59.54, "repPct": 40.46, "demCandidate": "Grace Napolitano", "repCandidate": "Daniel Bocic Martinez", "demVotes": 91472, "repVotes": 62153, "totalVotes": 153625, "margin": -19.08, "demIncumbent": true },
       { "year": 2020, "demPct": 61.29, "repPct": 38.71, "demCandidate": "Pete Aguilar", "repCandidate": "Agnes Gibboney", "demVotes": 175315, "repVotes": 110735, "totalVotes": 286050, "margin": -22.58, "demIncumbent": true },
       { "year": 2018, "demPct": 58.74, "repPct": 41.26, "demCandidate": "Pete Aguilar", "repCandidate": "Sean Flynn", "demVotes": 110143, "repVotes": 77352, "totalVotes": 187495, "margin": -17.48, "demIncumbent": true },
       { "year": 2016, "demPct": 56.07, "repPct": 43.93, "demCandidate": "Pete Aguilar", "repCandidate": "Paul Chabot", "demVotes": 121070, "repVotes": 94866, "totalVotes": 215936, "margin": -12.14, "demIncumbent": true }
@@ -3813,7 +3813,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 66.2, "repPct": 33.8, "demCandidate": "Brad Sherman", "repCandidate": "Larry Thompson", "demVotes": 212934, "repVotes": 108711, "totalVotes": 321645, "margin": -32.4, "demIncumbent": true },
-      { "year": 2022, "demPct": 69.17, "repPct": 30.83, "demCandidate": "Brad Sherman", "repCandidate": "Lucie Lapointe Volotzky", "demVotes": 167411, "repVotes": 74618, "totalVotes": 242029, "margin": -38.34 },
+      { "year": 2022, "demPct": 69.17, "repPct": 30.83, "demCandidate": "Brad Sherman", "repCandidate": "Lucie Lapointe Volotzky", "demVotes": 167411, "repVotes": 74618, "totalVotes": 242029, "margin": -38.34, "demIncumbent": true },
       { "year": 2020, "demPct": 66.58, "repPct": 33.42, "demCandidate": "Grace Napolitano", "repCandidate": "Joshua Scott", "demVotes": 172942, "repVotes": 86818, "totalVotes": 259760, "margin": -33.16, "demIncumbent": true },
       { "year": 2018, "demPct": 68.78, "repPct": 31.22, "demCandidate": "Grace Napolitano", "repCandidate": "Joshua Scott", "demVotes": 121759, "repVotes": 55272, "totalVotes": 177031, "margin": -37.56, "demIncumbent": true },
       { "year": 2016, "demPct": 61.57, "repPct": 38.43, "demCandidate": "Grace Napolitano", "repCandidate": "Roger Hernández", "repParty": "D", "demVotes": 114926, "repVotes": 71720, "totalVotes": 186646, "margin": -23.14, "demIncumbent": true }
@@ -3836,7 +3836,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 58.81, "repPct": 41.19, "demCandidate": "Pete Aguilar", "repCandidate": "Tom Herman", "demVotes": 137197, "repVotes": 96078, "totalVotes": 233275, "margin": -17.62, "demIncumbent": true },
-      { "year": 2022, "demPct": 57.71, "repPct": 42.29, "demCandidate": "Pete Aguilar", "repCandidate": "John Mark Porter", "demVotes": 76588, "repVotes": 56119, "totalVotes": 132707, "margin": -15.42 },
+      { "year": 2022, "demPct": 57.71, "repPct": 42.29, "demCandidate": "Pete Aguilar", "repCandidate": "John Mark Porter", "demVotes": 76588, "repVotes": 56119, "totalVotes": 132707, "margin": -15.42, "demIncumbent": true },
       { "year": 2020, "demPct": 67.58, "repPct": 32.42, "demCandidate": "Ted Lieu", "repCandidate": "James Bradley", "demVotes": 257094, "repVotes": 123334, "totalVotes": 380428, "margin": -35.16, "demIncumbent": true },
       { "year": 2018, "demPct": 70.03, "repPct": 29.97, "demCandidate": "Ted Lieu", "repCandidate": "Kenneth Weston Wright", "demVotes": 219091, "repVotes": 93769, "totalVotes": 312860, "margin": -40.06, "demIncumbent": true },
       { "year": 2016, "demPct": 66.44, "repPct": 33.56, "demCandidate": "Ted Lieu", "repCandidate": "Kenneth Wright", "demVotes": 219397, "repVotes": 110822, "totalVotes": 330219, "margin": -32.88, "demIncumbent": true }
@@ -3905,7 +3905,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 68.72, "repPct": 31.28, "demCandidate": "Ted Lieu", "repCandidate": "Melissa Toomim", "demVotes": 246002, "repVotes": 111985, "totalVotes": 357987, "margin": -37.44, "demIncumbent": true },
-      { "year": 2022, "demPct": 69.75, "repPct": 30.25, "demCandidate": "Ted Lieu", "repCandidate": "Joe Collins", "demVotes": 194299, "repVotes": 84264, "totalVotes": 278563, "margin": -39.5 },
+      { "year": 2022, "demPct": 69.75, "repPct": 30.25, "demCandidate": "Ted Lieu", "repCandidate": "Joe Collins", "demVotes": 194299, "repVotes": 84264, "totalVotes": 278563, "margin": -39.5, "demIncumbent": true },
       { "year": 2020, "demPct": 60.34, "repPct": 39.66, "demCandidate": "Raul Ruiz", "repCandidate": "Erin Cruz", "demVotes": 185151, "repVotes": 121698, "totalVotes": 306849, "margin": -20.68, "demIncumbent": true },
       { "year": 2018, "demPct": 59.02, "repPct": 40.98, "demCandidate": "Raul Ruiz", "repCandidate": "Kimberlin Brown Pelzer", "demVotes": 122169, "repVotes": 84839, "totalVotes": 207008, "margin": -18.04, "demIncumbent": true },
       { "year": 2016, "demPct": 62.05, "repPct": 37.95, "demCandidate": "Raul Ruiz", "repCandidate": "Jeff Stone", "demVotes": 144348, "repVotes": 88269, "totalVotes": 232617, "margin": -24.1, "demIncumbent": true }
@@ -3974,7 +3974,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 56.69, "repPct": 43.31, "demCandidate": "Mark Takano", "repCandidate": "David Serpa", "demVotes": 130191, "repVotes": 99469, "totalVotes": 229660, "margin": -13.38, "demIncumbent": true },
-      { "year": 2022, "demPct": 57.67, "repPct": 42.33, "demCandidate": "Mark Takano", "repCandidate": "Aja Smith", "demVotes": 75896, "repVotes": 55701, "totalVotes": 131597, "margin": -15.34 },
+      { "year": 2022, "demPct": 57.67, "repPct": 42.33, "demCandidate": "Mark Takano", "repCandidate": "Aja Smith", "demVotes": 75896, "repVotes": 55701, "totalVotes": 131597, "margin": -15.34, "demIncumbent": true },
       { "year": 2020, "demPct": 49.4, "repPct": 50.6, "demCandidate": "Gilbert Ray Cisneros", "repCandidate": "Young Kim", "demVotes": 169837, "repVotes": 173946, "totalVotes": 343783, "margin": 1.2, "demIncumbent": true },
       { "year": 2018, "demPct": 51.56, "repPct": 48.44, "demCandidate": "Gil Cisneros", "repCandidate": "Young Kim", "demVotes": 126002, "repVotes": 118391, "totalVotes": 244393, "margin": -3.12 },
       { "year": 2016, "demPct": 42.77, "repPct": 57.23, "demCandidate": "Brett Murdock", "repCandidate": "Edward Royce", "demVotes": 112679, "repVotes": 150777, "totalVotes": 263456, "margin": 14.46, "repIncumbent": true }
@@ -3993,7 +3993,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 44.74, "repPct": 55.26, "demCandidate": "Joe Kerr", "repCandidate": "Young Kim", "demVotes": 171637, "repVotes": 211998, "totalVotes": 383635, "margin": 10.52, "repIncumbent": true },
-      { "year": 2022, "demPct": 43.16, "repPct": 56.84, "demCandidate": "Asif Mahmood", "repCandidate": "Young Kim", "demVotes": 122722, "repVotes": 161589, "totalVotes": 284311, "margin": 13.68 },
+      { "year": 2022, "demPct": 43.16, "repPct": 56.84, "demCandidate": "Asif Mahmood", "repCandidate": "Young Kim", "demVotes": 122722, "repVotes": 161589, "totalVotes": 284311, "margin": 13.68, "repIncumbent": true },
       { "year": 2020, "demPct": 72.74, "repPct": 27.26, "demCandidate": "Lucille Roybal-Allard", "repCandidate": "Antonio Delgado", "demVotes": 135572, "repVotes": 50809, "totalVotes": 186381, "margin": -45.48, "demIncumbent": true },
       { "year": 2018, "demPct": 77.35, "repPct": 22.65, "demCandidate": "Lucille Roybal-Allard", "repCandidate": "Rodolfo Cortes Barragan", "repParty": "I", "demVotes": 93938, "repVotes": 27511, "totalVotes": 121449, "margin": -54.7, "demIncumbent": true },
       { "year": 2016, "demPct": 71.37, "repPct": 28.63, "demCandidate": "Lucille Roybal-Allard", "repCandidate": "Roman Gabriel Gonzalez", "repParty": "I", "demVotes": 106554, "repVotes": 42743, "totalVotes": 149297, "margin": -42.74, "demIncumbent": true }
@@ -4014,7 +4014,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 48.31, "repPct": 51.69, "demCandidate": "Will Rollins", "repCandidate": "Ken Calvert", "demVotes": 171229, "repVotes": 183216, "totalVotes": 354445, "margin": 3.38, "repIncumbent": true },
-      { "year": 2022, "demPct": 47.65, "repPct": 52.35, "demCandidate": "Will Rollins", "repCandidate": "Ken Calvert", "demVotes": 112769, "repVotes": 123869, "totalVotes": 236638, "margin": 4.7 },
+      { "year": 2022, "demPct": 47.65, "repPct": 52.35, "demCandidate": "Will Rollins", "repCandidate": "Ken Calvert", "demVotes": 112769, "repVotes": 123869, "totalVotes": 236638, "margin": 4.7, "repIncumbent": true },
       { "year": 2020, "demPct": 64.03, "repPct": 35.97, "demCandidate": "Mark Takano", "repCandidate": "Aja Smith", "demVotes": 168126, "repVotes": 94447, "totalVotes": 262573, "margin": -28.06, "demIncumbent": true },
       { "year": 2018, "demPct": 65.1, "repPct": 34.9, "demCandidate": "Mark Takano", "repCandidate": "Aja Smith", "demVotes": 108227, "repVotes": 58021, "totalVotes": 166248, "margin": -30.2, "demIncumbent": true },
       { "year": 2016, "demPct": 64.95, "repPct": 35.05, "demCandidate": "Mark Takano", "repCandidate": "Doug Shepherd", "demVotes": 128164, "repVotes": 69159, "totalVotes": 197323, "margin": -29.9, "demIncumbent": true }
@@ -4104,7 +4104,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 50.1, "repPct": 49.9, "demCandidate": "Derek Tran", "repCandidate": "Michelle Steel", "demVotes": 158264, "repVotes": 157611, "totalVotes": 315875, "margin": -0.2, "repIncumbent": true },
-      { "year": 2022, "demPct": 47.59, "repPct": 52.41, "demCandidate": "Jay Chen", "repCandidate": "Michelle Steel", "demVotes": 103466, "repVotes": 113960, "totalVotes": 217426, "margin": 4.82 },
+      { "year": 2022, "demPct": 47.59, "repPct": 52.41, "demCandidate": "Jay Chen", "repCandidate": "Michelle Steel", "demVotes": 103466, "repVotes": 113960, "totalVotes": 217426, "margin": 4.82, "repIncumbent": true },
       { "year": 2020, "demPct": 53.46, "repPct": 46.54, "demCandidate": "Katie Porter", "repCandidate": "Greg Raths", "demVotes": 221843, "repVotes": 193096, "totalVotes": 414939, "margin": -6.92, "demIncumbent": true },
       { "year": 2018, "demPct": 52.05, "repPct": 47.95, "demCandidate": "Katie Porter", "repCandidate": "Mimi Walters", "demVotes": 158906, "repVotes": 146383, "totalVotes": 305289, "margin": -4.1, "repIncumbent": true },
       { "year": 2016, "demPct": 41.44, "repPct": 58.56, "demCandidate": "Ron Varasteh", "repCandidate": "Mimi Walters", "demVotes": 129231, "repVotes": 182618, "totalVotes": 311849, "margin": 17.12, "repIncumbent": true }
@@ -4148,7 +4148,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 51.44, "repPct": 48.56, "demCandidate": "Dave Min", "repCandidate": "Scott Baugh", "demVotes": 181721, "repVotes": 171554, "totalVotes": 353275, "margin": -2.88 },
-      { "year": 2022, "demPct": 51.72, "repPct": 48.28, "demCandidate": "Katie Porter", "repCandidate": "Scott Baugh", "demVotes": 137374, "repVotes": 128261, "totalVotes": 265635, "margin": -3.44 },
+      { "year": 2022, "demPct": 51.72, "repPct": 48.28, "demCandidate": "Katie Porter", "repCandidate": "Scott Baugh", "demVotes": 137374, "repVotes": 128261, "totalVotes": 265635, "margin": -3.44, "demIncumbent": true },
       { "year": 2020, "demPct": 63.27, "repPct": 36.73, "demCandidate": "Alan Lowenthal", "repCandidate": "John Briscoe", "demVotes": 197028, "repVotes": 114371, "totalVotes": 311399, "margin": -26.54, "demIncumbent": true },
       { "year": 2018, "demPct": 64.86, "repPct": 35.14, "demCandidate": "Alan Lowenthal", "repCandidate": "John Briscoe", "demVotes": 143354, "repVotes": 77682, "totalVotes": 221036, "margin": -29.72, "demIncumbent": true },
       { "year": 2016, "demPct": 63.72, "repPct": 36.28, "demCandidate": "Alan Lowenthal", "repCandidate": "Andy Whallon", "demVotes": 154759, "repVotes": 88109, "totalVotes": 242868, "margin": -27.44, "demIncumbent": true }
@@ -4171,7 +4171,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 40.71, "repPct": 59.29, "demCandidate": "Stephen Houlahan", "repCandidate": "Darrell Issa", "demVotes": 146665, "repVotes": 213625, "totalVotes": 360290, "margin": 18.58, "repIncumbent": true },
-      { "year": 2022, "demPct": 39.64, "repPct": 60.36, "demCandidate": "Stephen Houlahan", "repCandidate": "Darrell Issa", "demVotes": 101900, "repVotes": 155171, "totalVotes": 257071, "margin": 20.72 },
+      { "year": 2022, "demPct": 39.64, "repPct": 60.36, "demCandidate": "Stephen Houlahan", "repCandidate": "Darrell Issa", "demVotes": 101900, "repVotes": 155171, "totalVotes": 257071, "margin": 20.72, "repIncumbent": true },
       { "year": 2020, "demPct": 48.94, "repPct": 51.06, "demCandidate": "Harley Rouda", "repCandidate": "Michelle Steel", "demVotes": 193362, "repVotes": 201738, "totalVotes": 395100, "margin": 2.12, "demIncumbent": true },
       { "year": 2018, "demPct": 53.55, "repPct": 46.45, "demCandidate": "Harley Rouda", "repCandidate": "Dana Rohrabacher", "demVotes": 157837, "repVotes": 136899, "totalVotes": 294736, "margin": -7.1, "repIncumbent": true },
       { "year": 2016, "demPct": 41.68, "repPct": 58.32, "demCandidate": "Suzanne Savary", "repCandidate": "Dana Rohrabacher", "demVotes": 127715, "repVotes": 178701, "totalVotes": 306416, "margin": 16.64, "repIncumbent": true }
@@ -4215,7 +4215,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 64.27, "repPct": 35.73, "demCandidate": "Scott Peters", "repCandidate": "Peter Bono", "demVotes": 231836, "repVotes": 128859, "totalVotes": 360695, "margin": -28.54, "demIncumbent": true },
-      { "year": 2022, "demPct": 62.84, "repPct": 37.16, "demCandidate": "Scott Peters", "repCandidate": "Corey Gustafson", "demVotes": 168816, "repVotes": 99819, "totalVotes": 268635, "margin": -25.68 },
+      { "year": 2022, "demPct": 62.84, "repPct": 37.16, "demCandidate": "Scott Peters", "repCandidate": "Corey Gustafson", "demVotes": 168816, "repVotes": 99819, "totalVotes": 268635, "margin": -25.68, "demIncumbent": true },
       { "year": 2020, "demPct": 46.05, "repPct": 53.95, "demCandidate": "Ammar Campa-Najjar", "repCandidate": "Darrell Issa", "demVotes": 166869, "repVotes": 195521, "totalVotes": 362390, "margin": 7.9 },
       { "year": 2018, "demPct": 48.28, "repPct": 51.72, "demCandidate": "Ammar Campa-Najjar", "repCandidate": "Duncan Hunter", "demVotes": 125448, "repVotes": 134362, "totalVotes": 259810, "margin": 3.44, "repIncumbent": true },
       { "year": 2016, "demPct": 36.55, "repPct": 63.45, "demCandidate": "Patrick Malloy", "repCandidate": "Duncan Hunter", "demVotes": 103646, "repVotes": 179937, "totalVotes": 283583, "margin": 26.9, "repIncumbent": true }
@@ -4238,7 +4238,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 60.7, "repPct": 39.3, "demCandidate": "Sara Jacobs", "repCandidate": "Bill Wells", "demVotes": 198835, "repVotes": 128749, "totalVotes": 327584, "margin": -21.4, "demIncumbent": true },
-      { "year": 2022, "demPct": 61.86, "repPct": 38.14, "demCandidate": "Sara Jacobs", "repCandidate": "Stan Caplan", "demVotes": 144186, "repVotes": 88886, "totalVotes": 233072, "margin": -23.72 },
+      { "year": 2022, "demPct": 61.86, "repPct": 38.14, "demCandidate": "Sara Jacobs", "repCandidate": "Stan Caplan", "demVotes": 144186, "repVotes": 88886, "totalVotes": 233072, "margin": -23.72, "demIncumbent": true },
       { "year": 2020, "demPct": 68.3, "repPct": 31.7, "demCandidate": "Juan Vargas", "repCandidate": "Juan Hidalgo", "demVotes": 165596, "repVotes": 76841, "totalVotes": 242437, "margin": -36.6, "demIncumbent": true },
       { "year": 2018, "demPct": 71.2, "repPct": 28.8, "demCandidate": "Juan Vargas", "repCandidate": "Juan Hidalgo", "demVotes": 109527, "repVotes": 44301, "totalVotes": 153828, "margin": -42.4, "demIncumbent": true },
       { "year": 2016, "demPct": 72.75, "repPct": 27.25, "demCandidate": "Juan Vargas", "repCandidate": "Juan Hidalgo", "demVotes": 145162, "repVotes": 54362, "totalVotes": 199524, "margin": -45.5, "demIncumbent": true }
@@ -4261,7 +4261,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 66.31, "repPct": 33.69, "demCandidate": "Juan Vargas", "repCandidate": "Justin Lee", "demVotes": 172217, "repVotes": 87501, "totalVotes": 259718, "margin": -32.62, "demIncumbent": true },
-      { "year": 2022, "demPct": 66.67, "repPct": 33.33, "demCandidate": "Juan Vargas", "repCandidate": "Tyler Geffeney", "demVotes": 100686, "repVotes": 50330, "totalVotes": 151016, "margin": -33.34 },
+      { "year": 2022, "demPct": 66.67, "repPct": 33.33, "demCandidate": "Juan Vargas", "repCandidate": "Tyler Geffeney", "demVotes": 100686, "repVotes": 50330, "totalVotes": 151016, "margin": -33.34, "demIncumbent": true },
       { "year": 2020, "demPct": 61.58, "repPct": 38.42, "demCandidate": "Scott Peters", "repCandidate": "Jim DeBello", "demVotes": 244145, "repVotes": 152350, "totalVotes": 396495, "margin": -23.16, "demIncumbent": true },
       { "year": 2018, "demPct": 63.85, "repPct": 36.15, "demCandidate": "Scott Peters", "repCandidate": "Omar Qudrat", "demVotes": 188992, "repVotes": 107015, "totalVotes": 296007, "margin": -27.7, "demIncumbent": true },
       { "year": 2016, "demPct": 56.53, "repPct": 43.47, "demCandidate": "Scott Peters", "repCandidate": "Denise Gitsham", "demVotes": 181253, "repVotes": 139403, "totalVotes": 320656, "margin": -13.06, "demIncumbent": true }
@@ -4687,7 +4687,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 36.92, "repPct": 63.07, "demCandidate": "Jay McGovern", "repCandidate": "John Rutherford", "demVotes": 156570, "repVotes": 267471, "totalVotes": 424064, "margin": 26.15, "repIncumbent": true },
-      { "year": 2022, "demPct": 0, "repPct": 100, "repCandidate": "John Rutherford", "demVotes": 0, "repVotes": 0, "totalVotes": 0, "margin": 100 },
+      { "year": 2022, "demPct": 0, "repPct": 100, "repCandidate": "John Rutherford", "demVotes": 0, "repVotes": 0, "totalVotes": 0, "margin": 100, "repIncumbent": true },
       { "year": 2020, "demPct": 65.13, "repPct": 34.87, "demCandidate": "Al Lawson", "repCandidate": "Gary Adler", "demVotes": 219463, "repVotes": 117510, "totalVotes": 336973, "margin": -30.26, "demIncumbent": true },
       { "year": 2018, "demPct": 66.78, "repPct": 33.22, "demCandidate": "Al Lawson", "repCandidate": "Virginia Fuller", "demVotes": 180527, "repVotes": 89799, "totalVotes": 270326, "margin": -33.56, "demIncumbent": true },
       { "year": 2016, "demPct": 64.23, "repPct": 35.77, "demCandidate": "Al Lawson", "repCandidate": "Glo Smith", "demVotes": 194549, "repVotes": 108325, "totalVotes": 302874, "margin": -28.46 }
@@ -4984,7 +4984,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 34.7, "repPct": 65.3, "demCandidate": "Andrea Doria Kale", "repCandidate": "Scott Franklin", "demVotes": 119637, "repVotes": 225170, "totalVotes": 344807, "margin": 30.6, "repIncumbent": true },
-      { "year": 2022, "demPct": 25.26, "repPct": 74.67, "demCandidate": "Keith Hayden Jr.", "demParty": "I", "repCandidate": "Scott Franklin", "demVotes": 56647, "repVotes": 167429, "totalVotes": 224234, "margin": 49.41 },
+      { "year": 2022, "demPct": 25.26, "repPct": 74.67, "demCandidate": "Keith Hayden Jr.", "demParty": "I", "repCandidate": "Scott Franklin", "demVotes": 56647, "repVotes": 167429, "totalVotes": 224234, "margin": 49.41, "repIncumbent": true },
       { "year": 2020, "demPct": 41.51, "repPct": 56.32, "demCandidate": "Pam Keith", "repCandidate": "Brian Mast", "demVotes": 186674, "repVotes": 253286, "totalVotes": 449720, "margin": 14.81, "repIncumbent": true },
       { "year": 2018, "demPct": 45.7, "repPct": 54.3, "demCandidate": "Lauren Baer", "repCandidate": "Brian Mast", "demVotes": 156454, "repVotes": 185905, "totalVotes": 342359, "margin": 8.6, "repIncumbent": true },
       { "year": 2016, "demPct": 43.07, "repPct": 53.6, "demCandidate": "Randy Perkins", "repCandidate": "Brian Mast", "demVotes": 161918, "repVotes": 201488, "totalVotes": 375918, "margin": 10.53 }
@@ -5053,7 +5053,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 38.17, "repPct": 61.82, "demCandidate": "Thomas Witkop", "repCandidate": "Brian Mast", "demVotes": 171312, "repVotes": 277435, "totalVotes": 448766, "margin": 23.65, "repIncumbent": true },
-      { "year": 2022, "demPct": 36.5, "repPct": 63.5, "demCandidate": "Corinna Balderramos Robinson", "repCandidate": "Brian Mast", "demVotes": 119891, "repVotes": 208614, "totalVotes": 328505, "margin": 27 },
+      { "year": 2022, "demPct": 36.5, "repPct": 63.5, "demCandidate": "Corinna Balderramos Robinson", "repCandidate": "Brian Mast", "demVotes": 119891, "repVotes": 208614, "totalVotes": 328505, "margin": 27, "repIncumbent": true },
       { "year": 2020, "demPct": 59.02, "repPct": 39.1, "demCandidate": "Lois Frankel", "repCandidate": "Laura Loomer", "demVotes": 237925, "repVotes": 157612, "totalVotes": 403093, "margin": -19.92, "demIncumbent": true },
       { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Lois Frankel", "demVotes": 0, "repVotes": 0, "totalVotes": 0, "margin": -100, "demIncumbent": true },
       { "year": 2016, "demPct": 62.71, "repPct": 35.14, "demCandidate": "Lois Frankel", "repCandidate": "Paul Spain", "demVotes": 210606, "repVotes": 118038, "totalVotes": 335861, "margin": -27.57 }
@@ -5076,7 +5076,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 54.96, "repPct": 45.04, "demCandidate": "Lois Frankel", "repCandidate": "Dan Franzese", "demVotes": 201608, "repVotes": 165248, "totalVotes": 366856, "margin": -9.92, "demIncumbent": true },
-      { "year": 2022, "demPct": 55.11, "repPct": 44.89, "demCandidate": "Lois Frankel", "repCandidate": "Dan Franzese", "demVotes": 150010, "repVotes": 122194, "totalVotes": 272204, "margin": -10.22 },
+      { "year": 2022, "demPct": 55.11, "repPct": 44.89, "demCandidate": "Lois Frankel", "repCandidate": "Dan Franzese", "demVotes": 150010, "repVotes": 122194, "totalVotes": 272204, "margin": -10.22, "demIncumbent": true },
       { "year": 2020, "demPct": 58.6, "repPct": 41.4, "demCandidate": "Theodore Deutch", "repCandidate": "Jim Pruden", "demVotes": 235764, "repVotes": 166553, "totalVotes": 402317, "margin": -17.2, "demIncumbent": true },
       { "year": 2018, "demPct": 62.02, "repPct": 37.98, "demCandidate": "Theodore Deutch", "repCandidate": "Nicolas Kimaz", "demVotes": 184634, "repVotes": 113049, "totalVotes": 297683, "margin": -24.04, "demIncumbent": true },
       { "year": 2016, "demPct": 58.94, "repPct": 41.06, "demCandidate": "Theodore Deutch", "repCandidate": "Andrea Leigh McGee", "demVotes": 199113, "repVotes": 138737, "totalVotes": 337850, "margin": -17.88 }
@@ -5143,7 +5143,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 54.47, "repPct": 45.52, "demCandidate": "Debbie Wasserman Schultz", "repCandidate": "Chris Eddy", "demVotes": 186942, "repVotes": 156208, "totalVotes": 343191, "margin": -8.95, "demIncumbent": true },
-      { "year": 2022, "demPct": 55.09, "repPct": 44.91, "demCandidate": "Debbie Wasserman Schultz", "repCandidate": "Carla Spalding", "demVotes": 129113, "repVotes": 105239, "totalVotes": 234352, "margin": -10.18 },
+      { "year": 2022, "demPct": 55.09, "repPct": 44.91, "demCandidate": "Debbie Wasserman Schultz", "repCandidate": "Carla Spalding", "demVotes": 129113, "repVotes": 105239, "totalVotes": 234352, "margin": -10.18, "demIncumbent": true },
       { "year": 2020, "demPct": 0, "repPct": 100, "repCandidate": "Mario Diaz-Balart", "demVotes": 0, "repVotes": 0, "totalVotes": 0, "margin": 100, "repIncumbent": true },
       { "year": 2018, "demPct": 39.55, "repPct": 60.45, "demCandidate": "Mary Barzee Flores", "repCandidate": "Mario Diaz-Balart", "demVotes": 84173, "repVotes": 128672, "totalVotes": 212845, "margin": 20.9, "repIncumbent": true },
       { "year": 2016, "demPct": 37.64, "repPct": 62.36, "demCandidate": "Alina Valdes", "repCandidate": "Mario Diaz-Balart", "demVotes": 95319, "repVotes": 157921, "totalVotes": 253240, "margin": 24.72, "repIncumbent": true }
@@ -5166,7 +5166,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 29.08, "repPct": 70.92, "demCandidate": "Joey Atkins", "repCandidate": "Mario Diaz-Balart", "demVotes": 89072, "repVotes": 217199, "totalVotes": 306271, "margin": 41.84, "repIncumbent": true },
-      { "year": 2022, "demPct": 29.13, "repPct": 70.87, "demCandidate": "Christine Alexandria Olivo", "repCandidate": "Mario Diaz-Balart", "demVotes": 58868, "repVotes": 143240, "totalVotes": 202108, "margin": 41.74 },
+      { "year": 2022, "demPct": 29.13, "repPct": 70.87, "demCandidate": "Christine Alexandria Olivo", "repCandidate": "Mario Diaz-Balart", "demVotes": 58868, "repVotes": 143240, "totalVotes": 202108, "margin": 41.74, "repIncumbent": true },
       { "year": 2020, "demPct": 48.28, "repPct": 51.72, "demCandidate": "Debbie Mucarsel-Powell", "repCandidate": "Carlos Gimenez", "demVotes": 165407, "repVotes": 177223, "totalVotes": 342630, "margin": 3.44, "demIncumbent": true },
       { "year": 2018, "demPct": 50.87, "repPct": 49.13, "demCandidate": "Debbie Mucarsel-Powell", "repCandidate": "Carlos Curbelo", "demVotes": 119797, "repVotes": 115678, "totalVotes": 235475, "margin": -1.74, "repIncumbent": true },
       { "year": 2016, "demPct": 41.17, "repPct": 52.95, "demCandidate": "Joe Garcia", "repCandidate": "Carlos Curbelo", "demVotes": 115493, "repVotes": 148547, "totalVotes": 280542, "margin": 11.78, "repIncumbent": true }
@@ -5212,7 +5212,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 35.43, "repPct": 64.57, "demCandidate": "Phil Ehr", "repCandidate": "Carlos Gimenez", "demVotes": 115280, "repVotes": 210057, "totalVotes": 325337, "margin": 29.14, "repIncumbent": true },
-      { "year": 2022, "demPct": 36.31, "repPct": 63.68, "demCandidate": "Robert Asencio", "repCandidate": "Carlos Gimenez", "demVotes": 76665, "repVotes": 134457, "totalVotes": 211150, "margin": 27.37 }
+      { "year": 2022, "demPct": 36.31, "repPct": 63.68, "demCandidate": "Robert Asencio", "repCandidate": "Carlos Gimenez", "demVotes": 76665, "repVotes": 134457, "totalVotes": 211150, "margin": 27.37, "repIncumbent": true }
     ]
   },
   {
@@ -5346,7 +5346,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Lucy McBath",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 74.68, "repPct": 25.32, "demCandidate": "Lucy McBath", "repCandidate": "Jeff Criswell", "demVotes": 277027, "repVotes": 93909, "totalVotes": 370936, "margin": -49.36 },
+      { "year": 2024, "demPct": 74.68, "repPct": 25.32, "demCandidate": "Lucy McBath", "repCandidate": "Jeff Criswell", "demVotes": 277027, "repVotes": 93909, "totalVotes": 370936, "margin": -49.36, "demIncumbent": true },
       { "year": 2022, "demPct": 37.78, "repPct": 62.22, "demCandidate": "Bob Christian", "repCandidate": "Rich McCormick", "demVotes": 125612, "repVotes": 206886, "totalVotes": 332498, "margin": 24.44 },
       { "year": 2020, "demPct": 54.59, "repPct": 45.41, "demCandidate": "Lucy McBath", "repCandidate": "Karen Handel", "demVotes": 216775, "repVotes": 180329, "totalVotes": 397104, "margin": -9.18, "demIncumbent": true },
       { "year": 2018, "demPct": 50.51, "repPct": 49.48, "demCandidate": "Lucy McBath", "repCandidate": "Karen Handel", "demVotes": 160139, "repVotes": 156875, "totalVotes": 317032, "margin": -1.03, "repIncumbent": true },
@@ -5370,7 +5370,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 35.15, "repPct": 64.85, "demCandidate": "Bob Christian", "repCandidate": "Richard McCormick", "demVotes": 149535, "repVotes": 275907, "totalVotes": 425442, "margin": 29.7 },
-      { "year": 2022, "demPct": 61.05, "repPct": 38.95, "demCandidate": "Lucy McBath", "repCandidate": "Mark Gonsalves", "demVotes": 143063, "repVotes": 91262, "totalVotes": 234325, "margin": -22.1 },
+      { "year": 2022, "demPct": 61.05, "repPct": 38.95, "demCandidate": "Lucy McBath", "repCandidate": "Mark Gonsalves", "demVotes": 143063, "repVotes": 91262, "totalVotes": 234325, "margin": -22.1, "demIncumbent": true },
       { "year": 2020, "demPct": 51.39, "repPct": 48.61, "demCandidate": "Carolyn Bourdeaux", "repCandidate": "Rich McCormick", "demVotes": 190900, "repVotes": 180564, "totalVotes": 371464, "margin": -2.78 },
       { "year": 2018, "demPct": 49.93, "repPct": 50.07, "demCandidate": "Carolyn Bourdeaux", "repCandidate": "Rob Woodall", "demVotes": 140011, "repVotes": 140430, "totalVotes": 280441, "margin": 0.14, "repIncumbent": true },
       { "year": 2016, "demPct": 39.62, "repPct": 60.38, "demCandidate": "Rashid Malik", "repCandidate": "Rob Woodall", "demVotes": 114220, "repVotes": 174081, "totalVotes": 288301, "margin": 20.76, "repIncumbent": true }
@@ -5991,7 +5991,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 0, "repPct": 99.94, "repCandidate": "Darin LaHood", "demVotes": 0, "repVotes": 310925, "totalVotes": 311108, "margin": 99.94, "repIncumbent": true },
-      { "year": 2022, "demPct": 33.67, "repPct": 66.33, "demCandidate": "Lisa Haderlein", "repCandidate": "Darin LaHood", "demVotes": 100325, "repVotes": 197621, "totalVotes": 297946, "margin": 32.66 },
+      { "year": 2022, "demPct": 33.67, "repPct": 66.33, "demCandidate": "Lisa Haderlein", "repCandidate": "Darin LaHood", "demVotes": 100325, "repVotes": 197621, "totalVotes": 297946, "margin": 32.66, "repIncumbent": true },
       { "year": 2020, "demPct": 35.28, "repPct": 64.71, "demCandidate": "Dani Brzozowski", "repCandidate": "Adam Kinzinger", "demVotes": 119313, "repVotes": 218839, "totalVotes": 338159, "margin": 29.43, "repIncumbent": true },
       { "year": 2018, "demPct": 40.88, "repPct": 59.12, "demCandidate": "Sara Dady", "repCandidate": "Adam Kinzinger", "demVotes": 104569, "repVotes": 151254, "totalVotes": 255825, "margin": 18.24, "repIncumbent": true },
       { "year": 2016, "demPct": 0, "repPct": 99.95, "repCandidate": "Adam Kinzinger", "demVotes": 0, "repVotes": 259722, "totalVotes": 259853, "margin": 99.95, "repIncumbent": true }
@@ -6236,7 +6236,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 49.79, "repPct": 49.98, "demCandidate": "Christina Bohannan", "repCandidate": "Mariannette Miller-Meeks", "demVotes": 206156, "repVotes": 206955, "totalVotes": 414078, "margin": 0.19, "repIncumbent": true },
-      { "year": 2022, "demPct": 46.56, "repPct": 53.36, "demCandidate": "Christina Bohannan", "repCandidate": "Mariannette Miller-Meeks", "demVotes": 142173, "repVotes": 162947, "totalVotes": 305380, "margin": 6.8 },
+      { "year": 2022, "demPct": 46.56, "repPct": 53.36, "demCandidate": "Christina Bohannan", "repCandidate": "Mariannette Miller-Meeks", "demVotes": 142173, "repVotes": 162947, "totalVotes": 305380, "margin": 6.8, "repIncumbent": true },
       { "year": 2020, "demPct": 48.65, "repPct": 51.25, "demCandidate": "Abby Finkenauer", "repCandidate": "Ashley Hinson", "demVotes": 201347, "repVotes": 212088, "totalVotes": 413869, "margin": 2.6, "demIncumbent": true },
       { "year": 2018, "demPct": 50.96, "repPct": 45.91, "demCandidate": "Abby Finkenauer", "repCandidate": "Rod Blum", "demVotes": 170342, "repVotes": 153442, "totalVotes": 334243, "margin": -5.05, "repIncumbent": true },
       { "year": 2016, "demPct": 46.08, "repPct": 53.74, "demCandidate": "Monica Vernon", "repCandidate": "Rod Blum", "demVotes": 177403, "repVotes": 206903, "totalVotes": 384977, "margin": 7.66, "repIncumbent": true }
@@ -6259,7 +6259,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 41.52, "repPct": 57.08, "demCandidate": "Sarah Corkery", "repCandidate": "Ashley Hinson", "demVotes": 169740, "repVotes": 233340, "totalVotes": 408802, "margin": 15.56, "repIncumbent": true },
-      { "year": 2022, "demPct": 45.84, "repPct": 54.08, "demCandidate": "Liz Mathis", "repCandidate": "Ashley Hinson", "demVotes": 145940, "repVotes": 172181, "totalVotes": 318399, "margin": 8.24 },
+      { "year": 2022, "demPct": 45.84, "repPct": 54.08, "demCandidate": "Liz Mathis", "repCandidate": "Ashley Hinson", "demVotes": 145940, "repVotes": 172181, "totalVotes": 318399, "margin": 8.24, "repIncumbent": true },
       { "year": 2020, "demPct": 49.91, "repPct": 49.912, "demCandidate": "Rita Hart", "repCandidate": "Mariannette Miller-Meeks", "demVotes": 196958, "repVotes": 196964, "totalVotes": 394625, "margin": 0.002 },
       { "year": 2018, "demPct": 54.79, "repPct": 42.6, "demCandidate": "David Loebsack", "repCandidate": "Christopher Peters", "demVotes": 171446, "repVotes": 133287, "totalVotes": 312913, "margin": -12.19, "demIncumbent": true },
       { "year": 2016, "demPct": 53.66, "repPct": 46.19, "demCandidate": "David Loebsack", "repCandidate": "Christopher Peters", "demVotes": 198571, "repVotes": 170933, "totalVotes": 370032, "margin": -7.47, "demIncumbent": true }
@@ -6532,10 +6532,10 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Andy Barr",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 36.96, "repPct": 63.04, "demCandidate": "Randy Cravens", "repCandidate": "Andy Barr", "demVotes": 130345, "repVotes": 222293, "totalVotes": 352638, "margin": 26.08 },
-      { "year": 2022, "demPct": 33.63, "repPct": 62.7, "demCandidate": "Geoff Young", "repCandidate": "Andy Barr", "demVotes": 83005, "repVotes": 154762, "totalVotes": 246818, "margin": 29.07 },
-      { "year": 2020, "demPct": 40.96, "repPct": 57.33, "demCandidate": "Josh Hicks", "repCandidate": "Andy Barr", "demVotes": 155011, "repVotes": 216948, "totalVotes": 378450, "margin": 16.37 },
-      { "year": 2018, "demPct": 47.79, "repPct": 51, "demCandidate": "Amy McGrath", "repCandidate": "Andy Barr", "demVotes": 144736, "repVotes": 154468, "totalVotes": 302888, "margin": 3.21 },
+      { "year": 2024, "demPct": 36.96, "repPct": 63.04, "demCandidate": "Randy Cravens", "repCandidate": "Andy Barr", "demVotes": 130345, "repVotes": 222293, "totalVotes": 352638, "margin": 26.08, "repIncumbent": true },
+      { "year": 2022, "demPct": 33.63, "repPct": 62.7, "demCandidate": "Geoff Young", "repCandidate": "Andy Barr", "demVotes": 83005, "repVotes": 154762, "totalVotes": 246818, "margin": 29.07, "repIncumbent": true },
+      { "year": 2020, "demPct": 40.96, "repPct": 57.33, "demCandidate": "Josh Hicks", "repCandidate": "Andy Barr", "demVotes": 155011, "repVotes": 216948, "totalVotes": 378450, "margin": 16.37, "repIncumbent": true },
+      { "year": 2018, "demPct": 47.79, "repPct": 51, "demCandidate": "Amy McGrath", "repCandidate": "Andy Barr", "demVotes": 144736, "repVotes": 154468, "totalVotes": 302888, "margin": 3.21, "repIncumbent": true },
       { "year": 2016, "demPct": 38.91, "repPct": 61.09, "demCandidate": "Nancy Jo Kemper", "repCandidate": "Andy Barr", "demVotes": 128728, "repVotes": 202099, "totalVotes": 330827, "margin": 22.18 }
     ]
   },
@@ -7142,7 +7142,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 31.69, "repPct": 65.14, "demCandidate": "Michael Lynch", "repCandidate": "John Moolenaar", "demVotes": 135824, "repVotes": 279167, "totalVotes": 428550, "margin": 33.45, "repIncumbent": true },
-      { "year": 2022, "demPct": 34.3, "repPct": 63.68, "demCandidate": "Jerry Hilliard", "repCandidate": "John Moolenaar", "demVotes": 116452, "repVotes": 216222, "totalVotes": 339521, "margin": 29.38 },
+      { "year": 2022, "demPct": 34.3, "repPct": 63.68, "demCandidate": "Jerry Hilliard", "repCandidate": "John Moolenaar", "demVotes": 116452, "repVotes": 216222, "totalVotes": 339521, "margin": 29.38, "repIncumbent": true },
       { "year": 2020, "demPct": 38.22, "repPct": 59.2, "demCandidate": "Bryan Berghoef", "repCandidate": "Bill Huizenga", "demVotes": 154122, "repVotes": 238711, "totalVotes": 403247, "margin": 20.98, "repIncumbent": true },
       { "year": 2018, "demPct": 42.97, "repPct": 55.32, "demCandidate": "Rob Davidson", "repCandidate": "Bill Huizenga", "demVotes": 131254, "repVotes": 168970, "totalVotes": 305463, "margin": 12.35, "repIncumbent": true },
       { "year": 2016, "demPct": 32.53, "repPct": 62.63, "demCandidate": "Dennis Murphy", "repCandidate": "Bill Huizenga", "demVotes": 110391, "repVotes": 212508, "totalVotes": 339328, "margin": 30.1, "repIncumbent": true }
@@ -7184,7 +7184,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 43.36, "repPct": 55.07, "demCandidate": "Jessica Swartz", "repCandidate": "Bill Huizenga", "demVotes": 184641, "repVotes": 234489, "totalVotes": 425817, "margin": 11.71, "repIncumbent": true },
-      { "year": 2022, "demPct": 42.47, "repPct": 54.36, "demCandidate": "Joseph Alfonso", "repCandidate": "Bill Huizenga", "demVotes": 143690, "repVotes": 183936, "totalVotes": 338348, "margin": 11.89 },
+      { "year": 2022, "demPct": 42.47, "repPct": 54.36, "demCandidate": "Joseph Alfonso", "repCandidate": "Bill Huizenga", "demVotes": 143690, "repVotes": 183936, "totalVotes": 338348, "margin": 11.89, "repIncumbent": true },
       { "year": 2020, "demPct": 32.37, "repPct": 65, "demCandidate": "Jerry Hilliard", "repCandidate": "John Moolenaar", "demVotes": 120802, "repVotes": 242621, "totalVotes": 373245, "margin": 32.63, "repIncumbent": true },
       { "year": 2018, "demPct": 37.38, "repPct": 62.62, "demCandidate": "Jerry Hilliard", "repCandidate": "John Moolenaar", "demVotes": 106540, "repVotes": 178510, "totalVotes": 285050, "margin": 25.24, "repIncumbent": true },
       { "year": 2016, "demPct": 32.07, "repPct": 61.62, "demCandidate": "Debra Wirth", "repCandidate": "John Moolenaar", "demVotes": 101277, "repVotes": 194572, "totalVotes": 315751, "margin": 29.55, "repIncumbent": true }
@@ -7207,7 +7207,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 32.76, "repPct": 65.68, "demCandidate": "Libbi Urban", "repCandidate": "Tim Walberg", "demVotes": 134282, "repVotes": 269215, "totalVotes": 409876, "margin": 32.92, "repIncumbent": true },
-      { "year": 2022, "demPct": 34.97, "repPct": 62.42, "demCandidate": "Bart Goldberg", "repCandidate": "Tim Walberg", "demVotes": 110946, "repVotes": 198020, "totalVotes": 317258, "margin": 27.45 },
+      { "year": 2022, "demPct": 34.97, "repPct": 62.42, "demCandidate": "Bart Goldberg", "repCandidate": "Tim Walberg", "demVotes": 110946, "repVotes": 198020, "totalVotes": 317258, "margin": 27.45, "repIncumbent": true },
       { "year": 2020, "demPct": 54.45, "repPct": 41.76, "demCandidate": "Daniel Kildee", "repCandidate": "Tim Kelly", "demVotes": 196599, "repVotes": 150772, "totalVotes": 361032, "margin": -12.69, "demIncumbent": true },
       { "year": 2018, "demPct": 59.51, "repPct": 35.91, "demCandidate": "Daniel Kildee", "repCandidate": "Travis Wines", "demVotes": 164502, "repVotes": 99265, "totalVotes": 276413, "margin": -23.6, "demIncumbent": true },
       { "year": 2016, "demPct": 61.16, "repPct": 35.11, "demCandidate": "Daniel Kildee", "repCandidate": "Al Hardwick", "demVotes": 195279, "repVotes": 112102, "totalVotes": 319291, "margin": -26.05, "demIncumbent": true }
@@ -7230,7 +7230,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 62.02, "repPct": 35, "demCandidate": "Debbie Dingell", "repCandidate": "Heather Smiley", "demVotes": 281162, "repVotes": 158658, "totalVotes": 453306, "margin": -27.02, "demIncumbent": true },
-      { "year": 2022, "demPct": 65.89, "repPct": 34.11, "demCandidate": "Debbie Dingell", "repCandidate": "Whittney Williams", "demVotes": 241759, "repVotes": 125167, "totalVotes": 366927, "margin": -31.78 },
+      { "year": 2022, "demPct": 65.89, "repPct": 34.11, "demCandidate": "Debbie Dingell", "repCandidate": "Whittney Williams", "demVotes": 241759, "repVotes": 125167, "totalVotes": 366927, "margin": -31.78, "demIncumbent": true },
       { "year": 2020, "demPct": 40.13, "repPct": 55.81, "demCandidate": "Jon Hoadley", "repCandidate": "Fred Upton", "demVotes": 152085, "repVotes": 211496, "totalVotes": 378980, "margin": 15.68, "repIncumbent": true },
       { "year": 2018, "demPct": 45.69, "repPct": 50.24, "demCandidate": "Matt Longjohn", "repCandidate": "Fred Upton", "demVotes": 134082, "repVotes": 147436, "totalVotes": 293438, "margin": 4.55, "repIncumbent": true },
       { "year": 2016, "demPct": 36.41, "repPct": 58.64, "demCandidate": "Paul Clements", "repCandidate": "Fred Upton", "demVotes": 119980, "repVotes": 193259, "totalVotes": 329565, "margin": 22.23, "repIncumbent": true }
@@ -7251,7 +7251,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 46.56, "repPct": 50.28, "demCandidate": "Curtis Hertel", "repCandidate": "Tom Barrett", "demVotes": 209959, "repVotes": 226722, "totalVotes": 450912, "margin": 3.72 },
-      { "year": 2022, "demPct": 51.73, "repPct": 46.32, "demCandidate": "Elissa Slotkin", "repCandidate": "Tom Barrett", "demVotes": 192809, "repVotes": 172624, "totalVotes": 372708, "margin": -5.41 },
+      { "year": 2022, "demPct": 51.73, "repPct": 46.32, "demCandidate": "Elissa Slotkin", "repCandidate": "Tom Barrett", "demVotes": 192809, "repVotes": 172624, "totalVotes": 372708, "margin": -5.41, "demIncumbent": true },
       { "year": 2020, "demPct": 41.25, "repPct": 58.75, "demCandidate": "Gretchen Driskell", "repCandidate": "Tim Walberg", "demVotes": 159743, "repVotes": 227524, "totalVotes": 387267, "margin": 17.5, "repIncumbent": true },
       { "year": 2018, "demPct": 46.2, "repPct": 53.8, "demCandidate": "Gretchen Driskell", "repCandidate": "Tim Walberg", "demVotes": 136330, "repVotes": 158730, "totalVotes": 295060, "margin": 7.6, "repIncumbent": true },
       { "year": 2016, "demPct": 40.03, "repPct": 55.05, "demCandidate": "Gretchen Driskell", "repCandidate": "Tim Walberg", "demVotes": 134010, "repVotes": 184321, "totalVotes": 334807, "margin": 15.02, "repIncumbent": true }
@@ -7272,7 +7272,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 51.25, "repPct": 44.61, "demCandidate": "Kristen McDonald Rivet", "repCandidate": "Paul Junge", "demVotes": 217490, "repVotes": 189317, "totalVotes": 424350, "margin": -6.64 },
-      { "year": 2022, "demPct": 53.1, "repPct": 42.83, "demCandidate": "Daniel Kildee", "repCandidate": "Paul Junge", "demVotes": 178322, "repVotes": 143850, "totalVotes": 335829, "margin": -10.27 },
+      { "year": 2022, "demPct": 53.1, "repPct": 42.83, "demCandidate": "Daniel Kildee", "repCandidate": "Paul Junge", "demVotes": 178322, "repVotes": 143850, "totalVotes": 335829, "margin": -10.27, "demIncumbent": true },
       { "year": 2020, "demPct": 50.88, "repPct": 47.28, "demCandidate": "Elissa Slotkin", "repCandidate": "Paul Junge", "demVotes": 217922, "repVotes": 202525, "totalVotes": 428344, "margin": -3.6, "demIncumbent": true },
       { "year": 2018, "demPct": 50.61, "repPct": 46.78, "demCandidate": "Elissa Slotkin", "repCandidate": "Mike Bishop", "demVotes": 172880, "repVotes": 159782, "totalVotes": 341593, "margin": -3.83, "repIncumbent": true },
       { "year": 2016, "demPct": 39.18, "repPct": 56.03, "demCandidate": "Suzanna Shkreli", "repCandidate": "Mike Bishop", "demVotes": 143791, "repVotes": 205629, "totalVotes": 366968, "margin": 16.85, "repIncumbent": true }
@@ -7295,7 +7295,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 29.5, "repPct": 66.76, "demCandidate": "Clinton St. Mosley", "repCandidate": "Lisa McClain", "demVotes": 138138, "repVotes": 312593, "totalVotes": 468238, "margin": 37.26, "repIncumbent": true },
-      { "year": 2022, "demPct": 33.17, "repPct": 63.9, "demCandidate": "Brian Jaye", "repCandidate": "Lisa McClain", "demVotes": 123702, "repVotes": 238300, "totalVotes": 372922, "margin": 30.73 },
+      { "year": 2022, "demPct": 33.17, "repPct": 63.9, "demCandidate": "Brian Jaye", "repCandidate": "Lisa McClain", "demVotes": 123702, "repVotes": 238300, "totalVotes": 372922, "margin": 30.73, "repIncumbent": true },
       { "year": 2020, "demPct": 57.71, "repPct": 38.41, "demCandidate": "Andy Levin", "repCandidate": "Charles Langworthy", "demVotes": 230318, "repVotes": 153296, "totalVotes": 399117, "margin": -19.3, "demIncumbent": true },
       { "year": 2018, "demPct": 59.67, "repPct": 36.81, "demCandidate": "Andy Levin", "repCandidate": "Candius Stearns", "demVotes": 181734, "repVotes": 112123, "totalVotes": 304563, "margin": -22.86 },
       { "year": 2016, "demPct": 57.91, "repPct": 37.4, "demCandidate": "Sander Levin", "repCandidate": "Christopher Morse", "demVotes": 199661, "repVotes": 128937, "totalVotes": 344775, "margin": -20.51, "demIncumbent": true }
@@ -7362,7 +7362,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 69.7, "repPct": 25.44, "demCandidate": "Rashida Tlaib", "repCandidate": "James Hooper", "demVotes": 253354, "repVotes": 92490, "totalVotes": 363499, "margin": -44.26, "demIncumbent": true },
-      { "year": 2022, "demPct": 70.84, "repPct": 26.26, "demCandidate": "Rashida Tlaib", "repCandidate": "Steven Elliott", "demVotes": 196643, "repVotes": 72888, "totalVotes": 277577, "margin": -44.58 },
+      { "year": 2022, "demPct": 70.84, "repPct": 26.26, "demCandidate": "Rashida Tlaib", "repCandidate": "Steven Elliott", "demVotes": 196643, "repVotes": 72888, "totalVotes": 277577, "margin": -44.58, "demIncumbent": true },
       { "year": 2020, "demPct": 66.43, "repPct": 30.67, "demCandidate": "Debbie Dingell", "repCandidate": "Jeff Jones", "demVotes": 254957, "repVotes": 117719, "totalVotes": 383823, "margin": -35.76, "demIncumbent": true },
       { "year": 2018, "demPct": 68.08, "repPct": 28.89, "demCandidate": "Debbie Dingell", "repCandidate": "Jeff Jones", "demVotes": 200588, "repVotes": 85115, "totalVotes": 294628, "margin": -39.19, "demIncumbent": true },
       { "year": 2016, "demPct": 64.34, "repPct": 29.25, "demCandidate": "Debbie Dingell", "repCandidate": "Jeff Jones", "demVotes": 211378, "repVotes": 96104, "totalVotes": 328542, "margin": -35.09, "demIncumbent": true }
@@ -8688,7 +8688,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 80.51, "repPct": 19.49, "demCandidate": "Jerrold Nadler", "repCandidate": "Michael Zumbluskas", "demVotes": 260165, "repVotes": 62989, "totalVotes": 323154, "margin": -61.02, "demIncumbent": true },
-      { "year": 2022, "demPct": 81.63, "repPct": 17.95, "demCandidate": "Jerrold Nadler", "repCandidate": "Michael Zumbluskas", "demVotes": 200890, "repVotes": 44173, "totalVotes": 246105, "margin": -63.68 },
+      { "year": 2022, "demPct": 81.63, "repPct": 17.95, "demCandidate": "Jerrold Nadler", "repCandidate": "Michael Zumbluskas", "demVotes": 200890, "repVotes": 44173, "totalVotes": 246105, "margin": -63.68, "demIncumbent": true },
       { "year": 2020, "demPct": 82.29, "repPct": 16.47, "demCandidate": "Carolyn Maloney", "repCandidate": "Carlos Santiago-Cano", "demVotes": 265172, "repVotes": 53061, "totalVotes": 322248, "margin": -65.82, "demIncumbent": true },
       { "year": 2018, "demPct": 86.42, "repPct": 12.1, "demCandidate": "Carolyn Maloney", "repCandidate": "Eliot Rabin", "demVotes": 217430, "repVotes": 30446, "totalVotes": 251604, "margin": -74.32, "demIncumbent": true },
       { "year": 2016, "demPct": 83.18, "repPct": 16.82, "demCandidate": "Carolyn Maloney", "repCandidate": "Robert Ardini", "demVotes": 244358, "repVotes": 49398, "totalVotes": 293756, "margin": -66.36, "demIncumbent": true }
@@ -8801,7 +8801,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 45.85, "repPct": 52.16, "demCandidate": "Mondaire Jones", "repCandidate": "Michael Lawler", "demVotes": 173899, "repVotes": 197845, "totalVotes": 379274, "margin": 6.31, "repIncumbent": true },
-      { "year": 2022, "demPct": 49.65, "repPct": 50.29, "demCandidate": "Sean Patrick Maloney", "repCandidate": "Michael Lawler", "demVotes": 141730, "repVotes": 143550, "totalVotes": 285430, "margin": 0.64 },
+      { "year": 2022, "demPct": 49.65, "repPct": 50.29, "demCandidate": "Sean Patrick Maloney", "repCandidate": "Michael Lawler", "demVotes": 141730, "repVotes": 143550, "totalVotes": 285430, "margin": 0.64, "demIncumbent": true },
       { "year": 2020, "demPct": 59.33, "repPct": 35.26, "demCandidate": "Mondaire Jones", "repCandidate": "Maureen McArdle Schulman", "demVotes": 197354, "repVotes": 117309, "totalVotes": 332658, "margin": -24.07 },
       { "year": 2018, "demPct": 88.02, "repPct": 11.98, "demCandidate": "Nita Lowey", "repCandidate": "Joseph Ciardullo", "repParty": "I", "demVotes": 170168, "repVotes": 23150, "totalVotes": 193318, "margin": -76.04, "demIncumbent": true },
       { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "Nita Lowey", "demVotes": 214530, "repVotes": 0, "totalVotes": 214530, "margin": -100, "demIncumbent": true }
@@ -8821,7 +8821,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Patrick Ryan",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 57.17, "repPct": 42.83, "demCandidate": "Patrick Ryan", "repCandidate": "Alison Esposito", "demVotes": 207106, "repVotes": 155129, "totalVotes": 362235, "margin": -14.34 },
+      { "year": 2024, "demPct": 57.17, "repPct": 42.83, "demCandidate": "Patrick Ryan", "repCandidate": "Alison Esposito", "demVotes": 207106, "repVotes": 155129, "totalVotes": 362235, "margin": -14.34, "demIncumbent": true },
       { "year": 2022, "demPct": 50.64, "repPct": 49.3, "demCandidate": "Patrick Ryan", "repCandidate": "Colin Schmitt", "demVotes": 135245, "repVotes": 131653, "totalVotes": 267053, "margin": -1.34 },
       { "year": 2020, "demPct": 55.83, "repPct": 43.23, "demCandidate": "Sean Patrick Maloney", "repCandidate": "Chele Farley", "demVotes": 187444, "repVotes": 145145, "totalVotes": 335753, "margin": -12.6, "demIncumbent": true },
       { "year": 2018, "demPct": 55.47, "repPct": 44.53, "demCandidate": "Sean Patrick Maloney", "repCandidate": "James O'Donnell", "demVotes": 139564, "repVotes": 112035, "totalVotes": 251599, "margin": -10.94, "demIncumbent": true },
@@ -8956,7 +8956,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 34.33, "repPct": 65.67, "demCandidate": "David Wagenhauser", "repCandidate": "Claudia Tenney", "demVotes": 123317, "repVotes": 235867, "totalVotes": 359184, "margin": 31.34, "repIncumbent": true },
-      { "year": 2022, "demPct": 34.27, "repPct": 65.66, "demCandidate": "Steven Holden", "repCandidate": "Claudia Tenney", "demVotes": 95028, "repVotes": 182054, "totalVotes": 277253, "margin": 31.39 },
+      { "year": 2022, "demPct": 34.27, "repPct": 65.66, "demCandidate": "Steven Holden", "repCandidate": "Claudia Tenney", "demVotes": 95028, "repVotes": 182054, "totalVotes": 277253, "margin": 31.39, "repIncumbent": true },
       { "year": 2020, "demPct": 42.99, "repPct": 53.15, "demCandidate": "Dana Balter", "repCandidate": "John Katko", "demVotes": 147877, "repVotes": 182809, "totalVotes": 343950, "margin": 10.16, "repIncumbent": true },
       { "year": 2018, "demPct": 47.37, "repPct": 52.63, "demCandidate": "Dana Balter", "repCandidate": "John Katko", "demVotes": 123226, "repVotes": 136920, "totalVotes": 260146, "margin": 5.26, "repIncumbent": true },
       { "year": 2016, "demPct": 39.44, "repPct": 60.56, "demCandidate": "Colleen Deacon", "repCandidate": "John Katko", "demVotes": 119040, "repVotes": 182761, "totalVotes": 301801, "margin": 21.12, "repIncumbent": true }
@@ -9184,7 +9184,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 40.39, "repPct": 59.61, "demCandidate": "Justin Dues", "repCandidate": "Mark Harris", "demVotes": 161709, "repVotes": 238640, "totalVotes": 400349, "margin": 19.22 },
-      { "year": 2022, "demPct": 30.09, "repPct": 69.91, "demCandidate": "Scott Huffman", "repCandidate": "Dan Bishop", "demVotes": 79192, "repVotes": 183998, "totalVotes": 263190, "margin": 39.82 },
+      { "year": 2022, "demPct": 30.09, "repPct": 69.91, "demCandidate": "Scott Huffman", "repCandidate": "Dan Bishop", "demVotes": 79192, "repVotes": 183998, "totalVotes": 263190, "margin": 39.82, "repIncumbent": true },
       { "year": 2020, "demPct": 46.72, "repPct": 53.28, "demCandidate": "Patricia Timmons-Goodson", "repCandidate": "Richard Hudson", "demVotes": 177781, "repVotes": 202774, "totalVotes": 380555, "margin": 6.56, "repIncumbent": true },
       { "year": 2018, "demPct": 44.66, "repPct": 55.34, "demCandidate": "Frank McNeill", "repCandidate": "Richard Hudson", "demVotes": 114119, "repVotes": 141402, "totalVotes": 255521, "margin": 10.68, "repIncumbent": true },
       { "year": 2016, "demPct": 41.23, "repPct": 58.77, "demCandidate": "Thomas Mills", "repCandidate": "Richard Hudson", "demVotes": 133182, "repVotes": 189863, "totalVotes": 323045, "margin": 17.54, "repIncumbent": true }
@@ -9207,7 +9207,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 37.75, "repPct": 56.3, "demCandidate": "Nigel William Bristow", "repCandidate": "Richard Hudson", "demVotes": 140852, "repVotes": 210042, "totalVotes": 373077, "margin": 18.55, "repIncumbent": true },
-      { "year": 2022, "demPct": 43.5, "repPct": 56.5, "demCandidate": "Ben Clark", "repCandidate": "Richard Hudson", "demVotes": 101202, "repVotes": 131453, "totalVotes": 232655, "margin": 13 },
+      { "year": 2022, "demPct": 43.5, "repPct": 56.5, "demCandidate": "Ben Clark", "repCandidate": "Richard Hudson", "demVotes": 101202, "repVotes": 131453, "totalVotes": 232655, "margin": 13, "repIncumbent": true },
       { "year": 2020, "demPct": 44.41, "repPct": 55.59, "demCandidate": "Cynthia Wallace", "repCandidate": "Dan Bishop", "demVotes": 179463, "repVotes": 224661, "totalVotes": 404124, "margin": 11.18, "repIncumbent": true },
       { "year": 2018, "demPct": 48.93, "repPct": 49.25, "demCandidate": "Dan McCready", "repCandidate": "Mark Harris", "demVotes": 138341, "repVotes": 139246, "totalVotes": 282717, "margin": 0.32 },
       { "year": 2016, "demPct": 41.82, "repPct": 58.18, "demCandidate": "Christian Cano", "repCandidate": "Robert Pittenger", "demVotes": 139041, "repVotes": 193452, "totalVotes": 332493, "margin": 16.36, "repIncumbent": true }
@@ -9948,7 +9948,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 43.6, "repPct": 56.4, "demCandidate": "Ashley Ehasz", "repCandidate": "Brian Fitzpatrick", "demVotes": 202042, "repVotes": 261390, "totalVotes": 463432, "margin": 12.8, "repIncumbent": true },
       { "year": 2022, "demPct": 45.13, "repPct": 54.87, "demCandidate": "Ashley Ehasz", "repCandidate": "Brian Fitzpatrick", "demVotes": 165809, "repVotes": 201571, "totalVotes": 367380, "margin": 9.74, "repIncumbent": true },
       { "year": 2020, "demPct": 43.44, "repPct": 56.56, "demCandidate": "Christina Finello", "repCandidate": "Brian Fitzpatrick", "demVotes": 191875, "repVotes": 249804, "totalVotes": 441679, "margin": 13.12, "repIncumbent": true },
-      { "year": 2018, "demPct": 48.74, "repPct": 51.26, "demCandidate": "Scott Wallace", "repCandidate": "Brian Fitzpatrick", "demVotes": 160745, "repVotes": 169053, "totalVotes": 329798, "margin": 2.52 },
+      { "year": 2018, "demPct": 48.74, "repPct": 51.26, "demCandidate": "Scott Wallace", "repCandidate": "Brian Fitzpatrick", "demVotes": 160745, "repVotes": 169053, "totalVotes": 329798, "margin": 2.52, "repIncumbent": true },
       { "year": 2016, "demPct": 82.2, "repPct": 17.8, "demCandidate": "Robert Brady", "repCandidate": "Deborah Williams", "demVotes": 245791, "repVotes": 53219, "totalVotes": 299010, "margin": -64.4, "demIncumbent": true }
     ]
   },
@@ -9971,7 +9971,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 71.46, "repPct": 28.54, "demCandidate": "Brendan Boyle", "repCandidate": "Aaron Bashir", "demVotes": 193691, "repVotes": 77355, "totalVotes": 271046, "margin": -42.92, "demIncumbent": true },
       { "year": 2022, "demPct": 75.65, "repPct": 24.35, "demCandidate": "Brendan Boyle", "repCandidate": "Aaron Bashir", "demVotes": 141229, "repVotes": 45454, "totalVotes": 186683, "margin": -51.3, "demIncumbent": true },
       { "year": 2020, "demPct": 72.54, "repPct": 27.46, "demCandidate": "Brendan Boyle", "repCandidate": "David Torres", "demVotes": 198140, "repVotes": 75022, "totalVotes": 273162, "margin": -45.08, "demIncumbent": true },
-      { "year": 2018, "demPct": 79.02, "repPct": 20.98, "demCandidate": "Brendan Boyle", "repCandidate": "David Torres", "demVotes": 159600, "repVotes": 42382, "totalVotes": 201982, "margin": -58.04 },
+      { "year": 2018, "demPct": 79.02, "repPct": 20.98, "demCandidate": "Brendan Boyle", "repCandidate": "David Torres", "demVotes": 159600, "repVotes": 42382, "totalVotes": 201982, "margin": -58.04, "demIncumbent": true },
       { "year": 2016, "demPct": 90.18, "repPct": 9.82, "demCandidate": "Dwight Evans", "repCandidate": "James Jones", "demVotes": 322514, "repVotes": 35131, "totalVotes": 357645, "margin": -80.36 }
     ]
   },
@@ -9994,7 +9994,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 100, "repPct": 0, "demCandidate": "Dwight Evans", "demVotes": 340223, "repVotes": 0, "totalVotes": 340223, "margin": -100, "demIncumbent": true },
       { "year": 2022, "demPct": 95.14, "repPct": 4.86, "demCandidate": "Dwight Evans", "repCandidate": "Christopher Hoeppner", "repParty": "I", "demVotes": 251115, "repVotes": 12820, "totalVotes": 263935, "margin": -90.28, "demIncumbent": true },
       { "year": 2020, "demPct": 91.03, "repPct": 8.97, "demCandidate": "Dwight Evans", "repCandidate": "Michael Harvey", "demVotes": 341708, "repVotes": 33671, "totalVotes": 375379, "margin": -82.06, "demIncumbent": true },
-      { "year": 2018, "demPct": 93.38, "repPct": 6.62, "demCandidate": "Dwight Evans", "repCandidate": "Bryan Leib", "demVotes": 287610, "repVotes": 20387, "totalVotes": 307997, "margin": -86.76 },
+      { "year": 2018, "demPct": 93.38, "repPct": 6.62, "demCandidate": "Dwight Evans", "repCandidate": "Bryan Leib", "demVotes": 287610, "repVotes": 20387, "totalVotes": 307997, "margin": -86.76, "demIncumbent": true },
       { "year": 2016, "demPct": 0, "repPct": 100, "repCandidate": "Mike Kelly", "demVotes": 0, "repVotes": 244893, "totalVotes": 244893, "margin": 100, "repIncumbent": true }
     ]
   },
@@ -10016,7 +10016,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 59.07, "repPct": 40.93, "demCandidate": "Madeleine Dean", "repCandidate": "David Winkler", "demVotes": 269066, "repVotes": 186457, "totalVotes": 455523, "margin": -18.14, "demIncumbent": true },
       { "year": 2022, "demPct": 61.29, "repPct": 38.71, "demCandidate": "Madeleine Dean", "repCandidate": "Christian Nascimento", "demVotes": 224799, "repVotes": 141986, "totalVotes": 366785, "margin": -22.58, "demIncumbent": true },
-      { "year": 2020, "demPct": 59.53, "repPct": 40.47, "demCandidate": "Madeleine Dean", "repCandidate": "Kathy Barnette", "demVotes": 264637, "repVotes": 179926, "totalVotes": 444563, "margin": -19.06 },
+      { "year": 2020, "demPct": 59.53, "repPct": 40.47, "demCandidate": "Madeleine Dean", "repCandidate": "Kathy Barnette", "demVotes": 264637, "repVotes": 179926, "totalVotes": 444563, "margin": -19.06, "demIncumbent": true },
       { "year": 2018, "demPct": 63.52, "repPct": 36.48, "demCandidate": "Madeleine Dean", "repCandidate": "Daniel David", "demVotes": 211524, "repVotes": 121467, "totalVotes": 332991, "margin": -27.04 },
       { "year": 2016, "demPct": 33.94, "repPct": 66.06, "demCandidate": "Joshua Burkholder", "repCandidate": "Scott Perry", "demVotes": 113372, "repVotes": 220628, "totalVotes": 334000, "margin": 32.12, "repIncumbent": true }
     ]
@@ -10105,7 +10105,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 49.19, "repPct": 50.81, "demCandidate": "Matt Cartwright", "repCandidate": "Rob Bresnahan", "demVotes": 189411, "repVotes": 195663, "totalVotes": 385074, "margin": 1.62, "demIncumbent": true },
       { "year": 2022, "demPct": 51.22, "repPct": 48.78, "demCandidate": "Matt Cartwright", "repCandidate": "Jim Bognet", "demVotes": 146956, "repVotes": 139930, "totalVotes": 286886, "margin": -2.44, "demIncumbent": true },
       { "year": 2020, "demPct": 51.78, "repPct": 48.22, "demCandidate": "Matt Cartwright", "repCandidate": "Jim Bognet", "demVotes": 178004, "repVotes": 165783, "totalVotes": 343787, "margin": -3.56, "demIncumbent": true },
-      { "year": 2018, "demPct": 54.64, "repPct": 45.36, "demCandidate": "Matt Cartwright", "repCandidate": "John Chrin", "demVotes": 135603, "repVotes": 112563, "totalVotes": 248166, "margin": -9.28 },
+      { "year": 2018, "demPct": 54.64, "repPct": 45.36, "demCandidate": "Matt Cartwright", "repCandidate": "John Chrin", "demVotes": 135603, "repVotes": 112563, "totalVotes": 248166, "margin": -9.28, "demIncumbent": true },
       { "year": 2016, "demPct": 45.57, "repPct": 54.43, "demCandidate": "Steve Santarsiero", "repCandidate": "Brian Fitzpatrick", "demVotes": 173555, "repVotes": 207263, "totalVotes": 380818, "margin": 8.86 }
     ]
   },
@@ -10149,7 +10149,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 49.37, "repPct": 50.63, "demCandidate": "Janelle Stelson", "repCandidate": "Scott Perry", "demVotes": 200434, "repVotes": 205567, "totalVotes": 406001, "margin": 1.26, "repIncumbent": true },
       { "year": 2022, "demPct": 46.17, "repPct": 53.83, "demCandidate": "Shamaine Daniels", "repCandidate": "Scott Perry", "demVotes": 145215, "repVotes": 169331, "totalVotes": 314546, "margin": 7.66, "repIncumbent": true },
       { "year": 2020, "demPct": 46.69, "repPct": 53.31, "demCandidate": "Eugene DePasquale", "repCandidate": "Scott Perry", "demVotes": 182938, "repVotes": 208896, "totalVotes": 391834, "margin": 6.62, "repIncumbent": true },
-      { "year": 2018, "demPct": 48.68, "repPct": 51.32, "demCandidate": "George Scott", "repCandidate": "Scott Perry", "demVotes": 141668, "repVotes": 149365, "totalVotes": 291033, "margin": 2.64 },
+      { "year": 2018, "demPct": 48.68, "repPct": 51.32, "demCandidate": "George Scott", "repCandidate": "Scott Perry", "demVotes": 141668, "repVotes": 149365, "totalVotes": 291033, "margin": 2.64, "repIncumbent": true },
       { "year": 2016, "demPct": 29.83, "repPct": 70.17, "demCandidate": "Mike Molesevich", "repCandidate": "Tom Marino", "demVotes": 89823, "repVotes": 211282, "totalVotes": 301105, "margin": 40.34, "repIncumbent": true }
     ]
   },
@@ -10172,7 +10172,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 37.1, "repPct": 62.9, "demCandidate": "Jim Atkinson", "repCandidate": "Lloyd Smucker", "demVotes": 149641, "repVotes": 253672, "totalVotes": 403313, "margin": 25.8, "repIncumbent": true },
       { "year": 2022, "demPct": 38.45, "repPct": 61.55, "demCandidate": "Bob Hollister", "repCandidate": "Lloyd Smucker", "demVotes": 121835, "repVotes": 194991, "totalVotes": 316826, "margin": 23.1, "repIncumbent": true },
       { "year": 2020, "demPct": 36.88, "repPct": 63.12, "demCandidate": "Sarah Hammond", "repCandidate": "Lloyd Smucker", "demVotes": 141325, "repVotes": 241915, "totalVotes": 383240, "margin": 26.24, "repIncumbent": true },
-      { "year": 2018, "demPct": 41.02, "repPct": 58.98, "demCandidate": "Jessica King", "repCandidate": "Lloyd Smucker", "demVotes": 113876, "repVotes": 163708, "totalVotes": 277584, "margin": 17.96 },
+      { "year": 2018, "demPct": 41.02, "repPct": 58.98, "demCandidate": "Jessica King", "repCandidate": "Lloyd Smucker", "demVotes": 113876, "repVotes": 163708, "totalVotes": 277584, "margin": 17.96, "repIncumbent": true },
       { "year": 2016, "demPct": 36.33, "repPct": 63.67, "demCandidate": "Mike Marsicano", "repCandidate": "Lou Barletta", "demVotes": 113800, "repVotes": 199421, "totalVotes": 313221, "margin": 27.34, "repIncumbent": true }
     ]
   },
@@ -10195,7 +10195,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 56.41, "repPct": 43.59, "demCandidate": "Summer Lee", "repCandidate": "James Hayes", "demVotes": 234802, "repVotes": 181426, "totalVotes": 416228, "margin": -12.82, "demIncumbent": true },
       { "year": 2022, "demPct": 56.2, "repPct": 43.8, "demCandidate": "Summer Lee", "repCandidate": "Mike Doyle", "demVotes": 184674, "repVotes": 143946, "totalVotes": 328620, "margin": -12.4 },
       { "year": 2020, "demPct": 29.16, "repPct": 70.84, "demCandidate": "Lee Griffin", "repCandidate": "Frederick Keller", "demVotes": 99199, "repVotes": 241035, "totalVotes": 340234, "margin": 41.68, "repIncumbent": true },
-      { "year": 2018, "demPct": 33.96, "repPct": 66.04, "demCandidate": "Marc Friedenberg", "repCandidate": "Tom Marino", "demVotes": 82825, "repVotes": 161047, "totalVotes": 243872, "margin": 32.08 },
+      { "year": 2018, "demPct": 33.96, "repPct": 66.04, "demCandidate": "Marc Friedenberg", "repCandidate": "Tom Marino", "demVotes": 82825, "repVotes": 161047, "totalVotes": 243872, "margin": 32.08, "repIncumbent": true },
       { "year": 2016, "demPct": 38.24, "repPct": 61.76, "demCandidate": "Erin McClelland", "repCandidate": "Keith Rothfus", "demVotes": 137353, "repVotes": 221851, "totalVotes": 359204, "margin": 23.52, "repIncumbent": true }
     ]
   },
@@ -10264,7 +10264,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 28.53, "repPct": 71.47, "demCandidate": "Zach Womer", "repCandidate": "Glenn Thompson", "demVotes": 111408, "repVotes": 279027, "totalVotes": 390435, "margin": 42.94, "repIncumbent": true },
       { "year": 2022, "demPct": 30.06, "repPct": 69.94, "demCandidate": "Mike Molesevich", "repCandidate": "Glenn Thompson", "demVotes": 91729, "repVotes": 213417, "totalVotes": 305146, "margin": 39.88, "repIncumbent": true },
       { "year": 2020, "demPct": 26.54, "repPct": 73.46, "demCandidate": "Robert Williams", "repCandidate": "Glenn Thompson", "demVotes": 92156, "repVotes": 255058, "totalVotes": 347214, "margin": 46.92, "repIncumbent": true },
-      { "year": 2018, "demPct": 32.16, "repPct": 67.84, "demCandidate": "Susan Boser", "repCandidate": "Glenn Thompson", "demVotes": 78327, "repVotes": 165245, "totalVotes": 243572, "margin": 35.68 },
+      { "year": 2018, "demPct": 32.16, "repPct": 67.84, "demCandidate": "Susan Boser", "repCandidate": "Glenn Thompson", "demVotes": 78327, "repVotes": 165245, "totalVotes": 243572, "margin": 35.68, "repIncumbent": true },
       { "year": 2016, "demPct": 38.02, "repPct": 58.39, "demCandidate": "Rick Daugherty", "repCandidate": "Charles Dent", "demVotes": 124129, "repVotes": 190618, "totalVotes": 326474, "margin": 20.37, "repIncumbent": true }
     ]
   },
@@ -10287,7 +10287,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 36.35, "repPct": 63.65, "demCandidate": "Preston Nouri", "repCandidate": "Mike Kelly", "demVotes": 146709, "repVotes": 256923, "totalVotes": 403632, "margin": 27.3, "repIncumbent": true },
       { "year": 2022, "demPct": 40.64, "repPct": 59.36, "demCandidate": "Dan Pastore", "repCandidate": "Mike Kelly", "demVotes": 130443, "repVotes": 190546, "totalVotes": 320989, "margin": 18.72, "repIncumbent": true },
       { "year": 2020, "demPct": 40.66, "repPct": 59.34, "demCandidate": "Kristy Marie Gnibus", "repCandidate": "George Kelly", "demVotes": 143962, "repVotes": 210088, "totalVotes": 354050, "margin": 18.68 },
-      { "year": 2018, "demPct": 47.3, "repPct": 51.58, "demCandidate": "Ron DiNicola", "repCandidate": "Mike Kelly", "demVotes": 124109, "repVotes": 135348, "totalVotes": 262396, "margin": 4.28 },
+      { "year": 2018, "demPct": 47.3, "repPct": 51.58, "demCandidate": "Ron DiNicola", "repCandidate": "Mike Kelly", "demVotes": 124109, "repVotes": 135348, "totalVotes": 262396, "margin": 4.28, "repIncumbent": true },
       { "year": 2016, "demPct": 42.89, "repPct": 53.76, "demCandidate": "Christina Hartman", "repCandidate": "Lloyd Smucker", "demVotes": 134586, "repVotes": 168669, "totalVotes": 313773, "margin": 10.87 }
     ]
   },
@@ -10308,7 +10308,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 53.88, "repPct": 46.12, "demCandidate": "Christopher Deluzio", "repCandidate": "Rob Mercuri", "demVotes": 242838, "repVotes": 207900, "totalVotes": 450738, "margin": -7.76, "demIncumbent": true },
       { "year": 2022, "demPct": 53.39, "repPct": 46.61, "demCandidate": "Chris Deluzio", "repCandidate": "Jeremy Shaffer", "demVotes": 193615, "repVotes": 169013, "totalVotes": 362628, "margin": -6.78 },
       { "year": 2020, "demPct": 51.15, "repPct": 48.85, "demCandidate": "Conor Lamb", "repCandidate": "Richard Sean Parnell", "demVotes": 222253, "repVotes": 212284, "totalVotes": 434537, "margin": -2.3, "demIncumbent": true },
-      { "year": 2018, "demPct": 56.26, "repPct": 43.74, "demCandidate": "Conor Lamb", "repCandidate": "Keith Rothfus", "demVotes": 183162, "repVotes": 142417, "totalVotes": 325579, "margin": -12.52 },
+      { "year": 2018, "demPct": 56.26, "repPct": 43.74, "demCandidate": "Conor Lamb", "repCandidate": "Keith Rothfus", "demVotes": 183162, "repVotes": 142417, "totalVotes": 325579, "margin": -12.52, "repIncumbent": true },
       { "year": 2016, "demPct": 53.8, "repPct": 46.2, "demCandidate": "Matt Cartwright", "repCandidate": "Matt Connolly", "demVotes": 157734, "repVotes": 135430, "totalVotes": 293164, "margin": -7.6, "demIncumbent": true }
     ]
   },
@@ -11265,8 +11265,8 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Tony Gonzales",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 37.7, "repPct": 62.3, "demCandidate": "Limon", "repCandidate": "Tony Gonzales", "demVotes": 109373, "repVotes": 180720, "totalVotes": 290093, "margin": 24.6 },
-      { "year": 2022, "demPct": 38.77, "repPct": 55.87, "demCandidate": "John Lira", "repCandidate": "Tony Gonzales", "demVotes": 80947, "repVotes": 116649, "totalVotes": 208776, "margin": 17.1 },
+      { "year": 2024, "demPct": 37.7, "repPct": 62.3, "demCandidate": "Limon", "repCandidate": "Tony Gonzales", "demVotes": 109373, "repVotes": 180720, "totalVotes": 290093, "margin": 24.6, "repIncumbent": true },
+      { "year": 2022, "demPct": 38.77, "repPct": 55.87, "demCandidate": "John Lira", "repCandidate": "Tony Gonzales", "demVotes": 80947, "repVotes": 116649, "totalVotes": 208776, "margin": 17.1, "repIncumbent": true },
       { "year": 2020, "demPct": 46.6, "repPct": 50.56, "demCandidate": "Gina Ortiz Jones", "repCandidate": "Tony Gonzales", "demVotes": 137693, "repVotes": 149395, "totalVotes": 295457, "margin": 3.96 },
       { "year": 2018, "demPct": 48.73, "repPct": 49.17, "demCandidate": "Gina Ortiz Jones", "repCandidate": "Will Hurd", "demVotes": 102359, "repVotes": 103285, "totalVotes": 210069, "margin": 0.44, "repIncumbent": true },
       { "year": 2016, "demPct": 46.96, "repPct": 48.29, "demCandidate": "Pete Gallego", "repCandidate": "Will Hurd", "demVotes": 107526, "repVotes": 110577, "totalVotes": 228965, "margin": 1.33, "repIncumbent": true }
@@ -11580,7 +11580,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 74.22, "repPct": 23.58, "demCandidate": "Lloyd Doggett", "repCandidate": "Jenny Garcia Sharon", "demVotes": 252980, "repVotes": 80366, "totalVotes": 340857, "margin": -50.64, "demIncumbent": true },
-      { "year": 2022, "demPct": 76.76, "repPct": 20.97, "demCandidate": "Lloyd Doggett", "repCandidate": "Jenny Garcia Sharon", "demVotes": 219358, "repVotes": 59923, "totalVotes": 285789, "margin": -55.79 }
+      { "year": 2022, "demPct": 76.76, "repPct": 20.97, "demCandidate": "Lloyd Doggett", "repCandidate": "Jenny Garcia Sharon", "demVotes": 219358, "repVotes": 59923, "totalVotes": 285789, "margin": -55.79, "demIncumbent": true }
     ]
   },
   {
@@ -11682,8 +11682,8 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Burgess Owens",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 30.2, "repPct": 63.42, "demCandidate": "Katrina Fallick-Wang", "repCandidate": "Burgess Owens", "demVotes": 109838, "repVotes": 230627, "totalVotes": 363668, "margin": 33.22 },
-      { "year": 2022, "demPct": 32.35, "repPct": 61.05, "demCandidate": "Darlene McDonald", "repCandidate": "Burgess Owens", "demVotes": 82181, "repVotes": 155110, "totalVotes": 254059, "margin": 28.7 },
+      { "year": 2024, "demPct": 30.2, "repPct": 63.42, "demCandidate": "Katrina Fallick-Wang", "repCandidate": "Burgess Owens", "demVotes": 109838, "repVotes": 230627, "totalVotes": 363668, "margin": 33.22, "repIncumbent": true },
+      { "year": 2022, "demPct": 32.35, "repPct": 61.05, "demCandidate": "Darlene McDonald", "repCandidate": "Burgess Owens", "demVotes": 82181, "repVotes": 155110, "totalVotes": 254059, "margin": 28.7, "repIncumbent": true },
       { "year": 2020, "demPct": 46.7, "repPct": 47.7, "demCandidate": "Ben McAdams", "repCandidate": "Burgess Owens", "demVotes": 175923, "repVotes": 179688, "totalVotes": 376730, "margin": 1, "demIncumbent": true },
       { "year": 2018, "demPct": 50.12, "repPct": 49.86, "demCandidate": "Ben McAdams", "repCandidate": "Mia Love", "demVotes": 134964, "repVotes": 134270, "totalVotes": 269271, "margin": -0.26, "repIncumbent": true },
       { "year": 2016, "demPct": 41.31, "repPct": 53.76, "demCandidate": "Doug Owens", "repCandidate": "Mia Love", "demVotes": 113413, "repVotes": 147597, "totalVotes": 274569, "margin": 12.45, "repIncumbent": true }
@@ -11815,7 +11815,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 42.27, "repPct": 57.26, "demCandidate": "Gloria Tinsley Witt", "repCandidate": "John McGuire", "demVotes": 184229, "repVotes": 249564, "totalVotes": 435839, "margin": 14.99 },
-      { "year": 2022, "demPct": 42.24, "repPct": 57.57, "demCandidate": "Joshua Throneburg", "repCandidate": "Bob Good", "demVotes": 129996, "repVotes": 177191, "totalVotes": 307790, "margin": 15.33 },
+      { "year": 2022, "demPct": 42.24, "repPct": 57.57, "demCandidate": "Joshua Throneburg", "repCandidate": "Bob Good", "demVotes": 129996, "repVotes": 177191, "totalVotes": 307790, "margin": 15.33, "repIncumbent": true },
       { "year": 2020, "demPct": 47.3, "repPct": 52.44, "demCandidate": "Cameron Webb", "repCandidate": "Bob Good", "demVotes": 190315, "repVotes": 210988, "totalVotes": 402317, "margin": 5.14 },
       { "year": 2018, "demPct": 46.65, "repPct": 53.18, "demCandidate": "Leslie Cockburn", "repCandidate": "Denver Riggleman", "demVotes": 145040, "repVotes": 165339, "totalVotes": 310926, "margin": 6.53 },
       { "year": 2016, "demPct": 41.58, "repPct": 58.24, "demCandidate": "Jane Dittmar", "repCandidate": "Tom Garrett", "demVotes": 148339, "repVotes": 207758, "totalVotes": 356756, "margin": 16.66 }
@@ -12198,7 +12198,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 26.15, "repPct": 66.36, "demCandidate": "Chris Bob Reed", "repCandidate": "Carol Miller", "demVotes": 90038, "repVotes": 228491, "totalVotes": 344319, "margin": 40.21, "repIncumbent": true },
-      { "year": 2022, "demPct": 28.8, "repPct": 66.69, "demCandidate": "Lacy Watson", "repCandidate": "Carol Miller", "demVotes": 65428, "repVotes": 151511, "totalVotes": 227196, "margin": 37.89 },
+      { "year": 2022, "demPct": 28.8, "repPct": 66.69, "demCandidate": "Lacy Watson", "repCandidate": "Carol Miller", "demVotes": 65428, "repVotes": 151511, "totalVotes": 227196, "margin": 37.89, "repIncumbent": true },
       { "year": 2020, "demPct": 31.02, "repPct": 68.96, "demCandidate": "Natalie Cline", "repCandidate": "David McKinley", "demVotes": 81177, "repVotes": 180488, "totalVotes": 261723, "margin": 37.94, "repIncumbent": true },
       { "year": 2018, "demPct": 35.42, "repPct": 64.58, "demCandidate": "Kendra Fershee", "repCandidate": "David McKinley", "demVotes": 70217, "repVotes": 127997, "totalVotes": 198214, "margin": 29.16, "repIncumbent": true },
       { "year": 2016, "demPct": 31.03, "repPct": 68.97, "demCandidate": "Mike Manypenny", "repCandidate": "David McKinley", "demVotes": 73534, "repVotes": 163469, "totalVotes": 237003, "margin": 37.94, "repIncumbent": true }
@@ -12453,7 +12453,7 @@ export const housePastResults: Record<string, PastResult[]> = {
   ],
   "4218": [
     { "year": 2020, "demPct": 69.25, "repPct": 30.75, "demCandidate": "Michael Doyle", "repCandidate": "Luke Edison Negron", "demVotes": 266084, "repVotes": 118163, "totalVotes": 384247, "margin": -38.5, "demIncumbent": true },
-    { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Michael Doyle", "demVotes": 231472, "repVotes": 0, "totalVotes": 231472, "margin": -100 },
+    { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Michael Doyle", "demVotes": 231472, "repVotes": 0, "totalVotes": 231472, "margin": -100, "demIncumbent": true },
     { "year": 2016, "demPct": 0, "repPct": 100, "repCandidate": "Tim Murphy", "demVotes": 0, "repVotes": 293684, "totalVotes": 293684, "margin": 100, "repIncumbent": true }
   ],
   "5403": [
@@ -12477,142 +12477,142 @@ export type BoundaryHistoryEntry = {
 
 export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
   "1201": [
-    { "year": 2026, "description": "", "pviNew": 18, "pviOld": 19 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) redrew central and southern Florida but left the Panhandle and North Florida alone: FL-1's lines are unchanged, still covering the western Panhandle around Pensacola (Escambia, Santa Rosa, Okaloosa and part of Walton County).", "pviNew": 18, "pviOld": 19 },
     { "year": 2022, "description": "FL-1 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 10, "pviOld": 20 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 22 }
   ],
   "1202": [
-    { "year": 2026, "description": "", "pviNew": 8, "pviOld": 8 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) redrew central and southern Florida but left the Panhandle and North Florida alone: FL-2's lines are unchanged, still running from Panama City through Tallahassee and the Big Bend.", "pviNew": 8, "pviOld": 8 },
     { "year": 2022, "description": "FL-2 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 8, "pviOld": 29 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 18 }
   ],
   "1203": [
-    { "year": 2026, "description": "", "pviNew": 10, "pviOld": 9 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) redrew central and southern Florida but left the Panhandle and North Florida alone: FL-3's lines are unchanged, still a north-central seat anchored by Gainesville and reaching into part of Marion County.", "pviNew": 10, "pviOld": 9 },
     { "year": 2022, "description": "FL-3 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 9, "pviOld": 8 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 9 }
   ],
   "1204": [
-    { "year": 2026, "description": "", "pviNew": 5, "pviOld": 6 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) redrew central and southern Florida but left the Panhandle and North Florida alone: FL-4's lines are unchanged, still pairing Nassau and Clay counties with the western side of Jacksonville.", "pviNew": 5, "pviOld": 6 },
     { "year": 2022, "description": "FL-4 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 6, "pviOld": 14 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 17 }
   ],
   "1205": [
-    { "year": 2026, "description": "", "pviNew": 10, "pviOld": 11 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) redrew central and southern Florida but left the Panhandle and North Florida alone: FL-5's lines are unchanged, still covering the rest of Jacksonville and most of St. Johns County.", "pviNew": 10, "pviOld": 11 },
     { "year": 2022, "description": "FL-5 changed dramatically under Florida's 2022 map. The prior north Florida Black-performing district linking Jacksonville and Tallahassee was dismantled, and the new 5th became a very different Jacksonville-area district that leaned much more Republican.", "pviNew": 11, "pviOld": -12 },
     { "year": 2016, "description": "FL-5 was one of the most important changes on Florida's court-ordered 2016 map. The district was redrawn into a north Florida seat linking Jacksonville to Tallahassee, replacing the older Orlando-to-Jacksonville configuration.", "pviNew": -12 }
   ],
   "1206": [
-    { "year": 2026, "description": "", "pviNew": 14, "pviOld": 14 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) redrew central and southern Florida but left the Panhandle and North Florida alone: FL-6's lines are unchanged, still taking in Flagler and Putnam counties plus parts of Volusia, Marion, Lake and St. Johns.", "pviNew": 14, "pviOld": 14 },
     { "year": 2022, "description": "FL-6 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 14, "pviOld": 10 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 7 }
   ],
   "1207": [
-    { "year": 2026, "description": "", "pviNew": 5, "pviOld": 5 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) redrew central and southern Florida but left the Panhandle and North Florida alone: FL-7's lines are unchanged, still made up of Seminole County and southern Volusia County.", "pviNew": 5, "pviOld": 5 },
     { "year": 2022, "description": "FL-7 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 5, "pviOld": -3 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 0 }
   ],
   "1208": [
-    { "year": 2026, "description": "", "pviNew": 11, "pviOld": 11 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) kept FL-8 anchored in Brevard County but dropped Indian River County (now in FL-9) and pushed further into eastern Orange County around UCF. On 2024 presidential results it moves from Trump +22 to Trump +16.", "pviNew": 11, "pviOld": 11 },
     { "year": 2022, "description": "FL-8 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 11, "pviOld": 12 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 11 }
   ],
   "1209": [
-    { "year": 2026, "description": "", "pviNew": -4, "pviOld": -8 },
+    { "year": 2026, "description": "FL-9 is one of four Democratic-held seats that Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) turned Republican-leaning. It gave up its share of Orange County and now runs from Osceola County (Kissimmee, St. Cloud) south and east through Okeechobee, Highlands and Glades counties to Indian River County on the Atlantic coast, shifting from Harris +3.5 to Trump +18.", "pviNew": -4, "pviOld": -8 },
     { "year": 2022, "description": "FL-9 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -8, "pviOld": -3 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -5 }
   ],
   "1210": [
-    { "year": 2026, "description": "", "pviNew": -13, "pviOld": -14 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) reshaped FL-10 within Orange County but kept it a compact Orlando seat (downtown Orlando, Pine Hills, Winter Park). At Harris +24 it is the only Democratic-leaning district left in Central Florida.", "pviNew": -13, "pviOld": -14 },
     { "year": 2022, "description": "FL-10 was heavily reworked under Florida's 2022 map, becoming a more compact Orlando-based Democratic seat after the statewide reshuffle.", "pviNew": -14, "pviOld": -12 },
     { "year": 2016, "description": "FL-10 was substantially reworked under Florida's 2016 remedial map as central Florida districts were untangled and redrawn around Orlando.", "pviNew": -11 }
   ],
   "1211": [
-    { "year": 2026, "description": "", "pviNew": 8, "pviOld": 8 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) made only modest changes to FL-11, which still covers Sumter County (The Villages), much of Lake County and western Orange County but no longer reaches into Polk County. Its partisanship is essentially unchanged at Trump +16.", "pviNew": 8, "pviOld": 8 },
     { "year": 2022, "description": "FL-11 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 8, "pviOld": 18 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 15 }
   ],
   "1212": [
-    { "year": 2026, "description": "", "pviNew": 17, "pviOld": 17 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) used FL-12 to split Tampa. Formerly a Citrus-Hernando-Pasco seat (Trump +34), it handed Citrus, Hernando and eastern Pasco to FL-15 and now runs from western and central Pasco County (New Port Richey, Land O' Lakes) south into Hillsborough County, including Carrollwood and downtown Tampa. It is now Trump +15.", "pviNew": 17, "pviOld": 17 },
     { "year": 2022, "description": "FL-12 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 17, "pviOld": 11 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 8 }
   ],
   "1213": [
-    { "year": 2026, "description": "", "pviNew": 5, "pviOld": 6 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) adjusted FL-13 only at the edges. It remains a Pinellas County seat (Clearwater, Largo, Palm Harbor) that leaves out downtown and south St. Petersburg, moving from Trump +12 to Trump +13.", "pviNew": 5, "pviOld": 6 },
     { "year": 2022, "description": "FL-13 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 6, "pviOld": 0 },
     { "year": 2016, "description": "FL-13 was notably altered by Florida's 2016 court-ordered map, becoming more compact around Pinellas County and less like the prior configuration that extended further afield.", "pviNew": -2 }
   ],
   "1214": [
-    { "year": 2026, "description": "", "pviNew": -5, "pviOld": -8 },
+    { "year": 2026, "description": "FL-14 is one of four Democratic-held seats that Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) turned Republican-leaning. The old Tampa-St. Petersburg district (Harris +8) lost St. Petersburg to FL-16 and downtown and East Tampa to FL-12 and FL-15; it now lies entirely in Hillsborough County, joining South Tampa and Town 'n' Country to the eastern and southern suburbs (Brandon, Plant City, Riverview, Sun City Center) at Trump +10.", "pviNew": -5, "pviOld": -8 },
     { "year": 2022, "description": "FL-14 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -8, "pviOld": -7 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -7 }
   ],
   "1215": [
-    { "year": 2026, "description": "", "pviNew": 5, "pviOld": 4 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) turned FL-15 from a northeast Hillsborough-east Pasco seat into one that runs north from East Tampa and Temple Terrace through eastern Pasco County (Wesley Chapel, Zephyrhills, Dade City) to all of Hernando and Citrus counties, which came from FL-12. It moves from Trump +11 to Trump +20.", "pviNew": 5, "pviOld": 4 },
     { "year": 2022, "description": "FL-15 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 4, "pviOld": 6 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 6 }
   ],
   "1216": [
-    { "year": 2026, "description": "", "pviNew": 7, "pviOld": 7 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) kept FL-16 based in Manatee County (Bradenton) but swapped its southern Hillsborough suburbs for St. Petersburg, across Tampa Bay, along with part of Sarasota County, inland DeSoto and Hardee counties and a piece of Polk County. It moves from Trump +15 to Trump +14.", "pviNew": 7, "pviOld": 7 },
     { "year": 2022, "description": "FL-16 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 7, "pviOld": 7 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 7 }
   ],
   "1217": [
-    { "year": 2026, "description": "", "pviNew": 11, "pviOld": 10 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) left FL-17 a southwest coast seat (Sarasota, Venice, North Port, Punta Gorda and part of Lee County) but gave part of Sarasota County to FL-16 and reshuffled its Lee County territory with FL-19. It moves from Trump +24 to Trump +22.", "pviNew": 11, "pviOld": 10 },
     { "year": 2022, "description": "FL-17 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 10, "pviOld": 16 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 13 }
   ],
   "1218": [
-    { "year": 2026, "description": "", "pviNew": 14, "pviOld": 13 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) shrank FL-18 from a sprawling Heartland district into a compact Polk County seat (Lakeland, Winter Haven, Haines City) with a small piece of Osceola County around Poinciana. DeSoto, Hardee, Highlands, Okeechobee, Glades and Hendry counties went to neighboring districts, taking it from Trump +29 to Trump +17.", "pviNew": 14, "pviOld": 13 },
     { "year": 2022, "description": "FL-18 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 13, "pviOld": 6 },
     { "year": 2016, "description": "FL-18 saw meaningful changes on the 2016 remedial map as south and Treasure Coast districts were redrawn for population balance and to unwind the prior plan.", "pviNew": 5 }
   ],
   "1219": [
-    { "year": 2026, "description": "", "pviNew": 14, "pviOld": 13 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) made only small changes to FL-19, which remains the coastal Lee-Collier seat (Cape Coral, Naples) and trades some Lee County territory with FL-17. It stays about Trump +30.", "pviNew": 14, "pviOld": 13 },
     { "year": 2022, "description": "FL-19 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 13, "pviOld": 12 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 13 }
   ],
   "1220": [
-    { "year": 2026, "description": "", "pviNew": -22, "pviOld": -25 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) redrew FL-20 from a heavily Black district linking parts of Broward and Palm Beach counties through the Everglades farm towns into a compact central and northern Broward seat (Fort Lauderdale, Pompano Beach, Lauderhill, Tamarac, Sunrise, Coral Springs, Deerfield Beach). It stays safely Democratic at Harris +37.", "pviNew": -22, "pviOld": -25 },
     { "year": 2022, "description": "FL-20 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -25, "pviOld": -28 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -31 }
   ],
   "1221": [
-    { "year": 2026, "description": "", "pviNew": 7, "pviOld": 7 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) made only minor adjustments to FL-21, which still covers St. Lucie and Martin counties and northern Palm Beach County (Jupiter, Palm Beach Gardens) at Trump +16.", "pviNew": 7, "pviOld": 7 },
     { "year": 2022, "description": "FL-21 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 7, "pviOld": -8 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -9 }
   ],
   "1222": [
-    { "year": 2026, "description": "", "pviNew": -4, "pviOld": -7 },
+    { "year": 2026, "description": "FL-22 is one of four Democratic-held seats that Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) turned Republican-leaning. The number moved off the old Palm Beach County coastal seat (Harris +6) to a largely new cross-state district joining Collier and Hendry counties to western Palm Beach County (Wellington, Belle Glade) and western Broward County (Parkland, Plantation, Weston, Davie) at Trump +10.", "pviNew": -4, "pviOld": -7 },
     { "year": 2022, "description": "FL-22 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -7, "pviOld": -6 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -6 }
   ],
   "1223": [
-    { "year": 2026, "description": "", "pviNew": -2, "pviOld": -5 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) moved FL-23 north. Once a Broward-Boca Raton seat (Harris +2), it now covers coastal Palm Beach County from Riviera Beach and West Palm Beach south through Boynton Beach and Delray Beach, territory that was mostly in the old FL-22, and is Harris +14.", "pviNew": -2, "pviOld": -5 },
     { "year": 2022, "description": "FL-23 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -5, "pviOld": -9 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -11 }
   ],
   "1224": [
-    { "year": 2026, "description": "", "pviNew": -18, "pviOld": -25 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) kept FL-24 as the heavily Black seat of northern Miami-Dade County (Miami Gardens, North Miami, Liberty City) and extended it further into southern Broward County to take in Hollywood, deepening it from Harris +30 to Harris +39.", "pviNew": -18, "pviOld": -25 },
     { "year": 2022, "description": "FL-24 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -25, "pviOld": -28 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -34 }
   ],
   "1225": [
-    { "year": 2026, "description": "", "pviNew": -5, "pviOld": -9 },
+    { "year": 2026, "description": "FL-25 is one of four Democratic-held seats that Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) turned Republican-leaning. Formerly a southern Broward seat (Harris +5), it is now a coastal strip running from Boca Raton in Palm Beach County down through Broward to Aventura and Miami Beach in Miami-Dade County, at Trump +9.", "pviNew": -5, "pviOld": -9 },
     { "year": 2022, "description": "FL-25 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -9, "pviOld": 8 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 4 }
   ],
   "1226": [
-    { "year": 2026, "description": "", "pviNew": 16, "pviOld": 8 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) removed Collier County from FL-26 (it now sits in FL-22). The district keeps Hialeah, Miami Lakes and Doral in northwest Miami-Dade County and adds Pembroke Pines and Miramar in southwest Broward County, moving from Trump +35 to Trump +18.", "pviNew": 16, "pviOld": 8 },
     { "year": 2022, "description": "FL-26 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 8, "pviOld": -1 },
     { "year": 2016, "description": "FL-26 was significantly redrawn under Florida's 2016 court-ordered map, with Miami-Dade and southwest Florida lines reconfigured in a way that changed the district's partisan balance.", "pviNew": -6 }
   ],
   "1227": [
-    { "year": 2026, "description": "", "pviNew": 6, "pviOld": 0 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) made only minor adjustments to FL-27, which still covers central Miami-Dade County (downtown Miami, Little Havana, Coral Gables, Kendall) at about Trump +15.", "pviNew": 6, "pviOld": 0 },
     { "year": 2022, "description": "FL-27 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 0, "pviOld": -4 },
     { "year": 2016, "description": "FL-27 was effectively created as a new Miami-area seat under Florida's 2016 remedial map, taking territory that had been configured differently under the previous plan.", "pviNew": -5 }
   ],
   "1228": [
-    { "year": 2026, "description": "", "pviNew": 10, "pviOld": 2 },
+    { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) made only minor adjustments to FL-28, which still covers southwestern Miami-Dade County (Homestead) and the Florida Keys at about Trump +25.", "pviNew": 10, "pviOld": 2 },
     { "year": 2022, "description": "FL-28 was a new district for 2022 after Florida gained a seat. It was drawn in southwest Florida and helped reshuffle neighboring South Florida districts.", "pviNew": 2 }
   ],
   "1301": [
@@ -12804,32 +12804,32 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "KY-6 was redrawn for 2022. Kentucky's 2022 map made limited changes and kept the state's six-district structure largely intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 9, "pviOld": 8 }
   ],
   "2201": [
-    { "year": 2026, "description": "", "pviNew": 20, "pviOld": 22 },
+    { "year": 2026, "description": "Louisiana's 2026 map (SB 121, signed by Gov. Jeff Landry on May 29, 2026) replaced the 2024 court-driven plan that the U.S. Supreme Court struck down as a racial gerrymander in Louisiana v. Callais. LA-1 remains the New Orleans suburban and Northshore seat (Metairie, Slidell, Covington) running down to the river delta; it gave up its pieces of Livingston, Ascension and St. Charles parishes and picked up part of Terrebonne Parish around Houma, staying at Trump +38. The late redraw also moved Louisiana's 2026 House elections to an all-party primary on Nov. 3 with a Dec. 12 runoff.", "pviNew": 20, "pviOld": 22 },
     { "year": 2024, "description": "LA-1 remained centered on the New Orleans suburbs and the Florida Parishes, with only ripple-effect changes from Louisiana's court-driven 2024 redraw.", "pviNew": 22, "pviOld": 23 },
     { "year": 2022, "description": "LA-1 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 23, "pviOld": 22 }
   ],
   "2202": [
-    { "year": 2026, "description": "", "pviNew": -25, "pviOld": -16 },
+    { "year": 2026, "description": "Louisiana's 2026 map (SB 121, signed by Gov. Jeff Landry on May 29, 2026) replaced the 2024 court-driven plan that the U.S. Supreme Court struck down as a racial gerrymander in Louisiana v. Callais. LA-2 is again the state's only Democratic-leaning district: the New Orleans seat once more follows the Mississippi River up to north Baton Rouge (part of LA-6 on the 2024 map) while Assumption Parish and most of Iberville, St. John the Baptist and Ascension parishes moved to LA-6, deepening it from Harris +31 to Harris +48. The late redraw also moved Louisiana's 2026 House elections to an all-party primary on Nov. 3 with a Dec. 12 runoff.", "pviNew": -25, "pviOld": -16 },
     { "year": 2024, "description": "LA-2 remained the New Orleans-based Black-majority district, though its exact lines shifted as Louisiana created a second Black-majority seat elsewhere on the map.", "pviNew": -16, "pviOld": -25 },
     { "year": 2022, "description": "LA-2 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -25, "pviOld": -25 }
   ],
   "2203": [
-    { "year": 2026, "description": "", "pviNew": 18, "pviOld": 24 },
+    { "year": 2026, "description": "Louisiana's 2026 map (SB 121, signed by Gov. Jeff Landry on May 29, 2026) replaced the 2024 court-driven plan that the U.S. Supreme Court struck down as a racial gerrymander in Louisiana v. Callais. LA-3 remains the Acadiana and southwest Louisiana seat (Lafayette, Lake Charles); it regained the part of Lafayette Parish and picked up the part of St. Landry Parish (Opelousas) that had been in the old LA-6, and ceded part of Terrebonne Parish to LA-1, moving from Trump +45 to Trump +36. The late redraw also moved Louisiana's 2026 House elections to an all-party primary on Nov. 3 with a Dec. 12 runoff.", "pviNew": 18, "pviOld": 24 },
     { "year": 2024, "description": "LA-3 stayed a south Louisiana/Cajun Country seat, but its boundaries were adjusted in the statewide reshuffle caused by the creation of a new Black-majority district.", "pviNew": 24, "pviOld": 21 },
     { "year": 2022, "description": "LA-3 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 21, "pviOld": 21 }
   ],
   "2204": [
-    { "year": 2026, "description": "", "pviNew": 17, "pviOld": 27 },
+    { "year": 2026, "description": "Louisiana's 2026 map (SB 121, signed by Gov. Jeff Landry on May 29, 2026) replaced the 2024 court-driven plan that the U.S. Supreme Court struck down as a racial gerrymander in Louisiana v. Callais. LA-4 remains the northwest Louisiana seat and regained the Shreveport, De Soto Parish and Natchitoches Parish territory that the 2024 map had placed in LA-6, while Lincoln, Jackson, Winn and Grant parishes and its shares of Ouachita and Rapides parishes moved to LA-5. It shifts from Trump +52 to Trump +34. The late redraw also moved Louisiana's 2026 House elections to an all-party primary on Nov. 3 with a Dec. 12 runoff.", "pviNew": 17, "pviOld": 27 },
     { "year": 2024, "description": "LA-4 remained a northwest Louisiana seat, though its boundaries changed significantly as the new map carved out a second Black-majority district running up the state.", "pviNew": 27, "pviOld": 14 },
     { "year": 2022, "description": "LA-4 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 14, "pviOld": 14 }
   ],
   "2205": [
-    { "year": 2026, "description": "", "pviNew": 17, "pviOld": 19 },
+    { "year": 2026, "description": "Louisiana's 2026 map (SB 121, signed by Gov. Jeff Landry on May 29, 2026) replaced the 2024 court-driven plan that the U.S. Supreme Court struck down as a racial gerrymander in Louisiana v. Callais. LA-5 remains the northeast Louisiana and Florida Parishes seat; it now holds all of Ouachita Parish (Monroe) and Rapides Parish (Alexandria) plus Lincoln, Jackson, Winn and Grant parishes and part of St. Landry Parish, and gave Livingston Parish and its share of East Baton Rouge Parish to LA-6. It moves from Trump +36 to Trump +34. The late redraw also moved Louisiana's 2026 House elections to an all-party primary on Nov. 3 with a Dec. 12 runoff.", "pviNew": 17, "pviOld": 19 },
     { "year": 2024, "description": "LA-5, previously a long northeast-to-central Louisiana district, was significantly altered by the 2024 redraw and gave up territory used to construct the new second Black-majority seat.", "pviNew": 19, "pviOld": 17 },
     { "year": 2022, "description": "LA-5 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 17, "pviOld": 17 }
   ],
   "2206": [
-    { "year": 2026, "description": "", "pviNew": 16, "pviOld": -8 },
+    { "year": 2026, "description": "LA-6 changed more than any other district under Louisiana's 2026 map (SB 121, signed by Gov. Jeff Landry on May 29, 2026), which replaced the 2024 court-driven plan that the U.S. Supreme Court struck down as a racial gerrymander in Louisiana v. Callais. The Baton Rouge-to-Shreveport Black-opportunity district drawn for 2024 (Harris +15) was dismantled; LA-6 is once again a Baton Rouge suburban seat covering southern and eastern East Baton Rouge Parish, Livingston, Ascension, Iberville and Assumption parishes and part of the River Parishes, at Trump +32. The late redraw also moved Louisiana's 2026 House elections to an all-party primary on Nov. 3 with a Dec. 12 runoff.", "pviNew": 16, "pviOld": -8 },
     { "year": 2024, "description": "LA-6 changed more than any other Louisiana district in 2024. It was redrawn from a Baton Rouge-centered seat into a long Baton Rouge-to-Shreveport district designed to create a second Black-majority/Black-opportunity seat, making it far more Democratic than before.", "pviNew": -8, "pviOld": 19 },
     { "year": 2022, "description": "LA-6 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 19, "pviOld": 18 }
   ],
@@ -13187,91 +13187,91 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2016, "description": "NC-1 was redrawn in 2016 after the prior map was struck down, becoming less of a packed Black-majority district and somewhat less Democratic than the earlier version.", "pviNew": -17 }
   ],
   "3702": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2026", "pviNew": -17, "pviOld": -15 },
+    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": -17, "pviOld": -15 },
     { "year": 2024, "description": "NC-2 stayed a Raleigh-based district, but its lines were adjusted as North Carolina's 2024 map re-sorted the Triangle and made neighboring districts more favorable to Republicans.", "pviNew": -15, "pviOld": -12 },
     { "year": 2022, "description": "NC-2 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": -12, "pviOld": -12 },
     { "year": 2020, "description": "NC-2 was substantially redrawn under North Carolina's court-ordered 2020 interim map, shifting away from its earlier Raleigh-to-Fayetteville-style configuration and becoming a more compact, more Democratic Triangle-area seat.", "pviNew": -12, "pviOld": 7 },
     { "year": 2016, "description": "NC-2 was substantially redrawn in 2016, shedding parts of its prior eastern reach and taking on a more compact Triangle-area configuration.", "pviNew": 7 }
   ],
   "3703": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2027", "pviNew": 6, "pviOld": 11 },
+    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 6, "pviOld": 11 },
     { "year": 2024, "description": "NC-3 remained an eastern North Carolina seat with mostly secondary changes under the 2024 redraw.", "pviNew": 11, "pviOld": 15 },
     { "year": 2022, "description": "NC-3 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 15, "pviOld": 14 },
     { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": 14, "pviOld": 12 },
     { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": 12 }
   ],
   "3704": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2028", "pviNew": -23, "pviOld": -21 },
+    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": -23, "pviOld": -21 },
     { "year": 2024, "description": "NC-4 stayed centered on the Durham/Orange County core of the Triangle and remained strongly Democratic, though its boundaries changed as the region was re-divided.", "pviNew": -21, "pviOld": -16 },
     { "year": 2022, "description": "NC-4 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": -16, "pviOld": -16 },
     { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": -16, "pviOld": -17 },
     { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": -17 }
   ],
   "3705": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2029", "pviNew": 9, "pviOld": 10 },
+    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 9, "pviOld": 10 },
     { "year": 2024, "description": "NC-5 remained a northwestern North Carolina seat, with only modest adjustments under the 2024 map.", "pviNew": 10, "pviOld": 13 },
     { "year": 2022, "description": "NC-5 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 13, "pviOld": 20 },
     { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": 20, "pviOld": 10 },
     { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": 10 }
   ],
   "3706": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2030", "pviNew": 9, "pviOld": 11 },
+    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 9, "pviOld": 11 },
     { "year": 2024, "description": "NC-6 was substantially redrawn. The old Greensboro/Winston-Salem swing seat was dismantled and replaced with a much more Republican district, one of the map's clearest partisan shifts.", "pviNew": 11, "pviOld": -4 },
     { "year": 2022, "description": "NC-6 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": -4, "pviOld": -10 },
     { "year": 2020, "description": "NC-6 changed sharply in the 2020 court-ordered redraw. The old Greensboro-centered Republican seat was reconfigured into a much more Democratic Piedmont Triad district.", "pviNew": -10, "pviOld": 9 },
     { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": 9 }
   ],
   "3707": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2031", "pviNew": 7, "pviOld": 8 },
+    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 7, "pviOld": 8 },
     { "year": 2024, "description": "NC-7 remained a southeastern North Carolina seat, though it picked up and shed territory in the ripple effects of the 2024 redraw.", "pviNew": 8, "pviOld": 8 },
     { "year": 2022, "description": "NC-7 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 8, "pviOld": 11 },
     { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": 11, "pviOld": 9 },
     { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": 9 }
   ],
   "3708": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2032", "pviNew": 10, "pviOld": 11 },
+    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 10, "pviOld": 11 },
     { "year": 2024, "description": "NC-8 stayed a south-central district, but its exact boundaries shifted as Republicans reworked the Piedmont and Charlotte exurbs.", "pviNew": 11, "pviOld": 20 },
     { "year": 2022, "description": "NC-8 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 20, "pviOld": 6 },
     { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": 6, "pviOld": 8 },
     { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": 8 }
   ],
   "3709": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2033", "pviNew": 8, "pviOld": 9 },
+    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 8, "pviOld": 9 },
     { "year": 2024, "description": "NC-9 remained a south-central/Charlotte-exurban Republican seat, with only secondary changes on the 2024 map.", "pviNew": 9, "pviOld": 6 },
     { "year": 2022, "description": "NC-9 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 6, "pviOld": 6 },
     { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": 6, "pviOld": 8 },
     { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": 8 }
   ],
   "3710": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2034", "pviNew": 9, "pviOld": 10 },
+    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 9, "pviOld": 10 },
     { "year": 2024, "description": "NC-10 remained a western Piedmont foothills seat with only modest adjustments under the 2024 redraw.", "pviNew": 10, "pviOld": 22 },
     { "year": 2022, "description": "NC-10 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 22, "pviOld": 21 },
     { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": 21, "pviOld": 12 },
     { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": 12 }
   ],
   "3711": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2035", "pviNew": 5, "pviOld": 8 },
+    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 5, "pviOld": 8 },
     { "year": 2024, "description": "NC-11 stayed centered on western North Carolina and Appalachia, with little substantive change in 2024.", "pviNew": 8, "pviOld": 8 },
     { "year": 2022, "description": "NC-11 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 8, "pviOld": 9 },
     { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": 9, "pviOld": 14 },
     { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": 14 }
   ],
   "3712": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2036", "pviNew": -24, "pviOld": -23 },
+    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": -24, "pviOld": -23 },
     { "year": 2024, "description": "NC-12 remained a Charlotte-based Democratic district, though the legislature repacked Democratic voters and changed its exact shape in the 2024 redraw.", "pviNew": -23, "pviOld": -13 },
     { "year": 2022, "description": "NC-12 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": -13, "pviOld": -19 },
     { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": -19, "pviOld": -18 },
     { "year": 2016, "description": "NC-12, previously the state's famous I-85 corridor district, was completely reworked in the 2016 court-ordered redraw into a more compact Charlotte-based seat.", "pviNew": -18 }
   ],
   "3713": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2037", "pviNew": 8, "pviOld": 11 },
+    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 8, "pviOld": 11 },
     { "year": 2024, "description": "NC-13 was heavily reworked for 2024. The district shifted away from its recent swing-seat configuration and became substantially more Republican under the new map.", "pviNew": 11, "pviOld": 2 },
     { "year": 2022, "description": "NC-13 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 2, "pviOld": 20 },
     { "year": 2020, "description": "NC-13 was one of the districts most visibly changed in North Carolina's court-ordered 2020 redraw, with a new configuration that made it less of the oddly shaped 2016-era district and more of a competitive suburban/exurban seat.", "pviNew": 20, "pviOld": 6 },
     { "year": 2016, "description": "NC-13 was significantly reconfigured in North Carolina's 2016 redraw, shifting away from the old Raleigh-anchored layout and taking on a more suburban/exurban identity.", "pviNew": 6 }
   ],
   "3714": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2038", "pviNew": 8, "pviOld": 11 },
+    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 8, "pviOld": 11 },
     { "year": 2024, "description": "NC-14 remained anchored in the Charlotte area but was redrawn to become more favorable to Republicans than the 2022 version.", "pviNew": 11, "pviOld": -6 },
     { "year": 2022, "description": "NC-14 was created for 2022 after North Carolina gained a seat. It was drawn in the Charlotte area as a competitive-to-Democratic-leaning district, though it was later redrawn again for 2024.", "pviNew": -6 }
   ],
@@ -13467,39 +13467,39 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "SC-7 was redrawn for 2022. South Carolina's 2022 map kept the seven-district structure but drew legal scrutiny, especially around the Charleston-based 1st district. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 11, "pviOld": 11 }
   ],
   "4701": [
-    { "year": 2026, "description": "", "pviNew": 29, "pviOld": 30 },
+    { "year": 2026, "description": "Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling) split Memphis three ways to eliminate the state's only Democratic seat but left northeast Tennessee alone: TN-1's lines are unchanged, still covering the Tri-Cities region.", "pviNew": 29, "pviOld": 30 },
     { "year": 2022, "description": "TN-1 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 30, "pviOld": 30 }
   ],
   "4702": [
-    { "year": 2026, "description": "", "pviNew": 17, "pviOld": 18 },
+    { "year": 2026, "description": "Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling) split Memphis three ways to eliminate the state's only Democratic seat but left the Knoxville-based TN-2 effectively unchanged.", "pviNew": 17, "pviOld": 18 },
     { "year": 2022, "description": "TN-2 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 18, "pviOld": 18 }
   ],
   "4703": [
-    { "year": 2026, "description": "", "pviNew": 18, "pviOld": 19 },
+    { "year": 2026, "description": "Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling) made only minor changes to the Chattanooga-based TN-3, which picked up Meigs and Rhea counties from TN-4 and gave Morgan County and its parts of Scott and Campbell counties to TN-6. It stays about Trump +36.", "pviNew": 18, "pviOld": 19 },
     { "year": 2022, "description": "TN-3 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 19, "pviOld": 19 }
   ],
   "4704": [
-    { "year": 2026, "description": "", "pviNew": 11, "pviOld": 22 },
+    { "year": 2026, "description": "Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling) kept TN-4 anchored in Rutherford County (Murfreesboro, Smyrna) but pushed it into southeastern Davidson County around Antioch and added Cannon and Van Buren counties. Its southern tier (Bedford, Moore, Lincoln, Giles, Lawrence) went to the new TN-9 and Meigs and Rhea counties to TN-3, taking it from Trump +44 to Trump +24.", "pviNew": 11, "pviOld": 22 },
     { "year": 2022, "description": "TN-4 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 22, "pviOld": 22 }
   ],
   "4705": [
-    { "year": 2026, "description": "", "pviNew": 10, "pviOld": 9 },
+    { "year": 2026, "description": "Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling) relocated TN-5 almost entirely. The former south Nashville-Williamson-Maury-Wilson seat now begins in downtown and north Memphis, follows the Mississippi River through northwest Tennessee (Dyersburg, Paris) and stretches east to Franklin in Williamson County and most of Maury County; it no longer contains any of Nashville. It moves from Trump +18 to Trump +23.", "pviNew": 10, "pviOld": 9 },
     { "year": 2022, "description": "TN-5 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 9, "pviOld": -9 }
   ],
   "4706": [
-    { "year": 2026, "description": "", "pviNew": 13, "pviOld": 17 },
+    { "year": 2026, "description": "Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling) kept TN-6 centered on the Upper Cumberland (Cookeville, Crossville) but gave it all of Wilson County (Lebanon, Mt. Juliet) and a reshaped share of Nashville that now includes downtown as well as East Nashville. Sumner, Macon and Trousdale counties went to TN-7, and Morgan County and more of Scott and Campbell counties came from TN-3, taking it from Trump +35 to Trump +27.", "pviNew": 13, "pviOld": 17 },
     { "year": 2022, "description": "TN-6 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 17, "pviOld": 26 }
   ],
   "4707": [
-    { "year": 2026, "description": "", "pviNew": 11, "pviOld": 10 },
+    { "year": 2026, "description": "Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling) kept Clarksville and north and west Nashville in TN-7 but traded its rural western counties and its share of Williamson County for Sumner County (Hendersonville, Gallatin), Macon and Trousdale counties and a larger piece of Davidson County. It stays about Trump +22.", "pviNew": 11, "pviOld": 10 },
     { "year": 2022, "description": "TN-7 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 10, "pviOld": 21 }
   ],
   "4708": [
-    { "year": 2026, "description": "", "pviNew": 10, "pviOld": 21 },
+    { "year": 2026, "description": "Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling) gave TN-8 a much larger share of Shelby County, adding East Memphis, Cordova, Bartlett and Millington to Germantown, while keeping Jackson and rural West Tennessee. Its northwestern counties (Dyer, Obion, Weakley, Henry, Lake, Lauderdale) went to TN-5 and Hardeman, McNairy and Hardin counties to TN-9, taking it from Trump +42 to Trump +20.", "pviNew": 10, "pviOld": 21 },
     { "year": 2022, "description": "TN-8 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 21, "pviOld": 19 }
   ],
   "4709": [
-    { "year": 2026, "description": "", "pviNew": 9, "pviOld": -22 },
+    { "year": 2026, "description": "TN-9 changed more than any other district under Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling). The Memphis-based, majority-Black seat (Harris +43) was split among TN-5, TN-8 and TN-9; the new TN-9 keeps only southern Shelby County (Whitehaven, Hickory Hill, Collierville) and runs east along the state's southern border through Hardeman, McNairy, Hardin, Wayne, Lawrence, Giles and Lincoln counties to Columbia and the Nashville suburb of Brentwood. It is now Trump +21, and Rep. Steve Cohen (D) did not seek re-election.", "pviNew": 9, "pviOld": -22 },
     { "year": 2022, "description": "TN-9 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -22, "pviOld": -28 }
   ],
   "4801": [

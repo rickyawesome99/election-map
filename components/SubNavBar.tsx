@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState, useSyncExternalStore } from "react";
 
 const TABS: { key: string; label: string; href?: string }[] = [
   { key: "overview",         label: "Overview" },
@@ -11,6 +11,7 @@ const TABS: { key: string; label: string; href?: string }[] = [
   { key: "model",            label: "TPL" },
   { key: "states",           label: "States" },
   { key: "analysis",         label: "Analysis",        href: "/analysis" },
+  { key: "methodology",      label: "Methodology" },
   { key: "district-finder",  label: "District Finder" },
 ];
 
@@ -22,13 +23,41 @@ function getActiveTab(pathname: string): string | null {
   if (pathname === "/model" || pathname.startsWith("/model/")) return "model";
   if (pathname === "/district-finder") return "district-finder";
   if (pathname.startsWith("/analysis")) return "analysis";
+  if (pathname === "/methodology" || pathname.startsWith("/methodology/")) return "methodology";
   if (pathname === "/overview" || pathname === "/") return "overview";
   return null;
+}
+
+type Chamber = "house" | "senate" | "governor";
+const FORECAST_TAB_KEY = "raceType"; // written by ForecastMap's persistRaceType
+
+function chamberOfPath(pathname: string): Chamber | null {
+  const first = pathname.split("/")[1];
+  return first === "house" || first === "senate" || first === "governor" ? first : null;
+}
+
+function readSavedChamber(): Chamber {
+  try {
+    const saved = window.localStorage.getItem(FORECAST_TAB_KEY);
+    return saved === "house" || saved === "senate" || saved === "governor" ? saved : "senate";
+  } catch {
+    return "senate"; // storage unavailable (private mode)
+  }
+}
+
+function subscribeToStorage(onChange: () => void): () => void {
+  window.addEventListener("storage", onChange);
+  return () => window.removeEventListener("storage", onChange);
 }
 
 export default function SubNavBar() {
   const pathname = usePathname();
   const activeTab = getActiveTab(pathname);
+  // The Forecast tab returns to the chamber last viewed. The saved preference is re-read on
+  // every render (SubNavBar lives in the root layout and re-renders on each navigation); the
+  // server snapshot is "senate", so hydration agrees before the stored value takes over.
+  const savedChamber = useSyncExternalStore(subscribeToStorage, readSavedChamber, () => "senate" as Chamber);
+  const forecastChamber = chamberOfPath(pathname) ?? savedChamber;
   const activeTabRef = useRef<HTMLElement | null>(null);
   const tabRefs = useRef<Map<string, HTMLElement>>(new Map());
   const navRef = useRef<HTMLElement | null>(null);
@@ -57,6 +86,13 @@ export default function SubNavBar() {
     if (!activeTab || !window.matchMedia("(max-width: 767px)").matches) return;
     activeTabRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
   }, [activeTab]);
+
+  // A chamber reached through a race page (/governor/nv) counts as the last one viewed too.
+  useEffect(() => {
+    const here = chamberOfPath(pathname);
+    if (!here) return;
+    try { window.localStorage.setItem(FORECAST_TAB_KEY, here); } catch { /* storage unavailable */ }
+  }, [pathname]);
 
   const commonClass = "relative z-10 shrink-0 px-3 py-3 text-sm font-semibold transition-colors duration-150 sm:px-3.5";
 
@@ -94,7 +130,7 @@ export default function SubNavBar() {
             color: isActive ? "var(--app-text-primary)" : "var(--app-text-muted)",
           };
 
-          const targetHref = href ?? (key === "forecast" ? "/senate" : `/${key}`);
+          const targetHref = href ?? (key === "forecast" ? `/${forecastChamber}` : `/${key}`);
 
           return (
             <Link

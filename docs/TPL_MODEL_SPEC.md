@@ -5,6 +5,11 @@ code; when they disagree, the code is right and this file has drifted — fix it
 Design history and rationale: the "TPL Rebuild Spec" artifact and its companion
 "TPL Model Review".
 
+> **Current specification: the site's Methodology tab** (`/methodology`, components in
+> `components/methodology/`). It reads every constant and fitted value live from the code and
+> carries the revision history (`data/methodologyChangelog.ts`). This file is the long-form
+> design history and rationale; where the two disagree, the Methodology tab and the code win.
+
 ## Purpose
 
 TPL estimates each state's structural partisan lean: the margin a **generic
@@ -117,14 +122,30 @@ estimated with this strip already applied, so the two terms partition cleanly.
 - Excluded for President by design; 0 for imputed rows. Governor rows come from
   state filings (TransparencyUSA / FollowTheMoney / OCPF) since gubernatorial
   money is not filed with the FEC; 15 of the 36 2026 races are still uncollected.
-- The forward projection (`computeProjectedMargin`) adds the same
-  `computeFundraisingPts` for 2026 races using live receipts, via
-  `computeRaceFundraisingPts(raceType, raceId)` — the one lookup the House,
-  Senate and Governor pages share with the forecast.
+- The forward projection does NOT reuse the raw strip (forecast revamp Phase 6,
+  2026-09-20). `raceMoneyTerm(race)` — the one lookup the House, Senate and Governor
+  pages share with the forecast — pays points on the **residual** gap only:
+  `clamp(MONEY_K × (PARTIAL_CYCLE_GAP_SCALE × gap% − structural gap%), ±MONEY_CAP)`,
+  where the structural gap is the per-office regression behind WAR's expected margin
+  (`getWarMoneyModel`: gap% ~ 1 + incSign + pre-money margin). The same basis
+  (`moneyPtsFor`) sits in the full-money expected margins behind the candidate effects.
+  Constants and the backtest table live in `FORECAST_CONSTANTS` (data/tplModelData.ts):
+  MONEY_K H .04 / S .06 / G .04, MONEY_CAP H 3 / S 4 / G 3, scale 0.9. Forward MAE
+  (`forwardBacktest --money`): raw gap S 5.61 / G 9.20 / H 4.81 → residual 5.04 / 8.90 / 4.59;
+  raw House money was worse than no money at all (4.76).
+- A race with a side's receipts unknown scores 0, which under the residual basis means
+  "the typical gap for this situation". Imputing the structural gap under the raw basis
+  was tested and rejected (masked receipts: S 5.93 / G 9.50 / H 4.94 vs 5.71 / 9.37 / 4.76 at 0).
+- Partial-cycle scaling: 2026 receipts are a mid-September snapshot, past cycles are
+  full-cycle. `scripts/fetch-fec-september-snapshot.py` rebuilds the mid-September view of
+  2022 and 2024 from OpenFEC report summaries (`data-entry/fundraising_sept_snapshot.csv`,
+  cache in `.fec-cache/`): gap_final ≈ 0.90 × gap_sept (R² .94–.96), hence the 0.9.
+  `forwardBacktest --sept-money` scores September vs full-cycle receipts.
 - Displayed on each 2026 race page: the **Fundraising** section
   (`FundraisingLedgerSection`) shows both candidates' receipts, their share split
-  and the resulting FF points, and the Forecast Calculation card's Fundraising row
-  carries the same number. Races with a side missing render as TBD. The generator
+  and the resulting points against the typical gap, and the Forecast Calculation card's
+  Fundraising row carries the same number (tooltip: filed / typical / beyond-typical gap).
+  Races with a side missing render as TBD with the typical-gap note. The generator
   also emits `fundraisingSources` (current cycle only) for the attribution line.
 
 ## Step 3b — Boundary shift (BS pts, District TPL only)
@@ -496,6 +517,17 @@ Final harness this round: S 5.65 / G 9.21 / H 4.82; RACE_SIGMA H 5.3 / S 6.0 / G
 
 Dropping partisan polls costs House coverage (104 → 68 polled) and its LOO error (3.68 → 4.16); shifting them 3 or 6 pts toward the sponsor's opponent also hurts (`--no-partisan`, `--partisan-shift`). Polls are used as published, flagged (D)/(R) on the page.
 
+**Poll aging (2026-09-21).** A poll reads the race on its field date, and the national environment has moved since. Before averaging, each poll's margin is shifted by `POLL_AGING_SHARE × β*(state) × (GB now − GB on the poll's end date)` (`pollAgingShift` in `lib/racePollAverage.ts`; GB on a past date = `genericBallotSeries()` in `lib/genericBallotAverage.ts`, the live recipe over the polls completed by that date, read at the series' first five-pollster date for anything older). The average's `aging` field is the weighted mean shift inside `diff`; `dem`/`rep` stay raw. Backtest (`forwardBacktest --polls`, GB history from `scripts/build-generic-ballot-history.py` → `data-entry/generic_ballot_polls_history.csv`, 4,832 polls from the 538 archive): the mean shift is only 0.4–1.2 pts because old polls already carry little weight; the poll average alone improves up to share ≈ 1 for Senate (6.64 → 6.60) and House (5.11 → 5.03), Governor is flat, and the blend moves < 0.05 at any share — so point-for-point (`POLL_AGING_SHARE = 1`) is kept as the principled value. Live: 142 polled races, mean shift 0.8 pts D-ward (GB has moved toward the Democrats since the spring), mean effect on the projected margin 0.12, largest ≈ 0.5 (NY-Gov, IA-Sen).
+
+**Rating basis (user decision 2026-09-21).** The rating is a bucket of the projected MARGIN (`marginToRating`: Tilt < 1, Lean < 5, Likely < 15, Safe), not of the win probability. Probability is shown beside it, never used to set it.
+
+**Pollster ratings and house effects (2026-09-21).** Two questions, tested forward (each cycle scored only with what was known before it):
+
+- *Ratings.* `scripts/build-pollster-graded-polls.py` → `data-entry/pollster_graded_polls.csv` (14,877 general-election polls from the final 60 days, 2008–2024: 538's `raw_polls.csv` through 2022, and the 538 archive graded against this site's results for 2023–24 — president, Senate, governor, House, generic ballot). `scripts/build-pollster-ratings.py` grades the 7,039 polls of the final 21 days: `excess = |error| − benchmark`, the benchmark blending the other pollsters' mean miss in the same race with the expected miss for the race type × year, sample and days out; `score = Σ w·excess / (Σ w + 12)`, `w = 0.84^years / √(polls by that pollster in the race)`; letter grade = band of the score (≥ 5 graded polls); bias (vs the result) and house effect (vs the other pollsters in the race) shrunk by 8; regional scores (National, Northeast, Rust Belt, Sun Belt, South, Plains & Mountain, Pacific) shrink toward the pollster's overall score with k 10. Outputs: `data/pollsterRatings.ts` (page), `data/pollsterLookup.ts` (name → id aliases + grades, small enough for the race pages; this cycle's spellings are hand-mapped in `data-entry/pollster_aliases.csv`), `data-entry/pollster_ratings_vintages.csv` (ratings as of 2018/20/22/24/26 for the backtest). Page: `/analysis/pollsters`.
+- *What persists* (`build-pollster-ratings.py --validate`, and `POLLSTER_RATING_META.persistence`): a pollster's accuracy vs the field does **not** carry into the next cycle (correlation 0.00 over 110 pollster-cycles; out-of-sample R² of the score for a poll's excess error is ≤ 0 at every decay and shrinkage), nor does its raw bias (−0.04) — whether a pollster looks good in a year depends on whether its lean pointed the way that year's shared miss went. Its **house effect** does persist (+0.36, slope 0.47). Regional scores predict no better than the overall score (squared error 100–103% of overall-only).
+- *In the average* (`forwardBacktest --pollsters`, poll average alone / blend at the live `POLL_K`): weighting polls by `exp(−λ × score)` moves nothing (λ 0.5–2: within ±0.1 everywhere); subtracting the *historical* house effect moves nothing; subtracting the **current-cycle** house effect helps — `lib/pollsterHouseEffects.ts` fits `margin = race level + house effect(pollster, partisan flag)` over every race at least two pollsters have polled in the last `HOUSE_EFFECT_WINDOW_DAYS` (200), alternating means, each effect shrunk by `HOUSE_EFFECT_K` (2) pseudo-polls and capped at `HOUSE_EFFECT_CAP` (5). Mid-Sept / mid-Oct / Nov 1: Senate poll average 6.64 → 6.27 / 6.51 → 6.19 / 6.02 → 5.82 and blend 4.57 → 4.52 / 4.46 → 4.34 / 4.50 → 4.41; House poll average 5.11 → 4.75 / 5.14 → 4.79 / 5.13 → 4.59, blend ±0.05 (the un-adjusted Democratic internals had been offsetting the House model's R-ward bias); Governor ±0.07. Adding president and generic-ballot polls to the overlap set, or a fixed partisan-poll prior, did not help. So `HOUSE_EFFECTS: true`, and pollster grades are displayed (polls table "Grade" column) but are not a weight. `computeRacePollAverage(polls, asOf, shiftFor, houseFor)`; the average carries `house` (the mean lean removed), each poll `house`; pollsters are deduplicated by rating id, so "Siena College" and "Siena University" are one.
+- Live effect (2026-09-21): 143 pollster keys estimated; mean |Δ projected margin| 0.18 over the polled races, largest KS R+10.2 → R+9.1 and NH-Gov R+8.5 → R+7.6; two toss-ups cross zero (FL-22 D+0.5 → R+0.1, NV-Gov D+0.2 → EVEN); Senate P(D control) 42% → 44%, House 77% → 75%, expected seats within 0.4. Data fix on the way: the scrape had flagged bipartisan pairs (Beacon/Shaw = Fox News, Fabrizio Ward/Impact = AARP) with one firm's party; `build-race-polls.js` now clears the flag (24 polls).
+
 **Spread.** `raceSigma(office, state, w)² = (β* σ_E)² + ((1 − w) RACE_SIGMA)² + (w POLL_SIGMA)²`, `POLL_SIGMA` = robust sd of actual − poll average over the polled races (H 6.4 · S 5.5 · G 6.8). The independent-error formula reproduces the measured spread of the blend (S 4.3 · G 5.8 · H 4.0) within 0.2. The national shock is kept in full: polls miss nationally too.
 
 **Site.** Calculation card "Polling Avg" row (pollsters, effective polls, fitted weight), hero "Polling Avg." stat, and a per-race polls table (`RacePollsSection`) on the Senate, Governor and House pages. The hand-entered RCP fields no longer enter the forecast. The ledger card groups the five structural rows under a "= Model · N% weight" subtotal, shows the Polling Avg as a separate weighted estimate, and spells out the combination under the Projected Margin. Live: House 223.4 D (P control 80%), Senate 49.9 D (P control 37%, up from 21%), Governor 24.7 D.
@@ -508,6 +540,61 @@ Rules for the 2026 races that are not a Democrat against a Republican (user deci
 - **Aligned independents** (`ALIGNED_INDEPENDENTS`, `alignedParty()` in data/raceEligibility.ts): Kevin Kiley (CA-06) is modeled as the Republican-aligned incumbent — House incumbency applied, his Republican track record used for the candidate term, a win counted as R. King and Sanders remain the Democratic entries.
 - **Unaligned independents standing in for a missing party** (Osborn NE-Sen; Achilles ID-Sen, Bengs SD-Sen, Hill AK-01, Milleron MA-01, Eliopoulos NJ-08, Mahoney PA-03): stay `contested`, scored on the structural D-vs-R margin plus their own record (Osborn's 2024 ridge effect, which was measured against the same imputed baseline) and the polls; a win counts toward the slot's party in the seat totals (Osborn → Democratic control, as King/Sanders). The poll scrape fills an empty major-party slot with the independent, so NE-Sen polls (Ricketts–Osborn) now enter.
 - **Multi-candidate ballots** (AK top-four RCV, LA jungle, pre-primary top-two polls): when a poll table lists more than one candidate of a party, the scrape sums each party's candidates and normalises to a two-party share — the final RCV round / runoff is the quantity the margin describes. Two-candidate tables stay raw, matching the 538 history the poll weight was fitted on. AK past results are already stored as final-round margins.
-- **Louisiana House**: LA-05/06 have no nominees on the post-*Callais* map (jungle primary Nov 3, runoff Dec 12) and are scored structurally on the repo's stale lines — the Phase 7 district-line update is the fix, not a rule.
+- **Alaska Senate polls — RCV final round only** (user decision 2026-09-21): the `S,AK,Senate` rows of `race_polls.csv` hold ONLY a poll's ranked-choice final round between Sullivan and Peltola, entered by hand from the pollster's release; first-choice / first-past-the-post toplines, head-to-head questions and party-summed rows are not ingested, and a poll that publishes no two-candidate final round is left out. Reason: party-summing a first-choice table assumes every minor-Republican vote transfers to Sullivan, which the RCV polls of the same field contradict (Fabrizio/Impact and DFP: Sullivan 43→47, Peltola 50→53, the rest exhausts) — Rasmussen's 39–39 tie (Sept 13–14) had been entered as R+14.2 and moved the average from D+1 to R+7. A re-scrape must not overwrite these rows.
+- **Louisiana House**: on the post-*Callais* map (SB 121, signed 2026-05-29) all six seats go to an all-party primary on Nov 3 with a Dec 12 runoff, so no seat has a nominee. Geometry, presidential data and District TPL are on the new lines (verified 2026-09-17/20: LA-06 Trump +32, LA-02 Harris +48; an old-lines House result enters only through the boundary strip). The modelled margin is the party-summed R-vs-D quantity, so an R-vs-R runoff is still the modelled Republican win. LA-05 (Letlow running for Senate) and LA-06 (Fields withdrew) are open with both slots blank → `contested`, scored structurally with no incumbency or candidate term (≈ R+30 each). LA-01/03/04 list the incumbent against one declared Democrat as a display stand-in for a multi-candidate field; LA-02 has no Republican in the field → `uncontested-D`. The one LA-06 field poll (Rigamer, Aug 12–13, 40% undecided) is not ingested — the scrape requires two named nominees, and a 40%-undecided all-party poll is not a two-party margin. The Senate race is an ordinary closed-primary D-vs-R general (Letlow v Davis).
 
 Live after these rules: NE-Sen R+8.0 (Osborn, polls tied at 44% weight), CA-06 D+10.4, CA-40 Safe R; House 223.4 D (P control 80%), Senate 49.8 D (35%), Governors 24.7 D.
+
+## Forward forecast — Phase 7 seat status: open-seat carryover and freshman effect (2026-09-21)
+
+**Question.** Does the party that held an open seat keep an advantage the model misses, and do
+first-term incumbents run differently from veterans? And, with the same design, what is House
+incumbency actually worth?
+
+**Method.** `npx tsx scripts/forwardBacktest.ts --env struct --seat-status`. Every scored race gets a
+seat status: `veteran` / `freshman` / `appointed` incumbent, or `open` with the outgoing holder's
+party. Freshman = won the seat as a non-incumbent within one term before the election (from the
+results on file; pre-2016 first elections and special-election entrants from a hand list in the
+script); House open-seat holder = the party that won the same-numbered district two years earlier
+(approximate across the 2022 renumbering); Senate/Governor open-seat holders are a hand table (the
+file starts in 2016). Residuals are taken under the full model, with year fixed effects, signed
+toward the incumbent's / holder's party, and each coefficient is fitted leave-one-year-out.
+
+| term | Senate | Governor | House | out-of-sample MAE (S / G / H; base 5.05 / 8.91 / 4.58) |
+|---|---|---|---|---|
+| open-seat carryover | −0.4 ± 1.2 | −4.2 (folds −0.7…−6.4) | −1.1 ± 0.8 | 5.08 / 9.08 / 4.56 |
+| freshman effect | −0.9 ± 1.0 | +4.4 (folds +1.9…+8.1) | −1.0 ± 0.7 | 5.09 / 8.99 / 4.58 |
+| any elected incumbent | −0.5 | +4.1 | −0.7 | 5.07 / 9.05 / 4.57 |
+
+**Verdict: neither term is adopted.** Where there is a sign it is a retirement *slump* for the
+outgoing party, not a carryover, and nothing improves out-of-sample error beyond noise. The Governor
+numbers are large but unstable: 2018 drives them, when popular incumbents (Baker, Hogan, Scott) had
+no track record on file for the candidate term to read — in 2022, with records on file, freshman
+governors sit at +1.2. Removing the candidate-quality term leaves every conclusion unchanged.
+
+**House incumbency is now an estimate.** Sweeping the fixed value through the district-lean strip,
+the candidate effects and the forward term together: pooled House MAE 4.87 (0) · 4.59 (2) ·
+4.58 (2.5) · 4.58 (3) · 4.60 (3.5) · 4.64 (4) · 4.81 (5), same optimum in 2022 and 2024. The
+fixed 3 stays. (The Phase 1 finding that House incumbency "slightly hurts" predates the candidate
+and money terms and the flag fix below; the ablation now reads 4.58 with it, 5.01 without.)
+
+**Data fix found on the way.** 90 rows of `data-entry/house_past_results.csv` had a returning
+member flagged as no incumbent — members whose district NUMBER changed in redistricting (70 in
+2022, Pennsylvania's 12 in 2018) plus same-numbered KY-06, TX-23, UT-04, VA-05, NY-18, PA-04.
+All are now flagged; left open by judgment: the 2022 member-vs-member races (FL-02, TX-34) and
+Boebert's 2024 move to CO-04. Effect: 155 live House margins move, all by < 1 pt, one rating
+change (CA-22 Lean → Likely D), no side flips; tplBacktest PASS, tplCalibrate baseline 4.248 → 4.255.
+
+## Forward forecast — Phase 7 demographic swing (2026-09-21)
+
+**Question.** Do races with similar electorates miss together, and is any of it predictable?
+
+**Evidence.** `forwardBacktest --env struct --dump` residuals (actual − pred, R-positive) joined to the ACS shares: House residuals tilt with nonwhite share (100 − White alone, not Hispanic) by **+1.3 (2022) and +1.6 (2024) pts per 10 pts**, R² .14 / .24, surviving a control for lean and holding in competitive seats (≈ +1.0); college share ≈ 0 (−0.7, 0.0). Statewide races show no college slope in 2020–24 (the large 2018 one is a candidate artifact of a 2016-only fit window: Baker/Hogan/Scott/Sununu in high-college states, Manchin/Tester in low-college ones). A district β = f(college) cannot be tested — the only wave year with House rows on current lines is 2018, with 5.
+
+**Shock, not trend.** Carrying 2022's slope into 2024 would have cut House MAE 4.72 → 4.55 (2024 → 2022: 4.85 → 4.48), but the slope is not stable: the vote-weighted county presidential swing on nonwhite share ran −1.2 (2008→12), −2.6 (12→16), +0.8 (16→20), +1.2 (20→24), college +0.2, −5.5, −2.4, −0.6; and the 2025 Governor results against the 2024 presidential reversed 2024's nonwhite swing (NJ −2.6 after +1.7, VA −1.4 after +0.9). **No demographic term enters the mean projection.**
+
+**What is built.** `simulateChamber` draws one shock per axis per run, `FORECAST_CONSTANTS.DEMOGRAPHIC_SHOCK = { nonwhite: 1.5, college: 1.0 }` (sd of the slope, pts per 10 pts of share), loaded on each race's distance from the average electorate of its kind (the 435 districts for House, the 50 states for Senate/Governor — not the nation, because σ_E is the mean miss across those races and already holds the average effect). The shock is carved **out of** the race's own noise (floor: half of it), so each race's total spread and win probability are unchanged; only co-movement changes. Effect: House 80% seat range 215–233 → 214–234, P(D control) 79% → 77%; Senate and Governor unchanged (the shock is zero-sum across seats).
+
+**Simulation noise fix (same change).** The simulation drew race noise from `RACE_SIGMA[office]` while each race's probability used `raceSigma()`'s model/poll blend, so simulated seat means disagreed with Σp (House 224.1 vs 223.4, Senate 49.8 vs 50.1). Race noise is now the race's own `sigma² − (β*σ_E)²`; means match Σp (223.6 / 50.1 / 24.9). This moved more than the shock did: House P(D control) 82% → 79%, Senate 36% → 42% (polled toss-ups carry less noise than the office default).
+
+**District demographics on the 2026 lines.** The ACS publishes districts on 119th-Congress lines only. `scripts/build-cd-demographics-2026-lines.py` re-aggregates ACS 2020–24 tracts (internal-point assignment) onto the 2026 map for the 10 redrawn states → `data-entry/demographics_cd_2026_lines.csv`; `generate-demographics-data.py` overlays the 143 redrawn districts (`TRACT_ESTIMATED_DISTRICTS`), keeps the published figure for the 38 a redraw left alone, and the district page footnotes the estimate. Check on those 38: shares within 0.1–0.2 pts on average (max 1.3), median income ≈ $400. Redrawn districts can only use the site's simplified drawing file, which is looser (0.2–0.3 avg, max 2.3 on the same check); `pop_dev_pct` flags the worst (CA-48/CA-50 ≈ ±10%).

@@ -38,6 +38,9 @@ export interface RaceModelInputs {
 }
 
 // ── Global TPL model constants (shared across all states) ───────────────────
+// Documented on /methodology/state-tpl (and district-tpl for BS_WEIGHT_K), which reads these values
+// live. A NEW key must be added to DOCUMENTED_IN in components/methodology/TplMethodology.tsx (the
+// type-check fails otherwise), and any change gets an entry in data/methodologyChangelog.ts.
 
 // Years covered by the state/county TPL aggregation (odd years included since the
 // Phase 3 rebuild — VA/NJ/KY/LA/MS odd-year governor races are first-class).
@@ -294,10 +297,18 @@ export const STATE_RACE_INPUTS: Record<string, RaceModelInputs[]> = {
 // RACE_SIGMA: per-office race-level error (pts) beyond the shared national shock —
 //   robust within-year spread from scripts/forwardBacktest.ts (see its "recommended
 //   constants" block; re-run after any model change).
+// Documented on /methodology, which reads these values live. A NEW key must be added to
+// DOCUMENTED_IN in components/methodology/ForecastMethodology.tsx (the type-check fails otherwise);
+// any change gets an entry in data/methodologyChangelog.ts, and `npx tsx scripts/forwardBacktest.ts
+// --env struct --emit` regenerates the page's Calibration tables.
 export const FORECAST_CONSTANTS = {
   ENV_MISS_SHRINK: 0.5,
   ENV_DAYS_MID_SEPT_TO_ELECTION: 49,
   RACE_SIGMA: { H: 5.3, S: 6.0, G: 9.4 } as Record<"H" | "S" | "G", number>, // forwardBacktest 2026-09-16 (env=struct + quality, robust within-year)
+  // 2026-09-20, after the residual money basis: the robust within-year spread fell to
+  // H 5.0 / S 4.9 / G 9.0, but those values under-cover (80% interval: S 74% · H 77%) and the
+  // harness scores with full-cycle receipts, a mild optimism. The values above cover
+  // S 83% · G 81% · H 79%, so they stay.
   // Multiplier on the nominees' ridge track-record effects (effect_R − effect_D) in the
   // forward model, per office. forwardBacktest --quality (2026-09-16, leakage-free
   // sweep): House error bottoms near 0.75, Senate at 1.0, Governor keeps improving past
@@ -316,6 +327,38 @@ export const FORECAST_CONSTANTS = {
   // these features — see buildObservablePrior in lib/tplCompute.ts. Empty = off.
   // Candidates: legislator · federalStatewide · local · priorWin.
   OBSERVABLE_PRIOR_FEATURES: [] as string[],
+  // ── Money (Phase 6 of the forecast revamp, 2026-09-20) ──────────────────────────────
+  // The forward money term — and the expected margins behind the candidate effects — read
+  // the RESIDUAL gap: receipts gap% minus the gap a generic pair in this situation would
+  // have (getWarMoneyModel: gap% ~ 1 + incSign + pre-money margin, per office).
+  //   pts = clamp(MONEY_K × (PARTIAL_CYCLE_GAP_SCALE × gap% − structural gap%), ±MONEY_CAP)
+  // The structural part is a function of lean and incumbency, which the model already
+  // carries; only the part beyond it is information. forwardBacktest --money (env=struct,
+  // pooled 2018–24, Senate / Governor / House MAE):
+  //   raw gap, k .02 cap 2 (old rule)            5.61 / 9.20 / 4.81
+  //   no money at all                            5.71 / 9.37 / 4.76   (raw House money HURT)
+  //   structural gap imputed for every race      5.93 / 9.50 / 4.94   ("impute, never zero" fails)
+  //   residual gap, k .02 cap 2                  5.41 / 9.08 / 4.65   (better in every year × office)
+  //   residual gap, the constants below          5.04 / 8.91 / 4.59
+  // A race with a side's receipts unknown therefore scores 0 — which now MEANS "the typical
+  // gap for this situation", not "no money": the 15 Governor races without state filings
+  // need no separate imputation. The backward TPL strip is unchanged (FF_K / FF_MAX, raw gap).
+  // k / cap: Senate keeps improving to the sweep edge (k .08 cap 6 → 4.94) and the September
+  // snapshot agrees (below); kept one step inside. House is flat across k .04–.06 (4.57–4.59).
+  // Governor has no September snapshot to confirm on, so it takes the conservative pair.
+  MONEY_BASIS: "residual" as "raw" | "residual",
+  MONEY_K: { H: 0.04, S: 0.06, G: 0.04 } as Record<"H" | "S" | "G", number>,
+  MONEY_CAP: { H: 3, S: 4, G: 3 } as Record<"H" | "S" | "G", number>,
+  // Partial-cycle scaling. The live cycle's receipts are a mid-September snapshot; every
+  // past cycle on file is full-cycle. scripts/fetch-fec-september-snapshot.py rebuilt the
+  // snapshot for 2022 and 2024 from FEC report summaries (1,744 nominees; the full-cycle sum
+  // of the same reports matches weball within 2% for 1,645 of 1,675): the trailing side
+  // closes part of the gap late, gap_final = 0.91 × gap_sept (Senate, n 63, R² .96) and
+  // 0.90 × (House, n 380, R² .94). forwardBacktest --sept-money, residual basis, 2022+24:
+  // House 4.49 (September × 1) vs 4.45 (× 0.9) vs 4.39 (full-cycle receipts) vs 4.59 (none);
+  // Senate 4.27 vs 4.25 vs 4.28 vs 4.98. Governor receipts (state filings) have no
+  // per-report history on file; the House/Senate value is borrowed.
+  PARTIAL_CYCLE_GAP_SCALE: { H: 0.9, S: 0.9, G: 0.9 } as Record<"H" | "S" | "G", number>,
   // Race polling (Phase 5): the poll average's share of the final margin is
   //   w = nEff / (nEff + POLL_K[office]),  nEff = effective poll count (lib/racePollAverage.ts)
   // scripts/forwardBacktest.ts --polls (2026-09-16, 677 polled race-years 2018–24, k by
@@ -331,4 +374,52 @@ export const FORECAST_CONSTANTS = {
   // spread is (1 − w)² × RACE_SIGMA² + w² × POLL_SIGMA² on top of the national shock, which
   // reproduces the measured blend rsd (S 4.3 · G 5.8 · H 4.0) to within 0.2.
   POLL_SIGMA: { H: 6.4, S: 5.5, G: 6.8 } as Record<"H" | "S" | "G", number>,
+  // Poll aging: each race poll is moved by POLL_AGING_SHARE × β*(state) × (generic ballot
+  // now − generic ballot on the poll's end date) before it is averaged. 1 = a race moves
+  // point-for-point (through β*) with the national ballot; 0 = polls are never aged.
+  // scripts/forwardBacktest.ts --polls (2026-09-21, generic ballot as of each poll date from
+  // the 538 archive): the mean shift is small (0.4–1.2 pts) because old polls carry little
+  // weight; the poll average alone improves up to share ≈ 1 for Senate (6.64 → 6.60) and
+  // House (5.11 → 5.03) and is flat for Governor; the blend moves by < 0.05 at any share.
+  // So the data do not reject point-for-point and 1 is kept as the principled value.
+  POLL_AGING_SHARE: 1,
+  // House effects (lib/pollsterHouseEffects.ts): each race poll is read net of its pollster's
+  // current-cycle lean relative to the other pollsters in the races they share, shrunk with
+  // HOUSE_EFFECT_K pseudo-polls toward 0 (toward ±HOUSE_EFFECT_PARTISAN_PRIOR for a party or
+  // campaign poll), from polls of the last HOUSE_EFFECT_WINDOW_DAYS days.
+  // scripts/forwardBacktest.ts --pollsters (2026-09-21, 677 polled race-years 2018–24, house
+  // effects from each cycle's own polls up to the as-of date): the poll average alone improves
+  // at every horizon — Senate 6.64 → 6.27 (mid-Sept) / 6.02 → 5.82 (Nov 1), House 5.11 → 4.75 /
+  // 5.13 → 4.59, Governor 5.37 → 5.19 (Nov 1) — and the blend gains in the Senate (4.57 → 4.52,
+  // 4.46 → 4.34, 4.50 → 4.41) and is within ±0.07 for Governor and House (the House model's own
+  // R-ward bias was being offset by un-adjusted Democratic internals). k 1–5 and windows of
+  // 120–300 days are within 0.03 of each other. Rejected by the same run: weighting polls by
+  // the pollster's historical accuracy rating (no gain at any strength — past accuracy does not
+  // persist, see /analysis/pollsters), the historical house effect carried over from earlier
+  // cycles (no gain; the within-cycle lean supersedes it), and a fixed partisan-poll prior
+  // (helps the House poll average, hurts its blend). HOUSE_EFFECT_CAP bounds any one lean:
+  // two pollsters 30 pts apart in a single race (a three-way question against a head-to-head,
+  // ID-Sen 2026) is not a house effect; capping at 5 is neutral in the backtest (±0.02).
+  HOUSE_EFFECTS: true,
+  HOUSE_EFFECT_K: 2,
+  HOUSE_EFFECT_WINDOW_DAYS: 200,
+  HOUSE_EFFECT_PARTISAN_PRIOR: 0,
+  HOUSE_EFFECT_CAP: 5,
+  // Demographic swing (Phase 7): a zero-mean shock shared by demographically similar races in
+  // the chamber simulation — sd of the per-cycle slope, in pts of margin per 10 pts of the
+  // share (nonwhite = 100 − White alone, not Hispanic; college = adults 25+ with a BA).
+  // Evidence (2026-09-21, forwardBacktest --dump residuals joined to the ACS shares): House
+  // forward residuals tilt with nonwhite share by +1.3 (2022) and +1.6 (2024) per 10 pts, net
+  // of lean and in competitive seats too; college ≈ 0 (−0.7, 0.0). It is a SHOCK, not a trend:
+  // the county presidential swing slope on nonwhite share ran −1.2, −2.6, +0.8, +1.2 over
+  // 2008→2024, and the 2025 NJ/VA Governor results reversed 2024's (−2.6, −1.4). So the mean
+  // projection carries no demographic term (carrying 2022's slope into 2024 would have cut
+  // House MAE 4.72 → 4.55, but 2025 contradicts the extrapolation). nonwhite 1.5 = rms of the
+  // two House residual slopes; college 1.0 sits between the 0.5 those residuals show and the
+  // 3.0 rms of county presidential swings (2012→16 alone was −5.5). Each race's TOTAL spread is
+  // unchanged — the shock is carved out of its race-level noise — so win probabilities do not
+  // move; only how seats move together does (House 80% seat range 215–233 → 214–234, P(D control)
+  // 79% → 77%; Senate unchanged). Loadings are centered on the 435 districts / 50 states, not the
+  // nation: σ_E is the mean miss across those races, so it already holds the average effect.
+  DEMOGRAPHIC_SHOCK: { nonwhite: 1.5, college: 1.0 },
 };

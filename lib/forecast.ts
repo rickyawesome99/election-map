@@ -12,9 +12,13 @@
 //   rating      Safe/Likely/Lean/Tilt bucket of the margin (marginToRating)
 //
 // Chamber totals come from a seeded simulation that draws ONE national shock per
-// run (shared through each state's β*) plus independent race noise, so the seat
-// intervals and control probabilities carry the correlation a sum of independent
-// probabilities would miss.
+// run (shared through each state's β*), one shock per demographic axis (shared in
+// proportion to how far a race's electorate sits from the average one) and independent
+// race noise, so the seat intervals and control probabilities carry the correlation
+// a sum of independent probabilities would miss.
+//
+// Specification: /methodology (components/methodology/ForecastMethodology.tsx). A change to how
+// anything here is calculated updates that tab and adds an entry to data/methodologyChangelog.ts.
 
 import {
   senateData,
@@ -28,6 +32,7 @@ import { FORECAST_CONSTANTS as F } from "@/data/tplModelData";
 import { projectRace, raceSigma, winProbabilityD, getTplFit, getNationalEnvironment } from "@/lib/tplCompute";
 import { marginToRating } from "@/lib/colorScale";
 import { alignedParty } from "@/data/raceEligibility";
+import { districtDemographics, stateDemographics, type Demographics } from "@/data/demographics";
 
 export type Office = "H" | "S" | "G";
 const OFFICE_OF: Record<RaceType, Office> = { house: "H", senate: "S", governor: "G" };
@@ -175,6 +180,7 @@ export interface ChamberSimulation {
   lo80: number; // 10th percentile of Democratic seats
   hi80: number; // 90th percentile
   pDemControl: number | null; // null where "control" has no meaning (governors)
+  controlThreshold: number | null; // Democratic seats needed for control (null for governors)
   histogram: Record<number, number>; // Democratic seats → share of simulations
 }
 
@@ -194,17 +200,66 @@ function gaussian(rand: () => number): number {
   return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
 }
 
+// A race's electorate against the average electorate of its kind (the 435 districts for a
+// House race, the 50 states for a statewide one), in units of 10 pts of the share — what the
+// demographic shocks load on. Centered on the races' own geography, not the nation, because
+// the national shock σ_E is measured as the year's mean miss ACROSS those races: whatever a
+// demographic swing does to the average district or state is already inside it. House races
+// read their district (tract-estimated on the 2026 lines where the state redrew); no data →
+// no loading.
+const meanOf = (xs: (number | undefined)[]) => { const v = xs.filter((x): x is number => x != null); return v.length ? v.reduce((a, b) => a + b, 0) / v.length : 0; };
+let demographicCenters: Record<"district" | "state", { white: number; college: number }> | null = null;
+function getDemographicCenters() {
+  if (!demographicCenters) {
+    const districts = houseData.map((r) => districtDemographics[r.id]);
+    const states = statesData.map((st) => stateDemographics[st.abbr]);
+    demographicCenters = {
+      district: { white: meanOf(districts.map((d) => d?.whitePct)), college: meanOf(districts.map((d) => d?.collegePct)) },
+      state: { white: meanOf(states.map((d) => d?.whitePct)), college: meanOf(states.map((d) => d?.collegePct)) },
+    };
+  }
+  return demographicCenters;
+}
+function demographicLoading(r: ForecastedRace): { nonwhite: number; college: number } {
+  const house = r.raceType === "house";
+  const d: Demographics | undefined = house ? districtDemographics[r.id] : stateDemographics[r.stateAbbr];
+  const c = getDemographicCenters()[house ? "district" : "state"];
+  return {
+    nonwhite: d?.whitePct != null ? (c.white - d.whitePct) / 10 : 0,
+    college: d?.collegePct != null ? (d.collegePct - c.college) / 10 : 0,
+  };
+}
+
+// Least share of a race's own noise left once the demographic shock is carved out of it
+// (only binds in electorates ~40+ pts from the average, all of them safe seats).
+const MIN_IDIOSYNCRATIC_SHARE = 0.5;
+
 export function simulateChamber(raceType: RaceType, races: ForecastedRace[] = forecastsFor(raceType), sims = 5000, seed = 20261103): ChamberSimulation {
   const rand = mulberry32(seed);
   const sigmaE = getNationalEnvironment().sigmaE;
   const holdover = SEAT_HOLDOVERS[raceType].dem;
   const counts = new Array<number>(sims);
+  // Per race: the demographic loadings, and the noise left to the race itself. The race-level
+  // spread is the one behind its win probability (raceSigma minus the national component: the
+  // model/poll blend), and the demographic shock is carved OUT of it, so a race's total spread
+  // — and its probability — is the same with or without the shock; only the co-movement changes.
+  const shock = F.DEMOGRAPHIC_SHOCK;
+  const parts = races.map((r) => {
+    const load = demographicLoading(r);
+    const raceVar = r.sigma ** 2 - (r.beta * sigmaE) ** 2;
+    const demoVar = (load.nonwhite * shock.nonwhite) ** 2 + (load.college * shock.college) ** 2;
+    return { load, idio: Math.sqrt(Math.max(MIN_IDIOSYNCRATIC_SHARE ** 2 * raceVar, raceVar - demoVar)) };
+  });
   for (let k = 0; k < sims; k += 1) {
     const z = gaussian(rand) * sigmaE;
+    const zNonwhite = gaussian(rand) * shock.nonwhite;
+    const zCollege = gaussian(rand) * shock.college;
     let dem = holdover;
-    for (const r of races) {
+    for (let i = 0; i < races.length; i += 1) {
+      const r = races[i];
       if (r.contest !== "contested") { if (decidedFor(r.contest) === "D") dem += 1; continue; }
-      const m = r.margin + r.beta * z + gaussian(rand) * F.RACE_SIGMA[r.office];
+      const { load, idio } = parts[i];
+      const m = r.margin + r.beta * z + load.nonwhite * zNonwhite + load.college * zCollege + gaussian(rand) * idio;
       if (m <= 0) dem += 1;
     }
     counts[k] = dem;
@@ -221,6 +276,7 @@ export function simulateChamber(raceType: RaceType, races: ForecastedRace[] = fo
     lo80: q(0.1),
     hi80: q(0.9),
     pDemControl: threshold == null ? null : counts.filter((c) => c >= threshold).length / sims,
+    controlThreshold: threshold ?? null,
     histogram,
   };
 }

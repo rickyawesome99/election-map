@@ -606,7 +606,7 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 2103,KY-03,KY,Kentucky,2018,John Yarmuth,Vickie Yates Glisson,D,62.07,36.57,-25.5,173002,101930,-71072,278720,,
 2104,KY-04,KY,Kentucky,2018,Seth Hall,Thomas Massie,R,34.58,62.24,27.66,90536,162946,72410,261812,,
 2105,KY-05,KY,Kentucky,2018,Kenneth Stepp,Harold Rogers,R,21.05,78.94,57.89,45890,172093,126203,218017,,
-2106,KY-06,KY,Kentucky,2018,Amy McGrath,Andy Barr,None,47.79,51,3.21,144736,154468,9732,302888,,
+2106,KY-06,KY,Kentucky,2018,Amy McGrath,Andy Barr,R,47.79,51,3.21,144736,154468,9732,302888,,
 2201,LA-01,LA,Louisiana,2018,Tammy Savoie,Steve Scalise,R,16.44,71.5,55.06,44273,192555,148282,269325,,
 2202,LA-02,LA,Louisiana,2018,Cedric Richmond,Jesse Schmidt (I),D,80.59,8.67,-71.92,190182,20465,-169717,235982,,
 2203,LA-03,LA,Louisiana,2018,Mimi Methvin,Clay Higgins,R,17.78,55.65,37.87,43729,136876,93147,245943,,
@@ -758,24 +758,24 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 4103,OR-03,OR,Oregon,2018,Earl Blumenauer,Tom Harrison,D,72.7,19.85,-52.85,279019,76187,-202832,383812,,
 4104,OR-04,OR,Oregon,2018,Peter DeFazio,Art Robinson,D,56.04,40.92,-15.12,208710,152414,-56296,372450,,
 4105,OR-05,OR,Oregon,2018,Kurt Schrader,Mark Callahan,D,55.09,41.88,-13.21,197187,149887,-47300,357930,,
-4201,PA-01,PA,Pennsylvania,2018,Scott Wallace,Brian Fitzpatrick,None,48.74,51.26,2.52,160745,169053,8308,329798,,Y (Old 8th District)
-4202,PA-02,PA,Pennsylvania,2018,Brendan Boyle,David Torres,None,79.02,20.98,-58.04,159600,42382,-117218,201982,Y (Old 13th District),
-4203,PA-03,PA,Pennsylvania,2018,Dwight Evans,Bryan Leib,None,93.38,6.62,-86.76,287610,20387,-267223,307997,Y (Old 2nd District),
+4201,PA-01,PA,Pennsylvania,2018,Scott Wallace,Brian Fitzpatrick,R,48.74,51.26,2.52,160745,169053,8308,329798,,Y (Old 8th District)
+4202,PA-02,PA,Pennsylvania,2018,Brendan Boyle,David Torres,D,79.02,20.98,-58.04,159600,42382,-117218,201982,Y (Old 13th District),
+4203,PA-03,PA,Pennsylvania,2018,Dwight Evans,Bryan Leib,D,93.38,6.62,-86.76,287610,20387,-267223,307997,Y (Old 2nd District),
 4204,PA-04,PA,Pennsylvania,2018,Madeleine Dean,Daniel David,None,63.52,36.48,-27.04,211524,121467,-90057,332991,,
 4205,PA-05,PA,Pennsylvania,2018,Mary Gay Scanlon,Pearl Kim,None,65.19,34.81,-30.38,198639,106075,-92564,304714,,
 4206,PA-06,PA,Pennsylvania,2018,Chrissy Houlahan,Greg McCauley,None,58.88,41.12,-17.76,177704,124124,-53580,301828,,
 4207,PA-07,PA,Pennsylvania,2018,Susan Ellis Wild,Marty Nothstein,None,53.49,43.47,-10.02,140813,114437,-26376,263261,,
-4208,PA-08,PA,Pennsylvania,2018,Matt Cartwright,John Chrin,None,54.64,45.36,-9.28,135603,112563,-23040,248166,Y (Old 17th District),
+4208,PA-08,PA,Pennsylvania,2018,Matt Cartwright,John Chrin,D,54.64,45.36,-9.28,135603,112563,-23040,248166,Y (Old 17th District),
 4209,PA-09,PA,Pennsylvania,2018,Denny Wolff,Dan Meuser,None,40.25,59.75,19.5,100204,148723,48519,248927,,
-4210,PA-10,PA,Pennsylvania,2018,George Scott,Scott Perry,None,48.68,51.32,2.64,141668,149365,7697,291033,,Y (Old 4th District)
-4211,PA-11,PA,Pennsylvania,2018,Jessica King,Lloyd Smucker,None,41.02,58.98,17.96,113876,163708,49832,277584,,Y (Old 16th District)
-4212,PA-12,PA,Pennsylvania,2018,Marc Friedenberg,Tom Marino,None,33.96,66.04,32.08,82825,161047,78222,243872,,Y (Old 10th District)
+4210,PA-10,PA,Pennsylvania,2018,George Scott,Scott Perry,R,48.68,51.32,2.64,141668,149365,7697,291033,,Y (Old 4th District)
+4211,PA-11,PA,Pennsylvania,2018,Jessica King,Lloyd Smucker,R,41.02,58.98,17.96,113876,163708,49832,277584,,Y (Old 16th District)
+4212,PA-12,PA,Pennsylvania,2018,Marc Friedenberg,Tom Marino,R,33.96,66.04,32.08,82825,161047,78222,243872,,Y (Old 10th District)
 4213,PA-13,PA,Pennsylvania,2018,Brent Ottaway,John Joyce,None,29.51,70.49,40.98,74733,178533,103800,253266,,
 4214,PA-14,PA,Pennsylvania,2018,Bibiana Boerio,Guy Reschenthaler,None,42.09,57.91,15.82,110051,151386,41335,261437,,
-4215,PA-15,PA,Pennsylvania,2018,Susan Boser,Glenn Thompson,None,32.16,67.84,35.68,78327,165245,86918,243572,,Y (Old 5th District)
-4216,PA-16,PA,Pennsylvania,2018,Ron DiNicola,Mike Kelly,None,47.3,51.58,4.28,124109,135348,11239,262396,,Y (Old 3rd District)
-4217,PA-17,PA,Pennsylvania,2018,Conor Lamb,Keith Rothfus,None,56.26,43.74,-12.52,183162,142417,-40745,325579,Y (Old 18th District),Y (Old 12th District)
-4218,PA-18,PA,Pennsylvania,2018,Michael Doyle,,None,100,0,-100,231472,0,-231472,231472,Y (Old 14th District),
+4215,PA-15,PA,Pennsylvania,2018,Susan Boser,Glenn Thompson,R,32.16,67.84,35.68,78327,165245,86918,243572,,Y (Old 5th District)
+4216,PA-16,PA,Pennsylvania,2018,Ron DiNicola,Mike Kelly,R,47.3,51.58,4.28,124109,135348,11239,262396,,Y (Old 3rd District)
+4217,PA-17,PA,Pennsylvania,2018,Conor Lamb,Keith Rothfus,R,56.26,43.74,-12.52,183162,142417,-40745,325579,Y (Old 18th District),Y (Old 12th District)
+4218,PA-18,PA,Pennsylvania,2018,Michael Doyle,,D,100,0,-100,231472,0,-231472,231472,Y (Old 14th District),
 4401,RI-01,RI,Rhode Island,2018,David Cicilline,Patrick Donovan,D,66.69,33.07,-33.62,116099,57567,-58532,174083,,
 4402,RI-02,RI,Rhode Island,2018,James Langevin,Salvatore Caiozzo,D,63.49,36.28,-27.21,126476,72271,-54205,199197,,
 4501,SC-01,SC,South Carolina,2018,Joe Cunningham,Katie Arrington,None,50.6,49.22,-1.38,145455,141473,-3982,287433,,
@@ -1041,7 +1041,7 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 2103,KY-03,KY,Kentucky,2020,John Yarmuth,Rhonda Palazzo,D,62.67,37.33,-25.34,230672,137425,-93247,368097,,
 2104,KY-04,KY,Kentucky,2020,Alexandra Owensby,Thomas Massie,R,32.91,67.09,34.18,125896,256613,130717,382509,,
 2105,KY-05,KY,Kentucky,2020,Matthew Ryan Best,Harold Rogers,R,15.79,84.21,68.42,47056,250914,203858,297970,,
-2106,KY-06,KY,Kentucky,2020,Josh Hicks,Andy Barr,None,40.96,57.33,16.37,155011,216948,61937,378450,,
+2106,KY-06,KY,Kentucky,2020,Josh Hicks,Andy Barr,R,40.96,57.33,16.37,155011,216948,61937,378450,,
 2201,LA-01,LA,Louisiana,2020,Lee Ann Dugas,Steve Scalise,R,25.3,72.21,46.91,94730,270330,175600,374369,,
 2202,LA-02,LA,Louisiana,2020,Cedric Richmond,David Schilling,D,63.61,15.01,-48.6,201636,47575,-154061,316982,,
 2203,LA-03,LA,Louisiana,2020,Braylon Harris,Clay Higgins,R,17.89,67.76,49.87,60852,230480,169628,340120,,
@@ -1196,7 +1196,7 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 4201,PA-01,PA,Pennsylvania,2020,Christina Finello,Brian Fitzpatrick,R,43.44,56.56,13.12,191875,249804,57929,441679,,
 4202,PA-02,PA,Pennsylvania,2020,Brendan Boyle,David Torres,D,72.54,27.46,-45.08,198140,75022,-123118,273162,,
 4203,PA-03,PA,Pennsylvania,2020,Dwight Evans,Michael Harvey,D,91.03,8.97,-82.06,341708,33671,-308037,375379,,
-4204,PA-04,PA,Pennsylvania,2020,Madeleine Dean,Kathy Barnette,None,59.53,40.47,-19.06,264637,179926,-84711,444563,,
+4204,PA-04,PA,Pennsylvania,2020,Madeleine Dean,Kathy Barnette,D,59.53,40.47,-19.06,264637,179926,-84711,444563,,
 4205,PA-05,PA,Pennsylvania,2020,Mary Gay Scanlon,Dasha Pruett,D,64.7,35.3,-29.4,255743,139552,-116191,395295,,
 4206,PA-06,PA,Pennsylvania,2020,Chrissy Houlahan,John William Emmons,D,56.05,43.95,-12.1,226440,177526,-48914,403966,,
 4207,PA-07,PA,Pennsylvania,2020,Susan Ellis Wild,Lisa Scheller,D,51.87,48.13,-3.74,195475,181407,-14068,376882,,
@@ -1316,67 +1316,67 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 502,AR-02,AR,Arkansas,2022,Quintessa Hathaway,French Hill,R,35.26,60.04,24.78,86887,147975,61088,246446,,
 503,AR-03,AR,Arkansas,2022,Lauren Mallett-Hays,Steve Womack,R,32.89,63.69,30.8,73541,142401,68860,223588,,
 504,AR-04,AR,Arkansas,2022,John White,Bruce Westerman,R,26.19,71,44.81,56745,153850,97105,216696,,
-401,AZ-01,AZ,Arizona,2022,Jevin Hodge,David Schweikert,None,49.56,50.44,0.88,179141,182336,3195,361477,,Y (Old 6th District)
-402,AZ-02,AZ,Arizona,2022,Tom O'Halleran,Eli Crane,None,46.12,53.86,7.74,149151,174169,25018,323396,Y (Old 1st District),
-403,AZ-03,AZ,Arizona,2022,Ruben Gallego,Jeff Zink,None,76.98,23.02,-53.96,108599,32475,-76124,141074,Y (Old 7th District),
-404,AZ-04,AZ,Arizona,2022,Greg Stanton,Kelly Cooper,None,56.1,43.89,-12.21,148941,116521,-32420,265498,Y (Old 9th District),
+401,AZ-01,AZ,Arizona,2022,Jevin Hodge,David Schweikert,R,49.56,50.44,0.88,179141,182336,3195,361477,,Y (Old 6th District)
+402,AZ-02,AZ,Arizona,2022,Tom O'Halleran,Eli Crane,D,46.12,53.86,7.74,149151,174169,25018,323396,Y (Old 1st District),
+403,AZ-03,AZ,Arizona,2022,Ruben Gallego,Jeff Zink,D,76.98,23.02,-53.96,108599,32475,-76124,141074,Y (Old 7th District),
+404,AZ-04,AZ,Arizona,2022,Greg Stanton,Kelly Cooper,D,56.1,43.89,-12.21,148941,116521,-32420,265498,Y (Old 9th District),
 405,AZ-05,AZ,Arizona,2022,Javier Ramos,Andy Biggs,R,37.39,56.74,19.35,120243,182464,62221,321590,,
 406,AZ-06,AZ,Arizona,2022,Kirsten Engel,Juan Ciscomani,None,49.23,50.73,1.5,171969,177201,5232,349283,,
-407,AZ-07,AZ,Arizona,2022,Raúl Grijalva,Luis Pozzolo,None,64.54,35.46,-29.08,126418,69444,-56974,195862,Y (Old 3rd District),
+407,AZ-07,AZ,Arizona,2022,Raúl Grijalva,Luis Pozzolo,D,64.54,35.46,-29.08,126418,69444,-56974,195862,Y (Old 3rd District),
 408,AZ-08,AZ,Arizona,2022,Jeremy Spreitzer,Debbie Lesko,R,2.51,96.5,93.99,5145,197555,192410,204713,,
-409,AZ-09,AZ,Arizona,2022,Richard Grayson,Paul Gosar,None,1.79,97.77,95.98,3531,192796,189265,197185,,Y (Old 4th District)
+409,AZ-09,AZ,Arizona,2022,Richard Grayson,Paul Gosar,R,1.79,97.77,95.98,3531,192796,189265,197185,,Y (Old 4th District)
 601,CA-01,CA,California,2022,Max Steiner,Doug LaMalfa,R,37.93,62.07,24.14,93386,152839,59453,246225,,
 602,CA-02,CA,California,2022,Jared Huffman,Douglas Brower,D,74.4,25.6,-48.8,229720,79029,-150691,308749,,
 603,CA-03,CA,California,2022,Kermit Jones,Kevin Kiley,None,46.35,53.65,7.3,156761,181438,24677,338199,,
-604,CA-04,CA,California,2022,Mike Thompson,Matt Brock,None,67.8,32.2,-35.6,176900,84007,-92893,260907,Y (Old 5th District),
-605,CA-05,CA,California,2022,Mike Barkley,Tom McClintock,None,38.69,61.31,22.62,109506,173524,64018,283030,,Y (Old 4th District)
-606,CA-06,CA,California,2022,Ami Bera,Tamika Hamilton,None,55.95,44.05,-11.9,121058,95325,-25733,216383,Y (Old 7th District),
-607,CA-07,CA,California,2022,Doris Matsui,Max Semenenko,None,68.26,31.74,-36.52,150618,70033,-80585,220651,Y (Old 6th District),
-608,CA-08,CA,California,2022,John Garamendi,Rudy Recile,None,75.73,24.27,-51.46,145501,46634,-98867,192135,Y (Old 3rd District),
-609,CA-09,CA,California,2022,Josh Harder,Tom Patti,None,54.82,45.18,-9.64,95598,78802,-16796,174400,Y (Old 10th District),
-610,CA-10,CA,California,2022,Mark DeSaulnier,Michael Ernest Kerr (I),None,78.93,21.07,-57.86,198415,52965,-145450,251380,Y (Old 11th District),
-611,CA-11,CA,California,2022,Nancy Pelosi,John Dennis,None,83.95,16.05,-67.9,220848,42217,-178631,263065,Y (Old 12th District),
-612,CA-12,CA,California,2022,Barbara Lee,Stephen Slauson,None,90.47,9.53,-80.94,217110,22859,-194251,239969,Y (Old 13th District),
+604,CA-04,CA,California,2022,Mike Thompson,Matt Brock,D,67.8,32.2,-35.6,176900,84007,-92893,260907,Y (Old 5th District),
+605,CA-05,CA,California,2022,Mike Barkley,Tom McClintock,R,38.69,61.31,22.62,109506,173524,64018,283030,,Y (Old 4th District)
+606,CA-06,CA,California,2022,Ami Bera,Tamika Hamilton,D,55.95,44.05,-11.9,121058,95325,-25733,216383,Y (Old 7th District),
+607,CA-07,CA,California,2022,Doris Matsui,Max Semenenko,D,68.26,31.74,-36.52,150618,70033,-80585,220651,Y (Old 6th District),
+608,CA-08,CA,California,2022,John Garamendi,Rudy Recile,D,75.73,24.27,-51.46,145501,46634,-98867,192135,Y (Old 3rd District),
+609,CA-09,CA,California,2022,Josh Harder,Tom Patti,D,54.82,45.18,-9.64,95598,78802,-16796,174400,Y (Old 10th District),
+610,CA-10,CA,California,2022,Mark DeSaulnier,Michael Ernest Kerr (I),D,78.93,21.07,-57.86,198415,52965,-145450,251380,Y (Old 11th District),
+611,CA-11,CA,California,2022,Nancy Pelosi,John Dennis,D,83.95,16.05,-67.9,220848,42217,-178631,263065,Y (Old 12th District),
+612,CA-12,CA,California,2022,Barbara Lee,Stephen Slauson,D,90.47,9.53,-80.94,217110,22859,-194251,239969,Y (Old 13th District),
 613,CA-13,CA,California,2022,Adam Gray,John Duarte,None,49.79,50.21,0.42,66496,67060,564,133556,,
-614,CA-14,CA,California,2022,Eric Swalwell,Alison Hayden,None,69.34,30.66,-38.68,137612,60852,-76760,198464,Y (Old 15th District),
+614,CA-14,CA,California,2022,Eric Swalwell,Alison Hayden,D,69.34,30.66,-38.68,137612,60852,-76760,198464,Y (Old 15th District),
 615,CA-15,CA,California,2022,Kevin Mullin,David Canepa (D),None,55.46,44.54,-10.92,108077,86797,-21280,194874,,
-616,CA-16,CA,California,2022,Anna Eshoo,Rishi Kumar (D),None,57.77,42.23,-15.54,139235,101772,-37463,241007,Y (Old 18th District),
+616,CA-16,CA,California,2022,Anna Eshoo,Rishi Kumar (D),D,57.77,42.23,-15.54,139235,101772,-37463,241007,Y (Old 18th District),
 617,CA-17,CA,California,2022,Ro Khanna,Ritesh Tandon,D,70.93,29.07,-41.86,127853,52400,-75453,180253,,
-618,CA-18,CA,California,2022,Zoe Lofgren,Peter Hernandez,None,65.85,34.15,-31.7,99776,51737,-48039,151513,Y (Old 19th District),
-619,CA-19,CA,California,2022,Jimmy Panetta,Jeff Gorman,None,68.65,31.35,-37.3,194494,88816,-105678,283310,Y (Old 20th District),
-620,CA-20,CA,California,2022,Marisa Wood,Kevin McCarthy,None,32.75,67.25,34.5,74934,153847,78913,228781,,Y (Old 23rd District)
-621,CA-21,CA,California,2022,Jim Costa,Michael Maher,None,54.18,45.82,-8.36,68074,57573,-10501,125647,Y (Old 16th District),
-622,CA-22,CA,California,2022,Rudy Salas,David Valadao,None,48.48,51.52,3.04,49862,52994,3132,102856,,Y (Old 21st District)
-623,CA-23,CA,California,2022,Derek Marshall,Jay Obernolte,None,38.97,61.03,22.06,65908,103197,37289,169105,,Y (Old 8th District)
+618,CA-18,CA,California,2022,Zoe Lofgren,Peter Hernandez,D,65.85,34.15,-31.7,99776,51737,-48039,151513,Y (Old 19th District),
+619,CA-19,CA,California,2022,Jimmy Panetta,Jeff Gorman,D,68.65,31.35,-37.3,194494,88816,-105678,283310,Y (Old 20th District),
+620,CA-20,CA,California,2022,Marisa Wood,Kevin McCarthy,R,32.75,67.25,34.5,74934,153847,78913,228781,,Y (Old 23rd District)
+621,CA-21,CA,California,2022,Jim Costa,Michael Maher,D,54.18,45.82,-8.36,68074,57573,-10501,125647,Y (Old 16th District),
+622,CA-22,CA,California,2022,Rudy Salas,David Valadao,R,48.48,51.52,3.04,49862,52994,3132,102856,,Y (Old 21st District)
+623,CA-23,CA,California,2022,Derek Marshall,Jay Obernolte,R,38.97,61.03,22.06,65908,103197,37289,169105,,Y (Old 8th District)
 624,CA-24,CA,California,2022,Salud Carbajal,Brad Allen,D,60.57,39.43,-21.14,159019,103533,-55486,262552,,
-625,CA-25,CA,California,2022,Raul Ruiz,Brian Hawkins,None,57.38,42.62,-14.76,87641,65101,-22540,152742,Y (Old 36th District),
+625,CA-25,CA,California,2022,Raul Ruiz,Brian Hawkins,D,57.38,42.62,-14.76,87641,65101,-22540,152742,Y (Old 36th District),
 626,CA-26,CA,California,2022,Julia Brownley,Matt Jacobs,D,54.53,45.47,-9.06,134575,112214,-22361,246789,,
-627,CA-27,CA,California,2022,Christy Smith,Mike Garcia,None,46.76,53.24,6.48,91892,104624,12732,196516,,Y (Old 25th District)
-628,CA-28,CA,California,2022,Judy Chu,Wes Hallman,None,66.24,33.76,-32.48,150062,76495,-73567,226557,Y (Old 27th District),
+627,CA-27,CA,California,2022,Christy Smith,Mike Garcia,R,46.76,53.24,6.48,91892,104624,12732,196516,,Y (Old 25th District)
+628,CA-28,CA,California,2022,Judy Chu,Wes Hallman,D,66.24,33.76,-32.48,150062,76495,-73567,226557,Y (Old 27th District),
 629,CA-29,CA,California,2022,Tony Cárdenas,Angélica Dueñas (D),D,58.54,41.46,-17.08,69915,49520,-20395,119435,,
-630,CA-30,CA,California,2022,Adam Schiff,Maebe A. Girl (D),None,71.11,28.89,-42.22,150100,60968,-89132,211068,Y (Old 28th District),
-631,CA-31,CA,California,2022,Grace Napolitano,Daniel Bocic Martinez,None,59.54,40.46,-19.08,91472,62153,-29319,153625,Y (Old 32nd District),
-632,CA-32,CA,California,2022,Brad Sherman,Lucie Lapointe Volotzky,None,69.17,30.83,-38.34,167411,74618,-92793,242029,Y (Old 30th District),
-633,CA-33,CA,California,2022,Pete Aguilar,John Mark Porter,None,57.71,42.29,-15.42,76588,56119,-20469,132707,Y (Old 31st District),
+630,CA-30,CA,California,2022,Adam Schiff,Maebe A. Girl (D),D,71.11,28.89,-42.22,150100,60968,-89132,211068,Y (Old 28th District),
+631,CA-31,CA,California,2022,Grace Napolitano,Daniel Bocic Martinez,D,59.54,40.46,-19.08,91472,62153,-29319,153625,Y (Old 32nd District),
+632,CA-32,CA,California,2022,Brad Sherman,Lucie Lapointe Volotzky,D,69.17,30.83,-38.34,167411,74618,-92793,242029,Y (Old 30th District),
+633,CA-33,CA,California,2022,Pete Aguilar,John Mark Porter,D,57.71,42.29,-15.42,76588,56119,-20469,132707,Y (Old 31st District),
 634,CA-34,CA,California,2022,Jimmy Gomez,David Kim (D),D,51.24,48.76,-2.48,62244,59223,-3021,121467,,
 635,CA-35,CA,California,2022,Norma Torres,Mike Cargile,D,57.36,42.64,-14.72,75121,55832,-19289,130953,,
-636,CA-36,CA,California,2022,Ted Lieu,Joe Collins,None,69.75,30.25,-39.5,194299,84264,-110035,278563,Y (Old 33rd District),
+636,CA-36,CA,California,2022,Ted Lieu,Joe Collins,D,69.75,30.25,-39.5,194299,84264,-110035,278563,Y (Old 33rd District),
 637,CA-37,CA,California,2022,Sydney Kamlager-Dove,Jan Perry (D),None,63.95,36.05,-27.90,84338,47542,-36796,131880,,
 638,CA-38,CA,California,2022,Linda Sánchez,Eric Ching,D,58.09,41.91,-16.18,101260,73051,-28209,174311,,
-639,CA-39,CA,California,2022,Mark Takano,Aja Smith,None,57.67,42.33,-15.34,75896,55701,-20195,131597,Y (Old 41st District),
-640,CA-40,CA,California,2022,Asif Mahmood,Young Kim,None,43.16,56.84,13.68,122722,161589,38867,284311,,Y (Old 39th District)
-641,CA-41,CA,California,2022,Will Rollins,Ken Calvert,None,47.65,52.35,4.7,112769,123869,11100,236638,,Y (Old 42nd District)
+639,CA-39,CA,California,2022,Mark Takano,Aja Smith,D,57.67,42.33,-15.34,75896,55701,-20195,131597,Y (Old 41st District),
+640,CA-40,CA,California,2022,Asif Mahmood,Young Kim,R,43.16,56.84,13.68,122722,161589,38867,284311,,Y (Old 39th District)
+641,CA-41,CA,California,2022,Will Rollins,Ken Calvert,R,47.65,52.35,4.7,112769,123869,11100,236638,,Y (Old 42nd District)
 642,CA-42,CA,California,2022,Robert Garcia,John Briscoe,None,68.37,31.63,-36.74,99217,45903,-53314,145120,,
 643,CA-43,CA,California,2022,Maxine Waters,Omar Navarro,D,77.33,22.67,-54.66,95462,27985,-67477,123447,,
 644,CA-44,CA,California,2022,Nanette Diaz Barragán,Paul Jones,D,72.21,27.79,-44.42,100160,38554,-61606,138714,,
-645,CA-45,CA,California,2022,Jay Chen,Michelle Steel,None,47.59,52.41,4.82,103466,113960,10494,217426,,Y (Old 48th District)
+645,CA-45,CA,California,2022,Jay Chen,Michelle Steel,R,47.59,52.41,4.82,103466,113960,10494,217426,,Y (Old 48th District)
 646,CA-46,CA,California,2022,Luis Correa,Christopher Gonzales,D,61.79,38.21,-23.58,78041,48257,-29784,126298,,
-647,CA-47,CA,California,2022,Katie Porter,Scott Baugh,None,51.72,48.28,-3.44,137374,128261,-9113,265635,Y (Old 45th District),
-648,CA-48,CA,California,2022,Stephen Houlahan,Darrell Issa,None,39.64,60.36,20.72,101900,155171,53271,257071,,Y (Old 50th District)
+647,CA-47,CA,California,2022,Katie Porter,Scott Baugh,D,51.72,48.28,-3.44,137374,128261,-9113,265635,Y (Old 45th District),
+648,CA-48,CA,California,2022,Stephen Houlahan,Darrell Issa,R,39.64,60.36,20.72,101900,155171,53271,257071,,Y (Old 50th District)
 649,CA-49,CA,California,2022,Mike Levin,Brian Maryott,D,52.63,47.37,-5.26,153541,138194,-15347,291735,,
-650,CA-50,CA,California,2022,Scott Peters,Corey Gustafson,None,62.84,37.16,-25.68,168816,99819,-68997,268635,Y (Old 52nd District),
-651,CA-51,CA,California,2022,Sara Jacobs,Stan Caplan,None,61.86,38.14,-23.72,144186,88886,-55300,233072,Y (Old 53rd District),
-652,CA-52,CA,California,2022,Juan Vargas,Tyler Geffeney,None,66.67,33.33,-33.34,100686,50330,-50356,151016,Y (Old 51st District),
+650,CA-50,CA,California,2022,Scott Peters,Corey Gustafson,D,62.84,37.16,-25.68,168816,99819,-68997,268635,Y (Old 52nd District),
+651,CA-51,CA,California,2022,Sara Jacobs,Stan Caplan,D,61.86,38.14,-23.72,144186,88886,-55300,233072,Y (Old 53rd District),
+652,CA-52,CA,California,2022,Juan Vargas,Tyler Geffeney,D,66.67,33.33,-33.34,100686,50330,-50356,151016,Y (Old 51st District),
 801,CO-01,CO,Colorado,2022,Diana DeGette,Jennifer Qualteri,D,80.3,17.53,-62.77,226929,49530,-177399,282616,,
 802,CO-02,CO,Colorado,2022,Joe Neguse,Marshall Dawson,D,69.98,28.01,-41.97,244107,97700,-146407,348839,,
 803,CO-03,CO,Colorado,2022,Adam Frisch,Lauren Boebert,R,49.89,50.06,0.17,163293,163839,546,327285,,
@@ -1395,7 +1395,7 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 1202,FL-02,FL,Florida,2022,Al Lawson,Neal Dunn,None,40.2,59.8,19.6,121153,180236,59083,301389,Y (Old 5th District),Y
 1203,FL-03,FL,Florida,2022,Danielle Hawk,Kat Cammack,R,36.29,62.52,26.23,103382,178101,74719,284893,,
 1204,FL-04,FL,Florida,2022,LJ Holloway,Aaron Bean,None,39.55,60.45,20.9,108402,165696,57294,274103,,
-1205,FL-05,FL,Florida,2022,,John Rutherford,None,0,100,100,0,0,0,0,,Y (Old 4th District)
+1205,FL-05,FL,Florida,2022,,John Rutherford,R,0,100,100,0,0,0,0,,Y (Old 4th District)
 1206,FL-06,FL,Florida,2022,Joe Hannoush (I),Michael Waltz,R,24.67,75.33,50.66,74207,226548,152341,300755,,
 1207,FL-07,FL,Florida,2022,Karen Green,Cory Mills,None,41.47,58.53,17.06,126079,177966,51887,304055,,
 1208,FL-08,FL,Florida,2022,Joanne Terry,Bill Posey,R,35.09,64.91,29.82,120080,222128,102048,342208,,
@@ -1408,24 +1408,24 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 1215,FL-15,FL,Florida,2022,Alan Cohn,Laurel Lee,None,41.46,58.54,17.08,102835,145219,42384,248054,,
 1216,FL-16,FL,Florida,2022,Jan Schneider,Vern Buchanan,R,37.85,62.14,24.29,115575,189762,74187,305358,,
 1217,FL-17,FL,Florida,2022,Andrea Doria Kale,Gregory Steube,R,35.52,63.84,28.32,123798,222483,98685,348506,,
-1218,FL-18,FL,Florida,2022,Keith Hayden Jr. (I),Scott Franklin,None,25.26,74.67,49.41,56647,167429,110782,224234,,Y (Old 15th District)
+1218,FL-18,FL,Florida,2022,Keith Hayden Jr. (I),Scott Franklin,R,25.26,74.67,49.41,56647,167429,110782,224234,,Y (Old 15th District)
 1219,FL-19,FL,Florida,2022,Cindy Banyai,Byron Donalds,R,31.99,68,36.01,100226,213035,112809,313274,,
 1220,FL-20,FL,Florida,2022,Sheila Cherfilus-McCormick,Drew Montez Clark,D,72.31,27.69,-44.62,136215,52151,-84064,188366,,
-1221,FL-21,FL,Florida,2022,Corinna Balderramos Robinson,Brian Mast,None,36.5,63.5,27,119891,208614,88723,328505,,Y (Old 18th District)
-1222,FL-22,FL,Florida,2022,Lois Frankel,Dan Franzese,None,55.11,44.89,-10.22,150010,122194,-27816,272204,Y (Old 21st District),
+1221,FL-21,FL,Florida,2022,Corinna Balderramos Robinson,Brian Mast,R,36.5,63.5,27,119891,208614,88723,328505,,Y (Old 18th District)
+1222,FL-22,FL,Florida,2022,Lois Frankel,Dan Franzese,D,55.11,44.89,-10.22,150010,122194,-27816,272204,Y (Old 21st District),
 1223,FL-23,FL,Florida,2022,Jared Moskowitz,Joe Budd,None,51.59,46.83,-4.76,143951,130681,-13270,279049,,
 1224,FL-24,FL,Florida,2022,Frederica Wilson,Jesus Navarro,D,71.79,28.21,-43.58,133442,52449,-80993,185891,,
-1225,FL-25,FL,Florida,2022,Debbie Wasserman Schultz,Carla Spalding,None,55.09,44.91,-10.18,129113,105239,-23874,234352,Y (Old 23rd District),
-1226,FL-26,FL,Florida,2022,Christine Alexandria Olivo,Mario Diaz-Balart,None,29.13,70.87,41.74,58868,143240,84372,202108,,Y (Old 25th District)
+1225,FL-25,FL,Florida,2022,Debbie Wasserman Schultz,Carla Spalding,D,55.09,44.91,-10.18,129113,105239,-23874,234352,Y (Old 23rd District),
+1226,FL-26,FL,Florida,2022,Christine Alexandria Olivo,Mario Diaz-Balart,R,29.13,70.87,41.74,58868,143240,84372,202108,,Y (Old 25th District)
 1227,FL-27,FL,Florida,2022,Annette Taddeo,Maria Elvira Salazar,R,42.71,57.29,14.58,101404,136038,34634,237442,,
-1228,FL-28,FL,Florida,2022,Robert Asencio,Carlos Gimenez,None,36.31,63.68,27.37,76665,134457,57792,211150,,Y (Old 26th District)
+1228,FL-28,FL,Florida,2022,Robert Asencio,Carlos Gimenez,R,36.31,63.68,27.37,76665,134457,57792,211150,,Y (Old 26th District)
 1301,GA-01,GA,Georgia,2022,Wade Herring,Buddy Carter,R,40.85,59.15,18.3,107837,156128,48291,263965,,
 1302,GA-02,GA,Georgia,2022,Sanford Bishop,Chris West,D,54.97,45.03,-9.94,132675,108665,-24010,241340,,
 1303,GA-03,GA,Georgia,2022,Val Almonord,Drew Ferguson,R,31.25,68.75,37.5,97057,213524,116467,310581,,
 1304,GA-04,GA,Georgia,2022,"Hank Johnson",Jonathan Chavez,D,78.49,21.51,-56.98,216332,59302,-157030,275634,,
 1305,GA-05,GA,Georgia,2022,Nikema Williams,Christian Zimm,D,82.48,17.52,-64.96,243687,51769,-191918,295456,,
 1306,GA-06,GA,Georgia,2022,Bob Christian,Rich McCormick,None,37.78,62.22,24.44,125612,206886,81274,332498,,
-1307,GA-07,GA,Georgia,2022,Lucy McBath,Mark Gonsalves,None,61.05,38.95,-22.10,143063,91262,-51801,234325,Y (Old 6th District),
+1307,GA-07,GA,Georgia,2022,Lucy McBath,Mark Gonsalves,D,61.05,38.95,-22.10,143063,91262,-51801,234325,Y (Old 6th District),
 1308,GA-08,GA,Georgia,2022,Darrius Butler,Austin Scott,R,31.42,68.58,37.16,81886,178700,96814,260586,,
 1309,GA-09,GA,Georgia,2022,Mike Ford,Andrew Clyde,R,27.65,72.35,44.7,81318,212820,131502,294138,,
 1310,GA-10,GA,Georgia,2022,Tabitha Johnson-Green,Mike Collins,None,35.47,64.53,29.06,109107,198523,89416,307630,,
@@ -1435,8 +1435,8 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 1314,GA-14,GA,Georgia,2022,Marcus Flowers,Marjorie Taylor Greene,R,34.14,65.86,31.72,88189,170162,81973,258351,,
 1501,HI-01,HI,Hawaii,2022,Ed Case,Conrad Kress,D,73.7,26.3,-47.4,143546,51217,-92329,194763,,
 1502,HI-02,HI,Hawaii,2022,Jill Tokuda,Joe Akana,None,62.21,35.31,-26.9,128407,72874,-55533,206411,,
-1901,IA-01,IA,Iowa,2022,Christina Bohannan,Mariannette Miller-Meeks,None,46.56,53.36,6.8,142173,162947,20774,305380,,Y (Old 2nd District)
-1902,IA-02,IA,Iowa,2022,Liz Mathis,Ashley Hinson,None,45.84,54.08,8.24,145940,172181,26241,318399,,Y (Old 1st District)
+1901,IA-01,IA,Iowa,2022,Christina Bohannan,Mariannette Miller-Meeks,R,46.56,53.36,6.8,142173,162947,20774,305380,,Y (Old 2nd District)
+1902,IA-02,IA,Iowa,2022,Liz Mathis,Ashley Hinson,R,45.84,54.08,8.24,145940,172181,26241,318399,,Y (Old 1st District)
 1903,IA-03,IA,Iowa,2022,Cynthia Axne,Zach Nunn,D,49.57,50.26,0.69,154117,156262,2145,310913,,
 1904,IA-04,IA,Iowa,2022,Ryan Melton,Randy Feenstra,R,30.41,67.31,36.9,84230,186467,102237,277008,,
 1601,ID-01,ID,Idaho,2022,Kaylee Peterson,Russ Fulcher,R,26.33,71.34,45.01,82261,222901,140640,312442,,
@@ -1456,7 +1456,7 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 1713,IL-13,IL,Illinois,2022,Nikki Budzinski,Regan Deering,None,56.61,43.38,-13.23,141788,108646,-33142,250450,,
 1714,IL-14,IL,Illinois,2022,Lauren Underwood,Scott Gryder,D,54.16,45.84,-8.32,128141,108451,-19690,236600,,
 1715,IL-15,IL,Illinois,2022,Paul Lange,Mary Miller,R,28.86,71.14,42.28,86396,213007,126611,299403,,
-1716,IL-16,IL,Illinois,2022,Lisa Haderlein,Darin LaHood,None,33.67,66.33,32.66,100325,197621,97296,297946,,Y (Old 18th District)
+1716,IL-16,IL,Illinois,2022,Lisa Haderlein,Darin LaHood,R,33.67,66.33,32.66,100325,197621,97296,297946,,Y (Old 18th District)
 1717,IL-17,IL,Illinois,2022,Eric Sorensen,Esther Joy King,None,51.98,48.01,-3.97,121186,111931,-9255,233123,,
 1801,IN-01,IN,Indiana,2022,Frank Mrvan,Jennifer-Ruth Green,D,52.84,47.16,-5.68,112656,100542,-12114,213207,,
 1802,IN-02,IN,Indiana,2022,Paul Steury,Rudy Yakym III,None,32.41,64.57,32.16,62891,125313,62422,194073,,
@@ -1476,7 +1476,7 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 2103,KY-03,KY,Kentucky,2022,Morgan McGarvey,Stuart Ray,None,61.99,38,-23.99,160920,98637,-62283,259587,,
 2104,KY-04,KY,Kentucky,2022,Matthew Lehman,Thomas Massie,R,31.04,65.03,33.99,79977,167541,87564,257629,,
 2105,KY-05,KY,Kentucky,2022,Conor Halbleib,Harold Rogers,R,17.82,82.17,64.35,38549,177712,139163,216270,,
-2106,KY-06,KY,Kentucky,2022,Geoff Young,Andy Barr,None,33.63,62.7,29.07,83005,154762,71757,246818,,
+2106,KY-06,KY,Kentucky,2022,Geoff Young,Andy Barr,R,33.63,62.7,29.07,83005,154762,71757,246818,,
 2201,LA-01,LA,Louisiana,2022,Katie Darling,Steve Scalise,R,25.19,72.8,47.61,61467,177670,116203,244044,,
 2202,LA-02,LA,Louisiana,2022,Troy Carter,“Dan” Lux,D,77.11,22.89,-54.22,158120,46927,-111193,205047,,
 2203,LA-03,LA,Louisiana,2022,Lessie Olivia LeBlanc,Clay Higgins,R,10.53,64.32,53.79,23641,144423,120782,224552,,
@@ -1503,17 +1503,17 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 2301,ME-01,ME,Maine,2022,Chellie Pingree,Edwin Thelander,D,62.96,37.04,-25.92,219753,129263,-90490,349016,,
 2302,ME-02,ME,Maine,2022,Jared Golden,Bruce Poliquin,D,53.05,46.95,-6.10,165136,146142,-18994,311278,,
 2601,MI-01,MI,Michigan,2022,Bob Lorinser,Jack Bergman,R,37.42,59.98,22.56,145403,233094,87691,388599,,
-2602,MI-02,MI,Michigan,2022,Jerry Hilliard,John Moolenaar,None,34.3,63.68,29.38,116452,216222,99770,339521,,Y (Old 4th District)
+2602,MI-02,MI,Michigan,2022,Jerry Hilliard,John Moolenaar,R,34.3,63.68,29.38,116452,216222,99770,339521,,Y (Old 4th District)
 2603,MI-03,MI,Michigan,2022,Hillary Scholten,John Gibbs,None,54.87,41.96,-12.91,185989,142229,-43760,338988,,
-2604,MI-04,MI,Michigan,2022,Joseph Alfonso,Bill Huizenga,None,42.47,54.36,11.89,143690,183936,40246,338348,,Y (Old 2nd District)
-2605,MI-05,MI,Michigan,2022,Bart Goldberg,Tim Walberg,None,34.97,62.42,27.45,110946,198020,87074,317258,,Y (Old 7th District)
-2606,MI-06,MI,Michigan,2022,Debbie Dingell,Whittney Williams,None,65.89,34.11,-31.78,241759,125167,-116592,366927,Y (Old 12th District),
-2607,MI-07,MI,Michigan,2022,Elissa Slotkin,Tom Barrett,None,51.73,46.32,-5.41,192809,172624,-20185,372708,Y (Old 8th District),
-2608,MI-08,MI,Michigan,2022,Daniel Kildee,Paul Junge,None,53.1,42.83,-10.27,178322,143850,-34472,335829,Y (Old 5th District),
-2609,MI-09,MI,Michigan,2022,Brian Jaye,Lisa McClain,None,33.17,63.9,30.73,123702,238300,114598,372922,,Y (Old 10th District)
+2604,MI-04,MI,Michigan,2022,Joseph Alfonso,Bill Huizenga,R,42.47,54.36,11.89,143690,183936,40246,338348,,Y (Old 2nd District)
+2605,MI-05,MI,Michigan,2022,Bart Goldberg,Tim Walberg,R,34.97,62.42,27.45,110946,198020,87074,317258,,Y (Old 7th District)
+2606,MI-06,MI,Michigan,2022,Debbie Dingell,Whittney Williams,D,65.89,34.11,-31.78,241759,125167,-116592,366927,Y (Old 12th District),
+2607,MI-07,MI,Michigan,2022,Elissa Slotkin,Tom Barrett,D,51.73,46.32,-5.41,192809,172624,-20185,372708,Y (Old 8th District),
+2608,MI-08,MI,Michigan,2022,Daniel Kildee,Paul Junge,D,53.1,42.83,-10.27,178322,143850,-34472,335829,Y (Old 5th District),
+2609,MI-09,MI,Michigan,2022,Brian Jaye,Lisa McClain,R,33.17,63.9,30.73,123702,238300,114598,372922,,Y (Old 10th District)
 2610,MI-10,MI,Michigan,2022,Carl Marlinga,John James,None,48.31,48.8,0.49,157602,159202,1600,326237,,
 2611,MI-11,MI,Michigan,2022,Haley Stevens,Mark Ambrose,D,61.32,38.68,-22.64,224537,141642,-82895,366179,,
-2612,MI-12,MI,Michigan,2022,Rashida Tlaib,Steven Elliott,None,70.84,26.26,-44.58,196643,72888,-123755,277577,Y (Old 13th District),
+2612,MI-12,MI,Michigan,2022,Rashida Tlaib,Steven Elliott,D,70.84,26.26,-44.58,196643,72888,-123755,277577,Y (Old 13th District),
 2613,MI-13,MI,Michigan,2022,Shri Thanedar,Martell Bivings,None,71.08,23.97,-47.11,166650,56187,-110463,234444,,
 2701,MN-01,MN,Minnesota,2022,Jeff Ettinger,Brad Finstad,R,42.31,53.83,11.52,125457,159621,34164,296547,,
 2702,MN-02,MN,Minnesota,2022,Angie Craig,Tyler Kistner,D,50.87,45.65,-5.22,165583,148576,-17007,325472,,
@@ -1544,8 +1544,8 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 3705,NC-05,NC,North Carolina,2022,Kyle Parrish,Virginia Foxx,R,36.85,63.15,26.3,102269,175279,73010,277548,,
 3706,NC-06,NC,North Carolina,2022,Kathy Manning,Christian Castelli,D,53.88,45.03,-8.85,139553,116635,-22918,258998,,
 3707,NC-07,NC,North Carolina,2022,Charles Graham,David Rouzer,R,42.29,57.71,15.42,120222,164047,43825,284269,,
-3708,NC-08,NC,North Carolina,2022,Scott Huffman,Dan Bishop,None,30.09,69.91,39.82,79192,183998,104806,263190,,Y (Old 9th District)
-3709,NC-09,NC,North Carolina,2022,Ben Clark,Richard Hudson,None,43.5,56.5,13,101202,131453,30251,232655,,Y (Old 8th District)
+3708,NC-08,NC,North Carolina,2022,Scott Huffman,Dan Bishop,R,30.09,69.91,39.82,79192,183998,104806,263190,,Y (Old 9th District)
+3709,NC-09,NC,North Carolina,2022,Ben Clark,Richard Hudson,R,43.5,56.5,13,101202,131453,30251,232655,,Y (Old 8th District)
 3710,NC-10,NC,North Carolina,2022,Pam Genant,Patrick McHenry,R,27.28,72.59,45.31,73174,194681,121507,268207,,
 3711,NC-11,NC,North Carolina,2022,Jasmine Beach-Ferrara,Chuck Edwards,None,44.51,53.79,9.28,144165,174232,30067,323912,,
 3712,NC-12,NC,North Carolina,2022,Alma Adams,Tyler Lee,D,62.75,37.25,-25.5,140494,83414,-57080,223908,,
@@ -1587,19 +1587,19 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 3609,NY-09,NY,New York,2022,Yvette Clarke,Menachem Raitport (I),D,81.31,18.44,-62.87,116970,26521,-90449,143853,,
 3610,NY-10,NY,New York,2022,Daniel Goldman,Benine Hamdan,None,83.49,15.11,-68.38,160582,29058,-131524,192347,,
 3611,NY-11,NY,New York,2022,Max Rose,Nicole Malliotakis,R,38.17,61.67,23.50,71801,115992,44191,188099,,
-3612,NY-12,NY,New York,2022,Jerrold Nadler,Michael Zumbluskas,None,81.63,17.95,-63.68,200890,44173,-156717,246105,Y (Old 10th District),
+3612,NY-12,NY,New York,2022,Jerrold Nadler,Michael Zumbluskas,D,81.63,17.95,-63.68,200890,44173,-156717,246105,Y (Old 10th District),
 3613,NY-13,NY,New York,2022,Adriano Espaillat,,D,98.93,0,-98.93,116589,0,-116589,117846,,
 3614,NY-14,NY,New York,2022,Alexandria Ocasio-Cortez,Tina Forte,D,70.60,27.34,-43.26,82453,31935,-50518,116790,,
 3615,NY-15,NY,New York,2022,Ritchie Torres,Stylo Sapaskis,D,82.79,17.21,-65.58,76406,15882,-60524,92288,,
 3616,NY-16,NY,New York,2022,Jamaal Bowman,Miriam Flisser,D,64.24,35.66,-28.58,133567,74156,-59411,207928,,
-3617,NY-17,NY,New York,2022,Sean Patrick Maloney,Michael Lawler,None,49.65,50.29,0.64,141730,143550,1820,285430,Y (Old 18th District),
+3617,NY-17,NY,New York,2022,Sean Patrick Maloney,Michael Lawler,D,49.65,50.29,0.64,141730,143550,1820,285430,Y (Old 18th District),
 3618,NY-18,NY,New York,2022,Patrick Ryan,Colin Schmitt,None,50.64,49.30,-1.34,135245,131653,-3592,267053,Y (Old 19th District),
 3619,NY-19,NY,New York,2022,Josh Riley,Marcus Molinaro,None,49.20,50.76,1.56,141509,146004,4495,287618,,
 3620,NY-20,NY,New York,2022,Paul Tonko,Elizabeth Joy,D,55.05,44.91,-10.14,160420,130869,-29551,291433,,
 3621,NY-21,NY,New York,2022,Matt Castelli,Elise Stefanik,R,40.85,59.15,18.30,116421,168579,52158,285000,,
 3622,NY-22,NY,New York,2022,Francis Conole,Brandon Williams,None,49.48,50.46,0.98,132913,135544,2631,268608,,
 3623,NY-23,NY,New York,2022,Max Della Pia,Nick Langworthy,None,35.05,64.87,29.82,104114,192694,88580,297041,,
-3624,NY-24,NY,New York,2022,Steven Holden,Claudia Tenney,None,34.27,65.66,31.39,95028,182054,87026,277253,,Y (Old 22nd District)
+3624,NY-24,NY,New York,2022,Steven Holden,Claudia Tenney,R,34.27,65.66,31.39,95028,182054,87026,277253,,Y (Old 22nd District)
 3625,NY-25,NY,New York,2022,Joseph Morelle,La'Ron Singletary,D,53.84,46.11,-7.73,152022,130190,-21832,282344,,
 3626,NY-26,NY,New York,2022,Brian Higgins,Steven Sams,D,63.94,36.00,-27.94,156883,88339,-68544,245371,,
 3901,OH-01,OH,Ohio,2022,Greg Landsman,Steve Chabot,R,52.76,47.24,-5.52,156416,140058,-16358,296474,,
@@ -1686,7 +1686,7 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 4820,TX-20,TX,Texas,2022,Joaquin Castro,Kyle Sinclair,D,68.42,31.57,-36.85,115352,53226,-62126,168599,,
 4821,TX-21,TX,Texas,2022,Claudia Andreana Zapata,Chip Roy,R,37.16,62.84,25.68,122655,207426,84771,330081,,
 4822,TX-22,TX,Texas,2022,Jamie Kaye Jordan,Troy Nehls,R,35.51,62.19,26.68,85653,150014,64361,241215,,
-4823,TX-23,TX,Texas,2022,John Lira,Tony Gonzales,None,38.77,55.87,17.1,80947,116649,35702,208776,,
+4823,TX-23,TX,Texas,2022,John Lira,Tony Gonzales,R,38.77,55.87,17.1,80947,116649,35702,208776,,
 4824,TX-24,TX,Texas,2022,Jan McDowell,Beth Van Duyne,R,40.25,59.75,19.5,119878,177947,58069,297825,,
 4825,TX-25,TX,Texas,2022,,Roger Williams,R,0,100,100,0,185270,185270,185270,,
 4826,TX-26,TX,Texas,2022,Mike Kolls (I),Michael Burgess,R,30.71,69.29,38.58,81384,183639,102255,265023,,
@@ -1700,17 +1700,17 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 4834,TX-34,TX,Texas,2022,Vicente Gonzalez,Mayra Flores,None,52.73,44.23,-8.5,70896,59464,-11432,134439,Y (Old 15th District),Y
 4835,TX-35,TX,Texas,2022,Greg Casar,Dan McQueen,None,72.58,27.42,-45.16,129599,48969,-80630,178568,,
 4836,TX-36,TX,Texas,2022,Jon Haire,Brian Babin,R,30.54,69.46,38.92,64016,145599,81583,209615,,
-4837,TX-37,TX,Texas,2022,Lloyd Doggett,Jenny Garcia Sharon,None,76.76,20.97,-55.79,219358,59923,-159435,285789,Y (Old 35th District),
+4837,TX-37,TX,Texas,2022,Lloyd Doggett,Jenny Garcia Sharon,D,76.76,20.97,-55.79,219358,59923,-159435,285789,Y (Old 35th District),
 4838,TX-38,TX,Texas,2022,Duncan Klussmann,Wesley Hunt,None,35.52,62.95,27.43,92302,163597,71295,259869,,
 4901,UT-01,UT,Utah,2022,Rick Edwin Jones,Blake Moore,R,33.03,66.97,33.94,87986,178434,90448,266420,,
 4902,UT-02,UT,Utah,2022,Nick Mitchell,Chris Stewart,R,34.01,59.71,25.7,88224,154883,66659,259399,,
 4903,UT-03,UT,Utah,2022,Glenn Wright,John Curtis,R,29.53,64.4,34.87,83687,182497,98810,283380,,
-4904,UT-04,UT,Utah,2022,Darlene McDonald,Burgess Owens,None,32.35,61.05,28.7,82181,155110,72929,254059,,
+4904,UT-04,UT,Utah,2022,Darlene McDonald,Burgess Owens,R,32.35,61.05,28.7,82181,155110,72929,254059,,
 5101,VA-01,VA,Virginia,2022,"Herb Jones, Jr.",Robert Wittman,R,42.96,55.97,13.01,147229,191828,44599,342742,,
 5102,VA-02,VA,Virginia,2022,Elaine Luria,Jen Kiggans,D,48.22,51.63,3.41,143219,153328,10109,296996,,
 5103,VA-03,VA,Virginia,2022,Bobby Scott,Terry Namkung,D,67.19,32.56,-34.63,139659,67668,-71991,207850,,
 5104,VA-04,VA,Virginia,2022,Donald McEachin,Leon Benjamin,D,64.92,34.9,-30.02,159044,85503,-73541,244978,,
-5105,VA-05,VA,Virginia,2022,Joshua Throneburg,Bob Good,None,42.24,57.57,15.33,129996,177191,47195,307790,,
+5105,VA-05,VA,Virginia,2022,Joshua Throneburg,Bob Good,R,42.24,57.57,15.33,129996,177191,47195,307790,,
 5106,VA-06,VA,Virginia,2022,Jennifer Lynn Lewis,Ben Cline,R,35.44,64.39,28.95,95410,173352,77942,269234,,
 5107,VA-07,VA,Virginia,2022,Abigail Davis Spanberger,Yesli Vega,D,52.21,47.56,-4.65,143357,130586,-12771,274590,,
 5108,VA-08,VA,Virginia,2022,Donald Beyer,Karina Lipsman,D,73.53,24.76,-48.77,197760,66589,-131171,268936,,
@@ -1736,11 +1736,11 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 5506,WI-06,WI,Wisconsin,2022,,Glenn Grothman,R,0,99.86,99.86,0,239231,239231,239571,,
 5507,WI-07,WI,Wisconsin,2022,Richard Dick Ausman,Tom Tiffany,R,38.12,61.88,23.76,128877,209224,80347,338101,,
 5508,WI-08,WI,Wisconsin,2022,Paul Boucher (I),Mike Gallagher,R,15.76,72.21,56.45,48896,223981,175085,310196,,
-5401,WV-01,WV,West Virginia,2022,Lacy Watson,Carol Miller,None,28.8,66.69,37.89,65428,151511,86083,227196,,Y (Old 3rd District)
+5401,WV-01,WV,West Virginia,2022,Lacy Watson,Carol Miller,R,28.8,66.69,37.89,65428,151511,86083,227196,,Y (Old 3rd District)
 5402,WV-02,WV,West Virginia,2022,Barry Lee Wendell,Alexander Mooney,R,34.42,65.54,31.12,84278,160493,76215,244886,,
 5601,WY-01,WY,Wyoming,2022,Lynnette Grey Bull,Harriet Hageman,None,24.37,68.18,43.81,47250,132206,84956,193902,,
 201,AK-01,AK,Alaska,2024,Mary Peltola,Nick Begich,D,48.78,51.22,2.44,156985,164861,7876,321846,,
-101,AL-01,AL,Alabama,2024,Tom Holmes,Barry Moore,None,21.5,78.4,56.9,70929,258619,187690,329854,,Y (Old 2nd District)
+101,AL-01,AL,Alabama,2024,Tom Holmes,Barry Moore,R,21.5,78.4,56.9,70929,258619,187690,329854,,Y (Old 2nd District)
 102,AL-02,AL,Alabama,2024,Shomari Figures,Caroleene Dobson,None,54.6,45.4,-9.2,158041,131414,-26627,289674,,
 103,AL-03,AL,Alabama,2024,,Mike Rogers,R,0,97.9,97.9,0,243848,243848,249008,,
 104,AL-04,AL,Alabama,2024,,Robert Aderholt,R,0,98.8,98.8,0,274498,274498,277872,,
@@ -1859,7 +1859,7 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 1303,GA-03,GA,Georgia,2024,Maura Keller,Brian Jack,None,33.69,66.31,32.62,138749,273036,134287,411785,,
 1304,GA-04,GA,Georgia,2024,"Hank Johnson",Eugene Yu,D,75.58,24.42,-51.16,229290,74071,-155219,303361,,
 1305,GA-05,GA,Georgia,2024,Nikema Williams,Bongo Salvesen,D,85.68,14.32,-71.36,294470,49221,-245249,343691,,
-1306,GA-06,GA,Georgia,2024,Lucy McBath,Jeff Criswell,None,74.68,25.32,-49.36,277027,93909,-183118,370936,Y (Old 7th District),
+1306,GA-06,GA,Georgia,2024,Lucy McBath,Jeff Criswell,D,74.68,25.32,-49.36,277027,93909,-183118,370936,Y (Old 7th District),
 1307,GA-07,GA,Georgia,2024,Bob Christian,Richard McCormick,None,35.15,64.85,29.7,149535,275907,126372,425442,,Y (Old 6th District)
 1308,GA-08,GA,Georgia,2024,Darrius Butler,Austin Scott,R,31.08,68.92,37.84,104434,231547,127113,335981,,
 1309,GA-09,GA,Georgia,2024,Tambrei Cash,Andrew Clyde,R,31,69,38,121754,271062,149308,392816,,
@@ -1911,7 +1911,7 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 2103,KY-03,KY,Kentucky,2024,Morgan McGarvey,Mike Craven,D,61.95,38.04,-23.91,203100,124713,-78387,327864,,
 2104,KY-04,KY,Kentucky,2024,,Thomas Massie,R,0,99.6,99.6,0,278386,278386,279517,,
 2105,KY-05,KY,Kentucky,2024,,Harold Rogers,R,0,100,100,0,261407,261407,261407,,
-2106,KY-06,KY,Kentucky,2024,Randy Cravens,Andy Barr,None,36.96,63.04,26.08,130345,222293,91948,352638,,
+2106,KY-06,KY,Kentucky,2024,Randy Cravens,Andy Barr,R,36.96,63.04,26.08,130345,222293,91948,352638,,
 2201,LA-01,LA,Louisiana,2024,Mel Manuel,Steve Scalise,R,24.02,66.77,42.75,85911,238842,152931,357720,,
 2202,LA-02,LA,Louisiana,2024,Troy Carter,Christy Lynch,D,60.29,13.64,-46.65,184009,41641,-142368,305184,,
 2203,LA-03,LA,Louisiana,2024,Priscilla Gonzalez,Clay Higgins,R,18.66,70.56,51.9,59834,226279,166445,320682,,
@@ -2028,7 +2028,7 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 3615,NY-15,NY,New York,2024,Ritchie Torres,Gonzalo Duran,D,76.48,21.12,-55.36,130392,36010,-94382,170488,,
 3616,NY-16,NY,New York,2024,George Latimer,Miriam Levitt Flisser,None,71.58,28.42,-43.16,217668,86408,-131260,304076,,
 3617,NY-17,NY,New York,2024,Mondaire Jones,Michael Lawler,R,45.85,52.16,6.31,173899,197845,23946,379274,,
-3618,NY-18,NY,New York,2024,Patrick Ryan,Alison Esposito,None,57.17,42.83,-14.34,207106,155129,-51977,362235,Y,Y (Old 4th District)
+3618,NY-18,NY,New York,2024,Patrick Ryan,Alison Esposito,D,57.17,42.83,-14.34,207106,155129,-51977,362235,Y,Y (Old 4th District)
 3619,NY-19,NY,New York,2024,Josh Riley,Marcus Molinaro,R,51.11,48.89,-2.22,192647,184290,-8357,376937,,
 3620,NY-20,NY,New York,2024,Paul Tonko,Kevin Waltz,D,61.13,38.87,-22.26,221997,141151,-80846,363148,,
 3621,NY-21,NY,New York,2024,Paula Collins,Elise Stefanik,R,37.86,62.14,24.28,131930,216513,84583,348443,,
@@ -2121,7 +2121,7 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 4820,TX-20,TX,Texas,2024,Joaquin Castro,,D,100,0,-100,157890,0,-157890,157890,,
 4821,TX-21,TX,Texas,2024,Kristin Hook,Chip Roy,R,36.06,61.85,25.79,153765,263744,109979,426423,,
 4822,TX-22,TX,Texas,2024,Marquette Greene-Scott,Troy Nehls,R,37.88,62.12,24.24,127604,209285,81681,336889,,
-4823,TX-23,TX,Texas,2024,Limon,Tony Gonzales,None,37.7,62.3,24.6,109373,180720,71347,290093,,
+4823,TX-23,TX,Texas,2024,Limon,Tony Gonzales,R,37.7,62.3,24.6,109373,180720,71347,290093,,
 4824,TX-24,TX,Texas,2024,Sam Eppler,Beth Van Duyne,R,39.7,60.3,20.6,149518,227108,77590,376626,,
 4825,TX-25,TX,Texas,2024,,Roger Williams,R,0,99.37,99.37,0,263042,263042,264703,,
 4826,TX-26,TX,Texas,2024,Ernest Lineberger,Brandon Gill,None,35.67,62.07,26.4,138558,241096,102538,388427,,
@@ -2140,7 +2140,7 @@ district_id,district_name,state_abbr,state_name,year,dem_candidate,rep_candidate
 4901,UT-01,UT,Utah,2024,Bill Campbell,Blake Moore,R,32.06,63.13,31.07,117319,230975,113656,365895,,
 4902,UT-02,UT,Utah,2024,Nathaniel Woodward,Celeste Maloy,R,34.23,58,23.77,121114,205234,84120,353838,,
 4903,UT-03,UT,Utah,2024,Glenn Wright,Mike Kennedy,None,33.61,66.39,32.78,122780,242496,119716,365276,,
-4904,UT-04,UT,Utah,2024,Katrina Fallick-Wang,Burgess Owens,None,30.2,63.42,33.22,109838,230627,120789,363668,,
+4904,UT-04,UT,Utah,2024,Katrina Fallick-Wang,Burgess Owens,R,30.2,63.42,33.22,109838,230627,120789,363668,,
 5101,VA-01,VA,Virginia,2024,Leslie Mehta,Robert Wittman,R,43.53,56.31,12.78,208445,269657,61212,478906,,
 5102,VA-02,VA,Virginia,2024,Missy Cotter Smasal,Jennifer Kiggans,R,46.9,50.74,3.84,191666,207368,15702,408702,,
 5103,VA-03,VA,Virginia,2024,Bobby Scott,John Sitka,D,69.95,29.84,-40.11,219926,93801,-126125,314397,,

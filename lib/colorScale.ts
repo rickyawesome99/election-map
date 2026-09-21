@@ -41,6 +41,17 @@ export function getStateColor(margin: number): string {
   return getRaceColor(margin);
 }
 
+// A PROJECTED race margin always names a leader: the exact margin decides the side and the
+// label keeps one decimal, so a race inside ±0.05 reads "D+0.0" / "R+0.0", never "EVEN".
+// (lib/tplCompute.ts projectRace guarantees the margin itself is never exactly 0.) Leans,
+// poll averages and model terms are quantities, not calls, and keep "EVEN" via fmtMargin.
+export function formatProjectedMargin(margin: number): string {
+  return `${margin < 0 ? "D" : "R"}+${Math.abs(margin).toFixed(1)}`;
+}
+export function projectedMarginColor(margin: number): string {
+  return margin < 0 ? "var(--party-dem)" : "var(--party-rep)";
+}
+
 // Formats a signed R-D margin as "R+n.n" / "D+n.n" / "EVEN" (used by TPL-style figures,
 // distinct from marginToRating's Safe/Likely/Lean/Tilt bucketing above).
 export function fmtMargin(v: number | null): string {

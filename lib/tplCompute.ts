@@ -22,8 +22,10 @@ import { countyPresidentialData } from "@/data/countyPresidentialData";
 import { countySenateData } from "@/data/countySenateData";
 import { countyGovernorData } from "@/data/countyGovernorData";
 import { countyHouseData } from "@/data/countyHouseData";
-import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
-import { getRacePollAverage, pollWeight, racePollKey, type RacePollAverage } from "@/lib/racePollAverage";
+import { computeGenericBallotAverage, genericBallotSeries } from "@/lib/genericBallotAverage";
+import { getRacePollAverage, pollAgingShift, pollWeight, racePollKey, type RacePollAverage } from "@/lib/racePollAverage";
+import { computeHouseEffects, type HouseEffects } from "@/lib/pollsterHouseEffects";
+import { racePolls } from "@/data/racePolls";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import { classifyEligibility, alignedParty, type RaceEligibility } from "@/data/raceEligibility";
 
@@ -223,11 +225,6 @@ export function raceFundraisingSource2026(raceType: string, raceId: string): str
   return null;
 }
 
-// R-positive fundraising points for a forecast race; 0 where receipts are unknown.
-export function computeRaceFundraisingPts(raceType: string, raceId: string): number {
-  const money = raceFundraising2026(raceType, raceId);
-  return money ? computeFundraisingPts(money.rep, money.dem) : 0;
-}
 
 // ── Helper: incumbent from past result ────────────────────────────────────────
 
@@ -856,19 +853,19 @@ export function calculateDistrictModel(districtId: string): DistrictModelCalcula
 }
 
 // ── County TPL ────────────────────────────────────────────────────────────────
-// Reuses the exact same per-race formula pipeline as the state model (competitiveness
-// blend, IF, CQ, FF, WA, year aggregation — via the shared helpers above), so a change
-// to the state TPL formula automatically applies here too. Only the inputs differ:
+// Reuses the exact same per-race pipeline as the state model (eligibility + imputation,
+// incumbency / fundraising / environment strips, year aggregation — via the shared helpers
+// above), so a change to the State TPL formula automatically applies here too. Only the
+// inputs differ (specification: /methodology/county-tpl):
 // - President/Senate/Governor are genuinely the same statewide race, just measured at
-//   county granularity, so incumbent + WQ/LQ/FF inputs are reused from the parent
-//   state's race list (STATE_RACE_INPUTS) — but raw margins, historical margins, and
-//   the presidential baseline used for the competitiveness blend all come from the
-//   county's own results, so the county TPL updates whenever county data changes.
+//   county granularity, so the incumbent, appointed flag and receipts are inherited from the
+//   parent state's race list — but raw margins and the presidential result used for
+//   imputation are the county's own, so County TPL updates whenever county data changes.
 // - House: county data is already a same-year aggregate across every district touching
-//   the county (see data/countyHouseData.ts), so there's no single incumbent/candidate
-//   to attribute — IF and CQ default to neutral (Open / Generic / Generic).
-// - Wave Adjustment reuses the parent state's S (Wave Sensitivity Coefficient); no
-//   separate county-level S is computed.
+//   the county (see data/countyHouseData.ts), so there is no single incumbent or pair of
+//   candidates to attribute — no incumbency strip, no fundraising strip, always eligible.
+// - The environment strip uses the parent state's β*; no county elasticity is estimated.
+// - No Huber weighting: a county far from its STATE's lean is not an outlier.
 
 // A "Senate Special" row must read countySenateData's specialYears bucket, not `years`:
 // the two live in sibling maps whenever a state held a separate special (MN/MS 2018,
@@ -1014,7 +1011,7 @@ export function calculateDistrictTpl(districtId: string): number {
 // ── Race polling (Phase 5) ────────────────────────────────────────────────────
 // The poll average (lib/racePollAverage.ts, from data/racePolls.ts) enters the final
 // margin with weight w = nEff / (nEff + POLL_K[office]): a race with no polls is the
-// model alone; one fresh poll gives a Senate race 25% polling, a Governor race 90%.
+// model alone; one fresh poll gives a Senate race 25% polling, a House or Governor race 33%.
 export interface RacePolling { avg: RacePollAverage | null; weight: number; key: string; }
 
 export function racePollLabel(race: { raceType: string; name: string; electionType?: string }): string {
@@ -1027,8 +1024,29 @@ export function racePollingFor(race: { id: string; state: string; raceType: stri
   const office = race.raceType === "house" ? "H" : race.raceType === "senate" ? "S" : "G";
   const stateAbbr = race.raceType === "house" ? statesData.find((s) => s.name === race.state)?.abbr ?? "" : race.id.replace(/-\d+$/, "");
   const key = racePollKey(office, stateAbbr, racePollLabel(race));
-  const avg = getRacePollAverage(office, stateAbbr, racePollLabel(race), asOf);
+  // Older polls are aged by the generic ballot's movement since their field date, through β*.
+  const aging = pollAgingShift(liveGenericBallotSeries(), getTplFit().beta[stateAbbr]?.shrunk ?? 1, asOf);
+  // …and read net of their pollster's lean relative to the field this cycle.
+  const house = F.HOUSE_EFFECTS ? liveHouseEffects(asOf).of : undefined;
+  const avg = getRacePollAverage(office, stateAbbr, racePollLabel(race), asOf, aging, house);
   return { avg, weight: avg ? pollWeight(avg.nEff, office) : 0, key };
+}
+
+// This cycle's pollster house effects, from every polled race (aged margins), per as-of day.
+let houseEffectsCache: { day: string; effects: HouseEffects } | null = null;
+export function liveHouseEffects(asOf: Date = new Date()): HouseEffects {
+  const day = asOf.toISOString().slice(0, 10);
+  if (houseEffectsCache?.day !== day) {
+    const series = liveGenericBallotSeries(), beta = getTplFit().beta;
+    const races = Object.entries(racePolls).map(([key, polls]) => ({ polls, shiftFor: pollAgingShift(series, beta[key.split(":")[1]]?.shrunk ?? 1, asOf) }));
+    houseEffectsCache = { day, effects: computeHouseEffects(races, asOf) };
+  }
+  return houseEffectsCache.effects;
+}
+
+let gbSeriesCache: ReturnType<typeof genericBallotSeries> | null = null;
+function liveGenericBallotSeries() {
+  return (gbSeriesCache ??= genericBallotSeries());
 }
 
 // Single source of truth for a race's projected margin: structural forecast (TPL + generic
@@ -1058,25 +1076,80 @@ export function projectRace(race: ProjectedMarginInput): { model: number; pollin
   const incumbentParty = incumbentCandidate ? alignedParty(incumbentCandidate) : null;
   const incumbentPts = shortType ? computeIncumbentPts(shortType, incumbentParty, incumbentCandidate?.appointed ?? false) : 0;
 
-  // Live 2026 fundraising points from FEC receipts (additive, capped — same
-  // computeFundraisingPts the backward model strips with).
-  const ffPts = computeRaceFundraisingPts(race.raceType, race.id);
   // Candidate quality: the nominees' ridge track-record effects (Phase 4).
   const qualityPts = candidateQuality(race).pts;
-
-  let structuralMargin: number;
-  if (race.raceType === "house") {
-    const stateAbbr = statesData.find((s) => s.name === race.state)?.abbr ?? "";
-    structuralMargin = calculateDistrictTpl(race.id) + effectiveEnvironment(stateAbbr) + incumbentPts + ffPts + qualityPts;
-  } else {
-    // senate/governor: id may have a numeric suffix (e.g. "DE-2"); strip it to get state abbr
-    const stateAbbr = race.id.replace(/-\d+$/, "");
-    structuralMargin = calculateStateTpl(stateAbbr, race.state) + effectiveEnvironment(stateAbbr) + incumbentPts + ffPts + qualityPts;
-  }
+  // Live 2026 fundraising points (additive, capped — same computeFundraisingPts the
+  // backward model strips with); see raceMoneyTerm for the missing-receipts rule.
+  const preMoney = preMoneyMargin(race, incumbentPts);
+  const ffPts = raceMoneyTerm(race).pts;
+  const structuralMargin = preMoney + ffPts + qualityPts;
 
   const polling = racePollingFor(race);
-  const margin = polling.avg ? (1 - polling.weight) * structuralMargin + polling.weight * polling.avg.diff : structuralMargin;
+  const blended = polling.avg ? (1 - polling.weight) * structuralMargin + polling.weight * polling.avg.diff : structuralMargin;
+  // A projection must name a leader. The exact margin decides it (pages show one decimal, so a
+  // near-tie reads "D+0.0" / "R+0.0"); should the blend ever land on exactly 0, the side comes
+  // from the model margin, then the poll average, then the seat's pre-money lean.
+  const tieBreak = structuralMargin || polling.avg?.diff || preMoney || 1;
+  const margin = blended !== 0 ? blended : Math.sign(tieBreak) * 1e-6;
   return { model: structuralMargin, polling, margin };
+}
+
+// Lean + environment + incumbency: the forward margin before money, candidates and polls —
+// the `base` regressor of the structural money model (see WarMoneyModel).
+function preMoneyMargin(race: ProjectedMarginInput, incumbentPts: number): number {
+  if (race.raceType === "house") {
+    const stateAbbr = statesData.find((s) => s.name === race.state)?.abbr ?? "";
+    return calculateDistrictTpl(race.id) + effectiveEnvironment(stateAbbr) + incumbentPts;
+  }
+  // senate/governor: id may have a numeric suffix (e.g. "DE-2"); strip it to get state abbr
+  const stateAbbr = race.id.replace(/-\d+$/, "");
+  return calculateStateTpl(stateAbbr, race.state) + effectiveEnvironment(stateAbbr) + incumbentPts;
+}
+
+/** The forward model's money term for a 2026 race. */
+export interface RaceMoneyTerm {
+  pts: number;                     // R-positive points in the projection (0 where a side's receipts are unknown)
+  known: boolean;                  // both nominees' receipts on file
+  gapPct: number | null;           // (R$ − D$)/(R$ + D$) × 100 as filed (cycle to date)
+  structuralGapPct: number | null; // the gap% a generic pair in this situation would have (null: no model for the office)
+  residualGapPct: number | null;   // PARTIAL_CYCLE_GAP_SCALE × gapPct − structuralGapPct: what the points are paid on
+}
+
+// R-positive points of a money gap under FORECAST_CONSTANTS.MONEY_BASIS (Phase 6 of the
+// forecast revamp; the backtest behind it is summarised beside the constants). Shared by
+// the forward term and by the full-money expected margins behind the candidate effects.
+//   residual: clamp(MONEY_K × (gap% − structural gap%), ±MONEY_CAP)
+//   raw:      clamp(FF_K × gap%, ±FF_MAX)   — the backward strip's rule
+export function moneyPtsFor(office: string, gapPct: number, structuralGapPct: number | null): number {
+  if (F.MONEY_BASIS === "raw") return Math.max(-FF_MAX, Math.min(FF_MAX, FF_K * gapPct));
+  const o = office as "H" | "S" | "G";
+  const k = F.MONEY_K[o] ?? 0, cap = F.MONEY_CAP[o] ?? 0;
+  return Math.max(-cap, Math.min(cap, k * (gapPct - (structuralGapPct ?? 0))));
+}
+
+/** The structural money gap% for a race with this incumbency sign and pre-money margin (null: office has no model). */
+export function structuralMoneyGap(office: string, incSign: number, preMoneyMargin: number): number | null {
+  const m = getWarMoneyModel()[office];
+  return m && m.n >= 5 ? Math.max(-100, Math.min(100, m.intercept + m.incSign * incSign + m.base * preMoneyMargin)) : null;
+}
+
+// A race with a side's receipts unknown scores 0. Under the residual basis that is a
+// statement, not a gap in the data: it assumes the typical money gap for the situation.
+export function raceMoneyTerm(race: ProjectedMarginInput): RaceMoneyTerm {
+  const shortType = ({ house: "H", senate: "S", governor: "G" } as Record<string, "H" | "S" | "G">)[race.raceType];
+  const incumbentCandidate = race.candidates ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null : null;
+  const incumbentParty = incumbentCandidate ? alignedParty(incumbentCandidate) : null;
+  let structuralGapPct: number | null = null;
+  if (shortType) {
+    const base = preMoneyMargin(race, computeIncumbentPts(shortType, incumbentParty, incumbentCandidate?.appointed ?? false));
+    structuralGapPct = structuralMoneyGap(shortType, incumbentParty === "R" ? 1 : incumbentParty === "D" ? -1 : 0, base);
+  }
+  const money = raceFundraising2026(race.raceType, race.id);
+  if (!money || !shortType || money.dem + money.rep <= 0) return { pts: 0, known: false, gapPct: null, structuralGapPct, residualGapPct: null };
+  const gapPct = ((money.rep - money.dem) / (money.rep + money.dem)) * 100;
+  // The live cycle's receipts are a mid-September snapshot; past cycles are full-cycle.
+  const scaled = F.PARTIAL_CYCLE_GAP_SCALE[shortType] * gapPct;
+  return { pts: moneyPtsFor(shortType, scaled, structuralGapPct), known: true, gapPct, structuralGapPct, residualGapPct: scaled - (structuralGapPct ?? 0) };
 }
 
 // ── National environment (Phase 2 of the forecast revamp) ────────────────────
@@ -1220,7 +1293,8 @@ export function computeCandidateEffects(asOf: number = ELECTION_CYCLE, maxYear: 
   const latest = new Map<string, { year: number; office: string }>();
   for (const p of buildWarPending()) {
     if (p.r.year > maxYear) continue;
-    const ffPts = p.withMoney && p.gap != null ? Math.max(-FF_MAX, Math.min(FF_MAX, FF_K * p.gap)) : 0;
+    // Full-money expected margin on the forward model's money basis (moneyPtsFor); unknown receipts → 0.
+    const ffPts = p.withMoney && p.gap != null ? moneyPtsFor(p.office, p.gap, structuralMoneyGap(p.office, p.incSign, p.base)) : 0;
     const race: EffectRace = { r: p.r.rawMargin! - (p.base + ffPts), year: p.r.year, actual: p.r.rawMargin!, inc: p.r.incumbent === "R" ? "R" : p.r.incumbent === "D" ? "D" : null, office: p.office, w: p.boundaryWeight ?? 1 };
     if (p.r.demCandidate) race.D = warCandidateKey(p.state, p.r.demParty ?? "D", p.r.demCandidate);
     if (p.r.repCandidate) race.R = warCandidateKey(p.state, p.r.repParty ?? "R", p.r.repCandidate);
@@ -1302,8 +1376,21 @@ export function computeFundraisingPts(rCash: number, dCash: number): number {
 
 // ── Incumbent factor (forward projection) ────────────────────────────────────
 // Senate and Governor incumbency are fitted (see getTplFit); House keeps a fixed
-// prior because the state-level fit cannot tell House incumbency from district
+// value because the state-level fit cannot tell House incumbency from district
 // lean. incumbentAdvantage() is the single table both directions use.
+//
+// The House 3 is no longer only a prior: forwardBacktest --seat-status (2026-09-21) sweeps it
+// through the district-lean strip, the candidate effects and the forward term together —
+// pooled House MAE 0 → 4.87 · 2 → 4.59 · 2.5 → 4.58 · 3 → 4.58 · 3.5 → 4.60 · 4 → 4.64 · 5 → 4.81,
+// the same optimum in 2022 and 2024. The same run tested the two Phase 7 seat-status terms and
+// adopted NEITHER (leave-one-year-out, year fixed effects):
+//   open-seat carryover  (pts toward the outgoing holder's party): Senate −0.4 ± 1.2, House
+//     −1.1 ± 0.8, Governor −4.2 but −0.7…−6.4 across folds — the sign is a retirement SLUMP,
+//     not a carryover, and out of sample it moves MAE S 5.05 → 5.08, G 8.91 → 9.08, H 4.58 → 4.56.
+//   freshman effect (first-term incumbents vs the office's incumbency): Senate −0.9 ± 1.0,
+//     House −1.0 ± 0.7 (freshman − veteran −0.35 ± 0.73), Governor +4.4 driven by 2018, when
+//     Baker / Hogan / Scott had no record on file; out of sample S 5.09, G 8.99, H 4.58 — no gain.
+// Dropping the candidate-quality term does not change either finding.
 
 export const FITTED_INCUMBENCY_OFFICES = ["S", "G"] as const;
 export const INCUMBENT_ADVANTAGE_FIXED: Record<string, number> = { H: 3 };
@@ -1579,7 +1666,7 @@ function attributeWar(rows: WarRow[]): void {
 
 export interface WarMoneyModel { intercept: number; incSign: number; base: number; n: number; r2: number; }
 
-function fitWarMoneyModel(rows: { gap: number; incSign: number; base: number }[]): WarMoneyModel {
+export function fitWarMoneyModel(rows: { gap: number; incSign: number; base: number }[]): WarMoneyModel {
   const n = rows.length;
   if (n < 5) return { intercept: 0, incSign: 0, base: 0, n, r2: 0 };
   // 3×3 normal equations for gap ~ 1 + incSign + base

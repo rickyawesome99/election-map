@@ -65,3 +65,10 @@ data-entry/tiger-state-leg-historical/
 
 # FollowTheMoney API response cache (scripts/fetch-governor-fundraising-ftm.py)
 .ftm-cache/
+
+# OpenFEC response cache (scripts/fetch-fec-september-snapshot.py)
+.fec-cache/
+
+# FiveThirtyEight poll archives (raw_polls.csv + the Wayback *_polls_historical.csv files, ~30 MB;
+# re-downloaded by scripts/build-pollster-graded-polls.py / build-race-polls-history.py)
+data-entry/fivethirtyeight/

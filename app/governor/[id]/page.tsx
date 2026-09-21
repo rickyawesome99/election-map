@@ -1,5 +1,5 @@
 import { governorData, governorNoElection, NoElectionEntry, electionYear, type PastResult } from "@/data/forecastData";
-import { getRatingColors, marginToRating, fmtMargin, marginColor } from "@/lib/colorScale";
+import { getRatingColors, marginToRating, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import { candidatePhotos } from "@/lib/candidatePhotos";
@@ -7,7 +7,7 @@ import { AboutRaceCard, CandidatesLedgerSection, CurrentIncumbentLedgerRow, Fore
 import StateCountyMap from "@/components/StateCountyMap";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
-import { calculateStateTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, computeRaceFundraisingPts, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
+import { calculateStateTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
 import { forecastRace } from "@/lib/forecast";
 import { alignedParty } from "@/data/raceEligibility";
 import BackButton from "@/components/BackButton";
@@ -165,7 +165,8 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
   const incumbentPts = computeIncumbentPts("G", incumbentParty, incumbent?.appointed ?? false);
   const fundraising = raceFundraising2026("governor", race.id);
   const fundraisingSource = raceFundraisingSource2026("governor", race.id);
-  const fundraisingPts = computeRaceFundraisingPts("governor", race.id);
+  const moneyTerm = raceMoneyTerm(race);
+  const fundraisingPts = moneyTerm.pts;
   const gb = effectiveEnvironment(id.toUpperCase());
   const polling = racePollingFor(race);
   const pollMargin = polling.avg?.diff ?? null;
@@ -193,7 +194,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
       {/* Hero */}
       <div
         style={{
-          background: `linear-gradient(135deg, color-mix(in srgb, ${marginColor(projectedMargin)} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
+          background: `linear-gradient(135deg, color-mix(in srgb, ${projectedMarginColor(projectedMargin)} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
           minHeight: "300px",
         }}
       >
@@ -229,9 +230,9 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               </div>
               <div
                 className="tabular-nums"
-                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 5.5vw, 3.75rem)", fontWeight: 700, lineHeight: 1, marginTop: "0.35rem", color: marginColor(projectedMargin) }}
+                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 5.5vw, 3.75rem)", fontWeight: 700, lineHeight: 1, marginTop: "0.35rem", color: projectedMarginColor(projectedMargin) }}
               >
-                {fmtMargin(projectedMargin)}
+                {formatProjectedMargin(projectedMargin)}
               </div>
             </div>
           </div>
@@ -300,6 +301,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               source={fundraisingSource}
               pendingNote="gubernatorial campaigns file with the state rather than the FEC, and those filings are still being collected"
               fundraisingPts={fundraisingPts}
+              typicalGapPct={moneyTerm.structuralGapPct}
             />
           </section>
 
@@ -338,7 +340,9 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               tplLabel="State TPL"
               tplHref={`/model/state?modelState=${encodeURIComponent(id.toUpperCase())}`}
               incumbentPts={incumbentPts}
+              appointedIncumbent={incumbent?.appointed ? incumbentParty : null}
               fundraisingPts={fundraising ? fundraisingPts : null}
+              moneyTerm={moneyTerm}
               candidatePts={quality.pts}
               candidateDetail={quality}
               polling={polling}

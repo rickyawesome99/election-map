@@ -35,6 +35,11 @@
   --redistrict-cd: #3f6499;
   --redistrict-sh: #5d7f56;
   --redistrict-ss: #9c5c2c;
+
+  /* Pollster ratings — better / worse than the field. Off the party scale on purpose: blue and
+     red already mean a Democratic or Republican lean on the same page. */
+  --poll-better: #008f7a;
+  --poll-worse: #c2651a;
 }
 
 html.dark {
@@ -65,6 +70,9 @@ html.dark {
   --redistrict-cd: #8fb4e8;
   --redistrict-sh: #a9c6a2;
   --redistrict-ss: #e0a276;
+
+  --poll-better: #23a192;
+  --poll-worse: #cf7f38;
 }
 
 html[data-theme="light"] {
@@ -384,3 +392,9 @@ body::before {
 /* A history card is the year control, so it needs a hover state. */
 .stateleg-year:hover { background: color-mix(in srgb, var(--app-tab-bg) 55%, transparent); }
 .stateleg-year[aria-current="true"]:hover { background: var(--app-tab-bg); }
+
+/* Pollster ratings (/analysis/pollsters): legend swatches for the better / worse-than-field tint.
+   Referencing the two tokens here also keeps them in the built stylesheet — they are otherwise
+   only used from inline color-mix() styles. */
+.poll-swatch[data-vs="better"] { background: color-mix(in srgb, var(--poll-better) 38%, transparent); }
+.poll-swatch[data-vs="worse"] { background: color-mix(in srgb, var(--poll-worse) 38%, transparent); }

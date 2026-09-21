@@ -57,7 +57,7 @@ for office, name in FILES.items():
         elif office == "G": race = "Governor"
         else: race = f"House {st}-{max(1, int(r['seat_number'] or 1)):02d}"
         out.append({"year": year, "office": office, "state": st, "race": race, "pollster": r["pollster"], "partisan": {"DEM": "D", "REP": "R"}.get(r["partisan"], ""),
-                    "start": iso(r["start_date"]), "end": iso(r["end_date"]), "sample": r["sample_size"], "population": r["population"], "dem": e["DEM"], "rep": e["REP"], "grade": r["numeric_grade"]})
+                    "start": iso(r["start_date"]), "end": iso(r["end_date"]), "sample": r["sample_size"], "population": r["population"], "dem": e["DEM"], "rep": e["REP"], "grade": r["numeric_grade"], "pollster_id": r["pollster_rating_id"]})
         stats[f"rows-{office}"] += 1
 out.sort(key=lambda x: (x["year"], x["office"], x["state"], x["race"], x["end"]))
 with open(OUT, "w", newline="") as f:

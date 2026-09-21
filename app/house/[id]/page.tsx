@@ -1,16 +1,16 @@
 import { houseData, houseDistrictInfo, houseDistrictPvi, houseStatewideResults, presPastResults, senateData, senateNoElection, senateHoldovers, electionYear } from "@/data/forecastData";
 import { getStatewideMargin, getNationalMargin } from "@/lib/statewideMargins";
 import { pviHistory } from "@/lib/pviHistory";
-import { getRatingColors, marginToRating, fmtMargin, marginColor } from "@/lib/colorScale";
+import { getRatingColors, marginToRating, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import { candidatePhotos } from "@/lib/candidatePhotos";
 import DistrictMiniMap from "@/components/DistrictMiniMap";
 import DemographicsStrip from "@/components/DemographicsStrip";
-import { districtDemographics, REDRAWN_SINCE_ACS_VINTAGE } from "@/data/demographics";
+import { districtDemographics, REDRAWN_SINCE_ACS_VINTAGE, TRACT_ESTIMATED_DISTRICTS } from "@/data/demographics";
 import { AboutRaceCard, CandidatesLedgerSection, ForecastCalculationCard, FundraisingLedgerSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
-import { calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, computeRaceFundraisingPts, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
+import { calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
 import { forecastRace } from "@/lib/forecast";
 import { alignedParty } from "@/data/raceEligibility";
 import BackButton from "@/components/BackButton";
@@ -98,11 +98,13 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const inferredSeat = inferCurrentHouseSeatFromPastResults(race);
   const currentRepName = incumbentCandidate?.name ?? race.seatHolder ?? inferredSeat?.name ?? "TBD";
   const currentRepParty = incumbentCandidate?.party ?? race.seatParty ?? inferredSeat?.party ?? null;
-  // ACS 2020-24 measures congressional districts on 119th Congress lines - the same lines
-  // public/congressional-districts-2026.json still draws. Where a state has since enacted a
-  // different 2026 map, the figures describe the district as it was, and say so.
+  // ACS 2020-24 measures congressional districts on 119th Congress lines. A district redrawn
+  // for 2026 shows census tracts re-aggregated onto its new lines instead, and says so; a
+  // redrawn state with no such estimate would still describe the district as it was.
   const demographics = districtDemographics[race.id];
-  const demographicsNote = REDRAWN_SINCE_ACS_VINTAGE.has(stateAbbr)
+  const demographicsNote = TRACT_ESTIMATED_DISTRICTS.has(race.id)
+    ? `ACS 2020–24, estimated for the ${electionYear} lines from census tracts.`
+    : REDRAWN_SINCE_ACS_VINTAGE.has(stateAbbr)
     ? `ACS 2020–24. ${race.state} enacted a new congressional map for ${electionYear}; these figures are for the district's previous lines.`
     : "ACS 2020–24 5-year estimates.";
   const pvi2026 = houseDistrictPvi[race.id];
@@ -115,7 +117,8 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const incumbentPts = computeIncumbentPts("H", incumbentParty, incumbentCandidate?.appointed ?? false);
   const fundraising = raceFundraising2026("house", race.id);
   const fundraisingSource = raceFundraisingSource2026("house", race.id);
-  const fundraisingPts = computeRaceFundraisingPts("house", race.id);
+  const moneyTerm = raceMoneyTerm(race);
+  const fundraisingPts = moneyTerm.pts;
   const gb = effectiveEnvironment(stateAbbr);
   const polling = racePollingFor(race);
   const pollMargin = polling.avg?.diff ?? null;
@@ -204,7 +207,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
       {/* Hero */}
       <div
         style={{
-          background: `linear-gradient(135deg, color-mix(in srgb, ${marginColor(projectedMargin)} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
+          background: `linear-gradient(135deg, color-mix(in srgb, ${projectedMarginColor(projectedMargin)} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
         }}
       >
         <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-3 pb-7">
@@ -244,9 +247,9 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               </div>
               <div
                 className="tabular-nums"
-                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 5.5vw, 3.75rem)", fontWeight: 700, lineHeight: 1, marginTop: "0.35rem", color: marginColor(projectedMargin) }}
+                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 5.5vw, 3.75rem)", fontWeight: 700, lineHeight: 1, marginTop: "0.35rem", color: projectedMarginColor(projectedMargin) }}
               >
-                {fmtMargin(projectedMargin)}
+                {formatProjectedMargin(projectedMargin)}
               </div>
             </div>
           </div>
@@ -316,6 +319,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               source={fundraisingSource}
               pendingNote={`no ${electionYear} FEC filings on record for this race yet`}
               fundraisingPts={fundraisingPts}
+              typicalGapPct={moneyTerm.structuralGapPct}
             />
           </section>
 
@@ -384,6 +388,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               tplHref={`/model/district?modelDistrict=${encodeURIComponent(districtTplId)}`}
               incumbentPts={incumbentPts}
               fundraisingPts={fundraising ? fundraisingPts : null}
+              moneyTerm={moneyTerm}
               candidatePts={quality.pts}
               candidateDetail={quality}
               polling={polling}
