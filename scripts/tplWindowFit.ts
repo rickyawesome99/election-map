@@ -8,7 +8,7 @@
 // tracking harness (tplBacktest.ts) is the guard for the live pipeline; this file
 // is the guard for anything that needs "the model as of year Y".
 
-import { calculateStateModel } from "@/lib/tplCompute";
+import { calculateStateModel, IMPUTED_HOUSE_ROW_WEIGHT } from "@/lib/tplCompute";
 import { TPL_GLOBAL_CONSTANTS as G, FORECAST_CONSTANTS as F } from "@/data/tplModelData";
 import { statesData } from "@/data/statesData";
 
@@ -32,12 +32,14 @@ export interface PanelRow {
   demParty?: string;
   repParty?: string;
   ffGapPct: number | null; // (R$ − D$)/(R$ + D$) × 100, where both receipts known
+  turnoutWeight: number; // House rows: total votes relative to the state-year mean (1 otherwise)
 }
 
 export interface Theta {
   lambda: number;
   huberC: number;
   impW: number;
+  impWHouse: number; // imputed House rows (turnout-weighted shares of the state; live = IMPUTED_HOUSE_ROW_WEIGHT)
   betaShrink: number;
   sparseK: number;
   typeW: Record<string, number>;
@@ -52,6 +54,7 @@ export const CURRENT: Theta = {
   lambda: 0.87,
   huberC: G.HUBER_C,
   impW: 0.5,
+  impWHouse: IMPUTED_HOUSE_ROW_WEIGHT,
   betaShrink: G.BETA_SHRINK,
   sparseK: G.SPARSE_YEAR_K,
   typeW: { ...G.RACE_TYPE_WEIGHTS },
@@ -100,6 +103,7 @@ for (const { abbr, name } of statesData) {
       ffGapPct: r.ffDetail && r.ffDetail.dem + r.ffDetail.rep > 0
         ? ((r.ffDetail.rep - r.ffDetail.dem) / (r.ffDetail.rep + r.ffDetail.dem)) * 100
         : null,
+      turnoutWeight: r.turnoutWeight ?? 1,
     });
   }
   const firstRaw = (t: string, y: number) => races.find((r) => r.raceType === t && r.year === y)?.rawMargin ?? null;
@@ -191,7 +195,10 @@ export function fitWindow(t: Theta, maxYear: number): Fit {
 }
 
 // State TPL as of `maxYear`, from a fit over the same window: the recency-decayed,
-// coverage-weighted blend of per-year type means of stripped margins.
+// coverage-weighted blend of per-year type means of stripped margins. Mirrors
+// calculateStateModel + aggregateYears: statewide rows carry a row-level Huber factor vs
+// the fitted lean; House rows are turnout-weighted with ONE Huber factor on the House
+// year's type weight instead.
 export function stateTpl(t: Theta, fit: Fit, abbr: string, maxYear: number): number | null {
   const rows = panel.filter((r) => r.abbr === abbr && r.value != null && r.year <= maxYear);
   const beta = fit.beta[abbr] ?? 1;
@@ -200,6 +207,7 @@ export function stateTpl(t: Theta, fit: Fit, abbr: string, maxYear: number): num
   const yearAggs: YearAgg[] = [];
   for (const year of [...new Set(rows.map((r) => r.year))]) {
     const typeNMs: Partial<Record<string, number>> = {};
+    const typeFactor: Record<string, number> = {};
     for (const type of TYPES) {
       let num = 0, den = 0;
       for (const r of rows.filter((x) => x.year === year && x.type === type)) {
@@ -208,16 +216,20 @@ export function stateTpl(t: Theta, fit: Fit, abbr: string, maxYear: number): num
           ? r.value! - beta * (fit.E[envYear] ?? 0)
           : r.value! + incPts(fit.inc, r.type, r.incumbent, r.incumbentAppointed) + ffPts(t, r.ffGapPct) - beta * (fit.E[year] ?? 0);
         const resid = lean != null ? nm - lean : 0;
-        const huber = Math.abs(resid) <= t.huberC ? 1 : t.huberC / Math.abs(resid);
-        const w = (r.imputed ? t.impW : 1) * huber;
+        const huber = type === "H" ? 1 : Math.abs(resid) <= t.huberC ? 1 : t.huberC / Math.abs(resid);
+        const w = (r.imputed ? (type === "H" ? t.impWHouse : t.impW) : 1) * huber * (type === "H" ? r.turnoutWeight : 1);
         num += w * nm; den += w;
       }
-      if (den > 0) typeNMs[type] = num / den;
+      if (den > 0) {
+        typeNMs[type] = num / den;
+        const tr = type === "H" && lean != null ? Math.abs(typeNMs[type]! - lean) : 0;
+        typeFactor[type] = tr <= t.huberC ? 1 : t.huberC / tr;
+      }
     }
     const present = TYPES.filter((x) => typeNMs[x] != null);
     if (present.length === 0) continue;
-    const coverage = present.reduce((a, x) => a + (t.typeW[x] ?? 0), 0);
-    const wrs = present.reduce((a, x) => a + ((t.typeW[x] ?? 0) / coverage) * typeNMs[x]!, 0);
+    const coverage = present.reduce((a, x) => a + (t.typeW[x] ?? 0) * typeFactor[x], 0);
+    const wrs = present.reduce((a, x) => a + (((t.typeW[x] ?? 0) * typeFactor[x]) / coverage) * typeNMs[x]!, 0);
     yearAggs.push({ year, wrs, coverage });
   }
   if (yearAggs.length === 0) return null;

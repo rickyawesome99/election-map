@@ -8,7 +8,7 @@ import { houseData } from "@/data/forecastData";
 import { ALIGNED_INDEPENDENTS } from "@/data/raceEligibility";
 import {
   getTplFit, calculateStateModel, calculateDistrictModel, calculateCountyModel, getMedianStateTpl, incumbentAdvantage,
-  FF_K, FF_MAX, IMPUTED_RACE_WEIGHT, type ComputedRace, type YearAggregation,
+  FF_K, FF_MAX, IMPUTED_RACE_WEIGHT, IMPUTED_HOUSE_ROW_WEIGHT, type ComputedRace, type YearAggregation,
 } from "@/lib/tplCompute";
 import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, Ledger, M, N, P, Section, pct, signed, type ConstantRow, type LedgerLine } from "./kit";
 
@@ -41,8 +41,8 @@ function YearTable({ aggs }: { aggs: YearAggregation[] }) {
   const present = aggs.filter((a) => a.racesPresent.length > 0);
   return (
     <DataTable align="rlrrrr" head={["Year", "Offices present", "Coverage", "Recency", "Final weight", "Year margin (WRS)"]}
-      rows={present.map((a) => [a.year, a.racesPresent.map((t) => `${t} ${pct(a.redistributedWeights[t])}`).join(" · "), a.coverage.toFixed(2), (G.YEAR_WEIGHTS[a.year] ?? 0).toFixed(3), pct(a.finalWeight, 1), <M key="w" v={a.WRS} />])}
-      caption="Offices present shows each type's redistributed share within the year. Final weight = recency × coverage, normalized over the years with data." />
+      rows={present.map((a) => [a.year, a.racesPresent.map((t) => `${t} ${pct(a.redistributedWeights[t])}${t === "H" && (a.typeFactors?.H ?? 1) < 0.999 ? ` (Huber ×${a.typeFactors.H.toFixed(2)})` : ""}`).join(" · "), a.coverage.toFixed(2), (G.YEAR_WEIGHTS[a.year] ?? 0).toFixed(3), pct(a.finalWeight, 1), <M key="w" v={a.WRS} />])}
+      caption="Offices present shows each type's redistributed share within the year; a House year more than HUBER_C from the fitted lean shows its Huber factor. Final weight = recency × coverage, normalized over the years with data." />
   );
 }
 
@@ -82,7 +82,8 @@ export function StateTplMethodology() {
   const models = statesData.map((s) => ({ ...s, calc: calculateStateModel(s.abbr, s.name) }));
   const allRaces = models.flatMap((m) => m.calc.races.filter((r) => r.inAggregation && r.NM != null));
   const imputedN = allRaces.filter((r) => r.imputed).length;
-  const downweighted = allRaces.filter((r) => !r.imputed && r.aggWeight < 0.999).length;
+  const downweighted = allRaces.filter((r) => !r.imputed && r.raceType !== "H" && r.aggWeight < 0.999).length;
+  const houseYearsDown = models.flatMap((m) => m.calc.yearAggregations).filter((a) => (a.typeFactors?.H ?? 1) < 0.999).length;
   const betas = Object.entries(fit.beta).filter(([, b]) => b.n > 0).sort((a, b) => a[1].shrunk - b[1].shrunk);
   const oh = models.find((m) => m.abbr === "OH")!;
   const exRace = oh.calc.races.find((r) => r.race === "Senate" && r.year === 2022) ?? oh.calc.races.find((r) => r.raceType === "S")!;
@@ -100,7 +101,7 @@ export function StateTplMethodology() {
         ]} note={<>R-positive throughout. Candidate quality is deliberately not a term: outlier candidates are downweighted instead, and their residuals become {link("/methodology/war", "WAR")}.</>} />
         <DataTable align="lr" maxWidth="max-w-md" head={["Now", ""]} rows={[
           ["Races in the fit", fit.rowsUsed.toLocaleString()],
-          ["Races aggregated / imputed / Huber-downweighted", `${allRaces.length.toLocaleString()} / ${imputedN} / ${downweighted}`],
+          ["Races aggregated / imputed / statewide rows Huber-downweighted / House years Huber-downweighted", `${allRaces.length.toLocaleString()} / ${imputedN} / ${downweighted} / ${houseYearsDown}`],
           ["Median state TPL", <M key="m" v={median} />],
           ["Most Democratic · most Republican", <span key="x">{ranked[0].abbr} <M v={ranked[0].calc.tpl} /> · {ranked.at(-1)!.abbr} <M v={ranked.at(-1)!.calc.tpl} /></span>],
         ]} />
@@ -111,7 +112,7 @@ export function StateTplMethodology() {
       <Section id="adjusted" kicker="Step 1" title="Adjusted margin and imputation">
         <Defs items={[
           { term: "Eligible race", def: "Adjusted = Raw, untouched." },
-          { term: "Ineligible race (⊘)", def: <>Adjusted is imputed from the seat&rsquo;s nearest presidential result: district-level for a House seat (restricted to the boundary vintage the race was run on), statewide otherwise. Imputed rows skip the incumbency and fundraising strips, strip the environment of the SOURCE presidential year, and enter aggregation at weight <N>{IMPUTED_RACE_WEIGHT}</N>.</> },
+          { term: "Ineligible race (⊘)", def: <>Adjusted is imputed from the seat&rsquo;s nearest presidential result: district-level for a House seat (restricted to the boundary vintage the race was run on), statewide otherwise. Imputed rows skip the incumbency and fundraising strips, strip the environment of the SOURCE presidential year, and enter aggregation at weight <N>{IMPUTED_RACE_WEIGHT}</N>. An imputed House row instead keeps weight <N>{IMPUTED_HOUSE_ROW_WEIGHT}</N> × the source presidential year&rsquo;s turnout share: it is that district&rsquo;s share of the state&rsquo;s House vote, and halving it would drop half the district out of the state&rsquo;s sum.</> },
           { term: "State Legislature", def: "One row per year: the chamber-aggregate margin over every chamber on the ballot that year, as a share of the full total vote. A year counts once every chamber that WAS on the ballot is sourced (staggered senates sit out some years; Nebraska is unicameral)." },
           { term: "Senate specials", def: "A state with a regular and a special Senate race in one year carries both rows; both feed that year's Senate mean." },
         ]} />
@@ -143,7 +144,7 @@ export function StateTplMethodology() {
           })} caption="The forecast multiplies the national environment by the same β*; counties and districts use their parent state's." />
         </Block>
         <Constants rows={[
-          { name: "HUBER_C", value: G.HUBER_C, basis: "designed", meaning: "Residual size (pts) beyond which a race is downweighted, in the fit and again in aggregation. This is what keeps Manchin, Scott and Hogan from dragging a state's lean.", source: "tplCalibrate: 4–10 move the objective ≤ 0.01. Disabling Huber won ~0.02 on presidential targets at the cost of Senate accuracy and robustness — rejected by design." },
+          { name: "HUBER_C", value: G.HUBER_C, basis: "designed", meaning: "Residual size (pts) beyond which a race is downweighted: every row in the fit, and in aggregation each statewide row and each whole House year (House rows carry no row-level factor — a packed district is not an outlier). This is what keeps Manchin, Scott and Hogan from dragging a state's lean.", source: "tplCalibrate: 4–10 move the objective ≤ 0.01. Disabling Huber won ~0.02 on presidential targets at the cost of Senate accuracy and robustness — rejected by design." },
           { name: "SPARSE_YEAR_K", value: G.SPARSE_YEAR_K, basis: "designed", meaning: "E(y) shrink n/(n + K): reins in thin odd years.", source: "2–8 move the objective ≤ 0.01." },
           { name: "BETA_SHRINK · MIN · MAX", value: `${G.BETA_SHRINK} · ${G.BETA_MIN} · ${G.BETA_MAX}`, basis: "designed", meaning: "Halfway shrink of each state's raw elasticity toward 1, then clamped. No negative elasticity is possible.", source: "0.3–0.7 move the objective ≤ 0.01." },
           { name: "FIT_ITERATIONS", value: G.FIT_ITERATIONS, basis: "designed", meaning: "Alternating least-squares rounds." },
@@ -152,12 +153,14 @@ export function StateTplMethodology() {
 
       <Section id="aggregation" kicker="Steps 5–6" title="Robust weighting and aggregation">
         <Formula lines={[
-          `aggWeight   = (imputed ? ${IMPUTED_RACE_WEIGHT} : 1) × min(1, HUBER_C / |NM − fitted lean|)`,
-          "type NM     = aggWeight-weighted mean of the type's NMs that year",
-          "WRS(year)   = Σ type weight × type NM      base weights redistributed among the types present",
-          `year weight ∝ ${(G.YEAR_WEIGHTS[2024] / G.YEAR_WEIGHTS[2025]).toFixed(2)}^(2026 − year) × coverage    coverage = Σ base type weights present that year`,
-          "TPL         = Σ normalized year weight × WRS",
-        ]} note="Coverage is what stops a sparse odd year (one governor race) from dominating through redistribution. A year with no races drops out and the rest renormalize." />
+          `aggWeight    = (imputed ? ${IMPUTED_RACE_WEIGHT} : 1) × min(1, HUBER_C / |NM − fitted lean|)         statewide rows (P, S, G, Leg)`,
+          `aggWeight    = (imputed ? ${IMPUTED_HOUSE_ROW_WEIGHT} : 1) × total votes / mean House turnout that year     House rows — no row-level Huber; an imputed district keeps its share`,
+          "type NM      = aggWeight-weighted mean of the type's NMs that year",
+          "House factor = min(1, HUBER_C / |House NM − fitted lean|)      one Huber check on the whole House year, applied to its type weight",
+          "WRS(year)    = Σ type weight × type NM      base weights (House × its factor) redistributed among the types present",
+          `year weight  ∝ ${(G.YEAR_WEIGHTS[2024] / G.YEAR_WEIGHTS[2025]).toFixed(2)}^(2026 − year) × coverage    coverage = Σ base type weights present that year (House × its factor)`,
+          "TPL          = Σ normalized year weight × WRS",
+        ]} note="Coverage is what stops a sparse odd year (one governor race) from dominating through redistribution. A year with no races drops out and the rest renormalize. House rows are turnout-weighted because the districts sum to the state: each district's result is a share of the state's House vote, and a packed D+60 seat is not an outlier. Row-level Huber on House rows handed every packed-map state's House aggregate to the party with more middling seats (Georgia 2024: R+10 against a turnout-weighted R+2 and a presidential NM of R+0.3), so the outlier check is applied once to the whole House year instead. An imputed House row is weighted by the turnout of the presidential result it borrows, not by its own depressed turnout." />
         <Block label="Race-type weights">
           <DataTable align="lrr" maxWidth="max-w-md" head={["Office", "Base weight", "Floor"]} rows={(["P", "H", "S", "L", "G"] as const).map((t) => [TYPE_NAME[t], G.RACE_TYPE_WEIGHTS[t].toFixed(2), { P: ".20", H: ".10", S: ".05", L: ".03", G: ".02" }[t]])}
             caption="Calibrated (tplCalibrate, leakage-free two-round holdout): the knee of the presidential-weight curve. The objective marginally preferred P .65–.70, driven almost entirely by the 2024 presidential target; declined to keep the multi-office identity. A later re-run proposed P .70 / S .08 / H .12 and was also declined." />
@@ -166,7 +169,10 @@ export function StateTplMethodology() {
           <DataTable align={"l" + "r".repeat(G.YEARS.length)} maxWidth="max-w-4xl" head={["", ...G.YEARS]} rows={[["weight", ...G.YEARS.map((y) => G.YEAR_WEIGHTS[y].toFixed(3))]]}
             caption="Geometric decay per year, anchored on 2026. Calibrated: monotone improvement from 1.0 down to 0.75 on both holdout rounds; 0.65–0.70 no better." />
         </Block>
-        <Constants rows={[{ name: "IMPUTED_RACE_WEIGHT", value: IMPUTED_RACE_WEIGHT, basis: "designed", meaning: "An imputed row is a lean borrowed from a presidential result, not an observation of its own.", source: "0.25–1.0 move the calibration objective ≤ 0.01." }]} />
+        <Constants rows={[
+          { name: "IMPUTED_RACE_WEIGHT", value: IMPUTED_RACE_WEIGHT, basis: "designed", meaning: "An imputed statewide row is a lean borrowed from a presidential result, not an observation of its own.", source: "0.25–1.0 move the calibration objective ≤ 0.01." },
+          { name: "IMPUTED_HOUSE_ROW_WEIGHT", value: IMPUTED_HOUSE_ROW_WEIGHT, basis: "decision", meaning: "An imputed House row is a turnout-weighted share of the state's House vote, so it keeps its full share; its value is the district's own presidential lean.", source: "0.5 → 1.0 costs 0.025 on the calibration objective; kept at 1 so the districts still sum to the state." },
+        ]} />
       </Section>
 
       <Section id="example" kicker="Worked example · live" title={`${oh.name}`}
@@ -259,7 +265,7 @@ export function DistrictTplMethodology() {
           { term: "Inputs", def: "President and House only. Senate, Governor and State Legislature results are not available by congressional district." },
           { term: "Ineligible House races", def: "Skipped, not imputed: the presidential rows already carry the district's lean, so imputing from them would count it twice." },
           { term: "Elasticity", def: "The parent state's β*. A district-level elasticity cannot be tested — the only wave year with House rows on current lines is 2018, with five of them." },
-          { term: "Robust weighting", def: `Two-pass Huber: aggregate once unweighted to anchor the lean, then downweight each row by min(1, ${G.HUBER_C} / |NM − that anchor|) and aggregate again. (The state model anchors on the fitted lean instead.)` },
+          { term: "Robust weighting", def: `Two-pass Huber: aggregate once unweighted to anchor the lean, then downweight each row by min(1, ${G.HUBER_C} / |NM − that anchor|) and aggregate again. (The state model anchors its statewide rows on the fitted lean instead, and checks its House rows as one turnout-weighted year rather than one by one — a district's own rows across years are one seat, so the row-level check stays here.)` },
           { term: "Appointed incumbents", def: "Not distinguished at district level; a House incumbent always gets the full strip." },
           { term: "Presidential data", def: <>2016, 2020 and 2024 presidential votes re-aggregated to the 2026 boundaries (<Code>data/districtPresidentialData.ts</Code>), full-total-vote basis. Verified on the new maps of all ten redrawn states.</> },
         ]} />

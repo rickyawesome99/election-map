@@ -36,11 +36,18 @@
 //   replacing the hand-set S2/G7): P 2.49/2.96/3.18/1.93 · S 4.88/4.99/5.01/4.95 ·
 //   H 2.94/2.50/2.69/2.81 — no measurable change (S/G carry little TPL weight); the
 //   effect lives in WAR expected margins (DeSantis 2022 R+19.1 → R+16.3).
+//   House-year Huber (2026-09-21; House rows turnout-weighted with no row-level Huber, one
+//   Huber factor on each House year's type weight — see methodologyChangelog):
+//       P 2.40/2.58/2.71/1.93 · S 4.94/4.88/4.86/4.95 · H 3.08/2.40/2.55/2.79
+//     — the ablation columns moved most: they inherited the old NM-based row weights on
+//       House rows and now carry turnout weights; H is scored against an equal-weighted target.
+//   Imputed House rows at full turnout share (2026-09-22; IMPUTED_HOUSE_ROW_WEIGHT 1, statewide
+//   imputed rows stay 0.5): P 2.46/2.60/2.78/1.93 · S 5.02/4.97/5.01/4.95 · H 3.06/2.36/2.54/2.79
 // The 0.10 tolerance catches any real formula change, which moves these by far more.
 
 import fs from "node:fs";
 import path from "node:path";
-import { calculateStateModel, getTplFit, type ComputedRace } from "@/lib/tplCompute";
+import { calculateStateModel, getTplFit, houseYearFactor, type ComputedRace } from "@/lib/tplCompute";
 import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
 import { statesData } from "@/data/statesData";
 
@@ -86,7 +93,8 @@ function evaluate(pred: Maybe[], tgt: Maybe[]): EvalResult | null {
 function aggregate(
   races: ComputedRace[],
   value: (r: ComputedRace) => Maybe,
-  years: number[]
+  years: number[],
+  houseAnchor: Maybe = null // the state's fitted lean: one Huber factor on each House year's type weight
 ): Maybe {
   const yearSignals: { year: number; wrs: number; coverage: number }[] = [];
   for (const year of years) {
@@ -101,10 +109,11 @@ function aggregate(
     }
     const present = TYPES.filter((t) => typeNMs[t] != null);
     if (present.length === 0) continue;
-    const totalW = present.reduce((s, t) => s + (G.RACE_TYPE_WEIGHTS[t] ?? 0), 0);
+    const factor = (t: string) => (t === "H" ? houseYearFactor(typeNMs.H ?? null, houseAnchor) : 1);
+    const totalW = present.reduce((s, t) => s + (G.RACE_TYPE_WEIGHTS[t] ?? 0) * factor(t), 0);
     yearSignals.push({
       year,
-      wrs: present.reduce((s, t) => s + ((G.RACE_TYPE_WEIGHTS[t] ?? 0) / totalW) * typeNMs[t]!, 0),
+      wrs: present.reduce((s, t) => s + (((G.RACE_TYPE_WEIGHTS[t] ?? 0) * factor(t)) / totalW) * typeNMs[t]!, 0),
       coverage: totalW,
     });
   }
@@ -129,6 +138,7 @@ function buildRows(): StateRow[] {
   const HOLD_YEARS = G.YEARS.filter((y) => y <= 2022); // 2016–2022 incl. odd years
   return statesData.map(({ abbr, name }) => {
     const { races } = calculateStateModel(abbr, name);
+    const lean = getTplFit().lean[abbr] ?? null;
     const firstRaw = (t: string, year: number): Maybe =>
       races.find((r) => r.raceType === t && r.year === year)?.rawMargin ?? null;
     const h24s = races
@@ -137,7 +147,7 @@ function buildRows(): StateRow[] {
     return {
       abbr,
       races,
-      nmHold: aggregate(races, (r) => r.NM, HOLD_YEARS),
+      nmHold: aggregate(races, (r) => r.NM, HOLD_YEARS, lean),
       adjHold: aggregate(races, (r) => r.adjustedMargin, HOLD_YEARS),
       rawHold: aggregate(races, (r) => (r.rawMargin == null ? null : clip(r.rawMargin, 50)), HOLD_YEARS),
       pres2020: firstRaw("P", 2020),
@@ -151,10 +161,10 @@ function buildRows(): StateRow[] {
 // ── default mode: holdout + ablation vs baselines ────────────────────────────
 
 const EXPECTED: Record<string, Record<string, number>> = {
-  // reference values (fitted S/G incumbency, 2026-09-08, measured in-harness): target → predictor → MAE
-  p24: { nmHold: 2.49, adjHold: 2.96, rawHold: 3.18, pres2020: 1.93 },
-  s24: { nmHold: 4.88, adjHold: 4.99, rawHold: 5.01, pres2020: 4.95 },
-  h24: { nmHold: 2.94, adjHold: 2.5, rawHold: 2.69, pres2020: 2.81 },
+  // reference values (imputed House rows at full share, 2026-09-22, measured in-harness): target → predictor → MAE
+  p24: { nmHold: 2.46, adjHold: 2.60, rawHold: 2.78, pres2020: 1.93 },
+  s24: { nmHold: 5.02, adjHold: 4.97, rawHold: 5.01, pres2020: 4.95 },
+  h24: { nmHold: 3.06, adjHold: 2.36, rawHold: 2.54, pres2020: 2.79 },
 };
 
 function runHoldout(): void {

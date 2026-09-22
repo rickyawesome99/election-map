@@ -6,6 +6,7 @@ import ForecastMethodology from "@/components/methodology/ForecastMethodology";
 import { StateTplMethodology, DistrictTplMethodology, CountyTplMethodology } from "@/components/methodology/TplMethodology";
 import WarMethodology from "@/components/methodology/WarMethodology";
 import ChangeLog, { RevisionHistory } from "@/components/methodology/ChangeLog";
+import SourcesMethodology from "@/components/methodology/SourcesMethodology";
 import MethodologyToc from "@/components/methodology/MethodologyToc";
 
 // One tab per model. Each tab reads its constants and fitted values from the code that runs the
@@ -18,6 +19,7 @@ const TABS = [
   { key: "county-tpl", label: "County TPL", blurb: "The state pipeline in one county" },
   { key: "war", label: "WAR", blurb: "Candidate WAR, Expected Result, Vs. Opponent" },
   { key: "changelog", label: "Change Log", blurb: "What changed, and when" },
+  { key: "sources", label: "Sources", blurb: "Every external source behind the data" },
 ] as const;
 type TabKey = (typeof TABS)[number]["key"];
 
@@ -32,7 +34,7 @@ function parseTab(segments: string[] | undefined): TabKey {
 export async function generateMetadata({ params }: { params: Promise<{ model?: string[] }> }) {
   const active = parseTab((await params).model);
   const tab = TABS.find((t) => t.key === active)!;
-  return { title: `${tab.label} Methodology — ${electionYear} Forecast`, description: `How the ${tab.label} numbers on this site are calculated: ${tab.blurb.toLowerCase()}.` };
+  return { title: `${tab.label} · Methodology — ${electionYear} Forecast`, description: `${tab.label} — ${tab.blurb.toLowerCase()}.` };
 }
 
 export default async function MethodologyPage({ params }: { params: Promise<{ model?: string[] }> }) {
@@ -72,6 +74,7 @@ export default async function MethodologyPage({ params }: { params: Promise<{ mo
           {active === "county-tpl" && <><CountyTplMethodology /><RevisionHistory model="county-tpl" /></>}
           {active === "war" && <><WarMethodology /><RevisionHistory model="war" /></>}
           {active === "changelog" && <ChangeLog />}
+          {active === "sources" && <SourcesMethodology />}
         </main>
         <aside className="hidden lg:block">
           <div className="sticky top-4 max-h-[calc(100vh-2rem)] overflow-y-auto pt-8"><MethodologyToc key={active} contentId="methodology-content" /></div>

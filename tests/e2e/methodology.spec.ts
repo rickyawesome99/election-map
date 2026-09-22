@@ -11,7 +11,9 @@ const TABS: [string, string, string][] = [
   ["County TPL", "/methodology/county-tpl", "The state pipeline, measured in one county"],
   ["WAR", "/methodology/war", "How much better than a generic nominee"],
   ["Change Log", "/methodology/changelog", "Change log"],
+  ["Sources", "/methodology/sources", "Where every number comes from"],
 ];
+const NO_HISTORY = new Set(["Change Log", "Sources"]);
 
 test("methodology sits between Analysis and District Finder in the top navigation", async ({ page }) => {
   await page.goto("/overview");
@@ -30,7 +32,7 @@ test("every model tab renders its own specification", async ({ page }) => {
     await expect(page).toHaveURL(new RegExp(`${url}$`));
     await expect(models.getByRole("link", { name: label, exact: true })).toHaveAttribute("aria-current", "page");
     await expect(page.getByRole("heading", { name: heading, level: 2 })).toBeVisible({ timeout: 20_000 });
-    if (label !== "Change Log") await expect(page.getByRole("heading", { name: "Revision history", level: 2 })).toBeVisible();
+    if (!NO_HISTORY.has(label)) await expect(page.getByRole("heading", { name: "Revision history", level: 2 })).toBeVisible();
   }
   expect((await page.goto("/methodology/not-a-model"))?.status()).toBe(404);
 });
@@ -50,4 +52,16 @@ test("calibration tables are populated from the backtest", async ({ page }) => {
   const cal = page.locator("section#calibration");
   await expect(cal.getByRole("row", { name: /^Senate/ }).first()).toBeVisible();
   expect(await cal.locator("tbody tr").count()).toBeGreaterThan(25);
+});
+
+test("sources tab sits after the change log and links out to its publishers", async ({ page }) => {
+  await page.goto("/methodology/sources");
+  const labels = await page.getByRole("navigation", { name: "Models" }).getByRole("link").allTextContents();
+  expect(labels.slice(-2)).toEqual(["Change Log", "Sources"]);
+  for (const name of ["Federal Election Commission — bulk data", "Dave's Redistricting App — VTD election data", "OpenElections", "Wikipedia election articles"]) {
+    await expect(page.getByRole("link", { name, exact: true }).first()).toHaveAttribute("href", /^https:\/\//);
+  }
+  await expect(page.getByRole("heading", { name: "Provenance not recorded", level: 2 })).toBeVisible();
+  // the legislative-map table is read live: one row per state with a sourced map
+  expect(await page.locator("section#boundaries tbody tr").count()).toBeGreaterThanOrEqual(45);
 });

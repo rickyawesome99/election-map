@@ -75,7 +75,7 @@ export const TPL_GLOBAL_CONSTANTS = {
   // imputed weight 0.25–1.0 all moved the objective ≤ 0.01 — kept at their
   // designed values. Disabling Huber entirely won ~0.02 on presidential targets
   // by sacrificing Senate accuracy and robustness — rejected by design.
-  HUBER_C: 7,          // residual scale (pts) beyond which a race is downweighted
+  HUBER_C: 7,          // residual scale (pts) beyond which a statewide race — or, in the state model, a whole House year — is downweighted (House rows carry no row-level factor; see aggregateYears)
   FIT_ITERATIONS: 4,   // alternating least-squares rounds
   SPARSE_YEAR_K: 4,    // E(y) shrink factor n/(n + K) — reins in thin odd years
   BETA_SHRINK: 0.5,    // β* = 1 + BETA_SHRINK × (β̂ − 1)

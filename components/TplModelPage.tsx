@@ -1093,7 +1093,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                     ["FF ↗", "Fundraising strip = −clamp(k × money-gap%, ±cap), from FEC receipts. Applies where both candidates' receipts are known; Governor pending state filings."],
                     ["ENV ↗", "Environment adjustment = −β* × E(year). Strips the fitted national environment; imputed rows strip their source year's E."],
                     ["NM ↗", "Adjusted × (IF × CQ) + FF pts + WA."],
-                    ["Wt", "Weight in aggregation: ×0.5 if imputed, × Huber factor min(1, 7 ⁄ |NM − fitted lean|) — crossover outliers count less."],
+                    ["Wt", "Weight in aggregation: ×0.5 if an imputed statewide row (an imputed House row keeps its full share). Statewide rows × Huber factor min(1, 7 ⁄ |NM − fitted lean|) — crossover outliers count less. House rows × turnout share (total votes ⁄ the year's mean House turnout; imputed rows use their source presidential year's turnout) — the districts sum to the state, so there is no row-level Huber; the whole House year gets one Huber factor in the year table instead."],
                   ].map(([label, tip], ci) => {
                     const isClickable = label in FORMULA_PANELS;
                     return (
@@ -1260,10 +1260,10 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
 
         <div className="pt-2 flex min-h-4 flex-wrap gap-x-5 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>
           {filteredRaces.some((r) => r.imputed) && (
-            <span>⊘ Ineligible race (missing major-party nominee or same-party general) — Adjusted imputed from the seat&apos;s nearest presidential result, half weight in aggregation.</span>
+            <span>⊘ Ineligible race (missing major-party nominee or same-party general) — Adjusted imputed from the seat&apos;s nearest presidential result; half weight in aggregation for a statewide race, full turnout share for a House district.</span>
           )}
           {hasOddYears && <span>* Race year outside the aggregation window.</span>}
-          <span>Wt = aggregation weight: imputed rows ×0.5; every row × min(1, 7 ⁄ |NM − fitted lean|), so crossover outliers (Manchin, Scott…) can&apos;t drag the TPL.</span>
+          <span>Wt = aggregation weight: imputed statewide rows ×0.5; statewide rows × min(1, 7 ⁄ |NM − fitted lean|), so crossover outliers (Manchin, Scott…) can&apos;t drag the TPL; House rows × their share of the year&apos;s House turnout (no row-level Huber — a packed district is not an outlier; the whole House year gets one Huber factor in the year table).</span>
         </div>
 
         {/* Fitted environment strip */}
@@ -1359,6 +1359,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                         {wt != null && (
                           <div className="text-[10px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>
                             {(wt * 100).toFixed(1)}%
+                            {type === "H" && (agg.typeFactors?.H ?? 1) < 0.999 && <span title="One Huber check on the whole House year: min(1, 7 ⁄ |House NM − fitted lean|), applied to its type weight"> · Huber ×{agg.typeFactors.H.toFixed(2)}</span>}
                           </div>
                         )}
                       </td>

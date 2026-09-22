@@ -52,6 +52,7 @@ export interface RaceStub {
   demParty?: string; // true party of the dem-slot candidate ("I" for independents, etc.)
   repParty?: string;
   historicalMargins: { year: number; margin: number }[];
+  totalVotes?: number; // House only: ballots cast in the race (its turnout weight in the state model)
 }
 
 // ── Computed race types ───────────────────────────────────────────────────────
@@ -67,7 +68,8 @@ export interface ComputedRace extends RaceStub {
   imputedSourceDesc: string | null;
   minValidYear: number;
   envPts: number | null; // −β*(state) × E(year): strips the fitted national environment
-  aggWeight: number; // weight in aggregation: ×0.5 if imputed, × Huber factor vs the fitted lean (state model)
+  aggWeight: number; // weight in aggregation: ×0.5 if imputed; statewide rows × Huber factor vs the fitted lean, House rows × turnoutWeight (state model)
+  turnoutWeight?: number; // House rows in the state model: total votes relative to the state-year mean House turnout (imputed rows use their source presidential year's turnout)
   BS_pts?: number | null; // additive strip relocating a pre-2026 House race onto today's lines
   boundaryShift?: number | null; // the raw shift it undoes, pres(old lines) − pres(2026 lines)
   boundaryWeight?: number; // confidence in that relocation, 1 / (1 + (|shift| / k)²)
@@ -80,8 +82,9 @@ export interface YearAggregation {
   racesPresent: string[];
   redistributedWeights: Record<string, number>;
   typeNMs: Record<string, number | null>;
+  typeFactors: Record<string, number>; // per-type Huber factor on the year's type mean (House in the state model; 1 otherwise)
   WRS: number;
-  coverage: number;    // Σ base type weights of types present — scales the year weight
+  coverage: number;    // Σ base type weight × type factor of types present — scales the year weight
   finalWeight: number; // normalized share of TPL contributed by this year
 }
 
@@ -113,11 +116,17 @@ export interface DistrictModelCalculation {
 // IF/CQ/FF/WA entirely — the imputed value is already a lean, not an outcome.
 
 export const IMPUTED_RACE_WEIGHT = 0.5;
+// A state model's House rows are turnout-weighted shares of the state's House vote, so an
+// imputed (uncontested / same-party) district keeps its full share: halving it would drop
+// half that district's voters out of the state's sum. The imputed value is that district's
+// own presidential lean, which is a better estimate of its share than a missing race.
+export const IMPUTED_HOUSE_ROW_WEIGHT = 1;
 
 interface ImputedLean {
   margin: number;
   year: number;
   desc: string;
+  totalVotes?: number; // turnout of the source result (House rows carry it as their aggregation weight)
 }
 
 function byNearestYear(raceYear: number) {
@@ -139,7 +148,7 @@ function nearestPresidentialLean(
           .filter((e) => e.race === "President" && e.year >= minValidYear && e.year < maxValidYear)
           .sort(byNearestYear(raceYear))[0]
       : undefined;
-    if (entry) return { margin: entry.repPct - entry.demPct, year: entry.year, desc: "district presidential result" };
+    if (entry) return { margin: entry.repPct - entry.demPct, year: entry.year, desc: "district presidential result", totalVotes: entry.totalVotes };
   }
   const entry = (presPastResults[stateAbbr] ?? []).slice().sort(byNearestYear(raceYear))[0];
   return entry
@@ -239,10 +248,26 @@ function incumbentFromResult(result?: Pick<PastResult, "demIncumbent" | "repIncu
 }
 
 // ── aggregateYears ────────────────────────────────────────────────────────────
-// Shared by the state and county models: redistributes race-type weights among whichever
-// types are actually present each year, then produces the recency-weighted TPL.
+// Shared by the state, district and county models: redistributes race-type weights among
+// whichever types are actually present each year, then produces the recency-weighted TPL.
+//
+// houseAnchor (state model only): the state's fitted lean. A state's House rows are NOT
+// Huber-weighted individually — a packed D+60 district is not an outlier, it is a district,
+// and downweighting it by its distance from the state lean skewed every packed-map state's
+// House aggregate toward the party with more middling seats (GA 2024: R+10 vs a turnout-
+// weighted R+0.4). The districts sum to the state, so the House year is taken as a turnout-
+// weighted mean and the outlier check is applied ONCE to that whole House year: its base
+// type weight is multiplied by min(1, HUBER_C / |House NM − lean|) before redistribution
+// and coverage, so a delegation-wide result that contradicts the state's lean counts less
+// within its year and, through coverage, against the other years.
 
-function aggregateYears(races: ComputedRace[]): { yearAggregations: YearAggregation[]; tpl: number } {
+export function houseYearFactor(houseNM: number | null, houseAnchor: number | null | undefined): number {
+  if (houseNM == null || houseAnchor == null) return 1;
+  const resid = Math.abs(houseNM - houseAnchor);
+  return resid <= G.HUBER_C ? 1 : G.HUBER_C / resid;
+}
+
+function aggregateYears(races: ComputedRace[], houseAnchor?: number | null): { yearAggregations: YearAggregation[]; tpl: number } {
   const yearAggregations = G.YEARS.map((year) => {
     const yearRaces = races.filter((race) => race.year === year && race.NM != null);
     const typeNMs: Record<string, number | null> = {};
@@ -254,13 +279,15 @@ function aggregateYears(races: ComputedRace[]): { yearAggregations: YearAggregat
         : null;
     }
     const racesPresent = ["P", "G", "S", "H", "L"].filter((t) => typeNMs[t] != null);
-    const totalBase = racesPresent.reduce((sum, type) => sum + (G.RACE_TYPE_WEIGHTS[type] ?? 0), 0);
+    const typeFactors: Record<string, number> = {};
+    for (const type of racesPresent) typeFactors[type] = type === "H" ? houseYearFactor(typeNMs.H, houseAnchor) : 1;
+    const totalBase = racesPresent.reduce((sum, type) => sum + (G.RACE_TYPE_WEIGHTS[type] ?? 0) * typeFactors[type], 0);
     const redistributedWeights: Record<string, number> = {};
     for (const type of racesPresent) {
-      redistributedWeights[type] = (G.RACE_TYPE_WEIGHTS[type] ?? 0) / totalBase;
+      redistributedWeights[type] = ((G.RACE_TYPE_WEIGHTS[type] ?? 0) * typeFactors[type]) / totalBase;
     }
     const WRS = racesPresent.reduce((sum, type) => sum + redistributedWeights[type] * (typeNMs[type] ?? 0), 0);
-    return { year, racesPresent, redistributedWeights, typeNMs, WRS, coverage: totalBase, finalWeight: 0 };
+    return { year, racesPresent, redistributedWeights, typeNMs, typeFactors, WRS, coverage: totalBase, finalWeight: 0 };
   });
 
   // Year weight = recency decay × base type-weight coverage, so a sparse year
@@ -446,7 +473,7 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
     }));
     for (const r of dist.pastResults ?? []) {
       if (r.year >= 2016) {
-        stubs.push(makeStub(`House ${dist.name}`, "H", r.year, dist.name, incumbentFromResult(r), historicalMargins, `/house/${dist.name.toLowerCase()}`, classifyEligibility(r, stateAbbr), whoOf(r), appointedFromResult(r)));
+        stubs.push({ ...makeStub(`House ${dist.name}`, "H", r.year, dist.name, incumbentFromResult(r), historicalMargins, `/house/${dist.name.toLowerCase()}`, classifyEligibility(r, stateAbbr), whoOf(r), appointedFromResult(r)), totalVotes: r.totalVotes });
       }
     }
   }
@@ -682,13 +709,21 @@ export function calculateStateModel(stateAbbr: string, stateName: string): State
     const NM = adjustedMargin != null
       ? adjustedMargin + (incumbencyPts ?? 0) + (FF_pts ?? 0) + (envPts ?? 0)
       : null;
-    // Aggregation weight: imputed rows enter at IMPUTED_RACE_WEIGHT, and every row is
-    // Huber-downweighted by its residual against the state's fitted lean — so a
-    // crossover outlier (Manchin, Scott, Hogan) cannot drag the headline TPL either.
+    // Aggregation weight: imputed statewide rows enter at IMPUTED_RACE_WEIGHT, imputed House
+    // rows at IMPUTED_HOUSE_ROW_WEIGHT (their share of the state stays whole). Statewide rows are
+    // Huber-downweighted by their residual against the state's fitted lean — so a crossover
+    // outlier (Manchin, Scott, Hogan) cannot drag the headline TPL either. House rows are
+    // not: they are turnout-weighted below (the districts sum to the state), and the House
+    // YEAR gets one Huber factor in aggregateYears instead.
     const stateLean = fit.lean[stateAbbr];
     const residual = NM != null && stateLean != null ? NM - stateLean : 0;
-    const huberW = Math.abs(residual) <= G.HUBER_C ? 1 : G.HUBER_C / Math.abs(residual);
-    const aggWeight = (imputed ? IMPUTED_RACE_WEIGHT : 1) * huberW;
+    const huberW = stub.raceType === "H" ? 1 : Math.abs(residual) <= G.HUBER_C ? 1 : G.HUBER_C / Math.abs(residual);
+    const imputedWeight = stub.raceType === "H" ? IMPUTED_HOUSE_ROW_WEIGHT : IMPUTED_RACE_WEIGHT;
+    const aggWeight = (imputed ? imputedWeight : 1) * huberW;
+    // Turnout behind a House row: the race's own total vote, or for an imputed row the
+    // source presidential result's (an uncontested seat's depressed House turnout says
+    // nothing about its share of the state).
+    const totalVotes = stub.raceType === "H" ? (imputed ? imputation?.totalVotes : stub.totalVotes) : undefined;
     return {
       ...stub,
       rawMargin,
@@ -702,12 +737,26 @@ export function calculateStateModel(stateAbbr: string, stateName: string): State
       minValidYear,
       envPts,
       aggWeight,
+      turnoutWeight: totalVotes,
       NM,
       inAggregation,
     };
   });
 
-  const { yearAggregations, tpl } = aggregateYears(races);
+  // House turnout weights: total votes relative to the state-year's mean House turnout, so
+  // a row's weight reads as "this district's share of the state's House vote" (mean 1) and
+  // a row with no vote count enters at that mean.
+  for (const year of new Set(races.filter((r) => r.raceType === "H").map((r) => r.year))) {
+    const rows = races.filter((r) => r.raceType === "H" && r.year === year);
+    const known = rows.filter((r) => (r.turnoutWeight ?? 0) > 0);
+    const meanVotes = known.length > 0 ? known.reduce((a, r) => a + r.turnoutWeight!, 0) / known.length : 0;
+    for (const r of rows) {
+      r.turnoutWeight = meanVotes > 0 && (r.turnoutWeight ?? 0) > 0 ? r.turnoutWeight! / meanVotes : 1;
+      r.aggWeight *= r.turnoutWeight;
+    }
+  }
+
+  const { yearAggregations, tpl } = aggregateYears(races, fit.lean[stateAbbr]);
 
   return { races, yearAggregations, tpl };
 }

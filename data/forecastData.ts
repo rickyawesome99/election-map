@@ -12478,1614 +12478,1611 @@ export type BoundaryHistoryEntry = {
 export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
   "1201": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) redrew central and southern Florida but left the Panhandle and North Florida alone: FL-1's lines are unchanged, still covering the western Panhandle around Pensacola (Escambia, Santa Rosa, Okaloosa and part of Walton County).", "pviNew": 18, "pviOld": 19 },
-    { "year": 2022, "description": "FL-1 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 10, "pviOld": 20 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 22 }
+    { "year": 2022, "description": "FL-1 was reshaped, dropping out of Holmes County and cutting its share of Walton County from 100% to 59%. It was solidly Republican.", "pviNew": 10, "pviOld": 20 },
+    { "year": 2016, "description": "FL-1's western Panhandle lines were left unchanged by the remedial map. It remained safely Republican.", "pviNew": 22 }
   ],
   "1202": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) redrew central and southern Florida but left the Panhandle and North Florida alone: FL-2's lines are unchanged, still running from Panama City through Tallahassee and the Big Bend.", "pviNew": 8, "pviOld": 8 },
-    { "year": 2022, "description": "FL-2 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 8, "pviOld": 29 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 18 }
+    { "year": 2022, "description": "FL-2 was reshaped, adding Madison and Gadsden counties, taking in the rest of Holmes County and taking in the rest of Jefferson County. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Republican.", "pviNew": 8, "pviOld": 29 },
+    { "year": 2016, "description": "FL-2 was pulled out of Tallahassee, giving up Gadsden County and most of Leon and Jefferson, and extended east instead across Dixie, Lafayette, Suwannee, Levy and Gilchrist counties. It stayed safely Republican.", "pviNew": 18 }
   ],
   "1203": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) redrew central and southern Florida but left the Panhandle and North Florida alone: FL-3's lines are unchanged, still a north-central seat anchored by Gainesville and reaching into part of Marion County.", "pviNew": 10, "pviOld": 9 },
-    { "year": 2022, "description": "FL-3 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 9, "pviOld": 8 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 9 }
+    { "year": 2022, "description": "FL-3 was substantially redrawn, adding Dixie, Suwannee, Levy, Gilchrist, Hamilton and Baker counties and one more, taking 92% of Lafayette County and giving up Clay and Putnam counties. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Republican.", "pviNew": 9, "pviOld": 8 },
+    { "year": 2016, "description": "FL-3 consolidated around Gainesville and Ocala, taking in all of Alachua and Putnam counties and half of Marion, while shedding the rural belt of Dixie, Lafayette, Suwannee, Levy, Gilchrist, Hamilton and Columbia. It remained solidly Republican.", "pviNew": 9 }
   ],
   "1204": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) redrew central and southern Florida but left the Panhandle and North Florida alone: FL-4's lines are unchanged, still pairing Nassau and Clay counties with the western side of Jacksonville.", "pviNew": 5, "pviOld": 6 },
-    { "year": 2022, "description": "FL-4 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 6, "pviOld": 14 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 17 }
+    { "year": 2022, "description": "FL-4 was reshaped, adding Clay County and dropping out of St. Johns County. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Republican.", "pviNew": 6, "pviOld": 14 },
+    { "year": 2016, "description": "FL-4 shifted south out of Jacksonville, taking 71% of St. Johns County and giving up Baker County and part of Duval. It stayed safely Republican.", "pviNew": 17 }
   ],
   "1205": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) redrew central and southern Florida but left the Panhandle and North Florida alone: FL-5's lines are unchanged, still covering the rest of Jacksonville and most of St. Johns County.", "pviNew": 10, "pviOld": 11 },
-    { "year": 2022, "description": "FL-5 changed dramatically under Florida's 2022 map. The prior north Florida Black-performing district linking Jacksonville and Tallahassee was dismantled, and the new 5th became a very different Jacksonville-area district that leaned much more Republican.", "pviNew": 11, "pviOld": -12 },
-    { "year": 2016, "description": "FL-5 was one of the most important changes on Florida's court-ordered 2016 map. The district was redrawn into a north Florida seat linking Jacksonville to Tallahassee, replacing the older Orlando-to-Jacksonville configuration.", "pviNew": -12 }
+    { "year": 2022, "description": "FL-5 was rebuilt almost from scratch, taking 62% of St. Johns County, giving up Madison, Baker, Gadsden and Hamilton counties and dropping out of Jefferson County. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Republican.", "pviNew": 11, "pviOld": -12 },
+    { "year": 2016, "description": "FL-5 was reoriented from a north-south district running from Jacksonville toward Orlando into an east-west one spanning the top of the state, adding Madison, Baker, Gadsden and Hamilton counties plus most of Leon and Jefferson while giving up Putnam, Lake, Alachua, Orange, Marion, Clay and Seminole. It remained solidly Democratic.", "pviNew": -12 }
   ],
   "1206": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) redrew central and southern Florida but left the Panhandle and North Florida alone: FL-6's lines are unchanged, still taking in Flagler and Putnam counties plus parts of Volusia, Marion, Lake and St. Johns.", "pviNew": 14, "pviOld": 14 },
-    { "year": 2022, "description": "FL-6 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 14, "pviOld": 10 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 7 }
+    { "year": 2022, "description": "FL-6 was reshaped, adding Putnam County, taking 60% of Marion County and raising its share of St. Johns County from 28% to 38%. It was solidly Republican.", "pviNew": 14, "pviOld": 10 },
+    { "year": 2016, "description": "FL-6 took in all of Volusia County and 39% of Lake, giving up Putnam County and most of St. Johns. It stayed Republican-leaning.", "pviNew": 7 }
   ],
   "1207": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) redrew central and southern Florida but left the Panhandle and North Florida alone: FL-7's lines are unchanged, still made up of Seminole County and southern Volusia County.", "pviNew": 5, "pviOld": 5 },
-    { "year": 2022, "description": "FL-7 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 5, "pviOld": -3 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 0 }
+    { "year": 2022, "description": "FL-7 was reshaped, taking 47% of Volusia County. It leaned Republican.", "pviNew": 5, "pviOld": -3 },
+    { "year": 2016, "description": "FL-07 tightened around Seminole County, taking in nearly all of it and dropping its share of Volusia. It became one of the state's most closely divided seats.", "pviNew": 0 }
   ],
   "1208": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) kept FL-8 anchored in Brevard County but dropped Indian River County (now in FL-9) and pushed further into eastern Orange County around UCF. On 2024 presidential results it moves from Trump +22 to Trump +16.", "pviNew": 11, "pviOld": 11 },
-    { "year": 2022, "description": "FL-8 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 11, "pviOld": 12 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 11 }
+    { "year": 2022, "description": "FL-8 kept most of its previous shape, cutting its share of Orange County from 24% to 13%. It was solidly Republican.", "pviNew": 11, "pviOld": 12 },
+    { "year": 2016, "description": "FL-8's Space Coast lines were left unchanged by the remedial map. It remained solidly Republican.", "pviNew": 11 }
   ],
   "1209": [
     { "year": 2026, "description": "FL-9 is one of four Democratic-held seats that Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) turned Republican-leaning. It gave up its share of Orange County and now runs from Osceola County (Kissimmee, St. Cloud) south and east through Okeechobee, Highlands and Glades counties to Indian River County on the Atlantic coast, shifting from Harris +3.5 to Trump +18.", "pviNew": -4, "pviOld": -8 },
-    { "year": 2022, "description": "FL-9 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -8, "pviOld": -3 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -5 }
+    { "year": 2022, "description": "FL-9 was reshaped, raising its share of Orange County from 16% to 27% and dropping out of Polk County. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Democratic.", "pviNew": -8, "pviOld": -3 },
+    { "year": 2016, "description": "FL-9 moved west, raising its share of Polk County from 8% to 47% while cutting its share of Orange. It stayed Democratic-leaning.", "pviNew": -5 }
   ],
   "1210": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) reshaped FL-10 within Orange County but kept it a compact Orlando seat (downtown Orlando, Pine Hills, Winter Park). At Harris +24 it is the only Democratic-leaning district left in Central Florida.", "pviNew": -13, "pviOld": -14 },
-    { "year": 2022, "description": "FL-10 was heavily reworked under Florida's 2022 map, becoming a more compact Orlando-based Democratic seat after the statewide reshuffle.", "pviNew": -14, "pviOld": -12 },
-    { "year": 2016, "description": "FL-10 was substantially reworked under Florida's 2016 remedial map as central Florida districts were untangled and redrawn around Orlando.", "pviNew": -11 }
+    { "year": 2022, "description": "FL-10 was rebuilt almost from scratch, cutting its share of Orange County from 51% to 27%. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Democratic.", "pviNew": -14, "pviOld": -12 },
+    { "year": 2016, "description": "FL-10 was concentrated in Orange County, doubling its share there to 51% while giving up Lake and Polk counties entirely. It became solidly Democratic.", "pviNew": -11 }
   ],
   "1211": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) made only modest changes to FL-11, which still covers Sumter County (The Villages), much of Lake County and western Orange County but no longer reaches into Polk County. Its partisanship is essentially unchanged at Trump +16.", "pviNew": 8, "pviOld": 8 },
-    { "year": 2022, "description": "FL-11 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 8, "pviOld": 18 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 15 }
+    { "year": 2022, "description": "FL-11 was substantially redrawn, taking 33% of Orange County, raising its share of Lake County from 37% to 56% and giving up Hernando and Citrus counties. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Republican.", "pviNew": 8, "pviOld": 18 },
+    { "year": 2016, "description": "FL-11 took in 36% of Lake County and cut its share of Marion from 56% to 32%. It remained safely Republican.", "pviNew": 15 }
   ],
   "1212": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) used FL-12 to split Tampa. Formerly a Citrus-Hernando-Pasco seat (Trump +34), it handed Citrus, Hernando and eastern Pasco to FL-15 and now runs from western and central Pasco County (New Port Richey, Land O' Lakes) south into Hillsborough County, including Carrollwood and downtown Tampa. It is now Trump +15.", "pviNew": 17, "pviOld": 17 },
-    { "year": 2022, "description": "FL-12 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 17, "pviOld": 11 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 8 }
+    { "year": 2022, "description": "FL-12 was reshaped, adding Hernando and Citrus counties, dropping out of Pinellas County and cutting its share of Pasco County from 99% to 80%. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Republican.", "pviNew": 17, "pviOld": 11 },
+    { "year": 2016, "description": "FL-12 raised its share of Pinellas County from 23% to 33%, otherwise keeping its Gulf Coast footprint. It stayed solidly Republican.", "pviNew": 8 }
   ],
   "1213": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) adjusted FL-13 only at the edges. It remains a Pinellas County seat (Clearwater, Largo, Palm Harbor) that leaves out downtown and south St. Petersburg, moving from Trump +12 to Trump +13.", "pviNew": 5, "pviOld": 6 },
-    { "year": 2022, "description": "FL-13 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 6, "pviOld": 0 },
-    { "year": 2016, "description": "FL-13 was notably altered by Florida's 2016 court-ordered map, becoming more compact around Pinellas County and less like the prior configuration that extended further afield.", "pviNew": -2 }
+    { "year": 2022, "description": "FL-13 was reshaped, raising its share of Pinellas County from 63% to 84%. It leaned Republican.", "pviNew": 6, "pviOld": 0 },
+    { "year": 2016, "description": "FL-13 remained a Pinellas County seat, but the remedial map removed the arm that had reached across Tampa Bay and made it a compact, wholly Pinellas district. It became a narrowly Democratic toss-up.", "pviNew": -2 }
   ],
   "1214": [
     { "year": 2026, "description": "FL-14 is one of four Democratic-held seats that Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) turned Republican-leaning. The old Tampa-St. Petersburg district (Harris +8) lost St. Petersburg to FL-16 and downtown and East Tampa to FL-12 and FL-15; it now lies entirely in Hillsborough County, joining South Tampa and Town 'n' Country to the eastern and southern suburbs (Brandon, Plant City, Riverview, Sun City Center) at Trump +10.", "pviNew": -5, "pviOld": -8 },
-    { "year": 2022, "description": "FL-14 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -8, "pviOld": -7 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -7 }
+    { "year": 2022, "description": "FL-14 was reshaped, taking 15% of Pinellas County. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Democratic.", "pviNew": -8, "pviOld": -7 },
+    { "year": 2016, "description": "FL-14 dropped its share of Pinellas County, concentrating the district in Hillsborough and Tampa. It remained Democratic-leaning.", "pviNew": -7 }
   ],
   "1215": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) turned FL-15 from a northeast Hillsborough-east Pasco seat into one that runs north from East Tampa and Temple Terrace through eastern Pasco County (Wesley Chapel, Zephyrhills, Dade City) to all of Hernando and Citrus counties, which came from FL-12. It moves from Trump +11 to Trump +20.", "pviNew": 5, "pviOld": 4 },
-    { "year": 2022, "description": "FL-15 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 4, "pviOld": 6 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 6 }
+    { "year": 2022, "description": "FL-15 was substantially redrawn, taking 20% of Pasco County, dropping out of Lake County and cutting its share of Polk County from 25% to 6%. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Republican.", "pviNew": 4, "pviOld": 6 },
+    { "year": 2016, "description": "FL-15 reached north to take 25% of Lake County, otherwise holding its inland Tampa-area shape. It stayed Republican-leaning.", "pviNew": 6 }
   ],
   "1216": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) kept FL-16 based in Manatee County (Bradenton) but swapped its southern Hillsborough suburbs for St. Petersburg, across Tampa Bay, along with part of Sarasota County, inland DeSoto and Hardee counties and a piece of Polk County. It moves from Trump +15 to Trump +14.", "pviNew": 7, "pviOld": 7 },
-    { "year": 2022, "description": "FL-16 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 7, "pviOld": 7 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 7 }
+    { "year": 2022, "description": "FL-16 was reshaped, dropping out of Sarasota County. It leaned Republican.", "pviNew": 7, "pviOld": 7 },
+    { "year": 2016, "description": "FL-16 took in all of Manatee County and 36% of Hillsborough while cutting its share of Sarasota from 100% to 36%. It remained Republican-leaning.", "pviNew": 7 }
   ],
   "1217": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) left FL-17 a southwest coast seat (Sarasota, Venice, North Port, Punta Gorda and part of Lee County) but gave part of Sarasota County to FL-16 and reshuffled its Lee County territory with FL-19. It moves from Trump +24 to Trump +22.", "pviNew": 11, "pviOld": 10 },
-    { "year": 2022, "description": "FL-17 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 10, "pviOld": 16 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 13 }
+    { "year": 2022, "description": "FL-17 was substantially redrawn, taking in the rest of Sarasota County, giving up Glades, DeSoto, Hardee, Okeechobee and Highlands counties and dropping out of Polk County. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Republican.", "pviNew": 10, "pviOld": 16 },
+    { "year": 2016, "description": "FL-17 swapped its Manatee and Hillsborough county territory for 64% of Sarasota, and cut its share of Polk from 52% to 28%. It stayed solidly Republican.", "pviNew": 13 }
   ],
   "1218": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) shrank FL-18 from a sprawling Heartland district into a compact Polk County seat (Lakeland, Winter Haven, Haines City) with a small piece of Osceola County around Poinciana. DeSoto, Hardee, Highlands, Okeechobee, Glades and Hendry counties went to neighboring districts, taking it from Trump +29 to Trump +17.", "pviNew": 14, "pviOld": 13 },
-    { "year": 2022, "description": "FL-18 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 13, "pviOld": 6 },
-    { "year": 2016, "description": "FL-18 saw meaningful changes on the 2016 remedial map as south and Treasure Coast districts were redrawn for population balance and to unwind the prior plan.", "pviNew": 5 }
+    { "year": 2022, "description": "FL-18 was rebuilt almost from scratch, adding Glades, DeSoto, Hardee, Okeechobee, Hendry and Highlands counties, taking 77% of Polk County and giving up Martin and St. Lucie counties. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Republican.", "pviNew": 13, "pviOld": 6 },
+    { "year": 2016, "description": "FL-18's Treasure Coast lines were left unchanged by the remedial map. It remained Republican-leaning.", "pviNew": 5 }
   ],
   "1219": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) made only small changes to FL-19, which remains the coastal Lee-Collier seat (Cape Coral, Naples) and trades some Lee County territory with FL-17. It stays about Trump +30.", "pviNew": 14, "pviOld": 13 },
-    { "year": 2022, "description": "FL-19 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 13, "pviOld": 12 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 13 }
+    { "year": 2022, "description": "FL-19 kept most of its previous shape, trading territory with FL-25 and FL-17 within the same counties. It was solidly Republican.", "pviNew": 13, "pviOld": 12 },
+    { "year": 2016, "description": "FL-19's southwest Gulf Coast lines were left unchanged. It stayed solidly Republican.", "pviNew": 13 }
   ],
   "1220": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) redrew FL-20 from a heavily Black district linking parts of Broward and Palm Beach counties through the Everglades farm towns into a compact central and northern Broward seat (Fort Lauderdale, Pompano Beach, Lauderhill, Tamarac, Sunrise, Coral Springs, Deerfield Beach). It stays safely Democratic at Harris +37.", "pviNew": -22, "pviOld": -25 },
-    { "year": 2022, "description": "FL-20 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -25, "pviOld": -28 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -31 }
+    { "year": 2022, "description": "FL-20 kept most of its previous shape, trading territory with FL-23, FL-22 and FL-18 within the same counties. It was safely Democratic.", "pviNew": -25, "pviOld": -28 },
+    { "year": 2016, "description": "FL-20 gave up Hendry County and concentrated in Broward, raising its share there from 44% to 72%. It remained safely Democratic.", "pviNew": -31 }
   ],
   "1221": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) made only minor adjustments to FL-21, which still covers St. Lucie and Martin counties and northern Palm Beach County (Jupiter, Palm Beach Gardens) at Trump +16.", "pviNew": 7, "pviOld": 7 },
-    { "year": 2022, "description": "FL-21 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 7, "pviOld": -8 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -9 }
+    { "year": 2022, "description": "FL-21 was rebuilt almost from scratch, adding Martin and St. Lucie counties. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Republican.", "pviNew": 7, "pviOld": -8 },
+    { "year": 2016, "description": "FL-21's Palm Beach County lines were left unchanged by the remedial map. It stayed solidly Democratic.", "pviNew": -9 }
   ],
   "1222": [
     { "year": 2026, "description": "FL-22 is one of four Democratic-held seats that Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) turned Republican-leaning. The number moved off the old Palm Beach County coastal seat (Harris +6) to a largely new cross-state district joining Collier and Hendry counties to western Palm Beach County (Wellington, Belle Glade) and western Broward County (Parkland, Plantation, Weston, Davie) at Trump +10.", "pviNew": -4, "pviOld": -7 },
-    { "year": 2022, "description": "FL-22 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -7, "pviOld": -6 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -6 }
+    { "year": 2022, "description": "FL-22 was rebuilt almost from scratch, taking 12% of Palm Beach County and dropping out of Broward County. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Democratic.", "pviNew": -7, "pviOld": -6 },
+    { "year": 2016, "description": "FL-22's Broward and Palm Beach coastal lines were left unchanged. It remained Democratic-leaning.", "pviNew": -6 }
   ],
   "1223": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) moved FL-23 north. Once a Broward-Boca Raton seat (Harris +2), it now covers coastal Palm Beach County from Riviera Beach and West Palm Beach south through Boynton Beach and Delray Beach, territory that was mostly in the old FL-22, and is Harris +14.", "pviNew": -2, "pviOld": -5 },
-    { "year": 2022, "description": "FL-23 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -5, "pviOld": -9 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -11 }
+    { "year": 2022, "description": "FL-23 was rebuilt almost from scratch, trading territory with FL-22 and FL-21 within the same counties. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Democratic.", "pviNew": -5, "pviOld": -9 },
+    { "year": 2016, "description": "FL-23's Broward and Miami-Dade coastal lines were left unchanged. It stayed solidly Democratic.", "pviNew": -11 }
   ],
   "1224": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) kept FL-24 as the heavily Black seat of northern Miami-Dade County (Miami Gardens, North Miami, Liberty City) and extended it further into southern Broward County to take in Hollywood, deepening it from Harris +30 to Harris +39.", "pviNew": -18, "pviOld": -25 },
-    { "year": 2022, "description": "FL-24 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -25, "pviOld": -28 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -34 }
+    { "year": 2022, "description": "FL-24 kept most of its previous shape, trading territory with FL-27 and FL-23 within the same counties. It was safely Democratic.", "pviNew": -25, "pviOld": -28 },
+    { "year": 2016, "description": "FL-24's Miami-Dade and Broward lines were left unchanged by the remedial map. It remained safely Democratic.", "pviNew": -34 }
   ],
   "1225": [
     { "year": 2026, "description": "FL-25 is one of four Democratic-held seats that Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) turned Republican-leaning. Formerly a southern Broward seat (Harris +5), it is now a coastal strip running from Boca Raton in Palm Beach County down through Broward to Aventura and Miami Beach in Miami-Dade County, at Trump +9.", "pviNew": -5, "pviOld": -9 },
-    { "year": 2022, "description": "FL-25 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -9, "pviOld": 8 },
-    { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 4 }
+    { "year": 2022, "description": "FL-25 was rebuilt almost from scratch, taking 17% of Broward County, giving up Hendry County and dropping out of Collier County. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Democratic.", "pviNew": -9, "pviOld": 8 },
+    { "year": 2016, "description": "FL-25 took in all of Hendry County and gave up its share of Broward, shifting the district inland across the Everglades. It stayed Republican-leaning.", "pviNew": 4 }
   ],
   "1226": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) removed Collier County from FL-26 (it now sits in FL-22). The district keeps Hialeah, Miami Lakes and Doral in northwest Miami-Dade County and adds Pembroke Pines and Miramar in southwest Broward County, moving from Trump +35 to Trump +18.", "pviNew": 16, "pviOld": 8 },
-    { "year": 2022, "description": "FL-26 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 8, "pviOld": -1 },
-    { "year": 2016, "description": "FL-26 was significantly redrawn under Florida's 2016 court-ordered map, with Miami-Dade and southwest Florida lines reconfigured in a way that changed the district's partisan balance.", "pviNew": -6 }
+    { "year": 2022, "description": "FL-26 was rebuilt almost from scratch, taking 89% of Collier County, giving up Monroe County and cutting its share of Miami-Dade County from 62% to 25%. Florida gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Republican.", "pviNew": 8, "pviOld": -1 },
+    { "year": 2016, "description": "FL-26's Miami-Dade and Monroe county lines were left unchanged. It remained Democratic-leaning.", "pviNew": -6 }
   ],
   "1227": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) made only minor adjustments to FL-27, which still covers central Miami-Dade County (downtown Miami, Little Havana, Coral Gables, Kendall) at about Trump +15.", "pviNew": 6, "pviOld": 0 },
-    { "year": 2022, "description": "FL-27 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 0, "pviOld": -4 },
-    { "year": 2016, "description": "FL-27 was effectively created as a new Miami-area seat under Florida's 2016 remedial map, taking territory that had been configured differently under the previous plan.", "pviNew": -5 }
+    { "year": 2022, "description": "FL-27 was reshaped, trading territory with FL-26 and FL-25 within the same counties. It was evenly split.", "pviNew": 0, "pviOld": -4 },
+    { "year": 2016, "description": "FL-27's Miami-Dade lines were left unchanged by the remedial map. It stayed Democratic-leaning.", "pviNew": -5 }
   ],
   "1228": [
     { "year": 2026, "description": "Florida's 2026 map (signed by Gov. Ron DeSantis on May 4, 2026, and cleared for use by the Florida Supreme Court on June 10) made only minor adjustments to FL-28, which still covers southwestern Miami-Dade County (Homestead) and the Florida Keys at about Trump +25.", "pviNew": 10, "pviOld": 2 },
-    { "year": 2022, "description": "FL-28 was a new district for 2022 after Florida gained a seat. It was drawn in southwest Florida and helped reshuffle neighboring South Florida districts.", "pviNew": 2 }
+    { "year": 2022, "description": "FL-28 was a new seat, created when Florida gained a district in the 2020 reapportionment, built on Monroe County. It was a Republican-leaning toss-up.", "pviNew": 2 }
   ],
   "1301": [
-    { "year": 2024, "description": "GA-1 saw only modest coastal and southeast Georgia adjustments under the 2024 map; its basic south-coastal footprint stayed intact.", "pviNew": 9, "pviOld": 9 },
-    { "year": 2022, "description": "GA-1 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 9, "pviOld": 9 }
+    { "year": 2024, "description": "GA-1's south-coastal lines were essentially unchanged apart from a sliver of Evans County. It stayed solidly Republican.", "pviNew": 9, "pviOld": 9 },
+    { "year": 2022, "description": "GA-1 was reshaped, adding Appling County, giving up Clinch and Echols counties and dropping out of Lowndes County. It was solidly Republican.", "pviNew": 9, "pviOld": 9 }
   ],
   "1302": [
-    { "year": 2024, "description": "GA-2 remained the southwest Georgia/Black Belt district, with only secondary adjustments as the legislature reworked metro Atlanta seats in 2024.", "pviNew": -3, "pviOld": -3 },
-    { "year": 2022, "description": "GA-2 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -3, "pviOld": -4 }
+    { "year": 2024, "description": "GA-2's southwest Georgia lines were left unchanged by the court-ordered redraw. It remained a narrowly Democratic seat.", "pviNew": -3, "pviOld": -3 },
+    { "year": 2022, "description": "GA-2 kept most of its previous shape, adding Thomas County, taking 13% of Houston County and raising its share of Muscogee County from 78% to 89%. It was a Democratic-leaning toss-up.", "pviNew": -3, "pviOld": -4 }
   ],
   "1303": [
-    { "year": 2024, "description": "GA-3 stayed a west Georgia seat anchored outside metro Atlanta, with only modest population-balancing changes in the 2024 redraw.", "pviNew": 18, "pviOld": 18 },
-    { "year": 2022, "description": "GA-3 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 18, "pviOld": 16 }
+    { "year": 2024, "description": "GA-3's west-central Georgia lines were essentially unchanged. It stayed safely Republican.", "pviNew": 18, "pviOld": 18 },
+    { "year": 2022, "description": "GA-3 kept most of its previous shape, adding Haralson County, taking 56% of Douglas County and cutting its share of Henry County from 32% to 15%. It was safely Republican.", "pviNew": 18, "pviOld": 16 }
   ],
   "1304": [
-    { "year": 2024, "description": "GA-4 remained a heavily Democratic DeKalb/Gwinnett-area district, though its boundaries were adjusted as part of the metro Atlanta redraw.", "pviNew": -27, "pviOld": -27 },
-    { "year": 2022, "description": "GA-4 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -27, "pviOld": -27 }
+    { "year": 2024, "description": "GA-4 gave up Rockdale and Newton counties and part of DeKalb, taking 18% of Gwinnett County in exchange and losing more than half its old area. It remained safely Democratic.", "pviNew": -27, "pviOld": -27 },
+    { "year": 2022, "description": "GA-4 was reshaped, raising its share of DeKalb County from 59% to 78%, cutting its share of Newton County from 45% to 24% and dropping out of Gwinnett County. It was safely Democratic.", "pviNew": -27, "pviOld": -27 }
   ],
   "1305": [
-    { "year": 2024, "description": "GA-5 stayed centered on Atlanta, with only limited changes compared with the more dramatic redraws in suburban districts around it.", "pviNew": -35, "pviOld": -32 },
-    { "year": 2022, "description": "GA-5 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -32, "pviOld": -36 }
+    { "year": 2024, "description": "GA-5 moved south into Clayton County, raising its share there from 15% to 47%, while its share of Fulton County fell from 32% to 18%. It stayed safely Democratic.", "pviNew": -35, "pviOld": -32 },
+    { "year": 2022, "description": "GA-5 was reshaped, cutting its share of Clayton County from 36% to 15%. It was safely Democratic.", "pviNew": -32, "pviOld": -36 }
   ],
   "1306": [
-    { "year": 2024, "description": "GA-6 was one of the biggest changes on Georgia's 2024 map. The district was redrawn to shed Democratic-leaning suburban territory and become substantially more Republican, making it much more favorable to the GOP than the 2022 version.", "pviNew": -22, "pviOld": 11 },
-    { "year": 2022, "description": "GA-6 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 11, "pviOld": -1 }
+    { "year": 2024, "description": "GA-6 shares no territory at all with its predecessor. The old north-suburban seat built on Forsyth, Dawson and Cherokee counties was replaced by a west metro Atlanta district spanning Douglas County, half of Fulton, a third of Cobb and part of Fayette — the additional majority-Black district the court ordered. It flipped from solidly Republican to safely Democratic.", "pviNew": -22, "pviOld": 11 },
+    { "year": 2022, "description": "GA-6 was reshaped, adding Dawson and Forsyth counties, taking 31% of Cherokee County and dropping out of DeKalb County. It was solidly Republican.", "pviNew": 11, "pviOld": -1 }
   ],
   "1307": [
-    { "year": 2024, "description": "GA-7 remained a Gwinnett-based suburban Atlanta seat, but it became more compact and more solidly Democratic after Georgia's 2024 redraw pushed Republican-leaning voters elsewhere.", "pviNew": 13, "pviOld": -10 },
-    { "year": 2022, "description": "GA-7 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -10, "pviOld": 2 }
+    { "year": 2024, "description": "GA-7 moved north, giving up Gwinnett County — 65% of it — for Forsyth, Dawson and Lumpkin counties plus shares of Cherokee, Hall and Fulton. Only a tenth of its old area carried over, and it flipped from solidly Democratic to solidly Republican.", "pviNew": 13, "pviOld": -10 },
+    { "year": 2022, "description": "GA-7 was substantially redrawn, dropping out of Forsyth County. It was solidly Democratic.", "pviNew": -10, "pviOld": 2 }
   ],
   "1308": [
-    { "year": 2024, "description": "GA-8 remained a central/south Georgia district with only modest population-balancing changes in 2024.", "pviNew": 16, "pviOld": 16 },
-    { "year": 2022, "description": "GA-8 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 16, "pviOld": 15 }
+    { "year": 2024, "description": "GA-8's south-central Georgia lines were left unchanged. It stayed safely Republican.", "pviNew": 16, "pviOld": 16 },
+    { "year": 2022, "description": "GA-8 kept most of its previous shape, adding Crisp, Jeff Davis, Clinch, Echols, Coffee and Baldwin counties, taking in the rest of Lowndes County and giving up Thomas County. It was safely Republican.", "pviNew": 16, "pviOld": 15 }
   ],
   "1309": [
-    { "year": 2024, "description": "GA-9 stayed a strongly Republican north Georgia seat and was affected only marginally by the 2024 redraw.", "pviNew": 20, "pviOld": 22 },
-    { "year": 2022, "description": "GA-9 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 22, "pviOld": 30 }
+    { "year": 2024, "description": "GA-9 took Jackson County and a larger share of Gwinnett while giving up Hart, Franklin and Lumpkin counties and part of Hall. It remained safely Republican.", "pviNew": 20, "pviOld": 22 },
+    { "year": 2022, "description": "GA-9 was reshaped, taking 29% of Gwinnett County, giving up Elbert, Madison, Dawson and Jackson counties and dropping out of Forsyth County. It was safely Republican.", "pviNew": 22, "pviOld": 30 }
   ],
   "1310": [
-    { "year": 2024, "description": "GA-10 remained an outer-metro/east Georgia seat; the 2024 redraw made only secondary changes compared with the larger shifts in the Atlanta suburbs.", "pviNew": 14, "pviOld": 15 },
-    { "year": 2022, "description": "GA-10 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 15, "pviOld": 13 }
+    { "year": 2024, "description": "GA-10 added Hart and Franklin counties and a slice of Gwinnett, giving up Jackson County. It stayed solidly Republican.", "pviNew": 14, "pviOld": 15 },
+    { "year": 2022, "description": "GA-10 was substantially redrawn, adding Elbert, Madison and Jackson counties, taking in the rest of Clarke County and raising its share of Henry County from 34% to 57%. It was safely Republican.", "pviNew": 15, "pviOld": 13 }
   ],
   "1311": [
-    { "year": 2024, "description": "GA-11 remained a northwest-metro Atlanta Republican seat, though some precincts shifted as the legislature rewired neighboring suburban districts in 2024.", "pviNew": 14, "pviOld": 11 },
-    { "year": 2022, "description": "GA-11 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 11, "pviOld": 12 }
+    { "year": 2024, "description": "GA-11 took Gordon County and trimmed its share of Cobb, growing in northwest Georgia. It remained solidly Republican.", "pviNew": 14, "pviOld": 11 },
+    { "year": 2022, "description": "GA-11 was reshaped, adding Pickens County and cutting its share of Cherokee County from 99% to 69%. It was solidly Republican.", "pviNew": 11, "pviOld": 12 }
   ],
   "1312": [
-    { "year": 2024, "description": "GA-12 stayed anchored in east-central and coastal Georgia with only limited boundary adjustments in 2024.", "pviNew": 8, "pviOld": 8 },
-    { "year": 2022, "description": "GA-12 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 8, "pviOld": 9 }
+    { "year": 2024, "description": "GA-12's east Georgia lines were essentially unchanged. It stayed solidly Republican.", "pviNew": 8, "pviOld": 8 },
+    { "year": 2022, "description": "GA-12 was reshaped, adding McDuffie, Glascock, Washington, Jefferson, Lincoln and Warren counties and one more, taking 70% of Wilkes County and taking in the rest of Columbia County. It was solidly Republican.", "pviNew": 8, "pviOld": 9 }
   ],
   "1313": [
-    { "year": 2024, "description": "GA-13 remained a heavily Democratic south-metro Atlanta seat, with some boundary changes tied to the broader Atlanta-area redraw.", "pviNew": -17, "pviOld": -28 },
-    { "year": 2022, "description": "GA-13 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -28, "pviOld": -23 }
+    { "year": 2024, "description": "GA-13 kept only about a quarter of its old area: in came Rockdale County, 36% of Gwinnett and part of Newton, while its Douglas, Fulton and Cobb county territory went to the rebuilt GA-6. It remained safely Democratic.", "pviNew": -17, "pviOld": -28 },
+    { "year": 2022, "description": "GA-13 was reshaped, raising its share of Clayton County from 59% to 83% and cutting its share of Douglas County from 100% to 44%. It was safely Democratic.", "pviNew": -28, "pviOld": -23 }
   ],
   "1314": [
-    { "year": 2024, "description": "GA-14 stayed a deep-red northwest Georgia district with little substantive change in the 2024 redraw.", "pviNew": 22, "pviOld": 22 },
-    { "year": 2022, "description": "GA-14 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 22, "pviOld": 28 }
+    { "year": 2024, "description": "GA-14 gave up Gordon County and took a slightly larger share of Cobb. It stayed safely Republican.", "pviNew": 22, "pviOld": 22 },
+    { "year": 2022, "description": "GA-14 kept most of its previous shape, taking 15% of Cobb County, giving up Haralson County and dropping out of Pickens County. It was safely Republican.", "pviNew": 22, "pviOld": 28 }
   ],
   "1501": [
-    { "year": 2022, "description": "HI-1 was redrawn for 2022. Hawaii's 2022 map made only modest changes while preserving the state's two-district split between urban Oahu and the rest of the state. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -14, "pviOld": -14 }
+    { "year": 2022, "description": "HI-1 kept most of its previous shape, trading territory with HI-2 within the same counties. It was solidly Democratic.", "pviNew": -14, "pviOld": -14 }
   ],
   "1502": [
-    { "year": 2022, "description": "HI-2 was redrawn for 2022. Hawaii's 2022 map made only modest changes while preserving the state's two-district split between urban Oahu and the rest of the state. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -14, "pviOld": -15 }
+    { "year": 2022, "description": "HI-2 kept most of its previous shape, trading territory with HI-1 within the same counties. It was solidly Democratic.", "pviNew": -14, "pviOld": -15 }
   ],
   "1601": [
-    { "year": 2022, "description": "ID-1 was redrawn for 2022. Idaho's 2022 map made modest changes and kept its two-district east-west split broadly intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 22, "pviOld": 22 }
+    { "year": 2022, "description": "ID-1 kept most of its previous shape, trading territory with ID-2 within the same counties. It was safely Republican.", "pviNew": 22, "pviOld": 22 }
   ],
   "1602": [
-    { "year": 2022, "description": "ID-2 was redrawn for 2022. Idaho's 2022 map made modest changes and kept its two-district east-west split broadly intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 14, "pviOld": 15 }
+    { "year": 2022, "description": "ID-2 kept most of its previous shape, trading territory with ID-1 within the same counties. It was solidly Republican.", "pviNew": 14, "pviOld": 15 }
   ],
   "1701": [
-    { "year": 2022, "description": "IL-1 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -20, "pviOld": -25 }
+    { "year": 2022, "description": "IL-1 was reshaped, raising its share of Will County from 17% to 52% and taking 14% of Kankakee County. It was safely Democratic.", "pviNew": -20, "pviOld": -25 }
   ],
   "1702": [
-    { "year": 2022, "description": "IL-2 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -19, "pviOld": -28 }
+    { "year": 2022, "description": "IL-2 was reshaped, adding Iroquois County, taking 90% of Ford County and taking 71% of Vermilion County. It was safely Democratic.", "pviNew": -19, "pviOld": -28 }
   ],
   "1703": [
-    { "year": 2022, "description": "IL-3 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -20, "pviOld": -6 }
+    { "year": 2022, "description": "IL-3 was rebuilt almost from scratch, taking 30% of DuPage County and dropping out of Cook County. Illinois lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -20, "pviOld": -6 }
   ],
   "1704": [
-    { "year": 2022, "description": "IL-4 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -22, "pviOld": -33 }
+    { "year": 2022, "description": "IL-4 was reshaped, trading territory with IL-3, IL-5 and IL-6 within the same counties. Illinois lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -22, "pviOld": -33 }
   ],
   "1705": [
-    { "year": 2022, "description": "IL-5 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -18, "pviOld": -22 }
+    { "year": 2022, "description": "IL-5 was substantially redrawn, trading territory with IL-6, IL-9 and IL-8 within the same counties. Illinois lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -18, "pviOld": -22 }
   ],
   "1706": [
-    { "year": 2022, "description": "IL-6 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -3, "pviOld": -3 }
+    { "year": 2022, "description": "IL-6 was rebuilt almost from scratch, dropping out of Kane County and cutting its share of DuPage County from 42% to 25%. Illinois lost a seat in the 2020 reapportionment, which shifted lines across the state. It was a Democratic-leaning toss-up.", "pviNew": -3, "pviOld": -3 }
   ],
   "1707": [
-    { "year": 2022, "description": "IL-7 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -36, "pviOld": -37 }
+    { "year": 2022, "description": "IL-7 kept most of its previous shape, trading territory with IL-4 and IL-5 within the same counties. It was safely Democratic.", "pviNew": -36, "pviOld": -37 }
   ],
   "1708": [
-    { "year": 2022, "description": "IL-8 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -6, "pviOld": -9 }
+    { "year": 2022, "description": "IL-8 was reshaped, taking 26% of Kane County. Illinois lost a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Democratic.", "pviNew": -6, "pviOld": -9 }
   ],
   "1709": [
-    { "year": 2022, "description": "IL-9 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -19, "pviOld": -21 }
+    { "year": 2022, "description": "IL-9 was reshaped, trading territory with IL-6, IL-10 and IL-14 within the same counties. Illinois lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -19, "pviOld": -21 }
   ],
   "1710": [
-    { "year": 2022, "description": "IL-10 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -11, "pviOld": -14 }
+    { "year": 2022, "description": "IL-10 kept most of its previous shape, raising its share of Lake County from 55% to 79% and taking 22% of McHenry County. It was solidly Democratic.", "pviNew": -11, "pviOld": -14 }
   ],
   "1711": [
-    { "year": 2022, "description": "IL-11 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -5, "pviOld": -11 }
+    { "year": 2022, "description": "IL-11 was substantially redrawn, raising its share of Kane County from 7% to 59%, taking 48% of McHenry County and dropping out of Will County. Illinois lost a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Democratic.", "pviNew": -5, "pviOld": -11 }
   ],
   "1712": [
-    { "year": 2022, "description": "IL-12 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 24, "pviOld": 9 }
+    { "year": 2022, "description": "IL-12 kept most of its previous shape, adding 22 whole counties, among them Saline, Hamilton and Richland counties, taking 52% of Coles County and cutting its share of St. Clair County from 100% to 81%. It was safely Republican.", "pviNew": 24, "pviOld": 9 }
   ],
   "1713": [
-    { "year": 2022, "description": "IL-13 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -3, "pviOld": 4 }
+    { "year": 2022, "description": "IL-13 was substantially redrawn, raising its share of Sangamon County from 11% to 48%, taking 19% of St. Clair County and giving up De Witt, Jersey, Montgomery, Calhoun, Greene and Christian counties. Illinois lost a seat in the 2020 reapportionment, which shifted lines across the state. It was a Democratic-leaning toss-up.", "pviNew": -3, "pviOld": 4 }
   ],
   "1714": [
-    { "year": 2022, "description": "IL-14 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -4, "pviOld": 2 }
+    { "year": 2022, "description": "IL-14 was substantially redrawn, taking 61% of LaSalle County, raising its share of DeKalb County from 25% to 70% and dropping out of McHenry County. Illinois lost a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Democratic.", "pviNew": -4, "pviOld": 2 }
   ],
   "1715": [
-    { "year": 2022, "description": "IL-15 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 22, "pviOld": 26 }
+    { "year": 2022, "description": "IL-15 was substantially redrawn, adding 18 whole counties, among them Logan, Scott and De Witt counties, taking 88% of McDonough County and taking 73% of Warren County. Illinois lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Republican.", "pviNew": 22, "pviOld": 26 }
   ],
   "1716": [
-    { "year": 2022, "description": "IL-16 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 13, "pviOld": 10 }
+    { "year": 2022, "description": "IL-16 was substantially redrawn, adding Marshall, Jo Daviess and Woodford counties, taking 86% of McLean County and taking 85% of Henry County. Illinois lost a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Republican.", "pviNew": 13, "pviOld": 10 }
   ],
   "1717": [
-    { "year": 2022, "description": "IL-17 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -2, "pviOld": 2 }
+    { "year": 2022, "description": "IL-17 was substantially redrawn, raising its share of Tazewell County from 11% to 46%, raising its share of Peoria County from 12% to 40% and giving up Jo Daviess and Henderson counties. Illinois lost a seat in the 2020 reapportionment, which shifted lines across the state. It was a Democratic-leaning toss-up.", "pviNew": -2, "pviOld": 2 }
   ],
   "1801": [
-    { "year": 2022, "description": "IN-1 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -3, "pviOld": -4 }
+    { "year": 2022, "description": "IN-1 kept most of its previous shape, trading territory with IN-2 within the same counties. It was a Democratic-leaning toss-up.", "pviNew": -3, "pviOld": -4 }
   ],
   "1802": [
-    { "year": 2022, "description": "IN-2 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 14, "pviOld": 13 }
+    { "year": 2022, "description": "IN-2 kept most of its previous shape, taking 58% of Cass County and raising its share of Kosciusko County from 63% to 81%. It was solidly Republican.", "pviNew": 14, "pviOld": 13 }
   ],
   "1803": [
-    { "year": 2022, "description": "IN-3 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 18, "pviOld": 19 }
+    { "year": 2022, "description": "IN-3 kept most of its previous shape, taking in the rest of Blackford County, taking 44% of Randolph County and cutting its share of Kosciusko County from 37% to 19%. It was safely Republican.", "pviNew": 18, "pviOld": 19 }
   ],
   "1804": [
-    { "year": 2022, "description": "IN-4 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 18, "pviOld": 18 }
+    { "year": 2022, "description": "IN-4 kept most of its previous shape, taking in the rest of Morgan County, taking in the rest of Boone County and dropping out of Howard County. It was safely Republican.", "pviNew": 18, "pviOld": 18 }
   ],
   "1805": [
-    { "year": 2022, "description": "IN-5 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 11, "pviOld": 5 }
+    { "year": 2022, "description": "IN-5 kept most of its previous shape, adding Delaware County, taking in the rest of Howard County and dropping out of Blackford County. It was solidly Republican.", "pviNew": 11, "pviOld": 5 }
   ],
   "1806": [
-    { "year": 2022, "description": "IN-6 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 19, "pviOld": 22 }
+    { "year": 2022, "description": "IN-6 was substantially redrawn, adding Johnson County, taking 31% of Marion County and giving up 9 whole counties, among them Jennings, Decatur and Ohio counties. It was safely Republican.", "pviNew": 19, "pviOld": 22 }
   ],
   "1807": [
-    { "year": 2022, "description": "IN-7 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -19, "pviOld": -11 }
+    { "year": 2022, "description": "IN-7 was reshaped, trading territory with IN-5 within the same counties. It was safely Democratic.", "pviNew": -19, "pviOld": -11 }
   ],
   "1808": [
-    { "year": 2022, "description": "IN-8 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 19, "pviOld": 19 }
+    { "year": 2022, "description": "IN-8 kept most of its previous shape, adding Orange County, taking in the rest of Crawford County and taking 53% of Fountain County. It was safely Republican.", "pviNew": 19, "pviOld": 19 }
   ],
   "1809": [
-    { "year": 2022, "description": "IN-9 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 16, "pviOld": 15 }
+    { "year": 2022, "description": "IN-9 was reshaped, adding 8 whole counties, among them Jennings, Decatur and Ohio counties, taking in the rest of Scott County and taking 28% of Bartholomew County. It was safely Republican.", "pviNew": 16, "pviOld": 15 }
   ],
   "1901": [
-    { "year": 2022, "description": "IA-1 was materially redrawn for 2022. Iowa's nonpartisan 2022 map redrew all four districts in a cleaner population-balancing plan, altering numbering and regional combinations while keeping changes relatively evenhanded. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 3, "pviOld": 4 }
+    { "year": 2022, "description": "IA-1 was rebuilt almost from scratch, adding 17 whole counties, among them Cedar, Mahaska and Marion counties and giving up 17 whole counties, among them Black Hawk, Howard and Marshall counties. It was a Republican-leaning toss-up.", "pviNew": 3, "pviOld": 4 }
   ],
   "1902": [
-    { "year": 2022, "description": "IA-2 was materially redrawn for 2022. Iowa's nonpartisan 2022 map redrew all four districts in a cleaner population-balancing plan, altering numbering and regional combinations while keeping changes relatively evenhanded. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 4, "pviOld": 4 }
+    { "year": 2022, "description": "IA-2 was rebuilt almost from scratch, adding 22 whole counties, among them Black Hawk, Howard and Delaware counties and giving up 24 whole counties, among them Wapello, Cedar and Wayne counties. It leaned Republican.", "pviNew": 4, "pviOld": 4 }
   ],
   "1903": [
-    { "year": 2022, "description": "IA-3 was materially redrawn for 2022. Iowa's nonpartisan 2022 map redrew all four districts in a cleaner population-balancing plan, altering numbering and regional combinations while keeping changes relatively evenhanded. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 3, "pviOld": 3 }
+    { "year": 2022, "description": "IA-3 was reshaped, adding 9 whole counties, among them Wapello, Wayne and Greene counties and giving up Pottawattamie, Mills, Warren and Fremont counties. It was a Republican-leaning toss-up.", "pviNew": 3, "pviOld": 3 }
   ],
   "1904": [
-    { "year": 2022, "description": "IA-4 was materially redrawn for 2022. Iowa's nonpartisan 2022 map redrew all four districts in a cleaner population-balancing plan, altering numbering and regional combinations while keeping changes relatively evenhanded. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 16, "pviOld": 16 }
+    { "year": 2022, "description": "IA-4 was reshaped, adding Marshall, Pottawattamie, Mills and Fremont counties and giving up Hardin, Cerro Gordo, Greene, Grundy, Chickasaw and Butler counties and one more. It was safely Republican.", "pviNew": 16, "pviOld": 16 }
   ],
   "2001": [
-    { "year": 2022, "description": "KS-1 was redrawn for 2022. Kansas' 2022 map kept the four-district structure but notably reworked the Kansas City–area 3rd district and parts of the Wichita-based 4th. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 18, "pviOld": 24 }
+    { "year": 2022, "description": "KS-1 kept most of its previous shape, adding Jefferson County, taking 87% of Jackson County and taking in the rest of Marshall County. It was safely Republican.", "pviNew": 18, "pviOld": 24 }
   ],
   "2002": [
-    { "year": 2022, "description": "KS-2 was redrawn for 2022. Kansas' 2022 map kept the four-district structure but notably reworked the Kansas City–area 3rd district and parts of the Wichita-based 4th. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 11, "pviOld": 10 }
+    { "year": 2022, "description": "KS-2 was reshaped, adding Marion, Chase, Lyon, Morris, Wabaunsee and Geary counties, taking 60% of Wyandotte County and giving up Franklin, Anderson and Jefferson counties. It was solidly Republican.", "pviNew": 11, "pviOld": 10 }
   ],
   "2003": [
-    { "year": 2022, "description": "KS-3 was redrawn for 2022. Kansas' 2022 map kept the four-district structure but notably reworked the Kansas City–area 3rd district and parts of the Wichita-based 4th. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 1, "pviOld": -1 }
+    { "year": 2022, "description": "KS-3 kept most of its previous shape, adding Franklin and Anderson counties, taking in the rest of Miami County and cutting its share of Wyandotte County from 100% to 40%. It was a Republican-leaning toss-up.", "pviNew": 1, "pviOld": -1 }
   ],
   "2004": [
-    { "year": 2022, "description": "KS-4 was redrawn for 2022. Kansas' 2022 map kept the four-district structure but notably reworked the Kansas City–area 3rd district and parts of the Wichita-based 4th. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 14, "pviOld": 15 }
+    { "year": 2022, "description": "KS-4 kept most of its previous shape, raising its share of Pawnee County from 21% to 54%. It was solidly Republican.", "pviNew": 14, "pviOld": 15 }
   ],
   "2101": [
-    { "year": 2022, "description": "KY-1 was redrawn for 2022. Kentucky's 2022 map made limited changes and kept the state's six-district structure largely intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 24, "pviOld": 26 }
+    { "year": 2022, "description": "KY-1 kept most of its previous shape, adding Boyle and Franklin counties, taking in the rest of Washington County and taking 47% of Anderson County. It was safely Republican.", "pviNew": 24, "pviOld": 26 }
   ],
   "2102": [
-    { "year": 2022, "description": "KY-2 was redrawn for 2022. Kentucky's 2022 map made limited changes and kept the state's six-district structure largely intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 21, "pviOld": 22 }
+    { "year": 2022, "description": "KY-2 was reshaped, adding Muhlenberg, Ohio and McLean counties, taking 20% of Jefferson County and giving up Boyle, Garrard and Mercer counties. It was safely Republican.", "pviNew": 21, "pviOld": 22 }
   ],
   "2103": [
-    { "year": 2022, "description": "KY-3 was redrawn for 2022. Kentucky's 2022 map made limited changes and kept the state's six-district structure largely intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -9, "pviOld": -8 }
+    { "year": 2022, "description": "KY-3 kept most of its previous shape, trading territory with KY-4 within the same counties. It was solidly Democratic.", "pviNew": -9, "pviOld": -8 }
   ],
   "2104": [
-    { "year": 2022, "description": "KY-4 was redrawn for 2022. Kentucky's 2022 map made limited changes and kept the state's six-district structure largely intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 19, "pviOld": 19 }
+    { "year": 2022, "description": "KY-4 kept most of its previous shape, adding Robertson County, taking in the rest of Spencer County and taking 47% of Nelson County. It was safely Republican.", "pviNew": 19, "pviOld": 19 }
   ],
   "2105": [
-    { "year": 2022, "description": "KY-5 was redrawn for 2022. Kentucky's 2022 map made limited changes and kept the state's six-district structure largely intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 32, "pviOld": 33 }
+    { "year": 2022, "description": "KY-5 kept most of its previous shape, adding Wolfe and Menifee counties, taking 49% of Bath County and taking in the rest of Boyd County. It was safely Republican.", "pviNew": 32, "pviOld": 33 }
   ],
   "2106": [
-    { "year": 2022, "description": "KY-6 was redrawn for 2022. Kentucky's 2022 map made limited changes and kept the state's six-district structure largely intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 9, "pviOld": 8 }
+    { "year": 2022, "description": "KY-6 was reshaped, adding Garrard and Mercer counties, taking in the rest of Jessamine County and giving up Wolfe, Franklin, Menifee and Robertson counties. It was solidly Republican.", "pviNew": 9, "pviOld": 8 }
   ],
   "2201": [
     { "year": 2026, "description": "Louisiana's 2026 map (SB 121, signed by Gov. Jeff Landry on May 29, 2026) replaced the 2024 court-driven plan that the U.S. Supreme Court struck down as a racial gerrymander in Louisiana v. Callais. LA-1 remains the New Orleans suburban and Northshore seat (Metairie, Slidell, Covington) running down to the river delta; it gave up its pieces of Livingston, Ascension and St. Charles parishes and picked up part of Terrebonne Parish around Houma, staying at Trump +38. The late redraw also moved Louisiana's 2026 House elections to an all-party primary on Nov. 3 with a Dec. 12 runoff.", "pviNew": 20, "pviOld": 22 },
-    { "year": 2024, "description": "LA-1 remained centered on the New Orleans suburbs and the Florida Parishes, with only ripple-effect changes from Louisiana's court-driven 2024 redraw.", "pviNew": 22, "pviOld": 23 },
-    { "year": 2022, "description": "LA-1 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 23, "pviOld": 22 }
+    { "year": 2024, "description": "LA-1 extended west along the river, taking 36% of Livingston and 34% of Ascension parishes and raising its share of Orleans from 47% to 78%, while giving up Terrebonne Parish. It remained safely Republican.", "pviNew": 22, "pviOld": 23 },
+    { "year": 2022, "description": "LA-1 was redrawn, cutting its share of Terrebonne Parish from 71% to 41%. It was safely Republican.", "pviNew": 23, "pviOld": 22 }
   ],
   "2202": [
     { "year": 2026, "description": "Louisiana's 2026 map (SB 121, signed by Gov. Jeff Landry on May 29, 2026) replaced the 2024 court-driven plan that the U.S. Supreme Court struck down as a racial gerrymander in Louisiana v. Callais. LA-2 is again the state's only Democratic-leaning district: the New Orleans seat once more follows the Mississippi River up to north Baton Rouge (part of LA-6 on the 2024 map) while Assumption Parish and most of Iberville, St. John the Baptist and Ascension parishes moved to LA-6, deepening it from Harris +31 to Harris +48. The late redraw also moved Louisiana's 2026 House elections to an all-party primary on Nov. 3 with a Dec. 12 runoff.", "pviNew": -25, "pviOld": -16 },
-    { "year": 2024, "description": "LA-2 remained the New Orleans-based Black-majority district, though its exact lines shifted as Louisiana created a second Black-majority seat elsewhere on the map.", "pviNew": -16, "pviOld": -25 },
-    { "year": 2022, "description": "LA-2 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -25, "pviOld": -25 }
+    { "year": 2024, "description": "LA-2 moved up the Mississippi corridor, absorbing Iberville, Assumption and St. John the Baptist parishes and more of Ascension, while its share of Orleans Parish fell from 53% to 22%. It stayed safely Democratic.", "pviNew": -16, "pviOld": -25 },
+    { "year": 2022, "description": "LA-2 was redrawn, trading territory with LA-6 and LA-1 within the same parishes. It was safely Democratic.", "pviNew": -25, "pviOld": -25 }
   ],
   "2203": [
     { "year": 2026, "description": "Louisiana's 2026 map (SB 121, signed by Gov. Jeff Landry on May 29, 2026) replaced the 2024 court-driven plan that the U.S. Supreme Court struck down as a racial gerrymander in Louisiana v. Callais. LA-3 remains the Acadiana and southwest Louisiana seat (Lafayette, Lake Charles); it regained the part of Lafayette Parish and picked up the part of St. Landry Parish (Opelousas) that had been in the old LA-6, and ceded part of Terrebonne Parish to LA-1, moving from Trump +45 to Trump +36. The late redraw also moved Louisiana's 2026 House elections to an all-party primary on Nov. 3 with a Dec. 12 runoff.", "pviNew": 18, "pviOld": 24 },
-    { "year": 2024, "description": "LA-3 stayed a south Louisiana/Cajun Country seat, but its boundaries were adjusted in the statewide reshuffle caused by the creation of a new Black-majority district.", "pviNew": 24, "pviOld": 21 },
-    { "year": 2022, "description": "LA-3 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 21, "pviOld": 21 }
+    { "year": 2024, "description": "LA-3 shifted east onto the bayou coast, taking all of Terrebonne and St. Mary parishes and nearly all of St. Martin, while giving up most of Calcasieu — down from 100% to 27% — and part of Lafayette. It remained safely Republican.", "pviNew": 24, "pviOld": 21 },
+    { "year": 2022, "description": "LA-3 was redrawn, cutting its share of St. Martin Parish from 98% to 73% and cutting its share of St. Mary Parish from 99% to 80%. It was safely Republican.", "pviNew": 21, "pviOld": 21 }
   ],
   "2204": [
     { "year": 2026, "description": "Louisiana's 2026 map (SB 121, signed by Gov. Jeff Landry on May 29, 2026) replaced the 2024 court-driven plan that the U.S. Supreme Court struck down as a racial gerrymander in Louisiana v. Callais. LA-4 remains the northwest Louisiana seat and regained the Shreveport, De Soto Parish and Natchitoches Parish territory that the 2024 map had placed in LA-6, while Lincoln, Jackson, Winn and Grant parishes and its shares of Ouachita and Rapides parishes moved to LA-5. It shifts from Trump +52 to Trump +34. The late redraw also moved Louisiana's 2026 House elections to an all-party primary on Nov. 3 with a Dec. 12 runoff.", "pviNew": 17, "pviOld": 27 },
-    { "year": 2024, "description": "LA-4 remained a northwest Louisiana seat, though its boundaries changed significantly as the new map carved out a second Black-majority district running up the state.", "pviNew": 27, "pviOld": 14 },
-    { "year": 2022, "description": "LA-4 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 14, "pviOld": 14 }
+    { "year": 2024, "description": "LA-4 swung east and south, adding Jackson, Lincoln and Winn parishes, 73% of Calcasieu and shares of Ouachita and Rapides, while giving up Natchitoches and St. Landry parishes and part of De Soto. It stayed safely Republican.", "pviNew": 27, "pviOld": 14 },
+    { "year": 2022, "description": "LA-4 was redrawn, taking in the rest of St. Landry Parish and taking 37% of Grant Parish. It was solidly Republican.", "pviNew": 14, "pviOld": 14 }
   ],
   "2205": [
     { "year": 2026, "description": "Louisiana's 2026 map (SB 121, signed by Gov. Jeff Landry on May 29, 2026) replaced the 2024 court-driven plan that the U.S. Supreme Court struck down as a racial gerrymander in Louisiana v. Callais. LA-5 remains the northeast Louisiana and Florida Parishes seat; it now holds all of Ouachita Parish (Monroe) and Rapides Parish (Alexandria) plus Lincoln, Jackson, Winn and Grant parishes and part of St. Landry Parish, and gave Livingston Parish and its share of East Baton Rouge Parish to LA-6. It moves from Trump +36 to Trump +34. The late redraw also moved Louisiana's 2026 House elections to an all-party primary on Nov. 3 with a Dec. 12 runoff.", "pviNew": 17, "pviOld": 19 },
-    { "year": 2024, "description": "LA-5, previously a long northeast-to-central Louisiana district, was significantly altered by the 2024 redraw and gave up territory used to construct the new second Black-majority seat.", "pviNew": 19, "pviOld": 17 },
-    { "year": 2022, "description": "LA-5 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 17, "pviOld": 17 }
+    { "year": 2024, "description": "LA-5 moved south toward Baton Rouge, taking 64% of Livingston and 46% of East Baton Rouge parishes while giving up Jackson, Lincoln, Winn and Rapides parishes and most of Ouachita and Avoyelles. It remained safely Republican.", "pviNew": 19, "pviOld": 17 },
+    { "year": 2022, "description": "LA-5 was redrawn, adding Pointe Coupee Parish, taking in the rest of St. Helena Parish and taking in the rest of East Feliciana Parish. It was safely Republican.", "pviNew": 17, "pviOld": 17 }
   ],
   "2206": [
     { "year": 2026, "description": "LA-6 changed more than any other district under Louisiana's 2026 map (SB 121, signed by Gov. Jeff Landry on May 29, 2026), which replaced the 2024 court-driven plan that the U.S. Supreme Court struck down as a racial gerrymander in Louisiana v. Callais. The Baton Rouge-to-Shreveport Black-opportunity district drawn for 2024 (Harris +15) was dismantled; LA-6 is once again a Baton Rouge suburban seat covering southern and eastern East Baton Rouge Parish, Livingston, Ascension, Iberville and Assumption parishes and part of the River Parishes, at Trump +32. The late redraw also moved Louisiana's 2026 House elections to an all-party primary on Nov. 3 with a Dec. 12 runoff.", "pviNew": 16, "pviOld": -8 },
-    { "year": 2024, "description": "LA-6 changed more than any other Louisiana district in 2024. It was redrawn from a Baton Rouge-centered seat into a long Baton Rouge-to-Shreveport district designed to create a second Black-majority/Black-opportunity seat, making it far more Democratic than before.", "pviNew": -8, "pviOld": 19 },
-    { "year": 2022, "description": "LA-6 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 19, "pviOld": 18 }
+    { "year": 2024, "description": "LA-6 was rebuilt almost entirely — barely a tenth of its old area survived — into a diagonal district running from Shreveport to Baton Rouge, taking Natchitoches, St. Landry and Pointe Coupee parishes plus shares of De Soto, Rapides, Avoyelles, Lafayette and Caddo. It gave up the Baton Rouge suburbs and the bayou parishes, and flipped from safely Republican to solidly Democratic as the state's second majority-Black district.", "pviNew": -8, "pviOld": 19 },
+    { "year": 2022, "description": "LA-6 was redrawn, raising its share of Terrebonne Parish from 29% to 59%, taking 26% of St. Martin Parish and giving up Pointe Coupee Parish. It was safely Republican.", "pviNew": 19, "pviOld": 18 }
   ],
   "2301": [
-    { "year": 2022, "description": "ME-1 was redrawn for 2022. Maine's 2022 map made only modest adjustments while keeping the familiar north/south two-district split. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -9, "pviOld": -8 }
+    { "year": 2022, "description": "ME-1 kept most of its previous shape, trading territory with ME-2 within the same counties. It was solidly Democratic.", "pviNew": -9, "pviOld": -8 }
   ],
   "2302": [
-    { "year": 2022, "description": "ME-2 was redrawn for 2022. Maine's 2022 map made only modest adjustments while keeping the familiar north/south two-district split. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 6, "pviOld": 6 }
+    { "year": 2022, "description": "ME-2 kept most of its previous shape, trading territory with ME-1 within the same counties. It leaned Republican.", "pviNew": 6, "pviOld": 6 }
   ],
   "2401": [
-    { "year": 2022, "description": "MD-1 was materially redrawn for 2022. Maryland's 2022 map changed multiple districts after the legislature's first plan was struck down, ultimately producing a court-approved map that was less aggressively gerrymandered than the original proposal. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 11, "pviOld": 14 }
+    { "year": 2022, "description": "MD-1 kept most of its previous shape, taking in the rest of Harford County and dropping out of Carroll County. It was solidly Republican.", "pviNew": 11, "pviOld": 14 }
   ],
   "2402": [
-    { "year": 2022, "description": "MD-2 was materially redrawn for 2022. Maryland's 2022 map changed multiple districts after the legislature's first plan was struck down, ultimately producing a court-approved map that was less aggressively gerrymandered than the original proposal. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -7, "pviOld": -13 }
+    { "year": 2022, "description": "MD-2 was substantially redrawn, taking 90% of Carroll County, raising its share of Baltimore County from 30% to 66% and dropping out of the city of Baltimore. It leaned Democratic.", "pviNew": -7, "pviOld": -13 }
   ],
   "2403": [
-    { "year": 2022, "description": "MD-3 was materially redrawn for 2022. Maryland's 2022 map changed multiple districts after the legislature's first plan was struck down, ultimately producing a court-approved map that was less aggressively gerrymandered than the original proposal. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -10, "pviOld": -16 }
+    { "year": 2022, "description": "MD-3 was reshaped, taking in the rest of Howard County, raising its share of Anne Arundel County from 27% to 52% and dropping out of the city of Baltimore. It was solidly Democratic.", "pviNew": -10, "pviOld": -16 }
   ],
   "2404": [
-    { "year": 2022, "description": "MD-4 was materially redrawn for 2022. Maryland's 2022 map changed multiple districts after the legislature's first plan was struck down, ultimately producing a court-approved map that was less aggressively gerrymandered than the original proposal. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -40, "pviOld": -29 }
+    { "year": 2022, "description": "MD-4 was substantially redrawn, dropping out of Anne Arundel County. It was safely Democratic.", "pviNew": -40, "pviOld": -29 }
   ],
   "2405": [
-    { "year": 2022, "description": "MD-5 was materially redrawn for 2022. Maryland's 2022 map changed multiple districts after the legislature's first plan was struck down, ultimately producing a court-approved map that was less aggressively gerrymandered than the original proposal. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -15, "pviOld": -16 }
+    { "year": 2022, "description": "MD-5 kept most of its previous shape, raising its share of Anne Arundel County from 31% to 48%. It was safely Democratic.", "pviNew": -15, "pviOld": -16 }
   ],
   "2406": [
-    { "year": 2022, "description": "MD-6 was materially redrawn for 2022. Maryland's 2022 map changed multiple districts after the legislature's first plan was struck down, ultimately producing a court-approved map that was less aggressively gerrymandered than the original proposal. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -2, "pviOld": -8 }
+    { "year": 2022, "description": "MD-6 kept most of its previous shape, taking in the rest of Frederick County. It was a Democratic-leaning toss-up.", "pviNew": -2, "pviOld": -8 }
   ],
   "2407": [
-    { "year": 2022, "description": "MD-7 was materially redrawn for 2022. Maryland's 2022 map changed multiple districts after the legislature's first plan was struck down, ultimately producing a court-approved map that was less aggressively gerrymandered than the original proposal. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -30, "pviOld": -27 }
+    { "year": 2022, "description": "MD-7 was rebuilt almost from scratch, taking in the rest of the city of Baltimore, dropping out of Howard County and cutting its share of Baltimore County from 41% to 8%. It was safely Democratic.", "pviNew": -30, "pviOld": -27 }
   ],
   "2408": [
-    { "year": 2022, "description": "MD-8 was materially redrawn for 2022. Maryland's 2022 map changed multiple districts after the legislature's first plan was struck down, ultimately producing a court-approved map that was less aggressively gerrymandered than the original proposal. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -29, "pviOld": -17 }
+    { "year": 2022, "description": "MD-8 was rebuilt almost from scratch, raising its share of Montgomery County from 35% to 55%, dropping out of Frederick County and dropping out of Carroll County. It was safely Democratic.", "pviNew": -29, "pviOld": -17 }
   ],
   "2501": [
-    { "year": 2022, "description": "MA-1 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -9, "pviOld": -10 }
+    { "year": 2022, "description": "MA-1 kept most of its previous shape, cutting its share of Franklin County from 45% to 13%. It was solidly Democratic.", "pviNew": -9, "pviOld": -10 }
   ],
   "2502": [
-    { "year": 2022, "description": "MA-2 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -13, "pviOld": -10 }
+    { "year": 2022, "description": "MA-2 kept most of its previous shape, raising its share of Franklin County from 55% to 87%. It was solidly Democratic.", "pviNew": -13, "pviOld": -10 }
   ],
   "2503": [
-    { "year": 2022, "description": "MA-3 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -11, "pviOld": -12 }
+    { "year": 2022, "description": "MA-3 kept most of its previous shape, trading territory with MA-6 and MA-2 within the same counties. It was solidly Democratic.", "pviNew": -11, "pviOld": -12 }
   ],
   "2504": [
-    { "year": 2022, "description": "MA-4 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -12, "pviOld": -13 }
+    { "year": 2022, "description": "MA-4 kept most of its previous shape, trading territory with MA-2, MA-9 and MA-5 within the same counties. It was solidly Democratic.", "pviNew": -12, "pviOld": -13 }
   ],
   "2505": [
-    { "year": 2022, "description": "MA-5 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -23, "pviOld": -23 }
+    { "year": 2022, "description": "MA-5 was reshaped, trading territory with MA-4, MA-3 and MA-7 within the same counties. It was safely Democratic.", "pviNew": -23, "pviOld": -23 }
   ],
   "2506": [
-    { "year": 2022, "description": "MA-6 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -11, "pviOld": -10 }
+    { "year": 2022, "description": "MA-6 kept most of its previous shape, trading territory with MA-3 within the same counties. It was solidly Democratic.", "pviNew": -11, "pviOld": -10 }
   ],
   "2507": [
-    { "year": 2022, "description": "MA-7 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -35, "pviOld": -35 }
+    { "year": 2022, "description": "MA-7 was reshaped, cutting its share of Suffolk County from 77% to 55%. It was safely Democratic.", "pviNew": -35, "pviOld": -35 }
   ],
   "2508": [
-    { "year": 2022, "description": "MA-8 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -15, "pviOld": -14 }
+    { "year": 2022, "description": "MA-8 was reshaped, raising its share of Suffolk County from 9% to 25%. It was safely Democratic.", "pviNew": -15, "pviOld": -14 }
   ],
   "2509": [
-    { "year": 2022, "description": "MA-9 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -6, "pviOld": -6 }
+    { "year": 2022, "description": "MA-9 kept most of its previous shape, trading territory with MA-8 within the same counties. It leaned Democratic.", "pviNew": -6, "pviOld": -6 }
   ],
   "2601": [
-    { "year": 2022, "description": "MI-1 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 13, "pviOld": 12 }
+    { "year": 2022, "description": "MI-1 kept most of its previous shape, adding Ogemaw, Roscommon, Arenac, Missaukee and Iosco counties, taking 22% of Wexford County and giving up Manistee County. It was solidly Republican.", "pviNew": 13, "pviOld": 12 }
   ],
   "2602": [
-    { "year": 2022, "description": "MI-2 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 16, "pviOld": 9 }
+    { "year": 2022, "description": "MI-2 was reshaped, adding 10 whole counties, among them Isabella, Manistee and Clare counties, taking 78% of Wexford County and taking in the rest of Mason County. It was safely Republican.", "pviNew": 16, "pviOld": 9 }
   ],
   "2603": [
-    { "year": 2022, "description": "MI-3 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -1, "pviOld": 5 }
+    { "year": 2022, "description": "MI-3 was rebuilt almost from scratch, taking 49% of Ottawa County, taking 28% of Muskegon County and giving up Ionia, Barry and Calhoun counties. Michigan lost a seat in the 2020 reapportionment, which shifted lines across the state. It was a Democratic-leaning toss-up.", "pviNew": -1, "pviOld": 5 }
   ],
   "2604": [
-    { "year": 2022, "description": "MI-4 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 5, "pviOld": 14 }
+    { "year": 2022, "description": "MI-4 was rebuilt almost from scratch, adding Van Buren and Allegan counties, taking 75% of Kalamazoo County and taking 44% of Ottawa County. Michigan lost a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Republican.", "pviNew": 5, "pviOld": 14 }
   ],
   "2605": [
-    { "year": 2022, "description": "MI-5 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 15, "pviOld": -1 }
+    { "year": 2022, "description": "MI-5 was rebuilt almost from scratch, adding Branch, Jackson, St. Joseph, Hillsdale, Cass and Lenawee counties and one more, taking 80% of Calhoun County and taking 78% of Berrien County. Michigan lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Republican.", "pviNew": 15, "pviOld": -1 }
   ],
   "2606": [
-    { "year": 2022, "description": "MI-6 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -11, "pviOld": 5 }
+    { "year": 2022, "description": "MI-6 was rebuilt almost from scratch, adding Washtenaw County, taking 40% of Wayne County and giving up Kalamazoo, St. Joseph, Cass, Van Buren, Berrien and Allegan counties. Michigan lost a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Democratic.", "pviNew": -11, "pviOld": 5 }
   ],
   "2607": [
-    { "year": 2022, "description": "MI-7 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 2, "pviOld": 10 }
+    { "year": 2022, "description": "MI-7 was rebuilt almost from scratch, adding Clinton, Ingham, Livingston and Shiawassee counties, giving up Branch, Hillsdale, Lenawee, Monroe and Jackson counties and dropping out of Washtenaw County. Michigan lost a seat in the 2020 reapportionment, which shifted lines across the state. It was a Republican-leaning toss-up.", "pviNew": 2, "pviOld": 10 }
   ],
   "2608": [
-    { "year": 2022, "description": "MI-8 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 1, "pviOld": 4 }
+    { "year": 2022, "description": "MI-8 was rebuilt almost from scratch, adding Saginaw, Bay and Genesee counties, taking 66% of Midland County and giving up Livingston and Ingham counties. Michigan lost a seat in the 2020 reapportionment, which shifted lines across the state. It was a Republican-leaning toss-up.", "pviNew": 1, "pviOld": 4 }
   ],
   "2609": [
-    { "year": 2022, "description": "MI-9 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 19, "pviOld": -4 }
+    { "year": 2022, "description": "MI-9 was rebuilt almost from scratch, adding Lapeer, Sanilac, St. Clair, Huron and Tuscola counties, raising its share of Oakland County from 6% to 45% and raising its share of Macomb County from 27% to 60%. Michigan lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Republican.", "pviNew": 19, "pviOld": -4 }
   ],
   "2610": [
-    { "year": 2022, "description": "MI-10 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 3, "pviOld": 18 }
+    { "year": 2022, "description": "MI-10 was rebuilt almost from scratch, giving up Lapeer, Sanilac, St. Clair and Huron counties, dropping out of Tuscola County and cutting its share of Macomb County from 73% to 39%. Michigan lost a seat in the 2020 reapportionment, which shifted lines across the state. It was a Republican-leaning toss-up.", "pviNew": 3, "pviOld": 18 }
   ],
   "2611": [
-    { "year": 2022, "description": "MI-11 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -7, "pviOld": 2 }
+    { "year": 2022, "description": "MI-11 was substantially redrawn, dropping out of Wayne County. Michigan lost a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Democratic.", "pviNew": -7, "pviOld": 2 }
   ],
   "2612": [
-    { "year": 2022, "description": "MI-12 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -23, "pviOld": -13 }
+    { "year": 2022, "description": "MI-12 was rebuilt almost from scratch, dropping out of Washtenaw County and cutting its share of Wayne County from 42% to 24%. Michigan lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -23, "pviOld": -13 }
   ],
   "2613": [
-    { "year": 2022, "description": "MI-13 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -23, "pviOld": -29 }
+    { "year": 2022, "description": "MI-13 was substantially redrawn, trading territory with MI-14 and MI-12 within the same counties. Michigan lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -23, "pviOld": -29 }
   ],
   "2701": [
-    { "year": 2022, "description": "MN-1 was redrawn for 2022. Minnesota's 2022 court-approved map changed district lines only modestly and preserved the state's basic metro/rural balance. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 7, "pviOld": 8 }
+    { "year": 2022, "description": "MN-1 kept most of its previous shape, adding Wabasha and Goodhue counties, giving up Le Sueur County and cutting its share of Brown County from 99% to 62%. It leaned Republican.", "pviNew": 7, "pviOld": 8 }
   ],
   "2702": [
-    { "year": 2022, "description": "MN-2 was redrawn for 2022. Minnesota's 2022 court-approved map changed district lines only modestly and preserved the state's basic metro/rural balance. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -1, "pviOld": 0 }
+    { "year": 2022, "description": "MN-2 was substantially redrawn, adding Le Sueur County, raising its share of Rice County from 34% to 57% and giving up Wabasha and Goodhue counties. It was a Democratic-leaning toss-up.", "pviNew": -1, "pviOld": 0 }
   ],
   "2703": [
-    { "year": 2022, "description": "MN-3 was redrawn for 2022. Minnesota's 2022 court-approved map changed district lines only modestly and preserved the state's basic metro/rural balance. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -8, "pviOld": -6 }
+    { "year": 2022, "description": "MN-3 kept most of its previous shape, dropping out of Carver County. It was solidly Democratic.", "pviNew": -8, "pviOld": -6 }
   ],
   "2704": [
-    { "year": 2022, "description": "MN-4 was redrawn for 2022. Minnesota's 2022 court-approved map changed district lines only modestly and preserved the state's basic metro/rural balance. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -17, "pviOld": -16 }
+    { "year": 2022, "description": "MN-4 kept most of its previous shape, trading territory with MN-5 and MN-2 within the same counties. It was safely Democratic.", "pviNew": -17, "pviOld": -16 }
   ],
   "2705": [
-    { "year": 2022, "description": "MN-5 was redrawn for 2022. Minnesota's 2022 court-approved map changed district lines only modestly and preserved the state's basic metro/rural balance. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -30, "pviOld": -29 }
+    { "year": 2022, "description": "MN-5 kept most of its previous shape, trading territory with MN-3 and MN-4 within the same counties. It was safely Democratic.", "pviNew": -30, "pviOld": -29 }
   ],
   "2706": [
-    { "year": 2022, "description": "MN-6 was redrawn for 2022. Minnesota's 2022 court-approved map changed district lines only modestly and preserved the state's basic metro/rural balance. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 12, "pviOld": 14 }
+    { "year": 2022, "description": "MN-6 was reshaped, taking in the rest of Carver County, dropping out of Washington County and cutting its share of Stearns County from 43% to 19%. It was solidly Republican.", "pviNew": 12, "pviOld": 14 }
   ],
   "2707": [
-    { "year": 2022, "description": "MN-7 was redrawn for 2022. Minnesota's 2022 court-approved map changed district lines only modestly and preserved the state's basic metro/rural balance. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 19, "pviOld": 17 }
+    { "year": 2022, "description": "MN-7 was reshaped, adding Wadena and Morrison counties, taking 38% of Brown County and taking in the rest of Cottonwood County. It was safely Republican.", "pviNew": 19, "pviOld": 17 }
   ],
   "2708": [
-    { "year": 2022, "description": "MN-8 was redrawn for 2022. Minnesota's 2022 court-approved map changed district lines only modestly and preserved the state's basic metro/rural balance. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 8, "pviOld": 10 }
+    { "year": 2022, "description": "MN-8 kept most of its previous shape, adding Mahnomen, Clearwater and Lake of the Woods counties, taking in the rest of Beltrami County and taking 40% of Washington County. It was solidly Republican.", "pviNew": 8, "pviOld": 10 }
   ],
   "2801": [
-    { "year": 2022, "description": "MS-1 was redrawn for 2022. Mississippi's 2022 map made limited adjustments while keeping the four-district arrangement broadly familiar. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 18, "pviOld": 18 }
+    { "year": 2022, "description": "MS-1 kept most of its previous shape, giving up Winston County. It was safely Republican.", "pviNew": 18, "pviOld": 18 }
   ],
   "2802": [
-    { "year": 2022, "description": "MS-2 was redrawn for 2022. Mississippi's 2022 map made limited adjustments while keeping the four-district arrangement broadly familiar. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -11, "pviOld": -13 }
+    { "year": 2022, "description": "MS-2 kept most of its previous shape, adding Amite, Wilkinson, Franklin and Adams counties. It was solidly Democratic.", "pviNew": -11, "pviOld": -13 }
   ],
   "2803": [
-    { "year": 2022, "description": "MS-3 was redrawn for 2022. Mississippi's 2022 map made limited adjustments while keeping the four-district arrangement broadly familiar. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 15, "pviOld": 13 }
+    { "year": 2022, "description": "MS-3 was reshaped, adding Marion and Winston counties, taking in the rest of Clarke County and taking 10% of Jones County. It was safely Republican.", "pviNew": 15, "pviOld": 13 }
   ],
   "2804": [
-    { "year": 2022, "description": "MS-4 was redrawn for 2022. Mississippi's 2022 map made limited adjustments while keeping the four-district arrangement broadly familiar. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 22, "pviOld": 22 }
+    { "year": 2022, "description": "MS-4 kept most of its previous shape, giving up Marion County, dropping out of Clarke County and cutting its share of Jones County from 100% to 90%. It was safely Republican.", "pviNew": 22, "pviOld": 22 }
   ],
   "2901": [
     { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": -29, "pviOld": -27 },
-    { "year": 2022, "description": "MO-1 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -27, "pviOld": -29 }
+    { "year": 2022, "description": "MO-1 kept most of its previous shape, trading territory with MO-2 within the same counties. It was safely Democratic.", "pviNew": -27, "pviOld": -29 }
   ],
   "2902": [
     { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": 6, "pviOld": 7 },
-    { "year": 2022, "description": "MO-2 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 7, "pviOld": 4 }
+    { "year": 2022, "description": "MO-2 was reshaped, adding Franklin County, taking 77% of Warren County and raising its share of St. Charles County from 16% to 39%. It leaned Republican.", "pviNew": 7, "pviOld": 4 }
   ],
   "2903": [
     { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": 10, "pviOld": 16 },
-    { "year": 2022, "description": "MO-3 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 16, "pviOld": 21 }
+    { "year": 2022, "description": "MO-3 was reshaped, adding Cooper, Washington, Moniteau and Crawford counties, taking 42% of Boone County and raising its share of Jefferson County from 34% to 49%. It was safely Republican.", "pviNew": 16, "pviOld": 21 }
   ],
   "2904": [
     { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": 10, "pviOld": 23 },
-    { "year": 2022, "description": "MO-4 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 23, "pviOld": 20 }
+    { "year": 2022, "description": "MO-4 was reshaped, adding Lafayette, Polk and Saline counties, taking 25% of Jackson County and raising its share of Camden County from 70% to 93%. It was safely Republican.", "pviNew": 23, "pviOld": 20 }
   ],
   "2905": [
     { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": 9, "pviOld": -11 },
-    { "year": 2022, "description": "MO-5 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -11, "pviOld": -7 }
+    { "year": 2022, "description": "MO-5 was rebuilt almost from scratch, raising its share of Clay County from 10% to 20%, giving up Ray, Lafayette and Saline counties and cutting its share of Jackson County from 70% to 57%. It was solidly Democratic.", "pviNew": -11, "pviOld": -7 }
   ],
   "2906": [
     { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": 13, "pviOld": 21 },
-    { "year": 2022, "description": "MO-6 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 21, "pviOld": 18 }
+    { "year": 2022, "description": "MO-6 kept most of its previous shape, adding Lincoln, Randolph and Ray counties, taking in the rest of Audrain County and cutting its share of Jackson County from 30% to 19%. It was safely Republican.", "pviNew": 21, "pviOld": 18 }
   ],
   "2907": [
     { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": 21, "pviOld": 24 },
-    { "year": 2022, "description": "MO-7 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 24, "pviOld": 24 }
+    { "year": 2022, "description": "MO-7 kept most of its previous shape, raising its share of Webster County from 18% to 42% and giving up Polk County. It was safely Republican.", "pviNew": 24, "pviOld": 24 }
   ],
   "2908": [
     { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": 27, "pviOld": 28 },
-    { "year": 2022, "description": "MO-8 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 28, "pviOld": 30 }
+    { "year": 2022, "description": "MO-8 kept most of its previous shape, giving up Washington and Crawford counties and cutting its share of Jefferson County from 61% to 49%. It was safely Republican.", "pviNew": 28, "pviOld": 30 }
   ],
   "3001": [
-    { "year": 2022, "description": "MT-1 was effectively created in 2022 when Montana regained a second House seat. The new map drew a western district centered on Missoula, Bozeman, and the more population-heavy western half of the state, making it markedly more competitive than the former at-large district.", "pviNew": 6, "pviOld": 11 }
+    { "year": 2022, "description": "MT-1 was a new seat, created when Montana gained a district in the 2020 reapportionment, built on Beaverhead, Ravalli, Flathead, Sanders, Lincoln and Gallatin counties. It leaned Republican.", "pviNew": 6, "pviOld": 11 }
   ],
   "3002": [
-    { "year": 2022, "description": "MT-2 was effectively created in 2022 when Montana regained a second House seat. The new map made it the eastern district covering the vast rural eastern half of the state, leaving it strongly Republican.", "pviNew": 16 }
+    { "year": 2022, "description": "MT-2 was a new seat, created when Montana gained a district in the 2020 reapportionment, built on Garfield, Liberty, Golden Valley, Wheatland, Lewis and Clark and Petroleum counties. It was safely Republican.", "pviNew": 16 }
   ],
   "3101": [
-    { "year": 2022, "description": "NE-1 was redrawn for 2022. Nebraska's 2022 map made limited changes while keeping the familiar Omaha/Lincoln and rural district structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 9, "pviOld": 11 }
+    { "year": 2022, "description": "NE-1 was reshaped, raising its share of Sarpy County from 22% to 39%, giving up Saunders, Otoe, Washington, Thurston and Burt counties and cutting its share of Polk County from 99% to 35%. It was solidly Republican.", "pviNew": 9, "pviOld": 11 }
   ],
   "3102": [
-    { "year": 2022, "description": "NE-2 was redrawn for 2022. Nebraska's 2022 map made limited changes while keeping the familiar Omaha/Lincoln and rural district structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 0, "pviOld": 1 }
+    { "year": 2022, "description": "NE-2 kept most of its previous shape, adding Saunders County and cutting its share of Sarpy County from 78% to 61%. It was evenly split.", "pviNew": 0, "pviOld": 1 }
   ],
   "3103": [
-    { "year": 2022, "description": "NE-3 was redrawn for 2022. Nebraska's 2022 map made limited changes while keeping the familiar Omaha/Lincoln and rural district structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 29, "pviOld": 30 }
+    { "year": 2022, "description": "NE-3 kept most of its previous shape, adding Otoe, Washington, Thurston and Burt counties and taking 65% of Polk County. It was safely Republican.", "pviNew": 29, "pviOld": 30 }
   ],
   "3201": [
-    { "year": 2022, "description": "NV-1 was materially redrawn for 2022. Nevada's 2022 map adjusted all four districts, especially in Las Vegas, to spread Democratic voters more broadly across the delegation. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -3, "pviOld": -12 }
+    { "year": 2022, "description": "NV-1 was substantially redrawn, taking 13% of Clark County. It was a Democratic-leaning toss-up.", "pviNew": -3, "pviOld": -12 }
   ],
   "3202": [
-    { "year": 2022, "description": "NV-2 was materially redrawn for 2022. Nevada's 2022 map adjusted all four districts, especially in Las Vegas, to spread Democratic voters more broadly across the delegation. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 8, "pviOld": 8 }
+    { "year": 2022, "description": "NV-2 kept most of its previous shape, adding White Pine County and raising its share of Lyon County from 49% to 65%. It was solidly Republican.", "pviNew": 8, "pviOld": 8 }
   ],
   "3203": [
-    { "year": 2022, "description": "NV-3 was materially redrawn for 2022. Nevada's 2022 map adjusted all four districts, especially in Las Vegas, to spread Democratic voters more broadly across the delegation. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -1, "pviOld": 2 }
+    { "year": 2022, "description": "NV-3 was reshaped, cutting its share of Clark County from 36% to 25%. It was a Democratic-leaning toss-up.", "pviNew": -1, "pviOld": 2 }
   ],
   "3204": [
-    { "year": 2022, "description": "NV-4 was materially redrawn for 2022. Nevada's 2022 map adjusted all four districts, especially in Las Vegas, to spread Democratic voters more broadly across the delegation. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -3, "pviOld": -1 }
+    { "year": 2022, "description": "NV-4 was reshaped, giving up White Pine County and cutting its share of Lyon County from 51% to 35%. It was a Democratic-leaning toss-up.", "pviNew": -3, "pviOld": -1 }
   ],
   "3301": [
-    { "year": 2022, "description": "NH-1 was redrawn for 2022. New Hampshire's 2022 map made only small changes to the state's two districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 0, "pviOld": 1 }
+    { "year": 2022, "description": "NH-1 kept most of its previous shape, cutting its share of Carroll County from 99% to 74%. It was evenly split.", "pviNew": 0, "pviOld": 1 }
   ],
   "3302": [
-    { "year": 2022, "description": "NH-2 was redrawn for 2022. New Hampshire's 2022 map made only small changes to the state's two districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -2, "pviOld": -1 }
+    { "year": 2022, "description": "NH-2 kept most of its previous shape, taking 26% of Carroll County. It was a Democratic-leaning toss-up.", "pviNew": -2, "pviOld": -1 }
   ],
   "3401": [
-    { "year": 2022, "description": "NJ-1 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -10, "pviOld": -11 }
+    { "year": 2022, "description": "NJ-1 kept most of its previous shape, taking in the rest of Camden County. It was solidly Democratic.", "pviNew": -10, "pviOld": -11 }
   ],
   "3402": [
-    { "year": 2022, "description": "NJ-2 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 5, "pviOld": 4 }
+    { "year": 2022, "description": "NJ-2 kept most of its previous shape, raising its share of Ocean County from 19% to 37%, dropping out of Burlington County and dropping out of Camden County. It leaned Republican.", "pviNew": 5, "pviOld": 4 }
   ],
   "3403": [
-    { "year": 2022, "description": "NJ-3 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -5, "pviOld": 3 }
+    { "year": 2022, "description": "NJ-3 was reshaped, taking 40% of Monmouth County, taking 40% of Mercer County and dropping out of Ocean County. It leaned Democratic.", "pviNew": -5, "pviOld": 3 }
   ],
   "3404": [
-    { "year": 2022, "description": "NJ-4 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 14, "pviOld": 8 }
+    { "year": 2022, "description": "NJ-4 was reshaped, raising its share of Ocean County from 34% to 63%, cutting its share of Monmouth County from 82% to 46% and dropping out of Mercer County. It was solidly Republican.", "pviNew": 14, "pviOld": 8 }
   ],
   "3405": [
-    { "year": 2022, "description": "NJ-5 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -4, "pviOld": 1 }
+    { "year": 2022, "description": "NJ-5 was reshaped, raising its share of Passaic County from 56% to 66%, dropping out of Warren County and cutting its share of Sussex County from 85% to 70%. It leaned Democratic.", "pviNew": -4, "pviOld": 1 }
   ],
   "3406": [
-    { "year": 2022, "description": "NJ-6 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -8, "pviOld": -6 }
+    { "year": 2022, "description": "NJ-6 kept most of its previous shape, trading territory with NJ-4 and NJ-12 within the same counties. It was solidly Democratic.", "pviNew": -8, "pviOld": -6 }
   ],
   "3407": [
-    { "year": 2022, "description": "NJ-7 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 1, "pviOld": -1 }
+    { "year": 2022, "description": "NJ-7 kept most of its previous shape, taking in the rest of Warren County, taking 30% of Sussex County and cutting its share of Somerset County from 82% to 60%. It was a Republican-leaning toss-up.", "pviNew": 1, "pviOld": -1 }
   ],
   "3408": [
-    { "year": 2022, "description": "NJ-8 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -22, "pviOld": -24 }
+    { "year": 2022, "description": "NJ-8 was reshaped, cutting its share of Hudson County from 82% to 72%. It was safely Democratic.", "pviNew": -22, "pviOld": -24 }
   ],
   "3409": [
-    { "year": 2022, "description": "NJ-9 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -8, "pviOld": -13 }
+    { "year": 2022, "description": "NJ-9 was reshaped, raising its share of Hudson County from 17% to 27%. It was solidly Democratic.", "pviNew": -8, "pviOld": -13 }
   ],
   "3410": [
-    { "year": 2022, "description": "NJ-10 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -30, "pviOld": -34 }
+    { "year": 2022, "description": "NJ-10 was reshaped, trading territory with NJ-7 and NJ-8 within the same counties. It was safely Democratic.", "pviNew": -30, "pviOld": -34 }
   ],
   "3411": [
-    { "year": 2022, "description": "NJ-11 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -6, "pviOld": 0 }
+    { "year": 2022, "description": "NJ-11 was reshaped, raising its share of Essex County from 49% to 62%, dropping out of Sussex County and cutting its share of Passaic County from 29% to 16%. It leaned Democratic.", "pviNew": -6, "pviOld": 0 }
   ],
   "3412": [
-    { "year": 2022, "description": "NJ-12 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -12, "pviOld": -16 }
+    { "year": 2022, "description": "NJ-12 kept most of its previous shape, raising its share of Somerset County from 17% to 39% and cutting its share of Mercer County from 72% to 56%. It was solidly Democratic.", "pviNew": -12, "pviOld": -16 }
   ],
   "3501": [
-    { "year": 2022, "description": "NM-1 was materially redrawn for 2022. New Mexico's 2022 map materially reworked all three districts, especially by splitting Albuquerque differently and making the southern district more competitive. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -5, "pviOld": -9 }
+    { "year": 2022, "description": "NM-1 kept most of its previous shape, adding De Baca, Lincoln and Guadalupe counties, taking 35% of Chaves County and taking 29% of Valencia County. It leaned Democratic.", "pviNew": -5, "pviOld": -9 }
   ],
   "3502": [
-    { "year": 2022, "description": "NM-2 was materially redrawn for 2022. New Mexico's 2022 map materially reworked all three districts, especially by splitting Albuquerque differently and making the southern district more competitive. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -1, "pviOld": 8 }
+    { "year": 2022, "description": "NM-2 was reshaped, raising its share of Bernalillo County from 19% to 55%, giving up De Baca, Lincoln and Guadalupe counties and dropping out of Roosevelt County. It was a Democratic-leaning toss-up.", "pviNew": -1, "pviOld": 8 }
   ],
   "3503": [
-    { "year": 2022, "description": "NM-3 was materially redrawn for 2022. New Mexico's 2022 map materially reworked all three districts, especially by splitting Albuquerque differently and making the southern district more competitive. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -4, "pviOld": -7 }
+    { "year": 2022, "description": "NM-3 kept most of its previous shape, taking in the rest of Roosevelt County and taking 53% of Lea County. It leaned Democratic.", "pviNew": -4, "pviOld": -7 }
   ],
   "3601": [
-    { "year": 2024, "description": "NY-1 remained an eastern Long Island seat, but the 2024 court-drawn revision adjusted its boundaries and made only modest changes to its basic Suffolk County footprint.", "pviNew": 4, "pviOld": 3 },
-    { "year": 2022, "description": "NY-1 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 3, "pviOld": 6 }
+    { "year": 2024, "description": "NY-1 took a larger share of Suffolk County, up from 65% to 70%, keeping its eastern Long Island shape. It remained a competitive Republican-leaning seat.", "pviNew": 4, "pviOld": 3 },
+    { "year": 2022, "description": "NY-1 was redrawn, trading territory with NY-3 within the same counties. It was a Republican-leaning toss-up.", "pviNew": 3, "pviOld": 6 }
   ],
   "3602": [
-    { "year": 2024, "description": "NY-2 stayed a Long Island district centered in Suffolk/Nassau territory, with moderate adjustments under the 2024 court-ordered redraw.", "pviNew": 4, "pviOld": 3 },
-    { "year": 2022, "description": "NY-2 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 3, "pviOld": 5 }
+    { "year": 2024, "description": "NY-2's share of Suffolk County fell from 35% to 28% as NY-1 expanded east. It stayed Republican-leaning.", "pviNew": 4, "pviOld": 3 },
+    { "year": 2022, "description": "NY-2 was redrawn, raising its share of Suffolk County from 17% to 35%. It was a Republican-leaning toss-up.", "pviNew": 3, "pviOld": 5 }
   ],
   "3603": [
-    { "year": 2024, "description": "NY-3 was meaningfully reworked in the 2024 court map, with Long Island and north Queens/Nassau lines adjusted to change the district's political balance and geographic composition.", "pviNew": -3, "pviOld": -2 },
-    { "year": 2022, "description": "NY-3 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -2, "pviOld": -3 }
+    { "year": 2024, "description": "NY-3's Nassau and Queens lines were only modestly adjusted. It remained one of the state's closest seats.", "pviNew": -3, "pviOld": -2 },
+    { "year": 2022, "description": "NY-3 was redrawn, dropping out of Suffolk County. It was a Democratic-leaning toss-up.", "pviNew": -2, "pviOld": -3 }
   ],
   "3604": [
-    { "year": 2024, "description": "NY-4 remained a Nassau County district, though its boundaries shifted as the court map redivided Long Island's competitive seats for 2024.", "pviNew": -5, "pviOld": -5 },
-    { "year": 2022, "description": "NY-4 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -5, "pviOld": -4 }
+    { "year": 2024, "description": "NY-4's Nassau County lines were only modestly adjusted. It stayed Democratic-leaning.", "pviNew": -5, "pviOld": -5 },
+    { "year": 2022, "description": "NY-4 was redrawn, trading territory with NY-5 and NY-2 within the same counties. It leaned Democratic.", "pviNew": -5, "pviOld": -4 }
   ],
   "3605": [
-    { "year": 2024, "description": "NY-5 stayed a heavily Democratic Queens-based seat, with only limited changes in the 2024 redraw.", "pviNew": -30, "pviOld": -30 },
-    { "year": 2022, "description": "NY-5 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -30, "pviOld": -34 }
+    { "year": 2024, "description": "NY-5's Queens lines were only modestly adjusted. It remained safely Democratic.", "pviNew": -30, "pviOld": -30 },
+    { "year": 2022, "description": "NY-5 was redrawn, trading territory with NY-8, NY-6 and NY-7 within the same counties. It was safely Democratic.", "pviNew": -30, "pviOld": -34 }
   ],
   "3606": [
-    { "year": 2024, "description": "NY-6 remained centered in Queens and changed only modestly under the 2024 court map.", "pviNew": -14, "pviOld": -15 },
-    { "year": 2022, "description": "NY-6 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -15, "pviOld": -13 }
+    { "year": 2024, "description": "NY-6's Queens lines were only modestly adjusted. It stayed solidly Democratic.", "pviNew": -14, "pviOld": -15 },
+    { "year": 2022, "description": "NY-6 was redrawn, trading territory with NY-14, NY-3 and NY-7 within the same counties. It was safely Democratic.", "pviNew": -15, "pviOld": -13 }
   ],
   "3607": [
-    { "year": 2024, "description": "NY-7 stayed a Brooklyn/Queens district with only minor boundary tweaks in the 2024 revision.", "pviNew": -30, "pviOld": -31 },
-    { "year": 2022, "description": "NY-7 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -31, "pviOld": -24 }
+    { "year": 2024, "description": "NY-7's Brooklyn and Queens lines were only modestly adjusted. It remained safely Democratic.", "pviNew": -30, "pviOld": -31 },
+    { "year": 2022, "description": "NY-7 was redrawn, trading territory with NY-12, NY-8 and NY-14 within the same counties. It was safely Democratic.", "pviNew": -31, "pviOld": -24 }
   ],
   "3608": [
-    { "year": 2024, "description": "NY-8 remained a Brooklyn/Queens seat and saw only small adjustments in the 2024 court redraw.", "pviNew": -27, "pviOld": -26 },
-    { "year": 2022, "description": "NY-8 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -26, "pviOld": -33 }
+    { "year": 2024, "description": "NY-8's Brooklyn lines were only modestly adjusted. It stayed safely Democratic.", "pviNew": -27, "pviOld": -26 },
+    { "year": 2022, "description": "NY-8 was redrawn, trading territory with NY-7, NY-9 and NY-11 within the same counties. It was safely Democratic.", "pviNew": -26, "pviOld": -33 }
   ],
   "3609": [
-    { "year": 2024, "description": "NY-9 stayed a Brooklyn-based Democratic district with little substantive change in 2024.", "pviNew": -25, "pviOld": -25 },
-    { "year": 2022, "description": "NY-9 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -25, "pviOld": -32 }
+    { "year": 2024, "description": "NY-9's Brooklyn lines were only modestly adjusted. It remained safely Democratic.", "pviNew": -25, "pviOld": -25 },
+    { "year": 2022, "description": "NY-9 was redrawn, trading territory with NY-10, NY-11 and NY-8 within the same counties. It was safely Democratic.", "pviNew": -25, "pviOld": -32 }
   ],
   "3610": [
-    { "year": 2024, "description": "NY-10 remained a Manhattan/Brooklyn district, with only small changes in the 2024 court-ordered update.", "pviNew": -34, "pviOld": -35 },
-    { "year": 2022, "description": "NY-10 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -35, "pviOld": -27 }
+    { "year": 2024, "description": "NY-10 took a larger share of Manhattan, up from 18% to 25%, reaching north from its lower Manhattan and Brooklyn base. It stayed safely Democratic.", "pviNew": -34, "pviOld": -35 },
+    { "year": 2022, "description": "NY-10 was redrawn, cutting its share of New York County from 39% to 18%. It was safely Democratic.", "pviNew": -35, "pviOld": -27 }
   ],
   "3611": [
-    { "year": 2024, "description": "NY-11 stayed centered on Staten Island and southern Brooklyn, but the 2024 court map made modest changes around its edges.", "pviNew": 6, "pviOld": 6 },
-    { "year": 2022, "description": "NY-11 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 6, "pviOld": 7 }
+    { "year": 2024, "description": "NY-11's Staten Island and south Brooklyn lines were essentially unchanged. It remained Republican-leaning.", "pviNew": 6, "pviOld": 6 },
+    { "year": 2022, "description": "NY-11 was redrawn, with only minor boundary adjustments. It leaned Republican.", "pviNew": 6, "pviOld": 7 }
   ],
   "3612": [
-    { "year": 2024, "description": "NY-12 remained a Manhattan-based district and changed only marginally in the 2024 redraw.", "pviNew": -34, "pviOld": -34 },
-    { "year": 2022, "description": "NY-12 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -34, "pviOld": -34 }
+    { "year": 2024, "description": "NY-12's Manhattan lines were only modestly adjusted. It stayed safely Democratic.", "pviNew": -34, "pviOld": -34 },
+    { "year": 2022, "description": "NY-12 was redrawn, raising its share of New York County from 25% to 45%. It was safely Democratic.", "pviNew": -34, "pviOld": -34 }
   ],
   "3613": [
-    { "year": 2024, "description": "NY-13 stayed centered in upper Manhattan and the Bronx, with little substantive change in 2024.", "pviNew": -38, "pviOld": -38 },
-    { "year": 2022, "description": "NY-13 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -38, "pviOld": -40 }
+    { "year": 2024, "description": "NY-13's share of Manhattan fell from 31% to 22% as NY-10 reached north. It remained safely Democratic.", "pviNew": -38, "pviOld": -38 },
+    { "year": 2022, "description": "NY-13 was redrawn, trading territory with NY-12 and NY-15 within the same counties. It was safely Democratic.", "pviNew": -38, "pviOld": -40 }
   ],
   "3614": [
-    { "year": 2024, "description": "NY-14 remained a Bronx/Queens district and saw only limited modifications in the 2024 court-drawn revision.", "pviNew": -27, "pviOld": -28 },
-    { "year": 2022, "description": "NY-14 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -28, "pviOld": -25 }
+    { "year": 2024, "description": "NY-14's share of Queens fell from 14% to 9%, concentrating the district in the Bronx. It stayed safely Democratic.", "pviNew": -27, "pviOld": -28 },
+    { "year": 2022, "description": "NY-14 was redrawn, trading territory with NY-15, NY-12 and NY-16 within the same counties. It was safely Democratic.", "pviNew": -28, "pviOld": -25 }
   ],
   "3615": [
-    { "year": 2024, "description": "NY-15 stayed a Bronx-based district with only minor line changes in 2024.", "pviNew": -35, "pviOld": -35 },
-    { "year": 2022, "description": "NY-15 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -35, "pviOld": -39 }
+    { "year": 2024, "description": "NY-15's share of the Bronx fell from 43% to 36%, with the territory going to NY-16. It remained safely Democratic.", "pviNew": -35, "pviOld": -35 },
+    { "year": 2022, "description": "NY-15 was redrawn, raising its share of Bronx County from 21% to 43%. It was safely Democratic.", "pviNew": -35, "pviOld": -39 }
   ],
   "3616": [
-    { "year": 2024, "description": "NY-16 remained anchored in the lower Hudson Valley and southern Westchester/Bronx suburbs, though the 2024 map adjusted nearby suburban lines.", "pviNew": -21, "pviOld": -20 },
-    { "year": 2022, "description": "NY-16 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -20, "pviOld": -25 }
+    { "year": 2024, "description": "NY-16 reached deeper into the Bronx, raising its share there from 7% to 18% alongside its Westchester base. It stayed safely Democratic.", "pviNew": -21, "pviOld": -20 },
+    { "year": 2022, "description": "NY-16 was redrawn, raising its share of Westchester County from 15% to 28% and cutting its share of Bronx County from 24% to 7%. It was safely Democratic.", "pviNew": -20, "pviOld": -25 }
   ],
   "3617": [
-    { "year": 2024, "description": "NY-17 was one of the more important Hudson Valley battlegrounds touched by the 2024 court map. Its boundaries were adjusted in a way that changed the seat's political complexion while keeping its lower-Hudson core.", "pviNew": -3, "pviOld": -3 },
-    { "year": 2022, "description": "NY-17 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -3, "pviOld": -9 }
+    { "year": 2024, "description": "NY-17's Hudson Valley lines were only modestly adjusted. It remained one of the state's closest seats.", "pviNew": -3, "pviOld": -3 },
+    { "year": 2022, "description": "NY-17 was redrawn, adding Putnam County, raising its share of Westchester County from 51% to 72% and taking 15% of Dutchess County. It was a Democratic-leaning toss-up.", "pviNew": -3, "pviOld": -9 }
   ],
   "3618": [
-    { "year": 2024, "description": "NY-18 remained a Hudson Valley district, but the 2024 revision altered its boundaries as the court rebalanced the region's competitive seats.", "pviNew": -2, "pviOld": -1 },
-    { "year": 2022, "description": "NY-18 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -1, "pviOld": 1 }
+    { "year": 2024, "description": "NY-18's share of Ulster County fell from 44% to 33%. It stayed a competitive Hudson Valley seat.", "pviNew": -2, "pviOld": -1 },
+    { "year": 2022, "description": "NY-18 was redrawn, raising its share of Dutchess County from 20% to 85%, taking 44% of Ulster County and giving up Putnam County. It was a Democratic-leaning toss-up.", "pviNew": -1, "pviOld": 1 }
   ],
   "3619": [
-    { "year": 2024, "description": "NY-19 stayed an upstate swing district, with moderate changes to its lines under the 2024 court-drawn map.", "pviNew": 1, "pviOld": 0 },
-    { "year": 2022, "description": "NY-19 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 0, "pviOld": 3 }
+    { "year": 2024, "description": "NY-19 shifted north and east, taking 68% of Rensselaer County, all of Otsego and more of Ulster, while giving up Tioga County and half of Cortland. It remained a closely divided seat.", "pviNew": 1, "pviOld": 0 },
+    { "year": 2022, "description": "NY-19 was redrawn, adding Tompkins, Tioga, Chenango and Cortland counties, taking in the rest of Broome County and giving up Schoharie County. It was evenly split.", "pviNew": 0, "pviOld": 3 }
   ],
   "3620": [
-    { "year": 2024, "description": "NY-20 remained a Capital Region/upstate district and saw only moderate adjustments under the 2024 map.", "pviNew": -7, "pviOld": -7 },
-    { "year": 2022, "description": "NY-20 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -7, "pviOld": -7 }
+    { "year": 2024, "description": "NY-20 took 32% of Rensselaer and 22% of Montgomery counties while its share of Saratoga County fell from 100% to 43%. It stayed Democratic-leaning around Albany.", "pviNew": -7, "pviOld": -7 },
+    { "year": 2022, "description": "NY-20 was redrawn, taking in the rest of Saratoga County, dropping out of Montgomery County and dropping out of Rensselaer County. It leaned Democratic.", "pviNew": -7, "pviOld": -7 }
   ],
   "3621": [
-    { "year": 2024, "description": "NY-21 stayed a vast North Country district, with only limited population-balancing changes in the 2024 redraw.", "pviNew": 10, "pviOld": 9 },
-    { "year": 2022, "description": "NY-21 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 9, "pviOld": 8 }
+    { "year": 2024, "description": "NY-21 moved west and south, adding 73% of Oneida and 57% of Saratoga counties while giving up Rensselaer and Otsego counties and part of Montgomery. It remained solidly Republican.", "pviNew": 10, "pviOld": 9 },
+    { "year": 2022, "description": "NY-21 was redrawn, adding Montgomery, Schoharie and Rensselaer counties, taking 58% of Otsego County and taking in the rest of Herkimer County. It was solidly Republican.", "pviNew": 9, "pviOld": 8 }
   ],
   "3622": [
-    { "year": 2024, "description": "NY-22 remained centered on Syracuse and central New York, but its lines were adjusted in the court's 2024 update to the upstate map.", "pviNew": -3, "pviOld": -1 },
-    { "year": 2022, "description": "NY-22 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -1, "pviOld": 9 }
+    { "year": 2024, "description": "NY-22 shifted west, taking 59% of Cayuga and 48% of Cortland counties while its share of Oneida County fell from 100% to 27%. It stayed a competitive Syracuse-area seat.", "pviNew": -3, "pviOld": -1 },
+    { "year": 2022, "description": "NY-22 was redrawn, adding Onondaga County, giving up Chenango and Cortland counties and dropping out of Broome County. It was a Democratic-leaning toss-up.", "pviNew": -1, "pviOld": 9 }
   ],
   "3623": [
-    { "year": 2024, "description": "NY-23 stayed a southern tier/western New York district with moderate adjustments under the 2024 court-drawn revision.", "pviNew": 12, "pviOld": 12 },
-    { "year": 2022, "description": "NY-23 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 12, "pviOld": 9 }
+    { "year": 2024, "description": "NY-23 took nearly all of Tioga County and a slice of Niagara, giving up half of Schuyler and part of Steuben. It remained solidly Republican.", "pviNew": 12, "pviOld": 12 },
+    { "year": 2022, "description": "NY-23 was redrawn, taking 82% of Erie County, giving up Tompkins, Yates and Seneca counties and dropping out of Tioga County. It was solidly Republican.", "pviNew": 12, "pviOld": 9 }
   ],
   "3624": [
-    { "year": 2024, "description": "NY-24 remained an upstate western/central New York seat, though its exact boundaries shifted in the 2024 revision.", "pviNew": 13, "pviOld": 11 },
-    { "year": 2022, "description": "NY-24 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 11, "pviOld": -2 }
+    { "year": 2024, "description": "NY-24 expanded across the northern tier, adding 53% of Schuyler, the rest of Orleans, more of Niagara and Jefferson and 23% of Steuben, while giving up most of Cayuga County. It stayed solidly Republican.", "pviNew": 13, "pviOld": 11 },
+    { "year": 2022, "description": "NY-24 was redrawn, adding Livingston, Genesee, Yates, Ontario, Wyoming and Seneca counties, taking 66% of Jefferson County and taking in the rest of Oswego County. It was solidly Republican.", "pviNew": 11, "pviOld": -2 }
   ],
   "3625": [
-    { "year": 2024, "description": "NY-25 stayed centered on Rochester, with only modest changes under the 2024 court map.", "pviNew": -8, "pviOld": -7 },
-    { "year": 2022, "description": "NY-25 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -7, "pviOld": -8 }
+    { "year": 2024, "description": "NY-25 gave up its share of Orleans County and took a sliver of Ontario, tightening around Rochester. It remained solidly Democratic.", "pviNew": -8, "pviOld": -7 },
+    { "year": 2022, "description": "NY-25 was redrawn, taking 48% of Orleans County and taking in the rest of Monroe County. It leaned Democratic.", "pviNew": -7, "pviOld": -8 }
   ],
   "3626": [
-    { "year": 2024, "description": "NY-26 remained the Buffalo/Niagara Falls Democratic seat and saw only limited changes in the 2024 redraw.", "pviNew": -10, "pviOld": -9 },
-    { "year": 2022, "description": "NY-26 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -9, "pviOld": -10 }
+    { "year": 2024, "description": "NY-26's share of Niagara County fell from 51% to 13%, concentrating the district in Buffalo and Erie County. It stayed solidly Democratic.", "pviNew": -10, "pviOld": -9 },
+    { "year": 2022, "description": "NY-26 was redrawn, taking 51% of Niagara County. It was solidly Democratic.", "pviNew": -9, "pviOld": -10 }
   ],
   "3701": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 5, "pviOld": 1 },
-    { "year": 2024, "description": "NC-1, long a northeastern Black-opportunity seat, was redrawn in 2023 for the 2024 election to add more Republican territory, making it notably less Democratic than the 2022 version.", "pviNew": 1, "pviOld": -2 },
-    { "year": 2022, "description": "NC-1 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": -2, "pviOld": -3 },
-    { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": -3, "pviOld": -17 },
-    { "year": 2016, "description": "NC-1 was redrawn in 2016 after the prior map was struck down, becoming less of a packed Black-majority district and somewhat less Democratic than the earlier version.", "pviNew": -17 }
+    { "year": 2026, "description": "NC-1 swapped four inland counties — Greene, Lenoir, Wilson and Wayne — to NC-3 and took in six coastal ones: Beaufort, Carteret, Craven, Dare, Hyde and Pamlico. The exchange grew its area by about half, remade it as a coastal district and moved it from the state's one competitive seat to a Republican-leaning one.", "pviNew": 5, "pviOld": 1 },
+    { "year": 2024, "description": "NC-1 traded Franklin and Pitt counties for Currituck, Camden, Lenoir and Wayne, keeping its northeastern footprint but taking in more Republican territory. It moved from a narrowly Democratic seat to a narrowly Republican one.", "pviNew": 1, "pviOld": -2 },
+    { "year": 2022, "description": "NC-1 was redrawn, adding Perquimans, Tyrrell, Franklin, Nash, Greene and Chowan counties and one more, taking in the rest of Wilson County and raising its share of Pitt County from 38% to 77%. It was a Democratic-leaning toss-up.", "pviNew": -2, "pviOld": -3 },
+    { "year": 2020, "description": "NC-1 traded its Durham and Granville county territory for Greene, Nash and Wayne counties, keeping a dozen northeastern counties in place. The swap left the district markedly less Democratic than before.", "pviNew": -3, "pviOld": -17 },
+    { "year": 2016, "description": "NC-1 was made far more compact after being struck down as a racial gerrymander, taking in whole counties — Gates, Washington, Granville, Martin, Vance and Edgecombe — and most of Durham, while giving up its reaches into Greene, Pasquotank, Nash, Franklin, Perquimans, Lenoir and Craven. It remained safely Democratic.", "pviNew": -17 }
   ],
   "3702": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": -17, "pviOld": -15 },
-    { "year": 2024, "description": "NC-2 stayed a Raleigh-based district, but its lines were adjusted as North Carolina's 2024 map re-sorted the Triangle and made neighboring districts more favorable to Republicans.", "pviNew": -15, "pviOld": -12 },
-    { "year": 2022, "description": "NC-2 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": -12, "pviOld": -12 },
-    { "year": 2020, "description": "NC-2 was substantially redrawn under North Carolina's court-ordered 2020 interim map, shifting away from its earlier Raleigh-to-Fayetteville-style configuration and becoming a more compact, more Democratic Triangle-area seat.", "pviNew": -12, "pviOld": 7 },
-    { "year": 2016, "description": "NC-2 was substantially redrawn in 2016, shedding parts of its prior eastern reach and taking on a more compact Triangle-area configuration.", "pviNew": 7 }
+    { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-02's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": -17, "pviOld": -15 },
+    { "year": 2024, "description": "NC-2's share of Wake County fell from 58% to 48% as Raleigh was divided differently. It remained safely Democratic.", "pviNew": -15, "pviOld": -12 },
+    { "year": 2022, "description": "NC-2 was redrawn, giving up Franklin, Harnett and Nash counties, dropping out of Wilson County and dropping out of Johnston County. It was solidly Democratic.", "pviNew": -12, "pviOld": -12 },
+    { "year": 2020, "description": "NC-2 was reduced to Wake County alone, shedding Franklin, Harnett and Nash counties and its shares of Johnston and Wilson. Concentrating the seat on Raleigh flipped it from Republican-leaning to solidly Democratic.", "pviNew": -12, "pviOld": 7 },
+    { "year": 2016, "description": "NC-2 was rebuilt around Raleigh's outskirts, taking Franklin and Nash counties, two-thirds of Wake and shares of Wilson and Johnston, while giving up Moore, Lee, Randolph, Hoke, Chatham and Cumberland. It became a Republican-leaning seat.", "pviNew": 7 }
   ],
   "3703": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 6, "pviOld": 11 },
-    { "year": 2024, "description": "NC-3 remained an eastern North Carolina seat with mostly secondary changes under the 2024 redraw.", "pviNew": 11, "pviOld": 15 },
-    { "year": 2022, "description": "NC-3 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 15, "pviOld": 14 },
-    { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": 14, "pviOld": 12 },
-    { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": 12 }
+    { "year": 2026, "description": "NC-3 was the other side of that swap, giving up the coastal counties of Beaufort, Carteret, Craven, Dare, Hyde and Pamlico and absorbing Greene, Lenoir, Wilson and Wayne. It lost about half its area and took on the more Democratic territory in the trade, though it stays Republican-leaning.", "pviNew": 6, "pviOld": 11 },
+    { "year": 2024, "description": "NC-3 took nearly all of Pitt County, up from 23%, and gave up Currituck, Camden, Lenoir and Wayne counties to NC-1. It stayed solidly Republican.", "pviNew": 11, "pviOld": 15 },
+    { "year": 2022, "description": "NC-3 was redrawn, adding Sampson and Duplin counties, taking 47% of Wayne County and giving up Perquimans, Tyrrell, Chowan, Pasquotank and Greene counties. It was safely Republican.", "pviNew": 15, "pviOld": 14 },
+    { "year": 2020, "description": "NC-3 swapped Greene County for Duplin, otherwise keeping its 16-county coastal footprint intact. It remained safely Republican.", "pviNew": 14, "pviOld": 12 },
+    { "year": 2016, "description": "NC-3 consolidated on the coast and inner coastal plain, taking in all of Lenoir, Greene, Pasquotank, Perquimans and Craven counties and nearly all of Chowan, while giving up Pender, Gates, Washington, Martin and New Hanover. It stayed solidly Republican.", "pviNew": 12 }
   ],
   "3704": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": -23, "pviOld": -21 },
-    { "year": 2024, "description": "NC-4 stayed centered on the Durham/Orange County core of the Triangle and remained strongly Democratic, though its boundaries changed as the region was re-divided.", "pviNew": -21, "pviOld": -16 },
-    { "year": 2022, "description": "NC-4 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": -16, "pviOld": -16 },
-    { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": -16, "pviOld": -17 },
-    { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": -17 }
+    { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-04's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": -23, "pviOld": -21 },
+    { "year": 2024, "description": "NC-4 gave up Person, Alamance and Granville counties and picked up 30% of Chatham and 20% of Wake instead. It remained safely Democratic.", "pviNew": -21, "pviOld": -16 },
+    { "year": 2022, "description": "NC-4 was redrawn, adding Person, Alamance and Granville counties, taking in the rest of Durham County and dropping out of Wake County. It was safely Democratic.", "pviNew": -16, "pviOld": -16 },
+    { "year": 2020, "description": "NC-4 expanded north and west out of Durham and Orange counties, adding Franklin and Granville counties and shares of Chatham and Vance. It stayed safely Democratic.", "pviNew": -16, "pviOld": -17 },
+    { "year": 2016, "description": "NC-4 took in all of Orange County and a third of Wake, giving up Chatham, Harnett, Cumberland and Alamance and most of its Durham County share. It remained safely Democratic.", "pviNew": -17 }
   ],
   "3705": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 9, "pviOld": 10 },
-    { "year": 2024, "description": "NC-5 remained a northwestern North Carolina seat, with only modest adjustments under the 2024 map.", "pviNew": 10, "pviOld": 13 },
-    { "year": 2022, "description": "NC-5 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 13, "pviOld": 20 },
-    { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": 20, "pviOld": 10 },
-    { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": 10 }
+    { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-05's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 9, "pviOld": 10 },
+    { "year": 2024, "description": "NC-5 moved east, adding Rockingham and Alexander counties and 30% of Guilford while giving up Yadkin, Avery, Davie and Mitchell counties and its share of Forsyth. It stayed solidly Republican.", "pviNew": 10, "pviOld": 13 },
+    { "year": 2022, "description": "NC-5 was redrawn, adding Mitchell and Davie counties, taking 93% of Caldwell County and giving up Alexander County. It was solidly Republican.", "pviNew": 13, "pviOld": 20 },
+    { "year": 2020, "description": "NC-5 shifted southwest, taking Burke, Caldwell, Cleveland and Gaston counties and part of Rutherford while giving up Forsyth, Surry, Stokes, Yadkin and Avery. It became substantially more Republican.", "pviNew": 20, "pviOld": 10 },
+    { "year": 2016, "description": "NC-5 moved north and west, adding Stokes, Surry and Avery counties and the rest of Forsyth while giving up Davie, Iredell, Rowan and Davidson. It stayed solidly Republican.", "pviNew": 10 }
   ],
   "3706": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 9, "pviOld": 11 },
-    { "year": 2024, "description": "NC-6 was substantially redrawn. The old Greensboro/Winston-Salem swing seat was dismantled and replaced with a much more Republican district, one of the map's clearest partisan shifts.", "pviNew": 11, "pviOld": -4 },
-    { "year": 2022, "description": "NC-6 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": -4, "pviOld": -10 },
-    { "year": 2020, "description": "NC-6 changed sharply in the 2020 court-ordered redraw. The old Greensboro-centered Republican seat was reconfigured into a much more Democratic Piedmont Triad district.", "pviNew": -10, "pviOld": 9 },
-    { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": 9 }
+    { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-06's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 9, "pviOld": 11 },
+    { "year": 2024, "description": "NC-6 was rebuilt around Davidson, Rowan and Davie counties and part of Cabarrus, giving up Rockingham and Caswell counties and all but 14% of Guilford. The redraw turned a Democratic-leaning Greensboro seat into a solidly Republican one.", "pviNew": 11, "pviOld": -4 },
+    { "year": 2022, "description": "NC-6 was redrawn, taking in the rest of Guilford County, taking 24% of Forsyth County and giving up Randolph, Person, Chatham, Alamance and Lee counties. It leaned Democratic.", "pviNew": -4, "pviOld": -10 },
+    { "year": 2020, "description": "NC-6 was reduced to the Piedmont Triad, pairing Guilford County with part of Forsyth after shedding Alamance, Caswell, Chatham, Lee, Person, Randolph and Rockingham. The change flipped it from a Republican seat to a solidly Democratic one.", "pviNew": -10, "pviOld": 9 },
+    { "year": 2016, "description": "NC-6 shifted south, taking in all of Randolph and Chatham counties, nearly all of Lee and the rest of Alamance, while giving up Stokes, Surry, Orange, Durham and Granville and part of Guilford. It remained solidly Republican.", "pviNew": 9 }
   ],
   "3707": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 7, "pviOld": 8 },
-    { "year": 2024, "description": "NC-7 remained a southeastern North Carolina seat, though it picked up and shed territory in the ripple effects of the 2024 redraw.", "pviNew": 8, "pviOld": 8 },
-    { "year": 2022, "description": "NC-7 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 8, "pviOld": 11 },
-    { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": 11, "pviOld": 9 },
-    { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": 9 }
+    { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-07's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 7, "pviOld": 8 },
+    { "year": 2024, "description": "NC-7 took 19% of Sampson County and more of Cumberland, giving up more than half of Robeson County. It remained solidly Republican.", "pviNew": 8, "pviOld": 8 },
+    { "year": 2022, "description": "NC-7 was redrawn, adding Robeson County, taking 71% of Cumberland County and taking in the rest of Bladen County. It was solidly Republican.", "pviNew": 8, "pviOld": 11 },
+    { "year": 2020, "description": "NC-7 gave up Duplin and Wayne counties and took in part of Harnett, keeping its southeastern coastal base. It remained solidly Republican.", "pviNew": 11, "pviOld": 9 },
+    { "year": 2016, "description": "NC-7 took in all of Wayne, Pender and New Hanover counties while giving up Lenoir, Hoke and Cumberland and much of Bladen and Johnston. It stayed solidly Republican.", "pviNew": 9 }
   ],
   "3708": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 10, "pviOld": 11 },
-    { "year": 2024, "description": "NC-8 stayed a south-central district, but its exact boundaries shifted as Republicans reworked the Piedmont and Charlotte exurbs.", "pviNew": 11, "pviOld": 20 },
-    { "year": 2022, "description": "NC-8 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 20, "pviOld": 6 },
-    { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": 6, "pviOld": 8 },
-    { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": 8 }
+    { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-08's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 10, "pviOld": 11 },
+    { "year": 2024, "description": "NC-8 moved west and south, adding Scotland County, 57% of Robeson, nearly all of Richmond, more of Cabarrus and 14% of Mecklenburg, while giving up Rowan and Davidson counties. It stayed solidly Republican.", "pviNew": 11, "pviOld": 20 },
+    { "year": 2022, "description": "NC-8 was redrawn, adding Union, Davidson and Anson counties, taking 73% of Richmond County and taking in the rest of Rowan County. It was safely Republican.", "pviNew": 20, "pviOld": 6 },
+    { "year": 2020, "description": "NC-8 traded Hoke County and its share of Rowan for shares of Harnett and Lee. It stayed Republican-leaning.", "pviNew": 6, "pviOld": 8 },
+    { "year": 2016, "description": "NC-8 moved east, adding Hoke and Moore counties and 47% of Cumberland while giving up Scotland, Richmond, Anson, Robeson, Union and Davidson. It remained solidly Republican.", "pviNew": 8 }
   ],
   "3709": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 8, "pviOld": 9 },
-    { "year": 2024, "description": "NC-9 remained a south-central/Charlotte-exurban Republican seat, with only secondary changes on the 2024 map.", "pviNew": 9, "pviOld": 6 },
-    { "year": 2022, "description": "NC-9 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 6, "pviOld": 6 },
-    { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": 6, "pviOld": 8 },
-    { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": 8 }
+    { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-09's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 8, "pviOld": 9 },
+    { "year": 2024, "description": "NC-9 shifted north to take all of Alamance and 55% of Guilford County, giving up Scotland and Lee counties and parts of Chatham and Cumberland. The redraw made it solidly Republican.", "pviNew": 9, "pviOld": 6 },
+    { "year": 2022, "description": "NC-9 was redrawn, adding Randolph, Chatham, Moore, Lee and Hoke counties, taking 33% of Harnett County and giving up Robeson, Union and Anson counties. It leaned Republican.", "pviNew": 6, "pviOld": 6 },
+    { "year": 2020, "description": "NC-9 took in Hoke County and part of Moore while giving up its shares of Bladen and Cumberland. It remained Republican-leaning.", "pviNew": 6, "pviOld": 8 },
+    { "year": 2016, "description": "NC-9 was rebuilt along the southern border, taking Scotland, Robeson, Richmond and Anson counties, all of Union and shares of Bladen and Cumberland, while giving up Iredell and most of Mecklenburg. It stayed solidly Republican.", "pviNew": 8 }
   ],
   "3710": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 9, "pviOld": 10 },
-    { "year": 2024, "description": "NC-10 remained a western Piedmont foothills seat with only modest adjustments under the 2024 redraw.", "pviNew": 10, "pviOld": 22 },
-    { "year": 2022, "description": "NC-10 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 22, "pviOld": 21 },
-    { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": 21, "pviOld": 12 },
-    { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": 12 }
+    { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-10's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 9, "pviOld": 10 },
+    { "year": 2024, "description": "NC-10 moved east into the Piedmont Triad, taking Yadkin County and 66% of Forsyth while giving up Burke, Cleveland, Alexander and Rutherford counties. It remained solidly Republican.", "pviNew": 10, "pviOld": 22 },
+    { "year": 2022, "description": "NC-10 was redrawn, adding Burke, Alexander and Iredell counties, giving up Polk County and cutting its share of Gaston County from 99% to 29%. It was safely Republican.", "pviNew": 22, "pviOld": 21 },
+    { "year": 2020, "description": "NC-10 moved east across the Piedmont, adding Rockingham, Surry, Stokes and Yadkin counties and part of Forsyth while giving up Gaston, Cleveland, Polk, Rutherford and its share of Buncombe. It became safely Republican.", "pviNew": 21, "pviOld": 12 },
+    { "year": 2016, "description": "NC-10's western Piedmont lines were left unchanged by the 2016 map. It remained solidly Republican.", "pviNew": 12 }
   ],
   "3711": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 5, "pviOld": 8 },
-    { "year": 2024, "description": "NC-11 stayed centered on western North Carolina and Appalachia, with little substantive change in 2024.", "pviNew": 8, "pviOld": 8 },
-    { "year": 2022, "description": "NC-11 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 8, "pviOld": 9 },
-    { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": 9, "pviOld": 14 },
-    { "year": 2016, "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core.", "pviNew": 14 }
+    { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-11's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 5, "pviOld": 8 },
+    { "year": 2024, "description": "NC-11 added Avery and Mitchell counties in the mountains and gave up half of Polk County and its share of Rutherford. It stayed solidly Republican.", "pviNew": 8, "pviOld": 8 },
+    { "year": 2022, "description": "NC-11 was redrawn, adding Polk County, taking 47% of Rutherford County and taking in the rest of Buncombe County. It was solidly Republican.", "pviNew": 8, "pviOld": 9 },
+    { "year": 2020, "description": "NC-11 added Avery and Polk counties and part of Rutherford while giving up Burke and Caldwell, keeping its 14-county mountain core. It remained solidly Republican.", "pviNew": 9, "pviOld": 14 },
+    { "year": 2016, "description": "NC-11 gave up Avery County, otherwise keeping its far-western mountain footprint. It stayed solidly Republican.", "pviNew": 14 }
   ],
   "3712": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": -24, "pviOld": -23 },
-    { "year": 2024, "description": "NC-12 remained a Charlotte-based Democratic district, though the legislature repacked Democratic voters and changed its exact shape in the 2024 redraw.", "pviNew": -23, "pviOld": -13 },
-    { "year": 2022, "description": "NC-12 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": -13, "pviOld": -19 },
-    { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": -19, "pviOld": -18 },
-    { "year": 2016, "description": "NC-12, previously the state's famous I-85 corridor district, was completely reworked in the 2016 court-ordered redraw into a more compact Charlotte-based seat.", "pviNew": -18 }
+    { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-12's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": -24, "pviOld": -23 },
+    { "year": 2024, "description": "NC-12 gave up its share of Cabarrus County and saw its share of Mecklenburg fall from 58% to 48%, tightening around Charlotte. It remained safely Democratic.", "pviNew": -23, "pviOld": -13 },
+    { "year": 2022, "description": "NC-12 was redrawn, taking 39% of Cabarrus County and cutting its share of Mecklenburg County from 82% to 58%. It was solidly Democratic.", "pviNew": -13, "pviOld": -19 },
+    { "year": 2020, "description": "NC-12 stayed wholly inside Mecklenburg County, covering the same county as before, though its lines within Charlotte were adjusted. It remained safely Democratic.", "pviNew": -19, "pviOld": -18 },
+    { "year": 2016, "description": "NC-12 was the other district struck down as a racial gerrymander: the narrow band that had run up Interstate 85 from Charlotte through Davidson, Rowan, Guilford, Cabarrus and Forsyth was replaced by a compact seat with 81% of Mecklenburg County. It remained safely Democratic.", "pviNew": -18 }
   ],
   "3713": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 8, "pviOld": 11 },
-    { "year": 2024, "description": "NC-13 was heavily reworked for 2024. The district shifted away from its recent swing-seat configuration and became substantially more Republican under the new map.", "pviNew": 11, "pviOld": 2 },
-    { "year": 2022, "description": "NC-13 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 2, "pviOld": 20 },
-    { "year": 2020, "description": "NC-13 was one of the districts most visibly changed in North Carolina's court-ordered 2020 redraw, with a new configuration that made it less of the oddly shaped 2016-era district and more of a competitive suburban/exurban seat.", "pviNew": 20, "pviOld": 6 },
-    { "year": 2016, "description": "NC-13 was significantly reconfigured in North Carolina's 2016 redraw, shifting away from the old Raleigh-anchored layout and taking on a more suburban/exurban identity.", "pviNew": 6 }
+    { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-13's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 8, "pviOld": 11 },
+    { "year": 2024, "description": "NC-13 was rebuilt north and east of the Triangle, taking Person, Caswell, Franklin, Lee and Granville counties and the rest of Harnett while giving up Wayne County and part of Wake. The change turned a competitive seat into a solidly Republican one.", "pviNew": 11, "pviOld": 2 },
+    { "year": 2022, "description": "NC-13 was redrawn, adding Johnston County, taking 67% of Harnett County and taking 53% of Wayne County. It was a Republican-leaning toss-up.", "pviNew": 2, "pviOld": 20 },
+    { "year": 2020, "description": "NC-13 was rebuilt across the central Piedmont, taking Alamance, Caswell, Person and Randolph counties plus shares of Chatham and Lee while giving up its share of Guilford. It went from a competitive seat to a safely Republican one.", "pviNew": 20, "pviOld": 6 },
+    { "year": 2016, "description": "NC-13 was relocated from the northeast of the state to the central Piedmont, built on Davidson, Davie and Iredell counties with shares of Guilford and Rowan, after giving up Wayne, Wilson, Wake, Franklin, Nash, Vance, Edgecombe and Granville. It became a Republican-leaning seat.", "pviNew": 6 }
   ],
   "3714": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 8, "pviOld": 11 },
-    { "year": 2024, "description": "NC-14 remained anchored in the Charlotte area but was redrawn to become more favorable to Republicans than the 2022 version.", "pviNew": 11, "pviOld": -6 },
-    { "year": 2022, "description": "NC-14 was created for 2022 after North Carolina gained a seat. It was drawn in the Charlotte area as a competitive-to-Democratic-leaning district, though it was later redrawn again for 2024.", "pviNew": -6 }
+    { "year": 2026, "description": "North Carolina's 2025 redraw changed only NC-1 and NC-3, swapping counties between them. NC-14's boundaries were left as they were, and it runs on the same lines it used in 2024.", "pviNew": 8, "pviOld": 11 },
+    { "year": 2024, "description": "NC-14 was remade as a western district, taking Cleveland, Burke and Rutherford counties, half of Polk and the rest of Gaston. It flipped from Democratic-leaning to solidly Republican.", "pviNew": 11, "pviOld": -6 },
+    { "year": 2022, "description": "NC-14 was a new seat, created when North Carolina gained a district in the 2020 reapportionment, drawn from parts of Gaston and Mecklenburg counties. It leaned Democratic.", "pviNew": -6 }
   ],
   "3901": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 1, "pviOld": -2 },
-    { "year": 2022, "description": "OH-1 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -2, "pviOld": 4 }
+    { "year": 2026, "description": "OH-1 grew by nearly 80% in area, adding Clinton County and rural territory from OH-2 while its share of Hamilton County rose from 49% to 62%. The trade of Cincinnati suburbs for rural ground left the seat a narrow toss-up rather than the Democratic-leaning district it had been.", "pviNew": 1, "pviOld": -2 },
+    { "year": 2022, "description": "OH-1 was reshaped, cutting its share of Hamilton County from 70% to 49%. It was a Democratic-leaning toss-up.", "pviNew": -2, "pviOld": 4 }
   ],
   "3902": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 21, "pviOld": 25 },
-    { "year": 2022, "description": "OH-2 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 25, "pviOld": 9 }
+    { "year": 2026, "description": "OH-2 shifted east along the Ohio River, adding Athens, Morgan and Washington counties and part of Perry, while giving up Clinton, Pickaway and Highland counties to OH-1 and OH-15. It remains safely Republican.", "pviNew": 21, "pviOld": 25 },
+    { "year": 2022, "description": "OH-2 kept most of its previous shape, adding 8 whole counties, among them Pickaway, Meigs and Gallia counties, taking in the rest of Ross County and taking in the rest of Scioto County. It was safely Republican.", "pviNew": 25, "pviOld": 9 }
   ],
   "3903": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": -21, "pviOld": -20 },
-    { "year": 2022, "description": "OH-3 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -20, "pviOld": -19 }
+    { "year": 2026, "description": "OH-3 kept its Columbus core inside Franklin County, with only small adjustments along its edges with OH-12 and OH-15. It stays the most Democratic district in the state.", "pviNew": -21, "pviOld": -20 },
+    { "year": 2022, "description": "OH-3 was reshaped, trading territory with OH-12 and OH-15 within the same counties. Ohio lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -20, "pviOld": -19 }
   ],
   "3904": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 21, "pviOld": 20 },
-    { "year": 2022, "description": "OH-4 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 20, "pviOld": 20 }
+    { "year": 2026, "description": "OH-4 moved west and south, taking Mercer and Van Wert counties, the rest of Shelby and 60% of Clark County. It gave up Ashland County entirely, most of Richland and part of Delaware, and remains safely Republican.", "pviNew": 21, "pviOld": 20 },
+    { "year": 2022, "description": "OH-4 was reshaped, adding Richland, Morrow, Ashland and Hardin counties, taking 67% of Delaware County and taking in the rest of Marion County. Ohio lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Republican.", "pviNew": 20, "pviOld": 20 }
   ],
   "3905": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 12, "pviOld": 15 },
-    { "year": 2022, "description": "OH-5 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 15, "pviOld": 15 }
+    { "year": 2026, "description": "OH-5 gave up Ohio's northwestern corner — Paulding, Henry, Putnam, Mercer and Van Wert counties — and moved east instead, adding Sandusky County, 61% of Richland and the remainder of Wyandot and Wood. It stays solidly Republican.", "pviNew": 12, "pviOld": 15 },
+    { "year": 2022, "description": "OH-5 was reshaped, adding Crawford, Huron, Seneca and Lorain counties, taking in the rest of Mercer County and giving up Defiance, Williams, Fulton and Hardin counties. Ohio lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Republican.", "pviNew": 15, "pviOld": 15 }
   ],
   "3906": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 17, "pviOld": 16 },
-    { "year": 2022, "description": "OH-6 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 16, "pviOld": 24 }
+    { "year": 2026, "description": "OH-6 pulled back from the Ohio River, losing Monroe, Washington and Noble counties and a third of Mahoning, and moved inland to take the rest of Tuscarawas, half of Wayne, part of Holmes and more of Stark. It remains safely Republican.", "pviNew": 17, "pviOld": 16 },
+    { "year": 2022, "description": "OH-6 was reshaped, taking 64% of Stark County, taking in the rest of Mahoning County and giving up Guernsey, Meigs, Gallia, Lawrence and Jackson counties. Ohio lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Republican.", "pviNew": 16, "pviOld": 24 }
   ],
   "3907": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 5, "pviOld": 7 },
-    { "year": 2022, "description": "OH-7 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 7, "pviOld": 18 }
+    { "year": 2026, "description": "OH-7 added Ashland County from OH-4 and gave up half of Wayne County and its share of Holmes. It stays Republican-leaning.", "pviNew": 5, "pviOld": 7 },
+    { "year": 2022, "description": "OH-7 was rebuilt almost from scratch, adding Wayne County, taking 52% of Cuyahoga County and taking in the rest of Medina County. Ohio lost a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Republican.", "pviNew": 7, "pviOld": 18 }
   ],
   "3908": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 8, "pviOld": 14 },
-    { "year": 2022, "description": "OH-8 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 14, "pviOld": 19 }
+    { "year": 2026, "description": "OH-8's share of Hamilton County fell from 50% to 37% and its share of Butler from 99% to 84%, with the Cincinnati suburbs going to OH-1. Trading them for territory from OH-15 left the seat somewhat less Republican but still solidly so.", "pviNew": 8, "pviOld": 14 },
+    { "year": 2022, "description": "OH-8 was reshaped, taking 50% of Hamilton County, giving up Clark County and cutting its share of Miami County from 100% to 23%. Ohio lost a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Republican.", "pviNew": 14, "pviOld": 19 }
   ],
   "3909": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 5, "pviOld": 3 },
-    { "year": 2022, "description": "OH-9 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 3, "pviOld": -9 }
+    { "year": 2026, "description": "OH-9 stretched inland from the Lake Erie shore, adding the rural counties of Putnam, Henry and Paulding from OH-5 while giving up Sandusky County and most of its share of Wood. The added territory made this the state's hardest Democratic hold, now Republican-leaning.", "pviNew": 5, "pviOld": 3 },
+    { "year": 2022, "description": "OH-9 was reshaped, adding Defiance, Sandusky, Williams and Fulton counties, taking in the rest of Lucas County and taking in the rest of Ottawa County. Ohio lost a seat in the 2020 reapportionment, which shifted lines across the state. It was a Republican-leaning toss-up.", "pviNew": 3, "pviOld": -9 }
   ],
   "3910": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 4, "pviOld": 4 },
-    { "year": 2022, "description": "OH-10 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 4, "pviOld": 5 }
+    { "year": 2026, "description": "OH-10 picked up 16% of Butler County from OH-8 and gave up its share of Clark County, tightening around Dayton and Montgomery County. It remains narrowly Republican-leaning.", "pviNew": 4, "pviOld": 4 },
+    { "year": 2022, "description": "OH-10 was reshaped, taking 29% of Clark County and dropping out of Fayette County. It leaned Republican.", "pviNew": 4, "pviOld": 5 }
   ],
   "3911": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": -28, "pviOld": -28 },
-    { "year": 2022, "description": "OH-11 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -28, "pviOld": -30 }
+    { "year": 2026, "description": "OH-11 kept its Cleveland-to-Akron corridor essentially unchanged, with only edge adjustments toward OH-7. It stays safely Democratic.", "pviNew": -28, "pviOld": -28 },
+    { "year": 2022, "description": "OH-11 kept most of its previous shape, raising its share of Cuyahoga County from 35% to 48% and dropping out of Summit County. It was safely Democratic.", "pviNew": -28, "pviOld": -30 }
   ],
   "3912": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 15, "pviOld": 18 },
-    { "year": 2022, "description": "OH-12 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 18, "pviOld": 6 }
+    { "year": 2026, "description": "OH-12 traded its southern end for territory to the east: out went Athens, Morgan and Tuscarawas counties and part of Perry, in came Monroe and Noble counties and a larger share of Delaware County, up from 33% to 53%. It remains safely Republican.", "pviNew": 15, "pviOld": 18 },
+    { "year": 2022, "description": "OH-12 was substantially redrawn, adding Guernsey, Fairfield, Coshocton, Athens, Morgan and Perry counties and one more, taking 76% of Holmes County and taking 55% of Tuscarawas County. Ohio lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Republican.", "pviNew": 18, "pviOld": 6 }
   ],
   "3913": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": -2, "pviOld": 1 },
-    { "year": 2022, "description": "OH-13 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 1, "pviOld": -1 }
+    { "year": 2026, "description": "OH-13 held its Akron-to-Canton shape but shifted north, adding a slice of Portage County including Kent and cutting its share of Stark County from 35% to 23%. The change made it a modestly Democratic-leaning seat.", "pviNew": -2, "pviOld": 1 },
+    { "year": 2022, "description": "OH-13 was rebuilt almost from scratch, taking in the rest of Summit County, raising its share of Stark County from 6% to 36% and dropping out of Trumbull County. Ohio lost a seat in the 2020 reapportionment, which shifted lines across the state. It was a Republican-leaning toss-up.", "pviNew": 1, "pviOld": -1 }
   ],
   "3914": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 10, "pviOld": 9 },
-    { "year": 2022, "description": "OH-14 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 9, "pviOld": 7 }
+    { "year": 2026, "description": "OH-14 extended south to take a third of Mahoning County and the Youngstown area from OH-6, giving up a small part of Portage. It stays solidly Republican.", "pviNew": 10, "pviOld": 9 },
+    { "year": 2022, "description": "OH-14 kept most of its previous shape, taking in the rest of Portage County, taking in the rest of Trumbull County and dropping out of Summit County. It was solidly Republican.", "pviNew": 9, "pviOld": 7 }
   ],
   "3915": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 5, "pviOld": 6 },
-    { "year": 2022, "description": "OH-15 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 6, "pviOld": 9 }
-  ],
-  "3916": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025" }
+    { "year": 2026, "description": "OH-15 grew 40% in area, adding Pickaway and Highland counties and the rest of Fayette from OH-2, while giving up its half of Shelby County and cutting its share of Clark from 71% to 39%. It remains Republican-leaning.", "pviNew": 5, "pviOld": 6 },
+    { "year": 2022, "description": "OH-15 was rebuilt almost from scratch, taking 77% of Miami County, taking 71% of Clark County and giving up Pickaway, Hocking, Fairfield, Clinton, Morgan and Vinton counties and one more. Ohio lost a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Republican.", "pviNew": 6, "pviOld": 9 }
   ],
   "4001": [
-    { "year": 2022, "description": "OK-1 was redrawn for 2022. Oklahoma's 2022 map kept the five-district structure largely intact, with the biggest changes in and around Oklahoma City. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 14, "pviOld": 15 }
+    { "year": 2022, "description": "OK-1 was reshaped, giving up Washington County and cutting its share of Wagoner County from 98% to 59%. It was solidly Republican.", "pviNew": 14, "pviOld": 15 }
   ],
   "4002": [
-    { "year": 2022, "description": "OK-2 was redrawn for 2022. Oklahoma's 2022 map kept the five-district structure largely intact, with the biggest changes in and around Oklahoma City. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 29, "pviOld": 29 }
+    { "year": 2022, "description": "OK-2 kept most of its previous shape, adding Washington County and taking 41% of Wagoner County. It was safely Republican.", "pviNew": 29, "pviOld": 29 }
   ],
   "4003": [
-    { "year": 2022, "description": "OK-3 was redrawn for 2022. Oklahoma's 2022 map kept the five-district structure largely intact, with the biggest changes in and around Oklahoma City. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 24, "pviOld": 29 }
+    { "year": 2022, "description": "OK-3 kept most of its previous shape, taking 12% of Oklahoma County, giving up Lincoln County and cutting its share of Logan County from 100% to 42%. It was safely Republican.", "pviNew": 24, "pviOld": 29 }
   ],
   "4004": [
-    { "year": 2022, "description": "OK-4 was redrawn for 2022. Oklahoma's 2022 map kept the five-district structure largely intact, with the biggest changes in and around Oklahoma City. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 19, "pviOld": 20 }
+    { "year": 2022, "description": "OK-4 kept most of its previous shape, trading territory with OK-5, OK-3 and OK-2 within the same counties. It was safely Republican.", "pviNew": 19, "pviOld": 20 }
   ],
   "4005": [
-    { "year": 2022, "description": "OK-5 was redrawn for 2022. Oklahoma's 2022 map kept the five-district structure largely intact, with the biggest changes in and around Oklahoma City. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 12, "pviOld": 7 }
+    { "year": 2022, "description": "OK-5 kept most of its previous shape, adding Lincoln County, taking 58% of Logan County and taking 18% of Canadian County. It was solidly Republican.", "pviNew": 12, "pviOld": 7 }
   ],
   "4101": [
-    { "year": 2022, "description": "OR-1 was redrawn for 2022 as Oregon added a sixth district, with lines adjusted to accommodate the new Willamette Valley seat while retaining part of this district's prior core.", "pviNew": -18, "pviOld": -12 }
+    { "year": 2022, "description": "OR-1 was reshaped, adding Tillamook County and giving up Yamhill County. It was safely Democratic.", "pviNew": -18, "pviOld": -12 }
   ],
   "4102": [
-    { "year": 2022, "description": "OR-2 was redrawn for 2022 as Oregon added a sixth district, with lines adjusted to accommodate the new Willamette Valley seat while retaining part of this district's prior core.", "pviNew": 15, "pviOld": 11 }
+    { "year": 2022, "description": "OR-2 kept most of its previous shape, taking in the rest of Josephine County, taking 56% of Douglas County and giving up Hood River County. It was safely Republican.", "pviNew": 15, "pviOld": 11 }
   ],
   "4103": [
-    { "year": 2022, "description": "OR-3 was redrawn for 2022 as Oregon added a sixth district, with lines adjusted to accommodate the new Willamette Valley seat while retaining part of this district's prior core.", "pviNew": -22, "pviOld": -24 }
+    { "year": 2022, "description": "OR-3 was reshaped, adding Hood River County and cutting its share of Clackamas County from 39% to 29%. It was safely Democratic.", "pviNew": -22, "pviOld": -24 }
   ],
   "4104": [
-    { "year": 2022, "description": "OR-4 was redrawn for 2022 as Oregon added a sixth district, with lines adjusted to accommodate the new Willamette Valley seat while retaining part of this district's prior core.", "pviNew": -4, "pviOld": 1 }
+    { "year": 2022, "description": "OR-4 was reshaped, adding Lincoln County, giving up Linn County and dropping out of Josephine County. Oregon gained a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Democratic.", "pviNew": -4, "pviOld": 1 }
   ],
   "4105": [
-    { "year": 2022, "description": "OR-5 was redrawn for 2022 as Oregon added a sixth district, with lines adjusted to accommodate the new Willamette Valley seat while retaining part of this district's prior core.", "pviNew": -2, "pviOld": -2 }
+    { "year": 2022, "description": "OR-5 was substantially redrawn, adding Linn County, taking 39% of Deschutes County and giving up Polk, Lincoln and Tillamook counties. Oregon gained a seat in the 2020 reapportionment, which shifted lines across the state. It was a Democratic-leaning toss-up.", "pviNew": -2, "pviOld": -2 }
   ],
   "4106": [
-    { "year": 2022, "description": "OR-6 was created for 2022 after Oregon gained a seat. It was drawn in the Willamette Valley and southern Portland suburbs, carving new territory out of several older districts and creating a competitive new seat.", "pviNew": -4 }
+    { "year": 2022, "description": "OR-6 was a new seat, created when Oregon gained a district in the 2020 reapportionment, built on Yamhill and Polk counties. It leaned Democratic.", "pviNew": -4 }
   ],
   "4201": [
-    { "year": 2022, "description": "PA-1 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 9, "pviOld": 0 },
-    { "year": 2018, "description": "PA-1 was re-created as a Bucks County–based seat under Pennsylvania's 2018 court-drawn map, replacing the old Philadelphia-based version of the 1st and giving the district a very different geographic and political identity.", "pviNew": -1, "pviOld": -31 }
+    { "year": 2022, "description": "PA-1 kept most of its previous shape, raising its share of Montgomery County from 7% to 20%. It was solidly Republican.", "pviNew": 9, "pviOld": 0 },
+    { "year": 2018, "description": "PA-1 was moved out of Philadelphia entirely and reassigned to Bucks County, taking in almost all of it plus a sliver of Montgomery — territory that had been PA-8. It went from a safely Democratic city seat to one of the state's most closely divided districts.", "pviNew": -1, "pviOld": -31 }
   ],
   "4202": [
-    { "year": 2022, "description": "PA-2 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -20, "pviOld": -21 },
-    { "year": 2018, "description": "PA-2 became a heavily Democratic Philadelphia-based district under Pennsylvania's 2018 court-drawn map, taking over territory that had previously been divided differently under the struck-down plan.", "pviNew": -24, "pviOld": -40 }
+    { "year": 2022, "description": "PA-2 kept most of its previous shape, trading territory with PA-3 and PA-4 within the same counties. It was safely Democratic.", "pviNew": -20, "pviOld": -21 },
+    { "year": 2018, "description": "PA-2 stayed a Philadelphia district but was almost entirely reconfigured, ending up with 44% of the city as the court's map redrew all of Philadelphia's seats. It remained safely Democratic.", "pviNew": -24, "pviOld": -40 }
   ],
   "4203": [
-    { "year": 2022, "description": "PA-3 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -39, "pviOld": -41 },
-    { "year": 2018, "description": "Pennsylvania's 2018 map was imposed by the state Supreme Court after it struck down the old congressional plan. This district was effectively rebuilt under the new court-drawn map, with boundaries and numbering reset compared with the pre-2018 configuration.", "pviNew": -41, "pviOld": 11 }
+    { "year": 2022, "description": "PA-3 kept most of its previous shape, trading territory with PA-5 and PA-4 within the same counties. It was safely Democratic.", "pviNew": -39, "pviOld": -41 },
+    { "year": 2018, "description": "PA-3 was relocated clear across the state, from the far northwest — Crawford, Mercer, Butler, Lawrence and Armstrong counties — into Philadelphia, where it took 36% of the city. It flipped from safely Republican to the most Democratic district in Pennsylvania.", "pviNew": -41, "pviOld": 11 }
   ],
   "4204": [
-    { "year": 2022, "description": "PA-4 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -7, "pviOld": -9 },
-    { "year": 2018, "description": "Pennsylvania's 2018 map was imposed by the state Supreme Court after it struck down the old congressional plan. This district was effectively rebuilt under the new court-drawn map, with boundaries and numbering reset compared with the pre-2018 configuration.", "pviNew": -9, "pviOld": 11 }
+    { "year": 2022, "description": "PA-4 was reshaped, taking 44% of Berks County and cutting its share of Montgomery County from 88% to 73%. It leaned Democratic.", "pviNew": -7, "pviOld": -9 },
+    { "year": 2018, "description": "PA-4 was moved from south-central Pennsylvania, where it had covered York, Adams and Cumberland counties, to Montgomery County, taking in 88% of it. It flipped from a Republican seat to a solidly Democratic one.", "pviNew": -9, "pviOld": 11 }
   ],
   "4205": [
-    { "year": 2022, "description": "PA-5 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -14, "pviOld": -13 },
-    { "year": 2018, "description": "PA-5 was transformed by the 2018 court map into a Delaware County/Philadelphia-suburban seat, bearing little resemblance to the old south-central Pennsylvania 5th district.", "pviNew": -13, "pviOld": 14 }
+    { "year": 2022, "description": "PA-5 kept most of its previous shape, trading territory with PA-4, PA-6 and PA-3 within the same counties. It was solidly Democratic.", "pviNew": -14, "pviOld": -13 },
+    { "year": 2018, "description": "PA-5 was moved from the northern tier — Clearfield, Centre, Potter, McKean and Elk counties — to the Philadelphia suburbs, taking nearly all of Delaware County plus 17% of the city. It went from safely Republican to solidly Democratic.", "pviNew": -13, "pviOld": 14 }
   ],
   "4206": [
-    { "year": 2022, "description": "PA-6 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -5, "pviOld": -5 },
-    { "year": 2018, "description": "PA-6 was redrawn into a Chester County–centered suburban Philadelphia seat under the 2018 court map, replacing the very different pre-2018 configuration.", "pviNew": -2, "pviOld": 2 }
+    { "year": 2022, "description": "PA-6 kept most of its previous shape, trading territory with PA-9, PA-4 and PA-11 within the same counties. It leaned Democratic.", "pviNew": -5, "pviOld": -5 },
+    { "year": 2018, "description": "PA-6 was consolidated around Chester County, taking in nearly all of it and 19% of Berks while giving up its Montgomery and Lebanon county arms. It shifted from a Republican-leaning seat to a narrowly Democratic one.", "pviNew": -2, "pviOld": 2 }
   ],
   "4207": [
-    { "year": 2022, "description": "PA-7 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 2, "pviOld": 0 },
-    { "year": 2018, "description": "PA-7 became the new Lehigh Valley–centered district under Pennsylvania's 2018 court map, one of the clearest examples of the state's renumbering and geographic reset.", "pviNew": 2, "pviOld": 1 }
+    { "year": 2022, "description": "PA-7 kept most of its previous shape, adding Carbon County and cutting its share of Monroe County from 24% to 11%. It was a Republican-leaning toss-up.", "pviNew": 2, "pviOld": 0 },
+    { "year": 2018, "description": "PA-7 was relocated to the Lehigh Valley, taking all of Northampton and Lehigh counties and a quarter of Monroe. It replaced the sprawling five-county district around Philadelphia that had been nicknamed “Goofy Kicking Donald Duck,” and remained closely divided.", "pviNew": 2, "pviOld": 1 }
   ],
   "4208": [
-    { "year": 2022, "description": "PA-8 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 4, "pviOld": 5 },
-    { "year": 2018, "description": "PA-8 was remade as a northeastern Pennsylvania seat under the 2018 court map, very different from the old suburban-Philadelphia 8th district.", "pviNew": 8, "pviOld": 2 }
+    { "year": 2022, "description": "PA-8 kept most of its previous shape, raising its share of Monroe County from 76% to 89%. It leaned Republican.", "pviNew": 4, "pviOld": 5 },
+    { "year": 2018, "description": "PA-8 was moved from Bucks County to northeastern Pennsylvania, built on Lackawanna, Wayne and Pike counties with most of Monroe and about half of Luzerne. On recent presidential results it was solidly Republican.", "pviNew": 8, "pviOld": 2 }
   ],
   "4209": [
-    { "year": 2022, "description": "PA-9 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 21, "pviOld": 18 },
-    { "year": 2018, "description": "Pennsylvania's 2018 map was imposed by the state Supreme Court after it struck down the old congressional plan. This district was effectively rebuilt under the new court-drawn map, with boundaries and numbering reset compared with the pre-2018 configuration.", "pviNew": 17, "pviOld": 19 }
+    { "year": 2022, "description": "PA-9 was reshaped, adding Wyoming, Susquehanna, Sullivan and Bradford counties, taking in the rest of Northumberland County and taking 28% of Lycoming County. It was safely Republican.", "pviNew": 21, "pviOld": 18 },
+    { "year": 2018, "description": "PA-9 moved east across the state, built on Schuylkill, Columbia and Carbon counties with most of Berks and half of Luzerne, replacing a southwestern district anchored on Bedford, Blair and Fayette. It stayed safely Republican.", "pviNew": 17, "pviOld": 19 }
   ],
   "4210": [
-    { "year": 2022, "description": "PA-10 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 5, "pviOld": 5 },
-    { "year": 2018, "description": "PA-10 was recast as a Harrisburg/York-centered seat under the 2018 court-drawn map, replacing the very different pre-2018 northeastern Pennsylvania 10th district.", "pviNew": 6, "pviOld": 16 }
+    { "year": 2022, "description": "PA-10 kept most of its previous shape, raising its share of Cumberland County from 39% to 70%. It leaned Republican.", "pviNew": 5, "pviOld": 5 },
+    { "year": 2018, "description": "PA-10 was moved from the northern tier to the Harrisburg area, taking nearly all of Dauphin County and roughly 38% each of York and Cumberland. It became far more competitive, leaning only modestly Republican.", "pviNew": 6, "pviOld": 16 }
   ],
   "4211": [
-    { "year": 2022, "description": "PA-11 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 13, "pviOld": 14 },
-    { "year": 2018, "description": "PA-11 became a south-central Pennsylvania/Lancaster-York district under the 2018 court map, very different from the old southwestern Pennsylvania 11th.", "pviNew": 14, "pviOld": 10 }
+    { "year": 2022, "description": "PA-11 kept most of its previous shape, trading territory with PA-10 within the same counties. It was solidly Republican.", "pviNew": 13, "pviOld": 14 },
+    { "year": 2018, "description": "PA-11 was reassigned to Lancaster and York counties, taking all of Lancaster and 61% of York in place of a district that had stretched from Luzerne County down to Cumberland. It remained safely Republican.", "pviNew": 14, "pviOld": 10 }
   ],
   "4212": [
-    { "year": 2022, "description": "PA-12 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -8, "pviOld": 20 },
-    { "year": 2018, "description": "PA-12 was turned into a western Pennsylvania seat under the 2018 court map, replacing the old central Pennsylvania 12th district.", "pviNew": 17, "pviOld": 11 }
+    { "year": 2022, "description": "PA-12 was rebuilt almost from scratch, taking 34% of Allegheny County, taking 15% of Westmoreland County and giving up 13 whole counties, among them Juniata, Wyoming and Tioga counties. Pennsylvania lost a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Democratic.", "pviNew": -8, "pviOld": 20 },
+    { "year": 2018, "description": "PA-12 was moved from southwestern Pennsylvania to the northern tier, built on a long run of whole counties including Lycoming, Bradford, Tioga, Potter and Clinton. It stayed safely Republican.", "pviNew": 17, "pviOld": 11 }
   ],
   "4213": [
-    { "year": 2022, "description": "PA-13 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 25, "pviOld": 25 },
-    { "year": 2018, "description": "Pennsylvania's 2018 map was imposed by the state Supreme Court after it struck down the old congressional plan. This district was effectively rebuilt under the new court-drawn map, with boundaries and numbering reset compared with the pre-2018 configuration.", "pviNew": 22, "pviOld": -15 }
+    { "year": 2022, "description": "PA-13 was reshaped, adding Juniata, Mifflin and Perry counties, taking in the rest of Cambria County and giving up Somerset County. It was safely Republican.", "pviNew": 25, "pviOld": 25 },
+    { "year": 2018, "description": "PA-13 was moved from the Philadelphia suburbs to south-central Pennsylvania, built on Somerset, Bedford, Huntingdon, Franklin and Blair counties. It flipped from a safely Democratic seat to one of the most Republican in the state.", "pviNew": 22, "pviOld": -15 }
   ],
   "4214": [
-    { "year": 2022, "description": "PA-14 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 18, "pviOld": 16 },
-    { "year": 2018, "description": "PA-14 became a heavily Republican southwest Pennsylvania district under the 2018 court map, distinct from the old Pittsburgh-based 14th.", "pviNew": 22, "pviOld": -17 }
+    { "year": 2022, "description": "PA-14 kept most of its previous shape, adding Somerset County, taking 74% of Indiana County and raising its share of Westmoreland County from 60% to 84%. It was safely Republican.", "pviNew": 18, "pviOld": 16 },
+    { "year": 2018, "description": "PA-14 was moved out of Pittsburgh to the state's southwestern corner, taking Washington, Greene and Fayette counties and 60% of Westmoreland. It flipped from safely Democratic to safely Republican.", "pviNew": 22, "pviOld": -17 }
   ],
   "4215": [
-    { "year": 2022, "description": "PA-15 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 21, "pviOld": 24 },
-    { "year": 2018, "description": "Pennsylvania's 2018 map was imposed by the state Supreme Court after it struck down the old congressional plan. This district was effectively rebuilt under the new court-drawn map, with boundaries and numbering reset compared with the pre-2018 configuration.", "pviNew": 21, "pviOld": 4 }
+    { "year": 2022, "description": "PA-15 was reshaped, adding Tioga, Union, Potter, Clinton and Snyder counties, taking 72% of Lycoming County and taking in the rest of Centre County. It was safely Republican.", "pviNew": 21, "pviOld": 24 },
+    { "year": 2018, "description": "PA-15 was moved from the Lehigh Valley to west-central Pennsylvania, built on whole counties including Clearfield, McKean, Elk, Warren and Indiana. It went from a competitive seat to a safely Republican one.", "pviNew": 21, "pviOld": 4 }
   ],
   "4216": [
-    { "year": 2022, "description": "PA-16 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 13, "pviOld": 12 },
-    { "year": 2018, "description": "Pennsylvania's 2018 map was imposed by the state Supreme Court after it struck down the old congressional plan. This district was effectively rebuilt under the new court-drawn map, with boundaries and numbering reset compared with the pre-2018 configuration.", "pviNew": 9, "pviOld": 5 }
+    { "year": 2022, "description": "PA-16 kept most of its previous shape, taking in the rest of Butler County and taking 31% of Venango County. It was solidly Republican.", "pviNew": 13, "pviOld": 12 },
+    { "year": 2018, "description": "PA-16 was moved from Lancaster and Chester counties to the northwest corner, taking Erie, Crawford, Mercer and Lawrence counties and 61% of Butler. It became solidly Republican.", "pviNew": 9, "pviOld": 5 }
   ],
   "4217": [
-    { "year": 2022, "description": "PA-17 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 0, "pviOld": 2 },
-    { "year": 2018, "description": "PA-17 was recast as a western Pennsylvania suburban seat under the 2018 court-drawn map, replacing the old east-central 17th district.", "pviNew": 3, "pviOld": 1 }
+    { "year": 2022, "description": "PA-17 kept most of its previous shape, trading territory with PA-18 within the same counties. It was evenly split.", "pviNew": 0, "pviOld": 2 },
+    { "year": 2018, "description": "PA-17 was moved from northeastern Pennsylvania to the Pittsburgh suburbs, pairing 62% of Allegheny County with nearly all of Beaver. It remained a narrowly Republican-leaning seat.", "pviNew": 3, "pviOld": 1 }
+  ],
+  "4218": [
+    { "year": 2018, "description": "PA-18 was pulled back into Pittsburgh, ending up almost entirely inside Allegheny County after giving up Washington and Greene counties and nearly all of Westmoreland — just 6% of its old territory carried over. It flipped from a Republican seat to a solidly Democratic one.", "pviNew": -17, "pviOld": 11 }
   ],
   "4401": [
-    { "year": 2022, "description": "RI-1 was redrawn for 2022. Rhode Island's 2022 map made only modest changes while preserving the state's two-district arrangement. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -12, "pviOld": -12 }
+    { "year": 2022, "description": "RI-1 kept most of its previous shape, trading territory with RI-2 within the same counties. It was solidly Democratic.", "pviNew": -12, "pviOld": -12 }
   ],
   "4402": [
-    { "year": 2022, "description": "RI-2 was redrawn for 2022. Rhode Island's 2022 map made only modest changes while preserving the state's two-district arrangement. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -4, "pviOld": -4 }
+    { "year": 2022, "description": "RI-2 kept most of its previous shape, trading territory with RI-1 within the same counties. It leaned Democratic.", "pviNew": -4, "pviOld": -4 }
   ],
   "4501": [
-    { "year": 2022, "description": "SC-1 was redrawn for 2022. South Carolina's 2022 map kept the seven-district structure but drew legal scrutiny, especially around the Charleston-based 1st district. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 7, "pviOld": 7 }
+    { "year": 2022, "description": "SC-1 kept most of its previous shape, taking in the rest of Berkeley County and taking in the rest of Beaufort County. It leaned Republican.", "pviNew": 7, "pviOld": 7 }
   ],
   "4502": [
-    { "year": 2022, "description": "SC-2 was redrawn for 2022. South Carolina's 2022 map kept the seven-district structure but drew legal scrutiny, especially around the Charleston-based 1st district. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 8, "pviOld": 9 }
+    { "year": 2022, "description": "SC-2 kept most of its previous shape, trading territory with SC-6 within the same counties. It was solidly Republican.", "pviNew": 8, "pviOld": 9 }
   ],
   "4503": [
-    { "year": 2022, "description": "SC-3 was redrawn for 2022. South Carolina's 2022 map kept the seven-district structure but drew legal scrutiny, especially around the Charleston-based 1st district. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 21, "pviOld": 21 }
+    { "year": 2022, "description": "SC-3 kept most of its previous shape, taking in the rest of Newberry County. It was safely Republican.", "pviNew": 21, "pviOld": 21 }
   ],
   "4504": [
-    { "year": 2022, "description": "SC-4 was redrawn for 2022. South Carolina's 2022 map kept the seven-district structure but drew legal scrutiny, especially around the Charleston-based 1st district. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 12, "pviOld": 14 }
+    { "year": 2022, "description": "SC-4 kept most of its previous shape, cutting its share of Spartanburg County from 88% to 78%. It was solidly Republican.", "pviNew": 12, "pviOld": 14 }
   ],
   "4505": [
-    { "year": 2022, "description": "SC-5 was redrawn for 2022. South Carolina's 2022 map kept the seven-district structure but drew legal scrutiny, especially around the Charleston-based 1st district. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 12, "pviOld": 11 }
+    { "year": 2022, "description": "SC-5 kept most of its previous shape, raising its share of Spartanburg County from 11% to 21% and dropping out of Newberry County. It was solidly Republican.", "pviNew": 12, "pviOld": 11 }
   ],
   "4506": [
-    { "year": 2022, "description": "SC-6 was redrawn for 2022. South Carolina's 2022 map kept the seven-district structure but drew legal scrutiny, especially around the Charleston-based 1st district. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -14, "pviOld": -17 }
+    { "year": 2022, "description": "SC-6 was reshaped, dropping out of Berkeley County and dropping out of Beaufort County. It was solidly Democratic.", "pviNew": -14, "pviOld": -17 }
   ],
   "4507": [
-    { "year": 2022, "description": "SC-7 was redrawn for 2022. South Carolina's 2022 map kept the seven-district structure but drew legal scrutiny, especially around the Charleston-based 1st district. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 11, "pviOld": 11 }
+    { "year": 2022, "description": "SC-7 kept most of its previous shape, trading territory with SC-6 within the same counties. It was solidly Republican.", "pviNew": 11, "pviOld": 11 }
   ],
   "4701": [
     { "year": 2026, "description": "Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling) split Memphis three ways to eliminate the state's only Democratic seat but left northeast Tennessee alone: TN-1's lines are unchanged, still covering the Tri-Cities region.", "pviNew": 29, "pviOld": 30 },
-    { "year": 2022, "description": "TN-1 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 30, "pviOld": 30 }
+    { "year": 2022, "description": "TN-1 kept most of its previous shape, raising its share of Jefferson County from 21% to 93%. It was safely Republican.", "pviNew": 30, "pviOld": 30 }
   ],
   "4702": [
     { "year": 2026, "description": "Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling) split Memphis three ways to eliminate the state's only Democratic seat but left the Knoxville-based TN-2 effectively unchanged.", "pviNew": 17, "pviOld": 18 },
-    { "year": 2022, "description": "TN-2 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 18, "pviOld": 18 }
+    { "year": 2022, "description": "TN-2 kept most of its previous shape, adding Union County, raising its share of Campbell County from 18% to 70% and cutting its share of Jefferson County from 79% to 7%. It was safely Republican.", "pviNew": 18, "pviOld": 18 }
   ],
   "4703": [
     { "year": 2026, "description": "Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling) made only minor changes to the Chattanooga-based TN-3, which picked up Meigs and Rhea counties from TN-4 and gave Morgan County and its parts of Scott and Campbell counties to TN-6. It stays about Trump +36.", "pviNew": 18, "pviOld": 19 },
-    { "year": 2022, "description": "TN-3 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 19, "pviOld": 19 }
+    { "year": 2022, "description": "TN-3 was reshaped, taking in the rest of Bradley County, giving up Union County and cutting its share of Scott County from 100% to 41%. It was safely Republican.", "pviNew": 19, "pviOld": 19 }
   ],
   "4704": [
     { "year": 2026, "description": "Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling) kept TN-4 anchored in Rutherford County (Murfreesboro, Smyrna) but pushed it into southeastern Davidson County around Antioch and added Cannon and Van Buren counties. Its southern tier (Bedford, Moore, Lincoln, Giles, Lawrence) went to the new TN-9 and Meigs and Rhea counties to TN-3, taking it from Trump +44 to Trump +24.", "pviNew": 11, "pviOld": 22 },
-    { "year": 2022, "description": "TN-4 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 22, "pviOld": 22 }
+    { "year": 2022, "description": "TN-4 was reshaped, adding Lawrence, Giles and Coffee counties, giving up Marshall County and dropping out of Van Buren County. It was safely Republican.", "pviNew": 22, "pviOld": 22 }
   ],
   "4705": [
     { "year": 2026, "description": "Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling) relocated TN-5 almost entirely. The former south Nashville-Williamson-Maury-Wilson seat now begins in downtown and north Memphis, follows the Mississippi River through northwest Tennessee (Dyersburg, Paris) and stretches east to Franklin in Williamson County and most of Maury County; it no longer contains any of Nashville. It moves from Trump +18 to Trump +23.", "pviNew": 10, "pviOld": 9 },
-    { "year": 2022, "description": "TN-5 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 9, "pviOld": -9 }
+    { "year": 2022, "description": "TN-5 was rebuilt almost from scratch, adding Maury and Marshall counties, taking 94% of Lewis County and taking 53% of Williamson County. It was solidly Republican.", "pviNew": 9, "pviOld": -9 }
   ],
   "4706": [
     { "year": 2026, "description": "Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling) kept TN-6 centered on the Upper Cumberland (Cookeville, Crossville) but gave it all of Wilson County (Lebanon, Mt. Juliet) and a reshaped share of Nashville that now includes downtown as well as East Nashville. Sumner, Macon and Trousdale counties went to TN-7, and Morgan County and more of Scott and Campbell counties came from TN-3, taking it from Trump +35 to Trump +27.", "pviNew": 13, "pviOld": 17 },
-    { "year": 2022, "description": "TN-6 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 17, "pviOld": 26 }
+    { "year": 2022, "description": "TN-6 was reshaped, taking in the rest of Van Buren County, taking 59% of Scott County and giving up Robertson and Coffee counties. It was safely Republican.", "pviNew": 17, "pviOld": 26 }
   ],
   "4707": [
     { "year": 2026, "description": "Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling) kept Clarksville and north and west Nashville in TN-7 but traded its rural western counties and its share of Williamson County for Sumner County (Hendersonville, Gallatin), Macon and Trousdale counties and a larger piece of Davidson County. It stays about Trump +22.", "pviNew": 11, "pviOld": 10 },
-    { "year": 2022, "description": "TN-7 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 10, "pviOld": 21 }
+    { "year": 2022, "description": "TN-7 was substantially redrawn, adding Dickson, Robertson and Cheatham counties, taking 39% of Davidson County and giving up 8 whole counties, among them Chester, Henderson and McNairy counties. It was solidly Republican.", "pviNew": 10, "pviOld": 21 }
   ],
   "4708": [
     { "year": 2026, "description": "Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling) gave TN-8 a much larger share of Shelby County, adding East Memphis, Cordova, Bartlett and Millington to Germantown, while keeping Jackson and rural West Tennessee. Its northwestern counties (Dyer, Obion, Weakley, Henry, Lake, Lauderdale) went to TN-5 and Hardeman, McNairy and Hardin counties to TN-9, taking it from Trump +42 to Trump +20.", "pviNew": 10, "pviOld": 21 },
-    { "year": 2022, "description": "TN-8 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 21, "pviOld": 19 }
+    { "year": 2022, "description": "TN-8 kept most of its previous shape, adding Chester, Henderson, McNairy, Hardeman and Hardin counties and cutting its share of Tipton County from 100% to 44%. It was safely Republican.", "pviNew": 21, "pviOld": 19 }
   ],
   "4709": [
     { "year": 2026, "description": "TN-9 changed more than any other district under Tennessee's 2026 map (signed by Gov. Bill Lee on May 7, 2026, days after the U.S. Supreme Court's Louisiana v. Callais ruling). The Memphis-based, majority-Black seat (Harris +43) was split among TN-5, TN-8 and TN-9; the new TN-9 keeps only southern Shelby County (Whitehaven, Hickory Hill, Collierville) and runs east along the state's southern border through Hardeman, McNairy, Hardin, Wayne, Lawrence, Giles and Lincoln counties to Columbia and the Nashville suburb of Brentwood. It is now Trump +21, and Rep. Steve Cohen (D) did not seek re-election.", "pviNew": 9, "pviOld": -22 },
-    { "year": 2022, "description": "TN-9 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -22, "pviOld": -28 }
+    { "year": 2022, "description": "TN-9 kept most of its previous shape, taking 56% of Tipton County. It was safely Democratic.", "pviNew": -22, "pviOld": -28 }
   ],
   "4801": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 24, "pviOld": 26 },
-    { "year": 2022, "description": "TX-1 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 26, "pviOld": 25 }
+    { "year": 2026, "description": "TX-1 moved south in east Texas, adding Cherokee and Nacogdoches counties while giving up Titus, Camp, Morris and Franklin counties and most of its shares of Upshur, Red River and Bowie. It remains safely Republican.", "pviNew": 24, "pviOld": 26 },
+    { "year": 2022, "description": "TX-1 was reshaped, adding Cass, Morris, Titus, Camp, Franklin and Marion counties, taking 65% of Bowie County and taking 49% of Red River County. It was safely Republican.", "pviNew": 26, "pviOld": 25 }
   ],
   "4802": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 11, "pviOld": 15 },
-    { "year": 2022, "description": "TX-2 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 15, "pviOld": 4 }
+    { "year": 2026, "description": "TX-2 shrank by a fifth inside Harris County, its share falling from 16% to 11%, with most of the lost territory going to the rebuilt TX-9. It stays solidly Republican.", "pviNew": 11, "pviOld": 15 },
+    { "year": 2022, "description": "TX-2 was substantially redrawn, taking 33% of Montgomery County. Texas gained a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Republican.", "pviNew": 15, "pviOld": 4 }
   ],
   "4803": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 11, "pviOld": 11 },
-    { "year": 2022, "description": "TX-3 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 11, "pviOld": 6 }
+    { "year": 2026, "description": "TX-3 more than doubled in area, reaching northeast out of Collin County to add Hopkins, Franklin, Titus, Delta and Morris counties. It remains solidly Republican.", "pviNew": 11, "pviOld": 11 },
+    { "year": 2022, "description": "TX-3 was reshaped, taking 88% of Hunt County and raising its share of Collin County from 59% to 79%. It was solidly Republican.", "pviNew": 11, "pviOld": 6 }
   ],
   "4804": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 12, "pviOld": 16 },
-    { "year": 2022, "description": "TX-4 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 16, "pviOld": 28 }
+    { "year": 2026, "description": "TX-4 consolidated in the northeast corner, taking most of Red River and Bowie counties while giving up Hopkins, Rockwall, Rains and Delta. It stays solidly Republican.", "pviNew": 12, "pviOld": 16 },
+    { "year": 2022, "description": "TX-4 was substantially redrawn, giving up Cass, Morris, Titus, Camp, Franklin and Marion counties, cutting its share of Hunt County from 100% to 12% and dropping out of Upshur County. Texas gained a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Republican.", "pviNew": 16, "pviOld": 28 }
   ],
   "4805": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 10, "pviOld": 14 },
-    { "year": 2022, "description": "TX-5 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 14, "pviOld": 15 }
+    { "year": 2026, "description": "TX-5 swapped Wood County and its share of Upshur for Anderson County, taking the new territory from TX-6. It remains solidly Republican.", "pviNew": 10, "pviOld": 14 },
+    { "year": 2022, "description": "TX-5 was reshaped, taking in the rest of Wood County, taking 49% of Upshur County and giving up Anderson and Cherokee counties. Texas gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Republican.", "pviNew": 14, "pviOld": 15 }
   ],
   "4806": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 11, "pviOld": 15 },
-    { "year": 2022, "description": "TX-6 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 15, "pviOld": 6 }
+    { "year": 2026, "description": "TX-6 lost nearly 60% of its area, giving up Anderson, Hill, Cherokee and Freestone counties. What remains sits closer to Fort Worth, with larger shares of Tarrant and Johnson counties, and stays solidly Republican.", "pviNew": 11, "pviOld": 15 },
+    { "year": 2022, "description": "TX-6 kept most of its previous shape, adding Hill, Anderson and Cherokee counties, taking 58% of Freestone County and taking 32% of Johnson County. It was safely Republican.", "pviNew": 15, "pviOld": 6 }
   ],
   "4807": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -13, "pviOld": -13 },
-    { "year": 2022, "description": "TX-7 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -13, "pviOld": -1 }
+    { "year": 2026, "description": "TX-7 was reshuffled inside the Houston area, drawing about 30% of its area from the old TX-9 and TX-18 while handing territory to TX-8, TX-22 and TX-38. It remains solidly Democratic.", "pviNew": -13, "pviOld": -13 },
+    { "year": 2022, "description": "TX-7 was rebuilt almost from scratch, trading territory with TX-22, TX-9 and TX-2 within the same counties. Texas gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Democratic.", "pviNew": -13, "pviOld": -1 }
   ],
   "4808": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 13, "pviOld": 16 },
-    { "year": 2022, "description": "TX-8 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 16, "pviOld": 25 }
+    { "year": 2026, "description": "TX-8 gave up Polk and San Jacinto counties and part of Walker, taking Waller County and territory from TX-10 instead. Only about a third of the old district's area carried over, and it stays solidly Republican.", "pviNew": 13, "pviOld": 16 },
+    { "year": 2022, "description": "TX-8 was substantially redrawn, adding Polk County, taking 13% of Harris County and giving up Madison, Houston, Trinity and Grimes counties. Texas gained a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Republican.", "pviNew": 16, "pviOld": 25 }
   ],
   "4809": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 9, "pviOld": -26 },
-    { "year": 2022, "description": "TX-9 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -26, "pviOld": -27 }
+    { "year": 2026, "description": "TX-9 shares none of its old area: it was rebuilt from TX-36's territory east of Houston, taking in all of Liberty County and raising its share of Harris County from 7% to 22%. Its old inner-Houston footprint went mostly to TX-18, and the seat flipped from safely Democratic to solidly Republican.", "pviNew": 9, "pviOld": -26 },
+    { "year": 2022, "description": "TX-9 was reshaped, trading territory with TX-22, TX-7 and TX-29 within the same counties. It was safely Democratic.", "pviNew": -26, "pviOld": -27 }
   ],
   "4810": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 10, "pviOld": 13 },
-    { "year": 2022, "description": "TX-10 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 13, "pviOld": 5 }
+    { "year": 2026, "description": "TX-10 swung northeast, adding Houston, Polk, Trinity, San Jacinto and Leon counties and most of Walker, while giving up the Austin, Colorado, Fayette, Washington and Waller corridor. It remains solidly Republican.", "pviNew": 10, "pviOld": 13 },
+    { "year": 2022, "description": "TX-10 kept most of its previous shape, adding Brazos, Burleson, Grimes and Madison counties, taking in the rest of Lee County and raising its share of Travis County from 22% to 42%. It was solidly Republican.", "pviNew": 13, "pviOld": 5 }
   ],
   "4811": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 17, "pviOld": 23 },
-    { "year": 2022, "description": "TX-11 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 23, "pviOld": 32 }
+    { "year": 2026, "description": "TX-11 gave up Lampasas and Mills counties to TX-31 and, unusually for a west Texas district, picked up 13% of Travis County along with a slice of Burnet. It stays safely Republican.", "pviNew": 17, "pviOld": 23 },
+    { "year": 2022, "description": "TX-11 was reshaped, adding Lampasas County, taking 16% of Bell County and giving up 9 whole counties, among them Mitchell, Martin and Callahan counties. Texas gained a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Republican.", "pviNew": 23, "pviOld": 32 }
   ],
   "4812": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 11, "pviOld": 12 },
-    { "year": 2022, "description": "TX-12 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 12, "pviOld": 15 }
+    { "year": 2026, "description": "TX-12 took territory from TX-33 in Tarrant County and gave similar amounts to TX-25 and TX-24, keeping its overall shape and its solidly Republican lean.", "pviNew": 11, "pviOld": 12 },
+    { "year": 2022, "description": "TX-12 was reshaped, cutting its share of Parker County from 100% to 66% and dropping out of Wise County. Texas gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Republican.", "pviNew": 12, "pviOld": 15 }
   ],
   "4813": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 23, "pviOld": 26 },
-    { "year": 2022, "description": "TX-13 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 26, "pviOld": 33 }
+    { "year": 2026, "description": "TX-13's Panhandle lines were essentially unchanged apart from a reduced share of Wise County. It remains one of the most Republican districts in the country.", "pviNew": 23, "pviOld": 26 },
+    { "year": 2022, "description": "TX-13 kept most of its previous shape, taking 23% of Denton County, giving up Jack, Swisher and Cooke counties and dropping out of Floyd County. It was safely Republican.", "pviNew": 26, "pviOld": 33 }
   ],
   "4814": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 12, "pviOld": 17 },
-    { "year": 2022, "description": "TX-14 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 17, "pviOld": 12 }
+    { "year": 2026, "description": "TX-14's share of Brazoria County dropped from 83% to 14%, cutting its area by a third, and it took a small piece of Fort Bend County in exchange. It stays solidly Republican.", "pviNew": 12, "pviOld": 17 },
+    { "year": 2022, "description": "TX-14 kept most of its previous shape, adding Orange County and cutting its share of Jefferson County from 100% to 74%. It was safely Republican.", "pviNew": 17, "pviOld": 12 }
   ],
   "4815": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 7, "pviOld": 1 },
-    { "year": 2022, "description": "TX-15 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 1, "pviOld": -3 }
+    { "year": 2026, "description": "TX-15 swung east out of the Rio Grande Valley, adding Gonzales, Lavaca, DeWitt, Bee, Goliad, San Patricio and Refugio counties from TX-27 while giving up Live Oak, Wilson and Karnes and its share of Guadalupe. The rural territory moved it from a genuine toss-up to a Republican-leaning seat.", "pviNew": 7, "pviOld": 1 },
+    { "year": 2022, "description": "TX-15 was reshaped, adding Jim Wells County, taking in the rest of Wilson County and giving up Duval and Jim Hogg counties. Texas gained a seat in the 2020 reapportionment, which shifted lines across the state. It was a Republican-leaning toss-up.", "pviNew": 1, "pviOld": -3 }
   ],
   "4816": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -11, "pviOld": -17 },
-    { "year": 2022, "description": "TX-16 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -17, "pviOld": -18 }
+    { "year": 2026, "description": "TX-16 expanded within El Paso County, its share rising from 29% to 35% as it took territory from TX-23. It remains solidly Democratic.", "pviNew": -11, "pviOld": -17 },
+    { "year": 2022, "description": "TX-16 was substantially redrawn, cutting its share of El Paso County from 69% to 30%. Texas gained a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -17, "pviOld": -18 }
   ],
   "4817": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 10, "pviOld": 14 },
-    { "year": 2022, "description": "TX-17 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 14, "pviOld": 9 }
+    { "year": 2026, "description": "TX-17 pulled out of east Texas entirely — giving up Angelina, Trinity, Houston, Nacogdoches, Leon and Walker counties — and moved west to add Hill and Bosque counties, the rest of Freestone and shares of Bell, Johnson and Williamson. It stays solidly Republican.", "pviNew": 10, "pviOld": 14 },
+    { "year": 2022, "description": "TX-17 was reshaped, adding Angelina, Trinity, Houston and Nacogdoches counties, taking 61% of Walker County and taking in the rest of Leon County. It was solidly Republican.", "pviNew": 14, "pviOld": 9 }
   ],
   "4818": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -29, "pviOld": -23 },
-    { "year": 2022, "description": "TX-18 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -23, "pviOld": -26 }
+    { "year": 2026, "description": "TX-18 was largely rebuilt inside Houston, three-quarters of its area coming from the old TX-9 and TX-29 while most of its own former territory went to TX-29. It remains safely Democratic and became more so.", "pviNew": -29, "pviOld": -23 },
+    { "year": 2022, "description": "TX-18 was reshaped, trading territory with TX-2 and TX-29 within the same counties. It was safely Democratic.", "pviNew": -23, "pviOld": -26 }
   ],
   "4819": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 25, "pviOld": 26 },
-    { "year": 2022, "description": "TX-19 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 26, "pviOld": 26 }
+    { "year": 2026, "description": "TX-19's west Texas lines around Lubbock were left unchanged. It remains safely Republican.", "pviNew": 25, "pviOld": 26 },
+    { "year": 2022, "description": "TX-19 kept most of its previous shape, adding Mitchell, Martin, Swisher, Andrews and Dawson counties, taking in the rest of Floyd County and giving up Young County. It was safely Republican.", "pviNew": 26, "pviOld": 26 }
   ],
   "4820": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -16, "pviOld": -15 },
-    { "year": 2022, "description": "TX-20 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -15, "pviOld": -13 }
+    { "year": 2026, "description": "TX-20 was substantially reshuffled within Bexar County and San Antonio, taking about 40% of its area from the old TX-35 and TX-28 and giving more than half its former territory to TX-23, TX-21 and TX-35. It stays safely Democratic.", "pviNew": -16, "pviOld": -15 },
+    { "year": 2022, "description": "TX-20 kept most of its previous shape, trading territory with TX-23, TX-35 and TX-21 within the same counties. It was safely Democratic.", "pviNew": -15, "pviOld": -13 }
   ],
   "4821": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 10, "pviOld": 13 },
-    { "year": 2022, "description": "TX-21 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 13, "pviOld": 8 }
+    { "year": 2026, "description": "TX-21 took in the rest of Comal County, cut its share of Hays County from 82% to 65% and dropped out of Travis County altogether. It remains solidly Republican.", "pviNew": 10, "pviOld": 13 },
+    { "year": 2022, "description": "TX-21 kept most of its previous shape, raising its share of Hays County from 26% to 82%. It was solidly Republican.", "pviNew": 13, "pviOld": 8 }
   ],
   "4822": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 11, "pviOld": 11 },
-    { "year": 2022, "description": "TX-22 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 11, "pviOld": 4 }
+    { "year": 2026, "description": "TX-22 shifted onto the coast, its share of Brazoria County jumping from 16% to 83% while it gave up Wharton and Matagorda counties. Only a fifth of the old district's area carried over, and it stays solidly Republican.", "pviNew": 11, "pviOld": 11 },
+    { "year": 2022, "description": "TX-22 kept most of its previous shape, adding Matagorda and Wharton counties and cutting its share of Fort Bend County from 97% to 87%. It was solidly Republican.", "pviNew": 11, "pviOld": 4 }
   ],
   "4823": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 7, "pviOld": 5 },
-    { "year": 2022, "description": "TX-23 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 5, "pviOld": 1 }
+    { "year": 2026, "description": "TX-23 gave up La Salle and Dimmit counties and trimmed its shares of Maverick, Bexar and El Paso, otherwise keeping its sprawling border footprint. It remains Republican-leaning.", "pviNew": 7, "pviOld": 5 },
+    { "year": 2022, "description": "TX-23 kept most of its previous shape, raising its share of El Paso County from 31% to 70% and taking in the rest of La Salle County. It leaned Republican.", "pviNew": 5, "pviOld": 1 }
   ],
   "4824": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 8, "pviOld": 10 },
-    { "year": 2022, "description": "TX-24 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 10, "pviOld": 2 }
+    { "year": 2026, "description": "TX-24 exchanged modest amounts of territory with TX-12, TX-33 and TX-32 across the Dallas-Fort Worth mid-cities, keeping most of its shape and its solidly Republican lean.", "pviNew": 8, "pviOld": 10 },
+    { "year": 2022, "description": "TX-24 was reshaped, trading territory with TX-26, TX-32 and TX-12 within the same counties. Texas gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Republican.", "pviNew": 10, "pviOld": 2 }
   ],
   "4825": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 11, "pviOld": 19 },
-    { "year": 2022, "description": "TX-25 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 19, "pviOld": 8 }
+    { "year": 2026, "description": "TX-25's share of Johnson County fell from 67% to 42% while its share of Tarrant County rose from 16% to 20%, trading rural ground for Fort Worth territory. It remains solidly Republican, if less so than before.", "pviNew": 11, "pviOld": 19 },
+    { "year": 2022, "description": "TX-25 was rebuilt almost from scratch, adding Jack, Hood, Palo Pinto, Eastland, Comanche and Stephens counties and one more, taking 92% of Callahan County and taking in the rest of Erath County. Texas gained a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Republican.", "pviNew": 19, "pviOld": 8 }
   ],
   "4826": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 11, "pviOld": 13 },
-    { "year": 2022, "description": "TX-26 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 13, "pviOld": 12 }
+    { "year": 2026, "description": "TX-26 took a larger share of Wise County, up from 49% to 63%, from TX-13 and gave up a little of Denton County. It stays solidly Republican.", "pviNew": 11, "pviOld": 13 },
+    { "year": 2022, "description": "TX-26 was reshaped, adding Cooke County, taking 49% of Wise County and cutting its share of Denton County from 96% to 76%. It was solidly Republican.", "pviNew": 13, "pviOld": 12 }
   ],
   "4827": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 10, "pviOld": 13 },
-    { "year": 2022, "description": "TX-27 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 13, "pviOld": 14 }
+    { "year": 2026, "description": "TX-27 was rebuilt as an inland district reaching toward Austin: in came Colorado, Matagorda, Wharton, Austin, Washington and Fayette counties, most of Bastrop and shares of Hays and Travis. Out went Nueces, San Patricio, Gonzales, DeWitt, Lavaca and Bee — about 60% of its old area — and it remains solidly Republican.", "pviNew": 10, "pviOld": 13 },
+    { "year": 2022, "description": "TX-27 was reshaped, adding Goliad, DeWitt and Bee counties, taking in the rest of Gonzales County and taking in the rest of San Patricio County. It was solidly Republican.", "pviNew": 13, "pviOld": 14 }
   ],
   "4828": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 3, "pviOld": -3 },
-    { "year": 2022, "description": "TX-28 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -3, "pviOld": -5 }
+    { "year": 2026, "description": "TX-28 grew by a third, adding La Salle, Dimmit and Live Oak counties plus shares of Maverick and Hidalgo, and dropped out of Bexar and Guadalupe counties entirely. The Laredo-based seat went from Democratic-held to a narrow Republican toss-up.", "pviNew": 3, "pviOld": -3 },
+    { "year": 2022, "description": "TX-28 kept most of its previous shape, adding Duval and Jim Hogg counties, taking 21% of Guadalupe County and dropping out of Wilson County. It was a Democratic-leaning toss-up.", "pviNew": -3, "pviOld": -5 }
   ],
   "4829": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -17, "pviOld": -18 },
-    { "year": 2022, "description": "TX-29 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -18, "pviOld": -19 }
+    { "year": 2026, "description": "TX-29 was largely rebuilt inside Harris County, 70% of its area coming from the old TX-18 while most of its former territory went to the new TX-9 and TX-18. It remains safely Democratic.", "pviNew": -17, "pviOld": -18 },
+    { "year": 2022, "description": "TX-29 kept most of its previous shape, trading territory with TX-18 and TX-36 within the same counties. It was safely Democratic.", "pviNew": -18, "pviOld": -19 }
   ],
   "4830": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -25, "pviOld": -27 },
-    { "year": 2022, "description": "TX-30 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -27, "pviOld": -29 }
+    { "year": 2026, "description": "TX-30's share of Dallas County fell from 42% to 32%, with the territory going to TX-33, and it picked up a small amount of Tarrant County in return. It stays safely Democratic.", "pviNew": -25, "pviOld": -27 },
+    { "year": 2022, "description": "TX-30 kept most of its previous shape, trading territory with TX-33, TX-6 and TX-5 within the same counties. It was safely Democratic.", "pviNew": -27, "pviOld": -29 }
   ],
   "4831": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 11, "pviOld": 14 },
-    { "year": 2022, "description": "TX-31 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 14, "pviOld": 6 }
+    { "year": 2026, "description": "TX-31 added Lampasas and Mills counties from TX-11 and gave up Bosque County, with slightly reduced shares of Bell, Williamson and Burnet. It remains solidly Republican.", "pviNew": 11, "pviOld": 14 },
+    { "year": 2022, "description": "TX-31 was reshaped, adding Hamilton, Coryell, Burnet and Bosque counties, cutting its share of Williamson County from 99% to 78% and cutting its share of Bell County from 100% to 84%. It was solidly Republican.", "pviNew": 14, "pviOld": 6 }
   ],
   "4832": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 8, "pviOld": -14 },
-    { "year": 2022, "description": "TX-32 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -14, "pviOld": -1 }
+    { "year": 2026, "description": "TX-32 grew more than thirteenfold in area, reaching from Dallas County deep into northeast Texas to take in Rockwall, Wood, Upshur, Camp and Rains counties and part of Hunt, nearly all of it from TX-1, TX-4 and TX-5. The seat flipped from safely Democratic to solidly Republican.", "pviNew": 8, "pviOld": -14 },
+    { "year": 2022, "description": "TX-32 was substantially redrawn, trading territory with TX-5, TX-3 and TX-24 within the same counties. Texas gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Democratic.", "pviNew": -14, "pviOld": -1 }
   ],
   "4833": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -18, "pviOld": -25 },
-    { "year": 2022, "description": "TX-33 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -24, "pviOld": -23 }
+    { "year": 2026, "description": "TX-33 dropped out of Tarrant County entirely and more than doubled its share of Dallas County, from 9% to 22%, rebuilt largely from old TX-30 and TX-32 territory. It remains safely Democratic.", "pviNew": -18, "pviOld": -25 },
+    { "year": 2022, "description": "TX-33 was reshaped, trading territory with TX-24, TX-6 and TX-12 within the same counties. Texas gained a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -24, "pviOld": -23 }
   ],
   "4834": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 3, "pviOld": -9 },
-    { "year": 2022, "description": "TX-34 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -9, "pviOld": -5 }
+    { "year": 2026, "description": "TX-34 added 92% of Nueces County and Corpus Christi from TX-27 and gave up its share of Hidalgo County. The change turned the Rio Grande Valley seat from Democratic-held into a narrow Republican toss-up.", "pviNew": 3, "pviOld": -9 },
+    { "year": 2022, "description": "TX-34 was substantially redrawn, giving up Goliad, DeWitt, Bee and Jim Wells counties, dropping out of Gonzales County and dropping out of San Patricio County. Texas gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Democratic.", "pviNew": -9, "pviOld": -5 }
   ],
   "4835": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 4, "pviOld": -21 },
-    { "year": 2022, "description": "TX-35 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -21, "pviOld": -17 }
+    { "year": 2026, "description": "TX-35 left the Austin end of its corridor entirely — dropping out of Travis, Hays and Comal counties — and was rebuilt around San Antonio, raising its share of Bexar County from 7% to 47% and adding Wilson, Karnes and Guadalupe. Only 7% of its old area carried over, and it flipped from safely Democratic to Republican-leaning.", "pviNew": 4, "pviOld": -21 },
+    { "year": 2022, "description": "TX-35 was reshaped, dropping out of Caldwell County. Texas gained a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -21, "pviOld": -17 }
   ],
   "4836": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 12, "pviOld": 18 },
-    { "year": 2022, "description": "TX-36 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 18, "pviOld": 25 }
+    { "year": 2026, "description": "TX-36 gave up Liberty County and half its share of Harris County to the rebuilt TX-9, taking Angelina County from TX-17 in exchange. It remains solidly Republican.", "pviNew": 12, "pviOld": 18 },
+    { "year": 2022, "description": "TX-36 was reshaped, taking 26% of Jefferson County and giving up Polk and Orange counties. It was safely Republican.", "pviNew": 18, "pviOld": 25 }
   ],
   "4837": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -30, "pviOld": -24 },
-    { "year": 2022, "description": "TX-37 was a new district for 2022, created after Texas gained seats. It was drawn in the Austin area and designed as a safely Democratic district.", "pviNew": -24 }
+    { "year": 2026, "description": "TX-37 absorbed the Travis County territory TX-35 gave up, raising its share of the county from 20% to 26%, while handing its outer areas to TX-10, TX-27 and TX-11. It remains the most Democratic district in Texas.", "pviNew": -30, "pviOld": -24 },
+    { "year": 2022, "description": "TX-37 was a new seat, created when Texas gained a district in the 2020 reapportionment, drawn from parts of Travis County. It was safely Democratic.", "pviNew": -24 }
   ],
   "4838": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 10, "pviOld": 12 },
-    { "year": 2022, "description": "TX-38 was a new district for 2022, created after Texas gained seats. It was drawn in the Houston suburbs and made strongly Republican.", "pviNew": 12 }
+    { "year": 2026, "description": "TX-38 traded territory around western Harris County, taking about a quarter of its area from TX-8 and giving similar amounts to TX-2 and TX-22. It stays solidly Republican.", "pviNew": 10, "pviOld": 12 },
+    { "year": 2022, "description": "TX-38 was a new seat, created when Texas gained a district in the 2020 reapportionment, drawn from parts of Harris County. It was solidly Republican.", "pviNew": 12 }
   ],
   "4901": [
-    { "year": 2026, "description": "Court approved new plaintiff-submitted map", "pviNew": -12, "pviOld": 12 },
-    { "year": 2022, "description": "UT-1 was redrawn for 2022. Utah's 2022 map kept the four-district structure but again split Salt Lake County among multiple districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 12, "pviOld": 20 }
+    { "year": 2026, "description": "UT-1 was rebuilt as a Salt Lake County seat, its share of the county going from 15% to 77% while it shed all of northern Utah — Weber, Cache, Box Elder, Morgan and Rich counties — plus its slices of Davis and Summit. Barely 1% of the old district's area carried over, and the compact new seat is the state's only solidly Democratic one.", "pviNew": -12, "pviOld": 12 },
+    { "year": 2022, "description": "UT-1 was substantially redrawn, taking 15% of Salt Lake County, giving up Daggett, Uintah and Duchesne counties and cutting its share of Summit County from 100% to 39%. It was solidly Republican.", "pviNew": 12, "pviOld": 20 }
   ],
   "4902": [
-    { "year": 2026, "description": "Court approved new plaintiff-submitted map", "pviNew": 15, "pviOld": 11 },
-    { "year": 2022, "description": "UT-2 was redrawn for 2022. Utah's 2022 map kept the four-district structure but again split Salt Lake County among multiple districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 11, "pviOld": 10 }
+    { "year": 2026, "description": "UT-2 became the northern Utah district, taking all of Cache, Box Elder, Rich and Weber counties and the rest of Davis from the old UT-1. It gave up the entire southwestern half of the state it used to run through — Washington, Iron, Beaver, Millard, Tooele, Sevier, Garfield, Kane, Wayne and Piute — and remains safely Republican.", "pviNew": 15, "pviOld": 11 },
+    { "year": 2022, "description": "UT-2 kept most of its previous shape, dropping out of Sanpete County and cutting its share of Salt Lake County from 45% to 33%. It was solidly Republican.", "pviNew": 11, "pviOld": 10 }
   ],
   "4903": [
-    { "year": 2026, "description": "Court approved new plaintiff-submitted map", "pviNew": 21, "pviOld": 13 },
-    { "year": 2022, "description": "UT-3 was redrawn for 2022. Utah's 2022 map kept the four-district structure but again split Salt Lake County among multiple districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 13, "pviOld": 17 }
+    { "year": 2026, "description": "UT-3 kept its eastern Utah core and expanded south and west, adding the St. George corner (Washington, Iron, Beaver, Garfield, Kane, Wayne and Piute counties), all of Summit and Morgan, and most of Utah County, whose share rose from 17% to 60%. It gave up its quarter of Salt Lake County and is the most Republican of the four seats.", "pviNew": 21, "pviOld": 13 },
+    { "year": 2022, "description": "UT-3 kept most of its previous shape, adding Daggett, Uintah and Duchesne counties, taking 61% of Summit County and cutting its share of Utah County from 60% to 17%. It was solidly Republican.", "pviNew": 13, "pviOld": 17 }
   ],
   "4904": [
-    { "year": 2026, "description": "Court approved new plaintiff-submitted map", "pviNew": 17, "pviOld": 16 },
-    { "year": 2022, "description": "UT-4 was redrawn for 2022. Utah's 2022 map kept the four-district structure but again split Salt Lake County among multiple districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 16, "pviOld": 6 }
+    { "year": 2026, "description": "UT-4 grew nearly fivefold in area, taking Tooele, Millard and Sevier counties and the rest of Juab from UT-2, while its share of Utah County fell from 82% to 40%. It held roughly its previous slice of Salt Lake County and stays safely Republican.", "pviNew": 17, "pviOld": 16 },
+    { "year": 2022, "description": "UT-4 kept most of its previous shape, taking in the rest of Sanpete County and raising its share of Utah County from 40% to 82%. It was safely Republican.", "pviNew": 16, "pviOld": 6 }
   ],
   "5101": [
-    { "year": 2022, "description": "VA-1 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 6, "pviOld": 6 }
+    { "year": 2022, "description": "VA-1 was reshaped, adding York County and the cities of Williamsburg and Poquoson, taking 51% of Chesterfield County and taking 27% of Henrico County. It leaned Republican.", "pviNew": 6, "pviOld": 6 }
   ],
   "5102": [
-    { "year": 2022, "description": "VA-2 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 2, "pviOld": 1 }
+    { "year": 2022, "description": "VA-2 was reshaped, adding Isle of Wight County and the cities of Franklin and Suffolk, taking 87% of the city of Chesapeake and taking 41% of Southampton County. It was a Republican-leaning toss-up.", "pviNew": 2, "pviOld": 1 }
   ],
   "5103": [
-    { "year": 2022, "description": "VA-3 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -17, "pviOld": -16 }
+    { "year": 2022, "description": "VA-3 was substantially redrawn, taking in the rest of the city of Hampton, taking in the rest of the city of Norfolk and giving up Isle of Wight County. It was safely Democratic.", "pviNew": -17, "pviOld": -16 }
   ],
   "5104": [
-    { "year": 2022, "description": "VA-4 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -16, "pviOld": -10 }
+    { "year": 2022, "description": "VA-4 was reshaped, adding Brunswick County, raising its share of Henrico County from 63% to 73% and dropping out of the city of Chesapeake. It was safely Democratic.", "pviNew": -16, "pviOld": -10 }
   ],
   "5105": [
-    { "year": 2022, "description": "VA-5 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 7, "pviOld": 7 }
+    { "year": 2022, "description": "VA-5 was reshaped, adding Louisa, Nottoway, Amherst, Goochland, Amelia and Powhatan counties and one more, taking 47% of Hanover County and giving up Rappahannock, Greene, Franklin, Brunswick and Madison counties. It leaned Republican.", "pviNew": 7, "pviOld": 7 }
   ],
   "5106": [
-    { "year": 2022, "description": "VA-6 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 14, "pviOld": 14 }
+    { "year": 2022, "description": "VA-6 kept most of its previous shape, adding Clarke, Alleghany and Frederick counties and the cities of Winchester and Covington, raising its share of the city of Salem from 28% to 82% and raising its share of Roanoke County from 40% to 66%. It was solidly Republican.", "pviNew": 14, "pviOld": 14 }
   ],
   "5107": [
-    { "year": 2022, "description": "VA-7 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -1, "pviOld": 3 }
+    { "year": 2022, "description": "VA-7 was substantially redrawn, adding Stafford, King George, Greene, Madison and Caroline counties, taking in the rest of the city of Fredericksburg and taking 39% of Prince William County. It was a Democratic-leaning toss-up.", "pviNew": -1, "pviOld": 3 }
   ],
   "5108": [
-    { "year": 2022, "description": "VA-8 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -26, "pviOld": -27 }
+    { "year": 2022, "description": "VA-8 kept most of its previous shape, trading territory with VA-10 and VA-11 within the same counties. It was safely Democratic.", "pviNew": -26, "pviOld": -27 }
   ],
   "5109": [
-    { "year": 2022, "description": "VA-9 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 23, "pviOld": 23 }
+    { "year": 2022, "description": "VA-9 kept most of its previous shape, adding Franklin County, taking 83% of Bedford County and taking in the rest of Henry County. It was safely Republican.", "pviNew": 23, "pviOld": 23 }
   ],
   "5110": [
-    { "year": 2022, "description": "VA-10 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -6, "pviOld": -6 }
+    { "year": 2022, "description": "VA-10 was substantially redrawn, adding Fauquier and Rappahannock counties, raising its share of Prince William County from 28% to 61% and taking in the rest of the city of Manassas. It leaned Democratic.", "pviNew": -6, "pviOld": -6 }
   ],
   "5111": [
-    { "year": 2022, "description": "VA-11 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -18, "pviOld": -19 }
+    { "year": 2022, "description": "VA-11 was reshaped, raising its share of Fairfax County from 27% to 63% and dropping out of Prince William County. It was safely Democratic.", "pviNew": -18, "pviOld": -19 }
   ],
   "5301": [
-    { "year": 2022, "description": "WA-1 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -13, "pviOld": -8 }
+    { "year": 2022, "description": "WA-1 was rebuilt almost from scratch, giving up Whatcom County, dropping out of Skagit County and cutting its share of Snohomish County from 86% to 12%. It was solidly Democratic.", "pviNew": -13, "pviOld": -8 }
   ],
   "5302": [
-    { "year": 2022, "description": "WA-2 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -9, "pviOld": -11 }
+    { "year": 2022, "description": "WA-2 kept most of its previous shape, adding Whatcom County and taking in the rest of Skagit County. It was solidly Democratic.", "pviNew": -9, "pviOld": -11 }
   ],
   "5303": [
-    { "year": 2022, "description": "WA-3 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 5, "pviOld": 5 }
+    { "year": 2022, "description": "WA-3 was reshaped, giving up Klickitat County. It leaned Republican.", "pviNew": 5, "pviOld": 5 }
   ],
   "5304": [
-    { "year": 2022, "description": "WA-4 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 11, "pviOld": 13 }
+    { "year": 2022, "description": "WA-4 was reshaped, adding Klickitat County, cutting its share of Adams County from 100% to 7% and cutting its share of Franklin County from 100% to 11%. It was solidly Republican.", "pviNew": 11, "pviOld": 13 }
   ],
   "5305": [
-    { "year": 2022, "description": "WA-5 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 8, "pviOld": 8 }
+    { "year": 2022, "description": "WA-5 kept most of its previous shape, taking 93% of Adams County and taking 89% of Franklin County. It was solidly Republican.", "pviNew": 8, "pviOld": 8 }
   ],
   "5306": [
-    { "year": 2022, "description": "WA-6 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -6, "pviOld": -6 }
+    { "year": 2022, "description": "WA-6 kept most of its previous shape, trading territory with WA-10 and WA-9 within the same counties. It leaned Democratic.", "pviNew": -6, "pviOld": -6 }
   ],
   "5307": [
-    { "year": 2022, "description": "WA-7 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -26, "pviOld": -36 }
+    { "year": 2022, "description": "WA-7 kept most of its previous shape, trading territory with WA-6 and WA-9 within the same counties. It was safely Democratic.", "pviNew": -26, "pviOld": -36 }
   ],
   "5308": [
-    { "year": 2022, "description": "WA-8 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -1, "pviOld": -1 }
+    { "year": 2022, "description": "WA-8 kept most of its previous shape, taking 78% of Snohomish County and raising its share of King County from 42% to 79%. It was a Democratic-leaning toss-up.", "pviNew": -1, "pviOld": -1 }
   ],
   "5309": [
-    { "year": 2022, "description": "WA-9 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -21, "pviOld": -23 }
+    { "year": 2022, "description": "WA-9 was reshaped, trading territory with WA-8 and WA-7 within the same counties. It was safely Democratic.", "pviNew": -21, "pviOld": -23 }
   ],
   "5310": [
-    { "year": 2022, "description": "WA-10 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -7, "pviOld": -5 }
+    { "year": 2022, "description": "WA-10 was reshaped, cutting its share of Thurston County from 71% to 61%. It leaned Democratic.", "pviNew": -7, "pviOld": -5 }
   ],
   "5401": [
-    { "year": 2022, "description": "WV-1 was fundamentally reshaped for 2022 after West Virginia lost a seat. The state collapsed from three districts to two, so this district absorbed substantial territory from the former 3rd district and took on a much different footprint.", "pviNew": 23, "pviOld": 22 }
+    { "year": 2022, "description": "WV-1 was rebuilt almost from scratch, adding 27 whole counties, among them McDowell, Webster and Greenbrier counties and giving up 19 whole counties, among them Tucker, Wetzel and Marshall counties. West Virginia lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Republican.", "pviNew": 23, "pviOld": 22 }
   ],
   "5402": [
-    { "year": 2022, "description": "WV-2 was fundamentally reshaped for 2022 after West Virginia lost a seat. The state collapsed from three districts to two, so this district absorbed substantial territory from the former 3rd district and took on a much different footprint.", "pviNew": 22, "pviOld": 20 }
+    { "year": 2022, "description": "WV-2 was substantially redrawn, adding 19 whole counties, among them Tucker, Wetzel and Marshall counties and giving up 9 whole counties, among them Clay, Pendleton and Roane counties. West Virginia lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Republican.", "pviNew": 22, "pviOld": 20 }
   ],
   "5501": [
-    { "year": 2022, "description": "WI-1 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 3, "pviOld": 7 }
+    { "year": 2022, "description": "WI-1 kept most of its previous shape, dropping out of Waukesha County. It was a Republican-leaning toss-up.", "pviNew": 3, "pviOld": 7 }
   ],
   "5502": [
-    { "year": 2022, "description": "WI-2 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -19, "pviOld": -18 }
+    { "year": 2022, "description": "WI-2 kept most of its previous shape, dropping out of Richland County and cutting its share of Sauk County from 100% to 88%. It was safely Democratic.", "pviNew": -19, "pviOld": -18 }
   ],
   "5503": [
-    { "year": 2022, "description": "WI-3 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 4, "pviOld": 4 }
+    { "year": 2022, "description": "WI-3 kept most of its previous shape, taking in the rest of Richland County and taking 12% of Sauk County. It leaned Republican.", "pviNew": 4, "pviOld": 4 }
   ],
   "5504": [
-    { "year": 2022, "description": "WI-4 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -25, "pviOld": -25 }
+    { "year": 2022, "description": "WI-4 was substantially redrawn, trading territory with WI-5 within the same counties. It was safely Democratic.", "pviNew": -25, "pviOld": -25 }
   ],
   "5505": [
-    { "year": 2022, "description": "WI-5 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 14, "pviOld": 11 }
+    { "year": 2022, "description": "WI-5 kept most of its previous shape, taking in the rest of Waukesha County and cutting its share of Milwaukee County from 17% to 7%. It was solidly Republican.", "pviNew": 14, "pviOld": 11 }
   ],
   "5506": [
-    { "year": 2022, "description": "WI-6 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 10, "pviOld": 10 }
+    { "year": 2022, "description": "WI-6 kept most of its previous shape, taking 24% of Calumet County and raising its share of Winnebago County from 80% to 92%. It was solidly Republican.", "pviNew": 10, "pviOld": 10 }
   ],
   "5507": [
-    { "year": 2022, "description": "WI-7 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 12, "pviOld": 12 }
+    { "year": 2022, "description": "WI-7 kept most of its previous shape, trading territory with WI-3 within the same counties. It was solidly Republican.", "pviNew": 12, "pviOld": 12 }
   ],
   "5508": [
-    { "year": 2022, "description": "WI-8 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 10, "pviOld": 10 }
+    { "year": 2022, "description": "WI-8 kept most of its previous shape, cutting its share of Calumet County from 100% to 76% and cutting its share of Winnebago County from 20% to 8%. It was solidly Republican.", "pviNew": 10, "pviOld": 10 }
   ],
   "0101": [
     { "year": 2026, "description": "Alabama reinstated the legislature's 2023 map for 2026 (enacted June 2, 2026) after the U.S. Supreme Court let the state discard its court-ordered map; AL-1 keeps its Gulf Coast/Mobile core but its lines revert toward the pre-2024 configuration.", "pviNew": 17, "pviOld": 28 },
-    { "year": 2024, "description": "Under Alabama's court-ordered 2024 map, AL-1 remained anchored on the Gulf Coast around Mobile, but it gave up some inland territory as the state unpacked Black voters and created a second Black-opportunity district.", "pviNew": 28, "pviOld": 16 },
-    { "year": 2022, "description": "AL-1 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 16, "pviOld": 16 }
+    { "year": 2024, "description": "AL-1 traded its northern and western reaches for the Wiregrass: out went Washington and Monroe counties and 40% of Mobile County, in came Dale, Coffee, Covington, Geneva, Houston and Henry counties plus the rest of Escambia. It stayed safely Republican.", "pviNew": 28, "pviOld": 16 },
+    { "year": 2022, "description": "AL-1 kept most of its previous shape, dropping out of Clarke County and cutting its share of Escambia County from 100% to 85%. It was safely Republican.", "pviNew": 16, "pviOld": 16 }
   ],
   "0102": [
     { "year": 2026, "description": "AL-2 saw the biggest change under Alabama's reinstated 2026 map (enacted June 2, 2026): after the U.S. Supreme Court let the state discard its court-ordered map, AL-2 reverted to the heavily Republican, Wiregrass-based district used before 2024, undoing the seat Democrats had flipped that year.", "pviNew": 7, "pviOld": -4 },
-    { "year": 2024, "description": "AL-2 was the centerpiece of Alabama's 2024 redraw. Instead of the old Wiregrass-centered seat, it was reconfigured into a Mobile-to-Montgomery district with a much larger Black population, turning it from a safe Republican seat into a far more Democratic-leaning/open battlefield.", "pviNew": -4, "pviOld": 17 },
-    { "year": 2022, "description": "AL-2 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 17, "pviOld": 17 }
+    { "year": 2024, "description": "AL-2 was the seat the court-ordered map created. It gave up the entire Wiregrass — Dale, Coffee, Covington, Geneva, Houston and Henry counties — and reached west instead for Washington, Monroe, Russell and Macon counties, 40% of Mobile and nearly all of Montgomery. About half its area was replaced, turning a safely Republican seat into a Democratic-leaning one.", "pviNew": -4, "pviOld": 17 },
+    { "year": 2022, "description": "AL-2 kept most of its previous shape, taking 15% of Escambia County and raising its share of Montgomery County from 69% to 83%. It was safely Republican.", "pviNew": 17, "pviOld": 17 }
   ],
   "0103": [
     { "year": 2026, "description": "Alabama's 2026 map (enacted June 2, 2026) reinstates the legislature's 2023 plan after the U.S. Supreme Court lifted the requirement for a court-ordered second Black-opportunity district; AL-3 shifts back toward its pre-2024 east Alabama footprint.", "pviNew": 23, "pviOld": 23 },
-    { "year": 2024, "description": "AL-3 stayed centered in east Alabama, but its boundaries shifted to absorb territory moved out of neighboring districts after the court-ordered creation of a second Black-opportunity seat.", "pviNew": 23, "pviOld": 19 },
-    { "year": 2022, "description": "AL-3 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 19, "pviOld": 18 }
+    { "year": 2024, "description": "AL-3 picked up Etowah County and gave up Coosa, Russell and Macon counties as the districts to its south and west were rebuilt. It remained safely Republican.", "pviNew": 23, "pviOld": 19 },
+    { "year": 2022, "description": "AL-3 kept most of its previous shape, adding Coosa County, taking 24% of Chilton County and taking in the rest of Cherokee County. It was safely Republican.", "pviNew": 19, "pviOld": 18 }
   ],
   "0104": [
     { "year": 2026, "description": "Under Alabama's reinstated 2026 map (enacted June 2, 2026), AL-4 reverts toward its pre-2024 north Alabama boundaries as the state abandoned the court-ordered map after a favorable U.S. Supreme Court ruling.", "pviNew": 33, "pviOld": 33 },
-    { "year": 2024, "description": "AL-4 remained a north Alabama seat, though its lines were adjusted in the ripple effects of the 2024 court-ordered redraw that reworked the rest of the map around AL-2 and AL-7.", "pviNew": 33, "pviOld": 33 },
-    { "year": 2022, "description": "AL-4 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 33, "pviOld": 34 }
+    { "year": 2024, "description": "AL-4 added Blount County and larger shares of Lauderdale and Tuscaloosa, giving up Lawrence County and its share of Etowah. It stayed safely Republican.", "pviNew": 33, "pviOld": 33 },
+    { "year": 2022, "description": "AL-4 kept most of its previous shape, taking 51% of Lauderdale County, cutting its share of Tuscaloosa County from 62% to 43% and dropping out of Cherokee County. It was safely Republican.", "pviNew": 33, "pviOld": 34 }
   ],
   "0105": [
     { "year": 2026, "description": "Alabama's 2026 map (enacted June 2, 2026) restores the legislature's 2023 plan after the U.S. Supreme Court let the state discard its court-ordered map; AL-5 returns to roughly its pre-2024 north Alabama/Huntsville lines.", "pviNew": 15, "pviOld": 17 },
-    { "year": 2024, "description": "AL-5 kept its north Alabama/Huntsville orientation, but it was trimmed and adjusted as Alabama rebalanced population under the court-ordered 2024 map.", "pviNew": 17, "pviOld": 17 },
-    { "year": 2022, "description": "AL-5 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 17, "pviOld": 17 }
+    { "year": 2024, "description": "AL-5 took all of Lawrence County and cut its share of Lauderdale from 49% to 28%, otherwise keeping its north Alabama shape. It remained safely Republican.", "pviNew": 17, "pviOld": 17 },
+    { "year": 2022, "description": "AL-5 kept most of its previous shape, cutting its share of Lauderdale County from 99% to 49%. It was safely Republican.", "pviNew": 17, "pviOld": 17 }
   ],
   "0106": [
     { "year": 2026, "description": "Under Alabama's reinstated 2026 map (enacted June 2, 2026), AL-6's Birmingham-suburbs boundaries shift back toward their pre-2024 shape as the state abandoned the court-ordered map after the U.S. Supreme Court's ruling.", "pviNew": 17, "pviOld": 22 },
-    { "year": 2024, "description": "AL-6 remained the Birmingham suburbs seat, though it shed and picked up pieces at the margins as Alabama's 2024 court-ordered redraw reworked the surrounding districts.", "pviNew": 22, "pviOld": 18 },
-    { "year": 2022, "description": "AL-6 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 18, "pviOld": 22 }
+    { "year": 2024, "description": "AL-6 shifted south to take Coosa, Elmore and Autauga counties and the rest of Chilton, dropping Blount County and cutting its share of Jefferson from 57% to 40%. It stayed safely Republican.", "pviNew": 22, "pviOld": 18 },
+    { "year": 2022, "description": "AL-6 was reshaped, taking in the rest of Blount County, giving up Coosa County and cutting its share of Chilton County from 100% to 76%. It was safely Republican.", "pviNew": 18, "pviOld": 22 }
   ],
   "0107": [
     { "year": 2026, "description": "AL-7 remains Alabama's only Black-opportunity district under the reinstated 2026 map (enacted June 2, 2026), with its lines pulled back toward the more compact Black Belt-and-Birmingham configuration used before the 2024 court-ordered map created a second such district.", "pviNew": -10, "pviOld": -12 },
-    { "year": 2024, "description": "AL-7 stayed the state's other Black-opportunity district, still based in Birmingham and the Black Belt, but it was made somewhat less packed after Alabama's 2024 redraw created a second district giving Black voters an opportunity to elect their preferred candidate.", "pviNew": -12, "pviOld": -14 },
-    { "year": 2022, "description": "AL-7 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -14, "pviOld": -19 }
+    { "year": 2024, "description": "AL-7 raised its share of Jefferson County and Birmingham from 43% to 59% while giving up Montgomery County and parts of Clarke and Tuscaloosa. It remained the state's solidly Democratic seat.", "pviNew": -12, "pviOld": -14 },
+    { "year": 2022, "description": "AL-7 kept most of its previous shape, raising its share of Jefferson County from 21% to 43% and raising its share of Tuscaloosa County from 37% to 57%. It was solidly Democratic.", "pviNew": -14, "pviOld": -19 }
   ],
   "0401": [
-    { "year": 2022, "description": "AZ-1 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 2, "pviOld": 2 }
+    { "year": 2022, "description": "AZ-1 was rebuilt almost from scratch, taking 17% of Maricopa County, giving up Coconino, Greenlee, Navajo, Graham and Apache counties and dropping out of Pinal County. It was a Republican-leaning toss-up.", "pviNew": 2, "pviOld": 2 }
   ],
   "0402": [
-    { "year": 2022, "description": "AZ-2 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 6, "pviOld": -2 }
+    { "year": 2022, "description": "AZ-2 was rebuilt almost from scratch, adding Coconino, Gila, Navajo, Apache and Yavapai counties, taking 55% of Pinal County and taking 37% of Graham County. It leaned Republican.", "pviNew": 6, "pviOld": -2 }
   ],
   "0403": [
-    { "year": 2022, "description": "AZ-3 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -24, "pviOld": -13 }
+    { "year": 2022, "description": "AZ-3 was rebuilt almost from scratch, giving up Santa Cruz County, dropping out of Pima County and dropping out of Maricopa County. It was safely Democratic.", "pviNew": -24, "pviOld": -13 }
   ],
   "0404": [
-    { "year": 2022, "description": "AZ-4 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -2, "pviOld": 22 }
+    { "year": 2022, "description": "AZ-4 was rebuilt almost from scratch, giving up La Paz County, dropping out of Mohave County and dropping out of Yavapai County. It was a Democratic-leaning toss-up.", "pviNew": -2, "pviOld": 22 }
   ],
   "0405": [
-    { "year": 2022, "description": "AZ-5 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 11, "pviOld": 11 }
+    { "year": 2022, "description": "AZ-5 was reshaped, trading territory with AZ-4 within the same counties. It was solidly Republican.", "pviNew": 11, "pviOld": 11 }
   ],
   "0406": [
-    { "year": 2022, "description": "AZ-6 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 3, "pviOld": 5 }
+    { "year": 2022, "description": "AZ-6 was rebuilt almost from scratch, adding Greenlee County, taking 93% of Cochise County and taking 63% of Graham County. It was a Republican-leaning toss-up.", "pviNew": 3, "pviOld": 5 }
   ],
   "0407": [
-    { "year": 2022, "description": "AZ-7 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -15, "pviOld": -24 }
+    { "year": 2022, "description": "AZ-7 was rebuilt almost from scratch, adding Santa Cruz County, taking 81% of Pima County and taking 44% of Yuma County. It was safely Democratic.", "pviNew": -15, "pviOld": -24 }
   ],
   "0408": [
-    { "year": 2022, "description": "AZ-8 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 10, "pviOld": 11 }
+    { "year": 2022, "description": "AZ-8 was reshaped, trading territory with AZ-4 and AZ-6 within the same counties. It was solidly Republican.", "pviNew": 10, "pviOld": 11 }
   ],
   "0409": [
-    { "year": 2022, "description": "AZ-9 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 16, "pviOld": -9 }
+    { "year": 2022, "description": "AZ-9 was rebuilt almost from scratch, adding La Paz County, taking 93% of Mohave County and taking 56% of Yuma County. It was safely Republican.", "pviNew": 16, "pviOld": -9 }
   ],
   "0501": [
-    { "year": 2022, "description": "AR-1 was redrawn for 2022. Arkansas' 2022 map kept the state's basic four-district structure but adjusted boundaries to balance population. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 22, "pviOld": 21 }
+    { "year": 2022, "description": "AR-1 kept most of its previous shape, adding Boone and Marion counties, taking 16% of Pulaski County and giving up Cleburne County. It was safely Republican.", "pviNew": 22, "pviOld": 21 }
   ],
   "0502": [
-    { "year": 2022, "description": "AR-2 was redrawn for 2022. Arkansas' 2022 map kept the state's basic four-district structure but adjusted boundaries to balance population. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 9, "pviOld": 7 }
+    { "year": 2022, "description": "AR-2 kept most of its previous shape, adding Cleburne County and cutting its share of Pulaski County from 100% to 70%. It was solidly Republican.", "pviNew": 9, "pviOld": 7 }
   ],
   "0503": [
-    { "year": 2022, "description": "AR-3 was redrawn for 2022. Arkansas' 2022 map kept the state's basic four-district structure but adjusted boundaries to balance population. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 15, "pviOld": 17 }
+    { "year": 2022, "description": "AR-3 was substantially redrawn, adding Madison County, taking in the rest of Crawford County and raising its share of Sebastian County from 50% to 61%. It was safely Republican.", "pviNew": 15, "pviOld": 17 }
   ],
   "0504": [
-    { "year": 2022, "description": "AR-4 was redrawn for 2022. Arkansas' 2022 map kept the state's basic four-district structure but adjusted boundaries to balance population. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 20, "pviOld": 20 }
+    { "year": 2022, "description": "AR-4 kept most of its previous shape, adding Pope County, taking in the rest of Newton County and taking in the rest of Jefferson County. It was safely Republican.", "pviNew": 20, "pviOld": 20 }
   ],
   "0601": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -7, "pviOld": 12 },
-    { "year": 2022, "description": "CA-1 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 12, "pviOld": 11 }
+    { "year": 2026, "description": "CA-1 swung west off the Oregon border, giving up Modoc, Siskiyou and Shasta counties along with Sutter, Colusa and its share of Yuba. In their place it took Sierra and Plumas counties, most of Lake, 61% of Mendocino and 39% of Sonoma — a trade that turned a safely Republican seat into a Democratic-leaning one.", "pviNew": -7, "pviOld": 12 },
+    { "year": 2022, "description": "CA-1 was reshaped, adding Colusa and Sutter counties, taking in the rest of Glenn County and taking 33% of Yuba County. It was solidly Republican.", "pviNew": 12, "pviOld": 11 }
   ],
   "0602": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -13, "pviOld": -23 },
-    { "year": 2022, "description": "CA-2 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -24, "pviOld": -23 }
+    { "year": 2026, "description": "CA-2 nearly doubled in area, taking Modoc, Siskiyou and Shasta counties from CA-1 while giving up most of Mendocino, down from 100% to 39%, and half its share of Sonoma. It absorbed the conservative far north and remains solidly Democratic, though less lopsidedly so.", "pviNew": -13, "pviOld": -23 },
+    { "year": 2022, "description": "CA-2 kept most of its previous shape, trading territory with CA-5 within the same counties. It was safely Democratic.", "pviNew": -24, "pviOld": -23 }
   ],
   "0603": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -6, "pviOld": 4 },
-    { "year": 2022, "description": "CA-3 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 4, "pviOld": -5 }
+    { "year": 2026, "description": "CA-3 shed the long spine it had run down the eastern Sierra — Inyo, Mono, Alpine, Plumas, Sierra and Yuba counties — cutting its area by 84%. The compact new seat sits on Placer, El Dorado and Nevada counties with a larger slice of Sacramento County, up from 9% to 17%, and now leans Democratic.", "pviNew": -6, "pviOld": 4 },
+    { "year": 2022, "description": "CA-3 was rebuilt almost from scratch, adding Sierra, Nevada, Inyo, Placer, Alpine and Plumas counties and one more, taking 75% of El Dorado County and giving up Colusa, Sutter and Yolo counties. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Republican.", "pviNew": 4, "pviOld": -5 }
   ],
   "0604": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -8, "pviOld": -17 },
-    { "year": 2022, "description": "CA-4 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -17, "pviOld": 8 }
+    { "year": 2026, "description": "CA-4 moved into the Sacramento Valley, adding Yuba, Sutter and Colusa counties and a slice of Placer while giving up Solano County entirely and most of Lake. Trading wine-country ground for farmland left it solidly Democratic rather than safely so.", "pviNew": -8, "pviOld": -17 },
+    { "year": 2022, "description": "CA-4 was rebuilt almost from scratch, adding Napa, Lake and Yolo counties, taking 56% of Solano County and taking 20% of Sonoma County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -17, "pviOld": 8 }
   ],
   "0605": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 10, "pviOld": 9 },
-    { "year": 2022, "description": "CA-5 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 9, "pviOld": -22 }
+    { "year": 2026, "description": "CA-5 more than doubled in area, absorbing the eastern Sierra counties CA-3 gave up — Inyo, Mono and Alpine — plus larger shares of Madera and Stanislaus. It remains solidly Republican.", "pviNew": 10, "pviOld": 9 },
+    { "year": 2022, "description": "CA-5 was rebuilt almost from scratch, adding Tuolumne, Calaveras, Mariposa and Amador counties, taking 69% of Madera County and taking 36% of Fresno County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Republican.", "pviNew": 9, "pviOld": -22 }
   ],
   "0606": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -5, "pviOld": -7 },
-    { "year": 2022, "description": "CA-6 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -7, "pviOld": -21 }
+    { "year": 2026, "description": "CA-6 was substantially reshuffled around Sacramento, with about half its area coming from the old CA-3 and CA-7 while its own share of Sacramento County fell from 25% to 12%. It stays Democratic-leaning.", "pviNew": -5, "pviOld": -7 },
+    { "year": 2022, "description": "CA-6 was substantially redrawn, raising its share of Sacramento County from 14% to 25%. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Democratic.", "pviNew": -7, "pviOld": -21 }
   ],
   "0607": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -7, "pviOld": -17 },
-    { "year": 2022, "description": "CA-7 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -17, "pviOld": -5 }
+    { "year": 2026, "description": "CA-7 doubled in area, reaching east and south to add 29% of El Dorado County and 26% of San Joaquin, while its share of Sacramento County slipped from 65% to 56%. It remains Democratic but by a narrower margin.", "pviNew": -7, "pviOld": -17 },
+    { "year": 2022, "description": "CA-7 was reshaped, trading territory with CA-3, CA-6 and CA-9 within the same counties. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -17, "pviOld": -5 }
   ],
   "0608": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -19, "pviOld": -26 },
-    { "year": 2022, "description": "CA-8 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -26, "pviOld": 8 }
+    { "year": 2026, "description": "CA-8 took all of Solano County, up from 42%, along with new shares of Yolo, Sacramento and San Joaquin, more than doubling its area. Its share of Contra Costa County fell from 23% to 11%, and it stays safely Democratic.", "pviNew": -19, "pviOld": -26 },
+    { "year": 2022, "description": "CA-8 was rebuilt almost from scratch, taking 42% of Solano County, taking 23% of Contra Costa County and giving up Inyo, Mono and San Bernardino counties. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -26, "pviOld": 8 }
   ],
   "0609": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -8, "pviOld": -5 },
-    { "year": 2022, "description": "CA-9 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -5, "pviOld": -8 }
+    { "year": 2026, "description": "CA-9's share of San Joaquin County dropped from 84% to 36% and it left Stanislaus County altogether, more than halving its area, while gaining ground in Contra Costa. It remains solidly Democratic.", "pviNew": -8, "pviOld": -5 },
+    { "year": 2022, "description": "CA-9 kept most of its previous shape, cutting its share of Contra Costa County from 22% to 6%. It leaned Democratic.", "pviNew": -5, "pviOld": -8 }
   ],
   "0610": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -18, "pviOld": -18 },
-    { "year": 2022, "description": "CA-10 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -18, "pviOld": 0 }
+    { "year": 2026, "description": "CA-10 picked up territory from CA-8, CA-9 and CA-14 across the East Bay, raising its share of Alameda County from 1% to 7%. It stays safely Democratic.", "pviNew": -18, "pviOld": -18 },
+    { "year": 2022, "description": "CA-10 was rebuilt almost from scratch, taking 71% of Contra Costa County, giving up Stanislaus County and dropping out of San Joaquin County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -18, "pviOld": 0 }
   ],
   "0611": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -36, "pviOld": -37 },
-    { "year": 2022, "description": "CA-11 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -37, "pviOld": -24 }
+    { "year": 2026, "description": "CA-11 gave up 8% of San Francisco to CA-15 and otherwise held its shape. It remains one of the most Democratic districts in the country.", "pviNew": -36, "pviOld": -37 },
+    { "year": 2022, "description": "CA-11 was rebuilt almost from scratch, adding San Francisco County and dropping out of Contra Costa County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -37, "pviOld": -24 }
   ],
   "0612": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -39, "pviOld": -40 },
-    { "year": 2022, "description": "CA-12 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -40, "pviOld": -38 }
+    { "year": 2026, "description": "CA-12's Oakland-area lines were essentially unchanged, with only small exchanges along its edges. It stays safely Democratic.", "pviNew": -39, "pviOld": -40 },
+    { "year": 2022, "description": "CA-12 was rebuilt almost from scratch, taking 12% of Alameda County and dropping out of San Francisco County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -40, "pviOld": -38 }
   ],
   "0613": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -2, "pviOld": -4 },
-    { "year": 2022, "description": "CA-13 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -4, "pviOld": -40 }
+    { "year": 2026, "description": "CA-13's share of Fresno County collapsed from 43% to 6% and its share of Madera fell from 31% to 20%, cutting its area by nearly 40%, with most of that territory going to CA-22 and CA-18. It remains a Central Valley toss-up.", "pviNew": -2, "pviOld": -4 },
+    { "year": 2022, "description": "CA-13 was rebuilt almost from scratch, adding Merced County, taking 56% of Stanislaus County and taking 43% of Fresno County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Democratic.", "pviNew": -4, "pviOld": -40 }
   ],
   "0614": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -19, "pviOld": -22 },
-    { "year": 2022, "description": "CA-14 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -22, "pviOld": -28 }
+    { "year": 2026, "description": "CA-14 gave up a small share of Alameda County to CA-10 and exchanged minor territory with its Peninsula neighbors. It stays safely Democratic.", "pviNew": -19, "pviOld": -22 },
+    { "year": 2022, "description": "CA-14 was rebuilt almost from scratch, taking 78% of Alameda County, dropping out of San Mateo County and dropping out of San Francisco County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -22, "pviOld": -28 }
   ],
   "0615": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -26, "pviOld": -28 },
-    { "year": 2022, "description": "CA-15 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -28, "pviOld": -22 }
+    { "year": 2026, "description": "CA-15 took in 8% of San Francisco from CA-11 and was otherwise essentially unchanged. It remains safely Democratic.", "pviNew": -26, "pviOld": -28 },
+    { "year": 2022, "description": "CA-15 was rebuilt almost from scratch, taking 25% of San Mateo County and dropping out of Alameda County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -28, "pviOld": -22 }
   ],
   "0616": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -25, "pviOld": -26 },
-    { "year": 2022, "description": "CA-16 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -26, "pviOld": -9 }
+    { "year": 2026, "description": "CA-16's Silicon Valley lines were essentially unchanged, with only edge exchanges with CA-15, CA-17 and CA-19. It stays safely Democratic.", "pviNew": -25, "pviOld": -26 },
+    { "year": 2022, "description": "CA-16 was rebuilt almost from scratch, taking 74% of San Mateo County, taking 14% of Santa Clara County and giving up Merced County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -26, "pviOld": -9 }
   ],
   "0617": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -21, "pviOld": -23 },
-    { "year": 2022, "description": "CA-17 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -23, "pviOld": -24 }
+    { "year": 2026, "description": "CA-17 kept its San Jose-area shape, trading small amounts of territory with CA-14, CA-16 and CA-18. It remains safely Democratic.", "pviNew": -21, "pviOld": -23 },
+    { "year": 2022, "description": "CA-17 kept most of its previous shape, trading territory with CA-19 and CA-18 within the same counties. It was safely Democratic.", "pviNew": -23, "pviOld": -24 }
   ],
   "0618": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -16, "pviOld": -21 },
-    { "year": 2022, "description": "CA-18 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -21, "pviOld": -27 }
+    { "year": 2026, "description": "CA-18 expanded inland from the coast, adding 24% of Kings County and 16% of Fresno County from CA-13 and CA-22. It stays safely Democratic.", "pviNew": -16, "pviOld": -21 },
+    { "year": 2022, "description": "CA-18 was rebuilt almost from scratch, adding San Benito County, taking 73% of Monterey County and raising its share of Santa Clara County from 18% to 57%. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -21, "pviOld": -27 }
   ],
   "0619": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -18, "pviOld": -18 },
-    { "year": 2022, "description": "CA-19 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -18, "pviOld": -23 }
+    { "year": 2026, "description": "CA-19's central coast lines were essentially unchanged. It remains safely Democratic.", "pviNew": -18, "pviOld": -18 },
+    { "year": 2022, "description": "CA-19 was rebuilt almost from scratch, taking 89% of Santa Cruz County, taking 40% of San Luis Obispo County and cutting its share of Santa Clara County from 70% to 18%. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -18, "pviOld": -23 }
   ],
   "0620": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 16, "pviOld": 16 },
-    { "year": 2022, "description": "CA-20 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 16, "pviOld": -23 }
+    { "year": 2026, "description": "CA-20 took slightly larger shares of Tulare, Kings and Kern counties from CA-22 and CA-21. It remains the most Republican district in California.", "pviNew": 16, "pviOld": 16 },
+    { "year": 2022, "description": "CA-20 was rebuilt almost from scratch, taking 70% of Tulare County, taking 65% of Kern County and giving up Monterey and San Benito counties. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Republican.", "pviNew": 16, "pviOld": -23 }
   ],
   "0621": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -5, "pviOld": -9 },
-    { "year": 2022, "description": "CA-21 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -9, "pviOld": -5 }
+    { "year": 2026, "description": "CA-21 lost about 30% of its area around Fresno to CA-20 and CA-22, taking only small amounts back. It stays Democratic-leaning but is more competitive than before.", "pviNew": -5, "pviOld": -9 },
+    { "year": 2022, "description": "CA-21 was rebuilt almost from scratch, giving up Kings County, cutting its share of Fresno County from 47% to 8% and dropping out of Kern County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Democratic.", "pviNew": -9, "pviOld": -5 }
   ],
   "0622": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -1, "pviOld": -5 },
-    { "year": 2022, "description": "CA-22 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -5, "pviOld": 6 }
+    { "year": 2026, "description": "CA-22 moved north in the Central Valley, taking 23% of Fresno County from CA-13 while its shares of Kings, down from 82% to 53%, and Kern, down from 27% to 20%, fell. The shift made this Republican-held seat a genuine toss-up.", "pviNew": -1, "pviOld": -5 },
+    { "year": 2022, "description": "CA-22 was rebuilt almost from scratch, taking 82% of Kings County and taking 27% of Kern County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Democratic.", "pviNew": -5, "pviOld": 6 }
   ],
   "0623": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 9, "pviOld": 8 },
-    { "year": 2022, "description": "CA-23 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 8, "pviOld": 12 }
+    { "year": 2026, "description": "CA-23 expanded across the desert, adding a quarter of Riverside County from CA-25 and raising its share of San Bernardino County from 84% to 96%. It remains solidly Republican.", "pviNew": 9, "pviOld": 8 },
+    { "year": 2022, "description": "CA-23 was rebuilt almost from scratch, taking 84% of San Bernardino County, dropping out of Tulare County and cutting its share of Kern County from 77% to 8%. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Republican.", "pviNew": 8, "pviOld": 12 }
   ],
   "0624": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -13, "pviOld": -13 },
-    { "year": 2022, "description": "CA-24 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -13, "pviOld": -10 }
+    { "year": 2026, "description": "CA-24's central coast lines were essentially unchanged apart from a small exchange with CA-26. It stays solidly Democratic.", "pviNew": -13, "pviOld": -13 },
+    { "year": 2022, "description": "CA-24 was reshaped, cutting its share of San Luis Obispo County from 100% to 60% and cutting its share of Ventura County from 45% to 9%. It was solidly Democratic.", "pviNew": -13, "pviOld": -10 }
   ],
   "0625": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -4, "pviOld": -6 },
-    { "year": 2022, "description": "CA-25 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -6, "pviOld": -3 }
+    { "year": 2026, "description": "CA-25 gave up a third of its area to CA-23, its share of Riverside County falling from 71% to 50% and San Bernardino from 13% to 1%. It remains Democratic-leaning.", "pviNew": -4, "pviOld": -6 },
+    { "year": 2022, "description": "CA-25 was rebuilt almost from scratch, adding Imperial County, taking 71% of Riverside County and taking 13% of San Bernardino County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Democratic.", "pviNew": -6, "pviOld": -3 }
   ],
   "0626": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -9, "pviOld": -8 },
-    { "year": 2022, "description": "CA-26 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -8, "pviOld": -10 }
+    { "year": 2026, "description": "CA-26 reached east out of Ventura County into Los Angeles County, raising its share there from 1% to 14% with territory from CA-27. It stays solidly Democratic.", "pviNew": -9, "pviOld": -8 },
+    { "year": 2022, "description": "CA-26 was reshaped, raising its share of Ventura County from 51% to 90%. It was solidly Democratic.", "pviNew": -8, "pviOld": -10 }
   ],
   "0627": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -6, "pviOld": -4 },
-    { "year": 2022, "description": "CA-27 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -4, "pviOld": -18 }
+    { "year": 2026, "description": "CA-27's share of Los Angeles County fell from 37% to 20%, nearly halving its area, with most of the lost ground going to CA-26 and CA-30. It remains Democratic-leaning.", "pviNew": -6, "pviOld": -4 },
+    { "year": 2022, "description": "CA-27 was rebuilt almost from scratch, raising its share of Los Angeles County from 17% to 38%. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Democratic.", "pviNew": -4, "pviOld": -18 }
   ],
   "0628": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -14, "pviOld": -16 },
-    { "year": 2022, "description": "CA-28 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -16, "pviOld": -23 }
+    { "year": 2026, "description": "CA-28 took territory from CA-31 in the San Gabriel Valley and gave smaller pieces to CA-31, CA-30 and CA-35. It stays solidly Democratic.", "pviNew": -14, "pviOld": -16 },
+    { "year": 2022, "description": "CA-28 was rebuilt almost from scratch, trading territory with CA-27 and CA-8 within the same counties. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -16, "pviOld": -23 }
   ],
   "0629": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -19, "pviOld": -26 },
-    { "year": 2022, "description": "CA-29 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -26, "pviOld": -27 }
+    { "year": 2026, "description": "CA-29 was substantially rebuilt in the San Fernando Valley: about half its old area went to CA-30, and a third of its new area came from CA-30 and CA-32. It remains safely Democratic.", "pviNew": -19, "pviOld": -26 },
+    { "year": 2022, "description": "CA-29 was reshaped, trading territory with CA-28, CA-30 and CA-25 within the same counties. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -26, "pviOld": -27 }
   ],
   "0630": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -21, "pviOld": -23 },
-    { "year": 2022, "description": "CA-30 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -23, "pviOld": -20 }
+    { "year": 2026, "description": "CA-30 more than doubled in area, absorbing territory from CA-27 and CA-29 and raising its share of Los Angeles County from 4% to 10%. It stays safely Democratic.", "pviNew": -21, "pviOld": -23 },
+    { "year": 2022, "description": "CA-30 was rebuilt almost from scratch, trading territory with CA-28, CA-33 and CA-25 within the same counties. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -23, "pviOld": -20 }
   ],
   "0631": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -8, "pviOld": -15 },
-    { "year": 2022, "description": "CA-31 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -15, "pviOld": -9 }
+    { "year": 2026, "description": "CA-31 was heavily reworked in the San Gabriel Valley, giving about half its old area to CA-28 and CA-38 and drawing a similar share of its new area from CA-35, CA-28 and CA-38. It remains solidly Democratic.", "pviNew": -8, "pviOld": -15 },
+    { "year": 2022, "description": "CA-31 was rebuilt almost from scratch, trading territory with CA-27 and CA-32 within the same counties. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -15, "pviOld": -9 }
   ],
   "0632": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -14, "pviOld": -20 },
-    { "year": 2022, "description": "CA-32 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -20, "pviOld": -17 }
+    { "year": 2026, "description": "CA-32 took territory from CA-26 and CA-27 in the western San Fernando Valley and gave similar amounts back to CA-26, CA-29 and CA-27. It stays solidly Democratic.", "pviNew": -14, "pviOld": -20 },
+    { "year": 2022, "description": "CA-32 was rebuilt almost from scratch, trading territory with CA-33 and CA-30 within the same counties. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -20, "pviOld": -17 }
   ],
   "0633": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -7, "pviOld": -12 },
-    { "year": 2022, "description": "CA-33 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -12, "pviOld": -19 }
+    { "year": 2026, "description": "CA-33 gained territory from CA-39, CA-23 and CA-35 and gave up smaller pieces to CA-28 and CA-23. It is now Democratic-leaning rather than solidly Democratic.", "pviNew": -7, "pviOld": -12 },
+    { "year": 2022, "description": "CA-33 was rebuilt almost from scratch, trading territory with CA-31, CA-35 and CA-8 within the same counties. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Democratic.", "pviNew": -12, "pviOld": -19 }
   ],
   "0634": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -28, "pviOld": -32 },
-    { "year": 2022, "description": "CA-34 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -32, "pviOld": -34 }
+    { "year": 2026, "description": "CA-34 took territory from CA-30 in central Los Angeles and distributed about a fifth of its old area among CA-28, CA-37 and CA-38. It remains safely Democratic.", "pviNew": -28, "pviOld": -32 },
+    { "year": 2022, "description": "CA-34 kept most of its previous shape, trading territory with CA-40, CA-27 and CA-37 within the same counties. It was safely Democratic.", "pviNew": -32, "pviOld": -34 }
   ],
   "0635": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -6, "pviOld": -13 },
-    { "year": 2022, "description": "CA-35 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -13, "pviOld": -17 }
+    { "year": 2026, "description": "CA-35 drew more than a third of its area from the old CA-40 and CA-41 and gave about a quarter of its former territory to CA-31 and CA-33. It is now Democratic-leaning rather than solidly Democratic.", "pviNew": -6, "pviOld": -13 },
+    { "year": 2022, "description": "CA-35 kept most of its previous shape, trading territory with CA-42, CA-31 and CA-39 within the same counties. It was solidly Democratic.", "pviNew": -13, "pviOld": -17 }
   ],
   "0636": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -21, "pviOld": -21 },
-    { "year": 2022, "description": "CA-36 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -21, "pviOld": -4 }
+    { "year": 2026, "description": "CA-36's western Los Angeles County lines were essentially unchanged, with small exchanges with CA-43 and CA-32. It stays safely Democratic.", "pviNew": -21, "pviOld": -21 },
+    { "year": 2022, "description": "CA-36 was rebuilt almost from scratch, dropping out of Riverside County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -21, "pviOld": -4 }
   ],
   "0637": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -33, "pviOld": -37 },
-    { "year": 2022, "description": "CA-37 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -37, "pviOld": -36 }
+    { "year": 2026, "description": "CA-37 took territory from CA-34 and CA-43 in central Los Angeles and gave a smaller amount to CA-44. It remains safely Democratic.", "pviNew": -33, "pviOld": -37 },
+    { "year": 2022, "description": "CA-37 was reshaped, trading territory with CA-40 and CA-43 within the same counties. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -37, "pviOld": -36 }
   ],
   "0638": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -8, "pviOld": -14 },
-    { "year": 2022, "description": "CA-38 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -14, "pviOld": -17 }
+    { "year": 2026, "description": "CA-38 was substantially rebuilt: about 70% of the area it gave up went to the new CA-41, while half its new area came from the old CA-40, CA-31 and CA-42. Its share of Orange County rose from 1% to 6% and it stays solidly Democratic.", "pviNew": -8, "pviOld": -14 },
+    { "year": 2022, "description": "CA-38 was reshaped, trading territory with CA-39 and CA-32 within the same counties. It was solidly Democratic.", "pviNew": -14, "pviOld": -17 }
   ],
   "0639": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -7, "pviOld": -12 },
-    { "year": 2022, "description": "CA-39 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -12, "pviOld": -3 }
+    { "year": 2026, "description": "CA-39 took a small amount of territory from the old CA-41 and gave up about a tenth of its area, mostly to CA-33. It is now Democratic-leaning rather than solidly Democratic.", "pviNew": -7, "pviOld": -12 },
+    { "year": 2022, "description": "CA-39 was rebuilt almost from scratch, dropping out of Orange County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Democratic.", "pviNew": -12, "pviOld": -3 }
   ],
   "0640": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 6, "pviOld": 2 },
-    { "year": 2022, "description": "CA-40 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 2, "pviOld": -31 }
+    { "year": 2026, "description": "CA-40 nearly doubled in area, taking 70% of its territory from the old CA-41 and CA-48 and picking up 7% of Riverside County, while its share of Orange County fell from 43% to 31%. It is the one California seat the new map made more Republican.", "pviNew": 6, "pviOld": 2 },
+    { "year": 2022, "description": "CA-40 was rebuilt almost from scratch, taking 43% of Orange County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was a Republican-leaning toss-up.", "pviNew": 2, "pviOld": -31 }
   ],
   "0641": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -9, "pviOld": 3 },
-    { "year": 2022, "description": "CA-41 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 3, "pviOld": -12 }
+    { "year": 2026, "description": "CA-41 shares no territory at all with its predecessor. The old district sat entirely inside Riverside County; the new one is 93% smaller and straddles the Los Angeles-Orange county line, built from the old CA-38, CA-42, CA-45 and CA-44. The renumbering turned a Republican-held seat into a solidly Democratic one.", "pviNew": -9, "pviOld": 3 },
+    { "year": 2022, "description": "CA-41 was rebuilt almost from scratch, taking 19% of Riverside County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was a Republican-leaning toss-up.", "pviNew": 3, "pviOld": -12 }
   ],
   "0642": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -8, "pviOld": -22 },
-    { "year": 2022, "description": "CA-42 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -22, "pviOld": 7 }
+    { "year": 2026, "description": "CA-42 reached south into Orange County for the first time, from 0% to 9% of the county, taking most of that territory from CA-47, and gave pieces of its old area to the new CA-41, CA-44 and CA-38. It remains solidly Democratic but much less lopsided than before.", "pviNew": -8, "pviOld": -22 },
+    { "year": 2022, "description": "CA-42 was rebuilt almost from scratch, dropping out of Riverside County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -22, "pviOld": 7 }
   ],
   "0643": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -27, "pviOld": -32 },
-    { "year": 2022, "description": "CA-43 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -32, "pviOld": -20 }
+    { "year": 2026, "description": "CA-43 exchanged modest territory with CA-36 and CA-44 in south Los Angeles County. It remains safely Democratic.", "pviNew": -27, "pviOld": -32 },
+    { "year": 2022, "description": "CA-43 was reshaped, trading territory with CA-44, CA-33 and CA-37 within the same counties. It was safely Democratic.", "pviNew": -32, "pviOld": -20 }
   ],
   "0644": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -20, "pviOld": -24 },
-    { "year": 2022, "description": "CA-44 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -24, "pviOld": -32 }
+    { "year": 2026, "description": "CA-44 took territory from CA-42 and gave about a fifth of its old area to the new CA-41 and to CA-42. It stays safely Democratic.", "pviNew": -20, "pviOld": -24 },
+    { "year": 2022, "description": "CA-44 was reshaped, trading territory with CA-47, CA-43 and CA-38 within the same counties. It was safely Democratic.", "pviNew": -24, "pviOld": -32 }
   ],
   "0645": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -3, "pviOld": -2 },
-    { "year": 2022, "description": "CA-45 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -2, "pviOld": -3 }
+    { "year": 2026, "description": "CA-45 was reworked in Orange County, drawing about a quarter of its area from CA-47, CA-38 and CA-46 while giving up a similar share to CA-46 and the new CA-41. It remains a toss-up.", "pviNew": -3, "pviOld": -2 },
+    { "year": 2022, "description": "CA-45 was rebuilt almost from scratch, cutting its share of Orange County from 41% to 11%. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was a Democratic-leaning toss-up.", "pviNew": -2, "pviOld": -3 }
   ],
   "0646": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -10, "pviOld": -15 },
-    { "year": 2022, "description": "CA-46 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -15, "pviOld": -16 }
+    { "year": 2026, "description": "CA-46 grew by a third in northern Orange County, taking territory from CA-45 and CA-40. It stays solidly Democratic.", "pviNew": -10, "pviOld": -15 },
+    { "year": 2022, "description": "CA-46 was reshaped, trading territory with CA-39 and CA-47 within the same counties. It was safely Democratic.", "pviNew": -15, "pviOld": -16 }
   ],
   "0647": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -6, "pviOld": -3 },
-    { "year": 2022, "description": "CA-47 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -3, "pviOld": -14 }
+    { "year": 2026, "description": "CA-47 gave more than half its old area to CA-42 and rebuilt itself from the old CA-40 and CA-49 along the Orange County coast. It remains Democratic-leaning.", "pviNew": -6, "pviOld": -3 },
+    { "year": 2022, "description": "CA-47 was rebuilt almost from scratch, taking 25% of Orange County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was a Democratic-leaning toss-up.", "pviNew": -3, "pviOld": -14 }
   ],
   "0648": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -2, "pviOld": 9 },
-    { "year": 2022, "description": "CA-48 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 9, "pviOld": 1 }
+    { "year": 2026, "description": "CA-48 moved north into Riverside County, its share rising from 5% to 13% with territory from the old CA-41, while its share of San Diego County fell from 77% to 47%. The Republican-held seat became a narrow toss-up.", "pviNew": -2, "pviOld": 9 },
+    { "year": 2022, "description": "CA-48 was rebuilt almost from scratch, taking 77% of San Diego County and dropping out of Orange County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Republican.", "pviNew": 9, "pviOld": 1 }
   ],
   "0649": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -7, "pviOld": -3 },
-    { "year": 2022, "description": "CA-49 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -3, "pviOld": -4 }
+    { "year": 2026, "description": "CA-49 expanded along the northern San Diego County coast with territory from CA-50 and CA-48. It remains Democratic-leaning.", "pviNew": -7, "pviOld": -3 },
+    { "year": 2022, "description": "CA-49 was reshaped, trading territory with CA-48, CA-50 and CA-45 within the same counties. It was a Democratic-leaning toss-up.", "pviNew": -3, "pviOld": -4 }
   ],
   "0650": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -10, "pviOld": -14 },
-    { "year": 2022, "description": "CA-50 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -14, "pviOld": 8 }
+    { "year": 2026, "description": "CA-50 took more than half its new area from CA-48 and CA-51, raising its share of San Diego County from 6% to 10%, and gave up a comparable amount to CA-49 and CA-48. It stays solidly Democratic.", "pviNew": -10, "pviOld": -14 },
+    { "year": 2022, "description": "CA-50 was rebuilt almost from scratch, cutting its share of San Diego County from 65% to 6%. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Democratic.", "pviNew": -14, "pviOld": 8 }
   ],
   "0651": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -10, "pviOld": -12 },
-    { "year": 2022, "description": "CA-51 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -12, "pviOld": -20 }
+    { "year": 2026, "description": "CA-51 nearly tripled in area, taking 86% of its territory from CA-48 and raising its share of San Diego County from 5% to 14%, while most of its old area went to CA-50. It remains solidly Democratic.", "pviNew": -10, "pviOld": -12 },
+    { "year": 2022, "description": "CA-51 was rebuilt almost from scratch, giving up Imperial County and dropping out of San Diego County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Democratic.", "pviNew": -12, "pviOld": -20 }
   ],
   "0652": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -11, "pviOld": -18 },
-    { "year": 2022, "description": "CA-52 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -18, "pviOld": -12 }
-  ],
-  "0653": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025." }
+    { "year": 2026, "description": "CA-52 grew fivefold in area, taking 81% of its new territory from CA-48 and raising its share of San Diego County from 3% to 16%. It remains solidly Democratic.", "pviNew": -11, "pviOld": -18 },
+    { "year": 2022, "description": "CA-52 was rebuilt almost from scratch, trading territory with CA-51 and CA-53 within the same counties. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -18, "pviOld": -12 }
   ],
   "0801": [
-    { "year": 2022, "description": "CO-1 was redrawn for 2022 as Colorado added an eighth district, with boundaries adjusted to make room for the new Front Range seat while keeping much of this district's prior regional core.", "pviNew": -29, "pviOld": -24 }
+    { "year": 2022, "description": "CO-1 was reshaped, trading territory with CO-6 and CO-7 within the same counties. It was safely Democratic.", "pviNew": -29, "pviOld": -24 }
   ],
   "0802": [
-    { "year": 2022, "description": "CO-2 was redrawn for 2022 as Colorado added an eighth district, with boundaries adjusted to make room for the new Front Range seat while keeping much of this district's prior regional core.", "pviNew": -17, "pviOld": -12 }
+    { "year": 2022, "description": "CO-2 kept most of its previous shape, adding Routt and Jackson counties, raising its share of Eagle County from 31% to 74% and dropping out of Jefferson County. It was safely Democratic.", "pviNew": -17, "pviOld": -12 }
   ],
   "0803": [
-    { "year": 2022, "description": "CO-3 was redrawn for 2022 as Colorado added an eighth district, with boundaries adjusted to make room for the new Front Range seat while keeping much of this district's prior regional core.", "pviNew": 7, "pviOld": 6 }
+    { "year": 2022, "description": "CO-3 kept most of its previous shape, adding Las Animas and Otero counties, giving up Routt, Jackson, Custer and Lake counties and cutting its share of Eagle County from 69% to 26%. It leaned Republican.", "pviNew": 7, "pviOld": 6 }
   ],
   "0804": [
-    { "year": 2022, "description": "CO-4 was redrawn for 2022 as Colorado added an eighth district, with boundaries adjusted to make room for the new Front Range seat while keeping much of this district's prior regional core.", "pviNew": 13, "pviOld": 12 }
+    { "year": 2022, "description": "CO-4 was reshaped, taking 31% of El Paso County, giving up Las Animas and Otero counties and cutting its share of Weld County from 100% to 80%. It was solidly Republican.", "pviNew": 13, "pviOld": 12 }
   ],
   "0805": [
-    { "year": 2022, "description": "CO-5 was redrawn for 2022 as Colorado added an eighth district, with boundaries adjusted to make room for the new Front Range seat while keeping much of this district's prior regional core.", "pviNew": 9, "pviOld": 12 }
+    { "year": 2022, "description": "CO-5 was rebuilt almost from scratch, giving up Teller, Fremont and Chaffee counties, dropping out of Park County and cutting its share of El Paso County from 100% to 69%. Colorado gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Republican.", "pviNew": 9, "pviOld": 12 }
   ],
   "0806": [
-    { "year": 2022, "description": "CO-6 was redrawn for 2022 as Colorado added an eighth district, with boundaries adjusted to make room for the new Front Range seat while keeping much of this district's prior regional core.", "pviNew": -9, "pviOld": -6 }
+    { "year": 2022, "description": "CO-6 was substantially redrawn, cutting its share of Adams County from 23% to 8%. Colorado gained a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Democratic.", "pviNew": -9, "pviOld": -6 }
   ],
   "0807": [
-    { "year": 2022, "description": "CO-7 was redrawn for 2022 as Colorado added an eighth district, with boundaries adjusted to make room for the new Front Range seat while keeping much of this district's prior regional core.", "pviNew": -4, "pviOld": -7 }
+    { "year": 2022, "description": "CO-7 was substantially redrawn, adding Teller, Custer, Park, Fremont, Chaffee and Lake counties, raising its share of Jefferson County from 24% to 92% and raising its share of Broomfield County from 12% to 52%. Colorado gained a seat in the 2020 reapportionment, which shifted lines across the state. It leaned Democratic.", "pviNew": -4, "pviOld": -7 }
   ],
   "0808": [
-    { "year": 2022, "description": "CO-8 was a brand-new district for 2022, created after Colorado gained a seat. It was drawn in the fast-growing north Denver suburbs and exurbs, making it one of the state's most competitive seats.", "pviNew": 0 }
+    { "year": 2022, "description": "CO-8 was a new seat, created when Colorado gained a district in the 2020 reapportionment, drawn from parts of Adams, Broomfield and Weld counties. It was evenly split.", "pviNew": 0 }
   ],
   "0901": [
-    { "year": 2022, "description": "CT-1 was redrawn for 2022. Connecticut's 2022 bipartisan map made relatively modest changes and kept the state's five-district structure broadly recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -12, "pviOld": -11 }
+    { "year": 2022, "description": "CT-1 kept most of its previous shape, trading territory with CT-3, CT-5 and CT-2 within the same counties. It was solidly Democratic.", "pviNew": -12, "pviOld": -11 }
   ],
   "0902": [
-    { "year": 2022, "description": "CT-2 was redrawn for 2022. Connecticut's 2022 bipartisan map made relatively modest changes and kept the state's five-district structure broadly recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -3, "pviOld": -2 }
+    { "year": 2022, "description": "CT-2 kept most of its previous shape, trading territory with CT-1 within the same counties. It was a Democratic-leaning toss-up.", "pviNew": -3, "pviOld": -2 }
   ],
   "0903": [
-    { "year": 2022, "description": "CT-3 was redrawn for 2022. Connecticut's 2022 bipartisan map made relatively modest changes and kept the state's five-district structure broadly recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -7, "pviOld": -8 }
+    { "year": 2022, "description": "CT-3 kept most of its previous shape, trading territory with CT-4 within the same counties. It leaned Democratic.", "pviNew": -7, "pviOld": -8 }
   ],
   "0904": [
-    { "year": 2022, "description": "CT-4 was redrawn for 2022. Connecticut's 2022 bipartisan map made relatively modest changes and kept the state's five-district structure broadly recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -13, "pviOld": -12 }
+    { "year": 2022, "description": "CT-4 kept most of its previous shape, trading territory with CT-3 and CT-5 within the same counties. It was solidly Democratic.", "pviNew": -13, "pviOld": -12 }
   ],
   "0905": [
-    { "year": 2022, "description": "CT-5 was redrawn for 2022. Connecticut's 2022 bipartisan map made relatively modest changes and kept the state's five-district structure broadly recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -3, "pviOld": -2 }
+    { "year": 2022, "description": "CT-5 kept most of its previous shape, trading territory with CT-1, CT-3 and CT-4 within the same counties. It was a Democratic-leaning toss-up.", "pviNew": -3, "pviOld": -2 }
   ]
 };
 

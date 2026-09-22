@@ -23,6 +23,24 @@ export interface MethodologyChange {
 
 export const METHODOLOGY_CHANGELOG: MethodologyChange[] = [
   {
+    date: "2026-09-22", models: ["state-tpl"], kind: "change",
+    title: "Imputed House rows keep their full turnout share",
+    detail: "With the state's House year taken as a turnout-weighted sum of its districts, an uncontested or same-party district entering at half weight dropped half of that district's voters out of the state's total. Imputed House rows now enter at IMPUTED_HOUSE_ROW_WEIGHT = 1 × their source presidential year's turnout share; their value is the district's own presidential lean, which is a better estimate of that share than a missing race. Imputed statewide rows stay at IMPUTED_RACE_WEIGHT = 0.5.",
+    effect: "Calibration objective 4.656 → 4.681 (0.75 would be 4.670); accepted so the districts still sum to the state.",
+  },
+  {
+    date: "2026-09-21", models: ["state-tpl"], kind: "change",
+    title: "House rows turnout-weighted, with one Huber check per House year instead of one per district",
+    detail: "A state's House rows no longer carry the per-row Huber factor against the state's fitted lean. A packed D+60 district is a district, not an outlier, and the factor handed every packed-map state's House aggregate to the party with more middling seats (Georgia 2024: House aggregate R+10.1 against a presidential NM of R+0.3; 76% of all House rows were downweighted). House rows now enter their year's House mean weighted by total votes cast — the districts sum to the state's House vote — with imputed rows weighted by the turnout of the presidential result they borrow, not their own depressed turnout. The Huber check is applied once to the whole House year: its base type weight is multiplied by min(1, HUBER_C / |House NM − fitted lean|) before redistribution and coverage. Statewide rows, the environment fit, District TPL and County TPL are unchanged. Equal-weighting the districts was 0.08 worse on the standard calibration rounds than turnout weighting; two-party votes and total votes were within 0.01.",
+    effect: "2024 holdout: P 2.49 → 2.40, S 4.88 → 4.94, H 2.94 → 3.08 (H is scored against an equal-weighted target). Calibration objective 4.645 → 4.656; on added 2018/2020 Democratic-swing rounds the cost is 0.04. Live: mean |Δ TPL| 0.60, 13 states move ≥ 1 pt, nearly all toward D (LA −2.2, MS −2.1, GA −1.9, AL −1.5, MO −1.5); GA 2024 House NM R+10.1 → R+2.2. 19 of 250 House years are Huber-downweighted.",
+  },
+  {
+    date: "2026-09-21", models: ["state-tpl"], kind: "tested",
+    title: "No Huber on House rows at all, and district-anchored Huber",
+    detail: "Dropping the House Huber factor outright (equal-weighted plain mean, no year-level check) was tested first, as was anchoring each House row's Huber residual on its own district's presidential lean rather than the state's. Both remove the packed-district skew but give up the shrinkage the year-level check keeps.",
+    effect: "Calibration objective 4.645 → 4.751 (no Huber) and 4.784 (district-anchored), worse on all five targets; on the 2018/2020 Democratic-swing rounds no-Huber cost only 0.025, so part of the standard-round loss is the two Republican-swing holdout years flattering an R-leaning House aggregate. Not adopted; the House-year Huber above ties the old objective within 0.011.",
+  },
+  {
     date: "2026-09-21", models: ["forecast"], kind: "change",
     title: "Current-cycle pollster house effects removed from every race poll",
     detail: "Each poll is read net of its pollster's lean against the other pollsters in the races they share this cycle (shrunk by 2 pseudo-polls, capped at ±5, 200-day window). Pollster accuracy grades are displayed but are not a weight: past accuracy does not persist into the next cycle, house effects do.",
