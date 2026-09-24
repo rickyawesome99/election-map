@@ -320,8 +320,8 @@ export const SOURCE_GROUPS: SourceGroup[] = [
     sources: [
       {
         name: "Wikipedia election-article polling tables", publisher: "Wikimedia Foundation", url: "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections", kind: "wiki",
-        uses: [{ data: "2026 general-election polls for Senate, Governor and House races (a table counts only when its header names both nominees)", where: "data-entry/race_polls.csv → data/racePolls.ts" }],
-        note: "Needs periodic re-scraping. Alaska Senate rows are entered by hand from pollster releases (ranked-choice final round only) and must not be overwritten.",
+        uses: [{ data: "2026 general-election polls for Senate, Governor and House races (a table counts only when its header names both nominees), in the field on or after 1 January 2026", where: "data-entry/race_polls.csv → data/racePolls.ts" }],
+        note: "Needs periodic re-scraping. The CSV keeps every poll ever scraped; the build emits only those fielded in 2026. Alaska Senate rows are entered by hand from pollster releases (ranked-choice final round only) and must not be overwritten.",
       },
       {
         name: "FiveThirtyEight polls archive", publisher: "via the Internet Archive", url: "https://web.archive.org/web/2025/https://projects.fivethirtyeight.com/polls/", kind: "project",

@@ -17,7 +17,7 @@ const COLUMNS: { key: SortKey; label: string; right?: true; title: string }[] = 
   { key: "bias", label: "Bias", right: true, title: "Average signed miss against the result (shrunk): D+2 means the pollster overstated Democrats by 2" },
   { key: "house", label: "House effect", right: true, title: "Average lean against the OTHER pollsters in the same races (shrunk)" },
   { key: "lastYear", label: "Last graded", right: true, title: "Most recent election with a graded poll" },
-  { key: "polls2026", label: "2026 polls", right: true, title: "Race and generic-ballot polls on file this cycle" },
+  { key: "polls2026", label: "2026 polls", right: true, title: "Race and generic-ballot polls fielded on or after 1 January 2026" },
 ];
 
 const polls2026 = (r: PollsterRating) => r.racePolls2026 + r.genericPolls2026;

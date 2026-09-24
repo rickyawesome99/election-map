@@ -23,6 +23,11 @@ export default function AnalysisPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-14">
           <section className="pt-6 sm:pt-7">
             <div className="pb-3 text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--app-text-muted)", borderBottom: "2px solid var(--app-text-primary)" }}>Latest Analysis</div>
+            <a href="/analysis/forecasts" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-2 sm:gap-8 items-start py-6" style={{ borderBottom: "1px solid var(--app-border)" }}>
+              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Forecasts</div>
+              <div><h3 className="text-xl sm:text-2xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Forecast Comparison</h3><p className="mt-1.5 text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>How our House, Senate and governor forecasts line up against the major published models and race ratings: chamber toplines, how often each agrees with ours, and every race with every call.</p></div>
+              <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
+            </a>
             <a href="/analysis/pollsters" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-2 sm:gap-8 items-start py-6" style={{ borderBottom: "1px solid var(--app-border)" }}>
               <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Polling</div>
               <div><h3 className="text-xl sm:text-2xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Pollster Ratings</h3><p className="mt-1.5 text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>How accurate each pollster has been since 2008, by cycle and by region, which way each one leans this cycle, and what a good record is worth.</p></div>

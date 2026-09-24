@@ -32,6 +32,7 @@ OUT_TS = os.path.join(REPO, "data", "pollsterRatings.ts")
 OUT_LOOKUP = os.path.join(REPO, "data", "pollsterLookup.ts")
 OUT_VINTAGES = os.path.join(DE, "pollster_ratings_vintages.csv")
 
+CYCLE_START = "2026-01-01"  # polls in the field before this are archive, not 2026 polling (build-race-polls.js)
 GRADE_WINDOW = 21      # days before the election
 RECENCY_DECAY = 0.84   # per year (halves every 4 years)
 FIELD_K = 2.0
@@ -203,10 +204,14 @@ def aliases():
     return out, label
 
 def live_pollsters(alias):
-    """This cycle's pollsters: id-or-name key → {name, race polls, generic-ballot polls}."""
+    """This cycle's pollsters: id-or-name key → {name, race polls, generic-ballot polls}.
+
+    Counts only polls in the field on or after CYCLE_START, the same window
+    data-entry/build-race-polls.js emits (the generic-ballot file is already 2026-only)."""
     live = {}
     for path, col, field in ((os.path.join(DE, "race_polls.csv"), "pollster", "racePolls"), (os.path.join(DE, "generic_ballot_polls.csv"), "Pollster", "genericPolls")):
         for r in csv.DictReader(open(path)):
+            if (r.get("start") or CYCLE_START) < CYCLE_START: continue
             key = alias.get(norm_name(r[col])) or "name:" + norm_name(r[col])
             e = live.setdefault(key, {"name": r[col].replace("**", "").strip(), "racePolls": 0, "genericPolls": 0}); e[field] += 1
     return live

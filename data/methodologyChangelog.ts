@@ -23,6 +23,12 @@ export interface MethodologyChange {
 
 export const METHODOLOGY_CHANGELOG: MethodologyChange[] = [
   {
+    date: "2026-09-23", models: ["forecast"], kind: "change",
+    title: "Race polls are kept only from 1 January 2026",
+    detail: "A poll counts toward a race's average, and appears in its table, only if it went into the field on or after 2026-01-01; data-entry/race_polls.csv keeps the earlier polls as archive and data-entry/build-race-polls.js no longer emits them (118 of 772 rows). Recency weighting already left an off-year poll effectively weightless, but it could still be a pollster's latest survey — and so the row that firm contributed to the table — or give a race with no 2026 polling a polling average of its own. The generic-ballot and Trump-approval files are already 2026-only, and the historical archive the poll weight is fitted on (race_polls_history.csv) is untouched. The 2026 poll counts on the Pollster Ratings page use the same window.",
+    effect: "654 polls across 139 races remain. Illinois Governor, NY-01 and VA-01 had only pre-2026 polls and are now Model-only; 32 other races show fewer pollsters. Nothing else moves: largest margin change 0.0003 (California Governor), no rating changes, chamber simulations identical.",
+  },
+  {
     date: "2026-09-22", models: ["state-tpl"], kind: "change",
     title: "Imputed House rows keep their full turnout share",
     detail: "With the state's House year taken as a turnout-weighted sum of its districts, an uncontested or same-party district entering at half weight dropped half of that district's voters out of the state's total. Imputed House rows now enter at IMPUTED_HOUSE_ROW_WEIGHT = 1 × their source presidential year's turnout share; their value is the district's own presidential lean, which is a better estimate of that share than a missing race. Imputed statewide rows stay at IMPUTED_RACE_WEIGHT = 0.5.",
