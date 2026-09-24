@@ -1960,13 +1960,14 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
           <div>
             <h2 className="text-lg font-bold" style={{ color: "var(--app-text-primary)" }}>Wins Above Replacement</h2>
             <p className="text-xs mt-1 max-w-3xl leading-5" style={{ color: "var(--app-text-muted)" }}>
-              How much better (or worse) each candidate ran than a generic nominee of their party would have against the same opponent.
+              How much better (or worse) each candidate ran than a replacement-level nominee of their party would have against the same opponent.
+              A replacement is a generic non-incumbent, so an incumbent&apos;s WAR includes what their incumbency was worth.
               Expected is generic vs generic (lean + β* × E(year) + incumbency + structural money); the residual (actual − Expected) is the
               net of the two candidates&apos; individual effects. Those effects are separated by ridge regression across every race a candidate has run
               (2016–2025, pooled across offices), estimated as of the race&apos;s year: the race itself carries full weight and the
               candidate&apos;s other races fade by 0.8 per year of distance (a race 4 years away counts 0.41). vs Opp is the expected margin
-              once the specific opponent&apos;s Effect is taken out, and WAR = Actual − vs Opp: the candidate&apos;s own Effect plus whatever the
-              race left unexplained. Senate, Governor
+              once the specific opponent&apos;s Effect is taken out and, for an incumbent, their own incumbency with it; WAR = Actual − vs Opp: the
+              candidate&apos;s own Effect, plus whatever the race left unexplained, plus their Incumb. Senate, Governor
               and President races score against the state&apos;s Huber-fitted lean; House races against their district&apos;s TPL; unopposed-class
               races (Osborn, McMullin) against their imputed presidential baseline.
             </p>
@@ -2014,7 +2015,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
             <table className="w-full min-w-[920px] text-xs">
               <thead>
                 <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-                  {["#", "Candidate", "Party", "Race", "Year", "Actual", "Expected", "vs Opp", "Residual", "Effect", "WAR"].map((h) => (
+                  {["#", "Candidate", "Party", "Race", "Year", "Actual", "Expected", "vs Opp", "Residual", "Effect", "Incumb.", "WAR"].map((h) => (
                     <th key={h} className="px-2 py-2 text-left text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap" style={{ color: h === "WAR" ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>{h}</th>
                   ))}
                 </tr>
@@ -2031,13 +2032,16 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                       <td className="px-2 py-2 tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.year}</td>
                       <td className="px-2 py-2 tabular-nums font-semibold" style={{ color: marginColor(r.actual) }}>{fmtMargin(r.actual)}</td>
                       <td className="px-2 py-2 tabular-nums" style={{ color: marginColor(r.expected) }} title={`Structural money gap ${r.structuralGapPct >= 0 ? "R" : "D"}+${Math.abs(r.structuralGapPct).toFixed(0)}% → ${r.ffStructuralPts >= 0 ? "R" : "D"}+${Math.abs(r.ffStructuralPts).toFixed(2)} pts in Expected · actual gap ${r.moneyGapPct == null ? "unknown" : `${r.moneyGapPct >= 0 ? "R" : "D"}+${Math.abs(r.moneyGapPct).toFixed(0)}%`}`}>{fmtMargin(r.expected)}</td>
-                      <td className="px-2 py-2 tabular-nums" style={{ color: marginColor(r.expectedVsOpponent) }} title={`Expected for a generic ${r.party === "R" ? "Republican" : r.party === "D" ? "Democrat" : "nominee"} against this opponent: Expected ${fmtMargin(r.expected)} adjusted for the opponent's Effect of ${r.opponentEffect >= 0 ? "+" : "−"}${Math.abs(r.opponentEffect).toFixed(1)}`}>{fmtMargin(r.expectedVsOpponent)}</td>
+                      <td className="px-2 py-2 tabular-nums" style={{ color: marginColor(r.expectedVsOpponent) }} title={`Expected for a generic non-incumbent ${r.party === "R" ? "Republican" : r.party === "D" ? "Democrat" : "nominee"} against this opponent: Expected ${fmtMargin(r.expected)} adjusted for the opponent's Effect of ${r.opponentEffect >= 0 ? "+" : "−"}${Math.abs(r.opponentEffect).toFixed(1)}${r.replacementPts !== 0 ? ` and with the candidate's own incumbency (${r.replacementPts >= 0 ? "+" : "−"}${Math.abs(r.replacementPts).toFixed(1)}) taken out` : ""}`}>{fmtMargin(r.expectedVsOpponent)}</td>
                       <td className="px-2 py-2 tabular-nums" style={{ color: "var(--app-text-muted)" }}>
                         {r.residual >= 0 ? "+" : "−"}{Math.abs(r.residual).toFixed(1)}
                       </td>
                       <td className="px-2 py-2 tabular-nums whitespace-nowrap" style={{ color: "var(--app-text-muted)" }} title={`Effect as of ${r.year}, estimated from ${r.effectN} race${r.effectN === 1 ? "" : "s"} (${r.effectW.toFixed(2)} effective after recency weighting)`}>
                         {r.effect >= 0 ? "+" : "−"}{Math.abs(r.effect).toFixed(1)}
                         <span className="ml-1 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>n={r.effectN}</span>
+                      </td>
+                      <td className="px-2 py-2 tabular-nums" style={{ color: r.replacementPts !== 0 ? "var(--app-text-muted)" : "var(--app-text-very-muted)" }} title={r.replacementPts !== 0 ? "What this incumbent's incumbency is worth against a non-incumbent replacement: the office's incumbency term plus the incumbent share of the structural money term" : "Not the incumbent — a replacement would be a non-incumbent too"}>
+                        {r.replacementPts !== 0 ? `${r.replacementPts >= 0 ? "+" : "−"}${Math.abs(r.replacementPts).toFixed(1)}` : "—"}
                       </td>
                       <td className="px-2 py-2 tabular-nums font-bold" style={{ color: r.war > 0 ? APPROVE_COLOR : r.war < 0 ? DISAPPROVE_COLOR : "var(--app-text-primary)" }}>
                         {r.war >= 0 ? "+" : "−"}{Math.abs(r.war).toFixed(1)}
@@ -2046,15 +2050,16 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                   );
                 })}
                 {filteredWarRows.length === 0 && (
-                  <tr><td colSpan={11} className="px-4 py-6 text-center" style={{ color: "var(--app-text-very-muted)" }}>No performances match the filters.</td></tr>
+                  <tr><td colSpan={12} className="px-4 py-6 text-center" style={{ color: "var(--app-text-very-muted)" }}>No performances match the filters.</td></tr>
                 )}
               </tbody>
             </table>
           </div>
 
           <div className="flex flex-wrap gap-x-5 gap-y-0.5 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>
-            <span>Residual, Effect and WAR are signed toward the candidate: +5 = 5 pts better than a generic nominee of their party. Actual, Expected and vs Opp are R-positive margins.</span>
-            <span>Expected is generic vs generic; vs Opp is generic vs this opponent (Expected with the opponent&apos;s Effect removed). WAR = Actual − vs Opp, so a race&apos;s unexplained leftover is credited in full to both sides and the two WARs do not sum to the residual.</span>
+            <span>Residual, Effect, Incumb. and WAR are signed toward the candidate: +5 = 5 pts better than a replacement-level nominee of their party. Actual, Expected and vs Opp are R-positive margins.</span>
+            <span>Expected is generic vs generic (same incumbency status); vs Opp is a generic non-incumbent vs this opponent (Expected with the opponent&apos;s Effect removed and, for an incumbent, their own incumbency removed). WAR = Actual − vs Opp = Effect + leftover + Incumb., so a race&apos;s unexplained leftover is credited in full to both sides and the two WARs do not sum to the residual.</span>
+            <span>Incumb. is what an incumbent&apos;s incumbency is worth against a non-incumbent replacement: the office&apos;s fitted incumbency term (Senate, Governor) or fixed 3 (House) plus the incumbent share of the structural money term. Challengers and open seats show —. Appointed incumbents carry no incumbency term, only the money share.</span>
             <span>Residual is the race&apos;s net result, so the two candidates&apos; residuals are mirror images; Effect and WAR are not.</span>
             <span>A one-race candidate (n=1) facing another one-race candidate: the ridge splits the residual evenly, so each side gets ⅔ of it as WAR (⅓ Effect + ⅓ leftover). Track records before 2016 are not in the window.</span>
             <span>Effect is as of the race&apos;s year: the same candidate can carry a different Effect in each race, because their other races are weighted by recency (0.8 per year of distance).</span>

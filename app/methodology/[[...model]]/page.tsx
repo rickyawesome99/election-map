@@ -5,6 +5,7 @@ import { METHODOLOGY_CHANGELOG } from "@/data/methodologyChangelog";
 import ForecastMethodology from "@/components/methodology/ForecastMethodology";
 import { StateTplMethodology, DistrictTplMethodology, CountyTplMethodology } from "@/components/methodology/TplMethodology";
 import WarMethodology from "@/components/methodology/WarMethodology";
+import PrecinctMethodology from "@/components/methodology/PrecinctMethodology";
 import ChangeLog, { RevisionHistory } from "@/components/methodology/ChangeLog";
 import SourcesMethodology from "@/components/methodology/SourcesMethodology";
 import MethodologyToc from "@/components/methodology/MethodologyToc";
@@ -18,6 +19,7 @@ const TABS = [
   { key: "district-tpl", label: "District TPL", blurb: "A district's lean on the 2026 lines" },
   { key: "county-tpl", label: "County TPL", blurb: "The state pipeline in one county" },
   { key: "war", label: "WAR", blurb: "Candidate WAR, Expected Result, Vs. Opponent" },
+  { key: "precinct-district", label: "Precinct districts", blurb: "Precinct pages: eras, crosswalk, 2026 outlook" },
   { key: "changelog", label: "Change Log", blurb: "What changed, and when" },
   { key: "sources", label: "Sources", blurb: "Every external source behind the data" },
 ] as const;
@@ -73,6 +75,7 @@ export default async function MethodologyPage({ params }: { params: Promise<{ mo
           {active === "district-tpl" && <><DistrictTplMethodology /><RevisionHistory model="district-tpl" /></>}
           {active === "county-tpl" && <><CountyTplMethodology /><RevisionHistory model="county-tpl" /></>}
           {active === "war" && <><WarMethodology /><RevisionHistory model="war" /></>}
+          {active === "precinct-district" && <><PrecinctMethodology /><RevisionHistory model="precinct-district" /></>}
           {active === "changelog" && <ChangeLog />}
           {active === "sources" && <SourcesMethodology />}
         </main>

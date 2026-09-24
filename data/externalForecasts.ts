@@ -26,6 +26,8 @@ export interface ExternalChamberTotal {
 export interface ExternalForecaster {
   id: string;
   name: string;
+  /** Shorter label for the race-by-race column headings, where the full name will not fit. */
+  shortName?: string;
   kind: "model" | "ratings";
   description: string;
   asOf: string; // YYYY-MM-DD of the snapshot read
@@ -48,7 +50,7 @@ export const externalForecasts: ExternalForecaster[] = [
     description: "Decision Desk HQ's statistical forecast, published with The Hill: a probability for every House, Senate and governor race from polls, fundamentals and its own ratings, simulated into chamber odds.",
     asOf: "2026-09-23",
     urls: {"house": "https://votes.decisiondeskhq.com/forecast/2026/house", "senate": "https://votes.decisiondeskhq.com/forecast/2026/senate", "governor": "https://votes.decisiondeskhq.com/forecast/2026/governor", "home": "https://votes.decisiondeskhq.com/forecast/2026"},
-    totals: {"house": {"pDemControl": 0.72, "demSeats": 232, "repSeats": 203, "range80": [202, 266]}, "senate": {"pDemControl": 0.55, "demSeats": 51, "repSeats": 49, "range80": [46, 56]}, "governor": {"demSeats": 25.7, "repSeats": 24.3}},
+    totals: {"house": {"pDemControl": 0.72, "demSeats": 232, "repSeats": 203, "range80": [202, 266]}, "senate": {"pDemControl": 0.55, "demSeats": 51, "repSeats": 49, "range80": [46, 56]}},
     races: {
       senate: {
         "AK": {"rating": "Lean D", "pDem": 0.62},
@@ -563,7 +565,7 @@ export const externalForecasts: ExternalForecaster[] = [
         "WY-01": {"pDem": 0.0, "rating": "Safe R"},
       },
     },
-    notes: "Rating labels are its probability bands; the seat ranges are the 10th–90th percentiles of its published seat distribution. Where an independent stands in for the Democrats (Nebraska's Dan Osborn) the probability shown is the independent's. Its governor total adds the 14 governorships not on the ballot.",
+    notes: "Rating labels are its probability bands. Where an independent stands in for the Democrats (Nebraska's Dan Osborn) the probability shown is the independent's. It publishes no governor total, so that count is taken from its race calls.",
   },
   {
     id: "fiftyplusone",
@@ -1744,7 +1746,7 @@ export const externalForecasts: ExternalForecaster[] = [
     description: "Nate Silver's model at the Silver Bulletin, the successor to his FiveThirtyEight forecasts: polls, fundamentals and a chamber simulation, with race probabilities behind a subscription.",
     asOf: "2026-09-23",
     urls: {"house": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model", "senate": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model", "governor": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model", "home": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model"},
-    totals: {"house": {"pDemControl": 0.87, "demSeats": 233, "repSeats": 202}, "senate": {"pDemControl": 0.65}},
+    totals: {"senate": {"pDemControl": 0.65}, "house": {"pDemControl": 0.87, "demSeats": 233, "repSeats": 202}},
     races: {
       senate: {
         "AK": {"rating": "Toss-up"},
@@ -1942,7 +1944,7 @@ export const externalForecasts: ExternalForecaster[] = [
     description: "VoteHub's midterm forecast: a statistical model of the House, Senate and governor races built on its own polling averages, with a probability for every race.",
     asOf: "2026-09-23",
     urls: {"home": "https://votehub.com/", "house": "https://votehub.com/2026-forecast/house/", "senate": "https://votehub.com/2026-forecast/senate/", "governor": "https://votehub.com/2026-forecast/governor/"},
-    totals: {"house": {"pDemControl": 0.8454, "demSeats": 234.9, "repSeats": 200.1, "range80": [214, 257]}, "senate": {"pDemControl": 0.5887, "demSeats": 51.1, "repSeats": 48.9, "range80": [47, 55]}, "governor": {"demSeats": 26.2, "repSeats": 23.8}},
+    totals: {"house": {"pDemControl": 0.8454, "demSeats": 231, "repSeats": 204}, "senate": {"pDemControl": 0.5887, "demSeats": 52, "repSeats": 48}},
     races: {
       senate: {
         "AK": {"pDem": 0.66, "rating": "Lean D"},
@@ -2457,7 +2459,7 @@ export const externalForecasts: ExternalForecaster[] = [
         "WY-01": {"pDem": 0.0, "rating": "Safe R"},
       },
     },
-    notes: "Numbers are from its public forecast API (the site's default 'Complete' model); the seat ranges are the 10th–90th percentiles of its published seat distribution. Its governor total adds the 14 governorships not on the ballot.",
+    notes: "Numbers are from its public forecast API, the 'Complete' model the site defaults to; the seat counts are its published projection, which runs a few seats below its simulated average. It publishes no governor total, so that count is taken from its race calls.",
   },
   {
     id: "electindex",
@@ -2466,7 +2468,7 @@ export const externalForecasts: ExternalForecaster[] = [
     description: "ElectIndex, a statistical forecast of the 2026 House, Senate and governor races with race probabilities and chamber seat distributions.",
     asOf: "2026-09-23",
     urls: {"home": "https://electindex.com/", "house": "https://electindex.com/forecasts/#house", "senate": "https://electindex.com/forecasts/#senate", "governor": "https://electindex.com/forecasts/#governor"},
-    totals: {"house": {"pDemControl": 0.784, "demSeats": 243.7, "repSeats": 191.3, "range80": [206, 292]}, "senate": {"pDemControl": 0.58, "demSeats": 51.4, "repSeats": 48.6, "range80": [44, 57]}, "governor": {"pDemControl": 0.604, "demSeats": 26.2, "repSeats": 23.8, "range80": [19, 32]}},
+    totals: {"house": {"pDemControl": 0.784, "demSeats": 235, "repSeats": 200}, "senate": {"pDemControl": 0.58, "demSeats": 53, "repSeats": 47}, "governor": {"pDemControl": 0.604, "demSeats": 27, "repSeats": 23}},
     races: {
       senate: {
         "AK": {"pDem": 0.535, "rating": "Toss-up"},
@@ -2981,7 +2983,7 @@ export const externalForecasts: ExternalForecaster[] = [
         "WY-01": {"pDem": 0.0, "rating": "Safe R"},
       },
     },
-    notes: "Seat ranges are the 10th–90th percentiles of its published simulation distribution. Nebraska's Democratic probability is independent Dan Osborn's.",
+    notes: "Seat counts are the projection the site headlines, the seats it favors; its simulated averages run a few seats more Democratic (243.7 in the House). Nebraska's Democratic probability is independent Dan Osborn's.",
   },
   {
     id: "pollsmax",
@@ -5566,6 +5568,7 @@ export const externalForecasts: ExternalForecaster[] = [
   {
     id: "fox",
     name: "Fox News Power Rankings",
+    shortName: "Fox News",
     kind: "ratings",
     description: "Fox News's Power Rankings, the network's own Solid / Likely / Lean / Toss Up race ratings for the House, Senate and governors.",
     asOf: "2026-09-22",
@@ -6089,6 +6092,7 @@ export const externalForecasts: ExternalForecaster[] = [
   {
     id: "rcp",
     name: "RealClearPolitics",
+    shortName: "RCP",
     kind: "ratings",
     description: "RealClearPolitics' race ratings for the Senate and governors, alongside its polling averages.",
     asOf: "2026-09-23",

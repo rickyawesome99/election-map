@@ -10,7 +10,9 @@ import { getRatingColors } from "@/lib/colorScale";
 // call on the shared nine-step scale. Rows can be narrowed to the competitive seats or to the
 // ones where somebody disagrees with us, and sorted by how far apart the calls are.
 
-export interface GridForecaster { id: string; name: string; kind: "model" | "ratings"; url: string; asOf: string }
+// `name` is the column heading (shortened where the full name will not fit); `fullName` is what
+// the hover text and the cell tooltips say.
+export interface GridForecaster { id: string; name: string; fullName: string; kind: "model" | "ratings"; url: string; asOf: string }
 export type GridData = Record<RaceType, { rows: ComparisonRow[]; forecasters: GridForecaster[]; summaries: AgreementSummary[] }>;
 
 type Filter = "competitive" | "disagree" | "all";
@@ -20,12 +22,17 @@ const TOSSUP = { bg: "var(--app-tab-bg)", text: "var(--app-text-primary)" };
 const pct = (p: number) => `${Math.round(p * 100)}%`;
 const fmtMargin = (m: number) => (Math.abs(m) < 0.05 ? "EVEN" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
 
+// Every cell is the same box whatever it holds: the rating on one line and a fixed second line
+// for the probability, kept in place with a non-breaking space where a rater publishes none, so
+// the grid reads as a grid rather than a ragged stack. A star on the rating marks a seat the
+// forecaster leaves off its competitive list, which we read as Safe for the party ahead.
 function Chip({ rating, sub, inferred, title }: { rating: string; sub?: string; inferred?: boolean; title: string }) {
   const c = rating === "Toss-up" ? TOSSUP : getRatingColors(rating);
   return (
-    <div title={title} className="mx-auto w-[4.6rem] rounded px-1 py-0.5 text-center leading-tight" style={{ background: c.bg, color: c.text, opacity: inferred ? 0.45 : 1 }}>
-      <div className="text-[10px] font-bold whitespace-nowrap">{rating}</div>
-      {sub && <div className="text-[9px] tabular-nums" style={{ opacity: 0.85 }}>{sub}</div>}
+    <div title={title} className="mx-auto flex h-8 w-[4.75rem] flex-col items-center justify-center rounded leading-none"
+      style={{ background: c.bg, color: c.text }}>
+      <div className="text-[10px] font-bold whitespace-nowrap">{rating}{inferred && <span aria-hidden="true">*</span>}</div>
+      <div className="mt-0.5 text-[9px] tabular-nums" style={{ opacity: 0.85 }}>{sub || "\u00a0"}</div>
     </div>
   );
 }
@@ -93,13 +100,14 @@ export default function ForecastComparisonGrid({ data, initial = "senate" }: { d
           <thead>
             <tr style={{ background: "var(--app-bg)" }}>
               <th scope="col" className={`${head} text-left`} style={{ ...firstCol, zIndex: 4, color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }}>Race</th>
+              <th scope="col" className={`${head} text-right`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }} title="Our projected margin">Our Margin</th>
               <th scope="col" className={`${head} text-center`} style={{ color: "var(--app-text-primary)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }}>Our model</th>
               {forecasters.map((f) => (
-                <th key={f.id} scope="col" className={`${head} text-center`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }} title={`${f.name} · ${f.kind === "model" ? "model" : "race ratings"} · as of ${f.asOf}`}>
+                <th key={f.id} scope="col" className={`${head} text-center`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }} title={`${f.fullName} · ${f.kind === "model" ? "model" : "race ratings"} · as of ${f.asOf}`}>
                   <a href={f.url} target="_blank" rel="noopener noreferrer" className="hover:underline">{f.name}<span aria-hidden="true"> ↗</span></a>
                 </th>
               ))}
-              <th scope="col" className={`${head} text-right`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }} title="Steps on the nine-step scale between the most Democratic and most Republican call in the row">Spread</th>
+              <th scope="col" className={`${head} text-center`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }} title="Steps on the nine-step scale between the most Democratic and most Republican call in the row">Spread</th>
             </tr>
           </thead>
           <tbody>
@@ -109,29 +117,30 @@ export default function ForecastComparisonGrid({ data, initial = "senate" }: { d
                   <a href={r.href} className="hover:underline">{r.name}</a>
                   {r.contest !== "contested" && <span className="ml-1 text-[9px] font-normal" style={{ color: "var(--app-text-very-muted)" }} title="Uncontested or same-party general election">uncontested</span>}
                 </th>
+                <td className="whitespace-nowrap px-1.5 py-1 text-right text-xs font-semibold tabular-nums" style={{ color: r.ours.margin > 0 ? "var(--party-rep)" : "var(--party-dem)" }} title="Our projected margin">{fmtMargin(r.ours.margin)}</td>
                 <td className="px-1 py-1">
-                  <Chip rating={r.ours.rating} sub={`${pct(r.ours.pDem)} D · ${fmtMargin(r.ours.margin)}`} title={`Our model: ${r.ours.rating}, ${fmtMargin(r.ours.margin)}, Democrats win ${pct(r.ours.pDem)}`} />
+                  <Chip rating={r.ours.rating} sub={`${pct(r.ours.pDem)} D`} title={`Our model: ${r.ours.rating}, ${fmtMargin(r.ours.margin)}, Democrats win ${pct(r.ours.pDem)}`} />
                 </td>
                 {forecasters.map((f) => {
                   const c = r.calls[f.id];
-                  if (!c) return <td key={f.id} className="px-1 py-1 text-center text-xs" style={{ color: "var(--app-text-very-muted)" }} title={`${f.name}: not rated`}>—</td>;
+                  if (!c) return <td key={f.id} className="px-1 py-1 text-center text-xs" style={{ color: "var(--app-text-very-muted)" }} title={`${f.fullName}: not rated`}>&mdash;</td>;
                   const d = r.ours.ordinal - c.ordinal;
                   const rel = d === 0 ? "same as ours" : `we are ${Math.abs(d)} step${Math.abs(d) === 1 ? "" : "s"} more ${d > 0 ? "Republican" : "Democratic"}`;
                   return (
                     <td key={f.id} className="px-1 py-1">
                       <Chip rating={c.rating} sub={c.pDem != null ? `${pct(c.pDem)} D` : undefined} inferred={c.inferred}
-                        title={`${f.name}: ${c.rating}${c.pDem != null ? `, Democrats win ${pct(c.pDem)}` : ""}${c.inferred ? " (not on their competitive list, so Safe)" : ""} · ${rel}`} />
+                        title={`${f.fullName}: ${c.rating}${c.pDem != null ? `, Democrats win ${pct(c.pDem)}` : ""}${c.inferred ? " (not on their competitive list, so Safe)" : ""} · ${rel}`} />
                     </td>
                   );
                 })}
-                <td className="px-1.5 py-1 text-right text-xs tabular-nums" style={{ color: r.spread >= 3 ? "var(--app-text-primary)" : "var(--app-text-very-muted)", fontWeight: r.spread >= 3 ? 700 : 400 }}>{r.spread}</td>
+                <td className="px-1.5 py-1 text-center text-xs tabular-nums" style={{ color: r.spread >= 3 ? "var(--app-text-primary)" : "var(--app-text-very-muted)", fontWeight: r.spread >= 3 ? 700 : 400 }}>{r.spread}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
       <div className="flex flex-wrap items-center justify-between gap-2 pt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-        <span>Showing {Math.min(limit, shown.length)} of {shown.length} races. Faded cells are seats a forecaster leaves off its competitive list, so Safe for the party ahead.</span>
+        <span>Showing {Math.min(limit, shown.length)} of {shown.length} races. A star marks a seat a forecaster leaves off its competitive list, counted as Safe for the party ahead.</span>
         {shown.length > limit && <button onClick={() => setLimit(shown.length)} className="rounded px-2.5 py-1 text-xs font-semibold" style={tab(false)}>Show all {shown.length}</button>}
       </div>
     </div>

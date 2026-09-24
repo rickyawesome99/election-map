@@ -72,3 +72,6 @@ data-entry/tiger-state-leg-historical/
 # FiveThirtyEight poll archives (raw_polls.csv + the Wayback *_polls_historical.csv files, ~30 MB;
 # re-downloaded by scripts/build-pollster-graded-polls.py / build-race-polls-history.py)
 data-entry/fivethirtyeight/
+
+# Census block cache for scripts/build-precinct-district.py
+data-entry/precinct-districts/.cache/

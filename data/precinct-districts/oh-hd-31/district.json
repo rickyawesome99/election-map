@@ -1,0 +1,241 @@
+{
+ "slug": "oh-hd-31",
+ "state": "OH",
+ "stateName": "Ohio",
+ "chamber": "house",
+ "number": "31",
+ "name": "Ohio House District 31",
+ "shortName": "OH HD-31",
+ "county": "Summit County",
+ "blurb": "Suburban Summit County west and north of Akron: Barberton, Norton, Copley and Bath, part of Cuyahoga Falls, and the Richfield, Boston and Peninsula communities along the Cuyahoga Valley.",
+ "stateLegDistrictId": "oh-house-31",
+ "subdivisions": [
+  {
+   "id": "barberton",
+   "name": "Barberton",
+   "kind": "city"
+  },
+  {
+   "id": "bath",
+   "name": "Bath Township",
+   "kind": "township"
+  },
+  {
+   "id": "boston_heights",
+   "name": "Boston Heights",
+   "kind": "village"
+  },
+  {
+   "id": "boston_twp",
+   "name": "Boston Township",
+   "kind": "township"
+  },
+  {
+   "id": "copley",
+   "name": "Copley Township",
+   "kind": "township"
+  },
+  {
+   "id": "cuyahoga_falls",
+   "name": "Cuyahoga Falls",
+   "kind": "city"
+  },
+  {
+   "id": "norton",
+   "name": "Norton",
+   "kind": "city"
+  },
+  {
+   "id": "peninsula",
+   "name": "Peninsula",
+   "kind": "village"
+  },
+  {
+   "id": "richfield_township",
+   "name": "Richfield Township",
+   "kind": "township"
+  },
+  {
+   "id": "richfield_village",
+   "name": "Richfield Village",
+   "kind": "village"
+  }
+ ],
+ "offices": {
+  "pres": {
+   "label": "President",
+   "short": "Pres",
+   "level": "national"
+  },
+  "gov": {
+   "label": "Governor",
+   "short": "Gov",
+   "level": "state"
+  },
+  "ussen": {
+   "label": "U.S. Senate",
+   "short": "Senate",
+   "level": "state"
+  },
+  "ushouse": {
+   "label": "U.S. House",
+   "short": "House",
+   "level": "district"
+  },
+  "sthouse": {
+   "label": "State House",
+   "short": "State Rep",
+   "level": "district"
+  }
+ },
+ "eras": [
+  {
+   "id": "2016-2022",
+   "label": "2016\u20132022 lines",
+   "years": [
+    2016,
+    2018,
+    2020,
+    2022
+   ],
+   "current": false,
+   "precincts": 97,
+   "geography": "/precinct-districts/oh-hd-31/precincts-2016-2022.geojson",
+   "geographySubdivisions": "/precinct-districts/oh-hd-31/subdivisions-2016-2022.geojson"
+  },
+  {
+   "id": "2024",
+   "label": "2024 lines",
+   "years": [
+    2024
+   ],
+   "current": true,
+   "precincts": 85,
+   "geography": "/precinct-districts/oh-hd-31/precincts-2024.geojson",
+   "geographySubdivisions": "/precinct-districts/oh-hd-31/subdivisions-2024.geojson"
+  }
+ ],
+ "years": [
+  2016,
+  2018,
+  2020,
+  2022,
+  2024
+ ],
+ "composition": {
+  "2016": {
+   "ushouse": [
+    "CD-11",
+    "CD-13",
+    "CD-14",
+    "CD-16"
+   ],
+   "sthouse": [
+    "HD-34",
+    "HD-35",
+    "HD-36",
+    "HD-37",
+    "HD-38"
+   ]
+  },
+  "2018": {
+   "ushouse": [
+    "CD-11",
+    "CD-13",
+    "CD-14",
+    "CD-16"
+   ],
+   "sthouse": [
+    "HD-34",
+    "HD-35",
+    "HD-36",
+    "HD-37",
+    "HD-38"
+   ]
+  },
+  "2020": {
+   "ushouse": [
+    "CD-11",
+    "CD-13",
+    "CD-14",
+    "CD-16"
+   ],
+   "sthouse": [
+    "HD-34",
+    "HD-35",
+    "HD-36",
+    "HD-37",
+    "HD-38"
+   ]
+  },
+  "2022": {
+   "ushouse": [
+    "CD-13"
+   ],
+   "sthouse": [
+    "HD-31",
+    "HD-32",
+    "HD-34"
+   ]
+  },
+  "2024": {
+   "ushouse": [
+    "CD-13"
+   ],
+   "sthouse": [
+    "HD-31"
+   ]
+  }
+ },
+ "election2026": {
+  "date": "2026-11-03",
+  "status": "open",
+  "seatHolder": {
+   "name": "Bill Roemer",
+   "party": "R",
+   "note": "term-limited after four terms"
+  },
+  "candidates": {
+   "d": {
+    "name": "J. Noah Spinner",
+    "party": "D"
+   },
+   "r": {
+    "name": "Mike Kahoe",
+    "party": "R"
+   }
+  },
+  "primaryDate": "2026-05-05",
+  "sources": [
+   "https://ballotpedia.org/Ohio_House_of_Representatives_District_31",
+   "https://signalohio.org/anti-vax-advocate-economic-developer-competitive-ohio-house-district-31-seat-in-akron-suburbs-election-2026/"
+  ]
+ },
+ "sources": [
+  {
+   "label": "Precinct results 2016\u20132024",
+   "text": "Summit County Board of Elections official precinct canvass, compiled by hand into the hd31_<year>.csv files."
+  },
+  {
+   "label": "Precinct boundaries 2016\u20132022",
+   "text": "Ohio VTD shapefile (2020 vintage); the four elections share one precinct geography."
+  },
+  {
+   "label": "Precinct boundaries 2024",
+   "text": "Redistricting Data Hub 2024 general election SLDL precinct layer (oh_2024_gen_sldl_prec)."
+  },
+  {
+   "label": "Demographics",
+   "text": "2020 Census DHC (age), CVAP 2024 release (race/ethnicity) and ACS 2020\u201324 block groups (income, education), aggregated from census blocks to 2024 precincts."
+  },
+  {
+   "label": "Crosswalk",
+   "text": "TIGER/Line 2020 PL census blocks for Summit County with 2020 population, assigned to a 2016\u20132022 precinct and a 2024 precinct by block location."
+  }
+ ],
+ "crosswalk": {
+  "method": "block-population",
+  "blocks": "2020 Census blocks (TIGER/Line PL geometry, P1 total population) for Summit County"
+ },
+ "generated": "2026-09-24"
+}

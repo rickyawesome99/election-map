@@ -102,6 +102,6 @@ test("forecast buttons remount a clickable map", async ({ page }, testInfo) => {
 test("analysis links render on the first click", async ({ page }) => {
   await page.goto("/analysis");
   await page.getByRole("link", { name: "OH-31" }).click();
-  await expect(page).toHaveURL(/\/analysis\/oh-31$/);
+  await expect(page).toHaveURL(/\/analysis\/districts\/oh-hd-31$/);
   await expect(page.getByRole("heading", { name: "House District 31" })).toBeVisible();
 });

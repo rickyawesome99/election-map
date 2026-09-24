@@ -19,7 +19,7 @@ from pathlib import Path
 DOWNLOADS = Path.home() / "Downloads"
 RDH = DOWNLOADS / "rdh_extracted"
 NHGIS = DOWNLOADS / "nhgis_extracted" / "nhgis0001_csv"
-OUT = Path(__file__).parent.parent / "public" / "oh31-demographics.geojson"
+OUT = Path(__file__).parent.parent / "data-entry" / "precinct-districts" / "oh-hd-31" / "geo" / "precincts-2024-demographics-source.geojson"
 
 DISTRICT = "031"
 

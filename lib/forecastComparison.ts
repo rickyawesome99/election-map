@@ -8,7 +8,7 @@
 
 import { houseData, type RaceType } from "@/data/forecastData";
 import { externalForecasts, type ExternalForecaster, type ExternalRaceCall, type ExternalRating } from "@/data/externalForecasts";
-import { forecastsFor, getChamberSimulations, seatTotals, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastedRace } from "@/lib/forecast";
+import { forecastsFor, getChamberSimulations, seatTotals, SEAT_HOLDOVERS, type ForecastedRace } from "@/lib/forecast";
 
 export const RATING_SCALE: ExternalRating[] = ["Safe D", "Likely D", "Lean D", "Tilt D", "Toss-up", "Tilt R", "Lean R", "Likely R", "Safe R"];
 export const ratingOrdinal = (r: string): number => { const i = RATING_SCALE.indexOf(r as ExternalRating); return i < 0 ? 0 : i - 4; };
@@ -38,8 +38,17 @@ export const externalKeyOf = (r: ForecastedRace): string =>
 const houseIdByName = new Map(houseData.map((r) => [r.name, r.id]));
 export const houseIdOf = (name: string) => houseIdByName.get(name);
 
-export interface OurCall { rating: string; pDem: number; margin: number; ordinal: number }
-export interface ExternalCall extends ExternalRaceCall { rating: ExternalRating; ordinal: number; inferred?: boolean }
+// Which party a call favors: -1 Democratic, +1 Republican, 0 neither. A model is read off its
+// probability, so a race it puts at 52% D counts as a Democratic seat even though the rating
+// band calls it a Toss-up; a rater has only its label, and a Toss-up favors nobody.
+export type Favor = -1 | 0 | 1;
+export const favorOf = (c: { pDem?: number; ordinal: number }): Favor =>
+  c.pDem != null ? (c.pDem > 0.5 ? -1 : 1) : c.ordinal < 0 ? -1 : c.ordinal > 0 ? 1 : 0;
+// Seats a call hands the Democrats: a rater's Toss-up is split down the middle.
+export const demSeatOf = (f: Favor): number => (f === -1 ? 1 : f === 1 ? 0 : 0.5);
+
+export interface OurCall { rating: string; pDem: number; margin: number; ordinal: number; favor: Favor }
+export interface ExternalCall extends ExternalRaceCall { rating: ExternalRating; ordinal: number; favor: Favor; inferred?: boolean }
 
 export interface ComparisonRow {
   key: string;      // external key ("AK", "FL-2", "AL-01")
@@ -61,7 +70,8 @@ function toCall(c: ExternalRaceCall | undefined): ExternalCall | undefined {
   if (!c) return undefined;
   const rating = c.rating ?? (c.pDem != null ? probToRating(c.pDem) : undefined);
   if (!rating) return undefined;
-  return { ...c, rating, ordinal: ratingOrdinal(rating) };
+  const ordinal = ratingOrdinal(rating);
+  return { ...c, rating, ordinal, favor: favorOf({ pDem: c.pDem, ordinal }) };
 }
 
 // A rater's competitive-seats list implies every seat it leaves out is Safe for the party
@@ -70,14 +80,18 @@ function toCall(c: ExternalRaceCall | undefined): ExternalCall | undefined {
 function inferredSafe(race: ForecastedRace): ExternalCall {
   const party = race.margin > 0 ? "R" : "D";
   const rating = `Safe ${party}` as ExternalRating;
-  return { rating, ordinal: ratingOrdinal(rating), inferred: true };
+  const ordinal = ratingOrdinal(rating);
+  return { rating, ordinal, favor: (party === "D" ? -1 : 1) as Favor, inferred: true };
 }
 
 export function buildRows(raceType: RaceType, forecasters: ExternalForecaster[] = externalForecasts): ComparisonRow[] {
   const ourRaces = forecastsFor(raceType);
   return ourRaces.map((race) => {
     const key = externalKeyOf(race);
-    const ours: OurCall = { rating: race.rating, pDem: race.probability, margin: race.margin, ordinal: ratingOrdinal(race.rating) };
+    const ours: OurCall = {
+      rating: race.rating, pDem: race.probability, margin: race.margin,
+      ordinal: ratingOrdinal(race.rating), favor: race.margin <= 0 ? -1 : 1,
+    };
     const calls: Record<string, ExternalCall> = {};
     for (const f of forecasters) {
       const c = toCall(f.races[raceType][key]);
@@ -103,18 +117,21 @@ export function buildRows(raceType: RaceType, forecasters: ExternalForecaster[] 
 export interface AgreementSummary {
   forecasterId: string;
   raceType: RaceType;
-  compared: number;    // races both sides call
-  same: number;        // identical step
-  withinOne: number;   // within one step (same included)
-  weMoreD: number;     // our call sits further toward the Democrats than theirs
-  weMoreR: number;
-  differentFavorite: number; // the two calls favor different parties (Toss-up favors neither: not counted)
-  meanDelta: number | null;  // mean of (ours − theirs) in steps; positive = we lean more Republican
+  compared: number;     // races both sides call
+  ourDemSeats: number;  // seats we hand the Democrats across those races
+  theirDemSeats: number; // seats they do (a rater's Toss-up counts half)
+  netSeats: number;     // theirs − ours: how many more seats they give the Democrats
+  theyDweR: number;     // they favor the Democrat, we favor the Republican
+  theyRweD: number;
+  meanDelta: number | null; // mean of (ours − theirs) in steps; positive = we lean more Republican
+  same: number;
+  withinOne: number;
   meanAbsProbDiff: number | null; // models only: mean |our P(D) − theirs|
 }
 
 export function agreement(rows: ComparisonRow[], forecasterId: string): AgreementSummary {
-  let compared = 0, same = 0, withinOne = 0, weMoreD = 0, weMoreR = 0, differentFavorite = 0, sumDelta = 0, sumProb = 0, nProb = 0;
+  let compared = 0, same = 0, withinOne = 0, theyDweR = 0, theyRweD = 0;
+  let ourDemSeats = 0, theirDemSeats = 0, sumDelta = 0, sumProb = 0, nProb = 0;
   for (const row of rows) {
     const c = row.calls[forecasterId];
     if (!c) continue;
@@ -123,13 +140,15 @@ export function agreement(rows: ComparisonRow[], forecasterId: string): Agreemen
     sumDelta += d;
     if (d === 0) same += 1;
     if (Math.abs(d) <= 1) withinOne += 1;
-    if (d < 0) weMoreD += 1;
-    if (d > 0) weMoreR += 1;
-    if (row.ours.ordinal * c.ordinal < 0) differentFavorite += 1;
+    ourDemSeats += demSeatOf(row.ours.favor);
+    theirDemSeats += demSeatOf(c.favor);
+    if (c.favor === -1 && row.ours.favor === 1) theyDweR += 1;
+    if (c.favor === 1 && row.ours.favor === -1) theyRweD += 1;
     if (c.pDem != null) { sumProb += Math.abs(row.ours.pDem - c.pDem); nProb += 1; }
   }
   return {
-    forecasterId, raceType: rows[0]?.raceType ?? "house", compared, same, withinOne, weMoreD, weMoreR, differentFavorite,
+    forecasterId, raceType: rows[0]?.raceType ?? "house", compared, same, withinOne,
+    ourDemSeats, theirDemSeats, netSeats: theirDemSeats - ourDemSeats, theyDweR, theyRweD,
     meanDelta: compared ? sumDelta / compared : null,
     meanAbsProbDiff: nProb ? sumProb / nProb : null,
   };
@@ -149,31 +168,27 @@ export interface ChamberTopline {
 export function ourTopline(raceType: RaceType): ChamberTopline {
   const sim = getChamberSimulations()[raceType];
   const called = seatTotals(forecastsFor(raceType), SEAT_HOLDOVERS[raceType]).called;
-  return {
-    pDemControl: sim.pDemControl,
-    demSeats: raceType === "governor" ? called.dem : sim.meanDem,
-    repSeats: raceType === "governor" ? called.rep : TOTAL_SEATS_BY_TYPE[raceType] - sim.meanDem,
-    tossups: null,
-    range80: [sim.lo80, sim.hi80],
-    derived: false,
-  };
+  return { pDemControl: sim.pDemControl, demSeats: called.dem, repSeats: called.rep, tossups: null, range80: [sim.lo80, sim.hi80], derived: false };
 }
 
 export function externalTopline(f: ExternalForecaster, raceType: RaceType, rows: ComparisonRow[]): ChamberTopline | null {
   const t = f.totals[raceType];
-  if (t && (t.demSeats != null || t.pDemControl != null)) {
-    return { pDemControl: t.pDemControl ?? null, demSeats: t.demSeats ?? null, repSeats: t.repSeats ?? null, tossups: t.tossups ?? null, range80: t.range80 ?? null, derived: false };
+  // What the forecaster itself publishes for the chamber, so the row matches its own site.
+  if (t?.demSeats != null) {
+    return { pDemControl: t.pDemControl ?? null, demSeats: t.demSeats, repSeats: t.repSeats ?? null, tossups: t.tossups ?? null, range80: t.range80 ?? null, derived: false };
   }
-  // Count the per-race calls when they cover the whole chamber.
+  // No published total (every rater, and a model that only publishes control odds): count the
+  // seats its own race calls hand each party — a model by which candidate it puts above 50%, a
+  // rater by its label — with the seats a rater will not call either way counted separately.
   const calls = rows.map((r) => r.calls[f.id]);
-  if (calls.some((c) => !c)) return null;
+  if (calls.some((c) => !c)) return t?.pDemControl != null ? { pDemControl: t.pDemControl, demSeats: null, repSeats: null, tossups: null, range80: null, derived: false } : null;
   const hold = SEAT_HOLDOVERS[raceType];
   let dem = hold.dem, rep = hold.rep, toss = 0;
   for (const c of calls) {
     if (!c) continue;
-    if (c.ordinal < 0) dem += 1; else if (c.ordinal > 0) rep += 1; else toss += 1;
+    if (c.favor === -1) dem += 1; else if (c.favor === 1) rep += 1; else toss += 1;
   }
-  return { pDemControl: null, demSeats: dem, repSeats: rep, tossups: toss, range80: null, derived: true };
+  return { pDemControl: t?.pDemControl ?? null, demSeats: dem, repSeats: rep, tossups: toss, range80: null, derived: true };
 }
 
 export function comparisonFor(raceType: RaceType) {

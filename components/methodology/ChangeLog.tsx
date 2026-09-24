@@ -1,7 +1,7 @@
 import { METHODOLOGY_CHANGELOG, changesFor, type MethodologyChange, type MethodologyModel } from "@/data/methodologyChangelog";
 import { Code, MUTED, P, Section, VERY_MUTED } from "./kit";
 
-const MODEL_LABEL: Record<MethodologyModel, string> = { forecast: "Forecast", "state-tpl": "State TPL", "district-tpl": "District TPL", "county-tpl": "County TPL", war: "WAR" };
+const MODEL_LABEL: Record<MethodologyModel, string> = { forecast: "Forecast", "state-tpl": "State TPL", "district-tpl": "District TPL", "county-tpl": "County TPL", war: "WAR", "precinct-district": "Precinct districts" };
 const KIND_LABEL: Record<MethodologyChange["kind"], string> = { change: "Change", tested: "Tested, not adopted", data: "Data fix" };
 const fmtDate = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" });
 

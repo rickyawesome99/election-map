@@ -10,7 +10,7 @@
 //            the same idea is not re-tested blind) · data = an input fix that moved results
 //   effect   measured consequence (backtest error, live seat counts…), when there is one
 
-export type MethodologyModel = "forecast" | "state-tpl" | "district-tpl" | "county-tpl" | "war";
+export type MethodologyModel = "forecast" | "state-tpl" | "district-tpl" | "county-tpl" | "war" | "precinct-district";
 
 export interface MethodologyChange {
   date: string; // ISO
@@ -22,6 +22,18 @@ export interface MethodologyChange {
 }
 
 export const METHODOLOGY_CHANGELOG: MethodologyChange[] = [
+  {
+    date: "2026-09-24", models: ["war"], kind: "change",
+    title: "WAR is measured against a non-incumbent replacement",
+    detail: "The replacement-level nominee was implicitly a generic nominee of the same incumbency status, so an incumbent was scored against a generic incumbent. A freely available nominee never holds the seat, so the incumbent's row now adds back Incumb. = Expected − the same expectation with no incumbent in the race (the office's incumbency term plus the incumbent share of the structural money term, re-priced on the open-seat margin). Vs. Opponent becomes generic non-incumbent vs this opponent; WAR = Effect + leftover + Incumb. Challengers and open seats are unchanged; appointed incumbents get only the money share. The ridge still solves on the incumbency-stripped residual, so Effect, the forecast's Candidates term and the structural money model are untouched.",
+    effect: "1,872 incumbent rows credited: Senate 3.1–3.3, House 3.0–3.8, Governor 4.5–5.0 pts (appointed 0.3–0.5). Mean incumbent WAR Senate +0.2 → +3.3, House −0.3 → +3.4, Governor +3.7 → +8.5; challengers and open seats unchanged. No forecast number moves.",
+  },
+  {
+    date: "2026-09-24", models: ["precinct-district"], kind: "change",
+    title: "Precinct-district pages: 2026 outlook and a block-population crosswalk between precinct eras",
+    detail: "The OH-31 page became the first instance of a generic precinct-district page (/analysis/districts/[slug]; lib/precinctDistrict/). Its 2026 outlook is a district TPL built from the district's own precinct sums: each statewide race-year, and each House / State House year in which the footprint was a single race, is stripped of incumbency and of β*(state) × E(year) from the shared TPL fit, then aggregated with RACE_TYPE_WEIGHTS, YEAR_WEIGHTS and a two-pass Huber (HUBER_C). The projection adds β* × E(2026), no incumbency for an open seat, and a down-ballot gap (mean State House NM minus same-year top-of-ticket NM, shrunk n/(n+1)); σ² = (β* σ_E)² + (1.5 × RACE_SIGMA.H)². Precinct results from before Summit County's 2024 re-precincting are carried onto today's lines by 2020 census-block population (Bath Twp H, outside the 2024 district, is dropped from that view), so every year sits on one footprint.",
+    effect: "OH-31: lean D+2.2, environment D+3.7, gap R+1.1 → D+4.7 ± 8.4, P(D) 0.71. Township totals unchanged from the old page (530-check regression, 0 mismatches); precinct-level 2024-vs-earlier swings change materially because the old page joined re-precincted names.",
+  },
   {
     date: "2026-09-23", models: ["forecast"], kind: "change",
     title: "Race polls are kept only from 1 January 2026",

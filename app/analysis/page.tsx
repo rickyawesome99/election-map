@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { electionYear } from "@/data/forecastData";
 
 export const metadata = {
@@ -38,11 +39,11 @@ export default function AnalysisPage() {
               <div><h3 className="text-xl sm:text-2xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Election &amp; Race Calendar</h3><p className="mt-1.5 text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>Which offices were on the ballot in each state and year since 2012, and the candidates, votes, share, and margin behind every race.</p></div>
               <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
             </a>
-            <a href="/analysis/oh-31" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-2 sm:gap-8 items-start py-6" style={{ borderBottom: "1px solid var(--app-border)" }}>
+            <Link href="/analysis/districts/oh-hd-31" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-2 sm:gap-8 items-start py-6" style={{ borderBottom: "1px solid var(--app-border)" }}>
               <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>State House</div>
-              <div><h3 className="text-xl sm:text-2xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>OH-31 State House Analysis</h3><p className="mt-1.5 text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>Precinct results, demographics, and district geography in one interactive analysis.</p></div>
+              <div><h3 className="text-xl sm:text-2xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>OH-31 Precinct Analysis</h3><p className="mt-1.5 text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>Ohio House District 31 precinct by precinct: results and swings since 2016 on today&apos;s lines, demographics, targeting metrics, and the 2026 outlook.</p></div>
               <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
-            </a>
+            </Link>
             <a href="/analysis/popular-vote" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-2 sm:gap-8 items-start py-6" style={{ borderBottom: "1px solid var(--app-border)" }}>
               <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>National</div>
               <div><h3 className="text-xl sm:text-2xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Popular Vote History</h3><p className="mt-1.5 text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>Compare national vote margins, turnout, approval, and seats across election cycles.</p></div>

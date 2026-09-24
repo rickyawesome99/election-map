@@ -10,9 +10,8 @@
   --app-text-muted: #656d76;
   --app-text-very-muted: #949ea6;
   --browser-chrome-bg: #ffffff;
-  --oh31-map-unfilled: #c8cdd3;
-  --oh31-simple-map-bg: #ffffff;
-  --oh31-legend-bg: rgba(255,255,255,0.92);
+  --map-unfilled: #c8cdd3;
+  --map-legend-bg: rgba(246,248,250,0.92);
 
   /* Party colors — text (change in dark mode) */
   --party-dem: #1b408c;
@@ -21,6 +20,8 @@
   --party-dem-muted: #1b408c99;
   --party-rep-muted: #be1c2999;
   --party-ind-muted: #5a647299;
+  --rating-tossup: #9a6700;
+
   --party-dem-subtle: #1b408c33;
   --party-rep-subtle: #be1c2933;
   --party-ind-subtle: #5a647233;
@@ -52,9 +53,10 @@ html.dark {
   --app-text-muted: #8b949e;
   --app-text-very-muted: #484f58;
   --browser-chrome-bg: #000000;
-  --oh31-map-unfilled: #1e2530;
-  --oh31-simple-map-bg: #0d1117;
-  --oh31-legend-bg: rgba(22,27,34,0.90);
+  --map-unfilled: #1e2530;
+  --map-legend-bg: rgba(13,17,23,0.90);
+
+  --rating-tossup: #e3b341;
 
   /* Party colors — lighter for dark mode readability */
   --party-dem: #8bafff;

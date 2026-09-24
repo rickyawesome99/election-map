@@ -27,18 +27,19 @@ export default function WarMethodology() {
   return (
     <>
       <Section id="overview" kicker="WAR · Wins Above Replacement" title="How much better than a generic nominee"
-        lede={<>WAR is how far a candidate&rsquo;s actual margin ran ahead of what a generic nominee of their party would have managed against the same opponent in the same seat and year, in points of margin. It is built from three numbers, each answering a different question. Table: {link("/model/war", "TPL → WAR")}.</>}>
+        lede={<>WAR is how far a candidate&rsquo;s actual margin ran ahead of what a replacement-level nominee of their party — a generic <em>non-incumbent</em> — would have managed against the same opponent in the same seat and year, in points of margin. It is built from three numbers, each answering a different question. Table: {link("/model/war", "TPL → WAR")}.</>}>
         <Defs items={[
           { term: "Expected Result", def: <><strong>Generic vs generic.</strong> The margin this seat would produce in that year with two replacement-level nominees: the seat&rsquo;s lean in that year, the national environment, incumbency, and the money gap a generic pair in that situation would have.</> },
-          { term: "Vs. Opponent", def: <><strong>Generic vs this specific opponent.</strong> The Expected Result moved by the opponent&rsquo;s own candidate effect: facing a strong opponent lowers what a generic nominee would be expected to do.</> },
-          { term: "Candidate WAR", def: <><strong>Actual − Vs. Opponent</strong>, signed toward the candidate. Equal to the candidate&rsquo;s own effect plus whatever the race left unexplained.</> },
+          { term: "Vs. Opponent", def: <><strong>Generic non-incumbent vs this specific opponent.</strong> The Expected Result moved by the opponent&rsquo;s own candidate effect — facing a strong opponent lowers what a generic nominee would be expected to do — and, when the candidate is the incumbent, with their own incumbency taken out: a replacement-level nominee never holds the seat.</> },
+          { term: "Candidate WAR", def: <><strong>Actual − Vs. Opponent</strong>, signed toward the candidate. Equal to the candidate&rsquo;s own effect, plus whatever the race left unexplained, plus — for an incumbent — what their incumbency was worth.</> },
         ]} />
         <Formula lines={[
           "Expected      = lean-in-that-year + β*·E(year) + incumbency + structural money pts         R-positive",
           "residual r    = Actual − Expected                       = a_R − a_D + ε      one per race, two candidates",
-          "Vs. Opponent  = Expected − s × a_opponent               s = +1 for a Republican, −1 for a Democrat",
-          "WAR           = s × (Actual − Vs. Opponent)             = a_candidate + s × ε",
-        ]} note={<>Positive WAR is always good for the candidate, whichever party. Because each side keeps the whole unexplained leftover ε, the two candidates&rsquo; WARs do not sum to the residual — as a batter and a pitcher both book the same hit.</>} />
+          "Incumb.       = Expected − Expected with no incumbent    incumbent's row only, signed toward them; 0 otherwise",
+          "Vs. Opponent  = Expected − s × Incumb. − s × a_opponent   s = +1 for a Republican, −1 for a Democrat",
+          "WAR           = s × (Actual − Vs. Opponent)             = a_candidate + s × ε + Incumb.",
+        ]} note={<>Positive WAR is always good for the candidate, whichever party. Because each side keeps the whole unexplained leftover ε, the two candidates&rsquo; WARs do not sum to the residual — as a batter and a pitcher both book the same hit. The ridge solves on r, with incumbency stripped; Incumb. is added back only to the reported WAR, so the candidate effects the forecast reads are unchanged by it.</>} />
         <DataTable align="lr" maxWidth="max-w-md" head={["Now", ""]} rows={[
           ["Candidate-race rows", rows.length.toLocaleString()],
           ["Races", races.toLocaleString()],
@@ -83,6 +84,7 @@ export default function WarMethodology() {
           { term: "Pooling", def: <>Effects are keyed <Code>state | party | normalized name</Code> and pooled across offices: Hogan&rsquo;s Governor and Senate races inform one effect.</> },
           { term: "Recency", def: "The race being scored always carries full weight; a candidate's other races fade with distance. The same candidate therefore shows different effects on different rows. Measured persistence of repeat candidates' residuals: slope ≈ 0.45 at 1–4 year gaps, 0.26 at 5–6, ≈ 0 at 7–9." },
           { term: "Effective races", def: "Σ of the recency weights, shown beside each Effect on the WAR tab." },
+          { term: "The replacement is a non-incumbent", def: <>Expected carries the office&rsquo;s incumbency term, so the ridge measures an incumbent against a generic <em>incumbent</em> — the right basis for isolating quality (that is the Effect column, and what the forecast uses). WAR asks a different question: how much better than freely available talent, and freely available talent never holds the seat. So an incumbent&rsquo;s row adds back <strong>Incumb.</strong> = Expected minus the same expectation with no incumbent in the race: the office&rsquo;s incumbency term plus the incumbent share of the structural money term, re-priced on the open-seat margin. Challengers and open seats add nothing (the opponent&rsquo;s incumbency is a fact of the race either way); appointed incumbents carry no incumbency term, so only the money share. Part of the incumbency advantage is deterrence of strong challengers, and that part is already netted out through the opponent&rsquo;s effect, so the add-back does not double-count it.</> },
         ]} />
         <Constants rows={[
           { name: "WAR_LAMBDA", value: WAR_LAMBDA, basis: "measured", meaning: "Ridge penalty on candidate effects.", source: "Leave-one-out persistence of repeat candidates' residuals: r = 0.66 (0.38 excluding |r| > 25), slope 0.68 → λ ≈ 1. Harness calibration by leave-one-race-out is deferred." },
@@ -97,11 +99,12 @@ export default function WarMethodology() {
         <Ledger lines={[
           { label: "Expected Result", note: "generic vs generic", value: <M v={ex.expected} /> },
           { op: "+", label: "Opponent's effect", note: opp ? `${opp.candidate} ${signed(ex.opponentEffect)} toward their own side` : "no opponent on file", value: <M v={-s * ex.opponentEffect} /> },
-          { op: "=", label: "Vs. Opponent", note: "generic vs this opponent", value: <M v={ex.expectedVsOpponent} />, total: true },
+          { op: "+", label: "Own incumbency, removed", note: ex.replacementPts !== 0 ? `Incumb. ${signed(ex.replacementPts)} toward the candidate: a replacement would not hold the seat` : "not the incumbent", value: <M v={-s * ex.replacementPts} /> },
+          { op: "=", label: "Vs. Opponent", note: "generic non-incumbent vs this opponent", value: <M v={ex.expectedVsOpponent} />, total: true },
           { label: "Actual", value: <M v={ex.actual} /> },
-          { op: "=", label: "Candidate WAR", note: `own effect ${signed(ex.effect)} (${ex.effectN} races, ${ex.effectW.toFixed(1)} effective) + leftover ${signed(ex.war - ex.effect)}`, value: <War v={ex.war} />, total: true },
+          { op: "=", label: "Candidate WAR", note: `own effect ${signed(ex.effect)} (${ex.effectN} races, ${ex.effectW.toFixed(1)} effective) + leftover ${signed(ex.war - ex.effect - ex.replacementPts)} + incumbency ${signed(ex.replacementPts)}`, value: <War v={ex.war} />, total: true },
         ]} />
-        <P>Identity on every row: WAR = s × (Actual − Vs. Opponent) = own effect + s × ε. The Residual column on the WAR tab is s × (Actual − Expected), the race&rsquo;s net two-candidate effect before attribution. Margins are colored by the party they favor (<D>D+</D> / <R>R+</R>); WAR is candidate-signed, so it is not.</P>
+        <P>Identity on every row: WAR = s × (Actual − Vs. Opponent) = own effect + s × ε + Incumb. The Residual column on the WAR tab is s × (Actual − Expected), the race&rsquo;s net two-candidate effect before attribution. Margins are colored by the party they favor (<D>D+</D> / <R>R+</R>); WAR is candidate-signed, so it is not.</P>
         <Block label="Highest and lowest" meta="down-ballot rows, live">
           <DataTable align="llrrrr" maxWidth="max-w-4xl" head={["Candidate", "Race", "Actual", "Expected", "Vs. Opp", "WAR"]} rows={[...top.map(rowOf), ...bottom.map(rowOf)]} />
         </Block>
@@ -110,7 +113,8 @@ export default function WarMethodology() {
       <Section id="forward" kicker="Two versions" title="WAR on the tab vs. the forecast's Candidates term">
         <DataTable align="lll" maxWidth="max-w-4xl" head={["", "WAR tab", "Forecast → Candidates"]} rows={[
           ["Money in Expected", `Structural gap only, k ${FF_K} cap ±${FF_MAX}`, `FULL residual-basis money (k ${F.MONEY_K.H}/${F.MONEY_K.S}/${F.MONEY_K.G}) — money is its own forward term`],
-          ["Reads as", "Quality including money raised beyond the situation", "Quality net of money"],
+          ["Incumbency", "Stripped from Expected for the ridge; an incumbent's own incumbency added back to WAR (Incumb.)", "Stripped from the effects; the forecast adds incumbency as its own term"],
+          ["Reads as", "Value over a replacement-level (non-incumbent) nominee, money beyond the situation included", "Quality net of money and incumbency"],
           ["Solved as of", "Each race's own year", "2026, from races through 2025"],
           ["Used for", "The WAR column", <>QUALITY_WEIGHT × (effect_R − effect_D) — see {link("/methodology/forecast#candidates", "Forecast")}</>],
         ]} />
@@ -122,7 +126,7 @@ export default function WarMethodology() {
           { term: "One national environment", def: "A single E(year) scaled by β* can flip sign against a per-state environment (HI, NH in 2024)." },
           { term: "Window", def: "Records start in 2016: Baker, Manchin and Justice are one-race candidates here. House coverage before 2022 is thin." },
           { term: "No standard error", def: "Effects carry an effective race count but no interval." },
-          { term: "Benchmarks", def: "Inside Elections VAR ≈ our residual ÷ 2 (r .93; share vs margin scale). Split Ticket WAR vs our residual r .84 (Senate .90, House .80)." },
+          { term: "Benchmarks", def: "Inside Elections VAR ≈ our residual ÷ 2 (r .93; share vs margin scale). Split Ticket WAR vs our residual r .84 (Senate .90, House .80). Both comparisons are on the residual, not WAR: Split Ticket controls for incumbency, Strength in Numbers counts it toward WAR as we now do, Inside Elections leaves it in the score." },
         ]} />
       </Section>
 

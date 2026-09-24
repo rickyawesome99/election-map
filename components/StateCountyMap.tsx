@@ -122,7 +122,7 @@ export default function StateCountyMap({
 
   const mapStroke = "var(--app-bg)";
   const hoverStroke = "var(--app-text-primary)";
-  const defaultFill = "var(--oh31-map-unfilled)";
+  const defaultFill = "var(--map-unfilled)";
   const highlightFill = "#eab308";
 
   return (

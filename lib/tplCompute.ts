@@ -1491,8 +1491,13 @@ export interface WarRow {
   effectN: number;  // races the effect is estimated from (count)
   effectW: number;  // effective races: Σ recency weights over those races (this race = 1)
   opponentEffect: number;     // the opponent's ridge effect as of this race's year, signed toward the OPPONENT (0 if no opponent)
-  expectedVsOpponent: number; // R-positive expected margin for a generic nominee of this party vs this specific opponent
-  war: number;      // actual − expectedVsOpponent, signed toward this candidate = effect + the race's unexplained leftover
+  /** Points the candidate's own incumbency is worth against a NON-incumbent replacement, signed toward
+   *  the candidate: the office's incumbency term plus the incumbent share of the structural money
+   *  term, i.e. `expected` − the same expectation with no incumbent in the race. 0 for challengers
+   *  and open seats. Not in `expected` or `residual` (the ridge basis); added to WAR only. */
+  replacementPts: number;
+  expectedVsOpponent: number; // R-positive expected margin for a generic NON-incumbent nominee of this party vs this specific opponent
+  war: number;      // actual − expectedVsOpponent, signed toward this candidate = effect + the race's unexplained leftover + replacementPts
   /** < 1 for a House race relocated across a redistricting — how far it had to move, as a
    *  confidence multiplier. Discounts it in the ridge exactly as it is discounted in TPL. */
   boundaryWeight?: number;
@@ -1506,7 +1511,11 @@ export interface WarRow {
 // state|party|name. WAR itself is scored against the opponent-specific expectation
 // (expected − opponent effect): the candidate keeps their own effect plus the whole
 // unexplained leftover ε, so the two sides' WARs do not sum to the residual — each side
-// is measured against "a generic nominee facing the opponent I actually faced". λ=1 matches the observed leave-one-out persistence slope (~0.68) of repeat
+// is measured against "a generic nominee facing the opponent I actually faced". The
+// replacement is a NON-incumbent (a freely available nominee never holds the seat), so an
+// incumbent's WAR also carries what their incumbency is worth (replacementPts); the ridge
+// itself keeps solving on the incumbency-stripped residual, which is what identifies the
+// opponent's effect and what the forecast reads. λ=1 matches the observed leave-one-out persistence slope (~0.68) of repeat
 // candidates' residuals; calibration via the harness is a later refinement.
 export const WAR_LAMBDA = 1;
 // Recency: a candidate's effect is estimated AS OF each race's year. The solve for target year
@@ -1693,9 +1702,11 @@ function attributeWar(rows: WarRow[]): void {
         row.effectW = st?.w ?? 0;
         row.opponentEffect = oppKey ? a.get(oppKey) ?? 0 : 0;
         // R-positive: an above-replacement D opponent lowers the R-positive expectation; an
-        // above-replacement R opponent raises it. s·(actual − expectedVsOpponent) = effect + s·ε.
-        row.expectedVsOpponent = row.expected - s * row.opponentEffect;
-        row.war = row.effect + s * eps; // = s·(actual − expectedVsOpponent)
+        // above-replacement R opponent raises it. The replacement is a non-incumbent, so an
+        // incumbent's own incumbency (replacementPts) comes out of the expectation too.
+        // s·(actual − expectedVsOpponent) = effect + s·ε + replacementPts.
+        row.expectedVsOpponent = row.expected - s * row.replacementPts - s * row.opponentEffect;
+        row.war = row.effect + s * eps + row.replacementPts; // = s·(actual − expectedVsOpponent)
       }
     }
   }
@@ -1738,7 +1749,9 @@ export function fitWarMoneyModel(rows: { gap: number; incSign: number; base: num
 
 let _warCache: WarRow[] | null = null;
 let _warMoneyCache: Record<string, WarMoneyModel> | null = null;
-type WarPending = { r: ComputedRace; office: WarRow["office"]; raceLabel: string; state: string; base: number; incSign: number; gap: number | null; withMoney: boolean; boundaryWeight?: number; note: string };
+type WarPending = { r: ComputedRace; office: WarRow["office"]; raceLabel: string; state: string; base: number;
+  /** R-positive incumbency points inside `base` (0 for open seats and appointed incumbents); base − incPts is the same seat with no incumbent. */
+  incPts: number; incSign: number; gap: number | null; withMoney: boolean; boundaryWeight?: number; note: string };
 let _warPendingCache: WarPending[] | null = null;
 
 // Every scorable race with its pre-money expected margin (base = anchor lean + β*E +
@@ -1812,11 +1825,13 @@ function buildWarPending(): WarPending[] {
         // residual would collapse to the constant down-ballot offset by construction.
         const yearPres = r.raceType === "P" ? null : interpolatedPresNM(presNM, r.year);
         const trend = yearPres != null && presBar != null ? yearPres - presBar : 0;
-        pending.push({ r, office, raceLabel: r.race, state: abbr, base: lean + trend + beta * E - (r.incumbencyPts ?? 0), incSign: incSignOf(r), gap: gapOf(r), withMoney: true, note: r.raceType === "P" ? "vs state fitted lean" : `vs state lean in ${r.year}` });
+        const incPts = -(r.incumbencyPts ?? 0);
+        pending.push({ r, office, raceLabel: r.race, state: abbr, base: lean + trend + beta * E + incPts, incPts, incSign: incSignOf(r), gap: gapOf(r), withMoney: true, note: r.raceType === "P" ? "vs state fitted lean" : `vs state lean in ${r.year}` });
       } else if (r.imputed && r.NM != null && (r.eligibility === "no-dem" || r.eligibility === "no-rep")) {
         // Same-party and jungle-fragmented generals carry no signable R-vs-D margin.
         // Imputed baselines carry no money term (the imputation is a presidential lean).
-        pending.push({ r, office, raceLabel: r.race, state: abbr, base: r.NM + beta * E - incumbencyPtsFor(r.raceType, r.incumbent, r.incumbentAppointed), incSign: incSignOf(r), gap: null, withMoney: false, note: "vs imputed presidential baseline" });
+        const incPts = -incumbencyPtsFor(r.raceType, r.incumbent, r.incumbentAppointed);
+        pending.push({ r, office, raceLabel: r.race, state: abbr, base: r.NM + beta * E + incPts, incPts, incSign: incSignOf(r), gap: null, withMoney: false, note: "vs imputed presidential baseline" });
       }
     }
   }
@@ -1855,7 +1870,8 @@ function buildWarPending(): WarPending[] {
       // 2016 Pittsburgh PA-14 was scored against today's rural R+27 PA-14.
       const shift = -(r.BS_pts ?? 0);
       const relocated = r.boundaryShift != null && Math.abs(r.boundaryShift) >= 0.5;
-      pending.push({ r, office: "H", raceLabel: r.race, state: calc.stateAbbr, base: calc.tpl + trend + shift + beta * (fit.E[r.year] ?? 0) - (r.incumbencyPts ?? 0), incSign: incSignOf(r), gap: gapOf(r), withMoney: true, boundaryWeight: r.boundaryWeight ?? 1, note: relocated ? `vs district lean in ${r.year}, on that year's lines` : `vs district lean in ${r.year}` });
+      const incPts = -(r.incumbencyPts ?? 0);
+      pending.push({ r, office: "H", raceLabel: r.race, state: calc.stateAbbr, base: calc.tpl + trend + shift + beta * (fit.E[r.year] ?? 0) + incPts, incPts, incSign: incSignOf(r), gap: gapOf(r), withMoney: true, boundaryWeight: r.boundaryWeight ?? 1, note: relocated ? `vs district lean in ${r.year}, on that year's lines` : `vs district lean in ${r.year}` });
     }
   }
   _warPendingCache = pending;
@@ -1886,10 +1902,20 @@ export function computeWarTable(): WarRow[] {
     const structuralGapPct = p.withMoney ? m.intercept + m.incSign * p.incSign + m.base * p.base : 0;
     const ffStructuralPts = p.withMoney ? Math.max(-FF_MAX, Math.min(FF_MAX, FF_K * structuralGapPct)) : 0;
     const expected = p.base + ffStructuralPts;
+    // The replacement is a non-incumbent: the same seat, year and opponent with NO incumbent in
+    // the race — incumbency out of the base, and the structural money a generic pair would have
+    // re-priced with incSign 0 on that base. The difference is what the incumbent's own
+    // incumbency is worth, credited to the incumbent's row only (2026-09-24, user decision:
+    // "a replacement-level nominee wouldn't be an incumbent in any practical scenario").
+    // Appointed incumbents carry no incumbency in base (share 0) but do get the money part.
+    const openBase = p.base - p.incPts;
+    const ffOpenPts = p.withMoney ? Math.max(-FF_MAX, Math.min(FF_MAX, FF_K * (m.intercept + m.base * openBase))) : 0;
+    const replacementR = expected - (openBase + ffOpenPts); // R-positive
+    const incumbentSlot = p.r.incumbent === "R" ? "R" : p.r.incumbent === "D" ? "D" : null;
     // residual/effect/war are filled by attributeWar() once every race is collected.
-    const base = { office: p.office, race: p.raceLabel, state: p.state, year: p.r.year, actual: p.r.rawMargin!, expected, moneyGapPct: p.gap, structuralGapPct, ffStructuralPts, residual: 0, effect: 0, effectN: 0, effectW: 0, opponentEffect: 0, expectedVsOpponent: 0, war: 0, boundaryWeight: p.boundaryWeight ?? 1, note: p.note };
-    if (p.r.demCandidate) out.push({ candidate: p.r.demCandidate, party: p.r.demParty ?? "D", ...base });
-    if (p.r.repCandidate) out.push({ candidate: p.r.repCandidate, party: p.r.repParty ?? "R", ...base });
+    const base = { office: p.office, race: p.raceLabel, state: p.state, year: p.r.year, actual: p.r.rawMargin!, expected, moneyGapPct: p.gap, structuralGapPct, ffStructuralPts, residual: 0, effect: 0, effectN: 0, effectW: 0, opponentEffect: 0, replacementPts: 0, expectedVsOpponent: 0, war: 0, boundaryWeight: p.boundaryWeight ?? 1, note: p.note };
+    if (p.r.demCandidate) out.push({ candidate: p.r.demCandidate, party: p.r.demParty ?? "D", ...base, replacementPts: incumbentSlot === "D" ? -replacementR : 0 });
+    if (p.r.repCandidate) out.push({ candidate: p.r.repCandidate, party: p.r.repParty ?? "R", ...base, replacementPts: incumbentSlot === "R" ? replacementR : 0 });
   }
 
   attributeWar(out);

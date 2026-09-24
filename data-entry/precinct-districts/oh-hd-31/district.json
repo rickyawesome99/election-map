@@ -1,0 +1,577 @@
+{
+  "slug": "oh-hd-31",
+  "state": "OH",
+  "stateName": "Ohio",
+  "chamber": "house",
+  "number": "31",
+  "name": "Ohio House District 31",
+  "shortName": "OH HD-31",
+  "county": "Summit County",
+  "blurb": "Suburban Summit County west and north of Akron: Barberton, Norton, Copley and Bath, part of Cuyahoga Falls, and the Richfield, Boston and Peninsula communities along the Cuyahoga Valley.",
+  "stateLegDistrictId": "oh-house-31",
+  "subdivisions": [
+    {
+      "id": "barberton",
+      "name": "Barberton",
+      "kind": "city"
+    },
+    {
+      "id": "bath",
+      "name": "Bath Township",
+      "kind": "township"
+    },
+    {
+      "id": "boston_heights",
+      "name": "Boston Heights",
+      "kind": "village"
+    },
+    {
+      "id": "boston_twp",
+      "name": "Boston Township",
+      "kind": "township"
+    },
+    {
+      "id": "copley",
+      "name": "Copley Township",
+      "kind": "township"
+    },
+    {
+      "id": "cuyahoga_falls",
+      "name": "Cuyahoga Falls",
+      "kind": "city"
+    },
+    {
+      "id": "norton",
+      "name": "Norton",
+      "kind": "city"
+    },
+    {
+      "id": "peninsula",
+      "name": "Peninsula",
+      "kind": "village"
+    },
+    {
+      "id": "richfield_township",
+      "name": "Richfield Township",
+      "kind": "township"
+    },
+    {
+      "id": "richfield_village",
+      "name": "Richfield Village",
+      "kind": "village"
+    }
+  ],
+  "subdivisionAliases": {
+    "barberton": "barberton",
+    "bath": "bath",
+    "bath twp": "bath",
+    "bath township": "bath",
+    "boston heights": "boston_heights",
+    "boston twp": "boston_twp",
+    "boston township": "boston_twp",
+    "copley": "copley",
+    "copley twp": "copley",
+    "copley township": "copley",
+    "cuyahoga falls": "cuyahoga_falls",
+    "norton": "norton",
+    "peninsula": "peninsula",
+    "peninsula village": "peninsula",
+    "richfield township": "richfield_township",
+    "richfield village": "richfield_village"
+  },
+  "subdivisionByPrecinctPrefix": {
+    "RICHFIELD VILL": "richfield_village",
+    "RICHFIELD TWP": "richfield_township"
+  },
+  "eras": [
+    {
+      "id": "2016-2022",
+      "label": "2016–2022 lines",
+      "years": [
+        2016,
+        2018,
+        2020,
+        2022
+      ],
+      "geography": {
+        "file": "geo/precincts-2016-2022-source.geojson",
+        "idProperty": "NAME20"
+      }
+    },
+    {
+      "id": "2024",
+      "label": "2024 lines",
+      "years": [
+        2024
+      ],
+      "current": true,
+      "geography": {
+        "file": "geo/precincts-2024-demographics-source.geojson",
+        "idProperty": "PRECNAME"
+      }
+    }
+  ],
+  "demographics": {
+    "file": "geo/precincts-2024-demographics-source.geojson",
+    "idProperty": "PRECNAME",
+    "era": "2024",
+    "source": "2020 Census (DHC, CVAP 2024 release) and ACS 2020–24 block groups, aggregated to precincts from census blocks"
+  },
+  "crosswalk": {
+    "method": "block-population",
+    "blocks": {
+      "url": "https://www2.census.gov/geo/tiger/TIGER2020PL/STATE/39_OHIO/39153/tl_2020_39153_tabblock20.zip",
+      "population": {
+        "api": "https://api.census.gov/data/2020/dec/pl",
+        "variable": "P1_001N",
+        "state": "39",
+        "county": "153"
+      },
+      "label": "2020 Census blocks (TIGER/Line PL geometry, P1 total population) for Summit County"
+    }
+  },
+  "offices": {
+    "pres": {
+      "label": "President",
+      "short": "Pres",
+      "level": "national"
+    },
+    "gov": {
+      "label": "Governor",
+      "short": "Gov",
+      "level": "state"
+    },
+    "ussen": {
+      "label": "U.S. Senate",
+      "short": "Senate",
+      "level": "state"
+    },
+    "ushouse": {
+      "label": "U.S. House",
+      "short": "House",
+      "level": "district"
+    },
+    "sthouse": {
+      "label": "State House",
+      "short": "State Rep",
+      "level": "district"
+    }
+  },
+  "years": {
+    "2016": {
+      "file": "hd31_2016.csv",
+      "era": "2016-2022",
+      "columns": {
+        "precinct": "precinct",
+        "subdivision": "township",
+        "ballots": "ballots",
+        "registered": "reg_voters"
+      },
+      "races": {
+        "pres": {
+          "d": "pres_d",
+          "r": "pres_r",
+          "total": "pres_total"
+        },
+        "ussen": {
+          "d": "sen_d",
+          "r": "sen_r",
+          "total": "sen_total"
+        },
+        "ushouse": {
+          "d": "house_d",
+          "r": "house_r",
+          "total": "house_total",
+          "district": "house_dist"
+        },
+        "sthouse": {
+          "d": "srep_d",
+          "r": "srep_r",
+          "total": "srep_total",
+          "district": "srep_dist"
+        }
+      }
+    },
+    "2018": {
+      "file": "hd31_2018.csv",
+      "era": "2016-2022",
+      "columns": {
+        "precinct": "precinct",
+        "subdivision": "township",
+        "ballots": "ballots",
+        "registered": "reg_voters"
+      },
+      "races": {
+        "gov": {
+          "d": "gov_d",
+          "r": "gov_r",
+          "total": "gov_total"
+        },
+        "ussen": {
+          "d": "sen_d",
+          "r": "sen_r",
+          "total": "sen_total"
+        },
+        "ushouse": {
+          "d": "house_d",
+          "r": "house_r",
+          "total": "house_total",
+          "district": "house_dist"
+        },
+        "sthouse": {
+          "d": "srep_d",
+          "r": "srep_r",
+          "total": "srep_total",
+          "district": "srep_dist"
+        }
+      }
+    },
+    "2020": {
+      "file": "hd31_2020.csv",
+      "era": "2016-2022",
+      "columns": {
+        "precinct": "precinct",
+        "subdivision": "township",
+        "ballots": "ballots",
+        "registered": "reg_voters"
+      },
+      "districtPrefix": {
+        "ushouse": "CD-",
+        "sthouse": "HD-"
+      },
+      "races": {
+        "pres": {
+          "d": "pres_d",
+          "r": "pres_r",
+          "total": "pres_total"
+        },
+        "ushouse": {
+          "d": "house_d",
+          "r": "house_r",
+          "total": "house_total",
+          "district": "house_dist"
+        },
+        "sthouse": {
+          "d": "srep_d",
+          "r": "srep_r",
+          "total": "srep_total",
+          "district": "srep_dist"
+        }
+      }
+    },
+    "2022": {
+      "file": "hd31_2022.csv",
+      "era": "2016-2022",
+      "columns": {
+        "precinct": "precinct",
+        "subdivision": "township",
+        "ballots": "ballots",
+        "registered": "reg_voters"
+      },
+      "races": {
+        "gov": {
+          "d": "gov_d",
+          "r": "gov_r",
+          "total": "gov_total"
+        },
+        "ussen": {
+          "d": "sen_d",
+          "r": "sen_r",
+          "total": "sen_total"
+        },
+        "ushouse": {
+          "d": "house_d",
+          "r": "house_r",
+          "total": "house_total",
+          "district": "house_dist"
+        },
+        "sthouse": {
+          "d": "srep_d",
+          "r": "srep_r",
+          "total": "srep_total",
+          "district": "srep_dist"
+        }
+      }
+    },
+    "2024": {
+      "file": "hd31_2024.csv",
+      "era": "2024",
+      "columns": {
+        "precinct": "precinct",
+        "subdivision": "township",
+        "ballots": "ballots_cast",
+        "registered": "reg_voters"
+      },
+      "fixedDistricts": {
+        "ushouse": "CD-13",
+        "sthouse": "HD-31"
+      },
+      "races": {
+        "pres": {
+          "d": "pres_d",
+          "r": "pres_r",
+          "total": "pres_total"
+        },
+        "ussen": {
+          "d": "sen_d",
+          "r": "sen_r",
+          "total": "sen_total"
+        },
+        "ushouse": {
+          "d": "house_d",
+          "r": "house_r",
+          "total": "house_total"
+        },
+        "sthouse": {
+          "d": "srep_d",
+          "r": "srep_r",
+          "total": "srep_total"
+        }
+      }
+    }
+  },
+  "candidates": {
+    "2024": {
+      "pres": {
+        "d": "Kamala Harris",
+        "r": "Donald Trump"
+      },
+      "ussen": {
+        "d": "Sherrod Brown",
+        "r": "Bernie Moreno",
+        "dIncumbent": true
+      },
+      "ushouse": {
+        "CD-13": {
+          "d": "Emilia Sykes",
+          "r": "Kevin Coughlin",
+          "dIncumbent": true
+        }
+      },
+      "sthouse": {
+        "HD-31": {
+          "d": "A.J. Harris",
+          "r": "Bill Roemer",
+          "rIncumbent": true
+        }
+      }
+    },
+    "2022": {
+      "gov": {
+        "d": "Nan Whaley",
+        "r": "Mike DeWine",
+        "rIncumbent": true
+      },
+      "ussen": {
+        "d": "Tim Ryan",
+        "r": "J.D. Vance"
+      },
+      "ushouse": {
+        "CD-13": {
+          "d": "Emilia Sykes",
+          "r": "Madison Gesiotto Gilbert"
+        }
+      },
+      "sthouse": {
+        "HD-31": {
+          "r": "Bill Roemer",
+          "rIncumbent": true
+        },
+        "HD-32": {
+          "r": "Bob Young",
+          "rIncumbent": true
+        },
+        "HD-34": {
+          "d": "Casey Weinstein",
+          "dIncumbent": true
+        }
+      }
+    },
+    "2020": {
+      "pres": {
+        "d": "Joe Biden",
+        "r": "Donald Trump",
+        "rIncumbent": true
+      },
+      "ushouse": {
+        "CD-11": {
+          "d": "Marcia Fudge",
+          "dIncumbent": true
+        },
+        "CD-13": {
+          "d": "Tim Ryan",
+          "r": "Christina Hagan",
+          "dIncumbent": true
+        },
+        "CD-14": {
+          "r": "David Joyce",
+          "rIncumbent": true
+        },
+        "CD-16": {
+          "r": "Anthony Gonzalez",
+          "rIncumbent": true
+        }
+      },
+      "sthouse": {
+        "HD-34": {
+          "d": "Emilia Sykes",
+          "dIncumbent": true
+        },
+        "HD-35": {
+          "d": "Tavia Galonski",
+          "dIncumbent": true
+        },
+        "HD-37": {
+          "d": "Casey Weinstein",
+          "dIncumbent": true
+        },
+        "HD-38": {
+          "r": "Bill Roemer",
+          "rIncumbent": true
+        }
+      }
+    },
+    "2018": {
+      "gov": {
+        "d": "Richard Cordray",
+        "r": "Mike DeWine"
+      },
+      "ussen": {
+        "d": "Sherrod Brown",
+        "r": "Jim Renacci",
+        "dIncumbent": true
+      },
+      "ushouse": {
+        "CD-11": {
+          "d": "Marcia Fudge",
+          "dIncumbent": true
+        },
+        "CD-13": {
+          "d": "Tim Ryan",
+          "dIncumbent": true
+        },
+        "CD-14": {
+          "r": "David Joyce",
+          "d": "Betsy Rader",
+          "rIncumbent": true
+        },
+        "CD-16": {
+          "r": "Anthony Gonzalez",
+          "d": "Susan Moran Palmer"
+        }
+      },
+      "sthouse": {
+        "HD-34": {
+          "d": "Emilia Sykes",
+          "dIncumbent": true
+        },
+        "HD-35": {
+          "d": "Tavia Galonski",
+          "dIncumbent": true
+        },
+        "HD-36": {
+          "r": "Anthony DeVitis",
+          "rIncumbent": true
+        },
+        "HD-37": {
+          "d": "Casey Weinstein"
+        },
+        "HD-38": {
+          "r": "Bill Roemer"
+        }
+      }
+    },
+    "2016": {
+      "pres": {
+        "d": "Hillary Clinton",
+        "r": "Donald Trump"
+      },
+      "ussen": {
+        "d": "Ted Strickland",
+        "r": "Rob Portman",
+        "rIncumbent": true
+      },
+      "ushouse": {
+        "CD-11": {
+          "d": "Marcia Fudge",
+          "dIncumbent": true
+        },
+        "CD-13": {
+          "d": "Tim Ryan",
+          "dIncumbent": true
+        },
+        "CD-14": {
+          "r": "David Joyce",
+          "rIncumbent": true
+        },
+        "CD-16": {
+          "r": "Jim Renacci",
+          "rIncumbent": true
+        }
+      },
+      "sthouse": {
+        "HD-34": {
+          "d": "Emilia Sykes"
+        },
+        "HD-36": {
+          "r": "Anthony DeVitis",
+          "rIncumbent": true
+        },
+        "HD-37": {
+          "r": "Kristina Roegner",
+          "rIncumbent": true
+        },
+        "HD-38": {
+          "r": "Marilyn Slaby",
+          "rIncumbent": true
+        }
+      }
+    }
+  },
+  "election2026": {
+    "date": "2026-11-03",
+    "status": "open",
+    "seatHolder": {
+      "name": "Bill Roemer",
+      "party": "R",
+      "note": "term-limited after four terms"
+    },
+    "candidates": {
+      "d": {
+        "name": "J. Noah Spinner",
+        "party": "D"
+      },
+      "r": {
+        "name": "Mike Kahoe",
+        "party": "R"
+      }
+    },
+    "primaryDate": "2026-05-05",
+    "sources": [
+      "https://ballotpedia.org/Ohio_House_of_Representatives_District_31",
+      "https://signalohio.org/anti-vax-advocate-economic-developer-competitive-ohio-house-district-31-seat-in-akron-suburbs-election-2026/"
+    ]
+  },
+  "sources": [
+    {
+      "label": "Precinct results 2016–2024",
+      "text": "Summit County Board of Elections official precinct canvass, compiled by hand into the hd31_<year>.csv files."
+    },
+    {
+      "label": "Precinct boundaries 2016–2022",
+      "text": "Ohio VTD shapefile (2020 vintage); the four elections share one precinct geography."
+    },
+    {
+      "label": "Precinct boundaries 2024",
+      "text": "Redistricting Data Hub 2024 general election SLDL precinct layer (oh_2024_gen_sldl_prec)."
+    },
+    {
+      "label": "Demographics",
+      "text": "2020 Census DHC (age), CVAP 2024 release (race/ethnicity) and ACS 2020–24 block groups (income, education), aggregated from census blocks to 2024 precincts."
+    },
+    {
+      "label": "Crosswalk",
+      "text": "TIGER/Line 2020 PL census blocks for Summit County with 2020 population, assigned to a 2016–2022 precinct and a 2024 precinct by block location."
+    }
+  ]
+}
