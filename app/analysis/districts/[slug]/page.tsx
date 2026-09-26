@@ -81,7 +81,7 @@ export default async function PrecinctDistrictPage({ params }: { params: Promise
       <DistrictHeader config={config} stats={stats} />
       <main className="mx-auto max-w-7xl px-4 pb-12 pt-4 sm:px-6">
         <section id="outlook" className="scroll-mt-24">
-          <LedgerSectionHead label={`${electionYear} outlook`} meta="structural projection · no polling or fundraising yet" />
+          <LedgerSectionHead label={`${electionYear} outlook`} />
           <Outlook config={config} p={projection} statewide={statewide} finance={data.finance} />
         </section>
 

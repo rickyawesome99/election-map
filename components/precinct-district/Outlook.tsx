@@ -21,7 +21,6 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
   const dName = e?.candidates?.d?.name ?? "the Democrat";
   const turnout = p.turnout;
   const rName = e?.candidates?.r?.name ?? "the Republican";
-  const leader = p.margin < 0 ? dName : rName;
   const pR = 1 - p.pD;
   const terms: { label: string; note: string; value: number; op?: string }[] = [
     { label: "Structural lean", note: `${p.rows.filter((r) => r.included).length} race-years, incumbency and environment stripped, recency-weighted`, value: p.lean },
@@ -46,9 +45,6 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
             <div><div className="text-2xl font-extrabold tabular-nums" style={{ color: "var(--party-rep)" }}>{Math.round(pR * 100)}%</div><div className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>{rName} (R)</div></div>
             <div><div className="text-2xl font-extrabold tabular-nums" style={{ color: "var(--app-text-primary)" }}>±{p.sigma.toFixed(1)}</div><div className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>σ, points</div></div>
           </div>
-          <p className="mt-4 max-w-xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
-            A structural read as of {p.asOf}: where these precincts sit once past candidates and past national environments are stripped out, moved by the national environment the site currently expects for November, by the seat being open{p.money ? " and by the nominees' fundraising to date" : ""}. {leader} leads on that arithmetic; the band is wide because state legislative results carry more candidate-specific variation than the races the site&apos;s forecast is fitted on. No polling or candidate-quality term is in the number yet{p.money ? "" : ", and no fundraising term: no receipts on file"}.
-          </p>
           {statewide.length > 0 && (
             <div className="mt-4 text-[12.5px]" style={{ color: "var(--app-text-muted)" }}>
               <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>{config.stateName} statewide, site forecast:</span>{" "}
@@ -113,15 +109,15 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
           <div className="mt-8">
             <div className="flex flex-wrap items-baseline justify-between gap-2 pb-1.5" style={{ borderBottom: "1px solid var(--app-border)" }}>
               <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Campaign money</div>
-              <div className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>candidate committees through {fmtDate(f.through)}{f.nextReport ? ` · next: ${f.nextReport}` : ""}</div>
+              <div className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Candidate committees through {fmtDate(f.through)}{f.nextReport ? ` · next: ${f.nextReport}` : ""}</div>
             </div>
             <div className="overflow-x-auto">
               <table className="w-full text-[13px]" style={{ borderCollapse: "collapse" }}>
                 <thead>
                   <tr style={{ color: "var(--app-text-muted)" }}>
                     <th className="py-2 pr-3 text-left text-[11px] font-semibold uppercase tracking-wider">Candidate</th>
-                    <th className="py-2 px-3 text-right text-[11px] font-semibold uppercase tracking-wider">Raised</th>
-                    <th className="py-2 px-3 text-right text-[11px] font-semibold uppercase tracking-wider">of which in-kind</th>
+                    <th className="py-2 px-3 text-right text-[11px] font-semibold uppercase tracking-wider">Total raised</th>
+                    <th className="py-2 px-3 text-right text-[11px] font-semibold uppercase tracking-wider">In-kind</th>
                     <th className="py-2 px-3 text-right text-[11px] font-semibold uppercase tracking-wider">Spent</th>
                     <th className="py-2 pl-3 text-right text-[11px] font-semibold uppercase tracking-wider">Cash on hand</th>
                   </tr>
@@ -139,21 +135,24 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
                 </tbody>
               </table>
             </div>
-            <div className="mt-2 max-w-4xl space-y-1.5 text-[11.5px]" style={{ color: "var(--app-text-very-muted)" }}>
-              <p>
-                <b style={{ color: "var(--app-text-muted)" }}>How it enters the margin.</b> Receipts gap {signed(m.gapPct)}% (R-positive share of the two nominees&apos; combined {usd(m.dReceipts + m.rReceipts)}), × {m.scale} because the trailing side usually closes part of the gap after mid-cycle = {signed(m.scale * m.gapPct)}%. {m.incSign === 0 ? "An open" : m.incSign > 0 ? "A Republican-held" : "A Democratic-held"} {config.state} House seat at a {fmtMargin(m.presMargin)} presidential margin typically sees {signed(m.structuralGapPct)}%, so the edge beyond the seat is {signed(m.residualGapPct)}%. At K = {cal.K} points per point of edge that is {signed(cal.K * m.residualGapPct)}{Math.abs(cal.K * m.residualGapPct) > cal.CAP ? `, capped at ${signed(m.pts)}` : ""}.
-                K and the typical gap are fitted on {cal.n} contested {cal.state} House races in {cal.fitYear} (K = {cal.kOls.toFixed(3)} ± {cal.kSe.toFixed(3)}, rounded; the money term cuts the fit&apos;s error from {cal.rmse.noMoney.toFixed(1)} to {cal.rmse.withMoney.toFixed(1)} points) — see the <Link href="/methodology/precinct-district" className="underline">methodology</Link>.
-              </p>
-              <p>
-                <b style={{ color: "var(--app-text-muted)" }}>Raised is not spending power.</b> Gross receipts are the calibration&apos;s measure and read as a signal of donor and caucus backing. They include in-kind spending made on a candidate&apos;s behalf and money a candidate passes on to the caucus, so cash on hand can run the other way.
-                {[f.d, f.r].flatMap((c) => c.caveats ?? []).map((t) => <span key={t}> {t}</span>)}
-              </p>
-              {strip.length > 0 && (
+            <details className="mt-3 text-[12.5px]">
+              <summary className="cursor-pointer select-none font-semibold" style={{ color: "var(--app-text-muted)" }}>More details</summary>
+              <div className="mt-2 max-w-4xl space-y-1.5 text-[11.5px]" style={{ color: "var(--app-text-very-muted)" }}>
                 <p>
-                  <b style={{ color: "var(--app-text-muted)" }}>Past races.</b> {strip.map((r) => { const h = finance.history[r.office]?.[String(r.year)]; return `${r.label}: ${h?.rName ?? "R"} ${usd(h?.r ?? 0)} vs ${h?.dName ?? "D"} ${usd(h?.d ?? 0)}, worth ${signed(r.moneyPts)} beyond the typical gap for the seat`; }).join("; ")}. That much is removed from those rows before the lean and the down-ballot gap are formed, so it is not counted twice.
+                  <b style={{ color: "var(--app-text-muted)" }}>How it enters the margin.</b> Receipts gap {signed(m.gapPct)}% (R-positive share of the two nominees&apos; combined {usd(m.dReceipts + m.rReceipts)}), × {m.scale} because the trailing side usually closes part of the gap after mid-cycle = {signed(m.scale * m.gapPct)}%. {m.incSign === 0 ? "An open" : m.incSign > 0 ? "A Republican-held" : "A Democratic-held"} {config.state} House seat at a {fmtMargin(m.presMargin)} presidential margin typically sees {signed(m.structuralGapPct)}%, so the edge beyond the seat is {signed(m.residualGapPct)}%. At K = {cal.K} points per point of edge that is {signed(cal.K * m.residualGapPct)}{Math.abs(cal.K * m.residualGapPct) > cal.CAP ? `, capped at ${signed(m.pts)}` : ""}.
+                  K and the typical gap are fitted on {cal.n} contested {cal.state} House races in {cal.fitYear} (K = {cal.kOls.toFixed(3)} ± {cal.kSe.toFixed(3)}, rounded; the money term cuts the fit&apos;s error from {cal.rmse.noMoney.toFixed(1)} to {cal.rmse.withMoney.toFixed(1)} points) — see the <Link href="/methodology/precinct-district" className="underline">methodology</Link>.
                 </p>
-              )}
-            </div>
+                <p>
+                  <b style={{ color: "var(--app-text-muted)" }}>Raised is not spending power.</b> Gross receipts are the calibration&apos;s measure and read as a signal of donor and caucus backing. They include in-kind spending made on a candidate&apos;s behalf and money a candidate passes on to the caucus, so cash on hand can run the other way.
+                  {[f.d, f.r].flatMap((c) => c.caveats ?? []).map((t) => <span key={t}> {t}</span>)}
+                </p>
+                {strip.length > 0 && (
+                  <p>
+                    <b style={{ color: "var(--app-text-muted)" }}>Past races.</b> {strip.map((r) => { const h = finance.history[r.office]?.[String(r.year)]; return `${r.label}: ${h?.rName ?? "R"} ${usd(h?.r ?? 0)} vs ${h?.dName ?? "D"} ${usd(h?.d ?? 0)}, worth ${signed(r.moneyPts)} beyond the typical gap for the seat`; }).join("; ")}. That much is removed from those rows before the lean and the down-ballot gap are formed, so it is not counted twice.
+                  </p>
+                )}
+              </div>
+            </details>
           </div>
         );
       })()}

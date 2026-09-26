@@ -29,7 +29,6 @@ export default function DistrictHeader({ config, stats }: { config: DistrictConf
   const heroMargin = stats.legMargin ?? stats.presMargin;
   const heroIsD = heroMargin != null && heroMargin <= 0;
   const e = config.election2026;
-  const subdivisionNames = config.subdivisions.map((s) => s.name).join(", ");
   const dName = e?.candidates?.d?.name;
   const rName = e?.candidates?.r?.name;
 
@@ -38,43 +37,25 @@ export default function DistrictHeader({ config, stats }: { config: DistrictConf
       <div className="mx-auto max-w-7xl px-4 pb-6 pt-3 sm:px-6 sm:pb-8">
         <div className="mb-5 -ml-2"><BackButton /></div>
 
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-          <div className="min-w-0">
-            <div className="flex items-center gap-3">
-              <span className="shrink-0 rounded-full px-2.5 py-1 text-xs font-bold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>{config.state}</span>
-              <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5.5vw, 3.5rem)", fontWeight: 700, lineHeight: 0.98, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}>
-                {config.chamber === "house" ? "House" : "Senate"} District {config.number}
-              </h1>
-            </div>
-            <div className="mt-3 max-w-2xl text-sm" style={{ color: "var(--app-text-muted)" }}>
-              {config.county} · {stats.precincts} precincts · {subdivisionNames}
-            </div>
-            {e && (
-              <div className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
-                <span className="rounded-full px-2 py-0.5 text-[11px] font-bold uppercase tracking-wider" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }}>
-                  {e.status === "open" ? "Open seat" : "Incumbent"} · {new Date(e.date + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+        <div className="min-w-0">
+          <div className="flex items-center gap-3">
+            <span className="shrink-0 rounded-full px-2.5 py-1 text-xs font-bold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>{config.state}</span>
+            <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5.5vw, 3.5rem)", fontWeight: 700, lineHeight: 0.98, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}>
+              {config.chamber === "house" ? "House" : "Senate"} District {config.number}
+            </h1>
+          </div>
+          {e && (
+            <div className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
+              <span className="rounded-full px-2 py-0.5 text-[11px] font-bold uppercase tracking-wider" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }}>
+                {e.status === "open" ? "Open seat" : "Incumbent"} · {new Date(e.date + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+              </span>
+              {dName && rName && (
+                <span style={{ color: "var(--app-text-primary)" }}>
+                  <b style={{ color: "var(--party-dem)" }}>{dName}</b> (D) vs <b style={{ color: "var(--party-rep)" }}>{rName}</b> (R)
                 </span>
-                {dName && rName && (
-                  <span style={{ color: "var(--app-text-primary)" }}>
-                    <b style={{ color: "var(--party-dem)" }}>{dName}</b> (D) vs <b style={{ color: "var(--party-rep)" }}>{rName}</b> (R)
-                  </span>
-                )}
-                {e.seatHolder && (
-                  <span style={{ color: "var(--app-text-muted)" }}>
-                    · {e.seatHolder.name} ({e.seatHolder.party}){e.seatHolder.note ? `, ${e.seatHolder.note}` : ""}
-                  </span>
-                )}
-              </div>
-            )}
-          </div>
-
-          <div className="shrink-0 lg:text-right">
-            <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{stats.legLabel}</div>
-            <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6vw, 3.75rem)", fontWeight: 700, lineHeight: 1, marginTop: "0.35rem", color: marginColor(stats.legMargin) }}>
-              {stats.legMargin == null ? "—" : fmtMargin(stats.legMargin)}
+              )}
             </div>
-            {stats.legCandidates && <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>{stats.legCandidates}</div>}
-          </div>
+          )}
         </div>
 
         <div className="mt-8 flex flex-wrap gap-x-8 gap-y-4 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
