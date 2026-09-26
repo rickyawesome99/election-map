@@ -142,9 +142,47 @@ export interface DistrictCrosswalk {
   eras: Record<string, EraCrosswalk>;
 }
 
+export interface CandidateFinance {
+  name: string;
+  committee: string;
+  receipts: number;       // gross: cash + in-kind, net of refunds (the calibration's measure)
+  inKind: number;
+  spent: number;
+  cashOnHand: number;
+  url: string;
+  caveats?: string[];
+}
+
+/** data/precinct-districts/<slug>/finance.json — hand-entered from the state filings. */
+export interface DistrictFinance {
+  note: string;
+  "2026": { through: string; nextReport?: string; d: CandidateFinance; r: CandidateFinance };
+  /** past nominees' receipts by office and year, used to strip money from those race rows */
+  history: Partial<Record<string, Record<string, { d: number; r: number; dName?: string; rName?: string }>>>;
+}
+
+/** data/precinct-districts/money/<ST>.json — written by scripts/fitStateLegMoney.ts. */
+export interface MoneyCalibration {
+  state: string;
+  chamber: string;
+  fitYear: number;
+  n: number;
+  source: string;
+  structural: { intercept: number; incSign: number; pres: number };
+  K: number;
+  kOls: number;
+  kSe: number;
+  CAP: number;
+  rmse: { noMoney: number; withMoney: number };
+  looGrid: { k: number; looMae: number }[];
+  fitted: string;
+}
+
 export interface PrecinctDistrictData {
   config: DistrictConfig;
   results: DistrictResults;
   demographics: DistrictDemographics;
   crosswalk: DistrictCrosswalk;
+  finance?: DistrictFinance;
+  moneyCalibration?: MoneyCalibration;
 }

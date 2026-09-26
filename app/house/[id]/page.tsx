@@ -325,6 +325,11 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
 
           <section>
             <LedgerSectionHead label="About this District" />
+            {race.raceDesc && (
+              <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--app-text-primary)" }}>
+                {race.raceDesc}
+              </p>
+            )}
             {demographics && (
               <div className="mb-4">
                 <DemographicsStrip {...demographics} />

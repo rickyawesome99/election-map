@@ -23,6 +23,18 @@ export interface MethodologyChange {
 
 export const METHODOLOGY_CHANGELOG: MethodologyChange[] = [
   {
+    date: "2026-09-26", models: ["precinct-district"], kind: "change",
+    title: "Precinct-district pages: a campaign-money term, calibrated per state",
+    detail: "The outlook adds money = clamp(K × (0.9 × gap% − typical gap%), ±CAP), the site's residual money basis re-fitted on the state's own House races (scripts/fitStateLegMoney.ts → data/precinct-districts/money/<ST>.json). gap% is the nominees' gross receipts gap (cash + in-kind, net of refunds; data/precinct-districts/<slug>/finance.json); typical gap% = a + b × incSign + c × presidential margin; 0.9 is the U.S. House partial-cycle scale. Ohio, 76 contested 2024 House races (Transparency USA receipts, 2024 President by district): typical gap = −0.8 + 55.0 × incSign + 0.91 × pres; K = 0.073 ± 0.011 → 0.07; CAP 3 (the congressional House cap); fit error 4.26 → 3.37, leave-one-out MAE 3.36 (no money) → 2.72 at K 0.08. Past State House rows with receipts on file are stripped of the same term (full-cycle, scale 1) before the lean and down-ballot gap, so an incumbent's money edge is not counted twice. σ unchanged. The OH-31 finance file nets a $16,615.50 refunded excess contribution out of Kahoe's listed receipts.",
+    effect: "OH-31: money R+3.0 (Kahoe $246,203 vs Spinner $66,516 through 2026-06-30, gap R+57.5%, typical −0.2%, uncapped R+3.6); Roemer's 2024 row stripped 0.56 (down-ballot gap R+1.15 → R+0.87). Margin D+4.8 → D+2.1, P(D) 0.72 → 0.60.",
+  },
+  {
+    date: "2026-09-25", models: ["precinct-district"], kind: "change",
+    title: "Precinct-district pages: one 2026 turnout estimate replaces the turnout scenarios",
+    detail: "The outlook's three turnout scenarios (latest presidential ballots as cast, and each past midterm's precinct turnout rate on today's registration) showed nearly identical margins, because they could only move the margin through which precincts turn out, and midterm drop-off is spread almost evenly across precincts (OH-31 composition effect: +0.25 pts 2016→2018, +0.08 pts 2020→2022). They are replaced by a single estimate: each precinct's mean midterm turnout rate on today's lines × today's registration, with each basis midterm alone shown as the range. The explorer's Projection mode uses the estimate and loses its scenario pills. The district margin and σ are unchanged.",
+    effect: "OH-31: 53,967 ballots (60.0% of registration; range 52,564 at 2022 rates to 55,369 at 2018 rates, vs 69,282 in 2024). The Republican trails by 2,274 net votes (2,194–2,354).",
+  },
+  {
     date: "2026-09-24", models: ["war"], kind: "change",
     title: "WAR is measured against a non-incumbent replacement",
     detail: "The replacement-level nominee was implicitly a generic nominee of the same incumbency status, so an incumbent was scored against a generic incumbent. A freely available nominee never holds the seat, so the incumbent's row now adds back Incumb. = Expected − the same expectation with no incumbent in the race (the office's incumbency term plus the incumbent share of the structural money term, re-priced on the open-seat margin). Vs. Opponent becomes generic non-incumbent vs this opponent; WAR = Effect + leftover + Incumb. Challengers and open seats are unchanged; appointed incumbents get only the money share. The ridge still solves on the incumbency-stripped residual, so Effect, the forecast's Candidates term and the structural money model are untouched.",

@@ -1,0 +1,36 @@
+{
+  "note": "Gross candidate-committee receipts (cash + in-kind, net of refunds) — the same measure the state money calibration (data/precinct-districts/money/OH.json) was fitted on. Source: Transparency USA, which republishes the Ohio Secretary of State filings; the SoS site itself was unreachable (403) when this was entered, so these are not checked against the official cover pages.",
+  "2026": {
+    "through": "2026-06-30",
+    "nextReport": "Pre-General (7/1–10/14), due 2026-10-22",
+    "d": {
+      "name": "J. Noah Spinner",
+      "committee": "Spinner for Ohio",
+      "receipts": 66516.18,
+      "inKind": 4000,
+      "spent": 7786.62,
+      "cashOnHand": 54730,
+      "url": "https://www.transparencyusa.org/oh/candidate/john-spinner-14856"
+    },
+    "r": {
+      "name": "Mike Kahoe",
+      "committee": "Kahoe for Ohio",
+      "receipts": 246202.54,
+      "inKind": 79561,
+      "spent": 122666.03,
+      "cashOnHand": 43975,
+      "url": "https://www.transparencyusa.org/oh/candidate/michael-kahoe",
+      "caveats": [
+        "Receipts net of a $16,615.50 excess contribution refunded 12/30/2025 (listed $262,818.04 gross).",
+        "$105,000 of spending was transferred to the House Republican Campaign Committee; $79,561 of receipts is caucus/party in-kind (OHROC, Ohio Republican PAC), mostly primary-season.",
+        "No July semiannual report appears in the source; June 2026 activity may be missing."
+      ]
+    }
+  },
+  "history": {
+    "sthouse": {
+      "2024": { "d": 170607, "r": 747098, "dName": "AJ Harris", "rName": "Bill Roemer" },
+      "2022": { "d": 53420, "r": 558059, "dName": "Rita Darrow", "rName": "Bill Roemer" }
+    }
+  }
+}

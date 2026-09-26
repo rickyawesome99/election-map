@@ -1,0 +1,51 @@
+{
+  "state": "OH",
+  "chamber": "house",
+  "fitYear": 2024,
+  "n": 76,
+  "source": "data-entry/state-leg-finance/OH-house-2018-2024.csv (Transparency USA, gross receipts incl. in-kind) · data-entry/state-leg-results/OH-2024.json · data/stateLegPres2024.ts",
+  "structural": {
+    "intercept": -0.7775246015710255,
+    "incSign": 54.972263815009825,
+    "pres": 0.9089702679715685
+  },
+  "K": 0.07,
+  "kOls": 0.07340184200150612,
+  "kSe": 0.011210682763646746,
+  "CAP": 3,
+  "rmse": {
+    "noMoney": 4.258150247218615,
+    "withMoney": 3.371200696999091
+  },
+  "looGrid": [
+    {
+      "k": 0,
+      "looMae": 3.358
+    },
+    {
+      "k": 0.02,
+      "looMae": 3.064
+    },
+    {
+      "k": 0.04,
+      "looMae": 2.871
+    },
+    {
+      "k": 0.06,
+      "looMae": 2.762
+    },
+    {
+      "k": 0.08,
+      "looMae": 2.722
+    },
+    {
+      "k": 0.1,
+      "looMae": 2.75
+    },
+    {
+      "k": 0.12,
+      "looMae": 2.771
+    }
+  ],
+  "fitted": "2026-09-26"
+}

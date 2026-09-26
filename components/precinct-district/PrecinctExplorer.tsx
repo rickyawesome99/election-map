@@ -71,6 +71,8 @@ function Segmented<T extends string>({ value, options, onChange }: { value: T; o
   );
 }
 
+const TURNOUT_LABEL = "2026 turnout est.";
+
 function Label({ children }: { children: ReactNode }) {
   return <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em]" style={{ color: "var(--app-text-very-muted)" }}>{children}</span>;
 }
@@ -101,7 +103,6 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
   const [showPct, setShowPct] = useState(false);
   const [showTurnout, setShowTurnout] = useState(true);
   const [search, setSearch] = useState("");
-  const [scenario, setScenario] = useState<string>(projection?.scenarios[0]?.id ?? "");
   const modes = projection ? MODES : MODES.filter((m) => m.id !== "projection");
   const [geo, setGeo] = useState<Record<string, PrecinctFC>>({});
 
@@ -165,14 +166,14 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
   const targetDef = TARGET_METRIC_BY_KEY[targetMetric];
   const currentIds = useMemo(() => precinctRows(data, Math.max(...cur.years), "current"), [data, cur.years]);
 
-  // 2026 projection per unit under the chosen turnout scenario (precinct, or subdivision sum)
+  // 2026 projection per unit at the 2026 turnout estimate (precinct, or subdivision sum)
   const projUnits = useMemo(() => {
     const out = new Map<string, { base: number | null; projected: number | null; ballots: number; d: number; r: number }>();
     if (!projection) return out;
     const acc = new Map<string, { ballots: number; d: number; r: number; baseNum: number; baseDen: number }>();
     for (const p of projection.precincts) {
       const key = level === "subdivision" ? p.sub : p.id;
-      const b = p.ballots[scenario] ?? 0;
+      const b = p.ballots;
       const two = b * p.twoPartyRate;
       const e = acc.get(key) ?? { ballots: 0, d: 0, r: 0, baseNum: 0, baseDen: 0 };
       e.ballots += b;
@@ -182,8 +183,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
     }
     for (const [k, e] of acc) out.set(k, { ballots: e.ballots, d: e.d, r: e.r, projected: e.d + e.r > 0 ? ((e.r - e.d) / (e.d + e.r)) * 100 : null, base: e.baseDen > 0 ? e.baseNum / e.baseDen : null });
     return out;
-  }, [projection, level, scenario]);
-  const scenarioDef = projection?.scenarios.find((s) => s.id === scenario) ?? projection?.scenarios[0] ?? null;
+  }, [projection, level]);
 
   const demoRowsFor = useCallback((unit: string) => (
     level === "subdivision"
@@ -256,12 +256,12 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
       let d = 0, r = 0, b = 0;
       for (const p of projection.precincts) {
         if (subFilter && p.sub !== subFilter) continue;
-        const bb = p.ballots[scenario] ?? 0; const two = bb * p.twoPartyRate; b += bb;
+        const bb = p.ballots; const two = bb * p.twoPartyRate; b += bb;
         if (p.projected != null) { const dS = (1 - p.projected / 100) / 2; d += two * dS; r += two * (1 - dS); }
       }
       const m = d + r > 0 ? ((r - d) / (d + r)) * 100 : null;
       const dn = config.election2026?.candidates?.d?.name ?? "D"; const rn = config.election2026?.candidates?.r?.name ?? "R";
-      return { value: m, text: `projected 2026 State House · ${scope} · ${scenarioDef?.label ?? ""} · ${fmtInt(b)} ballots · ${dn} ${fmtInt(d)} · ${rn} ${fmtInt(r)} · ${fmtInt(Math.abs(r - d))} net votes separate them` };
+      return { value: m, text: `projected 2026 State House · ${scope} · ${fmtInt(b)} est. ballots · ${dn} ${fmtInt(d)} · ${rn} ${fmtInt(r)} · ${fmtInt(Math.abs(r - d))} net votes separate them` };
     }
     const tr = [...targeting.values()].filter((r) => !subFilter || (level === "subdivision" ? r.id === subFilter : r.sub === subFilter));
     let v: number | null = null;
@@ -272,7 +272,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
       v = den > 0 ? num / den : null;
     }
     return { value: v, text: `${targetDef.label} · ${scope} · ${targetMetric === "persuadable" ? "sum" : "ballot-weighted"} · ${targetDef.describe}` };
-  }, [mode, visibleRows, office, year, yr, compare, compareRows, results.years, subFilter, level, config, crossEra, currentIds, data.demographics.precincts, demoMetricDef, targeting, targetMetric, targetDef, projection, scenario, scenarioDef]);
+  }, [mode, visibleRows, office, year, yr, compare, compareRows, results.years, subFilter, level, config, crossEra, currentIds, data.demographics.precincts, demoMetricDef, targeting, targetMetric, targetDef, projection]);
 
   // ── Ledger ─────────────────────────────────────────────────────────────────
   const ledger = useMemo((): LedgerRow[] => {
@@ -282,7 +282,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
     const projSubs = new Map<string, { d: number; r: number }>();
     if (projection) for (const p of projection.precincts) {
       if (p.projected == null) continue;
-      const two = (p.ballots[scenario] ?? 0) * p.twoPartyRate; const dS = (1 - p.projected / 100) / 2;
+      const two = p.ballots * p.twoPartyRate; const dS = (1 - p.projected / 100) / 2;
       const e = projSubs.get(p.sub) ?? { d: 0, r: 0 }; e.d += two * dS; e.r += two * (1 - dS); projSubs.set(p.sub, e);
     }
     return subs.map((s) => {
@@ -301,7 +301,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
         : sequentialColor(v, mode === "demographics" ? demoMetricDef.domain : (targetDef.domain ?? [0, 1]), darkMode);
       return { id: s.id, name: subName(config, s.id), count: s.count ?? 0, ballots: s.ballots, valueLabel: formatValue(v), valueColor: valueColor(v), swatch };
     });
-  }, [data, year, compare, mode, office, currentIds, demoMetricDef, targetMetric, targetDef, darkMode, config, formatValue, valueColor, projection, scenario]);
+  }, [data, year, compare, mode, office, currentIds, demoMetricDef, targetMetric, targetDef, darkMode, config, formatValue, valueColor, projection]);
 
   // ── Panel helpers (always on today's lines) ─────────────────────────────────
   const panelRowsCache = useMemo(() => new Map<number, ExplorerRow[]>(), [data, level]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -379,7 +379,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
           <div className="grid grid-cols-[1fr_auto] gap-x-3 gap-y-0.5 text-[11px]">
             <FragmentRow label={`${projection?.baseline.year ?? ""} baseline`} value={fmtMargin(u?.base ?? null)} t={t} color={u?.base == null ? t.textPrimary : u.base > 0 ? t.repText : t.demText} />
             <FragmentRow label="Projected 2026" value={fmtMargin(u?.projected ?? null)} strong t={t} color={u?.projected == null ? t.textPrimary : u.projected > 0 ? t.repText : t.demText} />
-            <FragmentRow label={scenarioDef?.label ?? "ballots"} value={fmtInt(u?.ballots)} t={t} />
+            <FragmentRow label={TURNOUT_LABEL} value={fmtInt(u?.ballots)} t={t} />
             <FragmentRow label={config.election2026?.candidates?.d?.name ?? "D"} value={fmtInt(u?.d)} t={t} color={t.demText} />
             <FragmentRow label={config.election2026?.candidates?.r?.name ?? "R"} value={fmtInt(u?.r)} t={t} color={t.repText} />
           </div>
@@ -399,7 +399,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
         {tr?.estimated && <div className="mt-1 text-[10px]" style={{ color: t.textMuted }}>drop-off / trend use ≈ estimated older years</div>}
       </>
     );
-  }, [level, config, rowById, t, mode, office, year, yr, compare, swing, results.years, demoRowsFor, demoMetric, targeting, targetMetric, projUnits, projection, scenarioDef]);
+  }, [level, config, rowById, t, mode, office, year, yr, compare, swing, results.years, demoRowsFor, demoMetric, targeting, targetMetric, projUnits, projection]);
 
   const tooltipHtml = useCallback((unit: string): string => {
     const name = level === "subdivision" ? subName(config, unit) : unit;
@@ -482,10 +482,10 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
       const rn = config.election2026?.candidates?.r?.name?.split(" ").pop() ?? "R";
       cols.push({ key: "base", label: `${projection.baseline.year} baseline`, sortValue: (r) => projUnits.get(r.id)?.base ?? null, render: (r) => num(projUnits.get(r.id)?.base, fmtMargin, mcol) });
       cols.push({ key: "proj", label: "Projected", sortValue: (r) => projUnits.get(r.id)?.projected ?? null, render: (r) => <b>{num(projUnits.get(r.id)?.projected, fmtMargin, mcol)}</b> });
-      cols.push({ key: "pballots", label: "Ballots", group: scenarioDef?.label, borderLeft: true, sortValue: (r) => projUnits.get(r.id)?.ballots ?? null, render: (r) => num(projUnits.get(r.id)?.ballots, (x) => fmtInt(x)) });
-      cols.push({ key: "pd", label: dn, group: scenarioDef?.label, color: "var(--party-dem)", sortValue: (r) => projUnits.get(r.id)?.d ?? null, render: (r) => num(projUnits.get(r.id)?.d, (x) => fmtInt(x), () => "var(--party-dem)") });
-      cols.push({ key: "pr", label: rn, group: scenarioDef?.label, color: "var(--party-rep)", sortValue: (r) => projUnits.get(r.id)?.r ?? null, render: (r) => num(projUnits.get(r.id)?.r, (x) => fmtInt(x), () => "var(--party-rep)") });
-      cols.push({ key: "pnet", label: "Net", group: scenarioDef?.label, sortValue: (r) => { const u = projUnits.get(r.id); return u ? u.r - u.d : null; }, render: (r) => { const u = projUnits.get(r.id); const v = u ? u.r - u.d : null; return num(v, (x) => `${x > 0 ? "R" : "D"}+${fmtInt(Math.abs(x))}`, (x) => (x > 0 ? "var(--party-rep)" : "var(--party-dem)")); } });
+      cols.push({ key: "pballots", label: "Ballots", group: TURNOUT_LABEL, borderLeft: true, sortValue: (r) => projUnits.get(r.id)?.ballots ?? null, render: (r) => num(projUnits.get(r.id)?.ballots, (x) => fmtInt(x)) });
+      cols.push({ key: "pd", label: dn, group: TURNOUT_LABEL, color: "var(--party-dem)", sortValue: (r) => projUnits.get(r.id)?.d ?? null, render: (r) => num(projUnits.get(r.id)?.d, (x) => fmtInt(x), () => "var(--party-dem)") });
+      cols.push({ key: "pr", label: rn, group: TURNOUT_LABEL, color: "var(--party-rep)", sortValue: (r) => projUnits.get(r.id)?.r ?? null, render: (r) => num(projUnits.get(r.id)?.r, (x) => fmtInt(x), () => "var(--party-rep)") });
+      cols.push({ key: "pnet", label: "Net", group: TURNOUT_LABEL, sortValue: (r) => { const u = projUnits.get(r.id); return u ? u.r - u.d : null; }, render: (r) => { const u = projUnits.get(r.id); const v = u ? u.r - u.d : null; return num(v, (x) => `${x > 0 ? "R" : "D"}+${fmtInt(Math.abs(x))}`, (x) => (x > 0 ? "var(--party-rep)" : "var(--party-dem)")); } });
       return cols;
     }
     // targeting
@@ -499,7 +499,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
       });
     }
     return cols;
-  }, [mode, showTurnout, showVotes, showPct, offices, yr, compare, results.years, year, office, swing, demoRowsFor, demoMetric, tctx.year, targeting, targetMetric, projection, projUnits, scenarioDef, config.election2026]);
+  }, [mode, showTurnout, showVotes, showPct, offices, yr, compare, results.years, year, office, swing, demoRowsFor, demoMetric, tctx.year, targeting, targetMetric, projection, projUnits, config.election2026]);
 
   const tableRows = useMemo(() => {
     const q = search.trim().toUpperCase();
@@ -541,7 +541,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
       {/* Context pills */}
       <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2">
         {mode === "projection" && projection && (
-          <div className="flex items-center gap-1 overflow-x-auto scrollbar-none"><Label>Turnout</Label>{projection.scenarios.map((s) => <Pill key={s.id} active={scenario === s.id} onClick={() => setScenario(s.id)}>{s.label}</Pill>)}</div>
+          <div className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}><Label>Turnout</Label> {fmtInt(projection.turnout.ballots)} ballots est. — each precinct&apos;s average {projection.turnout.basisYears.join("/")} turnout rate on today&apos;s registration</div>
         )}
         {mode !== "targeting" && mode !== "projection" && !demoMode && (
           <>

@@ -240,7 +240,7 @@ export const officeholders: Record<string, StateOfficeholders> = {
     ],
   },
   NJ: {
-    governor: { name: "Mikie Sherill", party: "D", nextElection: 2029, termYears: 4 },
+    governor: { name: "Mikie Sherrill", party: "D", nextElection: 2029, termYears: 4 },
     senators: [
       { seat: 1, seatClass: 1, name: "Andy Kim", party: "D", nextElection: 2030 },
       { seat: 2, seatClass: 2, name: "Cory Booker", party: "D", nextElection: 2026 },

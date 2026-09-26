@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { TPL_GLOBAL_CONSTANTS as G, FORECAST_CONSTANTS as F } from "@/data/tplModelData";
-import { getTplFit, getNationalEnvironment } from "@/lib/tplCompute";
+import { getTplFit, getNationalEnvironment, getWarMoneyModel } from "@/lib/tplCompute";
 import { getPrecinctDistrict, precinctDistrictSlugs } from "@/lib/precinctDistrict/registry";
 import { projectDistrict, PROJECTION_CONSTANTS } from "@/lib/precinctDistrict/project";
 import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, Ledger, M, N, P, Section, pct, signed, type ConstantRow, type LedgerLine } from "./kit";
@@ -34,6 +34,7 @@ export default function PrecinctMethodology() {
     { op: "+", label: "2026 environment", note: `β* ${p.beta.toFixed(2)} × E(2026) ${signed(p.eHat)}`, value: <M v={p.envPts} /> },
     { op: "+", label: "Incumbency", note: "open seat", value: <M v={0} /> },
     { op: "+", label: "Down-ballot gap", note: p.gap.raw == null ? "no single-race State House year" : `${signed(p.gap.raw)} over ${p.gap.n} yr × ${p.gap.shrink.toFixed(2)}`, value: <M v={p.gap.value} /> },
+    ...(p.money ? [{ op: "+" as const, label: "Campaign money", note: `gap ${signed(p.money.gapPct)}% × ${p.money.scale} − typical ${signed(p.money.structuralGapPct)}% → × K ${p.money.calibration.K}${Math.abs(p.money.pts) >= p.money.calibration.CAP ? `, cap ±${p.money.calibration.CAP}` : ""}`, value: <M v={p.money.pts} /> }] : []),
     { op: "=", label: "Projected margin", note: `σ ${p.sigma.toFixed(1)} · P(D) ${pct(p.pD)}`, value: <M v={p.margin} />, total: true },
   ];
 
@@ -49,10 +50,16 @@ export default function PrecinctMethodology() {
               { path: "data/precinct-districts/<slug>/results.json", role: "long-format results: year → offices (labels, candidates, districts) + precinct rows {id, sub, reg, ballots, races}" },
               { path: "data/precinct-districts/<slug>/crosswalk.json", role: "older era → current era population weights, per-precinct coverage, composition of each current precinct" },
               { path: "data/precinct-districts/<slug>/demographics.json", role: "current-era precinct → 2020 Census / ACS fields" },
+              { path: "data/precinct-districts/<slug>/finance.json", role: "hand-entered from the state filings: the 2026 nominees' receipts (as of a report date) and past nominees' receipts by office and year; optional — without it there is no money term" },
+              { path: "data-entry/state-leg-finance/<ST>-house-<years>.csv", role: "every nominee's cycle receipts for the state's House races (Transparency USA), the calibration input" },
+              { path: "data/precinct-districts/money/<ST>.json", role: "the state's money calibration (K, cap, typical-gap model, fit diagnostics), shared by every district in the state" },
               { path: "public/precinct-districts/<slug>/precincts-<era>.geojson", role: "geometry with {id, subdivision} only" },
               { path: "lib/precinctDistrict/{aggregate,explorer,project}.ts", role: "sums and margins · explorer rows, swing, targeting · 2026 outlook" },
             ]}
-            commands={[{ cmd: "python3 scripts/build-precinct-district.py <slug>", does: "rebuilds every file above for one district (needs CENSUS_API_KEY once, for block populations)" }]}
+            commands={[
+              { cmd: "python3 scripts/build-precinct-district.py <slug>", does: "rebuilds the results, crosswalk, demographics and geometry for one district (needs CENSUS_API_KEY once, for block populations)" },
+              { cmd: "npx tsx scripts/fitStateLegMoney.ts <ST>", does: "refits the state's money calibration from its receipts file and legislative results" },
+            ]}
           />
         </Block>
       </Section>
@@ -80,17 +87,17 @@ export default function PrecinctMethodology() {
       </Section>
 
       <Section id="outlook" kicker="2026" title="The district outlook"
-        lede="A district TPL in the site's sense, built from the district's own precinct sums and projected with the shared environment fit. It is deliberately the simple version: no polling, fundraising or candidate-quality term until those inputs exist for state legislative races.">
+        lede="A district TPL in the site's sense, built from the district's own precinct sums and projected with the shared environment fit. It is deliberately the simple version: no polling or candidate-quality term, and a fundraising term only where the nominees' receipts and a state calibration are on file.">
         <Block label="Neutral margin per race-year">
-          <Formula lines={["NM(race, year) = raw + incumbency strip − β*(state) × E(year)", "raw = two-party margin of the footprint on today's lines (R-positive)", "incumbency strip = −adv if the incumbent was R, +adv if D; adv from the TPL fit (House advantage stands in for State House)"]}
-            note={<>Statewide races always enter. A House or State House year enters only when the footprint was a single race; when it summed several districts (different candidates, some uncontested) it is excluded. No fundraising strip: no receipts are on file for these races. β* and E(year) are read from <Link href="/methodology/state-tpl" className="underline">the State TPL fit</Link>.</>} />
+          <Formula lines={["NM(race, year) = raw + incumbency strip − β*(state) × E(year) − money(race, year)", "raw = two-party margin of the footprint on today's lines (R-positive)", "incumbency strip = −adv if the incumbent was R, +adv if D; adv from the TPL fit (House advantage stands in for State House)"]}
+            note={<>Statewide races always enter. A House or State House year enters only when the footprint was a single race; when it summed several districts (different candidates, some uncontested) it is excluded. The money strip applies only to races whose nominees&apos; receipts are in finance.json (priced as in Campaign money below, full-cycle, on the nearest presidential margin at or before that year); every other row carries none. β* and E(year) are read from <Link href="/methodology/state-tpl" className="underline">the State TPL fit</Link>.</>} />
         </Block>
         <Block label="Lean">
           <Formula lines={["year NM   = Σ_type RACE_TYPE_WEIGHTS[type] × mean NM of that type  /  coverage", "coverage  = Σ RACE_TYPE_WEIGHTS over the types present that year", "lean      = Σ_year YEAR_WEIGHTS[year] × coverage × year NM  /  Σ_year YEAR_WEIGHTS[year] × coverage", "Huber     = min(1, HUBER_C / |NM − lean₀|) per race, second pass"]}
             note={<>Same constants as the state model: RACE_TYPE_WEIGHTS P {G.RACE_TYPE_WEIGHTS.P} · S {G.RACE_TYPE_WEIGHTS.S} · H {G.RACE_TYPE_WEIGHTS.H} · L {G.RACE_TYPE_WEIGHTS.L} · G {G.RACE_TYPE_WEIGHTS.G}; YEAR_WEIGHTS decay {G.YEAR_WEIGHTS[2024].toFixed(3)} (2024) → {G.YEAR_WEIGHTS[2016].toFixed(3)} (2016); HUBER_C {G.HUBER_C}.</>} />
         </Block>
         <Block label="Projection">
-          <Formula lines={["margin = lean + β* × E(2026) + incumbency + down-ballot gap", "gap    = mean over single-race State House years of (State House NM − same-year top-of-ticket NM) × n / (n + GAP_SHRINK_K)", "σ²     = (β* × σ_E)² + (RACE_SIGMA[LEG_SIGMA_TIER] × LEG_SIGMA_MULTIPLIER)²", "P(D)   = Φ(−margin / σ)"]}
+          <Formula lines={["margin = lean + β* × E(2026) + incumbency + down-ballot gap + campaign money", "gap    = mean over single-race State House years of (State House NM − same-year top-of-ticket NM) × n / (n + GAP_SHRINK_K)", "σ²     = (β* × σ_E)² + (RACE_SIGMA[LEG_SIGMA_TIER] × LEG_SIGMA_MULTIPLIER)²", "P(D)   = Φ(−margin / σ)"]}
             note={<>E(2026) is the live national environment estimate, {signed(env.eHat)} with σ_E {env.sigmaE.toFixed(2)} today (<Link href="/methodology" className="underline">Forecast → environment</Link>). An open seat carries no incumbency term. The gap captures a district&apos;s habit of voting differently for the legislature than for the top of the ticket, net of the incumbency already stripped.</>} />
           {examples.map(({ slug, data, p }) => (
             <div key={slug}>
@@ -99,19 +106,39 @@ export default function PrecinctMethodology() {
             </div>
           ))}
         </Block>
+        {ex.data.moneyCalibration && ex.p.money && (() => {
+          const cal = ex.data.moneyCalibration!;
+          return (
+            <Block label="Campaign money" meta={`${cal.state} calibration · fitted ${cal.fitted}`}>
+              <Formula lines={[
+                "gap%          = (R$ − D$) / (R$ + D$) × 100          gross receipts: cash + in-kind, net of refunds",
+                "typical gap%  = a + b × incSign + c × presidential margin",
+                "money         = clamp(K × (scale × gap% − typical gap%), ±CAP)",
+                "scale         = PARTIAL_CYCLE_GAP_SCALE.H for receipts mid-cycle; 1 for a finished cycle",
+              ]}
+                note={<>The site&apos;s residual money basis (<Link href="/methodology" className="underline">Forecast → money</Link>), re-fitted on the state&apos;s own legislative races, because state House money behaves differently from congressional money: in {cal.state} an incumbent&apos;s typical edge is {cal.structural.incSign.toFixed(0)} points of gap against {(getWarMoneyModel().H?.incSign ?? 0).toFixed(0)} for U.S. House. Only the edge beyond what a generic pair in the seat raises is information; the typical part is already in the lean and the incumbency term. The fit uses the one year with both a presidential result by legislative district and receipts ({cal.fitYear}): {cal.n} contested D-vs-R races, margin = α + β × pres + γ × incSign + K × residual gap. K = {cal.kOls.toFixed(3)} ± {cal.kSe.toFixed(3)}, rounded to {cal.K}; error {cal.rmse.noMoney.toFixed(2)} → {cal.rmse.withMoney.toFixed(2)} points. CAP = {cal.CAP}, the congressional House cap, keeps one year of evidence from moving a race more than that. The partial-cycle scale ({ex.p.money.scale}) is borrowed from U.S. House: no per-report history of state receipts is on file. Receipts are an in-sample, end-of-cycle measure in the fit, so some of K is money following races that already looked winnable.</>} />
+              <DataTable head={["K", ...cal.looGrid.map((g) => g.k.toFixed(2))]} align={"l" + "r".repeat(cal.looGrid.length)}
+                rows={[["Leave-one-out MAE", ...cal.looGrid.map((g) => g.looMae.toFixed(2))]]}
+                caption={`${cal.state} House ${cal.fitYear}, cap applied, typical-gap model and baseline refitted without each held-out race. Read live from data/precinct-districts/money/${cal.state}.json.`} />
+              <DataTable head={["Typical gap", "a (intercept)", "b (incSign)", "c (pres margin)"]} align="lrrr"
+                rows={[[`${cal.state} House ${cal.fitYear}`, cal.structural.intercept.toFixed(1), cal.structural.incSign.toFixed(1), cal.structural.pres.toFixed(2)]]} />
+            </Block>
+          );
+        })()}
         <Block label="Constants">
           <Constants rows={constants} />
         </Block>
       </Section>
 
       <Section id="precincts" kicker="Precincts" title="From the district to its precincts"
-        lede="The projected district margin is spread back over the precincts so the map and the turnout scenarios can be read precinct by precinct.">
+        lede="The projected district margin is spread back over the precincts so the map and the 2026 turnout estimate can be read precinct by precinct.">
         <Block label="Baseline and shift">
           <Formula lines={["baseline(p) = BASELINE_PRES_WEIGHT × latest presidential margin(p) + (1 − w) × latest State House margin(p)", "projected(p) = baseline(p) + (district margin − district baseline)          clamped to ±MARGIN_CLAMP"]}
             note="The shift is uniform for now: every precinct moves by the same number of points. A precinct elasticity (how much each precinct historically moved per point of district movement) is the natural next step once more within-era pairs are available." />
         </Block>
-        <Block label="Turnout scenarios">
-          <P>Each scenario assigns every precinct a ballot count — the latest presidential year&apos;s ballots as cast, or a past midterm&apos;s turnout rate (that precinct&apos;s ballots ÷ registered, on today&apos;s lines) applied to today&apos;s registration — and converts the precinct&apos;s projected margin into votes at its latest two-party rate. The district margin therefore moves only through which precincts turn out; &quot;net votes to flip&quot; is the trailing side&apos;s deficit under that scenario.</P>
+        <Block label="2026 turnout estimate">
+          <Formula lines={["rate_y(p) = ballots_y(p) ÷ registered_y(p)          each past midterm y, on today's lines", "ballots_2026(p) = mean_y rate_y(p) × today's registered(p)          capped at 100%"]}
+            note="Each basis midterm alone gives the range shown beside the estimate. Ballots become votes at the precinct's latest State House two-party rate and projected margin; &quot;net votes to flip&quot; is the trailing side's deficit. Because midterm drop-off is spread almost evenly across precincts, the estimate sets the size of the race, not the margin — the margin is the district projection. Within-precinct shifts in who votes in a midterm are not modelled here." />
         </Block>
         <Block label="Targeting metrics" meta="explorer → Targeting">
           <Defs items={[
