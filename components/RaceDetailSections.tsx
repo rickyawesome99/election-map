@@ -1,3 +1,5 @@
+import { LedgerSectionHead } from "@/components/LedgerSectionHead";
+export { LedgerSectionHead };
 import type { ReactNode } from "react";
 import Image from "next/image";
 import CandidateLink from "@/components/CandidateLink";
@@ -173,20 +175,6 @@ function WinProbabilitySummary({ demPct, repPct }: { demPct: number; repPct: num
 
 // Section header for the states-page-style layout — a bold uppercase label under a thick rule,
 // matching the "Federal Offices" / "U.S. House" section heads on the state page.
-export function LedgerSectionHead({ label, meta, right }: { label: string; meta?: ReactNode; right?: ReactNode }) {
-  return (
-    <div
-      className="flex flex-wrap items-baseline gap-1.5 sm:gap-3 pb-3 mb-3"
-      style={{ borderBottom: "2px solid var(--app-text-primary)" }}
-    >
-      <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>
-        {label}
-      </h2>
-      {meta && <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{meta}</span>}
-      {right && <span className="ml-auto">{right}</span>}
-    </div>
-  );
-}
 
 export function AboutRaceCard({
   title,

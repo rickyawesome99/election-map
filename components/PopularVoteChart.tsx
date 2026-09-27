@@ -13,7 +13,7 @@ import {
 } from "recharts";
 import { popVoteData, type PopVoteRow } from "@/data/popVoteData";
 import { fmtMargin, marginColor } from "@/lib/colorScale";
-import { LedgerSectionHead } from "@/components/RaceDetailSections";
+import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 
 const RACE_TYPES = ["President", "House", "Senate", "Governor"] as const;
 type RaceType = (typeof RACE_TYPES)[number];

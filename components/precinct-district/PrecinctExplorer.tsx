@@ -33,7 +33,7 @@ const MODES: { id: Mode; label: string }[] = [
   { id: "swing", label: "Swing" },
   { id: "demographics", label: "Demographics" },
   { id: "targeting", label: "Targeting" },
-  { id: "projection", label: "2026 projection" },
+  { id: "projection", label: "2026 Projection" },
 ];
 
 function Pill({ active, onClick, children, muted, title }: { active: boolean; onClick: () => void; children: ReactNode; muted?: boolean; title?: string }) {

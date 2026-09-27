@@ -21,7 +21,9 @@ export interface Column<R extends TableRow> {
 
 type SortDir = "asc" | "desc";
 
-const ROW_H = 36;
+const ROW_H = 36.5;   // body row: py-2 + 13px text + 1px rule
+const HEAD_H = 34.5;  // column header row incl. its 2px rule
+const GROUP_H = 27.5; // group label row
 const MAX_ROWS = 14;
 
 export default function ExplorerTable<R extends TableRow>({
@@ -61,10 +63,12 @@ export default function ExplorerTable<R extends TableRow>({
   }
 
   const groups = useMemo(() => {
+    // Consecutive ungrouped columns share one blank header cell. The group row carries no vertical
+    // rules: an inset underline marks each group, and dividers start at the column-header row.
     const out: { group: string | undefined; span: number }[] = [];
     for (const c of columns) {
       const last = out[out.length - 1];
-      if (last && last.group === c.group && c.group !== undefined) last.span += 1;
+      if (last && last.group === c.group) last.span += 1;
       else out.push({ group: c.group, span: 1 });
     }
     return out;
@@ -83,7 +87,7 @@ export default function ExplorerTable<R extends TableRow>({
   }
 
   return (
-    <div className="overflow-auto" style={{ maxHeight: rows.length > MAX_ROWS ? ROW_H * (MAX_ROWS + (hasGroups ? 2 : 1)) + 8 : undefined }}>
+    <div className="overflow-auto" style={{ maxHeight: rows.length > MAX_ROWS ? ROW_H * (MAX_ROWS + 0.5) + (hasGroups ? GROUP_H : 0) + HEAD_H : undefined }}>
       <table className="text-[13px]" style={{ borderCollapse: "separate", borderSpacing: 0, minWidth: "100%" }}>
         <thead style={{ position: "sticky", top: 0, zIndex: 5 }}>
           {hasGroups && (
@@ -91,8 +95,8 @@ export default function ExplorerTable<R extends TableRow>({
               <th style={{ ...sticky, zIndex: 6, background: "var(--app-bg)" }} />
               {showSub && <th style={headBg} />}
               {groups.map((g, i) => (
-                <th key={i} colSpan={g.span} className="px-3 py-1.5 text-center text-[11px] font-semibold" style={{ ...headBg, color: "var(--app-text-primary)", borderLeft: i > 0 ? "1px solid var(--app-border)" : undefined, borderBottom: g.group ? "1px solid var(--app-border)" : undefined }}>
-                  {g.group}
+                <th key={i} colSpan={g.span} className="px-3 pb-0 pt-1.5 text-center text-[11px] font-semibold" style={{ ...headBg, color: "var(--app-text-primary)" }}>
+                  {g.group && <div className="pb-1" style={{ borderBottom: "1px solid var(--app-border)" }}>{g.group}</div>}
                 </th>
               ))}
             </tr>

@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import type { RaceType } from "@/data/forecastData";
 import type { ComparisonRow, AgreementSummary } from "@/lib/forecastComparison";
-import { CHAMBER_LABEL } from "@/lib/forecastComparison";
+import { CHAMBER_LABEL } from "@/lib/forecastTypes";
 import { getRatingColors } from "@/lib/colorScale";
 
 // One grid per chamber: a row per race, a column per forecaster (ours first), every cell the

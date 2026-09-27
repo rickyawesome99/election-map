@@ -2,7 +2,12 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import { createPortal } from "react-dom";
-import { queryIndex, type SearchEntry } from "@/lib/searchIndex";
+import { queryIndex, type SearchEntry } from "@/lib/searchQuery";
+import { loadStaticJson } from "@/lib/useStaticJson";
+
+// The index is built at build time (app/api/search-index) and fetched once, on first focus, so
+// the forecast dataset it is derived from never enters the page bundle.
+const SEARCH_INDEX_URL = "/api/search-index";
 
 export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProperties }) {
   const [query, setQuery] = useState("");
@@ -13,6 +18,17 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
   const containerRef = useRef<HTMLDivElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const [entries, setEntries] = useState<SearchEntry[] | null>(null);
+  const entriesRef = useRef<SearchEntry[] | null>(null);
+  const pendingQueryRef = useRef("");
+
+  const ensureIndex = useCallback(() => {
+    if (entriesRef.current) return;
+    loadStaticJson<SearchEntry[]>(SEARCH_INDEX_URL).then((loaded) => {
+      entriesRef.current = loaded;
+      setEntries(loaded);
+    }, () => { /* the next keystroke retries */ });
+  }, []);
 
   const updateDropdownRect = useCallback(() => {
     const container = containerRef.current;
@@ -26,15 +42,26 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
     });
   }, []);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const val = e.target.value;
-    setQuery(val);
-    const hits = queryIndex(val);
+  const showHits = useCallback((val: string) => {
+    const hits = entriesRef.current ? queryIndex(entriesRef.current, val) : [];
     setResults(hits);
     setActiveIndex(-1);
     setOpen(hits.length > 0);
     if (hits.length > 0) updateDropdownRect();
+  }, [updateDropdownRect]);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.value;
+    setQuery(val);
+    pendingQueryRef.current = val;
+    ensureIndex();
+    showHits(val);
   };
+
+  // A query typed before the index arrived is answered as soon as it does.
+  useEffect(() => {
+    if (entries && pendingQueryRef.current) showHits(pendingQueryRef.current);
+  }, [entries, showHits]);
 
   const navigate = useCallback((entry: SearchEntry) => {
     setOpen(false);
@@ -111,6 +138,7 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
         onChange={handleChange}
         onKeyDown={handleKeyDown}
         onFocus={() => {
+          ensureIndex();
           if (results.length === 0) return;
           updateDropdownRect();
           setOpen(true);

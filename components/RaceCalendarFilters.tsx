@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { ALL, CALENDAR_PATH, RACE_KINDS, RACE_KIND_LABEL, RACE_TABLE_ID, filterHref, type RaceCalendarFilter } from "@/lib/raceCalendarQuery";
+import { ALL, CALENDAR_PATH, RACE_KINDS, RACE_KIND_LABEL, RACE_TABLE_ID, filterHref, type RaceCalendarFilter } from "@/lib/raceCalendarFilter";
 
 type Option = { value: string; label: string };
 

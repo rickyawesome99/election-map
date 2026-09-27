@@ -1,33 +1,36 @@
 "use client";
 
-import { useState, useEffect, useRef, useMemo, type CSSProperties } from "react";
+import { memo, useState, useEffect, useRef, useMemo, useCallback, type CSSProperties } from "react";
 import { useRouter } from "next/navigation";
+import dynamic from "next/dynamic";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale";
-import { senateNoElection, governorNoElection, RaceType, NoElectionEntry, senateCurrent, pres2024, statePvi, houseDelegationHistory, stateLegData } from "@/data/forecastData";
-import { statesData } from "@/data/statesData";
-import { senateForecasts, governorForecasts, houseForecasts, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastedRace } from "@/lib/forecast";
-import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
+import type { RaceType, NoElectionEntry } from "@/data/forecastData";
+import { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastSummary } from "@/lib/forecastTypes";
 import { RaceTypeHeader, ForecastHero, ForecastRaceCards, KeyRaces } from "./ForecastLedger";
-
 
 // Non-2026 seats already held by each party (Senate classes not up this cycle, Governor terms not up) —
 // added to projected win counts to get full chamber totals.
-export { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE } from "@/lib/forecast";
+export { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE } from "@/lib/forecastTypes";
 import Sidebar from "./Sidebar";
-import NationalCountyMap from "./NationalCountyMap";
 import StatesOverviewMap, { type MapMode, type StateRow } from "./StatesOverviewMap";
 import StatesCartogramGrid from "./StatesCartogramGrid";
 import StatesLedgerList from "./StatesLedgerList";
 import StatesSelectedCard from "./StatesSelectedCard";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
-import TplModelPage from "./TplModelPage";
-import DistrictFinder from "./DistrictFinder";
-import PollingAverageCard from "./PollingAverageCard";
-import OverviewDashboard from "./OverviewDashboard";
+import { useMapTooltip } from "@/lib/useMapTooltip";
+import type { TplModelPageProps } from "./TplModelPage";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 import { NationalLandMask, NationalLandMaskDefinition } from "./StateLandMask";
+
+// Each tab body is its own chunk, loaded only when that tab is the active one — the county
+// map, the TPL model page and the district finder are the three heaviest pieces of client
+// code on the site and none of them is needed on the forecast tabs.
+const tabLoading = () => <div className="py-10 text-center text-xs" style={{ color: "var(--app-text-muted)" }}>Loading…</div>;
+const NationalCountyMap = dynamic(() => import("./NationalCountyMap"), { loading: tabLoading });
+const TplModelPage = dynamic(() => import("./TplModelPage"), { loading: tabLoading });
+const DistrictFinder = dynamic(() => import("./DistrictFinder"), { loading: tabLoading });
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 const HOUSE_DISTRICTS_2026_URL = "/congressional-districts-2026.json";
@@ -37,53 +40,6 @@ type GeoFeature = {
   id?: string | number;
   properties?: Record<string, string | undefined>;
 };
-
-function racePartyOverview(race: ForecastedRace): "D" | "R" | "I" {
-  if (race.seatParty) return race.seatParty;
-  if (race.candidates?.dem.incumbent) return "D";
-  if (race.candidates?.rep.incumbent) return "R";
-  return race.margin <= 0 ? "D" : "R";
-}
-
-const stateRows: StateRow[] = statesData.map((state) => {
-  const govRace = governorForecasts.find((r) => r.id === state.abbr);
-  const govNoEl = !govRace ? governorNoElection.find((e) => e.abbr === state.abbr) : null;
-  const govParty: "D" | "R" | "I" | null = govRace ? racePartyOverview(govRace) : (govNoEl?.party ?? null);
-  const [senSeat1, senSeat2] = senateCurrent[state.abbr] ?? ["R", "R"];
-  const seats = [senSeat1, senSeat2];
-  const senateDem = seats.filter((p) => p === "D").length;
-  const senateRep = seats.filter((p) => p === "R").length;
-  const senateInd = seats.filter((p) => p === "I").length;
-  const houseRaces = houseForecasts.filter((r) => r.state === state.name);
-  const del2024 = (houseDelegationHistory[state.name] ?? []).find((e) => e.year === 2024);
-  const houseDem = del2024 ? del2024.demSeats : houseRaces.filter((r) => racePartyOverview(r) === "D").length;
-  const houseRep = del2024 ? del2024.repSeats : houseRaces.filter((r) => racePartyOverview(r) === "R").length;
-  const legEntries = stateLegData[state.name] ?? [];
-  const latestLegHouse = legEntries.filter(e => e.type === "House" && e.demSeats != null && e.repSeats != null).sort((a, b) => b.year - a.year)[0];
-  const latestLegSenate = legEntries.filter(e => e.type === "Senate" && e.demSeats != null && e.repSeats != null).sort((a, b) => b.year - a.year)[0];
-  return {
-    id: state.id,
-    name: state.name,
-    abbr: state.abbr,
-    govParty,
-    senateDem,
-    senateRep,
-    senateInd,
-    houseDem,
-    houseRep,
-    houseTotal: houseRaces.length,
-    pres2024: pres2024[state.abbr] ?? null,
-    pvi2026: statePvi[state.abbr] ?? null,
-    stateLegHouseDem: latestLegHouse?.demSeats ?? null,
-    stateLegHouseRep: latestLegHouse?.repSeats ?? null,
-    stateLegSenateDem: latestLegSenate?.demSeats ?? null,
-    stateLegSenateRep: latestLegSenate?.repSeats ?? null,
-  };
-});
-
-const abbrByStateName: Record<string, string> = Object.fromEntries(
-  statesData.map((s) => [s.name, s.abbr])
-);
 
 const LEGEND = [
   { color: "#1a4480", label: "Safe D" },
@@ -149,21 +105,153 @@ function persistRaceType(type: RaceType) {
   document.cookie = `raceType=${type}; path=/; max-age=31536000; SameSite=Lax`;
 }
 
-type TopLevelTab = "forecast" | "overview" | "states" | "historical" | "model" | "district-finder";
+type TopLevelTab = "forecast" | "states" | "historical" | "model" | "district-finder";
 
 type ModelSubTab = "state" | "district" | "table" | "districtTable" | "war";
 
-export default function ForecastMap({ activeTab, raceType = "senate", modelSubTab }: { activeTab: TopLevelTab; raceType?: RaceType; modelSubTab?: ModelSubTab }) {
+export type ForecastMapProps = {
+  activeTab: TopLevelTab;
+  raceType?: RaceType;
+  modelSubTab?: ModelSubTab;
+  /** Forecast tab: this chamber's races (lib/forecast.forecastSummariesFor) and the states with no
+   * race this cycle, both computed by the server page. */
+  races?: ForecastSummary[];
+  noElection?: NoElectionEntry[];
+  genericBallotDiff?: number;
+  /** States tab (lib/stateRows.buildStateRows). */
+  stateRows?: StateRow[];
+  /** Model tab (lib/modelSlices). */
+  model?: TplModelPageProps["data"];
+};
+
+const NO_RACES: ForecastSummary[] = [];
+const NO_ENTRIES: NoElectionEntry[] = [];
+const NO_ROWS: StateRow[] = [];
+
+// ── Memoized forecast layer ──────────────────────────────────────────────────
+// The 435 district (or 50 state) paths re-render only when the races, the selection or the
+// theme change — not on every hover, and not on every pan/zoom frame. Lookups are indexed once
+// instead of scanning the race list per feature (435 × 435 comparisons per render before).
+const ForecastGeoLayer = memo(function ForecastGeoLayer({
+  geographies, isHouse, races, noElection, selectedId, selectedNoElAbbr, t, onHover, onSelect,
+}: {
+  geographies: GeoFeature[];
+  isHouse: boolean;
+  races: ForecastSummary[];
+  noElection: NoElectionEntry[];
+  selectedId: string | null;
+  selectedNoElAbbr: string | null;
+  t: Theme;
+  onHover: (race: ForecastSummary | null, noEl: NoElectionEntry | null) => void;
+  onSelect: (race: ForecastSummary | null, noEl: NoElectionEntry | null) => void;
+}) {
+  const touchStartRef = useRef<{ x: number; y: number } | null>(null);
+  const byId = useMemo(() => new Map(races.map((r) => [r.id, r])), [races]);
+  const byState = useMemo(() => new Map(races.map((r) => [r.state, r])), [races]);
+  const noElByState = useMemo(() => new Map(noElection.map((e) => [e.state, e])), [noElection]);
+
+  const matchFor = (geo: GeoFeature): ForecastSummary | undefined => {
+    if (isHouse) {
+      const geoId = geo.properties?.GEOID as string | undefined;
+      if (!geoId) return undefined;
+      // Census at-large GEOIDs end in "00"; our ids end in "01" — try both
+      return byId.get(geoId) ?? (geoId.endsWith("00") ? byId.get(geoId.slice(0, -2) + "01") : undefined);
+    }
+    return byState.get(geo.properties?.name ?? "");
+  };
+
+  return (
+    <>
+      {geographies.map((geo) => {
+        if (isHouse && !isCongressionalDistrictGeoid(geo.properties?.GEOID)) return null;
+        const match = matchFor(geo);
+        const noElMatch = !match && !isHouse ? noElByState.get(geo.properties?.name ?? "") : undefined;
+        const fill = match ? getRaceColor(match.margin) : t.mapUnfilled;
+        const isSelected = !!(match && selectedId === match.id);
+        const isSelectedNoEl = !!(noElMatch && selectedNoElAbbr === noElMatch.abbr);
+        const isInteractive = !!(match || noElMatch);
+        const selectGeography = () => {
+          if (match) onSelect(match, null);
+          else if (noElMatch) onSelect(null, noElMatch);
+        };
+        return (
+          <Geography
+            key={geo.rsmKey}
+            geography={geo}
+            onMouseEnter={() => {
+              if (match) onHover(match, null);
+              else if (noElMatch) onHover(null, noElMatch);
+            }}
+            onMouseLeave={() => onHover(null, null)}
+            onClick={selectGeography}
+            onPointerDown={(e: React.PointerEvent) => {
+              if (e.pointerType !== "touch") { touchStartRef.current = null; return; }
+              touchStartRef.current = { x: e.clientX, y: e.clientY };
+            }}
+            onPointerUp={(e: React.PointerEvent) => {
+              if (e.pointerType !== "touch") return;
+              const start = touchStartRef.current;
+              touchStartRef.current = null;
+              if (!start || Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10) return;
+              selectGeography();
+            }}
+            style={{
+              default: {
+                fill,
+                stroke: (isSelected || isSelectedNoEl) ? t.hoverStroke : t.mapStroke,
+                strokeWidth: (isSelected || isSelectedNoEl) ? (isHouse ? 2 : 3.5) : (isHouse ? 0.4 : 1.0),
+                outline: "none",
+              },
+              hover: {
+                fill: match ? fill : t.hoverUnfilled,
+                stroke: t.hoverStroke,
+                strokeWidth: isHouse ? 0.7 : 1.5,
+                outline: "none",
+                cursor: isInteractive ? "pointer" : "default",
+              },
+              pressed: { fill, stroke: t.hoverStroke, strokeWidth: isHouse ? 2 : 3.5, outline: "none" },
+            }}
+          />
+        );
+      })}
+    </>
+  );
+});
+
+// State outlines drawn over the House districts — static, so memoized on the theme alone.
+const HouseStateOutlines = memo(function HouseStateOutlines({ t }: { t: Theme }) {
+  return (
+    <Geographies geography={STATES_URL}>
+      {({ geographies }: { geographies: GeoFeature[] }) =>
+        geographies.map((geo) => (
+          <Geography
+            key={geo.rsmKey}
+            geography={geo}
+            style={{
+              default: { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+              hover: { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+              pressed: { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+            }}
+          />
+        ))
+      }
+    </Geographies>
+  );
+});
+
+export default function ForecastMap({
+  activeTab, raceType = "senate", modelSubTab,
+  races = NO_RACES, noElection = NO_ENTRIES, genericBallotDiff = 0, stateRows = NO_ROWS, model,
+}: ForecastMapProps) {
   const router = useRouter();
-  const [selected, setSelected] = useState<ForecastedRace | null>(null);
+  const [selected, setSelected] = useState<ForecastSummary | null>(null);
   const [selectedNoElection, setSelectedNoElection] = useState<NoElectionEntry | null>(null);
   const [selectedStateRow, setSelectedStateRow] = useState<StateRow | null>(null);
   const [statesMode, setStatesMode] = useState<MapMode>("legislature");
   const [statesView, setStatesView] = useState<"map" | "cartogram">("map");
-  const [hovered, setHovered] = useState<ForecastedRace | null>(null);
+  const [hovered, setHovered] = useState<ForecastSummary | null>(null);
   const [hoveredNoElection, setHoveredNoElection] = useState<NoElectionEntry | null>(null);
-  const [mousePos, setMousePos] = useState<{ x: number; y: number; containerW: number; containerH: number }>({ x: 0, y: 0, containerW: 800, containerH: 520 });
-  const touchStartRef = useRef<{ x: number; y: number } | null>(null);
+  const tip = useMapTooltip(16, 8);
   const darkMode = useDarkMode();
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
@@ -209,34 +297,26 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
   const isHouse = activeTab === "forecast" && raceType === "house";
   const geoUrl = isHouse ? HOUSE_DISTRICTS_2026_URL : STATES_URL;
-  const data = raceType === "house" ? houseForecasts : raceType === "senate" ? senateForecasts : governorForecasts;
+  const data = races;
   const forecastMapKey = `${geoUrl}:${raceType}:${mapKey}`;
   const demSeats = SEAT_HOLDOVERS[raceType].dem + data.filter((race) => race.margin <= 0).length;
   const repSeats = SEAT_HOLDOVERS[raceType].rep + data.filter((race) => race.margin > 0).length;
   const totalSeats = TOTAL_SEATS_BY_TYPE[raceType];
-  const genericBallot = useMemo(() => computeGenericBallotAverage(), []);
+  const genericBallot = { diff: genericBallotDiff };
   const tossUps = useMemo(() => data.filter((race) => Math.abs(race.margin) < 1).length, [data]);
   const flipped = useMemo(
     () => data.filter((race) => race.seatParty && race.seatParty !== (race.margin <= 0 ? "D" : "R")).length,
     [data]
   );
 
-  function findMatch(geo: GeoFeature): ForecastedRace | undefined {
-    if (isHouse) {
-      const geoId = geo.properties?.GEOID as string | undefined;
-      if (!geoId) return undefined;
-      // Census at-large GEOIDs end in "00"; our ids end in "01" — try both
-      return data.find((d) => d.id === geoId)
-          ?? (geoId.endsWith("00") ? data.find((d) => d.id === geoId.slice(0, -2) + "01") : undefined);
-    }
-    return data.find((d) => d.state === geo.properties?.name);
-  }
-
-  function findNoElection(geo: GeoFeature): NoElectionEntry | undefined {
-    if (isHouse) return undefined;
-    const noElData = raceType === "senate" ? senateNoElection : governorNoElection;
-    return noElData.find((d) => d.state === geo.properties?.name);
-  }
+  const onHover = useCallback((race: ForecastSummary | null, noEl: NoElectionEntry | null) => {
+    setHovered(race);
+    setHoveredNoElection(noEl);
+  }, []);
+  const onSelect = useCallback((race: ForecastSummary | null, noEl: NoElectionEntry | null) => {
+    setSelected(race);
+    setSelectedNoElection(noEl);
+  }, []);
 
   return (
     <div className="min-h-screen" style={{ background: t.bg }}>
@@ -367,10 +447,7 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
         {/* ── Map card (forecast only — counties renders its own layout below) ── */}
         {activeTab === "forecast" && <div
           className="relative h-[320px] overflow-hidden rounded-xl sm:h-[400px] md:h-auto md:aspect-[8/5]"
-          onMouseMove={(e) => {
-            const rect = e.currentTarget.getBoundingClientRect();
-            setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top, containerW: rect.width, containerH: rect.height });
-          }}
+          onMouseMove={tip.onMouseMove}
         >
           {/* Hover tooltip */}
           {hovered && (() => {
@@ -384,27 +461,12 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
             const { bg: badgeColor, text: badgeText } = getRatingColors(hoveredRating);
 
             const tipW = 190;
-            const tipH = hovered.candidates ? 115 : 88;
-            const offset = 16;
-            const edgePad = 8;
-            let left = mousePos.x + offset;
-            let top = mousePos.y + offset;
-            if (left + tipW + edgePad > mousePos.containerW) {
-              left = mousePos.x - tipW - offset;
-            }
-            if (top + tipH + edgePad > mousePos.containerH) {
-              top = mousePos.y - tipH - offset;
-            }
-            if (left < edgePad) left = edgePad;
-            if (top < edgePad) top = edgePad;
             const marginColor = hovered.margin <= 0 ? t.demText : t.repText;
 
             return (
-              <div
+              <div ref={tip.tooltipRef}
                 className="hidden md:block absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"
                 style={{
-                  left,
-                  top,
                   width: tipW,
                   padding: "6px 8px",
                   background: t.panel,
@@ -458,24 +520,11 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
           {/* No-election hover tooltip */}
           {hoveredNoElection && (() => {
             const tipW = 185;
-            const tipH = 70;
-            const offset = 16;
-            const edgePad = 8;
-            let left = mousePos.x + offset;
-            let top = mousePos.y + offset;
-            if (left + tipW + edgePad > mousePos.containerW) {
-              left = mousePos.x - tipW - offset;
-            }
-            if (top + tipH + edgePad > mousePos.containerH) {
-              top = mousePos.y - tipH - offset;
-            }
-            if (left < edgePad) left = edgePad;
-            if (top < edgePad) top = edgePad;
             return (
-              <div
+              <div ref={tip.tooltipRef}
                 className="hidden md:block absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"
                 style={{
-                  left, top, width: tipW,
+                  width: tipW,
                   padding: "8px 10px",
                   background: t.panel,
                   border: `1px solid ${t.border}`,
@@ -508,88 +557,21 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
             >
             <NationalLandMask enabled={isHouse}>
             <Geographies geography={geoUrl}>
-              {({ geographies }: { geographies: GeoFeature[] }) =>
-                geographies.map((geo) => {
-                  if (isHouse && !isCongressionalDistrictGeoid(geo.properties?.GEOID)) return null;
-                  const match = findMatch(geo);
-                  const noElMatch = !match ? findNoElection(geo) : undefined;
-                  const fill = match ? getRaceColor(match.margin) : t.mapUnfilled;
-                  const isSelected = selected && match && selected.id === match.id;
-                  const isSelectedNoEl = selectedNoElection && noElMatch && selectedNoElection.abbr === noElMatch.abbr;
-                  const isInteractive = !!(match || noElMatch);
-                  const selectGeography = () => {
-                    if (match) { setSelected(match); setSelectedNoElection(null); }
-                    else if (noElMatch) { setSelectedNoElection(noElMatch); setSelected(null); }
-                  };
-
-                  return (
-                    <Geography
-                      key={geo.rsmKey}
-                      geography={geo}
-                      onMouseEnter={() => {
-                        if (match) { setHovered(match); setHoveredNoElection(null); }
-                        else if (noElMatch) { setHoveredNoElection(noElMatch); setHovered(null); }
-                      }}
-                      onMouseLeave={() => { setHovered(null); setHoveredNoElection(null); }}
-                      onClick={selectGeography}
-                      onPointerDown={(e: React.PointerEvent) => {
-                        if (e.pointerType !== "touch") {
-                          touchStartRef.current = null;
-                          return;
-                        }
-                        touchStartRef.current = { x: e.clientX, y: e.clientY };
-                      }}
-                      onPointerUp={(e: React.PointerEvent) => {
-                        if (e.pointerType !== "touch") return;
-                        const start = touchStartRef.current;
-                        touchStartRef.current = null;
-                        if (!start || Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10) return;
-
-                        selectGeography();
-                      }}
-                      style={{
-                        default: {
-                          fill,
-                          stroke: (isSelected || isSelectedNoEl) ? t.hoverStroke : t.mapStroke,
-                          strokeWidth: (isSelected || isSelectedNoEl) ? (isHouse ? 2 : 3.5) : (isHouse ? 0.4 : 1.0),
-                          outline: "none",
-                        },
-                        hover: {
-                          fill: match ? fill : t.hoverUnfilled,
-                          stroke: t.hoverStroke,
-                          strokeWidth: isHouse ? 0.7 : 1.5,
-                          outline: "none",
-                          cursor: isInteractive ? "pointer" : "default",
-                        },
-                        pressed: {
-                          fill,
-                          stroke: t.hoverStroke,
-                          strokeWidth: isHouse ? 2 : 3.5,
-                          outline: "none",
-                        },
-                      }}
-                    />
-                  );
-                })
-              }
+              {({ geographies }: { geographies: GeoFeature[] }) => (
+                <ForecastGeoLayer
+                  geographies={geographies}
+                  isHouse={isHouse}
+                  races={races}
+                  noElection={noElection}
+                  selectedId={selected?.id ?? null}
+                  selectedNoElAbbr={selectedNoElection?.abbr ?? null}
+                  t={t}
+                  onHover={onHover}
+                  onSelect={onSelect}
+                />
+              )}
             </Geographies>
-            {isHouse && (
-              <Geographies geography={STATES_URL}>
-                {({ geographies }: { geographies: GeoFeature[] }) =>
-                  geographies.map((geo) => (
-                    <Geography
-                      key={geo.rsmKey}
-                      geography={geo}
-                      style={{
-                        default: { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
-                        hover: { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
-                        pressed: { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
-                      }}
-                    />
-                  ))
-                }
-              </Geographies>
-            )}
+            {isHouse && <HouseStateOutlines t={t} />}
             </NationalLandMask>
             </ZoomableGroup>
           </ComposableMap>
@@ -864,27 +846,15 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
         {/* ── Below-map table (memoized — stable across mouse-move re-renders) ── */}
         {useMemo(() => (
           <>
-            {activeTab === "overview" && (
-              <div className="mt-5 flex flex-col items-center gap-3">
-                <div className="w-full" style={{ maxWidth: 720 }}>
-                  <OverviewDashboard theme={t} />
-                </div>
-                <div className="w-full" style={{ maxWidth: 720 }}>
-                  <PollingAverageCard theme={t} />
-                </div>
-              </div>
-            )}
             {activeTab === "forecast" && (
               <div className="mt-4 md:mt-3">
-                {raceType === "house" && <ForecastRaceCards races={houseForecasts} basePath="/house" />}
-                {raceType === "senate" && <ForecastRaceCards races={senateForecasts} basePath="/senate" showSpecialBadge />}
-                {raceType === "governor" && <ForecastRaceCards races={governorForecasts} basePath="/governor" />}
+                <ForecastRaceCards races={races} basePath={`/${raceType}`} showSpecialBadge={raceType === "senate"} />
               </div>
             )}
-            {activeTab === "model" && <TplModelPage initialSubTab={modelSubTab} />}
+            {activeTab === "model" && model && <TplModelPage initialSubTab={modelSubTab} data={model} />}
             {activeTab === "district-finder" && <DistrictFinder />}
           </>
-        ), [activeTab, raceType, modelSubTab, t])}
+        ), [activeTab, raceType, modelSubTab, races, model])}
 
       </div>
     </div>

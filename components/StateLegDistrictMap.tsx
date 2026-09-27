@@ -4,6 +4,7 @@ import { useState, useRef, useEffect, useCallback, useMemo, type ReactNode } fro
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { useDarkMode } from "@/lib/useDarkMode";
+import { useMapTooltip } from "@/lib/useMapTooltip";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { normalizeGeographyWinding } from "@/lib/geoWinding";
 import { ABBR_TO_FIPS } from "@/lib/fips";
@@ -37,6 +38,11 @@ type DistrictGeometry = {
     coordinates: [number, number][][] | [number, number][][][];
   };
 };
+
+// Hoisted so its identity is stable: react-simple-maps re-fetches, re-parses and re-projects the
+// whole boundary file whenever `parseGeographies` changes identity — an inline arrow did that on
+// every render, i.e. on every hover.
+const parseDistrictGeographies = (geographies: DistrictGeometry[]) => geographies.map(normalizeGeographyWinding);
 
 // Mirrors BOUNDARY_CODE_OVERRIDES/extractDistrictCode in scripts/build-state-leg-incumbents.mjs —
 // that script computes each StateLegDistrict's `number` from the boundary file's DISTRICT/NAMELSAD
@@ -174,8 +180,7 @@ export default function StateLegDistrictMap({
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
   const [hoveredKey, setHoveredKey] = useState<string | null>(null);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [mapSize, setMapSize] = useState({ w: 0, h: 0 });
+  const tip = useMapTooltip(16, 8);
   // Whether the currently selected state/chamber has sourced district boundaries. Recomputed
   // from the (cached, nationally-fetched) geography list on every render via the Geographies
   // render-prop below, so it always reflects the current stateAbbr/chamber without needing a
@@ -219,7 +224,7 @@ export default function StateLegDistrictMap({
   // AZ/WA House). If they're all the same party, color by that party; if they split, use a
   // distinct "split control" color rather than arbitrarily picking one seat's party.
   // Memoized on `districts` alone (not darkMode/hover state) so mouse movement over the map —
-  // which updates hovered/mousePos every frame — never recomputes these lookups.
+  // which updates hovered on every boundary crossing — never recomputes these lookups.
   const partyByNumber = useMemo(() => {
     const map: Record<string, string> = {};
     for (const d of districts) {
@@ -291,7 +296,7 @@ export default function StateLegDistrictMap({
     <Geographies
       key={boundaryUrl}
       geography={boundaryUrl}
-      parseGeographies={(geographies: DistrictGeometry[]) => geographies.map(normalizeGeographyWinding)}
+      parseGeographies={parseDistrictGeographies}
     >
       {({ geographies }: { geographies: DistrictGeometry[] }) => {
         // Each file already holds just this state's districts (split by scripts/split-state-leg-
@@ -370,11 +375,7 @@ export default function StateLegDistrictMap({
         ref={containerRef}
         className="relative"
         style={{ height: 360, background: "var(--app-bg)" }}
-        onMouseMove={(e) => {
-          const rect = e.currentTarget.getBoundingClientRect();
-          setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-          setMapSize({ w: rect.width, h: rect.height });
-        }}
+        onMouseMove={tip.onMouseMove}
       >
         {/* Hover tooltip */}
         {hoveredKey && (() => {
@@ -389,27 +390,11 @@ export default function StateLegDistrictMap({
             : [];
           // Wider only when it has names to fit — a 190px box truncates most of them.
           const tipW = hoveredCandidates.length > 0 ? 240 : 190;
-          const resultLines = hoveredCandidates.length || 2 + (hoveredResult?.othVotes ? 1 : 0);
-          const tipH = isResultsView
-            ? (hoveredMargin == null ? 62 : 46 + resultLines * 16)
-            : viewMode === "president"
-              ? (hoveredPres?.estimated ? 76 : 62)
-              : 46 + Math.max(incumbents.length, 1) * 16 + (viewMode === "upcoming" ? 16 : 0);
-          const offset = 16;
-          const edgePad = 8;
-          let left = mousePos.x + offset;
-          let top = mousePos.y + offset;
-          const containerW = mapSize.w || 800;
-          const containerH = mapSize.h || 600;
-          if (left + tipW + edgePad > containerW) left = mousePos.x - tipW - offset;
-          if (top + tipH + edgePad > containerH) top = mousePos.y - tipH - offset;
-          if (left < edgePad) left = edgePad;
-          if (top < edgePad) top = edgePad;
           return (
-            <div
+            <div ref={tip.tooltipRef}
               className="hidden md:block absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"
               style={{
-                left, top, width: tipW,
+                width: tipW,
                 padding: "6px 8px",
                 background: "var(--app-panel)",
                 border: "1px solid var(--app-border)",

@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Geographies, Geography } from "react-simple-maps";
 import { FIPS_TO_STATE } from "@/lib/fips";
 
@@ -27,7 +28,7 @@ function maskId(stateFips: string): string {
 }
 
 /** Clips Census district water boundaries back to the state's county-defined shoreline. */
-export function StateLandMaskDefinition({ stateFips }: { stateFips: string }) {
+export const StateLandMaskDefinition = memo(function StateLandMaskDefinition({ stateFips }: { stateFips: string }) {
   const geography = stateFips === "39" ? OHIO_LAND_URL : countiesUrl(stateFips);
 
   return (
@@ -51,7 +52,7 @@ export function StateLandMaskDefinition({ stateFips }: { stateFips: string }) {
       </mask>
     </defs>
   );
-}
+});
 
 export function StateLandMask({
   stateFips,
@@ -64,7 +65,7 @@ export function StateLandMask({
 }
 
 /** Removes Great Lakes and coastal water assignments from the national district layer. */
-export function NationalLandMaskDefinition() {
+export const NationalLandMaskDefinition = memo(function NationalLandMaskDefinition() {
   return (
     <defs>
       <mask
@@ -86,7 +87,7 @@ export function NationalLandMaskDefinition() {
       </mask>
     </defs>
   );
-}
+});
 
 export function NationalLandMask({ enabled, children }: { enabled: boolean; children: React.ReactNode }) {
   return <g mask={enabled ? `url(#${NATIONAL_LAND_MASK_ID})` : undefined}>{children}</g>;

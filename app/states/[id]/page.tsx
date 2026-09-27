@@ -1,3 +1,4 @@
+import { countyTplForState } from "@/lib/countyTpl";
 import { statesData } from "@/data/statesData";
 import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, housePastResults, senateCurrent, presPastResults, houseDelegationHistory, stateLegData, PresResult, NoElectionEntry, electionYear } from "@/data/forecastData";
 import { calculateStateTpl } from "@/lib/tplCompute";
@@ -514,6 +515,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
           stateAbbr={state.abbr}
           stateName={state.name}
           stateFips={stateFips}
+          countyTpl={countyTplForState(state.abbr)}
           overview={(
             <>
               {(stateDelegationHistory.length > 0 || stateLegEntries.length > 0 || stateLegSenateEntries.length > 0) && (

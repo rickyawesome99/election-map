@@ -32,6 +32,11 @@ type DistrictGeometry = {
   };
 };
 
+// Hoisted so its identity is stable: react-simple-maps re-fetches, re-parses and re-projects the
+// whole boundary file whenever `parseGeographies` changes identity — an inline arrow did that on
+// every render, i.e. on every hover.
+const parseDistrictGeographies = (geographies: DistrictGeometry[]) => geographies.map(normalizeDistrictGeography);
+
 type Position = [number, number];
 type PolygonCoordinates = Position[][];
 type MultiPolygonCoordinates = PolygonCoordinates[];
@@ -194,7 +199,7 @@ export default function DistrictMiniMap({
           <Geographies
             key={geoUrl}
             geography={geoUrl}
-            parseGeographies={(geographies: DistrictGeometry[]) => geographies.map(normalizeDistrictGeography)}
+            parseGeographies={parseDistrictGeographies}
           >
             {({ geographies }: { geographies: DistrictGeometry[] }) =>
               geographies

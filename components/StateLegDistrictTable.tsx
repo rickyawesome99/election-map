@@ -7,7 +7,7 @@ import type { StateLegPres2024, MapViewMode } from "@/data/stateLegPres2024";
 import { districtResultMargin } from "@/lib/useStateLegResults";
 import { isUnassignedResultKey } from "@/lib/stateLegDistrictKey";
 import { fmtMargin } from "@/lib/colorScale";
-import { electionYear } from "@/data/forecastData";
+import { ELECTION_YEAR as electionYear } from "@/lib/electionYear";
 
 const CHAMBER_LABEL: Record<Chamber, string> = {
   house: "State House",

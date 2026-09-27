@@ -1,5 +1,6 @@
 "use client";
 
+import { useMapTooltip } from "@/lib/useMapTooltip";
 import { useRef, useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import type { Theme } from "./ForecastMap";
@@ -131,8 +132,7 @@ export default function StatesOverviewMap({
   onSelect: (row: StateRow | null) => void;
 }) {
   const [hovered, setHovered] = useState<StateRow | null>(null);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [mapSize, setMapSize] = useState({ w: 0, h: 0 });
+  const tip = useMapTooltip(14, 8);
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
   const touchStartRef = useRef<{ x: number; y: number } | null>(null);
@@ -143,31 +143,16 @@ export default function StatesOverviewMap({
   return (
     <div
       className="relative w-full h-full"
-      onMouseMove={(e) => {
-        const rect = e.currentTarget.getBoundingClientRect();
-        setMapSize({ w: rect.width, h: rect.height });
-        setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-      }}
+      onMouseMove={tip.onMouseMove}
     >
       {/* Hover tooltip */}
       {hovered && (() => {
         const tipW = 160;
-        const tipH = 54;
-        const offset = 14;
-        const pad = 8;
-        let left = mousePos.x + offset;
-        let top = mousePos.y + offset;
-        const cW = mapSize.w || 800;
-        const cH = mapSize.h || 520;
-        if (left + tipW + pad > cW) left = mousePos.x - tipW - offset;
-        if (top + tipH + pad > cH) top = mousePos.y - tipH - offset;
-        if (left < pad) left = pad;
-        if (top < pad) top = pad;
         return (
-          <div
+          <div ref={tip.tooltipRef}
             className="hidden md:block absolute z-20 pointer-events-none rounded-lg"
             style={{
-              left, top, width: tipW,
+              width: tipW,
               padding: "7px 10px",
               background: t.panel,
               border: `1px solid ${t.border}`,

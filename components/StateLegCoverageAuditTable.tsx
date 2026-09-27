@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import { statesData } from "@/data/statesData";
 import { stateLegData, type StateLegEntry } from "@/data/forecastData";
-import { UNICAMERAL_STATES } from "@/data/stateLegDistricts";
+import { UNICAMERAL_STATES } from "@/lib/unicameral";
 
 // The target range of the state-leg historical results project. Louisiana/Mississippi's 2015 rows
 // and the two stray 2014 rows in the CSV sit outside it and are not part of the scoreboard.

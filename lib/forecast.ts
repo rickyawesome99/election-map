@@ -20,6 +20,7 @@
 // Specification: /methodology (components/methodology/ForecastMethodology.tsx). A change to how
 // anything here is calculated updates that tab and adds an entry to data/methodologyChangelog.ts.
 
+import "server-only";
 import {
   senateData,
   governorData,
@@ -33,6 +34,11 @@ import { projectRace, raceSigma, winProbabilityD, getTplFit, getNationalEnvironm
 import { marginToRating } from "@/lib/colorScale";
 import { alignedParty } from "@/data/raceEligibility";
 import { districtDemographics, stateDemographics, type Demographics } from "@/data/demographics";
+import { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastSummary } from "@/lib/forecastTypes";
+import { ELECTION_YEAR } from "@/lib/electionYear";
+import { electionYear } from "@/data/forecastData";
+
+if (electionYear !== ELECTION_YEAR) throw new Error(`lib/electionYear.ts says ${ELECTION_YEAR} but data/forecastData.ts says ${electionYear} — update lib/electionYear.ts`);
 
 export type Office = "H" | "S" | "G";
 const OFFICE_OF: Record<RaceType, Office> = { house: "H", senate: "S", governor: "G" };
@@ -142,16 +148,28 @@ export function findForecast(raceType: RaceType, id: string): ForecastedRace | u
   return forecastsFor(raceType).find((r) => r.id === id);
 }
 
+/** The client-safe projection of a race (lib/forecastTypes.ts) — what the forecast map,
+ * ledger and sidebar receive as props from their server page. */
+export function toForecastSummary(r: ForecastedRace): ForecastSummary {
+  return {
+    id: r.id, name: r.name, state: r.state, raceType: r.raceType,
+    electionType: r.electionType, seat: r.seat, seatClass: r.seatClass,
+    candidates: r.candidates, seatHolder: r.seatHolder, seatParty: r.seatParty,
+    margin: r.margin, sigma: r.sigma, probability: r.probability, interval80: r.interval80, rating: r.rating,
+    office: r.office, stateAbbr: r.stateAbbr, contest: r.contest,
+    model: r.model, pollMargin: r.pollMargin, pollWeight: r.pollWeight, pollCount: r.pollCount,
+  };
+}
+
+export function forecastSummariesFor(raceType: RaceType): ForecastSummary[] {
+  return forecastsFor(raceType).map(toForecastSummary);
+}
+
 // ── Chambers ─────────────────────────────────────────────────────────────────
 
-// Seats not on the 2026 ballot (Senate: independents caucusing with the Democrats
-// are counted with them).
-export const SEAT_HOLDOVERS: Record<RaceType, { dem: number; rep: number }> = {
-  senate: { dem: 34, rep: 31 },
-  governor: { dem: 6, rep: 8 },
-  house: { dem: 0, rep: 0 },
-};
-export const TOTAL_SEATS_BY_TYPE: Record<RaceType, number> = { senate: 100, governor: 50, house: 435 };
+// SEAT_HOLDOVERS / TOTAL_SEATS_BY_TYPE live in lib/forecastTypes.ts (client-safe) and are
+// re-exported here for the server-side callers that already import them from this module.
+export { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE };
 // Democratic seats needed for control. The Senate tie goes to a Republican vice president.
 const CONTROL_THRESHOLD: Partial<Record<RaceType, number>> = { house: 218, senate: 51 };
 

@@ -53,6 +53,28 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
               ))}
             </div>
           )}
+          <details className="mt-4 text-[12.5px]">
+            <summary className="cursor-pointer select-none font-semibold" style={{ color: "var(--app-text-muted)" }}>The race-years behind the lean</summary>
+            <div className="mt-2 overflow-x-auto">
+              <table className="w-full text-[12px]" style={{ borderCollapse: "collapse" }}>
+                <thead><tr style={{ color: "var(--app-text-muted)" }}><th className="pb-1 text-left font-semibold">Race</th><th className="whitespace-nowrap pb-1 pl-2 text-right font-semibold">Raw</th><th className="whitespace-nowrap pb-1 pl-2 text-right font-semibold">Inc.</th><th className="whitespace-nowrap pb-1 pl-2 text-right font-semibold">Env.</th><th className="whitespace-nowrap pb-1 pl-2 text-right font-semibold">Money</th><th className="whitespace-nowrap pb-1 pl-2 text-right font-semibold">Neutral</th><th className="whitespace-nowrap pb-1 pl-2 text-right font-semibold">Weight</th></tr></thead>
+                <tbody>
+                  {p.rows.map((r) => (
+                    <tr key={`${r.year}-${r.office}`} style={{ borderTop: "1px solid var(--app-border)", opacity: r.included ? 1 : 0.55 }}>
+                      <td className="py-1 pr-2"><span style={{ color: "var(--app-text-primary)" }}>{r.label}</span>{r.candidates && <span className="ml-1 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{r.candidates}</span>}{!r.included && <span className="ml-1 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>— excluded: {r.reason}</span>}</td>
+                      <td className="whitespace-nowrap py-1 pl-2 text-right"><M v={r.raw} /></td>
+                      <td className="whitespace-nowrap py-1 pl-2 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.incPts ? signed(r.incPts) : "—"}</td>
+                      <td className="whitespace-nowrap py-1 pl-2 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{signed(r.envPts)}</td>
+                      <td className="whitespace-nowrap py-1 pl-2 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.moneyPts ? signed(-r.moneyPts) : "—"}</td>
+                      <td className="whitespace-nowrap py-1 pl-2 text-right"><M v={r.NM} /></td>
+                      <td className="whitespace-nowrap py-1 pl-2 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.included ? `${(r.weight * 100).toFixed(1)}%${r.huber < 0.999 ? ` · Huber ×${r.huber.toFixed(2)}` : ""}` : "—"}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              <div className="mt-1.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Margins are two-party on today&apos;s precinct lines. Inc. = incumbency strip (House advantage {p.constants.incumbencyPts.toFixed(1)} used for State House). Env. = −β* × E(year). Money = the nominees&apos; money edge beyond the typical gap for the seat, removed (only races with receipts on file). A year that summed several districts is not one race and is left out.</div>
+            </div>
+          </details>
         </div>
 
         {/* Ledger */}
@@ -74,29 +96,6 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
               </tr>
             </tbody>
           </table>
-
-          <details className="mt-3 text-[12.5px]">
-            <summary className="cursor-pointer select-none font-semibold" style={{ color: "var(--app-text-muted)" }}>The race-years behind the lean</summary>
-            <div className="mt-2 overflow-x-auto">
-              <table className="w-full text-[12px]" style={{ borderCollapse: "collapse" }}>
-                <thead><tr style={{ color: "var(--app-text-muted)" }}><th className="pb-1 text-left font-semibold">Race</th><th className="pb-1 text-right font-semibold">Raw</th><th className="pb-1 text-right font-semibold">Inc.</th><th className="pb-1 text-right font-semibold">Env.</th><th className="pb-1 text-right font-semibold">Money</th><th className="pb-1 text-right font-semibold">Neutral</th><th className="pb-1 text-right font-semibold">Weight</th></tr></thead>
-                <tbody>
-                  {p.rows.map((r) => (
-                    <tr key={`${r.year}-${r.office}`} style={{ borderTop: "1px solid var(--app-border)", opacity: r.included ? 1 : 0.55 }}>
-                      <td className="py-1 pr-2"><span style={{ color: "var(--app-text-primary)" }}>{r.label}</span>{r.candidates && <span className="ml-1 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{r.candidates}</span>}{!r.included && <span className="ml-1 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>— excluded: {r.reason}</span>}</td>
-                      <td className="py-1 text-right"><M v={r.raw} /></td>
-                      <td className="py-1 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.incPts ? signed(r.incPts) : "—"}</td>
-                      <td className="py-1 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{signed(r.envPts)}</td>
-                      <td className="py-1 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.moneyPts ? signed(-r.moneyPts) : "—"}</td>
-                      <td className="py-1 text-right"><M v={r.NM} /></td>
-                      <td className="py-1 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.included ? `${(r.weight * 100).toFixed(1)}%${r.huber < 0.999 ? ` · Huber ×${r.huber.toFixed(2)}` : ""}` : "—"}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-              <div className="mt-1.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Margins are two-party on today&apos;s precinct lines. Inc. = incumbency strip (House advantage {p.constants.incumbencyPts.toFixed(1)} used for State House). Env. = −β* × E(year). Money = the nominees&apos; money edge beyond the typical gap for the seat, removed (only races with receipts on file). A year that summed several districts is not one race and is left out.</div>
-            </div>
-          </details>
         </div>
       </div>
 
@@ -190,14 +189,17 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
             </tbody>
           </table>
         </div>
-        <div className="mt-2 max-w-4xl space-y-1.5 text-[11.5px]" style={{ color: "var(--app-text-very-muted)" }}>
-          <p>
-            Baseline per precinct = {Math.round(p.constants.BASELINE_PRES_WEIGHT * 100)}% {p.baseline.year} {p.baseline.topOffice === "pres" ? "President" : "top of ticket"} + {Math.round((1 - p.constants.BASELINE_PRES_WEIGHT) * 100)}% {p.baseline.year} State House, so a precinct&apos;s projection reflects both its partisanship and how it voted for the legislature. The Projection mode in the explorer maps every precinct at this turnout.
-          </p>
-          <p>
-            <b style={{ color: "var(--app-text-muted)" }}>Turnout sets the size of the race, not the margin.</b> For scale, {turnout.presYear} saw {turnout.presBallots.toLocaleString()} ballots. Midterm turnout falls almost evenly across this district&apos;s precincts, so the turnout estimate barely moves the margin; the margin is the projection above. What precinct rates cannot show is which voters inside a precinct stay home in a midterm.
-          </p>
-        </div>
+        <details className="mt-3 text-[12.5px]">
+          <summary className="cursor-pointer select-none font-semibold" style={{ color: "var(--app-text-muted)" }}>More details</summary>
+          <div className="mt-2 max-w-4xl space-y-1.5 text-[11.5px]" style={{ color: "var(--app-text-very-muted)" }}>
+            <p>
+              Baseline per precinct = {Math.round(p.constants.BASELINE_PRES_WEIGHT * 100)}% {p.baseline.year} {p.baseline.topOffice === "pres" ? "President" : "top of ticket"} + {Math.round((1 - p.constants.BASELINE_PRES_WEIGHT) * 100)}% {p.baseline.year} State House, so a precinct&apos;s projection reflects both its partisanship and how it voted for the legislature. The Projection mode in the explorer maps every precinct at this turnout.
+            </p>
+            <p>
+              <b style={{ color: "var(--app-text-muted)" }}>Turnout sets the size of the race, not the margin.</b> For scale, {turnout.presYear} saw {turnout.presBallots.toLocaleString()} ballots. Midterm turnout falls almost evenly across this district&apos;s precincts, so the turnout estimate barely moves the margin; the margin is the projection above. What precinct rates cannot show is which voters inside a precinct stay home in a midterm.
+            </p>
+          </div>
+        </details>
       </div>
     </div>
   );

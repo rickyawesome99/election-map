@@ -18,6 +18,7 @@ export default function StateMapToggle({
   housePastResults,
   selected,
   onSelect,
+  countyTpl,
 }: {
   abbr: string;
   stateName: string;
@@ -26,6 +27,7 @@ export default function StateMapToggle({
   housePastResults: Record<string, PastResult[]>;
   selected: ForecastedRace | null;
   onSelect: (race: ForecastedRace | null) => void;
+  countyTpl: Record<string, number | null>;
 }) {
   const [view, setView] = useState<MapView>("projection");
   const availablePastYears = useMemo(() => {
@@ -128,6 +130,7 @@ export default function StateMapToggle({
         <PastElectionsCountyMap
           stateAbbr={abbr}
           stateName={stateName}
+          countyTpl={countyTpl}
         />
       )}
     </section>

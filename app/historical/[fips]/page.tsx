@@ -87,8 +87,11 @@ function senateSeatHref(
     ?? `/senate/${stateAbbr.toLowerCase()}`;
 }
 
+// 3,100 county pages: rendered on first request and cached until the next deploy rather than
+// prebuilt, which keeps the build to the ~700 race, state and legislature pages people open most.
+export const dynamicParams = true;
 export async function generateStaticParams() {
-  return Object.keys(countyPresidentialData).map((fips) => ({ fips }));
+  return [];
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ fips: string }> }) {

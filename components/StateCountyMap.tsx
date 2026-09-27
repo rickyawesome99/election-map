@@ -1,9 +1,9 @@
 "use client";
 
+import { useMapTooltip } from "@/lib/useMapTooltip";
 import { useState, useRef, useEffect, useCallback } from "react";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { getRaceColor } from "@/lib/colorScale";
-import { calculateCountyModel } from "@/lib/tplCompute";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 
 // Per-state TopoJSON, split from public/us-counties.json by scripts/split-national-maps.mjs —
@@ -72,6 +72,7 @@ export default function StateCountyMap({
   highlightFips,
   showTpl = false,
   showLabel = true,
+  countyTpl,
 }: {
   stateAbbr: string;
   stateName: string;
@@ -79,25 +80,21 @@ export default function StateCountyMap({
   highlightFips?: string;
   showTpl?: boolean;
   showLabel?: boolean;
+  /** fips → county TPL, from lib/countyTpl.ts on the server; required when showTpl is on. */
+  countyTpl?: Record<string, number | null>;
 }) {
   const [hovered, setHovered] = useState<County | null>(null);
   const [selected, setSelected] = useState<County | null>(null);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const tip = useMapTooltip(12, 8);
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const [mapViewport, setMapViewport] = useState({ width: 800, height: 600 });
   const [autoProj, setAutoProj] = useState<ProjectionConfig | null>(null);
-  const countyTplCache = useRef(new Map<string, number | null>());
   const getCountyTpl = useCallback((fips: string): number | null => {
     if (!showTpl) return null;
-    const cached = countyTplCache.current.get(fips);
-    if (cached !== undefined || countyTplCache.current.has(fips)) return cached ?? null;
-    const calc = calculateCountyModel(fips);
-    const tpl = calc && calc.races.some((race) => race.NM != null) ? calc.tpl : null;
-    countyTplCache.current.set(fips, tpl);
-    return tpl;
-  }, [showTpl]);
+    return countyTpl?.[fips] ?? null;
+  }, [showTpl, countyTpl]);
   const measure = useCallback(() => {
     const el = containerRef.current;
     if (!el) return;
@@ -131,25 +128,15 @@ export default function StateCountyMap({
         ref={containerRef}
         className="relative"
         style={{ height, background: "var(--app-bg)" }}
-        onMouseMove={(e) => {
-          const rect = e.currentTarget.getBoundingClientRect();
-          setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-        }}
+        onMouseMove={tip.onMouseMove}
       >
         {/* Hover tooltip */}
         {hovered && (() => {
           const tipW = 150;
-          const tipH = showTpl ? 62 : 46;
-          let left = mousePos.x + 12;
-          let top = mousePos.y + 12;
-          if (left + tipW > 430) left = mousePos.x - tipW - 12;
-          if (top + tipH > 340) top = mousePos.y - tipH - 12;
           return (
-            <div
+            <div ref={tip.tooltipRef}
               className="absolute z-20 hidden pointer-events-none rounded-lg md:block"
               style={{
-                left,
-                top,
                 width: tipW,
                 padding: "8px 10px",
                 background: "var(--app-panel)",

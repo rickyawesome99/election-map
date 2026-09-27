@@ -1,3 +1,4 @@
+import "server-only";
 import { stateLegDistricts, type Chamber, type StateLegDistrict } from "@/data/stateLegDistricts";
 import { normalizeDistrictKey } from "@/lib/stateLegDistrictKey";
 

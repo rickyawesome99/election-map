@@ -1,7 +1,7 @@
 // Provenance and caveats for a precinct-district page: boundary eras and the crosswalk, which
 // districts the footprint belonged to each year, sources, and anything the numbers leave out.
 
-import { LedgerSectionHead } from "@/components/RaceDetailSections";
+import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import type { PrecinctDistrictData } from "@/lib/precinctDistrict/types";
 
 export default function DataNotes({ data }: { data: PrecinctDistrictData }) {

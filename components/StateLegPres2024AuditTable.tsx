@@ -3,7 +3,8 @@
 import { useMemo, useState } from "react";
 import { statesData } from "@/data/statesData";
 import { stateLegPres2024, type StateLegPres2024 } from "@/data/stateLegPres2024";
-import { UNICAMERAL_STATES, type Chamber } from "@/data/stateLegDistricts";
+import type { Chamber } from "@/data/stateLegDistricts";
+import { UNICAMERAL_STATES } from "@/lib/unicameral";
 import { presPastResults } from "@/data/forecastData";
 import { fmtMargin, marginColor } from "@/lib/colorScale";
 

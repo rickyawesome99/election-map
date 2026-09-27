@@ -29,7 +29,8 @@ export function probToRating(pDem: number): ExternalRating {
 }
 
 export const CHAMBERS: RaceType[] = ["senate", "governor", "house"];
-export const CHAMBER_LABEL: Record<RaceType, string> = { senate: "Senate", governor: "Governor", house: "House" };
+import { CHAMBER_LABEL } from "@/lib/forecastTypes";
+export { CHAMBER_LABEL };
 
 // House by district name; governors by state; Senate by state, the specials as "FL-2" / "OH-2"
 // (our own Senate ids carry the seat number for seat-2 races, "DE-2", which nobody else uses).

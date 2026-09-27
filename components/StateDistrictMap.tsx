@@ -7,6 +7,7 @@ import { getRaceColor, getRatingColors } from "@/lib/colorScale";
 import type {  } from "@/data/forecastData";
 import type { ForecastedRace } from "@/lib/forecast";
 import { useDarkMode } from "@/lib/useDarkMode";
+import { useMapTooltip } from "@/lib/useMapTooltip";
 import { getLandMaskFips, StateLandMask, StateLandMaskDefinition } from "./StateLandMask";
 
 // Per-state TopoJSON, split from public/congressional-districts-2026.json by
@@ -55,8 +56,7 @@ export default function StateDistrictMap({
   onSelect: (race: ForecastedRace | null) => void;
 }) {
   const [hovered, setHovered] = useState<ForecastedRace | null>(null);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [mapSize, setMapSize] = useState({ w: 0, h: 0 });
+  const tip = useMapTooltip(16, 8);
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
   const darkMode = useDarkMode();
@@ -110,11 +110,7 @@ export default function StateDistrictMap({
         ref={containerRef}
         className="relative"
         style={{ height: 360, background: "var(--app-bg)" }}
-        onMouseMove={(e) => {
-          const rect = e.currentTarget.getBoundingClientRect();
-          setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-          setMapSize({ w: rect.width, h: rect.height });
-        }}
+        onMouseMove={tip.onMouseMove}
       >
         {/* Hover tooltip */}
         {hovered && (() => {
@@ -125,22 +121,11 @@ export default function StateDistrictMap({
           const marginColor = hovered.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)";
           const { bg: badgeColor, text: badgeText } = getRatingColors(hovered.rating);
           const tipW = 190;
-          const tipH = hovered.candidates ? 115 : 88;
-          const offset = 16;
-          const edgePad = 8;
-          let left = mousePos.x + offset;
-          let top = mousePos.y + offset;
-          const containerW = mapSize.w || 800;
-          const containerH = mapSize.h || 600;
-          if (left + tipW + edgePad > containerW) left = mousePos.x - tipW - offset;
-          if (top + tipH + edgePad > containerH) top = mousePos.y - tipH - offset;
-          if (left < edgePad) left = edgePad;
-          if (top < edgePad) top = edgePad;
           return (
-            <div
+            <div ref={tip.tooltipRef}
               className="hidden md:block absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"
               style={{
-                left, top, width: tipW,
+                width: tipW,
                 padding: "6px 8px",
                 background: "var(--app-panel)",
                 border: "1px solid var(--app-border)",

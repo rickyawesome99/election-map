@@ -3,9 +3,6 @@
 // This file stores only: model constants, and the per-race adjustment inputs (IF, CQF) that
 // are new data added by this feature and do not exist anywhere else in the codebase.
 
-import { houseDelegationHistory } from "./forecastData";
-import { popVoteData } from "./popVoteData";
-import { statesData } from "./statesData";
 
 export type CQTier = "Elite" | "Strong" | "Generic" | "Weak" | "Sacrificial";
 
@@ -103,104 +100,6 @@ export const TPL_GLOBAL_CONSTANTS = {
 // Iowa example, cycle swings are rounded to one decimal and each cycle ratio is
 // rounded to two decimals before averaging. A national swing below 1 point is
 // excluded because the denominator is too small to produce a reliable ratio.
-
-export const S_MIN_NATIONAL_SWING = 1;
-export const S_YEARS = [2016, 2018, 2020, 2022, 2024] as const;
-
-export interface SInterval {
-  fromYear: number;
-  toYear: number;
-  stateSwing: number;
-  nationalSwing: number;
-  ratio: number | null;
-}
-
-export interface StateSCalculation {
-  S: number;
-  intervals: SInterval[];
-}
-
-function roundTo(value: number, decimals: number): number {
-  const scale = 10 ** decimals;
-  return Math.round((value + Number.EPSILON) * scale) / scale;
-}
-
-const NATIONAL_HOUSE_D_MARGIN = Object.fromEntries(
-  popVoteData
-    .filter((row) => row.type === "House")
-    .map((row) => [row.year, row.demPct - row.repPct])
-) as Record<number, number>;
-
-export function calculateStateS(stateName: string): StateSCalculation | null {
-  const stateResults = houseDelegationHistory[stateName] ?? [];
-  const stateDMargins = Object.fromEntries(
-    stateResults.map((result) => [result.year, result.demPct - result.repPct])
-  ) as Record<number, number>;
-  const contestedYears = new Set(
-    stateResults.filter((r) => r.repPct > 0 && r.demPct > 0).map((r) => r.year)
-  );
-
-  const intervals: SInterval[] = [];
-
-  for (let i = 1; i < S_YEARS.length; i += 1) {
-    const fromYear = S_YEARS[i - 1];
-    const toYear = S_YEARS[i];
-    const stateFrom = stateDMargins[fromYear];
-    const stateTo = stateDMargins[toYear];
-    const nationalFrom = NATIONAL_HOUSE_D_MARGIN[fromYear];
-    const nationalTo = NATIONAL_HOUSE_D_MARGIN[toYear];
-
-    if (
-      stateFrom == null ||
-      stateTo == null ||
-      nationalFrom == null ||
-      nationalTo == null ||
-      !contestedYears.has(fromYear) ||
-      !contestedYears.has(toYear)
-    ) {
-      continue;
-    }
-
-    const stateSwing = roundTo(stateTo - stateFrom, 1);
-    const nationalSwing = roundTo(nationalTo - nationalFrom, 1);
-    const ratio =
-      Math.abs(nationalSwing) < S_MIN_NATIONAL_SWING
-        ? null
-        : roundTo(stateSwing / nationalSwing, 2);
-
-    intervals.push({ fromYear, toYear, stateSwing, nationalSwing, ratio });
-  }
-
-  const stableRatios = intervals.flatMap((interval) =>
-    interval.ratio == null ? [] : [interval.ratio]
-  );
-
-  if (stableRatios.length === 0) return null;
-
-  return {
-    S: roundTo(
-      stableRatios.reduce((sum, ratio) => sum + ratio, 0) / stableRatios.length,
-      2
-    ),
-    intervals,
-  };
-}
-
-export const STATE_S_CALCULATIONS: Record<string, StateSCalculation> =
-  Object.fromEntries(
-    statesData.flatMap((state) => {
-      const calculation = calculateStateS(state.name);
-      return calculation ? [[state.abbr, calculation]] : [];
-    })
-  );
-
-export const STATE_MODEL_CONSTANTS: Record<string, { S?: number }> =
-  Object.fromEntries(
-    Object.entries(STATE_S_CALCULATIONS).map(([abbr, calculation]) => [
-      abbr,
-      { S: calculation.S },
-    ])
-  );
 
 // ── Iowa per-race adjustment inputs (2018–2024) ─────────────────────────────
 // wqTier = winning candidate quality, lqTier = losing candidate quality.

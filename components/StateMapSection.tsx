@@ -14,6 +14,7 @@ export default function StateMapSection({
   stateAbbr,
   stateName,
   stateFips,
+  countyTpl,
 }: {
   overview: React.ReactNode;
   children: React.ReactNode;
@@ -22,6 +23,7 @@ export default function StateMapSection({
   stateAbbr: string;
   stateName: string;
   stateFips: string;
+  countyTpl: Record<string, number | null>;
 }) {
   const [selected, setSelected] = useState<ForecastedRace | null>(null);
   const demPct = selected ? Math.max(0, Math.min(100, 50 - selected.margin / 2)) : 0;
@@ -40,6 +42,7 @@ export default function StateMapSection({
             housePastResults={housePastResults}
             selected={selected}
             onSelect={setSelected}
+            countyTpl={countyTpl}
           />
         </div>
         {overview}

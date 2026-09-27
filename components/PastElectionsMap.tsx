@@ -6,6 +6,7 @@ import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simp
 import { getRaceColor } from "@/lib/colorScale";
 import type { HouseStatewideResult } from "@/data/forecastData";
 import { useDarkMode } from "@/lib/useDarkMode";
+import { useMapTooltip } from "@/lib/useMapTooltip";
 import { getCongressionalDistrictsGeoUrl, isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 import { getLandMaskFips, StateLandMask, StateLandMaskDefinition } from "./StateLandMask";
 
@@ -41,6 +42,11 @@ type DistrictGeo = {
     coordinates: PolygonCoordinates | MultiPolygonCoordinates;
   };
 };
+
+// Hoisted so its identity is stable: react-simple-maps re-fetches, re-parses and re-projects the
+// whole boundary file whenever `parseGeographies` changes identity — an inline arrow did that on
+// every render, i.e. on every hover.
+const parseDistrictGeographies = (geographies: DistrictGeo[]) => geographies.map(normalizeDistrictGeography);
 
 function ringArea(ring: Position[]): number {
   let area = 0;
@@ -137,8 +143,7 @@ export default function PastElectionsMap({
 
   const [hovered, setHovered] = useState<{ geoid: string; result: HouseStatewideResult } | null>(null);
   const [selected, setSelected] = useState<{ geoid: string; result: HouseStatewideResult } | null>(null);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [mapSize, setMapSize] = useState({ w: 0, h: 0 });
+  const tip = useMapTooltip(16, 8);
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
   const darkMode = useDarkMode();
@@ -206,11 +211,7 @@ export default function PastElectionsMap({
         ref={containerRef}
         className="relative"
         style={{ height: 360, background: "var(--app-bg)" }}
-        onMouseMove={(e) => {
-          const rect = e.currentTarget.getBoundingClientRect();
-          setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-          setMapSize({ w: rect.width, h: rect.height });
-        }}
+        onMouseMove={tip.onMouseMove}
       >
         {/* Hover tooltip */}
         {hovered && (() => {
@@ -221,20 +222,11 @@ export default function PastElectionsMap({
           const cdNum = parseInt(geoid.slice(-2), 10);
           const distLabel = cdNum === 0 ? "At-Large" : `CD-${cdNum}`;
           const tipW = 175;
-          const tipH = result.demVotes ? 96 : 76;
-          const offset = 16;
-          const edgePad = 8;
-          let left = mousePos.x + offset;
-          let top = mousePos.y + offset;
-          if (left + tipW + edgePad > mapSize.w) left = mousePos.x - tipW - offset;
-          if (top + tipH + edgePad > mapSize.h) top = mousePos.y - tipH - offset;
-          if (left < edgePad) left = edgePad;
-          if (top < edgePad) top = edgePad;
           return (
-            <div
+            <div ref={tip.tooltipRef}
               className="hidden md:block absolute z-20 pointer-events-none rounded-lg"
               style={{
-                left, top, width: tipW,
+                width: tipW,
                 padding: "6px 8px",
                 background: "var(--app-panel)",
                 border: "1px solid var(--app-border)",
@@ -277,7 +269,7 @@ export default function PastElectionsMap({
             <Geographies
               key={geoUrl}
               geography={geoUrl}
-              parseGeographies={(geographies: DistrictGeo[]) => geographies.map(normalizeDistrictGeography)}
+              parseGeographies={parseDistrictGeographies}
             >
                 {({ geographies }: { geographies: DistrictGeo[] }) =>
                   geographies.map(geo => {

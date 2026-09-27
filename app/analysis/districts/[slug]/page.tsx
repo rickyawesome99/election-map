@@ -86,7 +86,7 @@ export default async function PrecinctDistrictPage({ params }: { params: Promise
         </section>
 
         <section id="explorer" className="mt-12 scroll-mt-24">
-          <LedgerSectionHead label="Precinct explorer" meta="results · swing · demographics · targeting · 2026 projection" />
+          <LedgerSectionHead label="Precinct explorer" />
           <PrecinctExplorer data={data} projection={projection} />
         </section>
 

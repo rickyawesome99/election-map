@@ -23,7 +23,7 @@ function subscribeToHash(onChange: () => void): () => void {
   return () => window.removeEventListener("hashchange", onChange);
 }
 
-import { electionYear } from "@/data/forecastData";
+import { ELECTION_YEAR as electionYear } from "@/lib/electionYear";
 import { districtResultMargin, useStateLegResults } from "@/lib/useStateLegResults";
 import { districtDisplayLabel, isUnassignedResultKey } from "@/lib/stateLegDistrictKey";
 import { fmtMargin } from "@/lib/colorScale";

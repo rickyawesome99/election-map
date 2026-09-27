@@ -7,27 +7,38 @@ import { getRaceColor } from "@/lib/colorScale";
 import { APPROVE_COLOR, DISAPPROVE_COLOR } from "@/lib/trumpApprovalAverage";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
+import { useMapTooltip } from "@/lib/useMapTooltip";
 import { NationalLandMask, NationalLandMaskDefinition } from "./StateLandMask";
 import { statesData } from "@/data/statesData";
 import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
-import { districtPresidentialData } from "@/data/districtPresidentialData";
-import {
-  calculateStateModel,
-  calculateDistrictModel,
-  computeWarTable,
-  getTplFit,
-  incumbentAdvantage,
-} from "@/lib/tplCompute";
+import type { StateModelCalculation, DistrictModelCalculation, WarRow } from "@/lib/tplCompute";
+import type { ModelSummary } from "@/lib/modelSlices";
+import { useStaticJson } from "@/lib/useStaticJson";
 import { ELIGIBILITY_LABELS } from "@/data/raceEligibility";
 
-// ── District lookup: state abbreviation → sorted list of districts ───────────
+/**
+ * Everything the page needs up front, computed on the server by lib/modelSlices.ts and passed by
+ * app/model/[[...subtab]]/page.tsx: the fit, every state's and district's TPL, and the full
+ * calculation for the initially selected state and district. Any other selection is fetched
+ * from the static routes under /api/model/ as the reader makes it; the WAR table only when its
+ * sub-tab opens.
+ */
+export type TplModelPageProps = {
+  initialSubTab?: "state" | "district" | "table" | "districtTable" | "war";
+  data: {
+    summary: ModelSummary;
+    initialState: { abbr: string; calc: StateModelCalculation };
+    initialDistrict: { id: string; calc: DistrictModelCalculation };
+  };
+};
 
-const DISTRICTS_BY_STATE: Record<string, { id: string; code: string; num: number }[]> = {};
-for (const [id, d] of Object.entries(districtPresidentialData)) {
-  if (!DISTRICTS_BY_STATE[d.state]) DISTRICTS_BY_STATE[d.state] = [];
-  DISTRICTS_BY_STATE[d.state].push({ id, code: d.code, num: parseInt(d.code.split("-")[1]) });
+/** The last successfully loaded value, so a selection change never renders an empty table
+ * while the next slice is in flight (React's derive-state-during-render pattern). */
+function useLatest<T>(value: T | null, fallback: T): T {
+  const [last, setLast] = useState<T>(fallback);
+  if (value && value !== last) setLast(value);
+  return value ?? last;
 }
-for (const arr of Object.values(DISTRICTS_BY_STATE)) arr.sort((a, b) => a.num - b.num);
 
 // ── Display helpers ─────────────────────────────────────────────────────────
 
@@ -141,8 +152,7 @@ function TplStateMap({ rows, onSelect }: { rows: TplMapRow[]; onSelect: (abbr: s
 
   const [hovered, setHovered]   = useState<TplMapRow | null>(null);
   const [selected, setSelected] = useState<TplMapRow | null>(null);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [mapSize, setMapSize]   = useState({ w: 0, h: 0 });
+  const tip = useMapTooltip(14, 8);
   const [mapKey, setMapKey]     = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
   const touchStartRef  = useRef<{ x: number; y: number } | null>(null);
@@ -155,26 +165,15 @@ function TplStateMap({ rows, onSelect }: { rows: TplMapRow[]; onSelect: (abbr: s
     <div
       className="relative w-full rounded-xl overflow-hidden h-[320px] sm:h-[400px] md:h-[520px]"
       style={{ border: "1px solid var(--app-border)" }}
-      onMouseMove={(e) => {
-        const rect = e.currentTarget.getBoundingClientRect();
-        setMapSize({ w: rect.width, h: rect.height });
-        setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-      }}
+      onMouseMove={tip.onMouseMove}
     >
       {/* Hover tooltip — hidden when a panel is open */}
       {hovered && !selected && (() => {
-        const tipW = 152, tipH = 48, offset = 14, pad = 8;
-        let left = mousePos.x + offset;
-        let top  = mousePos.y + offset;
-        const cW = mapSize.w || 800, cH = mapSize.h || 520;
-        if (left + tipW + pad > cW) left = mousePos.x - tipW - offset;
-        if (top  + tipH + pad > cH) top  = mousePos.y - tipH - offset;
-        if (left < pad) left = pad;
-        if (top  < pad) top  = pad;
+        const tipW = 152;
         return (
-          <div
+          <div ref={tip.tooltipRef}
             className="absolute z-20 pointer-events-none rounded-lg hidden md:block"
-            style={{ left, top, width: tipW, padding: "7px 10px", background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}
+            style={{ width: tipW, padding: "7px 10px", background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}
           >
             <div className="font-bold text-xs mb-0.5" style={{ color: "var(--app-text-primary)" }}>{hovered.name}</div>
             <div className="text-[10px] font-semibold" style={{ color: marginColor(hovered.tpl) }}>TPL: {fmtMargin(hovered.tpl)}</div>
@@ -349,8 +348,7 @@ function TplDistrictMap({
 
   const [hovered, setHovered]   = useState<TplDistrictRow | null>(null);
   const [selected, setSelected] = useState<TplDistrictRow | null>(null);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [mapSize, setMapSize]   = useState({ w: 0, h: 0 });
+  const tip = useMapTooltip(14, 8);
   const [mapKey, setMapKey]     = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
   const touchStartRef  = useRef<{ x: number; y: number } | null>(null);
@@ -363,26 +361,15 @@ function TplDistrictMap({
     <div
       className="relative w-full rounded-xl overflow-hidden h-[320px] sm:h-[400px] md:h-[520px]"
       style={{ border: "1px solid var(--app-border)" }}
-      onMouseMove={(e) => {
-        const rect = e.currentTarget.getBoundingClientRect();
-        setMapSize({ w: rect.width, h: rect.height });
-        setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-      }}
+      onMouseMove={tip.onMouseMove}
     >
       {/* Hover tooltip — hidden when a panel is open */}
       {hovered && !selected && (() => {
-        const tipW = 152, tipH = 48, offset = 14, pad = 8;
-        let left = mousePos.x + offset;
-        let top  = mousePos.y + offset;
-        const cW = mapSize.w || 800, cH = mapSize.h || 520;
-        if (left + tipW + pad > cW) left = mousePos.x - tipW - offset;
-        if (top  + tipH + pad > cH) top  = mousePos.y - tipH - offset;
-        if (left < pad) left = pad;
-        if (top  < pad) top  = pad;
+        const tipW = 152;
         return (
-          <div
+          <div ref={tip.tooltipRef}
             className="absolute z-20 pointer-events-none rounded-lg hidden md:block"
-            style={{ left, top, width: tipW, padding: "7px 10px", background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}
+            style={{ width: tipW, padding: "7px 10px", background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}
           >
             <div className="font-bold text-xs mb-0.5" style={{ color: "var(--app-text-primary)" }}>{hovered.code}</div>
             <div className="text-[10px] font-semibold" style={{ color: marginColor(hovered.tpl) }}>TPL: {fmtMargin(hovered.tpl)}</div>
@@ -546,8 +533,11 @@ function TplDistrictMap({
 
 // ── Component ────────────────────────────────────────────────────────────────
 
-export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state" | "district" | "table" | "districtTable" | "war" }) {
+export default function TplModelPage({ initialSubTab, data }: TplModelPageProps) {
   const router = useRouter();
+  const { summary, initialState, initialDistrict } = data;
+  const DISTRICTS_BY_STATE = summary.districtsByState;
+  const districtById = useMemo(() => new Map(summary.districts.map((d) => [d.id, d])), [summary]);
   // Deterministic on both server and client (no `window` check) to avoid a hydration mismatch;
   // corrected to the real `modelState` URL param via useLayoutEffect below, before first paint.
   const [selectedAbbr, setSelectedAbbr] = useState<string>(statesData[0].abbr);
@@ -599,9 +589,9 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
   const initialDistrictId = typeof window !== "undefined"
     ? new URLSearchParams(window.location.search).get("modelDistrict")
     : null;
-  const validInitialDistrictId = initialDistrictId && districtPresidentialData[initialDistrictId] ? initialDistrictId : null;
+  const validInitialDistrictId = initialDistrictId && districtById.has(initialDistrictId) ? initialDistrictId : null;
   const initialDistrictStateAbbr = validInitialDistrictId
-    ? districtPresidentialData[validInitialDistrictId].state
+    ? districtById.get(validInitialDistrictId)!.state
     : Object.keys(DISTRICTS_BY_STATE).sort()[0];
   const [selectedDistrictStateAbbr, setSelectedDistrictStateAbbr] = useState<string>(initialDistrictStateAbbr);
   const [selectedDistrictId, setSelectedDistrictId] = useState<string>(
@@ -630,32 +620,23 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
     [selectedAbbr]
   );
 
-  const tplFit = getTplFit();
+  const tplFit = summary.fit;
   const betaInfo = tplFit.beta[selectedAbbr];
   const beta = betaInfo?.shrunk ?? 1;
 
-  const selectedCalculation = useMemo(
-    () => calculateStateModel(selectedAbbr, selectedStateName),
-    [selectedAbbr, selectedStateName]
+  const stateSlice = useStaticJson<StateModelCalculation>(
+    `/api/model/state/${selectedAbbr}`,
+    useMemo(() => ({ url: `/api/model/state/${initialState.abbr}`, data: initialState.calc }), [initialState]),
   );
+  const selectedCalculation = useLatest(stateSlice.data, initialState.calc);
   const allRaces = selectedCalculation.races;
   const yearAggregations = selectedCalculation.yearAggregations;
   const tpl = selectedCalculation.tpl;
 
-  const nationalTpl = useMemo(() => {
-    const stateScores = statesData.map((state) => ({
-      ...state,
-      tpl: calculateStateModel(state.abbr, state.name).tpl,
-    }));
-    const sortedScores = stateScores.map((state) => state.tpl).sort((a, b) => a - b);
-    const midpoint = sortedScores.length / 2;
-    const medianTpl =
-      sortedScores.length % 2 === 0
-        ? (sortedScores[midpoint - 1] + sortedScores[midpoint]) / 2
-        : sortedScores[Math.floor(midpoint)];
-
-    return { stateScores, medianTpl };
-  }, []);
+  const nationalTpl = useMemo(
+    () => ({ stateScores: summary.states, medianTpl: summary.medianStateTpl }),
+    [summary],
+  );
 
   const centeredTpl = tpl - nationalTpl.medianTpl;
 
@@ -697,12 +678,14 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
 
   // ── District TPL computed values ──────────────────────────────────────────
 
-  const selectedDistrictCalc = useMemo(
-    () => calculateDistrictModel(selectedDistrictId),
-    [selectedDistrictId]
+  const districtSlice = useStaticJson<DistrictModelCalculation>(
+    selectedDistrictId ? `/api/model/district/${selectedDistrictId}` : null,
+    useMemo(() => ({ url: `/api/model/district/${initialDistrict.id}`, data: initialDistrict.calc }), [initialDistrict]),
   );
+  const selectedDistrictCalc = useLatest(districtSlice.data, initialDistrict.calc);
 
-  const warRows = useMemo(() => (activeSubTab === "war" ? computeWarTable().map((row, id) => ({ ...row, id })) : []), [activeSubTab]);
+  const warSlice = useStaticJson<WarRow[]>(activeSubTab === "war" ? "/api/model/war" : null);
+  const warRows = useMemo(() => (warSlice.data ?? []).map((row, id) => ({ ...row, id })), [warSlice.data]);
   const filteredWarRows = useMemo(() => {
     const terms = warQuery.trim().toLowerCase().split(/[\s,]+/).filter(Boolean);
     const stateAbbreviations = new Set(statesData.map((state) => state.abbr.toLowerCase()));
@@ -739,26 +722,14 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
       filteredWarRows[warDisplayLimit].race === last.race) warDisplayLimit++;
   }
 
-  const nationalDistrictTpl = useMemo(() => {
-    const districtScores = Object.entries(districtPresidentialData).map(([id, d]) => ({
-      id,
-      code: d.code,
-      state: d.state,
-      stateName: d.stateName,
-      tpl: calculateDistrictModel(id).tpl,
-    }));
-    const sorted = [...districtScores.map((d) => d.tpl)].sort((a, b) => a - b);
-    const mid = sorted.length / 2;
-    const medianTpl =
-      sorted.length % 2 === 0
-        ? (sorted[mid - 1] + sorted[mid]) / 2
-        : sorted[Math.floor(mid)];
-    return { districtScores, medianTpl };
-  }, []);
+  const nationalDistrictTpl = useMemo(
+    () => ({ districtScores: summary.districts, medianTpl: summary.medianDistrictTpl }),
+    [summary],
+  );
 
   const centeredDistrictTpl = selectedDistrictCalc.tpl - nationalDistrictTpl.medianTpl;
 
-  const selectedDistrictData = districtPresidentialData[selectedDistrictId];
+  const selectedDistrictData = districtById.get(selectedDistrictId);
 
   const allDistrictRows = useMemo(() => {
     const rows = nationalDistrictTpl.districtScores.map((d) => ({
@@ -2050,7 +2021,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                   );
                 })}
                 {filteredWarRows.length === 0 && (
-                  <tr><td colSpan={12} className="px-4 py-6 text-center" style={{ color: "var(--app-text-very-muted)" }}>No performances match the filters.</td></tr>
+                  <tr><td colSpan={12} className="px-4 py-6 text-center" style={{ color: "var(--app-text-very-muted)" }}>{warSlice.loading ? "Loading the WAR table…" : warSlice.failed ? "The WAR table could not be loaded." : "No performances match the filters."}</td></tr>
                 )}
               </tbody>
             </table>
@@ -2222,7 +2193,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                         {r.imputed
                           ? "Imputed row — no incumbency to strip"
                           : r.incumbent === "R" || r.incumbent === "D"
-                          ? `${r.incumbent} incumbent — ${(incumbentAdvantage()[r.raceType] ?? 0).toFixed(1)} pts stripped toward ${r.incumbent === "R" ? "D" : "R"}`
+                          ? `${r.incumbent} incumbent — ${(summary.incumbentAdvantage[r.raceType] ?? 0).toFixed(1)} pts stripped toward ${r.incumbent === "R" ? "D" : "R"}`
                           : r.raceType === "P"
                           ? "President — national approval effects live in E(y)"
                           : r.raceType === "L"

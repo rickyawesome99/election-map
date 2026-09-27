@@ -25,6 +25,11 @@ const TABS = [
 ] as const;
 type TabKey = (typeof TABS)[number]["key"];
 
+// Every tab is prerendered; without this an optional catch-all renders on demand.
+export function generateStaticParams() {
+  return [{ model: [] }, ...TABS.map((t) => ({ model: [t.key] }))];
+}
+
 function parseTab(segments: string[] | undefined): TabKey {
   if (!segments || segments.length === 0) return "forecast";
   if (segments.length > 1) notFound();

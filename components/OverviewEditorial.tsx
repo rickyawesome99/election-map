@@ -1,36 +1,30 @@
 "use client";
 
-import { useMemo } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
-import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
-import { computeTrumpApprovalAverage } from "@/lib/trumpApprovalAverage";
 import { fmtMargin, formatProjectedMargin, getRaceColor, marginToRating } from "@/lib/colorScale";
-import { calculateStateTpl } from "@/lib/tplCompute";
 import { useDarkMode } from "@/lib/useDarkMode";
-import { electionYear } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
-import {
-  DARK_THEME,
-  LIGHT_THEME,
-  SEAT_HOLDOVERS,
-  type Theme,
-} from "./ForecastMap";
-import { governorForecasts, houseForecasts, senateForecasts, getChamberSimulations, TOTAL_SEATS_BY_TYPE } from "@/lib/forecast";
+import type { RaceType } from "@/data/forecastData";
+import type { ChamberSimulation } from "@/lib/forecast";
+import { DARK_THEME, LIGHT_THEME, type Theme } from "./ForecastMap";
 import PollingAverageCard from "./PollingAverageCard";
 import SeatHistogram from "./SeatHistogram";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
-type MapMode = "house" | "senate" | "governor";
-type ForecastRace = (typeof houseForecasts)[number];
 type GeoFeature = { rsmKey: string; id?: string | number; properties?: Record<string, string | undefined> };
 
-
-function seatTotals(data: { margin: number }[], holdover: { dem: number; rep: number }) {
-  return {
-    dem: holdover.dem + data.filter((race) => race.margin <= 0).length,
-    rep: holdover.rep + data.filter((race) => race.margin > 0).length,
-  };
-}
+/** Computed by app/overview/page.tsx on the server. */
+export type OverviewData = {
+  electionYear: number;
+  genericBallot: { diff: number; dem: number; rep: number };
+  approvalDiff: number;
+  seats: Record<RaceType, { dem: number; rep: number }>;
+  totalSeats: Record<RaceType, number>;
+  sims: Record<RaceType, ChamberSimulation>;
+  /** State name → state TPL (R-positive). */
+  stateMargins: Record<string, number>;
+  keyRaces: { type: RaceType; id: string; name: string; state: string; margin: number }[];
+};
 
 function SectionHead({ children, theme }: { children: React.ReactNode; theme: Theme }) {
   return (
@@ -40,28 +34,15 @@ function SectionHead({ children, theme }: { children: React.ReactNode; theme: Th
   );
 }
 
-export default function OverviewEditorial() {
+export default function OverviewEditorial({ data }: { data: OverviewData }) {
   const darkMode = useDarkMode();
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
-  const gb = computeGenericBallotAverage(new Date());
-  const approval = computeTrumpApprovalAverage(new Date());
-  const house = seatTotals(houseForecasts, SEAT_HOLDOVERS.house);
-  const senate = seatTotals(senateForecasts, SEAT_HOLDOVERS.senate);
-  const governor = seatTotals(governorForecasts, SEAT_HOLDOVERS.governor);
-  const sims = getChamberSimulations();
-
-  const stateMargins = useMemo(() => {
-    return new Map(statesData.map((state) => [state.name, calculateStateTpl(state.abbr, state.name)]));
-  }, []);
-
-  const keyRaces = useMemo(() => {
-    const withType: { race: ForecastRace; type: MapMode }[] = [
-      ...senateForecasts.map((race) => ({ race, type: "senate" as const })),
-      ...governorForecasts.map((race) => ({ race, type: "governor" as const })),
-      ...houseForecasts.map((race) => ({ race, type: "house" as const })),
-    ];
-    return withType.sort((a, b) => Math.abs(a.race.margin) - Math.abs(b.race.margin)).slice(0, 5);
-  }, []);
+  const { electionYear, genericBallot: gb, approvalDiff, seats, totalSeats, sims, stateMargins, keyRaces } = data;
+  const approval = { diff: approvalDiff };
+  const house = seats.house;
+  const senate = seats.senate;
+  const governor = seats.governor;
+  const TOTAL_SEATS_BY_TYPE = totalSeats;
 
   return (
     <div className="min-h-screen" style={{ background: t.bg, color: t.textPrimary }}>
@@ -106,7 +87,7 @@ export default function OverviewEditorial() {
               <ComposableMap projection="geoAlbersUsa" projectionConfig={{ scale: 1120 }} style={{ width: "100%", height: "100%" }}>
                 <Geographies geography={STATES_URL}>{({ geographies }: { geographies: GeoFeature[] }) => geographies.map((geo) => {
                   const state = geo.properties?.name as string;
-                  const margin = stateMargins.get(state);
+                  const margin = stateMargins[state];
                   const stateSlug = statesData.find((entry) => entry.name === state)?.id;
                   return <Geography key={geo.rsmKey} geography={geo} onClick={() => { if (stateSlug) window.location.assign(`/states/${stateSlug}`); }} aria-label={`${state}${margin == null ? "" : ` ${formatProjectedMargin(margin)}`}`} style={{ default: { fill: margin == null ? t.mapUnfilled : getRaceColor(margin), stroke: t.mapStroke, strokeWidth: 1.2, outline: "none" }, hover: { fill: margin == null ? t.hoverUnfilled : getRaceColor(margin), stroke: t.hoverStroke, strokeWidth: 1.7, outline: "none", cursor: "pointer" }, pressed: { fill: margin == null ? t.mapUnfilled : getRaceColor(margin), stroke: t.hoverStroke, strokeWidth: 2, outline: "none" } }} />;
                 })}</Geographies>
@@ -117,7 +98,8 @@ export default function OverviewEditorial() {
 
           <section>
             <SectionHead theme={t}>Key Races</SectionHead>
-            <div>{keyRaces.map(({ race, type }) => {
+            <div>{keyRaces.map((race) => {
+              const type = race.type;
               const href = `/${type}/${(type === "house" ? race.name : race.id).toLowerCase().replace(/-2$/, "2")}`;
               return <a key={`${type}-${race.id}`} href={href} className="grid grid-cols-[1fr_auto] gap-3 py-4 transition-opacity hover:opacity-70" style={{ borderBottom: `1px solid ${t.border}` }}><div><div className="font-semibold">{type === "house" ? race.name : race.state}</div><div className="mt-1 text-[10px] uppercase tracking-wider" style={{ color: t.textMuted }}>{type === "house" ? "U.S. House" : type === "senate" ? "U.S. Senate" : "Governor"}</div></div><div className="text-right"><div className="text-lg font-extrabold tabular-nums" style={{ color: race.margin <= 0 ? t.demText : t.repText }}>{formatProjectedMargin(race.margin)}</div><div className="text-[10px]" style={{ color: t.textMuted }}>{marginToRating(race.margin)}</div></div></a>;
             })}</div>
