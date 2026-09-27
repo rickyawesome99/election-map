@@ -506,14 +506,6 @@ export function getAllCandidateSlugs(): string[] {
   return Array.from(candidateIndex.keys());
 }
 
-// Only slugs worth pre-building at deploy time: active 2026 candidates + current incumbents.
-// Historical-only candidates are rendered on first request and cached by the CDN.
-export function getPrebuiltCandidateSlugs(): string[] {
-  return Array.from(candidateIndex.entries())
-    .filter(([, page]) => page.currentRace != null || page.currentPosition != null)
-    .map(([slug]) => slug);
-}
-
 export function getCandidatePage(slug: string): CandidatePage | null {
   return candidateIndex.get(slug) ?? null;
 }

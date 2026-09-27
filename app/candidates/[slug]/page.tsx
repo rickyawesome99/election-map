@@ -1,4 +1,4 @@
-import { getPrebuiltCandidateSlugs, getCandidatePage, type CandidateHistoryEntry } from "@/lib/candidateIndex";
+import { getCandidatePage, type CandidateHistoryEntry } from "@/lib/candidateIndex";
 import { candidatePhotos } from "@/lib/candidatePhotos";
 import { getRatingColors, fmtMargin, marginColor } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
@@ -6,12 +6,14 @@ import Image from "next/image";
 import ScrollToTop from "@/components/ScrollToTop";
 import BackLink from "@/components/BackLink";
 
+// 1,077 candidate pages: rendered on first request and cached until the next deploy rather than
+// prebuilt (they were ~45% of the build's pages), the same arrangement as the county pages.
 export const dynamicParams = true;
 
 const GENERAL_ELECTION = "November 3, 2026";
 
 export async function generateStaticParams() {
-  return getPrebuiltCandidateSlugs().map((slug) => ({ slug }));
+  return [];
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
