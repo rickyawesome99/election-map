@@ -144,16 +144,19 @@ export interface TargetMetric {
   kind: "diverging" | "sequential";
   format: (v: number) => string;
   domain?: [number, number];
-  describe: string;
+  /** sequential ramp hue; party shares use their party's color, other magnitudes the neutral blue */
+  ramp?: "rep";
+  /** readout text; years come from the district's own data */
+  describe: (ctx: TargetingContext) => string;
 }
 
 export const TARGET_METRICS: TargetMetric[] = [
-  { key: "floor",       label: "Democratic floor",   short: "D floor",     kind: "sequential", format: (v) => `${v.toFixed(1)}%`, domain: [25, 70], describe: "Lowest two-party Democratic share across the year's races" },
-  { key: "ceiling",     label: "Democratic ceiling", short: "D ceiling",   kind: "sequential", format: (v) => `${v.toFixed(1)}%`, domain: [25, 70], describe: "Highest two-party Democratic share across the year's races" },
-  { key: "persuadable", label: "Split-ticket votes", short: "Split votes", kind: "sequential", format: (v) => Math.round(v).toLocaleString(), domain: [0, 120], describe: "(ceiling − floor) × ballots cast: how many voters picked different parties for different offices" },
-  { key: "gap",         label: "Down-ballot gap",    short: "Gap",         kind: "diverging",  format: fmtMarginPts, describe: "State House margin minus top-of-ticket margin, same year; R+ means the legislative race ran more Republican than the top of the ticket" },
-  { key: "dropoff",     label: "Midterm drop-off",   short: "Drop-off",    kind: "sequential", format: (v) => `${v.toFixed(1)}%`, domain: [15, 40], describe: "Share of the presidential-year ballots that were not cast in the most recent midterm" },
-  { key: "trend",       label: "Presidential trend", short: "Trend",       kind: "diverging",  format: fmtMarginPts, describe: "Change in the presidential margin from the earliest to the latest presidential year on file" },
+  { key: "floor",       label: "Republican floor",   short: "R floor",     kind: "sequential", format: (v) => `${v.toFixed(1)}%`, domain: [30, 75], ramp: "rep", describe: (c) => `Lowest two-party Republican share across ${c.year} races` },
+  { key: "ceiling",     label: "Republican ceiling", short: "R ceiling",   kind: "sequential", format: (v) => `${v.toFixed(1)}%`, domain: [30, 75], ramp: "rep", describe: (c) => `Highest two-party Republican share across ${c.year} races` },
+  { key: "persuadable", label: "Split-ticket votes", short: "Split votes", kind: "sequential", format: (v) => Math.round(v).toLocaleString(), domain: [0, 120], describe: () => "Split-ticket votes = (Ceiling − Floor) × Ballots Cast: the minimum number of voters who picked different parties for different offices" },
+  { key: "gap",         label: "Down-ballot gap",    short: "Gap",         kind: "diverging",  format: fmtMarginPts, describe: () => "State House margin minus top-of-ticket margin. R+ means the State House race ran more Republican than the top of the ticket." },
+  { key: "dropoff",     label: "Midterm drop-off",   short: "Drop-off",    kind: "sequential", format: (v) => `${v.toFixed(1)}%`, domain: [15, 40], describe: (c) => `Midterm drop-off. How much smaller the ${c.midtermYear ?? "midterm"} ballot count was than ${c.year}'s, as a share of ${c.year} ballots.` },
+  { key: "trend",       label: "Presidential trend", short: "Trend",       kind: "diverging",  format: fmtMarginPts, describe: (c) => (c.presYears ? `Change in presidential margin from ${c.presYears[0]} to ${c.presYears[1]}` : "Change in presidential margin") },
 ];
 
 export const TARGET_METRIC_BY_KEY = Object.fromEntries(TARGET_METRICS.map((m) => [m.key, m])) as Record<TargetMetricKey, TargetMetric>;
@@ -208,7 +211,7 @@ export function targetingRows(data: PrecinctDistrictData, level: Level): Targeti
   const presA = ctx.presYears ? new Map(get(ctx.presYears[0]).map((r) => [r.id, r])) : null;
   const presB = ctx.presYears ? new Map(get(ctx.presYears[1]).map((r) => [r.id, r])) : null;
   return base.map((p) => {
-    const shares = ctx.offices.map((o) => (p.races[o] ? pctD(p.races[o]) : null)).filter((v): v is number => v != null);
+    const shares = ctx.offices.map((o) => { const d = p.races[o] ? pctD(p.races[o]) : null; return d == null ? null : 100 - d; }).filter((v): v is number => v != null);
     const floor = shares.length ? Math.min(...shares) : null;
     const ceiling = shares.length ? Math.max(...shares) : null;
     const sth = p.races.sthouse ? marginOf(p.races.sthouse) : null;
@@ -246,15 +249,21 @@ export const MARGIN_LEGEND = [
 // dark→light so "more" is still the step that stands out from the background.
 const SEQ_LIGHT = ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"];
 const SEQ_DARK = ["#184f95", "#256abf", "#2a78d6", "#3987e5", "#6da7ec", "#9ec5f4", "#cde2fb"];
+// Republican-share ramp, built on the site's margin reds: Tilt R #cf8980 → Lean R #ff8b98 →
+// Likely R #ff5864 → Safe R #be1c29, then two deeper shades of Safe R's red. Same in both themes,
+// as the margin maps are.
+const SEQ_REP_LIGHT = ["#cf8980", "#ff8b98", "#ff5864", "#de3a46", "#be1c29", "#981621", "#761119"];
+const SEQ_REP_DARK = SEQ_REP_LIGHT;
 
-export function sequentialColor(v: number | null, domain: [number, number], dark: boolean): string | null {
+export function sequentialColor(v: number | null, domain: [number, number], dark: boolean, hue?: "rep"): string | null {
   if (v == null || !Number.isFinite(v)) return null;
-  const ramp = dark ? SEQ_DARK : SEQ_LIGHT;
+  const ramp = sequentialStops(dark, hue);
   const t = Math.max(0, Math.min(1, (v - domain[0]) / (domain[1] - domain[0])));
   return ramp[Math.min(ramp.length - 1, Math.floor(t * ramp.length))];
 }
 
-export function sequentialStops(dark: boolean): string[] {
+export function sequentialStops(dark: boolean, hue?: "rep"): string[] {
+  if (hue === "rep") return dark ? SEQ_REP_DARK : SEQ_REP_LIGHT;
   return dark ? SEQ_DARK : SEQ_LIGHT;
 }
 

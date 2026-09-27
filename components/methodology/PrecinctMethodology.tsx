@@ -142,7 +142,7 @@ export default function PrecinctMethodology() {
         </Block>
         <Block label="Targeting metrics" meta="explorer → Targeting">
           <Defs items={[
-            { term: "Democratic floor / ceiling", def: "Lowest and highest two-party Democratic share across the latest year's races in the precinct." },
+            { term: "Republican floor / ceiling", def: "Lowest and highest two-party Republican share across the latest year's races in the precinct." },
             { term: "Split-ticket votes", def: "(ceiling − floor) × ballots cast." },
             { term: "Down-ballot gap", def: "State House margin − top-of-ticket margin, same year (R-positive)." },
             { term: "Midterm drop-off", def: "1 − most recent midterm ballots ÷ latest presidential-year ballots, the midterm on today's lines (≈)." },

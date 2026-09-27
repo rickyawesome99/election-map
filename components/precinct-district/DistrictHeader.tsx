@@ -1,8 +1,7 @@
-// Page header for a precinct-district page: name, where it is, the 2026 status line, and the
-// four numbers a reader wants first. Server component; everything is precomputed by the page.
+// Page header for a precinct-district page: name, where it is and the 2026 status line; the
+// latest margin tints the background. Server component; everything is precomputed by the page.
 
 import BackButton from "@/components/BackButton";
-import { fmtMargin } from "@/lib/colorScale";
 import type { DistrictConfig } from "@/lib/precinctDistrict/types";
 
 export interface HeaderStats {
@@ -20,11 +19,6 @@ export interface HeaderStats {
   precincts: number;
 }
 
-function marginColor(v: number | null): string {
-  if (v == null || Math.abs(v) < 0.05) return "var(--app-text-primary)";
-  return v > 0 ? "var(--party-rep)" : "var(--party-dem)";
-}
-
 export default function DistrictHeader({ config, stats }: { config: DistrictConfig; stats: HeaderStats }) {
   const heroMargin = stats.legMargin ?? stats.presMargin;
   const heroIsD = heroMargin != null && heroMargin <= 0;
@@ -34,7 +28,7 @@ export default function DistrictHeader({ config, stats }: { config: DistrictConf
 
   return (
     <div style={{ background: heroMargin != null ? `linear-gradient(135deg, color-mix(in srgb, ${heroIsD ? "var(--party-dem)" : "var(--party-rep)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)` : "var(--app-bg)" }}>
-      <div className="mx-auto max-w-7xl px-4 pb-6 pt-3 sm:px-6 sm:pb-8">
+      <div className="mx-auto max-w-7xl px-4 pb-4 pt-3 sm:px-6">
         <div className="mb-5 -ml-2"><BackButton /></div>
 
         <div className="min-w-0">
@@ -57,24 +51,7 @@ export default function DistrictHeader({ config, stats }: { config: DistrictConf
             </div>
           )}
         </div>
-
-        <div className="mt-8 flex flex-wrap gap-x-8 gap-y-4 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
-          <Stat value={stats.presMargin == null ? "—" : fmtMargin(stats.presMargin)} color={marginColor(stats.presMargin)} label={`${stats.presYear ?? ""} President`} />
-          <Stat value={stats.leanVsState == null ? "—" : `${fmtMargin(stats.leanVsState)}`} color={marginColor(stats.leanVsState)} label={`vs ${stats.stateName}, ${stats.presYear ?? ""} President`} />
-          <Stat value={stats.ballots.toLocaleString()} label={`Ballots, ${stats.latestYear}`} />
-          <Stat value={stats.turnout == null ? "—" : `${stats.turnout.toFixed(1)}%`} label="Turnout" />
-          <Stat value={stats.registered.toLocaleString()} label="Registered" last />
-        </div>
       </div>
-    </div>
-  );
-}
-
-function Stat({ value, label, color, last }: { value: string; label: string; color?: string; last?: boolean }) {
-  return (
-    <div className={last ? "" : "pr-8"} style={last ? undefined : { borderRight: "1px solid var(--app-border)" }}>
-      <div className="text-2xl font-extrabold tabular-nums" style={{ color: color ?? "var(--app-text-primary)" }}>{value}</div>
-      <div className="mt-1 text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>{label}</div>
     </div>
   );
 }

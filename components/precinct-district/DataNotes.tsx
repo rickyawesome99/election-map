@@ -12,7 +12,7 @@ export default function DataNotes({ data }: { data: PrecinctDistrictData }) {
 
   return (
     <section id="data-notes" className="scroll-mt-24">
-      <LedgerSectionHead label="Data notes" meta={`built ${config.generated}`} />
+      <LedgerSectionHead label="Data notes" />
       <div className="grid gap-8 md:grid-cols-2">
         <div className="text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
           <h3 className="mb-1.5 text-[13px] font-bold" style={{ color: "var(--app-text-primary)" }}>Precinct lines</h3>
@@ -67,7 +67,7 @@ export default function DataNotes({ data }: { data: PrecinctDistrictData }) {
 
         <div className="text-sm leading-relaxed md:col-span-2" style={{ color: "var(--app-text-muted)" }}>
           <h3 className="mb-1.5 text-[13px] font-bold" style={{ color: "var(--app-text-primary)" }}>Sources</h3>
-          <ul className="grid gap-1 sm:grid-cols-2">
+          <ul className="gap-x-6 sm:columns-2 [&>li]:mb-1 [&>li]:break-inside-avoid">
             {config.sources.map((s) => (
               <li key={s.label}><b style={{ color: "var(--app-text-primary)" }}>{s.label}.</b> {s.text}</li>
             ))}

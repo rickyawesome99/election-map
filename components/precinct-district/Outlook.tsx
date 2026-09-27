@@ -175,17 +175,27 @@ export default function Outlook({ config, p, statewide, finance }: { config: Dis
               </tr>
             </thead>
             <tbody>
-              {[{ key: "est", label: "2026 estimate", note: `each precinct's average ${turnout.basisYears.join("/")} turnout rate on today's registration`, v: turnout, main: true },
-                ...turnout.range.map((r) => ({ key: String(r.year), label: `At ${r.year} rates`, note: turnout.range.length < 2 ? "basis year alone" : r.ballots === Math.min(...turnout.range.map((x) => x.ballots)) ? "low end" : "high end", v: r, main: false }))].map((row) => (
-                <tr key={row.key} style={{ borderTop: "1px solid var(--app-border)", color: row.main ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>
-                  <td className="py-2 pr-3"><div className={row.main ? "font-semibold" : ""}>{row.label}</div><div className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{row.note}</div></td>
-                  <td className={`py-2 px-3 text-right tabular-nums ${row.main ? "font-semibold" : ""}`}>{row.v.ballots.toLocaleString()}</td>
-                  <td className="py-2 px-3 text-right tabular-nums">{row.v.rate.toFixed(1)}%</td>
-                  <td className="py-2 px-3 text-right tabular-nums" style={{ color: "var(--party-dem)" }}>{row.v.d.toLocaleString()}</td>
-                  <td className="py-2 px-3 text-right tabular-nums" style={{ color: "var(--party-rep)" }}>{row.v.r.toLocaleString()}</td>
-                  <td className="py-2 pl-3 text-right tabular-nums">{row.v.votesToFlip.toLocaleString()} <span className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>for {row.v.trailing === "D" ? dName : rName}</span></td>
-                </tr>
-              ))}
+              {(() => {
+                // The basis years' own rates bound the estimate; shown as a range under each figure.
+                const lo = turnout.range.length ? turnout.range.reduce((a, b) => (b.ballots < a.ballots ? b : a)) : null;
+                const hi = turnout.range.length ? turnout.range.reduce((a, b) => (b.ballots > a.ballots ? b : a)) : null;
+                const span = (f: (v: typeof turnout.range[number]) => number, fmt: (n: number) => string = (n) => n.toLocaleString()) => {
+                  if (!turnout.range.length) return null;
+                  const vals = turnout.range.map(f), a = Math.min(...vals), b = Math.max(...vals);
+                  return <div className="text-[11px] font-normal tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>{a === b ? fmt(a) : `${fmt(a)}–${fmt(b)}`}</div>;
+                };
+                const rangeNote = !lo || !hi ? null : lo === hi ? `Based on ${lo.year} alone` : `Range based on ${lo.year} (low) and ${hi.year} (high)`;
+                return (
+                  <tr style={{ borderTop: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}>
+                    <td className="py-2 pr-3 align-top"><div className="font-semibold">2026 estimate</div>{rangeNote && <div className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{rangeNote}</div>}</td>
+                    <td className="py-2 px-3 text-right align-top tabular-nums font-semibold">{turnout.ballots.toLocaleString()}{span((v) => v.ballots)}</td>
+                    <td className="py-2 px-3 text-right align-top tabular-nums">{turnout.rate.toFixed(1)}%{span((v) => v.rate, (n) => `${n.toFixed(1)}%`)}</td>
+                    <td className="py-2 px-3 text-right align-top tabular-nums" style={{ color: "var(--party-dem)" }}>{turnout.d.toLocaleString()}{span((v) => v.d)}</td>
+                    <td className="py-2 px-3 text-right align-top tabular-nums" style={{ color: "var(--party-rep)" }}>{turnout.r.toLocaleString()}{span((v) => v.r)}</td>
+                    <td className="py-2 pl-3 text-right align-top tabular-nums">{turnout.votesToFlip.toLocaleString()} <span className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>for {turnout.trailing === "D" ? dName : rName}</span>{span((v) => v.votesToFlip)}</td>
+                  </tr>
+                );
+              })()}
             </tbody>
           </table>
         </div>

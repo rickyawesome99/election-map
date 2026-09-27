@@ -10,7 +10,7 @@ import { fmtInt, fmtPct1, fmtMargin, marginColorVar, type ExplorerRow, type Leve
 import { DEMO_METRICS, popWeightedMetric } from "@/lib/precinctDistrict/demographics";
 
 export default function PrecinctPanel({
-  data, unitId, level, rowFor, rowsByYearFor, activeYear, activeOffice, onClear, subdivisionName,
+  data, unitId, level, rowFor, rowsByYearFor, activeYear, activeOffice, onClear, subdivisionName, part, summaryClassName,
 }: {
   data: PrecinctDistrictData;
   unitId: string | null;
@@ -23,6 +23,10 @@ export default function PrecinctPanel({
   activeOffice: string;
   onClear: () => void;
   subdivisionName: (id: string) => string;
+  /** "summary" renders only the name and headline counts (mobile places them under the map) */
+  part?: "summary";
+  /** class for the summary block when the whole panel renders (e.g. to hide it on mobile) */
+  summaryClassName?: string;
 }) {
   const years = [...data.config.years].sort((a, b) => b - a);
   const has = (o: string) => years.some((y) => data.results.years[String(y)]?.offices[o]);
@@ -52,10 +56,13 @@ export default function PrecinctPanel({
     : null;
   const oldEra = data.config.eras.find((e) => !e.current);
 
-  const active = unitId != null ? rowFor(activeYear, unitId) : null;
+  // The headline counts: the unit's row, or with nothing selected the whole district summed.
+  const active = unitId != null
+    ? rowFor(activeYear, unitId)
+    : rowsByYearFor(activeYear).reduce((t, r) => ({ ballots: t.ballots + r.ballots, reg: t.reg + r.reg }), { ballots: 0, reg: 0 });
 
-  return (
-    <div className="text-[12.5px]" style={{ color: "var(--app-text-primary)" }}>
+  const summary = (
+    <>
       <div className="flex items-start justify-between gap-2 pb-2" style={{ borderBottom: "1px solid var(--app-border)" }}>
         <div className="min-w-0">
           <div className="truncate text-[13px] font-bold uppercase tracking-[0.04em]">{title}</div>
@@ -73,6 +80,13 @@ export default function PrecinctPanel({
           <Stat label="Turnout" value={active.reg > 0 ? fmtPct1((active.ballots / active.reg) * 100) : "—"} />
         </div>
       )}
+    </>
+  );
+  if (part === "summary") return <div className="text-[12.5px]" style={{ color: "var(--app-text-primary)" }}>{summary}</div>;
+
+  return (
+    <div className="text-[12.5px]" style={{ color: "var(--app-text-primary)" }}>
+      <div className={summaryClassName}>{summary}</div>
 
       {/* Results grid: years × offices */}
       <div className="py-2.5" style={{ borderBottom: "1px solid var(--app-border)" }}>
@@ -85,7 +99,7 @@ export default function PrecinctPanel({
               <tr>
                 <th className="pb-1 text-left font-semibold" style={{ color: "var(--app-text-very-muted)" }}></th>
                 {gridColumns.map((c) => (
-                  <th key={c.key} className="pb-1 text-right font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{c.label}</th>
+                  <th key={c.key} className="pb-1 pr-2 text-left font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{c.label}</th>
                 ))}
               </tr>
             </thead>
@@ -112,9 +126,8 @@ export default function PrecinctPanel({
                       }
                       const isActive = y === activeYear && key === activeOffice;
                       return (
-                        <td key={c.key} className="py-0.5 text-right tabular-nums" style={{ color: marginColorVar(m), fontWeight: isActive ? 700 : 500 }}>
+                        <td key={c.key} className="py-0.5 pr-2 text-left tabular-nums" style={{ color: marginColorVar(m), fontWeight: isActive ? 700 : 500, fontStyle: key === "gov" ? "italic" : undefined }}>
                           {m == null ? <span style={{ color: "var(--app-text-very-muted)" }}>—</span> : fmtMargin(m)}
-                          {key === "gov" ? <span className="ml-0.5 text-[9px]" style={{ color: "var(--app-text-very-muted)" }}>G</span> : null}
                         </td>
                       );
                     })}
@@ -125,7 +138,7 @@ export default function PrecinctPanel({
           </table>
         </div>
         <div className="mt-1 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>
-          Top = President, or Governor (G) in midterms. ≈ estimated on {data.config.eras.find((e) => e.current)?.label}.
+          <i>Italic</i> = Governor. ≈ = estimated.
         </div>
       </div>
 

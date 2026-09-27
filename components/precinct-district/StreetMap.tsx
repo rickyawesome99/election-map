@@ -5,7 +5,7 @@
 // roads, subdivisions and landmarks under the precincts.
 // Loaded on demand by the explorer (dynamic import, no SSR).
 
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import * as maplibregl from "maplibre-gl";
 import type { GeoJSONSource, LayerSpecification, Map as MapLibreMap, MapLayerMouseEvent, StyleSpecification } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
@@ -93,6 +93,16 @@ export default function StreetMap({ fc, unitOf, colorFor, isDimmed, selectedUnit
   const styledRef = useRef(styled);
   styledRef.current = styled;
 
+  // Set once the reader pans or zooms; "Reset view" fits the district again.
+  const [moved, setMoved] = useState(false);
+  const fcRef = useRef(fc);
+  fcRef.current = fc;
+  const resetView = () => {
+    const map = mapRef.current, b = boundsOf(fcRef.current);
+    if (map && b) map.fitBounds(b, { padding: 24, duration: 300 });
+    setMoved(false);
+  };
+
   useEffect(() => {
     if (!containerRef.current) return;
     const map = new maplibregl.Map({
@@ -145,6 +155,10 @@ export default function StreetMap({ fc, unitOf, colorFor, isDimmed, selectedUnit
       if (b) map.fitBounds(b, { padding: 24, duration: 0 });
     });
 
+    // Only reader gestures (they carry an originalEvent) count as moving away; fitBounds does not.
+    map.on("moveend", (e) => { if ((e as { originalEvent?: Event }).originalEvent) setMoved(true); });
+    map.on("zoomend", (e) => { if ((e as { originalEvent?: Event }).originalEvent) setMoved(true); });
+
     map.on("mousemove", "precinct-fill", (e: MapLayerMouseEvent) => {
       const f = e.features?.[0];
       const props = f?.properties as StyledProps | undefined;
@@ -185,6 +199,7 @@ export default function StreetMap({ fc, unitOf, colorFor, isDimmed, selectedUnit
     if (!map || !map.getSource(SOURCE)) return;
     const b = boundsOf(fc);
     if (b) map.fitBounds(b, { padding: 24, duration: 0 });
+    setMoved(false);
   }, [fc]);
 
   // Swapping the basemap style would drop the precinct source/layers, so carry them across.
@@ -213,6 +228,15 @@ export default function StreetMap({ fc, unitOf, colorFor, isDimmed, selectedUnit
       `}</style>
       <div className="overflow-hidden rounded-xl" style={{ height: height ?? "min(70vh, 560px)", position: "relative", zIndex: 0, border: "1px solid var(--app-border)" }}>
         <div ref={containerRef} style={{ height: "100%", width: "100%" }} />
+        {moved && (
+          <button
+            onClick={resetView}
+            className="absolute right-2 top-2 z-10 rounded-md px-2 py-1 text-[10px] font-semibold"
+            style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)", opacity: 0.92 }}
+          >
+            Reset view
+          </button>
+        )}
       </div>
     </>
   );

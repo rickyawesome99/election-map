@@ -14,7 +14,7 @@ import type { DistrictProjection } from "@/lib/precinctDistrict/project";
 import { currentEra, eraOfYear, marginOf, pctD, subdivisionName as subName, topOfTicket } from "@/lib/precinctDistrict/aggregate";
 import {
   MARGIN_LEGEND, TARGET_METRICS, TARGET_METRIC_BY_KEY, defaultBaseline, divergingColor, fmtInt, fmtMargin, fmtPct1,
-  marginColorVar, needsCrosswalk, officeCandidates, officeLabelFull, officeShort, officesOf, precinctRows, rowsFor,
+  marginColorVar, needsCrosswalk, officeCandidates, officeLabel, officeLabelFull, officeShort, officesOf, precinctRows, rowsFor,
   sequentialColor, sequentialStops, subdivisionRows, swingByUnit, targetingRows, targetingContext,
   type ExplorerRow, type Level, type Mode, type TargetMetricKey, type Universe,
 } from "@/lib/precinctDistrict/explorer";
@@ -72,6 +72,23 @@ function Segmented<T extends string>({ value, options, onChange }: { value: T; o
 }
 
 const TURNOUT_LABEL = "2026 turnout est.";
+
+function Dropdown({ value, onChange, children, ariaLabel }: { value: string; onChange: (v: string) => void; children: ReactNode; ariaLabel?: string }) {
+  return (
+    <select
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+      aria-label={ariaLabel}
+      className="rounded-full px-2 py-0.5 text-[11px] font-medium"
+      style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }}
+    >
+      {children}
+    </select>
+  );
+}
+
+// Legend end labels are round domain bounds: "30.0%" reads as "30%".
+const legendNum = (s: string) => s.replace(/\.0(?=\D*$)/, "");
 
 function Label({ children }: { children: ReactNode }) {
   return <span className="mr-1 text-[10px] font-semibold uppercase tracking-[0.08em]" style={{ color: "var(--app-text-very-muted)" }}>{children}</span>;
@@ -150,6 +167,13 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
     setCompare(defaultBaseline(data, y, o));
     setSelected(null);
   }
+  /** Year and race together (the mobile swing selector). */
+  function pickYearOffice(y: number, o: OfficeKey) {
+    setYearSel(y);
+    setOfficeSel(o);
+    setCompare(defaultBaseline(data, y, o));
+    setSelected(null);
+  }
   function pickOffice(o: OfficeKey) {
     setOfficeSel(o);
     if (mode === "swing" || !compare || !results.years[String(compare.year)]?.offices[compare.office]) setCompare(defaultBaseline(data, year, o));
@@ -205,7 +229,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
     const v = valueFor(unit);
     if (mode === "results" || mode === "swing" || mode === "projection") return divergingColor(v);
     if (mode === "demographics") return sequentialColor(v, demoMetricDef.domain, darkMode);
-    return targetDef.kind === "diverging" ? divergingColor(v) : sequentialColor(v, targetDef.domain ?? [0, 1], darkMode);
+    return targetDef.kind === "diverging" ? divergingColor(v) : sequentialColor(v, targetDef.domain ?? [0, 1], darkMode, targetDef.ramp);
   }, [valueFor, mode, demoMetricDef, targetDef, darkMode]);
 
   const formatValue = useCallback((v: number | null): string => {
@@ -245,7 +269,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
       for (const p of cvis) { const v = p.races[compare.office]; if (v) { db += v.d; rb += v.r; } }
       const ma = da + ra > 0 ? ((ra - da) / (da + ra)) * 100 : null;
       const mb = db + rb > 0 ? ((rb - db) / (db + rb)) * 100 : null;
-      return { value: ma != null && mb != null ? ma - mb : null, text: `shift from ${compare.year} ${officeLabelFull(cy, compare.office)} (${fmtMargin(mb)}) to ${year} ${officeLabelFull(yr, office)} (${fmtMargin(ma)}) · ${scope}${crossEra ? " · on today's lines, estimated" : ""}` };
+      return { value: ma != null && mb != null ? ma - mb : null, text: `Shift from ${compare.year} ${officeLabel(cy, compare.office)} to ${year} ${officeLabel(yr, office)}` };
     }
     if (mode === "demographics") {
       const ids = subFilter ? currentIds.filter((p) => p.sub === subFilter) : currentIds;
@@ -271,8 +295,8 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
       for (const r of tr) { const x = r[targetMetric]; if (x != null) { num += x * r.ballots; den += r.ballots; } }
       v = den > 0 ? num / den : null;
     }
-    return { value: v, text: `${targetDef.label} · ${scope} · ${targetMetric === "persuadable" ? "sum" : "ballot-weighted"} · ${targetDef.describe}` };
-  }, [mode, visibleRows, office, year, yr, compare, compareRows, results.years, subFilter, level, config, crossEra, currentIds, data.demographics.precincts, demoMetricDef, targeting, targetMetric, targetDef, projection]);
+    return { value: v, text: targetDef.describe(tctx) };
+  }, [mode, visibleRows, office, year, yr, compare, compareRows, results.years, subFilter, level, config, currentIds, data.demographics.precincts, demoMetricDef, targeting, targetMetric, targetDef, tctx, projection]);
 
   // ── Ledger ─────────────────────────────────────────────────────────────────
   const ledger = useMemo((): LedgerRow[] => {
@@ -298,7 +322,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
       else v = tsubs.get(s.id)?.[targetMetric] ?? null;
       const swatch = mode === "results" || mode === "swing" || mode === "projection" || (mode === "targeting" && targetDef.kind === "diverging")
         ? divergingColor(v)
-        : sequentialColor(v, mode === "demographics" ? demoMetricDef.domain : (targetDef.domain ?? [0, 1]), darkMode);
+        : sequentialColor(v, mode === "demographics" ? demoMetricDef.domain : (targetDef.domain ?? [0, 1]), darkMode, mode === "targeting" ? targetDef.ramp : undefined);
       return { id: s.id, name: subName(config, s.id), count: s.count ?? 0, ballots: s.ballots, valueLabel: formatValue(v), valueColor: valueColor(v), swatch };
     });
   }, [data, year, compare, mode, office, currentIds, demoMetricDef, targetMetric, targetDef, darkMode, config, formatValue, valueColor, projection]);
@@ -391,15 +415,15 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
       <>
         {head}
         <div className="grid grid-cols-[1fr_auto] gap-x-3 gap-y-0.5 text-[11px]">
-          {TARGET_METRICS.map((m) => {
-            const v = tr?.[m.key] ?? null;
-            return <FragmentRow key={m.key} label={m.short} value={v == null ? "—" : m.format(v)} strong={m.key === targetMetric} t={t} color={m.kind === "diverging" ? (v == null ? t.textPrimary : v > 0 ? t.repText : t.demText) : undefined} />;
-          })}
+          {(() => {
+            const m = targetDef, v = tr?.[m.key] ?? null;
+            return <FragmentRow label={m.short} value={v == null ? "—" : m.format(v)} strong t={t} color={m.kind === "diverging" ? (v == null ? t.textPrimary : v > 0 ? t.repText : t.demText) : undefined} />;
+          })()}
         </div>
-        {tr?.estimated && <div className="mt-1 text-[10px]" style={{ color: t.textMuted }}>drop-off / trend use ≈ estimated older years</div>}
+        {tr?.estimated && (targetMetric === "dropoff" || targetMetric === "trend") && <div className="mt-1 text-[10px]" style={{ color: t.textMuted }}>uses ≈ estimated older years</div>}
       </>
     );
-  }, [level, config, rowById, t, mode, office, year, yr, compare, swing, results.years, demoRowsFor, demoMetric, targeting, targetMetric, projUnits, projection]);
+  }, [level, config, rowById, t, mode, office, year, yr, compare, swing, results.years, demoRowsFor, demoMetric, targeting, targetMetric, targetDef, projUnits, projection]);
 
   const tooltipHtml = useCallback((unit: string): string => {
     const name = level === "subdivision" ? subName(config, unit) : unit;
@@ -425,8 +449,8 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
     return (
       <div>
         <div className="mb-1 font-semibold">{mode === "demographics" ? demoMetricDef.label : targetDef.short}</div>
-        <div className="flex items-center gap-0.5">{sequentialStops(darkMode).map((c) => <span key={c} style={{ width: 16, height: 8, background: c, display: "inline-block" }} />)}</div>
-        <div className="flex justify-between" style={{ width: 16 * 7 + 6 }}><span>{fmt(dom[0])}</span><span>{fmt(dom[1])}+</span></div>
+        <div className="flex items-center gap-0.5">{sequentialStops(darkMode, mode === "targeting" ? targetDef.ramp : undefined).map((c) => <span key={c} style={{ width: 16, height: 8, background: c, display: "inline-block" }} />)}</div>
+        <div className="flex justify-between" style={{ width: 16 * 7 + 6 }}><span>{legendNum(fmt(dom[0]))}</span><span>{legendNum(fmt(dom[1]))}+</span></div>
       </div>
     );
   }, [mode, targetDef, demoMetricDef, darkMode]);
@@ -513,6 +537,18 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
     ? (effUniverse === "current" ? `Older years shown on ${cur.label}, estimated by 2020 block population (≈)` : `Showing ${eraOfYear(config, year).label} exactly as counted`)
     : null;
 
+  // "2022 State Rep"-style options grouped by year, for the year+race dropdowns.
+  const yearOfficeOptions = (ys: number[]) => ys.map((y) => {
+    const cy = results.years[String(y)];
+    return (
+      <optgroup key={y} label={String(y)}>
+        {officesOf(cy).map((o) => <option key={o} value={`${y}:${o}`}>{y} {officeShort(cy, o)}</option>)}
+      </optgroup>
+    );
+  });
+
+  const linesToggle = <Segmented value={effUniverse} onChange={setUniverse} options={[{ id: "current", label: cur.label.replace(/\blines\b/, "Lines") }, { id: "original", label: "Original Lines" }]} />;
+
   // ── Render ─────────────────────────────────────────────────────────────────
   return (
     <div>
@@ -532,50 +568,71 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
             </button>
           ))}
         </div>
-        <div className="flex items-center gap-2 pb-2">
-          <Segmented value={level} onChange={(v) => { setLevel(v); setSelected(null); }} options={[{ id: "precinct", label: "Precincts" }, { id: "subdivision", label: "Areas", title: "Townships, cities and villages" }]} />
+        <div className="flex flex-wrap items-center gap-2 pb-2">
+          <Segmented value={level} onChange={(v) => { setLevel(v); setSelected(null); }} options={[{ id: "precinct", label: "Precinct" }, { id: "subdivision", label: "Township", title: "Townships, cities and villages" }]} />
           <Segmented value={renderer} onChange={setRenderer} options={[{ id: "svg", label: "Map" }, { id: "street", label: "Streets" }]} />
+          {/* Below lg the lines toggle joins the view toggles here instead of taking its own row. */}
+          {universeNote && !universeLocked && <div className="lg:hidden">{linesToggle}</div>}
         </div>
       </div>
 
-      {/* Context pills */}
-      <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2">
+      {/* Context pills (fixed min height so every tab's readout and map start at the same place) */}
+      <div className="mt-3 flex min-h-[27px] flex-wrap items-center gap-x-4 gap-y-2">
         {mode === "projection" && projection && (
-          <div className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}><Label>Turnout</Label> {fmtInt(projection.turnout.ballots)} ballots est. — each precinct&apos;s average {projection.turnout.basisYears.join("/")} turnout rate on today&apos;s registration</div>
+          <div className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}><Label>Turnout</Label> {fmtInt(projection.turnout.ballots)} ballots est.<span className="hidden md:inline"> — each precinct&apos;s average {projection.turnout.basisYears.join("/")} turnout rate on today&apos;s registration</span></div>
         )}
-        {mode !== "targeting" && mode !== "projection" && !demoMode && (
+        {(mode === "results" || mode === "swing") && (
           <>
-            <div className="flex items-center gap-1 overflow-x-auto scrollbar-none"><Label>Year</Label>{years.map((y) => <Pill key={y} active={year === y} onClick={() => pickYear(y)}>{y}</Pill>)}</div>
-            <div className="flex items-center gap-1 overflow-x-auto scrollbar-none"><Label>Race</Label>{offices.map((o) => <Pill key={o} active={office === o} onClick={() => pickOffice(o)} title={officeCandidates(yr, o) ?? undefined}>{officeShort(yr, o)}</Pill>)}</div>
+            {/* md and up: pills */}
+            <div className="hidden items-center gap-1 overflow-x-auto scrollbar-none md:flex"><Label>Year</Label>{years.map((y) => <Pill key={y} active={year === y} onClick={() => pickYear(y)}>{y}</Pill>)}</div>
+            <div className="hidden items-center gap-1 overflow-x-auto scrollbar-none md:flex"><Label>Race</Label>{offices.map((o) => <Pill key={o} active={office === o} onClick={() => pickOffice(o)} title={officeCandidates(yr, o) ?? undefined}>{officeShort(yr, o)}</Pill>)}</div>
+            {/* mobile: dropdowns, so the selector fits one line */}
+            {mode === "results" ? (
+              <div className="flex items-center gap-3 md:hidden">
+                <label className="flex items-center gap-1"><Label>Year</Label>
+                  <Dropdown value={String(year)} onChange={(v) => pickYear(Number(v))}>{years.map((y) => <option key={y} value={y}>{y}</option>)}</Dropdown>
+                </label>
+                <label className="flex items-center gap-1"><Label>Race</Label>
+                  <Dropdown value={office} onChange={(v) => pickOffice(v as OfficeKey)}>{offices.map((o) => <option key={o} value={o}>{officeShort(yr, o)}</option>)}</Dropdown>
+                </label>
+              </div>
+            ) : (
+              <div className="md:hidden">
+                <Dropdown ariaLabel="Year and race" value={`${year}:${office}`} onChange={(v) => { const [y, o] = v.split(":"); pickYearOffice(Number(y), o as OfficeKey); }}>
+                  {yearOfficeOptions(years)}
+                </Dropdown>
+              </div>
+            )}
           </>
         )}
         {mode === "swing" && compare && (
           <>
-            <span className="text-[11px] font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs</span>
-            <div className="flex items-center gap-1 overflow-x-auto scrollbar-none">
-              <Label>Baseline</Label>
-              {years.filter((y) => y !== year).map((y) => (
-                <Pill key={y} active={compare.year === y} onClick={() => { const cy = results.years[String(y)]; const o = cy.offices[compare.office] ? compare.office : cy.offices[office] ? office : (topOfTicket(cy) ?? officesOf(cy)[0]); setCompare({ year: y, office: o }); }}>{y}</Pill>
-              ))}
-            </div>
-            <div className="flex items-center gap-1 overflow-x-auto scrollbar-none">
-              {officesOf(results.years[String(compare.year)]).map((o) => <Pill key={o} active={compare.office === o} onClick={() => setCompare({ year: compare.year, office: o })}>{officeShort(results.years[String(compare.year)], o)}</Pill>)}
-            </div>
+            <span className="-ml-2 text-[11px] font-semibold md:ml-0" style={{ color: "var(--app-text-very-muted)" }}>vs</span>
+            <label className="-ml-2 flex items-center gap-1 md:ml-0">
+              <span className="hidden md:inline"><Label>Baseline</Label></span>
+              <Dropdown ariaLabel="Baseline" value={`${compare.year}:${compare.office}`} onChange={(v) => { const [y, o] = v.split(":"); setCompare({ year: Number(y), office: o as OfficeKey }); }}>
+                {yearOfficeOptions(years.filter((y) => y !== year))}
+              </Dropdown>
+            </label>
           </>
         )}
         {mode === "demographics" && (
-          <div className="flex items-center gap-1 overflow-x-auto scrollbar-none"><Label>Metric</Label>{DEMO_METRICS.map((m) => <Pill key={m.key} active={demoMetric === m.key} onClick={() => setDemoMetric(m.key)}>{m.short}</Pill>)}</div>
+          <>
+            <div className="hidden items-center gap-1 overflow-x-auto scrollbar-none md:flex"><Label>Metric</Label>{DEMO_METRICS.map((m) => <Pill key={m.key} active={demoMetric === m.key} onClick={() => setDemoMetric(m.key)}>{m.short}</Pill>)}</div>
+            <label className="flex items-center gap-1 md:hidden"><Label>Metric</Label>
+              <Dropdown value={demoMetric} onChange={(v) => setDemoMetric(v as typeof demoMetric)}>{DEMO_METRICS.map((m) => <option key={m.key} value={m.key}>{m.short}</option>)}</Dropdown>
+            </label>
+          </>
         )}
         {mode === "targeting" && (
-          <div className="flex items-center gap-1 overflow-x-auto scrollbar-none"><Label>Metric</Label>{TARGET_METRICS.map((m) => <Pill key={m.key} active={targetMetric === m.key} onClick={() => setTargetMetric(m.key)} title={m.describe}>{m.short}</Pill>)}</div>
+          <>
+            <div className="hidden items-center gap-1 overflow-x-auto scrollbar-none md:flex"><Label>Metric</Label>{TARGET_METRICS.map((m) => <Pill key={m.key} active={targetMetric === m.key} onClick={() => setTargetMetric(m.key)} title={m.describe(tctx)}>{m.short}</Pill>)}</div>
+            <label className="flex items-center gap-1 md:hidden"><Label>Metric</Label>
+              <Dropdown value={targetMetric} onChange={(v) => setTargetMetric(v as typeof targetMetric)}>{TARGET_METRICS.map((m) => <option key={m.key} value={m.key}>{m.short}</option>)}</Dropdown>
+            </label>
+          </>
         )}
-        {universeNote && (
-          <div className="ml-auto flex items-center gap-2">
-            {!universeLocked && (
-              <Segmented value={effUniverse} onChange={setUniverse} options={[{ id: "current", label: cur.label }, { id: "original", label: "Original lines" }]} />
-            )}
-          </div>
-        )}
+        {universeNote && !universeLocked && <div className="ml-auto hidden items-center gap-2 lg:flex">{linesToggle}</div>}
       </div>
 
       {/* Readout */}
@@ -587,12 +644,12 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
             {subName(config, subFilter)} ✕
           </button>
         )}
-        {universeNote && <span className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{universeNote}</span>}
+        {universeNote && (mode === "results" || mode === "swing") && <span className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{universeNote}</span>}
       </div>
 
       {/* Ledger · Map · Panel */}
       <div className="mt-4 grid gap-5 lg:grid-cols-[190px_minmax(0,1fr)_270px] xl:grid-cols-[210px_minmax(0,1fr)_300px]">
-        <div className="order-2 lg:order-1">
+        <div className="order-3 lg:order-1">
           <SubdivisionLedger
             rows={ledger}
             active={subFilter}
@@ -608,10 +665,11 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
             <ExplorerMap fc={fc} unitOf={unitOf} colorFor={colorFor} isDimmed={isDimmed} hoveredUnit={hovered} selectedUnit={selected} onHover={setHovered} onSelect={setSelected} renderTooltip={renderTooltip} legend={legend} darkMode={darkMode} />
           )}
         </div>
-        <div className="order-3">
+        {/* On mobile the name and headline counts sit right under the map, above the area list. */}
+        <div className="order-2 lg:hidden">
           <PrecinctPanel
             data={data}
-            unitId={selected ?? (level === "precinct" ? null : null)}
+            unitId={selected}
             level={level}
             rowFor={rowFor}
             rowsByYearFor={rowsByYearFor}
@@ -619,6 +677,21 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
             activeOffice={office}
             onClear={() => setSelected(null)}
             subdivisionName={(id) => subName(config, id)}
+            part="summary"
+          />
+        </div>
+        <div className="order-4 lg:order-3">
+          <PrecinctPanel
+            data={data}
+            unitId={selected}
+            level={level}
+            rowFor={rowFor}
+            rowsByYearFor={rowsByYearFor}
+            activeYear={year}
+            activeOffice={office}
+            onClear={() => setSelected(null)}
+            subdivisionName={(id) => subName(config, id)}
+            summaryClassName="hidden lg:block"
           />
         </div>
       </div>
