@@ -1,6 +1,7 @@
 import Image from "next/image";
 import BackLink from "@/components/BackLink";
 import CandidateLink from "@/components/CandidateLink";
+import ReplaceLink from "@/components/ReplaceLink";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
 import HouseDistrictCountyMap from "@/components/HouseDistrictCountyMap";
@@ -194,6 +195,30 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
     ? `${lastName(winner.name)} ${winner.war != null ? `WAR ${winner.war > 0 ? "+" : ""}${winner.war.toFixed(1)}` : ""}${loser.war != null ? ` · ${lastName(loser.name)} ${loser.war > 0 ? "+" : ""}${loser.war.toFixed(1)}` : ""}`
     : "";
 
+  const mapCaption = (
+    <>
+      <div className="mt-1 flex items-baseline justify-between gap-2 text-[11px]" style={{ color: "var(--app-text-muted)" }}>
+        <span>
+          {e.house
+            ? `Margin by ${areaSingular} on the ${e.house.mapYear} map · ${counted} ${counted === 1 ? areaSingular : areaWord}${e.house.splitCounties ? `, ${e.house.splitCounties} shared with other districts (hatched)` : ""}`
+            : `Margin by ${areaSingular} · ${counted} of ${e.countiesInState} ${areaWord}`}
+        </span>
+        <span className="flex items-center gap-px" aria-hidden="true">
+          {[-20, -10, -3, -0.5, 0.5, 3, 10, 20].map((m) => <i key={m} className="block h-2 w-3.5" style={{ background: getSwatch(m) }} />)}
+        </span>
+      </div>
+      <div className="mt-1 text-[11px]" style={{ color: "var(--app-text-muted)" }}>
+        {counted > 0 && <>{lastName(e.dem.name)} won {wonByDem} {areaWord === "counties" ? (wonByDem === 1 ? "county" : "counties") : areaWord}, {lastName(e.rep.name)} {wonByRep}.</>}
+        {e.house && e.house.gaps.length > 0 && <> No district breakdown on file for {e.house.gaps.map((g) => g.name).join(", ")}.</>}
+        {e.house?.status === "exact" && <> {houseSourceLabel(e.house.source)}; the rows sum to the certified district total.</>}
+        {e.house?.status === "close" && <> {houseSourceLabel(e.house.source)}; the rows come within 2.5% of the certified district total.</>}
+        {e.house?.status === "final-round" && <> {houseSourceLabel(e.house.source)}; ranked-choice final round. Overseas ballots and a few unorganized townships cannot be assigned to a county, so the rows fall just short of the certified total.</>}
+        {e.house?.status === "first-round" && <> {houseSourceLabel(e.house.source)}; ranked-choice first-round counts, so they do not sum to the certified final-round total.</>}
+        {e.house?.status === "unverified" && <> {houseSourceLabel(e.house.source)}; the rows do not sum to the certified district total, so treat them as incomplete.</>}
+      </div>
+    </>
+  );
+
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <div className="mx-auto max-w-4xl px-4 pt-3 pb-12 sm:px-6">
@@ -207,9 +232,9 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
                 {s.year}{s.isSpecial ? "*" : ""}
               </span>
             ) : (
-              <a key={s.href} href={s.href} className="tabular-nums hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1rem", color: "var(--app-text-muted)" }}>
+              <ReplaceLink key={s.href} href={s.href} className="tabular-nums hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1rem", color: "var(--app-text-muted)" }}>
                 {s.year}{s.isSpecial ? "*" : ""}
-              </a>
+              </ReplaceLink>
             ))}
           </nav>
         </div>
@@ -280,6 +305,7 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
                       demParty={e.dem.party}
                       repParty={e.rep.party}
                       height={300}
+                      caption={mapCaption}
                     />
                   ) : (
                     <PastElectionCountyMap
@@ -291,27 +317,9 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
                       demParty={e.dem.party}
                       repParty={e.rep.party}
                       height={300}
+                      caption={mapCaption}
                     />
                   )}
-                  <div className="mt-1 flex items-baseline justify-between gap-2 text-[11px]" style={{ color: "var(--app-text-muted)" }}>
-                    <span>
-                      {e.house
-                        ? `Margin by ${areaSingular} on the ${e.house.mapYear} map · ${counted} ${counted === 1 ? areaSingular : areaWord}${e.house.splitCounties ? `, ${e.house.splitCounties} shared with other districts (hatched)` : ""}`
-                        : `Margin by ${areaSingular} · ${counted} of ${e.countiesInState} ${areaWord}`}
-                    </span>
-                    <span className="flex items-center gap-px" aria-hidden="true">
-                      {[-20, -10, -3, -0.5, 0.5, 3, 10, 20].map((m) => <i key={m} className="block h-2 w-3.5" style={{ background: getSwatch(m) }} />)}
-                    </span>
-                  </div>
-                  <div className="mt-1 text-[11px]" style={{ color: "var(--app-text-muted)" }}>
-                    {counted > 0 && <>{lastName(e.dem.name)} won {wonByDem} {areaWord === "counties" ? (wonByDem === 1 ? "county" : "counties") : areaWord}, {lastName(e.rep.name)} {wonByRep}.</>}
-                    {e.house && e.house.gaps.length > 0 && <> No district breakdown on file for {e.house.gaps.map((g) => g.name).join(", ")}.</>}
-                    {e.house?.status === "exact" && <> {houseSourceLabel(e.house.source)}; the rows sum to the certified district total.</>}
-                    {e.house?.status === "close" && <> {houseSourceLabel(e.house.source)}; the rows come within 2.5% of the certified district total.</>}
-                    {e.house?.status === "final-round" && <> {houseSourceLabel(e.house.source)}; ranked-choice final round. Overseas ballots and a few unorganized townships cannot be assigned to a county, so the rows fall just short of the certified total.</>}
-                    {e.house?.status === "first-round" && <> {houseSourceLabel(e.house.source)}; ranked-choice first-round counts, so they do not sum to the certified final-round total.</>}
-                    {e.house?.status === "unverified" && <> {houseSourceLabel(e.house.source)}; the rows do not sum to the certified district total, so treat them as incomplete.</>}
-                  </div>
                 </>
               ) : (
                 <div className="flex h-[300px] items-center justify-center rounded text-center text-xs" style={{ border: "1px dashed var(--app-border)", color: "var(--app-text-very-muted)" }}>
@@ -401,8 +409,8 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
           <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
             <li><a href={e.seatHref} className="font-semibold hover:underline">{e.seatLabel} →</a></li>
             {e.office !== "president" && <li><a href={`/states/${e.stateAbbr.toLowerCase()}`} className="font-semibold hover:underline">{e.stateName} →</a></li>}
-            {prev && <li><a href={prev.href} className="hover:underline" style={{ color: "var(--app-text-muted)" }}>← {prev.year}{prev.isSpecial ? " special" : ""}</a></li>}
-            {next && <li><a href={next.href} className="hover:underline" style={{ color: "var(--app-text-muted)" }}>{next.year}{next.isSpecial ? " special" : ""} →</a></li>}
+            {prev && <li><ReplaceLink href={prev.href} className="hover:underline" style={{ color: "var(--app-text-muted)" }}>← {prev.year}{prev.isSpecial ? " special" : ""}</ReplaceLink></li>}
+            {next && <li><ReplaceLink href={next.href} className="hover:underline" style={{ color: "var(--app-text-muted)" }}>{next.year}{next.isSpecial ? " special" : ""} →</ReplaceLink></li>}
           </ul>
         </section>
       </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { geoMercator, geoPath } from "d3-geo";
 import { feature, mesh } from "topojson-client";
@@ -38,6 +39,7 @@ export default function HouseDistrictCountyMap({
   demParty = "D",
   repParty = "R",
   height = 300,
+  caption,
 }: {
   piecesUrl: string;
   district: number;
@@ -49,6 +51,8 @@ export default function HouseDistrictCountyMap({
   demParty?: "D" | "R" | "I";
   repParty?: "D" | "R" | "I";
   height?: number;
+  /** Rendered between the map and the selected-county panel. */
+  caption?: ReactNode;
 }) {
   const { data: topo, failed } = useStaticJson<PiecesTopology>(piecesUrl);
   const byFips = useMemo(() => new Map(counties.map((c) => [c.fips, c.result])), [counties]);
@@ -168,8 +172,9 @@ export default function HouseDistrictCountyMap({
           </svg>
         )}
       </div>
+      {caption}
       {selected && (
-        <div className="px-1 py-3" style={{ borderTop: "1px solid var(--app-border)" }}>
+        <div className="mt-2 px-1 py-3" style={{ borderTop: "1px solid var(--app-border)" }}>
           <div className="flex items-start justify-between gap-2">
             <div className="min-w-0 flex-1">
               <div className="font-semibold text-sm" style={{ color: "var(--app-text-primary)" }}>{selected.name} {stateAbbr === "LA" ? "Parish" : stateAbbr === "AK" ? "Borough" : "County"}</div>

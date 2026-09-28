@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
@@ -69,6 +70,7 @@ export default function PastElectionCountyMap({
   demParty = "D",
   repParty = "R",
   height = 300,
+  caption,
 }: {
   stateAbbr: string;
   stateName: string;
@@ -78,6 +80,8 @@ export default function PastElectionCountyMap({
   demParty?: "D" | "R" | "I";
   repParty?: "D" | "R" | "I";
   height?: number;
+  /** Rendered between the map and the selected-county panel. */
+  caption?: ReactNode;
 }) {
   const byFips = useMemo(() => new Map(counties.map((c) => [c.fips, c.result])), [counties]);
   // A same-party contest (CA 2016/2018 Senate: two Democrats) is shaded in that party's colour
@@ -195,8 +199,9 @@ export default function PastElectionCountyMap({
         )}
       </div>
 
+      {caption}
       {selected && (
-        <div className="px-1 py-3" style={{ borderTop: "1px solid var(--app-border)" }}>
+        <div className="mt-2 px-1 py-3" style={{ borderTop: "1px solid var(--app-border)" }}>
           <div className="flex items-start justify-between gap-2">
             <div className="min-w-0 flex-1">
               <div className="font-semibold text-sm" style={{ color: "var(--app-text-primary)" }}>{selected.name} {areaLabel}</div>
