@@ -1,4 +1,5 @@
 import { countyTplForState } from "@/lib/countyTpl";
+import { pastElectionHref } from "@/lib/pastElections";
 import { statesData } from "@/data/statesData";
 import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, housePastResults, senateCurrent, presPastResults, houseDelegationHistory, stateLegData, PresResult, NoElectionEntry, electionYear } from "@/data/forecastData";
 import { calculateStateTpl } from "@/lib/tplCompute";
@@ -326,6 +327,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
       group: "president" as const,
       year: res.year,
       label: presRaceLabel(res.stateAbbr),
+      href: res.stateAbbr === state.abbr ? pastElectionHref("president", state.abbr.toLowerCase(), res.year) : undefined,
       demPct: res.demPct,
       repPct: res.repPct,
       demVotes: res.demVotes,
@@ -338,7 +340,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
       group: "senate" as const,
       year: res.year,
       label: isSpecialElection(res.electionType) ? "Senate Special" : "Senate",
-      href: `/senate/${(res.seat === 2 ? `${state.abbr}2` : state.abbr).toLowerCase()}`,
+      href: pastElectionHref("senate", (res.seat === 2 ? `${state.abbr}2` : state.abbr).toLowerCase(), res.year) ?? `/senate/${(res.seat === 2 ? `${state.abbr}2` : state.abbr).toLowerCase()}`,
       demPct: res.demPct,
       repPct: res.repPct,
       demVotes: res.demVotes,
@@ -351,7 +353,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
       group: "governor" as const,
       year: res.year,
       label: "Governor",
-      href: `/governor/${govPageId}`,
+      href: pastElectionHref("governor", govPageId, res.year) ?? `/governor/${govPageId}`,
       demPct: res.demPct,
       repPct: res.repPct,
       demVotes: res.demVotes,

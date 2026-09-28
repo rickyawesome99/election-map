@@ -11,10 +11,12 @@ import { calculateStateTpl, effectiveEnvironment, computeIncumbentPts, racePolli
 import { forecastRace } from "@/lib/forecast";
 import { alignedParty } from "@/data/raceEligibility";
 import BackButton from "@/components/BackButton";
+import { pastElectionHref } from "@/lib/pastElections";
 
 const GENERAL_ELECTION = "November 3, 2026";
 
-function enrichSenateResults(pastResults: PastResult[] | undefined): DetailPastResult[] {
+// seatUrlId is the seat's URL id ("pa" / "pa2"); each row links to its /senate/[id]/[year] page when one exists.
+function enrichSenateResults(pastResults: PastResult[] | undefined, seatUrlId: string): DetailPastResult[] {
   if (!pastResults?.length) return [];
   const sorted = [...pastResults].sort((a, b) => a.year - b.year);
   return sorted.map((res, i) => {
@@ -22,7 +24,12 @@ function enrichSenateResults(pastResults: PastResult[] | undefined): DetailPastR
     const swing = i > 0
       ? parseFloat(((sorted[i - 1].demPct - sorted[i - 1].repPct) - (res.demPct - res.repPct)).toFixed(1))
       : null;
-    return { ...res, nationalDiff: nationalMargin != null ? (res.repPct - res.demPct) - nationalMargin : null, swing };
+    return {
+      ...res,
+      nationalDiff: nationalMargin != null ? (res.repPct - res.demPct) - nationalMargin : null,
+      swing,
+      electionHref: pastElectionHref("senate", seatUrlId, res.year),
+    };
   }).reverse();
 }
 
@@ -219,7 +226,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           termLength={holdover.termLength}
           seatLabel={`U.S. Senate · Seat 2 · Not Up in ${electionYear}`}
           raceDesc={holdover.raceDesc}
-          pastResults={enrichSenateResults(holdover.pastResults)}
+          pastResults={enrichSenateResults(holdover.pastResults, `${holdover.abbr.toLowerCase()}2`)}
         />
       );
     }
@@ -237,7 +244,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           termLength={noEl.termLength}
           seatLabel={`U.S. Senate · No Election in ${electionYear}`}
           raceDesc={noEl.raceDesc}
-          pastResults={enrichSenateResults(noEl.pastResults)}
+          pastResults={enrichSenateResults(noEl.pastResults, noEl.abbr.toLowerCase())}
         />
       );
     }
@@ -271,7 +278,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
   const repVoteShare = parseFloat(((100 + projectedMargin) / 2).toFixed(1));
   const currentSenatorName = race.seatHolder ?? incumbent?.name ?? "TBD";
   const currentSenatorParty = incumbent?.party ?? race.seatParty ?? null;
-  const enrichedPastResults = enrichSenateResults(race.pastResults);
+  const enrichedPastResults = enrichSenateResults(race.pastResults, senateUrlId(race.id));
 
   // Prediction-market win probability (Dem share) — averages Polymarket/Kalshi when both exist.
   const marketDemProb = race.polyDem != null && race.kalshiDem != null

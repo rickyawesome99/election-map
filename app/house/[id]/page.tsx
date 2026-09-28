@@ -16,6 +16,7 @@ import { alignedParty } from "@/data/raceEligibility";
 import BackButton from "@/components/BackButton";
 import { senateCandidatesByYear, specialSenateCandidatesByYear } from "@/data/senateCandidatesByYear";
 import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
+import { pastElectionHref } from "@/lib/pastElections";
 
 const GENERAL_ELECTION = "November 3, 2026";
 
@@ -145,6 +146,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
     return {
       ...res,
       nationalDiff: nationalMargin != null ? (res.repPct - res.demPct) - nationalMargin : null,
+      electionHref: pastElectionHref("house", race.name.toLowerCase(), res.year),
     };
   });
 

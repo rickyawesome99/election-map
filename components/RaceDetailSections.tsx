@@ -1502,10 +1502,18 @@ export function PastElectionResultsSection({
                     const electionTypeLabel = (
                       <span className="truncate text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{electionLabel}</span>
                     );
-                    return res.electionHref
-                      ? <a href={res.electionHref} className="min-w-0 hover:underline">{electionTypeLabel}</a>
-                      : electionTypeLabel;
+                    return electionTypeLabel;
                   })()}
+                  {!isPlaceholder && res.electionHref && (
+                    <a
+                      href={res.electionHref}
+                      className="shrink-0 text-[11px] font-semibold hover:underline"
+                      style={{ color: "var(--app-text-muted)" }}
+                      aria-label={`${res.year} election details`}
+                    >
+                      Details →
+                    </a>
+                  )}
                   {!isPlaceholder && res.districtLabel && (
                     // A county can span many districts (e.g. Cook County, IL spans 10) -
                     // no nowrap/shrink-0 here, so a long list wraps within the pill

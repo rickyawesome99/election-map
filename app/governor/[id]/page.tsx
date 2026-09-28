@@ -11,10 +11,12 @@ import { calculateStateTpl, effectiveEnvironment, computeIncumbentPts, racePolli
 import { forecastRace } from "@/lib/forecast";
 import { alignedParty } from "@/data/raceEligibility";
 import BackButton from "@/components/BackButton";
+import { pastElectionHref } from "@/lib/pastElections";
 
 const GENERAL_ELECTION = "November 3, 2026";
 
-function enrichGovResults(pastResults: PastResult[] | undefined): DetailPastResult[] {
+// abbr is the state's two letters; each row links to its /governor/[id]/[year] page when one exists.
+function enrichGovResults(pastResults: PastResult[] | undefined, abbr: string): DetailPastResult[] {
   if (!pastResults?.length) return [];
   const sorted = [...pastResults].sort((a, b) => a.year - b.year);
   return sorted.map((res, i) => {
@@ -22,7 +24,12 @@ function enrichGovResults(pastResults: PastResult[] | undefined): DetailPastResu
     const swing = i > 0
       ? parseFloat(((sorted[i - 1].demPct - sorted[i - 1].repPct) - (res.demPct - res.repPct)).toFixed(1))
       : null;
-    return { ...res, nationalDiff: nationalMargin != null ? (res.repPct - res.demPct) - nationalMargin : null, swing };
+    return {
+      ...res,
+      nationalDiff: nationalMargin != null ? (res.repPct - res.demPct) - nationalMargin : null,
+      swing,
+      electionHref: pastElectionHref("governor", abbr.toLowerCase(), res.year),
+    };
   }).reverse();
 }
 
@@ -54,7 +61,7 @@ function partyAccent(party: "D" | "R" | "I") {
 function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
   const partyLabel = entry.party === "D" ? "Democrat" : entry.party === "R" ? "Republican" : "Independent";
   const termStarted = entry.termLength ? String(entry.nextElection - entry.termLength) : "TBD";
-  const enrichedPastResults = enrichGovResults(entry.pastResults);
+  const enrichedPastResults = enrichGovResults(entry.pastResults, entry.abbr);
   const accentColor = partyAccent(entry.party);
 
   return (
@@ -181,7 +188,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
   const repVoteShare = parseFloat(((100 + projectedMargin) / 2).toFixed(1));
   const currentGovernorName = race.seatHolder ?? incumbent?.name ?? "TBD";
   const currentGovernorParty = incumbent?.party ?? race.seatParty ?? null;
-  const enrichedPastResults = enrichGovResults(race.pastResults);
+  const enrichedPastResults = enrichGovResults(race.pastResults, race.id);
 
   // Prediction-market win probability (Dem share) — averages Polymarket/Kalshi when both exist.
   const marketDemProb = race.polyDem != null && race.kalshiDem != null

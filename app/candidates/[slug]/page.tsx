@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import ScrollToTop from "@/components/ScrollToTop";
 import BackLink from "@/components/BackLink";
+import { pastElectionHref } from "@/lib/pastElections";
 
 // 1,077 candidate pages: rendered on first request and cached until the next deploy rather than
 // prebuilt (they were ~45% of the build's pages), the same arrangement as the county pages.
@@ -37,6 +38,13 @@ function partySubtle(party: "D" | "R" | "I") {
   if (party === "R") return "var(--party-rep-subtle)";
   if (party === "I") return "var(--party-ind-subtle)";
   return "var(--party-dem-subtle)";
+}
+
+// A past Senate or Governor row opens that election's own page; everything else opens the seat page.
+function historyHref(entry: CandidateHistoryEntry): string {
+  if (entry.isCurrent || entry.raceType === "president") return entry.racePath;
+  const seatId = entry.racePath.split("/").pop() ?? "";
+  return pastElectionHref(entry.raceType, seatId, entry.year) ?? entry.racePath;
 }
 
 function raceTypeLabel(raceType: "house" | "senate" | "governor" | "president") {
@@ -278,7 +286,7 @@ export default async function CandidatePage({
                               {entry.year}
                             </span>
                             <a
-                              href={entry.racePath}
+                              href={historyHref(entry)}
                               className="text-sm font-semibold hover:underline truncate"
                               style={{ color: "var(--app-text-muted)" }}
                             >

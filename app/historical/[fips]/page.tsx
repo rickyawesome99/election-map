@@ -11,6 +11,7 @@ import { FIPS_TO_STATE } from "@/lib/fips";
 import { calculateCountyModel } from "@/lib/tplCompute";
 import { fmtMargin, marginColor, marginToRating, getRatingColors } from "@/lib/colorScale";
 import BackButton from "@/components/BackButton";
+import { pastElectionHref } from "@/lib/pastElections";
 import StateCountyMap from "@/components/StateCountyMap";
 import CountyTplCard from "@/components/CountyTplCard";
 import CountySpreadColumns from "@/components/CountySpreadColumns";
@@ -78,7 +79,7 @@ function senateSeatHref(
     result.repCandidate === repCandidate &&
     (result.electionType?.toLowerCase().includes("special") ?? false) === isSpecial
   ));
-  if (candidateMatch) return candidateMatch.href;
+  if (candidateMatch) return pastElectionHref("senate", candidateMatch.href.split("/").pop() ?? "", year) ?? candidateMatch.href;
 
   // Regular Senate classes recur every six years. This covers older county rows
   // that predate the history currently displayed on the corresponding seat page.
@@ -128,7 +129,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
         demCandidate: candidates.dem,
         repCandidate: candidates.rep,
         electionType: "President",
-        electionHref: `/states/${county.state.toLowerCase()}`,
+        electionHref: pastElectionHref("president", county.state.toLowerCase(), y) ?? `/states/${county.state.toLowerCase()}`,
       };
     });
 
@@ -195,7 +196,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
             demCandidate: candidates?.dem,
             repCandidate: candidates?.rep,
             electionType: "Governor",
-            electionHref: `/governor/${county.state.toLowerCase()}`,
+            electionHref: pastElectionHref("governor", county.state.toLowerCase(), year) ?? `/governor/${county.state.toLowerCase()}`,
           };
         })
     : [];
@@ -220,7 +221,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
             electionType: "House",
             electionHref: districtId == null || !houseData.some((race) => race.name === districtId)
               ? undefined
-              : `/house/${districtId.toLowerCase()}`,
+              : pastElectionHref("house", districtId.toLowerCase(), year) ?? `/house/${districtId.toLowerCase()}`,
             note: r!.samePartyNote ?? (votesKnown ? undefined : "Uncontested race - no vote count is available for this county."),
             districtLabel: formatDistrictLabel(county.state, r!.districts),
           };
