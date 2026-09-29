@@ -23,11 +23,11 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: "light",
-  themeColor: "#ffffff",
+  themeColor: "#f6f8fa",
   viewportFit: "cover",
 };
 
-const restoreThemeScript = `(function(){try{var dark=localStorage.getItem('darkMode')==='true';var themeColor=dark?'#000000':'#ffffff';var colorScheme=dark?'dark':'light';var root=document.documentElement;root.classList.toggle('dark',dark);root.dataset.theme=colorScheme;root.style.setProperty('--browser-chrome-bg',themeColor);root.style.backgroundColor=themeColor;root.style.colorScheme=colorScheme;function syncMeta(name,content,removeMedia){var metas=Array.prototype.slice.call(document.querySelectorAll('meta[name="'+name+'"]'));var meta=metas.shift()||document.createElement('meta');meta.name=name;meta.content=content;if(removeMedia)meta.removeAttribute('media');if(!meta.parentNode)document.head.appendChild(meta);metas.forEach(function(extra){extra.remove()})}syncMeta('theme-color',themeColor,true);syncMeta('color-scheme',colorScheme,false);syncMeta('apple-mobile-web-app-status-bar-style',dark?'black':'default',false)}catch(e){}})()`;
+const restoreThemeScript = `(function(){try{var dark=localStorage.getItem('darkMode')==='true';var themeColor=dark?'#0d1117':'#f6f8fa';var colorScheme=dark?'dark':'light';var root=document.documentElement;root.classList.toggle('dark',dark);root.dataset.theme=colorScheme;root.style.setProperty('--browser-chrome-bg',themeColor);root.style.backgroundColor=themeColor;root.style.colorScheme=colorScheme;function syncMeta(name,content,removeMedia){var metas=Array.prototype.slice.call(document.querySelectorAll('meta[name="'+name+'"]'));var meta=metas.shift()||document.createElement('meta');meta.name=name;meta.content=content;if(removeMedia)meta.removeAttribute('media');if(!meta.parentNode)document.head.appendChild(meta);metas.forEach(function(extra){extra.remove()})}syncMeta('theme-color',themeColor,true);syncMeta('color-scheme',colorScheme,false);syncMeta('apple-mobile-web-app-status-bar-style',dark?'black':'default',false)}catch(e){}})()`;
 
 export default async function RootLayout({
   children,

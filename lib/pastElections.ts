@@ -258,6 +258,22 @@ export function listPastElections(office: PastElectionOffice): { id: string; yea
   return out;
 }
 
+/** Lightweight search metadata, using the same seats and eligibility as race pages. */
+export function pastElectionSearchEntries(office: PastElectionOffice) {
+  return [...seatsFor(office).values()].flatMap((seat) =>
+    seat.results.filter(hasPage).map((result) => ({
+      id: seat.seatId,
+      state: seat.stateName,
+      abbr: seat.stateAbbr,
+      seat: seat.seat,
+      year: result.year,
+      special: isSpecialType(result.electionType),
+      candidates: [result.demCandidate, result.repCandidate].filter(Boolean).join(" "),
+      href: `/${office}/${seat.seatId}/${result.year}`,
+    })),
+  );
+}
+
 /** The page's URL when it exists, else undefined — link sites call this instead of guessing. */
 export function pastElectionHref(office: PastElectionOffice, seatId: string, year: number): string | undefined {
   const seat = seatsFor(office).get(seatId.toLowerCase());

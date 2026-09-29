@@ -13,7 +13,7 @@ export default async function Home({
   if (tab === "forecast" || tab === "map") {
     redirect("/senate");
   }
-  if (tab === "states") redirect("/states");
+  if (tab === "states") redirect("/analysis/delegation");
   if (tab === "counties") redirect("/historical");
   if (tab === "district-finder") redirect("/district-finder");
   if (tab === "model" || tab === "state" || tab === "district" || tab === "table" || tab === "districtTable") {

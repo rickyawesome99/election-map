@@ -22,7 +22,7 @@ export default function SeatHistogram({ label, sim, total }: { label: string; si
   // Democratic seats at which a column counts for the Democrats; a governors' 25–25 split is neither's.
   const line = sim.controlThreshold ?? total / 2 + 0.5;
   const sideOf = (s: number): "D" | "R" | null => (s >= line ? "D" : sim.controlThreshold == null && s === total / 2 ? null : "R");
-  const colorOf = (s: number) => { const side = sideOf(s); return side === "D" ? "var(--party-dem)" : side === "R" ? "var(--party-rep)" : "var(--app-text-very-muted)"; };
+  const colorOf = (s: number) => { const side = sideOf(s); return side === "D" ? "var(--party-dem-fill)" : side === "R" ? "var(--party-rep-fill)" : "var(--app-text-very-muted)"; };
 
   const slot = 100 / bins.length;
   const gap = Math.min(0.6, slot * 0.18);

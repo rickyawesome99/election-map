@@ -343,9 +343,9 @@ export function CountyTplMethodology() {
       <Section id="differences" kicker="Against State TPL" title="What differs">
         <Defs items={[
           { term: "President, Senate, Governor", def: "Genuinely the same statewide race, so the incumbent, the appointed flag and the candidates' receipts are inherited from the state's race list. Only the margin is the county's own." },
-          { term: "House", def: "A county's House figure is a same-year aggregate across every district touching it, so there is no single incumbent or pair of candidates: no incumbency strip, no fundraising strip, always eligible." },
+          { term: "House", def: "A county's House figure is a same-year aggregate across every district touching it, so there is no single incumbent or pair of candidates: no incumbency strip, no fundraising strip. A year counts as ineligible — and is imputed like any other — when one party drew no votes in the county (an unopposed race); a county split between a contested and an unopposed district stays eligible, since the aggregate has no per-district breakdown." },
           { term: "State Legislature", def: "Not included — no county-level legislature results." },
-          { term: "Imputation", def: `An ineligible statewide race is imputed from the COUNTY'S nearest presidential result, at weight ${IMPUTED_RACE_WEIGHT}, stripping the source year's environment.` },
+          { term: "Imputation", def: `An ineligible race (statewide, or an unopposed House year) is imputed from the COUNTY'S nearest presidential result, at weight ${IMPUTED_RACE_WEIGHT}, stripping the source year's environment.` },
           { term: "No Huber weighting", def: "A county sitting far from its STATE's lean is not an outlier, it is a county. Only the imputed discount applies." },
           { term: "Elasticity", def: "The parent state's β*; no county elasticity is estimated." },
           { term: "Senate specials", def: "Special-election results live in a separate bucket of the county Senate data, so a regular and a special in one year each read their own margin." },

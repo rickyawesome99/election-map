@@ -1,34 +1,45 @@
-// Client-safe half of the site search: the entry shape and the matcher. The index itself is
-// built on the server (lib/searchIndex.ts) from forecastData and served as static JSON by
-// app/api/search-index, so the 1.9 MB forecast dataset stays out of every page's bundle.
-
+// Client-safe matcher; the data-heavy index is fetched only when search is used.
 export type SearchEntry = {
   label: string;
   sublabel: string;
   href: string;
-  terms: string; // single lowercased string to match against
+  terms: string;
+  kind?: "state" | "seat" | "race" | "candidate";
+  year?: number;
 };
 
-export function queryIndex(entries: SearchEntry[], raw: string, maxResults = 8): SearchEntry[] {
-  const q = raw.trim().toLowerCase();
+function normalize(value: string): string {
+  return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
+    .replace(/\b([a-z]{2})(\d{1,2})\b/g, "$1 $2")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\b0+(\d+)\b/g, "$1")
+    .replace(/\b(\d+)(st|nd|rd|th)\b/g, "$1")
+    .replace(/\b(senator|sen)\b/g, "senate")
+    .replace(/\bgov\b/g, "governor")
+    .replace(/\b(congress|congressional|representative)\b/g, "house")
+    .trim();
+}
+
+export function queryIndex(entries: SearchEntry[], raw: string, maxResults = 12): SearchEntry[] {
+  const q = normalize(raw);
   if (!q) return [];
-
   const words = q.split(/\s+/);
-
-  const scored: { entry: SearchEntry; score: number }[] = [];
-
-  for (const entry of entries) {
-    if (!words.every((w) => entry.terms.includes(w))) continue;
-
-    let score = 0;
-    if (entry.label.toLowerCase() === q) score = 4;
-    else if (entry.label.toLowerCase().startsWith(q)) score = 3;
-    else if (entry.terms.startsWith(q)) score = 2;
-    else score = 1;
-
-    scored.push({ entry, score });
-  }
-
-  scored.sort((a, b) => b.score - a.score);
-  return scored.slice(0, maxResults).map((s) => s.entry);
+  const hasYear = words.some((word) => /^\d{4}$/.test(word));
+  const scored = entries.flatMap((entry) => {
+    const terms = normalize(entry.terms).split(/\s+/);
+    if (!words.every((word) => terms.some((term) => term === word || (!/^\d+$/.test(word) && word.length > 2 && term.startsWith(word))))) return [];
+    const label = normalize(entry.label);
+    const score = (label === q ? 100 : label.startsWith(q) ? 40 : 0)
+      + words.filter((word) => label.split(" ").includes(word)).length * 5
+      + (hasYear ? entry.kind === "race" ? 30 : 0 : entry.kind === "state" ? 20 : entry.kind === "candidate" ? 10 : entry.kind === "seat" ? 15 : 0);
+    return [{ entry, score }];
+  });
+  scored.sort((a, b) => b.score - a.score || (b.entry.year ?? 0) - (a.entry.year ?? 0) || a.entry.label.localeCompare(b.entry.label));
+  // A current race and its general seat share a URL. Show the most relevant one.
+  const seen = new Set<string>();
+  return scored.filter(({ entry }) => {
+    if (seen.has(entry.href)) return false;
+    seen.add(entry.href);
+    return true;
+  }).slice(0, maxResults).map(({ entry }) => entry);
 }

@@ -10,7 +10,7 @@
 //            the same idea is not re-tested blind) · data = an input fix that moved results
 //   effect   measured consequence (backtest error, live seat counts…), when there is one
 
-export type MethodologyModel = "forecast" | "state-tpl" | "district-tpl" | "county-tpl" | "war" | "precinct-district";
+export type MethodologyModel = "forecast" | "state-tpl" | "district-tpl" | "county-tpl" | "war" | "precinct-district" | "turnout";
 
 export interface MethodologyChange {
   date: string; // ISO
@@ -22,6 +22,18 @@ export interface MethodologyChange {
 }
 
 export const METHODOLOGY_CHANGELOG: MethodologyChange[] = [
+  {
+    date: "2026-09-28", models: ["turnout"], kind: "change",
+    title: "Turnout page and the 2026 turnout estimate",
+    detail: "New /analysis/turnout: votes cast in every general election since 2016 (President, Senate, governor, House) by state, House district and county as a share of citizen voting-age population (ACS B05003, one five-year release per election year; scripts/fetch-cvap.py), with the U.S. Elections Project's VEP and total ballots as a statewide cross-check. Runoff and ranked-choice races count at their first round (data-entry/turnout_first_round.csv, 15 races; by-district figures scaled from the runoff round); unopposed House seats are shown as recorded and flagged. The 2026 estimate is a level × distribution model (lib/turnoutModel.ts): a state's top-of-the-ticket votes = CVAP(2024) × a 60/40 blend of its 2022 and 2018 top-race turnout rates, × 0.92 when its ticket gains or loses a statewide race, × exp(−0.0028 × the change in the top race's |margin|, the site's forecast margin for 2026); counties split it by 2024 presidential share × midterm propensity (shrunk with 20,000 pseudo-votes); House districts take their county pieces (2024 pieces, or tract CVAP in the ten redrawn states) × the district's contested-seat drop-off from the top race, so unopposed seats are imputed as contested.",
+    effect: "Backtest, 2022 from 2018 alone: state top-race MAE 8.1% (bias +6.2%, the 2018→2022 swing; 9.0% / +7.4% without the competitiveness term), county share of the state 4.4% vote-weighted with the level known, contested House districts 11.5%. 2026: 110.4M House votes (106.3–116.4M), 45.9% of CVAP, against 113.7M in 2018 and 107.7M in 2022.",
+  },
+  {
+    date: "2026-09-28", models: ["county-tpl"], kind: "change",
+    title: "County TPL: unopposed House years are imputed instead of entering at ±100",
+    detail: "County House rows were hard-coded eligible, so an unopposed race (stored as a 100/0 placeholder, or counted with one party at zero votes) entered County TPL as a ±100 margin — while State and District TPL impute the same seat from its presidential lean. A county House year is now ineligible when one party drew no votes in the county (same-party when the county carries a top-two same-party note), and is imputed from the county's nearest presidential result like any other ineligible row. A county split between a contested and an unopposed district stays eligible: the county aggregate has no per-district breakdown. The Raw ≥50 rule is not involved — it was removed in the rebuild; lopsided presidential margins enter County TPL as is.",
+    effect: "689 of 3,142 counties move (mean |Δ| 3.5 pts, median 2.5; 308 by more than 3). Largest: Noxubee MS D+28.6 → D+48.9; Madison AL R+25.1 → R+9.2; Jefferson Davis MS D+0.1 → D+15.7; Louisiana parishes under unopposed 2022/2024 House races move 12–15 pts toward their presidential lean.",
+  },
   {
     date: "2026-09-28", models: ["precinct-district"], kind: "change",
     title: "Precinct-district pages: average Republican share and a Priority ranking in Targeting",

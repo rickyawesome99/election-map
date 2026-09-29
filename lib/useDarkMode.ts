@@ -3,8 +3,6 @@
 import { useSyncExternalStore } from "react";
 
 const THEME_STORAGE_KEY = "darkMode";
-const LIGHT_THEME_COLOR = "#ffffff";
-const DARK_THEME_COLOR = "#000000";
 const LIGHT_APP_BG = "#f6f8fa";
 const DARK_APP_BG = "#0d1117";
 
@@ -22,8 +20,8 @@ function syncMeta(name: string, content: string, options: { removeMedia?: boolea
 }
 
 export function syncThemeColor(darkMode: boolean): void {
-  const color = darkMode ? DARK_THEME_COLOR : LIGHT_THEME_COLOR;
   const appBg = darkMode ? DARK_APP_BG : LIGHT_APP_BG;
+  const color = appBg;
   const colorScheme = darkMode ? "dark" : "light";
 
   document.documentElement.dataset.theme = colorScheme;
@@ -51,13 +49,18 @@ export function syncThemeColor(darkMode: boolean): void {
     });
 }
 
-function scheduleSafariChromeSync(darkMode: boolean): void {
-  [0, 50, 150, 350].forEach((delay) => {
-    window.setTimeout(() => {
-      syncThemeColor(darkMode);
-      const viewport = document.querySelector<HTMLMetaElement>('meta[name="viewport"]');
-      if (viewport) viewport.content = viewport.content;
-    }, delay);
+let chromeSyncFrame: number | undefined;
+
+export function refreshSafariChrome(): void {
+  if (chromeSyncFrame !== undefined) window.cancelAnimationFrame(chromeSyncFrame);
+  // Keep the geometry change for a painted frame so Safari invalidates its edge tint.
+  // A same-frame layout flush does not reliably invalidate the browser UI.
+  document.documentElement.setAttribute("data-chrome-refresh", "");
+  chromeSyncFrame = window.requestAnimationFrame(() => {
+    chromeSyncFrame = window.requestAnimationFrame(() => {
+      document.documentElement.removeAttribute("data-chrome-refresh");
+      chromeSyncFrame = undefined;
+    });
   });
 }
 
@@ -98,7 +101,7 @@ function subscribe(onStoreChange: () => void): () => void {
 export function setDarkMode(darkMode: boolean): void {
   document.documentElement.classList.toggle("dark", darkMode);
   syncThemeColor(darkMode);
-  scheduleSafariChromeSync(darkMode);
+  refreshSafariChrome();
   localStorage.setItem(THEME_STORAGE_KEY, String(darkMode));
 }
 

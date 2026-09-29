@@ -1,6 +1,6 @@
-import ForecastMap from "@/components/ForecastMap";
-import { buildStateRows } from "@/lib/stateRows";
+import { redirect } from "next/navigation";
 
+// The States tab moved under Analysis; keep old links working.
 export default function StatesPage() {
-  return <ForecastMap activeTab="states" stateRows={buildStateRows()} />;
+  redirect("/analysis/delegation");
 }

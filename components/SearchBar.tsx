@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback, useId } from "react";
 import { createPortal } from "react-dom";
 import { queryIndex, type SearchEntry } from "@/lib/searchQuery";
 import { loadStaticJson } from "@/lib/useStaticJson";
@@ -10,6 +10,8 @@ import { loadStaticJson } from "@/lib/useStaticJson";
 const SEARCH_INDEX_URL = "/api/search-index";
 
 export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProperties }) {
+  const listId = useId();
+  const [loadError, setLoadError] = useState(false);
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchEntry[]>([]);
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -24,10 +26,11 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
 
   const ensureIndex = useCallback(() => {
     if (entriesRef.current) return;
+    setLoadError(false);
     loadStaticJson<SearchEntry[]>(SEARCH_INDEX_URL).then((loaded) => {
       entriesRef.current = loaded;
       setEntries(loaded);
-    }, () => { /* the next keystroke retries */ });
+    }, () => { setLoadError(true); });
   }, []);
 
   const updateDropdownRect = useCallback(() => {
@@ -36,9 +39,9 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
 
     const rect = container.getBoundingClientRect();
     setDropdownRect({
-      left: rect.left,
+      left: Math.max(8, Math.min(rect.left, window.innerWidth - Math.min(420, window.innerWidth - 16) - 8)),
       top: rect.bottom + 4,
-      width: rect.width,
+      width: Math.min(420, window.innerWidth - 16),
     });
   }, []);
 
@@ -46,8 +49,8 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
     const hits = entriesRef.current ? queryIndex(entriesRef.current, val) : [];
     setResults(hits);
     setActiveIndex(-1);
-    setOpen(hits.length > 0);
-    if (hits.length > 0) updateDropdownRect();
+    setOpen(val.trim().length > 0);
+    updateDropdownRect();
   }, [updateDropdownRect]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -60,7 +63,7 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
 
   // A query typed before the index arrived is answered as soon as it does.
   useEffect(() => {
-    if (entries && pendingQueryRef.current) showHits(pendingQueryRef.current);
+    if (entries && pendingQueryRef.current && document.activeElement === inputRef.current) showHits(pendingQueryRef.current);
   }, [entries, showHits]);
 
   const navigate = useCallback((entry: SearchEntry) => {
@@ -78,12 +81,17 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
       setActiveIndex((i) => Math.max(i - 1, -1));
-    } else if (e.key === "Enter" && activeIndex >= 0) {
-      navigate(results[activeIndex]);
+    } else if (e.key === "Enter" && results.length > 0) {
+      e.preventDefault();
+      navigate(results[Math.max(0, activeIndex)]);
     } else if (e.key === "Escape") {
       setOpen(false);
     }
   };
+
+  useEffect(() => {
+    if (activeIndex >= 0) document.getElementById(`${listId}-${activeIndex}`)?.scrollIntoView({ block: "nearest" });
+  }, [activeIndex, listId]);
 
   // Close on click outside
   useEffect(() => {
@@ -139,11 +147,17 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
         onKeyDown={handleKeyDown}
         onFocus={() => {
           ensureIndex();
-          if (results.length === 0) return;
+          if (!query.trim()) return;
           updateDropdownRect();
           setOpen(true);
         }}
-        placeholder="Search races..."
+        placeholder="Search"
+        aria-label="Search states, seats, races, and candidates"
+        role="combobox"
+        aria-autocomplete="list"
+        aria-expanded={open}
+        aria-controls={open ? listId : undefined}
+        aria-activedescendant={activeIndex >= 0 ? `${listId}-${activeIndex}` : undefined}
         className="h-8 w-28 rounded-lg pl-8 pr-2 outline-none max-sm:placeholder:text-transparent min-[420px]:w-28 sm:w-56 sm:pr-3"
         style={{
           fontSize: 16,
@@ -164,15 +178,20 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
         </span>
       )}
 
-      {open && results.length > 0 && dropdownRect && typeof document !== "undefined" && createPortal(
+      {open && dropdownRect && typeof document !== "undefined" && createPortal(
         <div
           ref={dropdownRef}
+          id={listId}
+          role="listbox"
+          aria-label="Search results"
           className="fixed rounded-xl overflow-hidden shadow-2xl"
           style={{
             left: dropdownRect.left,
             top: dropdownRect.top,
             width: dropdownRect.width,
             zIndex: 1000,
+            maxHeight: "min(70vh, 520px)",
+            overflowY: "auto",
             background: "var(--app-panel)",
             border: "1px solid var(--app-border)",
           }}
@@ -183,10 +202,19 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
           onClick={(e) => e.stopPropagation()}
           onTouchStart={(e) => e.stopPropagation()}
         >
+          {results.length === 0 && <div role="status" className="px-3 py-4 text-sm" style={{ color: "var(--app-text-muted)" }}>
+            {loadError ? "Search could not load. Type again to retry." : !entries ? "Loading search…" : "No matches. Try a state, district, candidate, or election year."}
+          </div>}
           {results.map((entry, i) => (
-            <button
+            <a
               key={entry.href}
+              href={entry.href}
+              role="option"
+              aria-selected={i === activeIndex}
+              id={`${listId}-${i}`}
+              onMouseEnter={() => setActiveIndex(i)}
               onClick={(e) => {
+                if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
                 e.preventDefault();
                 e.stopPropagation();
                 navigate(entry);
@@ -203,7 +231,7 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
               <span className="text-[11px]" style={{ color: "var(--app-text-muted)" }}>
                 {entry.sublabel}
               </span>
-            </button>
+            </a>
           ))}
         </div>,
         document.body

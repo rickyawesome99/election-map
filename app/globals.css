@@ -9,7 +9,7 @@
   --app-text-primary: #1f2328;
   --app-text-muted: #656d76;
   --app-text-very-muted: #949ea6;
-  --browser-chrome-bg: #ffffff;
+  --browser-chrome-bg: var(--app-bg);
   --map-unfilled: #c8cdd3;
   --map-legend-bg: rgba(246,248,250,0.92);
 
@@ -25,6 +25,11 @@
   --party-dem-subtle: #1b408c33;
   --party-rep-subtle: #be1c2933;
   --party-ind-subtle: #5a647233;
+
+  /* Party colors — fills (bars, map shapes). Same in both themes. */
+  --party-dem-fill: #1b408c;
+  --party-rep-fill: #be1c29;
+  --party-ind-fill: #5a6472;
 
   --background: var(--app-bg);
   --foreground: var(--app-text-primary);
@@ -52,7 +57,7 @@ html.dark {
   --app-text-primary: #ffffff;
   --app-text-muted: #8b949e;
   --app-text-very-muted: #484f58;
-  --browser-chrome-bg: #000000;
+  --browser-chrome-bg: var(--app-bg);
   --map-unfilled: #1e2530;
   --map-legend-bg: rgba(13,17,23,0.90);
 
@@ -78,11 +83,11 @@ html.dark {
 }
 
 html[data-theme="light"] {
-  --browser-chrome-bg: #ffffff;
+  --browser-chrome-bg: var(--app-bg);
 }
 
 html[data-theme="dark"] {
-  --browser-chrome-bg: #000000;
+  --browser-chrome-bg: var(--app-bg);
 }
 
 @theme inline {
@@ -111,16 +116,31 @@ body {
   overflow-y: auto;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: env(safe-area-inset-top, 0px);
-  background-color: var(--browser-chrome-bg);
-  pointer-events: none;
-  z-index: 60;
+/* Safari's edge sampler needs a box larger than 10px. Empty text clipping
+   leaves its computed color available without painting over header controls.
+   Reference: https://exsesx.dev/blog/en/safari-26-invisible-tint-sampler */
+.safari-top-tint {
+  display: none;
+}
+
+@supports (-webkit-touch-callout: none) {
+  @media (hover: none) and (pointer: coarse) {
+    .safari-top-tint {
+      display: block;
+      position: fixed;
+      inset: 0 0 auto;
+      height: 12px;
+      z-index: 2147483647;
+      pointer-events: none;
+      background-color: var(--app-bg);
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    html[data-chrome-refresh] .safari-top-tint {
+      height: 13px;
+    }
+  }
 }
 
 .scrollbar-none {

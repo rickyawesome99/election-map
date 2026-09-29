@@ -375,13 +375,13 @@ export default function ForecastMap({
             }}
           >
             <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
-              Election Landscape
+              Analysis
             </div>
             <h1
               className="mt-1 text-2xl font-bold tracking-tight md:text-[1.65rem]"
               style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-primary)" }}
             >
-              States
+              Current Seat Delegation
             </h1>
           </div>
         )}

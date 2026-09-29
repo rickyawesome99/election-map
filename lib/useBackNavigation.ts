@@ -8,8 +8,8 @@ export function resolveDefaultBackHref(pathname: string): string {
   if (pathname.startsWith("/house/")) return "/house";
   if (pathname.startsWith("/senate/")) return "/senate";
   if (pathname.startsWith("/governor/")) return "/governor";
-  if (pathname.startsWith("/president/")) return "/states";
-  if (pathname.startsWith("/states/")) return "/states";
+  if (pathname.startsWith("/president/")) return "/analysis/delegation";
+  if (pathname.startsWith("/states/")) return "/analysis/delegation";
   if (pathname.startsWith("/historical/")) return "/historical";
   if (pathname.startsWith("/analysis/")) return "/analysis";
   if (pathname.startsWith("/model/")) return "/model";

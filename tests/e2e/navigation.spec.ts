@@ -35,9 +35,11 @@ async function selectFirstInteractiveMapFeature(page: import("@playwright/test")
 test("top-level tabs keep the URL and visible page in sync", async ({ page }) => {
   await page.goto("/overview");
 
-  await page.getByRole("link", { name: "States" }).click();
-  await expect(page).toHaveURL(/\/states$/);
-  await expect(page.getByRole("heading", { name: "States" })).toBeVisible();
+  await page.getByRole("link", { name: "Analysis", exact: true }).click();
+  await expect(page).toHaveURL(/\/analysis$/);
+  await page.getByRole("link", { name: /Current Seat Delegation/ }).click();
+  await expect(page).toHaveURL(/\/analysis\/delegation$/);
+  await expect(page.getByRole("heading", { name: "Current Seat Delegation" })).toBeVisible();
 
   await page.getByRole("link", { name: "TPL" }).click();
   await expect(page).toHaveURL(/\/model$/);

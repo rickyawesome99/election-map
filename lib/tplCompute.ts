@@ -22,7 +22,7 @@ import { presByBoundaryVintage, boundaryVintageForHouseYear } from "@/data/presB
 import { countyPresidentialData } from "@/data/countyPresidentialData";
 import { countySenateData } from "@/data/countySenateData";
 import { countyGovernorData } from "@/data/countyGovernorData";
-import { countyHouseData } from "@/data/countyHouseData";
+import { countyHouseData, type CountyYearResult } from "@/data/countyHouseData";
 import { computeGenericBallotAverage, genericBallotSeries } from "@/lib/genericBallotAverage";
 import { getRacePollAverage, pollAgingShift, pollWeight, racePollKey, type RacePollAverage } from "@/lib/racePollAverage";
 import { computeHouseEffects, type HouseEffects } from "@/lib/pollsterHouseEffects";
@@ -913,7 +913,8 @@ export function calculateDistrictModel(districtId: string): DistrictModelCalcula
 //   imputation are the county's own, so County TPL updates whenever county data changes.
 // - House: county data is already a same-year aggregate across every district touching
 //   the county (see data/countyHouseData.ts), so there is no single incumbent or pair of
-//   candidates to attribute — no incumbency strip, no fundraising strip, always eligible.
+//   candidates to attribute — no incumbency strip, no fundraising strip. A year is ineligible
+//   (imputed) only when one party drew no votes in the county (countyHouseEligibility).
 // - The environment strip uses the parent state's β*; no county elasticity is estimated.
 // - No Huber weighting: a county far from its STATE's lean is not an outlier.
 
@@ -945,6 +946,20 @@ function getCountyNearestPresidential(fips: string, raceYear: number): ImputedLe
   return entry ? { margin: entry.margin, year: entry.year, desc: "county presidential result" } : null;
 }
 
+// A county House year is a D-vs-R measurement only when both parties drew votes there. An
+// unopposed race (votesKnown false — the 100/0 placeholder — or a counted race with one side
+// at zero, e.g. Allen Parish LA 2024) is imputed like an uncontested seat in the state and
+// district models, instead of entering as a ±100 margin. A county split between a contested
+// and an unopposed district still reads as eligible: the aggregate carries no per-district
+// breakdown to separate them.
+function countyHouseEligibility(r: CountyYearResult): RaceEligibility {
+  if (r.votesKnown === false) return r.margin > 0 ? "no-dem" : "no-rep";
+  if (r.samePartyNote && (r.demVotes <= 0 || r.repVotes <= 0)) return "same-party";
+  if (r.demVotes <= 0) return "no-dem";
+  if (r.repVotes <= 0) return "no-rep";
+  return "eligible";
+}
+
 function generateCountyRaceList(fips: string, stateAbbr: string, stateName: string): RaceStub[] {
   const statewideStubs: RaceStub[] = generateRaceList(stateAbbr, stateName)
     .filter((stub) => stub.raceType === "P" || stub.raceType === "S" || stub.raceType === "G")
@@ -952,9 +967,12 @@ function generateCountyRaceList(fips: string, stateAbbr: string, stateName: stri
 
   const houseYears = countyHouseData[fips]?.years;
   const houseHistoricalMargins: { year: number; margin: number }[] = [];
+  const houseEligibility = new Map<number, RaceEligibility>();
   if (houseYears) {
     for (const [year, result] of Object.entries(houseYears)) {
-      if (result) houseHistoricalMargins.push({ year: Number(year), margin: result.margin });
+      if (!result) continue;
+      houseHistoricalMargins.push({ year: Number(year), margin: result.margin });
+      houseEligibility.set(Number(year), countyHouseEligibility(result));
     }
   }
   const houseStubs: RaceStub[] = houseHistoricalMargins
@@ -963,7 +981,7 @@ function generateCountyRaceList(fips: string, stateAbbr: string, stateName: stri
       race: "House",
       raceType: "H",
       year: m.year,
-      eligibility: "eligible" as const,
+      eligibility: houseEligibility.get(m.year) ?? "eligible",
       incumbent: "Open",
       historicalMargins: houseHistoricalMargins,
     }));

@@ -17,6 +17,10 @@ function partyColor(party: "D" | "R" | "I"): string {
   return party === "R" ? "var(--party-rep)" : party === "I" ? "var(--party-ind)" : "var(--party-dem)";
 }
 
+function partyFill(party: "D" | "R" | "I"): string {
+  return party === "R" ? "var(--party-rep-fill)" : party === "I" ? "var(--party-ind-fill)" : "var(--party-dem-fill)";
+}
+
 function partyName(party: "D" | "R" | "I"): string {
   return party === "R" ? "Republican" : party === "I" ? "Independent" : "Democratic";
 }
@@ -250,9 +254,9 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
               <p className="mt-1.5 text-[13px]" style={{ color: "var(--app-text-muted)" }}>{subhead(e)}</p>
 
               <div className="mt-4 flex h-3.5 overflow-hidden rounded-sm" style={{ background: "var(--map-unfilled)" }} aria-hidden="true">
-                <span style={{ width: `${demShare}%`, background: partyColor(e.dem.party) }} />
-                {otherShare > 0 && <span style={{ width: `${otherShare}%`, background: "var(--party-ind)", opacity: 0.5 }} />}
-                <span style={{ width: `${repShare}%`, background: partyColor(e.rep.party) }} />
+                <span style={{ width: `${demShare}%`, background: partyFill(e.dem.party) }} />
+                {otherShare > 0 && <span style={{ width: `${otherShare}%`, background: "var(--party-ind-fill)", opacity: 0.5 }} />}
+                <span style={{ width: `${repShare}%`, background: partyFill(e.rep.party) }} />
               </div>
 
               <div className="mt-3">
