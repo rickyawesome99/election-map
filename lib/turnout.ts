@@ -36,8 +36,9 @@ import {
 //   • CVAP is the ACS 5-year release ending in the election year; see scripts/fetch-cvap.py for
 //     the Connecticut and 2025 exceptions.
 
-const ROOT = process.cwd();
-const read = (rel: string) => readFileSync(join(ROOT, rel), "utf8");
+// Every readFileSync below spells its path out with literals: Next's output file tracing can only
+// follow a fully static path, and a path built from a variable makes it bundle the whole project
+// into the route's serverless function (379 MB, over Vercel's limit).
 
 /** RFC-4180-ish CSV: quoted fields may hold commas ("1,234") and CRLF line ends are tolerated. */
 export function parseCsv(text: string): Record<string, string>[] {
@@ -136,9 +137,8 @@ const frKey = (office: string, state: string, year: number | string, seat: strin
 
 function loadFirstRound(): Map<string, FirstRoundOverride> {
   const out = new Map<string, FirstRoundOverride>();
-  const path = join(ROOT, "data-entry/turnout_first_round.csv");
-  if (!existsSync(path)) return out;
-  for (const r of parseCsv(readFileSync(path, "utf8"))) {
+  if (!existsSync(join(process.cwd(), "data-entry", "turnout_first_round.csv"))) return out;
+  for (const r of parseCsv(readFileSync(join(process.cwd(), "data-entry", "turnout_first_round.csv"), "utf8"))) {
     const votes = num(r.first_round_total);
     if (votes == null) continue;
     out.set(frKey(r.office, r.state, r.year, r.seat ?? ""), { votes, source: r.source ?? "", note: r.notes ?? "" });
@@ -164,7 +164,7 @@ export function turnoutRaw(): Raw {
   const runoffs = runoffSet();
 
   const cvap = new Map<string, number>();
-  for (const r of parseCsv(read("data-entry/cvap.csv"))) {
+  for (const r of parseCsv(readFileSync(join(process.cwd(), "data-entry", "cvap.csv"), "utf8"))) {
     const v = num(r.cvap);
     if (v == null) continue;
     cvap.set(`${r.level}|${r.geoid}|${r.year}`, v);
@@ -172,17 +172,17 @@ export function turnoutRaw(): Raw {
   }
 
   const statewide: StatewideRace[] = [];
-  for (const r of parseCsv(read("data-entry/president_past_results.csv"))) {
+  for (const r of parseCsv(readFileSync(join(process.cwd(), "data-entry", "president_past_results.csv"), "utf8"))) {
     if (!/^[A-Z]{2}$/.test(r.state_abbr)) continue; // ME-01 style rows stay inside their state
     statewide.push({ office: "president", state: r.state_abbr, year: Number(r.year), votes: num(r.total_votes), special: false, firstRound: false, runoff: false, margin: num(r.margin) });
   }
-  for (const r of parseCsv(read("data-entry/senate_past_results.csv"))) {
+  for (const r of parseCsv(readFileSync(join(process.cwd(), "data-entry", "senate_past_results.csv"), "utf8"))) {
     const year = Number(r.year);
     const key = frKey("senate", r.state_abbr, year, r.seat);
     const fr = firstRound.get(key);
     statewide.push({ office: "senate", state: r.state_abbr, year, votes: fr ? fr.votes : num(r.total_votes), special: r.type === "Special", seat: r.seat, firstRound: !!fr, runoff: runoffs.has(key), margin: num(r.margin) });
   }
-  for (const r of parseCsv(read("data-entry/governor_past_results.csv"))) {
+  for (const r of parseCsv(readFileSync(join(process.cwd(), "data-entry", "governor_past_results.csv"), "utf8"))) {
     const year = Number(r.year);
     const key = frKey("governor", r.state_abbr, year, "");
     const fr = firstRound.get(key);
@@ -190,7 +190,7 @@ export function turnoutRaw(): Raw {
   }
 
   const houseDistricts: HouseDistrictRace[] = [];
-  for (const r of parseCsv(read("data-entry/house_past_results.csv"))) {
+  for (const r of parseCsv(readFileSync(join(process.cwd(), "data-entry", "house_past_results.csv"), "utf8"))) {
     const year = Number(r.year);
     const key = frKey("house", r.state_abbr, year, r.district_name);
     const fr = firstRound.get(key);
@@ -225,7 +225,7 @@ export function turnoutRaw(): Raw {
   const scaledDistrictKeys = new Set<string>();
   type DRow = { id: string; year: number; state: string; office: TurnoutOffice; special: boolean; runoffRow: boolean; votes: number | null };
   const drows: DRow[] = [];
-  for (const r of parseCsv(read("data-entry/house_statewide_results.csv"))) {
+  for (const r of parseCsv(readFileSync(join(process.cwd(), "data-entry", "house_statewide_results.csv"), "utf8"))) {
     const office: TurnoutOffice | null = r.race.startsWith("President") ? "president" : r.race.startsWith("Senate") ? "senate" : r.race.startsWith("Governor") ? "governor" : null;
     if (!office) continue;
     drows.push({ id: r.district_id.padStart(4, "0"), year: Number(r.year), state: r.state_abbr, office, special: r.race.includes("Special"), runoffRow: r.race.includes("Runoff"), votes: num(r.total_votes) });
@@ -269,7 +269,7 @@ let vepCache: Map<string, { vep: number; vap: number | null; ballots: number | n
 export function vepOf(state: string, year: number): { vep: number; vap: number | null; ballots: number | null } | null {
   if (!vepCache) {
     vepCache = new Map();
-    for (const r of parseCsv(read("data-entry/vep_by_state.csv"))) {
+    for (const r of parseCsv(readFileSync(join(process.cwd(), "data-entry", "vep_by_state.csv"), "utf8"))) {
       const vep = num(r.vep);
       if (vep != null) vepCache.set(`${r.state}|${r.year}`, { vep, vap: num(r.vap), ballots: num(r.total_ballots) });
     }

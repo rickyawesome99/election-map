@@ -184,7 +184,7 @@ export type CountyShare = { fips: string; district: string; share: number; basis
 let shares2026: CountyShare[] | null = null;
 export function countyDistrictShares2026(): CountyShare[] {
   if (!shares2026) {
-    shares2026 = parseCsv(readFileSync(join(process.cwd(), "data-entry/county_district_shares_2026.csv"), "utf8"))
+    shares2026 = parseCsv(readFileSync(join(process.cwd(), "data-entry", "county_district_shares_2026.csv"), "utf8"))
       .map((r) => ({ fips: r.county_fips, district: r.district, share: Number(r.share), basis: r.basis }));
   }
   return shares2026;
@@ -193,7 +193,7 @@ export function countyDistrictShares2026(): CountyShare[] {
 /** Shares for a past year from the district-by-county results file (a county piece's share of the
  *  county's House votes); used by the backtest. Counties whose pieces recorded no votes are split evenly. */
 export function countyDistrictSharesFor(year: number): CountyShare[] {
-  const rows = parseCsv(readFileSync(join(process.cwd(), "data-entry/house_district_county_results.csv"), "utf8")).filter((r) => Number(r.year) === year && r.status !== "missing");
+  const rows = parseCsv(readFileSync(join(process.cwd(), "data-entry", "house_district_county_results.csv"), "utf8")).filter((r) => Number(r.year) === year && r.status !== "missing");
   const byCounty = new Map<string, { district: string; total: number }[]>();
   for (const r of rows) {
     const st = STATE_FIPS_BY_ABBR[r.state];
