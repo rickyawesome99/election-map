@@ -135,13 +135,14 @@ export function defaultBaseline(data: PrecinctDistrictData, year: number, office
 
 // ── Targeting ─────────────────────────────────────────────────────────────────
 
-export type TargetMetricKey = "floor" | "ceiling" | "persuadable" | "gap" | "dropoff" | "trend";
+export type TargetMetricKey = "priority" | "avgR" | "floor" | "ceiling" | "persuadable" | "gap" | "dropoff" | "trend";
 
 export interface TargetMetric {
   key: TargetMetricKey;
   label: string;
   short: string;
-  kind: "diverging" | "sequential";
+  /** "category": the value is a count (net votes) and the color is the unit's priority category */
+  kind: "diverging" | "sequential" | "category";
   format: (v: number) => string;
   domain?: [number, number];
   /** sequential ramp hue; party shares use their party's color, other magnitudes the neutral blue */
@@ -151,6 +152,8 @@ export interface TargetMetric {
 }
 
 export const TARGET_METRICS: TargetMetric[] = [
+  { key: "priority",    label: "Priority",           short: "Priority",    kind: "category",   format: (v) => Math.round(v).toLocaleString(), describe: () => "Net votes available: split-ticket votes + midterm turnout votes where Republican-leaning" },
+  { key: "avgR",        label: "Average Republican share", short: "Avg R", kind: "sequential", format: (v) => `${v.toFixed(1)}%`, domain: [30, 75], ramp: "rep", describe: (c) => `Average two-party Republican share across every race on file, each year weighted equally${c.allYears ? ` (${c.allYears[0]}–${c.allYears[1]})` : ""}` },
   { key: "floor",       label: "Republican floor",   short: "R floor",     kind: "sequential", format: (v) => `${v.toFixed(1)}%`, domain: [30, 75], ramp: "rep", describe: (c) => `Lowest two-party Republican share across ${c.year} races` },
   { key: "ceiling",     label: "Republican ceiling", short: "R ceiling",   kind: "sequential", format: (v) => `${v.toFixed(1)}%`, domain: [30, 75], ramp: "rep", describe: (c) => `Highest two-party Republican share across ${c.year} races` },
   { key: "persuadable", label: "Split-ticket votes", short: "Split votes", kind: "sequential", format: (v) => Math.round(v).toLocaleString(), domain: [0, 120], describe: () => "Split-ticket votes = (Ceiling − Floor) × Ballots Cast: the minimum number of voters who picked different parties for different offices" },
@@ -158,6 +161,27 @@ export const TARGET_METRICS: TargetMetric[] = [
   { key: "dropoff",     label: "Midterm drop-off",   short: "Drop-off",    kind: "sequential", format: (v) => `${v.toFixed(1)}%`, domain: [15, 40], describe: (c) => `Midterm drop-off. How much smaller the ${c.midtermYear ?? "midterm"} ballot count was than ${c.year}'s, as a share of ${c.year} ballots.` },
   { key: "trend",       label: "Presidential trend", short: "Trend",       kind: "diverging",  format: fmtMarginPts, describe: (c) => (c.presYears ? `Change in presidential margin from ${c.presYears[0]} to ${c.presYears[1]}` : "Change in presidential margin") },
 ];
+
+// Priority categories, by average Republican share. Below 50% R a precinct's turnout votes are
+// negative (turning out its drop-off voters nets the Democrat votes), so its available votes are
+// persuasion only; above it, turnout adds. Hues name the task, not the party, so the map does not
+// read as a margin map.
+export type PriorityCategory = "base" | "turnout" | "contested" | "persuasion" | "opponent";
+
+export const PRIORITY_CATEGORIES: { key: PriorityCategory; label: string; min: number; color: string; describe: string }[] = [
+  { key: "base",       label: "Base",          min: 58, color: "#be1c29", describe: "Average R 58%+. Reliable; bank the votes." },
+  { key: "turnout",    label: "Turnout",       min: 52, color: "#e8872a", describe: "Average R 52–58%. Republican-leaning; getting midterm drop-off voters out nets votes." },
+  { key: "contested",  label: "Contested",     min: 48, color: "#8e5bd0", describe: "Average R 48–52%. Even; both persuasion and turnout matter." },
+  { key: "persuasion", label: "Persuasion",    min: 42, color: "#1f9e89", describe: "Average R 42–48%. Democratic-leaning; votes come from ticket-splitters, not turnout." },
+  { key: "opponent",   label: "Opponent base", min: -Infinity, color: "#9aa0a6", describe: "Average R under 42%. Little to gain; turnout work helps the other side." },
+];
+
+export const PRIORITY_CATEGORY_BY_KEY = Object.fromEntries(PRIORITY_CATEGORIES.map((c) => [c.key, c])) as Record<PriorityCategory, (typeof PRIORITY_CATEGORIES)[number]>;
+
+export function priorityCategory(avgR: number | null): PriorityCategory | null {
+  if (avgR == null) return null;
+  return PRIORITY_CATEGORIES.find((c) => avgR >= c.min)!.key;
+}
 
 export const TARGET_METRIC_BY_KEY = Object.fromEntries(TARGET_METRICS.map((m) => [m.key, m])) as Record<TargetMetricKey, TargetMetric>;
 
@@ -170,19 +194,28 @@ export interface TargetingRow {
   id: string;
   sub: string;
   ballots: number;
+  avgR: number | null;
+  /** midterm drop-off ballots × average margin: net votes from turning drop-off voters out */
+  turnoutVotes: number | null;
+  /** split-ticket votes + positive turnout votes; the Priority metric's value */
+  priority: number | null;
+  /** 1 = most net votes available, among units at the same level */
+  rank: number | null;
+  category: PriorityCategory | null;
   floor: number | null;
   ceiling: number | null;
   persuadable: number | null;
   gap: number | null;
   dropoff: number | null;
   trend: number | null;
-  estimated: boolean;   // drop-off or trend used crosswalked rows
+  estimated: boolean;   // average R, drop-off or trend used crosswalked rows
 }
 
 export interface TargetingContext {
   year: number;               // the year floor/ceiling/gap are read from
   midtermYear: number | null; // most recent midterm (any era)
   presYears: [number, number] | null; // earliest and latest presidential years
+  allYears: [number, number] | null;  // span the average Republican share covers
   offices: OfficeKey[];
 }
 
@@ -196,6 +229,7 @@ export function targetingContext(data: PrecinctDistrictData): TargetingContext {
     year,
     midtermYear,
     presYears: pres.length >= 2 ? [pres[0], pres[pres.length - 1]] : null,
+    allYears: years.length >= 2 ? [years[years.length - 1], years[0]] : null,
     offices: officesOf(data.results.years[String(year)]),
   };
 }
@@ -210,7 +244,8 @@ export function targetingRows(data: PrecinctDistrictData, level: Level): Targeti
   const mid = ctx.midtermYear != null ? new Map(get(ctx.midtermYear).map((r) => [r.id, r])) : null;
   const presA = ctx.presYears ? new Map(get(ctx.presYears[0]).map((r) => [r.id, r])) : null;
   const presB = ctx.presYears ? new Map(get(ctx.presYears[1]).map((r) => [r.id, r])) : null;
-  return base.map((p) => {
+  const allYears = data.config.years.map((y) => new Map(get(y).map((r) => [r.id, r])));
+  const rows = base.map((p): TargetingRow => {
     const shares = ctx.offices.map((o) => { const d = p.races[o] ? pctD(p.races[o]) : null; return d == null ? null : 100 - d; }).filter((v): v is number => v != null);
     const floor = shares.length ? Math.min(...shares) : null;
     const ceiling = shares.length ? Math.max(...shares) : null;
@@ -220,16 +255,36 @@ export function targetingRows(data: PrecinctDistrictData, level: Level): Targeti
     const a = presA?.get(p.id), b = presB?.get(p.id);
     const ma = a?.races.pres ? marginOf(a.races.pres) : null;
     const mb = b?.races.pres ? marginOf(b.races.pres) : null;
+    // Average R: mean of each year's mean two-party R share, so a year with more races on the
+    // ballot does not outweigh one with fewer.
+    let avgNum = 0, avgN = 0, avgEst = false;
+    for (const ym of allYears) {
+      const r = ym.get(p.id);
+      if (!r) continue;
+      const s = Object.values(r.races).map((v) => pctD(v)).filter((v): v is number => v != null).map((d) => 100 - d);
+      if (!s.length) continue;
+      avgNum += s.reduce((x, y) => x + y, 0) / s.length; avgN++;
+      if (r.estimated) avgEst = true;
+    }
+    const avgR = avgN ? avgNum / avgN : null;
+    const persuadable = floor != null && ceiling != null ? ((ceiling - floor) / 100) * p.ballots : null;
+    const dropBallots = m ? Math.max(0, p.ballots - m.ballots) : null;
+    const turnoutVotes = dropBallots != null && avgR != null ? dropBallots * (2 * avgR - 100) / 100 : null;
     return {
       id: p.id, sub: p.sub, ballots: p.ballots,
-      floor, ceiling,
-      persuadable: floor != null && ceiling != null ? ((ceiling - floor) / 100) * p.ballots : null,
+      avgR, turnoutVotes,
+      priority: persuadable != null ? persuadable + Math.max(0, turnoutVotes ?? 0) : null,
+      rank: null,
+      category: priorityCategory(avgR),
+      floor, ceiling, persuadable,
       gap: sth != null && topM != null ? sth - topM : null,
       dropoff: m && p.ballots > 0 ? (1 - m.ballots / p.ballots) * 100 : null,
       trend: ma != null && mb != null ? mb - ma : null,
-      estimated: !!(m?.estimated || a?.estimated || b?.estimated),
+      estimated: !!(m?.estimated || a?.estimated || b?.estimated || avgEst),
     };
   });
+  [...rows].filter((r) => r.priority != null).sort((x, y) => (y.priority as number) - (x.priority as number)).forEach((r, i) => { r.rank = i + 1; });
+  return rows;
 }
 
 // ── Color ─────────────────────────────────────────────────────────────────────
@@ -269,6 +324,43 @@ export function sequentialStops(dark: boolean, hue?: "rep"): string[] {
 
 export function divergingColor(v: number | null): string | null {
   return v == null ? null : getRaceColor(v);
+}
+
+// Raw vote-difference bins (R − D). The same eight colors as the margin scale; the tilt / lean /
+// likely / safe cut points are in votes and grow with the unit, since a township casts roughly
+// ten precincts' worth of ballots.
+export const NET_VOTE_BINS: Record<Level, [number, number, number]> = {
+  precinct: [10, 50, 150],
+  subdivision: [50, 250, 1000],
+};
+
+export function netVotesColor(v: number | null, level: Level): string | null {
+  if (v == null) return null;
+  const [lean, likely, safe] = NET_VOTE_BINS[level];
+  const a = Math.abs(v), sign = v >= 0 ? 1 : -1;
+  // map onto the margin scale's band edges (0–1 tilt, 1–5 lean, 5–15 likely, 15+ safe)
+  const m = a >= safe ? 15 : a >= likely ? 5 : a >= lean ? 1 : 0.5;
+  return getRaceColor(sign * m);
+}
+
+export function netVotesLegend(level: Level): { color: string; label: string }[] {
+  const [lean, likely, safe] = NET_VOTE_BINS[level];
+  return [
+    { color: getRaceColor(-15), label: `D+${safe.toLocaleString()}` },
+    { color: getRaceColor(-5), label: `D+${likely}` },
+    { color: getRaceColor(-1), label: `D+${lean}` },
+    { color: getRaceColor(-0.5), label: "D" },
+    { color: getRaceColor(0.5), label: "R" },
+    { color: getRaceColor(1), label: `R+${lean}` },
+    { color: getRaceColor(5), label: `R+${likely}` },
+    { color: getRaceColor(15), label: `R+${safe.toLocaleString()}` },
+  ];
+}
+
+export function fmtNetVotes(v: number | null | undefined): string {
+  if (v == null) return "—";
+  const n = Math.round(v);
+  return n === 0 ? "EVEN" : `${n > 0 ? "R" : "D"}+${Math.abs(n).toLocaleString()}`;
 }
 
 // ── Formatting ────────────────────────────────────────────────────────────────

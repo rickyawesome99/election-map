@@ -23,6 +23,12 @@ export interface MethodologyChange {
 
 export const METHODOLOGY_CHANGELOG: MethodologyChange[] = [
   {
+    date: "2026-09-28", models: ["precinct-district"], kind: "change",
+    title: "Precinct-district pages: average Republican share and a Priority ranking in Targeting",
+    detail: "Two targeting metrics, after rtpwin.us's precinct analysis. Average R: the mean, over every year on file, of the year's mean two-party Republican share across its races (on today's lines, ≈ for crosswalked years). Priority: net votes available = split-ticket votes + max(0, turnout votes), turnout votes = midterm drop-off ballots × average margin; units ranked by it, colored by five categories cut on average R (Base ≥58, Turnout 52–58, Contested 48–52, Persuasion 42–48, Opponent base <42). rtpwin's average of per-column ranks was not used: its columns (average R%, high R%, average R vote) largely measure the same thing, so it counts Republican strength several times. Priority is the explorer's default Targeting metric. Nothing in the 2026 outlook changes.",
+    effect: "OH-31, 85 precincts: Base 18, Turnout 14, Contested 16, Persuasion 24, Opponent base 13; 6,147 net votes available (Base 2,256). Top priority Bath Twp H (Contested, 222 split-ticket votes), then nine Base precincts in Norton, Richfield and Bath.",
+  },
+  {
     date: "2026-09-26", models: ["precinct-district"], kind: "change",
     title: "Precinct-district pages: a campaign-money term, calibrated per state",
     detail: "The outlook adds money = clamp(K × (0.9 × gap% − typical gap%), ±CAP), the site's residual money basis re-fitted on the state's own House races (scripts/fitStateLegMoney.ts → data/precinct-districts/money/<ST>.json). gap% is the nominees' gross receipts gap (cash + in-kind, net of refunds; data/precinct-districts/<slug>/finance.json); typical gap% = a + b × incSign + c × presidential margin; 0.9 is the U.S. House partial-cycle scale. Ohio, 76 contested 2024 House races (Transparency USA receipts, 2024 President by district): typical gap = −0.8 + 55.0 × incSign + 0.91 × pres; K = 0.073 ± 0.011 → 0.07; CAP 3 (the congressional House cap); fit error 4.26 → 3.37, leave-one-out MAE 3.36 (no money) → 2.72 at K 0.08. Past State House rows with receipts on file are stripped of the same term (full-cycle, scale 1) before the lean and down-ballot gap, so an incumbent's money edge is not counted twice. σ unchanged. The OH-31 finance file nets a $16,615.50 refunded excess contribution out of Kahoe's listed receipts.",

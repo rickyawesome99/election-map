@@ -13,7 +13,7 @@ import type { OfficeKey, PrecinctDistrictData } from "@/lib/precinctDistrict/typ
 import type { DistrictProjection } from "@/lib/precinctDistrict/project";
 import { currentEra, eraOfYear, marginOf, pctD, subdivisionName as subName, topOfTicket } from "@/lib/precinctDistrict/aggregate";
 import {
-  MARGIN_LEGEND, TARGET_METRICS, TARGET_METRIC_BY_KEY, defaultBaseline, divergingColor, fmtInt, fmtMargin, fmtPct1,
+  MARGIN_LEGEND, NET_VOTE_BINS, PRIORITY_CATEGORIES, fmtNetVotes, netVotesColor, netVotesLegend, PRIORITY_CATEGORY_BY_KEY, TARGET_METRICS, TARGET_METRIC_BY_KEY, defaultBaseline, divergingColor, fmtInt, fmtMargin, fmtPct1,
   marginColorVar, needsCrosswalk, officeCandidates, officeLabel, officeLabelFull, officeShort, officesOf, precinctRows, rowsFor,
   sequentialColor, sequentialStops, subdivisionRows, swingByUnit, targetingRows, targetingContext,
   type ExplorerRow, type Level, type Mode, type TargetMetricKey, type Universe,
@@ -112,7 +112,8 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
   const [level, setLevel] = useState<Level>("precinct");
   const [subFilter, setSubFilter] = useState<string | null>(null);
   const [demoMetric, setDemoMetric] = useState<DemoMetricKey>("pct_college");
-  const [targetMetric, setTargetMetric] = useState<TargetMetricKey>("gap");
+  const [targetMetric, setTargetMetric] = useState<TargetMetricKey>("priority");
+  const [projMetric, setProjMetric] = useState<"margin" | "net">("margin");
   const [renderer, setRenderer] = useState<Renderer>("svg");
   const [selected, setSelected] = useState<string | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
@@ -221,23 +222,26 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
       case "swing": return swing.get(unit)?.swing ?? null;
       case "demographics": return popWeightedMetric(demoRowsFor(unit), demoMetricDef);
       case "targeting": return targeting.get(unit)?.[targetMetric] ?? null;
-      case "projection": return projUnits.get(unit)?.projected ?? null;
+      case "projection": { const u = projUnits.get(unit); return projMetric === "net" ? (u ? u.r - u.d : null) : (u?.projected ?? null); }
     }
-  }, [mode, rowById, office, swing, demoRowsFor, demoMetricDef, targeting, targetMetric, projUnits]);
+  }, [mode, rowById, office, swing, demoRowsFor, demoMetricDef, targeting, targetMetric, projUnits, projMetric]);
 
   const colorFor = useCallback((unit: string): string | null => {
     const v = valueFor(unit);
+    if (mode === "projection" && projMetric === "net") return netVotesColor(v, level);
     if (mode === "results" || mode === "swing" || mode === "projection") return divergingColor(v);
     if (mode === "demographics") return sequentialColor(v, demoMetricDef.domain, darkMode);
+    if (targetDef.kind === "category") { const c = targeting.get(unit)?.category; return c ? PRIORITY_CATEGORY_BY_KEY[c].color : null; }
     return targetDef.kind === "diverging" ? divergingColor(v) : sequentialColor(v, targetDef.domain ?? [0, 1], darkMode, targetDef.ramp);
-  }, [valueFor, mode, demoMetricDef, targetDef, darkMode]);
+  }, [valueFor, mode, demoMetricDef, targetDef, darkMode, targeting, projMetric, level]);
 
   const formatValue = useCallback((v: number | null): string => {
     if (v == null) return "—";
+    if (mode === "projection" && projMetric === "net") return fmtNetVotes(v);
     if (mode === "results" || mode === "swing" || mode === "projection") return fmtMargin(v);
     if (mode === "demographics") return demoMetricDef.format(v);
     return targetDef.format(v);
-  }, [mode, demoMetricDef, targetDef]);
+  }, [mode, demoMetricDef, targetDef, projMetric]);
 
   const valueColor = useCallback((v: number | null): string => {
     if (mode === "results" || mode === "swing" || mode === "projection" || (mode === "targeting" && targetDef.kind === "diverging")) return marginColorVar(v);
@@ -285,18 +289,19 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
       }
       const m = d + r > 0 ? ((r - d) / (d + r)) * 100 : null;
       const dn = config.election2026?.candidates?.d?.name ?? "D"; const rn = config.election2026?.candidates?.r?.name ?? "R";
-      return { value: m, text: `projected 2026 State House · ${scope} · ${fmtInt(b)} est. ballots · ${dn} ${fmtInt(d)} · ${rn} ${fmtInt(r)} · ${fmtInt(Math.abs(r - d))} net votes separate them` };
+      return { value: projMetric === "net" ? r - d : m, text: `projected 2026 State House${projMetric === "net" ? " net votes" : ""} · ${scope} · ${fmtInt(b)} est. ballots · ${dn} ${fmtInt(d)} · ${rn} ${fmtInt(r)} · ${fmtInt(Math.abs(r - d))} net votes separate them` };
     }
     const tr = [...targeting.values()].filter((r) => !subFilter || (level === "subdivision" ? r.id === subFilter : r.sub === subFilter));
     let v: number | null = null;
-    if (targetMetric === "persuadable") v = tr.reduce((s, r) => s + (r.persuadable ?? 0), 0);
+    // counts sum; shares and margins are ballot-weighted
+    if (targetMetric === "persuadable" || targetMetric === "priority") v = tr.reduce((s, r) => s + (r[targetMetric] ?? 0), 0);
     else {
       let num = 0, den = 0;
       for (const r of tr) { const x = r[targetMetric]; if (x != null) { num += x * r.ballots; den += r.ballots; } }
       v = den > 0 ? num / den : null;
     }
     return { value: v, text: targetDef.describe(tctx) };
-  }, [mode, visibleRows, office, year, yr, compare, compareRows, results.years, subFilter, level, config, currentIds, data.demographics.precincts, demoMetricDef, targeting, targetMetric, targetDef, tctx, projection]);
+  }, [mode, visibleRows, office, year, yr, compare, compareRows, results.years, subFilter, level, config, currentIds, data.demographics.precincts, demoMetricDef, targeting, targetMetric, targetDef, tctx, projection, projMetric]);
 
   // ── Ledger ─────────────────────────────────────────────────────────────────
   const ledger = useMemo((): LedgerRow[] => {
@@ -312,7 +317,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
     return subs.map((s) => {
       let v: number | null = null;
       if (mode === "results") v = s.races[office] ? marginOf(s.races[office]) : null;
-      else if (mode === "projection") { const e = projSubs.get(s.id); v = e && e.d + e.r > 0 ? ((e.r - e.d) / (e.d + e.r)) * 100 : null; }
+      else if (mode === "projection") { const e = projSubs.get(s.id); v = !e ? null : projMetric === "net" ? e.r - e.d : e.d + e.r > 0 ? ((e.r - e.d) / (e.d + e.r)) * 100 : null; }
       else if (mode === "swing" && compare && compSubs) {
         const b = compSubs.get(s.id);
         const ma = s.races[office] ? marginOf(s.races[office]) : null;
@@ -320,12 +325,13 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
         v = ma != null && mb != null ? ma - mb : null;
       } else if (mode === "demographics") v = popWeightedMetric(currentIds.filter((p) => p.sub === s.id).map((p) => data.demographics.precincts[p.id]).filter(Boolean), demoMetricDef);
       else v = tsubs.get(s.id)?.[targetMetric] ?? null;
-      const swatch = mode === "results" || mode === "swing" || mode === "projection" || (mode === "targeting" && targetDef.kind === "diverging")
+      const cat = mode === "targeting" && targetDef.kind === "category" ? tsubs.get(s.id)?.category : null;
+      const swatch = cat ? PRIORITY_CATEGORY_BY_KEY[cat].color : mode === "projection" && projMetric === "net" ? netVotesColor(v, "subdivision") : mode === "results" || mode === "swing" || mode === "projection" || (mode === "targeting" && targetDef.kind === "diverging")
         ? divergingColor(v)
         : sequentialColor(v, mode === "demographics" ? demoMetricDef.domain : (targetDef.domain ?? [0, 1]), darkMode, mode === "targeting" ? targetDef.ramp : undefined);
       return { id: s.id, name: subName(config, s.id), count: s.count ?? 0, ballots: s.ballots, valueLabel: formatValue(v), valueColor: valueColor(v), swatch };
     });
-  }, [data, year, compare, mode, office, currentIds, demoMetricDef, targetMetric, targetDef, darkMode, config, formatValue, valueColor, projection]);
+  }, [data, year, compare, mode, office, currentIds, demoMetricDef, targetMetric, targetDef, darkMode, config, formatValue, valueColor, projection, projMetric]);
 
   // ── Panel helpers (always on today's lines) ─────────────────────────────────
   const panelRowsCache = useMemo(() => new Map<number, ExplorerRow[]>(), [data, level]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -402,15 +408,32 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
           {head}
           <div className="grid grid-cols-[1fr_auto] gap-x-3 gap-y-0.5 text-[11px]">
             <FragmentRow label={`${projection?.baseline.year ?? ""} baseline`} value={fmtMargin(u?.base ?? null)} t={t} color={u?.base == null ? t.textPrimary : u.base > 0 ? t.repText : t.demText} />
-            <FragmentRow label="Projected 2026" value={fmtMargin(u?.projected ?? null)} strong t={t} color={u?.projected == null ? t.textPrimary : u.projected > 0 ? t.repText : t.demText} />
+            <FragmentRow label="Projected 2026" value={fmtMargin(u?.projected ?? null)} strong={projMetric === "margin"} t={t} color={u?.projected == null ? t.textPrimary : u.projected > 0 ? t.repText : t.demText} />
             <FragmentRow label={TURNOUT_LABEL} value={fmtInt(u?.ballots)} t={t} />
             <FragmentRow label={config.election2026?.candidates?.d?.name ?? "D"} value={fmtInt(u?.d)} t={t} color={t.demText} />
             <FragmentRow label={config.election2026?.candidates?.r?.name ?? "R"} value={fmtInt(u?.r)} t={t} color={t.repText} />
+            <FragmentRow label="Net votes" value={fmtNetVotes(u ? u.r - u.d : null)} strong={projMetric === "net"} t={t} color={!u || Math.round(u.r - u.d) === 0 ? t.textPrimary : u.r > u.d ? t.repText : t.demText} />
           </div>
         </>
       );
     }
     const tr = targeting.get(unit);
+    if (targetDef.kind === "category") {
+      const cat = tr?.category ? PRIORITY_CATEGORY_BY_KEY[tr.category] : null;
+      return (
+        <>
+          {head}
+          {cat && <div className="mb-1 flex items-center gap-1.5 text-[11px] font-semibold" style={{ color: t.textPrimary }}><span style={{ width: 9, height: 9, borderRadius: 2, background: cat.color, display: "inline-block" }} />{cat.label}{tr?.rank != null && <span style={{ color: t.textMuted, fontWeight: 400 }}>· priority #{tr.rank} of {targeting.size}</span>}</div>}
+          <div className="grid grid-cols-[1fr_auto] gap-x-3 gap-y-0.5 text-[11px]">
+            <FragmentRow label="Avg R" value={tr?.avgR == null ? "—" : fmtPct1(tr.avgR)} t={t} />
+            <FragmentRow label="Split votes" value={fmtInt(tr?.persuadable)} t={t} />
+            <FragmentRow label="Turnout votes" value={tr?.turnoutVotes == null ? "—" : `${tr.turnoutVotes > 0 ? "+" : tr.turnoutVotes < 0 ? "−" : ""}${fmtInt(Math.abs(tr.turnoutVotes))}`} t={t} color={tr?.turnoutVotes == null || Math.round(tr.turnoutVotes) === 0 ? undefined : tr.turnoutVotes > 0 ? t.repText : t.demText} />
+            <FragmentRow label="Net votes available" value={fmtInt(tr?.priority)} strong t={t} />
+          </div>
+          {tr?.estimated && <div className="mt-1 text-[10px]" style={{ color: t.textMuted }}>uses ≈ estimated older years</div>}
+        </>
+      );
+    }
     return (
       <>
         {head}
@@ -420,20 +443,38 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
             return <FragmentRow label={m.short} value={v == null ? "—" : m.format(v)} strong t={t} color={m.kind === "diverging" ? (v == null ? t.textPrimary : v > 0 ? t.repText : t.demText) : undefined} />;
           })()}
         </div>
-        {tr?.estimated && (targetMetric === "dropoff" || targetMetric === "trend") && <div className="mt-1 text-[10px]" style={{ color: t.textMuted }}>uses ≈ estimated older years</div>}
+        {tr?.estimated && (targetMetric === "dropoff" || targetMetric === "trend" || targetMetric === "avgR") && <div className="mt-1 text-[10px]" style={{ color: t.textMuted }}>uses ≈ estimated older years</div>}
       </>
     );
-  }, [level, config, rowById, t, mode, office, year, yr, compare, swing, results.years, demoRowsFor, demoMetric, targeting, targetMetric, targetDef, projUnits, projection]);
+  }, [level, config, rowById, t, mode, office, year, yr, compare, swing, results.years, demoRowsFor, demoMetric, targeting, targetMetric, targetDef, projUnits, projection, projMetric]);
 
   const tooltipHtml = useCallback((unit: string): string => {
     const name = level === "subdivision" ? subName(config, unit) : unit;
     const v = valueFor(unit);
     const color = mode === "results" || mode === "swing" || mode === "projection" || (mode === "targeting" && targetDef.kind === "diverging") ? (v == null ? t.textMuted : v > 0 ? t.repText : t.demText) : t.textPrimary;
-    return `<div style="background:${t.panel};border:1px solid ${t.border};border-radius:8px;padding:10px 12px;min-width:180px;font-family:inherit;box-shadow:0 4px 16px rgba(0,0,0,0.3)"><div style="font-weight:700;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:${t.textPrimary};margin-bottom:4px">${name}</div><div style="font-size:11px;color:${t.textMuted}">${readoutLabel(mode, year, yr, office, compare ? results.years[String(compare.year)] : null, compare, demoMetricDef.label, targetDef.label)}</div><div style="font-size:16px;font-weight:700;color:${color};margin-top:4px">${formatValue(v)}</div></div>`;
-  }, [level, config, valueFor, mode, targetDef, t, year, yr, office, compare, results.years, demoMetricDef.label, formatValue]);
+    return `<div style="background:${t.panel};border:1px solid ${t.border};border-radius:8px;padding:10px 12px;min-width:180px;font-family:inherit;box-shadow:0 4px 16px rgba(0,0,0,0.3)"><div style="font-weight:700;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:${t.textPrimary};margin-bottom:4px">${name}</div><div style="font-size:11px;color:${t.textMuted}">${mode === "projection" && projMetric === "net" ? "projected 2026 State House net votes" : readoutLabel(mode, year, yr, office, compare ? results.years[String(compare.year)] : null, compare, demoMetricDef.label, targetDef.label)}</div><div style="font-size:16px;font-weight:700;color:${color};margin-top:4px">${formatValue(v)}</div></div>`;
+  }, [level, config, valueFor, mode, targetDef, t, year, yr, office, compare, results.years, demoMetricDef.label, formatValue, projMetric]);
 
   // ── Legend ─────────────────────────────────────────────────────────────────
   const legend = useMemo((): ReactNode => {
+    if (mode === "projection" && projMetric === "net") {
+      const bins = netVotesLegend(level), safe = NET_VOTE_BINS[level][2];
+      return (
+        <div>
+          <div className="mb-1 font-semibold">Projected 2026 net votes</div>
+          <div className="flex items-center gap-0.5">{bins.map((l) => <span key={l.label} title={l.label} style={{ width: 14, height: 8, background: l.color, display: "inline-block" }} />)}</div>
+          <div className="flex justify-between" style={{ width: 14 * 8 + 7 }}><span>D+{safe.toLocaleString()}</span><span>even</span><span>R+{safe.toLocaleString()}</span></div>
+        </div>
+      );
+    }
+    if (mode === "targeting" && targetDef.kind === "category") {
+      return (
+        <div>
+          <div className="mb-1 font-semibold">Priority</div>
+          <div className="flex flex-col gap-0.5">{PRIORITY_CATEGORIES.map((c) => <span key={c.key} className="flex items-center gap-1.5" title={c.describe}><span style={{ width: 10, height: 8, background: c.color, display: "inline-block" }} />{c.label}</span>)}</div>
+        </div>
+      );
+    }
     const diverging = mode === "results" || mode === "swing" || mode === "projection" || (mode === "targeting" && targetDef.kind === "diverging");
     if (diverging) {
       return (
@@ -453,7 +494,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
         <div className="flex justify-between" style={{ width: 16 * 7 + 6 }}><span>{legendNum(fmt(dom[0]))}</span><span>{legendNum(fmt(dom[1]))}+</span></div>
       </div>
     );
-  }, [mode, targetDef, demoMetricDef, darkMode]);
+  }, [mode, targetDef, demoMetricDef, darkMode, projMetric, level]);
 
   // ── Table columns ──────────────────────────────────────────────────────────
   const columns = useMemo((): Column<ExplorerRow>[] => {
@@ -515,11 +556,30 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
     // targeting
     cols.push({ key: "ballots", label: `${tctx.year} ballots`, sortValue: (r) => r.ballots, render: (r) => num(r.ballots, (x) => fmtInt(x)), hideOnMobile: true });
     for (const m of TARGET_METRICS) {
+      if (m.kind === "category") {
+        cols.push({
+          key: m.key, label: m.short, borderLeft: true, align: "left",
+          sortValue: (r) => targeting.get(r.id)?.priority ?? null,
+          render: (r) => {
+            const tr = targeting.get(r.id), cat = tr?.category ? PRIORITY_CATEGORY_BY_KEY[tr.category] : null;
+            if (tr?.rank == null) return <span style={{ color: "var(--app-text-muted)" }}>—</span>;
+            return (
+              <span className="inline-flex items-center gap-1.5 whitespace-nowrap" style={{ fontWeight: m.key === targetMetric ? 700 : 400 }}>
+                <span className="inline-block tabular-nums" style={{ minWidth: `${String(targeting.size).length + 1}ch` }}>#{tr.rank}</span>
+                {cat && <span title={cat.describe} style={{ width: 8, height: 8, borderRadius: 2, background: cat.color, display: "inline-block" }} />}
+                <span style={{ fontWeight: 400, color: "var(--app-text-muted)" }}>{cat?.label}</span>
+              </span>
+            );
+          },
+        });
+        cols.push({ key: "net", label: "Net votes", sortValue: (r) => targeting.get(r.id)?.priority ?? null, render: (r) => num(targeting.get(r.id)?.priority ?? null, (x) => fmtInt(x)), hideOnMobile: true });
+        continue;
+      }
       cols.push({
-        key: m.key, label: m.short, borderLeft: m.key === "floor" || m.key === "gap" || m.key === "dropoff",
+        key: m.key, label: m.short, borderLeft: m.key === "avgR" || m.key === "gap" || m.key === "dropoff",
         sortValue: (r) => targeting.get(r.id)?.[m.key] ?? null,
         render: (r) => { const v = targeting.get(r.id)?.[m.key] ?? null; return <span style={{ fontWeight: m.key === targetMetric ? 700 : 400 }}>{num(v, m.format, m.kind === "diverging" ? mcol : undefined)}</span>; },
-        hideOnMobile: !["persuadable", "gap", targetMetric].includes(m.key),
+        hideOnMobile: !["persuadable", targetMetric].includes(m.key),
       });
     }
     return cols;
@@ -578,6 +638,12 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
 
       {/* Context pills (fixed min height so every tab's readout and map start at the same place) */}
       <div className="mt-3 flex min-h-[27px] flex-wrap items-center gap-x-4 gap-y-2">
+        {mode === "projection" && projection && (
+          <div className="flex items-center gap-1"><Label>Metric</Label>
+            <Pill active={projMetric === "margin"} onClick={() => setProjMetric("margin")} title="Color by projected percentage margin">Margin</Pill>
+            <Pill active={projMetric === "net"} onClick={() => setProjMetric("net")} title="Color by projected raw vote difference (R − D)">Net votes</Pill>
+          </div>
+        )}
         {mode === "projection" && projection && (
           <div className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}><Label>Turnout</Label> {fmtInt(projection.turnout.ballots)} ballots est.<span className="hidden md:inline"> — each precinct&apos;s average {projection.turnout.basisYears.join("/")} turnout rate on today&apos;s registration</span></div>
         )}
@@ -660,7 +726,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
         </div>
         <div className="order-1 min-w-0 lg:order-2">
           {renderer === "street" && fc ? (
-            <StreetMap fc={fc} unitOf={unitOf} colorFor={colorFor} isDimmed={isDimmed} selectedUnit={selected} onSelect={setSelected} tooltipHtml={tooltipHtml} darkMode={darkMode} styleKey={`${mapLayer}-${mode}-${year}-${office}-${compare?.year}-${compare?.office}-${demoMetric}-${targetMetric}-${level}-${subFilter}`} />
+            <StreetMap fc={fc} unitOf={unitOf} colorFor={colorFor} isDimmed={isDimmed} selectedUnit={selected} onSelect={setSelected} tooltipHtml={tooltipHtml} darkMode={darkMode} styleKey={`${mapLayer}-${mode}-${year}-${office}-${compare?.year}-${compare?.office}-${demoMetric}-${targetMetric}-${projMetric}-${level}-${subFilter}`} />
           ) : (
             <ExplorerMap fc={fc} unitOf={unitOf} colorFor={colorFor} isDimmed={isDimmed} hoveredUnit={hovered} selectedUnit={selected} onHover={setHovered} onSelect={setSelected} renderTooltip={renderTooltip} legend={legend} darkMode={darkMode} />
           )}
@@ -721,6 +787,8 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
           )}
         </div>
         <ExplorerTable
+          // remount per mode / metric so each opens on its own default sort
+          key={mode === "targeting" ? `targeting-${targetMetric}` : mode === "projection" ? `projection-${projMetric}` : mode}
           rows={tableRows}
           columns={columns}
           nameOf={nameOf}
@@ -730,7 +798,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
           selectedId={selected}
           onHover={setHovered}
           onSelect={setSelected}
-          defaultSort={mode === "targeting" ? { key: targetMetric, dir: "desc" } : mode === "projection" ? { key: "proj", dir: "asc" } : undefined}
+          defaultSort={mode === "targeting" ? { key: targetMetric, dir: "desc" } : mode === "projection" ? { key: projMetric === "net" ? "pnet" : "proj", dir: "asc" } : undefined}
         />
       </div>
     </div>

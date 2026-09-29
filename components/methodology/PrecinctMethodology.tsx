@@ -142,6 +142,8 @@ export default function PrecinctMethodology() {
         </Block>
         <Block label="Targeting metrics" meta="explorer → Targeting">
           <Defs items={[
+            { term: "Average Republican share (≈)", def: "Mean over every year on file of that year's mean two-party Republican share across its races, on today's lines, so each year counts once however many races it had." },
+            { term: "Priority (≈)", def: "Net votes available = split-ticket votes + max(0, turnout votes), where turnout votes = (latest presidential-year ballots − most recent midterm ballots) × average margin (2 × average R share − 100%). Units are ranked by it at the level shown. The category comes from the average Republican share: Base 58%+, Turnout 52–58%, Contested 48–52%, Persuasion 42–48%, Opponent base under 42%. Below 50% turnout votes are negative, so a Democratic-leaning unit's available votes are split-ticket votes only." },
             { term: "Republican floor / ceiling", def: "Lowest and highest two-party Republican share across the latest year's races in the precinct." },
             { term: "Split-ticket votes", def: "(ceiling − floor) × ballots cast." },
             { term: "Down-ballot gap", def: "State House margin − top-of-ticket margin, same year (R-positive)." },
