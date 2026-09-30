@@ -1,6 +1,7 @@
 import { electionYear } from "@/data/forecastData";
 import TurnoutPage from "@/components/turnout/TurnoutPage";
 import { firstRoundNotes, nationalRows, stateSeries } from "@/lib/turnout";
+import { impliedGenericBallot } from "@/lib/countyProjection";
 import { COMPETITIVENESS_SLOPE, DISTRICT_DROPOFF_WEIGHT, HOUSE_ONLY_TICKET_FACTOR, MIDTERM_WEIGHTS, SHRINK_VOTES, projectionNational, projectionSummary } from "@/lib/turnoutModel";
 
 export const metadata = {
@@ -29,6 +30,7 @@ export default function TurnoutAnalysisPage() {
         projection={projectionSummary()}
         projectionNational={projectionNational()}
         firstRound={firstRoundNotes()}
+        impliedBallot={impliedGenericBallot()}
         model={{ midtermWeights: MIDTERM_WEIGHTS, shrinkVotes: SHRINK_VOTES, ticketFactor: HOUSE_ONLY_TICKET_FACTOR, slope: COMPETITIVENESS_SLOPE, dropoffWeight: DISTRICT_DROPOFF_WEIGHT }}
       />
     </div>

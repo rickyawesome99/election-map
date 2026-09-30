@@ -1,10 +1,13 @@
+import Link from "next/link";
 import { governorData, governorNoElection, NoElectionEntry, electionYear, type PastResult } from "@/data/forecastData";
 import { getRatingColors, marginToRating, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import { candidatePhotos } from "@/lib/candidatePhotos";
 import { AboutRaceCard, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
-import StateCountyMap from "@/components/StateCountyMap";
+import PastElectionCountyMap from "@/components/PastElectionCountyMap";
+import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
+import ProjectedVoteSection from "@/components/ProjectedVoteSection";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
 import { calculateStateTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
@@ -179,13 +182,17 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
   const pollMargin = polling.avg?.diff ?? null;
   const projectedMargin = computeProjectedMargin(race);
   const forecast = forecastRace(race);
+  const countyProjection = projectRaceResults("governor", race.id);
   const quality = candidateQuality(race);
   const demPct = Math.round(forecast.probability * 100);
   const repPct = 100 - demPct;
   const forecastRating = marginToRating(projectedMargin);
   const { bg, text } = getRatingColors(forecastRating);
-  const demVoteShare = parseFloat(((100 - projectedMargin) / 2).toFixed(1));
-  const repVoteShare = parseFloat(((100 + projectedMargin) / 2).toFixed(1));
+  // Headline shares are the projected vote's (shares of all votes, others set aside), except in a
+  // same-party contest, where the projection makes no split between the two nominees.
+  const useProjectedShares = countyProjection != null && !countyProjection.contest.startsWith("same-party");
+  const demVoteShare = useProjectedShares ? countyProjection.shares.dem : parseFloat(((100 - projectedMargin) / 2).toFixed(1));
+  const repVoteShare = useProjectedShares ? countyProjection.shares.rep : parseFloat(((100 + projectedMargin) / 2).toFixed(1));
   const currentGovernorName = race.seatHolder ?? incumbent?.name ?? "TBD";
   const currentGovernorParty = incumbent?.party ?? race.seatParty ?? null;
   const enrichedPastResults = enrichGovResults(race.pastResults, race.id);
@@ -298,6 +305,13 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             )}
           </section>
 
+          {countyProjection && (
+            <section>
+              <LedgerSectionHead label="Projected Vote" meta={`${countyProjection.votes.toLocaleString()} estimated votes`} />
+              <ProjectedVoteSection p={countyProjection} />
+            </section>
+          )}
+
           <section>
             <LedgerSectionHead label="Fundraising" />
             <FundraisingLedgerSection
@@ -327,8 +341,22 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
           </section>
 
           <section>
-            <LedgerSectionHead label="State Map" />
-            <StateCountyMap stateAbbr={id.toUpperCase()} stateName={race.name} height={280} showLabel={false} />
+            <LedgerSectionHead label="Projected County Results" meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
+            {countyProjection ? (
+              <PastElectionCountyMap
+                stateAbbr={id.toUpperCase()}
+                stateName={race.name}
+                counties={projectedCountyMapEntries(countyProjection)}
+                demName={countyProjection.demName}
+                repName={countyProjection.repName}
+                demParty={countyProjection.demParty}
+                repParty={countyProjection.repParty}
+                height={280}
+                caption={<div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>The forecast margin ({countyProjection.margin > 0 ? countyProjection.repParty : countyProjection.demParty}+{Math.abs(countyProjection.margin).toFixed(1)}) spread over the state&apos;s counties by their lean, on the 2026 turnout estimate. <Link href="/methodology/turnout#county-results" className="underline underline-offset-2">How this is built</Link>.</div>}
+              />
+            ) : (
+              <div className="flex h-[280px] items-center justify-center rounded text-center text-xs" style={{ border: "1px dashed var(--app-border)", color: "var(--app-text-very-muted)" }}>No county projection for this race.</div>
+            )}
           </section>
 
           {polling.avg && race.candidates && (

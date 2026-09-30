@@ -21,8 +21,15 @@ const SERIES = { light: ["#1f6f9a", "#c67e3f", "#6f5aa8", "#4b8a3a", "#a5487a"],
 
 export type FirstRoundNote = { office: TurnoutOffice; state: string; year: number; seat: string; votes: number; source: string; note: string };
 
+export type ImpliedBallotProps = {
+  offices: { office: "house" | "senate" | "governor" | "overall"; races: number; votes: number; demVotes: number; repVotes: number; demPct: number; repPct: number; margin: number; twoPartyMargin: number }[];
+  house: { all: number; contestedOnly: number; contestedEqualWeight: number; contestedRaces: number; decidedRaces: number; decidedNetVotes: number };
+  polling: { gb: number; pvHat: number; eHat: number };
+};
+
 export type TurnoutPageProps = {
   states: StateSeries[];
+  impliedBallot: ImpliedBallotProps;
   national: NationalYearRow[];
   projection: ProjectedRace[];
   projectionNational: { houseVotes: number; low: number; high: number; cvap: number; rate: number; basis: { year: number; houseVotes: number; topVotes: number; cvap: number }[] };
@@ -511,6 +518,48 @@ function Projection({ states, projection, projectionNational, model }: Pick<Turn
   );
 }
 
+const fmtGb = (m: number) => (Math.abs(m) < 0.05 ? "EVEN" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
+const gbColor = (m: number) => (m > 0 ? "var(--party-rep)" : "var(--party-dem)");
+
+function ImpliedBallot({ ballot }: { ballot: ImpliedBallotProps }) {
+  const labels: Record<ImpliedBallotProps["offices"][number]["office"], string> = { house: "House", senate: "Senate", governor: "Governor", overall: "All three combined" };
+  const h = ballot.house, p = ballot.polling;
+  return (
+    <section id="implied-ballot" className="pt-8">
+      <LedgerSectionHead label="Implied generic ballot" meta="what the forecast and the turnout estimate add up to" />
+      <p className="mb-3 max-w-3xl text-sm leading-relaxed" style={MUTED}>
+        Every race&apos;s forecast margin is spread over its counties on the {PROJECTION_YEAR} turnout estimate, and the projected votes are added back up. The polling generic ballot goes in at the top of the forecast; this is what comes out the bottom, so the gap between them is what the model does to it. Overall counts a voter once per race, so a state with a Senate and a governor race weighs twice.
+      </p>
+      <div className="flex flex-col gap-6">
+        <div className="overflow-x-auto">
+          <table className="w-full text-xs" style={{ borderCollapse: "collapse" }}>
+            <thead><tr style={{ borderBottom: "1px solid var(--app-border)" }}><Th align="left">Ballot</Th><Th>Races</Th><Th>Votes</Th><Th>Dem</Th><Th>Rep</Th><Th>Margin</Th><Th title="Republican minus Democratic share of the two-party vote, the polling generic ballot's basis">Two-party</Th></tr></thead>
+            <tbody>
+              {ballot.offices.map((o) => (
+                <tr key={o.office} style={{ borderBottom: "1px solid var(--app-border)", fontWeight: o.office === "overall" ? 600 : 400 }}>
+                  <Td align="left" strong={o.office === "house"}>{labels[o.office]}</Td><Td>{o.races}</Td><Td>{fmtM(o.votes)}</Td><Td>{fmtPct(o.demPct)}</Td><Td>{fmtPct(o.repPct)}</Td>
+                  <Td><span className="font-bold" style={{ color: gbColor(o.margin) }}>{fmtGb(o.margin)}</span></Td><Td>{fmtGb(o.twoPartyMargin)}</Td>
+                </tr>
+              ))}
+              <tr style={{ borderBottom: "1px solid var(--app-border)" }}><Td align="left">Polling generic ballot (live average)</Td><Td muted>—</Td><Td muted>—</Td><Td muted>—</Td><Td muted>—</Td><Td><span className="font-bold" style={{ color: gbColor(p.gb) }}>{fmtGb(p.gb)}</span></Td><Td muted>—</Td></tr>
+              <tr style={{ borderBottom: "1px solid var(--app-border)" }}><Td align="left">Forecast&apos;s expected House vote (average + shrunk historical miss)</Td><Td muted>—</Td><Td muted>—</Td><Td muted>—</Td><Td muted>—</Td><Td><span className="font-bold" style={{ color: gbColor(p.pvHat) }}>{fmtGb(p.pvHat)}</span></Td><Td muted>—</Td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="max-w-3xl text-sm leading-relaxed" style={MUTED}>
+          <div className="pb-2 text-[10px] font-bold uppercase tracking-wider" style={{ ...MUTED, borderBottom: "1px solid var(--app-border)" }}>Why the House figure differs from the polls</div>
+          <ol className="list-decimal space-y-2 pl-5 pt-3">
+            <li><strong style={{ color: "var(--app-text-primary)" }}>The forecast does not use the poll average as is.</strong> It expects the House vote to land at <span style={{ color: gbColor(p.pvHat) }}>{fmtGb(p.pvHat)}</span>, the average pulled toward the historical polling miss, and converts that to its environment scale before it reaches any race.</li>
+            <li><strong style={{ color: "var(--app-text-primary)" }}>Decided seats.</strong> {h.decidedRaces} seats with one major party absent or two nominees of the same party are counted at 100% for the side that has them, a net {fmtGb((h.decidedNetVotes / (ballot.offices[0].votes || 1)) * 100)} of the national vote ({Math.abs(h.decidedNetVotes).toLocaleString()} votes). Across the {h.contestedRaces} contested races alone the margin is <span style={{ color: gbColor(h.contestedOnly) }}>{fmtGb(h.contestedOnly)}</span>. Where the state does not count votes for an unopposed candidate those votes will never appear in the real popular vote, which is one reason the House popular vote and the generic ballot rarely match.</li>
+            <li><strong style={{ color: "var(--app-text-primary)" }}>Turnout weighting.</strong> Weighting the contested races equally instead of by estimated votes gives <span style={{ color: gbColor(h.contestedEqualWeight) }}>{fmtGb(h.contestedEqualWeight)}</span>; the difference is where the votes are cast — a party&apos;s safest districts tend to be its lowest-turnout ones.</li>
+            <li><strong style={{ color: "var(--app-text-primary)" }}>Third parties.</strong> Margins here are points of all votes, with each county&apos;s 2024 third-party share carried over; the poll average is Democrat against Republican.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Notes({ firstRound, model }: Pick<TurnoutPageProps, "firstRound" | "model">) {
   return (
     <section id="notes" className="pt-8">
@@ -561,6 +610,7 @@ export default function TurnoutPage(props: TurnoutPageProps) {
       <StateDropoff states={states} />
       <DistrictTable states={states} />
       <Projection states={states} projection={projection} projectionNational={projectionNational} model={props.model} />
+      <ImpliedBallot ballot={props.impliedBallot} />
       <Notes firstRound={props.firstRound} model={props.model} />
     </main>
   );

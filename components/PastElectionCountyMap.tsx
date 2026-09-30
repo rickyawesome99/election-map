@@ -55,6 +55,10 @@ const STATE_PROJ: Record<string, [number, number, number]> = {
 type CountyGeometry = { rsmKey: string; id?: string | number; properties?: { name?: string } };
 type Hovered = { fips: string; name: string; result: CountyMapResult | null };
 
+function partyColor(party: string): string {
+  return party === "R" ? "var(--party-rep)" : party === "I" ? "var(--party-ind)" : "var(--party-dem)";
+}
+
 function fmtSigned(margin: number, demParty: string, repParty: string): string {
   if (Math.abs(margin) < 0.05) return "EVEN";
   const letter = margin > 0 ? repParty : demParty;
@@ -126,12 +130,12 @@ export default function PastElectionCountyMap({
 
   const detail = (c: Hovered) => c.result ? (
     <>
-      <div className="mt-1 text-[11px] font-semibold tabular-nums" style={{ color: c.result.margin > 0 ? (repParty === "D" ? "var(--party-dem)" : "var(--party-rep)") : (demParty === "R" ? "var(--party-rep)" : "var(--party-dem)") }}>
+      <div className="mt-1 text-[11px] font-semibold tabular-nums" style={{ color: partyColor(c.result.margin > 0 ? repParty : demParty) }}>
         {fmtSigned(c.result.margin, demParty, repParty)}
       </div>
       <div className="mt-0.5 text-[10px] tabular-nums" style={{ color: "var(--app-text-muted)" }}>
-        <div className="flex justify-between gap-3"><span className="truncate">{demName}</span><span>{c.result.demPct.toFixed(1)}% · {c.result.demVotes.toLocaleString()}</span></div>
-        <div className="flex justify-between gap-3"><span className="truncate">{repName}</span><span>{c.result.repPct.toFixed(1)}% · {c.result.repVotes.toLocaleString()}</span></div>
+        <div className="flex justify-between gap-3" style={{ color: partyColor(demParty) }}><span className="truncate">{demName}</span><span>{c.result.demPct.toFixed(1)}% · {c.result.demVotes.toLocaleString()}</span></div>
+        <div className="flex justify-between gap-3" style={{ color: partyColor(repParty) }}><span className="truncate">{repName}</span><span>{c.result.repPct.toFixed(1)}% · {c.result.repVotes.toLocaleString()}</span></div>
       </div>
     </>
   ) : (

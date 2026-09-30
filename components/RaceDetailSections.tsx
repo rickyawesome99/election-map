@@ -176,6 +176,12 @@ function WinProbabilitySummary({ demPct, repPct }: { demPct: number; repPct: num
 // Section header for the states-page-style layout — a bold uppercase label under a thick rule,
 // matching the "Federal Offices" / "U.S. House" section heads on the state page.
 
+
+/** A vote share to one decimal ("44.0", not "44"), except a whole 0 or 100 (an unopposed seat). */
+function fmtCandidatePct(pct: number): string {
+  return pct === 0 || pct === 100 ? String(pct) : pct.toFixed(1);
+}
+
 export function AboutRaceCard({
   title,
   description,
@@ -332,7 +338,7 @@ export function CandidatesSection({
                 {displayParty}
               </div>
               <div className={`${isCompact ? "text-2xl" : "text-6xl"} mt-auto font-bold tabular-nums leading-none`} style={{ color: accentColor }}>
-                {candidate.pct}%
+                {fmtCandidatePct(candidate.pct)}%
               </div>
             </div>
           );
@@ -641,7 +647,7 @@ export function CandidatesAndPollsCard({
                 )}
               </div>
               <div className="text-sm font-medium mb-3" style={{ color: accentColor }}>{displayParty}</div>
-              <div className="text-4xl font-bold tabular-nums leading-none" style={{ color: accentColor }}>{candidate.pct}%</div>
+              <div className="text-4xl font-bold tabular-nums leading-none" style={{ color: accentColor }}>{fmtCandidatePct(candidate.pct)}%</div>
             </div>
           );
         })}
@@ -720,7 +726,7 @@ export function CandidatesLedgerSection({
                 <div className="text-sm font-medium mt-0.5" style={{ color: accentColor }}>{displayParty}</div>
               </div>
             </div>
-            <div className="shrink-0 text-3xl font-extrabold tabular-nums" style={{ color: accentColor }}>{candidate.pct}%</div>
+            <div className="shrink-0 text-3xl font-extrabold tabular-nums" style={{ color: accentColor }}>{fmtCandidatePct(candidate.pct)}%</div>
           </div>
         );
       })}

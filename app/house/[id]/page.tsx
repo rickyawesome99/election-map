@@ -4,7 +4,9 @@ import { pviHistory } from "@/lib/pviHistory";
 import { getRatingColors, marginToRating, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import { candidatePhotos } from "@/lib/candidatePhotos";
-import DistrictMiniMap from "@/components/DistrictMiniMap";
+import HouseDistrictMapTabs from "@/components/HouseDistrictMapTabs";
+import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
+import ProjectedVoteSection from "@/components/ProjectedVoteSection";
 import DemographicsStrip from "@/components/DemographicsStrip";
 import { districtDemographics, REDRAWN_SINCE_ACS_VINTAGE, TRACT_ESTIMATED_DISTRICTS } from "@/data/demographics";
 import { AboutRaceCard, CandidatesLedgerSection, ForecastCalculationCard, FundraisingLedgerSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
@@ -125,13 +127,17 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const pollMargin = polling.avg?.diff ?? null;
   const projectedMargin = computeProjectedMargin(race);
   const forecast = forecastRace(race);
+  const countyProjection = projectRaceResults("house", race.id);
   const quality = candidateQuality(race);
   const demPct = Math.round(forecast.probability * 100);
   const repPct = 100 - demPct;
   const forecastRating = marginToRating(projectedMargin);
   const { bg, text } = getRatingColors(forecastRating);
-  const demVoteShare = parseFloat(((100 - projectedMargin) / 2).toFixed(1));
-  const repVoteShare = parseFloat(((100 + projectedMargin) / 2).toFixed(1));
+  // Headline shares are the projected vote's (shares of all votes, others set aside), except in a
+  // same-party contest, where the projection makes no split between the two nominees.
+  const useProjectedShares = countyProjection != null && !countyProjection.contest.startsWith("same-party");
+  const demVoteShare = useProjectedShares ? countyProjection.shares.dem : parseFloat(((100 - projectedMargin) / 2).toFixed(1));
+  const repVoteShare = useProjectedShares ? countyProjection.shares.rep : parseFloat(((100 + projectedMargin) / 2).toFixed(1));
   const demPhoto = race.candidates ? (candidatePhotos[race.candidates.dem.name] ?? null) : null;
   const repPhoto = race.candidates ? (candidatePhotos[race.candidates.rep.name] ?? null) : null;
   const heldLabel = currentRepParty === "R" ? "Republican-held" : currentRepParty === "D" ? "Democratic-held" : "Open Seat";
@@ -311,6 +317,13 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
             />
           </section>
 
+          {countyProjection && (
+            <section>
+              <LedgerSectionHead label="Projected Vote" meta={`${countyProjection.votes.toLocaleString()} estimated votes`} />
+              <ProjectedVoteSection p={countyProjection} />
+            </section>
+          )}
+
           <section>
             <LedgerSectionHead label="Fundraising" />
             <FundraisingLedgerSection
@@ -354,21 +367,28 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
           </section>
 
           <section>
-            <LedgerSectionHead label="District Map" />
-            <div style={{ height: 280 }}>
-              <DistrictMiniMap
-                raceId={race.id}
-                stateAbbr={stateAbbr}
-                margin={projectedMargin}
-                boundaryYears={(() => {
-                  const entries = houseDistrictInfo[race.id] ?? [];
-                  if (entries.length === 0) return [];
-                  const years = new Set(entries.map(e => e.year));
-                  years.add(2016);
-                  return [...years].sort((a, b) => b - a);
-                })()}
-              />
-            </div>
+            <LedgerSectionHead label="District Map" meta={countyProjection ? "2026 projection by county · district lines" : undefined} />
+            <HouseDistrictMapTabs
+              raceId={race.id}
+              stateAbbr={stateAbbr}
+              margin={projectedMargin}
+              boundaryYears={(() => {
+                const entries = houseDistrictInfo[race.id] ?? [];
+                if (entries.length === 0) return [];
+                const years = new Set(entries.map(e => e.year));
+                years.add(2016);
+                return [...years].sort((a, b) => b - a);
+              })()}
+              projection={countyProjection ? {
+                piecesUrl: `/house-county-pieces/${electionYear}/${stateAbbr}.json`,
+                district: districtNum === "AL" ? 1 : parseInt(districtNum, 10),
+                districtLabel: race.name,
+                counties: projectedCountyMapEntries(countyProjection),
+                demName: countyProjection.demName, repName: countyProjection.repName,
+                demParty: countyProjection.demParty, repParty: countyProjection.repParty,
+                margin: countyProjection.margin, votes: countyProjection.votes,
+              } : null}
+            />
           </section>
 
           {boundaryEntries.length > 0 && (

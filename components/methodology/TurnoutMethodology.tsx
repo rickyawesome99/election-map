@@ -5,13 +5,15 @@ import {
   projectAll, projectionNational, runModel,
 } from "@/lib/turnoutModel";
 import { firstRoundNotes } from "@/lib/turnout";
-import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, Ledger, N, P, Section, StatRow, type ConstantRow, type LedgerLine } from "./kit";
+import { COUNTY_MARGIN_CLAMP, OTHER_SHARE_CAP, impliedGenericBallot, projectRaceResults } from "@/lib/countyProjection";
+import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, Ledger, M, N, P, Section, StatRow, type ConstantRow, type LedgerLine } from "./kit";
 
 // Every exported constant of lib/turnoutModel.ts and where it is documented on this tab.
 const DOCUMENTED_IN = {
   ELECTION_YEAR: "turnout#level", BASE_PRES_YEAR: "turnout#level", MIDTERM_WEIGHTS: "turnout#level",
   HOUSE_ONLY_TICKET_FACTOR: "turnout#level", COMPETITIVENESS_SLOPE: "turnout#level", COMPETITIVENESS_CAP: "turnout#level",
   SHRINK_VOTES: "turnout#split", DISTRICT_DROPOFF_WEIGHT: "turnout#house",
+  OTHER_SHARE_CAP: "turnout#county-results", COUNTY_MARGIN_CLAMP: "turnout#county-results",
 } as const;
 void DOCUMENTED_IN;
 
@@ -25,6 +27,10 @@ export default function TurnoutMethodology() {
   const gaRace = projectAll().find((r) => r.id === "S-GA")!;
   const fulton = gaRace.counties.find((c) => c.fips === "13121")!;
   const first = firstRoundNotes();
+  const gaResult = projectRaceResults("senate", "GA")!;
+  const fultonResult = gaResult.counties.find((c) => c.fips === "13121")!;
+  const gb = impliedGenericBallot();
+  const fmtGb = (m: number) => (Math.abs(m) < 0.05 ? "EVEN" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
   const weights = Object.entries(MIDTERM_WEIGHTS).sort((a, b) => Number(b[0]) - Number(a[0]));
 
   const constants: ConstantRow[] = [
@@ -98,6 +104,25 @@ export default function TurnoutMethodology() {
         ]} />
       </Section>
 
+      <Section id="county-results" kicker="Projected results" title="County results and the implied generic ballot"
+        lede={<>The race pages&apos; county maps (<Code>lib/countyProjection.ts</Code>) spread each race&apos;s forecast margin over its counties on the turnout estimate. The race margin is the forecast&apos;s, unchanged; the county figures are how it is expected to be made up. Adding every race back up gives the national vote the forecast and the turnout estimate imply together.</>}>
+        <Formula lines={[
+          <>margin<sub>c</sub> = clamp(lean<sub>c</sub> + s, ±{COUNTY_MARGIN_CLAMP}) &nbsp;·&nbsp; s solved so that Σ<sub>c</sub> votes<sub>c</sub> · margin<sub>c</sub> / Σ<sub>c</sub> votes<sub>c</sub> = forecast margin</>,
+          <>rep<sub>c</sub> = (100 − other<sub>c</sub> + margin<sub>c</sub>) / 2 &nbsp;·&nbsp; dem<sub>c</sub> = (100 − other<sub>c</sub> − margin<sub>c</sub>) / 2</>,
+        ]} note={<>lean<sub>c</sub> is the county&apos;s TPL (its neutral-environment lean; the county&apos;s 2024 presidential margin where the county model has nothing to rest on); other<sub>c</sub> its 2024 third-party share, capped at {OTHER_SHARE_CAP}%. House counties are the district&apos;s pieces; a piece of a split county adds its 2024 deviation from the whole county (the piece&apos;s House margin minus the county&apos;s, same race, from the district-by-county results) where the lines are unchanged and every piece of the county was contested, so a county cut between a suburban and a rural district leans differently on each side. Redrawn states&apos; pieces keep the county&apos;s lean. A decided race — one major party absent, or two nominees of the same party — is painted 100% for the side that has it rather than solved.</>} />
+        <Block label="Worked example · Fulton County in the Georgia Senate race">
+          <Ledger lines={[
+            { label: "Fulton County TPL", note: fultonResult.leanBasis === "county-tpl" ? "neutral-environment lean" : "2024 presidential margin", value: <M v={fultonResult.lean} /> },
+            { op: "+", label: "Shift shared by every Georgia county", note: `solved for the forecast margin ${fmtGb(gaResult.margin)}`, value: <M v={gaResult.shift} /> },
+            { op: "=", label: "Fulton County projected margin", note: `${fultonResult.demPct.toFixed(1)}% – ${fultonResult.repPct.toFixed(1)}% on ${fultonResult.votes.toLocaleString()} estimated votes`, value: <M v={fultonResult.margin} />, total: true },
+          ]} />
+        </Block>
+        <Block label="Implied generic ballot" meta="every race's projected votes added up">
+          <DataTable head={["Ballot", "Races", "Votes", "Dem", "Rep", "Margin", "Two-party"]} rows={gb.offices.map((o) => [o.office === "overall" ? "All three combined" : o.office[0].toUpperCase() + o.office.slice(1), o.races, o.votes.toLocaleString(), `${o.demPct}%`, `${o.repPct}%`, fmtGb(o.margin), fmtGb(o.twoPartyMargin)])}
+            caption={<>Polling generic ballot {fmtGb(gb.polling.gb)}; the forecast&apos;s expected House vote {fmtGb(gb.polling.pvHat)}. House: contested races only {fmtGb(gb.house.contestedOnly)}, contested races weighted equally {fmtGb(gb.house.contestedEqualWeight)}; {gb.house.decidedRaces} decided seats add a net {gb.house.decidedNetVotes.toLocaleString()} votes.</>} />
+        </Block>
+      </Section>
+
       <Section id="backtest" kicker="Backtest" title={`${B.target} predicted from ${B.basis}`}
         lede={<>The same code run for {B.target} with {B.basis} as the only basis midterm and the {B.target - 2} presidential vote as the anchor (<Code>scripts/turnoutBacktest.ts</Code>). One basis midterm is the only honest test the data allow, so the state-level bias is largely the {B.basis}→{B.target} national swing; the county-share and district errors are what the machinery can be judged on. The competitiveness term uses {B.target}&apos;s actual margins here.</>}>
         <DataTable head={["", "n", "Mean abs. error", "Bias"]} rows={[
@@ -125,6 +150,8 @@ export default function TurnoutMethodology() {
             { path: "data-entry/county_district_shares_2026.csv", role: `county → ${ELECTION_YEAR} district shares (2024 pieces or tract CVAP)` },
             { path: "lib/turnout.ts", role: "the data hub: statewide, by-district and county turnout entries and slices" },
             { path: "lib/turnoutModel.ts", role: `the ${ELECTION_YEAR} estimate, its constants and backtest` },
+            { path: "lib/countyProjection.ts", role: "projected county results per race and the implied generic ballot" },
+            { path: "public/house-county-pieces/2026/", role: `county × district pieces on the ${ELECTION_YEAR} lines (scripts/build-house-county-pieces.py 2026)` },
             { path: "data/turnoutCalibration.ts", role: "the backtest tables above (generated)" },
             { path: "app/api/turnout/…", role: "static JSON slices per (level, year), per state's county splits, and all counties' estimates" },
           ]}

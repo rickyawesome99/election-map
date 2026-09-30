@@ -42,3 +42,26 @@ test("turnout methodology tab renders its backtest", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "2022 predicted from 2018" })).toBeVisible({ timeout: 20_000 });
   await expect(page.getByText("SHRINK_VOTES grid")).toBeVisible();
 });
+
+test("turnout page shows the implied generic ballot", async ({ page }) => {
+  await page.goto("/analysis/turnout");
+  const section = page.locator("section#implied-ballot");
+  await expect(section.getByRole("heading", { name: "Implied generic ballot" })).toBeVisible({ timeout: 20_000 });
+  await expect(section.getByText("All three combined")).toBeVisible();
+  await expect(section.getByText(/^(D|R)\+\d+\.\d$|^EVEN$/).first()).toBeVisible();
+});
+
+test("race pages show the projected county map", async ({ page }) => {
+  await page.goto("/senate/ga");
+  const section = page.locator("section", { has: page.getByRole("heading", { name: "Projected County Results" }) });
+  await expect(section).toBeVisible({ timeout: 20_000 });
+  await expect(section.getByText(/estimated votes/)).toBeVisible();
+  await expect(section.getByText(/How this is built/)).toBeVisible();
+
+  await page.goto("/house/oh-12");
+  const tabs = page.getByRole("tablist", { name: "District map view" });
+  await expect(tabs.getByRole("tab", { name: "2026 projection" })).toHaveAttribute("aria-selected", "true", { timeout: 20_000 });
+  await expect(page.getByText(/Projected 2026 result by county/)).toBeVisible();
+  await tabs.getByRole("tab", { name: "District lines" }).click();
+  await expect(page.getByText(/Projected 2026 result by county/)).toHaveCount(0);
+});

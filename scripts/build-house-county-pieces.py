@@ -24,11 +24,18 @@ Slivers from the two files' independent simplification are dropped (< 1 km² AND
 county). A county's pieces are whatever survives; the results table lists every district row
 regardless, so a dropped sliver only loses map paint, never data.
 
+2026 (the map the /house/[id] pages' projected-results tab draws on): the Census has no file
+for state-drawn mid-decade maps, so the states that redrew for 2026 (houseDistrictInfo entries
+for that year — the same test scripts/build-cd-demographics-2026-lines.py uses) take their
+districts from the site's own boundary file, public/state-congressional-districts-2026/{ST}.json;
+every other state's 2026 pieces are its 2024 pieces, copied.
+
 Run from project root (needs geopandas + mapshaper; a few minutes):
   python3 scripts/build-house-county-pieces.py            # all years
   python3 scripts/build-house-county-pieces.py 2022 2024
+  python3 scripts/build-house-county-pieces.py 2026
 """
-import json, os, subprocess, sys, tempfile, urllib.request, warnings
+import importlib.util, json, os, re, shutil, subprocess, sys, tempfile, urllib.request, warnings
 import geopandas as gpd
 import pandas as pd
 
@@ -74,6 +81,30 @@ def load_counties() -> gpd.GeoDataFrame:
     g = g[g.GEOID.str[:2].isin(STATE_FIPS)].copy()
     g["geometry"] = g.geometry.buffer(0)
     return g
+
+
+def redrawn_states_2026() -> set:
+    """State FIPS codes with a 2026 houseDistrictInfo entry (parsed from data/forecastData.ts)."""
+    src = open(os.path.join(ROOT, "data/forecastData.ts")).read()
+    info = json.loads(re.search(r"export const houseDistrictInfo[^=]*= (\{.*?\n\});", src, re.S).group(1))
+    return {rid[:2] for rid, entries in info.items() for e in entries if e.get("year") == 2026}
+
+
+def load_site_districts_2026(states: set, tmpdir: str) -> gpd.GeoDataFrame:
+    """The site's 2026 boundary files for the redrawn states, as a district frame like load_districts'."""
+    frames = []
+    for fips in sorted(states):
+        abbr = STATE_FIPS[fips]
+        src = os.path.join(ROOT, f"public/state-congressional-districts-2026/{abbr}.json")
+        out = os.path.join(tmpdir, f"cd2026_{abbr}.geojson")
+        subprocess.run(["mapshaper", src, "-o", out, "format=geojson", "force"], check=True, capture_output=True)
+        g = gpd.read_file(out)
+        g["STATEFP"] = g["GEOID"].astype(str).str[:2]
+        g["d"] = g["GEOID"].astype(str).str[2:].apply(lambda c: 1 if c == "00" else int(c))
+        g = g.set_crs("EPSG:4326", allow_override=True)
+        g["geometry"] = g.geometry.buffer(0)
+        frames.append(g[["STATEFP", "d", "geometry"]])
+    return gpd.GeoDataFrame(pd.concat(frames, ignore_index=True), crs="EPSG:4326")
 
 
 def load_districts(year: int) -> gpd.GeoDataFrame:
@@ -122,6 +153,21 @@ def main():
     years = [int(a) for a in sys.argv[1:]] or sorted(CD_ZIP)
     counties = load_counties()
     for year in years:
+        if year == 2026:
+            redrawn = redrawn_states_2026()
+            print("[2026] redrawn:", " ".join(sorted(STATE_FIPS[f] for f in redrawn)), flush=True)
+            out_dir = os.path.join(OUT_ROOT, "2026")
+            os.makedirs(out_dir, exist_ok=True)
+            for fips, abbr in sorted(STATE_FIPS.items(), key=lambda kv: kv[1]):
+                if fips not in redrawn:
+                    shutil.copyfile(os.path.join(OUT_ROOT, "2024", f"{abbr}.json"), os.path.join(out_dir, f"{abbr}.json"))
+            with tempfile.TemporaryDirectory() as tmpdir:
+                districts = load_site_districts_2026(redrawn, tmpdir)
+                for fips in sorted(redrawn):
+                    abbr = STATE_FIPS[fips]
+                    info = build_state(2026, abbr, counties[counties.GEOID.str.startswith(fips)], districts[districts.STATEFP == fips], tmpdir)
+                    print(f"[2026] {abbr}: {info['pieces']} pieces, {info['dropped']} slivers dropped, {info.get('bytes', 0) // 1024} KB", flush=True)
+            continue
         districts = load_districts(year)
         total_bytes = 0
         with tempfile.TemporaryDirectory() as tmpdir:

@@ -9,6 +9,7 @@ import type { Feature, Geometry, MultiLineString } from "geojson";
 import { getRaceColor } from "@/lib/colorScale";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { useStaticJson } from "@/lib/useStaticJson";
+import { usePanZoom } from "@/lib/usePanZoom";
 import type { CountyMapEntry, CountyMapResult } from "@/components/PastElectionCountyMap";
 
 // County map of ONE House district on the map in force that year. Counties the district shares
@@ -22,6 +23,13 @@ type PieceProps = { c: string; d: number; n: string };
 type PiecesTopology = Topology<{ pieces: GeometryCollection<PieceProps>; districts: GeometryCollection<{ d: number }> }>;
 type PieceFeature = Feature<Geometry, PieceProps>;
 type Hovered = { fips: string; name: string; inDistrict: boolean; otherDistrict: number | null; result: CountyMapResult | null };
+
+const zoomBtn = "flex h-6 w-6 items-center justify-center rounded-md text-sm font-semibold leading-none";
+const zoomBtnStyle = { background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)", opacity: 0.92 };
+
+function partyColor(party: string): string {
+  return party === "R" ? "var(--party-rep)" : party === "I" ? "var(--party-ind)" : "var(--party-dem)";
+}
 
 function fmtSigned(margin: number, demParty: string, repParty: string): string {
   if (Math.abs(margin) < 0.05) return "EVEN";
@@ -87,7 +95,9 @@ export default function HouseDistrictCountyMap({
     const context = pieces.filter((p) => p.properties.d !== district && touched.has(p.properties.c));
     const shown = [...mine, ...context];
     if (shown.length === 0) return null;
-    const projection = geoMercator().fitExtent([[6, 6], [size.width - 6, size.height - 6]], { type: "FeatureCollection", features: shown });
+    // Alaska's Aleutians cross the antimeridian: unrotated, the fit spans the whole globe and the
+    // state shrinks into one corner. Centre the projection on the state instead.
+    const projection = geoMercator().rotate(stateAbbr === "AK" ? [154, 0] : [0, 0]).fitExtent([[6, 6], [size.width - 6, size.height - 6]], { type: "FeatureCollection", features: shown });
     const path = geoPath(projection);
     // County outer borders: edges between pieces of different counties, or on the outside.
     const countyBorders = mesh(topo, topo.objects.pieces, (a, b) => {
@@ -100,8 +110,9 @@ export default function HouseDistrictCountyMap({
       return da === district || db === district;
     }) as MultiLineString;
     return { mine, context, path, countyBorders, districtOutline };
-  }, [topo, district, size]);
+  }, [topo, district, size, stateAbbr]);
 
+  const zoom = usePanZoom(size.width, size.height);
   const [hovered, setHovered] = useState<Hovered | null>(null);
   const [selected, setSelected] = useState<Hovered | null>(null);
   const { onMouseMove, tooltipRef } = useMapTooltip(12, 8);
@@ -122,10 +133,10 @@ export default function HouseDistrictCountyMap({
     const r = h.result;
     return (
       <>
-        <div className="mt-1 text-[11px] font-semibold tabular-nums" style={{ color: r.margin > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>{fmtSigned(r.margin, demParty, repParty)}</div>
+        <div className="mt-1 text-[11px] font-semibold tabular-nums" style={{ color: partyColor(r.margin > 0 ? repParty : demParty) }}>{fmtSigned(r.margin, demParty, repParty)}</div>
         <div className="mt-0.5 text-[10px] tabular-nums" style={{ color: "var(--app-text-muted)" }}>
-          <div className="flex justify-between gap-3"><span className="truncate">{demName}</span><span>{r.demPct.toFixed(1)}% · {r.demVotes.toLocaleString()}</span></div>
-          <div className="flex justify-between gap-3"><span className="truncate">{repName}</span><span>{r.repPct.toFixed(1)}% · {r.repVotes.toLocaleString()}</span></div>
+          <div className="flex justify-between gap-3" style={{ color: partyColor(demParty) }}><span className="truncate">{demName}</span><span>{r.demPct.toFixed(1)}% · {r.demVotes.toLocaleString()}</span></div>
+          <div className="flex justify-between gap-3" style={{ color: partyColor(repParty) }}><span className="truncate">{repName}</span><span>{r.repPct.toFixed(1)}% · {r.repVotes.toLocaleString()}</span></div>
         </div>
       </>
     );
@@ -145,13 +156,14 @@ export default function HouseDistrictCountyMap({
         )}
         {failed && <div className="absolute inset-0 flex items-center justify-center text-xs" style={{ color: "var(--app-text-very-muted)" }}>Map unavailable.</div>}
         {scene && (
-          <svg width={size.width} height={size.height} viewBox={`0 0 ${size.width} ${size.height}`} role="img" aria-label={`${districtLabel} results by county`} style={{ display: "block" }}>
+          <svg width={size.width} height={size.height} viewBox={`0 0 ${size.width} ${size.height}`} role="img" aria-label={`${districtLabel} results by county`} {...zoom.svgProps}>
             <defs>
               <pattern id={patternId} width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
                 <rect width="6" height="6" fill="var(--map-unfilled)" />
                 <line x1="0" y1="0" x2="0" y2="6" stroke="var(--app-text-very-muted)" strokeWidth="1.5" />
               </pattern>
             </defs>
+            <g transform={zoom.transform}>
             {scene.context.map((p) => (
               <path key={`ctx-${p.properties.c}-${p.properties.d}`} d={scene.path(p) ?? undefined} fill={`url(#${patternId})`} stroke="none"
                 onMouseEnter={() => setHovered(describe(p))} onMouseLeave={() => setHovered(null)}
@@ -161,15 +173,25 @@ export default function HouseDistrictCountyMap({
               const h = describe(p);
               const isSel = selected?.fips === p.properties.c && selected.inDistrict;
               return (
-                <path key={`in-${p.properties.c}`} d={scene.path(p) ?? undefined} fill={fillFor(h.result)} stroke={isSel ? "var(--app-text-primary)" : "none"} strokeWidth={isSel ? 1.5 : 0}
+                <path key={`in-${p.properties.c}`} d={scene.path(p) ?? undefined} fill={fillFor(h.result)} stroke={isSel ? "var(--app-text-primary)" : "none"} strokeWidth={isSel ? 1.5 : 0} vectorEffect="non-scaling-stroke"
                   style={{ cursor: "pointer" }}
                   onMouseEnter={() => setHovered(h)} onMouseLeave={() => setHovered(null)}
                   onClick={() => setSelected(isSel ? null : h)} />
               );
             })}
-            <path d={scene.path(scene.countyBorders) ?? undefined} fill="none" stroke="var(--app-bg)" strokeWidth={0.8} pointerEvents="none" />
-            <path d={scene.path(scene.districtOutline) ?? undefined} fill="none" stroke="var(--app-text-primary)" strokeWidth={1.4} strokeLinejoin="round" pointerEvents="none" />
+            <path d={scene.path(scene.countyBorders) ?? undefined} fill="none" stroke="var(--app-bg)" strokeWidth={0.8} pointerEvents="none" vectorEffect="non-scaling-stroke" />
+            <path d={scene.path(scene.districtOutline) ?? undefined} fill="none" stroke="var(--app-text-primary)" strokeWidth={1.4} strokeLinejoin="round" pointerEvents="none" vectorEffect="non-scaling-stroke" />
+            </g>
           </svg>
+        )}
+        {scene && (
+          <div className="absolute top-2 right-2 z-10 flex flex-col gap-1">
+            <button onClick={() => zoom.zoomBy(1.6)} aria-label="Zoom in" className={zoomBtn} style={zoomBtnStyle}>+</button>
+            <button onClick={() => zoom.zoomBy(1 / 1.6)} aria-label="Zoom out" className={zoomBtn} style={zoomBtnStyle}>−</button>
+            {zoom.zoomed && (
+              <button onClick={zoom.reset} className="rounded-md px-1 py-0.5 text-[10px] font-semibold" style={zoomBtnStyle}>Reset</button>
+            )}
+          </div>
         )}
       </div>
       {caption}
