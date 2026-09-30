@@ -20,16 +20,14 @@ import StatesSelectedCard from "./StatesSelectedCard";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
-import type { TplModelPageProps } from "./TplModelPage";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 import { NationalLandMask, NationalLandMaskDefinition } from "./StateLandMask";
 
 // Each tab body is its own chunk, loaded only when that tab is the active one — the county
-// map, the TPL model page and the district finder are the three heaviest pieces of client
+// map and the district finder are the heaviest pieces of client
 // code on the site and none of them is needed on the forecast tabs.
 const tabLoading = () => <div className="py-10 text-center text-xs" style={{ color: "var(--app-text-muted)" }}>Loading…</div>;
 const NationalCountyMap = dynamic(() => import("./NationalCountyMap"), { loading: tabLoading });
-const TplModelPage = dynamic(() => import("./TplModelPage"), { loading: tabLoading });
 const DistrictFinder = dynamic(() => import("./DistrictFinder"), { loading: tabLoading });
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
@@ -105,14 +103,12 @@ function persistRaceType(type: RaceType) {
   document.cookie = `raceType=${type}; path=/; max-age=31536000; SameSite=Lax`;
 }
 
-type TopLevelTab = "forecast" | "states" | "historical" | "model" | "district-finder";
+type TopLevelTab = "forecast" | "states" | "historical" | "district-finder";
 
-type ModelSubTab = "state" | "district" | "table" | "districtTable" | "war";
 
 export type ForecastMapProps = {
   activeTab: TopLevelTab;
   raceType?: RaceType;
-  modelSubTab?: ModelSubTab;
   /** Forecast tab: this chamber's races (lib/forecast.forecastSummariesFor) and the states with no
    * race this cycle, both computed by the server page. */
   races?: ForecastSummary[];
@@ -120,8 +116,6 @@ export type ForecastMapProps = {
   genericBallotDiff?: number;
   /** States tab (lib/stateRows.buildStateRows). */
   stateRows?: StateRow[];
-  /** Model tab (lib/modelSlices). */
-  model?: TplModelPageProps["data"];
 };
 
 const NO_RACES: ForecastSummary[] = [];
@@ -240,8 +234,8 @@ const HouseStateOutlines = memo(function HouseStateOutlines({ t }: { t: Theme })
 });
 
 export default function ForecastMap({
-  activeTab, raceType = "senate", modelSubTab,
-  races = NO_RACES, noElection = NO_ENTRIES, genericBallotDiff = 0, stateRows = NO_ROWS, model,
+  activeTab, raceType = "senate",
+  races = NO_RACES, noElection = NO_ENTRIES, genericBallotDiff = 0, stateRows = NO_ROWS,
 }: ForecastMapProps) {
   const router = useRouter();
   const [selected, setSelected] = useState<ForecastSummary | null>(null);
@@ -851,10 +845,9 @@ export default function ForecastMap({
                 <ForecastRaceCards races={races} basePath={`/${raceType}`} showSpecialBadge={raceType === "senate"} />
               </div>
             )}
-            {activeTab === "model" && model && <TplModelPage initialSubTab={modelSubTab} data={model} />}
             {activeTab === "district-finder" && <DistrictFinder />}
           </>
-        ), [activeTab, raceType, modelSubTab, races, model])}
+        ), [activeTab, raceType, races])}
 
       </div>
     </div>

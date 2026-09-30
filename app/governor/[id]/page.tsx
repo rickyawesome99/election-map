@@ -373,7 +373,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               tpl={stateTpl}
               genericBallot={gb}
               tplLabel="State TPL"
-              tplHref={`/model/state?modelState=${encodeURIComponent(id.toUpperCase())}`}
+              tplHref={`/model/states/${id.toLowerCase()}`}
               incumbentPts={incumbentPts}
               appointedIncumbent={incumbent?.appointed ? incumbentParty : null}
               fundraisingPts={fundraising ? fundraisingPts : null}

@@ -412,7 +412,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               tpl={districtTpl}
               genericBallot={gb}
               tplLabel="District TPL"
-              tplHref={`/model/district?modelDistrict=${encodeURIComponent(districtTplId)}`}
+              tplHref={`/model/states/${stateAbbr.toLowerCase()}#${race.name.toLowerCase()}`}
               incumbentPts={incumbentPts}
               fundraisingPts={fundraising ? fundraisingPts : null}
               moneyTerm={moneyTerm}

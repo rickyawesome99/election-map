@@ -16,13 +16,15 @@ export default async function Home({
   if (tab === "states") redirect("/analysis/delegation");
   if (tab === "counties") redirect("/historical");
   if (tab === "district-finder") redirect("/district-finder");
-  if (tab === "model" || tab === "state" || tab === "district" || tab === "table" || tab === "districtTable") {
-    const path = tab === "model" ? "/model" : `/model/${tab}`;
+  if (tab === "model" || tab === "table") redirect("/model");
+  if (tab === "districtTable") redirect("/model#districts");
+  if (tab === "state" || tab === "district") {
+    // The old sub-tab shims (app/model/[legacy]) resolve the state or district id to its new page.
     const qs = new URLSearchParams();
     if (params.modelState) qs.set("modelState", params.modelState);
     if (params.modelDistrict) qs.set("modelDistrict", params.modelDistrict);
     const query = qs.toString();
-    redirect(query ? `${path}?${query}` : path);
+    redirect(query ? `/model/${tab}?${query}` : "/model");
   }
 
   redirect("/overview");

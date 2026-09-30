@@ -92,7 +92,7 @@ export function StateTplMethodology() {
   return (
     <>
       <Section id="overview" kicker="State TPL · True Partisan Lean" title="A state's lean in a neutral year"
-        lede={<>State TPL is the margin a generic Republican against a generic Democrat would produce in a neutral national year. It is built from every eligible race from 2016 to 2025 — President, Senate, Governor, House and State Legislature, odd years included — by stripping three additive distortions from each and averaging across offices and years. It is the lean the {link("/methodology/forecast", "Senate and Governor forecasts")} start from. Live ledgers: {link("/model/state", "TPL tab")}.</>}>
+        lede={<>State TPL is the margin a generic Republican against a generic Democrat would produce in a neutral national year. It is built from every eligible race from 2016 to 2025 — President, Senate, Governor, House and State Legislature, odd years included — by stripping three additive distortions from each and averaging across offices and years. It is the lean the {link("/methodology/forecast", "Senate and Governor forecasts")} start from. Live ledgers: {link("/model", "TPL tab")}.</>}>
         <Formula lines={[
           "margin(state, race, year) = lean + β*·E(year) + incumbency + fundraising + residual",
           "NM   = Adjusted margin + incumbency strip + fundraising strip − β*·E(year)      each strip additive, applied once",
@@ -176,7 +176,7 @@ export function StateTplMethodology() {
       </Section>
 
       <Section id="example" kicker="Worked example · live" title={`${oh.name}`}
-        lede={<>One race taken through the strips, then the state&rsquo;s year aggregation. Full ledger: {link("/model/state?modelState=OH", "Ohio State TPL")}.</>}>
+        lede={<>One race taken through the strips, then the state&rsquo;s year aggregation. Full ledger: {link("/model/states/oh", "Ohio State TPL")}.</>}>
         <Block label={`${exRace.year} ${exRace.race}`} meta={`${exRace.repCandidate ?? ""} (R) vs ${exRace.demCandidate ?? ""} (D)`}>
           <Ledger lines={raceLedger(exRace)} />
         </Block>
@@ -292,7 +292,7 @@ export function DistrictTplMethodology() {
 
       {exRace && (
         <Section id="example" kicker="Worked example · live" title={exName}
-          lede={<>The most heavily relocated seat on the map. Full ledger: {link("/model/district", "District TPL")}.</>}>
+          lede={<>The most heavily relocated seat on the map. Full ledger: {link("/model#districts", "District TPL")}.</>}>
           <Block label={`${exRace.year} House`} meta={`${exRace.repCandidate ?? ""} (R) vs ${exRace.demCandidate ?? ""} (D)`}><Ledger lines={raceLedger(exRace, { bs: true })} /></Block>
           <Block label="Year aggregation"><YearTable aggs={nc14.calc.yearAggregations} /></Block>
           <Ledger lines={[{ label: "District TPL", value: <M v={nc14.calc.tpl} />, total: true }, { op: "=", label: "Centered", note: "− median district", value: <M v={nc14.calc.tpl - median} />, total: true }]} />

@@ -1521,6 +1521,10 @@ export interface WarRow {
    *  confidence multiplier. Discounts it in the ridge exactly as it is discounted in TPL. */
   boundaryWeight?: number;
   note: string;
+  /** The seat id the past-election and seat pages key on (senate "oh2", governor "oh", house "oh-09",
+   *  president: the state id "oh") — so the model pages can link a row to its results without
+   *  guessing which Senate class a race belongs to. */
+  seatId?: string;
 }
 
 // Ridge prior on candidate effects. A race yields one residual r = a_R − a_D + ε; the penalty
@@ -1932,7 +1936,8 @@ export function computeWarTable(): WarRow[] {
     const replacementR = expected - (openBase + ffOpenPts); // R-positive
     const incumbentSlot = p.r.incumbent === "R" ? "R" : p.r.incumbent === "D" ? "D" : null;
     // residual/effect/war are filled by attributeWar() once every race is collected.
-    const base = { office: p.office, race: p.raceLabel, state: p.state, year: p.r.year, actual: p.r.rawMargin!, expected, moneyGapPct: p.gap, structuralGapPct, ffStructuralPts, residual: 0, effect: 0, effectN: 0, effectW: 0, opponentEffect: 0, replacementPts: 0, expectedVsOpponent: 0, war: 0, boundaryWeight: p.boundaryWeight ?? 1, note: p.note };
+    const seatId = p.office === "H" ? p.raceLabel.replace(/^House /, "").toLowerCase() : p.r.detailHref?.split("/").pop();
+    const base = { office: p.office, race: p.raceLabel, state: p.state, year: p.r.year, seatId, actual: p.r.rawMargin!, expected, moneyGapPct: p.gap, structuralGapPct, ffStructuralPts, residual: 0, effect: 0, effectN: 0, effectW: 0, opponentEffect: 0, replacementPts: 0, expectedVsOpponent: 0, war: 0, boundaryWeight: p.boundaryWeight ?? 1, note: p.note };
     if (p.r.demCandidate) out.push({ candidate: p.r.demCandidate, party: p.r.demParty ?? "D", ...base, replacementPts: incumbentSlot === "D" ? -replacementR : 0 });
     if (p.r.repCandidate) out.push({ candidate: p.r.repCandidate, party: p.r.repParty ?? "R", ...base, replacementPts: incumbentSlot === "R" ? replacementR : 0 });
   }

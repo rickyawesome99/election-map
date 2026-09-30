@@ -464,7 +464,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
               tpl={stateTpl}
               genericBallot={gb}
               tplLabel="State TPL"
-              tplHref={`/model/state?modelState=${encodeURIComponent(abbr)}`}
+              tplHref={`/model/states/${abbr.toLowerCase()}`}
               incumbentPts={incumbentPts}
               appointedIncumbent={incumbent?.appointed ? incumbentParty : null}
               fundraisingPts={fundraising ? fundraisingPts : null}

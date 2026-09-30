@@ -27,7 +27,7 @@ export default function WarMethodology() {
   return (
     <>
       <Section id="overview" kicker="WAR · Wins Above Replacement" title="How much better than a generic nominee"
-        lede={<>WAR is how far a candidate&rsquo;s actual margin ran ahead of what a replacement-level nominee of their party — a generic <em>non-incumbent</em> — would have managed against the same opponent in the same seat and year, in points of margin. It is built from three numbers, each answering a different question. Table: {link("/model/war", "TPL → WAR")}.</>}>
+        lede={<>WAR is how far a candidate&rsquo;s actual margin ran ahead of what a replacement-level nominee of their party — a generic <em>non-incumbent</em> — would have managed against the same opponent in the same seat and year, in points of margin. It is built from three numbers, each answering a different question. Table: {link("/model/candidates", "TPL → Candidates")}.</>}>
         <Defs items={[
           { term: "Expected Result", def: <><strong>Generic vs generic.</strong> The margin this seat would produce in that year with two replacement-level nominees: the seat&rsquo;s lean in that year, the national environment, incumbency, and the money gap a generic pair in that situation would have.</> },
           { term: "Vs. Opponent", def: <><strong>Generic non-incumbent vs this specific opponent.</strong> The Expected Result moved by the opponent&rsquo;s own candidate effect — facing a strong opponent lowers what a generic nominee would be expected to do — and, when the candidate is the incumbent, with their own incumbency taken out: a replacement-level nominee never holds the seat.</> },
