@@ -16,6 +16,7 @@ function normalize(value: string): string {
     .replace(/\b(\d+)(st|nd|rd|th)\b/g, "$1")
     .replace(/\b(senator|sen)\b/g, "senate")
     .replace(/\bgov\b/g, "governor")
+    .replace(/\b(presidential|pres|potus)\b/g, "president")
     .replace(/\b(congress|congressional|representative)\b/g, "house")
     .trim();
 }

@@ -1,15 +1,16 @@
 "use client";
 
 import Link from "next/link";
+import { ArrowOut } from "./ui";
 import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
 
-// The TPL tab's own row under the site nav: Map · States · Candidates, with a slot on the right
-// for the page's picker and a link to the model's methodology.
+// The TPL tab's own row under the site nav: Map · Candidates, with a slot on the right for the
+// page's picker and a link to the model's methodology. State pages sit under Map, whose table
+// is their index.
 
 const ITEMS = [
-  { key: "map", label: "Map", href: "/model", active: (p: string) => p === "/model" },
-  { key: "states", label: "States", href: "/model/states", active: (p: string) => p.startsWith("/model/states") },
+  { key: "map", label: "Map", href: "/model", active: (p: string) => p.startsWith("/model") && !p.startsWith("/model/candidates") },
   { key: "candidates", label: "Candidates", href: "/model/candidates", active: (p: string) => p.startsWith("/model/candidates") },
 ];
 
@@ -28,7 +29,7 @@ export function TplSubNav({ right, methodologyHref = "/methodology/state-tpl", m
       })}
       <div className="ml-auto flex shrink-0 items-center gap-2 pl-3 text-xs" style={{ color: "var(--app-text-muted)" }}>
         {right}
-        <Link href={methodologyHref} className="hidden whitespace-nowrap hover:underline sm:inline">{methodologyLabel} ↗</Link>
+        <Link href={methodologyHref} className="hidden whitespace-nowrap hover:underline sm:inline">{methodologyLabel} <ArrowOut /></Link>
       </div>
     </div>
   );

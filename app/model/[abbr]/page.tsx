@@ -3,9 +3,10 @@ import { TplStatePage } from "@/components/tpl/TplStatePage";
 import { fmtMargin } from "@/lib/colorScale";
 import { districtModelSlice, modelStateParams, stateModelSlice } from "@/lib/modelSlices";
 
-// One prerendered page per state (/model/states/oh). The state's full pipeline and its first
+// One prerendered page per state (/model/oh). The state's full pipeline and its first
 // district's calculation are rendered in; the other districts are fetched from
-// /api/model/district/[id] as the reader picks them.
+// /api/model/district/[id] as the reader picks them. Only the 50 state slugs resolve here;
+// older URL shapes are forwarded by next.config.ts and the state/ and district/ shims.
 export const dynamicParams = false;
 
 export function generateStaticParams() {

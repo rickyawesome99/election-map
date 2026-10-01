@@ -1,13 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
-import { NationalLandMask, NationalLandMaskDefinition } from "@/components/StateLandMask";
 import { fmt1, marginColor } from "./format";
 
 // The hub's choropleth: states or 2026 House districts, filled by any R-positive value (the
@@ -15,7 +14,33 @@ import { fmt1, marginColor } from "./format";
 // to the place's page; on phones the panel sits under the map instead of over it.
 
 const STATES_GEO_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
-const DISTRICTS_GEO_URL = "/congressional-districts-2026.json";
+// congressional-districts-2026.json pre-clipped to us-land.json (Great Lakes and coastal water
+// removed) and 20%-simplified, so the map needs no runtime SVG mask and a quarter of the path
+// data — both made the district view lag on phones. Regenerate with:
+//   npx mapshaper public/congressional-districts-2026.json -filter 'CD119FP != "ZZ"' -clip public/us-land.json \
+//     -simplify 20% keep-shapes -o public/congressional-districts-2026-lite.json format=topojson quantization=1e5 force
+const DISTRICTS_GEO_URL = "/congressional-districts-2026-lite.json";
+
+// Each topology is fetched and parsed once per page load and handed to <Geographies> as an
+// object, so toggling the geography never re-downloads or re-parses it.
+const topoCache = new Map<string, Promise<object | null>>();
+function loadTopo(url: string): Promise<object | null> {
+  let p = topoCache.get(url);
+  if (!p) {
+    p = fetch(url).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+    topoCache.set(url, p);
+  }
+  return p;
+}
+function useTopo(url: string): object | null {
+  const [topo, setTopo] = useState<object | null>(null);
+  useEffect(() => {
+    let live = true;
+    loadTopo(url).then((t) => { if (live) setTopo(t); });
+    return () => { live = false; };
+  }, [url]);
+  return topo;
+}
 
 export type MapRow = { key: string; name: string; value: number; href: string };
 
@@ -58,63 +83,88 @@ export function TplMap({ mode, rows, valueLabel, linkLabel }: { mode: "states" |
   const touchStartRef  = useRef<{ x: number; y: number } | null>(null);
   const ignoreClickRef = useRef(0);
 
-  const byKey = new Map(rows.map((r) => [r.key, r]));
-  const rowOf = (geo: GeoFeature): MapRow | undefined =>
-    mode === "states" ? byKey.get(geo.properties?.name ?? "") : byKey.get(geoidToDistrictKey(geo.properties?.GEOID ?? ""));
+  // Both topologies start loading on mount, so the first switch to Districts doesn't wait on
+  // the network. The layers are memoized: hovering (tooltip state) doesn't re-render 435 paths.
+  const statesTopo = useTopo(STATES_GEO_URL);
+  const districtsTopo = useTopo(DISTRICTS_GEO_URL);
+  const layers = useMemo(() => {
+    const byKey = new Map(rows.map((r) => [r.key, r]));
+    const rowOf = (geo: GeoFeature): MapRow | undefined =>
+      mode === "states" ? byKey.get(geo.properties?.name ?? "") : byKey.get(geoidToDistrictKey(geo.properties?.GEOID ?? ""));
 
-  const shape = (geo: GeoFeature) => {
-    const row = rowOf(geo);
-    const isSelected = !!row && selected?.key === row.key;
-    const fill = row ? getRaceColor(row.value) : mapUnfilled;
-    const thin = mode === "districts";
+    const shape = (geo: GeoFeature) => {
+      const row = rowOf(geo);
+      const isSelected = !!row && selected?.key === row.key;
+      const fill = row ? getRaceColor(row.value) : mapUnfilled;
+      const thin = mode === "districts";
+      return (
+        <Geography
+          key={geo.rsmKey}
+          geography={geo}
+          onMouseEnter={() => row && setHovered(row)}
+          onMouseLeave={() => setHovered(null)}
+          onClick={() => {
+            if (Date.now() < ignoreClickRef.current) return;
+            if (row) setSelected(isSelected ? null : row);
+          }}
+          onPointerDown={(e: React.PointerEvent) => {
+            if (e.pointerType !== "touch") { touchStartRef.current = null; return; }
+            touchStartRef.current = { x: e.clientX, y: e.clientY };
+          }}
+          onPointerUp={(e: React.PointerEvent) => {
+            if (e.pointerType !== "touch") return;
+            const start = touchStartRef.current;
+            touchStartRef.current = null;
+            if (!row || !start || Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10) return;
+            ignoreClickRef.current = Date.now() + 500;
+            setSelected(isSelected ? null : row);
+          }}
+          style={{
+            default: { fill, stroke: isSelected ? hoverStroke : mapStroke, strokeWidth: isSelected ? (thin ? 2 : 3.5) : thin ? 0.5 : 1, outline: "none" },
+            hover:   { fill: row ? fill : hoverUnfilled, stroke: hoverStroke, strokeWidth: thin ? 1 : 1.5, outline: "none", cursor: row ? "pointer" : "default" },
+            pressed: { fill, stroke: hoverStroke, strokeWidth: thin ? 2 : 3.5, outline: "none" },
+          }}
+        />
+      );
+    };
+
     return (
-      <Geography
-        key={geo.rsmKey}
-        geography={geo}
-        onMouseEnter={() => row && setHovered(row)}
-        onMouseLeave={() => setHovered(null)}
-        onClick={() => {
-          if (Date.now() < ignoreClickRef.current) return;
-          if (row) setSelected(isSelected ? null : row);
-        }}
-        onPointerDown={(e: React.PointerEvent) => {
-          if (e.pointerType !== "touch") { touchStartRef.current = null; return; }
-          touchStartRef.current = { x: e.clientX, y: e.clientY };
-        }}
-        onPointerUp={(e: React.PointerEvent) => {
-          if (e.pointerType !== "touch") return;
-          const start = touchStartRef.current;
-          touchStartRef.current = null;
-          if (!row || !start || Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10) return;
-          ignoreClickRef.current = Date.now() + 500;
-          setSelected(isSelected ? null : row);
-        }}
-        style={{
-          default: { fill, stroke: isSelected ? hoverStroke : mapStroke, strokeWidth: isSelected ? (thin ? 2 : 3.5) : thin ? 0.5 : 1, outline: "none" },
-          hover:   { fill: row ? fill : hoverUnfilled, stroke: hoverStroke, strokeWidth: thin ? 1 : 1.5, outline: "none", cursor: row ? "pointer" : "default" },
-          pressed: { fill, stroke: hoverStroke, strokeWidth: thin ? 2 : 3.5, outline: "none" },
-        }}
-      />
+      <ZoomableGroup key={`${mode}-${mapKey}`} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>
+        {!statesTopo ? null : mode === "states" ? (
+          <Geographies geography={statesTopo}>
+            {({ geographies }: { geographies: GeoFeature[] }) => geographies.map(shape)}
+          </Geographies>
+        ) : (
+          districtsTopo && <>
+            <Geographies geography={districtsTopo}>
+              {({ geographies }: { geographies: GeoFeature[] }) => geographies.map(shape)}
+            </Geographies>
+            <Geographies geography={statesTopo}>
+              {({ geographies }: { geographies: GeoFeature[] }) => geographies.map((geo) => (
+                <Geography key={geo.rsmKey} geography={geo} style={{
+                  default: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+                  hover: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+                  pressed: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+                }} />
+              ))}
+            </Geographies>
+          </>
+        )}
+      </ZoomableGroup>
     );
-  };
+  }, [mode, mapKey, rows, selected, statesTopo, districtsTopo, mapUnfilled, mapStroke, hoverStroke, hoverUnfilled]);
 
-  const panelBody = (compact: boolean) => selected && (
-    <>
-      <div className={compact ? "" : "rounded-md p-2"} style={compact ? undefined : { background: "var(--app-tab-bg)" }}>
-        <div className="mb-0.5 text-[9px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{valueLabel}</div>
-        <div className="text-sm font-bold tabular-nums" style={{ color: marginColor(selected.value) }}>{fmt1(selected.value)}</div>
-      </div>
-      <Link href={selected.href} className="flex items-center justify-center gap-1 rounded-md px-3 py-1.5 text-xs font-semibold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
-        {linkLabel}
-        <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-      </Link>
-    </>
-  );
-
-  const closeButton = (size: string) => (
-    <button type="button" onClick={() => setSelected(null)} className={`flex ${size} shrink-0 items-center justify-center rounded`} style={{ color: "var(--app-text-very-muted)", background: "var(--app-tab-bg)" }} aria-label="Close">
+  const closeButton = (
+    <button type="button" onClick={() => setSelected(null)} className="flex h-4 w-4 shrink-0 items-center justify-center rounded" style={{ color: "var(--app-text-very-muted)" }} aria-label="Close">
       <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
     </button>
+  );
+
+  const valueText = selected && (
+    <span className="tabular-nums" style={{ color: "var(--app-text-muted)" }}>{valueLabel} <b style={{ color: marginColor(selected.value) }}>{fmt1(selected.value)}</b></span>
+  );
+  const openLink = selected && (
+    <Link href={selected.href} className="whitespace-nowrap font-semibold hover:underline" style={{ color: "var(--app-text-muted)" }} title={linkLabel}>Open ›</Link>
   );
 
   return (
@@ -127,30 +177,8 @@ export function TplMap({ mode, rows, valueLabel, linkLabel }: { mode: "states" |
           </div>
         )}
 
-        <ComposableMap projection="geoAlbersUsa" projectionConfig={{ scale: 1200 }} style={{ width: "100%", height: "100%" }}>
-          {mode === "districts" && <NationalLandMaskDefinition />}
-          <ZoomableGroup key={`${mode}-${mapKey}`} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>
-            {mode === "states" ? (
-              <Geographies geography={STATES_GEO_URL}>
-                {({ geographies }: { geographies: GeoFeature[] }) => geographies.map(shape)}
-              </Geographies>
-            ) : (
-              <NationalLandMask enabled>
-                <Geographies geography={DISTRICTS_GEO_URL}>
-                  {({ geographies }: { geographies: GeoFeature[] }) => geographies.map(shape)}
-                </Geographies>
-                <Geographies geography={STATES_GEO_URL}>
-                  {({ geographies }: { geographies: GeoFeature[] }) => geographies.map((geo) => (
-                    <Geography key={geo.rsmKey} geography={geo} style={{
-                      default: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
-                      hover: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
-                      pressed: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
-                    }} />
-                  ))}
-                </Geographies>
-              </NationalLandMask>
-            )}
-          </ZoomableGroup>
+        <ComposableMap projection="geoAlbersUsa" projectionConfig={{ scale: 1000 }} style={{ width: "100%", height: "100%" }}>
+          {layers}
         </ComposableMap>
 
         {viewChanged && (
@@ -161,23 +189,21 @@ export function TplMap({ mode, rows, valueLabel, linkLabel }: { mode: "states" |
         )}
 
         {selected && (
-          <div className="absolute z-30 hidden flex-col gap-1.5 overflow-hidden rounded-xl p-2 md:flex" style={{ right: "1.25rem", bottom: 12, width: 180, background: isDark ? "rgba(22,27,34,0.95)" : "rgba(255,255,255,0.95)", border: "1px solid var(--app-border)", boxShadow: "0 10px 28px rgba(0,0,0,0.22)" }}>
-            <div className="flex items-center justify-between gap-1.5 pb-1.5" style={{ borderBottom: "1px solid var(--app-border)" }}>
-              <h2 className="min-w-0 flex-1 truncate text-sm font-bold leading-tight" style={{ color: "var(--app-text-primary)" }}>{selected.name}</h2>
-              {closeButton("h-5 w-5")}
+          <div className="absolute z-30 hidden rounded-lg px-2.5 py-1.5 md:block" style={{ right: 12, bottom: 12, width: 160, background: isDark ? "rgba(22,27,34,0.95)" : "rgba(255,255,255,0.95)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.18)" }}>
+            <div className="flex items-center gap-2">
+              <span className="min-w-0 flex-1 truncate text-xs font-bold" style={{ color: "var(--app-text-primary)" }}>{selected.name}</span>
+              {closeButton}
             </div>
-            {panelBody(false)}
+            <div className="mt-0.5 flex items-baseline justify-between gap-2 text-[11px]">{valueText}{openLink}</div>
           </div>
         )}
       </div>
 
       {selected && (
-        <div className="mt-2 overflow-hidden rounded-xl md:hidden" style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}>
-          <div className="flex items-center justify-between px-3 py-2.5" style={{ borderBottom: "1px solid var(--app-border)" }}>
-            <h2 className="text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>{selected.name}</h2>
-            {closeButton("h-6 w-6")}
-          </div>
-          <div className="flex items-center justify-between gap-3 px-3 py-2.5">{panelBody(true)}</div>
+        <div className="mt-2 flex items-center gap-2 rounded-lg px-3 py-2.5 text-[11px] md:hidden" style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}>
+          <span className="min-w-0 truncate text-xs font-bold" style={{ color: "var(--app-text-primary)" }}>{selected.name}</span>
+          {valueText}
+          <span className="ml-auto flex items-center gap-4">{openLink}{closeButton}</span>
         </div>
       )}
     </>

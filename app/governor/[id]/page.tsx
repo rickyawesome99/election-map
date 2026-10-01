@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { governorData, governorNoElection, NoElectionEntry, electionYear, type PastResult } from "@/data/forecastData";
-import { getRatingColors, marginToRating, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
+import { getRatingColors, fmtMargin, marginColor, formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import { candidatePhotos } from "@/lib/candidatePhotos";
@@ -186,7 +186,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
   const quality = candidateQuality(race);
   const demPct = Math.round(forecast.probability * 100);
   const repPct = 100 - demPct;
-  const forecastRating = marginToRating(projectedMargin);
+  const forecastRating = forecast.rating; // Safe for a decided (same-party or uncontested) race, whatever the margin
   const { bg, text } = getRatingColors(forecastRating);
   // Headline shares are the projected vote's (shares of all votes, others set aside), except in a
   // same-party contest, where the projection makes no split between the two nominees.
@@ -373,7 +373,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               tpl={stateTpl}
               genericBallot={gb}
               tplLabel="State TPL"
-              tplHref={`/model/states/${id.toLowerCase()}`}
+              tplHref={`/model/${id.toLowerCase()}`}
               incumbentPts={incumbentPts}
               appointedIncumbent={incumbent?.appointed ? incumbentParty : null}
               fundraisingPts={fundraising ? fundraisingPts : null}

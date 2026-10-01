@@ -170,7 +170,7 @@ export default function CountyTplCard({
 
       <div className="mt-4 text-[10px]">
         <a
-          href={`/model/states/${stateAbbr.toLowerCase()}`}
+          href={`/model/${stateAbbr.toLowerCase()}`}
           className="font-semibold hover:underline"
           style={{ color: "var(--app-text-muted)" }}
         >

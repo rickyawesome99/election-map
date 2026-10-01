@@ -46,7 +46,9 @@ export function useStaticJson<T>(url: string | null, initial?: { url: string; da
     };
   }, [url, initial]);
 
-  const data = url && loaded?.url === url ? loaded.data : null;
+  // The server-rendered slice serves its url directly: the effect skips fetching it, so after
+  // switching away and back, `loaded` still holds the other selection's data.
+  const data = !url ? null : loaded?.url === url ? loaded.data : initial?.url === url ? initial.data : null;
   const failed = failedFor === url;
   return { data, loading: !!url && !data && !failed, failed };
 }

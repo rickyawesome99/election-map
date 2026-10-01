@@ -6,6 +6,8 @@ import Image from "next/image";
 import ScrollToTop from "@/components/ScrollToTop";
 import BackLink from "@/components/BackLink";
 import { pastElectionHref } from "@/lib/pastElections";
+import { warForCandidate, type WarSlim } from "@/lib/modelSlices";
+import { WAR_BAD, WAR_GOOD, careerWar } from "@/components/tpl/format";
 
 // 1,077 candidate pages: rendered on first request and cached until the next deploy rather than
 // prebuilt (they were ~45% of the build's pages), the same arrangement as the county pages.
@@ -46,6 +48,20 @@ function historyHref(entry: CandidateHistoryEntry): string {
   const seatId = entry.racePath.split("/").pop() ?? "";
   return pastElectionHref(entry.raceType, seatId, entry.year) ?? entry.racePath;
 }
+
+const WAR_OFFICE = { house: "H", senate: "S", governor: "G", president: "P" } as const;
+
+// The WAR rows behind one history entry: the seat's single row (matched on office, year and the
+// seat id that ends the race path), or every state's row for a presidential year.
+function warRowsFor(war: WarSlim[], entry: CandidateHistoryEntry): WarSlim[] {
+  if (entry.raceType === "president") return war.filter((r) => r.office === "P" && r.year === entry.year);
+  const seatId = entry.racePath.split("/").pop();
+  return war.filter((r) => r.office === WAR_OFFICE[entry.raceType] && r.year === entry.year && r.seatId === seatId);
+}
+
+const fmtWar = (v: number) => `${v > 0 ? "+" : v < 0 ? "−" : ""}${Math.abs(v).toFixed(1)}`;
+const warColor = (v: number) => (v > 0 ? WAR_GOOD : v < 0 ? WAR_BAD : "var(--app-text-muted)");
+const warBg = (v: number) => `color-mix(in srgb, ${warColor(v)} 14%, transparent)`;
 
 function raceTypeLabel(raceType: "house" | "senate" | "governor" | "president") {
   if (raceType === "house") return "U.S. House";
@@ -97,6 +113,12 @@ export default async function CandidatePage({
   const losses = pastEntries.length - wins;
 
   const positionLabel = candidate.currentPosition ? candidate.currentPosition.split(" · ")[0] : null;
+
+  // Wins Above Replacement, the same numbers as the TPL tab's candidate record (/model/candidates).
+  const war = warForCandidate(candidate.name);
+  const career = careerWar(war);
+  const isPresidential = war.some((r) => r.office === "P");
+  const lastWar = war[war.length - 1];
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
@@ -171,6 +193,27 @@ export default async function CandidatePage({
                   {wins}W&ndash;{losses}L
                 </div>
               </div>
+
+              {lastWar && (
+                <div className="mt-4">
+                  <div className="flex gap-6">
+                    <div title={isPresidential ? "Average WAR per state per election: presidential WAR is scored state by state" : "Sum of WAR over every scored race: points of margin above a generic candidate of the same party against this opponent"}>
+                      <div className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-very-muted)" }}>Career WAR</div>
+                      <div className="text-[1.15rem] font-extrabold tabular-nums mt-0.5" style={{ color: warColor(career) }}>{fmtWar(career)}</div>
+                    </div>
+                    <div title="The candidate's own effect as of their latest race: past residuals faded 0.8 per year">
+                      <div className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-very-muted)" }}>Effect</div>
+                      <div className="text-[1.15rem] font-extrabold tabular-nums mt-0.5" style={{ color: warColor(lastWar.effect) }}>{fmtWar(lastWar.effect)}</div>
+                    </div>
+                  </div>
+                  <div className="text-[11px] mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+                    {isPresidential
+                      ? <>avg of {war.length} state results &middot;{" "}</>
+                      : <>{war.length} scored race{war.length === 1 ? "" : "s"} &middot;{" "}</>}
+                    <a href={`/model/candidates?c=${candidate.slug}`} className="underline hover:no-underline">WAR breakdown &rsaquo;</a>
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Race column */}
@@ -278,6 +321,7 @@ export default async function CandidatePage({
                     const total = entry.demPct + entry.repPct;
                     const dWidth = total > 0 ? (entry.demPct / total) * 100 : 50;
                     const ev = entry.side === "dem" ? entry.demEV : entry.repEV;
+                    const entryWar = warRowsFor(war, entry);
                     return (
                       <div key={i} className="py-5" style={{ borderBottom: i < pastEntries.length - 1 ? "1px solid var(--app-border)" : "none" }}>
                         <div className="flex items-start justify-between gap-4 mb-2.5">
@@ -324,6 +368,29 @@ export default async function CandidatePage({
                             {isPresident && ev != null ? `${ev} EV` : won ? `+${margin}` : `-${margin}`}
                           </span>
                         </div>
+
+                        {entryWar.length === 1 && (() => {
+                          const w = entryWar[0];
+                          return (
+                            <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>
+                              <span title="Generic vs generic: the seat's lean plus the year's environment, incumbency and structural money">Expected <b style={{ color: marginColor(w.expected) }}>{fmtMargin(w.expected)}</b></span>
+                              <span title="Expected, adjusted for this specific opponent's own effect">vs opponent <b style={{ color: marginColor(w.vsOpp) }}>{fmtMargin(w.vsOpp)}</b></span>
+                              <span title="Wins Above Replacement: actual margin minus vs-opponent, signed toward this candidate">WAR <b className="rounded px-1.5 py-0.5" style={{ color: warColor(w.war), background: warBg(w.war) }}>{fmtWar(w.war)}</b></span>
+                            </div>
+                          );
+                        })()}
+                        {entryWar.length > 1 && (() => {
+                          const avg = entryWar.reduce((t, r) => t + r.war, 0) / entryWar.length;
+                          const best = entryWar.reduce((b, r) => (r.war > b.war ? r : b));
+                          const worst = entryWar.reduce((b, r) => (r.war < b.war ? r : b));
+                          return (
+                            <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs tabular-nums" style={{ color: "var(--app-text-muted)" }}>
+                              <span title="Presidential WAR is scored state by state; this is the average over the states">WAR <b className="rounded px-1.5 py-0.5" style={{ color: warColor(avg), background: warBg(avg) }}>{fmtWar(avg)}</b> avg across {entryWar.length} states</span>
+                              <span>best {best.state} <b style={{ color: warColor(best.war) }}>{fmtWar(best.war)}</b></span>
+                              <span>worst {worst.state} <b style={{ color: warColor(worst.war) }}>{fmtWar(worst.war)}</b></span>
+                            </div>
+                          );
+                        })()}
                       </div>
                     );
                   })

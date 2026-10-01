@@ -19,7 +19,7 @@ export default async function Home({
   if (tab === "model" || tab === "table") redirect("/model");
   if (tab === "districtTable") redirect("/model#districts");
   if (tab === "state" || tab === "district") {
-    // The old sub-tab shims (app/model/[legacy]) resolve the state or district id to its new page.
+    // The old sub-tab shims (app/model/state, app/model/district) resolve the state or district id to its new page.
     const qs = new URLSearchParams();
     if (params.modelState) qs.set("modelState", params.modelState);
     if (params.modelDistrict) qs.set("modelDistrict", params.modelDistrict);

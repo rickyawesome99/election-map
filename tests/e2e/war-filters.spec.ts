@@ -46,7 +46,9 @@ test("Candidates search, filters and the candidate record stay in sync", async (
 
 test("Old sub-tab URLs forward to the new layout", async ({ page }) => {
   await page.goto("/model/state?modelState=OH");
-  await expect(page).toHaveURL(/\/model\/states\/oh$/);
+  await expect(page).toHaveURL(/\/model\/oh$/);
+  await page.goto("/model/states/ga");
+  await expect(page).toHaveURL(/\/model\/ga$/);
   await page.goto("/model/war");
   await expect(page).toHaveURL(/\/model\/candidates$/);
 });

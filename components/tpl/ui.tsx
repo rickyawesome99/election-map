@@ -2,10 +2,19 @@
 
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { marginColor } from "./format";
+import { WAR_BAD, WAR_GOOD, marginColor } from "./format";
 
 // Small building blocks in the site's flat language: pills, a segmented control, the stat row
 // under a hero, a WAR chip. No panels, no cards.
+
+/** A line-drawn ↗ for "opens something": iOS renders the U+2197 character as an emoji. */
+export function ArrowOut({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 10 10" width="0.7em" height="0.7em" aria-hidden className={`inline-block align-baseline ${className}`} fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M2.5 7.5 7.5 2.5M3.5 2.5h4v4" />
+    </svg>
+  );
+}
 
 export const MUTED = { color: "var(--app-text-muted)" } as const;
 export const VERY_MUTED = { color: "var(--app-text-very-muted)" } as const;
@@ -70,7 +79,7 @@ export function StatRow({ items }: { items: { value: ReactNode; label: ReactNode
 export function WarChip({ war, size = "xs" }: { war: number | null | undefined; size?: "xs" | "sm" }) {
   if (war == null) return null;
   const tone = war > 0.05 ? "good" : war < -0.05 ? "bad" : "zero";
-  const color = tone === "good" ? "var(--poll-better)" : tone === "bad" ? "var(--poll-worse)" : "var(--app-text-muted)";
+  const color = tone === "good" ? WAR_GOOD : tone === "bad" ? WAR_BAD : "var(--app-text-muted)";
   return (
     <span className={`inline-flex items-center rounded-full font-bold tabular-nums ${size === "sm" ? "px-2 py-0.5 text-xs" : "px-1.5 py-px text-[11px]"}`}
       style={{ color, background: tone === "zero" ? "var(--app-tab-bg)" : `color-mix(in srgb, ${color} 14%, transparent)` }} title="Wins Above Replacement">
@@ -122,3 +131,14 @@ export const TH = "whitespace-nowrap px-2 py-2 text-[10px] font-bold uppercase t
 export const TH_R = `${TH} text-right`;
 export const TD = "whitespace-nowrap px-2 py-1.5 tabular-nums";
 export const TD_R = `${TD} text-right`;
+
+/** The races-table toggle, independent of the matrix: it sets what the table shows when no
+ *  cell is picked (every race, or nothing). A picked cell always shows its races; clearing the
+ *  pick returns to this view. Clicking it also clears any pick, so the result matches its label. */
+export function AllRacesButton({ count, hidden, onToggle }: { count: number; hidden: boolean; onToggle: () => void }) {
+  return (
+    <button type="button" onClick={onToggle} aria-pressed={hidden} className="rounded-full px-2.5 py-0.5 text-[11px] font-semibold" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>
+      {hidden ? `Show all ${count} races` : "Hide races"}
+    </button>
+  );
+}

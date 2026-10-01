@@ -1,5 +1,6 @@
-import { electionYear } from "@/data/forecastData";
+import { electionYear, presPastResults } from "@/data/forecastData";
 import { TplHub } from "@/components/tpl/TplHub";
+import { SideCountStat, TplGeoProvider } from "@/components/tpl/TplGeo";
 import { TplSubNav } from "@/components/tpl/TplSubNav";
 import { fmtMargin, marginColor } from "@/lib/colorScale";
 import { buildModelSummary } from "@/lib/modelSlices";
@@ -14,16 +15,28 @@ export const metadata = {
 // in lib/modelSlices.ts; the map's year lens and sorts run on the summary alone.
 export default function ModelHubPage() {
   const summary = buildModelSummary();
-  const tilt = summary.states.filter((s) => Math.abs(s.tpl) < 5).length;
-  const safeR = summary.states.filter((s) => s.tpl >= 15).length;
-  const safeD = summary.states.filter((s) => s.tpl <= -15).length;
-  const stat = (value: string, label: string) => (
-    <div className="pr-6" style={{ borderRight: "1px solid var(--app-border)" }}>
+  const rStates = summary.states.filter((s) => s.tpl > 0).length;
+  const dStates = summary.states.filter((s) => s.tpl < 0).length;
+  const rDistricts = summary.districts.filter((d) => d.tpl > 0).length;
+  const dDistricts = summary.districts.filter((d) => d.tpl < 0).length;
+  // Electoral votes by TPL side, on the current apportionment. ME/NE split their district
+  // votes by district TPL; DC (no TPL) falls back to its latest presidential margin.
+  const lean = new Map<string, number>([...summary.states.map((s) => [s.abbr, s.tpl] as const), ...summary.districts.map((d) => [d.code, d.tpl] as const)]);
+  let evR = 0, evD = 0;
+  for (const rows of Object.values(presPastResults)) {
+    const latest = rows.reduce((a, b) => (b.year > a.year ? b : a));
+    const tpl = lean.get(latest.stateAbbr) ?? latest.margin;
+    if (tpl > 0) evR += latest.electoralVotes;
+    else if (tpl < 0) evD += latest.electoralVotes;
+  }
+  const stat = (value: React.ReactNode, label: string, last = false) => (
+    <div className="pr-6" style={last ? undefined : { borderRight: "1px solid var(--app-border)" }}>
       <div className="text-xl font-extrabold tabular-nums">{value}</div>
       <div className="mt-1 text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>{label}</div>
     </div>
   );
   return (
+    <TplGeoProvider>
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <div style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--party-dem) 8%, var(--app-bg)) 0%, var(--app-bg) 55%, color-mix(in srgb, var(--party-rep) 8%, var(--app-bg)) 100%)" }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -31,10 +44,9 @@ export default function ModelHubPage() {
           <div className="pb-6 pt-5">
             <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
               <div className="min-w-0">
-                <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>True Partisan Lean · {summary.fitYears[0]}–{summary.fitYears[summary.fitYears.length - 1]}</div>
-                <h1 className="mt-2" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5.5vw, 3.5rem)", fontWeight: 700, lineHeight: 0.98, letterSpacing: "-0.02em" }}>True Partisan Lean</h1>
+                <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5.5vw, 3.5rem)", fontWeight: 700, lineHeight: 0.98, letterSpacing: "-0.02em" }}>True Partisan Lean</h1>
                 <p className="mt-2 max-w-2xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
-                  Each state&apos;s and district&apos;s neutral partisan composition: every race since {summary.fitYears[0]} with incumbency, fundraising and the national environment stripped out, then recency-weighted. Environment and elasticity are fitted jointly across all 50 states.
+                  Each state&apos;s and district&apos;s partisan lean from every race since {summary.fitYears[0]}, with candidate and national effects stripped out.
                 </p>
               </div>
               <div className="shrink-0 sm:text-right">
@@ -44,14 +56,10 @@ export default function ModelHubPage() {
               </div>
             </div>
             <div className="mt-6 flex flex-wrap gap-x-6 gap-y-4 pt-4" style={{ borderTop: "1px solid var(--app-border)" }}>
-              {stat(String(tilt), "States within 5")}
-              {stat(`${safeR} · ${safeD}`, "Safe R · Safe D")}
+              <div className="pr-6" style={{ borderRight: "1px solid var(--app-border)" }}><SideCountStat states={[rStates, dStates]} districts={[rDistricts, dDistricts]} /></div>
+              {stat(<><span style={{ color: "var(--party-rep)" }}>{evR}</span> · <span style={{ color: "var(--party-dem)" }}>{evD}</span></>, "R EVs · D EVs")}
               {stat(`${summary.fitYears[0]}–${summary.fitYears[summary.fitYears.length - 1]}`, "Fit window")}
-              {stat(summary.yearDecay.toFixed(2), "Year decay")}
-              <div>
-                <div className="text-xl font-extrabold tabular-nums">2026</div>
-                <div className="mt-1 text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>District lines</div>
-              </div>
+              {stat(summary.yearDecay.toFixed(2), "Year decay", true)}
             </div>
           </div>
         </div>
@@ -60,5 +68,6 @@ export default function ModelHubPage() {
         <TplHub summary={summary} />
       </main>
     </div>
+    </TplGeoProvider>
   );
 }

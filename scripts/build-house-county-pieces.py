@@ -113,6 +113,11 @@ def load_districts(year: int) -> gpd.GeoDataFrame:
     g = g[g.STATEFP.isin(STATE_FIPS) & ~g[col].isin(["98", "99", "ZZ"])].copy()
     g["d"] = g[col].apply(lambda s: 1 if s == "00" else int(s))
     g["geometry"] = g.geometry.buffer(0)
+    # The cd116/cd117 files put the uninhabited Northwestern Hawaiian Islands (out to -176°) in
+    # HI-02; the map fit then spans 1,500 km of ocean and the main islands shrink to a dot.
+    from shapely.geometry import box
+    hi = g.STATEFP == "15"
+    g.loc[hi, "geometry"] = g.loc[hi, "geometry"].intersection(box(-161, 18, -154, 23))
     return g[["STATEFP", "d", "geometry"]]
 
 

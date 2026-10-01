@@ -176,7 +176,7 @@ export function StateTplMethodology() {
       </Section>
 
       <Section id="example" kicker="Worked example · live" title={`${oh.name}`}
-        lede={<>One race taken through the strips, then the state&rsquo;s year aggregation. Full ledger: {link("/model/states/oh", "Ohio State TPL")}.</>}>
+        lede={<>One race taken through the strips, then the state&rsquo;s year aggregation. Full ledger: {link("/model/oh", "Ohio State TPL")}.</>}>
         <Block label={`${exRace.year} ${exRace.race}`} meta={`${exRace.repCandidate ?? ""} (R) vs ${exRace.demCandidate ?? ""} (D)`}>
           <Ledger lines={raceLedger(exRace)} />
         </Block>

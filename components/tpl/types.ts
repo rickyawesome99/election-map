@@ -41,7 +41,7 @@ export type TplRace = {
   repWar: number | null;
 };
 
-export type StateScore = { abbr: string; id: string; name: string; tpl: number; yearWrs: Record<number, number>; beta: number; races: number };
+export type StateScore = { abbr: string; id: string; name: string; tpl: number; yearWrs: Record<number, number>; beta: number; races: number; yearRaces: Record<number, number> };
 export type DistrictScore = { id: string; code: string; state: string; stateName: string; tpl: number; yearWrs: Record<number, number> };
 export type HubCandidate = { candidate: string; party: string; office: WarOffice; race: string; state: string; year: number; war: number };
 
@@ -69,6 +69,10 @@ export type WarSlim = {
   actual: number;
   expected: number;
   vsOpp: number;
+  /** actual − expected, signed toward the candidate: the race's net two-candidate effect. */
+  residual: number;
+  /** What the candidate's own incumbency is worth vs a non-incumbent replacement (0 if not the incumbent). */
+  incumb: number;
   effect: number;
   effectN: number;
   oppEffect: number;

@@ -3,7 +3,7 @@
 // headline figures.
 
 import { candidateSlug } from "@/lib/candidateSlug";
-import type { RaceType, WarOffice } from "./types";
+import type { RaceType, WarOffice, WarSlim } from "./types";
 
 export function fmt2(v: number | null | undefined): string {
   if (v == null) return "—";
@@ -41,9 +41,13 @@ export function partyColor(party: string | undefined): string {
   return "var(--party-ind)";
 }
 
+// WAR (Wins Above Replacement): the original approval green / disapproval red.
+export const WAR_GOOD = "#22c55e";
+export const WAR_BAD = "#ef4444";
+
 export const RACE_TYPE_LABELS: Record<RaceType, string> = { P: "President", S: "Senate", G: "Governor", H: "House", L: "State Leg" };
-export const MATRIX_ROWS: { key: RaceType; label: string }[] = [
-  { key: "P", label: "President" }, { key: "H", label: "House avg" }, { key: "S", label: "Senate" }, { key: "L", label: "State leg" }, { key: "G", label: "Governor" },
+export const MATRIX_ROWS: { key: RaceType; label: string; short: string }[] = [
+  { key: "P", label: "President", short: "Pres." }, { key: "H", label: "House Avg.", short: "House" }, { key: "S", label: "Senate", short: "Sen." }, { key: "L", label: "State Leg.", short: "Leg." }, { key: "G", label: "Governor", short: "Gov." },
 ];
 export const OFFICE_LABELS: Record<WarOffice, string> = { P: "President", S: "Senate", G: "Governor", H: "House" };
 
@@ -54,13 +58,23 @@ export function candidateHref(name: string): string {
 export { candidateSlug };
 
 export function stateHref(id: string): string {
-  return `/model/states/${id.toLowerCase()}`;
+  return `/model/${id.toLowerCase()}`;
 }
 export function districtHref(stateId: string, code: string): string {
-  return `/model/states/${stateId.toLowerCase()}#${code.toLowerCase()}`;
+  return `/model/${stateId.toLowerCase()}#${code.toLowerCase()}`;
 }
 
 export function ordinal(n: number): string {
   const s = ["th", "st", "nd", "rd"], v = n % 100;
   return n + (s[(v - 20) % 10] ?? s[v] ?? s[0]);
+}
+
+/**
+ * Career WAR: races summed, except a presidential run, which is scored state by state (50+ rows
+ * per election) — those rows count as their average per state per election, not their sum.
+ */
+export function careerWar(rows: Pick<WarSlim, "office" | "war">[]): number {
+  const pres = rows.filter((r) => r.office === "P");
+  const other = rows.reduce((t, r) => (r.office === "P" ? t : t + r.war), 0);
+  return other + (pres.length ? pres.reduce((t, r) => t + r.war, 0) / pres.length : 0);
 }

@@ -112,8 +112,10 @@ function buildIndex(): SearchEntry[] {
       const seat = entries.find((entry) => entry.href === `/${office}/${id}`);
       if (seat) entries.push({ ...seat, kind: "race", label: `${seat.label} · ${electionYear}`, sublabel: `${electionYear} election · Forecast`, terms: `${seat.terms} ${electionYear} election race`, year: electionYear });
     }
+  }
+  for (const office of ["house", "senate", "governor", "president"] as const) {
     for (const race of pastElectionSearchEntries(office)) {
-      const label = office === "house" ? race.id.toUpperCase() : `${race.state} ${office === "senate" ? `Senate (Seat ${race.seat})` : "Governor"}`;
+      const label = office === "house" ? race.id.toUpperCase() : `${race.state} ${office === "senate" ? `Senate (Seat ${race.seat})` : office === "governor" ? "Governor" : "President"}`;
       entries.push({
         kind: "race", year: race.year,
         label: `${label} · ${race.year}`,

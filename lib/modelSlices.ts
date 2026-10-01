@@ -2,7 +2,7 @@ import "server-only";
 
 // ── /model page data slices ───────────────────────────────────────────────────
 // The TPL tab is three prerendered pages — the map hub (/model), one page per state
-// (/model/states/oh, with that state's districts inside it) and the candidates view
+// (/model/oh, with that state's districts inside it) and the candidates view
 // (/model/candidates) — all client components that must never import lib/tplCompute
 // (it drags the compute hub and every dataset behind it into the browser bundle). Everything
 // they show is computed here at build time and passed as props; the two selections a reader
@@ -45,12 +45,19 @@ function yearWrsOf(aggs: YearAggregation[]): Record<number, number> {
   return out;
 }
 
+// Races in the aggregation per lens year — the Races column under a year lens.
+function yearRacesOf(races: { year: number; inAggregation: boolean }[]): Record<number, number> {
+  const out: Record<number, number> = {};
+  for (const r of races) if (r.inAggregation && LENS_YEARS.includes(r.year)) out[r.year] = (out[r.year] ?? 0) + 1;
+  return out;
+}
+
 const OFFICE_OF: Record<WarRow["office"], PastElectionOffice> = { P: "president", S: "senate", G: "governor", H: "house" };
 
 function slimWar(r: WarRow): WarSlim {
   return {
     candidate: r.candidate, party: r.party, office: r.office, race: r.race, state: r.state, year: r.year,
-    actual: r.actual, expected: r.expected, vsOpp: r.expectedVsOpponent, effect: r.effect, effectN: r.effectN,
+    actual: r.actual, expected: r.expected, vsOpp: r.expectedVsOpponent, residual: r.residual, incumb: r.replacementPts, effect: r.effect, effectN: r.effectN,
     oppEffect: r.opponentEffect, war: r.war, seatId: r.seatId,
     pastHref: r.seatId ? pastElectionHref(OFFICE_OF[r.office], r.seatId, r.year) : undefined,
   };
@@ -60,6 +67,20 @@ let warCache: WarSlim[] | null = null;
 /** Every scored candidate-performance, slimmed to what the pages show (~half the full row). */
 export function warSlice(): WarSlim[] {
   return (warCache ??= computeWarTable().map(slimWar));
+}
+
+// One candidate's WAR rows, oldest first — the /candidates/[slug] profile's WAR section.
+let warByCandidate: Map<string, WarSlim[]> | null = null;
+export function warForCandidate(name: string): WarSlim[] {
+  if (!warByCandidate) {
+    warByCandidate = new Map();
+    for (const r of warSlice()) {
+      const list = warByCandidate.get(r.candidate);
+      if (list) list.push(r); else warByCandidate.set(r.candidate, [r]);
+    }
+    for (const list of warByCandidate.values()) list.sort((a, b) => a.year - b.year);
+  }
+  return warByCandidate.get(name) ?? [];
 }
 
 // WAR looked up by (state, office, race label, year, candidate name) — the join key the race
@@ -109,7 +130,7 @@ export function buildModelSummary(): ModelSummary {
   const fit = getTplFit();
   const states: StateScore[] = statesData.map((s) => {
     const calc = calculateStateModel(s.abbr, s.name);
-    return { abbr: s.abbr, id: s.id, name: s.name, tpl: calc.tpl, yearWrs: yearWrsOf(calc.yearAggregations), beta: fit.beta[s.abbr]?.shrunk ?? 1, races: calc.races.filter((r) => r.inAggregation).length };
+    return { abbr: s.abbr, id: s.id, name: s.name, tpl: calc.tpl, yearWrs: yearWrsOf(calc.yearAggregations), beta: fit.beta[s.abbr]?.shrunk ?? 1, races: calc.races.filter((r) => r.inAggregation).length, yearRaces: yearRacesOf(calc.races) };
   });
   const districts: DistrictScore[] = Object.entries(districtPresidentialData).map(([id, d]) => {
     const calc = calculateDistrictModel(id);

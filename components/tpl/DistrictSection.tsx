@@ -6,9 +6,9 @@ import { getRaceColor } from "@/lib/colorScale";
 import { RaceTable, TableCaption } from "./RaceTable";
 import { TplMatrix, type MatrixSelection } from "./TplMatrix";
 import type { FormulaKey } from "./TplModals";
-import { fmt1, fmt2, marginColor, signed } from "./format";
+import { fmt1, fmt2, marginColor, signed, stateHref } from "./format";
 import type { DistrictPageData, TplRace } from "./types";
-import { CandidateLink, M, SubHead, TD, TD_R, VERY_MUTED } from "./ui";
+import { AllRacesButton, ArrowOut, CandidateLink, M, SubHead, TD, TD_R, VERY_MUTED } from "./ui";
 
 // The District TPL section of a state page: the tile strip selects a district; beneath it that
 // district's matrix (President on 2026 lines, House in the current boundary era, the boundary
@@ -35,16 +35,17 @@ export function DistrictTiles({ districts, selected, onSelect }: { districts: { 
   );
 }
 
-const D_ROWS = [{ key: "P", label: "President" }, { key: "H", label: "House" }];
+const D_ROWS = [{ key: "P", label: "President", short: "Pres." }, { key: "H", label: "House", short: "House" }];
 
 export function DistrictDetail({ d, stateId, medianDistrictTpl, onRace, onFormula }: {
   d: DistrictPageData; stateId: string; medianDistrictTpl: number; onRace: (r: TplRace) => void; onFormula: (k: FormulaKey) => void;
 }) {
   const latest = useMemo(() => Math.max(...d.races.filter((r) => r.raceType === "H").map((r) => r.year), 0), [d]);
-  const [sel, setSel] = useState<MatrixSelection>({ year: latest || "all", type: latest ? "H" : "all" });
-  // A different district resets the selection to its newest House cell.
+  const [sel, setSel] = useState<MatrixSelection>({ year: "all", type: "all" });
+  const [racesHidden, setRacesHidden] = useState(false);
+  // A different district resets the selection to every race.
   const [forId, setForId] = useState(d.id);
-  if (forId !== d.id) { setForId(d.id); setSel({ year: latest || "all", type: latest ? "H" : "all" }); }
+  if (forId !== d.id) { setForId(d.id); setSel({ year: "all", type: "all" }); }
 
   const bsByYear = useMemo(() => Object.fromEntries(d.races.filter((r) => r.raceType === "H").map((r) => [r.year, r.BS_pts])), [d]);
   const years = d.yearAggregations;
@@ -77,10 +78,10 @@ export function DistrictDetail({ d, stateId, medianDistrictTpl, onRace, onFormul
         </div>
       </div>
 
-      <SubHead label="District matrix" meta="NM = Raw + IF + FF + BS + ENV · President .60 · House .20, redistributed · BS shown in each House cell · click a cell for its races" />
+      <SubHead label="District matrix" meta="NM = Raw + IF + FF + BS + ENV · click a cell for its races" />
       <TplMatrix
         years={years}
-        rows={D_ROWS}
+        offices={D_ROWS}
         selection={sel}
         onSelect={setSel}
         cellFor={(y, key) => {
@@ -92,9 +93,11 @@ export function DistrictDetail({ d, stateId, medianDistrictTpl, onRace, onFormul
       />
 
       <SubHead label={`Races behind the cell · ${title}`} meta={`${rows.length} row${rows.length === 1 ? "" : "s"} · Wt is the boundary weight for House rows`}
-        right={<button type="button" onClick={() => setSel({ year: "all", type: "all" })} className="rounded-full px-2.5 py-0.5 text-[11px] font-semibold" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>All {d.races.filter((r) => r.inAggregation).length} races</button>} />
-      <RaceTable races={rows} variant="district" showYear onRow={onRace} onFormula={onFormula} />
-      <TableCaption>Race names link to that election&apos;s results. Presidential rows show the nominees without WAR, because presidential WAR is a statewide number. Click a row for the step-by-step calculation.</TableCaption>
+        right={<AllRacesButton count={d.races.filter((r) => r.inAggregation).length} hidden={racesHidden} onToggle={() => { setRacesHidden((h) => !h); setSel({ year: "all", type: "all" }); }} />} />
+      {!(racesHidden && sel.year === "all" && sel.type === "all") && <>
+        <RaceTable races={rows} variant="district" showYear onRow={onRace} onFormula={onFormula} />
+        <TableCaption>Click a row for the step-by-step calculation.</TableCaption>
+      </>}
 
       <div className="mt-2 grid grid-cols-1 gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1.25fr)]">
         <div className="min-w-0">
@@ -126,9 +129,9 @@ export function DistrictDetail({ d, stateId, medianDistrictTpl, onRace, onFormul
             BS is the boundary-shift strip: how far the district a House race was actually run in leans from today&apos;s lines, added as points so the row reads as if it were run on the {d.eraStart} map. The same shift sets the row&apos;s weight, so a race on very different lines counts for little.
             {oldest && newest && oldest.year !== newest.year && <> Here the {oldest.year} race carries BS {signed(oldest.BS_pts, 1)} at weight {oldest.aggWeight.toFixed(2)}, against BS {signed(newest.BS_pts, 1)} at weight {newest.aggWeight.toFixed(2)} for {newest.year}.</>}
             {" "}Presidential rows are re-aggregated from precincts onto the {d.eraStart} lines, so they carry no BS.{" "}
-            <Link href="/methodology/district-tpl" className="underline">How District TPL works ↗</Link>
+            <Link href="/methodology/district-tpl" className="underline">How District TPL works <ArrowOut /></Link>
           </p>
-          <p className="mt-2 text-[11px]" style={VERY_MUTED}>State page: <Link href={`/model/states/${stateId}`} className="underline">{d.stateName}</Link></p>
+          <p className="mt-2 text-[11px]" style={VERY_MUTED}>State page: <Link href={stateHref(stateId)} className="underline">{d.stateName}</Link></p>
         </div>
       </div>
     </div>

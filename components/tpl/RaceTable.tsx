@@ -5,12 +5,12 @@ import type { ReactNode } from "react";
 import type { FormulaKey } from "./TplModals";
 import { fmt1, fmt2, marginBg, marginColor, signed } from "./format";
 import type { TplRace } from "./types";
-import { CandidateLink, TD, TD_R, TH, TH_R, VERY_MUTED } from "./ui";
+import { ArrowOut, CandidateLink, TD, TD_R, TH, TH_R, VERY_MUTED } from "./ui";
 
 // The per-race table under a matrix. One row per race with the two nominees and their WAR,
 // the strips, the neutralized margin and the aggregation weight; House rows in the state table
 // also carry the district's own TPL. Clicking a row opens its step-by-step calculation; the
-// links inside a row go where they say.
+// links inside a row go where they say. Phones keep only Race, Raw, NM and Wt.
 
 export function RaceTable({ races, variant, showYear, districtTpl, onRow, onFormula, emptyText = "No races match." }: {
   races: TplRace[];
@@ -23,26 +23,29 @@ export function RaceTable({ races, variant, showYear, districtTpl, onRow, onForm
   emptyText?: string;
 }) {
   const strip = (label: string, k: FormulaKey, title: string) => (
-    <th className={`${TH_R} hidden md:table-cell`} style={{ color: "var(--app-text-muted)" }}>
-      <button type="button" onClick={() => onFormula(k)} className="hover:underline" title={title}>{label} ↗</button>
+    <th className={`${TH_R} hidden sm:table-cell`} style={{ color: "var(--app-text-muted)" }}>
+      <button type="button" onClick={() => onFormula(k)} className="hover:underline" title={title}>{label} <ArrowOut /></button>
     </th>
   );
   const stop = (e: React.MouseEvent) => e.stopPropagation();
+  // When any row carries the imputed second line, the rest reserve its height (number centered
+  // in it) so rows match.
+  const anyImputed = races.some((r) => r.imputed);
   return (
     <div className="-mx-1 overflow-x-auto px-1">
-      <table className="w-full min-w-[560px] border-collapse text-xs">
+      <table className="w-full border-collapse sm:min-w-[560px] text-xs">
         <thead>
           <tr style={{ borderBottom: "2px solid var(--app-text-primary)", color: "var(--app-text-muted)" }}>
             <th className={TH}>Race</th>
-            <th className={TH}>Winner · WAR</th>
+            <th className={`${TH} hidden sm:table-cell`}>Winner · WAR</th>
             <th className={`${TH} hidden sm:table-cell`}>Runner-up · WAR</th>
             <th className={TH_R}>Raw</th>
             {strip("IF", "IF", "Incumbency points")}
             {strip("FF", "FF", "Fundraising points")}
             {variant === "district" && strip("BS", "BS", "Boundary shift")}
             {strip("ENV", "ENV", "Environment adjustment")}
-            <th className={TH_R}><button type="button" onClick={() => onFormula("NM")} className="hover:underline" title="Neutralized margin">NM ↗</button></th>
-            <th className={`${TH_R} hidden md:table-cell`} title="Weight in aggregation">Wt</th>
+            <th className={TH_R}><button type="button" onClick={() => onFormula("NM")} className="hover:underline" title="Neutralized margin">NM<span className="hidden sm:inline"> <ArrowOut /></span></button></th>
+            <th className={`${TH_R}`} title="Weight in aggregation">Wt</th>
             {variant === "state" && <th className={`${TH_R} hidden sm:table-cell`}>District TPL</th>}
           </tr>
         </thead>
@@ -57,7 +60,7 @@ export function RaceTable({ races, variant, showYear, districtTpl, onRow, onForm
             const label = r.raceType === "H" ? r.race.replace(/^House /, "") : r.race;
             const href = r.pastHref ?? r.detailHref;
             const d = variant === "state" && r.raceType === "H" ? districtTpl?.(r.race.replace(/^House /, "")) ?? null : null;
-            const num = (v: number | null, cls = "") => <td className={`${TD_R} hidden md:table-cell ${cls}`} style={{ color: v ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>{v ? signed(v) : "—"}</td>;
+            const num = (v: number | null, cls = "") => <td className={`${TD_R} ${cls}`} style={{ color: v ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>{v ? signed(v) : "—"}</td>;
             return (
               <tr key={`${r.raceType}-${r.year}-${r.race}-${i}`} onClick={() => onRow(r)} className="cursor-pointer" style={{ borderBottom: "1px solid var(--app-border)" }}
                 title="Open this race's step-by-step calculation">
@@ -67,18 +70,19 @@ export function RaceTable({ races, variant, showYear, districtTpl, onRow, onForm
                   {href ? <Link href={href} onClick={stop} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)" }} title={r.pastHref ? "Full results for this election" : "Seat page"}>{label}</Link> : label}
                   {r.imputed && <span className="ml-1" style={VERY_MUTED} title="Imputed from the presidential baseline">⊘</span>}
                 </td>
-                <td className={TD} onClick={stop}><CandidateLink name={winner.name} party={winner.party} war={winner.war} /></td>
+                <td className={`${TD} hidden sm:table-cell`} onClick={stop}><CandidateLink name={winner.name} party={winner.party} war={winner.war} /></td>
                 <td className={`${TD} hidden sm:table-cell`} onClick={stop}><CandidateLink name={loser.name} party={loser.party} war={loser.war} /></td>
                 <td className={TD_R} style={{ color: marginColor(r.rawMargin) }}>
-                  {fmt2(r.rawMargin)}
-                  {r.imputed && <span className="block text-[10px]" style={VERY_MUTED} title="Adjusted (imputed)">⊘ {fmt2(r.adjustedMargin)}</span>}
+                  {r.imputed ? <>{fmt2(r.rawMargin)}<span className="block text-[10px]" style={VERY_MUTED} title="Adjusted (imputed)">⊘ {fmt2(r.adjustedMargin)}</span></>
+                    : anyImputed ? <span className="flex min-h-8 items-center justify-end">{fmt2(r.rawMargin)}</span>
+                    : fmt2(r.rawMargin)}
                 </td>
-                {num(r.incumbencyPts)}
-                {num(r.FF_pts)}
-                {variant === "district" && num(r.raceType === "H" ? r.BS_pts : null)}
-                {num(r.envPts)}
+                {num(r.incumbencyPts, "hidden sm:table-cell")}
+                {num(r.FF_pts, "hidden sm:table-cell")}
+                {variant === "district" && num(r.raceType === "H" ? r.BS_pts : null, "hidden sm:table-cell")}
+                {num(r.envPts, "hidden sm:table-cell")}
                 <td className={`${TD_R} font-bold`}><span className="rounded px-1.5 py-0.5" style={{ color: marginColor(r.NM), background: marginBg(r.NM) }}>{fmt2(r.NM)}</span></td>
-                <td className={`${TD_R} hidden md:table-cell`} style={{ color: "var(--app-text-muted)" }}>{r.aggWeight.toFixed(2)}</td>
+                <td className={`${TD_R}`} style={{ color: "var(--app-text-muted)" }}>{r.aggWeight.toFixed(2)}</td>
                 {variant === "state" && (
                   <td className={`${TD_R} hidden sm:table-cell`} onClick={stop}>
                     {d ? <Link href={d.href} className="font-semibold underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ color: marginColor(d.tpl), textDecorationColor: "var(--app-border)" }} title="This district's TPL, below">{fmt1(d.tpl)}</Link> : <span style={VERY_MUTED}>—</span>}
