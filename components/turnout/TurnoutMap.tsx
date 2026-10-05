@@ -3,7 +3,6 @@
 import { memo, useCallback, useMemo, useRef, useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import type { Theme } from "@/components/ForecastMap";
-import { NationalLandMask, NationalLandMaskDefinition } from "@/components/StateLandMask";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { useStaticJson } from "@/lib/useStaticJson";
@@ -332,7 +331,6 @@ export default function TurnoutMap({ theme: t, dark, projection }: { theme: Them
         )}
 
         <ComposableMap width={975} height={610} projection="geoAlbersUsa" projectionConfig={{ scale: 1200 }} preserveAspectRatio="xMidYMid slice" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
-          <NationalLandMaskDefinition />
           <ZoomableGroup center={mapView.center} zoom={mapView.zoom} minZoom={0.8} filterZoomEvent={filterMapZoomEvent}
             onMoveStart={() => { gestureRef.current = null; }}
             onMove={({ x, y, zoom: k }: { x: number; y: number; zoom: number }) => {
@@ -356,9 +354,7 @@ export default function TurnoutMap({ theme: t, dark, projection }: { theme: Them
             )}
             {level === "district" && (
               <>
-                <NationalLandMask enabled>
-                  <Geographies key={districtGeoUrl} geography={districtGeoUrl} parseGeographies={parseDistrictGeographies}>{({ geographies }: { geographies: DistrictGeoFeature[] }) => <GeoLayer level="district" geographies={geographies} entries={entries} projByKey={projByKey} metric={metric} office={office} scale={scale} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />}</Geographies>
-                </NationalLandMask>
+                <Geographies key={districtGeoUrl} geography={districtGeoUrl} parseGeographies={parseDistrictGeographies}>{({ geographies }: { geographies: DistrictGeoFeature[] }) => <GeoLayer level="district" geographies={geographies} entries={entries} projByKey={projByKey} metric={metric} office={office} scale={scale} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />}</Geographies>
                 <StateOutlines t={t} />
               </>
             )}

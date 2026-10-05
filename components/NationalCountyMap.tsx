@@ -15,7 +15,6 @@ import { getRaceColor, marginToRating, getRatingColors } from "@/lib/colorScale"
 import { FIPS_TO_STATE } from "@/lib/fips";
 import { getCongressionalDistrictsGeoUrl, isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 import { normalizeGeographyWinding, type WindableGeography } from "@/lib/geoWinding";
-import { NationalLandMask, NationalLandMaskDefinition } from "./StateLandMask";
 import { popVoteData } from "@/data/popVoteData";
 
 type RaceType = MapOffice;
@@ -564,7 +563,6 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
             height: "100%",
           }}
         >
-          <NationalLandMaskDefinition />
           <ZoomableGroup
             center={mapView.center}
             zoom={mapView.zoom}
@@ -621,17 +619,15 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
 
             {geoLevel === "district" && (
               <>
-              <NationalLandMask enabled>
-                <Geographies
-                  key={districtGeoUrl}
-                  geography={districtGeoUrl}
-                  parseGeographies={parseDistrictGeographies}
-                >
-                  {({ geographies }: { geographies: DistrictGeoFeature[] }) => (
-                    <GeoLayer level="district" geographies={geographies} entries={entries} specialOnly={specialOnly} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
-                  )}
-                </Geographies>
-              </NationalLandMask>
+              <Geographies
+                key={districtGeoUrl}
+                geography={districtGeoUrl}
+                parseGeographies={parseDistrictGeographies}
+              >
+                {({ geographies }: { geographies: DistrictGeoFeature[] }) => (
+                  <GeoLayer level="district" geographies={geographies} entries={entries} specialOnly={specialOnly} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
+                )}
+              </Geographies>
               <StateOutlines t={t} />
               </>
             )}

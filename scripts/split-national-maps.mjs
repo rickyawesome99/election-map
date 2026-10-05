@@ -8,7 +8,7 @@
  *    public/us-counties.json and public/congressional-districts-2026.json under their existing
  *    filenames, just converted to TopoJSON in place (arc-sharing + quantization, no geometry
  *    loss; ~70-80% smaller).
- *  - Single-state consumers (StateCountyMap, StateDistrictMap, StateLandMask's per-state mask,
+ *  - Single-state consumers (StateCountyMap, StateDistrictMap,
  *    DistrictMiniMap for 2026 boundaries) previously fetched one of those same national files
  *    and filtered client-side down to one state. They now fetch a per-state TopoJSON split
  *    instead: public/state-counties/{ABBR}.json and public/state-congressional-districts-2026/
@@ -18,6 +18,10 @@
  * TopoJSON in place too, but NOT split — they're only fetched when a user manually selects a
  * past redistricting cycle (DistrictMiniMap's year toggle, HousePastMap/PastElectionsMap), too
  * low-traffic to justify 50 more files per year. See project memory for the write-up.
+ *
+ * The district half is SUPERSEDED (2026-10-04) by scripts/build-display-district-maps.mjs, which
+ * also clips every district file to the shoreline; this script now only splits the counties.
+ * Running the old district steps would overwrite the clipped files with unclipped ones.
  *
  * Usage: node scripts/split-national-maps.mjs
  */
@@ -72,11 +76,4 @@ console.log("Counties...");
 splitByState("public/us-counties.json", "public/state-counties", DERIVE_STATEFP_FROM_ID);
 convertInPlaceToTopoJSON("public/us-counties.json");
 
-console.log("Congressional districts (2026, current cycle)...");
-splitByState("public/congressional-districts-2026.json", "public/state-congressional-districts-2026");
-convertInPlaceToTopoJSON("public/congressional-districts-2026.json");
-
-console.log("Older congressional-district year files (national only, not split)...");
-for (const year of ["2016", "2018", "pre2022", "2022", "2024"]) {
-  convertInPlaceToTopoJSON(`public/congressional-districts-${year}.json`);
-}
+console.log("Congressional districts: run scripts/build-display-district-maps.mjs");

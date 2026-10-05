@@ -4,8 +4,9 @@ Re-aggregates ACS 2020-24 5-year TRACT data onto the 2026 congressional lines fo
 that redrew after the 119th Congress convened, and writes data-entry/demographics_cd_2026_lines.csv.
 
 Why: the ACS publishes congressional districts on 119th Congress lines only, so
-fetch-acs-demographics.py measures AL/CA/FL/LA/MO/NC/OH/TN/TX/UT on maps those states no longer
-use. generate-demographics-data.py overlays this file on those states' district rows.
+fetch-acs-demographics.py measures AL/CA/FL/LA/NC/OH/TN/TX/UT on maps those states no longer
+use (Missouri's 2025 map was struck down, so it votes on its 119th-Congress lines and is not
+one of them). generate-demographics-data.py overlays this file on those states' district rows.
 
 Method: every census tract is assigned to a district by its Census internal point (2024
 Gazetteer), in two passes. Districts the redraw left alone (identical 2024 presidential vote

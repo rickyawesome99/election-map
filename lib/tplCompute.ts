@@ -1541,6 +1541,19 @@ export interface WarRow {
 // opponent's effect and what the forecast reads. λ=1 matches the observed leave-one-out persistence slope (~0.68) of repeat
 // candidates' residuals; calibration via the harness is a later refinement.
 export const WAR_LAMBDA = 1;
+// Heavy tail (WAR table only, 2026-10-04). A squared penalty finds "one +43 candidate and five
+// −15 opponents" cheaper than "one +75 candidate", so everyone who faced Phil Scott absorbed part
+// of his popularity and booked a WAR of −30 or worse. The WAR solve therefore uses a pseudo-Huber
+// penalty, λ·2τ²(√(1 + (a/τ)²) − 1): the same ridge near zero, linear growth beyond τ, strictly
+// convex (so the solution is unique and a symmetric one-race pair still splits evenly). An
+// extraordinary candidate is no longer cheaper to explain as a run of terrible opponents.
+// τ is smaller for a candidate who ran as the incumbent at least once in the window: the tail is
+// theirs — of the 12 races with |residual| > 30, 9 favor the incumbent and 1 goes against — and it
+// is what breaks the tie in a one-race pair (Baker over Gonzalez). 10-fold held-out error on
+// repeat candidates' races: ridge 3.91 → 3.87 (statewide 6.35 → 6.01). The forecast's candidate
+// effects (computeCandidateEffects) stay on the plain ridge until forwardBacktest says otherwise.
+export const WAR_TAIL = 10;
+export const WAR_TAIL_INCUMBENT = 5;
 // Recency: a candidate's effect is estimated AS OF each race's year. The solve for target year
 // Y weights every race by WAR_RECENCY_DECAY^|year − Y|, so the race being scored always carries
 // full weight and a candidate's other races fade with distance (2 yrs 0.64 · 4 yrs 0.41 ·
@@ -1655,13 +1668,16 @@ export function buildObservablePrior(races: EffectRace[], asOf: number, incumben
 // Ridge solve of candidate effects as of target year Y over the given races
 // (r = actual − expected, R-positive; R/D = candidate keys). Weighted coordinate
 // descent on the normal equations, warm-startable. Returns the effects and each
-// candidate's race count / recency-weighted count.
+// candidate's race count / recency-weighted count. `tail` (a candidate's τ) swaps the
+// squared penalty for the pseudo-Huber one — see WAR_TAIL — solved by reweighting the
+// penalty each sweep (λ_c = λ / √(1 + (a_c/τ)²)); without it this is the plain ridge.
 export function solveCandidateEffects(
   races: Iterable<EffectRace>,
   Y: number,
   warm?: Map<string, number>,
   prior?: Map<string, number>,
-  decay: (office?: string) => number = recencyDecayFor
+  decay: (office?: string) => number = recencyDecayFor,
+  tail?: (candidate: string) => number
 ): { a: Map<string, number>; stats: Map<string, { n: number; w: number }> } {
   const list = [...races];
   const obs = new Map<string, { race: EffectRace; s: number }[]>();
@@ -1672,12 +1688,14 @@ export function solveCandidateEffects(
   const a = warm ?? new Map<string, number>();
   const pred = (rc: EffectRace) => (rc.R ? a.get(rc.R) ?? 0 : 0) - (rc.D ? a.get(rc.D) ?? 0 : 0);
   const wt = (race: EffectRace) => (race.w ?? 1) * decay(race.office) ** Math.abs(race.year - Y);
-  for (let it = 0; it < 200; it++) {
+  for (let it = 0; it < (tail ? 2000 : 200); it++) {
     let maxDelta = 0;
     for (const [c, o] of obs) {
       const prev = a.get(c) ?? 0;
-      let num = WAR_LAMBDA * (prior?.get(c) ?? 0);
-      let den = WAR_LAMBDA;
+      const target = prior?.get(c) ?? 0;
+      const lambda = tail ? WAR_LAMBDA / Math.sqrt(1 + ((prev - target) / tail(c)) ** 2) : WAR_LAMBDA;
+      let num = lambda * target;
+      let den = lambda;
       for (const { race, s } of o) {
         const w = wt(race);
         num += w * (s * (race.r - pred(race)) + prev);
@@ -1694,7 +1712,7 @@ export function solveCandidateEffects(
   return { a, stats };
 }
 
-function attributeWar(rows: WarRow[]): void {
+function attributeWar(rows: WarRow[], incumbents: Set<string>): void {
   type Race = EffectRace & { rows: WarRow[] };
   const races = new Map<string, Race>();
   for (const row of rows) {
@@ -1708,7 +1726,7 @@ function attributeWar(rows: WarRow[]): void {
   let a = new Map<string, number>();
   for (const Y of years) {
     // Solve as of Y (warm-started from the previous target year's solution).
-    const solved = solveCandidateEffects(races.values(), Y, a);
+    const solved = solveCandidateEffects(races.values(), Y, a, undefined, recencyDecayFor, (c) => (incumbents.has(c) ? WAR_TAIL_INCUMBENT : WAR_TAIL));
     a = solved.a;
     const pred = (rc: Race) => (rc.R ? a.get(rc.R) ?? 0 : 0) - (rc.D ? a.get(rc.D) ?? 0 : 0);
     for (const rc of races.values()) {
@@ -1920,6 +1938,7 @@ export function computeWarTable(): WarRow[] {
   _warMoneyCache = money;
 
   const out: WarRow[] = [];
+  const incumbents = new Set<string>(); // ran as the incumbent at least once: the heavier tail (WAR_TAIL_INCUMBENT)
   for (const p of pending) {
     const m = money[p.office];
     const structuralGapPct = p.withMoney ? m.intercept + m.incSign * p.incSign + m.base * p.base : 0;
@@ -1940,9 +1959,11 @@ export function computeWarTable(): WarRow[] {
     const base = { office: p.office, race: p.raceLabel, state: p.state, year: p.r.year, seatId, actual: p.r.rawMargin!, expected, moneyGapPct: p.gap, structuralGapPct, ffStructuralPts, residual: 0, effect: 0, effectN: 0, effectW: 0, opponentEffect: 0, replacementPts: 0, expectedVsOpponent: 0, war: 0, boundaryWeight: p.boundaryWeight ?? 1, note: p.note };
     if (p.r.demCandidate) out.push({ candidate: p.r.demCandidate, party: p.r.demParty ?? "D", ...base, replacementPts: incumbentSlot === "D" ? -replacementR : 0 });
     if (p.r.repCandidate) out.push({ candidate: p.r.repCandidate, party: p.r.repParty ?? "R", ...base, replacementPts: incumbentSlot === "R" ? replacementR : 0 });
+    if (incumbentSlot === "D" && p.r.demCandidate) incumbents.add(warCandidateKey(p.state, p.r.demParty ?? "D", p.r.demCandidate));
+    if (incumbentSlot === "R" && p.r.repCandidate) incumbents.add(warCandidateKey(p.state, p.r.repParty ?? "R", p.r.repCandidate));
   }
 
-  attributeWar(out);
+  attributeWar(out, incumbents);
   out.sort((a, b) => b.war - a.war);
   _warCache = out;
   return _warCache;

@@ -3,7 +3,7 @@
 // (and House races on stable lines) predicted as of mid-September from a fit on years ≤ Y−1, under the live
 // constants. Re-run after any change to the model or its data so the page keeps describing the model as it is.
 export const FORECAST_CALIBRATION = {
-  "generatedAt": "2026-09-22",
+  "generatedAt": "2026-10-04",
   "years": [
     2018,
     2020,
@@ -94,9 +94,9 @@ export const FORECAST_CALIBRATION = {
     {
       "year": 2022,
       "office": "H",
-      "n": 201,
+      "n": 209,
       "E": 0.63,
-      "mae": 4.62,
+      "mae": 4.58,
       "bias": 0.85,
       "r": 0.98
     },
@@ -121,10 +121,10 @@ export const FORECAST_CALIBRATION = {
     {
       "year": 2024,
       "office": "H",
-      "n": 237,
+      "n": 245,
       "E": 0.18,
-      "mae": 4.46,
-      "bias": 2.58,
+      "mae": 4.38,
+      "bias": 2.49,
       "r": 0.99
     }
   ],
@@ -159,24 +159,24 @@ export const FORECAST_CALIBRATION = {
     },
     {
       "office": "H",
-      "n": 449,
-      "mae": 4.58,
-      "bias": 1.72,
-      "meanAbsYearBias": 3.86,
-      "withinRsd": 4.94,
-      "nationalSd": 4.41,
+      "n": 465,
+      "mae": 4.51,
+      "bias": 1.67,
+      "meanAbsYearBias": 3.83,
+      "withinRsd": 4.86,
+      "nationalSd": 4.4,
       "liveRaceSigma": 5.3,
-      "cover80": 0.788,
+      "cover80": 0.791,
       "brier": 0.024,
       "brierCoinFlip": 0.25,
-      "calledRight": 0.969
+      "calledRight": 0.97
     }
   ],
   "calibration": [
     {
       "lo": 0,
       "hi": 0.05,
-      "n": 239,
+      "n": 251,
       "meanP": 0.007,
       "demWon": 0.008
     },
@@ -211,9 +211,9 @@ export const FORECAST_CALIBRATION = {
     {
       "lo": 0.95,
       "hi": 1,
-      "n": 264,
+      "n": 268,
       "meanP": 0.993,
-      "demWon": 0.992
+      "demWon": 0.993
     }
   ],
   "ablation": [
@@ -222,7 +222,7 @@ export const FORECAST_CALIBRATION = {
       "mae": {
         "S": 5.01,
         "G": 8.88,
-        "H": 4.58
+        "H": 4.51
       }
     },
     {
@@ -230,15 +230,15 @@ export const FORECAST_CALIBRATION = {
       "mae": {
         "S": 5.11,
         "G": 10.49,
-        "H": 4.78
+        "H": 4.72
       }
     },
     {
       "variant": "No fundraising",
       "mae": {
-        "S": 5.65,
+        "S": 5.64,
         "G": 9.33,
-        "H": 4.78
+        "H": 4.71
       }
     },
     {
@@ -246,7 +246,7 @@ export const FORECAST_CALIBRATION = {
       "mae": {
         "S": 5.87,
         "G": 9.65,
-        "H": 5.01
+        "H": 4.95
       }
     },
     {
@@ -254,7 +254,7 @@ export const FORECAST_CALIBRATION = {
       "mae": {
         "S": 5.26,
         "G": 9.12,
-        "H": 4.65
+        "H": 4.58
       }
     },
     {
@@ -262,7 +262,7 @@ export const FORECAST_CALIBRATION = {
       "mae": {
         "S": 6.92,
         "G": 11.61,
-        "H": 5.54
+        "H": 5.47
       }
     }
   ],
@@ -291,7 +291,7 @@ export const FORECAST_CALIBRATION = {
       "horizon": "Mid-September",
       "office": "H",
       "polled": 104,
-      "all": 449,
+      "all": 465,
       "maeModel": 4.16,
       "maePoll": 5.11,
       "maeBlend": 3.61,
@@ -321,8 +321,8 @@ export const FORECAST_CALIBRATION = {
       "horizon": "Mid-October",
       "office": "H",
       "polled": 121,
-      "all": 449,
-      "maeModel": 4.14,
+      "all": 465,
+      "maeModel": 4.13,
       "maePoll": 5.14,
       "maeBlend": 3.51,
       "meanW": 0.24
@@ -351,8 +351,8 @@ export const FORECAST_CALIBRATION = {
       "horizon": "November 1",
       "office": "H",
       "polled": 132,
-      "all": 449,
-      "maeModel": 4.2,
+      "all": 465,
+      "maeModel": 4.21,
       "maePoll": 5.13,
       "maeBlend": 3.48,
       "meanW": 0.26

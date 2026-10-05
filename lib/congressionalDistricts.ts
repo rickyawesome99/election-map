@@ -29,14 +29,20 @@ export function isCongressionalDistrictGeoid(
  * Verifying one of these: compare county representative points, NOT polygon IoU —
  * these files are simplified to ~50 vertices per district, which drops IoU against a
  * full-resolution reference far enough (Louisiana scored 0.47 against its own correct
- * map) to hide a wholesale wrong-map substitution. */
+ * map) to hide a wholesale wrong-map substitution.
+ *
+ * All six are clipped to the Census 1:500k shoreline by scripts/build-display-district-maps.mjs
+ * (several ran coastal districts out into the water); the unclipped originals of the older five
+ * are in data-entry/district-maps-untrimmed/. */
 export function getCongressionalDistrictsGeoUrl(year: number): string {
   if (year <= 2017) return "/congressional-districts-2016.json";
   if (year <= 2019) return "/congressional-districts-2018.json";
   if (year <= 2021) return "/congressional-districts-pre2022.json";
   if (year <= 2023) return "/congressional-districts-2022.json";
   if (year <= 2025) return "/congressional-districts-2024.json";
-  return "/congressional-districts-2026.json";
+  // The shoreline-clipped copy (scripts/build-display-district-maps.mjs); the unclipped
+  // congressional-districts-2026.json is kept for address lookups and the tract builders.
+  return "/congressional-districts-2026-land.json";
 }
 
 /**

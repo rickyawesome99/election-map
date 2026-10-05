@@ -10,6 +10,7 @@ import type { ChamberSimulation } from "@/lib/forecast";
 
 const MIN_SHARE = 0.002; // tails thinner than 0.2% of simulations are trimmed from the axis
 const H = 64;            // plot height in viewBox units (the svg stretches to the column width)
+const TIE_FILL = "#4B0082"; // the tied-chamber purple (StatesOverviewMap SPLIT_FILL)
 
 export default function SeatHistogram({ label, sim, total }: { label: string; sim: ChamberSimulation; total: number }) {
   const [hover, setHover] = useState<number | null>(null);
@@ -22,7 +23,7 @@ export default function SeatHistogram({ label, sim, total }: { label: string; si
   // Democratic seats at which a column counts for the Democrats; a governors' 25–25 split is neither's.
   const line = sim.controlThreshold ?? total / 2 + 0.5;
   const sideOf = (s: number): "D" | "R" | null => (s >= line ? "D" : sim.controlThreshold == null && s === total / 2 ? null : "R");
-  const colorOf = (s: number) => { const side = sideOf(s); return side === "D" ? "var(--party-dem-fill)" : side === "R" ? "var(--party-rep-fill)" : "var(--app-text-very-muted)"; };
+  const colorOf = (s: number) => { const side = sideOf(s); return side === "D" ? "var(--party-dem-fill)" : side === "R" ? "var(--party-rep-fill)" : TIE_FILL; };
 
   const slot = 100 / bins.length;
   const gap = Math.min(0.6, slot * 0.18);

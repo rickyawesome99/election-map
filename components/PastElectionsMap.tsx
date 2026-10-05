@@ -8,7 +8,6 @@ import type { HouseStatewideResult } from "@/data/forecastData";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { getCongressionalDistrictsGeoUrl, isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
-import { getLandMaskFips, StateLandMask, StateLandMaskDefinition } from "./StateLandMask";
 
 const STATE_PROJ: Record<string, [number, number, number]> = {
   AL: [-86.8, 32.8, 4800],  AK: [-153.0, 64.0, 900],   AZ: [-111.7, 34.3, 3600],
@@ -125,7 +124,6 @@ export default function PastElectionsMap({
   const sel = availableElections.find(e => e.key === selectedKey) ?? availableElections[0] ?? null;
 
   const geoUrl = sel ? getCongressionalDistrictsGeoUrl(sel.year) : "/congressional-districts-pre2022.json";
-  const landMaskFips = getLandMaskFips(stateAbbr);
 
   const resultByGeoid = useMemo(() => {
     const map = new Map<string, HouseStatewideResult>();
@@ -263,9 +261,7 @@ export default function PastElectionsMap({
           projectionConfig={autoProj ?? { scale: proj[2], center: [proj[0], proj[1]] }}
           style={{ width: "100%", height: "100%" }}
         >
-          {landMaskFips && <StateLandMaskDefinition stateFips={landMaskFips} />}
           <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
-            <StateLandMask stateFips={landMaskFips}>
             <Geographies
               key={geoUrl}
               geography={geoUrl}
@@ -310,7 +306,6 @@ export default function PastElectionsMap({
                   })
                 }
             </Geographies>
-            </StateLandMask>
           </ZoomableGroup>
         </ComposableMap>
 

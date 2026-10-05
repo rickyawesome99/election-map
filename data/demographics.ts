@@ -311,12 +311,12 @@ export const districtDemographics: Record<string, Demographics> = {
   "2802": { population: 713085, collegePct: 21.6, whitePct: 31.2, blackPct: 63.6, hispanicPct: 2.3, asianPct: 0.5, medianHouseholdIncome: 44511 },
   "2803": { population: 738402, collegePct: 28.9, whitePct: 58.4, blackPct: 33.4, hispanicPct: 3.0, asianPct: 1.2, medianHouseholdIncome: 60128 },
   "2804": { population: 748399, collegePct: 25.5, whitePct: 66.6, blackPct: 21.6, hispanicPct: 5.6, asianPct: 1.5, medianHouseholdIncome: 60376 },
-  "2901": { population: 752647, collegePct: 38.1, whitePct: 41.7, blackPct: 45.1, hispanicPct: 4.6, asianPct: 3.1, medianHouseholdIncome: 61224 },
-  "2902": { population: 758392, collegePct: 46.2, whitePct: 82.9, blackPct: 3.0, hispanicPct: 3.2, asianPct: 4.8, medianHouseholdIncome: 94801 },
-  "2903": { population: 776080, collegePct: 37.8, whitePct: 83.4, blackPct: 5.4, hispanicPct: 3.8, asianPct: 2.7, medianHouseholdIncome: 88683 },
-  "2904": { population: 784220, collegePct: 33.6, whitePct: 80.5, blackPct: 6.9, hispanicPct: 5.8, asianPct: 1.5, medianHouseholdIncome: 72823 },
-  "2905": { population: 774216, collegePct: 24.3, whitePct: 67.9, blackPct: 17.0, hispanicPct: 8.8, asianPct: 1.0, medianHouseholdIncome: 62952 },
-  "2906": { population: 781179, collegePct: 30.5, whitePct: 81.6, blackPct: 5.2, hispanicPct: 6.6, asianPct: 1.7, medianHouseholdIncome: 74404 },
+  "2901": { population: 752720, collegePct: 38.0, whitePct: 41.0, blackPct: 45.5, hispanicPct: 4.8, asianPct: 3.6, medianHouseholdIncome: 61097 },
+  "2902": { population: 771008, collegePct: 50.0, whitePct: 82.8, blackPct: 3.0, hispanicPct: 3.3, asianPct: 4.8, medianHouseholdIncome: 102169 },
+  "2903": { population: 780389, collegePct: 35.5, whitePct: 84.6, blackPct: 4.6, hispanicPct: 3.6, asianPct: 2.2, medianHouseholdIncome: 81928 },
+  "2904": { population: 782304, collegePct: 25.2, whitePct: 84.1, blackPct: 4.3, hispanicPct: 5.2, asianPct: 1.0, medianHouseholdIncome: 67043 },
+  "2905": { population: 772256, collegePct: 34.4, whitePct: 58.7, blackPct: 21.8, hispanicPct: 11.8, asianPct: 2.0, medianHouseholdIncome: 67634 },
+  "2906": { population: 775000, collegePct: 27.1, whitePct: 86.8, blackPct: 3.6, hispanicPct: 4.2, asianPct: 1.1, medianHouseholdIncome: 73975 },
   "2907": { population: 785302, collegePct: 27.7, whitePct: 84.0, blackPct: 1.8, hispanicPct: 6.5, asianPct: 1.4, medianHouseholdIncome: 63127 },
   "2908": { population: 772835, collegePct: 20.8, whitePct: 87.0, blackPct: 3.7, hispanicPct: 2.6, asianPct: 0.8, medianHouseholdIncome: 60159 },
   "3001": { population: 564861, collegePct: 38.8, whitePct: 85.2, blackPct: 0.3, hispanicPct: 4.4, asianPct: 1.0, medianHouseholdIncome: 73598 },
@@ -532,7 +532,7 @@ export const districtDemographics: Record<string, Demographics> = {
 // where the boundary file is - see that script). Districts a redraw left alone are not listed;
 // they keep the published figure.
 export const TRACT_ESTIMATED_DISTRICTS: ReadonlySet<string> = new Set([
-  "0101", "0102", "0106", "0107", "0601", "0602", "0603", "0604", "0605", "0606", "0607", "0608", "0609", "0610", "0613", "0614", "0616", "0618", "0620", "0621", "0622", "0623", "0624", "0625", "0626", "0627", "0628", "0629", "0630", "0631", "0632", "0633", "0635", "0638", "0639", "0640", "0641", "0642", "0644", "0645", "0646", "0647", "0648", "0649", "0650", "0651", "0652", "1208", "1209", "1210", "1211", "1212", "1213", "1214", "1215", "1216", "1217", "1218", "1219", "1220", "1221", "1222", "1223", "1224", "1225", "1226", "1227", "1228", "2201", "2202", "2203", "2204", "2205", "2206", "2901", "2902", "2903", "2904", "2905", "2906", "3701", "3703", "3901", "3902", "3904", "3905", "3906", "3907", "3908", "3909", "3910", "3912", "3913", "3914", "3915", "4703", "4704", "4705", "4706", "4707", "4708", "4709", "4801", "4802", "4803", "4804", "4805", "4806", "4807", "4808", "4809", "4810", "4811", "4812", "4813", "4814", "4815", "4816", "4817", "4818", "4820", "4821", "4822", "4823", "4824", "4825", "4826", "4827", "4828", "4829", "4830", "4831", "4832", "4833", "4834", "4835", "4836", "4837", "4838", "4901", "4902", "4903", "4904"
+  "0101", "0102", "0106", "0107", "0601", "0602", "0603", "0604", "0605", "0606", "0607", "0608", "0609", "0610", "0613", "0614", "0616", "0618", "0620", "0621", "0622", "0623", "0624", "0625", "0626", "0627", "0628", "0629", "0630", "0631", "0632", "0633", "0635", "0638", "0639", "0640", "0641", "0642", "0644", "0645", "0646", "0647", "0648", "0649", "0650", "0651", "0652", "1208", "1209", "1210", "1211", "1212", "1213", "1214", "1215", "1216", "1217", "1218", "1219", "1220", "1221", "1222", "1223", "1224", "1225", "1226", "1227", "1228", "2201", "2202", "2203", "2204", "2205", "2206", "3701", "3703", "3901", "3902", "3904", "3905", "3906", "3907", "3908", "3909", "3910", "3912", "3913", "3914", "3915", "4703", "4704", "4705", "4706", "4707", "4708", "4709", "4801", "4802", "4803", "4804", "4805", "4806", "4807", "4808", "4809", "4810", "4811", "4812", "4813", "4814", "4815", "4816", "4817", "4818", "4820", "4821", "4822", "4823", "4824", "4825", "4826", "4827", "4828", "4829", "4830", "4831", "4832", "4833", "4834", "4835", "4836", "4837", "4838", "4901", "4902", "4903", "4904"
 ]);
 
 // Redrawn states with NO tract estimate yet: their figures still describe the previous lines.

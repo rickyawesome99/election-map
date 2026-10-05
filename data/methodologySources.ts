@@ -137,7 +137,7 @@ export const SOURCE_GROUPS: SourceGroup[] = [
       {
         name: "electindex", url: "https://electindex.com/", kind: "project",
         uses: [{ data: "2016, 2020 and 2024 presidential votes re-aggregated onto the 2026 congressional lines", where: "data-entry/electindex_historical.csv · house_pres_2026_dist.csv → data/districtPresidentialData.ts" }],
-        note: "The file's own margin columns are two-party and are ignored; margins are recomputed from the vote columns.",
+        note: "The file's own margin columns are two-party and are ignored; margins are recomputed from the vote columns. Missouri's rows are not electindex's: its 2025 map was struck down, so they carry the 2022 lines (2020 from The Downballot, 2024 from house_statewide_results.csv, 2016 from the Dave's Redistricting overlay).",
       },
       {
         name: "The Downballot (formerly Daily Kos Elections)", url: "https://www.the-downballot.com/p/data", kind: "project",
@@ -191,7 +191,10 @@ export const SOURCE_GROUPS: SourceGroup[] = [
       },
       {
         name: "Dave's Redistricting App — VTD election data", url: "https://github.com/dra2020/vtd_data", kind: "project",
-        uses: [{ data: "2024 president by legislative district where the precinct crosswalk cannot reach: off-cycle halves of staggered senates, partly-tagged states, dense urban precincts (area-weighted overlay of 2020 VTDs carrying E_24_PRES)", where: "scripts/dra-overlay-state-leg-pres2024.py" }],
+        uses: [
+          { data: "2024 president by legislative district where the precinct crosswalk cannot reach: off-cycle halves of staggered senates, partly-tagged states, dense urban precincts (area-weighted overlay of 2020 VTDs carrying E_24_PRES)", where: "scripts/dra-overlay-state-leg-pres2024.py" },
+          { data: "2016 president on Missouri's 2022 congressional lines (E_16_PRES overlaid on the Census TIGER 119th-Congress districts; the same overlay's 2020 and 2024 land within 0.07 and 0.04 points of the published figures)", where: "scripts/dra-overlay-cd-pres.py → house_pres_2026_dist.csv" },
+        ],
         note: "No 2024 presidential layer for AK, AR, CT, ID, ME, MI, ND, NJ, OK, OR, PA, SD as of August 2026.",
       },
       {
@@ -246,6 +249,11 @@ export const SOURCE_GROUPS: SourceGroup[] = [
         name: "U.S. Census Bureau — cartographic boundary files", url: "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html", kind: "official",
         uses: [{ data: "Congressional districts for each map era: 115th (2016), 116th (2018 and 2020), 118th (2022), 119th (2024)", where: "public/congressional-districts-{2016,2018,pre2022,2022,2024}.json" }],
         note: "Census releases lag mid-decade redraws; the 119th files still carry old lines for most states that redrew for 2026.",
+      },
+      {
+        name: "U.S. Census Bureau — cartographic boundary file, states 1:500,000 (2024)", url: "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_500k.zip", kind: "official",
+        uses: [{ data: "Shoreline every displayed congressional-district map is clipped to, so bays, sounds and the Great Lakes are not drawn as land", where: "data-entry/shoreline/us-land-cb2024-500k.json → scripts/build-display-district-maps.mjs" }],
+        note: "Display only: the unclipped 2026 file stays the source for address lookups and the tract-based demographics.",
       },
       {
         name: "U.S. Census Bureau — TIGER/Line and TIGERweb", url: "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html", kind: "official",
@@ -321,7 +329,7 @@ export const SOURCE_GROUPS: SourceGroup[] = [
       {
         name: "Wikipedia election-article polling tables", publisher: "Wikimedia Foundation", url: "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections", kind: "wiki",
         uses: [{ data: "2026 general-election polls for Senate, Governor and House races (a table counts only when its header names both nominees), in the field on or after 1 January 2026", where: "data-entry/race_polls.csv → data/racePolls.ts" }],
-        note: "Needs periodic re-scraping. The CSV keeps every poll ever scraped; the build emits only those fielded in 2026. Alaska Senate rows are entered by hand from pollster releases (ranked-choice final round only) and must not be overwritten.",
+        note: "Re-scraped with `npm run refresh` (scripts/fetch-race-polls.py; append-only, so hand corrections survive); the overview shows the newest poll's date and the last check. The CSV keeps every poll ever scraped; the build emits only those fielded in 2026. Alaska Senate rows are entered by hand from pollster releases (ranked-choice final round only) and must not be overwritten.",
       },
       {
         name: "FiveThirtyEight polls archive", publisher: "via the Internet Archive", url: "https://web.archive.org/web/2025/https://projects.fivethirtyeight.com/polls/", kind: "project",

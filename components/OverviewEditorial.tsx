@@ -24,7 +24,11 @@ export type OverviewData = {
   /** State name → state TPL (R-positive). */
   stateMargins: Record<string, number>;
   keyRaces: { type: RaceType; id: string; name: string; state: string; margin: number }[];
+  /** Race-poll freshness: newest poll's field end date, and the last Wikipedia scrape (ISO dates). */
+  racePolls: { through: string; checked: string | null };
 };
+
+const shortDate = (iso: string) => new Date(`${iso}T12:00:00`).toLocaleDateString("en-US", { month: "short", day: "numeric" });
 
 function SectionHead({ children, theme }: { children: React.ReactNode; theme: Theme }) {
   return (
@@ -37,7 +41,7 @@ function SectionHead({ children, theme }: { children: React.ReactNode; theme: Th
 export default function OverviewEditorial({ data }: { data: OverviewData }) {
   const darkMode = useDarkMode();
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
-  const { electionYear, genericBallot: gb, approvalDiff, seats, totalSeats, sims, stateMargins, keyRaces } = data;
+  const { electionYear, genericBallot: gb, approvalDiff, seats, totalSeats, sims, stateMargins, keyRaces, racePolls } = data;
   const approval = { diff: approvalDiff };
   const house = seats.house;
   const senate = seats.senate;
@@ -53,6 +57,7 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
               <span className="rounded-full px-2.5 py-1 text-xs font-bold" style={{ background: t.tabBg, color: t.textMuted }}>NATIONAL</span>
               <h1 className="mt-4" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.7rem, 6.4vw, 5.25rem)", fontWeight: 700, letterSpacing: "-0.025em", lineHeight: 0.92 }}>{electionYear} Outlook</h1>
               <p className="mt-4 text-sm sm:text-base" style={{ color: t.textMuted }}>Projected Balance of Power and National Polling · General November 3, 2026</p>
+              <p className="mt-1.5 text-xs" style={{ color: t.textVeryMuted }}>Race polls through {shortDate(racePolls.through)}{racePolls.checked && <> · checked {shortDate(racePolls.checked)}</>}</p>
             </div>
             <div className="shrink-0 md:text-right">
               <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>Generic Ballot</div>
@@ -120,7 +125,7 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
 
         <section className="mt-10">
           <SectionHead theme={t}>National Polling</SectionHead>
-          <div className="pt-3"><PollingAverageCard theme={t} variant="editorial" tableHeight={288} /></div>
+          <div className="pt-3"><PollingAverageCard theme={t} /></div>
         </section>
       </main>
     </div>

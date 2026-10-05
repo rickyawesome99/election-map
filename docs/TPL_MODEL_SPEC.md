@@ -353,7 +353,21 @@ reference (post-Phase-4): 2024-President NM MAE 3.02 (pres-only baseline 1.93),
   to the residual is the ridge's even split with a one-race opponent, not
   recency. With structural money (above) the same row is residual +3.9 / WAR +1.8. Refinements deferred: λ and decay via
   harness leave-one-race-out, pre-2016 track records (Baker/Manchin/Justice are
-  n=1 in the window). Surfaced as the model page's WAR sub-tab (`/model/war`):
+  n=1 in the window).
+  **Heavy tail (2026-10-04, WAR table only):** the squared penalty made "Scott
+  +43 and five opponents at −15" cheaper than "Scott +75", so his opponents
+  booked WAR of −30 or worse. `attributeWar()` now passes a per-candidate τ to
+  `solveCandidateEffects()`, which swaps λ·a² for the pseudo-Huber
+  λ·2τ²(√(1+(a/τ)²) − 1) (ridge near zero, linear beyond τ, strictly convex;
+  solved by re-weighting λ_c = λ/√(1+(a_c/τ)²) each sweep). `WAR_TAIL` = 10,
+  `WAR_TAIL_INCUMBENT` = 5 for a candidate who ran as the incumbent at least
+  once in the window (|residual| > 30: 9 races favor the incumbent, 1 against),
+  which also breaks the tie in a one-race pair (Baker/Gonzalez); pairs with no
+  incumbent still split evenly. 10-fold held-out MAE on repeat candidates'
+  races 3.91 → 3.87 (statewide 6.35 → 6.01). `computeCandidateEffects()` (the
+  forecast) stays on the plain ridge until `forwardBacktest` tests it. Known
+  leftover: one pooled effect per candidate, so Scott's 2016 opponent reads
+  +21. Surfaced as the model page's WAR sub-tab (`/model/war`):
   Expected / vs Opp / Residual / Effect (n) / WAR columns (vs Opp tooltip shows
   the opponent's effect). Under the opponent-specific rule: Scott 2022 expected
   R−25.3, vs Siegel R−10.1, actual R+47.0 → WAR +57.1 (Siegel −30.3);
@@ -501,7 +515,7 @@ Final harness this round: S 5.65 / G 9.21 / H 4.82; RACE_SIGMA H 5.3 / S 6.0 / G
 
 ## Forward forecast — Phase 5 (race polling), 2026-09-16
 
-**Data.** `data-entry/race_polls.csv` (2026: 752 general-election polls, 137 races, scraped from the polling tables on the Wikipedia election pages; a table is used only when its header names both nominees) → `node data-entry/build-race-polls.js` → `data/racePolls.ts`, keyed `"{H|S|G}:{ST}:{race label}"` with the past-results race labels. History for the fit: `scripts/build-race-polls-history.py` → `data-entry/race_polls_history.csv` (6,698 polls, 677 race-years, 2018–2024) from the FiveThirtyEight archive via the Wayback Machine (general stage, no hypotheticals, top DEM/REP share per question; a Senate special is the class not regularly up that year).
+**Data.** `data-entry/race_polls.csv` (2026: 752 general-election polls, 137 races, scraped from the polling tables on the Wikipedia election pages; a table is used only when its header names both nominees) — refreshed by `npm run refresh` (`scripts/refresh-polls.mjs`: `scripts/fetch-race-polls.py` append-only merge → build → pollster ratings → before/after forecast diff; 877 polls in 154 races as of 2026-10-04) → `node data-entry/build-race-polls.js` → `data/racePolls.ts`, keyed `"{H|S|G}:{ST}:{race label}"` with the past-results race labels. History for the fit: `scripts/build-race-polls-history.py` → `data-entry/race_polls_history.csv` (6,698 polls, 677 race-years, 2018–2024) from the FiveThirtyEight archive via the Wayback Machine (general stage, no hypotheticals, top DEM/REP share per question; a Senate special is the class not regularly up that year).
 
 **Average** (`lib/racePollAverage.ts`): the generic-ballot recipe — one survey per pollster (its latest), full weight for 14 days after the field period then halving every 14 days, weight ∝ √sample (cap 3,000) — plus `nEff` = Σ recency weights, the evidence behind the average.
 

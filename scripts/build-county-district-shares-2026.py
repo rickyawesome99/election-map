@@ -10,7 +10,7 @@ Two bases:
                of the county's 2024 House votes (data-entry/house_district_county_results.csv,
                exact official counts). A county whose 2024 pieces recorded no votes (an unopposed
                Florida/Oklahoma seat) falls back to tracts.
-  tracts       the states that redrew for 2026 (AL CA FL LA MO NC OH TN TX UT, the same list
+  tracts       the states that redrew for 2026 (AL CA FL LA NC OH TN TX UT, the same list
                scripts/build-cd-demographics-2026-lines.py uses): every 2020 census tract is
                placed in a 2026 district by its internal point with that script's two-pass method
                (Census 119th lines for districts the redraw kept, the site's 2026 boundary file for

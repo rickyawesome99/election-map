@@ -2,7 +2,7 @@
 // The 2026 turnout estimate's backtest (2022 predicted from 2018 and the 2020 presidential vote)
 // and the SHRINK_VOTES grid, read by components/methodology/TurnoutMethodology.tsx.
 export const TURNOUT_BACKTEST = {
-  "generated": "2026-09-29",
+  "generated": "2026-10-04",
   "target": 2022,
   "basis": 2018,
   "state": {
@@ -198,9 +198,9 @@ export const TURNOUT_BACKTEST = {
   ],
   "liveShrink": 20000,
   "national": {
-    "houseVotes": 110399179,
-    "low": 106263026,
-    "high": 116428915,
+    "houseVotes": 110357321,
+    "low": 106223515,
+    "high": 116383547,
     "cvap": 240327046,
     "rate": 45.9,
     "basis": [

@@ -2,7 +2,7 @@
 // The 2024 holdout behind the Validation table on /methodology/state-tpl: each predictor is built from
 // information through 2022 and scored on 2024 after removing a uniform national shift.
 export const TPL_VALIDATION = {
-  "generatedAt": "2026-09-22",
+  "generatedAt": "2026-10-04",
   "pass": true,
   "rows": [
     {

@@ -1,10 +1,17 @@
 office,state,race,pollster,partisan,start,end,sample,population,dem,rep
 G,AK,Governor,Lake Research Partners,D,2026-02-05,2026-02-11,600,lv,52.9,47.1
 G,AK,Governor,Dittman Research,,2026-04-27,2026-04-30,451,lv,59.6,40.4
+G,AK,Governor,Alaska Survey Research,,2026-05-14,2026-05-17,1401,lv,45.6,54.4
+G,AK,Governor,Public Policy Polling,D,2026-06-24,2026-06-25,529,lv,47.8,52.2
 G,AK,Governor,Alaska Survey Research,,2026-06-30,2026-07-01,1528,lv,42.2,57.8
 G,AK,Governor,Change Research,D,2026-07-17,2026-07-19,604,lv,57.1,42.9
+G,AK,Governor,Fabrizio Ward (R)/ Impact Research,D,2026-09-08,2026-09-11,800,lv,49.4,50.6
+G,AK,Governor,co/efficient,R,2026-09-14,2026-09-17,799,lv,50.0,50.0
+G,AK,Governor,Cygnal,R,2026-09-24,2026-09-27,502,lv,51.8,48.2
+G,AK,Governor,New York Times/Siena University,,2026-09-24,2026-10-01,504,lv,46.5,53.5
 G,AL,Governor,Cygnal,R,2025-11-12,2025-11-13,605,lv,34.0,53.0
 G,AL,Governor,yes. every kid.,,2026-07-08,2026-07-11,601,lv,41.0,49.0
+G,AL,Governor,RMG Research,R,2026-09-21,2026-09-25,800,rv,37.0,50.0
 G,AR,Governor,Hendrix College,,2026-08-11,2026-08-12,1217,lv,40.0,45.0
 G,AZ,Governor,Kreate Strategies,R,2025-02-05,2025-02-07,924,lv,43.0,44.0
 G,AZ,Governor,Noble Predictive Insights,,2025-02-11,2025-02-13,1006,rv,40.0,38.0
@@ -56,7 +63,9 @@ G,CA,Governor,Independent Voter Project,,2026-02-13,2026-02-20,868,lv,56.3,43.7
 G,CA,Governor,Global Strategy Group,D,2026-02-27,2026-03-02,1340,lv,58.8,41.2
 G,CA,Governor,Politico/UC Berkeley/ TrueDot,,2026-02-25,2026-03-03,1004,lv,62.5,37.5
 G,CA,Governor,Emerson College,,2026-03-07,2026-03-09,1000,lv,66.7,33.3
+G,CA,Governor,Berkeley IGS,,2026-03-09,2026-03-14,3889,lv,60.7,39.3
 G,CA,Governor,Evitarus,D,2026-03-12,2026-03-17,2000,lv,58.3,41.7
+G,CA,Governor,Echelon Insights,R,2026-03-12,2026-03-17,600,lv,60.0,40.0
 G,CA,Governor,Kreate Strategies,,2026-03-23,2026-03-29,700,lv,60.8,39.2
 G,CA,Governor,PPIC,,2026-03-26,2026-04-03,1008,lv,66.7,33.3
 G,CA,Governor,Evitarus,D,2026-03-31,2026-04-05,1200,lv,61.1,38.9
@@ -67,6 +76,7 @@ G,CA,Governor,Emerson College,,2026-04-14,2026-04-15,1000,lv,58.7,41.3
 G,CA,Governor,Evitarus,D,2026-04-15,2026-04-17,1200,lv,60.5,39.5
 G,CA,Governor,Gudelunas Strategies,,2026-04-14,2026-04-18,800,lv,62.6,37.4
 G,CA,Governor,Kreate Strategies,,2026-04-12,2026-04-18,900,lv,57.3,42.7
+G,CA,Governor,Independent Voter Project,,2026-04-14,2026-04-20,3404,lv,59.8,40.2
 G,CA,Governor,EMC Research,D,2026-04-21,2026-04-26,1000,lv,63.4,36.6
 G,CA,Governor,Gudelunas Strategies,,2026-04-23,2026-04-27,800,lv,62.5,37.5
 G,CA,Governor,CBS News/YouGov,,2026-04-23,2026-04-27,1479,lv,63.9,36.1
@@ -80,6 +90,7 @@ G,CA,Governor,David Binder Research,D,2026-05-05,2026-05-11,,v,62.1,37.9
 G,CA,Governor,Evitarus,D,2026-05-14,2026-05-16,1200,lv,61.4,38.6
 G,CA,Governor,PPIC,,2026-05-14,2026-05-18,986,lv,65.6,34.4
 G,CA,Governor,Global Strategy Group,D,2026-05-18,2026-05-21,800,lv,62.6,37.4
+G,CA,Governor,Echelon Insights,R,2026-05-18,2026-05-21,800,lv,56.5,43.5
 G,CA,Governor,Berkeley IGS,,2026-05-19,2026-05-24,5472,lv,64.0,36.0
 G,CA,Governor,Berkeley IGS,,2026-05-19,2026-05-24,8578,rv,52.0,31.0
 G,CA,Governor,CEPP,,2026-05-23,2026-05-26,735,lv,64.6,35.4
@@ -88,16 +99,22 @@ G,CA,Governor,David Binder Research,D,2026-05-26,2026-05-27,,v,62.5,37.5
 G,CA,Governor,Kreate Strategies,,2026-05-23,2026-05-27,900,lv,62.0,38.0
 G,CA,Governor,Emerson College,,2026-05-27,2026-05-28,1000,lv,65.0,35.0
 G,CA,Governor,Public Policy Polling,D,2026-05-27,2026-05-28,686,lv,61.8,38.2
+G,CA,Governor,McLaughlin & Associates,R,2026-05-26,2026-05-28,800,lv,62.0,38.0
 G,CA,Governor,SurveyUSA,,2026-05-28,2026-05-31,1124,lv,64.4,35.6
 G,CA,Governor,Kreate Strategies,,2026-06-13,2026-06-17,900,lv,58.0,33.0
 G,CA,Governor,PPIC,,2026-06-29,2026-07-06,1003,lv,61.0,36.0
 G,CA,Governor,Berkeley IGS,,2026-08-03,2026-08-09,2310,lv,55.0,37.0
 G,CA,Governor,PPIC,,2026-09-04,2026-09-10,1103,lv,60.0,38.0
+G,CA,Governor,UC Berkeley Citrin Center/TrueDot/Politico,,2026-09-08,2026-09-14,2418,rv,48.0,34.0
+G,CA,Governor,Berkeley IGS,,2026-09-15,2026-09-20,4512,lv,58.0,33.0
+G,CA,Governor,SurveyUSA,,2026-09-15,2026-09-20,742,lv,55.0,33.0
 G,CT,Governor,University of New Hampshire,,2026-06-18,2026-06-23,828,lv,49.0,36.0
 G,CT,Governor,Sacred Heart University/WFSB/CT Insider,,2026-07-21,2026-07-26,1000,rv,50.0,30.0
 G,CT,Governor,University of New Hampshire,,2026-08-20,2026-08-24,809,lv,52.0,37.0
 G,CT,Governor,GreatBlue Research,,2026-09-01,2026-09-08,1000,rv,48.0,34.0
 G,CT,Governor,Quinnipiac University Polling Institute,,2026-09-08,2026-09-14,1288,lv,55.0,38.0
+G,CT,Governor,co/efficient,,2026-09-16,2026-09-17,979,lv,48.0,41.0
+G,CT,Governor,University of New Hampshire,,2026-09-17,2026-09-21,540,lv,55.0,38.0
 G,FL,Governor,Victory Insights,R,2025-06-07,2025-06-10,600,lv,31.0,37.0
 G,FL,Governor,AIF Center,R,2025-08-25,2025-08-27,800,lv,41.0,49.0
 G,FL,Governor,Bendixen & Amandi International,D,2025-09-07,2025-09-09,631,lv,41.0,40.0
@@ -116,6 +133,9 @@ G,FL,Governor,University of North Florida,,2026-07-08,2026-07-17,848,lv,41.0,46.
 G,FL,Governor,Targoz Market Research,,2026-07-20,2026-07-26,1026,lv,38.0,45.0
 G,FL,Governor,Hart Research Associates,D,2026-08-10,2026-08-13,600,lv,46.0,45.0
 G,FL,Governor,Change Research,D,2026-09-07,2026-09-09,1107,lv,47.0,44.0
+G,FL,Governor,St. Pete Polls,,2026-09-15,2026-09-17,913,lv,43.0,44.0
+G,FL,Governor,Stetson University,,2026-09-14,2026-09-21,830,lv,39.0,51.0
+G,FL,Governor,Change Research,D,2026-09-25,2026-09-27,1063,lv,48.0,46.0
 G,GA,Governor,Echelon Insights,R,2026-04-03,2026-04-09,407,lv,49.0,43.0
 G,GA,Governor,Concord Public Opinion Partners,D,2026-05-30,2026-06-02,510,lv,53.0,38.0
 G,GA,Governor,Beacon Research (D)/Shaw & Co. Research,R,2026-06-23,2026-06-27,1002,rv,52.0,47.0
@@ -125,6 +145,10 @@ G,GA,Governor,Fabrizio Ward (R)/Impact Research,D,2026-07-13,2026-07-16,1060,lv,
 G,GA,Governor,Quantus Insights,R,2026-07-29,2026-08-01,815,lv,46.0,45.0
 G,GA,Governor,InsiderAdvantage,R,2026-08-16,2026-08-17,800,lv,46.0,46.0
 G,GA,Governor,Rasmussen Reports,R,2026-09-14,2026-09-14,1019,lv,45.0,48.0
+G,GA,Governor,YouGov,,2026-09-15,2026-09-18,3414,rv,44.0,45.0
+G,GA,Governor,InsiderAdvantage,R,2026-09-22,2026-09-23,1200,lv,46.0,48.0
+G,GA,Governor,Big Data Poll,R,2026-09-21,2026-09-23,712,rv,50.0,50.0
+G,GA,Governor,Wedgewood Polls,,2026-10-02,2026-10-03,600,lv,49.0,51.0
 G,IA,Governor,Cygnal,R,2026-06-16,2026-06-19,600,lv,48.0,43.0
 G,IA,Governor,Beacon Research (D)/ Shaw & Co. Research,R,2026-06-23,2026-06-27,1003,rv,53.0,44.0
 G,IA,Governor,Siena University,,2026-06-15,2026-06-27,600,lv,48.0,47.0
@@ -135,10 +159,18 @@ G,IA,Governor,Emerson College,,2026-08-31,2026-09-01,750,lv,49.0,46.0
 G,IA,Governor,YouGov,,2026-09-03,2026-09-08,2169,rv,50.0,39.0
 G,IA,Governor,Cygnal,R,2026-09-09,2026-09-11,500,lv,48.0,44.0
 G,IA,Governor,co/efficient,R,2026-09-14,2026-09-16,831,lv,46.0,42.0
+G,IA,Governor,Marist University,,2026-09-17,2026-09-20,1050,rv,54.0,42.0
+G,IA,Governor,Beacon Research (D)/ Shaw & Co. Research,R,2026-09-24,2026-09-28,1008,lv,53.0,44.0
+G,IA,Governor,New York Times/Siena University,,2026-09-22,2026-10-01,606,lv,52.0,41.0
 G,ID,Governor,Change Research (I),,2026-07-28,2026-07-30,1213,lv,27.0,48.0
+G,ID,Governor,Advanced Targeting Research,,2026-09-13,2026-09-16,700,rv,27.0,37.0
 G,IL,Governor,Victory Research,,2025-11-20,2025-11-24,1208,lv,54.0,34.0
 G,KS,Governor,Global Strategy Group,D,2026-08-13,2026-08-16,600,lv,47.0,46.0
 G,KS,Governor,co/efficient,R,2026-09-08,2026-09-10,915,lv,43.0,51.0
+G,KS,Governor,Emerson College,,2026-09-15,2026-09-16,750,lv,44.0,51.0
+G,KS,Governor,Global Strategy Group,D,2026-09-13,2026-09-16,800,lv,49.0,46.0
+G,KS,Governor,Wedgewood Polls,,2026-09-22,2026-09-24,500,lv,48.0,52.0
+G,KS,Governor,New York Times/Siena University,,2026-09-22,2026-09-30,605,lv,44.0,49.0
 G,MA,Governor,UMass Amherst/YouGov,,2025-10-21,2025-10-29,800,a,51.0,26.0
 G,MA,Governor,University of New Hampshire,,2026-02-12,2026-02-16,620,lv,56.0,27.0
 G,MA,Governor,University of New Hampshire,,2026-04-16,2026-04-20,599,lv,52.0,32.0
@@ -147,6 +179,8 @@ G,MA,Governor,Suffolk University,,2026-06-08,2026-06-12,500,lv,56.0,31.0
 G,MA,Governor,University of New Hampshire,,2026-06-18,2026-06-23,623,lv,51.0,32.0
 G,MA,Governor,UMass Amherst/YouGov,,2026-08-05,2026-08-12,800,rv,53.0,33.0
 G,MA,Governor,University of New Hampshire,,2026-08-20,2026-08-24,881,lv,54.0,30.0
+G,MA,Governor,University of New Hampshire,,2026-09-17,2026-09-21,564,lv,54.0,38.0
+G,MA,Governor,MassINC Polling Group,,2026-09-14,2026-09-22,800,lv,51.0,30.0
 G,MD,Governor,Zenith Research,,2026-07-27,2026-08-03,800,lv,58.0,31.0
 G,ME,Governor,Siena University,,2026-06-19,2026-06-26,608,lv,50.0,36.0
 G,ME,Governor,Beacon Research (D)/ Shaw & Co. Research,R,2026-06-23,2026-06-27,1003,rv,53.0,42.0
@@ -154,6 +188,12 @@ G,ME,Governor,University of New Hampshire,,2026-07-15,2026-07-20,1178,lv,49.0,35
 G,ME,Governor,Beacon Research (D)/ Shaw & Co. Research,R,2026-08-06,2026-08-10,1000,rv,49.0,38.0
 G,ME,Governor,SSRS,,2026-08-31,2026-09-06,880,lv,52.0,39.0
 G,ME,Governor,YouGov,,2026-09-02,2026-09-08,1335,lv,47.0,36.0
+G,ME,Governor,University of Massachusetts/YouGov,,2026-08-28,2026-09-14,650,lv,49.0,38.0
+G,ME,Governor,University of New Hampshire,,2026-09-17,2026-09-21,1312,lv,48.0,40.0
+G,ME,Governor,Fabrizio Ward (R)/ Impact Research,D,2026-09-20,2026-09-22,982,lv,52.0,39.0
+G,ME,Governor,New York Times/Portland Press Herald/ Siena University,,2026-09-15,2026-09-22,619,lv,47.0,34.0
+G,ME,Governor,co/efficient,R,2026-09-28,2026-09-30,1240,lv,47.0,38.0
+G,ME,Governor,CBS/YouGov,,2026-09-23,2026-10-01,1133,lv,56.0,44.0
 G,MI,Governor,Target Insyght,,2025-02-03,2025-02-08,600,v,42.0,30.0
 G,MI,Governor,Mitchell Research,,2025-03-13,2025-03-13,688,lv,37.0,34.0
 G,MI,Governor,Glengariff Group,,2025-05-05,2025-05-08,600,rv,35.0,34.0
@@ -182,6 +222,15 @@ G,MI,Governor,Michigan State University/YouGov,,2026-08-10,2026-08-20,913,rv,49.
 G,MI,Governor,EPIC-MRA,,2026-08-22,2026-08-28,600,lv,48.0,44.0
 G,MI,Governor,Glengariff Group,,2026-08-31,2026-09-03,600,lv,47.0,43.0
 G,MI,Governor,SSRS,,2026-08-31,2026-09-06,843,lv,50.0,41.0
+G,MI,Governor,Emerson College,,2026-09-12,2026-09-14,1000,lv,49.0,42.0
+G,MI,Governor,The Washington Post/SSPG,,2026-09-10,2026-09-14,803,lv,53.0,41.0
+G,MI,Governor,Torchlight Strategies,R,2026-09-15,2026-09-19,643,lv,42.0,41.0
+G,MI,Governor,Suffolk University,,2026-09-16,2026-09-20,500,lv,51.0,34.0
+G,MI,Governor,Beacon Research (D)/ Cygnal,R,2026-09-18,2026-09-21,600,lv,45.0,38.0
+G,MI,Governor,New York Times/Siena University,,2026-09-15,2026-09-22,605,lv,48.0,43.0
+G,MI,Governor,co/efficient,R,2026-09-21,2026-09-23,843,lv,47.0,44.0
+G,MI,Governor,Marist University,,2026-09-24,2026-09-27,1235,rv,53.0,41.0
+G,MI,Governor,Beacon Research (D)/ Shaw & Co. Research,R,2026-09-24,2026-09-28,1203,rv,54.0,45.0
 G,MN,Governor,SurveyUSA,,2026-01-27,2026-01-30,575,rv,49.0,34.0
 G,MN,Governor,Emerson College,,2026-02-06,2026-02-08,1000,lv,51.0,38.0
 G,MN,Governor,Mason-Dixon Polling & Strategy,,2026-06-08,2026-06-10,800,lv,48.0,40.0
@@ -195,7 +244,9 @@ G,NE,Governor,Public Policy Polling,D,2026-04-06,2026-04-07,670,rv,33.0,38.0
 G,NE,Governor,Lake Research Partners,D,2026-04-25,2026-04-29,900,lv,45.0,47.0
 G,NE,Governor,Public Policy Polling,D,2026-09-01,2026-09-02,559,rv,31.0,32.0
 G,NE,Governor,SurveyUSA,,2026-09-08,2026-09-13,503,lv,35.0,43.0
+G,NE,Governor,Lake Research Partners,D,2026-09-08,2026-09-14,,rv,40.0,40.0
 G,NE,Governor,Wedgewood Polls,,2026-09-14,2026-09-16,500,lv,36.0,53.0
+G,NE,Governor,co/efficient,R,2026-09-28,2026-09-30,1113,lv,38.0,43.0
 G,NH,Governor,Saint Anselm College,,2026-03-16,2026-03-18,1491,rv,39.0,46.0
 G,NH,Governor,University of New Hampshire,,2026-04-17,2026-04-21,1117,lv,39.0,47.0
 G,NH,Governor,University of New Hampshire,,2026-06-18,2026-06-23,2232,lv,39.0,44.0
@@ -203,6 +254,8 @@ G,NH,Governor,Saint Anselm College,,2026-06-24,2026-06-25,1614,rv,37.0,45.0
 G,NH,Governor,Saint Anselm College,,2026-08-17,2026-08-18,1411,lv,38.0,49.0
 G,NH,Governor,University of New Hampshire,,2026-08-20,2026-08-24,1878,lv,39.0,49.0
 G,NH,Governor,co/efficient,R,2026-09-09,2026-09-11,958,lv,34.0,55.0
+G,NH,Governor,University of New Hampshire,,2026-09-17,2026-09-21,1418,lv,43.0,47.0
+G,NH,Governor,The New York Times/Siena University,,2026-09-15,2026-09-22,613,lv,41.0,52.0
 G,NM,Governor,McLaughlin & Associates,R,2026-07-13,2026-07-15,400,lv,46.0,45.0
 G,NM,Governor,BSP Research,D,2026-07-22,2026-08-07,800,rv,41.0,24.0
 G,NM,Governor,Research & Polling Inc.,,2026-08-21,2026-08-28,516,lv,49.0,43.0
@@ -235,9 +288,12 @@ G,NY,Governor,Pollfinity Research,,2026-06-11,2026-06-14,229,rv,50.0,40.0
 G,NY,Governor,Siena College,,2026-06-17,2026-06-23,1120,rv,52.0,32.0
 G,NY,Governor,co/efficient,R,2026-06-30,2026-07-02,1085,lv,47.0,41.0
 G,NY,Governor,Red Oak Strategic,R,2026-07-07,2026-07-12,2000,rv,47.0,43.0
+G,NY,Governor,Moxie Strategies,,2026-07-22,2026-07-28,813,rv,49.0,37.0
 G,NY,Governor,Siena College,,2026-08-03,2026-08-06,811,lv,49.0,39.0
 G,NY,Governor,Concord Public Opinion Partners,,2026-08-19,2026-08-21,505,lv,50.0,34.0
 G,NY,Governor,McLaughlin & Associates,R,2026-08-27,2026-08-31,800,lv,50.0,46.0
+G,NY,Governor,Siena College,,2026-09-11,2026-09-17,1144,lv,50.0,41.0
+G,NY,Governor,Quinnipiac University,,2026-09-17,2026-09-20,1026,lv,58.0,39.0
 G,OH,Governor,Public Policy Polling,D,2025-02-19,2025-02-20,642,rv,45.0,44.0
 G,OH,Governor,Bowling Green State University/YouGov,,2025-04-18,2025-04-24,800,rv,45.0,50.0
 G,OH,Governor,Impact Research,D,2025-07-24,2025-07-28,800,lv,46.0,47.0
@@ -258,10 +314,15 @@ G,OH,Governor,Tulchin Research,D,2026-07-29,2026-08-04,600,lv,46.0,44.0
 G,OH,Governor,Beacon Research (D)/ Shaw & Co. Research,R,2026-08-06,2026-08-10,1008,rv,48.0,50.0
 G,OH,Governor,Wedgewood Polls,,2026-08-11,2026-08-13,800,lv,47.0,46.0
 G,OH,Governor,Bowling Green State University/YouGov,,2026-09-01,2026-09-10,1000,lv,48.0,45.0
+G,OH,Governor,Big Data Poll,R,2026-09-26,2026-09-27,680,lv,47.0,48.0
+G,OH,Governor,Marist University,,2026-09-24,2026-09-27,1298,rv,50.0,44.0
+G,OH,Governor,Suffolk University,,2026-09-23,2026-09-27,500,lv,50.0,41.0
+G,OH,Governor,New York Times/Siena University,,2026-09-22,2026-10-01,616,lv,49.0,45.0
 G,OR,Governor,FM3 Research,D,2026-01-28,2026-02-04,1065,lv,45.0,40.0
 G,OR,Governor,Hoffman Research Group,R,2026-05-11,2026-05-12,603,lv,45.0,45.0
 G,OR,Governor,Public Opinion Strategies,R,2026-06-22,2026-06-24,600,rv,44.0,48.0
 G,OR,Governor,DHM Research,,2026-09-03,2026-09-09,600,lv,43.0,45.0
+G,OR,Governor,DHM Research,,2026-09-17,2026-09-27,915,lv,46.0,47.0
 G,PA,Governor,Susquehanna Polling & Research,R,2025-09-22,2025-09-28,700,lv,54.0,36.0
 G,PA,Governor,Quinnipiac University,,2025-09-25,2025-09-29,1579,rv,55.0,39.0
 G,PA,Governor,Quinnipiac University,,2026-02-19,2026-02-23,836,rv,55.0,37.0
@@ -276,14 +337,20 @@ G,PA,Governor,National Public Affairs,R,2026-07-26,2026-07-30,600,lv,50.0,43.0
 G,PA,Governor,Siena University,,2026-08-17,2026-08-21,760,lv,55.0,39.0
 G,PA,Governor,PennLive,,2026-08-18,2026-08-22,711,rv,56.0,25.0
 G,PA,Governor,Franklin & Marshall College,,2026-08-17,2026-08-23,501,rv,50.0,25.0
+G,PA,Governor,PennLive,,2026-09-16,2026-09-22,624,rv,55.0,28.0
+G,PA,Governor,The New York Times/The Philadelphia Inquirer/Siena University,,2026-09-15,2026-09-22,615,lv,58.0,38.0
 G,RI,Governor,Opinion Diagnostics,,2026-04-13,2026-04-16,802,lv,33.0,16.0
 G,RI,Governor,University of New Hampshire,,2026-06-18,2026-06-23,664,lv,38.0,22.0
 G,RI,Governor,Emerson College/WPRI-TV,,2026-08-21,2026-08-22,1000,lv,45.0,18.0
 G,RI,Governor,University of New Hampshire,,2026-08-20,2026-08-24,750,lv,40.0,15.0
+G,RI,Governor,University of New Hampshire,,2026-09-17,2026-09-21,598,lv,44.0,17.0
+G,RI,Governor,Opinion Diagnostics,,2026-09-23,2026-09-25,800,lv,41.0,19.0
 G,SC,Governor,Public Policy Polling,D,2026-07-16,2026-07-17,577,v,37.0,45.0
 G,SC,Governor,Hart Research,D,2026-08-12,2026-08-15,600,v,42.0,50.0
 G,TN,Governor,Quantus Insights,R,2025-08-05,2025-08-07,600,rv,28.0,49.0
+G,TN,Governor,Targoz Market Research,,2026-04-20,2026-04-27,1200,rv,27.0,51.0
 G,TN,Governor,Targoz Market Research,,2026-08-15,2026-08-26,1149,rv,33.0,46.0
+G,TN,Governor,TargetSmart,,2026-09-09,2026-09-12,600,lv,36.0,45.0
 G,TX,Governor,Emerson College,,2026-01-10,2026-01-12,1165,rv,42.0,50.0
 G,TX,Governor,University of Houston/YouGov,,2026-01-20,2026-01-31,1502,lv,42.0,49.0
 G,TX,Governor,GBAO,D,2026-01-26,2026-02-03,1000,lv,43.0,46.0
@@ -310,17 +377,30 @@ G,TX,Governor,Emerson College,,2026-08-09,2026-08-10,1000,lv,45.0,49.0
 G,TX,Governor,University of Texas/Texas Politics Project,,2026-08-05,2026-08-13,1200,rv,40.0,45.0
 G,TX,Governor,Texas Public Opinion Research,,2026-08-21,2026-08-24,1000,lv,42.0,49.0
 G,TX,Governor,Overton Insights,R,2026-08-24,2026-08-26,1167,lv,49.0,51.0
+G,TX,Governor,Fabrizio Ward (R)/ Impact Research,D,2026-08-30,2026-09-01,895,lv,46.0,49.0
 G,TX,Governor,Univision/YouGov,,2026-08-27,2026-09-04,1000,rv,47.0,47.0
 G,TX,Governor,Mason-Dixon,,2026-09-08,2026-09-10,625,lv,41.0,48.0
+G,TX,Governor,ReconMR/Siena University,,2026-09-08,2026-09-11,614,lv,49.0,45.0
 G,TX,Governor,SoCal Strategies,R,2026-09-12,2026-09-13,649,lv,44.0,52.0
+G,TX,Governor,Emerson College,,2026-09-12,2026-09-14,1000,lv,46.0,49.0
+G,TX,Governor,Texas Southern University,,2026-09-15,2026-09-19,1800,lv,45.0,49.0
+G,TX,Governor,Marist University,,2026-09-17,2026-09-20,1139,rv,49.0,46.0
+G,TX,Governor,Texas Public Opinion Research,,2026-09-19,2026-09-22,1007,lv,46.0,50.0
+G,TX,Governor,Stratus Intelligence,R,2026-09-22,2026-09-24,865,lv,45.0,50.0
+G,TX,Governor,Big Data Poll,,2026-09-24,2026-09-26,698,lv,44.0,49.0
+G,TX,Governor,Beacon Research (D)/ Shaw & Co. Research,R,2026-09-24,2026-09-28,1005,lv,47.0,52.0
+G,TX,Governor,New York Times/Siena University,,2026-09-22,2026-10-01,615,lv,49.0,46.0
 G,VT,Governor,University of New Hampshire,,2026-06-18,2026-06-23,887,lv,27.0,42.0
 G,VT,Governor,University of New Hampshire,,2026-07-15,2026-07-20,954,lv,33.0,44.0
+G,VT,Governor,Braun Research/Vermont Public,,2026-09-10,2026-09-21,817,rv,32.0,42.0
+G,VT,Governor,University of New Hampshire,,2026-09-17,2026-09-21,829,lv,49.0,43.0
 G,WI,Governor,TIPP Insights,R,2026-03-13,2026-03-19,1175,lv,42.0,41.0
 G,WI,Governor,RMG Research,,2026-07-20,2026-07-24,800,rv,46.0,43.0
 G,WI,Governor,GBAO,D,2026-07-30,2026-08-03,800,lv,47.0,44.0
 G,WI,Governor,Platform Communications,R,2026-08-12,2026-08-13,500,lv,48.0,44.0
 G,WI,Governor,TIPP Insights,R,2026-08-14,2026-08-18,1199,lv,47.0,43.0
 G,WI,Governor,Marquette University,,2026-08-12,2026-08-20,738,lv,49.0,44.0
+G,WI,Governor,Marquette University,,2026-09-16,2026-09-23,692,lv,49.0,46.0
 H,AK,House AK-01,Public Policy Polling,D,2026-02-11,2026-02-12,600,lv,37.0,41.0
 H,AK,House AK-01,Change Research,D,2026-03-17,2026-03-20,624,lv,43.0,57.0
 H,AK,House AK-01,Alaska Survey Research,,2026-04-16,2026-04-19,1923,lv,47.9,52.1
@@ -329,6 +409,9 @@ H,AK,House AK-01,Tavern Research,D,2026-05-18,2026-05-27,452,lv,48.0,52.0
 H,AK,House AK-01,The Bullfinch Group/Independent Center,,2026-07-13,2026-07-16,705,lv,53.1,46.9
 H,AK,House AK-01,Data for Progress,D,2026-07-28,2026-08-04,605,lv,37.0,47.0
 H,AK,House AK-01,GBAO,D,2026-08-03,2026-08-05,500,lv,42.0,46.0
+H,AK,House AK-01,Bullfinch Group,,2026-09-01,2026-09-06,820,lv,37.0,44.0
+H,AK,House AK-01,Fabrizio Ward (R)/ Impact Research,D,2026-09-08,2026-09-11,800,lv,47.1,52.9
+H,AK,House AK-01,New York Times/Siena University,,2026-09-24,2026-10-01,504,lv,47.8,52.2
 H,AL,House AL-02,Impact Research,D,2026-06-22,2026-06-25,400,lv,44.0,45.0
 H,AL,House AL-02,DCCC,D,2026-07-29,2026-07-30,421,lv,46.0,46.0
 H,AL,House AL-02,Tulchin Research,D,2026-08-24,2026-08-31,,v,47.0,47.0
@@ -343,6 +426,7 @@ H,AZ,House AZ-06,Normington Petts,D,2026-06-08,2026-06-11,500,lv,47.0,45.0
 H,CA,House CA-01,David Binder Research,D,2026-02-24,2026-02-28,700,lv,60.9,39.1
 H,CA,House CA-06,EMC Research,D,2026-05-03,2026-05-06,400,lv,54.2,45.8
 H,CA,House CA-06,The Bullfinch Group/Independent Center,,2026-07-13,2026-07-16,741,lv,39.0,35.0
+H,CA,House CA-06,The Bullfinch Group,,2026-09-01,2026-09-06,927,lv,37.0,37.0
 H,CA,House CA-22,Data for Progress,D,2026-05-01,2026-05-06,517,lv,51.1,48.9
 H,CA,House CA-22,Tulchin Research,D,2026-06-15,2026-06-21,800,lv,48.0,44.0
 H,CA,House CA-48,SurveyUSA,,2026-04-14,2026-04-19,500,lv,47.9,52.1
@@ -353,6 +437,7 @@ H,CA,House CA-48,SurveyUSA,,2026-08-27,2026-09-01,522,lv,45.0,42.0
 H,CO,House CO-03,Keating Research,D,2026-07-21,2026-07-23,500,lv,45.0,46.0
 H,CO,House CO-05,Global Strategy Group,D,2025-10-30,2025-11-03,450,lv,40.0,43.0
 H,CO,House CO-05,Global Strategy Group,D,2026-07-16,2026-07-21,450,lv,44.0,45.0
+H,CO,House CO-08,McLaughlin and Associates,R,2026-09-16,2026-09-17,400,lv,46.0,48.0
 H,FL,House FL-08,Public Policy Polling,D,2026-07-17,2026-07-18,633,rv,35.0,44.0
 H,FL,House FL-08,Inquire LLC,R,2026-07-27,2026-07-29,,lv,42.0,51.0
 H,FL,House FL-09,SEA Polling,D,2026-08-24,2026-08-30,400,rv,41.0,41.0
@@ -368,7 +453,9 @@ H,FL,House FL-22,Tulchin Research,D,2026-08-24,2026-08-31,,v,46.0,44.0
 H,FL,House FL-25,Beacon Insights,,2026-05-01,2026-05-02,461,rv,43.0,33.0
 H,FL,House FL-27,Blueprint Polling,D,2026-03-06,2026-03-08,451,rv,43.0,46.0
 H,FL,House FL-27,Bendixen & Amandi International,D,2026-08-25,2026-08-30,600,lv,45.0,45.0
+H,FL,House FL-27,Tulchin Research,D,2026-09-08,2026-09-13,600,lv,46.0,47.0
 H,GA,House GA-07,20/20 Insight,D,2026-08-20,2026-08-26,445,lv,43.0,46.0
+H,GA,House GA-11,Miller Consulting Services,,2026-08-31,2026-09-11,402,lv,42.0,40.0
 H,IA,House IA-01,Public Policy Polling,D,2025-06-18,2025-06-19,555,v,43.0,39.0
 H,IA,House IA-01,The Bullfinch Group/Independent Center,,2026-07-13,2026-07-16,705,lv,40.0,35.0
 H,IA,House IA-02,Public Policy Polling,D,2026-04-13,2026-04-14,675,rv,36.0,33.0
@@ -383,27 +470,38 @@ H,KY,House KY-06,Public Policy Polling,D,2026-04-24,2026-04-25,675,rv,37.0,37.0
 H,KY,House KY-06,GQR,D,2026-06-24,2026-06-28,440,v,39.0,42.0
 H,KY,House KY-06,DCCC,D,2026-07-29,2026-07-30,474,v,47.0,47.0
 H,KY,House KY-06,Lake Research Partners,D,2026-08-17,2026-08-23,400,lv,45.0,44.0
+H,KY,House KY-06,GQR,D,2026-09-25,2026-09-30,401,lv,42.0,37.0
 H,MD,House MD-01,Z to A Research,D,2026-07-23,2026-07-27,482,lv,39.0,52.0
+H,ME,House ME-01,University of New Hampshire,,2026-09-17,2026-09-21,679,lv,57.0,35.0
 H,ME,House ME-02,The Mellman Group,D,2025-06-04,2025-06-10,400,lv,37.0,47.0
 H,ME,House ME-02,University of New Hampshire,,2026-02-12,2026-02-16,521,lv,46.0,47.0
 H,ME,House ME-02,co/efficient,R,2026-04-26,2026-04-28,918,lv,40.0,50.0
 H,ME,House ME-02,Tulchin Research,D,2026-07-11,2026-07-16,600,lv,49.0,48.0
+H,ME,House ME-02,DCCC Targeting Team,D,2026-08-11,2026-08-13,621,lv,48.0,49.0
 H,ME,House ME-02,Impact Research,D,2026-09-08,2026-09-12,500,lv,49.0,49.0
+H,ME,House ME-02,University of New Hampshire,,2026-09-17,2026-09-21,627,lv,51.0,45.0
+H,ME,House ME-02,Tulchin Research,D,2026-09-27,2026-09-30,500,lv,50.0,48.0
 H,MI,House MI-04,Public Policy Polling,D,2025-11-20,2025-11-21,559,rv,42.0,44.0
 H,MI,House MI-04,Ragnar Research Partners,R,2026-03-12,2026-03-14,400,lv,42.0,48.0
 H,MI,House MI-04,GBAO,D,2026-05-28,2026-06-01,500,lv,48.0,45.0
+H,MI,House MI-04,GBAO,D,2026-09-13,2026-09-16,500,lv,47.0,46.0
 H,MI,House MI-07,Data for Progress,D,2026-06-24,2026-06-30,772,lv,48.0,46.0
 H,MI,House MI-07,Global Strategy Group,D,2026-08-11,2026-08-13,500,lv,49.0,47.0
 H,MI,House MI-10,Public Policy Polling,D,2026-01-16,2026-01-17,592,rv,44.0,42.0
 H,MI,House MI-10,Global Strategy Group,D,2026-08-10,2026-08-13,600,lv,45.0,45.0
 H,MN,House MN-01,Public Policy Polling,D,2026-02-02,2026-02-03,708,rv,41.0,44.0
 H,MN,House MN-01,Ragnar Research Partners,R,2026-03-12,2026-03-14,400,lv,42.0,52.0
+H,MN,House MN-01,GBAO,D,2026-09-18,2026-09-21,500,lv,47.0,46.0
 H,MN,House MN-02,Harper Polling,R,2026-06-18,2026-06-21,415,lv,45.0,40.0
+H,MN,House MN-02,Impact Research,D,2026-09-09,2026-09-13,500,lv,52.0,40.0
 H,MO,House MO-02,FM3 Research,D,2026-05-26,2026-05-31,600,lv,41.0,44.0
+H,MO,House MO-02,Remington Research Group,R,2026-09-14,2026-09-15,565,lv,42.0,43.0
 H,MT,House MT-01,Upswing Research,D,2026-04-30,2026-05-05,401,lv,43.0,48.0
 H,MT,House MT-01,Impact Research,D,2026-06-22,2026-06-25,500,lv,44.0,44.0
 H,MT,House MT-01,Rutgers University Eagleton Institute of Politics,,2026-08-27,2026-09-07,375,rv,41.0,42.0
 H,MT,House MT-01,Public Policy Polling,D,2026-09-09,2026-09-10,536,rv,45.0,43.0
+H,MT,House MT-01,Impact Research,D,2026-09-20,2026-09-23,500,lv,47.0,44.0
+H,MT,House MT-01,American Pulse,,2026-09-19,2026-09-24,314,lv,45.0,46.0
 H,MT,House MT-02,Rutgers University Eagleton Institute of Politics,,2026-08-27,2026-09-07,470,rv,26.0,48.0
 H,NC,House NC-01,GQR,D,2026-01-29,2026-02-02,500,lv,42.0,39.0
 H,NC,House NC-01,co/efficient,R,2026-04-25,2026-04-29,842,lv,41.0,41.0
@@ -411,6 +509,7 @@ H,NC,House NC-01,GQR,D,2026-06-22,2026-06-28,500,lv,45.0,41.0
 H,NC,House NC-01,GBAO,D,2026-09-08,2026-09-11,500,lv,50.0,43.0
 H,NC,House NC-03,Tulchin Research,D,2026-07-27,2026-08-02,600,lv,41.0,44.0
 H,NC,House NC-07,Public Policy Polling,D,2026-08-19,2026-08-20,517,lv,39.0,45.0
+H,NC,House NC-09,Lake Research Partners,D,2026-08-31,2026-09-03,400,lv,42.0,46.0
 H,NC,House NC-10,Ragnar Research Partners,R,2026-03-10,2026-03-12,400,lv,37.0,52.0
 H,NC,House NC-11,Public Policy Polling,D,2026-09-10,2026-09-11,531,rv,47.0,44.0
 H,NC,House NC-14,Ragnar Research Partners,R,2026-03-10,2026-03-12,400,lv,40.0,48.0
@@ -418,6 +517,7 @@ H,NE,House NE-01,Zenith Research,D,2026-05-08,2026-05-11,371,lv,38.0,45.0
 H,NE,House NE-01,Tavern Research,D,2026-05-16,2026-05-19,1079,lv,33.0,41.0
 H,NE,House NE-01,Global Strategy Group,D,2026-08-31,2026-09-03,600,lv,43.0,42.0
 H,NE,House NE-02,SurveyUSA,,2026-09-08,2026-09-13,182,lv,46.0,42.0
+H,NH,House NH-01,University of New Hampshire,,2026-09-17,2026-09-21,711,lv,46.0,42.0
 H,NH,House NH-02,Saint Anselm College,,2025-08-26,2025-08-27,881,rv,49.0,31.0
 H,NH,House NH-02,University of New Hampshire,,2025-09-17,2025-09-23,659,lv,51.0,39.0
 H,NH,House NH-02,Saint Anselm College,,2025-11-18,2025-11-19,1102,rv,40.0,35.0
@@ -425,6 +525,7 @@ H,NH,House NH-02,University of New Hampshire,,2026-01-15,2026-01-19,1093,lv,54.0
 H,NH,House NH-02,Saint Anselm College,,2026-03-16,2026-03-18,739,rv,48.0,36.0
 H,NH,House NH-02,Saint Anselm College,,2026-06-24,2026-06-25,802,rv,50.0,31.0
 H,NH,House NH-02,Saint Anselm College,,2026-08-17,2026-08-18,701,lv,50.0,35.0
+H,NH,House NH-02,University of New Hampshire,,2026-09-17,2026-09-21,702,lv,56.0,35.0
 H,NJ,House NJ-07,Z to A Research,,2026-05-24,2026-05-26,430,lv,47.0,43.0
 H,NJ,House NJ-07,StimSight Research,,2026-09-08,2026-09-12,498,lv,47.0,42.0
 H,NM,House NM-02,co/efficient,R,2026-04-26,2026-04-28,879,lv,43.0,41.0
@@ -435,12 +536,16 @@ H,NV,House NV-02,GBAO,D,2026-08-31,2026-09-03,500,lv,38.0,37.0
 H,NY,House NY-01,Public Policy Polling,D,2025-12-10,2025-12-11,579,v,38.0,41.0
 H,NY,House NY-17,FM3 Research,D,2026-06-27,2026-07-01,509,lv,51.0,45.0
 H,NY,House NY-17,co/efficient,R,2026-07-20,2026-07-22,1292,lv,45.0,50.0
+H,NY,House NY-17,Emerson College,,2026-09-27,2026-09-29,400,lv,48.0,46.0
+H,NY,House NY-17,McLaughlin & Associates,R,2026-09-28,2026-09-30,400,lv,47.0,50.0
 H,NY,House NY-18,Global Strategy Group,D,2026-07-23,2026-07-26,500,lv,53.0,39.0
 H,NY,House NY-21,Impact Research,D,2026-05-26,2026-05-31,500,lv,44.0,45.0
 H,NY,House NY-21,SurveyUSA,,2026-08-04,2026-08-08,612,lv,43.0,39.0
 H,NY,House NY-21,J.L. Partners,,2026-08-15,2026-08-17,500,lv,40.0,50.0
 H,NY,House NY-21,Impact Research,D,2026-08-30,2026-09-02,500,lv,44.0,47.0
 H,NY,House NY-21,Public Policy Polling,D,2026-09-09,2026-09-10,557,rv,43.0,48.0
+H,NY,House NY-23,Cygnal,R,2026-09-19,2026-09-21,400,lv,33.0,54.0
+H,NY,House NY-23,Public Policy Polling,D,2026-09-22,2026-09-23,626,lv,35.0,52.0
 H,OH,House OH-01,Quantus Insights,,2026-08-21,2026-08-24,509,lv,47.0,43.0
 H,OH,House OH-07,GBAO,D,2026-06-16,2026-06-20,500,lv,43.0,44.0
 H,OH,House OH-07,co/efficient,R,2026-07-29,2026-07-30,,lv,44.0,39.0
@@ -448,30 +553,41 @@ H,OH,House OH-07,Tavern Research,D,2026-08-04,2026-08-05,635,lv,54.0,46.0
 H,OH,House OH-07,co/efficient,R,2026-08-05,2026-08-06,615,lv,47.0,33.0
 H,OH,House OH-07,Bedrock Polling,D,2026-08-07,2026-08-10,866,lv,43.0,35.0
 H,OH,House OH-09,McLaughlin & Associates,R,2026-04-18,2026-04-20,400,lv,43.0,47.0
+H,OH,House OH-09,DCCC Analytics Department,,2026-09-22,2026-09-23,481,lv,48.0,48.0
 H,OH,House OH-10,FM3 Research,D,2026-07-06,2026-07-12,535,lv,41.0,48.0
 H,OH,House OH-10,Global Strategy Group,D,2026-07-20,2026-07-23,700,lv,42.0,49.0
 H,OH,House OH-15,Hart Research,D,2026-06-23,2026-06-25,550,lv,40.0,45.0
 H,OH,House OH-15,Hart Research,D,2026-08-06,2026-08-09,401,lv,37.0,41.0
+H,OH,House OH-15,Hart Research,D,2026-09-22,2026-09-24,500,lv,46.0,45.0
+H,OK,House OK-05,GBAO,D,2026-09-17,2026-09-20,500,lv,43.0,48.0
 H,PA,House PA-01,Public Policy Polling,D,2025-10-10,2025-10-11,585,lv,41.0,41.0
 H,PA,House PA-01,Global Strategy Group,D,2026-03-19,2026-03-22,400,lv,42.0,48.0
 H,PA,House PA-01,Global Strategy Group,D,2026-08-05,2026-08-09,500,lv,43.0,47.0
 H,PA,House PA-01,GQR,D,2026-08-19,2026-08-23,400,lv,48.0,49.0
+H,PA,House PA-01,Public Opinion Strategies,R,2026-09-11,2026-09-14,400,rv,40.0,49.0
 H,PA,House PA-07,GBAO,D,2026-06-29,2026-07-02,550,lv,47.0,43.0
+H,PA,House PA-07,Franklin & Marshall College,,2026-09-09,2026-09-20,357,rv,45.0,40.0
 H,PA,House PA-08,Public Policy Polling,D,2025-08-27,2025-08-28,615,v,45.0,43.0
 H,PA,House PA-08,Impact Research,D,2026-06-08,2026-06-11,500,lv,46.0,45.0
 H,PA,House PA-08,Lake Research Partners,D,2026-06-18,2026-06-23,400,v,47.0,45.0
 H,PA,House PA-10,Public Policy Polling,D,2025-07-10,2025-07-11,559,v,46.0,43.0
 H,PA,House PA-10,Public Policy Polling,D,2025-11-18,2025-11-19,549,rv,48.0,44.0
 H,PA,House PA-10,Normington Petts,D,2026-04-20,2026-04-23,400,rv,51.0,45.0
+H,PA,House PA-10,Franklin & Marshall College,,2026-09-09,2026-09-20,390,rv,47.0,44.0
 H,SC,House SC-01,GQR,D,2026-07-15,2026-07-22,400,lv,48.0,50.0
 H,SC,House SC-01,Public Policy Polling,D,2026-09-09,2026-09-10,536,rv,40.0,41.0
+H,SC,House SC-01,co/efficient,R,2026-09-30,2026-10-01,837,lv,40.0,46.0
 H,SC,House SC-07,Blueprint Polling,D,2026-07-27,2026-07-28,557,lv,37.0,41.0
+H,SD,House SD-01,Lake Research Partners,D,2026-08-26,2026-08-30,,lv,43.0,47.0
 H,TN,House TN-05,Impact Research,D,2026-08-19,2026-08-24,500,lv,40.0,48.0
 H,TN,House TN-09,Hart Research Associates,D,2026-09-01,2026-09-03,400,lv,44.0,48.0
+H,TX,House TX-09,PPP,,2026-09-18,2026-09-19,,,39.0,45.0
+H,TX,House TX-10,Change Research,,2026-09-18,2026-09-22,613,lv,41.0,48.0
 H,TX,House TX-15,Public Policy Polling,D,2025-09-10,2025-09-11,533,lv,38.0,41.0
 H,TX,House TX-15,Applecart,D,2026-05-18,2026-05-25,802,lv,48.0,46.0
 H,TX,House TX-15,Normington Petts,D,2026-07-23,2026-07-27,553,lv,51.0,45.0
 H,TX,House TX-15,Public Policy Research/Texas Southern University,,2026-08-18,2026-08-22,700,lv,50.0,45.0
+H,TX,House TX-15,Normington Petts,D,2026-09-24,2026-09-28,400,lv,54.0,41.0
 H,TX,House TX-23,Public Policy Polling,D,2026-03-10,2026-03-11,521,v,40.0,42.0
 H,TX,House TX-28,Pulse Science Decision,R,2026-06-21,2026-06-23,400,lv,38.0,46.0
 H,TX,House TX-28,Public Policy Research/Texas Southern University,,2026-08-18,2026-08-22,600,lv,45.0,34.0
@@ -479,22 +595,37 @@ H,TX,House TX-34,co/efficient,R,2026-04-25,2026-04-29,777,lv,40.0,41.0
 H,TX,House TX-34,Ragnar Research Partners,R,2026-06-14,2026-06-16,400,lv,41.0,44.0
 H,TX,House TX-34,Public Policy Research/Texas Southern University,,2026-08-18,2026-08-22,700,lv,45.0,42.0
 H,TX,House TX-35,Normington Petts,D,2026-08-27,2026-08-31,500,lv,44.0,45.0
+H,UT,House UT-01,Lighthouse Research,,2026-08-31,2026-09-10,515,lv,63.0,21.0
 H,UT,House UT-02,Crosby for Congress,D,2026-09-08,2026-09-10,762,rv,31.0,32.0
+H,UT,House UT-02,Crosby for Congress,D,2026-09-21,2026-09-23,657,lv,35.0,32.0
+H,UT,House UT-02,Lighthouse Research,,2026-09-10,2026-09-24,515,lv,34.0,39.0
+H,UT,House UT-03,Lighthouse Research,,2026-09-02,2026-09-15,508,lv,26.0,45.0
+H,UT,House UT-04,Lighthouse Research,,2026-09-08,2026-09-17,513,lv,33.0,42.0
 H,VA,House VA-01,Public Policy Polling,D,2025-08-08,2025-08-09,541,rv,40.0,41.0
+H,VA,House VA-01,DCCC Targeting Team,D,2026-09-15,2026-09-17,519,lv,46.0,47.0
+H,VA,House VA-01,The Washington Post/SSPG,,2026-09-23,2026-09-28,609,lv,50.0,46.0
 H,VA,House VA-02,Tulchin Research,D,2026-07-09,2026-07-13,700,lv,47.0,47.0
 H,VA,House VA-05,Expedition Strategies,D,2026-07-29,2026-08-01,602,lv,44.0,47.0
+H,VA,House VA-05,Expedition Strategies,D,2026-09-21,2026-09-24,400,lv,45.0,46.0
+H,VA,House VA-05,The Washington Post/SSPG,,2026-09-23,2026-09-28,600,lv,45.0,51.0
+H,VA,House VA-06,co/efficient,R,2026-09-28,2026-09-30,791,lv,29.0,59.0
 H,VT,House VT-01,University of New Hampshire,,2026-06-18,2026-06-23,887,lv,57.0,26.0
 H,VT,House VT-01,University of New Hampshire,,2026-07-15,2026-07-20,954,lv,63.0,25.0
+H,VT,House VT-01,Braun Research/Vermont Public,,2026-09-10,2026-09-21,817,rv,43.0,28.0
+H,VT,House VT-01,University of New Hampshire,,2026-09-17,2026-09-21,835,lv,66.0,30.0
 H,WA,House WA-03,Voter Sciences,R,2025-08-15,2025-08-15,,rv,41.0,48.0
 H,WA,House WA-03,Gravis Marketing,,2025-11-10,2025-11-12,752,lv,53.5,46.5
 H,WA,House WA-03,co/efficient,R,2026-04-25,2026-04-29,982,lv,34.0,41.0
 H,WA,House WA-03,Emerson College,,2026-07-08,2026-07-10,500,lv,58.1,41.9
 H,WA,House WA-03,Emerson College,,2026-07-08,2026-07-10,500,lv,42.0,43.0
+H,WA,House WA-03,DHM Research,,2026-07-08,2026-07-10,543,lv,44.0,46.0
 H,WA,House WA-04,"Fabrizio, Lee & Associates",R,2026-02-04,2026-02-05,400,lv,37.3,62.7
 H,WA,House WA-05,Change Research,D,2026-03-17,2026-03-19,617,lv,32.8,67.2
 H,WA,House WA-05,Tavern Research,D,2026-05-18,2026-05-25,578,lv,47.0,53.0
 H,WI,House WI-01,Ragnar Research Partners,R,2026-03-14,2026-03-16,400,lv,41.0,50.0
 H,WI,House WI-01,Impact Research,D,2026-08-06,2026-08-09,400,lv,48.0,49.0
+H,WI,House WI-01,DCCC Analytics Department,,2026-09-21,2026-09-23,495,lv,48.0,48.0
+H,WI,House WI-01,Impact Research,D,2026-09-28,2026-10-01,500,lv,48.0,47.0
 H,WI,House WI-03,Public Policy Polling,D,2025-10-14,2025-10-15,609,lv,44.0,42.0
 H,WI,House WI-03,Impact Research,D,2026-02-12,2026-02-17,500,lv,49.0,48.0
 H,WI,House WI-03,Impact Research,D,2026-05-26,2026-05-31,500,lv,50.0,46.0
@@ -506,6 +637,7 @@ S,AK,Senate,Alaska Survey Research,,2026-08-02,2026-08-05,1371,lv,50.8,49.2
 S,AK,Senate,Alaska Survey Research,,2026-08-20,2026-08-23,1495,lv,50.6,49.4
 S,AK,Senate,Fabrizio Ward (R)/Impact Research,,2026-09-08,2026-09-11,800,lv,53.0,47.0
 S,AL,Senate,yes. every kid.,,2026-07-08,2026-07-11,601,lv,32.0,47.0
+S,AL,Senate,RMG Research,R,2026-09-21,2026-09-25,800,rv,33.0,54.0
 S,AR,Senate,GrayHouse,R,2026-02-07,2026-02-09,550,lv,36.0,58.0
 S,AR,Senate,2040 Strategy Group,D,2026-07-17,2026-07-25,586,lv,43.0,46.0
 S,AR,Senate,Hendrix College,,2026-08-11,2026-08-12,1217,lv,47.0,44.0
@@ -516,6 +648,10 @@ S,FL,Senate Special,Stetson University,,2026-03-15,2026-04-13,848,lv,38.0,51.0
 S,FL,Senate Special,University of North Florida,,2026-07-08,2026-07-17,848,lv,42.0,50.0
 S,FL,Senate Special,Change Research,D,2026-09-07,2026-09-09,1107,lv,47.0,47.0
 S,FL,Senate Special,Quantus Insights,R,2026-09-08,2026-09-10,733,lv,43.0,50.0
+S,FL,Senate Special,St. Pete Polls,,2026-09-15,2026-09-17,913,lv,45.0,45.0
+S,FL,Senate Special,Stetson University,,2026-09-14,2026-09-21,830,lv,40.0,51.0
+S,FL,Senate Special,InsiderAdvantage,R,2026-09-20,2026-09-21,600,lv,42.0,49.0
+S,FL,Senate Special,Change Research,D,2026-09-25,2026-09-27,1063,lv,47.0,48.0
 S,GA,Senate,WPA Intelligence,R,2025-01-14,2025-01-15,500,lv,44.0,34.0
 S,GA,Senate,Trafalgar Group,R,2025-04-24,2025-04-27,1426,lv,48.0,43.0
 S,GA,Senate,Cygnal,R,2025-05-15,2025-05-17,800,lv,46.0,43.0
@@ -529,6 +665,11 @@ S,GA,Senate,Fabrizio Ward (R)/Impact Research,D,2026-07-13,2026-07-16,1060,lv,52
 S,GA,Senate,InsiderAdvantage,R,2026-08-16,2026-08-17,800,lv,50.0,43.0
 S,GA,Senate,Trafalgar Group,R,2026-09-10,2026-09-12,1091,lv,49.0,43.0
 S,GA,Senate,Rasmussen Reports,R,2026-09-14,2026-09-14,1019,lv,51.0,42.0
+S,GA,Senate,Quantus Insights,R,2026-09-14,2026-09-16,645,lv,48.0,44.0
+S,GA,Senate,YouGov,,2026-09-15,2026-09-18,3416,rv,51.0,41.0
+S,GA,Senate,InsiderAdvantage,R,2026-09-22,2026-09-23,1200,lv,50.0,42.0
+S,GA,Senate,Big Data Poll,R,2026-09-21,2026-09-23,721,rv,51.0,40.0
+S,GA,Senate,Wedgewood Polls,,2026-10-02,2026-10-03,600,lv,55.0,45.0
 S,IA,Senate,Change Research,D,2026-01-08,2026-01-11,1108,lv,41.0,44.0
 S,IA,Senate,GQR,D,2026-03-10,2026-03-16,1200,lv,43.0,47.0
 S,IA,Senate,Echelon Insights,R,2026-04-03,2026-04-09,377,lv,46.0,45.0
@@ -545,22 +686,38 @@ S,IA,Senate,Global Strategy Group,D,2026-08-27,2026-08-31,800,lv,46.0,42.0
 S,IA,Senate,Emerson College,,2026-08-31,2026-09-01,750,lv,45.0,50.0
 S,IA,Senate,YouGov,,2026-09-03,2026-09-08,2169,rv,44.0,43.0
 S,IA,Senate,Rasmussen Reports,R,2026-09-08,2026-09-10,1031,lv,45.0,40.0
+S,IA,Senate,Cygnal,R,2026-09-09,2026-09-11,500,lv,43.0,43.0
 S,IA,Senate,co/efficient,R,2026-09-14,2026-09-16,831,lv,42.0,46.0
+S,IA,Senate,Trafalgar Group,R,2026-09-16,2026-09-18,1089,lv,42.0,44.0
+S,IA,Senate,Marist University,,2026-09-17,2026-09-20,1050,rv,50.0,42.0
+S,IA,Senate,InsiderAdvantage,R,2026-09-22,2026-09-23,1200,lv,47.0,46.0
+S,IA,Senate,Beacon Research (D)/ Shaw & Co. Research,R,2026-09-24,2026-09-28,1008,lv,49.0,47.0
+S,IA,Senate,Quantus Insights,R,2026-09-28,2026-09-29,738,lv,46.0,47.0
+S,IA,Senate,Rasmussen Reports,R,2026-09-28,2026-09-30,1048,lv,47.0,43.0
+S,IA,Senate,New York Times/Siena University,,2026-09-22,2026-10-01,606,lv,47.0,48.0
 S,ID,Senate,Public Policy Polling (I),,2026-03-16,2026-03-17,639,rv,34.0,48.0
 S,ID,Senate,The Bullfinch Group,,2026-05-29,2026-06-01,774,rv,36.0,40.0
 S,ID,Senate,Peak Insights,R,2026-06-06,2026-06-07,500,lv,7.0,55.0
 S,ID,Senate,Change Research (I),,2026-07-28,2026-07-30,1213,lv,19.0,43.0
 S,ID,Senate,The Bullfinch Group,,2026-08-04,2026-08-07,608,lv,38.0,33.0
 S,ID,Senate,Peak Insights,R,2026-08-11,2026-08-13,500,lv,18.0,52.0
+S,ID,Senate,Advanced Targeting Research,,2026-09-13,2026-09-16,700,rv,50.0,39.0
+S,ID,Senate,Peak Insights,R,2026-09-28,2026-09-30,500,lv,24.0,49.0
 S,KS,Senate,Tavern Research,D,2026-01-26,2026-01-28,1013,lv,46.0,54.0
 S,KS,Senate,Tavern Research,D,2026-01-26,2026-01-28,1013,lv,51.0,49.0
 S,KS,Senate,GBAO,D,2026-07-08,2026-07-13,600,lv,43.0,47.0
 S,KS,Senate,Public Policy Polling,D,2026-08-07,2026-08-08,569,lv,45.0,46.0
 S,KS,Senate,Global Strategy Group,D,2026-08-12,2026-08-16,800,lv,44.0,43.0
 S,KS,Senate,co/efficient,R,2026-09-08,2026-09-10,915,lv,44.0,49.0
+S,KS,Senate,Emerson College,,2026-09-15,2026-09-16,750,lv,45.0,43.0
+S,KS,Senate,Global Strategy Group,D,2026-09-13,2026-09-16,800,lv,49.0,47.0
+S,KS,Senate,Wedgewood Polls,,2026-09-22,2026-09-24,500,lv,50.0,48.0
+S,KS,Senate,New York Times/Siena University,,2026-09-22,2026-09-30,605,lv,45.0,45.0
+S,KS,Senate,Trafalgar Group,R,2026-09-29,2026-10-01,1095,lv,44.0,44.0
 S,KY,Senate,Public Policy Polling,D,2025-12-18,2025-12-19,650,v,38.0,49.0
 S,KY,Senate,Global Strategy Group,D,2026-08-24,2026-08-27,600,lv,40.0,49.0
 S,LA,Senate,Public Policy Polling,D,2026-07-21,2026-07-22,518,rv,37.0,41.0
+S,LA,Senate,Hart Research Associates,D,2026-09-17,2026-09-19,500,lv,44.0,48.0
 S,MA,Senate,SurveyUSA,,2025-02-28,2025-03-04,775,rv,45.0,26.0
 S,MA,Senate,Suffolk University,,2025-11-19,2025-11-23,500,rv,54.0,31.0
 S,MA,Senate,Cygnal,R,2026-01-22,2026-01-25,800,lv,54.0,30.0
@@ -570,6 +727,8 @@ S,MA,Senate,Suffolk University,,2026-06-08,2026-06-12,500,lv,55.0,30.0
 S,MA,Senate,University of New Hampshire,,2026-06-18,2026-06-23,623,lv,50.0,34.0
 S,MA,Senate,UMass Amherst/YouGov,,2026-08-05,2026-08-12,800,rv,51.0,30.0
 S,MA,Senate,University of New Hampshire,,2026-08-20,2026-08-24,881,lv,49.0,30.0
+S,MA,Senate,University of New Hampshire,,2026-09-17,2026-09-21,564,lv,53.0,30.0
+S,MA,Senate,MassINC Polling Group,,2026-09-14,2026-09-22,800,lv,52.0,26.0
 S,ME,Senate,Wedgewood Polls,D,2026-07-04,2026-07-06,405,lv,48.0,43.0
 S,ME,Senate,Public Policy Polling,D,2026-07-07,2026-07-07,785,lv,49.0,44.0
 S,ME,Senate,Z to A Research,D,2026-07-07,2026-07-08,988,lv,47.0,48.0
@@ -580,7 +739,16 @@ S,ME,Senate,Abacus Data,,2026-08-26,2026-08-28,327,lv,52.0,43.0
 S,ME,Senate,SSRS,,2026-08-31,2026-09-06,880,lv,48.0,45.0
 S,ME,Senate,YouGov,,2026-09-02,2026-09-08,1335,lv,48.0,44.0
 S,ME,Senate,Rasmussen Reports,R,2026-09-08,2026-09-10,1033,lv,46.0,45.0
+S,ME,Senate,University of Massachusetts/YouGov,,2026-08-28,2026-09-14,650,lv,48.0,43.0
 S,ME,Senate,Quantus Insights,R,2026-09-14,2026-09-15,621,lv,47.0,48.0
+S,ME,Senate,University of New Hampshire,,2026-09-17,2026-09-21,1312,lv,51.0,47.0
+S,ME,Senate,Fabrizio Ward (R)/ Impact Research,D,2026-09-20,2026-09-22,982,lv,50.0,47.0
+S,ME,Senate,New York Times/Siena University,,2026-09-15,2026-09-22,619,lv,46.0,49.0
+S,ME,Senate,InsiderAdvantage,R,2026-09-22,2026-09-23,1200,lv,46.0,46.0
+S,ME,Senate,co/efficient,R,2026-09-28,2026-09-30,1240,lv,46.0,48.0
+S,ME,Senate,Trafalgar Group,R,2026-09-29,2026-10-01,1091,lv,46.0,46.0
+S,ME,Senate,Wedgewood Polls,,2026-09-27,2026-10-01,400,lv,52.0,48.0
+S,ME,Senate,CBS News/YouGov,,2026-09-23,2026-10-01,1136,lv,50.0,50.0
 S,MI,Senate,Glengariff Group,,2025-05-05,2025-05-08,600,rv,41.0,47.0
 S,MI,Senate,Rosetta Stone Communications,R,2025-10-23,2025-10-25,637,lv,31.0,45.0
 S,MI,Senate,Mitchell Research & Communications,,2025-11-18,2025-11-21,616,lv,38.0,41.0
@@ -609,6 +777,19 @@ S,MI,Senate,EPIC-MRA,,2026-08-22,2026-08-28,600,lv,50.0,45.0
 S,MI,Senate,Glengariff Group,,2026-08-31,2026-09-03,600,lv,44.0,46.0
 S,MI,Senate,SSRS,,2026-08-31,2026-09-06,843,lv,47.0,44.0
 S,MI,Senate,Trafalgar Group,R,2026-09-07,2026-09-09,1079,lv,46.0,45.0
+S,MI,Senate,Emerson College,,2026-09-12,2026-09-14,1000,lv,48.0,46.0
+S,MI,Senate,The Washington Post/SSPG,,2026-09-10,2026-09-14,803,lv,48.0,45.0
+S,MI,Senate,InsiderAdvantage,R,2026-09-16,2026-09-17,1200,lv,47.0,45.0
+S,MI,Senate,Torchlight Strategies,R,2026-09-15,2026-09-19,643,lv,43.0,44.0
+S,MI,Senate,Suffolk University,,2026-09-16,2026-09-20,500,lv,47.0,40.0
+S,MI,Senate,Cygnal (R)/Beacon Research,D,2026-09-18,2026-09-21,600,lv,45.0,40.0
+S,MI,Senate,GBAO,D,2026-09-19,2026-09-22,800,lv,48.0,44.0
+S,MI,Senate,New York Times/Siena University,,2026-09-15,2026-09-22,605,lv,49.0,44.0
+S,MI,Senate,co/efficient,R,2026-09-21,2026-09-23,843,lv,45.0,45.0
+S,MI,Senate,Big Data Poll,R,2026-09-22,2026-09-24,678,lv,47.0,42.0
+S,MI,Senate,Marist University,,2026-09-24,2026-09-27,1235,rv,51.0,44.0
+S,MI,Senate,Beacon Research (D)/ Shaw & Co. Research,R,2026-09-24,2026-09-28,1028,lv,50.0,49.0
+S,MI,Senate,Trafalgar Group,R,2026-09-28,2026-09-30,1085,lv,47.0,45.0
 S,MN,Senate,Impact Research,D,2025-07-08,2025-07-11,604,lv,48.0,45.0
 S,MN,Senate,Emerson College,,2026-02-06,2026-02-08,1000,lv,47.0,41.0
 S,MN,Senate,Impact Research,D,2026-05-26,2026-05-28,808,lv,51.0,44.0
@@ -618,6 +799,8 @@ S,MN,Senate,TIPP Insights,R,2026-08-31,2026-09-02,1494,rv,40.0,38.0
 S,MN,Senate,Quantus Insights,R,2026-09-08,2026-09-10,720,lv,48.0,44.0
 S,MN,Senate,KSTP/SurveyUSA,,2026-09-09,2026-09-14,654,lv,42.0,42.0
 S,MN,Senate,co/efficient,R,2026-09-14,2026-09-15,833,lv,43.0,42.0
+S,MN,Senate,InsiderAdvantage,R,2026-09-28,2026-09-29,1200,lv,46.0,45.0
+S,MN,Senate,Big Data Poll,R,2026-09-29,2026-09-30,622,lv,40.0,38.0
 S,MS,Senate,Impact Research,D,2025-06-18,2025-06-22,500,rv,38.0,51.0
 S,MS,Senate,Impact Research,D,2026-04-08,2026-04-12,500,lv,39.0,42.0
 S,MS,Senate,Data for Progress,D,2026-08-05,2026-08-15,1018,lv,38.0,44.0
@@ -635,6 +818,8 @@ S,MT,Senate,Tavern Research,D,2026-07-23,2026-07-27,517,lv,41.0,59.0
 S,MT,Senate,Hart Research,D,2026-08-01,2026-08-04,800,lv,15.0,45.0
 S,MT,Senate,Peak Insights,,2026-08-23,2026-08-25,600,lv,19.0,44.0
 S,MT,Senate,Rutgers University Eagleton Institute of Politics,,2026-08-27,2026-09-07,845,rv,16.0,38.0
+S,MT,Senate,Quantus Insights,R,2026-09-14,2026-09-15,625,lv,23.0,44.0
+S,MT,Senate,Aspect Strategic,,2026-09-07,2026-09-15,715,lv,14.0,44.0
 S,NC,Senate,Emerson College,,2025-07-28,2025-07-30,1000,rv,47.0,41.0
 S,NC,Senate,Victory Insights,R,2025-07-28,2025-07-30,600,lv,43.0,40.0
 S,NC,Senate,Harper Polling,R,2025-08-11,2025-08-12,600,rv,47.0,39.0
@@ -665,14 +850,25 @@ S,NC,Senate,High Point University/YouGov,,2026-08-03,2026-08-12,800,rv,48.0,41.0
 S,NC,Senate,Elon University/YouGov,,2026-08-21,2026-08-31,565,lv,49.0,38.0
 S,NC,Senate,East Carolina University,,2026-08-31,2026-09-03,675,lv,46.0,39.0
 S,NC,Senate,The Trafalgar Group,R,2026-09-08,2026-09-10,1084,lv,48.0,42.0
+S,NC,Senate,Harper Polling,R,2026-09-13,2026-09-15,608,lv,49.0,34.0
+S,NC,Senate,Catawba College/YouGov,,2026-09-04,2026-09-15,885,lv,47.0,35.0
+S,NC,Senate,High Point University,,2026-09-09,2026-09-16,813,rv,49.0,39.0
+S,NC,Senate,InsiderAdvantage,R,2026-09-16,2026-09-17,1200,lv,48.0,43.0
+S,NC,Senate,YouGov,,2026-09-15,2026-09-18,3864,rv,52.0,41.0
+S,NC,Senate,Fabrizio Ward (R)/ Impact Research,D,2026-09-17,2026-09-20,1806,lv,53.0,42.0
+S,NC,Senate,Opinion Diagnostics,,2026-09-17,2026-09-20,857,lv,51.0,41.0
+S,NC,Senate,Quantus Insights,R,2026-09-21,2026-09-22,686,lv,48.0,43.0
+S,NC,Senate,Big Data Poll,,2026-09-27,2026-09-29,642,lv,47.0,35.0
 S,NE,Senate,Change Research,D,2025-03-28,2025-04-01,524,lv,45.0,46.0
 S,NE,Senate,Lake Research Partners,D,2025-07-23,2025-07-29,900,lv,47.0,46.0
 S,NE,Senate,Lake Research Partners,D,2025-12-11,2025-12-17,900,lv,47.0,48.0
 S,NE,Senate,Impact Research,D,2026-02-02,2026-02-05,600,lv,47.0,48.0
 S,NE,Senate,Tavern Research,D,2026-05-08,2026-05-11,1165,lv,47.0,42.0
 S,NE,Senate,Impact Research,D,2026-08-09,2026-08-13,600,lv,47.0,47.0
+S,NE,Senate,GBAO,D,2026-09-03,2026-09-08,800,lv,47.0,46.0
 S,NE,Senate,SurveyUSA,,2026-09-08,2026-09-13,503,lv,46.0,42.0
 S,NE,Senate,Wedgewood Polls,,2026-09-14,2026-09-16,500,lv,48.0,52.0
+S,NE,Senate,co/efficient,R,2026-09-28,2026-09-30,1113,lv,43.0,48.0
 S,NH,Senate,Quantus Insights,R,2025-03-17,2025-03-19,650,rv,44.0,53.0
 S,NH,Senate,1892 Polling,R,2025-09-02,2025-09-04,500,lv,45.0,43.0
 S,NH,Senate,co/efficient,R,2025-09-10,2025-09-12,904,lv,46.0,43.0
@@ -694,6 +890,10 @@ S,NH,Senate,University of New Hampshire,,2026-08-20,2026-08-24,1878,lv,43.0,45.0
 S,NH,Senate,"Fabrizio, Lee, & Associates",R,2026-08-27,2026-08-30,600,lv,36.0,37.0
 S,NH,Senate,Rasmussen Reports,R,2026-09-08,2026-09-10,1000,lv,45.0,34.0
 S,NH,Senate,co/efficient,R,2026-09-09,2026-09-11,958,lv,46.0,46.0
+S,NH,Senate,InsiderAdvantage,R,2026-09-16,2026-09-17,1200,lv,48.0,40.0
+S,NH,Senate,University of New Hampshire,,2026-09-17,2026-09-21,1418,lv,50.0,42.0
+S,NH,Senate,New York Times/Siena University,,2026-09-15,2026-09-22,613,lv,50.0,45.0
+S,NH,Senate,Trafalgar Group,R,2026-09-26,2026-09-27,1082,lv,47.0,41.0
 S,NM,Senate,Research & Polling Inc.,,2026-08-21,2026-08-28,516,lv,53.0,38.0
 S,OH,Senate Special,Bowling Green State University/YouGov,,2025-02-14,2025-02-21,800,rv,41.0,47.0
 S,OH,Senate Special,Bowling Green State University/YouGov,,2025-04-18,2025-04-24,800,rv,46.0,49.0
@@ -716,10 +916,19 @@ S,OH,Senate Special,Wedgewood Polls,,2026-08-11,2026-08-13,800,lv,48.0,44.0
 S,OH,Senate Special,Abacus Data,,2026-08-26,2026-08-28,306,lv,52.0,46.0
 S,OH,Senate Special,InsiderAdvantage,R,2026-09-08,2026-09-09,1200,lv,47.0,42.0
 S,OH,Senate Special,Bowling Green State University/YouGov,,2026-09-01,2026-09-10,1000,lv,48.0,45.0
+S,OH,Senate Special,Trafalgar Group,R,2026-09-14,2026-09-16,1085,lv,45.0,42.0
+S,OH,Senate Special,Rasmussen Reports,R,2026-09-22,2026-09-23,1115,lv,46.0,43.0
+S,OH,Senate Special,Quantus Insights,R,2026-09-21,2026-09-23,695,lv,47.0,47.0
+S,OH,Senate Special,Big Data Poll,R,2026-09-26,2026-09-27,680,lv,46.0,43.0
+S,OH,Senate Special,Marist University,,2026-09-24,2026-09-27,1298,rv,51.0,43.0
+S,OH,Senate Special,Suffolk University,,2026-09-23,2026-09-27,500,lv,47.0,44.0
+S,OH,Senate Special,InsiderAdvantage,R,2026-09-28,2026-09-29,1200,lv,44.0,43.0
+S,OH,Senate Special,New York Times/Siena University,,2026-09-22,2026-10-01,616,lv,49.0,46.0
 S,OK,Senate,CHS & Associates,,2026-08-03,2026-08-06,500,rv,25.0,49.0
 S,RI,Senate,University of New Hampshire,,2026-04-16,2026-04-20,556,lv,52.0,34.0
 S,RI,Senate,University of New Hampshire,,2026-06-18,2026-06-23,664,lv,52.0,35.0
 S,RI,Senate,University of New Hampshire,,2026-08-20,2026-08-24,750,lv,51.0,31.0
+S,RI,Senate,University of New Hampshire,,2026-09-17,2026-09-21,595,lv,53.0,33.0
 S,SC,Senate,Public Policy Polling,D,2025-11-21,2025-11-22,704,v,36.0,42.0
 S,SC,Senate,Impact Research,D,2026-02-25,2026-03-01,700,lv,42.0,47.0
 S,SC,Senate,Impact Research,D,2026-06-17,2026-06-22,700,lv,45.0,48.0
@@ -727,6 +936,8 @@ S,SC,Senate,Impact Research,D,2026-08-14,2026-08-22,900,lv,42.0,39.0
 S,SC,Senate,Impact Research,D,2026-08-18,2026-08-24,700,lv,41.0,41.0
 S,SC,Senate,Abacus Data,,2026-08-26,2026-08-28,306,lv,42.0,55.0
 S,SC,Senate,InsiderAdvantage,R,2026-09-08,2026-09-09,1200,lv,43.0,45.0
+S,SC,Senate,Trafalgar Group,R,2026-09-23,2026-09-25,1087,lv,42.0,43.0
+S,SC,Senate,InsiderAdvantage,R,2026-09-28,2026-09-29,1200,lv,45.0,46.0
 S,SD,Senate,Public Policy Polling,D,2025-07-30,2025-07-31,524,lv,28.0,41.0
 S,SD,Senate,Public Policy Polling,D,2025-11-13,2025-11-14,814,rv,31.0,44.0
 S,SD,Senate,Public Policy Polling,D,2026-02-17,2026-02-18,685,rv,35.0,47.0
@@ -768,6 +979,18 @@ S,TX,Senate,Fabrizio Ward (R)/ Impact Research,D,2026-08-30,2026-09-01,895,lv,48
 S,TX,Senate,Univision/YouGov,,2026-08-27,2026-09-04,1000,rv,48.0,43.0
 S,TX,Senate,InsiderAdvantage,,2026-09-08,2026-09-09,1200,lv,47.0,46.0
 S,TX,Senate,Mason-Dixon,,2026-09-08,2026-09-10,625,lv,46.0,43.0
+S,TX,Senate,ReconMR/Siena University,,2026-09-08,2026-09-11,614,lv,49.0,43.0
 S,TX,Senate,SoCal Strategies,,2026-09-12,2026-09-13,649,lv,50.0,45.0
+S,TX,Senate,Emerson College,,2026-09-12,2026-09-14,1000,lv,47.0,46.0
+S,TX,Senate,Trafalgar Group,R,2026-09-15,2026-09-17,1079,lv,46.0,45.0
+S,TX,Senate,Texas Southern University,,2026-09-15,2026-09-19,1800,lv,47.0,46.0
+S,TX,Senate,Marist University,,2026-09-17,2026-09-20,1139,rv,50.0,44.0
+S,TX,Senate,Texas Public Opinion Research,D,2026-09-19,2026-09-22,1007,lv,49.0,44.0
+S,TX,Senate,Stratus Intelligence,R,2026-09-22,2026-09-24,856,lv,48.0,48.0
+S,TX,Senate,Big Data Poll,,2026-09-24,2026-09-26,698,lv,47.0,45.0
+S,TX,Senate,Pulse Decision Science,R,2026-09-24,2026-09-27,800,lv,45.0,48.0
+S,TX,Senate,Beacon Research (D)/ Shaw & Co. Research,R,2026-09-24,2026-09-28,881,lv,51.0,49.0
+S,TX,Senate,Rasmussen Reports,R,2026-09-28,2026-09-29,1128,lv,46.0,45.0
+S,TX,Senate,New York Times/Siena University,,2026-09-21,2026-09-30,615,lv,51.0,45.0
 S,VA,Senate,The Public Sentiment Institute/ Virginia Project,R,2026-05-01,2026-05-05,1047,lv,55.0,29.0
 S,VA,Senate,The Public Sentiment Institute,,2026-06-12,2026-06-16,996,lv,51.0,33.0

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { FORECAST_CONSTANTS as F } from "@/data/tplModelData";
-import { computeWarTable, getWarMoneyModel, warCandidateKey, FF_K, FF_MAX, WAR_LAMBDA, WAR_RECENCY_DECAY, WAR_RECENCY_DECAY_STATEWIDE, type WarRow } from "@/lib/tplCompute";
+import { computeWarTable, getWarMoneyModel, warCandidateKey, FF_K, FF_MAX, WAR_LAMBDA, WAR_TAIL, WAR_TAIL_INCUMBENT, WAR_RECENCY_DECAY, WAR_RECENCY_DECAY_STATEWIDE, type WarRow } from "@/lib/tplCompute";
 import { Block, Code, Constants, D, DataTable, Defs, FilesAndCommands, Formula, Ledger, M, P, R, Section, signed } from "./kit";
 
 const link = (href: string, text: ReactNode) => <Link href={href} className="underline underline-offset-2">{text}</Link>;
@@ -75,12 +75,14 @@ export default function WarMethodology() {
       <Section id="effects" kicker="Number 2" title="Vs. Opponent (generic vs this opponent)"
         lede="A single race yields one residual for two candidates and cannot split it. Candidate effects are what make the opponent-specific expectation identifiable: they are estimated across every race each candidate has run.">
         <Formula lines={[
-          `minimise  Σ w_j × (r_j − a_R + a_D)²  +  λ × Σ a_c²                      λ = ${WAR_LAMBDA}`,
+          `minimise  Σ w_j × (r_j − a_R + a_D)²  +  λ × Σ ρ(a_c)                    λ = ${WAR_LAMBDA}`,
+          `ρ(a) = 2τ² × (√(1 + (a/τ)²) − 1)       ≈ a² near zero, 2τ|a| far out      τ = ${WAR_TAIL} · ${WAR_TAIL_INCUMBENT} for a candidate who has run as the incumbent`,
           `w_j = boundary weight × decay^|year_j − Y|                               decay ${WAR_RECENCY_DECAY_STATEWIDE} statewide · ${WAR_RECENCY_DECAY} House`,
           "one solve per target year Y, warm-started — an effect is always \"as of\" the race being scored",
-        ]} note="Weighted coordinate descent on the normal equations, to convergence (< 200 sweeps)." />
+        ]} note="Weighted coordinate descent on the normal equations, the penalty re-weighted each sweep (λ_c = λ / √(1 + (a_c/τ)²)), to convergence. The penalty is strictly convex, so the solution is unique." />
         <Defs items={[
           { term: "The ridge penalty", def: <>Encodes &ldquo;an unseen candidate is replacement level&rdquo;. A one-race candidate keeps what is left after a known opponent&rsquo;s effect, shrunk by 1/(1+λ); two one-race candidates split the residual evenly (⅓ each as effect, leaving ε = ⅓), so each books a WAR of ⅔ of it.</> },
+          { term: "The heavy tail", def: <>A squared penalty finds one +43 candidate and five −15 opponents cheaper than one +75 candidate, so every Democrat who faced Phil Scott absorbed part of his popularity and booked a WAR of −30 or worse. Beyond τ the penalty grows only linearly, so an extraordinary candidate is no longer cheaper to explain as a run of terrible opponents; below τ it is the same ridge, and all but a few dozen rows are unchanged. τ is smaller for a candidate who has run as the incumbent at least once in the window, because the tail belongs to them: of the 12 races more than 30 points off Expected, 9 favor the incumbent and 1 goes against. That is also what splits a one-race pair such as Baker and Gonzalez; a pair with no incumbent (Justice and Cole) still splits evenly. An opponent&rsquo;s WAR against such a candidate is bounded but not zero, and where the candidate&rsquo;s own strength moved over time (Scott in 2016 against 2024) the early opponents read too high: see Known limitations.</> },
           { term: "Pooling", def: <>Effects are keyed <Code>state | party | normalized name</Code> and pooled across offices: Hogan&rsquo;s Governor and Senate races inform one effect.</> },
           { term: "Recency", def: "The race being scored always carries full weight; a candidate's other races fade with distance. The same candidate therefore shows different effects on different rows. Measured persistence of repeat candidates' residuals: slope ≈ 0.45 at 1–4 year gaps, 0.26 at 5–6, ≈ 0 at 7–9." },
           { term: "Effective races", def: "Σ of the recency weights, shown beside each Effect on the WAR tab." },
@@ -88,6 +90,8 @@ export default function WarMethodology() {
         ]} />
         <Constants rows={[
           { name: "WAR_LAMBDA", value: WAR_LAMBDA, basis: "measured", meaning: "Ridge penalty on candidate effects.", source: "Leave-one-out persistence of repeat candidates' residuals: r = 0.66 (0.38 excluding |r| > 25), slope 0.68 → λ ≈ 1. Harness calibration by leave-one-race-out is deferred." },
+          { name: "WAR_TAIL", value: WAR_TAIL, basis: "calibrated", meaning: "τ: where the penalty on a candidate effect turns from squared to linear, in points.", source: "10-fold held-out error on repeat candidates' races: ridge 3.91, τ 10 for everyone 3.88, 10 / 5 3.87 (statewide 6.35 → 6.12 → 6.01); flat from 8 / 4 to 15 / 5." },
+          { name: "WAR_TAIL_INCUMBENT", value: WAR_TAIL_INCUMBENT, basis: "calibrated", meaning: "τ for a candidate who ran as the incumbent at least once in the window.", source: "Same test; races with |residual| > 30: 9 favor the incumbent, 1 against, 2 open seats." },
           { name: "WAR_RECENCY_DECAY", value: WAR_RECENCY_DECAY, basis: "measured", meaning: "Per-year fade of a past House race (2 yrs 0.64 · 4 yrs 0.41 · 8 yrs 0.17).", source: "Tracks the measured persistence curve." },
           { name: "WAR_RECENCY_DECAY_STATEWIDE", value: WAR_RECENCY_DECAY_STATEWIDE, basis: "decision", meaning: "The same for Senate / Governor / President races: a statewide brand persists longer.", source: "Decay sweep flat within 0.06 MAE across 0.8–1.0." },
           { name: "FF_K · FF_MAX", value: `${FF_K} · ±${FF_MAX}`, basis: "calibrated", meaning: "Points per point of STRUCTURAL money gap in Expected, and its cap — the TPL strip's constants." },
@@ -115,6 +119,7 @@ export default function WarMethodology() {
           ["Money in Expected", `Structural gap only, k ${FF_K} cap ±${FF_MAX}`, `FULL residual-basis money (k ${F.MONEY_K.H}/${F.MONEY_K.S}/${F.MONEY_K.G}) — money is its own forward term`],
           ["Incumbency", "Stripped from Expected for the ridge; an incumbent's own incumbency added back to WAR (Incumb.)", "Stripped from the effects; the forecast adds incumbency as its own term"],
           ["Reads as", "Value over a replacement-level (non-incumbent) nominee, money beyond the situation included", "Quality net of money and incumbency"],
+          ["Penalty on effects", `Heavy-tailed: squared up to τ (${WAR_TAIL} · ${WAR_TAIL_INCUMBENT} for incumbents), linear beyond`, "Plain ridge (squared throughout) — the heavy tail has not been through the forward backtest"],
           ["Solved as of", "Each race's own year", "2026, from races through 2025"],
           ["Used for", "The WAR column", <>QUALITY_WEIGHT × (effect_R − effect_D) — see {link("/methodology/forecast#candidates", "Forecast")}</>],
         ]} />
@@ -123,6 +128,7 @@ export default function WarMethodology() {
       <Section id="limits" kicker="Open items" title="Known limitations">
         <Defs items={[
           { term: "House self-influence", def: "Same-candidate persistence of House WAR from 2022 to 2024 is .37 against .58 for Split Ticket's metric, because the district anchor contains the candidate's own margins. Proposed fix: jackknife District TPL per candidate, or anchor House to president + swing." },
+          { term: "One effect per candidate per solve", def: "A candidate whose strength moved a lot inside the window is fitted with a single effect, pooled over all their races with a gentle decay. Phil Scott's is about +57 as of 2016, when he actually ran 36 ahead of Expected, so Sue Minter is credited with holding him to that (+21) and his own 2016 WAR (+49) exceeds his residual. The heavy tail made this more visible: it stopped shrinking his effect. A per-candidate trend or a steeper decay would address it." },
           { term: "One national environment", def: "A single E(year) scaled by β* can flip sign against a per-state environment (HI, NH in 2024)." },
           { term: "Window", def: "Records start in 2016: Baker, Manchin and Justice are one-race candidates here. House coverage before 2022 is thin." },
           { term: "No standard error", def: "Effects carry an effective race count but no interval." },

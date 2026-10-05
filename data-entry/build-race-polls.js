@@ -7,15 +7,15 @@
  *      office H/S/G · race "Senate" / "Senate Special" / "Governor" / "House NY-01"
  *      (the past-results race labels) · partisan D/R when the pollster is a party
  *      or campaign pollster · start/end ISO dates · population lv/rv/a/v · dem/rep = %.
- *      Seeded from the polling tables on the Wikipedia election pages; add new polls
- *      by hand or re-run the scrape.
+ *      Seeded from the polling tables on the Wikipedia election pages; new polls arrive via
+ *      scripts/fetch-race-polls.py (append-only) or by hand.
  *      EXCEPTION — Alaska Senate (S,AK,Senate) is hand-entered and holds ONLY each poll's
  *      ranked-choice FINAL ROUND (Sullivan v Peltola); never first-choice, head-to-head or
  *      party-summed numbers, and a re-scrape must not overwrite those rows.
  *      The CSV is the full archive; only polls that went into the field on or after
  *      EARLIEST_START are emitted (see below), so off-year polls of the 2026 races are kept
  *      on file but never reach an average or a race page.
- *   2. Run:  node data-entry/build-race-polls.js
+ *   2. Run:  node data-entry/build-race-polls.js   (or `npm run refresh`, which scrapes first)
  *   3. data/racePolls.ts is regenerated
  *
  * Feeds lib/racePollAverage.ts (the per-race weighted average and its evidence
@@ -26,6 +26,7 @@ const fs = require("fs");
 const path = require("path");
 
 const SRC = path.join(__dirname, "race_polls.csv");
+const STAMP = path.join(__dirname, "race_polls_checked.txt"); // last scrape date, written by scripts/fetch-race-polls.py
 const OUT = path.join(__dirname, "../data/racePolls.ts");
 
 // Cycle window: a poll counts only if it was in the field on or after this date. Polls of the
@@ -79,6 +80,11 @@ let ts = `// ⚠️  AUTO-GENERATED — do not edit by hand.\n// Edit data-entry
 ts += `// Key: "{H|S|G}:{ST}:{race label}" — the past-results race label ("Senate", "Senate Special",\n// "Governor", "House NY-01"). diff = rep − dem (R-positive). Sorted oldest → newest.\n`;
 ts += `// Only polls in the field on or after ${EARLIEST_START} are emitted; earlier polls of these\n// races stay in data-entry/race_polls.csv as archive.\n`;
 ts += `export type RacePoll = {\n  pollster: string;\n  partisan: "D" | "R" | null;\n  startDate: string;\n  endDate: string;\n  sample: number | null;\n  population: string | null;\n  dem: number;\n  rep: number;\n  diff: number;\n};\n\n`;
+const kept = lines.length - 1 - skipped;
+const checked = fs.existsSync(STAMP) ? fs.readFileSync(STAMP, "utf8").trim() : null;
+const newestPollEnd = [...byRace.values()].flat().reduce((m, p) => (p.endDate > m ? p.endDate : m), "");
+ts += `// Shown on the overview ("Race polls through … · checked …"). checked = last Wikipedia scrape\n// (scripts/fetch-race-polls.py), newestPollEnd = latest field end date among the emitted polls.\n`;
+ts += `export const racePollsMeta = ${JSON.stringify({ checked, newestPollEnd, polls: kept, races: byRace.size })};\n\n`;
 ts += `export const racePolls: Record<string, RacePoll[]> = {\n`;
 for (const k of keys) {
   ts += `  ${JSON.stringify(k)}: [\n`;
@@ -87,5 +93,4 @@ for (const k of keys) {
 }
 ts += `};\n`;
 fs.writeFileSync(OUT, ts);
-const kept = lines.length - 1 - skipped;
 console.log(`Wrote ${OUT}: ${keys.length} races, ${kept} polls (${skipped} skipped: started before ${EARLIEST_START})`);

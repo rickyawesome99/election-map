@@ -1,6 +1,7 @@
 import OverviewEditorial, { type OverviewData } from "@/components/OverviewEditorial";
 import { statesData } from "@/data/statesData";
 import { electionYear } from "@/data/forecastData";
+import { racePollsMeta } from "@/data/racePolls";
 import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
 import { computeTrumpApprovalAverage } from "@/lib/trumpApprovalAverage";
 import { calculateStateTpl } from "@/lib/tplCompute";
@@ -41,6 +42,7 @@ export default function OverviewPage() {
     sims: getChamberSimulations(),
     stateMargins: Object.fromEntries(statesData.map((state) => [state.name, calculateStateTpl(state.abbr, state.name)])),
     keyRaces,
+    racePolls: { through: racePollsMeta.newestPollEnd, checked: racePollsMeta.checked },
   };
   return <OverviewEditorial data={data} />;
 }

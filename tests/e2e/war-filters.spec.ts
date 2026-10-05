@@ -21,7 +21,7 @@ test("Candidates search, filters and the candidate record stay in sync", async (
   // The newest cycle renders in; the full table follows.
   await expect(page.getByText(/candidate-performances/).first()).toBeVisible();
   await search.fill("vt governor");
-  await checkColumn(1, /VT Governor/);
+  await checkColumn(1, /VT Gov/);
   await search.fill("Phil Scott");
   await checkColumn(2, /Phil Scott/i);
   await search.fill("");

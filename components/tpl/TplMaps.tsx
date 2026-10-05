@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
+import { useTopo } from "@/lib/useTopology";
 import { fmt1, marginColor } from "./format";
 
 // The hub's choropleth: states or 2026 House districts, filled by any R-positive value (the
@@ -14,33 +15,12 @@ import { fmt1, marginColor } from "./format";
 // to the place's page; on phones the panel sits under the map instead of over it.
 
 const STATES_GEO_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
-// congressional-districts-2026.json pre-clipped to us-land.json (Great Lakes and coastal water
+// congressional-districts-2026.json pre-clipped to the shoreline (Great Lakes and coastal water
 // removed) and 20%-simplified, so the map needs no runtime SVG mask and a quarter of the path
-// data — both made the district view lag on phones. Regenerate with:
-//   npx mapshaper public/congressional-districts-2026.json -filter 'CD119FP != "ZZ"' -clip public/us-land.json \
-//     -simplify 20% keep-shapes -o public/congressional-districts-2026-lite.json format=topojson quantization=1e5 force
+// data — both made the district view lag on phones. Built by scripts/build-display-district-maps.mjs.
 const DISTRICTS_GEO_URL = "/congressional-districts-2026-lite.json";
-
-// Each topology is fetched and parsed once per page load and handed to <Geographies> as an
-// object, so toggling the geography never re-downloads or re-parses it.
-const topoCache = new Map<string, Promise<object | null>>();
-function loadTopo(url: string): Promise<object | null> {
-  let p = topoCache.get(url);
-  if (!p) {
-    p = fetch(url).then((r) => (r.ok ? r.json() : null)).catch(() => null);
-    topoCache.set(url, p);
-  }
-  return p;
-}
-function useTopo(url: string): object | null {
-  const [topo, setTopo] = useState<object | null>(null);
-  useEffect(() => {
-    let live = true;
-    loadTopo(url).then((t) => { if (live) setTopo(t); });
-    return () => { live = false; };
-  }, [url]);
-  return topo;
-}
+// Interior state borders derived from the lite file (same script).
+const STATE_LINES_GEO_URL = "/congressional-districts-2026-lite-state-lines.json";
 
 export type MapRow = { key: string; name: string; value: number; href: string };
 
@@ -87,6 +67,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel }: { mode: "states" |
   // the network. The layers are memoized: hovering (tooltip state) doesn't re-render 435 paths.
   const statesTopo = useTopo(STATES_GEO_URL);
   const districtsTopo = useTopo(DISTRICTS_GEO_URL);
+  const stateLinesTopo = useTopo(STATE_LINES_GEO_URL);
   const layers = useMemo(() => {
     const byKey = new Map(rows.map((r) => [r.key, r]));
     const rowOf = (geo: GeoFeature): MapRow | undefined =>
@@ -139,7 +120,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel }: { mode: "states" |
             <Geographies geography={districtsTopo}>
               {({ geographies }: { geographies: GeoFeature[] }) => geographies.map(shape)}
             </Geographies>
-            <Geographies geography={statesTopo}>
+            {stateLinesTopo && <Geographies geography={stateLinesTopo}>
               {({ geographies }: { geographies: GeoFeature[] }) => geographies.map((geo) => (
                 <Geography key={geo.rsmKey} geography={geo} style={{
                   default: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
@@ -147,12 +128,12 @@ export function TplMap({ mode, rows, valueLabel, linkLabel }: { mode: "states" |
                   pressed: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
                 }} />
               ))}
-            </Geographies>
+            </Geographies>}
           </>
         )}
       </ZoomableGroup>
     );
-  }, [mode, mapKey, rows, selected, statesTopo, districtsTopo, mapUnfilled, mapStroke, hoverStroke, hoverUnfilled]);
+  }, [mode, mapKey, rows, selected, statesTopo, districtsTopo, stateLinesTopo, mapUnfilled, mapStroke, hoverStroke, hoverUnfilled]);
 
   const closeButton = (
     <button type="button" onClick={() => setSelected(null)} className="flex h-4 w-4 shrink-0 items-center justify-center rounded" style={{ color: "var(--app-text-very-muted)" }} aria-label="Close">

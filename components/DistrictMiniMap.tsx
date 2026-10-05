@@ -5,9 +5,8 @@ import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
-import { getLandMaskFips, StateLandMask, StateLandMaskDefinition } from "./StateLandMask";
 
-// 2026 (the current cycle) is split per-state (scripts/split-national-maps.mjs) since this map
+// 2026 (the current cycle) is split per-state (scripts/build-display-district-maps.mjs) since this map
 // is mounted once per race page — fetching the full national file just to highlight one district
 // was the single biggest instance of that anti-pattern on the site. Older years stay national
 // (still TopoJSON, just not split): they only load when a user manually picks a past cycle via
@@ -158,7 +157,6 @@ export default function DistrictMiniMap({
   const mapStroke = "var(--app-bg)";
   const mutedFill = "var(--app-border)";
   const geoUrl = getGeoUrlForYear(selectedYear ?? 2026, stateAbbr);
-  const landMaskFips = getLandMaskFips(stateAbbr);
 
   const showYearToggle = boundaryYears && boundaryYears.length > 1;
 
@@ -193,9 +191,7 @@ export default function DistrictMiniMap({
         projectionConfig={autoProj ?? { scale: proj[2], center: [proj[0], proj[1]] }}
         style={{ width: "100%", height: "100%" }}
       >
-        {landMaskFips && <StateLandMaskDefinition stateFips={landMaskFips} />}
         <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
-          <StateLandMask stateFips={landMaskFips}>
           <Geographies
             key={geoUrl}
             geography={geoUrl}
@@ -229,7 +225,6 @@ export default function DistrictMiniMap({
               })
             }
           </Geographies>
-          </StateLandMask>
         </ZoomableGroup>
       </ComposableMap>
     </div>

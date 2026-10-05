@@ -190,7 +190,7 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
                 <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Wins Above Replacement · 2016–2025</div>
                 <h1 className="mt-2" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5.5vw, 3.5rem)", fontWeight: 700, lineHeight: 0.98, letterSpacing: "-0.02em" }}>Candidates</h1>
                 <p className="mt-2 max-w-2xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
-                  How far each nominee ran ahead of a replacement-level candidate of their party, once the seat&apos;s lean, the year&apos;s environment, incumbency and structural money are taken out. A ridge regression pools every race a person has run; effects fade 0.8 per year.
+                  How far each nominee ran ahead of a replacement-level candidate of their party, once the seat&apos;s lean, the year&apos;s environment, incumbency and structural money are taken out. A ridge regression with a heavy tail pools every race a person has run, so one extraordinary candidate is not explained as a run of weak opponents; effects fade 0.8 per year.
                 </p>
               </div>
               <div className="shrink-0 sm:text-right">

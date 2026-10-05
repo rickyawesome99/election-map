@@ -20,8 +20,8 @@ import StatesSelectedCard from "./StatesSelectedCard";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
+import { useTopo } from "@/lib/useTopology";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
-import { NationalLandMask, NationalLandMaskDefinition } from "./StateLandMask";
 
 // Each tab body is its own chunk, loaded only when that tab is the active one — the county
 // map and the district finder are the heaviest pieces of client
@@ -31,7 +31,14 @@ const NationalCountyMap = dynamic(() => import("./NationalCountyMap"), { loading
 const DistrictFinder = dynamic(() => import("./DistrictFinder"), { loading: tabLoading });
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
-const HOUSE_DISTRICTS_2026_URL = "/congressional-districts-2026.json";
+// The shoreline-clipped, simplified 2026 district file the TPL hub map uses (see the header comment
+// in components/tpl/TplMaps.tsx): no runtime SVG land mask and a quarter of the path data —
+// the full file under a mask made House panning and tab switches lag, worst on phones.
+const HOUSE_DISTRICTS_2026_URL = "/congressional-districts-2026-lite.json";
+// State borders drawn over the districts: the lite file's interior state lines, so they match
+// the district edges and are ~25 KB instead of the 10m state polygons. Both files are built by
+// scripts/build-display-district-maps.mjs.
+const HOUSE_STATE_LINES_URL = "/congressional-districts-2026-lite-state-lines.json";
 
 type GeoFeature = {
   rsmKey: string;
@@ -212,10 +219,10 @@ const ForecastGeoLayer = memo(function ForecastGeoLayer({
   );
 });
 
-// State outlines drawn over the House districts — static, so memoized on the theme alone.
-const HouseStateOutlines = memo(function HouseStateOutlines({ t }: { t: Theme }) {
+// State borders drawn over the House districts — static, so memoized on the theme alone.
+const HouseStateOutlines = memo(function HouseStateOutlines({ t, topo }: { t: Theme; topo: object }) {
   return (
-    <Geographies geography={STATES_URL}>
+    <Geographies geography={topo}>
       {({ geographies }: { geographies: GeoFeature[] }) =>
         geographies.map((geo) => (
           <Geography
@@ -291,6 +298,11 @@ export default function ForecastMap({
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
   const isHouse = activeTab === "forecast" && raceType === "house";
   const geoUrl = isHouse ? HOUSE_DISTRICTS_2026_URL : STATES_URL;
+  // Both start loading on mount and stay cached across Senate/House/Governor navigation.
+  const statesTopo = useTopo(STATES_URL);
+  const districtsTopo = useTopo(HOUSE_DISTRICTS_2026_URL);
+  const stateLinesTopo = useTopo(HOUSE_STATE_LINES_URL);
+  const geoTopo = isHouse ? districtsTopo : statesTopo;
   const data = races;
   const forecastMapKey = `${geoUrl}:${raceType}:${mapKey}`;
   const demSeats = SEAT_HOLDOVERS[raceType].dem + data.filter((race) => race.margin <= 0).length;
@@ -543,14 +555,13 @@ export default function ForecastMap({
             projectionConfig={{ scale: 1200 }}
             style={{ width: "100%", height: "100%" }}
           >
-            {isHouse && <NationalLandMaskDefinition />}
             <ZoomableGroup
               key={mapKey}
               filterZoomEvent={filterMapZoomEvent}
               onMoveEnd={() => setViewChanged(true)}
             >
-            <NationalLandMask enabled={isHouse}>
-            <Geographies geography={geoUrl}>
+            {geoTopo && (
+            <Geographies geography={geoTopo}>
               {({ geographies }: { geographies: GeoFeature[] }) => (
                 <ForecastGeoLayer
                   geographies={geographies}
@@ -565,8 +576,8 @@ export default function ForecastMap({
                 />
               )}
             </Geographies>
-            {isHouse && <HouseStateOutlines t={t} />}
-            </NationalLandMask>
+            )}
+            {isHouse && stateLinesTopo && <HouseStateOutlines t={t} topo={stateLinesTopo} />}
             </ZoomableGroup>
           </ComposableMap>
 
