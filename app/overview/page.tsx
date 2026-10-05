@@ -5,6 +5,7 @@ import { racePollsMeta } from "@/data/racePolls";
 import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
 import { computeTrumpApprovalAverage } from "@/lib/trumpApprovalAverage";
 import { calculateStateTpl } from "@/lib/tplCompute";
+import { getForecastHistory } from "@/lib/forecastHistory";
 import { governorForecasts, houseForecasts, senateForecasts, getChamberSimulations, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE } from "@/lib/forecast";
 
 function seatTotals(data: { margin: number }[], holdover: { dem: number; rep: number }) {
@@ -13,6 +14,8 @@ function seatTotals(data: { margin: number }[], holdover: { dem: number; rep: nu
     rep: holdover.rep + data.filter((race) => race.margin > 0).length,
   };
 }
+
+const seatRange = (c: { meanDem: number; lo80: number; hi80: number }) => ({ mean: c.meanDem, lo80: c.lo80, hi80: c.hi80 });
 
 // Everything the editorial needs is computed here, on the server, and handed over as a few KB
 // of props — the forecasts, the TPL model and the datasets behind them never reach the browser.
@@ -43,6 +46,8 @@ export default function OverviewPage() {
     stateMargins: Object.fromEntries(statesData.map((state) => [state.name, calculateStateTpl(state.abbr, state.name)])),
     keyRaces,
     racePolls: { through: racePollsMeta.newestPollEnd, checked: racePollsMeta.checked },
+    trend: getForecastHistory()?.days.map((d) => ({ date: d.date, house: d.chambers.house.pDemControl ?? 0, senate: d.chambers.senate.pDemControl ?? 0, governors: d.chambers.governor.meanDem,
+      seats: { house: seatRange(d.chambers.house), senate: seatRange(d.chambers.senate), governor: seatRange(d.chambers.governor) } })) ?? null,
   };
   return <OverviewEditorial data={data} />;
 }

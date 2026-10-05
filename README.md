@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CT Strategies — 2026 Election Forecast
 
-## Getting Started
+A forecast of the 2026 U.S. midterms built on an atlas of past results. Every House, Senate and
+governor race gets a projected margin, win probability and rating, and each seat links to its
+results history, district lines and candidates. The site also covers historical results by
+state, county and district (from 2008), state legislative results for every chamber (from 2016),
+the True Partisan Lean (TPL) model, turnout, pollster ratings and an address lookup.
 
-First, run the development server:
+How every number is calculated, the backtests and the full source list are on the site's
+**Methodology** tab (`/methodology`), which reads its constants from the code. That tab is the
+reference for the models; this file covers working on the code.
+
+## Running it
+
+Requires Node 20 or later.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`npm run dev` and `npm run build` first run `npm run history` (about 20 seconds), which reruns the
+forecast for every day since January to draw the Overview's "Forecast Over Time" chart. The
+output, `data/generated/`, is not committed.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Other checks:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npx tsc --noEmit   # type check
+npm run lint
+npm run test:e2e   # Playwright browser tests; uses the dev server on :3000 if it is running
+```
 
-## Learn More
+## How the code is laid out
 
-To learn more about Next.js, take a look at the following resources:
+| Path | What it holds |
+|---|---|
+| `app/` | Next.js pages. Almost every page is prerendered at build time. |
+| `components/` | React components. Client components never import the forecast code or the large datasets; the server passes them what they need. |
+| `lib/forecast.ts`, `lib/tplCompute.ts` | The forecast and the TPL model: every race margin, probability and chamber simulation comes from here. |
+| `data-entry/` | Source data, mostly CSVs, plus the scripts that turn them into TypeScript. Hand-edited inputs live here. |
+| `data/` | Generated TypeScript datasets the site imports. Don't edit these by hand; rerun the script that writes them (named in each file's header). |
+| `public/` | Map files (TopoJSON), candidate photos and other static files. |
+| `scripts/` | Fetch, build, audit and backtest scripts. Each one documents its purpose and usage at the top. |
+| `tests/e2e/` | Playwright tests. |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Margins are R-positive throughout the code: −5 means D+5.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Updating the data
 
-## Deploy on Vercel
+| Task | Command |
+|---|---|
+| Refresh race polls from Wikipedia, rebuild, and print what moved | `npm run refresh` |
+| Rebuild races, candidates and past results after editing the seat CSVs | `node data-entry/build.js` |
+| Rebuild the generic ballot, approval or national environment | `node data-entry/build-generic-ballot.js`, `build-trump-approval.js`, `build-national-environment.js` |
+| Regenerate the forecast-over-time series | `npm run history` |
+| Save today's forecast as a dated record in `data/forecast-history/` | `npm run snapshot` |
+| Export the model to CSV | `npm run export:model`, `npm run export:county-tpl` |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**After a model change**, regenerate the Methodology tab's backtest tables and add an entry to
+`data/methodologyChangelog.ts`:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npx tsx --conditions=react-server scripts/forwardBacktest.ts --env struct --emit
+npx tsx --conditions=react-server scripts/tplBacktest.ts --emit
+npx tsx --conditions=react-server scripts/turnoutBacktest.ts --emit
+```
+
+**After a congressional map change** (a new map, or a court reverting one), the map files, the
+district data and the District Finder all need updating. The District Finder takes its districts
+from the Census geocoder, so check it against the site's own map with
+`node scripts/audit-district-finder-lines.mjs`, and add an override in
+`app/api/districts/route.ts` for any state where the Census lines are not the ones on the ballot.
+
+## Deployment
+
+The site deploys to Vercel from `main`. Vercel runs `npm run build`, which regenerates the
+forecast-over-time series and prerenders every page. Server-side files read at runtime must use
+a literal path (`join(process.cwd(), "data", "file.json")`) so Vercel includes them in the
+deployment; a computed path makes it bundle the whole repository and breaks the 250 MB limit.
+
+The sitemap, `robots.txt` and link-preview images use the production domain Vercel reports.
+Set `SITE_URL` to override it.
+
+## Credits
+
+Data comes from public sources: state election offices, the U.S. Census Bureau, the Federal
+Election Commission, the MIT Election Data and Science Lab, Wikipedia and others, all listed on
+the Methodology tab's Sources page. Candidate photos come from official government portraits,
+Wikimedia Commons and campaign materials, and belong to their respective owners. Maps use data
+© OpenStreetMap contributors.

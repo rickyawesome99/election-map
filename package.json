@@ -10,7 +10,11 @@
     "test:e2e": "playwright test",
     "refresh": "node scripts/refresh-polls.mjs",
     "export:model": "npx tsx --conditions=react-server scripts/exportModelCsv.ts",
-    "export:county-tpl": "npx tsx --conditions=react-server scripts/exportCountyTplCsv.ts"
+    "export:county-tpl": "npx tsx --conditions=react-server scripts/exportCountyTplCsv.ts",
+    "snapshot": "tsx --conditions=react-server scripts/saveForecastSnapshot.ts",
+    "history": "tsx --conditions=react-server scripts/buildForecastHistory.ts",
+    "prebuild": "npm run history",
+    "predev": "npm run history"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",
@@ -34,6 +38,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }

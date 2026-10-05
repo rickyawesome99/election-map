@@ -160,39 +160,89 @@ function parseCensusGeographies(geo: Record<string, Record<string, string>[]>): 
   return { state: stateName, stateFIPS, cdName, cdGEOID, sldlName, sldlGEOID, sldlBasename, slduName, slduGEOID, slduBasename };
 }
 
+const NOMINATIM = "https://nominatim.openstreetmap.org";
+/** Long enough for a slow answer, short enough that a dead service hands over to the fallback. */
+const GEOCODER_TIMEOUT_MS = 6000;
+
 async function lookupByCoordinates(lat: number, lng: number): Promise<DistrictInfo & { lookup: AddressLookup | null }> {
-  const res = await fetch(`/api/districts?lat=${lat}&lng=${lng}`);
+  // Rounded to the precision the server caches at (about 11 m), so repeat lookups share one URL.
+  const res = await fetch(`/api/districts?lat=${lat.toFixed(4)}&lng=${lng.toFixed(4)}`);
   if (!res.ok) throw new Error("District lookup failed");
   const data = (await res.json()) as DistrictsResponse;
   return { ...parseCensusGeographies(data?.result?.geographies ?? {}), lookup: data.lookup ?? null };
 }
 
+/** The address shown for a clicked point. Cosmetic, so any failure is an empty string. */
 async function reverseGeocode(lat: number, lng: number): Promise<string> {
   const params = new URLSearchParams({ format: "json", lat: String(lat), lon: String(lng) });
-  const res = await fetch(`https://nominatim.openstreetmap.org/reverse?${params}`, {
-    headers: { Accept: "application/json" },
-  });
-  if (!res.ok) return "";
-  const data: { address?: NominatimAddress; display_name?: string } = await res.json();
-  if (data.address) return formatUSAddress(data.address) || data.display_name?.replace(/, United States$/, "") || "";
-  return data.display_name?.replace(/, United States$/, "") ?? "";
+  try {
+    const res = await fetch(`${NOMINATIM}/reverse?${params}`, {
+      headers: { Accept: "application/json" },
+      signal: AbortSignal.timeout(GEOCODER_TIMEOUT_MS),
+    });
+    if (!res.ok) return "";
+    const data: { address?: NominatimAddress; display_name?: string } = await res.json();
+    if (data.address) return formatUSAddress(data.address) || data.display_name?.replace(/, United States$/, "") || "";
+    return data.display_name?.replace(/, United States$/, "") ?? "";
+  } catch {
+    return "";
+  }
 }
 
-async function geocodeAddress(address: string): Promise<GeocodeResult> {
+/** Nominatim's best match for a typed address — null when it is unreachable or finds nothing. */
+async function nominatimSearch(address: string): Promise<{ lat: number; lng: number; matchedAddress: string } | null> {
   const params = new URLSearchParams({
     format: "json", q: address, countrycodes: "us", limit: "1", addressdetails: "0",
   });
-  const res = await fetch(`https://nominatim.openstreetmap.org/search?${params}`, {
-    headers: { Accept: "application/json" },
-  });
-  if (!res.ok) throw new Error("Address lookup failed");
-  const data: { lat: string; lon: string; display_name: string }[] = await res.json();
-  if (!data[0]) throw new Error("Address not found. Try a more specific address including city and state.");
-  const lat = parseFloat(data[0].lat);
-  const lng = parseFloat(data[0].lon);
-  const matchedAddress = data[0].display_name.replace(/, United States$/, "");
-  const districts = await lookupByCoordinates(lat, lng);
-  return { lat, lng, matchedAddress, ...districts };
+  try {
+    const res = await fetch(`${NOMINATIM}/search?${params}`, {
+      headers: { Accept: "application/json" },
+      signal: AbortSignal.timeout(GEOCODER_TIMEOUT_MS),
+    });
+    if (!res.ok) return null;
+    const data: { lat: string; lon: string; display_name: string }[] = await res.json();
+    if (!data[0]) return null;
+    return { lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon), matchedAddress: data[0].display_name.replace(/, United States$/, "") };
+  } catch {
+    return null;
+  }
+}
+
+/** The Census address geocoder behind /api/districts, which places a street address and returns
+ *  its districts in one call. It knows street addresses only, not place names. null when it is
+ *  unreachable or has no match. */
+async function censusAddressSearch(address: string): Promise<GeocodeResult | null> {
+  try {
+    const res = await fetch(`/api/districts?${new URLSearchParams({ address })}`);
+    if (!res.ok) return null;
+    const data = (await res.json()) as DistrictsResponse;
+    if (!data.match) return null;
+    return { ...data.match, ...parseCensusGeographies(data.result?.geographies ?? {}), lookup: data.lookup ?? null };
+  } catch {
+    return null;
+  }
+}
+
+async function nominatimAddressSearch(address: string): Promise<GeocodeResult | null> {
+  const found = await nominatimSearch(address);
+  return found ? { ...found, ...(await lookupByCoordinates(found.lat, found.lng)) } : null;
+}
+
+// Nominatim's usage policy requires results to be cached, so a repeated search costs it nothing.
+const geocodeCache = new Map<string, GeocodeResult>();
+
+async function geocodeAddress(address: string): Promise<GeocodeResult> {
+  const key = address.toLowerCase().replace(/\s+/g, " ");
+  const cached = geocodeCache.get(key);
+  if (cached) return cached;
+  // A query that opens with a house number goes to the Census first: it is the authority on US
+  // street addresses, where Nominatim can land on a same-named street in another city. Anything
+  // else (a city, a landmark) is Nominatim's to answer. Each is the other's fallback.
+  const order = /^\d/.test(address) ? [censusAddressSearch, nominatimAddressSearch] : [nominatimAddressSearch, censusAddressSearch];
+  const result = (await order[0](address)) ?? (await order[1](address));
+  if (!result) throw new Error("Address not found. Try a more specific address including city and state.");
+  geocodeCache.set(key, result);
+  return result;
 }
 
 interface NominatimAddress {
@@ -223,27 +273,46 @@ function formatUSAddress(addr: NominatimAddress): string {
   return [street, cityState].filter(Boolean).join(", ");
 }
 
-async function fetchSuggestions(query: string): Promise<Suggestion[]> {
-  const params = new URLSearchParams({
-    format: "json",
-    q: query,
-    countrycodes: "us",
-    limit: "6",
-    dedupe: "1",
-    addressdetails: "1",
-  });
-  const res = await fetch(`https://nominatim.openstreetmap.org/search?${params}`, {
-    headers: { Accept: "application/json" },
-  });
+// Suggestions come from Photon, a search-as-you-type geocoder on the same OpenStreetMap data.
+// Nominatim's usage policy forbids autocomplete against its public server.
+const PHOTON = "https://photon.komoot.io/api/";
+/** West, south, east, north — the fifty states, so suggestions stay in the country. */
+const US_BBOX = "-179.2,17.8,-65.0,71.5";
+const suggestionCache = new Map<string, Suggestion[]>();
+
+interface PhotonProperties {
+  countrycode?: string;
+  name?: string;
+  housenumber?: string;
+  street?: string;
+  city?: string;
+  county?: string;
+  state?: string;
+}
+
+async function fetchSuggestions(query: string, signal: AbortSignal): Promise<Suggestion[]> {
+  const key = query.toLowerCase();
+  const cached = suggestionCache.get(key);
+  if (cached) return cached;
+  const params = new URLSearchParams({ q: query, limit: "8", lang: "en", bbox: US_BBOX });
+  const res = await fetch(`${PHOTON}?${params}`, { signal });
   if (!res.ok) return [];
-  const data: { display_name: string; address: NominatimAddress }[] = await res.json();
-  return data
-    .map(item => {
-      const shortName = formatUSAddress(item.address);
-      if (!shortName) return null;
-      return { displayName: item.display_name, shortName };
-    })
-    .filter((s): s is Suggestion => s !== null);
+  const data: { features?: { properties: PhotonProperties }[] } = await res.json();
+  const seen = new Set<string>();
+  const suggestions: Suggestion[] = [];
+  for (const { properties: p } of data.features ?? []) {
+    if (p.countrycode !== "US") continue;
+    const street = p.street ? [p.housenumber, p.street].filter(Boolean).join(" ") : "";
+    // A place with no street of its own (a city, a county) is its own first line.
+    const first = street || (p.name !== p.city && p.name !== p.state ? p.name : "") || "";
+    const shortName = [first, p.city ?? p.county, p.state].filter(Boolean).join(", ");
+    if (!shortName || seen.has(shortName)) continue;
+    seen.add(shortName);
+    suggestions.push({ displayName: [p.name, shortName].filter(Boolean).join(", "), shortName });
+    if (suggestions.length === 6) break;
+  }
+  suggestionCache.set(key, suggestions);
+  return suggestions;
 }
 
 function ordinal(n: number): string {
@@ -272,6 +341,7 @@ export default function DistrictFinder() {
   const [activeIndex, setActiveIndex] = useState(-1);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const suppressSuggestionsRef = useRef(false);
+  const suggestAbortRef = useRef<AbortController | null>(null);
   const searchWrapperRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -298,17 +368,24 @@ export default function DistrictFinder() {
       setShowSuggestions(false);
       return;
     }
+    const controller = new AbortController();
+    suggestAbortRef.current = controller;
     debounceRef.current = setTimeout(async () => {
       if (suppressSuggestionsRef.current) {
         suppressSuggestionsRef.current = false;
         return;
       }
-      const results = await fetchSuggestions(address.trim()).catch(() => []);
+      const results = await fetchSuggestions(address.trim(), controller.signal).catch(() => null);
+      // A request overtaken by more typing is dropped, not shown late.
+      if (controller.signal.aborted || !results) return;
       setSuggestions(results);
       setShowSuggestions(results.length > 0);
       setActiveIndex(-1);
     }, 350);
-    return () => { if (debounceRef.current) clearTimeout(debounceRef.current); };
+    return () => {
+      if (debounceRef.current) clearTimeout(debounceRef.current);
+      controller.abort();
+    };
   }, [address]);
 
   // Close dropdown when clicking outside
@@ -351,6 +428,10 @@ export default function DistrictFinder() {
     if (!address.trim()) return;
     setLoading(true);
     setError(null);
+    // Suggestions still on their way for the text just searched would reopen the list over the result.
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+    suggestAbortRef.current?.abort();
+    setShowSuggestions(false);
 
     try {
       const geocoded = await geocodeAddress(address.trim());

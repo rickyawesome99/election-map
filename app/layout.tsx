@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import AppShell from "@/components/AppShell";
+import SiteFooter from "@/components/SiteFooter";
+import { SITE_URL } from "@/lib/siteUrl";
 
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-ibm-plex-sans",
@@ -17,8 +19,12 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 // NOTE: Update year here manually when changing election cycle (all other references use electionYear from forecastData)
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "2026 Election Forecast",
   description: "Interactive U.S. election forecast map for House, Senate, and Governor races",
+  // Share previews: the card images come from opengraph-image.tsx (site-wide, and per race page).
+  openGraph: { siteName: "CT Strategies", type: "website" },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = {
@@ -43,6 +49,7 @@ export default async function RootLayout({
       <body className={`${ibmPlexSans.variable} ${ibmPlexMono.variable} antialiased`}>
         <AppShell />
         {children}
+        <SiteFooter />
       </body>
     </html>
   );

@@ -76,3 +76,6 @@ data-entry/fivethirtyeight/
 # Census block cache for scripts/build-precinct-district.py
 data-entry/precinct-districts/.cache/
 .next-dev.log
+
+# Forecast over time, regenerated before every build/dev start (scripts/buildForecastHistory.ts)
+data/generated/

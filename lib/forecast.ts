@@ -30,7 +30,8 @@ import {
 } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
 import { FORECAST_CONSTANTS as F } from "@/data/tplModelData";
-import { projectRace, raceSigma, winProbabilityD, getTplFit, getNationalEnvironment } from "@/lib/tplCompute";
+import { projectRace, raceSigma, winProbabilityD, getTplFit, getNationalEnvironment, type NationalEnvironment } from "@/lib/tplCompute";
+import { atForecastDate } from "@/lib/forecastClock";
 import { marginToRating } from "@/lib/colorScale";
 import { alignedParty } from "@/data/raceEligibility";
 import { districtDemographics, stateDemographics, type Demographics } from "@/data/demographics";
@@ -297,6 +298,29 @@ export function simulateChamber(raceType: RaceType, races: ForecastedRace[] = fo
     controlThreshold: threshold ?? null,
     histogram,
   };
+}
+
+/** The whole forecast as it would have stood on `asOf`: today's model and data, with every poll
+ *  finished after that day left out and the clock (poll aging, the generic-ballot average, the
+ *  horizon) set to it. lib/forecastHistory.ts runs it once per day for the forecast-over-time series. */
+export interface ForecastAsOf {
+  environment: NationalEnvironment;
+  races: Record<RaceType, ForecastedRace[]>;
+  chambers: Record<RaceType, ChamberSimulation>;
+}
+export function forecastAsOf(asOf: Date, sims = 5000): ForecastAsOf {
+  return atForecastDate(asOf, () => {
+    const races = { house: houseData.map(forecastRace), senate: senateData.map(forecastRace), governor: governorData.map(forecastRace) };
+    return {
+      environment: getNationalEnvironment(),
+      races,
+      chambers: {
+        house: simulateChamber("house", races.house, sims),
+        senate: simulateChamber("senate", races.senate, sims),
+        governor: simulateChamber("governor", races.governor, sims),
+      },
+    };
+  });
 }
 
 let chamberCache: Record<RaceType, ChamberSimulation> | null = null;

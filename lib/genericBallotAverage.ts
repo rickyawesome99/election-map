@@ -41,8 +41,11 @@ export function computeGenericBallotAverage(
   asOf: Date = new Date(),
   polls: GenericBallotPoll[] = genericBallotPolls
 ): GenericBallotAverage {
+  // Only polls finished by asOf: a forecast run for a past day must not see later polls.
+  const cutoff = asOf.toISOString().slice(0, 10);
   const latestByPollster = new Map<string, GenericBallotPoll>();
   for (const poll of polls) {
+    if (poll.endDate > cutoff) continue;
     const existing = latestByPollster.get(poll.pollster);
     if (!existing || poll.endDate > existing.endDate) {
       latestByPollster.set(poll.pollster, poll);

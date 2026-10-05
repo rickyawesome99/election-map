@@ -11,6 +11,8 @@
 //   4. python3 scripts/build-pollster-ratings.py → data/pollsterRatings.ts + pollsterLookup.ts ("2026 polls" counts,
 //                                                  name → rating aliases; prints 2026 pollsters with no rating match)
 //   5. snapshot again and print chamber, rating and margin changes
+//   6. save today's forecast to data/forecast-history/ (scripts/saveForecastSnapshot.ts)
+//   7. rerun the forecast-over-time series (scripts/buildForecastHistory.ts; builds also do this)
 // House effects and the poll averages are computed from data/racePolls.ts at build time, so the next
 // `next build` / deploy picks everything up. Review the "+" and "?" lines step 2 prints before committing.
 
@@ -66,4 +68,6 @@ console.log(`\nMargin moves ≥ 1 pt, same rating (${big.length}):`);
 for (const { a, b } of big) console.log(`  ${a.name.padEnd(28)} ${fmt(b.margin)} → ${fmt(a.margin)}`);
 const newPolls = moved.filter(({ a, b }) => a.pollCount !== b.pollCount).length;
 console.log(`\nRaces whose pollster count changed: ${newPolls}`);
-console.log("\nDone. Review the scrape's \"+\" / \"?\" lines above, then commit data-entry/race_polls.csv and data/*.ts.");
+run("npx", ["tsx", "--conditions=react-server", "scripts/saveForecastSnapshot.ts"]);
+run("npx", ["tsx", "--conditions=react-server", "scripts/buildForecastHistory.ts"]);
+console.log("\nDone. Review the scrape's \"+\" / \"?\" lines above, then commit data-entry/race_polls.csv, data/*.ts and data/forecast-history/.");

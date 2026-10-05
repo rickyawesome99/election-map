@@ -28,14 +28,8 @@ import { getRacePollAverage, pollAgingShift, pollWeight, racePollKey, type RaceP
 import { computeHouseEffects, type HouseEffects } from "@/lib/pollsterHouseEffects";
 import { racePolls } from "@/data/racePolls";
 import { FIPS_TO_STATE } from "@/lib/fips";
+import { forecastNow } from "@/lib/forecastClock";
 import { classifyEligibility, alignedParty, type RaceEligibility } from "@/data/raceEligibility";
-
-// ── Generic ballot ────────────────────────────────────────────────────────────
-// R-positive convention: negative = D-favored (e.g. D+5.3 → -5.3).
-// Sourced live from the weighted polling average (§lib/genericBallotAverage) — the
-// same number shown in the "Generic Ballot Polling Average" box on the Overview tab.
-
-export const GENERIC_BALLOT = computeGenericBallotAverage().diff;
 
 // ── Race stub type ────────────────────────────────────────────────────────────
 
@@ -1088,7 +1082,7 @@ export function racePollLabel(race: { raceType: string; name: string; electionTy
   return race.electionType?.toLowerCase() === "special" ? "Senate Special" : "Senate";
 }
 
-export function racePollingFor(race: { id: string; state: string; raceType: string; name: string; electionType?: string }, asOf: Date = new Date()): RacePolling {
+export function racePollingFor(race: { id: string; state: string; raceType: string; name: string; electionType?: string }, asOf: Date = forecastNow()): RacePolling {
   const office = race.raceType === "house" ? "H" : race.raceType === "senate" ? "S" : "G";
   const stateAbbr = race.raceType === "house" ? statesData.find((s) => s.name === race.state)?.abbr ?? "" : race.id.replace(/-\d+$/, "");
   const key = racePollKey(office, stateAbbr, racePollLabel(race));
@@ -1101,15 +1095,17 @@ export function racePollingFor(race: { id: string; state: string; raceType: stri
 }
 
 // This cycle's pollster house effects, from every polled race (aged margins), per as-of day.
-let houseEffectsCache: { day: string; effects: HouseEffects } | null = null;
-export function liveHouseEffects(asOf: Date = new Date()): HouseEffects {
+const houseEffectsCache = new Map<string, HouseEffects>();
+export function liveHouseEffects(asOf: Date = forecastNow()): HouseEffects {
   const day = asOf.toISOString().slice(0, 10);
-  if (houseEffectsCache?.day !== day) {
+  let effects = houseEffectsCache.get(day);
+  if (!effects) {
     const series = liveGenericBallotSeries(), beta = getTplFit().beta;
     const races = Object.entries(racePolls).map(([key, polls]) => ({ polls, shiftFor: pollAgingShift(series, beta[key.split(":")[1]]?.shrunk ?? 1, asOf) }));
-    houseEffectsCache = { day, effects: computeHouseEffects(races, asOf) };
+    effects = computeHouseEffects(races, asOf);
+    houseEffectsCache.set(day, effects);
   }
-  return houseEffectsCache.effects;
+  return effects;
 }
 
 let gbSeriesCache: ReturnType<typeof genericBallotSeries> | null = null;
@@ -1279,17 +1275,21 @@ export interface NationalEnvironment {
   horizon: number;        // days to election / mid-September horizon, capped at 1.5
 }
 
-let nationalEnvironmentCache: NationalEnvironment | null = null;
-export function getNationalEnvironment(asOf: Date = new Date()): NationalEnvironment {
-  if (nationalEnvironmentCache) return nationalEnvironmentCache;
+// Per as-of day: the live forecast reads today's entry, forecastAsOf a past day's.
+const nationalEnvironmentCache = new Map<string, NationalEnvironment>();
+export function getNationalEnvironment(asOf: Date = forecastNow()): NationalEnvironment {
+  const day = asOf.toISOString().slice(0, 10);
+  const cached = nationalEnvironmentCache.get(day);
+  if (cached) return cached;
   const m = getEnvironmentModel();
-  const gb = GENERIC_BALLOT;
+  const gb = computeGenericBallotAverage(asOf).diff;
   const pvHat = gb + F.ENV_MISS_SHRINK * m.meanMiss;
   const daysToElection = Math.max(0, (ELECTION_DATE.getTime() - asOf.getTime()) / 86400000);
   const horizon = Math.min(1.5, daysToElection / F.ENV_DAYS_MID_SEPT_TO_ELECTION);
   const sigmaPv = Math.sqrt(m.sdMiss ** 2 + (horizon * m.sdDrift) ** 2);
-  nationalEnvironmentCache = { gb, pvHat, eHat: m.c + m.s * pvHat, sigmaE: Math.abs(m.s) * sigmaPv, daysToElection, horizon };
-  return nationalEnvironmentCache;
+  const env = { gb, pvHat, eHat: m.c + m.s * pvHat, sigmaE: Math.abs(m.s) * sigmaPv, daysToElection, horizon };
+  nationalEnvironmentCache.set(day, env);
+  return env;
 }
 
 // The environment points a race receives: β*(state) × E_hat.

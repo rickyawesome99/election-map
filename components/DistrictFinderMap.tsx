@@ -2,14 +2,18 @@
 
 import { useCallback, useEffect, useRef } from "react";
 import * as maplibregl from "maplibre-gl";
-import type { Map as MapLibreMap, Marker as MapLibreMarker, RasterTileSource, StyleSpecification } from "maplibre-gl";
+import type { LayerSpecification, Map as MapLibreMap, Marker as MapLibreMarker } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { FeatureCollection } from "geojson";
 
 const DEFAULT_CENTER: [number, number] = [39.5, -98.35];
 const DEFAULT_ZOOM = 4;
-const LIGHT_TILES = "https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png";
-const DARK_TILES = "https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png";
+// OpenFreeMap vector styles: free, no API key (CARTO's raster basemaps now watermark keyless requests).
+const LIGHT_STYLE = "https://tiles.openfreemap.org/styles/positron";
+const DARK_STYLE = "https://tiles.openfreemap.org/styles/dark";
+// What this component draws on top of the basemap — carried across a light/dark style swap.
+const OVERLAY_SOURCES = ["states", "congressional-districts"];
+const OVERLAY_LAYERS = ["district-outlines", "selected-district-fill", "selected-district-outline", "state-outlines"];
 
 interface Props {
   darkMode: boolean;
@@ -21,25 +25,6 @@ interface Props {
   resetTrigger: number;
   onMoved: (moved: boolean) => void;
   onMapClick: (lat: number, lng: number) => void;
-}
-
-function makeStyle(darkMode: boolean): StyleSpecification {
-  return {
-    version: 8,
-    sources: {
-      carto: {
-        type: "raster",
-        tiles: [darkMode ? DARK_TILES : LIGHT_TILES],
-        tileSize: 256,
-        attribution: "© OpenStreetMap contributors © CARTO",
-      },
-    },
-    // "congressional-districts" source + its layers are added once districtsGeoJSON is ready
-    // (see the districts-source effect below) — the source file is TopoJSON, converted to
-    // GeoJSON client-side by DistrictFinder.tsx's loadDistrictsGeoJSON, so it can't be handed to
-    // MapLibre as a plain source URL the way it used to be.
-    layers: [{ id: "carto", type: "raster", source: "carto" }],
-  };
 }
 
 export default function DistrictFinderMap({
@@ -63,6 +48,12 @@ export default function DistrictFinderMap({
 
   useEffect(() => { onMovedRef.current = onMoved; }, [onMoved]);
   useEffect(() => { onMapClickRef.current = onMapClick; }, [onMapClick]);
+  // The outline layers are added when the basemap style finishes loading, which can be after a
+  // search result or a theme switch has already arrived — so they read these at that moment.
+  const darkModeRef = useRef(darkMode);
+  const highlightRef = useRef(highlightCdGEOID);
+  useEffect(() => { darkModeRef.current = darkMode; }, [darkMode]);
+  useEffect(() => { highlightRef.current = highlightCdGEOID; }, [highlightCdGEOID]);
 
   const reportMoved = useCallback((map: MapLibreMap) => {
     const center = map.getCenter();
@@ -76,10 +67,13 @@ export default function DistrictFinderMap({
 
     const map = new maplibregl.Map({
       container: containerRef.current,
-      style: makeStyle(darkMode),
+      // The "congressional-districts" source and its layers are added once districtsGeoJSON is
+      // ready (see the districts-source effect below): the file is TopoJSON, converted to GeoJSON
+      // by DistrictFinder.tsx's loadDistrictsGeoJSON, so it can't be a plain source URL.
+      style: darkMode ? DARK_STYLE : LIGHT_STYLE,
       center: [DEFAULT_CENTER[1], DEFAULT_CENTER[0]],
       zoom: DEFAULT_ZOOM,
-      attributionControl: false,
+      attributionControl: { compact: true },
       dragRotate: false,
       pitchWithRotate: false,
       maxPitch: 0,
@@ -101,16 +95,21 @@ export default function DistrictFinderMap({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reportMoved]);
 
+  // Swapping the basemap style would drop the outline sources and layers, so carry them across.
+  const firstStyle = useRef(true);
   useEffect(() => {
+    if (firstStyle.current) { firstStyle.current = false; return; }
     const map = mapRef.current;
     if (!map) return;
-
-    const updateTiles = () => {
-      const source = map.getSource("carto") as RasterTileSource | undefined;
-      source?.setTiles([darkMode ? DARK_TILES : LIGHT_TILES]);
-    };
-    if (map.isStyleLoaded()) updateTiles();
-    else map.once("load", updateTiles);
+    map.setStyle(darkMode ? DARK_STYLE : LIGHT_STYLE, {
+      transformStyle: (prev, next) => {
+        if (!prev) return next;
+        const sources = { ...next.sources };
+        for (const id of OVERLAY_SOURCES) if (prev.sources[id]) sources[id] = prev.sources[id];
+        const ours = prev.layers.filter((l) => OVERLAY_LAYERS.includes(l.id)) as LayerSpecification[];
+        return { ...next, sources, layers: [...next.layers, ...ours] };
+      },
+    });
   }, [darkMode]);
 
   useEffect(() => {
@@ -129,7 +128,7 @@ export default function DistrictFinderMap({
         type: "line",
         source: "states",
         paint: {
-          "line-color": darkMode ? "#374151" : "#cbd5e1",
+          "line-color": darkModeRef.current ? "#374151" : "#cbd5e1",
           "line-width": 0.6,
         },
       });
@@ -137,7 +136,7 @@ export default function DistrictFinderMap({
 
     if (map.isStyleLoaded()) addOrUpdateStates();
     else map.once("load", addOrUpdateStates);
-  }, [statesGeoJSON, darkMode]);
+  }, [statesGeoJSON]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -159,7 +158,7 @@ export default function DistrictFinderMap({
         type: "line",
         source: "congressional-districts",
         paint: {
-          "line-color": darkMode ? "#6b7280" : "#64748b",
+          "line-color": darkModeRef.current ? "#6b7280" : "#64748b",
           "line-opacity": 0.9,
           "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.8, 7, 1.15, 12, 1.75],
         },
@@ -168,14 +167,14 @@ export default function DistrictFinderMap({
         id: "selected-district-fill",
         type: "fill",
         source: "congressional-districts",
-        filter: ["==", ["get", "GEOID"], highlightCdGEOID ?? ""],
+        filter: ["==", ["get", "GEOID"], highlightRef.current ?? ""],
         paint: { "fill-color": "#3b82f6", "fill-opacity": 0.22 },
       }, beforeLayer);
       map.addLayer({
         id: "selected-district-outline",
         type: "line",
         source: "congressional-districts",
-        filter: ["==", ["get", "GEOID"], highlightCdGEOID ?? ""],
+        filter: ["==", ["get", "GEOID"], highlightRef.current ?? ""],
         paint: { "line-color": "#3b82f6", "line-width": 2.5 },
       }, beforeLayer);
     };
@@ -184,7 +183,6 @@ export default function DistrictFinderMap({
     else map.once("load", addOrUpdateDistricts);
     // darkMode/highlightCdGEOID are applied by their own effects below once the layers exist;
     // this effect only needs to (re-)run when the data itself changes.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [districtsGeoJSON]);
 
   useEffect(() => {

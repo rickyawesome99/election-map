@@ -1,6 +1,6 @@
 "use client";
 
-// The street-context renderer: the same units and colors as ExplorerMap, drawn over a CARTO
+// The street-context renderer: the same units and colors as ExplorerMap, drawn over an OpenFreeMap
 // basemap with MapLibre (continuous zoom, same engine as DistrictFinderMap) so a reader can see
 // roads, subdivisions and landmarks under the precincts.
 // Loaded on demand by the explorer (dynamic import, no SSR).

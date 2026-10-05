@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { fmtMargin, formatProjectedMargin, getRaceColor, marginToRating } from "@/lib/colorScale";
 import { useDarkMode } from "@/lib/useDarkMode";
@@ -9,6 +10,7 @@ import type { ChamberSimulation } from "@/lib/forecast";
 import { DARK_THEME, LIGHT_THEME, type Theme } from "./ForecastMap";
 import PollingAverageCard from "./PollingAverageCard";
 import SeatHistogram from "./SeatHistogram";
+import ForecastTrend, { type ForecastTrendDay } from "./ForecastTrend";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 type GeoFeature = { rsmKey: string; id?: string | number; properties?: Record<string, string | undefined> };
@@ -26,6 +28,8 @@ export type OverviewData = {
   keyRaces: { type: RaceType; id: string; name: string; state: string; margin: number }[];
   /** Race-poll freshness: newest poll's field end date, and the last Wikipedia scrape (ISO dates). */
   racePolls: { through: string; checked: string | null };
+  /** The forecast rerun once per day (lib/forecastHistory.ts); null if the series was not generated. */
+  trend: ForecastTrendDay[] | null;
 };
 
 const shortDate = (iso: string) => new Date(`${iso}T12:00:00`).toLocaleDateString("en-US", { month: "short", day: "numeric" });
@@ -41,7 +45,7 @@ function SectionHead({ children, theme }: { children: React.ReactNode; theme: Th
 export default function OverviewEditorial({ data }: { data: OverviewData }) {
   const darkMode = useDarkMode();
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
-  const { electionYear, genericBallot: gb, approvalDiff, seats, totalSeats, sims, stateMargins, keyRaces, racePolls } = data;
+  const { electionYear, genericBallot: gb, approvalDiff, seats, totalSeats, sims, stateMargins, keyRaces, racePolls, trend } = data;
   const approval = { diff: approvalDiff };
   const house = seats.house;
   const senate = seats.senate;
@@ -122,6 +126,16 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
             <SeatHistogram label="Governors" sim={sims.governor} total={TOTAL_SEATS_BY_TYPE.governor} />
           </div>
         </section>
+
+        {trend && trend.length > 1 && (
+          <section className="mt-10">
+            <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b-2 pb-2" style={{ borderColor: t.textPrimary }}>
+              <div className="whitespace-nowrap text-[11px] font-bold uppercase tracking-[0.12em]">Forecast Over Time</div>
+              <div className="text-[11px]" style={{ color: t.textMuted }}>Today&rsquo;s model rerun on the polls available each day · <Link href="/methodology" className="underline decoration-dotted underline-offset-2">how</Link></div>
+            </div>
+            <ForecastTrend days={trend} />
+          </section>
+        )}
 
         <section className="mt-10">
           <SectionHead theme={t}>National Polling</SectionHead>

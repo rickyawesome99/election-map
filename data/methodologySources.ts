@@ -404,15 +404,19 @@ export const SOURCE_GROUPS: SourceGroup[] = [
     sources: [
       {
         name: "U.S. Census Geocoder", url: "https://geocoding.geo.census.gov/", kind: "service",
-        uses: [{ data: "Coordinates to congressional and state legislative districts in the District Finder", where: "app/api/districts/route.ts" }],
+        uses: [{ data: "Coordinates to congressional and state legislative districts in the District Finder, and its fallback address search", where: "app/api/districts/route.ts" }],
       },
       {
         name: "OpenStreetMap Nominatim", url: "https://nominatim.openstreetmap.org/", kind: "service",
         uses: [{ data: "Address search and reverse geocoding", where: "components/DistrictFinder.tsx" }],
       },
       {
-        name: "CARTO basemaps on OpenStreetMap data", url: "https://carto.com/basemaps", kind: "service",
-        uses: [{ data: "Street tiles under the District Finder and precinct maps", where: "components/DistrictFinderMap.tsx · OH31MapLeaflet*.tsx" }],
+        name: "Photon (Komoot) on OpenStreetMap data", url: "https://photon.komoot.io/", kind: "service",
+        uses: [{ data: "Address suggestions while typing in the District Finder", where: "components/DistrictFinder.tsx" }],
+      },
+      {
+        name: "OpenFreeMap basemaps on OpenStreetMap data", url: "https://openfreemap.org/", kind: "service",
+        uses: [{ data: "Street maps under the District Finder and precinct maps", where: "components/DistrictFinderMap.tsx · components/precinct-district/StreetMap.tsx" }],
       },
     ],
   },
