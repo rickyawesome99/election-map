@@ -20,8 +20,10 @@ const seatRange = (c: { meanDem: number; lo80: number; hi80: number }) => ({ mea
 // Everything the editorial needs is computed here, on the server, and handed over as a few KB
 // of props — the forecasts, the TPL model and the datasets behind them never reach the browser.
 export default function OverviewPage() {
-  const gb = computeGenericBallotAverage(new Date());
-  const approval = computeTrumpApprovalAverage(new Date());
+  // One moment for every as-of number on the page, handed to the client components too.
+  const now = new Date();
+  const gb = computeGenericBallotAverage(now);
+  const approval = computeTrumpApprovalAverage(now);
   const withType = [
     ...senateForecasts.map((race) => ({ race, type: "senate" as const })),
     ...governorForecasts.map((race) => ({ race, type: "governor" as const })),
@@ -46,6 +48,7 @@ export default function OverviewPage() {
     stateMargins: Object.fromEntries(statesData.map((state) => [state.name, calculateStateTpl(state.abbr, state.name)])),
     keyRaces,
     racePolls: { through: racePollsMeta.newestPollEnd, checked: racePollsMeta.checked },
+    asOf: now.getTime(),
     trend: getForecastHistory()?.days.map((d) => ({ date: d.date, house: d.chambers.house.pDemControl ?? 0, senate: d.chambers.senate.pDemControl ?? 0, governors: d.chambers.governor.meanDem,
       seats: { house: seatRange(d.chambers.house), senate: seatRange(d.chambers.senate), governor: seatRange(d.chambers.governor) } })) ?? null,
   };

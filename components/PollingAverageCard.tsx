@@ -97,12 +97,13 @@ function fmtApprovalDiff(diff: number): string {
 // §lib/trumpApprovalAverage).
 function buildTrend<P extends { endDate: string }>(
   polls: P[],
-  computeAverage: (asOf: Date, polls: P[]) => { a: number; b: number; diff: number }
+  computeAverage: (asOf: Date, polls: P[]) => { a: number; b: number; diff: number },
+  nowMs: number,
 ): TrendPoint[] {
   if (polls.length === 0) return [];
   const sorted = [...polls].sort((x, y) => x.endDate.localeCompare(y.endDate));
   const firstMs = new Date(sorted[0].endDate).getTime();
-  const lastMs = Math.max(new Date(sorted[sorted.length - 1].endDate).getTime(), Date.now());
+  const lastMs = Math.max(new Date(sorted[sorted.length - 1].endDate).getTime(), nowMs);
   const points: TrendPoint[] = [];
   for (let t = firstMs; t <= lastMs; t += TREND_STEP_DAYS * MS_PER_DAY) {
     const available = sorted.filter((p) => new Date(p.endDate).getTime() <= t);
@@ -116,16 +117,16 @@ function buildTrend<P extends { endDate: string }>(
   return points;
 }
 
-function buildGenericBallotConfig(): ModeConfig {
+function buildGenericBallotConfig(nowMs: number): ModeConfig {
   const polls: NormalizedPoll[] = genericBallotPolls.map((p) => ({
     pollster: p.pollster, startDate: p.startDate, endDate: p.endDate,
     sample: p.sample, population: p.population, a: p.dem, b: p.rep, diff: p.diff,
   }));
-  const avg = computeGenericBallotAverage(new Date());
+  const avg = computeGenericBallotAverage(new Date(nowMs));
   const trend = buildTrend<GenericBallotPoll>(genericBallotPolls, (asOf, ps) => {
     const r = computeGenericBallotAverage(asOf, ps);
     return { a: r.dem, b: r.rep, diff: r.diff };
-  });
+  }, nowMs);
   return {
     key: "generic-ballot",
     title: "Generic Ballot",
@@ -143,16 +144,16 @@ function buildGenericBallotConfig(): ModeConfig {
   };
 }
 
-function buildTrumpApprovalConfig(): ModeConfig {
+function buildTrumpApprovalConfig(nowMs: number): ModeConfig {
   const polls: NormalizedPoll[] = trumpApprovalPolls.map((p) => ({
     pollster: p.pollster, startDate: p.startDate, endDate: p.endDate,
     sample: p.sample, population: p.population, a: p.approve, b: p.disapprove, diff: p.diff,
   }));
-  const avg = computeTrumpApprovalAverage(new Date());
+  const avg = computeTrumpApprovalAverage(new Date(nowMs));
   const trend = buildTrend<TrumpApprovalPoll>(trumpApprovalPolls, (asOf, ps) => {
     const r = computeTrumpApprovalAverage(asOf, ps);
     return { a: r.approve, b: r.disapprove, diff: r.diff };
-  });
+  }, nowMs);
   return {
     key: "trump-approval",
     title: "Trump Approval",
@@ -170,14 +171,15 @@ function buildTrumpApprovalConfig(): ModeConfig {
   };
 }
 
-// Trend generation is the expensive part of this component; build each mode once.
-const configCache = new Map<ModeKey, ModeConfig>();
+// Trend generation is the expensive part of this component; build each mode once per as-of time.
+const configCache = new Map<string, ModeConfig>();
 
-function getModeConfig(mode: ModeKey): ModeConfig {
-  const cached = configCache.get(mode);
+function getModeConfig(mode: ModeKey, nowMs: number): ModeConfig {
+  const key = `${mode}:${nowMs}`;
+  const cached = configCache.get(key);
   if (cached) return cached;
-  const config = mode === "generic-ballot" ? buildGenericBallotConfig() : buildTrumpApprovalConfig();
-  configCache.set(mode, config);
+  const config = mode === "generic-ballot" ? buildGenericBallotConfig(nowMs) : buildTrumpApprovalConfig(nowMs);
+  configCache.set(key, config);
   return config;
 }
 
@@ -453,12 +455,17 @@ function LatestPollsTable({ gb, ap, theme: t }: { gb: ModeConfig; ap: ModeConfig
   );
 }
 
-export default function PollingAverageCard({ theme: t }: { theme: Theme }) {
-  const gbBase = getModeConfig("generic-ballot");
+/**
+ * `asOf` (epoch ms) is the moment the averages are computed for, chosen once by the server page and
+ * passed down: reading the clock here would give the server render and the browser different
+ * numbers, which React reports as a hydration mismatch.
+ */
+export default function PollingAverageCard({ theme: t, asOf }: { theme: Theme; asOf: number }) {
+  const gbBase = getModeConfig("generic-ballot", asOf);
   // Generic ballot's colors follow the theme (dem/rep blue-red shift between light/dark);
   // Trump approval's colors are fixed green/red regardless of theme.
   const gb = useMemo(() => ({ ...gbBase, colorA: t.demText, colorB: t.repText }), [gbBase, t.demText, t.repText]);
-  const ap = getModeConfig("trump-approval");
+  const ap = getModeConfig("trump-approval", asOf);
 
   return (
     <div className="w-full">

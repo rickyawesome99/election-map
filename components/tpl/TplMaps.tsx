@@ -48,7 +48,12 @@ export function MapLegend() {
   );
 }
 
-export function TplMap({ mode, rows, valueLabel, linkLabel }: { mode: "states" | "districts"; rows: MapRow[]; valueLabel: string; linkLabel: string }) {
+// colorOf / formatValue / valueColor default to the TPL margin scale; /analysis/markets passes a
+// price-bucket scale to draw the same map by win probability.
+export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceColor, formatValue = fmt1, valueColor = marginColor }: {
+  mode: "states" | "districts"; rows: MapRow[]; valueLabel: string; linkLabel: string;
+  colorOf?: (value: number) => string; formatValue?: (value: number) => string; valueColor?: (value: number) => string;
+}) {
   const isDark = useDarkMode();
   const mapUnfilled   = isDark ? "#1e2530" : "#c8cdd3";
   const mapStroke     = isDark ? "#0d1117" : "#f6f8fa";
@@ -76,7 +81,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel }: { mode: "states" |
     const shape = (geo: GeoFeature) => {
       const row = rowOf(geo);
       const isSelected = !!row && selected?.key === row.key;
-      const fill = row ? getRaceColor(row.value) : mapUnfilled;
+      const fill = row ? colorOf(row.value) : mapUnfilled;
       const thin = mode === "districts";
       return (
         <Geography
@@ -133,7 +138,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel }: { mode: "states" |
         )}
       </ZoomableGroup>
     );
-  }, [mode, mapKey, rows, selected, statesTopo, districtsTopo, stateLinesTopo, mapUnfilled, mapStroke, hoverStroke, hoverUnfilled]);
+  }, [mode, mapKey, rows, selected, statesTopo, districtsTopo, stateLinesTopo, mapUnfilled, mapStroke, hoverStroke, hoverUnfilled, colorOf]);
 
   const closeButton = (
     <button type="button" onClick={() => setSelected(null)} className="flex h-4 w-4 shrink-0 items-center justify-center rounded" style={{ color: "var(--app-text-very-muted)" }} aria-label="Close">
@@ -142,7 +147,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel }: { mode: "states" |
   );
 
   const valueText = selected && (
-    <span className="tabular-nums" style={{ color: "var(--app-text-muted)" }}>{valueLabel} <b style={{ color: marginColor(selected.value) }}>{fmt1(selected.value)}</b></span>
+    <span className="tabular-nums" style={{ color: "var(--app-text-muted)" }}>{valueLabel} <b style={{ color: valueColor(selected.value) }}>{formatValue(selected.value)}</b></span>
   );
   const openLink = selected && (
     <Link href={selected.href} className="whitespace-nowrap font-semibold hover:underline" style={{ color: "var(--app-text-muted)" }} title={linkLabel}>Open ›</Link>
@@ -154,7 +159,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel }: { mode: "states" |
         {hovered && !selected && (
           <div ref={tooltipRef} className="pointer-events-none absolute z-20 hidden rounded-lg md:block" style={{ width: 160, padding: "7px 10px", background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}>
             <div className="mb-0.5 text-xs font-bold" style={{ color: "var(--app-text-primary)" }}>{hovered.name}</div>
-            <div className="text-[10px] font-semibold" style={{ color: marginColor(hovered.value) }}>{valueLabel}: {fmt1(hovered.value)}</div>
+            <div className="text-[10px] font-semibold" style={{ color: valueColor(hovered.value) }}>{valueLabel}: {formatValue(hovered.value)}</div>
           </div>
         )}
 

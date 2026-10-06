@@ -1,16 +1,18 @@
 import BackButton from "@/components/BackButton";
 import MarketAccuracyTable from "@/components/MarketAccuracyTable";
 import MarketCallChips from "@/components/MarketCallChips";
+import MarketBoard from "@/components/MarketBoard";
 import MarketConfidenceCharts from "@/components/MarketConfidenceCharts";
 import { LedgerSectionHead } from "@/components/RaceDetailSections";
 import { electionYear } from "@/data/forecastData";
 import type { MarketSource } from "@/data/predictionMarkets";
+import { POLYMARKET_2026_READ, marketBoard } from "@/lib/marketBoard";
 import { KIND_LABEL, SOURCE_LABEL, fmtPct, fmtWinMargin, nameOf, partyColor, partyOf, worstMiss, type MarketRaceRow } from "@/lib/predictionMarketDisplay";
 import { byRace, calibration, droppedQuotes, marketDots, marketRaceRows, scoredMarkets, tally, type Tally } from "@/lib/predictionMarkets";
 
 export const metadata = {
-  title: `Prediction Market Accuracy — ${electionYear} Forecast`,
-  description: "How Polymarket, Kalshi and PredictIt priced every presidential state, Senate, governor and House race they listed on the eve of the 2018, 2020, 2022 and 2024 elections, and which ones they got wrong.",
+  title: `Prediction Markets — ${electionYear} Forecast`,
+  description: "Polymarket's current price on every 2026 Senate, governor and House race, bucketed and mapped, and how Polymarket, Kalshi and PredictIt priced every race they listed on the eve of the 2018, 2020, 2022 and 2024 elections.",
 };
 
 const KINDS = ["P", "S", "G", "H"] as const;
@@ -69,12 +71,14 @@ function RaceCell({ r }: { r: MarketRaceRow }) {
 }
 
 function MissTable({ rows }: { rows: MarketRaceRow[] }) {
+  // Capped like the Every Race table: the body scrolls under a sticky header (inset shadow for the
+  // rule, since a collapsed border scrolls away with the row).
   return (
-    <div className="overflow-x-auto">
+    <div className="max-h-[560px] overflow-auto" style={{ borderBottom: "1px solid var(--app-border)" }}>
       <table className="w-full border-collapse text-sm">
-        <thead>
+        <thead className="sticky top-0 z-10" style={{ background: "var(--app-bg)" }}>
           <tr>{["Year", "Race", "Election-eve market", "Winner", "Margin"].map((h, i) => (
-            <th key={h} scope="col" className={`${th} ${i === 4 ? "text-right" : "text-left"}`} style={thStyle}>{h}</th>
+            <th key={h} scope="col" className={`${th} ${i === 4 ? "text-right" : "text-left"}`} style={{ color: "var(--app-text-muted)", boxShadow: "inset 0 -1px 0 var(--app-border)" }}>{h}</th>
           ))}</tr>
         </thead>
         <tbody>
@@ -134,9 +138,12 @@ export default function MarketAccuracyPage() {
   const mid = calibration(all).filter((b) => b.label !== "50–60%" && !b.label.startsWith("9")).reduce((sum, b) => ({ n: sum.n + b.n, right: sum.right + b.right, exp: sum.exp + b.expected * b.n }), { n: 0, right: 0, exp: 0 });
   const listNames = (names: string[]) => (names.length ? names.join(", ") : "none");
 
+  const boardRaces = marketBoard.reduce((n, o) => n + o.races.length, 0);
+  const fmtRead = new Date(`${POLYMARKET_2026_READ}T12:00:00Z`).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+
   const stats = [
-    { value: all.length, label: "Markets scored" },
-    { value: races.length, label: "Races priced" },
+    { value: boardRaces, label: `${electionYear} races priced` },
+    { value: all.length, label: "Past markets scored" },
     { value: share(total.right, total.n), label: "Favorite won" },
     { value: share(total.contestedRight, total.contestedN), label: "When under 90%" },
     { value: missed.length, label: "Races missed" },
@@ -147,12 +154,14 @@ export default function MarketAccuracyPage() {
       <div style={{ background: "linear-gradient(135deg, color-mix(in srgb, var(--party-dem) 8%, var(--app-bg)) 0%, var(--app-bg) 55%, color-mix(in srgb, var(--party-rep) 8%, var(--app-bg)) 100%)" }}>
         <div className="mx-auto max-w-7xl px-4 pb-8 pt-3 sm:px-6 sm:pb-10">
           <div className="-ml-2 mb-5"><BackButton /></div>
-          <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5.5vw, 4rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em" }}>Prediction Market Accuracy</h1>
+          <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5.5vw, 4rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em" }}>Prediction Markets</h1>
           <div className="mt-3 max-w-3xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
-            What Polymarket, Kalshi and PredictIt were charging for each side of a race the night before the election, set
-            against who won. Every presidential state, Senate, governor and House market whose election-eve price can still
-            be recovered is here: PredictIt in {years.at(-1)}, 2020 and 2022, Polymarket in 2022 and 2024, Kalshi in 2024. A price is read as a
-            probability, and the side priced higher is the market&rsquo;s call.
+            First, where Polymarket has every {electionYear} Senate, governor and House race today, sorted by how heavily
+            each side is favored. Then the record: what Polymarket, Kalshi and PredictIt were charging for each side of a
+            race the night before the election, set against who won. Every presidential state, Senate, governor and House
+            market whose election-eve price can still be recovered is here: PredictIt in {years.at(-1)}, 2020 and 2022,
+            Polymarket in 2022 and 2024, Kalshi in 2024. A price is read as a probability, and the side priced higher is
+            the market&rsquo;s call.
           </div>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-4 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
             {stats.map((stat, i, list) => (
@@ -166,6 +175,17 @@ export default function MarketAccuracyPage() {
       </div>
 
       <main className="mx-auto max-w-7xl px-4 pb-14 pt-6 sm:px-6">
+        <section className="mb-12">
+          <LedgerSectionHead label={`${electionYear} on the Board`} meta={`Polymarket's price on each race, read ${fmtRead}; the same figures as on the race pages`} />
+          <MarketBoard offices={marketBoard} />
+          <p className={note} style={{ color: "var(--app-text-very-muted)" }}>
+            Each race sits in the column of its favorite&rsquo;s price, most contested first; a column with more than a
+            dozen races folds the rest behind a count. Hover a race for the matchup and this site&rsquo;s own probability
+            beside the market&rsquo;s. The seat totals add up the prices, so a chamber of 60% favorites counts each as 0.6
+            of a seat. The map colors states and districts by the same buckets; states with no race this cycle are gray.
+          </p>
+        </section>
+
         <section className="mb-12">
           <LedgerSectionHead label="The Record" meta="By election and venue, then by office" />
           <RecordTable firstHead="Election and venue" rows={[...venueYears, { key: "all", label: "All markets", t: total, total: true }]} />
@@ -220,6 +240,11 @@ export default function MarketAccuracyPage() {
         <section>
           <LedgerSectionHead label="What This Covers" />
           <div className="max-w-3xl space-y-3 text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
+            <p>
+              <strong style={{ color: "var(--app-text-primary)" }}>{electionYear}.</strong> The current prices are the Polymarket
+              figures entered into the forecast sheet and shown on each race page, last read {fmtRead}. They are a snapshot,
+              not a live feed, and are not scored here until the election is over.
+            </p>
             <p>
               <strong style={{ color: "var(--app-text-primary)" }}>2024.</strong> Polymarket and Kalshi both publish price
               history for settled markets. Each price is the last one at or before midnight Eastern as Election Day began.

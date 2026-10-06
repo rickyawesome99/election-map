@@ -28,6 +28,8 @@ export type OverviewData = {
   keyRaces: { type: RaceType; id: string; name: string; state: string; margin: number }[];
   /** Race-poll freshness: newest poll's field end date, and the last Wikipedia scrape (ISO dates). */
   racePolls: { through: string; checked: string | null };
+  /** When the page was computed (epoch ms) — the national polling averages are drawn as of it. */
+  asOf: number;
   /** The forecast rerun once per day (lib/forecastHistory.ts); null if the series was not generated. */
   trend: ForecastTrendDay[] | null;
 };
@@ -45,7 +47,7 @@ function SectionHead({ children, theme }: { children: React.ReactNode; theme: Th
 export default function OverviewEditorial({ data }: { data: OverviewData }) {
   const darkMode = useDarkMode();
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
-  const { electionYear, genericBallot: gb, approvalDiff, seats, totalSeats, sims, stateMargins, keyRaces, racePolls, trend } = data;
+  const { electionYear, genericBallot: gb, approvalDiff, seats, totalSeats, sims, stateMargins, keyRaces, racePolls, trend, asOf } = data;
   const approval = { diff: approvalDiff };
   const house = seats.house;
   const senate = seats.senate;
@@ -139,7 +141,7 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
 
         <section className="mt-10">
           <SectionHead theme={t}>National Polling</SectionHead>
-          <div className="pt-3"><PollingAverageCard theme={t} /></div>
+          <div className="pt-3"><PollingAverageCard theme={t} asOf={asOf} /></div>
         </section>
       </main>
     </div>

@@ -36,7 +36,7 @@ export default function AnalysisPage() {
             </a>
             <a href="/analysis/markets" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
               <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Markets</div>
-              <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Prediction Market Accuracy</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>What Polymarket, Kalshi and PredictIt were charging for each side of a race on election eve in 2018, 2020 and 2024, which favorites won, and every race the markets got wrong.</p></div>
+              <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Prediction Markets</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>Polymarket&rsquo;s current price on every 2026 Senate, governor and House race, bucketed and mapped, then what the markets were charging on election eve in 2018, 2020, 2022 and 2024, which favorites won, and every race they got wrong.</p></div>
               <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
             </a>
             <a href="/analysis/delegation" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
@@ -61,7 +61,7 @@ export default function AnalysisPage() {
             </Link>
             <a href="/analysis/popular-vote" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
               <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>National</div>
-              <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Popular Vote History</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>Compare national vote margins, turnout, approval, and seats across election cycles.</p></div>
+              <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Popular Vote</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>National vote margins and seats by office since 2016, and how presidential approval, direction of country and Gallup&apos;s third-quarter party ID anticipated the House and presidential vote, read forward to 2026.</p></div>
               <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
             </a>
             <a href="/audit/state-leg-results" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>

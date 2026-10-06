@@ -59,14 +59,16 @@ export default function MarketAccuracyTable({ rows, years }: { rows: MarketRaceR
         <span className="ml-auto text-xs tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>{shown.length} races</span>
       </div>
 
-      <div className="overflow-x-auto">
+      {/* Capped so 400-odd races don't run the page on; the header stays put while the body scrolls.
+          The rule under the header is an inset shadow because a collapsed border scrolls away with the row. */}
+      <div className="max-h-[560px] overflow-auto" style={{ borderBottom: "1px solid var(--app-border)" }}>
         <table className="w-full border-collapse text-sm">
-          <thead>
+          <thead className="sticky top-0 z-10" style={{ background: "var(--app-bg)" }}>
             <tr>
               {COLUMNS.map((c) => (
                 <th key={c.label} scope="col" title={c.title} aria-sort={c.key && sort.key === c.key ? (sort.dir === 1 ? "ascending" : "descending") : undefined}
                   className={`whitespace-nowrap px-2 py-2 text-[10px] font-bold uppercase tracking-wider ${c.right ? "text-right" : "text-left"}`}
-                  style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)" }}>
+                  style={{ color: "var(--app-text-muted)", boxShadow: "inset 0 -1px 0 var(--app-border)" }}>
                   {c.key ? (
                     <button type="button" className="uppercase tracking-wider hover:underline" onClick={() => setSort((s) => ({ key: c.key!, dir: s.key === c.key ? (s.dir === 1 ? -1 : 1) : 1 }))}>
                       {c.label}{sort.key === c.key ? (sort.dir === 1 ? " ↑" : " ↓") : ""}

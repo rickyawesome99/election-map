@@ -17,9 +17,11 @@ const NO_HISTORY = new Set(["Change Log", "Sources"]);
 
 test("methodology sits between Analysis and District Finder in the top navigation", async ({ page }) => {
   await page.goto("/overview");
-  const labels = await page.locator("nav").first().getByRole("link").allTextContents();
+  const topNav = page.locator("nav").first();
+  const labels = await topNav.getByRole("link").allTextContents();
   expect(labels.slice(labels.indexOf("Analysis"), labels.indexOf("Analysis") + 3)).toEqual(["Analysis", "Methodology", "District Finder"]);
-  await page.getByRole("link", { name: "Methodology", exact: true }).click();
+  // The tab, not the footer's Methodology link.
+  await topNav.getByRole("link", { name: "Methodology", exact: true }).click();
   await expect(page).toHaveURL(/\/methodology$/);
   await expect(page.getByRole("heading", { name: "Methodology", level: 1 })).toBeVisible({ timeout: 20_000 });
 });
