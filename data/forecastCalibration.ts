@@ -3,7 +3,7 @@
 // (and House races on stable lines) predicted as of mid-September from a fit on years ≤ Y−1, under the live
 // constants. Re-run after any change to the model or its data so the page keeps describing the model as it is.
 export const FORECAST_CALIBRATION = {
-  "generatedAt": "2026-10-04",
+  "generatedAt": "2026-10-10",
   "years": [
     2018,
     2020,
@@ -274,7 +274,7 @@ export const FORECAST_CALIBRATION = {
       "all": 133,
       "maeModel": 4.85,
       "maePoll": 6.64,
-      "maeBlend": 4.69,
+      "maeBlend": 4.67,
       "meanW": 0.4
     },
     {
@@ -285,7 +285,7 @@ export const FORECAST_CALIBRATION = {
       "maeModel": 9.36,
       "maePoll": 5.76,
       "maeBlend": 7.27,
-      "meanW": 0.45
+      "meanW": 0.44
     },
     {
       "horizon": "Mid-September",
@@ -304,8 +304,8 @@ export const FORECAST_CALIBRATION = {
       "all": 133,
       "maeModel": 4.83,
       "maePoll": 6.51,
-      "maeBlend": 4.54,
-      "meanW": 0.48
+      "maeBlend": 4.52,
+      "meanW": 0.47
     },
     {
       "horizon": "Mid-October",
@@ -314,8 +314,8 @@ export const FORECAST_CALIBRATION = {
       "all": 94,
       "maeModel": 9.1,
       "maePoll": 6.05,
-      "maeBlend": 5.86,
-      "meanW": 0.55
+      "maeBlend": 5.89,
+      "meanW": 0.54
     },
     {
       "horizon": "Mid-October",
@@ -334,8 +334,8 @@ export const FORECAST_CALIBRATION = {
       "all": 133,
       "maeModel": 4.98,
       "maePoll": 6.02,
-      "maeBlend": 4.6,
-      "meanW": 0.53
+      "maeBlend": 4.59,
+      "meanW": 0.51
     },
     {
       "horizon": "November 1",
@@ -344,8 +344,8 @@ export const FORECAST_CALIBRATION = {
       "all": 94,
       "maeModel": 9,
       "maePoll": 5.37,
-      "maeBlend": 5.4,
-      "meanW": 0.58
+      "maeBlend": 5.44,
+      "meanW": 0.56
     },
     {
       "horizon": "November 1",

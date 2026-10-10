@@ -12,7 +12,7 @@ import { pollsterIdOf } from "@/lib/pollsterRatings";
 // On top of that the average reports how much evidence it rests on:
 //   nEff = Σ recency weights over the deduped polls (a fresh poll counts 1, a
 //   six-week-old one ½, …), which the forecast turns into the poll's share of the
-//   final margin, w = nEff / (nEff + POLL_K[office]). POLL_K is fitted by the forward
+//   final margin, w = min(POLL_W_MAX, nEff / (nEff + POLL_K[office])). POLL_K is fitted by the forward
 //   backtest (scripts/forwardBacktest.ts --polls) and falls as the election nears.
 // Partisan (campaign / party-sponsored) polls are kept but flagged; the harness
 // found no gain from dropping them.
@@ -77,7 +77,7 @@ export function computeRacePollAverage(polls: RacePoll[], asOf: Date, shiftFor?:
 /** Share of the final margin the poll average gets, given its evidence and the office's k. */
 export function pollWeight(nEff: number, office: "H" | "S" | "G"): number {
   const k = F.POLL_K[office];
-  return k <= 0 ? 1 : nEff / (nEff + k);
+  return Math.min(F.POLL_W_MAX, k <= 0 ? 1 : nEff / (nEff + k));
 }
 
 export const racePollKey = (office: "H" | "S" | "G", stateAbbr: string, raceLabel: string) => `${office}:${stateAbbr}:${raceLabel}`;

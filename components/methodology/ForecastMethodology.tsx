@@ -3,6 +3,7 @@ import { FORECAST_CONSTANTS as F, TPL_GLOBAL_CONSTANTS as G } from "@/data/tplMo
 import { FORECAST_CALIBRATION as CAL } from "@/data/forecastCalibration";
 import { nationalEnvironmentHistory } from "@/data/nationalEnvironmentHistory";
 import { racePolls } from "@/data/racePolls";
+import { pollWeight } from "@/lib/racePollAverage";
 import { genericBallotPolls } from "@/data/genericBallotPolls";
 import { ALIGNED_INDEPENDENTS } from "@/data/raceEligibility";
 import { senateForecasts, governorForecasts, houseForecasts, getChamberSimulations, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastedRace } from "@/lib/forecast";
@@ -26,7 +27,7 @@ const DOCUMENTED_IN = {
   APPOINTED_INCUMBENCY_SHARE: "incumbency",
   MONEY_BASIS: "fundraising", MONEY_K: "fundraising", MONEY_CAP: "fundraising", PARTIAL_CYCLE_GAP_SCALE: "fundraising",
   QUALITY_WEIGHT: "candidates", OBSERVABLE_PRIOR_FEATURES: "candidates",
-  POLL_K: "polling", POLL_SIGMA: "polling", POLL_AGING_SHARE: "polling", HOUSE_EFFECTS: "polling", HOUSE_EFFECT_K: "polling",
+  POLL_K: "polling", POLL_W_MAX: "polling", POLL_SIGMA: "polling", POLL_AGING_SHARE: "polling", HOUSE_EFFECTS: "polling", HOUSE_EFFECT_K: "polling",
   HOUSE_EFFECT_WINDOW_DAYS: "polling", HOUSE_EFFECT_PARTISAN_PRIOR: "polling", HOUSE_EFFECT_CAP: "polling",
   RACE_SIGMA: "uncertainty", DEMOGRAPHIC_SHOCK: "chambers",
 } satisfies Record<keyof typeof F, string>;
@@ -72,7 +73,7 @@ export default function ForecastMethodology() {
         <Derivation rows={[
           { name: "Model", formula: "TPL + Environment + Incumbent + Fundraising + Candidates" },
           { name: "Projected Margin", formula: "(1 − w) × Model + w × Polling Avg" },
-          { name: "w", formula: "nEff / (nEff + POLL_K)", now: "0 with no polls" },
+          { name: "w", formula: "min(POLL_W_MAX, nEff / (nEff + POLL_K))", now: "0 with no polls" },
           { name: "σ²", formula: "(β*·σ_E)² + ((1 − w)·RACE_SIGMA)² + (w·POLL_SIGMA)²" },
           { name: "Win Probability", formula: "Φ(−Projected Margin / σ)" },
           { name: "Rating", formula: "band of the Projected Margin", now: "Tilt < 1 · Lean < 5 · Likely < 15 · Safe" },
@@ -216,10 +217,10 @@ export default function ForecastMethodology() {
           "weight_i      = recency_i × √min(sample_i, 3000)         recency: 1 for 14 days, then halving every 14",
           "Polling Avg   = Σ weight_i × poll margin_i / Σ weight_i   one poll per pollster (its latest)",
           "nEff          = Σ recency_i                                effective number of fresh polls",
-          "w             = nEff / (nEff + POLL_K[office])",
+          "w             = min(POLL_W_MAX, nEff / (nEff + POLL_K[office]))",
         ]} />
         <Block label="How much a poll average counts" meta="w by effective poll count">
-          <DataTable align="lrrrrr" head={["Office", "k", "nEff 0.5", "1", "2", "4", "8"]} rows={OFFICES.map((o) => [OFFICE_NAME[o], F.POLL_K[o], ...[0.5, 1, 2, 4, 8].map((n) => pct(n / (n + F.POLL_K[o])))])} />
+          <DataTable align="lrrrrrrr" head={["Office", "k", "nEff 0.5", "1", "2", "4", "8", "∞"]} rows={OFFICES.map((o) => [OFFICE_NAME[o], F.POLL_K[o], ...[0.5, 1, 2, 4, 8, 1e9].map((n) => pct(pollWeight(n, o)))])} />
         </Block>
         <Block label="Poll aging">
           <Formula lines={["aging shift = POLL_AGING_SHARE × β*(state) × (GB now − GB on the poll's end date)"]}
@@ -233,6 +234,7 @@ export default function ForecastMethodology() {
         </Block>
         <Constants rows={[
           { name: "POLL_K", value: hsg(F.POLL_K), basis: "decision", meaning: "Pseudo-polls of model evidence the poll average must outweigh.", source: "forwardBacktest --polls fitted Senate 3, Governor ≤ 0.1, House 1. Governor and House were raised to 2 so a single fresh poll carries at most a third of a projection (a one-poll Governor race had swung 15 pts); backtest cost Governor 6.1 → 7.4, House 3.57 → 3.65, both still well under model-only." },
+          { name: "POLL_W_MAX", value: F.POLL_W_MAX, basis: "decision", meaning: "Ceiling on w: the Model keeps at least 1 − POLL_W_MAX of every projection, however many polls a race has.", source: "User decision 2026-10-09. The polls of 2016, 2018, 2020 and 2024 missed in the same direction across the whole field, which house effects (relative to the field) cannot catch, so the most heavily polled races should not run on polls alone. Binding in the 10 races that were at w 0.79–0.86." },
           { name: "POLL_SIGMA", value: hsg(F.POLL_SIGMA), basis: "calibrated", meaning: "Robust spread of actual − poll average over polled races; enters the race σ with weight w." },
           { name: "POLL_AGING_SHARE", value: F.POLL_AGING_SHARE, basis: "decision", meaning: "1 = a race moves point-for-point (through β*) with the national ballot; 0 = never aged.", source: "Backtest effect is tiny (blend < 0.05) because old polls already carry little weight; 1 kept as the principled value." },
           { name: "HOUSE_EFFECTS", value: String(F.HOUSE_EFFECTS), basis: "calibrated", meaning: "Subtract each pollster's current-cycle lean from its polls.", source: "forwardBacktest --pollsters: Senate poll average 6.64 → 6.27 (mid-Sept), House 5.11 → 4.75." },

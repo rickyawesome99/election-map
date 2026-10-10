@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import CandidateLink from "@/components/CandidateLink";
 import type { ProjectedRaceResult } from "@/lib/countyProjection";
 
@@ -15,7 +16,21 @@ const PLACEHOLDER = /^(Democratic|Republican|Generic) (Candidate|Democrat|Republ
 const fmtInt = (n: number) => n.toLocaleString("en-US");
 const pct = (n: number, of: number) => (of > 0 ? (n / of) * 100 : 0);
 
-export default function ProjectedVoteSection({ p }: { p: ProjectedRaceResult }) {
+// The page's candidate rows (portrait, name, share) with this projection's numbers swapped in, so
+// the share and the votes beside it are the same county-summed figures. Same-party contests keep
+// the forecast's shares: the projection doesn't split the vote between the two nominees.
+export function withProjectedVotes<T extends { pct: number; votes?: number }>(cands: [T, T], p: ProjectedRaceResult | null): [T, T] {
+  if (!p || p.contest === "same-party-D" || p.contest === "same-party-R") return cands;
+  const [d, r] = cands;
+  return [
+    { ...d, pct: p.shares.dem, votes: p.demVotes > 0 ? p.demVotes : undefined },
+    { ...r, pct: p.shares.rep, votes: p.repVotes > 0 ? p.repVotes : undefined },
+  ];
+}
+
+// `candidates`, when given, replaces the section's own candidate rows: the race pages pass their
+// portrait rows (CandidatesLedgerSection fed through withProjectedVotes) so one section carries both.
+export default function ProjectedVoteSection({ p, candidates }: { p: ProjectedRaceResult; candidates?: ReactNode }) {
   const decided = p.contest === "uncontested-D" || p.contest === "uncontested-R";
   // Two nominees of one party: the forecast only says the party keeps the seat, not which of them
   // wins, so the section shows the electorate but no split between them.
@@ -37,8 +52,9 @@ export default function ProjectedVoteSection({ p }: { p: ProjectedRaceResult }) 
 
   return (
     <div>
+      {sameParty && candidates}
       {sameParty ? (
-        <p className="text-sm" style={{ color: "var(--app-text-primary)" }}>
+        <p className={`text-sm${candidates ? " mt-3" : ""}`} style={{ color: "var(--app-text-primary)" }}>
           Both nominees are {p.demParty === "R" ? "Republicans" : "Democrats"}, so the seat stays {partyName(p.demParty)} either way. The forecast doesn&apos;t split the vote between {p.demName} and {p.repName}; the electorate below is the 2026 turnout estimate.
         </p>
       ) : (<>
@@ -49,7 +65,7 @@ export default function ProjectedVoteSection({ p }: { p: ProjectedRaceResult }) 
       </div>
 
       <div className="mt-2">
-        {cands.map((c) => {
+        {candidates ?? cands.map((c) => {
           const color = partyColor(c.party);
           return (
             <div key={c.name} className="grid items-center gap-x-3 py-2" style={{ gridTemplateColumns: "4px minmax(0,1fr) auto", borderBottom: "1px solid var(--app-border)" }}>
@@ -68,12 +84,17 @@ export default function ProjectedVoteSection({ p }: { p: ProjectedRaceResult }) 
           );
         })}
         {p.othVotes > 0 && (
-          <div className="grid items-center gap-x-3 py-2" style={{ gridTemplateColumns: "4px minmax(0,1fr) auto", borderBottom: "1px solid var(--app-border)" }}>
+          <div className="grid items-center gap-x-3 py-2" style={{ gridTemplateColumns: "4px minmax(0,1fr) auto", borderBottom: "1px solid var(--app-border)", borderTop: candidates ? "1px solid var(--app-border)" : undefined }}>
             <span className="h-6 rounded-sm" style={{ background: "var(--party-ind)", opacity: 0.6 }} />
             <div className="text-[13px] font-semibold" style={{ color: "var(--app-text-muted)" }}>Others</div>
             <div className="text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>
-              <div className="text-sm font-bold">{fmtInt(p.othVotes)}</div>
-              <div className="text-[11px]">{p.shares.oth.toFixed(1)}%</div>
+              {candidates ? (<>
+                <div className="text-xl font-extrabold">{p.shares.oth.toFixed(1)}%</div>
+                <div className="text-[11px]">{fmtInt(p.othVotes)} votes</div>
+              </>) : (<>
+                <div className="text-sm font-bold">{fmtInt(p.othVotes)}</div>
+                <div className="text-[11px]">{p.shares.oth.toFixed(1)}%</div>
+              </>)}
             </div>
           </div>
         )}

@@ -1,24 +1,32 @@
 "use client";
 
+import Link from "next/link";
 import { Fragment, useMemo, useState } from "react";
 import PollsterGradeChip from "@/components/PollsterGradeChip";
-import type { PollsterRating } from "@/data/pollsterRatings";
+import { WAR_BAD, WAR_GOOD } from "@/components/tpl/format";
+import type { PollsterRating, WinLoss } from "@/data/pollsterRatings";
 import { fmtLean, fmtVsField, gradeRank, leanColor, vsFieldTint } from "@/lib/pollsterDisplay";
 
-type SortKey = "grade" | "name" | "n" | "avgError" | "score" | "bias" | "house" | "lastYear" | "polls2026";
+type SortKey = "grade" | "name" | "n" | "avgError" | "avgMiss" | "record" | "score" | "bias" | "house" | "lastYear" | "polls2026";
 type Scope = "rated" | "active" | "all";
 
-const COLUMNS: { key: SortKey; label: string; right?: true; title: string }[] = [
-  { key: "grade", label: "Grade", title: "Letter band of the score; needs five graded polls" },
+// Fixed widths (table-layout: fixed) so no column moves when the scope, search or sort changes
+// the rows; Pollster (no width) takes what is left.
+const COLUMNS: { key: SortKey; label: string; right?: true; center?: true; width?: string; title: string }[] = [
+  { key: "grade", label: "Grade", width: "4rem", title: "Letter band of the score; needs five graded polls" },
   { key: "name", label: "Pollster", title: "Pollster" },
-  { key: "n", label: "Polls", right: true, title: "Graded polls: general-election polls in the final 21 days, 2008–2024" },
-  { key: "avgError", label: "Avg. error", right: true, title: "Recency-weighted average miss on the margin, in points" },
-  { key: "score", label: "Vs. field", right: true, title: "Score: average miss minus what a typical poll of the same races missed by, shrunk toward 0 for small records. Negative is better." },
-  { key: "bias", label: "Bias", right: true, title: "Average signed miss against the result (shrunk): D+2 means the pollster overstated Democrats by 2" },
-  { key: "house", label: "House effect", right: true, title: "Average lean against the OTHER pollsters in the same races (shrunk)" },
-  { key: "lastYear", label: "Last graded", right: true, title: "Most recent election with a graded poll" },
-  { key: "polls2026", label: "2026 polls", right: true, title: "Race and generic-ballot polls fielded on or after 1 January 2026" },
+  { key: "n", label: "Polls", width: "4rem", right: true, title: "Graded polls: general-election polls in the final 21 days, 2008–2024" },
+  { key: "avgError", label: "Avg. error", width: "5.75rem", right: true, title: "Recency-weighted average miss on the margin, in points" },
+  { key: "avgMiss", label: "Avg. miss", width: "5.5rem", right: true, title: "Plain average of poll margin minus result over its graded polls, every cycle counted equally: D+2 means its polls overstated Democrats by 2" },
+  { key: "record", label: "Record", width: "6.5rem", center: true, title: "Graded polls that had the eventual winner ahead – that had the loser ahead (– ties). Sorts by share right." },
+  { key: "score", label: "Vs. field", width: "5.5rem", right: true, title: "Score: average miss minus what a typical poll of the same races missed by, shrunk toward 0 for small records. Negative is better." },
+  { key: "bias", label: "Bias", width: "4.75rem", right: true, title: "Average signed miss against the result (shrunk): D+2 means the pollster overstated Democrats by 2" },
+  { key: "house", label: "House effect", width: "7rem", right: true, title: "Average lean against the OTHER pollsters in the same races (shrunk)" },
+  { key: "lastYear", label: "Last graded", width: "6.75rem", right: true, title: "Most recent election with a graded poll" },
+  { key: "polls2026", label: "2026 polls", width: "6.25rem", right: true, title: "Race and generic-ballot polls fielded on or after 1 January 2026" },
 ];
+
+const FIRST_ROWS = 50; // rows shown before "Show all"
 
 const polls2026 = (r: PollsterRating) => r.racePolls2026 + r.genericPolls2026;
 
@@ -29,11 +37,28 @@ function sortValue(r: PollsterRating, key: SortKey): number | string {
     case "polls2026": return -polls2026(r);
     case "n": return -r.n;
     case "lastYear": return -(r.lastYear ?? 0);
+    case "avgMiss": return r.avgMiss == null ? Number.POSITIVE_INFINITY : Math.abs(r.avgMiss);
+    case "record": return r.record[0] + r.record[1] ? -r.record[0] / (r.record[0] + r.record[1]) : 1;
     default: return r[key] ?? Number.POSITIVE_INFINITY;
   }
 }
 
-function Detail({ r }: { r: PollsterRating }) {
+/** "41–3" (plus "–1" for ties): right in the WAR green, wrong in its red (zeros included), ties muted; the share right on hover. */
+export function WinLossCell({ record: [w, l, t] }: { record: WinLoss }) {
+  if (w + l + t === 0) return <span style={{ color: "var(--app-text-very-muted)" }}>—</span>;
+  const muted = "var(--app-text-muted)";
+  return (
+    <span title={`Had the winner ahead in ${w} of ${w + l} graded polls (${Math.round((w / Math.max(1, w + l)) * 100)}%)${t ? `; ${t} tied` : ""}`}>
+      <span className="font-semibold" style={{ color: WAR_GOOD }}>{w}</span>
+      <span style={{ color: muted }}>–</span>
+      <span className="font-semibold" style={{ color: WAR_BAD }}>{l}</span>
+      {t > 0 && <span style={{ color: muted }}>–{t}</span>}
+    </span>
+  );
+}
+
+/** By-cycle and by-region record; shared with the pollster's own page. */
+export function PollsterRecordDetail({ r }: { r: PollsterRating }) {
   const head = "pb-1 text-[10px] font-bold uppercase tracking-wider";
   const cell = "py-1 pr-4 text-xs tabular-nums whitespace-nowrap";
   if (r.n === 0)
@@ -43,11 +68,11 @@ function Detail({ r }: { r: PollsterRating }) {
       <div>
         <div className={head} style={{ color: "var(--app-text-very-muted)" }}>By cycle</div>
         <table>
-          <thead><tr style={{ color: "var(--app-text-very-muted)" }}>{["Cycle", "Polls", "Avg. error", "Vs. field", "Bias"].map((h) => <th key={h} className="pr-4 text-left text-[10px] font-semibold">{h}</th>)}</tr></thead>
+          <thead><tr style={{ color: "var(--app-text-very-muted)" }}>{["Cycle", "Polls", "Avg. error", "Record", "Vs. field", "Avg. miss"].map((h) => <th key={h} className="pr-4 text-left text-[10px] font-semibold">{h}</th>)}</tr></thead>
           <tbody>
             {r.byCycle.map((c) => (
               <tr key={c.cycle}>
-                <td className={cell}>{c.cycle}</td><td className={cell}>{c.n}</td><td className={cell}>{c.avgError.toFixed(1)}</td>
+                <td className={cell}>{c.cycle}</td><td className={cell}>{c.n}</td><td className={cell}>{c.avgError.toFixed(1)}</td><td className={cell}><WinLossCell record={c.record} /></td>
                 <td className={cell}><span className="rounded px-1" style={{ background: vsFieldTint(c.excess, 3) }}>{fmtVsField(c.excess)}</span></td>
                 <td className={cell} style={{ color: leanColor(c.bias) }}>{fmtLean(c.bias)}</td>
               </tr>
@@ -94,6 +119,7 @@ export default function PollsterRatingsTable({ ratings }: { ratings: PollsterRat
   const [scope, setScope] = useState<Scope>("rated");
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState<string | null>(null);
+  const [expanded, setExpanded] = useState(false);
 
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -112,7 +138,7 @@ export default function PollsterRatingsTable({ ratings }: { ratings: PollsterRat
       <div className="flex flex-wrap items-center gap-3 pb-4">
         <div className="flex rounded-md p-0.5" style={{ background: "var(--app-tab-bg)" }} role="group" aria-label="Which pollsters to list">
           {scopes.map(([key, label]) => (
-            <button key={key} type="button" onClick={() => setScope(key)} aria-pressed={scope === key} className="rounded px-3 py-1 text-xs font-semibold"
+            <button key={key} type="button" onClick={() => { setScope(key); setExpanded(false); }} aria-pressed={scope === key} className="rounded px-3 py-1 text-xs font-semibold"
               style={{ background: scope === key ? "var(--app-panel)" : "transparent", color: scope === key ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>
               {label}
             </button>
@@ -124,31 +150,39 @@ export default function PollsterRatingsTable({ ratings }: { ratings: PollsterRat
       </div>
 
       <div className="overflow-x-auto">
-        <table className="w-full border-collapse text-sm">
+        <table className="w-full min-w-[72rem] table-fixed border-collapse text-sm">
+          <colgroup>{COLUMNS.map((c) => <col key={c.key} style={c.width ? { width: c.width } : undefined} />)}</colgroup>
           <thead>
             <tr>
               {COLUMNS.map((c) => (
                 <th key={c.key} scope="col" title={c.title} aria-sort={sort.key === c.key ? (sort.dir === 1 ? "ascending" : "descending") : "none"}
-                  className={`whitespace-nowrap px-2 py-2 text-[10px] font-bold uppercase tracking-wider ${c.right ? "text-right" : "text-left"}`}
+                  className={`whitespace-nowrap px-2 py-2 text-[10px] font-bold uppercase tracking-wider ${c.right ? "text-right" : c.center ? "text-center" : "text-left"}`}
                   style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)" }}>
-                  <button type="button" className="uppercase tracking-wider hover:underline" onClick={() => setSort((s) => ({ key: c.key, dir: s.key === c.key ? (s.dir === 1 ? -1 : 1) : 1 }))}>
-                    {c.label}{sort.key === c.key ? (sort.dir === 1 ? " ↑" : " ↓") : ""}
-                  </button>
+                  <span className={c.center ? "inline-block min-w-[4.5rem] text-left" : undefined /* matches the Record cells' block */}>
+                    <button type="button" className="uppercase tracking-wider hover:underline" onClick={() => setSort((s) => ({ key: c.key, dir: s.key === c.key ? (s.dir === 1 ? -1 : 1) : 1 }))}>
+                      {c.label}{sort.key === c.key ? (sort.dir === 1 ? " ↑" : " ↓") : ""}
+                    </button>
+                  </span>
                 </th>
               ))}
             </tr>
           </thead>
           <tbody>
-            {rows.map((r) => (
+            {(expanded ? rows : rows.slice(0, FIRST_ROWS)).map((r) => (
               <Fragment key={r.id}>
                 <tr className="cursor-pointer" onClick={() => setOpen(open === r.id ? null : r.id)} style={{ borderBottom: open === r.id ? "none" : "1px solid var(--app-border)" }}>
                   <td className="px-2 py-2"><PollsterGradeChip grade={r.grade} /></td>
-                  <td className="px-2 py-2 font-semibold">
+                  <td className="px-2 py-2 font-semibold [overflow-wrap:anywhere]">
                     <button type="button" aria-expanded={open === r.id} className="text-left hover:underline">{r.name}</button>
                     {(r.partisanShare ?? 0) >= 0.5 && <span className="ml-1.5 text-[10px] font-bold" style={{ color: leanColor(r.partisanLean === "R" ? 1 : -1) }} title="Most of its graded polls were party- or campaign-sponsored">({r.partisanLean})</span>}
                   </td>
                   <td className="px-2 py-2 text-right tabular-nums">{r.n || "—"}</td>
                   <td className="px-2 py-2 text-right tabular-nums">{r.avgError?.toFixed(1) ?? "—"}</td>
+                  <td className="px-2 py-2 text-right tabular-nums" style={{ color: leanColor(r.avgMiss) }}>{fmtLean(r.avgMiss)}</td>
+                  <td className="whitespace-nowrap px-2 py-2 text-center tabular-nums">
+                    {/* a fixed-width block centred in the column, left-aligned inside, so the win counts line up */}
+                    <span className="inline-block min-w-[4.5rem] text-left"><WinLossCell record={r.record} /></span>
+                  </td>
                   <td className="px-2 py-2 text-right tabular-nums"><span className="rounded px-1.5 py-0.5" style={{ background: vsFieldTint(r.score) }}>{fmtVsField(r.score)}</span></td>
                   <td className="px-2 py-2 text-right tabular-nums" style={{ color: leanColor(r.bias) }}>{fmtLean(r.bias)}</td>
                   <td className="px-2 py-2 text-right tabular-nums" style={{ color: leanColor(r.house) }}>{fmtLean(r.house)}</td>
@@ -157,7 +191,10 @@ export default function PollsterRatingsTable({ ratings }: { ratings: PollsterRat
                 </tr>
                 {open === r.id && (
                   <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-                    <td colSpan={COLUMNS.length} className="px-2 pb-5 pt-1"><Detail r={r} /></td>
+                    <td colSpan={COLUMNS.length} className="px-2 pb-5 pt-1">
+                      <PollsterRecordDetail r={r} />
+                      <Link href={`/analysis/pollsters/${r.slug}`} className="mt-3 inline-block text-xs font-semibold underline underline-offset-2">Every {r.name} poll &rarr;</Link>
+                    </td>
                   </tr>
                 )}
               </Fragment>
@@ -166,6 +203,12 @@ export default function PollsterRatingsTable({ ratings }: { ratings: PollsterRat
           </tbody>
         </table>
       </div>
+      {rows.length > FIRST_ROWS && (
+        <button type="button" onClick={() => setExpanded((e) => !e)} aria-expanded={expanded} className="mt-3 rounded-md px-3 py-1.5 text-xs font-semibold"
+          style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}>
+          {expanded ? `Show the first ${FIRST_ROWS} only` : `Show all ${rows.length} pollsters`}
+        </button>
+      )}
     </div>
   );
 }

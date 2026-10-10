@@ -51,6 +51,8 @@ type CandidateCardEntry = {
   photo?: string | null;
   pct: number;
   placeholder?: boolean;
+  // Projected votes (lib/countyProjection.ts); shown small under the share when present.
+  votes?: number;
 };
 
 type HouseBoundaryHistoryEntry = {
@@ -726,7 +728,12 @@ export function CandidatesLedgerSection({
                 <div className="text-sm font-medium mt-0.5" style={{ color: accentColor }}>{displayParty}</div>
               </div>
             </div>
-            <div className="shrink-0 text-3xl font-extrabold tabular-nums" style={{ color: accentColor }}>{fmtCandidatePct(candidate.pct)}%</div>
+            <div className="shrink-0 text-right tabular-nums" style={{ color: accentColor }}>
+              <div className="text-3xl font-extrabold">{fmtCandidatePct(candidate.pct)}%</div>
+              {candidate.votes != null && (
+                <div className="text-sm font-medium mt-0.5">{candidate.votes.toLocaleString("en-US")} votes</div>
+              )}
+            </div>
           </div>
         );
       })}
@@ -1219,13 +1226,13 @@ export function ForecastCalculationCard({
       <>
         Weighted average of {polling.avg.n} pollster{polling.avg.n === 1 ? "" : "s"}&apos; latest surveys (recency half-life 14 days, weight ∝ √sample) — {polling.avg.nEff.toFixed(1)} effective poll{polling.avg.nEff >= 1.05 || polling.avg.nEff < 0.95 ? "s" : ""}.
         <br /><br />
-        <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>weight = n_eff / (n_eff + k) · k: House {pollK.H} · Senate {pollK.S} · Governor {pollK.G}</span>
+        <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>weight = min({FORECAST_CONSTANTS.POLL_W_MAX}, n_eff / (n_eff + k)) · k: House {pollK.H} · Senate {pollK.S} · Governor {pollK.G}</span>
         <br /><br />
         Each poll is aged to today: moved by how far the generic ballot has shifted since the poll was in the field, scaled by the state&apos;s elasticity β*{Math.abs(polling.avg.aging) < 0.05 ? "" : ` (${fmtMargin(polling.avg.aging)} on this average)`}.
         <br /><br />
         Each poll is also read net of its pollster&apos;s house effect, its lean against the other pollsters in the races they share this cycle{Math.abs(polling.avg.house) < 0.05 ? "" : ` (${fmtMargin(polling.avg.house)} removed from this average)`}. Pollster accuracy grades are not a weight: past accuracy has not predicted the next cycle&apos;s.
         <br /><br />
-        k is fitted by the forward backtest (2018–24): polls earn their share by evidence, and Governor polls earn it fastest because the structural model is weakest there.
+        k is fitted by the forward backtest (2018–24): polls earn their share by evidence, and Governor polls earn it fastest because the structural model is weakest there. The Model keeps at least {Math.round(100 * (1 - FORECAST_CONSTANTS.POLL_W_MAX))}% of every projection, however many polls a race has.
       </>
     );
   const marginTooltip = (

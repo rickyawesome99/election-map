@@ -7,7 +7,7 @@ import { candidatePhotos } from "@/lib/candidatePhotos";
 import { AboutRaceCard, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
 import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
-import ProjectedVoteSection from "@/components/ProjectedVoteSection";
+import ProjectedVoteSection, { withProjectedVotes } from "@/components/ProjectedVoteSection";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
 import { calculateStateTpl, effectiveEnvironment, computeIncumbentPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
@@ -73,7 +73,7 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
       {/* Hero */}
       <div
         style={{
-          background: `linear-gradient(135deg, color-mix(in srgb, ${accentColor} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
+          background: `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${accentColor} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
           minHeight: "300px",
         }}
       >
@@ -208,7 +208,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
       {/* Hero */}
       <div
         style={{
-          background: `linear-gradient(135deg, color-mix(in srgb, ${projectedMarginColor(projectedMargin)} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
+          background: `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${projectedMarginColor(projectedMargin)} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
           minHeight: "300px",
         }}
       >
@@ -292,25 +292,21 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
         <div className="flex flex-col gap-8">
 
           <section>
-            <LedgerSectionHead label="Candidates" />
-            {race.candidates ? (
-              <CandidatesLedgerSection
-                candidates={[
-                  { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
-                  { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
-                ]}
-              />
-            ) : (
+            <LedgerSectionHead label={countyProjection ? "Projected Vote" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
+            {race.candidates ? (() => {
+              const rows = (
+                <CandidatesLedgerSection
+                  candidates={withProjectedVotes([
+                    { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
+                    { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
+                  ], countyProjection)}
+                />
+              );
+              return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} /> : rows;
+            })() : (
               <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</p>
             )}
           </section>
-
-          {countyProjection && (
-            <section>
-              <LedgerSectionHead label="Projected Vote" meta={`${countyProjection.votes.toLocaleString()} estimated votes`} />
-              <ProjectedVoteSection p={countyProjection} />
-            </section>
-          )}
 
           <section>
             <LedgerSectionHead label="Fundraising" />

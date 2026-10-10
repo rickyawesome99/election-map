@@ -269,6 +269,12 @@ export const FORECAST_CONSTANTS = {
   // 3.57 → 3.65; Senate keeps its fitted 3 (one poll 25%). Partisan polls kept: dropping
   // or shifting them costs House coverage and error.
   POLL_K: { H: 2, S: 3, G: 2 } as Record<"H" | "S" | "G", number>,
+  // Ceiling on w: however many polls a race has, the structural model keeps at least
+  // 1 − POLL_W_MAX of the projection. User decision 2026-10-09: the polls of 2016/18/20/24
+  // missed in the same direction across the whole field, which house effects (relative to
+  // the field) cannot catch, so the most heavily polled races should not run on polls alone.
+  // Binding today in 10 races (w 0.79–0.86 before the cap: MI/TX/ME/OH/IA Senate and Governor, FL Gov).
+  POLL_W_MAX: 0.75,
   // Robust spread of actual − poll average over the polled races (same run); the blend's
   // spread is (1 − w)² × RACE_SIGMA² + w² × POLL_SIGMA² on top of the national shock, which
   // reproduces the measured blend rsd (S 4.3 · G 5.8 · H 4.0) to within 0.2.

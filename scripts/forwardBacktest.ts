@@ -51,7 +51,7 @@ import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { fundraisingData } from "@/data/fundraisingData";
 import { classifyEligibility } from "@/data/raceEligibility";
 import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
-import { computeRacePollAverage, pollAgingShift } from "@/lib/racePollAverage";
+import { computeRacePollAverage, pollAgingShift, pollWeight } from "@/lib/racePollAverage";
 import { genericBallotSeries } from "@/lib/genericBallotAverage";
 import { computeHouseEffects } from "@/lib/pollsterHouseEffects";
 import type { GenericBallotPoll } from "@/data/genericBallotPolls";
@@ -853,7 +853,7 @@ if (POLLS) {
   // ── Phase 5: poll weight by horizon ─────────────────────────────────────────
   // Historical race polls (data-entry/race_polls_history.csv, from the 538 archive)
   // averaged as of three dates in year Y with the live recipe; the blend
-  //   m(w) = (1 − w) × model + w × pollAvg,   w = nEff / (nEff + k)
+  //   m(w) = (1 − w) × model + w × pollAvg,   w = min(POLL_W_MAX, nEff / (nEff + k))
   // is scored against the actual margin and k chosen per office and horizon by
   // leave-one-year-out MAE over the polled races. The model side stays the
   // mid-September prediction at every horizon (only the polls get fresher).
@@ -874,7 +874,7 @@ if (POLLS) {
   const horizons: [string, string][] = [["mid-Sept", "09-15"], ["mid-Oct", "10-15"], ["Nov 1", "11-01"]];
   const ks = [0.05, 0.1, 0.25, 0.5, 1, 2, 3, 5, 8];
   interface PRow { office: string; year: number; model: number; poll: number; nEff: number; actual: number; }
-  console.log(`\nRace polls (env=struct; ${pollsByRace.size} race-years with polls${NO_PARTISAN ? ", partisan polls dropped" : ""}${PARTISAN_SHIFT ? `, partisan polls shifted ${PARTISAN_SHIFT} pts toward the opponent` : ""}): blend m = (1−w)·model + w·poll, w = nEff/(nEff+k), k fitted leave-one-year-out`);
+  console.log(`\nRace polls (env=struct; ${pollsByRace.size} race-years with polls${NO_PARTISAN ? ", partisan polls dropped" : ""}${PARTISAN_SHIFT ? `, partisan polls shifted ${PARTISAN_SHIFT} pts toward the opponent` : ""}): blend m = (1−w)·model + w·poll, w = min(${F.POLL_W_MAX}, nEff/(nEff+k)), k fitted leave-one-year-out`);
   console.log("  horizon   office    n polled/all   MAE model   MAE poll   k*(LOO)   MAE blend(k*)   MAE blend LOO   σ_poll rsd   σ_blend rsd   mean w");
   const chosen: Record<string, Record<string, number>> = {};
   for (const [hname, mmdd] of horizons) {
@@ -892,7 +892,7 @@ if (POLLS) {
         }
       }
       if (rows.length < 10) continue;
-      const blend = (r: PRow, k: number) => { const w = k === Infinity ? 0 : r.nEff / (r.nEff + k); return (1 - w) * r.model + w * r.poll; };
+      const blend = (r: PRow, k: number) => { const w = k === Infinity ? 0 : Math.min(F.POLL_W_MAX, r.nEff / (r.nEff + k)); return (1 - w) * r.model + w * r.poll; };
       const maeAt = (rs: PRow[], k: number) => mean(rs.map((r) => Math.abs(r.actual - blend(r, k))));
       const bestK = (rs: PRow[]) => ks.reduce((b, k) => (maeAt(rs, k) < maeAt(rs, b) ? k : b), ks[0]);
       const kStar = bestK(rows);
@@ -900,7 +900,7 @@ if (POLLS) {
       const looErr: number[] = [];
       for (const Y of YEARS) { const train = rows.filter((r) => r.year !== Y), test = rows.filter((r) => r.year === Y); if (!train.length || !test.length) continue; const k = bestK(train); looErr.push(...test.map((r) => Math.abs(r.actual - blend(r, k)))); }
       const resPoll = rows.map((r) => r.actual - r.poll), resBlend = rows.map((r) => r.actual - blend(r, kStar));
-      const wMean = mean(rows.map((r) => r.nEff / (r.nEff + kStar)));
+      const wMean = mean(rows.map((r) => Math.min(F.POLL_W_MAX, r.nEff / (r.nEff + kStar))));
       chosen[hname][office] = kStar;
       console.log(`  ${hname.padEnd(9)} ${LABEL[office].padEnd(8)} ${String(rows.length).padStart(5)}/${String(all).padEnd(5)}   ${mean(rows.map((r) => Math.abs(r.actual - r.model))).toFixed(2).padStart(9)}   ${mean(resPoll.map(Math.abs)).toFixed(2).padStart(8)}   ${String(kStar).padStart(7)}   ${maeAt(rows, kStar).toFixed(2).padStart(13)}   ${(looErr.length ? mean(looErr) : NaN).toFixed(2).padStart(13)}   ${rsd(resPoll).toFixed(2).padStart(10)}   ${rsd(resBlend).toFixed(2).padStart(11)}   ${wMean.toFixed(2).padStart(6)}`);
       if (hname === "mid-Sept") {
@@ -944,7 +944,7 @@ if (POLLS) {
               if (x.office !== office) continue;
               const avg = computeRacePollAverage(pollsByRace.get(pollKeyOf(x)) ?? [], asOf, pollAgingShift(series, x.beta, asOf, share));
               if (!avg) continue;
-              const w = avg.nEff / (avg.nEff + F.POLL_K[office]);
+              const w = pollWeight(avg.nEff, office);
               errBlend.push(Math.abs(x.actual - ((1 - w) * predOf(x, E) + w * avg.diff)));
               errPoll.push(Math.abs(x.actual - avg.diff));
               sh += Math.abs(avg.aging);
@@ -1031,7 +1031,7 @@ if (EMIT) {
           for (const x of predsByYear.get(Y)!) {
             if (x.office !== office) continue; all++;
             const avg = computeRacePollAverage(pollsByRace.get(pollKeyOf(x)) ?? [], asOf); if (!avg) continue;
-            const w = avg.nEff / (avg.nEff + F.POLL_K[office]), model = predOf(x, E);
+            const w = pollWeight(avg.nEff, office), model = predOf(x, E);
             eM.push(Math.abs(x.actual - model)); eP.push(Math.abs(x.actual - avg.diff)); eB.push(Math.abs(x.actual - ((1 - w) * model + w * avg.diff))); ws.push(w);
           }
         }
@@ -1121,7 +1121,7 @@ if (POLLSTERS) {
             if (v.lambda) { const lam = v.lambda; polls = polls.map((p) => { const q = { ...p, sample: Math.min(p.sample ?? 800, 3000) * Math.exp(-lam * ((rating(p)?.score ?? 0) + 1.5)) ** 2 }; ratingIdOf.set(q, ratingIdOf.get(p)!); return q; }); }
             const avg = computeRacePollAverage(polls, asOf, undefined, (p) => (v.histHouse ? v.histHouse * (rating(p)?.house ?? 0) : 0) + (he ? he.of(p) : 0));
             if (!avg) continue;
-            const w = avg.nEff / (avg.nEff + F.POLL_K[office]);
+            const w = pollWeight(avg.nEff, office);
             errPoll.push(Math.abs(x.actual - avg.diff)); errBlend.push(Math.abs(x.actual - ((1 - w) * predOf(x, E) + w * avg.diff)));
           }
         }

@@ -31,6 +31,7 @@ SRC = os.path.join(DE, "pollster_graded_polls.csv")
 OUT_TS = os.path.join(REPO, "data", "pollsterRatings.ts")
 OUT_LOOKUP = os.path.join(REPO, "data", "pollsterLookup.ts")
 OUT_VINTAGES = os.path.join(DE, "pollster_ratings_vintages.csv")
+OUT_POLLS = os.path.join(REPO, "data", "pollsterPolls.json")
 
 CYCLE_START = "2026-01-01"  # polls in the field before this are archive, not 2026 polling (build-race-polls.js)
 GRADE_WINDOW = 21      # days before the election
@@ -49,7 +50,7 @@ REGIONS = {
     "Rust Belt": "PA OH MI WI MN IA IN IL".split(),
     "Sun Belt": "AZ NV GA NC FL TX NM".split(),
     "South": "VA SC AL MS LA AR TN KY WV OK MO".split(),
-    "Plains & Mountain": "ND SD NE KS MT WY ID UT CO".split(),
+    "Mountain": "ND SD NE KS MT WY ID UT CO".split(),
     "Pacific": "CA OR WA AK HI".split(),
 }
 REGION_OF = {st: reg for reg, sts in REGIONS.items() for st in sts}
@@ -217,10 +218,24 @@ def live_pollsters(alias):
     return live
 
 def cycle_of(year): return year + year % 2
+
+def win_loss(ps):
+    """[right, wrong, tied]: did the poll have the eventual winner ahead? (a 0-margin poll is a tie)"""
+    out = [0, 0, 0]
+    for p in ps:
+        m, a = float(p["poll_margin"]), float(p["actual_margin"])
+        out[2 if m == 0 else 0 if (m > 0) == (a > 0) else 1] += 1
+    return out
+
+def avg_miss(ps):
+    """Plain mean of poll margin − result (R-positive), unweighted — the unshrunk counterpart of bias."""
+    o = [p["error"] for p in ps if p["oriented"]]
+    return r2(np.mean(o)) if o else None
 def r2(x): return None if x is None else round(float(x), 2)
 
 if __name__ == "__main__":
-    polls = [p for p in load() if p["days"] <= GRADE_WINDOW]
+    all_polls = load()
+    polls = [p for p in all_polls if p["days"] <= GRADE_WINDOW]
     slope = benchmark(polls)
     print(f"{len(polls)} graded polls within {GRADE_WINDOW} days; expected |error| slopes: {slope[0]:.1f}/√n, {slope[1]:+.3f}/day")
     if "--validate" in sys.argv: validate(polls); sys.exit()
@@ -247,10 +262,10 @@ if __name__ == "__main__":
         rows.append({
             "id": pid, "name": label.get(pid, ps[-1]["pollster"]), "grade": grade(r["score"]) if r["n"] >= 5 else None, "score": r2(r["score"]),
             "n": r["n"], "races": len({p["race"] for p in ps}), "weight": round(r["weight"], 1), "firstYear": min(p["year"] for p in ps), "lastYear": last,
-            "avgError": r2(r["mae"]), "excess": r2(r["excess"]), "bias": r2(r["bias"]), "rawBias": r2(r["rawBias"]), "house": r2(r["house"]),
+            "avgError": r2(r["mae"]), "avgMiss": avg_miss(ps), "record": win_loss(ps), "excess": r2(r["excess"]), "bias": r2(r["bias"]), "rawBias": r2(r["rawBias"]), "house": r2(r["house"]),
             "partisanShare": round(sum(1 for p in ps if p["partisan"]) / len(ps), 2), "partisanLean": (collections.Counter(p["partisan"] for p in ps if p["partisan"]).most_common(1) or [(None, 0)])[0][0],
             "methodology": meth.most_common(1)[0][0] if meth else None,
-            "byCycle": [{"cycle": c, "n": len(v), "avgError": r2(np.mean([p["abs"] for p in v])), "excess": r2(np.mean([p["excess"] for p in v])),
+            "byCycle": [{"cycle": c, "n": len(v), "avgError": r2(np.mean([p["abs"] for p in v])), "record": win_loss(v), "excess": r2(np.mean([p["excess"] for p in v])),
                          "bias": r2(np.mean([p["error"] for p in v if p["oriented"]])) if any(p["oriented"] for p in v) else None} for c, v in sorted(cyc.items()) if c >= FIRST_DISPLAY_YEAR - 4],
             "byRegion": [{"region": reg, "n": x["n"], "avgError": r2(x["mae"]), "excess": r2(x["excess"]), "score": r2(x["score"]), "bias": r2(x["bias"])} for reg, x in r["regions"].items()],
             "byType": [{"type": TYPE_LABEL[t], "n": len(v), "avgError": r2(np.mean([p["abs"] for p in v]))} for t, v in typ.items()],
@@ -258,25 +273,32 @@ if __name__ == "__main__":
         })
     for key, lv in live.items():  # this cycle's pollsters with no graded record
         if key not in R:
-            rows.append({"id": key, "name": label.get(key, lv["name"]), "grade": None, "score": None, "n": 0, "races": 0, "weight": 0, "firstYear": None, "lastYear": None, "avgError": None, "excess": None,
+            rows.append({"id": key, "name": label.get(key, lv["name"]), "grade": None, "score": None, "n": 0, "races": 0, "weight": 0, "firstYear": None, "lastYear": None, "avgError": None, "avgMiss": None, "record": [0, 0, 0], "excess": None,
                          "bias": None, "rawBias": None, "house": None, "partisanShare": None, "partisanLean": None, "methodology": None, "byCycle": [], "byRegion": [], "byType": [], "racePolls2026": lv["racePolls"], "genericPolls2026": lv["genericPolls"]})
     rows.sort(key=lambda x: (x["score"] is None or x["n"] < 5, x["score"] if x["score"] is not None else 0, x["name"]))
+    # URL slug for /analysis/pollsters/[slug]: the name, with the id appended where two names collide
+    import re
+    base = {x["id"]: re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", x["name"].lower())).strip("-") or "pollster" for x in rows}
+    clash = collections.Counter(base.values())
+    for x in rows: x["slug"] = base[x["id"]] if clash[base[x["id"]]] == 1 else f"{base[x['id']]}-{re.sub(r'[^a-z0-9]+', '-', x['id'].lower()).strip('-')}"
     used = {x["id"] for x in rows}
     alias_out = {k: v for k, v in sorted(alias.items()) if v in used}
     cycles = collections.defaultdict(list)
     for p in polls: cycles[cycle_of(p["year"])].append(p)
-    meta = {"gradedPolls": len(polls), "pollsters": len(rows), "graded": sum(1 for x in rows if x["grade"]), "window": GRADE_WINDOW, "decay": RECENCY_DECAY, "scoreK": SCORE_K, "biasK": BIAS_K, "regionK": REGION_K,
+    meta = {"gradedPolls": len(polls), "pollsters": len(rows), "graded": sum(1 for x in rows if x["grade"]), "window": GRADE_WINDOW, "asOf": LIVE_ASOF, "fieldK": FIELD_K, "minPolls": 5, "decay": RECENCY_DECAY, "scoreK": SCORE_K, "biasK": BIAS_K, "regionK": REGION_K,
             "persistence": persistence(polls), "firstYear": min(p["year"] for p in polls), "lastYear": max(p["year"] for p in polls), "regions": REGIONS, "gradeBands": [[g, c] for g, c in GRADES],
             "byCycle": [{"cycle": c, "n": len(v), "avgError": r2(np.mean([p["abs"] for p in v])), "bias": r2(np.mean([p["error"] for p in v if p["oriented"]]))} for c, v in sorted(cycles.items()) if c >= FIRST_DISPLAY_YEAR - 4]}
     with open(OUT_TS, "w") as f:
         f.write("// ⚠️  AUTO-GENERATED — do not edit by hand.\n// python3 scripts/build-pollster-graded-polls.py && python3 scripts/build-pollster-ratings.py\n"
                 "// (aliases for this cycle's pollster spellings: data-entry/pollster_aliases.csv)\n\n"
                 "// Errors and biases are R-positive margins: bias −2 = the pollster overstated Democrats by 2 pts.\n"
+                "// avgMiss = plain mean of (poll margin − result); record = [right, wrong, tied] on calling the winner.\n"
                 "// score = shrunk average of (|error| − what a typical poll of the same race missed by); negative is better.\n"
-                "export type PollsterCycleRecord = { cycle: number; n: number; avgError: number; excess: number; bias: number | null };\n"
+                "export type WinLoss = [right: number, wrong: number, tied: number];\n"
+                "export type PollsterCycleRecord = { cycle: number; n: number; avgError: number; record: WinLoss; excess: number; bias: number | null };\n"
                 "export type PollsterRegionRecord = { region: string; n: number; avgError: number; excess: number; score: number; bias: number | null };\n"
                 "export type PollsterTypeRecord = { type: string; n: number; avgError: number };\n"
-                "export type PollsterRating = {\n  id: string; name: string; grade: string | null; score: number | null; n: number; races: number; weight: number;\n  firstYear: number | null; lastYear: number | null; avgError: number | null; excess: number | null;\n"
+                "export type PollsterRating = {\n  id: string; slug: string; name: string; grade: string | null; score: number | null; n: number; races: number; weight: number;\n  firstYear: number | null; lastYear: number | null; avgError: number | null; avgMiss: number | null; record: WinLoss; excess: number | null;\n"
                 "  bias: number | null; rawBias: number | null; house: number | null; partisanShare: number | null; partisanLean: \"D\" | \"R\" | null; methodology: string | null;\n"
                 "  byCycle: PollsterCycleRecord[]; byRegion: PollsterRegionRecord[]; byType: PollsterTypeRecord[]; racePolls2026: number; genericPolls2026: number;\n};\n\n")
         f.write("export const POLLSTER_RATING_META = " + json.dumps(meta, ensure_ascii=False) + " as const;\n\n")
@@ -289,6 +311,17 @@ if __name__ == "__main__":
                 "// rating id → [display name, grade (null = fewer than 5 graded polls), score, graded polls]\n"
                 "export const pollsterGrades: Record<string, [string, string | null, number | null, number]> = "
                 + json.dumps({x["id"]: [x["name"], x["grade"], x["score"], x["n"]] for x in rows if x["n"]}, ensure_ascii=False, separators=(",", ":")) + ";\n")
+    # every poll on file (final 60 days) per displayed pollster, newest first, for the pollster pages
+    # (data/pollsterPolls.ts documents the tuple; excess/rel only on graded polls, the final GRADE_WINDOW days)
+    by_pid = collections.defaultdict(list)
+    for p in all_polls:
+        if p["pollster_id"] not in used: continue
+        by_pid[p["pollster_id"]].append([p["year"], p["type"], p["location"], p["race"].split("_")[1], p["date"], p["days"], int(p["sample"]) if p["sample"] else None,
+                                         p["partisan"] or None, p["methodology"] if p["methodology"] not in ("", "NA") else None, float(p["poll_margin"]), float(p["actual_margin"]),
+                                         p["error"], 1 if p["oriented"] else 0, r2(p.get("excess")), r2(p.get("rel"))])
+    for v in by_pid.values(): v.sort(key=lambda t: (t[4], t[2]), reverse=True)
+    with open(OUT_POLLS, "w") as f:
+        f.write("{\n" + ",\n".join(json.dumps(k) + ":" + json.dumps(v, ensure_ascii=False, separators=(",", ":")) for k, v in sorted(by_pid.items())) + "\n}\n")
     unmatched = sorted(((lv["racePolls"] + lv["genericPolls"], lv["name"]) for k, lv in live.items() if k.startswith("name:")), reverse=True)
     print(f"wrote {OUT_TS}: {len(rows)} pollsters ({meta['graded']} graded, {sum(1 for x in rows if x['racePolls2026'] or x['genericPolls2026'])} active in 2026) · {OUT_VINTAGES}")
     print(f"2026 pollsters with no 538 id ({len(unmatched)}): " + ", ".join(f"{n} ({c})" for c, n in unmatched[:40]))

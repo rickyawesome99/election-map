@@ -11,6 +11,7 @@ export function resolveDefaultBackHref(pathname: string): string {
   if (pathname.startsWith("/president/")) return "/analysis/delegation";
   if (pathname.startsWith("/states/")) return "/analysis/delegation";
   if (pathname.startsWith("/historical/")) return "/historical";
+  if (pathname.startsWith("/analysis/pollsters/")) return "/analysis/pollsters";
   if (pathname.startsWith("/analysis/")) return "/analysis";
   if (pathname.startsWith("/model/")) return "/model";
   return "/overview";

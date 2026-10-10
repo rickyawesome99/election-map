@@ -13,6 +13,7 @@ import { generateStaticParams as pastPresidentPages } from "@/app/president/[id]
 import { generateStaticParams as statePages } from "@/app/states/[id]/page";
 import { generateStaticParams as modelStatePages } from "@/app/model/[abbr]/page";
 import { generateStaticParams as precinctDistrictPages } from "@/app/analysis/districts/[slug]/page";
+import { generateStaticParams as pollsterPages } from "@/app/analysis/pollsters/[slug]/page";
 import { generateStaticParams as methodologyPages } from "@/app/methodology/[[...model]]/page";
 
 // Every public page. Left out: /audit (internal data checks), /model/state and /model/district
@@ -42,6 +43,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for (const s of states) paths.push(`/states/${s.id}/legislature`);
   add("/model", modelStatePages(), "abbr");
   add("/analysis/districts", await precinctDistrictPages(), "slug");
+  add("/analysis/pollsters", await pollsterPages(), "slug");
   for (const m of methodologyPages()) paths.push(m.model.length ? `/methodology/${m.model[0]}` : "/methodology");
   // Built on request rather than ahead of time, but every one of them is a real page.
   for (const slug of getAllCandidateSlugs()) paths.push(`/candidates/${slug}`);

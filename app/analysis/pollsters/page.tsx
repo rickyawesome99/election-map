@@ -1,12 +1,16 @@
 import BackButton from "@/components/BackButton";
 import PollsterGradeChip from "@/components/PollsterGradeChip";
 import PollsterRatingsTable from "@/components/PollsterRatingsTable";
+import PollsterSectionTabs from "@/components/PollsterSectionTabs";
+import RecentRacePollsTable from "@/components/RecentRacePollsTable";
 import { LedgerSectionHead } from "@/components/RaceDetailSections";
 import { electionYear } from "@/data/forecastData";
 import { POLLSTER_RATING_META as META, pollsterRatings, type PollsterRating } from "@/data/pollsterRatings";
 import { FORECAST_CONSTANTS as F } from "@/data/tplModelData";
 import { fmtLean, fmtVsField, leanColor, vsFieldTint } from "@/lib/pollsterDisplay";
 import { pollsterIdOf } from "@/lib/pollsterRatings";
+import { recentRacePolls } from "@/lib/pollsterRecord";
+import { racePollsMeta } from "@/data/racePolls";
 import { liveHouseEffects } from "@/lib/tplCompute";
 
 export const metadata = {
@@ -17,6 +21,8 @@ export const metadata = {
 const REGION_NAMES = Object.keys(META.regions);
 const gradeOf = (score: number) => META.gradeBands.find(([, cut]) => score <= (cut as number))?.[0] ?? "F";
 const MIN_REGION_POLLS = 5;
+const RECENT_POLLS = 50;
+const fmtIso = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
 
 /** Pollsters with enough of a footprint to compare across regions: ≥ 5 graded polls in at least two of them. */
 function regionalRows(): PollsterRating[] {
@@ -167,16 +173,40 @@ export default function PollstersPage() {
 
       <main className="mx-auto max-w-7xl px-4 pb-14 pt-6 sm:px-6">
         <section className="mb-12">
-          <LedgerSectionHead label="Ratings" meta="Select a pollster for its record by cycle and region — column headings sort" />
-          <PollsterRatingsTable ratings={pollsterRatings} />
-          <p className={note} style={{ color: "var(--app-text-very-muted)" }}>
-            <strong>Vs. field</strong> is the score the grade is a band of: the pollster&rsquo;s average miss minus the miss of a
-            typical poll of the same race (the other pollsters in that race where there are any, otherwise the norm for that
-            office, year, sample size and days out), weighted by recency (a poll counts half as much every four years)
-            and pulled toward zero as if every pollster began with {META.scoreK} average polls. <strong>Bias</strong> is measured
-            against the result; <strong>house effect</strong> against the other pollsters in the same race, so it is unaffected
-            by a miss the whole industry shared. Fewer than five graded polls is &ldquo;NR&rdquo;.
-          </p>
+          <PollsterSectionTabs tabs={[
+            {
+              key: "ratings", label: "Ratings",
+              meta: "Select a pollster for its record by cycle and region, and a link to every poll it has run — column headings sort",
+              content: (
+                <>
+                  <PollsterRatingsTable ratings={pollsterRatings} />
+                  <p className={note} style={{ color: "var(--app-text-very-muted)" }}>
+                    <strong>Vs. field</strong> is the score the grade is a band of: the pollster&rsquo;s average miss minus the miss of a
+                    typical poll of the same race (the other pollsters in that race where there are any, otherwise the norm for that
+                    office, year, sample size and days out), weighted by recency (a poll counts half as much every four years)
+                    and pulled toward zero as if every pollster began with {META.scoreK} average polls. <strong>Bias</strong> is measured
+                    against the result; <strong>house effect</strong> against the other pollsters in the same race, so it is unaffected
+                    by a miss the whole industry shared. Fewer than five graded polls is &ldquo;NR&rdquo;.
+                  </p>
+                </>
+              ),
+            },
+            {
+              key: "polls", label: "Polls",
+              meta: `The ${RECENT_POLLS} most recent polls of ${electionYear} Senate, governor and House races`,
+              content: (
+                <>
+                  <RecentRacePollsTable polls={recentRacePolls(RECENT_POLLS)} />
+                  <p className={note} style={{ color: "var(--app-text-very-muted)" }}>
+                    Newest first by the last day in the field; polls through {fmtIso(racePollsMeta.newestPollEnd)}, sources last checked{" "}
+                    {fmtIso(racePollsMeta.checked)}. Margins are as published, before the forecast&rsquo;s house-effect adjustment;
+                    (D) and (R) mark polls sponsored by a party or campaign. Generic-ballot polls are not listed. Every poll of a race
+                    is on its race page.
+                  </p>
+                </>
+              ),
+            },
+          ]} />
         </section>
 
         <section className="mb-12">

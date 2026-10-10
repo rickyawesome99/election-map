@@ -1072,8 +1072,9 @@ export function calculateDistrictTpl(districtId: string): number {
 
 // ── Race polling (Phase 5) ────────────────────────────────────────────────────
 // The poll average (lib/racePollAverage.ts, from data/racePolls.ts) enters the final
-// margin with weight w = nEff / (nEff + POLL_K[office]): a race with no polls is the
-// model alone; one fresh poll gives a Senate race 25% polling, a House or Governor race 33%.
+// margin with weight w = min(POLL_W_MAX, nEff / (nEff + POLL_K[office])): a race with no polls is the
+// model alone; one fresh poll gives a Senate race 25% polling, a House or Governor race 33%;
+// no number of polls takes more than POLL_W_MAX from the model.
 export interface RacePolling { avg: RacePollAverage | null; weight: number; key: string; }
 
 export function racePollLabel(race: { raceType: string; name: string; electionType?: string }): string {

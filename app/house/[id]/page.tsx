@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import { candidatePhotos } from "@/lib/candidatePhotos";
 import HouseDistrictMapTabs from "@/components/HouseDistrictMapTabs";
 import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
-import ProjectedVoteSection from "@/components/ProjectedVoteSection";
+import ProjectedVoteSection, { withProjectedVotes } from "@/components/ProjectedVoteSection";
 import DemographicsStrip from "@/components/DemographicsStrip";
 import { districtDemographics, REDRAWN_SINCE_ACS_VINTAGE, TRACT_ESTIMATED_DISTRICTS } from "@/data/demographics";
 import { AboutRaceCard, CandidatesLedgerSection, ForecastCalculationCard, FundraisingLedgerSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
@@ -215,7 +215,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
       {/* Hero */}
       <div
         style={{
-          background: `linear-gradient(135deg, color-mix(in srgb, ${projectedMarginColor(projectedMargin)} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
+          background: `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${projectedMarginColor(projectedMargin)} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
         }}
       >
         <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-3 pb-7">
@@ -303,26 +303,24 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
         <div className="flex flex-col gap-8">
 
           <section>
-            <LedgerSectionHead label="Candidates" />
-            <CandidatesLedgerSection
-              candidates={race.candidates
-                ? [
-                    { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
-                    { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
-                  ]
-                : [
-                    { name: "Democrat", party: "D", pct: demVoteShare, placeholder: true },
-                    { name: "Republican", party: "R", pct: repVoteShare, placeholder: true },
-                  ]}
-            />
+            <LedgerSectionHead label={countyProjection ? "Projected Vote" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
+            {(() => {
+              const rows = (
+                <CandidatesLedgerSection
+                  candidates={withProjectedVotes(race.candidates
+                    ? [
+                        { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
+                        { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
+                      ]
+                    : [
+                        { name: "Democrat", party: "D", pct: demVoteShare, placeholder: true },
+                        { name: "Republican", party: "R", pct: repVoteShare, placeholder: true },
+                      ], countyProjection)}
+                />
+              );
+              return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} /> : rows;
+            })()}
           </section>
-
-          {countyProjection && (
-            <section>
-              <LedgerSectionHead label="Projected Vote" meta={`${countyProjection.votes.toLocaleString()} estimated votes`} />
-              <ProjectedVoteSection p={countyProjection} />
-            </section>
-          )}
 
           <section>
             <LedgerSectionHead label="Fundraising" />
