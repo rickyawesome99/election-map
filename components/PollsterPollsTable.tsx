@@ -18,10 +18,13 @@ const COLUMNS: { key: SortKey | null; label: string; right?: true; title: string
   { key: "error", label: "Error", right: true, title: "Poll minus result: D+3 means the poll overstated the Democrat by 3 points" },
   { key: "excess", label: "Vs. field", right: true, title: "|Error| minus what a typical poll of the same race missed by; negative beat the field. Graded polls only (final 21 days)." },
   { key: null, label: "Method", title: "Survey mode" },
+  { key: null, label: "Source", title: "The poll's release, where the source recorded one: FiveThirtyEight's archive for 2018–24, the Wikipedia citation this cycle. Opens in a new tab." },
 ];
 
 /** A margin as a leader label: "R+3.0" / "D+1.5"; same-party contests just show the gap. */
 const fmtMargin = (v: number | null, oriented: boolean) => (v == null ? "—" : oriented ? fmtLean(v) : `+${Math.abs(v).toFixed(1)}`);
+/** "nytimes.com" from a source link; the full address is on hover. */
+const hostOf = (url: string) => { try { return new URL(url).hostname.replace(/^www\./, ""); } catch { return "Link"; } };
 const fmtDate = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
 
 function sortValue(p: PollsterPollRow, key: SortKey): number | string {
@@ -120,6 +123,11 @@ export default function PollsterPollsTable({ polls }: { polls: PollsterPollRow[]
                     {p.excess == null ? <span style={{ color: "var(--app-text-very-muted)" }}>—</span> : <span className="rounded px-1.5 py-0.5" style={{ background: vsFieldTint(p.excess, 4) }}>{fmtVsField(p.excess)}</span>}
                   </td>
                   <td className={`${cell} text-xs`} style={{ color: "var(--app-text-muted)" }}>{p.methodology ?? "—"}</td>
+                  <td className={`${cell} text-xs`}>
+                    {p.url
+                      ? <a href={p.url} target="_blank" rel="noopener noreferrer" title={p.url} className="font-semibold underline-offset-2 hover:underline" style={{ color: "var(--app-text-primary)" }}>{hostOf(p.url)} ↗</a>
+                      : <span style={{ color: "var(--app-text-very-muted)" }}>—</span>}
+                  </td>
                 </tr>
               );
             })}

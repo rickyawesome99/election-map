@@ -231,9 +231,15 @@ export const genericBallotPolls: GenericBallotPoll[] = [
   { pollster: "Wall Street Journal", startDate: "2026-09-16", endDate: "2026-09-21", sample: 1500, population: "RV", dem: 50, rep: 42, diff: -8 },
   { pollster: "Emerson", startDate: "2026-09-21", endDate: "2026-09-22", sample: 1000, population: "LV", dem: 53, rep: 42, diff: -11 },
   { pollster: "Rasmussen Reports", startDate: "2026-09-17", endDate: "2026-09-23", sample: 1819, population: "LV", dem: 48, rep: 43, diff: -5 },
+  { pollster: "Rasmussen Reports", startDate: "2026-09-24", endDate: "2026-09-27", sample: 1794, population: "LV", dem: 47, rep: 44, diff: -3 },
   { pollster: "Quinnipiac", startDate: "2026-09-24", endDate: "2026-09-27", sample: 1032, population: "RV", dem: 51, rep: 39, diff: -12 },
   { pollster: "Morning Consult", startDate: "2026-09-25", endDate: "2026-09-27", sample: null, population: "LV", dem: 50, rep: 43, diff: -7 },
   { pollster: "Harvard-Harris", startDate: "2026-09-26", endDate: "2026-09-28", sample: null, population: "LV", dem: 51, rep: 49, diff: -2 },
   { pollster: "Economist/YouGov", startDate: "2026-09-25", endDate: "2026-09-28", sample: 1007, population: "LV", dem: 53, rep: 38, diff: -15 },
-  { pollster: "CBS News", startDate: "2026-09-30", endDate: "2026-10-02", sample: 1572, population: "LV", dem: 54, rep: 45, diff: -9 }
+  { pollster: "Cygnal", startDate: "2026-10-01", endDate: "2026-10-02", sample: 1500, population: "LV", dem: 52, rep: 43, diff: -9 },
+  { pollster: "CBS News", startDate: "2026-09-30", endDate: "2026-10-02", sample: 1572, population: "LV", dem: 54, rep: 45, diff: -9 },
+  { pollster: "Morning Consult", startDate: "2026-10-02", endDate: "2026-10-04", sample: null, population: "LV", dem: 50, rep: 43, diff: -7 },
+  { pollster: "Pew Research", startDate: "2026-09-28", endDate: "2026-10-04", sample: 3917, population: "RV", dem: 44, rep: 36, diff: -8 },
+  { pollster: "Economist/YouGov", startDate: "2026-10-02", endDate: "2026-10-05", sample: 1173, population: "LV", dem: 51, rep: 40, diff: -11 },
+  { pollster: "Reuters/Ipsos", startDate: "2026-09-30", endDate: "2026-10-05", sample: 3526, population: "RV", dem: 44, rep: 37, diff: -7 }
 ];

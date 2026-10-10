@@ -303,6 +303,34 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
         <div className="flex flex-col gap-8">
 
           <section>
+            <LedgerSectionHead label="About this District" />
+            {race.raceDesc && (
+              <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--app-text-primary)" }}>
+                {race.raceDesc}
+              </p>
+            )}
+            {demographics && (
+              <div className="mb-4">
+                <DemographicsStrip {...demographics} />
+              </div>
+            )}
+            <AboutRaceCard
+              bare
+              title="About this District"
+              items={[
+                { label: "Incumbent", value: currentRepName },
+                { label: "Party", value: currentRepParty ? (currentRepParty === "D" ? "Democrat" : currentRepParty === "R" ? "Republican" : "Independent") : "TBD" },
+                { label: "PVI", value: pviDisplay },
+              ]}
+            />
+            {demographics && (
+              <p className="text-xs mt-4" style={{ color: "var(--app-text-very-muted)" }}>
+                {demographicsNote}
+              </p>
+            )}
+          </section>
+
+          <section>
             <LedgerSectionHead label={countyProjection ? "Projected Vote" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
             {(() => {
               const rows = (
@@ -336,32 +364,31 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
             />
           </section>
 
+          {polling.avg && race.candidates && (
+            <section>
+              <LedgerSectionHead label="Polls" meta={`${polling.avg.n} pollster${polling.avg.n === 1 ? "" : "s"} · ${Math.round(polling.weight * 100)}% of the projection`} />
+              <RacePollsSection polling={polling} demName={race.candidates.dem.name} repName={race.candidates.rep.name} />
+            </section>
+          )}
+
           <section>
-            <LedgerSectionHead label="About this District" />
-            {race.raceDesc && (
-              <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--app-text-primary)" }}>
-                {race.raceDesc}
-              </p>
-            )}
-            {demographics && (
-              <div className="mb-4">
-                <DemographicsStrip {...demographics} />
-              </div>
-            )}
-            <AboutRaceCard
+            <LedgerSectionHead label="Forecast Calculation" />
+            <ForecastCalculationCard
               bare
-              title="About this District"
-              items={[
-                { label: "Incumbent", value: currentRepName },
-                { label: "Party", value: currentRepParty ? (currentRepParty === "D" ? "Democrat" : currentRepParty === "R" ? "Republican" : "Independent") : "TBD" },
-                { label: "PVI", value: pviDisplay },
-              ]}
+              tpl={districtTpl}
+              genericBallot={gb}
+              tplLabel="District TPL"
+              tplHref={`/model/${stateAbbr.toLowerCase()}#${race.name.toLowerCase()}`}
+              incumbentPts={incumbentPts}
+              fundraisingPts={fundraising ? fundraisingPts : null}
+              moneyTerm={moneyTerm}
+              candidatePts={quality.pts}
+              candidateDetail={quality}
+              polling={polling}
+              projectedMargin={projectedMargin}
+              probabilityD={forecast.probability}
+              interval80={forecast.interval80}
             />
-            {demographics && (
-              <p className="text-xs mt-4" style={{ color: "var(--app-text-very-muted)" }}>
-                {demographicsNote}
-              </p>
-            )}
           </section>
 
           <section>
@@ -395,33 +422,6 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               <HouseOnlyDistrictBoundariesSection bare scrollable maxHeight="380px" entries={boundaryEntries} />
             </section>
           )}
-
-          {polling.avg && race.candidates && (
-            <section>
-              <LedgerSectionHead label="Polls" meta={`${polling.avg.n} pollster${polling.avg.n === 1 ? "" : "s"} · ${Math.round(polling.weight * 100)}% of the projection`} />
-              <RacePollsSection polling={polling} demName={race.candidates.dem.name} repName={race.candidates.rep.name} />
-            </section>
-          )}
-
-          <section>
-            <LedgerSectionHead label="Forecast Calculation" />
-            <ForecastCalculationCard
-              bare
-              tpl={districtTpl}
-              genericBallot={gb}
-              tplLabel="District TPL"
-              tplHref={`/model/${stateAbbr.toLowerCase()}#${race.name.toLowerCase()}`}
-              incumbentPts={incumbentPts}
-              fundraisingPts={fundraising ? fundraisingPts : null}
-              moneyTerm={moneyTerm}
-              candidatePts={quality.pts}
-              candidateDetail={quality}
-              polling={polling}
-              projectedMargin={projectedMargin}
-              probabilityD={forecast.probability}
-              interval80={forecast.interval80}
-            />
-          </section>
 
           <section>
             <VoteHistoryTabbedSection

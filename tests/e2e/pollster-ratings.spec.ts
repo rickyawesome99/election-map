@@ -128,3 +128,18 @@ test("Polls tab race links go to the seat that is up this cycle", async ({ page,
     expect(html, href).not.toMatch(/<title>[^<]*No Election/);
   }
 });
+
+test("source links appear only in a pollster page's Every Poll table", async ({ page }) => {
+  await page.goto("/analysis/pollsters/emerson-college");
+  const polls = page.locator("section", { has: page.getByRole("heading", { name: "Every Poll" }) });
+  await expect(polls.locator("tbody tr").first()).toBeVisible({ timeout: 20_000 });
+  await polls.getByRole("combobox", { name: "Cycle" }).selectOption("2024");
+  const links = polls.locator('tbody a[target="_blank"]');
+  expect(await links.count()).toBeGreaterThan(50);
+  await expect(links.first()).toHaveAttribute("href", /^https?:\/\//);
+  await expect(links.first()).toHaveAttribute("rel", /noopener/);
+
+  await page.goto("/analysis/pollsters#polls");
+  await expect(page.getByRole("tabpanel", { name: "Polls" }).locator("tbody tr")).toHaveCount(50, { timeout: 20_000 });
+  await expect(page.getByRole("tabpanel", { name: "Polls" }).locator('a[target="_blank"]')).toHaveCount(0);
+});

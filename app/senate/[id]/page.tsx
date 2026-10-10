@@ -383,6 +383,20 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
         <div className="flex flex-col gap-8">
 
           <section>
+            <LedgerSectionHead label="About this Race" />
+            <AboutRaceCard
+              bare
+              title="About this Race"
+              description={race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
+              items={[
+                { label: "Incumbent", value: currentSenatorName },
+                { label: "Party", value: currentSenatorParty ? (currentSenatorParty === "D" ? "Democrat" : currentSenatorParty === "R" ? "Republican" : "Independent") : "TBD" },
+                { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
+              ]}
+            />
+          </section>
+
+          <section>
             <LedgerSectionHead label={countyProjection ? "Projected Vote" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
             {race.candidates ? (() => {
               const rows = (
@@ -413,39 +427,6 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
             />
           </section>
 
-          <section>
-            <LedgerSectionHead label="About this Race" />
-            <AboutRaceCard
-              bare
-              title="About this Race"
-              description={race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
-              items={[
-                { label: "Incumbent", value: currentSenatorName },
-                { label: "Party", value: currentSenatorParty ? (currentSenatorParty === "D" ? "Democrat" : currentSenatorParty === "R" ? "Republican" : "Independent") : "TBD" },
-                { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
-              ]}
-            />
-          </section>
-
-          <section>
-            <LedgerSectionHead label="Projected County Results" meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
-            {countyProjection ? (
-              <PastElectionCountyMap
-                stateAbbr={abbr}
-                stateName={race.name}
-                counties={projectedCountyMapEntries(countyProjection)}
-                demName={countyProjection.demName}
-                repName={countyProjection.repName}
-                demParty={countyProjection.demParty}
-                repParty={countyProjection.repParty}
-                height={280}
-                caption={<div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>The forecast margin ({countyProjection.margin > 0 ? countyProjection.repParty : countyProjection.demParty}+{Math.abs(countyProjection.margin).toFixed(1)}) spread over the state&apos;s counties by their lean, on the 2026 turnout estimate. <Link href="/methodology/turnout#county-results" className="underline underline-offset-2">How this is built</Link>.</div>}
-              />
-            ) : (
-              <div className="flex h-[280px] items-center justify-center rounded text-center text-xs" style={{ border: "1px dashed var(--app-border)", color: "var(--app-text-very-muted)" }}>No county projection for this race.</div>
-            )}
-          </section>
-
           {polling.avg && race.candidates && (
             <section>
               <LedgerSectionHead label="Polls" meta={`${polling.avg.n} pollster${polling.avg.n === 1 ? "" : "s"} · ${Math.round(polling.weight * 100)}% of the projection`} />
@@ -472,6 +453,25 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
               probabilityD={forecast.probability}
               interval80={forecast.interval80}
             />
+          </section>
+
+          <section>
+            <LedgerSectionHead label="Projected County Results" meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
+            {countyProjection ? (
+              <PastElectionCountyMap
+                stateAbbr={abbr}
+                stateName={race.name}
+                counties={projectedCountyMapEntries(countyProjection)}
+                demName={countyProjection.demName}
+                repName={countyProjection.repName}
+                demParty={countyProjection.demParty}
+                repParty={countyProjection.repParty}
+                height={280}
+                caption={<div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>The forecast margin ({countyProjection.margin > 0 ? countyProjection.repParty : countyProjection.demParty}+{Math.abs(countyProjection.margin).toFixed(1)}) spread over the state&apos;s counties by their lean, on the 2026 turnout estimate. <Link href="/methodology/turnout#county-results" className="underline underline-offset-2">How this is built</Link>.</div>}
+              />
+            ) : (
+              <div className="flex h-[280px] items-center justify-center rounded text-center text-xs" style={{ border: "1px dashed var(--app-border)", color: "var(--app-text-very-muted)" }}>No county projection for this race.</div>
+            )}
           </section>
 
           {race.pastResults && race.pastResults.length > 0 && (

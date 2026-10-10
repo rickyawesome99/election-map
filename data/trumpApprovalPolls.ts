@@ -333,6 +333,13 @@ export const trumpApprovalPolls: TrumpApprovalPoll[] = [
   { pollster: "Economist/YouGov", startDate: "2026-09-25", endDate: "2026-09-28", sample: 1007, population: "LV", approve: 37, disapprove: 62, diff: 25 },
   { pollster: "AP/NORC**", startDate: "2026-09-24", endDate: "2026-09-28", sample: 2140, population: "A", approve: 31, disapprove: 69, diff: 38 },
   { pollster: "RMG Research*", startDate: "2026-09-21", endDate: "2026-09-29", sample: 2000, population: "RV", approve: 41, disapprove: 58, diff: 17 },
+  { pollster: "I&I/TIPP", startDate: "2026-09-29", endDate: "2026-10-01", sample: 1488, population: "A", approve: 39, disapprove: 52, diff: 13 },
   { pollster: "Rasmussen Reports", startDate: "2026-09-27", endDate: "2026-10-01", sample: 1500, population: "LV", approve: 42, disapprove: 57, diff: 15 },
-  { pollster: "CBS News", startDate: "2026-09-30", endDate: "2026-10-02", sample: 2162, population: "A", approve: 39, disapprove: 61, diff: 22 }
+  { pollster: "CBS News", startDate: "2026-09-30", endDate: "2026-10-02", sample: 2162, population: "A", approve: 39, disapprove: 61, diff: 22 },
+  { pollster: "Pew Research", startDate: "2026-09-28", endDate: "2026-10-04", sample: 5062, population: "A", approve: 30, disapprove: 68, diff: 38 },
+  { pollster: "Morning Consult", startDate: "2026-10-04", endDate: "2026-10-05", sample: 2202, population: "RV", approve: 41, disapprove: 57, diff: 16 },
+  { pollster: "Economist/YouGov", startDate: "2026-10-02", endDate: "2026-10-05", sample: 1181, population: "LV", approve: 38, disapprove: 61, diff: 23 },
+  { pollster: "Reuters/Ipsos", startDate: "2026-09-30", endDate: "2026-10-05", sample: 3526, population: "RV", approve: 36, disapprove: 64, diff: 28 },
+  { pollster: "RMG Research*", startDate: "2026-09-28", endDate: "2026-10-06", sample: 2000, population: "RV", approve: 43, disapprove: 56, diff: 13 },
+  { pollster: "Rasmussen Reports", startDate: "2026-10-04", endDate: "2026-10-08", sample: 1500, population: "LV", approve: 41, disapprove: 58, diff: 17 }
 ];

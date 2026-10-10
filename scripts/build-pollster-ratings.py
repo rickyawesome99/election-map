@@ -318,7 +318,7 @@ if __name__ == "__main__":
         if p["pollster_id"] not in used: continue
         by_pid[p["pollster_id"]].append([p["year"], p["type"], p["location"], p["race"].split("_")[1], p["date"], p["days"], int(p["sample"]) if p["sample"] else None,
                                          p["partisan"] or None, p["methodology"] if p["methodology"] not in ("", "NA") else None, float(p["poll_margin"]), float(p["actual_margin"]),
-                                         p["error"], 1 if p["oriented"] else 0, r2(p.get("excess")), r2(p.get("rel"))])
+                                         p["error"], 1 if p["oriented"] else 0, r2(p.get("excess")), r2(p.get("rel")), p.get("url") or None])
     for v in by_pid.values(): v.sort(key=lambda t: (t[4], t[2]), reverse=True)
     with open(OUT_POLLS, "w") as f:
         f.write("{\n" + ",\n".join(json.dumps(k) + ":" + json.dumps(v, ensure_ascii=False, separators=(",", ":")) for k, v in sorted(by_pid.items())) + "\n}\n")

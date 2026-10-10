@@ -4,6 +4,7 @@ RACE POLLS — Wikipedia scrape → data-entry/race_polls.csv (append-only merge
 
     python3 scripts/fetch-race-polls.py            # fetch, merge, write the CSV
     python3 scripts/fetch-race-polls.py --dry-run  # fetch + report, write nothing
+    python3 scripts/fetch-race-polls.py --links-only  # only fill blank url cells on on-file rows
 
 Source: the individual-poll wikitables on each 2026 race's Wikipedia page (raw wikitext via
 index.php?action=raw; RealClearPolling blocks scripted fetches). Races and nominees come from
@@ -23,9 +24,12 @@ Table rules (the Phase 5 rules, see docs/TPL_MODEL_SPEC.md):
   - an independent sitting in an empty major-party slot (Osborn) fills that slot
   - pollster = the cell text with refs/links/markup stripped; the LAST "(D)"/"(R)" marker
     becomes the partisan column (build-race-polls.js un-flags the bipartisan pairs)
+  - url = the poll's citation: the first <ref> in the pollster cell ({{cite …|url=}} or a bare
+    link; a reused <ref name=… /> is looked up on the page), else a link on the pollster's name
 
 Merge rules:
-  - APPEND-ONLY: rows already in the CSV are never edited or removed (hand corrections survive);
+  - APPEND-ONLY: rows already in the CSV are never edited or removed (hand corrections survive),
+    with one exception: a BLANK url on an on-file row is filled from the matching scraped poll;
     a scraped poll is new when no existing row of the same race has the same start + end
     dates and the same normalised pollster, nor the same dates and the same dem/rep shares
   - same-party generals (CA top-two D-v-D, CA-40 R-v-R) are skipped: decided races, polls unused
@@ -50,7 +54,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data-entry"
 CSV_PATH = DATA / "race_polls.csv"
 STAMP_PATH = DATA / "race_polls_checked.txt"
-FIELDS = ["office", "state", "race", "pollster", "partisan", "start", "end", "sample", "population", "dem", "rep"]
+FIELDS = ["office", "state", "race", "pollster", "partisan", "start", "end", "sample", "population", "dem", "rep", "url"]
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) election-map poll refresh"
 YEAR = 2026
 AT_LARGE = {"AK", "DE", "ND", "SD", "VT", "WY"}
@@ -122,15 +126,45 @@ def strip_templates_named(s, names):
         i = j
 
 
-def preclean(text):
+# A <ref> becomes ⟪REF url⟫ so the poll's citation survives cleaning; plain() drops the marker.
+REF_MARK = re.compile(r"⟪REF ([^⟫]*)⟫")
+
+
+def ref_url(content):
+    """The link a citation points to: {{cite …|url=…}}, else the first bare http(s) URL."""
+    m = re.search(r"\burl\s*=\s*(https?://[^\s|}<]+)", content, re.I) or re.search(r"(https?://[^\s|\]}<]+)", content)
+    return m.group(1).replace("|", "%7C") if m else ""
+
+
+def ref_name(attrs):
+    m = re.search(r"name\s*=\s*(?:\"([^\"]*)\"|'([^']*)'|([^\s/>]+))", attrs, re.I)
+    return (m.group(1) or m.group(2) or m.group(3)).strip() if m else None
+
+
+def ref_defs(text):
+    """<ref name="x">…</ref> definitions on a page → {name: url}, for <ref name="x" /> reuses."""
+    out = {}
+    for attrs, content in re.findall(r"<ref\b([^>]*?)(?<!/)>(.*?)</ref\s*>", re.sub(r"<!--.*?-->", "", text, flags=re.S), flags=re.S):
+        name, url = ref_name(attrs), ref_url(content)
+        if name and url:
+            out.setdefault(name, url)
+    return out
+
+
+def preclean(text, defs=None):
+    defs = defs if defs is not None else ref_defs(text)
     text = re.sub(r"<!--.*?-->", "", text, flags=re.S)
-    text = re.sub(r"<ref\b(?:[^>\"]|\"[^\"]*\")*/\s*>", "", text)  # self-closing, even with "/" in the name
-    text = re.sub(r"<ref\b[^>]*>.*?</ref\s*>", "", text, flags=re.S)
+    def reuse(m):
+        url = defs.get(ref_name(m.group(1)) or "", "")
+        return f"⟪REF {url}⟫" if url else ""
+    text = re.sub(r"<ref\b((?:[^>\"]|\"[^\"]*\")*)/\s*>", reuse, text)  # self-closing, even with "/" in the name
+    text = re.sub(r"<ref\b[^>]*>(.*?)</ref\s*>", lambda m: f"⟪REF {ref_url(m.group(1))}⟫" if ref_url(m.group(1)) else "", text, flags=re.S)
     return strip_templates_named(text, ["efn", "refn", "efn-ua", "efn-lr", "sfn", "citation needed", "cn"])
 
 
 def plain(s):
     """Cell markup → display text."""
+    s = REF_MARK.sub("", s)
     s = re.sub(r"<br\b[^>]*>", " ", s, flags=re.I)  # also the malformed "<br/ >"
     s = re.sub(r"<wbr\s*/?>", "", s, flags=re.I)
     s = re.sub(r"</?[a-z][^>]*>", "", s, flags=re.I)
@@ -341,6 +375,15 @@ def norm_pollster(p):
 
 # ── per-race extraction ───────────────────────────────────────────────────────
 
+def poll_url(cell):
+    """The poll's citation in its pollster cell, else an external link on the pollster's name."""
+    for u in REF_MARK.findall(cell):
+        if u:
+            return u
+    m = re.search(r"\[(https?://[^\s\]]+)[^\]]*\]", cell)
+    return m.group(1).replace("|", "%7C") if m else ""
+
+
 def extract(text, dem_name, rep_name):
     """→ list of poll dicts from every qualifying table in this text."""
     ds, rs = surname(dem_name), surname(rep_name)
@@ -397,7 +440,7 @@ def extract(text, dem_name, rep_name):
                 continue
             sample, pop = parse_sample(cells[ci_samp]) if ci_samp is not None else ("", "")
             polls.append({"pollster": pollster, "partisan": partisan, "start": dates[0], "end": dates[1],
-                          "sample": sample, "population": pop,
+                          "sample": sample, "population": pop, "url": poll_url(cells[ci_poll]),
                           "dem": f"{dem:.1f}", "rep": f"{rep:.1f}", "_summed": summed, "_ncand": ncand})
     # the same poll in several matchup tables (two-way and with an independent / minor parties):
     # keep the FULL-FIELD version — the most candidate columns — which is the ballot voters see
@@ -482,12 +525,13 @@ def races():
 
 def main():
     dry = "--dry-run" in sys.argv
+    links_only = "--links-only" in sys.argv  # no new polls, no "checked" stamp: just source links
     existing = read_csv("race_polls.csv")
     by_race = {}
     for r in existing:
         by_race.setdefault((r["office"], r["state"], r["race"]), []).append(r)
 
-    added, conflicts, missing_pages, scanned, found = [], [], [], 0, 0
+    added, conflicts, missing_pages, scanned, found, backfilled = [], [], [], 0, 0, 0
     all_races = races()
     for i, (office, st, label, title, dist, dem, rep) in enumerate(all_races):
         key = (office, st, label)
@@ -499,7 +543,7 @@ def main():
         if text is None:
             continue
         scanned += 1
-        polls = extract(preclean(text), dem, rep)
+        polls = extract(preclean(text, ref_defs((fetch_raw(title) or "") + "\n" + text)), dem, rep)
         found += len(polls)
         have = by_race.get(key, [])
         for p in polls:
@@ -509,6 +553,8 @@ def main():
                    or (h["start"], h["end"], float(h["dem"] or 0), float(h["rep"] or 0)) == k2]
             if dup:
                 h = dup[0]
+                if not h.get("url") and p["url"]:  # the one field an on-file row may gain
+                    h["url"] = p["url"]; backfilled += 1
                 if (float(h["dem"] or 0), float(h["rep"] or 0)) != (float(p["dem"]), float(p["rep"])) \
                         and h["start"] >= f"{YEAR}-01-01":
                     conflicts.append((key, h, p))
@@ -526,7 +572,8 @@ def main():
             print(f"  … {i + 1}/{len(all_races)} races", file=sys.stderr)
 
     # report
-    print(f"Races scanned: {scanned}  ·  polls parsed: {found}  ·  new: {len(added)}  ·  to review: {len(conflicts)}")
+    print(f"Races scanned: {scanned}  ·  polls parsed: {found}  ·  new: {len(added)}  ·  to review: {len(conflicts)}"
+          f"  ·  source links filled on on-file rows: {backfilled}")
     for t in missing_pages:
         print(f"  page not found: {t}")
     latest = max((r["end"] for r, _ in added), default=None)
@@ -543,10 +590,14 @@ def main():
     if dry:
         print("Dry run — CSV not written.")
         return
+    if links_only:
+        added = []
+        print("Links only — new polls above NOT added; only blank url cells are filled.")
     # the scrape date, shown on the overview as "checked" (build-race-polls.js reads it) — stamped
     # even when nothing is new, so the page can tell "no new polls" from "nobody looked"
-    STAMP_PATH.write_text(date.today().isoformat() + "\n", encoding="utf-8")
-    if not added:
+    if not links_only:
+        STAMP_PATH.write_text(date.today().isoformat() + "\n", encoding="utf-8")
+    if not added and not backfilled:
         print("Nothing new — CSV unchanged.")
         return
 

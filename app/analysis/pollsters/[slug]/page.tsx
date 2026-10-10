@@ -92,7 +92,8 @@ export default async function PollsterPage({ params }: { params: Promise<{ slug:
           <p className="mt-4 max-w-3xl text-xs leading-relaxed" style={{ color: "var(--app-text-very-muted)" }}>
             Past polls are those whose field period ended within 60 days of the election, 2008&ndash;2024; only the final 21 days
             count toward the grade, and those carry a <strong>Vs. field</strong> figure. Margins are the top two candidates;
-            in a same-party contest the margin is shown without a party. An ✕ marks a poll that had the loser ahead.
+            in a same-party contest the margin is shown without a party. An ✕ marks a poll that had the loser ahead. <strong>Source</strong> links each poll&rsquo;s release where one
+            is on record: FiveThirtyEight&rsquo;s archive from 2018, the Wikipedia citation for {electionYear}; earlier polls have none.
             {" "}{electionYear} polls are those fielded since 1 January and have no result yet. Sources: FiveThirtyEight&rsquo;s
             graded poll file and archive (past), Wikipedia and RealClearPolling ({electionYear}).
           </p>

@@ -37,6 +37,9 @@ Run from project root (needs geopandas + mapshaper; a few minutes):
 """
 import importlib.util, json, os, re, shutil, subprocess, sys, tempfile, urllib.request, warnings
 import geopandas as gpd
+from shapely.geometry import Polygon
+from shapely.ops import unary_union
+from shapely.validation import make_valid
 import pandas as pd
 
 warnings.filterwarnings("ignore")
@@ -90,6 +93,14 @@ def redrawn_states_2026() -> set:
     return {rid[:2] for rid, entries in info.items() for e in entries if e.get("year") == 2026}
 
 
+def polygonal(geom):
+    """The polygon parts of a geometry (make_valid can return a collection with stray lines)."""
+    if geom.geom_type in ("Polygon", "MultiPolygon"):
+        return geom
+    parts = [g for g in getattr(geom, "geoms", []) if g.geom_type in ("Polygon", "MultiPolygon")]
+    return unary_union(parts) if parts else Polygon()
+
+
 def load_site_districts_2026(states: set, tmpdir: str) -> gpd.GeoDataFrame:
     """The site's 2026 boundary files for the redrawn states, as a district frame like load_districts'."""
     frames = []
@@ -102,7 +113,12 @@ def load_site_districts_2026(states: set, tmpdir: str) -> gpd.GeoDataFrame:
         g["STATEFP"] = g["GEOID"].astype(str).str[:2]
         g["d"] = g["GEOID"].astype(str).str[2:].apply(lambda c: 1 if c == "00" else int(c))
         g = g.set_crs("EPSG:4326", allow_override=True)
-        g["geometry"] = g.geometry.buffer(0)
+        # make_valid, not buffer(0): buffer(0) collapsed CA-05's self-intersecting ring to an
+        # empty polygon and the district silently vanished from the map.
+        g["geometry"] = g.geometry.apply(lambda geom: polygonal(make_valid(geom)))
+        empty = sorted(g.loc[g.geometry.is_empty, "d"])
+        if empty:
+            sys.exit(f"[2026] {abbr}: districts {empty} have no area after make_valid")
         frames.append(g[["STATEFP", "d", "geometry"]])
     return gpd.GeoDataFrame(pd.concat(frames, ignore_index=True), crs="EPSG:4326")
 
@@ -121,7 +137,15 @@ def load_districts(year: int) -> gpd.GeoDataFrame:
     return g[["STATEFP", "d", "geometry"]]
 
 
-def build_state(year: int, abbr: str, counties: gpd.GeoDataFrame, districts: gpd.GeoDataFrame, tmpdir: str) -> dict:
+def county_district_pairs_2026() -> set:
+    """(county FIPS, district number) pairs with voters on the 2026 lines, from the tract-built
+    data-entry/county_district_shares_2026.csv the projection itself reads."""
+    import csv
+    with open(os.path.join(ROOT, "data-entry/county_district_shares_2026.csv")) as f:
+        return {(r["county_fips"], int(r["district"][2:]) or 1) for r in csv.DictReader(f)}
+
+
+def build_state(year: int, abbr: str, counties: gpd.GeoDataFrame, districts: gpd.GeoDataFrame, tmpdir: str, pairs: set | None = None) -> dict:
     pieces = gpd.overlay(counties, districts[["d", "geometry"]], how="intersection", keep_geom_type=True)
     if pieces.empty:
         return {"pieces": 0, "dropped": 0}
@@ -130,9 +154,18 @@ def build_state(year: int, abbr: str, counties: gpd.GeoDataFrame, districts: gpd
     county_km2 = counties.to_crs(EQUAL_AREA).set_index("GEOID").area / 1e6
     pieces["share"] = pieces.apply(lambda r: r.km2 / county_km2[r.GEOID] if county_km2[r.GEOID] else 1, axis=1)
     keep = ~((pieces.km2 < SLIVER_KM2) & (pieces.share < SLIVER_SHARE))
+    if pairs is not None:
+        # 2026: the redrawn states' boundary files are simplified and shoreline-clipped, so their
+        # edges wobble off county lines and leave strips of up to ~20 km² that the absolute test
+        # keeps. A piece the tract shares give no voters is a strip when it is under 1% of its county.
+        listed = pieces.apply(lambda r: (r.GEOID, r.d) in pairs, axis=1)
+        keep &= listed | (pieces.share >= 0.01)
     dropped = int((~keep).sum())
     pieces = pieces[keep]
     pieces = pieces.dissolve(by=["GEOID", "d"], as_index=False)[["GEOID", "NAME", "d", "geometry"]]
+    missing = sorted(set(districts.d) - set(pieces.d))
+    if missing:
+        sys.exit(f"[{year}] {abbr}: districts {missing} have no county pieces")
     pieces = pieces.rename(columns={"GEOID": "c", "NAME": "n"})
     pieces["id"] = pieces.c + "-" + pieces.d.astype(str)
 
@@ -166,11 +199,12 @@ def main():
             for fips, abbr in sorted(STATE_FIPS.items(), key=lambda kv: kv[1]):
                 if fips not in redrawn:
                     shutil.copyfile(os.path.join(OUT_ROOT, "2024", f"{abbr}.json"), os.path.join(out_dir, f"{abbr}.json"))
+            pairs = county_district_pairs_2026()
             with tempfile.TemporaryDirectory() as tmpdir:
                 districts = load_site_districts_2026(redrawn, tmpdir)
                 for fips in sorted(redrawn):
                     abbr = STATE_FIPS[fips]
-                    info = build_state(2026, abbr, counties[counties.GEOID.str.startswith(fips)], districts[districts.STATEFP == fips], tmpdir)
+                    info = build_state(2026, abbr, counties[counties.GEOID.str.startswith(fips)], districts[districts.STATEFP == fips], tmpdir, pairs)
                     print(f"[2026] {abbr}: {info['pieces']} pieces, {info['dropped']} slivers dropped, {info.get('bytes', 0) // 1024} KB", flush=True)
             continue
         districts = load_districts(year)

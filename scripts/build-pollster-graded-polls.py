@@ -15,6 +15,7 @@ Primaries are not graded (the forecast uses general-election polls only).
 Columns: margins are R-positive (rep − dem) like the rest of the repo; `oriented` = 0 when
 the top two were not one D-slot and one R-slot candidate (top-two same-party runoffs) — those
 rows count for accuracy but not for partisan bias. `days` = election day − field midpoint.
+`url` = the poll's source link from 538's archive, matched by poll_id (2018 on; blank before).
 
 Usage: python3 scripts/build-pollster-graded-polls.py [dir-with-538-csvs]
 """
@@ -40,8 +41,14 @@ RAW = fetch("raw_polls", "https://raw.githubusercontent.com/fivethirtyeight/data
 ARCH = {n: fetch(n, WAYBACK.format(n)) for n in ARCHIVE}
 
 TYPE = {"Pres-G": "P", "Sen-G": "S", "Gov-G": "G", "House-G": "H", "House-G-US": "GB"}
-FIELDS = ["year", "type", "location", "race", "pollster_id", "pollster", "partisan", "methodology", "date", "days", "sample", "poll_margin", "actual_margin", "error", "oriented"]
+FIELDS = ["year", "type", "location", "race", "pollster_id", "pollster", "partisan", "methodology", "date", "days", "sample", "poll_margin", "actual_margin", "error", "oriented", "url"]
 out = []
+
+# the poll's source link, from the archive (2018 on; raw_polls has none, but shares 538's poll_id)
+URLS = {}
+for name in ARCHIVE:
+    for r in csv.DictReader(open(ARCH[name])):
+        if r["url"].startswith("http"): URLS.setdefault(r["poll_id"], r["url"])
 
 # ── ≤ 2022: 538's graded file ────────────────────────────────────────────────
 def orient(p1, p2):
@@ -59,7 +66,7 @@ for r in csv.DictReader(open(RAW)):
     part = [p for p in r["partisan"].split(",") if p in ("DEM", "REP")]
     out.append({"year": int(r["electiondate"][:4]), "type": t, "location": r["location"], "race": r["race"], "pollster_id": r["pollster_rating_id"], "pollster": r["pollster"],
                 "partisan": {"DEM": "D", "REP": "R"}[part[0]] if len(part) == 1 else "", "methodology": r["methodology"], "date": r["polldate"], "days": int(r["time_to_election"]),
-                "sample": "" if r["samplesize"] in ("NA", "") else round(float(r["samplesize"])), "poll_margin": round(pm, 2), "actual_margin": round(am, 2), "error": round(pm - am, 2), "oriented": 1 if o else 0})
+                "sample": "" if r["samplesize"] in ("NA", "") else round(float(r["samplesize"])), "poll_margin": round(pm, 2), "actual_margin": round(am, 2), "error": round(pm - am, 2), "oriented": 1 if o else 0, "url": URLS.get(r["poll_id"], "")})
 n_raw = len(out)
 
 # ── 2023–24: archive polls graded against the site's results ─────────────────
@@ -126,7 +133,7 @@ for (office, _, race), qs in polls.items():
     samples = [float(q["r"]["sample_size"]) for q in qs if q["r"]["sample_size"]]
     out.append({"year": qs[0]["year"], "type": office, "location": qs[0]["loc"], "race": race, "pollster_id": r["pollster_rating_id"], "pollster": r["pollster_rating_name"] or r["pollster"],
                 "partisan": {"DEM": "D", "REP": "R"}.get(r["partisan"], ""), "methodology": r["methodology"], "date": qs[0]["mid"].isoformat(), "days": qs[0]["days"],
-                "sample": round(sum(samples) / len(samples)) if samples else "", "poll_margin": round(pm, 2), "actual_margin": round(qs[0]["actual"], 2), "error": round(pm - qs[0]["actual"], 2), "oriented": 1})
+                "sample": round(sum(samples) / len(samples)) if samples else "", "poll_margin": round(pm, 2), "actual_margin": round(qs[0]["actual"], 2), "error": round(pm - qs[0]["actual"], 2), "oriented": 1, "url": r["url"] if r["url"].startswith("http") else ""})
 
 out.sort(key=lambda x: (x["year"], x["type"], x["location"], x["race"], x["date"], x["pollster"]))
 with open(OUT, "w", newline="") as f:

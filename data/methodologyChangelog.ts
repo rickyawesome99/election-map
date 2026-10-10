@@ -29,6 +29,18 @@ export const METHODOLOGY_CHANGELOG: MethodologyChange[] = [
     effect: "Nine races move, seven toward Republicans: Texas Governor R+2.6 → R+3.4, Ohio Governor D+2.1 → D+1.7, Texas Senate D+2.6 → D+2.3, Iowa Governor D+7.3 → D+6.9, Iowa Senate D+0.3 → EVEN; Maine Senate D+2.9 → D+3.1 the other way (its model is bluer than its polls). No rating changes. Chambers: Governors 26.22 → 26.15 expected Democratic; House 229.7 and Senate 51.2 (P(Democratic control) 95% / 68%) unchanged to the decimal. Forward backtest, blend MAE at the live constants: Senate 4.69 → 4.67 (mid-September), 4.54 → 4.52 (mid-October), 4.60 → 4.59 (November 1); Governor 5.86 → 5.89 (mid-October), 5.40 → 5.44 (November 1); House unchanged. Mean w falls 0.01–0.02 at each horizon.",
   },
   {
+    date: "2026-10-10", models: ["forecast"], kind: "data",
+    title: "Generic ballot and Trump approval polls updated through October 8",
+    detail: "Polls RealClearPolitics has added since the October 4 export were appended to data-entry/generic_ballot_polls.csv (6: Economist/YouGov, Morning Consult, Cygnal, Reuters/Ipsos, Pew and a back-filled September 24–27 Rasmussen) and data-entry/trump_approval_polls.csv (7, newest Rasmussen October 4–8), and both were rebuilt with their data-entry scripts. Every poll already on file matches RCP's table. Nothing in the method changed.",
+    effect: "Generic ballot D+8.4 → D+7.9 (D 50.8 → 49.8, R 42.4 → 41.9), matching RCP's own average; approval net −21.4 → −22.3. Every race moves Republican, mean 0.36 pts, max 0.6. House: expected Democratic seats 229.7 → 228.3, P(Democratic control) 95.1% → 92.5%. Senate 51.3 → 51.1, 69.1% → 63.3%. Governors 26.1 → 25.9. 18 rating changes, including Iowa Senate Tilt D → Tilt R, Nevada Governor Tilt D → Tilt R, MI-07 Tilt D → Tilt R, Georgia Governor Tilt R → Lean R and Minnesota Senate Likely D → Lean D.",
+  },
+  {
+    date: "2026-10-10", models: ["forecast"], kind: "data",
+    title: "2026 fundraising refreshed",
+    detail: "House and Senate receipts re-read from the FEC's weball26 summary of October 10, matched by FEC id. Most candidates' latest report still ends June 30 or at a summer pre-primary date; Q3 reports (through September 30) are due October 15. Six nominees with no filing in September now have one: GA-08 Kelly Esti, MA-08 Robert Burke, MO-08 Christopher Reichard, NY-10 Jennifer Moore, PA-04 Aurora Stuski and South Carolina Senate's Darline Graham. Governor receipts re-read from TransparencyUSA (new filings in Alabama, Minnesota and Texas) and Massachusetts OCPF. The 15 governor races with no state-portal source are still blank. No method change.",
+    effect: "50 House/Senate sides and 7 governor sides changed. South Carolina Senate R+6.1 → R+3.9, Likely R → Lean R: Graham's $0.35M through August 5, against Annie Andrews' $10.8M through June 30, is the first money on file for her side. Every other race moved less than 1.2 points. Senate: expected Democratic seats 51.2 → 51.3, P(Democratic control) 67.5% → 69.1%. House 229.7 → 229.7 (94.9% → 95.1%). Governors 26.1 unchanged.",
+  },
+  {
     date: "2026-10-09", models: ["forecast"], kind: "data",
     title: "Race polls refreshed through October 8",
     detail: "Weekly `npm run refresh` of every 2026 race's Wikipedia polling tables, append-only as before. Two new aliases map Wikipedia's spellings to rated pollsters (UMass Lowell/YouGov → UMass Lowell Center for Public Opinion; The Washington Post/SSPG → Washington Post/GMU Schar School). The scraper reads Wikipedia's June Alaska Survey Research governor poll as D 47.8 / R 52.2 party-summed where the file has 42.2 / 57.8; the row on file was left as is. No method change.",

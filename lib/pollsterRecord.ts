@@ -2,6 +2,7 @@ import "server-only";
 import pollsterPollsJson from "@/data/pollsterPolls.json";
 import { POLLSTER_RATING_META as META, pollsterRatings, type PollsterRating } from "@/data/pollsterRatings";
 import { racePolls } from "@/data/racePolls";
+import { racePollSources } from "@/data/racePollSources";
 import { genericBallotPolls } from "@/data/genericBallotPolls";
 import { electionYear, governorData, houseData, senateData } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
@@ -16,8 +17,8 @@ import { liveHouseEffects, racePollLabel } from "@/lib/tplCompute";
 // cycle's polls from the race and generic-ballot poll files, matched by rating id.
 
 /** [year, type, location, race code, date, days out, sample, partisan, methodology,
- *  poll margin, result margin, error, oriented, excess vs field, house (vs others in race)] */
-type PollTuple = [number, string, string, string, string, number, number | null, "D" | "R" | null, string | null, number, number, number, 0 | 1, number | null, number | null];
+ *  poll margin, result margin, error, oriented, excess vs field, house (vs others in race), source url] */
+type PollTuple = [number, string, string, string, string, number, number | null, "D" | "R" | null, string | null, number, number, number, 0 | 1, number | null, number | null, string | null];
 const POLLS = pollsterPollsJson as unknown as Record<string, PollTuple[]>;
 
 export type PollsterPollRow = {
@@ -40,6 +41,7 @@ export type PollsterPollRow = {
   graded: boolean;       // inside the ratings' final-21-day window
   excess: number | null; // |error| − a typical poll of the race (negative = beat the field)
   calledWinner: boolean | null;
+  url: string | null;    // the poll's source (538's archive link, 2018–24; Wikipedia's citation, this cycle)
 };
 
 const OFFICE: Record<string, PollsterPollRow["office"]> = { P: "President", S: "Senate", G: "Governor", H: "House", GB: "Generic ballot" };
@@ -68,14 +70,14 @@ function pastHref(type: string, loc: string, code: string, year: number): string
 }
 
 function pastRows(id: string): PollsterPollRow[] {
-  return (POLLS[id] ?? []).map(([year, type, loc, code, date, days, sample, partisan, methodology, poll, result, error, oriented, excess]) => {
+  return (POLLS[id] ?? []).map(([year, type, loc, code, date, days, sample, partisan, methodology, poll, result, error, oriented, excess, , url]) => {
     const raceCode = code.split("-")[1] ?? "G";
     const race = type === "GB" || loc === "US" ? "National" : type === "H" ? district(loc) : SPLIT_PRES[loc] ?? stateName(loc);
     return {
       cycle: cycleOf(year), year, office: OFFICE[type], race, stage: STAGE[raceCode] ?? null, href: pastHref(type, loc, code, year),
       date, daysOut: days, sample, population: null, partisan, methodology, poll, result, error, oriented: oriented === 1,
       graded: excess != null || days <= 21, excess,
-      calledWinner: poll === 0 ? null : Math.sign(poll) === Math.sign(result),
+      calledWinner: poll === 0 ? null : Math.sign(poll) === Math.sign(result), url: url ?? null,
     };
   });
 }
@@ -108,11 +110,12 @@ function racePollRace(key: string): Pick<PollsterPollRow, "office" | "race" | "s
 /** This cycle's race and generic-ballot polls by the pollster. */
 function currentRows(id: string): PollsterPollRow[] {
   const out: PollsterPollRow[] = [];
-  const base = { cycle: electionYear, year: electionYear, daysOut: null, methodology: null, result: null, error: null, oriented: true, graded: false, excess: null, calledWinner: null };
+  const base = { cycle: electionYear, year: electionYear, daysOut: null, methodology: null, result: null, error: null, oriented: true, graded: false, excess: null, calledWinner: null, url: null };
   for (const [key, polls] of Object.entries(racePolls)) {
     for (const p of polls) {
       if (pollsterIdOf(p.pollster) !== id) continue;
-      out.push({ ...base, ...racePollRace(key), date: p.endDate, sample: p.sample, population: p.population, partisan: p.partisan, poll: p.diff });
+      out.push({ ...base, ...racePollRace(key), date: p.endDate, sample: p.sample, population: p.population, partisan: p.partisan, poll: p.diff,
+        url: racePollSources[`${key}|${p.pollster}|${p.startDate}|${p.endDate}`] ?? null });
     }
   }
   for (const p of genericBallotPolls) {

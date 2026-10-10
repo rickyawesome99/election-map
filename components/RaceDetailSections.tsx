@@ -6,8 +6,6 @@ import CandidateLink from "@/components/CandidateLink";
 import { FORECAST_CONSTANTS } from "@/data/tplModelData";
 import { WinProbabilityLabel } from "@/components/WinProbabilityLabel";
 import { InfoTooltip } from "@/components/InfoTooltip";
-import PollsterGradeChip from "@/components/PollsterGradeChip";
-import { pollsterGradeOf } from "@/lib/pollsterRatings";
 import { formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
 import { getNationalEnvironment, incumbentAdvantage, type RacePolling, type RaceMoneyTerm } from "@/lib/tplCompute";
 
@@ -2170,7 +2168,6 @@ export function RacePollsSection({ polling, demName, repName }: { polling: RaceP
           <thead>
             <tr className="text-[10px] uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>
               <th className="text-left font-semibold py-2 pr-2">Pollster</th>
-              <th className="text-left font-semibold py-2 pr-2" title="Historical accuracy grade (Analysis → Pollster Ratings). Shown for reference; it is not a weight.">Grade</th>
               <th className="text-left font-semibold py-2 pr-2">Dates</th>
               <th className="text-right font-semibold py-2 pr-2">Sample</th>
               <th className="text-right font-semibold py-2 pr-2" style={{ color: "var(--party-dem)" }}>{surname(demName)}</th>
@@ -2185,7 +2182,6 @@ export function RacePollsSection({ polling, demName, repName }: { polling: RaceP
             {avg.polls.map((p) => (
               <tr key={`${p.pollster}-${p.endDate}`} style={{ borderTop: "1px solid color-mix(in srgb, var(--app-border) 72%, transparent)", color: "var(--app-text-primary)" }}>
                 <td className="py-1.5 pr-2 whitespace-nowrap">{p.pollster}{p.partisan ? <span className="ml-1 text-[10px] font-semibold" style={{ color: p.partisan === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>({p.partisan})</span> : null}</td>
-                <td className="py-1.5 pr-2"><PollsterGradeChip grade={pollsterGradeOf(p.pollster)?.grade ?? null} /></td>
                 <td className="py-1.5 pr-2 whitespace-nowrap" style={{ color: "var(--app-text-muted)" }}>{p.startDate === p.endDate ? fmtDate(p.endDate) : `${fmtDate(p.startDate)} – ${fmtDate(p.endDate)}`}</td>
                 <td className="py-1.5 pr-2 text-right whitespace-nowrap" style={{ color: "var(--app-text-muted)" }}>{p.sample != null ? p.sample.toLocaleString() : "—"}{p.population ? ` ${p.population}` : ""}</td>
                 <td className="py-1.5 pr-2 text-right">{p.dem.toFixed(0)}%</td>
@@ -2199,9 +2195,6 @@ export function RacePollsSection({ polling, demName, repName }: { polling: RaceP
           </tbody>
         </table>
       </div>
-      <p className="mt-2.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-        One survey per pollster (its latest). Weight is relative to the freshest, largest poll: full for 14 days after the field period, halving every 14 days after, times √sample. Adjusted = the published margin moved by the generic ballot&apos;s shift since the poll was in the field (scaled by the state&apos;s elasticity) and net of the pollster&apos;s house effect, its lean against the other pollsters in the races they share this cycle; the average is taken over the adjusted margins. Grade is the pollster&apos;s <a href="/analysis/pollsters" className="underline">historical accuracy rating</a>, shown for reference and not used as a weight. (D)/(R) marks a party or campaign pollster.
-      </p>
     </div>
   );
 }
