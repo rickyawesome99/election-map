@@ -10,6 +10,7 @@ const TABS: [string, string, string][] = [
   ["District TPL", "/methodology/district-tpl", "A district's lean, on the 2026 lines"],
   ["County TPL", "/methodology/county-tpl", "The state pipeline, measured in one county"],
   ["WAR", "/methodology/war", "How much better than a generic nominee"],
+  ["Legislative atlas", "/methodology/state-leg", "One page per chamber, one record per district"],
   ["Change Log", "/methodology/changelog", "Change log"],
   ["Sources", "/methodology/sources", "Where every number comes from"],
 ];

@@ -43,6 +43,11 @@
 //       House rows and now carry turnout weights; H is scored against an equal-weighted target.
 //   Imputed House rows at full turnout share (2026-09-22; IMPUTED_HOUSE_ROW_WEIGHT 1, statewide
 //   imputed rows stay 0.5): P 2.46/2.60/2.78/1.93 · S 5.02/4.97/5.01/4.95 · H 3.06/2.36/2.54/2.79
+//   Corrected State Legislature rows (2026-10-10; the chamber aggregate replaced by a contested
+//   pool and an unopposed pool imputed district by district from the presidential vote on the
+//   lines of the time, both turnout-weighted; IMPUTED_LEG_ROW_WEIGHT 1 — 0.5 scored P 2.25 /
+//   S 4.89 / H 3.52, no better): P 2.24/2.22/2.53/1.93 · S 4.90/4.73/4.71/4.95 · H 3.41/2.58/2.73/2.79
+//     — President and Senate improve, the House average worsens; TPL_RAW_LEG=1 reproduces the old rows.
 // The 0.10 tolerance catches any real formula change, which moves these by far more.
 
 import fs from "node:fs";
@@ -162,9 +167,9 @@ function buildRows(): StateRow[] {
 
 const EXPECTED: Record<string, Record<string, number>> = {
   // reference values (imputed House rows at full share, 2026-09-22, measured in-harness): target → predictor → MAE
-  p24: { nmHold: 2.46, adjHold: 2.60, rawHold: 2.78, pres2020: 1.93 },
-  s24: { nmHold: 5.02, adjHold: 4.97, rawHold: 5.01, pres2020: 4.95 },
-  h24: { nmHold: 3.06, adjHold: 2.36, rawHold: 2.54, pres2020: 2.79 },
+  p24: { nmHold: 2.24, adjHold: 2.22, rawHold: 2.53, pres2020: 1.93 },
+  s24: { nmHold: 4.90, adjHold: 4.73, rawHold: 4.71, pres2020: 4.95 },
+  h24: { nmHold: 3.41, adjHold: 2.58, rawHold: 2.73, pres2020: 2.79 },
 };
 
 function runHoldout(): void {

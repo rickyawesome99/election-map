@@ -1,0 +1,6105 @@
+{
+ "house": {
+  "current": {
+   "BE1": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "BE1",
+      "popPct": 99.4
+     },
+     {
+      "areaPct": 0.3,
+      "key": "GR9",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Belknap",
+      "popPct": 97.5
+     },
+     {
+      "county": "Grafton",
+      "popPct": 2.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3423,
+    "pres2020New": 6.1,
+    "pres2020Old": 6.0,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 99.4,
+    "text": "Kept 99% of its population from the 2016\u20132020 BE1; gained the rest from the old GR9 (1%). Spans Belknap, Grafton counties. 2020 presidential margin R+6.0 on the 2016\u20132020 lines \u2192 R+6.1 on the current lines.",
+    "toEra": "current"
+   },
+   "BE2": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "BE2",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Belknap",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 6665,
+    "pres2020New": 1.6,
+    "pres2020Old": 3.2,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Belknap County.",
+    "toEra": "current"
+   },
+   "BE3": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "BE4",
+      "popPct": 98.7
+     },
+     {
+      "areaPct": 0.3,
+      "key": "ME3",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Belknap",
+      "popPct": 94.4
+     },
+     {
+      "county": "Merrimack",
+      "popPct": 5.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Merrimack",
+      "popPct": 5.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 7051,
+    "pres2020New": 8.9,
+    "pres2020Old": 5.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 BE3; it draws from the old BE4 (99%), the old ME3 (1%). Counties: gained Merrimack (6%). 2020 presidential margin R+5.6 on the 2016\u20132020 lines \u2192 R+8.9 on the current lines.",
+    "toEra": "current"
+   },
+   "BE4": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "BE6",
+      "popPct": 99.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Belknap",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Merrimack",
+      "popPct": 5.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 7347,
+    "pres2020New": 18.6,
+    "pres2020Old": 9.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 BE4; it draws from the old BE6 (100%). Counties: lost Merrimack. 2020 presidential margin R+9.0 on the 2016\u20132020 lines \u2192 R+18.6 on the current lines.",
+    "toEra": "current"
+   },
+   "BE5": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "BE3",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Belknap",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14745,
+    "pres2020New": 5.6,
+    "pres2020Old": 21.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 BE5; it draws from the old BE3 (100%). Entirely in Belknap County. 2020 presidential margin R+21.7 on the 2016\u20132020 lines \u2192 R+5.6 on the current lines.",
+    "toEra": "current"
+   },
+   "BE6": {
+    "contributors": [
+     {
+      "areaPct": 46.8,
+      "key": "BE2",
+      "popPct": 56.1
+     },
+     {
+      "areaPct": 52.1,
+      "key": "BE5",
+      "popPct": 28.7
+     },
+     {
+      "areaPct": 1.1,
+      "key": "BE3",
+      "popPct": 15.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Belknap",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13725,
+    "pres2020New": 8.0,
+    "pres2020Old": 18.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 BE6; it draws from the old BE2 (56%), the old BE5 (29%), the old BE3 (15%). Entirely in Belknap County. 2020 presidential margin R+18.7 on the 2016\u20132020 lines \u2192 R+8.0 on the current lines.",
+    "toEra": "current"
+   },
+   "BE7": {
+    "contributors": [
+     {
+      "areaPct": 64.8,
+      "key": "BE5",
+      "popPct": 54.5
+     },
+     {
+      "areaPct": 35.0,
+      "key": "BE7",
+      "popPct": 45.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Belknap",
+      "popPct": 99.2
+     },
+     {
+      "county": "Carroll",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10809,
+    "pres2020New": 22.4,
+    "pres2020Old": 18.7,
+    "retainedAreaPct": 35.0,
+    "retainedPopPct": 45.5,
+    "text": "A new footprint: only 46% of its population was in the 2016\u20132020 BE7; it draws from the old BE5 (54%). Spans Belknap, Carroll counties. 2020 presidential margin R+18.7 on the 2016\u20132020 lines \u2192 R+22.4 on the current lines.",
+    "toEra": "current"
+   },
+   "CA1": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "CA2",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carroll",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9822,
+    "pres2020New": -17.1,
+    "pres2020Old": -32.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CA1; it draws from the old CA2 (100%). Entirely in Carroll County. 2020 presidential margin D+32.0 on the 2016\u20132020 lines \u2192 D+17.1 on the current lines.",
+    "toEra": "current"
+   },
+   "CA2": {
+    "contributors": [
+     {
+      "areaPct": 41.2,
+      "key": "CA1",
+      "popPct": 61.4
+     },
+     {
+      "areaPct": 24.1,
+      "key": "CA4",
+      "popPct": 21.0
+     },
+     {
+      "areaPct": 19.4,
+      "key": "CA3",
+      "popPct": 10.9
+     },
+     {
+      "areaPct": 15.3,
+      "key": "CA2",
+      "popPct": 6.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carroll",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 6994,
+    "pres2020New": -25.2,
+    "pres2020Old": -15.2,
+    "retainedAreaPct": 15.3,
+    "retainedPopPct": 6.8,
+    "text": "A new footprint: only 7% of its population was in the 2016\u20132020 CA2; it draws from the old CA1 (61%), the old CA4 (21%), the old CA3 (11%). Entirely in Carroll County. 2020 presidential margin D+15.2 on the 2016\u20132020 lines \u2192 D+25.2 on the current lines.",
+    "toEra": "current"
+   },
+   "CA3": {
+    "contributors": [
+     {
+      "areaPct": 57.5,
+      "key": "CA3",
+      "popPct": 52.2
+     },
+     {
+      "areaPct": 42.5,
+      "key": "CA4",
+      "popPct": 47.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carroll",
+      "popPct": 99.4
+     },
+     {
+      "county": "Belknap",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10297,
+    "pres2020New": 2.3,
+    "pres2020Old": -5.8,
+    "retainedAreaPct": 57.5,
+    "retainedPopPct": 52.2,
+    "text": "Kept 52% of its population from the 2016\u20132020 CA3; gained the rest from the old CA4 (48%). Spans Carroll, Belknap counties. 2020 presidential margin D+5.8 on the 2016\u20132020 lines \u2192 R+2.3 on the current lines.",
+    "toEra": "current"
+   },
+   "CA4": {
+    "contributors": [
+     {
+      "areaPct": 62.9,
+      "key": "CA5",
+      "popPct": 78.3
+     },
+     {
+      "areaPct": 22.0,
+      "key": "CA3",
+      "popPct": 17.3
+     },
+     {
+      "areaPct": 14.9,
+      "key": "CA2",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carroll",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9761,
+    "pres2020New": 14.8,
+    "pres2020Old": 3.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CA4; it draws from the old CA5 (78%), the old CA3 (17%), the old CA2 (4%). Entirely in Carroll County. 2020 presidential margin R+3.4 on the 2016\u20132020 lines \u2192 R+14.8 on the current lines.",
+    "toEra": "current"
+   },
+   "CA5": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "CA5",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carroll",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4372,
+    "pres2020New": 21.0,
+    "pres2020Old": 20.8,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Carroll County.",
+    "toEra": "current"
+   },
+   "CA6": {
+    "contributors": [
+     {
+      "areaPct": 54.1,
+      "key": "CA6",
+      "popPct": 72.2
+     },
+     {
+      "areaPct": 45.9,
+      "key": "CA4",
+      "popPct": 27.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carroll",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8883,
+    "pres2020New": 2.3,
+    "pres2020Old": 0.3,
+    "retainedAreaPct": 54.1,
+    "retainedPopPct": 72.2,
+    "text": "Kept 72% of its population from the 2016\u20132020 CA6; gained the rest from the old CA4 (28%). Entirely in Carroll County. 2020 presidential margin R+0.3 on the 2016\u20132020 lines \u2192 R+2.3 on the current lines.",
+    "toEra": "current"
+   },
+   "CH1": {
+    "contributors": [
+     {
+      "areaPct": 41.6,
+      "key": "CH4",
+      "popPct": 80.5
+     },
+     {
+      "areaPct": 30.7,
+      "key": "CH8",
+      "popPct": 10.1
+     },
+     {
+      "areaPct": 26.2,
+      "key": "CH5",
+      "popPct": 9.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cheshire",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4209,
+    "pres2020New": -47.3,
+    "pres2020Old": -19.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CH1; it draws from the old CH4 (80%), the old CH8 (10%), the old CH5 (10%). Entirely in Cheshire County. 2020 presidential margin D+19.2 on the 2016\u20132020 lines \u2192 D+47.3 on the current lines.",
+    "toEra": "current"
+   },
+   "CH10": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "CH12",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cheshire",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8467,
+    "pres2020New": -2.8,
+    "pres2020Old": -12.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CH10; it draws from the old CH12 (100%). Entirely in Cheshire County. 2020 presidential margin D+12.2 on the 2016\u20132020 lines \u2192 D+2.8 on the current lines.",
+    "toEra": "current"
+   },
+   "CH11": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "CH13",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cheshire",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4150,
+    "pres2020New": 0.1,
+    "pres2020Old": 14.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CH11; it draws from the old CH13 (100%). Entirely in Cheshire County. 2020 presidential margin R+14.2 on the 2016\u20132020 lines \u2192 R+0.1 on the current lines.",
+    "toEra": "current"
+   },
+   "CH12": {
+    "contributors": [
+     {
+      "areaPct": 67.2,
+      "key": "CH11",
+      "popPct": 52.5
+     },
+     {
+      "areaPct": 32.8,
+      "key": "CH10",
+      "popPct": 47.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cheshire",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4481,
+    "pres2020New": 3.6,
+    "pres2020Old": -2.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CH12; it draws from the old CH11 (52%), the old CH10 (48%). Entirely in Cheshire County. 2020 presidential margin D+2.8 on the 2016\u20132020 lines \u2192 R+3.6 on the current lines.",
+    "toEra": "current"
+   },
+   "CH13": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "CH9",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cheshire",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 6852,
+    "pres2020New": -9.7,
+    "pres2020Old": 0.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CH13; it draws from the old CH9 (100%). Entirely in Cheshire County. 2020 presidential margin R+0.1 on the 2016\u20132020 lines \u2192 D+9.7 on the current lines.",
+    "toEra": "current"
+   },
+   "CH14": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "CH11",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cheshire",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cheshire",
+      "popPct": 99.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 6476,
+    "pres2020New": 19.2,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CH14; it draws from the old CH11 (100%). Counties: gained Cheshire (100%).",
+    "toEra": "current"
+   },
+   "CH2": {
+    "contributors": [
+     {
+      "areaPct": 94.2,
+      "key": "CH6",
+      "popPct": 91.7
+     },
+     {
+      "areaPct": 4.6,
+      "key": "CH7",
+      "popPct": 7.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cheshire",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 5145,
+    "pres2020New": -35.3,
+    "pres2020Old": -14.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CH2; it draws from the old CH6 (92%), the old CH7 (8%). Entirely in Cheshire County. 2020 presidential margin D+14.8 on the 2016\u20132020 lines \u2192 D+35.3 on the current lines.",
+    "toEra": "current"
+   },
+   "CH3": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "CH8",
+      "popPct": 95.8
+     },
+     {
+      "areaPct": 1.2,
+      "key": "CH7",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cheshire",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4830,
+    "pres2020New": -41.4,
+    "pres2020Old": -4.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CH3; it draws from the old CH8 (96%), the old CH7 (4%). Entirely in Cheshire County. 2020 presidential margin D+4.8 on the 2016\u20132020 lines \u2192 D+41.4 on the current lines.",
+    "toEra": "current"
+   },
+   "CH4": {
+    "contributors": [
+     {
+      "areaPct": 97.8,
+      "key": "CH7",
+      "popPct": 99.2
+     },
+     {
+      "areaPct": 1.0,
+      "key": "CH6",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cheshire",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4494,
+    "pres2020New": -34.5,
+    "pres2020Old": -48.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CH4; it draws from the old CH7 (99%), the old CH6 (0%). Entirely in Cheshire County. 2020 presidential margin D+48.6 on the 2016\u20132020 lines \u2192 D+34.5 on the current lines.",
+    "toEra": "current"
+   },
+   "CH5": {
+    "contributors": [
+     {
+      "areaPct": 69.5,
+      "key": "CH1",
+      "popPct": 81.6
+     },
+     {
+      "areaPct": 30.5,
+      "key": "CH2",
+      "popPct": 18.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cheshire",
+      "popPct": 98.2
+     },
+     {
+      "county": "Sullivan",
+      "popPct": 1.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4453,
+    "pres2020New": -23.8,
+    "pres2020Old": -43.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CH5; it draws from the old CH1 (82%), the old CH2 (18%). Spans Cheshire, Sullivan counties. 2020 presidential margin D+43.6 on the 2016\u20132020 lines \u2192 D+23.8 on the current lines.",
+    "toEra": "current"
+   },
+   "CH6": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "CH1",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cheshire",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9206,
+    "pres2020New": -15.8,
+    "pres2020Old": -35.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CH6; it draws from the old CH1 (100%). Entirely in Cheshire County. 2020 presidential margin D+35.3 on the 2016\u20132020 lines \u2192 D+15.8 on the current lines.",
+    "toEra": "current"
+   },
+   "CH7": {
+    "contributors": [
+     {
+      "areaPct": 99.3,
+      "key": "CH5",
+      "popPct": 99.4
+     },
+     {
+      "areaPct": 0.1,
+      "key": "CH4",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cheshire",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4329,
+    "pres2020New": -43.6,
+    "pres2020Old": -34.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CH7; it draws from the old CH5 (99%), the old CH4 (1%). Entirely in Cheshire County. 2020 presidential margin D+34.5 on the 2016\u20132020 lines \u2192 D+43.6 on the current lines.",
+    "toEra": "current"
+   },
+   "CH8": {
+    "contributors": [
+     {
+      "areaPct": 21.7,
+      "key": "CH10",
+      "popPct": 45.3
+     },
+     {
+      "areaPct": 44.2,
+      "key": "CH3",
+      "popPct": 27.8
+     },
+     {
+      "areaPct": 34.0,
+      "key": "CH9",
+      "popPct": 26.0
+     },
+     {
+      "areaPct": 0.1,
+      "key": "CH5",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cheshire",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4626,
+    "pres2020New": -29.7,
+    "pres2020Old": -41.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CH8; it draws from the old CH10 (45%), the old CH3 (28%), the old CH9 (26%) and 1 more. Entirely in Cheshire County. 2020 presidential margin D+41.7 on the 2016\u20132020 lines \u2192 D+29.7 on the current lines.",
+    "toEra": "current"
+   },
+   "CH9": {
+    "contributors": [
+     {
+      "areaPct": 48.5,
+      "key": "CH2",
+      "popPct": 55.1
+     },
+     {
+      "areaPct": 51.4,
+      "key": "CH3",
+      "popPct": 44.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cheshire",
+      "popPct": 99.4
+     },
+     {
+      "county": "Hillsborough",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4739,
+    "pres2020New": -8.0,
+    "pres2020Old": -15.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CH9; it draws from the old CH2 (55%), the old CH3 (45%). Spans Cheshire, Hillsborough counties. 2020 presidential margin D+15.7 on the 2016\u20132020 lines \u2192 D+8.0 on the current lines.",
+    "toEra": "current"
+   },
+   "CO1": {
+    "contributors": [
+     {
+      "areaPct": 40.3,
+      "key": "CO4",
+      "popPct": 59.8
+     },
+     {
+      "areaPct": 18.8,
+      "key": "CO2",
+      "popPct": 30.6
+     },
+     {
+      "areaPct": 40.9,
+      "key": "CO1",
+      "popPct": 9.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Coos",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 6939,
+    "pres2020New": 8.1,
+    "pres2020Old": 26.7,
+    "retainedAreaPct": 40.9,
+    "retainedPopPct": 9.5,
+    "text": "A new footprint: only 10% of its population was in the 2016\u20132020 CO1; it draws from the old CO4 (60%), the old CO2 (31%). Entirely in Coos County. 2020 presidential margin R+26.7 on the 2016\u20132020 lines \u2192 R+8.1 on the current lines.",
+    "toEra": "current"
+   },
+   "CO2": {
+    "contributors": [
+     {
+      "areaPct": 19.5,
+      "key": "CO2",
+      "popPct": 59.4
+     },
+     {
+      "areaPct": 80.5,
+      "key": "CO1",
+      "popPct": 40.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Coos",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3609,
+    "pres2020New": 25.0,
+    "pres2020Old": 17.7,
+    "retainedAreaPct": 19.5,
+    "retainedPopPct": 59.4,
+    "text": "Kept 59% of its population from the 2016\u20132020 CO2; gained the rest from the old CO1 (41%). Entirely in Coos County. 2020 presidential margin R+17.7 on the 2016\u20132020 lines \u2192 R+25.0 on the current lines.",
+    "toEra": "current"
+   },
+   "CO3": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "CO1",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Coos",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3556,
+    "pres2020New": 27.6,
+    "pres2020Old": -7.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CO3; it draws from the old CO1 (100%). Entirely in Coos County. 2020 presidential margin D+7.2 on the 2016\u20132020 lines \u2192 R+27.6 on the current lines.",
+    "toEra": "current"
+   },
+   "CO4": {
+    "contributors": [
+     {
+      "areaPct": 84.0,
+      "key": "CO5",
+      "popPct": 100.0
+     },
+     {
+      "areaPct": 15.9,
+      "key": "CO4",
+      "popPct": 0.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Coos",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4353,
+    "pres2020New": 7.0,
+    "pres2020Old": 5.4,
+    "retainedAreaPct": 15.9,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CO4; it draws from the old CO5 (100%). Entirely in Coos County. 2020 presidential margin R+5.4 on the 2016\u20132020 lines \u2192 R+7.0 on the current lines.",
+    "toEra": "current"
+   },
+   "CO5": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "CO3",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Coos",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9412,
+    "pres2020New": -7.2,
+    "pres2020Old": 2.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 CO5; it draws from the old CO3 (100%). Entirely in Coos County. 2020 presidential margin R+2.6 on the 2016\u20132020 lines \u2192 D+7.2 on the current lines.",
+    "toEra": "current"
+   },
+   "CO6": {
+    "contributors": [
+     {
+      "areaPct": 87.3,
+      "key": "CO6",
+      "popPct": 90.0
+     },
+     {
+      "areaPct": 12.7,
+      "key": "CO5",
+      "popPct": 9.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Coos",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3399,
+    "pres2020New": -12.1,
+    "pres2020Old": -8.6,
+    "retainedAreaPct": 87.3,
+    "retainedPopPct": 90.0,
+    "text": "Kept 90% of its population from the 2016\u20132020 CO6; gained the rest from the old CO5 (10%). Entirely in Coos County. 2020 presidential margin D+8.6 on the 2016\u20132020 lines \u2192 D+12.1 on the current lines.",
+    "toEra": "current"
+   },
+   "GR1": {
+    "contributors": [
+     {
+      "areaPct": 28.5,
+      "key": "GR1",
+      "popPct": 55.6
+     },
+     {
+      "areaPct": 51.0,
+      "key": "GR2",
+      "popPct": 34.4
+     },
+     {
+      "areaPct": 20.4,
+      "key": "GR3",
+      "popPct": 10.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10799,
+    "pres2020New": 1.3,
+    "pres2020Old": -9.5,
+    "retainedAreaPct": 28.5,
+    "retainedPopPct": 55.6,
+    "text": "Kept 56% of its population from the 2016\u20132020 GR1; gained the rest from the old GR2 (34%), the old GR3 (10%). Entirely in Grafton County. 2020 presidential margin D+9.5 on the 2016\u20132020 lines \u2192 R+1.3 on the current lines.",
+    "toEra": "current"
+   },
+   "GR10": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "GR9",
+      "popPct": 99.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 97.7
+     },
+     {
+      "county": "Belknap",
+      "popPct": 2.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Belknap",
+      "popPct": 2.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Sullivan",
+      "popPct": 6.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 4380,
+    "pres2020New": 9.5,
+    "pres2020Old": -30.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 GR10; it draws from the old GR9 (100%). Counties: gained Belknap (2%); lost Sullivan. 2020 presidential margin D+30.7 on the 2016\u20132020 lines \u2192 R+9.5 on the current lines.",
+    "toEra": "current"
+   },
+   "GR11": {
+    "contributors": [
+     {
+      "areaPct": 58.8,
+      "key": "GR9",
+      "popPct": 72.5
+     },
+     {
+      "areaPct": 13.2,
+      "key": "GR8",
+      "popPct": 14.4
+     },
+     {
+      "areaPct": 28.0,
+      "key": "GR6",
+      "popPct": 13.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4374,
+    "pres2020New": 13.5,
+    "pres2020Old": -7.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 GR11; it draws from the old GR9 (72%), the old GR8 (14%), the old GR6 (13%). Entirely in Grafton County. 2020 presidential margin D+7.1 on the 2016\u20132020 lines \u2192 R+13.5 on the current lines.",
+    "toEra": "current"
+   },
+   "GR12": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "GR12",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13615,
+    "pres2020New": -73.9,
+    "pres2020Old": -73.9,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Grafton County.",
+    "toEra": "current"
+   },
+   "GR13": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "GR13",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4668,
+    "pres2020New": -51.5,
+    "pres2020Old": -49.6,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Grafton County.",
+    "toEra": "current"
+   },
+   "GR14": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "GR13",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Grafton",
+      "popPct": 99.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4751,
+    "pres2020New": -49.3,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 GR14; it draws from the old GR13 (100%). Counties: gained Grafton (100%).",
+    "toEra": "current"
+   },
+   "GR15": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "GR13",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Grafton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4863,
+    "pres2020New": -47.9,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 GR15; it draws from the old GR13 (100%). Counties: gained Grafton (100%).",
+    "toEra": "current"
+   },
+   "GR16": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "GR10",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 94.0
+     },
+     {
+      "county": "Sullivan",
+      "popPct": 6.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Grafton",
+      "popPct": 94.0
+     },
+     {
+      "county": "Sullivan",
+      "popPct": 6.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4465,
+    "pres2020New": -30.7,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 GR16; it draws from the old GR10 (100%). Counties: gained Grafton (94%), Sullivan (6%).",
+    "toEra": "current"
+   },
+   "GR2": {
+    "contributors": [
+     {
+      "areaPct": 57.9,
+      "key": "GR1",
+      "popPct": 69.6
+     },
+     {
+      "areaPct": 42.0,
+      "key": "GR2",
+      "popPct": 30.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 98.6
+     },
+     {
+      "county": "Coos",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3567,
+    "pres2020New": -28.1,
+    "pres2020Old": -8.7,
+    "retainedAreaPct": 42.0,
+    "retainedPopPct": 30.4,
+    "text": "A new footprint: only 30% of its population was in the 2016\u20132020 GR2; it draws from the old GR1 (70%). Spans Grafton, Coos counties. 2020 presidential margin D+8.7 on the 2016\u20132020 lines \u2192 D+28.1 on the current lines.",
+    "toEra": "current"
+   },
+   "GR3": {
+    "contributors": [
+     {
+      "areaPct": 89.1,
+      "key": "GR5",
+      "popPct": 91.3
+     },
+     {
+      "areaPct": 10.9,
+      "key": "GR3",
+      "popPct": 8.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3351,
+    "pres2020New": -16.7,
+    "pres2020Old": -5.0,
+    "retainedAreaPct": 10.9,
+    "retainedPopPct": 8.7,
+    "text": "A new footprint: only 9% of its population was in the 2016\u20132020 GR3; it draws from the old GR5 (91%). Entirely in Grafton County. 2020 presidential margin D+5.0 on the 2016\u20132020 lines \u2192 D+16.7 on the current lines.",
+    "toEra": "current"
+   },
+   "GR4": {
+    "contributors": [
+     {
+      "areaPct": 52.8,
+      "key": "GR6",
+      "popPct": 84.6
+     },
+     {
+      "areaPct": 47.1,
+      "key": "GR5",
+      "popPct": 15.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3309,
+    "pres2020New": -15.9,
+    "pres2020Old": 11.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 GR4; it draws from the old GR6 (85%), the old GR5 (15%). Entirely in Grafton County. 2020 presidential margin R+11.9 on the 2016\u20132020 lines \u2192 D+15.9 on the current lines.",
+    "toEra": "current"
+   },
+   "GR5": {
+    "contributors": [
+     {
+      "areaPct": 23.9,
+      "key": "GR4",
+      "popPct": 65.4
+     },
+     {
+      "areaPct": 75.9,
+      "key": "GR3",
+      "popPct": 34.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 7015,
+    "pres2020New": 10.4,
+    "pres2020Old": -16.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 GR5; it draws from the old GR4 (65%), the old GR3 (34%). Entirely in Grafton County. 2020 presidential margin D+16.0 on the 2016\u20132020 lines \u2192 R+10.4 on the current lines.",
+    "toEra": "current"
+   },
+   "GR6": {
+    "contributors": [
+     {
+      "areaPct": 32.2,
+      "key": "GR6",
+      "popPct": 41.9
+     },
+     {
+      "areaPct": 36.1,
+      "key": "GR3",
+      "popPct": 34.5
+     },
+     {
+      "areaPct": 31.8,
+      "key": "GR11",
+      "popPct": 23.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3572,
+    "pres2020New": -4.6,
+    "pres2020Old": 0.1,
+    "retainedAreaPct": 32.2,
+    "retainedPopPct": 41.9,
+    "text": "A new footprint: only 42% of its population was in the 2016\u20132020 GR6; it draws from the old GR3 (34%), the old GR11 (24%). Entirely in Grafton County. 2020 presidential margin R+0.1 on the 2016\u20132020 lines \u2192 D+4.6 on the current lines.",
+    "toEra": "current"
+   },
+   "GR7": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "GR7",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3343,
+    "pres2020New": -7.3,
+    "pres2020Old": -7.3,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Grafton County.",
+    "toEra": "current"
+   },
+   "GR8": {
+    "contributors": [
+     {
+      "areaPct": 84.4,
+      "key": "GR8",
+      "popPct": 81.7
+     },
+     {
+      "areaPct": 15.5,
+      "key": "GR9",
+      "popPct": 18.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10627,
+    "pres2020New": -24.2,
+    "pres2020Old": -25.5,
+    "retainedAreaPct": 84.4,
+    "retainedPopPct": 81.7,
+    "text": "Kept 82% of its population from the 2016\u20132020 GR8; gained the rest from the old GR9 (18%). Entirely in Grafton County. 2020 presidential margin D+25.5 on the 2016\u20132020 lines \u2192 D+24.2 on the current lines.",
+    "toEra": "current"
+   },
+   "GR9": {
+    "contributors": [
+     {
+      "areaPct": 81.2,
+      "key": "GR11",
+      "popPct": 93.7
+     },
+     {
+      "areaPct": 18.7,
+      "key": "GR6",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4409,
+    "pres2020New": -8.9,
+    "pres2020Old": 7.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 GR9; it draws from the old GR11 (94%), the old GR6 (6%). Entirely in Grafton County. 2020 presidential margin R+7.7 on the 2016\u20132020 lines \u2192 D+8.9 on the current lines.",
+    "toEra": "current"
+   },
+   "HI03": {
+    "contributors": [
+     {
+      "areaPct": 93.0,
+      "key": "HI31",
+      "popPct": 96.1
+     },
+     {
+      "areaPct": 3.5,
+      "key": "HI34",
+      "popPct": 1.7
+     },
+     {
+      "areaPct": 2.1,
+      "key": "HI30",
+      "popPct": 1.3
+     },
+     {
+      "areaPct": 1.2,
+      "key": "HI33",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9732,
+    "pres2020New": -27.7,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI03; it draws from the old HI31 (96%), the old HI34 (2%), the old HI30 (1%) and 1 more. Counties: gained Hillsborough (100%).",
+    "toEra": "current"
+   },
+   "HI04": {
+    "contributors": [
+     {
+      "areaPct": 74.9,
+      "key": "HI29",
+      "popPct": 68.1
+     },
+     {
+      "areaPct": 20.5,
+      "key": "HI30",
+      "popPct": 25.3
+     },
+     {
+      "areaPct": 3.2,
+      "key": "HI31",
+      "popPct": 6.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 11002,
+    "pres2020New": -20.2,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI04; it draws from the old HI29 (68%), the old HI30 (25%), the old HI31 (6%). Counties: gained Hillsborough (100%).",
+    "toEra": "current"
+   },
+   "HI05": {
+    "contributors": [
+     {
+      "areaPct": 87.3,
+      "key": "HI28",
+      "popPct": 83.9
+     },
+     {
+      "areaPct": 10.9,
+      "key": "HI29",
+      "popPct": 15.4
+     },
+     {
+      "areaPct": 0.8,
+      "key": "HI32",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10870,
+    "pres2020New": -16.7,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI05; it draws from the old HI28 (84%), the old HI29 (15%), the old HI32 (1%). Counties: gained Hillsborough (100%).",
+    "toEra": "current"
+   },
+   "HI06": {
+    "contributors": [
+     {
+      "areaPct": 92.0,
+      "key": "HI30",
+      "popPct": 93.3
+     },
+     {
+      "areaPct": 4.2,
+      "key": "HI34",
+      "popPct": 3.7
+     },
+     {
+      "areaPct": 1.1,
+      "key": "HI31",
+      "popPct": 1.8
+     },
+     {
+      "areaPct": 1.8,
+      "key": "HI29",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 7469,
+    "pres2020New": -21.4,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI06; it draws from the old HI30 (93%), the old HI34 (4%), the old HI31 (2%) and 1 more. Counties: gained Hillsborough (100%).",
+    "toEra": "current"
+   },
+   "HI07": {
+    "contributors": [
+     {
+      "areaPct": 95.3,
+      "key": "HI34",
+      "popPct": 94.6
+     },
+     {
+      "areaPct": 1.7,
+      "key": "HI31",
+      "popPct": 3.2
+     },
+     {
+      "areaPct": 1.1,
+      "key": "HI35",
+      "popPct": 1.3
+     },
+     {
+      "areaPct": 0.5,
+      "key": "HI33",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10365,
+    "pres2020New": -18.3,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI07; it draws from the old HI34 (95%), the old HI31 (3%), the old HI35 (1%) and 1 more. Counties: gained Hillsborough (100%).",
+    "toEra": "current"
+   },
+   "HI08": {
+    "contributors": [
+     {
+      "areaPct": 95.9,
+      "key": "HI33",
+      "popPct": 96.6
+     },
+     {
+      "areaPct": 1.7,
+      "key": "HI31",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9831,
+    "pres2020New": -21.1,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI08; it draws from the old HI33 (97%), the old HI31 (2%). Counties: gained Hillsborough (100%).",
+    "toEra": "current"
+   },
+   "HI09": {
+    "contributors": [
+     {
+      "areaPct": 89.1,
+      "key": "HI32",
+      "popPct": 81.4
+     },
+     {
+      "areaPct": 10.1,
+      "key": "HI36",
+      "popPct": 18.0
+     },
+     {
+      "areaPct": 0.6,
+      "key": "HI28",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 12042,
+    "pres2020New": -12.9,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI09; it draws from the old HI32 (81%), the old HI36 (18%), the old HI28 (0%). Counties: gained Hillsborough (100%).",
+    "toEra": "current"
+   },
+   "HI1": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "HI37",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 99.3
+     },
+     {
+      "county": "Rockingham",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14183,
+    "pres2020New": 20.0,
+    "pres2020Old": 6.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI1; it draws from the old HI37 (100%). Spans Hillsborough, Rockingham counties. 2020 presidential margin R+6.5 on the 2016\u20132020 lines \u2192 R+20.0 on the current lines.",
+    "toEra": "current"
+   },
+   "HI10": {
+    "contributors": [
+     {
+      "areaPct": 87.1,
+      "key": "HI36",
+      "popPct": 87.6
+     },
+     {
+      "areaPct": 8.8,
+      "key": "HI35",
+      "popPct": 10.2
+     },
+     {
+      "areaPct": 3.7,
+      "key": "HI32",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8848,
+    "pres2020New": -20.1,
+    "pres2020Old": -30.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI10; it draws from the old HI36 (88%), the old HI35 (10%), the old HI32 (2%). Entirely in Hillsborough County. 2020 presidential margin D+30.1 on the 2016\u20132020 lines \u2192 D+20.1 on the current lines.",
+    "toEra": "current"
+   },
+   "HI11": {
+    "contributors": [
+     {
+      "areaPct": 98.1,
+      "key": "HI35",
+      "popPct": 98.7
+     },
+     {
+      "areaPct": 1.2,
+      "key": "HI34",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10217,
+    "pres2020New": -27.2,
+    "pres2020Old": -17.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI11; it draws from the old HI35 (99%), the old HI34 (1%). Entirely in Hillsborough County. 2020 presidential margin D+17.9 on the 2016\u20132020 lines \u2192 D+27.2 on the current lines.",
+    "toEra": "current"
+   },
+   "HI12": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "HI21",
+      "popPct": 99.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 26873,
+    "pres2020New": -6.4,
+    "pres2020Old": -19.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI12; it draws from the old HI21 (99%). Entirely in Hillsborough County. 2020 presidential margin D+19.2 on the 2016\u20132020 lines \u2192 D+6.4 on the current lines.",
+    "toEra": "current"
+   },
+   "HI13": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "HI37",
+      "popPct": 99.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 98.7
+     },
+     {
+      "county": "Rockingham",
+      "popPct": 1.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25632,
+    "pres2020New": 7.5,
+    "pres2020Old": -3.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI13; it draws from the old HI37 (99%). Spans Hillsborough, Rockingham counties. 2020 presidential margin D+3.5 on the 2016\u20132020 lines \u2192 R+7.5 on the current lines.",
+    "toEra": "current"
+   },
+   "HI14": {
+    "contributors": [
+     {
+      "areaPct": 99.3,
+      "key": "HI20",
+      "popPct": 99.3
+     },
+     {
+      "areaPct": 0.5,
+      "key": "HI21",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8512,
+    "pres2020New": 6.0,
+    "pres2020Old": -12.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI14; it draws from the old HI20 (99%), the old HI21 (1%). Entirely in Hillsborough County. 2020 presidential margin D+12.5 on the 2016\u20132020 lines \u2192 R+6.0 on the current lines.",
+    "toEra": "current"
+   },
+   "HI15": {
+    "contributors": [
+     {
+      "areaPct": 95.6,
+      "key": "HI15",
+      "popPct": 88.8
+     },
+     {
+      "areaPct": 3.6,
+      "key": "HI16",
+      "popPct": 8.4
+     },
+     {
+      "areaPct": 0.4,
+      "key": "HI14",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10236,
+    "pres2020New": -1.3,
+    "pres2020Old": -0.5,
+    "retainedAreaPct": 95.6,
+    "retainedPopPct": 88.8,
+    "text": "Kept 89% of its population from the 2016\u20132020 HI15; gained the rest from the old HI16 (8%), the old HI14 (2%). Entirely in Hillsborough County. 2020 presidential margin D+0.5 on the 2016\u20132020 lines \u2192 D+1.3 on the current lines.",
+    "toEra": "current"
+   },
+   "HI16": {
+    "contributors": [
+     {
+      "areaPct": 94.7,
+      "key": "HI13",
+      "popPct": 91.7
+     },
+     {
+      "areaPct": 4.2,
+      "key": "HI15",
+      "popPct": 3.8
+     },
+     {
+      "areaPct": 0.7,
+      "key": "HI11",
+      "popPct": 3.1
+     },
+     {
+      "areaPct": 0.2,
+      "key": "HI14",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 85.6
+     },
+     {
+      "county": "Rockingham",
+      "popPct": 14.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Rockingham",
+      "popPct": 14.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10532,
+    "pres2020New": -3.7,
+    "pres2020Old": -9.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI16; it draws from the old HI13 (92%), the old HI15 (4%), the old HI11 (3%) and 1 more. Counties: gained Rockingham (14%). 2020 presidential margin D+9.7 on the 2016\u20132020 lines \u2192 D+3.7 on the current lines.",
+    "toEra": "current"
+   },
+   "HI17": {
+    "contributors": [
+     {
+      "areaPct": 97.8,
+      "key": "HI9",
+      "popPct": 97.0
+     },
+     {
+      "areaPct": 1.6,
+      "key": "HI11",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 97.8
+     },
+     {
+      "county": "Merrimack",
+      "popPct": 2.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Merrimack",
+      "popPct": 2.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9539,
+    "pres2020New": -19.1,
+    "pres2020Old": -10.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI17; it draws from the old HI9 (97%), the old HI11 (3%). Counties: gained Merrimack (2%). 2020 presidential margin D+10.5 on the 2016\u20132020 lines \u2192 D+19.1 on the current lines.",
+    "toEra": "current"
+   },
+   "HI18": {
+    "contributors": [
+     {
+      "areaPct": 99.1,
+      "key": "HI19",
+      "popPct": 98.1
+     },
+     {
+      "areaPct": 0.3,
+      "key": "HI18",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 99.5
+     },
+     {
+      "county": "Merrimack",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9703,
+    "pres2020New": -14.4,
+    "pres2020Old": -18.3,
+    "retainedAreaPct": 0.3,
+    "retainedPopPct": 1.4,
+    "text": "A new footprint: only 1% of its population was in the 2016\u20132020 HI18; it draws from the old HI19 (98%). Spans Hillsborough, Merrimack counties. 2020 presidential margin D+18.3 on the 2016\u20132020 lines \u2192 D+14.4 on the current lines.",
+    "toEra": "current"
+   },
+   "HI19": {
+    "contributors": [
+     {
+      "areaPct": 93.4,
+      "key": "HI17",
+      "popPct": 95.8
+     },
+     {
+      "areaPct": 2.2,
+      "key": "HI18",
+      "popPct": 3.7
+     },
+     {
+      "areaPct": 0.7,
+      "key": "HI16",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9131,
+    "pres2020New": -10.5,
+    "pres2020Old": -14.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI19; it draws from the old HI17 (96%), the old HI18 (4%), the old HI16 (0%). Entirely in Hillsborough County. 2020 presidential margin D+14.4 on the 2016\u20132020 lines \u2192 D+10.5 on the current lines.",
+    "toEra": "current"
+   },
+   "HI2": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "HI7",
+      "popPct": 99.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23490,
+    "pres2020New": -3.2,
+    "pres2020Old": 18.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI2; it draws from the old HI7 (99%). Entirely in Hillsborough County. 2020 presidential margin R+18.1 on the 2016\u20132020 lines \u2192 D+3.2 on the current lines.",
+    "toEra": "current"
+   },
+   "HI20": {
+    "contributors": [
+     {
+      "areaPct": 94.9,
+      "key": "HI16",
+      "popPct": 92.0
+     },
+     {
+      "areaPct": 3.9,
+      "key": "HI10",
+      "popPct": 7.0
+     },
+     {
+      "areaPct": 0.4,
+      "key": "HI14",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9318,
+    "pres2020New": -10.9,
+    "pres2020Old": 6.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI20; it draws from the old HI16 (92%), the old HI10 (7%), the old HI14 (1%). Entirely in Hillsborough County. 2020 presidential margin R+6.0 on the 2016\u20132020 lines \u2192 D+10.9 on the current lines.",
+    "toEra": "current"
+   },
+   "HI21": {
+    "contributors": [
+     {
+      "areaPct": 97.3,
+      "key": "HI8",
+      "popPct": 97.0
+     },
+     {
+      "areaPct": 0.9,
+      "key": "HI10",
+      "popPct": 2.0
+     },
+     {
+      "areaPct": 1.3,
+      "key": "HI19",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 83.5
+     },
+     {
+      "county": "Merrimack",
+      "popPct": 16.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Merrimack",
+      "popPct": 16.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9924,
+    "pres2020New": -21.3,
+    "pres2020Old": -6.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI21; it draws from the old HI8 (97%), the old HI10 (2%), the old HI19 (1%). Counties: gained Merrimack (16%). 2020 presidential margin D+6.4 on the 2016\u20132020 lines \u2192 D+21.3 on the current lines.",
+    "toEra": "current"
+   },
+   "HI22": {
+    "contributors": [
+     {
+      "areaPct": 70.5,
+      "key": "HI18",
+      "popPct": 86.4
+     },
+     {
+      "areaPct": 20.6,
+      "key": "HI19",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 5.1,
+      "key": "HI10",
+      "popPct": 4.5
+     },
+     {
+      "areaPct": 3.8,
+      "key": "HI17",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10342,
+    "pres2020New": -18.4,
+    "pres2020Old": -19.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI22; it draws from the old HI18 (86%), the old HI19 (6%), the old HI10 (4%) and 1 more. Entirely in Hillsborough County. 2020 presidential margin D+19.5 on the 2016\u20132020 lines \u2192 D+18.4 on the current lines.",
+    "toEra": "current"
+   },
+   "HI23": {
+    "contributors": [
+     {
+      "areaPct": 96.3,
+      "key": "HI10",
+      "popPct": 97.5
+     },
+     {
+      "areaPct": 3.3,
+      "key": "HI17",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8582,
+    "pres2020New": -29.5,
+    "pres2020Old": -5.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI23; it draws from the old HI10 (98%), the old HI17 (2%). Entirely in Hillsborough County. 2020 presidential margin D+5.8 on the 2016\u20132020 lines \u2192 D+29.5 on the current lines.",
+    "toEra": "current"
+   },
+   "HI24": {
+    "contributors": [
+     {
+      "areaPct": 98.0,
+      "key": "HI11",
+      "popPct": 98.8
+     },
+     {
+      "areaPct": 0.5,
+      "key": "HI12",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8932,
+    "pres2020New": -17.9,
+    "pres2020Old": -41.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI24; it draws from the old HI11 (99%), the old HI12 (1%). Entirely in Hillsborough County. 2020 presidential margin D+41.9 on the 2016\u20132020 lines \u2192 D+17.9 on the current lines.",
+    "toEra": "current"
+   },
+   "HI25": {
+    "contributors": [
+     {
+      "areaPct": 94.9,
+      "key": "HI12",
+      "popPct": 97.7
+     },
+     {
+      "areaPct": 1.2,
+      "key": "HI14",
+      "popPct": 1.1
+     },
+     {
+      "areaPct": 1.1,
+      "key": "HI11",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9612,
+    "pres2020New": -19.0,
+    "pres2020Old": 23.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI25; it draws from the old HI12 (98%), the old HI14 (1%), the old HI11 (1%). Entirely in Hillsborough County. 2020 presidential margin R+23.3 on the 2016\u20132020 lines \u2192 D+19.0 on the current lines.",
+    "toEra": "current"
+   },
+   "HI26": {
+    "contributors": [
+     {
+      "areaPct": 88.7,
+      "key": "HI14",
+      "popPct": 95.5
+     },
+     {
+      "areaPct": 5.0,
+      "key": "HI16",
+      "popPct": 2.2
+     },
+     {
+      "areaPct": 2.6,
+      "key": "HI10",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9602,
+    "pres2020New": -12.5,
+    "pres2020Old": -2.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI26; it draws from the old HI14 (96%), the old HI16 (2%), the old HI10 (2%). Entirely in Hillsborough County. 2020 presidential margin D+2.2 on the 2016\u20132020 lines \u2192 D+12.5 on the current lines.",
+    "toEra": "current"
+   },
+   "HI27": {
+    "contributors": [
+     {
+      "areaPct": 50.5,
+      "key": "HI2",
+      "popPct": 53.9
+     },
+     {
+      "areaPct": 49.1,
+      "key": "HI4",
+      "popPct": 45.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3516,
+    "pres2020New": 6.5,
+    "pres2020Old": -13.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI27; it draws from the old HI2 (54%), the old HI4 (46%). Entirely in Hillsborough County. 2020 presidential margin D+13.9 on the 2016\u20132020 lines \u2192 R+6.5 on the current lines.",
+    "toEra": "current"
+   },
+   "HI28": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "HI2",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9092,
+    "pres2020New": 18.2,
+    "pres2020Old": -16.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI28; it draws from the old HI2 (100%). Entirely in Hillsborough County. 2020 presidential margin D+16.3 on the 2016\u20132020 lines \u2192 R+18.2 on the current lines.",
+    "toEra": "current"
+   },
+   "HI29": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "HI6",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 18577,
+    "pres2020New": 0.8,
+    "pres2020Old": -19.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI29; it draws from the old HI6 (100%). Entirely in Hillsborough County. 2020 presidential margin D+19.3 on the 2016\u20132020 lines \u2192 R+0.8 on the current lines.",
+    "toEra": "current"
+   },
+   "HI30": {
+    "contributors": [
+     {
+      "areaPct": 88.4,
+      "key": "HI1",
+      "popPct": 85.6
+     },
+     {
+      "areaPct": 11.4,
+      "key": "HI3",
+      "popPct": 14.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 98.5
+     },
+     {
+      "county": "Sullivan",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10343,
+    "pres2020New": 6.1,
+    "pres2020Old": -21.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI30; it draws from the old HI1 (86%), the old HI3 (14%). Spans Hillsborough, Sullivan counties. 2020 presidential margin D+21.5 on the 2016\u20132020 lines \u2192 R+6.1 on the current lines.",
+    "toEra": "current"
+   },
+   "HI31": {
+    "contributors": [
+     {
+      "areaPct": 99.3,
+      "key": "HI3",
+      "popPct": 99.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 99.4
+     },
+     {
+      "county": "Cheshire",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3472,
+    "pres2020New": -22.7,
+    "pres2020Old": -28.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI31; it draws from the old HI3 (100%). Spans Hillsborough, Cheshire counties. 2020 presidential margin D+28.1 on the 2016\u20132020 lines \u2192 D+22.7 on the current lines.",
+    "toEra": "current"
+   },
+   "HI32": {
+    "contributors": [
+     {
+      "areaPct": 68.3,
+      "key": "HI25",
+      "popPct": 62.8
+     },
+     {
+      "areaPct": 31.7,
+      "key": "HI4",
+      "popPct": 37.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10476,
+    "pres2020New": 12.3,
+    "pres2020Old": -11.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI32; it draws from the old HI25 (63%), the old HI4 (37%). Entirely in Hillsborough County. 2020 presidential margin D+11.5 on the 2016\u20132020 lines \u2192 R+12.3 on the current lines.",
+    "toEra": "current"
+   },
+   "HI33": {
+    "contributors": [
+     {
+      "areaPct": 70.8,
+      "key": "HI24",
+      "popPct": 94.6
+     },
+     {
+      "areaPct": 29.0,
+      "key": "HI25",
+      "popPct": 5.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 6783,
+    "pres2020New": -40.2,
+    "pres2020Old": -21.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI33; it draws from the old HI24 (95%), the old HI25 (5%). Entirely in Hillsborough County. 2020 presidential margin D+21.1 on the 2016\u20132020 lines \u2192 D+40.2 on the current lines.",
+    "toEra": "current"
+   },
+   "HI34": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "HI22",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 11753,
+    "pres2020New": -19.5,
+    "pres2020Old": -18.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI34; it draws from the old HI22 (100%). Entirely in Hillsborough County. 2020 presidential margin D+18.0 on the 2016\u20132020 lines \u2192 D+19.5 on the current lines.",
+    "toEra": "current"
+   },
+   "HI35": {
+    "contributors": [
+     {
+      "areaPct": 99.0,
+      "key": "HI27",
+      "popPct": 94.7
+     },
+     {
+      "areaPct": 0.9,
+      "key": "HI28",
+      "popPct": 5.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8813,
+    "pres2020New": -14.0,
+    "pres2020Old": -27.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI35; it draws from the old HI27 (95%), the old HI28 (5%). Entirely in Hillsborough County. 2020 presidential margin D+27.3 on the 2016\u20132020 lines \u2192 D+14.0 on the current lines.",
+    "toEra": "current"
+   },
+   "HI36": {
+    "contributors": [
+     {
+      "areaPct": 86.5,
+      "key": "HI26",
+      "popPct": 78.2
+     },
+     {
+      "areaPct": 13.5,
+      "key": "HI4",
+      "popPct": 21.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9061,
+    "pres2020New": -1.3,
+    "pres2020Old": -19.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI36; it draws from the old HI26 (78%), the old HI4 (22%). Entirely in Hillsborough County. 2020 presidential margin D+19.5 on the 2016\u20132020 lines \u2192 D+1.3 on the current lines.",
+    "toEra": "current"
+   },
+   "HI42": {
+    "contributors": [
+     {
+      "areaPct": 66.5,
+      "key": "HI5",
+      "popPct": 83.8
+     },
+     {
+      "areaPct": 33.5,
+      "key": "HI4",
+      "popPct": 16.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10377,
+    "pres2020New": -1.3,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI42; it draws from the old HI5 (84%), the old HI4 (16%). Counties: gained Hillsborough (100%).",
+    "toEra": "current"
+   },
+   "HI43": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "HI23",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16131,
+    "pres2020New": -5.8,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HI43; it draws from the old HI23 (100%). Counties: gained Hillsborough (100%).",
+    "toEra": "current"
+   },
+   "ME1": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "ME8",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3966,
+    "pres2020New": 6.6,
+    "pres2020Old": 4.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME1; it draws from the old ME8 (100%). Entirely in Merrimack County. 2020 presidential margin R+4.4 on the 2016\u20132020 lines \u2192 R+6.6 on the current lines.",
+    "toEra": "current"
+   },
+   "ME10": {
+    "contributors": [
+     {
+      "areaPct": 54.0,
+      "key": "ME24",
+      "popPct": 83.0
+     },
+     {
+      "areaPct": 45.8,
+      "key": "ME23",
+      "popPct": 16.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 98.0
+     },
+     {
+      "county": "Hillsborough",
+      "popPct": 2.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 2.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17925,
+    "pres2020New": 5.4,
+    "pres2020Old": -38.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME10; it draws from the old ME24 (83%), the old ME23 (17%). Counties: gained Hillsborough (2%). 2020 presidential margin D+38.3 on the 2016\u20132020 lines \u2192 R+5.4 on the current lines.",
+    "toEra": "current"
+   },
+   "ME11": {
+    "contributors": [
+     {
+      "areaPct": 99.2,
+      "key": "ME22",
+      "popPct": 99.2
+     },
+     {
+      "areaPct": 0.7,
+      "key": "ME20",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4733,
+    "pres2020New": 7.8,
+    "pres2020Old": -22.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME11; it draws from the old ME22 (99%), the old ME20 (1%). Entirely in Merrimack County. 2020 presidential margin D+22.0 on the 2016\u20132020 lines \u2192 R+7.8 on the current lines.",
+    "toEra": "current"
+   },
+   "ME12": {
+    "contributors": [
+     {
+      "areaPct": 99.0,
+      "key": "ME20",
+      "popPct": 99.1
+     },
+     {
+      "areaPct": 0.5,
+      "key": "ME17",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 7157,
+    "pres2020New": -3.2,
+    "pres2020Old": -19.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME12; it draws from the old ME20 (99%), the old ME17 (1%). Entirely in Merrimack County. 2020 presidential margin D+19.0 on the 2016\u20132020 lines \u2192 D+3.2 on the current lines.",
+    "toEra": "current"
+   },
+   "ME13": {
+    "contributors": [
+     {
+      "areaPct": 53.2,
+      "key": "ME21",
+      "popPct": 60.5
+     },
+     {
+      "areaPct": 46.7,
+      "key": "ME20",
+      "popPct": 39.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 6740,
+    "pres2020New": 15.2,
+    "pres2020Old": -32.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME13; it draws from the old ME21 (60%), the old ME20 (40%). Entirely in Merrimack County. 2020 presidential margin D+32.1 on the 2016\u20132020 lines \u2192 R+15.2 on the current lines.",
+    "toEra": "current"
+   },
+   "ME14": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "ME21",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4834,
+    "pres2020New": 17.8,
+    "pres2020Old": -42.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME14; it draws from the old ME21 (100%). Entirely in Merrimack County. 2020 presidential margin D+42.8 on the 2016\u20132020 lines \u2192 R+17.8 on the current lines.",
+    "toEra": "current"
+   },
+   "ME15": {
+    "contributors": [
+     {
+      "areaPct": 97.0,
+      "key": "ME11",
+      "popPct": 95.7
+     },
+     {
+      "areaPct": 1.9,
+      "key": "ME12",
+      "popPct": 3.7
+     },
+     {
+      "areaPct": 0.9,
+      "key": "ME13",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4944,
+    "pres2020New": -21.9,
+    "pres2020Old": -30.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME15; it draws from the old ME11 (96%), the old ME12 (4%), the old ME13 (1%). Entirely in Merrimack County. 2020 presidential margin D+30.6 on the 2016\u20132020 lines \u2192 D+21.9 on the current lines.",
+    "toEra": "current"
+   },
+   "ME16": {
+    "contributors": [
+     {
+      "areaPct": 43.0,
+      "key": "ME12",
+      "popPct": 67.1
+     },
+     {
+      "areaPct": 54.9,
+      "key": "ME13",
+      "popPct": 31.4
+     },
+     {
+      "areaPct": 2.0,
+      "key": "ME11",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 5797,
+    "pres2020New": -22.5,
+    "pres2020Old": -39.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME16; it draws from the old ME12 (67%), the old ME13 (31%), the old ME11 (1%). Entirely in Merrimack County. 2020 presidential margin D+39.0 on the 2016\u20132020 lines \u2192 D+22.5 on the current lines.",
+    "toEra": "current"
+   },
+   "ME17": {
+    "contributors": [
+     {
+      "areaPct": 93.7,
+      "key": "ME13",
+      "popPct": 91.6
+     },
+     {
+      "areaPct": 2.5,
+      "key": "ME12",
+      "popPct": 6.6
+     },
+     {
+      "areaPct": 3.6,
+      "key": "ME19",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 994,
+    "pres2020New": -30.6,
+    "pres2020Old": -21.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME17; it draws from the old ME13 (92%), the old ME12 (7%), the old ME19 (2%). Entirely in Merrimack County. 2020 presidential margin D+21.5 on the 2016\u20132020 lines \u2192 D+30.6 on the current lines.",
+    "toEra": "current"
+   },
+   "ME18": {
+    "contributors": [
+     {
+      "areaPct": 87.7,
+      "key": "ME14",
+      "popPct": 96.3
+     },
+     {
+      "areaPct": 6.8,
+      "key": "ME13",
+      "popPct": 1.9
+     },
+     {
+      "areaPct": 4.8,
+      "key": "ME10",
+      "popPct": 1.1
+     },
+     {
+      "areaPct": 0.7,
+      "key": "ME15",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3758,
+    "pres2020New": -42.6,
+    "pres2020Old": -32.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME18; it draws from the old ME14 (96%), the old ME13 (2%), the old ME10 (1%) and 1 more. Entirely in Merrimack County. 2020 presidential margin D+32.5 on the 2016\u20132020 lines \u2192 D+42.6 on the current lines.",
+    "toEra": "current"
+   },
+   "ME19": {
+    "contributors": [
+     {
+      "areaPct": 67.3,
+      "key": "ME10",
+      "popPct": 55.4
+     },
+     {
+      "areaPct": 28.5,
+      "key": "ME13",
+      "popPct": 32.0
+     },
+     {
+      "areaPct": 3.9,
+      "key": "ME12",
+      "popPct": 12.0
+     },
+     {
+      "areaPct": 0.2,
+      "key": "ME16",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 6829,
+    "pres2020New": -43.0,
+    "pres2020Old": -26.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME19; it draws from the old ME10 (55%), the old ME13 (32%), the old ME12 (12%) and 1 more. Entirely in Merrimack County. 2020 presidential margin D+26.0 on the 2016\u20132020 lines \u2192 D+43.0 on the current lines.",
+    "toEra": "current"
+   },
+   "ME2": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "ME3",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 96.0
+     },
+     {
+      "county": "Belknap",
+      "popPct": 4.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Belknap",
+      "popPct": 4.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4888,
+    "pres2020New": 11.9,
+    "pres2020Old": 17.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME2; it draws from the old ME3 (100%). Counties: gained Belknap (4%). 2020 presidential margin R+17.8 on the 2016\u20132020 lines \u2192 R+11.9 on the current lines.",
+    "toEra": "current"
+   },
+   "ME20": {
+    "contributors": [
+     {
+      "areaPct": 94.0,
+      "key": "ME15",
+      "popPct": 97.6
+     },
+     {
+      "areaPct": 3.7,
+      "key": "ME10",
+      "popPct": 1.3
+     },
+     {
+      "areaPct": 1.2,
+      "key": "ME16",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3958,
+    "pres2020New": -30.8,
+    "pres2020Old": 0.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME20; it draws from the old ME15 (98%), the old ME10 (1%), the old ME16 (1%). Entirely in Merrimack County. 2020 presidential margin R+0.5 on the 2016\u20132020 lines \u2192 D+30.8 on the current lines.",
+    "toEra": "current"
+   },
+   "ME21": {
+    "contributors": [
+     {
+      "areaPct": 87.6,
+      "key": "ME16",
+      "popPct": 95.7
+     },
+     {
+      "areaPct": 12.1,
+      "key": "ME10",
+      "popPct": 3.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4239,
+    "pres2020New": -39.4,
+    "pres2020Old": 18.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME21; it draws from the old ME16 (96%), the old ME10 (4%). Entirely in Merrimack County. 2020 presidential margin R+18.8 on the 2016\u20132020 lines \u2192 D+39.4 on the current lines.",
+    "toEra": "current"
+   },
+   "ME22": {
+    "contributors": [
+     {
+      "areaPct": 88.4,
+      "key": "ME17",
+      "popPct": 82.0
+     },
+     {
+      "areaPct": 1.8,
+      "key": "ME18",
+      "popPct": 11.0
+     },
+     {
+      "areaPct": 0.8,
+      "key": "ME15",
+      "popPct": 2.4
+     },
+     {
+      "areaPct": 5.5,
+      "key": "ME19",
+      "popPct": 2.1
+     },
+     {
+      "areaPct": 3.2,
+      "key": "ME20",
+      "popPct": 1.7
+     },
+     {
+      "areaPct": 0.2,
+      "key": "ME14",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 5126,
+    "pres2020New": -22.7,
+    "pres2020Old": 7.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME22; it draws from the old ME17 (82%), the old ME18 (11%), the old ME15 (2%) and 3 more. Entirely in Merrimack County. 2020 presidential margin R+7.8 on the 2016\u20132020 lines \u2192 D+22.7 on the current lines.",
+    "toEra": "current"
+   },
+   "ME23": {
+    "contributors": [
+     {
+      "areaPct": 95.9,
+      "key": "ME18",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3534,
+    "pres2020New": -32.5,
+    "pres2020Old": -11.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME23; it draws from the old ME18 (100%). Entirely in Merrimack County. 2020 presidential margin D+11.2 on the 2016\u20132020 lines \u2192 D+32.5 on the current lines.",
+    "toEra": "current"
+   },
+   "ME24": {
+    "contributors": [
+     {
+      "areaPct": 99.0,
+      "key": "ME19",
+      "popPct": 93.2
+     },
+     {
+      "areaPct": 0.3,
+      "key": "ME18",
+      "popPct": 4.7
+     },
+     {
+      "areaPct": 0.2,
+      "key": "ME14",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Hillsborough",
+      "popPct": 2.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 4806,
+    "pres2020New": -26.4,
+    "pres2020Old": 3.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME24; it draws from the old ME19 (93%), the old ME18 (5%), the old ME14 (1%). Counties: lost Hillsborough. 2020 presidential margin R+3.8 on the 2016\u20132020 lines \u2192 D+26.4 on the current lines.",
+    "toEra": "current"
+   },
+   "ME3": {
+    "contributors": [
+     {
+      "areaPct": 80.1,
+      "key": "ME2",
+      "popPct": 64.4
+     },
+     {
+      "areaPct": 19.7,
+      "key": "ME3",
+      "popPct": 35.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Belknap",
+      "popPct": 2.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8665,
+    "pres2020New": 11.6,
+    "pres2020Old": 9.6,
+    "retainedAreaPct": 19.7,
+    "retainedPopPct": 35.6,
+    "text": "A new footprint: only 36% of its population was in the 2016\u20132020 ME3; it draws from the old ME2 (64%). Counties: lost Belknap. 2020 presidential margin R+9.6 on the 2016\u20132020 lines \u2192 R+11.6 on the current lines.",
+    "toEra": "current"
+   },
+   "ME4": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "ME9",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 99.4
+     },
+     {
+      "county": "Belknap",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 7987,
+    "pres2020New": 6.8,
+    "pres2020Old": -17.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME4; it draws from the old ME9 (100%). Spans Merrimack, Belknap counties. 2020 presidential margin D+17.2 on the 2016\u20132020 lines \u2192 R+6.8 on the current lines.",
+    "toEra": "current"
+   },
+   "ME5": {
+    "contributors": [
+     {
+      "areaPct": 68.1,
+      "key": "ME1",
+      "popPct": 63.3
+     },
+     {
+      "areaPct": 16.5,
+      "key": "ME7",
+      "popPct": 23.8
+     },
+     {
+      "areaPct": 15.3,
+      "key": "ME2",
+      "popPct": 12.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 99.1
+     },
+     {
+      "county": "Grafton",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8024,
+    "pres2020New": 8.7,
+    "pres2020Old": -24.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME5; it draws from the old ME1 (63%), the old ME7 (24%), the old ME2 (13%). Spans Merrimack, Grafton counties. 2020 presidential margin D+24.8 on the 2016\u20132020 lines \u2192 R+8.7 on the current lines.",
+    "toEra": "current"
+   },
+   "ME6": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "ME4",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 99.2
+     },
+     {
+      "county": "Sullivan",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3385,
+    "pres2020New": -17.2,
+    "pres2020Old": -15.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME6; it draws from the old ME4 (100%). Spans Merrimack, Sullivan counties. 2020 presidential margin D+15.3 on the 2016\u20132020 lines \u2192 D+17.2 on the current lines.",
+    "toEra": "current"
+   },
+   "ME7": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "ME5",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 98.5
+     },
+     {
+      "county": "Sullivan",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 6572,
+    "pres2020New": -24.8,
+    "pres2020Old": -2.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME7; it draws from the old ME5 (100%). Spans Merrimack, Sullivan counties. 2020 presidential margin D+2.7 on the 2016\u20132020 lines \u2192 D+24.8 on the current lines.",
+    "toEra": "current"
+   },
+   "ME8": {
+    "contributors": [
+     {
+      "areaPct": 59.3,
+      "key": "ME6",
+      "popPct": 72.8
+     },
+     {
+      "areaPct": 40.7,
+      "key": "ME7",
+      "popPct": 27.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10784,
+    "pres2020New": -13.8,
+    "pres2020Old": 6.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME8; it draws from the old ME6 (73%), the old ME7 (27%). Entirely in Merrimack County. 2020 presidential margin R+6.6 on the 2016\u20132020 lines \u2192 D+13.8 on the current lines.",
+    "toEra": "current"
+   },
+   "ME9": {
+    "contributors": [
+     {
+      "areaPct": 38.6,
+      "key": "ME23",
+      "popPct": 58.0
+     },
+     {
+      "areaPct": 61.2,
+      "key": "ME10",
+      "popPct": 41.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14130,
+    "pres2020New": -24.5,
+    "pres2020Old": 6.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ME9; it draws from the old ME23 (58%), the old ME10 (42%). Entirely in Merrimack County. 2020 presidential margin R+6.8 on the 2016\u20132020 lines \u2192 D+24.5 on the current lines.",
+    "toEra": "current"
+   },
+   "RO1": {
+    "contributors": [
+     {
+      "areaPct": 61.5,
+      "key": "RO2",
+      "popPct": 53.1
+     },
+     {
+      "areaPct": 38.4,
+      "key": "RO1",
+      "popPct": 46.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9856,
+    "pres2020New": 0.4,
+    "pres2020Old": 5.4,
+    "retainedAreaPct": 38.4,
+    "retainedPopPct": 46.9,
+    "text": "A new footprint: only 47% of its population was in the 2016\u20132020 RO1; it draws from the old RO2 (53%). Entirely in Rockingham County. 2020 presidential margin R+5.4 on the 2016\u20132020 lines \u2192 R+0.4 on the current lines.",
+    "toEra": "current"
+   },
+   "RO10": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "RO17",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 11199,
+    "pres2020New": -30.8,
+    "pres2020Old": 17.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO10; it draws from the old RO17 (100%). Entirely in Rockingham County. 2020 presidential margin R+17.1 on the 2016\u20132020 lines \u2192 D+30.8 on the current lines.",
+    "toEra": "current"
+   },
+   "RO11": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "RO18",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16072,
+    "pres2020New": -34.0,
+    "pres2020Old": -4.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO11; it draws from the old RO18 (100%). Entirely in Rockingham County. 2020 presidential margin D+4.5 on the 2016\u20132020 lines \u2192 D+34.0 on the current lines.",
+    "toEra": "current"
+   },
+   "RO12": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "RO19",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 7654,
+    "pres2020New": -21.8,
+    "pres2020Old": 21.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO12; it draws from the old RO19 (100%). Entirely in Rockingham County. 2020 presidential margin R+21.5 on the 2016\u20132020 lines \u2192 D+21.8 on the current lines.",
+    "toEra": "current"
+   },
+   "RO13": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "RO6",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 34317,
+    "pres2020New": 6.7,
+    "pres2020Old": 13.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO13; it draws from the old RO6 (100%). Entirely in Rockingham County. 2020 presidential margin R+13.9 on the 2016\u20132020 lines \u2192 R+6.7 on the current lines.",
+    "toEra": "current"
+   },
+   "RO14": {
+    "contributors": [
+     {
+      "areaPct": 67.4,
+      "key": "RO13",
+      "popPct": 71.4
+     },
+     {
+      "areaPct": 32.3,
+      "key": "RO16",
+      "popPct": 28.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8686,
+    "pres2020New": 11.9,
+    "pres2020Old": 10.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO14; it draws from the old RO13 (71%), the old RO16 (28%). Entirely in Rockingham County. 2020 presidential margin R+10.3 on the 2016\u20132020 lines \u2192 R+11.9 on the current lines.",
+    "toEra": "current"
+   },
+   "RO15": {
+    "contributors": [
+     {
+      "areaPct": 98.6,
+      "key": "RO13",
+      "popPct": 99.0
+     },
+     {
+      "areaPct": 1.0,
+      "key": "RO14",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9087,
+    "pres2020New": 13.7,
+    "pres2020Old": 13.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO15; it draws from the old RO13 (99%), the old RO14 (1%). Entirely in Rockingham County. 2020 presidential margin R+13.4 on the 2016\u20132020 lines \u2192 R+13.7 on the current lines.",
+    "toEra": "current"
+   },
+   "RO16": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "RO5",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 98.4
+     },
+     {
+      "county": "Hillsborough",
+      "popPct": 1.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25899,
+    "pres2020New": 1.1,
+    "pres2020Old": 1.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO16; it draws from the old RO5 (100%). Spans Rockingham, Hillsborough counties. 2020 presidential margin R+1.4 on the 2016\u20132020 lines \u2192 R+1.1 on the current lines.",
+    "toEra": "current"
+   },
+   "RO17": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "RO7",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15744,
+    "pres2020New": 6.4,
+    "pres2020Old": -30.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO17; it draws from the old RO7 (100%). Entirely in Rockingham County. 2020 presidential margin D+30.8 on the 2016\u20132020 lines \u2192 R+6.4 on the current lines.",
+    "toEra": "current"
+   },
+   "RO18": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "RO14",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 7007,
+    "pres2020New": 10.7,
+    "pres2020Old": -34.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO18; it draws from the old RO14 (100%). Entirely in Rockingham County. 2020 presidential margin D+34.0 on the 2016\u20132020 lines \u2192 R+10.7 on the current lines.",
+    "toEra": "current"
+   },
+   "RO19": {
+    "contributors": [
+     {
+      "areaPct": 51.1,
+      "key": "RO20",
+      "popPct": 53.5
+     },
+     {
+      "areaPct": 48.7,
+      "key": "RO16",
+      "popPct": 46.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4488,
+    "pres2020New": -1.8,
+    "pres2020Old": -21.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO19; it draws from the old RO20 (54%), the old RO16 (46%). Entirely in Rockingham County. 2020 presidential margin D+21.7 on the 2016\u20132020 lines \u2192 D+1.8 on the current lines.",
+    "toEra": "current"
+   },
+   "RO2": {
+    "contributors": [
+     {
+      "areaPct": 74.1,
+      "key": "RO2",
+      "popPct": 59.9
+     },
+     {
+      "areaPct": 25.8,
+      "key": "RO4",
+      "popPct": 40.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 98.5
+     },
+     {
+      "county": "Merrimack",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14815,
+    "pres2020New": 17.5,
+    "pres2020Old": 10.2,
+    "retainedAreaPct": 74.1,
+    "retainedPopPct": 59.9,
+    "text": "Kept 60% of its population from the 2016\u20132020 RO2; gained the rest from the old RO4 (40%). Spans Rockingham, Merrimack counties. 2020 presidential margin R+10.2 on the 2016\u20132020 lines \u2192 R+17.5 on the current lines.",
+    "toEra": "current"
+   },
+   "RO20": {
+    "contributors": [
+     {
+      "areaPct": 37.1,
+      "key": "RO14",
+      "popPct": 58.0
+     },
+     {
+      "areaPct": 34.7,
+      "key": "RO15",
+      "popPct": 35.4
+     },
+     {
+      "areaPct": 28.2,
+      "key": "RO16",
+      "popPct": 6.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13509,
+    "pres2020New": 10.7,
+    "pres2020Old": 9.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO20; it draws from the old RO14 (58%), the old RO15 (35%), the old RO16 (7%). Entirely in Rockingham County. 2020 presidential margin R+9.9 on the 2016\u20132020 lines \u2192 R+10.7 on the current lines.",
+    "toEra": "current"
+   },
+   "RO21": {
+    "contributors": [
+     {
+      "areaPct": 13.5,
+      "key": "RO25",
+      "popPct": 82.6
+     },
+     {
+      "areaPct": 86.1,
+      "key": "RO23",
+      "popPct": 15.7
+     },
+     {
+      "areaPct": 0.1,
+      "key": "RO26",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 5181,
+    "pres2020New": -35.7,
+    "pres2020Old": -8.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO21; it draws from the old RO25 (83%), the old RO23 (16%), the old RO26 (1%). Entirely in Rockingham County. 2020 presidential margin D+8.2 on the 2016\u20132020 lines \u2192 D+35.7 on the current lines.",
+    "toEra": "current"
+   },
+   "RO22": {
+    "contributors": [
+     {
+      "areaPct": 50.5,
+      "key": "RO29",
+      "popPct": 77.4
+     },
+     {
+      "areaPct": 47.7,
+      "key": "RO24",
+      "popPct": 18.5
+     },
+     {
+      "areaPct": 0.5,
+      "key": "RO26",
+      "popPct": 2.6
+     },
+     {
+      "areaPct": 1.2,
+      "key": "RO28",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 5239,
+    "pres2020New": -51.2,
+    "pres2020Old": -15.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO22; it draws from the old RO29 (77%), the old RO24 (18%), the old RO26 (3%) and 1 more. Entirely in Rockingham County. 2020 presidential margin D+15.3 on the 2016\u20132020 lines \u2192 D+51.2 on the current lines.",
+    "toEra": "current"
+   },
+   "RO23": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "RO22",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4538,
+    "pres2020New": -15.3,
+    "pres2020Old": -15.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO23; it draws from the old RO22 (100%). Entirely in Rockingham County. 2020 presidential margin D+15.3 on the 2016\u20132020 lines \u2192 D+15.3 on the current lines.",
+    "toEra": "current"
+   },
+   "RO24": {
+    "contributors": [
+     {
+      "areaPct": 50.0,
+      "key": "RO24",
+      "popPct": 58.0
+     },
+     {
+      "areaPct": 49.7,
+      "key": "RO23",
+      "popPct": 42.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9649,
+    "pres2020New": -23.5,
+    "pres2020Old": -28.2,
+    "retainedAreaPct": 50.0,
+    "retainedPopPct": 58.0,
+    "text": "Kept 58% of its population from the 2016\u20132020 RO24; gained the rest from the old RO23 (42%). Entirely in Rockingham County. 2020 presidential margin D+28.2 on the 2016\u20132020 lines \u2192 D+23.5 on the current lines.",
+    "toEra": "current"
+   },
+   "RO25": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "RO8",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30089,
+    "pres2020New": 13.1,
+    "pres2020Old": -43.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO25; it draws from the old RO8 (100%). Entirely in Rockingham County. 2020 presidential margin D+43.6 on the 2016\u20132020 lines \u2192 R+13.1 on the current lines.",
+    "toEra": "current"
+   },
+   "RO26": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "RO27",
+      "popPct": 97.5
+     },
+     {
+      "areaPct": 1.1,
+      "key": "RO28",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4618,
+    "pres2020New": -38.5,
+    "pres2020Old": -57.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO26; it draws from the old RO27 (98%), the old RO28 (2%). Entirely in Rockingham County. 2020 presidential margin D+57.4 on the 2016\u20132020 lines \u2192 D+38.5 on the current lines.",
+    "toEra": "current"
+   },
+   "RO27": {
+    "contributors": [
+     {
+      "areaPct": 98.5,
+      "key": "RO28",
+      "popPct": 99.0
+     },
+     {
+      "areaPct": 0.9,
+      "key": "RO27",
+      "popPct": 0.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4224,
+    "pres2020New": -34.4,
+    "pres2020Old": -38.7,
+    "retainedAreaPct": 0.9,
+    "retainedPopPct": 0.3,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO27; it draws from the old RO28 (99%). Entirely in Rockingham County. 2020 presidential margin D+38.7 on the 2016\u20132020 lines \u2192 D+34.4 on the current lines.",
+    "toEra": "current"
+   },
+   "RO28": {
+    "contributors": [
+     {
+      "areaPct": 95.6,
+      "key": "RO26",
+      "popPct": 98.4
+     },
+     {
+      "areaPct": 0.8,
+      "key": "RO29",
+      "popPct": 0.7
+     },
+     {
+      "areaPct": 1.3,
+      "key": "RO28",
+      "popPct": 0.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4458,
+    "pres2020New": -57.3,
+    "pres2020Old": -34.6,
+    "retainedAreaPct": 1.3,
+    "retainedPopPct": 0.4,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO28; it draws from the old RO26 (98%), the old RO29 (1%). Entirely in Rockingham County. 2020 presidential margin D+34.6 on the 2016\u20132020 lines \u2192 D+57.3 on the current lines.",
+    "toEra": "current"
+   },
+   "RO29": {
+    "contributors": [
+     {
+      "areaPct": 99.3,
+      "key": "RO21",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16225,
+    "pres2020New": -8.2,
+    "pres2020Old": -55.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO29; it draws from the old RO21 (100%). Entirely in Rockingham County. 2020 presidential margin D+55.4 on the 2016\u20132020 lines \u2192 D+8.2 on the current lines.",
+    "toEra": "current"
+   },
+   "RO3": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "RO4",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 5245,
+    "pres2020New": 14.0,
+    "pres2020Old": 19.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO3; it draws from the old RO4 (100%). Entirely in Rockingham County. 2020 presidential margin R+19.0 on the 2016\u20132020 lines \u2192 R+14.0 on the current lines.",
+    "toEra": "current"
+   },
+   "RO30": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "RO20",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8392,
+    "pres2020New": 13.4,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO30; it draws from the old RO20 (100%). Counties: gained Rockingham (100%).",
+    "toEra": "current"
+   },
+   "RO4": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "RO3",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10684,
+    "pres2020New": 19.0,
+    "pres2020Old": 15.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO4; it draws from the old RO3 (100%). Entirely in Rockingham County. 2020 presidential margin R+15.6 on the 2016\u20132020 lines \u2192 R+19.0 on the current lines.",
+    "toEra": "current"
+   },
+   "RO5": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "RO9",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 7125,
+    "pres2020New": 6.0,
+    "pres2020Old": 1.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO5; it draws from the old RO9 (100%). Entirely in Rockingham County. 2020 presidential margin R+1.1 on the 2016\u20132020 lines \u2192 R+6.0 on the current lines.",
+    "toEra": "current"
+   },
+   "RO6": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "RO11",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4490,
+    "pres2020New": -4.5,
+    "pres2020Old": 6.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO6; it draws from the old RO11 (100%). Entirely in Rockingham County. 2020 presidential margin R+6.7 on the 2016\u20132020 lines \u2192 D+4.5 on the current lines.",
+    "toEra": "current"
+   },
+   "RO7": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "RO10",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4729,
+    "pres2020New": 17.1,
+    "pres2020Old": 6.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO7; it draws from the old RO10 (100%). Entirely in Rockingham County. 2020 presidential margin R+6.4 on the 2016\u20132020 lines \u2192 R+17.1 on the current lines.",
+    "toEra": "current"
+   },
+   "RO8": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "RO12",
+      "popPct": 99.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4409,
+    "pres2020New": 21.5,
+    "pres2020Old": 13.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO8; it draws from the old RO12 (100%). Entirely in Rockingham County. 2020 presidential margin R+13.1 on the 2016\u20132020 lines \u2192 R+21.5 on the current lines.",
+    "toEra": "current"
+   },
+   "RO9": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "RO4",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 6548,
+    "pres2020New": 16.1,
+    "pres2020Old": 6.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 RO9; it draws from the old RO4 (100%). Entirely in Rockingham County. 2020 presidential margin R+6.0 on the 2016\u20132020 lines \u2192 R+16.1 on the current lines.",
+    "toEra": "current"
+   },
+   "ST1": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "ST2",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 6722,
+    "pres2020New": 18.5,
+    "pres2020Old": 20.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ST1; it draws from the old ST2 (100%). Entirely in Strafford County. 2020 presidential margin R+20.3 on the 2016\u20132020 lines \u2192 R+18.5 on the current lines.",
+    "toEra": "current"
+   },
+   "ST10": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "ST6",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 94.4
+     },
+     {
+      "county": "Rockingham",
+      "popPct": 5.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Rockingham",
+      "popPct": 5.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15490,
+    "pres2020New": -54.5,
+    "pres2020Old": 4.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ST10; it draws from the old ST6 (100%). Counties: gained Rockingham (6%). 2020 presidential margin R+4.2 on the 2016\u20132020 lines \u2192 D+54.5 on the current lines.",
+    "toEra": "current"
+   },
+   "ST11": {
+    "contributors": [
+     {
+      "areaPct": 12.2,
+      "key": "ST16",
+      "popPct": 40.4
+     },
+     {
+      "areaPct": 53.9,
+      "key": "ST5",
+      "popPct": 39.3
+     },
+     {
+      "areaPct": 32.6,
+      "key": "ST6",
+      "popPct": 16.7
+     },
+     {
+      "areaPct": 1.3,
+      "key": "ST15",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 98.4
+     },
+     {
+      "county": "Rockingham",
+      "popPct": 1.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 11513,
+    "pres2020New": -30.1,
+    "pres2020Old": -4.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ST11; it draws from the old ST16 (40%), the old ST5 (39%), the old ST6 (17%) and 1 more. Spans Strafford, Rockingham counties. 2020 presidential margin D+4.6 on the 2016\u20132020 lines \u2192 D+30.1 on the current lines.",
+    "toEra": "current"
+   },
+   "ST12": {
+    "contributors": [
+     {
+      "areaPct": 84.1,
+      "key": "ST18",
+      "popPct": 84.3
+     },
+     {
+      "areaPct": 15.9,
+      "key": "ST17",
+      "popPct": 15.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14445,
+    "pres2020New": -13.9,
+    "pres2020Old": 6.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ST12; it draws from the old ST18 (84%), the old ST17 (16%). Entirely in Strafford County. 2020 presidential margin R+6.3 on the 2016\u20132020 lines \u2192 D+13.9 on the current lines.",
+    "toEra": "current"
+   },
+   "ST13": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "ST17",
+      "popPct": 99.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 6380,
+    "pres2020New": -22.4,
+    "pres2020Old": -47.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ST13; it draws from the old ST17 (100%). Entirely in Strafford County. 2020 presidential margin D+47.9 on the 2016\u20132020 lines \u2192 D+22.4 on the current lines.",
+    "toEra": "current"
+   },
+   "ST14": {
+    "contributors": [
+     {
+      "areaPct": 93.4,
+      "key": "ST13",
+      "popPct": 98.1
+     },
+     {
+      "areaPct": 5.3,
+      "key": "ST17",
+      "popPct": 1.3
+     },
+     {
+      "areaPct": 1.0,
+      "key": "ST14",
+      "popPct": 0.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 5085,
+    "pres2020New": -47.7,
+    "pres2020Old": -43.1,
+    "retainedAreaPct": 1.0,
+    "retainedPopPct": 0.4,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ST14; it draws from the old ST13 (98%), the old ST17 (1%). Entirely in Strafford County. 2020 presidential margin D+43.1 on the 2016\u20132020 lines \u2192 D+47.7 on the current lines.",
+    "toEra": "current"
+   },
+   "ST15": {
+    "contributors": [
+     {
+      "areaPct": 95.8,
+      "key": "ST14",
+      "popPct": 98.1
+     },
+     {
+      "areaPct": 2.9,
+      "key": "ST15",
+      "popPct": 1.4
+     },
+     {
+      "areaPct": 1.1,
+      "key": "ST18",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Rockingham",
+      "popPct": 2.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 5144,
+    "pres2020New": -42.9,
+    "pres2020Old": -26.8,
+    "retainedAreaPct": 2.9,
+    "retainedPopPct": 1.4,
+    "text": "A new footprint: only 1% of its population was in the 2016\u20132020 ST15; it draws from the old ST14 (98%), the old ST18 (0%). Counties: lost Rockingham. 2020 presidential margin D+26.8 on the 2016\u20132020 lines \u2192 D+42.9 on the current lines.",
+    "toEra": "current"
+   },
+   "ST16": {
+    "contributors": [
+     {
+      "areaPct": 89.3,
+      "key": "ST15",
+      "popPct": 84.5
+     },
+     {
+      "areaPct": 5.7,
+      "key": "ST14",
+      "popPct": 10.9
+     },
+     {
+      "areaPct": 4.7,
+      "key": "ST16",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 95.3
+     },
+     {
+      "county": "Rockingham",
+      "popPct": 4.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 6104,
+    "pres2020New": -28.2,
+    "pres2020Old": -28.1,
+    "retainedAreaPct": 4.7,
+    "retainedPopPct": 4.5,
+    "text": "A new footprint: only 4% of its population was in the 2016\u20132020 ST16; it draws from the old ST15 (84%), the old ST14 (11%). Spans Strafford, Rockingham counties. 2020 presidential margin D+28.1 on the 2016\u20132020 lines \u2192 D+28.2 on the current lines.",
+    "toEra": "current"
+   },
+   "ST17": {
+    "contributors": [
+     {
+      "areaPct": 86.6,
+      "key": "ST17",
+      "popPct": 82.7
+     },
+     {
+      "areaPct": 12.2,
+      "key": "ST16",
+      "popPct": 13.4
+     },
+     {
+      "areaPct": 0.8,
+      "key": "ST13",
+      "popPct": 3.0
+     },
+     {
+      "areaPct": 0.4,
+      "key": "ST14",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4973,
+    "pres2020New": -25.2,
+    "pres2020Old": -20.0,
+    "retainedAreaPct": 86.6,
+    "retainedPopPct": 82.7,
+    "text": "Kept 83% of its population from the 2016\u20132020 ST17; gained the rest from the old ST16 (13%), the old ST13 (3%), the old ST14 (1%). Entirely in Strafford County. 2020 presidential margin D+20.0 on the 2016\u20132020 lines \u2192 D+25.2 on the current lines.",
+    "toEra": "current"
+   },
+   "ST2": {
+    "contributors": [
+     {
+      "areaPct": 31.3,
+      "key": "ST12",
+      "popPct": 52.8
+     },
+     {
+      "areaPct": 68.3,
+      "key": "ST1",
+      "popPct": 44.1
+     },
+     {
+      "areaPct": 0.2,
+      "key": "ST8",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10160,
+    "pres2020New": 11.3,
+    "pres2020Old": 18.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ST2; it draws from the old ST12 (53%), the old ST1 (44%), the old ST8 (3%). Entirely in Strafford County. 2020 presidential margin R+18.5 on the 2016\u20132020 lines \u2192 R+11.3 on the current lines.",
+    "toEra": "current"
+   },
+   "ST3": {
+    "contributors": [
+     {
+      "areaPct": 70.5,
+      "key": "ST3",
+      "popPct": 59.9
+     },
+     {
+      "areaPct": 29.3,
+      "key": "ST1",
+      "popPct": 40.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 99.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4496,
+    "pres2020New": 22.3,
+    "pres2020Old": 9.9,
+    "retainedAreaPct": 70.5,
+    "retainedPopPct": 59.9,
+    "text": "Kept 60% of its population from the 2016\u20132020 ST3; gained the rest from the old ST1 (40%). Entirely in Strafford County. 2020 presidential margin R+9.9 on the 2016\u20132020 lines \u2192 R+22.3 on the current lines.",
+    "toEra": "current"
+   },
+   "ST4": {
+    "contributors": [
+     {
+      "areaPct": 48.7,
+      "key": "ST4",
+      "popPct": 68.8
+     },
+     {
+      "areaPct": 51.3,
+      "key": "ST3",
+      "popPct": 31.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13556,
+    "pres2020New": -3.8,
+    "pres2020Old": -6.8,
+    "retainedAreaPct": 48.7,
+    "retainedPopPct": 68.8,
+    "text": "Kept 69% of its population from the 2016\u20132020 ST4; gained the rest from the old ST3 (31%). Entirely in Strafford County. 2020 presidential margin D+6.8 on the 2016\u20132020 lines \u2192 D+3.8 on the current lines.",
+    "toEra": "current"
+   },
+   "ST5": {
+    "contributors": [
+     {
+      "areaPct": 95.7,
+      "key": "ST7",
+      "popPct": 93.1
+     },
+     {
+      "areaPct": 3.5,
+      "key": "ST9",
+      "popPct": 4.7
+     },
+     {
+      "areaPct": 0.6,
+      "key": "ST8",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Rockingham",
+      "popPct": 4.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 5664,
+    "pres2020New": 1.6,
+    "pres2020Old": -33.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ST5; it draws from the old ST7 (93%), the old ST9 (5%), the old ST8 (2%). Counties: lost Rockingham. 2020 presidential margin D+33.2 on the 2016\u20132020 lines \u2192 R+1.6 on the current lines.",
+    "toEra": "current"
+   },
+   "ST6": {
+    "contributors": [
+     {
+      "areaPct": 93.3,
+      "key": "ST9",
+      "popPct": 95.1
+     },
+     {
+      "areaPct": 5.7,
+      "key": "ST10",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 0.6,
+      "key": "ST11",
+      "popPct": 0.7
+     },
+     {
+      "areaPct": 0.3,
+      "key": "ST8",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Rockingham",
+      "popPct": 5.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 5367,
+    "pres2020New": 3.3,
+    "pres2020Old": -50.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ST6; it draws from the old ST9 (95%), the old ST10 (4%), the old ST11 (1%) and 1 more. Counties: lost Rockingham. 2020 presidential margin D+50.7 on the 2016\u20132020 lines \u2192 R+3.3 on the current lines.",
+    "toEra": "current"
+   },
+   "ST7": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "ST10",
+      "popPct": 97.3
+     },
+     {
+      "areaPct": 1.3,
+      "key": "ST11",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 5756,
+    "pres2020New": 4.0,
+    "pres2020Old": 1.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ST7; it draws from the old ST10 (97%), the old ST11 (3%). Entirely in Strafford County. 2020 presidential margin R+1.7 on the 2016\u20132020 lines \u2192 R+4.0 on the current lines.",
+    "toEra": "current"
+   },
+   "ST8": {
+    "contributors": [
+     {
+      "areaPct": 98.8,
+      "key": "ST11",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 5222,
+    "pres2020New": -4.5,
+    "pres2020Old": -4.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 ST8; it draws from the old ST11 (100%). Entirely in Strafford County. 2020 presidential margin D+4.3 on the 2016\u20132020 lines \u2192 D+4.5 on the current lines.",
+    "toEra": "current"
+   },
+   "ST9": {
+    "contributors": [
+     {
+      "areaPct": 92.4,
+      "key": "ST8",
+      "popPct": 96.8
+     },
+     {
+      "areaPct": 5.6,
+      "key": "ST9",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4792,
+    "pres2020New": -4.0,
+    "pres2020Old": 3.4,
+    "retainedAreaPct": 5.6,
+    "retainedPopPct": 2.6,
+    "text": "A new footprint: only 3% of its population was in the 2016\u20132020 ST9; it draws from the old ST8 (97%). Entirely in Strafford County. 2020 presidential margin R+3.4 on the 2016\u20132020 lines \u2192 D+4.0 on the current lines.",
+    "toEra": "current"
+   },
+   "SU1": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "SU1",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sullivan",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3404,
+    "pres2020New": -37.7,
+    "pres2020Old": -29.4,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Sullivan County.",
+    "toEra": "current"
+   },
+   "SU2": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "SU1",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sullivan",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4075,
+    "pres2020New": -31.6,
+    "pres2020Old": -2.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SU2; it draws from the old SU1 (100%). Entirely in Sullivan County. 2020 presidential margin D+2.6 on the 2016\u20132020 lines \u2192 D+31.6 on the current lines.",
+    "toEra": "current"
+   },
+   "SU3": {
+    "contributors": [
+     {
+      "areaPct": 68.1,
+      "key": "SU6",
+      "popPct": 61.9
+     },
+     {
+      "areaPct": 31.9,
+      "key": "SU8",
+      "popPct": 38.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sullivan",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 12596,
+    "pres2020New": 11.1,
+    "pres2020Old": -2.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SU3; it draws from the old SU6 (62%), the old SU8 (38%). Entirely in Sullivan County. 2020 presidential margin D+2.3 on the 2016\u20132020 lines \u2192 R+11.1 on the current lines.",
+    "toEra": "current"
+   },
+   "SU4": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "SU7",
+      "popPct": 99.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sullivan",
+      "popPct": 98.8
+     },
+     {
+      "county": "Cheshire",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4637,
+    "pres2020New": 13.0,
+    "pres2020Old": -6.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SU4; it draws from the old SU7 (99%). Spans Sullivan, Cheshire counties. 2020 presidential margin D+6.2 on the 2016\u20132020 lines \u2192 R+13.0 on the current lines.",
+    "toEra": "current"
+   },
+   "SU5": {
+    "contributors": [
+     {
+      "areaPct": 36.1,
+      "key": "SU2",
+      "popPct": 72.6
+     },
+     {
+      "areaPct": 63.8,
+      "key": "SU1",
+      "popPct": 27.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sullivan",
+      "popPct": 98.7
+     },
+     {
+      "county": "Merrimack",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 4601,
+    "pres2020New": -6.8,
+    "pres2020Old": 3.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SU5; it draws from the old SU2 (73%), the old SU1 (27%). Spans Sullivan, Merrimack counties. 2020 presidential margin R+3.7 on the 2016\u20132020 lines \u2192 D+6.8 on the current lines.",
+    "toEra": "current"
+   },
+   "SU6": {
+    "contributors": [
+     {
+      "areaPct": 16.9,
+      "key": "SU4",
+      "popPct": 34.2
+     },
+     {
+      "areaPct": 9.1,
+      "key": "SU3",
+      "popPct": 30.7
+     },
+     {
+      "areaPct": 27.9,
+      "key": "SU5",
+      "popPct": 29.2
+     },
+     {
+      "areaPct": 46.0,
+      "key": "SU2",
+      "popPct": 5.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sullivan",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13750,
+    "pres2020New": 0.6,
+    "pres2020Old": 16.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SU6; it draws from the old SU4 (34%), the old SU3 (31%), the old SU5 (29%) and 1 more. Entirely in Sullivan County. 2020 presidential margin R+16.6 on the 2016\u20132020 lines \u2192 R+0.6 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 91.4,
+      "key": "1",
+      "popPct": 86.1
+     },
+     {
+      "areaPct": 8.6,
+      "key": "2",
+      "popPct": 13.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Coos",
+      "popPct": 56.0
+     },
+     {
+      "county": "Grafton",
+      "popPct": 44.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 55947,
+    "pres2020New": 2.0,
+    "pres2020Old": -0.4,
+    "retainedAreaPct": 91.4,
+    "retainedPopPct": 86.1,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-1; gained the rest from the old SD-2 (14%). Spans Coos, Grafton counties. 2020 presidential margin D+0.4 on the 2016\u20132020 lines \u2192 R+2.0 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 78.2,
+      "key": "10",
+      "popPct": 82.8
+     },
+     {
+      "areaPct": 21.8,
+      "key": "9",
+      "popPct": 17.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cheshire",
+      "popPct": 85.4
+     },
+     {
+      "county": "Hillsborough",
+      "popPct": 14.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 14.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 56160,
+    "pres2020New": -30.6,
+    "pres2020Old": -25.3,
+    "retainedAreaPct": 78.2,
+    "retainedPopPct": 82.8,
+    "text": "Kept 83% of its population from the 2016\u20132020 SD-10; gained the rest from the old SD-9 (17%). Counties: gained Hillsborough (14%). 2020 presidential margin D+25.3 on the 2016\u20132020 lines \u2192 D+30.6 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "11",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 58516,
+    "pres2020New": -9.4,
+    "pres2020Old": -9.4,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Hillsborough County.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 99.2,
+      "key": "12",
+      "popPct": 92.9
+     },
+     {
+      "areaPct": 0.8,
+      "key": "13",
+      "popPct": 7.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 89.7
+     },
+     {
+      "county": "Cheshire",
+      "popPct": 10.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 62388,
+    "pres2020New": -5.7,
+    "pres2020Old": -4.7,
+    "retainedAreaPct": 99.2,
+    "retainedPopPct": 92.9,
+    "text": "Kept 93% of its population from the 2016\u20132020 SD-12; gained the rest from the old SD-13 (7%). Spans Hillsborough, Cheshire counties. 2020 presidential margin D+4.7 on the 2016\u20132020 lines \u2192 D+5.7 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 99.3,
+      "key": "13",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 57859,
+    "pres2020New": -22.5,
+    "pres2020Old": -22.4,
+    "retainedAreaPct": 99.3,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Hillsborough County.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "14",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 55.2
+     },
+     {
+      "county": "Hillsborough",
+      "popPct": 44.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 57221,
+    "pres2020New": 5.6,
+    "pres2020Old": 5.6,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Rockingham, Hillsborough counties.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 79.7,
+      "key": "15",
+      "popPct": 85.8
+     },
+     {
+      "areaPct": 20.3,
+      "key": "16",
+      "popPct": 14.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 58119,
+    "pres2020New": -29.6,
+    "pres2020Old": -29.1,
+    "retainedAreaPct": 79.7,
+    "retainedPopPct": 85.8,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-15; gained the rest from the old SD-16 (14%). Entirely in Merrimack County. 2020 presidential margin D+29.1 on the 2016\u20132020 lines \u2192 D+29.6 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 51.3,
+      "key": "16",
+      "popPct": 49.4
+     },
+     {
+      "areaPct": 27.2,
+      "key": "20",
+      "popPct": 32.1
+     },
+     {
+      "areaPct": 21.4,
+      "key": "17",
+      "popPct": 18.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 46.6
+     },
+     {
+      "county": "Merrimack",
+      "popPct": 28.1
+     },
+     {
+      "county": "Rockingham",
+      "popPct": 25.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 57809,
+    "pres2020New": 3.1,
+    "pres2020Old": -7.9,
+    "retainedAreaPct": 51.3,
+    "retainedPopPct": 49.4,
+    "text": "A new footprint: only 49% of its population was in the 2016\u20132020 SD-16; it draws from the old SD-20 (32%), the old SD-17 (18%). Spans Hillsborough, Merrimack, Rockingham counties. 2020 presidential margin D+7.9 on the 2016\u20132020 lines \u2192 R+3.1 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 71.7,
+      "key": "17",
+      "popPct": 78.2
+     },
+     {
+      "areaPct": 17.5,
+      "key": "7",
+      "popPct": 13.0
+     },
+     {
+      "areaPct": 10.7,
+      "key": "6",
+      "popPct": 8.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 64.4
+     },
+     {
+      "county": "Rockingham",
+      "popPct": 26.3
+     },
+     {
+      "county": "Belknap",
+      "popPct": 9.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Belknap",
+      "popPct": 9.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Strafford",
+      "popPct": 7.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 55976,
+    "pres2020New": 8.4,
+    "pres2020Old": 9.8,
+    "retainedAreaPct": 71.7,
+    "retainedPopPct": 78.2,
+    "text": "Kept 78% of its population from the 2016\u20132020 SD-17; gained the rest from the old SD-7 (13%), the old SD-6 (9%). Counties: gained Belknap (9%); lost Strafford. 2020 presidential margin R+9.8 on the 2016\u20132020 lines \u2192 R+8.4 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "18",
+      "popPct": 99.0
+     },
+     {
+      "areaPct": 0.3,
+      "key": "20",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 97.3
+     },
+     {
+      "county": "Rockingham",
+      "popPct": 2.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 56894,
+    "pres2020New": -5.0,
+    "pres2020Old": -5.0,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.0,
+    "text": "Kept 99% of its population from the 2016\u20132020 SD-18; gained the rest from the old SD-20 (1%). Spans Hillsborough, Rockingham counties. 2020 presidential margin D+5.0 on the 2016\u20132020 lines \u2192 D+5.0 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "19",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 59132,
+    "pres2020New": 7.8,
+    "pres2020Old": 7.8,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Rockingham County.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 21.6,
+      "key": "7",
+      "popPct": 56.4
+     },
+     {
+      "areaPct": 50.3,
+      "key": "2",
+      "popPct": 36.2
+     },
+     {
+      "areaPct": 9.8,
+      "key": "1",
+      "popPct": 4.8
+     },
+     {
+      "areaPct": 18.3,
+      "key": "3",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Belknap",
+      "popPct": 79.5
+     },
+     {
+      "county": "Grafton",
+      "popPct": 17.9
+     },
+     {
+      "county": "Carroll",
+      "popPct": 2.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Carroll",
+      "popPct": 2.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Merrimack",
+      "popPct": 7.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 56491,
+    "pres2020New": 2.6,
+    "pres2020Old": -0.4,
+    "retainedAreaPct": 50.3,
+    "retainedPopPct": 36.2,
+    "text": "A new footprint: only 36% of its population was in the 2016\u20132020 SD-2; it draws from the old SD-7 (56%), the old SD-1 (5%), the old SD-3 (3%). Counties: gained Carroll (3%); lost Merrimack. 2020 presidential margin D+0.4 on the 2016\u20132020 lines \u2192 R+2.6 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 41.3,
+      "key": "20",
+      "popPct": 65.1
+     },
+     {
+      "areaPct": 58.1,
+      "key": "16",
+      "popPct": 34.1
+     },
+     {
+      "areaPct": 0.6,
+      "key": "18",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 57529,
+    "pres2020New": -17.9,
+    "pres2020Old": -10.8,
+    "retainedAreaPct": 41.3,
+    "retainedPopPct": 65.1,
+    "text": "Kept 65% of its population from the 2016\u20132020 SD-20; gained the rest from the old SD-16 (34%), the old SD-18 (1%). Entirely in Hillsborough County. 2020 presidential margin D+10.8 on the 2016\u20132020 lines \u2192 D+17.9 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 97.9,
+      "key": "21",
+      "popPct": 98.2
+     },
+     {
+      "areaPct": 2.1,
+      "key": "24",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 63.2
+     },
+     {
+      "county": "Strafford",
+      "popPct": 36.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 56894,
+    "pres2020New": -42.2,
+    "pres2020Old": -42.2,
+    "retainedAreaPct": 97.9,
+    "retainedPopPct": 98.2,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-21; gained the rest from the old SD-24 (2%). Spans Rockingham, Strafford counties. 2020 presidential margin D+42.2 on the 2016\u20132020 lines \u2192 D+42.2 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "22",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 76.2
+     },
+     {
+      "county": "Hillsborough",
+      "popPct": 23.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 59228,
+    "pres2020New": 14.1,
+    "pres2020Old": 14.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Rockingham, Hillsborough counties.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 78.4,
+      "key": "23",
+      "popPct": 71.8
+     },
+     {
+      "areaPct": 21.6,
+      "key": "24",
+      "popPct": 28.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 57334,
+    "pres2020New": 11.1,
+    "pres2020Old": -1.3,
+    "retainedAreaPct": 78.4,
+    "retainedPopPct": 71.8,
+    "text": "Kept 72% of its population from the 2016\u20132020 SD-23; gained the rest from the old SD-24 (28%). Entirely in Rockingham County. 2020 presidential margin D+1.3 on the 2016\u20132020 lines \u2192 R+11.1 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 83.4,
+      "key": "24",
+      "popPct": 71.6
+     },
+     {
+      "areaPct": 16.6,
+      "key": "23",
+      "popPct": 28.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rockingham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 56544,
+    "pres2020New": -19.8,
+    "pres2020Old": -9.3,
+    "retainedAreaPct": 83.4,
+    "retainedPopPct": 71.6,
+    "text": "Kept 72% of its population from the 2016\u20132020 SD-24; gained the rest from the old SD-23 (28%). Entirely in Rockingham County. 2020 presidential margin D+9.3 on the 2016\u20132020 lines \u2192 D+19.8 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 74.1,
+      "key": "3",
+      "popPct": 97.1
+     },
+     {
+      "areaPct": 25.9,
+      "key": "1",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carroll",
+      "popPct": 85.0
+     },
+     {
+      "county": "Strafford",
+      "popPct": 11.0
+     },
+     {
+      "county": "Grafton",
+      "popPct": 3.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 57090,
+    "pres2020New": 0.8,
+    "pres2020Old": 0.3,
+    "retainedAreaPct": 74.1,
+    "retainedPopPct": 97.1,
+    "text": "Kept 97% of its population from the 2016\u20132020 SD-3; gained the rest from the old SD-1 (3%). Spans Carroll, Strafford, Grafton counties. 2020 presidential margin R+0.3 on the 2016\u20132020 lines \u2192 R+0.8 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "4",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 99.5
+     },
+     {
+      "county": "Rockingham",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 56519,
+    "pres2020New": -23.3,
+    "pres2020Old": -23.3,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Strafford, Rockingham counties.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 52.9,
+      "key": "5",
+      "popPct": 68.3
+     },
+     {
+      "areaPct": 31.8,
+      "key": "2",
+      "popPct": 16.3
+     },
+     {
+      "areaPct": 15.2,
+      "key": "8",
+      "popPct": 15.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grafton",
+      "popPct": 77.2
+     },
+     {
+      "county": "Sullivan",
+      "popPct": 15.5
+     },
+     {
+      "county": "Merrimack",
+      "popPct": 7.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Merrimack",
+      "popPct": 7.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 58923,
+    "pres2020New": -42.6,
+    "pres2020Old": -37.8,
+    "retainedAreaPct": 52.9,
+    "retainedPopPct": 68.3,
+    "text": "Kept 68% of its population from the 2016\u20132020 SD-5; gained the rest from the old SD-2 (16%), the old SD-8 (15%). Counties: gained Merrimack (7%). 2020 presidential margin D+37.8 on the 2016\u20132020 lines \u2192 D+42.6 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 84.0,
+      "key": "6",
+      "popPct": 92.4
+     },
+     {
+      "areaPct": 16.0,
+      "key": "17",
+      "popPct": 7.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Strafford",
+      "popPct": 82.4
+     },
+     {
+      "county": "Belknap",
+      "popPct": 17.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 55976,
+    "pres2020New": 8.6,
+    "pres2020Old": 10.1,
+    "retainedAreaPct": 84.0,
+    "retainedPopPct": 92.4,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-6; gained the rest from the old SD-17 (8%). Spans Strafford, Belknap counties. 2020 presidential margin R+10.1 on the 2016\u20132020 lines \u2192 R+8.6 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 22.6,
+      "key": "7",
+      "popPct": 32.9
+     },
+     {
+      "areaPct": 38.2,
+      "key": "2",
+      "popPct": 28.6
+     },
+     {
+      "areaPct": 25.4,
+      "key": "8",
+      "popPct": 22.3
+     },
+     {
+      "areaPct": 13.8,
+      "key": "15",
+      "popPct": 16.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merrimack",
+      "popPct": 66.3
+     },
+     {
+      "county": "Grafton",
+      "popPct": 14.9
+     },
+     {
+      "county": "Hillsborough",
+      "popPct": 10.3
+     },
+     {
+      "county": "Belknap",
+      "popPct": 6.7
+     },
+     {
+      "county": "Sullivan",
+      "popPct": 1.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Grafton",
+      "popPct": 14.9
+     },
+     {
+      "county": "Hillsborough",
+      "popPct": 10.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 56248,
+    "pres2020New": 2.2,
+    "pres2020Old": 7.0,
+    "retainedAreaPct": 22.6,
+    "retainedPopPct": 32.9,
+    "text": "A new footprint: only 33% of its population was in the 2016\u20132020 SD-7; it draws from the old SD-2 (29%), the old SD-8 (22%), the old SD-15 (16%). Counties: gained Grafton (15%), Hillsborough (10%). 2020 presidential margin R+7.0 on the 2016\u20132020 lines \u2192 R+2.2 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 80.5,
+      "key": "8",
+      "popPct": 61.9
+     },
+     {
+      "areaPct": 12.3,
+      "key": "5",
+      "popPct": 31.5
+     },
+     {
+      "areaPct": 4.7,
+      "key": "16",
+      "popPct": 5.3
+     },
+     {
+      "areaPct": 2.5,
+      "key": "10",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sullivan",
+      "popPct": 59.2
+     },
+     {
+      "county": "Hillsborough",
+      "popPct": 30.1
+     },
+     {
+      "county": "Merrimack",
+      "popPct": 5.5
+     },
+     {
+      "county": "Cheshire",
+      "popPct": 5.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 56429,
+    "pres2020New": 7.2,
+    "pres2020Old": 0.1,
+    "retainedAreaPct": 80.5,
+    "retainedPopPct": 61.9,
+    "text": "Kept 62% of its population from the 2016\u20132020 SD-8; gained the rest from the old SD-5 (32%), the old SD-16 (5%), the old SD-10 (1%). Spans Sullivan, Hillsborough, Merrimack, Cheshire counties. 2020 presidential margin R+0.1 on the 2016\u20132020 lines \u2192 R+7.2 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 80.4,
+      "key": "9",
+      "popPct": 85.6
+     },
+     {
+      "areaPct": 19.6,
+      "key": "10",
+      "popPct": 14.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 66.1
+     },
+     {
+      "county": "Cheshire",
+      "popPct": 33.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 56305,
+    "pres2020New": -2.6,
+    "pres2020Old": -8.8,
+    "retainedAreaPct": 80.4,
+    "retainedPopPct": 85.6,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-9; gained the rest from the old SD-10 (14%). Spans Hillsborough, Cheshire counties. 2020 presidential margin D+8.8 on the 2016\u20132020 lines \u2192 D+2.6 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 Tennessee House of Representatives election",
+   "senate": "2026 Tennessee Senate election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "1": [
+   {
+    "name": "John Crawford",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Jessica Means"
+   }
+  ],
+  "11": [
+   {
+    "name": "Jeremy Faison",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "2": [
+   {
+    "name": "Bud Hulsey",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "31": [
+   {
+    "name": "Ron Travis",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for Rhea County executive"
+   }
+  ],
+  "32": [
+   {
+    "name": "Monty Fritts",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for governor"
+   }
+  ],
+  "36": [
+   {
+    "name": "Dennis Powers",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Noah Smith"
+   }
+  ],
+  "45": [
+   {
+    "name": "Johnny Garrett",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for Tennessee's 6th congressional district"
+   }
+  ],
+  "59": [
+   {
+    "name": "Caleb Hemmer",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "78": [
+   {
+    "name": "Mary Littleton",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "8": [
+   {
+    "name": "Jerome Moon",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for Blount County mayor"
+   }
+  ],
+  "80": [
+   {
+    "name": "Johnny Shaw",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "81": [
+   {
+    "name": "Debra Moody",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "96": [
+   {
+    "name": "Gabby Salinas",
+    "party": "D",
+    "category": "lost primary",
+    "reason": "lost renomination to Telisa Franklin"
+   }
+  ]
+ },
+ "senate": {
+  "5": [
+   {
+    "name": "Randy McNally",
+    "party": "R",
+    "category": "not running",
+    "reason": "speaker of the Tennessee Senate and lieutenant governor of Tennessee"
+   }
+  ]
+ }
+}

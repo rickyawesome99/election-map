@@ -1,8 +1,12 @@
 import StateLegCoverageAuditTable from "@/components/StateLegCoverageAuditTable";
 import StateLegAggregateAuditTable from "@/components/StateLegAggregateAuditTable";
 import StateLegCalendarAuditTable from "@/components/StateLegCalendarAuditTable";
+import StateLegPresByEraAuditTable from "@/components/StateLegPresByEraAuditTable";
+import StateLegChamberMarginAuditTable from "@/components/StateLegChamberMarginAuditTable";
+import { buildChamberMarginAuditRows } from "@/lib/stateLegChamberMarginAudit";
 import { buildAggregateAuditRows } from "@/lib/stateLegAggregateAudit";
 import { buildCoverageChamberYearCount } from "@/lib/stateLegCoverageCount";
+import { buildPresByEraAuditRows } from "@/lib/stateLegPresByEraAudit";
 
 export const metadata = {
   title: "State Leg Results Audit",
@@ -30,6 +34,8 @@ export default function StateLegResultsAuditPage() {
   // per-chamber-year summaries need to reach the browser.
   const aggregateRows = buildAggregateAuditRows();
   const totalChamberYears = buildCoverageChamberYearCount();
+  const presByEraRows = buildPresByEraAuditRows();
+  const chamberMarginRows = buildChamberMarginAuditRows();
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
@@ -103,6 +109,38 @@ export default function StateLegResultsAuditPage() {
             candidates elected without printing a vote count, so those seats have no district row at all.
           </SectionHeading>
           <StateLegAggregateAuditTable rows={aggregateRows} totalChamberYears={totalChamberYears} />
+        </section>
+
+        <section>
+          <SectionHeading n={4} title="President by map era — 2016 / 2020 / 2024 on every chamber's lines">
+            One row per chamber and map era in{" "}
+            <code style={{ color: "var(--app-text-secondary)" }}>data/stateLegPresByEra.ts</code>: Dave&rsquo;s
+            Redistricting&rsquo;s 2020-VTD presidential returns area-apportioned onto that era&rsquo;s district polygons.
+            The D and R diff columns are the era&rsquo;s district sum against the certified statewide result; every VTD is
+            allocated in full, so a non-zero diff is DRA&rsquo;s own statewide shortfall, not votes the overlay lost.
+            The holdout columns exist only for the current map: the overlay&rsquo;s 2024 margin per district against the
+            precinct-exact figure in{" "}
+            <code style={{ color: "var(--app-text-secondary)" }}>data/stateLegPres2024.ts</code>, estimated districts
+            excluded. That is the method&rsquo;s measured error for the state and the superseded eras inherit it; a state
+            whose 2024 file came from the same DRA overlay reads 0.00 by construction. &ldquo;Split %&rdquo; is the median
+            share of a district&rsquo;s presidential vote that came through VTDs its lines cut.
+          </SectionHeading>
+          <StateLegPresByEraAuditTable rows={presByEraRows} />
+        </section>
+
+        <section>
+          <SectionHeading n={5} title="Raw vs. corrected chamber margin — the State TPL's legislative rows">
+            One row per chamber-year in{" "}
+            <code style={{ color: "var(--app-text-secondary)" }}>lib/stateLegChamberMargin.ts</code>: the raw aggregate
+            (every counted district&rsquo;s votes summed, the old State Legislature row) beside the corrected margin that
+            now feeds the State TPL. Each district is <strong>contested</strong> (both major parties drew votes, its own
+            margin and votes), <strong>imputed</strong> (no count or one major party absent: the district&rsquo;s
+            presidential margin on the map it was run on, in the source presidential year, weighted by that presidential
+            vote scaled to the chamber&rsquo;s legislative-to-presidential turnout ratio) or <strong>skipped</strong>
+            (ineligible with no presidential figure on its lines). The shift is corrected minus raw, Republican-positive:
+            the states that print unopposed races 100&ndash;0 compress toward their presidential lean.
+          </SectionHeading>
+          <StateLegChamberMarginAuditTable rows={chamberMarginRows} />
         </section>
       </main>
     </div>

@@ -1,0 +1,183 @@
+"use client";
+
+import Image from "next/image";
+import type { AtlasDistrict } from "@/lib/stateLegAtlas";
+import type { StateLegCandidate2026 } from "@/data/stateLegCandidates2026";
+import { contest2026, fmtMoney } from "@/lib/stateLegAtlas";
+import { candidateSlug } from "@/lib/candidateSlug";
+
+type Party = "D" | "R" | "I" | "O";
+
+export const PARTY_COLOR: Record<string, string> = { D: "var(--party-dem)", R: "var(--party-rep)", I: "var(--party-ind)", O: "var(--party-ind)" };
+const partyName = (p: Party, label?: string) => (p === "D" ? "Democrat" : p === "R" ? "Republican" : label ? label.replace(/ Party$/, "") : "Independent");
+
+const NON_CANDIDATE = /write.?in|scatter|blank|void|under.?vote|over.?vote|none of/i;
+
+/** Every named person links to their candidate page (/candidates/[name]-[st], any spelling resolves). */
+export function CandidateLink({ name, abbr, color, weight, style }: { name: string; abbr: string; color: string; weight?: number; style?: React.CSSProperties }) {
+  if (NON_CANDIDATE.test(name) || name.trim().length < 3) return <span style={{ color, fontWeight: weight, ...style }}>{name}</span>;
+  return <a href={`/candidates/${candidateSlug(name)}-${abbr.toLowerCase()}`} className="hover:underline" style={{ color, fontWeight: weight, ...style }}>{name}</a>;
+}
+
+function Pill({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="inline-block text-[10px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
+      {children}
+    </span>
+  );
+}
+
+/** Framed square portrait, as on the House pages' candidate rows; party placeholder art (no state-leg photos on file). */
+function Portrait({ party }: { party: Party }) {
+  return (
+    <div
+      className="shrink-0 overflow-hidden flex items-center justify-center"
+      style={{ width: "4.5rem", height: "4.5rem", borderRadius: "12px", border: `3px solid ${PARTY_COLOR[party]}`, background: "var(--app-tab-bg)" }}
+    >
+      {party === "R" ? (
+        <Image src="/candidates/placeholder-republican.png" alt="Republican" width={144} height={144} className="w-full h-full object-contain p-2" />
+      ) : party === "D" ? (
+        <Image src="/candidates/placeholder-democrat.png" alt="Democrat" width={144} height={144} className="w-full h-full object-contain p-2" />
+      ) : (
+        <svg viewBox="0 0 64 80" className="w-full h-full" fill="none">
+          <rect width="64" height="80" fill="var(--app-tab-bg)" />
+          <circle cx="32" cy="28" r="14" fill="var(--app-border)" />
+          <ellipse cx="32" cy="76" rx="25" ry="18" fill="var(--app-border)" />
+        </svg>
+      )}
+    </div>
+  );
+}
+
+/**
+ * The district's 2026 field as portrait rows, mirroring the House pages' Candidates section. Where a
+ * race (or post) is exactly one Democrat against one Republican and the seat is projected, each row
+ * carries its projected two-party vote share.
+ */
+export function AtlasCandidatesSection({ district, abbr }: { district: AtlasDistrict; abbr: string }) {
+  const field = district.candidates2026;
+  if (!field) return null;
+  const c = contest2026(field)!;
+  const pr = district.projection;
+  const margin = pr?.contest === "contested" ? pr.margin : null;
+  const canceled = field.candidates.some((x) => x.canceledGeneral);
+
+  // Idaho's seat A/B and Washington's position 1/2 are separate races inside one district.
+  const posts = [...new Set(field.candidates.map((x) => x.post ?? ""))];
+  const groups = posts.map((post) => ({ post, cands: field.candidates.filter((x) => (x.post ?? "") === post) }));
+
+  const shareFor = (x: StateLegCandidate2026, cands: StateLegCandidate2026[]): number | null => {
+    if (margin == null || x.writeIn) return null;
+    const real = cands.filter((y) => !y.writeIn);
+    if (real.length !== 2 || !real.some((y) => y.party === "D") || !real.some((y) => y.party === "R")) return null;
+    return x.party === "D" ? 50 - margin / 2 : x.party === "R" ? 50 + margin / 2 : null;
+  };
+
+  return (
+    <div>
+      {(c.open && field.candidates.length > 0) || c.status === "uncontested-D" || c.status === "uncontested-R" || canceled ? (
+        <div className="flex flex-wrap gap-1.5 mb-1">
+          {c.open && field.candidates.length > 0 && <Pill>Open seat</Pill>}
+          {c.status === "uncontested-D" && <Pill>No Republican</Pill>}
+          {c.status === "uncontested-R" && <Pill>No Democrat</Pill>}
+          {canceled && <Pill>General canceled</Pill>}
+        </div>
+      ) : null}
+      {field.candidates.length === 0 && <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>No candidates listed yet.</p>}
+      {groups.map(({ post, cands }) => (
+        <div key={post || "all"}>
+          {post && (
+            <div className="pt-3 text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
+              {abbr === "ID" ? `Seat ${post}` : `Position ${post}`}
+            </div>
+          )}
+          {cands.map((x, i) => {
+            const color = PARTY_COLOR[x.party];
+            const share = shareFor(x, cands);
+            return (
+              <div
+                key={`${x.name}-${i}`}
+                className="flex items-center justify-between gap-4 py-3.5"
+                style={{ borderBottom: i === cands.length - 1 ? "none" : "1px solid var(--app-border)" }}
+              >
+                <div className="flex items-center gap-4 min-w-0">
+                  <Portrait party={x.party} />
+                  <div className="min-w-0">
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      <CandidateLink name={x.name} abbr={abbr} color={color} weight={700} style={{ fontFamily: "var(--font-serif)", fontSize: "1.2rem" }} />
+                      {x.incumbent && <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: `color-mix(in srgb, ${color} 14%, transparent)`, color }}>Inc.</span>}
+                      {x.writeIn && <Pill>Write-in</Pill>}
+                    </div>
+                    <div className="text-sm font-medium mt-0.5" style={{ color }}>{partyName(x.party, x.partyLabel)}</div>
+                  </div>
+                </div>
+                {share != null && (
+                  <div className="shrink-0 text-right tabular-nums" style={{ color }}>
+                    <div className="text-3xl font-extrabold">{share.toFixed(1)}%</div>
+                    <div className="text-[11px] mt-0.5" style={{ color: "var(--app-text-very-muted)" }}>projected</div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/** Cycle-to-date contributions for the 2026 field, one row per candidate with a share bar, as on the House pages. */
+export function AtlasFundraisingSection({ district, electionYear }: { district: AtlasDistrict; electionYear: number }) {
+  const m = district.money?.find((x) => x.year === electionYear);
+  if (!m) {
+    return <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Fundraising TBD — no {electionYear} campaign-finance records on file for this state yet.</p>;
+  }
+  const rows = [...m.candidates].sort((a, b) => (b.contributions ?? -1) - (a.contributions ?? -1));
+  const total = rows.reduce((s, r) => s + (r.matched ? r.contributions ?? 0 : 0), 0);
+  const lead = m.demTotal != null && m.repTotal != null && m.demTotal !== m.repTotal ? (m.demTotal > m.repTotal ? "D" : "R") : null;
+
+  return (
+    <div>
+      {rows.map((r, i) => {
+        const color = PARTY_COLOR[r.party];
+        const share = r.matched && total > 0 ? ((r.contributions ?? 0) / total) * 100 : null;
+        return (
+          <div key={`${r.name}-${i}`} className="py-3.5" style={{ borderBottom: i === rows.length - 1 ? "none" : "1px solid var(--app-border)" }}>
+            <div className="flex items-baseline justify-between gap-4">
+              <div className="min-w-0">
+                <div className="truncate" style={{ fontFamily: "var(--font-serif)", fontSize: "1.15rem", fontWeight: 700, color }}>{r.name}</div>
+                <div className="text-xs mt-0.5" style={{ color: "var(--app-text-muted)" }}>{partyName(r.party)}</div>
+              </div>
+              <div className="shrink-0 text-2xl font-extrabold tabular-nums" style={{ color: r.matched ? color : "var(--app-text-very-muted)" }}>
+                {r.matched ? fmtMoney(r.contributions) : <span className="text-sm font-normal italic">no filings found</span>}
+              </div>
+            </div>
+            {share != null && (
+              <div className="mt-2.5 flex items-center gap-2.5">
+                <div className="h-1.5 flex-1 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }}>
+                  <div className="h-full rounded-full" style={{ width: `${share}%`, background: color }} />
+                </div>
+                <span className="shrink-0 text-[11px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>{share.toFixed(0)}%</span>
+              </div>
+            )}
+          </div>
+        );
+      })}
+      <div className="flex flex-wrap gap-x-6 gap-y-1.5 pt-3.5 text-xs" style={{ borderTop: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>
+        <span>Total raised <b className="tabular-nums" style={{ color: "var(--app-text-primary)" }}>{fmtMoney(total)}</b></span>
+        {m.demTotal != null && m.repTotal != null && (
+          <span>
+            Advantage{" "}
+            <b className="tabular-nums" style={{ color: lead ? PARTY_COLOR[lead] : "var(--app-text-primary)" }}>
+              {lead ? `${lead}+${fmtMoney(Math.abs(m.demTotal - m.repTotal))}` : "Even"}
+            </b>
+            {m.gapPct != null && <> · a {Math.abs(m.gapPct).toFixed(0)}-point gap in the two-party money</>}
+          </span>
+        )}
+      </div>
+      <p className="mt-2.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+        Contributions per {m.source}, through {m.dataThrough ?? "the latest report"}. Not yet a term in the projection.
+      </p>
+    </div>
+  );
+}

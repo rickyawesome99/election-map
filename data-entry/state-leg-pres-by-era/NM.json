@@ -1,0 +1,6984 @@
+{
+ "house": {
+  "2020": {
+   "1": {
+    "2016": {
+     "demPct": 17.9,
+     "demVotes": 2300,
+     "margin": 54.8,
+     "othVotes": 1211,
+     "repPct": 72.7,
+     "repVotes": 9351,
+     "totalVotes": 12862
+    },
+    "2020": {
+     "demPct": 23.7,
+     "demVotes": 3356,
+     "margin": 50.2,
+     "othVotes": 331,
+     "repPct": 73.9,
+     "repVotes": 10460,
+     "totalVotes": 14147
+    },
+    "2024": {
+     "demPct": 25.0,
+     "demVotes": 3630,
+     "margin": 48.1,
+     "othVotes": 278,
+     "repPct": 73.1,
+     "repVotes": 10594,
+     "totalVotes": 14502
+    },
+    "pop2020": 28741,
+    "splitPct": 49.0
+   },
+   "10": {
+    "2016": {
+     "demPct": 57.0,
+     "demVotes": 4649,
+     "margin": -25.8,
+     "othVotes": 968,
+     "repPct": 31.2,
+     "repVotes": 2543,
+     "totalVotes": 8160
+    },
+    "2020": {
+     "demPct": 60.7,
+     "demVotes": 5786,
+     "margin": -23.5,
+     "othVotes": 200,
+     "repPct": 37.2,
+     "repVotes": 3541,
+     "totalVotes": 9527
+    },
+    "2024": {
+     "demPct": 55.3,
+     "demVotes": 5202,
+     "margin": -12.8,
+     "othVotes": 208,
+     "repPct": 42.5,
+     "repVotes": 3993,
+     "totalVotes": 9403
+    },
+    "pop2020": 29557,
+    "splitPct": 20.3
+   },
+   "11": {
+    "2016": {
+     "demPct": 69.7,
+     "demVotes": 9254,
+     "margin": -51.3,
+     "othVotes": 1569,
+     "repPct": 18.4,
+     "repVotes": 2447,
+     "totalVotes": 13270
+    },
+    "2020": {
+     "demPct": 77.6,
+     "demVotes": 11656,
+     "margin": -57.4,
+     "othVotes": 336,
+     "repPct": 20.2,
+     "repVotes": 3028,
+     "totalVotes": 15020
+    },
+    "2024": {
+     "demPct": 74.0,
+     "demVotes": 10748,
+     "margin": -51.3,
+     "othVotes": 473,
+     "repPct": 22.7,
+     "repVotes": 3300,
+     "totalVotes": 14521
+    },
+    "pop2020": 29935,
+    "splitPct": 32.3
+   },
+   "12": {
+    "2016": {
+     "demPct": 61.4,
+     "demVotes": 4471,
+     "margin": -33.7,
+     "othVotes": 790,
+     "repPct": 27.7,
+     "repVotes": 2015,
+     "totalVotes": 7276
+    },
+    "2020": {
+     "demPct": 65.1,
+     "demVotes": 5448,
+     "margin": -32.0,
+     "othVotes": 148,
+     "repPct": 33.1,
+     "repVotes": 2767,
+     "totalVotes": 8363
+    },
+    "2024": {
+     "demPct": 56.3,
+     "demVotes": 4646,
+     "margin": -14.3,
+     "othVotes": 141,
+     "repPct": 42.0,
+     "repVotes": 3472,
+     "totalVotes": 8259
+    },
+    "pop2020": 29077,
+    "splitPct": 47.6
+   },
+   "13": {
+    "2016": {
+     "demPct": 59.4,
+     "demVotes": 4581,
+     "margin": -32.3,
+     "othVotes": 1044,
+     "repPct": 27.1,
+     "repVotes": 2087,
+     "totalVotes": 7712
+    },
+    "2020": {
+     "demPct": 64.9,
+     "demVotes": 6256,
+     "margin": -31.9,
+     "othVotes": 204,
+     "repPct": 33.0,
+     "repVotes": 3185,
+     "totalVotes": 9645
+    },
+    "2024": {
+     "demPct": 55.8,
+     "demVotes": 5590,
+     "margin": -13.6,
+     "othVotes": 199,
+     "repPct": 42.2,
+     "repVotes": 4227,
+     "totalVotes": 10016
+    },
+    "pop2020": 32814,
+    "splitPct": 47.4
+   },
+   "14": {
+    "2016": {
+     "demPct": 65.4,
+     "demVotes": 5382,
+     "margin": -42.2,
+     "othVotes": 939,
+     "repPct": 23.2,
+     "repVotes": 1911,
+     "totalVotes": 8232
+    },
+    "2020": {
+     "demPct": 68.9,
+     "demVotes": 6500,
+     "margin": -39.8,
+     "othVotes": 185,
+     "repPct": 29.1,
+     "repVotes": 2745,
+     "totalVotes": 9430
+    },
+    "2024": {
+     "demPct": 61.0,
+     "demVotes": 5657,
+     "margin": -24.7,
+     "othVotes": 254,
+     "repPct": 36.3,
+     "repVotes": 3362,
+     "totalVotes": 9273
+    },
+    "pop2020": 28044,
+    "splitPct": 41.7
+   },
+   "15": {
+    "2016": {
+     "demPct": 48.4,
+     "demVotes": 6888,
+     "margin": -9.6,
+     "othVotes": 1811,
+     "repPct": 38.8,
+     "repVotes": 5523,
+     "totalVotes": 14222
+    },
+    "2020": {
+     "demPct": 58.0,
+     "demVotes": 9676,
+     "margin": -18.1,
+     "othVotes": 345,
+     "repPct": 39.9,
+     "repVotes": 6649,
+     "totalVotes": 16670
+    },
+    "2024": {
+     "demPct": 57.0,
+     "demVotes": 9460,
+     "margin": -16.4,
+     "othVotes": 401,
+     "repPct": 40.6,
+     "repVotes": 6742,
+     "totalVotes": 16603
+    },
+    "pop2020": 31816,
+    "splitPct": 65.7
+   },
+   "16": {
+    "2016": {
+     "demPct": 54.2,
+     "demVotes": 6676,
+     "margin": -21.1,
+     "othVotes": 1566,
+     "repPct": 33.1,
+     "repVotes": 4070,
+     "totalVotes": 12312
+    },
+    "2020": {
+     "demPct": 62.8,
+     "demVotes": 8919,
+     "margin": -28.0,
+     "othVotes": 341,
+     "repPct": 34.8,
+     "repVotes": 4948,
+     "totalVotes": 14208
+    },
+    "2024": {
+     "demPct": 59.4,
+     "demVotes": 8289,
+     "margin": -20.7,
+     "othVotes": 255,
+     "repPct": 38.7,
+     "repVotes": 5403,
+     "totalVotes": 13947
+    },
+    "pop2020": 30512,
+    "splitPct": 51.0
+   },
+   "17": {
+    "2016": {
+     "demPct": 57.9,
+     "demVotes": 7024,
+     "margin": -28.2,
+     "othVotes": 1504,
+     "repPct": 29.7,
+     "repVotes": 3596,
+     "totalVotes": 12124
+    },
+    "2020": {
+     "demPct": 65.9,
+     "demVotes": 9343,
+     "margin": -34.1,
+     "othVotes": 314,
+     "repPct": 31.8,
+     "repVotes": 4510,
+     "totalVotes": 14167
+    },
+    "2024": {
+     "demPct": 63.8,
+     "demVotes": 8667,
+     "margin": -29.8,
+     "othVotes": 295,
+     "repPct": 34.0,
+     "repVotes": 4613,
+     "totalVotes": 13575
+    },
+    "pop2020": 29314,
+    "splitPct": 26.9
+   },
+   "18": {
+    "2016": {
+     "demPct": 73.6,
+     "demVotes": 9328,
+     "margin": -59.9,
+     "othVotes": 1603,
+     "repPct": 13.7,
+     "repVotes": 1735,
+     "totalVotes": 12666
+    },
+    "2020": {
+     "demPct": 81.9,
+     "demVotes": 10900,
+     "margin": -66.6,
+     "othVotes": 373,
+     "repPct": 15.3,
+     "repVotes": 2036,
+     "totalVotes": 13309
+    },
+    "2024": {
+     "demPct": 79.9,
+     "demVotes": 10202,
+     "margin": -63.8,
+     "othVotes": 516,
+     "repPct": 16.1,
+     "repVotes": 2057,
+     "totalVotes": 12775
+    },
+    "pop2020": 28183,
+    "splitPct": 45.2
+   },
+   "19": {
+    "2016": {
+     "demPct": 67.8,
+     "demVotes": 7653,
+     "margin": -47.8,
+     "othVotes": 1380,
+     "repPct": 20.0,
+     "repVotes": 2261,
+     "totalVotes": 11294
+    },
+    "2020": {
+     "demPct": 76.2,
+     "demVotes": 9510,
+     "margin": -55.0,
+     "othVotes": 335,
+     "repPct": 21.2,
+     "repVotes": 2643,
+     "totalVotes": 12488
+    },
+    "2024": {
+     "demPct": 74.6,
+     "demVotes": 8858,
+     "margin": -52.6,
+     "othVotes": 407,
+     "repPct": 22.0,
+     "repVotes": 2607,
+     "totalVotes": 11872
+    },
+    "pop2020": 28670,
+    "splitPct": 54.4
+   },
+   "2": {
+    "2016": {
+     "demPct": 22.0,
+     "demVotes": 1913,
+     "margin": 45.2,
+     "othVotes": 948,
+     "repPct": 67.2,
+     "repVotes": 5851,
+     "totalVotes": 8712
+    },
+    "2020": {
+     "demPct": 28.8,
+     "demVotes": 2895,
+     "margin": 40.1,
+     "othVotes": 229,
+     "repPct": 68.9,
+     "repVotes": 6931,
+     "totalVotes": 10055
+    },
+    "2024": {
+     "demPct": 27.5,
+     "demVotes": 2864,
+     "margin": 43.2,
+     "othVotes": 182,
+     "repPct": 70.7,
+     "repVotes": 7355,
+     "totalVotes": 10401
+    },
+    "pop2020": 27302,
+    "splitPct": 45.1
+   },
+   "20": {
+    "2016": {
+     "demPct": 45.0,
+     "demVotes": 6031,
+     "margin": -3.9,
+     "othVotes": 1852,
+     "repPct": 41.1,
+     "repVotes": 5506,
+     "totalVotes": 13389
+    },
+    "2020": {
+     "demPct": 55.3,
+     "demVotes": 8563,
+     "margin": -13.1,
+     "othVotes": 386,
+     "repPct": 42.2,
+     "repVotes": 6541,
+     "totalVotes": 15490
+    },
+    "2024": {
+     "demPct": 56.0,
+     "demVotes": 8556,
+     "margin": -14.4,
+     "othVotes": 364,
+     "repPct": 41.6,
+     "repVotes": 6364,
+     "totalVotes": 15284
+    },
+    "pop2020": 31327,
+    "splitPct": 59.0
+   },
+   "21": {
+    "2016": {
+     "demPct": 53.9,
+     "demVotes": 3644,
+     "margin": -22.7,
+     "othVotes": 1007,
+     "repPct": 31.2,
+     "repVotes": 2105,
+     "totalVotes": 6756
+    },
+    "2020": {
+     "demPct": 62.5,
+     "demVotes": 4969,
+     "margin": -27.6,
+     "othVotes": 209,
+     "repPct": 34.9,
+     "repVotes": 2776,
+     "totalVotes": 7954
+    },
+    "2024": {
+     "demPct": 59.7,
+     "demVotes": 4246,
+     "margin": -21.8,
+     "othVotes": 172,
+     "repPct": 37.9,
+     "repVotes": 2694,
+     "totalVotes": 7112
+    },
+    "pop2020": 28918,
+    "splitPct": 51.5
+   },
+   "22": {
+    "2016": {
+     "demPct": 40.4,
+     "demVotes": 7151,
+     "margin": 6.2,
+     "othVotes": 2316,
+     "repPct": 46.6,
+     "repVotes": 8254,
+     "totalVotes": 17721
+    },
+    "2020": {
+     "demPct": 48.6,
+     "demVotes": 9965,
+     "margin": 0.2,
+     "othVotes": 523,
+     "repPct": 48.8,
+     "repVotes": 9996,
+     "totalVotes": 20484
+    },
+    "2024": {
+     "demPct": 49.2,
+     "demVotes": 10268,
+     "margin": -0.7,
+     "othVotes": 479,
+     "repPct": 48.5,
+     "repVotes": 10119,
+     "totalVotes": 20866
+    },
+    "pop2020": 30010,
+    "splitPct": 12.1
+   },
+   "23": {
+    "2016": {
+     "demPct": 47.8,
+     "demVotes": 7064,
+     "margin": -8.1,
+     "othVotes": 1834,
+     "repPct": 39.7,
+     "repVotes": 5868,
+     "totalVotes": 14766
+    },
+    "2020": {
+     "demPct": 56.6,
+     "demVotes": 9597,
+     "margin": -15.7,
+     "othVotes": 424,
+     "repPct": 40.9,
+     "repVotes": 6938,
+     "totalVotes": 16959
+    },
+    "2024": {
+     "demPct": 55.7,
+     "demVotes": 9174,
+     "margin": -13.7,
+     "othVotes": 385,
+     "repPct": 42.0,
+     "repVotes": 6922,
+     "totalVotes": 16481
+    },
+    "pop2020": 30547,
+    "splitPct": 55.2
+   },
+   "24": {
+    "2016": {
+     "demPct": 47.3,
+     "demVotes": 6517,
+     "margin": -10.6,
+     "othVotes": 2208,
+     "repPct": 36.7,
+     "repVotes": 5048,
+     "totalVotes": 13773
+    },
+    "2020": {
+     "demPct": 59.1,
+     "demVotes": 9131,
+     "margin": -21.1,
+     "othVotes": 445,
+     "repPct": 38.0,
+     "repVotes": 5875,
+     "totalVotes": 15451
+    },
+    "2024": {
+     "demPct": 59.6,
+     "demVotes": 8757,
+     "margin": -22.0,
+     "othVotes": 405,
+     "repPct": 37.6,
+     "repVotes": 5526,
+     "totalVotes": 14688
+    },
+    "pop2020": 29748,
+    "splitPct": 37.3
+   },
+   "25": {
+    "2016": {
+     "demPct": 57.0,
+     "demVotes": 7713,
+     "margin": -28.1,
+     "othVotes": 1914,
+     "repPct": 28.9,
+     "repVotes": 3907,
+     "totalVotes": 13534
+    },
+    "2020": {
+     "demPct": 66.9,
+     "demVotes": 10151,
+     "margin": -36.7,
+     "othVotes": 438,
+     "repPct": 30.2,
+     "repVotes": 4576,
+     "totalVotes": 15165
+    },
+    "2024": {
+     "demPct": 66.7,
+     "demVotes": 9631,
+     "margin": -36.4,
+     "othVotes": 443,
+     "repPct": 30.3,
+     "repVotes": 4375,
+     "totalVotes": 14449
+    },
+    "pop2020": 28198,
+    "splitPct": 38.0
+   },
+   "26": {
+    "2016": {
+     "demPct": 55.2,
+     "demVotes": 4055,
+     "margin": -23.1,
+     "othVotes": 933,
+     "repPct": 32.1,
+     "repVotes": 2363,
+     "totalVotes": 7351
+    },
+    "2020": {
+     "demPct": 61.5,
+     "demVotes": 5392,
+     "margin": -25.2,
+     "othVotes": 197,
+     "repPct": 36.3,
+     "repVotes": 3184,
+     "totalVotes": 8773
+    },
+    "2024": {
+     "demPct": 54.7,
+     "demVotes": 4865,
+     "margin": -11.5,
+     "othVotes": 184,
+     "repPct": 43.2,
+     "repVotes": 3843,
+     "totalVotes": 8892
+    },
+    "pop2020": 28093,
+    "splitPct": 65.0
+   },
+   "27": {
+    "2016": {
+     "demPct": 43.9,
+     "demVotes": 7141,
+     "margin": -1.3,
+     "othVotes": 2198,
+     "repPct": 42.6,
+     "repVotes": 6944,
+     "totalVotes": 16283
+    },
+    "2020": {
+     "demPct": 53.8,
+     "demVotes": 9590,
+     "margin": -10.2,
+     "othVotes": 458,
+     "repPct": 43.6,
+     "repVotes": 7767,
+     "totalVotes": 17815
+    },
+    "2024": {
+     "demPct": 55.6,
+     "demVotes": 9267,
+     "margin": -13.8,
+     "othVotes": 430,
+     "repPct": 41.8,
+     "repVotes": 6967,
+     "totalVotes": 16664
+    },
+    "pop2020": 29145,
+    "splitPct": 45.7
+   },
+   "28": {
+    "2016": {
+     "demPct": 43.3,
+     "demVotes": 6706,
+     "margin": -1.0,
+     "othVotes": 2233,
+     "repPct": 42.3,
+     "repVotes": 6548,
+     "totalVotes": 15487
+    },
+    "2020": {
+     "demPct": 54.8,
+     "demVotes": 9454,
+     "margin": -12.2,
+     "othVotes": 448,
+     "repPct": 42.6,
+     "repVotes": 7341,
+     "totalVotes": 17243
+    },
+    "2024": {
+     "demPct": 56.4,
+     "demVotes": 9242,
+     "margin": -15.4,
+     "othVotes": 430,
+     "repPct": 41.0,
+     "repVotes": 6712,
+     "totalVotes": 16384
+    },
+    "pop2020": 28858,
+    "splitPct": 41.4
+   },
+   "29": {
+    "2016": {
+     "demPct": 45.0,
+     "demVotes": 6689,
+     "margin": -3.8,
+     "othVotes": 2039,
+     "repPct": 41.2,
+     "repVotes": 6122,
+     "totalVotes": 14850
+    },
+    "2020": {
+     "demPct": 55.1,
+     "demVotes": 11414,
+     "margin": -12.5,
+     "othVotes": 477,
+     "repPct": 42.6,
+     "repVotes": 8836,
+     "totalVotes": 20727
+    },
+    "2024": {
+     "demPct": 53.2,
+     "demVotes": 11999,
+     "margin": -8.5,
+     "othVotes": 485,
+     "repPct": 44.7,
+     "repVotes": 10079,
+     "totalVotes": 22563
+    },
+    "pop2020": 40924,
+    "splitPct": 35.1
+   },
+   "3": {
+    "2016": {
+     "demPct": 17.2,
+     "demVotes": 1768,
+     "margin": 56.5,
+     "othVotes": 944,
+     "repPct": 73.7,
+     "repVotes": 7586,
+     "totalVotes": 10298
+    },
+    "2020": {
+     "demPct": 22.0,
+     "demVotes": 2544,
+     "margin": 53.9,
+     "othVotes": 249,
+     "repPct": 75.9,
+     "repVotes": 8780,
+     "totalVotes": 11573
+    },
+    "2024": {
+     "demPct": 23.0,
+     "demVotes": 2698,
+     "margin": 52.2,
+     "othVotes": 211,
+     "repPct": 75.2,
+     "repVotes": 8818,
+     "totalVotes": 11727
+    },
+    "pop2020": 25777,
+    "splitPct": 8.5
+   },
+   "30": {
+    "2016": {
+     "demPct": 47.8,
+     "demVotes": 6501,
+     "margin": -10.8,
+     "othVotes": 2073,
+     "repPct": 37.0,
+     "repVotes": 5039,
+     "totalVotes": 13613
+    },
+    "2020": {
+     "demPct": 59.0,
+     "demVotes": 8913,
+     "margin": -20.5,
+     "othVotes": 387,
+     "repPct": 38.5,
+     "repVotes": 5812,
+     "totalVotes": 15112
+    },
+    "2024": {
+     "demPct": 58.8,
+     "demVotes": 8545,
+     "margin": -20.3,
+     "othVotes": 400,
+     "repPct": 38.5,
+     "repVotes": 5597,
+     "totalVotes": 14542
+    },
+    "pop2020": 29286,
+    "splitPct": 36.6
+   },
+   "31": {
+    "2016": {
+     "demPct": 41.8,
+     "demVotes": 7767,
+     "margin": 4.1,
+     "othVotes": 2289,
+     "repPct": 45.9,
+     "repVotes": 8520,
+     "totalVotes": 18576
+    },
+    "2020": {
+     "demPct": 51.6,
+     "demVotes": 10797,
+     "margin": -5.7,
+     "othVotes": 510,
+     "repPct": 45.9,
+     "repVotes": 9607,
+     "totalVotes": 20914
+    },
+    "2024": {
+     "demPct": 54.3,
+     "demVotes": 10999,
+     "margin": -11.3,
+     "othVotes": 546,
+     "repPct": 43.0,
+     "repVotes": 8722,
+     "totalVotes": 20267
+    },
+    "pop2020": 30903,
+    "splitPct": 21.5
+   },
+   "32": {
+    "2016": {
+     "demPct": 43.9,
+     "demVotes": 3958,
+     "margin": 3.4,
+     "othVotes": 790,
+     "repPct": 47.3,
+     "repVotes": 4268,
+     "totalVotes": 9016
+    },
+    "2020": {
+     "demPct": 44.0,
+     "demVotes": 4364,
+     "margin": 10.4,
+     "othVotes": 164,
+     "repPct": 54.4,
+     "repVotes": 5400,
+     "totalVotes": 9928
+    },
+    "2024": {
+     "demPct": 39.5,
+     "demVotes": 3868,
+     "margin": 19.0,
+     "othVotes": 198,
+     "repPct": 58.5,
+     "repVotes": 5722,
+     "totalVotes": 9788
+    },
+    "pop2020": 29332,
+    "splitPct": 0.0
+   },
+   "33": {
+    "2016": {
+     "demPct": 55.6,
+     "demVotes": 5867,
+     "margin": -23.6,
+     "othVotes": 1307,
+     "repPct": 32.0,
+     "repVotes": 3376,
+     "totalVotes": 10550
+    },
+    "2020": {
+     "demPct": 62.0,
+     "demVotes": 7030,
+     "margin": -26.7,
+     "othVotes": 297,
+     "repPct": 35.3,
+     "repVotes": 4005,
+     "totalVotes": 11332
+    },
+    "2024": {
+     "demPct": 57.9,
+     "demVotes": 6524,
+     "margin": -18.5,
+     "othVotes": 308,
+     "repPct": 39.4,
+     "repVotes": 4433,
+     "totalVotes": 11265
+    },
+    "pop2020": 30189,
+    "splitPct": 34.2
+   },
+   "34": {
+    "2016": {
+     "demPct": 64.6,
+     "demVotes": 5046,
+     "margin": -36.1,
+     "othVotes": 536,
+     "repPct": 28.5,
+     "repVotes": 2224,
+     "totalVotes": 7806
+    },
+    "2020": {
+     "demPct": 63.0,
+     "demVotes": 6053,
+     "margin": -27.9,
+     "othVotes": 181,
+     "repPct": 35.1,
+     "repVotes": 3372,
+     "totalVotes": 9606
+    },
+    "2024": {
+     "demPct": 53.2,
+     "demVotes": 5102,
+     "margin": -8.1,
+     "othVotes": 165,
+     "repPct": 45.1,
+     "repVotes": 4331,
+     "totalVotes": 9598
+    },
+    "pop2020": 31567,
+    "splitPct": 0.0
+   },
+   "35": {
+    "2016": {
+     "demPct": 54.2,
+     "demVotes": 5803,
+     "margin": -20.0,
+     "othVotes": 1238,
+     "repPct": 34.2,
+     "repVotes": 3666,
+     "totalVotes": 10707
+    },
+    "2020": {
+     "demPct": 60.3,
+     "demVotes": 7212,
+     "margin": -23.1,
+     "othVotes": 296,
+     "repPct": 37.2,
+     "repVotes": 4447,
+     "totalVotes": 11955
+    },
+    "2024": {
+     "demPct": 56.2,
+     "demVotes": 6692,
+     "margin": -14.8,
+     "othVotes": 294,
+     "repPct": 41.4,
+     "repVotes": 4927,
+     "totalVotes": 11913
+    },
+    "pop2020": 30578,
+    "splitPct": 40.3
+   },
+   "36": {
+    "2016": {
+     "demPct": 49.4,
+     "demVotes": 4878,
+     "margin": -10.1,
+     "othVotes": 1125,
+     "repPct": 39.3,
+     "repVotes": 3881,
+     "totalVotes": 9884
+    },
+    "2020": {
+     "demPct": 53.9,
+     "demVotes": 6759,
+     "margin": -10.1,
+     "othVotes": 283,
+     "repPct": 43.8,
+     "repVotes": 5488,
+     "totalVotes": 12530
+    },
+    "2024": {
+     "demPct": 50.4,
+     "demVotes": 7139,
+     "margin": -2.9,
+     "othVotes": 302,
+     "repPct": 47.5,
+     "repVotes": 6721,
+     "totalVotes": 14162
+    },
+    "pop2020": 32819,
+    "splitPct": 49.0
+   },
+   "37": {
+    "2016": {
+     "demPct": 49.3,
+     "demVotes": 7108,
+     "margin": -9.5,
+     "othVotes": 1576,
+     "repPct": 39.8,
+     "repVotes": 5737,
+     "totalVotes": 14421
+    },
+    "2020": {
+     "demPct": 56.4,
+     "demVotes": 9962,
+     "margin": -15.2,
+     "othVotes": 424,
+     "repPct": 41.2,
+     "repVotes": 7265,
+     "totalVotes": 17651
+    },
+    "2024": {
+     "demPct": 55.6,
+     "demVotes": 10224,
+     "margin": -13.6,
+     "othVotes": 445,
+     "repPct": 42.0,
+     "repVotes": 7730,
+     "totalVotes": 18399
+    },
+    "pop2020": 36568,
+    "splitPct": 27.3
+   },
+   "38": {
+    "2016": {
+     "demPct": 39.9,
+     "demVotes": 5346,
+     "margin": 9.9,
+     "othVotes": 1369,
+     "repPct": 49.8,
+     "repVotes": 6674,
+     "totalVotes": 13389
+    },
+    "2020": {
+     "demPct": 45.9,
+     "demVotes": 7004,
+     "margin": 6.1,
+     "othVotes": 318,
+     "repPct": 52.0,
+     "repVotes": 7939,
+     "totalVotes": 15261
+    },
+    "2024": {
+     "demPct": 46.1,
+     "demVotes": 6999,
+     "margin": 5.4,
+     "othVotes": 362,
+     "repPct": 51.5,
+     "repVotes": 7806,
+     "totalVotes": 15167
+    },
+    "pop2020": 28275,
+    "splitPct": 20.7
+   },
+   "39": {
+    "2016": {
+     "demPct": 48.8,
+     "demVotes": 5048,
+     "margin": -6.8,
+     "othVotes": 949,
+     "repPct": 42.0,
+     "repVotes": 4337,
+     "totalVotes": 10334
+    },
+    "2020": {
+     "demPct": 51.6,
+     "demVotes": 5954,
+     "margin": -5.1,
+     "othVotes": 223,
+     "repPct": 46.5,
+     "repVotes": 5371,
+     "totalVotes": 11548
+    },
+    "2024": {
+     "demPct": 48.8,
+     "demVotes": 5803,
+     "margin": 0.3,
+     "othVotes": 242,
+     "repPct": 49.1,
+     "repVotes": 5840,
+     "totalVotes": 11885
+    },
+    "pop2020": 27582,
+    "splitPct": 27.3
+   },
+   "4": {
+    "2016": {
+     "demPct": 42.6,
+     "demVotes": 4161,
+     "margin": 0.3,
+     "othVotes": 1411,
+     "repPct": 42.9,
+     "repVotes": 4187,
+     "totalVotes": 9759
+    },
+    "2020": {
+     "demPct": 52.4,
+     "demVotes": 5988,
+     "margin": -7.5,
+     "othVotes": 315,
+     "repPct": 44.9,
+     "repVotes": 5131,
+     "totalVotes": 11434
+    },
+    "2024": {
+     "demPct": 47.9,
+     "demVotes": 5497,
+     "margin": 1.5,
+     "othVotes": 309,
+     "repPct": 49.4,
+     "repVotes": 5663,
+     "totalVotes": 11469
+    },
+    "pop2020": 28601,
+    "splitPct": 9.5
+   },
+   "40": {
+    "2016": {
+     "demPct": 60.3,
+     "demVotes": 7179,
+     "margin": -31.2,
+     "othVotes": 1262,
+     "repPct": 29.1,
+     "repVotes": 3462,
+     "totalVotes": 11903
+    },
+    "2020": {
+     "demPct": 62.5,
+     "demVotes": 8193,
+     "margin": -26.6,
+     "othVotes": 215,
+     "repPct": 35.9,
+     "repVotes": 4702,
+     "totalVotes": 13110
+    },
+    "2024": {
+     "demPct": 56.7,
+     "demVotes": 7044,
+     "margin": -15.3,
+     "othVotes": 231,
+     "repPct": 41.4,
+     "repVotes": 5140,
+     "totalVotes": 12415
+    },
+    "pop2020": 27859,
+    "splitPct": 25.3
+   },
+   "41": {
+    "2016": {
+     "demPct": 64.5,
+     "demVotes": 7403,
+     "margin": -40.7,
+     "othVotes": 1350,
+     "repPct": 23.8,
+     "repVotes": 2732,
+     "totalVotes": 11485
+    },
+    "2020": {
+     "demPct": 67.1,
+     "demVotes": 8768,
+     "margin": -35.9,
+     "othVotes": 217,
+     "repPct": 31.2,
+     "repVotes": 4083,
+     "totalVotes": 13068
+    },
+    "2024": {
+     "demPct": 60.2,
+     "demVotes": 7656,
+     "margin": -22.8,
+     "othVotes": 306,
+     "repPct": 37.4,
+     "repVotes": 4748,
+     "totalVotes": 12710
+    },
+    "pop2020": 29264,
+    "splitPct": 26.9
+   },
+   "42": {
+    "2016": {
+     "demPct": 69.7,
+     "demVotes": 9318,
+     "margin": -51.4,
+     "othVotes": 1599,
+     "repPct": 18.3,
+     "repVotes": 2449,
+     "totalVotes": 13366
+    },
+    "2020": {
+     "demPct": 75.9,
+     "demVotes": 11371,
+     "margin": -53.6,
+     "othVotes": 283,
+     "repPct": 22.3,
+     "repVotes": 3337,
+     "totalVotes": 14991
+    },
+    "2024": {
+     "demPct": 72.0,
+     "demVotes": 10448,
+     "margin": -46.7,
+     "othVotes": 388,
+     "repPct": 25.3,
+     "repVotes": 3671,
+     "totalVotes": 14507
+    },
+    "pop2020": 30542,
+    "splitPct": 0.9
+   },
+   "43": {
+    "2016": {
+     "demPct": 51.9,
+     "demVotes": 7673,
+     "margin": -20.2,
+     "othVotes": 2424,
+     "repPct": 31.7,
+     "repVotes": 4689,
+     "totalVotes": 14786
+    },
+    "2020": {
+     "demPct": 60.9,
+     "demVotes": 10312,
+     "margin": -25.1,
+     "othVotes": 544,
+     "repPct": 35.8,
+     "repVotes": 6065,
+     "totalVotes": 16921
+    },
+    "2024": {
+     "demPct": 61.1,
+     "demVotes": 10379,
+     "margin": -25.3,
+     "othVotes": 515,
+     "repPct": 35.8,
+     "repVotes": 6083,
+     "totalVotes": 16977
+    },
+    "pop2020": 31512,
+    "splitPct": 8.8
+   },
+   "44": {
+    "2016": {
+     "demPct": 38.9,
+     "demVotes": 6390,
+     "margin": 9.2,
+     "othVotes": 2136,
+     "repPct": 48.1,
+     "repVotes": 7911,
+     "totalVotes": 16437
+    },
+    "2020": {
+     "demPct": 47.6,
+     "demVotes": 9780,
+     "margin": 2.8,
+     "othVotes": 424,
+     "repPct": 50.4,
+     "repVotes": 10356,
+     "totalVotes": 20560
+    },
+    "2024": {
+     "demPct": 48.5,
+     "demVotes": 10289,
+     "margin": 0.9,
+     "othVotes": 430,
+     "repPct": 49.4,
+     "repVotes": 10485,
+     "totalVotes": 21204
+    },
+    "pop2020": 36035,
+    "splitPct": 42.2
+   },
+   "45": {
+    "2016": {
+     "demPct": 71.7,
+     "demVotes": 8824,
+     "margin": -52.6,
+     "othVotes": 1129,
+     "repPct": 19.1,
+     "repVotes": 2348,
+     "totalVotes": 12301
+    },
+    "2020": {
+     "demPct": 76.4,
+     "demVotes": 11154,
+     "margin": -54.6,
+     "othVotes": 264,
+     "repPct": 21.8,
+     "repVotes": 3174,
+     "totalVotes": 14592
+    },
+    "2024": {
+     "demPct": 73.2,
+     "demVotes": 11125,
+     "margin": -48.8,
+     "othVotes": 375,
+     "repPct": 24.4,
+     "repVotes": 3702,
+     "totalVotes": 15202
+    },
+    "pop2020": 31950,
+    "splitPct": 52.9
+   },
+   "46": {
+    "2016": {
+     "demPct": 72.9,
+     "demVotes": 10841,
+     "margin": -55.1,
+     "othVotes": 1384,
+     "repPct": 17.8,
+     "repVotes": 2655,
+     "totalVotes": 14880
+    },
+    "2020": {
+     "demPct": 78.0,
+     "demVotes": 13306,
+     "margin": -57.5,
+     "othVotes": 256,
+     "repPct": 20.5,
+     "repVotes": 3491,
+     "totalVotes": 17053
+    },
+    "2024": {
+     "demPct": 74.2,
+     "demVotes": 12872,
+     "margin": -50.8,
+     "othVotes": 418,
+     "repPct": 23.4,
+     "repVotes": 4053,
+     "totalVotes": 17343
+    },
+    "pop2020": 31432,
+    "splitPct": 39.4
+   },
+   "47": {
+    "2016": {
+     "demPct": 75.5,
+     "demVotes": 13777,
+     "margin": -58.6,
+     "othVotes": 1376,
+     "repPct": 16.9,
+     "repVotes": 3089,
+     "totalVotes": 18242
+    },
+    "2020": {
+     "demPct": 80.5,
+     "demVotes": 16597,
+     "margin": -62.5,
+     "othVotes": 311,
+     "repPct": 18.0,
+     "repVotes": 3720,
+     "totalVotes": 20628
+    },
+    "2024": {
+     "demPct": 79.3,
+     "demVotes": 16493,
+     "margin": -60.6,
+     "othVotes": 418,
+     "repPct": 18.7,
+     "repVotes": 3896,
+     "totalVotes": 20807
+    },
+    "pop2020": 32298,
+    "splitPct": 21.6
+   },
+   "48": {
+    "2016": {
+     "demPct": 76.1,
+     "demVotes": 10273,
+     "margin": -61.0,
+     "othVotes": 1201,
+     "repPct": 15.1,
+     "repVotes": 2034,
+     "totalVotes": 13508
+    },
+    "2020": {
+     "demPct": 81.2,
+     "demVotes": 12440,
+     "margin": -64.2,
+     "othVotes": 272,
+     "repPct": 17.0,
+     "repVotes": 2604,
+     "totalVotes": 15316
+    },
+    "2024": {
+     "demPct": 78.0,
+     "demVotes": 12032,
+     "margin": -58.4,
+     "othVotes": 362,
+     "repPct": 19.6,
+     "repVotes": 3026,
+     "totalVotes": 15420
+    },
+    "pop2020": 31649,
+    "splitPct": 60.0
+   },
+   "49": {
+    "2016": {
+     "demPct": 39.6,
+     "demVotes": 4521,
+     "margin": 8.4,
+     "othVotes": 1417,
+     "repPct": 48.0,
+     "repVotes": 5491,
+     "totalVotes": 11429
+    },
+    "2020": {
+     "demPct": 44.2,
+     "demVotes": 5575,
+     "margin": 9.6,
+     "othVotes": 261,
+     "repPct": 53.8,
+     "repVotes": 6789,
+     "totalVotes": 12625
+    },
+    "2024": {
+     "demPct": 40.5,
+     "demVotes": 5138,
+     "margin": 16.8,
+     "othVotes": 289,
+     "repPct": 57.3,
+     "repVotes": 7271,
+     "totalVotes": 12698
+    },
+    "pop2020": 27279,
+    "splitPct": 5.6
+   },
+   "5": {
+    "2016": {
+     "demPct": 60.7,
+     "demVotes": 6019,
+     "margin": -36.7,
+     "othVotes": 1513,
+     "repPct": 24.0,
+     "repVotes": 2385,
+     "totalVotes": 9917
+    },
+    "2020": {
+     "demPct": 67.1,
+     "demVotes": 7903,
+     "margin": -37.0,
+     "othVotes": 329,
+     "repPct": 30.1,
+     "repVotes": 3542,
+     "totalVotes": 11774
+    },
+    "2024": {
+     "demPct": 60.8,
+     "demVotes": 6877,
+     "margin": -24.7,
+     "othVotes": 356,
+     "repPct": 36.1,
+     "repVotes": 4079,
+     "totalVotes": 11312
+    },
+    "pop2020": 29006,
+    "splitPct": 40.6
+   },
+   "50": {
+    "2016": {
+     "demPct": 49.3,
+     "demVotes": 7156,
+     "margin": -8.6,
+     "othVotes": 1450,
+     "repPct": 40.7,
+     "repVotes": 5898,
+     "totalVotes": 14504
+    },
+    "2020": {
+     "demPct": 53.7,
+     "demVotes": 9067,
+     "margin": -9.3,
+     "othVotes": 318,
+     "repPct": 44.4,
+     "repVotes": 7497,
+     "totalVotes": 16882
+    },
+    "2024": {
+     "demPct": 51.7,
+     "demVotes": 8737,
+     "margin": -5.4,
+     "othVotes": 337,
+     "repPct": 46.3,
+     "repVotes": 7836,
+     "totalVotes": 16910
+    },
+    "pop2020": 29629,
+    "splitPct": 25.0
+   },
+   "51": {
+    "2016": {
+     "demPct": 30.1,
+     "demVotes": 2623,
+     "margin": 29.2,
+     "othVotes": 915,
+     "repPct": 59.3,
+     "repVotes": 5163,
+     "totalVotes": 8701
+    },
+    "2020": {
+     "demPct": 37.9,
+     "demVotes": 3784,
+     "margin": 21.5,
+     "othVotes": 270,
+     "repPct": 59.4,
+     "repVotes": 5934,
+     "totalVotes": 9988
+    },
+    "2024": {
+     "demPct": 38.3,
+     "demVotes": 3929,
+     "margin": 20.9,
+     "othVotes": 260,
+     "repPct": 59.2,
+     "repVotes": 6082,
+     "totalVotes": 10271
+    },
+    "pop2020": 25775,
+    "splitPct": 14.1
+   },
+   "52": {
+    "2016": {
+     "demPct": 62.2,
+     "demVotes": 4965,
+     "margin": -32.5,
+     "othVotes": 651,
+     "repPct": 29.7,
+     "repVotes": 2369,
+     "totalVotes": 7985
+    },
+    "2020": {
+     "demPct": 63.5,
+     "demVotes": 5661,
+     "margin": -29.0,
+     "othVotes": 172,
+     "repPct": 34.5,
+     "repVotes": 3077,
+     "totalVotes": 8910
+    },
+    "2024": {
+     "demPct": 57.4,
+     "demVotes": 5129,
+     "margin": -16.7,
+     "othVotes": 166,
+     "repPct": 40.7,
+     "repVotes": 3634,
+     "totalVotes": 8929
+    },
+    "pop2020": 27039,
+    "splitPct": 30.5
+   },
+   "53": {
+    "2016": {
+     "demPct": 48.7,
+     "demVotes": 2719,
+     "margin": -7.1,
+     "othVotes": 540,
+     "repPct": 41.6,
+     "repVotes": 2319,
+     "totalVotes": 5578
+    },
+    "2020": {
+     "demPct": 49.6,
+     "demVotes": 3357,
+     "margin": -2.0,
+     "othVotes": 190,
+     "repPct": 47.6,
+     "repVotes": 3226,
+     "totalVotes": 6773
+    },
+    "2024": {
+     "demPct": 43.3,
+     "demVotes": 3023,
+     "margin": 11.5,
+     "othVotes": 136,
+     "repPct": 54.8,
+     "repVotes": 3830,
+     "totalVotes": 6989
+    },
+    "pop2020": 31833,
+    "splitPct": 13.8
+   },
+   "54": {
+    "2016": {
+     "demPct": 25.7,
+     "demVotes": 3166,
+     "margin": 40.7,
+     "othVotes": 966,
+     "repPct": 66.4,
+     "repVotes": 8166,
+     "totalVotes": 12298
+    },
+    "2020": {
+     "demPct": 24.7,
+     "demVotes": 3689,
+     "margin": 49.0,
+     "othVotes": 241,
+     "repPct": 73.7,
+     "repVotes": 11001,
+     "totalVotes": 14931
+    },
+    "2024": {
+     "demPct": 23.4,
+     "demVotes": 3508,
+     "margin": 51.8,
+     "othVotes": 213,
+     "repPct": 75.2,
+     "repVotes": 11260,
+     "totalVotes": 14981
+    },
+    "pop2020": 38055,
+    "splitPct": 27.3
+   },
+   "55": {
+    "2016": {
+     "demPct": 24.4,
+     "demVotes": 2849,
+     "margin": 43.5,
+     "othVotes": 904,
+     "repPct": 67.9,
+     "repVotes": 7939,
+     "totalVotes": 11692
+    },
+    "2020": {
+     "demPct": 23.1,
+     "demVotes": 3150,
+     "margin": 52.3,
+     "othVotes": 212,
+     "repPct": 75.4,
+     "repVotes": 10282,
+     "totalVotes": 13644
+    },
+    "2024": {
+     "demPct": 21.3,
+     "demVotes": 2933,
+     "margin": 56.0,
+     "othVotes": 186,
+     "repPct": 77.3,
+     "repVotes": 10628,
+     "totalVotes": 13747
+    },
+    "pop2020": 33960,
+    "splitPct": 30.1
+   },
+   "56": {
+    "2016": {
+     "demPct": 29.2,
+     "demVotes": 2983,
+     "margin": 31.9,
+     "othVotes": 988,
+     "repPct": 61.1,
+     "repVotes": 6232,
+     "totalVotes": 10203
+    },
+    "2020": {
+     "demPct": 34.5,
+     "demVotes": 4048,
+     "margin": 29.0,
+     "othVotes": 231,
+     "repPct": 63.5,
+     "repVotes": 7452,
+     "totalVotes": 11731
+    },
+    "2024": {
+     "demPct": 34.3,
+     "demVotes": 4041,
+     "margin": 29.3,
+     "othVotes": 249,
+     "repPct": 63.6,
+     "repVotes": 7508,
+     "totalVotes": 11798
+    },
+    "pop2020": 28407,
+    "splitPct": 21.2
+   },
+   "57": {
+    "2016": {
+     "demPct": 40.0,
+     "demVotes": 4616,
+     "margin": 6.8,
+     "othVotes": 1524,
+     "repPct": 46.8,
+     "repVotes": 5406,
+     "totalVotes": 11546
+    },
+    "2020": {
+     "demPct": 49.3,
+     "demVotes": 7967,
+     "margin": -1.4,
+     "othVotes": 454,
+     "repPct": 47.9,
+     "repVotes": 7753,
+     "totalVotes": 16174
+    },
+    "2024": {
+     "demPct": 48.1,
+     "demVotes": 9071,
+     "margin": 1.5,
+     "othVotes": 430,
+     "repPct": 49.6,
+     "repVotes": 9364,
+     "totalVotes": 18865
+    },
+    "pop2020": 36938,
+    "splitPct": 20.3
+   },
+   "58": {
+    "2016": {
+     "demPct": 36.6,
+     "demVotes": 2357,
+     "margin": 16.5,
+     "othVotes": 667,
+     "repPct": 53.1,
+     "repVotes": 3420,
+     "totalVotes": 6444
+    },
+    "2020": {
+     "demPct": 34.0,
+     "demVotes": 2375,
+     "margin": 30.0,
+     "othVotes": 143,
+     "repPct": 64.0,
+     "repVotes": 4474,
+     "totalVotes": 6992
+    },
+    "2024": {
+     "demPct": 30.6,
+     "demVotes": 2098,
+     "margin": 37.1,
+     "othVotes": 112,
+     "repPct": 67.7,
+     "repVotes": 4641,
+     "totalVotes": 6851
+    },
+    "pop2020": 27536,
+    "splitPct": 24.7
+   },
+   "59": {
+    "2016": {
+     "demPct": 23.9,
+     "demVotes": 2979,
+     "margin": 43.7,
+     "othVotes": 1049,
+     "repPct": 67.6,
+     "repVotes": 8417,
+     "totalVotes": 12445
+    },
+    "2020": {
+     "demPct": 27.2,
+     "demVotes": 3844,
+     "margin": 44.1,
+     "othVotes": 212,
+     "repPct": 71.3,
+     "repVotes": 10056,
+     "totalVotes": 14112
+    },
+    "2024": {
+     "demPct": 25.6,
+     "demVotes": 3621,
+     "margin": 47.1,
+     "othVotes": 232,
+     "repPct": 72.7,
+     "repVotes": 10268,
+     "totalVotes": 14121
+    },
+    "pop2020": 31330,
+    "splitPct": 8.9
+   },
+   "6": {
+    "2016": {
+     "demPct": 58.6,
+     "demVotes": 5422,
+     "margin": -30.1,
+     "othVotes": 1191,
+     "repPct": 28.5,
+     "repVotes": 2636,
+     "totalVotes": 9249
+    },
+    "2020": {
+     "demPct": 63.8,
+     "demVotes": 7123,
+     "margin": -30.1,
+     "othVotes": 270,
+     "repPct": 33.7,
+     "repVotes": 3765,
+     "totalVotes": 11158
+    },
+    "2024": {
+     "demPct": 57.6,
+     "demVotes": 6254,
+     "margin": -18.2,
+     "othVotes": 329,
+     "repPct": 39.4,
+     "repVotes": 4275,
+     "totalVotes": 10858
+    },
+    "pop2020": 29474,
+    "splitPct": 17.5
+   },
+   "60": {
+    "2016": {
+     "demPct": 38.9,
+     "demVotes": 5216,
+     "margin": 8.5,
+     "othVotes": 1840,
+     "repPct": 47.4,
+     "repVotes": 6346,
+     "totalVotes": 13402
+    },
+    "2020": {
+     "demPct": 47.6,
+     "demVotes": 7886,
+     "margin": 2.4,
+     "othVotes": 403,
+     "repPct": 50.0,
+     "repVotes": 8289,
+     "totalVotes": 16578
+    },
+    "2024": {
+     "demPct": 46.2,
+     "demVotes": 7902,
+     "margin": 5.5,
+     "othVotes": 366,
+     "repPct": 51.7,
+     "repVotes": 8844,
+     "totalVotes": 17112
+    },
+    "pop2020": 32975,
+    "splitPct": 28.0
+   },
+   "61": {
+    "2016": {
+     "demPct": 29.9,
+     "demVotes": 1853,
+     "margin": 32.7,
+     "othVotes": 459,
+     "repPct": 62.6,
+     "repVotes": 3878,
+     "totalVotes": 6190
+    },
+    "2020": {
+     "demPct": 23.7,
+     "demVotes": 1691,
+     "margin": 51.1,
+     "othVotes": 106,
+     "repPct": 74.8,
+     "repVotes": 5336,
+     "totalVotes": 7133
+    },
+    "2024": {
+     "demPct": 21.9,
+     "demVotes": 1569,
+     "margin": 54.9,
+     "othVotes": 98,
+     "repPct": 76.8,
+     "repVotes": 5507,
+     "totalVotes": 7174
+    },
+    "pop2020": 31201,
+    "splitPct": 22.1
+   },
+   "62": {
+    "2016": {
+     "demPct": 18.4,
+     "demVotes": 1746,
+     "margin": 56.1,
+     "othVotes": 672,
+     "repPct": 74.5,
+     "repVotes": 7073,
+     "totalVotes": 9491
+    },
+    "2020": {
+     "demPct": 18.0,
+     "demVotes": 2055,
+     "margin": 62.3,
+     "othVotes": 196,
+     "repPct": 80.3,
+     "repVotes": 9152,
+     "totalVotes": 11403
+    },
+    "2024": {
+     "demPct": 17.6,
+     "demVotes": 2052,
+     "margin": 63.5,
+     "othVotes": 150,
+     "repPct": 81.1,
+     "repVotes": 9466,
+     "totalVotes": 11668
+    },
+    "pop2020": 36546,
+    "splitPct": 9.6
+   },
+   "63": {
+    "2016": {
+     "demPct": 36.5,
+     "demVotes": 2672,
+     "margin": 15.0,
+     "othVotes": 877,
+     "repPct": 51.5,
+     "repVotes": 3772,
+     "totalVotes": 7321
+    },
+    "2020": {
+     "demPct": 40.4,
+     "demVotes": 3270,
+     "margin": 16.9,
+     "othVotes": 186,
+     "repPct": 57.3,
+     "repVotes": 4643,
+     "totalVotes": 8099
+    },
+    "2024": {
+     "demPct": 35.9,
+     "demVotes": 2791,
+     "margin": 26.2,
+     "othVotes": 154,
+     "repPct": 62.1,
+     "repVotes": 4832,
+     "totalVotes": 7777
+    },
+    "pop2020": 26548,
+    "splitPct": 15.9
+   },
+   "64": {
+    "2016": {
+     "demPct": 20.6,
+     "demVotes": 1942,
+     "margin": 50.1,
+     "othVotes": 810,
+     "repPct": 70.7,
+     "repVotes": 6653,
+     "totalVotes": 9405
+    },
+    "2020": {
+     "demPct": 26.5,
+     "demVotes": 2858,
+     "margin": 44.7,
+     "othVotes": 246,
+     "repPct": 71.2,
+     "repVotes": 7675,
+     "totalVotes": 10779
+    },
+    "2024": {
+     "demPct": 26.7,
+     "demVotes": 2920,
+     "margin": 44.8,
+     "othVotes": 202,
+     "repPct": 71.5,
+     "repVotes": 7820,
+     "totalVotes": 10942
+    },
+    "pop2020": 31113,
+    "splitPct": 1.8
+   },
+   "65": {
+    "2016": {
+     "demPct": 67.2,
+     "demVotes": 5949,
+     "margin": -50.2,
+     "othVotes": 1405,
+     "repPct": 17.0,
+     "repVotes": 1505,
+     "totalVotes": 8859
+    },
+    "2020": {
+     "demPct": 75.0,
+     "demVotes": 7760,
+     "margin": -52.1,
+     "othVotes": 218,
+     "repPct": 22.9,
+     "repVotes": 2369,
+     "totalVotes": 10347
+    },
+    "2024": {
+     "demPct": 67.7,
+     "demVotes": 6345,
+     "margin": -38.3,
+     "othVotes": 272,
+     "repPct": 29.4,
+     "repVotes": 2753,
+     "totalVotes": 9370
+    },
+    "pop2020": 27334,
+    "splitPct": 12.7
+   },
+   "66": {
+    "2016": {
+     "demPct": 21.1,
+     "demVotes": 2161,
+     "margin": 48.8,
+     "othVotes": 919,
+     "repPct": 69.9,
+     "repVotes": 7161,
+     "totalVotes": 10241
+    },
+    "2020": {
+     "demPct": 23.1,
+     "demVotes": 2643,
+     "margin": 51.8,
+     "othVotes": 229,
+     "repPct": 74.9,
+     "repVotes": 8572,
+     "totalVotes": 11444
+    },
+    "2024": {
+     "demPct": 23.1,
+     "demVotes": 2639,
+     "margin": 52.2,
+     "othVotes": 191,
+     "repPct": 75.3,
+     "repVotes": 8611,
+     "totalVotes": 11441
+    },
+    "pop2020": 30039,
+    "splitPct": 20.5
+   },
+   "67": {
+    "2016": {
+     "demPct": 27.9,
+     "demVotes": 3113,
+     "margin": 34.5,
+     "othVotes": 1073,
+     "repPct": 62.4,
+     "repVotes": 6956,
+     "totalVotes": 11142
+    },
+    "2020": {
+     "demPct": 30.6,
+     "demVotes": 3712,
+     "margin": 37.1,
+     "othVotes": 208,
+     "repPct": 67.7,
+     "repVotes": 8204,
+     "totalVotes": 12124
+    },
+    "2024": {
+     "demPct": 29.9,
+     "demVotes": 3497,
+     "margin": 38.1,
+     "othVotes": 243,
+     "repPct": 68.0,
+     "repVotes": 7965,
+     "totalVotes": 11705
+    },
+    "pop2020": 27339,
+    "splitPct": 9.0
+   },
+   "68": {
+    "2016": {
+     "demPct": 43.6,
+     "demVotes": 5927,
+     "margin": -0.7,
+     "othVotes": 1840,
+     "repPct": 42.9,
+     "repVotes": 5841,
+     "totalVotes": 13608
+    },
+    "2020": {
+     "demPct": 54.4,
+     "demVotes": 8982,
+     "margin": -11.0,
+     "othVotes": 370,
+     "repPct": 43.4,
+     "repVotes": 7165,
+     "totalVotes": 16517
+    },
+    "2024": {
+     "demPct": 53.2,
+     "demVotes": 8601,
+     "margin": -8.6,
+     "othVotes": 357,
+     "repPct": 44.6,
+     "repVotes": 7212,
+     "totalVotes": 16170
+    },
+    "pop2020": 30593,
+    "splitPct": 55.8
+   },
+   "69": {
+    "2016": {
+     "demPct": 56.0,
+     "demVotes": 4809,
+     "margin": -26.9,
+     "othVotes": 1280,
+     "repPct": 29.1,
+     "repVotes": 2501,
+     "totalVotes": 8590
+    },
+    "2020": {
+     "demPct": 61.9,
+     "demVotes": 5978,
+     "margin": -26.1,
+     "othVotes": 222,
+     "repPct": 35.8,
+     "repVotes": 3457,
+     "totalVotes": 9657
+    },
+    "2024": {
+     "demPct": 55.6,
+     "demVotes": 5542,
+     "margin": -13.7,
+     "othVotes": 249,
+     "repPct": 41.9,
+     "repVotes": 4169,
+     "totalVotes": 9960
+    },
+    "pop2020": 29608,
+    "splitPct": 13.9
+   },
+   "7": {
+    "2016": {
+     "demPct": 40.8,
+     "demVotes": 3802,
+     "margin": 5.0,
+     "othVotes": 1244,
+     "repPct": 45.8,
+     "repVotes": 4265,
+     "totalVotes": 9311
+    },
+    "2020": {
+     "demPct": 44.4,
+     "demVotes": 4762,
+     "margin": 9.0,
+     "othVotes": 240,
+     "repPct": 53.4,
+     "repVotes": 5728,
+     "totalVotes": 10730
+    },
+    "2024": {
+     "demPct": 40.5,
+     "demVotes": 4419,
+     "margin": 16.9,
+     "othVotes": 222,
+     "repPct": 57.4,
+     "repVotes": 6261,
+     "totalVotes": 10902
+    },
+    "pop2020": 27916,
+    "splitPct": 29.1
+   },
+   "70": {
+    "2016": {
+     "demPct": 60.2,
+     "demVotes": 6570,
+     "margin": -31.4,
+     "othVotes": 1202,
+     "repPct": 28.8,
+     "repVotes": 3138,
+     "totalVotes": 10910
+    },
+    "2020": {
+     "demPct": 60.4,
+     "demVotes": 7117,
+     "margin": -22.8,
+     "othVotes": 234,
+     "repPct": 37.6,
+     "repVotes": 4427,
+     "totalVotes": 11778
+    },
+    "2024": {
+     "demPct": 55.5,
+     "demVotes": 6237,
+     "margin": -13.2,
+     "othVotes": 242,
+     "repPct": 42.3,
+     "repVotes": 4755,
+     "totalVotes": 11234
+    },
+    "pop2020": 27329,
+    "splitPct": 16.2
+   },
+   "8": {
+    "2016": {
+     "demPct": 37.6,
+     "demVotes": 4483,
+     "margin": 11.9,
+     "othVotes": 1539,
+     "repPct": 49.5,
+     "repVotes": 5912,
+     "totalVotes": 11934
+    },
+    "2020": {
+     "demPct": 43.3,
+     "demVotes": 6116,
+     "margin": 11.5,
+     "othVotes": 279,
+     "repPct": 54.8,
+     "repVotes": 7742,
+     "totalVotes": 14137
+    },
+    "2024": {
+     "demPct": 41.0,
+     "demVotes": 6115,
+     "margin": 16.3,
+     "othVotes": 249,
+     "repPct": 57.3,
+     "repVotes": 8536,
+     "totalVotes": 14900
+    },
+    "pop2020": 31304,
+    "splitPct": 30.9
+   },
+   "9": {
+    "2016": {
+     "demPct": 61.4,
+     "demVotes": 4857,
+     "margin": -37.3,
+     "othVotes": 1148,
+     "repPct": 24.1,
+     "repVotes": 1906,
+     "totalVotes": 7911
+    },
+    "2020": {
+     "demPct": 66.9,
+     "demVotes": 6269,
+     "margin": -36.3,
+     "othVotes": 238,
+     "repPct": 30.6,
+     "repVotes": 2865,
+     "totalVotes": 9372
+    },
+    "2024": {
+     "demPct": 59.1,
+     "demVotes": 5567,
+     "margin": -21.5,
+     "othVotes": 309,
+     "repPct": 37.6,
+     "repVotes": 3538,
+     "totalVotes": 9414
+    },
+    "pop2020": 27665,
+    "splitPct": 27.9
+   }
+  },
+  "current": {
+   "1": {
+    "2016": {
+     "demPct": 17.2,
+     "demVotes": 2166,
+     "margin": 56.0,
+     "othVotes": 1220,
+     "repPct": 73.2,
+     "repVotes": 9238,
+     "totalVotes": 12624
+    },
+    "2020": {
+     "demPct": 23.1,
+     "demVotes": 3232,
+     "margin": 51.5,
+     "othVotes": 318,
+     "repPct": 74.6,
+     "repVotes": 10424,
+     "totalVotes": 13974
+    },
+    "2024": {
+     "demPct": 24.3,
+     "demVotes": 3457,
+     "margin": 49.7,
+     "othVotes": 249,
+     "repPct": 74.0,
+     "repVotes": 10531,
+     "totalVotes": 14237
+    },
+    "pop2020": 28119,
+    "splitPct": 36.9
+   },
+   "10": {
+    "2016": {
+     "demPct": 57.0,
+     "demVotes": 5274,
+     "margin": -26.0,
+     "othVotes": 1103,
+     "repPct": 31.0,
+     "repVotes": 2869,
+     "totalVotes": 9246
+    },
+    "2020": {
+     "demPct": 61.1,
+     "demVotes": 6717,
+     "margin": -24.1,
+     "othVotes": 210,
+     "repPct": 37.0,
+     "repVotes": 4064,
+     "totalVotes": 10991
+    },
+    "2024": {
+     "demPct": 55.5,
+     "demVotes": 6148,
+     "margin": -13.1,
+     "othVotes": 230,
+     "repPct": 42.4,
+     "repVotes": 4696,
+     "totalVotes": 11074
+    },
+    "pop2020": 30888,
+    "splitPct": 26.0
+   },
+   "11": {
+    "2016": {
+     "demPct": 68.4,
+     "demVotes": 9094,
+     "margin": -48.6,
+     "othVotes": 1577,
+     "repPct": 19.8,
+     "repVotes": 2633,
+     "totalVotes": 13304
+    },
+    "2020": {
+     "demPct": 76.0,
+     "demVotes": 11232,
+     "margin": -54.1,
+     "othVotes": 323,
+     "repPct": 21.9,
+     "repVotes": 3233,
+     "totalVotes": 14788
+    },
+    "2024": {
+     "demPct": 72.7,
+     "demVotes": 10334,
+     "margin": -48.5,
+     "othVotes": 440,
+     "repPct": 24.2,
+     "repVotes": 3433,
+     "totalVotes": 14207
+    },
+    "pop2020": 30902,
+    "splitPct": 28.0
+   },
+   "12": {
+    "2016": {
+     "demPct": 62.6,
+     "demVotes": 4790,
+     "margin": -36.0,
+     "othVotes": 823,
+     "repPct": 26.6,
+     "repVotes": 2034,
+     "totalVotes": 7647
+    },
+    "2020": {
+     "demPct": 66.2,
+     "demVotes": 5880,
+     "margin": -34.3,
+     "othVotes": 163,
+     "repPct": 31.9,
+     "repVotes": 2836,
+     "totalVotes": 8879
+    },
+    "2024": {
+     "demPct": 58.0,
+     "demVotes": 5069,
+     "margin": -17.9,
+     "othVotes": 171,
+     "repPct": 40.1,
+     "repVotes": 3505,
+     "totalVotes": 8745
+    },
+    "pop2020": 30849,
+    "splitPct": 43.4
+   },
+   "13": {
+    "2016": {
+     "demPct": 59.4,
+     "demVotes": 4210,
+     "margin": -32.3,
+     "othVotes": 951,
+     "repPct": 27.1,
+     "repVotes": 1923,
+     "totalVotes": 7084
+    },
+    "2020": {
+     "demPct": 64.6,
+     "demVotes": 5750,
+     "margin": -31.3,
+     "othVotes": 186,
+     "repPct": 33.3,
+     "repVotes": 2959,
+     "totalVotes": 8895
+    },
+    "2024": {
+     "demPct": 55.4,
+     "demVotes": 5154,
+     "margin": -12.8,
+     "othVotes": 188,
+     "repPct": 42.6,
+     "repVotes": 3968,
+     "totalVotes": 9310
+    },
+    "pop2020": 31061,
+    "splitPct": 46.4
+   },
+   "14": {
+    "2016": {
+     "demPct": 68.1,
+     "demVotes": 6475,
+     "margin": -48.1,
+     "othVotes": 1123,
+     "repPct": 20.0,
+     "repVotes": 1904,
+     "totalVotes": 9502
+    },
+    "2020": {
+     "demPct": 73.0,
+     "demVotes": 8108,
+     "margin": -48.2,
+     "othVotes": 248,
+     "repPct": 24.8,
+     "repVotes": 2752,
+     "totalVotes": 11108
+    },
+    "2024": {
+     "demPct": 65.6,
+     "demVotes": 7123,
+     "margin": -34.3,
+     "othVotes": 329,
+     "repPct": 31.3,
+     "repVotes": 3398,
+     "totalVotes": 10850
+    },
+    "pop2020": 30162,
+    "splitPct": 33.7
+   },
+   "15": {
+    "2016": {
+     "demPct": 56.3,
+     "demVotes": 7936,
+     "margin": -25.0,
+     "othVotes": 1753,
+     "repPct": 31.3,
+     "repVotes": 4405,
+     "totalVotes": 14094
+    },
+    "2020": {
+     "demPct": 64.3,
+     "demVotes": 10383,
+     "margin": -30.9,
+     "othVotes": 375,
+     "repPct": 33.4,
+     "repVotes": 5384,
+     "totalVotes": 16142
+    },
+    "2024": {
+     "demPct": 62.6,
+     "demVotes": 9752,
+     "margin": -27.5,
+     "othVotes": 365,
+     "repPct": 35.1,
+     "repVotes": 5465,
+     "totalVotes": 15582
+    },
+    "pop2020": 30979,
+    "splitPct": 32.2
+   },
+   "16": {
+    "2016": {
+     "demPct": 54.0,
+     "demVotes": 6863,
+     "margin": -20.7,
+     "othVotes": 1610,
+     "repPct": 33.3,
+     "repVotes": 4225,
+     "totalVotes": 12698
+    },
+    "2020": {
+     "demPct": 62.4,
+     "demVotes": 9182,
+     "margin": -27.2,
+     "othVotes": 354,
+     "repPct": 35.2,
+     "repVotes": 5175,
+     "totalVotes": 14711
+    },
+    "2024": {
+     "demPct": 58.8,
+     "demVotes": 8518,
+     "margin": -19.6,
+     "othVotes": 286,
+     "repPct": 39.2,
+     "repVotes": 5671,
+     "totalVotes": 14475
+    },
+    "pop2020": 30707,
+    "splitPct": 45.6
+   },
+   "17": {
+    "2016": {
+     "demPct": 45.0,
+     "demVotes": 5887,
+     "margin": -3.0,
+     "othVotes": 1702,
+     "repPct": 42.0,
+     "repVotes": 5490,
+     "totalVotes": 13079
+    },
+    "2020": {
+     "demPct": 55.4,
+     "demVotes": 8748,
+     "margin": -13.0,
+     "othVotes": 346,
+     "repPct": 42.4,
+     "repVotes": 6688,
+     "totalVotes": 15782
+    },
+    "2024": {
+     "demPct": 54.4,
+     "demVotes": 8230,
+     "margin": -11.1,
+     "othVotes": 351,
+     "repPct": 43.3,
+     "repVotes": 6553,
+     "totalVotes": 15134
+    },
+    "pop2020": 30947,
+    "splitPct": 39.2
+   },
+   "18": {
+    "2016": {
+     "demPct": 74.4,
+     "demVotes": 11005,
+     "margin": -60.6,
+     "othVotes": 1748,
+     "repPct": 13.8,
+     "repVotes": 2042,
+     "totalVotes": 14795
+    },
+    "2020": {
+     "demPct": 82.2,
+     "demVotes": 12908,
+     "margin": -67.0,
+     "othVotes": 419,
+     "repPct": 15.2,
+     "repVotes": 2384,
+     "totalVotes": 15711
+    },
+    "2024": {
+     "demPct": 80.5,
+     "demVotes": 12188,
+     "margin": -64.9,
+     "othVotes": 599,
+     "repPct": 15.6,
+     "repVotes": 2360,
+     "totalVotes": 15147
+    },
+    "pop2020": 31034,
+    "splitPct": 20.4
+   },
+   "19": {
+    "2016": {
+     "demPct": 64.2,
+     "demVotes": 5223,
+     "margin": -41.8,
+     "othVotes": 1089,
+     "repPct": 22.4,
+     "repVotes": 1825,
+     "totalVotes": 8137
+    },
+    "2020": {
+     "demPct": 72.4,
+     "demVotes": 6547,
+     "margin": -47.7,
+     "othVotes": 263,
+     "repPct": 24.7,
+     "repVotes": 2230,
+     "totalVotes": 9040
+    },
+    "2024": {
+     "demPct": 70.0,
+     "demVotes": 5861,
+     "margin": -43.1,
+     "othVotes": 261,
+     "repPct": 26.9,
+     "repVotes": 2255,
+     "totalVotes": 8377
+    },
+    "pop2020": 30614,
+    "splitPct": 57.3
+   },
+   "2": {
+    "2016": {
+     "demPct": 23.9,
+     "demVotes": 2279,
+     "margin": 40.9,
+     "othVotes": 1072,
+     "repPct": 64.8,
+     "repVotes": 6178,
+     "totalVotes": 9529
+    },
+    "2020": {
+     "demPct": 30.9,
+     "demVotes": 3308,
+     "margin": 35.7,
+     "othVotes": 272,
+     "repPct": 66.6,
+     "repVotes": 7139,
+     "totalVotes": 10719
+    },
+    "2024": {
+     "demPct": 29.8,
+     "demVotes": 3351,
+     "margin": 38.4,
+     "othVotes": 228,
+     "repPct": 68.2,
+     "repVotes": 7674,
+     "totalVotes": 11253
+    },
+    "pop2020": 28265,
+    "splitPct": 31.4
+   },
+   "20": {
+    "2016": {
+     "demPct": 45.6,
+     "demVotes": 6211,
+     "margin": -4.9,
+     "othVotes": 1863,
+     "repPct": 40.7,
+     "repVotes": 5550,
+     "totalVotes": 13624
+    },
+    "2020": {
+     "demPct": 55.7,
+     "demVotes": 8691,
+     "margin": -13.9,
+     "othVotes": 390,
+     "repPct": 41.8,
+     "repVotes": 6518,
+     "totalVotes": 15599
+    },
+    "2024": {
+     "demPct": 56.8,
+     "demVotes": 8720,
+     "margin": -16.1,
+     "othVotes": 381,
+     "repPct": 40.7,
+     "repVotes": 6249,
+     "totalVotes": 15350
+    },
+    "pop2020": 30997,
+    "splitPct": 33.5
+   },
+   "21": {
+    "2016": {
+     "demPct": 48.5,
+     "demVotes": 4828,
+     "margin": -12.3,
+     "othVotes": 1516,
+     "repPct": 36.2,
+     "repVotes": 3606,
+     "totalVotes": 9950
+    },
+    "2020": {
+     "demPct": 58.9,
+     "demVotes": 6903,
+     "margin": -20.4,
+     "othVotes": 313,
+     "repPct": 38.5,
+     "repVotes": 4512,
+     "totalVotes": 11728
+    },
+    "2024": {
+     "demPct": 58.1,
+     "demVotes": 6307,
+     "margin": -18.8,
+     "othVotes": 276,
+     "repPct": 39.3,
+     "repVotes": 4271,
+     "totalVotes": 10854
+    },
+    "pop2020": 29929,
+    "splitPct": 49.8
+   },
+   "22": {
+    "2016": {
+     "demPct": 36.8,
+     "demVotes": 6081,
+     "margin": 13.0,
+     "othVotes": 2212,
+     "repPct": 49.8,
+     "repVotes": 8237,
+     "totalVotes": 16530
+    },
+    "2020": {
+     "demPct": 44.0,
+     "demVotes": 8392,
+     "margin": 9.5,
+     "othVotes": 491,
+     "repPct": 53.5,
+     "repVotes": 10209,
+     "totalVotes": 19092
+    },
+    "2024": {
+     "demPct": 43.7,
+     "demVotes": 8353,
+     "margin": 10.1,
+     "othVotes": 486,
+     "repPct": 53.8,
+     "repVotes": 10277,
+     "totalVotes": 19116
+    },
+    "pop2020": 30955,
+    "splitPct": 6.7
+   },
+   "23": {
+    "2016": {
+     "demPct": 38.2,
+     "demVotes": 5348,
+     "margin": 10.5,
+     "othVotes": 1834,
+     "repPct": 48.7,
+     "repVotes": 6825,
+     "totalVotes": 14007
+    },
+    "2020": {
+     "demPct": 46.8,
+     "demVotes": 7975,
+     "margin": 4.2,
+     "othVotes": 366,
+     "repPct": 51.0,
+     "repVotes": 8694,
+     "totalVotes": 17035
+    },
+    "2024": {
+     "demPct": 47.6,
+     "demVotes": 8257,
+     "margin": 2.7,
+     "othVotes": 355,
+     "repPct": 50.3,
+     "repVotes": 8724,
+     "totalVotes": 17336
+    },
+    "pop2020": 30962,
+    "splitPct": 35.7
+   },
+   "24": {
+    "2016": {
+     "demPct": 46.6,
+     "demVotes": 6972,
+     "margin": -9.4,
+     "othVotes": 2414,
+     "repPct": 37.2,
+     "repVotes": 5568,
+     "totalVotes": 14954
+    },
+    "2020": {
+     "demPct": 58.7,
+     "demVotes": 9803,
+     "margin": -20.3,
+     "othVotes": 474,
+     "repPct": 38.4,
+     "repVotes": 6416,
+     "totalVotes": 16693
+    },
+    "2024": {
+     "demPct": 59.5,
+     "demVotes": 9510,
+     "margin": -22.0,
+     "othVotes": 478,
+     "repPct": 37.5,
+     "repVotes": 5993,
+     "totalVotes": 15981
+    },
+    "pop2020": 30823,
+    "splitPct": 37.6
+   },
+   "25": {
+    "2016": {
+     "demPct": 58.3,
+     "demVotes": 8393,
+     "margin": -30.5,
+     "othVotes": 1995,
+     "repPct": 27.8,
+     "repVotes": 4004,
+     "totalVotes": 14392
+    },
+    "2020": {
+     "demPct": 68.4,
+     "demVotes": 10983,
+     "margin": -39.6,
+     "othVotes": 447,
+     "repPct": 28.8,
+     "repVotes": 4624,
+     "totalVotes": 16054
+    },
+    "2024": {
+     "demPct": 67.7,
+     "demVotes": 10385,
+     "margin": -38.4,
+     "othVotes": 453,
+     "repPct": 29.3,
+     "repVotes": 4500,
+     "totalVotes": 15338
+    },
+    "pop2020": 30408,
+    "splitPct": 19.3
+   },
+   "26": {
+    "2016": {
+     "demPct": 55.2,
+     "demVotes": 4581,
+     "margin": -23.6,
+     "othVotes": 1099,
+     "repPct": 31.6,
+     "repVotes": 2621,
+     "totalVotes": 8301
+    },
+    "2020": {
+     "demPct": 62.6,
+     "demVotes": 6096,
+     "margin": -27.5,
+     "othVotes": 223,
+     "repPct": 35.1,
+     "repVotes": 3417,
+     "totalVotes": 9736
+    },
+    "2024": {
+     "demPct": 56.2,
+     "demVotes": 5551,
+     "margin": -14.2,
+     "othVotes": 182,
+     "repPct": 42.0,
+     "repVotes": 4151,
+     "totalVotes": 9884
+    },
+    "pop2020": 30950,
+    "splitPct": 51.6
+   },
+   "27": {
+    "2016": {
+     "demPct": 44.8,
+     "demVotes": 7252,
+     "margin": -2.9,
+     "othVotes": 2162,
+     "repPct": 41.9,
+     "repVotes": 6783,
+     "totalVotes": 16197
+    },
+    "2020": {
+     "demPct": 55.5,
+     "demVotes": 10194,
+     "margin": -13.4,
+     "othVotes": 440,
+     "repPct": 42.1,
+     "repVotes": 7748,
+     "totalVotes": 18382
+    },
+    "2024": {
+     "demPct": 56.5,
+     "demVotes": 9848,
+     "margin": -15.6,
+     "othVotes": 445,
+     "repPct": 40.9,
+     "repVotes": 7124,
+     "totalVotes": 17417
+    },
+    "pop2020": 30877,
+    "splitPct": 56.7
+   },
+   "28": {
+    "2016": {
+     "demPct": 43.9,
+     "demVotes": 7227,
+     "margin": -2.2,
+     "othVotes": 2366,
+     "repPct": 41.7,
+     "repVotes": 6858,
+     "totalVotes": 16451
+    },
+    "2020": {
+     "demPct": 55.4,
+     "demVotes": 10112,
+     "margin": -13.5,
+     "othVotes": 490,
+     "repPct": 41.9,
+     "repVotes": 7639,
+     "totalVotes": 18241
+    },
+    "2024": {
+     "demPct": 56.6,
+     "demVotes": 9852,
+     "margin": -15.7,
+     "othVotes": 433,
+     "repPct": 40.9,
+     "repVotes": 7108,
+     "totalVotes": 17393
+    },
+    "pop2020": 30939,
+    "splitPct": 34.9
+   },
+   "29": {
+    "2016": {
+     "demPct": 46.7,
+     "demVotes": 5811,
+     "margin": -7.2,
+     "othVotes": 1727,
+     "repPct": 39.5,
+     "repVotes": 4914,
+     "totalVotes": 12452
+    },
+    "2020": {
+     "demPct": 55.9,
+     "demVotes": 9274,
+     "margin": -14.0,
+     "othVotes": 354,
+     "repPct": 41.9,
+     "repVotes": 6948,
+     "totalVotes": 16576
+    },
+    "2024": {
+     "demPct": 55.0,
+     "demVotes": 9878,
+     "margin": -12.0,
+     "othVotes": 361,
+     "repPct": 43.0,
+     "repVotes": 7725,
+     "totalVotes": 17964
+    },
+    "pop2020": 30248,
+    "splitPct": 44.4
+   },
+   "3": {
+    "2016": {
+     "demPct": 17.2,
+     "demVotes": 1927,
+     "margin": 56.4,
+     "othVotes": 1034,
+     "repPct": 73.6,
+     "repVotes": 8254,
+     "totalVotes": 11215
+    },
+    "2020": {
+     "demPct": 22.2,
+     "demVotes": 2804,
+     "margin": 53.5,
+     "othVotes": 273,
+     "repPct": 75.7,
+     "repVotes": 9575,
+     "totalVotes": 12652
+    },
+    "2024": {
+     "demPct": 23.1,
+     "demVotes": 2950,
+     "margin": 52.1,
+     "othVotes": 221,
+     "repPct": 75.2,
+     "repVotes": 9592,
+     "totalVotes": 12763
+    },
+    "pop2020": 28063,
+    "splitPct": 19.3
+   },
+   "30": {
+    "2016": {
+     "demPct": 46.0,
+     "demVotes": 6652,
+     "margin": -6.6,
+     "othVotes": 2109,
+     "repPct": 39.4,
+     "repVotes": 5699,
+     "totalVotes": 14460
+    },
+    "2020": {
+     "demPct": 56.1,
+     "demVotes": 8988,
+     "margin": -14.8,
+     "othVotes": 421,
+     "repPct": 41.3,
+     "repVotes": 6626,
+     "totalVotes": 16035
+    },
+    "2024": {
+     "demPct": 56.6,
+     "demVotes": 8660,
+     "margin": -15.7,
+     "othVotes": 382,
+     "repPct": 40.9,
+     "repVotes": 6249,
+     "totalVotes": 15291
+    },
+    "pop2020": 30533,
+    "splitPct": 28.3
+   },
+   "31": {
+    "2016": {
+     "demPct": 41.1,
+     "demVotes": 6885,
+     "margin": 5.6,
+     "othVotes": 2061,
+     "repPct": 46.7,
+     "repVotes": 7826,
+     "totalVotes": 16772
+    },
+    "2020": {
+     "demPct": 51.1,
+     "demVotes": 9814,
+     "margin": -4.5,
+     "othVotes": 451,
+     "repPct": 46.6,
+     "repVotes": 8947,
+     "totalVotes": 19212
+    },
+    "2024": {
+     "demPct": 53.1,
+     "demVotes": 9964,
+     "margin": -8.9,
+     "othVotes": 517,
+     "repPct": 44.2,
+     "repVotes": 8297,
+     "totalVotes": 18778
+    },
+    "pop2020": 30269,
+    "splitPct": 27.1
+   },
+   "32": {
+    "2016": {
+     "demPct": 44.4,
+     "demVotes": 4153,
+     "margin": 2.5,
+     "othVotes": 814,
+     "repPct": 46.9,
+     "repVotes": 4394,
+     "totalVotes": 9361
+    },
+    "2020": {
+     "demPct": 44.3,
+     "demVotes": 4568,
+     "margin": 9.7,
+     "othVotes": 170,
+     "repPct": 54.0,
+     "repVotes": 5563,
+     "totalVotes": 10301
+    },
+    "2024": {
+     "demPct": 39.5,
+     "demVotes": 4022,
+     "margin": 19.0,
+     "othVotes": 202,
+     "repPct": 58.5,
+     "repVotes": 5966,
+     "totalVotes": 10190
+    },
+    "pop2020": 31143,
+    "splitPct": 0.0
+   },
+   "33": {
+    "2016": {
+     "demPct": 54.6,
+     "demVotes": 5882,
+     "margin": -21.4,
+     "othVotes": 1311,
+     "repPct": 33.2,
+     "repVotes": 3577,
+     "totalVotes": 10770
+    },
+    "2020": {
+     "demPct": 60.5,
+     "demVotes": 7056,
+     "margin": -23.6,
+     "othVotes": 298,
+     "repPct": 36.9,
+     "repVotes": 4304,
+     "totalVotes": 11658
+    },
+    "2024": {
+     "demPct": 56.9,
+     "demVotes": 6622,
+     "margin": -16.5,
+     "othVotes": 309,
+     "repPct": 40.4,
+     "repVotes": 4697,
+     "totalVotes": 11628
+    },
+    "pop2020": 30940,
+    "splitPct": 25.9
+   },
+   "34": {
+    "2016": {
+     "demPct": 63.9,
+     "demVotes": 4771,
+     "margin": -34.7,
+     "othVotes": 516,
+     "repPct": 29.2,
+     "repVotes": 2179,
+     "totalVotes": 7466
+    },
+    "2020": {
+     "demPct": 62.6,
+     "demVotes": 5773,
+     "margin": -27.1,
+     "othVotes": 176,
+     "repPct": 35.5,
+     "repVotes": 3279,
+     "totalVotes": 9228
+    },
+    "2024": {
+     "demPct": 53.0,
+     "demVotes": 4861,
+     "margin": -7.7,
+     "othVotes": 155,
+     "repPct": 45.3,
+     "repVotes": 4158,
+     "totalVotes": 9174
+    },
+    "pop2020": 30343,
+    "splitPct": 0.0
+   },
+   "35": {
+    "2016": {
+     "demPct": 54.1,
+     "demVotes": 5834,
+     "margin": -19.9,
+     "othVotes": 1259,
+     "repPct": 34.2,
+     "repVotes": 3688,
+     "totalVotes": 10781
+    },
+    "2020": {
+     "demPct": 60.7,
+     "demVotes": 7293,
+     "margin": -23.9,
+     "othVotes": 296,
+     "repPct": 36.8,
+     "repVotes": 4425,
+     "totalVotes": 12014
+    },
+    "2024": {
+     "demPct": 56.8,
+     "demVotes": 6691,
+     "margin": -16.2,
+     "othVotes": 300,
+     "repPct": 40.6,
+     "repVotes": 4788,
+     "totalVotes": 11779
+    },
+    "pop2020": 30408,
+    "splitPct": 43.0
+   },
+   "36": {
+    "2016": {
+     "demPct": 47.6,
+     "demVotes": 4846,
+     "margin": -6.2,
+     "othVotes": 1118,
+     "repPct": 41.4,
+     "repVotes": 4217,
+     "totalVotes": 10181
+    },
+    "2020": {
+     "demPct": 53.1,
+     "demVotes": 6785,
+     "margin": -8.2,
+     "othVotes": 259,
+     "repPct": 44.9,
+     "repVotes": 5742,
+     "totalVotes": 12786
+    },
+    "2024": {
+     "demPct": 50.6,
+     "demVotes": 7404,
+     "margin": -3.2,
+     "othVotes": 290,
+     "repPct": 47.4,
+     "repVotes": 6934,
+     "totalVotes": 14628
+    },
+    "pop2020": 30564,
+    "splitPct": 10.0
+   },
+   "37": {
+    "2016": {
+     "demPct": 50.1,
+     "demVotes": 5668,
+     "margin": -11.6,
+     "othVotes": 1279,
+     "repPct": 38.5,
+     "repVotes": 4357,
+     "totalVotes": 11304
+    },
+    "2020": {
+     "demPct": 57.3,
+     "demVotes": 7664,
+     "margin": -17.1,
+     "othVotes": 333,
+     "repPct": 40.2,
+     "repVotes": 5381,
+     "totalVotes": 13378
+    },
+    "2024": {
+     "demPct": 55.7,
+     "demVotes": 7719,
+     "margin": -13.8,
+     "othVotes": 331,
+     "repPct": 41.9,
+     "repVotes": 5807,
+     "totalVotes": 13857
+    },
+    "pop2020": 29685,
+    "splitPct": 48.5
+   },
+   "38": {
+    "2016": {
+     "demPct": 45.9,
+     "demVotes": 4892,
+     "margin": -4.2,
+     "othVotes": 1318,
+     "repPct": 41.7,
+     "repVotes": 4443,
+     "totalVotes": 10653
+    },
+    "2020": {
+     "demPct": 50.7,
+     "demVotes": 5995,
+     "margin": -3.9,
+     "othVotes": 301,
+     "repPct": 46.8,
+     "repVotes": 5528,
+     "totalVotes": 11824
+    },
+    "2024": {
+     "demPct": 46.7,
+     "demVotes": 5594,
+     "margin": 4.2,
+     "othVotes": 289,
+     "repPct": 50.9,
+     "repVotes": 6099,
+     "totalVotes": 11982
+    },
+    "pop2020": 30661,
+    "splitPct": 19.3
+   },
+   "39": {
+    "2016": {
+     "demPct": 48.0,
+     "demVotes": 6392,
+     "margin": -5.7,
+     "othVotes": 1282,
+     "repPct": 42.3,
+     "repVotes": 5629,
+     "totalVotes": 13303
+    },
+    "2020": {
+     "demPct": 51.7,
+     "demVotes": 7720,
+     "margin": -5.4,
+     "othVotes": 296,
+     "repPct": 46.3,
+     "repVotes": 6918,
+     "totalVotes": 14934
+    },
+    "2024": {
+     "demPct": 50.5,
+     "demVotes": 7419,
+     "margin": -3.4,
+     "othVotes": 348,
+     "repPct": 47.1,
+     "repVotes": 6923,
+     "totalVotes": 14690
+    },
+    "pop2020": 28963,
+    "splitPct": 0.0
+   },
+   "4": {
+    "2016": {
+     "demPct": 46.4,
+     "demVotes": 4200,
+     "margin": -7.7,
+     "othVotes": 1347,
+     "repPct": 38.7,
+     "repVotes": 3495,
+     "totalVotes": 9042
+    },
+    "2020": {
+     "demPct": 56.0,
+     "demVotes": 6050,
+     "margin": -14.8,
+     "othVotes": 298,
+     "repPct": 41.2,
+     "repVotes": 4449,
+     "totalVotes": 10797
+    },
+    "2024": {
+     "demPct": 50.4,
+     "demVotes": 5396,
+     "margin": -3.9,
+     "othVotes": 337,
+     "repPct": 46.5,
+     "repVotes": 4978,
+     "totalVotes": 10711
+    },
+    "pop2020": 28155,
+    "splitPct": 14.5
+   },
+   "40": {
+    "2016": {
+     "demPct": 58.1,
+     "demVotes": 7583,
+     "margin": -27.1,
+     "othVotes": 1432,
+     "repPct": 31.0,
+     "repVotes": 4044,
+     "totalVotes": 13059
+    },
+    "2020": {
+     "demPct": 60.3,
+     "demVotes": 8703,
+     "margin": -22.4,
+     "othVotes": 255,
+     "repPct": 37.9,
+     "repVotes": 5468,
+     "totalVotes": 14426
+    },
+    "2024": {
+     "demPct": 54.5,
+     "demVotes": 7415,
+     "margin": -11.0,
+     "othVotes": 268,
+     "repPct": 43.5,
+     "repVotes": 5927,
+     "totalVotes": 13610
+    },
+    "pop2020": 30795,
+    "splitPct": 7.0
+   },
+   "41": {
+    "2016": {
+     "demPct": 61.9,
+     "demVotes": 7251,
+     "margin": -35.7,
+     "othVotes": 1392,
+     "repPct": 26.2,
+     "repVotes": 3063,
+     "totalVotes": 11706
+    },
+    "2020": {
+     "demPct": 64.8,
+     "demVotes": 8573,
+     "margin": -31.2,
+     "othVotes": 212,
+     "repPct": 33.6,
+     "repVotes": 4452,
+     "totalVotes": 13237
+    },
+    "2024": {
+     "demPct": 58.7,
+     "demVotes": 7578,
+     "margin": -19.7,
+     "othVotes": 296,
+     "repPct": 39.0,
+     "repVotes": 5031,
+     "totalVotes": 12905
+    },
+    "pop2020": 29194,
+    "splitPct": 8.3
+   },
+   "42": {
+    "2016": {
+     "demPct": 69.6,
+     "demVotes": 9333,
+     "margin": -51.3,
+     "othVotes": 1617,
+     "repPct": 18.3,
+     "repVotes": 2456,
+     "totalVotes": 13406
+    },
+    "2020": {
+     "demPct": 75.8,
+     "demVotes": 11396,
+     "margin": -53.6,
+     "othVotes": 291,
+     "repPct": 22.2,
+     "repVotes": 3343,
+     "totalVotes": 15030
+    },
+    "2024": {
+     "demPct": 71.9,
+     "demVotes": 10432,
+     "margin": -46.5,
+     "othVotes": 394,
+     "repPct": 25.4,
+     "repVotes": 3682,
+     "totalVotes": 14508
+    },
+    "pop2020": 30562,
+    "splitPct": 0.0
+   },
+   "43": {
+    "2016": {
+     "demPct": 53.4,
+     "demVotes": 7434,
+     "margin": -23.3,
+     "othVotes": 2294,
+     "repPct": 30.1,
+     "repVotes": 4194,
+     "totalVotes": 13922
+    },
+    "2020": {
+     "demPct": 62.5,
+     "demVotes": 9939,
+     "margin": -28.3,
+     "othVotes": 531,
+     "repPct": 34.2,
+     "repVotes": 5433,
+     "totalVotes": 15903
+    },
+    "2024": {
+     "demPct": 62.7,
+     "demVotes": 10011,
+     "margin": -28.5,
+     "othVotes": 500,
+     "repPct": 34.2,
+     "repVotes": 5461,
+     "totalVotes": 15972
+    },
+    "pop2020": 29559,
+    "splitPct": 7.1
+   },
+   "44": {
+    "2016": {
+     "demPct": 45.4,
+     "demVotes": 6990,
+     "margin": -3.1,
+     "othVotes": 1899,
+     "repPct": 42.3,
+     "repVotes": 6519,
+     "totalVotes": 15408
+    },
+    "2020": {
+     "demPct": 53.2,
+     "demVotes": 9496,
+     "margin": -8.7,
+     "othVotes": 406,
+     "repPct": 44.5,
+     "repVotes": 7931,
+     "totalVotes": 17833
+    },
+    "2024": {
+     "demPct": 53.2,
+     "demVotes": 9472,
+     "margin": -8.6,
+     "othVotes": 389,
+     "repPct": 44.6,
+     "repVotes": 7935,
+     "totalVotes": 17796
+    },
+    "pop2020": 30502,
+    "splitPct": 30.9
+   },
+   "45": {
+    "2016": {
+     "demPct": 71.7,
+     "demVotes": 8151,
+     "margin": -52.5,
+     "othVotes": 1036,
+     "repPct": 19.2,
+     "repVotes": 2179,
+     "totalVotes": 11366
+    },
+    "2020": {
+     "demPct": 76.6,
+     "demVotes": 10342,
+     "margin": -54.9,
+     "othVotes": 234,
+     "repPct": 21.7,
+     "repVotes": 2929,
+     "totalVotes": 13505
+    },
+    "2024": {
+     "demPct": 73.4,
+     "demVotes": 10399,
+     "margin": -49.3,
+     "othVotes": 348,
+     "repPct": 24.1,
+     "repVotes": 3418,
+     "totalVotes": 14165
+    },
+    "pop2020": 29894,
+    "splitPct": 46.3
+   },
+   "46": {
+    "2016": {
+     "demPct": 73.2,
+     "demVotes": 11020,
+     "margin": -55.6,
+     "othVotes": 1384,
+     "repPct": 17.6,
+     "repVotes": 2646,
+     "totalVotes": 15050
+    },
+    "2020": {
+     "demPct": 78.5,
+     "demVotes": 13542,
+     "margin": -58.5,
+     "othVotes": 259,
+     "repPct": 20.0,
+     "repVotes": 3443,
+     "totalVotes": 17244
+    },
+    "2024": {
+     "demPct": 74.7,
+     "demVotes": 13003,
+     "margin": -51.7,
+     "othVotes": 411,
+     "repPct": 23.0,
+     "repVotes": 4002,
+     "totalVotes": 17416
+    },
+    "pop2020": 30936,
+    "splitPct": 26.0
+   },
+   "47": {
+    "2016": {
+     "demPct": 76.7,
+     "demVotes": 13850,
+     "margin": -60.5,
+     "othVotes": 1283,
+     "repPct": 16.2,
+     "repVotes": 2934,
+     "totalVotes": 18067
+    },
+    "2020": {
+     "demPct": 81.5,
+     "demVotes": 16505,
+     "margin": -64.6,
+     "othVotes": 308,
+     "repPct": 16.9,
+     "repVotes": 3428,
+     "totalVotes": 20241
+    },
+    "2024": {
+     "demPct": 80.6,
+     "demVotes": 16536,
+     "margin": -63.2,
+     "othVotes": 401,
+     "repPct": 17.4,
+     "repVotes": 3576,
+     "totalVotes": 20513
+    },
+    "pop2020": 29904,
+    "splitPct": 32.1
+   },
+   "48": {
+    "2016": {
+     "demPct": 75.0,
+     "demVotes": 8928,
+     "margin": -59.5,
+     "othVotes": 1124,
+     "repPct": 15.5,
+     "repVotes": 1846,
+     "totalVotes": 11898
+    },
+    "2020": {
+     "demPct": 79.9,
+     "demVotes": 10996,
+     "margin": -61.6,
+     "othVotes": 255,
+     "repPct": 18.3,
+     "repVotes": 2514,
+     "totalVotes": 13765
+    },
+    "2024": {
+     "demPct": 76.3,
+     "demVotes": 10600,
+     "margin": -55.0,
+     "othVotes": 338,
+     "repPct": 21.3,
+     "repVotes": 2955,
+     "totalVotes": 13893
+    },
+    "pop2020": 30098,
+    "splitPct": 55.4
+   },
+   "49": {
+    "2016": {
+     "demPct": 33.5,
+     "demVotes": 4209,
+     "margin": 22.6,
+     "othVotes": 1300,
+     "repPct": 56.1,
+     "repVotes": 7053,
+     "totalVotes": 12562
+    },
+    "2020": {
+     "demPct": 39.0,
+     "demVotes": 5722,
+     "margin": 20.1,
+     "othVotes": 270,
+     "repPct": 59.1,
+     "repVotes": 8665,
+     "totalVotes": 14657
+    },
+    "2024": {
+     "demPct": 37.6,
+     "demVotes": 5752,
+     "margin": 22.8,
+     "othVotes": 304,
+     "repPct": 60.4,
+     "repVotes": 9248,
+     "totalVotes": 15304
+    },
+    "pop2020": 29818,
+    "splitPct": 30.7
+   },
+   "5": {
+    "2016": {
+     "demPct": 63.2,
+     "demVotes": 6254,
+     "margin": -41.7,
+     "othVotes": 1510,
+     "repPct": 21.5,
+     "repVotes": 2127,
+     "totalVotes": 9891
+    },
+    "2020": {
+     "demPct": 69.4,
+     "demVotes": 8173,
+     "margin": -41.6,
+     "othVotes": 331,
+     "repPct": 27.8,
+     "repVotes": 3271,
+     "totalVotes": 11775
+    },
+    "2024": {
+     "demPct": 63.4,
+     "demVotes": 7166,
+     "margin": -29.9,
+     "othVotes": 355,
+     "repPct": 33.5,
+     "repVotes": 3787,
+     "totalVotes": 11308
+    },
+    "pop2020": 28321,
+    "splitPct": 51.5
+   },
+   "50": {
+    "2016": {
+     "demPct": 55.5,
+     "demVotes": 9459,
+     "margin": -20.9,
+     "othVotes": 1693,
+     "repPct": 34.6,
+     "repVotes": 5890,
+     "totalVotes": 17042
+    },
+    "2020": {
+     "demPct": 61.6,
+     "demVotes": 12076,
+     "margin": -25.1,
+     "othVotes": 365,
+     "repPct": 36.5,
+     "repVotes": 7154,
+     "totalVotes": 19595
+    },
+    "2024": {
+     "demPct": 61.4,
+     "demVotes": 12120,
+     "margin": -24.7,
+     "othVotes": 393,
+     "repPct": 36.7,
+     "repVotes": 7242,
+     "totalVotes": 19755
+    },
+    "pop2020": 30204,
+    "splitPct": 17.9
+   },
+   "51": {
+    "2016": {
+     "demPct": 29.7,
+     "demVotes": 3203,
+     "margin": 30.3,
+     "othVotes": 1116,
+     "repPct": 60.0,
+     "repVotes": 6478,
+     "totalVotes": 10797
+    },
+    "2020": {
+     "demPct": 37.1,
+     "demVotes": 4714,
+     "margin": 23.2,
+     "othVotes": 328,
+     "repPct": 60.3,
+     "repVotes": 7662,
+     "totalVotes": 12704
+    },
+    "2024": {
+     "demPct": 37.6,
+     "demVotes": 4887,
+     "margin": 22.5,
+     "othVotes": 311,
+     "repPct": 60.1,
+     "repVotes": 7816,
+     "totalVotes": 13014
+    },
+    "pop2020": 31050,
+    "splitPct": 9.1
+   },
+   "52": {
+    "2016": {
+     "demPct": 61.6,
+     "demVotes": 5700,
+     "margin": -31.6,
+     "othVotes": 784,
+     "repPct": 30.0,
+     "repVotes": 2774,
+     "totalVotes": 9258
+    },
+    "2020": {
+     "demPct": 63.4,
+     "demVotes": 6508,
+     "margin": -28.8,
+     "othVotes": 202,
+     "repPct": 34.6,
+     "repVotes": 3557,
+     "totalVotes": 10267
+    },
+    "2024": {
+     "demPct": 57.4,
+     "demVotes": 5896,
+     "margin": -16.8,
+     "othVotes": 205,
+     "repPct": 40.6,
+     "repVotes": 4169,
+     "totalVotes": 10270
+    },
+    "pop2020": 30229,
+    "splitPct": 21.5
+   },
+   "53": {
+    "2016": {
+     "demPct": 51.1,
+     "demVotes": 3678,
+     "margin": -11.1,
+     "othVotes": 644,
+     "repPct": 40.0,
+     "repVotes": 2882,
+     "totalVotes": 7204
+    },
+    "2020": {
+     "demPct": 53.5,
+     "demVotes": 5002,
+     "margin": -9.4,
+     "othVotes": 222,
+     "repPct": 44.1,
+     "repVotes": 4121,
+     "totalVotes": 9345
+    },
+    "2024": {
+     "demPct": 49.8,
+     "demVotes": 4967,
+     "margin": -1.6,
+     "othVotes": 206,
+     "repPct": 48.2,
+     "repVotes": 4809,
+     "totalVotes": 9982
+    },
+    "pop2020": 31082,
+    "splitPct": 21.7
+   },
+   "54": {
+    "2016": {
+     "demPct": 20.3,
+     "demVotes": 1986,
+     "margin": 51.5,
+     "othVotes": 770,
+     "repPct": 71.8,
+     "repVotes": 7017,
+     "totalVotes": 9773
+    },
+    "2020": {
+     "demPct": 21.4,
+     "demVotes": 2423,
+     "margin": 55.5,
+     "othVotes": 192,
+     "repPct": 76.9,
+     "repVotes": 8686,
+     "totalVotes": 11301
+    },
+    "2024": {
+     "demPct": 21.7,
+     "demVotes": 2435,
+     "margin": 55.0,
+     "othVotes": 185,
+     "repPct": 76.7,
+     "repVotes": 8624,
+     "totalVotes": 11244
+    },
+    "pop2020": 30523,
+    "splitPct": 9.9
+   },
+   "55": {
+    "2016": {
+     "demPct": 25.6,
+     "demVotes": 2588,
+     "margin": 41.1,
+     "othVotes": 778,
+     "repPct": 66.7,
+     "repVotes": 6743,
+     "totalVotes": 10109
+    },
+    "2020": {
+     "demPct": 23.0,
+     "demVotes": 2710,
+     "margin": 52.4,
+     "othVotes": 195,
+     "repPct": 75.4,
+     "repVotes": 8897,
+     "totalVotes": 11802
+    },
+    "2024": {
+     "demPct": 21.3,
+     "demVotes": 2566,
+     "margin": 56.1,
+     "othVotes": 159,
+     "repPct": 77.4,
+     "repVotes": 9315,
+     "totalVotes": 12040
+    },
+    "pop2020": 30608,
+    "splitPct": 5.0
+   },
+   "56": {
+    "2016": {
+     "demPct": 26.9,
+     "demVotes": 3441,
+     "margin": 37.4,
+     "othVotes": 1124,
+     "repPct": 64.3,
+     "repVotes": 8212,
+     "totalVotes": 12777
+    },
+    "2020": {
+     "demPct": 31.7,
+     "demVotes": 4732,
+     "margin": 34.9,
+     "othVotes": 254,
+     "repPct": 66.6,
+     "repVotes": 9920,
+     "totalVotes": 14906
+    },
+    "2024": {
+     "demPct": 30.4,
+     "demVotes": 4492,
+     "margin": 37.3,
+     "othVotes": 281,
+     "repPct": 67.7,
+     "repVotes": 10015,
+     "totalVotes": 14788
+    },
+    "pop2020": 31109,
+    "splitPct": 0.0
+   },
+   "57": {
+    "2016": {
+     "demPct": 40.3,
+     "demVotes": 3970,
+     "margin": 6.4,
+     "othVotes": 1286,
+     "repPct": 46.7,
+     "repVotes": 4598,
+     "totalVotes": 9854
+    },
+    "2020": {
+     "demPct": 50.0,
+     "demVotes": 7130,
+     "margin": -2.6,
+     "othVotes": 382,
+     "repPct": 47.4,
+     "repVotes": 6757,
+     "totalVotes": 14269
+    },
+    "2024": {
+     "demPct": 48.6,
+     "demVotes": 8285,
+     "margin": 0.5,
+     "othVotes": 382,
+     "repPct": 49.1,
+     "repVotes": 8374,
+     "totalVotes": 17041
+    },
+    "pop2020": 30535,
+    "splitPct": 17.3
+   },
+   "58": {
+    "2016": {
+     "demPct": 35.9,
+     "demVotes": 2569,
+     "margin": 18.1,
+     "othVotes": 726,
+     "repPct": 54.0,
+     "repVotes": 3861,
+     "totalVotes": 7156
+    },
+    "2020": {
+     "demPct": 33.5,
+     "demVotes": 2602,
+     "margin": 31.0,
+     "othVotes": 156,
+     "repPct": 64.5,
+     "repVotes": 5020,
+     "totalVotes": 7778
+    },
+    "2024": {
+     "demPct": 30.1,
+     "demVotes": 2304,
+     "margin": 38.1,
+     "othVotes": 128,
+     "repPct": 68.2,
+     "repVotes": 5227,
+     "totalVotes": 7659
+    },
+    "pop2020": 29744,
+    "splitPct": 16.0
+   },
+   "59": {
+    "2016": {
+     "demPct": 24.0,
+     "demVotes": 2662,
+     "margin": 42.9,
+     "othVotes": 1004,
+     "repPct": 66.9,
+     "repVotes": 7425,
+     "totalVotes": 11091
+    },
+    "2020": {
+     "demPct": 27.3,
+     "demVotes": 3394,
+     "margin": 43.5,
+     "othVotes": 226,
+     "repPct": 70.8,
+     "repVotes": 8797,
+     "totalVotes": 12417
+    },
+    "2024": {
+     "demPct": 26.5,
+     "demVotes": 3240,
+     "margin": 45.4,
+     "othVotes": 205,
+     "repPct": 71.9,
+     "repVotes": 8804,
+     "totalVotes": 12249
+    },
+    "pop2020": 30468,
+    "splitPct": 23.1
+   },
+   "6": {
+    "2016": {
+     "demPct": 56.2,
+     "demVotes": 5124,
+     "margin": -25.2,
+     "othVotes": 1168,
+     "repPct": 31.0,
+     "repVotes": 2827,
+     "totalVotes": 9119
+    },
+    "2020": {
+     "demPct": 61.7,
+     "demVotes": 6736,
+     "margin": -25.9,
+     "othVotes": 272,
+     "repPct": 35.8,
+     "repVotes": 3903,
+     "totalVotes": 10911
+    },
+    "2024": {
+     "demPct": 55.8,
+     "demVotes": 5995,
+     "margin": -14.6,
+     "othVotes": 314,
+     "repPct": 41.2,
+     "repVotes": 4428,
+     "totalVotes": 10737
+    },
+    "pop2020": 28877,
+    "splitPct": 38.0
+   },
+   "60": {
+    "2016": {
+     "demPct": 38.6,
+     "demVotes": 4116,
+     "margin": 8.9,
+     "othVotes": 1477,
+     "repPct": 47.5,
+     "repVotes": 5061,
+     "totalVotes": 10654
+    },
+    "2020": {
+     "demPct": 47.1,
+     "demVotes": 6547,
+     "margin": 3.1,
+     "othVotes": 369,
+     "repPct": 50.2,
+     "repVotes": 6976,
+     "totalVotes": 13892
+    },
+    "2024": {
+     "demPct": 45.7,
+     "demVotes": 6762,
+     "margin": 6.4,
+     "othVotes": 317,
+     "repPct": 52.1,
+     "repVotes": 7702,
+     "totalVotes": 14781
+    },
+    "pop2020": 30819,
+    "splitPct": 11.1
+   },
+   "61": {
+    "2016": {
+     "demPct": 34.4,
+     "demVotes": 1912,
+     "margin": 23.1,
+     "othVotes": 452,
+     "repPct": 57.5,
+     "repVotes": 3198,
+     "totalVotes": 5562
+    },
+    "2020": {
+     "demPct": 28.0,
+     "demVotes": 1786,
+     "margin": 42.5,
+     "othVotes": 96,
+     "repPct": 70.5,
+     "repVotes": 4502,
+     "totalVotes": 6384
+    },
+    "2024": {
+     "demPct": 24.9,
+     "demVotes": 1608,
+     "margin": 48.6,
+     "othVotes": 104,
+     "repPct": 73.5,
+     "repVotes": 4750,
+     "totalVotes": 6462
+    },
+    "pop2020": 30763,
+    "splitPct": 15.2
+   },
+   "62": {
+    "2016": {
+     "demPct": 16.7,
+     "demVotes": 1423,
+     "margin": 59.7,
+     "othVotes": 586,
+     "repPct": 76.4,
+     "repVotes": 6498,
+     "totalVotes": 8507
+    },
+    "2020": {
+     "demPct": 16.9,
+     "demVotes": 1725,
+     "margin": 64.5,
+     "othVotes": 173,
+     "repPct": 81.4,
+     "repVotes": 8305,
+     "totalVotes": 10203
+    },
+    "2024": {
+     "demPct": 16.8,
+     "demVotes": 1751,
+     "margin": 65.2,
+     "othVotes": 126,
+     "repPct": 82.0,
+     "repVotes": 8569,
+     "totalVotes": 10446
+    },
+    "pop2020": 31009,
+    "splitPct": 5.4
+   },
+   "63": {
+    "2016": {
+     "demPct": 36.7,
+     "demVotes": 2956,
+     "margin": 14.6,
+     "othVotes": 961,
+     "repPct": 51.3,
+     "repVotes": 4130,
+     "totalVotes": 8047
+    },
+    "2020": {
+     "demPct": 40.5,
+     "demVotes": 3618,
+     "margin": 16.7,
+     "othVotes": 208,
+     "repPct": 57.2,
+     "repVotes": 5103,
+     "totalVotes": 8929
+    },
+    "2024": {
+     "demPct": 36.1,
+     "demVotes": 3110,
+     "margin": 25.8,
+     "othVotes": 171,
+     "repPct": 61.9,
+     "repVotes": 5339,
+     "totalVotes": 8620
+    },
+    "pop2020": 30789,
+    "splitPct": 13.9
+   },
+   "64": {
+    "2016": {
+     "demPct": 19.0,
+     "demVotes": 2101,
+     "margin": 53.8,
+     "othVotes": 894,
+     "repPct": 72.8,
+     "repVotes": 8035,
+     "totalVotes": 11030
+    },
+    "2020": {
+     "demPct": 22.9,
+     "demVotes": 2859,
+     "margin": 52.0,
+     "othVotes": 269,
+     "repPct": 74.9,
+     "repVotes": 9356,
+     "totalVotes": 12484
+    },
+    "2024": {
+     "demPct": 23.5,
+     "demVotes": 2928,
+     "margin": 51.3,
+     "othVotes": 217,
+     "repPct": 74.8,
+     "repVotes": 9328,
+     "totalVotes": 12473
+    },
+    "pop2020": 31235,
+    "splitPct": 4.0
+   },
+   "65": {
+    "2016": {
+     "demPct": 66.3,
+     "demVotes": 6341,
+     "margin": -48.0,
+     "othVotes": 1476,
+     "repPct": 18.3,
+     "repVotes": 1753,
+     "totalVotes": 9570
+    },
+    "2020": {
+     "demPct": 73.2,
+     "demVotes": 8167,
+     "margin": -48.5,
+     "othVotes": 237,
+     "repPct": 24.7,
+     "repVotes": 2755,
+     "totalVotes": 11159
+    },
+    "2024": {
+     "demPct": 65.9,
+     "demVotes": 6710,
+     "margin": -34.6,
+     "othVotes": 284,
+     "repPct": 31.3,
+     "repVotes": 3193,
+     "totalVotes": 10187
+    },
+    "pop2020": 28794,
+    "splitPct": 12.5
+   },
+   "66": {
+    "2016": {
+     "demPct": 26.3,
+     "demVotes": 2267,
+     "margin": 39.7,
+     "othVotes": 672,
+     "repPct": 66.0,
+     "repVotes": 5694,
+     "totalVotes": 8633
+    },
+    "2020": {
+     "demPct": 23.3,
+     "demVotes": 2396,
+     "margin": 52.0,
+     "othVotes": 141,
+     "repPct": 75.3,
+     "repVotes": 7727,
+     "totalVotes": 10264
+    },
+    "2024": {
+     "demPct": 22.0,
+     "demVotes": 2332,
+     "margin": 54.8,
+     "othVotes": 135,
+     "repPct": 76.8,
+     "repVotes": 8147,
+     "totalVotes": 10614
+    },
+    "pop2020": 30865,
+    "splitPct": 14.5
+   },
+   "67": {
+    "2016": {
+     "demPct": 25.4,
+     "demVotes": 2899,
+     "margin": 39.4,
+     "othVotes": 1117,
+     "repPct": 64.8,
+     "repVotes": 7403,
+     "totalVotes": 11419
+    },
+    "2020": {
+     "demPct": 29.4,
+     "demVotes": 3676,
+     "margin": 39.4,
+     "othVotes": 228,
+     "repPct": 68.8,
+     "repVotes": 8603,
+     "totalVotes": 12507
+    },
+    "2024": {
+     "demPct": 28.9,
+     "demVotes": 3556,
+     "margin": 40.2,
+     "othVotes": 249,
+     "repPct": 69.1,
+     "repVotes": 8504,
+     "totalVotes": 12309
+    },
+    "pop2020": 31143,
+    "splitPct": 9.7
+   },
+   "68": {
+    "2016": {
+     "demPct": 43.3,
+     "demVotes": 5237,
+     "margin": -0.2,
+     "othVotes": 1641,
+     "repPct": 43.1,
+     "repVotes": 5206,
+     "totalVotes": 12084
+    },
+    "2020": {
+     "demPct": 54.1,
+     "demVotes": 8348,
+     "margin": -10.6,
+     "othVotes": 373,
+     "repPct": 43.5,
+     "repVotes": 6705,
+     "totalVotes": 15426
+    },
+    "2024": {
+     "demPct": 51.1,
+     "demVotes": 7963,
+     "margin": -4.5,
+     "othVotes": 358,
+     "repPct": 46.6,
+     "repVotes": 7252,
+     "totalVotes": 15573
+    },
+    "pop2020": 31616,
+    "splitPct": 34.2
+   },
+   "69": {
+    "2016": {
+     "demPct": 57.6,
+     "demVotes": 4672,
+     "margin": -30.7,
+     "othVotes": 1258,
+     "repPct": 26.9,
+     "repVotes": 2187,
+     "totalVotes": 8117
+    },
+    "2020": {
+     "demPct": 63.8,
+     "demVotes": 5747,
+     "margin": -30.0,
+     "othVotes": 213,
+     "repPct": 33.8,
+     "repVotes": 3044,
+     "totalVotes": 9004
+    },
+    "2024": {
+     "demPct": 56.7,
+     "demVotes": 5156,
+     "margin": -16.1,
+     "othVotes": 249,
+     "repPct": 40.6,
+     "repVotes": 3687,
+     "totalVotes": 9092
+    },
+    "pop2020": 28593,
+    "splitPct": 30.4
+   },
+   "7": {
+    "2016": {
+     "demPct": 42.1,
+     "demVotes": 3919,
+     "margin": 1.9,
+     "othVotes": 1291,
+     "repPct": 44.0,
+     "repVotes": 4092,
+     "totalVotes": 9302
+    },
+    "2020": {
+     "demPct": 45.9,
+     "demVotes": 4937,
+     "margin": 5.9,
+     "othVotes": 254,
+     "repPct": 51.8,
+     "repVotes": 5568,
+     "totalVotes": 10759
+    },
+    "2024": {
+     "demPct": 42.0,
+     "demVotes": 4527,
+     "margin": 14.1,
+     "othVotes": 207,
+     "repPct": 56.1,
+     "repVotes": 6048,
+     "totalVotes": 10782
+    },
+    "pop2020": 29842,
+    "splitPct": 28.3
+   },
+   "70": {
+    "2016": {
+     "demPct": 62.0,
+     "demVotes": 7100,
+     "margin": -34.9,
+     "othVotes": 1239,
+     "repPct": 27.1,
+     "repVotes": 3107,
+     "totalVotes": 11446
+    },
+    "2020": {
+     "demPct": 62.3,
+     "demVotes": 7770,
+     "margin": -26.6,
+     "othVotes": 247,
+     "repPct": 35.7,
+     "repVotes": 4447,
+     "totalVotes": 12464
+    },
+    "2024": {
+     "demPct": 57.2,
+     "demVotes": 6905,
+     "margin": -16.5,
+     "othVotes": 258,
+     "repPct": 40.7,
+     "repVotes": 4910,
+     "totalVotes": 12073
+    },
+    "pop2020": 29376,
+    "splitPct": 3.2
+   },
+   "8": {
+    "2016": {
+     "demPct": 37.1,
+     "demVotes": 4477,
+     "margin": 13.0,
+     "othVotes": 1553,
+     "repPct": 50.1,
+     "repVotes": 6047,
+     "totalVotes": 12077
+    },
+    "2020": {
+     "demPct": 42.3,
+     "demVotes": 5929,
+     "margin": 13.5,
+     "othVotes": 269,
+     "repPct": 55.8,
+     "repVotes": 7816,
+     "totalVotes": 14014
+    },
+    "2024": {
+     "demPct": 39.6,
+     "demVotes": 5730,
+     "margin": 19.0,
+     "othVotes": 263,
+     "repPct": 58.6,
+     "repVotes": 8479,
+     "totalVotes": 14472
+    },
+    "pop2020": 29901,
+    "splitPct": 30.3
+   },
+   "9": {
+    "2016": {
+     "demPct": 59.4,
+     "demVotes": 4423,
+     "margin": -32.6,
+     "othVotes": 1030,
+     "repPct": 26.8,
+     "repVotes": 1998,
+     "totalVotes": 7451
+    },
+    "2020": {
+     "demPct": 65.0,
+     "demVotes": 5767,
+     "margin": -32.2,
+     "othVotes": 197,
+     "repPct": 32.8,
+     "repVotes": 2906,
+     "totalVotes": 8870
+    },
+    "2024": {
+     "demPct": 57.2,
+     "demVotes": 5064,
+     "margin": -17.5,
+     "othVotes": 271,
+     "repPct": 39.7,
+     "repVotes": 3513,
+     "totalVotes": 8848
+    },
+    "pop2020": 27423,
+    "splitPct": 44.1
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "dra": "NM_2020_VD_tabblock.vtd.datasets.geojson",
+  "elections": [
+   "2016",
+   "2020",
+   "2024"
+  ],
+  "eras": {
+   "house": {
+    "2020": [
+     2016,
+     2018,
+     2020
+    ],
+    "current": null
+   },
+   "senate": {
+    "2020": [
+     2016,
+     2020
+    ],
+    "current": null
+   }
+  }
+ },
+ "senate": {
+  "2020": {
+   "1": {
+    "2016": {
+     "demPct": 22.6,
+     "demVotes": 3733,
+     "margin": 43.9,
+     "othVotes": 1806,
+     "repPct": 66.5,
+     "repVotes": 11010,
+     "totalVotes": 16549
+    },
+    "2020": {
+     "demPct": 30.2,
+     "demVotes": 5682,
+     "margin": 37.1,
+     "othVotes": 466,
+     "repPct": 67.3,
+     "repVotes": 12643,
+     "totalVotes": 18791
+    },
+    "2024": {
+     "demPct": 29.8,
+     "demVotes": 5772,
+     "margin": 38.5,
+     "othVotes": 382,
+     "repPct": 68.3,
+     "repVotes": 13239,
+     "totalVotes": 19393
+    },
+    "pop2020": 47438,
+    "splitPct": 32.6
+   },
+   "10": {
+    "2016": {
+     "demPct": 45.6,
+     "demVotes": 9838,
+     "margin": -4.2,
+     "othVotes": 2820,
+     "repPct": 41.4,
+     "repVotes": 8926,
+     "totalVotes": 21584
+    },
+    "2020": {
+     "demPct": 55.5,
+     "demVotes": 14616,
+     "margin": -13.2,
+     "othVotes": 574,
+     "repPct": 42.3,
+     "repVotes": 11137,
+     "totalVotes": 26327
+    },
+    "2024": {
+     "demPct": 53.7,
+     "demVotes": 14132,
+     "margin": -9.6,
+     "othVotes": 580,
+     "repPct": 44.1,
+     "repVotes": 11619,
+     "totalVotes": 26331
+    },
+    "pop2020": 52974,
+    "splitPct": 40.9
+   },
+   "11": {
+    "2016": {
+     "demPct": 62.0,
+     "demVotes": 7369,
+     "margin": -35.8,
+     "othVotes": 1398,
+     "repPct": 26.2,
+     "repVotes": 3120,
+     "totalVotes": 11887
+    },
+    "2020": {
+     "demPct": 65.8,
+     "demVotes": 9069,
+     "margin": -33.4,
+     "othVotes": 250,
+     "repPct": 32.4,
+     "repVotes": 4464,
+     "totalVotes": 13783
+    },
+    "2024": {
+     "demPct": 56.8,
+     "demVotes": 7803,
+     "margin": -15.5,
+     "othVotes": 262,
+     "repPct": 41.3,
+     "repVotes": 5682,
+     "totalVotes": 13747
+    },
+    "pop2020": 46606,
+    "splitPct": 37.1
+   },
+   "12": {
+    "2016": {
+     "demPct": 70.1,
+     "demVotes": 11590,
+     "margin": -52.9,
+     "othVotes": 2102,
+     "repPct": 17.2,
+     "repVotes": 2842,
+     "totalVotes": 16534
+    },
+    "2020": {
+     "demPct": 76.9,
+     "demVotes": 14148,
+     "margin": -56.2,
+     "othVotes": 452,
+     "repPct": 20.7,
+     "repVotes": 3800,
+     "totalVotes": 18400
+    },
+    "2024": {
+     "demPct": 72.5,
+     "demVotes": 12941,
+     "margin": -48.6,
+     "othVotes": 646,
+     "repPct": 23.9,
+     "repVotes": 4265,
+     "totalVotes": 17852
+    },
+    "pop2020": 47528,
+    "splitPct": 48.4
+   },
+   "13": {
+    "2016": {
+     "demPct": 60.1,
+     "demVotes": 13565,
+     "margin": -32.1,
+     "othVotes": 2677,
+     "repPct": 28.0,
+     "repVotes": 6332,
+     "totalVotes": 22574
+    },
+    "2020": {
+     "demPct": 67.7,
+     "demVotes": 17494,
+     "margin": -37.4,
+     "othVotes": 533,
+     "repPct": 30.3,
+     "repVotes": 7831,
+     "totalVotes": 25858
+    },
+    "2024": {
+     "demPct": 65.2,
+     "demVotes": 16402,
+     "margin": -32.9,
+     "othVotes": 624,
+     "repPct": 32.3,
+     "repVotes": 8128,
+     "totalVotes": 25154
+    },
+    "pop2020": 49549,
+    "splitPct": 27.4
+   },
+   "14": {
+    "2016": {
+     "demPct": 56.1,
+     "demVotes": 7402,
+     "margin": -24.5,
+     "othVotes": 1636,
+     "repPct": 31.6,
+     "repVotes": 4167,
+     "totalVotes": 13205
+    },
+    "2020": {
+     "demPct": 61.4,
+     "demVotes": 9744,
+     "margin": -24.7,
+     "othVotes": 313,
+     "repPct": 36.7,
+     "repVotes": 5824,
+     "totalVotes": 15881
+    },
+    "2024": {
+     "demPct": 53.8,
+     "demVotes": 8790,
+     "margin": -9.5,
+     "othVotes": 317,
+     "repPct": 44.3,
+     "repVotes": 7244,
+     "totalVotes": 16351
+    },
+    "pop2020": 50563,
+    "splitPct": 21.5
+   },
+   "15": {
+    "2016": {
+     "demPct": 50.6,
+     "demVotes": 10806,
+     "margin": -16.0,
+     "othVotes": 3164,
+     "repPct": 34.6,
+     "repVotes": 7383,
+     "totalVotes": 21353
+    },
+    "2020": {
+     "demPct": 61.6,
+     "demVotes": 14727,
+     "margin": -26.0,
+     "othVotes": 674,
+     "repPct": 35.6,
+     "repVotes": 8496,
+     "totalVotes": 23897
+    },
+    "2024": {
+     "demPct": 61.3,
+     "demVotes": 13892,
+     "margin": -25.4,
+     "othVotes": 632,
+     "repPct": 35.9,
+     "repVotes": 8130,
+     "totalVotes": 22654
+    },
+    "pop2020": 49093,
+    "splitPct": 29.4
+   },
+   "16": {
+    "2016": {
+     "demPct": 69.4,
+     "demVotes": 15498,
+     "margin": -50.8,
+     "othVotes": 2684,
+     "repPct": 18.6,
+     "repVotes": 4154,
+     "totalVotes": 22336
+    },
+    "2020": {
+     "demPct": 77.6,
+     "demVotes": 19210,
+     "margin": -57.9,
+     "othVotes": 671,
+     "repPct": 19.7,
+     "repVotes": 4888,
+     "totalVotes": 24769
+    },
+    "2024": {
+     "demPct": 76.6,
+     "demVotes": 18057,
+     "margin": -56.7,
+     "othVotes": 837,
+     "repPct": 19.9,
+     "repVotes": 4694,
+     "totalVotes": 23588
+    },
+    "pop2020": 47773,
+    "splitPct": 16.3
+   },
+   "17": {
+    "2016": {
+     "demPct": 54.6,
+     "demVotes": 6535,
+     "margin": -23.9,
+     "othVotes": 1757,
+     "repPct": 30.7,
+     "repVotes": 3669,
+     "totalVotes": 11961
+    },
+    "2020": {
+     "demPct": 63.6,
+     "demVotes": 8789,
+     "margin": -29.8,
+     "othVotes": 370,
+     "repPct": 33.8,
+     "repVotes": 4671,
+     "totalVotes": 13830
+    },
+    "2024": {
+     "demPct": 61.6,
+     "demVotes": 7705,
+     "margin": -25.7,
+     "othVotes": 317,
+     "repPct": 35.9,
+     "repVotes": 4486,
+     "totalVotes": 12508
+    },
+    "pop2020": 46137,
+    "splitPct": 49.1
+   },
+   "18": {
+    "2016": {
+     "demPct": 45.9,
+     "demVotes": 11449,
+     "margin": -6.7,
+     "othVotes": 3725,
+     "repPct": 39.2,
+     "repVotes": 9773,
+     "totalVotes": 24947
+    },
+    "2020": {
+     "demPct": 56.9,
+     "demVotes": 15636,
+     "margin": -16.6,
+     "othVotes": 761,
+     "repPct": 40.3,
+     "repVotes": 11082,
+     "totalVotes": 27479
+    },
+    "2024": {
+     "demPct": 58.1,
+     "demVotes": 15237,
+     "margin": -18.8,
+     "othVotes": 696,
+     "repPct": 39.3,
+     "repVotes": 10304,
+     "totalVotes": 26237
+    },
+    "pop2020": 49172,
+    "splitPct": 43.8
+   },
+   "19": {
+    "2016": {
+     "demPct": 36.1,
+     "demVotes": 9095,
+     "margin": 14.2,
+     "othVotes": 3408,
+     "repPct": 50.3,
+     "repVotes": 12671,
+     "totalVotes": 25174
+    },
+    "2020": {
+     "demPct": 44.0,
+     "demVotes": 13019,
+     "margin": 9.3,
+     "othVotes": 802,
+     "repPct": 53.3,
+     "repVotes": 15765,
+     "totalVotes": 29586
+    },
+    "2024": {
+     "demPct": 44.0,
+     "demVotes": 13344,
+     "margin": 9.7,
+     "othVotes": 702,
+     "repPct": 53.7,
+     "repVotes": 16262,
+     "totalVotes": 30308
+    },
+    "pop2020": 51742,
+    "splitPct": 18.4
+   },
+   "2": {
+    "2016": {
+     "demPct": 16.6,
+     "demVotes": 2981,
+     "margin": 58.0,
+     "othVotes": 1598,
+     "repPct": 74.6,
+     "repVotes": 13422,
+     "totalVotes": 18001
+    },
+    "2020": {
+     "demPct": 21.5,
+     "demVotes": 4333,
+     "margin": 55.0,
+     "othVotes": 411,
+     "repPct": 76.5,
+     "repVotes": 15419,
+     "totalVotes": 20163
+    },
+    "2024": {
+     "demPct": 22.5,
+     "demVotes": 4623,
+     "margin": 53.2,
+     "othVotes": 365,
+     "repPct": 75.7,
+     "repVotes": 15577,
+     "totalVotes": 20565
+    },
+    "pop2020": 43432,
+    "splitPct": 10.1
+   },
+   "20": {
+    "2016": {
+     "demPct": 45.1,
+     "demVotes": 11543,
+     "margin": -4.1,
+     "othVotes": 3564,
+     "repPct": 41.0,
+     "repVotes": 10495,
+     "totalVotes": 25602
+    },
+    "2020": {
+     "demPct": 56.0,
+     "demVotes": 16059,
+     "margin": -14.6,
+     "othVotes": 727,
+     "repPct": 41.4,
+     "repVotes": 11871,
+     "totalVotes": 28657
+    },
+    "2024": {
+     "demPct": 57.3,
+     "demVotes": 15623,
+     "margin": -17.3,
+     "othVotes": 721,
+     "repPct": 40.0,
+     "repVotes": 10915,
+     "totalVotes": 27259
+    },
+    "pop2020": 48785,
+    "splitPct": 25.5
+   },
+   "21": {
+    "2016": {
+     "demPct": 41.1,
+     "demVotes": 10835,
+     "margin": 4.8,
+     "othVotes": 3408,
+     "repPct": 45.9,
+     "repVotes": 12100,
+     "totalVotes": 26343
+    },
+    "2020": {
+     "demPct": 51.2,
+     "demVotes": 15495,
+     "margin": -4.8,
+     "othVotes": 706,
+     "repPct": 46.4,
+     "repVotes": 14043,
+     "totalVotes": 30244
+    },
+    "2024": {
+     "demPct": 52.7,
+     "demVotes": 15457,
+     "margin": -8.0,
+     "othVotes": 770,
+     "repPct": 44.7,
+     "repVotes": 13109,
+     "totalVotes": 29336
+    },
+    "pop2020": 50465,
+    "splitPct": 19.0
+   },
+   "22": {
+    "2016": {
+     "demPct": 59.6,
+     "demVotes": 9810,
+     "margin": -34.2,
+     "othVotes": 2465,
+     "repPct": 25.4,
+     "repVotes": 4171,
+     "totalVotes": 16446
+    },
+    "2020": {
+     "demPct": 64.9,
+     "demVotes": 13415,
+     "margin": -32.3,
+     "othVotes": 516,
+     "repPct": 32.6,
+     "repVotes": 6749,
+     "totalVotes": 20680
+    },
+    "2024": {
+     "demPct": 58.7,
+     "demVotes": 12424,
+     "margin": -20.0,
+     "othVotes": 557,
+     "repPct": 38.7,
+     "repVotes": 8187,
+     "totalVotes": 21168
+    },
+    "pop2020": 49172,
+    "splitPct": 5.4
+   },
+   "23": {
+    "2016": {
+     "demPct": 44.9,
+     "demVotes": 10778,
+     "margin": -3.7,
+     "othVotes": 3332,
+     "repPct": 41.2,
+     "repVotes": 9888,
+     "totalVotes": 23998
+    },
+    "2020": {
+     "demPct": 54.7,
+     "demVotes": 16754,
+     "margin": -11.8,
+     "othVotes": 728,
+     "repPct": 42.9,
+     "repVotes": 13141,
+     "totalVotes": 30623
+    },
+    "2024": {
+     "demPct": 53.2,
+     "demVotes": 17070,
+     "margin": -8.6,
+     "othVotes": 711,
+     "repPct": 44.6,
+     "repVotes": 14293,
+     "totalVotes": 32074
+    },
+    "pop2020": 56749,
+    "splitPct": 26.0
+   },
+   "24": {
+    "2016": {
+     "demPct": 73.5,
+     "demVotes": 14881,
+     "margin": -56.5,
+     "othVotes": 1942,
+     "repPct": 17.0,
+     "repVotes": 3436,
+     "totalVotes": 20259
+    },
+    "2020": {
+     "demPct": 78.5,
+     "demVotes": 18655,
+     "margin": -58.8,
+     "othVotes": 436,
+     "repPct": 19.7,
+     "repVotes": 4678,
+     "totalVotes": 23769
+    },
+    "2024": {
+     "demPct": 74.5,
+     "demVotes": 18171,
+     "margin": -51.5,
+     "othVotes": 608,
+     "repPct": 23.0,
+     "repVotes": 5615,
+     "totalVotes": 24394
+    },
+    "pop2020": 52992,
+    "splitPct": 35.0
+   },
+   "25": {
+    "2016": {
+     "demPct": 76.9,
+     "demVotes": 25747,
+     "margin": -60.9,
+     "othVotes": 2391,
+     "repPct": 16.0,
+     "repVotes": 5345,
+     "totalVotes": 33483
+    },
+    "2020": {
+     "demPct": 81.8,
+     "demVotes": 30723,
+     "margin": -65.1,
+     "othVotes": 540,
+     "repPct": 16.7,
+     "repVotes": 6276,
+     "totalVotes": 37539
+    },
+    "2024": {
+     "demPct": 81.1,
+     "demVotes": 30251,
+     "margin": -64.4,
+     "othVotes": 792,
+     "repPct": 16.7,
+     "repVotes": 6240,
+     "totalVotes": 37283
+    },
+    "pop2020": 53561,
+    "splitPct": 18.4
+   },
+   "26": {
+    "2016": {
+     "demPct": 56.9,
+     "demVotes": 9290,
+     "margin": -26.7,
+     "othVotes": 2113,
+     "repPct": 30.2,
+     "repVotes": 4932,
+     "totalVotes": 16335
+    },
+    "2020": {
+     "demPct": 64.0,
+     "demVotes": 12402,
+     "margin": -30.4,
+     "othVotes": 469,
+     "repPct": 33.6,
+     "repVotes": 6517,
+     "totalVotes": 19388
+    },
+    "2024": {
+     "demPct": 58.4,
+     "demVotes": 11218,
+     "margin": -18.8,
+     "othVotes": 386,
+     "repPct": 39.6,
+     "repVotes": 7620,
+     "totalVotes": 19224
+    },
+    "pop2020": 50467,
+    "splitPct": 28.1
+   },
+   "27": {
+    "2016": {
+     "demPct": 23.6,
+     "demVotes": 3625,
+     "margin": 43.4,
+     "othVotes": 1436,
+     "repPct": 67.0,
+     "repVotes": 10297,
+     "totalVotes": 15358
+    },
+    "2020": {
+     "demPct": 26.9,
+     "demVotes": 4602,
+     "margin": 44.0,
+     "othVotes": 374,
+     "repPct": 70.9,
+     "repVotes": 12103,
+     "totalVotes": 17079
+    },
+    "2024": {
+     "demPct": 26.2,
+     "demVotes": 4467,
+     "margin": 45.8,
+     "othVotes": 298,
+     "repPct": 72.0,
+     "repVotes": 12261,
+     "totalVotes": 17026
+    },
+    "pop2020": 47571,
+    "splitPct": 9.0
+   },
+   "28": {
+    "2016": {
+     "demPct": 45.4,
+     "demVotes": 9467,
+     "margin": -1.5,
+     "othVotes": 2225,
+     "repPct": 43.9,
+     "repVotes": 9165,
+     "totalVotes": 20857
+    },
+    "2020": {
+     "demPct": 49.5,
+     "demVotes": 11470,
+     "margin": -1.0,
+     "othVotes": 481,
+     "repPct": 48.5,
+     "repVotes": 11239,
+     "totalVotes": 23190
+    },
+    "2024": {
+     "demPct": 47.4,
+     "demVotes": 10933,
+     "margin": 2.8,
+     "othVotes": 556,
+     "repPct": 50.2,
+     "repVotes": 11563,
+     "totalVotes": 23052
+    },
+    "pop2020": 46365,
+    "splitPct": 0.0
+   },
+   "29": {
+    "2016": {
+     "demPct": 41.7,
+     "demVotes": 6940,
+     "margin": 3.0,
+     "othVotes": 2267,
+     "repPct": 44.7,
+     "repVotes": 7439,
+     "totalVotes": 16646
+    },
+    "2020": {
+     "demPct": 46.1,
+     "demVotes": 8867,
+     "margin": 5.7,
+     "othVotes": 404,
+     "repPct": 51.8,
+     "repVotes": 9968,
+     "totalVotes": 19239
+    },
+    "2024": {
+     "demPct": 42.7,
+     "demVotes": 8464,
+     "margin": 12.8,
+     "othVotes": 359,
+     "repPct": 55.5,
+     "repVotes": 10994,
+     "totalVotes": 19817
+    },
+    "pop2020": 49306,
+    "splitPct": 15.1
+   },
+   "3": {
+    "2016": {
+     "demPct": 55.3,
+     "demVotes": 8506,
+     "margin": -26.1,
+     "othVotes": 2373,
+     "repPct": 29.2,
+     "repVotes": 4489,
+     "totalVotes": 15368
+    },
+    "2020": {
+     "demPct": 63.0,
+     "demVotes": 11368,
+     "margin": -28.9,
+     "othVotes": 515,
+     "repPct": 34.1,
+     "repVotes": 6155,
+     "totalVotes": 18038
+    },
+    "2024": {
+     "demPct": 56.5,
+     "demVotes": 9948,
+     "margin": -16.3,
+     "othVotes": 580,
+     "repPct": 40.2,
+     "repVotes": 7085,
+     "totalVotes": 17613
+    },
+    "pop2020": 44621,
+    "splitPct": 29.4
+   },
+   "30": {
+    "2016": {
+     "demPct": 43.6,
+     "demVotes": 7435,
+     "margin": 0.0,
+     "othVotes": 2176,
+     "repPct": 43.6,
+     "repVotes": 7430,
+     "totalVotes": 17041
+    },
+    "2020": {
+     "demPct": 50.1,
+     "demVotes": 10002,
+     "margin": -2.2,
+     "othVotes": 397,
+     "repPct": 47.9,
+     "repVotes": 9552,
+     "totalVotes": 19951
+    },
+    "2024": {
+     "demPct": 46.5,
+     "demVotes": 9561,
+     "margin": 5.0,
+     "othVotes": 418,
+     "repPct": 51.5,
+     "repVotes": 10593,
+     "totalVotes": 20572
+    },
+    "pop2020": 49526,
+    "splitPct": 35.6
+   },
+   "31": {
+    "2016": {
+     "demPct": 63.2,
+     "demVotes": 8061,
+     "margin": -33.7,
+     "othVotes": 932,
+     "repPct": 29.5,
+     "repVotes": 3764,
+     "totalVotes": 12757
+    },
+    "2020": {
+     "demPct": 62.9,
+     "demVotes": 9597,
+     "margin": -27.9,
+     "othVotes": 315,
+     "repPct": 35.0,
+     "repVotes": 5339,
+     "totalVotes": 15251
+    },
+    "2024": {
+     "demPct": 54.5,
+     "demVotes": 8274,
+     "margin": -10.8,
+     "othVotes": 278,
+     "repPct": 43.7,
+     "repVotes": 6632,
+     "totalVotes": 15184
+    },
+    "pop2020": 50240,
+    "splitPct": 14.7
+   },
+   "32": {
+    "2016": {
+     "demPct": 34.9,
+     "demVotes": 4064,
+     "margin": 19.5,
+     "othVotes": 1250,
+     "repPct": 54.4,
+     "repVotes": 6341,
+     "totalVotes": 11655
+    },
+    "2020": {
+     "demPct": 34.1,
+     "demVotes": 4421,
+     "margin": 30.0,
+     "othVotes": 236,
+     "repPct": 64.1,
+     "repVotes": 8304,
+     "totalVotes": 12961
+    },
+    "2024": {
+     "demPct": 30.9,
+     "demVotes": 3930,
+     "margin": 36.5,
+     "othVotes": 217,
+     "repPct": 67.4,
+     "repVotes": 8564,
+     "totalVotes": 12711
+    },
+    "pop2020": 47893,
+    "splitPct": 36.9
+   },
+   "33": {
+    "2016": {
+     "demPct": 27.9,
+     "demVotes": 5090,
+     "margin": 34.4,
+     "othVotes": 1792,
+     "repPct": 62.3,
+     "repVotes": 11371,
+     "totalVotes": 18253
+    },
+    "2020": {
+     "demPct": 32.8,
+     "demVotes": 6815,
+     "margin": 32.3,
+     "othVotes": 440,
+     "repPct": 65.1,
+     "repVotes": 13506,
+     "totalVotes": 20761
+    },
+    "2024": {
+     "demPct": 32.3,
+     "demVotes": 6723,
+     "margin": 33.3,
+     "othVotes": 450,
+     "repPct": 65.6,
+     "repVotes": 13649,
+     "totalVotes": 20822
+    },
+    "pop2020": 47314,
+    "splitPct": 15.4
+   },
+   "34": {
+    "2016": {
+     "demPct": 29.2,
+     "demVotes": 4777,
+     "margin": 33.0,
+     "othVotes": 1398,
+     "repPct": 62.2,
+     "repVotes": 10160,
+     "totalVotes": 16335
+    },
+    "2020": {
+     "demPct": 32.0,
+     "demVotes": 6220,
+     "margin": 33.8,
+     "othVotes": 430,
+     "repPct": 65.8,
+     "repVotes": 12816,
+     "totalVotes": 19466
+    },
+    "2024": {
+     "demPct": 30.6,
+     "demVotes": 6105,
+     "margin": 36.9,
+     "othVotes": 371,
+     "repPct": 67.5,
+     "repVotes": 13445,
+     "totalVotes": 19921
+    },
+    "pop2020": 58596,
+    "splitPct": 16.1
+   },
+   "35": {
+    "2016": {
+     "demPct": 40.8,
+     "demVotes": 7210,
+     "margin": 9.2,
+     "othVotes": 1621,
+     "repPct": 50.0,
+     "repVotes": 8834,
+     "totalVotes": 17665
+    },
+    "2020": {
+     "demPct": 43.5,
+     "demVotes": 8613,
+     "margin": 11.1,
+     "othVotes": 360,
+     "repPct": 54.6,
+     "repVotes": 10808,
+     "totalVotes": 19781
+    },
+    "2024": {
+     "demPct": 41.8,
+     "demVotes": 8346,
+     "margin": 14.2,
+     "othVotes": 429,
+     "repPct": 56.0,
+     "repVotes": 11169,
+     "totalVotes": 19944
+    },
+    "pop2020": 48602,
+    "splitPct": 8.8
+   },
+   "36": {
+    "2016": {
+     "demPct": 50.1,
+     "demVotes": 9133,
+     "margin": -11.2,
+     "othVotes": 2019,
+     "repPct": 38.9,
+     "repVotes": 7090,
+     "totalVotes": 18242
+    },
+    "2020": {
+     "demPct": 55.7,
+     "demVotes": 11431,
+     "margin": -13.7,
+     "othVotes": 470,
+     "repPct": 42.0,
+     "repVotes": 8621,
+     "totalVotes": 20522
+    },
+    "2024": {
+     "demPct": 51.5,
+     "demVotes": 10801,
+     "margin": -5.3,
+     "othVotes": 466,
+     "repPct": 46.2,
+     "repVotes": 9687,
+     "totalVotes": 20954
+    },
+    "pop2020": 51467,
+    "splitPct": 38.5
+   },
+   "37": {
+    "2016": {
+     "demPct": 49.1,
+     "demVotes": 10282,
+     "margin": -9.2,
+     "othVotes": 2306,
+     "repPct": 39.9,
+     "repVotes": 8343,
+     "totalVotes": 20931
+    },
+    "2020": {
+     "demPct": 55.2,
+     "demVotes": 14575,
+     "margin": -12.8,
+     "othVotes": 624,
+     "repPct": 42.4,
+     "repVotes": 11191,
+     "totalVotes": 26390
+    },
+    "2024": {
+     "demPct": 53.5,
+     "demVotes": 15366,
+     "margin": -9.3,
+     "othVotes": 660,
+     "repPct": 44.2,
+     "repVotes": 12677,
+     "totalVotes": 28703
+    },
+    "pop2020": 59718,
+    "splitPct": 19.7
+   },
+   "38": {
+    "2016": {
+     "demPct": 57.8,
+     "demVotes": 8472,
+     "margin": -27.6,
+     "othVotes": 1751,
+     "repPct": 30.2,
+     "repVotes": 4431,
+     "totalVotes": 14654
+    },
+    "2020": {
+     "demPct": 62.9,
+     "demVotes": 9954,
+     "margin": -28.3,
+     "othVotes": 400,
+     "repPct": 34.6,
+     "repVotes": 5471,
+     "totalVotes": 15825
+    },
+    "2024": {
+     "demPct": 57.5,
+     "demVotes": 9026,
+     "margin": -17.4,
+     "othVotes": 374,
+     "repPct": 40.1,
+     "repVotes": 6293,
+     "totalVotes": 15693
+    },
+    "pop2020": 47181,
+    "splitPct": 28.8
+   },
+   "39": {
+    "2016": {
+     "demPct": 50.7,
+     "demVotes": 9931,
+     "margin": -11.0,
+     "othVotes": 1863,
+     "repPct": 39.7,
+     "repVotes": 7779,
+     "totalVotes": 19573
+    },
+    "2020": {
+     "demPct": 55.1,
+     "demVotes": 12617,
+     "margin": -11.8,
+     "othVotes": 368,
+     "repPct": 43.3,
+     "repVotes": 9926,
+     "totalVotes": 22911
+    },
+    "2024": {
+     "demPct": 52.0,
+     "demVotes": 12133,
+     "margin": -6.0,
+     "othVotes": 476,
+     "repPct": 46.0,
+     "repVotes": 10738,
+     "totalVotes": 23347
+    },
+    "pop2020": 49566,
+    "splitPct": 21.7
+   },
+   "4": {
+    "2016": {
+     "demPct": 57.4,
+     "demVotes": 8736,
+     "margin": -28.4,
+     "othVotes": 2055,
+     "repPct": 29.0,
+     "repVotes": 4416,
+     "totalVotes": 15207
+    },
+    "2020": {
+     "demPct": 63.0,
+     "demVotes": 11423,
+     "margin": -28.5,
+     "othVotes": 457,
+     "repPct": 34.5,
+     "repVotes": 6246,
+     "totalVotes": 18126
+    },
+    "2024": {
+     "demPct": 56.6,
+     "demVotes": 10124,
+     "margin": -16.3,
+     "othVotes": 547,
+     "repPct": 40.3,
+     "repVotes": 7212,
+     "totalVotes": 17883
+    },
+    "pop2020": 50457,
+    "splitPct": 16.8
+   },
+   "40": {
+    "2016": {
+     "demPct": 38.6,
+     "demVotes": 8997,
+     "margin": 9.3,
+     "othVotes": 3148,
+     "repPct": 47.9,
+     "repVotes": 11147,
+     "totalVotes": 23292
+    },
+    "2020": {
+     "demPct": 47.9,
+     "demVotes": 14188,
+     "margin": 1.8,
+     "othVotes": 722,
+     "repPct": 49.7,
+     "repVotes": 14731,
+     "totalVotes": 29641
+    },
+    "2024": {
+     "demPct": 47.3,
+     "demVotes": 14797,
+     "margin": 3.2,
+     "othVotes": 687,
+     "repPct": 50.5,
+     "repVotes": 15787,
+     "totalVotes": 31271
+    },
+    "pop2020": 59973,
+    "splitPct": 37.8
+   },
+   "41": {
+    "2016": {
+     "demPct": 33.8,
+     "demVotes": 4143,
+     "margin": 24.6,
+     "othVotes": 959,
+     "repPct": 58.4,
+     "repVotes": 7168,
+     "totalVotes": 12270
+    },
+    "2020": {
+     "demPct": 27.3,
+     "demVotes": 3960,
+     "margin": 43.9,
+     "othVotes": 213,
+     "repPct": 71.2,
+     "repVotes": 10309,
+     "totalVotes": 14482
+    },
+    "2024": {
+     "demPct": 24.9,
+     "demVotes": 3698,
+     "margin": 48.9,
+     "othVotes": 198,
+     "repPct": 73.8,
+     "repVotes": 10977,
+     "totalVotes": 14873
+    },
+    "pop2020": 55695,
+    "splitPct": 26.7
+   },
+   "42": {
+    "2016": {
+     "demPct": 17.1,
+     "demVotes": 3113,
+     "margin": 58.8,
+     "othVotes": 1275,
+     "repPct": 75.9,
+     "repVotes": 13812,
+     "totalVotes": 18200
+    },
+    "2020": {
+     "demPct": 17.2,
+     "demVotes": 3731,
+     "margin": 64.0,
+     "othVotes": 337,
+     "repPct": 81.2,
+     "repVotes": 17614,
+     "totalVotes": 21682
+    },
+    "2024": {
+     "demPct": 16.5,
+     "demVotes": 3615,
+     "margin": 65.7,
+     "othVotes": 283,
+     "repPct": 82.2,
+     "repVotes": 17975,
+     "totalVotes": 21873
+    },
+    "pop2020": 60217,
+    "splitPct": 23.4
+   },
+   "5": {
+    "2016": {
+     "demPct": 61.4,
+     "demVotes": 12877,
+     "margin": -36.0,
+     "othVotes": 2751,
+     "repPct": 25.4,
+     "repVotes": 5331,
+     "totalVotes": 20959
+    },
+    "2020": {
+     "demPct": 65.9,
+     "demVotes": 15578,
+     "margin": -34.0,
+     "othVotes": 515,
+     "repPct": 31.9,
+     "repVotes": 7538,
+     "totalVotes": 23631
+    },
+    "2024": {
+     "demPct": 61.2,
+     "demVotes": 14147,
+     "margin": -25.0,
+     "othVotes": 609,
+     "repPct": 36.2,
+     "repVotes": 8367,
+     "totalVotes": 23123
+    },
+    "pop2020": 51096,
+    "splitPct": 7.2
+   },
+   "6": {
+    "2016": {
+     "demPct": 65.5,
+     "demVotes": 15259,
+     "margin": -44.0,
+     "othVotes": 3022,
+     "repPct": 21.5,
+     "repVotes": 5008,
+     "totalVotes": 23289
+    },
+    "2020": {
+     "demPct": 72.1,
+     "demVotes": 18812,
+     "margin": -46.5,
+     "othVotes": 584,
+     "repPct": 25.6,
+     "repVotes": 6687,
+     "totalVotes": 26083
+    },
+    "2024": {
+     "demPct": 68.8,
+     "demVotes": 17602,
+     "margin": -40.3,
+     "othVotes": 683,
+     "repPct": 28.5,
+     "repVotes": 7305,
+     "totalVotes": 25590
+    },
+    "pop2020": 51675,
+    "splitPct": 16.0
+   },
+   "7": {
+    "2016": {
+     "demPct": 22.5,
+     "demVotes": 3569,
+     "margin": 46.0,
+     "othVotes": 1423,
+     "repPct": 68.5,
+     "repVotes": 10851,
+     "totalVotes": 15843
+    },
+    "2020": {
+     "demPct": 26.6,
+     "demVotes": 4654,
+     "margin": 44.9,
+     "othVotes": 347,
+     "repPct": 71.5,
+     "repVotes": 12526,
+     "totalVotes": 17527
+    },
+    "2024": {
+     "demPct": 26.5,
+     "demVotes": 4594,
+     "margin": 45.1,
+     "othVotes": 330,
+     "repPct": 71.6,
+     "repVotes": 12395,
+     "totalVotes": 17319
+    },
+    "pop2020": 48873,
+    "splitPct": 6.2
+   },
+   "8": {
+    "2016": {
+     "demPct": 54.6,
+     "demVotes": 10603,
+     "margin": -20.7,
+     "othVotes": 2218,
+     "repPct": 33.9,
+     "repVotes": 6585,
+     "totalVotes": 19406
+    },
+    "2020": {
+     "demPct": 56.9,
+     "demVotes": 12086,
+     "margin": -15.7,
+     "othVotes": 394,
+     "repPct": 41.2,
+     "repVotes": 8752,
+     "totalVotes": 21232
+    },
+    "2024": {
+     "demPct": 52.5,
+     "demVotes": 10614,
+     "margin": -7.1,
+     "othVotes": 414,
+     "repPct": 45.4,
+     "repVotes": 9176,
+     "totalVotes": 20204
+    },
+    "pop2020": 44739,
+    "splitPct": 6.3
+   },
+   "9": {
+    "2016": {
+     "demPct": 47.0,
+     "demVotes": 12199,
+     "margin": -6.2,
+     "othVotes": 3168,
+     "repPct": 40.8,
+     "repVotes": 10580,
+     "totalVotes": 25947
+    },
+    "2020": {
+     "demPct": 54.6,
+     "demVotes": 16660,
+     "margin": -11.4,
+     "othVotes": 675,
+     "repPct": 43.2,
+     "repVotes": 13197,
+     "totalVotes": 30532
+    },
+    "2024": {
+     "demPct": 54.5,
+     "demVotes": 16621,
+     "margin": -11.1,
+     "othVotes": 622,
+     "repPct": 43.4,
+     "repVotes": 13232,
+     "totalVotes": 30475
+    },
+    "pop2020": 52633,
+    "splitPct": 31.1
+   }
+  },
+  "current": {
+   "1": {
+    "2016": {
+     "demPct": 24.2,
+     "demVotes": 3968,
+     "margin": 40.1,
+     "othVotes": 1879,
+     "repPct": 64.3,
+     "repVotes": 10540,
+     "totalVotes": 16387
+    },
+    "2020": {
+     "demPct": 32.8,
+     "demVotes": 6055,
+     "margin": 31.9,
+     "othVotes": 465,
+     "repPct": 64.7,
+     "repVotes": 11956,
+     "totalVotes": 18476
+    },
+    "2024": {
+     "demPct": 31.7,
+     "demVotes": 6021,
+     "margin": 34.5,
+     "othVotes": 402,
+     "repPct": 66.2,
+     "repVotes": 12573,
+     "totalVotes": 18996
+    },
+    "pop2020": 47060,
+    "splitPct": 27.9
+   },
+   "10": {
+    "2016": {
+     "demPct": 54.6,
+     "demVotes": 13553,
+     "margin": -21.9,
+     "othVotes": 3174,
+     "repPct": 32.7,
+     "repVotes": 8118,
+     "totalVotes": 24845
+    },
+    "2020": {
+     "demPct": 62.7,
+     "demVotes": 18371,
+     "margin": -27.6,
+     "othVotes": 635,
+     "repPct": 35.1,
+     "repVotes": 10291,
+     "totalVotes": 29297
+    },
+    "2024": {
+     "demPct": 61.1,
+     "demVotes": 17621,
+     "margin": -24.7,
+     "othVotes": 721,
+     "repPct": 36.4,
+     "repVotes": 10497,
+     "totalVotes": 28839
+    },
+    "pop2020": 49597,
+    "splitPct": 34.7
+   },
+   "11": {
+    "2016": {
+     "demPct": 61.9,
+     "demVotes": 8077,
+     "margin": -35.5,
+     "othVotes": 1528,
+     "repPct": 26.4,
+     "repVotes": 3443,
+     "totalVotes": 13048
+    },
+    "2020": {
+     "demPct": 65.9,
+     "demVotes": 9925,
+     "margin": -33.6,
+     "othVotes": 276,
+     "repPct": 32.3,
+     "repVotes": 4869,
+     "totalVotes": 15070
+    },
+    "2024": {
+     "demPct": 57.1,
+     "demVotes": 8586,
+     "margin": -16.1,
+     "othVotes": 286,
+     "repPct": 41.0,
+     "repVotes": 6169,
+     "totalVotes": 15041
+    },
+    "pop2020": 50460,
+    "splitPct": 22.3
+   },
+   "12": {
+    "2016": {
+     "demPct": 40.2,
+     "demVotes": 8379,
+     "margin": 5.8,
+     "othVotes": 2887,
+     "repPct": 46.0,
+     "repVotes": 9598,
+     "totalVotes": 20864
+    },
+    "2020": {
+     "demPct": 49.7,
+     "demVotes": 12798,
+     "margin": -1.8,
+     "othVotes": 625,
+     "repPct": 47.9,
+     "repVotes": 12353,
+     "totalVotes": 25776
+    },
+    "2024": {
+     "demPct": 48.6,
+     "demVotes": 12802,
+     "margin": 0.7,
+     "othVotes": 566,
+     "repPct": 49.3,
+     "repVotes": 13000,
+     "totalVotes": 26368
+    },
+    "pop2020": 50857,
+    "splitPct": 32.4
+   },
+   "13": {
+    "2016": {
+     "demPct": 64.8,
+     "demVotes": 12736,
+     "margin": -42.1,
+     "othVotes": 2441,
+     "repPct": 22.7,
+     "repVotes": 4463,
+     "totalVotes": 19640
+    },
+    "2020": {
+     "demPct": 72.1,
+     "demVotes": 15969,
+     "margin": -46.6,
+     "othVotes": 534,
+     "repPct": 25.5,
+     "repVotes": 5657,
+     "totalVotes": 22160
+    },
+    "2024": {
+     "demPct": 68.3,
+     "demVotes": 14565,
+     "margin": -39.7,
+     "othVotes": 649,
+     "repPct": 28.6,
+     "repVotes": 6109,
+     "totalVotes": 21323
+    },
+    "pop2020": 48858,
+    "splitPct": 34.2
+   },
+   "14": {
+    "2016": {
+     "demPct": 57.0,
+     "demVotes": 7660,
+     "margin": -26.2,
+     "othVotes": 1653,
+     "repPct": 30.8,
+     "repVotes": 4136,
+     "totalVotes": 13449
+    },
+    "2020": {
+     "demPct": 62.2,
+     "demVotes": 10218,
+     "margin": -26.3,
+     "othVotes": 317,
+     "repPct": 35.9,
+     "repVotes": 5899,
+     "totalVotes": 16434
+    },
+    "2024": {
+     "demPct": 55.2,
+     "demVotes": 9417,
+     "margin": -12.3,
+     "othVotes": 332,
+     "repPct": 42.9,
+     "repVotes": 7319,
+     "totalVotes": 17068
+    },
+    "pop2020": 49320,
+    "splitPct": 23.7
+   },
+   "15": {
+    "2016": {
+     "demPct": 50.2,
+     "demVotes": 10644,
+     "margin": -15.0,
+     "othVotes": 3109,
+     "repPct": 35.2,
+     "repVotes": 7456,
+     "totalVotes": 21209
+    },
+    "2020": {
+     "demPct": 61.1,
+     "demVotes": 14367,
+     "margin": -25.0,
+     "othVotes": 667,
+     "repPct": 36.1,
+     "repVotes": 8481,
+     "totalVotes": 23515
+    },
+    "2024": {
+     "demPct": 60.6,
+     "demVotes": 13575,
+     "margin": -24.0,
+     "othVotes": 618,
+     "repPct": 36.6,
+     "repVotes": 8210,
+     "totalVotes": 22403
+    },
+    "pop2020": 49959,
+    "splitPct": 28.6
+   },
+   "16": {
+    "2016": {
+     "demPct": 68.2,
+     "demVotes": 15462,
+     "margin": -48.5,
+     "othVotes": 2746,
+     "repPct": 19.7,
+     "repVotes": 4467,
+     "totalVotes": 22675
+    },
+    "2020": {
+     "demPct": 76.0,
+     "demVotes": 19031,
+     "margin": -54.6,
+     "othVotes": 664,
+     "repPct": 21.4,
+     "repVotes": 5358,
+     "totalVotes": 25053
+    },
+    "2024": {
+     "demPct": 74.8,
+     "demVotes": 18302,
+     "margin": -53.1,
+     "othVotes": 846,
+     "repPct": 21.7,
+     "repVotes": 5306,
+     "totalVotes": 24454
+    },
+    "pop2020": 50425,
+    "splitPct": 23.7
+   },
+   "17": {
+    "2016": {
+     "demPct": 55.8,
+     "demVotes": 7185,
+     "margin": -25.9,
+     "othVotes": 1833,
+     "repPct": 29.9,
+     "repVotes": 3854,
+     "totalVotes": 12872
+    },
+    "2020": {
+     "demPct": 64.5,
+     "demVotes": 9582,
+     "margin": -31.7,
+     "othVotes": 395,
+     "repPct": 32.8,
+     "repVotes": 4871,
+     "totalVotes": 14848
+    },
+    "2024": {
+     "demPct": 62.6,
+     "demVotes": 8526,
+     "margin": -27.7,
+     "othVotes": 347,
+     "repPct": 34.9,
+     "repVotes": 4754,
+     "totalVotes": 13627
+    },
+    "pop2020": 48997,
+    "splitPct": 38.5
+   },
+   "18": {
+    "2016": {
+     "demPct": 48.1,
+     "demVotes": 12244,
+     "margin": -10.7,
+     "othVotes": 3672,
+     "repPct": 37.4,
+     "repVotes": 9521,
+     "totalVotes": 25437
+    },
+    "2020": {
+     "demPct": 58.8,
+     "demVotes": 16654,
+     "margin": -20.2,
+     "othVotes": 740,
+     "repPct": 38.6,
+     "repVotes": 10930,
+     "totalVotes": 28324
+    },
+    "2024": {
+     "demPct": 59.6,
+     "demVotes": 16087,
+     "margin": -22.0,
+     "othVotes": 756,
+     "repPct": 37.6,
+     "repVotes": 10137,
+     "totalVotes": 26980
+    },
+    "pop2020": 51802,
+    "splitPct": 39.7
+   },
+   "19": {
+    "2016": {
+     "demPct": 37.1,
+     "demVotes": 10062,
+     "margin": 12.5,
+     "othVotes": 3584,
+     "repPct": 49.6,
+     "repVotes": 13447,
+     "totalVotes": 27093
+    },
+    "2020": {
+     "demPct": 44.7,
+     "demVotes": 13932,
+     "margin": 7.9,
+     "othVotes": 844,
+     "repPct": 52.6,
+     "repVotes": 16379,
+     "totalVotes": 31155
+    },
+    "2024": {
+     "demPct": 45.0,
+     "demVotes": 14093,
+     "margin": 7.6,
+     "othVotes": 776,
+     "repPct": 52.6,
+     "repVotes": 16479,
+     "totalVotes": 31348
+    },
+    "pop2020": 50415,
+    "splitPct": 15.4
+   },
+   "2": {
+    "2016": {
+     "demPct": 16.8,
+     "demVotes": 3195,
+     "margin": 57.5,
+     "othVotes": 1701,
+     "repPct": 74.3,
+     "repVotes": 14171,
+     "totalVotes": 19067
+    },
+    "2020": {
+     "demPct": 21.6,
+     "demVotes": 4673,
+     "margin": 54.7,
+     "othVotes": 453,
+     "repPct": 76.3,
+     "repVotes": 16460,
+     "totalVotes": 21586
+    },
+    "2024": {
+     "demPct": 22.7,
+     "demVotes": 5002,
+     "margin": 52.9,
+     "othVotes": 373,
+     "repPct": 75.6,
+     "repVotes": 16613,
+     "totalVotes": 21988
+    },
+    "pop2020": 47027,
+    "splitPct": 7.6
+   },
+   "20": {
+    "2016": {
+     "demPct": 45.6,
+     "demVotes": 10821,
+     "margin": -6.5,
+     "othVotes": 3627,
+     "repPct": 39.1,
+     "repVotes": 9273,
+     "totalVotes": 23721
+    },
+    "2020": {
+     "demPct": 57.3,
+     "demVotes": 15432,
+     "margin": -17.4,
+     "othVotes": 749,
+     "repPct": 39.9,
+     "repVotes": 10757,
+     "totalVotes": 26938
+    },
+    "2024": {
+     "demPct": 57.9,
+     "demVotes": 14793,
+     "margin": -18.5,
+     "othVotes": 671,
+     "repPct": 39.4,
+     "repVotes": 10067,
+     "totalVotes": 25531
+    },
+    "pop2020": 50562,
+    "splitPct": 38.5
+   },
+   "21": {
+    "2016": {
+     "demPct": 41.2,
+     "demVotes": 11504,
+     "margin": 4.6,
+     "othVotes": 3615,
+     "repPct": 45.8,
+     "repVotes": 12793,
+     "totalVotes": 27912
+    },
+    "2020": {
+     "demPct": 51.4,
+     "demVotes": 16377,
+     "margin": -5.2,
+     "othVotes": 746,
+     "repPct": 46.2,
+     "repVotes": 14731,
+     "totalVotes": 31854
+    },
+    "2024": {
+     "demPct": 53.0,
+     "demVotes": 16378,
+     "margin": -8.6,
+     "othVotes": 786,
+     "repPct": 44.4,
+     "repVotes": 13716,
+     "totalVotes": 30880
+    },
+    "pop2020": 51838,
+    "splitPct": 23.0
+   },
+   "22": {
+    "2016": {
+     "demPct": 59.1,
+     "demVotes": 10164,
+     "margin": -32.9,
+     "othVotes": 2527,
+     "repPct": 26.2,
+     "repVotes": 4496,
+     "totalVotes": 17187
+    },
+    "2020": {
+     "demPct": 64.6,
+     "demVotes": 13335,
+     "margin": -31.7,
+     "othVotes": 516,
+     "repPct": 32.9,
+     "repVotes": 6784,
+     "totalVotes": 20635
+    },
+    "2024": {
+     "demPct": 58.0,
+     "demVotes": 11533,
+     "margin": -18.8,
+     "othVotes": 557,
+     "repPct": 39.2,
+     "repVotes": 7803,
+     "totalVotes": 19893
+    },
+    "pop2020": 49600,
+    "splitPct": 14.6
+   },
+   "23": {
+    "2016": {
+     "demPct": 47.4,
+     "demVotes": 9498,
+     "margin": -8.0,
+     "othVotes": 2660,
+     "repPct": 39.4,
+     "repVotes": 7899,
+     "totalVotes": 20057
+    },
+    "2020": {
+     "demPct": 57.2,
+     "demVotes": 14493,
+     "margin": -16.6,
+     "othVotes": 544,
+     "repPct": 40.6,
+     "repVotes": 10293,
+     "totalVotes": 25330
+    },
+    "2024": {
+     "demPct": 54.6,
+     "demVotes": 14490,
+     "margin": -11.2,
+     "othVotes": 534,
+     "repPct": 43.4,
+     "repVotes": 11525,
+     "totalVotes": 26549
+    },
+    "pop2020": 52563,
+    "splitPct": 34.1
+   },
+   "24": {
+    "2016": {
+     "demPct": 73.6,
+     "demVotes": 13841,
+     "margin": -56.8,
+     "othVotes": 1805,
+     "repPct": 16.8,
+     "repVotes": 3156,
+     "totalVotes": 18802
+    },
+    "2020": {
+     "demPct": 78.5,
+     "demVotes": 17375,
+     "margin": -58.8,
+     "othVotes": 406,
+     "repPct": 19.7,
+     "repVotes": 4353,
+     "totalVotes": 22134
+    },
+    "2024": {
+     "demPct": 74.3,
+     "demVotes": 16901,
+     "margin": -51.0,
+     "othVotes": 559,
+     "repPct": 23.3,
+     "repVotes": 5299,
+     "totalVotes": 22759
+    },
+    "pop2020": 51007,
+    "splitPct": 37.5
+   },
+   "25": {
+    "2016": {
+     "demPct": 76.7,
+     "demVotes": 23998,
+     "margin": -60.8,
+     "othVotes": 2304,
+     "repPct": 15.9,
+     "repVotes": 4973,
+     "totalVotes": 31275
+    },
+    "2020": {
+     "demPct": 81.7,
+     "demVotes": 28602,
+     "margin": -64.9,
+     "othVotes": 518,
+     "repPct": 16.8,
+     "repVotes": 5869,
+     "totalVotes": 34989
+    },
+    "2024": {
+     "demPct": 80.6,
+     "demVotes": 28221,
+     "margin": -63.4,
+     "othVotes": 774,
+     "repPct": 17.2,
+     "repVotes": 6009,
+     "totalVotes": 35004
+    },
+    "pop2020": 51132,
+    "splitPct": 16.4
+   },
+   "26": {
+    "2016": {
+     "demPct": 57.0,
+     "demVotes": 9653,
+     "margin": -26.4,
+     "othVotes": 2110,
+     "repPct": 30.6,
+     "repVotes": 5175,
+     "totalVotes": 16938
+    },
+    "2020": {
+     "demPct": 63.3,
+     "demVotes": 12934,
+     "margin": -28.9,
+     "othVotes": 476,
+     "repPct": 34.4,
+     "repVotes": 7036,
+     "totalVotes": 20446
+    },
+    "2024": {
+     "demPct": 58.3,
+     "demVotes": 11811,
+     "margin": -18.7,
+     "othVotes": 436,
+     "repPct": 39.6,
+     "repVotes": 8018,
+     "totalVotes": 20265
+    },
+    "pop2020": 49862,
+    "splitPct": 38.0
+   },
+   "27": {
+    "2016": {
+     "demPct": 21.8,
+     "demVotes": 3928,
+     "margin": 47.5,
+     "othVotes": 1615,
+     "repPct": 69.3,
+     "repVotes": 12498,
+     "totalVotes": 18041
+    },
+    "2020": {
+     "demPct": 25.0,
+     "demVotes": 5043,
+     "margin": 47.9,
+     "othVotes": 408,
+     "repPct": 72.9,
+     "repVotes": 14684,
+     "totalVotes": 20135
+    },
+    "2024": {
+     "demPct": 24.8,
+     "demVotes": 4977,
+     "margin": 48.7,
+     "othVotes": 335,
+     "repPct": 73.5,
+     "repVotes": 14745,
+     "totalVotes": 20057
+    },
+    "pop2020": 51848,
+    "splitPct": 5.0
+   },
+   "28": {
+    "2016": {
+     "demPct": 49.2,
+     "demVotes": 9317,
+     "margin": -7.9,
+     "othVotes": 1802,
+     "repPct": 41.3,
+     "repVotes": 7814,
+     "totalVotes": 18933
+    },
+    "2020": {
+     "demPct": 51.2,
+     "demVotes": 10819,
+     "margin": -4.3,
+     "othVotes": 389,
+     "repPct": 46.9,
+     "repVotes": 9917,
+     "totalVotes": 21125
+    },
+    "2024": {
+     "demPct": 48.3,
+     "demVotes": 10062,
+     "margin": 1.2,
+     "othVotes": 471,
+     "repPct": 49.5,
+     "repVotes": 10316,
+     "totalVotes": 20849
+    },
+    "pop2020": 50870,
+    "splitPct": 4.0
+   },
+   "29": {
+    "2016": {
+     "demPct": 39.8,
+     "demVotes": 8231,
+     "margin": 7.2,
+     "othVotes": 2718,
+     "repPct": 47.0,
+     "repVotes": 9724,
+     "totalVotes": 20673
+    },
+    "2020": {
+     "demPct": 44.7,
+     "demVotes": 10428,
+     "margin": 8.5,
+     "othVotes": 504,
+     "repPct": 53.2,
+     "repVotes": 12420,
+     "totalVotes": 23352
+    },
+    "2024": {
+     "demPct": 41.3,
+     "demVotes": 9658,
+     "margin": 15.3,
+     "othVotes": 497,
+     "repPct": 56.6,
+     "repVotes": 13232,
+     "totalVotes": 23387
+    },
+    "pop2020": 51759,
+    "splitPct": 16.1
+   },
+   "3": {
+    "2016": {
+     "demPct": 55.5,
+     "demVotes": 8500,
+     "margin": -25.8,
+     "othVotes": 2273,
+     "repPct": 29.7,
+     "repVotes": 4546,
+     "totalVotes": 15319
+    },
+    "2020": {
+     "demPct": 63.1,
+     "demVotes": 11399,
+     "margin": -28.7,
+     "othVotes": 452,
+     "repPct": 34.4,
+     "repVotes": 6205,
+     "totalVotes": 18056
+    },
+    "2024": {
+     "demPct": 56.5,
+     "demVotes": 10142,
+     "margin": -16.1,
+     "othVotes": 555,
+     "repPct": 40.4,
+     "repVotes": 7257,
+     "totalVotes": 17954
+    },
+    "pop2020": 45786,
+    "splitPct": 38.9
+   },
+   "30": {
+    "2016": {
+     "demPct": 50.4,
+     "demVotes": 7111,
+     "margin": -14.0,
+     "othVotes": 1857,
+     "repPct": 36.4,
+     "repVotes": 5132,
+     "totalVotes": 14100
+    },
+    "2020": {
+     "demPct": 57.3,
+     "demVotes": 9677,
+     "margin": -16.7,
+     "othVotes": 343,
+     "repPct": 40.6,
+     "repVotes": 6854,
+     "totalVotes": 16874
+    },
+    "2024": {
+     "demPct": 52.4,
+     "demVotes": 9422,
+     "margin": -6.8,
+     "othVotes": 365,
+     "repPct": 45.6,
+     "repVotes": 8204,
+     "totalVotes": 17991
+    },
+    "pop2020": 48149,
+    "splitPct": 10.4
+   },
+   "31": {
+    "2016": {
+     "demPct": 66.7,
+     "demVotes": 6878,
+     "margin": -40.1,
+     "othVotes": 688,
+     "repPct": 26.6,
+     "repVotes": 2744,
+     "totalVotes": 10310
+    },
+    "2020": {
+     "demPct": 63.6,
+     "demVotes": 8044,
+     "margin": -29.2,
+     "othVotes": 252,
+     "repPct": 34.4,
+     "repVotes": 4346,
+     "totalVotes": 12642
+    },
+    "2024": {
+     "demPct": 53.3,
+     "demVotes": 6705,
+     "margin": -8.3,
+     "othVotes": 216,
+     "repPct": 45.0,
+     "repVotes": 5653,
+     "totalVotes": 12574
+    },
+    "pop2020": 49786,
+    "splitPct": 28.0
+   },
+   "32": {
+    "2016": {
+     "demPct": 29.7,
+     "demVotes": 4190,
+     "margin": 31.2,
+     "othVotes": 1317,
+     "repPct": 60.9,
+     "repVotes": 8588,
+     "totalVotes": 14095
+    },
+    "2020": {
+     "demPct": 28.8,
+     "demVotes": 4611,
+     "margin": 40.8,
+     "othVotes": 267,
+     "repPct": 69.6,
+     "repVotes": 11156,
+     "totalVotes": 16034
+    },
+    "2024": {
+     "demPct": 26.4,
+     "demVotes": 4136,
+     "margin": 45.6,
+     "othVotes": 263,
+     "repPct": 72.0,
+     "repVotes": 11296,
+     "totalVotes": 15695
+    },
+    "pop2020": 51893,
+    "splitPct": 23.3
+   },
+   "33": {
+    "2016": {
+     "demPct": 28.1,
+     "demVotes": 5638,
+     "margin": 34.2,
+     "othVotes": 1911,
+     "repPct": 62.3,
+     "repVotes": 12492,
+     "totalVotes": 20041
+    },
+    "2020": {
+     "demPct": 33.8,
+     "demVotes": 7663,
+     "margin": 30.4,
+     "othVotes": 456,
+     "repPct": 64.2,
+     "repVotes": 14548,
+     "totalVotes": 22667
+    },
+    "2024": {
+     "demPct": 33.4,
+     "demVotes": 7588,
+     "margin": 31.1,
+     "othVotes": 473,
+     "repPct": 64.5,
+     "repVotes": 14670,
+     "totalVotes": 22731
+    },
+    "pop2020": 51930,
+    "splitPct": 8.7
+   },
+   "34": {
+    "2016": {
+     "demPct": 27.6,
+     "demVotes": 4251,
+     "margin": 35.8,
+     "othVotes": 1379,
+     "repPct": 63.4,
+     "repVotes": 9760,
+     "totalVotes": 15390
+    },
+    "2020": {
+     "demPct": 29.8,
+     "demVotes": 5425,
+     "margin": 38.3,
+     "othVotes": 385,
+     "repPct": 68.1,
+     "repVotes": 12412,
+     "totalVotes": 18222
+    },
+    "2024": {
+     "demPct": 28.8,
+     "demVotes": 5409,
+     "margin": 40.5,
+     "othVotes": 344,
+     "repPct": 69.3,
+     "repVotes": 13014,
+     "totalVotes": 18767
+    },
+    "pop2020": 51749,
+    "splitPct": 8.7
+   },
+   "35": {
+    "2016": {
+     "demPct": 36.9,
+     "demVotes": 7488,
+     "margin": 15.9,
+     "othVotes": 2098,
+     "repPct": 52.8,
+     "repVotes": 10717,
+     "totalVotes": 20303
+    },
+    "2020": {
+     "demPct": 42.6,
+     "demVotes": 10400,
+     "margin": 12.6,
+     "othVotes": 514,
+     "repPct": 55.2,
+     "repVotes": 13474,
+     "totalVotes": 24388
+    },
+    "2024": {
+     "demPct": 42.3,
+     "demVotes": 11120,
+     "margin": 13.3,
+     "othVotes": 550,
+     "repPct": 55.6,
+     "repVotes": 14589,
+     "totalVotes": 26259
+    },
+    "pop2020": 52507,
+    "splitPct": 16.8
+   },
+   "36": {
+    "2016": {
+     "demPct": 51.1,
+     "demVotes": 8993,
+     "margin": -13.5,
+     "othVotes": 1995,
+     "repPct": 37.6,
+     "repVotes": 6612,
+     "totalVotes": 17600
+    },
+    "2020": {
+     "demPct": 56.7,
+     "demVotes": 11276,
+     "margin": -15.8,
+     "othVotes": 480,
+     "repPct": 40.9,
+     "repVotes": 8136,
+     "totalVotes": 19892
+    },
+    "2024": {
+     "demPct": 52.4,
+     "demVotes": 10645,
+     "margin": -7.1,
+     "othVotes": 469,
+     "repPct": 45.3,
+     "repVotes": 9190,
+     "totalVotes": 20304
+    },
+    "pop2020": 50562,
+    "splitPct": 24.0
+   },
+   "37": {
+    "2016": {
+     "demPct": 50.9,
+     "demVotes": 9717,
+     "margin": -12.7,
+     "othVotes": 2096,
+     "repPct": 38.2,
+     "repVotes": 7296,
+     "totalVotes": 19109
+    },
+    "2020": {
+     "demPct": 57.7,
+     "demVotes": 12998,
+     "margin": -17.8,
+     "othVotes": 554,
+     "repPct": 39.9,
+     "repVotes": 8980,
+     "totalVotes": 22532
+    },
+    "2024": {
+     "demPct": 56.0,
+     "demVotes": 12864,
+     "margin": -14.6,
+     "othVotes": 586,
+     "repPct": 41.4,
+     "repVotes": 9515,
+     "totalVotes": 22965
+    },
+    "pop2020": 49473,
+    "splitPct": 18.4
+   },
+   "38": {
+    "2016": {
+     "demPct": 56.3,
+     "demVotes": 9159,
+     "margin": -23.1,
+     "othVotes": 1708,
+     "repPct": 33.2,
+     "repVotes": 5398,
+     "totalVotes": 16265
+    },
+    "2020": {
+     "demPct": 60.3,
+     "demVotes": 10819,
+     "margin": -22.7,
+     "othVotes": 391,
+     "repPct": 37.6,
+     "repVotes": 6746,
+     "totalVotes": 17956
+    },
+    "2024": {
+     "demPct": 55.4,
+     "demVotes": 9980,
+     "margin": -12.9,
+     "othVotes": 376,
+     "repPct": 42.5,
+     "repVotes": 7650,
+     "totalVotes": 18006
+    },
+    "pop2020": 51491,
+    "splitPct": 23.4
+   },
+   "39": {
+    "2016": {
+     "demPct": 60.1,
+     "demVotes": 11562,
+     "margin": -30.1,
+     "othVotes": 1896,
+     "repPct": 30.0,
+     "repVotes": 5779,
+     "totalVotes": 19237
+    },
+    "2020": {
+     "demPct": 64.5,
+     "demVotes": 14448,
+     "margin": -30.6,
+     "othVotes": 372,
+     "repPct": 33.9,
+     "repVotes": 7595,
+     "totalVotes": 22415
+    },
+    "2024": {
+     "demPct": 61.8,
+     "demVotes": 14119,
+     "margin": -25.6,
+     "othVotes": 451,
+     "repPct": 36.2,
+     "repVotes": 8262,
+     "totalVotes": 22832
+    },
+    "pop2020": 51576,
+    "splitPct": 11.0
+   },
+   "4": {
+    "2016": {
+     "demPct": 54.7,
+     "demVotes": 8697,
+     "margin": -23.4,
+     "othVotes": 2225,
+     "repPct": 31.3,
+     "repVotes": 4974,
+     "totalVotes": 15896
+    },
+    "2020": {
+     "demPct": 59.8,
+     "demVotes": 11062,
+     "margin": -22.3,
+     "othVotes": 495,
+     "repPct": 37.5,
+     "repVotes": 6941,
+     "totalVotes": 18498
+    },
+    "2024": {
+     "demPct": 54.1,
+     "demVotes": 9812,
+     "margin": -11.3,
+     "othVotes": 548,
+     "repPct": 42.8,
+     "repVotes": 7767,
+     "totalVotes": 18127
+    },
+    "pop2020": 49634,
+    "splitPct": 42.4
+   },
+   "40": {
+    "2016": {
+     "demPct": 38.2,
+     "demVotes": 6909,
+     "margin": 10.2,
+     "othVotes": 2416,
+     "repPct": 48.4,
+     "repVotes": 8749,
+     "totalVotes": 18074
+    },
+    "2020": {
+     "demPct": 47.4,
+     "demVotes": 11552,
+     "margin": 2.7,
+     "othVotes": 590,
+     "repPct": 50.1,
+     "repVotes": 12211,
+     "totalVotes": 24353
+    },
+    "2024": {
+     "demPct": 47.2,
+     "demVotes": 12909,
+     "margin": 3.4,
+     "othVotes": 588,
+     "repPct": 50.6,
+     "repVotes": 13838,
+     "totalVotes": 27335
+    },
+    "pop2020": 51724,
+    "splitPct": 13.9
+   },
+   "41": {
+    "2016": {
+     "demPct": 32.1,
+     "demVotes": 3558,
+     "margin": 28.5,
+     "othVotes": 818,
+     "repPct": 60.6,
+     "repVotes": 6721,
+     "totalVotes": 11097
+    },
+    "2020": {
+     "demPct": 25.4,
+     "demVotes": 3347,
+     "margin": 47.8,
+     "othVotes": 190,
+     "repPct": 73.2,
+     "repVotes": 9649,
+     "totalVotes": 13186
+    },
+    "2024": {
+     "demPct": 23.0,
+     "demVotes": 3139,
+     "margin": 52.7,
+     "othVotes": 185,
+     "repPct": 75.7,
+     "repVotes": 10349,
+     "totalVotes": 13673
+    },
+    "pop2020": 50956,
+    "splitPct": 15.1
+   },
+   "42": {
+    "2016": {
+     "demPct": 18.0,
+     "demVotes": 2827,
+     "margin": 56.8,
+     "othVotes": 1133,
+     "repPct": 74.8,
+     "repVotes": 11731,
+     "totalVotes": 15691
+    },
+    "2020": {
+     "demPct": 17.9,
+     "demVotes": 3332,
+     "margin": 62.5,
+     "othVotes": 310,
+     "repPct": 80.4,
+     "repVotes": 14923,
+     "totalVotes": 18565
+    },
+    "2024": {
+     "demPct": 17.3,
+     "demVotes": 3251,
+     "margin": 64.1,
+     "othVotes": 250,
+     "repPct": 81.4,
+     "repVotes": 15272,
+     "totalVotes": 18773
+    },
+    "pop2020": 51921,
+    "splitPct": 17.5
+   },
+   "5": {
+    "2016": {
+     "demPct": 61.9,
+     "demVotes": 12412,
+     "margin": -37.0,
+     "othVotes": 2656,
+     "repPct": 24.9,
+     "repVotes": 4997,
+     "totalVotes": 20065
+    },
+    "2020": {
+     "demPct": 66.4,
+     "demVotes": 15046,
+     "margin": -34.9,
+     "othVotes": 495,
+     "repPct": 31.5,
+     "repVotes": 7135,
+     "totalVotes": 22676
+    },
+    "2024": {
+     "demPct": 61.6,
+     "demVotes": 13630,
+     "margin": -25.8,
+     "othVotes": 586,
+     "repPct": 35.8,
+     "repVotes": 7927,
+     "totalVotes": 22143
+    },
+    "pop2020": 49355,
+    "splitPct": 6.6
+   },
+   "6": {
+    "2016": {
+     "demPct": 65.3,
+     "demVotes": 15138,
+     "margin": -43.6,
+     "othVotes": 3018,
+     "repPct": 21.7,
+     "repVotes": 5020,
+     "totalVotes": 23176
+    },
+    "2020": {
+     "demPct": 72.0,
+     "demVotes": 18652,
+     "margin": -46.2,
+     "othVotes": 583,
+     "repPct": 25.8,
+     "repVotes": 6671,
+     "totalVotes": 25906
+    },
+    "2024": {
+     "demPct": 68.8,
+     "demVotes": 17532,
+     "margin": -40.2,
+     "othVotes": 681,
+     "repPct": 28.6,
+     "repVotes": 7288,
+     "totalVotes": 25501
+    },
+    "pop2020": 51505,
+    "splitPct": 13.2
+   },
+   "7": {
+    "2016": {
+     "demPct": 24.6,
+     "demVotes": 3950,
+     "margin": 41.4,
+     "othVotes": 1510,
+     "repPct": 66.0,
+     "repVotes": 10597,
+     "totalVotes": 16057
+    },
+    "2020": {
+     "demPct": 28.9,
+     "demVotes": 5147,
+     "margin": 40.1,
+     "othVotes": 379,
+     "repPct": 69.0,
+     "repVotes": 12312,
+     "totalVotes": 17838
+    },
+    "2024": {
+     "demPct": 28.2,
+     "demVotes": 4963,
+     "margin": 41.7,
+     "othVotes": 338,
+     "repPct": 69.9,
+     "repVotes": 12282,
+     "totalVotes": 17583
+    },
+    "pop2020": 51807,
+    "splitPct": 1.1
+   },
+   "8": {
+    "2016": {
+     "demPct": 56.0,
+     "demVotes": 11850,
+     "margin": -23.2,
+     "othVotes": 2383,
+     "repPct": 32.8,
+     "repVotes": 6932,
+     "totalVotes": 21165
+    },
+    "2020": {
+     "demPct": 58.1,
+     "demVotes": 13527,
+     "margin": -18.1,
+     "othVotes": 435,
+     "repPct": 40.0,
+     "repVotes": 9317,
+     "totalVotes": 23279
+    },
+    "2024": {
+     "demPct": 53.3,
+     "demVotes": 11701,
+     "margin": -8.7,
+     "othVotes": 467,
+     "repPct": 44.6,
+     "repVotes": 9785,
+     "totalVotes": 21953
+    },
+    "pop2020": 48331,
+    "splitPct": 2.4
+   },
+   "9": {
+    "2016": {
+     "demPct": 48.7,
+     "demVotes": 12286,
+     "margin": -9.6,
+     "othVotes": 3051,
+     "repPct": 39.1,
+     "repVotes": 9867,
+     "totalVotes": 25204
+    },
+    "2020": {
+     "demPct": 57.2,
+     "demVotes": 16776,
+     "margin": -16.5,
+     "othVotes": 643,
+     "repPct": 40.7,
+     "repVotes": 11935,
+     "totalVotes": 29354
+    },
+    "2024": {
+     "demPct": 57.0,
+     "demVotes": 16313,
+     "margin": -16.2,
+     "othVotes": 627,
+     "repPct": 40.8,
+     "repVotes": 11681,
+     "totalVotes": 28621
+    },
+    "pop2020": 51569,
+    "splitPct": 36.4
+   }
+  }
+ }
+}

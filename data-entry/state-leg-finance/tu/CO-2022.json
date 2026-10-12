@@ -1,0 +1,5032 @@
+{
+ "state": "CO",
+ "cycle": 2022,
+ "fetched": "2026-10-11",
+ "dataThrough": "12/31/2022",
+ "races": [
+  {
+   "office": "Colorado House of Representatives District 1",
+   "url": "/co/race/colorado-house-of-representatives-district-1-56582",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 100145.0,
+   "totalExpenditures": 83830.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Javier Mabrey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 91288.89,
+       "expenditures": 0.0,
+       "status": "$76,783.49",
+       "url": "/co/candidate/javier-mabrey?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Guillermo Nmi Diaz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8855.77,
+       "expenditures": 0.0,
+       "status": "$7,046.94",
+       "url": "/co/candidate/guillermo-nmi-diaz?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Javier Mabrey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 91288.89,
+       "expenditures": 0.0,
+       "status": "$76,783.49",
+       "url": "/co/candidate/javier-mabrey?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Guillermo Nmi Diaz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8855.77,
+       "expenditures": 0.0,
+       "status": "$7,046.94",
+       "url": "/co/candidate/guillermo-nmi-diaz?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "Colorado House of Representatives District 10",
+   "url": "/co/race/colorado-house-of-representatives-district-10-56583",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 244297.0,
+   "totalExpenditures": 223697.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Junie Joseph",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 96202.86,
+       "expenditures": 0.0,
+       "status": "$64,037.18",
+       "url": "/co/candidate/junie-joseph?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Edie Hooton",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 140204.28,
+       "expenditures": 0.0,
+       "status": "$152,032.01",
+       "url": "/co/candidate/edie-hooton?cycle=2022-election-cycle"
+      },
+      {
+       "name": "William B Deoreo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7889.52,
+       "expenditures": 0.0,
+       "status": "$7,627.70",
+       "url": "/co/candidate/william-b-deoreo?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Edie Hooton",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 140204.28,
+       "expenditures": 0.0,
+       "status": "$152,032.01",
+       "url": "/co/candidate/edie-hooton?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "William B Deoreo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7889.52,
+       "expenditures": 0.0,
+       "status": "$7,627.70",
+       "url": "/co/candidate/william-b-deoreo?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "Colorado House of Representatives District 11",
+   "url": "/co/race/colorado-house-of-representatives-district-11-56584",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 101801.0,
+   "totalExpenditures": 114563.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Karen Ann Mccormick",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 79618.45,
+       "expenditures": 743.05,
+       "status": "$92,380.98",
+       "url": "/co/candidate/karen-ann-mccormick?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tara Menza",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22182.08,
+       "expenditures": 0.0,
+       "status": "$22,182.08",
+       "url": "/co/candidate/tara-menza?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Karen Ann Mccormick",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 79618.45,
+       "expenditures": 743.05,
+       "status": "$92,380.98",
+       "url": "/co/candidate/karen-ann-mccormick?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Tara Menza",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22182.08,
+       "expenditures": 0.0,
+       "status": "$22,182.08",
+       "url": "/co/candidate/tara-menza?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "Colorado House of Representatives District 12",
+   "url": "/co/race/colorado-house-of-representatives-district-12-56585",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 76698.0,
+   "totalExpenditures": 95978.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Tracey Bernett",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 50576.3,
+       "expenditures": 10903.5,
+       "status": "$69,856.11",
+       "url": "/co/candidate/tracey-bernett?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Anya Kirvan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26122.08,
+       "expenditures": 0.0,
+       "status": "$26,122.08",
+       "url": "/co/candidate/anya-kirvan?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Tracey Bernett",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 50576.3,
+       "expenditures": 10903.5,
+       "status": "$69,856.11",
+       "url": "/co/candidate/tracey-bernett?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Anya Kirvan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26122.08,
+       "expenditures": 0.0,
+       "status": "$26,122.08",
+       "url": "/co/candidate/anya-kirvan?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "Colorado House of Representatives District 13",
+   "url": "/co/race/colorado-house-of-representatives-district-13-56586",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 233140.0,
+   "totalExpenditures": 224109.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Julie Lynn Mccluskie",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 233139.96,
+       "expenditures": 0.0,
+       "status": "$224,109.11",
+       "url": "/co/candidate/julie-lynn-mccluskie?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Julie Lynn Mccluskie",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 233139.96,
+       "expenditures": 0.0,
+       "status": "$224,109.11",
+       "url": "/co/candidate/julie-lynn-mccluskie?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "Colorado House of Representatives District 14",
+   "url": "/co/race/colorado-house-of-representatives-district-14-56587",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 117752.0,
+   "totalExpenditures": 108899.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Rose Pugliese",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 84662.24,
+       "expenditures": 0.0,
+       "status": "$73,201.30",
+       "url": "/co/candidate/rose-pugliese?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rob Rogers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25915.32,
+       "expenditures": 2962.28,
+       "status": "$28,482.60",
+       "url": "/co/candidate/rob-rogers?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Rob Rogers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25915.32,
+       "expenditures": 2962.28,
+       "status": "$28,482.60",
+       "url": "/co/candidate/rob-rogers?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Rose Pugliese",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 84662.24,
+       "expenditures": 0.0,
+       "status": "$73,201.30",
+       "url": "/co/candidate/rose-pugliese?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joe Woyte",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7174.49,
+       "expenditures": 0.0,
+       "status": "$7,215.49",
+       "url": "/co/candidate/joe-woyte?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "Colorado House of Representatives District 15",
+   "url": "/co/race/colorado-house-of-representatives-district-15-56588",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 20909.0,
+   "totalExpenditures": 16479.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Scott Bottoms",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10298.61,
+       "expenditures": 0.0,
+       "status": "$5,768.81",
+       "url": "/co/candidate/scott-bottoms?cycle=2022-election-cycle"
+      },
+      {
+       "name": "AJ Sexton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10609.96,
+       "expenditures": 0.0,
+       "status": "$10,709.96",
+       "url": "/co/candidate/aj-sexton?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "AJ Sexton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10609.96,
+       "expenditures": 0.0,
+       "status": "$10,709.96",
+       "url": "/co/candidate/aj-sexton?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Scott Bottoms",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10298.61,
+       "expenditures": 0.0,
+       "status": "$5,768.81",
+       "url": "/co/candidate/scott-bottoms?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "Colorado House of Representatives District 16",
+   "url": "/co/race/colorado-house-of-representatives-district-16-56589",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 76517.0,
+   "totalExpenditures": 79794.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Stephanie J Vigil",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 76516.74,
+       "expenditures": 4500.0,
+       "status": "$79,793.80",
+       "url": "/co/candidate/stephanie-j-vigil?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Stephanie J Vigil",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 76516.74,
+       "expenditures": 4500.0,
+       "status": "$79,793.80",
+       "url": "/co/candidate/stephanie-j-vigil?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "Colorado House of Representatives District 17",
+   "url": "/co/race/colorado-house-of-representatives-district-17-56590",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 143194.0,
+   "totalExpenditures": 133304.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Regina English",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 87895.84,
+       "expenditures": 9965.21,
+       "status": "$77,594.53",
+       "url": "/co/candidate/regina-english?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rachel Stovall",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 55297.71,
+       "expenditures": 411.29,
+       "status": "$55,709.00",
+       "url": "/co/candidate/rachel-stovall?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Regina English",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 87895.84,
+       "expenditures": 9965.21,
+       "status": "$77,594.53",
+       "url": "/co/candidate/regina-english?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Rachel Stovall",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 55297.71,
+       "expenditures": 411.29,
+       "status": "$55,709.00",
+       "url": "/co/candidate/rachel-stovall?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "Colorado House of Representatives District 18",
+   "url": "/co/race/colorado-house-of-representatives-district-18-56591",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 211318.0,
+   "totalExpenditures": 222207.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Marc Snyder",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 163864.61,
+       "expenditures": 0.0,
+       "status": "$180,201.70",
+       "url": "/co/candidate/marc-snyder?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Shana Black",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 40497.01,
+       "expenditures": 0.0,
+       "status": "$34,899.91",
+       "url": "/co/candidate/shana-black?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Greg Lauer",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/greg-lauer?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Marc Snyder",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 163864.61,
+       "expenditures": 0.0,
+       "status": "$180,201.70",
+       "url": "/co/candidate/marc-snyder?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Shana Black",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 40497.01,
+       "expenditures": 0.0,
+       "status": "$34,899.91",
+       "url": "/co/candidate/shana-black?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Summer Groubert",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6955.98,
+       "expenditures": 0.0,
+       "status": "$7,105.38",
+       "url": "/co/candidate/summer-groubert?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "Colorado House of Representatives District 19",
+   "url": "/co/race/colorado-house-of-representatives-district-19-56592",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 166266.0,
+   "totalExpenditures": 147367.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jennifer Parenti",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 81347.19,
+       "expenditures": 0.0,
+       "status": "$77,648.76",
+       "url": "/co/candidate/jennifer-parenti?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Dan Woog",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 84918.85,
+       "expenditures": 0.0,
+       "status": "$69,718.63",
+       "url": "/co/candidate/dan-woog?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Jennifer Parenti",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 81347.19,
+       "expenditures": 0.0,
+       "status": "$77,648.76",
+       "url": "/co/candidate/jennifer-parenti?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Dan Woog",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 84918.85,
+       "expenditures": 0.0,
+       "status": "$69,718.63",
+       "url": "/co/candidate/dan-woog?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "Colorado House of Representatives District 2",
+   "url": "/co/race/colorado-house-of-representatives-district-2-56593",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 55227.0,
+   "totalExpenditures": 40351.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Steven L Woodrow",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 35287.97,
+       "expenditures": 0.0,
+       "status": "$28,291.12",
+       "url": "/co/candidate/steven-l-woodrow?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Stephanie Wheeler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19919.44,
+       "expenditures": 0.0,
+       "status": "$12,040.68",
+       "url": "/co/candidate/stephanie-wheeler?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Justin Savoy",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 19.69,
+       "expenditures": 0.0,
+       "status": "$19.69",
+       "url": "/co/candidate/justin-savoy?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Steven L Woodrow",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 35287.97,
+       "expenditures": 0.0,
+       "status": "$28,291.12",
+       "url": "/co/candidate/steven-l-woodrow?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Stephanie Wheeler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19919.44,
+       "expenditures": 0.0,
+       "status": "$12,040.68",
+       "url": "/co/candidate/stephanie-wheeler?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "Colorado House of Representatives District 20",
+   "url": "/co/race/colorado-house-of-representatives-district-20-56594",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 731.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Tracey A Johnson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$730.82",
+       "url": "/co/candidate/tracey-a-johnson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Tracey A Johnson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$730.82",
+       "url": "/co/candidate/tracey-a-johnson?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "Colorado House of Representatives District 21",
+   "url": "/co/race/colorado-house-of-representatives-district-21-56595",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 78590.0,
+   "totalExpenditures": 80963.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Mary Bradfield",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 66936.67,
+       "expenditures": 12000.0,
+       "status": "$70,073.70",
+       "url": "/co/candidate/mary-bradfield?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Mary Bradfield",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 66936.67,
+       "expenditures": 12000.0,
+       "status": "$70,073.70",
+       "url": "/co/candidate/mary-bradfield?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Karl O'Brian Dent Sr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11216.66,
+       "expenditures": 0.0,
+       "status": "$10,452.10",
+       "url": "/co/candidate/karl-obrian-dent-sr?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Juli Henry",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 437.03,
+       "expenditures": 0.0,
+       "status": "$437.03",
+       "url": "/co/candidate/juli-henry?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "Colorado House of Representatives District 22",
+   "url": "/co/race/colorado-house-of-representatives-district-22-56596",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 10490.0,
+   "totalExpenditures": 2575.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Ken Degraaf",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9914.01,
+       "expenditures": 0.0,
+       "status": "$2,485.16",
+       "url": "/co/candidate/ken-degraaf?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Blake Garner",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 576.0,
+       "expenditures": 0.0,
+       "status": "$90.21",
+       "url": "/co/candidate/blake-garner?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Blake Garner",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 576.0,
+       "expenditures": 0.0,
+       "status": "$90.21",
+       "url": "/co/candidate/blake-garner?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Ken Degraaf",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9914.01,
+       "expenditures": 0.0,
+       "status": "$2,485.16",
+       "url": "/co/candidate/ken-degraaf?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "Colorado House of Representatives District 23",
+   "url": "/co/race/colorado-house-of-representatives-district-23-56597",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 146922.0,
+   "totalExpenditures": 142396.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Monica Duran",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 137613.11,
+       "expenditures": 0.0,
+       "status": "$131,656.53",
+       "url": "/co/candidate/monica-duran?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Fred Clifford",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9309.07,
+       "expenditures": 1430.0,
+       "status": "$10,739.07",
+       "url": "/co/candidate/fred-clifford?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Monica Duran",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 137613.11,
+       "expenditures": 0.0,
+       "status": "$131,656.53",
+       "url": "/co/candidate/monica-duran?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Fred Clifford",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9309.07,
+       "expenditures": 1430.0,
+       "status": "$10,739.07",
+       "url": "/co/candidate/fred-clifford?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "Colorado House of Representatives District 24",
+   "url": "/co/race/colorado-house-of-representatives-district-24-56598",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 215162.0,
+   "totalExpenditures": 220676.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Lindsey Daugherty",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 173689.81,
+       "expenditures": 0.0,
+       "status": "$174,801.06",
+       "url": "/co/candidate/lindsey-daugherty?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bill Patterson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 41472.1,
+       "expenditures": 6008.64,
+       "status": "$45,874.70",
+       "url": "/co/candidate/bill-patterson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Lindsey Daugherty",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 173689.81,
+       "expenditures": 0.0,
+       "status": "$174,801.06",
+       "url": "/co/candidate/lindsey-daugherty?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Bill Patterson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 41472.1,
+       "expenditures": 6008.64,
+       "status": "$45,874.70",
+       "url": "/co/candidate/bill-patterson?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "Colorado House of Representatives District 25",
+   "url": "/co/race/colorado-house-of-representatives-district-25-56599",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 281633.0,
+   "totalExpenditures": 277601.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Tammy Story",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 188212.94,
+       "expenditures": 0.0,
+       "status": "$182,509.06",
+       "url": "/co/candidate/tammy-story?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Colin Larson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 93420.43,
+       "expenditures": 2866.84,
+       "status": "$95,091.87",
+       "url": "/co/candidate/colin-larson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Tammy Story",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 188212.94,
+       "expenditures": 0.0,
+       "status": "$182,509.06",
+       "url": "/co/candidate/tammy-story?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Colin Larson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 93420.43,
+       "expenditures": 2866.84,
+       "status": "$95,091.87",
+       "url": "/co/candidate/colin-larson?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "Colorado House of Representatives District 26",
+   "url": "/co/race/colorado-house-of-representatives-district-26-56600",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 288970.0,
+   "totalExpenditures": 271893.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Meghan Lukens",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 187228.9,
+       "expenditures": 200.0,
+       "status": "$183,809.59",
+       "url": "/co/candidate/meghan-lukens?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Savannah Wolfson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 94615.92,
+       "expenditures": 737.67,
+       "status": "$83,248.28",
+       "url": "/co/candidate/savannah-wolfson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Meghan Lukens",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 187228.9,
+       "expenditures": 200.0,
+       "status": "$183,809.59",
+       "url": "/co/candidate/meghan-lukens?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Savannah Wolfson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 94615.92,
+       "expenditures": 737.67,
+       "status": "$83,248.28",
+       "url": "/co/candidate/savannah-wolfson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Glenn Edward Lowe III",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7125.33,
+       "expenditures": 0.0,
+       "status": "$4,835.24",
+       "url": "/co/candidate/glenn-edward-lowe-iii?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "Colorado House of Representatives District 27",
+   "url": "/co/race/colorado-house-of-representatives-district-27-56601",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 174572.0,
+   "totalExpenditures": 178900.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Brianna Caterina Titone",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 129228.54,
+       "expenditures": 0.0,
+       "status": "$134,832.77",
+       "url": "/co/candidate/brianna-caterina-titone?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Christina Carlino",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3255.0,
+       "expenditures": 0.0,
+       "status": "$2,737.45",
+       "url": "/co/candidate/christina-carlino?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Lynn Emrick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38559.2,
+       "expenditures": 1392.36,
+       "status": "$38,112.79",
+       "url": "/co/candidate/lynn-emrick?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jacob Luria",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 3529.47,
+       "expenditures": 0.0,
+       "status": "$3,216.62",
+       "url": "/co/candidate/jacob-luria?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Brianna Caterina Titone",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 129228.54,
+       "expenditures": 0.0,
+       "status": "$134,832.77",
+       "url": "/co/candidate/brianna-caterina-titone?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Christina Carlino",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3255.0,
+       "expenditures": 0.0,
+       "status": "$2,737.45",
+       "url": "/co/candidate/christina-carlino?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "Colorado House of Representatives District 28",
+   "url": "/co/race/colorado-house-of-representatives-district-28-56602",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 107254.0,
+   "totalExpenditures": 100825.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Sheila Lieder",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 107254.15,
+       "expenditures": 0.0,
+       "status": "$100,825.10",
+       "url": "/co/candidate/sheila-lieder?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "Colorado House of Representatives District 29",
+   "url": "/co/race/colorado-house-of-representatives-district-29-56603",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 228105.0,
+   "totalExpenditures": 254145.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Shannon Bird",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 208842.22,
+       "expenditures": 0.0,
+       "status": "$235,948.14",
+       "url": "/co/candidate/shannon-bird?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Vanessa Warren-Demott",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19263.04,
+       "expenditures": 0.0,
+       "status": "$16,803.80",
+       "url": "/co/candidate/vanessa-warren-demott?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ryan Van Gundy",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$1,392.88",
+       "url": "/co/candidate/ryan-van-gundy?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Shannon Bird",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 208842.22,
+       "expenditures": 0.0,
+       "status": "$235,948.14",
+       "url": "/co/candidate/shannon-bird?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Vanessa Warren-Demott",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19263.04,
+       "expenditures": 0.0,
+       "status": "$16,803.80",
+       "url": "/co/candidate/vanessa-warren-demott?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "Colorado House of Representatives District 3",
+   "url": "/co/race/colorado-house-of-representatives-district-3-56604",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 68169.0,
+   "totalExpenditures": 87902.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Meg Mulder Froelich",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 55981.14,
+       "expenditures": 0.0,
+       "status": "$77,671.79",
+       "url": "/co/candidate/meg-mulder-froelich?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Marla Fernandez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12187.46,
+       "expenditures": 266.02,
+       "status": "$10,229.98",
+       "url": "/co/candidate/marla-fernandez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Meg Mulder Froelich",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 55981.14,
+       "expenditures": 0.0,
+       "status": "$77,671.79",
+       "url": "/co/candidate/meg-mulder-froelich?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Marla Fernandez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12187.46,
+       "expenditures": 266.02,
+       "status": "$10,229.98",
+       "url": "/co/candidate/marla-fernandez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "Colorado House of Representatives District 30",
+   "url": "/co/race/colorado-house-of-representatives-district-30-56605",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 63567.0,
+   "totalExpenditures": 52528.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Chris Kennedy",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 48969.27,
+       "expenditures": 0.0,
+       "status": "$39,218.71",
+       "url": "/co/candidate/chris-kennedy?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Russell Carter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14598.0,
+       "expenditures": 0.0,
+       "status": "$13,308.97",
+       "url": "/co/candidate/russell-carter?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Chris Kennedy",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 48969.27,
+       "expenditures": 0.0,
+       "status": "$39,218.71",
+       "url": "/co/candidate/chris-kennedy?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Russell Carter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14598.0,
+       "expenditures": 0.0,
+       "status": "$13,308.97",
+       "url": "/co/candidate/russell-carter?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "Colorado House of Representatives District 31",
+   "url": "/co/race/colorado-house-of-representatives-district-31-56606",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 49062.0,
+   "totalExpenditures": 31148.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Said Sharbini",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 38453.57,
+       "expenditures": 0.0,
+       "status": "$20,630.49",
+       "url": "/co/candidate/said-sharbini?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Heidi Pitchforth",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10607.97,
+       "expenditures": 0.0,
+       "status": "$10,517.55",
+       "url": "/co/candidate/heidi-pitchforth?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Said Sharbini",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 38453.57,
+       "expenditures": 0.0,
+       "status": "$20,630.49",
+       "url": "/co/candidate/said-sharbini?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Heidi Pitchforth",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10607.97,
+       "expenditures": 0.0,
+       "status": "$10,517.55",
+       "url": "/co/candidate/heidi-pitchforth?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "Colorado House of Representatives District 32",
+   "url": "/co/race/colorado-house-of-representatives-district-32-56607",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 69131.0,
+   "totalExpenditures": 67688.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Dafna Michaelson Jenet",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 57195.67,
+       "expenditures": 0.0,
+       "status": "$56,308.96",
+       "url": "/co/candidate/dafna-michaelson-jenet?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Justin Brown",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11934.99,
+       "expenditures": 0.0,
+       "status": "$11,379.43",
+       "url": "/co/candidate/justin-brown?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Dafna Michaelson Jenet",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 57195.67,
+       "expenditures": 0.0,
+       "status": "$56,308.96",
+       "url": "/co/candidate/dafna-michaelson-jenet?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Justin Brown",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11934.99,
+       "expenditures": 0.0,
+       "status": "$11,379.43",
+       "url": "/co/candidate/justin-brown?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "Colorado House of Representatives District 33",
+   "url": "/co/race/colorado-house-of-representatives-district-33-56608",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 110185.0,
+   "totalExpenditures": 101028.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "William S Lindstedt",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 99387.33,
+       "expenditures": 0.0,
+       "status": "$93,072.76",
+       "url": "/co/candidate/william-s-lindstedt?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Stacie Dougherty",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10797.72,
+       "expenditures": 0.0,
+       "status": "$7,955.52",
+       "url": "/co/candidate/stacie-dougherty?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "William S Lindstedt",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 99387.33,
+       "expenditures": 0.0,
+       "status": "$93,072.76",
+       "url": "/co/candidate/william-s-lindstedt?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Stacie Dougherty",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10797.72,
+       "expenditures": 0.0,
+       "status": "$7,955.52",
+       "url": "/co/candidate/stacie-dougherty?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "Colorado House of Representatives District 34",
+   "url": "/co/race/colorado-house-of-representatives-district-34-56609",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 240456.0,
+   "totalExpenditures": 240320.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jenny Willford",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 173420.93,
+       "expenditures": 0.0,
+       "status": "$172,498.15",
+       "url": "/co/candidate/jenny-willford?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kevin Allen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 37414.3,
+       "expenditures": 1426.7,
+       "status": "$38,796.00",
+       "url": "/co/candidate/kevin-allen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Chris Baum",
+       "party": "Approval Voting",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/chris-baum?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Jenny Willford",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 173420.93,
+       "expenditures": 0.0,
+       "status": "$172,498.15",
+       "url": "/co/candidate/jenny-willford?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Sam Nizam",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 29620.9,
+       "expenditures": 0.0,
+       "status": "$29,025.90",
+       "url": "/co/candidate/sam-nizam?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Kevin Allen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 37414.3,
+       "expenditures": 1426.7,
+       "status": "$38,796.00",
+       "url": "/co/candidate/kevin-allen?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Approval Voting Party Convention Election",
+     "date": "March 26, 2022",
+     "candidates": [
+      {
+       "name": "Chris Baum",
+       "party": "Approval Voting",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/chris-baum?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "Colorado House of Representatives District 35",
+   "url": "/co/race/colorado-house-of-representatives-district-35-56610",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 22220.0,
+   "totalExpenditures": 22746.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Adrienne Benavidez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 22219.85,
+       "expenditures": 0.0,
+       "status": "$22,745.75",
+       "url": "/co/candidate/adrienne-benavidez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Adrienne Benavidez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 22219.85,
+       "expenditures": 0.0,
+       "status": "$22,745.75",
+       "url": "/co/candidate/adrienne-benavidez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "Colorado House of Representatives District 36",
+   "url": "/co/race/colorado-house-of-representatives-district-36-56611",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 68635.0,
+   "totalExpenditures": 56083.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Mike Weissman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 60467.28,
+       "expenditures": 0.0,
+       "status": "$47,915.30",
+       "url": "/co/candidate/mike-weissman?cycle=2022-election-cycle"
+      },
+      {
+       "name": "William Walters",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8168.19,
+       "expenditures": 199.23,
+       "status": "$8,168.19",
+       "url": "/co/candidate/william-walters?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Andrew Gibson",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/andrew-gibson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Mike Weissman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 60467.28,
+       "expenditures": 0.0,
+       "status": "$47,915.30",
+       "url": "/co/candidate/mike-weissman?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "William Walters",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8168.19,
+       "expenditures": 199.23,
+       "status": "$8,168.19",
+       "url": "/co/candidate/william-walters?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "Colorado House of Representatives District 37",
+   "url": "/co/race/colorado-house-of-representatives-district-37-56612",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 243503.0,
+   "totalExpenditures": 262200.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Ruby Dickson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 155309.52,
+       "expenditures": 20000.0,
+       "status": "$174,006.39",
+       "url": "/co/candidate/ruby-dickson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Paul D Archer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 88193.72,
+       "expenditures": 0.0,
+       "status": "$88,193.72",
+       "url": "/co/candidate/paul-d-archer?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Ruby Dickson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 155309.52,
+       "expenditures": 20000.0,
+       "status": "$174,006.39",
+       "url": "/co/candidate/ruby-dickson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Paul D Archer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 88193.72,
+       "expenditures": 0.0,
+       "status": "$88,193.72",
+       "url": "/co/candidate/paul-d-archer?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "Colorado House of Representatives District 38",
+   "url": "/co/race/colorado-house-of-representatives-district-38-56613",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 71639.0,
+   "totalExpenditures": 59061.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jaylen Mosqueira",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 71639.2,
+       "expenditures": 0.0,
+       "status": "$59,060.88",
+       "url": "/co/candidate/jaylen-mosqueira?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Jaylen Mosqueira",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 71639.2,
+       "expenditures": 0.0,
+       "status": "$59,060.88",
+       "url": "/co/candidate/jaylen-mosqueira?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "Colorado House of Representatives District 39",
+   "url": "/co/race/colorado-house-of-representatives-district-39-56614",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 56837.0,
+   "totalExpenditures": 39107.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Brandi Bradley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 41098.82,
+       "expenditures": 1000.0,
+       "status": "$25,066.00",
+       "url": "/co/candidate/brandi-bradley?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Eric Brody",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15738.06,
+       "expenditures": 0.0,
+       "status": "$14,040.74",
+       "url": "/co/candidate/eric-brody?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Eric Brody",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15738.06,
+       "expenditures": 0.0,
+       "status": "$14,040.74",
+       "url": "/co/candidate/eric-brody?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Brandi Bradley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 41098.82,
+       "expenditures": 1000.0,
+       "status": "$25,066.00",
+       "url": "/co/candidate/brandi-bradley?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "Colorado House of Representatives District 4",
+   "url": "/co/race/colorado-house-of-representatives-district-4-56615",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 25986.0,
+   "totalExpenditures": 23312.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Serena Gonzales-Gutierrez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 25986.0,
+       "expenditures": 0.0,
+       "status": "$23,312.02",
+       "url": "/co/candidate/serena-gonzales-gutierrez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jack Daus",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/jack-daus?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Serena Gonzales-Gutierrez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 25986.0,
+       "expenditures": 0.0,
+       "status": "$23,312.02",
+       "url": "/co/candidate/serena-gonzales-gutierrez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Jack Daus",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/jack-daus?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "Colorado House of Representatives District 40",
+   "url": "/co/race/colorado-house-of-representatives-district-40-56616",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 45336.0,
+   "totalExpenditures": 64149.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Naquetta O Ricks",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 45336.0,
+       "expenditures": 1500.0,
+       "status": "$64,148.69",
+       "url": "/co/candidate/naquetta-o-ricks?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Naquetta O Ricks",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 45336.0,
+       "expenditures": 1500.0,
+       "status": "$64,148.69",
+       "url": "/co/candidate/naquetta-o-ricks?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "Colorado House of Representatives District 41",
+   "url": "/co/race/colorado-house-of-representatives-district-41-56617",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 70865.0,
+   "totalExpenditures": 86444.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Iman Jodeh",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 48877.75,
+       "expenditures": 0.0,
+       "status": "$65,219.02",
+       "url": "/co/candidate/iman-jodeh?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Stephanie Hancock",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21987.08,
+       "expenditures": 0.0,
+       "status": "$21,224.55",
+       "url": "/co/candidate/stephanie-hancock?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Iman Jodeh",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 48877.75,
+       "expenditures": 0.0,
+       "status": "$65,219.02",
+       "url": "/co/candidate/iman-jodeh?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Stephanie Hancock",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21987.08,
+       "expenditures": 0.0,
+       "status": "$21,224.55",
+       "url": "/co/candidate/stephanie-hancock?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "Colorado House of Representatives District 42",
+   "url": "/co/race/colorado-house-of-representatives-district-42-56618",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 64971.0,
+   "totalExpenditures": 57864.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Mandy Lindsay",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 41950.69,
+       "expenditures": 0.0,
+       "status": "$39,470.47",
+       "url": "/co/candidate/mandy-lindsay?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Cory Parella",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4346.0,
+       "expenditures": 300.0,
+       "status": "$3,407.26",
+       "url": "/co/candidate/cory-parella?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Mandy Lindsay",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 41950.69,
+       "expenditures": 0.0,
+       "status": "$39,470.47",
+       "url": "/co/candidate/mandy-lindsay?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Eric Nelson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 125.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/eric-nelson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Gail Pough",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18549.61,
+       "expenditures": 0.0,
+       "status": "$14,986.32",
+       "url": "/co/candidate/gail-pough?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Cory Parella",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4346.0,
+       "expenditures": 300.0,
+       "status": "$3,407.26",
+       "url": "/co/candidate/cory-parella?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "Colorado House of Representatives District 43",
+   "url": "/co/race/colorado-house-of-representatives-district-43-56619",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 76091.0,
+   "totalExpenditures": 135437.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Robert C Marshall",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 62976.84,
+       "expenditures": 63459.75,
+       "status": "$122,522.85",
+       "url": "/co/candidate/robert-c-marshall?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Robert C Marshall",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 62976.84,
+       "expenditures": 63459.75,
+       "status": "$122,522.85",
+       "url": "/co/candidate/robert-c-marshall?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Robin Webb",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13113.7,
+       "expenditures": 0.0,
+       "status": "$12,913.70",
+       "url": "/co/candidate/robin-webb?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "Colorado House of Representatives District 44",
+   "url": "/co/race/colorado-house-of-representatives-district-44-56620",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 69483.0,
+   "totalExpenditures": 113462.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Anthony Hartsook",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 51983.17,
+       "expenditures": 50000.0,
+       "status": "$97,376.50",
+       "url": "/co/candidate/anthony-hartsook?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bob Henry",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1415.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/bob-henry?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Bob Henry",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1415.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/bob-henry?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Anthony Hartsook",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 51983.17,
+       "expenditures": 50000.0,
+       "status": "$97,376.50",
+       "url": "/co/candidate/anthony-hartsook?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Terry Dodd",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16085.03,
+       "expenditures": 0.0,
+       "status": "$16,085.03",
+       "url": "/co/candidate/terry-dodd?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "Colorado House of Representatives District 45",
+   "url": "/co/race/colorado-house-of-representatives-district-45-56621",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 96088.0,
+   "totalExpenditures": 156421.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Lisa Frizell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45144.59,
+       "expenditures": 65000.0,
+       "status": "$107,603.79",
+       "url": "/co/candidate/lisa-frizell?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Lisa Frizell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45144.59,
+       "expenditures": 65000.0,
+       "status": "$107,603.79",
+       "url": "/co/candidate/lisa-frizell?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bill Jack",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 50943.45,
+       "expenditures": 1000.0,
+       "status": "$48,817.68",
+       "url": "/co/candidate/bill-jack?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "Colorado House of Representatives District 46",
+   "url": "/co/race/colorado-house-of-representatives-district-46-56622",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 103600.0,
+   "totalExpenditures": 107315.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Tisha Mauro",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 82770.11,
+       "expenditures": 0.0,
+       "status": "$81,664.35",
+       "url": "/co/candidate/tisha-mauro?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jonathan Ambler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11347.0,
+       "expenditures": 4785.05,
+       "status": "$16,884.33",
+       "url": "/co/candidate/jonathan-ambler?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Tisha Mauro",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 82770.11,
+       "expenditures": 0.0,
+       "status": "$81,664.35",
+       "url": "/co/candidate/tisha-mauro?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jason Munoz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9482.76,
+       "expenditures": 0.0,
+       "status": "$8,766.24",
+       "url": "/co/candidate/jason-munoz?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Jonathan Ambler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11347.0,
+       "expenditures": 4785.05,
+       "status": "$16,884.33",
+       "url": "/co/candidate/jonathan-ambler?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "Colorado House of Representatives District 47",
+   "url": "/co/race/colorado-house-of-representatives-district-47-56623",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 101767.0,
+   "totalExpenditures": 84546.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Ty Winter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 96867.03,
+       "expenditures": 3800.0,
+       "status": "$79,645.82",
+       "url": "/co/candidate/ty-winter?cycle=2022-election-cycle"
+      },
+      {
+       "name": "E Dean Ormiston",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4900.0,
+       "expenditures": 0.0,
+       "status": "$4,900.00",
+       "url": "/co/candidate/e-dean-ormiston?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "E Dean Ormiston",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4900.0,
+       "expenditures": 0.0,
+       "status": "$4,900.00",
+       "url": "/co/candidate/e-dean-ormiston?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Ty Winter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 96867.03,
+       "expenditures": 3800.0,
+       "status": "$79,645.82",
+       "url": "/co/candidate/ty-winter?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "Colorado House of Representatives District 48",
+   "url": "/co/race/colorado-house-of-representatives-district-48-56624",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 65978.0,
+   "totalExpenditures": 46118.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Gabe Evans",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 58950.14,
+       "expenditures": 1000.0,
+       "status": "$39,287.04",
+       "url": "/co/candidate/gabe-evans?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Spring Erickson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3810.28,
+       "expenditures": 0.0,
+       "status": "$3,613.26",
+       "url": "/co/candidate/spring-erickson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Spring Erickson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3810.28,
+       "expenditures": 0.0,
+       "status": "$3,613.26",
+       "url": "/co/candidate/spring-erickson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Gabe Evans",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 58950.14,
+       "expenditures": 1000.0,
+       "status": "$39,287.04",
+       "url": "/co/candidate/gabe-evans?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Terry Degroot",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3217.35,
+       "expenditures": 0.0,
+       "status": "$3,217.35",
+       "url": "/co/candidate/terry-degroot?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "Colorado House of Representatives District 49",
+   "url": "/co/race/colorado-house-of-representatives-district-49-56625",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 106023.0,
+   "totalExpenditures": 95832.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Judy Amabile",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 78273.88,
+       "expenditures": 0.0,
+       "status": "$69,170.47",
+       "url": "/co/candidate/judy-amabile?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Katie Lehr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25542.67,
+       "expenditures": 1000.0,
+       "status": "$24,455.00",
+       "url": "/co/candidate/katie-lehr?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Judy Amabile",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 78273.88,
+       "expenditures": 0.0,
+       "status": "$69,170.47",
+       "url": "/co/candidate/judy-amabile?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Katie Lehr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25542.67,
+       "expenditures": 1000.0,
+       "status": "$24,455.00",
+       "url": "/co/candidate/katie-lehr?cycle=2022-election-cycle"
+      },
+      {
+       "name": "John Caldwell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2206.31,
+       "expenditures": 0.0,
+       "status": "$2,206.31",
+       "url": "/co/candidate/john-caldwell?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "Colorado House of Representatives District 5",
+   "url": "/co/race/colorado-house-of-representatives-district-5-56626",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 17225.0,
+   "totalExpenditures": 30639.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Alex Valdez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16800.0,
+       "expenditures": 0.0,
+       "status": "$29,677.02",
+       "url": "/co/candidate/alex-valdez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Johnnie W Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$961.94",
+       "url": "/co/candidate/johnnie-w-johnson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Troy Brekke",
+       "party": "Unity",
+       "incumbent": false,
+       "contributions": 425.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/troy-brekke?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Alex Valdez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16800.0,
+       "expenditures": 0.0,
+       "status": "$29,677.02",
+       "url": "/co/candidate/alex-valdez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Johnnie W Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$961.94",
+       "url": "/co/candidate/johnnie-w-johnson?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "Colorado House of Representatives District 50",
+   "url": "/co/race/colorado-house-of-representatives-district-50-56627",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 174001.0,
+   "totalExpenditures": 187266.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Mary Young",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 128182.99,
+       "expenditures": 25000.0,
+       "status": "$154,368.55",
+       "url": "/co/candidate/mary-young?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ryan Gonzalez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45817.85,
+       "expenditures": 0.0,
+       "status": "$32,897.85",
+       "url": "/co/candidate/ryan-gonzalez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Mary Young",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 128182.99,
+       "expenditures": 25000.0,
+       "status": "$154,368.55",
+       "url": "/co/candidate/mary-young?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Ryan Gonzalez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45817.85,
+       "expenditures": 0.0,
+       "status": "$32,897.85",
+       "url": "/co/candidate/ryan-gonzalez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "Colorado House of Representatives District 51",
+   "url": "/co/race/colorado-house-of-representatives-district-51-56628",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 100731.0,
+   "totalExpenditures": 75083.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Hugh Mckean",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 79995.0,
+       "expenditures": 0.0,
+       "status": "$54,346.97",
+       "url": "/co/candidate/hugh-mckean?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Hugh Mckean",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 79995.0,
+       "expenditures": 0.0,
+       "status": "$54,346.97",
+       "url": "/co/candidate/hugh-mckean?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Austin Hein",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20736.45,
+       "expenditures": 0.0,
+       "status": "$20,736.45",
+       "url": "/co/candidate/austin-hein?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "Colorado House of Representatives District 52",
+   "url": "/co/race/colorado-house-of-representatives-district-52-56629",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 73049.0,
+   "totalExpenditures": 74852.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Cathy Kipp",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 73049.25,
+       "expenditures": 0.0,
+       "status": "$74,851.79",
+       "url": "/co/candidate/cathy-kipp?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Cathy Kipp",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 73049.25,
+       "expenditures": 0.0,
+       "status": "$74,851.79",
+       "url": "/co/candidate/cathy-kipp?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "Colorado House of Representatives District 53",
+   "url": "/co/race/colorado-house-of-representatives-district-53-56630",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 78676.0,
+   "totalExpenditures": 64020.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Andrew Boesenecker",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 76013.37,
+       "expenditures": 0.0,
+       "status": "$60,097.40",
+       "url": "/co/candidate/andrew-boesenecker?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Donna Walter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2662.48,
+       "expenditures": 0.0,
+       "status": "$3,922.26",
+       "url": "/co/candidate/donna-walter?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Andrew Boesenecker",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 76013.37,
+       "expenditures": 0.0,
+       "status": "$60,097.40",
+       "url": "/co/candidate/andrew-boesenecker?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Donna Walter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2662.48,
+       "expenditures": 0.0,
+       "status": "$3,922.26",
+       "url": "/co/candidate/donna-walter?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "Colorado House of Representatives District 54",
+   "url": "/co/race/colorado-house-of-representatives-district-54-56631",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 52505.0,
+   "totalExpenditures": 75565.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Matt Soper",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 48605.99,
+       "expenditures": 0.0,
+       "status": "$71,671.46",
+       "url": "/co/candidate/matt-soper?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Alicemarie Slaven-Emond",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3898.96,
+       "expenditures": 0.0,
+       "status": "$3,893.94",
+       "url": "/co/candidate/alicemarie-slaven-emond?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Alicemarie Slaven-Emond",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3898.96,
+       "expenditures": 0.0,
+       "status": "$3,893.94",
+       "url": "/co/candidate/alicemarie-slaven-emond?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Matt Soper",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 48605.99,
+       "expenditures": 0.0,
+       "status": "$71,671.46",
+       "url": "/co/candidate/matt-soper?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "Colorado House of Representatives District 55",
+   "url": "/co/race/colorado-house-of-representatives-district-55-56632",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 124837.0,
+   "totalExpenditures": 120270.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Rick Taggart",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 63936.7,
+       "expenditures": 0.0,
+       "status": "$57,752.85",
+       "url": "/co/candidate/rick-taggart?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Rick Taggart",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 63936.7,
+       "expenditures": 0.0,
+       "status": "$57,752.85",
+       "url": "/co/candidate/rick-taggart?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Nina Anderson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5696.64,
+       "expenditures": 3156.04,
+       "status": "$8,856.92",
+       "url": "/co/candidate/nina-anderson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Patricia Weber",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 55203.62,
+       "expenditures": 642.44,
+       "status": "$53,660.00",
+       "url": "/co/candidate/patricia-weber?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "Colorado House of Representatives District 56",
+   "url": "/co/race/colorado-house-of-representatives-district-56-56633",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 21257.0,
+   "totalExpenditures": 21215.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Rod Bockenfeld",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 18430.0,
+       "expenditures": 0.0,
+       "status": "$18,646.70",
+       "url": "/co/candidate/rod-bockenfeld?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kathleen Conway",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2826.89,
+       "expenditures": 0.0,
+       "status": "$2,568.58",
+       "url": "/co/candidate/kathleen-conway?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Kathleen Conway",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2826.89,
+       "expenditures": 0.0,
+       "status": "$2,568.58",
+       "url": "/co/candidate/kathleen-conway?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Rod Bockenfeld",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 18430.0,
+       "expenditures": 0.0,
+       "status": "$18,646.70",
+       "url": "/co/candidate/rod-bockenfeld?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "Colorado House of Representatives District 57",
+   "url": "/co/race/colorado-house-of-representatives-district-57-56634",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 299229.0,
+   "totalExpenditures": 280760.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Elizabeth Velasco",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 148515.22,
+       "expenditures": 0.0,
+       "status": "$134,621.63",
+       "url": "/co/candidate/elizabeth-velasco?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Perry Will",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 85622.13,
+       "expenditures": 0.0,
+       "status": "$93,468.59",
+       "url": "/co/candidate/perry-will?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Elizabeth Velasco",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 148515.22,
+       "expenditures": 0.0,
+       "status": "$134,621.63",
+       "url": "/co/candidate/elizabeth-velasco?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Cole Buerger",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 65091.69,
+       "expenditures": 12851.18,
+       "status": "$52,669.53",
+       "url": "/co/candidate/cole-buerger?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Perry Will",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 85622.13,
+       "expenditures": 0.0,
+       "status": "$93,468.59",
+       "url": "/co/candidate/perry-will?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "Colorado House of Representatives District 58",
+   "url": "/co/race/colorado-house-of-representatives-district-58-56635",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 40945.0,
+   "totalExpenditures": 39651.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Marcus W Catlin",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 40945.42,
+       "expenditures": 0.0,
+       "status": "$39,650.80",
+       "url": "/co/candidate/marcus-w-catlin?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Marcus W Catlin",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 40945.42,
+       "expenditures": 0.0,
+       "status": "$39,650.80",
+       "url": "/co/candidate/marcus-w-catlin?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "Colorado House of Representatives District 59",
+   "url": "/co/race/colorado-house-of-representatives-district-59-56636",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 288280.0,
+   "totalExpenditures": 276205.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Barbara Mclachlan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 185441.44,
+       "expenditures": 0.0,
+       "status": "$187,076.03",
+       "url": "/co/candidate/barbara-mclachlan?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Shelli Shaw",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 102839.02,
+       "expenditures": 0.0,
+       "status": "$89,129.41",
+       "url": "/co/candidate/shelli-shaw?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Barbara Mclachlan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 185441.44,
+       "expenditures": 0.0,
+       "status": "$187,076.03",
+       "url": "/co/candidate/barbara-mclachlan?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Shelli Shaw",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 102839.02,
+       "expenditures": 0.0,
+       "status": "$89,129.41",
+       "url": "/co/candidate/shelli-shaw?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "Colorado House of Representatives District 6",
+   "url": "/co/race/colorado-house-of-representatives-district-6-56637",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 419791.0,
+   "totalExpenditures": 409042.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Elisabeth Epps",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 234656.25,
+       "expenditures": 0.0,
+       "status": "$224,638.65",
+       "url": "/co/candidate/elisabeth-epps?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Elisabeth Epps",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 234656.25,
+       "expenditures": 0.0,
+       "status": "$224,638.65",
+       "url": "/co/candidate/elisabeth-epps?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Katie March",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 185134.32,
+       "expenditures": 0.0,
+       "status": "$184,402.94",
+       "url": "/co/candidate/katie-march?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "Colorado House of Representatives District 60",
+   "url": "/co/race/colorado-house-of-representatives-district-60-56638",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 15845.0,
+   "totalExpenditures": 15772.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Stephanie Luck",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11901.7,
+       "expenditures": 0.0,
+       "status": "$14,299.29",
+       "url": "/co/candidate/stephanie-luck?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kathryn Green",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3943.41,
+       "expenditures": 0.0,
+       "status": "$1,472.93",
+       "url": "/co/candidate/kathryn-green?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Kathryn Green",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3943.41,
+       "expenditures": 0.0,
+       "status": "$1,472.93",
+       "url": "/co/candidate/kathryn-green?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Stephanie Luck",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11901.7,
+       "expenditures": 0.0,
+       "status": "$14,299.29",
+       "url": "/co/candidate/stephanie-luck?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "Colorado House of Representatives District 61",
+   "url": "/co/race/colorado-house-of-representatives-district-61-56639",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 148219.0,
+   "totalExpenditures": 146488.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Eliza Carney Hamrick",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 148218.6,
+       "expenditures": 0.0,
+       "status": "$146,487.58",
+       "url": "/co/candidate/eliza-carney-hamrick?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kevin Lee Gulbranson",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/kevin-lee-gulbranson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Eliza Carney Hamrick",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 148218.6,
+       "expenditures": 0.0,
+       "status": "$146,487.58",
+       "url": "/co/candidate/eliza-carney-hamrick?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "Colorado House of Representatives District 62",
+   "url": "/co/race/colorado-house-of-representatives-district-62-56640",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 74373.0,
+   "totalExpenditures": 56898.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Matthew Martinez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 35132.78,
+       "expenditures": 0.0,
+       "status": "$20,751.50",
+       "url": "/co/candidate/matthew-martinez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Carol D Riggenbach",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38399.0,
+       "expenditures": 0.0,
+       "status": "$35,443.80",
+       "url": "/co/candidate/carol-d-riggenbach?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Matthew Martinez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 35132.78,
+       "expenditures": 0.0,
+       "status": "$20,751.50",
+       "url": "/co/candidate/matthew-martinez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Carol D Riggenbach",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38399.0,
+       "expenditures": 0.0,
+       "status": "$35,443.80",
+       "url": "/co/candidate/carol-d-riggenbach?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ryan Williams",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 840.98,
+       "expenditures": 0.0,
+       "status": "$702.97",
+       "url": "/co/candidate/ryan-williams?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "Colorado House of Representatives District 63",
+   "url": "/co/race/colorado-house-of-representatives-district-63-56641",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 58070.0,
+   "totalExpenditures": 76282.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Richard Holtorf",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 37790.84,
+       "expenditures": 5400.0,
+       "status": "$54,280.84",
+       "url": "/co/candidate/richard-holtorf?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Richard Holtorf",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 37790.84,
+       "expenditures": 5400.0,
+       "status": "$54,280.84",
+       "url": "/co/candidate/richard-holtorf?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jessie Vance",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20279.12,
+       "expenditures": 1731.34,
+       "status": "$22,001.47",
+       "url": "/co/candidate/jessie-vance?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "63"
+  },
+  {
+   "office": "Colorado House of Representatives District 64",
+   "url": "/co/race/colorado-house-of-representatives-district-64-56642",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 48483.0,
+   "totalExpenditures": 35063.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Ryan Armagost",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46935.89,
+       "expenditures": 0.0,
+       "status": "$34,204.28",
+       "url": "/co/candidate/ryan-armagost?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Richard Webster",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1546.8,
+       "expenditures": 0.0,
+       "status": "$858.61",
+       "url": "/co/candidate/richard-webster?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Richard Webster",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1546.8,
+       "expenditures": 0.0,
+       "status": "$858.61",
+       "url": "/co/candidate/richard-webster?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Ryan Armagost",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46935.89,
+       "expenditures": 0.0,
+       "status": "$34,204.28",
+       "url": "/co/candidate/ryan-armagost?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "64"
+  },
+  {
+   "office": "Colorado House of Representatives District 65",
+   "url": "/co/race/colorado-house-of-representatives-district-65-56643",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "65"
+  },
+  {
+   "office": "Colorado House of Representatives District 7",
+   "url": "/co/race/colorado-house-of-representatives-district-7-56644",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 30928.0,
+   "totalExpenditures": 23445.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jennifer Bacon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 30928.31,
+       "expenditures": 0.0,
+       "status": "$23,444.84",
+       "url": "/co/candidate/jennifer-bacon?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Jennifer Bacon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 30928.31,
+       "expenditures": 0.0,
+       "status": "$23,444.84",
+       "url": "/co/candidate/jennifer-bacon?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "Colorado House of Representatives District 8",
+   "url": "/co/race/colorado-house-of-representatives-district-8-56645",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 20247.0,
+   "totalExpenditures": 38733.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Leslie Herod",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 11357.0,
+       "expenditures": 0.0,
+       "status": "$33,271.23",
+       "url": "/co/candidate/leslie-herod?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Hilleary Waters",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8890.0,
+       "expenditures": 0.0,
+       "status": "$5,462.23",
+       "url": "/co/candidate/hilleary-waters?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Leslie Herod",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 11357.0,
+       "expenditures": 0.0,
+       "status": "$33,271.23",
+       "url": "/co/candidate/leslie-herod?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Hilleary Waters",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8890.0,
+       "expenditures": 0.0,
+       "status": "$5,462.23",
+       "url": "/co/candidate/hilleary-waters?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "Colorado House of Representatives District 9",
+   "url": "/co/race/colorado-house-of-representatives-district-9-56646",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 28503.0,
+   "totalExpenditures": 25659.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Emily Sirota",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 28502.73,
+       "expenditures": 0.0,
+       "status": "$25,658.87",
+       "url": "/co/candidate/emily-sirota?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Emily Sirota",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 28502.73,
+       "expenditures": 0.0,
+       "status": "$25,658.87",
+       "url": "/co/candidate/emily-sirota?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "Colorado State Senate District 1",
+   "url": "/co/race/colorado-state-senate-district-1-56565",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 58946.0,
+   "totalExpenditures": 40009.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Byron Pelton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33918.55,
+       "expenditures": 0.0,
+       "status": "$13,754.39",
+       "url": "/co/candidate/byron-pelton?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Byron Pelton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33918.55,
+       "expenditures": 0.0,
+       "status": "$13,754.39",
+       "url": "/co/candidate/byron-pelton?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tonya Van Beber",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25027.1,
+       "expenditures": 7900.0,
+       "status": "$26,254.73",
+       "url": "/co/candidate/tonya-van-beber?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "1"
+  },
+  {
+   "office": "Colorado State Senate District 11",
+   "url": "/co/race/colorado-state-senate-district-11-56572",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 267451.0,
+   "totalExpenditures": 244813.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Thomas E Exum Sr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 216588.87,
+       "expenditures": 0.0,
+       "status": "$193,950.44",
+       "url": "/co/candidate/thomas-e-exum-sr?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Thomas E Exum Sr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 216588.87,
+       "expenditures": 0.0,
+       "status": "$193,950.44",
+       "url": "/co/candidate/thomas-e-exum-sr?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Yolanda L Avila",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 50862.14,
+       "expenditures": 0.0,
+       "status": "$50,862.14",
+       "url": "/co/candidate/yolanda-l-avila?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "11"
+  },
+  {
+   "office": "Colorado State Senate District 15",
+   "url": "/co/race/colorado-state-senate-district-15-56574",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 482172.0,
+   "totalExpenditures": 481696.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Janice Marchman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 209456.9,
+       "expenditures": 400.0,
+       "status": "$206,489.50",
+       "url": "/co/candidate/janice-marchman?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rob Woodward",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 272715.56,
+       "expenditures": 0.0,
+       "status": "$275,206.44",
+       "url": "/co/candidate/rob-woodward?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Janice Marchman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 209456.9,
+       "expenditures": 400.0,
+       "status": "$206,489.50",
+       "url": "/co/candidate/janice-marchman?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Rob Woodward",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 272715.56,
+       "expenditures": 0.0,
+       "status": "$275,206.44",
+       "url": "/co/candidate/rob-woodward?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "15"
+  },
+  {
+   "office": "Colorado State Senate District 20",
+   "url": "/co/race/colorado-state-senate-district-20-56576",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1462663.0,
+   "totalExpenditures": 1645481.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Lisa Ann Cutter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 278748.72,
+       "expenditures": 0.0,
+       "status": "$276,804.63",
+       "url": "/co/candidate/lisa-ann-cutter?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tim Walsh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1183913.84,
+       "expenditures": 190000.0,
+       "status": "$1,368,676.04",
+       "url": "/co/candidate/tim-walsh?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Lisa Ann Cutter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 278748.72,
+       "expenditures": 0.0,
+       "status": "$276,804.63",
+       "url": "/co/candidate/lisa-ann-cutter?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Tim Walsh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1183913.84,
+       "expenditures": 190000.0,
+       "status": "$1,368,676.04",
+       "url": "/co/candidate/tim-walsh?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "20"
+  },
+  {
+   "office": "Colorado State Senate District 22",
+   "url": "/co/race/colorado-state-senate-district-22-56577",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 125414.0,
+   "totalExpenditures": 87259.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jessie Danielson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 114726.1,
+       "expenditures": 0.0,
+       "status": "$77,972.85",
+       "url": "/co/candidate/jessie-danielson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Colby Drechsel",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10687.92,
+       "expenditures": 0.0,
+       "status": "$9,286.44",
+       "url": "/co/candidate/colby-drechsel?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Jessie Danielson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 114726.1,
+       "expenditures": 0.0,
+       "status": "$77,972.85",
+       "url": "/co/candidate/jessie-danielson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Colby Drechsel",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10687.92,
+       "expenditures": 0.0,
+       "status": "$9,286.44",
+       "url": "/co/candidate/colby-drechsel?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "22"
+  },
+  {
+   "office": "Colorado State Senate District 24",
+   "url": "/co/race/colorado-state-senate-district-24-56578",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 292285.0,
+   "totalExpenditures": 281698.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Kyle Mullica",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 277181.24,
+       "expenditures": 0.0,
+       "status": "$275,921.63",
+       "url": "/co/candidate/kyle-mullica?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Kyle Mullica",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 277181.24,
+       "expenditures": 0.0,
+       "status": "$275,921.63",
+       "url": "/co/candidate/kyle-mullica?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joe Salazar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15104.0,
+       "expenditures": 0.0,
+       "status": "$5,776.51",
+       "url": "/co/candidate/joe-salazar?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "24"
+  },
+  {
+   "office": "Colorado State Senate District 25",
+   "url": "/co/race/colorado-state-senate-district-25-84683",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 120347.0,
+   "totalExpenditures": 83976.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Faith Winter",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 120346.73,
+       "expenditures": 0.0,
+       "status": "$83,976.42",
+       "url": "/co/candidate/faith-winter?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Faith Winter",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 120346.73,
+       "expenditures": 0.0,
+       "status": "$83,976.42",
+       "url": "/co/candidate/faith-winter?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "25"
+  },
+  {
+   "office": "Colorado State Senate District 27",
+   "url": "/co/race/colorado-state-senate-district-27-84684",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 254995.0,
+   "totalExpenditures": 260963.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Tom Sullivan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4533.5,
+       "expenditures": 0.0,
+       "status": "$33,323.93",
+       "url": "/co/candidate/tom-sullivan?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tom Kim",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 217229.0,
+       "expenditures": 0.0,
+       "status": "$167,982.51",
+       "url": "/co/candidate/tom-kim?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Tom Sullivan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4533.5,
+       "expenditures": 0.0,
+       "status": "$33,323.93",
+       "url": "/co/candidate/tom-sullivan?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Tom Kim",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 217229.0,
+       "expenditures": 0.0,
+       "status": "$167,982.51",
+       "url": "/co/candidate/tom-kim?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Shepherd Macklin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33232.29,
+       "expenditures": 26538.0,
+       "status": "$59,656.70",
+       "url": "/co/candidate/shepherd-macklin?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "27"
+  },
+  {
+   "office": "Colorado State Senate District 3",
+   "url": "/co/race/colorado-state-senate-district-3-56567",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 333054.0,
+   "totalExpenditures": 313975.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Nick Hinrichsen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 174737.42,
+       "expenditures": 0.0,
+       "status": "$175,203.97",
+       "url": "/co/candidate/nick-hinrichsen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Stephen Varela",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 158316.52,
+       "expenditures": 0.0,
+       "status": "$138,771.00",
+       "url": "/co/candidate/stephen-varela?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Alexander Mugatu",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/alexander-mugatu?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Nick Hinrichsen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 174737.42,
+       "expenditures": 0.0,
+       "status": "$175,203.97",
+       "url": "/co/candidate/nick-hinrichsen?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Stephen Varela",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 158316.52,
+       "expenditures": 0.0,
+       "status": "$138,771.00",
+       "url": "/co/candidate/stephen-varela?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "3"
+  },
+  {
+   "office": "Colorado State Senate District 30",
+   "url": "/co/race/colorado-state-senate-district-30-56579",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 3400.0,
+   "totalExpenditures": 3193.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Braeden Miguel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3400.06,
+       "expenditures": 0.0,
+       "status": "$3,193.46",
+       "url": "/co/candidate/braeden-miguel?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Braeden Miguel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3400.06,
+       "expenditures": 0.0,
+       "status": "$3,193.46",
+       "url": "/co/candidate/braeden-miguel?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "30"
+  },
+  {
+   "office": "Colorado State Senate District 32",
+   "url": "/co/race/colorado-state-senate-district-32-56580",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 59020.0,
+   "totalExpenditures": 17867.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Robert Rodriguez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 59020.0,
+       "expenditures": 0.0,
+       "status": "$17,866.93",
+       "url": "/co/candidate/robert-rodriguez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Robert Rodriguez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 59020.0,
+       "expenditures": 0.0,
+       "status": "$17,866.93",
+       "url": "/co/candidate/robert-rodriguez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "32"
+  },
+  {
+   "office": "Colorado State Senate District 34",
+   "url": "/co/race/colorado-state-senate-district-34-56581",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 53354.0,
+   "totalExpenditures": 28083.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Julia C Gonzales",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 53354.37,
+       "expenditures": 0.0,
+       "status": "$28,082.50",
+       "url": "/co/candidate/julia-c-gonzales?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Julia C Gonzales",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 53354.37,
+       "expenditures": 0.0,
+       "status": "$28,082.50",
+       "url": "/co/candidate/julia-c-gonzales?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "34"
+  },
+  {
+   "office": "Colorado State Senate District 35",
+   "url": "/co/race/colorado-state-senate-district-35-84685",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 50437.0,
+   "totalExpenditures": 52032.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Rod Pelton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 42976.52,
+       "expenditures": 0.0,
+       "status": "$41,401.51",
+       "url": "/co/candidate/rod-pelton?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Travis Star Nelson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7460.48,
+       "expenditures": 3169.52,
+       "status": "$10,630.00",
+       "url": "/co/candidate/travis-star-nelson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Travis Star Nelson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7460.48,
+       "expenditures": 3169.52,
+       "status": "$10,630.00",
+       "url": "/co/candidate/travis-star-nelson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Rod Pelton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 42976.52,
+       "expenditures": 0.0,
+       "status": "$41,401.51",
+       "url": "/co/candidate/rod-pelton?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "35"
+  },
+  {
+   "office": "Colorado State Senate District 4",
+   "url": "/co/race/colorado-state-senate-district-4-84591",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 40393.0,
+   "totalExpenditures": 43300.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Mark Baisley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 37212.81,
+       "expenditures": 595.0,
+       "status": "$39,876.72",
+       "url": "/co/candidate/mark-baisley?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jeff Ravage",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3180.49,
+       "expenditures": 0.0,
+       "status": "$3,423.00",
+       "url": "/co/candidate/jeff-ravage?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Jeff Ravage",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3180.49,
+       "expenditures": 0.0,
+       "status": "$3,423.00",
+       "url": "/co/candidate/jeff-ravage?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Mark Baisley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 37212.81,
+       "expenditures": 595.0,
+       "status": "$39,876.72",
+       "url": "/co/candidate/mark-baisley?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "4"
+  },
+  {
+   "office": "Colorado State Senate District 7",
+   "url": "/co/race/colorado-state-senate-district-7-56570",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 59426.0,
+   "totalExpenditures": 49262.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Janice Rich",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 59425.8,
+       "expenditures": 0.0,
+       "status": "$49,261.60",
+       "url": "/co/candidate/janice-rich?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Janice Rich",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 59425.8,
+       "expenditures": 0.0,
+       "status": "$49,261.60",
+       "url": "/co/candidate/janice-rich?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "7"
+  },
+  {
+   "office": "Colorado State Senate District 8",
+   "url": "/co/race/colorado-state-senate-district-8-84682",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 380019.0,
+   "totalExpenditures": 409167.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Dylan Roberts",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 380019.37,
+       "expenditures": 0.0,
+       "status": "$409,167.49",
+       "url": "/co/candidate/dylan-roberts?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Dylan Roberts",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 380019.37,
+       "expenditures": 0.0,
+       "status": "$409,167.49",
+       "url": "/co/candidate/dylan-roberts?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "8"
+  },
+  {
+   "office": "Colorado State Senate District 9",
+   "url": "/co/race/colorado-state-senate-district-9-56571",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 126443.0,
+   "totalExpenditures": 123881.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Paul Lundeen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 117401.08,
+       "expenditures": 0.0,
+       "status": "$112,704.90",
+       "url": "/co/candidate/paul-lundeen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Arik Dougherty",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9041.94,
+       "expenditures": 1800.0,
+       "status": "$10,841.94",
+       "url": "/co/candidate/arik-dougherty?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Arik Dougherty",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9041.94,
+       "expenditures": 1800.0,
+       "status": "$10,841.94",
+       "url": "/co/candidate/arik-dougherty?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 28, 2022",
+     "candidates": [
+      {
+       "name": "Paul Lundeen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 117401.08,
+       "expenditures": 0.0,
+       "status": "$112,704.90",
+       "url": "/co/candidate/paul-lundeen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Lynda Wilson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$334.45",
+       "url": "/co/candidate/lynda-wilson?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "9"
+  }
+ ]
+}

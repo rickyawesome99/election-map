@@ -1,0 +1,3196 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "1",
+      "popPct": 88.5
+     },
+     {
+      "areaPct": 0.5,
+      "key": "3",
+      "popPct": 11.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 57.6
+     },
+     {
+      "county": "Cape May",
+      "popPct": 40.2
+     },
+     {
+      "county": "Atlantic",
+      "popPct": 2.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 236431,
+    "pres2020New": 3.7,
+    "pres2020Old": 7.0,
+    "retainedAreaPct": 99.5,
+    "retainedPopPct": 88.5,
+    "text": "Kept 88% of its population from the 2017\u20132021 HD-1; gained the rest from the old HD-3 (12%). Spans Cumberland, Cape May, Atlantic counties. 2020 presidential margin R+7.0 on the 2017\u20132021 lines \u2192 R+3.7 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 85.3,
+      "key": "10",
+      "popPct": 80.2
+     },
+     {
+      "areaPct": 12.8,
+      "key": "30",
+      "popPct": 17.5
+     },
+     {
+      "areaPct": 1.9,
+      "key": "9",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ocean",
+      "popPct": 90.3
+     },
+     {
+      "county": "Monmouth",
+      "popPct": 9.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 225376,
+    "pres2020New": 21.7,
+    "pres2020Old": 22.5,
+    "retainedAreaPct": 85.3,
+    "retainedPopPct": 80.2,
+    "text": "Kept 80% of its population from the 2017\u20132021 HD-10; gained the rest from the old HD-30 (18%), the old HD-9 (2%). Spans Ocean, Monmouth counties. 2020 presidential margin R+22.5 on the 2017\u20132021 lines \u2192 R+21.7 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 67.7,
+      "key": "11",
+      "popPct": 95.4
+     },
+     {
+      "areaPct": 32.0,
+      "key": "13",
+      "popPct": 2.7
+     },
+     {
+      "areaPct": 0.3,
+      "key": "30",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Monmouth",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 228916,
+    "pres2020New": -13.2,
+    "pres2020Old": -11.7,
+    "retainedAreaPct": 67.7,
+    "retainedPopPct": 95.4,
+    "text": "Kept 95% of its population from the 2017\u20132021 HD-11; gained the rest from the old HD-13 (3%), the old HD-30 (2%). Entirely in Monmouth County. 2020 presidential margin D+11.7 on the 2017\u20132021 lines \u2192 D+13.2 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 99.0,
+      "key": "12",
+      "popPct": 95.3
+     },
+     {
+      "areaPct": 0.8,
+      "key": "14",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 0.3,
+      "key": "18",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 35.2
+     },
+     {
+      "county": "Monmouth",
+      "popPct": 32.1
+     },
+     {
+      "county": "Ocean",
+      "popPct": 29.1
+     },
+     {
+      "county": "Burlington",
+      "popPct": 3.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 225088,
+    "pres2020New": 14.2,
+    "pres2020Old": 13.5,
+    "retainedAreaPct": 99.0,
+    "retainedPopPct": 95.3,
+    "text": "Kept 95% of its population from the 2017\u20132021 HD-12; gained the rest from the old HD-14 (4%), the old HD-18 (1%). Spans Middlesex, Monmouth, Ocean, Burlington counties. 2020 presidential margin R+13.5 on the 2017\u20132021 lines \u2192 R+14.2 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 98.8,
+      "key": "13",
+      "popPct": 96.3
+     },
+     {
+      "areaPct": 1.2,
+      "key": "11",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Monmouth",
+      "popPct": 98.8
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 230176,
+    "pres2020New": 6.7,
+    "pres2020Old": 5.6,
+    "retainedAreaPct": 98.8,
+    "retainedPopPct": 96.3,
+    "text": "Kept 96% of its population from the 2017\u20132021 HD-13; gained the rest from the old HD-11 (4%). Spans Monmouth, Middlesex counties. 2020 presidential margin R+5.6 on the 2017\u20132021 lines \u2192 R+6.7 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "14",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mercer",
+      "popPct": 63.7
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 35.1
+     },
+     {
+      "county": "Monmouth",
+      "popPct": 1.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 226020,
+    "pres2020New": -18.4,
+    "pres2020Old": -17.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2017\u20132021 map. Spans Mercer, Middlesex, Monmouth counties.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 71.2,
+      "key": "15",
+      "popPct": 95.6
+     },
+     {
+      "areaPct": 14.6,
+      "key": "16",
+      "popPct": 2.2
+     },
+     {
+      "areaPct": 14.2,
+      "key": "23",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mercer",
+      "popPct": 90.8
+     },
+     {
+      "county": "Hunterdon",
+      "popPct": 9.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 234191,
+    "pres2020New": -47.5,
+    "pres2020Old": -51.5,
+    "retainedAreaPct": 71.2,
+    "retainedPopPct": 95.6,
+    "text": "Kept 96% of its population from the 2017\u20132021 HD-15; gained the rest from the old HD-16 (2%), the old HD-23 (2%). Spans Mercer, Hunterdon counties. 2020 presidential margin D+51.5 on the 2017\u20132021 lines \u2192 D+47.5 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 86.8,
+      "key": "16",
+      "popPct": 90.5
+     },
+     {
+      "areaPct": 13.2,
+      "key": "23",
+      "popPct": 9.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Somerset",
+      "popPct": 36.0
+     },
+     {
+      "county": "Hunterdon",
+      "popPct": 30.0
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 20.6
+     },
+     {
+      "county": "Mercer",
+      "popPct": 13.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 226945,
+    "pres2020New": -20.7,
+    "pres2020Old": -21.8,
+    "retainedAreaPct": 86.8,
+    "retainedPopPct": 90.5,
+    "text": "Kept 90% of its population from the 2017\u20132021 HD-16; gained the rest from the old HD-23 (10%). Spans Somerset, Hunterdon, Middlesex, Mercer counties. 2020 presidential margin D+21.8 on the 2017\u20132021 lines \u2192 D+20.7 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 99.1,
+      "key": "17",
+      "popPct": 97.9
+     },
+     {
+      "areaPct": 0.9,
+      "key": "23",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 67.9
+     },
+     {
+      "county": "Somerset",
+      "popPct": 32.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 233124,
+    "pres2020New": -45.7,
+    "pres2020Old": -44.1,
+    "retainedAreaPct": 99.1,
+    "retainedPopPct": 97.9,
+    "text": "Kept 98% of its population from the 2017\u20132021 HD-17; gained the rest from the old HD-23 (2%). Spans Middlesex, Somerset counties. 2020 presidential margin D+44.1 on the 2017\u20132021 lines \u2192 D+45.7 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 97.7,
+      "key": "18",
+      "popPct": 97.0
+     },
+     {
+      "areaPct": 2.3,
+      "key": "17",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 234907,
+    "pres2020New": -22.0,
+    "pres2020Old": -22.6,
+    "retainedAreaPct": 97.7,
+    "retainedPopPct": 97.0,
+    "text": "Kept 97% of its population from the 2017\u20132021 HD-18; gained the rest from the old HD-17 (3%). Entirely in Middlesex County. 2020 presidential margin D+22.6 on the 2017\u20132021 lines \u2192 D+22.0 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "19",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 239066,
+    "pres2020New": -19.1,
+    "pres2020Old": -19.1,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2017\u20132021 map. Entirely in Middlesex County.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 58.6,
+      "key": "2",
+      "popPct": 83.2
+     },
+     {
+      "areaPct": 41.4,
+      "key": "9",
+      "popPct": 16.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Atlantic",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 231523,
+    "pres2020New": -11.6,
+    "pres2020Old": -10.7,
+    "retainedAreaPct": 58.6,
+    "retainedPopPct": 83.2,
+    "text": "Kept 83% of its population from the 2017\u20132021 HD-2; gained the rest from the old HD-9 (17%). Entirely in Atlantic County. 2020 presidential margin D+10.7 on the 2017\u20132021 lines \u2192 D+11.6 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 92.2,
+      "key": "20",
+      "popPct": 96.2
+     },
+     {
+      "areaPct": 7.7,
+      "key": "21",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Union",
+      "popPct": 99.5
+     },
+     {
+      "county": "Essex",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 228126,
+    "pres2020New": -42.5,
+    "pres2020Old": -48.1,
+    "retainedAreaPct": 92.2,
+    "retainedPopPct": 96.2,
+    "text": "Kept 96% of its population from the 2017\u20132021 HD-20; gained the rest from the old HD-21 (4%). Spans Union, Essex counties. 2020 presidential margin D+48.1 on the 2017\u20132021 lines \u2192 D+42.5 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 73.3,
+      "key": "21",
+      "popPct": 77.8
+     },
+     {
+      "areaPct": 6.5,
+      "key": "22",
+      "popPct": 12.9
+     },
+     {
+      "areaPct": 6.7,
+      "key": "27",
+      "popPct": 4.8
+     },
+     {
+      "areaPct": 9.3,
+      "key": "25",
+      "popPct": 3.4
+     },
+     {
+      "areaPct": 4.2,
+      "key": "23",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Union",
+      "popPct": 48.4
+     },
+     {
+      "county": "Somerset",
+      "popPct": 30.6
+     },
+     {
+      "county": "Morris",
+      "popPct": 11.0
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 9.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Middlesex",
+      "popPct": 9.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 229426,
+    "pres2020New": -17.4,
+    "pres2020Old": -18.4,
+    "retainedAreaPct": 73.3,
+    "retainedPopPct": 77.8,
+    "text": "Kept 78% of its population from the 2017\u20132021 HD-21; gained the rest from the old HD-22 (13%), the old HD-27 (5%), the old HD-25 (3%) and 1 more. Counties: gained Middlesex (9%). 2020 presidential margin D+18.4 on the 2017\u20132021 lines \u2192 D+17.4 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 86.4,
+      "key": "22",
+      "popPct": 84.1
+     },
+     {
+      "areaPct": 13.5,
+      "key": "21",
+      "popPct": 15.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Union",
+      "popPct": 87.9
+     },
+     {
+      "county": "Somerset",
+      "popPct": 8.6
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 3.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 238080,
+    "pres2020New": -35.3,
+    "pres2020Old": -34.3,
+    "retainedAreaPct": 86.4,
+    "retainedPopPct": 84.1,
+    "text": "Kept 84% of its population from the 2017\u20132021 HD-22; gained the rest from the old HD-21 (16%). Spans Union, Somerset, Middlesex counties. 2020 presidential margin D+34.3 on the 2017\u20132021 lines \u2192 D+35.3 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 67.1,
+      "key": "23",
+      "popPct": 79.1
+     },
+     {
+      "areaPct": 32.1,
+      "key": "24",
+      "popPct": 11.1
+     },
+     {
+      "areaPct": 0.8,
+      "key": "16",
+      "popPct": 9.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Warren",
+      "popPct": 41.0
+     },
+     {
+      "county": "Somerset",
+      "popPct": 40.9
+     },
+     {
+      "county": "Hunterdon",
+      "popPct": 17.1
+     },
+     {
+      "county": "Morris",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 237814,
+    "pres2020New": 5.2,
+    "pres2020Old": 2.6,
+    "retainedAreaPct": 67.1,
+    "retainedPopPct": 79.1,
+    "text": "Kept 79% of its population from the 2017\u20132021 HD-23; gained the rest from the old HD-24 (11%), the old HD-16 (10%). Spans Warren, Somerset, Hunterdon, Morris counties. 2020 presidential margin R+2.6 on the 2017\u20132021 lines \u2192 R+5.2 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 86.0,
+      "key": "24",
+      "popPct": 77.3
+     },
+     {
+      "areaPct": 14.0,
+      "key": "25",
+      "popPct": 22.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sussex",
+      "popPct": 60.1
+     },
+     {
+      "county": "Morris",
+      "popPct": 35.2
+     },
+     {
+      "county": "Warren",
+      "popPct": 4.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 237924,
+    "pres2020New": 13.9,
+    "pres2020Old": 17.4,
+    "retainedAreaPct": 86.0,
+    "retainedPopPct": 77.3,
+    "text": "Kept 77% of its population from the 2017\u20132021 HD-24; gained the rest from the old HD-25 (23%). Spans Sussex, Morris, Warren counties. 2020 presidential margin R+17.4 on the 2017\u20132021 lines \u2192 R+13.9 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 28.3,
+      "key": "25",
+      "popPct": 54.1
+     },
+     {
+      "areaPct": 63.3,
+      "key": "26",
+      "popPct": 37.2
+     },
+     {
+      "areaPct": 8.2,
+      "key": "27",
+      "popPct": 8.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Morris",
+      "popPct": 88.6
+     },
+     {
+      "county": "Passaic",
+      "popPct": 11.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Passaic",
+      "popPct": 11.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Somerset",
+      "popPct": 3.6
+     }
+    ],
+    "fromEra": "2021",
+    "pop2020": 238273,
+    "pres2020New": -6.4,
+    "pres2020Old": -9.3,
+    "retainedAreaPct": 28.3,
+    "retainedPopPct": 54.1,
+    "text": "Kept 54% of its population from the 2017\u20132021 HD-25; gained the rest from the old HD-26 (37%), the old HD-27 (9%). Counties: gained Passaic (11%); lost Somerset. 2020 presidential margin D+9.3 on the 2017\u20132021 lines \u2192 D+6.4 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 34.2,
+      "key": "26",
+      "popPct": 42.3
+     },
+     {
+      "areaPct": 16.7,
+      "key": "27",
+      "popPct": 17.0
+     },
+     {
+      "areaPct": 29.8,
+      "key": "39",
+      "popPct": 13.7
+     },
+     {
+      "areaPct": 7.8,
+      "key": "40",
+      "popPct": 13.6
+     },
+     {
+      "areaPct": 11.5,
+      "key": "25",
+      "popPct": 13.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Morris",
+      "popPct": 80.9
+     },
+     {
+      "county": "Passaic",
+      "popPct": 18.0
+     },
+     {
+      "county": "Essex",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 226129,
+    "pres2020New": 1.2,
+    "pres2020Old": 2.2,
+    "retainedAreaPct": 34.2,
+    "retainedPopPct": 42.3,
+    "text": "A new footprint: only 42% of its population was in the 2017\u20132021 HD-26; it draws from the old HD-27 (17%), the old HD-39 (14%), the old HD-40 (14%) and 1 more. Spans Morris, Passaic, Essex counties. 2020 presidential margin R+2.2 on the 2017\u20132021 lines \u2192 R+1.2 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 30.7,
+      "key": "34",
+      "popPct": 54.8
+     },
+     {
+      "areaPct": 69.2,
+      "key": "27",
+      "popPct": 45.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 61.1
+     },
+     {
+      "county": "Passaic",
+      "popPct": 36.5
+     },
+     {
+      "county": "Bergen",
+      "popPct": 1.5
+     },
+     {
+      "county": "Union",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Passaic",
+      "popPct": 36.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Morris",
+      "popPct": 29.0
+     }
+    ],
+    "fromEra": "2021",
+    "pop2020": 239632,
+    "pres2020New": -42.0,
+    "pres2020Old": -34.9,
+    "retainedAreaPct": 69.2,
+    "retainedPopPct": 45.2,
+    "text": "A new footprint: only 45% of its population was in the 2017\u20132021 HD-27; it draws from the old HD-34 (55%). Counties: gained Passaic (36%); lost Morris. 2020 presidential margin D+34.9 on the 2017\u20132021 lines \u2192 D+42.0 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 35.6,
+      "key": "28",
+      "popPct": 61.9
+     },
+     {
+      "areaPct": 37.9,
+      "key": "27",
+      "popPct": 19.7
+     },
+     {
+      "areaPct": 15.6,
+      "key": "20",
+      "popPct": 9.9
+     },
+     {
+      "areaPct": 10.9,
+      "key": "29",
+      "popPct": 8.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 89.8
+     },
+     {
+      "county": "Union",
+      "popPct": 10.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 226244,
+    "pres2020New": -84.4,
+    "pres2020Old": -59.9,
+    "retainedAreaPct": 35.6,
+    "retainedPopPct": 61.9,
+    "text": "Kept 62% of its population from the 2017\u20132021 HD-28; gained the rest from the old HD-27 (20%), the old HD-20 (10%), the old HD-29 (8%). Spans Essex, Union counties. 2020 presidential margin D+59.9 on the 2017\u20132021 lines \u2192 D+84.4 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 89.1,
+      "key": "29",
+      "popPct": 81.9
+     },
+     {
+      "areaPct": 6.6,
+      "key": "32",
+      "popPct": 9.3
+     },
+     {
+      "areaPct": 4.3,
+      "key": "28",
+      "popPct": 8.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 94.6
+     },
+     {
+      "county": "Hudson",
+      "popPct": 5.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hudson",
+      "popPct": 5.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 235071,
+    "pres2020New": -62.0,
+    "pres2020Old": -56.9,
+    "retainedAreaPct": 89.1,
+    "retainedPopPct": 81.9,
+    "text": "Kept 82% of its population from the 2017\u20132021 HD-29; gained the rest from the old HD-32 (9%), the old HD-28 (9%). Counties: gained Hudson (5%). 2020 presidential margin D+56.9 on the 2017\u20132021 lines \u2192 D+62.0 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 83.9,
+      "key": "3",
+      "popPct": 78.3
+     },
+     {
+      "areaPct": 5.5,
+      "key": "5",
+      "popPct": 15.0
+     },
+     {
+      "areaPct": 0.3,
+      "key": "4",
+      "popPct": 3.7
+     },
+     {
+      "areaPct": 10.3,
+      "key": "1",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Gloucester",
+      "popPct": 64.8
+     },
+     {
+      "county": "Salem",
+      "popPct": 27.6
+     },
+     {
+      "county": "Cumberland",
+      "popPct": 7.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 235909,
+    "pres2020New": 2.6,
+    "pres2020Old": 1.5,
+    "retainedAreaPct": 83.9,
+    "retainedPopPct": 78.3,
+    "text": "Kept 78% of its population from the 2017\u20132021 HD-3; gained the rest from the old HD-5 (15%), the old HD-4 (4%), the old HD-1 (3%). Spans Gloucester, Salem, Cumberland counties. 2020 presidential margin R+1.5 on the 2017\u20132021 lines \u2192 R+2.6 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "30",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ocean",
+      "popPct": 58.1
+     },
+     {
+      "county": "Monmouth",
+      "popPct": 41.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 226333,
+    "pres2020New": 35.3,
+    "pres2020Old": 30.0,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2017\u20132021 map. Spans Ocean, Monmouth counties.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 70.7,
+      "key": "31",
+      "popPct": 81.4
+     },
+     {
+      "areaPct": 29.1,
+      "key": "32",
+      "popPct": 17.6
+     },
+     {
+      "areaPct": 0.2,
+      "key": "33",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hudson",
+      "popPct": 99.1
+     },
+     {
+      "county": "Essex",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 239797,
+    "pres2020New": -45.3,
+    "pres2020Old": -52.0,
+    "retainedAreaPct": 70.7,
+    "retainedPopPct": 81.4,
+    "text": "Kept 81% of its population from the 2017\u20132021 HD-31; gained the rest from the old HD-32 (18%), the old HD-33 (1%). Spans Hudson, Essex counties. 2020 presidential margin D+52.0 on the 2017\u20132021 lines \u2192 D+45.3 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 55.0,
+      "key": "33",
+      "popPct": 70.7
+     },
+     {
+      "areaPct": 44.9,
+      "key": "31",
+      "popPct": 29.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hudson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Bergen",
+      "popPct": 12.6
+     },
+     {
+      "county": "Essex",
+      "popPct": 4.4
+     }
+    ],
+    "fromEra": "2021",
+    "pop2020": 227109,
+    "pres2020New": -57.0,
+    "pres2020Old": -31.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2017\u20132021 HD-32; it draws from the old HD-33 (71%), the old HD-31 (29%). Counties: lost Bergen, Essex. 2020 presidential margin D+31.5 on the 2017\u20132021 lines \u2192 D+57.0 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 83.3,
+      "key": "32",
+      "popPct": 63.9
+     },
+     {
+      "areaPct": 16.6,
+      "key": "33",
+      "popPct": 36.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hudson",
+      "popPct": 98.5
+     },
+     {
+      "county": "Bergen",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 236181,
+    "pres2020New": -37.0,
+    "pres2020Old": -52.7,
+    "retainedAreaPct": 16.6,
+    "retainedPopPct": 36.1,
+    "text": "A new footprint: only 36% of its population was in the 2017\u20132021 HD-33; it draws from the old HD-32 (64%). Spans Hudson, Bergen counties. 2020 presidential margin D+52.7 on the 2017\u20132021 lines \u2192 D+37.0 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 31.3,
+      "key": "34",
+      "popPct": 44.6
+     },
+     {
+      "areaPct": 51.5,
+      "key": "28",
+      "popPct": 39.1
+     },
+     {
+      "areaPct": 17.1,
+      "key": "29",
+      "popPct": 16.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 99.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Passaic",
+      "popPct": 37.1
+     }
+    ],
+    "fromEra": "2021",
+    "pop2020": 233073,
+    "pres2020New": -51.4,
+    "pres2020Old": -58.5,
+    "retainedAreaPct": 31.3,
+    "retainedPopPct": 44.6,
+    "text": "A new footprint: only 45% of its population was in the 2017\u20132021 HD-34; it draws from the old HD-28 (39%), the old HD-29 (16%). Counties: lost Passaic. 2020 presidential margin D+58.5 on the 2017\u20132021 lines \u2192 D+51.4 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "35",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Passaic",
+      "popPct": 77.7
+     },
+     {
+      "county": "Bergen",
+      "popPct": 22.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 237904,
+    "pres2020New": -40.9,
+    "pres2020Old": -40.9,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2017\u20132021 map. Spans Passaic, Bergen counties.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 89.5,
+      "key": "36",
+      "popPct": 87.3
+     },
+     {
+      "areaPct": 10.5,
+      "key": "32",
+      "popPct": 12.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bergen",
+      "popPct": 74.4
+     },
+     {
+      "county": "Passaic",
+      "popPct": 22.4
+     },
+     {
+      "county": "Hudson",
+      "popPct": 2.4
+     },
+     {
+      "county": "Essex",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 233047,
+    "pres2020New": -13.7,
+    "pres2020Old": -12.9,
+    "retainedAreaPct": 89.5,
+    "retainedPopPct": 87.3,
+    "text": "Kept 87% of its population from the 2017\u20132021 HD-36; gained the rest from the old HD-32 (13%). Spans Bergen, Passaic, Hudson, Essex counties. 2020 presidential margin D+12.9 on the 2017\u20132021 lines \u2192 D+13.7 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 94.1,
+      "key": "37",
+      "popPct": 94.2
+     },
+     {
+      "areaPct": 5.9,
+      "key": "36",
+      "popPct": 5.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bergen",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 229121,
+    "pres2020New": -40.1,
+    "pres2020Old": -38.1,
+    "retainedAreaPct": 94.1,
+    "retainedPopPct": 94.2,
+    "text": "Kept 94% of its population from the 2017\u20132021 HD-37; gained the rest from the old HD-36 (6%). Entirely in Bergen County. 2020 presidential margin D+38.1 on the 2017\u20132021 lines \u2192 D+40.1 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 87.5,
+      "key": "38",
+      "popPct": 92.4
+     },
+     {
+      "areaPct": 12.4,
+      "key": "36",
+      "popPct": 7.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bergen",
+      "popPct": 98.0
+     },
+     {
+      "county": "Passaic",
+      "popPct": 2.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 224780,
+    "pres2020New": -14.2,
+    "pres2020Old": -13.4,
+    "retainedAreaPct": 87.5,
+    "retainedPopPct": 92.4,
+    "text": "Kept 92% of its population from the 2017\u20132021 HD-38; gained the rest from the old HD-36 (8%). Spans Bergen, Passaic counties. 2020 presidential margin D+13.4 on the 2017\u20132021 lines \u2192 D+14.2 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 81.0,
+      "key": "39",
+      "popPct": 80.9
+     },
+     {
+      "areaPct": 7.3,
+      "key": "40",
+      "popPct": 12.2
+     },
+     {
+      "areaPct": 11.7,
+      "key": "37",
+      "popPct": 6.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bergen",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Passaic",
+      "popPct": 14.0
+     }
+    ],
+    "fromEra": "2021",
+    "pop2020": 231584,
+    "pres2020New": -6.4,
+    "pres2020Old": -4.6,
+    "retainedAreaPct": 81.0,
+    "retainedPopPct": 80.9,
+    "text": "Kept 81% of its population from the 2017\u20132021 HD-39; gained the rest from the old HD-40 (12%), the old HD-37 (7%). Counties: lost Passaic. 2020 presidential margin D+4.6 on the 2017\u20132021 lines \u2192 D+6.4 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 51.4,
+      "key": "4",
+      "popPct": 82.8
+     },
+     {
+      "areaPct": 19.7,
+      "key": "3",
+      "popPct": 7.8
+     },
+     {
+      "areaPct": 16.6,
+      "key": "2",
+      "popPct": 4.9
+     },
+     {
+      "areaPct": 12.3,
+      "key": "8",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Camden",
+      "popPct": 48.8
+     },
+     {
+      "county": "Gloucester",
+      "popPct": 46.2
+     },
+     {
+      "county": "Atlantic",
+      "popPct": 5.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Atlantic",
+      "popPct": 5.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 233469,
+    "pres2020New": -6.9,
+    "pres2020Old": -14.7,
+    "retainedAreaPct": 51.4,
+    "retainedPopPct": 82.8,
+    "text": "Kept 83% of its population from the 2017\u20132021 HD-4; gained the rest from the old HD-3 (8%), the old HD-2 (5%), the old HD-8 (4%). Counties: gained Atlantic (5%). 2020 presidential margin D+14.7 on the 2017\u20132021 lines \u2192 D+6.9 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 69.4,
+      "key": "40",
+      "popPct": 69.2
+     },
+     {
+      "areaPct": 23.9,
+      "key": "26",
+      "popPct": 17.4
+     },
+     {
+      "areaPct": 3.8,
+      "key": "38",
+      "popPct": 8.5
+     },
+     {
+      "areaPct": 2.9,
+      "key": "27",
+      "popPct": 4.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Passaic",
+      "popPct": 47.1
+     },
+     {
+      "county": "Essex",
+      "popPct": 28.0
+     },
+     {
+      "county": "Bergen",
+      "popPct": 24.0
+     },
+     {
+      "county": "Morris",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 230527,
+    "pres2020New": -1.4,
+    "pres2020Old": 0.0,
+    "retainedAreaPct": 69.4,
+    "retainedPopPct": 69.2,
+    "text": "Kept 69% of its population from the 2017\u20132021 HD-40; gained the rest from the old HD-26 (17%), the old HD-38 (8%), the old HD-27 (5%). Spans Passaic, Essex, Bergen, Morris counties. 2020 presidential margin Even  on the 2017\u20132021 lines \u2192 D+1.4 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 73.6,
+      "key": "5",
+      "popPct": 75.4
+     },
+     {
+      "areaPct": 24.3,
+      "key": "6",
+      "popPct": 23.3
+     },
+     {
+      "areaPct": 2.1,
+      "key": "3",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Camden",
+      "popPct": 80.3
+     },
+     {
+      "county": "Gloucester",
+      "popPct": 19.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 235880,
+    "pres2020New": -36.9,
+    "pres2020Old": -25.8,
+    "retainedAreaPct": 73.6,
+    "retainedPopPct": 75.4,
+    "text": "Kept 75% of its population from the 2017\u20132021 HD-5; gained the rest from the old HD-6 (23%), the old HD-3 (1%). Spans Camden, Gloucester counties. 2020 presidential margin D+25.8 on the 2017\u20132021 lines \u2192 D+36.9 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 75.9,
+      "key": "6",
+      "popPct": 76.4
+     },
+     {
+      "areaPct": 8.8,
+      "key": "4",
+      "popPct": 12.3
+     },
+     {
+      "areaPct": 11.8,
+      "key": "8",
+      "popPct": 7.8
+     },
+     {
+      "areaPct": 3.5,
+      "key": "5",
+      "popPct": 3.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Camden",
+      "popPct": 92.6
+     },
+     {
+      "county": "Burlington",
+      "popPct": 7.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 234481,
+    "pres2020New": -32.5,
+    "pres2020Old": -35.9,
+    "retainedAreaPct": 75.9,
+    "retainedPopPct": 76.4,
+    "text": "Kept 76% of its population from the 2017\u20132021 HD-6; gained the rest from the old HD-4 (12%), the old HD-8 (8%), the old HD-5 (4%). Spans Camden, Burlington counties. 2020 presidential margin D+35.9 on the 2017\u20132021 lines \u2192 D+32.5 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "7",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burlington",
+      "popPct": 99.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 230054,
+    "pres2020New": -31.5,
+    "pres2020Old": -31.5,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2017\u20132021 map. Entirely in Burlington County.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 55.9,
+      "key": "8",
+      "popPct": 83.8
+     },
+     {
+      "areaPct": 5.7,
+      "key": "12",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 9.5,
+      "key": "2",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 28.9,
+      "key": "9",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burlington",
+      "popPct": 87.4
+     },
+     {
+      "county": "Atlantic",
+      "popPct": 11.5
+     },
+     {
+      "county": "Camden",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 230750,
+    "pres2020New": -4.7,
+    "pres2020Old": -6.9,
+    "retainedAreaPct": 55.9,
+    "retainedPopPct": 83.8,
+    "text": "Kept 84% of its population from the 2017\u20132021 HD-8; gained the rest from the old HD-12 (7%), the old HD-2 (5%), the old HD-9 (4%). Spans Burlington, Atlantic, Camden counties. 2020 presidential margin D+6.9 on the 2017\u20132021 lines \u2192 D+4.7 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 87.2,
+      "key": "9",
+      "popPct": 79.3
+     },
+     {
+      "areaPct": 12.8,
+      "key": "10",
+      "popPct": 20.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ocean",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Atlantic",
+      "popPct": 16.4
+     },
+     {
+      "county": "Burlington",
+      "popPct": 3.8
+     }
+    ],
+    "fromEra": "2021",
+    "pop2020": 230510,
+    "pres2020New": 25.1,
+    "pres2020Old": 22.4,
+    "retainedAreaPct": 87.2,
+    "retainedPopPct": 79.3,
+    "text": "Kept 79% of its population from the 2017\u20132021 HD-9; gained the rest from the old HD-10 (21%). Counties: lost Atlantic, Burlington. 2020 presidential margin R+22.4 on the 2017\u20132021 lines \u2192 R+25.1 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "1",
+      "popPct": 88.5
+     },
+     {
+      "areaPct": 0.5,
+      "key": "3",
+      "popPct": 11.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 57.6
+     },
+     {
+      "county": "Cape May",
+      "popPct": 40.2
+     },
+     {
+      "county": "Atlantic",
+      "popPct": 2.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 236431,
+    "pres2020New": 3.7,
+    "pres2020Old": 7.0,
+    "retainedAreaPct": 99.5,
+    "retainedPopPct": 88.5,
+    "text": "Kept 88% of its population from the 2017\u20132021 SD-1; gained the rest from the old SD-3 (12%). Spans Cumberland, Cape May, Atlantic counties. 2020 presidential margin R+7.0 on the 2017\u20132021 lines \u2192 R+3.7 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 85.3,
+      "key": "10",
+      "popPct": 80.2
+     },
+     {
+      "areaPct": 12.8,
+      "key": "30",
+      "popPct": 17.5
+     },
+     {
+      "areaPct": 1.9,
+      "key": "9",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ocean",
+      "popPct": 90.3
+     },
+     {
+      "county": "Monmouth",
+      "popPct": 9.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 225376,
+    "pres2020New": 21.7,
+    "pres2020Old": 22.5,
+    "retainedAreaPct": 85.3,
+    "retainedPopPct": 80.2,
+    "text": "Kept 80% of its population from the 2017\u20132021 SD-10; gained the rest from the old SD-30 (18%), the old SD-9 (2%). Spans Ocean, Monmouth counties. 2020 presidential margin R+22.5 on the 2017\u20132021 lines \u2192 R+21.7 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 67.7,
+      "key": "11",
+      "popPct": 95.4
+     },
+     {
+      "areaPct": 32.0,
+      "key": "13",
+      "popPct": 2.7
+     },
+     {
+      "areaPct": 0.3,
+      "key": "30",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Monmouth",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 228916,
+    "pres2020New": -13.2,
+    "pres2020Old": -11.7,
+    "retainedAreaPct": 67.7,
+    "retainedPopPct": 95.4,
+    "text": "Kept 95% of its population from the 2017\u20132021 SD-11; gained the rest from the old SD-13 (3%), the old SD-30 (2%). Entirely in Monmouth County. 2020 presidential margin D+11.7 on the 2017\u20132021 lines \u2192 D+13.2 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 99.0,
+      "key": "12",
+      "popPct": 95.3
+     },
+     {
+      "areaPct": 0.8,
+      "key": "14",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 0.3,
+      "key": "18",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 35.2
+     },
+     {
+      "county": "Monmouth",
+      "popPct": 32.1
+     },
+     {
+      "county": "Ocean",
+      "popPct": 29.1
+     },
+     {
+      "county": "Burlington",
+      "popPct": 3.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 225088,
+    "pres2020New": 14.2,
+    "pres2020Old": 13.5,
+    "retainedAreaPct": 99.0,
+    "retainedPopPct": 95.3,
+    "text": "Kept 95% of its population from the 2017\u20132021 SD-12; gained the rest from the old SD-14 (4%), the old SD-18 (1%). Spans Middlesex, Monmouth, Ocean, Burlington counties. 2020 presidential margin R+13.5 on the 2017\u20132021 lines \u2192 R+14.2 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 98.8,
+      "key": "13",
+      "popPct": 96.3
+     },
+     {
+      "areaPct": 1.2,
+      "key": "11",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Monmouth",
+      "popPct": 98.8
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 230176,
+    "pres2020New": 6.7,
+    "pres2020Old": 5.6,
+    "retainedAreaPct": 98.8,
+    "retainedPopPct": 96.3,
+    "text": "Kept 96% of its population from the 2017\u20132021 SD-13; gained the rest from the old SD-11 (4%). Spans Monmouth, Middlesex counties. 2020 presidential margin R+5.6 on the 2017\u20132021 lines \u2192 R+6.7 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "14",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mercer",
+      "popPct": 63.7
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 35.1
+     },
+     {
+      "county": "Monmouth",
+      "popPct": 1.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 226020,
+    "pres2020New": -18.4,
+    "pres2020Old": -17.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2017\u20132021 map. Spans Mercer, Middlesex, Monmouth counties.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 71.2,
+      "key": "15",
+      "popPct": 95.6
+     },
+     {
+      "areaPct": 14.6,
+      "key": "16",
+      "popPct": 2.2
+     },
+     {
+      "areaPct": 14.2,
+      "key": "23",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mercer",
+      "popPct": 90.8
+     },
+     {
+      "county": "Hunterdon",
+      "popPct": 9.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 234191,
+    "pres2020New": -47.5,
+    "pres2020Old": -51.5,
+    "retainedAreaPct": 71.2,
+    "retainedPopPct": 95.6,
+    "text": "Kept 96% of its population from the 2017\u20132021 SD-15; gained the rest from the old SD-16 (2%), the old SD-23 (2%). Spans Mercer, Hunterdon counties. 2020 presidential margin D+51.5 on the 2017\u20132021 lines \u2192 D+47.5 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 86.8,
+      "key": "16",
+      "popPct": 90.5
+     },
+     {
+      "areaPct": 13.2,
+      "key": "23",
+      "popPct": 9.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Somerset",
+      "popPct": 36.0
+     },
+     {
+      "county": "Hunterdon",
+      "popPct": 30.0
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 20.6
+     },
+     {
+      "county": "Mercer",
+      "popPct": 13.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 226945,
+    "pres2020New": -20.7,
+    "pres2020Old": -21.8,
+    "retainedAreaPct": 86.8,
+    "retainedPopPct": 90.5,
+    "text": "Kept 90% of its population from the 2017\u20132021 SD-16; gained the rest from the old SD-23 (10%). Spans Somerset, Hunterdon, Middlesex, Mercer counties. 2020 presidential margin D+21.8 on the 2017\u20132021 lines \u2192 D+20.7 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 99.1,
+      "key": "17",
+      "popPct": 97.9
+     },
+     {
+      "areaPct": 0.9,
+      "key": "23",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 67.9
+     },
+     {
+      "county": "Somerset",
+      "popPct": 32.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 233124,
+    "pres2020New": -45.7,
+    "pres2020Old": -44.1,
+    "retainedAreaPct": 99.1,
+    "retainedPopPct": 97.9,
+    "text": "Kept 98% of its population from the 2017\u20132021 SD-17; gained the rest from the old SD-23 (2%). Spans Middlesex, Somerset counties. 2020 presidential margin D+44.1 on the 2017\u20132021 lines \u2192 D+45.7 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 97.7,
+      "key": "18",
+      "popPct": 97.0
+     },
+     {
+      "areaPct": 2.3,
+      "key": "17",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 234907,
+    "pres2020New": -22.0,
+    "pres2020Old": -22.6,
+    "retainedAreaPct": 97.7,
+    "retainedPopPct": 97.0,
+    "text": "Kept 97% of its population from the 2017\u20132021 SD-18; gained the rest from the old SD-17 (3%). Entirely in Middlesex County. 2020 presidential margin D+22.6 on the 2017\u20132021 lines \u2192 D+22.0 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "19",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 239066,
+    "pres2020New": -19.1,
+    "pres2020Old": -19.1,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2017\u20132021 map. Entirely in Middlesex County.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 58.6,
+      "key": "2",
+      "popPct": 83.2
+     },
+     {
+      "areaPct": 41.4,
+      "key": "9",
+      "popPct": 16.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Atlantic",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 231523,
+    "pres2020New": -11.6,
+    "pres2020Old": -10.7,
+    "retainedAreaPct": 58.6,
+    "retainedPopPct": 83.2,
+    "text": "Kept 83% of its population from the 2017\u20132021 SD-2; gained the rest from the old SD-9 (17%). Entirely in Atlantic County. 2020 presidential margin D+10.7 on the 2017\u20132021 lines \u2192 D+11.6 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 92.2,
+      "key": "20",
+      "popPct": 96.2
+     },
+     {
+      "areaPct": 7.7,
+      "key": "21",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Union",
+      "popPct": 99.5
+     },
+     {
+      "county": "Essex",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 228126,
+    "pres2020New": -42.5,
+    "pres2020Old": -48.1,
+    "retainedAreaPct": 92.2,
+    "retainedPopPct": 96.2,
+    "text": "Kept 96% of its population from the 2017\u20132021 SD-20; gained the rest from the old SD-21 (4%). Spans Union, Essex counties. 2020 presidential margin D+48.1 on the 2017\u20132021 lines \u2192 D+42.5 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 73.3,
+      "key": "21",
+      "popPct": 77.8
+     },
+     {
+      "areaPct": 6.5,
+      "key": "22",
+      "popPct": 12.9
+     },
+     {
+      "areaPct": 6.7,
+      "key": "27",
+      "popPct": 4.8
+     },
+     {
+      "areaPct": 9.3,
+      "key": "25",
+      "popPct": 3.4
+     },
+     {
+      "areaPct": 4.2,
+      "key": "23",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Union",
+      "popPct": 48.4
+     },
+     {
+      "county": "Somerset",
+      "popPct": 30.6
+     },
+     {
+      "county": "Morris",
+      "popPct": 11.0
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 9.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Middlesex",
+      "popPct": 9.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 229426,
+    "pres2020New": -17.4,
+    "pres2020Old": -18.4,
+    "retainedAreaPct": 73.3,
+    "retainedPopPct": 77.8,
+    "text": "Kept 78% of its population from the 2017\u20132021 SD-21; gained the rest from the old SD-22 (13%), the old SD-27 (5%), the old SD-25 (3%) and 1 more. Counties: gained Middlesex (9%). 2020 presidential margin D+18.4 on the 2017\u20132021 lines \u2192 D+17.4 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 86.4,
+      "key": "22",
+      "popPct": 84.1
+     },
+     {
+      "areaPct": 13.5,
+      "key": "21",
+      "popPct": 15.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Union",
+      "popPct": 87.9
+     },
+     {
+      "county": "Somerset",
+      "popPct": 8.6
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 3.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 238080,
+    "pres2020New": -35.3,
+    "pres2020Old": -34.3,
+    "retainedAreaPct": 86.4,
+    "retainedPopPct": 84.1,
+    "text": "Kept 84% of its population from the 2017\u20132021 SD-22; gained the rest from the old SD-21 (16%). Spans Union, Somerset, Middlesex counties. 2020 presidential margin D+34.3 on the 2017\u20132021 lines \u2192 D+35.3 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 67.1,
+      "key": "23",
+      "popPct": 79.1
+     },
+     {
+      "areaPct": 32.1,
+      "key": "24",
+      "popPct": 11.1
+     },
+     {
+      "areaPct": 0.8,
+      "key": "16",
+      "popPct": 9.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Warren",
+      "popPct": 41.0
+     },
+     {
+      "county": "Somerset",
+      "popPct": 40.9
+     },
+     {
+      "county": "Hunterdon",
+      "popPct": 17.1
+     },
+     {
+      "county": "Morris",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 237814,
+    "pres2020New": 5.2,
+    "pres2020Old": 2.6,
+    "retainedAreaPct": 67.1,
+    "retainedPopPct": 79.1,
+    "text": "Kept 79% of its population from the 2017\u20132021 SD-23; gained the rest from the old SD-24 (11%), the old SD-16 (10%). Spans Warren, Somerset, Hunterdon, Morris counties. 2020 presidential margin R+2.6 on the 2017\u20132021 lines \u2192 R+5.2 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 86.0,
+      "key": "24",
+      "popPct": 77.3
+     },
+     {
+      "areaPct": 14.0,
+      "key": "25",
+      "popPct": 22.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sussex",
+      "popPct": 60.1
+     },
+     {
+      "county": "Morris",
+      "popPct": 35.2
+     },
+     {
+      "county": "Warren",
+      "popPct": 4.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 237924,
+    "pres2020New": 13.9,
+    "pres2020Old": 17.4,
+    "retainedAreaPct": 86.0,
+    "retainedPopPct": 77.3,
+    "text": "Kept 77% of its population from the 2017\u20132021 SD-24; gained the rest from the old SD-25 (23%). Spans Sussex, Morris, Warren counties. 2020 presidential margin R+17.4 on the 2017\u20132021 lines \u2192 R+13.9 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 28.3,
+      "key": "25",
+      "popPct": 54.1
+     },
+     {
+      "areaPct": 63.3,
+      "key": "26",
+      "popPct": 37.2
+     },
+     {
+      "areaPct": 8.2,
+      "key": "27",
+      "popPct": 8.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Morris",
+      "popPct": 88.6
+     },
+     {
+      "county": "Passaic",
+      "popPct": 11.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Passaic",
+      "popPct": 11.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Somerset",
+      "popPct": 3.6
+     }
+    ],
+    "fromEra": "2021",
+    "pop2020": 238273,
+    "pres2020New": -6.4,
+    "pres2020Old": -9.3,
+    "retainedAreaPct": 28.3,
+    "retainedPopPct": 54.1,
+    "text": "Kept 54% of its population from the 2017\u20132021 SD-25; gained the rest from the old SD-26 (37%), the old SD-27 (9%). Counties: gained Passaic (11%); lost Somerset. 2020 presidential margin D+9.3 on the 2017\u20132021 lines \u2192 D+6.4 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 34.2,
+      "key": "26",
+      "popPct": 42.3
+     },
+     {
+      "areaPct": 16.7,
+      "key": "27",
+      "popPct": 17.0
+     },
+     {
+      "areaPct": 29.8,
+      "key": "39",
+      "popPct": 13.7
+     },
+     {
+      "areaPct": 7.8,
+      "key": "40",
+      "popPct": 13.6
+     },
+     {
+      "areaPct": 11.5,
+      "key": "25",
+      "popPct": 13.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Morris",
+      "popPct": 80.9
+     },
+     {
+      "county": "Passaic",
+      "popPct": 18.0
+     },
+     {
+      "county": "Essex",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 226129,
+    "pres2020New": 1.2,
+    "pres2020Old": 2.2,
+    "retainedAreaPct": 34.2,
+    "retainedPopPct": 42.3,
+    "text": "A new footprint: only 42% of its population was in the 2017\u20132021 SD-26; it draws from the old SD-27 (17%), the old SD-39 (14%), the old SD-40 (14%) and 1 more. Spans Morris, Passaic, Essex counties. 2020 presidential margin R+2.2 on the 2017\u20132021 lines \u2192 R+1.2 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 30.7,
+      "key": "34",
+      "popPct": 54.8
+     },
+     {
+      "areaPct": 69.2,
+      "key": "27",
+      "popPct": 45.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 61.1
+     },
+     {
+      "county": "Passaic",
+      "popPct": 36.5
+     },
+     {
+      "county": "Bergen",
+      "popPct": 1.5
+     },
+     {
+      "county": "Union",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Passaic",
+      "popPct": 36.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Morris",
+      "popPct": 29.0
+     }
+    ],
+    "fromEra": "2021",
+    "pop2020": 239632,
+    "pres2020New": -42.0,
+    "pres2020Old": -34.9,
+    "retainedAreaPct": 69.2,
+    "retainedPopPct": 45.2,
+    "text": "A new footprint: only 45% of its population was in the 2017\u20132021 SD-27; it draws from the old SD-34 (55%). Counties: gained Passaic (36%); lost Morris. 2020 presidential margin D+34.9 on the 2017\u20132021 lines \u2192 D+42.0 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 35.6,
+      "key": "28",
+      "popPct": 61.9
+     },
+     {
+      "areaPct": 37.9,
+      "key": "27",
+      "popPct": 19.7
+     },
+     {
+      "areaPct": 15.6,
+      "key": "20",
+      "popPct": 9.9
+     },
+     {
+      "areaPct": 10.9,
+      "key": "29",
+      "popPct": 8.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 89.8
+     },
+     {
+      "county": "Union",
+      "popPct": 10.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 226244,
+    "pres2020New": -84.4,
+    "pres2020Old": -59.9,
+    "retainedAreaPct": 35.6,
+    "retainedPopPct": 61.9,
+    "text": "Kept 62% of its population from the 2017\u20132021 SD-28; gained the rest from the old SD-27 (20%), the old SD-20 (10%), the old SD-29 (8%). Spans Essex, Union counties. 2020 presidential margin D+59.9 on the 2017\u20132021 lines \u2192 D+84.4 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 89.1,
+      "key": "29",
+      "popPct": 81.9
+     },
+     {
+      "areaPct": 6.6,
+      "key": "32",
+      "popPct": 9.3
+     },
+     {
+      "areaPct": 4.3,
+      "key": "28",
+      "popPct": 8.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 94.6
+     },
+     {
+      "county": "Hudson",
+      "popPct": 5.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hudson",
+      "popPct": 5.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 235071,
+    "pres2020New": -62.0,
+    "pres2020Old": -56.9,
+    "retainedAreaPct": 89.1,
+    "retainedPopPct": 81.9,
+    "text": "Kept 82% of its population from the 2017\u20132021 SD-29; gained the rest from the old SD-32 (9%), the old SD-28 (9%). Counties: gained Hudson (5%). 2020 presidential margin D+56.9 on the 2017\u20132021 lines \u2192 D+62.0 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 83.9,
+      "key": "3",
+      "popPct": 78.3
+     },
+     {
+      "areaPct": 5.5,
+      "key": "5",
+      "popPct": 15.0
+     },
+     {
+      "areaPct": 0.3,
+      "key": "4",
+      "popPct": 3.7
+     },
+     {
+      "areaPct": 10.3,
+      "key": "1",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Gloucester",
+      "popPct": 64.8
+     },
+     {
+      "county": "Salem",
+      "popPct": 27.6
+     },
+     {
+      "county": "Cumberland",
+      "popPct": 7.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 235909,
+    "pres2020New": 2.6,
+    "pres2020Old": 1.5,
+    "retainedAreaPct": 83.9,
+    "retainedPopPct": 78.3,
+    "text": "Kept 78% of its population from the 2017\u20132021 SD-3; gained the rest from the old SD-5 (15%), the old SD-4 (4%), the old SD-1 (3%). Spans Gloucester, Salem, Cumberland counties. 2020 presidential margin R+1.5 on the 2017\u20132021 lines \u2192 R+2.6 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "30",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ocean",
+      "popPct": 58.1
+     },
+     {
+      "county": "Monmouth",
+      "popPct": 41.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 226333,
+    "pres2020New": 35.3,
+    "pres2020Old": 30.0,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2017\u20132021 map. Spans Ocean, Monmouth counties.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 70.7,
+      "key": "31",
+      "popPct": 81.4
+     },
+     {
+      "areaPct": 29.1,
+      "key": "32",
+      "popPct": 17.6
+     },
+     {
+      "areaPct": 0.2,
+      "key": "33",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hudson",
+      "popPct": 99.1
+     },
+     {
+      "county": "Essex",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 239797,
+    "pres2020New": -45.3,
+    "pres2020Old": -52.0,
+    "retainedAreaPct": 70.7,
+    "retainedPopPct": 81.4,
+    "text": "Kept 81% of its population from the 2017\u20132021 SD-31; gained the rest from the old SD-32 (18%), the old SD-33 (1%). Spans Hudson, Essex counties. 2020 presidential margin D+52.0 on the 2017\u20132021 lines \u2192 D+45.3 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 55.0,
+      "key": "33",
+      "popPct": 70.7
+     },
+     {
+      "areaPct": 44.9,
+      "key": "31",
+      "popPct": 29.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hudson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Bergen",
+      "popPct": 12.6
+     },
+     {
+      "county": "Essex",
+      "popPct": 4.4
+     }
+    ],
+    "fromEra": "2021",
+    "pop2020": 227109,
+    "pres2020New": -57.0,
+    "pres2020Old": -31.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2017\u20132021 SD-32; it draws from the old SD-33 (71%), the old SD-31 (29%). Counties: lost Bergen, Essex. 2020 presidential margin D+31.5 on the 2017\u20132021 lines \u2192 D+57.0 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 83.3,
+      "key": "32",
+      "popPct": 63.9
+     },
+     {
+      "areaPct": 16.6,
+      "key": "33",
+      "popPct": 36.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hudson",
+      "popPct": 98.5
+     },
+     {
+      "county": "Bergen",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 236181,
+    "pres2020New": -37.0,
+    "pres2020Old": -52.7,
+    "retainedAreaPct": 16.6,
+    "retainedPopPct": 36.1,
+    "text": "A new footprint: only 36% of its population was in the 2017\u20132021 SD-33; it draws from the old SD-32 (64%). Spans Hudson, Bergen counties. 2020 presidential margin D+52.7 on the 2017\u20132021 lines \u2192 D+37.0 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 31.3,
+      "key": "34",
+      "popPct": 44.6
+     },
+     {
+      "areaPct": 51.5,
+      "key": "28",
+      "popPct": 39.1
+     },
+     {
+      "areaPct": 17.1,
+      "key": "29",
+      "popPct": 16.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 99.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Passaic",
+      "popPct": 37.1
+     }
+    ],
+    "fromEra": "2021",
+    "pop2020": 233073,
+    "pres2020New": -51.4,
+    "pres2020Old": -58.5,
+    "retainedAreaPct": 31.3,
+    "retainedPopPct": 44.6,
+    "text": "A new footprint: only 45% of its population was in the 2017\u20132021 SD-34; it draws from the old SD-28 (39%), the old SD-29 (16%). Counties: lost Passaic. 2020 presidential margin D+58.5 on the 2017\u20132021 lines \u2192 D+51.4 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "35",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Passaic",
+      "popPct": 77.7
+     },
+     {
+      "county": "Bergen",
+      "popPct": 22.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 237904,
+    "pres2020New": -40.9,
+    "pres2020Old": -40.9,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2017\u20132021 map. Spans Passaic, Bergen counties.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 89.5,
+      "key": "36",
+      "popPct": 87.3
+     },
+     {
+      "areaPct": 10.5,
+      "key": "32",
+      "popPct": 12.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bergen",
+      "popPct": 74.4
+     },
+     {
+      "county": "Passaic",
+      "popPct": 22.4
+     },
+     {
+      "county": "Hudson",
+      "popPct": 2.4
+     },
+     {
+      "county": "Essex",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 233047,
+    "pres2020New": -13.7,
+    "pres2020Old": -12.9,
+    "retainedAreaPct": 89.5,
+    "retainedPopPct": 87.3,
+    "text": "Kept 87% of its population from the 2017\u20132021 SD-36; gained the rest from the old SD-32 (13%). Spans Bergen, Passaic, Hudson, Essex counties. 2020 presidential margin D+12.9 on the 2017\u20132021 lines \u2192 D+13.7 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 94.1,
+      "key": "37",
+      "popPct": 94.2
+     },
+     {
+      "areaPct": 5.9,
+      "key": "36",
+      "popPct": 5.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bergen",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 229121,
+    "pres2020New": -40.1,
+    "pres2020Old": -38.1,
+    "retainedAreaPct": 94.1,
+    "retainedPopPct": 94.2,
+    "text": "Kept 94% of its population from the 2017\u20132021 SD-37; gained the rest from the old SD-36 (6%). Entirely in Bergen County. 2020 presidential margin D+38.1 on the 2017\u20132021 lines \u2192 D+40.1 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 87.5,
+      "key": "38",
+      "popPct": 92.4
+     },
+     {
+      "areaPct": 12.4,
+      "key": "36",
+      "popPct": 7.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bergen",
+      "popPct": 98.0
+     },
+     {
+      "county": "Passaic",
+      "popPct": 2.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 224780,
+    "pres2020New": -14.2,
+    "pres2020Old": -13.4,
+    "retainedAreaPct": 87.5,
+    "retainedPopPct": 92.4,
+    "text": "Kept 92% of its population from the 2017\u20132021 SD-38; gained the rest from the old SD-36 (8%). Spans Bergen, Passaic counties. 2020 presidential margin D+13.4 on the 2017\u20132021 lines \u2192 D+14.2 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 81.0,
+      "key": "39",
+      "popPct": 80.9
+     },
+     {
+      "areaPct": 7.3,
+      "key": "40",
+      "popPct": 12.2
+     },
+     {
+      "areaPct": 11.7,
+      "key": "37",
+      "popPct": 6.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bergen",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Passaic",
+      "popPct": 14.0
+     }
+    ],
+    "fromEra": "2021",
+    "pop2020": 231584,
+    "pres2020New": -6.4,
+    "pres2020Old": -4.6,
+    "retainedAreaPct": 81.0,
+    "retainedPopPct": 80.9,
+    "text": "Kept 81% of its population from the 2017\u20132021 SD-39; gained the rest from the old SD-40 (12%), the old SD-37 (7%). Counties: lost Passaic. 2020 presidential margin D+4.6 on the 2017\u20132021 lines \u2192 D+6.4 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 51.4,
+      "key": "4",
+      "popPct": 82.8
+     },
+     {
+      "areaPct": 19.7,
+      "key": "3",
+      "popPct": 7.8
+     },
+     {
+      "areaPct": 16.6,
+      "key": "2",
+      "popPct": 4.9
+     },
+     {
+      "areaPct": 12.3,
+      "key": "8",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Camden",
+      "popPct": 48.8
+     },
+     {
+      "county": "Gloucester",
+      "popPct": 46.2
+     },
+     {
+      "county": "Atlantic",
+      "popPct": 5.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Atlantic",
+      "popPct": 5.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 233469,
+    "pres2020New": -6.9,
+    "pres2020Old": -14.7,
+    "retainedAreaPct": 51.4,
+    "retainedPopPct": 82.8,
+    "text": "Kept 83% of its population from the 2017\u20132021 SD-4; gained the rest from the old SD-3 (8%), the old SD-2 (5%), the old SD-8 (4%). Counties: gained Atlantic (5%). 2020 presidential margin D+14.7 on the 2017\u20132021 lines \u2192 D+6.9 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 69.4,
+      "key": "40",
+      "popPct": 69.2
+     },
+     {
+      "areaPct": 23.9,
+      "key": "26",
+      "popPct": 17.4
+     },
+     {
+      "areaPct": 3.8,
+      "key": "38",
+      "popPct": 8.5
+     },
+     {
+      "areaPct": 2.9,
+      "key": "27",
+      "popPct": 4.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Passaic",
+      "popPct": 47.1
+     },
+     {
+      "county": "Essex",
+      "popPct": 28.0
+     },
+     {
+      "county": "Bergen",
+      "popPct": 24.0
+     },
+     {
+      "county": "Morris",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 230527,
+    "pres2020New": -1.4,
+    "pres2020Old": 0.0,
+    "retainedAreaPct": 69.4,
+    "retainedPopPct": 69.2,
+    "text": "Kept 69% of its population from the 2017\u20132021 SD-40; gained the rest from the old SD-26 (17%), the old SD-38 (8%), the old SD-27 (5%). Spans Passaic, Essex, Bergen, Morris counties. 2020 presidential margin Even  on the 2017\u20132021 lines \u2192 D+1.4 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 73.6,
+      "key": "5",
+      "popPct": 75.4
+     },
+     {
+      "areaPct": 24.3,
+      "key": "6",
+      "popPct": 23.3
+     },
+     {
+      "areaPct": 2.1,
+      "key": "3",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Camden",
+      "popPct": 80.3
+     },
+     {
+      "county": "Gloucester",
+      "popPct": 19.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 235880,
+    "pres2020New": -36.9,
+    "pres2020Old": -25.8,
+    "retainedAreaPct": 73.6,
+    "retainedPopPct": 75.4,
+    "text": "Kept 75% of its population from the 2017\u20132021 SD-5; gained the rest from the old SD-6 (23%), the old SD-3 (1%). Spans Camden, Gloucester counties. 2020 presidential margin D+25.8 on the 2017\u20132021 lines \u2192 D+36.9 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 75.9,
+      "key": "6",
+      "popPct": 76.4
+     },
+     {
+      "areaPct": 8.8,
+      "key": "4",
+      "popPct": 12.3
+     },
+     {
+      "areaPct": 11.8,
+      "key": "8",
+      "popPct": 7.8
+     },
+     {
+      "areaPct": 3.5,
+      "key": "5",
+      "popPct": 3.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Camden",
+      "popPct": 92.6
+     },
+     {
+      "county": "Burlington",
+      "popPct": 7.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 234481,
+    "pres2020New": -32.5,
+    "pres2020Old": -35.9,
+    "retainedAreaPct": 75.9,
+    "retainedPopPct": 76.4,
+    "text": "Kept 76% of its population from the 2017\u20132021 SD-6; gained the rest from the old SD-4 (12%), the old SD-8 (8%), the old SD-5 (4%). Spans Camden, Burlington counties. 2020 presidential margin D+35.9 on the 2017\u20132021 lines \u2192 D+32.5 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "7",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burlington",
+      "popPct": 99.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 230054,
+    "pres2020New": -31.5,
+    "pres2020Old": -31.5,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2017\u20132021 map. Entirely in Burlington County.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 55.9,
+      "key": "8",
+      "popPct": 83.8
+     },
+     {
+      "areaPct": 5.7,
+      "key": "12",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 9.5,
+      "key": "2",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 28.9,
+      "key": "9",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burlington",
+      "popPct": 87.4
+     },
+     {
+      "county": "Atlantic",
+      "popPct": 11.5
+     },
+     {
+      "county": "Camden",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2021",
+    "pop2020": 230750,
+    "pres2020New": -4.7,
+    "pres2020Old": -6.9,
+    "retainedAreaPct": 55.9,
+    "retainedPopPct": 83.8,
+    "text": "Kept 84% of its population from the 2017\u20132021 SD-8; gained the rest from the old SD-12 (7%), the old SD-2 (5%), the old SD-9 (4%). Spans Burlington, Atlantic, Camden counties. 2020 presidential margin D+6.9 on the 2017\u20132021 lines \u2192 D+4.7 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 87.2,
+      "key": "9",
+      "popPct": 79.3
+     },
+     {
+      "areaPct": 12.8,
+      "key": "10",
+      "popPct": 20.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ocean",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Atlantic",
+      "popPct": 16.4
+     },
+     {
+      "county": "Burlington",
+      "popPct": 3.8
+     }
+    ],
+    "fromEra": "2021",
+    "pop2020": 230510,
+    "pres2020New": 25.1,
+    "pres2020Old": 22.4,
+    "retainedAreaPct": 87.2,
+    "retainedPopPct": 79.3,
+    "text": "Kept 79% of its population from the 2017\u20132021 SD-9; gained the rest from the old SD-10 (21%). Counties: lost Atlantic, Burlington. 2020 presidential margin R+22.4 on the 2017\u20132021 lines \u2192 R+25.1 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

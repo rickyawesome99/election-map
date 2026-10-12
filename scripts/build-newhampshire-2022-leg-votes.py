@@ -56,7 +56,12 @@ STATE_LEG_CSV = os.path.join(REPO, "data-entry", "state_leg.csv")
 NH_CSV = os.path.join(REPO, "data-entry", "new_hampshire_2022_legislature.csv")
 DISTRICTS_JSON = os.path.join(REPO, "data-entry", "state-leg-results", "NH-2022.json")
 
-SOURCE = "New Hampshire SoS 2022 county canvasses (per-district)"
+# 2026-10-10: the committed CSV is now REGENERATED from the SoS election-database export
+# (electiondatabase.nhpr.org / nh2.elstats.civera.com, City/Town rows) by
+# scripts/build-state-leg-candidates-from-sos.py --rewrite-nh-csv. The county-PDF parse above had
+# double-counted 17 districts whose candidate header spanned two groups, tripled HI16, mis-assigned
+# RO13/RO16/ST15 and missed ST16: 2,275,330 chamber votes against the export's 2,089,636.
+SOURCE = "New Hampshire SoS 2022 results (election database export, per-district)"
 
 # The boundary data keys NH House districts as a two-letter county code plus the number.
 CODE = {"belknap": "BE", "carroll": "CA", "cheshire": "CH", "coos": "CO", "grafton": "GR",

@@ -1,0 +1,5897 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 90.7,
+      "key": "1",
+      "popPct": 82.8
+     },
+     {
+      "areaPct": 9.3,
+      "key": "5",
+      "popPct": 17.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Shasta",
+      "popPct": 35.4
+     },
+     {
+      "county": "Nevada",
+      "popPct": 19.9
+     },
+     {
+      "county": "El Dorado",
+      "popPct": 11.4
+     },
+     {
+      "county": "Siskiyou",
+      "popPct": 8.6
+     },
+     {
+      "county": "Lassen",
+      "popPct": 6.4
+     },
+     {
+      "county": "Placer",
+      "popPct": 6.3
+     },
+     {
+      "county": "Amador",
+      "popPct": 5.4
+     },
+     {
+      "county": "Plumas",
+      "popPct": 3.9
+     },
+     {
+      "county": "Modoc",
+      "popPct": 1.7
+     },
+     {
+      "county": "Sierra",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "El Dorado",
+      "popPct": 11.4
+     },
+     {
+      "county": "Amador",
+      "popPct": 5.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Butte",
+      "popPct": 3.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 514124,
+    "pres2020New": 12.7,
+    "pres2020Old": 14.8,
+    "retainedAreaPct": 90.7,
+    "retainedPopPct": 82.8,
+    "text": "Kept 83% of its population from the 2016\u20132020 HD-1; gained the rest from the old HD-5 (17%). Counties: gained El Dorado (11%), Amador (5%); lost Butte. 2020 presidential margin R+14.8 on the 2016\u20132020 lines \u2192 R+12.7 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 70.9,
+      "key": "9",
+      "popPct": 76.7
+     },
+     {
+      "areaPct": 12.9,
+      "key": "7",
+      "popPct": 14.7
+     },
+     {
+      "areaPct": 16.2,
+      "key": "8",
+      "popPct": 8.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sacramento",
+      "popPct": 99.0
+     },
+     {
+      "county": "Yolo",
+      "popPct": 1.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Sacramento",
+      "popPct": 99.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Marin",
+      "popPct": 54.4
+     },
+     {
+      "county": "Sonoma",
+      "popPct": 45.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 514982,
+    "pres2020New": -38.0,
+    "pres2020Old": -60.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-10; it draws from the old HD-9 (77%), the old HD-7 (15%), the old HD-8 (8%). Counties: gained Sacramento (99%); lost Marin, Sonoma. 2020 presidential margin D+60.9 on the 2016\u20132020 lines \u2192 D+38.0 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 60.0,
+      "key": "11",
+      "popPct": 63.5
+     },
+     {
+      "areaPct": 10.7,
+      "key": "14",
+      "popPct": 30.0
+     },
+     {
+      "areaPct": 29.3,
+      "key": "4",
+      "popPct": 6.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Solano",
+      "popPct": 86.3
+     },
+     {
+      "county": "Contra Costa",
+      "popPct": 13.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 523085,
+    "pres2020New": -27.1,
+    "pres2020Old": -24.7,
+    "retainedAreaPct": 60.0,
+    "retainedPopPct": 63.5,
+    "text": "Kept 64% of its population from the 2016\u20132020 HD-11; gained the rest from the old HD-14 (30%), the old HD-4 (6%). Spans Solano, Contra Costa counties. 2020 presidential margin D+24.7 on the 2016\u20132020 lines \u2192 D+27.1 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 91.1,
+      "key": "10",
+      "popPct": 85.2
+     },
+     {
+      "areaPct": 8.2,
+      "key": "4",
+      "popPct": 13.2
+     },
+     {
+      "areaPct": 0.7,
+      "key": "2",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marin",
+      "popPct": 53.3
+     },
+     {
+      "county": "Sonoma",
+      "popPct": 46.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Marin",
+      "popPct": 53.3
+     },
+     {
+      "county": "Sonoma",
+      "popPct": 46.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Stanislaus",
+      "popPct": 64.4
+     },
+     {
+      "county": "San Joaquin",
+      "popPct": 35.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 488941,
+    "pres2020New": -59.4,
+    "pres2020Old": 7.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-12; it draws from the old HD-10 (85%), the old HD-4 (13%), the old HD-2 (2%). Counties: gained Marin (53%), Sonoma (47%); lost Stanislaus, San Joaquin. 2020 presidential margin R+7.6 on the 2016\u20132020 lines \u2192 D+59.4 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "13",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Joaquin",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 483457,
+    "pres2020New": -30.4,
+    "pres2020Old": -28.2,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in San Joaquin County.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 90.9,
+      "key": "15",
+      "popPct": 97.3
+     },
+     {
+      "areaPct": 5.7,
+      "key": "14",
+      "popPct": 2.2
+     },
+     {
+      "areaPct": 3.4,
+      "key": "16",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Contra Costa",
+      "popPct": 56.8
+     },
+     {
+      "county": "Alameda",
+      "popPct": 43.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Alameda",
+      "popPct": 43.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Solano",
+      "popPct": 30.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 474155,
+    "pres2020New": -78.3,
+    "pres2020Old": -45.7,
+    "retainedAreaPct": 5.7,
+    "retainedPopPct": 2.2,
+    "text": "A new footprint: only 2% of its population was in the 2016\u20132020 HD-14; it draws from the old HD-15 (97%), the old HD-16 (0%). Counties: gained Alameda (43%); lost Solano. 2020 presidential margin D+45.7 on the 2016\u20132020 lines \u2192 D+78.3 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 75.5,
+      "key": "14",
+      "popPct": 62.5
+     },
+     {
+      "areaPct": 24.1,
+      "key": "11",
+      "popPct": 37.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Contra Costa",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Alameda",
+      "popPct": 50.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 511391,
+    "pres2020New": -40.6,
+    "pres2020Old": -80.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-15; it draws from the old HD-14 (62%), the old HD-11 (37%). Counties: lost Alameda. 2020 presidential margin D+80.1 on the 2016\u20132020 lines \u2192 D+40.6 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 69.1,
+      "key": "16",
+      "popPct": 93.4
+     },
+     {
+      "areaPct": 14.7,
+      "key": "14",
+      "popPct": 5.6
+     },
+     {
+      "areaPct": 16.2,
+      "key": "20",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Contra Costa",
+      "popPct": 60.9
+     },
+     {
+      "county": "Alameda",
+      "popPct": 39.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 517152,
+    "pres2020New": -40.0,
+    "pres2020Old": -40.2,
+    "retainedAreaPct": 69.1,
+    "retainedPopPct": 93.4,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-16; gained the rest from the old HD-14 (6%), the old HD-20 (1%). Spans Contra Costa, Alameda counties. 2020 presidential margin D+40.2 on the 2016\u20132020 lines \u2192 D+40.0 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 97.1,
+      "key": "17",
+      "popPct": 92.9
+     },
+     {
+      "areaPct": 2.9,
+      "key": "19",
+      "popPct": 7.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Francisco",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 516360,
+    "pres2020New": -75.4,
+    "pres2020Old": -77.1,
+    "retainedAreaPct": 97.1,
+    "retainedPopPct": 92.9,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-17; gained the rest from the old HD-19 (7%). Entirely in San Francisco County. 2020 presidential margin D+77.1 on the 2016\u20132020 lines \u2192 D+75.4 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 93.0,
+      "key": "18",
+      "popPct": 89.2
+     },
+     {
+      "areaPct": 6.9,
+      "key": "15",
+      "popPct": 10.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Alameda",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 485229,
+    "pres2020New": -80.3,
+    "pres2020Old": -75.1,
+    "retainedAreaPct": 93.0,
+    "retainedPopPct": 89.2,
+    "text": "Kept 89% of its population from the 2016\u20132020 HD-18; gained the rest from the old HD-15 (11%). Entirely in Alameda County. 2020 presidential margin D+75.1 on the 2016\u20132020 lines \u2192 D+80.3 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 97.0,
+      "key": "19",
+      "popPct": 87.7
+     },
+     {
+      "areaPct": 1.1,
+      "key": "17",
+      "popPct": 9.3
+     },
+     {
+      "areaPct": 2.0,
+      "key": "22",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Francisco",
+      "popPct": 70.3
+     },
+     {
+      "county": "San Mateo",
+      "popPct": 29.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 507677,
+    "pres2020New": -65.7,
+    "pres2020Old": -64.2,
+    "retainedAreaPct": 97.0,
+    "retainedPopPct": 87.7,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-19; gained the rest from the old HD-17 (9%), the old HD-22 (3%). Spans San Francisco, San Mateo counties. 2020 presidential margin D+64.2 on the 2016\u20132020 lines \u2192 D+65.7 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "2",
+      "popPct": 90.2
+     },
+     {
+      "areaPct": 0.3,
+      "key": "10",
+      "popPct": 9.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sonoma",
+      "popPct": 46.4
+     },
+     {
+      "county": "Humboldt",
+      "popPct": 26.9
+     },
+     {
+      "county": "Mendocino",
+      "popPct": 18.0
+     },
+     {
+      "county": "Del Norte",
+      "popPct": 5.5
+     },
+     {
+      "county": "Trinity",
+      "popPct": 3.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 507313,
+    "pres2020New": -40.3,
+    "pres2020Old": -38.4,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 90.2,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-2; gained the rest from the old HD-10 (10%). Spans Sonoma, Humboldt, Mendocino, Del Norte and 1 more counties. 2020 presidential margin D+38.4 on the 2016\u20132020 lines \u2192 D+40.3 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 75.1,
+      "key": "20",
+      "popPct": 74.3
+     },
+     {
+      "areaPct": 17.2,
+      "key": "18",
+      "popPct": 17.8
+     },
+     {
+      "areaPct": 7.7,
+      "key": "16",
+      "popPct": 7.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Alameda",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 512230,
+    "pres2020New": -51.8,
+    "pres2020Old": -51.3,
+    "retainedAreaPct": 75.1,
+    "retainedPopPct": 74.3,
+    "text": "Kept 74% of its population from the 2016\u20132020 HD-20; gained the rest from the old HD-18 (18%), the old HD-16 (8%). Entirely in Alameda County. 2020 presidential margin D+51.3 on the 2016\u20132020 lines \u2192 D+51.8 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 91.4,
+      "key": "22",
+      "popPct": 89.7
+     },
+     {
+      "areaPct": 8.6,
+      "key": "24",
+      "popPct": 10.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Mateo",
+      "popPct": 98.3
+     },
+     {
+      "county": "Santa Clara",
+      "popPct": 1.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "San Mateo",
+      "popPct": 98.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Merced",
+      "popPct": 55.3
+     },
+     {
+      "county": "Stanislaus",
+      "popPct": 44.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 487480,
+    "pres2020New": -57.9,
+    "pres2020Old": -13.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-21; it draws from the old HD-22 (90%), the old HD-24 (10%). Counties: gained San Mateo (98%); lost Merced, Stanislaus. 2020 presidential margin D+13.0 on the 2016\u20132020 lines \u2192 D+57.9 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 90.7,
+      "key": "21",
+      "popPct": 51.6
+     },
+     {
+      "areaPct": 9.3,
+      "key": "12",
+      "popPct": 48.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stanislaus",
+      "popPct": 95.4
+     },
+     {
+      "county": "Merced",
+      "popPct": 4.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Stanislaus",
+      "popPct": 95.4
+     },
+     {
+      "county": "Merced",
+      "popPct": 4.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "San Mateo",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 461431,
+    "pres2020New": -4.7,
+    "pres2020Old": -56.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-22; it draws from the old HD-21 (52%), the old HD-12 (48%). Counties: gained Stanislaus (95%), Merced (5%); lost San Mateo. 2020 presidential margin D+56.6 on the 2016\u20132020 lines \u2192 D+4.7 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 78.1,
+      "key": "24",
+      "popPct": 62.1
+     },
+     {
+      "areaPct": 7.9,
+      "key": "28",
+      "popPct": 27.9
+     },
+     {
+      "areaPct": 14.0,
+      "key": "22",
+      "popPct": 10.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Santa Clara",
+      "popPct": 73.5
+     },
+     {
+      "county": "San Mateo",
+      "popPct": 26.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Santa Clara",
+      "popPct": 73.5
+     },
+     {
+      "county": "San Mateo",
+      "popPct": 26.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Fresno",
+      "popPct": 98.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 478284,
+    "pres2020New": -59.0,
+    "pres2020Old": 1.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-23; it draws from the old HD-24 (62%), the old HD-28 (28%), the old HD-22 (10%). Counties: gained Santa Clara (74%), San Mateo (26%); lost Fresno. 2020 presidential margin R+1.9 on the 2016\u20132020 lines \u2192 D+59.0 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 64.4,
+      "key": "25",
+      "popPct": 75.4
+     },
+     {
+      "areaPct": 35.5,
+      "key": "20",
+      "popPct": 24.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Alameda",
+      "popPct": 58.2
+     },
+     {
+      "county": "Santa Clara",
+      "popPct": 41.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Alameda",
+      "popPct": 58.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "San Mateo",
+      "popPct": 23.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 479672,
+    "pres2020New": -42.8,
+    "pres2020Old": -62.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-24; it draws from the old HD-25 (75%), the old HD-20 (24%). Counties: gained Alameda (58%); lost San Mateo. 2020 presidential margin D+62.8 on the 2016\u20132020 lines \u2192 D+42.8 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 8.3,
+      "key": "27",
+      "popPct": 88.1
+     },
+     {
+      "areaPct": 0.5,
+      "key": "29",
+      "popPct": 5.3
+     },
+     {
+      "areaPct": 0.3,
+      "key": "28",
+      "popPct": 3.0
+     },
+     {
+      "areaPct": 61.0,
+      "key": "25",
+      "popPct": 2.8
+     },
+     {
+      "areaPct": 30.0,
+      "key": "30",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Santa Clara",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Alameda",
+      "popPct": 30.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 499459,
+    "pres2020New": -43.4,
+    "pres2020Old": -43.6,
+    "retainedAreaPct": 61.0,
+    "retainedPopPct": 2.8,
+    "text": "A new footprint: only 3% of its population was in the 2016\u20132020 HD-25; it draws from the old HD-27 (88%), the old HD-29 (5%), the old HD-28 (3%) and 1 more. Counties: lost Alameda. 2020 presidential margin D+43.6 on the 2016\u20132020 lines \u2192 D+43.4 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 29.1,
+      "key": "24",
+      "popPct": 34.4
+     },
+     {
+      "areaPct": 47.3,
+      "key": "25",
+      "popPct": 33.3
+     },
+     {
+      "areaPct": 23.3,
+      "key": "28",
+      "popPct": 31.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Santa Clara",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Santa Clara",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Tulare",
+      "popPct": 93.2
+     },
+     {
+      "county": "Inyo",
+      "popPct": 3.8
+     },
+     {
+      "county": "Kern",
+      "popPct": 2.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 467435,
+    "pres2020New": -53.7,
+    "pres2020Old": 8.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-26; it draws from the old HD-24 (34%), the old HD-25 (33%), the old HD-28 (32%). Counties: gained Santa Clara (100%); lost Tulare, Inyo, Kern. 2020 presidential margin R+8.6 on the 2016\u20132020 lines \u2192 D+53.7 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 35.2,
+      "key": "21",
+      "popPct": 50.9
+     },
+     {
+      "areaPct": 10.6,
+      "key": "5",
+      "popPct": 19.3
+     },
+     {
+      "areaPct": 53.7,
+      "key": "31",
+      "popPct": 17.2
+     },
+     {
+      "areaPct": 0.5,
+      "key": "23",
+      "popPct": 12.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Merced",
+      "popPct": 50.8
+     },
+     {
+      "county": "Fresno",
+      "popPct": 29.7
+     },
+     {
+      "county": "Madera",
+      "popPct": 19.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Merced",
+      "popPct": 50.8
+     },
+     {
+      "county": "Fresno",
+      "popPct": 29.7
+     },
+     {
+      "county": "Madera",
+      "popPct": 19.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Santa Clara",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 511077,
+    "pres2020New": -13.8,
+    "pres2020Old": -43.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-27; it draws from the old HD-21 (51%), the old HD-5 (19%), the old HD-31 (17%) and 1 more. Counties: gained Merced (51%), Fresno (30%), Madera (20%); lost Santa Clara. 2020 presidential margin D+43.1 on the 2016\u20132020 lines \u2192 D+13.8 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 81.4,
+      "key": "29",
+      "popPct": 43.5
+     },
+     {
+      "areaPct": 10.5,
+      "key": "28",
+      "popPct": 40.9
+     },
+     {
+      "areaPct": 7.6,
+      "key": "30",
+      "popPct": 9.7
+     },
+     {
+      "areaPct": 0.6,
+      "key": "27",
+      "popPct": 5.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Santa Clara",
+      "popPct": 73.3
+     },
+     {
+      "county": "Santa Cruz",
+      "popPct": 26.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Santa Cruz",
+      "popPct": 26.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 474611,
+    "pres2020New": -47.8,
+    "pres2020Old": -48.5,
+    "retainedAreaPct": 10.5,
+    "retainedPopPct": 40.9,
+    "text": "A new footprint: only 41% of its population was in the 2016\u20132020 HD-28; it draws from the old HD-29 (44%), the old HD-30 (10%), the old HD-27 (6%). Counties: gained Santa Cruz (27%). 2020 presidential margin D+48.5 on the 2016\u20132020 lines \u2192 D+47.8 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 95.0,
+      "key": "30",
+      "popPct": 89.7
+     },
+     {
+      "areaPct": 5.0,
+      "key": "29",
+      "popPct": 10.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Monterey",
+      "popPct": 58.4
+     },
+     {
+      "county": "Santa Cruz",
+      "popPct": 14.6
+     },
+     {
+      "county": "Santa Clara",
+      "popPct": 14.1
+     },
+     {
+      "county": "San Benito",
+      "popPct": 12.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "San Benito",
+      "popPct": 12.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 496220,
+    "pres2020New": -39.7,
+    "pres2020Old": -49.6,
+    "retainedAreaPct": 5.0,
+    "retainedPopPct": 10.3,
+    "text": "A new footprint: only 10% of its population was in the 2016\u20132020 HD-29; it draws from the old HD-30 (90%). Counties: gained San Benito (13%). 2020 presidential margin D+49.6 on the 2016\u20132020 lines \u2192 D+39.7 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 87.4,
+      "key": "3",
+      "popPct": 93.6
+     },
+     {
+      "areaPct": 10.3,
+      "key": "1",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 2.3,
+      "key": "6",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Butte",
+      "popPct": 42.2
+     },
+     {
+      "county": "Sutter",
+      "popPct": 19.9
+     },
+     {
+      "county": "Yuba",
+      "popPct": 16.2
+     },
+     {
+      "county": "Tehama",
+      "popPct": 13.1
+     },
+     {
+      "county": "Glenn",
+      "popPct": 5.7
+     },
+     {
+      "county": "Placer",
+      "popPct": 2.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Placer",
+      "popPct": 2.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Colusa",
+      "popPct": 2.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 501918,
+    "pres2020New": 12.2,
+    "pres2020Old": 11.6,
+    "retainedAreaPct": 87.4,
+    "retainedPopPct": 93.6,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-3; gained the rest from the old HD-1 (4%), the old HD-6 (3%). Counties: gained Placer (3%); lost Colusa. 2020 presidential margin R+11.6 on the 2016\u20132020 lines \u2192 R+12.2 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 56.9,
+      "key": "35",
+      "popPct": 53.6
+     },
+     {
+      "areaPct": 9.7,
+      "key": "29",
+      "popPct": 44.1
+     },
+     {
+      "areaPct": 33.5,
+      "key": "30",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Luis Obispo",
+      "popPct": 53.6
+     },
+     {
+      "county": "Monterey",
+      "popPct": 31.4
+     },
+     {
+      "county": "Santa Cruz",
+      "popPct": 15.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "San Luis Obispo",
+      "popPct": 53.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Santa Clara",
+      "popPct": 23.7
+     },
+     {
+      "county": "San Benito",
+      "popPct": 12.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 476348,
+    "pres2020New": -30.0,
+    "pres2020Old": -38.6,
+    "retainedAreaPct": 33.5,
+    "retainedPopPct": 2.3,
+    "text": "A new footprint: only 2% of its population was in the 2016\u20132020 HD-30; it draws from the old HD-35 (54%), the old HD-29 (44%). Counties: gained San Luis Obispo (54%); lost Santa Clara, San Benito. 2020 presidential margin D+38.6 on the 2016\u20132020 lines \u2192 D+30.0 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 84.1,
+      "key": "31",
+      "popPct": 70.2
+     },
+     {
+      "areaPct": 15.8,
+      "key": "23",
+      "popPct": 29.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fresno",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 498739,
+    "pres2020New": -29.2,
+    "pres2020Old": -25.4,
+    "retainedAreaPct": 84.1,
+    "retainedPopPct": 70.2,
+    "text": "Kept 70% of its population from the 2016\u20132020 HD-31; gained the rest from the old HD-23 (30%). Entirely in Fresno County. 2020 presidential margin D+25.4 on the 2016\u20132020 lines \u2192 D+29.2 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 42.2,
+      "key": "34",
+      "popPct": 66.4
+     },
+     {
+      "areaPct": 42.0,
+      "key": "26",
+      "popPct": 31.5
+     },
+     {
+      "areaPct": 3.4,
+      "key": "32",
+      "popPct": 1.1
+     },
+     {
+      "areaPct": 12.5,
+      "key": "23",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kern",
+      "popPct": 70.2
+     },
+     {
+      "county": "Tulare",
+      "popPct": 29.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Tulare",
+      "popPct": 29.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kings",
+      "popPct": 32.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 523826,
+    "pres2020New": 27.5,
+    "pres2020Old": -12.2,
+    "retainedAreaPct": 3.4,
+    "retainedPopPct": 1.1,
+    "text": "A new footprint: only 1% of its population was in the 2016\u20132020 HD-32; it draws from the old HD-34 (66%), the old HD-26 (32%), the old HD-23 (1%). Counties: gained Tulare (30%); lost Kings. 2020 presidential margin D+12.2 on the 2016\u20132020 lines \u2192 R+27.5 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 45.5,
+      "key": "26",
+      "popPct": 61.7
+     },
+     {
+      "areaPct": 51.8,
+      "key": "32",
+      "popPct": 29.9
+     },
+     {
+      "areaPct": 1.7,
+      "key": "31",
+      "popPct": 7.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tulare",
+      "popPct": 62.2
+     },
+     {
+      "county": "Kings",
+      "popPct": 29.9
+     },
+     {
+      "county": "Fresno",
+      "popPct": 7.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Tulare",
+      "popPct": 62.2
+     },
+     {
+      "county": "Kings",
+      "popPct": 29.9
+     },
+     {
+      "county": "Fresno",
+      "popPct": 7.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "San Bernardino",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 510004,
+    "pres2020New": 4.3,
+    "pres2020Old": 10.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-33; it draws from the old HD-26 (62%), the old HD-32 (30%), the old HD-31 (8%). Counties: gained Tulare (62%), Kings (30%), Fresno (8%); lost San Bernardino. 2020 presidential margin R+10.6 on the 2016\u20132020 lines \u2192 R+4.3 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 82.9,
+      "key": "33",
+      "popPct": 54.8
+     },
+     {
+      "areaPct": 10.6,
+      "key": "36",
+      "popPct": 36.3
+     },
+     {
+      "areaPct": 3.6,
+      "key": "42",
+      "popPct": 4.9
+     },
+     {
+      "areaPct": 0.3,
+      "key": "40",
+      "popPct": 2.5
+     },
+     {
+      "areaPct": 0.6,
+      "key": "38",
+      "popPct": 1.2
+     },
+     {
+      "areaPct": 1.9,
+      "key": "34",
+      "popPct": 0.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Bernardino",
+      "popPct": 62.2
+     },
+     {
+      "county": "Los Angeles",
+      "popPct": 28.8
+     },
+     {
+      "county": "Kern",
+      "popPct": 9.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "San Bernardino",
+      "popPct": 62.2
+     },
+     {
+      "county": "Los Angeles",
+      "popPct": 28.8
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 532657,
+    "pres2020New": 15.0,
+    "pres2020Old": 20.4,
+    "retainedAreaPct": 1.9,
+    "retainedPopPct": 0.3,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-34; it draws from the old HD-33 (55%), the old HD-36 (36%), the old HD-42 (5%) and 2 more. Counties: gained San Bernardino (62%), Los Angeles (29%). 2020 presidential margin R+20.4 on the 2016\u20132020 lines \u2192 R+15.0 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 84.2,
+      "key": "32",
+      "popPct": 64.4
+     },
+     {
+      "areaPct": 12.9,
+      "key": "34",
+      "popPct": 35.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kern",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kern",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "San Luis Obispo",
+      "popPct": 57.0
+     },
+     {
+      "county": "Santa Barbara",
+      "popPct": 43.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 493593,
+    "pres2020New": -20.2,
+    "pres2020Old": -10.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-35; it draws from the old HD-32 (64%), the old HD-34 (36%). Counties: gained Kern (100%); lost San Luis Obispo, Santa Barbara. 2020 presidential margin D+10.6 on the 2016\u20132020 lines \u2192 D+20.2 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 68.5,
+      "key": "56",
+      "popPct": 76.3
+     },
+     {
+      "areaPct": 0.7,
+      "key": "67",
+      "popPct": 13.4
+     },
+     {
+      "areaPct": 0.0,
+      "key": "42",
+      "popPct": 4.4
+     },
+     {
+      "areaPct": 7.0,
+      "key": "71",
+      "popPct": 4.4
+     },
+     {
+      "areaPct": 23.6,
+      "key": "33",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Riverside",
+      "popPct": 61.3
+     },
+     {
+      "county": "Imperial",
+      "popPct": 37.3
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Riverside",
+      "popPct": 61.3
+     },
+     {
+      "county": "Imperial",
+      "popPct": 37.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Los Angeles",
+      "popPct": 87.6
+     },
+     {
+      "county": "Kern",
+      "popPct": 9.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 481475,
+    "pres2020New": -14.3,
+    "pres2020Old": -9.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-36; it draws from the old HD-56 (76%), the old HD-67 (13%), the old HD-42 (4%) and 2 more. Counties: gained Riverside (61%), Imperial (37%); lost Los Angeles, Kern. 2020 presidential margin D+9.7 on the 2016\u20132020 lines \u2192 D+14.3 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 30.4,
+      "key": "35",
+      "popPct": 50.8
+     },
+     {
+      "areaPct": 69.6,
+      "key": "37",
+      "popPct": 49.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Santa Barbara",
+      "popPct": 94.1
+     },
+     {
+      "county": "San Luis Obispo",
+      "popPct": 5.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "San Luis Obispo",
+      "popPct": 5.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Ventura",
+      "popPct": 52.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 475425,
+    "pres2020New": -29.5,
+    "pres2020Old": -38.0,
+    "retainedAreaPct": 69.6,
+    "retainedPopPct": 49.2,
+    "text": "A new footprint: only 49% of its population was in the 2016\u20132020 HD-37; it draws from the old HD-35 (51%). Counties: gained San Luis Obispo (6%); lost Ventura. 2020 presidential margin D+38.0 on the 2016\u20132020 lines \u2192 D+29.5 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 92.9,
+      "key": "37",
+      "popPct": 52.2
+     },
+     {
+      "areaPct": 7.1,
+      "key": "44",
+      "popPct": 47.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ventura",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Los Angeles",
+      "popPct": 74.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 484979,
+    "pres2020New": -32.2,
+    "pres2020Old": -8.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-38; it draws from the old HD-37 (52%), the old HD-44 (48%). Counties: lost Los Angeles. 2020 presidential margin D+8.6 on the 2016\u20132020 lines \u2192 D+32.2 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 65.4,
+      "key": "36",
+      "popPct": 57.3
+     },
+     {
+      "areaPct": 34.6,
+      "key": "33",
+      "popPct": 42.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 57.3
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 42.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "San Bernardino",
+      "popPct": 42.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 476228,
+    "pres2020New": -25.2,
+    "pres2020Old": -45.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-39; it draws from the old HD-36 (57%), the old HD-33 (43%). Counties: gained San Bernardino (43%). 2020 presidential margin D+45.3 on the 2016\u20132020 lines \u2192 D+25.2 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 85.9,
+      "key": "4",
+      "popPct": 84.1
+     },
+     {
+      "areaPct": 0.5,
+      "key": "7",
+      "popPct": 11.0
+     },
+     {
+      "areaPct": 0.2,
+      "key": "10",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 13.4,
+      "key": "3",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Yolo",
+      "popPct": 44.7
+     },
+     {
+      "county": "Napa",
+      "popPct": 29.3
+     },
+     {
+      "county": "Lake",
+      "popPct": 14.4
+     },
+     {
+      "county": "Sonoma",
+      "popPct": 5.7
+     },
+     {
+      "county": "Colusa",
+      "popPct": 4.6
+     },
+     {
+      "county": "Sacramento",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Solano",
+      "popPct": 7.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 471298,
+    "pres2020New": -35.5,
+    "pres2020Old": -35.2,
+    "retainedAreaPct": 85.9,
+    "retainedPopPct": 84.1,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-4; gained the rest from the old HD-7 (11%), the old HD-10 (3%), the old HD-3 (2%). Counties: lost Solano. 2020 presidential margin D+35.2 on the 2016\u20132020 lines \u2192 D+35.5 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 59.5,
+      "key": "38",
+      "popPct": 68.1
+     },
+     {
+      "areaPct": 3.6,
+      "key": "45",
+      "popPct": 17.1
+     },
+     {
+      "areaPct": 1.1,
+      "key": "46",
+      "popPct": 6.5
+     },
+     {
+      "areaPct": 5.9,
+      "key": "36",
+      "popPct": 5.4
+     },
+     {
+      "areaPct": 17.7,
+      "key": "39",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "San Bernardino",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 512533,
+    "pres2020New": -16.6,
+    "pres2020Old": -14.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-40; it draws from the old HD-38 (68%), the old HD-45 (17%), the old HD-46 (6%) and 2 more. Counties: gained Los Angeles (100%); lost San Bernardino. 2020 presidential margin D+14.7 on the 2016\u20132020 lines \u2192 D+16.6 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 54.2,
+      "key": "41",
+      "popPct": 82.4
+     },
+     {
+      "areaPct": 8.6,
+      "key": "33",
+      "popPct": 4.9
+     },
+     {
+      "areaPct": 4.8,
+      "key": "43",
+      "popPct": 4.2
+     },
+     {
+      "areaPct": 17.4,
+      "key": "40",
+      "popPct": 4.1
+     },
+     {
+      "areaPct": 14.0,
+      "key": "36",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 0.6,
+      "key": "48",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 74.5
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 25.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 491783,
+    "pres2020New": -25.7,
+    "pres2020Old": -33.5,
+    "retainedAreaPct": 54.2,
+    "retainedPopPct": 82.4,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-41; gained the rest from the old HD-33 (5%), the old HD-43 (4%), the old HD-40 (4%) and 2 more. Spans Los Angeles, San Bernardino counties. 2020 presidential margin D+33.5 on the 2016\u20132020 lines \u2192 D+25.7 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 37.9,
+      "key": "44",
+      "popPct": 45.5
+     },
+     {
+      "areaPct": 42.6,
+      "key": "50",
+      "popPct": 23.9
+     },
+     {
+      "areaPct": 9.2,
+      "key": "38",
+      "popPct": 23.8
+     },
+     {
+      "areaPct": 2.5,
+      "key": "45",
+      "popPct": 4.7
+     },
+     {
+      "areaPct": 7.6,
+      "key": "37",
+      "popPct": 1.4
+     },
+     {
+      "areaPct": 0.2,
+      "key": "54",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ventura",
+      "popPct": 69.0
+     },
+     {
+      "county": "Los Angeles",
+      "popPct": 31.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Ventura",
+      "popPct": 69.0
+     },
+     {
+      "county": "Los Angeles",
+      "popPct": 31.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Riverside",
+      "popPct": 76.4
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 23.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 518317,
+    "pres2020New": -19.2,
+    "pres2020Old": -3.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-42; it draws from the old HD-44 (46%), the old HD-50 (24%), the old HD-38 (24%) and 3 more. Counties: gained Ventura (69%), Los Angeles (31%); lost Riverside, San Bernardino. 2020 presidential margin D+3.1 on the 2016\u20132020 lines \u2192 D+19.2 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 81.3,
+      "key": "39",
+      "popPct": 68.5
+     },
+     {
+      "areaPct": 18.3,
+      "key": "46",
+      "popPct": 31.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 505842,
+    "pres2020New": -49.9,
+    "pres2020Old": -37.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-43; it draws from the old HD-39 (68%), the old HD-46 (31%). Entirely in Los Angeles County. 2020 presidential margin D+37.7 on the 2016\u20132020 lines \u2192 D+49.9 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 47.3,
+      "key": "43",
+      "popPct": 47.8
+     },
+     {
+      "areaPct": 19.5,
+      "key": "46",
+      "popPct": 30.9
+     },
+     {
+      "areaPct": 33.2,
+      "key": "39",
+      "popPct": 21.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Ventura",
+      "popPct": 98.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 512789,
+    "pres2020New": -38.9,
+    "pres2020Old": -22.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-44; it draws from the old HD-43 (48%), the old HD-46 (31%), the old HD-39 (21%). Counties: lost Ventura. 2020 presidential margin D+22.7 on the 2016\u20132020 lines \u2192 D+38.9 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 50.1,
+      "key": "40",
+      "popPct": 50.8
+     },
+     {
+      "areaPct": 45.5,
+      "key": "47",
+      "popPct": 48.4
+     },
+     {
+      "areaPct": 1.1,
+      "key": "42",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Bernardino",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "San Bernardino",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Los Angeles",
+      "popPct": 99.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 489863,
+    "pres2020New": -30.2,
+    "pres2020Old": -34.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-45; it draws from the old HD-40 (51%), the old HD-47 (48%), the old HD-42 (1%). Counties: gained San Bernardino (100%); lost Los Angeles. 2020 presidential margin D+34.7 on the 2016\u20132020 lines \u2192 D+30.2 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 86.1,
+      "key": "45",
+      "popPct": 75.6
+     },
+     {
+      "areaPct": 13.8,
+      "key": "46",
+      "popPct": 24.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 500714,
+    "pres2020New": -38.0,
+    "pres2020Old": -51.3,
+    "retainedAreaPct": 13.8,
+    "retainedPopPct": 24.4,
+    "text": "A new footprint: only 24% of its population was in the 2016\u20132020 HD-46; it draws from the old HD-45 (76%). Entirely in Los Angeles County. 2020 presidential margin D+51.3 on the 2016\u20132020 lines \u2192 D+38.0 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 39.0,
+      "key": "42",
+      "popPct": 68.7
+     },
+     {
+      "areaPct": 53.2,
+      "key": "56",
+      "popPct": 22.2
+     },
+     {
+      "areaPct": 1.0,
+      "key": "40",
+      "popPct": 4.8
+     },
+     {
+      "areaPct": 5.3,
+      "key": "71",
+      "popPct": 3.4
+     },
+     {
+      "areaPct": 0.6,
+      "key": "61",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Riverside",
+      "popPct": 78.1
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 21.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Riverside",
+      "popPct": 78.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 516279,
+    "pres2020New": -7.0,
+    "pres2020Old": -35.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-47; it draws from the old HD-42 (69%), the old HD-56 (22%), the old HD-40 (5%) and 2 more. Counties: gained Riverside (78%). 2020 presidential margin D+35.4 on the 2016\u20132020 lines \u2192 D+7.0 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 88.9,
+      "key": "48",
+      "popPct": 88.2
+     },
+     {
+      "areaPct": 9.0,
+      "key": "55",
+      "popPct": 7.0
+     },
+     {
+      "areaPct": 1.8,
+      "key": "57",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 476404,
+    "pres2020New": -30.9,
+    "pres2020Old": -31.3,
+    "retainedAreaPct": 88.9,
+    "retainedPopPct": 88.2,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-48; gained the rest from the old HD-55 (7%), the old HD-57 (4%). Entirely in Los Angeles County. 2020 presidential margin D+31.3 on the 2016\u20132020 lines \u2192 D+30.9 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 89.5,
+      "key": "49",
+      "popPct": 90.3
+     },
+     {
+      "areaPct": 8.1,
+      "key": "41",
+      "popPct": 6.9
+     },
+     {
+      "areaPct": 2.4,
+      "key": "48",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 472922,
+    "pres2020New": -35.5,
+    "pres2020Old": -33.2,
+    "retainedAreaPct": 89.5,
+    "retainedPopPct": 90.3,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-49; gained the rest from the old HD-41 (7%), the old HD-48 (3%). Entirely in Los Angeles County. 2020 presidential margin D+33.2 on the 2016\u20132020 lines \u2192 D+35.5 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 43.3,
+      "key": "6",
+      "popPct": 77.6
+     },
+     {
+      "areaPct": 51.3,
+      "key": "5",
+      "popPct": 16.8
+     },
+     {
+      "areaPct": 5.5,
+      "key": "1",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Placer",
+      "popPct": 72.7
+     },
+     {
+      "county": "El Dorado",
+      "popPct": 27.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Madera",
+      "popPct": 33.2
+     },
+     {
+      "county": "Tuolumne",
+      "popPct": 11.9
+     },
+     {
+      "county": "Calaveras",
+      "popPct": 9.7
+     },
+     {
+      "county": "Amador",
+      "popPct": 8.5
+     },
+     {
+      "county": "Mariposa",
+      "popPct": 3.6
+     },
+     {
+      "county": "Mono",
+      "popPct": 2.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 489877,
+    "pres2020New": 9.1,
+    "pres2020Old": 13.0,
+    "retainedAreaPct": 51.3,
+    "retainedPopPct": 16.8,
+    "text": "A new footprint: only 17% of its population was in the 2016\u20132020 HD-5; it draws from the old HD-6 (78%), the old HD-1 (6%). Counties: lost Madera, Tuolumne, Calaveras, Amador and 2 more. 2020 presidential margin R+13.0 on the 2016\u20132020 lines \u2192 R+9.1 on the current lines.",
+    "toEra": "current"
+   },
+   "50": {
+    "contributors": [
+     {
+      "areaPct": 49.7,
+      "key": "47",
+      "popPct": 51.3
+     },
+     {
+      "areaPct": 38.9,
+      "key": "40",
+      "popPct": 39.3
+     },
+     {
+      "areaPct": 11.4,
+      "key": "52",
+      "popPct": 9.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Bernardino",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "San Bernardino",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 487617,
+    "pres2020New": -25.4,
+    "pres2020Old": -53.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-50; it draws from the old HD-47 (51%), the old HD-40 (39%), the old HD-52 (9%). Counties: gained San Bernardino (100%); lost Los Angeles. 2020 presidential margin D+53.0 on the 2016\u20132020 lines \u2192 D+25.4 on the current lines.",
+    "toEra": "current"
+   },
+   "51": {
+    "contributors": [
+     {
+      "areaPct": 59.7,
+      "key": "50",
+      "popPct": 61.9
+     },
+     {
+      "areaPct": 11.4,
+      "key": "54",
+      "popPct": 19.4
+     },
+     {
+      "areaPct": 19.8,
+      "key": "43",
+      "popPct": 11.9
+     },
+     {
+      "areaPct": 2.1,
+      "key": "53",
+      "popPct": 4.4
+     },
+     {
+      "areaPct": 7.0,
+      "key": "46",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 496323,
+    "pres2020New": -57.7,
+    "pres2020Old": -68.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-51; it draws from the old HD-50 (62%), the old HD-54 (19%), the old HD-43 (12%) and 2 more. Entirely in Los Angeles County. 2020 presidential margin D+68.0 on the 2016\u20132020 lines \u2192 D+57.7 on the current lines.",
+    "toEra": "current"
+   },
+   "52": {
+    "contributors": [
+     {
+      "areaPct": 76.8,
+      "key": "51",
+      "popPct": 72.9
+     },
+     {
+      "areaPct": 23.1,
+      "key": "43",
+      "popPct": 27.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "San Bernardino",
+      "popPct": 68.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 514989,
+    "pres2020New": -63.3,
+    "pres2020Old": -30.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-52; it draws from the old HD-51 (73%), the old HD-43 (27%). Counties: lost San Bernardino. 2020 presidential margin D+30.0 on the 2016\u20132020 lines \u2192 D+63.3 on the current lines.",
+    "toEra": "current"
+   },
+   "53": {
+    "contributors": [
+     {
+      "areaPct": 94.0,
+      "key": "52",
+      "popPct": 91.5
+     },
+     {
+      "areaPct": 4.9,
+      "key": "41",
+      "popPct": 8.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Bernardino",
+      "popPct": 66.9
+     },
+     {
+      "county": "Los Angeles",
+      "popPct": 33.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "San Bernardino",
+      "popPct": 66.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 476661,
+    "pres2020New": -29.5,
+    "pres2020Old": -62.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-53; it draws from the old HD-52 (92%), the old HD-41 (8%). Counties: gained San Bernardino (67%). 2020 presidential margin D+62.0 on the 2016\u20132020 lines \u2192 D+29.5 on the current lines.",
+    "toEra": "current"
+   },
+   "54": {
+    "contributors": [
+     {
+      "areaPct": 50.3,
+      "key": "53",
+      "popPct": 69.4
+     },
+     {
+      "areaPct": 33.4,
+      "key": "58",
+      "popPct": 13.5
+     },
+     {
+      "areaPct": 11.9,
+      "key": "51",
+      "popPct": 13.3
+     },
+     {
+      "areaPct": 1.0,
+      "key": "43",
+      "popPct": 1.7
+     },
+     {
+      "areaPct": 3.0,
+      "key": "49",
+      "popPct": 1.3
+     },
+     {
+      "areaPct": 0.3,
+      "key": "54",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 505026,
+    "pres2020New": -58.9,
+    "pres2020Old": -70.4,
+    "retainedAreaPct": 0.3,
+    "retainedPopPct": 0.7,
+    "text": "A new footprint: only 1% of its population was in the 2016\u20132020 HD-54; it draws from the old HD-53 (69%), the old HD-58 (14%), the old HD-51 (13%) and 2 more. Entirely in Los Angeles County. 2020 presidential margin D+70.4 on the 2016\u20132020 lines \u2192 D+58.9 on the current lines.",
+    "toEra": "current"
+   },
+   "55": {
+    "contributors": [
+     {
+      "areaPct": 79.1,
+      "key": "54",
+      "popPct": 74.8
+     },
+     {
+      "areaPct": 8.4,
+      "key": "50",
+      "popPct": 10.4
+     },
+     {
+      "areaPct": 7.9,
+      "key": "62",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 3.3,
+      "key": "59",
+      "popPct": 5.0
+     },
+     {
+      "areaPct": 1.3,
+      "key": "53",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Orange",
+      "popPct": 48.3
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 16.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 475807,
+    "pres2020New": -70.6,
+    "pres2020Old": -7.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-55; it draws from the old HD-54 (75%), the old HD-50 (10%), the old HD-62 (7%) and 2 more. Counties: lost Orange, San Bernardino. 2020 presidential margin D+7.4 on the 2016\u20132020 lines \u2192 D+70.6 on the current lines.",
+    "toEra": "current"
+   },
+   "56": {
+    "contributors": [
+     {
+      "areaPct": 51.5,
+      "key": "57",
+      "popPct": 51.2
+     },
+     {
+      "areaPct": 37.7,
+      "key": "55",
+      "popPct": 26.3
+     },
+     {
+      "areaPct": 7.4,
+      "key": "58",
+      "popPct": 12.6
+     },
+     {
+      "areaPct": 1.9,
+      "key": "48",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 1.5,
+      "key": "49",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Los Angeles",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Riverside",
+      "popPct": 62.7
+     },
+     {
+      "county": "Imperial",
+      "popPct": 37.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 493728,
+    "pres2020New": -32.9,
+    "pres2020Old": -26.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-56; it draws from the old HD-57 (51%), the old HD-55 (26%), the old HD-58 (13%) and 2 more. Counties: gained Los Angeles (100%); lost Riverside, Imperial. 2020 presidential margin D+26.0 on the 2016\u20132020 lines \u2192 D+32.9 on the current lines.",
+    "toEra": "current"
+   },
+   "57": {
+    "contributors": [
+     {
+      "areaPct": 79.3,
+      "key": "59",
+      "popPct": 81.7
+     },
+     {
+      "areaPct": 9.8,
+      "key": "53",
+      "popPct": 8.8
+     },
+     {
+      "areaPct": 9.0,
+      "key": "64",
+      "popPct": 8.2
+     },
+     {
+      "areaPct": 2.0,
+      "key": "54",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 502941,
+    "pres2020New": -73.2,
+    "pres2020Old": -31.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-57; it draws from the old HD-59 (82%), the old HD-53 (9%), the old HD-64 (8%) and 1 more. Entirely in Los Angeles County. 2020 presidential margin D+31.6 on the 2016\u20132020 lines \u2192 D+73.2 on the current lines.",
+    "toEra": "current"
+   },
+   "58": {
+    "contributors": [
+     {
+      "areaPct": 75.1,
+      "key": "60",
+      "popPct": 75.1
+     },
+     {
+      "areaPct": 22.2,
+      "key": "61",
+      "popPct": 22.2
+     },
+     {
+      "areaPct": 2.6,
+      "key": "47",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Riverside",
+      "popPct": 97.3
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 2.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Riverside",
+      "popPct": 97.3
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 2.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Los Angeles",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 490440,
+    "pres2020New": -19.1,
+    "pres2020Old": -40.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-58; it draws from the old HD-60 (75%), the old HD-61 (22%), the old HD-47 (3%). Counties: gained Riverside (97%), San Bernardino (3%); lost Los Angeles. 2020 presidential margin D+40.5 on the 2016\u20132020 lines \u2192 D+19.1 on the current lines.",
+    "toEra": "current"
+   },
+   "59": {
+    "contributors": [
+     {
+      "areaPct": 46.5,
+      "key": "55",
+      "popPct": 52.0
+     },
+     {
+      "areaPct": 43.2,
+      "key": "68",
+      "popPct": 34.4
+     },
+     {
+      "areaPct": 4.9,
+      "key": "65",
+      "popPct": 11.1
+     },
+     {
+      "areaPct": 5.4,
+      "key": "52",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 81.2
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 18.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 81.2
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 18.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 473647,
+    "pres2020New": 1.2,
+    "pres2020Old": -73.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-59; it draws from the old HD-55 (52%), the old HD-68 (34%), the old HD-65 (11%) and 1 more. Counties: gained Orange (81%), San Bernardino (19%); lost Los Angeles. 2020 presidential margin D+73.9 on the 2016\u20132020 lines \u2192 R+1.2 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 84.3,
+      "key": "7",
+      "popPct": 73.6
+     },
+     {
+      "areaPct": 14.4,
+      "key": "8",
+      "popPct": 24.5
+     },
+     {
+      "areaPct": 1.2,
+      "key": "9",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sacramento",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Placer",
+      "popPct": 59.4
+     },
+     {
+      "county": "El Dorado",
+      "popPct": 13.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 517397,
+    "pres2020New": -38.6,
+    "pres2020Old": 5.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-6; it draws from the old HD-7 (74%), the old HD-8 (24%), the old HD-9 (2%). Counties: lost Placer, El Dorado. 2020 presidential margin R+5.4 on the 2016\u20132020 lines \u2192 D+38.6 on the current lines.",
+    "toEra": "current"
+   },
+   "60": {
+    "contributors": [
+     {
+      "areaPct": 45.4,
+      "key": "61",
+      "popPct": 67.3
+     },
+     {
+      "areaPct": 32.2,
+      "key": "42",
+      "popPct": 20.4
+     },
+     {
+      "areaPct": 22.3,
+      "key": "67",
+      "popPct": 12.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Riverside",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 468185,
+    "pres2020New": -25.3,
+    "pres2020Old": -9.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-60; it draws from the old HD-61 (67%), the old HD-42 (20%), the old HD-67 (12%). Entirely in Riverside County. 2020 presidential margin D+9.6 on the 2016\u20132020 lines \u2192 D+25.3 on the current lines.",
+    "toEra": "current"
+   },
+   "61": {
+    "contributors": [
+     {
+      "areaPct": 94.8,
+      "key": "62",
+      "popPct": 88.7
+     },
+     {
+      "areaPct": 2.1,
+      "key": "64",
+      "popPct": 4.7
+     },
+     {
+      "areaPct": 1.4,
+      "key": "54",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 1.6,
+      "key": "59",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Riverside",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 486880,
+    "pres2020New": -67.6,
+    "pres2020Old": -28.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-61; it draws from the old HD-62 (89%), the old HD-64 (5%), the old HD-54 (4%) and 1 more. Counties: gained Los Angeles (100%); lost Riverside. 2020 presidential margin D+28.3 on the 2016\u20132020 lines \u2192 D+67.6 on the current lines.",
+    "toEra": "current"
+   },
+   "62": {
+    "contributors": [
+     {
+      "areaPct": 73.6,
+      "key": "63",
+      "popPct": 68.2
+     },
+     {
+      "areaPct": 16.4,
+      "key": "58",
+      "popPct": 16.8
+     },
+     {
+      "areaPct": 6.5,
+      "key": "53",
+      "popPct": 10.2
+     },
+     {
+      "areaPct": 3.5,
+      "key": "59",
+      "popPct": 4.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 470305,
+    "pres2020New": -47.2,
+    "pres2020Old": -64.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-62; it draws from the old HD-63 (68%), the old HD-58 (17%), the old HD-53 (10%) and 1 more. Entirely in Los Angeles County. 2020 presidential margin D+64.4 on the 2016\u20132020 lines \u2192 D+47.2 on the current lines.",
+    "toEra": "current"
+   },
+   "63": {
+    "contributors": [
+     {
+      "areaPct": 70.3,
+      "key": "67",
+      "popPct": 55.5
+     },
+     {
+      "areaPct": 20.6,
+      "key": "60",
+      "popPct": 28.6
+     },
+     {
+      "areaPct": 9.1,
+      "key": "61",
+      "popPct": 15.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Riverside",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Riverside",
+      "popPct": 99.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Los Angeles",
+      "popPct": 99.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 482411,
+    "pres2020New": 5.7,
+    "pres2020Old": -49.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-63; it draws from the old HD-67 (56%), the old HD-60 (29%), the old HD-61 (16%). Counties: gained Riverside (100%); lost Los Angeles. 2020 presidential margin D+49.3 on the 2016\u20132020 lines \u2192 R+5.7 on the current lines.",
+    "toEra": "current"
+   },
+   "64": {
+    "contributors": [
+     {
+      "areaPct": 49.0,
+      "key": "57",
+      "popPct": 38.6
+     },
+     {
+      "areaPct": 31.7,
+      "key": "58",
+      "popPct": 38.0
+     },
+     {
+      "areaPct": 12.7,
+      "key": "55",
+      "popPct": 12.2
+     },
+     {
+      "areaPct": 6.5,
+      "key": "63",
+      "popPct": 11.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 87.8
+     },
+     {
+      "county": "Orange",
+      "popPct": 12.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 12.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 510697,
+    "pres2020New": -32.9,
+    "pres2020Old": -65.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-64; it draws from the old HD-57 (39%), the old HD-58 (38%), the old HD-55 (12%) and 1 more. Counties: gained Orange (12%). 2020 presidential margin D+65.1 on the 2016\u20132020 lines \u2192 D+32.9 on the current lines.",
+    "toEra": "current"
+   },
+   "65": {
+    "contributors": [
+     {
+      "areaPct": 47.8,
+      "key": "64",
+      "popPct": 68.6
+     },
+     {
+      "areaPct": 6.3,
+      "key": "66",
+      "popPct": 12.8
+     },
+     {
+      "areaPct": 4.8,
+      "key": "63",
+      "popPct": 9.6
+     },
+     {
+      "areaPct": 41.0,
+      "key": "70",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Orange",
+      "popPct": 99.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 502301,
+    "pres2020New": -60.2,
+    "pres2020Old": -15.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-65; it draws from the old HD-64 (69%), the old HD-66 (13%), the old HD-63 (10%) and 1 more. Counties: lost Orange. 2020 presidential margin D+15.9 on the 2016\u20132020 lines \u2192 D+60.2 on the current lines.",
+    "toEra": "current"
+   },
+   "66": {
+    "contributors": [
+     {
+      "areaPct": 88.1,
+      "key": "66",
+      "popPct": 88.1
+     },
+     {
+      "areaPct": 4.4,
+      "key": "70",
+      "popPct": 8.2
+     },
+     {
+      "areaPct": 7.5,
+      "key": "62",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 473432,
+    "pres2020New": -28.1,
+    "pres2020Old": -28.9,
+    "retainedAreaPct": 88.1,
+    "retainedPopPct": 88.1,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-66; gained the rest from the old HD-70 (8%), the old HD-62 (4%). Entirely in Los Angeles County. 2020 presidential margin D+28.9 on the 2016\u20132020 lines \u2192 D+28.1 on the current lines.",
+    "toEra": "current"
+   },
+   "67": {
+    "contributors": [
+     {
+      "areaPct": 75.8,
+      "key": "65",
+      "popPct": 79.7
+     },
+     {
+      "areaPct": 18.5,
+      "key": "58",
+      "popPct": 14.0
+     },
+     {
+      "areaPct": 4.0,
+      "key": "69",
+      "popPct": 3.3
+     },
+     {
+      "areaPct": 1.7,
+      "key": "63",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 82.6
+     },
+     {
+      "county": "Los Angeles",
+      "popPct": 17.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 82.6
+     },
+     {
+      "county": "Los Angeles",
+      "popPct": 17.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Riverside",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 471933,
+    "pres2020New": -19.8,
+    "pres2020Old": 10.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-67; it draws from the old HD-65 (80%), the old HD-58 (14%), the old HD-69 (3%) and 1 more. Counties: gained Orange (83%), Los Angeles (17%); lost Riverside. 2020 presidential margin R+10.7 on the 2016\u20132020 lines \u2192 D+19.8 on the current lines.",
+    "toEra": "current"
+   },
+   "68": {
+    "contributors": [
+     {
+      "areaPct": 73.5,
+      "key": "69",
+      "popPct": 81.2
+     },
+     {
+      "areaPct": 24.9,
+      "key": "68",
+      "popPct": 17.1
+     },
+     {
+      "areaPct": 1.6,
+      "key": "65",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 483459,
+    "pres2020New": -35.6,
+    "pres2020Old": -10.9,
+    "retainedAreaPct": 24.9,
+    "retainedPopPct": 17.1,
+    "text": "A new footprint: only 17% of its population was in the 2016\u20132020 HD-68; it draws from the old HD-69 (81%), the old HD-65 (2%). Entirely in Orange County. 2020 presidential margin D+10.9 on the 2016\u20132020 lines \u2192 D+35.6 on the current lines.",
+    "toEra": "current"
+   },
+   "69": {
+    "contributors": [
+     {
+      "areaPct": 97.8,
+      "key": "70",
+      "popPct": 81.9
+     },
+     {
+      "areaPct": 2.0,
+      "key": "64",
+      "popPct": 14.9
+     },
+     {
+      "areaPct": 0.2,
+      "key": "63",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 99.4
+     },
+     {
+      "county": "Orange",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Los Angeles",
+      "popPct": 99.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 476660,
+    "pres2020New": -45.0,
+    "pres2020Old": -39.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-69; it draws from the old HD-70 (82%), the old HD-64 (15%), the old HD-63 (3%). Counties: gained Los Angeles (99%). 2020 presidential margin D+39.6 on the 2016\u20132020 lines \u2192 D+45.0 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 65.4,
+      "key": "8",
+      "popPct": 66.6
+     },
+     {
+      "areaPct": 32.8,
+      "key": "6",
+      "popPct": 30.2
+     },
+     {
+      "areaPct": 1.8,
+      "key": "7",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sacramento",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Yolo",
+      "popPct": 9.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 493952,
+    "pres2020New": -6.0,
+    "pres2020Old": -40.5,
+    "retainedAreaPct": 1.8,
+    "retainedPopPct": 3.2,
+    "text": "A new footprint: only 3% of its population was in the 2016\u20132020 HD-7; it draws from the old HD-8 (67%), the old HD-6 (30%). Counties: lost Yolo. 2020 presidential margin D+40.5 on the 2016\u20132020 lines \u2192 D+6.0 on the current lines.",
+    "toEra": "current"
+   },
+   "70": {
+    "contributors": [
+     {
+      "areaPct": 85.4,
+      "key": "72",
+      "popPct": 80.6
+     },
+     {
+      "areaPct": 7.8,
+      "key": "69",
+      "popPct": 10.7
+     },
+     {
+      "areaPct": 6.2,
+      "key": "65",
+      "popPct": 7.9
+     },
+     {
+      "areaPct": 0.6,
+      "key": "74",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 99.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Los Angeles",
+      "popPct": 99.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 470146,
+    "pres2020New": -0.4,
+    "pres2020Old": -43.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-70; it draws from the old HD-72 (81%), the old HD-69 (11%), the old HD-65 (8%) and 1 more. Counties: gained Orange (100%); lost Los Angeles. 2020 presidential margin D+43.5 on the 2016\u20132020 lines \u2192 D+0.4 on the current lines.",
+    "toEra": "current"
+   },
+   "71": {
+    "contributors": [
+     {
+      "areaPct": 34.7,
+      "key": "73",
+      "popPct": 40.9
+     },
+     {
+      "areaPct": 30.5,
+      "key": "67",
+      "popPct": 31.2
+     },
+     {
+      "areaPct": 18.5,
+      "key": "75",
+      "popPct": 25.6
+     },
+     {
+      "areaPct": 14.0,
+      "key": "71",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Riverside",
+      "popPct": 59.0
+     },
+     {
+      "county": "Orange",
+      "popPct": 41.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 41.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "San Diego",
+      "popPct": 90.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 495674,
+    "pres2020New": 7.9,
+    "pres2020Old": 13.1,
+    "retainedAreaPct": 14.0,
+    "retainedPopPct": 2.2,
+    "text": "A new footprint: only 2% of its population was in the 2016\u20132020 HD-71; it draws from the old HD-73 (41%), the old HD-67 (31%), the old HD-75 (26%). Counties: gained Orange (41%); lost San Diego. 2020 presidential margin R+13.1 on the 2016\u20132020 lines \u2192 R+7.9 on the current lines.",
+    "toEra": "current"
+   },
+   "72": {
+    "contributors": [
+     {
+      "areaPct": 65.4,
+      "key": "74",
+      "popPct": 45.4
+     },
+     {
+      "areaPct": 21.3,
+      "key": "72",
+      "popPct": 21.6
+     },
+     {
+      "areaPct": 7.3,
+      "key": "68",
+      "popPct": 16.7
+     },
+     {
+      "areaPct": 5.9,
+      "key": "73",
+      "popPct": 16.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 490874,
+    "pres2020New": -1.8,
+    "pres2020Old": 2.4,
+    "retainedAreaPct": 21.3,
+    "retainedPopPct": 21.6,
+    "text": "A new footprint: only 22% of its population was in the 2016\u20132020 HD-72; it draws from the old HD-74 (45%), the old HD-68 (17%), the old HD-73 (16%). Entirely in Orange County. 2020 presidential margin R+2.4 on the 2016\u20132020 lines \u2192 D+1.8 on the current lines.",
+    "toEra": "current"
+   },
+   "73": {
+    "contributors": [
+     {
+      "areaPct": 48.6,
+      "key": "74",
+      "popPct": 56.6
+     },
+     {
+      "areaPct": 51.2,
+      "key": "68",
+      "popPct": 43.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 502318,
+    "pres2020New": -25.3,
+    "pres2020Old": 0.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-73; it draws from the old HD-74 (57%), the old HD-68 (43%). Entirely in Orange County. 2020 presidential margin R+0.2 on the 2016\u20132020 lines \u2192 D+25.3 on the current lines.",
+    "toEra": "current"
+   },
+   "74": {
+    "contributors": [
+     {
+      "areaPct": 79.1,
+      "key": "76",
+      "popPct": 61.0
+     },
+     {
+      "areaPct": 20.0,
+      "key": "73",
+      "popPct": 38.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Diego",
+      "popPct": 61.1
+     },
+     {
+      "county": "Orange",
+      "popPct": 38.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "San Diego",
+      "popPct": 61.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 506359,
+    "pres2020New": -6.2,
+    "pres2020Old": -10.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-74; it draws from the old HD-76 (61%), the old HD-73 (39%). Counties: gained San Diego (61%). 2020 presidential margin D+10.7 on the 2016\u20132020 lines \u2192 D+6.2 on the current lines.",
+    "toEra": "current"
+   },
+   "75": {
+    "contributors": [
+     {
+      "areaPct": 82.8,
+      "key": "71",
+      "popPct": 58.8
+     },
+     {
+      "areaPct": 2.2,
+      "key": "77",
+      "popPct": 20.4
+     },
+     {
+      "areaPct": 14.6,
+      "key": "75",
+      "popPct": 19.7
+     },
+     {
+      "areaPct": 0.3,
+      "key": "80",
+      "popPct": 0.6
+     },
+     {
+      "areaPct": 0.2,
+      "key": "79",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Diego",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Riverside",
+      "popPct": 25.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 478816,
+    "pres2020New": 11.4,
+    "pres2020Old": -1.1,
+    "retainedAreaPct": 14.6,
+    "retainedPopPct": 19.7,
+    "text": "A new footprint: only 20% of its population was in the 2016\u20132020 HD-75; it draws from the old HD-71 (59%), the old HD-77 (20%), the old HD-80 (1%) and 1 more. Counties: lost Riverside. 2020 presidential margin D+1.1 on the 2016\u20132020 lines \u2192 R+11.4 on the current lines.",
+    "toEra": "current"
+   },
+   "76": {
+    "contributors": [
+     {
+      "areaPct": 58.4,
+      "key": "75",
+      "popPct": 60.3
+     },
+     {
+      "areaPct": 40.3,
+      "key": "77",
+      "popPct": 38.9
+     },
+     {
+      "areaPct": 0.7,
+      "key": "76",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Diego",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 469170,
+    "pres2020New": -16.1,
+    "pres2020Old": -19.0,
+    "retainedAreaPct": 0.7,
+    "retainedPopPct": 0.7,
+    "text": "A new footprint: only 1% of its population was in the 2016\u20132020 HD-76; it draws from the old HD-75 (60%), the old HD-77 (39%). Entirely in San Diego County. 2020 presidential margin D+19.0 on the 2016\u20132020 lines \u2192 D+16.1 on the current lines.",
+    "toEra": "current"
+   },
+   "77": {
+    "contributors": [
+     {
+      "areaPct": 64.6,
+      "key": "78",
+      "popPct": 57.4
+     },
+     {
+      "areaPct": 30.8,
+      "key": "76",
+      "popPct": 35.7
+     },
+     {
+      "areaPct": 4.2,
+      "key": "77",
+      "popPct": 6.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Diego",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 508921,
+    "pres2020New": -32.4,
+    "pres2020Old": -22.8,
+    "retainedAreaPct": 4.2,
+    "retainedPopPct": 6.8,
+    "text": "A new footprint: only 7% of its population was in the 2016\u20132020 HD-77; it draws from the old HD-78 (57%), the old HD-76 (36%). Entirely in San Diego County. 2020 presidential margin D+22.8 on the 2016\u20132020 lines \u2192 D+32.4 on the current lines.",
+    "toEra": "current"
+   },
+   "78": {
+    "contributors": [
+     {
+      "areaPct": 60.1,
+      "key": "77",
+      "popPct": 38.5
+     },
+     {
+      "areaPct": 16.1,
+      "key": "78",
+      "popPct": 29.0
+     },
+     {
+      "areaPct": 17.2,
+      "key": "79",
+      "popPct": 23.9
+     },
+     {
+      "areaPct": 6.1,
+      "key": "71",
+      "popPct": 6.9
+     },
+     {
+      "areaPct": 0.5,
+      "key": "80",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Diego",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 512615,
+    "pres2020New": -38.7,
+    "pres2020Old": -46.2,
+    "retainedAreaPct": 16.1,
+    "retainedPopPct": 29.0,
+    "text": "A new footprint: only 29% of its population was in the 2016\u20132020 HD-78; it draws from the old HD-77 (38%), the old HD-79 (24%), the old HD-71 (7%) and 1 more. Entirely in San Diego County. 2020 presidential margin D+46.2 on the 2016\u20132020 lines \u2192 D+38.7 on the current lines.",
+    "toEra": "current"
+   },
+   "79": {
+    "contributors": [
+     {
+      "areaPct": 51.6,
+      "key": "79",
+      "popPct": 49.8
+     },
+     {
+      "areaPct": 31.4,
+      "key": "71",
+      "popPct": 25.9
+     },
+     {
+      "areaPct": 15.3,
+      "key": "80",
+      "popPct": 20.9
+     },
+     {
+      "areaPct": 1.6,
+      "key": "78",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Diego",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 500308,
+    "pres2020New": -33.5,
+    "pres2020Old": -33.5,
+    "retainedAreaPct": 51.6,
+    "retainedPopPct": 49.8,
+    "text": "A new footprint: only 50% of its population was in the 2016\u20132020 HD-79; it draws from the old HD-71 (26%), the old HD-80 (21%), the old HD-78 (3%). Entirely in San Diego County. 2020 presidential margin D+33.5 on the 2016\u20132020 lines \u2192 D+33.5 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 12.9,
+      "key": "23",
+      "popPct": 61.3
+     },
+     {
+      "areaPct": 41.7,
+      "key": "5",
+      "popPct": 34.3
+     },
+     {
+      "areaPct": 45.4,
+      "key": "26",
+      "popPct": 3.7
+     },
+     {
+      "areaPct": 0.0,
+      "key": "31",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fresno",
+      "popPct": 61.9
+     },
+     {
+      "county": "Madera",
+      "popPct": 11.4
+     },
+     {
+      "county": "Tuolumne",
+      "popPct": 10.9
+     },
+     {
+      "county": "Calaveras",
+      "popPct": 6.1
+     },
+     {
+      "county": "Inyo",
+      "popPct": 3.7
+     },
+     {
+      "county": "Mariposa",
+      "popPct": 3.3
+     },
+     {
+      "county": "Mono",
+      "popPct": 2.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Fresno",
+      "popPct": 61.9
+     },
+     {
+      "county": "Madera",
+      "popPct": 11.4
+     },
+     {
+      "county": "Tuolumne",
+      "popPct": 10.9
+     },
+     {
+      "county": "Calaveras",
+      "popPct": 6.1
+     },
+     {
+      "county": "Inyo",
+      "popPct": 3.7
+     },
+     {
+      "county": "Mariposa",
+      "popPct": 3.3
+     },
+     {
+      "county": "Mono",
+      "popPct": 2.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Sacramento",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 511393,
+    "pres2020New": 13.8,
+    "pres2020Old": -12.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-8; it draws from the old HD-23 (61%), the old HD-5 (34%), the old HD-26 (4%) and 1 more. Counties: gained Fresno (62%), Madera (11%), Tuolumne (11%) and 4 more; lost Sacramento. 2020 presidential margin D+12.9 on the 2016\u20132020 lines \u2192 R+13.8 on the current lines.",
+    "toEra": "current"
+   },
+   "80": {
+    "contributors": [
+     {
+      "areaPct": 63.8,
+      "key": "80",
+      "popPct": 67.4
+     },
+     {
+      "areaPct": 32.2,
+      "key": "79",
+      "popPct": 27.7
+     },
+     {
+      "areaPct": 4.0,
+      "key": "78",
+      "popPct": 5.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Diego",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 519319,
+    "pres2020New": -33.5,
+    "pres2020Old": -41.0,
+    "retainedAreaPct": 63.8,
+    "retainedPopPct": 67.4,
+    "text": "Kept 67% of its population from the 2016\u20132020 HD-80; gained the rest from the old HD-79 (28%), the old HD-78 (5%). Entirely in San Diego County. 2020 presidential margin D+41.0 on the 2016\u20132020 lines \u2192 D+33.5 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 50.7,
+      "key": "12",
+      "popPct": 57.4
+     },
+     {
+      "areaPct": 8.9,
+      "key": "9",
+      "popPct": 21.6
+     },
+     {
+      "areaPct": 9.7,
+      "key": "13",
+      "popPct": 8.9
+     },
+     {
+      "areaPct": 13.5,
+      "key": "5",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 12.5,
+      "key": "8",
+      "popPct": 4.1
+     },
+     {
+      "areaPct": 1.9,
+      "key": "21",
+      "popPct": 2.0
+     },
+     {
+      "areaPct": 2.8,
+      "key": "11",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Joaquin",
+      "popPct": 60.4
+     },
+     {
+      "county": "Stanislaus",
+      "popPct": 22.8
+     },
+     {
+      "county": "Sacramento",
+      "popPct": 11.5
+     },
+     {
+      "county": "Calaveras",
+      "popPct": 2.8
+     },
+     {
+      "county": "Amador",
+      "popPct": 2.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Stanislaus",
+      "popPct": 22.8
+     },
+     {
+      "county": "Calaveras",
+      "popPct": 2.8
+     },
+     {
+      "county": "Amador",
+      "popPct": 2.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 491941,
+    "pres2020New": 13.3,
+    "pres2020Old": -27.6,
+    "retainedAreaPct": 8.9,
+    "retainedPopPct": 21.6,
+    "text": "A new footprint: only 22% of its population was in the 2016\u20132020 HD-9; it draws from the old HD-12 (57%), the old HD-13 (9%), the old HD-5 (5%) and 3 more. Counties: gained Stanislaus (23%), Calaveras (3%), Amador (2%). 2020 presidential margin D+27.6 on the 2016\u20132020 lines \u2192 R+13.3 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 25.8,
+      "key": "4",
+      "popPct": 54.0
+     },
+     {
+      "areaPct": 74.2,
+      "key": "1",
+      "popPct": 46.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Butte",
+      "popPct": 22.5
+     },
+     {
+      "county": "Shasta",
+      "popPct": 19.3
+     },
+     {
+      "county": "Sutter",
+      "popPct": 10.6
+     },
+     {
+      "county": "Nevada",
+      "popPct": 9.1
+     },
+     {
+      "county": "Yuba",
+      "popPct": 8.6
+     },
+     {
+      "county": "Tehama",
+      "popPct": 7.0
+     },
+     {
+      "county": "Placer",
+      "popPct": 6.0
+     },
+     {
+      "county": "Siskiyou",
+      "popPct": 4.7
+     },
+     {
+      "county": "Lassen",
+      "popPct": 3.5
+     },
+     {
+      "county": "Glenn",
+      "popPct": 3.1
+     },
+     {
+      "county": "Colusa",
+      "popPct": 2.3
+     },
+     {
+      "county": "Plumas",
+      "popPct": 2.1
+     },
+     {
+      "county": "Modoc",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Butte",
+      "popPct": 22.5
+     },
+     {
+      "county": "Sutter",
+      "popPct": 10.6
+     },
+     {
+      "county": "Yuba",
+      "popPct": 8.6
+     },
+     {
+      "county": "Tehama",
+      "popPct": 7.0
+     },
+     {
+      "county": "Glenn",
+      "popPct": 3.1
+     },
+     {
+      "county": "Colusa",
+      "popPct": 2.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "El Dorado",
+      "popPct": 19.6
+     },
+     {
+      "county": "Sacramento",
+      "popPct": 15.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 943043,
+    "pres2020New": 15.6,
+    "pres2020Old": 10.0,
+    "retainedAreaPct": 74.2,
+    "retainedPopPct": 46.0,
+    "text": "A new footprint: only 46% of its population was in the 2016\u20132020 SD-1; it draws from the old SD-4 (54%). Counties: gained Butte (22%), Sutter (11%), Yuba (9%) and 3 more; lost El Dorado, Sacramento. 2020 presidential margin R+10.0 on the 2016\u20132020 lines \u2192 R+15.6 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 89.1,
+      "key": "10",
+      "popPct": 82.3
+     },
+     {
+      "areaPct": 7.4,
+      "key": "13",
+      "popPct": 15.0
+     },
+     {
+      "areaPct": 2.5,
+      "key": "15",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Alameda",
+      "popPct": 50.5
+     },
+     {
+      "county": "Santa Clara",
+      "popPct": 49.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 1034808,
+    "pres2020New": -48.7,
+    "pres2020Old": -48.5,
+    "retainedAreaPct": 89.1,
+    "retainedPopPct": 82.3,
+    "text": "Kept 82% of its population from the 2016\u20132020 SD-10; gained the rest from the old SD-13 (15%), the old SD-15 (3%). Spans Alameda, Santa Clara counties. 2020 presidential margin D+48.5 on the 2016\u20132020 lines \u2192 D+48.7 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 98.3,
+      "key": "11",
+      "popPct": 98.1
+     },
+     {
+      "areaPct": 1.7,
+      "key": "13",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Francisco",
+      "popPct": 85.2
+     },
+     {
+      "county": "San Mateo",
+      "popPct": 14.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 1023915,
+    "pres2020New": -70.4,
+    "pres2020Old": -70.7,
+    "retainedAreaPct": 98.3,
+    "retainedPopPct": 98.1,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-11; gained the rest from the old SD-13 (2%). Spans San Francisco, San Mateo counties. 2020 presidential margin D+70.7 on the 2016\u20132020 lines \u2192 D+70.4 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 59.0,
+      "key": "16",
+      "popPct": 59.8
+     },
+     {
+      "areaPct": 36.8,
+      "key": "8",
+      "popPct": 37.8
+     },
+     {
+      "areaPct": 4.2,
+      "key": "14",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kern",
+      "popPct": 44.6
+     },
+     {
+      "county": "Fresno",
+      "popPct": 37.3
+     },
+     {
+      "county": "Tulare",
+      "popPct": 18.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kern",
+      "popPct": 44.6
+     },
+     {
+      "county": "Tulare",
+      "popPct": 18.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Merced",
+      "popPct": 28.1
+     },
+     {
+      "county": "Monterey",
+      "popPct": 24.0
+     },
+     {
+      "county": "Stanislaus",
+      "popPct": 15.2
+     },
+     {
+      "county": "Madera",
+      "popPct": 12.9
+     },
+     {
+      "county": "San Benito",
+      "popPct": 6.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 948882,
+    "pres2020New": 20.0,
+    "pres2020Old": -18.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-12; it draws from the old SD-16 (60%), the old SD-8 (38%), the old SD-14 (2%). Counties: gained Kern (45%), Tulare (18%); lost Merced, Monterey, Stanislaus, Madera and 1 more. 2020 presidential margin D+18.2 on the 2016\u20132020 lines \u2192 R+20.0 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 93.1,
+      "key": "13",
+      "popPct": 82.6
+     },
+     {
+      "areaPct": 6.9,
+      "key": "15",
+      "popPct": 17.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Mateo",
+      "popPct": 60.0
+     },
+     {
+      "county": "Santa Clara",
+      "popPct": 40.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 1010048,
+    "pres2020New": -58.1,
+    "pres2020Old": -59.5,
+    "retainedAreaPct": 93.1,
+    "retainedPopPct": 82.6,
+    "text": "Kept 83% of its population from the 2016\u20132020 SD-13; gained the rest from the old SD-15 (17%). Spans San Mateo, Santa Clara counties. 2020 presidential margin D+59.5 on the 2016\u20132020 lines \u2192 D+58.1 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 93.9,
+      "key": "12",
+      "popPct": 48.5
+     },
+     {
+      "areaPct": 4.2,
+      "key": "14",
+      "popPct": 27.9
+     },
+     {
+      "areaPct": 1.9,
+      "key": "8",
+      "popPct": 23.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fresno",
+      "popPct": 63.6
+     },
+     {
+      "county": "Merced",
+      "popPct": 25.3
+     },
+     {
+      "county": "Madera",
+      "popPct": 11.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Merced",
+      "popPct": 25.3
+     },
+     {
+      "county": "Madera",
+      "popPct": 11.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kern",
+      "popPct": 31.0
+     },
+     {
+      "county": "Tulare",
+      "popPct": 23.0
+     },
+     {
+      "county": "Kings",
+      "popPct": 16.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 1002345,
+    "pres2020New": -20.7,
+    "pres2020Old": -17.6,
+    "retainedAreaPct": 4.2,
+    "retainedPopPct": 27.9,
+    "text": "A new footprint: only 28% of its population was in the 2016\u20132020 SD-14; it draws from the old SD-12 (48%), the old SD-8 (24%). Counties: gained Merced (25%), Madera (11%); lost Kern, Tulare, Kings. 2020 presidential margin D+17.6 on the 2016\u20132020 lines \u2192 D+20.7 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 42.9,
+      "key": "15",
+      "popPct": 74.4
+     },
+     {
+      "areaPct": 56.6,
+      "key": "17",
+      "popPct": 22.9
+     },
+     {
+      "areaPct": 0.5,
+      "key": "10",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Santa Clara",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 1029294,
+    "pres2020New": -43.3,
+    "pres2020Old": -45.5,
+    "retainedAreaPct": 42.9,
+    "retainedPopPct": 74.4,
+    "text": "Kept 74% of its population from the 2016\u20132020 SD-15; gained the rest from the old SD-17 (23%), the old SD-10 (3%). Entirely in Santa Clara County. 2020 presidential margin D+45.5 on the 2016\u20132020 lines \u2192 D+43.3 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 89.6,
+      "key": "14",
+      "popPct": 67.5
+     },
+     {
+      "areaPct": 10.0,
+      "key": "16",
+      "popPct": 31.2
+     },
+     {
+      "areaPct": 0.4,
+      "key": "12",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kern",
+      "popPct": 50.8
+     },
+     {
+      "county": "Tulare",
+      "popPct": 31.6
+     },
+     {
+      "county": "Kings",
+      "popPct": 15.9
+     },
+     {
+      "county": "Fresno",
+      "popPct": 1.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kings",
+      "popPct": 15.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "San Bernardino",
+      "popPct": 15.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 956472,
+    "pres2020New": -8.2,
+    "pres2020Old": 18.2,
+    "retainedAreaPct": 10.0,
+    "retainedPopPct": 31.2,
+    "text": "A new footprint: only 31% of its population was in the 2016\u20132020 SD-16; it draws from the old SD-14 (68%), the old SD-12 (1%). Counties: gained Kings (16%); lost San Bernardino. 2020 presidential margin R+18.2 on the 2016\u20132020 lines \u2192 D+8.2 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 74.1,
+      "key": "17",
+      "popPct": 69.5
+     },
+     {
+      "areaPct": 25.9,
+      "key": "12",
+      "popPct": 30.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Monterey",
+      "popPct": 44.0
+     },
+     {
+      "county": "Santa Cruz",
+      "popPct": 27.1
+     },
+     {
+      "county": "San Luis Obispo",
+      "popPct": 22.5
+     },
+     {
+      "county": "San Benito",
+      "popPct": 6.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "San Benito",
+      "popPct": 6.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Santa Clara",
+      "popPct": 23.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 998356,
+    "pres2020New": -39.3,
+    "pres2020Old": -36.0,
+    "retainedAreaPct": 74.1,
+    "retainedPopPct": 69.5,
+    "text": "Kept 70% of its population from the 2016\u20132020 SD-17; gained the rest from the old SD-12 (30%). Counties: gained San Benito (6%); lost Santa Clara. 2020 presidential margin D+36.0 on the 2016\u20132020 lines \u2192 D+39.3 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 48.3,
+      "key": "40",
+      "popPct": 78.0
+     },
+     {
+      "areaPct": 27.8,
+      "key": "28",
+      "popPct": 19.3
+     },
+     {
+      "areaPct": 0.0,
+      "key": "39",
+      "popPct": 2.0
+     },
+     {
+      "areaPct": 23.8,
+      "key": "16",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Diego",
+      "popPct": 61.5
+     },
+     {
+      "county": "Riverside",
+      "popPct": 19.3
+     },
+     {
+      "county": "Imperial",
+      "popPct": 18.5
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "San Diego",
+      "popPct": 61.5
+     },
+     {
+      "county": "Riverside",
+      "popPct": 19.3
+     },
+     {
+      "county": "Imperial",
+      "popPct": 18.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 973093,
+    "pres2020New": -30.2,
+    "pres2020Old": -49.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-18; it draws from the old SD-40 (78%), the old SD-28 (19%), the old SD-39 (2%) and 1 more. Counties: gained San Diego (62%), Riverside (19%), Imperial (18%); lost Los Angeles. 2020 presidential margin D+49.3 on the 2016\u20132020 lines \u2192 D+30.2 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 5.6,
+      "key": "23",
+      "popPct": 43.4
+     },
+     {
+      "areaPct": 10.7,
+      "key": "28",
+      "popPct": 30.4
+     },
+     {
+      "areaPct": 83.1,
+      "key": "16",
+      "popPct": 15.4
+     },
+     {
+      "areaPct": 0.4,
+      "key": "21",
+      "popPct": 7.7
+     },
+     {
+      "areaPct": 0.0,
+      "key": "20",
+      "popPct": 2.4
+     },
+     {
+      "areaPct": 0.2,
+      "key": "31",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Riverside",
+      "popPct": 54.2
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 45.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Riverside",
+      "popPct": 54.2
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 45.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Ventura",
+      "popPct": 53.8
+     },
+     {
+      "county": "Santa Barbara",
+      "popPct": 46.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 954685,
+    "pres2020New": -0.1,
+    "pres2020Old": -31.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-19; it draws from the old SD-23 (43%), the old SD-28 (30%), the old SD-16 (15%) and 3 more. Counties: gained Riverside (54%), San Bernardino (46%); lost Ventura, Santa Barbara. 2020 presidential margin D+31.1 on the 2016\u20132020 lines \u2192 D+0.1 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "2",
+      "popPct": 93.4
+     },
+     {
+      "areaPct": 0.6,
+      "key": "3",
+      "popPct": 6.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sonoma",
+      "popPct": 40.0
+     },
+     {
+      "county": "Marin",
+      "popPct": 26.0
+     },
+     {
+      "county": "Humboldt",
+      "popPct": 13.7
+     },
+     {
+      "county": "Mendocino",
+      "popPct": 9.2
+     },
+     {
+      "county": "Lake",
+      "popPct": 6.8
+     },
+     {
+      "county": "Del Norte",
+      "popPct": 2.8
+     },
+     {
+      "county": "Trinity",
+      "popPct": 1.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 1000989,
+    "pres2020New": -47.9,
+    "pres2020Old": -47.8,
+    "retainedAreaPct": 99.4,
+    "retainedPopPct": 93.4,
+    "text": "Kept 93% of its population from the 2016\u20132020 SD-2; gained the rest from the old SD-3 (7%). Spans Sonoma, Marin, Humboldt, Mendocino and 3 more counties. 2020 presidential margin D+47.8 on the 2016\u20132020 lines \u2192 D+47.9 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 27.0,
+      "key": "18",
+      "popPct": 61.0
+     },
+     {
+      "areaPct": 8.4,
+      "key": "27",
+      "popPct": 22.4
+     },
+     {
+      "areaPct": 55.9,
+      "key": "25",
+      "popPct": 16.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "San Bernardino",
+      "popPct": 84.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 940346,
+    "pres2020New": -43.2,
+    "pres2020Old": -32.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-20; it draws from the old SD-18 (61%), the old SD-27 (22%), the old SD-25 (17%). Counties: lost San Bernardino. 2020 presidential margin D+32.6 on the 2016\u20132020 lines \u2192 D+43.2 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 79.0,
+      "key": "19",
+      "popPct": 93.3
+     },
+     {
+      "areaPct": 19.5,
+      "key": "17",
+      "popPct": 5.6
+     },
+     {
+      "areaPct": 1.5,
+      "key": "27",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ventura",
+      "popPct": 51.2
+     },
+     {
+      "county": "Santa Barbara",
+      "popPct": 43.0
+     },
+     {
+      "county": "San Luis Obispo",
+      "popPct": 5.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Ventura",
+      "popPct": 51.2
+     },
+     {
+      "county": "Santa Barbara",
+      "popPct": 43.0
+     },
+     {
+      "county": "San Luis Obispo",
+      "popPct": 5.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Los Angeles",
+      "popPct": 63.8
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 36.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 1038265,
+    "pres2020New": -28.7,
+    "pres2020Old": -6.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-21; it draws from the old SD-19 (93%), the old SD-17 (6%), the old SD-27 (1%). Counties: gained Ventura (51%), Santa Barbara (43%), San Luis Obispo (6%); lost Los Angeles, San Bernardino. 2020 presidential margin D+6.4 on the 2016\u20132020 lines \u2192 D+28.7 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 38.5,
+      "key": "20",
+      "popPct": 46.7
+     },
+     {
+      "areaPct": 22.2,
+      "key": "22",
+      "popPct": 42.9
+     },
+     {
+      "areaPct": 37.0,
+      "key": "25",
+      "popPct": 9.0
+     },
+     {
+      "areaPct": 2.1,
+      "key": "29",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 68.7
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 31.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "San Bernardino",
+      "popPct": 31.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 1010061,
+    "pres2020New": -29.9,
+    "pres2020Old": -36.7,
+    "retainedAreaPct": 22.2,
+    "retainedPopPct": 42.9,
+    "text": "A new footprint: only 43% of its population was in the 2016\u20132020 SD-22; it draws from the old SD-20 (47%), the old SD-25 (9%), the old SD-29 (1%). Counties: gained San Bernardino (31%). 2020 presidential margin D+36.7 on the 2016\u20132020 lines \u2192 D+29.9 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 82.5,
+      "key": "21",
+      "popPct": 91.7
+     },
+     {
+      "areaPct": 2.8,
+      "key": "27",
+      "popPct": 5.4
+     },
+     {
+      "areaPct": 8.1,
+      "key": "23",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 68.4
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 31.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Los Angeles",
+      "popPct": 68.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Riverside",
+      "popPct": 37.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 1036693,
+    "pres2020New": -7.6,
+    "pres2020Old": -0.2,
+    "retainedAreaPct": 8.1,
+    "retainedPopPct": 2.8,
+    "text": "A new footprint: only 3% of its population was in the 2016\u20132020 SD-23; it draws from the old SD-21 (92%), the old SD-27 (5%). Counties: gained Los Angeles (68%); lost Riverside. 2020 presidential margin D+0.2 on the 2016\u20132020 lines \u2192 D+7.6 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 49.1,
+      "key": "26",
+      "popPct": 79.4
+     },
+     {
+      "areaPct": 2.9,
+      "key": "35",
+      "popPct": 11.9
+     },
+     {
+      "areaPct": 47.7,
+      "key": "27",
+      "popPct": 8.0
+     },
+     {
+      "areaPct": 0.2,
+      "key": "25",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 1032574,
+    "pres2020New": -42.4,
+    "pres2020Old": -65.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-24; it draws from the old SD-26 (79%), the old SD-35 (12%), the old SD-27 (8%) and 1 more. Entirely in Los Angeles County. 2020 presidential margin D+65.6 on the 2016\u20132020 lines \u2192 D+42.4 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 80.3,
+      "key": "25",
+      "popPct": 59.7
+     },
+     {
+      "areaPct": 6.6,
+      "key": "22",
+      "popPct": 35.8
+     },
+     {
+      "areaPct": 12.7,
+      "key": "23",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 94.2
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 5.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 1037321,
+    "pres2020New": -31.2,
+    "pres2020Old": -29.6,
+    "retainedAreaPct": 80.3,
+    "retainedPopPct": 59.7,
+    "text": "Kept 60% of its population from the 2016\u20132020 SD-25; gained the rest from the old SD-22 (36%), the old SD-23 (4%). Spans Los Angeles, San Bernardino counties. 2020 presidential margin D+29.6 on the 2016\u20132020 lines \u2192 D+31.2 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 75.7,
+      "key": "24",
+      "popPct": 93.4
+     },
+     {
+      "areaPct": 3.5,
+      "key": "26",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 13.3,
+      "key": "25",
+      "popPct": 1.8
+     },
+     {
+      "areaPct": 0.9,
+      "key": "30",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 946595,
+    "pres2020New": -64.9,
+    "pres2020Old": -46.5,
+    "retainedAreaPct": 3.5,
+    "retainedPopPct": 2.9,
+    "text": "A new footprint: only 3% of its population was in the 2016\u20132020 SD-26; it draws from the old SD-24 (93%), the old SD-25 (2%), the old SD-30 (2%). Entirely in Los Angeles County. 2020 presidential margin D+46.5 on the 2016\u20132020 lines \u2192 D+64.9 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 82.0,
+      "key": "27",
+      "popPct": 61.8
+     },
+     {
+      "areaPct": 16.6,
+      "key": "18",
+      "popPct": 38.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 68.2
+     },
+     {
+      "county": "Ventura",
+      "popPct": 31.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 982535,
+    "pres2020New": -29.5,
+    "pres2020Old": -23.4,
+    "retainedAreaPct": 82.0,
+    "retainedPopPct": 61.8,
+    "text": "Kept 62% of its population from the 2016\u20132020 SD-27; gained the rest from the old SD-18 (38%). Spans Los Angeles, Ventura counties. 2020 presidential margin D+23.4 on the 2016\u20132020 lines \u2192 D+29.5 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 81.8,
+      "key": "30",
+      "popPct": 82.5
+     },
+     {
+      "areaPct": 14.8,
+      "key": "26",
+      "popPct": 12.3
+     },
+     {
+      "areaPct": 2.4,
+      "key": "33",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 1.0,
+      "key": "24",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Riverside",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 980416,
+    "pres2020New": -70.5,
+    "pres2020Old": -3.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-28; it draws from the old SD-30 (82%), the old SD-26 (12%), the old SD-33 (4%) and 1 more. Counties: gained Los Angeles (100%); lost Riverside. 2020 presidential margin D+3.8 on the 2016\u20132020 lines \u2192 D+70.5 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 52.3,
+      "key": "20",
+      "popPct": 51.5
+     },
+     {
+      "areaPct": 42.7,
+      "key": "23",
+      "popPct": 41.1
+     },
+     {
+      "areaPct": 5.0,
+      "key": "25",
+      "popPct": 7.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Bernardino",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Orange",
+      "popPct": 73.6
+     },
+     {
+      "county": "Los Angeles",
+      "popPct": 18.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 939705,
+    "pres2020New": -26.9,
+    "pres2020Old": -12.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-29; it draws from the old SD-20 (52%), the old SD-23 (41%), the old SD-25 (7%). Counties: lost Orange, Los Angeles. 2020 presidential margin D+12.1 on the 2016\u20132020 lines \u2192 D+26.9 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 93.2,
+      "key": "3",
+      "popPct": 81.0
+     },
+     {
+      "areaPct": 4.5,
+      "key": "7",
+      "popPct": 12.3
+     },
+     {
+      "areaPct": 0.7,
+      "key": "6",
+      "popPct": 5.0
+     },
+     {
+      "areaPct": 1.5,
+      "key": "2",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Solano",
+      "popPct": 43.9
+     },
+     {
+      "county": "Yolo",
+      "popPct": 20.4
+     },
+     {
+      "county": "Napa",
+      "popPct": 13.5
+     },
+     {
+      "county": "Contra Costa",
+      "popPct": 12.3
+     },
+     {
+      "county": "Sonoma",
+      "popPct": 8.7
+     },
+     {
+      "county": "Sacramento",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 1032458,
+    "pres2020New": -33.4,
+    "pres2020Old": -38.4,
+    "retainedAreaPct": 93.2,
+    "retainedPopPct": 81.0,
+    "text": "Kept 81% of its population from the 2016\u20132020 SD-3; gained the rest from the old SD-7 (12%), the old SD-6 (5%), the old SD-2 (2%). Spans Solano, Yolo, Napa, Contra Costa and 2 more counties. 2020 presidential margin D+38.4 on the 2016\u20132020 lines \u2192 D+33.4 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 54.3,
+      "key": "32",
+      "popPct": 67.5
+     },
+     {
+      "areaPct": 34.2,
+      "key": "29",
+      "popPct": 20.3
+     },
+     {
+      "areaPct": 11.4,
+      "key": "22",
+      "popPct": 12.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 94.9
+     },
+     {
+      "county": "Orange",
+      "popPct": 5.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 5.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 989092,
+    "pres2020New": -32.3,
+    "pres2020Old": -72.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-30; it draws from the old SD-32 (68%), the old SD-29 (20%), the old SD-22 (12%). Counties: gained Orange (5%). 2020 presidential margin D+72.9 on the 2016\u20132020 lines \u2192 D+32.3 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 77.1,
+      "key": "31",
+      "popPct": 89.9
+     },
+     {
+      "areaPct": 15.8,
+      "key": "23",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 1.0,
+      "key": "20",
+      "popPct": 1.6
+     },
+     {
+      "areaPct": 6.2,
+      "key": "28",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Riverside",
+      "popPct": 98.3
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 1.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 936076,
+    "pres2020New": -24.2,
+    "pres2020Old": -18.5,
+    "retainedAreaPct": 77.1,
+    "retainedPopPct": 89.9,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-31; gained the rest from the old SD-23 (7%), the old SD-20 (2%), the old SD-28 (1%). Spans Riverside, San Bernardino counties. 2020 presidential margin D+18.5 on the 2016\u20132020 lines \u2192 D+24.2 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 44.0,
+      "key": "28",
+      "popPct": 55.6
+     },
+     {
+      "areaPct": 3.1,
+      "key": "31",
+      "popPct": 17.3
+     },
+     {
+      "areaPct": 2.3,
+      "key": "29",
+      "popPct": 15.3
+     },
+     {
+      "areaPct": 1.7,
+      "key": "23",
+      "popPct": 10.7
+     },
+     {
+      "areaPct": 48.8,
+      "key": "38",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Riverside",
+      "popPct": 83.6
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 8.0
+     },
+     {
+      "county": "Orange",
+      "popPct": 7.3
+     },
+     {
+      "county": "San Diego",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Riverside",
+      "popPct": 83.6
+     },
+     {
+      "county": "San Bernardino",
+      "popPct": 8.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Los Angeles",
+      "popPct": 92.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 947877,
+    "pres2020New": 9.5,
+    "pres2020Old": -32.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-32; it draws from the old SD-28 (56%), the old SD-31 (17%), the old SD-29 (15%) and 2 more. Counties: gained Riverside (84%), San Bernardino (8%); lost Los Angeles. 2020 presidential margin D+32.1 on the 2016\u20132020 lines \u2192 R+9.5 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 13.9,
+      "key": "33",
+      "popPct": 83.6
+     },
+     {
+      "areaPct": 1.7,
+      "key": "32",
+      "popPct": 6.3
+     },
+     {
+      "areaPct": 2.5,
+      "key": "34",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 0.6,
+      "key": "35",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 1031240,
+    "pres2020New": -49.7,
+    "pres2020Old": -55.9,
+    "retainedAreaPct": 13.9,
+    "retainedPopPct": 83.6,
+    "text": "Kept 84% of its population from the 2016\u20132020 SD-33; gained the rest from the old SD-32 (6%), the old SD-34 (6%), the old SD-35 (4%). Entirely in Los Angeles County. 2020 presidential margin D+55.9 on the 2016\u20132020 lines \u2192 D+49.7 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 42.1,
+      "key": "34",
+      "popPct": 46.4
+     },
+     {
+      "areaPct": 41.3,
+      "key": "29",
+      "popPct": 40.1
+     },
+     {
+      "areaPct": 8.4,
+      "key": "32",
+      "popPct": 8.9
+     },
+     {
+      "areaPct": 8.1,
+      "key": "37",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 92.8
+     },
+     {
+      "county": "Los Angeles",
+      "popPct": 7.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 942463,
+    "pres2020New": -28.8,
+    "pres2020Old": -13.5,
+    "retainedAreaPct": 42.1,
+    "retainedPopPct": 46.4,
+    "text": "A new footprint: only 46% of its population was in the 2016\u20132020 SD-34; it draws from the old SD-29 (40%), the old SD-32 (9%), the old SD-37 (4%). Spans Orange, Los Angeles counties. 2020 presidential margin D+13.5 on the 2016\u20132020 lines \u2192 D+28.8 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 86.6,
+      "key": "35",
+      "popPct": 83.7
+     },
+     {
+      "areaPct": 6.2,
+      "key": "30",
+      "popPct": 14.6
+     },
+     {
+      "areaPct": 0.6,
+      "key": "33",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Angeles",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 949593,
+    "pres2020New": -61.0,
+    "pres2020Old": -54.8,
+    "retainedAreaPct": 86.6,
+    "retainedPopPct": 83.7,
+    "text": "Kept 84% of its population from the 2016\u20132020 SD-35; gained the rest from the old SD-30 (15%), the old SD-33 (2%). Entirely in Los Angeles County. 2020 presidential margin D+54.8 on the 2016\u20132020 lines \u2192 D+61.0 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 26.9,
+      "key": "34",
+      "popPct": 44.2
+     },
+     {
+      "areaPct": 43.8,
+      "key": "37",
+      "popPct": 21.8
+     },
+     {
+      "areaPct": 5.3,
+      "key": "32",
+      "popPct": 12.8
+     },
+     {
+      "areaPct": 3.8,
+      "key": "29",
+      "popPct": 11.5
+     },
+     {
+      "areaPct": 20.2,
+      "key": "36",
+      "popPct": 9.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 91.3
+     },
+     {
+      "county": "Los Angeles",
+      "popPct": 8.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Los Angeles",
+      "popPct": 8.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "San Diego",
+      "popPct": 51.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 987916,
+    "pres2020New": -0.9,
+    "pres2020Old": -8.6,
+    "retainedAreaPct": 20.2,
+    "retainedPopPct": 9.7,
+    "text": "A new footprint: only 10% of its population was in the 2016\u20132020 SD-36; it draws from the old SD-34 (44%), the old SD-37 (22%), the old SD-32 (13%) and 1 more. Counties: gained Los Angeles (9%); lost San Diego. 2020 presidential margin D+8.6 on the 2016\u20132020 lines \u2192 D+0.9 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 62.4,
+      "key": "37",
+      "popPct": 78.9
+     },
+     {
+      "areaPct": 33.2,
+      "key": "36",
+      "popPct": 11.6
+     },
+     {
+      "areaPct": 4.3,
+      "key": "29",
+      "popPct": 9.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 1018056,
+    "pres2020New": -12.9,
+    "pres2020Old": -10.7,
+    "retainedAreaPct": 62.4,
+    "retainedPopPct": 78.9,
+    "text": "Kept 79% of its population from the 2016\u20132020 SD-37; gained the rest from the old SD-36 (12%), the old SD-29 (9%). Entirely in Orange County. 2020 presidential margin D+10.7 on the 2016\u20132020 lines \u2192 D+12.9 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 78.4,
+      "key": "36",
+      "popPct": 77.8
+     },
+     {
+      "areaPct": 19.0,
+      "key": "39",
+      "popPct": 21.1
+     },
+     {
+      "areaPct": 2.6,
+      "key": "38",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Diego",
+      "popPct": 72.7
+     },
+     {
+      "county": "Orange",
+      "popPct": 27.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 27.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 975028,
+    "pres2020New": -16.5,
+    "pres2020Old": -1.5,
+    "retainedAreaPct": 2.6,
+    "retainedPopPct": 1.1,
+    "text": "A new footprint: only 1% of its population was in the 2016\u20132020 SD-38; it draws from the old SD-36 (78%), the old SD-39 (21%). Counties: gained Orange (27%). 2020 presidential margin D+1.5 on the 2016\u20132020 lines \u2192 D+16.5 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 64.6,
+      "key": "39",
+      "popPct": 51.1
+     },
+     {
+      "areaPct": 25.8,
+      "key": "38",
+      "popPct": 28.4
+     },
+     {
+      "areaPct": 9.6,
+      "key": "40",
+      "popPct": 20.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Diego",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 1031038,
+    "pres2020New": -33.1,
+    "pres2020Old": -38.2,
+    "retainedAreaPct": 64.6,
+    "retainedPopPct": 51.1,
+    "text": "Kept 51% of its population from the 2016\u20132020 SD-39; gained the rest from the old SD-38 (28%), the old SD-40 (20%). Entirely in San Diego County. 2020 presidential margin D+38.2 on the 2016\u20132020 lines \u2192 D+33.1 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 81.7,
+      "key": "8",
+      "popPct": 36.3
+     },
+     {
+      "areaPct": 0.3,
+      "key": "5",
+      "popPct": 23.1
+     },
+     {
+      "areaPct": 12.9,
+      "key": "1",
+      "popPct": 21.5
+     },
+     {
+      "areaPct": 5.1,
+      "key": "12",
+      "popPct": 19.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stanislaus",
+      "popPct": 53.1
+     },
+     {
+      "county": "El Dorado",
+      "popPct": 18.3
+     },
+     {
+      "county": "Tuolumne",
+      "popPct": 5.4
+     },
+     {
+      "county": "Madera",
+      "popPct": 4.4
+     },
+     {
+      "county": "Calaveras",
+      "popPct": 4.4
+     },
+     {
+      "county": "Amador",
+      "popPct": 3.9
+     },
+     {
+      "county": "Merced",
+      "popPct": 2.6
+     },
+     {
+      "county": "Inyo",
+      "popPct": 1.8
+     },
+     {
+      "county": "Nevada",
+      "popPct": 1.6
+     },
+     {
+      "county": "Mariposa",
+      "popPct": 1.6
+     },
+     {
+      "county": "Placer",
+      "popPct": 1.4
+     },
+     {
+      "county": "Mono",
+      "popPct": 1.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Stanislaus",
+      "popPct": 53.1
+     },
+     {
+      "county": "El Dorado",
+      "popPct": 18.3
+     },
+     {
+      "county": "Tuolumne",
+      "popPct": 5.4
+     },
+     {
+      "county": "Madera",
+      "popPct": 4.4
+     },
+     {
+      "county": "Calaveras",
+      "popPct": 4.4
+     },
+     {
+      "county": "Amador",
+      "popPct": 3.9
+     },
+     {
+      "county": "Merced",
+      "popPct": 2.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Sacramento",
+      "popPct": 33.1
+     },
+     {
+      "county": "Butte",
+      "popPct": 21.1
+     },
+     {
+      "county": "Sutter",
+      "popPct": 9.9
+     },
+     {
+      "county": "Yuba",
+      "popPct": 8.1
+     },
+     {
+      "county": "Tehama",
+      "popPct": 6.6
+     },
+     {
+      "county": "Glenn",
+      "popPct": 2.9
+     },
+     {
+      "county": "Colusa",
+      "popPct": 2.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 1040052,
+    "pres2020New": 5.3,
+    "pres2020Old": 5.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-4; it draws from the old SD-8 (36%), the old SD-5 (23%), the old SD-1 (22%) and 1 more. Counties: gained Stanislaus (53%), El Dorado (18%), Tuolumne (5%) and 4 more; lost Sacramento, Butte, Sutter, Yuba and 3 more. 2020 presidential margin R+5.4 on the 2016\u20132020 lines \u2192 R+5.3 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 87.3,
+      "key": "38",
+      "popPct": 73.1
+     },
+     {
+      "areaPct": 6.8,
+      "key": "39",
+      "popPct": 25.7
+     },
+     {
+      "areaPct": 0.5,
+      "key": "36",
+      "popPct": 1.1
+     },
+     {
+      "areaPct": 5.4,
+      "key": "40",
+      "popPct": 0.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Diego",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Imperial",
+      "popPct": 18.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 948761,
+    "pres2020New": -6.5,
+    "pres2020Old": -32.3,
+    "retainedAreaPct": 5.4,
+    "retainedPopPct": 0.1,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-40; it draws from the old SD-38 (73%), the old SD-39 (26%), the old SD-36 (1%). Counties: lost Imperial. 2020 presidential margin D+32.3 on the 2016\u20132020 lines \u2192 D+6.5 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 77.3,
+      "key": "5",
+      "popPct": 76.1
+     },
+     {
+      "areaPct": 22.2,
+      "key": "7",
+      "popPct": 23.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Joaquin",
+      "popPct": 76.0
+     },
+     {
+      "county": "Alameda",
+      "popPct": 23.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Alameda",
+      "popPct": 23.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Stanislaus",
+      "popPct": 23.0
+     },
+     {
+      "county": "Sacramento",
+      "popPct": 2.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 1023999,
+    "pres2020New": -20.2,
+    "pres2020Old": -10.7,
+    "retainedAreaPct": 77.3,
+    "retainedPopPct": 76.1,
+    "text": "Kept 76% of its population from the 2016\u20132020 SD-5; gained the rest from the old SD-7 (24%). Counties: gained Alameda (24%); lost Stanislaus, Sacramento. 2020 presidential margin D+10.7 on the 2016\u20132020 lines \u2192 D+20.2 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 26.0,
+      "key": "4",
+      "popPct": 46.3
+     },
+     {
+      "areaPct": 27.2,
+      "key": "1",
+      "popPct": 33.9
+     },
+     {
+      "areaPct": 1.9,
+      "key": "6",
+      "popPct": 10.9
+     },
+     {
+      "areaPct": 36.3,
+      "key": "8",
+      "popPct": 5.9
+     },
+     {
+      "areaPct": 3.9,
+      "key": "5",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sacramento",
+      "popPct": 65.5
+     },
+     {
+      "county": "Placer",
+      "popPct": 34.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Placer",
+      "popPct": 34.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Yolo",
+      "popPct": 5.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 970226,
+    "pres2020New": -1.0,
+    "pres2020Old": -40.4,
+    "retainedAreaPct": 1.9,
+    "retainedPopPct": 10.9,
+    "text": "A new footprint: only 11% of its population was in the 2016\u20132020 SD-6; it draws from the old SD-4 (46%), the old SD-1 (34%), the old SD-8 (6%) and 1 more. Counties: gained Placer (34%); lost Yolo. 2020 presidential margin D+40.4 on the 2016\u20132020 lines \u2192 D+1.0 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 99.0,
+      "key": "9",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Alameda",
+      "popPct": 71.9
+     },
+     {
+      "county": "Contra Costa",
+      "popPct": 28.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 956835,
+    "pres2020New": -79.4,
+    "pres2020Old": -37.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-7; it draws from the old SD-9 (100%). Spans Alameda, Contra Costa counties. 2020 presidential margin D+37.9 on the 2016\u20132020 lines \u2192 D+79.4 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 88.7,
+      "key": "6",
+      "popPct": 95.3
+     },
+     {
+      "areaPct": 8.3,
+      "key": "4",
+      "popPct": 4.6
+     },
+     {
+      "areaPct": 2.9,
+      "key": "8",
+      "popPct": 0.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sacramento",
+      "popPct": 99.3
+     },
+     {
+      "county": "Yolo",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Fresno",
+      "popPct": 57.1
+     },
+     {
+      "county": "Stanislaus",
+      "popPct": 15.5
+     },
+     {
+      "county": "Tuolumne",
+      "popPct": 5.4
+     },
+     {
+      "county": "Calaveras",
+      "popPct": 4.4
+     },
+     {
+      "county": "Amador",
+      "popPct": 3.9
+     },
+     {
+      "county": "Madera",
+      "popPct": 2.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 940434,
+    "pres2020New": -40.2,
+    "pres2020Old": 6.9,
+    "retainedAreaPct": 2.9,
+    "retainedPopPct": 0.1,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-8; it draws from the old SD-6 (95%), the old SD-4 (5%). Counties: lost Fresno, Stanislaus, Tuolumne, Calaveras and 2 more. 2020 presidential margin R+6.9 on the 2016\u20132020 lines \u2192 D+40.2 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 76.1,
+      "key": "7",
+      "popPct": 68.9
+     },
+     {
+      "areaPct": 7.6,
+      "key": "10",
+      "popPct": 14.2
+     },
+     {
+      "areaPct": 9.6,
+      "key": "9",
+      "popPct": 8.7
+     },
+     {
+      "areaPct": 6.8,
+      "key": "3",
+      "popPct": 8.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Contra Costa",
+      "popPct": 77.1
+     },
+     {
+      "county": "Alameda",
+      "popPct": 22.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 996641,
+    "pres2020New": -45.1,
+    "pres2020Old": -77.4,
+    "retainedAreaPct": 9.6,
+    "retainedPopPct": 8.7,
+    "text": "A new footprint: only 9% of its population was in the 2016\u20132020 SD-9; it draws from the old SD-7 (69%), the old SD-10 (14%), the old SD-3 (8%). Spans Contra Costa, Alameda counties. 2020 presidential margin D+77.4 on the 2016\u20132020 lines \u2192 D+45.1 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

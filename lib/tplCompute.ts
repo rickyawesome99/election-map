@@ -30,6 +30,7 @@ import { racePolls } from "@/data/racePolls";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import { forecastNow } from "@/lib/forecastClock";
 import { classifyEligibility, alignedParty, type RaceEligibility } from "@/data/raceEligibility";
+import { getChamberMargins } from "@/lib/stateLegChamberMargin";
 
 // ── Race stub type ────────────────────────────────────────────────────────────
 
@@ -47,7 +48,13 @@ export interface RaceStub {
   demParty?: string; // true party of the dem-slot candidate ("I" for independents, etc.)
   repParty?: string;
   historicalMargins: { year: number; margin: number }[];
-  totalVotes?: number; // House only: ballots cast in the race (its turnout weight in the state model)
+  totalVotes?: number; // House and State Legislature rows: ballots behind the row (its turnout weight in the state model)
+  /**
+   * An ineligible row's imputation decided at stub time rather than by nearestPresidentialLean:
+   * the State Legislature's unopposed pool carries the turnout-weighted presidential lean of its
+   * uncontested districts on the lines they were run on (lib/stateLegChamberMargin.ts).
+   */
+  presetImputation?: { margin: number; year: number; desc: string; totalVotes?: number };
 }
 
 // ── Computed race types ───────────────────────────────────────────────────────
@@ -116,6 +123,10 @@ export const IMPUTED_RACE_WEIGHT = 0.5;
 // half that district's voters out of the state's sum. The imputed value is that district's
 // own presidential lean, which is a better estimate of its share than a missing race.
 export const IMPUTED_HOUSE_ROW_WEIGHT = 1;
+// The State Legislature's unopposed pool: like a House seat, it is a share of the chamber's
+// electorate, so it keeps its full turnout share. Tested against 0.5 (decision 6 of the atlas
+// plan): see methodologyChangelog 2026-10-10.
+export const IMPUTED_LEG_ROW_WEIGHT = 1;
 
 interface ImputedLean {
   margin: number;
@@ -348,19 +359,18 @@ export function getRawMargin(
   }
 
   if (race === "State Legislature") {
-    // Chamber-aggregate margin as a share of the FULL total (third parties and
-    // minor-party candidates included), matching every other margin in the model.
-    // Every sourced entry carries totalVotes alongside demVotes/repVotes.
-    const entries = (stateLegData[stateName] ?? []).filter((e) => e.year === year);
-    let dem = 0, rep = 0, total = 0;
-    for (const e of entries) {
-      if (e.demVotes != null && e.repVotes != null && e.totalVotes != null) {
-        dem += e.demVotes;
-        rep += e.repVotes;
-        total += e.totalVotes;
-      }
-    }
-    return total > 0 ? ((rep - dem) / total) * 100 : null;
+    // The CONTESTED pool of the year's legislative districts — every seat where both major
+    // parties drew votes — as a share of the full total vote. The unopposed seats are the
+    // separate "State Legislature (unopposed seats)" row, imputed district by district from the
+    // presidential vote on the lines they were run on (lib/stateLegChamberMargin.ts). The old
+    // chamber aggregate (every counted district summed) survives there as `rawMargin`.
+    return getChamberMargins(stateAbbr)[year]?.contested.margin ?? null;
+  }
+  if (race === "State Legislature (unopposed seats)") {
+    return getChamberMargins(stateAbbr)[year]?.imputed.margin ?? null;
+  }
+  if (race === "State Legislature (raw aggregate)") {
+    return getChamberMargins(stateAbbr)[year]?.rawMargin ?? null;
   }
 
   return null;
@@ -499,18 +509,40 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
     })
     .sort((a, b) => a - b);
 
+  // Two rows per year, sharing the L type weight on their turnout: the contested pool (an
+  // eligible row with its own margin) and the unopposed pool (an imputed row whose lean is the
+  // turnout-weighted presidential margin of the uncontested districts on the map they were run
+  // on, stripping the environment of that presidential year as an imputed House seat does).
+  const chamberMargins = getChamberMargins(stateAbbr);
+  // Ablation for the backtest and the change log: TPL_RAW_LEG=1 restores the pre-2026-10-10
+  // single row per year carrying the raw chamber aggregate (every counted district summed).
+  const rawLeg = process.env.TPL_RAW_LEG === "1";
+  const historicalMargins = Object.values(chamberMargins)
+    .filter((y) => y.correctedMargin != null)
+    .map((y) => ({ year: y.year, margin: y.correctedMargin! }))
+    .sort((a, b) => a.year - b.year);
   for (const year of legYears) {
-    const historicalMargins = [
-      ...new Set(legEntries.filter((e) => e.demVotes != null && e.repVotes != null).map((e) => e.year)),
-    ].map((historicalYear) => {
-      const entries = legEntries.filter((e) => e.year === historicalYear);
-      const demVotes = entries.reduce((sum, e) => sum + (e.demVotes ?? 0), 0);
-      const repVotes = entries.reduce((sum, e) => sum + (e.repVotes ?? 0), 0);
-      // Share of the FULL chamber total, not two-party - see the L branch of getRawMargin.
-      const totalVotes = entries.reduce((sum, e) => sum + (e.totalVotes ?? 0), 0);
-      return { year: historicalYear, margin: ((repVotes - demVotes) / totalVotes) * 100 };
-    });
-    stubs.push(makeStub("State Legislature", "L", year, undefined, "-", historicalMargins, stateHref));
+    const cm = chamberMargins[year];
+    if (!cm) continue;
+    if (rawLeg) {
+      if (cm.rawMargin != null) stubs.push(makeStub("State Legislature (raw aggregate)", "L", year, undefined, "-", historicalMargins, stateHref));
+      continue;
+    }
+    if (cm.contested.margin != null) {
+      stubs.push({ ...makeStub("State Legislature", "L", year, undefined, "-", historicalMargins, stateHref), totalVotes: cm.contested.weight });
+    }
+    if (cm.imputed.margin != null && cm.imputed.srcYear != null) {
+      stubs.push({
+        ...makeStub("State Legislature (unopposed seats)", "L", year, undefined, "-", historicalMargins, stateHref, "unopposed"),
+        totalVotes: cm.imputed.weight,
+        presetImputation: {
+          margin: cm.imputed.margin,
+          year: cm.imputed.srcYear,
+          desc: `presidential vote of the ${cm.imputed.districts} unopposed district${cm.imputed.districts === 1 ? "" : "s"} on the lines they were run on`,
+          totalVotes: cm.imputed.weight,
+        },
+      });
+    }
   }
 
   const RACE_TYPE_ORDER: Record<string, number> = { P: 0, G: 1, S: 2, H: 3, L: 4 };
@@ -690,7 +722,7 @@ export function calculateStateModel(stateAbbr: string, stateName: string): State
     }
     const ineligible = stub.eligibility !== "eligible";
     const imputation = ineligible
-      ? nearestPresidentialLean(stateAbbr, stub.district, stub.year, minValidYear, maxValidYear)
+      ? (stub.presetImputation ?? nearestPresidentialLean(stateAbbr, stub.district, stub.year, minValidYear, maxValidYear))
       : null;
     const imputed = imputation != null;
     const adjustedMargin = ineligible ? (imputation?.margin ?? null) : rawMargin;
@@ -713,12 +745,12 @@ export function calculateStateModel(stateAbbr: string, stateName: string): State
     const stateLean = fit.lean[stateAbbr];
     const residual = NM != null && stateLean != null ? NM - stateLean : 0;
     const huberW = stub.raceType === "H" ? 1 : Math.abs(residual) <= G.HUBER_C ? 1 : G.HUBER_C / Math.abs(residual);
-    const imputedWeight = stub.raceType === "H" ? IMPUTED_HOUSE_ROW_WEIGHT : IMPUTED_RACE_WEIGHT;
+    const imputedWeight = stub.raceType === "H" ? IMPUTED_HOUSE_ROW_WEIGHT : stub.raceType === "L" ? IMPUTED_LEG_ROW_WEIGHT : IMPUTED_RACE_WEIGHT;
     const aggWeight = (imputed ? imputedWeight : 1) * huberW;
     // Turnout behind a House row: the race's own total vote, or for an imputed row the
     // source presidential result's (an uncontested seat's depressed House turnout says
     // nothing about its share of the state).
-    const totalVotes = stub.raceType === "H" ? (imputed ? imputation?.totalVotes : stub.totalVotes) : undefined;
+    const totalVotes = stub.raceType === "H" || stub.raceType === "L" ? (imputed ? imputation?.totalVotes : stub.totalVotes) : undefined;
     return {
       ...stub,
       rawMargin,
@@ -741,8 +773,10 @@ export function calculateStateModel(stateAbbr: string, stateName: string): State
   // House turnout weights: total votes relative to the state-year's mean House turnout, so
   // a row's weight reads as "this district's share of the state's House vote" (mean 1) and
   // a row with no vote count enters at that mean.
-  for (const year of new Set(races.filter((r) => r.raceType === "H").map((r) => r.year))) {
-    const rows = races.filter((r) => r.raceType === "H" && r.year === year);
+  // The State Legislature's two rows per year (contested pool, unopposed pool) are weighted the
+  // same way, so the unopposed seats enter at their share of the chamber's electorate.
+  for (const type of ["H", "L"] as const) for (const year of new Set(races.filter((r) => r.raceType === type).map((r) => r.year))) {
+    const rows = races.filter((r) => r.raceType === type && r.year === year);
     const known = rows.filter((r) => (r.turnoutWeight ?? 0) > 0);
     const meanVotes = known.length > 0 ? known.reduce((a, r) => a + r.turnoutWeight!, 0) / known.length : 0;
     for (const r of rows) {

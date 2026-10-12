@@ -1,0 +1,7487 @@
+{
+ "state": "IA",
+ "cycle": 2026,
+ "fetched": "2026-10-11",
+ "dataThrough": "07/14/2026",
+ "races": [
+  {
+   "office": "Iowa House of Representatives District 1",
+   "url": "/ia/race/iowa-house-of-representatives-district-1-72370",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 4436.0,
+   "totalExpenditures": 2988.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Shawn Olorundami",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3077.61,
+       "expenditures": 2461.13,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/shawn-olorundami"
+      },
+      {
+       "name": "Josh Steinhoff",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 90.0,
+       "expenditures": 50.0,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/josh-steinhoff"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Shawn Olorundami",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3077.61,
+       "expenditures": 2461.13,
+       "status": "Advanced",
+       "url": "/ia/candidate/shawn-olorundami"
+      },
+      {
+       "name": "Kenneth Kroll",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1268.0,
+       "expenditures": 477.18,
+       "status": "Lost",
+       "url": "/ia/candidate/kenneth-kroll"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Josh Steinhoff",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 90.0,
+       "expenditures": 50.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/josh-steinhoff"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "Iowa House of Representatives District 10",
+   "url": "/ia/race/iowa-house-of-representatives-district-10-72371",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 59356.0,
+   "totalExpenditures": 54304.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "John Wills",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 59356.36,
+       "expenditures": 54303.96,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/john-wills"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "John Wills",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 59356.36,
+       "expenditures": 54303.96,
+       "status": "Advanced",
+       "url": "/ia/candidate/john-wills"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "Iowa House of Representatives District 100",
+   "url": "/ia/race/iowa-house-of-representatives-district-100-72372",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 140835.0,
+   "totalExpenditures": 11985.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Blaine Watkins",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 121505.8,
+       "expenditures": 4345.91,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/blaine-watkins"
+      },
+      {
+       "name": "Matt Mohrfeld",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 19328.83,
+       "expenditures": 7638.89,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/matt-mohrfeld"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Matt Mohrfeld",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 19328.83,
+       "expenditures": 7638.89,
+       "status": "Advanced",
+       "url": "/ia/candidate/matt-mohrfeld"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Blaine Watkins",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 121505.8,
+       "expenditures": 4345.91,
+       "status": "Advanced",
+       "url": "/ia/candidate/blaine-watkins"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "100"
+  },
+  {
+   "office": "Iowa House of Representatives District 11",
+   "url": "/ia/race/iowa-house-of-representatives-district-11-72373",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 24030.0,
+   "totalExpenditures": 16040.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Craig Williams",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6078.06,
+       "expenditures": 500.0,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/craig-williams"
+      },
+      {
+       "name": "Bill Owen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17952.0,
+       "expenditures": 15540.48,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/bill-owen"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Bill Owen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17952.0,
+       "expenditures": 15540.48,
+       "status": "Advanced",
+       "url": "/ia/candidate/bill-owen"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Craig Williams",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6078.06,
+       "expenditures": 500.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/craig-williams"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "Iowa House of Representatives District 12",
+   "url": "/ia/race/iowa-house-of-representatives-district-12-72374",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 46425.0,
+   "totalExpenditures": 44021.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Steven Holt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 46200.36,
+       "expenditures": 43329.06,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/steven-holt"
+      },
+      {
+       "name": "Dustin Durbin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 582.27,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/dustin-durbin"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Dustin Durbin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 582.27,
+       "status": "Advanced",
+       "url": "/ia/candidate/dustin-durbin"
+      },
+      {
+       "name": "Brady Meyer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 225.0,
+       "expenditures": 109.61,
+       "status": "Lost",
+       "url": "/ia/candidate/brady-meyer"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Steven Holt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 46200.36,
+       "expenditures": 43329.06,
+       "status": "Advanced",
+       "url": "/ia/candidate/steven-holt"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "Iowa House of Representatives District 13",
+   "url": "/ia/race/iowa-house-of-representatives-district-13-72375",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 8277.0,
+   "totalExpenditures": 5876.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Travis Sitzmann",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 8276.76,
+       "expenditures": 5876.13,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/travis-sitzmann"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Travis Sitzmann",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 8276.76,
+       "expenditures": 5876.13,
+       "status": "Advanced",
+       "url": "/ia/candidate/travis-sitzmann"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "Iowa House of Representatives District 14",
+   "url": "/ia/race/iowa-house-of-representatives-district-14-72376",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 38390.0,
+   "totalExpenditures": 38098.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jacob Bossman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38390.24,
+       "expenditures": 38097.77,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/jacob-bossman"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jacob Bossman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38390.24,
+       "expenditures": 38097.77,
+       "status": "Advanced",
+       "url": "/ia/candidate/jacob-bossman"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "Iowa House of Representatives District 15",
+   "url": "/ia/race/iowa-house-of-representatives-district-15-72377",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 31840.0,
+   "totalExpenditures": 33367.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Benjamin Schauer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7755.67,
+       "expenditures": 5106.22,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/benjamin-schauer"
+      },
+      {
+       "name": "Jason Sherer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19235.11,
+       "expenditures": 22262.85,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/jason-sherer"
+      },
+      {
+       "name": "Blake Johnson",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Candidacy Declared",
+       "url": "/ia/candidate/blake-johnson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Benjamin Schauer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7755.67,
+       "expenditures": 5106.22,
+       "status": "Advanced",
+       "url": "/ia/candidate/benjamin-schauer"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jason Sherer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19235.11,
+       "expenditures": 22262.85,
+       "status": "Advanced",
+       "url": "/ia/candidate/jason-sherer"
+      },
+      {
+       "name": "Bryan Holder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/ia/candidate/bryan-holder"
+      },
+      {
+       "name": "Toni Waite",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4849.7,
+       "expenditures": 5997.76,
+       "status": "Lost",
+       "url": "/ia/candidate/toni-waite"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "Iowa House of Representatives District 16",
+   "url": "/ia/race/iowa-house-of-representatives-district-16-72378",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 5351.0,
+   "totalExpenditures": 3713.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "David Sieck",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2850.0,
+       "expenditures": 2734.6,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/david-sieck"
+      },
+      {
+       "name": "Jack Goodman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2501.0,
+       "expenditures": 978.26,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/jack-goodman"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jack Goodman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2501.0,
+       "expenditures": 978.26,
+       "status": "Advanced",
+       "url": "/ia/candidate/jack-goodman"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "David Sieck",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2850.0,
+       "expenditures": 2734.6,
+       "status": "Advanced",
+       "url": "/ia/candidate/david-sieck"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "Iowa House of Representatives District 17",
+   "url": "/ia/race/iowa-house-of-representatives-district-17-72379",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 27621.0,
+   "totalExpenditures": 2410.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Devon Wood",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 27620.81,
+       "expenditures": 2409.89,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/devon-wood"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Devon Wood",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 27620.81,
+       "expenditures": 2409.89,
+       "status": "Advanced",
+       "url": "/ia/candidate/devon-wood"
+      },
+      {
+       "name": "Shaun Kelley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/ia/candidate/shaun-kelley"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "Iowa House of Representatives District 18",
+   "url": "/ia/race/iowa-house-of-representatives-district-18-72380",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 8307.0,
+   "totalExpenditures": 1875.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Tom Moore",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3250.0,
+       "expenditures": 900.0,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/tom-moore"
+      },
+      {
+       "name": "Tripp Narup",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5057.32,
+       "expenditures": 974.98,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/tripp-narup"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Tripp Narup",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5057.32,
+       "expenditures": 974.98,
+       "status": "Advanced",
+       "url": "/ia/candidate/tripp-narup"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Tom Moore",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3250.0,
+       "expenditures": 900.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/tom-moore"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "Iowa House of Representatives District 19",
+   "url": "/ia/race/iowa-house-of-representatives-district-19-72381",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 36270.0,
+   "totalExpenditures": 9620.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Brent Siegrist",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 36270.0,
+       "expenditures": 9620.14,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/brent-siegrist"
+      },
+      {
+       "name": "Benjamin Larson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/benjamin-larson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Benjamin Larson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/benjamin-larson"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Brent Siegrist",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 36270.0,
+       "expenditures": 9620.14,
+       "status": "Advanced",
+       "url": "/ia/candidate/brent-siegrist"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "Iowa House of Representatives District 2",
+   "url": "/ia/race/iowa-house-of-representatives-district-2-72382",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 35068.0,
+   "totalExpenditures": 26283.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Robert Henderson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 35068.03,
+       "expenditures": 26283.37,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/robert-henderson"
+      },
+      {
+       "name": "Jessica Lopez-Walker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/jessica-lopez-walker"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jessica Lopez-Walker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/jessica-lopez-walker"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Robert Henderson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 35068.03,
+       "expenditures": 26283.37,
+       "status": "Advanced",
+       "url": "/ia/candidate/robert-henderson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "Iowa House of Representatives District 20",
+   "url": "/ia/race/iowa-house-of-representatives-district-20-72383",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 17931.0,
+   "totalExpenditures": 7434.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Eric Armstrong",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 14605.62,
+       "expenditures": 6420.1,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/eric-armstrong"
+      },
+      {
+       "name": "Keith Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3325.27,
+       "expenditures": 1014.04,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/keith-jones"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Eric Armstrong",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 14605.62,
+       "expenditures": 6420.1,
+       "status": "Advanced",
+       "url": "/ia/candidate/eric-armstrong"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Keith Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3325.27,
+       "expenditures": 1014.04,
+       "status": "Advanced",
+       "url": "/ia/candidate/keith-jones"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "Iowa House of Representatives District 21",
+   "url": "/ia/race/iowa-house-of-representatives-district-21-72384",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 106336.0,
+   "totalExpenditures": 19062.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Brooke Boden",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 23855.0,
+       "expenditures": 8241.04,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/brooke-boden"
+      },
+      {
+       "name": "Spencer Waugh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 82480.72,
+       "expenditures": 10821.27,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/spencer-waugh"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Spencer Waugh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 82480.72,
+       "expenditures": 10821.27,
+       "status": "Advanced",
+       "url": "/ia/candidate/spencer-waugh"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Brooke Boden",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 23855.0,
+       "expenditures": 8241.04,
+       "status": "Advanced",
+       "url": "/ia/candidate/brooke-boden"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "Iowa House of Representatives District 22",
+   "url": "/ia/race/iowa-house-of-representatives-district-22-72385",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 59246.0,
+   "totalExpenditures": 23383.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Samantha Fett",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22769.14,
+       "expenditures": 19029.45,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/samantha-fett"
+      },
+      {
+       "name": "Rory Taylor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 36476.76,
+       "expenditures": 4353.22,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/rory-taylor"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Rory Taylor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 36476.76,
+       "expenditures": 4353.22,
+       "status": "Advanced",
+       "url": "/ia/candidate/rory-taylor"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Samantha Fett",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22769.14,
+       "expenditures": 19029.45,
+       "status": "Advanced",
+       "url": "/ia/candidate/samantha-fett"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "Iowa House of Representatives District 23",
+   "url": "/ia/race/iowa-house-of-representatives-district-23-72386",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 41523.0,
+   "totalExpenditures": 17813.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ray Sorensen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 33732.97,
+       "expenditures": 17468.79,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/ray-sorensen"
+      },
+      {
+       "name": "Karen Varley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7790.0,
+       "expenditures": 344.25,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/karen-varley"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Karen Varley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7790.0,
+       "expenditures": 344.25,
+       "status": "Advanced",
+       "url": "/ia/candidate/karen-varley"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Ray Sorensen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 33732.97,
+       "expenditures": 17468.79,
+       "status": "Advanced",
+       "url": "/ia/candidate/ray-sorensen"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "Iowa House of Representatives District 24",
+   "url": "/ia/race/iowa-house-of-representatives-district-24-72387",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 26444.0,
+   "totalExpenditures": 9824.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Sam Wengryn",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3832.5,
+       "expenditures": 1062.64,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/sam-wengryn"
+      },
+      {
+       "name": "Sonya Hicks",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 250.0,
+       "expenditures": 1528.62,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/sonya-hicks"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Sonya Hicks",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 250.0,
+       "expenditures": 1528.62,
+       "status": "Advanced",
+       "url": "/ia/candidate/sonya-hicks"
+      },
+      {
+       "name": "Paul Davis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 22361.0,
+       "expenditures": 7232.29,
+       "status": "Lost",
+       "url": "/ia/candidate/paul-davis"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Sam Wengryn",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3832.5,
+       "expenditures": 1062.64,
+       "status": "Advanced",
+       "url": "/ia/candidate/sam-wengryn"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "Iowa House of Representatives District 25",
+   "url": "/ia/race/iowa-house-of-representatives-district-25-72388",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 66692.0,
+   "totalExpenditures": 50960.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Hans Wilz",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 66137.97,
+       "expenditures": 50491.3,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/hans-wilz"
+      },
+      {
+       "name": "Kolton Jones",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 553.7,
+       "expenditures": 469.06,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/kolton-jones"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Hans Wilz",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 66137.97,
+       "expenditures": 50491.3,
+       "status": "Advanced",
+       "url": "/ia/candidate/hans-wilz"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "Iowa House of Representatives District 26",
+   "url": "/ia/race/iowa-house-of-representatives-district-26-72389",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 120099.0,
+   "totalExpenditures": 12473.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Austin Harris",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 115562.67,
+       "expenditures": 11625.05,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/austin-harris"
+      },
+      {
+       "name": "Brett Mohler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4536.0,
+       "expenditures": 847.86,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/brett-mohler"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Brett Mohler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4536.0,
+       "expenditures": 847.86,
+       "status": "Advanced",
+       "url": "/ia/candidate/brett-mohler"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Austin Harris",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 115562.67,
+       "expenditures": 11625.05,
+       "status": "Advanced",
+       "url": "/ia/candidate/austin-harris"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "Iowa House of Representatives District 27",
+   "url": "/ia/race/iowa-house-of-representatives-district-27-72390",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 66729.0,
+   "totalExpenditures": 8809.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Kenan Judge",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 66728.84,
+       "expenditures": 8808.81,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/kenan-judge"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Kenan Judge",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 66728.84,
+       "expenditures": 8808.81,
+       "status": "Advanced",
+       "url": "/ia/candidate/kenan-judge"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "Iowa House of Representatives District 28",
+   "url": "/ia/race/iowa-house-of-representatives-district-28-72391",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 190594.0,
+   "totalExpenditures": 35050.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "David Young",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 164882.91,
+       "expenditures": 6754.39,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/david-young"
+      },
+      {
+       "name": "Tom Walton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25710.82,
+       "expenditures": 28295.23,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/tom-walton"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Tom Walton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25710.82,
+       "expenditures": 28295.23,
+       "status": "Advanced",
+       "url": "/ia/candidate/tom-walton"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "David Young",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 164882.91,
+       "expenditures": 6754.39,
+       "status": "Advanced",
+       "url": "/ia/candidate/david-young"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "Iowa House of Representatives District 29",
+   "url": "/ia/race/iowa-house-of-representatives-district-29-72392",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 168316.0,
+   "totalExpenditures": 36050.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Brian Meyer",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 168316.0,
+       "expenditures": 36049.86,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/brian-meyer"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Brian Meyer",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 168316.0,
+       "expenditures": 36049.86,
+       "status": "Advanced",
+       "url": "/ia/candidate/brian-meyer"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "Iowa House of Representatives District 3",
+   "url": "/ia/race/iowa-house-of-representatives-district-3-72393",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 2700.0,
+   "totalExpenditures": 2346.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Robert Driesen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2700.0,
+       "expenditures": 2346.21,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/robert-driesen"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Robert Driesen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2700.0,
+       "expenditures": 2346.21,
+       "status": "Advanced",
+       "url": "/ia/candidate/robert-driesen"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "Iowa House of Representatives District 30",
+   "url": "/ia/race/iowa-house-of-representatives-district-30-72394",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 68245.0,
+   "totalExpenditures": 52182.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Megan Srinivas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 68245.37,
+       "expenditures": 52182.0,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/megan-srinivas"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Megan Srinivas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 68245.37,
+       "expenditures": 52182.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/megan-srinivas"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "Iowa House of Representatives District 31",
+   "url": "/ia/race/iowa-house-of-representatives-district-31-72395",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 7050.0,
+   "totalExpenditures": 4451.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Mary Madison",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 7050.0,
+       "expenditures": 4451.02,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/mary-madison"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Mary Madison",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 7050.0,
+       "expenditures": 4451.02,
+       "status": "Advanced",
+       "url": "/ia/candidate/mary-madison"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "Iowa House of Representatives District 32",
+   "url": "/ia/race/iowa-house-of-representatives-district-32-72396",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 10350.0,
+   "totalExpenditures": 2201.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Mike Jones",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10350.0,
+       "expenditures": 2200.67,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/mike-jones"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Mike Jones",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10350.0,
+       "expenditures": 2200.67,
+       "status": "Advanced",
+       "url": "/ia/candidate/mike-jones"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "Iowa House of Representatives District 33",
+   "url": "/ia/race/iowa-house-of-representatives-district-33-72397",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 75943.0,
+   "totalExpenditures": 61109.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ivette Muhammad",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 54835.49,
+       "expenditures": 50140.29,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/ivette-muhammad"
+      },
+      {
+       "name": "Lynn Hammel",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 652.05,
+       "expenditures": 2.05,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/lynn-hammel"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Ivette Muhammad",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 54835.49,
+       "expenditures": 50140.29,
+       "status": "Advanced",
+       "url": "/ia/candidate/ivette-muhammad"
+      },
+      {
+       "name": "Blake Clyde",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3270.0,
+       "expenditures": 1984.65,
+       "status": "Lost",
+       "url": "/ia/candidate/blake-clyde"
+      },
+      {
+       "name": "Randolph Scott",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/ia/candidate/randolph-scott"
+      },
+      {
+       "name": "Cody Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17185.0,
+       "expenditures": 8982.32,
+       "status": "Lost",
+       "url": "/ia/candidate/cody-smith"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Lynn Hammel",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 652.05,
+       "expenditures": 2.05,
+       "status": "Advanced",
+       "url": "/ia/candidate/lynn-hammel"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "Iowa House of Representatives District 34",
+   "url": "/ia/race/iowa-house-of-representatives-district-34-72398",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 8420.0,
+   "totalExpenditures": 9381.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Rob Johnson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 8419.82,
+       "expenditures": 9381.23,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/rob-johnson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Rob Johnson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 8419.82,
+       "expenditures": 9381.23,
+       "status": "Advanced",
+       "url": "/ia/candidate/rob-johnson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "Iowa House of Representatives District 35",
+   "url": "/ia/race/iowa-house-of-representatives-district-35-72399",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 44300.0,
+   "totalExpenditures": 36870.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Sean Bagniewski",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 44299.59,
+       "expenditures": 36870.29,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/sean-bagniewski"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Sean Bagniewski",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 44299.59,
+       "expenditures": 36870.29,
+       "status": "Advanced",
+       "url": "/ia/candidate/sean-bagniewski"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "Iowa House of Representatives District 36",
+   "url": "/ia/race/iowa-house-of-representatives-district-36-72400",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 24759.0,
+   "totalExpenditures": 19372.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Austin Baeth",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 24758.5,
+       "expenditures": 19371.96,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/austin-baeth"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Austin Baeth",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 24758.5,
+       "expenditures": 19371.96,
+       "status": "Advanced",
+       "url": "/ia/candidate/austin-baeth"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "Iowa House of Representatives District 37",
+   "url": "/ia/race/iowa-house-of-representatives-district-37-72401",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 4892.0,
+   "totalExpenditures": 4669.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jason Sandholdt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/jason-sandholdt"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jason Sandholdt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/jason-sandholdt"
+      },
+      {
+       "name": "Chase Spencer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4891.81,
+       "expenditures": 4669.31,
+       "status": "Lost",
+       "url": "/ia/candidate/chase-spencer"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "Iowa House of Representatives District 38",
+   "url": "/ia/race/iowa-house-of-representatives-district-38-72402",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 36878.0,
+   "totalExpenditures": 15426.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Brad Magg",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 30509.27,
+       "expenditures": 13070.9,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/brad-magg"
+      },
+      {
+       "name": "Matt Oleson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6368.24,
+       "expenditures": 2355.13,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/matt-oleson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Brad Magg",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 30509.27,
+       "expenditures": 13070.9,
+       "status": "Advanced",
+       "url": "/ia/candidate/brad-magg"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Matt Oleson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6368.24,
+       "expenditures": 2355.13,
+       "status": "Advanced",
+       "url": "/ia/candidate/matt-oleson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "Iowa House of Representatives District 39",
+   "url": "/ia/race/iowa-house-of-representatives-district-39-72403",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 64909.0,
+   "totalExpenditures": 4968.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Nate Boulton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 63059.43,
+       "expenditures": 2614.91,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/nate-boulton"
+      },
+      {
+       "name": "Troy Clark",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1849.8,
+       "expenditures": 2352.91,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/troy-clark"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Nate Boulton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 63059.43,
+       "expenditures": 2614.91,
+       "status": "Advanced",
+       "url": "/ia/candidate/nate-boulton"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Troy Clark",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1849.8,
+       "expenditures": 2352.91,
+       "status": "Advanced",
+       "url": "/ia/candidate/troy-clark"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "Iowa House of Representatives District 4",
+   "url": "/ia/race/iowa-house-of-representatives-district-4-72404",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 17657.0,
+   "totalExpenditures": 6663.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Skyler Wheeler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17656.76,
+       "expenditures": 6663.2,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/skyler-wheeler"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Skyler Wheeler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17656.76,
+       "expenditures": 6663.2,
+       "status": "Advanced",
+       "url": "/ia/candidate/skyler-wheeler"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "Iowa House of Representatives District 40",
+   "url": "/ia/race/iowa-house-of-representatives-district-40-72405",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 166016.0,
+   "totalExpenditures": 59796.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Bill Gustoff",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 73426.52,
+       "expenditures": 31221.32,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/bill-gustoff"
+      },
+      {
+       "name": "Heather Sievers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 92589.84,
+       "expenditures": 28574.93,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/heather-sievers"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Heather Sievers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 92589.84,
+       "expenditures": 28574.93,
+       "status": "Advanced",
+       "url": "/ia/candidate/heather-sievers"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Bill Gustoff",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 73426.52,
+       "expenditures": 31221.32,
+       "status": "Advanced",
+       "url": "/ia/candidate/bill-gustoff"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "Iowa House of Representatives District 41",
+   "url": "/ia/race/iowa-house-of-representatives-district-41-72406",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 26770.0,
+   "totalExpenditures": 3914.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ryan Weldon",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/ryan-weldon"
+      },
+      {
+       "name": "Molly Buck",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26769.91,
+       "expenditures": 3913.94,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/molly-buck"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Molly Buck",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26769.91,
+       "expenditures": 3913.94,
+       "status": "Advanced",
+       "url": "/ia/candidate/molly-buck"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Ryan Weldon",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/ryan-weldon"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "Iowa House of Representatives District 42",
+   "url": "/ia/race/iowa-house-of-representatives-district-42-72407",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 19076.0,
+   "totalExpenditures": 5485.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Amy Tagliareni",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9888.7,
+       "expenditures": 3701.44,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/amy-tagliareni"
+      },
+      {
+       "name": "Heather Stephenson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9187.41,
+       "expenditures": 1783.14,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/heather-stephenson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Amy Tagliareni",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9888.7,
+       "expenditures": 3701.44,
+       "status": "Advanced",
+       "url": "/ia/candidate/amy-tagliareni"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Heather Stephenson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9187.41,
+       "expenditures": 1783.14,
+       "status": "Advanced",
+       "url": "/ia/candidate/heather-stephenson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "Iowa House of Representatives District 43",
+   "url": "/ia/race/iowa-house-of-representatives-district-43-72408",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 64048.0,
+   "totalExpenditures": 15020.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jill Alesch",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 49094.81,
+       "expenditures": 9387.5,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/jill-alesch"
+      },
+      {
+       "name": "Nicole Hasso",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12681.58,
+       "expenditures": 4346.92,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/nicole-hasso"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jill Alesch",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 49094.81,
+       "expenditures": 9387.5,
+       "status": "Advanced",
+       "url": "/ia/candidate/jill-alesch"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Nicole Hasso",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12681.58,
+       "expenditures": 4346.92,
+       "status": "Advanced",
+       "url": "/ia/candidate/nicole-hasso"
+      },
+      {
+       "name": "Russell Saffell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2271.52,
+       "expenditures": 1285.77,
+       "status": "Lost",
+       "url": "/ia/candidate/russell-saffell"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "Iowa House of Representatives District 44",
+   "url": "/ia/race/iowa-house-of-representatives-district-44-72409",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 8970.0,
+   "totalExpenditures": 6145.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Lawrence Mcburney",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 8970.0,
+       "expenditures": 6144.79,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/lawrence-mcburney"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Lawrence Mcburney",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 8970.0,
+       "expenditures": 6144.79,
+       "status": "Advanced",
+       "url": "/ia/candidate/lawrence-mcburney"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "Iowa House of Representatives District 45",
+   "url": "/ia/race/iowa-house-of-representatives-district-45-72410",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 94657.0,
+   "totalExpenditures": 88323.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Kendra Haug",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1875.57,
+       "expenditures": 725.14,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/kendra-haug"
+      },
+      {
+       "name": "Austin Stubbs",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20710.0,
+       "expenditures": 10614.7,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/austin-stubbs"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Kendra Haug",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1875.57,
+       "expenditures": 725.14,
+       "status": "Advanced",
+       "url": "/ia/candidate/kendra-haug"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Austin Stubbs",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20710.0,
+       "expenditures": 10614.7,
+       "status": "Advanced",
+       "url": "/ia/candidate/austin-stubbs"
+      },
+      {
+       "name": "Brian Lohse",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 72071.3,
+       "expenditures": 76982.96,
+       "status": "Lost",
+       "url": "/ia/candidate/brian-lohse"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "Iowa House of Representatives District 46",
+   "url": "/ia/race/iowa-house-of-representatives-district-46-72411",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 45236.0,
+   "totalExpenditures": 19850.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Dan Gehlbach",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 18940.66,
+       "expenditures": 6443.66,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/dan-gehlbach"
+      },
+      {
+       "name": "Mandy Newton Rosenow",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 19129.38,
+       "expenditures": 8691.21,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/mandy-newton-rosenow"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Mandy Newton Rosenow",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 19129.38,
+       "expenditures": 8691.21,
+       "status": "Advanced",
+       "url": "/ia/candidate/mandy-newton-rosenow"
+      },
+      {
+       "name": "Anne Craven",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6805.59,
+       "expenditures": 4417.93,
+       "status": "Lost",
+       "url": "/ia/candidate/anne-craven"
+      },
+      {
+       "name": "Erin Helleso",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 360.0,
+       "expenditures": 297.17,
+       "status": "Lost",
+       "url": "/ia/candidate/erin-helleso"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Dan Gehlbach",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 18940.66,
+       "expenditures": 6443.66,
+       "status": "Advanced",
+       "url": "/ia/candidate/dan-gehlbach"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "Iowa House of Representatives District 47",
+   "url": "/ia/race/iowa-house-of-representatives-district-47-72412",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 226596.0,
+   "totalExpenditures": 92281.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Carter Nordman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 220933.14,
+       "expenditures": 88238.58,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/carter-nordman"
+      },
+      {
+       "name": "Chris New",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1565.0,
+       "expenditures": 234.41,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/chris-new"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Chris New",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1565.0,
+       "expenditures": 234.41,
+       "status": "Advanced",
+       "url": "/ia/candidate/chris-new"
+      },
+      {
+       "name": "Charley Newman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 680.0,
+       "expenditures": 389.73,
+       "status": "Lost",
+       "url": "/ia/candidate/charley-newman"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Carter Nordman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 220933.14,
+       "expenditures": 88238.58,
+       "status": "Advanced",
+       "url": "/ia/candidate/carter-nordman"
+      },
+      {
+       "name": "Jeremy King",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3418.17,
+       "expenditures": 3418.17,
+       "status": "Lost",
+       "url": "/ia/candidate/jeremy-king"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "Iowa House of Representatives District 48",
+   "url": "/ia/race/iowa-house-of-representatives-district-48-72413",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 27880.0,
+   "totalExpenditures": 5999.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Chad Behn",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 23642.5,
+       "expenditures": 3705.44,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/chad-behn"
+      },
+      {
+       "name": "Benjamin Olsen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3230.22,
+       "expenditures": 1486.7,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/benjamin-olsen"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Benjamin Olsen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3230.22,
+       "expenditures": 1486.7,
+       "status": "Advanced",
+       "url": "/ia/candidate/benjamin-olsen"
+      },
+      {
+       "name": "Guy Morgan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 806.97,
+       "expenditures": 806.97,
+       "status": "Lost",
+       "url": "/ia/candidate/guy-morgan"
+      },
+      {
+       "name": "Daniel Wojcik",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 200.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/ia/candidate/daniel-wojcik"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Chad Behn",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 23642.5,
+       "expenditures": 3705.44,
+       "status": "Advanced",
+       "url": "/ia/candidate/chad-behn"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "Iowa House of Representatives District 49",
+   "url": "/ia/race/iowa-house-of-representatives-district-49-72414",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 11070.0,
+   "totalExpenditures": 2832.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Beth Wessel-Kroeschell",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 11070.0,
+       "expenditures": 2831.84,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/beth-wessel-kroeschell"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Beth Wessel-Kroeschell",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 11070.0,
+       "expenditures": 2831.84,
+       "status": "Advanced",
+       "url": "/ia/candidate/beth-wessel-kroeschell"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "Iowa House of Representatives District 5",
+   "url": "/ia/race/iowa-house-of-representatives-district-5-72415",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 7900.0,
+   "totalExpenditures": 7025.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Keith Glienke",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7900.0,
+       "expenditures": 7025.37,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/keith-glienke"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Keith Glienke",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7900.0,
+       "expenditures": 7025.37,
+       "status": "Advanced",
+       "url": "/ia/candidate/keith-glienke"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "Iowa House of Representatives District 50",
+   "url": "/ia/race/iowa-house-of-representatives-district-50-72416",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 8943.0,
+   "totalExpenditures": 7274.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ross Wilburn",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 8943.0,
+       "expenditures": 7274.12,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/ross-wilburn"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Ross Wilburn",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 8943.0,
+       "expenditures": 7274.12,
+       "status": "Advanced",
+       "url": "/ia/candidate/ross-wilburn"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "Iowa House of Representatives District 51",
+   "url": "/ia/race/iowa-house-of-representatives-district-51-72417",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 79735.0,
+   "totalExpenditures": 34393.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Brett Barker",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 68543.62,
+       "expenditures": 26662.78,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/brett-barker"
+      },
+      {
+       "name": "Teresa Perin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5516.14,
+       "expenditures": 4188.86,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/teresa-perin"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Teresa Perin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5516.14,
+       "expenditures": 4188.86,
+       "status": "Advanced",
+       "url": "/ia/candidate/teresa-perin"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Brett Barker",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 68543.62,
+       "expenditures": 26662.78,
+       "status": "Advanced",
+       "url": "/ia/candidate/brett-barker"
+      },
+      {
+       "name": "Shane Heintz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5675.0,
+       "expenditures": 3541.22,
+       "status": "Lost",
+       "url": "/ia/candidate/shane-heintz"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "Iowa House of Representatives District 52",
+   "url": "/ia/race/iowa-house-of-representatives-district-52-72418",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 45840.0,
+   "totalExpenditures": 11278.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "David Blom",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 27525.57,
+       "expenditures": 5354.35,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/david-blom"
+      },
+      {
+       "name": "Michael Tupper",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18314.44,
+       "expenditures": 5923.5,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/michael-tupper"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Michael Tupper",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18314.44,
+       "expenditures": 5923.5,
+       "status": "Advanced",
+       "url": "/ia/candidate/michael-tupper"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "David Blom",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 27525.57,
+       "expenditures": 5354.35,
+       "status": "Advanced",
+       "url": "/ia/candidate/david-blom"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "Iowa House of Representatives District 53",
+   "url": "/ia/race/iowa-house-of-representatives-district-53-72419",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 13419.0,
+   "totalExpenditures": 2318.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Dean Fisher",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 13419.28,
+       "expenditures": 2318.31,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/dean-fisher"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Berleen Wobeter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/ia/candidate/berleen-wobeter"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Dean Fisher",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 13419.28,
+       "expenditures": 2318.31,
+       "status": "Advanced",
+       "url": "/ia/candidate/dean-fisher"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "Iowa House of Representatives District 54",
+   "url": "/ia/race/iowa-house-of-representatives-district-54-72420",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 56355.0,
+   "totalExpenditures": 14114.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Joshua Meggers",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22550.0,
+       "expenditures": 5575.47,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/joshua-meggers"
+      },
+      {
+       "name": "Leila Staton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33805.28,
+       "expenditures": 8538.96,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/leila-staton"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Leila Staton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33805.28,
+       "expenditures": 8538.96,
+       "status": "Advanced",
+       "url": "/ia/candidate/leila-staton"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Joshua Meggers",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22550.0,
+       "expenditures": 5575.47,
+       "status": "Advanced",
+       "url": "/ia/candidate/joshua-meggers"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "Iowa House of Representatives District 55",
+   "url": "/ia/race/iowa-house-of-representatives-district-55-72421",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 35226.0,
+   "totalExpenditures": 25909.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Cynthia Oppedal Paschen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5314.0,
+       "expenditures": 455.02,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/cynthia-oppedal-paschen"
+      },
+      {
+       "name": "Beau Klaver",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26741.95,
+       "expenditures": 22728.94,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/beau-klaver"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Cynthia Oppedal Paschen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5314.0,
+       "expenditures": 455.02,
+       "status": "Advanced",
+       "url": "/ia/candidate/cynthia-oppedal-paschen"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Beau Klaver",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26741.95,
+       "expenditures": 22728.94,
+       "status": "Advanced",
+       "url": "/ia/candidate/beau-klaver"
+      },
+      {
+       "name": "Kurtis Bower",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3170.0,
+       "expenditures": 2724.65,
+       "status": "Lost",
+       "url": "/ia/candidate/kurtis-bower"
+      },
+      {
+       "name": "Brian Young",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/ia/candidate/brian-young"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "Iowa House of Representatives District 56",
+   "url": "/ia/race/iowa-house-of-representatives-district-56-72422",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 9360.0,
+   "totalExpenditures": 5100.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Mark Thompson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7035.0,
+       "expenditures": 4454.81,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/mark-thompson"
+      },
+      {
+       "name": "Kyle Kruse",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2325.0,
+       "expenditures": 644.94,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/kyle-kruse"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Kyle Kruse",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2325.0,
+       "expenditures": 644.94,
+       "status": "Advanced",
+       "url": "/ia/candidate/kyle-kruse"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Mark Thompson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7035.0,
+       "expenditures": 4454.81,
+       "status": "Advanced",
+       "url": "/ia/candidate/mark-thompson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "Iowa House of Representatives District 57",
+   "url": "/ia/race/iowa-house-of-representatives-district-57-72423",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 745967.0,
+   "totalExpenditures": 31965.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Pat Grassley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 725682.22,
+       "expenditures": 21603.42,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/pat-grassley"
+      },
+      {
+       "name": "Shawn Ellerbroek",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 20284.38,
+       "expenditures": 10361.64,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/shawn-ellerbroek"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Shawn Ellerbroek",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 20284.38,
+       "expenditures": 10361.64,
+       "status": "Advanced",
+       "url": "/ia/candidate/shawn-ellerbroek"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Pat Grassley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 725682.22,
+       "expenditures": 21603.42,
+       "status": "Advanced",
+       "url": "/ia/candidate/pat-grassley"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "Iowa House of Representatives District 58",
+   "url": "/ia/race/iowa-house-of-representatives-district-58-72424",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 35599.0,
+   "totalExpenditures": 15150.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Charley Thomson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11608.03,
+       "expenditures": 1100.0,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/charley-thomson"
+      },
+      {
+       "name": "India May",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 23990.84,
+       "expenditures": 14049.68,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/india-may"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "India May",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 23990.84,
+       "expenditures": 14049.68,
+       "status": "Advanced",
+       "url": "/ia/candidate/india-may"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Charley Thomson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11608.03,
+       "expenditures": 1100.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/charley-thomson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "Iowa House of Representatives District 59",
+   "url": "/ia/race/iowa-house-of-representatives-district-59-72425",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 57197.0,
+   "totalExpenditures": 42177.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Christian Hermanson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 45574.79,
+       "expenditures": 34457.22,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/christian-hermanson"
+      },
+      {
+       "name": "Jacob Welper",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5008.8,
+       "expenditures": 1433.13,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/jacob-welper"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jacob Welper",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5008.8,
+       "expenditures": 1433.13,
+       "status": "Advanced",
+       "url": "/ia/candidate/jacob-welper"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Christian Hermanson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 45574.79,
+       "expenditures": 34457.22,
+       "status": "Advanced",
+       "url": "/ia/candidate/christian-hermanson"
+      },
+      {
+       "name": "Rugby Sliger",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6613.1,
+       "expenditures": 6286.41,
+       "status": "Lost",
+       "url": "/ia/candidate/rugby-sliger"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "Iowa House of Representatives District 6",
+   "url": "/ia/race/iowa-house-of-representatives-district-6-72426",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 60648.0,
+   "totalExpenditures": 69970.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Megan Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 60648.0,
+       "expenditures": 69969.86,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/megan-jones"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Megan Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 60648.0,
+       "expenditures": 69969.86,
+       "status": "Advanced",
+       "url": "/ia/candidate/megan-jones"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "Iowa House of Representatives District 60",
+   "url": "/ia/race/iowa-house-of-representatives-district-60-72427",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 107321.0,
+   "totalExpenditures": 30212.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Alexander Schmidt",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2385.11,
+       "expenditures": 809.0,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/alexander-schmidt"
+      },
+      {
+       "name": "Dani Ollenburg",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4277.72,
+       "expenditures": 13.78,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/dani-ollenburg"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Alexander Schmidt",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2385.11,
+       "expenditures": 809.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/alexander-schmidt"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Dani Ollenburg",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4277.72,
+       "expenditures": 13.78,
+       "status": "Advanced",
+       "url": "/ia/candidate/dani-ollenburg"
+      },
+      {
+       "name": "Jane Bloomingdale",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 100658.03,
+       "expenditures": 29388.98,
+       "status": "Lost",
+       "url": "/ia/candidate/jane-bloomingdale"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "Iowa House of Representatives District 61",
+   "url": "/ia/race/iowa-house-of-representatives-district-61-72428",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 9896.0,
+   "totalExpenditures": 8482.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Vincent Collis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9300.0,
+       "expenditures": 2027.65,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/vincent-collis"
+      },
+      {
+       "name": "Lucas Hewitt",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 595.86,
+       "expenditures": 6454.17,
+       "status": "Candidacy Declared",
+       "url": "/ia/candidate/lucas-hewitt"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Vincent Collis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9300.0,
+       "expenditures": 2027.65,
+       "status": "Advanced",
+       "url": "/ia/candidate/vincent-collis"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "Iowa House of Representatives District 62",
+   "url": "/ia/race/iowa-house-of-representatives-district-62-72429",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 340.0,
+   "totalExpenditures": 2441.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jerome Amos Jr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 340.0,
+       "expenditures": 2440.88,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/jerome-amos-jr"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jerome Amos Jr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 340.0,
+       "expenditures": 2440.88,
+       "status": "Advanced",
+       "url": "/ia/candidate/jerome-amos-jr"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "Iowa House of Representatives District 63",
+   "url": "/ia/race/iowa-house-of-representatives-district-63-72430",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 45032.0,
+   "totalExpenditures": 8980.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Michael Bergan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 29855.24,
+       "expenditures": 5845.87,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/michael-bergan"
+      },
+      {
+       "name": "Jeff Thurlow",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12345.0,
+       "expenditures": 2805.12,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/jeff-thurlow"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jeff Thurlow",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12345.0,
+       "expenditures": 2805.12,
+       "status": "Advanced",
+       "url": "/ia/candidate/jeff-thurlow"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Michael Bergan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 29855.24,
+       "expenditures": 5845.87,
+       "status": "Advanced",
+       "url": "/ia/candidate/michael-bergan"
+      },
+      {
+       "name": "Matthew Smith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2831.73,
+       "expenditures": 328.61,
+       "status": "Lost",
+       "url": "/ia/candidate/matthew-smith"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "63"
+  },
+  {
+   "office": "Iowa House of Representatives District 64",
+   "url": "/ia/race/iowa-house-of-representatives-district-64-72431",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 11552.0,
+   "totalExpenditures": 3402.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jason Gearhart",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11135.53,
+       "expenditures": 3033.58,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/jason-gearhart"
+      },
+      {
+       "name": "Brian Bruening",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 416.0,
+       "expenditures": 367.98,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/brian-bruening"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Brian Bruening",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 416.0,
+       "expenditures": 367.98,
+       "status": "Advanced",
+       "url": "/ia/candidate/brian-bruening"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jason Gearhart",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11135.53,
+       "expenditures": 3033.58,
+       "status": "Advanced",
+       "url": "/ia/candidate/jason-gearhart"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "64"
+  },
+  {
+   "office": "Iowa House of Representatives District 65",
+   "url": "/ia/race/iowa-house-of-representatives-district-65-72432",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 72234.0,
+   "totalExpenditures": 26078.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Shannon Lundgren",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 62882.58,
+       "expenditures": 22812.02,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/shannon-lundgren"
+      },
+      {
+       "name": "Carolyn Wiezorek",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9351.03,
+       "expenditures": 3266.28,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/carolyn-wiezorek"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Carolyn Wiezorek",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9351.03,
+       "expenditures": 3266.28,
+       "status": "Advanced",
+       "url": "/ia/candidate/carolyn-wiezorek"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Shannon Lundgren",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 62882.58,
+       "expenditures": 22812.02,
+       "status": "Advanced",
+       "url": "/ia/candidate/shannon-lundgren"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "65"
+  },
+  {
+   "office": "Iowa House of Representatives District 66",
+   "url": "/ia/race/iowa-house-of-representatives-district-66-72433",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 17359.0,
+   "totalExpenditures": 13685.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Steven Bradley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 12373.08,
+       "expenditures": 10877.0,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/steven-bradley"
+      },
+      {
+       "name": "Matt English",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4986.19,
+       "expenditures": 2807.57,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/matt-english"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Matt English",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4986.19,
+       "expenditures": 2807.57,
+       "status": "Advanced",
+       "url": "/ia/candidate/matt-english"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Steven Bradley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 12373.08,
+       "expenditures": 10877.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/steven-bradley"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "66"
+  },
+  {
+   "office": "Iowa House of Representatives District 67",
+   "url": "/ia/race/iowa-house-of-representatives-district-67-72434",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 24532.0,
+   "totalExpenditures": 10894.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Craig Johnson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 23122.0,
+       "expenditures": 10052.66,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/craig-johnson"
+      },
+      {
+       "name": "Michael Coonrad",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1410.1,
+       "expenditures": 841.38,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/michael-coonrad"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Michael Coonrad",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1410.1,
+       "expenditures": 841.38,
+       "status": "Advanced",
+       "url": "/ia/candidate/michael-coonrad"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Craig Johnson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 23122.0,
+       "expenditures": 10052.66,
+       "status": "Advanced",
+       "url": "/ia/candidate/craig-johnson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "67"
+  },
+  {
+   "office": "Iowa House of Representatives District 68",
+   "url": "/ia/race/iowa-house-of-representatives-district-68-72435",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 42422.0,
+   "totalExpenditures": 20186.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Chad Ingels",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 41544.28,
+       "expenditures": 19786.59,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/chad-ingels"
+      },
+      {
+       "name": "Scott Bodley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 603.0,
+       "expenditures": 234.65,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/scott-bodley"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Scott Bodley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 603.0,
+       "expenditures": 234.65,
+       "status": "Advanced",
+       "url": "/ia/candidate/scott-bodley"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Chad Ingels",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 41544.28,
+       "expenditures": 19786.59,
+       "status": "Advanced",
+       "url": "/ia/candidate/chad-ingels"
+      },
+      {
+       "name": "Adam Thimmesch",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 275.0,
+       "expenditures": 164.45,
+       "status": "Lost",
+       "url": "/ia/candidate/adam-thimmesch"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "68"
+  },
+  {
+   "office": "Iowa House of Representatives District 69",
+   "url": "/ia/race/iowa-house-of-representatives-district-69-72436",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 44125.0,
+   "totalExpenditures": 3747.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Tom Determann",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 12385.0,
+       "expenditures": 108.8,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/tom-determann"
+      },
+      {
+       "name": "Randy Meier",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 31739.92,
+       "expenditures": 3638.04,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/randy-meier"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Randy Meier",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 31739.92,
+       "expenditures": 3638.04,
+       "status": "Advanced",
+       "url": "/ia/candidate/randy-meier"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Tom Determann",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 12385.0,
+       "expenditures": 108.8,
+       "status": "Advanced",
+       "url": "/ia/candidate/tom-determann"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "69"
+  },
+  {
+   "office": "Iowa House of Representatives District 7",
+   "url": "/ia/race/iowa-house-of-representatives-district-7-72437",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 101888.0,
+   "totalExpenditures": 28795.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Wendy Larson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 60149.78,
+       "expenditures": 5624.01,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/wendy-larson"
+      },
+      {
+       "name": "Rachel Burns",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 41738.39,
+       "expenditures": 23170.61,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/rachel-burns"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Rachel Burns",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 41738.39,
+       "expenditures": 23170.61,
+       "status": "Advanced",
+       "url": "/ia/candidate/rachel-burns"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Wendy Larson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 60149.78,
+       "expenditures": 5624.01,
+       "status": "Advanced",
+       "url": "/ia/candidate/wendy-larson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "Iowa House of Representatives District 70",
+   "url": "/ia/race/iowa-house-of-representatives-district-70-72438",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 34369.0,
+   "totalExpenditures": 7555.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Norlin Mommsen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 16575.98,
+       "expenditures": 2932.75,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/norlin-mommsen"
+      },
+      {
+       "name": "George Pickup",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17792.59,
+       "expenditures": 4622.04,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/george-pickup"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "George Pickup",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17792.59,
+       "expenditures": 4622.04,
+       "status": "Advanced",
+       "url": "/ia/candidate/george-pickup"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Norlin Mommsen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 16575.98,
+       "expenditures": 2932.75,
+       "status": "Advanced",
+       "url": "/ia/candidate/norlin-mommsen"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "70"
+  },
+  {
+   "office": "Iowa House of Representatives District 71",
+   "url": "/ia/race/iowa-house-of-representatives-district-71-72439",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 12395.0,
+   "totalExpenditures": 1704.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Sam Wooden",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12395.0,
+       "expenditures": 1704.13,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/sam-wooden"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Sam Wooden",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12395.0,
+       "expenditures": 1704.13,
+       "status": "Advanced",
+       "url": "/ia/candidate/sam-wooden"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "71"
+  },
+  {
+   "office": "Iowa House of Representatives District 72",
+   "url": "/ia/race/iowa-house-of-representatives-district-72-72440",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 75324.0,
+   "totalExpenditures": 36135.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jennifer Smith",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 26663.38,
+       "expenditures": 10381.74,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/jennifer-smith"
+      },
+      {
+       "name": "Matt Robinson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 37306.45,
+       "expenditures": 21418.45,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/matt-robinson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Matt Robinson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 37306.45,
+       "expenditures": 21418.45,
+       "status": "Advanced",
+       "url": "/ia/candidate/matt-robinson"
+      },
+      {
+       "name": "Eli Licht",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11354.58,
+       "expenditures": 4335.06,
+       "status": "Lost",
+       "url": "/ia/candidate/eli-licht"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jennifer Smith",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 26663.38,
+       "expenditures": 10381.74,
+       "status": "Advanced",
+       "url": "/ia/candidate/jennifer-smith"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "72"
+  },
+  {
+   "office": "Iowa House of Representatives District 73",
+   "url": "/ia/race/iowa-house-of-representatives-district-73-72441",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 14689.0,
+   "totalExpenditures": 7503.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Elizabeth Wilson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 14688.8,
+       "expenditures": 7503.37,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/elizabeth-wilson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Elizabeth Wilson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 14688.8,
+       "expenditures": 7503.37,
+       "status": "Advanced",
+       "url": "/ia/candidate/elizabeth-wilson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "73"
+  },
+  {
+   "office": "Iowa House of Representatives District 74",
+   "url": "/ia/race/iowa-house-of-representatives-district-74-72442",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 3742.0,
+   "totalExpenditures": 2365.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Eric Gjerde",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3741.81,
+       "expenditures": 2364.67,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/eric-gjerde"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Eric Gjerde",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3741.81,
+       "expenditures": 2364.67,
+       "status": "Advanced",
+       "url": "/ia/candidate/eric-gjerde"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "74"
+  },
+  {
+   "office": "Iowa House of Representatives District 75",
+   "url": "/ia/race/iowa-house-of-representatives-district-75-72443",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 48729.0,
+   "totalExpenditures": 5672.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Drew Stensland",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48729.48,
+       "expenditures": 5671.81,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/drew-stensland"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Drew Stensland",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48729.48,
+       "expenditures": 5671.81,
+       "status": "Advanced",
+       "url": "/ia/candidate/drew-stensland"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "75"
+  },
+  {
+   "office": "Iowa House of Representatives District 76",
+   "url": "/ia/race/iowa-house-of-representatives-district-76-72444",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 51761.0,
+   "totalExpenditures": 12883.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Derek Wulf",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 45459.51,
+       "expenditures": 11169.59,
+       "status": "Withdrew",
+       "url": "/ia/candidate/derek-wulf"
+      },
+      {
+       "name": "Calvin Horn",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6301.0,
+       "expenditures": 1713.19,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/calvin-horn"
+      },
+      {
+       "name": "Matt Reisetter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/matt-reisetter"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Calvin Horn",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6301.0,
+       "expenditures": 1713.19,
+       "status": "Advanced",
+       "url": "/ia/candidate/calvin-horn"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Derek Wulf",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 45459.51,
+       "expenditures": 11169.59,
+       "status": "Advanced",
+       "url": "/ia/candidate/derek-wulf"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "76"
+  },
+  {
+   "office": "Iowa House of Representatives District 77",
+   "url": "/ia/race/iowa-house-of-representatives-district-77-72445",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 10850.0,
+   "totalExpenditures": 3540.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jeffrey Cooling",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 10850.0,
+       "expenditures": 3540.25,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/jeffrey-cooling"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jeffrey Cooling",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 10850.0,
+       "expenditures": 3540.25,
+       "status": "Advanced",
+       "url": "/ia/candidate/jeffrey-cooling"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "77"
+  },
+  {
+   "office": "Iowa House of Representatives District 78",
+   "url": "/ia/race/iowa-house-of-representatives-district-78-72446",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 26962.0,
+   "totalExpenditures": 5846.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Angel Ramirez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 26962.21,
+       "expenditures": 5846.05,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/angel-ramirez"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Angel Ramirez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 26962.21,
+       "expenditures": 5846.05,
+       "status": "Advanced",
+       "url": "/ia/candidate/angel-ramirez"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "78"
+  },
+  {
+   "office": "Iowa House of Representatives District 79",
+   "url": "/ia/race/iowa-house-of-representatives-district-79-72447",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 6815.0,
+   "totalExpenditures": 6213.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Tracy Ehlert",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 5970.0,
+       "expenditures": 5548.75,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/tracy-ehlert"
+      },
+      {
+       "name": "Barclay Woerner",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 844.99,
+       "expenditures": 664.63,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/barclay-woerner"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Tracy Ehlert",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 5970.0,
+       "expenditures": 5548.75,
+       "status": "Advanced",
+       "url": "/ia/candidate/tracy-ehlert"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Barclay Woerner",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 844.99,
+       "expenditures": 664.63,
+       "status": "Advanced",
+       "url": "/ia/candidate/barclay-woerner"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "79"
+  },
+  {
+   "office": "Iowa House of Representatives District 8",
+   "url": "/ia/race/iowa-house-of-representatives-district-8-72448",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 79499.0,
+   "totalExpenditures": 4677.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ann Meyer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 74575.13,
+       "expenditures": 2204.35,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/ann-meyer"
+      },
+      {
+       "name": "Kristofer Williams",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4924.29,
+       "expenditures": 2473.13,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/kristofer-williams"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Kristofer Williams",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4924.29,
+       "expenditures": 2473.13,
+       "status": "Advanced",
+       "url": "/ia/candidate/kristofer-williams"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Ann Meyer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 74575.13,
+       "expenditures": 2204.35,
+       "status": "Advanced",
+       "url": "/ia/candidate/ann-meyer"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "Iowa House of Representatives District 80",
+   "url": "/ia/race/iowa-house-of-representatives-district-80-72449",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 26403.0,
+   "totalExpenditures": 6977.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Aime Wichtendahl",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 25748.92,
+       "expenditures": 6130.15,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/aime-wichtendahl"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Aime Wichtendahl",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 25748.92,
+       "expenditures": 6130.15,
+       "status": "Advanced",
+       "url": "/ia/candidate/aime-wichtendahl"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "John Thompson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 653.86,
+       "expenditures": 846.8,
+       "status": "Withdrew",
+       "url": "/ia/candidate/john-thompson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "80"
+  },
+  {
+   "office": "Iowa House of Representatives District 81",
+   "url": "/ia/race/iowa-house-of-representatives-district-81-72450",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 64677.0,
+   "totalExpenditures": 45009.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Daniel Gosa",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 53435.36,
+       "expenditures": 44354.83,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/daniel-gosa"
+      },
+      {
+       "name": "Dillon Fillion",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11241.78,
+       "expenditures": 654.51,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/dillon-fillion"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Daniel Gosa",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 53435.36,
+       "expenditures": 44354.83,
+       "status": "Advanced",
+       "url": "/ia/candidate/daniel-gosa"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Dillon Fillion",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11241.78,
+       "expenditures": 654.51,
+       "status": "Advanced",
+       "url": "/ia/candidate/dillon-fillion"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "81"
+  },
+  {
+   "office": "Iowa House of Representatives District 82",
+   "url": "/ia/race/iowa-house-of-representatives-district-82-72451",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 258881.0,
+   "totalExpenditures": 34611.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Bobby Kaufmann",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 258745.96,
+       "expenditures": 34604.9,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/bobby-kaufmann"
+      },
+      {
+       "name": "James Behrmann",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 135.0,
+       "expenditures": 6.58,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/james-behrmann"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "James Behrmann",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 135.0,
+       "expenditures": 6.58,
+       "status": "Advanced",
+       "url": "/ia/candidate/james-behrmann"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Bobby Kaufmann",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 258745.96,
+       "expenditures": 34604.9,
+       "status": "Advanced",
+       "url": "/ia/candidate/bobby-kaufmann"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "82"
+  },
+  {
+   "office": "Iowa House of Representatives District 83",
+   "url": "/ia/race/iowa-house-of-representatives-district-83-72452",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 39221.0,
+   "totalExpenditures": 17526.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Cindy Golding",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 39221.0,
+       "expenditures": 17526.47,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/cindy-golding"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Cindy Golding",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 39221.0,
+       "expenditures": 17526.47,
+       "status": "Advanced",
+       "url": "/ia/candidate/cindy-golding"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "83"
+  },
+  {
+   "office": "Iowa House of Representatives District 84",
+   "url": "/ia/race/iowa-house-of-representatives-district-84-72453",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 12250.0,
+   "totalExpenditures": 4163.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Tom Gerhold",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 9280.0,
+       "expenditures": 2871.89,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/tom-gerhold"
+      },
+      {
+       "name": "Polly Denison",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2969.61,
+       "expenditures": 1291.01,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/polly-denison"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Polly Denison",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2969.61,
+       "expenditures": 1291.01,
+       "status": "Advanced",
+       "url": "/ia/candidate/polly-denison"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Tom Gerhold",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 9280.0,
+       "expenditures": 2871.89,
+       "status": "Advanced",
+       "url": "/ia/candidate/tom-gerhold"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "84"
+  },
+  {
+   "office": "Iowa House of Representatives District 85",
+   "url": "/ia/race/iowa-house-of-representatives-district-85-72454",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 10942.0,
+   "totalExpenditures": 4602.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Amy Nielsen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 10942.0,
+       "expenditures": 4602.1,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/amy-nielsen"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Amy Nielsen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 10942.0,
+       "expenditures": 4602.1,
+       "status": "Advanced",
+       "url": "/ia/candidate/amy-nielsen"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "85"
+  },
+  {
+   "office": "Iowa House of Representatives District 86",
+   "url": "/ia/race/iowa-house-of-representatives-district-86-72455",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 25149.0,
+   "totalExpenditures": 26728.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "David Jacoby",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 25148.93,
+       "expenditures": 26728.46,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/david-jacoby"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "David Jacoby",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 25148.93,
+       "expenditures": 26728.46,
+       "status": "Advanced",
+       "url": "/ia/candidate/david-jacoby"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "86"
+  },
+  {
+   "office": "Iowa House of Representatives District 87",
+   "url": "/ia/race/iowa-house-of-representatives-district-87-72456",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 70133.0,
+   "totalExpenditures": 35450.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jeffrey Shipley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22420.0,
+       "expenditures": 27703.33,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/jeffrey-shipley"
+      },
+      {
+       "name": "Thomas O'Donnell",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47713.0,
+       "expenditures": 7746.21,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/thomas-odonnell"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Thomas O'Donnell",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47713.0,
+       "expenditures": 7746.21,
+       "status": "Advanced",
+       "url": "/ia/candidate/thomas-odonnell"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jeffrey Shipley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22420.0,
+       "expenditures": 27703.33,
+       "status": "Advanced",
+       "url": "/ia/candidate/jeffrey-shipley"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "87"
+  },
+  {
+   "office": "Iowa House of Representatives District 88",
+   "url": "/ia/race/iowa-house-of-representatives-district-88-72457",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 34301.0,
+   "totalExpenditures": 15765.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Helena Hayes",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20832.67,
+       "expenditures": 12286.6,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/helena-hayes"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Helena Hayes",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20832.67,
+       "expenditures": 12286.6,
+       "status": "Advanced",
+       "url": "/ia/candidate/helena-hayes"
+      },
+      {
+       "name": "Grant Hill",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 127.44,
+       "status": "Lost",
+       "url": "/ia/candidate/grant-hill"
+      },
+      {
+       "name": "Aaron Hinnah",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13468.1,
+       "expenditures": 3351.26,
+       "status": "Lost",
+       "url": "/ia/candidate/aaron-hinnah"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "88"
+  },
+  {
+   "office": "Iowa House of Representatives District 89",
+   "url": "/ia/race/iowa-house-of-representatives-district-89-72458",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 26800.0,
+   "totalExpenditures": 18955.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Elinor Levin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 26800.0,
+       "expenditures": 18954.76,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/elinor-levin"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Elinor Levin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 26800.0,
+       "expenditures": 18954.76,
+       "status": "Advanced",
+       "url": "/ia/candidate/elinor-levin"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "89"
+  },
+  {
+   "office": "Iowa House of Representatives District 9",
+   "url": "/ia/race/iowa-house-of-representatives-district-9-72459",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 42467.0,
+   "totalExpenditures": 14186.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Henry Stone",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 42466.62,
+       "expenditures": 14186.23,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/henry-stone"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Henry Stone",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 42466.62,
+       "expenditures": 14186.23,
+       "status": "Advanced",
+       "url": "/ia/candidate/henry-stone"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "Iowa House of Representatives District 90",
+   "url": "/ia/race/iowa-house-of-representatives-district-90-72460",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 68083.0,
+   "totalExpenditures": 7808.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Adam Zabner",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 68083.0,
+       "expenditures": 7808.11,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/adam-zabner"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Adam Zabner",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 68083.0,
+       "expenditures": 7808.11,
+       "status": "Advanced",
+       "url": "/ia/candidate/adam-zabner"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "90"
+  },
+  {
+   "office": "Iowa House of Representatives District 91",
+   "url": "/ia/race/iowa-house-of-representatives-district-91-72461",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 31807.0,
+   "totalExpenditures": 15383.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Judd Lawler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 31806.6,
+       "expenditures": 15382.69,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/judd-lawler"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Judd Lawler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 31806.6,
+       "expenditures": 15382.69,
+       "status": "Advanced",
+       "url": "/ia/candidate/judd-lawler"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "91"
+  },
+  {
+   "office": "Iowa House of Representatives District 92",
+   "url": "/ia/race/iowa-house-of-representatives-district-92-72462",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 27785.0,
+   "totalExpenditures": 5224.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Heather Hora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 26986.36,
+       "expenditures": 4749.72,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/heather-hora"
+      },
+      {
+       "name": "Brittany Erickson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 798.53,
+       "expenditures": 474.26,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/brittany-erickson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Brittany Erickson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 798.53,
+       "expenditures": 474.26,
+       "status": "Advanced",
+       "url": "/ia/candidate/brittany-erickson"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Heather Hora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 26986.36,
+       "expenditures": 4749.72,
+       "status": "Advanced",
+       "url": "/ia/candidate/heather-hora"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "92"
+  },
+  {
+   "office": "Iowa House of Representatives District 93",
+   "url": "/ia/race/iowa-house-of-representatives-district-93-72463",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 135753.0,
+   "totalExpenditures": 20789.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Gary Mohr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 135004.48,
+       "expenditures": 20563.17,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/gary-mohr"
+      },
+      {
+       "name": "Keith Soko",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 748.86,
+       "expenditures": 225.93,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/keith-soko"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Keith Soko",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 748.86,
+       "expenditures": 225.93,
+       "status": "Advanced",
+       "url": "/ia/candidate/keith-soko"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Gary Mohr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 135004.48,
+       "expenditures": 20563.17,
+       "status": "Advanced",
+       "url": "/ia/candidate/gary-mohr"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "93"
+  },
+  {
+   "office": "Iowa House of Representatives District 94",
+   "url": "/ia/race/iowa-house-of-representatives-district-94-72464",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 51486.0,
+   "totalExpenditures": 25507.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Mike Vondran",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 51486.4,
+       "expenditures": 25506.67,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/mike-vondran"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Mike Vondran",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 51486.4,
+       "expenditures": 25506.67,
+       "status": "Advanced",
+       "url": "/ia/candidate/mike-vondran"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "94"
+  },
+  {
+   "office": "Iowa House of Representatives District 95",
+   "url": "/ia/race/iowa-house-of-representatives-district-95-72465",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 117976.0,
+   "totalExpenditures": 121002.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Taylor Collins",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 117976.39,
+       "expenditures": 121002.34,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/taylor-collins"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Taylor Collins",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 117976.39,
+       "expenditures": 121002.34,
+       "status": "Advanced",
+       "url": "/ia/candidate/taylor-collins"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "95"
+  },
+  {
+   "office": "Iowa House of Representatives District 96",
+   "url": "/ia/race/iowa-house-of-representatives-district-96-72466",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 23460.0,
+   "totalExpenditures": 25555.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Mark Cisneros",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11325.0,
+       "expenditures": 17850.89,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/mark-cisneros"
+      },
+      {
+       "name": "Nick Salazar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3810.0,
+       "expenditures": 1653.74,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/nick-salazar"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Nick Salazar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3810.0,
+       "expenditures": 1653.74,
+       "status": "Advanced",
+       "url": "/ia/candidate/nick-salazar"
+      },
+      {
+       "name": "Michelle Servadio Elias",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/ia/candidate/michelle-servadio-elias"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Mark Cisneros",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11325.0,
+       "expenditures": 17850.89,
+       "status": "Advanced",
+       "url": "/ia/candidate/mark-cisneros"
+      },
+      {
+       "name": "Matt Conard",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8325.1,
+       "expenditures": 6050.73,
+       "status": "Lost",
+       "url": "/ia/candidate/matt-conard"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "96"
+  },
+  {
+   "office": "Iowa House of Representatives District 97",
+   "url": "/ia/race/iowa-house-of-representatives-district-97-72467",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 63169.0,
+   "totalExpenditures": 40726.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Adam Peters",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 41545.34,
+       "expenditures": 18210.63,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/adam-peters"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Adam Peters",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 41545.34,
+       "expenditures": 18210.63,
+       "status": "Advanced",
+       "url": "/ia/candidate/adam-peters"
+      },
+      {
+       "name": "Kenneth Croken",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 21624.0,
+       "expenditures": 22515.32,
+       "status": "Lost",
+       "url": "/ia/candidate/kenneth-croken"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "97"
+  },
+  {
+   "office": "Iowa House of Representatives District 98",
+   "url": "/ia/race/iowa-house-of-representatives-district-98-72468",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 8879.0,
+   "totalExpenditures": 4689.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Andrew Fitzgerald",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5086.71,
+       "expenditures": 1817.98,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/andrew-fitzgerald"
+      },
+      {
+       "name": "Nathan Ramker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3792.5,
+       "expenditures": 2871.39,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/nathan-ramker"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Andrew Fitzgerald",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5086.71,
+       "expenditures": 1817.98,
+       "status": "Advanced",
+       "url": "/ia/candidate/andrew-fitzgerald"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Nathan Ramker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3792.5,
+       "expenditures": 2871.39,
+       "status": "Advanced",
+       "url": "/ia/candidate/nathan-ramker"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "98"
+  },
+  {
+   "office": "Iowa House of Representatives District 99",
+   "url": "/ia/race/iowa-house-of-representatives-district-99-72469",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 44400.0,
+   "totalExpenditures": 28819.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Matthew Rinker",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 14595.67,
+       "expenditures": 17975.57,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/matthew-rinker"
+      },
+      {
+       "name": "Jennifer Klever-Kirkman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 19563.58,
+       "expenditures": 5229.06,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/jennifer-klever-kirkman"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jennifer Klever-Kirkman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 19563.58,
+       "expenditures": 5229.06,
+       "status": "Advanced",
+       "url": "/ia/candidate/jennifer-klever-kirkman"
+      },
+      {
+       "name": "Jim Beres",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4980.68,
+       "expenditures": 2111.99,
+       "status": "Lost",
+       "url": "/ia/candidate/jim-beres"
+      },
+      {
+       "name": "Marcques Derby",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5260.0,
+       "expenditures": 3502.22,
+       "status": "Lost",
+       "url": "/ia/candidate/marcques-derby"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Matthew Rinker",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 14595.67,
+       "expenditures": 17975.57,
+       "status": "Advanced",
+       "url": "/ia/candidate/matthew-rinker"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "99"
+  },
+  {
+   "office": "Iowa State Senate District 1",
+   "url": "/ia/race/iowa-state-senate-district-1-72345",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 613435.0,
+   "totalExpenditures": 220387.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Catelin Drey",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 372846.49,
+       "expenditures": 194465.53,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/catelin-drey"
+      },
+      {
+       "name": "Christopher Prosch",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 240588.93,
+       "expenditures": 25921.37,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/christopher-prosch"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Catelin Drey",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 372846.49,
+       "expenditures": 194465.53,
+       "status": "Advanced",
+       "url": "/ia/candidate/catelin-drey"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Christopher Prosch",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 240588.93,
+       "expenditures": 25921.37,
+       "status": "Advanced",
+       "url": "/ia/candidate/christopher-prosch"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "1"
+  },
+  {
+   "office": "Iowa State Senate District 11",
+   "url": "/ia/race/iowa-state-senate-district-11-72350",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 56167.0,
+   "totalExpenditures": 73894.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Sinikka Waugh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 22450.38,
+       "expenditures": 3634.33,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/sinikka-waugh"
+      },
+      {
+       "name": "Hollie Zajicek",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11628.47,
+       "expenditures": 10875.8,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/hollie-zajicek"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Sinikka Waugh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 22450.38,
+       "expenditures": 3634.33,
+       "status": "Advanced",
+       "url": "/ia/candidate/sinikka-waugh"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Hollie Zajicek",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11628.47,
+       "expenditures": 10875.8,
+       "status": "Advanced",
+       "url": "/ia/candidate/hollie-zajicek"
+      },
+      {
+       "name": "Mandee Shivers",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20288.0,
+       "expenditures": 13262.0,
+       "status": "Lost",
+       "url": "/ia/candidate/mandee-shivers"
+      },
+      {
+       "name": "Jonathan Thorup",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1800.0,
+       "expenditures": 46122.26,
+       "status": "Lost",
+       "url": "/ia/candidate/jonathan-thorup"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "11"
+  },
+  {
+   "office": "Iowa State Senate District 13",
+   "url": "/ia/race/iowa-state-senate-district-13-72351",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 28739.0,
+   "totalExpenditures": 28166.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Brenda Case",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7069.2,
+       "expenditures": 4220.44,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/brenda-case"
+      },
+      {
+       "name": "Jeffery Kulmatycki",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11210.0,
+       "expenditures": 16972.8,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/jeffery-kulmatycki"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Brenda Case",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7069.2,
+       "expenditures": 4220.44,
+       "status": "Advanced",
+       "url": "/ia/candidate/brenda-case"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jeffery Kulmatycki",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11210.0,
+       "expenditures": 16972.8,
+       "status": "Advanced",
+       "url": "/ia/candidate/jeffery-kulmatycki"
+      },
+      {
+       "name": "Cherielynn Westrich",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 4300.0,
+       "expenditures": 4590.53,
+       "status": "Withdrew",
+       "url": "/ia/candidate/cherielynn-westrich"
+      },
+      {
+       "name": "Edwin Brand",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4995.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/ia/candidate/edwin-brand"
+      },
+      {
+       "name": "Austin Garmon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1165.0,
+       "expenditures": 2382.4,
+       "status": "Lost",
+       "url": "/ia/candidate/austin-garmon"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "13"
+  },
+  {
+   "office": "Iowa State Senate District 15",
+   "url": "/ia/race/iowa-state-senate-district-15-72352",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 39120.0,
+   "totalExpenditures": 39832.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Tony Bisignano",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 39120.0,
+       "expenditures": 39831.77,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/tony-bisignano"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Tony Bisignano",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 39120.0,
+       "expenditures": 39831.77,
+       "status": "Advanced",
+       "url": "/ia/candidate/tony-bisignano"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "15"
+  },
+  {
+   "office": "Iowa State Senate District 17",
+   "url": "/ia/race/iowa-state-senate-district-17-72353",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 118394.0,
+   "totalExpenditures": 123474.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Samy El-Baroudi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27057.0,
+       "expenditures": 27357.57,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/samy-el-baroudi"
+      },
+      {
+       "name": "Ronald Langston",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9890.52,
+       "expenditures": 3040.44,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/ronald-langston"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Samy El-Baroudi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27057.0,
+       "expenditures": 27357.57,
+       "status": "Advanced",
+       "url": "/ia/candidate/samy-el-baroudi"
+      },
+      {
+       "name": "Grace Van Cleave",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 81446.25,
+       "expenditures": 93075.8,
+       "status": "Lost",
+       "url": "/ia/candidate/grace-van-cleave"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Ronald Langston",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9890.52,
+       "expenditures": 3040.44,
+       "status": "Advanced",
+       "url": "/ia/candidate/ronald-langston"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "17"
+  },
+  {
+   "office": "Iowa State Senate District 19",
+   "url": "/ia/race/iowa-state-senate-district-19-72354",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 55793.0,
+   "totalExpenditures": 22601.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Zachary Mecham",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2386.0,
+       "expenditures": 160.97,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/zachary-mecham"
+      },
+      {
+       "name": "Barb Kniff Mcculla",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 47261.18,
+       "expenditures": 19138.54,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/barb-kniff-mcculla"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Zachary Mecham",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2386.0,
+       "expenditures": 160.97,
+       "status": "Advanced",
+       "url": "/ia/candidate/zachary-mecham"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Barb Kniff Mcculla",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 47261.18,
+       "expenditures": 19138.54,
+       "status": "Advanced",
+       "url": "/ia/candidate/barb-kniff-mcculla"
+      },
+      {
+       "name": "Bob Eschliman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6146.09,
+       "expenditures": 3301.15,
+       "status": "Lost",
+       "url": "/ia/candidate/bob-eschliman"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "19"
+  },
+  {
+   "office": "Iowa State Senate District 21",
+   "url": "/ia/race/iowa-state-senate-district-21-72355",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 128733.0,
+   "totalExpenditures": 53659.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Heather Matson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 111869.67,
+       "expenditures": 41690.72,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/heather-matson"
+      },
+      {
+       "name": "John Hollinrake",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16478.05,
+       "expenditures": 11968.11,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/john-hollinrake"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Heather Matson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 111869.67,
+       "expenditures": 41690.72,
+       "status": "Advanced",
+       "url": "/ia/candidate/heather-matson"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "John Hollinrake",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16478.05,
+       "expenditures": 11968.11,
+       "status": "Advanced",
+       "url": "/ia/candidate/john-hollinrake"
+      },
+      {
+       "name": "Eric Pearson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 385.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/ia/candidate/eric-pearson"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "21"
+  },
+  {
+   "office": "Iowa State Senate District 23",
+   "url": "/ia/race/iowa-state-senate-district-23-72356",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 252177.0,
+   "totalExpenditures": 148328.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Michael Bousselot",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 190861.11,
+       "expenditures": 122605.13,
+       "status": "Withdrew",
+       "url": "/ia/candidate/michael-bousselot"
+      },
+      {
+       "name": "Tony Thompson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 36185.39,
+       "expenditures": 13228.33,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/tony-thompson"
+      },
+      {
+       "name": "Wesley Enos",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25130.23,
+       "expenditures": 12494.14,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/wesley-enos"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Tony Thompson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 36185.39,
+       "expenditures": 13228.33,
+       "status": "Advanced",
+       "url": "/ia/candidate/tony-thompson"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Michael Bousselot",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 190861.11,
+       "expenditures": 122605.13,
+       "status": "Advanced",
+       "url": "/ia/candidate/michael-bousselot"
+      },
+      {
+       "name": "Wesley Enos",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25130.23,
+       "expenditures": 12494.14,
+       "status": "Lost",
+       "url": "/ia/candidate/wesley-enos"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "23"
+  },
+  {
+   "office": "Iowa State Senate District 25",
+   "url": "/ia/race/iowa-state-senate-district-25-72357",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 25983.0,
+   "totalExpenditures": 18439.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Herman Quirmbach",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 23989.0,
+       "expenditures": 15445.15,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/herman-quirmbach"
+      },
+      {
+       "name": "Paul Wacker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1993.69,
+       "expenditures": 2993.69,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/paul-wacker"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Herman Quirmbach",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 23989.0,
+       "expenditures": 15445.15,
+       "status": "Advanced",
+       "url": "/ia/candidate/herman-quirmbach"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "25"
+  },
+  {
+   "office": "Iowa State Senate District 27",
+   "url": "/ia/race/iowa-state-senate-district-27-72358",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 97195.0,
+   "totalExpenditures": 96885.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Annette Sweeney",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 82056.73,
+       "expenditures": 81211.11,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/annette-sweeney"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Annette Sweeney",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 82056.73,
+       "expenditures": 81211.11,
+       "status": "Advanced",
+       "url": "/ia/candidate/annette-sweeney"
+      },
+      {
+       "name": "Rocky Damiano",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15138.0,
+       "expenditures": 15674.26,
+       "status": "Lost",
+       "url": "/ia/candidate/rocky-damiano"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "27"
+  },
+  {
+   "office": "Iowa State Senate District 29",
+   "url": "/ia/race/iowa-state-senate-district-29-72359",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 57913.0,
+   "totalExpenditures": 27145.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Sandy Salmon",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 39124.0,
+       "expenditures": 25138.96,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/sandy-salmon"
+      },
+      {
+       "name": "James Vowels",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18788.59,
+       "expenditures": 2006.46,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/james-vowels"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "James Vowels",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18788.59,
+       "expenditures": 2006.46,
+       "status": "Advanced",
+       "url": "/ia/candidate/james-vowels"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Sandy Salmon",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 39124.0,
+       "expenditures": 25138.96,
+       "status": "Advanced",
+       "url": "/ia/candidate/sandy-salmon"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "29"
+  },
+  {
+   "office": "Iowa State Senate District 3",
+   "url": "/ia/race/iowa-state-senate-district-3-72346",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 119961.0,
+   "totalExpenditures": 98350.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Kevin Lynn Evans",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 54622.17,
+       "expenditures": 46621.27,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/kevin-evans"
+      },
+      {
+       "name": "Mike Frantz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16679.21,
+       "expenditures": 3818.37,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/mike-frantz"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Mike Frantz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16679.21,
+       "expenditures": 3818.37,
+       "status": "Advanced",
+       "url": "/ia/candidate/mike-frantz"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Kevin Lynn Evans",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 54622.17,
+       "expenditures": 46621.27,
+       "status": "Advanced",
+       "url": "/ia/candidate/kevin-evans"
+      },
+      {
+       "name": "Shane Bellefy",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 48659.4,
+       "expenditures": 47910.65,
+       "status": "Lost",
+       "url": "/ia/candidate/shane-bellefy"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "3"
+  },
+  {
+   "office": "Iowa State Senate District 31",
+   "url": "/ia/race/iowa-state-senate-district-31-72360",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 10185.0,
+   "totalExpenditures": 4739.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Timi Brown-Powers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10184.6,
+       "expenditures": 4738.65,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/timi-brown-powers"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Timi Brown-Powers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10184.6,
+       "expenditures": 4738.65,
+       "status": "Advanced",
+       "url": "/ia/candidate/timi-brown-powers"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "31"
+  },
+  {
+   "office": "Iowa State Senate District 33",
+   "url": "/ia/race/iowa-state-senate-district-33-72361",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 48664.0,
+   "totalExpenditures": 754.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Carrie Koelker",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 48664.23,
+       "expenditures": 753.94,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/carrie-koelker"
+      },
+      {
+       "name": "Mary Ungs-Sogaard",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/mary-ungs-sogaard"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Carrie Koelker",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 48664.23,
+       "expenditures": 753.94,
+       "status": "Advanced",
+       "url": "/ia/candidate/carrie-koelker"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "33"
+  },
+  {
+   "office": "Iowa State Senate District 35",
+   "url": "/ia/race/iowa-state-senate-district-35-72362",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 168709.0,
+   "totalExpenditures": 68123.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Mike Zimmer",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 122464.36,
+       "expenditures": 39881.97,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/mike-zimmer"
+      },
+      {
+       "name": "Joe Stutting",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46245.0,
+       "expenditures": 28241.11,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/joe-stutting"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Mike Zimmer",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 122464.36,
+       "expenditures": 39881.97,
+       "status": "Advanced",
+       "url": "/ia/candidate/mike-zimmer"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Joe Stutting",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46245.0,
+       "expenditures": 28241.11,
+       "status": "Advanced",
+       "url": "/ia/candidate/joe-stutting"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "35"
+  },
+  {
+   "office": "Iowa State Senate District 37",
+   "url": "/ia/race/iowa-state-senate-district-37-72363",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 25671.0,
+   "totalExpenditures": 8206.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Molly Donahue",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16296.06,
+       "expenditures": 5038.55,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/molly-donahue"
+      },
+      {
+       "name": "Randy Marzen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9375.25,
+       "expenditures": 3166.96,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/randy-marzen"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Molly Donahue",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16296.06,
+       "expenditures": 5038.55,
+       "status": "Advanced",
+       "url": "/ia/candidate/molly-donahue"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Randy Marzen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9375.25,
+       "expenditures": 3166.96,
+       "status": "Advanced",
+       "url": "/ia/candidate/randy-marzen"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "37"
+  },
+  {
+   "office": "Iowa State Senate District 39",
+   "url": "/ia/race/iowa-state-senate-district-39-72364",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 20154.0,
+   "totalExpenditures": 18026.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Liz Bennett",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 10404.0,
+       "expenditures": 6177.86,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/liz-bennett"
+      },
+      {
+       "name": "Edward Hayes",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9750.0,
+       "expenditures": 11847.66,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/edward-hayes"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Liz Bennett",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 10404.0,
+       "expenditures": 6177.86,
+       "status": "Advanced",
+       "url": "/ia/candidate/liz-bennett"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "39"
+  },
+  {
+   "office": "Iowa State Senate District 41",
+   "url": "/ia/race/iowa-state-senate-district-41-72365",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 31900.0,
+   "totalExpenditures": 5441.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Kerry Gruenhagen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 19900.0,
+       "expenditures": 3674.64,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/kerry-gruenhagen"
+      },
+      {
+       "name": "Tom Wieck",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12000.24,
+       "expenditures": 1766.05,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/tom-wieck"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Tom Wieck",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12000.24,
+       "expenditures": 1766.05,
+       "status": "Advanced",
+       "url": "/ia/candidate/tom-wieck"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Kerry Gruenhagen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 19900.0,
+       "expenditures": 3674.64,
+       "status": "Advanced",
+       "url": "/ia/candidate/kerry-gruenhagen"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "41"
+  },
+  {
+   "office": "Iowa State Senate District 43",
+   "url": "/ia/race/iowa-state-senate-district-43-72366",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 5746.0,
+   "totalExpenditures": 5817.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Meghann Foster",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5746.4,
+       "expenditures": 5816.87,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/meghann-foster"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Meghann Foster",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5746.4,
+       "expenditures": 5816.87,
+       "status": "Advanced",
+       "url": "/ia/candidate/meghann-foster"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "43"
+  },
+  {
+   "office": "Iowa State Senate District 45",
+   "url": "/ia/race/iowa-state-senate-district-45-72367",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 256363.0,
+   "totalExpenditures": 133058.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Janice Weiner",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 256362.56,
+       "expenditures": 133058.22,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/janice-weiner"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Janice Weiner",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 256362.56,
+       "expenditures": 133058.22,
+       "status": "Advanced",
+       "url": "/ia/candidate/janice-weiner"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "45"
+  },
+  {
+   "office": "Iowa State Senate District 47",
+   "url": "/ia/race/iowa-state-senate-district-47-72368",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 236658.0,
+   "totalExpenditures": 11073.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Scott Webster",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 37525.0,
+       "expenditures": 532.95,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/scott-webster"
+      },
+      {
+       "name": "Nikhil Wagle",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 199132.8,
+       "expenditures": 10539.79,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/nikhil-wagle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Nikhil Wagle",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 199132.8,
+       "expenditures": 10539.79,
+       "status": "Advanced",
+       "url": "/ia/candidate/nikhil-wagle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Scott Webster",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 37525.0,
+       "expenditures": 532.95,
+       "status": "Advanced",
+       "url": "/ia/candidate/scott-webster"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "47"
+  },
+  {
+   "office": "Iowa State Senate District 49",
+   "url": "/ia/race/iowa-state-senate-district-49-72369",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 13889.0,
+   "totalExpenditures": 1762.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Cindy Winckler",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 13889.1,
+       "expenditures": 1762.37,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/cindy-winckler"
+      },
+      {
+       "name": "Cynthia Mensendick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/cynthia-mensendick"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Cindy Winckler",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 13889.1,
+       "expenditures": 1762.37,
+       "status": "Advanced",
+       "url": "/ia/candidate/cindy-winckler"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Cynthia Mensendick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/cynthia-mensendick"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "49"
+  },
+  {
+   "office": "Iowa State Senate District 5",
+   "url": "/ia/race/iowa-state-senate-district-5-72347",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 101816.0,
+   "totalExpenditures": 83928.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "David Rowley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 76432.72,
+       "expenditures": 66934.81,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/david-rowley"
+      },
+      {
+       "name": "Rachel Gravert",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/rachel-gravert"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "David Rowley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 76432.72,
+       "expenditures": 66934.81,
+       "status": "Advanced",
+       "url": "/ia/candidate/david-rowley"
+      },
+      {
+       "name": "Stacy Besch",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25383.5,
+       "expenditures": 16992.96,
+       "status": "Lost",
+       "url": "/ia/candidate/stacy-besch"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "5"
+  },
+  {
+   "office": "Iowa State Senate District 7",
+   "url": "/ia/race/iowa-state-senate-district-7-72348",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 31759.0,
+   "totalExpenditures": 2386.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Kevin Alons",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 31759.39,
+       "expenditures": 2386.29,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/kevin-alons"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Kevin Alons",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 31759.39,
+       "expenditures": 2386.29,
+       "status": "Advanced",
+       "url": "/ia/candidate/kevin-alons"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "7"
+  },
+  {
+   "office": "Iowa State Senate District 9",
+   "url": "/ia/race/iowa-state-senate-district-9-72349",
+   "dataThrough": "07/14/2026",
+   "stage": "General Election",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "James Uhlenkamp",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "On the Ballot",
+       "url": "/ia/candidate/james-uhlenkamp"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "9"
+  }
+ ]
+}

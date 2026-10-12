@@ -1,0 +1,118 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 Kentucky House of Representatives election",
+   "senate": "2026 Kentucky Senate election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "14": [
+   {
+    "name": "Scott Lewis",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "27": [
+   {
+    "name": "Nancy Tate",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "30": [
+   {
+    "name": "Daniel Grossberg",
+    "party": "D",
+    "category": "lost primary",
+    "reason": "lost renomination to Mitra Subedi"
+   }
+  ],
+  "43": [
+   {
+    "name": "Pamela Stevenson",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for the United States Senate"
+   }
+  ],
+  "44": [
+   {
+    "name": "Beverly Chester-Burton",
+    "party": "D",
+    "category": "lost primary",
+    "reason": "lost renomination to Kenya Wade"
+   }
+  ],
+  "52": [
+   {
+    "name": "Ken Upchurch",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "63": [
+   {
+    "name": "Kim Banta",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Cole Cuzick"
+   }
+  ],
+  "70": [
+   {
+    "name": "William Lawrence",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for Mason County Commissioner"
+   }
+  ],
+  "73": [
+   {
+    "name": "Ryan Dotson",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for Kentucky's 6th congressional district"
+   }
+  ],
+  "74": [
+   {
+    "name": "David Hale",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "91": [
+   {
+    "name": "Bill Wesley",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for Kentucky's 30th Senate district"
+   }
+  ],
+  "95": [
+   {
+    "name": "Ashley Tackett Laferty",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for District Court Judge"
+   }
+  ]
+ },
+ "senate": {
+  "14": [
+   {
+    "name": "Jimmy Higdon",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ]
+ }
+}

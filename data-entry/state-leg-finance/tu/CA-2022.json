@@ -1,0 +1,6503 @@
+{
+ "state": "CA",
+ "cycle": 2022,
+ "fetched": "2026-10-11",
+ "dataThrough": "12/31/2022",
+ "races": [
+  {
+   "office": "California State Assembly District 1",
+   "url": "/ca/race/california-state-assembly-district-1-56481",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 665287.0,
+   "totalExpenditures": 797787.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Megan Dahle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 622941.45,
+       "expenditures": 0.0,
+       "status": "$759,749.79",
+       "url": "/ca/candidate/megan-dahle?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Belle Starr Sandwith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 24434.69,
+       "expenditures": 0.0,
+       "status": "$19,346.23",
+       "url": "/ca/candidate/belle-starr-sandwith?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Megan Dahle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 622941.45,
+       "expenditures": 0.0,
+       "status": "$759,749.79",
+       "url": "/ca/candidate/megan-dahle?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Belle Starr Sandwith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 24434.69,
+       "expenditures": 0.0,
+       "status": "$19,346.23",
+       "url": "/ca/candidate/belle-starr-sandwith?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kelly Tanner",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17910.6,
+       "expenditures": 14500.0,
+       "status": "$18,690.53",
+       "url": "/ca/candidate/kelly-tanner?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "California State Assembly District 10",
+   "url": "/ca/race/california-state-assembly-district-10-56482",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2857732.0,
+   "totalExpenditures": 4143385.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Stephanie Nguyen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 830678.04,
+       "expenditures": 30000.0,
+       "status": "$1,402,124.68",
+       "url": "/ca/candidate/stephanie-nguyen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Eric Guerra",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1897507.24,
+       "expenditures": 0.0,
+       "status": "$2,606,922.34",
+       "url": "/ca/candidate/eric-guerra?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Eric Guerra",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1897507.24,
+       "expenditures": 0.0,
+       "status": "$2,606,922.34",
+       "url": "/ca/candidate/eric-guerra?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Stephanie Nguyen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 830678.04,
+       "expenditures": 30000.0,
+       "status": "$1,402,124.68",
+       "url": "/ca/candidate/stephanie-nguyen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tecoy Porter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 124283.49,
+       "expenditures": 0.0,
+       "status": "$129,075.58",
+       "url": "/ca/candidate/tecoy-porter?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Eric Rigard",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5262.9,
+       "expenditures": 2425.0,
+       "status": "$5,262.90",
+       "url": "/ca/candidate/eric-rigard?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "California State Assembly District 11",
+   "url": "/ca/race/california-state-assembly-district-11-56483",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1030277.0,
+   "totalExpenditures": 1235178.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Lori Wilson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1030276.69,
+       "expenditures": 0.0,
+       "status": "$1,235,178.20",
+       "url": "/ca/candidate/lori-wilson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jenny Callison",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/jenny-callison?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Lori Wilson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1030276.69,
+       "expenditures": 0.0,
+       "status": "$1,235,178.20",
+       "url": "/ca/candidate/lori-wilson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jenny Callison",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/jenny-callison?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "California State Assembly District 12",
+   "url": "/ca/race/california-state-assembly-district-12-56484",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2443230.0,
+   "totalExpenditures": 3352548.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Damon Connolly",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1076911.81,
+       "expenditures": 0.0,
+       "status": "$1,497,271.04",
+       "url": "/ca/candidate/damon-connolly?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Sara Aminzadeh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1207555.82,
+       "expenditures": 0.0,
+       "status": "$1,683,351.54",
+       "url": "/ca/candidate/sara-aminzadeh?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Sara Aminzadeh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1207555.82,
+       "expenditures": 0.0,
+       "status": "$1,683,351.54",
+       "url": "/ca/candidate/sara-aminzadeh?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Damon Connolly",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1076911.81,
+       "expenditures": 0.0,
+       "status": "$1,497,271.04",
+       "url": "/ca/candidate/damon-connolly?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Steve Schwartz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 104641.36,
+       "expenditures": 15000.0,
+       "status": "$118,775.22",
+       "url": "/ca/candidate/steve-schwartz?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ida Times- Green",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 54121.18,
+       "expenditures": 1400.0,
+       "status": "$53,150.02",
+       "url": "/ca/candidate/ida-times-green?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Andrew Podshadley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/andrew-podshadley?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "California State Assembly District 13",
+   "url": "/ca/race/california-state-assembly-district-13-56485",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1294020.0,
+   "totalExpenditures": 1657594.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Carlos Villapudua",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1221188.69,
+       "expenditures": 0.0,
+       "status": "$1,558,874.80",
+       "url": "/ca/candidate/carlos-villapudua?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Veronica Vargas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 60381.55,
+       "expenditures": 500.0,
+       "status": "$86,269.63",
+       "url": "/ca/candidate/veronica-vargas?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Carlos Villapudua",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1221188.69,
+       "expenditures": 0.0,
+       "status": "$1,558,874.80",
+       "url": "/ca/candidate/carlos-villapudua?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Veronica Vargas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 60381.55,
+       "expenditures": 500.0,
+       "status": "$86,269.63",
+       "url": "/ca/candidate/veronica-vargas?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mateo Morelos Bedolla",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12450.0,
+       "expenditures": 0.0,
+       "status": "$12,450.00",
+       "url": "/ca/candidate/mateo-morelos-bedolla?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "California State Assembly District 14",
+   "url": "/ca/race/california-state-assembly-district-14-56486",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 737331.0,
+   "totalExpenditures": 672233.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Buffy Wicks",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 737330.92,
+       "expenditures": 0.0,
+       "status": "$672,233.07",
+       "url": "/ca/candidate/buffy-wicks?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Buffy Wicks",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 737330.92,
+       "expenditures": 0.0,
+       "status": "$672,233.07",
+       "url": "/ca/candidate/buffy-wicks?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "California State Assembly District 15",
+   "url": "/ca/race/california-state-assembly-district-15-56487",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1165023.0,
+   "totalExpenditures": 1260880.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Tim Grayson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1164153.99,
+       "expenditures": 0.0,
+       "status": "$1,259,754.54",
+       "url": "/ca/candidate/tim-grayson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Janell Proctor",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 869.0,
+       "expenditures": 0.0,
+       "status": "$1,125.29",
+       "url": "/ca/candidate/janell-proctor?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Tim Grayson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1164153.99,
+       "expenditures": 0.0,
+       "status": "$1,259,754.54",
+       "url": "/ca/candidate/tim-grayson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Janell Proctor",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 869.0,
+       "expenditures": 0.0,
+       "status": "$1,125.29",
+       "url": "/ca/candidate/janell-proctor?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "California State Assembly District 16",
+   "url": "/ca/race/california-state-assembly-district-16-56488",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 803994.0,
+   "totalExpenditures": 432097.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Rebecca Bauer-Kahan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 707731.26,
+       "expenditures": 0.0,
+       "status": "$407,030.31",
+       "url": "/ca/candidate/rebecca-bauer-kahan?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joe Rubay",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 96262.64,
+       "expenditures": 0.0,
+       "status": "$25,066.85",
+       "url": "/ca/candidate/joe-rubay?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Rebecca Bauer-Kahan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 707731.26,
+       "expenditures": 0.0,
+       "status": "$407,030.31",
+       "url": "/ca/candidate/rebecca-bauer-kahan?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joe Rubay",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 96262.64,
+       "expenditures": 0.0,
+       "status": "$25,066.85",
+       "url": "/ca/candidate/joe-rubay?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "California State Assembly District 17",
+   "url": "/ca/race/california-state-assembly-district-17-56489",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 4764626.0,
+   "totalExpenditures": 6151742.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Matt Haney",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2308350.16,
+       "expenditures": 0.0,
+       "status": "$2,784,826.86",
+       "url": "/ca/candidate/matt-haney?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David Campos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1016943.5,
+       "expenditures": 0.0,
+       "status": "$1,391,256.88",
+       "url": "/ca/candidate/david-campos?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Matt Haney",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2308350.16,
+       "expenditures": 0.0,
+       "status": "$2,784,826.86",
+       "url": "/ca/candidate/matt-haney?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David Campos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1016943.5,
+       "expenditures": 0.0,
+       "status": "$1,391,256.88",
+       "url": "/ca/candidate/david-campos?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David Chiu",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1439332.3,
+       "expenditures": 0.0,
+       "status": "$1,975,657.99",
+       "url": "/ca/candidate/david-chiu?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bill Shireman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/bill-shireman?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "California State Assembly District 18",
+   "url": "/ca/race/california-state-assembly-district-18-56490",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2076004.0,
+   "totalExpenditures": 2613097.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Mia Bonta",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2076003.78,
+       "expenditures": 0.0,
+       "status": "$2,613,097.06",
+       "url": "/ca/candidate/mia-bonta?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mindy Pechenuk",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/mindy-pechenuk?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Mia Bonta",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2076003.78,
+       "expenditures": 0.0,
+       "status": "$2,613,097.06",
+       "url": "/ca/candidate/mia-bonta?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mindy Pechenuk",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/mindy-pechenuk?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "California State Assembly District 19",
+   "url": "/ca/race/california-state-assembly-district-19-56491",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2643164.0,
+   "totalExpenditures": 3151962.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Phil Ting",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2643164.37,
+       "expenditures": 0.0,
+       "status": "$3,151,961.70",
+       "url": "/ca/candidate/phil-ting?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Karsten Weide",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/karsten-weide?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Phil Ting",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2643164.37,
+       "expenditures": 0.0,
+       "status": "$3,151,961.70",
+       "url": "/ca/candidate/phil-ting?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Karsten Weide",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/karsten-weide?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "California State Assembly District 2",
+   "url": "/ca/race/california-state-assembly-district-2-56492",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 906943.0,
+   "totalExpenditures": 1585027.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jim Wood",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 906943.25,
+       "expenditures": 0.0,
+       "status": "$1,585,027.33",
+       "url": "/ca/candidate/jim-wood?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Jim Wood",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 906943.25,
+       "expenditures": 0.0,
+       "status": "$1,585,027.33",
+       "url": "/ca/candidate/jim-wood?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "California State Assembly District 20",
+   "url": "/ca/race/california-state-assembly-district-20-56493",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2417598.0,
+   "totalExpenditures": 3399981.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Liz Ortega-Toro",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1079154.5,
+       "expenditures": 0.0,
+       "status": "$1,500,580.19",
+       "url": "/ca/candidate/liz-ortega-toro?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Shawn Kumagai",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 851675.57,
+       "expenditures": 0.0,
+       "status": "$1,242,356.23",
+       "url": "/ca/candidate/shawn-kumagai?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Shawn Kumagai",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 851675.57,
+       "expenditures": 0.0,
+       "status": "$1,242,356.23",
+       "url": "/ca/candidate/shawn-kumagai?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Liz Ortega-Toro",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1079154.5,
+       "expenditures": 0.0,
+       "status": "$1,500,580.19",
+       "url": "/ca/candidate/liz-ortega-toro?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jennifer Esteen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 486768.16,
+       "expenditures": 0.0,
+       "status": "$657,044.29",
+       "url": "/ca/candidate/jennifer-esteen?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "California State Assembly District 21",
+   "url": "/ca/race/california-state-assembly-district-21-56494",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2271520.0,
+   "totalExpenditures": 2730016.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Diane Papan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1165364.41,
+       "expenditures": 0.0,
+       "status": "$1,088,936.96",
+       "url": "/ca/candidate/diane-papan?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Giselle Hale",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 802400.17,
+       "expenditures": 0.0,
+       "status": "$1,247,849.55",
+       "url": "/ca/candidate/giselle-hale?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Giselle Hale",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 802400.17,
+       "expenditures": 0.0,
+       "status": "$1,247,849.55",
+       "url": "/ca/candidate/giselle-hale?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Diane Papan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1165364.41,
+       "expenditures": 0.0,
+       "status": "$1,088,936.96",
+       "url": "/ca/candidate/diane-papan?cycle=2022-election-cycle"
+      },
+      {
+       "name": "James Coleman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 290339.96,
+       "expenditures": 0.0,
+       "status": "$375,327.19",
+       "url": "/ca/candidate/james-coleman?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Maurice Goodman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1525.0,
+       "expenditures": 6000.0,
+       "status": "$6,846.00",
+       "url": "/ca/candidate/maurice-goodman?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tania Sole",
+       "party": "Green",
+       "incumbent": false,
+       "contributions": 11890.82,
+       "expenditures": 960.0,
+       "status": "$11,056.10",
+       "url": "/ca/candidate/tania-sole?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "California State Assembly District 22",
+   "url": "/ca/race/california-state-assembly-district-22-56495",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1580764.0,
+   "totalExpenditures": 1727069.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Juan Alanis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 729777.27,
+       "expenditures": 40000.0,
+       "status": "$781,253.47",
+       "url": "/ca/candidate/juan-alanis?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jessica Self",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 604862.57,
+       "expenditures": 280.0,
+       "status": "$639,192.90",
+       "url": "/ca/candidate/jessica-self?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Jessica Self",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 604862.57,
+       "expenditures": 280.0,
+       "status": "$639,192.90",
+       "url": "/ca/candidate/jessica-self?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Juan Alanis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 729777.27,
+       "expenditures": 40000.0,
+       "status": "$781,253.47",
+       "url": "/ca/candidate/juan-alanis?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Chad Condit",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 144694.0,
+       "expenditures": 0.0,
+       "status": "$186,392.62",
+       "url": "/ca/candidate/chad-condit?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joel Campos",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 101430.0,
+       "expenditures": 40000.0,
+       "status": "$120,230.38",
+       "url": "/ca/candidate/joel-campos?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "California State Assembly District 23",
+   "url": "/ca/race/california-state-assembly-district-23-56496",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1086945.0,
+   "totalExpenditures": 1837781.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Marc Berman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1068308.4,
+       "expenditures": 0.0,
+       "status": "$1,817,159.34",
+       "url": "/ca/candidate/marc-berman?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tim Dec",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18637.04,
+       "expenditures": 1980.0,
+       "status": "$20,622.04",
+       "url": "/ca/candidate/tim-dec?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Marc Berman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1068308.4,
+       "expenditures": 0.0,
+       "status": "$1,817,159.34",
+       "url": "/ca/candidate/marc-berman?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tim Dec",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18637.04,
+       "expenditures": 1980.0,
+       "status": "$20,622.04",
+       "url": "/ca/candidate/tim-dec?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "California State Assembly District 24",
+   "url": "/ca/race/california-state-assembly-district-24-56497",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2225807.0,
+   "totalExpenditures": 2908641.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Alex Lee",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1269990.05,
+       "expenditures": 0.0,
+       "status": "$1,851,875.22",
+       "url": "/ca/candidate/alex-lee?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bob Brunton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/bob-brunton?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Alex Lee",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1269990.05,
+       "expenditures": 0.0,
+       "status": "$1,851,875.22",
+       "url": "/ca/candidate/alex-lee?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bob Brunton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/bob-brunton?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kansen Chu",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 620020.75,
+       "expenditures": 2000.0,
+       "status": "$627,807.29",
+       "url": "/ca/candidate/kansen-chu?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Lan Diep",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48779.37,
+       "expenditures": 0.0,
+       "status": "$48,717.77",
+       "url": "/ca/candidate/lan-diep?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Teresa Keng",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 287016.99,
+       "expenditures": 105500.0,
+       "status": "$380,240.62",
+       "url": "/ca/candidate/teresa-keng?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "California State Assembly District 25",
+   "url": "/ca/race/california-state-assembly-district-25-56498",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 478575.0,
+   "totalExpenditures": 617981.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Ash Kalra",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 468192.0,
+       "expenditures": 0.0,
+       "status": "$606,651.96",
+       "url": "/ca/candidate/ash-kalra?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ted Stroll",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10382.97,
+       "expenditures": 5000.0,
+       "status": "$11,329.38",
+       "url": "/ca/candidate/ted-stroll?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Ash Kalra",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 468192.0,
+       "expenditures": 0.0,
+       "status": "$606,651.96",
+       "url": "/ca/candidate/ash-kalra?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ted Stroll",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10382.97,
+       "expenditures": 5000.0,
+       "status": "$11,329.38",
+       "url": "/ca/candidate/ted-stroll?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "California State Assembly District 26",
+   "url": "/ca/race/california-state-assembly-district-26-56499",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1540976.0,
+   "totalExpenditures": 2207416.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Evan Low",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1536129.33,
+       "expenditures": 0.0,
+       "status": "$2,185,949.88",
+       "url": "/ca/candidate/evan-low?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tim Gorsulowsky",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2768.2,
+       "expenditures": 0.0,
+       "status": "$955.00",
+       "url": "/ca/candidate/tim-gorsulowsky?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Evan Low",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1536129.33,
+       "expenditures": 0.0,
+       "status": "$2,185,949.88",
+       "url": "/ca/candidate/evan-low?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tim Gorsulowsky",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2768.2,
+       "expenditures": 0.0,
+       "status": "$955.00",
+       "url": "/ca/candidate/tim-gorsulowsky?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Long Jiao",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2078.0,
+       "expenditures": 0.0,
+       "status": "$20,510.95",
+       "url": "/ca/candidate/long-jiao?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "California State Assembly District 27",
+   "url": "/ca/race/california-state-assembly-district-27-56500",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 5200447.0,
+   "totalExpenditures": 3881226.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Esmeralda Soria",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3711905.71,
+       "expenditures": 0.0,
+       "status": "$2,217,104.35",
+       "url": "/ca/candidate/esmeralda-soria?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mark Pazin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1295878.9,
+       "expenditures": 0.0,
+       "status": "$1,374,867.59",
+       "url": "/ca/candidate/mark-pazin?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Esmeralda Soria",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3711905.71,
+       "expenditures": 0.0,
+       "status": "$2,217,104.35",
+       "url": "/ca/candidate/esmeralda-soria?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mark Pazin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1295878.9,
+       "expenditures": 0.0,
+       "status": "$1,374,867.59",
+       "url": "/ca/candidate/mark-pazin?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mike Karbassi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 158112.8,
+       "expenditures": 40000.0,
+       "status": "$247,900.19",
+       "url": "/ca/candidate/mike-karbassi?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Amanda Fleming",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 34550.0,
+       "expenditures": 0.0,
+       "status": "$41,353.65",
+       "url": "/ca/candidate/amanda-fleming?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "California State Assembly District 28",
+   "url": "/ca/race/california-state-assembly-district-28-56501",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1046769.0,
+   "totalExpenditures": 1551746.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Gail Pellerin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 614523.84,
+       "expenditures": 107500.0,
+       "status": "$927,909.30",
+       "url": "/ca/candidate/gail-pellerin?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Liz Lawler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 218310.0,
+       "expenditures": 50000.0,
+       "status": "$386,999.31",
+       "url": "/ca/candidate/liz-lawler?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Gail Pellerin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 614523.84,
+       "expenditures": 107500.0,
+       "status": "$927,909.30",
+       "url": "/ca/candidate/gail-pellerin?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Liz Lawler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 218310.0,
+       "expenditures": 50000.0,
+       "status": "$386,999.31",
+       "url": "/ca/candidate/liz-lawler?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rob Rennie",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 198816.0,
+       "expenditures": 100000.0,
+       "status": "$221,372.84",
+       "url": "/ca/candidate/rob-rennie?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joe Thompson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15119.32,
+       "expenditures": 0.0,
+       "status": "$15,464.99",
+       "url": "/ca/candidate/joe-thompson?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "California State Assembly District 29",
+   "url": "/ca/race/california-state-assembly-district-29-56502",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1808802.0,
+   "totalExpenditures": 1701127.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Robert Rivas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1808802.28,
+       "expenditures": 0.0,
+       "status": "$1,701,126.92",
+       "url": "/ca/candidate/robert-rivas?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Robert Rivas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1808802.28,
+       "expenditures": 0.0,
+       "status": "$1,701,126.92",
+       "url": "/ca/candidate/robert-rivas?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "California State Assembly District 3",
+   "url": "/ca/race/california-state-assembly-district-3-56503",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1972109.0,
+   "totalExpenditures": 4014366.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "James Gallagher",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1889819.64,
+       "expenditures": 0.0,
+       "status": "$3,927,877.39",
+       "url": "/ca/candidate/james-gallagher?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David Zink",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 82289.17,
+       "expenditures": 13490.17,
+       "status": "$86,488.25",
+       "url": "/ca/candidate/david-zink?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "James Gallagher",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1889819.64,
+       "expenditures": 0.0,
+       "status": "$3,927,877.39",
+       "url": "/ca/candidate/james-gallagher?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David Zink",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 82289.17,
+       "expenditures": 13490.17,
+       "status": "$86,488.25",
+       "url": "/ca/candidate/david-zink?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "California State Assembly District 30",
+   "url": "/ca/race/california-state-assembly-district-30-56504",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1690938.0,
+   "totalExpenditures": 2566819.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Dawn Addis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1257993.31,
+       "expenditures": 0.0,
+       "status": "$1,960,099.28",
+       "url": "/ca/candidate/dawn-addis?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Vicki Nohrden",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 104759.61,
+       "expenditures": 0.0,
+       "status": "$117,133.64",
+       "url": "/ca/candidate/vicki-nohrden?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Dawn Addis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1257993.31,
+       "expenditures": 0.0,
+       "status": "$1,960,099.28",
+       "url": "/ca/candidate/dawn-addis?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Vicki Nohrden",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 104759.61,
+       "expenditures": 0.0,
+       "status": "$117,133.64",
+       "url": "/ca/candidate/vicki-nohrden?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Zoe Carter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 65261.0,
+       "expenditures": 0.0,
+       "status": "$89,554.90",
+       "url": "/ca/candidate/zoe-carter?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jon Wizard",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 262924.42,
+       "expenditures": 50000.0,
+       "status": "$400,031.57",
+       "url": "/ca/candidate/jon-wizard?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "California State Assembly District 31",
+   "url": "/ca/race/california-state-assembly-district-31-56505",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 749277.0,
+   "totalExpenditures": 887685.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Joaquin Arambula",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 745566.84,
+       "expenditures": 0.0,
+       "status": "$885,175.47",
+       "url": "/ca/candidate/joaquin-arambula?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Dolce Calandra",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3710.0,
+       "expenditures": 0.0,
+       "status": "$2,510.00",
+       "url": "/ca/candidate/dolce-calandra?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Joaquin Arambula",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 745566.84,
+       "expenditures": 0.0,
+       "status": "$885,175.47",
+       "url": "/ca/candidate/joaquin-arambula?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Dolce Calandra",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3710.0,
+       "expenditures": 0.0,
+       "status": "$2,510.00",
+       "url": "/ca/candidate/dolce-calandra?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "California State Assembly District 32",
+   "url": "/ca/race/california-state-assembly-district-32-56506",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1421563.0,
+   "totalExpenditures": 1980239.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Vince Fong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1421563.28,
+       "expenditures": 0.0,
+       "status": "$1,980,239.41",
+       "url": "/ca/candidate/vince-fong?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Vince Fong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1421563.28,
+       "expenditures": 0.0,
+       "status": "$1,980,239.41",
+       "url": "/ca/candidate/vince-fong?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "California State Assembly District 33",
+   "url": "/ca/race/california-state-assembly-district-33-56507",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 671517.0,
+   "totalExpenditures": 864000.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Devon Mathis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 562641.51,
+       "expenditures": 0.0,
+       "status": "$752,852.42",
+       "url": "/ca/candidate/devon-mathis?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jose Sigala",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 108875.09,
+       "expenditures": 5000.0,
+       "status": "$111,147.78",
+       "url": "/ca/candidate/jose-sigala?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Devon Mathis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 562641.51,
+       "expenditures": 0.0,
+       "status": "$752,852.42",
+       "url": "/ca/candidate/devon-mathis?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jose Sigala",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 108875.09,
+       "expenditures": 5000.0,
+       "status": "$111,147.78",
+       "url": "/ca/candidate/jose-sigala?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ruben Macareno",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/ruben-macareno?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "California State Assembly District 34",
+   "url": "/ca/race/california-state-assembly-district-34-56508",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1202629.0,
+   "totalExpenditures": 1752304.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Thomas Lackey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 650712.09,
+       "expenditures": 0.0,
+       "status": "$956,967.13",
+       "url": "/ca/candidate/thomas-lackey?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Thurston Smitty Smith",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 548056.39,
+       "expenditures": 10000.0,
+       "status": "$770,129.43",
+       "url": "/ca/candidate/thurston-smitty-smith?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Thomas Lackey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 650712.09,
+       "expenditures": 0.0,
+       "status": "$956,967.13",
+       "url": "/ca/candidate/thomas-lackey?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Thurston Smitty Smith",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 548056.39,
+       "expenditures": 10000.0,
+       "status": "$770,129.43",
+       "url": "/ca/candidate/thurston-smitty-smith?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Paul Fournier",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3861.0,
+       "expenditures": 1000.0,
+       "status": "$25,207.38",
+       "url": "/ca/candidate/paul-fournier?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "California State Assembly District 35",
+   "url": "/ca/race/california-state-assembly-district-35-56509",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1798735.0,
+   "totalExpenditures": 2662244.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jasmeet Bains",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1044615.04,
+       "expenditures": 5000.0,
+       "status": "$1,555,185.01",
+       "url": "/ca/candidate/jasmeet-bains?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Leticia Perez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 754120.44,
+       "expenditures": 0.0,
+       "status": "$1,107,058.87",
+       "url": "/ca/candidate/leticia-perez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Jasmeet Bains",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1044615.04,
+       "expenditures": 5000.0,
+       "status": "$1,555,185.01",
+       "url": "/ca/candidate/jasmeet-bains?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Leticia Perez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 754120.44,
+       "expenditures": 0.0,
+       "status": "$1,107,058.87",
+       "url": "/ca/candidate/leticia-perez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "California State Assembly District 36",
+   "url": "/ca/race/california-state-assembly-district-36-56510",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1181821.0,
+   "totalExpenditures": 1466887.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Eduardo Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1048360.85,
+       "expenditures": 0.0,
+       "status": "$1,255,685.96",
+       "url": "/ca/candidate/eduardo-garcia?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ian Weeks",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 133459.91,
+       "expenditures": 175.0,
+       "status": "$211,200.61",
+       "url": "/ca/candidate/ian-weeks?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Eduardo Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1048360.85,
+       "expenditures": 0.0,
+       "status": "$1,255,685.96",
+       "url": "/ca/candidate/eduardo-garcia?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ian Weeks",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 133459.91,
+       "expenditures": 175.0,
+       "status": "$211,200.61",
+       "url": "/ca/candidate/ian-weeks?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "California State Assembly District 37",
+   "url": "/ca/race/california-state-assembly-district-37-56511",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1117766.0,
+   "totalExpenditures": 1259330.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Gregg Hart",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 824056.99,
+       "expenditures": 0.0,
+       "status": "$843,872.81",
+       "url": "/ca/candidate/gregg-hart?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mike Stoker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 293709.47,
+       "expenditures": 5389.84,
+       "status": "$415,457.42",
+       "url": "/ca/candidate/mike-stoker?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Gregg Hart",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 824056.99,
+       "expenditures": 0.0,
+       "status": "$843,872.81",
+       "url": "/ca/candidate/gregg-hart?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mike Stoker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 293709.47,
+       "expenditures": 5389.84,
+       "status": "$415,457.42",
+       "url": "/ca/candidate/mike-stoker?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "California State Assembly District 38",
+   "url": "/ca/race/california-state-assembly-district-38-56512",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 787420.0,
+   "totalExpenditures": 653025.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Stephen Bennett",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 784385.0,
+       "expenditures": 0.0,
+       "status": "$650,301.27",
+       "url": "/ca/candidate/stephen-bennett?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Stephen Bennett",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 784385.0,
+       "expenditures": 0.0,
+       "status": "$650,301.27",
+       "url": "/ca/candidate/stephen-bennett?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Daniel Wilson",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 3035.0,
+       "expenditures": 0.0,
+       "status": "$2,724.13",
+       "url": "/ca/candidate/daniel-wilson?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "California State Assembly District 39",
+   "url": "/ca/race/california-state-assembly-district-39-56513",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1093686.0,
+   "totalExpenditures": 1471482.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Juan Carrillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 698609.28,
+       "expenditures": 0.0,
+       "status": "$948,667.91",
+       "url": "/ca/candidate/juan-carrillo?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Paul Marsh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12723.35,
+       "expenditures": 1500.0,
+       "status": "$12,723.35",
+       "url": "/ca/candidate/paul-marsh?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Juan Carrillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 698609.28,
+       "expenditures": 0.0,
+       "status": "$948,667.91",
+       "url": "/ca/candidate/juan-carrillo?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Paul Marsh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12723.35,
+       "expenditures": 1500.0,
+       "status": "$12,723.35",
+       "url": "/ca/candidate/paul-marsh?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Steve Fox",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 55704.38,
+       "expenditures": 80500.0,
+       "status": "$100,366.05",
+       "url": "/ca/candidate/steve-fox?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Andrea Rosenthal",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 326648.62,
+       "expenditures": 0.0,
+       "status": "$409,724.55",
+       "url": "/ca/candidate/andrea-rosenthal?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "California State Assembly District 4",
+   "url": "/ca/race/california-state-assembly-district-4-56514",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1084219.0,
+   "totalExpenditures": 1443984.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Cecilia Aguiar-Curry",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1011766.7,
+       "expenditures": 0.0,
+       "status": "$1,353,774.13",
+       "url": "/ca/candidate/cecilia-aguiar-curry?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bryan Pritchard",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 72452.0,
+       "expenditures": 240.0,
+       "status": "$90,210.02",
+       "url": "/ca/candidate/bryan-pritchard?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Cecilia Aguiar-Curry",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1011766.7,
+       "expenditures": 0.0,
+       "status": "$1,353,774.13",
+       "url": "/ca/candidate/cecilia-aguiar-curry?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bryan Pritchard",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 72452.0,
+       "expenditures": 240.0,
+       "status": "$90,210.02",
+       "url": "/ca/candidate/bryan-pritchard?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "California State Assembly District 40",
+   "url": "/ca/race/california-state-assembly-district-40-56515",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 5226204.0,
+   "totalExpenditures": 4904830.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Pilar Schiavo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2532012.95,
+       "expenditures": 0.0,
+       "status": "$2,258,034.35",
+       "url": "/ca/candidate/pilar-schiavo?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Suzette Martinez Valladares",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2492849.24,
+       "expenditures": 0.0,
+       "status": "$2,381,364.39",
+       "url": "/ca/candidate/suzette-martinez-valladares?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Suzette Martinez Valladares",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2492849.24,
+       "expenditures": 0.0,
+       "status": "$2,381,364.39",
+       "url": "/ca/candidate/suzette-martinez-valladares?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Pilar Schiavo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2532012.95,
+       "expenditures": 0.0,
+       "status": "$2,258,034.35",
+       "url": "/ca/candidate/pilar-schiavo?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Annie Cho",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 201342.0,
+       "expenditures": 0.0,
+       "status": "$265,431.33",
+       "url": "/ca/candidate/annie-cho?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "California State Assembly District 41",
+   "url": "/ca/race/california-state-assembly-district-41-56516",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1299780.0,
+   "totalExpenditures": 1866649.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Chris Holden",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1284298.0,
+       "expenditures": 0.0,
+       "status": "$1,848,652.10",
+       "url": "/ca/candidate/chris-holden?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Michael McMahon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15482.38,
+       "expenditures": 0.0,
+       "status": "$17,997.02",
+       "url": "/ca/candidate/michael-mcmahon?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Chris Holden",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1284298.0,
+       "expenditures": 0.0,
+       "status": "$1,848,652.10",
+       "url": "/ca/candidate/chris-holden?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Michael McMahon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15482.38,
+       "expenditures": 0.0,
+       "status": "$17,997.02",
+       "url": "/ca/candidate/michael-mcmahon?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "California State Assembly District 42",
+   "url": "/ca/race/california-state-assembly-district-42-56517",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1562578.0,
+   "totalExpenditures": 1744556.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jacqui Irwin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1351445.72,
+       "expenditures": 0.0,
+       "status": "$1,464,857.65",
+       "url": "/ca/candidate/jacqui-irwin?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Lori Mills",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 172085.07,
+       "expenditures": 3000.0,
+       "status": "$216,647.80",
+       "url": "/ca/candidate/lori-mills?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Jacqui Irwin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1351445.72,
+       "expenditures": 0.0,
+       "status": "$1,464,857.65",
+       "url": "/ca/candidate/jacqui-irwin?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Lori Mills",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 172085.07,
+       "expenditures": 3000.0,
+       "status": "$216,647.80",
+       "url": "/ca/candidate/lori-mills?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ted Nordblum",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 39047.34,
+       "expenditures": 10000.0,
+       "status": "$63,050.69",
+       "url": "/ca/candidate/ted-nordblum?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "California State Assembly District 43",
+   "url": "/ca/race/california-state-assembly-district-43-56518",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 790547.0,
+   "totalExpenditures": 1201686.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Luz Rivas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 772144.56,
+       "expenditures": 0.0,
+       "status": "$1,185,870.39",
+       "url": "/ca/candidate/luz-rivas?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Siaka Massaquoi",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18402.15,
+       "expenditures": 2000.0,
+       "status": "$15,815.63",
+       "url": "/ca/candidate/siaka-massaquoi?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Luz Rivas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 772144.56,
+       "expenditures": 0.0,
+       "status": "$1,185,870.39",
+       "url": "/ca/candidate/luz-rivas?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Siaka Massaquoi",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18402.15,
+       "expenditures": 2000.0,
+       "status": "$15,815.63",
+       "url": "/ca/candidate/siaka-massaquoi?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "California State Assembly District 44",
+   "url": "/ca/race/california-state-assembly-district-44-56519",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 865892.0,
+   "totalExpenditures": 941407.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Laura Friedman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 865892.36,
+       "expenditures": 0.0,
+       "status": "$941,406.89",
+       "url": "/ca/candidate/laura-friedman?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Laura Friedman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 865892.36,
+       "expenditures": 0.0,
+       "status": "$941,406.89",
+       "url": "/ca/candidate/laura-friedman?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "California State Assembly District 45",
+   "url": "/ca/race/california-state-assembly-district-45-56520",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1284214.0,
+   "totalExpenditures": 2237749.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "James Ramos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1283040.02,
+       "expenditures": 0.0,
+       "status": "$2,234,011.01",
+       "url": "/ca/candidate/james-ramos?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joe Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1174.0,
+       "expenditures": 5000.0,
+       "status": "$3,737.81",
+       "url": "/ca/candidate/joe-martinez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "James Ramos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1283040.02,
+       "expenditures": 0.0,
+       "status": "$2,234,011.01",
+       "url": "/ca/candidate/james-ramos?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joe Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1174.0,
+       "expenditures": 5000.0,
+       "status": "$3,737.81",
+       "url": "/ca/candidate/joe-martinez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "California State Assembly District 46",
+   "url": "/ca/race/california-state-assembly-district-46-56521",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1365150.0,
+   "totalExpenditures": 878207.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jesse Gabriel",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1362686.29,
+       "expenditures": 0.0,
+       "status": "$866,409.66",
+       "url": "/ca/candidate/jesse-gabriel?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Dana Caruso",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2464.0,
+       "expenditures": 4000.0,
+       "status": "$11,797.82",
+       "url": "/ca/candidate/dana-caruso?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Jesse Gabriel",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1362686.29,
+       "expenditures": 0.0,
+       "status": "$866,409.66",
+       "url": "/ca/candidate/jesse-gabriel?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Dana Caruso",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2464.0,
+       "expenditures": 4000.0,
+       "status": "$11,797.82",
+       "url": "/ca/candidate/dana-caruso?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "California State Assembly District 47",
+   "url": "/ca/race/california-state-assembly-district-47-56522",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 5021538.0,
+   "totalExpenditures": 5155603.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Greg Wallis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1838819.64,
+       "expenditures": 0.0,
+       "status": "$1,592,732.47",
+       "url": "/ca/candidate/greg-wallis?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Christy Holstege",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3182718.53,
+       "expenditures": 25000.0,
+       "status": "$3,562,870.87",
+       "url": "/ca/candidate/christy-holstege?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Christy Holstege",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3182718.53,
+       "expenditures": 25000.0,
+       "status": "$3,562,870.87",
+       "url": "/ca/candidate/christy-holstege?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Greg Wallis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1838819.64,
+       "expenditures": 0.0,
+       "status": "$1,592,732.47",
+       "url": "/ca/candidate/greg-wallis?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "California State Assembly District 48",
+   "url": "/ca/race/california-state-assembly-district-48-56523",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1771797.0,
+   "totalExpenditures": 2466425.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Blanca Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1771797.3,
+       "expenditures": 0.0,
+       "status": "$2,466,424.59",
+       "url": "/ca/candidate/blanca-rubio?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Blanca Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1771797.3,
+       "expenditures": 0.0,
+       "status": "$2,466,424.59",
+       "url": "/ca/candidate/blanca-rubio?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "California State Assembly District 49",
+   "url": "/ca/race/california-state-assembly-district-49-56524",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1961610.0,
+   "totalExpenditures": 1843402.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Mike Fong",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1889161.44,
+       "expenditures": 0.0,
+       "status": "$1,765,785.82",
+       "url": "/ca/candidate/mike-fong?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Burton Brink",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 72448.8,
+       "expenditures": 1000.0,
+       "status": "$77,616.08",
+       "url": "/ca/candidate/burton-brink?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Mike Fong",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1889161.44,
+       "expenditures": 0.0,
+       "status": "$1,765,785.82",
+       "url": "/ca/candidate/mike-fong?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Burton Brink",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 72448.8,
+       "expenditures": 1000.0,
+       "status": "$77,616.08",
+       "url": "/ca/candidate/burton-brink?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "California State Assembly District 5",
+   "url": "/ca/race/california-state-assembly-district-5-56525",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 779686.0,
+   "totalExpenditures": 913197.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Joe Patterson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 647073.56,
+       "expenditures": 10000.0,
+       "status": "$786,205.05",
+       "url": "/ca/candidate/joe-patterson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rebecca Chenoweth",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 59897.6,
+       "expenditures": 18000.0,
+       "status": "$63,634.03",
+       "url": "/ca/candidate/rebecca-chenoweth?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Rebecca Chenoweth",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 59897.6,
+       "expenditures": 18000.0,
+       "status": "$63,634.03",
+       "url": "/ca/candidate/rebecca-chenoweth?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joe Patterson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 647073.56,
+       "expenditures": 10000.0,
+       "status": "$786,205.05",
+       "url": "/ca/candidate/joe-patterson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jason Paletta",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 59681.91,
+       "expenditures": 6400.0,
+       "status": "$50,325.62",
+       "url": "/ca/candidate/jason-paletta?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jonathan Zachreson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13032.43,
+       "expenditures": 10000.0,
+       "status": "$13,032.43",
+       "url": "/ca/candidate/jonathan-zachreson?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "California State Assembly District 50",
+   "url": "/ca/race/california-state-assembly-district-50-56526",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2171919.0,
+   "totalExpenditures": 2563348.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Eloise Reyes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1039820.66,
+       "expenditures": 0.0,
+       "status": "$1,252,498.78",
+       "url": "/ca/candidate/eloise-reyes?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Sheela Stark",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33267.0,
+       "expenditures": 2930.02,
+       "status": "$36,127.00",
+       "url": "/ca/candidate/sheela-stark?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Eloise Reyes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1039820.66,
+       "expenditures": 0.0,
+       "status": "$1,252,498.78",
+       "url": "/ca/candidate/eloise-reyes?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Sheela Stark",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33267.0,
+       "expenditures": 2930.02,
+       "status": "$36,127.00",
+       "url": "/ca/candidate/sheela-stark?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Richard Bloom",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1098831.43,
+       "expenditures": 5000.0,
+       "status": "$1,274,721.95",
+       "url": "/ca/candidate/richard-bloom?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "California State Assembly District 51",
+   "url": "/ca/race/california-state-assembly-district-51-56527",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2416132.0,
+   "totalExpenditures": 3658847.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Rick Chavez Zbur",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2102977.04,
+       "expenditures": 40000.0,
+       "status": "$3,325,533.64",
+       "url": "/ca/candidate/rick-chavez-zbur?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Louis Abramson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 313154.57,
+       "expenditures": 14300.0,
+       "status": "$333,312.87",
+       "url": "/ca/candidate/louis-abramson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Louis Abramson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 313154.57,
+       "expenditures": 14300.0,
+       "status": "$333,312.87",
+       "url": "/ca/candidate/louis-abramson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rick Chavez Zbur",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2102977.04,
+       "expenditures": 40000.0,
+       "status": "$3,325,533.64",
+       "url": "/ca/candidate/rick-chavez-zbur?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "California State Assembly District 52",
+   "url": "/ca/race/california-state-assembly-district-52-56528",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1265782.0,
+   "totalExpenditures": 2146605.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Wendy Carrillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1094675.44,
+       "expenditures": 0.0,
+       "status": "$1,935,413.44",
+       "url": "/ca/candidate/wendy-carrillo?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mia Livas Porter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 164731.34,
+       "expenditures": 0.0,
+       "status": "$204,404.94",
+       "url": "/ca/candidate/mia-livas-porter?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Wendy Carrillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1094675.44,
+       "expenditures": 0.0,
+       "status": "$1,935,413.44",
+       "url": "/ca/candidate/wendy-carrillo?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mia Livas Porter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 164731.34,
+       "expenditures": 0.0,
+       "status": "$204,404.94",
+       "url": "/ca/candidate/mia-livas-porter?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Gia D'Amato",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6375.4,
+       "expenditures": 0.0,
+       "status": "$6,786.23",
+       "url": "/ca/candidate/gia-damato?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "California State Assembly District 53",
+   "url": "/ca/race/california-state-assembly-district-53-56529",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 969996.0,
+   "totalExpenditures": 1061138.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Freddie Rodriguez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 969996.41,
+       "expenditures": 0.0,
+       "status": "$1,061,138.38",
+       "url": "/ca/candidate/freddie-rodriguez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Freddie Rodriguez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 969996.41,
+       "expenditures": 0.0,
+       "status": "$1,061,138.38",
+       "url": "/ca/candidate/freddie-rodriguez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "California State Assembly District 54",
+   "url": "/ca/race/california-state-assembly-district-54-56530",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1601212.0,
+   "totalExpenditures": 804303.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Miguel Santiago",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1601212.4,
+       "expenditures": 0.0,
+       "status": "$804,302.66",
+       "url": "/ca/candidate/miguel-santiago?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Elaine Alaniz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/elaine-alaniz?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Miguel Santiago",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1601212.4,
+       "expenditures": 0.0,
+       "status": "$804,302.66",
+       "url": "/ca/candidate/miguel-santiago?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Elaine Alaniz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/elaine-alaniz?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "California State Assembly District 55",
+   "url": "/ca/race/california-state-assembly-district-55-56531",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1409644.0,
+   "totalExpenditures": 1517722.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Isaac Bryan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1409643.85,
+       "expenditures": 0.0,
+       "status": "$1,517,721.81",
+       "url": "/ca/candidate/isaac-bryan?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Keith Cascio",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/keith-cascio?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Isaac Bryan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1409643.85,
+       "expenditures": 0.0,
+       "status": "$1,517,721.81",
+       "url": "/ca/candidate/isaac-bryan?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Keith Cascio",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/keith-cascio?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "California State Assembly District 56",
+   "url": "/ca/race/california-state-assembly-district-56-56532",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1110807.0,
+   "totalExpenditures": 1351642.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Lisa Calderon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1033114.48,
+       "expenditures": 0.0,
+       "status": "$1,289,067.96",
+       "url": "/ca/candidate/lisa-calderon?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jessica Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 77692.74,
+       "expenditures": 0.0,
+       "status": "$62,574.01",
+       "url": "/ca/candidate/jessica-martinez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Lisa Calderon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1033114.48,
+       "expenditures": 0.0,
+       "status": "$1,289,067.96",
+       "url": "/ca/candidate/lisa-calderon?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jessica Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 77692.74,
+       "expenditures": 0.0,
+       "status": "$62,574.01",
+       "url": "/ca/candidate/jessica-martinez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "California State Assembly District 57",
+   "url": "/ca/race/california-state-assembly-district-57-56533",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 688767.0,
+   "totalExpenditures": 820566.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Reginald Byron Jones-Sawyer Sr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 688767.44,
+       "expenditures": 0.0,
+       "status": "$820,566.33",
+       "url": "/ca/candidate/reginald-byron-jones-sawyer-sr?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Reginald Byron Jones-Sawyer Sr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 688767.44,
+       "expenditures": 0.0,
+       "status": "$820,566.33",
+       "url": "/ca/candidate/reginald-byron-jones-sawyer-sr?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "California State Assembly District 58",
+   "url": "/ca/race/california-state-assembly-district-58-56534",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 974842.0,
+   "totalExpenditures": 1488887.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Sabrina Cervantes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 970999.77,
+       "expenditures": 0.0,
+       "status": "$1,487,190.45",
+       "url": "/ca/candidate/sabrina-cervantes?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Sabrina Cervantes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 970999.77,
+       "expenditures": 0.0,
+       "status": "$1,487,190.45",
+       "url": "/ca/candidate/sabrina-cervantes?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Leticia Castillo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3842.45,
+       "expenditures": 300.0,
+       "status": "$1,696.79",
+       "url": "/ca/candidate/leticia-castillo?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "California State Assembly District 59",
+   "url": "/ca/race/california-state-assembly-district-59-56535",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1088843.0,
+   "totalExpenditures": 760236.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Phillip Chen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1088842.53,
+       "expenditures": 0.0,
+       "status": "$760,235.77",
+       "url": "/ca/candidate/phillip-chen?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Phillip Chen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1088842.53,
+       "expenditures": 0.0,
+       "status": "$760,235.77",
+       "url": "/ca/candidate/phillip-chen?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "California State Assembly District 6",
+   "url": "/ca/race/california-state-assembly-district-6-56536",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1140460.0,
+   "totalExpenditures": 1713337.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Kevin McCarty",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 924666.12,
+       "expenditures": 0.0,
+       "status": "$1,396,172.13",
+       "url": "/ca/candidate/kevin-mccarty?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Cathy Cook",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 44087.59,
+       "expenditures": 30500.0,
+       "status": "$48,675.00",
+       "url": "/ca/candidate/cathy-cook?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Kevin McCarty",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 924666.12,
+       "expenditures": 0.0,
+       "status": "$1,396,172.13",
+       "url": "/ca/candidate/kevin-mccarty?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Cathy Cook",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 44087.59,
+       "expenditures": 30500.0,
+       "status": "$48,675.00",
+       "url": "/ca/candidate/cathy-cook?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Josh Pane",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 171706.41,
+       "expenditures": 0.0,
+       "status": "$268,490.00",
+       "url": "/ca/candidate/josh-pane?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "California State Assembly District 60",
+   "url": "/ca/race/california-state-assembly-district-60-56537",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 722920.0,
+   "totalExpenditures": 899746.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Corey Jackson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 462880.51,
+       "expenditures": 25000.0,
+       "status": "$514,984.03",
+       "url": "/ca/candidate/corey-jackson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Hector Diaz Nava",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15875.0,
+       "expenditures": 80000.0,
+       "status": "$90,215.67",
+       "url": "/ca/candidate/diaz-nava?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Corey Jackson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 462880.51,
+       "expenditures": 25000.0,
+       "status": "$514,984.03",
+       "url": "/ca/candidate/corey-jackson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Hector Diaz Nava",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15875.0,
+       "expenditures": 80000.0,
+       "status": "$90,215.67",
+       "url": "/ca/candidate/diaz-nava?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Esther Portillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 215743.94,
+       "expenditures": 0.0,
+       "status": "$263,054.95",
+       "url": "/ca/candidate/esther-portillo?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jasmin Rubio",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 28421.0,
+       "expenditures": 0.0,
+       "status": "$31,490.85",
+       "url": "/ca/candidate/jasmin-rubio?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "California State Assembly District 61",
+   "url": "/ca/race/california-state-assembly-district-61-56538",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1699691.0,
+   "totalExpenditures": 2071519.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Tina McKinnor",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1016021.33,
+       "expenditures": 26000.0,
+       "status": "$1,141,769.49",
+       "url": "/ca/candidate/tina-mckinnor?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Robert Pullen-Miles",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 433265.01,
+       "expenditures": 0.0,
+       "status": "$623,836.55",
+       "url": "/ca/candidate/robert-pullen-miles?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Tina McKinnor",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1016021.33,
+       "expenditures": 26000.0,
+       "status": "$1,141,769.49",
+       "url": "/ca/candidate/tina-mckinnor?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Robert Pullen-Miles",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 433265.01,
+       "expenditures": 0.0,
+       "status": "$623,836.55",
+       "url": "/ca/candidate/robert-pullen-miles?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Angie Reyes English",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 92978.71,
+       "expenditures": 0.0,
+       "status": "$79,940.32",
+       "url": "/ca/candidate/angie-reyes-english?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Nico Ruderman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 151726.33,
+       "expenditures": 2200.0,
+       "status": "$220,168.27",
+       "url": "/ca/candidate/nico-ruderman?cycle=2022-election-cycle"
+      },
+      {
+       "name": "James Spencer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5700.0,
+       "expenditures": 200.0,
+       "status": "$5,804.30",
+       "url": "/ca/candidate/james-spencer?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "California State Assembly District 62",
+   "url": "/ca/race/california-state-assembly-district-62-56539",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2223533.0,
+   "totalExpenditures": 2613825.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Anthony Rendon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2223532.71,
+       "expenditures": 0.0,
+       "status": "$2,613,825.46",
+       "url": "/ca/candidate/anthony-rendon?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Maria Estrada",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/maria-estrada?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Anthony Rendon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2223532.71,
+       "expenditures": 0.0,
+       "status": "$2,613,825.46",
+       "url": "/ca/candidate/anthony-rendon?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Maria Estrada",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/maria-estrada?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "California State Assembly District 63",
+   "url": "/ca/race/california-state-assembly-district-63-56540",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 932990.0,
+   "totalExpenditures": 1258226.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Bill Essayli",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 478960.29,
+       "expenditures": 0.0,
+       "status": "$571,793.71",
+       "url": "/ca/candidate/bill-essayli?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Fauzia Rizvi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 310444.85,
+       "expenditures": 0.0,
+       "status": "$490,484.61",
+       "url": "/ca/candidate/fauzia-rizvi?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Fauzia Rizvi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 310444.85,
+       "expenditures": 0.0,
+       "status": "$490,484.61",
+       "url": "/ca/candidate/fauzia-rizvi?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bill Essayli",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 478960.29,
+       "expenditures": 0.0,
+       "status": "$571,793.71",
+       "url": "/ca/candidate/bill-essayli?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Clint Lorimore",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 143585.0,
+       "expenditures": 0.0,
+       "status": "$195,947.96",
+       "url": "/ca/candidate/clint-lorimore?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "63"
+  },
+  {
+   "office": "California State Assembly District 64",
+   "url": "/ca/race/california-state-assembly-district-64-56541",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1547234.0,
+   "totalExpenditures": 1874695.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Blanca Pacheco",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1021846.55,
+       "expenditures": 50000.0,
+       "status": "$1,011,449.21",
+       "url": "/ca/candidate/blanca-pacheco?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Raul Ortiz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8759.88,
+       "expenditures": 638.4,
+       "status": "$9,347.75",
+       "url": "/ca/candidate/raul-ortiz?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Blanca Pacheco",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1021846.55,
+       "expenditures": 50000.0,
+       "status": "$1,011,449.21",
+       "url": "/ca/candidate/blanca-pacheco?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Raul Ortiz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8759.88,
+       "expenditures": 638.4,
+       "status": "$9,347.75",
+       "url": "/ca/candidate/raul-ortiz?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Elizabeth Alcantar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 287489.7,
+       "expenditures": 500.0,
+       "status": "$374,099.06",
+       "url": "/ca/candidate/elizabeth-alcantar?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Robert Cancio",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 161353.48,
+       "expenditures": 100000.0,
+       "status": "$314,399.95",
+       "url": "/ca/candidate/robert-cancio?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rose Espinoza",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13843.36,
+       "expenditures": 1750.0,
+       "status": "$13,700.72",
+       "url": "/ca/candidate/rose-espinoza?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ana Valencia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 53941.0,
+       "expenditures": 100000.0,
+       "status": "$151,698.32",
+       "url": "/ca/candidate/ana-valencia?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "64"
+  },
+  {
+   "office": "California State Assembly District 65",
+   "url": "/ca/race/california-state-assembly-district-65-56542",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2615306.0,
+   "totalExpenditures": 3344795.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Mike Gipson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1862486.61,
+       "expenditures": 0.0,
+       "status": "$2,550,961.12",
+       "url": "/ca/candidate/mike-gipson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Fatima Iqbal-Zubair",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 752819.27,
+       "expenditures": 95000.0,
+       "status": "$793,833.75",
+       "url": "/ca/candidate/fatima-iqbal-zubair?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Mike Gipson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1862486.61,
+       "expenditures": 0.0,
+       "status": "$2,550,961.12",
+       "url": "/ca/candidate/mike-gipson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Fatima Iqbal-Zubair",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 752819.27,
+       "expenditures": 95000.0,
+       "status": "$793,833.75",
+       "url": "/ca/candidate/fatima-iqbal-zubair?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Lydia A. Gutiérrez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/lydia-a-gutierrez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "65"
+  },
+  {
+   "office": "California State Assembly District 66",
+   "url": "/ca/race/california-state-assembly-district-66-56543",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 562274.0,
+   "totalExpenditures": 456993.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Al Muratsuchi",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 562274.0,
+       "expenditures": 0.0,
+       "status": "$456,992.84",
+       "url": "/ca/candidate/al-muratsuchi?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Al Muratsuchi",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 562274.0,
+       "expenditures": 0.0,
+       "status": "$456,992.84",
+       "url": "/ca/candidate/al-muratsuchi?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "66"
+  },
+  {
+   "office": "California State Assembly District 67",
+   "url": "/ca/race/california-state-assembly-district-67-56544",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1748168.0,
+   "totalExpenditures": 3219723.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Sharon Quirk- Silva",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1244224.02,
+       "expenditures": 0.0,
+       "status": "$2,579,012.15",
+       "url": "/ca/candidate/sharon-quirk-silva?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Soo Yoo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 479720.87,
+       "expenditures": 29000.0,
+       "status": "$610,045.80",
+       "url": "/ca/candidate/soo-yoo?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Sharon Quirk- Silva",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1244224.02,
+       "expenditures": 0.0,
+       "status": "$2,579,012.15",
+       "url": "/ca/candidate/sharon-quirk-silva?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Soo Yoo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 479720.87,
+       "expenditures": 29000.0,
+       "status": "$610,045.80",
+       "url": "/ca/candidate/soo-yoo?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Param Brar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 24223.0,
+       "expenditures": 13000.0,
+       "status": "$30,665.44",
+       "url": "/ca/candidate/param-brar?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "67"
+  },
+  {
+   "office": "California State Assembly District 68",
+   "url": "/ca/race/california-state-assembly-district-68-56545",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1007710.0,
+   "totalExpenditures": 993907.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Avelino Valencia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 932439.8,
+       "expenditures": 0.0,
+       "status": "$919,306.27",
+       "url": "/ca/candidate/avelino-valencia?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mike Tardif",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2000.0,
+       "expenditures": 0.0,
+       "status": "$229.56",
+       "url": "/ca/candidate/mike-tardif?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Avelino Valencia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 932439.8,
+       "expenditures": 0.0,
+       "status": "$919,306.27",
+       "url": "/ca/candidate/avelino-valencia?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mike Tardif",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2000.0,
+       "expenditures": 0.0,
+       "status": "$229.56",
+       "url": "/ca/candidate/mike-tardif?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bulmaro Vicente",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 73269.72,
+       "expenditures": 0.0,
+       "status": "$74,371.18",
+       "url": "/ca/candidate/bulmaro-vicente?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "68"
+  },
+  {
+   "office": "California State Assembly District 69",
+   "url": "/ca/race/california-state-assembly-district-69-56546",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1873589.0,
+   "totalExpenditures": 1879513.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Josh Lowenthal",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1580905.53,
+       "expenditures": 0.0,
+       "status": "$1,549,972.74",
+       "url": "/ca/candidate/josh-lowenthal?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Al Austin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 265648.0,
+       "expenditures": 0.0,
+       "status": "$317,158.44",
+       "url": "/ca/candidate/al-austin?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Al Austin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 265648.0,
+       "expenditures": 0.0,
+       "status": "$317,158.44",
+       "url": "/ca/candidate/al-austin?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Josh Lowenthal",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1580905.53,
+       "expenditures": 0.0,
+       "status": "$1,549,972.74",
+       "url": "/ca/candidate/josh-lowenthal?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Janet Foster",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5970.88,
+       "expenditures": 8000.0,
+       "status": "$7,168.90",
+       "url": "/ca/candidate/janet-foster?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Merry Taheri",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 21065.0,
+       "expenditures": 0.0,
+       "status": "$5,212.54",
+       "url": "/ca/candidate/merry-taheri?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "69"
+  },
+  {
+   "office": "California State Assembly District 7",
+   "url": "/ca/race/california-state-assembly-district-7-56547",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 6256968.0,
+   "totalExpenditures": 9307831.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Josh Hoover",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1454784.05,
+       "expenditures": 0.0,
+       "status": "$1,897,980.04",
+       "url": "/ca/candidate/josh-hoover?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ken Cooley",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 4777701.02,
+       "expenditures": 0.0,
+       "status": "$7,385,905.70",
+       "url": "/ca/candidate/ken-cooley?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Ken Cooley",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 4777701.02,
+       "expenditures": 0.0,
+       "status": "$7,385,905.70",
+       "url": "/ca/candidate/ken-cooley?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Josh Hoover",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1454784.05,
+       "expenditures": 0.0,
+       "status": "$1,897,980.04",
+       "url": "/ca/candidate/josh-hoover?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ray Riehle",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24482.76,
+       "expenditures": 7410.0,
+       "status": "$23,944.98",
+       "url": "/ca/candidate/ray-riehle?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "California State Assembly District 70",
+   "url": "/ca/race/california-state-assembly-district-70-56548",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2318907.0,
+   "totalExpenditures": 2918853.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Tri Ta",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 969613.51,
+       "expenditures": 25000.0,
+       "status": "$1,057,241.23",
+       "url": "/ca/candidate/tri-ta?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Diedre Thu-Ha Nguyen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 786571.5,
+       "expenditures": 20000.0,
+       "status": "$866,293.56",
+       "url": "/ca/candidate/diedre-thu-ha-nguyen?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Diedre Thu-Ha Nguyen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 786571.5,
+       "expenditures": 20000.0,
+       "status": "$866,293.56",
+       "url": "/ca/candidate/diedre-thu-ha-nguyen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tri Ta",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 969613.51,
+       "expenditures": 25000.0,
+       "status": "$1,057,241.23",
+       "url": "/ca/candidate/tri-ta?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ted Bui",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 144747.0,
+       "expenditures": 100000.0,
+       "status": "$374,961.37",
+       "url": "/ca/candidate/ted-bui?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Emily Hibard",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 29785.47,
+       "expenditures": 0.0,
+       "status": "$26,386.31",
+       "url": "/ca/candidate/emily-hibard?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kimberly Ho",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 388190.0,
+       "expenditures": 100000.0,
+       "status": "$593,970.86",
+       "url": "/ca/candidate/kimberly-ho?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "70"
+  },
+  {
+   "office": "California State Assembly District 71",
+   "url": "/ca/race/california-state-assembly-district-71-56549",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 523559.0,
+   "totalExpenditures": 754407.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Kate Sanchez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 118341.01,
+       "expenditures": 1000.0,
+       "status": "$146,723.13",
+       "url": "/ca/candidate/kate-sanchez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Matt Rahn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 405218.29,
+       "expenditures": 100000.0,
+       "status": "$607,683.94",
+       "url": "/ca/candidate/matt-rahn?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Matt Rahn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 405218.29,
+       "expenditures": 100000.0,
+       "status": "$607,683.94",
+       "url": "/ca/candidate/matt-rahn?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kate Sanchez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 118341.01,
+       "expenditures": 1000.0,
+       "status": "$146,723.13",
+       "url": "/ca/candidate/kate-sanchez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "71"
+  },
+  {
+   "office": "California State Assembly District 72",
+   "url": "/ca/race/california-state-assembly-district-72-56550",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1210147.0,
+   "totalExpenditures": 1511842.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Diane Dixon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 896066.93,
+       "expenditures": 500.0,
+       "status": "$1,122,990.94",
+       "url": "/ca/candidate/diane-dixon?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Judie Mancuso",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 286292.79,
+       "expenditures": 0.0,
+       "status": "$335,776.02",
+       "url": "/ca/candidate/judie-mancuso?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Judie Mancuso",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 286292.79,
+       "expenditures": 0.0,
+       "status": "$335,776.02",
+       "url": "/ca/candidate/judie-mancuso?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Diane Dixon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 896066.93,
+       "expenditures": 500.0,
+       "status": "$1,122,990.94",
+       "url": "/ca/candidate/diane-dixon?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Benjamin Yu",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27787.04,
+       "expenditures": 27700.0,
+       "status": "$53,075.29",
+       "url": "/ca/candidate/benjamin-yu?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "72"
+  },
+  {
+   "office": "California State Assembly District 73",
+   "url": "/ca/race/california-state-assembly-district-73-56551",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1986177.0,
+   "totalExpenditures": 2653085.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Cottie Petrie-Norris",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1626707.09,
+       "expenditures": 0.0,
+       "status": "$2,095,210.87",
+       "url": "/ca/candidate/cottie-petrie-norris?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Steven Choi",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 359469.44,
+       "expenditures": 0.0,
+       "status": "$557,873.63",
+       "url": "/ca/candidate/steven-choi?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Cottie Petrie-Norris",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1626707.09,
+       "expenditures": 0.0,
+       "status": "$2,095,210.87",
+       "url": "/ca/candidate/cottie-petrie-norris?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Steven Choi",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 359469.44,
+       "expenditures": 0.0,
+       "status": "$557,873.63",
+       "url": "/ca/candidate/steven-choi?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "73"
+  },
+  {
+   "office": "California State Assembly District 74",
+   "url": "/ca/race/california-state-assembly-district-74-56552",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1941147.0,
+   "totalExpenditures": 2328370.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Laurie Davies",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 910393.69,
+       "expenditures": 0.0,
+       "status": "$1,339,627.59",
+       "url": "/ca/candidate/laurie-davies?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Chris Duncan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1030753.36,
+       "expenditures": 10000.0,
+       "status": "$988,742.77",
+       "url": "/ca/candidate/chris-duncan?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Laurie Davies",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 910393.69,
+       "expenditures": 0.0,
+       "status": "$1,339,627.59",
+       "url": "/ca/candidate/laurie-davies?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Chris Duncan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1030753.36,
+       "expenditures": 10000.0,
+       "status": "$988,742.77",
+       "url": "/ca/candidate/chris-duncan?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "74"
+  },
+  {
+   "office": "California State Assembly District 75",
+   "url": "/ca/race/california-state-assembly-district-75-56553",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 653591.0,
+   "totalExpenditures": 1370795.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Marie Waldron",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 571812.8,
+       "expenditures": 0.0,
+       "status": "$1,166,398.95",
+       "url": "/ca/candidate/marie-waldron?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Randy Voepel",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 81777.79,
+       "expenditures": 0.0,
+       "status": "$204,396.07",
+       "url": "/ca/candidate/randy-voepel?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Randy Voepel",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 81777.79,
+       "expenditures": 0.0,
+       "status": "$204,396.07",
+       "url": "/ca/candidate/randy-voepel?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Marie Waldron",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 571812.8,
+       "expenditures": 0.0,
+       "status": "$1,166,398.95",
+       "url": "/ca/candidate/marie-waldron?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "75"
+  },
+  {
+   "office": "California State Assembly District 76",
+   "url": "/ca/race/california-state-assembly-district-76-56554",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2954399.0,
+   "totalExpenditures": 5491561.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Brian Maienschein",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2155873.56,
+       "expenditures": 0.0,
+       "status": "$4,177,148.37",
+       "url": "/ca/candidate/brian-maienschein?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kristie Bruce-Lane",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 617972.84,
+       "expenditures": 100100.0,
+       "status": "$999,974.28",
+       "url": "/ca/candidate/kristie-bruce-lane?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Brian Maienschein",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2155873.56,
+       "expenditures": 0.0,
+       "status": "$4,177,148.37",
+       "url": "/ca/candidate/brian-maienschein?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kristie Bruce-Lane",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 617972.84,
+       "expenditures": 100100.0,
+       "status": "$999,974.28",
+       "url": "/ca/candidate/kristie-bruce-lane?cycle=2022-election-cycle"
+      },
+      {
+       "name": "June Yang Cutter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 180552.62,
+       "expenditures": 0.0,
+       "status": "$314,438.61",
+       "url": "/ca/candidate/june-yang-cutter?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "76"
+  },
+  {
+   "office": "California State Assembly District 77",
+   "url": "/ca/race/california-state-assembly-district-77-56555",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 770829.0,
+   "totalExpenditures": 1308903.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Tasha Boerner Horvath",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 748370.04,
+       "expenditures": 0.0,
+       "status": "$1,286,507.24",
+       "url": "/ca/candidate/tasha-boerner-horvath?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Dan Downey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22459.02,
+       "expenditures": 0.0,
+       "status": "$22,396.17",
+       "url": "/ca/candidate/dan-downey?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Tasha Boerner Horvath",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 748370.04,
+       "expenditures": 0.0,
+       "status": "$1,286,507.24",
+       "url": "/ca/candidate/tasha-boerner-horvath?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Dan Downey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22459.02,
+       "expenditures": 0.0,
+       "status": "$22,396.17",
+       "url": "/ca/candidate/dan-downey?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "77"
+  },
+  {
+   "office": "California State Assembly District 78",
+   "url": "/ca/race/california-state-assembly-district-78-56556",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 796392.0,
+   "totalExpenditures": 827238.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Chris Ward",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 796392.38,
+       "expenditures": 0.0,
+       "status": "$827,237.97",
+       "url": "/ca/candidate/chris-ward?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Chris Ward",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 796392.38,
+       "expenditures": 0.0,
+       "status": "$827,237.97",
+       "url": "/ca/candidate/chris-ward?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "78"
+  },
+  {
+   "office": "California State Assembly District 79",
+   "url": "/ca/race/california-state-assembly-district-79-56557",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 909268.0,
+   "totalExpenditures": 565077.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Akilah Weber",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 898889.88,
+       "expenditures": 0.0,
+       "status": "$555,148.68",
+       "url": "/ca/candidate/akilah-weber?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Corbin Sabol",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10378.6,
+       "expenditures": 300.0,
+       "status": "$9,928.60",
+       "url": "/ca/candidate/corbin-sabol?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Akilah Weber",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 898889.88,
+       "expenditures": 0.0,
+       "status": "$555,148.68",
+       "url": "/ca/candidate/akilah-weber?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Corbin Sabol",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10378.6,
+       "expenditures": 300.0,
+       "status": "$9,928.60",
+       "url": "/ca/candidate/corbin-sabol?cycle=2022-election-cycle"
+      },
+      {
+       "name": "John Moore",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/john-moore?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "79"
+  },
+  {
+   "office": "California State Assembly District 8",
+   "url": "/ca/race/california-state-assembly-district-8-56558",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 842952.0,
+   "totalExpenditures": 1060245.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jim Patterson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 842952.48,
+       "expenditures": 0.0,
+       "status": "$1,060,244.58",
+       "url": "/ca/candidate/jim-patterson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Jim Patterson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 842952.48,
+       "expenditures": 0.0,
+       "status": "$1,060,244.58",
+       "url": "/ca/candidate/jim-patterson?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "California State Assembly District 80",
+   "url": "/ca/race/california-state-assembly-district-80-56559",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2939629.0,
+   "totalExpenditures": 4092633.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "David Alvarez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1847709.97,
+       "expenditures": 27320.74,
+       "status": "$2,297,623.10",
+       "url": "/ca/candidate/david-alvarez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Georgette Gomez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1017641.39,
+       "expenditures": 0.0,
+       "status": "$1,724,329.54",
+       "url": "/ca/candidate/georgette-gomez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "David Alvarez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1847709.97,
+       "expenditures": 27320.74,
+       "status": "$2,297,623.10",
+       "url": "/ca/candidate/david-alvarez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Georgette Gomez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1017641.39,
+       "expenditures": 0.0,
+       "status": "$1,724,329.54",
+       "url": "/ca/candidate/georgette-gomez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Steve Sanchez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 74277.63,
+       "expenditures": 0.0,
+       "status": "$70,679.99",
+       "url": "/ca/candidate/steve-sanchez?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "80"
+  },
+  {
+   "office": "California State Assembly District 9",
+   "url": "/ca/race/california-state-assembly-district-9-56560",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1145797.0,
+   "totalExpenditures": 1741244.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Heath Flora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1145796.74,
+       "expenditures": 0.0,
+       "status": "$1,741,243.65",
+       "url": "/ca/candidate/heath-flora?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Heath Flora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1145796.74,
+       "expenditures": 0.0,
+       "status": "$1,741,243.65",
+       "url": "/ca/candidate/heath-flora?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "California State Senate District 10",
+   "url": "/ca/race/california-state-senate-district-10-56465",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2595706.0,
+   "totalExpenditures": 3279210.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Aisha Wahab",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1305539.57,
+       "expenditures": 0.0,
+       "status": "$1,784,784.11",
+       "url": "/ca/candidate/aisha-wahab?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Lily Mei",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1110969.89,
+       "expenditures": 50000.0,
+       "status": "$1,328,498.18",
+       "url": "/ca/candidate/lily-mei?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Lily Mei",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1110969.89,
+       "expenditures": 50000.0,
+       "status": "$1,328,498.18",
+       "url": "/ca/candidate/lily-mei?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Aisha Wahab",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1305539.57,
+       "expenditures": 0.0,
+       "status": "$1,784,784.11",
+       "url": "/ca/candidate/aisha-wahab?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jim Canova",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10423.0,
+       "expenditures": 0.0,
+       "status": "$10,423.00",
+       "url": "/ca/candidate/jim-canova?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jamal Khan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 50501.0,
+       "expenditures": 0.0,
+       "status": "$48,215.00",
+       "url": "/ca/candidate/jamal-khan?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Raymond Liu",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/raymond-liu?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jaime Raul Zepeda",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33661.55,
+       "expenditures": 0.0,
+       "status": "$20,178.13",
+       "url": "/ca/candidate/jaime-raul-zepeda?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Paul Pimentel",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 84610.65,
+       "expenditures": 100000.0,
+       "status": "$87,111.27",
+       "url": "/ca/candidate/paul-pimentel?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "10"
+  },
+  {
+   "office": "California State Senate District 12",
+   "url": "/ca/race/california-state-senate-district-12-56466",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 962973.0,
+   "totalExpenditures": 1420581.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Shannon Grove",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 962973.03,
+       "expenditures": 0.0,
+       "status": "$1,420,580.60",
+       "url": "/ca/candidate/shannon-grove?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Shannon Grove",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 962973.03,
+       "expenditures": 0.0,
+       "status": "$1,420,580.60",
+       "url": "/ca/candidate/shannon-grove?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "12"
+  },
+  {
+   "office": "California State Senate District 14",
+   "url": "/ca/race/california-state-senate-district-14-56467",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 6372064.0,
+   "totalExpenditures": 8929599.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Anna Caballero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1192828.36,
+       "expenditures": 0.0,
+       "status": "$1,998,636.59",
+       "url": "/ca/candidate/anna-caballero?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Amnon Shor",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 40918.0,
+       "expenditures": 4000.0,
+       "status": "$47,721.10",
+       "url": "/ca/candidate/amnon-shor?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Anna Caballero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1192828.36,
+       "expenditures": 0.0,
+       "status": "$1,998,636.59",
+       "url": "/ca/candidate/anna-caballero?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Amnon Shor",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 40918.0,
+       "expenditures": 4000.0,
+       "status": "$47,721.10",
+       "url": "/ca/candidate/amnon-shor?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Melissa Hurtado",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 5138317.37,
+       "expenditures": 0.0,
+       "status": "$6,883,241.39",
+       "url": "/ca/candidate/melissa-hurtado?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Paulina Miranda",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/paulina-miranda?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "14"
+  },
+  {
+   "office": "California State Senate District 16",
+   "url": "/ca/race/california-state-senate-district-16-56468",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 6638933.0,
+   "totalExpenditures": 8538566.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Melissa Hurtado",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 5138317.37,
+       "expenditures": 0.0,
+       "status": "$6,883,241.39",
+       "url": "/ca/candidate/melissa-hurtado?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David Shepard",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1188315.13,
+       "expenditures": 1000.0,
+       "status": "$1,325,497.11",
+       "url": "/ca/candidate/david-shepard?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Melissa Hurtado",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 5138317.37,
+       "expenditures": 0.0,
+       "status": "$6,883,241.39",
+       "url": "/ca/candidate/melissa-hurtado?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David Shepard",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1188315.13,
+       "expenditures": 1000.0,
+       "status": "$1,325,497.11",
+       "url": "/ca/candidate/david-shepard?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Imelda Ceja",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 22042.0,
+       "expenditures": 0.0,
+       "status": "$17,176.66",
+       "url": "/ca/candidate/imelda-ceja?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bryan Osorio",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 64692.91,
+       "expenditures": 2255.86,
+       "status": "$76,772.11",
+       "url": "/ca/candidate/bryan-osorio?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Nicole Parra",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 225566.04,
+       "expenditures": 0.0,
+       "status": "$235,878.66",
+       "url": "/ca/candidate/nicole-parra?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "16"
+  },
+  {
+   "office": "California State Senate District 18",
+   "url": "/ca/race/california-state-senate-district-18-56469",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 898713.0,
+   "totalExpenditures": 1196721.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Steve Padilla",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 898713.35,
+       "expenditures": 0.0,
+       "status": "$1,196,720.52",
+       "url": "/ca/candidate/steve-padilla?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Steve Padilla",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 898713.35,
+       "expenditures": 0.0,
+       "status": "$1,196,720.52",
+       "url": "/ca/candidate/steve-padilla?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "18"
+  },
+  {
+   "office": "California State Senate District 2",
+   "url": "/ca/race/california-state-senate-district-2-56461",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1063326.0,
+   "totalExpenditures": 1062435.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Mike McGuire",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1039313.84,
+       "expenditures": 0.0,
+       "status": "$991,341.80",
+       "url": "/ca/candidate/mike-mcguire?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Gene Yoon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24012.17,
+       "expenditures": 31000.0,
+       "status": "$71,093.54",
+       "url": "/ca/candidate/gene-yoon?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Mike McGuire",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1039313.84,
+       "expenditures": 0.0,
+       "status": "$991,341.80",
+       "url": "/ca/candidate/mike-mcguire?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Gene Yoon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24012.17,
+       "expenditures": 31000.0,
+       "status": "$71,093.54",
+       "url": "/ca/candidate/gene-yoon?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "2"
+  },
+  {
+   "office": "California State Senate District 20",
+   "url": "/ca/race/california-state-senate-district-20-56470",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2233096.0,
+   "totalExpenditures": 3297183.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Caroline Menjivar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 977106.91,
+       "expenditures": 0.0,
+       "status": "$1,307,266.09",
+       "url": "/ca/candidate/caroline-menjivar?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Daniel Hertzberg",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1200844.56,
+       "expenditures": 0.0,
+       "status": "$1,918,705.75",
+       "url": "/ca/candidate/daniel-hertzberg?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Daniel Hertzberg",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1200844.56,
+       "expenditures": 0.0,
+       "status": "$1,918,705.75",
+       "url": "/ca/candidate/daniel-hertzberg?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Caroline Menjivar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 977106.91,
+       "expenditures": 0.0,
+       "status": "$1,307,266.09",
+       "url": "/ca/candidate/caroline-menjivar?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Seydi Alejandra Morales",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 55144.72,
+       "expenditures": 11650.0,
+       "status": "$71,210.88",
+       "url": "/ca/candidate/seydi-alejandra-morales?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "20"
+  },
+  {
+   "office": "California State Senate District 22",
+   "url": "/ca/race/california-state-senate-district-22-56471",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1432130.0,
+   "totalExpenditures": 1786948.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Susan Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1420676.13,
+       "expenditures": 0.0,
+       "status": "$1,776,677.87",
+       "url": "/ca/candidate/susan-rubio?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Vincent Tsai",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11453.5,
+       "expenditures": 3700.0,
+       "status": "$10,269.94",
+       "url": "/ca/candidate/vincent-tsai?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Susan Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1420676.13,
+       "expenditures": 0.0,
+       "status": "$1,776,677.87",
+       "url": "/ca/candidate/susan-rubio?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Vincent Tsai",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11453.5,
+       "expenditures": 3700.0,
+       "status": "$10,269.94",
+       "url": "/ca/candidate/vincent-tsai?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "22"
+  },
+  {
+   "office": "California State Senate District 24",
+   "url": "/ca/race/california-state-senate-district-24-56472",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 624506.0,
+   "totalExpenditures": 724974.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Ben Allen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 597622.61,
+       "expenditures": 0.0,
+       "status": "$707,650.68",
+       "url": "/ca/candidate/ben-allen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kristina Irwin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26882.96,
+       "expenditures": 0.0,
+       "status": "$17,323.20",
+       "url": "/ca/candidate/kristina-irwin?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Ben Allen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 597622.61,
+       "expenditures": 0.0,
+       "status": "$707,650.68",
+       "url": "/ca/candidate/ben-allen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kristina Irwin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26882.96,
+       "expenditures": 0.0,
+       "status": "$17,323.20",
+       "url": "/ca/candidate/kristina-irwin?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "24"
+  },
+  {
+   "office": "California State Senate District 26",
+   "url": "/ca/race/california-state-senate-district-26-56473",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 737729.0,
+   "totalExpenditures": 528950.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Maria Durazo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 735799.0,
+       "expenditures": 0.0,
+       "status": "$527,425.87",
+       "url": "/ca/candidate/maria-durazo?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Claudia Agraz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1930.0,
+       "expenditures": 8200.0,
+       "status": "$1,524.31",
+       "url": "/ca/candidate/claudia-agraz?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Maria Durazo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 735799.0,
+       "expenditures": 0.0,
+       "status": "$527,425.87",
+       "url": "/ca/candidate/maria-durazo?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Claudia Agraz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1930.0,
+       "expenditures": 8200.0,
+       "status": "$1,524.31",
+       "url": "/ca/candidate/claudia-agraz?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "26"
+  },
+  {
+   "office": "California State Senate District 28",
+   "url": "/ca/race/california-state-senate-district-28-56474",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1114159.0,
+   "totalExpenditures": 1300131.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Lola Smallwood- Cuevas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 939181.99,
+       "expenditures": 1036.58,
+       "status": "$1,014,690.03",
+       "url": "/ca/candidate/lola-smallwood-cuevas?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Cheryl Turner",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47765.0,
+       "expenditures": 172841.13,
+       "status": "$227,000.00",
+       "url": "/ca/candidate/cheryl-turner?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Lola Smallwood- Cuevas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 939181.99,
+       "expenditures": 1036.58,
+       "status": "$1,014,690.03",
+       "url": "/ca/candidate/lola-smallwood-cuevas?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Cheryl Turner",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47765.0,
+       "expenditures": 172841.13,
+       "status": "$227,000.00",
+       "url": "/ca/candidate/cheryl-turner?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Lisa Middleton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 113135.01,
+       "expenditures": 0.0,
+       "status": "$51,333.72",
+       "url": "/ca/candidate/lisa-middleton?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joe Lisuzzo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14076.99,
+       "expenditures": 0.0,
+       "status": "$7,107.00",
+       "url": "/ca/candidate/joe-lisuzzo?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "28"
+  },
+  {
+   "office": "California State Senate District 30",
+   "url": "/ca/race/california-state-senate-district-30-56475",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1894298.0,
+   "totalExpenditures": 2575316.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Bob Archuleta",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1477251.42,
+       "expenditures": 2500.0,
+       "status": "$1,734,936.46",
+       "url": "/ca/candidate/bob-archuleta?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mitch Clemmons",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6935.0,
+       "expenditures": 2900.0,
+       "status": "$9,663.37",
+       "url": "/ca/candidate/mitch-clemmons?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Bob Archuleta",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1477251.42,
+       "expenditures": 2500.0,
+       "status": "$1,734,936.46",
+       "url": "/ca/candidate/bob-archuleta?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mitch Clemmons",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6935.0,
+       "expenditures": 2900.0,
+       "status": "$9,663.37",
+       "url": "/ca/candidate/mitch-clemmons?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Henry Bouchot",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 410111.09,
+       "expenditures": 110000.0,
+       "status": "$830,716.27",
+       "url": "/ca/candidate/henry-bouchot?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "30"
+  },
+  {
+   "office": "California State Senate District 32",
+   "url": "/ca/race/california-state-senate-district-32-56476",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1977315.0,
+   "totalExpenditures": 2287574.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Kelly Seyarto",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 500063.86,
+       "expenditures": 30000.0,
+       "status": "$552,637.34",
+       "url": "/ca/candidate/kelly-seyarto?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Kelly Seyarto",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 500063.86,
+       "expenditures": 30000.0,
+       "status": "$552,637.34",
+       "url": "/ca/candidate/kelly-seyarto?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bob Archuleta",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1477251.42,
+       "expenditures": 2500.0,
+       "status": "$1,734,936.46",
+       "url": "/ca/candidate/bob-archuleta?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "32"
+  },
+  {
+   "office": "California State Senate District 34",
+   "url": "/ca/race/california-state-senate-district-34-56477",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1410562.0,
+   "totalExpenditures": 874759.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Tom Umberg",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1326082.33,
+       "expenditures": 0.0,
+       "status": "$782,587.31",
+       "url": "/ca/candidate/tom-umberg?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rhonda Shader",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 83994.59,
+       "expenditures": 0.0,
+       "status": "$88,852.23",
+       "url": "/ca/candidate/rhonda-shader?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Tom Umberg",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1326082.33,
+       "expenditures": 0.0,
+       "status": "$782,587.31",
+       "url": "/ca/candidate/tom-umberg?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rhonda Shader",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 83994.59,
+       "expenditures": 0.0,
+       "status": "$88,852.23",
+       "url": "/ca/candidate/rhonda-shader?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David Hillberg",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 485.49,
+       "expenditures": 5500.0,
+       "status": "$3,319.30",
+       "url": "/ca/candidate/david-hillberg?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "34"
+  },
+  {
+   "office": "California State Senate District 36",
+   "url": "/ca/race/california-state-senate-district-36-56478",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 7623043.0,
+   "totalExpenditures": 8062117.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Janet Nguyen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2178839.69,
+       "expenditures": 10000.0,
+       "status": "$1,957,565.84",
+       "url": "/ca/candidate/janet-nguyen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kim Carr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 729761.63,
+       "expenditures": 100.0,
+       "status": "$743,623.18",
+       "url": "/ca/candidate/kim-carr?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Kim Carr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 729761.63,
+       "expenditures": 100.0,
+       "status": "$743,623.18",
+       "url": "/ca/candidate/kim-carr?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Janet Nguyen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2178839.69,
+       "expenditures": 10000.0,
+       "status": "$1,957,565.84",
+       "url": "/ca/candidate/janet-nguyen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Catherine Blakespear",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4714442.09,
+       "expenditures": 5000.0,
+       "status": "$5,360,928.39",
+       "url": "/ca/candidate/catherine-blakespear?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "36"
+  },
+  {
+   "office": "California State Senate District 38",
+   "url": "/ca/race/california-state-senate-district-38-56479",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 7726946.0,
+   "totalExpenditures": 9570688.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Catherine Blakespear",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4714442.09,
+       "expenditures": 5000.0,
+       "status": "$5,360,928.39",
+       "url": "/ca/candidate/catherine-blakespear?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Matt Gunderson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2835149.63,
+       "expenditures": 103000.0,
+       "status": "$3,920,022.85",
+       "url": "/ca/candidate/matt-gunderson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Catherine Blakespear",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4714442.09,
+       "expenditures": 5000.0,
+       "status": "$5,360,928.39",
+       "url": "/ca/candidate/catherine-blakespear?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Matt Gunderson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2835149.63,
+       "expenditures": 103000.0,
+       "status": "$3,920,022.85",
+       "url": "/ca/candidate/matt-gunderson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joe Kerr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 177354.0,
+       "expenditures": 0.0,
+       "status": "$289,736.67",
+       "url": "/ca/candidate/joe-kerr?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "38"
+  },
+  {
+   "office": "California State Senate District 4",
+   "url": "/ca/race/california-state-senate-district-4-56462",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 2106201.0,
+   "totalExpenditures": 3783401.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Marie Alvarado-Gil",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 232095.0,
+       "expenditures": 0.0,
+       "status": "$312,506.29",
+       "url": "/ca/candidate/marie-alvarado-gil?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tim Robertson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 665956.26,
+       "expenditures": 5750.0,
+       "status": "$1,140,245.89",
+       "url": "/ca/candidate/tim-robertson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Marie Alvarado-Gil",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 232095.0,
+       "expenditures": 0.0,
+       "status": "$312,506.29",
+       "url": "/ca/candidate/marie-alvarado-gil?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tim Robertson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 665956.26,
+       "expenditures": 5750.0,
+       "status": "$1,140,245.89",
+       "url": "/ca/candidate/tim-robertson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Steven Bailey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 63067.08,
+       "expenditures": 182500.0,
+       "status": "$304,992.54",
+       "url": "/ca/candidate/steven-bailey?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jolene Daly",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/jolene-daly?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Michael Gordon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13432.99,
+       "expenditures": 0.0,
+       "status": "$14,432.99",
+       "url": "/ca/candidate/michael-gordon?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jeff McKay",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 753369.55,
+       "expenditures": 100000.0,
+       "status": "$1,396,696.24",
+       "url": "/ca/candidate/jeff-mckay?cycle=2022-election-cycle"
+      },
+      {
+       "name": "George Radanovich",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 378280.0,
+       "expenditures": 0.0,
+       "status": "$614,526.85",
+       "url": "/ca/candidate/george-radanovich?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "4"
+  },
+  {
+   "office": "California State Senate District 40",
+   "url": "/ca/race/california-state-senate-district-40-56480",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 3927530.0,
+   "totalExpenditures": 4289533.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Brian Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1459761.58,
+       "expenditures": 0.0,
+       "status": "$2,357,173.62",
+       "url": "/ca/candidate/brian-jones?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joseph Rocha",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1569054.76,
+       "expenditures": 0.0,
+       "status": "$735,638.88",
+       "url": "/ca/candidate/joseph-rocha?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Brian Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1459761.58,
+       "expenditures": 0.0,
+       "status": "$2,357,173.62",
+       "url": "/ca/candidate/brian-jones?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joseph Rocha",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1569054.76,
+       "expenditures": 0.0,
+       "status": "$735,638.88",
+       "url": "/ca/candidate/joseph-rocha?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Steve Padilla",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 898713.35,
+       "expenditures": 0.0,
+       "status": "$1,196,720.52",
+       "url": "/ca/candidate/steve-padilla?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "40"
+  },
+  {
+   "office": "California State Senate District 6",
+   "url": "/ca/race/california-state-senate-district-6-56463",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 4013781.0,
+   "totalExpenditures": 5325041.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Roger Niello",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1083287.64,
+       "expenditures": 0.0,
+       "status": "$1,564,623.03",
+       "url": "/ca/candidate/roger-niello?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Paula Villescaz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 838108.54,
+       "expenditures": 25000.0,
+       "status": "$935,325.63",
+       "url": "/ca/candidate/paula-villescaz?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Paula Villescaz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 838108.54,
+       "expenditures": 25000.0,
+       "status": "$935,325.63",
+       "url": "/ca/candidate/paula-villescaz?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Roger Niello",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1083287.64,
+       "expenditures": 0.0,
+       "status": "$1,564,623.03",
+       "url": "/ca/candidate/roger-niello?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Matthew Burgess",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 31923.0,
+       "expenditures": 0.0,
+       "status": "$31,923.00",
+       "url": "/ca/candidate/matthew-burgess?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Eric Guerra",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1897507.24,
+       "expenditures": 0.0,
+       "status": "$2,606,922.34",
+       "url": "/ca/candidate/eric-guerra?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tecoy Porter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 124283.49,
+       "expenditures": 0.0,
+       "status": "$129,075.58",
+       "url": "/ca/candidate/tecoy-porter?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Michael Huang",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38671.42,
+       "expenditures": 18500.0,
+       "status": "$57,171.42",
+       "url": "/ca/candidate/michael-huang?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "6"
+  },
+  {
+   "office": "California State Senate District 8",
+   "url": "/ca/race/california-state-senate-district-8-56464",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 4875961.0,
+   "totalExpenditures": 8213028.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Angelique Ashby",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1525331.5,
+       "expenditures": 0.0,
+       "status": "$2,588,343.58",
+       "url": "/ca/candidate/angelique-ashby?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Dave Jones",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2572161.25,
+       "expenditures": 0.0,
+       "status": "$4,202,560.89",
+       "url": "/ca/candidate/dave-jones?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "June 7, 2022",
+     "candidates": [
+      {
+       "name": "Angelique Ashby",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1525331.5,
+       "expenditures": 0.0,
+       "status": "$2,588,343.58",
+       "url": "/ca/candidate/angelique-ashby?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Dave Jones",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2572161.25,
+       "expenditures": 0.0,
+       "status": "$4,202,560.89",
+       "url": "/ca/candidate/dave-jones?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rafael Garcia Jr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25098.58,
+       "expenditures": 900.0,
+       "status": "$25,427.69",
+       "url": "/ca/candidate/rafael-garcia-jr?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jeff McKay",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 753369.55,
+       "expenditures": 100000.0,
+       "status": "$1,396,696.24",
+       "url": "/ca/candidate/jeff-mckay?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "8"
+  }
+ ]
+}

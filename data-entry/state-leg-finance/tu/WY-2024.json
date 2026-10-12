@@ -1,0 +1,4280 @@
+{
+ "state": "WY",
+ "cycle": 2024,
+ "fetched": "2026-10-11",
+ "dataThrough": "12/31/2024",
+ "races": [
+  {
+   "office": "Wyoming House of Representatives District 1",
+   "url": "/wy/race/wyoming-house-of-representatives-district-1-70225",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 7879.0,
+   "totalExpenditures": 1719.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Chip Neiman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7878.63,
+       "expenditures": 0.0,
+       "status": "$1,718.63",
+       "url": "/wy/candidate/chip-neiman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Chip Neiman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7878.63,
+       "expenditures": 0.0,
+       "status": "$1,718.63",
+       "url": "/wy/candidate/chip-neiman?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "Wyoming House of Representatives District 10",
+   "url": "/wy/race/wyoming-house-of-representatives-district-10-70226",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 18211.0,
+   "totalExpenditures": 15036.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "John Eklund",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 15650.0,
+       "expenditures": 0.0,
+       "status": "$10,837.37",
+       "url": "/wy/candidate/john-eklund?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tim Forbis",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 1500.0,
+       "expenditures": 5000.0,
+       "status": "$3,137.92",
+       "url": "/wy/candidate/tim-forbis?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "John Eklund",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 15650.0,
+       "expenditures": 0.0,
+       "status": "$10,837.37",
+       "url": "/wy/candidate/john-eklund?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jennifer L James",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1061.18,
+       "expenditures": 0.0,
+       "status": "$1,061.18",
+       "url": "/wy/candidate/jennifer-l-james?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "Wyoming House of Representatives District 11",
+   "url": "/wy/race/wyoming-house-of-representatives-district-11-70227",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 71224.0,
+   "totalExpenditures": 53651.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jacob Lee Wasserburger",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21090.96,
+       "expenditures": 0.0,
+       "status": "$13,981.73",
+       "url": "/wy/candidate/jacob-lee-wasserburger?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sara Burlingame",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 37107.65,
+       "expenditures": 0.0,
+       "status": "$31,580.79",
+       "url": "/wy/candidate/sara-burlingame?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Sara Burlingame",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 37107.65,
+       "expenditures": 0.0,
+       "status": "$31,580.79",
+       "url": "/wy/candidate/sara-burlingame?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Jacob Lee Wasserburger",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21090.96,
+       "expenditures": 0.0,
+       "status": "$13,981.73",
+       "url": "/wy/candidate/jacob-lee-wasserburger?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Seth Ulvestad",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13025.0,
+       "expenditures": 0.0,
+       "status": "$8,088.17",
+       "url": "/wy/candidate/seth-ulvestad?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "Wyoming House of Representatives District 12",
+   "url": "/wy/race/wyoming-house-of-representatives-district-12-70228",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 33924.0,
+   "totalExpenditures": 21174.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Clarence L Styvar",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17340.15,
+       "expenditures": 0.0,
+       "status": "$4,591.03",
+       "url": "/wy/candidate/clarence-l-styvar?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joseph Ramirez",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/wy/candidate/joseph-ramirez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Clarence L Styvar",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17340.15,
+       "expenditures": 0.0,
+       "status": "$4,591.03",
+       "url": "/wy/candidate/clarence-l-styvar?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Thomas Lear",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16583.41,
+       "expenditures": 0.0,
+       "status": "$16,582.47",
+       "url": "/wy/candidate/thomas-lear?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "Wyoming House of Representatives District 13",
+   "url": "/wy/race/wyoming-house-of-representatives-district-13-70229",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 26640.0,
+   "totalExpenditures": 20031.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ken Chestek",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 14540.0,
+       "expenditures": 0.0,
+       "status": "$5,227.10",
+       "url": "/wy/candidate/ken-chestek?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Shane Swett",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12100.0,
+       "expenditures": 0.0,
+       "status": "$14,804.25",
+       "url": "/wy/candidate/shane-swett?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Ken Chestek",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 14540.0,
+       "expenditures": 0.0,
+       "status": "$5,227.10",
+       "url": "/wy/candidate/ken-chestek?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Shane Swett",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12100.0,
+       "expenditures": 0.0,
+       "status": "$14,804.25",
+       "url": "/wy/candidate/shane-swett?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "Wyoming House of Representatives District 14",
+   "url": "/wy/race/wyoming-house-of-representatives-district-14-70230",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 42852.0,
+   "totalExpenditures": 48997.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Trey Sherwood",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 23587.47,
+       "expenditures": 0.0,
+       "status": "$20,997.03",
+       "url": "/wy/candidate/trey-sherwood?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joe Giustozzi",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19264.67,
+       "expenditures": 10500.0,
+       "status": "$28,000.00",
+       "url": "/wy/candidate/joe-giustozzi?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Trey Sherwood",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 23587.47,
+       "expenditures": 0.0,
+       "status": "$20,997.03",
+       "url": "/wy/candidate/trey-sherwood?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Joe Giustozzi",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19264.67,
+       "expenditures": 10500.0,
+       "status": "$28,000.00",
+       "url": "/wy/candidate/joe-giustozzi?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "Wyoming House of Representatives District 15",
+   "url": "/wy/race/wyoming-house-of-representatives-district-15-70231",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 17497.0,
+   "totalExpenditures": 13532.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Pamela Ann Thayer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15276.0,
+       "expenditures": 0.0,
+       "status": "$9,968.13",
+       "url": "/wy/candidate/pamela-ann-thayer?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Pamela Ann Thayer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15276.0,
+       "expenditures": 0.0,
+       "status": "$9,968.13",
+       "url": "/wy/candidate/pamela-ann-thayer?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sheryl Foland",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 400.0,
+       "expenditures": 5150.0,
+       "status": "$1,742.52",
+       "url": "/wy/candidate/sheryl-foland?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Terry L Weickum",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1821.15,
+       "expenditures": 0.0,
+       "status": "$1,821.15",
+       "url": "/wy/candidate/terry-l-weickum?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "Wyoming House of Representatives District 16",
+   "url": "/wy/race/wyoming-house-of-representatives-district-16-70232",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 3577.0,
+   "totalExpenditures": 4678.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mike Yin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3577.0,
+       "expenditures": 0.0,
+       "status": "$4,677.93",
+       "url": "/wy/candidate/mike-yin?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Mike Yin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3577.0,
+       "expenditures": 0.0,
+       "status": "$4,677.93",
+       "url": "/wy/candidate/mike-yin?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "Wyoming House of Representatives District 17",
+   "url": "/wy/race/wyoming-house-of-representatives-district-17-70233",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 53846.0,
+   "totalExpenditures": 51006.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "JT Larson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 44056.41,
+       "expenditures": 0.0,
+       "status": "$42,764.20",
+       "url": "/wy/candidate/jt-larson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "JT Larson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 44056.41,
+       "expenditures": 0.0,
+       "status": "$42,764.20",
+       "url": "/wy/candidate/jt-larson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Terry Ellison",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9790.0,
+       "expenditures": 0.0,
+       "status": "$8,242.22",
+       "url": "/wy/candidate/terry-ellison?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "Wyoming House of Representatives District 18",
+   "url": "/wy/race/wyoming-house-of-representatives-district-18-70234",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 13866.0,
+   "totalExpenditures": 10132.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Scott Heiner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6850.0,
+       "expenditures": 0.0,
+       "status": "$5,816.78",
+       "url": "/wy/candidate/scott-heiner?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Scott Heiner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6850.0,
+       "expenditures": 0.0,
+       "status": "$5,816.78",
+       "url": "/wy/candidate/scott-heiner?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Thomas Crank",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7016.31,
+       "expenditures": 0.0,
+       "status": "$4,314.98",
+       "url": "/wy/candidate/thomas-crank?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "Wyoming House of Representatives District 19",
+   "url": "/wy/race/wyoming-house-of-representatives-district-19-70235",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 78731.0,
+   "totalExpenditures": 83955.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Joe Webb",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12657.19,
+       "expenditures": 2438.62,
+       "status": "$15,095.81",
+       "url": "/wy/candidate/joe-webb?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Joe Webb",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12657.19,
+       "expenditures": 2438.62,
+       "status": "$15,095.81",
+       "url": "/wy/candidate/joe-webb?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jon Conrad",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 66074.3,
+       "expenditures": 0.0,
+       "status": "$68,859.49",
+       "url": "/wy/candidate/jon-conrad?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "Wyoming House of Representatives District 2",
+   "url": "/wy/race/wyoming-house-of-representatives-district-2-70236",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 78181.0,
+   "totalExpenditures": 72029.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jd Williams",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45562.0,
+       "expenditures": 0.0,
+       "status": "$40,377.92",
+       "url": "/wy/candidate/jd-williams?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Jd Williams",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45562.0,
+       "expenditures": 0.0,
+       "status": "$40,377.92",
+       "url": "/wy/candidate/jd-williams?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Allen E Slagle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 32619.45,
+       "expenditures": 0.0,
+       "status": "$31,651.02",
+       "url": "/wy/candidate/allen-e-slagle?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "Wyoming House of Representatives District 20",
+   "url": "/wy/race/wyoming-house-of-representatives-district-20-70237",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 63376.0,
+   "totalExpenditures": 64864.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mike Schmid",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9101.2,
+       "expenditures": 12820.51,
+       "status": "$16,041.10",
+       "url": "/wy/candidate/mike-schmid?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Mike Schmid",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9101.2,
+       "expenditures": 12820.51,
+       "status": "$16,041.10",
+       "url": "/wy/candidate/mike-schmid?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Cat Urbigkit",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 32033.0,
+       "expenditures": 0.0,
+       "status": "$26,581.61",
+       "url": "/wy/candidate/cat-urbigkit?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Bill Winney",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22241.41,
+       "expenditures": 0.0,
+       "status": "$22,241.41",
+       "url": "/wy/candidate/justin-william-winney-jr?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "Wyoming House of Representatives District 21",
+   "url": "/wy/race/wyoming-house-of-representatives-district-21-70238",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 22729.0,
+   "totalExpenditures": 28142.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mckay L Erickson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15384.35,
+       "expenditures": 8200.0,
+       "status": "$22,469.15",
+       "url": "/wy/candidate/mckay-l-erickson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Mckay L Erickson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15384.35,
+       "expenditures": 8200.0,
+       "status": "$22,469.15",
+       "url": "/wy/candidate/mckay-l-erickson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "T Deb Wolfley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7345.0,
+       "expenditures": 0.0,
+       "status": "$5,672.40",
+       "url": "/wy/candidate/t-deb-wolfley?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "Wyoming House of Representatives District 22",
+   "url": "/wy/race/wyoming-house-of-representatives-district-22-70239",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 15323.0,
+   "totalExpenditures": 7068.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Andrew P Byron",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 15323.41,
+       "expenditures": 0.0,
+       "status": "$7,067.54",
+       "url": "/wy/candidate/andrew-p-byron?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Andrew P Byron",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 15323.41,
+       "expenditures": 0.0,
+       "status": "$7,067.54",
+       "url": "/wy/candidate/andrew-p-byron?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "Wyoming House of Representatives District 23",
+   "url": "/wy/race/wyoming-house-of-representatives-district-23-70240",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 13410.0,
+   "totalExpenditures": 10839.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Liz Storer",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 13410.0,
+       "expenditures": 0.0,
+       "status": "$10,838.52",
+       "url": "/wy/candidate/liz-storer?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Liz Storer",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 13410.0,
+       "expenditures": 0.0,
+       "status": "$10,838.52",
+       "url": "/wy/candidate/liz-storer?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "Wyoming House of Representatives District 24",
+   "url": "/wy/race/wyoming-house-of-representatives-district-24-70241",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 57876.0,
+   "totalExpenditures": 38791.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Nina Webber",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15650.0,
+       "expenditures": 0.0,
+       "status": "$6,103.51",
+       "url": "/wy/candidate/nina-webber?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Nina Webber",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15650.0,
+       "expenditures": 0.0,
+       "status": "$6,103.51",
+       "url": "/wy/candidate/nina-webber?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Matt Hall",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 42226.0,
+       "expenditures": 0.0,
+       "status": "$32,687.28",
+       "url": "/wy/candidate/matt-hall?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "Wyoming House of Representatives District 25",
+   "url": "/wy/race/wyoming-house-of-representatives-district-25-70242",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 27180.0,
+   "totalExpenditures": 20055.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Paul Hoeft",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3880.0,
+       "expenditures": 0.0,
+       "status": "$3,943.54",
+       "url": "/wy/candidate/paul-hoeft?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Paul Hoeft",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3880.0,
+       "expenditures": 0.0,
+       "status": "$3,943.54",
+       "url": "/wy/candidate/paul-hoeft?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Northrup",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 23300.0,
+       "expenditures": 0.0,
+       "status": "$16,111.63",
+       "url": "/wy/candidate/david-northrup?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "Wyoming House of Representatives District 26",
+   "url": "/wy/race/wyoming-house-of-representatives-district-26-70243",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 550.0,
+   "totalExpenditures": 305.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Dalton Banks",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 550.0,
+       "expenditures": 0.0,
+       "status": "$305.00",
+       "url": "/wy/candidate/dalton-banks?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Dalton Banks",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 550.0,
+       "expenditures": 0.0,
+       "status": "$305.00",
+       "url": "/wy/candidate/dalton-banks?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "Wyoming House of Representatives District 27",
+   "url": "/wy/race/wyoming-house-of-representatives-district-27-70244",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 33790.0,
+   "totalExpenditures": 31449.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Martha Lawley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20162.0,
+       "expenditures": 2740.0,
+       "status": "$18,410.68",
+       "url": "/wy/candidate/martha-lawley?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Martha Lawley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20162.0,
+       "expenditures": 2740.0,
+       "status": "$18,410.68",
+       "url": "/wy/candidate/martha-lawley?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tami Young",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13627.8,
+       "expenditures": 560.0,
+       "status": "$13,038.17",
+       "url": "/wy/candidate/tami-young?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "Wyoming House of Representatives District 28",
+   "url": "/wy/race/wyoming-house-of-representatives-district-28-70245",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 18753.0,
+   "totalExpenditures": 14275.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "John R Winter",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 4500.0,
+       "expenditures": 0.0,
+       "status": "$3,393.75",
+       "url": "/wy/candidate/john-r-winter?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Larry Alwin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3273.03,
+       "expenditures": 1335.52,
+       "status": "$4,188.32",
+       "url": "/wy/candidate/larry-alwin?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Larry Alwin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3273.03,
+       "expenditures": 1335.52,
+       "status": "$4,188.32",
+       "url": "/wy/candidate/larry-alwin?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "John R Winter",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 4500.0,
+       "expenditures": 0.0,
+       "status": "$3,393.75",
+       "url": "/wy/candidate/john-r-winter?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kevin Skates",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10980.0,
+       "expenditures": 0.0,
+       "status": "$6,692.46",
+       "url": "/wy/candidate/kevin-skates?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "Wyoming House of Representatives District 29",
+   "url": "/wy/race/wyoming-house-of-representatives-district-29-70246",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 11208.0,
+   "totalExpenditures": 6711.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ken Pendergraft",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 9300.0,
+       "expenditures": 0.0,
+       "status": "$4,955.21",
+       "url": "/wy/candidate/ken-pendergraft?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Martha J Wright",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1907.92,
+       "expenditures": 0.0,
+       "status": "$1,756.00",
+       "url": "/wy/candidate/martha-j-wright?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Martha J Wright",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1907.92,
+       "expenditures": 0.0,
+       "status": "$1,756.00",
+       "url": "/wy/candidate/martha-j-wright?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Ken Pendergraft",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 9300.0,
+       "expenditures": 0.0,
+       "status": "$4,955.21",
+       "url": "/wy/candidate/ken-pendergraft?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "Wyoming House of Representatives District 3",
+   "url": "/wy/race/wyoming-house-of-representatives-district-3-70247",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1723.0,
+   "totalExpenditures": 1504.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Abby Angelos",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1723.15,
+       "expenditures": 0.0,
+       "status": "$1,504.31",
+       "url": "/wy/candidate/abby-angelos?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Abby Angelos",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1723.15,
+       "expenditures": 0.0,
+       "status": "$1,504.31",
+       "url": "/wy/candidate/abby-angelos?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "Wyoming House of Representatives District 30",
+   "url": "/wy/race/wyoming-house-of-representatives-district-30-70248",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 38277.0,
+   "totalExpenditures": 41585.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tom Kelly",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9451.97,
+       "expenditures": 0.0,
+       "status": "$9,232.81",
+       "url": "/wy/candidate/tom-kelly?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Tom Kelly",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9451.97,
+       "expenditures": 0.0,
+       "status": "$9,232.81",
+       "url": "/wy/candidate/tom-kelly?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gail Symons",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 28825.24,
+       "expenditures": 12500.0,
+       "status": "$32,351.84",
+       "url": "/wy/candidate/gail-symons?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "Wyoming House of Representatives District 31",
+   "url": "/wy/race/wyoming-house-of-representatives-district-31-70249",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 9315.0,
+   "totalExpenditures": 13094.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "John Bear",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 9314.66,
+       "expenditures": 0.0,
+       "status": "$13,093.85",
+       "url": "/wy/candidate/john-bear?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "John Bear",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 9314.66,
+       "expenditures": 0.0,
+       "status": "$13,093.85",
+       "url": "/wy/candidate/john-bear?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "Wyoming House of Representatives District 32",
+   "url": "/wy/race/wyoming-house-of-representatives-district-32-70250",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 85778.0,
+   "totalExpenditures": 76338.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ken Clouston",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 64765.49,
+       "expenditures": 0.0,
+       "status": "$47,989.45",
+       "url": "/wy/candidate/ken-clouston?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Ken Clouston",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 64765.49,
+       "expenditures": 0.0,
+       "status": "$47,989.45",
+       "url": "/wy/candidate/ken-clouston?cycle=2024-election-cycle"
+      },
+      {
+       "name": "George Dunlap",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21012.08,
+       "expenditures": 10000.0,
+       "status": "$28,348.66",
+       "url": "/wy/candidate/george-dunlap?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "Wyoming House of Representatives District 33",
+   "url": "/wy/race/wyoming-house-of-representatives-district-33-70251",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 91428.0,
+   "totalExpenditures": 75576.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ivan Dale Posey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 42712.31,
+       "expenditures": 0.0,
+       "status": "$28,160.81",
+       "url": "/wy/candidate/ivan-dale-posey?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sarah Penn",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 48716.0,
+       "expenditures": 1000.0,
+       "status": "$47,415.30",
+       "url": "/wy/candidate/sarah-penn?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Ivan Dale Posey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 42712.31,
+       "expenditures": 0.0,
+       "status": "$28,160.81",
+       "url": "/wy/candidate/ivan-dale-posey?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Sarah Penn",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 48716.0,
+       "expenditures": 1000.0,
+       "status": "$47,415.30",
+       "url": "/wy/candidate/sarah-penn?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "Wyoming House of Representatives District 34",
+   "url": "/wy/race/wyoming-house-of-representatives-district-34-70252",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 38285.0,
+   "totalExpenditures": 32917.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Pepper L Ottman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 16338.0,
+       "expenditures": 0.0,
+       "status": "$11,126.40",
+       "url": "/wy/candidate/pepper-l-ottman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Pepper L Ottman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 16338.0,
+       "expenditures": 0.0,
+       "status": "$11,126.40",
+       "url": "/wy/candidate/pepper-l-ottman?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Reg Phillips",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21947.0,
+       "expenditures": 0.0,
+       "status": "$21,790.80",
+       "url": "/wy/candidate/reg-phillips?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "Wyoming House of Representatives District 35",
+   "url": "/wy/race/wyoming-house-of-representatives-district-35-70253",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 48417.0,
+   "totalExpenditures": 46632.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tony Locke",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22185.0,
+       "expenditures": 0.0,
+       "status": "$19,207.64",
+       "url": "/wy/candidate/tony-locke?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Tony Locke",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22185.0,
+       "expenditures": 0.0,
+       "status": "$19,207.64",
+       "url": "/wy/candidate/tony-locke?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Christopher Richard Dresang",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26231.85,
+       "expenditures": 2200.04,
+       "status": "$27,424.51",
+       "url": "/wy/candidate/christopher-richard-dresang?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "Wyoming House of Representatives District 36",
+   "url": "/wy/race/wyoming-house-of-representatives-district-36-70254",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1700.0,
+   "totalExpenditures": 1297.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Art Washut",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1700.0,
+       "expenditures": 0.0,
+       "status": "$1,296.71",
+       "url": "/wy/candidate/art-washut?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Art Washut",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1700.0,
+       "expenditures": 0.0,
+       "status": "$1,296.71",
+       "url": "/wy/candidate/art-washut?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "Wyoming House of Representatives District 37",
+   "url": "/wy/race/wyoming-house-of-representatives-district-37-70255",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 3350.0,
+   "totalExpenditures": 1610.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Steve Harshman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3350.0,
+       "expenditures": 0.0,
+       "status": "$1,610.00",
+       "url": "/wy/candidate/steve-harshman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Steve Harshman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3350.0,
+       "expenditures": 0.0,
+       "status": "$1,610.00",
+       "url": "/wy/candidate/steve-harshman?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "Wyoming House of Representatives District 38",
+   "url": "/wy/race/wyoming-house-of-representatives-district-38-70256",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 35150.0,
+   "totalExpenditures": 29500.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jayme C Lien",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12400.0,
+       "expenditures": 0.0,
+       "status": "$9,331.85",
+       "url": "/wy/candidate/jayme-c-lien?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Jayme C Lien",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12400.0,
+       "expenditures": 0.0,
+       "status": "$9,331.85",
+       "url": "/wy/candidate/jayme-c-lien?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tom Walters",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22750.0,
+       "expenditures": 0.0,
+       "status": "$20,168.40",
+       "url": "/wy/candidate/tom-walters?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "Wyoming House of Representatives District 39",
+   "url": "/wy/race/wyoming-house-of-representatives-district-39-70257",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 40646.0,
+   "totalExpenditures": 36048.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Cody Wylie",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 31596.0,
+       "expenditures": 0.0,
+       "status": "$27,565.36",
+       "url": "/wy/candidate/cody-wylie?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Cody Wylie",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 31596.0,
+       "expenditures": 0.0,
+       "status": "$27,565.36",
+       "url": "/wy/candidate/cody-wylie?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Marshall Burt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 500.0,
+       "expenditures": 0.0,
+       "status": "$200.00",
+       "url": "/wy/candidate/marshall-burt?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Laura Mckee",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8550.0,
+       "expenditures": 0.0,
+       "status": "$8,283.04",
+       "url": "/wy/candidate/laura-mckee?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "Wyoming House of Representatives District 4",
+   "url": "/wy/race/wyoming-house-of-representatives-district-4-70258",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 8977.0,
+   "totalExpenditures": 5704.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jeremy Michael Haroldson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7306.5,
+       "expenditures": 0.0,
+       "status": "$4,542.31",
+       "url": "/wy/candidate/jeremy-michael-haroldson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Charles William Randolph",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1170.0,
+       "expenditures": 0.0,
+       "status": "$708.69",
+       "url": "/wy/candidate/charles-william-randolph?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Charles William Randolph",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1170.0,
+       "expenditures": 0.0,
+       "status": "$708.69",
+       "url": "/wy/candidate/charles-william-randolph?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Jeremy Michael Haroldson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7306.5,
+       "expenditures": 0.0,
+       "status": "$4,542.31",
+       "url": "/wy/candidate/jeremy-michael-haroldson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jeffery Thomas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 500.0,
+       "expenditures": 0.0,
+       "status": "$453.46",
+       "url": "/wy/candidate/jeffery-thomas?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "Wyoming House of Representatives District 40",
+   "url": "/wy/race/wyoming-house-of-representatives-district-40-70259",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 65637.0,
+   "totalExpenditures": 66141.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Marilyn Connolly",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33747.16,
+       "expenditures": 1000.0,
+       "status": "$31,762.48",
+       "url": "/wy/candidate/marilyn-connolly?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Marilyn Connolly",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33747.16,
+       "expenditures": 1000.0,
+       "status": "$31,762.48",
+       "url": "/wy/candidate/marilyn-connolly?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mark Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26799.15,
+       "expenditures": 0.0,
+       "status": "$24,651.57",
+       "url": "/wy/candidate/mark-jones?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Liberty Poley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5090.83,
+       "expenditures": 6700.0,
+       "status": "$9,726.47",
+       "url": "/wy/candidate/liberty-poley?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "Wyoming House of Representatives District 41",
+   "url": "/wy/race/wyoming-house-of-representatives-district-41-70260",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 103528.0,
+   "totalExpenditures": 84539.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Gary Brown",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33823.64,
+       "expenditures": 1416.0,
+       "status": "$33,461.70",
+       "url": "/wy/candidate/gary-brown?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jen Solis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 35554.17,
+       "expenditures": 0.0,
+       "status": "$30,908.63",
+       "url": "/wy/candidate/jen-solis?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Jen Solis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 35554.17,
+       "expenditures": 0.0,
+       "status": "$30,908.63",
+       "url": "/wy/candidate/jen-solis?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Gary Brown",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33823.64,
+       "expenditures": 1416.0,
+       "status": "$33,461.70",
+       "url": "/wy/candidate/gary-brown?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Bill Henderson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 34150.0,
+       "expenditures": 10000.0,
+       "status": "$20,169.00",
+       "url": "/wy/candidate/bill-henderson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "Wyoming House of Representatives District 42",
+   "url": "/wy/race/wyoming-house-of-representatives-district-42-70261",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 66531.0,
+   "totalExpenditures": 57334.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Rob Geringer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 39884.63,
+       "expenditures": 0.0,
+       "status": "$33,225.01",
+       "url": "/wy/candidate/rob-geringer?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Robert A Ray",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 600.0,
+       "expenditures": 0.0,
+       "status": "$100.00",
+       "url": "/wy/candidate/robert-a-ray?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Robert A Ray",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 600.0,
+       "expenditures": 0.0,
+       "status": "$100.00",
+       "url": "/wy/candidate/robert-a-ray?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Rob Geringer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 39884.63,
+       "expenditures": 0.0,
+       "status": "$33,225.01",
+       "url": "/wy/candidate/rob-geringer?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ben Hornok",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 26046.82,
+       "expenditures": 0.0,
+       "status": "$24,009.23",
+       "url": "/wy/candidate/ben-hornok?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "Wyoming House of Representatives District 43",
+   "url": "/wy/race/wyoming-house-of-representatives-district-43-70262",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 57946.0,
+   "totalExpenditures": 48177.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ann Lucas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19647.52,
+       "expenditures": 5369.26,
+       "status": "$24,084.62",
+       "url": "/wy/candidate/ann-lucas?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Ann Lucas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19647.52,
+       "expenditures": 5369.26,
+       "status": "$24,084.62",
+       "url": "/wy/candidate/ann-lucas?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dan Zwonitzer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38298.1,
+       "expenditures": 0.0,
+       "status": "$24,091.91",
+       "url": "/wy/candidate/dan-zwonitzer?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "Wyoming House of Representatives District 44",
+   "url": "/wy/race/wyoming-house-of-representatives-district-44-70263",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 18169.0,
+   "totalExpenditures": 13638.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lee Filer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10400.0,
+       "expenditures": 320.0,
+       "status": "$9,044.30",
+       "url": "/wy/candidate/lee-filer?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Lee Filer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10400.0,
+       "expenditures": 320.0,
+       "status": "$9,044.30",
+       "url": "/wy/candidate/lee-filer?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tamara Trujillo",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7268.7,
+       "expenditures": 0.0,
+       "status": "$4,061.43",
+       "url": "/wy/candidate/tamara-trujillo?cycle=2024-election-cycle"
+      },
+      {
+       "name": "John B Romero-Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 500.0,
+       "expenditures": 600.0,
+       "status": "$531.98",
+       "url": "/wy/candidate/john-b-romero-martinez?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "Wyoming House of Representatives District 45",
+   "url": "/wy/race/wyoming-house-of-representatives-district-45-70264",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 45530.0,
+   "totalExpenditures": 35280.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Karlee Provenza",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 23225.0,
+       "expenditures": 0.0,
+       "status": "$15,014.14",
+       "url": "/wy/candidate/karlee-provenza?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Paul Crouch",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22205.0,
+       "expenditures": 0.0,
+       "status": "$20,165.88",
+       "url": "/wy/candidate/paul-crouch?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Karlee Provenza",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 23225.0,
+       "expenditures": 0.0,
+       "status": "$15,014.14",
+       "url": "/wy/candidate/karlee-provenza?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Paul Crouch",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22205.0,
+       "expenditures": 0.0,
+       "status": "$20,165.88",
+       "url": "/wy/candidate/paul-crouch?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Eric Henderson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 100.0,
+       "expenditures": 0.0,
+       "status": "$100.00",
+       "url": "/wy/candidate/eric-henderson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "Wyoming House of Representatives District 46",
+   "url": "/wy/race/wyoming-house-of-representatives-district-46-70265",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 13071.0,
+   "totalExpenditures": 6134.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ocean Andrew",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11051.16,
+       "expenditures": 0.0,
+       "status": "$4,820.13",
+       "url": "/wy/candidate/ocean-andrew?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chris Lowry",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2020.0,
+       "expenditures": 500.0,
+       "status": "$1,313.73",
+       "url": "/wy/candidate/chris-lowry?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Chris Lowry",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2020.0,
+       "expenditures": 500.0,
+       "status": "$1,313.73",
+       "url": "/wy/candidate/chris-lowry?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Ocean Andrew",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11051.16,
+       "expenditures": 0.0,
+       "status": "$4,820.13",
+       "url": "/wy/candidate/ocean-andrew?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "Wyoming House of Representatives District 47",
+   "url": "/wy/race/wyoming-house-of-representatives-district-47-70266",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 5255.0,
+   "totalExpenditures": 7262.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Robert Davis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3000.0,
+       "expenditures": 0.0,
+       "status": "$5,487.84",
+       "url": "/wy/candidate/robert-davis?cycle=2024-election-cycle"
+      },
+      {
+       "name": "James Wilson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2255.0,
+       "expenditures": 0.0,
+       "status": "$1,773.97",
+       "url": "/wy/candidate/james-wilson-1?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "James Wilson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2255.0,
+       "expenditures": 0.0,
+       "status": "$1,773.97",
+       "url": "/wy/candidate/james-wilson-1?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Robert Davis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3000.0,
+       "expenditures": 0.0,
+       "status": "$5,487.84",
+       "url": "/wy/candidate/robert-davis?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "Wyoming House of Representatives District 48",
+   "url": "/wy/race/wyoming-house-of-representatives-district-48-70267",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 31438.0,
+   "totalExpenditures": 23425.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Darin Michael Mccann",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10897.0,
+       "expenditures": 0.0,
+       "status": "$7,877.71",
+       "url": "/wy/candidate/darin-michael-mccann?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Darin Michael Mccann",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10897.0,
+       "expenditures": 0.0,
+       "status": "$7,877.71",
+       "url": "/wy/candidate/darin-michael-mccann?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Clark Stith",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20541.02,
+       "expenditures": 0.0,
+       "status": "$15,547.24",
+       "url": "/wy/candidate/clark-stith?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "Wyoming House of Representatives District 49",
+   "url": "/wy/race/wyoming-house-of-representatives-district-49-70268",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 22874.0,
+   "totalExpenditures": 21284.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Bob Wharff",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5924.36,
+       "expenditures": 0.0,
+       "status": "$5,321.29",
+       "url": "/wy/candidate/bob-wharff?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Bob Wharff",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5924.36,
+       "expenditures": 0.0,
+       "status": "$5,321.29",
+       "url": "/wy/candidate/bob-wharff?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ryan C Berger",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 16950.0,
+       "expenditures": 0.0,
+       "status": "$15,962.26",
+       "url": "/wy/candidate/ryan-c-berger?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "Wyoming House of Representatives District 5",
+   "url": "/wy/race/wyoming-house-of-representatives-district-5-70269",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 53113.0,
+   "totalExpenditures": 48299.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Scott Smith",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17570.0,
+       "expenditures": 0.0,
+       "status": "$15,187.18",
+       "url": "/wy/candidate/scott-smith?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Scott Smith",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17570.0,
+       "expenditures": 0.0,
+       "status": "$15,187.18",
+       "url": "/wy/candidate/scott-smith?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jackie Van Mark",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35542.82,
+       "expenditures": 0.0,
+       "status": "$33,111.80",
+       "url": "/wy/candidate/jackie-van-mark?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "Wyoming House of Representatives District 50",
+   "url": "/wy/race/wyoming-house-of-representatives-district-50-70270",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 59992.0,
+   "totalExpenditures": 49206.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Rachel Rodriguez-Williams",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 24394.85,
+       "expenditures": 0.0,
+       "status": "$18,239.58",
+       "url": "/wy/candidate/rachel-rodriguez-williams?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Rachel Rodriguez-Williams",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 24394.85,
+       "expenditures": 0.0,
+       "status": "$18,239.58",
+       "url": "/wy/candidate/rachel-rodriguez-williams?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Hill",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35597.53,
+       "expenditures": 0.0,
+       "status": "$30,966.43",
+       "url": "/wy/candidate/david-hill?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "Wyoming House of Representatives District 51",
+   "url": "/wy/race/wyoming-house-of-representatives-district-51-70271",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 18569.0,
+   "totalExpenditures": 15876.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Laurie Bratten",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18569.0,
+       "expenditures": 0.0,
+       "status": "$15,876.34",
+       "url": "/wy/candidate/laurie-bratten?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Laurie Bratten",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18569.0,
+       "expenditures": 0.0,
+       "status": "$15,876.34",
+       "url": "/wy/candidate/laurie-bratten?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "Wyoming House of Representatives District 52",
+   "url": "/wy/race/wyoming-house-of-representatives-district-52-70272",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 355.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Reuben Tarver",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 355.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/wy/candidate/reuben-tarver?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Reuben Tarver",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 355.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/wy/candidate/reuben-tarver?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "Wyoming House of Representatives District 53",
+   "url": "/wy/race/wyoming-house-of-representatives-district-53-70273",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 2290.0,
+   "totalExpenditures": 1380.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Chris Knapp",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2290.0,
+       "expenditures": 0.0,
+       "status": "$1,380.00",
+       "url": "/wy/candidate/chris-knapp?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Chris Knapp",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2290.0,
+       "expenditures": 0.0,
+       "status": "$1,380.00",
+       "url": "/wy/candidate/chris-knapp?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "Wyoming House of Representatives District 54",
+   "url": "/wy/race/wyoming-house-of-representatives-district-54-70274",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 58841.0,
+   "totalExpenditures": 44213.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lloyd Charles Larsen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 35600.0,
+       "expenditures": 0.0,
+       "status": "$25,610.51",
+       "url": "/wy/candidate/lloyd-charles-larsen?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Lloyd Charles Larsen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 35600.0,
+       "expenditures": 0.0,
+       "status": "$25,610.51",
+       "url": "/wy/candidate/lloyd-charles-larsen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tina Clifford",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23241.0,
+       "expenditures": 1000.0,
+       "status": "$18,602.19",
+       "url": "/wy/candidate/tina-clifford?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "Wyoming House of Representatives District 55",
+   "url": "/wy/race/wyoming-house-of-representatives-district-55-70275",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 34330.0,
+   "totalExpenditures": 34322.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Joel Aaron Guggenmos",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8625.05,
+       "expenditures": 0.0,
+       "status": "$5,222.24",
+       "url": "/wy/candidate/joel-aaron-guggenmos?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Joel Aaron Guggenmos",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8625.05,
+       "expenditures": 0.0,
+       "status": "$5,222.24",
+       "url": "/wy/candidate/joel-aaron-guggenmos?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ember Oakley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 25705.0,
+       "expenditures": 0.0,
+       "status": "$29,099.48",
+       "url": "/wy/candidate/ember-oakley?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "Wyoming House of Representatives District 56",
+   "url": "/wy/race/wyoming-house-of-representatives-district-56-70276",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 36404.0,
+   "totalExpenditures": 17886.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Elissa Campbell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25688.99,
+       "expenditures": 0.0,
+       "status": "$10,170.84",
+       "url": "/wy/candidate/elissa-campbell?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Elissa Campbell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25688.99,
+       "expenditures": 0.0,
+       "status": "$10,170.84",
+       "url": "/wy/candidate/elissa-campbell?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Pete Fox",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10310.25,
+       "expenditures": 0.0,
+       "status": "$6,400.87",
+       "url": "/wy/candidate/pete-fox?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Pamela Mertens",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 405.0,
+       "expenditures": 0.0,
+       "status": "$1,314.59",
+       "url": "/wy/candidate/pamela-mertens?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "Wyoming House of Representatives District 57",
+   "url": "/wy/race/wyoming-house-of-representatives-district-57-70277",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 63191.0,
+   "totalExpenditures": 59361.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Julie Jarvis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 43872.5,
+       "expenditures": 0.0,
+       "status": "$42,110.82",
+       "url": "/wy/candidate/julie-jarvis?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tyler J Cessor",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 774.95,
+       "expenditures": 0.0,
+       "status": "$603.31",
+       "url": "/wy/candidate/tyler-j-cessor?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Julie Jarvis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 43872.5,
+       "expenditures": 0.0,
+       "status": "$42,110.82",
+       "url": "/wy/candidate/julie-jarvis?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jeanette Ward",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 18543.07,
+       "expenditures": 1000.0,
+       "status": "$16,646.77",
+       "url": "/wy/candidate/jeanette-ward?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "Wyoming House of Representatives District 58",
+   "url": "/wy/race/wyoming-house-of-representatives-district-58-70278",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 38933.0,
+   "totalExpenditures": 52456.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Bill Allemand",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 19108.0,
+       "expenditures": 21000.0,
+       "status": "$31,825.58",
+       "url": "/wy/candidate/bill-allemand?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Bill Allemand",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 19108.0,
+       "expenditures": 21000.0,
+       "status": "$31,825.58",
+       "url": "/wy/candidate/bill-allemand?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tom Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19825.0,
+       "expenditures": 2437.03,
+       "status": "$20,630.89",
+       "url": "/wy/candidate/tom-jones?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "Wyoming House of Representatives District 59",
+   "url": "/wy/race/wyoming-house-of-representatives-district-59-70279",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 5525.0,
+   "totalExpenditures": 3466.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "JR Riggins",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5525.0,
+       "expenditures": 0.0,
+       "status": "$3,465.82",
+       "url": "/wy/candidate/jr-riggins?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "JR Riggins",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5525.0,
+       "expenditures": 0.0,
+       "status": "$3,465.82",
+       "url": "/wy/candidate/jr-riggins?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "Wyoming House of Representatives District 6",
+   "url": "/wy/race/wyoming-house-of-representatives-district-6-70280",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 35964.0,
+   "totalExpenditures": 29251.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tomi Strock",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 10800.0,
+       "expenditures": 0.0,
+       "status": "$10,457.98",
+       "url": "/wy/candidate/tomi-strock?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Tomi Strock",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 10800.0,
+       "expenditures": 0.0,
+       "status": "$10,457.98",
+       "url": "/wy/candidate/tomi-strock?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Aaron Clausen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25164.0,
+       "expenditures": 0.0,
+       "status": "$18,792.90",
+       "url": "/wy/candidate/aaron-clausen?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "Wyoming House of Representatives District 60",
+   "url": "/wy/race/wyoming-house-of-representatives-district-60-70281",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 34823.0,
+   "totalExpenditures": 25963.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Marlene Brady",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14922.76,
+       "expenditures": 500.0,
+       "status": "$10,374.94",
+       "url": "/wy/candidate/marlene-brady?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Carmen Whitehead",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2700.44,
+       "expenditures": 0.0,
+       "status": "$1,729.93",
+       "url": "/wy/candidate/carmen-whitehead?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Carmen Whitehead",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2700.44,
+       "expenditures": 0.0,
+       "status": "$1,729.93",
+       "url": "/wy/candidate/carmen-whitehead?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Marlene Brady",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14922.76,
+       "expenditures": 500.0,
+       "status": "$10,374.94",
+       "url": "/wy/candidate/marlene-brady?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tony Niemiec",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17200.0,
+       "expenditures": 1000.0,
+       "status": "$13,858.43",
+       "url": "/wy/candidate/tony-niemiec?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "Wyoming House of Representatives District 61",
+   "url": "/wy/race/wyoming-house-of-representatives-district-61-81196",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 14150.0,
+   "totalExpenditures": 12091.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Daniel Singh",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3050.0,
+       "expenditures": 0.0,
+       "status": "$4,431.78",
+       "url": "/wy/candidate/daniel-singh?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Daniel Singh",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3050.0,
+       "expenditures": 0.0,
+       "status": "$4,431.78",
+       "url": "/wy/candidate/daniel-singh?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Matt Malcom",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11100.0,
+       "expenditures": 0.0,
+       "status": "$7,658.81",
+       "url": "/wy/candidate/matt-malcom?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "Wyoming House of Representatives District 62",
+   "url": "/wy/race/wyoming-house-of-representatives-district-62-81197",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 10733.0,
+   "totalExpenditures": 11686.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Kevin John Campbell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7458.0,
+       "expenditures": 0.0,
+       "status": "$6,763.17",
+       "url": "/wy/candidate/kevin-john-campbell?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Kevin John Campbell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7458.0,
+       "expenditures": 0.0,
+       "status": "$6,763.17",
+       "url": "/wy/candidate/kevin-john-campbell?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Edis Allen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3275.0,
+       "expenditures": 0.0,
+       "status": "$4,923.01",
+       "url": "/wy/candidate/edis-allen?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "Wyoming House of Representatives District 7",
+   "url": "/wy/race/wyoming-house-of-representatives-district-7-70282",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 64919.0,
+   "totalExpenditures": 77659.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Bob Nicholas",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38257.23,
+       "expenditures": 0.0,
+       "status": "$44,370.08",
+       "url": "/wy/candidate/bob-nicholas?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jordan Evans",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 145.0,
+       "expenditures": 0.0,
+       "status": "$1,843.57",
+       "url": "/wy/candidate/jordan-evans?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Jordan Evans",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 145.0,
+       "expenditures": 0.0,
+       "status": "$1,843.57",
+       "url": "/wy/candidate/jordan-evans?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Bob Nicholas",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38257.23,
+       "expenditures": 0.0,
+       "status": "$44,370.08",
+       "url": "/wy/candidate/bob-nicholas?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kathy Russell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26517.25,
+       "expenditures": 5000.0,
+       "status": "$31,445.00",
+       "url": "/wy/candidate/kathy-russell?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "Wyoming House of Representatives District 8",
+   "url": "/wy/race/wyoming-house-of-representatives-district-8-70283",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 45923.0,
+   "totalExpenditures": 39953.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Steve Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21215.14,
+       "expenditures": 0.0,
+       "status": "$17,099.72",
+       "url": "/wy/candidate/steve-johnson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Steve Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21215.14,
+       "expenditures": 0.0,
+       "status": "$17,099.72",
+       "url": "/wy/candidate/steve-johnson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Zwonitzer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 24707.67,
+       "expenditures": 0.0,
+       "status": "$21,353.16",
+       "url": "/wy/candidate/david-zwonitzer?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Cayd Batchelor",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$1,500.00",
+       "url": "/wy/candidate/cayd-batchelor?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "Wyoming House of Representatives District 9",
+   "url": "/wy/race/wyoming-house-of-representatives-district-9-70284",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 34220.0,
+   "totalExpenditures": 40302.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Landon Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 28640.29,
+       "expenditures": 0.0,
+       "status": "$34,980.04",
+       "url": "/wy/candidate/landon-brown?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Landon Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 28640.29,
+       "expenditures": 0.0,
+       "status": "$34,980.04",
+       "url": "/wy/candidate/landon-brown?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Exie Brown",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5580.02,
+       "expenditures": 0.0,
+       "status": "$5,322.29",
+       "url": "/wy/candidate/exie-brown?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "Wyoming State Senate District 10",
+   "url": "/wy/race/wyoming-state-senate-district-10-70214",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 60320.0,
+   "totalExpenditures": 82954.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Gary Crum",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 34640.37,
+       "expenditures": 22612.71,
+       "status": "$56,314.06",
+       "url": "/wy/candidate/gary-crum?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mike Selmer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11340.0,
+       "expenditures": 1521.06,
+       "status": "$12,861.06",
+       "url": "/wy/candidate/mike-selmer?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Mike Selmer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11340.0,
+       "expenditures": 1521.06,
+       "status": "$12,861.06",
+       "url": "/wy/candidate/mike-selmer?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Gary Crum",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 34640.37,
+       "expenditures": 22612.71,
+       "status": "$56,314.06",
+       "url": "/wy/candidate/gary-crum?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Keith Kennedy",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14340.0,
+       "expenditures": 5000.0,
+       "status": "$13,778.79",
+       "url": "/wy/candidate/keith-kennedy?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "10"
+  },
+  {
+   "office": "Wyoming State Senate District 12",
+   "url": "/wy/race/wyoming-state-senate-district-12-70215",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 40358.0,
+   "totalExpenditures": 31896.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "John K Kolb",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 23402.91,
+       "expenditures": 0.0,
+       "status": "$16,607.69",
+       "url": "/wy/candidate/john-k-kolb?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kenilynn Zanetti",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7675.0,
+       "expenditures": 1500.0,
+       "status": "$5,922.26",
+       "url": "/wy/candidate/kenilynn-zanetti?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Kenilynn Zanetti",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7675.0,
+       "expenditures": 1500.0,
+       "status": "$5,922.26",
+       "url": "/wy/candidate/kenilynn-zanetti?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "John K Kolb",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 23402.91,
+       "expenditures": 0.0,
+       "status": "$16,607.69",
+       "url": "/wy/candidate/john-k-kolb?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jeffrey H Ramaj",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9280.0,
+       "expenditures": 0.0,
+       "status": "$9,365.75",
+       "url": "/wy/candidate/jeffrey-h-ramaj?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "12"
+  },
+  {
+   "office": "Wyoming State Senate District 14",
+   "url": "/wy/race/wyoming-state-senate-district-14-70216",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 98337.0,
+   "totalExpenditures": 90693.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Laura T Pearson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25666.58,
+       "expenditures": 0.0,
+       "status": "$24,605.42",
+       "url": "/wy/candidate/laura-t-pearson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Laura T Pearson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25666.58,
+       "expenditures": 0.0,
+       "status": "$24,605.42",
+       "url": "/wy/candidate/laura-t-pearson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Albert Sommers",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 50428.72,
+       "expenditures": 0.0,
+       "status": "$43,846.51",
+       "url": "/wy/candidate/albert-sommers?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Bill Winney",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22241.41,
+       "expenditures": 0.0,
+       "status": "$22,241.41",
+       "url": "/wy/candidate/justin-william-winney-jr?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "14"
+  },
+  {
+   "office": "Wyoming State Senate District 16",
+   "url": "/wy/race/wyoming-state-senate-district-16-70217",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 960.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Dan Dockstader",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$960.00",
+       "url": "/wy/candidate/dan-dockstader?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Dan Dockstader",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$960.00",
+       "url": "/wy/candidate/dan-dockstader?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "16"
+  },
+  {
+   "office": "Wyoming State Senate District 18",
+   "url": "/wy/race/wyoming-state-senate-district-18-70218",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 47349.0,
+   "totalExpenditures": 40804.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tim French",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17888.63,
+       "expenditures": 0.0,
+       "status": "$15,508.70",
+       "url": "/wy/candidate/tim-french?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Tim French",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17888.63,
+       "expenditures": 0.0,
+       "status": "$15,508.70",
+       "url": "/wy/candidate/tim-french?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Landon Greer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 29460.6,
+       "expenditures": 0.0,
+       "status": "$25,295.54",
+       "url": "/wy/candidate/landon-greer?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "18"
+  },
+  {
+   "office": "Wyoming State Senate District 2",
+   "url": "/wy/race/wyoming-state-senate-district-2-70210",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1750.0,
+   "totalExpenditures": 7151.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Brian Boner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1750.0,
+       "expenditures": 0.0,
+       "status": "$7,151.49",
+       "url": "/wy/candidate/brian-boner?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Brian Boner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1750.0,
+       "expenditures": 0.0,
+       "status": "$7,151.49",
+       "url": "/wy/candidate/brian-boner?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "2"
+  },
+  {
+   "office": "Wyoming State Senate District 20",
+   "url": "/wy/race/wyoming-state-senate-district-20-70219",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 49535.0,
+   "totalExpenditures": 47992.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Edward D Cooper",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 33600.0,
+       "expenditures": 0.0,
+       "status": "$32,207.25",
+       "url": "/wy/candidate/edward-d-cooper?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Edward D Cooper",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 33600.0,
+       "expenditures": 0.0,
+       "status": "$32,207.25",
+       "url": "/wy/candidate/edward-d-cooper?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tom Olmstead",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15935.06,
+       "expenditures": 0.0,
+       "status": "$15,784.27",
+       "url": "/wy/candidate/tom-olmstead?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "20"
+  },
+  {
+   "office": "Wyoming State Senate District 22",
+   "url": "/wy/race/wyoming-state-senate-district-22-70220",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 136393.0,
+   "totalExpenditures": 120834.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Barry Crago",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 96522.39,
+       "expenditures": 0.0,
+       "status": "$84,143.43",
+       "url": "/wy/candidate/barry-crago?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Barry Crago",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 96522.39,
+       "expenditures": 0.0,
+       "status": "$84,143.43",
+       "url": "/wy/candidate/barry-crago?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mark Jennings",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 39870.84,
+       "expenditures": 0.0,
+       "status": "$36,690.16",
+       "url": "/wy/candidate/mark-jennings?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "22"
+  },
+  {
+   "office": "Wyoming State Senate District 24",
+   "url": "/wy/race/wyoming-state-senate-district-24-70221",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 33695.0,
+   "totalExpenditures": 48266.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Troy Mckeown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 13970.0,
+       "expenditures": 0.0,
+       "status": "$19,715.05",
+       "url": "/wy/candidate/troy-mckeown?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Troy Mckeown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 13970.0,
+       "expenditures": 0.0,
+       "status": "$19,715.05",
+       "url": "/wy/candidate/troy-mckeown?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Phil Christopherson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19725.0,
+       "expenditures": 12000.0,
+       "status": "$28,550.95",
+       "url": "/wy/candidate/phil-christopherson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "24"
+  },
+  {
+   "office": "Wyoming State Senate District 26",
+   "url": "/wy/race/wyoming-state-senate-district-26-70222",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 32757.0,
+   "totalExpenditures": 27466.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tim Salazar",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 8820.0,
+       "expenditures": 0.0,
+       "status": "$7,055.72",
+       "url": "/wy/candidate/tim-salazar?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Tim Salazar",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 8820.0,
+       "expenditures": 0.0,
+       "status": "$7,055.72",
+       "url": "/wy/candidate/tim-salazar?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Elizabeth Philp",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23937.0,
+       "expenditures": 0.0,
+       "status": "$20,410.61",
+       "url": "/wy/candidate/elizabeth-philp?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "26"
+  },
+  {
+   "office": "Wyoming State Senate District 28",
+   "url": "/wy/race/wyoming-state-senate-district-28-70223",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 49003.0,
+   "totalExpenditures": 52033.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jim Anderson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 27850.0,
+       "expenditures": 0.0,
+       "status": "$16,006.06",
+       "url": "/wy/candidate/jim-anderson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Jim Anderson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 27850.0,
+       "expenditures": 0.0,
+       "status": "$16,006.06",
+       "url": "/wy/candidate/jim-anderson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Bryce Reece",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21153.0,
+       "expenditures": 15968.35,
+       "status": "$36,027.42",
+       "url": "/wy/candidate/bryce-reece?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "28"
+  },
+  {
+   "office": "Wyoming State Senate District 30",
+   "url": "/wy/race/wyoming-state-senate-district-30-70224",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 27840.0,
+   "totalExpenditures": 54989.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Charles K Scott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3500.0,
+       "expenditures": 0.0,
+       "status": "$19,068.95",
+       "url": "/wy/candidate/charles-k-scott?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Charles K Scott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3500.0,
+       "expenditures": 0.0,
+       "status": "$19,068.95",
+       "url": "/wy/candidate/charles-k-scott?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Robert L Hendry",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24240.19,
+       "expenditures": 0.0,
+       "status": "$35,819.94",
+       "url": "/wy/candidate/robert-l-hendry?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Charles Schoenwolf",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 100.0,
+       "expenditures": 0.0,
+       "status": "$100.00",
+       "url": "/wy/candidate/charles-schoenwolf?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "30"
+  },
+  {
+   "office": "Wyoming State Senate District 4",
+   "url": "/wy/race/wyoming-state-senate-district-4-70211",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 38430.0,
+   "totalExpenditures": 17377.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tara Nethercott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38430.0,
+       "expenditures": 0.0,
+       "status": "$17,377.14",
+       "url": "/wy/candidate/tara-nethercott?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Tara Nethercott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38430.0,
+       "expenditures": 0.0,
+       "status": "$17,377.14",
+       "url": "/wy/candidate/tara-nethercott?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "4"
+  },
+  {
+   "office": "Wyoming State Senate District 6",
+   "url": "/wy/race/wyoming-state-senate-district-6-70212",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 158804.0,
+   "totalExpenditures": 228188.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Darin Smith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57425.0,
+       "expenditures": 55000.0,
+       "status": "$111,082.81",
+       "url": "/wy/candidate/darin-smith?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Darin Smith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57425.0,
+       "expenditures": 55000.0,
+       "status": "$111,082.81",
+       "url": "/wy/candidate/darin-smith?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gary Ernest Bjorklund",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14020.0,
+       "expenditures": 0.0,
+       "status": "$14,038.94",
+       "url": "/wy/candidate/gary-ernest-bjorklund?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Eric D Johnston",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 28905.0,
+       "expenditures": 0.0,
+       "status": "$28,887.74",
+       "url": "/wy/candidate/eric-d-johnston?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Taft C Love",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2200.0,
+       "expenditures": 20000.0,
+       "status": "$19,191.57",
+       "url": "/wy/candidate/taft-c-love?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Marc Torriani",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17012.32,
+       "expenditures": 0.0,
+       "status": "$15,980.98",
+       "url": "/wy/candidate/marc-torriani?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kimberley Withers",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 39241.21,
+       "expenditures": 0.0,
+       "status": "$39,006.32",
+       "url": "/wy/candidate/kimberley-withers?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "6"
+  },
+  {
+   "office": "Wyoming State Senate District 8",
+   "url": "/wy/race/wyoming-state-senate-district-8-70213",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 69289.0,
+   "totalExpenditures": 67695.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jared Olsen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27515.27,
+       "expenditures": 0.0,
+       "status": "$26,921.25",
+       "url": "/wy/candidate/jared-olsen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Marguerite Herman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 41774.04,
+       "expenditures": 0.0,
+       "status": "$40,773.87",
+       "url": "/wy/candidate/marguerite-herman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Marguerite Herman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 41774.04,
+       "expenditures": 0.0,
+       "status": "$40,773.87",
+       "url": "/wy/candidate/marguerite-herman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 20, 2024",
+     "candidates": [
+      {
+       "name": "Jared Olsen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27515.27,
+       "expenditures": 0.0,
+       "status": "$26,921.25",
+       "url": "/wy/candidate/jared-olsen?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "8"
+  }
+ ]
+}

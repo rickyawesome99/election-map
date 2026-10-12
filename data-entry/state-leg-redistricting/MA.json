@@ -1,0 +1,7070 @@
+{
+ "house": {
+  "current": {
+   "10th Bristol": {
+    "contributors": [
+     {
+      "areaPct": 95.4,
+      "key": "10th Bristol",
+      "popPct": 79.9
+     },
+     {
+      "areaPct": 4.5,
+      "key": "11th Bristol",
+      "popPct": 20.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 57.5
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 42.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 41887,
+    "pres2020New": -10.3,
+    "pres2020Old": -14.4,
+    "retainedAreaPct": 95.4,
+    "retainedPopPct": 79.9,
+    "text": "Kept 80% of its population from the 2016\u20132020 10th Bristol; gained the rest from the old 11th Bristol (20%). Spans Bristol, Plymouth counties. 2020 presidential margin D+14.4 on the 2016\u20132020 lines \u2192 D+10.3 on the current lines.",
+    "toEra": "current"
+   },
+   "10th Essex": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "10th Essex",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44284,
+    "pres2020New": -41.9,
+    "pres2020Old": -42.3,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Essex County.",
+    "toEra": "current"
+   },
+   "10th Hampden": {
+    "contributors": [
+     {
+      "areaPct": 96.2,
+      "key": "10th Hampden",
+      "popPct": 92.9
+     },
+     {
+      "areaPct": 2.9,
+      "key": "11th Hampden",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 0.6,
+      "key": "9th Hampden",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampden",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43124,
+    "pres2020New": -54.5,
+    "pres2020Old": -55.3,
+    "retainedAreaPct": 96.2,
+    "retainedPopPct": 92.9,
+    "text": "Kept 93% of its population from the 2016\u20132020 10th Hampden; gained the rest from the old 11th Hampden (6%), the old 9th Hampden (1%). Entirely in Hampden County. 2020 presidential margin D+55.3 on the 2016\u20132020 lines \u2192 D+54.5 on the current lines.",
+    "toEra": "current"
+   },
+   "10th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 89.2,
+      "key": "10th Middlesex",
+      "popPct": 87.8
+     },
+     {
+      "areaPct": 7.1,
+      "key": "11th Middlesex",
+      "popPct": 6.8
+     },
+     {
+      "areaPct": 3.6,
+      "key": "29th Middlesex",
+      "popPct": 5.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42074,
+    "pres2020New": -50.1,
+    "pres2020Old": -50.9,
+    "retainedAreaPct": 89.2,
+    "retainedPopPct": 87.8,
+    "text": "Kept 88% of its population from the 2016\u20132020 10th Middlesex; gained the rest from the old 11th Middlesex (7%), the old 29th Middlesex (5%). Entirely in Middlesex County. 2020 presidential margin D+50.9 on the 2016\u20132020 lines \u2192 D+50.1 on the current lines.",
+    "toEra": "current"
+   },
+   "10th Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "10th Norfolk",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43330,
+    "pres2020New": -25.5,
+    "pres2020Old": -25.5,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Norfolk County.",
+    "toEra": "current"
+   },
+   "10th Plymouth": {
+    "contributors": [
+     {
+      "areaPct": 77.6,
+      "key": "10th Plymouth",
+      "popPct": 74.2
+     },
+     {
+      "areaPct": 22.3,
+      "key": "9th Plymouth",
+      "popPct": 25.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plymouth",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45013,
+    "pres2020New": -50.1,
+    "pres2020Old": -31.1,
+    "retainedAreaPct": 77.6,
+    "retainedPopPct": 74.2,
+    "text": "Kept 74% of its population from the 2016\u20132020 10th Plymouth; gained the rest from the old 9th Plymouth (26%). Entirely in Plymouth County. 2020 presidential margin D+31.1 on the 2016\u20132020 lines \u2192 D+50.1 on the current lines.",
+    "toEra": "current"
+   },
+   "10th Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 75.1,
+      "key": "10th Suffolk",
+      "popPct": 72.6
+     },
+     {
+      "areaPct": 21.0,
+      "key": "15th Suffolk",
+      "popPct": 19.3
+     },
+     {
+      "areaPct": 3.8,
+      "key": "14th Suffolk",
+      "popPct": 8.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 93.1
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 5.8
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45144,
+    "pres2020New": -52.2,
+    "pres2020Old": -48.3,
+    "retainedAreaPct": 75.1,
+    "retainedPopPct": 72.6,
+    "text": "Kept 73% of its population from the 2016\u20132020 10th Suffolk; gained the rest from the old 15th Suffolk (19%), the old 14th Suffolk (8%). Spans Suffolk, Norfolk, Middlesex counties. 2020 presidential margin D+48.3 on the 2016\u20132020 lines \u2192 D+52.2 on the current lines.",
+    "toEra": "current"
+   },
+   "10th Worcester": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "10th Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 97.6
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 1.3
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42604,
+    "pres2020New": -19.5,
+    "pres2020Old": -19.9,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Worcester, Norfolk, Middlesex counties.",
+    "toEra": "current"
+   },
+   "11th Bristol": {
+    "contributors": [
+     {
+      "areaPct": 42.8,
+      "key": "11th Bristol",
+      "popPct": 55.1
+     },
+     {
+      "areaPct": 29.1,
+      "key": "13th Bristol",
+      "popPct": 21.4
+     },
+     {
+      "areaPct": 15.7,
+      "key": "10th Bristol",
+      "popPct": 15.7
+     },
+     {
+      "areaPct": 12.1,
+      "key": "9th Bristol",
+      "popPct": 7.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42215,
+    "pres2020New": -30.1,
+    "pres2020Old": -5.2,
+    "retainedAreaPct": 42.8,
+    "retainedPopPct": 55.1,
+    "text": "Kept 55% of its population from the 2016\u20132020 11th Bristol; gained the rest from the old 13th Bristol (21%), the old 10th Bristol (16%), the old 9th Bristol (8%). Entirely in Bristol County. 2020 presidential margin D+5.2 on the 2016\u20132020 lines \u2192 D+30.1 on the current lines.",
+    "toEra": "current"
+   },
+   "11th Essex": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "11th Essex",
+      "popPct": 93.8
+     },
+     {
+      "areaPct": 0.5,
+      "key": "10th Essex",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45797,
+    "pres2020New": -40.4,
+    "pres2020Old": -39.9,
+    "retainedAreaPct": 99.5,
+    "retainedPopPct": 93.8,
+    "text": "Kept 94% of its population from the 2016\u20132020 11th Essex; gained the rest from the old 10th Essex (6%). Entirely in Essex County. 2020 presidential margin D+39.9 on the 2016\u20132020 lines \u2192 D+40.4 on the current lines.",
+    "toEra": "current"
+   },
+   "11th Hampden": {
+    "contributors": [
+     {
+      "areaPct": 77.8,
+      "key": "11th Hampden",
+      "popPct": 78.5
+     },
+     {
+      "areaPct": 7.1,
+      "key": "12th Hampden",
+      "popPct": 11.0
+     },
+     {
+      "areaPct": 15.0,
+      "key": "9th Hampden",
+      "popPct": 10.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampden",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43900,
+    "pres2020New": -58.2,
+    "pres2020Old": -61.5,
+    "retainedAreaPct": 77.8,
+    "retainedPopPct": 78.5,
+    "text": "Kept 78% of its population from the 2016\u20132020 11th Hampden; gained the rest from the old 12th Hampden (11%), the old 9th Hampden (10%). Entirely in Hampden County. 2020 presidential margin D+61.5 on the 2016\u20132020 lines \u2192 D+58.2 on the current lines.",
+    "toEra": "current"
+   },
+   "11th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 93.6,
+      "key": "11th Middlesex",
+      "popPct": 88.0
+     },
+     {
+      "areaPct": 6.3,
+      "key": "12th Middlesex",
+      "popPct": 12.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43929,
+    "pres2020New": -67.4,
+    "pres2020Old": -66.4,
+    "retainedAreaPct": 93.6,
+    "retainedPopPct": 88.0,
+    "text": "Kept 88% of its population from the 2016\u20132020 11th Middlesex; gained the rest from the old 12th Middlesex (12%). Entirely in Middlesex County. 2020 presidential margin D+66.4 on the 2016\u20132020 lines \u2192 D+67.4 on the current lines.",
+    "toEra": "current"
+   },
+   "11th Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "11th Norfolk",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 91.8
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 8.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44844,
+    "pres2020New": -34.1,
+    "pres2020Old": -34.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Norfolk, Suffolk counties.",
+    "toEra": "current"
+   },
+   "11th Plymouth": {
+    "contributors": [
+     {
+      "areaPct": 51.7,
+      "key": "9th Plymouth",
+      "popPct": 72.7
+     },
+     {
+      "areaPct": 48.2,
+      "key": "11th Plymouth",
+      "popPct": 27.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plymouth",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Bristol",
+      "popPct": 44.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 42370,
+    "pres2020New": -66.0,
+    "pres2020Old": -36.1,
+    "retainedAreaPct": 48.2,
+    "retainedPopPct": 27.3,
+    "text": "A new footprint: only 27% of its population was in the 2016\u20132020 11th Plymouth; it draws from the old 9th Plymouth (73%). Counties: lost Bristol. 2020 presidential margin D+36.1 on the 2016\u20132020 lines \u2192 D+66.0 on the current lines.",
+    "toEra": "current"
+   },
+   "11th Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 75.9,
+      "key": "2nd Suffolk",
+      "popPct": 68.4
+     },
+     {
+      "areaPct": 18.1,
+      "key": "16th Suffolk",
+      "popPct": 23.2
+     },
+     {
+      "areaPct": 5.9,
+      "key": "28th Middlesex",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44616,
+    "pres2020New": -54.7,
+    "pres2020Old": -85.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 11th Suffolk; it draws from the old 2nd Suffolk (68%), the old 16th Suffolk (23%), the old 28th Middlesex (8%). Entirely in Suffolk County. 2020 presidential margin D+85.5 on the 2016\u20132020 lines \u2192 D+54.7 on the current lines.",
+    "toEra": "current"
+   },
+   "11th Worcester": {
+    "contributors": [
+     {
+      "areaPct": 98.5,
+      "key": "11th Worcester",
+      "popPct": 99.0
+     },
+     {
+      "areaPct": 1.4,
+      "key": "4th Middlesex",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42393,
+    "pres2020New": -32.1,
+    "pres2020Old": -33.5,
+    "retainedAreaPct": 98.5,
+    "retainedPopPct": 99.0,
+    "text": "Kept 99% of its population from the 2016\u20132020 11th Worcester; gained the rest from the old 4th Middlesex (1%). Entirely in Worcester County. 2020 presidential margin D+33.5 on the 2016\u20132020 lines \u2192 D+32.1 on the current lines.",
+    "toEra": "current"
+   },
+   "12th Bristol": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "12th Bristol",
+      "popPct": 91.8
+     },
+     {
+      "areaPct": 1.3,
+      "key": "3rd Bristol",
+      "popPct": 8.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plymouth",
+      "popPct": 53.0
+     },
+     {
+      "county": "Bristol",
+      "popPct": 47.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45125,
+    "pres2020New": 1.4,
+    "pres2020Old": 2.9,
+    "retainedAreaPct": 98.7,
+    "retainedPopPct": 91.8,
+    "text": "Kept 92% of its population from the 2016\u20132020 12th Bristol; gained the rest from the old 3rd Bristol (8%). Spans Plymouth, Bristol counties. 2020 presidential margin R+2.9 on the 2016\u20132020 lines \u2192 R+1.4 on the current lines.",
+    "toEra": "current"
+   },
+   "12th Essex": {
+    "contributors": [
+     {
+      "areaPct": 94.8,
+      "key": "12th Essex",
+      "popPct": 93.6
+     },
+     {
+      "areaPct": 5.1,
+      "key": "13th Essex",
+      "popPct": 6.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45531,
+    "pres2020New": -18.0,
+    "pres2020Old": -19.2,
+    "retainedAreaPct": 94.8,
+    "retainedPopPct": 93.6,
+    "text": "Kept 94% of its population from the 2016\u20132020 12th Essex; gained the rest from the old 13th Essex (6%). Entirely in Essex County. 2020 presidential margin D+19.2 on the 2016\u20132020 lines \u2192 D+18.0 on the current lines.",
+    "toEra": "current"
+   },
+   "12th Hampden": {
+    "contributors": [
+     {
+      "areaPct": 60.0,
+      "key": "12th Hampden",
+      "popPct": 71.1
+     },
+     {
+      "areaPct": 7.8,
+      "key": "9th Hampden",
+      "popPct": 16.8
+     },
+     {
+      "areaPct": 30.2,
+      "key": "2nd Hampden",
+      "popPct": 6.2
+     },
+     {
+      "areaPct": 1.9,
+      "key": "7th Hampden",
+      "popPct": 5.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampden",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42970,
+    "pres2020New": -16.9,
+    "pres2020Old": -19.3,
+    "retainedAreaPct": 60.0,
+    "retainedPopPct": 71.1,
+    "text": "Kept 71% of its population from the 2016\u20132020 12th Hampden; gained the rest from the old 9th Hampden (17%), the old 2nd Hampden (6%), the old 7th Hampden (6%). Entirely in Hampden County. 2020 presidential margin D+19.3 on the 2016\u20132020 lines \u2192 D+16.9 on the current lines.",
+    "toEra": "current"
+   },
+   "12th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 71.6,
+      "key": "12th Middlesex",
+      "popPct": 76.9
+     },
+     {
+      "areaPct": 25.8,
+      "key": "10th Suffolk",
+      "popPct": 17.1
+     },
+     {
+      "areaPct": 2.4,
+      "key": "15th Suffolk",
+      "popPct": 5.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 76.6
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 17.7
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 5.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Suffolk",
+      "popPct": 5.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 47178,
+    "pres2020New": -66.0,
+    "pres2020Old": -65.7,
+    "retainedAreaPct": 71.6,
+    "retainedPopPct": 76.9,
+    "text": "Kept 77% of its population from the 2016\u20132020 12th Middlesex; gained the rest from the old 10th Suffolk (17%), the old 15th Suffolk (6%). Counties: gained Suffolk (6%). 2020 presidential margin D+65.7 on the 2016\u20132020 lines \u2192 D+66.0 on the current lines.",
+    "toEra": "current"
+   },
+   "12th Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "12th Norfolk",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44648,
+    "pres2020New": -27.3,
+    "pres2020Old": -27.3,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Norfolk County.",
+    "toEra": "current"
+   },
+   "12th Plymouth": {
+    "contributors": [
+     {
+      "areaPct": 89.5,
+      "key": "12th Plymouth",
+      "popPct": 74.2
+     },
+     {
+      "areaPct": 5.5,
+      "key": "1st Plymouth",
+      "popPct": 18.1
+     },
+     {
+      "areaPct": 4.9,
+      "key": "6th Plymouth",
+      "popPct": 7.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plymouth",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45442,
+    "pres2020New": -10.3,
+    "pres2020Old": -8.4,
+    "retainedAreaPct": 89.5,
+    "retainedPopPct": 74.2,
+    "text": "Kept 74% of its population from the 2016\u20132020 12th Plymouth; gained the rest from the old 1st Plymouth (18%), the old 6th Plymouth (8%). Entirely in Plymouth County. 2020 presidential margin D+8.4 on the 2016\u20132020 lines \u2192 D+10.3 on the current lines.",
+    "toEra": "current"
+   },
+   "12th Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 92.8,
+      "key": "12th Suffolk",
+      "popPct": 91.1
+     },
+     {
+      "areaPct": 4.6,
+      "key": "6th Suffolk",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 2.5,
+      "key": "7th Norfolk",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 89.7
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 10.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42643,
+    "pres2020New": -79.7,
+    "pres2020Old": -77.3,
+    "retainedAreaPct": 92.8,
+    "retainedPopPct": 91.1,
+    "text": "Kept 91% of its population from the 2016\u20132020 12th Suffolk; gained the rest from the old 6th Suffolk (7%), the old 7th Norfolk (2%). Spans Suffolk, Norfolk counties. 2020 presidential margin D+77.3 on the 2016\u20132020 lines \u2192 D+79.7 on the current lines.",
+    "toEra": "current"
+   },
+   "12th Worcester": {
+    "contributors": [
+     {
+      "areaPct": 83.8,
+      "key": "12th Worcester",
+      "popPct": 91.1
+     },
+     {
+      "areaPct": 16.1,
+      "key": "1st Worcester",
+      "popPct": 8.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43699,
+    "pres2020New": -18.8,
+    "pres2020Old": -21.7,
+    "retainedAreaPct": 83.8,
+    "retainedPopPct": 91.1,
+    "text": "Kept 91% of its population from the 2016\u20132020 12th Worcester; gained the rest from the old 1st Worcester (9%). Entirely in Worcester County. 2020 presidential margin D+21.7 on the 2016\u20132020 lines \u2192 D+18.8 on the current lines.",
+    "toEra": "current"
+   },
+   "13th Bristol": {
+    "contributors": [
+     {
+      "areaPct": 81.8,
+      "key": "13th Bristol",
+      "popPct": 81.6
+     },
+     {
+      "areaPct": 16.9,
+      "key": "9th Bristol",
+      "popPct": 13.5
+     },
+     {
+      "areaPct": 1.3,
+      "key": "10th Bristol",
+      "popPct": 5.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42713,
+    "pres2020New": -28.1,
+    "pres2020Old": -32.6,
+    "retainedAreaPct": 81.8,
+    "retainedPopPct": 81.6,
+    "text": "Kept 82% of its population from the 2016\u20132020 13th Bristol; gained the rest from the old 9th Bristol (14%), the old 10th Bristol (5%). Entirely in Bristol County. 2020 presidential margin D+32.6 on the 2016\u20132020 lines \u2192 D+28.1 on the current lines.",
+    "toEra": "current"
+   },
+   "13th Essex": {
+    "contributors": [
+     {
+      "areaPct": 68.4,
+      "key": "13th Essex",
+      "popPct": 87.0
+     },
+     {
+      "areaPct": 30.5,
+      "key": "4th Essex",
+      "popPct": 11.9
+     },
+     {
+      "areaPct": 1.0,
+      "key": "12th Essex",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43986,
+    "pres2020New": -13.8,
+    "pres2020Old": -9.8,
+    "retainedAreaPct": 68.4,
+    "retainedPopPct": 87.0,
+    "text": "Kept 87% of its population from the 2016\u20132020 13th Essex; gained the rest from the old 4th Essex (12%), the old 12th Essex (1%). Entirely in Essex County. 2020 presidential margin D+9.8 on the 2016\u20132020 lines \u2192 D+13.8 on the current lines.",
+    "toEra": "current"
+   },
+   "13th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 59.0,
+      "key": "13th Middlesex",
+      "popPct": 65.5
+     },
+     {
+      "areaPct": 19.9,
+      "key": "14th Middlesex",
+      "popPct": 17.6
+     },
+     {
+      "areaPct": 7.4,
+      "key": "14th Norfolk",
+      "popPct": 8.6
+     },
+     {
+      "areaPct": 13.7,
+      "key": "9th Middlesex",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42858,
+    "pres2020New": -56.7,
+    "pres2020Old": -51.5,
+    "retainedAreaPct": 59.0,
+    "retainedPopPct": 65.5,
+    "text": "Kept 66% of its population from the 2016\u20132020 13th Middlesex; gained the rest from the old 14th Middlesex (18%), the old 14th Norfolk (9%), the old 9th Middlesex (8%). Entirely in Middlesex County. 2020 presidential margin D+51.5 on the 2016\u20132020 lines \u2192 D+56.7 on the current lines.",
+    "toEra": "current"
+   },
+   "13th Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "13th Norfolk",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 98.6
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44562,
+    "pres2020New": -52.6,
+    "pres2020Old": -52.6,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Norfolk, Middlesex counties.",
+    "toEra": "current"
+   },
+   "13th Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 68.9,
+      "key": "13th Suffolk",
+      "popPct": 79.4
+     },
+     {
+      "areaPct": 25.3,
+      "key": "4th Suffolk",
+      "popPct": 10.9
+     },
+     {
+      "areaPct": 4.5,
+      "key": "12th Suffolk",
+      "popPct": 6.0
+     },
+     {
+      "areaPct": 1.3,
+      "key": "5th Suffolk",
+      "popPct": 3.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 89.8
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 10.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42179,
+    "pres2020New": -44.6,
+    "pres2020Old": -47.5,
+    "retainedAreaPct": 68.9,
+    "retainedPopPct": 79.4,
+    "text": "Kept 79% of its population from the 2016\u20132020 13th Suffolk; gained the rest from the old 4th Suffolk (11%), the old 12th Suffolk (6%), the old 5th Suffolk (4%). Spans Suffolk, Norfolk counties. 2020 presidential margin D+47.5 on the 2016\u20132020 lines \u2192 D+44.6 on the current lines.",
+    "toEra": "current"
+   },
+   "13th Worcester": {
+    "contributors": [
+     {
+      "areaPct": 92.5,
+      "key": "13th Worcester",
+      "popPct": 89.5
+     },
+     {
+      "areaPct": 4.6,
+      "key": "14th Worcester",
+      "popPct": 3.8
+     },
+     {
+      "areaPct": 1.0,
+      "key": "15th Worcester",
+      "popPct": 3.8
+     },
+     {
+      "areaPct": 1.8,
+      "key": "17th Worcester",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45028,
+    "pres2020New": -39.9,
+    "pres2020Old": -40.1,
+    "retainedAreaPct": 92.5,
+    "retainedPopPct": 89.5,
+    "text": "Kept 90% of its population from the 2016\u20132020 13th Worcester; gained the rest from the old 14th Worcester (4%), the old 15th Worcester (4%), the old 17th Worcester (3%). Entirely in Worcester County. 2020 presidential margin D+40.1 on the 2016\u20132020 lines \u2192 D+39.9 on the current lines.",
+    "toEra": "current"
+   },
+   "14th Bristol": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "14th Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42279,
+    "pres2020New": -18.0,
+    "pres2020Old": -18.0,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Bristol County.",
+    "toEra": "current"
+   },
+   "14th Essex": {
+    "contributors": [
+     {
+      "areaPct": 17.6,
+      "key": "14th Essex",
+      "popPct": 43.1
+     },
+     {
+      "areaPct": 67.6,
+      "key": "2nd Essex",
+      "popPct": 36.9
+     },
+     {
+      "areaPct": 7.7,
+      "key": "1st Essex",
+      "popPct": 12.3
+     },
+     {
+      "areaPct": 7.1,
+      "key": "18th Essex",
+      "popPct": 7.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45408,
+    "pres2020New": -23.5,
+    "pres2020Old": -25.0,
+    "retainedAreaPct": 17.6,
+    "retainedPopPct": 43.1,
+    "text": "A new footprint: only 43% of its population was in the 2016\u20132020 14th Essex; it draws from the old 2nd Essex (37%), the old 1st Essex (12%), the old 18th Essex (8%). Entirely in Essex County. 2020 presidential margin D+25.0 on the 2016\u20132020 lines \u2192 D+23.5 on the current lines.",
+    "toEra": "current"
+   },
+   "14th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 86.8,
+      "key": "14th Middlesex",
+      "popPct": 81.0
+     },
+     {
+      "areaPct": 6.9,
+      "key": "17th Middlesex",
+      "popPct": 9.5
+     },
+     {
+      "areaPct": 6.2,
+      "key": "2nd Middlesex",
+      "popPct": 9.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45413,
+    "pres2020New": -48.9,
+    "pres2020Old": -56.3,
+    "retainedAreaPct": 86.8,
+    "retainedPopPct": 81.0,
+    "text": "Kept 81% of its population from the 2016\u20132020 14th Middlesex; gained the rest from the old 17th Middlesex (10%), the old 2nd Middlesex (10%). Entirely in Middlesex County. 2020 presidential margin D+56.3 on the 2016\u20132020 lines \u2192 D+48.9 on the current lines.",
+    "toEra": "current"
+   },
+   "14th Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 80.9,
+      "key": "14th Norfolk",
+      "popPct": 92.3
+     },
+     {
+      "areaPct": 19.0,
+      "key": "9th Middlesex",
+      "popPct": 7.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 64.4
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 35.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44903,
+    "pres2020New": -54.8,
+    "pres2020Old": -55.0,
+    "retainedAreaPct": 80.9,
+    "retainedPopPct": 92.3,
+    "text": "Kept 92% of its population from the 2016\u20132020 14th Norfolk; gained the rest from the old 9th Middlesex (8%). Spans Norfolk, Middlesex counties. 2020 presidential margin D+55.0 on the 2016\u20132020 lines \u2192 D+54.8 on the current lines.",
+    "toEra": "current"
+   },
+   "14th Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 90.7,
+      "key": "14th Suffolk",
+      "popPct": 83.3
+     },
+     {
+      "areaPct": 6.4,
+      "key": "11th Suffolk",
+      "popPct": 13.9
+     },
+     {
+      "areaPct": 2.4,
+      "key": "10th Suffolk",
+      "popPct": 1.7
+     },
+     {
+      "areaPct": 0.3,
+      "key": "15th Suffolk",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 91.8
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 8.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45203,
+    "pres2020New": -65.6,
+    "pres2020Old": -63.7,
+    "retainedAreaPct": 90.7,
+    "retainedPopPct": 83.3,
+    "text": "Kept 83% of its population from the 2016\u20132020 14th Suffolk; gained the rest from the old 11th Suffolk (14%), the old 10th Suffolk (2%), the old 15th Suffolk (1%). Spans Suffolk, Norfolk counties. 2020 presidential margin D+63.7 on the 2016\u20132020 lines \u2192 D+65.6 on the current lines.",
+    "toEra": "current"
+   },
+   "14th Worcester": {
+    "contributors": [
+     {
+      "areaPct": 97.1,
+      "key": "14th Worcester",
+      "popPct": 91.7
+     },
+     {
+      "areaPct": 1.1,
+      "key": "15th Worcester",
+      "popPct": 5.9
+     },
+     {
+      "areaPct": 1.7,
+      "key": "13th Worcester",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45885,
+    "pres2020New": -35.2,
+    "pres2020Old": -34.8,
+    "retainedAreaPct": 97.1,
+    "retainedPopPct": 91.7,
+    "text": "Kept 92% of its population from the 2016\u20132020 14th Worcester; gained the rest from the old 15th Worcester (6%), the old 13th Worcester (2%). Entirely in Worcester County. 2020 presidential margin D+34.8 on the 2016\u20132020 lines \u2192 D+35.2 on the current lines.",
+    "toEra": "current"
+   },
+   "15th Essex": {
+    "contributors": [
+     {
+      "areaPct": 74.0,
+      "key": "15th Essex",
+      "popPct": 80.8
+     },
+     {
+      "areaPct": 19.9,
+      "key": "3rd Essex",
+      "popPct": 13.2
+     },
+     {
+      "areaPct": 6.1,
+      "key": "14th Essex",
+      "popPct": 6.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49006,
+    "pres2020New": -10.5,
+    "pres2020Old": -11.7,
+    "retainedAreaPct": 74.0,
+    "retainedPopPct": 80.8,
+    "text": "Kept 81% of its population from the 2016\u20132020 15th Essex; gained the rest from the old 3rd Essex (13%), the old 14th Essex (6%). Entirely in Essex County. 2020 presidential margin D+11.7 on the 2016\u20132020 lines \u2192 D+10.5 on the current lines.",
+    "toEra": "current"
+   },
+   "15th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 94.3,
+      "key": "15th Middlesex",
+      "popPct": 93.5
+     },
+     {
+      "areaPct": 5.7,
+      "key": "31st Middlesex",
+      "popPct": 6.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44618,
+    "pres2020New": -51.2,
+    "pres2020Old": -53.5,
+    "retainedAreaPct": 94.3,
+    "retainedPopPct": 93.5,
+    "text": "Kept 94% of its population from the 2016\u20132020 15th Middlesex; gained the rest from the old 31st Middlesex (6%). Entirely in Middlesex County. 2020 presidential margin D+53.5 on the 2016\u20132020 lines \u2192 D+51.2 on the current lines.",
+    "toEra": "current"
+   },
+   "15th Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 78.8,
+      "key": "15th Norfolk",
+      "popPct": 86.8
+     },
+     {
+      "areaPct": 13.3,
+      "key": "18th Suffolk",
+      "popPct": 9.6
+     },
+     {
+      "areaPct": 7.9,
+      "key": "15th Suffolk",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 52.9
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 47.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44944,
+    "pres2020New": -79.3,
+    "pres2020Old": -78.8,
+    "retainedAreaPct": 78.8,
+    "retainedPopPct": 86.8,
+    "text": "Kept 87% of its population from the 2016\u20132020 15th Norfolk; gained the rest from the old 18th Suffolk (10%), the old 15th Suffolk (4%). Spans Suffolk, Norfolk counties. 2020 presidential margin D+78.8 on the 2016\u20132020 lines \u2192 D+79.3 on the current lines.",
+    "toEra": "current"
+   },
+   "15th Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 42.6,
+      "key": "15th Suffolk",
+      "popPct": 53.2
+     },
+     {
+      "areaPct": 57.1,
+      "key": "11th Suffolk",
+      "popPct": 46.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Norfolk",
+      "popPct": 3.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 44017,
+    "pres2020New": -85.6,
+    "pres2020Old": -80.6,
+    "retainedAreaPct": 42.6,
+    "retainedPopPct": 53.2,
+    "text": "Kept 53% of its population from the 2016\u20132020 15th Suffolk; gained the rest from the old 11th Suffolk (46%). Counties: lost Norfolk. 2020 presidential margin D+80.6 on the 2016\u20132020 lines \u2192 D+85.6 on the current lines.",
+    "toEra": "current"
+   },
+   "15th Worcester": {
+    "contributors": [
+     {
+      "areaPct": 87.5,
+      "key": "15th Worcester",
+      "popPct": 80.5
+     },
+     {
+      "areaPct": 5.9,
+      "key": "16th Worcester",
+      "popPct": 13.4
+     },
+     {
+      "areaPct": 3.7,
+      "key": "13th Worcester",
+      "popPct": 4.9
+     },
+     {
+      "areaPct": 3.0,
+      "key": "14th Worcester",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42285,
+    "pres2020New": -44.4,
+    "pres2020Old": -40.5,
+    "retainedAreaPct": 87.5,
+    "retainedPopPct": 80.5,
+    "text": "Kept 80% of its population from the 2016\u20132020 15th Worcester; gained the rest from the old 16th Worcester (13%), the old 13th Worcester (5%), the old 14th Worcester (1%). Entirely in Worcester County. 2020 presidential margin D+40.5 on the 2016\u20132020 lines \u2192 D+44.4 on the current lines.",
+    "toEra": "current"
+   },
+   "16th Essex": {
+    "contributors": [
+     {
+      "areaPct": 44.1,
+      "key": "16th Essex",
+      "popPct": 61.1
+     },
+     {
+      "areaPct": 55.8,
+      "key": "14th Essex",
+      "popPct": 38.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44216,
+    "pres2020New": -34.5,
+    "pres2020Old": -50.6,
+    "retainedAreaPct": 44.1,
+    "retainedPopPct": 61.1,
+    "text": "Kept 61% of its population from the 2016\u20132020 16th Essex; gained the rest from the old 14th Essex (39%). Entirely in Essex County. 2020 presidential margin D+50.6 on the 2016\u20132020 lines \u2192 D+34.5 on the current lines.",
+    "toEra": "current"
+   },
+   "16th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "16th Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44936,
+    "pres2020New": -26.6,
+    "pres2020Old": -26.6,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Middlesex County.",
+    "toEra": "current"
+   },
+   "16th Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 90.5,
+      "key": "16th Suffolk",
+      "popPct": 80.3
+     },
+     {
+      "areaPct": 9.2,
+      "key": "19th Suffolk",
+      "popPct": 19.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 89.6
+     },
+     {
+      "county": "Essex",
+      "popPct": 10.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 41695,
+    "pres2020New": -20.3,
+    "pres2020Old": -26.1,
+    "retainedAreaPct": 90.5,
+    "retainedPopPct": 80.3,
+    "text": "Kept 80% of its population from the 2016\u20132020 16th Suffolk; gained the rest from the old 19th Suffolk (19%). Spans Suffolk, Essex counties. 2020 presidential margin D+26.1 on the 2016\u20132020 lines \u2192 D+20.3 on the current lines.",
+    "toEra": "current"
+   },
+   "16th Worcester": {
+    "contributors": [
+     {
+      "areaPct": 82.8,
+      "key": "16th Worcester",
+      "popPct": 88.6
+     },
+     {
+      "areaPct": 16.6,
+      "key": "15th Worcester",
+      "popPct": 10.1
+     },
+     {
+      "areaPct": 0.5,
+      "key": "17th Worcester",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44010,
+    "pres2020New": -32.1,
+    "pres2020Old": -35.2,
+    "retainedAreaPct": 82.8,
+    "retainedPopPct": 88.6,
+    "text": "Kept 89% of its population from the 2016\u20132020 16th Worcester; gained the rest from the old 15th Worcester (10%), the old 17th Worcester (1%). Entirely in Worcester County. 2020 presidential margin D+35.2 on the 2016\u20132020 lines \u2192 D+32.1 on the current lines.",
+    "toEra": "current"
+   },
+   "17th Essex": {
+    "contributors": [
+     {
+      "areaPct": 98.1,
+      "key": "17th Essex",
+      "popPct": 91.2
+     },
+     {
+      "areaPct": 1.8,
+      "key": "16th Essex",
+      "popPct": 8.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 41980,
+    "pres2020New": -43.5,
+    "pres2020Old": -41.6,
+    "retainedAreaPct": 98.1,
+    "retainedPopPct": 91.2,
+    "text": "Kept 91% of its population from the 2016\u20132020 17th Essex; gained the rest from the old 16th Essex (9%). Entirely in Essex County. 2020 presidential margin D+41.6 on the 2016\u20132020 lines \u2192 D+43.5 on the current lines.",
+    "toEra": "current"
+   },
+   "17th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 65.7,
+      "key": "17th Middlesex",
+      "popPct": 91.3
+     },
+     {
+      "areaPct": 34.3,
+      "key": "19th Middlesex",
+      "popPct": 8.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44445,
+    "pres2020New": -32.8,
+    "pres2020Old": -34.0,
+    "retainedAreaPct": 65.7,
+    "retainedPopPct": 91.3,
+    "text": "Kept 91% of its population from the 2016\u20132020 17th Middlesex; gained the rest from the old 19th Middlesex (9%). Entirely in Middlesex County. 2020 presidential margin D+34.0 on the 2016\u20132020 lines \u2192 D+32.8 on the current lines.",
+    "toEra": "current"
+   },
+   "17th Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 77.4,
+      "key": "17th Suffolk",
+      "popPct": 89.7
+     },
+     {
+      "areaPct": 21.5,
+      "key": "15th Norfolk",
+      "popPct": 8.9
+     },
+     {
+      "areaPct": 1.1,
+      "key": "18th Suffolk",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 95.2
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 3.0
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 1.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Norfolk",
+      "popPct": 3.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44710,
+    "pres2020New": -72.7,
+    "pres2020Old": -72.0,
+    "retainedAreaPct": 77.4,
+    "retainedPopPct": 89.7,
+    "text": "Kept 90% of its population from the 2016\u20132020 17th Suffolk; gained the rest from the old 15th Norfolk (9%), the old 18th Suffolk (1%). Counties: gained Norfolk (3%). 2020 presidential margin D+72.0 on the 2016\u20132020 lines \u2192 D+72.7 on the current lines.",
+    "toEra": "current"
+   },
+   "17th Worcester": {
+    "contributors": [
+     {
+      "areaPct": 96.0,
+      "key": "17th Worcester",
+      "popPct": 84.9
+     },
+     {
+      "areaPct": 2.4,
+      "key": "16th Worcester",
+      "popPct": 7.4
+     },
+     {
+      "areaPct": 1.0,
+      "key": "15th Worcester",
+      "popPct": 6.3
+     },
+     {
+      "areaPct": 0.5,
+      "key": "13th Worcester",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42738,
+    "pres2020New": -28.3,
+    "pres2020Old": -21.4,
+    "retainedAreaPct": 96.0,
+    "retainedPopPct": 84.9,
+    "text": "Kept 85% of its population from the 2016\u20132020 17th Worcester; gained the rest from the old 16th Worcester (7%), the old 15th Worcester (6%), the old 13th Worcester (1%). Entirely in Worcester County. 2020 presidential margin D+21.4 on the 2016\u20132020 lines \u2192 D+28.3 on the current lines.",
+    "toEra": "current"
+   },
+   "18th Essex": {
+    "contributors": [
+     {
+      "areaPct": 95.4,
+      "key": "18th Essex",
+      "popPct": 93.4
+     },
+     {
+      "areaPct": 4.6,
+      "key": "17th Essex",
+      "popPct": 6.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 80.4
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 19.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 46414,
+    "pres2020New": -27.0,
+    "pres2020Old": -26.2,
+    "retainedAreaPct": 95.4,
+    "retainedPopPct": 93.4,
+    "text": "Kept 93% of its population from the 2016\u20132020 18th Essex; gained the rest from the old 17th Essex (7%). Spans Essex, Middlesex counties. 2020 presidential margin D+26.2 on the 2016\u20132020 lines \u2192 D+27.0 on the current lines.",
+    "toEra": "current"
+   },
+   "18th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "18th Middlesex",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42244,
+    "pres2020New": -38.0,
+    "pres2020Old": -38.0,
+    "retainedAreaPct": 99.4,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Middlesex County.",
+    "toEra": "current"
+   },
+   "18th Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 91.3,
+      "key": "18th Suffolk",
+      "popPct": 89.3
+     },
+     {
+      "areaPct": 7.5,
+      "key": "8th Suffolk",
+      "popPct": 8.4
+     },
+     {
+      "areaPct": 0.9,
+      "key": "17th Suffolk",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 81.7
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 18.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Norfolk",
+      "popPct": 3.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 43317,
+    "pres2020New": -68.2,
+    "pres2020Old": -69.6,
+    "retainedAreaPct": 91.3,
+    "retainedPopPct": 89.3,
+    "text": "Kept 89% of its population from the 2016\u20132020 18th Suffolk; gained the rest from the old 8th Suffolk (8%), the old 17th Suffolk (2%). Counties: lost Norfolk. 2020 presidential margin D+69.6 on the 2016\u20132020 lines \u2192 D+68.2 on the current lines.",
+    "toEra": "current"
+   },
+   "18th Worcester": {
+    "contributors": [
+     {
+      "areaPct": 93.2,
+      "key": "18th Worcester",
+      "popPct": 92.7
+     },
+     {
+      "areaPct": 6.7,
+      "key": "8th Worcester",
+      "popPct": 7.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 46026,
+    "pres2020New": 2.5,
+    "pres2020Old": 2.5,
+    "retainedAreaPct": 93.2,
+    "retainedPopPct": 92.7,
+    "text": "Kept 93% of its population from the 2016\u20132020 18th Worcester; gained the rest from the old 8th Worcester (7%). Entirely in Worcester County. 2020 presidential margin R+2.5 on the 2016\u20132020 lines \u2192 R+2.5 on the current lines.",
+    "toEra": "current"
+   },
+   "19th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 85.8,
+      "key": "19th Middlesex",
+      "popPct": 90.5
+     },
+     {
+      "areaPct": 14.2,
+      "key": "21st Middlesex",
+      "popPct": 9.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 99.3
+     },
+     {
+      "county": "Essex",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42271,
+    "pres2020New": -8.0,
+    "pres2020Old": -7.9,
+    "retainedAreaPct": 85.8,
+    "retainedPopPct": 90.5,
+    "text": "Kept 90% of its population from the 2016\u20132020 19th Middlesex; gained the rest from the old 21st Middlesex (10%). Spans Middlesex, Essex counties. 2020 presidential margin D+7.9 on the 2016\u20132020 lines \u2192 D+8.0 on the current lines.",
+    "toEra": "current"
+   },
+   "19th Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 71.4,
+      "key": "19th Suffolk",
+      "popPct": 78.8
+     },
+     {
+      "areaPct": 28.6,
+      "key": "16th Suffolk",
+      "popPct": 21.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 98.5
+     },
+     {
+      "county": "Essex",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45600,
+    "pres2020New": -30.8,
+    "pres2020Old": -30.4,
+    "retainedAreaPct": 71.4,
+    "retainedPopPct": 78.8,
+    "text": "Kept 79% of its population from the 2016\u20132020 19th Suffolk; gained the rest from the old 16th Suffolk (21%). Spans Suffolk, Essex counties. 2020 presidential margin D+30.4 on the 2016\u20132020 lines \u2192 D+30.8 on the current lines.",
+    "toEra": "current"
+   },
+   "19th Worcester": {
+    "contributors": [
+     {
+      "areaPct": 30.7,
+      "key": "4th Middlesex",
+      "popPct": 37.6
+     },
+     {
+      "areaPct": 45.2,
+      "key": "8th Middlesex",
+      "popPct": 35.2
+     },
+     {
+      "areaPct": 12.4,
+      "key": "11th Worcester",
+      "popPct": 13.3
+     },
+     {
+      "areaPct": 8.3,
+      "key": "12th Worcester",
+      "popPct": 9.3
+     },
+     {
+      "areaPct": 3.4,
+      "key": "6th Middlesex",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 91.5
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 8.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Worcester",
+      "popPct": 91.5
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 8.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 41730,
+    "pres2020New": -42.3,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 19th Worcester; it draws from the old 4th Middlesex (38%), the old 8th Middlesex (35%), the old 11th Worcester (13%) and 2 more. Counties: gained Worcester (92%), Middlesex (8%).",
+    "toEra": "current"
+   },
+   "1st Barnstable": {
+    "contributors": [
+     {
+      "areaPct": 84.4,
+      "key": "1st Barnstable",
+      "popPct": 92.0
+     },
+     {
+      "areaPct": 15.6,
+      "key": "4th Barnstable",
+      "popPct": 8.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Barnstable",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42979,
+    "pres2020New": -25.2,
+    "pres2020Old": -24.4,
+    "retainedAreaPct": 84.4,
+    "retainedPopPct": 92.0,
+    "text": "Kept 92% of its population from the 2016\u20132020 1st Barnstable; gained the rest from the old 4th Barnstable (8%). Entirely in Barnstable County. 2020 presidential margin D+24.4 on the 2016\u20132020 lines \u2192 D+25.2 on the current lines.",
+    "toEra": "current"
+   },
+   "1st Berkshire": {
+    "contributors": [
+     {
+      "areaPct": 66.3,
+      "key": "1st Berkshire",
+      "popPct": 90.1
+     },
+     {
+      "areaPct": 33.7,
+      "key": "2nd Berkshire",
+      "popPct": 9.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Berkshire",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42503,
+    "pres2020New": -38.5,
+    "pres2020Old": -40.3,
+    "retainedAreaPct": 66.3,
+    "retainedPopPct": 90.1,
+    "text": "Kept 90% of its population from the 2016\u20132020 1st Berkshire; gained the rest from the old 2nd Berkshire (10%). Entirely in Berkshire County. 2020 presidential margin D+40.3 on the 2016\u20132020 lines \u2192 D+38.5 on the current lines.",
+    "toEra": "current"
+   },
+   "1st Bristol": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "1st Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 56.5
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 43.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42347,
+    "pres2020New": -20.7,
+    "pres2020Old": -20.7,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Bristol, Norfolk counties.",
+    "toEra": "current"
+   },
+   "1st Essex": {
+    "contributors": [
+     {
+      "areaPct": 80.9,
+      "key": "1st Essex",
+      "popPct": 85.4
+     },
+     {
+      "areaPct": 19.1,
+      "key": "2nd Essex",
+      "popPct": 14.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 46042,
+    "pres2020New": -31.5,
+    "pres2020Old": -33.8,
+    "retainedAreaPct": 80.9,
+    "retainedPopPct": 85.4,
+    "text": "Kept 85% of its population from the 2016\u20132020 1st Essex; gained the rest from the old 2nd Essex (15%). Entirely in Essex County. 2020 presidential margin D+33.8 on the 2016\u20132020 lines \u2192 D+31.5 on the current lines.",
+    "toEra": "current"
+   },
+   "1st Franklin": {
+    "contributors": [
+     {
+      "areaPct": 54.2,
+      "key": "1st Franklin",
+      "popPct": 65.0
+     },
+     {
+      "areaPct": 45.8,
+      "key": "2nd Berkshire",
+      "popPct": 34.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Franklin",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Hampshire",
+      "popPct": 24.0
+     },
+     {
+      "county": "Hampden",
+      "popPct": 3.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 42914,
+    "pres2020New": -50.1,
+    "pres2020Old": -47.7,
+    "retainedAreaPct": 54.2,
+    "retainedPopPct": 65.0,
+    "text": "Kept 65% of its population from the 2016\u20132020 1st Franklin; gained the rest from the old 2nd Berkshire (35%). Counties: lost Hampshire, Hampden. 2020 presidential margin D+47.7 on the 2016\u20132020 lines \u2192 D+50.1 on the current lines.",
+    "toEra": "current"
+   },
+   "1st Hampden": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "1st Hampden",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampden",
+      "popPct": 48.4
+     },
+     {
+      "county": "Worcester",
+      "popPct": 35.0
+     },
+     {
+      "county": "Hampshire",
+      "popPct": 16.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42225,
+    "pres2020New": 0.6,
+    "pres2020Old": 0.6,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Hampden, Worcester, Hampshire counties.",
+    "toEra": "current"
+   },
+   "1st Hampshire": {
+    "contributors": [
+     {
+      "areaPct": 34.6,
+      "key": "1st Hampshire",
+      "popPct": 82.5
+     },
+     {
+      "areaPct": 65.4,
+      "key": "1st Franklin",
+      "popPct": 17.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampshire",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Hampden",
+      "popPct": 2.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 41828,
+    "pres2020New": -64.8,
+    "pres2020Old": -58.7,
+    "retainedAreaPct": 34.6,
+    "retainedPopPct": 82.5,
+    "text": "Kept 82% of its population from the 2016\u20132020 1st Hampshire; gained the rest from the old 1st Franklin (18%). Counties: lost Hampden. 2020 presidential margin D+58.7 on the 2016\u20132020 lines \u2192 D+64.8 on the current lines.",
+    "toEra": "current"
+   },
+   "1st Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 82.7,
+      "key": "1st Middlesex",
+      "popPct": 79.7
+     },
+     {
+      "areaPct": 17.3,
+      "key": "37th Middlesex",
+      "popPct": 20.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 79.5
+     },
+     {
+      "county": "Worcester",
+      "popPct": 20.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43307,
+    "pres2020New": -13.2,
+    "pres2020Old": -17.0,
+    "retainedAreaPct": 82.7,
+    "retainedPopPct": 79.7,
+    "text": "Kept 80% of its population from the 2016\u20132020 1st Middlesex; gained the rest from the old 37th Middlesex (20%). Spans Middlesex, Worcester counties. 2020 presidential margin D+17.0 on the 2016\u20132020 lines \u2192 D+13.2 on the current lines.",
+    "toEra": "current"
+   },
+   "1st Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 93.8,
+      "key": "1st Norfolk",
+      "popPct": 88.1
+     },
+     {
+      "areaPct": 3.1,
+      "key": "13th Suffolk",
+      "popPct": 6.5
+     },
+     {
+      "areaPct": 2.6,
+      "key": "5th Norfolk",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 0.5,
+      "key": "2nd Norfolk",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 99.2
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 46928,
+    "pres2020New": -38.6,
+    "pres2020Old": -38.1,
+    "retainedAreaPct": 93.8,
+    "retainedPopPct": 88.1,
+    "text": "Kept 88% of its population from the 2016\u20132020 1st Norfolk; gained the rest from the old 13th Suffolk (6%), the old 5th Norfolk (4%), the old 2nd Norfolk (2%). Spans Norfolk, Suffolk counties. 2020 presidential margin D+38.1 on the 2016\u20132020 lines \u2192 D+38.6 on the current lines.",
+    "toEra": "current"
+   },
+   "1st Plymouth": {
+    "contributors": [
+     {
+      "areaPct": 92.5,
+      "key": "1st Plymouth",
+      "popPct": 84.1
+     },
+     {
+      "areaPct": 4.1,
+      "key": "5th Barnstable",
+      "popPct": 8.5
+     },
+     {
+      "areaPct": 3.4,
+      "key": "12th Plymouth",
+      "popPct": 7.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plymouth",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44094,
+    "pres2020New": -14.5,
+    "pres2020Old": -17.5,
+    "retainedAreaPct": 92.5,
+    "retainedPopPct": 84.1,
+    "text": "Kept 84% of its population from the 2016\u20132020 1st Plymouth; gained the rest from the old 5th Barnstable (8%), the old 12th Plymouth (7%). Entirely in Plymouth County. 2020 presidential margin D+17.5 on the 2016\u20132020 lines \u2192 D+14.5 on the current lines.",
+    "toEra": "current"
+   },
+   "1st Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 96.3,
+      "key": "1st Suffolk",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42957,
+    "pres2020New": -53.6,
+    "pres2020Old": -53.5,
+    "retainedAreaPct": 96.3,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Suffolk County.",
+    "toEra": "current"
+   },
+   "1st Worcester": {
+    "contributors": [
+     {
+      "areaPct": 88.7,
+      "key": "1st Worcester",
+      "popPct": 90.8
+     },
+     {
+      "areaPct": 11.3,
+      "key": "2nd Worcester",
+      "popPct": 9.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45666,
+    "pres2020New": -12.2,
+    "pres2020Old": -12.6,
+    "retainedAreaPct": 88.7,
+    "retainedPopPct": 90.8,
+    "text": "Kept 91% of its population from the 2016\u20132020 1st Worcester; gained the rest from the old 2nd Worcester (9%). Entirely in Worcester County. 2020 presidential margin D+12.6 on the 2016\u20132020 lines \u2192 D+12.2 on the current lines.",
+    "toEra": "current"
+   },
+   "20th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 86.4,
+      "key": "20th Middlesex",
+      "popPct": 91.8
+     },
+     {
+      "areaPct": 13.5,
+      "key": "13th Essex",
+      "popPct": 8.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 56.1
+     },
+     {
+      "county": "Essex",
+      "popPct": 43.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 46146,
+    "pres2020New": -12.3,
+    "pres2020Old": -14.8,
+    "retainedAreaPct": 86.4,
+    "retainedPopPct": 91.8,
+    "text": "Kept 92% of its population from the 2016\u20132020 20th Middlesex; gained the rest from the old 13th Essex (8%). Spans Middlesex, Essex counties. 2020 presidential margin D+14.8 on the 2016\u20132020 lines \u2192 D+12.3 on the current lines.",
+    "toEra": "current"
+   },
+   "21st Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 93.4,
+      "key": "21st Middlesex",
+      "popPct": 91.2
+     },
+     {
+      "areaPct": 6.6,
+      "key": "15th Middlesex",
+      "popPct": 8.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44687,
+    "pres2020New": -36.5,
+    "pres2020Old": -31.4,
+    "retainedAreaPct": 93.4,
+    "retainedPopPct": 91.2,
+    "text": "Kept 91% of its population from the 2016\u20132020 21st Middlesex; gained the rest from the old 15th Middlesex (9%). Entirely in Middlesex County. 2020 presidential margin D+31.4 on the 2016\u20132020 lines \u2192 D+36.5 on the current lines.",
+    "toEra": "current"
+   },
+   "22nd Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "22nd Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42154,
+    "pres2020New": -10.6,
+    "pres2020Old": -10.6,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Middlesex County.",
+    "toEra": "current"
+   },
+   "23rd Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "23rd Middlesex",
+      "popPct": 99.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43585,
+    "pres2020New": -62.7,
+    "pres2020Old": -63.1,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.8,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Middlesex County.",
+    "toEra": "current"
+   },
+   "24th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 96.8,
+      "key": "24th Middlesex",
+      "popPct": 95.2
+     },
+     {
+      "areaPct": 3.1,
+      "key": "23rd Middlesex",
+      "popPct": 4.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 47104,
+    "pres2020New": -65.8,
+    "pres2020Old": -66.2,
+    "retainedAreaPct": 96.8,
+    "retainedPopPct": 95.2,
+    "text": "Kept 95% of its population from the 2016\u20132020 24th Middlesex; gained the rest from the old 23rd Middlesex (5%). Entirely in Middlesex County. 2020 presidential margin D+66.2 on the 2016\u20132020 lines \u2192 D+65.8 on the current lines.",
+    "toEra": "current"
+   },
+   "25th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "25th Middlesex",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42778,
+    "pres2020New": -88.7,
+    "pres2020Old": -88.7,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Middlesex County.",
+    "toEra": "current"
+   },
+   "26th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 83.1,
+      "key": "26th Middlesex",
+      "popPct": 79.0
+     },
+     {
+      "areaPct": 16.3,
+      "key": "8th Suffolk",
+      "popPct": 20.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 92.3
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 7.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 47304,
+    "pres2020New": -80.3,
+    "pres2020Old": -78.0,
+    "retainedAreaPct": 83.1,
+    "retainedPopPct": 79.0,
+    "text": "Kept 79% of its population from the 2016\u20132020 26th Middlesex; gained the rest from the old 8th Suffolk (21%). Spans Middlesex, Suffolk counties. 2020 presidential margin D+78.0 on the 2016\u20132020 lines \u2192 D+80.3 on the current lines.",
+    "toEra": "current"
+   },
+   "27th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 89.5,
+      "key": "27th Middlesex",
+      "popPct": 91.5
+     },
+     {
+      "areaPct": 10.3,
+      "key": "26th Middlesex",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43781,
+    "pres2020New": -81.1,
+    "pres2020Old": -81.5,
+    "retainedAreaPct": 89.5,
+    "retainedPopPct": 91.5,
+    "text": "Kept 92% of its population from the 2016\u20132020 27th Middlesex; gained the rest from the old 26th Middlesex (8%). Entirely in Middlesex County. 2020 presidential margin D+81.5 on the 2016\u20132020 lines \u2192 D+81.1 on the current lines.",
+    "toEra": "current"
+   },
+   "28th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "28th Middlesex",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 76.8
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 23.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 41582,
+    "pres2020New": -43.9,
+    "pres2020Old": -43.2,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Middlesex, Suffolk counties.",
+    "toEra": "current"
+   },
+   "29th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 97.9,
+      "key": "29th Middlesex",
+      "popPct": 95.2
+     },
+     {
+      "areaPct": 2.0,
+      "key": "24th Middlesex",
+      "popPct": 4.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 97.3
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 2.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44376,
+    "pres2020New": -72.4,
+    "pres2020Old": -71.3,
+    "retainedAreaPct": 97.9,
+    "retainedPopPct": 95.2,
+    "text": "Kept 95% of its population from the 2016\u20132020 29th Middlesex; gained the rest from the old 24th Middlesex (5%). Spans Middlesex, Suffolk counties. 2020 presidential margin D+71.3 on the 2016\u20132020 lines \u2192 D+72.4 on the current lines.",
+    "toEra": "current"
+   },
+   "2nd Barnstable": {
+    "contributors": [
+     {
+      "areaPct": 75.7,
+      "key": "2nd Barnstable",
+      "popPct": 90.9
+     },
+     {
+      "areaPct": 24.3,
+      "key": "1st Barnstable",
+      "popPct": 9.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Barnstable",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45178,
+    "pres2020New": -19.5,
+    "pres2020Old": -18.2,
+    "retainedAreaPct": 75.7,
+    "retainedPopPct": 90.9,
+    "text": "Kept 91% of its population from the 2016\u20132020 2nd Barnstable; gained the rest from the old 1st Barnstable (9%). Entirely in Barnstable County. 2020 presidential margin D+18.2 on the 2016\u20132020 lines \u2192 D+19.5 on the current lines.",
+    "toEra": "current"
+   },
+   "2nd Berkshire": {
+    "contributors": [
+     {
+      "areaPct": 90.7,
+      "key": "3rd Berkshire",
+      "popPct": 93.3
+     },
+     {
+      "areaPct": 9.2,
+      "key": "2nd Berkshire",
+      "popPct": 6.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Berkshire",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Franklin",
+      "popPct": 67.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 43927,
+    "pres2020New": -51.9,
+    "pres2020Old": -41.1,
+    "retainedAreaPct": 9.2,
+    "retainedPopPct": 6.7,
+    "text": "A new footprint: only 7% of its population was in the 2016\u20132020 2nd Berkshire; it draws from the old 3rd Berkshire (93%). Counties: lost Franklin. 2020 presidential margin D+41.1 on the 2016\u20132020 lines \u2192 D+51.9 on the current lines.",
+    "toEra": "current"
+   },
+   "2nd Bristol": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "2nd Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42763,
+    "pres2020New": -18.1,
+    "pres2020Old": -18.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Bristol County.",
+    "toEra": "current"
+   },
+   "2nd Essex": {
+    "contributors": [
+     {
+      "areaPct": 68.4,
+      "key": "4th Essex",
+      "popPct": 67.5
+     },
+     {
+      "areaPct": 31.6,
+      "key": "2nd Essex",
+      "popPct": 32.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 46708,
+    "pres2020New": -24.6,
+    "pres2020Old": -18.2,
+    "retainedAreaPct": 31.6,
+    "retainedPopPct": 32.5,
+    "text": "A new footprint: only 32% of its population was in the 2016\u20132020 2nd Essex; it draws from the old 4th Essex (68%). Entirely in Essex County. 2020 presidential margin D+18.2 on the 2016\u20132020 lines \u2192 D+24.6 on the current lines.",
+    "toEra": "current"
+   },
+   "2nd Franklin": {
+    "contributors": [
+     {
+      "areaPct": 75.5,
+      "key": "2nd Franklin",
+      "popPct": 61.8
+     },
+     {
+      "areaPct": 19.2,
+      "key": "2nd Berkshire",
+      "popPct": 30.0
+     },
+     {
+      "areaPct": 5.3,
+      "key": "2nd Worcester",
+      "popPct": 8.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Franklin",
+      "popPct": 58.5
+     },
+     {
+      "county": "Worcester",
+      "popPct": 41.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Hampshire",
+      "popPct": 9.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 42919,
+    "pres2020New": -17.5,
+    "pres2020Old": -10.6,
+    "retainedAreaPct": 75.5,
+    "retainedPopPct": 61.8,
+    "text": "Kept 62% of its population from the 2016\u20132020 2nd Franklin; gained the rest from the old 2nd Berkshire (30%), the old 2nd Worcester (8%). Counties: lost Hampshire. 2020 presidential margin D+10.6 on the 2016\u20132020 lines \u2192 D+17.5 on the current lines.",
+    "toEra": "current"
+   },
+   "2nd Hampden": {
+    "contributors": [
+     {
+      "areaPct": 98.6,
+      "key": "2nd Hampden",
+      "popPct": 88.6
+     },
+     {
+      "areaPct": 1.3,
+      "key": "12th Hampden",
+      "popPct": 11.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampden",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43560,
+    "pres2020New": -15.0,
+    "pres2020Old": -12.3,
+    "retainedAreaPct": 98.6,
+    "retainedPopPct": 88.6,
+    "text": "Kept 89% of its population from the 2016\u20132020 2nd Hampden; gained the rest from the old 12th Hampden (11%). Entirely in Hampden County. 2020 presidential margin D+12.3 on the 2016\u20132020 lines \u2192 D+15.0 on the current lines.",
+    "toEra": "current"
+   },
+   "2nd Hampshire": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "2nd Hampshire",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampshire",
+      "popPct": 98.0
+     },
+     {
+      "county": "Hampden",
+      "popPct": 2.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42603,
+    "pres2020New": -38.9,
+    "pres2020Old": -38.9,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Hampshire, Hampden counties.",
+    "toEra": "current"
+   },
+   "2nd Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "2nd Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42230,
+    "pres2020New": -35.5,
+    "pres2020Old": -34.8,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Middlesex County.",
+    "toEra": "current"
+   },
+   "2nd Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 98.2,
+      "key": "2nd Norfolk",
+      "popPct": 93.4
+     },
+     {
+      "areaPct": 1.8,
+      "key": "1st Norfolk",
+      "popPct": 6.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45654,
+    "pres2020New": -35.4,
+    "pres2020Old": -34.9,
+    "retainedAreaPct": 98.2,
+    "retainedPopPct": 93.4,
+    "text": "Kept 93% of its population from the 2016\u20132020 2nd Norfolk; gained the rest from the old 1st Norfolk (7%). Entirely in Norfolk County. 2020 presidential margin D+34.9 on the 2016\u20132020 lines \u2192 D+35.4 on the current lines.",
+    "toEra": "current"
+   },
+   "2nd Plymouth": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "2nd Plymouth",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plymouth",
+      "popPct": 97.4
+     },
+     {
+      "county": "Barnstable",
+      "popPct": 2.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42705,
+    "pres2020New": -2.7,
+    "pres2020Old": -2.7,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Plymouth, Barnstable counties.",
+    "toEra": "current"
+   },
+   "2nd Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 44.9,
+      "key": "2nd Suffolk",
+      "popPct": 40.4
+     },
+     {
+      "areaPct": 6.1,
+      "key": "9th Suffolk",
+      "popPct": 15.2
+     },
+     {
+      "areaPct": 3.6,
+      "key": "7th Suffolk",
+      "popPct": 12.2
+     },
+     {
+      "areaPct": 15.7,
+      "key": "8th Suffolk",
+      "popPct": 12.1
+     },
+     {
+      "areaPct": 6.6,
+      "key": "26th Middlesex",
+      "popPct": 11.8
+     },
+     {
+      "areaPct": 22.7,
+      "key": "28th Middlesex",
+      "popPct": 7.4
+     },
+     {
+      "areaPct": 0.3,
+      "key": "18th Suffolk",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 62.5
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 37.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 47281,
+    "pres2020New": -63.4,
+    "pres2020Old": -57.3,
+    "retainedAreaPct": 44.9,
+    "retainedPopPct": 40.4,
+    "text": "A new footprint: only 40% of its population was in the 2016\u20132020 2nd Suffolk; it draws from the old 9th Suffolk (15%), the old 7th Suffolk (12%), the old 8th Suffolk (12%) and 3 more. Spans Suffolk, Middlesex counties. 2020 presidential margin D+57.3 on the 2016\u20132020 lines \u2192 D+63.4 on the current lines.",
+    "toEra": "current"
+   },
+   "2nd Worcester": {
+    "contributors": [
+     {
+      "areaPct": 74.3,
+      "key": "2nd Worcester",
+      "popPct": 80.8
+     },
+     {
+      "areaPct": 25.7,
+      "key": "2nd Franklin",
+      "popPct": 19.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42608,
+    "pres2020New": -5.8,
+    "pres2020Old": -6.6,
+    "retainedAreaPct": 74.3,
+    "retainedPopPct": 80.8,
+    "text": "Kept 81% of its population from the 2016\u20132020 2nd Worcester; gained the rest from the old 2nd Franklin (19%). Entirely in Worcester County. 2020 presidential margin D+6.6 on the 2016\u20132020 lines \u2192 D+5.8 on the current lines.",
+    "toEra": "current"
+   },
+   "30th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 91.5,
+      "key": "30th Middlesex",
+      "popPct": 94.3
+     },
+     {
+      "areaPct": 8.5,
+      "key": "20th Middlesex",
+      "popPct": 5.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45597,
+    "pres2020New": -28.0,
+    "pres2020Old": -27.7,
+    "retainedAreaPct": 91.5,
+    "retainedPopPct": 94.3,
+    "text": "Kept 94% of its population from the 2016\u20132020 30th Middlesex; gained the rest from the old 20th Middlesex (6%). Entirely in Middlesex County. 2020 presidential margin D+27.7 on the 2016\u20132020 lines \u2192 D+28.0 on the current lines.",
+    "toEra": "current"
+   },
+   "31st Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "31st Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43302,
+    "pres2020New": -33.1,
+    "pres2020Old": -33.2,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Middlesex County.",
+    "toEra": "current"
+   },
+   "32nd Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "32nd Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45327,
+    "pres2020New": -42.4,
+    "pres2020Old": -42.4,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Middlesex County.",
+    "toEra": "current"
+   },
+   "33rd Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "33rd Middlesex",
+      "popPct": 99.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 86.6
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 13.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45323,
+    "pres2020New": -49.9,
+    "pres2020Old": -49.9,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.8,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Middlesex, Suffolk counties.",
+    "toEra": "current"
+   },
+   "34th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 97.2,
+      "key": "34th Middlesex",
+      "popPct": 95.5
+     },
+     {
+      "areaPct": 2.2,
+      "key": "27th Middlesex",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 46637,
+    "pres2020New": -67.1,
+    "pres2020Old": -66.8,
+    "retainedAreaPct": 97.2,
+    "retainedPopPct": 95.5,
+    "text": "Kept 96% of its population from the 2016\u20132020 34th Middlesex; gained the rest from the old 27th Middlesex (4%). Entirely in Middlesex County. 2020 presidential margin D+66.8 on the 2016\u20132020 lines \u2192 D+67.1 on the current lines.",
+    "toEra": "current"
+   },
+   "35th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "35th Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44223,
+    "pres2020New": -46.6,
+    "pres2020Old": -46.5,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Middlesex County.",
+    "toEra": "current"
+   },
+   "36th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "36th Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 99.5
+     },
+     {
+      "county": "Essex",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44980,
+    "pres2020New": -2.2,
+    "pres2020Old": -2.2,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Middlesex, Essex counties.",
+    "toEra": "current"
+   },
+   "37th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 77.9,
+      "key": "37th Middlesex",
+      "popPct": 81.6
+     },
+     {
+      "areaPct": 22.1,
+      "key": "1st Middlesex",
+      "popPct": 18.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 83.9
+     },
+     {
+      "county": "Worcester",
+      "popPct": 16.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43923,
+    "pres2020New": -44.9,
+    "pres2020Old": -40.1,
+    "retainedAreaPct": 77.9,
+    "retainedPopPct": 81.6,
+    "text": "Kept 82% of its population from the 2016\u20132020 37th Middlesex; gained the rest from the old 1st Middlesex (18%). Spans Middlesex, Worcester counties. 2020 presidential margin D+40.1 on the 2016\u20132020 lines \u2192 D+44.9 on the current lines.",
+    "toEra": "current"
+   },
+   "3rd Barnstable": {
+    "contributors": [
+     {
+      "areaPct": 91.9,
+      "key": "3rd Barnstable",
+      "popPct": 91.9
+     },
+     {
+      "areaPct": 8.1,
+      "key": "Barnstable, Dukes & Nantucket",
+      "popPct": 8.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Barnstable",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44654,
+    "pres2020New": -20.8,
+    "pres2020Old": -18.7,
+    "retainedAreaPct": 91.9,
+    "retainedPopPct": 91.9,
+    "text": "Kept 92% of its population from the 2016\u20132020 3rd Barnstable; gained the rest from the old Barnstable, Dukes & Nantucket (8%). Entirely in Barnstable County. 2020 presidential margin D+18.7 on the 2016\u20132020 lines \u2192 D+20.8 on the current lines.",
+    "toEra": "current"
+   },
+   "3rd Berkshire": {
+    "contributors": [
+     {
+      "areaPct": 96.0,
+      "key": "4th Berkshire",
+      "popPct": 85.1
+     },
+     {
+      "areaPct": 4.0,
+      "key": "2nd Berkshire",
+      "popPct": 14.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Berkshire",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42596,
+    "pres2020New": -50.6,
+    "pres2020Old": -52.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 3rd Berkshire; it draws from the old 4th Berkshire (85%), the old 2nd Berkshire (15%). Entirely in Berkshire County. 2020 presidential margin D+52.2 on the 2016\u20132020 lines \u2192 D+50.6 on the current lines.",
+    "toEra": "current"
+   },
+   "3rd Bristol": {
+    "contributors": [
+     {
+      "areaPct": 88.5,
+      "key": "3rd Bristol",
+      "popPct": 89.9
+     },
+     {
+      "areaPct": 11.5,
+      "key": "11th Plymouth",
+      "popPct": 10.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45632,
+    "pres2020New": -16.6,
+    "pres2020Old": -15.6,
+    "retainedAreaPct": 88.5,
+    "retainedPopPct": 89.9,
+    "text": "Kept 90% of its population from the 2016\u20132020 3rd Bristol; gained the rest from the old 11th Plymouth (10%). Entirely in Bristol County. 2020 presidential margin D+15.6 on the 2016\u20132020 lines \u2192 D+16.6 on the current lines.",
+    "toEra": "current"
+   },
+   "3rd Essex": {
+    "contributors": [
+     {
+      "areaPct": 74.0,
+      "key": "3rd Essex",
+      "popPct": 86.5
+     },
+     {
+      "areaPct": 26.0,
+      "key": "2nd Essex",
+      "popPct": 13.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45961,
+    "pres2020New": -22.6,
+    "pres2020Old": -21.4,
+    "retainedAreaPct": 74.0,
+    "retainedPopPct": 86.5,
+    "text": "Kept 86% of its population from the 2016\u20132020 3rd Essex; gained the rest from the old 2nd Essex (14%). Entirely in Essex County. 2020 presidential margin D+21.4 on the 2016\u20132020 lines \u2192 D+22.6 on the current lines.",
+    "toEra": "current"
+   },
+   "3rd Hampden": {
+    "contributors": [
+     {
+      "areaPct": 32.0,
+      "key": "3rd Hampden",
+      "popPct": 82.0
+     },
+     {
+      "areaPct": 28.9,
+      "key": "1st Franklin",
+      "popPct": 8.5
+     },
+     {
+      "areaPct": 34.2,
+      "key": "4th Berkshire",
+      "popPct": 7.6
+     },
+     {
+      "areaPct": 4.9,
+      "key": "1st Hampshire",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampden",
+      "popPct": 94.2
+     },
+     {
+      "county": "Hampshire",
+      "popPct": 5.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hampshire",
+      "popPct": 5.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43738,
+    "pres2020New": 6.3,
+    "pres2020Old": 5.7,
+    "retainedAreaPct": 32.0,
+    "retainedPopPct": 82.0,
+    "text": "Kept 82% of its population from the 2016\u20132020 3rd Hampden; gained the rest from the old 1st Franklin (8%), the old 4th Berkshire (8%), the old 1st Hampshire (2%). Counties: gained Hampshire (6%). 2020 presidential margin R+5.7 on the 2016\u20132020 lines \u2192 R+6.3 on the current lines.",
+    "toEra": "current"
+   },
+   "3rd Hampshire": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "3rd Hampshire",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampshire",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42469,
+    "pres2020New": -72.8,
+    "pres2020Old": -73.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Hampshire County.",
+    "toEra": "current"
+   },
+   "3rd Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "3rd Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 77.1
+     },
+     {
+      "county": "Worcester",
+      "popPct": 22.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43677,
+    "pres2020New": -38.8,
+    "pres2020Old": -38.8,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Middlesex, Worcester counties.",
+    "toEra": "current"
+   },
+   "3rd Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "3rd Norfolk",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42943,
+    "pres2020New": -27.6,
+    "pres2020Old": -26.6,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Norfolk County.",
+    "toEra": "current"
+   },
+   "3rd Plymouth": {
+    "contributors": [
+     {
+      "areaPct": 96.7,
+      "key": "3rd Plymouth",
+      "popPct": 90.2
+     },
+     {
+      "areaPct": 3.3,
+      "key": "4th Norfolk",
+      "popPct": 9.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plymouth",
+      "popPct": 80.1
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 19.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42725,
+    "pres2020New": -35.0,
+    "pres2020Old": -34.8,
+    "retainedAreaPct": 96.7,
+    "retainedPopPct": 90.2,
+    "text": "Kept 90% of its population from the 2016\u20132020 3rd Plymouth; gained the rest from the old 4th Norfolk (10%). Spans Plymouth, Norfolk counties. 2020 presidential margin D+34.8 on the 2016\u20132020 lines \u2192 D+35.0 on the current lines.",
+    "toEra": "current"
+   },
+   "3rd Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 92.5,
+      "key": "3rd Suffolk",
+      "popPct": 95.2
+     },
+     {
+      "areaPct": 7.4,
+      "key": "8th Suffolk",
+      "popPct": 4.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44542,
+    "pres2020New": -62.7,
+    "pres2020Old": -66.2,
+    "retainedAreaPct": 92.5,
+    "retainedPopPct": 95.2,
+    "text": "Kept 95% of its population from the 2016\u20132020 3rd Suffolk; gained the rest from the old 8th Suffolk (5%). Entirely in Suffolk County. 2020 presidential margin D+66.2 on the 2016\u20132020 lines \u2192 D+62.7 on the current lines.",
+    "toEra": "current"
+   },
+   "3rd Worcester": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "3rd Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44938,
+    "pres2020New": -22.0,
+    "pres2020Old": -22.0,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Worcester County.",
+    "toEra": "current"
+   },
+   "4th Barnstable": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "4th Barnstable",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Barnstable",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 41785,
+    "pres2020New": -39.6,
+    "pres2020Old": -39.0,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Barnstable County.",
+    "toEra": "current"
+   },
+   "4th Bristol": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "4th Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42444,
+    "pres2020New": -2.1,
+    "pres2020Old": -2.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Bristol County.",
+    "toEra": "current"
+   },
+   "4th Essex": {
+    "contributors": [
+     {
+      "areaPct": 16.6,
+      "key": "16th Essex",
+      "popPct": 45.5
+     },
+     {
+      "areaPct": 52.5,
+      "key": "15th Essex",
+      "popPct": 22.3
+     },
+     {
+      "areaPct": 25.0,
+      "key": "14th Essex",
+      "popPct": 21.0
+     },
+     {
+      "areaPct": 5.9,
+      "key": "17th Essex",
+      "popPct": 11.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 38048,
+    "pres2020New": -37.6,
+    "pres2020Old": -30.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 4th Essex; it draws from the old 16th Essex (46%), the old 15th Essex (22%), the old 14th Essex (21%) and 1 more. Entirely in Essex County. 2020 presidential margin D+30.2 on the 2016\u20132020 lines \u2192 D+37.6 on the current lines.",
+    "toEra": "current"
+   },
+   "4th Hampden": {
+    "contributors": [
+     {
+      "areaPct": 60.5,
+      "key": "4th Hampden",
+      "popPct": 85.7
+     },
+     {
+      "areaPct": 39.4,
+      "key": "1st Hampshire",
+      "popPct": 14.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampden",
+      "popPct": 85.9
+     },
+     {
+      "county": "Hampshire",
+      "popPct": 14.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hampshire",
+      "popPct": 14.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43492,
+    "pres2020New": -3.2,
+    "pres2020Old": -1.6,
+    "retainedAreaPct": 60.5,
+    "retainedPopPct": 85.7,
+    "text": "Kept 86% of its population from the 2016\u20132020 4th Hampden; gained the rest from the old 1st Hampshire (14%). Counties: gained Hampshire (14%). 2020 presidential margin D+1.6 on the 2016\u20132020 lines \u2192 D+3.2 on the current lines.",
+    "toEra": "current"
+   },
+   "4th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 65.4,
+      "key": "4th Middlesex",
+      "popPct": 71.3
+     },
+     {
+      "areaPct": 23.0,
+      "key": "6th Middlesex",
+      "popPct": 14.4
+     },
+     {
+      "areaPct": 11.6,
+      "key": "13th Middlesex",
+      "popPct": 14.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Worcester",
+      "popPct": 34.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 42254,
+    "pres2020New": -36.1,
+    "pres2020Old": -36.3,
+    "retainedAreaPct": 65.4,
+    "retainedPopPct": 71.3,
+    "text": "Kept 71% of its population from the 2016\u20132020 4th Middlesex; gained the rest from the old 6th Middlesex (14%), the old 13th Middlesex (14%). Counties: lost Worcester. 2020 presidential margin D+36.3 on the 2016\u20132020 lines \u2192 D+36.1 on the current lines.",
+    "toEra": "current"
+   },
+   "4th Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "4th Norfolk",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 97.5
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 2.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 41651,
+    "pres2020New": -22.3,
+    "pres2020Old": -23.9,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Norfolk, Plymouth counties.",
+    "toEra": "current"
+   },
+   "4th Plymouth": {
+    "contributors": [
+     {
+      "areaPct": 71.4,
+      "key": "4th Plymouth",
+      "popPct": 84.7
+     },
+     {
+      "areaPct": 12.0,
+      "key": "5th Plymouth",
+      "popPct": 8.3
+     },
+     {
+      "areaPct": 16.6,
+      "key": "3rd Plymouth",
+      "popPct": 7.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plymouth",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44492,
+    "pres2020New": -20.6,
+    "pres2020Old": -18.6,
+    "retainedAreaPct": 71.4,
+    "retainedPopPct": 84.7,
+    "text": "Kept 85% of its population from the 2016\u20132020 4th Plymouth; gained the rest from the old 5th Plymouth (8%), the old 3rd Plymouth (7%). Entirely in Plymouth County. 2020 presidential margin D+18.6 on the 2016\u20132020 lines \u2192 D+20.6 on the current lines.",
+    "toEra": "current"
+   },
+   "4th Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "4th Suffolk",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43260,
+    "pres2020New": -44.9,
+    "pres2020Old": -46.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Suffolk County.",
+    "toEra": "current"
+   },
+   "4th Worcester": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "4th Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43762,
+    "pres2020New": -17.4,
+    "pres2020Old": -17.4,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Worcester County.",
+    "toEra": "current"
+   },
+   "5th Barnstable": {
+    "contributors": [
+     {
+      "areaPct": 94.6,
+      "key": "5th Barnstable",
+      "popPct": 84.3
+     },
+     {
+      "areaPct": 3.7,
+      "key": "2nd Barnstable",
+      "popPct": 8.0
+     },
+     {
+      "areaPct": 1.6,
+      "key": "3rd Barnstable",
+      "popPct": 7.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Barnstable",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Plymouth",
+      "popPct": 9.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 43431,
+    "pres2020New": -9.9,
+    "pres2020Old": -10.0,
+    "retainedAreaPct": 94.6,
+    "retainedPopPct": 84.3,
+    "text": "Kept 84% of its population from the 2016\u20132020 5th Barnstable; gained the rest from the old 2nd Barnstable (8%), the old 3rd Barnstable (8%). Counties: lost Plymouth. 2020 presidential margin D+10.0 on the 2016\u20132020 lines \u2192 D+9.9 on the current lines.",
+    "toEra": "current"
+   },
+   "5th Bristol": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "5th Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44754,
+    "pres2020New": -3.2,
+    "pres2020Old": -3.2,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Bristol County.",
+    "toEra": "current"
+   },
+   "5th Essex": {
+    "contributors": [
+     {
+      "areaPct": 77.9,
+      "key": "5th Essex",
+      "popPct": 88.2
+     },
+     {
+      "areaPct": 22.1,
+      "key": "4th Essex",
+      "popPct": 11.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45788,
+    "pres2020New": -39.1,
+    "pres2020Old": -38.3,
+    "retainedAreaPct": 77.9,
+    "retainedPopPct": 88.2,
+    "text": "Kept 88% of its population from the 2016\u20132020 5th Essex; gained the rest from the old 4th Essex (12%). Entirely in Essex County. 2020 presidential margin D+38.3 on the 2016\u20132020 lines \u2192 D+39.1 on the current lines.",
+    "toEra": "current"
+   },
+   "5th Hampden": {
+    "contributors": [
+     {
+      "areaPct": 97.2,
+      "key": "5th Hampden",
+      "popPct": 92.5
+     },
+     {
+      "areaPct": 2.4,
+      "key": "8th Hampden",
+      "popPct": 7.0
+     },
+     {
+      "areaPct": 0.3,
+      "key": "6th Hampden",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampden",
+      "popPct": 98.8
+     },
+     {
+      "county": "Hampshire",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 41290,
+    "pres2020New": -37.0,
+    "pres2020Old": -38.7,
+    "retainedAreaPct": 97.2,
+    "retainedPopPct": 92.5,
+    "text": "Kept 92% of its population from the 2016\u20132020 5th Hampden; gained the rest from the old 8th Hampden (7%), the old 6th Hampden (0%). Spans Hampden, Hampshire counties. 2020 presidential margin D+38.7 on the 2016\u20132020 lines \u2192 D+37.0 on the current lines.",
+    "toEra": "current"
+   },
+   "5th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 80.1,
+      "key": "5th Middlesex",
+      "popPct": 84.6
+     },
+     {
+      "areaPct": 19.9,
+      "key": "13th Middlesex",
+      "popPct": 15.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 99.4
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43745,
+    "pres2020New": -53.5,
+    "pres2020Old": -49.1,
+    "retainedAreaPct": 80.1,
+    "retainedPopPct": 84.6,
+    "text": "Kept 85% of its population from the 2016\u20132020 5th Middlesex; gained the rest from the old 13th Middlesex (15%). Spans Middlesex, Norfolk counties. 2020 presidential margin D+49.1 on the 2016\u20132020 lines \u2192 D+53.5 on the current lines.",
+    "toEra": "current"
+   },
+   "5th Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 88.2,
+      "key": "5th Norfolk",
+      "popPct": 93.6
+     },
+     {
+      "areaPct": 11.8,
+      "key": "3rd Norfolk",
+      "popPct": 6.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44874,
+    "pres2020New": -18.2,
+    "pres2020Old": -21.1,
+    "retainedAreaPct": 88.2,
+    "retainedPopPct": 93.6,
+    "text": "Kept 94% of its population from the 2016\u20132020 5th Norfolk; gained the rest from the old 3rd Norfolk (6%). Entirely in Norfolk County. 2020 presidential margin D+21.1 on the 2016\u20132020 lines \u2192 D+18.2 on the current lines.",
+    "toEra": "current"
+   },
+   "5th Plymouth": {
+    "contributors": [
+     {
+      "areaPct": 88.9,
+      "key": "5th Plymouth",
+      "popPct": 92.0
+     },
+     {
+      "areaPct": 11.1,
+      "key": "6th Plymouth",
+      "popPct": 7.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plymouth",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43755,
+    "pres2020New": -8.5,
+    "pres2020Old": -10.5,
+    "retainedAreaPct": 88.9,
+    "retainedPopPct": 92.0,
+    "text": "Kept 92% of its population from the 2016\u20132020 5th Plymouth; gained the rest from the old 6th Plymouth (8%). Entirely in Plymouth County. 2020 presidential margin D+10.5 on the 2016\u20132020 lines \u2192 D+8.5 on the current lines.",
+    "toEra": "current"
+   },
+   "5th Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 53.9,
+      "key": "5th Suffolk",
+      "popPct": 75.0
+     },
+     {
+      "areaPct": 40.9,
+      "key": "11th Suffolk",
+      "popPct": 18.1
+     },
+     {
+      "areaPct": 5.0,
+      "key": "6th Suffolk",
+      "popPct": 6.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45976,
+    "pres2020New": -80.8,
+    "pres2020Old": -78.7,
+    "retainedAreaPct": 53.9,
+    "retainedPopPct": 75.0,
+    "text": "Kept 75% of its population from the 2016\u20132020 5th Suffolk; gained the rest from the old 11th Suffolk (18%), the old 6th Suffolk (7%). Entirely in Suffolk County. 2020 presidential margin D+78.7 on the 2016\u20132020 lines \u2192 D+80.8 on the current lines.",
+    "toEra": "current"
+   },
+   "5th Worcester": {
+    "contributors": [
+     {
+      "areaPct": 96.2,
+      "key": "5th Worcester",
+      "popPct": 93.7
+     },
+     {
+      "areaPct": 3.8,
+      "key": "17th Worcester",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 93.5
+     },
+     {
+      "county": "Hampshire",
+      "popPct": 6.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44737,
+    "pres2020New": 3.0,
+    "pres2020Old": 2.8,
+    "retainedAreaPct": 96.2,
+    "retainedPopPct": 93.7,
+    "text": "Kept 94% of its population from the 2016\u20132020 5th Worcester; gained the rest from the old 17th Worcester (6%). Spans Worcester, Hampshire counties. 2020 presidential margin R+2.8 on the 2016\u20132020 lines \u2192 R+3.0 on the current lines.",
+    "toEra": "current"
+   },
+   "6th Bristol": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "6th Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44140,
+    "pres2020New": -14.2,
+    "pres2020Old": -14.2,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Bristol County.",
+    "toEra": "current"
+   },
+   "6th Essex": {
+    "contributors": [
+     {
+      "areaPct": 85.5,
+      "key": "6th Essex",
+      "popPct": 94.8
+     },
+     {
+      "areaPct": 14.4,
+      "key": "4th Essex",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44950,
+    "pres2020New": -38.8,
+    "pres2020Old": -38.8,
+    "retainedAreaPct": 85.5,
+    "retainedPopPct": 94.8,
+    "text": "Kept 95% of its population from the 2016\u20132020 6th Essex; gained the rest from the old 4th Essex (5%). Entirely in Essex County. 2020 presidential margin D+38.8 on the 2016\u20132020 lines \u2192 D+38.8 on the current lines.",
+    "toEra": "current"
+   },
+   "6th Hampden": {
+    "contributors": [
+     {
+      "areaPct": 81.1,
+      "key": "6th Hampden",
+      "popPct": 83.5
+     },
+     {
+      "areaPct": 7.1,
+      "key": "3rd Hampden",
+      "popPct": 8.0
+     },
+     {
+      "areaPct": 11.5,
+      "key": "4th Hampden",
+      "popPct": 7.9
+     },
+     {
+      "areaPct": 0.3,
+      "key": "8th Hampden",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampden",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45016,
+    "pres2020New": -8.5,
+    "pres2020Old": -11.9,
+    "retainedAreaPct": 81.1,
+    "retainedPopPct": 83.5,
+    "text": "Kept 84% of its population from the 2016\u20132020 6th Hampden; gained the rest from the old 3rd Hampden (8%), the old 4th Hampden (8%), the old 8th Hampden (0%). Entirely in Hampden County. 2020 presidential margin D+11.9 on the 2016\u20132020 lines \u2192 D+8.5 on the current lines.",
+    "toEra": "current"
+   },
+   "6th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 34.4,
+      "key": "7th Middlesex",
+      "popPct": 53.7
+     },
+     {
+      "areaPct": 65.5,
+      "key": "6th Middlesex",
+      "popPct": 46.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39285,
+    "pres2020New": -50.9,
+    "pres2020Old": -48.7,
+    "retainedAreaPct": 65.5,
+    "retainedPopPct": 46.2,
+    "text": "A new footprint: only 46% of its population was in the 2016\u20132020 6th Middlesex; it draws from the old 7th Middlesex (54%). Entirely in Middlesex County. 2020 presidential margin D+48.7 on the 2016\u20132020 lines \u2192 D+50.9 on the current lines.",
+    "toEra": "current"
+   },
+   "6th Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "6th Norfolk",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43713,
+    "pres2020New": -30.2,
+    "pres2020Old": -30.2,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Norfolk County.",
+    "toEra": "current"
+   },
+   "6th Plymouth": {
+    "contributors": [
+     {
+      "areaPct": 80.3,
+      "key": "6th Plymouth",
+      "popPct": 77.1
+     },
+     {
+      "areaPct": 12.7,
+      "key": "12th Plymouth",
+      "popPct": 14.0
+     },
+     {
+      "areaPct": 7.0,
+      "key": "4th Plymouth",
+      "popPct": 8.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plymouth",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45907,
+    "pres2020New": -13.2,
+    "pres2020Old": -11.4,
+    "retainedAreaPct": 80.3,
+    "retainedPopPct": 77.1,
+    "text": "Kept 77% of its population from the 2016\u20132020 6th Plymouth; gained the rest from the old 12th Plymouth (14%), the old 4th Plymouth (9%). Entirely in Plymouth County. 2020 presidential margin D+11.4 on the 2016\u20132020 lines \u2192 D+13.2 on the current lines.",
+    "toEra": "current"
+   },
+   "6th Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 87.6,
+      "key": "6th Suffolk",
+      "popPct": 80.8
+     },
+     {
+      "areaPct": 7.5,
+      "key": "13th Suffolk",
+      "popPct": 11.1
+     },
+     {
+      "areaPct": 4.6,
+      "key": "5th Suffolk",
+      "popPct": 7.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44957,
+    "pres2020New": -84.5,
+    "pres2020Old": -84.9,
+    "retainedAreaPct": 87.6,
+    "retainedPopPct": 80.8,
+    "text": "Kept 81% of its population from the 2016\u20132020 6th Suffolk; gained the rest from the old 13th Suffolk (11%), the old 5th Suffolk (8%). Entirely in Suffolk County. 2020 presidential margin D+84.9 on the 2016\u20132020 lines \u2192 D+84.5 on the current lines.",
+    "toEra": "current"
+   },
+   "6th Worcester": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "6th Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42807,
+    "pres2020New": -0.7,
+    "pres2020Old": -0.7,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Worcester County.",
+    "toEra": "current"
+   },
+   "7th Bristol": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "7th Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42105,
+    "pres2020New": -9.6,
+    "pres2020Old": -9.6,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Bristol County.",
+    "toEra": "current"
+   },
+   "7th Essex": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "7th Essex",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44672,
+    "pres2020New": -52.3,
+    "pres2020Old": -52.3,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Essex County.",
+    "toEra": "current"
+   },
+   "7th Hampden": {
+    "contributors": [
+     {
+      "areaPct": 23.6,
+      "key": "7th Hampden",
+      "popPct": 76.5
+     },
+     {
+      "areaPct": 58.2,
+      "key": "2nd Franklin",
+      "popPct": 16.5
+     },
+     {
+      "areaPct": 9.1,
+      "key": "1st Franklin",
+      "popPct": 4.0
+     },
+     {
+      "areaPct": 9.0,
+      "key": "3rd Hampshire",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampden",
+      "popPct": 50.4
+     },
+     {
+      "county": "Hampshire",
+      "popPct": 38.2
+     },
+     {
+      "county": "Franklin",
+      "popPct": 8.6
+     },
+     {
+      "county": "Worcester",
+      "popPct": 2.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Franklin",
+      "popPct": 8.6
+     },
+     {
+      "county": "Worcester",
+      "popPct": 2.8
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42618,
+    "pres2020New": -18.5,
+    "pres2020Old": -10.4,
+    "retainedAreaPct": 23.6,
+    "retainedPopPct": 76.5,
+    "text": "Kept 76% of its population from the 2016\u20132020 7th Hampden; gained the rest from the old 2nd Franklin (16%), the old 1st Franklin (4%), the old 3rd Hampshire (3%). Counties: gained Franklin (9%), Worcester (3%). 2020 presidential margin D+10.4 on the 2016\u20132020 lines \u2192 D+18.5 on the current lines.",
+    "toEra": "current"
+   },
+   "7th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 59.8,
+      "key": "7th Middlesex",
+      "popPct": 49.6
+     },
+     {
+      "areaPct": 34.5,
+      "key": "6th Middlesex",
+      "popPct": 41.7
+     },
+     {
+      "areaPct": 5.7,
+      "key": "13th Middlesex",
+      "popPct": 8.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43911,
+    "pres2020New": -46.0,
+    "pres2020Old": -46.1,
+    "retainedAreaPct": 59.8,
+    "retainedPopPct": 49.6,
+    "text": "A new footprint: only 50% of its population was in the 2016\u20132020 7th Middlesex; it draws from the old 6th Middlesex (42%), the old 13th Middlesex (9%). Entirely in Middlesex County. 2020 presidential margin D+46.1 on the 2016\u20132020 lines \u2192 D+46.0 on the current lines.",
+    "toEra": "current"
+   },
+   "7th Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 96.6,
+      "key": "7th Norfolk",
+      "popPct": 94.3
+     },
+     {
+      "areaPct": 1.7,
+      "key": "1st Norfolk",
+      "popPct": 2.8
+     },
+     {
+      "areaPct": 1.6,
+      "key": "5th Norfolk",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 98.1
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 1.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44752,
+    "pres2020New": -50.6,
+    "pres2020Old": -50.5,
+    "retainedAreaPct": 96.6,
+    "retainedPopPct": 94.3,
+    "text": "Kept 94% of its population from the 2016\u20132020 7th Norfolk; gained the rest from the old 1st Norfolk (3%), the old 5th Norfolk (3%). Spans Norfolk, Suffolk counties. 2020 presidential margin D+50.5 on the 2016\u20132020 lines \u2192 D+50.6 on the current lines.",
+    "toEra": "current"
+   },
+   "7th Plymouth": {
+    "contributors": [
+     {
+      "areaPct": 84.9,
+      "key": "7th Plymouth",
+      "popPct": 90.2
+     },
+     {
+      "areaPct": 14.1,
+      "key": "10th Plymouth",
+      "popPct": 8.7
+     },
+     {
+      "areaPct": 1.0,
+      "key": "5th Plymouth",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plymouth",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43182,
+    "pres2020New": -5.7,
+    "pres2020Old": -5.9,
+    "retainedAreaPct": 84.9,
+    "retainedPopPct": 90.2,
+    "text": "Kept 90% of its population from the 2016\u20132020 7th Plymouth; gained the rest from the old 10th Plymouth (9%), the old 5th Plymouth (1%). Entirely in Plymouth County. 2020 presidential margin D+5.9 on the 2016\u20132020 lines \u2192 D+5.7 on the current lines.",
+    "toEra": "current"
+   },
+   "7th Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 75.5,
+      "key": "7th Suffolk",
+      "popPct": 72.9
+     },
+     {
+      "areaPct": 9.3,
+      "key": "15th Suffolk",
+      "popPct": 15.3
+     },
+     {
+      "areaPct": 15.1,
+      "key": "11th Suffolk",
+      "popPct": 11.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45926,
+    "pres2020New": -85.2,
+    "pres2020Old": -84.2,
+    "retainedAreaPct": 75.5,
+    "retainedPopPct": 72.9,
+    "text": "Kept 73% of its population from the 2016\u20132020 7th Suffolk; gained the rest from the old 15th Suffolk (15%), the old 11th Suffolk (12%). Entirely in Suffolk County. 2020 presidential margin D+84.2 on the 2016\u20132020 lines \u2192 D+85.2 on the current lines.",
+    "toEra": "current"
+   },
+   "7th Worcester": {
+    "contributors": [
+     {
+      "areaPct": 92.3,
+      "key": "7th Worcester",
+      "popPct": 93.7
+     },
+     {
+      "areaPct": 7.6,
+      "key": "17th Worcester",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43333,
+    "pres2020New": -6.5,
+    "pres2020Old": -7.1,
+    "retainedAreaPct": 92.3,
+    "retainedPopPct": 93.7,
+    "text": "Kept 94% of its population from the 2016\u20132020 7th Worcester; gained the rest from the old 17th Worcester (6%). Entirely in Worcester County. 2020 presidential margin D+7.1 on the 2016\u20132020 lines \u2192 D+6.5 on the current lines.",
+    "toEra": "current"
+   },
+   "8th Bristol": {
+    "contributors": [
+     {
+      "areaPct": 87.9,
+      "key": "8th Bristol",
+      "popPct": 77.3
+     },
+     {
+      "areaPct": 12.0,
+      "key": "11th Bristol",
+      "popPct": 22.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 99.2
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43073,
+    "pres2020New": 1.4,
+    "pres2020Old": -0.9,
+    "retainedAreaPct": 87.9,
+    "retainedPopPct": 77.3,
+    "text": "Kept 77% of its population from the 2016\u20132020 8th Bristol; gained the rest from the old 11th Bristol (23%). Spans Bristol, Plymouth counties. 2020 presidential margin D+0.9 on the 2016\u20132020 lines \u2192 R+1.4 on the current lines.",
+    "toEra": "current"
+   },
+   "8th Essex": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "8th Essex",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43711,
+    "pres2020New": -45.3,
+    "pres2020Old": -45.3,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Essex County.",
+    "toEra": "current"
+   },
+   "8th Hampden": {
+    "contributors": [
+     {
+      "areaPct": 77.0,
+      "key": "8th Hampden",
+      "popPct": 85.7
+     },
+     {
+      "areaPct": 18.4,
+      "key": "7th Hampden",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 4.5,
+      "key": "9th Hampden",
+      "popPct": 7.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampden",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43487,
+    "pres2020New": -14.1,
+    "pres2020Old": -15.5,
+    "retainedAreaPct": 77.0,
+    "retainedPopPct": 85.7,
+    "text": "Kept 86% of its population from the 2016\u20132020 8th Hampden; gained the rest from the old 7th Hampden (7%), the old 9th Hampden (7%). Entirely in Hampden County. 2020 presidential margin D+15.5 on the 2016\u20132020 lines \u2192 D+14.1 on the current lines.",
+    "toEra": "current"
+   },
+   "8th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 65.2,
+      "key": "8th Middlesex",
+      "popPct": 77.0
+     },
+     {
+      "areaPct": 34.7,
+      "key": "5th Middlesex",
+      "popPct": 23.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 82.8
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 13.9
+     },
+     {
+      "county": "Worcester",
+      "popPct": 3.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43826,
+    "pres2020New": -41.0,
+    "pres2020Old": -41.8,
+    "retainedAreaPct": 65.2,
+    "retainedPopPct": 77.0,
+    "text": "Kept 77% of its population from the 2016\u20132020 8th Middlesex; gained the rest from the old 5th Middlesex (23%). Spans Middlesex, Norfolk, Worcester counties. 2020 presidential margin D+41.8 on the 2016\u20132020 lines \u2192 D+41.0 on the current lines.",
+    "toEra": "current"
+   },
+   "8th Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "8th Norfolk",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 90.9
+     },
+     {
+      "county": "Bristol",
+      "popPct": 9.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44252,
+    "pres2020New": -39.5,
+    "pres2020Old": -39.5,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Norfolk, Bristol counties.",
+    "toEra": "current"
+   },
+   "8th Plymouth": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "8th Plymouth",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plymouth",
+      "popPct": 65.4
+     },
+     {
+      "county": "Bristol",
+      "popPct": 34.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43729,
+    "pres2020New": -5.3,
+    "pres2020Old": -5.3,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Plymouth, Bristol counties.",
+    "toEra": "current"
+   },
+   "8th Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 74.4,
+      "key": "8th Suffolk",
+      "popPct": 62.0
+     },
+     {
+      "areaPct": 16.4,
+      "key": "9th Suffolk",
+      "popPct": 22.6
+     },
+     {
+      "areaPct": 9.0,
+      "key": "7th Suffolk",
+      "popPct": 15.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Middlesex",
+      "popPct": 23.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 42534,
+    "pres2020New": -70.6,
+    "pres2020Old": -74.4,
+    "retainedAreaPct": 74.4,
+    "retainedPopPct": 62.0,
+    "text": "Kept 62% of its population from the 2016\u20132020 8th Suffolk; gained the rest from the old 9th Suffolk (23%), the old 7th Suffolk (15%). Counties: lost Middlesex. 2020 presidential margin D+74.4 on the 2016\u20132020 lines \u2192 D+70.6 on the current lines.",
+    "toEra": "current"
+   },
+   "8th Worcester": {
+    "contributors": [
+     {
+      "areaPct": 94.1,
+      "key": "8th Worcester",
+      "popPct": 92.9
+     },
+     {
+      "areaPct": 5.9,
+      "key": "10th Worcester",
+      "popPct": 7.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 56.8
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 43.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43180,
+    "pres2020New": -5.2,
+    "pres2020Old": -3.1,
+    "retainedAreaPct": 94.1,
+    "retainedPopPct": 92.9,
+    "text": "Kept 93% of its population from the 2016\u20132020 8th Worcester; gained the rest from the old 10th Worcester (7%). Spans Worcester, Norfolk counties. 2020 presidential margin D+3.1 on the 2016\u20132020 lines \u2192 D+5.2 on the current lines.",
+    "toEra": "current"
+   },
+   "9th Bristol": {
+    "contributors": [
+     {
+      "areaPct": 91.4,
+      "key": "9th Bristol",
+      "popPct": 79.7
+     },
+     {
+      "areaPct": 8.4,
+      "key": "8th Bristol",
+      "popPct": 19.0
+     },
+     {
+      "areaPct": 0.2,
+      "key": "11th Bristol",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42334,
+    "pres2020New": -9.7,
+    "pres2020Old": -13.3,
+    "retainedAreaPct": 91.4,
+    "retainedPopPct": 79.7,
+    "text": "Kept 80% of its population from the 2016\u20132020 9th Bristol; gained the rest from the old 8th Bristol (19%), the old 11th Bristol (1%). Entirely in Bristol County. 2020 presidential margin D+13.3 on the 2016\u20132020 lines \u2192 D+9.7 on the current lines.",
+    "toEra": "current"
+   },
+   "9th Essex": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "9th Essex",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 67.4
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 31.5
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44591,
+    "pres2020New": -11.1,
+    "pres2020Old": -11.1,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Essex, Middlesex, Suffolk counties.",
+    "toEra": "current"
+   },
+   "9th Hampden": {
+    "contributors": [
+     {
+      "areaPct": 68.1,
+      "key": "9th Hampden",
+      "popPct": 65.2
+     },
+     {
+      "areaPct": 13.4,
+      "key": "7th Hampden",
+      "popPct": 12.3
+     },
+     {
+      "areaPct": 11.1,
+      "key": "11th Hampden",
+      "popPct": 11.4
+     },
+     {
+      "areaPct": 4.4,
+      "key": "6th Hampden",
+      "popPct": 6.0
+     },
+     {
+      "areaPct": 3.0,
+      "key": "10th Hampden",
+      "popPct": 5.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampden",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42225,
+    "pres2020New": -44.4,
+    "pres2020Old": -37.8,
+    "retainedAreaPct": 68.1,
+    "retainedPopPct": 65.2,
+    "text": "Kept 65% of its population from the 2016\u20132020 9th Hampden; gained the rest from the old 7th Hampden (12%), the old 11th Hampden (11%), the old 6th Hampden (6%) and 1 more. Entirely in Hampden County. 2020 presidential margin D+37.8 on the 2016\u20132020 lines \u2192 D+44.4 on the current lines.",
+    "toEra": "current"
+   },
+   "9th Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 90.4,
+      "key": "9th Middlesex",
+      "popPct": 82.6
+     },
+     {
+      "areaPct": 9.5,
+      "key": "10th Middlesex",
+      "popPct": 17.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43404,
+    "pres2020New": -40.7,
+    "pres2020Old": -43.4,
+    "retainedAreaPct": 90.4,
+    "retainedPopPct": 82.6,
+    "text": "Kept 83% of its population from the 2016\u20132020 9th Middlesex; gained the rest from the old 10th Middlesex (17%). Entirely in Middlesex County. 2020 presidential margin D+43.4 on the 2016\u20132020 lines \u2192 D+40.7 on the current lines.",
+    "toEra": "current"
+   },
+   "9th Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "9th Norfolk",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 46134,
+    "pres2020New": -19.5,
+    "pres2020Old": -19.6,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Norfolk County.",
+    "toEra": "current"
+   },
+   "9th Plymouth": {
+    "contributors": [
+     {
+      "areaPct": 52.3,
+      "key": "11th Plymouth",
+      "popPct": 67.5
+     },
+     {
+      "areaPct": 36.6,
+      "key": "10th Plymouth",
+      "popPct": 16.8
+     },
+     {
+      "areaPct": 1.6,
+      "key": "9th Plymouth",
+      "popPct": 8.0
+     },
+     {
+      "areaPct": 9.5,
+      "key": "7th Plymouth",
+      "popPct": 7.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plymouth",
+      "popPct": 64.0
+     },
+     {
+      "county": "Bristol",
+      "popPct": 35.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Bristol",
+      "popPct": 35.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45772,
+    "pres2020New": -23.4,
+    "pres2020Old": -62.6,
+    "retainedAreaPct": 1.6,
+    "retainedPopPct": 8.0,
+    "text": "A new footprint: only 8% of its population was in the 2016\u20132020 9th Plymouth; it draws from the old 11th Plymouth (68%), the old 10th Plymouth (17%), the old 7th Plymouth (8%). Counties: gained Bristol (36%). 2020 presidential margin D+62.6 on the 2016\u20132020 lines \u2192 D+23.4 on the current lines.",
+    "toEra": "current"
+   },
+   "9th Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 59.2,
+      "key": "9th Suffolk",
+      "popPct": 66.7
+     },
+     {
+      "areaPct": 9.1,
+      "key": "3rd Suffolk",
+      "popPct": 16.6
+     },
+     {
+      "areaPct": 11.8,
+      "key": "5th Suffolk",
+      "popPct": 5.4
+     },
+     {
+      "areaPct": 11.9,
+      "key": "4th Suffolk",
+      "popPct": 4.8
+     },
+     {
+      "areaPct": 6.8,
+      "key": "13th Suffolk",
+      "popPct": 4.5
+     },
+     {
+      "areaPct": 1.2,
+      "key": "7th Suffolk",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42018,
+    "pres2020New": -77.9,
+    "pres2020Old": -78.5,
+    "retainedAreaPct": 59.2,
+    "retainedPopPct": 66.7,
+    "text": "Kept 67% of its population from the 2016\u20132020 9th Suffolk; gained the rest from the old 3rd Suffolk (17%), the old 5th Suffolk (5%), the old 4th Suffolk (5%) and 2 more. Entirely in Suffolk County. 2020 presidential margin D+78.5 on the 2016\u20132020 lines \u2192 D+77.9 on the current lines.",
+    "toEra": "current"
+   },
+   "9th Worcester": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "9th Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44019,
+    "pres2020New": -18.5,
+    "pres2020Old": -18.5,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Worcester County.",
+    "toEra": "current"
+   },
+   "Barnstable-Dukes-Nantucket": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "Barnstable, Dukes & Nantucket",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dukes",
+      "popPct": 45.2
+     },
+     {
+      "county": "Nantucket",
+      "popPct": 31.1
+     },
+     {
+      "county": "Barnstable",
+      "popPct": 23.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dukes",
+      "popPct": 45.2
+     },
+     {
+      "county": "Nantucket",
+      "popPct": 31.1
+     },
+     {
+      "county": "Barnstable",
+      "popPct": 23.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45824,
+    "pres2020New": -50.6,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Barnstable-Dukes-Nantucket; it draws from the old Barnstable, Dukes & Nantucket (100%). Counties: gained Dukes (45%), Nantucket (31%), Barnstable (24%).",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "Berkshire-Hampden-Franklin-Hampshire": {
+    "contributors": [
+     {
+      "areaPct": 89.8,
+      "key": "Berkshire, Hampshire, Franklin & Hampden",
+      "popPct": 91.4
+     },
+     {
+      "areaPct": 6.4,
+      "key": "Second Hampden & Hampshire",
+      "popPct": 6.7
+     },
+     {
+      "areaPct": 3.8,
+      "key": "Hampshire, Franklin & Worcester",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Berkshire",
+      "popPct": 77.1
+     },
+     {
+      "county": "Hampden",
+      "popPct": 8.2
+     },
+     {
+      "county": "Franklin",
+      "popPct": 7.9
+     },
+     {
+      "county": "Hampshire",
+      "popPct": 6.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Berkshire",
+      "popPct": 77.1
+     },
+     {
+      "county": "Hampden",
+      "popPct": 8.2
+     },
+     {
+      "county": "Franklin",
+      "popPct": 7.9
+     },
+     {
+      "county": "Hampshire",
+      "popPct": 6.8
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 167288,
+    "pres2020New": -40.5,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Berkshire-Hampden-Franklin-Hampshire; it draws from the old Berkshire, Hampshire, Franklin & Hampden (91%), the old Second Hampden & Hampshire (7%), the old Hampshire, Franklin & Worcester (2%). Counties: gained Berkshire (77%), Hampden (8%), Franklin (8%) and 1 more.",
+    "toEra": "current"
+   },
+   "Bristol and Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 62.7,
+      "key": "Bristol & Norfolk",
+      "popPct": 54.8
+     },
+     {
+      "areaPct": 18.9,
+      "key": "Norfolk, Bristol & Middlesex",
+      "popPct": 27.8
+     },
+     {
+      "areaPct": 18.4,
+      "key": "Norfolk, Bristol & Plymouth",
+      "popPct": 17.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 66.2
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 33.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Bristol",
+      "popPct": 66.2
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 33.8
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 182027,
+    "pres2020New": -24.0,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Bristol and Norfolk; it draws from the old Bristol & Norfolk (55%), the old Norfolk, Bristol & Middlesex (28%), the old Norfolk, Bristol & Plymouth (17%). Counties: gained Bristol (66%), Norfolk (34%).",
+    "toEra": "current"
+   },
+   "Cape and Islands": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "Cape & Islands",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Barnstable",
+      "popPct": 80.1
+     },
+     {
+      "county": "Dukes",
+      "popPct": 11.7
+     },
+     {
+      "county": "Nantucket",
+      "popPct": 8.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Barnstable",
+      "popPct": 80.1
+     },
+     {
+      "county": "Dukes",
+      "popPct": 11.7
+     },
+     {
+      "county": "Nantucket",
+      "popPct": 8.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 175583,
+    "pres2020New": -31.8,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Cape and Islands; it draws from the old Cape & Islands (100%). Counties: gained Barnstable (80%), Dukes (12%), Nantucket (8%).",
+    "toEra": "current"
+   },
+   "Fifth Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "Fifth Middlesex",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 95.8
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 3.3
+     },
+     {
+      "county": "Essex",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 183512,
+    "pres2020New": -38.7,
+    "pres2020Old": -38.7,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Middlesex, Suffolk, Essex counties.",
+    "toEra": "current"
+   },
+   "First Bristol and Plymouth": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "First Bristol & Plymouth",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 89.9
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 10.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Bristol",
+      "popPct": 89.9
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 10.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 172222,
+    "pres2020New": -4.3,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 First Bristol and Plymouth; it draws from the old First Bristol & Plymouth (100%). Counties: gained Bristol (90%), Plymouth (10%).",
+    "toEra": "current"
+   },
+   "First Essex": {
+    "contributors": [
+     {
+      "areaPct": 22.1,
+      "key": "Second Essex & Middlesex",
+      "popPct": 54.7
+     },
+     {
+      "areaPct": 77.9,
+      "key": "First Essex",
+      "popPct": 45.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 162166,
+    "pres2020New": -29.4,
+    "pres2020Old": -22.4,
+    "retainedAreaPct": 77.9,
+    "retainedPopPct": 45.3,
+    "text": "A new footprint: only 45% of its population was in the 2016\u20132020 First Essex; it draws from the old Second Essex & Middlesex (55%). Entirely in Essex County. 2020 presidential margin D+22.4 on the 2016\u20132020 lines \u2192 D+29.4 on the current lines.",
+    "toEra": "current"
+   },
+   "First Essex and Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 88.5,
+      "key": "First Essex & Middlesex",
+      "popPct": 81.1
+     },
+     {
+      "areaPct": 8.8,
+      "key": "First Essex",
+      "popPct": 15.2
+     },
+     {
+      "areaPct": 2.6,
+      "key": "Second Essex",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 91.5
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 8.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Essex",
+      "popPct": 91.5
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 8.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 180242,
+    "pres2020New": -26.9,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 First Essex and Middlesex; it draws from the old First Essex & Middlesex (81%), the old First Essex (15%), the old Second Essex (4%). Counties: gained Essex (92%), Middlesex (8%).",
+    "toEra": "current"
+   },
+   "First Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 77.2,
+      "key": "First Middlesex",
+      "popPct": 81.4
+     },
+     {
+      "areaPct": 22.8,
+      "key": "Second Essex & Middlesex",
+      "popPct": 18.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 175455,
+    "pres2020New": -20.1,
+    "pres2020Old": -29.7,
+    "retainedAreaPct": 77.2,
+    "retainedPopPct": 81.4,
+    "text": "Kept 81% of its population from the 2016\u20132020 First Middlesex; gained the rest from the old Second Essex & Middlesex (19%). Entirely in Middlesex County. 2020 presidential margin D+29.7 on the 2016\u20132020 lines \u2192 D+20.1 on the current lines.",
+    "toEra": "current"
+   },
+   "First Plymouth and Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "Plymouth & Norfolk",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plymouth",
+      "popPct": 62.4
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 37.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Plymouth",
+      "popPct": 62.4
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 37.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 172531,
+    "pres2020New": -24.9,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 First Plymouth and Norfolk; it draws from the old Plymouth & Norfolk (100%). Counties: gained Plymouth (62%), Norfolk (38%).",
+    "toEra": "current"
+   },
+   "First Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 96.9,
+      "key": "First Suffolk",
+      "popPct": 73.4
+     },
+     {
+      "areaPct": 1.9,
+      "key": "Second Suffolk",
+      "popPct": 13.4
+     },
+     {
+      "areaPct": 1.0,
+      "key": "First Suffolk & Middlesex",
+      "popPct": 10.8
+     },
+     {
+      "areaPct": 0.3,
+      "key": "Second Suffolk & Middlesex",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 97.6
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 2.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 187071,
+    "pres2020New": -60.2,
+    "pres2020Old": -61.4,
+    "retainedAreaPct": 96.9,
+    "retainedPopPct": 73.4,
+    "text": "Kept 73% of its population from the 2016\u20132020 First Suffolk; gained the rest from the old Second Suffolk (13%), the old First Suffolk & Middlesex (11%), the old Second Suffolk & Middlesex (2%). Spans Suffolk, Norfolk counties. 2020 presidential margin D+61.4 on the 2016\u20132020 lines \u2192 D+60.2 on the current lines.",
+    "toEra": "current"
+   },
+   "First Worcester": {
+    "contributors": [
+     {
+      "areaPct": 62.4,
+      "key": "First Worcester",
+      "popPct": 83.8
+     },
+     {
+      "areaPct": 1.5,
+      "key": "Second Worcester",
+      "popPct": 8.4
+     },
+     {
+      "areaPct": 31.1,
+      "key": "Worcester & Middlesex",
+      "popPct": 5.4
+     },
+     {
+      "areaPct": 4.9,
+      "key": "Middlesex & Worcester",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 164308,
+    "pres2020New": -37.4,
+    "pres2020Old": -33.3,
+    "retainedAreaPct": 62.4,
+    "retainedPopPct": 83.8,
+    "text": "Kept 84% of its population from the 2016\u20132020 First Worcester; gained the rest from the old Second Worcester (8%), the old Worcester & Middlesex (5%), the old Middlesex & Worcester (2%). Entirely in Worcester County. 2020 presidential margin D+33.3 on the 2016\u20132020 lines \u2192 D+37.4 on the current lines.",
+    "toEra": "current"
+   },
+   "Fourth Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "Fourth Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 178760,
+    "pres2020New": -37.8,
+    "pres2020Old": -37.8,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Middlesex County.",
+    "toEra": "current"
+   },
+   "Hampden": {
+    "contributors": [
+     {
+      "areaPct": 65.6,
+      "key": "Hampden",
+      "popPct": 77.8
+     },
+     {
+      "areaPct": 29.3,
+      "key": "First Hampden & Hampshire",
+      "popPct": 18.4
+     },
+     {
+      "areaPct": 5.1,
+      "key": "Second Hampden & Hampshire",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampden",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 167600,
+    "pres2020New": -42.9,
+    "pres2020Old": -38.1,
+    "retainedAreaPct": 65.6,
+    "retainedPopPct": 77.8,
+    "text": "Kept 78% of its population from the 2016\u20132020 Hampden; gained the rest from the old First Hampden & Hampshire (18%), the old Second Hampden & Hampshire (4%). Entirely in Hampden County. 2020 presidential margin D+38.1 on the 2016\u20132020 lines \u2192 D+42.9 on the current lines.",
+    "toEra": "current"
+   },
+   "Hampden and Hampshire": {
+    "contributors": [
+     {
+      "areaPct": 90.7,
+      "key": "Second Hampden & Hampshire",
+      "popPct": 82.8
+     },
+     {
+      "areaPct": 9.3,
+      "key": "Hampden",
+      "popPct": 17.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampden",
+      "popPct": 86.3
+     },
+     {
+      "county": "Hampshire",
+      "popPct": 13.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hampden",
+      "popPct": 86.3
+     },
+     {
+      "county": "Hampshire",
+      "popPct": 13.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 167465,
+    "pres2020New": -15.7,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Hampden and Hampshire; it draws from the old Second Hampden & Hampshire (83%), the old Hampden (17%). Counties: gained Hampden (86%), Hampshire (14%).",
+    "toEra": "current"
+   },
+   "Hampden-Hampshire-Worcester": {
+    "contributors": [
+     {
+      "areaPct": 71.6,
+      "key": "First Hampden & Hampshire",
+      "popPct": 78.7
+     },
+     {
+      "areaPct": 6.7,
+      "key": "Hampshire, Franklin & Worcester",
+      "popPct": 10.8
+     },
+     {
+      "areaPct": 21.7,
+      "key": "Worcester, Hampden, Hampshire & Middlesex",
+      "popPct": 10.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampden",
+      "popPct": 74.0
+     },
+     {
+      "county": "Hampshire",
+      "popPct": 23.2
+     },
+     {
+      "county": "Worcester",
+      "popPct": 2.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hampden",
+      "popPct": 74.0
+     },
+     {
+      "county": "Hampshire",
+      "popPct": 23.2
+     },
+     {
+      "county": "Worcester",
+      "popPct": 2.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 167815,
+    "pres2020New": -14.2,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Hampden-Hampshire-Worcester; it draws from the old First Hampden & Hampshire (79%), the old Hampshire, Franklin & Worcester (11%), the old Worcester, Hampden, Hampshire & Middlesex (10%). Counties: gained Hampden (74%), Hampshire (23%), Worcester (3%).",
+    "toEra": "current"
+   },
+   "Hampshire-Franklin-Worcester": {
+    "contributors": [
+     {
+      "areaPct": 76.1,
+      "key": "Hampshire, Franklin & Worcester",
+      "popPct": 82.2
+     },
+     {
+      "areaPct": 23.8,
+      "key": "Worcester, Hampden, Hampshire & Middlesex",
+      "popPct": 17.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hampshire",
+      "popPct": 46.9
+     },
+     {
+      "county": "Franklin",
+      "popPct": 35.0
+     },
+     {
+      "county": "Worcester",
+      "popPct": 18.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hampshire",
+      "popPct": 46.9
+     },
+     {
+      "county": "Franklin",
+      "popPct": 35.0
+     },
+     {
+      "county": "Worcester",
+      "popPct": 18.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 167710,
+    "pres2020New": -48.5,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Hampshire-Franklin-Worcester; it draws from the old Hampshire, Franklin & Worcester (82%), the old Worcester, Hampden, Hampshire & Middlesex (18%). Counties: gained Hampshire (47%), Franklin (35%), Worcester (18%).",
+    "toEra": "current"
+   },
+   "Middlesex and Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 92.3,
+      "key": "Second Middlesex & Norfolk",
+      "popPct": 92.0
+     },
+     {
+      "areaPct": 7.6,
+      "key": "Norfolk, Bristol & Middlesex",
+      "popPct": 8.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 91.2
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 7.9
+     },
+     {
+      "county": "Worcester",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Middlesex",
+      "popPct": 91.2
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 7.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 175087,
+    "pres2020New": -45.4,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Middlesex and Norfolk; it draws from the old Second Middlesex & Norfolk (92%), the old Norfolk, Bristol & Middlesex (8%). Counties: gained Middlesex (91%), Norfolk (8%).",
+    "toEra": "current"
+   },
+   "Middlesex and Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 87.3,
+      "key": "Middlesex & Suffolk",
+      "popPct": 87.7
+     },
+     {
+      "areaPct": 12.5,
+      "key": "First Suffolk & Middlesex",
+      "popPct": 12.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 59.8
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 40.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Middlesex",
+      "popPct": 59.8
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 40.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 184381,
+    "pres2020New": -66.8,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Middlesex and Suffolk; it draws from the old Middlesex & Suffolk (88%), the old First Suffolk & Middlesex (12%). Counties: gained Middlesex (60%), Suffolk (40%).",
+    "toEra": "current"
+   },
+   "Middlesex and Worcester": {
+    "contributors": [
+     {
+      "areaPct": 84.0,
+      "key": "Middlesex & Worcester",
+      "popPct": 85.9
+     },
+     {
+      "areaPct": 8.0,
+      "key": "Norfolk, Bristol & Middlesex",
+      "popPct": 7.8
+     },
+     {
+      "areaPct": 8.0,
+      "key": "Third Middlesex",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 88.5
+     },
+     {
+      "county": "Worcester",
+      "popPct": 11.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Middlesex",
+      "popPct": 88.5
+     },
+     {
+      "county": "Worcester",
+      "popPct": 11.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 178098,
+    "pres2020New": -45.5,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Middlesex and Worcester; it draws from the old Middlesex & Worcester (86%), the old Norfolk, Bristol & Middlesex (8%), the old Third Middlesex (6%). Counties: gained Middlesex (88%), Worcester (12%).",
+    "toEra": "current"
+   },
+   "Norfolk and Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 88.4,
+      "key": "First Middlesex & Norfolk",
+      "popPct": 93.8
+     },
+     {
+      "areaPct": 11.5,
+      "key": "Norfolk, Bristol & Middlesex",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 49.6
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 34.4
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 16.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Middlesex",
+      "popPct": 49.6
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 34.4
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 16.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 181773,
+    "pres2020New": -67.2,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Norfolk and Middlesex; it draws from the old First Middlesex & Norfolk (94%), the old Norfolk, Bristol & Middlesex (6%). Counties: gained Middlesex (50%), Norfolk (34%), Suffolk (16%).",
+    "toEra": "current"
+   },
+   "Norfolk and Plymouth": {
+    "contributors": [
+     {
+      "areaPct": 78.9,
+      "key": "Norfolk & Plymouth",
+      "popPct": 91.4
+     },
+     {
+      "areaPct": 21.0,
+      "key": "Second Plymouth & Bristol",
+      "popPct": 8.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 71.0
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 28.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Norfolk",
+      "popPct": 71.0
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 28.8
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 172628,
+    "pres2020New": -24.2,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Norfolk and Plymouth; it draws from the old Norfolk & Plymouth (91%), the old Second Plymouth & Bristol (9%). Counties: gained Norfolk (71%), Plymouth (29%).",
+    "toEra": "current"
+   },
+   "Norfolk and Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 63.4,
+      "key": "Norfolk & Suffolk",
+      "popPct": 77.0
+     },
+     {
+      "areaPct": 32.1,
+      "key": "Bristol & Norfolk",
+      "popPct": 14.6
+     },
+     {
+      "areaPct": 4.5,
+      "key": "Second Suffolk",
+      "popPct": 8.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 55.0
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 44.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Norfolk",
+      "popPct": 55.0
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 44.8
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 181100,
+    "pres2020New": -42.0,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Norfolk and Suffolk; it draws from the old Norfolk & Suffolk (77%), the old Bristol & Norfolk (15%), the old Second Suffolk (8%). Counties: gained Norfolk (55%), Suffolk (45%).",
+    "toEra": "current"
+   },
+   "Norfolk-Plymouth-Bristol": {
+    "contributors": [
+     {
+      "areaPct": 68.2,
+      "key": "Norfolk, Bristol & Plymouth",
+      "popPct": 68.9
+     },
+     {
+      "areaPct": 23.5,
+      "key": "First Plymouth & Bristol",
+      "popPct": 16.8
+     },
+     {
+      "areaPct": 3.6,
+      "key": "Norfolk & Plymouth",
+      "popPct": 9.6
+     },
+     {
+      "areaPct": 4.6,
+      "key": "Second Plymouth & Bristol",
+      "popPct": 4.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 62.0
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 21.2
+     },
+     {
+      "county": "Bristol",
+      "popPct": 14.8
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 1.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Norfolk",
+      "popPct": 62.0
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 21.2
+     },
+     {
+      "county": "Bristol",
+      "popPct": 14.8
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 170165,
+    "pres2020New": -28.5,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Norfolk-Plymouth-Bristol; it draws from the old Norfolk, Bristol & Plymouth (69%), the old First Plymouth & Bristol (17%), the old Norfolk & Plymouth (10%) and 1 more. Counties: gained Norfolk (62%), Plymouth (21%), Bristol (15%).",
+    "toEra": "current"
+   },
+   "Norfolk-Worcester-Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 54.3,
+      "key": "Norfolk, Bristol & Middlesex",
+      "popPct": 47.1
+     },
+     {
+      "areaPct": 18.7,
+      "key": "Worcester & Norfolk",
+      "popPct": 26.6
+     },
+     {
+      "areaPct": 11.9,
+      "key": "Norfolk & Suffolk",
+      "popPct": 12.1
+     },
+     {
+      "areaPct": 8.1,
+      "key": "Bristol & Norfolk",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 7.1,
+      "key": "Second Middlesex & Norfolk",
+      "popPct": 7.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Norfolk",
+      "popPct": 79.5
+     },
+     {
+      "county": "Worcester",
+      "popPct": 17.3
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 3.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Norfolk",
+      "popPct": 79.5
+     },
+     {
+      "county": "Worcester",
+      "popPct": 17.3
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 3.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 178085,
+    "pres2020New": -30.0,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Norfolk-Worcester-Middlesex; it draws from the old Norfolk, Bristol & Middlesex (47%), the old Worcester & Norfolk (27%), the old Norfolk & Suffolk (12%) and 2 more. Counties: gained Norfolk (80%), Worcester (17%), Middlesex (3%).",
+    "toEra": "current"
+   },
+   "Plymouth and Barnstable": {
+    "contributors": [
+     {
+      "areaPct": 92.2,
+      "key": "Plymouth & Barnstable",
+      "popPct": 90.2
+     },
+     {
+      "areaPct": 5.0,
+      "key": "Cape & Islands",
+      "popPct": 8.2
+     },
+     {
+      "areaPct": 2.8,
+      "key": "Second Plymouth & Bristol",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plymouth",
+      "popPct": 52.2
+     },
+     {
+      "county": "Barnstable",
+      "popPct": 47.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Plymouth",
+      "popPct": 52.2
+     },
+     {
+      "county": "Barnstable",
+      "popPct": 47.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 184524,
+    "pres2020New": -16.5,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Plymouth and Barnstable; it draws from the old Plymouth & Barnstable (90%), the old Cape & Islands (8%), the old Second Plymouth & Bristol (2%). Counties: gained Plymouth (52%), Barnstable (48%).",
+    "toEra": "current"
+   },
+   "Second Bristol and Plymouth": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "Second Bristol & Plymouth",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 95.7
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 4.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Bristol",
+      "popPct": 95.7
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 4.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 167853,
+    "pres2020New": -15.5,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Second Bristol and Plymouth; it draws from the old Second Bristol & Plymouth (100%). Counties: gained Bristol (96%), Plymouth (4%).",
+    "toEra": "current"
+   },
+   "Second Essex": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "Second Essex",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 169697,
+    "pres2020New": -30.7,
+    "pres2020Old": -30.3,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Essex County.",
+    "toEra": "current"
+   },
+   "Second Essex and Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 45.9,
+      "key": "First Essex",
+      "popPct": 46.8
+     },
+     {
+      "areaPct": 37.9,
+      "key": "Second Essex & Middlesex",
+      "popPct": 36.5
+     },
+     {
+      "areaPct": 16.1,
+      "key": "First Essex & Middlesex",
+      "popPct": 16.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 70.5
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 29.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Essex",
+      "popPct": 70.5
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 29.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 186220,
+    "pres2020New": -20.6,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Second Essex and Middlesex; it draws from the old First Essex (47%), the old Second Essex & Middlesex (36%), the old First Essex & Middlesex (17%). Counties: gained Essex (70%), Middlesex (30%).",
+    "toEra": "current"
+   },
+   "Second Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 98.8,
+      "key": "Second Middlesex",
+      "popPct": 97.4
+     },
+     {
+      "areaPct": 1.1,
+      "key": "Middlesex & Suffolk",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 179490,
+    "pres2020New": -66.9,
+    "pres2020Old": -67.6,
+    "retainedAreaPct": 98.8,
+    "retainedPopPct": 97.4,
+    "text": "Kept 97% of its population from the 2016\u20132020 Second Middlesex; gained the rest from the old Middlesex & Suffolk (3%). Entirely in Middlesex County. 2020 presidential margin D+67.6 on the 2016\u20132020 lines \u2192 D+66.9 on the current lines.",
+    "toEra": "current"
+   },
+   "Second Plymouth and Norfolk": {
+    "contributors": [
+     {
+      "areaPct": 85.9,
+      "key": "Second Plymouth & Bristol",
+      "popPct": 87.4
+     },
+     {
+      "areaPct": 14.0,
+      "key": "Norfolk, Bristol & Plymouth",
+      "popPct": 12.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plymouth",
+      "popPct": 89.4
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 10.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Plymouth",
+      "popPct": 89.4
+     },
+     {
+      "county": "Norfolk",
+      "popPct": 10.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 171766,
+    "pres2020New": -33.3,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Second Plymouth and Norfolk; it draws from the old Second Plymouth & Bristol (87%), the old Norfolk, Bristol & Plymouth (13%). Counties: gained Plymouth (89%), Norfolk (11%).",
+    "toEra": "current"
+   },
+   "Second Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 71.2,
+      "key": "Second Suffolk",
+      "popPct": 72.0
+     },
+     {
+      "areaPct": 23.2,
+      "key": "First Suffolk",
+      "popPct": 21.6
+     },
+     {
+      "areaPct": 1.5,
+      "key": "Second Suffolk & Middlesex",
+      "popPct": 3.9
+     },
+     {
+      "areaPct": 4.0,
+      "key": "Norfolk & Suffolk",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 179591,
+    "pres2020New": -85.0,
+    "pres2020Old": -82.8,
+    "retainedAreaPct": 71.2,
+    "retainedPopPct": 72.0,
+    "text": "Kept 72% of its population from the 2016\u20132020 Second Suffolk; gained the rest from the old First Suffolk (22%), the old Second Suffolk & Middlesex (4%), the old Norfolk & Suffolk (2%). Entirely in Suffolk County. 2020 presidential margin D+82.8 on the 2016\u20132020 lines \u2192 D+85.0 on the current lines.",
+    "toEra": "current"
+   },
+   "Second Worcester": {
+    "contributors": [
+     {
+      "areaPct": 78.7,
+      "key": "Second Worcester",
+      "popPct": 79.1
+     },
+     {
+      "areaPct": 19.5,
+      "key": "Middlesex & Worcester",
+      "popPct": 12.7
+     },
+     {
+      "areaPct": 1.8,
+      "key": "First Worcester",
+      "popPct": 8.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 170456,
+    "pres2020New": -28.1,
+    "pres2020Old": -22.5,
+    "retainedAreaPct": 78.7,
+    "retainedPopPct": 79.1,
+    "text": "Kept 79% of its population from the 2016\u20132020 Second Worcester; gained the rest from the old Middlesex & Worcester (13%), the old First Worcester (8%). Entirely in Worcester County. 2020 presidential margin D+22.5 on the 2016\u20132020 lines \u2192 D+28.1 on the current lines.",
+    "toEra": "current"
+   },
+   "Suffolk and Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 77.0,
+      "key": "Second Suffolk & Middlesex",
+      "popPct": 81.1
+     },
+     {
+      "areaPct": 12.1,
+      "key": "Middlesex & Suffolk",
+      "popPct": 13.0
+     },
+     {
+      "areaPct": 10.8,
+      "key": "Second Middlesex",
+      "popPct": 5.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 56.2
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 43.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Suffolk",
+      "popPct": 56.2
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 43.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 187418,
+    "pres2020New": -67.1,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Suffolk and Middlesex; it draws from the old Second Suffolk & Middlesex (81%), the old Middlesex & Suffolk (13%), the old Second Middlesex (6%). Counties: gained Suffolk (56%), Middlesex (44%).",
+    "toEra": "current"
+   },
+   "Third Bristol and Plymouth": {
+    "contributors": [
+     {
+      "areaPct": 81.6,
+      "key": "First Plymouth & Bristol",
+      "popPct": 84.6
+     },
+     {
+      "areaPct": 18.4,
+      "key": "Bristol & Norfolk",
+      "popPct": 15.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 64.4
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 35.0
+     },
+     {
+      "county": "Barnstable",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Bristol",
+      "popPct": 64.4
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 35.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 182009,
+    "pres2020New": -5.0,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Third Bristol and Plymouth; it draws from the old First Plymouth & Bristol (85%), the old Bristol & Norfolk (15%). Counties: gained Bristol (64%), Plymouth (35%).",
+    "toEra": "current"
+   },
+   "Third Essex": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "Third Essex",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Essex",
+      "popPct": 98.1
+     },
+     {
+      "county": "Suffolk",
+      "popPct": 1.3
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 181803,
+    "pres2020New": -30.5,
+    "pres2020Old": -30.5,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Essex, Suffolk, Middlesex counties.",
+    "toEra": "current"
+   },
+   "Third Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "Third Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 170269,
+    "pres2020New": -46.4,
+    "pres2020Old": -47.0,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Middlesex County.",
+    "toEra": "current"
+   },
+   "Third Suffolk": {
+    "contributors": [
+     {
+      "areaPct": 96.5,
+      "key": "First Suffolk & Middlesex",
+      "popPct": 85.5
+     },
+     {
+      "areaPct": 2.3,
+      "key": "Second Suffolk & Middlesex",
+      "popPct": 11.2
+     },
+     {
+      "areaPct": 1.1,
+      "key": "Middlesex & Suffolk",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suffolk",
+      "popPct": 99.3
+     },
+     {
+      "county": "Essex",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Suffolk",
+      "popPct": 99.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 180056,
+    "pres2020New": -46.4,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Third Suffolk; it draws from the old First Suffolk & Middlesex (86%), the old Second Suffolk & Middlesex (11%), the old Middlesex & Suffolk (3%). Counties: gained Suffolk (99%).",
+    "toEra": "current"
+   },
+   "Worcester and Hampden": {
+    "contributors": [
+     {
+      "areaPct": 51.5,
+      "key": "Worcester & Norfolk",
+      "popPct": 69.2
+     },
+     {
+      "areaPct": 41.9,
+      "key": "Worcester, Hampden, Hampshire & Middlesex",
+      "popPct": 21.8
+     },
+     {
+      "areaPct": 6.7,
+      "key": "Second Worcester",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 91.0
+     },
+     {
+      "county": "Hampden",
+      "popPct": 8.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Worcester",
+      "popPct": 91.0
+     },
+     {
+      "county": "Hampden",
+      "popPct": 8.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 181723,
+    "pres2020New": -2.7,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Worcester and Hampden; it draws from the old Worcester & Norfolk (69%), the old Worcester, Hampden, Hampshire & Middlesex (22%), the old Second Worcester (9%). Counties: gained Worcester (91%), Hampden (9%).",
+    "toEra": "current"
+   },
+   "Worcester and Hampshire": {
+    "contributors": [
+     {
+      "areaPct": 68.4,
+      "key": "Worcester, Hampden, Hampshire & Middlesex",
+      "popPct": 45.3
+     },
+     {
+      "areaPct": 14.9,
+      "key": "Worcester & Middlesex",
+      "popPct": 22.4
+     },
+     {
+      "areaPct": 12.1,
+      "key": "First Worcester",
+      "popPct": 18.1
+     },
+     {
+      "areaPct": 4.6,
+      "key": "Second Worcester",
+      "popPct": 14.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 94.3
+     },
+     {
+      "county": "Hampshire",
+      "popPct": 5.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Worcester",
+      "popPct": 94.3
+     },
+     {
+      "county": "Hampshire",
+      "popPct": 5.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 166890,
+    "pres2020New": -6.8,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Worcester and Hampshire; it draws from the old Worcester, Hampden, Hampshire & Middlesex (45%), the old Worcester & Middlesex (22%), the old First Worcester (18%) and 1 more. Counties: gained Worcester (94%), Hampshire (6%).",
+    "toEra": "current"
+   },
+   "Worcester and Middlesex": {
+    "contributors": [
+     {
+      "areaPct": 57.4,
+      "key": "Worcester & Middlesex",
+      "popPct": 69.4
+     },
+     {
+      "areaPct": 25.1,
+      "key": "First Middlesex",
+      "popPct": 20.3
+     },
+     {
+      "areaPct": 2.0,
+      "key": "First Worcester",
+      "popPct": 4.3
+     },
+     {
+      "areaPct": 6.1,
+      "key": "Middlesex & Worcester",
+      "popPct": 4.2
+     },
+     {
+      "areaPct": 9.3,
+      "key": "Worcester, Hampden, Hampshire & Middlesex",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 68.5
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 31.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Worcester",
+      "popPct": 68.5
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 31.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 177080,
+    "pres2020New": -22.0,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Worcester and Middlesex; it draws from the old Worcester & Middlesex (69%), the old First Middlesex (20%), the old First Worcester (4%) and 2 more. Counties: gained Worcester (68%), Middlesex (32%).",
+    "toEra": "current"
+   }
+  }
+ }
+}

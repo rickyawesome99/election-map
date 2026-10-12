@@ -1,0 +1,2218 @@
+{
+ "house": {
+  "1": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jeff Farnan",
+     "party": "R"
+    }
+   ]
+  },
+  "10": {
+   "candidates": [
+    {
+     "name": "LaTonya Williams",
+     "party": "D"
+    },
+    {
+     "name": "Paul Gatewood",
+     "party": "R"
+    }
+   ]
+  },
+  "100": {
+   "candidates": [
+    {
+     "name": "Mary Ann Perkins",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Philip Oehlerking",
+     "party": "R"
+    },
+    {
+     "name": "Ken Newhouse",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "101": {
+   "candidates": [
+    {
+     "name": "Paul Lentz",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Ben Keathley",
+     "party": "R"
+    },
+    {
+     "name": "Jeff Coleman",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "102": {
+   "candidates": [
+    {
+     "name": "David Rogers",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Richard West",
+     "party": "R"
+    }
+   ]
+  },
+  "103": {
+   "candidates": [
+    {
+     "name": "Don Crozier",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Dave Hinman",
+     "party": "R"
+    }
+   ]
+  },
+  "104": {
+   "candidates": [
+    {
+     "name": "Tara Murray",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Terri Violet",
+     "party": "R"
+    }
+   ]
+  },
+  "105": {
+   "candidates": [
+    {
+     "name": "Caterina Clayton",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Colin Wellenkamp",
+     "party": "R"
+    }
+   ]
+  },
+  "106": {
+   "candidates": [
+    {
+     "name": "Jewel Kelly, Jr.",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Travis Wilson",
+     "party": "R"
+    }
+   ]
+  },
+  "107": {
+   "candidates": [
+    {
+     "name": "Gary Wester",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mark Matthiesen",
+     "party": "R"
+    }
+   ]
+  },
+  "108": {
+   "candidates": [
+    {
+     "name": "Stephen Scott",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mike Costlow",
+     "party": "R"
+    }
+   ]
+  },
+  "109": {
+   "candidates": [
+    {
+     "name": "Trent Leslie",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "John Simmons",
+     "party": "R"
+    }
+   ]
+  },
+  "11": {
+   "candidates": [
+    {
+     "name": "Luke Rae",
+     "party": "D"
+    },
+    {
+     "name": "Taylor Crouse",
+     "party": "R"
+    }
+   ]
+  },
+  "110": {
+   "candidates": [
+    {
+     "name": "Claire Heinrich",
+     "party": "D"
+    },
+    {
+     "name": "Niles Stephens",
+     "party": "R"
+    }
+   ]
+  },
+  "111": {
+   "candidates": [
+    {
+     "name": "Stacey Hagen",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Cecelie Williams",
+     "party": "R"
+    }
+   ]
+  },
+  "112": {
+   "candidates": [
+    {
+     "name": "Dave Rekosh",
+     "party": "D"
+    },
+    {
+     "name": "Ed Callahan",
+     "party": "R"
+    }
+   ]
+  },
+  "113": {
+   "candidates": [
+    {
+     "name": "Ashley Drury",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Phil Amato",
+     "party": "R"
+    }
+   ]
+  },
+  "114": {
+   "candidates": [
+    {
+     "name": "Jessie Shepherd",
+     "party": "D"
+    },
+    {
+     "name": "Ann Moloney",
+     "party": "R"
+    }
+   ]
+  },
+  "115": {
+   "candidates": [
+    {
+     "name": "David George",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Bill Lucas",
+     "party": "R"
+    }
+   ]
+  },
+  "116": {
+   "candidates": [
+    {
+     "name": "Whitney Wisker-Brooks",
+     "party": "D"
+    },
+    {
+     "name": "Jason Green",
+     "party": "R"
+    }
+   ]
+  },
+  "117": {
+   "candidates": [
+    {
+     "name": "Justin Flowers",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Becky Laubinger",
+     "party": "R"
+    }
+   ]
+  },
+  "118": {
+   "candidates": [
+    {
+     "name": "Sarah Puckett",
+     "party": "D"
+    },
+    {
+     "name": "Amy DeClue",
+     "party": "R"
+    }
+   ]
+  },
+  "119": {
+   "candidates": [
+    {
+     "name": "Amy Thompson",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Brad Banderman",
+     "party": "R"
+    }
+   ]
+  },
+  "12": {
+   "candidates": [
+    {
+     "name": "Tracey Steele",
+     "party": "D"
+    },
+    {
+     "name": "Jerry Hickey",
+     "party": "R"
+    }
+   ]
+  },
+  "120": {
+   "candidates": [
+    {
+     "name": "Ray Bruno",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "John Hewkin",
+     "party": "R"
+    }
+   ]
+  },
+  "121": {
+   "candidates": [
+    {
+     "name": "Miguel Arellanes",
+     "party": "D"
+    },
+    {
+     "name": "Keith Pritchard",
+     "party": "R"
+    }
+   ]
+  },
+  "122": {
+   "candidates": [
+    {
+     "name": "Dan Victor",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Tara Peters",
+     "party": "R"
+    }
+   ]
+  },
+  "123": {
+   "candidates": [
+    {
+     "name": "Cody Hutcheson",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jeff Vernetti",
+     "party": "R"
+    }
+   ]
+  },
+  "124": {
+   "candidates": [
+    {
+     "name": "Tara Hallmark",
+     "party": "D"
+    },
+    {
+     "name": "Kevin Onstott",
+     "party": "R"
+    }
+   ]
+  },
+  "125": {
+   "candidates": [
+    {
+     "name": "Lynda Jones",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Dane Diehl",
+     "party": "R"
+    }
+   ]
+  },
+  "126": {
+   "candidates": [
+    {
+     "name": "Melissa Perry",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jim Kalberloh",
+     "party": "R"
+    }
+   ]
+  },
+  "127": {
+   "candidates": [
+    {
+     "name": "Marvin Manring",
+     "party": "D"
+    },
+    {
+     "name": "Brenden Kelley",
+     "party": "R"
+    },
+    {
+     "name": "Racheal Martin",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "128": {
+   "candidates": [
+    {
+     "name": "Michael Martin",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Christopher Warwick",
+     "party": "R"
+    },
+    {
+     "name": "Shane Sawyer",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "129": {
+   "candidates": [
+    {
+     "name": "John Gray",
+     "party": "D"
+    },
+    {
+     "name": "William Worsham",
+     "party": "R"
+    }
+   ]
+  },
+  "13": {
+   "candidates": [
+    {
+     "name": "Jacoby Wynkoop",
+     "party": "D"
+    },
+    {
+     "name": "John Elliott",
+     "party": "R"
+    }
+   ]
+  },
+  "130": {
+   "candidates": [
+    {
+     "name": "Leslie Jones",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Bishop Davidson",
+     "party": "R"
+    }
+   ]
+  },
+  "131": {
+   "candidates": [
+    {
+     "name": "Ashley Cossins",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Bill Owen",
+     "party": "R"
+    }
+   ]
+  },
+  "132": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jeremy Dean",
+     "party": "D"
+    },
+    {
+     "name": "Russ Gos\u00adselin",
+     "party": "R"
+    }
+   ]
+  },
+  "133": {
+   "candidates": [
+    {
+     "name": "Katelyn Zach",
+     "party": "D"
+    },
+    {
+     "name": "Gerald Angelo",
+     "party": "R"
+    }
+   ]
+  },
+  "134": {
+   "candidates": [
+    {
+     "name": "K. Grant",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Alex Riley",
+     "party": "R"
+    }
+   ]
+  },
+  "135": {
+   "candidates": [
+    {
+     "name": "John Chiles",
+     "party": "D"
+    },
+    {
+     "name": "Michael Hasty",
+     "party": "R"
+    }
+   ]
+  },
+  "136": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Stephanie Hein",
+     "party": "D"
+    },
+    {
+     "name": "Jacey Buckles",
+     "party": "R"
+    }
+   ]
+  },
+  "137": {
+   "candidates": [
+    {
+     "name": "Bryce Lockwood",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Darin Chappell",
+     "party": "R"
+    }
+   ]
+  },
+  "138": {
+   "candidates": [
+    {
+     "name": "Chris Daugherty",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Burt Whaley",
+     "party": "R"
+    }
+   ]
+  },
+  "139": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Bob Titus",
+     "party": "R"
+    }
+   ]
+  },
+  "14": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Ashley Aune",
+     "party": "D"
+    },
+    {
+     "name": "Frank Pendleton",
+     "party": "R"
+    }
+   ]
+  },
+  "140": {
+   "candidates": [
+    {
+     "name": "Julia Curran",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jamie Ray Gragg",
+     "party": "R"
+    }
+   ]
+  },
+  "141": {
+   "candidates": [
+    {
+     "name": "Darrel Swofford",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Melissa Schmidt",
+     "party": "R"
+    }
+   ]
+  },
+  "142": {
+   "candidates": [
+    {
+     "name": "Josh Ray",
+     "party": "D"
+    },
+    {
+     "name": "Jeff Brown",
+     "party": "R"
+    }
+   ]
+  },
+  "143": {
+   "candidates": [
+    {
+     "name": "Marsha Snodgrass",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Bennie Cook",
+     "party": "R"
+    }
+   ]
+  },
+  "144": {
+   "candidates": [
+    {
+     "name": "Andrew Eye",
+     "party": "D"
+    },
+    {
+     "name": "Chris Dinkins",
+     "party": "R"
+    }
+   ]
+  },
+  "145": {
+   "candidates": [
+    {
+     "name": "Carl Kinsky",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Bryant Wolfin",
+     "party": "R"
+    }
+   ]
+  },
+  "146": {
+   "candidates": [
+    {
+     "name": "Mary Harriet Talbut",
+     "party": "D"
+    },
+    {
+     "name": "Lucas Green",
+     "party": "R"
+    }
+   ]
+  },
+  "147": {
+   "candidates": [
+    {
+     "name": "Tim Palmer",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "John Voss",
+     "party": "R"
+    },
+    {
+     "name": "Greg Tlapek",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "148": {
+   "candidates": [
+    {
+     "name": "Casey Carlisle",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "David A. Dolan",
+     "party": "R"
+    }
+   ]
+  },
+  "149": {
+   "candidates": [
+    {
+     "name": "John Armbruster",
+     "party": "D"
+    },
+    {
+     "name": "Scott Crumpecker",
+     "party": "R"
+    }
+   ]
+  },
+  "15": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kenneth Jamison",
+     "party": "D"
+    }
+   ]
+  },
+  "150": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Cameron Bunting Parker",
+     "party": "R"
+    }
+   ]
+  },
+  "151": {
+   "candidates": [
+    {
+     "name": "Pam Proffitt-Rowland",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Steven Jordan",
+     "party": "R"
+    }
+   ]
+  },
+  "152": {
+   "candidates": [
+    {
+     "name": "Corretta Bishop",
+     "party": "D"
+    },
+    {
+     "name": "Jeff Shawan",
+     "party": "R"
+    }
+   ]
+  },
+  "153": {
+   "candidates": [
+    {
+     "name": "Les Majors",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Keith Elliott",
+     "party": "R"
+    }
+   ]
+  },
+  "154": {
+   "candidates": [
+    {
+     "name": "JoJo Stewart",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Lisa Durnell",
+     "party": "R"
+    }
+   ]
+  },
+  "155": {
+   "candidates": [
+    {
+     "name": "Joshua Berzins",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Matthew Overcast",
+     "party": "R"
+    }
+   ]
+  },
+  "156": {
+   "candidates": [
+    {
+     "name": "Trent Davis",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Brian Seitz",
+     "party": "R"
+    }
+   ]
+  },
+  "157": {
+   "candidates": [
+    {
+     "name": "Bradley Bos",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mitch Boggs",
+     "party": "R"
+    }
+   ]
+  },
+  "158": {
+   "candidates": [
+    {
+     "name": "Chris Foster",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Scott Cupps",
+     "party": "R"
+    }
+   ]
+  },
+  "159": {
+   "candidates": [
+    {
+     "name": "Joel Mace",
+     "party": "R"
+    }
+   ]
+  },
+  "16": {
+   "candidates": [
+    {
+     "name": "Daniel Kinate",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Chris Brown",
+     "party": "R"
+    }
+   ]
+  },
+  "160": {
+   "candidates": [
+    {
+     "name": "Angela Thomas",
+     "party": "D"
+    },
+    {
+     "name": "Cheryle Perkins",
+     "party": "R"
+    }
+   ]
+  },
+  "161": {
+   "candidates": [
+    {
+     "name": "Aaron Metzger",
+     "party": "D"
+    },
+    {
+     "name": "Louise Secker",
+     "party": "R"
+    }
+   ]
+  },
+  "162": {
+   "candidates": [
+    {
+     "name": "Roger Koch",
+     "party": "R"
+    }
+   ]
+  },
+  "163": {
+   "candidates": [
+    {
+     "name": "Brenna Barksdale",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Cathy Loy",
+     "party": "R"
+    }
+   ]
+  },
+  "17": {
+   "candidates": [
+    {
+     "name": "Susan Hoisington",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Bill Allen",
+     "party": "R"
+    }
+   ]
+  },
+  "18": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Eric Woods",
+     "party": "D"
+    }
+   ]
+  },
+  "19": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Wick Thomas",
+     "party": "D"
+    },
+    {
+     "name": "Karen Spalding",
+     "party": "R"
+    }
+   ]
+  },
+  "2": {
+   "candidates": [
+    {
+     "name": "Casey Scott",
+     "party": "D"
+    },
+    {
+     "name": "Phil Fox",
+     "party": "R"
+    },
+    {
+     "name": "Shelby Dreier",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "20": {
+   "candidates": [
+    {
+     "name": "Jeff Spicer",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mike Steinmeyer",
+     "party": "R"
+    }
+   ]
+  },
+  "21": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Will Jobe",
+     "party": "D"
+    },
+    {
+     "name": "Michael Young",
+     "party": "R"
+    }
+   ]
+  },
+  "22": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Yolanda Young",
+     "party": "D"
+    }
+   ]
+  },
+  "23": {
+   "candidates": [
+    {
+     "name": "Tony Van Trece",
+     "party": "D"
+    }
+   ]
+  },
+  "24": {
+   "candidates": [
+    {
+     "name": "Kevin Garner",
+     "party": "D"
+    }
+   ]
+  },
+  "25": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Patricia Mansur",
+     "party": "D"
+    }
+   ]
+  },
+  "26": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Tiffany Price",
+     "party": "D"
+    }
+   ]
+  },
+  "27": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Melissa Douglas",
+     "party": "D"
+    }
+   ]
+  },
+  "28": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Donna Barnes",
+     "party": "D"
+    },
+    {
+     "name": "Steven Hinton",
+     "party": "R"
+    }
+   ]
+  },
+  "29": {
+   "candidates": [
+    {
+     "name": "Tedi Rowland",
+     "party": "D"
+    },
+    {
+     "name": "Robert Bruette",
+     "party": "R"
+    }
+   ]
+  },
+  "3": {
+   "candidates": [
+    {
+     "name": "Corey Luebbering",
+     "party": "D"
+    },
+    {
+     "name": "P. Jeremy Mosley",
+     "party": "R"
+    }
+   ]
+  },
+  "30": {
+   "candidates": [
+    {
+     "name": "Kevin Grover",
+     "party": "D"
+    },
+    {
+     "name": "Jeff Martin",
+     "party": "R"
+    }
+   ]
+  },
+  "31": {
+   "candidates": [
+    {
+     "name": "Justin Geiser",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Ron Fowler",
+     "party": "R"
+    }
+   ]
+  },
+  "32": {
+   "candidates": [
+    {
+     "name": "Jennifer Cassidy",
+     "party": "D"
+    },
+    {
+     "name": "Michael Todd",
+     "party": "R"
+    }
+   ]
+  },
+  "33": {
+   "candidates": [
+    {
+     "name": "Troy Latterell",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Carolyn Caton",
+     "party": "R"
+    }
+   ]
+  },
+  "34": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kemp Strickler",
+     "party": "D"
+    },
+    {
+     "name": "Sean Smith",
+     "party": "R"
+    }
+   ]
+  },
+  "35": {
+   "candidates": [
+    {
+     "name": "Michael Scott",
+     "party": "D"
+    },
+    {
+     "name": "Jacquie Aziere Stenger",
+     "party": "R"
+    }
+   ]
+  },
+  "36": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Anthony Ealy",
+     "party": "D"
+    },
+    {
+     "name": "Dave Thomas",
+     "party": "R"
+    }
+   ]
+  },
+  "37": {
+   "candidates": [
+    {
+     "name": "Karissa Varga",
+     "party": "D"
+    }
+   ]
+  },
+  "38": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Martin Jacobs",
+     "party": "D"
+    },
+    {
+     "name": "Mary Hill",
+     "party": "R"
+    }
+   ]
+  },
+  "39": {
+   "candidates": [
+    {
+     "name": "Tanya Lakins",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mark Meirath",
+     "party": "R"
+    }
+   ]
+  },
+  "4": {
+   "candidates": [
+    {
+     "name": "Tristan Sutton",
+     "party": "D"
+    },
+    {
+     "name": "Keith Gudehus",
+     "party": "R"
+    }
+   ]
+  },
+  "40": {
+   "candidates": [
+    {
+     "name": "Thomas McBeth",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Chad Perkins",
+     "party": "R"
+    },
+    {
+     "name": "Sheri Jay",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "41": {
+   "candidates": [
+    {
+     "name": "Matthew Beger",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Doyle Justus",
+     "party": "R"
+    },
+    {
+     "name": "Dalton Johnson",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "42": {
+   "candidates": [
+    {
+     "name": "Amy Pritchard",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jeff Myers",
+     "party": "R"
+    }
+   ]
+  },
+  "43": {
+   "candidates": [
+    {
+     "name": "Rich Gold",
+     "party": "D"
+    },
+    {
+     "name": "Brendan Webber",
+     "party": "R"
+    }
+   ]
+  },
+  "44": {
+   "candidates": [
+    {
+     "name": "Rebecca Brewer",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "John Martin",
+     "party": "R"
+    }
+   ]
+  },
+  "45": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kathy Steinhoff",
+     "party": "D"
+    }
+   ]
+  },
+  "46": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "David T. Smith",
+     "party": "D"
+    }
+   ]
+  },
+  "47": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Adrian Plank",
+     "party": "D"
+    }
+   ]
+  },
+  "48": {
+   "candidates": [
+    {
+     "name": "Hope Tinker",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Tim Taylor",
+     "party": "R"
+    }
+   ]
+  },
+  "49": {
+   "candidates": [
+    {
+     "name": "Jessica Slisz",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jim Schulte",
+     "party": "R"
+    }
+   ]
+  },
+  "5": {
+   "candidates": [
+    {
+     "name": "John Tomko",
+     "party": "D"
+    },
+    {
+     "name": "Roth McElvain",
+     "party": "R"
+    }
+   ]
+  },
+  "50": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Gregg Bush",
+     "party": "D"
+    }
+   ]
+  },
+  "51": {
+   "candidates": [
+    {
+     "name": "Ron Fauss",
+     "party": "D"
+    },
+    {
+     "name": "Stephanie Gooden",
+     "party": "R"
+    }
+   ]
+  },
+  "52": {
+   "candidates": [
+    {
+     "name": "Rene Vance",
+     "party": "D"
+    },
+    {
+     "name": "Israel Baeza",
+     "party": "R"
+    }
+   ]
+  },
+  "53": {
+   "candidates": [
+    {
+     "name": "Beth Grubb",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Terry Thompson",
+     "party": "R"
+    }
+   ]
+  },
+  "54": {
+   "candidates": [
+    {
+     "name": "Taigan Plummer",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Brandon Phelps",
+     "party": "R"
+    }
+   ]
+  },
+  "55": {
+   "candidates": [
+    {
+     "name": "Jonathan Pennell",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "William Irwin",
+     "party": "R"
+    }
+   ]
+  },
+  "56": {
+   "candidates": [
+    {
+     "name": "Staci Czar",
+     "party": "D"
+    },
+    {
+     "name": "Steve Baker",
+     "party": "R"
+    }
+   ]
+  },
+  "57": {
+   "candidates": [
+    {
+     "name": "Michael Walbom",
+     "party": "D"
+    },
+    {
+     "name": "Matthew Sergent",
+     "party": "R"
+    }
+   ]
+  },
+  "58": {
+   "candidates": [
+    {
+     "name": "Roger Korenberg",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Willard Haley",
+     "party": "R"
+    }
+   ]
+  },
+  "59": {
+   "candidates": [
+    {
+     "name": "Rebecca Kroll",
+     "party": "D"
+    },
+    {
+     "name": "Carrie Tergin",
+     "party": "R"
+    }
+   ]
+  },
+  "6": {
+   "candidates": [
+    {
+     "name": "Robert Johnson",
+     "party": "D"
+    },
+    {
+     "name": "Kelly Gatts",
+     "party": "R"
+    },
+    {
+     "name": "John Davison",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "60": {
+   "candidates": [
+    {
+     "name": "Suzanne Luther",
+     "party": "D"
+    },
+    {
+     "name": "Shane Kampeter",
+     "party": "R"
+    }
+   ]
+  },
+  "61": {
+   "candidates": [
+    {
+     "name": "Stacy Bax",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Bruce Sassmann",
+     "party": "R"
+    }
+   ]
+  },
+  "62": {
+   "candidates": [
+    {
+     "name": "Liz Davenport",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Sherri Gallick",
+     "party": "R"
+    }
+   ]
+  },
+  "63": {
+   "candidates": [
+    {
+     "name": "Donald Looney",
+     "party": "D"
+    },
+    {
+     "name": "Tony Lovasco",
+     "party": "R"
+    }
+   ]
+  },
+  "64": {
+   "candidates": [
+    {
+     "name": "Amber Teson",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Deanna Self",
+     "party": "R"
+    }
+   ]
+  },
+  "65": {
+   "candidates": [
+    {
+     "name": "Dale Conoyer",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Wendy Hausman",
+     "party": "R"
+    }
+   ]
+  },
+  "66": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Marlene Terry",
+     "party": "D"
+    },
+    {
+     "name": "Laura Mitchell-Riley",
+     "party": "R"
+    }
+   ]
+  },
+  "67": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Tonya Rush",
+     "party": "D"
+    }
+   ]
+  },
+  "68": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kem Smith",
+     "party": "D"
+    }
+   ]
+  },
+  "69": {
+   "candidates": [
+    {
+     "name": "Chris Chapman",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Scott Miller",
+     "party": "R"
+    }
+   ]
+  },
+  "7": {
+   "candidates": [
+    {
+     "name": "Adrian Cooper",
+     "party": "D"
+    },
+    {
+     "name": "Jeremy Clevenger",
+     "party": "R"
+    }
+   ]
+  },
+  "70": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Stephanie Boykin",
+     "party": "D"
+    }
+   ]
+  },
+  "71": {
+   "candidates": [
+    {
+     "name": "Nicole Greer",
+     "party": "D"
+    }
+   ]
+  },
+  "72": {
+   "candidates": [
+    {
+     "name": "Patrick Wroblewski",
+     "party": "D"
+    },
+    {
+     "name": "Jeffrey Jacks",
+     "party": "R"
+    }
+   ]
+  },
+  "73": {
+   "candidates": [
+    {
+     "name": "Kennedy Moore",
+     "party": "D"
+    },
+    {
+     "name": "Joy Denise Dabney",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "74": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Marla Smith",
+     "party": "D"
+    },
+    {
+     "name": "Jack Howard",
+     "party": "R"
+    }
+   ]
+  },
+  "75": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Chanel Mosley",
+     "party": "D"
+    },
+    {
+     "name": "Brandon Wilke",
+     "party": "R"
+    }
+   ]
+  },
+  "76": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Marlon Anderson",
+     "party": "D"
+    }
+   ]
+  },
+  "77": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kimberly-Ann Collins",
+     "party": "D"
+    },
+    {
+     "name": "Michael Corey",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "78": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Marty Joe Murray",
+     "party": "D"
+    }
+   ]
+  },
+  "79": {
+   "candidates": [
+    {
+     "name": "Rachel D'Souza",
+     "party": "D"
+    },
+    {
+     "name": "Michael J. Hebron Sr.",
+     "party": "R"
+    }
+   ]
+  },
+  "8": {
+   "candidates": [
+    {
+     "name": "Amy Minich",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Josh Hurlbert",
+     "party": "R"
+    }
+   ]
+  },
+  "80": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Elizabeth Fuchs",
+     "party": "D"
+    },
+    {
+     "name": "Jennie Drag",
+     "party": "R"
+    }
+   ]
+  },
+  "81": {
+   "candidates": [
+    {
+     "name": "James P. Lappe",
+     "party": "D"
+    }
+   ]
+  },
+  "82": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Nick Kimble",
+     "party": "D"
+    }
+   ]
+  },
+  "83": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Raymond Reed",
+     "party": "D"
+    },
+    {
+     "name": "Andrew Bolin",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "84": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Del Taylor",
+     "party": "D"
+    },
+    {
+     "name": "Robert Vroman",
+     "party": "R"
+    }
+   ]
+  },
+  "85": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Yolonda Fountain Henderson",
+     "party": "D"
+    },
+    {
+     "name": "Jerron Sutton",
+     "party": "R"
+    }
+   ]
+  },
+  "86": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jeff Hales",
+     "party": "D"
+    }
+   ]
+  },
+  "87": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Connie Steinmetz",
+     "party": "D"
+    },
+    {
+     "name": "Dan Hyatt",
+     "party": "R"
+    }
+   ]
+  },
+  "88": {
+   "candidates": [
+    {
+     "name": "Jennifer Trickey",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Holly Jones",
+     "party": "R"
+    }
+   ]
+  },
+  "89": {
+   "candidates": [
+    {
+     "name": "Bryan Troop",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "George Hruza",
+     "party": "R"
+    }
+   ]
+  },
+  "9": {
+   "candidates": [
+    {
+     "name": "Gena Puckett",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Dean VanSchoiack",
+     "party": "R"
+    }
+   ]
+  },
+  "90": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Mark Boyko",
+     "party": "D"
+    },
+    {
+     "name": "Ryan Sheridan",
+     "party": "R"
+    }
+   ]
+  },
+  "91": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jo Doll",
+     "party": "D"
+    }
+   ]
+  },
+  "92": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Michael Burton",
+     "party": "D"
+    },
+    {
+     "name": "Kenneth Abram",
+     "party": "R"
+    }
+   ]
+  },
+  "93": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Bridget Walsh Moore",
+     "party": "D"
+    }
+   ]
+  },
+  "94": {
+   "candidates": [
+    {
+     "name": "Cathy Summers",
+     "party": "D"
+    },
+    {
+     "name": "Maryellen Murphy",
+     "party": "R"
+    }
+   ]
+  },
+  "95": {
+   "candidates": [
+    {
+     "name": "Meredith Sumenek",
+     "party": "D"
+    },
+    {
+     "name": "Bob Mahacek",
+     "party": "R"
+    }
+   ]
+  },
+  "96": {
+   "candidates": [
+    {
+     "name": "Matt Vitale",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Brad Christ",
+     "party": "R"
+    },
+    {
+     "name": "Shane Ferguson",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "97": {
+   "candidates": [
+    {
+     "name": "Dan Schaefer",
+     "party": "D"
+    },
+    {
+     "name": "David Robertson",
+     "party": "R"
+    }
+   ]
+  },
+  "98": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jaclyn Zimmermann",
+     "party": "D"
+    },
+    {
+     "name": "Tim Bosch",
+     "party": "R"
+    }
+   ]
+  },
+  "99": {
+   "candidates": [
+    {
+     "name": "Tori Schafer",
+     "party": "D"
+    }
+   ]
+  }
+ },
+ "meta": {
+  "fetched": "2026-10-10",
+  "source": "Ballotpedia chamber election pages, 2026"
+ },
+ "senate": {
+  "10": {
+   "candidates": [
+    {
+     "name": "John Wells",
+     "party": "D"
+    },
+    {
+     "name": "Mike Deering",
+     "party": "R"
+    }
+   ]
+  },
+  "12": {
+   "candidates": [
+    {
+     "name": "Judy McNeece",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Rusty Black",
+     "party": "R"
+    }
+   ]
+  },
+  "14": {
+   "candidates": [
+    {
+     "name": "Raychel Proudie",
+     "party": "D"
+    },
+    {
+     "name": "Vernon Norman",
+     "party": "R"
+    }
+   ]
+  },
+  "16": {
+   "candidates": [
+    {
+     "name": "Virginia Staabs",
+     "party": "D"
+    },
+    {
+     "name": "Bill Hardwick",
+     "party": "R"
+    }
+   ]
+  },
+  "18": {
+   "candidates": [
+    {
+     "name": "Nick Miller",
+     "party": "D"
+    },
+    {
+     "name": "Greg Sharpe",
+     "party": "R"
+    }
+   ]
+  },
+  "2": {
+   "candidates": [
+    {
+     "name": "Susan Shumway",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Nick Schroer",
+     "party": "R"
+    }
+   ]
+  },
+  "20": {
+   "candidates": [
+    {
+     "name": "Sean Falconer",
+     "party": "D"
+    },
+    {
+     "name": "Lori Rook",
+     "party": "R"
+    }
+   ]
+  },
+  "22": {
+   "candidates": [
+    {
+     "name": "Jeff Abney",
+     "party": "D"
+    },
+    {
+     "name": "Jim Avery",
+     "party": "R"
+    }
+   ]
+  },
+  "24": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Tracy McCreery",
+     "party": "D"
+    },
+    {
+     "name": "LaVanna Wrobley",
+     "party": "R"
+    }
+   ]
+  },
+  "26": {
+   "candidates": [
+    {
+     "name": "Victoria Wors",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Ben Brown",
+     "party": "R"
+    }
+   ]
+  },
+  "28": {
+   "candidates": [
+    {
+     "name": "Mike McCaffree",
+     "party": "D"
+    },
+    {
+     "name": "Sam Alexander",
+     "party": "R"
+    }
+   ]
+  },
+  "30": {
+   "candidates": [
+    {
+     "name": "Betsy Fogle",
+     "party": "D"
+    },
+    {
+     "name": "Melanie Stinnett",
+     "party": "R"
+    },
+    {
+     "name": "Cecil Ince",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "32": {
+   "candidates": [
+    {
+     "name": "Imma Curl",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jill Carter",
+     "party": "R"
+    }
+   ]
+  },
+  "34": {
+   "candidates": [
+    {
+     "name": "Shereka Barnes",
+     "party": "D"
+    },
+    {
+     "name": "Mike Jones",
+     "party": "R"
+    }
+   ]
+  },
+  "4": {
+   "candidates": [
+    {
+     "name": "Gina Mitten",
+     "party": "D"
+    }
+   ]
+  },
+  "6": {
+   "candidates": [
+    {
+     "name": "J. Don Salcedo",
+     "party": "D"
+    },
+    {
+     "name": "Jake Vogel",
+     "party": "R"
+    }
+   ]
+  },
+  "8": {
+   "candidates": [
+    {
+     "name": "Keri Ingle",
+     "party": "D"
+    },
+    {
+     "name": "Jon Patterson",
+     "party": "R"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,6584 @@
+{
+ "state": "VA",
+ "cycle": 2025,
+ "fetched": "2026-10-11",
+ "dataThrough": "12/31/2025",
+ "races": [
+  {
+   "office": "Virginia House of Delegates District 1",
+   "url": "/va/race/virginia-house-of-delegates-district-1-65409",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 593111.0,
+   "totalExpenditures": 554244.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Patrick Hope",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 475818.11,
+       "expenditures": 0.0,
+       "status": "$420,100.15",
+       "url": "/va/candidate/patrick-hope?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Bill Moher",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11115.0,
+       "expenditures": 10000.0,
+       "status": "$21,115.00",
+       "url": "/va/candidate/bill-moher?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Patrick Hope",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 475818.11,
+       "expenditures": 0.0,
+       "status": "$420,100.15",
+       "url": "/va/candidate/patrick-hope?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Sean Epstein",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7329.13,
+       "expenditures": 30000.0,
+       "status": "$14,820.54",
+       "url": "/va/candidate/sean-epstein?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Arjoon Srikanth",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 98848.29,
+       "expenditures": 0.0,
+       "status": "$98,208.42",
+       "url": "/va/candidate/arjoon-srikanth?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Bill Moher",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11115.0,
+       "expenditures": 10000.0,
+       "status": "$21,115.00",
+       "url": "/va/candidate/bill-moher?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "Virginia House of Delegates District 10",
+   "url": "/va/race/virginia-house-of-delegates-district-10-65418",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 738255.0,
+   "totalExpenditures": 720453.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Dan Helmer",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 734381.7,
+       "expenditures": 0.0,
+       "status": "$719,623.57",
+       "url": "/va/candidate/dan-helmer?cycle=2025-election-cycle"
+      },
+      {
+       "name": "David Guill",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3873.0,
+       "expenditures": 0.0,
+       "status": "$829.02",
+       "url": "/va/candidate/david-guill?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Dan Helmer",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 734381.7,
+       "expenditures": 0.0,
+       "status": "$719,623.57",
+       "url": "/va/candidate/dan-helmer?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "David Guill",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3873.0,
+       "expenditures": 0.0,
+       "status": "$829.02",
+       "url": "/va/candidate/david-guill?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "Virginia House of Delegates District 100",
+   "url": "/va/race/virginia-house-of-delegates-district-100-65508",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 306929.0,
+   "totalExpenditures": 312807.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Robert Bloxom",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 239787.44,
+       "expenditures": 0.0,
+       "status": "$275,439.96",
+       "url": "/va/candidate/robert-bloxom?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Elizabeth Richardson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 63467.78,
+       "expenditures": 0.0,
+       "status": "$33,833.42",
+       "url": "/va/candidate/elizabeth-richardson?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Elizabeth Richardson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 63467.78,
+       "expenditures": 0.0,
+       "status": "$33,833.42",
+       "url": "/va/candidate/elizabeth-richardson?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Justin Burns",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3605.0,
+       "expenditures": 0.0,
+       "status": "$2,984.97",
+       "url": "/va/candidate/justin-burns?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Charlena Jones",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 68.93,
+       "expenditures": 0.0,
+       "status": "$549.02",
+       "url": "/va/candidate/charlena-jones?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Robert Bloxom",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 239787.44,
+       "expenditures": 0.0,
+       "status": "$275,439.96",
+       "url": "/va/candidate/robert-bloxom?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "100"
+  },
+  {
+   "office": "Virginia House of Delegates District 11",
+   "url": "/va/race/virginia-house-of-delegates-district-11-65419",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 497686.0,
+   "totalExpenditures": 477484.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "David Bulova",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 487619.52,
+       "expenditures": 0.0,
+       "status": "$473,482.44",
+       "url": "/va/candidate/david-bulova?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Adam Wise",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7511.73,
+       "expenditures": 128.2,
+       "status": "$1,502.05",
+       "url": "/va/candidate/adam-wise?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Brandon Norman Givens",
+       "party": "Forward",
+       "incumbent": false,
+       "contributions": 2555.17,
+       "expenditures": 0.0,
+       "status": "$2,500.00",
+       "url": "/va/candidate/brandon-norman-givens?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "David Bulova",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 487619.52,
+       "expenditures": 0.0,
+       "status": "$473,482.44",
+       "url": "/va/candidate/david-bulova?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Adam Wise",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7511.73,
+       "expenditures": 128.2,
+       "status": "$1,502.05",
+       "url": "/va/candidate/adam-wise?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "Virginia House of Delegates District 12",
+   "url": "/va/race/virginia-house-of-delegates-district-12-65420",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 182576.0,
+   "totalExpenditures": 131484.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Holly Seibold",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 181210.99,
+       "expenditures": 0.0,
+       "status": "$130,529.73",
+       "url": "/va/candidate/holly-seibold?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Nelson Figueroa-Velez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1365.0,
+       "expenditures": 0.0,
+       "status": "$954.59",
+       "url": "/va/candidate/nelson-figueroa-velez?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Holly Seibold",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 181210.99,
+       "expenditures": 0.0,
+       "status": "$130,529.73",
+       "url": "/va/candidate/holly-seibold?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Nelson Figueroa-Velez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1365.0,
+       "expenditures": 0.0,
+       "status": "$954.59",
+       "url": "/va/candidate/nelson-figueroa-velez?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "Virginia House of Delegates District 13",
+   "url": "/va/race/virginia-house-of-delegates-district-13-65421",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 418084.0,
+   "totalExpenditures": 384726.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Marcus Simon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 396322.17,
+       "expenditures": 0.0,
+       "status": "$371,528.06",
+       "url": "/va/candidate/marcus-simon?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Sylwia Oleksy",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1946.12,
+       "expenditures": 0.0,
+       "status": "$1,353.53",
+       "url": "/va/candidate/sylwia-oleksy?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Dave Crance",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 19816.15,
+       "expenditures": 0.0,
+       "status": "$11,844.87",
+       "url": "/va/candidate/dave-crance?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Marcus Simon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 396322.17,
+       "expenditures": 0.0,
+       "status": "$371,528.06",
+       "url": "/va/candidate/marcus-simon?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Sylwia Oleksy",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1946.12,
+       "expenditures": 0.0,
+       "status": "$1,353.53",
+       "url": "/va/candidate/sylwia-oleksy?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "Virginia House of Delegates District 14",
+   "url": "/va/race/virginia-house-of-delegates-district-14-65422",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 171169.0,
+   "totalExpenditures": 144707.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Vivian Watts",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 164714.0,
+       "expenditures": 0.0,
+       "status": "$139,421.95",
+       "url": "/va/candidate/vivian-watts?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Eric Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6455.41,
+       "expenditures": 3000.0,
+       "status": "$5,284.96",
+       "url": "/va/candidate/eric-johnson?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Vivian Watts",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 164714.0,
+       "expenditures": 0.0,
+       "status": "$139,421.95",
+       "url": "/va/candidate/vivian-watts?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Eric Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6455.41,
+       "expenditures": 3000.0,
+       "status": "$5,284.96",
+       "url": "/va/candidate/eric-johnson?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "Virginia House of Delegates District 15",
+   "url": "/va/race/virginia-house-of-delegates-district-15-65423",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 256134.0,
+   "totalExpenditures": 223280.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Laura Jane Cohen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 200735.27,
+       "expenditures": 0.0,
+       "status": "$183,072.31",
+       "url": "/va/candidate/laura-jane-cohen?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Saundra Tarulli Davis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 55398.69,
+       "expenditures": 0.0,
+       "status": "$40,207.23",
+       "url": "/va/candidate/saundra-tarulli-davis?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Laura Jane Cohen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 200735.27,
+       "expenditures": 0.0,
+       "status": "$183,072.31",
+       "url": "/va/candidate/laura-jane-cohen?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Saundra Tarulli Davis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 55398.69,
+       "expenditures": 0.0,
+       "status": "$40,207.23",
+       "url": "/va/candidate/saundra-tarulli-davis?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "Virginia House of Delegates District 16",
+   "url": "/va/race/virginia-house-of-delegates-district-16-65424",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 616958.0,
+   "totalExpenditures": 545113.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Paul Krizek",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 606512.93,
+       "expenditures": 0.0,
+       "status": "$534,144.84",
+       "url": "/va/candidate/paul-krizek?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Richard Hayden",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10445.56,
+       "expenditures": 124.0,
+       "status": "$10,968.23",
+       "url": "/va/candidate/richard-hayden?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Shelly Arnoldi",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/va/candidate/shelly-arnoldi?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Paul Krizek",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 606512.93,
+       "expenditures": 0.0,
+       "status": "$534,144.84",
+       "url": "/va/candidate/paul-krizek?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Richard Hayden",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10445.56,
+       "expenditures": 124.0,
+       "status": "$10,968.23",
+       "url": "/va/candidate/richard-hayden?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "Virginia House of Delegates District 17",
+   "url": "/va/race/virginia-house-of-delegates-district-17-65425",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 574586.0,
+   "totalExpenditures": 524237.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Mark Sickles",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 574585.81,
+       "expenditures": 0.0,
+       "status": "$524,236.86",
+       "url": "/va/candidate/mark-sickles?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Mark Sickles",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 574585.81,
+       "expenditures": 0.0,
+       "status": "$524,236.86",
+       "url": "/va/candidate/mark-sickles?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "Virginia House of Delegates District 18",
+   "url": "/va/race/virginia-house-of-delegates-district-18-65426",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 737104.0,
+   "totalExpenditures": 690175.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Kathy Tran",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 722084.76,
+       "expenditures": 0.0,
+       "status": "$672,110.94",
+       "url": "/va/candidate/kathy-tran?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Ed McGovern",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15019.6,
+       "expenditures": 3200.0,
+       "status": "$18,064.20",
+       "url": "/va/candidate/ed-mcgovern?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Kathy Tran",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 722084.76,
+       "expenditures": 0.0,
+       "status": "$672,110.94",
+       "url": "/va/candidate/kathy-tran?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Ed McGovern",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15019.6,
+       "expenditures": 3200.0,
+       "status": "$18,064.20",
+       "url": "/va/candidate/ed-mcgovern?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "Virginia House of Delegates District 19",
+   "url": "/va/race/virginia-house-of-delegates-district-19-65427",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 88873.0,
+   "totalExpenditures": 88386.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Rozia Henson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 88872.87,
+       "expenditures": 0.0,
+       "status": "$88,386.30",
+       "url": "/va/candidate/rozia-henson?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Rozia Henson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 88872.87,
+       "expenditures": 0.0,
+       "status": "$88,386.30",
+       "url": "/va/candidate/rozia-henson?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "Virginia House of Delegates District 2",
+   "url": "/va/race/virginia-house-of-delegates-district-2-65410",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 186892.0,
+   "totalExpenditures": 185831.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Adele Mcclure",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 186892.42,
+       "expenditures": 0.0,
+       "status": "$185,830.85",
+       "url": "/va/candidate/adele-mcclure?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Adele Mcclure",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 186892.42,
+       "expenditures": 0.0,
+       "status": "$185,830.85",
+       "url": "/va/candidate/adele-mcclure?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "Virginia House of Delegates District 20",
+   "url": "/va/race/virginia-house-of-delegates-district-20-65428",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 242473.0,
+   "totalExpenditures": 195553.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Michelle Maldonado",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 237797.48,
+       "expenditures": 0.0,
+       "status": "$190,876.91",
+       "url": "/va/candidate/michelle-maldonado?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Christopher Stone",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4676.0,
+       "expenditures": 0.0,
+       "status": "$4,676.00",
+       "url": "/va/candidate/christopher-stone?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Michelle Maldonado",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 237797.48,
+       "expenditures": 0.0,
+       "status": "$190,876.91",
+       "url": "/va/candidate/michelle-maldonado?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Christopher Stone",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4676.0,
+       "expenditures": 0.0,
+       "status": "$4,676.00",
+       "url": "/va/candidate/christopher-stone?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "Virginia House of Delegates District 21",
+   "url": "/va/race/virginia-house-of-delegates-district-21-65429",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 1233374.0,
+   "totalExpenditures": 932726.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Josh Thomas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1204153.94,
+       "expenditures": 0.0,
+       "status": "$906,194.06",
+       "url": "/va/candidate/josh-thomas?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Gregory Lee Gorham",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19625.24,
+       "expenditures": 2500.0,
+       "status": "$19,113.06",
+       "url": "/va/candidate/gregory-lee-gorham?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Josh Thomas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1204153.94,
+       "expenditures": 0.0,
+       "status": "$906,194.06",
+       "url": "/va/candidate/josh-thomas?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Gregory Lee Gorham",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19625.24,
+       "expenditures": 2500.0,
+       "status": "$19,113.06",
+       "url": "/va/candidate/gregory-lee-gorham?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Xanthe Larsen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/va/candidate/xanthe-larsen?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Sahar S Smith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9595.29,
+       "expenditures": 2420.11,
+       "status": "$7,418.88",
+       "url": "/va/candidate/sahar-s-smith?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "Virginia House of Delegates District 22",
+   "url": "/va/race/virginia-house-of-delegates-district-22-65430",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 5223663.0,
+   "totalExpenditures": 4065666.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Elizabeth Guzman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3753513.93,
+       "expenditures": 0.0,
+       "status": "$2,888,263.04",
+       "url": "/va/candidate/elizabeth-guzman?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Ian Lovejoy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1470148.63,
+       "expenditures": 0.0,
+       "status": "$1,177,402.82",
+       "url": "/va/candidate/ian-lovejoy?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Elizabeth Guzman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3753513.93,
+       "expenditures": 0.0,
+       "status": "$2,888,263.04",
+       "url": "/va/candidate/elizabeth-guzman?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Ian Lovejoy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1470148.63,
+       "expenditures": 0.0,
+       "status": "$1,177,402.82",
+       "url": "/va/candidate/ian-lovejoy?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "Virginia House of Delegates District 23",
+   "url": "/va/race/virginia-house-of-delegates-district-23-65431",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 543770.0,
+   "totalExpenditures": 435076.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Candi King",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 541731.08,
+       "expenditures": 0.0,
+       "status": "$431,334.72",
+       "url": "/va/candidate/candi-king?cycle=2025-election-cycle"
+      },
+      {
+       "name": "James Tully",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2039.32,
+       "expenditures": 50.0,
+       "status": "$3,740.85",
+       "url": "/va/candidate/james-tully?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Candi King",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 541731.08,
+       "expenditures": 0.0,
+       "status": "$431,334.72",
+       "url": "/va/candidate/candi-king?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "James Tully",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2039.32,
+       "expenditures": 50.0,
+       "status": "$3,740.85",
+       "url": "/va/candidate/james-tully?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "Virginia House of Delegates District 24",
+   "url": "/va/race/virginia-house-of-delegates-district-24-65432",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 1705540.0,
+   "totalExpenditures": 1368328.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Luke Torian",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1705539.5,
+       "expenditures": 0.0,
+       "status": "$1,368,328.13",
+       "url": "/va/candidate/luke-torian?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Luke Torian",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1705539.5,
+       "expenditures": 0.0,
+       "status": "$1,368,328.13",
+       "url": "/va/candidate/luke-torian?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "Virginia House of Delegates District 25",
+   "url": "/va/race/virginia-house-of-delegates-district-25-65433",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 171462.0,
+   "totalExpenditures": 169071.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Briana Sewell",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 171461.69,
+       "expenditures": 0.0,
+       "status": "$169,070.51",
+       "url": "/va/candidate/briana-sewell?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Briana Sewell",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 171461.69,
+       "expenditures": 0.0,
+       "status": "$169,070.51",
+       "url": "/va/candidate/briana-sewell?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "Virginia House of Delegates District 26",
+   "url": "/va/race/virginia-house-of-delegates-district-26-65434",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 29731.0,
+   "totalExpenditures": 24886.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Jasbinder Singh",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/va/candidate/jasbinder-singh?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Ommair N Butt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 29731.2,
+       "expenditures": 3601.0,
+       "status": "$24,885.62",
+       "url": "/va/candidate/ommair-n-butt?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Jasbinder Singh",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/va/candidate/jasbinder-singh?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Ommair N Butt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 29731.2,
+       "expenditures": 3601.0,
+       "status": "$24,885.62",
+       "url": "/va/candidate/ommair-n-butt?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "Virginia House of Delegates District 27",
+   "url": "/va/race/virginia-house-of-delegates-district-27-65435",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 299745.0,
+   "totalExpenditures": 236397.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Atoosa Reaser",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 214673.77,
+       "expenditures": 0.0,
+       "status": "$168,336.73",
+       "url": "/va/candidate/atoosa-reaser?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Junaid Khan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 85071.39,
+       "expenditures": 0.0,
+       "status": "$68,060.58",
+       "url": "/va/candidate/junaid-khan?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Atoosa Reaser",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 214673.77,
+       "expenditures": 0.0,
+       "status": "$168,336.73",
+       "url": "/va/candidate/atoosa-reaser?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Junaid Khan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 85071.39,
+       "expenditures": 0.0,
+       "status": "$68,060.58",
+       "url": "/va/candidate/junaid-khan?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "Virginia House of Delegates District 28",
+   "url": "/va/race/virginia-house-of-delegates-district-28-65436",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 362628.0,
+   "totalExpenditures": 316854.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "David Reid",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 362627.8,
+       "expenditures": 0.0,
+       "status": "$316,853.69",
+       "url": "/va/candidate/david-reid?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Janet Geisler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/va/candidate/janet-geisler?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "David Reid",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 362627.8,
+       "expenditures": 0.0,
+       "status": "$316,853.69",
+       "url": "/va/candidate/david-reid?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Janet Geisler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/va/candidate/janet-geisler?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "Virginia House of Delegates District 29",
+   "url": "/va/race/virginia-house-of-delegates-district-29-65437",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 175484.0,
+   "totalExpenditures": 148621.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Fernando Marty Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 171789.23,
+       "expenditures": 0.0,
+       "status": "$144,925.51",
+       "url": "/va/candidate/fernando-marty-martinez?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Scott K Thomas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3695.0,
+       "expenditures": 0.0,
+       "status": "$3,695.00",
+       "url": "/va/candidate/scott-k-thomas?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Fernando Marty Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 171789.23,
+       "expenditures": 0.0,
+       "status": "$144,925.51",
+       "url": "/va/candidate/fernando-marty-martinez?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Scott K Thomas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3695.0,
+       "expenditures": 0.0,
+       "status": "$3,695.00",
+       "url": "/va/candidate/scott-k-thomas?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "Virginia House of Delegates District 3",
+   "url": "/va/race/virginia-house-of-delegates-district-3-65411",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 292752.0,
+   "totalExpenditures": 301546.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Alfonso Lopez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 292752.04,
+       "expenditures": 450.0,
+       "status": "$301,545.53",
+       "url": "/va/candidate/alfonso-lopez?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Alfonso Lopez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 292752.04,
+       "expenditures": 450.0,
+       "status": "$301,545.53",
+       "url": "/va/candidate/alfonso-lopez?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "Virginia House of Delegates District 30",
+   "url": "/va/race/virginia-house-of-delegates-district-30-65438",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 4507460.0,
+   "totalExpenditures": 3584497.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "John Mcauliff",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3221636.61,
+       "expenditures": 0.0,
+       "status": "$2,609,412.44",
+       "url": "/va/candidate/john-mcauliff?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Geary Higgins",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1285823.43,
+       "expenditures": 0.0,
+       "status": "$975,084.10",
+       "url": "/va/candidate/geary-higgins?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "John Mcauliff",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3221636.61,
+       "expenditures": 0.0,
+       "status": "$2,609,412.44",
+       "url": "/va/candidate/john-mcauliff?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Geary Higgins",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1285823.43,
+       "expenditures": 0.0,
+       "status": "$975,084.10",
+       "url": "/va/candidate/geary-higgins?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "Virginia House of Delegates District 31",
+   "url": "/va/race/virginia-house-of-delegates-district-31-65439",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 138829.0,
+   "totalExpenditures": 97537.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Delores Oates",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 94171.28,
+       "expenditures": 0.0,
+       "status": "$70,096.17",
+       "url": "/va/candidate/delores-oates?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Shane Boswell",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 44657.96,
+       "expenditures": 0.0,
+       "status": "$27,441.05",
+       "url": "/va/candidate/shane-boswell?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Shane Boswell",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 44657.96,
+       "expenditures": 0.0,
+       "status": "$27,441.05",
+       "url": "/va/candidate/shane-boswell?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Delores Oates",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 94171.28,
+       "expenditures": 0.0,
+       "status": "$70,096.17",
+       "url": "/va/candidate/delores-oates?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "Virginia House of Delegates District 32",
+   "url": "/va/race/virginia-house-of-delegates-district-32-65440",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 237512.0,
+   "totalExpenditures": 193573.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Bill Wiley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 220433.79,
+       "expenditures": 0.0,
+       "status": "$191,554.10",
+       "url": "/va/candidate/bill-wiley?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Jonathan Lucci",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16943.28,
+       "expenditures": 0.0,
+       "status": "$1,374.31",
+       "url": "/va/candidate/jonathan-lucci?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Jonathan Lucci",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16943.28,
+       "expenditures": 0.0,
+       "status": "$1,374.31",
+       "url": "/va/candidate/jonathan-lucci?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Michael Forbes II",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 135.0,
+       "expenditures": 510.0,
+       "status": "$645.00",
+       "url": "/va/candidate/michael-forbes-ii?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Bill Wiley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 220433.79,
+       "expenditures": 0.0,
+       "status": "$191,554.10",
+       "url": "/va/candidate/bill-wiley?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "Virginia House of Delegates District 33",
+   "url": "/va/race/virginia-house-of-delegates-district-33-65441",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 753469.0,
+   "totalExpenditures": 788324.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Justin Pence",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 90170.83,
+       "expenditures": 0.0,
+       "status": "$39,098.71",
+       "url": "/va/candidate/justin-pence?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Cathy Rec",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12818.7,
+       "expenditures": 3657.41,
+       "status": "$16,232.24",
+       "url": "/va/candidate/cathy-rec?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Todd Gilbert",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 650479.57,
+       "expenditures": 0.0,
+       "status": "$732,866.53",
+       "url": "/va/candidate/todd-gilbert?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Cathy Rec",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12818.7,
+       "expenditures": 3657.41,
+       "status": "$16,232.24",
+       "url": "/va/candidate/cathy-rec?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Bob Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$126.43",
+       "url": "/va/candidate/bob-smith?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Todd Gilbert",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 650479.57,
+       "expenditures": 0.0,
+       "status": "$732,866.53",
+       "url": "/va/candidate/todd-gilbert?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "Virginia House of Delegates District 34",
+   "url": "/va/race/virginia-house-of-delegates-district-34-65442",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 1114958.0,
+   "totalExpenditures": 973769.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Tony Wilt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 480420.38,
+       "expenditures": 0.0,
+       "status": "$457,551.37",
+       "url": "/va/candidate/tony-wilt?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Andrew Payton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 634537.43,
+       "expenditures": 2000.0,
+       "status": "$516,218.08",
+       "url": "/va/candidate/andrew-payton?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Andrew Payton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 634537.43,
+       "expenditures": 2000.0,
+       "status": "$516,218.08",
+       "url": "/va/candidate/andrew-payton?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Tony Wilt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 480420.38,
+       "expenditures": 0.0,
+       "status": "$457,551.37",
+       "url": "/va/candidate/tony-wilt?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "Virginia House of Delegates District 35",
+   "url": "/va/race/virginia-house-of-delegates-district-35-65443",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 595101.0,
+   "totalExpenditures": 561868.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Chris Runion",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 565213.77,
+       "expenditures": 0.0,
+       "status": "$534,372.70",
+       "url": "/va/candidate/chris-runion?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Jena Lisa Crisler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 29886.75,
+       "expenditures": 2002.0,
+       "status": "$27,495.62",
+       "url": "/va/candidate/jena-lisa-crisler?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Jena Lisa Crisler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 29886.75,
+       "expenditures": 2002.0,
+       "status": "$27,495.62",
+       "url": "/va/candidate/jena-lisa-crisler?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Chris Runion",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 565213.77,
+       "expenditures": 0.0,
+       "status": "$534,372.70",
+       "url": "/va/candidate/chris-runion?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "Virginia House of Delegates District 36",
+   "url": "/va/race/virginia-house-of-delegates-district-36-65444",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 192180.0,
+   "totalExpenditures": 148629.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Ellen Campbell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 148762.42,
+       "expenditures": 0.0,
+       "status": "$108,158.67",
+       "url": "/va/candidate/ellen-campbell?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Makayla Renee Venable",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 43417.53,
+       "expenditures": 0.0,
+       "status": "$40,470.72",
+       "url": "/va/candidate/makayla-renee-venable?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Makayla Renee Venable",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 43417.53,
+       "expenditures": 0.0,
+       "status": "$40,470.72",
+       "url": "/va/candidate/makayla-renee-venable?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Ellen Campbell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 148762.42,
+       "expenditures": 0.0,
+       "status": "$108,158.67",
+       "url": "/va/candidate/ellen-campbell?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "Virginia House of Delegates District 37",
+   "url": "/va/race/virginia-house-of-delegates-district-37-65445",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 847588.0,
+   "totalExpenditures": 921931.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Terry Austin",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 806495.81,
+       "expenditures": 0.0,
+       "status": "$892,023.81",
+       "url": "/va/candidate/terry-austin?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Sharron Burgess",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4123.0,
+       "expenditures": 0.0,
+       "status": "$1,266.98",
+       "url": "/va/candidate/sharron-burgess?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Andrew W Hartless",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12084.53,
+       "expenditures": 0.0,
+       "status": "$4,192.58",
+       "url": "/va/candidate/andrew-w-hartless?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Sharron Burgess",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4123.0,
+       "expenditures": 0.0,
+       "status": "$1,266.98",
+       "url": "/va/candidate/sharron-burgess?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Terry Austin",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 806495.81,
+       "expenditures": 0.0,
+       "status": "$892,023.81",
+       "url": "/va/candidate/terry-austin?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Austen Schwend",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24884.4,
+       "expenditures": 0.0,
+       "status": "$24,447.60",
+       "url": "/va/candidate/austen-schwend?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "Virginia House of Delegates District 38",
+   "url": "/va/race/virginia-house-of-delegates-district-38-65446",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 612769.0,
+   "totalExpenditures": 603896.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Sam Rasoul",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 512995.7,
+       "expenditures": 0.0,
+       "status": "$458,361.57",
+       "url": "/va/candidate/s-rasoul?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Maynard Keller",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 99773.7,
+       "expenditures": 45000.0,
+       "status": "$145,534.15",
+       "url": "/va/candidate/maynard-keller?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Sam Rasoul",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 512995.7,
+       "expenditures": 0.0,
+       "status": "$458,361.57",
+       "url": "/va/candidate/s-rasoul?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "Virginia House of Delegates District 39",
+   "url": "/va/race/virginia-house-of-delegates-district-39-65447",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 131225.0,
+   "totalExpenditures": 93672.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Will Davis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 113439.74,
+       "expenditures": 0.0,
+       "status": "$80,808.12",
+       "url": "/va/candidate/will-davis?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Eric Klotz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17785.55,
+       "expenditures": 0.0,
+       "status": "$12,864.30",
+       "url": "/va/candidate/eric-klotz?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Eric Klotz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17785.55,
+       "expenditures": 0.0,
+       "status": "$12,864.30",
+       "url": "/va/candidate/eric-klotz?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Will Davis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 113439.74,
+       "expenditures": 0.0,
+       "status": "$80,808.12",
+       "url": "/va/candidate/will-davis?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "Virginia House of Delegates District 4",
+   "url": "/va/race/virginia-house-of-delegates-district-4-65412",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 1505550.0,
+   "totalExpenditures": 1402514.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Charniele Herring",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1505550.35,
+       "expenditures": 0.0,
+       "status": "$1,402,514.26",
+       "url": "/va/candidate/charniele-herring?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Charniele Herring",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1505550.35,
+       "expenditures": 0.0,
+       "status": "$1,402,514.26",
+       "url": "/va/candidate/charniele-herring?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "Virginia House of Delegates District 40",
+   "url": "/va/race/virginia-house-of-delegates-district-40-65448",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 449372.0,
+   "totalExpenditures": 465726.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Joseph McNamara",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 308119.0,
+       "expenditures": 0.0,
+       "status": "$311,502.19",
+       "url": "/va/candidate/joseph-mcnamara?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Donna M Littlepage",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 120538.49,
+       "expenditures": 29550.75,
+       "status": "$135,737.60",
+       "url": "/va/candidate/donna-m-littlepage?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Donna M Littlepage",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 120538.49,
+       "expenditures": 29550.75,
+       "status": "$135,737.60",
+       "url": "/va/candidate/donna-m-littlepage?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Kiesha Preston",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 20715.0,
+       "expenditures": 0.0,
+       "status": "$18,486.20",
+       "url": "/va/candidate/kiesha-preston?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Joseph McNamara",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 308119.0,
+       "expenditures": 0.0,
+       "status": "$311,502.19",
+       "url": "/va/candidate/joseph-mcnamara?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "Virginia House of Delegates District 41",
+   "url": "/va/race/virginia-house-of-delegates-district-41-65449",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 4209945.0,
+   "totalExpenditures": 3584786.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Lillian Franklin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2513288.04,
+       "expenditures": 0.0,
+       "status": "$2,108,083.85",
+       "url": "/va/candidate/lillian-franklin?cycle=2025-election-cycle"
+      },
+      {
+       "name": "J Chris Obenshain",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1696656.73,
+       "expenditures": 0.0,
+       "status": "$1,476,702.12",
+       "url": "/va/candidate/j-chris-obenshain?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Lillian Franklin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2513288.04,
+       "expenditures": 0.0,
+       "status": "$2,108,083.85",
+       "url": "/va/candidate/lillian-franklin?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "J Chris Obenshain",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1696656.73,
+       "expenditures": 0.0,
+       "status": "$1,476,702.12",
+       "url": "/va/candidate/j-chris-obenshain?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "Virginia House of Delegates District 42",
+   "url": "/va/race/virginia-house-of-delegates-district-42-65450",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 373844.0,
+   "totalExpenditures": 212081.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Jason Ballard",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 352968.48,
+       "expenditures": 0.0,
+       "status": "$191,242.89",
+       "url": "/va/candidate/jason-ballard?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Onwubiko Agozino",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 20875.51,
+       "expenditures": 0.0,
+       "status": "$20,838.14",
+       "url": "/va/candidate/onwubiko-agozino?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Onwubiko Agozino",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 20875.51,
+       "expenditures": 0.0,
+       "status": "$20,838.14",
+       "url": "/va/candidate/onwubiko-agozino?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Jason Ballard",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 352968.48,
+       "expenditures": 0.0,
+       "status": "$191,242.89",
+       "url": "/va/candidate/jason-ballard?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "Virginia House of Delegates District 43",
+   "url": "/va/race/virginia-house-of-delegates-district-43-65451",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 157040.0,
+   "totalExpenditures": 142545.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "James Will Morefield",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 147700.0,
+       "expenditures": 0.0,
+       "status": "$137,171.25",
+       "url": "/va/candidate/will-morefield?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Mary Sumner",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9339.55,
+       "expenditures": 0.0,
+       "status": "$5,373.26",
+       "url": "/va/candidate/mary-sumner?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Mary Sumner",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9339.55,
+       "expenditures": 0.0,
+       "status": "$5,373.26",
+       "url": "/va/candidate/mary-sumner?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "James Will Morefield",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 147700.0,
+       "expenditures": 0.0,
+       "status": "$137,171.25",
+       "url": "/va/candidate/will-morefield?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "Virginia House of Delegates District 44",
+   "url": "/va/race/virginia-house-of-delegates-district-44-65452",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 582926.0,
+   "totalExpenditures": 729680.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Israel O'Quinn",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 555535.97,
+       "expenditures": 0.0,
+       "status": "$705,532.83",
+       "url": "/va/candidate/israel-oquinn?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Cindy Green",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27389.88,
+       "expenditures": 0.0,
+       "status": "$24,147.53",
+       "url": "/va/candidate/cindy-green?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Cindy Green",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27389.88,
+       "expenditures": 0.0,
+       "status": "$24,147.53",
+       "url": "/va/candidate/cindy-green?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Cheryl Hanzlik",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/va/candidate/cheryl-hanzlik?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Israel O'Quinn",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 555535.97,
+       "expenditures": 0.0,
+       "status": "$705,532.83",
+       "url": "/va/candidate/israel-oquinn?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "Virginia House of Delegates District 45",
+   "url": "/va/race/virginia-house-of-delegates-district-45-65453",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 1397491.0,
+   "totalExpenditures": 1300442.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Terry Kilgore",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1389359.17,
+       "expenditures": 0.0,
+       "status": "$1,293,551.24",
+       "url": "/va/candidate/terry-kilgore?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Joshua Outsey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8131.61,
+       "expenditures": 0.0,
+       "status": "$6,891.08",
+       "url": "/va/candidate/joshua-outsey?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Joshua Outsey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8131.61,
+       "expenditures": 0.0,
+       "status": "$6,891.08",
+       "url": "/va/candidate/joshua-outsey?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Terry Kilgore",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1389359.17,
+       "expenditures": 0.0,
+       "status": "$1,293,551.24",
+       "url": "/va/candidate/terry-kilgore?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "Virginia House of Delegates District 46",
+   "url": "/va/race/virginia-house-of-delegates-district-46-65454",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 152788.0,
+   "totalExpenditures": 190402.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Mitchell Cornett",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 44415.0,
+       "expenditures": 25000.0,
+       "status": "$52,144.09",
+       "url": "/va/candidate/mitchell-cornett?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Jamie Ralston Hendry",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6555.43,
+       "expenditures": 500.0,
+       "status": "$4,289.43",
+       "url": "/va/candidate/jamie-ralston-hendry?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Jamie Ralston Hendry",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6555.43,
+       "expenditures": 500.0,
+       "status": "$4,289.43",
+       "url": "/va/candidate/jamie-ralston-hendry?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Mitchell Cornett",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 44415.0,
+       "expenditures": 25000.0,
+       "status": "$52,144.09",
+       "url": "/va/candidate/mitchell-cornett?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Jonathan Arnold",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 45272.81,
+       "expenditures": 0.0,
+       "status": "$73,926.28",
+       "url": "/va/candidate/jonathan-arnold?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Adam Tolbert",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 56544.79,
+       "expenditures": 4300.0,
+       "status": "$60,042.01",
+       "url": "/va/candidate/adam-tolbert?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "Virginia House of Delegates District 47",
+   "url": "/va/race/virginia-house-of-delegates-district-47-65455",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 323633.0,
+   "totalExpenditures": 303380.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Wren Williams",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 304912.97,
+       "expenditures": 0.0,
+       "status": "$285,437.81",
+       "url": "/va/candidate/wren-williams?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Yvonne Rorrer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18719.92,
+       "expenditures": 786.03,
+       "status": "$17,942.22",
+       "url": "/va/candidate/yvonne-rorrer?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Yvonne Rorrer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18719.92,
+       "expenditures": 786.03,
+       "status": "$17,942.22",
+       "url": "/va/candidate/yvonne-rorrer?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Wren Williams",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 304912.97,
+       "expenditures": 0.0,
+       "status": "$285,437.81",
+       "url": "/va/candidate/wren-williams?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "Virginia House of Delegates District 48",
+   "url": "/va/race/virginia-house-of-delegates-district-48-65456",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 137810.0,
+   "totalExpenditures": 167716.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Eric Phillips",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 113659.24,
+       "expenditures": 26000.0,
+       "status": "$137,459.81",
+       "url": "/va/candidate/eric-phillips?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Melody Cartwright",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 23810.57,
+       "expenditures": 1100.0,
+       "status": "$29,100.46",
+       "url": "/va/candidate/melody-cartwright?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Barbara M Hancock",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 340.64,
+       "expenditures": 814.65,
+       "status": "$1,155.29",
+       "url": "/va/candidate/barbara-m-hancock?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Melody Cartwright",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 23810.57,
+       "expenditures": 1100.0,
+       "status": "$29,100.46",
+       "url": "/va/candidate/melody-cartwright?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Eric Phillips",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 113659.24,
+       "expenditures": 26000.0,
+       "status": "$137,459.81",
+       "url": "/va/candidate/eric-phillips?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "Virginia House of Delegates District 49",
+   "url": "/va/race/virginia-house-of-delegates-district-49-65457",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 288569.0,
+   "totalExpenditures": 414019.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Madison John Redd Whittle",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 119059.48,
+       "expenditures": 60283.2,
+       "status": "$172,294.83",
+       "url": "/va/candidate/madison-john-redd-whittle?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Gary Miller",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 64056.4,
+       "expenditures": 42500.0,
+       "status": "$97,553.30",
+       "url": "/va/candidate/gary-miller?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Gary Miller",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 64056.4,
+       "expenditures": 42500.0,
+       "status": "$97,553.30",
+       "url": "/va/candidate/gary-miller?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Jasmine Lipscomb",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2691.35,
+       "expenditures": 0.0,
+       "status": "$2,530.66",
+       "url": "/va/candidate/jasmine-lipscomb?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Madison John Redd Whittle",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 119059.48,
+       "expenditures": 60283.2,
+       "status": "$172,294.83",
+       "url": "/va/candidate/madison-john-redd-whittle?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Danny Marshall",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 91050.0,
+       "expenditures": 0.0,
+       "status": "$125,280.94",
+       "url": "/va/candidate/danny-marshall?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Vanessa Reynolds Scearce",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11712.0,
+       "expenditures": 5000.0,
+       "status": "$16,359.53",
+       "url": "/va/candidate/vanessa-reynolds-scearce?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "Virginia House of Delegates District 5",
+   "url": "/va/race/virginia-house-of-delegates-district-5-65413",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 245823.0,
+   "totalExpenditures": 175493.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Elizabeth Bennett-Parker",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 245822.5,
+       "expenditures": 0.0,
+       "status": "$175,492.88",
+       "url": "/va/candidate/elizabeth-bennett-parker?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Elizabeth Bennett-Parker",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 245822.5,
+       "expenditures": 0.0,
+       "status": "$175,492.88",
+       "url": "/va/candidate/elizabeth-bennett-parker?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "Virginia House of Delegates District 50",
+   "url": "/va/race/virginia-house-of-delegates-district-50-65458",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 58418.0,
+   "totalExpenditures": 55747.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Tommy Wright",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38866.56,
+       "expenditures": 0.0,
+       "status": "$41,566.11",
+       "url": "/va/candidate/tommy-wright?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Earnadette Powell Farrar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 19358.62,
+       "expenditures": 457.95,
+       "status": "$13,386.63",
+       "url": "/va/candidate/earnadette-powell-farrar?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Trudy Bell Berry",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 192.77,
+       "expenditures": 0.0,
+       "status": "$794.56",
+       "url": "/va/candidate/trudy-bell-berry?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Earnadette Powell Farrar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 19358.62,
+       "expenditures": 457.95,
+       "status": "$13,386.63",
+       "url": "/va/candidate/earnadette-powell-farrar?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Tommy Wright",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38866.56,
+       "expenditures": 0.0,
+       "status": "$41,566.11",
+       "url": "/va/candidate/tommy-wright?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "Virginia House of Delegates District 51",
+   "url": "/va/race/virginia-house-of-delegates-district-51-65459",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 141609.0,
+   "totalExpenditures": 88413.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Eric Zehr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 104403.31,
+       "expenditures": 0.0,
+       "status": "$51,207.57",
+       "url": "/va/candidate/eric-zehr?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Joy Powers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 37205.68,
+       "expenditures": 0.0,
+       "status": "$37,205.68",
+       "url": "/va/candidate/joy-powers?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Joy Powers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 37205.68,
+       "expenditures": 0.0,
+       "status": "$37,205.68",
+       "url": "/va/candidate/joy-powers?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Eric Zehr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 104403.31,
+       "expenditures": 0.0,
+       "status": "$51,207.57",
+       "url": "/va/candidate/eric-zehr?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "Virginia House of Delegates District 52",
+   "url": "/va/race/virginia-house-of-delegates-district-52-65460",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 305450.0,
+   "totalExpenditures": 247675.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Wendell Walker",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 220503.71,
+       "expenditures": 0.0,
+       "status": "$201,696.53",
+       "url": "/va/candidate/wendell-walker?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Rise Hayes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 84945.83,
+       "expenditures": 0.0,
+       "status": "$45,978.56",
+       "url": "/va/candidate/rise-hayes?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Rise Hayes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 84945.83,
+       "expenditures": 0.0,
+       "status": "$45,978.56",
+       "url": "/va/candidate/rise-hayes?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Wendell Walker",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 220503.71,
+       "expenditures": 0.0,
+       "status": "$201,696.53",
+       "url": "/va/candidate/wendell-walker?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "Virginia House of Delegates District 53",
+   "url": "/va/race/virginia-house-of-delegates-district-53-65461",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 77950.0,
+   "totalExpenditures": 73976.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Tim Griffin",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 67573.02,
+       "expenditures": 0.0,
+       "status": "$64,647.78",
+       "url": "/va/candidate/tim-griffin?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Sam Soghor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10377.47,
+       "expenditures": 0.0,
+       "status": "$9,327.89",
+       "url": "/va/candidate/sam-soghor?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Sam Soghor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10377.47,
+       "expenditures": 0.0,
+       "status": "$9,327.89",
+       "url": "/va/candidate/sam-soghor?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Tim Griffin",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 67573.02,
+       "expenditures": 0.0,
+       "status": "$64,647.78",
+       "url": "/va/candidate/tim-griffin?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "Virginia House of Delegates District 54",
+   "url": "/va/race/virginia-house-of-delegates-district-54-65462",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 217629.0,
+   "totalExpenditures": 189939.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Katrina Callsen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 217628.97,
+       "expenditures": 0.0,
+       "status": "$189,938.84",
+       "url": "/va/candidate/katrina-callsen?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Katrina Callsen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 217628.97,
+       "expenditures": 0.0,
+       "status": "$189,938.84",
+       "url": "/va/candidate/katrina-callsen?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "Virginia House of Delegates District 55",
+   "url": "/va/race/virginia-house-of-delegates-district-55-65463",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 190776.0,
+   "totalExpenditures": 153155.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Amy Laufer",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 190776.18,
+       "expenditures": 0.0,
+       "status": "$153,155.21",
+       "url": "/va/candidate/amy-laufer?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Amy Laufer",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 190776.18,
+       "expenditures": 0.0,
+       "status": "$153,155.21",
+       "url": "/va/candidate/amy-laufer?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "Virginia House of Delegates District 56",
+   "url": "/va/race/virginia-house-of-delegates-district-56-65464",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 173901.0,
+   "totalExpenditures": 169090.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Tom Garrett",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 121295.84,
+       "expenditures": 0.0,
+       "status": "$124,187.47",
+       "url": "/va/candidate/tom-garrett?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Angela Chainer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 52605.45,
+       "expenditures": 0.0,
+       "status": "$44,902.38",
+       "url": "/va/candidate/angela-chainer?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Angela Chainer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 52605.45,
+       "expenditures": 0.0,
+       "status": "$44,902.38",
+       "url": "/va/candidate/angela-chainer?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Tom Garrett",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 121295.84,
+       "expenditures": 0.0,
+       "status": "$124,187.47",
+       "url": "/va/candidate/tom-garrett?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "Virginia House of Delegates District 57",
+   "url": "/va/race/virginia-house-of-delegates-district-57-65465",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 4000719.0,
+   "totalExpenditures": 3272031.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "May Nivar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2611596.56,
+       "expenditures": 0.0,
+       "status": "$2,090,943.10",
+       "url": "/va/candidate/may-nivar?cycle=2025-election-cycle"
+      },
+      {
+       "name": "David Owen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1372171.84,
+       "expenditures": 75000.0,
+       "status": "$1,164,969.80",
+       "url": "/va/candidate/david-owen?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "May Nivar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2611596.56,
+       "expenditures": 0.0,
+       "status": "$2,090,943.10",
+       "url": "/va/candidate/may-nivar?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Andrew Schear",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16951.0,
+       "expenditures": 1000.0,
+       "status": "$16,118.49",
+       "url": "/va/candidate/andrew-schear?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "David Owen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1372171.84,
+       "expenditures": 75000.0,
+       "status": "$1,164,969.80",
+       "url": "/va/candidate/david-owen?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "Virginia House of Delegates District 58",
+   "url": "/va/race/virginia-house-of-delegates-district-58-65466",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 582825.0,
+   "totalExpenditures": 469776.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Rodney Willett",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 552398.41,
+       "expenditures": 0.0,
+       "status": "$440,807.28",
+       "url": "/va/candidate/rodney-willett?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Milad Mikhail",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 30426.63,
+       "expenditures": 0.0,
+       "status": "$28,969.18",
+       "url": "/va/candidate/milad-mikhail?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Rodney Willett",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 552398.41,
+       "expenditures": 0.0,
+       "status": "$440,807.28",
+       "url": "/va/candidate/rodney-willett?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Milad Mikhail",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 30426.63,
+       "expenditures": 0.0,
+       "status": "$28,969.18",
+       "url": "/va/candidate/milad-mikhail?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "Virginia House of Delegates District 59",
+   "url": "/va/race/virginia-house-of-delegates-district-59-65467",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 243327.0,
+   "totalExpenditures": 173970.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Hyland Franklin Buddy Fowler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 195603.46,
+       "expenditures": 0.0,
+       "status": "$134,364.23",
+       "url": "/va/candidate/buddy-fowler?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Scott Konopasek",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47723.99,
+       "expenditures": 3500.0,
+       "status": "$39,605.39",
+       "url": "/va/candidate/scott-konopasek?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Scott Konopasek",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47723.99,
+       "expenditures": 3500.0,
+       "status": "$39,605.39",
+       "url": "/va/candidate/scott-konopasek?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Stan Scott",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/va/candidate/stan-scott?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Hyland Franklin Buddy Fowler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 195603.46,
+       "expenditures": 0.0,
+       "status": "$134,364.23",
+       "url": "/va/candidate/buddy-fowler?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "Virginia House of Delegates District 6",
+   "url": "/va/race/virginia-house-of-delegates-district-6-65414",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 402964.0,
+   "totalExpenditures": 401648.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "R.C. Sullivan, Jr.",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 386919.93,
+       "expenditures": 0.0,
+       "status": "$337,127.24",
+       "url": "/va/candidate/rc-sullivan-jr?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Kristin Lee Hoffman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16044.04,
+       "expenditures": 48634.05,
+       "status": "$64,520.97",
+       "url": "/va/candidate/kristin-lee-hoffman?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "R.C. Sullivan, Jr.",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 386919.93,
+       "expenditures": 0.0,
+       "status": "$337,127.24",
+       "url": "/va/candidate/rc-sullivan-jr?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Kristin Lee Hoffman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16044.04,
+       "expenditures": 48634.05,
+       "status": "$64,520.97",
+       "url": "/va/candidate/kristin-lee-hoffman?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "Virginia House of Delegates District 60",
+   "url": "/va/race/virginia-house-of-delegates-district-60-65468",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 519391.0,
+   "totalExpenditures": 454178.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Scott Wyatt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 506228.85,
+       "expenditures": 0.0,
+       "status": "$447,289.46",
+       "url": "/va/candidate/scott-wyatt?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Andrew Ward",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13161.81,
+       "expenditures": 0.0,
+       "status": "$6,493.08",
+       "url": "/va/candidate/andrew-ward?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Andrew Ward",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13161.81,
+       "expenditures": 0.0,
+       "status": "$6,493.08",
+       "url": "/va/candidate/andrew-ward?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Keith Braxton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$395.26",
+       "url": "/va/candidate/keith-braxton?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Scott Wyatt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 506228.85,
+       "expenditures": 0.0,
+       "status": "$447,289.46",
+       "url": "/va/candidate/scott-wyatt?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "Virginia House of Delegates District 61",
+   "url": "/va/race/virginia-house-of-delegates-district-61-65469",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 652656.0,
+   "totalExpenditures": 577990.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Michael Webert",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 604284.47,
+       "expenditures": 0.0,
+       "status": "$549,216.86",
+       "url": "/va/candidate/michael-webert?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Jacob Bennington",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48372.0,
+       "expenditures": 0.0,
+       "status": "$28,773.02",
+       "url": "/va/candidate/jacob-bennington?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Jacob Bennington",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48372.0,
+       "expenditures": 0.0,
+       "status": "$28,773.02",
+       "url": "/va/candidate/jacob-bennington?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Barbara Moseley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/va/candidate/barbara-moseley?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Michael Webert",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 604284.47,
+       "expenditures": 0.0,
+       "status": "$549,216.86",
+       "url": "/va/candidate/michael-webert?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "Virginia House of Delegates District 62",
+   "url": "/va/race/virginia-house-of-delegates-district-62-65470",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 235199.0,
+   "totalExpenditures": 218526.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Karen Hamilton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 62773.35,
+       "expenditures": 1008.0,
+       "status": "$53,704.86",
+       "url": "/va/candidate/karen-hamilton?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Sara Ratcliffe",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 128281.11,
+       "expenditures": 0.0,
+       "status": "$117,297.48",
+       "url": "/va/candidate/sara-ratcliffe?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Sara Ratcliffe",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 128281.11,
+       "expenditures": 0.0,
+       "status": "$117,297.48",
+       "url": "/va/candidate/sara-ratcliffe?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Karen Hamilton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 62773.35,
+       "expenditures": 1008.0,
+       "status": "$53,704.86",
+       "url": "/va/candidate/karen-hamilton?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Nick Freitas",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 44144.74,
+       "expenditures": 0.0,
+       "status": "$47,523.38",
+       "url": "/va/candidate/nick-freitas?cycle=2025-election-cycle"
+      },
+      {
+       "name": "R Clay Jackson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/va/candidate/r-clay-jackson?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "Virginia House of Delegates District 63",
+   "url": "/va/race/virginia-house-of-delegates-district-63-65471",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 188584.0,
+   "totalExpenditures": 116371.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Phillip Scott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 103213.54,
+       "expenditures": 850.0,
+       "status": "$78,857.53",
+       "url": "/va/candidate/phillip-scott?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Forrest Miller",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 85370.31,
+       "expenditures": 0.0,
+       "status": "$37,513.78",
+       "url": "/va/candidate/forrest-miller?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Forrest Miller",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 85370.31,
+       "expenditures": 0.0,
+       "status": "$37,513.78",
+       "url": "/va/candidate/forrest-miller?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Kalin Springman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/va/candidate/kalin-springman?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Phillip Scott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 103213.54,
+       "expenditures": 850.0,
+       "status": "$78,857.53",
+       "url": "/va/candidate/phillip-scott?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "63"
+  },
+  {
+   "office": "Virginia House of Delegates District 64",
+   "url": "/va/race/virginia-house-of-delegates-district-64-65472",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 3413633.0,
+   "totalExpenditures": 2712023.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Stacey Carroll",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2772849.85,
+       "expenditures": 0.0,
+       "status": "$2,268,266.04",
+       "url": "/va/candidate/stacey-carroll?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Paul Milde",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 640783.22,
+       "expenditures": 20120.96,
+       "status": "$443,756.46",
+       "url": "/va/candidate/paul-milde?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Stacey Carroll",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2772849.85,
+       "expenditures": 0.0,
+       "status": "$2,268,266.04",
+       "url": "/va/candidate/stacey-carroll?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Paul Milde",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 640783.22,
+       "expenditures": 20120.96,
+       "status": "$443,756.46",
+       "url": "/va/candidate/paul-milde?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "64"
+  },
+  {
+   "office": "Virginia House of Delegates District 65",
+   "url": "/va/race/virginia-house-of-delegates-district-65-65473",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 1723987.0,
+   "totalExpenditures": 1266285.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Joshua Cole",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1347614.85,
+       "expenditures": 0.0,
+       "status": "$954,191.29",
+       "url": "/va/candidate/joshua-cole?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Sean Steinway",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 371023.26,
+       "expenditures": 0.0,
+       "status": "$309,053.62",
+       "url": "/va/candidate/sean-steinway?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Joshua Cole",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1347614.85,
+       "expenditures": 0.0,
+       "status": "$954,191.29",
+       "url": "/va/candidate/joshua-cole?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Sean Steinway",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 371023.26,
+       "expenditures": 0.0,
+       "status": "$309,053.62",
+       "url": "/va/candidate/sean-steinway?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Chapman Lawrence Good",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5348.48,
+       "expenditures": 0.0,
+       "status": "$3,040.00",
+       "url": "/va/candidate/chapman-lawrence-good?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "65"
+  },
+  {
+   "office": "Virginia House of Delegates District 66",
+   "url": "/va/race/virginia-house-of-delegates-district-66-65474",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 534524.0,
+   "totalExpenditures": 507510.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Nicole Cole",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 140.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/va/candidate/nicole-cole-1?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Bobby Orrock",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 534383.9,
+       "expenditures": 10000.0,
+       "status": "$507,509.65",
+       "url": "/va/candidate/bobby-orrock?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Nicole Cole",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 140.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/va/candidate/nicole-cole-1?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Bobby Orrock",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 534383.9,
+       "expenditures": 10000.0,
+       "status": "$507,509.65",
+       "url": "/va/candidate/bobby-orrock?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "66"
+  },
+  {
+   "office": "Virginia House of Delegates District 67",
+   "url": "/va/race/virginia-house-of-delegates-district-67-65475",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 288272.0,
+   "totalExpenditures": 275712.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Hillary Pugh Kent",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 272741.34,
+       "expenditures": 0.0,
+       "status": "$260,037.33",
+       "url": "/va/candidate/hillary-pugh-kent?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Mario D Haggerty",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15530.38,
+       "expenditures": 988.0,
+       "status": "$15,018.80",
+       "url": "/va/candidate/mario-d-haggerty?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Richard Kenski",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$655.93",
+       "url": "/va/candidate/richard-kenski?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Mario D Haggerty",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15530.38,
+       "expenditures": 988.0,
+       "status": "$15,018.80",
+       "url": "/va/candidate/mario-d-haggerty?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Hillary Pugh Kent",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 272741.34,
+       "expenditures": 0.0,
+       "status": "$260,037.33",
+       "url": "/va/candidate/hillary-pugh-kent?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "67"
+  },
+  {
+   "office": "Virginia House of Delegates District 68",
+   "url": "/va/race/virginia-house-of-delegates-district-68-65476",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 153423.0,
+   "totalExpenditures": 137312.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Keith Hodges",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 120971.33,
+       "expenditures": 0.0,
+       "status": "$110,499.33",
+       "url": "/va/candidate/keith-hodges?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Elaine Walters",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 32451.4,
+       "expenditures": 2414.63,
+       "status": "$26,812.81",
+       "url": "/va/candidate/elaine-walters?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Elaine Walters",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 32451.4,
+       "expenditures": 2414.63,
+       "status": "$26,812.81",
+       "url": "/va/candidate/elaine-walters?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Keith Hodges",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 120971.33,
+       "expenditures": 0.0,
+       "status": "$110,499.33",
+       "url": "/va/candidate/keith-hodges?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "68"
+  },
+  {
+   "office": "Virginia House of Delegates District 69",
+   "url": "/va/race/virginia-house-of-delegates-district-69-65477",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 2938311.0,
+   "totalExpenditures": 2324093.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Mark Downey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2017789.64,
+       "expenditures": 0.0,
+       "status": "$1,610,341.03",
+       "url": "/va/candidate/mark-downey?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Chad Green",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 915710.36,
+       "expenditures": 0.0,
+       "status": "$709,636.49",
+       "url": "/va/candidate/chad-green?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Valerie D Beverley",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 4811.27,
+       "expenditures": 0.0,
+       "status": "$4,115.76",
+       "url": "/va/candidate/valerie-d-beverley?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Mark Downey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2017789.64,
+       "expenditures": 0.0,
+       "status": "$1,610,341.03",
+       "url": "/va/candidate/mark-downey?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Chad Green",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 915710.36,
+       "expenditures": 0.0,
+       "status": "$709,636.49",
+       "url": "/va/candidate/chad-green?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "69"
+  },
+  {
+   "office": "Virginia House of Delegates District 7",
+   "url": "/va/race/virginia-house-of-delegates-district-7-65415",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 188714.0,
+   "totalExpenditures": 154079.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Karen Keys-Gamarra",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 149086.9,
+       "expenditures": 0.0,
+       "status": "$109,018.87",
+       "url": "/va/candidate/karen-keys-gamarra?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Cassandra Rich Aucoin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 39627.34,
+       "expenditures": 11294.25,
+       "status": "$45,059.96",
+       "url": "/va/candidate/cassandra-rich-aucoin?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Karen Keys-Gamarra",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 149086.9,
+       "expenditures": 0.0,
+       "status": "$109,018.87",
+       "url": "/va/candidate/karen-keys-gamarra?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Cassandra Rich Aucoin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 39627.34,
+       "expenditures": 11294.25,
+       "status": "$45,059.96",
+       "url": "/va/candidate/cassandra-rich-aucoin?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "Virginia House of Delegates District 70",
+   "url": "/va/race/virginia-house-of-delegates-district-70-65478",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 253073.0,
+   "totalExpenditures": 224209.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Shelly Simonds",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 228597.03,
+       "expenditures": 913.56,
+       "status": "$199,866.52",
+       "url": "/va/candidate/shelly-simonds?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Cynthia Scaturico",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17007.49,
+       "expenditures": 1020.0,
+       "status": "$16,987.92",
+       "url": "/va/candidate/cynthia-scaturico?cycle=2025-election-cycle"
+      },
+      {
+       "name": "John Bloom",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/va/candidate/john-bloom?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Shelly Simonds",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 228597.03,
+       "expenditures": 913.56,
+       "status": "$199,866.52",
+       "url": "/va/candidate/shelly-simonds?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Cynthia Scaturico",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17007.49,
+       "expenditures": 1020.0,
+       "status": "$16,987.92",
+       "url": "/va/candidate/cynthia-scaturico?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Hailey Dollar",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7468.61,
+       "expenditures": 0.0,
+       "status": "$7,354.63",
+       "url": "/va/candidate/hailey-dollar?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "70"
+  },
+  {
+   "office": "Virginia House of Delegates District 71",
+   "url": "/va/race/virginia-house-of-delegates-district-71-65479",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 4565683.0,
+   "totalExpenditures": 3954960.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Jessica Anderson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3213106.1,
+       "expenditures": 0.0,
+       "status": "$2,601,840.89",
+       "url": "/va/candidate/jessica-anderson?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Amanda Batten",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1352576.84,
+       "expenditures": 0.0,
+       "status": "$1,353,118.87",
+       "url": "/va/candidate/amanda-batten?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Jessica Anderson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3213106.1,
+       "expenditures": 0.0,
+       "status": "$2,601,840.89",
+       "url": "/va/candidate/jessica-anderson?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Amanda Batten",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1352576.84,
+       "expenditures": 0.0,
+       "status": "$1,353,118.87",
+       "url": "/va/candidate/amanda-batten?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "71"
+  },
+  {
+   "office": "Virginia House of Delegates District 72",
+   "url": "/va/race/virginia-house-of-delegates-district-72-65480",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 286389.0,
+   "totalExpenditures": 284348.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Lee Ware",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 155980.98,
+       "expenditures": 0.0,
+       "status": "$189,006.27",
+       "url": "/va/candidate/lee-ware?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Randolph Todd Critzer Jr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 121850.43,
+       "expenditures": 0.0,
+       "status": "$87,348.07",
+       "url": "/va/candidate/randolph-todd-critzer-jr?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Kristin Farry",
+       "party": "Forward",
+       "incumbent": false,
+       "contributions": 3245.72,
+       "expenditures": 500.0,
+       "status": "$3,603.29",
+       "url": "/va/candidate/kristin-farry?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Randolph Todd Critzer Jr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 121850.43,
+       "expenditures": 0.0,
+       "status": "$87,348.07",
+       "url": "/va/candidate/randolph-todd-critzer-jr?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Bilal Z Raychouni",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5311.52,
+       "expenditures": 0.0,
+       "status": "$4,390.35",
+       "url": "/va/candidate/bilal-z-raychouni?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Lee Ware",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 155980.98,
+       "expenditures": 0.0,
+       "status": "$189,006.27",
+       "url": "/va/candidate/lee-ware?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "72"
+  },
+  {
+   "office": "Virginia House of Delegates District 73",
+   "url": "/va/race/virginia-house-of-delegates-district-73-65481",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 3808903.0,
+   "totalExpenditures": 3060981.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Leslie Mehta",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2822353.14,
+       "expenditures": 0.0,
+       "status": "$2,223,385.95",
+       "url": "/va/candidate/leslie-mehta?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Mark Earley Jr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 964772.8,
+       "expenditures": 0.0,
+       "status": "$816,274.14",
+       "url": "/va/candidate/mark-earley-jr?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Leslie Mehta",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2822353.14,
+       "expenditures": 0.0,
+       "status": "$2,223,385.95",
+       "url": "/va/candidate/leslie-mehta?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Justin Woodford",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 21777.0,
+       "expenditures": 0.0,
+       "status": "$21,321.08",
+       "url": "/va/candidate/justin-woodford?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Mark Earley Jr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 964772.8,
+       "expenditures": 0.0,
+       "status": "$816,274.14",
+       "url": "/va/candidate/mark-earley-jr?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "73"
+  },
+  {
+   "office": "Virginia House of Delegates District 74",
+   "url": "/va/race/virginia-house-of-delegates-district-74-65482",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 290451.0,
+   "totalExpenditures": 265426.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Mike Cherry",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 225322.29,
+       "expenditures": 0.0,
+       "status": "$216,361.45",
+       "url": "/va/candidate/mike-cherry?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Jonas Eppert",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 65129.04,
+       "expenditures": 0.0,
+       "status": "$49,064.38",
+       "url": "/va/candidate/jonas-eppert?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Jonas Eppert",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 65129.04,
+       "expenditures": 0.0,
+       "status": "$49,064.38",
+       "url": "/va/candidate/jonas-eppert?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Mike Cherry",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 225322.29,
+       "expenditures": 0.0,
+       "status": "$216,361.45",
+       "url": "/va/candidate/mike-cherry?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "74"
+  },
+  {
+   "office": "Virginia House of Delegates District 75",
+   "url": "/va/race/virginia-house-of-delegates-district-75-65483",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 5875143.0,
+   "totalExpenditures": 5174238.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Lindsey Dougherty",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3570069.97,
+       "expenditures": 0.0,
+       "status": "$2,920,092.32",
+       "url": "/va/candidate/lindsey-dougherty?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Carrie Coyner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2209024.88,
+       "expenditures": 50000.0,
+       "status": "$1,823,834.10",
+       "url": "/va/candidate/carrie-coyner?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Lindsey Dougherty",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3570069.97,
+       "expenditures": 0.0,
+       "status": "$2,920,092.32",
+       "url": "/va/candidate/lindsey-dougherty?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Stephen Miller-Pitts Jr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9065.0,
+       "expenditures": 0.0,
+       "status": "$6,978.36",
+       "url": "/va/candidate/stephen-miller-pitts-jr?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Dustin Wade",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 86983.39,
+       "expenditures": 358550.0,
+       "status": "$423,333.39",
+       "url": "/va/candidate/dustin-wade?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Carrie Coyner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2209024.88,
+       "expenditures": 50000.0,
+       "status": "$1,823,834.10",
+       "url": "/va/candidate/carrie-coyner?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "75"
+  },
+  {
+   "office": "Virginia House of Delegates District 76",
+   "url": "/va/race/virginia-house-of-delegates-district-76-65484",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 514996.0,
+   "totalExpenditures": 351497.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Debra Gardner",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 468876.04,
+       "expenditures": 0.0,
+       "status": "$328,898.51",
+       "url": "/va/candidate/debra-gardner?cycle=2025-election-cycle"
+      },
+      {
+       "name": "John Thomas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46119.62,
+       "expenditures": 0.0,
+       "status": "$22,598.14",
+       "url": "/va/candidate/john-thomas?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Debra Gardner",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 468876.04,
+       "expenditures": 0.0,
+       "status": "$328,898.51",
+       "url": "/va/candidate/debra-gardner?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "John Thomas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46119.62,
+       "expenditures": 0.0,
+       "status": "$22,598.14",
+       "url": "/va/candidate/john-thomas?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "76"
+  },
+  {
+   "office": "Virginia House of Delegates District 77",
+   "url": "/va/race/virginia-house-of-delegates-district-77-65485",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 866803.0,
+   "totalExpenditures": 737664.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Michael Jones",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 853446.15,
+       "expenditures": 0.0,
+       "status": "$727,723.76",
+       "url": "/va/candidate/michael-jones?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Richard Stonage",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13356.73,
+       "expenditures": 198.09,
+       "status": "$9,940.66",
+       "url": "/va/candidate/richard-stonage?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Michael Jones",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 853446.15,
+       "expenditures": 0.0,
+       "status": "$727,723.76",
+       "url": "/va/candidate/michael-jones?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Richard Stonage",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13356.73,
+       "expenditures": 198.09,
+       "status": "$9,940.66",
+       "url": "/va/candidate/richard-stonage?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "77"
+  },
+  {
+   "office": "Virginia House of Delegates District 78",
+   "url": "/va/race/virginia-house-of-delegates-district-78-65486",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 363801.0,
+   "totalExpenditures": 376071.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Betsy Carr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 358890.0,
+       "expenditures": 0.0,
+       "status": "$370,956.42",
+       "url": "/va/candidate/betsy-carr?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Rich Prado",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4911.01,
+       "expenditures": 1074.88,
+       "status": "$5,115.00",
+       "url": "/va/candidate/rich-prado?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Betsy Carr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 358890.0,
+       "expenditures": 0.0,
+       "status": "$370,956.42",
+       "url": "/va/candidate/betsy-carr?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Rich Prado",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4911.01,
+       "expenditures": 1074.88,
+       "status": "$5,115.00",
+       "url": "/va/candidate/rich-prado?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "78"
+  },
+  {
+   "office": "Virginia House of Delegates District 79",
+   "url": "/va/race/virginia-house-of-delegates-district-79-65487",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 213248.0,
+   "totalExpenditures": 184234.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Rae C Cousins",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 211377.25,
+       "expenditures": 0.0,
+       "status": "$181,169.95",
+       "url": "/va/candidate/rae-c-cousins?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Kelsey Linnehan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1871.15,
+       "expenditures": 1192.82,
+       "status": "$3,063.97",
+       "url": "/va/candidate/kelsey-linnehan?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Rae C Cousins",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 211377.25,
+       "expenditures": 0.0,
+       "status": "$181,169.95",
+       "url": "/va/candidate/rae-c-cousins?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Kelsey Linnehan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1871.15,
+       "expenditures": 1192.82,
+       "status": "$3,063.97",
+       "url": "/va/candidate/kelsey-linnehan?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "79"
+  },
+  {
+   "office": "Virginia House of Delegates District 8",
+   "url": "/va/race/virginia-house-of-delegates-district-8-65416",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 253203.0,
+   "totalExpenditures": 236629.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Irene Shin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 245642.32,
+       "expenditures": 0.0,
+       "status": "$229,217.98",
+       "url": "/va/candidate/irene-shin?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Indira Satikova Massey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7411.0,
+       "expenditures": 0.0,
+       "status": "$7,411.00",
+       "url": "/va/candidate/indira-satikova-massey?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Irene Shin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 245642.32,
+       "expenditures": 0.0,
+       "status": "$229,217.98",
+       "url": "/va/candidate/irene-shin?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Indira Satikova Massey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7411.0,
+       "expenditures": 0.0,
+       "status": "$7,411.00",
+       "url": "/va/candidate/indira-satikova-massey?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Maxwell Fisher",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 150.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/va/candidate/maxwell-fisher?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "Virginia House of Delegates District 80",
+   "url": "/va/race/virginia-house-of-delegates-district-80-65488",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 341874.0,
+   "totalExpenditures": 195385.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Destiny Bolling",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 341873.96,
+       "expenditures": 0.0,
+       "status": "$195,385.32",
+       "url": "/va/candidate/destiny-bolling?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Destiny Bolling",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 341873.96,
+       "expenditures": 0.0,
+       "status": "$195,385.32",
+       "url": "/va/candidate/destiny-bolling?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "80"
+  },
+  {
+   "office": "Virginia House of Delegates District 81",
+   "url": "/va/race/virginia-house-of-delegates-district-81-65489",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 231620.0,
+   "totalExpenditures": 204923.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Delores McQuinn",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 228319.23,
+       "expenditures": 0.0,
+       "status": "$200,934.28",
+       "url": "/va/candidate/delores-mcquinn?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Delores McQuinn",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 228319.23,
+       "expenditures": 0.0,
+       "status": "$200,934.28",
+       "url": "/va/candidate/delores-mcquinn?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Alicia Atkins",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3300.77,
+       "expenditures": 0.0,
+       "status": "$3,988.61",
+       "url": "/va/candidate/alicia-atkins?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "81"
+  },
+  {
+   "office": "Virginia House of Delegates District 82",
+   "url": "/va/race/virginia-house-of-delegates-district-82-65490",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 5880398.0,
+   "totalExpenditures": 4467196.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Kim Adams",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4031129.92,
+       "expenditures": 0.0,
+       "status": "$2,932,603.44",
+       "url": "/va/candidate/kim-adams?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Kim Taylor",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1849268.43,
+       "expenditures": 0.0,
+       "status": "$1,534,592.62",
+       "url": "/va/candidate/kim-taylor?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Kim Adams",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4031129.92,
+       "expenditures": 0.0,
+       "status": "$2,932,603.44",
+       "url": "/va/candidate/kim-adams?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Kim Taylor",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1849268.43,
+       "expenditures": 0.0,
+       "status": "$1,534,592.62",
+       "url": "/va/candidate/kim-taylor?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "82"
+  },
+  {
+   "office": "Virginia House of Delegates District 83",
+   "url": "/va/race/virginia-house-of-delegates-district-83-65491",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 238375.0,
+   "totalExpenditures": 182827.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "H Otto Wachsmann Jr.",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 155227.61,
+       "expenditures": 0.0,
+       "status": "$124,278.75",
+       "url": "/va/candidate/h-otto-wachsmann-jr?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Mary Person",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 83147.49,
+       "expenditures": 0.0,
+       "status": "$58,548.61",
+       "url": "/va/candidate/mary-person?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Mary Person",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 83147.49,
+       "expenditures": 0.0,
+       "status": "$58,548.61",
+       "url": "/va/candidate/mary-person?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "H Otto Wachsmann Jr.",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 155227.61,
+       "expenditures": 0.0,
+       "status": "$124,278.75",
+       "url": "/va/candidate/h-otto-wachsmann-jr?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "83"
+  },
+  {
+   "office": "Virginia House of Delegates District 84",
+   "url": "/va/race/virginia-house-of-delegates-district-84-65492",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 1357505.0,
+   "totalExpenditures": 947500.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Nadarius Clark",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1140101.35,
+       "expenditures": 0.0,
+       "status": "$771,625.36",
+       "url": "/va/candidate/nadarius-clark?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Felisha Rose Leffler Storm",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 217403.89,
+       "expenditures": 0.0,
+       "status": "$175,874.49",
+       "url": "/va/candidate/felisha-rose-leffler-storm?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Nadarius Clark",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1140101.35,
+       "expenditures": 0.0,
+       "status": "$771,625.36",
+       "url": "/va/candidate/nadarius-clark?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Felisha Rose Leffler Storm",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 217403.89,
+       "expenditures": 0.0,
+       "status": "$175,874.49",
+       "url": "/va/candidate/felisha-rose-leffler-storm?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "84"
+  },
+  {
+   "office": "Virginia House of Delegates District 85",
+   "url": "/va/race/virginia-house-of-delegates-district-85-65493",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 288695.0,
+   "totalExpenditures": 274306.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Marcia Price",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 288695.13,
+       "expenditures": 0.0,
+       "status": "$274,305.96",
+       "url": "/va/candidate/marcia-price?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Marcia Price",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 288695.13,
+       "expenditures": 0.0,
+       "status": "$274,305.96",
+       "url": "/va/candidate/marcia-price?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "85"
+  },
+  {
+   "office": "Virginia House of Delegates District 86",
+   "url": "/va/race/virginia-house-of-delegates-district-86-65494",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 3527338.0,
+   "totalExpenditures": 2826205.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Virgil Thornton Sr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2803217.78,
+       "expenditures": 0.0,
+       "status": "$2,180,810.46",
+       "url": "/va/candidate/virgil-thornton-sr?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Aijalon Cordoza",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 724120.4,
+       "expenditures": 1689.57,
+       "status": "$645,394.75",
+       "url": "/va/candidate/aijalon-cordoza?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Virgil Thornton Sr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2803217.78,
+       "expenditures": 0.0,
+       "status": "$2,180,810.46",
+       "url": "/va/candidate/virgil-thornton-sr?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Aijalon Cordoza",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 724120.4,
+       "expenditures": 1689.57,
+       "status": "$645,394.75",
+       "url": "/va/candidate/aijalon-cordoza?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "86"
+  },
+  {
+   "office": "Virginia House of Delegates District 87",
+   "url": "/va/race/virginia-house-of-delegates-district-87-65495",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 684694.0,
+   "totalExpenditures": 566889.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Jeion Ward",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 683888.69,
+       "expenditures": 0.0,
+       "status": "$565,995.19",
+       "url": "/va/candidate/jeion-ward?cycle=2025-election-cycle"
+      },
+      {
+       "name": "John Chapman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 805.0,
+       "expenditures": 0.0,
+       "status": "$893.33",
+       "url": "/va/candidate/john-chapman?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Jeion Ward",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 683888.69,
+       "expenditures": 0.0,
+       "status": "$565,995.19",
+       "url": "/va/candidate/jeion-ward?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "John Chapman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 805.0,
+       "expenditures": 0.0,
+       "status": "$893.33",
+       "url": "/va/candidate/john-chapman?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "87"
+  },
+  {
+   "office": "Virginia House of Delegates District 88",
+   "url": "/va/race/virginia-house-of-delegates-district-88-65496",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 6946543.0,
+   "totalExpenditures": 6702993.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Don Scott",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 6946543.39,
+       "expenditures": 0.0,
+       "status": "$6,702,993.05",
+       "url": "/va/candidate/don-scott?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Don Scott",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 6946543.39,
+       "expenditures": 0.0,
+       "status": "$6,702,993.05",
+       "url": "/va/candidate/don-scott?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "88"
+  },
+  {
+   "office": "Virginia House of Delegates District 89",
+   "url": "/va/race/virginia-house-of-delegates-district-89-65497",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 4010216.0,
+   "totalExpenditures": 3222120.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Karen Robins Carnegie",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2924822.15,
+       "expenditures": 0.0,
+       "status": "$2,295,615.15",
+       "url": "/va/candidate/karen-robins-carnegie?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Mike Lamonea",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1056922.96,
+       "expenditures": 25000.0,
+       "status": "$883,534.40",
+       "url": "/va/candidate/mike-lamonea?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Karen Robins Carnegie",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2924822.15,
+       "expenditures": 0.0,
+       "status": "$2,295,615.15",
+       "url": "/va/candidate/karen-robins-carnegie?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Mike Lamonea",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1056922.96,
+       "expenditures": 25000.0,
+       "status": "$883,534.40",
+       "url": "/va/candidate/mike-lamonea?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Ned Baxter Ennis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 21002.68,
+       "expenditures": 0.0,
+       "status": "$22,513.66",
+       "url": "/va/candidate/ned-baxter-ennis?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Kristen Shannon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7468.08,
+       "expenditures": 18864.68,
+       "status": "$20,457.02",
+       "url": "/va/candidate/kristen-shannon?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "89"
+  },
+  {
+   "office": "Virginia House of Delegates District 9",
+   "url": "/va/race/virginia-house-of-delegates-district-9-65417",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 374901.0,
+   "totalExpenditures": 313700.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Karrie Delaney",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 369161.88,
+       "expenditures": 0.0,
+       "status": "$307,241.44",
+       "url": "/va/candidate/karrie-delaney?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Nhan Cong Huynh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5738.76,
+       "expenditures": 161.09,
+       "status": "$6,458.12",
+       "url": "/va/candidate/nhan-cong-huynh?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Karrie Delaney",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 369161.88,
+       "expenditures": 0.0,
+       "status": "$307,241.44",
+       "url": "/va/candidate/karrie-delaney?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Nhan Cong Huynh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5738.76,
+       "expenditures": 161.09,
+       "status": "$6,458.12",
+       "url": "/va/candidate/nhan-cong-huynh?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "Virginia House of Delegates District 90",
+   "url": "/va/race/virginia-house-of-delegates-district-90-65498",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 454227.0,
+   "totalExpenditures": 447089.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Jay Leftwich",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 437674.82,
+       "expenditures": 0.0,
+       "status": "$442,249.77",
+       "url": "/va/candidate/jay-leftwich?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Rodney Nickens",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16464.08,
+       "expenditures": 0.0,
+       "status": "$4,687.99",
+       "url": "/va/candidate/rodney-nickens?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Rodney Nickens",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16464.08,
+       "expenditures": 0.0,
+       "status": "$4,687.99",
+       "url": "/va/candidate/rodney-nickens?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Jeremy Rodden",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 88.0,
+       "expenditures": 0.0,
+       "status": "$151.73",
+       "url": "/va/candidate/jeremy-rodden-1?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Jay Leftwich",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 437674.82,
+       "expenditures": 0.0,
+       "status": "$442,249.77",
+       "url": "/va/candidate/jay-leftwich?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "90"
+  },
+  {
+   "office": "Virginia House of Delegates District 91",
+   "url": "/va/race/virginia-house-of-delegates-district-91-65499",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 421785.0,
+   "totalExpenditures": 375324.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Cliff Hayes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 421784.73,
+       "expenditures": 0.0,
+       "status": "$375,324.05",
+       "url": "/va/candidate/cliff-hayes?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Cliff Hayes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 421784.73,
+       "expenditures": 0.0,
+       "status": "$375,324.05",
+       "url": "/va/candidate/cliff-hayes?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "91"
+  },
+  {
+   "office": "Virginia House of Delegates District 92",
+   "url": "/va/race/virginia-house-of-delegates-district-92-65500",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 134931.0,
+   "totalExpenditures": 134470.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Bonita Anthony",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 134931.36,
+       "expenditures": 0.0,
+       "status": "$134,470.08",
+       "url": "/va/candidate/bonita-anthony?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Bonita Anthony",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 134931.36,
+       "expenditures": 0.0,
+       "status": "$134,470.08",
+       "url": "/va/candidate/bonita-anthony?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "92"
+  },
+  {
+   "office": "Virginia House of Delegates District 93",
+   "url": "/va/race/virginia-house-of-delegates-district-93-65501",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 133184.0,
+   "totalExpenditures": 123493.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Jackie Glass",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 133183.62,
+       "expenditures": 0.0,
+       "status": "$123,492.72",
+       "url": "/va/candidate/jackie-glass?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Jackie Glass",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 133183.62,
+       "expenditures": 0.0,
+       "status": "$123,492.72",
+       "url": "/va/candidate/jackie-glass?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "93"
+  },
+  {
+   "office": "Virginia House of Delegates District 94",
+   "url": "/va/race/virginia-house-of-delegates-district-94-65502",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 395320.0,
+   "totalExpenditures": 267479.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Phil Hernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 375243.39,
+       "expenditures": 0.0,
+       "status": "$245,423.37",
+       "url": "/va/candidate/phil-hernandez?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Andy Pittman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20076.64,
+       "expenditures": 0.0,
+       "status": "$22,055.72",
+       "url": "/va/candidate/andy-pittman?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Phil Hernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 375243.39,
+       "expenditures": 0.0,
+       "status": "$245,423.37",
+       "url": "/va/candidate/phil-hernandez?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Andy Pittman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20076.64,
+       "expenditures": 0.0,
+       "status": "$22,055.72",
+       "url": "/va/candidate/andy-pittman?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "94"
+  },
+  {
+   "office": "Virginia House of Delegates District 95",
+   "url": "/va/race/virginia-house-of-delegates-district-95-65503",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 183634.0,
+   "totalExpenditures": 142318.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Alex Askew",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 183634.47,
+       "expenditures": 0.0,
+       "status": "$142,318.24",
+       "url": "/va/candidate/alex-askew?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Alex Askew",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 183634.47,
+       "expenditures": 0.0,
+       "status": "$142,318.24",
+       "url": "/va/candidate/alex-askew?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "95"
+  },
+  {
+   "office": "Virginia House of Delegates District 96",
+   "url": "/va/race/virginia-house-of-delegates-district-96-65504",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 389900.0,
+   "totalExpenditures": 327672.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Kelly Convirs-Fowler",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 218079.94,
+       "expenditures": 0.0,
+       "status": "$141,574.63",
+       "url": "/va/candidate/kelly-convirs-fowler?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Kyle J Pasquarella",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 166365.19,
+       "expenditures": 12110.15,
+       "status": "$177,064.90",
+       "url": "/va/candidate/kyle-j-pasquarella?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Kelly Convirs-Fowler",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 218079.94,
+       "expenditures": 0.0,
+       "status": "$141,574.63",
+       "url": "/va/candidate/kelly-convirs-fowler?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Brandon C Hutchins",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5455.0,
+       "expenditures": 0.0,
+       "status": "$9,032.47",
+       "url": "/va/candidate/brandon-c-hutchins?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Kyle J Pasquarella",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 166365.19,
+       "expenditures": 12110.15,
+       "status": "$177,064.90",
+       "url": "/va/candidate/kyle-j-pasquarella?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "96"
+  },
+  {
+   "office": "Virginia House of Delegates District 97",
+   "url": "/va/race/virginia-house-of-delegates-district-97-65505",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 3335126.0,
+   "totalExpenditures": 2764081.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Michael Feggans",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2417929.15,
+       "expenditures": 0.0,
+       "status": "$1,853,846.38",
+       "url": "/va/candidate/michael-feggans?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Tim Anderson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 913849.93,
+       "expenditures": 70000.0,
+       "status": "$906,887.19",
+       "url": "/va/candidate/tim-anderson?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Michael Feggans",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 2417929.15,
+       "expenditures": 0.0,
+       "status": "$1,853,846.38",
+       "url": "/va/candidate/michael-feggans?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Tim Anderson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 913849.93,
+       "expenditures": 70000.0,
+       "status": "$906,887.19",
+       "url": "/va/candidate/tim-anderson?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Christina M Felder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3347.25,
+       "expenditures": 0.0,
+       "status": "$3,347.25",
+       "url": "/va/candidate/christina-m-felder?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "97"
+  },
+  {
+   "office": "Virginia House of Delegates District 98",
+   "url": "/va/race/virginia-house-of-delegates-district-98-65506",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 646742.0,
+   "totalExpenditures": 746350.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Barry Knight",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 608535.36,
+       "expenditures": 0.0,
+       "status": "$713,240.32",
+       "url": "/va/candidate/barry-knight?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Cheryl Bubeck Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 38206.69,
+       "expenditures": 0.0,
+       "status": "$33,109.20",
+       "url": "/va/candidate/cheryl-bubeck-smith?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Cheryl Bubeck Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 38206.69,
+       "expenditures": 0.0,
+       "status": "$33,109.20",
+       "url": "/va/candidate/cheryl-bubeck-smith?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Barry Knight",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 608535.36,
+       "expenditures": 0.0,
+       "status": "$713,240.32",
+       "url": "/va/candidate/barry-knight?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "98"
+  },
+  {
+   "office": "Virginia House of Delegates District 99",
+   "url": "/va/race/virginia-house-of-delegates-district-99-65507",
+   "dataThrough": "12/31/2025",
+   "stage": "Results Final",
+   "totalContributions": 418113.0,
+   "totalExpenditures": 356824.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 4, 2025",
+     "candidates": [
+      {
+       "name": "Anne Ferrell Tata",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 364733.03,
+       "expenditures": 0.0,
+       "status": "$317,441.56",
+       "url": "/va/candidate/anne-ferrell-tata?cycle=2025-election-cycle"
+      },
+      {
+       "name": "Cat Porterfield",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 53379.77,
+       "expenditures": 0.0,
+       "status": "$39,382.90",
+       "url": "/va/candidate/cat-porterfield?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Cat Porterfield",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 53379.77,
+       "expenditures": 0.0,
+       "status": "$39,382.90",
+       "url": "/va/candidate/cat-porterfield?cycle=2025-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 17, 2025",
+     "candidates": [
+      {
+       "name": "Anne Ferrell Tata",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 364733.03,
+       "expenditures": 0.0,
+       "status": "$317,441.56",
+       "url": "/va/candidate/anne-ferrell-tata?cycle=2025-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "99"
+  }
+ ]
+}

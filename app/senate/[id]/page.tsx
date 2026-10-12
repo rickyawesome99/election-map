@@ -383,20 +383,6 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
         <div className="flex flex-col gap-8">
 
           <section>
-            <LedgerSectionHead label="About this Race" />
-            <AboutRaceCard
-              bare
-              title="About this Race"
-              description={race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
-              items={[
-                { label: "Incumbent", value: currentSenatorName },
-                { label: "Party", value: currentSenatorParty ? (currentSenatorParty === "D" ? "Democrat" : currentSenatorParty === "R" ? "Republican" : "Independent") : "TBD" },
-                { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
-              ]}
-            />
-          </section>
-
-          <section>
             <LedgerSectionHead label={countyProjection ? "Projected Vote" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
             {race.candidates ? (() => {
               const rows = (
@@ -411,6 +397,20 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
             })() : (
               <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</p>
             )}
+          </section>
+
+          <section>
+            <LedgerSectionHead label="About this Race" />
+            <AboutRaceCard
+              bare
+              title="About this Race"
+              description={race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
+              items={[
+                { label: "Incumbent", value: currentSenatorName },
+                { label: "Party", value: currentSenatorParty ? (currentSenatorParty === "D" ? "Democrat" : currentSenatorParty === "R" ? "Republican" : "Independent") : "TBD" },
+                { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
+              ]}
+            />
           </section>
 
           <section>

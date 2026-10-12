@@ -1,0 +1,94 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 Utah House of Representatives election",
+   "senate": "2026 Utah Senate election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "13": [
+   {
+    "name": "Karen Peterson",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "14": [
+   {
+    "name": "Karianne Lisonbee",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for Congress"
+   }
+  ],
+  "21": [
+   {
+    "name": "Sandra Hollins",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "29": [
+   {
+    "name": "Bridger Bolinder",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "34": [
+   {
+    "name": "Carol Spackman Moss",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "59": [
+   {
+    "name": "Mike Kohler",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "67": [
+   {
+    "name": "Christine Watkins",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for the Carbon County Commission"
+   }
+  ]
+ },
+ "senate": {
+  "13": [
+   {
+    "name": "Nate Blouin",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for Congress in Utah's 1st congressional district"
+   }
+  ],
+  "5": [
+   {
+    "name": "Ann Millner",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "6": [
+   {
+    "name": "Jerry Stevenson",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ]
+ }
+}

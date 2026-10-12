@@ -1,0 +1,3869 @@
+{
+ "state": "NM",
+ "cycle": 2026,
+ "fetched": "2026-10-11",
+ "dataThrough": "06/27/2026",
+ "races": [
+  {
+   "office": "New Mexico House of Representatives District 1",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-1-74376",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 39150.0,
+   "totalExpenditures": 29869.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Rodney D Montoya",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 39150.0,
+       "expenditures": 0.0,
+       "status": "$29,868.91",
+       "url": "/nm/candidate/rodney-d-montoya"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Rodney D Montoya",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 39150.0,
+       "expenditures": 0.0,
+       "status": "$29,868.91",
+       "url": "/nm/candidate/rodney-d-montoya"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "New Mexico House of Representatives District 10",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-10-74377",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 22875.0,
+   "totalExpenditures": 16094.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "G Andres Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 21975.48,
+       "expenditures": 0.0,
+       "status": "$15,916.86",
+       "url": "/nm/candidate/g-andres-romero"
+      },
+      {
+       "name": "Chris Crane",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 900.0,
+       "expenditures": 100.0,
+       "status": "$177.58",
+       "url": "/nm/candidate/chris-crane"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "G Andres Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 21975.48,
+       "expenditures": 0.0,
+       "status": "$15,916.86",
+       "url": "/nm/candidate/g-andres-romero"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Chris Crane",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 900.0,
+       "expenditures": 100.0,
+       "status": "$177.58",
+       "url": "/nm/candidate/chris-crane"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "New Mexico House of Representatives District 11",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-11-74378",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 270225.0,
+   "totalExpenditures": 237329.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Javier I Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 270225.0,
+       "expenditures": 300.0,
+       "status": "$237,329.09",
+       "url": "/nm/candidate/javier-i-martinez"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Javier I Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 270225.0,
+       "expenditures": 300.0,
+       "status": "$237,329.09",
+       "url": "/nm/candidate/javier-i-martinez"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "New Mexico House of Representatives District 12",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-12-74379",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 67833.0,
+   "totalExpenditures": 24858.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Art De La Cruz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 65332.99,
+       "expenditures": 0.0,
+       "status": "$24,847.59",
+       "url": "/nm/candidate/art-de-la-cruz"
+      },
+      {
+       "name": "Steve Tafoya",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2500.0,
+       "expenditures": 0.0,
+       "status": "$10.30",
+       "url": "/nm/candidate/steve-tafoya"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Art De La Cruz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 65332.99,
+       "expenditures": 0.0,
+       "status": "$24,847.59",
+       "url": "/nm/candidate/art-de-la-cruz"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Steve Tafoya",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2500.0,
+       "expenditures": 0.0,
+       "status": "$10.30",
+       "url": "/nm/candidate/steve-tafoya"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "New Mexico House of Representatives District 13",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-13-74380",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 57322.0,
+   "totalExpenditures": 37708.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Patricia Roybal Caballero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 49255.56,
+       "expenditures": 0.0,
+       "status": "$30,622.11",
+       "url": "/nm/candidate/patricia-roybal-caballero"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Patricia Roybal Caballero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 49255.56,
+       "expenditures": 0.0,
+       "status": "$30,622.11",
+       "url": "/nm/candidate/patricia-roybal-caballero"
+      },
+      {
+       "name": "Matthew E Archuleta",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8066.66,
+       "expenditures": 0.0,
+       "status": "$7,086.04",
+       "url": "/nm/candidate/matthew-e-archuleta"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "New Mexico House of Representatives District 14",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-14-74381",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 119603.0,
+   "totalExpenditures": 77760.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Miguel P Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 49364.23,
+       "expenditures": 0.0,
+       "status": "$26,244.03",
+       "url": "/nm/candidate/miguel-p-garcia"
+      },
+      {
+       "name": "Richard Zubia",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 800.0,
+       "expenditures": 0.0,
+       "status": "$230.93",
+       "url": "/nm/candidate/richard-zubia"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Miguel P Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 49364.23,
+       "expenditures": 0.0,
+       "status": "$26,244.03",
+       "url": "/nm/candidate/miguel-p-garcia"
+      },
+      {
+       "name": "Joseph Romero",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 69438.78,
+       "expenditures": 1050.43,
+       "status": "$51,285.10",
+       "url": "/nm/candidate/joseph-romero"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Richard Zubia",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 800.0,
+       "expenditures": 0.0,
+       "status": "$230.93",
+       "url": "/nm/candidate/richard-zubia"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "New Mexico House of Representatives District 15",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-15-74382",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 73829.0,
+   "totalExpenditures": 65757.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Day M Hochman-Vigil",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 73828.95,
+       "expenditures": 0.0,
+       "status": "$65,756.98",
+       "url": "/nm/candidate/day-m-hochman-vigil"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Day M Hochman-Vigil",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 73828.95,
+       "expenditures": 0.0,
+       "status": "$65,756.98",
+       "url": "/nm/candidate/day-m-hochman-vigil"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "New Mexico House of Representatives District 16",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-16-74383",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 130905.0,
+   "totalExpenditures": 94797.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Yanira Gurrola",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 130904.62,
+       "expenditures": 0.0,
+       "status": "$94,797.47",
+       "url": "/nm/candidate/yanira-gurrola"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Yanira Gurrola",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 130904.62,
+       "expenditures": 0.0,
+       "status": "$94,797.47",
+       "url": "/nm/candidate/yanira-gurrola"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "New Mexico House of Representatives District 17",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-17-74384",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 64621.0,
+   "totalExpenditures": 22685.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Cynthia D Borrego",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 64620.7,
+       "expenditures": 0.0,
+       "status": "$22,685.05",
+       "url": "/nm/candidate/cynthia-d-borrego"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Cynthia D Borrego",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 64620.7,
+       "expenditures": 0.0,
+       "status": "$22,685.05",
+       "url": "/nm/candidate/cynthia-d-borrego"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "New Mexico House of Representatives District 18",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-18-74385",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 117586.0,
+   "totalExpenditures": 42651.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Marianna Anaya",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 117586.17,
+       "expenditures": 0.0,
+       "status": "$42,651.17",
+       "url": "/nm/candidate/marianna-anaya"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Marianna Anaya",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 117586.17,
+       "expenditures": 0.0,
+       "status": "$42,651.17",
+       "url": "/nm/candidate/marianna-anaya"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "New Mexico House of Representatives District 19",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-19-74386",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 16717.0,
+   "totalExpenditures": 10295.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Janelle Anyanonu",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16716.51,
+       "expenditures": 0.0,
+       "status": "$10,295.38",
+       "url": "/nm/candidate/janelle-anyanonu"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Janelle Anyanonu",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16716.51,
+       "expenditures": 0.0,
+       "status": "$10,295.38",
+       "url": "/nm/candidate/janelle-anyanonu"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "New Mexico House of Representatives District 2",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-2-74387",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 22438.0,
+   "totalExpenditures": 22319.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Mark Duncan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22438.0,
+       "expenditures": 0.0,
+       "status": "$22,318.74",
+       "url": "/nm/candidate/mark-duncan"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Mark Duncan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22438.0,
+       "expenditures": 0.0,
+       "status": "$22,318.74",
+       "url": "/nm/candidate/mark-duncan"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "New Mexico House of Representatives District 20",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-20-74388",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 268261.0,
+   "totalExpenditures": 230194.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Meredith A Dixon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 268261.06,
+       "expenditures": 0.0,
+       "status": "$230,194.12",
+       "url": "/nm/candidate/meredith-a-dixon"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Meredith A Dixon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 268261.06,
+       "expenditures": 0.0,
+       "status": "$230,194.12",
+       "url": "/nm/candidate/meredith-a-dixon"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "New Mexico House of Representatives District 21",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-21-74389",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 29433.0,
+   "totalExpenditures": 22331.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Debra M Sarinana",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 27456.29,
+       "expenditures": 0.0,
+       "status": "$18,405.04",
+       "url": "/nm/candidate/debra-m-sarinana"
+      },
+      {
+       "name": "Bob Mason",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1977.19,
+       "expenditures": 10000.0,
+       "status": "$3,925.95",
+       "url": "/nm/candidate/bob-mason"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Debra M Sarinana",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 27456.29,
+       "expenditures": 0.0,
+       "status": "$18,405.04",
+       "url": "/nm/candidate/debra-m-sarinana"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Bob Mason",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1977.19,
+       "expenditures": 10000.0,
+       "status": "$3,925.95",
+       "url": "/nm/candidate/bob-mason"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "New Mexico House of Representatives District 22",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-22-74390",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 25528.0,
+   "totalExpenditures": 8128.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Stefani Lord",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 13225.0,
+       "expenditures": 0.0,
+       "status": "$1,281.12",
+       "url": "/nm/candidate/stefani-lord"
+      },
+      {
+       "name": "William B Scott",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1863.32,
+       "expenditures": 0.0,
+       "status": "$1,583.91",
+       "url": "/nm/candidate/william-b-scott"
+      },
+      {
+       "name": "Zachary Withers",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 10439.25,
+       "expenditures": 0.0,
+       "status": "$5,263.10",
+       "url": "/nm/candidate/zachary-withers"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "William B Scott",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1863.32,
+       "expenditures": 0.0,
+       "status": "$1,583.91",
+       "url": "/nm/candidate/william-b-scott"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Stefani Lord",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 13225.0,
+       "expenditures": 0.0,
+       "status": "$1,281.12",
+       "url": "/nm/candidate/stefani-lord"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "New Mexico House of Representatives District 23",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-23-74391",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 134626.0,
+   "totalExpenditures": 17438.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Alan Martinez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 84353.2,
+       "expenditures": 0.0,
+       "status": "$15,210.95",
+       "url": "/nm/candidate/alan-martinez"
+      },
+      {
+       "name": "Elise F Taylor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 50273.19,
+       "expenditures": 0.0,
+       "status": "$2,226.88",
+       "url": "/nm/candidate/elise-f-taylor"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Elise F Taylor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 50273.19,
+       "expenditures": 0.0,
+       "status": "$2,226.88",
+       "url": "/nm/candidate/elise-f-taylor"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Alan Martinez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 84353.2,
+       "expenditures": 0.0,
+       "status": "$15,210.95",
+       "url": "/nm/candidate/alan-martinez"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "New Mexico House of Representatives District 24",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-24-74392",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 92272.0,
+   "totalExpenditures": 46721.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Elizabeth L Thomson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 86536.64,
+       "expenditures": 0.0,
+       "status": "$46,721.43",
+       "url": "/nm/candidate/elizabeth-l-thomson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Elizabeth L Thomson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 86536.64,
+       "expenditures": 0.0,
+       "status": "$46,721.43",
+       "url": "/nm/candidate/elizabeth-l-thomson"
+      },
+      {
+       "name": "Frankie Mcquerry",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5735.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/frankie-mcquerry"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "New Mexico House of Representatives District 25",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-25-74393",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 18069.0,
+   "totalExpenditures": 13609.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Cristina Parajon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 17399.18,
+       "expenditures": 210.0,
+       "status": "$13,552.77",
+       "url": "/nm/candidate/cristina-parajon"
+      },
+      {
+       "name": "Denis Litvinenko",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 670.0,
+       "expenditures": 0.0,
+       "status": "$56.39",
+       "url": "/nm/candidate/denis-litvinenko"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Cristina Parajon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 17399.18,
+       "expenditures": 210.0,
+       "status": "$13,552.77",
+       "url": "/nm/candidate/cristina-parajon"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Denis Litvinenko",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 670.0,
+       "expenditures": 0.0,
+       "status": "$56.39",
+       "url": "/nm/candidate/denis-litvinenko"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "New Mexico House of Representatives District 26",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-26-74394",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 25800.0,
+   "totalExpenditures": 22206.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Eleanor Chavez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 21999.58,
+       "expenditures": 0.0,
+       "status": "$21,241.32",
+       "url": "/nm/candidate/eleanor-chavez"
+      },
+      {
+       "name": "Corey R Zimmerman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3800.0,
+       "expenditures": 0.0,
+       "status": "$964.40",
+       "url": "/nm/candidate/corey-r-zimmerman"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Eleanor Chavez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 21999.58,
+       "expenditures": 0.0,
+       "status": "$21,241.32",
+       "url": "/nm/candidate/eleanor-chavez"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Corey R Zimmerman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3800.0,
+       "expenditures": 0.0,
+       "status": "$964.40",
+       "url": "/nm/candidate/corey-r-zimmerman"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "New Mexico House of Representatives District 27",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-27-74395",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 224717.0,
+   "totalExpenditures": 238247.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Abby Foster",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 72330.14,
+       "expenditures": 0.0,
+       "status": "$46,949.83",
+       "url": "/nm/candidate/abby-foster"
+      },
+      {
+       "name": "Jahnelle Garcia",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14360.45,
+       "expenditures": 36863.41,
+       "status": "$47,471.73",
+       "url": "/nm/candidate/jahnelle-garcia"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Abby Foster",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 72330.14,
+       "expenditures": 0.0,
+       "status": "$46,949.83",
+       "url": "/nm/candidate/abby-foster"
+      },
+      {
+       "name": "Marian Matthews",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 130521.16,
+       "expenditures": 69.0,
+       "status": "$141,774.84",
+       "url": "/nm/candidate/marian-matthews"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jahnelle Garcia",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14360.45,
+       "expenditures": 36863.41,
+       "status": "$47,471.73",
+       "url": "/nm/candidate/jahnelle-garcia"
+      },
+      {
+       "name": "Robert S Godshall",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7505.0,
+       "expenditures": 0.0,
+       "status": "$2,050.12",
+       "url": "/nm/candidate/robert-s-godshall"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "New Mexico House of Representatives District 28",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-28-74396",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 37031.0,
+   "totalExpenditures": 13130.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Pamelya Herndon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 34830.77,
+       "expenditures": 0.0,
+       "status": "$9,227.93",
+       "url": "/nm/candidate/pamelya-herndon"
+      },
+      {
+       "name": "Brenda Olson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2199.84,
+       "expenditures": 5108.0,
+       "status": "$3,902.44",
+       "url": "/nm/candidate/brenda-olson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Pamelya Herndon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 34830.77,
+       "expenditures": 0.0,
+       "status": "$9,227.93",
+       "url": "/nm/candidate/pamelya-herndon"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Brenda Olson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2199.84,
+       "expenditures": 5108.0,
+       "status": "$3,902.44",
+       "url": "/nm/candidate/brenda-olson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "New Mexico House of Representatives District 29",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-29-74397",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 78464.0,
+   "totalExpenditures": 17715.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Joy Garratt",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 73714.17,
+       "expenditures": 0.0,
+       "status": "$17,504.51",
+       "url": "/nm/candidate/joy-garratt"
+      },
+      {
+       "name": "Carolyn Stith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4750.0,
+       "expenditures": 0.0,
+       "status": "$210.73",
+       "url": "/nm/candidate/carolyn-stith"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Joy Garratt",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 73714.17,
+       "expenditures": 0.0,
+       "status": "$17,504.51",
+       "url": "/nm/candidate/joy-garratt"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Carolyn Stith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4750.0,
+       "expenditures": 0.0,
+       "status": "$210.73",
+       "url": "/nm/candidate/carolyn-stith"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "New Mexico House of Representatives District 3",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-3-74398",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 15625.0,
+   "totalExpenditures": 4930.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "William A Hall II",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 15625.0,
+       "expenditures": 0.0,
+       "status": "$4,930.00",
+       "url": "/nm/candidate/william-a-hall-ii"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "William A Hall II",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 15625.0,
+       "expenditures": 0.0,
+       "status": "$4,930.00",
+       "url": "/nm/candidate/william-a-hall-ii"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "New Mexico House of Representatives District 30",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-30-74399",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 153515.0,
+   "totalExpenditures": 101664.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Elizabeth Diane Torres-Velasquez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 66905.79,
+       "expenditures": 0.0,
+       "status": "$51,248.92",
+       "url": "/nm/candidate/elizabeth-diane-torres-velasquez"
+      },
+      {
+       "name": "Jerry L Trujillo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10762.81,
+       "expenditures": 0.0,
+       "status": "$464.04",
+       "url": "/nm/candidate/jerry-l-trujillo"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Elizabeth Diane Torres-Velasquez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 66905.79,
+       "expenditures": 0.0,
+       "status": "$51,248.92",
+       "url": "/nm/candidate/elizabeth-diane-torres-velasquez"
+      },
+      {
+       "name": "Veronica N Mireles",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 71563.47,
+       "expenditures": 1476.0,
+       "status": "$48,070.81",
+       "url": "/nm/candidate/veronica-n-mireles"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jerry L Trujillo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10762.81,
+       "expenditures": 0.0,
+       "status": "$464.04",
+       "url": "/nm/candidate/jerry-l-trujillo"
+      },
+      {
+       "name": "Corinne Teller Barraza",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4283.36,
+       "expenditures": 0.0,
+       "status": "$1,880.00",
+       "url": "/nm/candidate/corinne-teller-barraza"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "New Mexico House of Representatives District 31",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-31-74400",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 100262.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Nicole Chavez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 98928.2,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/nicole-chavez"
+      },
+      {
+       "name": "Ryan A Braid",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1334.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/ryan-a-braid"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Ryan A Braid",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1334.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/ryan-a-braid"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Nicole Chavez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 98928.2,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/nicole-chavez"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "New Mexico House of Representatives District 32",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-32-74401",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 78562.0,
+   "totalExpenditures": 21246.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jenifer M Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 74837.0,
+       "expenditures": 0.0,
+       "status": "$21,106.96",
+       "url": "/nm/candidate/jenifer-m-jones"
+      },
+      {
+       "name": "Laura Parra",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3725.25,
+       "expenditures": 0.0,
+       "status": "$139.05",
+       "url": "/nm/candidate/laura-parra"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Laura Parra",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3725.25,
+       "expenditures": 0.0,
+       "status": "$139.05",
+       "url": "/nm/candidate/laura-parra"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jenifer M Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 74837.0,
+       "expenditures": 0.0,
+       "status": "$21,106.96",
+       "url": "/nm/candidate/jenifer-m-jones"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "New Mexico House of Representatives District 33",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-33-74402",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 95105.0,
+   "totalExpenditures": 106805.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Micaela Lara Cadena",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 61380.16,
+       "expenditures": 0.0,
+       "status": "$70,991.12",
+       "url": "/nm/candidate/micaela-lara-cadena"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Micaela Lara Cadena",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 61380.16,
+       "expenditures": 0.0,
+       "status": "$70,991.12",
+       "url": "/nm/candidate/micaela-lara-cadena"
+      },
+      {
+       "name": "Ramona J Martinez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33725.0,
+       "expenditures": 0.0,
+       "status": "$35,813.73",
+       "url": "/nm/candidate/ramona-j-martinez"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "New Mexico House of Representatives District 34",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-34-74403",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 112957.0,
+   "totalExpenditures": 87065.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ray Lara",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 107356.5,
+       "expenditures": 0.0,
+       "status": "$81,690.26",
+       "url": "/nm/candidate/ray-lara"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Ray Lara",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 107356.5,
+       "expenditures": 0.0,
+       "status": "$81,690.26",
+       "url": "/nm/candidate/ray-lara"
+      },
+      {
+       "name": "Juan A Fuentes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5600.0,
+       "expenditures": 0.0,
+       "status": "$5,374.97",
+       "url": "/nm/candidate/juan-a-fuentes"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "New Mexico House of Representatives District 35",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-35-74404",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 5096.0,
+   "totalExpenditures": 8147.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Angelica Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 5095.66,
+       "expenditures": 0.0,
+       "status": "$8,147.26",
+       "url": "/nm/candidate/angelica-rubio"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Angelica Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 5095.66,
+       "expenditures": 0.0,
+       "status": "$8,147.26",
+       "url": "/nm/candidate/angelica-rubio"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "New Mexico House of Representatives District 36",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-36-74405",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 218589.0,
+   "totalExpenditures": 85464.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Nathan Small",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 188849.14,
+       "expenditures": 0.0,
+       "status": "$82,519.98",
+       "url": "/nm/candidate/nathan-small"
+      },
+      {
+       "name": "Julia E Ruiz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 29740.0,
+       "expenditures": 0.0,
+       "status": "$2,943.92",
+       "url": "/nm/candidate/julia-e-ruiz"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Nathan Small",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 188849.14,
+       "expenditures": 0.0,
+       "status": "$82,519.98",
+       "url": "/nm/candidate/nathan-small"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Julia E Ruiz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 29740.0,
+       "expenditures": 0.0,
+       "status": "$2,943.92",
+       "url": "/nm/candidate/julia-e-ruiz"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "New Mexico House of Representatives District 37",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-37-74406",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 230581.0,
+   "totalExpenditures": 164918.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Lori Martinez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 84345.38,
+       "expenditures": 0.0,
+       "status": "$59,713.69",
+       "url": "/nm/candidate/lori-martinez"
+      },
+      {
+       "name": "Isabella Solis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46957.68,
+       "expenditures": 0.0,
+       "status": "$6,947.67",
+       "url": "/nm/candidate/isabella-solis"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Lori Martinez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 84345.38,
+       "expenditures": 0.0,
+       "status": "$59,713.69",
+       "url": "/nm/candidate/lori-martinez"
+      },
+      {
+       "name": "Matilda Villalobos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 99277.77,
+       "expenditures": 10000.0,
+       "status": "$98,256.53",
+       "url": "/nm/candidate/matilda-villalobos"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Isabella Solis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46957.68,
+       "expenditures": 0.0,
+       "status": "$6,947.67",
+       "url": "/nm/candidate/isabella-solis"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "New Mexico House of Representatives District 38",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-38-74407",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 213969.0,
+   "totalExpenditures": 52245.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Rebecca L Dow",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 187288.44,
+       "expenditures": 0.0,
+       "status": "$52,161.79",
+       "url": "/nm/candidate/rebecca-l-dow"
+      },
+      {
+       "name": "David L Mooney",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26680.67,
+       "expenditures": 0.0,
+       "status": "$83.36",
+       "url": "/nm/candidate/david-l-mooney"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "David L Mooney",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26680.67,
+       "expenditures": 0.0,
+       "status": "$83.36",
+       "url": "/nm/candidate/david-l-mooney"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Rebecca L Dow",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 187288.44,
+       "expenditures": 0.0,
+       "status": "$52,161.79",
+       "url": "/nm/candidate/rebecca-l-dow"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "New Mexico House of Representatives District 39",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-39-74408",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 225016.0,
+   "totalExpenditures": 58822.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Luis M Terrazas",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 127175.0,
+       "expenditures": 0.0,
+       "status": "$38,955.33",
+       "url": "/nm/candidate/luis-m-terrazas"
+      },
+      {
+       "name": "Raul Turrieta",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 97841.09,
+       "expenditures": 0.0,
+       "status": "$19,866.57",
+       "url": "/nm/candidate/raul-turrieta"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Raul Turrieta",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 97841.09,
+       "expenditures": 0.0,
+       "status": "$19,866.57",
+       "url": "/nm/candidate/raul-turrieta"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Luis M Terrazas",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 127175.0,
+       "expenditures": 0.0,
+       "status": "$38,955.33",
+       "url": "/nm/candidate/luis-m-terrazas"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "New Mexico House of Representatives District 4",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-4-74409",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 87972.0,
+   "totalExpenditures": 47599.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Joseph F Hernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 50153.5,
+       "expenditures": 0.0,
+       "status": "$30,184.97",
+       "url": "/nm/candidate/joseph-f-hernandez"
+      },
+      {
+       "name": "Heather Ellison",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35810.52,
+       "expenditures": 318.0,
+       "status": "$15,406.26",
+       "url": "/nm/candidate/heather-ellison"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Joseph F Hernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 50153.5,
+       "expenditures": 0.0,
+       "status": "$30,184.97",
+       "url": "/nm/candidate/joseph-f-hernandez"
+      },
+      {
+       "name": "Christina J Aspaas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2008.26,
+       "expenditures": 0.0,
+       "status": "$2,008.26",
+       "url": "/nm/candidate/christina-j-aspaas"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Heather Ellison",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35810.52,
+       "expenditures": 318.0,
+       "status": "$15,406.26",
+       "url": "/nm/candidate/heather-ellison"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "New Mexico House of Representatives District 40",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-40-74410",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 247222.0,
+   "totalExpenditures": 154146.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Joseph L Sanchez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 217311.51,
+       "expenditures": 0.0,
+       "status": "$129,129.41",
+       "url": "/nm/candidate/joseph-l-sanchez"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Joseph L Sanchez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 217311.51,
+       "expenditures": 0.0,
+       "status": "$129,129.41",
+       "url": "/nm/candidate/joseph-l-sanchez"
+      },
+      {
+       "name": "Nancy Wright",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 29910.0,
+       "expenditures": 0.0,
+       "status": "$25,017.06",
+       "url": "/nm/candidate/nancy-wright"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "New Mexico House of Representatives District 41",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-41-74411",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 236014.0,
+   "totalExpenditures": 209245.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Yolanda Jaramillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 115624.04,
+       "expenditures": 0.0,
+       "status": "$108,064.96",
+       "url": "/nm/candidate/yolanda-jaramillo"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Yolanda Jaramillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 115624.04,
+       "expenditures": 0.0,
+       "status": "$108,064.96",
+       "url": "/nm/candidate/yolanda-jaramillo"
+      },
+      {
+       "name": "Debbie A Rodella",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 120389.63,
+       "expenditures": 0.0,
+       "status": "$101,180.19",
+       "url": "/nm/candidate/debbie-a-rodella"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "New Mexico House of Representatives District 42",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-42-74412",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 20765.0,
+   "totalExpenditures": 26291.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Kristina Ortez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 20765.49,
+       "expenditures": 0.0,
+       "status": "$26,290.79",
+       "url": "/nm/candidate/kristina-ortez"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Kristina Ortez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 20765.49,
+       "expenditures": 0.0,
+       "status": "$26,290.79",
+       "url": "/nm/candidate/kristina-ortez"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "New Mexico House of Representatives District 43",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-43-74413",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 81565.0,
+   "totalExpenditures": 56986.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Christine Chandler",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 81565.35,
+       "expenditures": 1291.5,
+       "status": "$56,986.43",
+       "url": "/nm/candidate/christine-chandler"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Christine Chandler",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 81565.35,
+       "expenditures": 1291.5,
+       "status": "$56,986.43",
+       "url": "/nm/candidate/christine-chandler"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "New Mexico House of Representatives District 44",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-44-74414",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 113550.0,
+   "totalExpenditures": 98607.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Kathleen M Cates",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 94704.43,
+       "expenditures": 0.0,
+       "status": "$87,963.45",
+       "url": "/nm/candidate/kathleen-m-cates"
+      },
+      {
+       "name": "Adam Prior",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18845.7,
+       "expenditures": 3025.0,
+       "status": "$10,583.25",
+       "url": "/nm/candidate/adam-prior"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Kathleen M Cates",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 94704.43,
+       "expenditures": 0.0,
+       "status": "$87,963.45",
+       "url": "/nm/candidate/kathleen-m-cates"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Adam Prior",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18845.7,
+       "expenditures": 3025.0,
+       "status": "$10,583.25",
+       "url": "/nm/candidate/adam-prior"
+      },
+      {
+       "name": "Raul Vigil",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 60.0,
+       "status": "$60.00",
+       "url": "/nm/candidate/raul-vigil"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "New Mexico House of Representatives District 45",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-45-74415",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 22738.0,
+   "totalExpenditures": 12660.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Linda M Serrato",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 22737.51,
+       "expenditures": 6132.35,
+       "status": "$12,659.69",
+       "url": "/nm/candidate/linda-m-serrato"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Linda M Serrato",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 22737.51,
+       "expenditures": 6132.35,
+       "status": "$12,659.69",
+       "url": "/nm/candidate/linda-m-serrato"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "New Mexico House of Representatives District 46",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-46-74416",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 8729.0,
+   "totalExpenditures": 12520.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Andrea D Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 8729.01,
+       "expenditures": 0.0,
+       "status": "$12,519.55",
+       "url": "/nm/candidate/andrea-d-romero"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Andrea D Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 8729.01,
+       "expenditures": 0.0,
+       "status": "$12,519.55",
+       "url": "/nm/candidate/andrea-d-romero"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "New Mexico House of Representatives District 47",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-47-74417",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 138627.0,
+   "totalExpenditures": 78009.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Reena C Szczepanski",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 138626.69,
+       "expenditures": 0.0,
+       "status": "$78,009.25",
+       "url": "/nm/candidate/reena-c-szczepanski"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Reena C Szczepanski",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 138626.69,
+       "expenditures": 0.0,
+       "status": "$78,009.25",
+       "url": "/nm/candidate/reena-c-szczepanski"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "New Mexico House of Representatives District 48",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-48-74418",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 29579.0,
+   "totalExpenditures": 24811.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Tara Lujan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 29579.26,
+       "expenditures": 0.0,
+       "status": "$24,810.86",
+       "url": "/nm/candidate/tara-lujan"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Tara Lujan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 29579.26,
+       "expenditures": 0.0,
+       "status": "$24,810.86",
+       "url": "/nm/candidate/tara-lujan"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "New Mexico House of Representatives District 49",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-49-74419",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 281549.0,
+   "totalExpenditures": 161737.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Gail Missy Armstrong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 281548.52,
+       "expenditures": 0.0,
+       "status": "$161,736.85",
+       "url": "/nm/candidate/gail-missy-armstrong"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Gail Missy Armstrong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 281548.52,
+       "expenditures": 0.0,
+       "status": "$161,736.85",
+       "url": "/nm/candidate/gail-missy-armstrong"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "New Mexico House of Representatives District 5",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-5-74420",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 10316.0,
+   "totalExpenditures": 17489.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Doreen Wonda Johnson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 10315.83,
+       "expenditures": 0.0,
+       "status": "$17,489.08",
+       "url": "/nm/candidate/doreen-wonda-johnson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Doreen Wonda Johnson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 10315.83,
+       "expenditures": 0.0,
+       "status": "$17,489.08",
+       "url": "/nm/candidate/doreen-wonda-johnson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "New Mexico House of Representatives District 50",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-50-74421",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 37138.0,
+   "totalExpenditures": 16742.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Sarah T Boses",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 31454.43,
+       "expenditures": 0.0,
+       "status": "$15,686.57",
+       "url": "/nm/candidate/sarah-t-boses"
+      },
+      {
+       "name": "Ken Brennan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5683.1,
+       "expenditures": 548.19,
+       "status": "$1,055.29",
+       "url": "/nm/candidate/ken-brennan"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Sarah T Boses",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 31454.43,
+       "expenditures": 0.0,
+       "status": "$15,686.57",
+       "url": "/nm/candidate/sarah-t-boses"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Ken Brennan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5683.1,
+       "expenditures": 548.19,
+       "status": "$1,055.29",
+       "url": "/nm/candidate/ken-brennan"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "New Mexico House of Representatives District 51",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-51-74422",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 25661.0,
+   "totalExpenditures": 14400.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "John Block",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 24697.49,
+       "expenditures": 0.0,
+       "status": "$13,954.45",
+       "url": "/nm/candidate/john-block"
+      },
+      {
+       "name": "Grace A Nagamine",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 963.92,
+       "expenditures": 0.0,
+       "status": "$445.74",
+       "url": "/nm/candidate/grace-a-nagamine"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "John Block",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 24697.49,
+       "expenditures": 0.0,
+       "status": "$13,954.45",
+       "url": "/nm/candidate/john-block"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "New Mexico House of Representatives District 52",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-52-74423",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 117080.0,
+   "totalExpenditures": 87195.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Doreen Y Gallegos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 117079.76,
+       "expenditures": 0.0,
+       "status": "$87,194.92",
+       "url": "/nm/candidate/doreen-y-gallegos"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Doreen Y Gallegos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 117079.76,
+       "expenditures": 0.0,
+       "status": "$87,194.92",
+       "url": "/nm/candidate/doreen-y-gallegos"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "New Mexico House of Representatives District 53",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-53-74424",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 133289.0,
+   "totalExpenditures": 45727.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Sarah Silva",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 97534.39,
+       "expenditures": 0.0,
+       "status": "$24,826.53",
+       "url": "/nm/candidate/sarah-silva"
+      },
+      {
+       "name": "Ben Luna",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35754.38,
+       "expenditures": 825.0,
+       "status": "$20,900.35",
+       "url": "/nm/candidate/ben-luna"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Sarah Silva",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 97534.39,
+       "expenditures": 0.0,
+       "status": "$24,826.53",
+       "url": "/nm/candidate/sarah-silva"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Ben Luna",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35754.38,
+       "expenditures": 825.0,
+       "status": "$20,900.35",
+       "url": "/nm/candidate/ben-luna"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "New Mexico House of Representatives District 54",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-54-74425",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 50325.0,
+   "totalExpenditures": 8975.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jonathan Henry",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 50325.0,
+       "expenditures": 0.0,
+       "status": "$8,974.80",
+       "url": "/nm/candidate/jonathan-henry"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jonathan Henry",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 50325.0,
+       "expenditures": 0.0,
+       "status": "$8,974.80",
+       "url": "/nm/candidate/jonathan-henry"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "New Mexico House of Representatives District 55",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-55-74426",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 34550.0,
+   "totalExpenditures": 24496.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Cathrynn Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 34550.0,
+       "expenditures": 0.0,
+       "status": "$24,496.22",
+       "url": "/nm/candidate/cathrynn-brown"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Cathrynn Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 34550.0,
+       "expenditures": 0.0,
+       "status": "$24,496.22",
+       "url": "/nm/candidate/cathrynn-brown"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "New Mexico House of Representatives District 56",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-56-74427",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 105049.0,
+   "totalExpenditures": 72408.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Harlan Vincent",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 105049.0,
+       "expenditures": 0.0,
+       "status": "$72,408.06",
+       "url": "/nm/candidate/harlan-vincent"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Harlan Vincent",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 105049.0,
+       "expenditures": 0.0,
+       "status": "$72,408.06",
+       "url": "/nm/candidate/harlan-vincent"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "New Mexico House of Representatives District 57",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-57-74428",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 183746.0,
+   "totalExpenditures": 12295.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Catherine Cullen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 81097.27,
+       "expenditures": 0.0,
+       "status": "$8,241.27",
+       "url": "/nm/candidate/catherine-cullen"
+      },
+      {
+       "name": "Chriselle Martinez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 102649.17,
+       "expenditures": 0.0,
+       "status": "$4,054.12",
+       "url": "/nm/candidate/chriselle-martinez"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Chriselle Martinez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 102649.17,
+       "expenditures": 0.0,
+       "status": "$4,054.12",
+       "url": "/nm/candidate/chriselle-martinez"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Catherine Cullen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 81097.27,
+       "expenditures": 0.0,
+       "status": "$8,241.27",
+       "url": "/nm/candidate/catherine-cullen"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "New Mexico House of Representatives District 58",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-58-74429",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 10475.0,
+   "totalExpenditures": 9714.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Angelita Mejia",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 10475.0,
+       "expenditures": 0.0,
+       "status": "$9,714.45",
+       "url": "/nm/candidate/angelita-mejia"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Angelita Mejia",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 10475.0,
+       "expenditures": 0.0,
+       "status": "$9,714.45",
+       "url": "/nm/candidate/angelita-mejia"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "New Mexico House of Representatives District 59",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-59-74430",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 58271.0,
+   "totalExpenditures": 50284.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Stephen R Dodson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11450.0,
+       "expenditures": 1000.0,
+       "status": "$5,547.74",
+       "url": "/nm/candidate/stephen-r-dodson"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Stephen R Dodson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11450.0,
+       "expenditures": 1000.0,
+       "status": "$5,547.74",
+       "url": "/nm/candidate/stephen-r-dodson"
+      },
+      {
+       "name": "Mark B Murphy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 46820.88,
+       "expenditures": 0.0,
+       "status": "$44,736.25",
+       "url": "/nm/candidate/mark-b-murphy"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "New Mexico House of Representatives District 6",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-6-74431",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 101354.0,
+   "totalExpenditures": 76666.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Martha Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 84675.35,
+       "expenditures": 0.0,
+       "status": "$59,495.45",
+       "url": "/nm/candidate/martha-garcia"
+      },
+      {
+       "name": "Paul L Spencer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1396.69,
+       "expenditures": 0.0,
+       "status": "$976.53",
+       "url": "/nm/candidate/paul-l-spencer"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Martha Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 84675.35,
+       "expenditures": 0.0,
+       "status": "$59,495.45",
+       "url": "/nm/candidate/martha-garcia"
+      },
+      {
+       "name": "David Alcon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13329.65,
+       "expenditures": 0.0,
+       "status": "$12,941.47",
+       "url": "/nm/candidate/david-alcon"
+      },
+      {
+       "name": "Priscilla Benally",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1952.2,
+       "expenditures": 0.0,
+       "status": "$1,802.20",
+       "url": "/nm/candidate/priscilla-benally"
+      },
+      {
+       "name": "Johnny Valdez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 1650.12,
+       "status": "$1,450.12",
+       "url": "/nm/candidate/johnny-valdez"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Paul L Spencer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1396.69,
+       "expenditures": 0.0,
+       "status": "$976.53",
+       "url": "/nm/candidate/paul-l-spencer"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "New Mexico House of Representatives District 60",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-60-74432",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 126050.0,
+   "totalExpenditures": 104426.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Joshua Hernandez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 102835.0,
+       "expenditures": 0.0,
+       "status": "$87,021.75",
+       "url": "/nm/candidate/joshua-hernandez"
+      },
+      {
+       "name": "Luke Jungmann",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8003.39,
+       "expenditures": 0.0,
+       "status": "$3,283.47",
+       "url": "/nm/candidate/luke-jungmann"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Luke Jungmann",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8003.39,
+       "expenditures": 0.0,
+       "status": "$3,283.47",
+       "url": "/nm/candidate/luke-jungmann"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Joshua Hernandez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 102835.0,
+       "expenditures": 0.0,
+       "status": "$87,021.75",
+       "url": "/nm/candidate/joshua-hernandez"
+      },
+      {
+       "name": "Zac Anaya",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15211.76,
+       "expenditures": 0.0,
+       "status": "$14,120.92",
+       "url": "/nm/candidate/zac-anaya"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "New Mexico House of Representatives District 61",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-61-74433",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 39050.0,
+   "totalExpenditures": 37714.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Randall T Pettigrew",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 39050.0,
+       "expenditures": 0.0,
+       "status": "$37,713.52",
+       "url": "/nm/candidate/randall-t-pettigrew"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Randall T Pettigrew",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 39050.0,
+       "expenditures": 0.0,
+       "status": "$37,713.52",
+       "url": "/nm/candidate/randall-t-pettigrew"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "New Mexico House of Representatives District 62",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-62-74434",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 87306.0,
+   "totalExpenditures": 53871.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Elaine Sena Cortez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 87306.33,
+       "expenditures": 0.0,
+       "status": "$53,871.30",
+       "url": "/nm/candidate/elaine-sena-cortez"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Elaine Sena Cortez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 87306.33,
+       "expenditures": 0.0,
+       "status": "$53,871.30",
+       "url": "/nm/candidate/elaine-sena-cortez"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "New Mexico House of Representatives District 63",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-63-74435",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 2100.0,
+   "totalExpenditures": 20.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Seth H Martin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2100.0,
+       "expenditures": 0.0,
+       "status": "$19.97",
+       "url": "/nm/candidate/seth-h-martin"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Seth H Martin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2100.0,
+       "expenditures": 0.0,
+       "status": "$19.97",
+       "url": "/nm/candidate/seth-h-martin"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "63"
+  },
+  {
+   "office": "New Mexico House of Representatives District 64",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-64-74436",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 24067.0,
+   "totalExpenditures": 24960.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Andrea R Reeb",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 24067.0,
+       "expenditures": 0.0,
+       "status": "$24,960.18",
+       "url": "/nm/candidate/andrea-r-reeb"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Andrea R Reeb",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 24067.0,
+       "expenditures": 0.0,
+       "status": "$24,960.18",
+       "url": "/nm/candidate/andrea-r-reeb"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "64"
+  },
+  {
+   "office": "New Mexico House of Representatives District 65",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-65-74437",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 101018.0,
+   "totalExpenditures": 95316.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Derrick J Lente",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 101017.93,
+       "expenditures": 0.0,
+       "status": "$95,315.70",
+       "url": "/nm/candidate/derrick-j-lente"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Derrick J Lente",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 101017.93,
+       "expenditures": 0.0,
+       "status": "$95,315.70",
+       "url": "/nm/candidate/derrick-j-lente"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "65"
+  },
+  {
+   "office": "New Mexico House of Representatives District 66",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-66-74438",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 60336.0,
+   "totalExpenditures": 54863.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "LeAnne Gandy",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38399.0,
+       "expenditures": 0.0,
+       "status": "$33,168.09",
+       "url": "/nm/candidate/leanne-gandy"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "LeAnne Gandy",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38399.0,
+       "expenditures": 0.0,
+       "status": "$33,168.09",
+       "url": "/nm/candidate/leanne-gandy"
+      },
+      {
+       "name": "Dan Lewis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18930.18,
+       "expenditures": 0.0,
+       "status": "$18,889.71",
+       "url": "/nm/candidate/dan-lewis"
+      },
+      {
+       "name": "Trinidad Malone",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3006.49,
+       "expenditures": 0.0,
+       "status": "$2,805.07",
+       "url": "/nm/candidate/trinidad-malone"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "66"
+  },
+  {
+   "office": "New Mexico House of Representatives District 67",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-67-74439",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 34139.0,
+   "totalExpenditures": 25980.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jackey O Chatfield",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 32900.0,
+       "expenditures": 0.0,
+       "status": "$25,151.11",
+       "url": "/nm/candidate/jackey-o-chatfield"
+      },
+      {
+       "name": "Vincent Soule",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1239.39,
+       "expenditures": 0.0,
+       "status": "$829.07",
+       "url": "/nm/candidate/vincent-soule"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Vincent Soule",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1239.39,
+       "expenditures": 0.0,
+       "status": "$829.07",
+       "url": "/nm/candidate/vincent-soule"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Jackey O Chatfield",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 32900.0,
+       "expenditures": 0.0,
+       "status": "$25,151.11",
+       "url": "/nm/candidate/jackey-o-chatfield"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "67"
+  },
+  {
+   "office": "New Mexico House of Representatives District 68",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-68-74440",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 164827.0,
+   "totalExpenditures": 78050.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Charlotte Little",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 109803.78,
+       "expenditures": 0.0,
+       "status": "$58,778.02",
+       "url": "/nm/candidate/charlotte-little"
+      },
+      {
+       "name": "David Adkins",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 55023.67,
+       "expenditures": 0.0,
+       "status": "$19,271.77",
+       "url": "/nm/candidate/david-adkins"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Charlotte Little",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 109803.78,
+       "expenditures": 0.0,
+       "status": "$58,778.02",
+       "url": "/nm/candidate/charlotte-little"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "David Adkins",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 55023.67,
+       "expenditures": 0.0,
+       "status": "$19,271.77",
+       "url": "/nm/candidate/david-adkins"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "68"
+  },
+  {
+   "office": "New Mexico House of Representatives District 69",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-69-74441",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 172386.0,
+   "totalExpenditures": 200162.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Michelle P Abeyta",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 126185.72,
+       "expenditures": 0.0,
+       "status": "$102,727.22",
+       "url": "/nm/candidate/michelle-p-abeyta"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Michelle P Abeyta",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 126185.72,
+       "expenditures": 0.0,
+       "status": "$102,727.22",
+       "url": "/nm/candidate/michelle-p-abeyta"
+      },
+      {
+       "name": "Harry Garcia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 46200.0,
+       "expenditures": 50000.0,
+       "status": "$97,434.49",
+       "url": "/nm/candidate/harry-garcia"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "69"
+  },
+  {
+   "office": "New Mexico House of Representatives District 7",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-7-74442",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 27274.0,
+   "totalExpenditures": 29017.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Tanya Mirabal Moya",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 26011.11,
+       "expenditures": 0.0,
+       "status": "$28,840.60",
+       "url": "/nm/candidate/tanya-mirabal-moya"
+      },
+      {
+       "name": "Rickie Allen Gonzales",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1263.14,
+       "expenditures": 0.0,
+       "status": "$176.86",
+       "url": "/nm/candidate/rickie-allen-gonzales"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Rickie Allen Gonzales",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1263.14,
+       "expenditures": 0.0,
+       "status": "$176.86",
+       "url": "/nm/candidate/rickie-allen-gonzales"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Tanya Mirabal Moya",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 26011.11,
+       "expenditures": 0.0,
+       "status": "$28,840.60",
+       "url": "/nm/candidate/tanya-mirabal-moya"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "New Mexico House of Representatives District 70",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-70-74443",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 196196.0,
+   "totalExpenditures": 183037.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Anita Gonzales",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 138746.36,
+       "expenditures": 0.0,
+       "status": "$99,749.57",
+       "url": "/nm/candidate/anita-gonzales"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Anita Gonzales",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 138746.36,
+       "expenditures": 0.0,
+       "status": "$99,749.57",
+       "url": "/nm/candidate/anita-gonzales"
+      },
+      {
+       "name": "Ambrose Castellano",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 57450.0,
+       "expenditures": 0.0,
+       "status": "$83,287.74",
+       "url": "/nm/candidate/ambrose-castellano"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "70"
+  },
+  {
+   "office": "New Mexico House of Representatives District 8",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-8-74444",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 47411.0,
+   "totalExpenditures": 45025.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Brian G Baca",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 40593.5,
+       "expenditures": 0.0,
+       "status": "$42,945.85",
+       "url": "/nm/candidate/brian-g-baca"
+      },
+      {
+       "name": "Katherine Gauer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6817.43,
+       "expenditures": 0.0,
+       "status": "$2,078.78",
+       "url": "/nm/candidate/katherine-gauer"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Katherine Gauer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6817.43,
+       "expenditures": 0.0,
+       "status": "$2,078.78",
+       "url": "/nm/candidate/katherine-gauer"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Brian G Baca",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 40593.5,
+       "expenditures": 0.0,
+       "status": "$42,945.85",
+       "url": "/nm/candidate/brian-g-baca"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "New Mexico House of Representatives District 9",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-9-74445",
+   "dataThrough": "06/27/2026",
+   "stage": "General Election",
+   "totalContributions": 123699.0,
+   "totalExpenditures": 133783.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Patty A Lundstrom",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 123699.12,
+       "expenditures": 0.0,
+       "status": "$133,783.35",
+       "url": "/nm/candidate/patty-a-lundstrom"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 2, 2026",
+     "candidates": [
+      {
+       "name": "Patty A Lundstrom",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 123699.12,
+       "expenditures": 0.0,
+       "status": "$133,783.35",
+       "url": "/nm/candidate/patty-a-lundstrom"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  }
+ ]
+}

@@ -1,0 +1,7235 @@
+{
+ "state": "IA",
+ "cycle": 2024,
+ "fetched": "2026-10-11",
+ "dataThrough": "12/31/2024",
+ "races": [
+  {
+   "office": "Iowa House of Representatives District 1",
+   "url": "/ia/race/iowa-house-of-representatives-district-1-66352",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 130670.0,
+   "totalExpenditures": 109514.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "JD Scholten",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 106557.13,
+       "expenditures": 103886.15,
+       "status": "Won",
+       "url": "/ia/candidate/jd-scholten?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Josh Steinhoff",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24112.81,
+       "expenditures": 5628.33,
+       "status": "Lost",
+       "url": "/ia/candidate/josh-steinhoff?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "JD Scholten",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 106557.13,
+       "expenditures": 103886.15,
+       "status": "Advanced",
+       "url": "/ia/candidate/jd-scholten?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Josh Steinhoff",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24112.81,
+       "expenditures": 5628.33,
+       "status": "Advanced",
+       "url": "/ia/candidate/josh-steinhoff?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "Iowa House of Representatives District 10",
+   "url": "/ia/race/iowa-house-of-representatives-district-10-66353",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 143726.0,
+   "totalExpenditures": 141831.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "John Wills",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 143726.2,
+       "expenditures": 141830.82,
+       "status": "Won",
+       "url": "/ia/candidate/john-wills?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "John Wills",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 143726.2,
+       "expenditures": 141830.82,
+       "status": "Advanced",
+       "url": "/ia/candidate/john-wills?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "Iowa House of Representatives District 100",
+   "url": "/ia/race/iowa-house-of-representatives-district-100-66354",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 37787.0,
+   "totalExpenditures": 35743.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Martin Graber",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 37787.33,
+       "expenditures": 35743.34,
+       "status": "Won",
+       "url": "/ia/candidate/martin-graber?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Martin Graber",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 37787.33,
+       "expenditures": 35743.34,
+       "status": "Advanced",
+       "url": "/ia/candidate/martin-graber?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "100"
+  },
+  {
+   "office": "Iowa House of Representatives District 11",
+   "url": "/ia/race/iowa-house-of-representatives-district-11-66355",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 132687.0,
+   "totalExpenditures": 76111.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Craig Williams",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13797.15,
+       "expenditures": 9950.71,
+       "status": "Won",
+       "url": "/ia/candidate/craig-williams?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jeff Rich",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 118890.28,
+       "expenditures": 66160.61,
+       "status": "Lost",
+       "url": "/ia/candidate/jeff-rich?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jeff Rich",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 118890.28,
+       "expenditures": 66160.61,
+       "status": "Advanced",
+       "url": "/ia/candidate/jeff-rich?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Craig Williams",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13797.15,
+       "expenditures": 9950.71,
+       "status": "Advanced",
+       "url": "/ia/candidate/craig-williams?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "Iowa House of Representatives District 12",
+   "url": "/ia/race/iowa-house-of-representatives-district-12-66356",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 91823.0,
+   "totalExpenditures": 84807.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Steven Holt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 76309.05,
+       "expenditures": 74167.43,
+       "status": "Won",
+       "url": "/ia/candidate/steven-holt?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dustin Durbin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15513.74,
+       "expenditures": 10639.8,
+       "status": "Lost",
+       "url": "/ia/candidate/dustin-durbin?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Dustin Durbin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15513.74,
+       "expenditures": 10639.8,
+       "status": "Advanced",
+       "url": "/ia/candidate/dustin-durbin?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Steven Holt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 76309.05,
+       "expenditures": 74167.43,
+       "status": "Advanced",
+       "url": "/ia/candidate/steven-holt?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "Iowa House of Representatives District 13",
+   "url": "/ia/race/iowa-house-of-representatives-district-13-66357",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 57243.0,
+   "totalExpenditures": 39643.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Travis Sitzmann",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 31066.83,
+       "expenditures": 19205.87,
+       "status": "Won",
+       "url": "/ia/candidate/travis-sitzmann?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Rosanne Plante",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8355.02,
+       "expenditures": 9443.79,
+       "status": "Lost",
+       "url": "/ia/candidate/rosanne-plante?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Parker Hansen",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 1371.63,
+       "expenditures": 1307.71,
+       "status": "Lost",
+       "url": "/ia/candidate/parker-hansen?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Travis Sitzmann",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 31066.83,
+       "expenditures": 19205.87,
+       "status": "Advanced",
+       "url": "/ia/candidate/travis-sitzmann?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Noah Wieseler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16449.73,
+       "expenditures": 9685.77,
+       "status": "Lost",
+       "url": "/ia/candidate/noah-wieseler?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "Iowa House of Representatives District 14",
+   "url": "/ia/race/iowa-house-of-representatives-district-14-66358",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 93832.0,
+   "totalExpenditures": 84514.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jacob Bossman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 93831.74,
+       "expenditures": 84513.94,
+       "status": "Won",
+       "url": "/ia/candidate/jacob-bossman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jacob Bossman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 93831.74,
+       "expenditures": 84513.94,
+       "status": "Advanced",
+       "url": "/ia/candidate/jacob-bossman?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "Iowa House of Representatives District 15",
+   "url": "/ia/race/iowa-house-of-representatives-district-15-66359",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 623975.0,
+   "totalExpenditures": 619006.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Matt Windschitl",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 606822.62,
+       "expenditures": 606898.7,
+       "status": "Won",
+       "url": "/ia/candidate/matt-windschitl?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Benjamin Schauer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17152.34,
+       "expenditures": 12107.18,
+       "status": "Lost",
+       "url": "/ia/candidate/benjamin-schauer?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Benjamin Schauer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17152.34,
+       "expenditures": 12107.18,
+       "status": "Advanced",
+       "url": "/ia/candidate/benjamin-schauer?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Matt Windschitl",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 606822.62,
+       "expenditures": 606898.7,
+       "status": "Advanced",
+       "url": "/ia/candidate/matt-windschitl?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "Iowa House of Representatives District 16",
+   "url": "/ia/race/iowa-house-of-representatives-district-16-66360",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 49104.0,
+   "totalExpenditures": 44030.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "David Sieck",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 39140.47,
+       "expenditures": 34595.94,
+       "status": "Won",
+       "url": "/ia/candidate/david-sieck?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Candella Foley-Finchem",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9963.69,
+       "expenditures": 9434.44,
+       "status": "Lost",
+       "url": "/ia/candidate/candella-foley-finchem?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Candella Foley-Finchem",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9963.69,
+       "expenditures": 9434.44,
+       "status": "Advanced",
+       "url": "/ia/candidate/candella-foley-finchem?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "David Sieck",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 39140.47,
+       "expenditures": 34595.94,
+       "status": "Advanced",
+       "url": "/ia/candidate/david-sieck?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "Iowa House of Representatives District 17",
+   "url": "/ia/race/iowa-house-of-representatives-district-17-66361",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 34919.0,
+   "totalExpenditures": 34834.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Devon Wood",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 34919.39,
+       "expenditures": 34833.61,
+       "status": "Won",
+       "url": "/ia/candidate/devon-wood?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Devon Wood",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 34919.39,
+       "expenditures": 34833.61,
+       "status": "Advanced",
+       "url": "/ia/candidate/devon-wood?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "Iowa House of Representatives District 18",
+   "url": "/ia/race/iowa-house-of-representatives-district-18-66362",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 25981.0,
+   "totalExpenditures": 26683.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tom Moore",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22613.92,
+       "expenditures": 23316.0,
+       "status": "Won",
+       "url": "/ia/candidate/tom-moore?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tripp Narup",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3367.23,
+       "expenditures": 3367.23,
+       "status": "Lost",
+       "url": "/ia/candidate/tripp-narup?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Tom Moore",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22613.92,
+       "expenditures": 23316.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/tom-moore?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "Iowa House of Representatives District 19",
+   "url": "/ia/race/iowa-house-of-representatives-district-19-66363",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 105000.0,
+   "totalExpenditures": 65311.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Brent Siegrist",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 104781.81,
+       "expenditures": 65302.14,
+       "status": "Won",
+       "url": "/ia/candidate/brent-siegrist?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Roger Petersen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 217.87,
+       "expenditures": 8.62,
+       "status": "Lost",
+       "url": "/ia/candidate/roger-petersen?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Roger Petersen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 217.87,
+       "expenditures": 8.62,
+       "status": "Advanced",
+       "url": "/ia/candidate/roger-petersen?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Brent Siegrist",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 104781.81,
+       "expenditures": 65302.14,
+       "status": "Advanced",
+       "url": "/ia/candidate/brent-siegrist?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "Iowa House of Representatives District 2",
+   "url": "/ia/race/iowa-house-of-representatives-district-2-66364",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 63891.0,
+   "totalExpenditures": 62023.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Robert Henderson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 57382.68,
+       "expenditures": 59819.13,
+       "status": "Won",
+       "url": "/ia/candidate/robert-henderson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jessica Lopez-Walker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6508.54,
+       "expenditures": 2204.21,
+       "status": "Lost",
+       "url": "/ia/candidate/jessica-lopez-walker?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jessica Lopez-Walker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6508.54,
+       "expenditures": 2204.21,
+       "status": "Advanced",
+       "url": "/ia/candidate/jessica-lopez-walker?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Robert Henderson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 57382.68,
+       "expenditures": 59819.13,
+       "status": "Advanced",
+       "url": "/ia/candidate/robert-henderson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "Iowa House of Representatives District 20",
+   "url": "/ia/race/iowa-house-of-representatives-district-20-66365",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 763138.0,
+   "totalExpenditures": 121119.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Josh Turek",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 423516.3,
+       "expenditures": 120230.01,
+       "status": "Won",
+       "url": "/ia/candidate/josh-turek?cycle=2024-election-cycle"
+      },
+      {
+       "name": "James Wassell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 339621.72,
+       "expenditures": 888.77,
+       "status": "Lost",
+       "url": "/ia/candidate/james-wassell?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Josh Turek",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 423516.3,
+       "expenditures": 120230.01,
+       "status": "Advanced",
+       "url": "/ia/candidate/josh-turek?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "James Wassell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 339621.72,
+       "expenditures": 888.77,
+       "status": "Advanced",
+       "url": "/ia/candidate/james-wassell?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "Iowa House of Representatives District 21",
+   "url": "/ia/race/iowa-house-of-representatives-district-21-66366",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 232750.0,
+   "totalExpenditures": 160670.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Brooke Boden",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 76196.63,
+       "expenditures": 50923.58,
+       "status": "Won",
+       "url": "/ia/candidate/brooke-boden?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Spencer Waugh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 156553.75,
+       "expenditures": 109746.0,
+       "status": "Lost",
+       "url": "/ia/candidate/spencer-waugh?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Spencer Waugh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 156553.75,
+       "expenditures": 109746.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/spencer-waugh?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Brooke Boden",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 76196.63,
+       "expenditures": 50923.58,
+       "status": "Advanced",
+       "url": "/ia/candidate/brooke-boden?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "Iowa House of Representatives District 22",
+   "url": "/ia/race/iowa-house-of-representatives-district-22-66367",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 171638.0,
+   "totalExpenditures": 127595.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Samantha Fett",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57024.29,
+       "expenditures": 39568.91,
+       "status": "Won",
+       "url": "/ia/candidate/samantha-fett?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Rory Taylor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 95038.71,
+       "expenditures": 65324.15,
+       "status": "Lost",
+       "url": "/ia/candidate/rory-taylor?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Rory Taylor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 95038.71,
+       "expenditures": 65324.15,
+       "status": "Advanced",
+       "url": "/ia/candidate/rory-taylor?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Samantha Fett",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57024.29,
+       "expenditures": 39568.91,
+       "status": "Advanced",
+       "url": "/ia/candidate/samantha-fett?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Garrett Gobble",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19575.1,
+       "expenditures": 22701.99,
+       "status": "Lost",
+       "url": "/ia/candidate/garrett-gobble?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "Iowa House of Representatives District 23",
+   "url": "/ia/race/iowa-house-of-representatives-district-23-66368",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 92925.0,
+   "totalExpenditures": 85744.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ray Sorensen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 68030.87,
+       "expenditures": 61915.4,
+       "status": "Won",
+       "url": "/ia/candidate/ray-sorensen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Karen Varley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 24894.41,
+       "expenditures": 23828.47,
+       "status": "Lost",
+       "url": "/ia/candidate/karen-varley?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Karen Varley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 24894.41,
+       "expenditures": 23828.47,
+       "status": "Advanced",
+       "url": "/ia/candidate/karen-varley?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Ray Sorensen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 68030.87,
+       "expenditures": 61915.4,
+       "status": "Advanced",
+       "url": "/ia/candidate/ray-sorensen?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "Iowa House of Representatives District 24",
+   "url": "/ia/race/iowa-house-of-representatives-district-24-66369",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 38629.0,
+   "totalExpenditures": 34375.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Sam Wengryn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23900.84,
+       "expenditures": 17923.51,
+       "status": "Won",
+       "url": "/ia/candidate/sam-wengryn?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sonya Hicks",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9994.34,
+       "expenditures": 12121.24,
+       "status": "Lost",
+       "url": "/ia/candidate/sonya-hicks?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Sonya Hicks",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9994.34,
+       "expenditures": 12121.24,
+       "status": "Advanced",
+       "url": "/ia/candidate/sonya-hicks?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Sam Wengryn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23900.84,
+       "expenditures": 17923.51,
+       "status": "Advanced",
+       "url": "/ia/candidate/sam-wengryn?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brenda Brammer-Smith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4733.58,
+       "expenditures": 4330.0,
+       "status": "Lost",
+       "url": "/ia/candidate/brenda-brammer-smith?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "Iowa House of Representatives District 25",
+   "url": "/ia/race/iowa-house-of-representatives-district-25-66370",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 163588.0,
+   "totalExpenditures": 109996.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Hans Wilz",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 148471.85,
+       "expenditures": 101335.15,
+       "status": "Won",
+       "url": "/ia/candidate/hans-wilz?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brenda Curran",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15116.4,
+       "expenditures": 8660.66,
+       "status": "Lost",
+       "url": "/ia/candidate/brenda-curran?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Brenda Curran",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15116.4,
+       "expenditures": 8660.66,
+       "status": "Advanced",
+       "url": "/ia/candidate/brenda-curran?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Hans Wilz",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 148471.85,
+       "expenditures": 101335.15,
+       "status": "Advanced",
+       "url": "/ia/candidate/hans-wilz?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "Iowa House of Representatives District 26",
+   "url": "/ia/race/iowa-house-of-representatives-district-26-66371",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 175606.0,
+   "totalExpenditures": 169302.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Austin Harris",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 163446.29,
+       "expenditures": 157142.39,
+       "status": "Won",
+       "url": "/ia/candidate/austin-harris?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Darcie Whitlow",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8960.0,
+       "expenditures": 8960.0,
+       "status": "Lost",
+       "url": "/ia/candidate/darcie-whitlow?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Don Gier",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 3200.0,
+       "expenditures": 3200.0,
+       "status": "Lost",
+       "url": "/ia/candidate/don-gier?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Austin Harris",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 163446.29,
+       "expenditures": 157142.39,
+       "status": "Advanced",
+       "url": "/ia/candidate/austin-harris?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "Iowa House of Representatives District 27",
+   "url": "/ia/race/iowa-house-of-representatives-district-27-66372",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 198924.0,
+   "totalExpenditures": 159697.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Kenan Judge",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 163094.21,
+       "expenditures": 128245.55,
+       "status": "Won",
+       "url": "/ia/candidate/kenan-judge?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Oliver Bardwell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35829.52,
+       "expenditures": 31451.89,
+       "status": "Lost",
+       "url": "/ia/candidate/oliver-bardwell?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Kenan Judge",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 163094.21,
+       "expenditures": 128245.55,
+       "status": "Advanced",
+       "url": "/ia/candidate/kenan-judge?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Oliver Bardwell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35829.52,
+       "expenditures": 31451.89,
+       "status": "Advanced",
+       "url": "/ia/candidate/oliver-bardwell?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "Iowa House of Representatives District 28",
+   "url": "/ia/race/iowa-house-of-representatives-district-28-66373",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1121369.0,
+   "totalExpenditures": 273953.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "David Young",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 925497.13,
+       "expenditures": 218544.89,
+       "status": "Won",
+       "url": "/ia/candidate/david-young?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Laura Snider",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 195871.42,
+       "expenditures": 55408.24,
+       "status": "Lost",
+       "url": "/ia/candidate/laura-snider?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Laura Snider",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 195871.42,
+       "expenditures": 55408.24,
+       "status": "Advanced",
+       "url": "/ia/candidate/laura-snider?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "David Young",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 925497.13,
+       "expenditures": 218544.89,
+       "status": "Advanced",
+       "url": "/ia/candidate/david-young?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "Iowa House of Representatives District 29",
+   "url": "/ia/race/iowa-house-of-representatives-district-29-66374",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 16850.0,
+   "totalExpenditures": 29200.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Brian Meyer",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16850.0,
+       "expenditures": 29200.0,
+       "status": "Won",
+       "url": "/ia/candidate/brian-meyer?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Brian Meyer",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16850.0,
+       "expenditures": 29200.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/brian-meyer?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "Iowa House of Representatives District 3",
+   "url": "/ia/race/iowa-house-of-representatives-district-3-66375",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 41416.0,
+   "totalExpenditures": 39130.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Thomas Jeneary",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 36509.72,
+       "expenditures": 34265.41,
+       "status": "Won",
+       "url": "/ia/candidate/thomas-jeneary?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Emma Bouza",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4906.0,
+       "expenditures": 4864.87,
+       "status": "Lost",
+       "url": "/ia/candidate/emma-bouza?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Emma Bouza",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4906.0,
+       "expenditures": 4864.87,
+       "status": "Advanced",
+       "url": "/ia/candidate/emma-bouza?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Thomas Jeneary",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 36509.72,
+       "expenditures": 34265.41,
+       "status": "Advanced",
+       "url": "/ia/candidate/thomas-jeneary?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "Iowa House of Representatives District 30",
+   "url": "/ia/race/iowa-house-of-representatives-district-30-66376",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 100876.0,
+   "totalExpenditures": 82906.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Megan Srinivas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 100676.46,
+       "expenditures": 82705.75,
+       "status": "Won",
+       "url": "/ia/candidate/megan-srinivas?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jerry Cheevers",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 200.0,
+       "expenditures": 200.0,
+       "status": "Lost",
+       "url": "/ia/candidate/jerry-cheevers?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Megan Srinivas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 100676.46,
+       "expenditures": 82705.75,
+       "status": "Advanced",
+       "url": "/ia/candidate/megan-srinivas?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "Iowa House of Representatives District 31",
+   "url": "/ia/race/iowa-house-of-representatives-district-31-66377",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 24312.0,
+   "totalExpenditures": 19207.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mary Madison",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 24312.49,
+       "expenditures": 19207.2,
+       "status": "Won",
+       "url": "/ia/candidate/mary-madison?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Mary Madison",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 24312.49,
+       "expenditures": 19207.2,
+       "status": "Advanced",
+       "url": "/ia/candidate/mary-madison?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "Iowa House of Representatives District 32",
+   "url": "/ia/race/iowa-house-of-representatives-district-32-66378",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1153208.0,
+   "totalExpenditures": 1130300.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jennifer Konfrst",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1153208.47,
+       "expenditures": 1130300.37,
+       "status": "Won",
+       "url": "/ia/candidate/jennifer-konfrst?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jennifer Konfrst",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1153208.47,
+       "expenditures": 1130300.37,
+       "status": "Advanced",
+       "url": "/ia/candidate/jennifer-konfrst?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "Iowa House of Representatives District 33",
+   "url": "/ia/race/iowa-house-of-representatives-district-33-66379",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 3010.0,
+   "totalExpenditures": 7090.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ruth Ann Gaines",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3010.01,
+       "expenditures": 5090.46,
+       "status": "Won",
+       "url": "/ia/candidate/ruth-ann-gaines?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Toya Johnson",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 2000.0,
+       "status": "Lost",
+       "url": "/ia/candidate/toya-johnson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Ruth Ann Gaines",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3010.01,
+       "expenditures": 5090.46,
+       "status": "Advanced",
+       "url": "/ia/candidate/ruth-ann-gaines?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "Iowa House of Representatives District 34",
+   "url": "/ia/race/iowa-house-of-representatives-district-34-66380",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 98172.0,
+   "totalExpenditures": 96001.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Rob Johnson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48433.44,
+       "expenditures": 43637.2,
+       "status": "Won",
+       "url": "/ia/candidate/rob-johnson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Danielle Duggan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/ia/candidate/danielle-duggan?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Rob Johnson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48433.44,
+       "expenditures": 43637.2,
+       "status": "Advanced",
+       "url": "/ia/candidate/rob-johnson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "John Campbell Jr.",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26425.18,
+       "expenditures": 26268.7,
+       "status": "Lost",
+       "url": "/ia/candidate/john-campbell-jr?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Samy El-Baroudi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18340.0,
+       "expenditures": 23132.59,
+       "status": "Lost",
+       "url": "/ia/candidate/samy-el-baroudi?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dudley Muhammad",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4973.0,
+       "expenditures": 2963.0,
+       "status": "Lost",
+       "url": "/ia/candidate/dudley-muhammad?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Danielle Duggan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/danielle-duggan?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "Iowa House of Representatives District 35",
+   "url": "/ia/race/iowa-house-of-representatives-district-35-66381",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 55485.0,
+   "totalExpenditures": 58865.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Sean Bagniewski",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 53698.0,
+       "expenditures": 57082.39,
+       "status": "Won",
+       "url": "/ia/candidate/sean-bagniewski?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Angela Schreader",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1691.69,
+       "expenditures": 1691.69,
+       "status": "Lost",
+       "url": "/ia/candidate/angela-schreader?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Green",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 95.0,
+       "expenditures": 90.45,
+       "status": "Lost",
+       "url": "/ia/candidate/david-green?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Sean Bagniewski",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 53698.0,
+       "expenditures": 57082.39,
+       "status": "Advanced",
+       "url": "/ia/candidate/sean-bagniewski?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Angela Schreader",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1691.69,
+       "expenditures": 1691.69,
+       "status": "Advanced",
+       "url": "/ia/candidate/angela-schreader?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "Iowa House of Representatives District 36",
+   "url": "/ia/race/iowa-house-of-representatives-district-36-66382",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 50366.0,
+   "totalExpenditures": 50450.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Austin Baeth",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 50366.0,
+       "expenditures": 50449.64,
+       "status": "Won",
+       "url": "/ia/candidate/austin-baeth?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Austin Baeth",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 50366.0,
+       "expenditures": 50449.64,
+       "status": "Advanced",
+       "url": "/ia/candidate/austin-baeth?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "Iowa House of Representatives District 37",
+   "url": "/ia/race/iowa-house-of-representatives-district-37-66383",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 62323.0,
+   "totalExpenditures": 63350.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Barb Kniff Mcculla",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 62322.65,
+       "expenditures": 63350.36,
+       "status": "Won",
+       "url": "/ia/candidate/barb-kniff-mcculla?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Barb Kniff Mcculla",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 62322.65,
+       "expenditures": 63350.36,
+       "status": "Advanced",
+       "url": "/ia/candidate/barb-kniff-mcculla?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "Iowa House of Representatives District 38",
+   "url": "/ia/race/iowa-house-of-representatives-district-38-66384",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 161730.0,
+   "totalExpenditures": 138069.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jon Dunwell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 117660.97,
+       "expenditures": 96856.62,
+       "status": "Won",
+       "url": "/ia/candidate/jon-dunwell?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brad Magg",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 44068.63,
+       "expenditures": 41212.71,
+       "status": "Lost",
+       "url": "/ia/candidate/brad-magg?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Brad Magg",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 44068.63,
+       "expenditures": 41212.71,
+       "status": "Advanced",
+       "url": "/ia/candidate/brad-magg?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jon Dunwell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 117660.97,
+       "expenditures": 96856.62,
+       "status": "Advanced",
+       "url": "/ia/candidate/jon-dunwell?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "Iowa House of Representatives District 39",
+   "url": "/ia/race/iowa-house-of-representatives-district-39-66385",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 32825.0,
+   "totalExpenditures": 35456.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Rick Olson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 30770.99,
+       "expenditures": 34024.09,
+       "status": "Won",
+       "url": "/ia/candidate/rick-olson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Troy Clark",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2054.32,
+       "expenditures": 1431.7,
+       "status": "Lost",
+       "url": "/ia/candidate/troy-clark?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Rick Olson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 30770.99,
+       "expenditures": 34024.09,
+       "status": "Advanced",
+       "url": "/ia/candidate/rick-olson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "Iowa House of Representatives District 4",
+   "url": "/ia/race/iowa-house-of-representatives-district-4-66386",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 55886.0,
+   "totalExpenditures": 47586.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Skyler Wheeler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 55885.97,
+       "expenditures": 47586.37,
+       "status": "Won",
+       "url": "/ia/candidate/skyler-wheeler?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Skyler Wheeler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 55885.97,
+       "expenditures": 47586.37,
+       "status": "Advanced",
+       "url": "/ia/candidate/skyler-wheeler?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "Iowa House of Representatives District 40",
+   "url": "/ia/race/iowa-house-of-representatives-district-40-66387",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1265812.0,
+   "totalExpenditures": 293586.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Bill Gustoff",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 742604.19,
+       "expenditures": 134195.56,
+       "status": "Won",
+       "url": "/ia/candidate/bill-gustoff?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Heather Sievers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 523207.4,
+       "expenditures": 159389.95,
+       "status": "Lost",
+       "url": "/ia/candidate/heather-sievers?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Heather Sievers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 523207.4,
+       "expenditures": 159389.95,
+       "status": "Advanced",
+       "url": "/ia/candidate/heather-sievers?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Bill Gustoff",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 742604.19,
+       "expenditures": 134195.56,
+       "status": "Advanced",
+       "url": "/ia/candidate/bill-gustoff?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "Iowa House of Representatives District 41",
+   "url": "/ia/race/iowa-house-of-representatives-district-41-66388",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 322521.0,
+   "totalExpenditures": 101633.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ryan Weldon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Won",
+       "url": "/ia/candidate/ryan-weldon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Molly Buck",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 318007.1,
+       "expenditures": 97119.21,
+       "status": "Lost",
+       "url": "/ia/candidate/molly-buck?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Molly Buck",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 318007.1,
+       "expenditures": 97119.21,
+       "status": "Advanced",
+       "url": "/ia/candidate/molly-buck?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Ryan Weldon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/ryan-weldon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Matt Smith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4514.22,
+       "expenditures": 4514.22,
+       "status": "Lost",
+       "url": "/ia/candidate/matt-smith?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "Iowa House of Representatives District 42",
+   "url": "/ia/race/iowa-house-of-representatives-district-42-66389",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 755336.0,
+   "totalExpenditures": 170065.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Heather Matson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 352006.76,
+       "expenditures": 146988.06,
+       "status": "Won",
+       "url": "/ia/candidate/heather-matson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Heather Stephenson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 403328.84,
+       "expenditures": 23077.1,
+       "status": "Lost",
+       "url": "/ia/candidate/heather-stephenson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Heather Matson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 352006.76,
+       "expenditures": 146988.06,
+       "status": "Advanced",
+       "url": "/ia/candidate/heather-matson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Heather Stephenson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 403328.84,
+       "expenditures": 23077.1,
+       "status": "Advanced",
+       "url": "/ia/candidate/heather-stephenson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "Iowa House of Representatives District 43",
+   "url": "/ia/race/iowa-house-of-representatives-district-43-66390",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 150555.0,
+   "totalExpenditures": 59954.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Eddie Andrews",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 150555.33,
+       "expenditures": 59953.62,
+       "status": "Won",
+       "url": "/ia/candidate/eddie-andrews?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tiara Mays",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/ia/candidate/tiara-mays?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Tiara Mays",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/tiara-mays?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Eddie Andrews",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 150555.33,
+       "expenditures": 59953.62,
+       "status": "Advanced",
+       "url": "/ia/candidate/eddie-andrews?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "Iowa House of Representatives District 44",
+   "url": "/ia/race/iowa-house-of-representatives-district-44-66391",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 62629.0,
+   "totalExpenditures": 57607.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lawrence Mcburney",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 49247.96,
+       "expenditures": 43824.02,
+       "status": "Won",
+       "url": "/ia/candidate/lawrence-mcburney?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jake Heard",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 3953.49,
+       "expenditures": 3855.02,
+       "status": "Lost",
+       "url": "/ia/candidate/jake-heard?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Lawrence Mcburney",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 49247.96,
+       "expenditures": 43824.02,
+       "status": "Advanced",
+       "url": "/ia/candidate/lawrence-mcburney?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jason Menke",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9428.0,
+       "expenditures": 9928.0,
+       "status": "Lost",
+       "url": "/ia/candidate/jason-menke?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "Iowa House of Representatives District 45",
+   "url": "/ia/race/iowa-house-of-representatives-district-45-66392",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 125885.0,
+   "totalExpenditures": 120495.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Brian Lohse",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 90801.32,
+       "expenditures": 91430.22,
+       "status": "Won",
+       "url": "/ia/candidate/brian-lohse?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tony Thompson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 35084.13,
+       "expenditures": 29064.89,
+       "status": "Lost",
+       "url": "/ia/candidate/tony-thompson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Tony Thompson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 35084.13,
+       "expenditures": 29064.89,
+       "status": "Advanced",
+       "url": "/ia/candidate/tony-thompson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Brian Lohse",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 90801.32,
+       "expenditures": 91430.22,
+       "status": "Advanced",
+       "url": "/ia/candidate/brian-lohse?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "Iowa House of Representatives District 46",
+   "url": "/ia/race/iowa-house-of-representatives-district-46-66393",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 313784.0,
+   "totalExpenditures": 64122.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Dan Gehlbach",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 286114.45,
+       "expenditures": 49648.29,
+       "status": "Won",
+       "url": "/ia/candidate/dan-gehlbach?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lynne Campbell",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27669.15,
+       "expenditures": 14473.59,
+       "status": "Lost",
+       "url": "/ia/candidate/lynne-campbell?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Lynne Campbell",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27669.15,
+       "expenditures": 14473.59,
+       "status": "Advanced",
+       "url": "/ia/candidate/lynne-campbell?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Dan Gehlbach",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 286114.45,
+       "expenditures": 49648.29,
+       "status": "Advanced",
+       "url": "/ia/candidate/dan-gehlbach?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "Iowa House of Representatives District 47",
+   "url": "/ia/race/iowa-house-of-representatives-district-47-66394",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 168768.0,
+   "totalExpenditures": 145237.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Carter Nordman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 160146.99,
+       "expenditures": 136711.62,
+       "status": "Won",
+       "url": "/ia/candidate/carter-nordman?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joe Shelly",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8621.18,
+       "expenditures": 8525.18,
+       "status": "Lost",
+       "url": "/ia/candidate/joe-shelly?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Carter Nordman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 160146.99,
+       "expenditures": 136711.62,
+       "status": "Advanced",
+       "url": "/ia/candidate/carter-nordman?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "Iowa House of Representatives District 48",
+   "url": "/ia/race/iowa-house-of-representatives-district-48-66395",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 64749.0,
+   "totalExpenditures": 22213.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Chad Behn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 51362.77,
+       "expenditures": 9386.97,
+       "status": "Won",
+       "url": "/ia/candidate/chad-behn?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Penny Vossler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13386.14,
+       "expenditures": 12825.82,
+       "status": "Lost",
+       "url": "/ia/candidate/penny-vossler?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Penny Vossler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13386.14,
+       "expenditures": 12825.82,
+       "status": "Advanced",
+       "url": "/ia/candidate/penny-vossler?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Chad Behn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 51362.77,
+       "expenditures": 9386.97,
+       "status": "Advanced",
+       "url": "/ia/candidate/chad-behn?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "Iowa House of Representatives District 49",
+   "url": "/ia/race/iowa-house-of-representatives-district-49-66396",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 29412.0,
+   "totalExpenditures": 30614.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Beth Wessel-Kroeschell",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 29412.0,
+       "expenditures": 30613.5,
+       "status": "Won",
+       "url": "/ia/candidate/beth-wessel-kroeschell?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Beth Wessel-Kroeschell",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 29412.0,
+       "expenditures": 30613.5,
+       "status": "Advanced",
+       "url": "/ia/candidate/beth-wessel-kroeschell?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "Iowa House of Representatives District 5",
+   "url": "/ia/race/iowa-house-of-representatives-district-5-66397",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 6515.0,
+   "totalExpenditures": 4128.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Zachary Dieken",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6515.0,
+       "expenditures": 4128.19,
+       "status": "Won",
+       "url": "/ia/candidate/zachary-dieken?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Zachary Dieken",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6515.0,
+       "expenditures": 4128.19,
+       "status": "Advanced",
+       "url": "/ia/candidate/zachary-dieken?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "Iowa House of Representatives District 50",
+   "url": "/ia/race/iowa-house-of-representatives-district-50-66398",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 16825.0,
+   "totalExpenditures": 17885.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ross Wilburn",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16825.0,
+       "expenditures": 17885.13,
+       "status": "Won",
+       "url": "/ia/candidate/ross-wilburn?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Ross Wilburn",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16825.0,
+       "expenditures": 17885.13,
+       "status": "Advanced",
+       "url": "/ia/candidate/ross-wilburn?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "Iowa House of Representatives District 51",
+   "url": "/ia/race/iowa-house-of-representatives-district-51-66399",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 97243.0,
+   "totalExpenditures": 93366.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Brett Barker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 65302.45,
+       "expenditures": 61200.53,
+       "status": "Won",
+       "url": "/ia/candidate/brett-barker?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ryan Condon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16016.14,
+       "expenditures": 15701.21,
+       "status": "Lost",
+       "url": "/ia/candidate/ryan-condon?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Ryan Condon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16016.14,
+       "expenditures": 15701.21,
+       "status": "Advanced",
+       "url": "/ia/candidate/ryan-condon?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Brett Barker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 65302.45,
+       "expenditures": 61200.53,
+       "status": "Advanced",
+       "url": "/ia/candidate/brett-barker?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Martin Chitty",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15924.39,
+       "expenditures": 16464.34,
+       "status": "Lost",
+       "url": "/ia/candidate/martin-chitty?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "Iowa House of Representatives District 52",
+   "url": "/ia/race/iowa-house-of-representatives-district-52-66400",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 997671.0,
+   "totalExpenditures": 80954.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "David Blom",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 544122.44,
+       "expenditures": 16816.59,
+       "status": "Won",
+       "url": "/ia/candidate/david-blom?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Susan Cahill",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 453548.16,
+       "expenditures": 64137.35,
+       "status": "Lost",
+       "url": "/ia/candidate/susan-cahill?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Susan Cahill",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 453548.16,
+       "expenditures": 64137.35,
+       "status": "Advanced",
+       "url": "/ia/candidate/susan-cahill?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "Iowa House of Representatives District 53",
+   "url": "/ia/race/iowa-house-of-representatives-district-53-66401",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 124124.0,
+   "totalExpenditures": 88954.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Dean Fisher",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 61189.51,
+       "expenditures": 33812.37,
+       "status": "Won",
+       "url": "/ia/candidate/dean-fisher?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tommy Hexter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 60713.68,
+       "expenditures": 52782.08,
+       "status": "Lost",
+       "url": "/ia/candidate/tommy-hexter?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Tommy Hexter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 60713.68,
+       "expenditures": 52782.08,
+       "status": "Advanced",
+       "url": "/ia/candidate/tommy-hexter?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jennifer Wrage",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2221.0,
+       "expenditures": 2359.69,
+       "status": "Lost",
+       "url": "/ia/candidate/jennifer-wrage?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Dean Fisher",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 61189.51,
+       "expenditures": 33812.37,
+       "status": "Advanced",
+       "url": "/ia/candidate/dean-fisher?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "Iowa House of Representatives District 54",
+   "url": "/ia/race/iowa-house-of-representatives-district-54-66402",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 76508.0,
+   "totalExpenditures": 65608.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Joshua Meggers",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 76508.29,
+       "expenditures": 65608.1,
+       "status": "Won",
+       "url": "/ia/candidate/joshua-meggers?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Joshua Meggers",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 76508.29,
+       "expenditures": 65608.1,
+       "status": "Advanced",
+       "url": "/ia/candidate/joshua-meggers?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "Iowa House of Representatives District 55",
+   "url": "/ia/race/iowa-house-of-representatives-district-55-66403",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 66654.0,
+   "totalExpenditures": 7179.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Shannon Latham",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 66654.46,
+       "expenditures": 7179.02,
+       "status": "Won",
+       "url": "/ia/candidate/shannon-latham?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Shannon Latham",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 66654.46,
+       "expenditures": 7179.02,
+       "status": "Advanced",
+       "url": "/ia/candidate/shannon-latham?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "Iowa House of Representatives District 56",
+   "url": "/ia/race/iowa-house-of-representatives-district-56-66404",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 26886.0,
+   "totalExpenditures": 18139.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mark Thompson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 21066.6,
+       "expenditures": 13408.1,
+       "status": "Won",
+       "url": "/ia/candidate/mark-thompson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kyle Kruse",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5819.01,
+       "expenditures": 4730.89,
+       "status": "Lost",
+       "url": "/ia/candidate/kyle-kruse?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Kyle Kruse",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5819.01,
+       "expenditures": 4730.89,
+       "status": "Advanced",
+       "url": "/ia/candidate/kyle-kruse?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Mark Thompson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 21066.6,
+       "expenditures": 13408.1,
+       "status": "Advanced",
+       "url": "/ia/candidate/mark-thompson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "Iowa House of Representatives District 57",
+   "url": "/ia/race/iowa-house-of-representatives-district-57-66405",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1389382.0,
+   "totalExpenditures": 1418719.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Pat Grassley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1339765.16,
+       "expenditures": 1376030.76,
+       "status": "Won",
+       "url": "/ia/candidate/pat-grassley?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Shawn Ellerbroek",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 49616.95,
+       "expenditures": 42688.18,
+       "status": "Lost",
+       "url": "/ia/candidate/shawn-ellerbroek?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Shawn Ellerbroek",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 49616.95,
+       "expenditures": 42688.18,
+       "status": "Advanced",
+       "url": "/ia/candidate/shawn-ellerbroek?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Pat Grassley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1339765.16,
+       "expenditures": 1376030.76,
+       "status": "Advanced",
+       "url": "/ia/candidate/pat-grassley?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "Iowa House of Representatives District 58",
+   "url": "/ia/race/iowa-house-of-representatives-district-58-66406",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 62392.0,
+   "totalExpenditures": 48591.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Charley Thomson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 49906.07,
+       "expenditures": 36105.9,
+       "status": "Won",
+       "url": "/ia/candidate/charley-thomson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gail Allison",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12485.5,
+       "expenditures": 12485.5,
+       "status": "Lost",
+       "url": "/ia/candidate/gail-allison?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Gail Allison",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12485.5,
+       "expenditures": 12485.5,
+       "status": "Advanced",
+       "url": "/ia/candidate/gail-allison?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Charley Thomson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 49906.07,
+       "expenditures": 36105.9,
+       "status": "Advanced",
+       "url": "/ia/candidate/charley-thomson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "Iowa House of Representatives District 59",
+   "url": "/ia/race/iowa-house-of-representatives-district-59-66407",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 608387.0,
+   "totalExpenditures": 65456.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Christian Hermanson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 433303.5,
+       "expenditures": 10406.26,
+       "status": "Won",
+       "url": "/ia/candidate/christian-hermanson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jeremy True",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 175083.54,
+       "expenditures": 55049.86,
+       "status": "Lost",
+       "url": "/ia/candidate/jeremy-true?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jeremy True",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 175083.54,
+       "expenditures": 55049.86,
+       "status": "Advanced",
+       "url": "/ia/candidate/jeremy-true?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Christian Hermanson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 433303.5,
+       "expenditures": 10406.26,
+       "status": "Advanced",
+       "url": "/ia/candidate/christian-hermanson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "Iowa House of Representatives District 6",
+   "url": "/ia/race/iowa-house-of-representatives-district-6-66408",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 129797.0,
+   "totalExpenditures": 94727.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Megan Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 129797.29,
+       "expenditures": 94727.15,
+       "status": "Won",
+       "url": "/ia/candidate/megan-jones?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Megan Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 129797.29,
+       "expenditures": 94727.15,
+       "status": "Advanced",
+       "url": "/ia/candidate/megan-jones?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "Iowa House of Representatives District 60",
+   "url": "/ia/race/iowa-house-of-representatives-district-60-66409",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 244621.0,
+   "totalExpenditures": 247383.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jane Bloomingdale",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 216713.62,
+       "expenditures": 217772.65,
+       "status": "Won",
+       "url": "/ia/candidate/jane-bloomingdale?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jane Bloomingdale",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 216713.62,
+       "expenditures": 217772.65,
+       "status": "Advanced",
+       "url": "/ia/candidate/jane-bloomingdale?cycle=2024-election-cycle"
+      },
+      {
+       "name": "John Rosenfeld",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27907.25,
+       "expenditures": 29610.43,
+       "status": "Lost",
+       "url": "/ia/candidate/john-rosenfeld?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "Iowa House of Representatives District 61",
+   "url": "/ia/race/iowa-house-of-representatives-district-61-66410",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 33508.0,
+   "totalExpenditures": 26109.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Timi Brown-Powers",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 33508.29,
+       "expenditures": 26109.49,
+       "status": "Won",
+       "url": "/ia/candidate/timi-brown-powers?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Timi Brown-Powers",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 33508.29,
+       "expenditures": 26109.49,
+       "status": "Advanced",
+       "url": "/ia/candidate/timi-brown-powers?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "Iowa House of Representatives District 62",
+   "url": "/ia/race/iowa-house-of-representatives-district-62-66411",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 7500.0,
+   "totalExpenditures": 3749.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jerome Amos Jr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 7500.0,
+       "expenditures": 3748.79,
+       "status": "Won",
+       "url": "/ia/candidate/jerome-amos-jr?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ervin Sabic",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/ia/candidate/ervin-sabic?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jerome Amos Jr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 7500.0,
+       "expenditures": 3748.79,
+       "status": "Advanced",
+       "url": "/ia/candidate/jerome-amos-jr?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "Iowa House of Representatives District 63",
+   "url": "/ia/race/iowa-house-of-representatives-district-63-66412",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 60811.0,
+   "totalExpenditures": 43085.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Michael Bergan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 60810.81,
+       "expenditures": 43085.43,
+       "status": "Won",
+       "url": "/ia/candidate/michael-bergan?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Michael Bergan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 60810.81,
+       "expenditures": 43085.43,
+       "status": "Advanced",
+       "url": "/ia/candidate/michael-bergan?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "63"
+  },
+  {
+   "office": "Iowa House of Representatives District 64",
+   "url": "/ia/race/iowa-house-of-representatives-district-64-66413",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 216799.0,
+   "totalExpenditures": 61656.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jason Gearhart",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26539.02,
+       "expenditures": 19518.18,
+       "status": "Won",
+       "url": "/ia/candidate/jason-gearhart?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ian Zahren",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 188814.53,
+       "expenditures": 37887.68,
+       "status": "Lost",
+       "url": "/ia/candidate/ian-zahren?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jason Gearhart",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26539.02,
+       "expenditures": 19518.18,
+       "status": "Advanced",
+       "url": "/ia/candidate/jason-gearhart?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Douglas Wolfe",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1445.44,
+       "expenditures": 4250.0,
+       "status": "Lost",
+       "url": "/ia/candidate/douglas-wolfe?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "64"
+  },
+  {
+   "office": "Iowa House of Representatives District 65",
+   "url": "/ia/race/iowa-house-of-representatives-district-65-66414",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 269598.0,
+   "totalExpenditures": 233833.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Shannon Lundgren",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 226674.38,
+       "expenditures": 210327.44,
+       "status": "Won",
+       "url": "/ia/candidate/shannon-lundgren?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Carolyn Wiezorek",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 42923.36,
+       "expenditures": 23505.1,
+       "status": "Lost",
+       "url": "/ia/candidate/carolyn-wiezorek?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Carolyn Wiezorek",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 42923.36,
+       "expenditures": 23505.1,
+       "status": "Advanced",
+       "url": "/ia/candidate/carolyn-wiezorek?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Shannon Lundgren",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 226674.38,
+       "expenditures": 210327.44,
+       "status": "Advanced",
+       "url": "/ia/candidate/shannon-lundgren?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "65"
+  },
+  {
+   "office": "Iowa House of Representatives District 66",
+   "url": "/ia/race/iowa-house-of-representatives-district-66-66415",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 276514.0,
+   "totalExpenditures": 203578.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Steven Bradley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 97007.88,
+       "expenditures": 65448.55,
+       "status": "Won",
+       "url": "/ia/candidate/steven-bradley?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Andy Mckean",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 179505.66,
+       "expenditures": 138129.1,
+       "status": "Lost",
+       "url": "/ia/candidate/andy-mckean?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Andy Mckean",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 179505.66,
+       "expenditures": 138129.1,
+       "status": "Advanced",
+       "url": "/ia/candidate/andy-mckean?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Steven Bradley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 97007.88,
+       "expenditures": 65448.55,
+       "status": "Advanced",
+       "url": "/ia/candidate/steven-bradley?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "66"
+  },
+  {
+   "office": "Iowa House of Representatives District 67",
+   "url": "/ia/race/iowa-house-of-representatives-district-67-66416",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 47240.0,
+   "totalExpenditures": 45132.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Craig Johnson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 47240.47,
+       "expenditures": 45132.32,
+       "status": "Won",
+       "url": "/ia/candidate/craig-johnson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Craig Johnson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 47240.47,
+       "expenditures": 45132.32,
+       "status": "Advanced",
+       "url": "/ia/candidate/craig-johnson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "67"
+  },
+  {
+   "office": "Iowa House of Representatives District 68",
+   "url": "/ia/race/iowa-house-of-representatives-district-68-66417",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 56777.0,
+   "totalExpenditures": 55028.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Chad Ingels",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 49982.47,
+       "expenditures": 48233.32,
+       "status": "Won",
+       "url": "/ia/candidate/chad-ingels?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tim O'Brien",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6794.71,
+       "expenditures": 6794.71,
+       "status": "Lost",
+       "url": "/ia/candidate/tim-obrien?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Chad Ingels",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 49982.47,
+       "expenditures": 48233.32,
+       "status": "Advanced",
+       "url": "/ia/candidate/chad-ingels?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "68"
+  },
+  {
+   "office": "Iowa House of Representatives District 69",
+   "url": "/ia/race/iowa-house-of-representatives-district-69-66418",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 314502.0,
+   "totalExpenditures": 190013.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tom Determann",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 244207.68,
+       "expenditures": 130974.74,
+       "status": "Won",
+       "url": "/ia/candidate/tom-determann?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Randy Meier",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 70293.85,
+       "expenditures": 59037.86,
+       "status": "Lost",
+       "url": "/ia/candidate/randy-meier?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Randy Meier",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 70293.85,
+       "expenditures": 59037.86,
+       "status": "Advanced",
+       "url": "/ia/candidate/randy-meier?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Tom Determann",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 244207.68,
+       "expenditures": 130974.74,
+       "status": "Advanced",
+       "url": "/ia/candidate/tom-determann?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "69"
+  },
+  {
+   "office": "Iowa House of Representatives District 7",
+   "url": "/ia/race/iowa-house-of-representatives-district-7-66419",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 116308.0,
+   "totalExpenditures": 110122.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mike Sexton",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 98645.47,
+       "expenditures": 96575.46,
+       "status": "Won",
+       "url": "/ia/candidate/mike-sexton?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Mike Sexton",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 98645.47,
+       "expenditures": 96575.46,
+       "status": "Advanced",
+       "url": "/ia/candidate/mike-sexton?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Wendy Larson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17663.0,
+       "expenditures": 13546.68,
+       "status": "Lost",
+       "url": "/ia/candidate/wendy-larson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "Iowa House of Representatives District 70",
+   "url": "/ia/race/iowa-house-of-representatives-district-70-66420",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 113061.0,
+   "totalExpenditures": 97482.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Norlin Mommsen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 72698.49,
+       "expenditures": 67185.21,
+       "status": "Won",
+       "url": "/ia/candidate/norlin-mommsen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kay Pence",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 40362.6,
+       "expenditures": 30296.5,
+       "status": "Lost",
+       "url": "/ia/candidate/kay-pence?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Kay Pence",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 40362.6,
+       "expenditures": 30296.5,
+       "status": "Advanced",
+       "url": "/ia/candidate/kay-pence?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Norlin Mommsen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 72698.49,
+       "expenditures": 67185.21,
+       "status": "Advanced",
+       "url": "/ia/candidate/norlin-mommsen?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "70"
+  },
+  {
+   "office": "Iowa House of Representatives District 71",
+   "url": "/ia/race/iowa-house-of-representatives-district-71-66421",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 116947.0,
+   "totalExpenditures": 102720.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lindsay James",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 101590.29,
+       "expenditures": 92149.08,
+       "status": "Won",
+       "url": "/ia/candidate/lindsay-james?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jim Mcclain",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15356.54,
+       "expenditures": 10571.3,
+       "status": "Lost",
+       "url": "/ia/candidate/jim-mcclain?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Lindsay James",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 101590.29,
+       "expenditures": 92149.08,
+       "status": "Advanced",
+       "url": "/ia/candidate/lindsay-james?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "71"
+  },
+  {
+   "office": "Iowa House of Representatives District 72",
+   "url": "/ia/race/iowa-house-of-representatives-district-72-66422",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 596125.0,
+   "totalExpenditures": 143426.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jennifer Smith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 400731.51,
+       "expenditures": 31843.96,
+       "status": "Won",
+       "url": "/ia/candidate/jennifer-smith?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chuck Isenhart",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 190927.1,
+       "expenditures": 105107.18,
+       "status": "Lost",
+       "url": "/ia/candidate/chuck-isenhart?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Chuck Isenhart",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 190927.1,
+       "expenditures": 105107.18,
+       "status": "Advanced",
+       "url": "/ia/candidate/chuck-isenhart?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jennifer Smith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 400731.51,
+       "expenditures": 31843.96,
+       "status": "Advanced",
+       "url": "/ia/candidate/jennifer-smith?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Rod Warnke",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4466.67,
+       "expenditures": 6474.63,
+       "status": "Lost",
+       "url": "/ia/candidate/rod-warnke?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "72"
+  },
+  {
+   "office": "Iowa House of Representatives District 73",
+   "url": "/ia/race/iowa-house-of-representatives-district-73-66423",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 31446.0,
+   "totalExpenditures": 23182.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Elizabeth Wilson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 31445.74,
+       "expenditures": 23181.66,
+       "status": "Won",
+       "url": "/ia/candidate/elizabeth-wilson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Elizabeth Wilson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 31445.74,
+       "expenditures": 23181.66,
+       "status": "Advanced",
+       "url": "/ia/candidate/elizabeth-wilson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "73"
+  },
+  {
+   "office": "Iowa House of Representatives District 74",
+   "url": "/ia/race/iowa-house-of-representatives-district-74-66424",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 20375.0,
+   "totalExpenditures": 15475.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Eric Gjerde",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 20374.99,
+       "expenditures": 15474.98,
+       "status": "Won",
+       "url": "/ia/candidate/eric-gjerde?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Eric Gjerde",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 20374.99,
+       "expenditures": 15474.98,
+       "status": "Advanced",
+       "url": "/ia/candidate/eric-gjerde?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "74"
+  },
+  {
+   "office": "Iowa House of Representatives District 75",
+   "url": "/ia/race/iowa-house-of-representatives-district-75-66425",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 17232.0,
+   "totalExpenditures": 16735.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Bob Kressig",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 17231.99,
+       "expenditures": 16735.01,
+       "status": "Won",
+       "url": "/ia/candidate/bob-kressig?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Bob Kressig",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 17231.99,
+       "expenditures": 16735.01,
+       "status": "Advanced",
+       "url": "/ia/candidate/bob-kressig?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "75"
+  },
+  {
+   "office": "Iowa House of Representatives District 76",
+   "url": "/ia/race/iowa-house-of-representatives-district-76-66426",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 66145.0,
+   "totalExpenditures": 44234.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Derek Wulf",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 66144.66,
+       "expenditures": 44233.62,
+       "status": "Won",
+       "url": "/ia/candidate/derek-wulf?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Derek Wulf",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 66144.66,
+       "expenditures": 44233.62,
+       "status": "Advanced",
+       "url": "/ia/candidate/derek-wulf?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "76"
+  },
+  {
+   "office": "Iowa House of Representatives District 77",
+   "url": "/ia/race/iowa-house-of-representatives-district-77-66427",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 39547.0,
+   "totalExpenditures": 38133.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jeffrey Cooling",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 39547.0,
+       "expenditures": 38133.38,
+       "status": "Won",
+       "url": "/ia/candidate/jeffrey-cooling?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jeffrey Cooling",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 39547.0,
+       "expenditures": 38133.38,
+       "status": "Advanced",
+       "url": "/ia/candidate/jeffrey-cooling?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "77"
+  },
+  {
+   "office": "Iowa House of Representatives District 78",
+   "url": "/ia/race/iowa-house-of-representatives-district-78-66428",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 85738.0,
+   "totalExpenditures": 87963.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Sami Scheetz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 85737.8,
+       "expenditures": 87963.38,
+       "status": "Won",
+       "url": "/ia/candidate/sami-scheetz?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Sami Scheetz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 85737.8,
+       "expenditures": 87963.38,
+       "status": "Advanced",
+       "url": "/ia/candidate/sami-scheetz?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "78"
+  },
+  {
+   "office": "Iowa House of Representatives District 79",
+   "url": "/ia/race/iowa-house-of-representatives-district-79-66429",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 29244.0,
+   "totalExpenditures": 29029.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tracy Ehlert",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16737.7,
+       "expenditures": 16958.1,
+       "status": "Won",
+       "url": "/ia/candidate/tracy-ehlert?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Barclay Woerner",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12506.05,
+       "expenditures": 12071.37,
+       "status": "Lost",
+       "url": "/ia/candidate/barclay-woerner?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Tracy Ehlert",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16737.7,
+       "expenditures": 16958.1,
+       "status": "Advanced",
+       "url": "/ia/candidate/tracy-ehlert?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "79"
+  },
+  {
+   "office": "Iowa House of Representatives District 8",
+   "url": "/ia/race/iowa-house-of-representatives-district-8-66430",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 158485.0,
+   "totalExpenditures": 159666.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ann Meyer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 158484.73,
+       "expenditures": 159665.69,
+       "status": "Won",
+       "url": "/ia/candidate/ann-meyer?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Ann Meyer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 158484.73,
+       "expenditures": 159665.69,
+       "status": "Advanced",
+       "url": "/ia/candidate/ann-meyer?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "Iowa House of Representatives District 80",
+   "url": "/ia/race/iowa-house-of-representatives-district-80-66431",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 145855.0,
+   "totalExpenditures": 99500.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Aime Wichtendahl",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 97139.85,
+       "expenditures": 69335.6,
+       "status": "Won",
+       "url": "/ia/candidate/aime-wichtendahl?cycle=2024-election-cycle"
+      },
+      {
+       "name": "John Thompson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 48714.8,
+       "expenditures": 30164.16,
+       "status": "Lost",
+       "url": "/ia/candidate/john-thompson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Aime Wichtendahl",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 97139.85,
+       "expenditures": 69335.6,
+       "status": "Advanced",
+       "url": "/ia/candidate/aime-wichtendahl?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "John Thompson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 48714.8,
+       "expenditures": 30164.16,
+       "status": "Advanced",
+       "url": "/ia/candidate/john-thompson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "80"
+  },
+  {
+   "office": "Iowa House of Representatives District 81",
+   "url": "/ia/race/iowa-house-of-representatives-district-81-66432",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 45216.0,
+   "totalExpenditures": 27376.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Daniel Gosa",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 45215.99,
+       "expenditures": 27375.91,
+       "status": "Won",
+       "url": "/ia/candidate/daniel-gosa?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Daniel Gosa",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 45215.99,
+       "expenditures": 27375.91,
+       "status": "Advanced",
+       "url": "/ia/candidate/daniel-gosa?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "81"
+  },
+  {
+   "office": "Iowa House of Representatives District 82",
+   "url": "/ia/race/iowa-house-of-representatives-district-82-66433",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 457447.0,
+   "totalExpenditures": 431496.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Bobby Kaufmann",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 393464.91,
+       "expenditures": 369328.89,
+       "status": "Won",
+       "url": "/ia/candidate/bobby-kaufmann?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Phil Wiese",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 63982.25,
+       "expenditures": 62167.38,
+       "status": "Lost",
+       "url": "/ia/candidate/phil-wiese?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Bobby Kaufmann",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 393464.91,
+       "expenditures": 369328.89,
+       "status": "Advanced",
+       "url": "/ia/candidate/bobby-kaufmann?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "82"
+  },
+  {
+   "office": "Iowa House of Representatives District 83",
+   "url": "/ia/race/iowa-house-of-representatives-district-83-66434",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 100635.0,
+   "totalExpenditures": 86066.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Cindy Golding",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 71697.0,
+       "expenditures": 62728.84,
+       "status": "Won",
+       "url": "/ia/candidate/cindy-golding?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kent McNally",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 28938.2,
+       "expenditures": 23337.26,
+       "status": "Lost",
+       "url": "/ia/candidate/kent-mcnally?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Kent McNally",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 28938.2,
+       "expenditures": 23337.26,
+       "status": "Advanced",
+       "url": "/ia/candidate/kent-mcnally?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Cindy Golding",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 71697.0,
+       "expenditures": 62728.84,
+       "status": "Advanced",
+       "url": "/ia/candidate/cindy-golding?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "83"
+  },
+  {
+   "office": "Iowa House of Representatives District 84",
+   "url": "/ia/race/iowa-house-of-representatives-district-84-66435",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 21152.0,
+   "totalExpenditures": 20554.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tom Gerhold",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20735.0,
+       "expenditures": 20237.33,
+       "status": "Won",
+       "url": "/ia/candidate/tom-gerhold?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ashley Meredith",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 416.93,
+       "expenditures": 316.93,
+       "status": "Lost",
+       "url": "/ia/candidate/ashley-meredith?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Tom Gerhold",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20735.0,
+       "expenditures": 20237.33,
+       "status": "Advanced",
+       "url": "/ia/candidate/tom-gerhold?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "84"
+  },
+  {
+   "office": "Iowa House of Representatives District 85",
+   "url": "/ia/race/iowa-house-of-representatives-district-85-66436",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 52663.0,
+   "totalExpenditures": 54808.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Amy Nielsen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 52663.0,
+       "expenditures": 54808.09,
+       "status": "Won",
+       "url": "/ia/candidate/amy-nielsen?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Amy Nielsen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 52663.0,
+       "expenditures": 54808.09,
+       "status": "Advanced",
+       "url": "/ia/candidate/amy-nielsen?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "85"
+  },
+  {
+   "office": "Iowa House of Representatives District 86",
+   "url": "/ia/race/iowa-house-of-representatives-district-86-66437",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 52938.0,
+   "totalExpenditures": 51407.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "David Jacoby",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 51537.74,
+       "expenditures": 50640.11,
+       "status": "Won",
+       "url": "/ia/candidate/david-jacoby?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Stephen Knoner",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1400.0,
+       "expenditures": 766.88,
+       "status": "Lost",
+       "url": "/ia/candidate/stephen-knoner?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "David Jacoby",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 51537.74,
+       "expenditures": 50640.11,
+       "status": "Advanced",
+       "url": "/ia/candidate/david-jacoby?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "86"
+  },
+  {
+   "office": "Iowa House of Representatives District 87",
+   "url": "/ia/race/iowa-house-of-representatives-district-87-66438",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 64871.0,
+   "totalExpenditures": 57874.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jeffrey Shipley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 32941.0,
+       "expenditures": 31166.86,
+       "status": "Won",
+       "url": "/ia/candidate/jeffrey-shipley?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Thomas O'Donnell",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 31929.58,
+       "expenditures": 26707.63,
+       "status": "Lost",
+       "url": "/ia/candidate/thomas-odonnell?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jeffrey Shipley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 32941.0,
+       "expenditures": 31166.86,
+       "status": "Advanced",
+       "url": "/ia/candidate/jeffrey-shipley?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "87"
+  },
+  {
+   "office": "Iowa House of Representatives District 88",
+   "url": "/ia/race/iowa-house-of-representatives-district-88-66439",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 17787.0,
+   "totalExpenditures": 15267.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Helena Hayes",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17786.62,
+       "expenditures": 15266.79,
+       "status": "Won",
+       "url": "/ia/candidate/helena-hayes?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Helena Hayes",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17786.62,
+       "expenditures": 15266.79,
+       "status": "Advanced",
+       "url": "/ia/candidate/helena-hayes?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "88"
+  },
+  {
+   "office": "Iowa House of Representatives District 89",
+   "url": "/ia/race/iowa-house-of-representatives-district-89-66440",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 34374.0,
+   "totalExpenditures": 27891.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Elinor Levin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 34374.0,
+       "expenditures": 27891.15,
+       "status": "Won",
+       "url": "/ia/candidate/elinor-levin?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Elinor Levin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 34374.0,
+       "expenditures": 27891.15,
+       "status": "Advanced",
+       "url": "/ia/candidate/elinor-levin?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ty Bopp",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/ia/candidate/ty-bopp?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "89"
+  },
+  {
+   "office": "Iowa House of Representatives District 9",
+   "url": "/ia/race/iowa-house-of-representatives-district-9-66441",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 81719.0,
+   "totalExpenditures": 77885.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Henry Stone",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 79349.66,
+       "expenditures": 75660.22,
+       "status": "Won",
+       "url": "/ia/candidate/henry-stone?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Christian Schlaerth",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2369.66,
+       "expenditures": 2225.0,
+       "status": "Lost",
+       "url": "/ia/candidate/christian-schlaerth?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Christian Schlaerth",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2369.66,
+       "expenditures": 2225.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/christian-schlaerth?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Henry Stone",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 79349.66,
+       "expenditures": 75660.22,
+       "status": "Advanced",
+       "url": "/ia/candidate/henry-stone?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "Iowa House of Representatives District 90",
+   "url": "/ia/race/iowa-house-of-representatives-district-90-66442",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 79304.0,
+   "totalExpenditures": 70480.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Adam Zabner",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 79304.18,
+       "expenditures": 70479.56,
+       "status": "Won",
+       "url": "/ia/candidate/adam-zabner?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Adam Zabner",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 79304.18,
+       "expenditures": 70479.56,
+       "status": "Advanced",
+       "url": "/ia/candidate/adam-zabner?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "90"
+  },
+  {
+   "office": "Iowa House of Representatives District 91",
+   "url": "/ia/race/iowa-house-of-representatives-district-91-66443",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 122681.0,
+   "totalExpenditures": 59410.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Judd Lawler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 99807.45,
+       "expenditures": 36944.03,
+       "status": "Won",
+       "url": "/ia/candidate/judd-lawler?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jay Gorsh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 22874.0,
+       "expenditures": 22466.1,
+       "status": "Lost",
+       "url": "/ia/candidate/jay-gorsh?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jay Gorsh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 22874.0,
+       "expenditures": 22466.1,
+       "status": "Advanced",
+       "url": "/ia/candidate/jay-gorsh?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Judd Lawler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 99807.45,
+       "expenditures": 36944.03,
+       "status": "Advanced",
+       "url": "/ia/candidate/judd-lawler?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Adam Grier",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/ia/candidate/adam-grier?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "91"
+  },
+  {
+   "office": "Iowa House of Representatives District 92",
+   "url": "/ia/race/iowa-house-of-representatives-district-92-66444",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 107086.0,
+   "totalExpenditures": 93746.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Heather Hora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 79711.76,
+       "expenditures": 67842.28,
+       "status": "Won",
+       "url": "/ia/candidate/heather-hora?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Anna Banowsky",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27373.75,
+       "expenditures": 25903.81,
+       "status": "Lost",
+       "url": "/ia/candidate/anna-banowsky?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Anna Banowsky",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27373.75,
+       "expenditures": 25903.81,
+       "status": "Advanced",
+       "url": "/ia/candidate/anna-banowsky?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Heather Hora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 79711.76,
+       "expenditures": 67842.28,
+       "status": "Advanced",
+       "url": "/ia/candidate/heather-hora?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "92"
+  },
+  {
+   "office": "Iowa House of Representatives District 93",
+   "url": "/ia/race/iowa-house-of-representatives-district-93-66445",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 330595.0,
+   "totalExpenditures": 197755.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Gary Mohr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 322543.4,
+       "expenditures": 192200.48,
+       "status": "Won",
+       "url": "/ia/candidate/gary-mohr?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mindy Smith-Pace",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8051.11,
+       "expenditures": 5554.61,
+       "status": "Lost",
+       "url": "/ia/candidate/mindy-smith-pace?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Mindy Smith-Pace",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8051.11,
+       "expenditures": 5554.61,
+       "status": "Advanced",
+       "url": "/ia/candidate/mindy-smith-pace?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Gary Mohr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 322543.4,
+       "expenditures": 192200.48,
+       "status": "Advanced",
+       "url": "/ia/candidate/gary-mohr?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "93"
+  },
+  {
+   "office": "Iowa House of Representatives District 94",
+   "url": "/ia/race/iowa-house-of-representatives-district-94-66446",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 599226.0,
+   "totalExpenditures": 124954.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mike Vondran",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 561533.34,
+       "expenditures": 91486.3,
+       "status": "Won",
+       "url": "/ia/candidate/mike-vondran?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tracy Jones",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 37692.52,
+       "expenditures": 33467.83,
+       "status": "Lost",
+       "url": "/ia/candidate/tracy-jones?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Tracy Jones",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 37692.52,
+       "expenditures": 33467.83,
+       "status": "Advanced",
+       "url": "/ia/candidate/tracy-jones?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Mike Vondran",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 561533.34,
+       "expenditures": 91486.3,
+       "status": "Advanced",
+       "url": "/ia/candidate/mike-vondran?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "94"
+  },
+  {
+   "office": "Iowa House of Representatives District 95",
+   "url": "/ia/race/iowa-house-of-representatives-district-95-66447",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 168389.0,
+   "totalExpenditures": 159659.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Taylor Collins",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 156202.81,
+       "expenditures": 146343.16,
+       "status": "Won",
+       "url": "/ia/candidate/taylor-collins?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jeff Poulter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12186.43,
+       "expenditures": 13315.74,
+       "status": "Lost",
+       "url": "/ia/candidate/jeff-poulter?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jeff Poulter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12186.43,
+       "expenditures": 13315.74,
+       "status": "Advanced",
+       "url": "/ia/candidate/jeff-poulter?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Taylor Collins",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 156202.81,
+       "expenditures": 146343.16,
+       "status": "Advanced",
+       "url": "/ia/candidate/taylor-collins?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "95"
+  },
+  {
+   "office": "Iowa House of Representatives District 96",
+   "url": "/ia/race/iowa-house-of-representatives-district-96-66448",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 24282.0,
+   "totalExpenditures": 18410.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mark Cisneros",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17843.84,
+       "expenditures": 13626.59,
+       "status": "Won",
+       "url": "/ia/candidate/mark-cisneros?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mandy Moody",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6438.52,
+       "expenditures": 4783.04,
+       "status": "Lost",
+       "url": "/ia/candidate/mandy-moody?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Mandy Moody",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6438.52,
+       "expenditures": 4783.04,
+       "status": "Advanced",
+       "url": "/ia/candidate/mandy-moody?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Mark Cisneros",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17843.84,
+       "expenditures": 13626.59,
+       "status": "Advanced",
+       "url": "/ia/candidate/mark-cisneros?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "96"
+  },
+  {
+   "office": "Iowa House of Representatives District 97",
+   "url": "/ia/race/iowa-house-of-representatives-district-97-66449",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 33496.0,
+   "totalExpenditures": 36014.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Kenneth Croken",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 13978.4,
+       "expenditures": 16855.2,
+       "status": "Won",
+       "url": "/ia/candidate/kenneth-croken?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Josue Rodriguez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19517.71,
+       "expenditures": 19158.49,
+       "status": "Lost",
+       "url": "/ia/candidate/josue-rodriguez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Kenneth Croken",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 13978.4,
+       "expenditures": 16855.2,
+       "status": "Advanced",
+       "url": "/ia/candidate/kenneth-croken?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Josue Rodriguez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19517.71,
+       "expenditures": 19158.49,
+       "status": "Advanced",
+       "url": "/ia/candidate/josue-rodriguez?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "97"
+  },
+  {
+   "office": "Iowa House of Representatives District 98",
+   "url": "/ia/race/iowa-house-of-representatives-district-98-66450",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 19098.0,
+   "totalExpenditures": 13741.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Monica Kurth",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 15119.72,
+       "expenditures": 13741.18,
+       "status": "Won",
+       "url": "/ia/candidate/monica-kurth?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nathan Ramker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3978.02,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/ia/candidate/nathan-ramker?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Monica Kurth",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 15119.72,
+       "expenditures": 13741.18,
+       "status": "Advanced",
+       "url": "/ia/candidate/monica-kurth?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "98"
+  },
+  {
+   "office": "Iowa House of Representatives District 99",
+   "url": "/ia/race/iowa-house-of-representatives-district-99-66451",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 370447.0,
+   "totalExpenditures": 83326.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Matthew Rinker",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 302920.55,
+       "expenditures": 45840.69,
+       "status": "Won",
+       "url": "/ia/candidate/matthew-rinker?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jim Beres",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 67526.54,
+       "expenditures": 37485.01,
+       "status": "Lost",
+       "url": "/ia/candidate/jim-beres?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jim Beres",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 67526.54,
+       "expenditures": 37485.01,
+       "status": "Advanced",
+       "url": "/ia/candidate/jim-beres?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Matthew Rinker",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 302920.55,
+       "expenditures": 45840.69,
+       "status": "Advanced",
+       "url": "/ia/candidate/matthew-rinker?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "99"
+  },
+  {
+   "office": "Iowa State Senate District 10",
+   "url": "/ia/race/iowa-state-senate-district-10-66331",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 886377.0,
+   "totalExpenditures": 322415.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Dan Dawson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 886377.15,
+       "expenditures": 321203.91,
+       "status": "Won",
+       "url": "/ia/candidate/dan-dawson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Steven Gorman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 1210.72,
+       "status": "Lost",
+       "url": "/ia/candidate/steven-gorman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Steven Gorman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 1210.72,
+       "status": "Advanced",
+       "url": "/ia/candidate/steven-gorman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Dan Dawson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 886377.15,
+       "expenditures": 321203.91,
+       "status": "Advanced",
+       "url": "/ia/candidate/dan-dawson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "10"
+  },
+  {
+   "office": "Iowa State Senate District 12",
+   "url": "/ia/race/iowa-state-senate-district-12-66332",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 688927.0,
+   "totalExpenditures": 607356.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Amy Sinclair",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 588712.09,
+       "expenditures": 524467.17,
+       "status": "Won",
+       "url": "/ia/candidate/amy-sinclair?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nicole Loew",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 100215.25,
+       "expenditures": 82889.21,
+       "status": "Lost",
+       "url": "/ia/candidate/nicole-loew?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Nicole Loew",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 100215.25,
+       "expenditures": 82889.21,
+       "status": "Advanced",
+       "url": "/ia/candidate/nicole-loew?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Amy Sinclair",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 588712.09,
+       "expenditures": 524467.17,
+       "status": "Advanced",
+       "url": "/ia/candidate/amy-sinclair?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "12"
+  },
+  {
+   "office": "Iowa State Senate District 14",
+   "url": "/ia/race/iowa-state-senate-district-14-66333",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 2450387.0,
+   "totalExpenditures": 890231.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Sarah Trone Garriott",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1657427.49,
+       "expenditures": 853828.33,
+       "status": "Won",
+       "url": "/ia/candidate/sarah-trone-garriott?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mark Hanson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 792959.13,
+       "expenditures": 36402.6,
+       "status": "Lost",
+       "url": "/ia/candidate/mark-hanson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Sarah Trone Garriott",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1657427.49,
+       "expenditures": 853828.33,
+       "status": "Advanced",
+       "url": "/ia/candidate/sarah-trone-garriott?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Mark Hanson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 792959.13,
+       "expenditures": 36402.6,
+       "status": "Advanced",
+       "url": "/ia/candidate/mark-hanson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "14"
+  },
+  {
+   "office": "Iowa State Senate District 16",
+   "url": "/ia/race/iowa-state-senate-district-16-66334",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 80979.0,
+   "totalExpenditures": 59921.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Claire Celsi",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 64698.95,
+       "expenditures": 40982.31,
+       "status": "Won",
+       "url": "/ia/candidate/claire-celsi?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joshua Smith",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/ia/candidate/joshua-smith?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Claire Celsi",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 64698.95,
+       "expenditures": 40982.31,
+       "status": "Advanced",
+       "url": "/ia/candidate/claire-celsi?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Julie Lasche Brown",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16279.73,
+       "expenditures": 18938.65,
+       "status": "Lost",
+       "url": "/ia/candidate/julie-lasche-brown?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "16"
+  },
+  {
+   "office": "Iowa State Senate District 18",
+   "url": "/ia/race/iowa-state-senate-district-18-66335",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 57147.0,
+   "totalExpenditures": 62352.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Janet Petersen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 57147.0,
+       "expenditures": 62352.06,
+       "status": "Won",
+       "url": "/ia/candidate/janet-petersen?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Janet Petersen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 57147.0,
+       "expenditures": 62352.06,
+       "status": "Advanced",
+       "url": "/ia/candidate/janet-petersen?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "18"
+  },
+  {
+   "office": "Iowa State Senate District 2",
+   "url": "/ia/race/iowa-state-senate-district-2-66327",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 20585.0,
+   "totalExpenditures": 17359.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jeff Taylor",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20585.47,
+       "expenditures": 17358.57,
+       "status": "Won",
+       "url": "/ia/candidate/jeff-taylor?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jeff Taylor",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20585.47,
+       "expenditures": 17358.57,
+       "status": "Advanced",
+       "url": "/ia/candidate/jeff-taylor?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "2"
+  },
+  {
+   "office": "Iowa State Senate District 20",
+   "url": "/ia/race/iowa-state-senate-district-20-66336",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1788899.0,
+   "totalExpenditures": 592705.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mike Pike",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 779352.98,
+       "expenditures": 27591.51,
+       "status": "Won",
+       "url": "/ia/candidate/mike-pike?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nate Boulton",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1009546.07,
+       "expenditures": 565113.86,
+       "status": "Lost",
+       "url": "/ia/candidate/nate-boulton?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Nate Boulton",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1009546.07,
+       "expenditures": 565113.86,
+       "status": "Advanced",
+       "url": "/ia/candidate/nate-boulton?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Mike Pike",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 779352.98,
+       "expenditures": 27591.51,
+       "status": "Advanced",
+       "url": "/ia/candidate/mike-pike?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "20"
+  },
+  {
+   "office": "Iowa State Senate District 22",
+   "url": "/ia/race/iowa-state-senate-district-22-66337",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 2523449.0,
+   "totalExpenditures": 791807.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Matt Blake",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1228554.11,
+       "expenditures": 565721.31,
+       "status": "Won",
+       "url": "/ia/candidate/matt-blake?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brad Zaun",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1294894.75,
+       "expenditures": 226085.44,
+       "status": "Lost",
+       "url": "/ia/candidate/brad-zaun?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Matt Blake",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1228554.11,
+       "expenditures": 565721.31,
+       "status": "Advanced",
+       "url": "/ia/candidate/matt-blake?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Brad Zaun",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1294894.75,
+       "expenditures": 226085.44,
+       "status": "Advanced",
+       "url": "/ia/candidate/brad-zaun?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "22"
+  },
+  {
+   "office": "Iowa State Senate District 24",
+   "url": "/ia/race/iowa-state-senate-district-24-66338",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 157440.0,
+   "totalExpenditures": 163269.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jesse Green",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 127279.57,
+       "expenditures": 134200.15,
+       "status": "Won",
+       "url": "/ia/candidate/jesse-green?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Margaret Liston",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 30160.26,
+       "expenditures": 29069.13,
+       "status": "Lost",
+       "url": "/ia/candidate/margaret-liston?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Margaret Liston",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 30160.26,
+       "expenditures": 29069.13,
+       "status": "Advanced",
+       "url": "/ia/candidate/margaret-liston?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jesse Green",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 127279.57,
+       "expenditures": 134200.15,
+       "status": "Advanced",
+       "url": "/ia/candidate/jesse-green?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "24"
+  },
+  {
+   "office": "Iowa State Senate District 26",
+   "url": "/ia/race/iowa-state-senate-district-26-66339",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 293597.0,
+   "totalExpenditures": 163189.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Kara Warme",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 199827.81,
+       "expenditures": 93423.25,
+       "status": "Won",
+       "url": "/ia/candidate/kara-warme?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mike Wolfe",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 52040.0,
+       "expenditures": 33414.0,
+       "status": "Lost",
+       "url": "/ia/candidate/mike-wolfe?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Mike Wolfe",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 52040.0,
+       "expenditures": 33414.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/mike-wolfe?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Kara Warme",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 199827.81,
+       "expenditures": 93423.25,
+       "status": "Advanced",
+       "url": "/ia/candidate/kara-warme?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gannon Hendrick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 41729.11,
+       "expenditures": 36351.6,
+       "status": "Lost",
+       "url": "/ia/candidate/gannon-hendrick?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "26"
+  },
+  {
+   "office": "Iowa State Senate District 28",
+   "url": "/ia/race/iowa-state-senate-district-28-66340",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 65552.0,
+   "totalExpenditures": 60305.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Dennis Guth",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 31319.0,
+       "expenditures": 31574.9,
+       "status": "Won",
+       "url": "/ia/candidate/dennis-guth?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Cynthia Oppedal Paschen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 34233.3,
+       "expenditures": 28729.72,
+       "status": "Lost",
+       "url": "/ia/candidate/cynthia-oppedal-paschen?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Cynthia Oppedal Paschen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 34233.3,
+       "expenditures": 28729.72,
+       "status": "Advanced",
+       "url": "/ia/candidate/cynthia-oppedal-paschen?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Dennis Guth",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 31319.0,
+       "expenditures": 31574.9,
+       "status": "Advanced",
+       "url": "/ia/candidate/dennis-guth?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "28"
+  },
+  {
+   "office": "Iowa State Senate District 30",
+   "url": "/ia/race/iowa-state-senate-district-30-66341",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 376364.0,
+   "totalExpenditures": 349408.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Doug Campbell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 72049.95,
+       "expenditures": 47514.78,
+       "status": "Won",
+       "url": "/ia/candidate/doug-campbell?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Waylon Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 257916.99,
+       "expenditures": 262711.86,
+       "status": "Withdrew",
+       "url": "/ia/candidate/waylon-brown?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Richard Lorence",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 46397.48,
+       "expenditures": 39181.25,
+       "status": "Lost",
+       "url": "/ia/candidate/richard-lorence?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Richard Lorence",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 46397.48,
+       "expenditures": 39181.25,
+       "status": "Advanced",
+       "url": "/ia/candidate/richard-lorence?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Waylon Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 257916.99,
+       "expenditures": 262711.86,
+       "status": "Advanced",
+       "url": "/ia/candidate/waylon-brown?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Doug Campbell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 72049.95,
+       "expenditures": 47514.78,
+       "status": "Lost",
+       "url": "/ia/candidate/doug-campbell?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "30"
+  },
+  {
+   "office": "Iowa State Senate District 32",
+   "url": "/ia/race/iowa-state-senate-district-32-66342",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 169249.0,
+   "totalExpenditures": 150939.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Michael Klimesh",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 147855.0,
+       "expenditures": 129554.47,
+       "status": "Won",
+       "url": "/ia/candidate/michael-klimesh?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brian Bruening",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 21394.36,
+       "expenditures": 21384.99,
+       "status": "Lost",
+       "url": "/ia/candidate/brian-bruening?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Michael Klimesh",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 147855.0,
+       "expenditures": 129554.47,
+       "status": "Advanced",
+       "url": "/ia/candidate/michael-klimesh?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "32"
+  },
+  {
+   "office": "Iowa State Senate District 34",
+   "url": "/ia/race/iowa-state-senate-district-34-66343",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 162852.0,
+   "totalExpenditures": 138153.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Daniel Zumbach",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 127947.05,
+       "expenditures": 110090.56,
+       "status": "Won",
+       "url": "/ia/candidate/daniel-zumbach?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joseph Hegland",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 34905.31,
+       "expenditures": 28062.6,
+       "status": "Lost",
+       "url": "/ia/candidate/joseph-hegland?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Daniel Zumbach",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 127947.05,
+       "expenditures": 110090.56,
+       "status": "Advanced",
+       "url": "/ia/candidate/daniel-zumbach?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "34"
+  },
+  {
+   "office": "Iowa State Senate District 36",
+   "url": "/ia/race/iowa-state-senate-district-36-66344",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 269282.0,
+   "totalExpenditures": 232712.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Thomas Townsend",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 122215.85,
+       "expenditures": 91552.5,
+       "status": "Won",
+       "url": "/ia/candidate/thomas-townsend?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nicholas Molo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 147065.79,
+       "expenditures": 141159.16,
+       "status": "Lost",
+       "url": "/ia/candidate/nicholas-molo?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Thomas Townsend",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 122215.85,
+       "expenditures": 91552.5,
+       "status": "Advanced",
+       "url": "/ia/candidate/thomas-townsend?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Nicholas Molo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 147065.79,
+       "expenditures": 141159.16,
+       "status": "Advanced",
+       "url": "/ia/candidate/nicholas-molo?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "36"
+  },
+  {
+   "office": "Iowa State Senate District 38",
+   "url": "/ia/race/iowa-state-senate-district-38-66345",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 953325.0,
+   "totalExpenditures": 650487.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Dave Sires",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 154311.28,
+       "expenditures": 100225.69,
+       "status": "Won",
+       "url": "/ia/candidate/dave-sires?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Eric Giddens",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 777068.46,
+       "expenditures": 490561.99,
+       "status": "Lost",
+       "url": "/ia/candidate/eric-giddens?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Eric Giddens",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 777068.46,
+       "expenditures": 490561.99,
+       "status": "Advanced",
+       "url": "/ia/candidate/eric-giddens?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Dave Sires",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 154311.28,
+       "expenditures": 100225.69,
+       "status": "Advanced",
+       "url": "/ia/candidate/dave-sires?cycle=2024-election-cycle"
+      },
+      {
+       "name": "James Mccullagh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11698.82,
+       "expenditures": 50299.85,
+       "status": "Lost",
+       "url": "/ia/candidate/james-mccullagh?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Steven Schmitt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10246.23,
+       "expenditures": 9399.62,
+       "status": "Lost",
+       "url": "/ia/candidate/steven-schmitt?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "38"
+  },
+  {
+   "office": "Iowa State Senate District 4",
+   "url": "/ia/race/iowa-state-senate-district-4-66328",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 142220.0,
+   "totalExpenditures": 138335.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Timothy Kraayenbrink",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 142219.5,
+       "expenditures": 138335.0,
+       "status": "Won",
+       "url": "/ia/candidate/timothy-kraayenbrink?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Timothy Kraayenbrink",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 142219.5,
+       "expenditures": 138335.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/timothy-kraayenbrink?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "4"
+  },
+  {
+   "office": "Iowa State Senate District 40",
+   "url": "/ia/race/iowa-state-senate-district-40-66346",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 198955.0,
+   "totalExpenditures": 150628.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Art Staed",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 71930.12,
+       "expenditures": 46982.56,
+       "status": "Won",
+       "url": "/ia/candidate/art-staed?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kris Gulick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 127024.44,
+       "expenditures": 103645.63,
+       "status": "Lost",
+       "url": "/ia/candidate/kris-gulick?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Art Staed",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 71930.12,
+       "expenditures": 46982.56,
+       "status": "Advanced",
+       "url": "/ia/candidate/art-staed?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Kris Gulick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 127024.44,
+       "expenditures": 103645.63,
+       "status": "Advanced",
+       "url": "/ia/candidate/kris-gulick?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "40"
+  },
+  {
+   "office": "Iowa State Senate District 42",
+   "url": "/ia/race/iowa-state-senate-district-42-66347",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 44745.0,
+   "totalExpenditures": 40446.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Clinton Mcclintock",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 44745.0,
+       "expenditures": 40446.01,
+       "status": "Won",
+       "url": "/ia/candidate/clinton-mcclintock?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Clinton Mcclintock",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 44745.0,
+       "expenditures": 40446.01,
+       "status": "Advanced",
+       "url": "/ia/candidate/clinton-mcclintock?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "42"
+  },
+  {
+   "office": "Iowa State Senate District 44",
+   "url": "/ia/race/iowa-state-senate-district-44-66348",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 157316.0,
+   "totalExpenditures": 140572.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Adrian Dickey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 144761.14,
+       "expenditures": 125306.42,
+       "status": "Won",
+       "url": "/ia/candidate/adrian-dickey?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lisa Ossian",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 12555.0,
+       "expenditures": 15266.02,
+       "status": "Lost",
+       "url": "/ia/candidate/lisa-ossian?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Adrian Dickey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 144761.14,
+       "expenditures": 125306.42,
+       "status": "Advanced",
+       "url": "/ia/candidate/adrian-dickey?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "44"
+  },
+  {
+   "office": "Iowa State Senate District 46",
+   "url": "/ia/race/iowa-state-senate-district-46-66349",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 293887.0,
+   "totalExpenditures": 149282.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Dawn Driscoll",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 251526.46,
+       "expenditures": 111006.13,
+       "status": "Won",
+       "url": "/ia/candidate/dawn-driscoll?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ed Chabal",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 42360.75,
+       "expenditures": 38275.57,
+       "status": "Lost",
+       "url": "/ia/candidate/ed-chabal?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Ed Chabal",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 42360.75,
+       "expenditures": 38275.57,
+       "status": "Advanced",
+       "url": "/ia/candidate/ed-chabal?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Dawn Driscoll",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 251526.46,
+       "expenditures": 111006.13,
+       "status": "Advanced",
+       "url": "/ia/candidate/dawn-driscoll?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "46"
+  },
+  {
+   "office": "Iowa State Senate District 48",
+   "url": "/ia/race/iowa-state-senate-district-48-66350",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 130867.0,
+   "totalExpenditures": 109538.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mark Lofgren",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 90163.16,
+       "expenditures": 77970.93,
+       "status": "Won",
+       "url": "/ia/candidate/mark-lofgren?cycle=2024-election-cycle"
+      },
+      {
+       "name": "John Dabeet",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 40703.82,
+       "expenditures": 31567.29,
+       "status": "Lost",
+       "url": "/ia/candidate/john-dabeet?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "John Dabeet",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 40703.82,
+       "expenditures": 31567.29,
+       "status": "Advanced",
+       "url": "/ia/candidate/john-dabeet?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Mark Lofgren",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 90163.16,
+       "expenditures": 77970.93,
+       "status": "Advanced",
+       "url": "/ia/candidate/mark-lofgren?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "48"
+  },
+  {
+   "office": "Iowa State Senate District 50",
+   "url": "/ia/race/iowa-state-senate-district-50-66351",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 692467.0,
+   "totalExpenditures": 206159.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jeffrey Reichman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 536095.45,
+       "expenditures": 115042.05,
+       "status": "Won",
+       "url": "/ia/candidate/jeffrey-reichman?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nannette Griffin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 156371.74,
+       "expenditures": 91116.51,
+       "status": "Lost",
+       "url": "/ia/candidate/nannette-griffin?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Nannette Griffin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 156371.74,
+       "expenditures": 91116.51,
+       "status": "Advanced",
+       "url": "/ia/candidate/nannette-griffin?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jeffrey Reichman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 536095.45,
+       "expenditures": 115042.05,
+       "status": "Advanced",
+       "url": "/ia/candidate/jeffrey-reichman?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "50"
+  },
+  {
+   "office": "Iowa State Senate District 6",
+   "url": "/ia/race/iowa-state-senate-district-6-66329",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 141440.0,
+   "totalExpenditures": 125744.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jason Schultz",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 141440.0,
+       "expenditures": 125744.0,
+       "status": "Won",
+       "url": "/ia/candidate/jason-schultz?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David M Davis",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/ia/candidate/david-m-davis?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jason Schultz",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 141440.0,
+       "expenditures": 125744.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/jason-schultz?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "6"
+  },
+  {
+   "office": "Iowa State Senate District 8",
+   "url": "/ia/race/iowa-state-senate-district-8-66330",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 98141.0,
+   "totalExpenditures": 108356.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mark Costello",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 96141.23,
+       "expenditures": 106355.86,
+       "status": "Won",
+       "url": "/ia/candidate/mark-costello?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ryan Lee Roenfeld",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2000.0,
+       "expenditures": 2000.0,
+       "status": "Lost",
+       "url": "/ia/candidate/ryan-lee-roenfeld?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Ryan Lee Roenfeld",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2000.0,
+       "expenditures": 2000.0,
+       "status": "Advanced",
+       "url": "/ia/candidate/ryan-lee-roenfeld?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Mark Costello",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 96141.23,
+       "expenditures": 106355.86,
+       "status": "Advanced",
+       "url": "/ia/candidate/mark-costello?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "8"
+  }
+ ]
+}

@@ -1,0 +1,5530 @@
+{
+ "house": {
+  "2022": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 52.7,
+      "key": "1",
+      "popPct": 97.3
+     },
+     {
+      "areaPct": 47.3,
+      "key": "2",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Williams",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15726,
+    "pres2020New": 61.6,
+    "pres2020Old": 60.9,
+    "retainedAreaPct": 52.7,
+    "retainedPopPct": 97.3,
+    "text": "Kept 97% of its population from the 2016\u20132020 HD-1; gained the rest from the old HD-2 (3%). Entirely in Williams County. 2020 presidential margin R+60.9 on the 2016\u20132020 lines \u2192 R+61.6 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 68.6,
+      "key": "27",
+      "popPct": 58.5
+     },
+     {
+      "areaPct": 30.5,
+      "key": "16",
+      "popPct": 40.8
+     },
+     {
+      "areaPct": 0.9,
+      "key": "41",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pembina",
+      "popPct": 50.7
+     },
+     {
+      "county": "Cavalier",
+      "popPct": 27.5
+     },
+     {
+      "county": "Walsh",
+      "popPct": 21.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 16921,
+    "pres2020New": -3.5,
+    "pres2020Old": 47.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-10; it draws from the old HD-27 (58%), the old HD-16 (41%), the old HD-41 (1%). Counties: gained Cass (100%); lost Pembina, Cavalier, Walsh. 2020 presidential margin R+47.9 on the 2016\u20132020 lines \u2192 D+3.5 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 83.9,
+      "key": "11",
+      "popPct": 80.7
+     },
+     {
+      "areaPct": 15.8,
+      "key": "41",
+      "popPct": 19.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13612,
+    "pres2020New": -12.5,
+    "pres2020Old": -14.4,
+    "retainedAreaPct": 83.9,
+    "retainedPopPct": 80.7,
+    "text": "Kept 81% of its population from the 2016\u20132020 HD-11; gained the rest from the old HD-41 (19%). Entirely in Cass County. 2020 presidential margin D+14.4 on the 2016\u20132020 lines \u2192 D+12.5 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 3.1,
+      "key": "12",
+      "popPct": 85.7
+     },
+     {
+      "areaPct": 96.9,
+      "key": "29",
+      "popPct": 14.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stutsman",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16429,
+    "pres2020New": 37.1,
+    "pres2020Old": 34.6,
+    "retainedAreaPct": 3.1,
+    "retainedPopPct": 85.7,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-12; gained the rest from the old HD-29 (14%). Entirely in Stutsman County. 2020 presidential margin R+34.6 on the 2016\u20132020 lines \u2192 R+37.1 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 94.5,
+      "key": "13",
+      "popPct": 85.7
+     },
+     {
+      "areaPct": 5.3,
+      "key": "16",
+      "popPct": 14.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16915,
+    "pres2020New": 8.7,
+    "pres2020Old": 10.5,
+    "retainedAreaPct": 94.5,
+    "retainedPopPct": 85.7,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-13; gained the rest from the old HD-16 (14%). Entirely in Cass County. 2020 presidential margin R+10.5 on the 2016\u20132020 lines \u2192 R+8.7 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 79.1,
+      "key": "14",
+      "popPct": 74.6
+     },
+     {
+      "areaPct": 7.7,
+      "key": "23",
+      "popPct": 12.2
+     },
+     {
+      "areaPct": 11.7,
+      "key": "8",
+      "popPct": 11.8
+     },
+     {
+      "areaPct": 1.5,
+      "key": "28",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pierce",
+      "popPct": 21.9
+     },
+     {
+      "county": "Wells",
+      "popPct": 21.8
+     },
+     {
+      "county": "Burleigh",
+      "popPct": 13.2
+     },
+     {
+      "county": "Kidder",
+      "popPct": 13.1
+     },
+     {
+      "county": "Eddy",
+      "popPct": 12.2
+     },
+     {
+      "county": "Benson",
+      "popPct": 10.8
+     },
+     {
+      "county": "Sheridan",
+      "popPct": 6.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Burleigh",
+      "popPct": 13.2
+     },
+     {
+      "county": "Eddy",
+      "popPct": 12.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 18238,
+    "pres2020New": 56.2,
+    "pres2020Old": 57.4,
+    "retainedAreaPct": 79.1,
+    "retainedPopPct": 74.6,
+    "text": "Kept 75% of its population from the 2016\u20132020 HD-14; gained the rest from the old HD-23 (12%), the old HD-8 (12%), the old HD-28 (2%). Counties: gained Burleigh (13%), Eddy (12%). 2020 presidential margin R+57.4 on the 2016\u20132020 lines \u2192 R+56.2 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 74.9,
+      "key": "15",
+      "popPct": 76.0
+     },
+     {
+      "areaPct": 25.1,
+      "key": "23",
+      "popPct": 24.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ramsey",
+      "popPct": 68.6
+     },
+     {
+      "county": "Benson",
+      "popPct": 22.5
+     },
+     {
+      "county": "Towner",
+      "popPct": 8.2
+     },
+     {
+      "county": "Eddy",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Benson",
+      "popPct": 22.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17130,
+    "pres2020New": 31.4,
+    "pres2020Old": 37.4,
+    "retainedAreaPct": 74.9,
+    "retainedPopPct": 76.0,
+    "text": "Kept 76% of its population from the 2016\u20132020 HD-15; gained the rest from the old HD-23 (24%). Counties: gained Benson (22%). 2020 presidential margin R+37.4 on the 2016\u20132020 lines \u2192 R+31.4 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 73.3,
+      "key": "16",
+      "popPct": 83.5
+     },
+     {
+      "areaPct": 17.3,
+      "key": "22",
+      "popPct": 13.6
+     },
+     {
+      "areaPct": 9.4,
+      "key": "13",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16039,
+    "pres2020New": 7.4,
+    "pres2020Old": 0.9,
+    "retainedAreaPct": 73.3,
+    "retainedPopPct": 83.5,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-16; gained the rest from the old HD-22 (14%), the old HD-13 (3%). Entirely in Cass County. 2020 presidential margin R+0.9 on the 2016\u20132020 lines \u2192 R+7.4 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 27.2,
+      "key": "17",
+      "popPct": 97.3
+     },
+     {
+      "areaPct": 72.8,
+      "key": "20",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grand Forks",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13520,
+    "pres2020New": 15.2,
+    "pres2020Old": 14.7,
+    "retainedAreaPct": 27.2,
+    "retainedPopPct": 97.3,
+    "text": "Kept 97% of its population from the 2016\u20132020 HD-17; gained the rest from the old HD-20 (2%). Entirely in Grand Forks County. 2020 presidential margin R+14.7 on the 2016\u20132020 lines \u2192 R+15.2 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 19.7,
+      "key": "18",
+      "popPct": 76.5
+     },
+     {
+      "areaPct": 1.0,
+      "key": "17",
+      "popPct": 15.2
+     },
+     {
+      "areaPct": 0.3,
+      "key": "43",
+      "popPct": 5.7
+     },
+     {
+      "areaPct": 79.1,
+      "key": "19",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grand Forks",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15765,
+    "pres2020New": 2.6,
+    "pres2020Old": 4.4,
+    "retainedAreaPct": 19.7,
+    "retainedPopPct": 76.5,
+    "text": "Kept 76% of its population from the 2016\u20132020 HD-18; gained the rest from the old HD-17 (15%), the old HD-43 (6%), the old HD-19 (2%). Entirely in Grand Forks County. 2020 presidential margin R+4.4 on the 2016\u20132020 lines \u2192 R+2.6 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 80.5,
+      "key": "10",
+      "popPct": 66.7
+     },
+     {
+      "areaPct": 19.5,
+      "key": "19",
+      "popPct": 33.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Walsh",
+      "popPct": 51.7
+     },
+     {
+      "county": "Pembina",
+      "popPct": 42.6
+     },
+     {
+      "county": "Cavalier",
+      "popPct": 5.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pembina",
+      "popPct": 42.6
+     },
+     {
+      "county": "Cavalier",
+      "popPct": 5.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Grand Forks",
+      "popPct": 42.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 16058,
+    "pres2020New": 45.8,
+    "pres2020Old": 43.4,
+    "retainedAreaPct": 19.5,
+    "retainedPopPct": 33.3,
+    "text": "A new footprint: only 33% of its population was in the 2016\u20132020 HD-19; it draws from the old HD-10 (67%). Counties: gained Pembina (43%), Cavalier (6%); lost Grand Forks. 2020 presidential margin R+43.4 on the 2016\u20132020 lines \u2192 R+45.8 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "2",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Williams",
+      "popPct": 62.2
+     },
+     {
+      "county": "Mountrail",
+      "popPct": 16.4
+     },
+     {
+      "county": "Divide",
+      "popPct": 10.6
+     },
+     {
+      "county": "Burke",
+      "popPct": 10.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 20739,
+    "pres2020New": 71.9,
+    "pres2020Old": 70.6,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Williams, Mountrail, Divide, Burke counties.",
+    "toEra": "2022"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 54.4,
+      "key": "20",
+      "popPct": 63.2
+     },
+     {
+      "areaPct": 45.6,
+      "key": "19",
+      "popPct": 36.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grand Forks",
+      "popPct": 49.7
+     },
+     {
+      "county": "Traill",
+      "popPct": 39.1
+     },
+     {
+      "county": "Walsh",
+      "popPct": 11.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Walsh",
+      "popPct": 11.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cass",
+      "popPct": 5.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 20406,
+    "pres2020New": 35.7,
+    "pres2020Old": 31.3,
+    "retainedAreaPct": 54.4,
+    "retainedPopPct": 63.2,
+    "text": "Kept 63% of its population from the 2016\u20132020 HD-20; gained the rest from the old HD-19 (37%). Counties: gained Walsh (11%); lost Cass. 2020 presidential margin R+31.3 on the 2016\u20132020 lines \u2192 R+35.7 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 58.2,
+      "key": "21",
+      "popPct": 59.6
+     },
+     {
+      "areaPct": 13.9,
+      "key": "16",
+      "popPct": 18.7
+     },
+     {
+      "areaPct": 19.4,
+      "key": "11",
+      "popPct": 16.5
+     },
+     {
+      "areaPct": 8.4,
+      "key": "27",
+      "popPct": 5.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22315,
+    "pres2020New": -18.9,
+    "pres2020Old": -23.0,
+    "retainedAreaPct": 58.2,
+    "retainedPopPct": 59.6,
+    "text": "Kept 60% of its population from the 2016\u20132020 HD-21; gained the rest from the old HD-16 (19%), the old HD-11 (16%), the old HD-27 (5%). Entirely in Cass County. 2020 presidential margin D+23.0 on the 2016\u20132020 lines \u2192 D+18.9 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 69.2,
+      "key": "22",
+      "popPct": 86.6
+     },
+     {
+      "areaPct": 2.6,
+      "key": "25",
+      "popPct": 6.0
+     },
+     {
+      "areaPct": 20.5,
+      "key": "24",
+      "popPct": 5.0
+     },
+     {
+      "areaPct": 7.7,
+      "key": "20",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 21013,
+    "pres2020New": 26.6,
+    "pres2020Old": 24.2,
+    "retainedAreaPct": 69.2,
+    "retainedPopPct": 86.6,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-22; gained the rest from the old HD-25 (6%), the old HD-24 (5%), the old HD-20 (2%). Entirely in Cass County. 2020 presidential margin R+24.2 on the 2016\u20132020 lines \u2192 R+26.6 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "2",
+      "popPct": 69.0
+     },
+     {
+      "areaPct": 0.6,
+      "key": "1",
+      "popPct": 31.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Williams",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Williams",
+      "popPct": 99.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Benson",
+      "popPct": 28.4
+     },
+     {
+      "county": "Nelson",
+      "popPct": 22.4
+     },
+     {
+      "county": "Eddy",
+      "popPct": 17.5
+     },
+     {
+      "county": "Griggs",
+      "popPct": 17.1
+     },
+     {
+      "county": "Steele",
+      "popPct": 13.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 12276,
+    "pres2020New": 62.6,
+    "pres2020Old": 28.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-23; it draws from the old HD-2 (69%), the old HD-1 (31%). Counties: gained Williams (100%); lost Benson, Nelson, Eddy, Griggs and 1 more. 2020 presidential margin R+28.0 on the 2016\u20132020 lines \u2192 R+62.6 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 81.7,
+      "key": "24",
+      "popPct": 77.9
+     },
+     {
+      "areaPct": 18.2,
+      "key": "26",
+      "popPct": 22.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Barnes",
+      "popPct": 65.5
+     },
+     {
+      "county": "Ransom",
+      "popPct": 34.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Cass",
+      "popPct": 7.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 16556,
+    "pres2020New": 27.7,
+    "pres2020Old": 29.6,
+    "retainedAreaPct": 81.7,
+    "retainedPopPct": 77.9,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-24; gained the rest from the old HD-26 (22%). Counties: lost Cass. 2020 presidential margin R+29.6 on the 2016\u20132020 lines \u2192 R+27.7 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 40.1,
+      "key": "25",
+      "popPct": 77.0
+     },
+     {
+      "areaPct": 59.9,
+      "key": "26",
+      "popPct": 23.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Richland",
+      "popPct": 98.8
+     },
+     {
+      "county": "Sargent",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Cass",
+      "popPct": 13.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 16726,
+    "pres2020New": 32.6,
+    "pres2020Old": 32.6,
+    "retainedAreaPct": 40.1,
+    "retainedPopPct": 77.0,
+    "text": "Kept 77% of its population from the 2016\u20132020 HD-25; gained the rest from the old HD-26 (23%). Counties: lost Cass. 2020 presidential margin R+32.6 on the 2016\u20132020 lines \u2192 R+32.6 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 78.2,
+      "key": "39",
+      "popPct": 90.2
+     },
+     {
+      "areaPct": 14.5,
+      "key": "4",
+      "popPct": 7.3
+     },
+     {
+      "areaPct": 7.2,
+      "key": "36",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "McKenzie",
+      "popPct": 81.4
+     },
+     {
+      "county": "Dunn",
+      "popPct": 18.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "McKenzie",
+      "popPct": 81.4
+     },
+     {
+      "county": "Dunn",
+      "popPct": 18.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Sargent",
+      "popPct": 26.9
+     },
+     {
+      "county": "Ransom",
+      "popPct": 25.5
+     },
+     {
+      "county": "Richland",
+      "popPct": 25.4
+     },
+     {
+      "county": "Dickey",
+      "popPct": 22.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 15711,
+    "pres2020New": 79.4,
+    "pres2020Old": 31.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-26; it draws from the old HD-39 (90%), the old HD-4 (7%), the old HD-36 (2%). Counties: gained McKenzie (81%), Dunn (18%); lost Sargent, Ransom, Richland, Dickey. 2020 presidential margin R+31.4 on the 2016\u20132020 lines \u2192 R+79.4 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 33.2,
+      "key": "27",
+      "popPct": 85.8
+     },
+     {
+      "areaPct": 16.6,
+      "key": "22",
+      "popPct": 9.7
+     },
+     {
+      "areaPct": 50.3,
+      "key": "25",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16735,
+    "pres2020New": 11.1,
+    "pres2020Old": 3.0,
+    "retainedAreaPct": 33.2,
+    "retainedPopPct": 85.8,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-27; gained the rest from the old HD-22 (10%), the old HD-25 (4%). Entirely in Cass County. 2020 presidential margin R+3.0 on the 2016\u20132020 lines \u2192 R+11.1 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 54.7,
+      "key": "28",
+      "popPct": 43.7
+     },
+     {
+      "areaPct": 26.9,
+      "key": "26",
+      "popPct": 39.9
+     },
+     {
+      "areaPct": 18.3,
+      "key": "29",
+      "popPct": 16.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dickey",
+      "popPct": 29.1
+     },
+     {
+      "county": "LaMoure",
+      "popPct": 23.9
+     },
+     {
+      "county": "Sargent",
+      "popPct": 21.4
+     },
+     {
+      "county": "McIntosh",
+      "popPct": 14.7
+     },
+     {
+      "county": "Logan",
+      "popPct": 10.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Sargent",
+      "popPct": 21.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Emmons",
+      "popPct": 23.6
+     },
+     {
+      "county": "Burleigh",
+      "popPct": 22.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 17163,
+    "pres2020New": 48.7,
+    "pres2020Old": 65.5,
+    "retainedAreaPct": 54.7,
+    "retainedPopPct": 43.7,
+    "text": "A new footprint: only 44% of its population was in the 2016\u20132020 HD-28; it draws from the old HD-26 (40%), the old HD-29 (16%). Counties: gained Sargent (21%); lost Emmons, Burleigh. 2020 presidential margin R+65.5 on the 2016\u20132020 lines \u2192 R+48.7 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 51.0,
+      "key": "29",
+      "popPct": 54.6
+     },
+     {
+      "areaPct": 49.0,
+      "key": "23",
+      "popPct": 45.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stutsman",
+      "popPct": 33.0
+     },
+     {
+      "county": "Foster",
+      "popPct": 21.6
+     },
+     {
+      "county": "Nelson",
+      "popPct": 19.2
+     },
+     {
+      "county": "Griggs",
+      "popPct": 14.7
+     },
+     {
+      "county": "Steele",
+      "popPct": 11.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Nelson",
+      "popPct": 19.2
+     },
+     {
+      "county": "Griggs",
+      "popPct": 14.7
+     },
+     {
+      "county": "Steele",
+      "popPct": 11.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "LaMoure",
+      "popPct": 20.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 15680,
+    "pres2020New": 46.8,
+    "pres2020Old": 54.8,
+    "retainedAreaPct": 51.0,
+    "retainedPopPct": 54.6,
+    "text": "Kept 55% of its population from the 2016\u20132020 HD-29; gained the rest from the old HD-23 (45%). Counties: gained Nelson (19%), Griggs (15%), Steele (11%); lost LaMoure. 2020 presidential margin R+54.8 on the 2016\u20132020 lines \u2192 R+46.8 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "3",
+      "popPct": 98.0
+     },
+     {
+      "areaPct": 0.1,
+      "key": "40",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ward",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16647,
+    "pres2020New": 47.9,
+    "pres2020Old": 47.9,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 98.0,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-3; gained the rest from the old HD-40 (2%). Entirely in Ward County. 2020 presidential margin R+47.9 on the 2016\u20132020 lines \u2192 R+47.9 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 66.6,
+      "key": "30",
+      "popPct": 85.2
+     },
+     {
+      "areaPct": 2.5,
+      "key": "7",
+      "popPct": 7.5
+     },
+     {
+      "areaPct": 30.5,
+      "key": "28",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 0.3,
+      "key": "32",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 95.4
+     },
+     {
+      "county": "Morton",
+      "popPct": 4.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 18562,
+    "pres2020New": 42.8,
+    "pres2020Old": 40.8,
+    "retainedAreaPct": 66.6,
+    "retainedPopPct": 85.2,
+    "text": "Kept 85% of its population from the 2016\u20132020 HD-30; gained the rest from the old HD-7 (8%), the old HD-28 (4%), the old HD-32 (4%). Spans Burleigh, Morton counties. 2020 presidential margin R+40.8 on the 2016\u20132020 lines \u2192 R+42.8 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 95.7,
+      "key": "31",
+      "popPct": 89.4
+     },
+     {
+      "areaPct": 0.0,
+      "key": "34",
+      "popPct": 9.0
+     },
+     {
+      "areaPct": 1.0,
+      "key": "33",
+      "popPct": 1.0
+     },
+     {
+      "areaPct": 3.3,
+      "key": "36",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Morton",
+      "popPct": 58.4
+     },
+     {
+      "county": "Sioux",
+      "popPct": 21.6
+     },
+     {
+      "county": "Grant",
+      "popPct": 13.1
+     },
+     {
+      "county": "Hettinger",
+      "popPct": 6.2
+     },
+     {
+      "county": "Emmons",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17597,
+    "pres2020New": 44.4,
+    "pres2020Old": 44.9,
+    "retainedAreaPct": 95.7,
+    "retainedPopPct": 89.4,
+    "text": "Kept 89% of its population from the 2016\u20132020 HD-31; gained the rest from the old HD-34 (9%), the old HD-33 (1%), the old HD-36 (1%). Spans Morton, Sioux, Grant, Hettinger and 1 more counties. 2020 presidential margin R+44.9 on the 2016\u20132020 lines \u2192 R+44.4 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 93.7,
+      "key": "32",
+      "popPct": 92.7
+     },
+     {
+      "areaPct": 6.2,
+      "key": "30",
+      "popPct": 7.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15413,
+    "pres2020New": 30.2,
+    "pres2020Old": 30.8,
+    "retainedAreaPct": 93.7,
+    "retainedPopPct": 92.7,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-32; gained the rest from the old HD-30 (7%). Entirely in Burleigh County. 2020 presidential margin R+30.8 on the 2016\u20132020 lines \u2192 R+30.2 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 84.1,
+      "key": "33",
+      "popPct": 86.0
+     },
+     {
+      "areaPct": 15.7,
+      "key": "8",
+      "popPct": 13.3
+     },
+     {
+      "areaPct": 0.1,
+      "key": "31",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mercer",
+      "popPct": 53.6
+     },
+     {
+      "county": "Morton",
+      "popPct": 20.6
+     },
+     {
+      "county": "McLean",
+      "popPct": 13.5
+     },
+     {
+      "county": "Oliver",
+      "popPct": 12.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "McLean",
+      "popPct": 13.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15326,
+    "pres2020New": 66.7,
+    "pres2020Old": 68.1,
+    "retainedAreaPct": 84.1,
+    "retainedPopPct": 86.0,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-33; gained the rest from the old HD-8 (13%), the old HD-31 (1%). Counties: gained McLean (14%). 2020 presidential margin R+68.1 on the 2016\u20132020 lines \u2192 R+66.7 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "34",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Morton",
+      "popPct": 98.6
+     },
+     {
+      "county": "Burleigh",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16370,
+    "pres2020New": 39.3,
+    "pres2020Old": 39.2,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Morton, Burleigh counties.",
+    "toEra": "2022"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 89.7,
+      "key": "35",
+      "popPct": 84.3
+     },
+     {
+      "areaPct": 8.8,
+      "key": "47",
+      "popPct": 15.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17334,
+    "pres2020New": 21.0,
+    "pres2020Old": 20.3,
+    "retainedAreaPct": 89.7,
+    "retainedPopPct": 84.3,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-35; gained the rest from the old HD-47 (15%). Entirely in Burleigh County. 2020 presidential margin R+20.3 on the 2016\u20132020 lines \u2192 R+21.0 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 72.5,
+      "key": "36",
+      "popPct": 48.0
+     },
+     {
+      "areaPct": 0.2,
+      "key": "37",
+      "popPct": 43.7
+     },
+     {
+      "areaPct": 27.3,
+      "key": "33",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stark",
+      "popPct": 81.2
+     },
+     {
+      "county": "Morton",
+      "popPct": 18.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Hettinger",
+      "popPct": 6.6
+     },
+     {
+      "county": "Dunn",
+      "popPct": 5.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 18627,
+    "pres2020New": 64.9,
+    "pres2020Old": 71.4,
+    "retainedAreaPct": 72.5,
+    "retainedPopPct": 48.0,
+    "text": "A new footprint: only 48% of its population was in the 2016\u20132020 HD-36; it draws from the old HD-37 (44%), the old HD-33 (8%). Counties: lost Hettinger, Dunn. 2020 presidential margin R+71.4 on the 2016\u20132020 lines \u2192 R+64.9 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 48.3,
+      "key": "37",
+      "popPct": 90.5
+     },
+     {
+      "areaPct": 51.7,
+      "key": "36",
+      "popPct": 9.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stark",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 11890,
+    "pres2020New": 59.0,
+    "pres2020Old": 58.5,
+    "retainedAreaPct": 48.3,
+    "retainedPopPct": 90.5,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-37; gained the rest from the old HD-36 (10%). Entirely in Stark County. 2020 presidential margin R+58.5 on the 2016\u20132020 lines \u2192 R+59.0 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "38",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ward",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17237,
+    "pres2020New": 49.9,
+    "pres2020Old": 50.0,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Ward County.",
+    "toEra": "2022"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 77.3,
+      "key": "39",
+      "popPct": 49.7
+     },
+     {
+      "areaPct": 20.9,
+      "key": "36",
+      "popPct": 48.8
+     },
+     {
+      "areaPct": 1.8,
+      "key": "31",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stark",
+      "popPct": 38.3
+     },
+     {
+      "county": "Bowman",
+      "popPct": 17.3
+     },
+     {
+      "county": "Adams",
+      "popPct": 12.8
+     },
+     {
+      "county": "Golden Valley",
+      "popPct": 10.1
+     },
+     {
+      "county": "Hettinger",
+      "popPct": 8.1
+     },
+     {
+      "county": "Billings",
+      "popPct": 5.6
+     },
+     {
+      "county": "Slope",
+      "popPct": 4.1
+     },
+     {
+      "county": "Dunn",
+      "popPct": 3.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Stark",
+      "popPct": 38.3
+     },
+     {
+      "county": "Hettinger",
+      "popPct": 8.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "McKenzie",
+      "popPct": 56.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 17258,
+    "pres2020New": 70.5,
+    "pres2020Old": 74.3,
+    "retainedAreaPct": 77.3,
+    "retainedPopPct": 49.7,
+    "text": "A new footprint: only 50% of its population was in the 2016\u20132020 HD-39; it draws from the old HD-36 (49%), the old HD-31 (2%). Counties: gained Stark (38%), Hettinger (8%); lost McKenzie. 2020 presidential margin R+74.3 on the 2016\u20132020 lines \u2192 R+70.5 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "40",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ward",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16100,
+    "pres2020New": 33.4,
+    "pres2020Old": 33.4,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Ward County.",
+    "toEra": "2022"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 59.0,
+      "key": "41",
+      "popPct": 92.2
+     },
+     {
+      "areaPct": 40.9,
+      "key": "27",
+      "popPct": 7.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13580,
+    "pres2020New": 1.2,
+    "pres2020Old": 0.1,
+    "retainedAreaPct": 59.0,
+    "retainedPopPct": 92.2,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-41; gained the rest from the old HD-27 (8%). Entirely in Cass County. 2020 presidential margin R+0.1 on the 2016\u20132020 lines \u2192 R+1.2 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 2.0,
+      "key": "42",
+      "popPct": 69.4
+     },
+     {
+      "areaPct": 30.2,
+      "key": "17",
+      "popPct": 19.8
+     },
+     {
+      "areaPct": 55.6,
+      "key": "18",
+      "popPct": 9.3
+     },
+     {
+      "areaPct": 12.2,
+      "key": "20",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grand Forks",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 18259,
+    "pres2020New": 11.5,
+    "pres2020Old": 1.7,
+    "retainedAreaPct": 2.0,
+    "retainedPopPct": 69.4,
+    "text": "Kept 69% of its population from the 2016\u20132020 HD-42; gained the rest from the old HD-17 (20%), the old HD-18 (9%), the old HD-20 (2%). Entirely in Grand Forks County. 2020 presidential margin R+1.7 on the 2016\u20132020 lines \u2192 R+11.5 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 77.5,
+      "key": "43",
+      "popPct": 91.9
+     },
+     {
+      "areaPct": 22.5,
+      "key": "17",
+      "popPct": 8.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grand Forks",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15490,
+    "pres2020New": 2.2,
+    "pres2020Old": 0.7,
+    "retainedAreaPct": 77.5,
+    "retainedPopPct": 91.9,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-43; gained the rest from the old HD-17 (8%). Entirely in Grand Forks County. 2020 presidential margin R+0.7 on the 2016\u20132020 lines \u2192 R+2.2 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 68.1,
+      "key": "44",
+      "popPct": 79.6
+     },
+     {
+      "areaPct": 20.0,
+      "key": "21",
+      "popPct": 16.7
+     },
+     {
+      "areaPct": 11.9,
+      "key": "45",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 12109,
+    "pres2020New": -17.0,
+    "pres2020Old": -13.0,
+    "retainedAreaPct": 68.1,
+    "retainedPopPct": 79.6,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-44; gained the rest from the old HD-21 (17%), the old HD-45 (4%). Entirely in Cass County. 2020 presidential margin D+13.0 on the 2016\u20132020 lines \u2192 D+17.0 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 72.4,
+      "key": "45",
+      "popPct": 78.2
+     },
+     {
+      "areaPct": 0.4,
+      "key": "44",
+      "popPct": 19.9
+     },
+     {
+      "areaPct": 27.3,
+      "key": "20",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 19361,
+    "pres2020New": 10.1,
+    "pres2020Old": 13.8,
+    "retainedAreaPct": 72.4,
+    "retainedPopPct": 78.2,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-45; gained the rest from the old HD-44 (20%), the old HD-20 (2%). Entirely in Cass County. 2020 presidential margin R+13.8 on the 2016\u20132020 lines \u2192 R+10.1 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 78.9,
+      "key": "46",
+      "popPct": 95.9
+     },
+     {
+      "areaPct": 21.0,
+      "key": "27",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15925,
+    "pres2020New": -1.0,
+    "pres2020Old": -1.4,
+    "retainedAreaPct": 78.9,
+    "retainedPopPct": 95.9,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-46; gained the rest from the old HD-27 (4%). Entirely in Cass County. 2020 presidential margin D+1.4 on the 2016\u20132020 lines \u2192 D+1.0 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 57.3,
+      "key": "47",
+      "popPct": 94.4
+     },
+     {
+      "areaPct": 42.7,
+      "key": "7",
+      "popPct": 5.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 98.9
+     },
+     {
+      "county": "Morton",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16274,
+    "pres2020New": 37.5,
+    "pres2020Old": 35.0,
+    "retainedAreaPct": 57.3,
+    "retainedPopPct": 94.4,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-47; gained the rest from the old HD-7 (6%). Spans Burleigh, Morton counties. 2020 presidential margin R+35.0 on the 2016\u20132020 lines \u2192 R+37.5 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "4A": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "4",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mountrail",
+      "popPct": 51.9
+     },
+     {
+      "county": "McKenzie",
+      "popPct": 24.0
+     },
+     {
+      "county": "McLean",
+      "popPct": 15.5
+     },
+     {
+      "county": "Dunn",
+      "popPct": 6.9
+     },
+     {
+      "county": "Mercer",
+      "popPct": 1.1
+     },
+     {
+      "county": "Ward",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Mountrail",
+      "popPct": 51.9
+     },
+     {
+      "county": "McKenzie",
+      "popPct": 24.0
+     },
+     {
+      "county": "McLean",
+      "popPct": 15.5
+     },
+     {
+      "county": "Dunn",
+      "popPct": 6.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 7831,
+    "pres2020New": -19.5,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-4A; it draws from the old HD-4 (100%). Counties: gained Mountrail (52%), McKenzie (24%), McLean (16%) and 1 more.",
+    "toEra": "2022"
+   },
+   "4B": {
+    "contributors": [
+     {
+      "areaPct": 96.3,
+      "key": "4",
+      "popPct": 92.1
+     },
+     {
+      "areaPct": 3.7,
+      "key": "8",
+      "popPct": 7.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ward",
+      "popPct": 50.4
+     },
+     {
+      "county": "Mountrail",
+      "popPct": 32.5
+     },
+     {
+      "county": "McLean",
+      "popPct": 17.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Ward",
+      "popPct": 50.4
+     },
+     {
+      "county": "Mountrail",
+      "popPct": 32.5
+     },
+     {
+      "county": "McLean",
+      "popPct": 17.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 7152,
+    "pres2020New": 59.4,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-4B; it draws from the old HD-4 (92%), the old HD-8 (8%). Counties: gained Ward (50%), Mountrail (32%), McLean (17%).",
+    "toEra": "2022"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 92.7,
+      "key": "5",
+      "popPct": 96.1
+     },
+     {
+      "areaPct": 5.6,
+      "key": "3",
+      "popPct": 2.5
+     },
+     {
+      "areaPct": 1.5,
+      "key": "40",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ward",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15225,
+    "pres2020New": 37.0,
+    "pres2020Old": 37.0,
+    "retainedAreaPct": 92.7,
+    "retainedPopPct": 96.1,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-5; gained the rest from the old HD-3 (2%), the old HD-40 (1%). Entirely in Ward County. 2020 presidential margin R+37.0 on the 2016\u20132020 lines \u2192 R+37.0 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 78.1,
+      "key": "6",
+      "popPct": 68.8
+     },
+     {
+      "areaPct": 15.6,
+      "key": "8",
+      "popPct": 25.2
+     },
+     {
+      "areaPct": 6.3,
+      "key": "4",
+      "popPct": 6.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bottineau",
+      "popPct": 31.3
+     },
+     {
+      "county": "McHenry",
+      "popPct": 26.2
+     },
+     {
+      "county": "McLean",
+      "popPct": 26.1
+     },
+     {
+      "county": "Renville",
+      "popPct": 11.2
+     },
+     {
+      "county": "Ward",
+      "popPct": 5.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "McLean",
+      "popPct": 26.1
+     },
+     {
+      "county": "Ward",
+      "popPct": 5.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 20369,
+    "pres2020New": 58.1,
+    "pres2020Old": 56.4,
+    "retainedAreaPct": 78.1,
+    "retainedPopPct": 68.8,
+    "text": "Kept 69% of its population from the 2016\u20132020 HD-6; gained the rest from the old HD-8 (25%), the old HD-4 (6%). Counties: gained McLean (26%), Ward (5%). 2020 presidential margin R+56.4 on the 2016\u20132020 lines \u2192 R+58.1 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 87.2,
+      "key": "7",
+      "popPct": 99.3
+     },
+     {
+      "areaPct": 12.8,
+      "key": "8",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13015,
+    "pres2020New": 45.7,
+    "pres2020Old": 49.6,
+    "retainedAreaPct": 87.2,
+    "retainedPopPct": 99.3,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-7; gained the rest from the old HD-8 (1%). Entirely in Burleigh County. 2020 presidential margin R+49.6 on the 2016\u20132020 lines \u2192 R+45.7 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 0.8,
+      "key": "7",
+      "popPct": 38.5
+     },
+     {
+      "areaPct": 10.6,
+      "key": "8",
+      "popPct": 31.9
+     },
+     {
+      "areaPct": 88.6,
+      "key": "28",
+      "popPct": 29.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 82.2
+     },
+     {
+      "county": "Emmons",
+      "popPct": 17.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Emmons",
+      "popPct": 17.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "McLean",
+      "popPct": 48.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 18743,
+    "pres2020New": 63.1,
+    "pres2020Old": 61.2,
+    "retainedAreaPct": 10.6,
+    "retainedPopPct": 31.9,
+    "text": "A new footprint: only 32% of its population was in the 2016\u20132020 HD-8; it draws from the old HD-7 (38%), the old HD-28 (30%). Counties: gained Emmons (18%); lost McLean. 2020 presidential margin R+61.2 on the 2016\u20132020 lines \u2192 R+63.1 on the 2022 lines.",
+    "toEra": "2022"
+   },
+   "9A": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "9",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rolette",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Rolette",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9297,
+    "pres2020New": -40.0,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-9A; it draws from the old HD-9 (100%). Counties: gained Rolette (100%).",
+    "toEra": "2022"
+   },
+   "9B": {
+    "contributors": [
+     {
+      "areaPct": 11.0,
+      "key": "9",
+      "popPct": 45.0
+     },
+     {
+      "areaPct": 53.4,
+      "key": "10",
+      "popPct": 43.2
+     },
+     {
+      "areaPct": 35.5,
+      "key": "15",
+      "popPct": 11.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rolette",
+      "popPct": 44.9
+     },
+     {
+      "county": "Cavalier",
+      "popPct": 43.3
+     },
+     {
+      "county": "Towner",
+      "popPct": 11.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Rolette",
+      "popPct": 44.9
+     },
+     {
+      "county": "Cavalier",
+      "popPct": 43.3
+     },
+     {
+      "county": "Towner",
+      "popPct": 11.8
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 6428,
+    "pres2020New": 26.8,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-9B; it draws from the old HD-9 (45%), the old HD-10 (43%), the old HD-15 (12%). Counties: gained Rolette (45%), Cavalier (43%), Towner (12%).",
+    "toEra": "2022"
+   }
+  },
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "1",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Williams",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 15744,
+    "pres2020New": 61.6,
+    "pres2020Old": 61.6,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Williams County.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "10",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 16930,
+    "pres2020New": -3.5,
+    "pres2020Old": -3.5,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Cass County.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "11",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 13605,
+    "pres2020New": -12.5,
+    "pres2020Old": -12.5,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Cass County.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "12",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stutsman",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 16430,
+    "pres2020New": 37.1,
+    "pres2020Old": 37.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Stutsman County.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "13",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 16916,
+    "pres2020New": 8.7,
+    "pres2020Old": 8.7,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Cass County.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "14",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Wells",
+      "popPct": 23.2
+     },
+     {
+      "county": "Pierce",
+      "popPct": 22.5
+     },
+     {
+      "county": "Burleigh",
+      "popPct": 14.1
+     },
+     {
+      "county": "Kidder",
+      "popPct": 13.9
+     },
+     {
+      "county": "Eddy",
+      "popPct": 13.0
+     },
+     {
+      "county": "Sheridan",
+      "popPct": 7.4
+     },
+     {
+      "county": "Benson",
+      "popPct": 5.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 17166,
+    "pres2020New": 57.2,
+    "pres2020Old": 56.2,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Spans Wells, Pierce, Burleigh, Kidder and 3 more counties.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 45.7,
+      "key": "15",
+      "popPct": 78.6
+     },
+     {
+      "areaPct": 54.3,
+      "key": "9B",
+      "popPct": 21.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ramsey",
+      "popPct": 69.9
+     },
+     {
+      "county": "Cavalier",
+      "popPct": 16.8
+     },
+     {
+      "county": "Towner",
+      "popPct": 13.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cavalier",
+      "popPct": 16.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Benson",
+      "popPct": 22.5
+     }
+    ],
+    "fromEra": "2022",
+    "pop2020": 16541,
+    "pres2020New": 39.9,
+    "pres2020Old": 31.4,
+    "retainedAreaPct": 45.7,
+    "retainedPopPct": 78.6,
+    "text": "Kept 79% of its population from the 2022 HD-15; gained the rest from the old HD-9B (21%). Counties: gained Cavalier (17%); lost Benson. 2020 presidential margin R+31.4 on the 2022 lines \u2192 R+39.9 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "16",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 16040,
+    "pres2020New": 7.4,
+    "pres2020Old": 7.4,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Cass County.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "17",
+      "popPct": 96.3
+     },
+     {
+      "areaPct": 0.3,
+      "key": "18",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grand Forks",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 13987,
+    "pres2020New": 14.8,
+    "pres2020Old": 15.2,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 96.3,
+    "text": "Kept 96% of its population from the 2022 HD-17; gained the rest from the old HD-18 (4%). Entirely in Grand Forks County. 2020 presidential margin R+15.2 on the 2022 lines \u2192 R+14.8 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "18",
+      "popPct": 99.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grand Forks",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 15302,
+    "pres2020New": 2.5,
+    "pres2020Old": 2.6,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.6,
+    "text": "Lines unchanged from the 2022 map. Entirely in Grand Forks County.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "19",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Walsh",
+      "popPct": 51.7
+     },
+     {
+      "county": "Pembina",
+      "popPct": 42.6
+     },
+     {
+      "county": "Cavalier",
+      "popPct": 5.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 16059,
+    "pres2020New": 45.8,
+    "pres2020Old": 45.8,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Spans Walsh, Pembina, Cavalier counties.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "2",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Williams",
+      "popPct": 62.2
+     },
+     {
+      "county": "Mountrail",
+      "popPct": 16.4
+     },
+     {
+      "county": "Divide",
+      "popPct": 10.6
+     },
+     {
+      "county": "Burke",
+      "popPct": 10.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 20735,
+    "pres2020New": 71.9,
+    "pres2020Old": 71.9,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Spans Williams, Mountrail, Divide, Burke counties.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "20",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grand Forks",
+      "popPct": 49.7
+     },
+     {
+      "county": "Traill",
+      "popPct": 39.1
+     },
+     {
+      "county": "Walsh",
+      "popPct": 11.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 20406,
+    "pres2020New": 35.7,
+    "pres2020Old": 35.7,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Spans Grand Forks, Traill, Walsh counties.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "21",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 22321,
+    "pres2020New": -18.9,
+    "pres2020Old": -18.9,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Cass County.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "22",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 21007,
+    "pres2020New": 26.6,
+    "pres2020Old": 26.6,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Cass County.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "23",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Williams",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 12263,
+    "pres2020New": 62.6,
+    "pres2020Old": 62.6,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Williams County.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "24",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Barnes",
+      "popPct": 65.5
+     },
+     {
+      "county": "Ransom",
+      "popPct": 34.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 16556,
+    "pres2020New": 27.7,
+    "pres2020Old": 27.7,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Spans Barnes, Ransom counties.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "25",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Richland",
+      "popPct": 98.8
+     },
+     {
+      "county": "Sargent",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 16726,
+    "pres2020New": 32.6,
+    "pres2020Old": 32.6,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Spans Richland, Sargent counties.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "26",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "McKenzie",
+      "popPct": 81.4
+     },
+     {
+      "county": "Dunn",
+      "popPct": 18.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 15711,
+    "pres2020New": 79.4,
+    "pres2020Old": 79.4,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Spans McKenzie, Dunn counties.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "27",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 16730,
+    "pres2020New": 11.1,
+    "pres2020Old": 11.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Cass County.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "28",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dickey",
+      "popPct": 29.1
+     },
+     {
+      "county": "LaMoure",
+      "popPct": 23.9
+     },
+     {
+      "county": "Sargent",
+      "popPct": 21.4
+     },
+     {
+      "county": "McIntosh",
+      "popPct": 14.7
+     },
+     {
+      "county": "Logan",
+      "popPct": 10.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 17163,
+    "pres2020New": 48.7,
+    "pres2020Old": 48.7,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Spans Dickey, LaMoure, Sargent, McIntosh and 1 more counties.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "29",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stutsman",
+      "popPct": 32.9
+     },
+     {
+      "county": "Foster",
+      "popPct": 21.6
+     },
+     {
+      "county": "Nelson",
+      "popPct": 19.2
+     },
+     {
+      "county": "Griggs",
+      "popPct": 14.7
+     },
+     {
+      "county": "Steele",
+      "popPct": 11.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 15679,
+    "pres2020New": 46.8,
+    "pres2020Old": 46.8,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Spans Stutsman, Foster, Nelson, Griggs and 1 more counties.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "3",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ward",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 16655,
+    "pres2020New": 47.9,
+    "pres2020Old": 47.9,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Ward County.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "30",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 95.3
+     },
+     {
+      "county": "Morton",
+      "popPct": 4.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 18379,
+    "pres2020New": 42.9,
+    "pres2020Old": 42.8,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Spans Burleigh, Morton counties.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "31",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Morton",
+      "popPct": 58.4
+     },
+     {
+      "county": "Sioux",
+      "popPct": 21.6
+     },
+     {
+      "county": "Grant",
+      "popPct": 13.1
+     },
+     {
+      "county": "Hettinger",
+      "popPct": 6.2
+     },
+     {
+      "county": "Emmons",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 17590,
+    "pres2020New": 44.3,
+    "pres2020Old": 44.4,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2022 map. Spans Morton, Sioux, Grant, Hettinger and 1 more counties.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 98.9,
+      "key": "32",
+      "popPct": 98.8
+     },
+     {
+      "areaPct": 1.0,
+      "key": "30",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 15594,
+    "pres2020New": 30.3,
+    "pres2020Old": 30.2,
+    "retainedAreaPct": 98.9,
+    "retainedPopPct": 98.8,
+    "text": "Kept 99% of its population from the 2022 HD-32; gained the rest from the old HD-30 (1%). Entirely in Burleigh County. 2020 presidential margin R+30.2 on the 2022 lines \u2192 R+30.3 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "33",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mercer",
+      "popPct": 53.6
+     },
+     {
+      "county": "Morton",
+      "popPct": 20.6
+     },
+     {
+      "county": "McLean",
+      "popPct": 13.5
+     },
+     {
+      "county": "Oliver",
+      "popPct": 12.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 15326,
+    "pres2020New": 66.8,
+    "pres2020Old": 66.7,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Spans Mercer, Morton, McLean, Oliver counties.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "34",
+      "popPct": 99.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Morton",
+      "popPct": 98.6
+     },
+     {
+      "county": "Burleigh",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 16378,
+    "pres2020New": 39.3,
+    "pres2020Old": 39.3,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 99.8,
+    "text": "Lines unchanged from the 2022 map. Spans Morton, Burleigh counties.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "35",
+      "popPct": 99.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 17340,
+    "pres2020New": 21.0,
+    "pres2020Old": 21.0,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.8,
+    "text": "Lines unchanged from the 2022 map. Entirely in Burleigh County.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "36",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stark",
+      "popPct": 81.2
+     },
+     {
+      "county": "Morton",
+      "popPct": 18.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 18665,
+    "pres2020New": 64.9,
+    "pres2020Old": 64.9,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2022 map. Spans Stark, Morton counties.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "37",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stark",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 11859,
+    "pres2020New": 59.0,
+    "pres2020Old": 59.0,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Stark County.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "38",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ward",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 17237,
+    "pres2020New": 50.1,
+    "pres2020Old": 49.9,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Ward County.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "39",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stark",
+      "popPct": 38.3
+     },
+     {
+      "county": "Bowman",
+      "popPct": 17.3
+     },
+     {
+      "county": "Adams",
+      "popPct": 12.8
+     },
+     {
+      "county": "Golden Valley",
+      "popPct": 10.1
+     },
+     {
+      "county": "Hettinger",
+      "popPct": 8.1
+     },
+     {
+      "county": "Billings",
+      "popPct": 5.6
+     },
+     {
+      "county": "Slope",
+      "popPct": 4.1
+     },
+     {
+      "county": "Dunn",
+      "popPct": 3.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 17254,
+    "pres2020New": 70.5,
+    "pres2020Old": 70.5,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Spans Stark, Bowman, Adams, Golden Valley and 4 more counties.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "40",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ward",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 16077,
+    "pres2020New": 33.4,
+    "pres2020Old": 33.4,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Ward County.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "41",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 13578,
+    "pres2020New": 1.2,
+    "pres2020Old": 1.2,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2022 map. Entirely in Cass County.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "42",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grand Forks",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 18266,
+    "pres2020New": 11.5,
+    "pres2020Old": 11.5,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2022 map. Entirely in Grand Forks County.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "43",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grand Forks",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 15479,
+    "pres2020New": 2.2,
+    "pres2020Old": 2.2,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2022 map. Entirely in Grand Forks County.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "44",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 12120,
+    "pres2020New": -17.0,
+    "pres2020Old": -17.0,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Cass County.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "45",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 19334,
+    "pres2020New": 10.1,
+    "pres2020Old": 10.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Cass County.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "46",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 15945,
+    "pres2020New": -1.0,
+    "pres2020Old": -1.0,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2022 map. Entirely in Cass County.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "47",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 98.9
+     },
+     {
+      "county": "Morton",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 16276,
+    "pres2020New": 37.5,
+    "pres2020Old": 37.5,
+    "retainedAreaPct": 99.5,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2022 map. Spans Burleigh, Morton counties.",
+    "toEra": "current"
+   },
+   "4A": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "4A",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mountrail",
+      "popPct": 51.9
+     },
+     {
+      "county": "McKenzie",
+      "popPct": 24.0
+     },
+     {
+      "county": "McLean",
+      "popPct": 15.5
+     },
+     {
+      "county": "Dunn",
+      "popPct": 6.9
+     },
+     {
+      "county": "Mercer",
+      "popPct": 1.1
+     },
+     {
+      "county": "Ward",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 7831,
+    "pres2020New": -19.5,
+    "pres2020Old": -19.5,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Spans Mountrail, McKenzie, McLean, Dunn and 2 more counties.",
+    "toEra": "current"
+   },
+   "4B": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "4B",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ward",
+      "popPct": 50.4
+     },
+     {
+      "county": "Mountrail",
+      "popPct": 32.5
+     },
+     {
+      "county": "McLean",
+      "popPct": 17.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 7157,
+    "pres2020New": 59.4,
+    "pres2020Old": 59.4,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Spans Ward, Mountrail, McLean counties.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "5",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ward",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 15241,
+    "pres2020New": 37.0,
+    "pres2020Old": 37.0,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Entirely in Ward County.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "6",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bottineau",
+      "popPct": 31.3
+     },
+     {
+      "county": "McHenry",
+      "popPct": 26.2
+     },
+     {
+      "county": "McLean",
+      "popPct": 26.1
+     },
+     {
+      "county": "Renville",
+      "popPct": 11.2
+     },
+     {
+      "county": "Ward",
+      "popPct": 5.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 20366,
+    "pres2020New": 58.1,
+    "pres2020Old": 58.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Spans Bottineau, McHenry, McLean, Renville and 1 more counties.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "7",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 13008,
+    "pres2020New": 45.7,
+    "pres2020Old": 45.7,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2022 map. Entirely in Burleigh County.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "8",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 82.2
+     },
+     {
+      "county": "Emmons",
+      "popPct": 17.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 18741,
+    "pres2020New": 63.1,
+    "pres2020Old": 63.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2022 map. Spans Burleigh, Emmons counties.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 34.4,
+      "key": "9A",
+      "popPct": 53.5
+     },
+     {
+      "areaPct": 26.2,
+      "key": "15",
+      "popPct": 23.7
+     },
+     {
+      "areaPct": 11.4,
+      "key": "9B",
+      "popPct": 16.6
+     },
+     {
+      "areaPct": 27.9,
+      "key": "14",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rolette",
+      "popPct": 70.0
+     },
+     {
+      "county": "Benson",
+      "popPct": 27.5
+     },
+     {
+      "county": "Ramsey",
+      "popPct": 1.0
+     },
+     {
+      "county": "Pierce",
+      "popPct": 0.7
+     },
+     {
+      "county": "Eddy",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Rolette",
+      "popPct": 70.0
+     },
+     {
+      "county": "Benson",
+      "popPct": 27.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2022",
+    "pop2020": 17387,
+    "pres2020New": -20.3,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2022 HD-9; it draws from the old HD-9A (54%), the old HD-15 (24%), the old HD-9B (17%) and 1 more. Counties: gained Rolette (70%), Benson (28%).",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 52.7,
+      "key": "1",
+      "popPct": 97.3
+     },
+     {
+      "areaPct": 47.3,
+      "key": "2",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Williams",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15743,
+    "pres2020New": 61.6,
+    "pres2020Old": 60.9,
+    "retainedAreaPct": 52.7,
+    "retainedPopPct": 97.3,
+    "text": "Kept 97% of its population from the 2016\u20132020 SD-1; gained the rest from the old SD-2 (3%). Entirely in Williams County. 2020 presidential margin R+60.9 on the 2016\u20132020 lines \u2192 R+61.6 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 68.5,
+      "key": "27",
+      "popPct": 58.4
+     },
+     {
+      "areaPct": 30.5,
+      "key": "16",
+      "popPct": 40.8
+     },
+     {
+      "areaPct": 0.9,
+      "key": "41",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pembina",
+      "popPct": 50.7
+     },
+     {
+      "county": "Cavalier",
+      "popPct": 27.5
+     },
+     {
+      "county": "Walsh",
+      "popPct": 21.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 16947,
+    "pres2020New": -3.5,
+    "pres2020Old": 47.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-10; it draws from the old SD-27 (58%), the old SD-16 (41%), the old SD-41 (1%). Counties: gained Cass (100%); lost Pembina, Cavalier, Walsh. 2020 presidential margin R+47.9 on the 2016\u20132020 lines \u2192 D+3.5 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 84.0,
+      "key": "11",
+      "popPct": 80.9
+     },
+     {
+      "areaPct": 15.7,
+      "key": "41",
+      "popPct": 19.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13608,
+    "pres2020New": -12.5,
+    "pres2020Old": -14.4,
+    "retainedAreaPct": 84.0,
+    "retainedPopPct": 80.9,
+    "text": "Kept 81% of its population from the 2016\u20132020 SD-11; gained the rest from the old SD-41 (19%). Entirely in Cass County. 2020 presidential margin D+14.4 on the 2016\u20132020 lines \u2192 D+12.5 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 3.1,
+      "key": "12",
+      "popPct": 85.7
+     },
+     {
+      "areaPct": 96.9,
+      "key": "29",
+      "popPct": 14.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stutsman",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16436,
+    "pres2020New": 37.1,
+    "pres2020Old": 34.6,
+    "retainedAreaPct": 3.1,
+    "retainedPopPct": 85.7,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-12; gained the rest from the old SD-29 (14%). Entirely in Stutsman County. 2020 presidential margin R+34.6 on the 2016\u20132020 lines \u2192 R+37.1 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 94.6,
+      "key": "13",
+      "popPct": 85.8
+     },
+     {
+      "areaPct": 5.3,
+      "key": "16",
+      "popPct": 14.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16913,
+    "pres2020New": 8.7,
+    "pres2020Old": 10.5,
+    "retainedAreaPct": 94.6,
+    "retainedPopPct": 85.8,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-13; gained the rest from the old SD-16 (14%). Entirely in Cass County. 2020 presidential margin R+10.5 on the 2016\u20132020 lines \u2192 R+8.7 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 77.4,
+      "key": "14",
+      "popPct": 73.0
+     },
+     {
+      "areaPct": 8.3,
+      "key": "23",
+      "popPct": 12.9
+     },
+     {
+      "areaPct": 12.7,
+      "key": "8",
+      "popPct": 12.5
+     },
+     {
+      "areaPct": 1.6,
+      "key": "28",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Wells",
+      "popPct": 23.2
+     },
+     {
+      "county": "Pierce",
+      "popPct": 22.5
+     },
+     {
+      "county": "Burleigh",
+      "popPct": 14.1
+     },
+     {
+      "county": "Kidder",
+      "popPct": 13.9
+     },
+     {
+      "county": "Eddy",
+      "popPct": 13.0
+     },
+     {
+      "county": "Sheridan",
+      "popPct": 7.4
+     },
+     {
+      "county": "Benson",
+      "popPct": 5.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Burleigh",
+      "popPct": 14.1
+     },
+     {
+      "county": "Eddy",
+      "popPct": 13.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17166,
+    "pres2020New": 57.2,
+    "pres2020Old": 57.4,
+    "retainedAreaPct": 77.4,
+    "retainedPopPct": 73.0,
+    "text": "Kept 73% of its population from the 2016\u20132020 SD-14; gained the rest from the old SD-23 (13%), the old SD-8 (12%), the old SD-28 (2%). Counties: gained Burleigh (14%), Eddy (13%). 2020 presidential margin R+57.4 on the 2016\u20132020 lines \u2192 R+57.2 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 67.4,
+      "key": "15",
+      "popPct": 83.2
+     },
+     {
+      "areaPct": 32.6,
+      "key": "10",
+      "popPct": 16.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ramsey",
+      "popPct": 69.9
+     },
+     {
+      "county": "Cavalier",
+      "popPct": 16.8
+     },
+     {
+      "county": "Towner",
+      "popPct": 13.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cavalier",
+      "popPct": 16.8
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16541,
+    "pres2020New": 39.9,
+    "pres2020Old": 37.4,
+    "retainedAreaPct": 67.4,
+    "retainedPopPct": 83.2,
+    "text": "Kept 83% of its population from the 2016\u20132020 SD-15; gained the rest from the old SD-10 (17%). Counties: gained Cavalier (17%). 2020 presidential margin R+37.4 on the 2016\u20132020 lines \u2192 R+39.9 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 73.3,
+      "key": "16",
+      "popPct": 83.4
+     },
+     {
+      "areaPct": 17.3,
+      "key": "22",
+      "popPct": 13.6
+     },
+     {
+      "areaPct": 9.3,
+      "key": "13",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16039,
+    "pres2020New": 7.4,
+    "pres2020Old": 0.9,
+    "retainedAreaPct": 73.3,
+    "retainedPopPct": 83.4,
+    "text": "Kept 83% of its population from the 2016\u20132020 SD-16; gained the rest from the old SD-22 (14%), the old SD-13 (3%). Entirely in Cass County. 2020 presidential margin R+0.9 on the 2016\u20132020 lines \u2192 R+7.4 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 27.5,
+      "key": "17",
+      "popPct": 97.6
+     },
+     {
+      "areaPct": 72.5,
+      "key": "20",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grand Forks",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13985,
+    "pres2020New": 14.8,
+    "pres2020Old": 14.7,
+    "retainedAreaPct": 27.5,
+    "retainedPopPct": 97.6,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-17; gained the rest from the old SD-20 (2%). Entirely in Grand Forks County. 2020 presidential margin R+14.7 on the 2016\u20132020 lines \u2192 R+14.8 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 19.7,
+      "key": "18",
+      "popPct": 78.9
+     },
+     {
+      "areaPct": 0.8,
+      "key": "17",
+      "popPct": 12.5
+     },
+     {
+      "areaPct": 0.3,
+      "key": "43",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 79.2,
+      "key": "19",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grand Forks",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15302,
+    "pres2020New": 2.5,
+    "pres2020Old": 4.4,
+    "retainedAreaPct": 19.7,
+    "retainedPopPct": 78.9,
+    "text": "Kept 79% of its population from the 2016\u20132020 SD-18; gained the rest from the old SD-17 (12%), the old SD-43 (6%), the old SD-19 (2%). Entirely in Grand Forks County. 2020 presidential margin R+4.4 on the 2016\u20132020 lines \u2192 R+2.5 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 80.5,
+      "key": "10",
+      "popPct": 66.7
+     },
+     {
+      "areaPct": 19.5,
+      "key": "19",
+      "popPct": 33.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Walsh",
+      "popPct": 51.7
+     },
+     {
+      "county": "Pembina",
+      "popPct": 42.6
+     },
+     {
+      "county": "Cavalier",
+      "popPct": 5.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pembina",
+      "popPct": 42.6
+     },
+     {
+      "county": "Cavalier",
+      "popPct": 5.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Grand Forks",
+      "popPct": 42.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 16059,
+    "pres2020New": 45.8,
+    "pres2020Old": 43.4,
+    "retainedAreaPct": 19.5,
+    "retainedPopPct": 33.3,
+    "text": "A new footprint: only 33% of its population was in the 2016\u20132020 SD-19; it draws from the old SD-10 (67%). Counties: gained Pembina (43%), Cavalier (6%); lost Grand Forks. 2020 presidential margin R+43.4 on the 2016\u20132020 lines \u2192 R+45.8 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "2",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Williams",
+      "popPct": 62.2
+     },
+     {
+      "county": "Mountrail",
+      "popPct": 16.4
+     },
+     {
+      "county": "Divide",
+      "popPct": 10.6
+     },
+     {
+      "county": "Burke",
+      "popPct": 10.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 20739,
+    "pres2020New": 71.9,
+    "pres2020Old": 70.6,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Williams, Mountrail, Divide, Burke counties.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 54.4,
+      "key": "20",
+      "popPct": 63.2
+     },
+     {
+      "areaPct": 45.6,
+      "key": "19",
+      "popPct": 36.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grand Forks",
+      "popPct": 49.7
+     },
+     {
+      "county": "Traill",
+      "popPct": 39.1
+     },
+     {
+      "county": "Walsh",
+      "popPct": 11.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Walsh",
+      "popPct": 11.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cass",
+      "popPct": 5.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 20406,
+    "pres2020New": 35.7,
+    "pres2020Old": 31.3,
+    "retainedAreaPct": 54.4,
+    "retainedPopPct": 63.2,
+    "text": "Kept 63% of its population from the 2016\u20132020 SD-20; gained the rest from the old SD-19 (37%). Counties: gained Walsh (11%); lost Cass. 2020 presidential margin R+31.3 on the 2016\u20132020 lines \u2192 R+35.7 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 58.3,
+      "key": "21",
+      "popPct": 59.6
+     },
+     {
+      "areaPct": 13.9,
+      "key": "16",
+      "popPct": 18.7
+     },
+     {
+      "areaPct": 19.3,
+      "key": "11",
+      "popPct": 16.5
+     },
+     {
+      "areaPct": 8.3,
+      "key": "27",
+      "popPct": 5.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22322,
+    "pres2020New": -18.9,
+    "pres2020Old": -23.0,
+    "retainedAreaPct": 58.3,
+    "retainedPopPct": 59.6,
+    "text": "Kept 60% of its population from the 2016\u20132020 SD-21; gained the rest from the old SD-16 (19%), the old SD-11 (16%), the old SD-27 (5%). Entirely in Cass County. 2020 presidential margin D+23.0 on the 2016\u20132020 lines \u2192 D+18.9 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 69.2,
+      "key": "22",
+      "popPct": 86.6
+     },
+     {
+      "areaPct": 2.6,
+      "key": "25",
+      "popPct": 6.0
+     },
+     {
+      "areaPct": 20.5,
+      "key": "24",
+      "popPct": 5.0
+     },
+     {
+      "areaPct": 7.7,
+      "key": "20",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 21006,
+    "pres2020New": 26.6,
+    "pres2020Old": 24.2,
+    "retainedAreaPct": 69.2,
+    "retainedPopPct": 86.6,
+    "text": "Kept 87% of its population from the 2016\u20132020 SD-22; gained the rest from the old SD-25 (6%), the old SD-24 (5%), the old SD-20 (2%). Entirely in Cass County. 2020 presidential margin R+24.2 on the 2016\u20132020 lines \u2192 R+26.6 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "2",
+      "popPct": 69.1
+     },
+     {
+      "areaPct": 0.6,
+      "key": "1",
+      "popPct": 30.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Williams",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Williams",
+      "popPct": 99.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Benson",
+      "popPct": 28.4
+     },
+     {
+      "county": "Nelson",
+      "popPct": 22.4
+     },
+     {
+      "county": "Eddy",
+      "popPct": 17.5
+     },
+     {
+      "county": "Griggs",
+      "popPct": 17.1
+     },
+     {
+      "county": "Steele",
+      "popPct": 13.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 12260,
+    "pres2020New": 62.6,
+    "pres2020Old": 28.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-23; it draws from the old SD-2 (69%), the old SD-1 (31%). Counties: gained Williams (100%); lost Benson, Nelson, Eddy, Griggs and 1 more. 2020 presidential margin R+28.0 on the 2016\u20132020 lines \u2192 R+62.6 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 81.7,
+      "key": "24",
+      "popPct": 77.9
+     },
+     {
+      "areaPct": 18.2,
+      "key": "26",
+      "popPct": 22.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Barnes",
+      "popPct": 65.5
+     },
+     {
+      "county": "Ransom",
+      "popPct": 34.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Cass",
+      "popPct": 7.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 16556,
+    "pres2020New": 27.7,
+    "pres2020Old": 29.6,
+    "retainedAreaPct": 81.7,
+    "retainedPopPct": 77.9,
+    "text": "Kept 78% of its population from the 2016\u20132020 SD-24; gained the rest from the old SD-26 (22%). Counties: lost Cass. 2020 presidential margin R+29.6 on the 2016\u20132020 lines \u2192 R+27.7 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 40.1,
+      "key": "25",
+      "popPct": 77.0
+     },
+     {
+      "areaPct": 59.9,
+      "key": "26",
+      "popPct": 23.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Richland",
+      "popPct": 98.8
+     },
+     {
+      "county": "Sargent",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Cass",
+      "popPct": 13.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 16726,
+    "pres2020New": 32.6,
+    "pres2020Old": 32.6,
+    "retainedAreaPct": 40.1,
+    "retainedPopPct": 77.0,
+    "text": "Kept 77% of its population from the 2016\u20132020 SD-25; gained the rest from the old SD-26 (23%). Counties: lost Cass. 2020 presidential margin R+32.6 on the 2016\u20132020 lines \u2192 R+32.6 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 78.2,
+      "key": "39",
+      "popPct": 90.2
+     },
+     {
+      "areaPct": 14.5,
+      "key": "4",
+      "popPct": 7.3
+     },
+     {
+      "areaPct": 7.2,
+      "key": "36",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "McKenzie",
+      "popPct": 81.4
+     },
+     {
+      "county": "Dunn",
+      "popPct": 18.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "McKenzie",
+      "popPct": 81.4
+     },
+     {
+      "county": "Dunn",
+      "popPct": 18.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Sargent",
+      "popPct": 26.9
+     },
+     {
+      "county": "Ransom",
+      "popPct": 25.5
+     },
+     {
+      "county": "Richland",
+      "popPct": 25.4
+     },
+     {
+      "county": "Dickey",
+      "popPct": 22.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 15711,
+    "pres2020New": 79.4,
+    "pres2020Old": 31.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-26; it draws from the old SD-39 (90%), the old SD-4 (7%), the old SD-36 (2%). Counties: gained McKenzie (81%), Dunn (18%); lost Sargent, Ransom, Richland, Dickey. 2020 presidential margin R+31.4 on the 2016\u20132020 lines \u2192 R+79.4 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 33.2,
+      "key": "27",
+      "popPct": 85.8
+     },
+     {
+      "areaPct": 16.6,
+      "key": "22",
+      "popPct": 9.7
+     },
+     {
+      "areaPct": 50.2,
+      "key": "25",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16736,
+    "pres2020New": 11.1,
+    "pres2020Old": 3.0,
+    "retainedAreaPct": 33.2,
+    "retainedPopPct": 85.8,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-27; gained the rest from the old SD-22 (10%), the old SD-25 (4%). Entirely in Cass County. 2020 presidential margin R+3.0 on the 2016\u20132020 lines \u2192 R+11.1 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 54.7,
+      "key": "28",
+      "popPct": 43.7
+     },
+     {
+      "areaPct": 26.9,
+      "key": "26",
+      "popPct": 39.9
+     },
+     {
+      "areaPct": 18.3,
+      "key": "29",
+      "popPct": 16.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dickey",
+      "popPct": 29.1
+     },
+     {
+      "county": "LaMoure",
+      "popPct": 23.9
+     },
+     {
+      "county": "Sargent",
+      "popPct": 21.4
+     },
+     {
+      "county": "McIntosh",
+      "popPct": 14.7
+     },
+     {
+      "county": "Logan",
+      "popPct": 10.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Sargent",
+      "popPct": 21.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Emmons",
+      "popPct": 23.6
+     },
+     {
+      "county": "Burleigh",
+      "popPct": 22.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 17163,
+    "pres2020New": 48.7,
+    "pres2020Old": 65.5,
+    "retainedAreaPct": 54.7,
+    "retainedPopPct": 43.7,
+    "text": "A new footprint: only 44% of its population was in the 2016\u20132020 SD-28; it draws from the old SD-26 (40%), the old SD-29 (16%). Counties: gained Sargent (21%); lost Emmons, Burleigh. 2020 presidential margin R+65.5 on the 2016\u20132020 lines \u2192 R+48.7 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 51.0,
+      "key": "29",
+      "popPct": 54.6
+     },
+     {
+      "areaPct": 49.0,
+      "key": "23",
+      "popPct": 45.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stutsman",
+      "popPct": 32.9
+     },
+     {
+      "county": "Foster",
+      "popPct": 21.6
+     },
+     {
+      "county": "Nelson",
+      "popPct": 19.2
+     },
+     {
+      "county": "Griggs",
+      "popPct": 14.7
+     },
+     {
+      "county": "Steele",
+      "popPct": 11.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Nelson",
+      "popPct": 19.2
+     },
+     {
+      "county": "Griggs",
+      "popPct": 14.7
+     },
+     {
+      "county": "Steele",
+      "popPct": 11.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "LaMoure",
+      "popPct": 20.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 15673,
+    "pres2020New": 46.8,
+    "pres2020Old": 54.8,
+    "retainedAreaPct": 51.0,
+    "retainedPopPct": 54.6,
+    "text": "Kept 55% of its population from the 2016\u20132020 SD-29; gained the rest from the old SD-23 (45%). Counties: gained Nelson (19%), Griggs (15%), Steele (12%); lost LaMoure. 2020 presidential margin R+54.8 on the 2016\u20132020 lines \u2192 R+46.8 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "3",
+      "popPct": 97.9
+     },
+     {
+      "areaPct": 0.1,
+      "key": "40",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ward",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16651,
+    "pres2020New": 47.9,
+    "pres2020Old": 47.9,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 97.9,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-3; gained the rest from the old SD-40 (2%). Entirely in Ward County. 2020 presidential margin R+47.9 on the 2016\u20132020 lines \u2192 R+47.9 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 66.6,
+      "key": "30",
+      "popPct": 86.0
+     },
+     {
+      "areaPct": 2.5,
+      "key": "7",
+      "popPct": 7.6
+     },
+     {
+      "areaPct": 30.6,
+      "key": "28",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 0.3,
+      "key": "32",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 95.3
+     },
+     {
+      "county": "Morton",
+      "popPct": 4.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 18375,
+    "pres2020New": 42.9,
+    "pres2020Old": 40.8,
+    "retainedAreaPct": 66.6,
+    "retainedPopPct": 86.0,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-30; gained the rest from the old SD-7 (8%), the old SD-28 (4%), the old SD-32 (3%). Spans Burleigh, Morton counties. 2020 presidential margin R+40.8 on the 2016\u20132020 lines \u2192 R+42.9 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 95.7,
+      "key": "31",
+      "popPct": 89.4
+     },
+     {
+      "areaPct": 0.0,
+      "key": "34",
+      "popPct": 9.0
+     },
+     {
+      "areaPct": 1.0,
+      "key": "33",
+      "popPct": 1.0
+     },
+     {
+      "areaPct": 3.3,
+      "key": "36",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Morton",
+      "popPct": 58.4
+     },
+     {
+      "county": "Sioux",
+      "popPct": 21.6
+     },
+     {
+      "county": "Grant",
+      "popPct": 13.1
+     },
+     {
+      "county": "Hettinger",
+      "popPct": 6.2
+     },
+     {
+      "county": "Emmons",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17588,
+    "pres2020New": 44.3,
+    "pres2020Old": 44.9,
+    "retainedAreaPct": 95.7,
+    "retainedPopPct": 89.4,
+    "text": "Kept 89% of its population from the 2016\u20132020 SD-31; gained the rest from the old SD-34 (9%), the old SD-33 (1%), the old SD-36 (1%). Spans Morton, Sioux, Grant, Hettinger and 1 more counties. 2020 presidential margin R+44.9 on the 2016\u20132020 lines \u2192 R+44.3 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 93.7,
+      "key": "32",
+      "popPct": 92.7
+     },
+     {
+      "areaPct": 6.3,
+      "key": "30",
+      "popPct": 7.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15597,
+    "pres2020New": 30.3,
+    "pres2020Old": 30.8,
+    "retainedAreaPct": 93.7,
+    "retainedPopPct": 92.7,
+    "text": "Kept 93% of its population from the 2016\u20132020 SD-32; gained the rest from the old SD-30 (7%). Entirely in Burleigh County. 2020 presidential margin R+30.8 on the 2016\u20132020 lines \u2192 R+30.3 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 84.1,
+      "key": "33",
+      "popPct": 86.0
+     },
+     {
+      "areaPct": 15.8,
+      "key": "8",
+      "popPct": 13.3
+     },
+     {
+      "areaPct": 0.1,
+      "key": "31",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mercer",
+      "popPct": 53.6
+     },
+     {
+      "county": "Morton",
+      "popPct": 20.6
+     },
+     {
+      "county": "McLean",
+      "popPct": 13.5
+     },
+     {
+      "county": "Oliver",
+      "popPct": 12.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "McLean",
+      "popPct": 13.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15327,
+    "pres2020New": 66.8,
+    "pres2020Old": 68.1,
+    "retainedAreaPct": 84.1,
+    "retainedPopPct": 86.0,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-33; gained the rest from the old SD-8 (13%), the old SD-31 (1%). Counties: gained McLean (14%). 2020 presidential margin R+68.1 on the 2016\u20132020 lines \u2192 R+66.8 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "34",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Morton",
+      "popPct": 98.6
+     },
+     {
+      "county": "Burleigh",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16376,
+    "pres2020New": 39.3,
+    "pres2020Old": 39.2,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Morton, Burleigh counties.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 89.7,
+      "key": "35",
+      "popPct": 84.3
+     },
+     {
+      "areaPct": 8.8,
+      "key": "47",
+      "popPct": 15.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17339,
+    "pres2020New": 21.0,
+    "pres2020Old": 20.3,
+    "retainedAreaPct": 89.7,
+    "retainedPopPct": 84.3,
+    "text": "Kept 84% of its population from the 2016\u20132020 SD-35; gained the rest from the old SD-47 (15%). Entirely in Burleigh County. 2020 presidential margin R+20.3 on the 2016\u20132020 lines \u2192 R+21.0 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 72.5,
+      "key": "36",
+      "popPct": 47.9
+     },
+     {
+      "areaPct": 0.2,
+      "key": "37",
+      "popPct": 43.8
+     },
+     {
+      "areaPct": 27.3,
+      "key": "33",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stark",
+      "popPct": 81.2
+     },
+     {
+      "county": "Morton",
+      "popPct": 18.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Hettinger",
+      "popPct": 6.6
+     },
+     {
+      "county": "Dunn",
+      "popPct": 5.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 18670,
+    "pres2020New": 64.9,
+    "pres2020Old": 71.4,
+    "retainedAreaPct": 72.5,
+    "retainedPopPct": 47.9,
+    "text": "A new footprint: only 48% of its population was in the 2016\u20132020 SD-36; it draws from the old SD-37 (44%), the old SD-33 (8%). Counties: lost Hettinger, Dunn. 2020 presidential margin R+71.4 on the 2016\u20132020 lines \u2192 R+64.9 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 48.2,
+      "key": "37",
+      "popPct": 90.5
+     },
+     {
+      "areaPct": 51.8,
+      "key": "36",
+      "popPct": 9.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stark",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 11847,
+    "pres2020New": 59.0,
+    "pres2020Old": 58.5,
+    "retainedAreaPct": 48.2,
+    "retainedPopPct": 90.5,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-37; gained the rest from the old SD-36 (10%). Entirely in Stark County. 2020 presidential margin R+58.5 on the 2016\u20132020 lines \u2192 R+59.0 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "38",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ward",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17237,
+    "pres2020New": 50.1,
+    "pres2020Old": 50.0,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Ward County.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 77.3,
+      "key": "39",
+      "popPct": 49.7
+     },
+     {
+      "areaPct": 20.9,
+      "key": "36",
+      "popPct": 48.8
+     },
+     {
+      "areaPct": 1.8,
+      "key": "31",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stark",
+      "popPct": 38.3
+     },
+     {
+      "county": "Bowman",
+      "popPct": 17.3
+     },
+     {
+      "county": "Adams",
+      "popPct": 12.8
+     },
+     {
+      "county": "Golden Valley",
+      "popPct": 10.1
+     },
+     {
+      "county": "Hettinger",
+      "popPct": 8.1
+     },
+     {
+      "county": "Billings",
+      "popPct": 5.6
+     },
+     {
+      "county": "Slope",
+      "popPct": 4.1
+     },
+     {
+      "county": "Dunn",
+      "popPct": 3.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Stark",
+      "popPct": 38.3
+     },
+     {
+      "county": "Hettinger",
+      "popPct": 8.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "McKenzie",
+      "popPct": 56.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 17261,
+    "pres2020New": 70.5,
+    "pres2020Old": 74.3,
+    "retainedAreaPct": 77.3,
+    "retainedPopPct": 49.7,
+    "text": "A new footprint: only 50% of its population was in the 2016\u20132020 SD-39; it draws from the old SD-36 (49%), the old SD-31 (2%). Counties: gained Stark (38%), Hettinger (8%); lost McKenzie. 2020 presidential margin R+74.3 on the 2016\u20132020 lines \u2192 R+70.5 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 97.7,
+      "key": "4",
+      "popPct": 96.2
+     },
+     {
+      "areaPct": 2.3,
+      "key": "8",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mountrail",
+      "popPct": 42.6
+     },
+     {
+      "county": "Ward",
+      "popPct": 24.4
+     },
+     {
+      "county": "McLean",
+      "popPct": 16.2
+     },
+     {
+      "county": "McKenzie",
+      "popPct": 12.6
+     },
+     {
+      "county": "Dunn",
+      "popPct": 3.6
+     },
+     {
+      "county": "Mercer",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14983,
+    "pres2020New": 26.6,
+    "pres2020Old": 33.0,
+    "retainedAreaPct": 97.7,
+    "retainedPopPct": 96.2,
+    "text": "Kept 96% of its population from the 2016\u20132020 SD-4; gained the rest from the old SD-8 (4%). Spans Mountrail, Ward, McLean, McKenzie and 2 more counties. 2020 presidential margin R+33.0 on the 2016\u20132020 lines \u2192 R+26.6 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "40",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ward",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16093,
+    "pres2020New": 33.4,
+    "pres2020Old": 33.4,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Ward County.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 59.0,
+      "key": "41",
+      "popPct": 92.2
+     },
+     {
+      "areaPct": 40.9,
+      "key": "27",
+      "popPct": 7.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13575,
+    "pres2020New": 1.2,
+    "pres2020Old": 0.1,
+    "retainedAreaPct": 59.0,
+    "retainedPopPct": 92.2,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-41; gained the rest from the old SD-27 (8%). Entirely in Cass County. 2020 presidential margin R+0.1 on the 2016\u20132020 lines \u2192 R+1.2 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 2.0,
+      "key": "42",
+      "popPct": 69.4
+     },
+     {
+      "areaPct": 30.2,
+      "key": "17",
+      "popPct": 19.8
+     },
+     {
+      "areaPct": 55.6,
+      "key": "18",
+      "popPct": 9.3
+     },
+     {
+      "areaPct": 12.2,
+      "key": "20",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grand Forks",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 18265,
+    "pres2020New": 11.5,
+    "pres2020Old": 1.7,
+    "retainedAreaPct": 2.0,
+    "retainedPopPct": 69.4,
+    "text": "Kept 69% of its population from the 2016\u20132020 SD-42; gained the rest from the old SD-17 (20%), the old SD-18 (9%), the old SD-20 (2%). Entirely in Grand Forks County. 2020 presidential margin R+1.7 on the 2016\u20132020 lines \u2192 R+11.5 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 77.4,
+      "key": "43",
+      "popPct": 91.8
+     },
+     {
+      "areaPct": 22.6,
+      "key": "17",
+      "popPct": 8.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grand Forks",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15483,
+    "pres2020New": 2.2,
+    "pres2020Old": 0.7,
+    "retainedAreaPct": 77.4,
+    "retainedPopPct": 91.8,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-43; gained the rest from the old SD-17 (8%). Entirely in Grand Forks County. 2020 presidential margin R+0.7 on the 2016\u20132020 lines \u2192 R+2.2 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 68.1,
+      "key": "44",
+      "popPct": 79.6
+     },
+     {
+      "areaPct": 19.9,
+      "key": "21",
+      "popPct": 16.6
+     },
+     {
+      "areaPct": 12.0,
+      "key": "45",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 12108,
+    "pres2020New": -17.0,
+    "pres2020Old": -13.0,
+    "retainedAreaPct": 68.1,
+    "retainedPopPct": 79.6,
+    "text": "Kept 80% of its population from the 2016\u20132020 SD-44; gained the rest from the old SD-21 (17%), the old SD-45 (4%). Entirely in Cass County. 2020 presidential margin D+13.0 on the 2016\u20132020 lines \u2192 D+17.0 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 72.4,
+      "key": "45",
+      "popPct": 78.4
+     },
+     {
+      "areaPct": 0.4,
+      "key": "44",
+      "popPct": 20.0
+     },
+     {
+      "areaPct": 27.3,
+      "key": "20",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 19324,
+    "pres2020New": 10.1,
+    "pres2020Old": 13.8,
+    "retainedAreaPct": 72.4,
+    "retainedPopPct": 78.4,
+    "text": "Kept 78% of its population from the 2016\u20132020 SD-45; gained the rest from the old SD-44 (20%), the old SD-20 (2%). Entirely in Cass County. 2020 presidential margin R+13.8 on the 2016\u20132020 lines \u2192 R+10.1 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 78.9,
+      "key": "46",
+      "popPct": 95.7
+     },
+     {
+      "areaPct": 21.0,
+      "key": "27",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15947,
+    "pres2020New": -1.0,
+    "pres2020Old": -1.4,
+    "retainedAreaPct": 78.9,
+    "retainedPopPct": 95.7,
+    "text": "Kept 96% of its population from the 2016\u20132020 SD-46; gained the rest from the old SD-27 (4%). Entirely in Cass County. 2020 presidential margin D+1.4 on the 2016\u20132020 lines \u2192 D+1.0 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 57.0,
+      "key": "47",
+      "popPct": 94.4
+     },
+     {
+      "areaPct": 42.9,
+      "key": "7",
+      "popPct": 5.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 98.9
+     },
+     {
+      "county": "Morton",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16279,
+    "pres2020New": 37.5,
+    "pres2020Old": 35.0,
+    "retainedAreaPct": 57.0,
+    "retainedPopPct": 94.4,
+    "text": "Kept 94% of its population from the 2016\u20132020 SD-47; gained the rest from the old SD-7 (6%). Spans Burleigh, Morton counties. 2020 presidential margin R+35.0 on the 2016\u20132020 lines \u2192 R+37.5 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 92.7,
+      "key": "5",
+      "popPct": 96.1
+     },
+     {
+      "areaPct": 5.7,
+      "key": "3",
+      "popPct": 2.5
+     },
+     {
+      "areaPct": 1.5,
+      "key": "40",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ward",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15229,
+    "pres2020New": 37.0,
+    "pres2020Old": 37.0,
+    "retainedAreaPct": 92.7,
+    "retainedPopPct": 96.1,
+    "text": "Kept 96% of its population from the 2016\u20132020 SD-5; gained the rest from the old SD-3 (2%), the old SD-40 (1%). Entirely in Ward County. 2020 presidential margin R+37.0 on the 2016\u20132020 lines \u2192 R+37.0 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 78.1,
+      "key": "6",
+      "popPct": 68.8
+     },
+     {
+      "areaPct": 15.6,
+      "key": "8",
+      "popPct": 25.2
+     },
+     {
+      "areaPct": 6.3,
+      "key": "4",
+      "popPct": 6.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bottineau",
+      "popPct": 31.3
+     },
+     {
+      "county": "McHenry",
+      "popPct": 26.2
+     },
+     {
+      "county": "McLean",
+      "popPct": 26.1
+     },
+     {
+      "county": "Renville",
+      "popPct": 11.2
+     },
+     {
+      "county": "Ward",
+      "popPct": 5.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "McLean",
+      "popPct": 26.1
+     },
+     {
+      "county": "Ward",
+      "popPct": 5.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 20369,
+    "pres2020New": 58.1,
+    "pres2020Old": 56.4,
+    "retainedAreaPct": 78.1,
+    "retainedPopPct": 68.8,
+    "text": "Kept 69% of its population from the 2016\u20132020 SD-6; gained the rest from the old SD-8 (25%), the old SD-4 (6%). Counties: gained McLean (26%), Ward (5%). 2020 presidential margin R+56.4 on the 2016\u20132020 lines \u2192 R+58.1 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 87.1,
+      "key": "7",
+      "popPct": 99.3
+     },
+     {
+      "areaPct": 12.8,
+      "key": "8",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13008,
+    "pres2020New": 45.7,
+    "pres2020Old": 49.6,
+    "retainedAreaPct": 87.1,
+    "retainedPopPct": 99.3,
+    "text": "Kept 99% of its population from the 2016\u20132020 SD-7; gained the rest from the old SD-8 (1%). Entirely in Burleigh County. 2020 presidential margin R+49.6 on the 2016\u20132020 lines \u2192 R+45.7 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 0.8,
+      "key": "7",
+      "popPct": 38.5
+     },
+     {
+      "areaPct": 10.6,
+      "key": "8",
+      "popPct": 31.9
+     },
+     {
+      "areaPct": 88.6,
+      "key": "28",
+      "popPct": 29.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Burleigh",
+      "popPct": 82.2
+     },
+     {
+      "county": "Emmons",
+      "popPct": 17.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Emmons",
+      "popPct": 17.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "McLean",
+      "popPct": 48.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 18743,
+    "pres2020New": 63.1,
+    "pres2020Old": 61.2,
+    "retainedAreaPct": 10.6,
+    "retainedPopPct": 31.9,
+    "text": "A new footprint: only 32% of its population was in the 2016\u20132020 SD-8; it draws from the old SD-7 (38%), the old SD-28 (30%). Counties: gained Emmons (18%); lost McLean. 2020 presidential margin R+61.2 on the 2016\u20132020 lines \u2192 R+63.1 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 45.8,
+      "key": "9",
+      "popPct": 70.1
+     },
+     {
+      "areaPct": 26.1,
+      "key": "23",
+      "popPct": 23.7
+     },
+     {
+      "areaPct": 27.9,
+      "key": "14",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rolette",
+      "popPct": 70.0
+     },
+     {
+      "county": "Benson",
+      "popPct": 27.5
+     },
+     {
+      "county": "Ramsey",
+      "popPct": 1.0
+     },
+     {
+      "county": "Pierce",
+      "popPct": 0.7
+     },
+     {
+      "county": "Eddy",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Benson",
+      "popPct": 27.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17387,
+    "pres2020New": -20.3,
+    "pres2020Old": -32.2,
+    "retainedAreaPct": 45.8,
+    "retainedPopPct": 70.1,
+    "text": "Kept 70% of its population from the 2016\u20132020 SD-9; gained the rest from the old SD-23 (24%), the old SD-14 (6%). Counties: gained Benson (28%). 2020 presidential margin D+32.2 on the 2016\u20132020 lines \u2192 D+20.3 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

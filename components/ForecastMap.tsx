@@ -6,7 +6,8 @@ import dynamic from "next/dynamic";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale";
 import type { RaceType, NoElectionEntry } from "@/data/forecastData";
-import { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastSummary } from "@/lib/forecastTypes";
+import { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, isProjectedFlip, type ForecastSummary } from "@/lib/forecastTypes";
+import { FlipPatternDefs, FlipSwatch, flipFill } from "./FlipStripes";
 import { RaceTypeHeader, ForecastHero, ForecastRaceCards, KeyRaces } from "./ForecastLedger";
 
 // Non-2026 seats already held by each party (Senate classes not up this cycle, Governor terms not up) —
@@ -46,16 +47,11 @@ type GeoFeature = {
   properties?: Record<string, string | undefined>;
 };
 
-const LEGEND = [
-  { color: "#1a4480", label: "Safe D" },
-  { color: "#4275b5", label: "Likely D" },
-  { color: "#82b4f0", label: "Lean D" },
-  { color: "#aecef5", label: "Tilt D" },
-  { color: "#f5aeae", label: "Tilt R" },
-  { color: "#f08282", label: "Lean R" },
-  { color: "#c04040", label: "Likely R" },
-  { color: "#8b1a1a", label: "Safe R" },
-];
+// One sample margin inside each rating band, Safe D → Safe R. The legend and the flip-stripe
+// patterns both come from getRaceColor / marginToRating, so they can't drift from the map.
+const BAND_MARGINS = [-20, -10, -3, -0.5, 0.5, 3, 10, 20];
+const RACE_COLORS = BAND_MARGINS.map(getRaceColor);
+const LEGEND = BAND_MARGINS.map((m) => ({ color: getRaceColor(m), label: marginToRating(m) }));
 
 export const DARK_THEME = {
   bg: "#0d1117",
@@ -167,7 +163,7 @@ const ForecastGeoLayer = memo(function ForecastGeoLayer({
         if (isHouse && !isCongressionalDistrictGeoid(geo.properties?.GEOID)) return null;
         const match = matchFor(geo);
         const noElMatch = !match && !isHouse ? noElByState.get(geo.properties?.name ?? "") : undefined;
-        const fill = match ? getRaceColor(match.margin) : t.mapUnfilled;
+        const fill = !match ? t.mapUnfilled : isProjectedFlip(match) ? flipFill(getRaceColor(match.margin)) : getRaceColor(match.margin);
         const isSelected = !!(match && selectedId === match.id);
         const isSelectedNoEl = !!(noElMatch && selectedNoElAbbr === noElMatch.abbr);
         const isInteractive = !!(match || noElMatch);
@@ -311,7 +307,7 @@ export default function ForecastMap({
   const genericBallot = { diff: genericBallotDiff };
   const tossUps = useMemo(() => data.filter((race) => Math.abs(race.margin) < 1).length, [data]);
   const flipped = useMemo(
-    () => data.filter((race) => race.seatParty && race.seatParty !== (race.margin <= 0 ? "D" : "R")).length,
+    () => data.filter(isProjectedFlip).length,
     [data]
   );
 
@@ -555,6 +551,7 @@ export default function ForecastMap({
             projectionConfig={{ scale: 1200 }}
             style={{ width: "100%", height: "100%" }}
           >
+            <FlipPatternDefs colors={RACE_COLORS} />
             <ZoomableGroup
               key={mapKey}
               filterZoomEvent={filterMapZoomEvent}
@@ -691,6 +688,10 @@ export default function ForecastMap({
                 {label}
               </span>
             ))}
+            <span className="flex items-center gap-1.5 text-[10px] font-medium" style={{ color: t.textMuted }}>
+              <FlipSwatch size={8} />
+              Projected flip
+            </span>
           </div>
         )}
 

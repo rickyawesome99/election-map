@@ -1,0 +1,764 @@
+{
+ "house": {
+  "1": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Rodney Montoya",
+     "party": "R"
+    }
+   ]
+  },
+  "10": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "G. Andres Romero",
+     "party": "D"
+    },
+    {
+     "name": "Christopher Crane",
+     "party": "R"
+    }
+   ]
+  },
+  "11": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Javier Mart\u00ednez",
+     "party": "D"
+    }
+   ]
+  },
+  "12": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Art De La Cruz",
+     "party": "D"
+    },
+    {
+     "name": "Steve Tafoya",
+     "party": "R"
+    }
+   ]
+  },
+  "13": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Patricia Roybal Caballero",
+     "party": "D"
+    }
+   ]
+  },
+  "14": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Miguel Garcia",
+     "party": "D"
+    },
+    {
+     "name": "Richard Zubia",
+     "party": "R"
+    }
+   ]
+  },
+  "15": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Dayan Hochman-Vigil",
+     "party": "D"
+    }
+   ]
+  },
+  "16": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Yanira Gurrola Valenzuela",
+     "party": "D"
+    }
+   ]
+  },
+  "17": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Cynthia Borrego",
+     "party": "D"
+    },
+    {
+     "name": "Brenda Boatman",
+     "party": "R"
+    }
+   ]
+  },
+  "18": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Marianna Anaya",
+     "party": "D"
+    }
+   ]
+  },
+  "19": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Janelle Anyanonu",
+     "party": "D"
+    }
+   ]
+  },
+  "2": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "P. Mark Duncan",
+     "party": "R"
+    }
+   ]
+  },
+  "20": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Meredith Dixon",
+     "party": "D"
+    }
+   ]
+  },
+  "21": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Debra Sari\u00f1ana",
+     "party": "D"
+    },
+    {
+     "name": "Robert Mason",
+     "party": "R"
+    }
+   ]
+  },
+  "22": {
+   "candidates": [
+    {
+     "name": "William Scott",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Stefani Lord",
+     "party": "R"
+    },
+    {
+     "name": "Zach Withers",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "23": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Alan Martinez",
+     "party": "R"
+    }
+   ]
+  },
+  "24": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Elizabeth Thomson",
+     "party": "D"
+    }
+   ]
+  },
+  "25": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Cristina Paraj\u00f3n",
+     "party": "D"
+    },
+    {
+     "name": "Denis Litvinenko",
+     "party": "R"
+    }
+   ]
+  },
+  "26": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Eleanor Chavez",
+     "party": "D"
+    },
+    {
+     "name": "Corey Zimmerman",
+     "party": "R"
+    }
+   ]
+  },
+  "27": {
+   "candidates": [
+    {
+     "name": "Abby Foster",
+     "party": "D"
+    },
+    {
+     "name": "Jahnelle Garcia",
+     "party": "R"
+    }
+   ]
+  },
+  "28": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Pamelya Herndon",
+     "party": "D"
+    },
+    {
+     "name": "Brenda Olson",
+     "party": "R"
+    }
+   ]
+  },
+  "29": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Joy Garratt",
+     "party": "D"
+    },
+    {
+     "name": "Carolyn Stith",
+     "party": "R"
+    }
+   ]
+  },
+  "3": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Bill Hall",
+     "party": "R"
+    }
+   ]
+  },
+  "30": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Elizabeth Torres-Velasquez",
+     "party": "D"
+    },
+    {
+     "name": "Jerry Trujillo",
+     "party": "R"
+    }
+   ]
+  },
+  "31": {
+   "candidates": [
+    {
+     "name": "Lisa Curtis",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Nicole Chavez",
+     "party": "R"
+    }
+   ]
+  },
+  "32": {
+   "candidates": [
+    {
+     "name": "Laura Parra",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jenifer Jones",
+     "party": "R"
+    }
+   ]
+  },
+  "33": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Micaela Lara Cadena",
+     "party": "D"
+    },
+    {
+     "name": "Enrique Vigil",
+     "party": "R"
+    }
+   ]
+  },
+  "34": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Raymundo Lara",
+     "party": "D"
+    }
+   ]
+  },
+  "35": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Angelica Rubio",
+     "party": "D"
+    }
+   ]
+  },
+  "36": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Nathan Small",
+     "party": "D"
+    },
+    {
+     "name": "Julia Ruiz",
+     "party": "R"
+    }
+   ]
+  },
+  "37": {
+   "candidates": [
+    {
+     "name": "Lori Martinez",
+     "party": "D"
+    },
+    {
+     "name": "Isabella Solis",
+     "party": "R"
+    }
+   ]
+  },
+  "38": {
+   "candidates": [
+    {
+     "name": "David Mooney",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Rebecca Dow",
+     "party": "R"
+    }
+   ]
+  },
+  "39": {
+   "candidates": [
+    {
+     "name": "Raul Turrieta",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Luis Terrazas",
+     "party": "R"
+    }
+   ]
+  },
+  "4": {
+   "candidates": [
+    {
+     "name": "Heather Ellison",
+     "party": "R"
+    }
+   ]
+  },
+  "40": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Joseph Sanchez",
+     "party": "D"
+    },
+    {
+     "name": "Landon Dooley",
+     "party": "R"
+    }
+   ]
+  },
+  "41": {
+   "candidates": [
+    {
+     "name": "Yolanda Jaramillo",
+     "party": "D"
+    }
+   ]
+  },
+  "42": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kristina Ortez",
+     "party": "D"
+    }
+   ]
+  },
+  "43": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Christine Chandler",
+     "party": "D"
+    }
+   ]
+  },
+  "44": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kathleen Cates",
+     "party": "D"
+    },
+    {
+     "name": "Adam Prior",
+     "party": "R"
+    }
+   ]
+  },
+  "45": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Linda Serrato",
+     "party": "D"
+    }
+   ]
+  },
+  "46": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Andrea Romero",
+     "party": "D"
+    }
+   ]
+  },
+  "47": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Reena Szczepanski",
+     "party": "D"
+    }
+   ]
+  },
+  "48": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Tara Lujan",
+     "party": "D"
+    },
+    {
+     "name": "Victoria Garcia",
+     "party": "R"
+    }
+   ]
+  },
+  "49": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Gail Armstrong",
+     "party": "R"
+    }
+   ]
+  },
+  "5": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Doreen Wonda Johnson",
+     "party": "D"
+    }
+   ]
+  },
+  "50": {
+   "candidates": [
+    {
+     "name": "Sarah Boses",
+     "party": "D"
+    },
+    {
+     "name": "Kenneth Brennan",
+     "party": "R"
+    }
+   ]
+  },
+  "51": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "John Block",
+     "party": "R"
+    },
+    {
+     "name": "Grace Nagamine",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "52": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Doreen Y. Gallegos",
+     "party": "D"
+    }
+   ]
+  },
+  "53": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Sarah Silva",
+     "party": "D"
+    },
+    {
+     "name": "Benjamin Luna",
+     "party": "R"
+    }
+   ]
+  },
+  "54": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jonathan Henry",
+     "party": "R"
+    }
+   ]
+  },
+  "55": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Cathrynn Brown",
+     "party": "R"
+    }
+   ]
+  },
+  "56": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Harlan Vincent",
+     "party": "R"
+    }
+   ]
+  },
+  "57": {
+   "candidates": [
+    {
+     "name": "Chriselle Martinez",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Catherine Cullen",
+     "party": "R"
+    }
+   ]
+  },
+  "58": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Angelita Mejia",
+     "party": "R"
+    }
+   ]
+  },
+  "59": {
+   "candidates": [
+    {
+     "name": "Stephen Dodson",
+     "party": "R"
+    }
+   ]
+  },
+  "6": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Martha Garcia",
+     "party": "D"
+    },
+    {
+     "name": "Paul Spencer",
+     "party": "R"
+    }
+   ]
+  },
+  "60": {
+   "candidates": [
+    {
+     "name": "Luke Jungmann",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Joshua Hernandez",
+     "party": "R"
+    }
+   ]
+  },
+  "61": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Randall Pettigrew",
+     "party": "R"
+    }
+   ]
+  },
+  "62": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Elaine Sena Cortez",
+     "party": "R"
+    }
+   ]
+  },
+  "63": {
+   "candidates": [
+    {
+     "name": "Seth Martin",
+     "party": "R"
+    }
+   ]
+  },
+  "64": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Andrea Reeb",
+     "party": "R"
+    }
+   ]
+  },
+  "65": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Derrick Lente",
+     "party": "D"
+    }
+   ]
+  },
+  "66": {
+   "candidates": [
+    {
+     "name": "Leanne Gandy",
+     "party": "R"
+    }
+   ]
+  },
+  "67": {
+   "candidates": [
+    {
+     "name": "Vincent Soule",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jack Chatfield",
+     "party": "R"
+    }
+   ]
+  },
+  "68": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Charlotte Little",
+     "party": "D"
+    },
+    {
+     "name": "David Adkins",
+     "party": "R"
+    }
+   ]
+  },
+  "69": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Michelle Abeyta",
+     "party": "D"
+    }
+   ]
+  },
+  "7": {
+   "candidates": [
+    {
+     "name": "Rickie Gonzales II",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Tanya Mirabal Moya",
+     "party": "R"
+    }
+   ]
+  },
+  "70": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Anita Gonzales",
+     "party": "D"
+    }
+   ]
+  },
+  "8": {
+   "candidates": [
+    {
+     "name": "Katherine Gauer",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Brian Baca",
+     "party": "R"
+    }
+   ]
+  },
+  "9": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Patricia Lundstrom",
+     "party": "D"
+    }
+   ]
+  }
+ },
+ "meta": {
+  "fetched": "2026-10-10",
+  "source": "Ballotpedia chamber election pages, 2026"
+ }
+}

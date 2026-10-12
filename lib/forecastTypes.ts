@@ -27,4 +27,9 @@ export const SEAT_HOLDOVERS: Record<RaceType, { dem: number; rep: number }> = {
 };
 export const TOTAL_SEATS_BY_TYPE: Record<RaceType, number> = { senate: 100, governor: 50, house: 435 };
 
+/** Projected to change hands: the projected winner's party differs from the party holding the seat. */
+export function isProjectedFlip(race: Pick<ForecastSummary, "seatParty" | "margin">): boolean {
+  return !!race.seatParty && race.seatParty !== (race.margin <= 0 ? "D" : "R");
+}
+
 export const CHAMBER_LABEL: Record<RaceType, string> = { senate: "Senate", governor: "Governor", house: "House" };

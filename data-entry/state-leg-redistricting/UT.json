@@ -1,0 +1,4597 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 97.5,
+      "key": "1",
+      "popPct": 96.9
+     },
+     {
+      "areaPct": 2.5,
+      "key": "29",
+      "popPct": 3.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Box Elder",
+      "popPct": 95.3
+     },
+     {
+      "county": "Cache",
+      "popPct": 4.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43743,
+    "pres2020New": 65.7,
+    "pres2020Old": 66.2,
+    "retainedAreaPct": 97.5,
+    "retainedPopPct": 96.9,
+    "text": "Kept 97% of its population from the 2016\u20132020 HD-1; gained the rest from the old HD-29 (3%). Spans Box Elder, Cache counties. 2020 presidential margin R+66.2 on the 2016\u20132020 lines \u2192 R+65.7 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 89.0,
+      "key": "10",
+      "popPct": 82.5
+     },
+     {
+      "areaPct": 10.6,
+      "key": "11",
+      "popPct": 17.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weber",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42930,
+    "pres2020New": 2.5,
+    "pres2020Old": -1.3,
+    "retainedAreaPct": 89.0,
+    "retainedPopPct": 82.5,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-10; gained the rest from the old HD-11 (17%). Entirely in Weber County. 2020 presidential margin D+1.3 on the 2016\u20132020 lines \u2192 R+2.5 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 86.0,
+      "key": "11",
+      "popPct": 66.2
+     },
+     {
+      "areaPct": 5.0,
+      "key": "13",
+      "popPct": 11.3
+     },
+     {
+      "areaPct": 4.2,
+      "key": "16",
+      "popPct": 10.1
+     },
+     {
+      "areaPct": 1.9,
+      "key": "10",
+      "popPct": 5.4
+     },
+     {
+      "areaPct": 1.8,
+      "key": "14",
+      "popPct": 4.3
+     },
+     {
+      "areaPct": 1.1,
+      "key": "12",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weber",
+      "popPct": 56.6
+     },
+     {
+      "county": "Davis",
+      "popPct": 43.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44683,
+    "pres2020New": 20.9,
+    "pres2020Old": 23.8,
+    "retainedAreaPct": 86.0,
+    "retainedPopPct": 66.2,
+    "text": "Kept 66% of its population from the 2016\u20132020 HD-11; gained the rest from the old HD-13 (11%), the old HD-16 (10%), the old HD-10 (5%) and 2 more. Spans Weber, Davis counties. 2020 presidential margin R+23.8 on the 2016\u20132020 lines \u2192 R+20.9 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 97.5,
+      "key": "12",
+      "popPct": 93.1
+     },
+     {
+      "areaPct": 2.4,
+      "key": "29",
+      "popPct": 5.9
+     },
+     {
+      "areaPct": 0.0,
+      "key": "14",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weber",
+      "popPct": 89.7
+     },
+     {
+      "county": "Davis",
+      "popPct": 10.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42644,
+    "pres2020New": 41.9,
+    "pres2020Old": 40.2,
+    "retainedAreaPct": 97.5,
+    "retainedPopPct": 93.1,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-12; gained the rest from the old HD-29 (6%), the old HD-14 (0%). Spans Weber, Davis counties. 2020 presidential margin R+40.2 on the 2016\u20132020 lines \u2192 R+41.9 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 90.7,
+      "key": "13",
+      "popPct": 87.5
+     },
+     {
+      "areaPct": 9.2,
+      "key": "14",
+      "popPct": 12.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Davis",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 40389,
+    "pres2020New": 34.3,
+    "pres2020Old": 34.4,
+    "retainedAreaPct": 90.7,
+    "retainedPopPct": 87.5,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-13; gained the rest from the old HD-14 (12%). Entirely in Davis County. 2020 presidential margin R+34.4 on the 2016\u20132020 lines \u2192 R+34.3 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 69.1,
+      "key": "14",
+      "popPct": 65.0
+     },
+     {
+      "areaPct": 29.7,
+      "key": "15",
+      "popPct": 34.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Davis",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43625,
+    "pres2020New": 34.7,
+    "pres2020Old": 28.3,
+    "retainedAreaPct": 69.1,
+    "retainedPopPct": 65.0,
+    "text": "Kept 65% of its population from the 2016\u20132020 HD-14; gained the rest from the old HD-15 (34%). Entirely in Davis County. 2020 presidential margin R+28.3 on the 2016\u20132020 lines \u2192 R+34.7 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 98.4,
+      "key": "15",
+      "popPct": 83.4
+     },
+     {
+      "areaPct": 0.3,
+      "key": "14",
+      "popPct": 14.6
+     },
+     {
+      "areaPct": 0.1,
+      "key": "16",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Davis",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43388,
+    "pres2020New": 40.0,
+    "pres2020Old": 42.0,
+    "retainedAreaPct": 98.4,
+    "retainedPopPct": 83.4,
+    "text": "Kept 83% of its population from the 2016\u20132020 HD-15; gained the rest from the old HD-14 (15%), the old HD-16 (2%). Entirely in Davis County. 2020 presidential margin R+42.0 on the 2016\u20132020 lines \u2192 R+40.0 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 88.8,
+      "key": "16",
+      "popPct": 86.3
+     },
+     {
+      "areaPct": 9.9,
+      "key": "11",
+      "popPct": 9.5
+     },
+     {
+      "areaPct": 1.3,
+      "key": "17",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Davis",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42908,
+    "pres2020New": 24.2,
+    "pres2020Old": 22.7,
+    "retainedAreaPct": 88.8,
+    "retainedPopPct": 86.3,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-16; gained the rest from the old HD-11 (10%), the old HD-17 (4%). Entirely in Davis County. 2020 presidential margin R+22.7 on the 2016\u20132020 lines \u2192 R+24.2 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 95.3,
+      "key": "17",
+      "popPct": 91.4
+     },
+     {
+      "areaPct": 3.0,
+      "key": "18",
+      "popPct": 7.0
+     },
+     {
+      "areaPct": 1.6,
+      "key": "16",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Davis",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 41675,
+    "pres2020New": 30.0,
+    "pres2020Old": 30.1,
+    "retainedAreaPct": 95.3,
+    "retainedPopPct": 91.4,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-17; gained the rest from the old HD-18 (7%), the old HD-16 (2%). Entirely in Davis County. 2020 presidential margin R+30.1 on the 2016\u20132020 lines \u2192 R+30.0 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "18",
+      "popPct": 98.6
+     },
+     {
+      "areaPct": 0.1,
+      "key": "19",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Davis",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42305,
+    "pres2020New": 28.8,
+    "pres2020Old": 28.4,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 98.6,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-18; gained the rest from the old HD-19 (1%). Entirely in Davis County. 2020 presidential margin R+28.4 on the 2016\u20132020 lines \u2192 R+28.8 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 82.4,
+      "key": "19",
+      "popPct": 85.6
+     },
+     {
+      "areaPct": 15.8,
+      "key": "20",
+      "popPct": 11.1
+     },
+     {
+      "areaPct": 1.5,
+      "key": "18",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Davis",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43157,
+    "pres2020New": 17.9,
+    "pres2020Old": 15.0,
+    "retainedAreaPct": 82.4,
+    "retainedPopPct": 85.6,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-19; gained the rest from the old HD-20 (11%), the old HD-18 (3%). Entirely in Davis County. 2020 presidential margin R+15.0 on the 2016\u20132020 lines \u2192 R+17.9 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 95.3,
+      "key": "3",
+      "popPct": 99.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cache",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cache",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Utah",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 43904,
+    "pres2020New": 40.6,
+    "pres2020Old": 46.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-2; it draws from the old HD-3 (100%). Counties: gained Cache (100%); lost Utah. 2020 presidential margin R+46.9 on the 2016\u20132020 lines \u2192 R+40.6 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 97.8,
+      "key": "20",
+      "popPct": 94.7
+     },
+     {
+      "areaPct": 2.1,
+      "key": "19",
+      "popPct": 5.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Davis",
+      "popPct": 98.5
+     },
+     {
+      "county": "Salt Lake",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42649,
+    "pres2020New": 9.7,
+    "pres2020Old": 12.9,
+    "retainedAreaPct": 97.8,
+    "retainedPopPct": 94.7,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-20; gained the rest from the old HD-19 (5%). Spans Davis, Salt Lake counties. 2020 presidential margin R+12.9 on the 2016\u20132020 lines \u2192 R+9.7 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 99.1,
+      "key": "23",
+      "popPct": 81.9
+     },
+     {
+      "areaPct": 0.8,
+      "key": "24",
+      "popPct": 15.7
+     },
+     {
+      "areaPct": 0.1,
+      "key": "26",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Tooele",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 44988,
+    "pres2020New": -46.6,
+    "pres2020Old": 30.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-21; it draws from the old HD-23 (82%), the old HD-24 (16%), the old HD-26 (2%). Counties: gained Salt Lake (100%); lost Tooele. 2020 presidential margin R+30.9 on the 2016\u20132020 lines \u2192 D+46.6 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 74.8,
+      "key": "24",
+      "popPct": 84.8
+     },
+     {
+      "areaPct": 0.8,
+      "key": "25",
+      "popPct": 9.0
+     },
+     {
+      "areaPct": 0.5,
+      "key": "26",
+      "popPct": 4.5
+     },
+     {
+      "areaPct": 23.8,
+      "key": "28",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42007,
+    "pres2020New": -60.8,
+    "pres2020Old": 2.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-22; it draws from the old HD-24 (85%), the old HD-25 (9%), the old HD-26 (4%) and 1 more. Entirely in Salt Lake County. 2020 presidential margin R+2.8 on the 2016\u20132020 lines \u2192 D+60.8 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "28",
+      "popPct": 83.3
+     },
+     {
+      "areaPct": 1.2,
+      "key": "25",
+      "popPct": 16.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 96.4
+     },
+     {
+      "county": "Summit",
+      "popPct": 3.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Summit",
+      "popPct": 3.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44755,
+    "pres2020New": -57.0,
+    "pres2020Old": -44.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-23; it draws from the old HD-28 (83%), the old HD-25 (17%). Counties: gained Summit (4%). 2020 presidential margin D+44.2 on the 2016\u20132020 lines \u2192 D+57.0 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 52.9,
+      "key": "25",
+      "popPct": 62.5
+     },
+     {
+      "areaPct": 40.2,
+      "key": "26",
+      "popPct": 33.7
+     },
+     {
+      "areaPct": 6.8,
+      "key": "35",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43615,
+    "pres2020New": -67.0,
+    "pres2020Old": -60.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-24; it draws from the old HD-25 (62%), the old HD-26 (34%), the old HD-35 (4%). Entirely in Salt Lake County. 2020 presidential margin D+60.0 on the 2016\u20132020 lines \u2192 D+67.0 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 79.5,
+      "key": "26",
+      "popPct": 48.5
+     },
+     {
+      "areaPct": 16.4,
+      "key": "31",
+      "popPct": 36.4
+     },
+     {
+      "areaPct": 4.0,
+      "key": "33",
+      "popPct": 15.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45775,
+    "pres2020New": -28.9,
+    "pres2020Old": -68.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-25; it draws from the old HD-26 (48%), the old HD-31 (36%), the old HD-33 (15%). Entirely in Salt Lake County. 2020 presidential margin D+68.9 on the 2016\u20132020 lines \u2192 D+28.9 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 17.7,
+      "key": "31",
+      "popPct": 47.5
+     },
+     {
+      "areaPct": 12.3,
+      "key": "22",
+      "popPct": 25.3
+     },
+     {
+      "areaPct": 8.7,
+      "key": "30",
+      "popPct": 21.8
+     },
+     {
+      "areaPct": 61.3,
+      "key": "26",
+      "popPct": 5.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44689,
+    "pres2020New": -3.2,
+    "pres2020Old": -48.2,
+    "retainedAreaPct": 61.3,
+    "retainedPopPct": 5.4,
+    "text": "A new footprint: only 5% of its population was in the 2016\u20132020 HD-26; it draws from the old HD-31 (48%), the old HD-22 (25%), the old HD-30 (22%). Entirely in Salt Lake County. 2020 presidential margin D+48.2 on the 2016\u20132020 lines \u2192 D+3.2 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 95.7,
+      "key": "22",
+      "popPct": 70.8
+     },
+     {
+      "areaPct": 0.9,
+      "key": "38",
+      "popPct": 19.0
+     },
+     {
+      "areaPct": 3.2,
+      "key": "42",
+      "popPct": 10.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Utah",
+      "popPct": 99.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 44490,
+    "pres2020New": 2.4,
+    "pres2020Old": 49.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-27; it draws from the old HD-22 (71%), the old HD-38 (19%), the old HD-42 (10%). Counties: gained Salt Lake (100%); lost Utah. 2020 presidential margin R+49.3 on the 2016\u20132020 lines \u2192 R+2.4 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 94.5,
+      "key": "21",
+      "popPct": 99.5
+     },
+     {
+      "areaPct": 5.5,
+      "key": "68",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tooele",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Tooele",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Salt Lake",
+      "popPct": 93.4
+     },
+     {
+      "county": "Summit",
+      "popPct": 6.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 42404,
+    "pres2020New": 31.0,
+    "pres2020Old": -54.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-28; it draws from the old HD-21 (100%), the old HD-68 (0%). Counties: gained Tooele (100%); lost Salt Lake, Summit. 2020 presidential margin D+54.2 on the 2016\u20132020 lines \u2192 R+31.0 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "68",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tooele",
+      "popPct": 69.7
+     },
+     {
+      "county": "Millard",
+      "popPct": 29.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Tooele",
+      "popPct": 69.7
+     },
+     {
+      "county": "Millard",
+      "popPct": 29.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Weber",
+      "popPct": 63.6
+     },
+     {
+      "county": "Box Elder",
+      "popPct": 36.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 43434,
+    "pres2020New": 56.9,
+    "pres2020Old": 54.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-29; it draws from the old HD-68 (100%). Counties: gained Tooele (70%), Millard (30%); lost Weber, Box Elder. 2020 presidential margin R+54.3 on the 2016\u20132020 lines \u2192 R+56.9 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 93.1,
+      "key": "4",
+      "popPct": 89.1
+     },
+     {
+      "areaPct": 6.7,
+      "key": "3",
+      "popPct": 8.2
+     },
+     {
+      "areaPct": 0.1,
+      "key": "5",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cache",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43560,
+    "pres2020New": 12.5,
+    "pres2020Old": 42.4,
+    "retainedAreaPct": 6.7,
+    "retainedPopPct": 8.2,
+    "text": "A new footprint: only 8% of its population was in the 2016\u20132020 HD-3; it draws from the old HD-4 (89%), the old HD-5 (3%). Entirely in Cache County. 2020 presidential margin R+42.4 on the 2016\u20132020 lines \u2192 R+12.5 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 60.3,
+      "key": "30",
+      "popPct": 58.6
+     },
+     {
+      "areaPct": 30.0,
+      "key": "33",
+      "popPct": 31.5
+     },
+     {
+      "areaPct": 9.7,
+      "key": "34",
+      "popPct": 9.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45420,
+    "pres2020New": -6.1,
+    "pres2020Old": -3.7,
+    "retainedAreaPct": 60.3,
+    "retainedPopPct": 58.6,
+    "text": "Kept 59% of its population from the 2016\u20132020 HD-30; gained the rest from the old HD-33 (32%), the old HD-34 (10%). Entirely in Salt Lake County. 2020 presidential margin D+3.7 on the 2016\u20132020 lines \u2192 D+6.1 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 57.6,
+      "key": "34",
+      "popPct": 52.8
+     },
+     {
+      "areaPct": 31.3,
+      "key": "33",
+      "popPct": 41.8
+     },
+     {
+      "areaPct": 10.9,
+      "key": "31",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44370,
+    "pres2020New": -16.1,
+    "pres2020Old": -12.2,
+    "retainedAreaPct": 10.9,
+    "retainedPopPct": 5.2,
+    "text": "A new footprint: only 5% of its population was in the 2016\u20132020 HD-31; it draws from the old HD-34 (53%), the old HD-33 (42%). Entirely in Salt Lake County. 2020 presidential margin D+12.2 on the 2016\u20132020 lines \u2192 D+16.1 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 67.6,
+      "key": "35",
+      "popPct": 54.1
+     },
+     {
+      "areaPct": 32.2,
+      "key": "40",
+      "popPct": 45.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43935,
+    "pres2020New": -49.4,
+    "pres2020Old": 7.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-32; it draws from the old HD-35 (54%), the old HD-40 (46%). Entirely in Salt Lake County. 2020 presidential margin R+7.6 on the 2016\u20132020 lines \u2192 D+49.4 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 98.4,
+      "key": "36",
+      "popPct": 89.3
+     },
+     {
+      "areaPct": 1.5,
+      "key": "40",
+      "popPct": 10.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43475,
+    "pres2020New": -32.1,
+    "pres2020Old": -14.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-33; it draws from the old HD-36 (89%), the old HD-40 (10%). Entirely in Salt Lake County. 2020 presidential margin D+14.8 on the 2016\u20132020 lines \u2192 D+32.1 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 67.8,
+      "key": "37",
+      "popPct": 58.7
+     },
+     {
+      "areaPct": 24.9,
+      "key": "40",
+      "popPct": 31.1
+     },
+     {
+      "areaPct": 5.2,
+      "key": "35",
+      "popPct": 8.9
+     },
+     {
+      "areaPct": 2.1,
+      "key": "46",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42660,
+    "pres2020New": -25.9,
+    "pres2020Old": -12.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-34; it draws from the old HD-37 (59%), the old HD-40 (31%), the old HD-35 (9%) and 1 more. Entirely in Salt Lake County. 2020 presidential margin D+12.2 on the 2016\u20132020 lines \u2192 D+25.9 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 23.9,
+      "key": "35",
+      "popPct": 37.1
+     },
+     {
+      "areaPct": 32.7,
+      "key": "37",
+      "popPct": 26.4
+     },
+     {
+      "areaPct": 19.7,
+      "key": "34",
+      "popPct": 18.2
+     },
+     {
+      "areaPct": 22.6,
+      "key": "44",
+      "popPct": 17.4
+     },
+     {
+      "areaPct": 1.1,
+      "key": "46",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44074,
+    "pres2020New": -18.1,
+    "pres2020Old": -39.2,
+    "retainedAreaPct": 23.9,
+    "retainedPopPct": 37.1,
+    "text": "A new footprint: only 37% of its population was in the 2016\u20132020 HD-35; it draws from the old HD-37 (26%), the old HD-34 (18%), the old HD-44 (17%) and 1 more. Entirely in Salt Lake County. 2020 presidential margin D+39.2 on the 2016\u20132020 lines \u2192 D+18.1 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 56.1,
+      "key": "39",
+      "popPct": 58.2
+     },
+     {
+      "areaPct": 38.4,
+      "key": "43",
+      "popPct": 35.6
+     },
+     {
+      "areaPct": 5.5,
+      "key": "34",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44063,
+    "pres2020New": 4.9,
+    "pres2020Old": -30.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-36; it draws from the old HD-39 (58%), the old HD-43 (36%), the old HD-34 (6%). Entirely in Salt Lake County. 2020 presidential margin D+30.9 on the 2016\u20132020 lines \u2192 R+4.9 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 66.1,
+      "key": "38",
+      "popPct": 69.2
+     },
+     {
+      "areaPct": 30.3,
+      "key": "39",
+      "popPct": 26.5
+     },
+     {
+      "areaPct": 3.5,
+      "key": "43",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42588,
+    "pres2020New": -6.9,
+    "pres2020Old": -22.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-37; it draws from the old HD-38 (69%), the old HD-39 (26%), the old HD-43 (4%). Entirely in Salt Lake County. 2020 presidential margin D+22.1 on the 2016\u20132020 lines \u2192 D+6.9 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 77.2,
+      "key": "42",
+      "popPct": 69.0
+     },
+     {
+      "areaPct": 22.8,
+      "key": "43",
+      "popPct": 31.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43931,
+    "pres2020New": 9.3,
+    "pres2020Old": -5.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-38; it draws from the old HD-42 (69%), the old HD-43 (31%). Entirely in Salt Lake County. 2020 presidential margin D+5.1 on the 2016\u20132020 lines \u2192 R+9.3 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 86.0,
+      "key": "47",
+      "popPct": 82.0
+     },
+     {
+      "areaPct": 12.5,
+      "key": "43",
+      "popPct": 16.3
+     },
+     {
+      "areaPct": 1.1,
+      "key": "45",
+      "popPct": 1.1
+     },
+     {
+      "areaPct": 0.3,
+      "key": "34",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43448,
+    "pres2020New": 6.6,
+    "pres2020Old": -2.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-39; it draws from the old HD-47 (82%), the old HD-43 (16%), the old HD-45 (1%) and 1 more. Entirely in Salt Lake County. 2020 presidential margin D+2.1 on the 2016\u20132020 lines \u2192 R+6.6 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "53",
+      "popPct": 84.5
+     },
+     {
+      "areaPct": 0.5,
+      "key": "54",
+      "popPct": 13.4
+     },
+     {
+      "areaPct": 0.0,
+      "key": "28",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Summit",
+      "popPct": 68.5
+     },
+     {
+      "county": "Morgan",
+      "popPct": 25.6
+     },
+     {
+      "county": "Rich",
+      "popPct": 5.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Summit",
+      "popPct": 68.5
+     },
+     {
+      "county": "Morgan",
+      "popPct": 25.6
+     },
+     {
+      "county": "Rich",
+      "popPct": 5.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cache",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 43830,
+    "pres2020New": 13.7,
+    "pres2020Old": 5.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-4; it draws from the old HD-53 (84%), the old HD-54 (13%), the old HD-28 (2%). Counties: gained Summit (68%), Morgan (26%), Rich (6%); lost Cache. 2020 presidential margin R+5.9 on the 2016\u20132020 lines \u2192 R+13.7 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 81.8,
+      "key": "44",
+      "popPct": 86.3
+     },
+     {
+      "areaPct": 10.5,
+      "key": "45",
+      "popPct": 5.9
+     },
+     {
+      "areaPct": 4.8,
+      "key": "46",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 2.9,
+      "key": "47",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44207,
+    "pres2020New": -18.4,
+    "pres2020Old": -44.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-40; it draws from the old HD-44 (86%), the old HD-45 (6%), the old HD-46 (5%) and 1 more. Entirely in Salt Lake County. 2020 presidential margin D+44.3 on the 2016\u20132020 lines \u2192 D+18.4 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 97.1,
+      "key": "46",
+      "popPct": 75.7
+     },
+     {
+      "areaPct": 1.0,
+      "key": "45",
+      "popPct": 11.6
+     },
+     {
+      "areaPct": 1.3,
+      "key": "49",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 0.6,
+      "key": "37",
+      "popPct": 5.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43778,
+    "pres2020New": -22.5,
+    "pres2020Old": 36.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-41; it draws from the old HD-46 (76%), the old HD-45 (12%), the old HD-49 (7%) and 1 more. Entirely in Salt Lake County. 2020 presidential margin R+36.9 on the 2016\u20132020 lines \u2192 D+22.5 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 71.2,
+      "key": "49",
+      "popPct": 71.9
+     },
+     {
+      "areaPct": 28.6,
+      "key": "32",
+      "popPct": 28.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44017,
+    "pres2020New": 0.0,
+    "pres2020Old": 13.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-42; it draws from the old HD-49 (72%), the old HD-32 (28%). Entirely in Salt Lake County. 2020 presidential margin R+13.3 on the 2016\u20132020 lines \u2192 Even  on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 64.6,
+      "key": "45",
+      "popPct": 73.3
+     },
+     {
+      "areaPct": 12.4,
+      "key": "32",
+      "popPct": 11.0
+     },
+     {
+      "areaPct": 16.4,
+      "key": "50",
+      "popPct": 8.7
+     },
+     {
+      "areaPct": 4.8,
+      "key": "49",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 1.5,
+      "key": "46",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43918,
+    "pres2020New": -4.1,
+    "pres2020Old": 5.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-43; it draws from the old HD-45 (73%), the old HD-32 (11%), the old HD-50 (9%) and 2 more. Entirely in Salt Lake County. 2020 presidential margin R+5.6 on the 2016\u20132020 lines \u2192 D+4.1 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 45.1,
+      "key": "50",
+      "popPct": 51.6
+     },
+     {
+      "areaPct": 42.1,
+      "key": "42",
+      "popPct": 37.0
+     },
+     {
+      "areaPct": 8.1,
+      "key": "47",
+      "popPct": 6.6
+     },
+     {
+      "areaPct": 4.7,
+      "key": "52",
+      "popPct": 4.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42050,
+    "pres2020New": 17.2,
+    "pres2020Old": -16.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-44; it draws from the old HD-50 (52%), the old HD-42 (37%), the old HD-47 (7%) and 1 more. Entirely in Salt Lake County. 2020 presidential margin D+16.7 on the 2016\u20132020 lines \u2192 R+17.2 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 68.5,
+      "key": "50",
+      "popPct": 60.5
+     },
+     {
+      "areaPct": 31.3,
+      "key": "32",
+      "popPct": 39.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44015,
+    "pres2020New": 17.7,
+    "pres2020Old": -7.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-45; it draws from the old HD-50 (60%), the old HD-32 (39%). Entirely in Salt Lake County. 2020 presidential margin D+7.8 on the 2016\u20132020 lines \u2192 R+17.7 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 42.4,
+      "key": "51",
+      "popPct": 69.2
+     },
+     {
+      "areaPct": 16.6,
+      "key": "41",
+      "popPct": 21.5
+     },
+     {
+      "areaPct": 5.6,
+      "key": "32",
+      "popPct": 9.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 99.4
+     },
+     {
+      "county": "Utah",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44533,
+    "pres2020New": 20.9,
+    "pres2020Old": -22.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-46; it draws from the old HD-51 (69%), the old HD-41 (22%), the old HD-32 (9%). Spans Salt Lake, Utah counties. 2020 presidential margin D+22.9 on the 2016\u20132020 lines \u2192 R+20.9 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 67.3,
+      "key": "41",
+      "popPct": 70.4
+     },
+     {
+      "areaPct": 32.5,
+      "key": "51",
+      "popPct": 29.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43277,
+    "pres2020New": 31.6,
+    "pres2020Old": 10.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-47; it draws from the old HD-41 (70%), the old HD-51 (29%). Entirely in Salt Lake County. 2020 presidential margin R+10.6 on the 2016\u20132020 lines \u2192 R+31.6 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 34.0,
+      "key": "52",
+      "popPct": 63.6
+     },
+     {
+      "areaPct": 30.6,
+      "key": "41",
+      "popPct": 25.3
+     },
+     {
+      "areaPct": 33.6,
+      "key": "42",
+      "popPct": 9.5
+     },
+     {
+      "areaPct": 1.8,
+      "key": "50",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 41348,
+    "pres2020New": 25.1,
+    "pres2020Old": 34.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-48; it draws from the old HD-52 (64%), the old HD-41 (25%), the old HD-42 (10%) and 1 more. Counties: gained Salt Lake (100%); lost Utah. 2020 presidential margin R+34.0 on the 2016\u20132020 lines \u2192 R+25.1 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 99.2,
+      "key": "52",
+      "popPct": 98.4
+     },
+     {
+      "areaPct": 0.7,
+      "key": "41",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 47593,
+    "pres2020New": 34.1,
+    "pres2020Old": -5.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-49; it draws from the old HD-52 (98%), the old HD-41 (2%). Entirely in Salt Lake County. 2020 presidential margin D+5.7 on the 2016\u20132020 lines \u2192 R+34.1 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "5",
+      "popPct": 98.4
+     },
+     {
+      "areaPct": 0.0,
+      "key": "4",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cache",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43642,
+    "pres2020New": 52.1,
+    "pres2020Old": 51.8,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 98.4,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-5; gained the rest from the old HD-4 (2%). Entirely in Cache County. 2020 presidential margin R+51.8 on the 2016\u20132020 lines \u2192 R+52.1 on the current lines.",
+    "toEra": "current"
+   },
+   "50": {
+    "contributors": [
+     {
+      "areaPct": 19.7,
+      "key": "2",
+      "popPct": 93.8
+     },
+     {
+      "areaPct": 80.3,
+      "key": "67",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 44130,
+    "pres2020New": 51.5,
+    "pres2020Old": 23.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-50; it draws from the old HD-2 (94%), the old HD-67 (6%). Counties: gained Utah (100%); lost Salt Lake. 2020 presidential margin R+23.2 on the 2016\u20132020 lines \u2192 R+51.5 on the current lines.",
+    "toEra": "current"
+   },
+   "51": {
+    "contributors": [
+     {
+      "areaPct": 93.0,
+      "key": "2",
+      "popPct": 87.8
+     },
+     {
+      "areaPct": 7.0,
+      "key": "6",
+      "popPct": 12.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Utah",
+      "popPct": 99.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Salt Lake",
+      "popPct": 99.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 42210,
+    "pres2020New": 43.1,
+    "pres2020Old": 17.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-51; it draws from the old HD-2 (88%), the old HD-6 (12%). Counties: gained Utah (100%); lost Salt Lake. 2020 presidential margin R+17.1 on the 2016\u20132020 lines \u2192 R+43.1 on the current lines.",
+    "toEra": "current"
+   },
+   "52": {
+    "contributors": [
+     {
+      "areaPct": 75.0,
+      "key": "6",
+      "popPct": 88.8
+     },
+     {
+      "areaPct": 22.0,
+      "key": "56",
+      "popPct": 11.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Salt Lake",
+      "popPct": 99.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 45614,
+    "pres2020New": 39.7,
+    "pres2020Old": 27.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-52; it draws from the old HD-6 (89%), the old HD-56 (11%). Counties: gained Utah (100%); lost Salt Lake. 2020 presidential margin R+27.8 on the 2016\u20132020 lines \u2192 R+39.7 on the current lines.",
+    "toEra": "current"
+   },
+   "53": {
+    "contributors": [
+     {
+      "areaPct": 51.1,
+      "key": "56",
+      "popPct": 59.4
+     },
+     {
+      "areaPct": 48.8,
+      "key": "6",
+      "popPct": 40.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Summit",
+      "popPct": 56.1
+     },
+     {
+      "county": "Morgan",
+      "popPct": 28.3
+     },
+     {
+      "county": "Duchesne",
+      "popPct": 7.4
+     },
+     {
+      "county": "Rich",
+      "popPct": 5.8
+     },
+     {
+      "county": "Daggett",
+      "popPct": 2.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 43917,
+    "pres2020New": 43.0,
+    "pres2020Old": 28.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-53; it draws from the old HD-56 (59%), the old HD-6 (41%). Counties: gained Utah (100%); lost Summit, Morgan, Duchesne, Rich and 1 more. 2020 presidential margin R+28.5 on the 2016\u20132020 lines \u2192 R+43.0 on the current lines.",
+    "toEra": "current"
+   },
+   "54": {
+    "contributors": [
+     {
+      "areaPct": 98.8,
+      "key": "27",
+      "popPct": 98.3
+     },
+     {
+      "areaPct": 0.2,
+      "key": "56",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Utah",
+      "popPct": 99.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Wasatch",
+      "popPct": 69.0
+     },
+     {
+      "county": "Summit",
+      "popPct": 30.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 43555,
+    "pres2020New": 49.7,
+    "pres2020Old": 1.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-54; it draws from the old HD-27 (98%), the old HD-56 (1%). Counties: gained Utah (100%); lost Wasatch, Summit. 2020 presidential margin R+1.7 on the 2016\u20132020 lines \u2192 R+49.7 on the current lines.",
+    "toEra": "current"
+   },
+   "55": {
+    "contributors": [
+     {
+      "areaPct": 36.4,
+      "key": "57",
+      "popPct": 80.5
+     },
+     {
+      "areaPct": 10.9,
+      "key": "56",
+      "popPct": 19.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Uintah",
+      "popPct": 88.0
+     },
+     {
+      "county": "Duchesne",
+      "popPct": 12.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 43210,
+    "pres2020New": 45.1,
+    "pres2020Old": 76.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-55; it draws from the old HD-57 (80%), the old HD-56 (19%). Counties: gained Utah (100%); lost Uintah, Duchesne. 2020 presidential margin R+76.6 on the 2016\u20132020 lines \u2192 R+45.1 on the current lines.",
+    "toEra": "current"
+   },
+   "56": {
+    "contributors": [
+     {
+      "areaPct": 82.6,
+      "key": "59",
+      "popPct": 74.0
+     },
+     {
+      "areaPct": 13.6,
+      "key": "57",
+      "popPct": 21.6
+     },
+     {
+      "areaPct": 2.2,
+      "key": "56",
+      "popPct": 3.1
+     },
+     {
+      "areaPct": 1.6,
+      "key": "60",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44869,
+    "pres2020New": 30.6,
+    "pres2020Old": 44.1,
+    "retainedAreaPct": 2.2,
+    "retainedPopPct": 3.1,
+    "text": "A new footprint: only 3% of its population was in the 2016\u20132020 HD-56; it draws from the old HD-59 (74%), the old HD-57 (22%), the old HD-60 (1%). Entirely in Utah County. 2020 presidential margin R+44.1 on the 2016\u20132020 lines \u2192 R+30.6 on the current lines.",
+    "toEra": "current"
+   },
+   "57": {
+    "contributors": [
+     {
+      "areaPct": 49.4,
+      "key": "60",
+      "popPct": 73.3
+     },
+     {
+      "areaPct": 27.5,
+      "key": "59",
+      "popPct": 23.8
+     },
+     {
+      "areaPct": 22.7,
+      "key": "61",
+      "popPct": 2.1
+     },
+     {
+      "areaPct": 0.5,
+      "key": "48",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44703,
+    "pres2020New": 31.4,
+    "pres2020Old": 43.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-57; it draws from the old HD-60 (73%), the old HD-59 (24%), the old HD-61 (2%) and 1 more. Entirely in Utah County. 2020 presidential margin R+43.6 on the 2016\u20132020 lines \u2192 R+31.4 on the current lines.",
+    "toEra": "current"
+   },
+   "58": {
+    "contributors": [
+     {
+      "areaPct": 57.3,
+      "key": "48",
+      "popPct": 63.8
+     },
+     {
+      "areaPct": 1.8,
+      "key": "59",
+      "popPct": 18.2
+     },
+     {
+      "areaPct": 1.1,
+      "key": "60",
+      "popPct": 17.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Sanpete",
+      "popPct": 72.0
+     },
+     {
+      "county": "Juab",
+      "popPct": 28.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 44383,
+    "pres2020New": 36.4,
+    "pres2020Old": 71.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-58; it draws from the old HD-48 (64%), the old HD-59 (18%), the old HD-60 (18%). Counties: gained Utah (100%); lost Sanpete, Juab. 2020 presidential margin R+71.5 on the 2016\u20132020 lines \u2192 R+36.4 on the current lines.",
+    "toEra": "current"
+   },
+   "59": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "54",
+      "popPct": 97.7
+     },
+     {
+      "areaPct": 0.1,
+      "key": "53",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Wasatch",
+      "popPct": 76.4
+     },
+     {
+      "county": "Summit",
+      "popPct": 23.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Wasatch",
+      "popPct": 76.4
+     },
+     {
+      "county": "Summit",
+      "popPct": 23.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 45243,
+    "pres2020New": 7.0,
+    "pres2020Old": 34.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-59; it draws from the old HD-54 (98%), the old HD-53 (2%). Counties: gained Wasatch (76%), Summit (24%); lost Utah. 2020 presidential margin R+34.8 on the 2016\u20132020 lines \u2192 R+7.0 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "29",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weber",
+      "popPct": 61.8
+     },
+     {
+      "county": "Box Elder",
+      "popPct": 38.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Weber",
+      "popPct": 61.8
+     },
+     {
+      "county": "Box Elder",
+      "popPct": 38.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 42110,
+    "pres2020New": 54.6,
+    "pres2020Old": 38.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-6; it draws from the old HD-29 (100%). Counties: gained Weber (62%), Box Elder (38%); lost Utah. 2020 presidential margin R+38.4 on the 2016\u20132020 lines \u2192 R+54.6 on the current lines.",
+    "toEra": "current"
+   },
+   "60": {
+    "contributors": [
+     {
+      "areaPct": 88.2,
+      "key": "63",
+      "popPct": 81.6
+     },
+     {
+      "areaPct": 4.6,
+      "key": "48",
+      "popPct": 16.0
+     },
+     {
+      "areaPct": 7.2,
+      "key": "64",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44175,
+    "pres2020New": 10.2,
+    "pres2020Old": 29.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-60; it draws from the old HD-63 (82%), the old HD-48 (16%), the old HD-64 (2%). Entirely in Utah County. 2020 presidential margin R+29.8 on the 2016\u20132020 lines \u2192 R+10.2 on the current lines.",
+    "toEra": "current"
+   },
+   "61": {
+    "contributors": [
+     {
+      "areaPct": 99.3,
+      "key": "61",
+      "popPct": 96.9
+     },
+     {
+      "areaPct": 0.2,
+      "key": "48",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42259,
+    "pres2020New": 25.8,
+    "pres2020Old": 25.7,
+    "retainedAreaPct": 99.3,
+    "retainedPopPct": 96.9,
+    "text": "Kept 97% of its population from the 2016\u20132020 HD-61; gained the rest from the old HD-48 (3%). Entirely in Utah County. 2020 presidential margin R+25.7 on the 2016\u20132020 lines \u2192 R+25.8 on the current lines.",
+    "toEra": "current"
+   },
+   "62": {
+    "contributors": [
+     {
+      "areaPct": 91.1,
+      "key": "64",
+      "popPct": 92.2
+     },
+     {
+      "areaPct": 6.7,
+      "key": "65",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 0.2,
+      "key": "63",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 43237,
+    "pres2020New": 17.4,
+    "pres2020Old": 55.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-62; it draws from the old HD-64 (92%), the old HD-65 (7%), the old HD-63 (0%). Counties: gained Utah (100%); lost Washington. 2020 presidential margin R+55.9 on the 2016\u20132020 lines \u2192 R+17.4 on the current lines.",
+    "toEra": "current"
+   },
+   "63": {
+    "contributors": [
+     {
+      "areaPct": 97.2,
+      "key": "65",
+      "popPct": 98.4
+     },
+     {
+      "areaPct": 0.0,
+      "key": "66",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43914,
+    "pres2020New": 48.4,
+    "pres2020Old": 9.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-63; it draws from the old HD-65 (98%), the old HD-66 (2%). Entirely in Utah County. 2020 presidential margin R+9.5 on the 2016\u20132020 lines \u2192 R+48.4 on the current lines.",
+    "toEra": "current"
+   },
+   "64": {
+    "contributors": [
+     {
+      "areaPct": 97.8,
+      "key": "66",
+      "popPct": 95.2
+     },
+     {
+      "areaPct": 0.5,
+      "key": "65",
+      "popPct": 4.0
+     },
+     {
+      "areaPct": 1.7,
+      "key": "64",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43613,
+    "pres2020New": 55.4,
+    "pres2020Old": 16.2,
+    "retainedAreaPct": 1.7,
+    "retainedPopPct": 0.8,
+    "text": "A new footprint: only 1% of its population was in the 2016\u20132020 HD-64; it draws from the old HD-66 (95%), the old HD-65 (4%). Entirely in Utah County. 2020 presidential margin R+16.2 on the 2016\u20132020 lines \u2192 R+55.4 on the current lines.",
+    "toEra": "current"
+   },
+   "65": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "67",
+      "popPct": 99.0
+     },
+     {
+      "areaPct": 0.3,
+      "key": "66",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43985,
+    "pres2020New": 62.2,
+    "pres2020Old": 47.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-65; it draws from the old HD-67 (99%), the old HD-66 (1%). Entirely in Utah County. 2020 presidential margin R+47.8 on the 2016\u20132020 lines \u2192 R+62.2 on the current lines.",
+    "toEra": "current"
+   },
+   "66": {
+    "contributors": [
+     {
+      "areaPct": 77.3,
+      "key": "58",
+      "popPct": 93.7
+     },
+     {
+      "areaPct": 7.8,
+      "key": "68",
+      "popPct": 3.0
+     },
+     {
+      "areaPct": 2.7,
+      "key": "67",
+      "popPct": 2.2
+     },
+     {
+      "areaPct": 2.0,
+      "key": "70",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sanpete",
+      "popPct": 68.2
+     },
+     {
+      "county": "Juab",
+      "popPct": 27.5
+     },
+     {
+      "county": "Utah",
+      "popPct": 4.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Sanpete",
+      "popPct": 68.2
+     },
+     {
+      "county": "Juab",
+      "popPct": 27.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 41716,
+    "pres2020New": 71.0,
+    "pres2020Old": 55.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-66; it draws from the old HD-58 (94%), the old HD-68 (3%), the old HD-67 (2%) and 1 more. Counties: gained Sanpete (68%), Juab (28%). 2020 presidential margin R+55.5 on the 2016\u20132020 lines \u2192 R+71.0 on the current lines.",
+    "toEra": "current"
+   },
+   "67": {
+    "contributors": [
+     {
+      "areaPct": 76.5,
+      "key": "69",
+      "popPct": 76.6
+     },
+     {
+      "areaPct": 18.9,
+      "key": "70",
+      "popPct": 16.8
+     },
+     {
+      "areaPct": 2.6,
+      "key": "55",
+      "popPct": 5.6
+     },
+     {
+      "areaPct": 2.0,
+      "key": "53",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carbon",
+      "popPct": 49.0
+     },
+     {
+      "county": "Duchesne",
+      "popPct": 33.7
+     },
+     {
+      "county": "Emery",
+      "popPct": 16.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Carbon",
+      "popPct": 49.0
+     },
+     {
+      "county": "Duchesne",
+      "popPct": 33.7
+     },
+     {
+      "county": "Emery",
+      "popPct": 16.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 41631,
+    "pres2020New": 60.7,
+    "pres2020Old": 63.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-67; it draws from the old HD-69 (77%), the old HD-70 (17%), the old HD-55 (6%) and 1 more. Counties: gained Carbon (49%), Duchesne (34%), Emery (17%); lost Utah. 2020 presidential margin R+63.2 on the 2016\u20132020 lines \u2192 R+60.7 on the current lines.",
+    "toEra": "current"
+   },
+   "68": {
+    "contributors": [
+     {
+      "areaPct": 61.7,
+      "key": "55",
+      "popPct": 91.0
+     },
+     {
+      "areaPct": 38.2,
+      "key": "53",
+      "popPct": 8.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Uintah",
+      "popPct": 84.9
+     },
+     {
+      "county": "Duchesne",
+      "popPct": 12.7
+     },
+     {
+      "county": "Daggett",
+      "popPct": 2.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Uintah",
+      "popPct": 84.9
+     },
+     {
+      "county": "Duchesne",
+      "popPct": 12.7
+     },
+     {
+      "county": "Daggett",
+      "popPct": 2.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Tooele",
+      "popPct": 65.8
+     },
+     {
+      "county": "Millard",
+      "popPct": 28.0
+     },
+     {
+      "county": "Beaver",
+      "popPct": 3.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 41941,
+    "pres2020New": 76.3,
+    "pres2020Old": 56.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-68; it draws from the old HD-55 (91%), the old HD-53 (9%). Counties: gained Uintah (85%), Duchesne (13%), Daggett (2%); lost Tooele, Millard, Beaver. 2020 presidential margin R+56.4 on the 2016\u20132020 lines \u2192 R+76.3 on the current lines.",
+    "toEra": "current"
+   },
+   "69": {
+    "contributors": [
+     {
+      "areaPct": 72.6,
+      "key": "73",
+      "popPct": 70.4
+     },
+     {
+      "areaPct": 14.3,
+      "key": "70",
+      "popPct": 20.9
+     },
+     {
+      "areaPct": 13.0,
+      "key": "69",
+      "popPct": 8.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Juan",
+      "popPct": 34.3
+     },
+     {
+      "county": "Grand",
+      "popPct": 23.1
+     },
+     {
+      "county": "Kane",
+      "popPct": 18.2
+     },
+     {
+      "county": "Garfield",
+      "popPct": 12.0
+     },
+     {
+      "county": "Emery",
+      "popPct": 6.5
+     },
+     {
+      "county": "Wayne",
+      "popPct": 5.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "San Juan",
+      "popPct": 34.3
+     },
+     {
+      "county": "Kane",
+      "popPct": 18.2
+     },
+     {
+      "county": "Garfield",
+      "popPct": 12.0
+     },
+     {
+      "county": "Wayne",
+      "popPct": 5.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Carbon",
+      "popPct": 57.4
+     },
+     {
+      "county": "Duchesne",
+      "popPct": 31.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 42273,
+    "pres2020New": 24.2,
+    "pres2020Old": 48.7,
+    "retainedAreaPct": 13.0,
+    "retainedPopPct": 8.7,
+    "text": "A new footprint: only 9% of its population was in the 2016\u20132020 HD-69; it draws from the old HD-73 (70%), the old HD-70 (21%). Counties: gained San Juan (34%), Kane (18%), Garfield (12%) and 1 more; lost Carbon, Duchesne. 2020 presidential margin R+48.7 on the 2016\u20132020 lines \u2192 R+24.2 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 71.1,
+      "key": "7",
+      "popPct": 73.8
+     },
+     {
+      "areaPct": 28.1,
+      "key": "8",
+      "popPct": 26.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weber",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44173,
+    "pres2020New": 24.3,
+    "pres2020Old": 25.3,
+    "retainedAreaPct": 71.1,
+    "retainedPopPct": 73.8,
+    "text": "Kept 74% of its population from the 2016\u20132020 HD-7; gained the rest from the old HD-8 (26%). Entirely in Weber County. 2020 presidential margin R+25.3 on the 2016\u20132020 lines \u2192 R+24.3 on the current lines.",
+    "toEra": "current"
+   },
+   "70": {
+    "contributors": [
+     {
+      "areaPct": 22.5,
+      "key": "70",
+      "popPct": 49.3
+     },
+     {
+      "areaPct": 26.5,
+      "key": "73",
+      "popPct": 16.9
+     },
+     {
+      "areaPct": 0.1,
+      "key": "71",
+      "popPct": 16.3
+     },
+     {
+      "areaPct": 30.9,
+      "key": "72",
+      "popPct": 14.1
+     },
+     {
+      "areaPct": 20.0,
+      "key": "68",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sevier",
+      "popPct": 49.8
+     },
+     {
+      "county": "Iron",
+      "popPct": 30.4
+     },
+     {
+      "county": "Beaver",
+      "popPct": 16.4
+     },
+     {
+      "county": "Piute",
+      "popPct": 3.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Iron",
+      "popPct": 30.4
+     },
+     {
+      "county": "Beaver",
+      "popPct": 16.4
+     },
+     {
+      "county": "Piute",
+      "popPct": 3.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Emery",
+      "popPct": 23.9
+     },
+     {
+      "county": "Grand",
+      "popPct": 18.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 43178,
+    "pres2020New": 74.4,
+    "pres2020Old": 59.6,
+    "retainedAreaPct": 22.5,
+    "retainedPopPct": 49.3,
+    "text": "A new footprint: only 49% of its population was in the 2016\u20132020 HD-70; it draws from the old HD-73 (17%), the old HD-71 (16%), the old HD-72 (14%) and 1 more. Counties: gained Iron (30%), Beaver (16%), Piute (3%); lost Emery, Grand. 2020 presidential margin R+59.6 on the 2016\u20132020 lines \u2192 R+74.4 on the current lines.",
+    "toEra": "current"
+   },
+   "71": {
+    "contributors": [
+     {
+      "areaPct": 58.4,
+      "key": "72",
+      "popPct": 90.8
+     },
+     {
+      "areaPct": 41.6,
+      "key": "71",
+      "popPct": 9.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Iron",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Washington",
+      "popPct": 77.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 44143,
+    "pres2020New": 53.0,
+    "pres2020Old": 59.7,
+    "retainedAreaPct": 41.6,
+    "retainedPopPct": 9.2,
+    "text": "A new footprint: only 9% of its population was in the 2016\u20132020 HD-71; it draws from the old HD-72 (91%). Counties: lost Washington. 2020 presidential margin R+59.7 on the 2016\u20132020 lines \u2192 R+53.0 on the current lines.",
+    "toEra": "current"
+   },
+   "72": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "71",
+      "popPct": 78.7
+     },
+     {
+      "areaPct": 1.3,
+      "key": "62",
+      "popPct": 21.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Iron",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 47077,
+    "pres2020New": 57.4,
+    "pres2020Old": 53.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-72; it draws from the old HD-71 (79%), the old HD-62 (21%). Counties: gained Washington (100%); lost Iron. 2020 presidential margin R+53.1 on the 2016\u20132020 lines \u2192 R+57.4 on the current lines.",
+    "toEra": "current"
+   },
+   "73": {
+    "contributors": [
+     {
+      "areaPct": 30.9,
+      "key": "62",
+      "popPct": 92.9
+     },
+     {
+      "areaPct": 68.3,
+      "key": "71",
+      "popPct": 4.0
+     },
+     {
+      "areaPct": 0.7,
+      "key": "74",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "San Juan",
+      "popPct": 39.2
+     },
+     {
+      "county": "Kane",
+      "popPct": 20.7
+     },
+     {
+      "county": "Beaver",
+      "popPct": 15.1
+     },
+     {
+      "county": "Garfield",
+      "popPct": 13.7
+     },
+     {
+      "county": "Wayne",
+      "popPct": 6.7
+     },
+     {
+      "county": "Piute",
+      "popPct": 3.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 43315,
+    "pres2020New": 55.4,
+    "pres2020Old": 40.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-73; it draws from the old HD-62 (93%), the old HD-71 (4%), the old HD-74 (3%). Counties: gained Washington (100%); lost San Juan, Kane, Beaver, Garfield and 2 more. 2020 presidential margin R+40.8 on the 2016\u20132020 lines \u2192 R+55.4 on the current lines.",
+    "toEra": "current"
+   },
+   "74": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "74",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44474,
+    "pres2020New": 43.2,
+    "pres2020Old": 43.5,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Washington County.",
+    "toEra": "current"
+   },
+   "75": {
+    "contributors": [
+     {
+      "areaPct": 88.0,
+      "key": "75",
+      "popPct": 90.2
+     },
+     {
+      "areaPct": 0.5,
+      "key": "62",
+      "popPct": 8.9
+     },
+     {
+      "areaPct": 11.5,
+      "key": "74",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45413,
+    "pres2020New": 51.7,
+    "pres2020Old": 51.5,
+    "retainedAreaPct": 88.0,
+    "retainedPopPct": 90.2,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-75; gained the rest from the old HD-62 (9%), the old HD-74 (1%). Entirely in Washington County. 2020 presidential margin R+51.5 on the 2016\u20132020 lines \u2192 R+51.7 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 91.9,
+      "key": "8",
+      "popPct": 71.1
+     },
+     {
+      "areaPct": 4.5,
+      "key": "7",
+      "popPct": 22.1
+     },
+     {
+      "areaPct": 0.1,
+      "key": "9",
+      "popPct": 4.1
+     },
+     {
+      "areaPct": 3.5,
+      "key": "53",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weber",
+      "popPct": 97.4
+     },
+     {
+      "county": "Morgan",
+      "popPct": 2.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Morgan",
+      "popPct": 2.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42346,
+    "pres2020New": 10.5,
+    "pres2020Old": 8.8,
+    "retainedAreaPct": 91.9,
+    "retainedPopPct": 71.1,
+    "text": "Kept 71% of its population from the 2016\u20132020 HD-8; gained the rest from the old HD-7 (22%), the old HD-9 (4%), the old HD-53 (2%). Counties: gained Morgan (3%). 2020 presidential margin R+8.8 on the 2016\u20132020 lines \u2192 R+10.5 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 90.8,
+      "key": "9",
+      "popPct": 93.3
+     },
+     {
+      "areaPct": 7.1,
+      "key": "29",
+      "popPct": 4.4
+     },
+     {
+      "areaPct": 1.9,
+      "key": "12",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weber",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42917,
+    "pres2020New": 19.3,
+    "pres2020Old": 15.6,
+    "retainedAreaPct": 90.8,
+    "retainedPopPct": 93.3,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-9; gained the rest from the old HD-29 (4%), the old HD-12 (2%). Entirely in Weber County. 2020 presidential margin R+15.6 on the 2016\u20132020 lines \u2192 R+19.3 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "17",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Box Elder",
+      "popPct": 51.9
+     },
+     {
+      "county": "Tooele",
+      "popPct": 26.3
+     },
+     {
+      "county": "Cache",
+      "popPct": 21.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Box Elder",
+      "popPct": 51.9
+     },
+     {
+      "county": "Tooele",
+      "popPct": 26.3
+     },
+     {
+      "county": "Cache",
+      "popPct": 21.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 111009,
+    "pres2020New": 56.6,
+    "pres2020Old": -21.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-1; it draws from the old SD-17 (100%). Counties: gained Box Elder (52%), Tooele (26%), Cache (22%); lost Salt Lake. 2020 presidential margin D+21.2 on the 2016\u20132020 lines \u2192 R+56.6 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 87.7,
+      "key": "1",
+      "popPct": 83.6
+     },
+     {
+      "areaPct": 12.3,
+      "key": "12",
+      "popPct": 16.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 113399,
+    "pres2020New": -15.2,
+    "pres2020Old": 18.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-10; it draws from the old SD-1 (84%), the old SD-12 (16%). Entirely in Salt Lake County. 2020 presidential margin R+18.6 on the 2016\u20132020 lines \u2192 D+15.2 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 3.4,
+      "key": "12",
+      "popPct": 58.6
+     },
+     {
+      "areaPct": 5.3,
+      "key": "13",
+      "popPct": 31.2
+     },
+     {
+      "areaPct": 91.1,
+      "key": "17",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 0.1,
+      "key": "10",
+      "popPct": 5.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 38.4
+     },
+     {
+      "county": "Tooele",
+      "popPct": 38.0
+     },
+     {
+      "county": "Utah",
+      "popPct": 23.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Tooele",
+      "popPct": 38.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 114602,
+    "pres2020New": 31.5,
+    "pres2020Old": 27.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-11; it draws from the old SD-12 (59%), the old SD-13 (31%), the old SD-17 (5%) and 1 more. Counties: gained Tooele (38%). 2020 presidential margin R+27.6 on the 2016\u20132020 lines \u2192 R+31.5 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 88.3,
+      "key": "5",
+      "popPct": 88.6
+     },
+     {
+      "areaPct": 7.9,
+      "key": "6",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 3.2,
+      "key": "3",
+      "popPct": 4.6
+     },
+     {
+      "areaPct": 0.6,
+      "key": "12",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Tooele",
+      "popPct": 35.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 111069,
+    "pres2020New": -9.6,
+    "pres2020Old": 13.3,
+    "retainedAreaPct": 0.6,
+    "retainedPopPct": 0.8,
+    "text": "A new footprint: only 1% of its population was in the 2016\u20132020 SD-12; it draws from the old SD-5 (89%), the old SD-6 (6%), the old SD-3 (5%). Counties: lost Tooele. 2020 presidential margin R+13.3 on the 2016\u20132020 lines \u2192 D+9.6 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 91.3,
+      "key": "3",
+      "popPct": 93.4
+     },
+     {
+      "areaPct": 8.0,
+      "key": "8",
+      "popPct": 5.6
+     },
+     {
+      "areaPct": 0.5,
+      "key": "2",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Utah",
+      "popPct": 85.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 110749,
+    "pres2020New": -39.3,
+    "pres2020Old": 43.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-13; it draws from the old SD-3 (93%), the old SD-8 (6%), the old SD-2 (1%). Counties: lost Utah. 2020 presidential margin R+43.6 on the 2016\u20132020 lines \u2192 D+39.3 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 79.1,
+      "key": "4",
+      "popPct": 78.2
+     },
+     {
+      "areaPct": 20.7,
+      "key": "8",
+      "popPct": 21.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 113496,
+    "pres2020New": -29.8,
+    "pres2020Old": 46.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-14; it draws from the old SD-4 (78%), the old SD-8 (22%). Counties: gained Salt Lake (100%); lost Utah. 2020 presidential margin R+46.8 on the 2016\u20132020 lines \u2192 D+29.8 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 84.4,
+      "key": "8",
+      "popPct": 66.6
+     },
+     {
+      "areaPct": 13.2,
+      "key": "9",
+      "popPct": 23.9
+     },
+     {
+      "areaPct": 1.7,
+      "key": "6",
+      "popPct": 6.7
+     },
+     {
+      "areaPct": 0.7,
+      "key": "10",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 112626,
+    "pres2020New": -17.0,
+    "pres2020Old": 30.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-15; it draws from the old SD-8 (67%), the old SD-9 (24%), the old SD-6 (7%) and 1 more. Counties: gained Salt Lake (100%); lost Utah. 2020 presidential margin R+30.0 on the 2016\u20132020 lines \u2192 D+17.0 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 71.9,
+      "key": "6",
+      "popPct": 72.2
+     },
+     {
+      "areaPct": 17.7,
+      "key": "12",
+      "popPct": 17.3
+     },
+     {
+      "areaPct": 10.4,
+      "key": "10",
+      "popPct": 10.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Utah",
+      "popPct": 99.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 113741,
+    "pres2020New": 6.6,
+    "pres2020Old": 21.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-16; it draws from the old SD-6 (72%), the old SD-12 (17%), the old SD-10 (10%). Counties: gained Salt Lake (100%); lost Utah. 2020 presidential margin R+21.0 on the 2016\u20132020 lines \u2192 R+6.6 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 98.9,
+      "key": "10",
+      "popPct": 98.6
+     },
+     {
+      "areaPct": 0.7,
+      "key": "6",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Box Elder",
+      "popPct": 49.3
+     },
+     {
+      "county": "Tooele",
+      "popPct": 30.0
+     },
+     {
+      "county": "Cache",
+      "popPct": 20.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 114105,
+    "pres2020New": 18.4,
+    "pres2020Old": 56.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-17; it draws from the old SD-10 (99%), the old SD-6 (1%). Counties: gained Salt Lake (100%); lost Box Elder, Tooele, Cache. 2020 presidential margin R+56.6 on the 2016\u20132020 lines \u2192 R+18.4 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 46.5,
+      "key": "11",
+      "popPct": 67.9
+     },
+     {
+      "areaPct": 48.9,
+      "key": "13",
+      "popPct": 19.0
+     },
+     {
+      "areaPct": 4.6,
+      "key": "10",
+      "popPct": 13.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 95.6
+     },
+     {
+      "county": "Utah",
+      "popPct": 4.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Salt Lake",
+      "popPct": 95.6
+     },
+     {
+      "county": "Utah",
+      "popPct": 4.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Weber",
+      "popPct": 74.4
+     },
+     {
+      "county": "Davis",
+      "popPct": 14.6
+     },
+     {
+      "county": "Morgan",
+      "popPct": 11.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 114355,
+    "pres2020New": 32.3,
+    "pres2020Old": 16.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-18; it draws from the old SD-11 (68%), the old SD-13 (19%), the old SD-10 (13%). Counties: gained Salt Lake (96%), Utah (4%); lost Weber, Davis, Morgan. 2020 presidential margin R+16.9 on the 2016\u20132020 lines \u2192 R+32.3 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 53.7,
+      "key": "9",
+      "popPct": 64.1
+     },
+     {
+      "areaPct": 18.9,
+      "key": "11",
+      "popPct": 24.5
+     },
+     {
+      "areaPct": 26.7,
+      "key": "14",
+      "popPct": 9.8
+     },
+     {
+      "areaPct": 0.3,
+      "key": "8",
+      "popPct": 0.9
+     },
+     {
+      "areaPct": 0.4,
+      "key": "10",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 87.4
+     },
+     {
+      "county": "Utah",
+      "popPct": 12.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Salt Lake",
+      "popPct": 87.4
+     },
+     {
+      "county": "Utah",
+      "popPct": 12.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Weber",
+      "popPct": 85.6
+     },
+     {
+      "county": "Summit",
+      "popPct": 13.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 113834,
+    "pres2020New": 10.1,
+    "pres2020Old": 13.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-19; it draws from the old SD-9 (64%), the old SD-11 (24%), the old SD-14 (10%) and 2 more. Counties: gained Salt Lake (87%), Utah (13%); lost Weber, Summit. 2020 presidential margin R+13.2 on the 2016\u20132020 lines \u2192 R+10.1 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "25",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cache",
+      "popPct": 97.7
+     },
+     {
+      "county": "Rich",
+      "popPct": 2.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cache",
+      "popPct": 97.7
+     },
+     {
+      "county": "Rich",
+      "popPct": 2.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 111474,
+    "pres2020New": 33.3,
+    "pres2020Old": -60.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-2; it draws from the old SD-25 (100%). Counties: gained Cache (98%), Rich (2%); lost Salt Lake. 2020 presidential margin D+60.3 on the 2016\u20132020 lines \u2192 R+33.3 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "26",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Uintah",
+      "popPct": 31.9
+     },
+     {
+      "county": "Wasatch",
+      "popPct": 27.0
+     },
+     {
+      "county": "Summit",
+      "popPct": 22.9
+     },
+     {
+      "county": "Duchesne",
+      "popPct": 17.3
+     },
+     {
+      "county": "Daggett",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Uintah",
+      "popPct": 31.9
+     },
+     {
+      "county": "Wasatch",
+      "popPct": 27.0
+     },
+     {
+      "county": "Summit",
+      "popPct": 22.9
+     },
+     {
+      "county": "Duchesne",
+      "popPct": 17.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Weber",
+      "popPct": 79.1
+     },
+     {
+      "county": "Davis",
+      "popPct": 20.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 112196,
+    "pres2020New": 33.9,
+    "pres2020Old": 38.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-20; it draws from the old SD-26 (100%). Counties: gained Uintah (32%), Wasatch (27%), Summit (23%) and 1 more; lost Weber, Davis. 2020 presidential margin R+38.8 on the 2016\u20132020 lines \u2192 R+33.9 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 90.9,
+      "key": "14",
+      "popPct": 75.9
+     },
+     {
+      "areaPct": 6.2,
+      "key": "13",
+      "popPct": 19.9
+     },
+     {
+      "areaPct": 0.6,
+      "key": "15",
+      "popPct": 2.6
+     },
+     {
+      "areaPct": 2.1,
+      "key": "11",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Davis",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 110881,
+    "pres2020New": 47.1,
+    "pres2020Old": 36.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-21; it draws from the old SD-14 (76%), the old SD-13 (20%), the old SD-15 (3%) and 1 more. Counties: gained Utah (100%); lost Davis. 2020 presidential margin R+36.2 on the 2016\u20132020 lines \u2192 R+47.1 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 85.6,
+      "key": "13",
+      "popPct": 84.5
+     },
+     {
+      "areaPct": 14.3,
+      "key": "11",
+      "popPct": 15.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 91.7
+     },
+     {
+      "county": "Salt Lake",
+      "popPct": 8.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Utah",
+      "popPct": 91.7
+     },
+     {
+      "county": "Salt Lake",
+      "popPct": 8.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Davis",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 116663,
+    "pres2020New": 37.6,
+    "pres2020Old": 28.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-22; it draws from the old SD-13 (84%), the old SD-11 (16%). Counties: gained Utah (92%), Salt Lake (8%); lost Davis. 2020 presidential margin R+28.6 on the 2016\u20132020 lines \u2192 R+37.6 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 69.2,
+      "key": "15",
+      "popPct": 81.0
+     },
+     {
+      "areaPct": 27.6,
+      "key": "7",
+      "popPct": 14.3
+     },
+     {
+      "areaPct": 3.2,
+      "key": "14",
+      "popPct": 4.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Davis",
+      "popPct": 88.8
+     },
+     {
+      "county": "Salt Lake",
+      "popPct": 11.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 111791,
+    "pres2020New": 31.9,
+    "pres2020Old": 9.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-23; it draws from the old SD-15 (81%), the old SD-7 (14%), the old SD-14 (5%). Counties: gained Utah (100%); lost Davis, Salt Lake. 2020 presidential margin R+9.9 on the 2016\u20132020 lines \u2192 R+31.9 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 95.9,
+      "key": "16",
+      "popPct": 76.9
+     },
+     {
+      "areaPct": 1.6,
+      "key": "15",
+      "popPct": 16.4
+     },
+     {
+      "areaPct": 2.6,
+      "key": "14",
+      "popPct": 6.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 99.2
+     },
+     {
+      "county": "Wasatch",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Sanpete",
+      "popPct": 27.9
+     },
+     {
+      "county": "Sevier",
+      "popPct": 21.1
+     },
+     {
+      "county": "Millard",
+      "popPct": 12.7
+     },
+     {
+      "county": "Juab",
+      "popPct": 11.4
+     },
+     {
+      "county": "Kane",
+      "popPct": 7.5
+     },
+     {
+      "county": "Garfield",
+      "popPct": 5.0
+     },
+     {
+      "county": "Wayne",
+      "popPct": 2.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 113154,
+    "pres2020New": 24.1,
+    "pres2020Old": 69.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-24; it draws from the old SD-16 (77%), the old SD-15 (16%), the old SD-14 (7%). Counties: lost Sanpete, Sevier, Millard, Juab and 3 more. 2020 presidential margin R+69.8 on the 2016\u20132020 lines \u2192 R+24.1 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 91.9,
+      "key": "7",
+      "popPct": 92.2
+     },
+     {
+      "areaPct": 0.4,
+      "key": "16",
+      "popPct": 7.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cache",
+      "popPct": 97.7
+     },
+     {
+      "county": "Rich",
+      "popPct": 2.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 114629,
+    "pres2020New": 49.9,
+    "pres2020Old": 33.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-25; it draws from the old SD-7 (92%), the old SD-16 (8%). Counties: gained Utah (100%); lost Cache, Rich. 2020 presidential margin R+33.3 on the 2016\u20132020 lines \u2192 R+49.9 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 74.2,
+      "key": "27",
+      "popPct": 90.8
+     },
+     {
+      "areaPct": 25.2,
+      "key": "24",
+      "popPct": 5.9
+     },
+     {
+      "areaPct": 0.5,
+      "key": "7",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Utah",
+      "popPct": 42.1
+     },
+     {
+      "county": "Carbon",
+      "popPct": 18.4
+     },
+     {
+      "county": "San Juan",
+      "popPct": 13.1
+     },
+     {
+      "county": "Emery",
+      "popPct": 8.8
+     },
+     {
+      "county": "Grand",
+      "popPct": 8.8
+     },
+     {
+      "county": "Kane",
+      "popPct": 5.5
+     },
+     {
+      "county": "Wasatch",
+      "popPct": 3.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Utah",
+      "popPct": 42.1
+     },
+     {
+      "county": "Carbon",
+      "popPct": 18.4
+     },
+     {
+      "county": "San Juan",
+      "popPct": 13.1
+     },
+     {
+      "county": "Emery",
+      "popPct": 8.8
+     },
+     {
+      "county": "Grand",
+      "popPct": 8.8
+     },
+     {
+      "county": "Kane",
+      "popPct": 5.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Uintah",
+      "popPct": 31.4
+     },
+     {
+      "county": "Summit",
+      "popPct": 24.3
+     },
+     {
+      "county": "Duchesne",
+      "popPct": 17.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 110788,
+    "pres2020New": 37.2,
+    "pres2020Old": 32.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-26; it draws from the old SD-27 (91%), the old SD-24 (6%), the old SD-7 (3%). Counties: gained Utah (42%), Carbon (18%), San Juan (13%) and 3 more; lost Uintah, Summit, Duchesne. 2020 presidential margin R+32.4 on the 2016\u20132020 lines \u2192 R+37.2 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 94.0,
+      "key": "24",
+      "popPct": 76.6
+     },
+     {
+      "areaPct": 5.3,
+      "key": "28",
+      "popPct": 16.2
+     },
+     {
+      "areaPct": 0.6,
+      "key": "29",
+      "popPct": 7.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sanpete",
+      "popPct": 24.7
+     },
+     {
+      "county": "Washington",
+      "popPct": 23.3
+     },
+     {
+      "county": "Sevier",
+      "popPct": 18.7
+     },
+     {
+      "county": "Juab",
+      "popPct": 10.0
+     },
+     {
+      "county": "Utah",
+      "popPct": 8.8
+     },
+     {
+      "county": "Millard",
+      "popPct": 5.7
+     },
+     {
+      "county": "Garfield",
+      "popPct": 4.4
+     },
+     {
+      "county": "Wayne",
+      "popPct": 1.9
+     },
+     {
+      "county": "Kane",
+      "popPct": 1.4
+     },
+     {
+      "county": "Piute",
+      "popPct": 1.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Sanpete",
+      "popPct": 24.7
+     },
+     {
+      "county": "Washington",
+      "popPct": 23.3
+     },
+     {
+      "county": "Sevier",
+      "popPct": 18.7
+     },
+     {
+      "county": "Juab",
+      "popPct": 10.0
+     },
+     {
+      "county": "Millard",
+      "popPct": 5.7
+     },
+     {
+      "county": "Garfield",
+      "popPct": 4.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Carbon",
+      "popPct": 20.2
+     },
+     {
+      "county": "San Juan",
+      "popPct": 14.4
+     },
+     {
+      "county": "Emery",
+      "popPct": 9.7
+     },
+     {
+      "county": "Grand",
+      "popPct": 9.7
+     },
+     {
+      "county": "Wasatch",
+      "popPct": 3.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 115342,
+    "pres2020New": 68.5,
+    "pres2020Old": 36.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-27; it draws from the old SD-24 (77%), the old SD-28 (16%), the old SD-29 (7%). Counties: gained Sanpete (25%), Washington (23%), Sevier (19%) and 3 more; lost Carbon, San Juan, Emery, Grand and 1 more. 2020 presidential margin R+36.0 on the 2016\u20132020 lines \u2192 R+68.5 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 43.9,
+      "key": "28",
+      "popPct": 90.9
+     },
+     {
+      "areaPct": 56.0,
+      "key": "24",
+      "popPct": 6.3
+     },
+     {
+      "areaPct": 0.1,
+      "key": "29",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Iron",
+      "popPct": 52.1
+     },
+     {
+      "county": "Washington",
+      "popPct": 35.5
+     },
+     {
+      "county": "Beaver",
+      "popPct": 6.4
+     },
+     {
+      "county": "Millard",
+      "popPct": 5.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Millard",
+      "popPct": 5.8
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 109960,
+    "pres2020New": 58.6,
+    "pres2020Old": 57.1,
+    "retainedAreaPct": 43.9,
+    "retainedPopPct": 90.9,
+    "text": "Kept 91% of its population from the 2016\u20132020 SD-28; gained the rest from the old SD-24 (6%), the old SD-29 (3%). Counties: gained Millard (6%). 2020 presidential margin R+57.1 on the 2016\u20132020 lines \u2192 R+58.6 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "29",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 114336,
+    "pres2020New": 48.8,
+    "pres2020Old": 49.9,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Washington County.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 94.1,
+      "key": "19",
+      "popPct": 93.2
+     },
+     {
+      "areaPct": 5.5,
+      "key": "18",
+      "popPct": 4.2
+     },
+     {
+      "areaPct": 0.3,
+      "key": "26",
+      "popPct": 1.8
+     },
+     {
+      "areaPct": 0.1,
+      "key": "20",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weber",
+      "popPct": 80.0
+     },
+     {
+      "county": "Summit",
+      "popPct": 15.2
+     },
+     {
+      "county": "Morgan",
+      "popPct": 4.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Weber",
+      "popPct": 80.0
+     },
+     {
+      "county": "Summit",
+      "popPct": 15.2
+     },
+     {
+      "county": "Morgan",
+      "popPct": 4.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 109466,
+    "pres2020New": 13.6,
+    "pres2020Old": -40.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-3; it draws from the old SD-19 (93%), the old SD-18 (4%), the old SD-26 (2%) and 1 more. Counties: gained Weber (80%), Summit (15%), Morgan (5%); lost Salt Lake. 2020 presidential margin D+40.5 on the 2016\u20132020 lines \u2192 R+13.6 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 95.3,
+      "key": "20",
+      "popPct": 89.7
+     },
+     {
+      "areaPct": 2.9,
+      "key": "21",
+      "popPct": 5.5
+     },
+     {
+      "areaPct": 1.7,
+      "key": "19",
+      "popPct": 4.2
+     },
+     {
+      "areaPct": 0.0,
+      "key": "18",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weber",
+      "popPct": 77.5
+     },
+     {
+      "county": "Davis",
+      "popPct": 22.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Weber",
+      "popPct": 77.5
+     },
+     {
+      "county": "Davis",
+      "popPct": 22.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 117621,
+    "pres2020New": 40.5,
+    "pres2020Old": -35.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-4; it draws from the old SD-20 (90%), the old SD-21 (6%), the old SD-19 (4%) and 1 more. Counties: gained Weber (78%), Davis (22%); lost Salt Lake. 2020 presidential margin D+35.9 on the 2016\u20132020 lines \u2192 R+40.5 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 68.4,
+      "key": "18",
+      "popPct": 84.7
+     },
+     {
+      "areaPct": 2.4,
+      "key": "20",
+      "popPct": 5.7
+     },
+     {
+      "areaPct": 0.9,
+      "key": "21",
+      "popPct": 5.1
+     },
+     {
+      "areaPct": 23.8,
+      "key": "19",
+      "popPct": 3.3
+     },
+     {
+      "areaPct": 4.5,
+      "key": "22",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weber",
+      "popPct": 73.2
+     },
+     {
+      "county": "Davis",
+      "popPct": 22.2
+     },
+     {
+      "county": "Morgan",
+      "popPct": 4.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Weber",
+      "popPct": 73.2
+     },
+     {
+      "county": "Davis",
+      "popPct": 22.2
+     },
+     {
+      "county": "Morgan",
+      "popPct": 4.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 112067,
+    "pres2020New": 11.7,
+    "pres2020Old": -9.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-5; it draws from the old SD-18 (85%), the old SD-20 (6%), the old SD-21 (5%) and 2 more. Counties: gained Weber (73%), Davis (22%), Morgan (5%); lost Salt Lake. 2020 presidential margin D+9.7 on the 2016\u20132020 lines \u2192 R+11.7 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 98.3,
+      "key": "21",
+      "popPct": 95.5
+     },
+     {
+      "areaPct": 1.6,
+      "key": "22",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Davis",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Davis",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 110185,
+    "pres2020New": 36.7,
+    "pres2020Old": 5.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-6; it draws from the old SD-21 (96%), the old SD-22 (4%). Counties: gained Davis (100%); lost Salt Lake. 2020 presidential margin R+5.2 on the 2016\u20132020 lines \u2192 R+36.7 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 60.2,
+      "key": "22",
+      "popPct": 92.8
+     },
+     {
+      "areaPct": 6.7,
+      "key": "23",
+      "popPct": 4.4
+     },
+     {
+      "areaPct": 32.9,
+      "key": "18",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Davis",
+      "popPct": 98.0
+     },
+     {
+      "county": "Morgan",
+      "popPct": 2.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Davis",
+      "popPct": 98.0
+     },
+     {
+      "county": "Morgan",
+      "popPct": 2.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Utah",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 114621,
+    "pres2020New": 29.3,
+    "pres2020Old": 50.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-7; it draws from the old SD-22 (93%), the old SD-23 (4%), the old SD-18 (3%). Counties: gained Davis (98%), Morgan (2%); lost Utah. 2020 presidential margin R+50.8 on the 2016\u20132020 lines \u2192 R+29.3 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 71.8,
+      "key": "23",
+      "popPct": 90.8
+     },
+     {
+      "areaPct": 28.1,
+      "key": "2",
+      "popPct": 9.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Davis",
+      "popPct": 80.1
+     },
+     {
+      "county": "Salt Lake",
+      "popPct": 19.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Davis",
+      "popPct": 80.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 111546,
+    "pres2020New": 0.0,
+    "pres2020Old": -21.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-8; it draws from the old SD-23 (91%), the old SD-2 (9%). Counties: gained Davis (80%). 2020 presidential margin D+21.2 on the 2016\u20132020 lines \u2192 Even  on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 97.7,
+      "key": "2",
+      "popPct": 86.0
+     },
+     {
+      "areaPct": 1.5,
+      "key": "4",
+      "popPct": 9.2
+     },
+     {
+      "areaPct": 0.8,
+      "key": "1",
+      "popPct": 4.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Salt Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 111909,
+    "pres2020New": -59.3,
+    "pres2020Old": -1.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-9; it draws from the old SD-2 (86%), the old SD-4 (9%), the old SD-1 (5%). Entirely in Salt Lake County. 2020 presidential margin D+1.5 on the 2016\u20132020 lines \u2192 D+59.3 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

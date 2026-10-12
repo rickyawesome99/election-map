@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/siteUrl";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
 import { getAllCandidateSlugs } from "@/lib/candidateIndex";
+import { getAllStateLegCandidateSlugs } from "@/lib/stateLegCandidateIndex";
 // Each dynamic route's own page list, so the sitemap cannot drift from what the site builds.
 import { generateStaticParams as housePages } from "@/app/house/[id]/page";
 import { generateStaticParams as senatePages } from "@/app/senate/[id]/page";
@@ -26,7 +27,26 @@ const STATIC = [
   "/district-finder", "/about",
 ];
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+// Sitemaps hold at most 50,000 URLs and the state legislative candidate pages alone are ~38,000, so
+// the site is split: /sitemap/0.xml is every page but those, /sitemap/1.xml onward the candidates
+// (SITEMAP_CHUNK per file). robots.txt lists each file.
+export const SITEMAP_CHUNK = 40000;
+
+export function sitemapCount(): number {
+  return 1 + Math.ceil(getAllStateLegCandidateSlugs().length / SITEMAP_CHUNK);
+}
+
+export async function generateSitemaps() {
+  return Array.from({ length: sitemapCount() }, (_, id) => ({ id }));
+}
+
+// Next 16 hands `id` over as a promise of the "[id]" segment (a string).
+export default async function sitemap({ id }: { id: number | string | Promise<number | string | undefined> }): Promise<MetadataRoute.Sitemap> {
+  const n = Number((await id) ?? 0);
+  if (n > 0) {
+    const slugs = getAllStateLegCandidateSlugs().sort().slice((n - 1) * SITEMAP_CHUNK, n * SITEMAP_CHUNK);
+    return slugs.map((slug) => ({ url: `${SITE_URL}/candidates/${slug}` }));
+  }
   const paths: string[] = [...STATIC];
   const add = (prefix: string, params: { id?: string; year?: string; abbr?: string; slug?: string }[], key: "id" | "abbr" | "slug" = "id") => {
     for (const p of params) paths.push(`${prefix}/${p[key]}${p.year ? `/${p.year}` : ""}`);
@@ -40,7 +60,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   add("/president", await pastPresidentPages());
   const states = await statePages();
   add("/states", states);
-  for (const s of states) paths.push(`/states/${s.id}/legislature`);
+  paths.push("/legislatures");
+  for (const s of states) {
+    paths.push(`/states/${s.id}/legislature`);
+    // The district atlas: one page per chamber (Nebraska's unicameral body is its "senate").
+    for (const chamber of s.id === "ne" ? ["senate"] : ["house", "senate"]) paths.push(`/states/${s.id}/legislature/${chamber}`);
+  }
   add("/model", modelStatePages(), "abbr");
   add("/analysis/districts", await precinctDistrictPages(), "slug");
   add("/analysis/pollsters", await pollsterPages(), "slug");

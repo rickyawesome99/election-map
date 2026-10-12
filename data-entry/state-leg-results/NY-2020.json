@@ -6,955 +6,2813 @@
     "demVotes": 40689,
     "repVotes": 29133,
     "othVotes": 0,
-    "totalVotes": 69822
+    "totalVotes": 69822,
+    "candidates": [
+     {
+      "name": "Fred W. Thiele Jr.",
+      "party": "D",
+      "votes": 40689,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Heather C. Collins",
+      "party": "R",
+      "votes": 29133
+     }
+    ]
    },
    "2": {
     "demVotes": 30141,
     "repVotes": 39903,
     "othVotes": 0,
-    "totalVotes": 70044
+    "totalVotes": 70044,
+    "candidates": [
+     {
+      "name": "Jodi A. Giglio",
+      "party": "R",
+      "votes": 39903,
+      "winner": true
+     },
+     {
+      "name": "Laura M. Jenssmith",
+      "party": "D",
+      "votes": 30141
+     }
+    ]
    },
    "3": {
     "demVotes": 23266,
     "repVotes": 30806,
     "othVotes": 0,
-    "totalVotes": 54072
+    "totalVotes": 54072,
+    "candidates": [
+     {
+      "name": "Joseph P. Destefano",
+      "party": "R",
+      "votes": 30806,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Steven Polgar",
+      "party": "D",
+      "votes": 23266
+     }
+    ]
    },
    "4": {
     "demVotes": 33766,
     "repVotes": 26941,
     "othVotes": 0,
-    "totalVotes": 60707
+    "totalVotes": 60707,
+    "candidates": [
+     {
+      "name": "Steven Englebright",
+      "party": "D",
+      "votes": 33766,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Michael S. Ross",
+      "party": "R",
+      "votes": 26941
+     }
+    ]
    },
    "5": {
     "demVotes": 23516,
     "repVotes": 37210,
     "othVotes": 0,
-    "totalVotes": 60726
+    "totalVotes": 60726,
+    "candidates": [
+     {
+      "name": "Douglas M. Smith",
+      "party": "R",
+      "votes": 37210,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Alfred Ianacci",
+      "party": "D",
+      "votes": 23516
+     }
+    ]
    },
    "6": {
     "demVotes": 26809,
     "repVotes": 8525,
     "othVotes": 0,
-    "totalVotes": 35334
+    "totalVotes": 35334,
+    "candidates": [
+     {
+      "name": "Philip R. Ramos",
+      "party": "D",
+      "votes": 26809,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Ryan S. Skelly",
+      "party": "R",
+      "votes": 8525
+     }
+    ]
    },
    "7": {
     "demVotes": 26035,
     "repVotes": 39640,
     "othVotes": 0,
-    "totalVotes": 65675
+    "totalVotes": 65675,
+    "candidates": [
+     {
+      "name": "Jarett C. Gandolfo",
+      "party": "R",
+      "votes": 39640,
+      "winner": true
+     },
+     {
+      "name": "Francis T. Genco",
+      "party": "D",
+      "votes": 26035
+     }
+    ]
    },
    "8": {
     "demVotes": 25809,
     "repVotes": 46615,
     "othVotes": 0,
-    "totalVotes": 72424
+    "totalVotes": 72424,
+    "candidates": [
+     {
+      "name": "Michael J. Fitzpatrick",
+      "party": "R",
+      "votes": 46615,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Dylan G. Rice",
+      "party": "D",
+      "votes": 25809
+     }
+    ]
    },
    "9": {
     "demVotes": 30987,
     "repVotes": 46949,
     "othVotes": 0,
-    "totalVotes": 77936
+    "totalVotes": 77936,
+    "candidates": [
+     {
+      "name": "Michael A. Durso",
+      "party": "R",
+      "votes": 46949,
+      "winner": true
+     },
+     {
+      "name": "Ann M. Brancato",
+      "party": "D",
+      "votes": 30987
+     }
+    ]
    },
    "10": {
     "demVotes": 37061,
     "repVotes": 28620,
     "othVotes": 0,
-    "totalVotes": 65681
+    "totalVotes": 65681,
+    "candidates": [
+     {
+      "name": "Steve Stern",
+      "party": "D",
+      "votes": 37061,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Jamie R. Silvestri",
+      "party": "R",
+      "votes": 28620
+     }
+    ]
    },
    "11": {
     "demVotes": 30392,
     "repVotes": 20573,
     "othVotes": 0,
-    "totalVotes": 50965
+    "totalVotes": 50965,
+    "candidates": [
+     {
+      "name": "Kimberly Jeanpierre",
+      "party": "D",
+      "votes": 30392,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Eugene M. Murray",
+      "party": "R",
+      "votes": 20573
+     }
+    ]
    },
    "12": {
     "demVotes": 33027,
     "repVotes": 35190,
     "othVotes": 0,
-    "totalVotes": 68217
+    "totalVotes": 68217,
+    "candidates": [
+     {
+      "name": "Keith Brown",
+      "party": "R",
+      "votes": 35190,
+      "winner": true
+     },
+     {
+      "name": "Michael A. Marcantonio",
+      "party": "D",
+      "votes": 33027
+     }
+    ]
    },
    "13": {
     "demVotes": 39446,
     "repVotes": 23015,
     "othVotes": 0,
-    "totalVotes": 62461
+    "totalVotes": 62461,
+    "candidates": [
+     {
+      "name": "Charles D. Lavine",
+      "party": "D",
+      "votes": 39446,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Andrew A. Monteleone",
+      "party": "R",
+      "votes": 23015
+     }
+    ]
    },
    "14": {
     "demVotes": 29129,
     "repVotes": 43390,
     "othVotes": 0,
-    "totalVotes": 72519
+    "totalVotes": 72519,
+    "candidates": [
+     {
+      "name": "David G. McDonough",
+      "party": "R",
+      "votes": 43390,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Kevin C. Gorman",
+      "party": "D",
+      "votes": 29129
+     }
+    ]
    },
    "15": {
     "demVotes": 29331,
     "repVotes": 36850,
     "othVotes": 0,
-    "totalVotes": 66181
+    "totalVotes": 66181,
+    "candidates": [
+     {
+      "name": "Michael A. Montesano",
+      "party": "R",
+      "votes": 36850,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Joseph J. Sackman III",
+      "party": "D",
+      "votes": 29331
+     }
+    ]
    },
    "16": {
     "demVotes": 35455,
     "repVotes": 30263,
     "othVotes": 0,
-    "totalVotes": 65718
+    "totalVotes": 65718,
+    "candidates": [
+     {
+      "name": "Gina L. Sillitti",
+      "party": "D",
+      "votes": 35455,
+      "winner": true
+     },
+     {
+      "name": "Ragini Srivastava",
+      "party": "R",
+      "votes": 30263
+     }
+    ]
    },
    "17": {
     "demVotes": 26768,
     "repVotes": 39681,
     "othVotes": 0,
-    "totalVotes": 66449
+    "totalVotes": 66449,
+    "candidates": [
+     {
+      "name": "John K. Mikulin",
+      "party": "R",
+      "votes": 39681,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Mark A. Engelman",
+      "party": "D",
+      "votes": 26768
+     }
+    ]
    },
    "18": {
     "demVotes": 36878,
     "repVotes": 6695,
     "othVotes": 0,
-    "totalVotes": 43573
+    "totalVotes": 43573,
+    "candidates": [
+     {
+      "name": "Taylor R. Darling",
+      "party": "D",
+      "votes": 36878,
+      "winner": true
+     },
+     {
+      "name": "Cherice P. Vanderhall",
+      "party": "R",
+      "votes": 6695
+     }
+    ]
    },
    "19": {
     "demVotes": 26831,
     "repVotes": 38509,
     "othVotes": 0,
-    "totalVotes": 65340
+    "totalVotes": 65340,
+    "candidates": [
+     {
+      "name": "Edward P. Ra",
+      "party": "R",
+      "votes": 38509,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Gary B. Port",
+      "party": "D",
+      "votes": 26831
+     }
+    ]
    },
    "20": {
     "demVotes": 26632,
     "repVotes": 38318,
     "othVotes": 0,
-    "totalVotes": 64950
+    "totalVotes": 64950,
+    "candidates": [
+     {
+      "name": "Melissa L. Miller",
+      "party": "R",
+      "votes": 38318,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Gregory S. Marks",
+      "party": "D",
+      "votes": 26632
+     }
+    ]
    },
    "21": {
     "demVotes": 36373,
     "repVotes": 31656,
     "othVotes": 0,
-    "totalVotes": 68029
+    "totalVotes": 68029,
+    "candidates": [
+     {
+      "name": "Judy A. Griffin",
+      "party": "D",
+      "votes": 36373,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Patricia M. Canzonerifitzpatrick",
+      "party": "R",
+      "votes": 31656
+     }
+    ]
    },
    "22": {
     "demVotes": 42352,
     "repVotes": 19931,
     "othVotes": 0,
-    "totalVotes": 62283
+    "totalVotes": 62283,
+    "candidates": [
+     {
+      "name": "Michaelle C. Solages",
+      "party": "D",
+      "votes": 42352,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Nicholas M. Zacchea",
+      "party": "R",
+      "votes": 19931
+     }
+    ]
    },
    "23": {
     "demVotes": 29065,
     "repVotes": 18133,
     "othVotes": 0,
-    "totalVotes": 47198
+    "totalVotes": 47198,
+    "candidates": [
+     {
+      "name": "Stacey G. Phefferamato",
+      "party": "D",
+      "votes": 29065,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Peter D. Hatzipetros",
+      "party": "R",
+      "votes": 18133
+     }
+    ]
    },
    "24": {
     "demVotes": 34000,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 34000,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "David I. Weprin",
+      "party": "D",
+      "votes": 34000,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "25": {
     "demVotes": 28155,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 28155,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Nily D. Rozic",
+      "party": "D",
+      "votes": 28155,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "26": {
     "demVotes": 28683,
     "repVotes": 23603,
     "othVotes": 0,
-    "totalVotes": 52286
+    "totalVotes": 52286,
+    "candidates": [
+     {
+      "name": "Edward C. Braunstein",
+      "party": "D",
+      "votes": 28683,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Johnalexander M. Sakelos",
+      "party": "R",
+      "votes": 23603
+     }
+    ]
    },
    "27": {
     "demVotes": 30789,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 30789,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Daniel Rosenthal",
+      "party": "D",
+      "votes": 30789,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "28": {
     "demVotes": 34634,
     "repVotes": 0,
     "othVotes": 5384,
     "totalVotes": 40018,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Andrew D. Hevesi",
+      "party": "D",
+      "votes": 34634,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Danniel S. Maio",
+      "party": "O",
+      "votes": 5384
+     }
+    ]
    },
    "29": {
     "demVotes": 45687,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 45687,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Alicia L. Hyndman",
+      "party": "D",
+      "votes": 45687,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "30": {
     "demVotes": 32866,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 32866,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Brian Barnwell",
+      "party": "D",
+      "votes": 32866,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "31": {
     "demVotes": 34014,
     "repVotes": 4086,
     "othVotes": 0,
-    "totalVotes": 38100
+    "totalVotes": 38100,
+    "candidates": [
+     {
+      "name": "Khaleel Anderson",
+      "party": "D",
+      "votes": 34014,
+      "winner": true
+     },
+     {
+      "name": "Joseph A. Cullina",
+      "party": "R",
+      "votes": 4086
+     }
+    ]
    },
    "32": {
     "demVotes": 42061,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 42061,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Vivian E. Cook",
+      "party": "D",
+      "votes": 42061,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "33": {
     "demVotes": 47035,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 47035,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Clyde Vanel",
+      "party": "D",
+      "votes": 47035,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "34": {
     "demVotes": 26152,
     "repVotes": 7236,
     "othVotes": 0,
-    "totalVotes": 33388
+    "totalVotes": 33388,
+    "candidates": [
+     {
+      "name": "Jessica Gonzalezrojas",
+      "party": "D",
+      "votes": 26152,
+      "winner": true
+     },
+     {
+      "name": "William A. Marquez",
+      "party": "R",
+      "votes": 7236
+     }
+    ]
    },
    "35": {
     "demVotes": 22723,
     "repVotes": 6412,
     "othVotes": 0,
-    "totalVotes": 29135
+    "totalVotes": 29135,
+    "candidates": [
+     {
+      "name": "Jeffrion L. Aubry",
+      "party": "D",
+      "votes": 22723,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Hankohn To",
+      "party": "R",
+      "votes": 6412
+     }
+    ]
    },
    "36": {
     "demVotes": 38221,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 38221,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Zohran Kwame Mamdani",
+      "party": "D",
+      "votes": 38221,
+      "winner": true
+     }
+    ]
    },
    "37": {
     "demVotes": 40614,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 40614,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Catherine Nolan",
+      "party": "D",
+      "votes": 40614,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "38": {
     "demVotes": 25232,
     "repVotes": 9443,
     "othVotes": 0,
-    "totalVotes": 34675
+    "totalVotes": 34675,
+    "candidates": [
+     {
+      "name": "Jenifer Rajkumar",
+      "party": "D",
+      "votes": 25232,
+      "winner": true
+     },
+     {
+      "name": "Giovanni A. Perna",
+      "party": "R",
+      "votes": 9443
+     }
+    ]
    },
    "39": {
     "demVotes": 21765,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 21765,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Catalina Cruz",
+      "party": "D",
+      "votes": 21765,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "40": {
     "demVotes": 18214,
     "repVotes": 0,
     "othVotes": 3566,
     "totalVotes": 21780,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Ron Kim",
+      "party": "D",
+      "votes": 18214,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Steven Lee",
+      "party": "O",
+      "votes": 3566
+     }
+    ]
    },
    "41": {
     "demVotes": 27979,
     "repVotes": 15263,
     "othVotes": 0,
-    "totalVotes": 43242
+    "totalVotes": 43242,
+    "candidates": [
+     {
+      "name": "Helene E. Weinstein",
+      "party": "D",
+      "votes": 27979,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Ramona Johnson",
+      "party": "R",
+      "votes": 15263
+     }
+    ]
    },
    "42": {
     "demVotes": 39649,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 39649,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Rodneyse Bichotte",
+      "party": "D",
+      "votes": 39649,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "43": {
     "demVotes": 43629,
     "repVotes": 5277,
     "othVotes": 0,
-    "totalVotes": 48906
+    "totalVotes": 48906,
+    "candidates": [
+     {
+      "name": "Diana Richardson",
+      "party": "D",
+      "votes": 43629,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Menachem M. Raitport",
+      "party": "R",
+      "votes": 5277
+     }
+    ]
    },
    "44": {
     "demVotes": 37457,
     "repVotes": 9804,
     "othVotes": 0,
-    "totalVotes": 47261
+    "totalVotes": 47261,
+    "candidates": [
+     {
+      "name": "Robert C. Carroll",
+      "party": "D",
+      "votes": 37457,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Salvatore P. Barrera",
+      "party": "R",
+      "votes": 9804
+     }
+    ]
    },
    "45": {
     "demVotes": 23470,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 23470,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Steven Cymbrowitz",
+      "party": "D",
+      "votes": 23470,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "46": {
     "demVotes": 21993,
     "repVotes": 21155,
     "othVotes": 0,
-    "totalVotes": 43148
+    "totalVotes": 43148,
+    "candidates": [
+     {
+      "name": "Mathylde Frontus",
+      "party": "D",
+      "votes": 21993,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Mark Szuszkiewicz",
+      "party": "R",
+      "votes": 21155
+     }
+    ]
    },
    "47": {
     "demVotes": 18859,
     "repVotes": 11612,
     "othVotes": 0,
-    "totalVotes": 30471
+    "totalVotes": 30471,
+    "candidates": [
+     {
+      "name": "William Colton",
+      "party": "D",
+      "votes": 18859,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Barbara Marino",
+      "party": "R",
+      "votes": 11612
+     }
+    ]
    },
    "48": {
     "demVotes": 25981,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 25981,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Simcha Eichenstein",
+      "party": "D",
+      "votes": 25981,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "49": {
     "demVotes": 18104,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 18104,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Peter J. Abbate Jr.",
+      "party": "D",
+      "votes": 18104,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "50": {
     "demVotes": 38278,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 38278,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Emily E. Gallagher",
+      "party": "D",
+      "votes": 38278,
+      "winner": true
+     }
+    ]
    },
    "51": {
     "demVotes": 27954,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 27954,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Marcela Mitaynes",
+      "party": "D",
+      "votes": 27954,
+      "winner": true
+     }
+    ]
    },
    "52": {
     "demVotes": 67382,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 67382,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Jo Anne Simon",
+      "party": "D",
+      "votes": 67382,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "53": {
     "demVotes": 38791,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 38791,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Maritza Davila",
+      "party": "D",
+      "votes": 38791,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "54": {
     "demVotes": 29619,
     "repVotes": 3211,
     "othVotes": 0,
-    "totalVotes": 32830
+    "totalVotes": 32830,
+    "candidates": [
+     {
+      "name": "Erik Martin Dilan",
+      "party": "D",
+      "votes": 29619,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Khorshed A. Chowdhury",
+      "party": "R",
+      "votes": 3211
+     }
+    ]
    },
    "55": {
     "demVotes": 37501,
     "repVotes": 1826,
     "othVotes": 0,
-    "totalVotes": 39327
+    "totalVotes": 39327,
+    "candidates": [
+     {
+      "name": "Latrice Walker",
+      "party": "D",
+      "votes": 37501,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Berneda W. Jackson",
+      "party": "R",
+      "votes": 1826
+     }
+    ]
    },
    "56": {
     "demVotes": 45103,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 45103,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Stefani L. Zinerman",
+      "party": "D",
+      "votes": 45103,
+      "winner": true
+     }
+    ]
    },
    "57": {
     "demVotes": 47347,
     "repVotes": 0,
     "othVotes": 14794,
     "totalVotes": 62141,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Phara Souffrant Forrest",
+      "party": "D",
+      "votes": 47347,
+      "winner": true
+     },
+     {
+      "name": "Walter T. Mosley III",
+      "party": "O",
+      "votes": 14794,
+      "incumbent": true
+     }
+    ]
    },
    "58": {
     "demVotes": 43737,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 43737,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "N. Nick Perry",
+      "party": "D",
+      "votes": 43737,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "59": {
     "demVotes": 38846,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 38846,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Jaime R. Williams",
+      "party": "D",
+      "votes": 38846,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "60": {
     "demVotes": 39597,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 39597,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Charles Barron",
+      "party": "D",
+      "votes": 39597,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "61": {
     "demVotes": 32905,
     "repVotes": 14870,
     "othVotes": 0,
-    "totalVotes": 47775
+    "totalVotes": 47775,
+    "candidates": [
+     {
+      "name": "Charles D. Fall",
+      "party": "D",
+      "votes": 32905,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Paul Ciurcina Jr.",
+      "party": "R",
+      "votes": 14870
+     }
+    ]
    },
    "62": {
     "demVotes": 0,
     "repVotes": 55953,
     "othVotes": 0,
     "totalVotes": 55953,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Michael W. Reilly Jr.",
+      "party": "R",
+      "votes": 55953,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "63": {
     "demVotes": 28776,
     "repVotes": 25740,
     "othVotes": 0,
-    "totalVotes": 54516
+    "totalVotes": 54516,
+    "candidates": [
+     {
+      "name": "Michael J. Cusick",
+      "party": "D",
+      "votes": 28776,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Anthony M. Deguerre",
+      "party": "R",
+      "votes": 25740
+     }
+    ]
    },
    "64": {
     "demVotes": 21697,
     "repVotes": 30630,
     "othVotes": 0,
-    "totalVotes": 52327
+    "totalVotes": 52327,
+    "candidates": [
+     {
+      "name": "Michael Tannousis",
+      "party": "R",
+      "votes": 30630,
+      "winner": true
+     },
+     {
+      "name": "Brandon S. Patterson",
+      "party": "D",
+      "votes": 21697
+     }
+    ]
    },
    "65": {
     "demVotes": 40554,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 40554,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Yuhline Niou",
+      "party": "D",
+      "votes": 40554,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "66": {
     "demVotes": 47688,
     "repVotes": 8431,
     "othVotes": 0,
-    "totalVotes": 56119
+    "totalVotes": 56119,
+    "candidates": [
+     {
+      "name": "Deborah J. Glick",
+      "party": "D",
+      "votes": 47688,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Tamara Lashchyk",
+      "party": "R",
+      "votes": 8431
+     }
+    ]
    },
    "67": {
     "demVotes": 57883,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 57883,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Linda B. Rosenthal",
+      "party": "D",
+      "votes": 57883,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "68": {
     "demVotes": 41238,
     "repVotes": 4608,
     "othVotes": 0,
-    "totalVotes": 45846
+    "totalVotes": 45846,
+    "candidates": [
+     {
+      "name": "Robert J. Rodriguez",
+      "party": "D",
+      "votes": 41238,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Daby Benjamine Carreras",
+      "party": "R",
+      "votes": 4608
+     }
+    ]
    },
    "69": {
     "demVotes": 52354,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 52354,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Daniel J. Odonnell",
+      "party": "D",
+      "votes": 52354,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "70": {
     "demVotes": 47079,
     "repVotes": 0,
     "othVotes": 4969,
     "totalVotes": 52048,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Inez E. Dickens",
+      "party": "D",
+      "votes": 47079,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Craig Schley",
+      "party": "O",
+      "votes": 4969
+     }
+    ]
    },
    "71": {
     "demVotes": 48538,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 48538,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Alfred E. Taylor",
+      "party": "D",
+      "votes": 48538,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "72": {
     "demVotes": 39405,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 39405,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Carmen Delarosa",
+      "party": "D",
+      "votes": 39405,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "73": {
     "demVotes": 45196,
     "repVotes": 15534,
     "othVotes": 0,
-    "totalVotes": 60730
+    "totalVotes": 60730,
+    "candidates": [
+     {
+      "name": "Dan Quart",
+      "party": "D",
+      "votes": 45196,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Judith Graham",
+      "party": "R",
+      "votes": 15534
+     }
+    ]
    },
    "74": {
     "demVotes": 46749,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 46749,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Harvey Epstein",
+      "party": "D",
+      "votes": 46749,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "75": {
     "demVotes": 53573,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 53573,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Richard N. Gottfried",
+      "party": "D",
+      "votes": 53573,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "76": {
     "demVotes": 0,
     "repVotes": 20860,
     "othVotes": 28461,
     "totalVotes": 49321,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Rebecca A. Seawright",
+      "party": "O",
+      "votes": 28461,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Louis Puliafito",
+      "party": "R",
+      "votes": 20860
+     }
+    ]
    },
    "77": {
     "demVotes": 29759,
     "repVotes": 3227,
     "othVotes": 0,
-    "totalVotes": 32986
+    "totalVotes": 32986,
+    "candidates": [
+     {
+      "name": "Latoya Joyner",
+      "party": "D",
+      "votes": 29759,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Tanya Carmichael",
+      "party": "R",
+      "votes": 3227
+     }
+    ]
    },
    "78": {
     "demVotes": 25920,
     "repVotes": 3560,
     "othVotes": 0,
-    "totalVotes": 29480
+    "totalVotes": 29480,
+    "candidates": [
+     {
+      "name": "Jose Rivera",
+      "party": "D",
+      "votes": 25920,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Michael Dister",
+      "party": "R",
+      "votes": 3560
+     }
+    ]
    },
    "79": {
     "demVotes": 33008,
     "repVotes": 3014,
     "othVotes": 0,
-    "totalVotes": 36022
+    "totalVotes": 36022,
+    "candidates": [
+     {
+      "name": "Chantel Jackson",
+      "party": "D",
+      "votes": 33008,
+      "winner": true
+     },
+     {
+      "name": "Donald Skinner",
+      "party": "R",
+      "votes": 3014
+     }
+    ]
    },
    "80": {
     "demVotes": 28385,
     "repVotes": 6337,
     "othVotes": 0,
-    "totalVotes": 34722
+    "totalVotes": 34722,
+    "candidates": [
+     {
+      "name": "Nathalia Fernandez",
+      "party": "D",
+      "votes": 28385,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Gene A. Defrancis",
+      "party": "R",
+      "votes": 6337
+     }
+    ]
    },
    "81": {
     "demVotes": 37818,
     "repVotes": 7443,
     "othVotes": 0,
-    "totalVotes": 45261
+    "totalVotes": 45261,
+    "candidates": [
+     {
+      "name": "Jeffrey Dinowitz",
+      "party": "D",
+      "votes": 37818,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Nicole J. Torres",
+      "party": "R",
+      "votes": 7443
+     }
+    ]
    },
    "82": {
     "demVotes": 38120,
     "repVotes": 11744,
     "othVotes": 0,
-    "totalVotes": 49864
+    "totalVotes": 49864,
+    "candidates": [
+     {
+      "name": "Michael R. Benedetto",
+      "party": "D",
+      "votes": 38120,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "John A. Destefano",
+      "party": "R",
+      "votes": 11744
+     }
+    ]
    },
    "83": {
     "demVotes": 38151,
     "repVotes": 1711,
     "othVotes": 0,
-    "totalVotes": 39862
+    "totalVotes": 39862,
+    "candidates": [
+     {
+      "name": "Carl Heastie",
+      "party": "D",
+      "votes": 38151,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Brenton Ritchie",
+      "party": "R",
+      "votes": 1711
+     }
+    ]
    },
    "84": {
     "demVotes": 27296,
     "repVotes": 3246,
     "othVotes": 1905,
-    "totalVotes": 32447
+    "totalVotes": 32447,
+    "candidates": [
+     {
+      "name": "Amanda N. Septimo",
+      "party": "D",
+      "votes": 27296,
+      "winner": true
+     },
+     {
+      "name": "Rosaline Nieves",
+      "party": "R",
+      "votes": 3246
+     },
+     {
+      "name": "Carmen E. Arroyo",
+      "party": "O",
+      "votes": 1281,
+      "incumbent": true
+     },
+     {
+      "name": "Linda Ortiz",
+      "party": "O",
+      "votes": 624
+     }
+    ]
    },
    "85": {
     "demVotes": 27924,
     "repVotes": 3065,
     "othVotes": 0,
-    "totalVotes": 30989
+    "totalVotes": 30989,
+    "candidates": [
+     {
+      "name": "Kenneth Burgos",
+      "party": "D",
+      "votes": 27924,
+      "winner": true
+     },
+     {
+      "name": "Janelle King",
+      "party": "R",
+      "votes": 3065
+     }
+    ]
    },
    "86": {
     "demVotes": 25338,
     "repVotes": 3471,
     "othVotes": 0,
-    "totalVotes": 28809
+    "totalVotes": 28809,
+    "candidates": [
+     {
+      "name": "Victor M. Pichardo",
+      "party": "D",
+      "votes": 25338,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Lorraine E. Zeigler",
+      "party": "R",
+      "votes": 3471
+     }
+    ]
    },
    "87": {
     "demVotes": 34861,
     "repVotes": 4014,
     "othVotes": 0,
-    "totalVotes": 38875
+    "totalVotes": 38875,
+    "candidates": [
+     {
+      "name": "Karines Reyes",
+      "party": "D",
+      "votes": 34861,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Michelle Castillo",
+      "party": "R",
+      "votes": 4014
+     }
+    ]
    },
    "88": {
     "demVotes": 49861,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 49861,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Amy R. Paulin",
+      "party": "D",
+      "votes": 49861,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "89": {
     "demVotes": 35853,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 35853,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "J. Gary Pretlow",
+      "party": "D",
+      "votes": 35853,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "90": {
     "demVotes": 34838,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 34838,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Nader J. Sayegh",
+      "party": "D",
+      "votes": 34838,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "91": {
     "demVotes": 40821,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 40821,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Steven Otis",
+      "party": "D",
+      "votes": 40821,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "92": {
     "demVotes": 51808,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 51808,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Thomas J. Abinanti",
+      "party": "D",
+      "votes": 51808,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "93": {
     "demVotes": 43514,
     "repVotes": 22681,
     "othVotes": 0,
-    "totalVotes": 66195
+    "totalVotes": 66195,
+    "candidates": [
+     {
+      "name": "Chris Burdick",
+      "party": "D",
+      "votes": 43514,
+      "winner": true
+     },
+     {
+      "name": "John Nuculovic",
+      "party": "R",
+      "votes": 22681
+     }
+    ]
    },
    "94": {
     "demVotes": 30006,
     "repVotes": 41681,
     "othVotes": 0,
-    "totalVotes": 71687
+    "totalVotes": 71687,
+    "candidates": [
+     {
+      "name": "Kevin Byrne",
+      "party": "R",
+      "votes": 41681,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Stephanie J. Keegan",
+      "party": "D",
+      "votes": 30006
+     }
+    ]
    },
    "95": {
     "demVotes": 39235,
     "repVotes": 20237,
     "othVotes": 0,
-    "totalVotes": 59472
+    "totalVotes": 59472,
+    "candidates": [
+     {
+      "name": "Sandra R. Galef",
+      "party": "D",
+      "votes": 39235,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Lawrence A. Chiulli",
+      "party": "R",
+      "votes": 20237
+     }
+    ]
    },
    "96": {
     "demVotes": 45439,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 45439,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Kenneth P. Zebrowski",
+      "party": "D",
+      "votes": 45439,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "97": {
     "demVotes": 27359,
     "repVotes": 29936,
     "othVotes": 0,
-    "totalVotes": 57295
+    "totalVotes": 57295,
+    "candidates": [
+     {
+      "name": "Michael V. Lawler",
+      "party": "R",
+      "votes": 29936,
+      "winner": true
+     },
+     {
+      "name": "Ellen C. Jaffee",
+      "party": "D",
+      "votes": 27359,
+      "incumbent": true
+     }
+    ]
    },
    "98": {
     "demVotes": 0,
     "repVotes": 41502,
     "othVotes": 0,
     "totalVotes": 41502,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Karl A. Brabenec",
+      "party": "R",
+      "votes": 41502,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "99": {
     "demVotes": 27290,
     "repVotes": 36606,
     "othVotes": 0,
-    "totalVotes": 63896
+    "totalVotes": 63896,
+    "candidates": [
+     {
+      "name": "Colin J. Schmitt",
+      "party": "R",
+      "votes": 36606,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Sarita Bhandarkar",
+      "party": "D",
+      "votes": 27290
+     }
+    ]
    },
    "100": {
     "demVotes": 37529,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 37529,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Aileen M. Gunther",
+      "party": "D",
+      "votes": 37529,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "101": {
     "demVotes": 23290,
     "repVotes": 36686,
     "othVotes": 0,
-    "totalVotes": 59976
+    "totalVotes": 59976,
+    "candidates": [
+     {
+      "name": "Brian D. Miller",
+      "party": "R",
+      "votes": 36686,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Chad J. McEvoy",
+      "party": "D",
+      "votes": 23290
+     }
+    ]
    },
    "102": {
     "demVotes": 24277,
     "repVotes": 42316,
     "othVotes": 0,
-    "totalVotes": 66593
+    "totalVotes": 66593,
+    "candidates": [
+     {
+      "name": "Christopher Tague",
+      "party": "R",
+      "votes": 42316,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Betsy Kraat",
+      "party": "D",
+      "votes": 24277
+     }
+    ]
    },
    "103": {
     "demVotes": 51234,
     "repVotes": 22040,
     "othVotes": 0,
-    "totalVotes": 73274
+    "totalVotes": 73274,
+    "candidates": [
+     {
+      "name": "Kevin A. Cahill",
+      "party": "D",
+      "votes": 51234,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Rex Bridges",
+      "party": "R",
+      "votes": 22040
+     }
+    ]
    },
    "104": {
     "demVotes": 30912,
     "repVotes": 17101,
     "othVotes": 0,
-    "totalVotes": 48013
+    "totalVotes": 48013,
+    "candidates": [
+     {
+      "name": "Jonathan G. Jacobson",
+      "party": "D",
+      "votes": 30912,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Andrew Gauzza IV",
+      "party": "R",
+      "votes": 17101
+     }
+    ]
    },
    "105": {
     "demVotes": 29688,
     "repVotes": 39374,
     "othVotes": 0,
-    "totalVotes": 69062
+    "totalVotes": 69062,
+    "candidates": [
+     {
+      "name": "Kieran Michael Lalor",
+      "party": "R",
+      "votes": 39374,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Laurette Giardino",
+      "party": "D",
+      "votes": 29688
+     }
+    ]
    },
    "106": {
     "demVotes": 37189,
     "repVotes": 27405,
     "othVotes": 0,
-    "totalVotes": 64594
+    "totalVotes": 64594,
+    "candidates": [
+     {
+      "name": "Didi Barrett",
+      "party": "D",
+      "votes": 37189,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Dean Michael",
+      "party": "R",
+      "votes": 27405
+     }
+    ]
    },
    "107": {
     "demVotes": 31983,
     "repVotes": 38517,
     "othVotes": 0,
-    "totalVotes": 70500
+    "totalVotes": 70500,
+    "candidates": [
+     {
+      "name": "Jacob C. Ashby",
+      "party": "R",
+      "votes": 38517,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Brittany L. Vogel",
+      "party": "D",
+      "votes": 31983
+     }
+    ]
    },
    "108": {
     "demVotes": 31508,
     "repVotes": 12342,
     "othVotes": 4233,
-    "totalVotes": 48083
+    "totalVotes": 48083,
+    "candidates": [
+     {
+      "name": "John T. McDonald III",
+      "party": "D",
+      "votes": 31508,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Petros Papanicolaou",
+      "party": "R",
+      "votes": 12342
+     },
+     {
+      "name": "Sam Fein",
+      "party": "O",
+      "votes": 4233
+     }
+    ]
    },
    "109": {
     "demVotes": 48395,
     "repVotes": 20282,
     "othVotes": 0,
-    "totalVotes": 68677
+    "totalVotes": 68677,
+    "candidates": [
+     {
+      "name": "Patricia A. Fahy",
+      "party": "D",
+      "votes": 48395,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Robert G. Porter",
+      "party": "R",
+      "votes": 20282
+     }
+    ]
    },
    "110": {
     "demVotes": 43043,
     "repVotes": 25625,
     "othVotes": 0,
-    "totalVotes": 68668
+    "totalVotes": 68668,
+    "candidates": [
+     {
+      "name": "Phillip G. Steck",
+      "party": "D",
+      "votes": 43043,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Dave M. Feiden",
+      "party": "R",
+      "votes": 25625
+     }
+    ]
    },
    "111": {
     "demVotes": 32917,
     "repVotes": 21821,
     "othVotes": 0,
-    "totalVotes": 54738
+    "totalVotes": 54738,
+    "candidates": [
+     {
+      "name": "Angelo L. Santabarbara",
+      "party": "D",
+      "votes": 32917,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Paul E. Delorenzo",
+      "party": "R",
+      "votes": 21821
+     }
+    ]
    },
    "112": {
     "demVotes": 33750,
     "repVotes": 46189,
     "othVotes": 0,
-    "totalVotes": 79939
+    "totalVotes": 79939,
+    "candidates": [
+     {
+      "name": "Mary Beth Walsh",
+      "party": "R",
+      "votes": 46189,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Joseph S. Seeman",
+      "party": "D",
+      "votes": 33750
+     }
+    ]
    },
    "113": {
     "demVotes": 40173,
     "repVotes": 32726,
     "othVotes": 0,
-    "totalVotes": 72899
+    "totalVotes": 72899,
+    "candidates": [
+     {
+      "name": "Carrie Woerner",
+      "party": "D",
+      "votes": 40173,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "David M. Catalfamo",
+      "party": "R",
+      "votes": 32726
+     }
+    ]
    },
    "114": {
     "demVotes": 28024,
     "repVotes": 37587,
     "othVotes": 0,
-    "totalVotes": 65611
+    "totalVotes": 65611,
+    "candidates": [
+     {
+      "name": "Matthew J. Simpson",
+      "party": "R",
+      "votes": 37587,
+      "winner": true
+     },
+     {
+      "name": "Claudia K. Braymer",
+      "party": "D",
+      "votes": 28024
+     }
+    ]
    },
    "115": {
     "demVotes": 43090,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 43090,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "D. Billy Jones",
+      "party": "D",
+      "votes": 43090,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "116": {
     "demVotes": 19603,
     "repVotes": 33023,
     "othVotes": 0,
-    "totalVotes": 52626
+    "totalVotes": 52626,
+    "candidates": [
+     {
+      "name": "Mark C. Walczyk",
+      "party": "R",
+      "votes": 33023,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Alex V. Hammond",
+      "party": "D",
+      "votes": 19603
+     }
+    ]
    },
    "117": {
     "demVotes": 0,
     "repVotes": 44072,
     "othVotes": 0,
     "totalVotes": 44072,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Kenneth Blankenbush",
+      "party": "R",
+      "votes": 44072,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "118": {
     "demVotes": 0,
     "repVotes": 48098,
     "othVotes": 0,
     "totalVotes": 48098,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Robert J. Smullen",
+      "party": "R",
+      "votes": 48098,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "119": {
     "demVotes": 27434,
     "repVotes": 20122,
     "othVotes": 0,
-    "totalVotes": 47556
+    "totalVotes": 47556,
+    "candidates": [
+     {
+      "name": "Marianne Buttenschon",
+      "party": "D",
+      "votes": 27434,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "John S. Zielinski",
+      "party": "R",
+      "votes": 20122
+     }
+    ]
    },
    "120": {
     "demVotes": 18523,
     "repVotes": 43419,
     "othVotes": 0,
-    "totalVotes": 61942
+    "totalVotes": 61942,
+    "candidates": [
+     {
+      "name": "William A. Barclay",
+      "party": "R",
+      "votes": 43419,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Gail E. Tosh",
+      "party": "D",
+      "votes": 18523
+     }
+    ]
    },
    "121": {
     "demVotes": 21595,
     "repVotes": 34096,
     "othVotes": 0,
-    "totalVotes": 55691
+    "totalVotes": 55691,
+    "candidates": [
+     {
+      "name": "John J. Salka",
+      "party": "R",
+      "votes": 34096,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Dan Buttermann",
+      "party": "D",
+      "votes": 21595
+     }
+    ]
    },
    "122": {
     "demVotes": 18632,
     "repVotes": 41385,
     "othVotes": 0,
-    "totalVotes": 60017
+    "totalVotes": 60017,
+    "candidates": [
+     {
+      "name": "Joe G. Angelino",
+      "party": "R",
+      "votes": 41385,
+      "winner": true
+     },
+     {
+      "name": "Richard O. Shaw",
+      "party": "D",
+      "votes": 18632
+     }
+    ]
    },
    "123": {
     "demVotes": 41403,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 41403,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Donna A. Lupardo",
+      "party": "D",
+      "votes": 41403,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "124": {
     "demVotes": 21053,
     "repVotes": 37976,
     "othVotes": 0,
-    "totalVotes": 59029
+    "totalVotes": 59029,
+    "candidates": [
+     {
+      "name": "Christopher S. Friend",
+      "party": "R",
+      "votes": 37976,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Randy Reid",
+      "party": "D",
+      "votes": 21053
+     }
+    ]
    },
    "125": {
     "demVotes": 37673,
     "repVotes": 17028,
     "othVotes": 0,
-    "totalVotes": 54701
+    "totalVotes": 54701,
+    "candidates": [
+     {
+      "name": "Anna Kelles",
+      "party": "D",
+      "votes": 37673,
+      "winner": true
+     },
+     {
+      "name": "Matthew McIntyre",
+      "party": "R",
+      "votes": 17028
+     }
+    ]
    },
    "126": {
     "demVotes": 28777,
     "repVotes": 38492,
     "othVotes": 0,
-    "totalVotes": 67269
+    "totalVotes": 67269,
+    "candidates": [
+     {
+      "name": "John Lemondes Jr.",
+      "party": "R",
+      "votes": 38492,
+      "winner": true
+     },
+     {
+      "name": "Dia Carabajal",
+      "party": "D",
+      "votes": 28777
+     }
+    ]
    },
    "127": {
     "demVotes": 42219,
     "repVotes": 35150,
     "othVotes": 0,
-    "totalVotes": 77369
+    "totalVotes": 77369,
+    "candidates": [
+     {
+      "name": "Albert A. Stirpe Jr.",
+      "party": "D",
+      "votes": 42219,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Mark R. Venesky",
+      "party": "R",
+      "votes": 35150
+     }
+    ]
    },
    "128": {
     "demVotes": 36910,
     "repVotes": 19823,
     "othVotes": 0,
-    "totalVotes": 56733
+    "totalVotes": 56733,
+    "candidates": [
+     {
+      "name": "Pamela Jo Hunter",
+      "party": "D",
+      "votes": 36910,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Stephanie M. Jackson",
+      "party": "R",
+      "votes": 19823
+     }
+    ]
    },
    "129": {
     "demVotes": 34207,
     "repVotes": 13606,
     "othVotes": 0,
-    "totalVotes": 47813
+    "totalVotes": 47813,
+    "candidates": [
+     {
+      "name": "William B. Magnarelli",
+      "party": "D",
+      "votes": 34207,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Edward G. Weber Jr.",
+      "party": "R",
+      "votes": 13606
+     }
+    ]
    },
    "130": {
     "demVotes": 18226,
     "repVotes": 40618,
     "othVotes": 0,
-    "totalVotes": 58844
+    "totalVotes": 58844,
+    "candidates": [
+     {
+      "name": "Brian D. Manktelow",
+      "party": "R",
+      "votes": 40618,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Scott Comegys",
+      "party": "D",
+      "votes": 18226
+     }
+    ]
    },
    "131": {
     "demVotes": 27817,
     "repVotes": 37147,
     "othVotes": 0,
-    "totalVotes": 64964
+    "totalVotes": 64964,
+    "candidates": [
+     {
+      "name": "Jeff L. Gallahan",
+      "party": "R",
+      "votes": 37147,
+      "winner": true
+     },
+     {
+      "name": "Matthew Miller",
+      "party": "D",
+      "votes": 27817
+     }
+    ]
    },
    "132": {
     "demVotes": 0,
     "repVotes": 48854,
     "othVotes": 0,
     "totalVotes": 48854,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Philip A. Palmesano",
+      "party": "R",
+      "votes": 48854,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "133": {
     "demVotes": 25830,
     "repVotes": 41760,
     "othVotes": 0,
-    "totalVotes": 67590
+    "totalVotes": 67590,
+    "candidates": [
+     {
+      "name": "Marjorie L. Byrnes",
+      "party": "R",
+      "votes": 41760,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Charon K. Sattlerleblanc",
+      "party": "D",
+      "votes": 25830
+     }
+    ]
    },
    "134": {
     "demVotes": 25924,
     "repVotes": 38937,
     "othVotes": 0,
-    "totalVotes": 64861
+    "totalVotes": 64861,
+    "candidates": [
+     {
+      "name": "Josh Jensen",
+      "party": "R",
+      "votes": 38937,
+      "winner": true
+     },
+     {
+      "name": "Carolyn D. Carrol",
+      "party": "D",
+      "votes": 25924
+     }
+    ]
    },
    "135": {
     "demVotes": 41564,
     "repVotes": 40833,
     "othVotes": 0,
-    "totalVotes": 82397
+    "totalVotes": 82397,
+    "candidates": [
+     {
+      "name": "Jennifer A. Lunsford",
+      "party": "D",
+      "votes": 41564,
+      "winner": true
+     },
+     {
+      "name": "Mark C. Johns",
+      "party": "R",
+      "votes": 40833,
+      "incumbent": true
+     }
+    ]
    },
    "136": {
     "demVotes": 45035,
     "repVotes": 0,
     "othVotes": 6880,
     "totalVotes": 51915,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Sarah Clark",
+      "party": "D",
+      "votes": 45035,
+      "winner": true
+     },
+     {
+      "name": "Justin F. Wilcox",
+      "party": "O",
+      "votes": 3955
+     },
+     {
+      "name": "Steven G. Becker",
+      "party": "O",
+      "votes": 2925
+     }
+    ]
    },
    "137": {
     "demVotes": 33952,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 33952,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Demond L. Meeks",
+      "party": "D",
+      "votes": 33952,
+      "winner": true
+     }
+    ]
    },
    "138": {
     "demVotes": 37351,
     "repVotes": 19917,
     "othVotes": 0,
-    "totalVotes": 57268
+    "totalVotes": 57268,
+    "candidates": [
+     {
+      "name": "Harry B. Bronson",
+      "party": "D",
+      "votes": 37351,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Peter Vazquez",
+      "party": "R",
+      "votes": 19917
+     }
+    ]
    },
    "139": {
     "demVotes": 0,
     "repVotes": 48134,
     "othVotes": 4506,
     "totalVotes": 52640,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Stephen M. Hawley",
+      "party": "R",
+      "votes": 48134,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Mark E. Glogowski",
+      "party": "O",
+      "votes": 4506
+     }
+    ]
    },
    "140": {
     "demVotes": 35616,
     "repVotes": 24593,
     "othVotes": 0,
-    "totalVotes": 60209
+    "totalVotes": 60209,
+    "candidates": [
+     {
+      "name": "William C. Conrad III",
+      "party": "D",
+      "votes": 35616,
+      "winner": true
+     },
+     {
+      "name": "Robert E. Pecoraro",
+      "party": "R",
+      "votes": 24593
+     }
+    ]
    },
    "141": {
     "demVotes": 42628,
     "repVotes": 4981,
     "othVotes": 0,
-    "totalVotes": 47609
+    "totalVotes": 47609,
+    "candidates": [
+     {
+      "name": "Crystal D. Peoplesstokes",
+      "party": "D",
+      "votes": 42628,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Sean Miles",
+      "party": "R",
+      "votes": 4981
+     }
+    ]
    },
    "142": {
     "demVotes": 36758,
     "repVotes": 28798,
     "othVotes": 0,
-    "totalVotes": 65556
+    "totalVotes": 65556,
+    "candidates": [
+     {
+      "name": "Patrick B. Burke",
+      "party": "D",
+      "votes": 36758,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Matthew S. Szalkowski",
+      "party": "R",
+      "votes": 28798
+     }
+    ]
    },
    "143": {
     "demVotes": 35209,
     "repVotes": 31895,
     "othVotes": 0,
-    "totalVotes": 67104
+    "totalVotes": 67104,
+    "candidates": [
+     {
+      "name": "Monica Pigawallace",
+      "party": "D",
+      "votes": 35209,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Frank C. Smierciak II",
+      "party": "R",
+      "votes": 31895
+     }
+    ]
    },
    "144": {
     "demVotes": 0,
     "repVotes": 54375,
     "othVotes": 0,
     "totalVotes": 54375,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Michael J. Norris",
+      "party": "R",
+      "votes": 54375,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "145": {
     "demVotes": 0,
     "repVotes": 44255,
     "othVotes": 0,
     "totalVotes": 44255,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Angelo J. Morinello",
+      "party": "R",
+      "votes": 44255,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "146": {
     "demVotes": 38091,
     "repVotes": 30147,
     "othVotes": 0,
-    "totalVotes": 68238
+    "totalVotes": 68238,
+    "candidates": [
+     {
+      "name": "Karen M. McMahon",
+      "party": "D",
+      "votes": 38091,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Robin L. Wolfgang",
+      "party": "R",
+      "votes": 30147
+     }
+    ]
    },
    "147": {
     "demVotes": 0,
     "repVotes": 56855,
     "othVotes": 0,
     "totalVotes": 56855,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "David J. Dipietro",
+      "party": "R",
+      "votes": 56855,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "148": {
     "demVotes": 14004,
     "repVotes": 39964,
     "othVotes": 0,
-    "totalVotes": 53968
+    "totalVotes": 53968,
+    "candidates": [
+     {
+      "name": "Joseph M. Giglio",
+      "party": "R",
+      "votes": 39964,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "W. Rossscott",
+      "party": "D",
+      "votes": 14004
+     }
+    ]
    },
    "149": {
     "demVotes": 38611,
     "repVotes": 19922,
     "othVotes": 0,
-    "totalVotes": 58533
+    "totalVotes": 58533,
+    "candidates": [
+     {
+      "name": "Jonathan D. Rivera",
+      "party": "D",
+      "votes": 38611,
+      "winner": true
+     },
+     {
+      "name": "Joseph Totaro",
+      "party": "R",
+      "votes": 19922
+     }
+    ]
    },
    "150": {
     "demVotes": 17845,
     "repVotes": 39593,
     "othVotes": 0,
-    "totalVotes": 57438
+    "totalVotes": 57438,
+    "candidates": [
+     {
+      "name": "Andrew W. Goodell",
+      "party": "R",
+      "votes": 39593,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Christina Cardinale",
+      "party": "D",
+      "votes": 17845
+     }
+    ]
    }
   }
  },
@@ -965,401 +2823,1175 @@
     "demVotes": 81265,
     "repVotes": 86975,
     "othVotes": 0,
-    "totalVotes": 168240
+    "totalVotes": 168240,
+    "candidates": [
+     {
+      "name": "Anthony H. Palumbo",
+      "party": "R",
+      "votes": 86975,
+      "winner": true
+     },
+     {
+      "name": "Laura A. Ahearn",
+      "party": "D",
+      "votes": 81265
+     }
+    ]
    },
    "2": {
     "demVotes": 66575,
     "repVotes": 90984,
     "othVotes": 0,
-    "totalVotes": 157559
+    "totalVotes": 157559,
+    "candidates": [
+     {
+      "name": "Mario R. Mattera",
+      "party": "R",
+      "votes": 90984,
+      "winner": true
+     },
+     {
+      "name": "Michael G. Siderakis",
+      "party": "D",
+      "votes": 66575
+     }
+    ]
    },
    "3": {
     "demVotes": 63285,
     "repVotes": 68362,
     "othVotes": 0,
-    "totalVotes": 131647
+    "totalVotes": 131647,
+    "candidates": [
+     {
+      "name": "Alexis Weik",
+      "party": "R",
+      "votes": 68362,
+      "winner": true
+     },
+     {
+      "name": "Monica R. Martinez",
+      "party": "D",
+      "votes": 63285,
+      "incumbent": true
+     }
+    ]
    },
    "4": {
     "demVotes": 64007,
     "repVotes": 79565,
     "othVotes": 0,
-    "totalVotes": 143572
+    "totalVotes": 143572,
+    "candidates": [
+     {
+      "name": "Philip M. Boyle",
+      "party": "R",
+      "votes": 79565,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Christine Pellegrino",
+      "party": "D",
+      "votes": 64007
+     }
+    ]
    },
    "5": {
     "demVotes": 84374,
     "repVotes": 81239,
     "othVotes": 0,
-    "totalVotes": 165613
+    "totalVotes": 165613,
+    "candidates": [
+     {
+      "name": "James F. Gaughran",
+      "party": "D",
+      "votes": 84374,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Edmund J. Smyth",
+      "party": "R",
+      "votes": 81239
+     }
+    ]
    },
    "6": {
     "demVotes": 76588,
     "repVotes": 73630,
     "othVotes": 0,
-    "totalVotes": 150218
+    "totalVotes": 150218,
+    "candidates": [
+     {
+      "name": "Kevin M. Thomas",
+      "party": "D",
+      "votes": 76588,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Dennis Dunne Sr.",
+      "party": "R",
+      "votes": 73630
+     }
+    ]
    },
    "7": {
     "demVotes": 89287,
     "repVotes": 66170,
     "othVotes": 0,
-    "totalVotes": 155457
+    "totalVotes": 155457,
+    "candidates": [
+     {
+      "name": "Anna M. Kaplan",
+      "party": "D",
+      "votes": 89287,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "David C. Franklin",
+      "party": "R",
+      "votes": 66170
+     }
+    ]
    },
    "8": {
     "demVotes": 92901,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 92901,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "John E. Brooks",
+      "party": "D",
+      "votes": 92901,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "9": {
     "demVotes": 94022,
     "repVotes": 68961,
     "othVotes": 0,
-    "totalVotes": 162983
+    "totalVotes": 162983,
+    "candidates": [
+     {
+      "name": "Todd D. Kaminsky",
+      "party": "D",
+      "votes": 94022,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Victoria M. Johnson",
+      "party": "R",
+      "votes": 68961
+     }
+    ]
    },
    "10": {
     "demVotes": 94555,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 94555,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "James Sanders Jr.",
+      "party": "D",
+      "votes": 94555,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "11": {
     "demVotes": 78818,
     "repVotes": 45400,
     "othVotes": 0,
-    "totalVotes": 124218
+    "totalVotes": 124218,
+    "candidates": [
+     {
+      "name": "John C. Liu",
+      "party": "D",
+      "votes": 78818,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Elisa Nahoum",
+      "party": "R",
+      "votes": 45400
+     }
+    ]
    },
    "12": {
     "demVotes": 100671,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 100671,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Michael N. Gianaris",
+      "party": "D",
+      "votes": 100671,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "13": {
     "demVotes": 62885,
     "repVotes": 17141,
     "othVotes": 0,
-    "totalVotes": 80026
+    "totalVotes": 80026,
+    "candidates": [
+     {
+      "name": "Jessica Ramos",
+      "party": "D",
+      "votes": 62885,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Jesus Gonzalez",
+      "party": "R",
+      "votes": 17141
+     }
+    ]
    },
    "14": {
     "demVotes": 110626,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 110626,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Leroy G. Comrie Jr.",
+      "party": "D",
+      "votes": 110626,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "15": {
     "demVotes": 68829,
     "repVotes": 49306,
     "othVotes": 0,
-    "totalVotes": 118135
+    "totalVotes": 118135,
+    "candidates": [
+     {
+      "name": "Joseph P. Addabbo Jr.",
+      "party": "D",
+      "votes": 68829,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Thomas P. Sullivan",
+      "party": "R",
+      "votes": 49306
+     }
+    ]
    },
    "16": {
     "demVotes": 65240,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 65240,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Toby Ann Stavisky",
+      "party": "D",
+      "votes": 65240,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "17": {
     "demVotes": 78650,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 78650,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Simcha Felder",
+      "party": "D",
+      "votes": 78650,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "18": {
     "demVotes": 95939,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 95939,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Julia Salazar",
+      "party": "D",
+      "votes": 95939,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "19": {
     "demVotes": 95755,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 95755,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Roxanne J. Persaud",
+      "party": "D",
+      "votes": 95755,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "20": {
     "demVotes": 99491,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 99491,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Zellnor y. Myrie",
+      "party": "D",
+      "votes": 99491,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "21": {
     "demVotes": 118738,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 118738,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Kevin S. Parker",
+      "party": "D",
+      "votes": 118738,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "22": {
     "demVotes": 51565,
     "repVotes": 47830,
     "othVotes": 0,
-    "totalVotes": 99395
+    "totalVotes": 99395,
+    "candidates": [
+     {
+      "name": "Andrew S. Gounardes",
+      "party": "D",
+      "votes": 51565,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Vito J. Bruno",
+      "party": "R",
+      "votes": 47830
+     }
+    ]
    },
    "23": {
     "demVotes": 63548,
     "repVotes": 0,
     "othVotes": 18367,
     "totalVotes": 81915,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Diane J. Savino",
+      "party": "D",
+      "votes": 63548,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Justin Defillippo",
+      "party": "O",
+      "votes": 17336
+     },
+     {
+      "name": "John Jairorodriguez",
+      "party": "O",
+      "votes": 1031
+     }
+    ]
    },
    "24": {
     "demVotes": 0,
     "repVotes": 129896,
     "othVotes": 0,
     "totalVotes": 129896,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Andrew J. Lanza",
+      "party": "R",
+      "votes": 129896,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "25": {
     "demVotes": 138261,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 138261,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Jabari Brisport",
+      "party": "D",
+      "votes": 138261,
+      "winner": true
+     }
+    ]
    },
    "26": {
     "demVotes": 95552,
     "repVotes": 25301,
     "othVotes": 0,
-    "totalVotes": 120853
+    "totalVotes": 120853,
+    "candidates": [
+     {
+      "name": "Brian Kavanagh",
+      "party": "D",
+      "votes": 95552,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Lester Chang",
+      "party": "R",
+      "votes": 25301
+     }
+    ]
    },
    "27": {
     "demVotes": 127942,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 127942,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Brad M. Hoylman",
+      "party": "D",
+      "votes": 127942,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "28": {
     "demVotes": 113109,
     "repVotes": 31888,
     "othVotes": 0,
-    "totalVotes": 144997
+    "totalVotes": 144997,
+    "candidates": [
+     {
+      "name": "Liz Krueger",
+      "party": "D",
+      "votes": 113109,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Michael Zumbluskas",
+      "party": "R",
+      "votes": 31888
+     }
+    ]
    },
    "29": {
     "demVotes": 88643,
     "repVotes": 12175,
     "othVotes": 0,
-    "totalVotes": 100818
+    "totalVotes": 100818,
+    "candidates": [
+     {
+      "name": "Jose M. Serrano",
+      "party": "D",
+      "votes": 88643,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Jose A. Colon",
+      "party": "R",
+      "votes": 12175
+     }
+    ]
    },
    "30": {
     "demVotes": 115397,
     "repVotes": 8477,
     "othVotes": 0,
-    "totalVotes": 123874
+    "totalVotes": 123874,
+    "candidates": [
+     {
+      "name": "Brian A. Benjamin",
+      "party": "D",
+      "votes": 115397,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Oz Sultan",
+      "party": "R",
+      "votes": 8477
+     }
+    ]
    },
    "31": {
     "demVotes": 107072,
     "repVotes": 13961,
     "othVotes": 0,
-    "totalVotes": 121033
+    "totalVotes": 121033,
+    "candidates": [
+     {
+      "name": "Robert Jackson",
+      "party": "D",
+      "votes": 107072,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Melinda Crump",
+      "party": "R",
+      "votes": 13961
+     }
+    ]
    },
    "32": {
     "demVotes": 84128,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 84128,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Luis R. Sepulveda",
+      "party": "D",
+      "votes": 84128,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "33": {
     "demVotes": 67268,
     "repVotes": 8288,
     "othVotes": 0,
-    "totalVotes": 75556
+    "totalVotes": 75556,
+    "candidates": [
+     {
+      "name": "J. Gustavo Rivera",
+      "party": "D",
+      "votes": 67268,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Dustin Martinez",
+      "party": "R",
+      "votes": 8288
+     }
+    ]
    },
    "34": {
     "demVotes": 83730,
     "repVotes": 25634,
     "othVotes": 0,
-    "totalVotes": 109364
+    "totalVotes": 109364,
+    "candidates": [
+     {
+      "name": "Alessandra Biaggi",
+      "party": "D",
+      "votes": 83730,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "James B. Gisondi",
+      "party": "R",
+      "votes": 25634
+     }
+    ]
    },
    "35": {
     "demVotes": 103811,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 103811,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Andrea Stewartcousins",
+      "party": "D",
+      "votes": 103811,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "36": {
     "demVotes": 98096,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 98096,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Jamaal T. Bailey",
+      "party": "D",
+      "votes": 98096,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "37": {
     "demVotes": 90124,
     "repVotes": 54026,
     "othVotes": 0,
-    "totalVotes": 144150
+    "totalVotes": 144150,
+    "candidates": [
+     {
+      "name": "Shelley B. Mayer",
+      "party": "D",
+      "votes": 90124,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Liviu Saimovici",
+      "party": "R",
+      "votes": 54026
+     }
+    ]
    },
    "38": {
     "demVotes": 70809,
     "repVotes": 60955,
     "othVotes": 0,
-    "totalVotes": 131764
+    "totalVotes": 131764,
+    "candidates": [
+     {
+      "name": "Elijah Reichlinmelnick",
+      "party": "D",
+      "votes": 70809,
+      "winner": true
+     },
+     {
+      "name": "William J. Weber Jr.",
+      "party": "R",
+      "votes": 60955
+     }
+    ]
    },
    "39": {
     "demVotes": 72518,
     "repVotes": 54598,
     "othVotes": 0,
-    "totalVotes": 127116
+    "totalVotes": 127116,
+    "candidates": [
+     {
+      "name": "James G. Skoufis",
+      "party": "D",
+      "votes": 72518,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Steve Brescia",
+      "party": "R",
+      "votes": 54598
+     }
+    ]
    },
    "40": {
     "demVotes": 83817,
     "repVotes": 77688,
     "othVotes": 0,
-    "totalVotes": 161505
+    "totalVotes": 161505,
+    "candidates": [
+     {
+      "name": "Peter B. Harckham",
+      "party": "D",
+      "votes": 83817,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Rob Astorino",
+      "party": "R",
+      "votes": 77688
+     }
+    ]
    },
    "41": {
     "demVotes": 73288,
     "repVotes": 81080,
     "othVotes": 0,
-    "totalVotes": 154368
+    "totalVotes": 154368,
+    "candidates": [
+     {
+      "name": "Susan J. Serino",
+      "party": "R",
+      "votes": 81080,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Karen S. Smythe",
+      "party": "D",
+      "votes": 73288
+     }
+    ]
    },
    "42": {
     "demVotes": 66376,
     "repVotes": 67745,
     "othVotes": 0,
-    "totalVotes": 134121
+    "totalVotes": 134121,
+    "candidates": [
+     {
+      "name": "Mike Martucci",
+      "party": "R",
+      "votes": 67745,
+      "winner": true
+     },
+     {
+      "name": "Jen Metzger",
+      "party": "D",
+      "votes": 66376,
+      "incumbent": true
+     }
+    ]
    },
    "43": {
     "demVotes": 77425,
     "repVotes": 86146,
     "othVotes": 0,
-    "totalVotes": 163571
+    "totalVotes": 163571,
+    "candidates": [
+     {
+      "name": "Daphne V. Jordan",
+      "party": "R",
+      "votes": 86146,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Patrick F. Nelson",
+      "party": "D",
+      "votes": 77425
+     }
+    ]
    },
    "44": {
     "demVotes": 93015,
     "repVotes": 34269,
     "othVotes": 0,
-    "totalVotes": 127284
+    "totalVotes": 127284,
+    "candidates": [
+     {
+      "name": "Neil D. Breslin",
+      "party": "D",
+      "votes": 93015,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "David R. Yule",
+      "party": "R",
+      "votes": 34269
+     }
+    ]
    },
    "45": {
     "demVotes": 56925,
     "repVotes": 78130,
     "othVotes": 0,
-    "totalVotes": 135055
+    "totalVotes": 135055,
+    "candidates": [
+     {
+      "name": "Daniel G. Stec",
+      "party": "R",
+      "votes": 78130,
+      "winner": true
+     },
+     {
+      "name": "Kimberly A. Davis",
+      "party": "D",
+      "votes": 56925
+     }
+    ]
    },
    "46": {
     "demVotes": 78102,
     "repVotes": 75034,
     "othVotes": 0,
-    "totalVotes": 153136
+    "totalVotes": 153136,
+    "candidates": [
+     {
+      "name": "Michelle Hinchey",
+      "party": "D",
+      "votes": 78102,
+      "winner": true
+     },
+     {
+      "name": "Richard M. Amedure Jr.",
+      "party": "R",
+      "votes": 75034
+     }
+    ]
    },
    "47": {
     "demVotes": 0,
     "repVotes": 99923,
     "othVotes": 0,
     "totalVotes": 99923,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Joseph A. Griffo",
+      "party": "R",
+      "votes": 99923,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "48": {
     "demVotes": 0,
     "repVotes": 98311,
     "othVotes": 0,
     "totalVotes": 98311,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Patricia A. Ritchie",
+      "party": "R",
+      "votes": 98311,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "49": {
     "demVotes": 52781,
     "repVotes": 91935,
     "othVotes": 0,
-    "totalVotes": 144716
+    "totalVotes": 144716,
+    "candidates": [
+     {
+      "name": "James N. Tedisco",
+      "party": "R",
+      "votes": 91935,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Thearse McCalmon",
+      "party": "D",
+      "votes": 52781
+     }
+    ]
    },
    "50": {
     "demVotes": 82955,
     "repVotes": 74873,
     "othVotes": 0,
-    "totalVotes": 157828
+    "totalVotes": 157828,
+    "candidates": [
+     {
+      "name": "John W. Mannion",
+      "party": "D",
+      "votes": 82955,
+      "winner": true
+     },
+     {
+      "name": "Angi Renna",
+      "party": "R",
+      "votes": 74873
+     }
+    ]
    },
    "51": {
     "demVotes": 58685,
     "repVotes": 72997,
     "othVotes": 0,
-    "totalVotes": 131682
+    "totalVotes": 131682,
+    "candidates": [
+     {
+      "name": "Peter Oberacker",
+      "party": "R",
+      "votes": 72997,
+      "winner": true
+     },
+     {
+      "name": "Jim Barber",
+      "party": "D",
+      "votes": 58685
+     }
+    ]
    },
    "52": {
     "demVotes": 0,
     "repVotes": 96052,
     "othVotes": 13803,
     "totalVotes": 109855,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Frederick J. Akshar II",
+      "party": "R",
+      "votes": 96052,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Thomas Daniel Quiter",
+      "party": "O",
+      "votes": 13803
+     }
+    ]
    },
    "53": {
     "demVotes": 66643,
     "repVotes": 53734,
     "othVotes": 0,
-    "totalVotes": 120377
+    "totalVotes": 120377,
+    "candidates": [
+     {
+      "name": "Rachel May",
+      "party": "D",
+      "votes": 66643,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Sam Rodgers",
+      "party": "R",
+      "votes": 53734
+     }
+    ]
    },
    "54": {
     "demVotes": 51782,
     "repVotes": 91262,
     "othVotes": 0,
-    "totalVotes": 143044
+    "totalVotes": 143044,
+    "candidates": [
+     {
+      "name": "Pamela A. Helming",
+      "party": "R",
+      "votes": 91262,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Shauna Otoole",
+      "party": "D",
+      "votes": 51782
+     }
+    ]
    },
    "55": {
     "demVotes": 90435,
     "repVotes": 67122,
     "othVotes": 0,
-    "totalVotes": 157557
+    "totalVotes": 157557,
+    "candidates": [
+     {
+      "name": "Samra G. Brouk",
+      "party": "D",
+      "votes": 90435,
+      "winner": true
+     },
+     {
+      "name": "Christopher M. Missick",
+      "party": "R",
+      "votes": 67122
+     }
+    ]
    },
    "56": {
     "demVotes": 69951,
     "repVotes": 55355,
     "othVotes": 0,
-    "totalVotes": 125306
+    "totalVotes": 125306,
+    "candidates": [
+     {
+      "name": "Jeremy A. Cooney",
+      "party": "D",
+      "votes": 69951,
+      "winner": true
+     },
+     {
+      "name": "Mike Barry",
+      "party": "R",
+      "votes": 55355
+     }
+    ]
    },
    "57": {
     "demVotes": 34713,
     "repVotes": 87934,
     "othVotes": 0,
-    "totalVotes": 122647
+    "totalVotes": 122647,
+    "candidates": [
+     {
+      "name": "George M. Borrello",
+      "party": "R",
+      "votes": 87934,
+      "winner": true
+     },
+     {
+      "name": "Frank V. Puglisi",
+      "party": "D",
+      "votes": 34713
+     }
+    ]
    },
    "58": {
     "demVotes": 54976,
     "repVotes": 70848,
     "othVotes": 0,
-    "totalVotes": 125824
+    "totalVotes": 125824,
+    "candidates": [
+     {
+      "name": "Thomas F. Omara",
+      "party": "R",
+      "votes": 70848,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Leslie Danksburke",
+      "party": "D",
+      "votes": 54976
+     }
+    ]
    },
    "59": {
     "demVotes": 51176,
     "repVotes": 106057,
     "othVotes": 0,
-    "totalVotes": 157233
+    "totalVotes": 157233,
+    "candidates": [
+     {
+      "name": "Patrick M. Gallivan",
+      "party": "R",
+      "votes": 106057,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Jason W. Klimek",
+      "party": "D",
+      "votes": 51176
+     }
+    ]
    },
    "60": {
     "demVotes": 91008,
     "repVotes": 58817,
     "othVotes": 0,
-    "totalVotes": 149825
+    "totalVotes": 149825,
+    "candidates": [
+     {
+      "name": "Sean M. Ryan",
+      "party": "D",
+      "votes": 91008,
+      "winner": true
+     },
+     {
+      "name": "Joshua Mertzlufft",
+      "party": "R",
+      "votes": 58817
+     }
+    ]
    },
    "61": {
     "demVotes": 68224,
     "repVotes": 79454,
     "othVotes": 0,
-    "totalVotes": 147678
+    "totalVotes": 147678,
+    "candidates": [
+     {
+      "name": "Edward A. Rath III",
+      "party": "R",
+      "votes": 79454,
+      "winner": true
+     },
+     {
+      "name": "Jacqualine G. Berger",
+      "party": "D",
+      "votes": 68224
+     }
+    ]
    },
    "62": {
     "demVotes": 0,
     "repVotes": 101883,
     "othVotes": 0,
     "totalVotes": 101883,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Robert G. Ortt",
+      "party": "R",
+      "votes": 101883,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "63": {
     "demVotes": 95417,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 95417,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Timothy M. Kennedy",
+      "party": "D",
+      "votes": 95417,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    }
   }
  }

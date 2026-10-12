@@ -1,0 +1,1597 @@
+{
+ "house": {
+  "1": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "name": "Austin Loard",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "George Phipps",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Wes Watson",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Chris White",
+     "party": "R"
+    }
+   ]
+  },
+  "10": {
+   "candidates": [
+    {
+     "name": "Isaac Mattox",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Judd Strom",
+     "party": "R"
+    }
+   ]
+  },
+  "100": {
+   "candidates": [
+    {
+     "name": "Chaunt\u00e9 Gilmore",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Marilyn Stark",
+     "party": "R"
+    }
+   ]
+  },
+  "101": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Robert Manger",
+     "party": "R"
+    }
+   ]
+  },
+  "11": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "John Kane",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Wendi Stearman",
+     "party": "R"
+    }
+   ]
+  },
+  "12": {
+   "candidates": [
+    {
+     "name": "Tiffany Prater",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mark Chapman",
+     "party": "R"
+    }
+   ]
+  },
+  "13": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Neil Hays",
+     "party": "R"
+    }
+   ]
+  },
+  "14": {
+   "candidates": [
+    {
+     "name": "Jeremiah Gantz",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Chris Sneed",
+     "party": "R"
+    }
+   ]
+  },
+  "15": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Tim Turner",
+     "party": "R"
+    }
+   ]
+  },
+  "16": {
+   "candidates": [
+    {
+     "name": "Rosie Lynch",
+     "party": "D"
+    },
+    {
+     "name": "David Nelson",
+     "party": "R"
+    }
+   ]
+  },
+  "17": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Jim Grego",
+     "party": "R"
+    }
+   ]
+  },
+  "18": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "David Smith",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Shelton Foster",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Pamela Gordon",
+     "party": "R"
+    }
+   ]
+  },
+  "19": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "name": "Michael Brittingham",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Anthony Devore",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Derek Porter",
+     "party": "R"
+    }
+   ]
+  },
+  "2": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Jim Olsen",
+     "party": "R"
+    }
+   ]
+  },
+  "20": {
+   "candidates": [
+    {
+     "name": "Chris May",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jonathan Wilk",
+     "party": "R"
+    }
+   ]
+  },
+  "21": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Cody Maynard",
+     "party": "R"
+    }
+   ]
+  },
+  "22": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Ryan Eaves",
+     "party": "R"
+    }
+   ]
+  },
+  "23": {
+   "candidates": [
+    {
+     "name": "Catherine Peters",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Derrick Hildebrant",
+     "party": "R"
+    }
+   ]
+  },
+  "24": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Chris Banning",
+     "party": "R"
+    },
+    {
+     "name": "Joshua Conant",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "25": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Ronny Johns",
+     "party": "R"
+    }
+   ]
+  },
+  "26": {
+   "candidates": [
+    {
+     "name": "Chris Odneal",
+     "party": "D"
+    },
+    {
+     "name": "Leah Longest",
+     "party": "R"
+    }
+   ]
+  },
+  "27": {
+   "candidates": [
+    {
+     "name": "Memory Taylor",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Danny Sterling",
+     "party": "R"
+    }
+   ]
+  },
+  "28": {
+   "candidates": [
+    {
+     "name": "Blake Cummings",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Danny Williams",
+     "party": "R"
+    }
+   ]
+  },
+  "29": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Kyle Hilbert",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Brian Jackson",
+     "party": "R"
+    }
+   ]
+  },
+  "3": {
+   "candidates": [
+    {
+     "name": "Steve Glinski",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Rick West",
+     "party": "R"
+    }
+   ]
+  },
+  "30": {
+   "candidates": [
+    {
+     "name": "Sonya Amling",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mark Lawson",
+     "party": "R"
+    }
+   ]
+  },
+  "31": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Collin Duel",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Karmin Grider",
+     "party": "R"
+    }
+   ]
+  },
+  "32": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jim Shaw",
+     "party": "R"
+    },
+    {
+     "name": "Andy Brown",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "33": {
+   "candidates": [
+    {
+     "name": "Max Burchett",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Molly Jenkins",
+     "party": "R"
+    }
+   ]
+  },
+  "34": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Trish Ranson",
+     "party": "D"
+    },
+    {
+     "name": "Aaron Means",
+     "party": "R"
+    }
+   ]
+  },
+  "35": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Dillon Travis",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Kevin Wright",
+     "party": "R"
+    }
+   ]
+  },
+  "36": {
+   "candidates": [
+    {
+     "name": "Leslie Hellebuyck",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "John George",
+     "party": "R"
+    }
+   ]
+  },
+  "37": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "name": "Spencer Grace",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Jeremy Sacket",
+     "party": "R"
+    }
+   ]
+  },
+  "38": {
+   "candidates": [
+    {
+     "name": "Doyle Lewis",
+     "party": "D"
+    },
+    {
+     "name": "Madison Bolay",
+     "party": "R"
+    }
+   ]
+  },
+  "39": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Erick Harris",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Ronda Lee Peterson",
+     "party": "R"
+    }
+   ]
+  },
+  "4": {
+   "candidates": [
+    {
+     "name": "Christopher Wier",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Bob Ed Culver",
+     "party": "R"
+    }
+   ]
+  },
+  "40": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "name": "Kinsley Jordan",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Torry Turnbow",
+     "party": "R"
+    }
+   ]
+  },
+  "41": {
+   "candidates": [
+    {
+     "name": "Mike Bockus",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Denise Hader",
+     "party": "R"
+    }
+   ]
+  },
+  "42": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Cynthia Roe",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Kaity Keith",
+     "party": "R"
+    }
+   ]
+  },
+  "43": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Jay Steagall",
+     "party": "R"
+    }
+   ]
+  },
+  "44": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Jared Deck",
+     "party": "D"
+    }
+   ]
+  },
+  "45": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Annie Menz",
+     "party": "D"
+    },
+    {
+     "name": "Carolyn Womack-Bielich",
+     "party": "R"
+    }
+   ]
+  },
+  "46": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Jacob Rosecrants",
+     "party": "D"
+    }
+   ]
+  },
+  "47": {
+   "candidates": [
+    {
+     "name": "Indigo Oliver",
+     "party": "D"
+    },
+    {
+     "name": "Toby Thompson",
+     "party": "R"
+    }
+   ]
+  },
+  "48": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Tammy Townley",
+     "party": "R"
+    }
+   ]
+  },
+  "49": {
+   "candidates": [
+    {
+     "name": "Dusty Jo Jones",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Josh Cantrell",
+     "party": "R"
+    }
+   ]
+  },
+  "5": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Josh West",
+     "party": "R"
+    }
+   ]
+  },
+  "50": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Stacy Adams",
+     "party": "R"
+    }
+   ]
+  },
+  "51": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "name": "Cody Elliott",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Cole Stevens",
+     "party": "R"
+    }
+   ]
+  },
+  "52": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Gerrid Kendrix",
+     "party": "R"
+    }
+   ]
+  },
+  "53": {
+   "candidates": [
+    {
+     "name": "Carroll Asseo",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jason Blair",
+     "party": "R"
+    }
+   ]
+  },
+  "54": {
+   "candidates": [
+    {
+     "name": "Crystal Abram-Garcia",
+     "party": "D"
+    },
+    {
+     "name": "Heath Kufahl",
+     "party": "R"
+    }
+   ]
+  },
+  "55": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Nick Archer",
+     "party": "R"
+    }
+   ]
+  },
+  "56": {
+   "candidates": [
+    {
+     "name": "Linda Pedro",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Dick Lowe",
+     "party": "R"
+    }
+   ]
+  },
+  "57": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Anthony Moore",
+     "party": "R"
+    }
+   ]
+  },
+  "58": {
+   "candidates": [
+    {
+     "name": "Albert Borrie",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Carl Newton",
+     "party": "R"
+    }
+   ]
+  },
+  "59": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Mike Dobrinski",
+     "party": "R"
+    }
+   ]
+  },
+  "6": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Rusty Cornwell",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Amber Ellis",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Eli Richard",
+     "party": "R"
+    }
+   ]
+  },
+  "60": {
+   "candidates": [
+    {
+     "name": "Sharon Taylor",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mike Kelley",
+     "party": "R"
+    }
+   ]
+  },
+  "61": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Kenton Patzkowsky",
+     "party": "R"
+    }
+   ]
+  },
+  "62": {
+   "candidates": [
+    {
+     "name": "Blake Munoz",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Daniel Pae",
+     "party": "R"
+    }
+   ]
+  },
+  "63": {
+   "candidates": [
+    {
+     "name": "Shykira Smith",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Hurchel Caldwell",
+     "party": "R"
+    }
+   ]
+  },
+  "64": {
+   "candidates": [
+    {
+     "name": "Kathy Suttles",
+     "party": "D"
+    },
+    {
+     "name": "Louis Jackson",
+     "party": "R"
+    }
+   ]
+  },
+  "65": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "name": "Sam Mitchell",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Carla Weaver",
+     "party": "R"
+    }
+   ]
+  },
+  "66": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Clay Staires",
+     "party": "R"
+    },
+    {
+     "name": "Kenneth Blevins",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "67": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Rob Hall",
+     "party": "R"
+    }
+   ]
+  },
+  "68": {
+   "candidates": [
+    {
+     "name": "Michelle Lafleur",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mike Lay",
+     "party": "R"
+    }
+   ]
+  },
+  "69": {
+   "candidates": [
+    {
+     "name": "Tyler Price",
+     "party": "D"
+    },
+    {
+     "name": "Sheila Dills",
+     "party": "R"
+    }
+   ]
+  },
+  "7": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Steve Bashore",
+     "party": "R"
+    }
+   ]
+  },
+  "70": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Suzanne Schreiber",
+     "party": "D"
+    }
+   ]
+  },
+  "71": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Amanda Clinton",
+     "party": "D"
+    }
+   ]
+  },
+  "72": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Michelle McCane",
+     "party": "D"
+    },
+    {
+     "name": "Adam Martin",
+     "party": "R"
+    }
+   ]
+  },
+  "73": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Ron Stewart",
+     "party": "D"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Ed Ross",
+     "party": "D"
+    }
+   ]
+  },
+  "74": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kevin Norwood",
+     "party": "R"
+    },
+    {
+     "name": "Aaron Brent",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "75": {
+   "candidates": [
+    {
+     "name": "Joe Watkins",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "T. Marti",
+     "party": "R"
+    }
+   ]
+  },
+  "76": {
+   "candidates": [
+    {
+     "name": "Michael Tinsley",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Ross Ford",
+     "party": "R"
+    }
+   ]
+  },
+  "77": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "John Waldron",
+     "party": "D"
+    }
+   ]
+  },
+  "78": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Meloyde Blancett",
+     "party": "D"
+    },
+    {
+     "name": "Tony Oliva",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "79": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Melissa Provenzano",
+     "party": "D"
+    },
+    {
+     "name": "Paul Hassink",
+     "party": "R"
+    }
+   ]
+  },
+  "8": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Tom Gann",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Todd Rice",
+     "party": "R"
+    }
+   ]
+  },
+  "80": {
+   "candidates": [
+    {
+     "name": "Jeremy Founds",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Stan May",
+     "party": "R"
+    }
+   ]
+  },
+  "81": {
+   "candidates": [
+    {
+     "name": "Megan Hornbeek Allen",
+     "party": "D"
+    },
+    {
+     "name": "Troy Talley",
+     "party": "R"
+    }
+   ]
+  },
+  "82": {
+   "candidates": [
+    {
+     "name": "Travis Headd",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Nicole Miller",
+     "party": "R"
+    }
+   ]
+  },
+  "83": {
+   "candidates": [
+    {
+     "name": "Dalton Gau",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Eric Roberts",
+     "party": "R"
+    }
+   ]
+  },
+  "84": {
+   "candidates": [
+    {
+     "name": "Jeffrey Perez",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Tammy West",
+     "party": "R"
+    }
+   ]
+  },
+  "85": {
+   "candidates": [
+    {
+     "name": "Chelsey Branham",
+     "party": "D"
+    },
+    {
+     "name": "Joe Fallin",
+     "party": "R"
+    }
+   ]
+  },
+  "86": {
+   "candidates": [
+    {
+     "name": "Hannah Cole",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "David Hardin",
+     "party": "R"
+    }
+   ]
+  },
+  "87": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Ellyn Hefner",
+     "party": "D"
+    },
+    {
+     "name": "Codey Bartle",
+     "party": "R"
+    }
+   ]
+  },
+  "88": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Ellen Pogemiller",
+     "party": "D"
+    }
+   ]
+  },
+  "89": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Arturo Alonso-Sandoval",
+     "party": "D"
+    }
+   ]
+  },
+  "9": {
+   "candidates": [
+    {
+     "name": "Andrea Biscardi",
+     "party": "D"
+    },
+    {
+     "name": "Scotty Stokes",
+     "party": "R"
+    }
+   ]
+  },
+  "90": {
+   "candidates": [
+    {
+     "name": "Kymberly Ward",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Emily Gise",
+     "party": "R"
+    }
+   ]
+  },
+  "91": {
+   "candidates": [
+    {
+     "name": "Chris Fowler",
+     "party": "D"
+    },
+    {
+     "name": "Roberto Luis Seda",
+     "party": "R"
+    }
+   ]
+  },
+  "92": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "name": "Sam Wargin Grimaldo",
+     "party": "D"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Vicki Werneke",
+     "party": "D"
+    }
+   ]
+  },
+  "93": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Mickey Dollens",
+     "party": "D"
+    }
+   ]
+  },
+  "94": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Andy Fugate",
+     "party": "D"
+    }
+   ]
+  },
+  "95": {
+   "candidates": [
+    {
+     "name": "Tegan Malone",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Max Wolfley",
+     "party": "R"
+    },
+    {
+     "name": "Ryan Gardner",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "96": {
+   "candidates": [
+    {
+     "name": "Ashtyn Smith",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Preston Stinson",
+     "party": "R"
+    }
+   ]
+  },
+  "97": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Aletia Haynes Timmons",
+     "party": "D"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Chimere Grant",
+     "party": "D"
+    }
+   ]
+  },
+  "98": {
+   "candidates": [
+    {
+     "name": "Cathy Smythe",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Gabe Woolley",
+     "party": "R"
+    }
+   ]
+  },
+  "99": {
+   "candidates": [
+    {
+     "name": "Herschel Brown",
+     "party": "D"
+    },
+    {
+     "name": "Melvin Latham",
+     "party": "R"
+    }
+   ]
+  }
+ },
+ "meta": {
+  "fetched": "2026-10-10",
+  "source": "Ballotpedia chamber election pages, 2026"
+ },
+ "senate": {
+  "10": {
+   "candidates": [
+    {
+     "name": "Chayelynn Moore",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Bill Coleman",
+     "party": "R"
+    }
+   ]
+  },
+  "12": {
+   "candidates": [
+    {
+     "name": "Erica Watkins",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Todd Gollihare",
+     "party": "R"
+    }
+   ]
+  },
+  "14": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Jerry Alvord",
+     "party": "R"
+    }
+   ]
+  },
+  "16": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Mary Boren",
+     "party": "D"
+    }
+   ]
+  },
+  "18": {
+   "candidates": [
+    {
+     "name": "Meredith McGinnis",
+     "party": "D"
+    },
+    {
+     "name": "Tyler Herring",
+     "party": "R"
+    }
+   ]
+  },
+  "2": {
+   "candidates": [
+    {
+     "name": "Randy Cowling",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Ally Seifried",
+     "party": "R"
+    }
+   ]
+  },
+  "20": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Chuck Hall",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Mark LeMarr",
+     "party": "R"
+    }
+   ]
+  },
+  "22": {
+   "candidates": [
+    {
+     "name": "Kenny Kemper",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Kristen Thompson",
+     "party": "R"
+    }
+   ]
+  },
+  "24": {
+   "candidates": [
+    {
+     "name": "Jonathan Morales",
+     "party": "D"
+    },
+    {
+     "name": "Jon Painter",
+     "party": "R"
+    },
+    {
+     "name": "Melissa Elder",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "26": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "name": "Brady Butler",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Rick Koch",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Jessica Winegeart",
+     "party": "R"
+    }
+   ]
+  },
+  "28": {
+   "candidates": [
+    {
+     "name": "Kevin Connor",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Grant Green",
+     "party": "R"
+    }
+   ]
+  },
+  "30": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Julia Kirt",
+     "party": "D"
+    }
+   ]
+  },
+  "32": {
+   "candidates": [
+    {
+     "name": "Booker Newton",
+     "party": "D"
+    },
+    {
+     "name": "Curtis Erwin",
+     "party": "R"
+    },
+    {
+     "name": "Valentin Pe\u00f1a",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "34": {
+   "candidates": [
+    {
+     "name": "Amy Hossain",
+     "party": "D"
+    },
+    {
+     "name": "Aaron Forst",
+     "party": "R"
+    }
+   ]
+  },
+  "36": {
+   "candidates": [
+    {
+     "name": "Rick Larsen",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "John Haste",
+     "party": "R"
+    }
+   ]
+  },
+  "38": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "name": "Joe Buchanan",
+     "party": "R"
+    },
+    {
+     "canceledGeneral": true,
+     "name": "Barry Christian",
+     "party": "R"
+    }
+   ]
+  },
+  "4": {
+   "candidates": [
+    {
+     "name": "Ellen Cuff",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Tom Woods",
+     "party": "R"
+    }
+   ]
+  },
+  "40": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Carri Hicks",
+     "party": "D"
+    }
+   ]
+  },
+  "42": {
+   "candidates": [
+    {
+     "name": "Christopher Jones",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Brenda Stanley",
+     "party": "R"
+    }
+   ]
+  },
+  "44": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Michael Brooks",
+     "party": "D"
+    }
+   ]
+  },
+  "46": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Mark Harold Mann",
+     "party": "D"
+    }
+   ]
+  },
+  "48": {
+   "candidates": [
+    {
+     "canceledGeneral": true,
+     "incumbent": true,
+     "name": "Nikki Nice",
+     "party": "D"
+    }
+   ]
+  },
+  "6": {
+   "candidates": [
+    {
+     "name": "Patrick Southerland",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "David Bullard",
+     "party": "R"
+    }
+   ]
+  },
+  "8": {
+   "candidates": [
+    {
+     "name": "Nathan Brewer",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Bryan Logan",
+     "party": "R"
+    }
+   ]
+  }
+ }
+}

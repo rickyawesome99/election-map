@@ -12,6 +12,7 @@ import {
 } from "recharts";
 import type { YearAggregation } from "@/lib/tplCompute";
 import { fmtMargin, marginColor } from "@/lib/colorScale";
+import { niceAxisConfig } from "@/lib/chartAxis";
 
 type ChartPoint = { year: string; wrs: number | null };
 type ChartRenderPoint = ChartPoint & Record<string, number | string | null>;
@@ -24,21 +25,6 @@ const EVEN_STROKE = "var(--party-ind-muted)";
 function strokeForMargin(v: number): string {
   if (Math.abs(v) < 0.05) return EVEN_STROKE;
   return v >= 0 ? REP_STROKE : DEM_STROKE;
-}
-
-function niceAxisConfig(vals: number[]): { domain: [number, number]; ticks: number[] } {
-  if (vals.length === 0) return { domain: [-10, 10], ticks: [-10, -5, 0, 5, 10] };
-  const boundedVals = vals.map((v) => Math.max(-100, Math.min(100, v)));
-  const dataMin = Math.min(...boundedVals, 0);
-  const dataMax = Math.max(...boundedVals, 0);
-  const range = dataMax - dataMin || 1;
-  const rawStep = range / 5;
-  const step = [1, 2, 5, 10, 15, 20, 25, 50].find((c) => c >= rawStep) ?? 50;
-  const domainMin = Math.max(-100, Math.floor(dataMin / step) * step);
-  const domainMax = Math.min(100, Math.ceil(dataMax / step) * step);
-  const ticks: number[] = [];
-  for (let t = domainMin; t <= domainMax + 0.001; t += step) ticks.push(+(t.toFixed(1)));
-  return { domain: [domainMin, domainMax], ticks };
 }
 
 function buildSegmentLines(points: ChartPoint[]): { chartData: ChartRenderPoint[]; segments: SegmentLine[] } {

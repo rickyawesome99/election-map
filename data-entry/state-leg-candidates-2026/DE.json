@@ -1,0 +1,609 @@
+{
+ "house": {
+  "1": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Nnamdi Chukwuocha",
+     "party": "D"
+    },
+    {
+     "name": "Lisa McInnis",
+     "party": "R"
+    }
+   ]
+  },
+  "10": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Melanie Ross Levin",
+     "party": "D"
+    },
+    {
+     "name": "Dolores Dunleavy",
+     "party": "R"
+    }
+   ]
+  },
+  "11": {
+   "candidates": [
+    {
+     "name": "Tori Parker",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jeffrey Spiegelman",
+     "party": "R"
+    }
+   ]
+  },
+  "12": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Krista Griffith",
+     "party": "D"
+    },
+    {
+     "name": "Steve Pickering",
+     "party": "R"
+    }
+   ]
+  },
+  "13": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "DeShanna Neal",
+     "party": "D"
+    }
+   ]
+  },
+  "14": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Claire Snyder-Hall",
+     "party": "D"
+    },
+    {
+     "name": "Mike Simpler",
+     "party": "R"
+    }
+   ]
+  },
+  "15": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kamela Smith",
+     "party": "D"
+    }
+   ]
+  },
+  "16": {
+   "candidates": [
+    {
+     "name": "Pamela Salaam",
+     "party": "D"
+    },
+    {
+     "name": "Enala Mwashitete",
+     "party": "R"
+    }
+   ]
+  },
+  "17": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Melissa Minor-Brown",
+     "party": "D"
+    }
+   ]
+  },
+  "18": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Sophie Phillips",
+     "party": "D"
+    }
+   ]
+  },
+  "19": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kimberly Williams",
+     "party": "D"
+    },
+    {
+     "name": "Janyce Colmery",
+     "party": "R"
+    }
+   ]
+  },
+  "2": {
+   "candidates": [
+    {
+     "name": "Michelle Booker",
+     "party": "D"
+    }
+   ]
+  },
+  "20": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Alonna Berry",
+     "party": "D"
+    },
+    {
+     "name": "Gene Dvornick",
+     "party": "R"
+    }
+   ]
+  },
+  "21": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Frank Burns",
+     "party": "D"
+    }
+   ]
+  },
+  "22": {
+   "candidates": [
+    {
+     "name": "Alex Green",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Michael Smith",
+     "party": "R"
+    }
+   ]
+  },
+  "23": {
+   "candidates": [
+    {
+     "name": "David Redlawsk",
+     "party": "D"
+    }
+   ]
+  },
+  "24": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Edward S. Osienski",
+     "party": "D"
+    },
+    {
+     "name": "Stephen Ondich",
+     "party": "R"
+    }
+   ]
+  },
+  "25": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Cyndie Romer",
+     "party": "D"
+    }
+   ]
+  },
+  "26": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Madinah Wilson-Anton",
+     "party": "D"
+    }
+   ]
+  },
+  "27": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Eric Morrison",
+     "party": "D"
+    },
+    {
+     "name": "Mary Kubin",
+     "party": "R"
+    }
+   ]
+  },
+  "28": {
+   "candidates": [
+    {
+     "name": "Tyeisha Grier",
+     "party": "D"
+    }
+   ]
+  },
+  "29": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "William Bush",
+     "party": "D"
+    }
+   ]
+  },
+  "3": {
+   "candidates": [
+    {
+     "name": "Branden Fletcher-Dominguez",
+     "party": "D"
+    },
+    {
+     "name": "Shawn Dottery",
+     "party": "R"
+    },
+    {
+     "name": "Dexter Bland",
+     "party": "O",
+     "partyLabel": "Independent Party of Delaware"
+    }
+   ]
+  },
+  "30": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Shannon Morris",
+     "party": "R"
+    }
+   ]
+  },
+  "31": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Sean Lynn",
+     "party": "D"
+    },
+    {
+     "name": "Anton Brogden",
+     "party": "R"
+    }
+   ]
+  },
+  "32": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kerri Evelyn Harris",
+     "party": "D"
+    }
+   ]
+  },
+  "33": {
+   "candidates": [
+    {
+     "name": "Joshua Pennington",
+     "party": "D"
+    },
+    {
+     "name": "Morgan Hudson",
+     "party": "R"
+    }
+   ]
+  },
+  "34": {
+   "candidates": [
+    {
+     "name": "Annie Norman",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Lyndon Dean Yearick",
+     "party": "R"
+    }
+   ]
+  },
+  "35": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jesse Vanderwende",
+     "party": "R"
+    },
+    {
+     "name": "Jeremy Breeding",
+     "party": "O",
+     "partyLabel": "Unaffiliated",
+     "writeIn": true
+    }
+   ]
+  },
+  "36": {
+   "candidates": [
+    {
+     "name": "Andrew Gorlich",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Bryan Shupe",
+     "party": "R"
+    }
+   ]
+  },
+  "37": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Valerie Jones Giltner",
+     "party": "R"
+    }
+   ]
+  },
+  "38": {
+   "candidates": [
+    {
+     "name": "Maureen Madden",
+     "party": "D"
+    },
+    {
+     "name": "Carlie Carey",
+     "party": "R"
+    }
+   ]
+  },
+  "39": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Daniel Short",
+     "party": "R"
+    }
+   ]
+  },
+  "4": {
+   "candidates": [
+    {
+     "name": "Gregg Lindner",
+     "party": "D"
+    },
+    {
+     "name": "Dan Zitofsky",
+     "party": "R"
+    }
+   ]
+  },
+  "40": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Timothy Dukes",
+     "party": "R"
+    }
+   ]
+  },
+  "41": {
+   "candidates": [
+    {
+     "name": "Ryan Stuckey",
+     "party": "D"
+    },
+    {
+     "name": "John Atkins",
+     "party": "R"
+    }
+   ]
+  },
+  "5": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kendra Johnson",
+     "party": "D"
+    }
+   ]
+  },
+  "6": {
+   "candidates": [
+    {
+     "name": "Rae Krantz",
+     "party": "D"
+    },
+    {
+     "name": "Tanya Hettler",
+     "party": "R"
+    }
+   ]
+  },
+  "7": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Larry Lambert",
+     "party": "D"
+    },
+    {
+     "name": "Shane Stoneman",
+     "party": "R"
+    }
+   ]
+  },
+  "8": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Sherae'a Moore",
+     "party": "D"
+    },
+    {
+     "name": "Gary Taylor",
+     "party": "R"
+    }
+   ]
+  },
+  "9": {
+   "candidates": [
+    {
+     "name": "Ayanna Khan-Flowers",
+     "party": "D"
+    },
+    {
+     "name": "Jamar Money",
+     "party": "R"
+    }
+   ]
+  }
+ },
+ "meta": {
+  "fetched": "2026-10-10",
+  "source": "Ballotpedia chamber election pages, 2026"
+ },
+ "senate": {
+  "1": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Dan Cruce",
+     "party": "D"
+    },
+    {
+     "name": "Hildi Bachtle",
+     "party": "R"
+    },
+    {
+     "name": "Steve Washington",
+     "party": "O",
+     "partyLabel": "Independent Party of Delaware"
+    }
+   ]
+  },
+  "12": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Nicole Poore",
+     "party": "D"
+    },
+    {
+     "name": "Mark Esposito",
+     "party": "R"
+    }
+   ]
+  },
+  "13": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Marie Pinkney",
+     "party": "D"
+    }
+   ]
+  },
+  "14": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kyra Hoffner",
+     "party": "D"
+    },
+    {
+     "name": "Mark Pugh",
+     "party": "R"
+    }
+   ]
+  },
+  "15": {
+   "candidates": [
+    {
+     "name": "Nisha Lodhavia",
+     "party": "D"
+    },
+    {
+     "name": "Emily Thompson",
+     "party": "R"
+    }
+   ]
+  },
+  "19": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Brian Pettyjohn",
+     "party": "R"
+    }
+   ]
+  },
+  "20": {
+   "candidates": [
+    {
+     "name": "Harry Gold",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Gerald Hocker",
+     "party": "R"
+    }
+   ]
+  },
+  "5": {
+   "candidates": [
+    {
+     "name": "Shay Frisby",
+     "party": "D"
+    },
+    {
+     "name": "Brent Burdge",
+     "party": "R"
+    },
+    {
+     "name": "Carolyn Frank",
+     "party": "O",
+     "partyLabel": "Independent Party of Delaware"
+    }
+   ]
+  },
+  "7": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Spiros Mantzavinos",
+     "party": "D"
+    },
+    {
+     "name": "Chris Rowe",
+     "party": "R"
+    }
+   ]
+  },
+  "8": {
+   "candidates": [
+    {
+     "name": "Mara Gorman",
+     "party": "D"
+    },
+    {
+     "name": "Shane Cavanaugh",
+     "party": "R"
+    }
+   ]
+  },
+  "9": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jack Walsh",
+     "party": "D"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,2479 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "1",
+      "popPct": 99.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hawaii",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23375,
+    "pres2020New": -44.9,
+    "pres2020Old": -45.2,
+    "retainedAreaPct": 98.7,
+    "retainedPopPct": 99.8,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Hawaii County.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 55.1,
+      "key": "8",
+      "popPct": 86.2
+     },
+     {
+      "areaPct": 43.7,
+      "key": "10",
+      "popPct": 11.2
+     },
+     {
+      "areaPct": 1.2,
+      "key": "9",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maui",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27527,
+    "pres2020New": -34.2,
+    "pres2020Old": -29.5,
+    "retainedAreaPct": 43.7,
+    "retainedPopPct": 11.2,
+    "text": "A new footprint: only 11% of its population was in the 2016\u20132020 HD-10; it draws from the old HD-8 (86%), the old HD-9 (2%). Entirely in Maui County. 2020 presidential margin D+29.5 on the 2016\u20132020 lines \u2192 D+34.2 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 57.9,
+      "key": "11",
+      "popPct": 90.1
+     },
+     {
+      "areaPct": 42.1,
+      "key": "10",
+      "popPct": 9.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maui",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25989,
+    "pres2020New": -31.1,
+    "pres2020Old": -30.6,
+    "retainedAreaPct": 57.9,
+    "retainedPopPct": 90.1,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-11; gained the rest from the old HD-10 (10%). Entirely in Maui County. 2020 presidential margin D+30.6 on the 2016\u20132020 lines \u2192 D+31.1 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 93.6,
+      "key": "12",
+      "popPct": 94.6
+     },
+     {
+      "areaPct": 3.5,
+      "key": "10",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 2.9,
+      "key": "11",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maui",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29241,
+    "pres2020New": -42.1,
+    "pres2020Old": -42.4,
+    "retainedAreaPct": 93.6,
+    "retainedPopPct": 94.6,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-12; gained the rest from the old HD-10 (3%), the old HD-11 (2%). Entirely in Maui County. 2020 presidential margin D+42.4 on the 2016\u20132020 lines \u2192 D+42.1 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 94.8,
+      "key": "13",
+      "popPct": 96.2
+     },
+     {
+      "areaPct": 5.2,
+      "key": "12",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maui",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27749,
+    "pres2020New": -42.4,
+    "pres2020Old": -42.8,
+    "retainedAreaPct": 94.8,
+    "retainedPopPct": 96.2,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-13; gained the rest from the old HD-12 (4%). Entirely in Maui County. 2020 presidential margin D+42.8 on the 2016\u20132020 lines \u2192 D+42.4 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 72.2,
+      "key": "10",
+      "popPct": 86.8
+     },
+     {
+      "areaPct": 27.8,
+      "key": "8",
+      "popPct": 13.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maui",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maui",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kauai",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 26876,
+    "pres2020New": -28.6,
+    "pres2020Old": -30.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-14; it draws from the old HD-10 (87%), the old HD-8 (13%). Counties: gained Maui (100%); lost Kauai. 2020 presidential margin D+30.3 on the 2016\u20132020 lines \u2192 D+28.6 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "14",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kauai",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24272,
+    "pres2020New": -30.2,
+    "pres2020Old": -27.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-15; it draws from the old HD-14 (100%). Entirely in Kauai County. 2020 presidential margin D+27.3 on the 2016\u20132020 lines \u2192 D+30.2 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "15",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kauai",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24657,
+    "pres2020New": -27.2,
+    "pres2020Old": -28.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-16; it draws from the old HD-15 (100%). Entirely in Kauai County. 2020 presidential margin D+28.9 on the 2016\u20132020 lines \u2192 D+27.2 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "16",
+      "popPct": 96.0
+     },
+     {
+      "areaPct": 0.3,
+      "key": "15",
+      "popPct": 4.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kauai",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kauai",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 24369,
+    "pres2020New": -28.9,
+    "pres2020Old": -34.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-17; it draws from the old HD-16 (96%), the old HD-15 (4%). Counties: gained Kauai (100%); lost Honolulu. 2020 presidential margin D+34.7 on the 2016\u20132020 lines \u2192 D+28.9 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 99.1,
+      "key": "17",
+      "popPct": 93.2
+     },
+     {
+      "areaPct": 0.8,
+      "key": "18",
+      "popPct": 6.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27266,
+    "pres2020New": -34.7,
+    "pres2020Old": -37.6,
+    "retainedAreaPct": 0.8,
+    "retainedPopPct": 6.8,
+    "text": "A new footprint: only 7% of its population was in the 2016\u20132020 HD-18; it draws from the old HD-17 (93%). Entirely in Honolulu County. 2020 presidential margin D+37.6 on the 2016\u20132020 lines \u2192 D+34.7 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 93.5,
+      "key": "18",
+      "popPct": 87.5
+     },
+     {
+      "areaPct": 6.3,
+      "key": "19",
+      "popPct": 10.0
+     },
+     {
+      "areaPct": 0.2,
+      "key": "20",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27147,
+    "pres2020New": -37.9,
+    "pres2020Old": -42.8,
+    "retainedAreaPct": 6.3,
+    "retainedPopPct": 10.0,
+    "text": "A new footprint: only 10% of its population was in the 2016\u20132020 HD-19; it draws from the old HD-18 (88%), the old HD-20 (3%). Entirely in Honolulu County. 2020 presidential margin D+42.8 on the 2016\u20132020 lines \u2192 D+37.9 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 40.4,
+      "key": "2",
+      "popPct": 73.1
+     },
+     {
+      "areaPct": 54.8,
+      "key": "3",
+      "popPct": 19.2
+     },
+     {
+      "areaPct": 4.8,
+      "key": "1",
+      "popPct": 7.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hawaii",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25258,
+    "pres2020New": -47.2,
+    "pres2020Old": -47.0,
+    "retainedAreaPct": 40.4,
+    "retainedPopPct": 73.1,
+    "text": "Kept 73% of its population from the 2016\u20132020 HD-2; gained the rest from the old HD-3 (19%), the old HD-1 (8%). Entirely in Hawaii County. 2020 presidential margin D+47.0 on the 2016\u20132020 lines \u2192 D+47.2 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 97.6,
+      "key": "19",
+      "popPct": 81.0
+     },
+     {
+      "areaPct": 2.3,
+      "key": "21",
+      "popPct": 18.1
+     },
+     {
+      "areaPct": 0.1,
+      "key": "20",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27216,
+    "pres2020New": -43.9,
+    "pres2020Old": -47.6,
+    "retainedAreaPct": 0.1,
+    "retainedPopPct": 0.6,
+    "text": "A new footprint: only 1% of its population was in the 2016\u20132020 HD-20; it draws from the old HD-19 (81%), the old HD-21 (18%). Entirely in Honolulu County. 2020 presidential margin D+47.6 on the 2016\u20132020 lines \u2192 D+43.9 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "20",
+      "popPct": 99.2
+     },
+     {
+      "areaPct": 0.4,
+      "key": "23",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 26833,
+    "pres2020New": -47.7,
+    "pres2020Old": -43.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-21; it draws from the old HD-20 (99%), the old HD-23 (1%). Entirely in Honolulu County. 2020 presidential margin D+43.4 on the 2016\u20132020 lines \u2192 D+47.7 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 76.1,
+      "key": "23",
+      "popPct": 88.5
+     },
+     {
+      "areaPct": 23.7,
+      "key": "24",
+      "popPct": 11.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27372,
+    "pres2020New": -52.0,
+    "pres2020Old": -30.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-22; it draws from the old HD-23 (88%), the old HD-24 (11%). Entirely in Honolulu County. 2020 presidential margin D+30.2 on the 2016\u20132020 lines \u2192 D+52.0 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 50.7,
+      "key": "21",
+      "popPct": 50.6
+     },
+     {
+      "areaPct": 39.1,
+      "key": "26",
+      "popPct": 38.2
+     },
+     {
+      "areaPct": 8.2,
+      "key": "24",
+      "popPct": 9.6
+     },
+     {
+      "areaPct": 2.0,
+      "key": "23",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28024,
+    "pres2020New": -38.8,
+    "pres2020Old": -53.0,
+    "retainedAreaPct": 2.0,
+    "retainedPopPct": 1.5,
+    "text": "A new footprint: only 2% of its population was in the 2016\u20132020 HD-23; it draws from the old HD-21 (51%), the old HD-26 (38%), the old HD-24 (10%). Entirely in Honolulu County. 2020 presidential margin D+53.0 on the 2016\u20132020 lines \u2192 D+38.8 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 85.3,
+      "key": "22",
+      "popPct": 78.2
+     },
+     {
+      "areaPct": 12.8,
+      "key": "21",
+      "popPct": 18.8
+     },
+     {
+      "areaPct": 1.7,
+      "key": "26",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27789,
+    "pres2020New": -32.0,
+    "pres2020Old": -41.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-24; it draws from the old HD-22 (78%), the old HD-21 (19%), the old HD-26 (3%). Entirely in Honolulu County. 2020 presidential margin D+41.1 on the 2016\u20132020 lines \u2192 D+32.0 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 10.2,
+      "key": "26",
+      "popPct": 83.0
+     },
+     {
+      "areaPct": 0.7,
+      "key": "25",
+      "popPct": 7.7
+     },
+     {
+      "areaPct": 88.8,
+      "key": "22",
+      "popPct": 5.5
+     },
+     {
+      "areaPct": 0.3,
+      "key": "24",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28740,
+    "pres2020New": -39.7,
+    "pres2020Old": -42.8,
+    "retainedAreaPct": 0.7,
+    "retainedPopPct": 7.7,
+    "text": "A new footprint: only 8% of its population was in the 2016\u20132020 HD-25; it draws from the old HD-26 (83%), the old HD-22 (6%), the old HD-24 (4%). Entirely in Honolulu County. 2020 presidential margin D+42.8 on the 2016\u20132020 lines \u2192 D+39.7 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 71.0,
+      "key": "24",
+      "popPct": 67.1
+     },
+     {
+      "areaPct": 28.9,
+      "key": "25",
+      "popPct": 32.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 26917,
+    "pres2020New": -42.8,
+    "pres2020Old": -38.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-26; it draws from the old HD-24 (67%), the old HD-25 (33%). Entirely in Honolulu County. 2020 presidential margin D+38.0 on the 2016\u20132020 lines \u2192 D+42.8 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 41.8,
+      "key": "27",
+      "popPct": 55.8
+     },
+     {
+      "areaPct": 58.1,
+      "key": "25",
+      "popPct": 44.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28160,
+    "pres2020New": -40.1,
+    "pres2020Old": -35.9,
+    "retainedAreaPct": 41.8,
+    "retainedPopPct": 55.8,
+    "text": "Kept 56% of its population from the 2016\u20132020 HD-27; gained the rest from the old HD-25 (44%). Entirely in Honolulu County. 2020 presidential margin D+35.9 on the 2016\u20132020 lines \u2192 D+40.1 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 41.3,
+      "key": "29",
+      "popPct": 51.6
+     },
+     {
+      "areaPct": 13.5,
+      "key": "27",
+      "popPct": 38.1
+     },
+     {
+      "areaPct": 6.2,
+      "key": "26",
+      "popPct": 4.6
+     },
+     {
+      "areaPct": 38.3,
+      "key": "30",
+      "popPct": 3.1
+     },
+     {
+      "areaPct": 0.8,
+      "key": "25",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25882,
+    "pres2020New": -27.5,
+    "pres2020Old": -18.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-28; it draws from the old HD-29 (52%), the old HD-27 (38%), the old HD-26 (5%) and 2 more. Entirely in Honolulu County. 2020 presidential margin D+18.2 on the 2016\u20132020 lines \u2192 D+27.5 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 99.0,
+      "key": "28",
+      "popPct": 95.9
+     },
+     {
+      "areaPct": 0.9,
+      "key": "27",
+      "popPct": 3.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27026,
+    "pres2020New": -18.9,
+    "pres2020Old": -19.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-29; it draws from the old HD-28 (96%), the old HD-27 (4%). Entirely in Honolulu County. 2020 presidential margin D+19.0 on the 2016\u20132020 lines \u2192 D+18.9 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 53.6,
+      "key": "3",
+      "popPct": 40.7
+     },
+     {
+      "areaPct": 19.6,
+      "key": "2",
+      "popPct": 33.4
+     },
+     {
+      "areaPct": 26.9,
+      "key": "4",
+      "popPct": 25.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hawaii",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25688,
+    "pres2020New": -40.2,
+    "pres2020Old": -39.6,
+    "retainedAreaPct": 53.6,
+    "retainedPopPct": 40.7,
+    "text": "A new footprint: only 41% of its population was in the 2016\u20132020 HD-3; it draws from the old HD-2 (33%), the old HD-4 (26%). Entirely in Hawaii County. 2020 presidential margin D+39.6 on the 2016\u20132020 lines \u2192 D+40.2 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 97.2,
+      "key": "30",
+      "popPct": 74.7
+     },
+     {
+      "areaPct": 2.8,
+      "key": "29",
+      "popPct": 25.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 35907,
+    "pres2020New": -9.6,
+    "pres2020Old": -9.7,
+    "retainedAreaPct": 97.2,
+    "retainedPopPct": 74.7,
+    "text": "Kept 75% of its population from the 2016\u20132020 HD-30; gained the rest from the old HD-29 (25%). Entirely in Honolulu County. 2020 presidential margin D+9.7 on the 2016\u20132020 lines \u2192 D+9.6 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 16.7,
+      "key": "32",
+      "popPct": 54.6
+     },
+     {
+      "areaPct": 56.2,
+      "key": "30",
+      "popPct": 23.7
+     },
+     {
+      "areaPct": 27.1,
+      "key": "31",
+      "popPct": 21.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 37740,
+    "pres2020New": -25.6,
+    "pres2020Old": -24.7,
+    "retainedAreaPct": 27.1,
+    "retainedPopPct": 21.7,
+    "text": "A new footprint: only 22% of its population was in the 2016\u20132020 HD-31; it draws from the old HD-32 (55%), the old HD-30 (24%). Entirely in Honolulu County. 2020 presidential margin D+24.7 on the 2016\u20132020 lines \u2192 D+25.6 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 30.9,
+      "key": "31",
+      "popPct": 76.2
+     },
+     {
+      "areaPct": 27.6,
+      "key": "32",
+      "popPct": 11.5
+     },
+     {
+      "areaPct": 39.5,
+      "key": "33",
+      "popPct": 8.4
+     },
+     {
+      "areaPct": 2.0,
+      "key": "34",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 38453,
+    "pres2020New": -27.8,
+    "pres2020Old": -29.1,
+    "retainedAreaPct": 27.6,
+    "retainedPopPct": 11.5,
+    "text": "A new footprint: only 12% of its population was in the 2016\u20132020 HD-32; it draws from the old HD-31 (76%), the old HD-33 (8%), the old HD-34 (4%). Entirely in Honolulu County. 2020 presidential margin D+29.1 on the 2016\u20132020 lines \u2192 D+27.8 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 89.3,
+      "key": "33",
+      "popPct": 91.9
+     },
+     {
+      "areaPct": 10.7,
+      "key": "34",
+      "popPct": 8.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25627,
+    "pres2020New": -34.5,
+    "pres2020Old": -35.1,
+    "retainedAreaPct": 89.3,
+    "retainedPopPct": 91.9,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-33; gained the rest from the old HD-34 (8%). Entirely in Honolulu County. 2020 presidential margin D+35.1 on the 2016\u20132020 lines \u2192 D+34.5 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 88.4,
+      "key": "34",
+      "popPct": 79.0
+     },
+     {
+      "areaPct": 11.3,
+      "key": "35",
+      "popPct": 20.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31061,
+    "pres2020New": -29.4,
+    "pres2020Old": -29.5,
+    "retainedAreaPct": 88.4,
+    "retainedPopPct": 79.0,
+    "text": "Kept 79% of its population from the 2016\u20132020 HD-34; gained the rest from the old HD-35 (20%). Entirely in Honolulu County. 2020 presidential margin D+29.5 on the 2016\u20132020 lines \u2192 D+29.4 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 89.3,
+      "key": "35",
+      "popPct": 65.1
+     },
+     {
+      "areaPct": 3.5,
+      "key": "38",
+      "popPct": 24.7
+     },
+     {
+      "areaPct": 6.8,
+      "key": "37",
+      "popPct": 10.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25699,
+    "pres2020New": -18.2,
+    "pres2020Old": -19.9,
+    "retainedAreaPct": 89.3,
+    "retainedPopPct": 65.1,
+    "text": "Kept 65% of its population from the 2016\u20132020 HD-35; gained the rest from the old HD-38 (25%), the old HD-37 (10%). Entirely in Honolulu County. 2020 presidential margin D+19.9 on the 2016\u20132020 lines \u2192 D+18.2 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 70.8,
+      "key": "38",
+      "popPct": 87.0
+     },
+     {
+      "areaPct": 28.8,
+      "key": "35",
+      "popPct": 12.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27064,
+    "pres2020New": -11.6,
+    "pres2020Old": -26.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-36; it draws from the old HD-38 (87%), the old HD-35 (12%). Entirely in Honolulu County. 2020 presidential margin D+26.2 on the 2016\u20132020 lines \u2192 D+11.6 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 19.6,
+      "key": "37",
+      "popPct": 75.1
+     },
+     {
+      "areaPct": 3.3,
+      "key": "36",
+      "popPct": 19.3
+     },
+     {
+      "areaPct": 0.4,
+      "key": "45",
+      "popPct": 3.4
+     },
+     {
+      "areaPct": 76.7,
+      "key": "35",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27473,
+    "pres2020New": -26.0,
+    "pres2020Old": -25.8,
+    "retainedAreaPct": 19.6,
+    "retainedPopPct": 75.1,
+    "text": "Kept 75% of its population from the 2016\u20132020 HD-37; gained the rest from the old HD-36 (19%), the old HD-45 (3%), the old HD-35 (2%). Entirely in Honolulu County. 2020 presidential margin D+25.8 on the 2016\u20132020 lines \u2192 D+26.0 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 92.8,
+      "key": "36",
+      "popPct": 77.8
+     },
+     {
+      "areaPct": 7.1,
+      "key": "45",
+      "popPct": 22.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28007,
+    "pres2020New": -25.8,
+    "pres2020Old": -11.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-38; it draws from the old HD-36 (78%), the old HD-45 (22%). Entirely in Honolulu County. 2020 presidential margin D+11.5 on the 2016\u20132020 lines \u2192 D+25.8 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 91.2,
+      "key": "39",
+      "popPct": 79.4
+     },
+     {
+      "areaPct": 7.9,
+      "key": "37",
+      "popPct": 13.5
+     },
+     {
+      "areaPct": 0.7,
+      "key": "35",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 0.2,
+      "key": "38",
+      "popPct": 3.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 32862,
+    "pres2020New": -10.8,
+    "pres2020Old": -7.1,
+    "retainedAreaPct": 91.2,
+    "retainedPopPct": 79.4,
+    "text": "Kept 79% of its population from the 2016\u20132020 HD-39; gained the rest from the old HD-37 (14%), the old HD-35 (4%), the old HD-38 (4%). Entirely in Honolulu County. 2020 presidential margin D+7.1 on the 2016\u20132020 lines \u2192 D+10.8 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "4",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hawaii",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24460,
+    "pres2020New": -33.4,
+    "pres2020Old": -34.8,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Hawaii County.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "40",
+      "popPct": 99.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29720,
+    "pres2020New": 0.0,
+    "pres2020Old": -0.1,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 99.6,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Honolulu County.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 26.3,
+      "key": "41",
+      "popPct": 87.8
+     },
+     {
+      "areaPct": 73.6,
+      "key": "43",
+      "popPct": 10.5
+     },
+     {
+      "areaPct": 0.1,
+      "key": "40",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 33030,
+    "pres2020New": -5.2,
+    "pres2020Old": -5.0,
+    "retainedAreaPct": 26.3,
+    "retainedPopPct": 87.8,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-41; gained the rest from the old HD-43 (10%), the old HD-40 (2%). Entirely in Honolulu County. 2020 presidential margin D+5.0 on the 2016\u20132020 lines \u2192 D+5.2 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 50.0,
+      "key": "42",
+      "popPct": 44.2
+     },
+     {
+      "areaPct": 18.7,
+      "key": "41",
+      "popPct": 36.9
+     },
+     {
+      "areaPct": 22.9,
+      "key": "39",
+      "popPct": 12.9
+     },
+     {
+      "areaPct": 8.4,
+      "key": "43",
+      "popPct": 6.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 26612,
+    "pres2020New": -6.3,
+    "pres2020Old": -6.4,
+    "retainedAreaPct": 50.0,
+    "retainedPopPct": 44.2,
+    "text": "A new footprint: only 44% of its population was in the 2016\u20132020 HD-42; it draws from the old HD-41 (37%), the old HD-39 (13%), the old HD-43 (6%). Entirely in Honolulu County. 2020 presidential margin D+6.4 on the 2016\u20132020 lines \u2192 D+6.3 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 61.6,
+      "key": "42",
+      "popPct": 72.4
+     },
+     {
+      "areaPct": 23.7,
+      "key": "39",
+      "popPct": 22.1
+     },
+     {
+      "areaPct": 14.7,
+      "key": "43",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29160,
+    "pres2020New": -5.6,
+    "pres2020Old": -0.7,
+    "retainedAreaPct": 14.7,
+    "retainedPopPct": 5.5,
+    "text": "A new footprint: only 6% of its population was in the 2016\u20132020 HD-43; it draws from the old HD-42 (72%), the old HD-39 (22%). Entirely in Honolulu County. 2020 presidential margin D+0.7 on the 2016\u20132020 lines \u2192 D+5.6 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 96.5,
+      "key": "43",
+      "popPct": 90.6
+     },
+     {
+      "areaPct": 3.5,
+      "key": "44",
+      "popPct": 9.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25752,
+    "pres2020New": 1.6,
+    "pres2020Old": -1.7,
+    "retainedAreaPct": 3.5,
+    "retainedPopPct": 9.4,
+    "text": "A new footprint: only 9% of its population was in the 2016\u20132020 HD-44; it draws from the old HD-43 (91%). Entirely in Honolulu County. 2020 presidential margin D+1.7 on the 2016\u20132020 lines \u2192 R+1.6 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 85.2,
+      "key": "44",
+      "popPct": 96.7
+     },
+     {
+      "areaPct": 14.8,
+      "key": "43",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28273,
+    "pres2020New": -2.1,
+    "pres2020Old": -20.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-45; it draws from the old HD-44 (97%), the old HD-43 (3%). Entirely in Honolulu County. 2020 presidential margin D+20.7 on the 2016\u20132020 lines \u2192 D+2.1 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 16.7,
+      "key": "46",
+      "popPct": 52.4
+     },
+     {
+      "areaPct": 82.1,
+      "key": "45",
+      "popPct": 47.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51682,
+    "pres2020New": -17.1,
+    "pres2020Old": -15.6,
+    "retainedAreaPct": 16.7,
+    "retainedPopPct": 52.4,
+    "text": "Kept 52% of its population from the 2016\u20132020 HD-46; gained the rest from the old HD-45 (47%). Entirely in Honolulu County. 2020 presidential margin D+15.6 on the 2016\u20132020 lines \u2192 D+17.1 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 87.5,
+      "key": "47",
+      "popPct": 83.7
+     },
+     {
+      "areaPct": 0.5,
+      "key": "45",
+      "popPct": 8.5
+     },
+     {
+      "areaPct": 12.0,
+      "key": "46",
+      "popPct": 7.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31523,
+    "pres2020New": -5.0,
+    "pres2020Old": -4.0,
+    "retainedAreaPct": 87.5,
+    "retainedPopPct": 83.7,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-47; gained the rest from the old HD-45 (8%), the old HD-46 (8%). Entirely in Honolulu County. 2020 presidential margin D+4.0 on the 2016\u20132020 lines \u2192 D+5.0 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 63.0,
+      "key": "48",
+      "popPct": 77.6
+     },
+     {
+      "areaPct": 1.1,
+      "key": "49",
+      "popPct": 15.0
+     },
+     {
+      "areaPct": 35.8,
+      "key": "47",
+      "popPct": 7.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28402,
+    "pres2020New": -26.3,
+    "pres2020Old": -27.4,
+    "retainedAreaPct": 63.0,
+    "retainedPopPct": 77.6,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-48; gained the rest from the old HD-49 (15%), the old HD-47 (7%). Entirely in Honolulu County. 2020 presidential margin D+27.4 on the 2016\u20132020 lines \u2192 D+26.3 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 93.2,
+      "key": "49",
+      "popPct": 77.1
+     },
+     {
+      "areaPct": 6.7,
+      "key": "48",
+      "popPct": 22.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25317,
+    "pres2020New": -34.2,
+    "pres2020Old": -35.7,
+    "retainedAreaPct": 93.2,
+    "retainedPopPct": 77.1,
+    "text": "Kept 77% of its population from the 2016\u20132020 HD-49; gained the rest from the old HD-48 (23%). Entirely in Honolulu County. 2020 presidential margin D+35.7 on the 2016\u20132020 lines \u2192 D+34.2 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 62.2,
+      "key": "5",
+      "popPct": 51.7
+     },
+     {
+      "areaPct": 29.9,
+      "key": "3",
+      "popPct": 47.4
+     },
+     {
+      "areaPct": 7.9,
+      "key": "4",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hawaii",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27596,
+    "pres2020New": -36.4,
+    "pres2020Old": -32.6,
+    "retainedAreaPct": 62.2,
+    "retainedPopPct": 51.7,
+    "text": "Kept 52% of its population from the 2016\u20132020 HD-5; gained the rest from the old HD-3 (47%), the old HD-4 (1%). Entirely in Hawaii County. 2020 presidential margin D+32.6 on the 2016\u20132020 lines \u2192 D+36.4 on the current lines.",
+    "toEra": "current"
+   },
+   "50": {
+    "contributors": [
+     {
+      "areaPct": 86.4,
+      "key": "50",
+      "popPct": 77.1
+     },
+     {
+      "areaPct": 10.8,
+      "key": "49",
+      "popPct": 11.3
+     },
+     {
+      "areaPct": 1.9,
+      "key": "51",
+      "popPct": 8.2
+     },
+     {
+      "areaPct": 0.9,
+      "key": "48",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 41756,
+    "pres2020New": -35.2,
+    "pres2020Old": -34.1,
+    "retainedAreaPct": 86.4,
+    "retainedPopPct": 77.1,
+    "text": "Kept 77% of its population from the 2016\u20132020 HD-50; gained the rest from the old HD-49 (11%), the old HD-51 (8%), the old HD-48 (3%). Entirely in Honolulu County. 2020 presidential margin D+34.1 on the 2016\u20132020 lines \u2192 D+35.2 on the current lines.",
+    "toEra": "current"
+   },
+   "51": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "51",
+      "popPct": 86.8
+     },
+     {
+      "areaPct": 0.0,
+      "key": "50",
+      "popPct": 13.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27017,
+    "pres2020New": -29.4,
+    "pres2020Old": -29.7,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 86.8,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-51; gained the rest from the old HD-50 (13%). Entirely in Honolulu County. 2020 presidential margin D+29.7 on the 2016\u20132020 lines \u2192 D+29.4 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 84.5,
+      "key": "5",
+      "popPct": 56.7
+     },
+     {
+      "areaPct": 15.5,
+      "key": "6",
+      "popPct": 43.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hawaii",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24176,
+    "pres2020New": -26.5,
+    "pres2020Old": -20.0,
+    "retainedAreaPct": 15.5,
+    "retainedPopPct": 43.3,
+    "text": "A new footprint: only 43% of its population was in the 2016\u20132020 HD-6; it draws from the old HD-5 (57%). Entirely in Hawaii County. 2020 presidential margin D+20.0 on the 2016\u20132020 lines \u2192 D+26.5 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 26.0,
+      "key": "6",
+      "popPct": 72.0
+     },
+     {
+      "areaPct": 73.9,
+      "key": "7",
+      "popPct": 28.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hawaii",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 26461,
+    "pres2020New": -23.1,
+    "pres2020Old": -35.1,
+    "retainedAreaPct": 73.9,
+    "retainedPopPct": 28.0,
+    "text": "A new footprint: only 28% of its population was in the 2016\u20132020 HD-7; it draws from the old HD-6 (72%). Entirely in Hawaii County. 2020 presidential margin D+35.1 on the 2016\u20132020 lines \u2192 D+23.1 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 87.2,
+      "key": "7",
+      "popPct": 98.0
+     },
+     {
+      "areaPct": 12.8,
+      "key": "1",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hawaii",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hawaii",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Maui",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 23615,
+    "pres2020New": -37.5,
+    "pres2020Old": -33.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-8; it draws from the old HD-7 (98%), the old HD-1 (2%). Counties: gained Hawaii (100%); lost Maui. 2020 presidential margin D+33.9 on the 2016\u20132020 lines \u2192 D+37.5 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "9",
+      "popPct": 99.1
+     },
+     {
+      "areaPct": 0.5,
+      "key": "8",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maui",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27454,
+    "pres2020New": -31.0,
+    "pres2020Old": -31.2,
+    "retainedAreaPct": 99.4,
+    "retainedPopPct": 99.1,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-9; gained the rest from the old HD-8 (1%). Entirely in Maui County. 2020 presidential margin D+31.2 on the 2016\u20132020 lines \u2192 D+31.0 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 76.1,
+      "key": "1",
+      "popPct": 90.3
+     },
+     {
+      "areaPct": 23.0,
+      "key": "4",
+      "popPct": 8.4
+     },
+     {
+      "areaPct": 1.0,
+      "key": "2",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hawaii",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51088,
+    "pres2020New": -46.1,
+    "pres2020Old": -46.2,
+    "retainedAreaPct": 76.1,
+    "retainedPopPct": 90.3,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-1; gained the rest from the old SD-4 (8%), the old SD-2 (1%). Entirely in Hawaii County. 2020 presidential margin D+46.2 on the 2016\u20132020 lines \u2192 D+46.1 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 95.6,
+      "key": "10",
+      "popPct": 88.7
+     },
+     {
+      "areaPct": 1.3,
+      "key": "12",
+      "popPct": 6.4
+     },
+     {
+      "areaPct": 3.0,
+      "key": "11",
+      "popPct": 4.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 55175,
+    "pres2020New": -46.3,
+    "pres2020Old": -46.2,
+    "retainedAreaPct": 95.6,
+    "retainedPopPct": 88.7,
+    "text": "Kept 89% of its population from the 2016\u20132020 SD-10; gained the rest from the old SD-12 (6%), the old SD-11 (5%). Entirely in Honolulu County. 2020 presidential margin D+46.2 on the 2016\u20132020 lines \u2192 D+46.3 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 96.2,
+      "key": "11",
+      "popPct": 86.6
+     },
+     {
+      "areaPct": 3.6,
+      "key": "12",
+      "popPct": 13.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 55481,
+    "pres2020New": -46.6,
+    "pres2020Old": -47.6,
+    "retainedAreaPct": 96.2,
+    "retainedPopPct": 86.6,
+    "text": "Kept 87% of its population from the 2016\u20132020 SD-11; gained the rest from the old SD-12 (13%). Entirely in Honolulu County. 2020 presidential margin D+47.6 on the 2016\u20132020 lines \u2192 D+46.6 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 96.9,
+      "key": "12",
+      "popPct": 98.0
+     },
+     {
+      "areaPct": 3.0,
+      "key": "13",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 56068,
+    "pres2020New": -34.6,
+    "pres2020Old": -35.2,
+    "retainedAreaPct": 96.9,
+    "retainedPopPct": 98.0,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-12; gained the rest from the old SD-13 (2%). Entirely in Honolulu County. 2020 presidential margin D+35.2 on the 2016\u20132020 lines \u2192 D+34.6 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 98.1,
+      "key": "13",
+      "popPct": 94.1
+     },
+     {
+      "areaPct": 1.2,
+      "key": "11",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 53474,
+    "pres2020New": -36.2,
+    "pres2020Old": -35.9,
+    "retainedAreaPct": 98.1,
+    "retainedPopPct": 94.1,
+    "text": "Kept 94% of its population from the 2016\u20132020 SD-13; gained the rest from the old SD-11 (6%). Entirely in Honolulu County. 2020 presidential margin D+35.9 on the 2016\u20132020 lines \u2192 D+36.2 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 98.2,
+      "key": "14",
+      "popPct": 87.2
+     },
+     {
+      "areaPct": 0.9,
+      "key": "15",
+      "popPct": 8.2
+     },
+     {
+      "areaPct": 0.8,
+      "key": "13",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 59146,
+    "pres2020New": -24.5,
+    "pres2020Old": -25.9,
+    "retainedAreaPct": 98.2,
+    "retainedPopPct": 87.2,
+    "text": "Kept 87% of its population from the 2016\u20132020 SD-14; gained the rest from the old SD-15 (8%), the old SD-13 (5%). Entirely in Honolulu County. 2020 presidential margin D+25.9 on the 2016\u20132020 lines \u2192 D+24.5 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 81.0,
+      "key": "15",
+      "popPct": 82.5
+     },
+     {
+      "areaPct": 9.8,
+      "key": "16",
+      "popPct": 14.2
+     },
+     {
+      "areaPct": 8.7,
+      "key": "17",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 83781,
+    "pres2020New": -20.7,
+    "pres2020Old": -20.5,
+    "retainedAreaPct": 81.0,
+    "retainedPopPct": 82.5,
+    "text": "Kept 82% of its population from the 2016\u20132020 SD-15; gained the rest from the old SD-16 (14%), the old SD-17 (3%). Entirely in Honolulu County. 2020 presidential margin D+20.5 on the 2016\u20132020 lines \u2192 D+20.7 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 66.5,
+      "key": "16",
+      "popPct": 77.0
+     },
+     {
+      "areaPct": 18.6,
+      "key": "17",
+      "popPct": 12.8
+     },
+     {
+      "areaPct": 14.8,
+      "key": "14",
+      "popPct": 10.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 55620,
+    "pres2020New": -31.6,
+    "pres2020Old": -31.2,
+    "retainedAreaPct": 66.5,
+    "retainedPopPct": 77.0,
+    "text": "Kept 77% of its population from the 2016\u20132020 SD-16; gained the rest from the old SD-17 (13%), the old SD-14 (10%). Entirely in Honolulu County. 2020 presidential margin D+31.2 on the 2016\u20132020 lines \u2192 D+31.6 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 61.3,
+      "key": "22",
+      "popPct": 78.7
+     },
+     {
+      "areaPct": 38.7,
+      "key": "18",
+      "popPct": 21.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 56754,
+    "pres2020New": -23.3,
+    "pres2020Old": -17.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-17; it draws from the old SD-22 (79%), the old SD-18 (21%). Entirely in Honolulu County. 2020 presidential margin D+17.2 on the 2016\u20132020 lines \u2192 D+23.3 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 42.4,
+      "key": "18",
+      "popPct": 83.8
+     },
+     {
+      "areaPct": 2.3,
+      "key": "17",
+      "popPct": 13.9
+     },
+     {
+      "areaPct": 55.3,
+      "key": "20",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 54775,
+    "pres2020New": -19.9,
+    "pres2020Old": -21.5,
+    "retainedAreaPct": 42.4,
+    "retainedPopPct": 83.8,
+    "text": "Kept 84% of its population from the 2016\u20132020 SD-18; gained the rest from the old SD-17 (14%), the old SD-20 (2%). Entirely in Honolulu County. 2020 presidential margin D+21.5 on the 2016\u20132020 lines \u2192 D+19.9 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 39.8,
+      "key": "17",
+      "popPct": 68.8
+     },
+     {
+      "areaPct": 56.3,
+      "key": "20",
+      "popPct": 25.6
+     },
+     {
+      "areaPct": 3.9,
+      "key": "16",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 56468,
+    "pres2020New": -16.2,
+    "pres2020Old": -2.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-19; it draws from the old SD-17 (69%), the old SD-20 (26%), the old SD-16 (6%). Entirely in Honolulu County. 2020 presidential margin D+2.9 on the 2016\u20132020 lines \u2192 D+16.2 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "2",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hawaii",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49895,
+    "pres2020New": -35.6,
+    "pres2020Old": -36.2,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Hawaii County.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 99.0,
+      "key": "19",
+      "popPct": 95.9
+     },
+     {
+      "areaPct": 1.0,
+      "key": "20",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 62052,
+    "pres2020New": -2.4,
+    "pres2020Old": -5.3,
+    "retainedAreaPct": 1.0,
+    "retainedPopPct": 4.1,
+    "text": "A new footprint: only 4% of its population was in the 2016\u20132020 SD-20; it draws from the old SD-19 (96%). Entirely in Honolulu County. 2020 presidential margin D+5.3 on the 2016\u20132020 lines \u2192 D+2.4 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 76.2,
+      "key": "20",
+      "popPct": 79.5
+     },
+     {
+      "areaPct": 2.8,
+      "key": "19",
+      "popPct": 13.6
+     },
+     {
+      "areaPct": 21.0,
+      "key": "21",
+      "popPct": 6.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 58760,
+    "pres2020New": -6.2,
+    "pres2020Old": -0.7,
+    "retainedAreaPct": 21.0,
+    "retainedPopPct": 6.9,
+    "text": "A new footprint: only 7% of its population was in the 2016\u20132020 SD-21; it draws from the old SD-20 (80%), the old SD-19 (14%). Entirely in Honolulu County. 2020 presidential margin D+0.7 on the 2016\u20132020 lines \u2192 D+6.2 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "21",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 53225,
+    "pres2020New": 0.0,
+    "pres2020Old": -22.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-22; it draws from the old SD-21 (100%). Entirely in Honolulu County. 2020 presidential margin D+22.2 on the 2016\u20132020 lines \u2192 Even  on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 89.9,
+      "key": "23",
+      "popPct": 72.2
+     },
+     {
+      "areaPct": 9.0,
+      "key": "22",
+      "popPct": 15.0
+     },
+     {
+      "areaPct": 1.1,
+      "key": "24",
+      "popPct": 12.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 80436,
+    "pres2020New": -16.2,
+    "pres2020Old": -12.4,
+    "retainedAreaPct": 89.9,
+    "retainedPopPct": 72.2,
+    "text": "Kept 72% of its population from the 2016\u20132020 SD-23; gained the rest from the old SD-22 (15%), the old SD-24 (13%). Entirely in Honolulu County. 2020 presidential margin D+12.4 on the 2016\u20132020 lines \u2192 D+16.2 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 93.9,
+      "key": "24",
+      "popPct": 80.3
+     },
+     {
+      "areaPct": 6.1,
+      "key": "25",
+      "popPct": 19.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 66103,
+    "pres2020New": -33.1,
+    "pres2020Old": -32.8,
+    "retainedAreaPct": 93.9,
+    "retainedPopPct": 80.3,
+    "text": "Kept 80% of its population from the 2016\u20132020 SD-24; gained the rest from the old SD-25 (20%). Entirely in Honolulu County. 2020 presidential margin D+32.8 on the 2016\u20132020 lines \u2192 D+33.1 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "25",
+      "popPct": 78.6
+     },
+     {
+      "areaPct": 0.4,
+      "key": "9",
+      "popPct": 18.6
+     },
+     {
+      "areaPct": 0.1,
+      "key": "24",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 55970,
+    "pres2020New": -33.1,
+    "pres2020Old": -32.7,
+    "retainedAreaPct": 99.5,
+    "retainedPopPct": 78.6,
+    "text": "Kept 79% of its population from the 2016\u20132020 SD-25; gained the rest from the old SD-9 (19%), the old SD-24 (3%). Entirely in Honolulu County. 2020 presidential margin D+32.7 on the 2016\u20132020 lines \u2192 D+33.1 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 67.4,
+      "key": "3",
+      "popPct": 94.6
+     },
+     {
+      "areaPct": 32.6,
+      "key": "2",
+      "popPct": 5.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hawaii",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49886,
+    "pres2020New": -28.1,
+    "pres2020Old": -26.3,
+    "retainedAreaPct": 67.4,
+    "retainedPopPct": 94.6,
+    "text": "Kept 95% of its population from the 2016\u20132020 SD-3; gained the rest from the old SD-2 (5%). Entirely in Hawaii County. 2020 presidential margin D+26.3 on the 2016\u20132020 lines \u2192 D+28.1 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "4",
+      "popPct": 90.4
+     },
+     {
+      "areaPct": 0.4,
+      "key": "3",
+      "popPct": 9.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hawaii",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49760,
+    "pres2020New": -34.4,
+    "pres2020Old": -36.9,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 90.4,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-4; gained the rest from the old SD-3 (10%). Entirely in Hawaii County. 2020 presidential margin D+36.9 on the 2016\u20132020 lines \u2192 D+34.4 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "5",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maui",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 52793,
+    "pres2020New": -32.8,
+    "pres2020Old": -32.7,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Maui County.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "6",
+      "popPct": 95.3
+     },
+     {
+      "areaPct": 0.5,
+      "key": "5",
+      "popPct": 4.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maui",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 56624,
+    "pres2020New": -30.0,
+    "pres2020Old": -30.0,
+    "retainedAreaPct": 99.5,
+    "retainedPopPct": 95.3,
+    "text": "Kept 95% of its population from the 2016\u20132020 SD-6; gained the rest from the old SD-5 (5%). Entirely in Maui County. 2020 presidential margin D+30.0 on the 2016\u20132020 lines \u2192 D+30.0 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "7",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maui",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 55420,
+    "pres2020New": -42.6,
+    "pres2020Old": -42.6,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Maui County.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "8",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kauai",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 73298,
+    "pres2020New": -28.8,
+    "pres2020Old": -28.8,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Kauai County.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 98.5,
+      "key": "9",
+      "popPct": 84.0
+     },
+     {
+      "areaPct": 1.4,
+      "key": "10",
+      "popPct": 15.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Honolulu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 53221,
+    "pres2020New": -39.4,
+    "pres2020Old": -37.7,
+    "retainedAreaPct": 98.5,
+    "retainedPopPct": 84.0,
+    "text": "Kept 84% of its population from the 2016\u20132020 SD-9; gained the rest from the old SD-10 (15%). Entirely in Honolulu County. 2020 presidential margin D+37.7 on the 2016\u20132020 lines \u2192 D+39.4 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

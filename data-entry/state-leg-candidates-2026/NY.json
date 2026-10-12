@@ -1,0 +1,3961 @@
+{
+ "house": {
+  "1": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Thomas Schiavoni",
+     "party": "D"
+    },
+    {
+     "name": "Stephen Kiely",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Thomas Schiavoni",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Stephen Kiely",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "10": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Steve Stern",
+     "party": "D"
+    },
+    {
+     "name": "Tiffany LeGrow",
+     "party": "R"
+    },
+    {
+     "name": "Tiffany LeGrow",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "100": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Paula Kay",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Paula Kay",
+     "party": "D",
+     "partyLabel": "Democratic Party, People Over Politics Party"
+    }
+   ]
+  },
+  "101": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Brian Maher",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Brian Maher",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "102": {
+   "candidates": [
+    {
+     "name": "Janet Tweed",
+     "party": "D"
+    },
+    {
+     "name": "Marcus Molinaro",
+     "party": "R"
+    }
+   ]
+  },
+  "103": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Sarahana Shrestha",
+     "party": "D"
+    },
+    {
+     "name": "Santos Lopez",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Sarahana Shrestha",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    },
+    {
+     "name": "Santos Lopez",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "104": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jonathan Jacobson",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jonathan Jacobson",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    }
+   ]
+  },
+  "105": {
+   "candidates": [
+    {
+     "name": "Brooklyn Talarico",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Anil Beephan Jr.",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Anil Beephan Jr.",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "106": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Didi Barrett",
+     "party": "D"
+    },
+    {
+     "name": "Gregory Campus",
+     "party": "R"
+    },
+    {
+     "name": "Gregory Campus",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "107": {
+   "candidates": [
+    {
+     "name": "Chloe Pierce",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Scott H. Bendett",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Scott H. Bendett",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Chloe Pierce",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    }
+   ]
+  },
+  "108": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "John T. McDonald III",
+     "party": "D"
+    },
+    {
+     "name": "Joseph Adamo III",
+     "party": "R"
+    }
+   ]
+  },
+  "109": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Gabriella Romero",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Gabriella Romero",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "11": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kwani O'Pharrow",
+     "party": "D"
+    },
+    {
+     "name": "Joseph Cardinale",
+     "party": "R"
+    },
+    {
+     "name": "Joseph Cardinale",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "110": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Phil Steck",
+     "party": "D"
+    },
+    {
+     "name": "Frank Mauriello",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Phil Steck",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    },
+    {
+     "name": "Frank Mauriello",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "111": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Angelo Santabarbara",
+     "party": "D"
+    },
+    {
+     "name": "Nicholas Sokaris",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Angelo Santabarbara",
+     "party": "D",
+     "partyLabel": "Democratic Party, People First Party"
+    },
+    {
+     "name": "Nicholas Sokaris",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "112": {
+   "candidates": [
+    {
+     "name": "Mario Fantini",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mary Beth Walsh",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Mary Beth Walsh",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Mario Fantini",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    }
+   ]
+  },
+  "113": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Carrie Woerner",
+     "party": "D"
+    },
+    {
+     "name": "Allen Caruso",
+     "party": "R"
+    },
+    {
+     "name": "Allen Caruso",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party, Vote Affordable Party"
+    },
+    {
+     "name": "Thomas Kenny",
+     "party": "O",
+     "partyLabel": "Working Families Party, No Kings Party"
+    }
+   ]
+  },
+  "114": {
+   "candidates": [
+    {
+     "name": "John Gunther",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Matthew Simpson",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Matthew Simpson",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "John Gunther",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    }
+   ]
+  },
+  "115": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Michael Cashman",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Michael Cashman",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    }
+   ]
+  },
+  "116": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Scott Gray",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Scott Gray",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "117": {
+   "candidates": [
+    {
+     "name": "Dennis Gordon",
+     "party": "D"
+    },
+    {
+     "name": "Tammie Nabywaniec",
+     "party": "R"
+    },
+    {
+     "name": "Tammie Nabywaniec",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Dennis Gordon",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    }
+   ]
+  },
+  "118": {
+   "candidates": [
+    {
+     "name": "Colleen Maxwell",
+     "party": "D"
+    },
+    {
+     "name": "Heather Scribner",
+     "party": "R"
+    },
+    {
+     "name": "Heather Scribner",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "119": {
+   "candidates": [
+    {
+     "name": "Jon Lipe",
+     "party": "D"
+    },
+    {
+     "name": "Michael Gentile",
+     "party": "R"
+    },
+    {
+     "name": "Jon Lipe",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party, Mohawk Valley 1st Party"
+    },
+    {
+     "name": "Michael Gentile",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "12": {
+   "candidates": [
+    {
+     "name": "Craig Herskowitz",
+     "party": "D"
+    },
+    {
+     "name": "David Weber Jr.",
+     "party": "R"
+    },
+    {
+     "name": "Craig Herskowitz",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "David Weber Jr.",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "120": {
+   "candidates": [
+    {
+     "name": "Timothy Allers",
+     "party": "D"
+    },
+    {
+     "name": "Jim Weatherup",
+     "party": "R"
+    },
+    {
+     "name": "Jim Weatherup",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "121": {
+   "candidates": [
+    {
+     "name": "Vicki Davis",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Joe Angelino",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Joe Angelino",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "122": {
+   "candidates": [
+    {
+     "name": "Ihor Semko",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Brian Miller",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Brian Miller",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Ihor Semko",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    }
+   ]
+  },
+  "123": {
+   "candidates": [
+    {
+     "name": "Dan Norton",
+     "party": "D"
+    },
+    {
+     "name": "Lynn Parker",
+     "party": "R"
+    },
+    {
+     "name": "Lynn Parker",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Heather Micha",
+     "party": "O",
+     "partyLabel": "Coalition Party"
+    }
+   ]
+  },
+  "124": {
+   "candidates": [
+    {
+     "name": "Andrew Fagan",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Christopher Friend",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Christopher Friend",
+     "party": "R",
+     "partyLabel": "Conservative Party, Republican Party"
+    },
+    {
+     "name": "Andrew Fagan",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    }
+   ]
+  },
+  "125": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Anna Kelles",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Anna Kelles",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    }
+   ]
+  },
+  "126": {
+   "candidates": [
+    {
+     "name": "Ian Phillips",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "John Lemondes Jr.",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "John Lemondes Jr.",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Ian Phillips",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    }
+   ]
+  },
+  "127": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Al Stirpe",
+     "party": "D"
+    },
+    {
+     "name": "Timothy R. Kelly",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Al Stirpe",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    },
+    {
+     "name": "Timothy R. Kelly",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "128": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Pamela Hunter",
+     "party": "D"
+    },
+    {
+     "name": "Patrick Becher",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Pamela Hunter",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Patrick Becher",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "129": {
+   "candidates": [
+    {
+     "name": "Maurice Brown",
+     "party": "D"
+    },
+    {
+     "name": "Shawn Fiato",
+     "party": "R"
+    },
+    {
+     "name": "Maurice Brown",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Shawn Fiato",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "13": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Charles Lavine",
+     "party": "D"
+    },
+    {
+     "name": "Conner Dunleavy",
+     "party": "R"
+    },
+    {
+     "name": "Conner Dunleavy",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "130": {
+   "candidates": [
+    {
+     "name": "Carl Fitzsimmons",
+     "party": "D"
+    },
+    {
+     "name": "George Dobbins",
+     "party": "R"
+    },
+    {
+     "name": "George Dobbins",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Joseph Lamanna",
+     "party": "O",
+     "partyLabel": "Common Sense Party"
+    }
+   ]
+  },
+  "131": {
+   "candidates": [
+    {
+     "name": "Phillip Fleming",
+     "party": "D"
+    },
+    {
+     "name": "Mark Benjamin",
+     "party": "R"
+    },
+    {
+     "name": "Mark Benjamin",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "132": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Philip Palmesano",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Philip Palmesano",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "133": {
+   "candidates": [
+    {
+     "name": "Gladys Flores",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Andrea K. Bailey",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Andrea K. Bailey",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "134": {
+   "candidates": [
+    {
+     "name": "Kurt VanWuyckhuyse",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Josh Jensen",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Josh Jensen",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Kurt VanWuyckhuyse",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    }
+   ]
+  },
+  "135": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jennifer Lunsford",
+     "party": "D"
+    },
+    {
+     "name": "Kalinda Washington",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Jennifer Lunsford",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    },
+    {
+     "name": "Kalinda Washington",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "136": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Sarah Clark",
+     "party": "D"
+    },
+    {
+     "name": "Clianda Florence",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Sarah Clark",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    },
+    {
+     "name": "Clianda Florence",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "137": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Demond Meeks",
+     "party": "D"
+    },
+    {
+     "name": "Dave Ferris",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Demond Meeks",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Dave Ferris",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Mercedes Vazquez-Simmons",
+     "party": "O",
+     "partyLabel": "Mercedes Simmons Cares Party"
+    }
+   ]
+  },
+  "138": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Harry Bronson",
+     "party": "D"
+    },
+    {
+     "name": "Tracy DiFlorio",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Harry Bronson",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    }
+   ]
+  },
+  "139": {
+   "candidates": [
+    {
+     "name": "Sarah Wolcott",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Stephen Hawley",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Stephen Hawley",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "14": {
+   "candidates": [
+    {
+     "name": "John E. Brooks",
+     "party": "D"
+    },
+    {
+     "name": "Shannon Fredericks",
+     "party": "R"
+    },
+    {
+     "name": "Shannon Fredericks",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "140": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "William Conrad",
+     "party": "D"
+    },
+    {
+     "name": "Mohammed Faisal",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "William Conrad",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    }
+   ]
+  },
+  "141": {
+   "candidates": [
+    {
+     "name": "Leah Halton-Pope",
+     "party": "D"
+    }
+   ]
+  },
+  "142": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Patrick Burke",
+     "party": "D"
+    },
+    {
+     "name": "Gary Dickson",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Patrick Burke",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Gary Dickson",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "143": {
+   "candidates": [
+    {
+     "name": "Ryan Taughrin",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Patrick Chludzinski",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Patrick Chludzinski",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Ryan Taughrin",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "144": {
+   "candidates": [
+    {
+     "name": "Donna Dye Sholk",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Paul Bologna",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Paul Bologna",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Donna Dye Sholk",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    }
+   ]
+  },
+  "145": {
+   "candidates": [
+    {
+     "name": "Nate McMurray",
+     "party": "D"
+    },
+    {
+     "name": "Becky Wydysh",
+     "party": "R"
+    },
+    {
+     "name": "Becky Wydysh",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "146": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Karen McMahon",
+     "party": "D"
+    },
+    {
+     "name": "Terence McGuire",
+     "party": "R"
+    },
+    {
+     "name": "Terence McGuire",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "147": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "David DiPietro",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "David DiPietro",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "148": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Joe Sempolinski",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Joe Sempolinski",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "149": {
+   "candidates": [
+    {
+     "name": "Adam Bojak",
+     "party": "D"
+    },
+    {
+     "name": "Frank Bogulski",
+     "party": "R"
+    },
+    {
+     "name": "Frank Bogulski",
+     "party": "R",
+     "partyLabel": "Conservative Party, Republican Party"
+    },
+    {
+     "name": "Adam Bojak",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "15": {
+   "candidates": [
+    {
+     "name": "Dean Tarulli",
+     "party": "D"
+    },
+    {
+     "name": "Paolo Pironi",
+     "party": "R"
+    },
+    {
+     "name": "Paolo Pironi",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "150": {
+   "candidates": [
+    {
+     "name": "Thomas Carle",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Andrew Molitor",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Andrew Molitor",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Thomas Carle",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    }
+   ]
+  },
+  "16": {
+   "candidates": [
+    {
+     "name": "Kim Keiserman",
+     "party": "D"
+    },
+    {
+     "name": "David Hassid",
+     "party": "R"
+    },
+    {
+     "name": "David Hassid",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "17": {
+   "candidates": [
+    {
+     "name": "Sunita Lofters",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "John Mikulin",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "John Mikulin",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "18": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Noah Burroughs",
+     "party": "D"
+    },
+    {
+     "name": "Charlene Jackson",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Noah Burroughs",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Charlene Jackson",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "19": {
+   "candidates": [
+    {
+     "name": "Colleen Connaughton",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Edward Ra",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Edward Ra",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "2": {
+   "candidates": [
+    {
+     "name": "Michael Szika",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jodi Giglio",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Jodi Giglio",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Kimberly Wilder",
+     "party": "O",
+     "partyLabel": "Voter Options Party"
+    }
+   ]
+  },
+  "20": {
+   "candidates": [
+    {
+     "name": "Meir Fischer",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Eric Ari Brown",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Eric Ari Brown",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "21": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Judy Griffin",
+     "party": "D"
+    },
+    {
+     "name": "Irene Villacci",
+     "party": "R"
+    },
+    {
+     "name": "Irene Villacci",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "22": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Michaelle Solages",
+     "party": "D"
+    },
+    {
+     "name": "Robert Inzerillo",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Michaelle Solages",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Robert Inzerillo",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "23": {
+   "candidates": [
+    {
+     "name": "Pesach Osina",
+     "party": "D"
+    },
+    {
+     "name": "Thomas Sullivan",
+     "party": "R"
+    },
+    {
+     "name": "Pesach Osina",
+     "party": "D",
+     "partyLabel": "Democratic Party, Community First Party"
+    },
+    {
+     "name": "Thomas Sullivan",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party, We The People Party"
+    }
+   ]
+  },
+  "24": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "David Weprin",
+     "party": "D"
+    },
+    {
+     "name": "Welson Chang",
+     "party": "R"
+    },
+    {
+     "name": "Welson Chang",
+     "party": "R",
+     "partyLabel": "Republican Party, Queens United Party"
+    }
+   ]
+  },
+  "25": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Nily Rozic",
+     "party": "D"
+    }
+   ]
+  },
+  "26": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Edward Braunstein",
+     "party": "D"
+    },
+    {
+     "name": "Robert Speranza",
+     "party": "R"
+    }
+   ]
+  },
+  "27": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Sam Berger",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Sam Berger",
+     "party": "D",
+     "partyLabel": "Democratic Party, Conservative Party"
+    }
+   ]
+  },
+  "28": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Andrew Hevesi",
+     "party": "D"
+    },
+    {
+     "name": "David Kemp",
+     "party": "O",
+     "partyLabel": "4 Our Immigrants Party"
+    },
+    {
+     "name": "Jonathan Rinaldi",
+     "party": "O",
+     "partyLabel": "No Kings Party"
+    }
+   ]
+  },
+  "29": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Alicia Hyndman",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Alicia Hyndman",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "3": {
+   "candidates": [
+    {
+     "name": "Joshua Slaughter",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Joseph DeStefano",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Joseph DeStefano",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Joshua Slaughter",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "30": {
+   "candidates": [
+    {
+     "name": "Patrick Martinez",
+     "party": "D"
+    },
+    {
+     "name": "Brandon Castro",
+     "party": "R"
+    },
+    {
+     "name": "Brandon Castro",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party, Arts & Culture Party, Reform Party"
+    }
+   ]
+  },
+  "31": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Khaleel Anderson",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Khaleel Anderson",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "32": {
+   "candidates": [
+    {
+     "name": "Nathaniel Hezekiah III",
+     "party": "D"
+    },
+    {
+     "name": "Paul Nichols",
+     "party": "O",
+     "partyLabel": "The Answer Party"
+    }
+   ]
+  },
+  "33": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Clyde Vanel",
+     "party": "D"
+    },
+    {
+     "name": "Oster Bryan",
+     "party": "O",
+     "partyLabel": "Working Families Party"
+    }
+   ]
+  },
+  "34": {
+   "candidates": [
+    {
+     "name": "Brian Romero",
+     "party": "D"
+    },
+    {
+     "name": "Brian Romero",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "35": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Larinda Hooks",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Larinda Hooks",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "36": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Diana Moreno",
+     "party": "D"
+    },
+    {
+     "name": "Edward Lee",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Diana Moreno",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "37": {
+   "candidates": [
+    {
+     "name": "Samantha Kattan",
+     "party": "D"
+    },
+    {
+     "name": "Samantha Kattan",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "38": {
+   "candidates": [
+    {
+     "name": "David Orkin",
+     "party": "D"
+    },
+    {
+     "name": "Ruben Cruz II",
+     "party": "R"
+    },
+    {
+     "name": "David Orkin",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Ruben Cruz II",
+     "party": "R",
+     "partyLabel": "Republican Party, Queens United Party"
+    }
+   ]
+  },
+  "39": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Catalina Cruz",
+     "party": "D"
+    },
+    {
+     "name": "Ramses Frias",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Catalina Cruz",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Ramses Frias",
+     "party": "R",
+     "partyLabel": "Republican Party, 4 Our Immigrants Party"
+    }
+   ]
+  },
+  "4": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Rebecca Kassay",
+     "party": "D"
+    },
+    {
+     "name": "William Sussman",
+     "party": "R"
+    },
+    {
+     "name": "William Sussman",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "40": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Ron Kim",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Ron Kim",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "41": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kalman Yeger",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Kalman Yeger",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Kalman Yeger",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party, Conservative Party"
+    }
+   ]
+  },
+  "42": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Rodneyse Bichotte Hermelyn",
+     "party": "D"
+    },
+    {
+     "name": "Herman Hall",
+     "party": "R"
+    }
+   ]
+  },
+  "43": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Brian A. Cunningham",
+     "party": "D"
+    },
+    {
+     "name": "Anna Shpilkovskaya",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Brian A. Cunningham",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "44": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Robert C. Carroll",
+     "party": "D"
+    },
+    {
+     "name": "Glenn Nocera",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Robert C. Carroll",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Glenn Nocera",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "45": {
+   "candidates": [
+    {
+     "name": "Joey Cohen-Saban",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Michael Novakhov",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Michael Novakhov",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Joey Cohen-Saban",
+     "party": "D",
+     "partyLabel": "Democratic Party, Fight Anti-Semitism Party"
+    }
+   ]
+  },
+  "46": {
+   "candidates": [
+    {
+     "name": "Chris McCreight",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Alec Brook-Krasny",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Alec Brook-Krasny",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Chris McCreight",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party, Affordable & Safe Party"
+    }
+   ]
+  },
+  "47": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "William Colton",
+     "party": "D"
+    },
+    {
+     "name": "John Ricottone",
+     "party": "R"
+    },
+    {
+     "name": "John Ricottone",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party, Stop Mamdani Party"
+    }
+   ]
+  },
+  "48": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Simcha Eichenstein",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Simcha Eichenstein",
+     "party": "D",
+     "partyLabel": "Democratic Party, Conservative Party"
+    }
+   ]
+  },
+  "49": {
+   "candidates": [
+    {
+     "name": "Joyce Xiaoqiong Xie",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Lester Chang",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Lester Chang",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "5": {
+   "candidates": [
+    {
+     "name": "Victoria Russell",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Doug Smith",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Doug Smith",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "50": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Emily Gallagher",
+     "party": "D"
+    }
+   ]
+  },
+  "51": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Marcela Mitaynes",
+     "party": "D"
+    },
+    {
+     "name": "Carla Danielson",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Marcela Mitaynes",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Carla Danielson",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "52": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jo Anne Simon",
+     "party": "D"
+    },
+    {
+     "name": "Brett Wynkoop",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Jo Anne Simon",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Brett Wynkoop",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "53": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Maritza Davila",
+     "party": "D"
+    }
+   ]
+  },
+  "54": {
+   "candidates": [
+    {
+     "name": "Christian Celeste Tate",
+     "party": "D"
+    },
+    {
+     "name": "Christian Celeste Tate",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "55": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Latrice Walker",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Latrice Walker",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "56": {
+   "candidates": [
+    {
+     "name": "Eon Tyrell Huntley",
+     "party": "D"
+    },
+    {
+     "name": "Eon Tyrell Huntley",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "57": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Phara Souffrant Forrest",
+     "party": "D"
+    },
+    {
+     "name": "Yolanda Allison",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Phara Souffrant Forrest",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "58": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Monique Chandler-Waterman",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Monique Chandler-Waterman",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "59": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jaime Williams",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jaime Williams",
+     "party": "D",
+     "partyLabel": "Democratic Party, Conservative Party"
+    },
+    {
+     "name": "Jibreel Jalloh",
+     "party": "O",
+     "partyLabel": "Working Families Party"
+    }
+   ]
+  },
+  "6": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Philip Ramos",
+     "party": "D"
+    },
+    {
+     "name": "Dennis Barravecchio",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Philip Ramos",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Dennis Barravecchio",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "60": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Nikki Lucas",
+     "party": "D"
+    },
+    {
+     "name": "Norman Ramsay",
+     "party": "R"
+    },
+    {
+     "name": "Norman Ramsay",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "61": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Charles Fall",
+     "party": "D"
+    },
+    {
+     "name": "Casey O'Connor-Manasia",
+     "party": "R"
+    }
+   ]
+  },
+  "62": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Michael Reilly",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Michael Reilly",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "63": {
+   "candidates": [
+    {
+     "name": "Matthew Mobilia",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Samuel Pirozzolo",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Samuel Pirozzolo",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "64": {
+   "candidates": [
+    {
+     "name": "Shpetim Qorraj",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Michael Tannousis",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Michael Tannousis",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "65": {
+   "candidates": [
+    {
+     "name": "Illapa Sairitupac",
+     "party": "D"
+    },
+    {
+     "name": "Helen Qiu",
+     "party": "R"
+    }
+   ]
+  },
+  "66": {
+   "candidates": [
+    {
+     "name": "David Siffert",
+     "party": "D"
+    }
+   ]
+  },
+  "67": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Linda Rosenthal",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Linda Rosenthal",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "68": {
+   "candidates": [
+    {
+     "name": "Diana Ayala",
+     "party": "D"
+    },
+    {
+     "name": "Diana Ayala",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "69": {
+   "candidates": [
+    {
+     "name": "Eli Northrup",
+     "party": "D"
+    },
+    {
+     "name": "Eli Northrup",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "7": {
+   "candidates": [
+    {
+     "name": "Patricia Kopp",
+     "party": "D"
+    },
+    {
+     "name": "DawnMarie Kuhn",
+     "party": "R"
+    },
+    {
+     "name": "Patricia Kopp",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "DawnMarie Kuhn",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "70": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jordan Wright",
+     "party": "D"
+    }
+   ]
+  },
+  "71": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Alfred Taylor",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Alfred Taylor",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "72": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Manny De Los Santos",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Manny De Los Santos",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "73": {
+   "candidates": [
+    {
+     "name": "Vanessa Aronson",
+     "party": "D"
+    },
+    {
+     "name": "Vanessa Aronson",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "74": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Keith Powers",
+     "party": "D"
+    },
+    {
+     "name": "Veronica Gonzalez",
+     "party": "R"
+    },
+    {
+     "name": "Veronica Gonzalez",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "75": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Tony Simone",
+     "party": "D"
+    },
+    {
+     "name": "Christine Fontanelli",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Tony Simone",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Christine Fontanelli",
+     "party": "R",
+     "partyLabel": "Republican Party, Save NYC Party"
+    }
+   ]
+  },
+  "76": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Rebecca Seawright",
+     "party": "D"
+    },
+    {
+     "name": "Louis Puliafito",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Rebecca Seawright",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "77": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Landon Dais",
+     "party": "D"
+    }
+   ]
+  },
+  "78": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "George Alvarez",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "George Alvarez",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "79": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Chantel Jackson",
+     "party": "D"
+    },
+    {
+     "name": "Emmanuel Findlay Jr.",
+     "party": "O",
+     "partyLabel": "Conservative Party"
+    }
+   ]
+  },
+  "8": {
+   "candidates": [
+    {
+     "name": "Lynn Trupiano-O'Keefe",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Michael Fitzpatrick",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Michael Fitzpatrick",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "80": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "John Zaccaro Jr.",
+     "party": "D"
+    },
+    {
+     "name": "Denise Smith",
+     "party": "O",
+     "partyLabel": "Conservative Party"
+    }
+   ]
+  },
+  "81": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jeffrey Dinowitz",
+     "party": "D"
+    }
+   ]
+  },
+  "82": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Michael Benedetto",
+     "party": "D"
+    },
+    {
+     "name": "Irene Guanill",
+     "party": "R"
+    },
+    {
+     "name": "Irene Guanill",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party, Vote Affordable Party"
+    }
+   ]
+  },
+  "83": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Carl Heastie",
+     "party": "D"
+    },
+    {
+     "name": "James Washington-Ward",
+     "party": "O",
+     "partyLabel": "Conservative Party"
+    }
+   ]
+  },
+  "84": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Amanda Septimo",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Amanda Septimo",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Tyreek Goodman",
+     "party": "O",
+     "partyLabel": "Conservative Party"
+    }
+   ]
+  },
+  "85": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Emerita Torres",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Emerita Torres",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "86": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Yudelka Tapia",
+     "party": "D"
+    },
+    {
+     "name": "Maria Diaz",
+     "party": "R"
+    },
+    {
+     "name": "Shery Olivo",
+     "party": "O",
+     "partyLabel": "Conservative Party"
+    }
+   ]
+  },
+  "87": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Karines Reyes",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Karines Reyes",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Zenobia Merced-Bonilla",
+     "party": "O",
+     "partyLabel": "Conservative Party"
+    },
+    {
+     "name": "Zakir Choudhury",
+     "party": "O",
+     "partyLabel": "People First Party"
+    }
+   ]
+  },
+  "88": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Amy Paulin",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Amy Paulin",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "89": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "J. Gary Pretlow",
+     "party": "D"
+    }
+   ]
+  },
+  "9": {
+   "candidates": [
+    {
+     "name": "Christopher Walis",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Michael Durso",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Michael Durso",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "90": {
+   "candidates": [
+    {
+     "name": "Frank Jereis",
+     "party": "D"
+    },
+    {
+     "name": "John Isaac",
+     "party": "R"
+    }
+   ]
+  },
+  "91": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Steven Otis",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Steven Otis",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "92": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Maryjane Shimsky",
+     "party": "D"
+    },
+    {
+     "name": "Bob Welch",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Maryjane Shimsky",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Bob Welch",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "93": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Chris Burdick",
+     "party": "D"
+    },
+    {
+     "name": "Braille Diaz",
+     "party": "R"
+    },
+    {
+     "name": "Braille Diaz",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "94": {
+   "candidates": [
+    {
+     "name": "Daniel Guzman",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Matthew Slater",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Matthew Slater",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "95": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Dana Levenberg",
+     "party": "D"
+    },
+    {
+     "name": "Laurie Ryan",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Dana Levenberg",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    },
+    {
+     "name": "Laurie Ryan",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "96": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Patrick Carroll",
+     "party": "D"
+    },
+    {
+     "name": "Brett Yagel",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Patrick Carroll",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Brett Yagel",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "97": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Aron Wieder",
+     "party": "D"
+    },
+    {
+     "name": "Rob Bonomolo",
+     "party": "R"
+    },
+    {
+     "name": "Abraham Klein",
+     "party": "O",
+     "partyLabel": "Conservative Party"
+    }
+   ]
+  },
+  "98": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Karl Brabenec",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Karl Brabenec",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "99": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Christopher Eachus",
+     "party": "D"
+    },
+    {
+     "name": "Richard Vargus",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Christopher Eachus",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    },
+    {
+     "name": "Richard Vargus",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  }
+ },
+ "meta": {
+  "fetched": "2026-10-10",
+  "source": "Ballotpedia chamber election pages, 2026"
+ },
+ "senate": {
+  "1": {
+   "candidates": [
+    {
+     "name": "Chris Murray",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Anthony Palumbo",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Anthony Palumbo",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Chris Murray",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "10": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "James Sanders Jr.",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "James Sanders Jr.",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "11": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Toby Ann Stavisky",
+     "party": "D"
+    },
+    {
+     "name": "Pamela Michos",
+     "party": "R"
+    },
+    {
+     "name": "Pamela Michos",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "12": {
+   "candidates": [
+    {
+     "name": "Aber Kawas",
+     "party": "D"
+    },
+    {
+     "name": "Han Khon To",
+     "party": "R"
+    }
+   ]
+  },
+  "13": {
+   "candidates": [
+    {
+     "name": "Jessica Gonz\u00e1lez-Rojas",
+     "party": "D"
+    },
+    {
+     "name": "John Healy",
+     "party": "R"
+    },
+    {
+     "name": "Jessica Gonz\u00e1lez-Rojas",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "14": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Leroy Comrie",
+     "party": "D"
+    }
+   ]
+  },
+  "15": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Joseph Addabbo",
+     "party": "D"
+    },
+    {
+     "name": "Danniel Maio",
+     "party": "O",
+     "partyLabel": "Conservative Party"
+    }
+   ]
+  },
+  "16": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "John Liu",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "John Liu",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "17": {
+   "candidates": [
+    {
+     "name": "Larry He",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Steve Chan",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Steve Chan",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party, Stop Mamdani Party"
+    }
+   ]
+  },
+  "18": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Julia Salazar",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Julia Salazar",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "19": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Roxanne Persaud",
+     "party": "D"
+    }
+   ]
+  },
+  "2": {
+   "candidates": [
+    {
+     "name": "Harjot Singh",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mario Mattera",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Mario Mattera",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "20": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Zellnor Myrie",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Zellnor Myrie",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "21": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kevin Parker",
+     "party": "D"
+    },
+    {
+     "name": "Ronald Seifert",
+     "party": "R"
+    },
+    {
+     "name": "Ronald Seifert",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "22": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Sam Sutton",
+     "party": "D"
+    },
+    {
+     "name": "Nachman Caller",
+     "party": "R"
+    },
+    {
+     "name": "Nachman Caller",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "23": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jessica Scarcella-Spanton",
+     "party": "D"
+    },
+    {
+     "name": "Ruslan Shamal",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Jessica Scarcella-Spanton",
+     "party": "D",
+     "partyLabel": "Democratic Party, Affordable & Safe Party"
+    },
+    {
+     "name": "Ruslan Shamal",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "24": {
+   "candidates": [
+    {
+     "name": "Alexis Rodriguez",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Andrew Lanza",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Andrew Lanza",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "25": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jabari Brisport",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jabari Brisport",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "26": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Andrew Gounardes",
+     "party": "D"
+    },
+    {
+     "name": "Tom Stanten",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Andrew Gounardes",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Tom Stanten",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "27": {
+   "candidates": [
+    {
+     "name": "Grace Lee",
+     "party": "D"
+    },
+    {
+     "name": "Jason Murillo",
+     "party": "R"
+    },
+    {
+     "name": "Grace Lee",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Jason Murillo",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "28": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Liz Krueger",
+     "party": "D"
+    },
+    {
+     "name": "Alina Bonsell",
+     "party": "R"
+    },
+    {
+     "name": "Alina Bonsell",
+     "party": "R",
+     "partyLabel": "Republican Party, Block Mamdani Party"
+    }
+   ]
+  },
+  "29": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jose M. Serrano",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jose M. Serrano",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "3": {
+   "candidates": [
+    {
+     "name": "Antonio Vargas-Ayala",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Dean Murray",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Dean Murray",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "30": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Cordell Cleare",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Cordell Cleare",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "31": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Robert Jackson",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Robert Jackson",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "32": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Luis Sep\u00falveda",
+     "party": "D"
+    }
+   ]
+  },
+  "33": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "J. Gustavo Rivera",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "J. Gustavo Rivera",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "34": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Nathalia Fernandez",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Nathalia Fernandez",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Adrian Romero",
+     "party": "O",
+     "partyLabel": "Conservative Party"
+    }
+   ]
+  },
+  "35": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Andrea Stewart-Cousins",
+     "party": "D"
+    },
+    {
+     "name": "Anthony Merante",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Andrea Stewart-Cousins",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "36": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jamaal Bailey",
+     "party": "D"
+    },
+    {
+     "name": "Grace Marrero",
+     "party": "O",
+     "partyLabel": "Conservative Party"
+    }
+   ]
+  },
+  "37": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Shelley Mayer",
+     "party": "D"
+    },
+    {
+     "name": "Thomas Fix Jr.",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Shelley Mayer",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "38": {
+   "candidates": [
+    {
+     "name": "Joseph Rand",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "William Weber Jr.",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "William Weber Jr.",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Joseph Rand",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "39": {
+   "candidates": [
+    {
+     "name": "Lisa Kaul",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Robert Rolison",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Robert Rolison",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Lisa Kaul",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "4": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Monica Martinez",
+     "party": "D"
+    },
+    {
+     "name": "Brianne Wakefield",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Monica Martinez",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Brianne Wakefield",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "40": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Peter Harckham",
+     "party": "D"
+    },
+    {
+     "name": "Sergio Esposito",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Peter Harckham",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Sergio Esposito",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "41": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Michelle Hinchey",
+     "party": "D"
+    },
+    {
+     "name": "Patrick Sheehan",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Michelle Hinchey",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Patrick Sheehan",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "42": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "James Skoufis",
+     "party": "D"
+    },
+    {
+     "name": "Jennifer Figueroa",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "James Skoufis",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Joshua Blumenthal",
+     "party": "O",
+     "partyLabel": "Conservative Party"
+    }
+   ]
+  },
+  "43": {
+   "candidates": [
+    {
+     "name": "Devin Lander",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jacob Ashby",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Jacob Ashby",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Devin Lander",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "44": {
+   "candidates": [
+    {
+     "name": "Sarah Rogerson",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "James Tedisco",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "James Tedisco",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party, Vote Affordable Party"
+    },
+    {
+     "name": "Sarah Rogerson",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "45": {
+   "candidates": [
+    {
+     "name": "Melissa Seale",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Dan Stec",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Dan Stec",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Melissa Seale",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "46": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Patricia Fahy",
+     "party": "D"
+    },
+    {
+     "name": "Martha McHugh",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Patricia Fahy",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Martha McHugh",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "47": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Erik Bottcher",
+     "party": "D"
+    },
+    {
+     "name": "Charlotte Friedman",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Erik Bottcher",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "48": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Rachel May",
+     "party": "D"
+    },
+    {
+     "name": "Richard McCarron",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Rachel May",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Richard McCarron",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "49": {
+   "candidates": [
+    {
+     "name": "Cassie Robbins-Forbus",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mark Walczyk",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Mark Walczyk",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Cassie Robbins-Forbus",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "5": {
+   "candidates": [
+    {
+     "name": "Andrew Piddoubny",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Steven Rhoads",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Steven Rhoads",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "50": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Christopher Ryan",
+     "party": "D"
+    },
+    {
+     "name": "James Corl",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Christopher Ryan",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "James Corl",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "51": {
+   "candidates": [
+    {
+     "name": "Michele Frazier",
+     "party": "D"
+    },
+    {
+     "name": "Christopher Tague",
+     "party": "R"
+    },
+    {
+     "name": "Michele Frazier",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Christopher Tague",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "52": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Lea Webb",
+     "party": "D"
+    },
+    {
+     "name": "Mike Bolles",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Lea Webb",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Mike Bolles",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "53": {
+   "candidates": [
+    {
+     "name": "Mandi Drake",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Joseph Griffo",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Joseph Griffo",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Mandi Drake",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "54": {
+   "candidates": [
+    {
+     "name": "Michael Mills",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Pamela Helming",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Pamela Helming",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "55": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Samra Brouk",
+     "party": "D"
+    },
+    {
+     "name": "Chris Brown",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Samra Brouk",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Chris Brown",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "56": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jeremy Cooney",
+     "party": "D"
+    },
+    {
+     "name": "Orlando Rivera",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Jeremy Cooney",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Orlando Rivera",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "57": {
+   "candidates": [
+    {
+     "name": "Victoria Guite-Williams",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "George Borrello",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "George Borrello",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Victoria Guite-Williams",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "58": {
+   "candidates": [
+    {
+     "name": "James Bobreski",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Thomas O'Mara",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Thomas O'Mara",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "59": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kristen Gonzalez",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Kristen Gonzalez",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "6": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Siela Bynoe",
+     "party": "D"
+    },
+    {
+     "name": "Matthew Capp",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Siela Bynoe",
+     "party": "D",
+     "partyLabel": "Working Families Party, Democratic Party"
+    },
+    {
+     "name": "Matthew Capp",
+     "party": "R",
+     "partyLabel": "Conservative Party, Republican Party"
+    }
+   ]
+  },
+  "60": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Patrick Gallivan",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Patrick Gallivan",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "61": {
+   "candidates": [
+    {
+     "name": "Jonathan Rivera",
+     "party": "D"
+    },
+    {
+     "name": "Jonathan Rivera",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "62": {
+   "candidates": [
+    {
+     "name": "Thomas Arida",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Robert Ortt",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Robert Ortt",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    },
+    {
+     "name": "Thomas Arida",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "63": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "April Baskin",
+     "party": "D"
+    },
+    {
+     "name": "Geoffrey Szymanski",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "April Baskin",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Geoffrey Szymanski",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "7": {
+   "candidates": [
+    {
+     "name": "Rory Lancman",
+     "party": "D"
+    },
+    {
+     "name": "Jake Blumencranz",
+     "party": "R"
+    },
+    {
+     "name": "Jake Blumencranz",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "8": {
+   "candidates": [
+    {
+     "name": "Josh Taveras",
+     "party": "D"
+    },
+    {
+     "name": "Jarett Gandolfo",
+     "party": "R"
+    },
+    {
+     "name": "Jarett Gandolfo",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  },
+  "9": {
+   "candidates": [
+    {
+     "name": "Lisa Vider",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Patricia Canzoneri-Fitzpatrick",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Patricia Canzoneri-Fitzpatrick",
+     "party": "R",
+     "partyLabel": "Republican Party, Conservative Party"
+    }
+   ]
+  }
+ }
+}

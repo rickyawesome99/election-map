@@ -1,0 +1,2235 @@
+{
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 99.3,
+      "key": "1",
+      "popPct": 93.0
+     },
+     {
+      "areaPct": 0.6,
+      "key": "2",
+      "popPct": 7.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Otoe",
+      "popPct": 41.1
+     },
+     {
+      "county": "Richardson",
+      "popPct": 20.4
+     },
+     {
+      "county": "Nemaha",
+      "popPct": 18.3
+     },
+     {
+      "county": "Johnson",
+      "popPct": 13.7
+     },
+     {
+      "county": "Pawnee",
+      "popPct": 6.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 38691,
+    "pres2020New": 42.9,
+    "pres2020Old": 43.0,
+    "retainedAreaPct": 99.3,
+    "retainedPopPct": 93.0,
+    "text": "Kept 93% of its population from the 2016\u20132020 SD-1; gained the rest from the old SD-2 (7%). Spans Otoe, Richardson, Nemaha, Johnson and 1 more counties. 2020 presidential margin R+43.0 on the 2016\u20132020 lines \u2192 R+42.9 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 75.3,
+      "key": "18",
+      "popPct": 74.4
+     },
+     {
+      "areaPct": 24.7,
+      "key": "10",
+      "popPct": 25.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 38482,
+    "pres2020New": -8.4,
+    "pres2020Old": -2.8,
+    "retainedAreaPct": 24.7,
+    "retainedPopPct": 25.6,
+    "text": "A new footprint: only 26% of its population was in the 2016\u20132020 SD-10; it draws from the old SD-18 (74%). Entirely in Douglas County. 2020 presidential margin D+2.8 on the 2016\u20132020 lines \u2192 D+8.4 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 90.1,
+      "key": "11",
+      "popPct": 89.8
+     },
+     {
+      "areaPct": 3.7,
+      "key": "8",
+      "popPct": 5.8
+     },
+     {
+      "areaPct": 5.2,
+      "key": "13",
+      "popPct": 2.7
+     },
+     {
+      "areaPct": 0.9,
+      "key": "9",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 40358,
+    "pres2020New": -70.9,
+    "pres2020Old": -72.3,
+    "retainedAreaPct": 90.1,
+    "retainedPopPct": 89.8,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-11; gained the rest from the old SD-8 (6%), the old SD-13 (3%), the old SD-9 (2%). Entirely in Douglas County. 2020 presidential margin D+72.3 on the 2016\u20132020 lines \u2192 D+70.9 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 82.4,
+      "key": "12",
+      "popPct": 89.1
+     },
+     {
+      "areaPct": 16.8,
+      "key": "20",
+      "popPct": 9.3
+     },
+     {
+      "areaPct": 0.8,
+      "key": "31",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 99.1
+     },
+     {
+      "county": "Sarpy",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 40904,
+    "pres2020New": -2.5,
+    "pres2020Old": -2.2,
+    "retainedAreaPct": 82.4,
+    "retainedPopPct": 89.1,
+    "text": "Kept 89% of its population from the 2016\u20132020 SD-12; gained the rest from the old SD-20 (9%), the old SD-31 (2%). Spans Douglas, Sarpy counties. 2020 presidential margin D+2.2 on the 2016\u20132020 lines \u2192 D+2.5 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 78.3,
+      "key": "13",
+      "popPct": 83.5
+     },
+     {
+      "areaPct": 20.6,
+      "key": "10",
+      "popPct": 11.5
+     },
+     {
+      "areaPct": 1.1,
+      "key": "11",
+      "popPct": 5.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45087,
+    "pres2020New": -28.7,
+    "pres2020Old": -30.7,
+    "retainedAreaPct": 78.3,
+    "retainedPopPct": 83.5,
+    "text": "Kept 84% of its population from the 2016\u20132020 SD-13; gained the rest from the old SD-10 (12%), the old SD-11 (5%). Entirely in Douglas County. 2020 presidential margin D+30.7 on the 2016\u20132020 lines \u2192 D+28.7 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 86.9,
+      "key": "14",
+      "popPct": 94.5
+     },
+     {
+      "areaPct": 10.3,
+      "key": "3",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 2.1,
+      "key": "2",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sarpy",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 38489,
+    "pres2020New": 8.4,
+    "pres2020Old": 8.6,
+    "retainedAreaPct": 86.9,
+    "retainedPopPct": 94.5,
+    "text": "Kept 94% of its population from the 2016\u20132020 SD-14; gained the rest from the old SD-3 (4%), the old SD-2 (2%). Entirely in Sarpy County. 2020 presidential margin R+8.6 on the 2016\u20132020 lines \u2192 R+8.4 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 89.7,
+      "key": "15",
+      "popPct": 83.3
+     },
+     {
+      "areaPct": 9.7,
+      "key": "39",
+      "popPct": 15.8
+     },
+     {
+      "areaPct": 0.6,
+      "key": "10",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dodge",
+      "popPct": 83.2
+     },
+     {
+      "county": "Douglas",
+      "popPct": 16.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Douglas",
+      "popPct": 16.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 44604,
+    "pres2020New": 32.8,
+    "pres2020Old": 32.2,
+    "retainedAreaPct": 89.7,
+    "retainedPopPct": 83.3,
+    "text": "Kept 83% of its population from the 2016\u20132020 SD-15; gained the rest from the old SD-39 (16%), the old SD-10 (1%). Counties: gained Douglas (17%). 2020 presidential margin R+32.2 on the 2016\u20132020 lines \u2192 R+32.8 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 84.5,
+      "key": "16",
+      "popPct": 91.7
+     },
+     {
+      "areaPct": 14.4,
+      "key": "22",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 1.0,
+      "key": "19",
+      "popPct": 3.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 52.2
+     },
+     {
+      "county": "Cuming",
+      "popPct": 22.6
+     },
+     {
+      "county": "Burt",
+      "popPct": 16.8
+     },
+     {
+      "county": "Stanton",
+      "popPct": 8.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Stanton",
+      "popPct": 8.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39909,
+    "pres2020New": 46.2,
+    "pres2020Old": 44.6,
+    "retainedAreaPct": 84.5,
+    "retainedPopPct": 91.7,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-16; gained the rest from the old SD-22 (5%), the old SD-19 (3%). Counties: gained Stanton (8%). 2020 presidential margin R+44.6 on the 2016\u20132020 lines \u2192 R+46.2 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 92.5,
+      "key": "17",
+      "popPct": 95.3
+     },
+     {
+      "areaPct": 7.5,
+      "key": "40",
+      "popPct": 4.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dakota",
+      "popPct": 54.0
+     },
+     {
+      "county": "Wayne",
+      "popPct": 24.2
+     },
+     {
+      "county": "Thurston",
+      "popPct": 17.0
+     },
+     {
+      "county": "Dixon",
+      "popPct": 4.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dixon",
+      "popPct": 4.8
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39961,
+    "pres2020New": 25.4,
+    "pres2020Old": 24.6,
+    "retainedAreaPct": 92.5,
+    "retainedPopPct": 95.3,
+    "text": "Kept 95% of its population from the 2016\u20132020 SD-17; gained the rest from the old SD-40 (5%). Counties: gained Dixon (5%). 2020 presidential margin R+24.6 on the 2016\u20132020 lines \u2192 R+25.4 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 87.1,
+      "key": "10",
+      "popPct": 66.0
+     },
+     {
+      "areaPct": 7.4,
+      "key": "18",
+      "popPct": 29.7
+     },
+     {
+      "areaPct": 1.1,
+      "key": "4",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 40326,
+    "pres2020New": 1.3,
+    "pres2020Old": -8.0,
+    "retainedAreaPct": 7.4,
+    "retainedPopPct": 29.7,
+    "text": "A new footprint: only 30% of its population was in the 2016\u20132020 SD-18; it draws from the old SD-10 (66%), the old SD-4 (4%). Entirely in Douglas County. 2020 presidential margin D+8.0 on the 2016\u20132020 lines \u2192 R+1.3 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 66.7,
+      "key": "19",
+      "popPct": 89.9
+     },
+     {
+      "areaPct": 33.3,
+      "key": "41",
+      "popPct": 10.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Madison",
+      "popPct": 89.8
+     },
+     {
+      "county": "Pierce",
+      "popPct": 10.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pierce",
+      "popPct": 10.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Stanton",
+      "popPct": 6.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 39589,
+    "pres2020New": 56.5,
+    "pres2020Old": 54.0,
+    "retainedAreaPct": 66.7,
+    "retainedPopPct": 89.9,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-19; gained the rest from the old SD-41 (10%). Counties: gained Pierce (10%); lost Stanton. 2020 presidential margin R+54.0 on the 2016\u20132020 lines \u2192 R+56.5 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 91.4,
+      "key": "2",
+      "popPct": 64.4
+     },
+     {
+      "areaPct": 7.7,
+      "key": "25",
+      "popPct": 18.7
+     },
+     {
+      "areaPct": 0.9,
+      "key": "26",
+      "popPct": 16.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 62.6
+     },
+     {
+      "county": "Lancaster",
+      "popPct": 35.7
+     },
+     {
+      "county": "Sarpy",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lancaster",
+      "popPct": 35.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Otoe",
+      "popPct": 6.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 41318,
+    "pres2020New": 22.9,
+    "pres2020Old": 32.2,
+    "retainedAreaPct": 91.4,
+    "retainedPopPct": 64.4,
+    "text": "Kept 64% of its population from the 2016\u20132020 SD-2; gained the rest from the old SD-25 (19%), the old SD-26 (17%). Counties: gained Lancaster (36%); lost Otoe. 2020 presidential margin R+32.2 on the 2016\u20132020 lines \u2192 R+22.9 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 84.5,
+      "key": "20",
+      "popPct": 85.3
+     },
+     {
+      "areaPct": 7.5,
+      "key": "6",
+      "popPct": 7.8
+     },
+     {
+      "areaPct": 6.5,
+      "key": "4",
+      "popPct": 5.5
+     },
+     {
+      "areaPct": 1.5,
+      "key": "31",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 41747,
+    "pres2020New": -8.1,
+    "pres2020Old": -9.3,
+    "retainedAreaPct": 84.5,
+    "retainedPopPct": 85.3,
+    "text": "Kept 85% of its population from the 2016\u20132020 SD-20; gained the rest from the old SD-6 (8%), the old SD-4 (6%), the old SD-31 (1%). Entirely in Douglas County. 2020 presidential margin D+9.3 on the 2016\u20132020 lines \u2192 D+8.1 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 71.5,
+      "key": "21",
+      "popPct": 76.1
+     },
+     {
+      "areaPct": 25.9,
+      "key": "25",
+      "popPct": 12.6
+     },
+     {
+      "areaPct": 0.5,
+      "key": "27",
+      "popPct": 6.0
+     },
+     {
+      "areaPct": 0.1,
+      "key": "46",
+      "popPct": 4.7
+     },
+     {
+      "areaPct": 1.9,
+      "key": "32",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lancaster",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 41554,
+    "pres2020New": 9.2,
+    "pres2020Old": 3.0,
+    "retainedAreaPct": 71.5,
+    "retainedPopPct": 76.1,
+    "text": "Kept 76% of its population from the 2016\u20132020 SD-21; gained the rest from the old SD-25 (13%), the old SD-27 (6%), the old SD-46 (5%) and 1 more. Entirely in Lancaster County. 2020 presidential margin R+3.0 on the 2016\u20132020 lines \u2192 R+9.2 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 97.9,
+      "key": "22",
+      "popPct": 96.9
+     },
+     {
+      "areaPct": 2.1,
+      "key": "19",
+      "popPct": 3.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Platte",
+      "popPct": 92.7
+     },
+     {
+      "county": "Stanton",
+      "popPct": 6.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Colfax",
+      "popPct": 4.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 36829,
+    "pres2020New": 57.5,
+    "pres2020Old": 58.7,
+    "retainedAreaPct": 97.9,
+    "retainedPopPct": 96.9,
+    "text": "Kept 97% of its population from the 2016\u20132020 SD-22; gained the rest from the old SD-19 (3%). Counties: lost Colfax. 2020 presidential margin R+58.7 on the 2016\u20132020 lines \u2192 R+57.5 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 94.4,
+      "key": "23",
+      "popPct": 96.0
+     },
+     {
+      "areaPct": 5.6,
+      "key": "22",
+      "popPct": 4.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Saunders",
+      "popPct": 55.9
+     },
+     {
+      "county": "Colfax",
+      "popPct": 26.8
+     },
+     {
+      "county": "Butler",
+      "popPct": 17.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39608,
+    "pres2020New": 47.5,
+    "pres2020Old": 47.1,
+    "retainedAreaPct": 94.4,
+    "retainedPopPct": 96.0,
+    "text": "Kept 96% of its population from the 2016\u20132020 SD-23; gained the rest from the old SD-22 (4%). Spans Saunders, Colfax, Butler counties. 2020 presidential margin R+47.1 on the 2016\u20132020 lines \u2192 R+47.5 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 91.7,
+      "key": "24",
+      "popPct": 95.8
+     },
+     {
+      "areaPct": 8.3,
+      "key": "23",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Seward",
+      "popPct": 45.6
+     },
+     {
+      "county": "York",
+      "popPct": 36.5
+     },
+     {
+      "county": "Polk",
+      "popPct": 13.5
+     },
+     {
+      "county": "Butler",
+      "popPct": 4.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Butler",
+      "popPct": 4.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 38569,
+    "pres2020New": 50.1,
+    "pres2020Old": 49.7,
+    "retainedAreaPct": 91.7,
+    "retainedPopPct": 95.8,
+    "text": "Kept 96% of its population from the 2016\u20132020 SD-24; gained the rest from the old SD-23 (4%). Counties: gained Butler (4%). 2020 presidential margin R+49.7 on the 2016\u20132020 lines \u2192 R+50.1 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 30.5,
+      "key": "25",
+      "popPct": 66.3
+     },
+     {
+      "areaPct": 68.2,
+      "key": "30",
+      "popPct": 22.0
+     },
+     {
+      "areaPct": 1.3,
+      "key": "29",
+      "popPct": 11.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lancaster",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39348,
+    "pres2020New": 4.2,
+    "pres2020Old": 3.3,
+    "retainedAreaPct": 30.5,
+    "retainedPopPct": 66.3,
+    "text": "Kept 66% of its population from the 2016\u20132020 SD-25; gained the rest from the old SD-30 (22%), the old SD-29 (12%). Entirely in Lancaster County. 2020 presidential margin R+3.3 on the 2016\u20132020 lines \u2192 R+4.2 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 82.0,
+      "key": "26",
+      "popPct": 90.4
+     },
+     {
+      "areaPct": 17.9,
+      "key": "46",
+      "popPct": 9.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lancaster",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39664,
+    "pres2020New": -13.3,
+    "pres2020Old": -9.6,
+    "retainedAreaPct": 82.0,
+    "retainedPopPct": 90.4,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-26; gained the rest from the old SD-46 (10%). Entirely in Lancaster County. 2020 presidential margin D+9.6 on the 2016\u20132020 lines \u2192 D+13.3 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 23.2,
+      "key": "27",
+      "popPct": 66.7
+     },
+     {
+      "areaPct": 7.2,
+      "key": "21",
+      "popPct": 19.2
+     },
+     {
+      "areaPct": 32.1,
+      "key": "30",
+      "popPct": 9.6
+     },
+     {
+      "areaPct": 37.4,
+      "key": "32",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lancaster",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 38719,
+    "pres2020New": -8.7,
+    "pres2020Old": -16.5,
+    "retainedAreaPct": 23.2,
+    "retainedPopPct": 66.7,
+    "text": "Kept 67% of its population from the 2016\u20132020 SD-27; gained the rest from the old SD-21 (19%), the old SD-30 (10%), the old SD-32 (4%). Entirely in Lancaster County. 2020 presidential margin D+16.5 on the 2016\u20132020 lines \u2192 D+8.7 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 72.7,
+      "key": "28",
+      "popPct": 76.2
+     },
+     {
+      "areaPct": 9.6,
+      "key": "27",
+      "popPct": 14.5
+     },
+     {
+      "areaPct": 14.7,
+      "key": "25",
+      "popPct": 6.5
+     },
+     {
+      "areaPct": 2.9,
+      "key": "46",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lancaster",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 37159,
+    "pres2020New": -35.4,
+    "pres2020Old": -33.9,
+    "retainedAreaPct": 72.7,
+    "retainedPopPct": 76.2,
+    "text": "Kept 76% of its population from the 2016\u20132020 SD-28; gained the rest from the old SD-27 (14%), the old SD-25 (6%), the old SD-46 (3%). Entirely in Lancaster County. 2020 presidential margin D+33.9 on the 2016\u20132020 lines \u2192 D+35.4 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 48.3,
+      "key": "29",
+      "popPct": 57.5
+     },
+     {
+      "areaPct": 24.7,
+      "key": "28",
+      "popPct": 25.0
+     },
+     {
+      "areaPct": 15.5,
+      "key": "27",
+      "popPct": 11.9
+     },
+     {
+      "areaPct": 11.5,
+      "key": "25",
+      "popPct": 5.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lancaster",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 42156,
+    "pres2020New": -23.7,
+    "pres2020Old": -16.2,
+    "retainedAreaPct": 48.3,
+    "retainedPopPct": 57.5,
+    "text": "Kept 58% of its population from the 2016\u20132020 SD-29; gained the rest from the old SD-28 (25%), the old SD-27 (12%), the old SD-25 (6%). Entirely in Lancaster County. 2020 presidential margin D+16.2 on the 2016\u20132020 lines \u2192 D+23.7 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 90.3,
+      "key": "3",
+      "popPct": 86.1
+     },
+     {
+      "areaPct": 9.3,
+      "key": "14",
+      "popPct": 13.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sarpy",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 40306,
+    "pres2020New": 6.8,
+    "pres2020Old": 7.9,
+    "retainedAreaPct": 90.3,
+    "retainedPopPct": 86.1,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-3; gained the rest from the old SD-14 (14%). Entirely in Sarpy County. 2020 presidential margin R+7.9 on the 2016\u20132020 lines \u2192 R+6.8 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "30",
+      "popPct": 65.2
+     },
+     {
+      "areaPct": 0.3,
+      "key": "29",
+      "popPct": 26.8
+     },
+     {
+      "areaPct": 0.1,
+      "key": "27",
+      "popPct": 8.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lancaster",
+      "popPct": 50.2
+     },
+     {
+      "county": "Gage",
+      "popPct": 49.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43571,
+    "pres2020New": 18.8,
+    "pres2020Old": 28.2,
+    "retainedAreaPct": 99.5,
+    "retainedPopPct": 65.2,
+    "text": "Kept 65% of its population from the 2016\u20132020 SD-30; gained the rest from the old SD-29 (27%), the old SD-27 (8%). Spans Lancaster, Gage counties. 2020 presidential margin R+28.2 on the 2016\u20132020 lines \u2192 R+18.8 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 69.9,
+      "key": "31",
+      "popPct": 72.7
+     },
+     {
+      "areaPct": 24.7,
+      "key": "39",
+      "popPct": 20.7
+     },
+     {
+      "areaPct": 5.3,
+      "key": "12",
+      "popPct": 6.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 41068,
+    "pres2020New": 8.1,
+    "pres2020Old": 9.7,
+    "retainedAreaPct": 69.9,
+    "retainedPopPct": 72.7,
+    "text": "Kept 73% of its population from the 2016\u20132020 SD-31; gained the rest from the old SD-39 (21%), the old SD-12 (6%). Entirely in Douglas County. 2020 presidential margin R+9.7 on the 2016\u20132020 lines \u2192 R+8.1 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 97.7,
+      "key": "32",
+      "popPct": 92.0
+     },
+     {
+      "areaPct": 2.3,
+      "key": "30",
+      "popPct": 8.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Saline",
+      "popPct": 35.8
+     },
+     {
+      "county": "Lancaster",
+      "popPct": 19.3
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 18.2
+     },
+     {
+      "county": "Fillmore",
+      "popPct": 13.9
+     },
+     {
+      "county": "Thayer",
+      "popPct": 12.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39815,
+    "pres2020New": 40.9,
+    "pres2020Old": 40.2,
+    "retainedAreaPct": 97.7,
+    "retainedPopPct": 92.0,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-32; gained the rest from the old SD-30 (8%). Spans Saline, Lancaster, Jefferson, Fillmore and 1 more counties. 2020 presidential margin R+40.2 on the 2016\u20132020 lines \u2192 R+40.9 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 36.9,
+      "key": "33",
+      "popPct": 76.7
+     },
+     {
+      "areaPct": 63.1,
+      "key": "38",
+      "popPct": 23.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Adams",
+      "popPct": 76.8
+     },
+     {
+      "county": "Kearney",
+      "popPct": 16.3
+     },
+     {
+      "county": "Phelps",
+      "popPct": 6.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kearney",
+      "popPct": 16.3
+     },
+     {
+      "county": "Phelps",
+      "popPct": 6.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hall",
+      "popPct": 14.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 40659,
+    "pres2020New": 46.7,
+    "pres2020Old": 43.1,
+    "retainedAreaPct": 36.9,
+    "retainedPopPct": 76.7,
+    "text": "Kept 77% of its population from the 2016\u20132020 SD-33; gained the rest from the old SD-38 (23%). Counties: gained Kearney (16%), Phelps (7%); lost Hall. 2020 presidential margin R+43.1 on the 2016\u20132020 lines \u2192 R+46.7 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "34",
+      "popPct": 87.6
+     },
+     {
+      "areaPct": 0.2,
+      "key": "35",
+      "popPct": 12.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hall",
+      "popPct": 42.5
+     },
+     {
+      "county": "Hamilton",
+      "popPct": 26.5
+     },
+     {
+      "county": "Merrick",
+      "popPct": 21.5
+     },
+     {
+      "county": "Nance",
+      "popPct": 9.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 35630,
+    "pres2020New": 52.0,
+    "pres2020Old": 52.7,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 87.6,
+    "text": "Kept 88% of its population from the 2016\u20132020 SD-34; gained the rest from the old SD-35 (12%). Spans Hall, Hamilton, Merrick, Nance counties. 2020 presidential margin R+52.7 on the 2016\u20132020 lines \u2192 R+52.0 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 56.8,
+      "key": "35",
+      "popPct": 91.4
+     },
+     {
+      "areaPct": 43.2,
+      "key": "34",
+      "popPct": 8.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hall",
+      "popPct": 99.3
+     },
+     {
+      "county": "Merrick",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 37470,
+    "pres2020New": 23.2,
+    "pres2020Old": 24.3,
+    "retainedAreaPct": 56.8,
+    "retainedPopPct": 91.4,
+    "text": "Kept 91% of its population from the 2016\u20132020 SD-35; gained the rest from the old SD-34 (9%). Spans Hall, Merrick counties. 2020 presidential margin R+24.3 on the 2016\u20132020 lines \u2192 R+23.2 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 21.2,
+      "key": "49",
+      "popPct": 37.3
+     },
+     {
+      "areaPct": 65.9,
+      "key": "2",
+      "popPct": 24.2
+     },
+     {
+      "areaPct": 1.4,
+      "key": "39",
+      "popPct": 16.1
+     },
+     {
+      "areaPct": 4.1,
+      "key": "3",
+      "popPct": 11.9
+     },
+     {
+      "areaPct": 7.4,
+      "key": "45",
+      "popPct": 10.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sarpy",
+      "popPct": 83.6
+     },
+     {
+      "county": "Douglas",
+      "popPct": 16.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Sarpy",
+      "popPct": 83.6
+     },
+     {
+      "county": "Douglas",
+      "popPct": 16.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Dawson",
+      "popPct": 63.2
+     },
+     {
+      "county": "Custer",
+      "popPct": 27.7
+     },
+     {
+      "county": "Buffalo",
+      "popPct": 9.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 48193,
+    "pres2020New": 20.8,
+    "pres2020Old": 56.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-36; it draws from the old SD-49 (37%), the old SD-2 (24%), the old SD-39 (16%) and 2 more. Counties: gained Sarpy (84%), Douglas (16%); lost Dawson, Custer, Buffalo. 2020 presidential margin R+56.0 on the 2016\u20132020 lines \u2192 R+20.8 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 96.7,
+      "key": "37",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Buffalo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 38417,
+    "pres2020New": 36.1,
+    "pres2020Old": 38.5,
+    "retainedAreaPct": 96.7,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Buffalo County.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 54.3,
+      "key": "38",
+      "popPct": 55.2
+     },
+     {
+      "areaPct": 45.7,
+      "key": "44",
+      "popPct": 44.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Red Willow",
+      "popPct": 26.0
+     },
+     {
+      "county": "Phelps",
+      "popPct": 15.1
+     },
+     {
+      "county": "Clay",
+      "popPct": 14.8
+     },
+     {
+      "county": "Furnas",
+      "popPct": 11.3
+     },
+     {
+      "county": "Nuckolls",
+      "popPct": 10.0
+     },
+     {
+      "county": "Webster",
+      "popPct": 8.3
+     },
+     {
+      "county": "Harlan",
+      "popPct": 7.5
+     },
+     {
+      "county": "Franklin",
+      "popPct": 7.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Red Willow",
+      "popPct": 26.0
+     },
+     {
+      "county": "Furnas",
+      "popPct": 11.3
+     },
+     {
+      "county": "Harlan",
+      "popPct": 7.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kearney",
+      "popPct": 17.9
+     },
+     {
+      "county": "Buffalo",
+      "popPct": 13.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 41096,
+    "pres2020New": 65.6,
+    "pres2020Old": 63.8,
+    "retainedAreaPct": 54.3,
+    "retainedPopPct": 55.2,
+    "text": "Kept 55% of its population from the 2016\u20132020 SD-38; gained the rest from the old SD-44 (45%). Counties: gained Red Willow (26%), Furnas (11%), Harlan (8%); lost Kearney, Buffalo. 2020 presidential margin R+63.8 on the 2016\u20132020 lines \u2192 R+65.6 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 96.5,
+      "key": "39",
+      "popPct": 89.8
+     },
+     {
+      "areaPct": 1.3,
+      "key": "4",
+      "popPct": 9.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39111,
+    "pres2020New": 22.5,
+    "pres2020Old": 21.0,
+    "retainedAreaPct": 96.5,
+    "retainedPopPct": 89.8,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-39; gained the rest from the old SD-4 (10%). Entirely in Douglas County. 2020 presidential margin R+21.0 on the 2016\u20132020 lines \u2192 R+22.5 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 79.5,
+      "key": "4",
+      "popPct": 80.7
+     },
+     {
+      "areaPct": 13.4,
+      "key": "31",
+      "popPct": 16.8
+     },
+     {
+      "areaPct": 7.0,
+      "key": "39",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39874,
+    "pres2020New": 8.6,
+    "pres2020Old": 7.5,
+    "retainedAreaPct": 79.5,
+    "retainedPopPct": 80.7,
+    "text": "Kept 81% of its population from the 2016\u20132020 SD-4; gained the rest from the old SD-31 (17%), the old SD-39 (2%). Entirely in Douglas County. 2020 presidential margin R+7.5 on the 2016\u20132020 lines \u2192 R+8.6 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 80.4,
+      "key": "40",
+      "popPct": 76.1
+     },
+     {
+      "areaPct": 19.6,
+      "key": "41",
+      "popPct": 23.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Holt",
+      "popPct": 25.2
+     },
+     {
+      "county": "Knox",
+      "popPct": 20.9
+     },
+     {
+      "county": "Cedar",
+      "popPct": 20.8
+     },
+     {
+      "county": "Antelope",
+      "popPct": 15.6
+     },
+     {
+      "county": "Dixon",
+      "popPct": 9.2
+     },
+     {
+      "county": "Pierce",
+      "popPct": 8.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Antelope",
+      "popPct": 15.6
+     },
+     {
+      "county": "Pierce",
+      "popPct": 8.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Boyd",
+      "popPct": 5.1
+     },
+     {
+      "county": "Rock",
+      "popPct": 3.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 40204,
+    "pres2020New": 68.3,
+    "pres2020Old": 66.8,
+    "retainedAreaPct": 80.4,
+    "retainedPopPct": 76.1,
+    "text": "Kept 76% of its population from the 2016\u20132020 SD-40; gained the rest from the old SD-41 (24%). Counties: gained Antelope (16%), Pierce (8%); lost Boyd, Rock. 2020 presidential margin R+66.8 on the 2016\u20132020 lines \u2192 R+68.3 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 73.4,
+      "key": "41",
+      "popPct": 49.9
+     },
+     {
+      "areaPct": 7.6,
+      "key": "33",
+      "popPct": 12.3
+     },
+     {
+      "areaPct": 2.0,
+      "key": "34",
+      "popPct": 11.2
+     },
+     {
+      "areaPct": 4.7,
+      "key": "38",
+      "popPct": 10.8
+     },
+     {
+      "areaPct": 4.3,
+      "key": "37",
+      "popPct": 8.0
+     },
+     {
+      "areaPct": 8.0,
+      "key": "36",
+      "popPct": 7.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Buffalo",
+      "popPct": 26.5
+     },
+     {
+      "county": "Hall",
+      "popPct": 23.4
+     },
+     {
+      "county": "Howard",
+      "popPct": 14.7
+     },
+     {
+      "county": "Boone",
+      "popPct": 12.3
+     },
+     {
+      "county": "Valley",
+      "popPct": 9.3
+     },
+     {
+      "county": "Sherman",
+      "popPct": 6.8
+     },
+     {
+      "county": "Greeley",
+      "popPct": 5.0
+     },
+     {
+      "county": "Wheeler",
+      "popPct": 1.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Buffalo",
+      "popPct": 26.5
+     },
+     {
+      "county": "Hall",
+      "popPct": 23.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pierce",
+      "popPct": 19.6
+     },
+     {
+      "county": "Antelope",
+      "popPct": 16.8
+     },
+     {
+      "county": "Garfield",
+      "popPct": 4.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 43773,
+    "pres2020New": 61.2,
+    "pres2020Old": 67.7,
+    "retainedAreaPct": 73.4,
+    "retainedPopPct": 49.9,
+    "text": "A new footprint: only 50% of its population was in the 2016\u20132020 SD-41; it draws from the old SD-33 (12%), the old SD-34 (11%), the old SD-38 (11%) and 2 more. Counties: gained Buffalo (26%), Hall (23%); lost Pierce, Antelope, Garfield. 2020 presidential margin R+67.7 on the 2016\u20132020 lines \u2192 R+61.2 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 42.3,
+      "key": "42",
+      "popPct": 88.5
+     },
+     {
+      "areaPct": 47.1,
+      "key": "43",
+      "popPct": 6.4
+     },
+     {
+      "areaPct": 10.6,
+      "key": "44",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lincoln",
+      "popPct": 88.5
+     },
+     {
+      "county": "Perkins",
+      "popPct": 5.2
+     },
+     {
+      "county": "Logan",
+      "popPct": 1.8
+     },
+     {
+      "county": "Hooker",
+      "popPct": 1.8
+     },
+     {
+      "county": "Thomas",
+      "popPct": 1.7
+     },
+     {
+      "county": "McPherson",
+      "popPct": 1.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Perkins",
+      "popPct": 5.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39202,
+    "pres2020New": 57.8,
+    "pres2020Old": 54.8,
+    "retainedAreaPct": 42.3,
+    "retainedPopPct": 88.5,
+    "text": "Kept 88% of its population from the 2016\u20132020 SD-42; gained the rest from the old SD-43 (6%), the old SD-44 (5%). Counties: gained Perkins (5%). 2020 presidential margin R+54.8 on the 2016\u20132020 lines \u2192 R+57.8 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 73.7,
+      "key": "43",
+      "popPct": 60.4
+     },
+     {
+      "areaPct": 14.4,
+      "key": "36",
+      "popPct": 27.1
+     },
+     {
+      "areaPct": 8.7,
+      "key": "40",
+      "popPct": 7.9
+     },
+     {
+      "areaPct": 3.2,
+      "key": "41",
+      "popPct": 4.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Custer",
+      "popPct": 27.1
+     },
+     {
+      "county": "Dawes",
+      "popPct": 21.1
+     },
+     {
+      "county": "Cherry",
+      "popPct": 14.0
+     },
+     {
+      "county": "Sheridan",
+      "popPct": 13.2
+     },
+     {
+      "county": "Brown",
+      "popPct": 7.5
+     },
+     {
+      "county": "Garfield",
+      "popPct": 4.7
+     },
+     {
+      "county": "Boyd",
+      "popPct": 4.6
+     },
+     {
+      "county": "Rock",
+      "popPct": 3.2
+     },
+     {
+      "county": "Keya Paha",
+      "popPct": 2.0
+     },
+     {
+      "county": "Loup",
+      "popPct": 1.6
+     },
+     {
+      "county": "Blaine",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Custer",
+      "popPct": 27.1
+     },
+     {
+      "county": "Garfield",
+      "popPct": 4.7
+     },
+     {
+      "county": "Boyd",
+      "popPct": 4.6
+     },
+     {
+      "county": "Rock",
+      "popPct": 3.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Box Butte",
+      "popPct": 24.7
+     },
+     {
+      "county": "Logan",
+      "popPct": 2.0
+     },
+     {
+      "county": "Hooker",
+      "popPct": 2.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 38921,
+    "pres2020New": 68.5,
+    "pres2020Old": 64.2,
+    "retainedAreaPct": 73.7,
+    "retainedPopPct": 60.4,
+    "text": "Kept 60% of its population from the 2016\u20132020 SD-43; gained the rest from the old SD-36 (27%), the old SD-40 (8%), the old SD-41 (5%). Counties: gained Custer (27%), Garfield (5%), Boyd (5%) and 1 more; lost Box Butte, Logan, Hooker. 2020 presidential margin R+64.2 on the 2016\u20132020 lines \u2192 R+68.5 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 17.1,
+      "key": "36",
+      "popPct": 62.8
+     },
+     {
+      "areaPct": 82.9,
+      "key": "44",
+      "popPct": 37.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dawson",
+      "popPct": 62.8
+     },
+     {
+      "county": "Chase",
+      "popPct": 10.1
+     },
+     {
+      "county": "Hitchcock",
+      "popPct": 6.8
+     },
+     {
+      "county": "Frontier",
+      "popPct": 6.6
+     },
+     {
+      "county": "Gosper",
+      "popPct": 4.9
+     },
+     {
+      "county": "Dundy",
+      "popPct": 4.3
+     },
+     {
+      "county": "Hayes",
+      "popPct": 2.2
+     },
+     {
+      "county": "Perkins",
+      "popPct": 2.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dawson",
+      "popPct": 62.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Red Willow",
+      "popPct": 30.8
+     },
+     {
+      "county": "Furnas",
+      "popPct": 13.4
+     },
+     {
+      "county": "Harlan",
+      "popPct": 8.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 38369,
+    "pres2020New": 57.7,
+    "pres2020Old": 70.7,
+    "retainedAreaPct": 82.9,
+    "retainedPopPct": 37.2,
+    "text": "A new footprint: only 37% of its population was in the 2016\u20132020 SD-44; it draws from the old SD-36 (63%). Counties: gained Dawson (63%); lost Red Willow, Furnas, Harlan. 2020 presidential margin R+70.7 on the 2016\u20132020 lines \u2192 R+57.7 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "45",
+      "popPct": 97.8
+     },
+     {
+      "areaPct": 0.4,
+      "key": "3",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sarpy",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 36825,
+    "pres2020New": 5.0,
+    "pres2020Old": 5.9,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 97.8,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-45; gained the rest from the old SD-3 (2%). Entirely in Sarpy County. 2020 presidential margin R+5.9 on the 2016\u20132020 lines \u2192 R+5.0 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 88.8,
+      "key": "46",
+      "popPct": 84.9
+     },
+     {
+      "areaPct": 10.5,
+      "key": "21",
+      "popPct": 13.7
+     },
+     {
+      "areaPct": 0.7,
+      "key": "26",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lancaster",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39718,
+    "pres2020New": -21.2,
+    "pres2020Old": -22.3,
+    "retainedAreaPct": 88.8,
+    "retainedPopPct": 84.9,
+    "text": "Kept 85% of its population from the 2016\u20132020 SD-46; gained the rest from the old SD-21 (14%), the old SD-26 (1%). Entirely in Lancaster County. 2020 presidential margin D+22.3 on the 2016\u20132020 lines \u2192 D+21.2 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 90.7,
+      "key": "47",
+      "popPct": 76.1
+     },
+     {
+      "areaPct": 9.3,
+      "key": "43",
+      "popPct": 23.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Box Butte",
+      "popPct": 27.7
+     },
+     {
+      "county": "Cheyenne",
+      "popPct": 24.3
+     },
+     {
+      "county": "Keith",
+      "popPct": 21.3
+     },
+     {
+      "county": "Morrill",
+      "popPct": 11.6
+     },
+     {
+      "county": "Garden",
+      "popPct": 4.8
+     },
+     {
+      "county": "Deuel",
+      "popPct": 4.7
+     },
+     {
+      "county": "Sioux",
+      "popPct": 2.9
+     },
+     {
+      "county": "Grant",
+      "popPct": 1.6
+     },
+     {
+      "county": "Arthur",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Kimball",
+      "popPct": 10.2
+     },
+     {
+      "county": "Banner",
+      "popPct": 2.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 39092,
+    "pres2020New": 64.2,
+    "pres2020Old": 67.0,
+    "retainedAreaPct": 90.7,
+    "retainedPopPct": 76.1,
+    "text": "Kept 76% of its population from the 2016\u20132020 SD-47; gained the rest from the old SD-43 (24%). Counties: lost Kimball, Banner. 2020 presidential margin R+67.0 on the 2016\u20132020 lines \u2192 R+64.2 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 30.5,
+      "key": "48",
+      "popPct": 89.8
+     },
+     {
+      "areaPct": 69.5,
+      "key": "47",
+      "popPct": 10.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Scotts Bluff",
+      "popPct": 89.8
+     },
+     {
+      "county": "Kimball",
+      "popPct": 8.5
+     },
+     {
+      "county": "Banner",
+      "popPct": 1.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kimball",
+      "popPct": 8.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 40192,
+    "pres2020New": 47.1,
+    "pres2020Old": 43.7,
+    "retainedAreaPct": 30.5,
+    "retainedPopPct": 89.8,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-48; gained the rest from the old SD-47 (10%). Counties: gained Kimball (8%). 2020 presidential margin R+43.7 on the 2016\u20132020 lines \u2192 R+47.1 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 98.2,
+      "key": "49",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sarpy",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 34552,
+    "pres2020New": 10.4,
+    "pres2020Old": 16.1,
+    "retainedAreaPct": 98.2,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Sarpy County.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 92.4,
+      "key": "5",
+      "popPct": 92.4
+     },
+     {
+      "areaPct": 7.5,
+      "key": "9",
+      "popPct": 7.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 99.0
+     },
+     {
+      "county": "Sarpy",
+      "popPct": 1.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 40223,
+    "pres2020New": -21.5,
+    "pres2020Old": -21.1,
+    "retainedAreaPct": 92.4,
+    "retainedPopPct": 92.4,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-5; gained the rest from the old SD-9 (8%). Spans Douglas, Sarpy counties. 2020 presidential margin D+21.1 on the 2016\u20132020 lines \u2192 D+21.5 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 83.3,
+      "key": "6",
+      "popPct": 84.1
+     },
+     {
+      "areaPct": 6.1,
+      "key": "10",
+      "popPct": 8.4
+     },
+     {
+      "areaPct": 8.0,
+      "key": "4",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 2.5,
+      "key": "9",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39823,
+    "pres2020New": -14.3,
+    "pres2020Old": -15.4,
+    "retainedAreaPct": 83.3,
+    "retainedPopPct": 84.1,
+    "text": "Kept 84% of its population from the 2016\u20132020 SD-6; gained the rest from the old SD-10 (8%), the old SD-4 (5%), the old SD-9 (2%). Entirely in Douglas County. 2020 presidential margin D+15.4 on the 2016\u20132020 lines \u2192 D+14.3 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 97.5,
+      "key": "7",
+      "popPct": 98.0
+     },
+     {
+      "areaPct": 1.8,
+      "key": "11",
+      "popPct": 1.2
+     },
+     {
+      "areaPct": 0.7,
+      "key": "5",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39588,
+    "pres2020New": -40.0,
+    "pres2020Old": -40.6,
+    "retainedAreaPct": 97.5,
+    "retainedPopPct": 98.0,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-7; gained the rest from the old SD-11 (1%), the old SD-5 (1%). Entirely in Douglas County. 2020 presidential margin D+40.6 on the 2016\u20132020 lines \u2192 D+40.0 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 61.3,
+      "key": "8",
+      "popPct": 76.0
+     },
+     {
+      "areaPct": 29.2,
+      "key": "10",
+      "popPct": 16.9
+     },
+     {
+      "areaPct": 8.3,
+      "key": "6",
+      "popPct": 5.9
+     },
+     {
+      "areaPct": 1.2,
+      "key": "13",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 40942,
+    "pres2020New": -34.6,
+    "pres2020Old": -42.4,
+    "retainedAreaPct": 61.3,
+    "retainedPopPct": 76.0,
+    "text": "Kept 76% of its population from the 2016\u20132020 SD-8; gained the rest from the old SD-10 (17%), the old SD-6 (6%), the old SD-13 (1%). Entirely in Douglas County. 2020 presidential margin D+42.4 on the 2016\u20132020 lines \u2192 D+34.6 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 81.0,
+      "key": "9",
+      "popPct": 81.2
+     },
+     {
+      "areaPct": 9.1,
+      "key": "8",
+      "popPct": 8.2
+     },
+     {
+      "areaPct": 4.6,
+      "key": "7",
+      "popPct": 5.4
+     },
+     {
+      "areaPct": 4.2,
+      "key": "5",
+      "popPct": 3.8
+     },
+     {
+      "areaPct": 1.2,
+      "key": "11",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 41800,
+    "pres2020New": -43.8,
+    "pres2020Old": -41.6,
+    "retainedAreaPct": 81.0,
+    "retainedPopPct": 81.2,
+    "text": "Kept 81% of its population from the 2016\u20132020 SD-9; gained the rest from the old SD-8 (8%), the old SD-7 (5%), the old SD-5 (4%) and 1 more. Entirely in Douglas County. 2020 presidential margin D+41.6 on the 2016\u20132020 lines \u2192 D+43.8 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

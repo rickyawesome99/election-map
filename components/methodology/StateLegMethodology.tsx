@@ -1,0 +1,224 @@
+import Link from "next/link";
+import { stateLegResults } from "@/data/stateLegResults";
+import { stateLegRedistricting } from "@/data/stateLegRedistricting";
+import { stateLegCandidates2026, stateLegCandidates2026Fetched } from "@/data/stateLegCandidates2026";
+import { stateLegOutgoing2026, stateLegOutgoing2026Fetched } from "@/data/stateLegOutgoing2026";
+import { stateLegMoneyCoverage } from "@/lib/stateLegMoney";
+import { contest2026 } from "@/lib/stateLegAtlas";
+import { buildPresByEraAuditRows } from "@/lib/stateLegPresByEraAudit";
+import { STATE_LEG_FORECAST_CONSTANTS as SC, projectAllChambers } from "@/lib/stateLegForecast";
+import { STATE_LEG_VALIDATION } from "@/data/stateLegValidation";
+import { getNationalEnvironment } from "@/lib/tplCompute";
+import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, N, P, Section, type ConstantRow } from "./kit";
+
+// Every STATE_LEG_FORECAST_CONSTANTS key and where it is documented on this tab.
+const DOCUMENTED_IN = {
+  TYPE_WEIGHTS: "state-leg#projection", INCUMBENCY_PTS: "state-leg#projection", SIGMA: "state-leg#projection", STATE_SHOCK: "state-leg#projection",
+  MIN_COVERAGE: "state-leg#projection", SIMS: "state-leg#projection",
+} satisfies Record<keyof typeof SC, string>;
+void DOCUMENTED_IN;
+
+function coverage() {
+  let districts = 0, named = 0, winners = 0, incumbents = 0, uncontested = 0, noCount = 0;
+  for (const years of Object.values(stateLegResults)) {
+    for (const chambers of Object.values(years)) {
+      for (const block of Object.values(chambers)) {
+        if (!block) continue;
+        for (const r of Object.values(block.districts)) {
+          districts += 1;
+          if (r.candidates?.length) named += 1;
+          if (r.candidates?.some((c) => c.winner)) winners += 1;
+          if (r.candidates?.some((c) => c.incumbent)) incumbents += 1;
+          if (r.uncontested) uncontested += 1;
+          if (r.noCount) noCount += 1;
+        }
+      }
+    }
+  }
+  return { districts, named, winners, incumbents, uncontested, noCount };
+}
+
+export default function StateLegMethodology() {
+  const cov = coverage();
+  const audit = buildPresByEraAuditRows();
+  const holdouts = audit.filter((r) => r.holdout).map((r) => ({ ...r, mae: r.holdout!.mae, max: r.holdout!.max }));
+  const sortedMae = [...holdouts].sort((a, b) => a.mae - b.mae);
+  const medianMae = sortedMae.length ? sortedMae[Math.floor(sortedMae.length / 2)].mae : 0;
+  const worst = [...holdouts].sort((a, b) => b.mae - a.mae).slice(0, 5);
+  const eraCount = audit.length;
+  const states = new Set(audit.map((r) => r.abbr)).size;
+  let transitions = 0, redrawn = 0;
+  for (const chambers of Object.values(stateLegRedistricting)) for (const eras of Object.values(chambers)) for (const block of Object.values(eras ?? {})) {
+    for (const e of Object.values(block)) { transitions += 1; if (e.retainedPopPct < 99.5 || e.contributors.length > 1) redrawn += 1; }
+  }
+
+  return (
+    <>
+      <Section id="scope" kicker="Legislative atlas" title="One page per chamber, one record per district"
+        lede={<>The <Link href="/states/oh/legislature/house" className="underline underline-offset-2">chamber pages</Link> (<Code>/states/[state]/legislature/house</Code> and <Code>/senate</Code>, Nebraska&apos;s single chamber under <Code>senate</Code>) show every state legislative district: its members, every general election since 2016 with named candidates, its presidential vote on each map it has existed on, its demographics and its redistricting history. A district is addressed by hash (<Code>#hd-31</Code>, <Code>#sd-5</Code>), so a link from search or the district finder opens the page on that seat. Nothing here is a model: this tab documents the three datasets the pages are built from and the measured error of the one that is estimated.</>}>
+        <Defs items={[
+          { term: "Scope", def: "General elections only. Special elections are not collected, and a seat whose only race in a year was a special concurrent with the general shows its votes without names." },
+          { term: "District keys", def: <>The boundary data&apos;s own codes: numbers almost everywhere, letters for the Alaska Senate, county code plus number in New Hampshire (<Code>BE1</Code>), names in Vermont and Massachusetts. A past year&apos;s row is the race held under that key on that year&apos;s map, which can be a different place: Ohio renumbered its whole House in 2022, so HD-31&apos;s 2020 row is a Cincinnati seat and its 2022 row a Summit County one. The lines column and the redistricting section say so.</> },
+          { term: "Downstream", def: <>The corrected chamber margin is live in the <Link href="/methodology/state-tpl" className="underline underline-offset-2">State TPL</Link>; the district projection and the <Link href="/legislatures" className="underline underline-offset-2">State Legislatures</Link> board are documented below.</> },
+        ]} />
+      </Section>
+
+      <Section id="president-by-era" kicker="Dataset A" title="President 2016, 2020 and 2024 on every map era"
+        lede={<>For every chamber, the presidential vote inside each district on the current map AND on each superseded map in <Code>public/state-leg-districts-historical/</Code>. <N>{states}</N> states, <N>{eraCount}</N> chamber-eras. The 2024 figure on the current map is the precinct-exact one from the legislature page; everything else is an overlay.</>}>
+        <Block label="Method">
+          <P>Dave&apos;s Redistricting publishes each state&apos;s 2016, 2020 and (for 38 states) 2024 presidential returns disaggregated to census blocks and re-aggregated to 2020 VTDs, with geometry. Each VTD is intersected with the era&apos;s district polygons in an equal-area projection and its votes split by the share of its area in each district; slivers under 0.2% are dropped and the rest renormalised so every VTD is allocated in full. Per-district rounding is largest-remainder per party, so a chamber&apos;s sum reproduces the state total exactly. The 2020 VTDs are used for the 2011-cycle maps too, since no 2010-VTD geometry is published.</P>
+        </Block>
+        <Block label="Measured error" meta="the overlay's 2024 margin vs the precinct-exact 2024 file, per district, current map only">
+          <P>Median mean absolute error across the <N>{holdouts.length}</N> chambers with an independent 2024 answer: <N>{medianMae.toFixed(2)}</N> points of margin. The error is almost entirely where a district line cuts a large rural VTD unevenly in population, so the worst chambers are rural Houses. A state whose 2024 file was itself produced by the same overlay reads 0 by construction and is not evidence. Full table on the <Link href="/audit/state-leg-results" className="underline underline-offset-2">audit page</Link>, section 4.</P>
+          <DataTable align="llrrr" head={["State", "Chamber", "Districts", "Mean error", "Worst district"]} rows={worst.map((r) => [r.abbr, r.chamberLabel, r.holdout!.n, r.mae.toFixed(2), r.max.toFixed(1)])} caption="The five chambers the overlay fits worst." maxWidth="max-w-xl" />
+        </Block>
+        <Block label="Known gaps">
+          <Defs items={[
+            { term: "No 2024 in DRA", def: "AK AR CT ID ME MI ND NJ OK OR PA SD have 2024 only on the current map (the precinct-exact file); cross-era comparisons there use 2020." },
+            { term: "New Hampshire floterials", def: "Have no polygon in any boundary file. On the current map their presidential figures are the sum of the base districts they overlay (the roster's components), which gives them presidential rows, an imputation in the chamber margin and a projection; on the superseded 2020 map they are still absent." },
+          ]} />
+        </Block>
+      </Section>
+
+      <Section id="candidates" kicker="Dataset B" title="Candidates, incumbency and winners"
+        lede={<>Names, party, votes and, where the source carries them, incumbency and the winner, attached to the per-district results. Live coverage: <N>{cov.named.toLocaleString()}</N> of <N>{cov.districts.toLocaleString()}</N> district-years named ({(100 * cov.named / cov.districts).toFixed(1)}%), <N>{cov.winners.toLocaleString()}</N> with a marked winner, <N>{cov.incumbents.toLocaleString()}</N> with a marked incumbent, <N>{cov.uncontested.toLocaleString()}</N> unopposed, <N>{cov.noCount.toLocaleString()}</N> with no published count.</>}>
+        <Block label="Sources, in order of precedence">
+          <Defs items={[
+            { term: "2016–2022", def: "Klarner's State Legislative Election Returns candidate file: one row per candidate per contest, with exper = inc for the incumbent and outcome = w for the winner. Regular generals only (etype g; Louisiana's jungle rounds, with the runoff winning where one was held)." },
+            { term: "2024", def: "MEDSL precinct returns (names only) for 75 chamber-years; the Wikipedia chamber-election articles for Arizona, Iowa, Oregon, Nebraska and New Mexico; the New York State Board of Elections canvass, kept per fusion line so the list matches the party-line vote buckets." },
+            { term: "Odd years", def: "Klarner through 2021; the Wikipedia articles for Louisiana, Mississippi, New Jersey and Virginia 2023 and New Jersey and Virginia 2025; the Mississippi recapitulation sheet and the Louisiana Secretary of State workbooks where the articles fell short." },
+            { term: "Hand-transcribed years", def: "New Hampshire 2022 House (the state's election-database export, which also corrected the earlier county-PDF parse) and Vermont 2018 Senate (the election archive's town export)." },
+            { term: "Derived flags", def: "Where a source marked no winners, incumbents or unopposed seats in a chamber-year, they are derived: winners by name-match to the sitting member elected that year (which resolves Idaho, Washington and West Virginia post races), then top-N by votes; incumbents by name-match to the chamber's winners in the previous four years; unopposed where no more real candidates than seats. A derived flag never sits beside a sourced one in the same chamber-year." },
+          ]} />
+        </Block>
+        <Block label="Invariant">
+          <P>A candidate list is written only when its votes sum to the district&apos;s recorded total (exactly for the official sources, within 0.6% for Wikipedia&apos;s transcriptions). No vote number was changed by any of these passes, with one exception recorded in the change log: New Hampshire&apos;s 2022 House, where the official export showed the earlier parse had double-counted 17 districts.</P>
+        </Block>
+      </Section>
+
+      <Section id="redistricting" kicker="Dataset C" title="Redistricting history and the crosswalk"
+        lede={<>For each pair of consecutive maps, what every new district is made of: <N>{transitions.toLocaleString()}</N> district-transitions, <N>{redrawn.toLocaleString()}</N> of them with changed lines.</>}>
+        <Block label="Method">
+          <P>The two maps&apos; polygons are intersected and each piece gets its 2020 Census population by area-apportioning the same VTD file&apos;s counts, so a new district&apos;s composition is measured in people rather than land. The record carries the previous-map districts it draws from with their population shares, its county composition on both maps, and its 2020 presidential margin on both sets of lines from dataset A. The description is generated from those numbers, geography first and the lean shift as a number, in the style of the House redistricting descriptions.</P>
+          <P>The contributor shares are also the crosswalk the 2026 projection will use: a seat&apos;s pre-redraw results are relocated onto today&apos;s lines by population overlap and corrected by the presidential delta between the two polygons.</P>
+        </Block>
+      </Section>
+
+      <Section id="candidates-2026" kicker="Dataset D" title="The 2026 field"
+        lede={(() => {
+          let districts = 0, contested = 0, open = 0, chambers = 0;
+          for (const ch of Object.values(stateLegCandidates2026)) for (const block of Object.values(ch)) {
+            if (!block) continue;
+            chambers += 1;
+            for (const c of Object.values(block)) { const x = contest2026(c)!; districts += 1; if (x.status === "contested") contested += 1; if (x.open) open += 1; }
+          }
+          return <>Every district on the 2026 ballot with its general-election candidates, from Ballotpedia&apos;s chamber election pages (fetched {stateLegCandidates2026Fetched}): <N>{chambers}</N> chambers, <N>{districts.toLocaleString()}</N> districts, <N>{contested.toLocaleString()}</N> with both major parties, <N>{open.toLocaleString()}</N> with no incumbent running. Ballotpedia&apos;s own caveat applies: the lists may be incomplete until every state certifies its ballot.</>;
+        })()}>
+        <Block label="Method">
+          <P>Each page&apos;s &ldquo;general election 2026&rdquo; candidate table is read: one row per district with Democratic, Republican and Other columns, &ldquo;(i)&rdquo; after an incumbent, &ldquo;(N seats)&rdquo; on a multi-member district and a party or write-in tag on the Other entries. District rows are matched to the boundary data&apos;s keys the same way the results are; unmatched rows are reported, never guessed. A seat counts as contested when both major parties have a non-write-in candidate, and as open when nobody in the field is marked an incumbent.</P>
+        </Block>
+        <Block label="Why a seat is open" meta={`Wikipedia chamber articles, fetched ${stateLegOutgoing2026Fetched}`}>
+          {(() => {
+            let members = 0, chambers = 0;
+            const cats: Record<string, number> = {};
+            for (const ch of Object.values(stateLegOutgoing2026)) for (const block of Object.values(ch)) {
+              if (!block) continue;
+              chambers += 1;
+              for (const list of Object.values(block)) for (const o of list) { members += 1; cats[o.category] = (cats[o.category] ?? 0) + 1; }
+            }
+            const top = Object.entries(cats).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${v} ${k}`).join(", ");
+            return <P>The English Wikipedia article on each chamber&apos;s 2026 election keeps a list of members not seeking re-election with the reason (<Code>scripts/fetch-state-leg-outgoing-2026.py</Code>): <N>{members}</N> outgoing members across <N>{chambers}</N> chambers ({top}). The articles write these three ways (district first, ordinal first, or name first with &ldquo;representing district N&rdquo;); each line is parsed to a district key, a name, a party (from the subsection or inline) and the reason as written. Chambers whose article carries the status only in a results table (North Dakota, West Virginia Senate) or not at all are absent. Shown on the district header (&ldquo;Not running&rdquo;) and on the member&apos;s candidate page.</P>;
+          })()}
+        </Block>
+      </Section>
+
+      <Section id="money" kicker="Dataset E" title="Fundraising"
+        lede={(() => {
+          const c = stateLegMoneyCoverage();
+          const cycles = Object.keys(c.byCycle).sort();
+          return <>Each general-election candidate&apos;s total contributions for the cycle, per the state&apos;s own filings: <N>{c.states}</N> states, <N>{c.chamberCycles}</N> chamber-cycles ({cycles.join(", ")}), <N>{c.districts.toLocaleString()}</N> district-cycles, <N>{c.matched.toLocaleString()}</N> of <N>{c.candidates.toLocaleString()}</N> listed candidates matched to a filing. Shown on the district header (the current cycle, with its data-through date) and as a Raised column in the electoral history; the money term of the projection is not yet fitted on it.</>;
+        })()}>
+        <Block label="Sources">
+          <Defs items={[
+            { term: "Transparency USA", def: "Republishes 25 states' campaign-finance filings (AL AZ CA CO FL GA IA ID IL IN MI MN NC NH NM NV NY OH PA SC TX VA WA WI WY) with one page per race and cycle, 2018 through 2026 (Virginia 2017 through 2025). scripts/fetch-state-leg-finance-tu.py reads every legislative race page of a cycle: candidate, party, incumbency, total contributions, total expenditures and ballot status, general and primary. The current cycle's figures are to-date and grow with each report." },
+            { term: "FollowTheMoney", def: "The other 25 states and 2016 everywhere, through the API used for the governor rows (scripts/fetch-state-leg-finance-ftm.py; one call per state, cycle and chamber). Its data stops at the 2024 election year, and the free tier's quota is small, so this half fills as keys allow." },
+            { term: "Not used", def: "Stanford DIME's public recipients file lists state legislative candidates but withholds their receipt totals (the NIMSP-sourced figures), and its 2024 coverage is California and Ohio only." },
+          ]} />
+        </Block>
+        <Block label="Join">
+          <P>A filing is matched to the atlas&apos;s candidate for that district and year (the 2026 field, or the result&apos;s names) by name: the full name, then first and last name with nicknames canonicalised (&ldquo;Mike&rdquo; is &ldquo;Michael&rdquo;), then a first initial and surname within the same party, then the surname alone when it is unique on both sides. A filing that matches nobody is kept as unmatched and shown; a candidate with no filing is null, never zero. The two-party money gap is (R &minus; D) / (R + D) over the matched Democratic and Republican candidates, undefined when either side is missing.</P>
+        </Block>
+      </Section>
+
+      <Section id="projection" kicker="The model" title="The 2026 district projection"
+        lede={(() => {
+          const all = projectAllChambers();
+          const up = all.reduce((s, c) => s + c.seatsUp, 0);
+          const inPlay = all.filter((c) => c.pDemControl != null && c.pDemControl >= 0.2 && c.pDemControl <= 0.8).length;
+          const env = getNationalEnvironment();
+          return <>Every seat on the 2026 ballot (<N>{up.toLocaleString()}</N> seats, <N>{all.length}</N> chambers, <N>{inPlay}</N> in play) is projected from the atlas&apos;s own data and simulated chamber by chamber on the <Link href="/legislatures" className="underline underline-offset-2">State Legislatures</Link> board. The environment is the forecast&apos;s fitted E (today {env.eHat >= 0 ? "R" : "D"}+{Math.abs(env.eHat).toFixed(1)}, σ {env.sigmaE.toFixed(1)}).</>;
+        })()}>
+        <Block label="Lean">
+          <Formula lines={[
+            "row NM   = margin − INCUMBENCY_PTS × incumbent sign − β*(state) × E(year)       seat rows: the district's general in each year it was contested",
+            "           margin − β*(state) × E(year)                                           presidential rows on today's lines (2016, 2020, 2024)",
+            "relocate = Σ share_i × margin_i / coverage  +  [pres(today) − Σ share_i × pres_i / coverage]   a race on a superseded map, through the crosswalk",
+            "lean     = Σ_years YEAR_WEIGHT × coverage × [ Σ_types TYPE_WEIGHT × mean NM ] / Σ YEAR_WEIGHT × coverage     two-pass Huber on seat rows",
+          ]} note="share_i is the population share of today's district that was in old district i (dataset C); coverage is the share covered by contested old districts, and a row below MIN_COVERAGE is dropped. The presidential delta is taken in the presidential year nearest the race." />
+        </Block>
+        <Block label="Forward">
+          <Formula lines={[
+            "margin = lean + β*(state) × E(2026) + INCUMBENCY_PTS × incumbent sign      incumbent sign from the 2026 field's marked incumbent",
+            "σ²     = SIGMA² + STATE_SHOCK² + (β* × σ_E)²        P(D) = Φ(−margin / σ)",
+            "chamber: 5,000 draws of a shared national shock N(0, σ_E) × β*, a shared chamber shock N(0, STATE_SHOCK), and N(0, SIGMA) per seat; seats not up hold their member; a field with one major party is decided",
+          ]} note="Multi-member districts draw each seat on the district's margin. The chamber shock is what makes a chamber's seats move together beyond the national swing: a state-wide miss (a governor's race on the same ballot, a state issue, a redistricting the lean has not caught up with) lands on every seat at once, so chamber ranges are wider than independent seats would give. A seat with no major-party field (Nebraska's nonpartisan ballot, an empty list) has no projection, and a chamber whose unprojected seats could decide control reports no control odds." />
+          <Constants rows={[
+            { name: "TYPE_WEIGHTS", value: `P ${SC.TYPE_WEIGHTS.P} / L ${SC.TYPE_WEIGHTS.L}`, meaning: "Presidential rows against the seat's own races, renormalised over the types present in a year — the District TPL's President/House ratio.", basis: "designed" },
+            { name: "INCUMBENCY_PTS", value: SC.INCUMBENCY_PTS, meaning: "Points a sitting state legislator is worth. The holdout fits 2.4 (2024) and 4.0 (2022); set at their rounded mean.", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
+            { name: "SIGMA", value: SC.SIGMA, meaning: "Seat-level noise beyond the national and chamber shocks: the holdout residual spread after the chamber shock is taken out (7.0 in 2024, 7.2 in 2022; the total spread is 8.0 and 8.2, robust 5.5–6.2, so the tails are heavy and the full spread is kept).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
+            { name: "STATE_SHOCK", value: SC.STATE_SHOCK, meaning: "Chamber-level shock shared by every seat of a chamber in a year: the spread of chamber-mean residuals less what independent seat noise alone would put there (method of moments over chambers with 10+ contested seats; 3.8 in both 2024 and 2022).", basis: "calibrated", source: "scripts/stateLegBacktest.ts" },
+            { name: "MIN_COVERAGE", value: SC.MIN_COVERAGE, meaning: "A relocated row needs contested old districts covering this share of today's population.", basis: "designed" },
+            { name: "SIMS", value: SC.SIMS, meaning: "Draws per chamber.", basis: "fixed" },
+          ] satisfies ConstantRow[]} />
+        </Block>
+        <Block label="Holdout" meta={`generated ${STATE_LEG_VALIDATION.generatedAt} · scripts/stateLegBacktest.ts --emit`}>
+          <P>Each district&apos;s lean is built from the years before Y and projected into Y with the fitted environment and the race&apos;s actual incumbent, then scored against the contested districts on today&apos;s lines. Incumbency is fitted from the residuals and σ is their spread after it. The worst states are the multi-member and ranked-choice ones (Vermont, Washington, Arizona, Alaska) and Nebraska, where a seat&apos;s own margin is a poor measure of the district.</P>
+          <DataTable align="lrrrrrrrrr" head={["Year", "Districts", "Bias", "MAE", "MAE after inc.", "Incumbency (pts)", "Incumbent races", "σ (robust)", "Chamber shock τ", "Seat σ after τ"]} rows={STATE_LEG_VALIDATION.rows.map((r) => [r.year, r.n, (r.bias >= 0 ? "+" : "") + r.bias.toFixed(2), r.mae.toFixed(2), r.maeAfterIncumbency.toFixed(2), r.incumbencyPts.toFixed(2), r.incumbentRaces, `${r.sigma.toFixed(2)} (${r.sigmaRobust.toFixed(2)})`, `${r.stateShock.toFixed(2)} (${r.chambers} chambers)`, r.sigmaWithin.toFixed(2)])} maxWidth="max-w-4xl" />
+        </Block>
+        <Block label="Not in the model">
+          <Defs items={[
+            { term: "Money", def: "Not yet in the projection: dataset E is being collected (2026 first, then the past cycles) and the term will be fitted on the 2022 and 2024 holdouts the way the precinct page's Ohio fit was, which moved a district by up to 3 points." },
+            { term: "Candidate quality and polls", def: "No track-record or polling term; the seat's own history is the only candidate signal." },
+            { term: "Below the chamber", def: "The chamber shock is one number per chamber; a regional swing inside a state (one metro moving against the rest) is still independent seat noise." },
+          ]} />
+        </Block>
+      </Section>
+
+      <Section id="files" kicker="Reproducing it" title="Files and commands">
+        <FilesAndCommands
+          files={[
+            { path: "data-entry/state-leg-pres-by-era/<ST>.json", role: "dataset A, per state: chamber → era → district → {pop2020, splitPct, 2016, 2020, 2024}" },
+            { path: "data-entry/state-leg-results/<ST>-<year>.json", role: "per-district results with the candidates array (dataset B)" },
+            { path: "data-entry/state-leg-redistricting/<ST>.json", role: "dataset C, per state: chamber → era redrawn into → district → record" },
+            { path: "data/stateLegPresByEra.ts · stateLegResults.ts · stateLegRedistricting.ts", role: "server-only modules built from the three above" },
+            { path: "data-entry/state-leg-candidates-2026/<ST>.json", role: "dataset D, per state: chamber → district → {seats, candidates}" },
+            { path: "data-entry/state-leg-outgoing-2026/<ST>.json", role: "outgoing members with reasons, per state: chamber → district → [{name, party, category, reason}]" },
+            { path: "data-entry/state-leg-finance/{tu,ftm}/<ST>-<cycle>.json", role: "dataset E, per state and cycle: every legislative race's candidates with contributions and expenditures" },
+            { path: "public/state-leg-atlas/<chamber>/<ST>.json", role: "the per-chamber slice a chamber page fetches, assembled from every module" },
+          ]}
+          commands={[
+            { cmd: "python3 scripts/build-state-leg-pres-by-era.py <ST>", does: "dataset A for one state (downloads the DRA VTD file into the scratch cache)" },
+            { cmd: "python3 scripts/build-state-leg-candidates-from-{klarner,wikipedia,sos}.py --write · derive-state-leg-candidate-flags.py --write", does: "dataset B passes, then the flag derivation" },
+            { cmd: "python3 scripts/build-state-leg-redistricting.py <ST>", does: "dataset C for one state" },
+            { cmd: "python3 scripts/fetch-state-leg-candidates-2026.py [ST] · node scripts/build-state-leg-candidates-2026.mjs", does: "dataset D (clear the HTML cache to refetch)" },
+            { cmd: "python3 scripts/fetch-state-leg-outgoing-2026.py [ST] · node scripts/build-state-leg-outgoing-2026.mjs", does: "outgoing members and reasons from the Wikipedia chamber articles (cached wikitext)" },
+            { cmd: "python3 scripts/fetch-state-leg-finance-tu.py --cycle 2026 [ST] · fetch-state-leg-finance-ftm.py --cycle 2024 [ST] · node scripts/build-state-leg-finance.mjs", does: "dataset E: one cycle of Transparency USA (slow, polite crawl) or FollowTheMoney, then the module" },
+            { cmd: "node scripts/build-state-leg-pres-by-era.mjs · build-state-leg-results.mjs · split-state-leg-results.mjs · build-state-leg-redistricting.mjs", does: "rebuild the modules and the legislature page's result slices" },
+            { cmd: "npx tsx --conditions=react-server scripts/stateLegBacktest.ts --emit", does: "the projection holdout; writes data/stateLegValidation.ts" },
+            { cmd: "npx tsx --conditions=react-server scripts/buildStateLegAtlasSlices.ts [ST]", does: "rebuild the chamber slices the atlas pages read (projection included)" },
+          ]}
+        />
+      </Section>
+    </>
+  );
+}

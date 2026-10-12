@@ -1,0 +1,7323 @@
+{
+ "state": "AL",
+ "cycle": 2026,
+ "fetched": "2026-10-11",
+ "dataThrough": "09/30/2026",
+ "races": [
+  {
+   "office": "Alabama House of Representatives District 1",
+   "url": "/al/race/alabama-house-of-representatives-district-1-71154",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 528948.0,
+   "totalExpenditures": 383629.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Maurice Mccaney",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 161398.48,
+       "expenditures": 7897.93,
+       "status": "$39,415.54",
+       "url": "/al/candidate/maurice-mccaney"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Maurice Mccaney",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 161398.48,
+       "expenditures": 7897.93,
+       "status": "$39,415.54",
+       "url": "/al/candidate/maurice-mccaney"
+      },
+      {
+       "name": "Phillip Pettus",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 367550.0,
+       "expenditures": 0.0,
+       "status": "$344,213.00",
+       "url": "/al/candidate/phillip-pettus"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "Alabama House of Representatives District 10",
+   "url": "/al/race/alabama-house-of-representatives-district-10-71155",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 374111.0,
+   "totalExpenditures": 170674.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Marilyn Lands",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 374111.27,
+       "expenditures": 25119.71,
+       "status": "$170,674.07",
+       "url": "/al/candidate/marilyn-lands"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Marilyn Lands",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 374111.27,
+       "expenditures": 25119.71,
+       "status": "$170,674.07",
+       "url": "/al/candidate/marilyn-lands"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "Alabama House of Representatives District 100",
+   "url": "/al/race/alabama-house-of-representatives-district-100-71156",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 89975.0,
+   "totalExpenditures": 6477.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Mark Shirey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 89975.0,
+       "expenditures": 0.0,
+       "status": "$6,476.76",
+       "url": "/al/candidate/mark-shirey"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Mark Shirey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 89975.0,
+       "expenditures": 0.0,
+       "status": "$6,476.76",
+       "url": "/al/candidate/mark-shirey"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "100"
+  },
+  {
+   "office": "Alabama House of Representatives District 101",
+   "url": "/al/race/alabama-house-of-representatives-district-101-71157",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 435846.0,
+   "totalExpenditures": 179439.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Chris Pringle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 413125.55,
+       "expenditures": 0.0,
+       "status": "$170,812.42",
+       "url": "/al/candidate/chris-pringle"
+      },
+      {
+       "name": "Joan Roberts Friedlander",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18895.49,
+       "expenditures": 0.0,
+       "status": "$4,387.57",
+       "url": "/al/candidate/joan-roberts-friedlander"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Joan Roberts Friedlander",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18895.49,
+       "expenditures": 0.0,
+       "status": "$4,387.57",
+       "url": "/al/candidate/joan-roberts-friedlander"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Chris Pringle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 413125.55,
+       "expenditures": 0.0,
+       "status": "$170,812.42",
+       "url": "/al/candidate/chris-pringle"
+      },
+      {
+       "name": "Timothy Manning",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3825.0,
+       "expenditures": 1000.0,
+       "status": "$4,239.21",
+       "url": "/al/candidate/timothy-manning"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "101"
+  },
+  {
+   "office": "Alabama House of Representatives District 102",
+   "url": "/al/race/alabama-house-of-representatives-district-102-71158",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 67500.0,
+   "totalExpenditures": 12014.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Shane Stringer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 67500.0,
+       "expenditures": 0.0,
+       "status": "$12,014.21",
+       "url": "/al/candidate/shane-stringer"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Shane Stringer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 67500.0,
+       "expenditures": 0.0,
+       "status": "$12,014.21",
+       "url": "/al/candidate/shane-stringer"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "102"
+  },
+  {
+   "office": "Alabama House of Representatives District 103",
+   "url": "/al/race/alabama-house-of-representatives-district-103-71159",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 100665.0,
+   "totalExpenditures": 51601.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Barbara Drummond",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 100665.23,
+       "expenditures": 0.0,
+       "status": "$51,600.58",
+       "url": "/al/candidate/barbara-drummond"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Barbara Drummond",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 100665.23,
+       "expenditures": 0.0,
+       "status": "$51,600.58",
+       "url": "/al/candidate/barbara-drummond"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "103"
+  },
+  {
+   "office": "Alabama House of Representatives District 104",
+   "url": "/al/race/alabama-house-of-representatives-district-104-71160",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Margie Wilcox",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/al/candidate/margie-wilcox"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Margie Wilcox",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/al/candidate/margie-wilcox"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "104"
+  },
+  {
+   "office": "Alabama House of Representatives District 105",
+   "url": "/al/race/alabama-house-of-representatives-district-105-71161",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 127400.0,
+   "totalExpenditures": 20229.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Chip Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 127400.0,
+       "expenditures": 0.0,
+       "status": "$20,228.52",
+       "url": "/al/candidate/chip-brown"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Chip Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 127400.0,
+       "expenditures": 0.0,
+       "status": "$20,228.52",
+       "url": "/al/candidate/chip-brown"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "105"
+  },
+  {
+   "office": "Alabama House of Representatives District 11",
+   "url": "/al/race/alabama-house-of-representatives-district-11-71162",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "Alabama House of Representatives District 12",
+   "url": "/al/race/alabama-house-of-representatives-district-12-71163",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 345847.0,
+   "totalExpenditures": 298738.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Cindy Myrex",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 345846.94,
+       "expenditures": 50000.0,
+       "status": "$298,738.22",
+       "url": "/al/candidate/cindy-myrex"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Cindy Myrex",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 345846.94,
+       "expenditures": 50000.0,
+       "status": "$298,738.22",
+       "url": "/al/candidate/cindy-myrex"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "Alabama House of Representatives District 13",
+   "url": "/al/race/alabama-house-of-representatives-district-13-71164",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 327380.0,
+   "totalExpenditures": 327010.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Mike Elliott",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 228530.06,
+       "expenditures": 4500.0,
+       "status": "$149,409.88",
+       "url": "/al/candidate/mike-elliott"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Mike Elliott",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 228530.06,
+       "expenditures": 4500.0,
+       "status": "$149,409.88",
+       "url": "/al/candidate/mike-elliott"
+      },
+      {
+       "name": "Greg Barnes",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 98850.0,
+       "expenditures": 80000.0,
+       "status": "$177,600.00",
+       "url": "/al/candidate/greg-barnes"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "Alabama House of Representatives District 14",
+   "url": "/al/race/alabama-house-of-representatives-district-14-71165",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 60127.0,
+   "totalExpenditures": 91688.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Tim Wadsworth",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 60127.02,
+       "expenditures": 0.0,
+       "status": "$91,687.88",
+       "url": "/al/candidate/tim-wadsworth"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Tim Wadsworth",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 60127.02,
+       "expenditures": 0.0,
+       "status": "$91,687.88",
+       "url": "/al/candidate/tim-wadsworth"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "Alabama House of Representatives District 15",
+   "url": "/al/race/alabama-house-of-representatives-district-15-71166",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 174122.0,
+   "totalExpenditures": 29134.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Leigh Hulsey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 160303.21,
+       "expenditures": 0.0,
+       "status": "$23,317.69",
+       "url": "/al/candidate/leigh-hulsey"
+      },
+      {
+       "name": "Nell Brown",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13818.99,
+       "expenditures": 0.0,
+       "status": "$5,816.30",
+       "url": "/al/candidate/nell-brown"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Nell Brown",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13818.99,
+       "expenditures": 0.0,
+       "status": "$5,816.30",
+       "url": "/al/candidate/nell-brown"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Leigh Hulsey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 160303.21,
+       "expenditures": 0.0,
+       "status": "$23,317.69",
+       "url": "/al/candidate/leigh-hulsey"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "Alabama House of Representatives District 16",
+   "url": "/al/race/alabama-house-of-representatives-district-16-71167",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 132790.0,
+   "totalExpenditures": 36493.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Bryan Brinyark",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 130000.0,
+       "expenditures": 0.0,
+       "status": "$34,042.62",
+       "url": "/al/candidate/bryan-brinyark"
+      },
+      {
+       "name": "Christian Alan Martin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2789.69,
+       "expenditures": 0.0,
+       "status": "$2,450.61",
+       "url": "/al/candidate/christian-alan-martin"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Christian Alan Martin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2789.69,
+       "expenditures": 0.0,
+       "status": "$2,450.61",
+       "url": "/al/candidate/christian-alan-martin"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Bryan Brinyark",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 130000.0,
+       "expenditures": 0.0,
+       "status": "$34,042.62",
+       "url": "/al/candidate/bryan-brinyark"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "Alabama House of Representatives District 17",
+   "url": "/al/race/alabama-house-of-representatives-district-17-71168",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 368546.0,
+   "totalExpenditures": 239440.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Phillip Segraves",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 200106.38,
+       "expenditures": 0.0,
+       "status": "$102,961.30",
+       "url": "/al/candidate/phillip-segraves"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Runoff Election",
+     "date": "June 16, 2026",
+     "candidates": [
+      {
+       "name": "Phillip Segraves",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 200106.38,
+       "expenditures": 0.0,
+       "status": "$102,961.30",
+       "url": "/al/candidate/phillip-segraves"
+      },
+      {
+       "name": "Micheal Beck",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 58436.71,
+       "expenditures": 50000.0,
+       "status": "$98,378.86",
+       "url": "/al/candidate/micheal-beck"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Micheal Beck",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 58436.71,
+       "expenditures": 50000.0,
+       "status": "$98,378.86",
+       "url": "/al/candidate/micheal-beck"
+      },
+      {
+       "name": "Phillip Segraves",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 200106.38,
+       "expenditures": 0.0,
+       "status": "$102,961.30",
+       "url": "/al/candidate/phillip-segraves"
+      },
+      {
+       "name": "Kevin Bradford",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 110003.34,
+       "expenditures": 0.0,
+       "status": "$38,100.00",
+       "url": "/al/candidate/kevin-bradford"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "Alabama House of Representatives District 18",
+   "url": "/al/race/alabama-house-of-representatives-district-18-71169",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 79510.0,
+   "totalExpenditures": 20488.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jamie Kiel",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 79510.0,
+       "expenditures": 0.0,
+       "status": "$20,488.01",
+       "url": "/al/candidate/jamie-kiel"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Jamie Kiel",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 79510.0,
+       "expenditures": 0.0,
+       "status": "$20,488.01",
+       "url": "/al/candidate/jamie-kiel"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "Alabama House of Representatives District 19",
+   "url": "/al/race/alabama-house-of-representatives-district-19-71170",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 181553.0,
+   "totalExpenditures": 97120.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Laura Hall",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 177934.42,
+       "expenditures": 0.0,
+       "status": "$97,112.64",
+       "url": "/al/candidate/laura-hall"
+      },
+      {
+       "name": "Donald Barnes",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3618.4,
+       "expenditures": 1500.0,
+       "status": "$7.08",
+       "url": "/al/candidate/donald-barnes"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Laura Hall",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 177934.42,
+       "expenditures": 0.0,
+       "status": "$97,112.64",
+       "url": "/al/candidate/laura-hall"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Donald Barnes",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3618.4,
+       "expenditures": 1500.0,
+       "status": "$7.08",
+       "url": "/al/candidate/donald-barnes"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "Alabama House of Representatives District 2",
+   "url": "/al/race/alabama-house-of-representatives-district-2-71171",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 73072.0,
+   "totalExpenditures": 51044.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Benjamin Harrison",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 69815.77,
+       "expenditures": 14343.03,
+       "status": "$47,185.35",
+       "url": "/al/candidate/benjamin-harrison"
+      },
+      {
+       "name": "Rick Pressnell",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3255.85,
+       "expenditures": 3000.0,
+       "status": "$3,858.99",
+       "url": "/al/candidate/rick-pressnell"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Rick Pressnell",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3255.85,
+       "expenditures": 3000.0,
+       "status": "$3,858.99",
+       "url": "/al/candidate/rick-pressnell"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Benjamin Harrison",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 69815.77,
+       "expenditures": 14343.03,
+       "status": "$47,185.35",
+       "url": "/al/candidate/benjamin-harrison"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "Alabama House of Representatives District 20",
+   "url": "/al/race/alabama-house-of-representatives-district-20-71172",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 735212.0,
+   "totalExpenditures": 570231.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "James Lomax",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 653283.24,
+       "expenditures": 0.0,
+       "status": "$447,920.97",
+       "url": "/al/candidate/james-lomax"
+      },
+      {
+       "name": "James Linderholm",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 22278.28,
+       "expenditures": 1000.0,
+       "status": "$5,232.98",
+       "url": "/al/candidate/james-linderholm"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "James Linderholm",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 22278.28,
+       "expenditures": 1000.0,
+       "status": "$5,232.98",
+       "url": "/al/candidate/james-linderholm"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "James Lomax",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 653283.24,
+       "expenditures": 0.0,
+       "status": "$447,920.97",
+       "url": "/al/candidate/james-lomax"
+      },
+      {
+       "name": "Morris Jackson Brooks",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 59650.86,
+       "expenditures": 162666.82,
+       "status": "$117,077.04",
+       "url": "/al/candidate/morris-jackson-brooks"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "Alabama House of Representatives District 21",
+   "url": "/al/race/alabama-house-of-representatives-district-21-71173",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 425333.0,
+   "totalExpenditures": 170773.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Rex Reynolds",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 415475.02,
+       "expenditures": 0.0,
+       "status": "$162,668.57",
+       "url": "/al/candidate/rex-reynolds"
+      },
+      {
+       "name": "Forrest Satterfield",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7426.06,
+       "expenditures": 0.0,
+       "status": "$7,030.37",
+       "url": "/al/candidate/forrest-satterfield"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Forrest Satterfield",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7426.06,
+       "expenditures": 0.0,
+       "status": "$7,030.37",
+       "url": "/al/candidate/forrest-satterfield"
+      },
+      {
+       "name": "Landon Britton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2431.68,
+       "expenditures": 0.0,
+       "status": "$1,074.32",
+       "url": "/al/candidate/landon-britton"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Rex Reynolds",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 415475.02,
+       "expenditures": 0.0,
+       "status": "$162,668.57",
+       "url": "/al/candidate/rex-reynolds"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "Alabama House of Representatives District 22",
+   "url": "/al/race/alabama-house-of-representatives-district-22-71174",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 78427.0,
+   "totalExpenditures": 77398.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ritchie Whorton",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 78427.44,
+       "expenditures": 0.0,
+       "status": "$77,398.40",
+       "url": "/al/candidate/ritchie-whorton"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Ritchie Whorton",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 78427.44,
+       "expenditures": 0.0,
+       "status": "$77,398.40",
+       "url": "/al/candidate/ritchie-whorton"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "Alabama House of Representatives District 23",
+   "url": "/al/race/alabama-house-of-representatives-district-23-71175",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 76000.0,
+   "totalExpenditures": 35260.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Mike Kirkland",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 76000.0,
+       "expenditures": 0.0,
+       "status": "$35,259.92",
+       "url": "/al/candidate/mike-kirkland"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Mike Kirkland",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 76000.0,
+       "expenditures": 0.0,
+       "status": "$35,259.92",
+       "url": "/al/candidate/mike-kirkland"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "Alabama House of Representatives District 24",
+   "url": "/al/race/alabama-house-of-representatives-district-24-71176",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 580500.0,
+   "totalExpenditures": 70220.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Nathaniel Ledbetter",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 580500.0,
+       "expenditures": 0.0,
+       "status": "$70,219.86",
+       "url": "/al/candidate/nathaniel-ledbetter"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Nathaniel Ledbetter",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 580500.0,
+       "expenditures": 0.0,
+       "status": "$70,219.86",
+       "url": "/al/candidate/nathaniel-ledbetter"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "Alabama House of Representatives District 25",
+   "url": "/al/race/alabama-house-of-representatives-district-25-71177",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 163895.0,
+   "totalExpenditures": 124356.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Phillip Rigsby",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 148851.86,
+       "expenditures": 0.0,
+       "status": "$117,107.14",
+       "url": "/al/candidate/phillip-rigsby"
+      },
+      {
+       "name": "Allison Montgomery",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7970.27,
+       "expenditures": 2500.0,
+       "status": "$5,378.26",
+       "url": "/al/candidate/allison-montgomery"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Allison Montgomery",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7970.27,
+       "expenditures": 2500.0,
+       "status": "$5,378.26",
+       "url": "/al/candidate/allison-montgomery"
+      },
+      {
+       "name": "Damon E Eubanks",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7072.54,
+       "expenditures": 0.0,
+       "status": "$1,870.12",
+       "url": "/al/candidate/damon-e-eubanks"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Phillip Rigsby",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 148851.86,
+       "expenditures": 0.0,
+       "status": "$117,107.14",
+       "url": "/al/candidate/phillip-rigsby"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "Alabama House of Representatives District 26",
+   "url": "/al/race/alabama-house-of-representatives-district-26-71178",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "Alabama House of Representatives District 27",
+   "url": "/al/race/alabama-house-of-representatives-district-27-71179",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 86791.0,
+   "totalExpenditures": 25340.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jeana Ross",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 86791.02,
+       "expenditures": 0.0,
+       "status": "$25,340.24",
+       "url": "/al/candidate/jeana-ross"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Jeana Ross",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 86791.02,
+       "expenditures": 0.0,
+       "status": "$25,340.24",
+       "url": "/al/candidate/jeana-ross"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "Alabama House of Representatives District 28",
+   "url": "/al/race/alabama-house-of-representatives-district-28-71180",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 121608.0,
+   "totalExpenditures": 51950.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Mack Butler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 90541.7,
+       "expenditures": 0.0,
+       "status": "$35,168.22",
+       "url": "/al/candidate/mack-butler"
+      },
+      {
+       "name": "Robert Hunter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 31066.63,
+       "expenditures": 100.0,
+       "status": "$16,782.24",
+       "url": "/al/candidate/robert-hunter"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Robert Hunter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 31066.63,
+       "expenditures": 100.0,
+       "status": "$16,782.24",
+       "url": "/al/candidate/robert-hunter"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Mack Butler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 90541.7,
+       "expenditures": 0.0,
+       "status": "$35,168.22",
+       "url": "/al/candidate/mack-butler"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "Alabama House of Representatives District 29",
+   "url": "/al/race/alabama-house-of-representatives-district-29-71181",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 80753.0,
+   "totalExpenditures": 47169.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Mark Gidley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 80752.79,
+       "expenditures": 0.0,
+       "status": "$47,169.24",
+       "url": "/al/candidate/mark-gidley"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Mark Gidley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 80752.79,
+       "expenditures": 0.0,
+       "status": "$47,169.24",
+       "url": "/al/candidate/mark-gidley"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "Alabama House of Representatives District 3",
+   "url": "/al/race/alabama-house-of-representatives-district-3-71182",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 98500.0,
+   "totalExpenditures": 22666.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Kerry Underwood",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 98500.0,
+       "expenditures": 0.0,
+       "status": "$22,665.62",
+       "url": "/al/candidate/kerry-underwood"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Kerry Underwood",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 98500.0,
+       "expenditures": 0.0,
+       "status": "$22,665.62",
+       "url": "/al/candidate/kerry-underwood"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "Alabama House of Representatives District 30",
+   "url": "/al/race/alabama-house-of-representatives-district-30-71183",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 108151.0,
+   "totalExpenditures": 43768.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Brandon Lipscomb",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 108151.4,
+       "expenditures": 0.0,
+       "status": "$43,768.17",
+       "url": "/al/candidate/brandon-lipscomb"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Brandon Lipscomb",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 108151.4,
+       "expenditures": 0.0,
+       "status": "$43,768.17",
+       "url": "/al/candidate/brandon-lipscomb"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "Alabama House of Representatives District 31",
+   "url": "/al/race/alabama-house-of-representatives-district-31-71184",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 93600.0,
+   "totalExpenditures": 47241.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Troy Stubbs",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 93600.0,
+       "expenditures": 0.0,
+       "status": "$47,241.32",
+       "url": "/al/candidate/troy-stubbs"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Troy Stubbs",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 93600.0,
+       "expenditures": 0.0,
+       "status": "$47,241.32",
+       "url": "/al/candidate/troy-stubbs"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "Alabama House of Representatives District 32",
+   "url": "/al/race/alabama-house-of-representatives-district-32-71185",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 152353.0,
+   "totalExpenditures": 132196.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Debra D Foster",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 104695.92,
+       "expenditures": 1500.0,
+       "status": "$81,421.64",
+       "url": "/al/candidate/debra-d-foster"
+      },
+      {
+       "name": "Joey Bryan Callahan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 34391.36,
+       "expenditures": 11000.0,
+       "status": "$29,581.08",
+       "url": "/al/candidate/joey-bryan-callahan"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Debra D Foster",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 104695.92,
+       "expenditures": 1500.0,
+       "status": "$81,421.64",
+       "url": "/al/candidate/debra-d-foster"
+      },
+      {
+       "name": "David Reddick",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13265.81,
+       "expenditures": 16999.71,
+       "status": "$21,193.39",
+       "url": "/al/candidate/david-reddick"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Joey Bryan Callahan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 34391.36,
+       "expenditures": 11000.0,
+       "status": "$29,581.08",
+       "url": "/al/candidate/joey-bryan-callahan"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "Alabama House of Representatives District 33",
+   "url": "/al/race/alabama-house-of-representatives-district-33-71186",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 44500.0,
+   "totalExpenditures": 51130.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Benjamin Robbins",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 44500.0,
+       "expenditures": 0.0,
+       "status": "$51,129.63",
+       "url": "/al/candidate/benjamin-robbins"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Benjamin Robbins",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 44500.0,
+       "expenditures": 0.0,
+       "status": "$51,129.63",
+       "url": "/al/candidate/benjamin-robbins"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "Alabama House of Representatives District 34",
+   "url": "/al/race/alabama-house-of-representatives-district-34-71187",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 65500.0,
+   "totalExpenditures": 22828.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "David Standridge",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 65500.0,
+       "expenditures": 0.0,
+       "status": "$22,828.40",
+       "url": "/al/candidate/david-standridge"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "David Standridge",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 65500.0,
+       "expenditures": 0.0,
+       "status": "$22,828.40",
+       "url": "/al/candidate/david-standridge"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "Alabama House of Representatives District 35",
+   "url": "/al/race/alabama-house-of-representatives-district-35-71188",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 80104.0,
+   "totalExpenditures": 32116.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Stephen Hurst",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 76340.18,
+       "expenditures": 0.0,
+       "status": "$28,194.07",
+       "url": "/al/candidate/stephen-hurst"
+      },
+      {
+       "name": "Joseph Cleveland",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 3763.53,
+       "expenditures": 0.0,
+       "status": "$3,922.33",
+       "url": "/al/candidate/joseph-cleveland"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Stephen Hurst",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 76340.18,
+       "expenditures": 0.0,
+       "status": "$28,194.07",
+       "url": "/al/candidate/stephen-hurst"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "Alabama House of Representatives District 36",
+   "url": "/al/race/alabama-house-of-representatives-district-36-71189",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 85500.0,
+   "totalExpenditures": 54696.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Randy Wood",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 85500.0,
+       "expenditures": 0.0,
+       "status": "$54,696.45",
+       "url": "/al/candidate/randy-wood"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Randy Wood",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 85500.0,
+       "expenditures": 0.0,
+       "status": "$54,696.45",
+       "url": "/al/candidate/randy-wood"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "Alabama House of Representatives District 37",
+   "url": "/al/race/alabama-house-of-representatives-district-37-71190",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 241519.0,
+   "totalExpenditures": 252000.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Michelle R French",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 14672.42,
+       "expenditures": 0.0,
+       "status": "$13,536.63",
+       "url": "/al/candidate/michelle-r-french"
+      },
+      {
+       "name": "Jeffrey Monroe",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 146485.38,
+       "expenditures": 69660.4,
+       "status": "$135,389.94",
+       "url": "/al/candidate/jeffrey-monroe"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Runoff Election",
+     "date": "June 16, 2026",
+     "candidates": [
+      {
+       "name": "Jeffrey Monroe",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 146485.38,
+       "expenditures": 69660.4,
+       "status": "$135,389.94",
+       "url": "/al/candidate/jeffrey-monroe"
+      },
+      {
+       "name": "John Jacobs",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 79411.06,
+       "expenditures": 10000.0,
+       "status": "$82,342.94",
+       "url": "/al/candidate/john-jacobs"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Michelle R French",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 14672.42,
+       "expenditures": 0.0,
+       "status": "$13,536.63",
+       "url": "/al/candidate/michelle-r-french"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "John Jacobs",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 79411.06,
+       "expenditures": 10000.0,
+       "status": "$82,342.94",
+       "url": "/al/candidate/john-jacobs"
+      },
+      {
+       "name": "Jeffrey Monroe",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 146485.38,
+       "expenditures": 69660.4,
+       "status": "$135,389.94",
+       "url": "/al/candidate/jeffrey-monroe"
+      },
+      {
+       "name": "Donna Mckay",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 950.0,
+       "expenditures": 0.0,
+       "status": "$20,730.70",
+       "url": "/al/candidate/donna-mckay"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "Alabama House of Representatives District 38",
+   "url": "/al/race/alabama-house-of-representatives-district-38-71191",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 312579.0,
+   "totalExpenditures": 216451.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Kristin Nelson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 277290.9,
+       "expenditures": 250.0,
+       "status": "$179,858.93",
+       "url": "/al/candidate/kristin-nelson"
+      },
+      {
+       "name": "Hazel Floyd",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5799.89,
+       "expenditures": 0.0,
+       "status": "$3,643.07",
+       "url": "/al/candidate/hazel-floyd"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Hazel Floyd",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5799.89,
+       "expenditures": 0.0,
+       "status": "$3,643.07",
+       "url": "/al/candidate/hazel-floyd"
+      },
+      {
+       "name": "Christopher Davis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 400.0,
+       "expenditures": 3220.0,
+       "status": "$3,441.80",
+       "url": "/al/candidate/christopher-davis"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Kristin Nelson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 277290.9,
+       "expenditures": 250.0,
+       "status": "$179,858.93",
+       "url": "/al/candidate/kristin-nelson"
+      },
+      {
+       "name": "Micah Messer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 29087.87,
+       "expenditures": 0.0,
+       "status": "$29,507.05",
+       "url": "/al/candidate/micah-messer"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "Alabama House of Representatives District 39",
+   "url": "/al/race/alabama-house-of-representatives-district-39-71192",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 99452.0,
+   "totalExpenditures": 44480.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ginny Shaver",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 99451.6,
+       "expenditures": 0.0,
+       "status": "$44,480.47",
+       "url": "/al/candidate/ginny-shaver"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Ginny Shaver",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 99451.6,
+       "expenditures": 0.0,
+       "status": "$44,480.47",
+       "url": "/al/candidate/ginny-shaver"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "Alabama House of Representatives District 4",
+   "url": "/al/race/alabama-house-of-representatives-district-4-71193",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 139921.0,
+   "totalExpenditures": 53581.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Parker Moore",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 110242.88,
+       "expenditures": 0.0,
+       "status": "$46,558.87",
+       "url": "/al/candidate/parker-moore"
+      },
+      {
+       "name": "Venkata Hanumantha Rao Karlapalem",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 29678.02,
+       "expenditures": 1489.0,
+       "status": "$7,022.03",
+       "url": "/al/candidate/venkata-hanumantha-rao-karlapalem"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Venkata Hanumantha Rao Karlapalem",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 29678.02,
+       "expenditures": 1489.0,
+       "status": "$7,022.03",
+       "url": "/al/candidate/venkata-hanumantha-rao-karlapalem"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Parker Moore",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 110242.88,
+       "expenditures": 0.0,
+       "status": "$46,558.87",
+       "url": "/al/candidate/parker-moore"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "Alabama House of Representatives District 40",
+   "url": "/al/race/alabama-house-of-representatives-district-40-71194",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 48610.0,
+   "totalExpenditures": 32668.0,
+   "elections": [
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Kaycee Cavender",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17170.05,
+       "expenditures": 0.0,
+       "status": "$10,331.83",
+       "url": "/al/candidate/kaycee-cavender"
+      },
+      {
+       "name": "William Lester",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 14537.98,
+       "status": "$14,537.98",
+       "url": "/al/candidate/william-lester"
+      },
+      {
+       "name": "Bill Mcadams",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 31439.96,
+       "expenditures": 0.0,
+       "status": "$7,798.05",
+       "url": "/al/candidate/bill-mcadams"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "Alabama House of Representatives District 41",
+   "url": "/al/race/alabama-house-of-representatives-district-41-71195",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 166319.0,
+   "totalExpenditures": 45957.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Corley Ellis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 162800.0,
+       "expenditures": 0.0,
+       "status": "$43,150.08",
+       "url": "/al/candidate/corley-ellis"
+      },
+      {
+       "name": "David Morgan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3519.25,
+       "expenditures": 0.0,
+       "status": "$2,806.73",
+       "url": "/al/candidate/david-morgan"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "David Morgan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3519.25,
+       "expenditures": 0.0,
+       "status": "$2,806.73",
+       "url": "/al/candidate/david-morgan"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Corley Ellis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 162800.0,
+       "expenditures": 0.0,
+       "status": "$43,150.08",
+       "url": "/al/candidate/corley-ellis"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "Alabama House of Representatives District 42",
+   "url": "/al/race/alabama-house-of-representatives-district-42-71196",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 55609.0,
+   "totalExpenditures": 23920.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ivan Smith",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 55609.0,
+       "expenditures": 0.0,
+       "status": "$23,920.29",
+       "url": "/al/candidate/ivan-smith"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Ivan Smith",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 55609.0,
+       "expenditures": 0.0,
+       "status": "$23,920.29",
+       "url": "/al/candidate/ivan-smith"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "Alabama House of Representatives District 43",
+   "url": "/al/race/alabama-house-of-representatives-district-43-71197",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 213003.0,
+   "totalExpenditures": 64703.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Arnold Mooney",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 207628.38,
+       "expenditures": 500.0,
+       "status": "$60,812.57",
+       "url": "/al/candidate/arnold-mooney"
+      },
+      {
+       "name": "Taylor Cook",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5374.94,
+       "expenditures": 705.0,
+       "status": "$3,890.18",
+       "url": "/al/candidate/taylor-cook"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Taylor Cook",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5374.94,
+       "expenditures": 705.0,
+       "status": "$3,890.18",
+       "url": "/al/candidate/taylor-cook"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Arnold Mooney",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 207628.38,
+       "expenditures": 500.0,
+       "status": "$60,812.57",
+       "url": "/al/candidate/arnold-mooney"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "Alabama House of Representatives District 44",
+   "url": "/al/race/alabama-house-of-representatives-district-44-71198",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "Alabama House of Representatives District 45",
+   "url": "/al/race/alabama-house-of-representatives-district-45-71199",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 229578.0,
+   "totalExpenditures": 112142.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Susan Dubose",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 214134.24,
+       "expenditures": 0.0,
+       "status": "$101,650.02",
+       "url": "/al/candidate/susan-dubose"
+      },
+      {
+       "name": "Toni Vaughn",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15443.42,
+       "expenditures": 0.0,
+       "status": "$10,491.51",
+       "url": "/al/candidate/toni-vaughn"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Toni Vaughn",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15443.42,
+       "expenditures": 0.0,
+       "status": "$10,491.51",
+       "url": "/al/candidate/toni-vaughn"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Susan Dubose",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 214134.24,
+       "expenditures": 0.0,
+       "status": "$101,650.02",
+       "url": "/al/candidate/susan-dubose"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "Alabama House of Representatives District 46",
+   "url": "/al/race/alabama-house-of-representatives-district-46-71200",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 128500.0,
+   "totalExpenditures": 40506.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "David Faulkner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 128500.0,
+       "expenditures": 0.0,
+       "status": "$40,505.62",
+       "url": "/al/candidate/david-faulkner"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "David Faulkner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 128500.0,
+       "expenditures": 0.0,
+       "status": "$40,505.62",
+       "url": "/al/candidate/david-faulkner"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "Alabama House of Representatives District 47",
+   "url": "/al/race/alabama-house-of-representatives-district-47-71201",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 338854.0,
+   "totalExpenditures": 203112.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Michael Shaw",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 314971.35,
+       "expenditures": 25000.0,
+       "status": "$167,375.16",
+       "url": "/al/candidate/michael-shaw"
+      },
+      {
+       "name": "James Toomey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 23882.76,
+       "expenditures": 30121.6,
+       "status": "$35,737.29",
+       "url": "/al/candidate/james-toomey"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "James Toomey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 23882.76,
+       "expenditures": 30121.6,
+       "status": "$35,737.29",
+       "url": "/al/candidate/james-toomey"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Michael Shaw",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 314971.35,
+       "expenditures": 25000.0,
+       "status": "$167,375.16",
+       "url": "/al/candidate/michael-shaw"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "Alabama House of Representatives District 48",
+   "url": "/al/race/alabama-house-of-representatives-district-48-71202",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 710050.0,
+   "totalExpenditures": 1155092.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Lloyd Chandler Peeples",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 335483.6,
+       "expenditures": 445000.0,
+       "status": "$788,095.07",
+       "url": "/al/candidate/lloyd-chandler-peeples"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Lloyd Chandler Peeples",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 335483.6,
+       "expenditures": 445000.0,
+       "status": "$788,095.07",
+       "url": "/al/candidate/lloyd-chandler-peeples"
+      },
+      {
+       "name": "Jim Carns",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 273806.84,
+       "expenditures": 0.0,
+       "status": "$278,534.24",
+       "url": "/al/candidate/jim-carns"
+      },
+      {
+       "name": "William Wentowski",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 100759.3,
+       "expenditures": 0.0,
+       "status": "$88,463.03",
+       "url": "/al/candidate/william-wentowski"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "Alabama House of Representatives District 49",
+   "url": "/al/race/alabama-house-of-representatives-district-49-71203",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 66500.0,
+   "totalExpenditures": 8768.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Russell Bedsole",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 66500.0,
+       "expenditures": 0.0,
+       "status": "$8,767.65",
+       "url": "/al/candidate/russell-bedsole"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Russell Bedsole",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 66500.0,
+       "expenditures": 0.0,
+       "status": "$8,767.65",
+       "url": "/al/candidate/russell-bedsole"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "Alabama House of Representatives District 5",
+   "url": "/al/race/alabama-house-of-representatives-district-5-71204",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 130204.0,
+   "totalExpenditures": 10610.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Danny Crawford",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 121741.47,
+       "expenditures": 0.0,
+       "status": "$7,345.35",
+       "url": "/al/candidate/danny-crawford"
+      },
+      {
+       "name": "Jessie Barcala",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8462.66,
+       "expenditures": 0.0,
+       "status": "$3,264.95",
+       "url": "/al/candidate/jessie-barcala"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Jessie Barcala",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8462.66,
+       "expenditures": 0.0,
+       "status": "$3,264.95",
+       "url": "/al/candidate/jessie-barcala"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Danny Crawford",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 121741.47,
+       "expenditures": 0.0,
+       "status": "$7,345.35",
+       "url": "/al/candidate/danny-crawford"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "Alabama House of Representatives District 50",
+   "url": "/al/race/alabama-house-of-representatives-district-50-71205",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 70408.0,
+   "totalExpenditures": 62267.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "William L Morris",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 69950.02,
+       "expenditures": 0.0,
+       "status": "$56,587.92",
+       "url": "/al/candidate/william-l-morris"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "William L Morris",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 69950.02,
+       "expenditures": 0.0,
+       "status": "$56,587.92",
+       "url": "/al/candidate/william-l-morris"
+      },
+      {
+       "name": "Bryan Newell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 457.54,
+       "expenditures": 5303.45,
+       "status": "$5,678.99",
+       "url": "/al/candidate/bryan-newell"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "Alabama House of Representatives District 51",
+   "url": "/al/race/alabama-house-of-representatives-district-51-71206",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "Alabama House of Representatives District 52",
+   "url": "/al/race/alabama-house-of-representatives-district-52-71207",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 118258.0,
+   "totalExpenditures": 105879.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Gigi Hayes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 51692.39,
+       "expenditures": 10200.0,
+       "status": "$45,128.18",
+       "url": "/al/candidate/gigi-hayes"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Runoff Election",
+     "date": "June 16, 2026",
+     "candidates": [
+      {
+       "name": "Gigi Hayes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 51692.39,
+       "expenditures": 10200.0,
+       "status": "$45,128.18",
+       "url": "/al/candidate/gigi-hayes"
+      },
+      {
+       "name": "Latanya Millhouse",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4335.59,
+       "expenditures": 0.0,
+       "status": "$5,004.71",
+       "url": "/al/candidate/latanya-millhouse"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Gigi Hayes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 51692.39,
+       "expenditures": 10200.0,
+       "status": "$45,128.18",
+       "url": "/al/candidate/gigi-hayes"
+      },
+      {
+       "name": "Latanya Millhouse",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4335.59,
+       "expenditures": 0.0,
+       "status": "$5,004.71",
+       "url": "/al/candidate/latanya-millhouse"
+      },
+      {
+       "name": "Kelvin Datcher",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 62229.65,
+       "expenditures": 0.0,
+       "status": "$55,745.62",
+       "url": "/al/candidate/kelvin-datcher"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "Alabama House of Representatives District 53",
+   "url": "/al/race/alabama-house-of-representatives-district-53-71208",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 190632.0,
+   "totalExpenditures": 105843.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Anthony Daniels",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 190632.3,
+       "expenditures": 0.0,
+       "status": "$105,842.78",
+       "url": "/al/candidate/anthony-daniels"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Anthony Daniels",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 190632.3,
+       "expenditures": 0.0,
+       "status": "$105,842.78",
+       "url": "/al/candidate/anthony-daniels"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "Alabama House of Representatives District 54",
+   "url": "/al/race/alabama-house-of-representatives-district-54-71209",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 223938.0,
+   "totalExpenditures": 88278.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Neil Rafferty",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 210798.22,
+       "expenditures": 0.0,
+       "status": "$88,278.07",
+       "url": "/al/candidate/neil-rafferty"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Neil Rafferty",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 210798.22,
+       "expenditures": 0.0,
+       "status": "$88,278.07",
+       "url": "/al/candidate/neil-rafferty"
+      },
+      {
+       "name": "Joseph Holt",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13140.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/al/candidate/joseph-holt"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "Alabama House of Representatives District 55",
+   "url": "/al/race/alabama-house-of-representatives-district-55-71210",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 130070.0,
+   "totalExpenditures": 51073.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Travis Hendrix",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 123969.6,
+       "expenditures": 0.0,
+       "status": "$49,739.71",
+       "url": "/al/candidate/travis-hendrix"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Travis Hendrix",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 123969.6,
+       "expenditures": 0.0,
+       "status": "$49,739.71",
+       "url": "/al/candidate/travis-hendrix"
+      },
+      {
+       "name": "Eric Major",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6100.0,
+       "expenditures": 0.0,
+       "status": "$1,333.18",
+       "url": "/al/candidate/eric-major"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "Alabama House of Representatives District 56",
+   "url": "/al/race/alabama-house-of-representatives-district-56-71211",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 76965.0,
+   "totalExpenditures": 48538.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ontario Tillman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 76965.0,
+       "expenditures": 0.0,
+       "status": "$48,538.46",
+       "url": "/al/candidate/ontario-tillman"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Ontario Tillman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 76965.0,
+       "expenditures": 0.0,
+       "status": "$48,538.46",
+       "url": "/al/candidate/ontario-tillman"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "Alabama House of Representatives District 57",
+   "url": "/al/race/alabama-house-of-representatives-district-57-71212",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 200076.0,
+   "totalExpenditures": 165688.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Patrick Sellers",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 198395.93,
+       "expenditures": 0.0,
+       "status": "$151,901.00",
+       "url": "/al/candidate/patrick-sellers"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Patrick Sellers",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 198395.93,
+       "expenditures": 0.0,
+       "status": "$151,901.00",
+       "url": "/al/candidate/patrick-sellers"
+      },
+      {
+       "name": "Mara Ruffin Blackmon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1680.0,
+       "expenditures": 8000.0,
+       "status": "$13,786.79",
+       "url": "/al/candidate/mara-ruffin-blackmon"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "Alabama House of Representatives District 58",
+   "url": "/al/race/alabama-house-of-representatives-district-58-71213",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 78400.0,
+   "totalExpenditures": 40677.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Rolanda Hollis",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 78400.0,
+       "expenditures": 0.0,
+       "status": "$40,676.92",
+       "url": "/al/candidate/rolanda-hollis"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Rolanda Hollis",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 78400.0,
+       "expenditures": 0.0,
+       "status": "$40,676.92",
+       "url": "/al/candidate/rolanda-hollis"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "Alabama House of Representatives District 59",
+   "url": "/al/race/alabama-house-of-representatives-district-59-71214",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 48500.0,
+   "totalExpenditures": 21314.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Mary Moore",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 48500.0,
+       "expenditures": 0.0,
+       "status": "$21,314.21",
+       "url": "/al/candidate/mary-moore"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Mary Moore",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 48500.0,
+       "expenditures": 0.0,
+       "status": "$21,314.21",
+       "url": "/al/candidate/mary-moore"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "Alabama House of Representatives District 6",
+   "url": "/al/race/alabama-house-of-representatives-district-6-71215",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 221465.0,
+   "totalExpenditures": 29538.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Andy Whitt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 221464.7,
+       "expenditures": 0.0,
+       "status": "$29,537.52",
+       "url": "/al/candidate/andy-whitt"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Andy Whitt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 221464.7,
+       "expenditures": 0.0,
+       "status": "$29,537.52",
+       "url": "/al/candidate/andy-whitt"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "Alabama House of Representatives District 60",
+   "url": "/al/race/alabama-house-of-representatives-district-60-71216",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 397752.0,
+   "totalExpenditures": 260291.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Alicia Ruth Lumpkin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 309652.12,
+       "expenditures": 0.0,
+       "status": "$221,191.24",
+       "url": "/al/candidate/alicia-ruth-lumpkin"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Alicia Ruth Lumpkin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 309652.12,
+       "expenditures": 0.0,
+       "status": "$221,191.24",
+       "url": "/al/candidate/alicia-ruth-lumpkin"
+      },
+      {
+       "name": "Juandalynn Givan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 88100.0,
+       "expenditures": 0.0,
+       "status": "$39,099.92",
+       "url": "/al/candidate/juandalynn-givan"
+      },
+      {
+       "name": "Nina Taylor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/al/candidate/nina-taylor"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "Alabama House of Representatives District 61",
+   "url": "/al/race/alabama-house-of-representatives-district-61-71217",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 63110.0,
+   "totalExpenditures": 13316.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ronald Bolton",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 63110.0,
+       "expenditures": 0.0,
+       "status": "$13,316.05",
+       "url": "/al/candidate/ronald-bolton"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Ronald Bolton",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 63110.0,
+       "expenditures": 0.0,
+       "status": "$13,316.05",
+       "url": "/al/candidate/ronald-bolton"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "Alabama House of Representatives District 62",
+   "url": "/al/race/alabama-house-of-representatives-district-62-71218",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 39500.0,
+   "totalExpenditures": 26283.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Bill Lamb",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 39500.0,
+       "expenditures": 0.0,
+       "status": "$26,283.18",
+       "url": "/al/candidate/bill-lamb"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Bill Lamb",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 39500.0,
+       "expenditures": 0.0,
+       "status": "$26,283.18",
+       "url": "/al/candidate/bill-lamb"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "Alabama House of Representatives District 63",
+   "url": "/al/race/alabama-house-of-representatives-district-63-71219",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 395843.0,
+   "totalExpenditures": 142710.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Norman Crow",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 377578.59,
+       "expenditures": 0.0,
+       "status": "$124,879.32",
+       "url": "/al/candidate/norman-crow"
+      },
+      {
+       "name": "Judith Taylor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18264.13,
+       "expenditures": 4500.0,
+       "status": "$17,830.25",
+       "url": "/al/candidate/judith-taylor"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Judith Taylor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18264.13,
+       "expenditures": 4500.0,
+       "status": "$17,830.25",
+       "url": "/al/candidate/judith-taylor"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Norman Crow",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 377578.59,
+       "expenditures": 0.0,
+       "status": "$124,879.32",
+       "url": "/al/candidate/norman-crow"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "63"
+  },
+  {
+   "office": "Alabama House of Representatives District 64",
+   "url": "/al/race/alabama-house-of-representatives-district-64-71220",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 159220.0,
+   "totalExpenditures": 95077.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Donna Givens",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 159220.0,
+       "expenditures": 0.0,
+       "status": "$95,076.78",
+       "url": "/al/candidate/donna-givens"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Donna Givens",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 159220.0,
+       "expenditures": 0.0,
+       "status": "$95,076.78",
+       "url": "/al/candidate/donna-givens"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "64"
+  },
+  {
+   "office": "Alabama House of Representatives District 65",
+   "url": "/al/race/alabama-house-of-representatives-district-65-71221",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 160299.0,
+   "totalExpenditures": 50770.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "John Knapp",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25527.96,
+       "expenditures": 0.0,
+       "status": "$16,786.63",
+       "url": "/al/candidate/john-knapp"
+      },
+      {
+       "name": "Elaine Beech",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 77310.4,
+       "expenditures": 1456.03,
+       "status": "$10,240.33",
+       "url": "/al/candidate/elaine-beech"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "John Knapp",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25527.96,
+       "expenditures": 0.0,
+       "status": "$16,786.63",
+       "url": "/al/candidate/john-knapp"
+      },
+      {
+       "name": "Jessica Ross",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57460.9,
+       "expenditures": 1000.0,
+       "status": "$23,743.48",
+       "url": "/al/candidate/jessica-ross"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "65"
+  },
+  {
+   "office": "Alabama House of Representatives District 66",
+   "url": "/al/race/alabama-house-of-representatives-district-66-71222",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 86500.0,
+   "totalExpenditures": 26220.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Alan Baker",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 86500.0,
+       "expenditures": 0.0,
+       "status": "$26,219.54",
+       "url": "/al/candidate/alan-baker"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Alan Baker",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 86500.0,
+       "expenditures": 0.0,
+       "status": "$26,219.54",
+       "url": "/al/candidate/alan-baker"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "66"
+  },
+  {
+   "office": "Alabama House of Representatives District 67",
+   "url": "/al/race/alabama-house-of-representatives-district-67-71223",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 53900.0,
+   "totalExpenditures": 14076.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Prince Chestnut",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 53900.0,
+       "expenditures": 0.0,
+       "status": "$14,075.51",
+       "url": "/al/candidate/prince-chestnut"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Prince Chestnut",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 53900.0,
+       "expenditures": 0.0,
+       "status": "$14,075.51",
+       "url": "/al/candidate/prince-chestnut"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "67"
+  },
+  {
+   "office": "Alabama House of Representatives District 68",
+   "url": "/al/race/alabama-house-of-representatives-district-68-71224",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 118258.0,
+   "totalExpenditures": 107980.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Thomas Action Jackson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 118258.02,
+       "expenditures": 0.0,
+       "status": "$107,979.56",
+       "url": "/al/candidate/thomas-action-jackson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Thomas Action Jackson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 118258.02,
+       "expenditures": 0.0,
+       "status": "$107,979.56",
+       "url": "/al/candidate/thomas-action-jackson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "68"
+  },
+  {
+   "office": "Alabama House of Representatives District 69",
+   "url": "/al/race/alabama-house-of-representatives-district-69-71225",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 286618.0,
+   "totalExpenditures": 200265.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Kelvin Lawrence",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 240523.99,
+       "expenditures": 0.0,
+       "status": "$160,422.27",
+       "url": "/al/candidate/kelvin-lawrence"
+      },
+      {
+       "name": "Joshua Pendergrass",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35120.01,
+       "expenditures": 0.0,
+       "status": "$39,202.80",
+       "url": "/al/candidate/joshua-pendergrass"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Kelvin Lawrence",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 240523.99,
+       "expenditures": 0.0,
+       "status": "$160,422.27",
+       "url": "/al/candidate/kelvin-lawrence"
+      },
+      {
+       "name": "Marshae Madison",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10973.66,
+       "expenditures": 0.0,
+       "status": "$640.00",
+       "url": "/al/candidate/marshae-madison"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Joshua Pendergrass",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35120.01,
+       "expenditures": 0.0,
+       "status": "$39,202.80",
+       "url": "/al/candidate/joshua-pendergrass"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "69"
+  },
+  {
+   "office": "Alabama House of Representatives District 7",
+   "url": "/al/race/alabama-house-of-representatives-district-7-71226",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 97983.0,
+   "totalExpenditures": 172214.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ernie Yarbrough",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 83785.0,
+       "expenditures": 3900.0,
+       "status": "$45,444.27",
+       "url": "/al/candidate/ernie-yarbrough"
+      },
+      {
+       "name": "Trent Ford",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 12198.48,
+       "expenditures": 0.0,
+       "status": "$6,875.94",
+       "url": "/al/candidate/trent-ford"
+      },
+      {
+       "name": "Angelo Mancuso",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 2000.0,
+       "expenditures": 138704.0,
+       "status": "$119,893.89",
+       "url": "/al/candidate/angelo-mancuso"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Ernie Yarbrough",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 83785.0,
+       "expenditures": 3900.0,
+       "status": "$45,444.27",
+       "url": "/al/candidate/ernie-yarbrough"
+      },
+      {
+       "name": "Angelo Mancuso",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 2000.0,
+       "expenditures": 138704.0,
+       "status": "$119,893.89",
+       "url": "/al/candidate/angelo-mancuso"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "Alabama House of Representatives District 70",
+   "url": "/al/race/alabama-house-of-representatives-district-70-71227",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 163169.0,
+   "totalExpenditures": 30752.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Christopher England",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 158749.92,
+       "expenditures": 0.0,
+       "status": "$28,447.39",
+       "url": "/al/candidate/christopher-england"
+      },
+      {
+       "name": "Ian Chwatuk",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4418.98,
+       "expenditures": 0.0,
+       "status": "$2,304.97",
+       "url": "/al/candidate/ian-chwatuk"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Christopher England",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 158749.92,
+       "expenditures": 0.0,
+       "status": "$28,447.39",
+       "url": "/al/candidate/christopher-england"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Ian Chwatuk",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4418.98,
+       "expenditures": 0.0,
+       "status": "$2,304.97",
+       "url": "/al/candidate/ian-chwatuk"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "70"
+  },
+  {
+   "office": "Alabama House of Representatives District 71",
+   "url": "/al/race/alabama-house-of-representatives-district-71-71228",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 113908.0,
+   "totalExpenditures": 40124.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Artis Mccampbell",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 113908.02,
+       "expenditures": 0.0,
+       "status": "$40,123.98",
+       "url": "/al/candidate/artis-mccampbell"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Artis Mccampbell",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 113908.02,
+       "expenditures": 0.0,
+       "status": "$40,123.98",
+       "url": "/al/candidate/artis-mccampbell"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "71"
+  },
+  {
+   "office": "Alabama House of Representatives District 72",
+   "url": "/al/race/alabama-house-of-representatives-district-72-71229",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 250778.0,
+   "totalExpenditures": 171468.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Curtis Travis",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 245891.6,
+       "expenditures": 0.0,
+       "status": "$166,747.21",
+       "url": "/al/candidate/curtis-travis"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Curtis Travis",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 245891.6,
+       "expenditures": 0.0,
+       "status": "$166,747.21",
+       "url": "/al/candidate/curtis-travis"
+      },
+      {
+       "name": "Michael Williams",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4886.52,
+       "expenditures": 0.0,
+       "status": "$4,720.68",
+       "url": "/al/candidate/michael-williams"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "72"
+  },
+  {
+   "office": "Alabama House of Representatives District 73",
+   "url": "/al/race/alabama-house-of-representatives-district-73-71230",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 58080.0,
+   "totalExpenditures": 26074.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Kenneth Paschal",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 58080.0,
+       "expenditures": 0.0,
+       "status": "$26,074.35",
+       "url": "/al/candidate/kenneth-paschal"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Kenneth Paschal",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 58080.0,
+       "expenditures": 0.0,
+       "status": "$26,074.35",
+       "url": "/al/candidate/kenneth-paschal"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "73"
+  },
+  {
+   "office": "Alabama House of Representatives District 74",
+   "url": "/al/race/alabama-house-of-representatives-district-74-71231",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 360061.0,
+   "totalExpenditures": 117305.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jasmyne Crimiel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 106959.13,
+       "expenditures": 0.0,
+       "status": "$71,878.09",
+       "url": "/al/candidate/jasmyne-crimiel"
+      },
+      {
+       "name": "Alva Lambert",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 133942.06,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/al/candidate/alva-lambert"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Jasmyne Crimiel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 106959.13,
+       "expenditures": 0.0,
+       "status": "$71,878.09",
+       "url": "/al/candidate/jasmyne-crimiel"
+      },
+      {
+       "name": "Austin Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 119159.97,
+       "expenditures": 0.0,
+       "status": "$45,426.56",
+       "url": "/al/candidate/austin-smith"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Alva Lambert",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 133942.06,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/al/candidate/alva-lambert"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "74"
+  },
+  {
+   "office": "Alabama House of Representatives District 75",
+   "url": "/al/race/alabama-house-of-representatives-district-75-71232",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 4103.0,
+   "totalExpenditures": 4702.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Tisha Dickson Nickson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4103.3,
+       "expenditures": 400.0,
+       "status": "$4,701.57",
+       "url": "/al/candidate/tisha-dickson-nickson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Tisha Dickson Nickson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4103.3,
+       "expenditures": 400.0,
+       "status": "$4,701.57",
+       "url": "/al/candidate/tisha-dickson-nickson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "75"
+  },
+  {
+   "office": "Alabama House of Representatives District 76",
+   "url": "/al/race/alabama-house-of-representatives-district-76-71233",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 112109.0,
+   "totalExpenditures": 76433.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Patrice Mcclammy",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 109042.38,
+       "expenditures": 0.0,
+       "status": "$76,333.07",
+       "url": "/al/candidate/patrice-mcclammy"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Patrice Mcclammy",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 109042.38,
+       "expenditures": 0.0,
+       "status": "$76,333.07",
+       "url": "/al/candidate/patrice-mcclammy"
+      },
+      {
+       "name": "Terance Dawson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3066.36,
+       "expenditures": 0.0,
+       "status": "$100.00",
+       "url": "/al/candidate/terance-dawson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "76"
+  },
+  {
+   "office": "Alabama House of Representatives District 77",
+   "url": "/al/race/alabama-house-of-representatives-district-77-71234",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 61008.0,
+   "totalExpenditures": 57238.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Tashina Morris",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 61008.02,
+       "expenditures": 0.0,
+       "status": "$57,238.18",
+       "url": "/al/candidate/tashina-morris"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Tashina Morris",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 61008.02,
+       "expenditures": 0.0,
+       "status": "$57,238.18",
+       "url": "/al/candidate/tashina-morris"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "77"
+  },
+  {
+   "office": "Alabama House of Representatives District 78",
+   "url": "/al/race/alabama-house-of-representatives-district-78-71235",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 62250.0,
+   "totalExpenditures": 45129.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Kenyatte' Hassell",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 62250.0,
+       "expenditures": 0.0,
+       "status": "$45,128.66",
+       "url": "/al/candidate/kenyatte-hassell"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Kenyatte' Hassell",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 62250.0,
+       "expenditures": 0.0,
+       "status": "$45,128.66",
+       "url": "/al/candidate/kenyatte-hassell"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "78"
+  },
+  {
+   "office": "Alabama House of Representatives District 79",
+   "url": "/al/race/alabama-house-of-representatives-district-79-71236",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 373668.0,
+   "totalExpenditures": 30181.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Joseph Lovvorn",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 373668.33,
+       "expenditures": 0.0,
+       "status": "$30,180.85",
+       "url": "/al/candidate/joseph-lovvorn"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Joseph Lovvorn",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 373668.33,
+       "expenditures": 0.0,
+       "status": "$30,180.85",
+       "url": "/al/candidate/joseph-lovvorn"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "79"
+  },
+  {
+   "office": "Alabama House of Representatives District 8",
+   "url": "/al/race/alabama-house-of-representatives-district-8-71237",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 2666.0,
+   "totalExpenditures": 7002.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Bruce Sparkman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2666.36,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/al/candidate/bruce-sparkman"
+      },
+      {
+       "name": "Tony Robertson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/al/candidate/tony-robertson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Bruce Sparkman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2666.36,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/al/candidate/bruce-sparkman"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Tony Robertson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/al/candidate/tony-robertson"
+      },
+      {
+       "name": "Norman Kevin Davenport",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 7280.68,
+       "status": "$7,001.69",
+       "url": "/al/candidate/norman-kevin-davenport"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "Alabama House of Representatives District 80",
+   "url": "/al/race/alabama-house-of-representatives-district-80-71238",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 311837.0,
+   "totalExpenditures": 43849.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Christopher Blackshear",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 309060.0,
+       "expenditures": 0.0,
+       "status": "$42,293.08",
+       "url": "/al/candidate/christopher-blackshear"
+      },
+      {
+       "name": "Manfred Douglas Malone",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2776.7,
+       "expenditures": 1013.05,
+       "status": "$1,556.39",
+       "url": "/al/candidate/manfred-douglas-malone"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Manfred Douglas Malone",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2776.7,
+       "expenditures": 1013.05,
+       "status": "$1,556.39",
+       "url": "/al/candidate/manfred-douglas-malone"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Christopher Blackshear",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 309060.0,
+       "expenditures": 0.0,
+       "status": "$42,293.08",
+       "url": "/al/candidate/christopher-blackshear"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "80"
+  },
+  {
+   "office": "Alabama House of Representatives District 81",
+   "url": "/al/race/alabama-house-of-representatives-district-81-71239",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 92750.0,
+   "totalExpenditures": 32032.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Edward Oliver",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 92750.0,
+       "expenditures": 0.0,
+       "status": "$32,031.66",
+       "url": "/al/candidate/edward-oliver"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Edward Oliver",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 92750.0,
+       "expenditures": 0.0,
+       "status": "$32,031.66",
+       "url": "/al/candidate/edward-oliver"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "81"
+  },
+  {
+   "office": "Alabama House of Representatives District 82",
+   "url": "/al/race/alabama-house-of-representatives-district-82-71240",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 372973.0,
+   "totalExpenditures": 182641.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Pebblin Warren",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 328137.75,
+       "expenditures": 0.0,
+       "status": "$153,761.30",
+       "url": "/al/candidate/pebblin-warren"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Runoff Election",
+     "date": "June 16, 2026",
+     "candidates": [
+      {
+       "name": "Pebblin Warren",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 328137.75,
+       "expenditures": 0.0,
+       "status": "$153,761.30",
+       "url": "/al/candidate/pebblin-warren"
+      },
+      {
+       "name": "Sidney Brown",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27276.96,
+       "expenditures": 0.0,
+       "status": "$23,045.65",
+       "url": "/al/candidate/sidney-brown"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Pebblin Warren",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 328137.75,
+       "expenditures": 0.0,
+       "status": "$153,761.30",
+       "url": "/al/candidate/pebblin-warren"
+      },
+      {
+       "name": "Sidney Brown",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27276.96,
+       "expenditures": 0.0,
+       "status": "$23,045.65",
+       "url": "/al/candidate/sidney-brown"
+      },
+      {
+       "name": "Terrence Johnson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17558.28,
+       "expenditures": 0.0,
+       "status": "$5,834.07",
+       "url": "/al/candidate/terrence-johnson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "82"
+  },
+  {
+   "office": "Alabama House of Representatives District 83",
+   "url": "/al/race/alabama-house-of-representatives-district-83-71241",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 87100.0,
+   "totalExpenditures": 52215.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jeremy Gray",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 87100.0,
+       "expenditures": 0.0,
+       "status": "$52,214.99",
+       "url": "/al/candidate/jeremy-gray"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Jeremy Gray",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 87100.0,
+       "expenditures": 0.0,
+       "status": "$52,214.99",
+       "url": "/al/candidate/jeremy-gray"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "83"
+  },
+  {
+   "office": "Alabama House of Representatives District 84",
+   "url": "/al/race/alabama-house-of-representatives-district-84-71242",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 95320.0,
+   "totalExpenditures": 24589.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Berry Forte",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 80494.69,
+       "expenditures": 0.0,
+       "status": "$21,168.32",
+       "url": "/al/candidate/berry-forte"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Berry Forte",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 80494.69,
+       "expenditures": 0.0,
+       "status": "$21,168.32",
+       "url": "/al/candidate/berry-forte"
+      },
+      {
+       "name": "Brittani O'Hara-Grant",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 14825.58,
+       "expenditures": 0.0,
+       "status": "$3,420.75",
+       "url": "/al/candidate/brittani-ohara-grant"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "84"
+  },
+  {
+   "office": "Alabama House of Representatives District 85",
+   "url": "/al/race/alabama-house-of-representatives-district-85-71243",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 297766.0,
+   "totalExpenditures": 151420.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Richard Rehm",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 287522.14,
+       "expenditures": 0.0,
+       "status": "$145,593.63",
+       "url": "/al/candidate/richard-rehm"
+      },
+      {
+       "name": "Aristotle Onassis Kirkland",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10243.79,
+       "expenditures": 1333.18,
+       "status": "$5,826.15",
+       "url": "/al/candidate/aristotle-onassis-kirkland"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Aristotle Onassis Kirkland",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10243.79,
+       "expenditures": 1333.18,
+       "status": "$5,826.15",
+       "url": "/al/candidate/aristotle-onassis-kirkland"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Richard Rehm",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 287522.14,
+       "expenditures": 0.0,
+       "status": "$145,593.63",
+       "url": "/al/candidate/richard-rehm"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "85"
+  },
+  {
+   "office": "Alabama House of Representatives District 86",
+   "url": "/al/race/alabama-house-of-representatives-district-86-71244",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 307557.0,
+   "totalExpenditures": 62358.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Paul Lee",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 307556.65,
+       "expenditures": 0.0,
+       "status": "$62,357.50",
+       "url": "/al/candidate/paul-lee"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Paul Lee",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 307556.65,
+       "expenditures": 0.0,
+       "status": "$62,357.50",
+       "url": "/al/candidate/paul-lee"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "86"
+  },
+  {
+   "office": "Alabama House of Representatives District 87",
+   "url": "/al/race/alabama-house-of-representatives-district-87-71245",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 134500.0,
+   "totalExpenditures": 33390.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jeff Sorrells",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 134500.0,
+       "expenditures": 0.0,
+       "status": "$33,390.15",
+       "url": "/al/candidate/jeff-sorrells"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Jeff Sorrells",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 134500.0,
+       "expenditures": 0.0,
+       "status": "$33,390.15",
+       "url": "/al/candidate/jeff-sorrells"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "87"
+  },
+  {
+   "office": "Alabama House of Representatives District 88",
+   "url": "/al/race/alabama-house-of-representatives-district-88-71246",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 62920.0,
+   "totalExpenditures": 7485.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jerry Starnes",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 62920.0,
+       "expenditures": 0.0,
+       "status": "$7,484.78",
+       "url": "/al/candidate/jerry-starnes"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Jerry Starnes",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 62920.0,
+       "expenditures": 0.0,
+       "status": "$7,484.78",
+       "url": "/al/candidate/jerry-starnes"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "88"
+  },
+  {
+   "office": "Alabama House of Representatives District 89",
+   "url": "/al/race/alabama-house-of-representatives-district-89-71247",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 105250.0,
+   "totalExpenditures": 35578.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Marcus Paramore",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 105250.0,
+       "expenditures": 0.0,
+       "status": "$35,578.18",
+       "url": "/al/candidate/marcus-paramore"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Marcus Paramore",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 105250.0,
+       "expenditures": 0.0,
+       "status": "$35,578.18",
+       "url": "/al/candidate/marcus-paramore"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "89"
+  },
+  {
+   "office": "Alabama House of Representatives District 9",
+   "url": "/al/race/alabama-house-of-representatives-district-9-71248",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 196490.0,
+   "totalExpenditures": 37942.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Scott Stadthagen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 196490.0,
+       "expenditures": 0.0,
+       "status": "$37,941.64",
+       "url": "/al/candidate/scott-stadthagen"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Scott Stadthagen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 196490.0,
+       "expenditures": 0.0,
+       "status": "$37,941.64",
+       "url": "/al/candidate/scott-stadthagen"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "Alabama House of Representatives District 90",
+   "url": "/al/race/alabama-house-of-representatives-district-90-71249",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 81000.0,
+   "totalExpenditures": 44028.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Chris Sells",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 81000.0,
+       "expenditures": 0.0,
+       "status": "$44,028.18",
+       "url": "/al/candidate/chris-sells"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Chris Sells",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 81000.0,
+       "expenditures": 0.0,
+       "status": "$44,028.18",
+       "url": "/al/candidate/chris-sells"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "90"
+  },
+  {
+   "office": "Alabama House of Representatives District 91",
+   "url": "/al/race/alabama-house-of-representatives-district-91-71250",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 196098.0,
+   "totalExpenditures": 151396.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jody Linton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 196097.6,
+       "expenditures": 0.0,
+       "status": "$151,396.23",
+       "url": "/al/candidate/jody-linton"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Jody Linton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 196097.6,
+       "expenditures": 0.0,
+       "status": "$151,396.23",
+       "url": "/al/candidate/jody-linton"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "91"
+  },
+  {
+   "office": "Alabama House of Representatives District 92",
+   "url": "/al/race/alabama-house-of-representatives-district-92-71251",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [],
+   "chamber": "house",
+   "district": "92"
+  },
+  {
+   "office": "Alabama House of Representatives District 93",
+   "url": "/al/race/alabama-house-of-representatives-district-93-71252",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 313138.0,
+   "totalExpenditures": 202758.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Steve Clouse",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 280534.76,
+       "expenditures": 0.0,
+       "status": "$165,849.73",
+       "url": "/al/candidate/steve-clouse"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Steve Clouse",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 280534.76,
+       "expenditures": 0.0,
+       "status": "$165,849.73",
+       "url": "/al/candidate/steve-clouse"
+      },
+      {
+       "name": "Norman Horton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 32603.03,
+       "expenditures": 4900.0,
+       "status": "$36,907.89",
+       "url": "/al/candidate/norman-horton-1"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "93"
+  },
+  {
+   "office": "Alabama House of Representatives District 94",
+   "url": "/al/race/alabama-house-of-representatives-district-94-71253",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 83557.0,
+   "totalExpenditures": 55975.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jennifer Fidler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 83556.92,
+       "expenditures": 0.0,
+       "status": "$55,974.57",
+       "url": "/al/candidate/jennifer-fidler"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Jennifer Fidler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 83556.92,
+       "expenditures": 0.0,
+       "status": "$55,974.57",
+       "url": "/al/candidate/jennifer-fidler"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "94"
+  },
+  {
+   "office": "Alabama House of Representatives District 95",
+   "url": "/al/race/alabama-house-of-representatives-district-95-71254",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 1088622.0,
+   "totalExpenditures": 754171.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Frances Holk-Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 739176.94,
+       "expenditures": 0.0,
+       "status": "$694,544.71",
+       "url": "/al/candidate/frances-holk-jones"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Runoff Election",
+     "date": "June 16, 2026",
+     "candidates": [
+      {
+       "name": "Frances Holk-Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 739176.94,
+       "expenditures": 0.0,
+       "status": "$694,544.71",
+       "url": "/al/candidate/frances-holk-jones"
+      },
+      {
+       "name": "Joseph Freeman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 337432.34,
+       "expenditures": 30552.54,
+       "status": "$52,459.69",
+       "url": "/al/candidate/joseph-freeman"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Frances Holk-Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 739176.94,
+       "expenditures": 0.0,
+       "status": "$694,544.71",
+       "url": "/al/candidate/frances-holk-jones"
+      },
+      {
+       "name": "Joseph Freeman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 337432.34,
+       "expenditures": 30552.54,
+       "status": "$52,459.69",
+       "url": "/al/candidate/joseph-freeman"
+      },
+      {
+       "name": "Elijah Davidson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12012.4,
+       "expenditures": 0.0,
+       "status": "$7,166.24",
+       "url": "/al/candidate/elijah-davidson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "95"
+  },
+  {
+   "office": "Alabama House of Representatives District 96",
+   "url": "/al/race/alabama-house-of-representatives-district-96-71255",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 655998.0,
+   "totalExpenditures": 437162.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Terri Osborne",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10368.33,
+       "expenditures": 0.0,
+       "status": "$7,255.26",
+       "url": "/al/candidate/terri-osborne"
+      },
+      {
+       "name": "Danielle Duggar",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 249342.56,
+       "expenditures": 33620.0,
+       "status": "$96,188.53",
+       "url": "/al/candidate/danielle-duggar"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Terri Osborne",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10368.33,
+       "expenditures": 0.0,
+       "status": "$7,255.26",
+       "url": "/al/candidate/terri-osborne"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Danielle Duggar",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 249342.56,
+       "expenditures": 33620.0,
+       "status": "$96,188.53",
+       "url": "/al/candidate/danielle-duggar"
+      },
+      {
+       "name": "Matt Simpson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 396287.18,
+       "expenditures": 0.0,
+       "status": "$333,718.28",
+       "url": "/al/candidate/matt-simpson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "96"
+  },
+  {
+   "office": "Alabama House of Representatives District 97",
+   "url": "/al/race/alabama-house-of-representatives-district-97-71256",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 218218.0,
+   "totalExpenditures": 112095.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Adline Clarke",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 177599.7,
+       "expenditures": 0.0,
+       "status": "$83,632.17",
+       "url": "/al/candidate/adline-clarke"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Adline Clarke",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 177599.7,
+       "expenditures": 0.0,
+       "status": "$83,632.17",
+       "url": "/al/candidate/adline-clarke"
+      },
+      {
+       "name": "Shalela Victoria Dowdy",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 40618.47,
+       "expenditures": 0.0,
+       "status": "$28,462.47",
+       "url": "/al/candidate/shalela-victoria-dowdy"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "97"
+  },
+  {
+   "office": "Alabama House of Representatives District 98",
+   "url": "/al/race/alabama-house-of-representatives-district-98-71257",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 96654.0,
+   "totalExpenditures": 103866.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Napoleon Bracy",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 96654.01,
+       "expenditures": 0.0,
+       "status": "$103,865.89",
+       "url": "/al/candidate/napoleon-bracy"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Napoleon Bracy",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 96654.01,
+       "expenditures": 0.0,
+       "status": "$103,865.89",
+       "url": "/al/candidate/napoleon-bracy"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "98"
+  },
+  {
+   "office": "Alabama House of Representatives District 99",
+   "url": "/al/race/alabama-house-of-representatives-district-99-71258",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 236968.0,
+   "totalExpenditures": 155943.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Samuel Jones",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 236309.0,
+       "expenditures": 0.0,
+       "status": "$155,490.47",
+       "url": "/al/candidate/samuel-jones"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Samuel Jones",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 236309.0,
+       "expenditures": 0.0,
+       "status": "$155,490.47",
+       "url": "/al/candidate/samuel-jones"
+      },
+      {
+       "name": "Verjilya Hughes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 658.94,
+       "expenditures": 0.0,
+       "status": "$452.90",
+       "url": "/al/candidate/verjilya-hughes"
+      },
+      {
+       "name": "Levi Wright",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/al/candidate/levi-wright"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "99"
+  },
+  {
+   "office": "Alabama State Senate District 1",
+   "url": "/al/race/alabama-state-senate-district-1-71119",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 404247.0,
+   "totalExpenditures": 101425.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Timothy Melson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 404247.16,
+       "expenditures": 0.0,
+       "status": "$101,425.46",
+       "url": "/al/candidate/timothy-melson"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Timothy Melson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 404247.16,
+       "expenditures": 0.0,
+       "status": "$101,425.46",
+       "url": "/al/candidate/timothy-melson"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "1"
+  },
+  {
+   "office": "Alabama State Senate District 10",
+   "url": "/al/race/alabama-state-senate-district-10-71120",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 1183242.0,
+   "totalExpenditures": 840591.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Andrew Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 963816.07,
+       "expenditures": 0.0,
+       "status": "$701,120.72",
+       "url": "/al/candidate/andrew-jones"
+      },
+      {
+       "name": "Jesse Battles",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 140167.84,
+       "expenditures": 7000.0,
+       "status": "$76,759.85",
+       "url": "/al/candidate/jesse-battles"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Andrew Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 963816.07,
+       "expenditures": 0.0,
+       "status": "$701,120.72",
+       "url": "/al/candidate/andrew-jones"
+      },
+      {
+       "name": "Amy Minton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 79258.06,
+       "expenditures": 27500.0,
+       "status": "$62,710.89",
+       "url": "/al/candidate/amy-minton"
+      },
+      {
+       "name": "Jesse Battles",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 140167.84,
+       "expenditures": 7000.0,
+       "status": "$76,759.85",
+       "url": "/al/candidate/jesse-battles"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "10"
+  },
+  {
+   "office": "Alabama State Senate District 11",
+   "url": "/al/race/alabama-state-senate-district-11-71121",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 518943.0,
+   "totalExpenditures": 78734.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Lance Bell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 513300.0,
+       "expenditures": 0.0,
+       "status": "$74,053.66",
+       "url": "/al/candidate/lance-bell"
+      },
+      {
+       "name": "Donald Mottern",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5642.89,
+       "expenditures": 0.0,
+       "status": "$4,680.20",
+       "url": "/al/candidate/donald-mottern"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Donald Mottern",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5642.89,
+       "expenditures": 0.0,
+       "status": "$4,680.20",
+       "url": "/al/candidate/donald-mottern"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Lance Bell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 513300.0,
+       "expenditures": 0.0,
+       "status": "$74,053.66",
+       "url": "/al/candidate/lance-bell"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "11"
+  },
+  {
+   "office": "Alabama State Senate District 12",
+   "url": "/al/race/alabama-state-senate-district-12-71122",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 254701.0,
+   "totalExpenditures": 32389.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Keith Kelley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 254701.45,
+       "expenditures": 0.0,
+       "status": "$32,388.99",
+       "url": "/al/candidate/keith-kelley"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Keith Kelley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 254701.45,
+       "expenditures": 0.0,
+       "status": "$32,388.99",
+       "url": "/al/candidate/keith-kelley"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "12"
+  },
+  {
+   "office": "Alabama State Senate District 13",
+   "url": "/al/race/alabama-state-senate-district-13-71123",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 727698.0,
+   "totalExpenditures": 406862.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Randy Price",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 695328.86,
+       "expenditures": 0.0,
+       "status": "$359,294.22",
+       "url": "/al/candidate/randy-price"
+      },
+      {
+       "name": "Jamie Forsyth",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6644.42,
+       "expenditures": 0.0,
+       "status": "$2,414.54",
+       "url": "/al/candidate/jamie-forsyth"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Jamie Forsyth",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6644.42,
+       "expenditures": 0.0,
+       "status": "$2,414.54",
+       "url": "/al/candidate/jamie-forsyth"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Randy Price",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 695328.86,
+       "expenditures": 0.0,
+       "status": "$359,294.22",
+       "url": "/al/candidate/randy-price"
+      },
+      {
+       "name": "Gerald Dial",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25725.0,
+       "expenditures": 75000.0,
+       "status": "$45,153.50",
+       "url": "/al/candidate/gerald-dial"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "13"
+  },
+  {
+   "office": "Alabama State Senate District 14",
+   "url": "/al/race/alabama-state-senate-district-14-71124",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 411956.0,
+   "totalExpenditures": 180556.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "April Weaver",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 400244.4,
+       "expenditures": 0.0,
+       "status": "$169,253.95",
+       "url": "/al/candidate/april-weaver"
+      },
+      {
+       "name": "Amanda Ledkins",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11711.22,
+       "expenditures": 0.0,
+       "status": "$11,301.87",
+       "url": "/al/candidate/amanda-ledkins"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Amanda Ledkins",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11711.22,
+       "expenditures": 0.0,
+       "status": "$11,301.87",
+       "url": "/al/candidate/amanda-ledkins"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "April Weaver",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 400244.4,
+       "expenditures": 0.0,
+       "status": "$169,253.95",
+       "url": "/al/candidate/april-weaver"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "14"
+  },
+  {
+   "office": "Alabama State Senate District 15",
+   "url": "/al/race/alabama-state-senate-district-15-71125",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 1423575.0,
+   "totalExpenditures": 1548774.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Scott Ortis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 755729.88,
+       "expenditures": 600000.0,
+       "status": "$738,337.42",
+       "url": "/al/candidate/scott-ortis"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Scott Ortis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 755729.88,
+       "expenditures": 600000.0,
+       "status": "$738,337.42",
+       "url": "/al/candidate/scott-ortis"
+      },
+      {
+       "name": "Daniel Roberts",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 667844.67,
+       "expenditures": 0.0,
+       "status": "$810,436.88",
+       "url": "/al/candidate/daniel-roberts"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "15"
+  },
+  {
+   "office": "Alabama State Senate District 16",
+   "url": "/al/race/alabama-state-senate-district-16-71126",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 572056.0,
+   "totalExpenditures": 340430.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "James Waggoner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 569782.54,
+       "expenditures": 0.0,
+       "status": "$338,992.41",
+       "url": "/al/candidate/james-waggoner"
+      },
+      {
+       "name": "Spencer Stone",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2273.48,
+       "expenditures": 0.0,
+       "status": "$1,437.48",
+       "url": "/al/candidate/spencer-stone"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Spencer Stone",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2273.48,
+       "expenditures": 0.0,
+       "status": "$1,437.48",
+       "url": "/al/candidate/spencer-stone"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "James Waggoner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 569782.54,
+       "expenditures": 0.0,
+       "status": "$338,992.41",
+       "url": "/al/candidate/james-waggoner"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "16"
+  },
+  {
+   "office": "Alabama State Senate District 17",
+   "url": "/al/race/alabama-state-senate-district-17-71127",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 293153.0,
+   "totalExpenditures": 65646.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Shay Shelnutt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 293153.18,
+       "expenditures": 0.0,
+       "status": "$65,645.80",
+       "url": "/al/candidate/shay-shelnutt"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Shay Shelnutt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 293153.18,
+       "expenditures": 0.0,
+       "status": "$65,645.80",
+       "url": "/al/candidate/shay-shelnutt"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "17"
+  },
+  {
+   "office": "Alabama State Senate District 18",
+   "url": "/al/race/alabama-state-senate-district-18-71128",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 350550.0,
+   "totalExpenditures": 92528.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Rodger Smitherman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 350550.0,
+       "expenditures": 0.0,
+       "status": "$92,527.98",
+       "url": "/al/candidate/rodger-smitherman"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Rodger Smitherman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 350550.0,
+       "expenditures": 0.0,
+       "status": "$92,527.98",
+       "url": "/al/candidate/rodger-smitherman"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "18"
+  },
+  {
+   "office": "Alabama State Senate District 19",
+   "url": "/al/race/alabama-state-senate-district-19-71129",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 186540.0,
+   "totalExpenditures": 47664.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Merika Coleman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 186540.0,
+       "expenditures": 0.0,
+       "status": "$47,663.50",
+       "url": "/al/candidate/merika-coleman"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Merika Coleman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 186540.0,
+       "expenditures": 0.0,
+       "status": "$47,663.50",
+       "url": "/al/candidate/merika-coleman"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "19"
+  },
+  {
+   "office": "Alabama State Senate District 2",
+   "url": "/al/race/alabama-state-senate-district-2-71130",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 629490.0,
+   "totalExpenditures": 144645.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Rudolph Valentino Drake",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6545.35,
+       "expenditures": 0.0,
+       "status": "$5,254.88",
+       "url": "/al/candidate/rudolph-valentino-drake"
+      },
+      {
+       "name": "John Roberts",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 616508.42,
+       "expenditures": 0.0,
+       "status": "$130,362.27",
+       "url": "/al/candidate/john-roberts"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Runoff Election",
+     "date": "June 16, 2026",
+     "candidates": [
+      {
+       "name": "Rudolph Valentino Drake",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6545.35,
+       "expenditures": 0.0,
+       "status": "$5,254.88",
+       "url": "/al/candidate/rudolph-valentino-drake"
+      },
+      {
+       "name": "Alex House",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 28.07,
+       "expenditures": 3900.0,
+       "status": "$3,928.07",
+       "url": "/al/candidate/alex-house"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Rudolph Valentino Drake",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6545.35,
+       "expenditures": 0.0,
+       "status": "$5,254.88",
+       "url": "/al/candidate/rudolph-valentino-drake"
+      },
+      {
+       "name": "Alex House",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 28.07,
+       "expenditures": 3900.0,
+       "status": "$3,928.07",
+       "url": "/al/candidate/alex-house"
+      },
+      {
+       "name": "Guy Sotomayor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2152.12,
+       "expenditures": 900.0,
+       "status": "$2,069.60",
+       "url": "/al/candidate/guy-sotomayor"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "John Roberts",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 616508.42,
+       "expenditures": 0.0,
+       "status": "$130,362.27",
+       "url": "/al/candidate/john-roberts"
+      },
+      {
+       "name": "Tom Butler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 4255.59,
+       "expenditures": 0.0,
+       "status": "$3,029.99",
+       "url": "/al/candidate/tom-butler"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "2"
+  },
+  {
+   "office": "Alabama State Senate District 20",
+   "url": "/al/race/alabama-state-senate-district-20-71131",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 113000.0,
+   "totalExpenditures": 76263.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Linda Coleman-Madison",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 113000.0,
+       "expenditures": 0.0,
+       "status": "$76,262.99",
+       "url": "/al/candidate/linda-coleman-madison"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Linda Coleman-Madison",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 113000.0,
+       "expenditures": 0.0,
+       "status": "$76,262.99",
+       "url": "/al/candidate/linda-coleman-madison"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "20"
+  },
+  {
+   "office": "Alabama State Senate District 21",
+   "url": "/al/race/alabama-state-senate-district-21-71132",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 288401.0,
+   "totalExpenditures": 71775.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Gerald Allen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 193850.0,
+       "expenditures": 0.0,
+       "status": "$55,281.62",
+       "url": "/al/candidate/gerald-allen"
+      },
+      {
+       "name": "Jodie Minor",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 94550.56,
+       "expenditures": 0.0,
+       "status": "$16,493.08",
+       "url": "/al/candidate/jodie-minor"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Jodie Minor",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 94550.56,
+       "expenditures": 0.0,
+       "status": "$16,493.08",
+       "url": "/al/candidate/jodie-minor"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Gerald Allen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 193850.0,
+       "expenditures": 0.0,
+       "status": "$55,281.62",
+       "url": "/al/candidate/gerald-allen"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "21"
+  },
+  {
+   "office": "Alabama State Senate District 22",
+   "url": "/al/race/alabama-state-senate-district-22-71133",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 1412101.0,
+   "totalExpenditures": 820679.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ashley Sharpe",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6993.8,
+       "expenditures": 0.0,
+       "status": "$4,487.87",
+       "url": "/al/candidate/ashley-sharpe"
+      },
+      {
+       "name": "Terry Waters",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 533913.86,
+       "expenditures": 37500.0,
+       "status": "$86,014.97",
+       "url": "/al/candidate/terry-waters"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Ashley Sharpe",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6993.8,
+       "expenditures": 0.0,
+       "status": "$4,487.87",
+       "url": "/al/candidate/ashley-sharpe"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Terry Waters",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 533913.86,
+       "expenditures": 37500.0,
+       "status": "$86,014.97",
+       "url": "/al/candidate/terry-waters"
+      },
+      {
+       "name": "Gregory Albritton",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 871192.84,
+       "expenditures": 0.0,
+       "status": "$730,176.58",
+       "url": "/al/candidate/gregory-albritton"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "22"
+  },
+  {
+   "office": "Alabama State Senate District 23",
+   "url": "/al/race/alabama-state-senate-district-23-71134",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 143644.0,
+   "totalExpenditures": 86985.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Robert Stewart",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 143644.38,
+       "expenditures": 0.0,
+       "status": "$86,984.72",
+       "url": "/al/candidate/robert-stewart"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Robert Stewart",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 143644.38,
+       "expenditures": 0.0,
+       "status": "$86,984.72",
+       "url": "/al/candidate/robert-stewart"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "23"
+  },
+  {
+   "office": "Alabama State Senate District 24",
+   "url": "/al/race/alabama-state-senate-district-24-71135",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 373050.0,
+   "totalExpenditures": 134353.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Bobby Singleton",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 373050.0,
+       "expenditures": 0.0,
+       "status": "$134,353.06",
+       "url": "/al/candidate/bobby-singleton"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Bobby Singleton",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 373050.0,
+       "expenditures": 0.0,
+       "status": "$134,353.06",
+       "url": "/al/candidate/bobby-singleton"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "24"
+  },
+  {
+   "office": "Alabama State Senate District 25",
+   "url": "/al/race/alabama-state-senate-district-25-71136",
+   "dataThrough": "09/30/2026",
+   "stage": "Results Final",
+   "totalContributions": 43493.0,
+   "totalExpenditures": 39643.0,
+   "elections": [
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Phadra Foster",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15991.36,
+       "expenditures": 5000.0,
+       "status": "$23,719.20",
+       "url": "/al/candidate/phadra-foster"
+      },
+      {
+       "name": "Kk Middleton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 19453.96,
+       "expenditures": 9411.0,
+       "status": "$11,971.00",
+       "url": "/al/candidate/kk-middleton"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Russell Mctyiere Taylor",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8047.98,
+       "expenditures": 0.0,
+       "status": "$3,952.40",
+       "url": "/al/candidate/russell-mctyiere-taylor"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "25"
+  },
+  {
+   "office": "Alabama State Senate District 26",
+   "url": "/al/race/alabama-state-senate-district-26-71137",
+   "dataThrough": "09/30/2026",
+   "stage": "Results Final",
+   "totalContributions": 78201.0,
+   "totalExpenditures": 28598.0,
+   "elections": [
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Tabitha Isner",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 78200.72,
+       "expenditures": 1550.0,
+       "status": "$28,598.13",
+       "url": "/al/candidate/tabitha-isner"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "26"
+  },
+  {
+   "office": "Alabama State Senate District 27",
+   "url": "/al/race/alabama-state-senate-district-27-71138",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 85862.0,
+   "totalExpenditures": 183759.0,
+   "elections": [
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Douglas Cannon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 85861.57,
+       "expenditures": 100000.0,
+       "status": "$183,758.69",
+       "url": "/al/candidate/douglas-cannon"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "27"
+  },
+  {
+   "office": "Alabama State Senate District 28",
+   "url": "/al/race/alabama-state-senate-district-28-71139",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 294219.0,
+   "totalExpenditures": 61256.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "William Beasley",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 250600.0,
+       "expenditures": 0.0,
+       "status": "$44,675.02",
+       "url": "/al/candidate/william-beasley"
+      },
+      {
+       "name": "Brent Comer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 43618.79,
+       "expenditures": 0.0,
+       "status": "$16,581.11",
+       "url": "/al/candidate/brent-comer"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "William Beasley",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 250600.0,
+       "expenditures": 0.0,
+       "status": "$44,675.02",
+       "url": "/al/candidate/william-beasley"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Brent Comer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 43618.79,
+       "expenditures": 0.0,
+       "status": "$16,581.11",
+       "url": "/al/candidate/brent-comer"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "28"
+  },
+  {
+   "office": "Alabama State Senate District 29",
+   "url": "/al/race/alabama-state-senate-district-29-71140",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 8974.0,
+   "totalExpenditures": 8757.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Donnie Chesteen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/al/candidate/donnie-chesteen"
+      },
+      {
+       "name": "Jimmy O'Shawn Mccray",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1430.18,
+       "expenditures": 0.0,
+       "status": "$1,330.18",
+       "url": "/al/candidate/jimmy-oshawn-mccray"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Jimmy O'Shawn Mccray",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1430.18,
+       "expenditures": 0.0,
+       "status": "$1,330.18",
+       "url": "/al/candidate/jimmy-oshawn-mccray"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Donnie Chesteen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/al/candidate/donnie-chesteen"
+      },
+      {
+       "name": "Zachary James Hurst",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7543.75,
+       "expenditures": 0.0,
+       "status": "$7,426.41",
+       "url": "/al/candidate/zachary-james-hurst"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "29"
+  },
+  {
+   "office": "Alabama State Senate District 3",
+   "url": "/al/race/alabama-state-senate-district-3-71141",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 492702.0,
+   "totalExpenditures": 45120.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Arthur Orr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 491835.04,
+       "expenditures": 0.0,
+       "status": "$37,315.15",
+       "url": "/al/candidate/arthur-orr"
+      },
+      {
+       "name": "John Dickey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 867.02,
+       "expenditures": 10200.0,
+       "status": "$7,804.52",
+       "url": "/al/candidate/john-dickey"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "John Dickey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 867.02,
+       "expenditures": 10200.0,
+       "status": "$7,804.52",
+       "url": "/al/candidate/john-dickey"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Arthur Orr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 491835.04,
+       "expenditures": 0.0,
+       "status": "$37,315.15",
+       "url": "/al/candidate/arthur-orr"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "3"
+  },
+  {
+   "office": "Alabama State Senate District 30",
+   "url": "/al/race/alabama-state-senate-district-30-71142",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 269976.0,
+   "totalExpenditures": 72226.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Clyde Chambliss",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 269976.15,
+       "expenditures": 0.0,
+       "status": "$72,226.28",
+       "url": "/al/candidate/clyde-chambliss"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Clyde Chambliss",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 269976.15,
+       "expenditures": 0.0,
+       "status": "$72,226.28",
+       "url": "/al/candidate/clyde-chambliss"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "30"
+  },
+  {
+   "office": "Alabama State Senate District 31",
+   "url": "/al/race/alabama-state-senate-district-31-71143",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 356833.0,
+   "totalExpenditures": 45232.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Joshua Carnley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 356832.82,
+       "expenditures": 0.0,
+       "status": "$45,232.48",
+       "url": "/al/candidate/joshua-carnley"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Joshua Carnley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 356832.82,
+       "expenditures": 0.0,
+       "status": "$45,232.48",
+       "url": "/al/candidate/joshua-carnley"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "31"
+  },
+  {
+   "office": "Alabama State Senate District 32",
+   "url": "/al/race/alabama-state-senate-district-32-71144",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 902222.0,
+   "totalExpenditures": 692040.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Chris Elliott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 878095.72,
+       "expenditures": 0.0,
+       "status": "$667,058.96",
+       "url": "/al/candidate/chris-elliott"
+      },
+      {
+       "name": "Janet M Appleby",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5753.59,
+       "expenditures": 1000.0,
+       "status": "$2,997.10",
+       "url": "/al/candidate/janet-m-appleby"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Janet M Appleby",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5753.59,
+       "expenditures": 1000.0,
+       "status": "$2,997.10",
+       "url": "/al/candidate/janet-m-appleby"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Chris Elliott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 878095.72,
+       "expenditures": 0.0,
+       "status": "$667,058.96",
+       "url": "/al/candidate/chris-elliott"
+      },
+      {
+       "name": "Michael Vandenheuvel",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18373.05,
+       "expenditures": 5000.0,
+       "status": "$21,984.41",
+       "url": "/al/candidate/michael-vandenheuvel"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "32"
+  },
+  {
+   "office": "Alabama State Senate District 33",
+   "url": "/al/race/alabama-state-senate-district-33-71145",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 115500.0,
+   "totalExpenditures": 14961.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Vivian Figures",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 115500.0,
+       "expenditures": 0.0,
+       "status": "$14,961.31",
+       "url": "/al/candidate/vivian-figures"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Vivian Figures",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 115500.0,
+       "expenditures": 0.0,
+       "status": "$14,961.31",
+       "url": "/al/candidate/vivian-figures"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "33"
+  },
+  {
+   "office": "Alabama State Senate District 34",
+   "url": "/al/race/alabama-state-senate-district-34-71146",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 284024.0,
+   "totalExpenditures": 125290.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Benjamin Rusty Glover",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 284024.48,
+       "expenditures": 700.0,
+       "status": "$125,290.10",
+       "url": "/al/candidate/benjamin-rusty-glover"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Benjamin Rusty Glover",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 284024.48,
+       "expenditures": 700.0,
+       "status": "$125,290.10",
+       "url": "/al/candidate/benjamin-rusty-glover"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "34"
+  },
+  {
+   "office": "Alabama State Senate District 35",
+   "url": "/al/race/alabama-state-senate-district-35-71147",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 241451.0,
+   "totalExpenditures": 82938.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "David Sessions",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 241450.82,
+       "expenditures": 0.0,
+       "status": "$82,938.03",
+       "url": "/al/candidate/david-sessions"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "David Sessions",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 241450.82,
+       "expenditures": 0.0,
+       "status": "$82,938.03",
+       "url": "/al/candidate/david-sessions"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "35"
+  },
+  {
+   "office": "Alabama State Senate District 4",
+   "url": "/al/race/alabama-state-senate-district-4-71148",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 1820436.0,
+   "totalExpenditures": 1530955.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Garlan Gudger",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1801322.08,
+       "expenditures": 0.0,
+       "status": "$1,515,889.41",
+       "url": "/al/candidate/garlan-gudger"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Garlan Gudger",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1801322.08,
+       "expenditures": 0.0,
+       "status": "$1,515,889.41",
+       "url": "/al/candidate/garlan-gudger"
+      },
+      {
+       "name": "James Bowling",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19113.8,
+       "expenditures": 0.0,
+       "status": "$15,065.48",
+       "url": "/al/candidate/james-bowling"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "4"
+  },
+  {
+   "office": "Alabama State Senate District 5",
+   "url": "/al/race/alabama-state-senate-district-5-71149",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 640091.0,
+   "totalExpenditures": 269520.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Matthew Woods",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 640091.36,
+       "expenditures": 50000.0,
+       "status": "$269,519.60",
+       "url": "/al/candidate/matthew-woods"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Matthew Woods",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 640091.36,
+       "expenditures": 50000.0,
+       "status": "$269,519.60",
+       "url": "/al/candidate/matthew-woods"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "5"
+  },
+  {
+   "office": "Alabama State Senate District 6",
+   "url": "/al/race/alabama-state-senate-district-6-71150",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 183741.0,
+   "totalExpenditures": 60041.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Larry Stutts",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 182430.98,
+       "expenditures": 0.0,
+       "status": "$58,232.15",
+       "url": "/al/candidate/larry-stutts"
+      },
+      {
+       "name": "Bobby Martin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1310.5,
+       "expenditures": 1331.18,
+       "status": "$1,809.31",
+       "url": "/al/candidate/bobby-martin"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Bobby Martin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1310.5,
+       "expenditures": 1331.18,
+       "status": "$1,809.31",
+       "url": "/al/candidate/bobby-martin"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Larry Stutts",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 182430.98,
+       "expenditures": 0.0,
+       "status": "$58,232.15",
+       "url": "/al/candidate/larry-stutts"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "6"
+  },
+  {
+   "office": "Alabama State Senate District 7",
+   "url": "/al/race/alabama-state-senate-district-7-71151",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 665872.0,
+   "totalExpenditures": 467020.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Sam Givhan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 632712.9,
+       "expenditures": 0.0,
+       "status": "$446,890.31",
+       "url": "/al/candidate/sam-givhan"
+      },
+      {
+       "name": "Jared Sluss",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33158.61,
+       "expenditures": 3075.15,
+       "status": "$20,130.02",
+       "url": "/al/candidate/jared-sluss"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Jared Sluss",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33158.61,
+       "expenditures": 3075.15,
+       "status": "$20,130.02",
+       "url": "/al/candidate/jared-sluss"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Sam Givhan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 632712.9,
+       "expenditures": 0.0,
+       "status": "$446,890.31",
+       "url": "/al/candidate/sam-givhan"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "7"
+  },
+  {
+   "office": "Alabama State Senate District 8",
+   "url": "/al/race/alabama-state-senate-district-8-71152",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 495156.0,
+   "totalExpenditures": 95889.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Steve Livingston",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 484179.16,
+       "expenditures": 0.0,
+       "status": "$86,222.69",
+       "url": "/al/candidate/steve-livingston"
+      },
+      {
+       "name": "Katherine Smith Kramer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10977.1,
+       "expenditures": 0.0,
+       "status": "$9,666.52",
+       "url": "/al/candidate/katherine-smith-kramer"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Katherine Smith Kramer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10977.1,
+       "expenditures": 0.0,
+       "status": "$9,666.52",
+       "url": "/al/candidate/katherine-smith-kramer"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Steve Livingston",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 484179.16,
+       "expenditures": 0.0,
+       "status": "$86,222.69",
+       "url": "/al/candidate/steve-livingston"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "8"
+  },
+  {
+   "office": "Alabama State Senate District 9",
+   "url": "/al/race/alabama-state-senate-district-9-71153",
+   "dataThrough": "09/30/2026",
+   "stage": "General Election",
+   "totalContributions": 259484.0,
+   "totalExpenditures": 24363.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Wesley Kitchens",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 259484.49,
+       "expenditures": 51508.31,
+       "status": "$24,362.90",
+       "url": "/al/candidate/wesley-kitchens"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 19, 2026",
+     "candidates": [
+      {
+       "name": "Wesley Kitchens",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 259484.49,
+       "expenditures": 51508.31,
+       "status": "$24,362.90",
+       "url": "/al/candidate/wesley-kitchens"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "9"
+  }
+ ]
+}

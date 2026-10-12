@@ -87,8 +87,14 @@ export default function StateLegDistrictTable({
   viewMode = "seats",
   selectedKey = null,
   onSelect,
+  atlasHref,
+  candidateHref,
 }: {
   districts: StateLegDistrict[];
+  /** Builds a member's candidate page URL; names link there when given. */
+  candidateHref?: (name: string) => string;
+  /** Builds the district's atlas page URL; the district cell links there when given. */
+  atlasHref?: (key: string) => string;
   chamber: Chamber;
   stateName: string;
   isUnicameral?: boolean;
@@ -271,11 +277,20 @@ export default function StateLegDistrictTable({
                     }}
                   >
                     <td className="py-2 pr-2 md:py-3 md:pr-3 text-left font-semibold whitespace-nowrap tabular-nums" style={{ color: "var(--app-text-primary)" }}>
-                      {d.number}
+                      {atlasHref ? (
+                        <a href={atlasHref(d.number)} className="hover:underline" title="Full district profile">{d.number}</a>
+                      ) : (
+                        d.number
+                      )}
                     </td>
                     <td className="py-2 pr-2 md:py-3 md:pr-3 text-left" style={{ color: "var(--app-text-primary)" }}>
                       {incumbents.length > 0 ? (
-                        incumbents.map((inc) => inc.name).join(", ")
+                        incumbents.map((inc, j) => (
+                          <span key={j}>
+                            {j > 0 && ", "}
+                            {candidateHref ? <a href={candidateHref(inc.name)} className="hover:underline" onClick={(e) => e.stopPropagation()}>{inc.name}</a> : inc.name}
+                          </span>
+                        ))
                       ) : (
                         <span className="italic" style={{ color: "var(--app-text-very-muted)" }}>Vacant</span>
                       )}

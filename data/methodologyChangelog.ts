@@ -10,7 +10,7 @@
 //            the same idea is not re-tested blind) · data = an input fix that moved results
 //   effect   measured consequence (backtest error, live seat counts…), when there is one
 
-export type MethodologyModel = "forecast" | "state-tpl" | "district-tpl" | "county-tpl" | "war" | "precinct-district" | "turnout";
+export type MethodologyModel = "forecast" | "state-tpl" | "district-tpl" | "county-tpl" | "war" | "precinct-district" | "turnout" | "state-leg";
 
 export interface MethodologyChange {
   date: string; // ISO
@@ -22,6 +22,68 @@ export interface MethodologyChange {
 }
 
 export const METHODOLOGY_CHANGELOG: MethodologyChange[] = [
+  {
+    date: "2026-10-11", models: ["state-leg"], kind: "data",
+    title: "One candidate page per person across spellings, chamber switches and redraws",
+    detail: "Spellings of one name were joined only when they shared a seat, so a member who moved from the House to the Senate (Roger A. Nutt, HD 34 → SD 12) or whose district a redraw renumbered (Andy Josephson, HD 17 → HD 13) had two pages. lib/stateLegCandidateIdentity.ts now parses each spelling (nicknames — Bill/William, Deb/Deborah, quoted ones; middle names and initials; surname particles and apostrophes; generational suffixes; New York ballot-line tags) and the index joins two spellings when the names agree and the seats are linked: the same seat; seats whose territory overlaps (data-entry/state-leg-seat-links.json from scripts/build-state-leg-seat-links.py: every House/Senate and old/new-map polygon pair covering ≥ 10% of the smaller one), unless one ran as a Democrat and the other as a Republican; or two seats that both overlap one district, with a party in common. Never joined: disagreeing middle names (not checked on a shared seat, where it is a typo or maiden name), different suffixes (Hanna Sr./Jr.), or two different seats in one year. Groups join only when every spelling in one is compatible with every spelling in the other. Every merged spelling's slug, and its accent-free form, still resolves. Unlinked pairs with agreeing names are listed by scripts/audit-state-leg-candidate-identity.ts for rulings in data/stateLegCandidateIdentityOverrides.ts.",
+    effect: "38,407 → 36,914 pages: 426 joins on overlapping seats, 27 on neighbouring ones, and about 1,170 same-seat joins the old exact first-and-last rule missed (nicknames, particles, initials). 6 joins the old rule made are now split: three suffix pairs (Hanna Sr./Jr. in PA, Craven Sr./Jr. in RI, Harold V. Jones II/III in GA — the last probably a source typo), the Buccos in NJ, two SC Luke Rankins, and GA's William Harris vs William C. Harris. 64 pairs are left for review.",
+  },
+  {
+    date: "2026-10-11", models: ["state-leg"], kind: "data",
+    title: "State legislative fundraising, cycle by cycle, starting with 2026",
+    detail: "Dataset E: every general-election candidate's total contributions per the state filings, from Transparency USA's race pages for its 25 states (2018–2026, Virginia 2017–2025; scripts/fetch-state-leg-finance-tu.py, cached crawl) and FollowTheMoney for the rest and for 2016 (scripts/fetch-state-leg-finance-ftm.py, as the API's quota allows). lib/stateLegMoney.ts joins the filings to the atlas's candidates by name (nicknames canonicalised; a filing that matches nobody is kept as unmatched, a candidate without one is null, not zero) and reduces each race to a two-party money gap. Shown on the district header for the current cycle (with its data-through date), as a Raised column in the electoral history, and on candidate pages. The projection's money term is not yet fitted; that follows once the 2022 and 2024 cycles are in.",
+  },
+  {
+    date: "2026-10-11", models: ["state-leg"], kind: "data",
+    title: "Why each open state legislative seat is open: outgoing members with reasons",
+    detail: "The English Wikipedia article on each chamber's 2026 election lists members not seeking re-election with the reason (term-limited, retiring, running for another office, resigned, lost renomination). scripts/fetch-state-leg-outgoing-2026.py parses those sections for every chamber on the ballot (968 members, 81 chambers; three line formats; North Dakota and the West Virginia, Pennsylvania, Nevada and New Hampshire Senates carry no list) into data/stateLegOutgoing2026.ts. Shown on the district header as a \"Not running\" line beside the 2026 ballot, and on the member's candidate page. The Ballotpedia field stays the authority on who is running.",
+  },
+  {
+    date: "2026-10-11", models: ["state-leg"], kind: "data",
+    title: "Candidate pages for every state legislative candidate, 2016–2026, and redistricting maps on every district",
+    detail: "Every person who stood in a state legislative general election since 2016, is on a 2026 ballot or sits in a chamber today has a page at /candidates/[name]-[state] (lib/stateLegCandidateIndex.ts: 38,388 people, 65,428 races), beside the federal candidate pages and merged with them where the same name ran in the same state (366 people). Spellings that share first and last name and a seat are one person; any spelling's slug resolves. Each district's redistricting history now draws before/after maps from the boundary files: the previous map shaded by each old district's share of today's population, today's district outlined, and the new map beside it; New Hampshire floterials draw their base districts.",
+  },
+  {
+    date: "2026-10-11", models: ["state-leg"], kind: "change",
+    title: "A chamber-level shock in the state legislative simulation",
+    detail: "The chamber simulation drew one national shock shared by every seat and independent SIGMA noise per seat, so a state-wide miss (a governor's race on the same ballot, a state issue, a map the lean has not caught up with) was treated as independent seat noise and chamber ranges were too narrow. The backtest now splits the residual spread into a chamber-level shock τ (method of moments on chamber-mean residuals, chambers with 10+ contested seats: 3.8 in 2024, 3.9 in 2022) and the seat noise after it (7.0 / 7.2). STATE_SHOCK = 4 is one draw shared by every seat of a chamber in each simulation and enters each seat's σ; SIGMA 8 → 7 so a single seat's spread is unchanged (√(7² + 4²) ≈ 8.1).",
+    effect: "Per-seat margins and ratings unchanged. Chamber 80% seat ranges widen from 3.6 to 6.2 seats on average; 7 chambers in play (20–80%) instead of 6. New Hampshire House P(D majority) 100% → 83%, Pennsylvania House 92% → 76%, Maine House 100% → 88%, Minnesota House 100% → 93%, Wisconsin Assembly 37% → 45%, Arizona House 6% → 17%, Michigan Senate 77% → 69%.",
+  },
+  {
+    date: "2026-10-11", models: ["state-leg", "state-tpl"], kind: "data",
+    title: "New Hampshire floterials recombined from their base districts",
+    detail: "The 39 House floterial (overlay) districts have no polygon in any boundary file and so had no presidential figure: no presidential rows in the projection, no imputation in the chamber margin (skipped), no lean trend. On the current map each is the sum of the base districts it sits on (the roster's components), so scripts/build-state-leg-pres-by-era.mjs now writes that sum into the current era (overlayOf marks it). The superseded 2020-map floterials are still absent. The atlas draws the base districts as the floterial's map.",
+    effect: "39 districts gain 2016/2020/2024 presidential rows and a fuller 2026 projection; the New Hampshire chamber margin's skipped count on the current map falls to zero (State TPL moves by less than 0.1).",
+  },
+  {
+    date: "2026-10-10", models: ["state-leg"], kind: "change",
+    title: "2026 projection for every state legislative district, and the State Legislatures board",
+    detail: "lib/stateLegForecast.ts: a district lean from the seat's contested generals (races on a superseded map relocated onto today's lines through the population crosswalk and the presidential delta) and the presidential vote on today's lines, P/L type weights 0.6/0.2, year decay and Huber as in the State TPL; projected with β* × E(2026) and a fitted state-legislative incumbency of 3 points; a field with one major party is decided outright; σ 8 race noise plus the national shock; 5,000-draw chamber simulation with holdovers. Shown as the atlas's default colour mode, a per-district outlook ledger, a chamber header stat and /legislatures.",
+    effect: "Holdout (scripts/stateLegBacktest.ts): 2024, 3,348 contested districts on today's lines, MAE 5.5 → 5.4 after incumbency (fitted 2.4), σ 8.0; 2022, 2,615 districts, MAE 6.4 → 5.9, incumbency 4.0, σ 8.2. Today: 88 chambers, 6 in play (Arizona Senate, Michigan House and Senate, New Hampshire Senate, Wisconsin House and Senate).",
+  },
+  {
+    date: "2026-10-10", models: ["state-leg"], kind: "data",
+    title: "2026 general-election candidates for every state legislative district on the ballot",
+    detail: "Ballotpedia's chamber election pages, read from their \"general election 2026\" candidate tables: Democratic, Republican and Other candidates per district, incumbents marked, multi-member districts' seat counts, write-ins flagged (scripts/fetch-state-leg-candidates-2026.py → data/stateLegCandidates2026.ts). Shown on the district atlas (header line, Open seats and Unopposed filters, a chamber-level field stat) and ready for the 2026 projection's contest rules.",
+  },
+  {
+    date: "2026-10-10", models: ["state-tpl", "state-leg"], kind: "change",
+    title: "State Legislature rows rebuilt district by district: a contested pool and an imputed unopposed pool",
+    detail: "The State TPL's State Legislature entry was the raw chamber aggregate — every counted district's votes summed — which counted a printed unopposed race as a 100–0 result and omitted an unprinted one, so it reported the margin of whichever seats happened to be contested and overstated the dominant party wherever unopposed races are printed. Each year now carries two rows that share the L weight on their turnout (lib/stateLegChamberMargin.ts): the contested pool (districts where both major parties drew votes, their own margin and votes) and the unopposed pool, imputed district by district from the presidential vote on the map the race was run on (data/stateLegPresByEra.ts, nearest presidential year), weighted by that presidential vote scaled to the chamber's legislative-to-presidential turnout ratio and stripping the environment of the source presidential year — the rule imputed House seats already followed. IMPUTED_LEG_ROW_WEIGHT = 1 (0.5 tested, no better). The environment fit is unchanged in form: imputed rows never enter it, so it now sees the contested pool. TPL_RAW_LEG=1 restores the old row for comparison.",
+    effect: "2024 holdout: President 2.46 → 2.24, Senate 5.02 → 4.90, House average 3.06 → 3.41 (the harness references were re-baselined and the validation table re-emitted). 44 of 50 state TPLs move, 24 by half a point or more, mean 0.75, 34 toward Democrats: the states that print unopposed races compress toward their presidential lean — Wyoming R+44.7 → R+42.1, South Dakota R+30.8 → R+28.4, North Dakota R+35.0 → R+33.1, West Virginia R+36.2 → R+34.4, and on the other side Rhode Island D+20.3 → D+17.9 and Massachusetts D+30.0 → D+27.9.",
+  },
+  {
+    date: "2026-10-10", models: ["state-leg"], kind: "data",
+    title: "Legislative District Atlas: presidential results on every map era, named candidates, redistricting history",
+    detail: "Three datasets behind the new per-chamber district pages (/states/[state]/legislature/[chamber]). (A) 2016, 2020 and 2024 presidential votes inside every state legislative district on the current map and on each superseded map, from Dave's Redistricting 2020-VTD returns area-apportioned onto each era's polygons; the 2024-on-current cell stays the precinct-exact one. (B) Candidate names for every general election 2016–2025: Klarner's candidate file (names, incumbency, winners) for 2016–2022, MEDSL and the state canvasses for 2024, Wikipedia and the Secretaries of State for the odd years; winners, incumbents and unopposed flags derived where a source carried none. (C) Per-district redistricting history from population-weighted overlays of consecutive maps, with generated descriptions and the old-to-new crosswalk the 2026 projection will use.",
+    effect: "99 chamber pages. 28,771 of 28,807 district-years named (99.9%). Overlay error on the 2024 holdout: median 0.04 points of margin across 73 chambers, worst Montana House 2.5. No model output changed.",
+  },
+  {
+    date: "2026-10-10", models: ["state-tpl", "state-leg"], kind: "data",
+    title: "New Hampshire 2022 House votes corrected from the state's election-database export",
+    detail: "The county-PDF parse behind data-entry/new_hampshire_2022_legislature.csv had double-counted 17 districts whose candidate header spanned two groups, tripled Hillsborough 16, mis-assigned Rockingham 13 and 16 and Strafford 15, and omitted Strafford 16. The CSV is now regenerated from the Secretary of State's own tabulation (the NH election database's export), where every district's candidate votes equal its Total Votes Cast row; the statewide row in state_leg.csv follows.",
+    effect: "Chamber total 2,275,330 → 2,089,636; Democratic 1,154,052 → 1,044,611, Republican 1,102,958 → 1,033,731; margin D+2.2 → D+0.5. New Hampshire's State TPL moves with its 2022 State Legislature row (5% race-type weight).",
+  },
   {
     date: "2026-10-09", models: ["forecast"], kind: "change",
     title: "A ceiling on the poll average's share of a projection",

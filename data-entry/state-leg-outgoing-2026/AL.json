@@ -1,0 +1,158 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 Alabama House of Representatives election",
+   "senate": "2026 Alabama Senate election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "1": [
+   {
+    "name": "Phillip Pettus",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Maurice McCaney"
+   }
+  ],
+  "13": [
+   {
+    "name": "Greg Barnes",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Mike Elliott"
+   }
+  ],
+  "17": [
+   {
+    "name": "Tracy Estes",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "32": [
+   {
+    "name": "Barbara Boyd",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "37": [
+   {
+    "name": "Bob Fincher",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "48": [
+   {
+    "name": "Jim Carns",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Lloyd Peeples"
+   }
+  ],
+  "50": [
+   {
+    "name": "Jim Hill",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "52": [
+   {
+    "name": "Kelvin Datcher",
+    "party": "D",
+    "category": "lost primary",
+    "reason": "lost renomination to Gigi Hayes"
+   }
+  ],
+  "60": [
+   {
+    "name": "Juandalynn Givan",
+    "party": "D",
+    "category": "lost primary",
+    "reason": "lost renomination to Alicia Escott Lumpkin"
+   }
+  ],
+  "65": [
+   {
+    "name": "Brett Easterbrook",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for state senate"
+   }
+  ],
+  "74": [
+   {
+    "name": "Phillip Ensler",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for lieutenant governor"
+   }
+  ],
+  "8": [
+   {
+    "name": "Terri Collins",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "91": [
+   {
+    "name": "Rhett Marques",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for U.S. house"
+   }
+  ],
+  "96": [
+   {
+    "name": "Matt Simpson",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Danielle Duggar"
+   }
+  ]
+ },
+ "senate": {
+  "15": [
+   {
+    "name": "Dan Roberts",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Scott Ortis"
+   }
+  ],
+  "2": [
+   {
+    "name": "Tom Butler",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "22": [
+   {
+    "name": "Greg Albritton",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Terry Waters"
+   }
+  ],
+  "34": [
+   {
+    "name": "Jack Williams",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for commissioner of Agriculture and Industries"
+   }
+  ]
+ }
+}

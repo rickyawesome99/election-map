@@ -9,20 +9,56 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Mark M. Nakashima",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "2": {
     "demVotes": 6692,
     "repVotes": 1344,
     "othVotes": 0,
-    "totalVotes": 8036
+    "totalVotes": 8036,
+    "candidates": [
+     {
+      "name": "Christopher L. T. Todd",
+      "party": "D",
+      "votes": 6692,
+      "winner": true
+     },
+     {
+      "name": "Grace Manipollarson",
+      "party": "R",
+      "votes": 1344
+     }
+    ]
    },
    "3": {
     "demVotes": 5795,
     "repVotes": 0,
     "othVotes": 1675,
     "totalVotes": 7470,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Richard H. K. Onishi",
+      "party": "D",
+      "votes": 5795,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Fred F. Fogel",
+      "party": "O",
+      "votes": 1675
+     }
+    ]
    },
    "4": {
     "demVotes": null,
@@ -30,7 +66,16 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Joy Sanbuenaventura",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "5": {
     "demVotes": null,
@@ -38,7 +83,16 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Richard P. Creagan",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "6": {
     "demVotes": null,
@@ -46,13 +100,35 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Nicole Lowen",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "7": {
     "demVotes": 6584,
     "repVotes": 1974,
     "othVotes": 0,
-    "totalVotes": 8558
+    "totalVotes": 8558,
+    "candidates": [
+     {
+      "name": "David Tarnas",
+      "party": "D",
+      "votes": 6584,
+      "winner": true
+     },
+     {
+      "name": "Tom Belekanich",
+      "party": "R",
+      "votes": 1974
+     }
+    ]
    },
    "8": {
     "demVotes": null,
@@ -60,7 +136,15 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Troy Hashimoto",
+      "party": "D",
+      "votes": null,
+      "winner": true
+     }
+    ]
    },
    "9": {
     "demVotes": null,
@@ -68,13 +152,41 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Justin H. Woodson",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "10": {
     "demVotes": 3673,
     "repVotes": 1318,
     "othVotes": 1137,
-    "totalVotes": 6128
+    "totalVotes": 6128,
+    "candidates": [
+     {
+      "name": "Angus L. K. McKelvey",
+      "party": "D",
+      "votes": 3673,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Chayne M. Marten",
+      "party": "R",
+      "votes": 1318
+     },
+     {
+      "name": "Jen Kamahoi Mather",
+      "party": "O",
+      "votes": 1137
+     }
+    ]
    },
    "11": {
     "demVotes": null,
@@ -82,7 +194,15 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Tina M. L. Wildberger",
+      "party": "D",
+      "votes": null,
+      "winner": true
+     }
+    ]
    },
    "12": {
     "demVotes": null,
@@ -90,14 +210,37 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Kyle T. Yamashita",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "13": {
     "demVotes": 5787,
     "repVotes": 0,
     "othVotes": 2296,
     "totalVotes": 8083,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Lynn P. Decoite",
+      "party": "D",
+      "votes": 5787,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Nick Nikhilananda",
+      "party": "O",
+      "votes": 2296
+     }
+    ]
    },
    "14": {
     "demVotes": null,
@@ -105,7 +248,16 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Nadine K. Nakamura",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "15": {
     "demVotes": null,
@@ -113,7 +265,16 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "James Kunane Tokioka",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "16": {
     "demVotes": null,
@@ -121,20 +282,57 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Daynette Morikawa",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "17": {
     "demVotes": 0,
     "repVotes": 8233,
     "othVotes": 1694,
     "totalVotes": 9927,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Gene Ward",
+      "party": "R",
+      "votes": 8233,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Alan J. K. Yim",
+      "party": "O",
+      "votes": 1694
+     }
+    ]
    },
    "18": {
     "demVotes": 7000,
     "repVotes": 3255,
     "othVotes": 0,
-    "totalVotes": 10255
+    "totalVotes": 10255,
+    "candidates": [
+     {
+      "name": "Mark Jun Hashem",
+      "party": "D",
+      "votes": 7000,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Ola Souza",
+      "party": "R",
+      "votes": 3255
+     }
+    ]
    },
    "19": {
     "demVotes": null,
@@ -142,13 +340,36 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Bertrand Kobayashi",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "20": {
     "demVotes": 6247,
     "repVotes": 2322,
     "othVotes": 0,
-    "totalVotes": 8569
+    "totalVotes": 8569,
+    "candidates": [
+     {
+      "name": "Calvin K. y. Say",
+      "party": "D",
+      "votes": 6247,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Julia E. Allen",
+      "party": "R",
+      "votes": 2322
+     }
+    ]
    },
    "21": {
     "demVotes": null,
@@ -156,13 +377,36 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Scott y. Nishimoto",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "22": {
     "demVotes": 3661,
     "repVotes": 1812,
     "othVotes": 0,
-    "totalVotes": 5473
+    "totalVotes": 5473,
+    "candidates": [
+     {
+      "name": "Tom Brower",
+      "party": "D",
+      "votes": 3661,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Kathryn Henskistark",
+      "party": "R",
+      "votes": 1812
+     }
+    ]
    },
    "23": {
     "demVotes": null,
@@ -170,7 +414,15 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Dale Kobayashi",
+      "party": "D",
+      "votes": null,
+      "winner": true
+     }
+    ]
    },
    "24": {
     "demVotes": null,
@@ -178,7 +430,16 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Della Au Belatti",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "25": {
     "demVotes": null,
@@ -186,7 +447,16 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Sylvia Luke",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "26": {
     "demVotes": null,
@@ -194,13 +464,36 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Scott K. Saiki",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "27": {
     "demVotes": 4940,
     "repVotes": 1699,
     "othVotes": 0,
-    "totalVotes": 6639
+    "totalVotes": 6639,
+    "candidates": [
+     {
+      "name": "Takashi Ohno",
+      "party": "D",
+      "votes": 4940,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Mela Kealohalindsey",
+      "party": "R",
+      "votes": 1699
+     }
+    ]
    },
    "28": {
     "demVotes": null,
@@ -208,7 +501,16 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "John M. Mizuno",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "29": {
     "demVotes": null,
@@ -216,13 +518,36 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Daniel Holt",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "30": {
     "demVotes": 1760,
     "repVotes": 1171,
     "othVotes": 0,
-    "totalVotes": 2931
+    "totalVotes": 2931,
+    "candidates": [
+     {
+      "name": "Romy M. Cachola",
+      "party": "D",
+      "votes": 1760,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Mar Velasco",
+      "party": "R",
+      "votes": 1171
+     }
+    ]
    },
    "31": {
     "demVotes": null,
@@ -230,7 +555,16 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Aaron Ling Johanson",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "32": {
     "demVotes": null,
@@ -238,7 +572,16 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Linda Ichiyama",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "33": {
     "demVotes": null,
@@ -246,7 +589,16 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Sam Satoru Kong",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "34": {
     "demVotes": null,
@@ -254,7 +606,16 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Gregg Takayama",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "35": {
     "demVotes": null,
@@ -262,19 +623,55 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Roy M. Takumi",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "36": {
     "demVotes": 4081,
     "repVotes": 4932,
     "othVotes": 0,
-    "totalVotes": 9013
+    "totalVotes": 9013,
+    "candidates": [
+     {
+      "name": "Val Okimoto",
+      "party": "R",
+      "votes": 4932,
+      "winner": true
+     },
+     {
+      "name": "Marilyn B. Lee",
+      "party": "D",
+      "votes": 4081
+     }
+    ]
    },
    "37": {
     "demVotes": 6883,
     "repVotes": 2799,
     "othVotes": 0,
-    "totalVotes": 9682
+    "totalVotes": 9682,
+    "candidates": [
+     {
+      "name": "Ryan I. Yamane",
+      "party": "D",
+      "votes": 6883,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Mary Smart",
+      "party": "R",
+      "votes": 2799
+     }
+    ]
    },
    "38": {
     "demVotes": null,
@@ -282,7 +679,16 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Henry J. C. Aquino",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "39": {
     "demVotes": null,
@@ -290,19 +696,55 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Ty J. K. Cullen",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "40": {
     "demVotes": 2406,
     "repVotes": 3036,
     "othVotes": 0,
-    "totalVotes": 5442
+    "totalVotes": 5442,
+    "candidates": [
+     {
+      "name": "Bob McDermott",
+      "party": "R",
+      "votes": 3036,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Rose Martinez",
+      "party": "D",
+      "votes": 2406
+     }
+    ]
    },
    "41": {
     "demVotes": 4005,
     "repVotes": 3440,
     "othVotes": 0,
-    "totalVotes": 7445
+    "totalVotes": 7445,
+    "candidates": [
+     {
+      "name": "Rida Cabanillaarakawa",
+      "party": "D",
+      "votes": 4005,
+      "winner": true
+     },
+     {
+      "name": "Chris Fidelibus",
+      "party": "R",
+      "votes": 3440
+     }
+    ]
    },
    "42": {
     "demVotes": null,
@@ -310,7 +752,16 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Sharon Har",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "43": {
     "demVotes": null,
@@ -318,7 +769,15 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Stacelynn Kehaulani Eli",
+      "party": "D",
+      "votes": null,
+      "winner": true
+     }
+    ]
    },
    "44": {
     "demVotes": null,
@@ -326,7 +785,16 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Cedric Asuega Gates",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "45": {
     "demVotes": null,
@@ -334,19 +802,55 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Lauren Cheape Matsumoto",
+      "party": "R",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "46": {
     "demVotes": 3205,
     "repVotes": 1640,
     "othVotes": 0,
-    "totalVotes": 4845
+    "totalVotes": 4845,
+    "candidates": [
+     {
+      "name": "Amy A. Perruso",
+      "party": "D",
+      "votes": 3205,
+      "winner": true
+     },
+     {
+      "name": "John E. Miller",
+      "party": "R",
+      "votes": 1640
+     }
+    ]
    },
    "47": {
     "demVotes": 3792,
     "repVotes": 2689,
     "othVotes": 0,
-    "totalVotes": 6481
+    "totalVotes": 6481,
+    "candidates": [
+     {
+      "name": "Sean Quinlan",
+      "party": "D",
+      "votes": 3792,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Richard Lee Fale",
+      "party": "R",
+      "votes": 2689
+     }
+    ]
    },
    "48": {
     "demVotes": null,
@@ -354,7 +858,15 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Lisa C. Kitagawa",
+      "party": "D",
+      "votes": null,
+      "winner": true
+     }
+    ]
    },
    "49": {
     "demVotes": null,
@@ -362,19 +874,55 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Scot Matayoshi",
+      "party": "D",
+      "votes": null,
+      "winner": true
+     }
+    ]
    },
    "50": {
     "demVotes": 3298,
     "repVotes": 5406,
     "othVotes": 0,
-    "totalVotes": 8704
+    "totalVotes": 8704,
+    "candidates": [
+     {
+      "name": "Cynthia Thielen",
+      "party": "R",
+      "votes": 5406,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Micah Kalama Pregitzer",
+      "party": "D",
+      "votes": 3298
+     }
+    ]
    },
    "51": {
     "demVotes": 6106,
     "repVotes": 2706,
     "othVotes": 0,
-    "totalVotes": 8812
+    "totalVotes": 8812,
+    "candidates": [
+     {
+      "name": "Chris Lee",
+      "party": "D",
+      "votes": 6106,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Noe Galeai",
+      "party": "R",
+      "votes": 2706
+     }
+    ]
    }
   }
  },
@@ -387,14 +935,41 @@
     "repVotes": 0,
     "othVotes": 1792,
     "totalVotes": 14284,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Kaialii Kahele",
+      "party": "D",
+      "votes": 12492,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Kimberly A. Arianoff",
+      "party": "O",
+      "votes": 1792
+     }
+    ]
    },
    "3": {
     "demVotes": 10650,
     "repVotes": 0,
     "othVotes": 2773,
     "totalVotes": 13423,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Dru Kanuha",
+      "party": "D",
+      "votes": 10650,
+      "winner": true
+     },
+     {
+      "name": "Michael L. Last",
+      "party": "O",
+      "votes": 2773
+     }
+    ]
    },
    "4": {
     "demVotes": null,
@@ -402,14 +977,37 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Lorraine Rodero Inouye",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "6": {
     "demVotes": 8911,
     "repVotes": 0,
     "othVotes": 4337,
     "totalVotes": 13248,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Roz Baker",
+      "party": "D",
+      "votes": 8911,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Melissah Shishido",
+      "party": "O",
+      "votes": 4337
+     }
+    ]
    },
    "7": {
     "demVotes": null,
@@ -417,13 +1015,35 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "J. Kalani English",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "12": {
     "demVotes": 9505,
     "repVotes": 3998,
     "othVotes": 0,
-    "totalVotes": 13503
+    "totalVotes": 13503,
+    "candidates": [
+     {
+      "name": "Sharon y. Moriwaki",
+      "party": "D",
+      "votes": 9505,
+      "winner": true
+     },
+     {
+      "name": "Lynn Barry Mariano",
+      "party": "R",
+      "votes": 3998
+     }
+    ]
    },
    "16": {
     "demVotes": null,
@@ -431,19 +1051,56 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Breene Harimoto",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "17": {
     "demVotes": 7828,
     "repVotes": 3538,
     "othVotes": 0,
-    "totalVotes": 11366
+    "totalVotes": 11366,
+    "candidates": [
+     {
+      "name": "Clarence Nishihara",
+      "party": "D",
+      "votes": 7828,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Roger Clemente",
+      "party": "R",
+      "votes": 3538
+     }
+    ]
    },
    "18": {
     "demVotes": 11844,
     "repVotes": 5829,
     "othVotes": 0,
-    "totalVotes": 17673
+    "totalVotes": 17673,
+    "candidates": [
+     {
+      "name": "Michelle Kidani",
+      "party": "D",
+      "votes": 11844,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Tony Solis",
+      "party": "R",
+      "votes": 5829
+     }
+    ]
    },
    "19": {
     "demVotes": 6087,
@@ -455,7 +1112,21 @@
     "demVotes": 5808,
     "repVotes": 4049,
     "othVotes": 0,
-    "totalVotes": 9857
+    "totalVotes": 9857,
+    "candidates": [
+     {
+      "name": "Maile Shimabukuro",
+      "party": "D",
+      "votes": 5808,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Diamond D. Garcia",
+      "party": "R",
+      "votes": 4049
+     }
+    ]
    },
    "23": {
     "demVotes": null,
@@ -463,7 +1134,16 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Gil Riviere",
+      "party": "D",
+      "votes": null,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "24": {
     "demVotes": null,
@@ -471,7 +1151,15 @@
     "othVotes": null,
     "totalVotes": null,
     "noCount": true,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Jarrett Keohokalole",
+      "party": "D",
+      "votes": null,
+      "winner": true
+     }
+    ]
    }
   }
  }

@@ -1,0 +1,4136 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 97.0,
+      "key": "1",
+      "popPct": 76.6
+     },
+     {
+      "areaPct": 1.0,
+      "key": "2",
+      "popPct": 22.4
+     },
+     {
+      "areaPct": 1.9,
+      "key": "7",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 34.4
+     },
+     {
+      "county": "Coos",
+      "popPct": 33.7
+     },
+     {
+      "county": "Curry",
+      "popPct": 31.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Josephine",
+      "popPct": 8.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 73635,
+    "pres2020New": 29.6,
+    "pres2020Old": 27.9,
+    "retainedAreaPct": 97.0,
+    "retainedPopPct": 76.6,
+    "text": "Kept 77% of its population from the 2016\u20132020 HD-1; gained the rest from the old HD-2 (22%), the old HD-7 (1%). Counties: lost Josephine. 2020 presidential margin R+27.9 on the 2016\u20132020 lines \u2192 R+29.6 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 51.3,
+      "key": "10",
+      "popPct": 68.3
+     },
+     {
+      "areaPct": 24.4,
+      "key": "23",
+      "popPct": 15.2
+     },
+     {
+      "areaPct": 22.6,
+      "key": "9",
+      "popPct": 8.4
+     },
+     {
+      "areaPct": 0.3,
+      "key": "16",
+      "popPct": 6.2
+     },
+     {
+      "areaPct": 1.4,
+      "key": "14",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lincoln",
+      "popPct": 69.4
+     },
+     {
+      "county": "Benton",
+      "popPct": 21.4
+     },
+     {
+      "county": "Lane",
+      "popPct": 9.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Benton",
+      "popPct": 21.4
+     },
+     {
+      "county": "Lane",
+      "popPct": 9.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Tillamook",
+      "popPct": 13.0
+     },
+     {
+      "county": "Yamhill",
+      "popPct": 9.8
+     },
+     {
+      "county": "Polk",
+      "popPct": 4.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 72493,
+    "pres2020New": -12.8,
+    "pres2020Old": -7.3,
+    "retainedAreaPct": 51.3,
+    "retainedPopPct": 68.3,
+    "text": "Kept 68% of its population from the 2016\u20132020 HD-10; gained the rest from the old HD-23 (15%), the old HD-9 (8%), the old HD-16 (6%) and 1 more. Counties: gained Benton (21%), Lane (9%); lost Tillamook, Yamhill, Polk. 2020 presidential margin D+7.3 on the 2016\u20132020 lines \u2192 D+12.8 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 72.2,
+      "key": "17",
+      "popPct": 65.3
+     },
+     {
+      "areaPct": 23.2,
+      "key": "11",
+      "popPct": 24.3
+     },
+     {
+      "areaPct": 1.0,
+      "key": "23",
+      "popPct": 6.3
+     },
+     {
+      "areaPct": 3.5,
+      "key": "15",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Linn",
+      "popPct": 93.5
+     },
+     {
+      "county": "Marion",
+      "popPct": 6.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Marion",
+      "popPct": 6.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Lane",
+      "popPct": 76.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 69366,
+    "pres2020New": 36.3,
+    "pres2020Old": -7.2,
+    "retainedAreaPct": 23.2,
+    "retainedPopPct": 24.3,
+    "text": "A new footprint: only 24% of its population was in the 2016\u20132020 HD-11; it draws from the old HD-17 (65%), the old HD-23 (6%), the old HD-15 (4%). Counties: gained Marion (6%); lost Lane. 2020 presidential margin D+7.2 on the 2016\u20132020 lines \u2192 R+36.3 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 86.4,
+      "key": "7",
+      "popPct": 44.2
+     },
+     {
+      "areaPct": 12.0,
+      "key": "11",
+      "popPct": 39.9
+     },
+     {
+      "areaPct": 1.1,
+      "key": "14",
+      "popPct": 13.8
+     },
+     {
+      "areaPct": 0.6,
+      "key": "8",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lane",
+      "popPct": 98.9
+     },
+     {
+      "county": "Linn",
+      "popPct": 1.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 72444,
+    "pres2020New": 3.7,
+    "pres2020Old": -15.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-12; it draws from the old HD-7 (44%), the old HD-11 (40%), the old HD-14 (14%) and 1 more. Spans Lane, Linn counties. 2020 presidential margin D+15.0 on the 2016\u20132020 lines \u2192 R+3.7 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 82.0,
+      "key": "13",
+      "popPct": 79.5
+     },
+     {
+      "areaPct": 16.8,
+      "key": "14",
+      "popPct": 20.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lane",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68168,
+    "pres2020New": -33.4,
+    "pres2020Old": -42.8,
+    "retainedAreaPct": 82.0,
+    "retainedPopPct": 79.5,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-13; gained the rest from the old HD-14 (20%). Entirely in Lane County. 2020 presidential margin D+42.8 on the 2016\u20132020 lines \u2192 D+33.4 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 16.4,
+      "key": "14",
+      "popPct": 64.2
+     },
+     {
+      "areaPct": 82.2,
+      "key": "8",
+      "popPct": 31.3
+     },
+     {
+      "areaPct": 1.4,
+      "key": "13",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lane",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 71886,
+    "pres2020New": -26.4,
+    "pres2020Old": -18.0,
+    "retainedAreaPct": 16.4,
+    "retainedPopPct": 64.2,
+    "text": "Kept 64% of its population from the 2016\u20132020 HD-14; gained the rest from the old HD-8 (31%), the old HD-13 (4%). Entirely in Lane County. 2020 presidential margin D+18.0 on the 2016\u20132020 lines \u2192 D+26.4 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 72.9,
+      "key": "15",
+      "popPct": 91.2
+     },
+     {
+      "areaPct": 5.9,
+      "key": "19",
+      "popPct": 4.9
+     },
+     {
+      "areaPct": 21.3,
+      "key": "23",
+      "popPct": 4.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Linn",
+      "popPct": 81.5
+     },
+     {
+      "county": "Benton",
+      "popPct": 9.3
+     },
+     {
+      "county": "Marion",
+      "popPct": 9.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Marion",
+      "popPct": 9.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 70270,
+    "pres2020New": 4.1,
+    "pres2020Old": 4.1,
+    "retainedAreaPct": 72.9,
+    "retainedPopPct": 91.2,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-15; gained the rest from the old HD-19 (5%), the old HD-23 (4%). Counties: gained Marion (9%). 2020 presidential margin R+4.1 on the 2016\u20132020 lines \u2192 R+4.1 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 37.7,
+      "key": "16",
+      "popPct": 88.0
+     },
+     {
+      "areaPct": 18.6,
+      "key": "15",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 43.6,
+      "key": "23",
+      "popPct": 4.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Benton",
+      "popPct": 99.2
+     },
+     {
+      "county": "Linn",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 72415,
+    "pres2020New": -51.6,
+    "pres2020Old": -56.3,
+    "retainedAreaPct": 37.7,
+    "retainedPopPct": 88.0,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-16; gained the rest from the old HD-15 (7%), the old HD-23 (5%). Spans Benton, Linn counties. 2020 presidential margin D+56.3 on the 2016\u20132020 lines \u2192 D+51.6 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 90.4,
+      "key": "17",
+      "popPct": 33.6
+     },
+     {
+      "areaPct": 4.9,
+      "key": "19",
+      "popPct": 32.2
+     },
+     {
+      "areaPct": 0.3,
+      "key": "21",
+      "popPct": 24.3
+     },
+     {
+      "areaPct": 1.5,
+      "key": "18",
+      "popPct": 5.9
+     },
+     {
+      "areaPct": 2.9,
+      "key": "23",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 92.3
+     },
+     {
+      "county": "Linn",
+      "popPct": 7.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 74193,
+    "pres2020New": 21.6,
+    "pres2020Old": 35.3,
+    "retainedAreaPct": 90.4,
+    "retainedPopPct": 33.6,
+    "text": "A new footprint: only 34% of its population was in the 2016\u20132020 HD-17; it draws from the old HD-19 (32%), the old HD-21 (24%), the old HD-18 (6%) and 1 more. Spans Marion, Linn counties. 2020 presidential margin R+35.3 on the 2016\u20132020 lines \u2192 R+21.6 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 89.9,
+      "key": "18",
+      "popPct": 89.1
+     },
+     {
+      "areaPct": 2.2,
+      "key": "39",
+      "popPct": 5.5
+     },
+     {
+      "areaPct": 3.5,
+      "key": "25",
+      "popPct": 2.7
+     },
+     {
+      "areaPct": 2.4,
+      "key": "17",
+      "popPct": 1.7
+     },
+     {
+      "areaPct": 2.0,
+      "key": "52",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 56.8
+     },
+     {
+      "county": "Clackamas",
+      "popPct": 43.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 77293,
+    "pres2020New": 22.9,
+    "pres2020Old": 21.7,
+    "retainedAreaPct": 89.9,
+    "retainedPopPct": 89.1,
+    "text": "Kept 89% of its population from the 2016\u20132020 HD-18; gained the rest from the old HD-39 (6%), the old HD-25 (3%), the old HD-17 (2%) and 1 more. Spans Marion, Clackamas counties. 2020 presidential margin R+21.7 on the 2016\u20132020 lines \u2192 R+22.9 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 72.7,
+      "key": "19",
+      "popPct": 67.3
+     },
+     {
+      "areaPct": 21.3,
+      "key": "21",
+      "popPct": 24.3
+     },
+     {
+      "areaPct": 6.0,
+      "key": "20",
+      "popPct": 8.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67395,
+    "pres2020New": -16.5,
+    "pres2020Old": -0.5,
+    "retainedAreaPct": 72.7,
+    "retainedPopPct": 67.3,
+    "text": "Kept 67% of its population from the 2016\u20132020 HD-19; gained the rest from the old HD-21 (24%), the old HD-20 (8%). Entirely in Marion County. 2020 presidential margin D+0.5 on the 2016\u20132020 lines \u2192 D+16.5 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 89.6,
+      "key": "7",
+      "popPct": 49.2
+     },
+     {
+      "areaPct": 9.2,
+      "key": "2",
+      "popPct": 42.8
+     },
+     {
+      "areaPct": 1.2,
+      "key": "1",
+      "popPct": 8.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Josephine",
+      "popPct": 8.6
+     },
+     {
+      "county": "Jackson",
+      "popPct": 4.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 68367,
+    "pres2020New": 34.8,
+    "pres2020Old": 36.6,
+    "retainedAreaPct": 9.2,
+    "retainedPopPct": 42.8,
+    "text": "A new footprint: only 43% of its population was in the 2016\u20132020 HD-2; it draws from the old HD-7 (49%), the old HD-1 (8%). Counties: lost Josephine, Jackson. 2020 presidential margin R+36.6 on the 2016\u20132020 lines \u2192 R+34.8 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 97.0,
+      "key": "20",
+      "popPct": 95.2
+     },
+     {
+      "areaPct": 1.8,
+      "key": "23",
+      "popPct": 2.8
+     },
+     {
+      "areaPct": 1.2,
+      "key": "21",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 65.4
+     },
+     {
+      "county": "Marion",
+      "popPct": 34.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 62943,
+    "pres2020New": -16.1,
+    "pres2020Old": -15.3,
+    "retainedAreaPct": 97.0,
+    "retainedPopPct": 95.2,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-20; gained the rest from the old HD-23 (3%), the old HD-21 (2%). Spans Polk, Marion counties. 2020 presidential margin D+15.3 on the 2016\u20132020 lines \u2192 D+16.1 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 58.5,
+      "key": "25",
+      "popPct": 53.2
+     },
+     {
+      "areaPct": 28.0,
+      "key": "21",
+      "popPct": 33.8
+     },
+     {
+      "areaPct": 13.4,
+      "key": "22",
+      "popPct": 13.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 97.7
+     },
+     {
+      "county": "Polk",
+      "popPct": 2.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Polk",
+      "popPct": 2.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 69132,
+    "pres2020New": -7.4,
+    "pres2020Old": -20.1,
+    "retainedAreaPct": 28.0,
+    "retainedPopPct": 33.8,
+    "text": "A new footprint: only 34% of its population was in the 2016\u20132020 HD-21; it draws from the old HD-25 (53%), the old HD-22 (13%). Counties: gained Polk (2%). 2020 presidential margin D+20.1 on the 2016\u20132020 lines \u2192 D+7.4 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 43.8,
+      "key": "22",
+      "popPct": 84.3
+     },
+     {
+      "areaPct": 1.8,
+      "key": "21",
+      "popPct": 11.6
+     },
+     {
+      "areaPct": 52.6,
+      "key": "25",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 1.7,
+      "key": "18",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67353,
+    "pres2020New": -10.5,
+    "pres2020Old": -14.8,
+    "retainedAreaPct": 43.8,
+    "retainedPopPct": 84.3,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-22; gained the rest from the old HD-21 (12%), the old HD-25 (4%), the old HD-18 (1%). Entirely in Marion County. 2020 presidential margin D+14.8 on the 2016\u20132020 lines \u2192 D+10.5 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 66.2,
+      "key": "23",
+      "popPct": 55.9
+     },
+     {
+      "areaPct": 2.0,
+      "key": "25",
+      "popPct": 32.8
+     },
+     {
+      "areaPct": 2.8,
+      "key": "24",
+      "popPct": 7.7
+     },
+     {
+      "areaPct": 28.8,
+      "key": "10",
+      "popPct": 1.9
+     },
+     {
+      "areaPct": 0.2,
+      "key": "20",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 51.8
+     },
+     {
+      "county": "Yamhill",
+      "popPct": 47.4
+     },
+     {
+      "county": "Marion",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Benton",
+      "popPct": 16.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 77533,
+    "pres2020New": 8.5,
+    "pres2020Old": 10.9,
+    "retainedAreaPct": 66.2,
+    "retainedPopPct": 55.9,
+    "text": "Kept 56% of its population from the 2016\u20132020 HD-23; gained the rest from the old HD-25 (33%), the old HD-24 (8%), the old HD-10 (2%) and 1 more. Counties: lost Benton. 2020 presidential margin R+10.9 on the 2016\u20132020 lines \u2192 R+8.5 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 36.1,
+      "key": "24",
+      "popPct": 62.7
+     },
+     {
+      "areaPct": 32.1,
+      "key": "23",
+      "popPct": 25.6
+     },
+     {
+      "areaPct": 31.7,
+      "key": "10",
+      "popPct": 11.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Yamhill",
+      "popPct": 95.2
+     },
+     {
+      "county": "Polk",
+      "popPct": 4.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Polk",
+      "popPct": 4.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Washington",
+      "popPct": 23.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 71328,
+    "pres2020New": 6.3,
+    "pres2020Old": -2.2,
+    "retainedAreaPct": 36.1,
+    "retainedPopPct": 62.7,
+    "text": "Kept 63% of its population from the 2016\u20132020 HD-24; gained the rest from the old HD-23 (26%), the old HD-10 (12%). Counties: gained Polk (5%); lost Washington. 2020 presidential margin D+2.2 on the 2016\u20132020 lines \u2192 R+6.3 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 86.6,
+      "key": "35",
+      "popPct": 79.4
+     },
+     {
+      "areaPct": 9.3,
+      "key": "27",
+      "popPct": 15.5
+     },
+     {
+      "areaPct": 2.9,
+      "key": "26",
+      "popPct": 3.7
+     },
+     {
+      "areaPct": 1.2,
+      "key": "37",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Washington",
+      "popPct": 99.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Marion",
+      "popPct": 57.2
+     },
+     {
+      "county": "Yamhill",
+      "popPct": 40.4
+     },
+     {
+      "county": "Polk",
+      "popPct": 2.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 70000,
+    "pres2020New": -37.7,
+    "pres2020Old": 2.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-25; it draws from the old HD-35 (79%), the old HD-27 (16%), the old HD-26 (4%) and 1 more. Counties: gained Washington (100%); lost Marion, Yamhill, Polk. 2020 presidential margin R+2.7 on the 2016\u20132020 lines \u2192 D+37.7 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 66.4,
+      "key": "26",
+      "popPct": 85.8
+     },
+     {
+      "areaPct": 7.1,
+      "key": "39",
+      "popPct": 4.3
+     },
+     {
+      "areaPct": 19.8,
+      "key": "25",
+      "popPct": 3.9
+     },
+     {
+      "areaPct": 0.6,
+      "key": "37",
+      "popPct": 3.2
+     },
+     {
+      "areaPct": 0.3,
+      "key": "35",
+      "popPct": 2.2
+     },
+     {
+      "areaPct": 5.8,
+      "key": "18",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 57.1
+     },
+     {
+      "county": "Clackamas",
+      "popPct": 38.9
+     },
+     {
+      "county": "Yamhill",
+      "popPct": 3.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Yamhill",
+      "popPct": 3.8
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 70545,
+    "pres2020New": -19.3,
+    "pres2020Old": -21.5,
+    "retainedAreaPct": 66.4,
+    "retainedPopPct": 85.8,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-26; gained the rest from the old HD-39 (4%), the old HD-25 (4%), the old HD-37 (3%) and 2 more. Counties: gained Yamhill (4%). 2020 presidential margin D+21.5 on the 2016\u20132020 lines \u2192 D+19.3 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 41.1,
+      "key": "27",
+      "popPct": 41.9
+     },
+     {
+      "areaPct": 36.0,
+      "key": "34",
+      "popPct": 29.5
+     },
+     {
+      "areaPct": 10.9,
+      "key": "28",
+      "popPct": 16.2
+     },
+     {
+      "areaPct": 11.9,
+      "key": "33",
+      "popPct": 12.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Multnomah",
+      "popPct": 4.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 73069,
+    "pres2020New": -49.5,
+    "pres2020Old": -49.9,
+    "retainedAreaPct": 41.1,
+    "retainedPopPct": 41.9,
+    "text": "A new footprint: only 42% of its population was in the 2016\u20132020 HD-27; it draws from the old HD-34 (30%), the old HD-28 (16%), the old HD-33 (12%). Counties: lost Multnomah. 2020 presidential margin D+49.9 on the 2016\u20132020 lines \u2192 D+49.5 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 49.8,
+      "key": "36",
+      "popPct": 52.1
+     },
+     {
+      "areaPct": 25.9,
+      "key": "27",
+      "popPct": 20.0
+     },
+     {
+      "areaPct": 10.3,
+      "key": "38",
+      "popPct": 13.2
+     },
+     {
+      "areaPct": 11.1,
+      "key": "35",
+      "popPct": 12.2
+     },
+     {
+      "areaPct": 2.9,
+      "key": "34",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Multnomah",
+      "popPct": 76.4
+     },
+     {
+      "county": "Washington",
+      "popPct": 23.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Multnomah",
+      "popPct": 76.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 70699,
+    "pres2020New": -70.4,
+    "pres2020Old": -36.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-28; it draws from the old HD-36 (52%), the old HD-27 (20%), the old HD-38 (13%) and 2 more. Counties: gained Multnomah (76%). 2020 presidential margin D+36.0 on the 2016\u20132020 lines \u2192 D+70.4 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 35.3,
+      "key": "29",
+      "popPct": 70.6
+     },
+     {
+      "areaPct": 14.1,
+      "key": "30",
+      "popPct": 16.9
+     },
+     {
+      "areaPct": 23.1,
+      "key": "32",
+      "popPct": 7.7
+     },
+     {
+      "areaPct": 27.5,
+      "key": "24",
+      "popPct": 4.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 69315,
+    "pres2020New": -18.0,
+    "pres2020Old": -20.4,
+    "retainedAreaPct": 35.3,
+    "retainedPopPct": 70.6,
+    "text": "Kept 71% of its population from the 2016\u20132020 HD-29; gained the rest from the old HD-30 (17%), the old HD-32 (8%), the old HD-24 (5%). Entirely in Washington County. 2020 presidential margin D+20.4 on the 2016\u20132020 lines \u2192 D+18.0 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 50.8,
+      "key": "3",
+      "popPct": 93.5
+     },
+     {
+      "areaPct": 48.5,
+      "key": "1",
+      "popPct": 5.4
+     },
+     {
+      "areaPct": 0.6,
+      "key": "4",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Josephine",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 70084,
+    "pres2020New": 22.9,
+    "pres2020Old": 23.3,
+    "retainedAreaPct": 50.8,
+    "retainedPopPct": 93.5,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-3; gained the rest from the old HD-1 (5%), the old HD-4 (1%). Entirely in Josephine County. 2020 presidential margin R+23.3 on the 2016\u20132020 lines \u2192 R+22.9 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 76.8,
+      "key": "30",
+      "popPct": 71.5
+     },
+     {
+      "areaPct": 6.0,
+      "key": "29",
+      "popPct": 16.1
+     },
+     {
+      "areaPct": 5.1,
+      "key": "34",
+      "popPct": 10.3
+     },
+     {
+      "areaPct": 0.4,
+      "key": "26",
+      "popPct": 1.4
+     },
+     {
+      "areaPct": 11.7,
+      "key": "31",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 70439,
+    "pres2020New": -35.6,
+    "pres2020Old": -32.8,
+    "retainedAreaPct": 76.8,
+    "retainedPopPct": 71.5,
+    "text": "Kept 72% of its population from the 2016\u20132020 HD-30; gained the rest from the old HD-29 (16%), the old HD-34 (10%), the old HD-26 (1%) and 1 more. Entirely in Washington County. 2020 presidential margin D+32.8 on the 2016\u20132020 lines \u2192 D+35.6 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 72.9,
+      "key": "31",
+      "popPct": 81.1
+     },
+     {
+      "areaPct": 24.8,
+      "key": "32",
+      "popPct": 12.8
+     },
+     {
+      "areaPct": 1.9,
+      "key": "30",
+      "popPct": 5.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Columbia",
+      "popPct": 69.1
+     },
+     {
+      "county": "Washington",
+      "popPct": 27.0
+     },
+     {
+      "county": "Multnomah",
+      "popPct": 3.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 74095,
+    "pres2020New": 7.5,
+    "pres2020Old": 0.3,
+    "retainedAreaPct": 72.9,
+    "retainedPopPct": 81.1,
+    "text": "Kept 81% of its population from the 2016\u20132020 HD-31; gained the rest from the old HD-32 (13%), the old HD-30 (6%). Spans Columbia, Washington, Multnomah counties. 2020 presidential margin R+0.3 on the 2016\u20132020 lines \u2192 R+7.5 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 73.6,
+      "key": "32",
+      "popPct": 85.2
+     },
+     {
+      "areaPct": 24.4,
+      "key": "10",
+      "popPct": 12.7
+     },
+     {
+      "areaPct": 2.0,
+      "key": "31",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clatsop",
+      "popPct": 58.7
+     },
+     {
+      "county": "Tillamook",
+      "popPct": 39.1
+     },
+     {
+      "county": "Columbia",
+      "popPct": 2.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Columbia",
+      "popPct": 2.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Washington",
+      "popPct": 19.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 69934,
+    "pres2020New": -5.3,
+    "pres2020Old": -5.6,
+    "retainedAreaPct": 73.6,
+    "retainedPopPct": 85.2,
+    "text": "Kept 85% of its population from the 2016\u20132020 HD-32; gained the rest from the old HD-10 (13%), the old HD-31 (2%). Counties: gained Columbia (2%); lost Washington. 2020 presidential margin D+5.6 on the 2016\u20132020 lines \u2192 D+5.3 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 11.7,
+      "key": "36",
+      "popPct": 43.2
+     },
+     {
+      "areaPct": 32.6,
+      "key": "33",
+      "popPct": 40.4
+     },
+     {
+      "areaPct": 4.4,
+      "key": "44",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 3.2,
+      "key": "34",
+      "popPct": 5.8
+     },
+     {
+      "areaPct": 48.1,
+      "key": "31",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Multnomah",
+      "popPct": 92.9
+     },
+     {
+      "county": "Washington",
+      "popPct": 7.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68697,
+    "pres2020New": -75.7,
+    "pres2020Old": -59.1,
+    "retainedAreaPct": 32.6,
+    "retainedPopPct": 40.4,
+    "text": "A new footprint: only 40% of its population was in the 2016\u20132020 HD-33; it draws from the old HD-36 (43%), the old HD-44 (7%), the old HD-34 (6%) and 1 more. Spans Multnomah, Washington counties. 2020 presidential margin D+59.1 on the 2016\u20132020 lines \u2192 D+75.7 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 59.3,
+      "key": "33",
+      "popPct": 67.6
+     },
+     {
+      "areaPct": 25.4,
+      "key": "31",
+      "popPct": 17.3
+     },
+     {
+      "areaPct": 15.0,
+      "key": "34",
+      "popPct": 14.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 97.5
+     },
+     {
+      "county": "Multnomah",
+      "popPct": 2.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Multnomah",
+      "popPct": 2.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 69629,
+    "pres2020New": -46.8,
+    "pres2020Old": -49.1,
+    "retainedAreaPct": 15.0,
+    "retainedPopPct": 14.6,
+    "text": "A new footprint: only 15% of its population was in the 2016\u20132020 HD-34; it draws from the old HD-33 (68%), the old HD-31 (17%). Counties: gained Multnomah (2%). 2020 presidential margin D+49.1 on the 2016\u20132020 lines \u2192 D+46.8 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 36.4,
+      "key": "28",
+      "popPct": 41.6
+     },
+     {
+      "areaPct": 48.7,
+      "key": "34",
+      "popPct": 39.3
+     },
+     {
+      "areaPct": 13.0,
+      "key": "30",
+      "popPct": 17.3
+     },
+     {
+      "areaPct": 1.9,
+      "key": "26",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Multnomah",
+      "popPct": 13.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 69324,
+    "pres2020New": -40.1,
+    "pres2020Old": -42.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-35; it draws from the old HD-28 (42%), the old HD-34 (39%), the old HD-30 (17%) and 1 more. Counties: lost Multnomah. 2020 presidential margin D+42.2 on the 2016\u20132020 lines \u2192 D+40.1 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 5.8,
+      "key": "28",
+      "popPct": 38.4
+     },
+     {
+      "areaPct": 43.5,
+      "key": "26",
+      "popPct": 25.8
+     },
+     {
+      "areaPct": 47.1,
+      "key": "24",
+      "popPct": 16.8
+     },
+     {
+      "areaPct": 2.4,
+      "key": "27",
+      "popPct": 16.5
+     },
+     {
+      "areaPct": 1.1,
+      "key": "29",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Washington",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Multnomah",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 70563,
+    "pres2020New": -29.8,
+    "pres2020Old": -76.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-36; it draws from the old HD-28 (38%), the old HD-26 (26%), the old HD-24 (17%) and 2 more. Counties: gained Washington (100%); lost Multnomah. 2020 presidential margin D+76.2 on the 2016\u20132020 lines \u2192 D+29.8 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 92.7,
+      "key": "37",
+      "popPct": 91.9
+     },
+     {
+      "areaPct": 5.5,
+      "key": "26",
+      "popPct": 4.4
+     },
+     {
+      "areaPct": 1.6,
+      "key": "38",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clackamas",
+      "popPct": 62.6
+     },
+     {
+      "county": "Washington",
+      "popPct": 37.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 70464,
+    "pres2020New": -29.8,
+    "pres2020Old": -30.3,
+    "retainedAreaPct": 92.7,
+    "retainedPopPct": 91.9,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-37; gained the rest from the old HD-26 (4%), the old HD-38 (4%). Spans Clackamas, Washington counties. 2020 presidential margin D+30.3 on the 2016\u20132020 lines \u2192 D+29.8 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 87.1,
+      "key": "38",
+      "popPct": 81.6
+     },
+     {
+      "areaPct": 3.1,
+      "key": "36",
+      "popPct": 8.2
+     },
+     {
+      "areaPct": 6.1,
+      "key": "35",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 3.6,
+      "key": "37",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clackamas",
+      "popPct": 53.9
+     },
+     {
+      "county": "Multnomah",
+      "popPct": 46.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 70176,
+    "pres2020New": -55.5,
+    "pres2020Old": -56.0,
+    "retainedAreaPct": 87.1,
+    "retainedPopPct": 81.6,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-38; gained the rest from the old HD-36 (8%), the old HD-35 (7%), the old HD-37 (3%). Spans Clackamas, Multnomah counties. 2020 presidential margin D+56.0 on the 2016\u20132020 lines \u2192 D+55.5 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 30.8,
+      "key": "48",
+      "popPct": 44.0
+     },
+     {
+      "areaPct": 36.5,
+      "key": "51",
+      "popPct": 43.4
+     },
+     {
+      "areaPct": 29.6,
+      "key": "39",
+      "popPct": 8.9
+     },
+     {
+      "areaPct": 1.5,
+      "key": "41",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 1.6,
+      "key": "40",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clackamas",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 72053,
+    "pres2020New": -16.4,
+    "pres2020Old": 12.4,
+    "retainedAreaPct": 29.6,
+    "retainedPopPct": 8.9,
+    "text": "A new footprint: only 9% of its population was in the 2016\u20132020 HD-39; it draws from the old HD-48 (44%), the old HD-51 (43%), the old HD-41 (3%) and 1 more. Entirely in Clackamas County. 2020 presidential margin R+12.4 on the 2016\u20132020 lines \u2192 D+16.4 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 16.8,
+      "key": "4",
+      "popPct": 62.1
+     },
+     {
+      "areaPct": 41.6,
+      "key": "2",
+      "popPct": 22.7
+     },
+     {
+      "areaPct": 31.5,
+      "key": "1",
+      "popPct": 7.6
+     },
+     {
+      "areaPct": 5.0,
+      "key": "55",
+      "popPct": 3.7
+     },
+     {
+      "areaPct": 0.4,
+      "key": "3",
+      "popPct": 2.4
+     },
+     {
+      "areaPct": 2.3,
+      "key": "5",
+      "popPct": 0.9
+     },
+     {
+      "areaPct": 0.0,
+      "key": "6",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jackson",
+      "popPct": 59.8
+     },
+     {
+      "county": "Josephine",
+      "popPct": 24.7
+     },
+     {
+      "county": "Douglas",
+      "popPct": 15.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Douglas",
+      "popPct": 15.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 72913,
+    "pres2020New": 34.1,
+    "pres2020Old": 32.2,
+    "retainedAreaPct": 16.8,
+    "retainedPopPct": 62.1,
+    "text": "Kept 62% of its population from the 2016\u20132020 HD-4; gained the rest from the old HD-2 (23%), the old HD-1 (8%), the old HD-55 (4%) and 3 more. Counties: gained Douglas (16%). 2020 presidential margin R+32.2 on the 2016\u20132020 lines \u2192 R+34.1 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 91.8,
+      "key": "40",
+      "popPct": 93.1
+     },
+     {
+      "areaPct": 1.8,
+      "key": "48",
+      "popPct": 3.3
+     },
+     {
+      "areaPct": 1.5,
+      "key": "41",
+      "popPct": 2.3
+     },
+     {
+      "areaPct": 5.0,
+      "key": "39",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clackamas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 65008,
+    "pres2020New": -13.4,
+    "pres2020Old": -12.1,
+    "retainedAreaPct": 91.8,
+    "retainedPopPct": 93.1,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-40; gained the rest from the old HD-48 (3%), the old HD-41 (2%), the old HD-39 (1%). Entirely in Clackamas County. 2020 presidential margin D+12.1 on the 2016\u20132020 lines \u2192 D+13.4 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 90.7,
+      "key": "41",
+      "popPct": 85.6
+     },
+     {
+      "areaPct": 8.0,
+      "key": "42",
+      "popPct": 13.8
+     },
+     {
+      "areaPct": 1.1,
+      "key": "48",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clackamas",
+      "popPct": 52.9
+     },
+     {
+      "county": "Multnomah",
+      "popPct": 47.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 70105,
+    "pres2020New": -57.1,
+    "pres2020Old": -53.5,
+    "retainedAreaPct": 90.7,
+    "retainedPopPct": 85.6,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-41; gained the rest from the old HD-42 (14%), the old HD-48 (0%). Spans Clackamas, Multnomah counties. 2020 presidential margin D+53.5 on the 2016\u20132020 lines \u2192 D+57.1 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 85.0,
+      "key": "42",
+      "popPct": 86.6
+     },
+     {
+      "areaPct": 14.9,
+      "key": "46",
+      "popPct": 13.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Multnomah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 70040,
+    "pres2020New": -85.6,
+    "pres2020Old": -84.8,
+    "retainedAreaPct": 85.0,
+    "retainedPopPct": 86.6,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-42; gained the rest from the old HD-46 (13%). Entirely in Multnomah County. 2020 presidential margin D+84.8 on the 2016\u20132020 lines \u2192 D+85.6 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 85.9,
+      "key": "43",
+      "popPct": 86.7
+     },
+     {
+      "areaPct": 9.6,
+      "key": "45",
+      "popPct": 10.3
+     },
+     {
+      "areaPct": 4.4,
+      "key": "44",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Multnomah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 69867,
+    "pres2020New": -86.4,
+    "pres2020Old": -86.6,
+    "retainedAreaPct": 85.9,
+    "retainedPopPct": 86.7,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-43; gained the rest from the old HD-45 (10%), the old HD-44 (3%). Entirely in Multnomah County. 2020 presidential margin D+86.6 on the 2016\u20132020 lines \u2192 D+86.4 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 90.6,
+      "key": "44",
+      "popPct": 84.8
+     },
+     {
+      "areaPct": 4.8,
+      "key": "43",
+      "popPct": 13.9
+     },
+     {
+      "areaPct": 0.1,
+      "key": "45",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Multnomah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 73569,
+    "pres2020New": -77.0,
+    "pres2020Old": -75.2,
+    "retainedAreaPct": 90.6,
+    "retainedPopPct": 84.8,
+    "text": "Kept 85% of its population from the 2016\u20132020 HD-44; gained the rest from the old HD-43 (14%), the old HD-45 (1%). Entirely in Multnomah County. 2020 presidential margin D+75.2 on the 2016\u20132020 lines \u2192 D+77.0 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 57.6,
+      "key": "45",
+      "popPct": 78.5
+     },
+     {
+      "areaPct": 8.7,
+      "key": "46",
+      "popPct": 14.2
+     },
+     {
+      "areaPct": 18.5,
+      "key": "44",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 2.9,
+      "key": "47",
+      "popPct": 2.6
+     },
+     {
+      "areaPct": 0.4,
+      "key": "43",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Multnomah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 69622,
+    "pres2020New": -69.6,
+    "pres2020Old": -69.7,
+    "retainedAreaPct": 57.6,
+    "retainedPopPct": 78.5,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-45; gained the rest from the old HD-46 (14%), the old HD-44 (4%), the old HD-47 (3%) and 1 more. Entirely in Multnomah County. 2020 presidential margin D+69.7 on the 2016\u20132020 lines \u2192 D+69.6 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 53.3,
+      "key": "46",
+      "popPct": 57.3
+     },
+     {
+      "areaPct": 36.4,
+      "key": "48",
+      "popPct": 32.6
+     },
+     {
+      "areaPct": 7.1,
+      "key": "41",
+      "popPct": 6.3
+     },
+     {
+      "areaPct": 3.2,
+      "key": "42",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Multnomah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 70314,
+    "pres2020New": -63.3,
+    "pres2020Old": -70.3,
+    "retainedAreaPct": 53.3,
+    "retainedPopPct": 57.3,
+    "text": "Kept 57% of its population from the 2016\u20132020 HD-46; gained the rest from the old HD-48 (33%), the old HD-41 (6%), the old HD-42 (4%). Entirely in Multnomah County. 2020 presidential margin D+70.3 on the 2016\u20132020 lines \u2192 D+63.3 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 79.3,
+      "key": "47",
+      "popPct": 83.0
+     },
+     {
+      "areaPct": 10.1,
+      "key": "46",
+      "popPct": 6.7
+     },
+     {
+      "areaPct": 7.8,
+      "key": "45",
+      "popPct": 6.6
+     },
+     {
+      "areaPct": 2.7,
+      "key": "50",
+      "popPct": 3.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Multnomah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 70330,
+    "pres2020New": -36.6,
+    "pres2020Old": -35.7,
+    "retainedAreaPct": 79.3,
+    "retainedPopPct": 83.0,
+    "text": "Kept 83% of its population from the 2016\u20132020 HD-47; gained the rest from the old HD-46 (7%), the old HD-45 (7%), the old HD-50 (4%). Entirely in Multnomah County. 2020 presidential margin D+35.7 on the 2016\u20132020 lines \u2192 D+36.6 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 49.7,
+      "key": "51",
+      "popPct": 56.3
+     },
+     {
+      "areaPct": 4.5,
+      "key": "48",
+      "popPct": 16.4
+     },
+     {
+      "areaPct": 41.9,
+      "key": "39",
+      "popPct": 11.2
+     },
+     {
+      "areaPct": 1.2,
+      "key": "47",
+      "popPct": 7.9
+     },
+     {
+      "areaPct": 1.7,
+      "key": "46",
+      "popPct": 6.3
+     },
+     {
+      "areaPct": 1.0,
+      "key": "50",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Multnomah",
+      "popPct": 76.9
+     },
+     {
+      "county": "Clackamas",
+      "popPct": 23.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 71820,
+    "pres2020New": -13.7,
+    "pres2020Old": -31.3,
+    "retainedAreaPct": 4.5,
+    "retainedPopPct": 16.4,
+    "text": "A new footprint: only 16% of its population was in the 2016\u20132020 HD-48; it draws from the old HD-51 (56%), the old HD-39 (11%), the old HD-47 (8%) and 2 more. Spans Multnomah, Clackamas counties. 2020 presidential margin D+31.3 on the 2016\u20132020 lines \u2192 D+13.7 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 97.6,
+      "key": "49",
+      "popPct": 92.2
+     },
+     {
+      "areaPct": 1.0,
+      "key": "50",
+      "popPct": 4.5
+     },
+     {
+      "areaPct": 0.6,
+      "key": "47",
+      "popPct": 2.8
+     },
+     {
+      "areaPct": 0.8,
+      "key": "52",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Multnomah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67106,
+    "pres2020New": -17.8,
+    "pres2020Old": -17.3,
+    "retainedAreaPct": 97.6,
+    "retainedPopPct": 92.2,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-49; gained the rest from the old HD-50 (4%), the old HD-47 (3%), the old HD-52 (1%). Entirely in Multnomah County. 2020 presidential margin D+17.3 on the 2016\u20132020 lines \u2192 D+17.8 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "5",
+      "popPct": 90.7
+     },
+     {
+      "areaPct": 0.2,
+      "key": "6",
+      "popPct": 9.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jackson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 71306,
+    "pres2020New": -30.9,
+    "pres2020Old": -31.5,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 90.7,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-5; gained the rest from the old HD-6 (9%). Entirely in Jackson County. 2020 presidential margin D+31.5 on the 2016\u20132020 lines \u2192 D+30.9 on the current lines.",
+    "toEra": "current"
+   },
+   "50": {
+    "contributors": [
+     {
+      "areaPct": 76.2,
+      "key": "50",
+      "popPct": 84.1
+     },
+     {
+      "areaPct": 17.6,
+      "key": "51",
+      "popPct": 7.0
+     },
+     {
+      "areaPct": 3.9,
+      "key": "49",
+      "popPct": 6.5
+     },
+     {
+      "areaPct": 2.3,
+      "key": "52",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Multnomah",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 69182,
+    "pres2020New": -13.8,
+    "pres2020Old": -14.4,
+    "retainedAreaPct": 76.2,
+    "retainedPopPct": 84.1,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-50; gained the rest from the old HD-51 (7%), the old HD-49 (6%), the old HD-52 (2%). Entirely in Multnomah County. 2020 presidential margin D+14.4 on the 2016\u20132020 lines \u2192 D+13.8 on the current lines.",
+    "toEra": "current"
+   },
+   "51": {
+    "contributors": [
+     {
+      "areaPct": 72.3,
+      "key": "39",
+      "popPct": 69.2
+     },
+     {
+      "areaPct": 26.0,
+      "key": "52",
+      "popPct": 25.1
+     },
+     {
+      "areaPct": 1.7,
+      "key": "40",
+      "popPct": 5.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clackamas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Multnomah",
+      "popPct": 47.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 72795,
+    "pres2020New": 14.2,
+    "pres2020Old": -12.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-51; it draws from the old HD-39 (69%), the old HD-52 (25%), the old HD-40 (6%). Counties: lost Multnomah. 2020 presidential margin D+12.3 on the 2016\u20132020 lines \u2192 R+14.2 on the current lines.",
+    "toEra": "current"
+   },
+   "52": {
+    "contributors": [
+     {
+      "areaPct": 86.2,
+      "key": "52",
+      "popPct": 72.0
+     },
+     {
+      "areaPct": 9.1,
+      "key": "59",
+      "popPct": 25.9
+     },
+     {
+      "areaPct": 0.3,
+      "key": "39",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hood River",
+      "popPct": 33.6
+     },
+     {
+      "county": "Wasco",
+      "popPct": 26.1
+     },
+     {
+      "county": "Clackamas",
+      "popPct": 21.5
+     },
+     {
+      "county": "Multnomah",
+      "popPct": 18.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Wasco",
+      "popPct": 26.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 71388,
+    "pres2020New": -9.7,
+    "pres2020Old": -4.2,
+    "retainedAreaPct": 86.2,
+    "retainedPopPct": 72.0,
+    "text": "Kept 72% of its population from the 2016\u20132020 HD-52; gained the rest from the old HD-59 (26%), the old HD-39 (2%). Counties: gained Wasco (26%). 2020 presidential margin D+4.2 on the 2016\u20132020 lines \u2192 D+9.7 on the current lines.",
+    "toEra": "current"
+   },
+   "53": {
+    "contributors": [
+     {
+      "areaPct": 53.3,
+      "key": "53",
+      "popPct": 68.9
+     },
+     {
+      "areaPct": 0.9,
+      "key": "54",
+      "popPct": 18.5
+     },
+     {
+      "areaPct": 45.8,
+      "key": "59",
+      "popPct": 12.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Deschutes",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 61286,
+    "pres2020New": -11.2,
+    "pres2020Old": -0.7,
+    "retainedAreaPct": 53.3,
+    "retainedPopPct": 68.9,
+    "text": "Kept 69% of its population from the 2016\u20132020 HD-53; gained the rest from the old HD-54 (18%), the old HD-59 (12%). Entirely in Deschutes County. 2020 presidential margin D+0.7 on the 2016\u20132020 lines \u2192 D+11.2 on the current lines.",
+    "toEra": "current"
+   },
+   "54": {
+    "contributors": [
+     {
+      "areaPct": 83.9,
+      "key": "54",
+      "popPct": 94.2
+     },
+     {
+      "areaPct": 16.1,
+      "key": "53",
+      "popPct": 5.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Deschutes",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 65827,
+    "pres2020New": -30.9,
+    "pres2020Old": -34.0,
+    "retainedAreaPct": 83.9,
+    "retainedPopPct": 94.2,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-54; gained the rest from the old HD-53 (6%). Entirely in Deschutes County. 2020 presidential margin D+34.0 on the 2016\u20132020 lines \u2192 D+30.9 on the current lines.",
+    "toEra": "current"
+   },
+   "55": {
+    "contributors": [
+     {
+      "areaPct": 20.2,
+      "key": "56",
+      "popPct": 40.6
+     },
+     {
+      "areaPct": 12.6,
+      "key": "53",
+      "popPct": 30.3
+     },
+     {
+      "areaPct": 67.2,
+      "key": "55",
+      "popPct": 29.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Deschutes",
+      "popPct": 50.1
+     },
+     {
+      "county": "Klamath",
+      "popPct": 49.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Jackson",
+      "popPct": 34.0
+     },
+     {
+      "county": "Crook",
+      "popPct": 30.7
+     },
+     {
+      "county": "Lake",
+      "popPct": 3.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 76129,
+    "pres2020New": 27.7,
+    "pres2020Old": 38.8,
+    "retainedAreaPct": 67.2,
+    "retainedPopPct": 29.1,
+    "text": "A new footprint: only 29% of its population was in the 2016\u20132020 HD-55; it draws from the old HD-56 (41%), the old HD-53 (30%). Counties: lost Jackson, Crook, Lake. 2020 presidential margin R+38.8 on the 2016\u20132020 lines \u2192 R+27.7 on the current lines.",
+    "toEra": "current"
+   },
+   "56": {
+    "contributors": [
+     {
+      "areaPct": 24.6,
+      "key": "56",
+      "popPct": 39.7
+     },
+     {
+      "areaPct": 73.2,
+      "key": "55",
+      "popPct": 32.8
+     },
+     {
+      "areaPct": 2.2,
+      "key": "4",
+      "popPct": 26.7
+     },
+     {
+      "areaPct": 0.0,
+      "key": "6",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jackson",
+      "popPct": 57.1
+     },
+     {
+      "county": "Klamath",
+      "popPct": 42.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jackson",
+      "popPct": 57.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Lake",
+      "popPct": 5.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 73388,
+    "pres2020New": 33.9,
+    "pres2020Old": 41.5,
+    "retainedAreaPct": 24.6,
+    "retainedPopPct": 39.7,
+    "text": "A new footprint: only 40% of its population was in the 2016\u20132020 HD-56; it draws from the old HD-55 (33%), the old HD-4 (27%), the old HD-6 (1%). Counties: gained Jackson (57%); lost Lake. 2020 presidential margin R+41.5 on the 2016\u20132020 lines \u2192 R+33.9 on the current lines.",
+    "toEra": "current"
+   },
+   "57": {
+    "contributors": [
+     {
+      "areaPct": 59.8,
+      "key": "57",
+      "popPct": 87.1
+     },
+     {
+      "areaPct": 39.7,
+      "key": "59",
+      "popPct": 12.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Umatilla",
+      "popPct": 59.9
+     },
+     {
+      "county": "Morrow",
+      "popPct": 16.7
+     },
+     {
+      "county": "Wasco",
+      "popPct": 11.0
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 5.0
+     },
+     {
+      "county": "Gilliam",
+      "popPct": 2.7
+     },
+     {
+      "county": "Sherman",
+      "popPct": 2.5
+     },
+     {
+      "county": "Wheeler",
+      "popPct": 2.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jefferson",
+      "popPct": 5.0
+     },
+     {
+      "county": "Wheeler",
+      "popPct": 2.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 73239,
+    "pres2020New": 31.8,
+    "pres2020Old": 35.2,
+    "retainedAreaPct": 59.8,
+    "retainedPopPct": 87.1,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-57; gained the rest from the old HD-59 (13%). Counties: gained Jefferson (5%), Wheeler (2%). 2020 presidential margin R+35.2 on the 2016\u20132020 lines \u2192 R+31.8 on the current lines.",
+    "toEra": "current"
+   },
+   "58": {
+    "contributors": [
+     {
+      "areaPct": 99.1,
+      "key": "58",
+      "popPct": 90.7
+     },
+     {
+      "areaPct": 0.9,
+      "key": "57",
+      "popPct": 9.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Umatilla",
+      "popPct": 51.9
+     },
+     {
+      "county": "Union",
+      "popPct": 37.5
+     },
+     {
+      "county": "Wallowa",
+      "popPct": 10.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 69748,
+    "pres2020New": 35.6,
+    "pres2020Old": 35.6,
+    "retainedAreaPct": 99.1,
+    "retainedPopPct": 90.7,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-58; gained the rest from the old HD-57 (9%). Spans Umatilla, Union, Wallowa counties. 2020 presidential margin R+35.6 on the 2016\u20132020 lines \u2192 R+35.6 on the current lines.",
+    "toEra": "current"
+   },
+   "59": {
+    "contributors": [
+     {
+      "areaPct": 32.4,
+      "key": "59",
+      "popPct": 47.4
+     },
+     {
+      "areaPct": 66.3,
+      "key": "55",
+      "popPct": 32.2
+     },
+     {
+      "areaPct": 1.3,
+      "key": "53",
+      "popPct": 20.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Deschutes",
+      "popPct": 41.0
+     },
+     {
+      "county": "Crook",
+      "popPct": 32.1
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 27.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Crook",
+      "popPct": 32.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Wasco",
+      "popPct": 31.3
+     },
+     {
+      "county": "Wheeler",
+      "popPct": 2.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 77434,
+    "pres2020New": 30.8,
+    "pres2020Old": 13.9,
+    "retainedAreaPct": 32.4,
+    "retainedPopPct": 47.4,
+    "text": "A new footprint: only 47% of its population was in the 2016\u20132020 HD-59; it draws from the old HD-55 (32%), the old HD-53 (20%). Counties: gained Crook (32%); lost Wasco, Wheeler. 2020 presidential margin R+13.9 on the 2016\u20132020 lines \u2192 R+30.8 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 88.8,
+      "key": "6",
+      "popPct": 90.9
+     },
+     {
+      "areaPct": 6.6,
+      "key": "5",
+      "popPct": 4.6
+     },
+     {
+      "areaPct": 4.5,
+      "key": "55",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jackson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 66451,
+    "pres2020New": 5.2,
+    "pres2020Old": 3.6,
+    "retainedAreaPct": 88.8,
+    "retainedPopPct": 90.9,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-6; gained the rest from the old HD-5 (5%), the old HD-55 (4%). Entirely in Jackson County. 2020 presidential margin R+3.6 on the 2016\u20132020 lines \u2192 R+5.2 on the current lines.",
+    "toEra": "current"
+   },
+   "60": {
+    "contributors": [
+     {
+      "areaPct": 81.9,
+      "key": "60",
+      "popPct": 89.6
+     },
+     {
+      "areaPct": 16.3,
+      "key": "55",
+      "popPct": 5.3
+     },
+     {
+      "areaPct": 1.8,
+      "key": "56",
+      "popPct": 5.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Malheur",
+      "popPct": 43.7
+     },
+     {
+      "county": "Baker",
+      "popPct": 23.0
+     },
+     {
+      "county": "Lake",
+      "popPct": 11.3
+     },
+     {
+      "county": "Harney",
+      "popPct": 10.4
+     },
+     {
+      "county": "Grant",
+      "popPct": 10.0
+     },
+     {
+      "county": "Deschutes",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 72205,
+    "pres2020New": 49.7,
+    "pres2020Old": 49.5,
+    "retainedAreaPct": 81.9,
+    "retainedPopPct": 89.6,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-60; gained the rest from the old HD-55 (5%), the old HD-56 (5%). Spans Malheur, Baker, Lake, Harney and 2 more counties. 2020 presidential margin R+49.5 on the 2016\u20132020 lines \u2192 R+49.7 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 53.9,
+      "key": "12",
+      "popPct": 86.5
+     },
+     {
+      "areaPct": 46.1,
+      "key": "11",
+      "popPct": 13.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lane",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Douglas",
+      "popPct": 51.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 68022,
+    "pres2020New": -13.5,
+    "pres2020Old": 25.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-7; it draws from the old HD-12 (86%), the old HD-11 (14%). Counties: lost Douglas. 2020 presidential margin R+25.0 on the 2016\u20132020 lines \u2192 D+13.5 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 74.8,
+      "key": "8",
+      "popPct": 51.8
+     },
+     {
+      "areaPct": 17.2,
+      "key": "11",
+      "popPct": 28.1
+     },
+     {
+      "areaPct": 2.8,
+      "key": "13",
+      "popPct": 19.4
+     },
+     {
+      "areaPct": 5.2,
+      "key": "7",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lane",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 73985,
+    "pres2020New": -65.4,
+    "pres2020Old": -40.9,
+    "retainedAreaPct": 74.8,
+    "retainedPopPct": 51.8,
+    "text": "Kept 52% of its population from the 2016\u20132020 HD-8; gained the rest from the old HD-11 (28%), the old HD-13 (19%), the old HD-7 (1%). Entirely in Lane County. 2020 presidential margin D+40.9 on the 2016\u20132020 lines \u2192 D+65.4 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 72.5,
+      "key": "9",
+      "popPct": 87.6
+     },
+     {
+      "areaPct": 23.9,
+      "key": "8",
+      "popPct": 10.7
+     },
+     {
+      "areaPct": 1.9,
+      "key": "1",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Coos",
+      "popPct": 58.2
+     },
+     {
+      "county": "Lane",
+      "popPct": 32.8
+     },
+     {
+      "county": "Douglas",
+      "popPct": 9.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68879,
+    "pres2020New": 9.9,
+    "pres2020Old": 8.8,
+    "retainedAreaPct": 72.5,
+    "retainedPopPct": 87.6,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-9; gained the rest from the old HD-8 (11%), the old HD-1 (1%). Spans Coos, Lane, Douglas counties. 2020 presidential margin R+8.8 on the 2016\u20132020 lines \u2192 R+9.9 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 59.0,
+      "key": "1",
+      "popPct": 75.8
+     },
+     {
+      "areaPct": 41.0,
+      "key": "4",
+      "popPct": 24.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 66.0
+     },
+     {
+      "county": "Coos",
+      "popPct": 17.5
+     },
+     {
+      "county": "Curry",
+      "popPct": 16.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Josephine",
+      "popPct": 8.7
+     },
+     {
+      "county": "Jackson",
+      "popPct": 2.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 142001,
+    "pres2020New": 32.0,
+    "pres2020Old": 31.6,
+    "retainedAreaPct": 59.0,
+    "retainedPopPct": 75.8,
+    "text": "Kept 76% of its population from the 2016\u20132020 SD-1; gained the rest from the old SD-4 (24%). Counties: lost Josephine, Jackson. 2020 presidential margin R+31.6 on the 2016\u20132020 lines \u2192 R+32.0 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 92.2,
+      "key": "10",
+      "popPct": 85.2
+     },
+     {
+      "areaPct": 6.4,
+      "key": "11",
+      "popPct": 13.5
+     },
+     {
+      "areaPct": 1.3,
+      "key": "12",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 68.4
+     },
+     {
+      "county": "Polk",
+      "popPct": 31.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 130350,
+    "pres2020New": -16.3,
+    "pres2020Old": -7.8,
+    "retainedAreaPct": 92.2,
+    "retainedPopPct": 85.2,
+    "text": "Kept 85% of its population from the 2016\u20132020 SD-10; gained the rest from the old SD-11 (14%), the old SD-12 (1%). Spans Marion, Polk counties. 2020 presidential margin D+7.8 on the 2016\u20132020 lines \u2192 D+16.3 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 44.9,
+      "key": "11",
+      "popPct": 71.0
+     },
+     {
+      "areaPct": 53.7,
+      "key": "13",
+      "popPct": 28.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 98.8
+     },
+     {
+      "county": "Polk",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 136474,
+    "pres2020New": -8.7,
+    "pres2020Old": -17.7,
+    "retainedAreaPct": 44.9,
+    "retainedPopPct": 71.0,
+    "text": "Kept 71% of its population from the 2016\u20132020 SD-11; gained the rest from the old SD-13 (29%). Spans Marion, Polk counties. 2020 presidential margin D+17.7 on the 2016\u20132020 lines \u2192 D+8.7 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 68.7,
+      "key": "12",
+      "popPct": 75.4
+     },
+     {
+      "areaPct": 1.0,
+      "key": "13",
+      "popPct": 17.1
+     },
+     {
+      "areaPct": 30.2,
+      "key": "5",
+      "popPct": 6.6
+     },
+     {
+      "areaPct": 0.1,
+      "key": "10",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Yamhill",
+      "popPct": 70.3
+     },
+     {
+      "county": "Polk",
+      "popPct": 29.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Washington",
+      "popPct": 9.9
+     },
+     {
+      "county": "Benton",
+      "popPct": 9.5
+     },
+     {
+      "county": "Marion",
+      "popPct": 6.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 148862,
+    "pres2020New": 7.4,
+    "pres2020Old": 5.4,
+    "retainedAreaPct": 68.7,
+    "retainedPopPct": 75.4,
+    "text": "Kept 75% of its population from the 2016\u20132020 SD-12; gained the rest from the old SD-13 (17%), the old SD-5 (7%), the old SD-10 (1%). Counties: lost Washington, Benton, Marion. 2020 presidential margin R+5.4 on the 2016\u20132020 lines \u2192 R+7.4 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 71.1,
+      "key": "13",
+      "popPct": 46.9
+     },
+     {
+      "areaPct": 15.9,
+      "key": "18",
+      "popPct": 40.6
+     },
+     {
+      "areaPct": 1.7,
+      "key": "14",
+      "popPct": 7.7
+     },
+     {
+      "areaPct": 0.7,
+      "key": "19",
+      "popPct": 2.3
+     },
+     {
+      "areaPct": 5.8,
+      "key": "20",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 78.3
+     },
+     {
+      "county": "Clackamas",
+      "popPct": 19.6
+     },
+     {
+      "county": "Yamhill",
+      "popPct": 1.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Marion",
+      "popPct": 25.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 140543,
+    "pres2020New": -28.4,
+    "pres2020Old": -11.2,
+    "retainedAreaPct": 71.1,
+    "retainedPopPct": 46.9,
+    "text": "A new footprint: only 47% of its population was in the 2016\u20132020 SD-13; it draws from the old SD-18 (41%), the old SD-14 (8%), the old SD-19 (2%) and 1 more. Counties: lost Marion. 2020 presidential margin D+11.2 on the 2016\u20132020 lines \u2192 D+28.4 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 38.5,
+      "key": "14",
+      "popPct": 39.4
+     },
+     {
+      "areaPct": 31.5,
+      "key": "18",
+      "popPct": 31.6
+     },
+     {
+      "areaPct": 24.6,
+      "key": "17",
+      "popPct": 22.6
+     },
+     {
+      "areaPct": 5.3,
+      "key": "19",
+      "popPct": 6.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 62.4
+     },
+     {
+      "county": "Multnomah",
+      "popPct": 37.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 143782,
+    "pres2020New": -60.6,
+    "pres2020Old": -43.4,
+    "retainedAreaPct": 38.5,
+    "retainedPopPct": 39.4,
+    "text": "A new footprint: only 39% of its population was in the 2016\u20132020 SD-14; it draws from the old SD-18 (32%), the old SD-17 (23%), the old SD-19 (6%). Spans Washington, Multnomah counties. 2020 presidential margin D+43.4 on the 2016\u20132020 lines \u2192 D+60.6 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 60.5,
+      "key": "15",
+      "popPct": 87.6
+     },
+     {
+      "areaPct": 1.7,
+      "key": "17",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 19.3,
+      "key": "16",
+      "popPct": 4.2
+     },
+     {
+      "areaPct": 18.4,
+      "key": "12",
+      "popPct": 2.3
+     },
+     {
+      "areaPct": 0.1,
+      "key": "13",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 139768,
+    "pres2020New": -26.8,
+    "pres2020Old": -27.6,
+    "retainedAreaPct": 60.5,
+    "retainedPopPct": 87.6,
+    "text": "Kept 88% of its population from the 2016\u20132020 SD-15; gained the rest from the old SD-17 (5%), the old SD-16 (4%), the old SD-12 (2%) and 1 more. Entirely in Washington County. 2020 presidential margin D+27.6 on the 2016\u20132020 lines \u2192 D+26.8 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 82.6,
+      "key": "16",
+      "popPct": 90.7
+     },
+     {
+      "areaPct": 16.7,
+      "key": "5",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 0.7,
+      "key": "15",
+      "popPct": 3.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Columbia",
+      "popPct": 36.6
+     },
+     {
+      "county": "Clatsop",
+      "popPct": 28.5
+     },
+     {
+      "county": "Tillamook",
+      "popPct": 19.0
+     },
+     {
+      "county": "Washington",
+      "popPct": 13.9
+     },
+     {
+      "county": "Multnomah",
+      "popPct": 1.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 144029,
+    "pres2020New": 1.4,
+    "pres2020Old": -2.7,
+    "retainedAreaPct": 82.6,
+    "retainedPopPct": 90.7,
+    "text": "Kept 91% of its population from the 2016\u20132020 SD-16; gained the rest from the old SD-5 (6%), the old SD-15 (3%). Spans Columbia, Clatsop, Tillamook, Washington and 1 more counties. 2020 presidential margin D+2.7 on the 2016\u20132020 lines \u2192 R+1.4 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 47.5,
+      "key": "17",
+      "popPct": 64.3
+     },
+     {
+      "areaPct": 8.1,
+      "key": "18",
+      "popPct": 21.5
+     },
+     {
+      "areaPct": 41.2,
+      "key": "16",
+      "popPct": 10.4
+     },
+     {
+      "areaPct": 3.1,
+      "key": "22",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 52.6
+     },
+     {
+      "county": "Multnomah",
+      "popPct": 47.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 138312,
+    "pres2020New": -62.1,
+    "pres2020Old": -54.7,
+    "retainedAreaPct": 47.5,
+    "retainedPopPct": 64.3,
+    "text": "Kept 64% of its population from the 2016\u20132020 SD-17; gained the rest from the old SD-18 (22%), the old SD-16 (10%), the old SD-22 (4%). Spans Washington, Multnomah counties. 2020 presidential margin D+54.7 on the 2016\u20132020 lines \u2192 D+62.1 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 11.7,
+      "key": "14",
+      "popPct": 48.3
+     },
+     {
+      "areaPct": 6.0,
+      "key": "17",
+      "popPct": 19.5
+     },
+     {
+      "areaPct": 38.4,
+      "key": "13",
+      "popPct": 13.9
+     },
+     {
+      "areaPct": 2.6,
+      "key": "15",
+      "popPct": 9.8
+     },
+     {
+      "areaPct": 41.3,
+      "key": "12",
+      "popPct": 8.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Multnomah",
+      "popPct": 57.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 139872,
+    "pres2020New": -34.4,
+    "pres2020Old": -59.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-18; it draws from the old SD-14 (48%), the old SD-17 (20%), the old SD-13 (14%) and 2 more. Counties: lost Multnomah. 2020 presidential margin D+59.5 on the 2016\u20132020 lines \u2192 D+34.4 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 93.2,
+      "key": "19",
+      "popPct": 90.1
+     },
+     {
+      "areaPct": 2.8,
+      "key": "18",
+      "popPct": 7.7
+     },
+     {
+      "areaPct": 3.8,
+      "key": "13",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clackamas",
+      "popPct": 58.3
+     },
+     {
+      "county": "Multnomah",
+      "popPct": 23.0
+     },
+     {
+      "county": "Washington",
+      "popPct": 18.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 140645,
+    "pres2020New": -43.2,
+    "pres2020Old": -43.6,
+    "retainedAreaPct": 93.2,
+    "retainedPopPct": 90.1,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-19; gained the rest from the old SD-18 (8%), the old SD-13 (2%). Spans Clackamas, Multnomah, Washington counties. 2020 presidential margin D+43.6 on the 2016\u20132020 lines \u2192 D+43.2 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 31.5,
+      "key": "2",
+      "popPct": 79.2
+     },
+     {
+      "areaPct": 62.8,
+      "key": "1",
+      "popPct": 18.1
+     },
+     {
+      "areaPct": 2.9,
+      "key": "28",
+      "popPct": 1.9
+     },
+     {
+      "areaPct": 1.4,
+      "key": "3",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Josephine",
+      "popPct": 61.6
+     },
+     {
+      "county": "Jackson",
+      "popPct": 30.5
+     },
+     {
+      "county": "Douglas",
+      "popPct": 7.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Douglas",
+      "popPct": 7.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 142992,
+    "pres2020New": 28.8,
+    "pres2020Old": 27.7,
+    "retainedAreaPct": 31.5,
+    "retainedPopPct": 79.2,
+    "text": "Kept 79% of its population from the 2016\u20132020 SD-2; gained the rest from the old SD-1 (18%), the old SD-28 (2%), the old SD-3 (1%). Counties: gained Douglas (8%). 2020 presidential margin R+27.7 on the 2016\u20132020 lines \u2192 R+28.8 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 61.2,
+      "key": "20",
+      "popPct": 49.9
+     },
+     {
+      "areaPct": 17.5,
+      "key": "24",
+      "popPct": 24.7
+     },
+     {
+      "areaPct": 19.8,
+      "key": "26",
+      "popPct": 22.8
+     },
+     {
+      "areaPct": 1.5,
+      "key": "21",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clackamas",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 137065,
+    "pres2020New": -14.9,
+    "pres2020Old": 1.4,
+    "retainedAreaPct": 61.2,
+    "retainedPopPct": 49.9,
+    "text": "A new footprint: only 50% of its population was in the 2016\u20132020 SD-20; it draws from the old SD-24 (25%), the old SD-26 (23%), the old SD-21 (3%). Entirely in Clackamas County. 2020 presidential margin R+1.4 on the 2016\u20132020 lines \u2192 D+14.9 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 94.1,
+      "key": "21",
+      "popPct": 93.0
+     },
+     {
+      "areaPct": 4.9,
+      "key": "23",
+      "popPct": 6.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Multnomah",
+      "popPct": 73.6
+     },
+     {
+      "county": "Clackamas",
+      "popPct": 26.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 140148,
+    "pres2020New": -71.8,
+    "pres2020Old": -70.1,
+    "retainedAreaPct": 94.1,
+    "retainedPopPct": 93.0,
+    "text": "Kept 93% of its population from the 2016\u20132020 SD-21; gained the rest from the old SD-23 (7%). Spans Multnomah, Clackamas counties. 2020 presidential margin D+70.1 on the 2016\u20132020 lines \u2192 D+71.8 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 94.6,
+      "key": "22",
+      "popPct": 94.3
+     },
+     {
+      "areaPct": 1.6,
+      "key": "23",
+      "popPct": 5.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Multnomah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 143443,
+    "pres2020New": -81.8,
+    "pres2020Old": -81.3,
+    "retainedAreaPct": 94.6,
+    "retainedPopPct": 94.3,
+    "text": "Kept 94% of its population from the 2016\u20132020 SD-22; gained the rest from the old SD-23 (5%). Entirely in Multnomah County. 2020 presidential margin D+81.3 on the 2016\u20132020 lines \u2192 D+81.8 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 61.0,
+      "key": "23",
+      "popPct": 74.9
+     },
+     {
+      "areaPct": 16.5,
+      "key": "24",
+      "popPct": 17.7
+     },
+     {
+      "areaPct": 4.2,
+      "key": "21",
+      "popPct": 5.1
+     },
+     {
+      "areaPct": 11.2,
+      "key": "22",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Multnomah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 139923,
+    "pres2020New": -66.7,
+    "pres2020Old": -69.9,
+    "retainedAreaPct": 61.0,
+    "retainedPopPct": 74.9,
+    "text": "Kept 75% of its population from the 2016\u20132020 SD-23; gained the rest from the old SD-24 (18%), the old SD-21 (5%), the old SD-22 (2%). Entirely in Multnomah County. 2020 presidential margin D+69.9 on the 2016\u20132020 lines \u2192 D+66.7 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 18.3,
+      "key": "24",
+      "popPct": 53.4
+     },
+     {
+      "areaPct": 41.2,
+      "key": "26",
+      "popPct": 28.4
+     },
+     {
+      "areaPct": 4.5,
+      "key": "23",
+      "popPct": 9.8
+     },
+     {
+      "areaPct": 34.7,
+      "key": "20",
+      "popPct": 5.6
+     },
+     {
+      "areaPct": 1.3,
+      "key": "25",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Multnomah",
+      "popPct": 88.3
+     },
+     {
+      "county": "Clackamas",
+      "popPct": 11.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 142106,
+    "pres2020New": -24.5,
+    "pres2020Old": -33.3,
+    "retainedAreaPct": 18.3,
+    "retainedPopPct": 53.4,
+    "text": "Kept 53% of its population from the 2016\u20132020 SD-24; gained the rest from the old SD-26 (28%), the old SD-23 (10%), the old SD-20 (6%) and 1 more. Spans Multnomah, Clackamas counties. 2020 presidential margin D+33.3 on the 2016\u20132020 lines \u2192 D+24.5 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 91.4,
+      "key": "25",
+      "popPct": 93.6
+     },
+     {
+      "areaPct": 8.2,
+      "key": "26",
+      "popPct": 5.0
+     },
+     {
+      "areaPct": 0.4,
+      "key": "24",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Multnomah",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 136310,
+    "pres2020New": -15.7,
+    "pres2020Old": -15.8,
+    "retainedAreaPct": 91.4,
+    "retainedPopPct": 93.6,
+    "text": "Kept 94% of its population from the 2016\u20132020 SD-25; gained the rest from the old SD-26 (5%), the old SD-24 (1%). Entirely in Multnomah County. 2020 presidential margin D+15.8 on the 2016\u20132020 lines \u2192 D+15.7 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 76.9,
+      "key": "26",
+      "popPct": 48.3
+     },
+     {
+      "areaPct": 11.7,
+      "key": "20",
+      "popPct": 38.6
+     },
+     {
+      "areaPct": 7.7,
+      "key": "30",
+      "popPct": 12.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clackamas",
+      "popPct": 61.1
+     },
+     {
+      "county": "Hood River",
+      "popPct": 16.6
+     },
+     {
+      "county": "Wasco",
+      "popPct": 12.9
+     },
+     {
+      "county": "Multnomah",
+      "popPct": 9.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Wasco",
+      "popPct": 12.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 144204,
+    "pres2020New": 2.9,
+    "pres2020Old": -8.0,
+    "retainedAreaPct": 76.9,
+    "retainedPopPct": 48.3,
+    "text": "A new footprint: only 48% of its population was in the 2016\u20132020 SD-26; it draws from the old SD-20 (39%), the old SD-30 (13%). Counties: gained Wasco (13%). 2020 presidential margin D+8.0 on the 2016\u20132020 lines \u2192 R+2.9 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 56.4,
+      "key": "27",
+      "popPct": 94.0
+     },
+     {
+      "areaPct": 43.6,
+      "key": "30",
+      "popPct": 6.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Deschutes",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 127114,
+    "pres2020New": -21.2,
+    "pres2020Old": -16.0,
+    "retainedAreaPct": 56.4,
+    "retainedPopPct": 94.0,
+    "text": "Kept 94% of its population from the 2016\u20132020 SD-27; gained the rest from the old SD-30 (6%). Entirely in Deschutes County. 2020 presidential margin D+16.0 on the 2016\u20132020 lines \u2192 D+21.2 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 90.4,
+      "key": "28",
+      "popPct": 71.1
+     },
+     {
+      "areaPct": 8.9,
+      "key": "27",
+      "popPct": 15.4
+     },
+     {
+      "areaPct": 0.6,
+      "key": "2",
+      "popPct": 13.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Klamath",
+      "popPct": 46.4
+     },
+     {
+      "county": "Jackson",
+      "popPct": 28.0
+     },
+     {
+      "county": "Deschutes",
+      "popPct": 25.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Crook",
+      "popPct": 17.1
+     },
+     {
+      "county": "Lake",
+      "popPct": 4.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 149515,
+    "pres2020New": 30.5,
+    "pres2020Old": 40.0,
+    "retainedAreaPct": 90.4,
+    "retainedPopPct": 71.1,
+    "text": "Kept 71% of its population from the 2016\u20132020 SD-28; gained the rest from the old SD-27 (15%), the old SD-2 (13%). Counties: lost Crook, Lake. 2020 presidential margin R+40.0 on the 2016\u20132020 lines \u2192 R+30.5 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 78.5,
+      "key": "29",
+      "popPct": 93.5
+     },
+     {
+      "areaPct": 21.3,
+      "key": "30",
+      "popPct": 6.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Umatilla",
+      "popPct": 56.0
+     },
+     {
+      "county": "Union",
+      "popPct": 18.3
+     },
+     {
+      "county": "Morrow",
+      "popPct": 8.5
+     },
+     {
+      "county": "Wasco",
+      "popPct": 5.6
+     },
+     {
+      "county": "Wallowa",
+      "popPct": 5.2
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 2.6
+     },
+     {
+      "county": "Gilliam",
+      "popPct": 1.4
+     },
+     {
+      "county": "Sherman",
+      "popPct": 1.3
+     },
+     {
+      "county": "Wheeler",
+      "popPct": 1.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jefferson",
+      "popPct": 2.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 142986,
+    "pres2020New": 33.9,
+    "pres2020Old": 35.4,
+    "retainedAreaPct": 78.5,
+    "retainedPopPct": 93.5,
+    "text": "Kept 94% of its population from the 2016\u20132020 SD-29; gained the rest from the old SD-30 (6%). Counties: gained Jefferson (3%). 2020 presidential margin R+35.4 on the 2016\u20132020 lines \u2192 R+33.9 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "3",
+      "popPct": 97.8
+     },
+     {
+      "areaPct": 0.1,
+      "key": "28",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jackson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 137763,
+    "pres2020New": -15.3,
+    "pres2020Old": -15.7,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 97.8,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-3; gained the rest from the old SD-28 (2%). Entirely in Jackson County. 2020 presidential margin D+15.7 on the 2016\u20132020 lines \u2192 D+15.3 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 76.5,
+      "key": "30",
+      "popPct": 67.8
+     },
+     {
+      "areaPct": 23.3,
+      "key": "28",
+      "popPct": 21.7
+     },
+     {
+      "areaPct": 0.1,
+      "key": "27",
+      "popPct": 10.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Deschutes",
+      "popPct": 21.9
+     },
+     {
+      "county": "Malheur",
+      "popPct": 21.1
+     },
+     {
+      "county": "Crook",
+      "popPct": 16.6
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 14.0
+     },
+     {
+      "county": "Baker",
+      "popPct": 11.1
+     },
+     {
+      "county": "Lake",
+      "popPct": 5.5
+     },
+     {
+      "county": "Harney",
+      "popPct": 5.0
+     },
+     {
+      "county": "Grant",
+      "popPct": 4.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Crook",
+      "popPct": 16.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Wasco",
+      "popPct": 16.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 149639,
+    "pres2020New": 39.0,
+    "pres2020Old": 29.3,
+    "retainedAreaPct": 76.5,
+    "retainedPopPct": 67.8,
+    "text": "Kept 68% of its population from the 2016\u20132020 SD-30; gained the rest from the old SD-28 (22%), the old SD-27 (10%). Counties: gained Crook (17%); lost Wasco. 2020 presidential margin R+29.3 on the 2016\u20132020 lines \u2192 R+39.0 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 34.6,
+      "key": "6",
+      "popPct": 62.5
+     },
+     {
+      "areaPct": 63.2,
+      "key": "4",
+      "popPct": 27.4
+     },
+     {
+      "areaPct": 2.2,
+      "key": "7",
+      "popPct": 10.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lane",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Douglas",
+      "popPct": 25.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 142007,
+    "pres2020New": -40.7,
+    "pres2020Old": -10.1,
+    "retainedAreaPct": 63.2,
+    "retainedPopPct": 27.4,
+    "text": "A new footprint: only 27% of its population was in the 2016\u20132020 SD-4; it draws from the old SD-6 (62%), the old SD-7 (10%). Counties: lost Douglas. 2020 presidential margin D+10.1 on the 2016\u20132020 lines \u2192 D+40.7 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 73.3,
+      "key": "5",
+      "popPct": 82.0
+     },
+     {
+      "areaPct": 13.6,
+      "key": "12",
+      "popPct": 7.8
+     },
+     {
+      "areaPct": 11.1,
+      "key": "4",
+      "popPct": 5.3
+     },
+     {
+      "areaPct": 0.1,
+      "key": "8",
+      "popPct": 3.2
+     },
+     {
+      "areaPct": 1.0,
+      "key": "7",
+      "popPct": 1.2
+     },
+     {
+      "areaPct": 0.8,
+      "key": "1",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lincoln",
+      "popPct": 35.6
+     },
+     {
+      "county": "Coos",
+      "popPct": 28.3
+     },
+     {
+      "county": "Lane",
+      "popPct": 20.6
+     },
+     {
+      "county": "Benton",
+      "popPct": 11.0
+     },
+     {
+      "county": "Douglas",
+      "popPct": 4.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Benton",
+      "popPct": 11.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Tillamook",
+      "popPct": 6.6
+     },
+     {
+      "county": "Yamhill",
+      "popPct": 5.0
+     },
+     {
+      "county": "Polk",
+      "popPct": 2.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 141372,
+    "pres2020New": -2.0,
+    "pres2020Old": 0.5,
+    "retainedAreaPct": 73.3,
+    "retainedPopPct": 82.0,
+    "text": "Kept 82% of its population from the 2016\u20132020 SD-5; gained the rest from the old SD-12 (8%), the old SD-4 (5%), the old SD-8 (3%) and 2 more. Counties: gained Benton (11%); lost Tillamook, Yamhill, Polk. 2020 presidential margin R+0.5 on the 2016\u20132020 lines \u2192 D+2.0 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 16.1,
+      "key": "6",
+      "popPct": 32.3
+     },
+     {
+      "areaPct": 26.0,
+      "key": "9",
+      "popPct": 32.0
+     },
+     {
+      "areaPct": 55.6,
+      "key": "4",
+      "popPct": 23.5
+     },
+     {
+      "areaPct": 0.7,
+      "key": "7",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 0.4,
+      "key": "12",
+      "popPct": 3.1
+     },
+     {
+      "areaPct": 1.3,
+      "key": "8",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lane",
+      "popPct": 50.6
+     },
+     {
+      "county": "Linn",
+      "popPct": 46.2
+     },
+     {
+      "county": "Marion",
+      "popPct": 3.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Marion",
+      "popPct": 3.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 141808,
+    "pres2020New": 19.2,
+    "pres2020Old": -10.4,
+    "retainedAreaPct": 16.1,
+    "retainedPopPct": 32.3,
+    "text": "A new footprint: only 32% of its population was in the 2016\u20132020 SD-6; it draws from the old SD-9 (32%), the old SD-4 (24%), the old SD-7 (7%) and 2 more. Counties: gained Marion (3%). 2020 presidential margin D+10.4 on the 2016\u20132020 lines \u2192 R+19.2 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 31.2,
+      "key": "7",
+      "popPct": 83.9
+     },
+     {
+      "areaPct": 68.6,
+      "key": "4",
+      "popPct": 16.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lane",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 140055,
+    "pres2020New": -30.0,
+    "pres2020Old": -31.0,
+    "retainedAreaPct": 31.2,
+    "retainedPopPct": 83.9,
+    "text": "Kept 84% of its population from the 2016\u20132020 SD-7; gained the rest from the old SD-4 (16%). Entirely in Lane County. 2020 presidential margin D+31.0 on the 2016\u20132020 lines \u2192 D+30.0 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 66.1,
+      "key": "8",
+      "popPct": 93.2
+     },
+     {
+      "areaPct": 30.4,
+      "key": "12",
+      "popPct": 4.4
+     },
+     {
+      "areaPct": 3.5,
+      "key": "10",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Benton",
+      "popPct": 54.9
+     },
+     {
+      "county": "Linn",
+      "popPct": 40.6
+     },
+     {
+      "county": "Marion",
+      "popPct": 4.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Marion",
+      "popPct": 4.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 142676,
+    "pres2020New": -23.1,
+    "pres2020Old": -23.5,
+    "retainedAreaPct": 66.1,
+    "retainedPopPct": 93.2,
+    "text": "Kept 93% of its population from the 2016\u20132020 SD-8; gained the rest from the old SD-12 (4%), the old SD-10 (2%). Counties: gained Marion (4%). 2020 presidential margin D+23.5 on the 2016\u20132020 lines \u2192 D+23.1 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 92.1,
+      "key": "9",
+      "popPct": 65.7
+     },
+     {
+      "areaPct": 2.1,
+      "key": "10",
+      "popPct": 15.8
+     },
+     {
+      "areaPct": 0.1,
+      "key": "11",
+      "popPct": 12.2
+     },
+     {
+      "areaPct": 1.3,
+      "key": "20",
+      "popPct": 2.8
+     },
+     {
+      "areaPct": 1.2,
+      "key": "12",
+      "popPct": 1.7
+     },
+     {
+      "areaPct": 2.0,
+      "key": "13",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 74.2
+     },
+     {
+      "county": "Clackamas",
+      "popPct": 22.0
+     },
+     {
+      "county": "Linn",
+      "popPct": 3.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 151494,
+    "pres2020New": 22.3,
+    "pres2020Old": 28.6,
+    "retainedAreaPct": 92.1,
+    "retainedPopPct": 65.7,
+    "text": "Kept 66% of its population from the 2016\u20132020 SD-9; gained the rest from the old SD-10 (16%), the old SD-11 (12%), the old SD-20 (3%) and 2 more. Spans Marion, Clackamas, Linn counties. 2020 presidential margin R+28.6 on the 2016\u20132020 lines \u2192 R+22.3 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

@@ -1,0 +1,3807 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 99.2,
+      "key": "1",
+      "popPct": 99.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14559,
+    "pres2020New": -78.9,
+    "pres2020Old": -78.2,
+    "retainedAreaPct": 99.2,
+    "retainedPopPct": 99.6,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Providence County.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 98.2,
+      "key": "10",
+      "popPct": 95.4
+     },
+     {
+      "areaPct": 1.3,
+      "key": "9",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15458,
+    "pres2020New": -55.6,
+    "pres2020Old": -55.0,
+    "retainedAreaPct": 98.2,
+    "retainedPopPct": 95.4,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-10; gained the rest from the old HD-9 (4%). Entirely in Providence County. 2020 presidential margin D+55.0 on the 2016\u20132020 lines \u2192 D+55.6 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 96.5,
+      "key": "11",
+      "popPct": 96.1
+     },
+     {
+      "areaPct": 2.5,
+      "key": "10",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 0.7,
+      "key": "9",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15144,
+    "pres2020New": -64.2,
+    "pres2020Old": -64.4,
+    "retainedAreaPct": 96.5,
+    "retainedPopPct": 96.1,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-11; gained the rest from the old HD-10 (3%), the old HD-9 (1%). Entirely in Providence County. 2020 presidential margin D+64.4 on the 2016\u20132020 lines \u2192 D+64.2 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 94.3,
+      "key": "12",
+      "popPct": 94.4
+     },
+     {
+      "areaPct": 5.1,
+      "key": "2",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15181,
+    "pres2020New": -62.8,
+    "pres2020Old": -62.6,
+    "retainedAreaPct": 94.3,
+    "retainedPopPct": 94.4,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-12; gained the rest from the old HD-2 (5%). Entirely in Providence County. 2020 presidential margin D+62.6 on the 2016\u20132020 lines \u2192 D+62.8 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 91.7,
+      "key": "13",
+      "popPct": 93.8
+     },
+     {
+      "areaPct": 2.5,
+      "key": "9",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 5.4,
+      "key": "42",
+      "popPct": 1.7
+     },
+     {
+      "areaPct": 0.4,
+      "key": "14",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14641,
+    "pres2020New": -32.1,
+    "pres2020Old": -29.2,
+    "retainedAreaPct": 91.7,
+    "retainedPopPct": 93.8,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-13; gained the rest from the old HD-9 (4%), the old HD-42 (2%), the old HD-14 (1%). Entirely in Providence County. 2020 presidential margin D+29.2 on the 2016\u20132020 lines \u2192 D+32.1 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 99.1,
+      "key": "14",
+      "popPct": 98.8
+     },
+     {
+      "areaPct": 0.3,
+      "key": "13",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15326,
+    "pres2020New": -22.4,
+    "pres2020Old": -22.7,
+    "retainedAreaPct": 99.1,
+    "retainedPopPct": 98.8,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-14; gained the rest from the old HD-13 (1%). Entirely in Providence County. 2020 presidential margin D+22.7 on the 2016\u20132020 lines \u2192 D+22.4 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 92.2,
+      "key": "15",
+      "popPct": 85.8
+     },
+     {
+      "areaPct": 3.5,
+      "key": "16",
+      "popPct": 7.6
+     },
+     {
+      "areaPct": 2.2,
+      "key": "42",
+      "popPct": 5.4
+     },
+     {
+      "areaPct": 0.3,
+      "key": "20",
+      "popPct": 0.6
+     },
+     {
+      "areaPct": 1.6,
+      "key": "41",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 98.8
+     },
+     {
+      "county": "Kent",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15511,
+    "pres2020New": 4.2,
+    "pres2020Old": 5.2,
+    "retainedAreaPct": 92.2,
+    "retainedPopPct": 85.8,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-15; gained the rest from the old HD-16 (8%), the old HD-42 (5%), the old HD-20 (1%) and 1 more. Spans Providence, Kent counties. 2020 presidential margin R+5.2 on the 2016\u20132020 lines \u2192 R+4.2 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 64.6,
+      "key": "16",
+      "popPct": 50.9
+     },
+     {
+      "areaPct": 32.5,
+      "key": "17",
+      "popPct": 47.2
+     },
+     {
+      "areaPct": 2.8,
+      "key": "14",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 98.5
+     },
+     {
+      "county": "Kent",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13202,
+    "pres2020New": -22.7,
+    "pres2020Old": -10.9,
+    "retainedAreaPct": 64.6,
+    "retainedPopPct": 50.9,
+    "text": "Kept 51% of its population from the 2016\u20132020 HD-16; gained the rest from the old HD-17 (47%), the old HD-14 (2%). Spans Providence, Kent counties. 2020 presidential margin D+10.9 on the 2016\u20132020 lines \u2192 D+22.7 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 51.0,
+      "key": "17",
+      "popPct": 57.6
+     },
+     {
+      "areaPct": 34.1,
+      "key": "16",
+      "popPct": 33.5
+     },
+     {
+      "areaPct": 8.9,
+      "key": "20",
+      "popPct": 5.6
+     },
+     {
+      "areaPct": 5.0,
+      "key": "15",
+      "popPct": 2.3
+     },
+     {
+      "areaPct": 1.0,
+      "key": "42",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14870,
+    "pres2020New": -3.1,
+    "pres2020Old": -13.2,
+    "retainedAreaPct": 51.0,
+    "retainedPopPct": 57.6,
+    "text": "Kept 58% of its population from the 2016\u20132020 HD-17; gained the rest from the old HD-16 (34%), the old HD-20 (6%), the old HD-15 (2%) and 1 more. Entirely in Providence County. 2020 presidential margin D+13.2 on the 2016\u20132020 lines \u2192 D+3.1 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 83.8,
+      "key": "18",
+      "popPct": 87.7
+     },
+     {
+      "areaPct": 15.7,
+      "key": "16",
+      "popPct": 12.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14489,
+    "pres2020New": -40.8,
+    "pres2020Old": -48.7,
+    "retainedAreaPct": 83.8,
+    "retainedPopPct": 87.7,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-18; gained the rest from the old HD-16 (12%). Entirely in Providence County. 2020 presidential margin D+48.7 on the 2016\u20132020 lines \u2192 D+40.8 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 80.9,
+      "key": "19",
+      "popPct": 82.2
+     },
+     {
+      "areaPct": 18.8,
+      "key": "18",
+      "popPct": 17.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 54.0
+     },
+     {
+      "county": "Kent",
+      "popPct": 46.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14483,
+    "pres2020New": -34.4,
+    "pres2020Old": -27.3,
+    "retainedAreaPct": 80.9,
+    "retainedPopPct": 82.2,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-19; gained the rest from the old HD-18 (18%). Spans Providence, Kent counties. 2020 presidential margin D+27.3 on the 2016\u20132020 lines \u2192 D+34.4 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 93.6,
+      "key": "2",
+      "popPct": 90.0
+     },
+     {
+      "areaPct": 3.8,
+      "key": "1",
+      "popPct": 8.0
+     },
+     {
+      "areaPct": 2.3,
+      "key": "12",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14758,
+    "pres2020New": -74.4,
+    "pres2020Old": -74.4,
+    "retainedAreaPct": 93.6,
+    "retainedPopPct": 90.0,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-2; gained the rest from the old HD-1 (8%), the old HD-12 (2%). Entirely in Providence County. 2020 presidential margin D+74.4 on the 2016\u20132020 lines \u2192 D+74.4 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 70.0,
+      "key": "20",
+      "popPct": 80.3
+     },
+     {
+      "areaPct": 18.4,
+      "key": "26",
+      "popPct": 12.8
+     },
+     {
+      "areaPct": 8.5,
+      "key": "27",
+      "popPct": 4.2
+     },
+     {
+      "areaPct": 3.0,
+      "key": "24",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 92.9
+     },
+     {
+      "county": "Providence",
+      "popPct": 7.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15218,
+    "pres2020New": -13.9,
+    "pres2020Old": -14.0,
+    "retainedAreaPct": 70.0,
+    "retainedPopPct": 80.3,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-20; gained the rest from the old HD-26 (13%), the old HD-27 (4%), the old HD-24 (2%). Spans Kent, Providence counties. 2020 presidential margin D+14.0 on the 2016\u20132020 lines \u2192 D+13.9 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 92.2,
+      "key": "21",
+      "popPct": 86.5
+     },
+     {
+      "areaPct": 6.2,
+      "key": "19",
+      "popPct": 10.6
+     },
+     {
+      "areaPct": 1.5,
+      "key": "22",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14585,
+    "pres2020New": -12.0,
+    "pres2020Old": -11.4,
+    "retainedAreaPct": 92.2,
+    "retainedPopPct": 86.5,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-21; gained the rest from the old HD-19 (11%), the old HD-22 (3%). Entirely in Kent County. 2020 presidential margin D+11.4 on the 2016\u20132020 lines \u2192 D+12.0 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 91.2,
+      "key": "22",
+      "popPct": 90.6
+     },
+     {
+      "areaPct": 8.7,
+      "key": "21",
+      "popPct": 9.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14718,
+    "pres2020New": -5.1,
+    "pres2020Old": -4.7,
+    "retainedAreaPct": 91.2,
+    "retainedPopPct": 90.6,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-22; gained the rest from the old HD-21 (9%). Entirely in Kent County. 2020 presidential margin D+4.7 on the 2016\u20132020 lines \u2192 D+5.1 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 97.7,
+      "key": "23",
+      "popPct": 98.8
+     },
+     {
+      "areaPct": 2.1,
+      "key": "21",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13553,
+    "pres2020New": -9.2,
+    "pres2020Old": -9.2,
+    "retainedAreaPct": 97.7,
+    "retainedPopPct": 98.8,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-23; gained the rest from the old HD-21 (1%). Entirely in Kent County. 2020 presidential margin D+9.2 on the 2016\u20132020 lines \u2192 D+9.2 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 96.4,
+      "key": "24",
+      "popPct": 94.4
+     },
+     {
+      "areaPct": 3.5,
+      "key": "30",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 98.5
+     },
+     {
+      "county": "Washington",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14724,
+    "pres2020New": -18.0,
+    "pres2020Old": -17.5,
+    "retainedAreaPct": 96.4,
+    "retainedPopPct": 94.4,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-24; gained the rest from the old HD-30 (6%). Spans Kent, Washington counties. 2020 presidential margin D+17.5 on the 2016\u20132020 lines \u2192 D+18.0 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 90.9,
+      "key": "25",
+      "popPct": 93.1
+     },
+     {
+      "areaPct": 8.9,
+      "key": "26",
+      "popPct": 6.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15188,
+    "pres2020New": -2.0,
+    "pres2020Old": -1.5,
+    "retainedAreaPct": 90.9,
+    "retainedPopPct": 93.1,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-25; gained the rest from the old HD-26 (7%). Entirely in Kent County. 2020 presidential margin D+1.5 on the 2016\u20132020 lines \u2192 D+2.0 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 68.5,
+      "key": "26",
+      "popPct": 84.9
+     },
+     {
+      "areaPct": 14.9,
+      "key": "28",
+      "popPct": 8.4
+     },
+     {
+      "areaPct": 16.5,
+      "key": "27",
+      "popPct": 6.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13787,
+    "pres2020New": -2.9,
+    "pres2020Old": -5.0,
+    "retainedAreaPct": 68.5,
+    "retainedPopPct": 84.9,
+    "text": "Kept 85% of its population from the 2016\u20132020 HD-26; gained the rest from the old HD-28 (8%), the old HD-27 (7%). Entirely in Kent County. 2020 presidential margin D+5.0 on the 2016\u20132020 lines \u2192 D+2.9 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 89.6,
+      "key": "27",
+      "popPct": 90.0
+     },
+     {
+      "areaPct": 10.3,
+      "key": "29",
+      "popPct": 10.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14398,
+    "pres2020New": -2.7,
+    "pres2020Old": -3.3,
+    "retainedAreaPct": 89.6,
+    "retainedPopPct": 90.0,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-27; gained the rest from the old HD-29 (10%). Entirely in Kent County. 2020 presidential margin D+3.3 on the 2016\u20132020 lines \u2192 D+2.7 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 80.3,
+      "key": "28",
+      "popPct": 91.2
+     },
+     {
+      "areaPct": 19.3,
+      "key": "40",
+      "popPct": 7.0
+     },
+     {
+      "areaPct": 0.4,
+      "key": "29",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13475,
+    "pres2020New": 7.3,
+    "pres2020Old": 6.7,
+    "retainedAreaPct": 80.3,
+    "retainedPopPct": 91.2,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-28; gained the rest from the old HD-40 (7%), the old HD-29 (2%). Entirely in Kent County. 2020 presidential margin R+6.7 on the 2016\u20132020 lines \u2192 R+7.3 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 93.4,
+      "key": "29",
+      "popPct": 94.7
+     },
+     {
+      "areaPct": 1.2,
+      "key": "28",
+      "popPct": 4.1
+     },
+     {
+      "areaPct": 5.3,
+      "key": "30",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14307,
+    "pres2020New": 8.7,
+    "pres2020Old": 8.1,
+    "retainedAreaPct": 93.4,
+    "retainedPopPct": 94.7,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-29; gained the rest from the old HD-28 (4%), the old HD-30 (1%). Entirely in Kent County. 2020 presidential margin R+8.1 on the 2016\u20132020 lines \u2192 R+8.7 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 86.9,
+      "key": "3",
+      "popPct": 91.6
+     },
+     {
+      "areaPct": 10.5,
+      "key": "5",
+      "popPct": 7.3
+     },
+     {
+      "areaPct": 1.9,
+      "key": "1",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15720,
+    "pres2020New": -61.7,
+    "pres2020Old": -63.2,
+    "retainedAreaPct": 86.9,
+    "retainedPopPct": 91.6,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-3; gained the rest from the old HD-5 (7%), the old HD-1 (1%). Entirely in Providence County. 2020 presidential margin D+63.2 on the 2016\u20132020 lines \u2192 D+61.7 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "30",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14734,
+    "pres2020New": -19.7,
+    "pres2020Old": -19.7,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Kent County.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 98.2,
+      "key": "31",
+      "popPct": 97.5
+     },
+     {
+      "areaPct": 1.7,
+      "key": "32",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 92.3
+     },
+     {
+      "county": "Kent",
+      "popPct": 7.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15194,
+    "pres2020New": -16.0,
+    "pres2020Old": -15.5,
+    "retainedAreaPct": 98.2,
+    "retainedPopPct": 97.5,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-31; gained the rest from the old HD-32 (2%). Spans Washington, Kent counties. 2020 presidential margin D+15.5 on the 2016\u20132020 lines \u2192 D+16.0 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "32",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14168,
+    "pres2020New": -27.1,
+    "pres2020Old": -27.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Washington County.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 98.3,
+      "key": "33",
+      "popPct": 95.6
+     },
+     {
+      "areaPct": 1.7,
+      "key": "34",
+      "popPct": 4.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14628,
+    "pres2020New": -29.0,
+    "pres2020Old": -28.2,
+    "retainedAreaPct": 98.3,
+    "retainedPopPct": 95.6,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-33; gained the rest from the old HD-34 (4%). Entirely in Washington County. 2020 presidential margin D+28.2 on the 2016\u20132020 lines \u2192 D+29.0 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 94.7,
+      "key": "34",
+      "popPct": 96.4
+     },
+     {
+      "areaPct": 5.2,
+      "key": "35",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13444,
+    "pres2020New": -31.7,
+    "pres2020Old": -32.6,
+    "retainedAreaPct": 94.7,
+    "retainedPopPct": 96.4,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-34; gained the rest from the old HD-35 (4%). Entirely in Washington County. 2020 presidential margin D+32.6 on the 2016\u20132020 lines \u2192 D+31.7 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 97.6,
+      "key": "35",
+      "popPct": 99.4
+     },
+     {
+      "areaPct": 2.4,
+      "key": "36",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14789,
+    "pres2020New": -35.2,
+    "pres2020Old": -35.0,
+    "retainedAreaPct": 97.6,
+    "retainedPopPct": 99.4,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-35; gained the rest from the old HD-36 (1%). Entirely in Washington County. 2020 presidential margin D+35.0 on the 2016\u20132020 lines \u2192 D+35.2 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "36",
+      "popPct": 98.5
+     },
+     {
+      "areaPct": 0.2,
+      "key": "35",
+      "popPct": 0.8
+     },
+     {
+      "areaPct": 0.1,
+      "key": "37",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14707,
+    "pres2020New": -21.9,
+    "pres2020Old": -21.9,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 98.5,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-36; gained the rest from the old HD-35 (1%), the old HD-37 (1%). Entirely in Washington County. 2020 presidential margin D+21.9 on the 2016\u20132020 lines \u2192 D+21.9 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "37",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14635,
+    "pres2020New": -16.7,
+    "pres2020Old": -16.7,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Washington County.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "38",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13991,
+    "pres2020New": -1.3,
+    "pres2020Old": -1.3,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Washington County.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 98.9,
+      "key": "39",
+      "popPct": 97.9
+     },
+     {
+      "areaPct": 1.0,
+      "key": "31",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 99.5
+     },
+     {
+      "county": "Kent",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14267,
+    "pres2020New": 0.9,
+    "pres2020Old": 1.1,
+    "retainedAreaPct": 98.9,
+    "retainedPopPct": 97.9,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-39; gained the rest from the old HD-31 (2%). Spans Washington, Kent counties. 2020 presidential margin R+1.1 on the 2016\u20132020 lines \u2192 R+0.9 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 96.9,
+      "key": "4",
+      "popPct": 96.6
+     },
+     {
+      "areaPct": 2.8,
+      "key": "1",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14331,
+    "pres2020New": -76.1,
+    "pres2020Old": -76.0,
+    "retainedAreaPct": 96.9,
+    "retainedPopPct": 96.6,
+    "text": "Kept 97% of its population from the 2016\u20132020 HD-4; gained the rest from the old HD-1 (3%). Entirely in Providence County. 2020 presidential margin D+76.0 on the 2016\u20132020 lines \u2192 D+76.1 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 95.8,
+      "key": "40",
+      "popPct": 90.2
+     },
+     {
+      "areaPct": 4.2,
+      "key": "53",
+      "popPct": 9.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 87.0
+     },
+     {
+      "county": "Kent",
+      "popPct": 13.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14797,
+    "pres2020New": 12.3,
+    "pres2020Old": 12.7,
+    "retainedAreaPct": 95.8,
+    "retainedPopPct": 90.2,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-40; gained the rest from the old HD-53 (10%). Spans Providence, Kent counties. 2020 presidential margin R+12.7 on the 2016\u20132020 lines \u2192 R+12.3 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 99.2,
+      "key": "41",
+      "popPct": 97.4
+     },
+     {
+      "areaPct": 0.8,
+      "key": "15",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 99.1
+     },
+     {
+      "county": "Kent",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14996,
+    "pres2020New": 15.9,
+    "pres2020Old": 16.1,
+    "retainedAreaPct": 99.2,
+    "retainedPopPct": 97.4,
+    "text": "Kept 97% of its population from the 2016\u20132020 HD-41; gained the rest from the old HD-15 (3%). Spans Providence, Kent counties. 2020 presidential margin R+16.1 on the 2016\u20132020 lines \u2192 R+15.9 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 98.1,
+      "key": "42",
+      "popPct": 94.9
+     },
+     {
+      "areaPct": 1.3,
+      "key": "13",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 0.5,
+      "key": "17",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14085,
+    "pres2020New": 7.5,
+    "pres2020Old": 7.1,
+    "retainedAreaPct": 98.1,
+    "retainedPopPct": 94.9,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-42; gained the rest from the old HD-13 (4%), the old HD-17 (2%). Entirely in Providence County. 2020 presidential margin R+7.1 on the 2016\u20132020 lines \u2192 R+7.5 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "43",
+      "popPct": 99.0
+     },
+     {
+      "areaPct": 0.5,
+      "key": "13",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14390,
+    "pres2020New": 7.6,
+    "pres2020Old": 7.5,
+    "retainedAreaPct": 99.4,
+    "retainedPopPct": 99.0,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-43; gained the rest from the old HD-13 (1%). Entirely in Providence County. 2020 presidential margin R+7.5 on the 2016\u20132020 lines \u2192 R+7.6 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 91.6,
+      "key": "44",
+      "popPct": 95.5
+     },
+     {
+      "areaPct": 4.3,
+      "key": "53",
+      "popPct": 2.6
+     },
+     {
+      "areaPct": 4.1,
+      "key": "46",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14533,
+    "pres2020New": 5.4,
+    "pres2020Old": 5.3,
+    "retainedAreaPct": 91.6,
+    "retainedPopPct": 95.5,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-44; gained the rest from the old HD-53 (3%), the old HD-46 (2%). Entirely in Providence County. 2020 presidential margin R+5.3 on the 2016\u20132020 lines \u2192 R+5.4 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 85.2,
+      "key": "45",
+      "popPct": 94.4
+     },
+     {
+      "areaPct": 11.3,
+      "key": "52",
+      "popPct": 4.6
+     },
+     {
+      "areaPct": 3.5,
+      "key": "46",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15596,
+    "pres2020New": -10.8,
+    "pres2020Old": -10.9,
+    "retainedAreaPct": 85.2,
+    "retainedPopPct": 94.4,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-45; gained the rest from the old HD-52 (5%), the old HD-46 (1%). Entirely in Providence County. 2020 presidential margin D+10.9 on the 2016\u20132020 lines \u2192 D+10.8 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "46",
+      "popPct": 96.4
+     },
+     {
+      "areaPct": 0.4,
+      "key": "58",
+      "popPct": 3.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14938,
+    "pres2020New": -12.3,
+    "pres2020Old": -12.1,
+    "retainedAreaPct": 99.4,
+    "retainedPopPct": 96.4,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-46; gained the rest from the old HD-58 (3%). Entirely in Providence County. 2020 presidential margin D+12.1 on the 2016\u20132020 lines \u2192 D+12.3 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "47",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13471,
+    "pres2020New": 17.2,
+    "pres2020Old": 16.9,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Providence County.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 90.5,
+      "key": "48",
+      "popPct": 92.3
+     },
+     {
+      "areaPct": 9.4,
+      "key": "47",
+      "popPct": 7.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15192,
+    "pres2020New": 4.5,
+    "pres2020Old": 3.1,
+    "retainedAreaPct": 90.5,
+    "retainedPopPct": 92.3,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-48; gained the rest from the old HD-47 (8%). Entirely in Providence County. 2020 presidential margin R+3.1 on the 2016\u20132020 lines \u2192 R+4.5 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 68.1,
+      "key": "49",
+      "popPct": 91.9
+     },
+     {
+      "areaPct": 30.9,
+      "key": "48",
+      "popPct": 6.8
+     },
+     {
+      "areaPct": 1.0,
+      "key": "51",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14981,
+    "pres2020New": -16.2,
+    "pres2020Old": -18.0,
+    "retainedAreaPct": 68.1,
+    "retainedPopPct": 91.9,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-49; gained the rest from the old HD-48 (7%), the old HD-51 (1%). Entirely in Providence County. 2020 presidential margin D+18.0 on the 2016\u20132020 lines \u2192 D+16.2 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 95.1,
+      "key": "5",
+      "popPct": 95.0
+     },
+     {
+      "areaPct": 4.8,
+      "key": "3",
+      "popPct": 4.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13962,
+    "pres2020New": -50.7,
+    "pres2020Old": -50.0,
+    "retainedAreaPct": 95.1,
+    "retainedPopPct": 95.0,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-5; gained the rest from the old HD-3 (5%). Entirely in Providence County. 2020 presidential margin D+50.0 on the 2016\u20132020 lines \u2192 D+50.7 on the current lines.",
+    "toEra": "current"
+   },
+   "50": {
+    "contributors": [
+     {
+      "areaPct": 98.5,
+      "key": "50",
+      "popPct": 97.9
+     },
+     {
+      "areaPct": 1.4,
+      "key": "49",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15105,
+    "pres2020New": -3.4,
+    "pres2020Old": -3.1,
+    "retainedAreaPct": 98.5,
+    "retainedPopPct": 97.9,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-50; gained the rest from the old HD-49 (2%). Entirely in Providence County. 2020 presidential margin D+3.1 on the 2016\u20132020 lines \u2192 D+3.4 on the current lines.",
+    "toEra": "current"
+   },
+   "51": {
+    "contributors": [
+     {
+      "areaPct": 96.5,
+      "key": "51",
+      "popPct": 97.6
+     },
+     {
+      "areaPct": 0.8,
+      "key": "49",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14683,
+    "pres2020New": -4.3,
+    "pres2020Old": -4.1,
+    "retainedAreaPct": 96.5,
+    "retainedPopPct": 97.6,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-51; gained the rest from the old HD-49 (2%). Entirely in Providence County. 2020 presidential margin D+4.1 on the 2016\u20132020 lines \u2192 D+4.3 on the current lines.",
+    "toEra": "current"
+   },
+   "52": {
+    "contributors": [
+     {
+      "areaPct": 88.0,
+      "key": "52",
+      "popPct": 95.6
+     },
+     {
+      "areaPct": 11.5,
+      "key": "51",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 0.5,
+      "key": "57",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14687,
+    "pres2020New": -11.6,
+    "pres2020Old": -11.9,
+    "retainedAreaPct": 88.0,
+    "retainedPopPct": 95.6,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-52; gained the rest from the old HD-51 (4%), the old HD-57 (1%). Entirely in Providence County. 2020 presidential margin D+11.9 on the 2016\u20132020 lines \u2192 D+11.6 on the current lines.",
+    "toEra": "current"
+   },
+   "53": {
+    "contributors": [
+     {
+      "areaPct": 96.3,
+      "key": "53",
+      "popPct": 93.1
+     },
+     {
+      "areaPct": 3.7,
+      "key": "44",
+      "popPct": 6.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13889,
+    "pres2020New": 1.4,
+    "pres2020Old": 2.2,
+    "retainedAreaPct": 96.3,
+    "retainedPopPct": 93.1,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-53; gained the rest from the old HD-44 (7%). Entirely in Providence County. 2020 presidential margin R+2.2 on the 2016\u20132020 lines \u2192 R+1.4 on the current lines.",
+    "toEra": "current"
+   },
+   "54": {
+    "contributors": [
+     {
+      "areaPct": 95.3,
+      "key": "54",
+      "popPct": 95.3
+     },
+     {
+      "areaPct": 4.5,
+      "key": "6",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15488,
+    "pres2020New": -15.4,
+    "pres2020Old": -15.2,
+    "retainedAreaPct": 95.3,
+    "retainedPopPct": 95.3,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-54; gained the rest from the old HD-6 (5%). Entirely in Providence County. 2020 presidential margin D+15.2 on the 2016\u20132020 lines \u2192 D+15.4 on the current lines.",
+    "toEra": "current"
+   },
+   "55": {
+    "contributors": [
+     {
+      "areaPct": 96.3,
+      "key": "55",
+      "popPct": 96.4
+     },
+     {
+      "areaPct": 3.6,
+      "key": "54",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15056,
+    "pres2020New": -11.3,
+    "pres2020Old": -11.1,
+    "retainedAreaPct": 96.3,
+    "retainedPopPct": 96.4,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-55; gained the rest from the old HD-54 (4%). Entirely in Providence County. 2020 presidential margin D+11.1 on the 2016\u20132020 lines \u2192 D+11.3 on the current lines.",
+    "toEra": "current"
+   },
+   "56": {
+    "contributors": [
+     {
+      "areaPct": 82.8,
+      "key": "56",
+      "popPct": 90.3
+     },
+     {
+      "areaPct": 16.7,
+      "key": "57",
+      "popPct": 9.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14614,
+    "pres2020New": -49.4,
+    "pres2020Old": -47.8,
+    "retainedAreaPct": 82.8,
+    "retainedPopPct": 90.3,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-56; gained the rest from the old HD-57 (9%). Entirely in Providence County. 2020 presidential margin D+47.8 on the 2016\u20132020 lines \u2192 D+49.4 on the current lines.",
+    "toEra": "current"
+   },
+   "57": {
+    "contributors": [
+     {
+      "areaPct": 92.6,
+      "key": "57",
+      "popPct": 94.4
+     },
+     {
+      "areaPct": 4.3,
+      "key": "52",
+      "popPct": 2.5
+     },
+     {
+      "areaPct": 0.3,
+      "key": "56",
+      "popPct": 2.1
+     },
+     {
+      "areaPct": 2.7,
+      "key": "45",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15401,
+    "pres2020New": -21.0,
+    "pres2020Old": -22.5,
+    "retainedAreaPct": 92.6,
+    "retainedPopPct": 94.4,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-57; gained the rest from the old HD-52 (2%), the old HD-56 (2%), the old HD-45 (1%). Entirely in Providence County. 2020 presidential margin D+22.5 on the 2016\u20132020 lines \u2192 D+21.0 on the current lines.",
+    "toEra": "current"
+   },
+   "58": {
+    "contributors": [
+     {
+      "areaPct": 75.6,
+      "key": "58",
+      "popPct": 75.6
+     },
+     {
+      "areaPct": 20.7,
+      "key": "59",
+      "popPct": 21.8
+     },
+     {
+      "areaPct": 3.6,
+      "key": "46",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15442,
+    "pres2020New": -49.3,
+    "pres2020Old": -48.8,
+    "retainedAreaPct": 75.6,
+    "retainedPopPct": 75.6,
+    "text": "Kept 76% of its population from the 2016\u20132020 HD-58; gained the rest from the old HD-59 (22%), the old HD-46 (3%). Entirely in Providence County. 2020 presidential margin D+48.8 on the 2016\u20132020 lines \u2192 D+49.3 on the current lines.",
+    "toEra": "current"
+   },
+   "59": {
+    "contributors": [
+     {
+      "areaPct": 76.0,
+      "key": "59",
+      "popPct": 77.7
+     },
+     {
+      "areaPct": 23.6,
+      "key": "58",
+      "popPct": 22.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14677,
+    "pres2020New": -64.0,
+    "pres2020Old": -63.4,
+    "retainedAreaPct": 76.0,
+    "retainedPopPct": 77.7,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-59; gained the rest from the old HD-58 (22%). Entirely in Providence County. 2020 presidential margin D+63.4 on the 2016\u20132020 lines \u2192 D+64.0 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 89.7,
+      "key": "6",
+      "popPct": 85.3
+     },
+     {
+      "areaPct": 5.3,
+      "key": "7",
+      "popPct": 7.3
+     },
+     {
+      "areaPct": 2.8,
+      "key": "5",
+      "popPct": 5.1
+     },
+     {
+      "areaPct": 1.2,
+      "key": "9",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16541,
+    "pres2020New": -38.5,
+    "pres2020Old": -36.2,
+    "retainedAreaPct": 89.7,
+    "retainedPopPct": 85.3,
+    "text": "Kept 85% of its population from the 2016\u20132020 HD-6; gained the rest from the old HD-7 (7%), the old HD-5 (5%), the old HD-9 (2%). Entirely in Providence County. 2020 presidential margin D+36.2 on the 2016\u20132020 lines \u2192 D+38.5 on the current lines.",
+    "toEra": "current"
+   },
+   "60": {
+    "contributors": [
+     {
+      "areaPct": 86.9,
+      "key": "60",
+      "popPct": 78.4
+     },
+     {
+      "areaPct": 12.5,
+      "key": "56",
+      "popPct": 21.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14889,
+    "pres2020New": -43.9,
+    "pres2020Old": -45.8,
+    "retainedAreaPct": 86.9,
+    "retainedPopPct": 78.4,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-60; gained the rest from the old HD-56 (21%). Entirely in Providence County. 2020 presidential margin D+45.8 on the 2016\u20132020 lines \u2192 D+43.9 on the current lines.",
+    "toEra": "current"
+   },
+   "61": {
+    "contributors": [
+     {
+      "areaPct": 94.3,
+      "key": "61",
+      "popPct": 91.9
+     },
+     {
+      "areaPct": 5.4,
+      "key": "60",
+      "popPct": 7.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15314,
+    "pres2020New": -27.8,
+    "pres2020Old": -27.0,
+    "retainedAreaPct": 94.3,
+    "retainedPopPct": 91.9,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-61; gained the rest from the old HD-60 (8%). Entirely in Providence County. 2020 presidential margin D+27.0 on the 2016\u20132020 lines \u2192 D+27.8 on the current lines.",
+    "toEra": "current"
+   },
+   "62": {
+    "contributors": [
+     {
+      "areaPct": 81.2,
+      "key": "62",
+      "popPct": 80.5
+     },
+     {
+      "areaPct": 18.5,
+      "key": "60",
+      "popPct": 19.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13138,
+    "pres2020New": -32.6,
+    "pres2020Old": -30.3,
+    "retainedAreaPct": 81.2,
+    "retainedPopPct": 80.5,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-62; gained the rest from the old HD-60 (19%). Entirely in Providence County. 2020 presidential margin D+30.3 on the 2016\u20132020 lines \u2192 D+32.6 on the current lines.",
+    "toEra": "current"
+   },
+   "63": {
+    "contributors": [
+     {
+      "areaPct": 95.3,
+      "key": "63",
+      "popPct": 93.1
+     },
+     {
+      "areaPct": 4.5,
+      "key": "62",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 0.2,
+      "key": "64",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13024,
+    "pres2020New": -33.4,
+    "pres2020Old": -33.2,
+    "retainedAreaPct": 95.3,
+    "retainedPopPct": 93.1,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-63; gained the rest from the old HD-62 (6%), the old HD-64 (1%). Entirely in Providence County. 2020 presidential margin D+33.2 on the 2016\u20132020 lines \u2192 D+33.4 on the current lines.",
+    "toEra": "current"
+   },
+   "64": {
+    "contributors": [
+     {
+      "areaPct": 62.8,
+      "key": "64",
+      "popPct": 69.1
+     },
+     {
+      "areaPct": 14.3,
+      "key": "62",
+      "popPct": 19.5
+     },
+     {
+      "areaPct": 22.8,
+      "key": "63",
+      "popPct": 11.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16774,
+    "pres2020New": -33.1,
+    "pres2020Old": -33.2,
+    "retainedAreaPct": 62.8,
+    "retainedPopPct": 69.1,
+    "text": "Kept 69% of its population from the 2016\u20132020 HD-64; gained the rest from the old HD-62 (20%), the old HD-63 (11%). Entirely in Providence County. 2020 presidential margin D+33.2 on the 2016\u20132020 lines \u2192 D+33.1 on the current lines.",
+    "toEra": "current"
+   },
+   "65": {
+    "contributors": [
+     {
+      "areaPct": 89.7,
+      "key": "65",
+      "popPct": 82.0
+     },
+     {
+      "areaPct": 6.6,
+      "key": "64",
+      "popPct": 14.4
+     },
+     {
+      "areaPct": 3.5,
+      "key": "63",
+      "popPct": 3.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 95.1
+     },
+     {
+      "county": "Bristol",
+      "popPct": 4.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15383,
+    "pres2020New": -29.0,
+    "pres2020Old": -28.1,
+    "retainedAreaPct": 89.7,
+    "retainedPopPct": 82.0,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-65; gained the rest from the old HD-64 (14%), the old HD-63 (4%). Spans Providence, Bristol counties. 2020 presidential margin D+28.1 on the 2016\u20132020 lines \u2192 D+29.0 on the current lines.",
+    "toEra": "current"
+   },
+   "66": {
+    "contributors": [
+     {
+      "areaPct": 85.8,
+      "key": "66",
+      "popPct": 87.7
+     },
+     {
+      "areaPct": 11.1,
+      "key": "65",
+      "popPct": 9.9
+     },
+     {
+      "areaPct": 3.1,
+      "key": "67",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 73.4
+     },
+     {
+      "county": "Providence",
+      "popPct": 26.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15043,
+    "pres2020New": -34.5,
+    "pres2020Old": -36.2,
+    "retainedAreaPct": 85.8,
+    "retainedPopPct": 87.7,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-66; gained the rest from the old HD-65 (10%), the old HD-67 (2%). Spans Bristol, Providence counties. 2020 presidential margin D+36.2 on the 2016\u20132020 lines \u2192 D+34.5 on the current lines.",
+    "toEra": "current"
+   },
+   "67": {
+    "contributors": [
+     {
+      "areaPct": 91.7,
+      "key": "67",
+      "popPct": 92.0
+     },
+     {
+      "areaPct": 8.3,
+      "key": "66",
+      "popPct": 8.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14073,
+    "pres2020New": -34.5,
+    "pres2020Old": -32.9,
+    "retainedAreaPct": 91.7,
+    "retainedPopPct": 92.0,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-67; gained the rest from the old HD-66 (8%). Entirely in Bristol County. 2020 presidential margin D+32.9 on the 2016\u20132020 lines \u2192 D+34.5 on the current lines.",
+    "toEra": "current"
+   },
+   "68": {
+    "contributors": [
+     {
+      "areaPct": 97.3,
+      "key": "68",
+      "popPct": 89.9
+     },
+     {
+      "areaPct": 2.5,
+      "key": "67",
+      "popPct": 8.1
+     },
+     {
+      "areaPct": 0.2,
+      "key": "69",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13874,
+    "pres2020New": -23.2,
+    "pres2020Old": -23.4,
+    "retainedAreaPct": 97.3,
+    "retainedPopPct": 89.9,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-68; gained the rest from the old HD-67 (8%), the old HD-69 (2%). Entirely in Bristol County. 2020 presidential margin D+23.4 on the 2016\u20132020 lines \u2192 D+23.2 on the current lines.",
+    "toEra": "current"
+   },
+   "69": {
+    "contributors": [
+     {
+      "areaPct": 99.3,
+      "key": "69",
+      "popPct": 91.8
+     },
+     {
+      "areaPct": 0.7,
+      "key": "68",
+      "popPct": 8.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 98.4
+     },
+     {
+      "county": "Newport",
+      "popPct": 1.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14034,
+    "pres2020New": -17.9,
+    "pres2020Old": -17.2,
+    "retainedAreaPct": 99.3,
+    "retainedPopPct": 91.8,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-69; gained the rest from the old HD-68 (8%). Spans Bristol, Newport counties. 2020 presidential margin D+17.2 on the 2016\u20132020 lines \u2192 D+17.9 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 95.3,
+      "key": "7",
+      "popPct": 94.3
+     },
+     {
+      "areaPct": 2.6,
+      "key": "8",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 1.9,
+      "key": "6",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14207,
+    "pres2020New": -51.4,
+    "pres2020Old": -51.6,
+    "retainedAreaPct": 95.3,
+    "retainedPopPct": 94.3,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-7; gained the rest from the old HD-8 (4%), the old HD-6 (2%). Entirely in Providence County. 2020 presidential margin D+51.6 on the 2016\u20132020 lines \u2192 D+51.4 on the current lines.",
+    "toEra": "current"
+   },
+   "70": {
+    "contributors": [
+     {
+      "areaPct": 57.4,
+      "key": "70",
+      "popPct": 80.0
+     },
+     {
+      "areaPct": 42.6,
+      "key": "71",
+      "popPct": 20.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Newport",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13941,
+    "pres2020New": -12.0,
+    "pres2020Old": -16.7,
+    "retainedAreaPct": 57.4,
+    "retainedPopPct": 80.0,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-70; gained the rest from the old HD-71 (20%). Entirely in Newport County. 2020 presidential margin D+16.7 on the 2016\u20132020 lines \u2192 D+12.0 on the current lines.",
+    "toEra": "current"
+   },
+   "71": {
+    "contributors": [
+     {
+      "areaPct": 89.7,
+      "key": "71",
+      "popPct": 73.7
+     },
+     {
+      "areaPct": 7.7,
+      "key": "70",
+      "popPct": 20.2
+     },
+     {
+      "areaPct": 2.2,
+      "key": "69",
+      "popPct": 3.4
+     },
+     {
+      "areaPct": 0.4,
+      "key": "72",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Newport",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14685,
+    "pres2020New": -22.7,
+    "pres2020Old": -18.4,
+    "retainedAreaPct": 89.7,
+    "retainedPopPct": 73.7,
+    "text": "Kept 74% of its population from the 2016\u20132020 HD-71; gained the rest from the old HD-70 (20%), the old HD-69 (3%), the old HD-72 (3%). Entirely in Newport County. 2020 presidential margin D+18.4 on the 2016\u20132020 lines \u2192 D+22.7 on the current lines.",
+    "toEra": "current"
+   },
+   "72": {
+    "contributors": [
+     {
+      "areaPct": 91.6,
+      "key": "72",
+      "popPct": 93.6
+     },
+     {
+      "areaPct": 8.1,
+      "key": "71",
+      "popPct": 5.3
+     },
+     {
+      "areaPct": 0.3,
+      "key": "73",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Newport",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13922,
+    "pres2020New": -26.2,
+    "pres2020Old": -26.3,
+    "retainedAreaPct": 91.6,
+    "retainedPopPct": 93.6,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-72; gained the rest from the old HD-71 (5%), the old HD-73 (1%). Entirely in Newport County. 2020 presidential margin D+26.3 on the 2016\u20132020 lines \u2192 D+26.2 on the current lines.",
+    "toEra": "current"
+   },
+   "73": {
+    "contributors": [
+     {
+      "areaPct": 97.8,
+      "key": "73",
+      "popPct": 99.0
+     },
+     {
+      "areaPct": 2.1,
+      "key": "74",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Newport",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13651,
+    "pres2020New": -47.7,
+    "pres2020Old": -47.6,
+    "retainedAreaPct": 97.8,
+    "retainedPopPct": 99.0,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-73; gained the rest from the old HD-74 (1%). Entirely in Newport County. 2020 presidential margin D+47.6 on the 2016\u20132020 lines \u2192 D+47.7 on the current lines.",
+    "toEra": "current"
+   },
+   "74": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "74",
+      "popPct": 99.3
+     },
+     {
+      "areaPct": 0.1,
+      "key": "73",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Newport",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14922,
+    "pres2020New": -34.1,
+    "pres2020Old": -34.1,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 99.3,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-74; gained the rest from the old HD-73 (1%). Entirely in Newport County. 2020 presidential margin D+34.1 on the 2016\u20132020 lines \u2192 D+34.1 on the current lines.",
+    "toEra": "current"
+   },
+   "75": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "75",
+      "popPct": 98.8
+     },
+     {
+      "areaPct": 0.0,
+      "key": "73",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Newport",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14269,
+    "pres2020New": -46.7,
+    "pres2020Old": -46.6,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 98.8,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-75; gained the rest from the old HD-73 (1%). Entirely in Newport County. 2020 presidential margin D+46.6 on the 2016\u20132020 lines \u2192 D+46.7 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 94.2,
+      "key": "8",
+      "popPct": 94.8
+     },
+     {
+      "areaPct": 5.5,
+      "key": "7",
+      "popPct": 4.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15255,
+    "pres2020New": -65.2,
+    "pres2020Old": -65.6,
+    "retainedAreaPct": 94.2,
+    "retainedPopPct": 94.8,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-8; gained the rest from the old HD-7 (5%). Entirely in Providence County. 2020 presidential margin D+65.6 on the 2016\u20132020 lines \u2192 D+65.2 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 89.9,
+      "key": "9",
+      "popPct": 92.1
+     },
+     {
+      "areaPct": 3.6,
+      "key": "8",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 4.7,
+      "key": "2",
+      "popPct": 2.1
+     },
+     {
+      "areaPct": 1.0,
+      "key": "11",
+      "popPct": 1.4
+     },
+     {
+      "areaPct": 0.7,
+      "key": "14",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 14277,
+    "pres2020New": -67.7,
+    "pres2020Old": -67.5,
+    "retainedAreaPct": 89.9,
+    "retainedPopPct": 92.1,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-9; gained the rest from the old HD-8 (4%), the old HD-2 (2%), the old HD-11 (1%) and 1 more. Entirely in Providence County. 2020 presidential margin D+67.5 on the 2016\u20132020 lines \u2192 D+67.7 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 85.2,
+      "key": "1",
+      "popPct": 80.2
+     },
+     {
+      "areaPct": 13.9,
+      "key": "4",
+      "popPct": 18.7
+     },
+     {
+      "areaPct": 0.9,
+      "key": "6",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30413,
+    "pres2020New": -57.3,
+    "pres2020Old": -58.0,
+    "retainedAreaPct": 85.2,
+    "retainedPopPct": 80.2,
+    "text": "Kept 80% of its population from the 2016\u20132020 SD-1; gained the rest from the old SD-4 (19%), the old SD-6 (1%). Entirely in Providence County. 2020 presidential margin D+58.0 on the 2016\u20132020 lines \u2192 D+57.3 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 85.2,
+      "key": "10",
+      "popPct": 94.3
+     },
+     {
+      "areaPct": 11.7,
+      "key": "11",
+      "popPct": 4.6
+     },
+     {
+      "areaPct": 3.1,
+      "key": "12",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 64.3
+     },
+     {
+      "county": "Newport",
+      "popPct": 35.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28426,
+    "pres2020New": -14.7,
+    "pres2020Old": -14.8,
+    "retainedAreaPct": 85.2,
+    "retainedPopPct": 94.3,
+    "text": "Kept 94% of its population from the 2016\u20132020 SD-10; gained the rest from the old SD-11 (5%), the old SD-12 (1%). Spans Bristol, Newport counties. 2020 presidential margin D+14.8 on the 2016\u20132020 lines \u2192 D+14.7 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 98.4,
+      "key": "11",
+      "popPct": 92.3
+     },
+     {
+      "areaPct": 0.6,
+      "key": "32",
+      "popPct": 4.6
+     },
+     {
+      "areaPct": 1.0,
+      "key": "10",
+      "popPct": 3.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Newport",
+      "popPct": 64.2
+     },
+     {
+      "county": "Bristol",
+      "popPct": 35.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27498,
+    "pres2020New": -25.1,
+    "pres2020Old": -24.6,
+    "retainedAreaPct": 98.4,
+    "retainedPopPct": 92.3,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-11; gained the rest from the old SD-32 (5%), the old SD-10 (3%). Spans Newport, Bristol counties. 2020 presidential margin D+24.6 on the 2016\u20132020 lines \u2192 D+25.1 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 88.7,
+      "key": "12",
+      "popPct": 94.7
+     },
+     {
+      "areaPct": 2.6,
+      "key": "11",
+      "popPct": 3.0
+     },
+     {
+      "areaPct": 8.7,
+      "key": "13",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Newport",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29756,
+    "pres2020New": -26.8,
+    "pres2020Old": -26.5,
+    "retainedAreaPct": 88.7,
+    "retainedPopPct": 94.7,
+    "text": "Kept 95% of its population from the 2016\u20132020 SD-12; gained the rest from the old SD-11 (3%), the old SD-13 (2%). Entirely in Newport County. 2020 presidential margin D+26.5 on the 2016\u20132020 lines \u2192 D+26.8 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "13",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Newport",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27995,
+    "pres2020New": -45.7,
+    "pres2020Old": -45.8,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Newport County.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 93.7,
+      "key": "14",
+      "popPct": 96.5
+     },
+     {
+      "areaPct": 6.3,
+      "key": "18",
+      "popPct": 3.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25959,
+    "pres2020New": -31.7,
+    "pres2020Old": -31.4,
+    "retainedAreaPct": 93.7,
+    "retainedPopPct": 96.5,
+    "text": "Kept 96% of its population from the 2016\u20132020 SD-14; gained the rest from the old SD-18 (4%). Entirely in Providence County. 2020 presidential margin D+31.4 on the 2016\u20132020 lines \u2192 D+31.7 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 78.3,
+      "key": "15",
+      "popPct": 76.4
+     },
+     {
+      "areaPct": 9.7,
+      "key": "3",
+      "popPct": 11.4
+     },
+     {
+      "areaPct": 3.4,
+      "key": "16",
+      "popPct": 7.9
+     },
+     {
+      "areaPct": 8.3,
+      "key": "6",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31336,
+    "pres2020New": -60.4,
+    "pres2020Old": -51.1,
+    "retainedAreaPct": 78.3,
+    "retainedPopPct": 76.4,
+    "text": "Kept 76% of its population from the 2016\u20132020 SD-15; gained the rest from the old SD-3 (11%), the old SD-16 (8%), the old SD-6 (4%). Entirely in Providence County. 2020 presidential margin D+51.1 on the 2016\u20132020 lines \u2192 D+60.4 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "16",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28644,
+    "pres2020New": -49.5,
+    "pres2020Old": -50.3,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Providence County.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 96.4,
+      "key": "17",
+      "popPct": 94.0
+     },
+     {
+      "areaPct": 3.5,
+      "key": "24",
+      "popPct": 5.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28184,
+    "pres2020New": -4.4,
+    "pres2020Old": -4.6,
+    "retainedAreaPct": 96.4,
+    "retainedPopPct": 94.0,
+    "text": "Kept 94% of its population from the 2016\u20132020 SD-17; gained the rest from the old SD-24 (6%). Entirely in Providence County. 2020 presidential margin D+4.6 on the 2016\u20132020 lines \u2192 D+4.4 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 85.0,
+      "key": "18",
+      "popPct": 79.7
+     },
+     {
+      "areaPct": 10.8,
+      "key": "14",
+      "popPct": 8.6
+     },
+     {
+      "areaPct": 1.9,
+      "key": "8",
+      "popPct": 6.9
+     },
+     {
+      "areaPct": 2.2,
+      "key": "15",
+      "popPct": 4.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Bristol",
+      "popPct": 4.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 28056,
+    "pres2020New": -30.2,
+    "pres2020Old": -28.3,
+    "retainedAreaPct": 85.0,
+    "retainedPopPct": 79.7,
+    "text": "Kept 80% of its population from the 2016\u20132020 SD-18; gained the rest from the old SD-14 (9%), the old SD-8 (7%), the old SD-15 (5%). Counties: lost Bristol. 2020 presidential margin D+28.3 on the 2016\u20132020 lines \u2192 D+30.2 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 99.3,
+      "key": "19",
+      "popPct": 98.8
+     },
+     {
+      "areaPct": 0.6,
+      "key": "20",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29160,
+    "pres2020New": -14.4,
+    "pres2020Old": -14.3,
+    "retainedAreaPct": 99.3,
+    "retainedPopPct": 98.8,
+    "text": "Kept 99% of its population from the 2016\u20132020 SD-19; gained the rest from the old SD-20 (1%). Entirely in Providence County. 2020 presidential margin D+14.3 on the 2016\u20132020 lines \u2192 D+14.4 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 84.0,
+      "key": "2",
+      "popPct": 78.5
+     },
+     {
+      "areaPct": 15.7,
+      "key": "7",
+      "popPct": 21.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29253,
+    "pres2020New": -58.4,
+    "pres2020Old": -60.4,
+    "retainedAreaPct": 84.0,
+    "retainedPopPct": 78.5,
+    "text": "Kept 78% of its population from the 2016\u20132020 SD-2; gained the rest from the old SD-7 (21%). Entirely in Providence County. 2020 presidential margin D+60.4 on the 2016\u20132020 lines \u2192 D+58.4 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 90.0,
+      "key": "20",
+      "popPct": 88.6
+     },
+     {
+      "areaPct": 5.8,
+      "key": "24",
+      "popPct": 9.7
+     },
+     {
+      "areaPct": 4.2,
+      "key": "19",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30140,
+    "pres2020New": -5.8,
+    "pres2020Old": -7.4,
+    "retainedAreaPct": 90.0,
+    "retainedPopPct": 88.6,
+    "text": "Kept 89% of its population from the 2016\u20132020 SD-20; gained the rest from the old SD-24 (10%), the old SD-19 (2%). Entirely in Providence County. 2020 presidential margin D+7.4 on the 2016\u20132020 lines \u2192 D+5.8 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 97.2,
+      "key": "21",
+      "popPct": 95.1
+     },
+     {
+      "areaPct": 2.6,
+      "key": "33",
+      "popPct": 4.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 51.9
+     },
+     {
+      "county": "Kent",
+      "popPct": 48.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28413,
+    "pres2020New": 12.2,
+    "pres2020Old": 12.6,
+    "retainedAreaPct": 97.2,
+    "retainedPopPct": 95.1,
+    "text": "Kept 95% of its population from the 2016\u20132020 SD-21; gained the rest from the old SD-33 (5%). Spans Providence, Kent counties. 2020 presidential margin R+12.6 on the 2016\u20132020 lines \u2192 R+12.2 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 96.3,
+      "key": "22",
+      "popPct": 93.8
+     },
+     {
+      "areaPct": 0.6,
+      "key": "7",
+      "popPct": 3.8
+     },
+     {
+      "areaPct": 3.1,
+      "key": "17",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29909,
+    "pres2020New": -1.9,
+    "pres2020Old": -1.7,
+    "retainedAreaPct": 96.3,
+    "retainedPopPct": 93.8,
+    "text": "Kept 94% of its population from the 2016\u20132020 SD-22; gained the rest from the old SD-7 (4%), the old SD-17 (2%). Entirely in Providence County. 2020 presidential margin D+1.7 on the 2016\u20132020 lines \u2192 D+1.9 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 99.2,
+      "key": "23",
+      "popPct": 96.9
+     },
+     {
+      "areaPct": 0.8,
+      "key": "24",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29717,
+    "pres2020New": 12.8,
+    "pres2020Old": 13.4,
+    "retainedAreaPct": 99.2,
+    "retainedPopPct": 96.9,
+    "text": "Kept 97% of its population from the 2016\u20132020 SD-23; gained the rest from the old SD-24 (3%). Entirely in Providence County. 2020 presidential margin R+13.4 on the 2016\u20132020 lines \u2192 R+12.8 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 93.7,
+      "key": "24",
+      "popPct": 92.8
+     },
+     {
+      "areaPct": 6.3,
+      "key": "20",
+      "popPct": 7.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24626,
+    "pres2020New": -11.1,
+    "pres2020Old": -8.0,
+    "retainedAreaPct": 93.7,
+    "retainedPopPct": 92.8,
+    "text": "Kept 93% of its population from the 2016\u20132020 SD-24; gained the rest from the old SD-20 (7%). Entirely in Providence County. 2020 presidential margin D+8.0 on the 2016\u20132020 lines \u2192 D+11.1 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 98.8,
+      "key": "25",
+      "popPct": 97.2
+     },
+     {
+      "areaPct": 1.1,
+      "key": "22",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27833,
+    "pres2020New": 9.0,
+    "pres2020Old": 8.9,
+    "retainedAreaPct": 98.8,
+    "retainedPopPct": 97.2,
+    "text": "Kept 97% of its population from the 2016\u20132020 SD-25; gained the rest from the old SD-22 (3%). Entirely in Providence County. 2020 presidential margin R+8.9 on the 2016\u20132020 lines \u2192 R+9.0 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 98.3,
+      "key": "26",
+      "popPct": 97.8
+     },
+     {
+      "areaPct": 1.6,
+      "key": "27",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28407,
+    "pres2020New": 0.8,
+    "pres2020Old": 1.0,
+    "retainedAreaPct": 98.3,
+    "retainedPopPct": 97.8,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-26; gained the rest from the old SD-27 (2%). Entirely in Providence County. 2020 presidential margin R+1.0 on the 2016\u20132020 lines \u2192 R+0.8 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 94.7,
+      "key": "27",
+      "popPct": 90.0
+     },
+     {
+      "areaPct": 4.6,
+      "key": "28",
+      "popPct": 9.3
+     },
+     {
+      "areaPct": 0.7,
+      "key": "26",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 93.3
+     },
+     {
+      "county": "Kent",
+      "popPct": 6.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30765,
+    "pres2020New": -8.4,
+    "pres2020Old": -7.2,
+    "retainedAreaPct": 94.7,
+    "retainedPopPct": 90.0,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-27; gained the rest from the old SD-28 (9%), the old SD-26 (1%). Spans Providence, Kent counties. 2020 presidential margin D+7.2 on the 2016\u20132020 lines \u2192 D+8.4 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 85.3,
+      "key": "28",
+      "popPct": 81.1
+     },
+     {
+      "areaPct": 2.7,
+      "key": "6",
+      "popPct": 9.7
+     },
+     {
+      "areaPct": 11.8,
+      "key": "2",
+      "popPct": 9.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30536,
+    "pres2020New": -44.5,
+    "pres2020Old": -39.4,
+    "retainedAreaPct": 85.3,
+    "retainedPopPct": 81.1,
+    "text": "Kept 81% of its population from the 2016\u20132020 SD-28; gained the rest from the old SD-6 (10%), the old SD-2 (9%). Entirely in Providence County. 2020 presidential margin D+39.4 on the 2016\u20132020 lines \u2192 D+44.5 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 72.4,
+      "key": "29",
+      "popPct": 78.4
+     },
+     {
+      "areaPct": 27.5,
+      "key": "30",
+      "popPct": 21.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 26995,
+    "pres2020New": -9.2,
+    "pres2020Old": -14.0,
+    "retainedAreaPct": 72.4,
+    "retainedPopPct": 78.4,
+    "text": "Kept 78% of its population from the 2016\u20132020 SD-29; gained the rest from the old SD-30 (22%). Entirely in Kent County. 2020 presidential margin D+14.0 on the 2016\u20132020 lines \u2192 D+9.2 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 98.4,
+      "key": "3",
+      "popPct": 98.0
+     },
+     {
+      "areaPct": 1.5,
+      "key": "6",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27649,
+    "pres2020New": -77.6,
+    "pres2020Old": -77.5,
+    "retainedAreaPct": 98.4,
+    "retainedPopPct": 98.0,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-3; gained the rest from the old SD-6 (2%). Entirely in Providence County. 2020 presidential margin D+77.5 on the 2016\u20132020 lines \u2192 D+77.6 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 76.5,
+      "key": "30",
+      "popPct": 68.5
+     },
+     {
+      "areaPct": 23.4,
+      "key": "31",
+      "popPct": 31.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 99.3
+     },
+     {
+      "county": "Washington",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31113,
+    "pres2020New": -12.5,
+    "pres2020Old": -9.1,
+    "retainedAreaPct": 76.5,
+    "retainedPopPct": 68.5,
+    "text": "Kept 68% of its population from the 2016\u20132020 SD-30; gained the rest from the old SD-31 (32%). Spans Kent, Washington counties. 2020 presidential margin D+9.1 on the 2016\u20132020 lines \u2192 D+12.5 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 77.1,
+      "key": "31",
+      "popPct": 68.4
+     },
+     {
+      "areaPct": 19.0,
+      "key": "29",
+      "popPct": 24.0
+     },
+     {
+      "areaPct": 1.9,
+      "key": "28",
+      "popPct": 4.3
+     },
+     {
+      "areaPct": 1.7,
+      "key": "27",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 75.7
+     },
+     {
+      "county": "Providence",
+      "popPct": 24.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27154,
+    "pres2020New": -19.6,
+    "pres2020Old": -17.7,
+    "retainedAreaPct": 77.1,
+    "retainedPopPct": 68.4,
+    "text": "Kept 68% of its population from the 2016\u20132020 SD-31; gained the rest from the old SD-29 (24%), the old SD-28 (4%), the old SD-27 (3%). Spans Kent, Providence counties. 2020 presidential margin D+17.7 on the 2016\u20132020 lines \u2192 D+19.6 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 95.5,
+      "key": "32",
+      "popPct": 89.4
+     },
+     {
+      "areaPct": 4.4,
+      "key": "18",
+      "popPct": 10.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bristol",
+      "popPct": 84.7
+     },
+     {
+      "county": "Providence",
+      "popPct": 15.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29783,
+    "pres2020New": -35.7,
+    "pres2020Old": -36.9,
+    "retainedAreaPct": 95.5,
+    "retainedPopPct": 89.4,
+    "text": "Kept 89% of its population from the 2016\u20132020 SD-32; gained the rest from the old SD-18 (10%). Spans Bristol, Providence counties. 2020 presidential margin D+36.9 on the 2016\u20132020 lines \u2192 D+35.7 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 96.1,
+      "key": "33",
+      "popPct": 98.4
+     },
+     {
+      "areaPct": 3.8,
+      "key": "21",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27255,
+    "pres2020New": 6.0,
+    "pres2020Old": 4.9,
+    "retainedAreaPct": 96.1,
+    "retainedPopPct": 98.4,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-33; gained the rest from the old SD-21 (2%). Entirely in Kent County. 2020 presidential margin R+4.9 on the 2016\u20132020 lines \u2192 R+6.0 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "34",
+      "popPct": 98.8
+     },
+     {
+      "areaPct": 0.6,
+      "key": "38",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 94.8
+     },
+     {
+      "county": "Kent",
+      "popPct": 5.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28446,
+    "pres2020New": 0.0,
+    "pres2020Old": -0.2,
+    "retainedAreaPct": 98.7,
+    "retainedPopPct": 98.8,
+    "text": "Kept 99% of its population from the 2016\u20132020 SD-34; gained the rest from the old SD-38 (1%). Spans Washington, Kent counties. 2020 presidential margin D+0.2 on the 2016\u20132020 lines \u2192 Even  on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 76.5,
+      "key": "35",
+      "popPct": 73.1
+     },
+     {
+      "areaPct": 17.8,
+      "key": "36",
+      "popPct": 20.6
+     },
+     {
+      "areaPct": 1.7,
+      "key": "37",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 3.9,
+      "key": "33",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 52.1
+     },
+     {
+      "county": "Washington",
+      "popPct": 47.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28396,
+    "pres2020New": -22.7,
+    "pres2020Old": -20.4,
+    "retainedAreaPct": 76.5,
+    "retainedPopPct": 73.1,
+    "text": "Kept 73% of its population from the 2016\u20132020 SD-35; gained the rest from the old SD-36 (21%), the old SD-37 (4%), the old SD-33 (3%). Spans Kent, Washington counties. 2020 presidential margin D+20.4 on the 2016\u20132020 lines \u2192 D+22.7 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 24.5,
+      "key": "36",
+      "popPct": 70.7
+     },
+     {
+      "areaPct": 16.1,
+      "key": "35",
+      "popPct": 24.8
+     },
+     {
+      "areaPct": 59.4,
+      "key": "37",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 98.6
+     },
+     {
+      "county": "Kent",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31576,
+    "pres2020New": -23.9,
+    "pres2020Old": -23.5,
+    "retainedAreaPct": 24.5,
+    "retainedPopPct": 70.7,
+    "text": "Kept 71% of its population from the 2016\u20132020 SD-36; gained the rest from the old SD-35 (25%), the old SD-37 (4%). Spans Washington, Kent counties. 2020 presidential margin D+23.5 on the 2016\u20132020 lines \u2192 D+23.9 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 90.4,
+      "key": "37",
+      "popPct": 97.6
+     },
+     {
+      "areaPct": 9.6,
+      "key": "38",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27981,
+    "pres2020New": -38.4,
+    "pres2020Old": -40.0,
+    "retainedAreaPct": 90.4,
+    "retainedPopPct": 97.6,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-37; gained the rest from the old SD-38 (2%). Entirely in Washington County. 2020 presidential margin D+40.0 on the 2016\u20132020 lines \u2192 D+38.4 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 93.8,
+      "key": "38",
+      "popPct": 96.3
+     },
+     {
+      "areaPct": 3.8,
+      "key": "34",
+      "popPct": 2.3
+     },
+     {
+      "areaPct": 2.4,
+      "key": "37",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29147,
+    "pres2020New": -15.1,
+    "pres2020Old": -15.3,
+    "retainedAreaPct": 93.8,
+    "retainedPopPct": 96.3,
+    "text": "Kept 96% of its population from the 2016\u20132020 SD-38; gained the rest from the old SD-34 (2%), the old SD-37 (1%). Entirely in Washington County. 2020 presidential margin D+15.3 on the 2016\u20132020 lines \u2192 D+15.1 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 68.8,
+      "key": "4",
+      "popPct": 68.2
+     },
+     {
+      "areaPct": 14.3,
+      "key": "7",
+      "popPct": 14.5
+     },
+     {
+      "areaPct": 4.3,
+      "key": "15",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 7.8,
+      "key": "17",
+      "popPct": 5.5
+     },
+     {
+      "areaPct": 2.1,
+      "key": "1",
+      "popPct": 2.5
+     },
+     {
+      "areaPct": 2.5,
+      "key": "22",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30130,
+    "pres2020New": -17.9,
+    "pres2020Old": -23.5,
+    "retainedAreaPct": 68.8,
+    "retainedPopPct": 68.2,
+    "text": "Kept 68% of its population from the 2016\u20132020 SD-4; gained the rest from the old SD-7 (14%), the old SD-15 (7%), the old SD-17 (6%) and 2 more. Entirely in Providence County. 2020 presidential margin D+23.5 on the 2016\u20132020 lines \u2192 D+17.9 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 59.1,
+      "key": "5",
+      "popPct": 65.9
+     },
+     {
+      "areaPct": 24.6,
+      "key": "1",
+      "popPct": 20.0
+     },
+     {
+      "areaPct": 13.2,
+      "key": "4",
+      "popPct": 11.7
+     },
+     {
+      "areaPct": 0.9,
+      "key": "2",
+      "popPct": 1.5
+     },
+     {
+      "areaPct": 2.2,
+      "key": "7",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29633,
+    "pres2020New": -59.3,
+    "pres2020Old": -61.1,
+    "retainedAreaPct": 59.1,
+    "retainedPopPct": 65.9,
+    "text": "Kept 66% of its population from the 2016\u20132020 SD-5; gained the rest from the old SD-1 (20%), the old SD-4 (12%), the old SD-2 (2%) and 1 more. Entirely in Providence County. 2020 presidential margin D+61.1 on the 2016\u20132020 lines \u2192 D+59.3 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 89.7,
+      "key": "6",
+      "popPct": 81.6
+     },
+     {
+      "areaPct": 5.6,
+      "key": "2",
+      "popPct": 13.5
+     },
+     {
+      "areaPct": 1.0,
+      "key": "5",
+      "popPct": 1.8
+     },
+     {
+      "areaPct": 1.0,
+      "key": "1",
+      "popPct": 1.7
+     },
+     {
+      "areaPct": 2.6,
+      "key": "28",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28673,
+    "pres2020New": -68.1,
+    "pres2020Old": -68.8,
+    "retainedAreaPct": 89.7,
+    "retainedPopPct": 81.6,
+    "text": "Kept 82% of its population from the 2016\u20132020 SD-6; gained the rest from the old SD-2 (14%), the old SD-5 (2%), the old SD-1 (2%) and 1 more. Entirely in Providence County. 2020 presidential margin D+68.8 on the 2016\u20132020 lines \u2192 D+68.1 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 59.7,
+      "key": "7",
+      "popPct": 62.6
+     },
+     {
+      "areaPct": 22.1,
+      "key": "5",
+      "popPct": 31.1
+     },
+     {
+      "areaPct": 18.1,
+      "key": "25",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30119,
+    "pres2020New": -40.2,
+    "pres2020Old": -37.1,
+    "retainedAreaPct": 59.7,
+    "retainedPopPct": 62.6,
+    "text": "Kept 63% of its population from the 2016\u20132020 SD-7; gained the rest from the old SD-5 (31%), the old SD-25 (6%). Entirely in Providence County. 2020 presidential margin D+37.1 on the 2016\u20132020 lines \u2192 D+40.2 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 89.4,
+      "key": "8",
+      "popPct": 91.4
+     },
+     {
+      "areaPct": 4.1,
+      "key": "15",
+      "popPct": 4.3
+     },
+     {
+      "areaPct": 6.5,
+      "key": "18",
+      "popPct": 4.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Providence",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29060,
+    "pres2020New": -35.3,
+    "pres2020Old": -35.3,
+    "retainedAreaPct": 89.4,
+    "retainedPopPct": 91.4,
+    "text": "Kept 91% of its population from the 2016\u20132020 SD-8; gained the rest from the old SD-15 (4%), the old SD-18 (4%). Entirely in Providence County. 2020 presidential margin D+35.3 on the 2016\u20132020 lines \u2192 D+35.3 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "9",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29243,
+    "pres2020New": -5.4,
+    "pres2020Old": -5.4,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Kent County.",
+    "toEra": "current"
+   }
+  }
+ }
+}

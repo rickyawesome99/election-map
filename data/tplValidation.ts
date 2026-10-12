@@ -2,32 +2,32 @@
 // The 2024 holdout behind the Validation table on /methodology/state-tpl: each predictor is built from
 // information through 2022 and scored on 2024 after removing a uniform national shift.
 export const TPL_VALIDATION = {
-  "generatedAt": "2026-10-04",
+  "generatedAt": "2026-10-10",
   "pass": true,
   "rows": [
     {
       "target": "2024 President",
       "predictor": "TPL holdout (full NM pipeline)",
       "n": 50,
-      "mae": 2.46,
-      "r": 0.988,
-      "shift": 1.43
+      "mae": 2.24,
+      "r": 0.99,
+      "shift": 2.67
     },
     {
       "target": "2024 President",
       "predictor": "Adjusted only (no IF/CQ/WA)",
       "n": 50,
-      "mae": 2.6,
-      "r": 0.988,
-      "shift": 2.37
+      "mae": 2.22,
+      "r": 0.99,
+      "shift": 2.76
     },
     {
       "target": "2024 President",
       "predictor": "Raw, clipped ±50",
       "n": 50,
-      "mae": 2.78,
-      "r": 0.985,
-      "shift": 2.02
+      "mae": 2.53,
+      "r": 0.987,
+      "shift": 2.6
     },
     {
       "target": "2024 President",
@@ -41,25 +41,25 @@ export const TPL_VALIDATION = {
       "target": "2024 Senate",
       "predictor": "TPL holdout (full NM pipeline)",
       "n": 33,
-      "mae": 5.02,
-      "r": 0.948,
-      "shift": -0.21
+      "mae": 4.9,
+      "r": 0.949,
+      "shift": -0.54
     },
     {
       "target": "2024 Senate",
       "predictor": "Adjusted only (no IF/CQ/WA)",
       "n": 33,
-      "mae": 4.97,
-      "r": 0.948,
-      "shift": 0.82
+      "mae": 4.73,
+      "r": 0.951,
+      "shift": 0.31
     },
     {
       "target": "2024 Senate",
       "predictor": "Raw, clipped ±50",
       "n": 33,
-      "mae": 5.01,
-      "r": 0.948,
-      "shift": 0.82
+      "mae": 4.71,
+      "r": 0.951,
+      "shift": 0.72
     },
     {
       "target": "2024 Senate",
@@ -73,25 +73,25 @@ export const TPL_VALIDATION = {
       "target": "2024 House avg (adjusted)",
       "predictor": "TPL holdout (full NM pipeline)",
       "n": 50,
-      "mae": 3.06,
-      "r": 0.989,
-      "shift": 1.47
+      "mae": 3.41,
+      "r": 0.99,
+      "shift": 1.83
     },
     {
       "target": "2024 House avg (adjusted)",
       "predictor": "Adjusted only (no IF/CQ/WA)",
       "n": 50,
-      "mae": 2.36,
-      "r": 0.991,
-      "shift": 1.54
+      "mae": 2.58,
+      "r": 0.992,
+      "shift": 1.87
     },
     {
       "target": "2024 House avg (adjusted)",
       "predictor": "Raw, clipped ±50",
       "n": 50,
-      "mae": 2.54,
-      "r": 0.991,
-      "shift": 1.34
+      "mae": 2.73,
+      "r": 0.992,
+      "shift": 1.54
     },
     {
       "target": "2024 House avg (adjusted)",

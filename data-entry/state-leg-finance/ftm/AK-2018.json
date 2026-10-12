@@ -1,0 +1,1229 @@
+{
+ "state": "AK",
+ "cycle": 2018,
+ "fetched": "2026-10-11",
+ "house": {
+  "15": [
+   {
+    "name": "LEDOUX, GABRIELLE R (GABBY)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 145557.4,
+    "status": "Won",
+    "records": 381
+   },
+   {
+    "name": "FRANKS, LYN D",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 19515.0,
+    "status": "Lost",
+    "records": 193
+   },
+   {
+    "name": "WEAVER, AARON A",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2770.0,
+    "status": "Lost",
+    "records": 17
+   },
+   {
+    "name": "PHILLIPS, RICK",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1805.75,
+    "status": "Lost",
+    "records": 10
+   },
+   {
+    "name": "MCCORMACK, PATRICK M",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1448.58,
+    "status": "Lost",
+    "records": 13
+   }
+  ],
+  "1": [
+   {
+    "name": "DODGE, KATHRYN E",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 131897.05,
+    "status": "Lost",
+    "records": 736
+   },
+   {
+    "name": "LEBON, BARTON S (BART)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 105227.0,
+    "status": "Won",
+    "records": 426
+   },
+   {
+    "name": "FALKE, WOLFGANG",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 120.0,
+    "status": "Lost",
+    "records": 1
+   }
+  ],
+  "21": [
+   {
+    "name": "CLAMAN, MATT",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 110307.49,
+    "status": "Won",
+    "records": 529
+   },
+   {
+    "name": "STEWART, MARILYN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 40529.44,
+    "status": "Lost",
+    "records": 206
+   }
+  ],
+  "22": [
+   {
+    "name": "DARDEN, DUSTIN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 100055.0,
+    "status": "Lost",
+    "records": 4
+   },
+   {
+    "name": "GRENN, JASON S",
+    "party": "Third-Party",
+    "incumbent": false,
+    "contributions": 85731.45,
+    "status": "Lost",
+    "records": 487
+   },
+   {
+    "name": "RASMUSSEN, SARA",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 56388.74,
+    "status": "Won",
+    "records": 281
+   },
+   {
+    "name": "VAZQUEZ, ELIZABETH",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 20154.27,
+    "status": "Lost",
+    "records": 83
+   }
+  ],
+  "34": [
+   {
+    "name": "NANKERVIS, JERRY A",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 93877.11,
+    "status": "Lost",
+    "records": 403
+   },
+   {
+    "name": "STORY, ANDREA (ANDI)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 91128.35,
+    "status": "Won",
+    "records": 573
+   },
+   {
+    "name": "EDWARDSON, ROBERT H (ROB)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7918.16,
+    "status": "Lost",
+    "records": 52
+   }
+  ],
+  "16": [
+   {
+    "name": "SPOHNHOLZ, IVY A",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 93055.09,
+    "status": "Won",
+    "records": 504
+   },
+   {
+    "name": "WRIGHT, STANLEY A",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5070.0,
+    "status": "Lost",
+    "records": 40
+   }
+  ],
+  "31": [
+   {
+    "name": "SEATON, PAUL K",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 92127.69,
+    "status": "Lost",
+    "records": 553
+   },
+   {
+    "name": "VANCE, SARAH L",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 41568.19,
+    "status": "Won",
+    "records": 173
+   },
+   {
+    "name": "COX, JOHN R",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6378.0,
+    "status": "Lost",
+    "records": 25
+   },
+   {
+    "name": "KROLL, HENRY F (HANK)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": null,
+    "status": "Lost",
+    "records": 0
+   }
+  ],
+  "20": [
+   {
+    "name": "GROH, CLIFFORD J (CLIFF)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 91789.11,
+    "status": "Lost",
+    "records": 192
+   },
+   {
+    "name": "FIELDS, WILLIAM Z (ZACK)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 60128.78,
+    "status": "Won",
+    "records": 355
+   },
+   {
+    "name": "ROJAS, ELIAS",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 36044.56,
+    "status": "Lost",
+    "records": 187
+   },
+   {
+    "name": "MARTINSON, CEEZAR X",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 9070.0,
+    "status": "Lost",
+    "records": 50
+   },
+   {
+    "name": "WEST, WARREN P",
+    "party": "Third-Party",
+    "incumbent": false,
+    "contributions": null,
+    "status": "Lost",
+    "records": 0
+   }
+  ],
+  "27": [
+   {
+    "name": "SNYDER, LIZ",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 82244.06,
+    "status": "Lost",
+    "records": 574
+   },
+   {
+    "name": "PRUITT, LANCE D",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 55357.8,
+    "status": "Won",
+    "records": 148
+   },
+   {
+    "name": "JONES, DONALD W",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5719.43,
+    "status": "Lost",
+    "records": 25
+   }
+  ],
+  "33": [
+   {
+    "name": "DIMOND, CHRIS",
+    "party": "Third-Party",
+    "incumbent": false,
+    "contributions": 79744.97,
+    "status": "Lost",
+    "records": 471
+   },
+   {
+    "name": "HANNAN, SARA",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 65941.93,
+    "status": "Won",
+    "records": 434
+   },
+   {
+    "name": "MORPHET, TOM",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 10973.03,
+    "status": "Lost",
+    "records": 83
+   },
+   {
+    "name": "HANDY, STEVEN D",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1535.0,
+    "status": "Lost",
+    "records": 9
+   },
+   {
+    "name": "HART, JAMES E",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 100.0,
+    "status": "Lost",
+    "records": 1
+   }
+  ],
+  "25": [
+   {
+    "name": "REVAK, JOSHUA C",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 78420.14,
+    "status": "Won",
+    "records": 277
+   },
+   {
+    "name": "HIGGINS, PATRICIA C (PATTI)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 45078.0,
+    "status": "Lost",
+    "records": 221
+   },
+   {
+    "name": "MILLETT, CHARISSE E",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 31130.0,
+    "status": "Lost",
+    "records": 90
+   }
+  ],
+  "4": [
+   {
+    "name": "HOPKINS, GRIER H",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 77032.43,
+    "status": "Won",
+    "records": 526
+   },
+   {
+    "name": "SACKETT, JIM",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 72235.4,
+    "status": "Lost",
+    "records": 288
+   },
+   {
+    "name": "LAMKIN, TIMOTHY",
+    "party": "Third-Party",
+    "incumbent": false,
+    "contributions": 6850.0,
+    "status": "Lost",
+    "records": 13
+   }
+  ],
+  "14": [
+   {
+    "name": "MERRICK, KELLY R",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 75342.4,
+    "status": "Won",
+    "records": 323
+   },
+   {
+    "name": "HARNETT, EUGENE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 19312.73,
+    "status": "Lost",
+    "records": 82
+   },
+   {
+    "name": "ALLARD, JAMIE D",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 11389.94,
+    "status": "Lost",
+    "records": 47
+   },
+   {
+    "name": "HACKENMUELLER, JOE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4092.65,
+    "status": "Lost",
+    "records": 19
+   }
+  ],
+  "35": [
+   {
+    "name": "KREISS-TOMKINS, JONATHAN S",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 74535.02,
+    "status": "Won",
+    "records": 466
+   },
+   {
+    "name": "WEIN, RICHARD JAN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 38191.73,
+    "status": "Lost",
+    "records": 56
+   },
+   {
+    "name": "SKAFLESTAD, KENNY (KARL)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 4870.0,
+    "status": "Lost",
+    "records": 15
+   }
+  ],
+  "28": [
+   {
+    "name": "LEE, AMBER M",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 61830.43,
+    "status": "Lost",
+    "records": 456
+   },
+   {
+    "name": "JOHNSTON, JENNIFER B",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 35937.03,
+    "status": "Won",
+    "records": 128
+   },
+   {
+    "name": "BIELING, ROSS PARKER",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 11144.1,
+    "status": "Lost",
+    "records": 13
+   }
+  ],
+  "17": [
+   {
+    "name": "JOSEPHSON, ANDREW L (ANDY)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 60407.33,
+    "status": "Won",
+    "records": 337
+   },
+   {
+    "name": "SANDERS, MARCUS",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 28535.55,
+    "status": "Lost",
+    "records": 160
+   }
+  ],
+  "36": [
+   {
+    "name": "ORTIZ, DANIEL H (DAN)",
+    "party": "Third-Party",
+    "incumbent": false,
+    "contributions": 57822.74,
+    "status": "Won",
+    "records": 332
+   },
+   {
+    "name": "SHAW, TREVOR ALEXANDER",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 7464.66,
+    "status": "Lost",
+    "records": 35
+   },
+   {
+    "name": "ABBOTT, GHERT",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 479.03,
+    "status": "Withdrew",
+    "records": 13
+   }
+  ],
+  "11": [
+   {
+    "name": "JOHNSON, DELENA M GOODWIN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 53992.73,
+    "status": "Won",
+    "records": 109
+   },
+   {
+    "name": "PATTERSON, EILEEN E",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15388.59,
+    "status": "Lost",
+    "records": 105
+   },
+   {
+    "name": "DEVRIES, EDNA B",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 12473.8,
+    "status": "Lost",
+    "records": 49
+   }
+  ],
+  "40": [
+   {
+    "name": "LINCOLN, JOHN (AGNAQLUK)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 53354.96,
+    "status": "Won",
+    "records": 173
+   },
+   {
+    "name": "SAVOK, PATRICK G",
+    "party": "Third-Party",
+    "incumbent": false,
+    "contributions": 3823.0,
+    "status": "Lost",
+    "records": 9
+   },
+   {
+    "name": "MACK, LEANNA R",
+    "party": "Third-Party",
+    "incumbent": false,
+    "contributions": 601.0,
+    "status": "Lost",
+    "records": 5
+   }
+  ],
+  "5": [
+   {
+    "name": "WOOL, ADAM L",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 52156.05,
+    "status": "Won",
+    "records": 258
+   },
+   {
+    "name": "MCKINLEY, KEVIN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 30113.98,
+    "status": "Lost",
+    "records": 114
+   }
+  ],
+  "24": [
+   {
+    "name": "KOPP, CHARLES M (CHUCK)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 48365.61,
+    "status": "Won",
+    "records": 192
+   },
+   {
+    "name": "DUPLANTIS, STEPHEN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 11048.0,
+    "status": "Lost",
+    "records": 43
+   },
+   {
+    "name": "LEVI, GLORIA S (SUE)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8242.98,
+    "status": "Lost",
+    "records": 38
+   }
+  ],
+  "37": [
+   {
+    "name": "EDGMON, BRYCE",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 48292.08,
+    "status": "Won",
+    "records": 228
+   },
+   {
+    "name": "WEATHERBY, WILLIAM W",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 7563.33,
+    "status": "Lost",
+    "records": 51
+   },
+   {
+    "name": "SWETZOF, STANLEY (STAN)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": null,
+    "status": "Lost",
+    "records": 0
+   }
+  ],
+  "26": [
+   {
+    "name": "FOGLE, ALBERT",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 46104.15,
+    "status": "Lost",
+    "records": 112
+   },
+   {
+    "name": "SHAW, LADDIE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 40467.32,
+    "status": "Won",
+    "records": 203
+   },
+   {
+    "name": "RIGGS, JOE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 34867.04,
+    "status": "Lost",
+    "records": 108
+   },
+   {
+    "name": "THORNE, ANITA L",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 26852.0,
+    "status": "Lost",
+    "records": 191
+   },
+   {
+    "name": "DUNN, HUNTER",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 65.0,
+    "status": "Withdrew",
+    "records": 3
+   }
+  ],
+  "6": [
+   {
+    "name": "ALEXANDER, ED",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 44704.27,
+    "status": "Lost",
+    "records": 299
+   },
+   {
+    "name": "TALERICO, DAVID M (DAVE)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 21130.21,
+    "status": "Won",
+    "records": 42
+   }
+  ],
+  "32": [
+   {
+    "name": "STUTES, LOUISE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 43201.5,
+    "status": "Won",
+    "records": 103
+   },
+   {
+    "name": "WALKER, RICHARD H (RICH)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 11138.56,
+    "status": "Lost",
+    "records": 19
+   },
+   {
+    "name": "HARRIS, DENNIS P",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5629.08,
+    "status": "Lost",
+    "records": 76
+   },
+   {
+    "name": "KATELNIKOFF-LESTER, SANDRA M",
+    "party": "Third-Party",
+    "incumbent": false,
+    "contributions": 555.47,
+    "status": "Lost",
+    "records": 4
+   }
+  ],
+  "10": [
+   {
+    "name": "HOLMES, DOYLE E",
+    "party": "Third-Party",
+    "incumbent": false,
+    "contributions": 42637.33,
+    "status": "Lost",
+    "records": 42
+   },
+   {
+    "name": "EASTMAN, DAVID",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 32665.13,
+    "status": "Won",
+    "records": 145
+   },
+   {
+    "name": "FAYE-BRAZEL, PATRICIA A",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 16720.0,
+    "status": "Lost",
+    "records": 85
+   },
+   {
+    "name": "LACY, NEAL T",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2635.0,
+    "status": "Lost",
+    "records": 22
+   }
+  ],
+  "9": [
+   {
+    "name": "RAUSCHER, GEORGE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 40352.49,
+    "status": "Won",
+    "records": 122
+   },
+   {
+    "name": "COLVER, JAMES C (JIM)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 29475.0,
+    "status": "Lost",
+    "records": 70
+   },
+   {
+    "name": "GOODE, PAMELA",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 12827.36,
+    "status": "Lost",
+    "records": 112
+   },
+   {
+    "name": "JOHNSON, BILL",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11846.0,
+    "status": "Lost",
+    "records": 66
+   },
+   {
+    "name": "SQUYRES, JAMES A",
+    "party": "Third-Party",
+    "incumbent": false,
+    "contributions": 214.22,
+    "status": "Lost",
+    "records": 4
+   }
+  ],
+  "38": [
+   {
+    "name": "ZULKOSKY, TIFFANY",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 40280.25,
+    "status": "Won",
+    "records": 199
+   },
+   {
+    "name": "DEACON, DARREN M",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 9451.01,
+    "status": "Lost",
+    "records": 38
+   }
+  ],
+  "23": [
+   {
+    "name": "DOUGHERTY, CONNIE",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 39054.99,
+    "status": "Lost",
+    "records": 164
+   },
+   {
+    "name": "TUCK, CHRISTOPHER S (CHRIS)",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 23510.0,
+    "status": "Won",
+    "records": 65
+   },
+   {
+    "name": "MCDONALD, FORREST J",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5091.44,
+    "status": "Lost",
+    "records": 32
+   }
+  ],
+  "29": [
+   {
+    "name": "BUTLER, SHAWN A",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 38354.97,
+    "status": "Lost",
+    "records": 238
+   },
+   {
+    "name": "OGLE, WAYNE H",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 14840.32,
+    "status": "Lost",
+    "records": 52
+   },
+   {
+    "name": "CARPENTER, BENJAMIN E (BEN)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 11293.34,
+    "status": "Won",
+    "records": 28
+   }
+  ],
+  "2": [
+   {
+    "name": "THOMPSON, STEVE M",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 34452.0,
+    "status": "Won",
+    "records": 102
+   },
+   {
+    "name": "LAWRENCE, VAN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 27438.1,
+    "status": "Lost",
+    "records": 184
+   }
+  ],
+  "19": [
+   {
+    "name": "TARR, GERAN",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 31514.87,
+    "status": "Won",
+    "records": 204
+   },
+   {
+    "name": "STEVENS, CEAN",
+    "party": "Third-Party",
+    "incumbent": false,
+    "contributions": 13290.98,
+    "status": "Lost",
+    "records": 91
+   }
+  ],
+  "13": [
+   {
+    "name": "DAHLSTROM, NANCY A",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 30183.63,
+    "status": "Won",
+    "records": 78
+   },
+   {
+    "name": "CHRISTENSON, CRAIG J",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 10770.49,
+    "status": "Lost",
+    "records": 70
+   },
+   {
+    "name": "COOK, WILLIAM D (BILL)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5800.0,
+    "status": "Lost",
+    "records": 24
+   },
+   {
+    "name": "KIMP, DANYELLE D",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4995.0,
+    "status": "Lost",
+    "records": 71
+   }
+  ],
+  "18": [
+   {
+    "name": "DRUMMOND, HARRIET ANAGNOSTIS",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 28400.0,
+    "status": "Won",
+    "records": 157
+   },
+   {
+    "name": "LEKANOF, ANTHONY C",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6900.0,
+    "status": "Lost",
+    "records": 62
+   }
+  ],
+  "12": [
+   {
+    "name": "TILTON, CATHY LYNN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 26149.92,
+    "status": "Won",
+    "records": 114
+   },
+   {
+    "name": "JEFFERS, STEPHANY",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5241.4,
+    "status": "Lost",
+    "records": 32
+   }
+  ],
+  "30": [
+   {
+    "name": "KNOPP, GARY",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 12113.36,
+    "status": "Won",
+    "records": 42
+   }
+  ],
+  "7": [
+   {
+    "name": "SULLIVAN-LEONARD, COLLEEN",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 11018.75,
+    "status": "Won",
+    "records": 44
+   }
+  ],
+  "39": [
+   {
+    "name": "FOSTER, NEAL W",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 10450.0,
+    "status": "Won",
+    "records": 19
+   }
+  ],
+  "8": [
+   {
+    "name": "NEUMAN, MARK A",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 8730.0,
+    "status": "Won",
+    "records": 30
+   },
+   {
+    "name": "FISH, MARK",
+    "party": "Third-Party",
+    "incumbent": false,
+    "contributions": 7347.34,
+    "status": "Lost",
+    "records": 46
+   },
+   {
+    "name": "CHESBRO JR, JAMES L",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7054.96,
+    "status": "Lost",
+    "records": 54
+   },
+   {
+    "name": "MURR, ANDREW C",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2265.0,
+    "status": "Lost",
+    "records": 3
+   }
+  ],
+  "3": [
+   {
+    "name": "WILSON, TAMMIE",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 3430.0,
+    "status": "Won",
+    "records": 14
+   }
+  ]
+ },
+ "senate": {
+  "A": [
+   {
+    "name": "KAWASAKI, SCOTT",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 224287.67,
+    "status": "Won",
+    "records": 1501
+   },
+   {
+    "name": "KELLY, PETER",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 191645.25,
+    "status": "Lost",
+    "records": 523
+   }
+  ],
+  "I": [
+   {
+    "name": "GRAY-JACKSON, ELVIRA",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 128684.62,
+    "status": "Won",
+    "records": 793
+   },
+   {
+    "name": "CRAWFORD, JIM",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 18121.2,
+    "status": "Lost",
+    "records": 97
+   }
+  ],
+  "Q": [
+   {
+    "name": "KIEHL, JESSE",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 123739.06,
+    "status": "Won",
+    "records": 727
+   },
+   {
+    "name": "ETHERIDGE, DONALD R",
+    "party": "Third-Party",
+    "incumbent": false,
+    "contributions": 55500.61,
+    "status": "Lost",
+    "records": 198
+   }
+  ],
+  "O": [
+   {
+    "name": "MICCICHE, PETER",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 93419.98,
+    "status": "Won",
+    "records": 281
+   },
+   {
+    "name": "GILLHAM, RONALD D (RON)",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 18345.33,
+    "status": "Lost",
+    "records": 88
+   }
+  ],
+  "G": [
+   {
+    "name": "REINBOLD, LORA H",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 76843.32,
+    "status": "Won",
+    "records": 218
+   },
+   {
+    "name": "SADDLER, DAN",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 66327.13,
+    "status": "Lost",
+    "records": 227
+   },
+   {
+    "name": "SCHIESS, OLIVER",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 45975.35,
+    "status": "Lost",
+    "records": 367
+   }
+  ],
+  "M": [
+   {
+    "name": "BIRCH, CHRIS",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 73300.0,
+    "status": "Won",
+    "records": 253
+   },
+   {
+    "name": "PARK, JANICE LYNN",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15247.01,
+    "status": "Lost",
+    "records": 169
+   },
+   {
+    "name": "HALAT, BEKAH",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 10280.11,
+    "status": "Lost",
+    "records": 63
+   }
+  ],
+  "K": [
+   {
+    "name": "COSTELLO, MIA C",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 68439.2,
+    "status": "Won",
+    "records": 209
+   },
+   {
+    "name": "CASON, SAM",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 20811.25,
+    "status": "Lost",
+    "records": 104
+   }
+  ],
+  "S": [
+   {
+    "name": "HOFFMAN, LYMAN F",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 56458.77,
+    "status": "Won",
+    "records": 193
+   }
+  ],
+  "C": [
+   {
+    "name": "BISHOP, CLARK (CLICK)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 32975.24,
+    "status": "Won",
+    "records": 87
+   }
+  ],
+  "E": [
+   {
+    "name": "KOWALKE, RANDALL D",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 30994.0,
+    "status": "Lost",
+    "records": 53
+   },
+   {
+    "name": "SHOWER, MICHAEL K (MIKE)",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 30792.35,
+    "status": "Won",
+    "records": 101
+   },
+   {
+    "name": "KAY, SUSAN (SU)",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6021.86,
+    "status": "Lost",
+    "records": 16
+   }
+  ]
+ }
+}

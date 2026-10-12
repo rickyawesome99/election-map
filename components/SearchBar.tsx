@@ -2,12 +2,14 @@
 
 import { useState, useRef, useEffect, useCallback, useId } from "react";
 import { createPortal } from "react-dom";
-import { queryIndex, type SearchEntry } from "@/lib/searchQuery";
+import { expandLegislatorRows, queryIndex, type LegislatorSearchRow, type SearchEntry } from "@/lib/searchQuery";
 import { loadStaticJson } from "@/lib/useStaticJson";
 
 // The index is built at build time (app/api/search-index) and fetched once, on first focus, so
 // the forecast dataset it is derived from never enters the page bundle.
 const SEARCH_INDEX_URL = "/api/search-index";
+// The state legislative candidates are ~38,000 more names; they load once a query is 3+ characters.
+const LEGISLATORS_URL = "/api/search-index-legislators";
 
 export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProperties }) {
   const listId = useId();
@@ -22,6 +24,7 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
   const inputRef = useRef<HTMLInputElement>(null);
   const [entries, setEntries] = useState<SearchEntry[] | null>(null);
   const entriesRef = useRef<SearchEntry[] | null>(null);
+  const legislatorsRef = useRef<SearchEntry[] | null | "loading">(null);
   const pendingQueryRef = useRef("");
 
   const ensureIndex = useCallback(() => {
@@ -45,8 +48,18 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
     });
   }, []);
 
+  const ensureLegislators = useCallback(() => {
+    if (legislatorsRef.current) return;
+    legislatorsRef.current = "loading";
+    loadStaticJson<LegislatorSearchRow[]>(LEGISLATORS_URL).then((rows) => {
+      legislatorsRef.current = expandLegislatorRows(rows);
+      setEntries((prev) => (prev ? [...prev] : prev));
+    }, () => { legislatorsRef.current = null; });
+  }, []);
+
   const showHits = useCallback((val: string) => {
-    const hits = entriesRef.current ? queryIndex(entriesRef.current, val) : [];
+    const legislators = Array.isArray(legislatorsRef.current) ? legislatorsRef.current : [];
+    const hits = entriesRef.current ? queryIndex(legislators.length ? [...entriesRef.current, ...legislators] : entriesRef.current, val) : [];
     setResults(hits);
     setActiveIndex(-1);
     setOpen(val.trim().length > 0);
@@ -58,6 +71,7 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
     setQuery(val);
     pendingQueryRef.current = val;
     ensureIndex();
+    if (val.trim().length >= 3) ensureLegislators();
     showHits(val);
   };
 

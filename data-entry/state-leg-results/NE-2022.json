@@ -6,85 +6,274 @@
     "demVotes": 7117,
     "repVotes": 9261,
     "othVotes": 0,
-    "totalVotes": 16378
+    "totalVotes": 16378,
+    "candidates": [
+     {
+      "name": "Robert Clements",
+      "party": "R",
+      "votes": 9261,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Sarah J. Slattery",
+      "party": "O",
+      "votes": 7117
+     }
+    ]
    },
    "4": {
     "demVotes": 0,
     "repVotes": 8710,
     "othVotes": 7908,
-    "totalVotes": 16618
+    "totalVotes": 16618,
+    "candidates": [
+     {
+      "name": "R. Brad Vongillern",
+      "party": "O",
+      "votes": 8710,
+      "winner": true
+     },
+     {
+      "name": "Cindy Maxwellostdiek",
+      "party": "O",
+      "votes": 7908
+     }
+    ]
    },
    "6": {
     "demVotes": 7969,
     "repVotes": 6360,
     "othVotes": 0,
-    "totalVotes": 14329
+    "totalVotes": 14329,
+    "candidates": [
+     {
+      "name": "MacHaela Cavanaugh",
+      "party": "D",
+      "votes": 7969,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Christian Mirch",
+      "party": "O",
+      "votes": 6360
+     }
+    ]
    },
    "8": {
     "demVotes": 9322,
     "repVotes": 4116,
     "othVotes": 0,
-    "totalVotes": 13438
+    "totalVotes": 13438,
+    "candidates": [
+     {
+      "name": "Megan Hunt",
+      "party": "D",
+      "votes": 9322,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Marilyn Arantasher",
+      "party": "O",
+      "votes": 4116
+     }
+    ]
    },
    "10": {
     "demVotes": 7120,
     "repVotes": 6197,
     "othVotes": 0,
-    "totalVotes": 13317
+    "totalVotes": 13317,
+    "candidates": [
+     {
+      "name": "Wendy Deboer",
+      "party": "D",
+      "votes": 7120,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Lou Ann Goding",
+      "party": "O",
+      "votes": 6197
+     }
+    ]
    },
    "12": {
     "demVotes": 5418,
     "repVotes": 5942,
     "othVotes": 0,
-    "totalVotes": 11360
+    "totalVotes": 11360,
+    "candidates": [
+     {
+      "name": "Merv Riepe",
+      "party": "R",
+      "votes": 5942,
+      "winner": true
+     },
+     {
+      "name": "Robin Richards",
+      "party": "O",
+      "votes": 5418
+     }
+    ]
    },
    "14": {
     "demVotes": 4524,
     "repVotes": 7606,
     "othVotes": 0,
-    "totalVotes": 12130
+    "totalVotes": 12130,
+    "candidates": [
+     {
+      "name": "John Arch",
+      "party": "R",
+      "votes": 7606,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Cori Villegas",
+      "party": "O",
+      "votes": 4524
+     }
+    ]
    },
    "16": {
     "demVotes": 0,
     "repVotes": 13867,
     "othVotes": 0,
-    "totalVotes": 13867
+    "totalVotes": 13867,
+    "candidates": [
+     {
+      "name": "Ben Hansen",
+      "party": "R",
+      "votes": 9744,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Connie L. Petersen",
+      "party": "O",
+      "votes": 4123
+     }
+    ]
    },
    "18": {
     "demVotes": 5784,
     "repVotes": 7430,
     "othVotes": 0,
-    "totalVotes": 13214
+    "totalVotes": 13214,
+    "candidates": [
+     {
+      "name": "Christy Armendariz",
+      "party": "O",
+      "votes": 7430,
+      "winner": true
+     },
+     {
+      "name": "Michael Young",
+      "party": "O",
+      "votes": 5784
+     }
+    ]
    },
    "20": {
     "demVotes": 8139,
     "repVotes": 8057,
     "othVotes": 0,
-    "totalVotes": 16196
+    "totalVotes": 16196,
+    "candidates": [
+     {
+      "name": "John A. Fredrickson",
+      "party": "O",
+      "votes": 8139,
+      "winner": true
+     },
+     {
+      "name": "Stu Dornan",
+      "party": "O",
+      "votes": 8057
+     }
+    ]
    },
    "22": {
     "demVotes": 0,
     "repVotes": 9561,
     "othVotes": 2355,
-    "totalVotes": 11916
+    "totalVotes": 11916,
+    "candidates": [
+     {
+      "name": "Mike Moser",
+      "party": "R",
+      "votes": 9561,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Roy M. Zach",
+      "party": "O",
+      "votes": 2355
+     }
+    ]
    },
    "24": {
     "demVotes": 0,
     "repVotes": 13710,
     "othVotes": 0,
-    "totalVotes": 13710
+    "totalVotes": 13710,
+    "candidates": [
+     {
+      "name": "Jana Hughes",
+      "party": "O",
+      "votes": 7551,
+      "winner": true
+     },
+     {
+      "name": "Patrick Hotovy",
+      "party": "O",
+      "votes": 6159
+     }
+    ]
    },
    "26": {
     "demVotes": 5960,
     "repVotes": 5736,
     "othVotes": 0,
-    "totalVotes": 11696
+    "totalVotes": 11696,
+    "candidates": [
+     {
+      "name": "George C. Dungan III",
+      "party": "O",
+      "votes": 5960,
+      "winner": true
+     },
+     {
+      "name": "Russ Barger",
+      "party": "O",
+      "votes": 5736
+     }
+    ]
    },
    "28": {
     "demVotes": 7879,
     "repVotes": 3977,
     "othVotes": 0,
-    "totalVotes": 11856
+    "totalVotes": 11856,
+    "candidates": [
+     {
+      "name": "Jane Raybould",
+      "party": "O",
+      "votes": 7879,
+      "winner": true
+     },
+     {
+      "name": "Roy A. Christensen",
+      "party": "O",
+      "votes": 3977
+     }
+    ]
    },
    "30": {
     "demVotes": 7306,
@@ -96,55 +285,166 @@
     "demVotes": 0,
     "repVotes": 11253,
     "othVotes": 0,
-    "totalVotes": 11253
+    "totalVotes": 11253,
+    "candidates": [
+     {
+      "name": "Tom Brandt",
+      "party": "R",
+      "votes": 11253,
+      "incumbent": true,
+      "winner": true
+     }
+    ],
+    "uncontested": true
    },
    "34": {
     "demVotes": 0,
     "repVotes": 12987,
     "othVotes": 0,
-    "totalVotes": 12987
+    "totalVotes": 12987,
+    "candidates": [
+     {
+      "name": "Loren Lippincott",
+      "party": "O",
+      "votes": 8788,
+      "winner": true
+     },
+     {
+      "name": "Michael Reimers",
+      "party": "O",
+      "votes": 4199
+     }
+    ]
    },
    "36": {
     "demVotes": 6444,
     "repVotes": 8188,
     "othVotes": 0,
-    "totalVotes": 14632
+    "totalVotes": 14632,
+    "candidates": [
+     {
+      "name": "Rick Holdcroft",
+      "party": "O",
+      "votes": 8188,
+      "winner": true
+     },
+     {
+      "name": "Angie Lauritsen",
+      "party": "O",
+      "votes": 6444
+     }
+    ]
    },
    "38": {
     "demVotes": 0,
     "repVotes": 9368,
     "othVotes": 5031,
-    "totalVotes": 14399
+    "totalVotes": 14399,
+    "candidates": [
+     {
+      "name": "Dave Murman",
+      "party": "R",
+      "votes": 9368,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Tyler R. Cappel",
+      "party": "O",
+      "votes": 5031
+     }
+    ]
    },
    "40": {
     "demVotes": 0,
     "repVotes": 15980,
     "othVotes": 0,
-    "totalVotes": 15980
+    "totalVotes": 15980,
+    "candidates": [
+     {
+      "name": "Barry Dekay",
+      "party": "O",
+      "votes": 9486,
+      "winner": true
+     },
+     {
+      "name": "Keith F. Kube",
+      "party": "R",
+      "votes": 6494
+     }
+    ]
    },
    "42": {
     "demVotes": 0,
     "repVotes": 13365,
     "othVotes": 0,
-    "totalVotes": 13365
+    "totalVotes": 13365,
+    "candidates": [
+     {
+      "name": "Mike Jacobson",
+      "party": "O",
+      "votes": 6868,
+      "winner": true
+     },
+     {
+      "name": "Chris Bruns",
+      "party": "O",
+      "votes": 6497
+     }
+    ]
    },
    "44": {
     "demVotes": 0,
     "repVotes": 9708,
     "othVotes": 0,
-    "totalVotes": 9708
+    "totalVotes": 9708,
+    "candidates": [
+     {
+      "name": "Teresa J. Ibach",
+      "party": "O",
+      "votes": 9708,
+      "winner": true
+     }
+    ],
+    "uncontested": true
    },
    "46": {
     "demVotes": 6111,
     "repVotes": 0,
     "othVotes": 0,
-    "totalVotes": 6111
+    "totalVotes": 6111,
+    "candidates": [
+     {
+      "name": "Danielle Conrad",
+      "party": "O",
+      "votes": 3146,
+      "winner": true
+     },
+     {
+      "name": "James Michael Bowers",
+      "party": "O",
+      "votes": 2965
+     }
+    ]
    },
    "48": {
     "demVotes": 0,
     "repVotes": 10597,
     "othVotes": 0,
-    "totalVotes": 10597
+    "totalVotes": 10597,
+    "candidates": [
+     {
+      "name": "Brian Hardin",
+      "party": "O",
+      "votes": 5526,
+      "winner": true
+     },
+     {
+      "name": "Don L. Lease II",
+      "party": "O",
+      "votes": 5071
+     }
+    ]
    }
   }
  }

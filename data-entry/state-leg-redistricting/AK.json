@@ -1,0 +1,2863 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 98.9,
+      "key": "36",
+      "popPct": 99.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ketchikan Gateway",
+      "popPct": 78.6
+     },
+     {
+      "county": "Wrangell",
+      "popPct": 12.0
+     },
+     {
+      "county": "Prince of Wales-Hyder",
+      "popPct": 9.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Ketchikan Gateway",
+      "popPct": 78.6
+     },
+     {
+      "county": "Wrangell",
+      "popPct": 12.0
+     },
+     {
+      "county": "Prince of Wales-Hyder",
+      "popPct": 9.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 17736,
+    "pres2020New": 15.3,
+    "pres2020Old": 0.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-1; it draws from the old HD-36 (100%). Counties: gained Ketchikan Gateway (79%), Wrangell (12%), Prince of Wales-Hyder (9%); lost Fairbanks North Star. 2020 presidential margin R+0.4 on the 2016\u20132020 lines \u2192 R+15.3 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 95.1,
+      "key": "24",
+      "popPct": 74.4
+     },
+     {
+      "areaPct": 4.0,
+      "key": "23",
+      "popPct": 15.3
+     },
+     {
+      "areaPct": 0.8,
+      "key": "26",
+      "popPct": 10.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 18773,
+    "pres2020New": 2.9,
+    "pres2020Old": 47.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-10; it draws from the old HD-24 (74%), the old HD-23 (15%), the old HD-26 (10%). Counties: gained Anchorage (100%); lost Matanuska-Susitna. 2020 presidential margin R+47.7 on the 2016\u20132020 lines \u2192 R+2.9 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 78.8,
+      "key": "26",
+      "popPct": 89.9
+     },
+     {
+      "areaPct": 21.1,
+      "key": "28",
+      "popPct": 9.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 18266,
+    "pres2020New": 6.9,
+    "pres2020Old": 37.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-11; it draws from the old HD-26 (90%), the old HD-28 (10%). Counties: gained Anchorage (100%); lost Matanuska-Susitna. 2020 presidential margin R+37.2 on the 2016\u20132020 lines \u2192 R+6.9 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 77.7,
+      "key": "25",
+      "popPct": 98.1
+     },
+     {
+      "areaPct": 22.2,
+      "key": "27",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 61.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 18509,
+    "pres2020New": -2.2,
+    "pres2020Old": 43.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-12; it draws from the old HD-25 (98%), the old HD-27 (2%). Counties: lost Matanuska-Susitna. 2020 presidential margin R+43.8 on the 2016\u20132020 lines \u2192 D+2.2 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 76.4,
+      "key": "23",
+      "popPct": 60.9
+     },
+     {
+      "areaPct": 12.2,
+      "key": "17",
+      "popPct": 21.9
+     },
+     {
+      "areaPct": 6.8,
+      "key": "22",
+      "popPct": 12.1
+     },
+     {
+      "areaPct": 4.4,
+      "key": "21",
+      "popPct": 4.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 19972,
+    "pres2020New": -3.8,
+    "pres2020Old": 25.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-13; it draws from the old HD-23 (61%), the old HD-17 (22%), the old HD-22 (12%) and 1 more. Entirely in Anchorage County. 2020 presidential margin R+25.5 on the 2016\u20132020 lines \u2192 D+3.8 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 67.8,
+      "key": "18",
+      "popPct": 72.8
+     },
+     {
+      "areaPct": 17.8,
+      "key": "23",
+      "popPct": 13.1
+     },
+     {
+      "areaPct": 12.1,
+      "key": "17",
+      "popPct": 10.7
+     },
+     {
+      "areaPct": 1.0,
+      "key": "21",
+      "popPct": 2.3
+     },
+     {
+      "areaPct": 1.3,
+      "key": "20",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17044,
+    "pres2020New": -21.1,
+    "pres2020Old": 21.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-14; it draws from the old HD-18 (73%), the old HD-23 (13%), the old HD-17 (11%) and 2 more. Entirely in Anchorage County. 2020 presidential margin R+21.3 on the 2016\u20132020 lines \u2192 D+21.1 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 65.5,
+      "key": "22",
+      "popPct": 79.0
+     },
+     {
+      "areaPct": 34.4,
+      "key": "24",
+      "popPct": 20.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17958,
+    "pres2020New": 2.3,
+    "pres2020Old": 0.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-15; it draws from the old HD-22 (79%), the old HD-24 (21%). Entirely in Anchorage County. 2020 presidential margin R+0.8 on the 2016\u20132020 lines \u2192 R+2.3 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 99.2,
+      "key": "21",
+      "popPct": 89.9
+     },
+     {
+      "areaPct": 0.7,
+      "key": "22",
+      "popPct": 7.6
+     },
+     {
+      "areaPct": 0.1,
+      "key": "18",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17436,
+    "pres2020New": -16.2,
+    "pres2020Old": -9.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-16; it draws from the old HD-21 (90%), the old HD-22 (8%), the old HD-18 (2%). Entirely in Anchorage County. 2020 presidential margin D+9.4 on the 2016\u20132020 lines \u2192 D+16.2 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 76.3,
+      "key": "20",
+      "popPct": 72.4
+     },
+     {
+      "areaPct": 23.2,
+      "key": "18",
+      "popPct": 27.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15784,
+    "pres2020New": -33.4,
+    "pres2020Old": -18.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-17; it draws from the old HD-20 (72%), the old HD-18 (27%). Entirely in Anchorage County. 2020 presidential margin D+18.3 on the 2016\u20132020 lines \u2192 D+33.4 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 58.0,
+      "key": "15",
+      "popPct": 46.1
+     },
+     {
+      "areaPct": 12.6,
+      "key": "20",
+      "popPct": 41.2
+     },
+     {
+      "areaPct": 29.2,
+      "key": "13",
+      "popPct": 10.7
+     },
+     {
+      "areaPct": 0.1,
+      "key": "16",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16177,
+    "pres2020New": -11.1,
+    "pres2020Old": -25.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-18; it draws from the old HD-15 (46%), the old HD-20 (41%), the old HD-13 (11%) and 1 more. Entirely in Anchorage County. 2020 presidential margin D+25.0 on the 2016\u20132020 lines \u2192 D+11.1 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 93.3,
+      "key": "19",
+      "popPct": 95.5
+     },
+     {
+      "areaPct": 2.2,
+      "key": "17",
+      "popPct": 2.1
+     },
+     {
+      "areaPct": 2.4,
+      "key": "20",
+      "popPct": 1.2
+     },
+     {
+      "areaPct": 1.9,
+      "key": "18",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17476,
+    "pres2020New": -21.4,
+    "pres2020Old": -21.6,
+    "retainedAreaPct": 93.3,
+    "retainedPopPct": 95.5,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-19; gained the rest from the old HD-17 (2%), the old HD-20 (1%), the old HD-18 (1%). Entirely in Anchorage County. 2020 presidential margin D+21.6 on the 2016\u20132020 lines \u2192 D+21.4 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 56.6,
+      "key": "35",
+      "popPct": 92.3
+     },
+     {
+      "areaPct": 25.7,
+      "key": "32",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 10.6,
+      "key": "36",
+      "popPct": 2.1
+     },
+     {
+      "areaPct": 7.1,
+      "key": "33",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sitka",
+      "popPct": 45.5
+     },
+     {
+      "county": "Prince of Wales-Hyder",
+      "popPct": 22.0
+     },
+     {
+      "county": "Petersburg",
+      "popPct": 18.2
+     },
+     {
+      "county": "Hoonah-Angoon",
+      "popPct": 10.7
+     },
+     {
+      "county": "Yakutat",
+      "popPct": 3.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Sitka",
+      "popPct": 45.5
+     },
+     {
+      "county": "Prince of Wales-Hyder",
+      "popPct": 22.0
+     },
+     {
+      "county": "Petersburg",
+      "popPct": 18.2
+     },
+     {
+      "county": "Hoonah-Angoon",
+      "popPct": 10.7
+     },
+     {
+      "county": "Yakutat",
+      "popPct": 3.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 18600,
+    "pres2020New": -4.6,
+    "pres2020Old": 25.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-2; it draws from the old HD-35 (92%), the old HD-32 (4%), the old HD-36 (2%) and 1 more. Counties: gained Sitka (46%), Prince of Wales-Hyder (22%), Petersburg (18%) and 2 more; lost Fairbanks North Star. 2020 presidential margin R+25.5 on the 2016\u20132020 lines \u2192 D+4.6 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 66.4,
+      "key": "17",
+      "popPct": 52.0
+     },
+     {
+      "areaPct": 32.6,
+      "key": "16",
+      "popPct": 47.0
+     },
+     {
+      "areaPct": 0.8,
+      "key": "19",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 19649,
+    "pres2020New": -13.3,
+    "pres2020Old": -33.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-20; it draws from the old HD-17 (52%), the old HD-16 (47%), the old HD-19 (1%). Entirely in Anchorage County. 2020 presidential margin D+33.3 on the 2016\u20132020 lines \u2192 D+13.3 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 92.0,
+      "key": "27",
+      "popPct": 90.4
+     },
+     {
+      "areaPct": 8.0,
+      "key": "16",
+      "popPct": 9.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 19191,
+    "pres2020New": -6.3,
+    "pres2020Old": -18.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-21; it draws from the old HD-27 (90%), the old HD-16 (10%). Entirely in Anchorage County. 2020 presidential margin D+18.2 on the 2016\u20132020 lines \u2192 D+6.3 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 52.6,
+      "key": "15",
+      "popPct": 54.6
+     },
+     {
+      "areaPct": 47.3,
+      "key": "16",
+      "popPct": 45.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16314,
+    "pres2020New": -6.1,
+    "pres2020Old": 1.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-22; it draws from the old HD-15 (55%), the old HD-16 (45%). Entirely in Anchorage County. 2020 presidential margin R+1.2 on the 2016\u20132020 lines \u2192 D+6.1 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "14",
+      "popPct": 98.3
+     },
+     {
+      "areaPct": 0.0,
+      "key": "13",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16816,
+    "pres2020New": 20.6,
+    "pres2020Old": -2.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-23; it draws from the old HD-14 (98%), the old HD-13 (2%). Entirely in Anchorage County. 2020 presidential margin D+2.1 on the 2016\u20132020 lines \u2192 R+20.6 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 11.0,
+      "key": "13",
+      "popPct": 60.0
+     },
+     {
+      "areaPct": 85.9,
+      "key": "12",
+      "popPct": 31.7
+     },
+     {
+      "areaPct": 3.2,
+      "key": "14",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24390,
+    "pres2020New": 28.9,
+    "pres2020Old": 6.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-24; it draws from the old HD-13 (60%), the old HD-12 (32%), the old HD-14 (8%). Entirely in Anchorage County. 2020 presidential margin R+6.0 on the 2016\u20132020 lines \u2192 R+28.9 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 21.2,
+      "key": "11",
+      "popPct": 84.2
+     },
+     {
+      "areaPct": 69.9,
+      "key": "12",
+      "popPct": 13.9
+     },
+     {
+      "areaPct": 8.9,
+      "key": "9",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 16027,
+    "pres2020New": 37.2,
+    "pres2020Old": -2.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-25; it draws from the old HD-11 (84%), the old HD-12 (14%), the old HD-9 (2%). Counties: gained Matanuska-Susitna (100%); lost Anchorage. 2020 presidential margin D+2.2 on the 2016\u20132020 lines \u2192 R+37.2 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 68.8,
+      "key": "12",
+      "popPct": 45.6
+     },
+     {
+      "areaPct": 23.5,
+      "key": "8",
+      "popPct": 41.2
+     },
+     {
+      "areaPct": 7.4,
+      "key": "11",
+      "popPct": 11.9
+     },
+     {
+      "areaPct": 0.3,
+      "key": "7",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 17674,
+    "pres2020New": 54.8,
+    "pres2020Old": 6.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-26; it draws from the old HD-12 (46%), the old HD-8 (41%), the old HD-11 (12%) and 1 more. Counties: gained Matanuska-Susitna (100%); lost Anchorage. 2020 presidential margin R+6.7 on the 2016\u20132020 lines \u2192 R+54.8 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 31.8,
+      "key": "7",
+      "popPct": 62.3
+     },
+     {
+      "areaPct": 39.2,
+      "key": "8",
+      "popPct": 26.4
+     },
+     {
+      "areaPct": 28.9,
+      "key": "10",
+      "popPct": 11.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 17961,
+    "pres2020New": 54.5,
+    "pres2020Old": -5.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-27; it draws from the old HD-7 (62%), the old HD-8 (26%), the old HD-10 (11%). Counties: gained Matanuska-Susitna (100%); lost Anchorage. 2020 presidential margin D+5.6 on the 2016\u20132020 lines \u2192 R+54.5 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 43.6,
+      "key": "7",
+      "popPct": 55.8
+     },
+     {
+      "areaPct": 26.1,
+      "key": "11",
+      "popPct": 24.3
+     },
+     {
+      "areaPct": 30.3,
+      "key": "10",
+      "popPct": 19.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 16633,
+    "pres2020New": 48.4,
+    "pres2020Old": -0.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-28; it draws from the old HD-7 (56%), the old HD-11 (24%), the old HD-10 (20%). Counties: gained Matanuska-Susitna (100%); lost Anchorage. 2020 presidential margin D+0.9 on the 2016\u20132020 lines \u2192 R+48.4 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 99.1,
+      "key": "9",
+      "popPct": 67.1
+     },
+     {
+      "areaPct": 0.1,
+      "key": "10",
+      "popPct": 22.7
+     },
+     {
+      "areaPct": 0.8,
+      "key": "12",
+      "popPct": 10.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 79.9
+     },
+     {
+      "county": "Valdez-Cordova",
+      "popPct": 20.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 79.9
+     },
+     {
+      "county": "Valdez-Cordova",
+      "popPct": 20.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 21562,
+    "pres2020New": 43.8,
+    "pres2020Old": 41.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-29; it draws from the old HD-9 (67%), the old HD-10 (23%), the old HD-12 (10%). Counties: gained Matanuska-Susitna (80%), Valdez-Cordova (20%); lost Kenai Peninsula. 2020 presidential margin R+41.6 on the 2016\u20132020 lines \u2192 R+43.8 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 15.0,
+      "key": "34",
+      "popPct": 76.2
+     },
+     {
+      "areaPct": 85.0,
+      "key": "33",
+      "popPct": 23.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Juneau",
+      "popPct": 75.2
+     },
+     {
+      "county": "Haines",
+      "popPct": 14.9
+     },
+     {
+      "county": "Skagway",
+      "popPct": 7.9
+     },
+     {
+      "county": "Hoonah-Angoon",
+      "popPct": 1.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Juneau",
+      "popPct": 75.2
+     },
+     {
+      "county": "Haines",
+      "popPct": 14.9
+     },
+     {
+      "county": "Skagway",
+      "popPct": 7.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 15579,
+    "pres2020New": -16.8,
+    "pres2020Old": 49.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-3; it draws from the old HD-34 (76%), the old HD-33 (24%). Counties: gained Juneau (75%), Haines (15%), Skagway (8%); lost Fairbanks North Star. 2020 presidential margin R+49.7 on the 2016\u20132020 lines \u2192 D+16.8 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 2.6,
+      "key": "8",
+      "popPct": 47.6
+     },
+     {
+      "areaPct": 47.7,
+      "key": "10",
+      "popPct": 45.3
+     },
+     {
+      "areaPct": 49.7,
+      "key": "6",
+      "popPct": 7.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 93.0
+     },
+     {
+      "county": "Denali",
+      "popPct": 7.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 93.0
+     },
+     {
+      "county": "Denali",
+      "popPct": 7.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 23211,
+    "pres2020New": 42.2,
+    "pres2020Old": 44.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-30; it draws from the old HD-8 (48%), the old HD-10 (45%), the old HD-6 (7%). Counties: gained Matanuska-Susitna (93%), Denali (7%); lost Kenai Peninsula. 2020 presidential margin R+44.5 on the 2016\u20132020 lines \u2192 R+42.2 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 81.3,
+      "key": "1",
+      "popPct": 87.8
+     },
+     {
+      "areaPct": 12.6,
+      "key": "2",
+      "popPct": 8.5
+     },
+     {
+      "areaPct": 6.1,
+      "key": "5",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 19444,
+    "pres2020New": 0.9,
+    "pres2020Old": 15.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-31; it draws from the old HD-1 (88%), the old HD-2 (8%), the old HD-5 (4%). Counties: gained Fairbanks North Star (100%); lost Kenai Peninsula. 2020 presidential margin R+15.4 on the 2016\u20132020 lines \u2192 R+0.9 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 83.6,
+      "key": "2",
+      "popPct": 97.2
+     },
+     {
+      "areaPct": 16.0,
+      "key": "5",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kodiak Island",
+      "popPct": 73.8
+     },
+     {
+      "county": "Valdez-Cordova",
+      "popPct": 15.8
+     },
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 6.7
+     },
+     {
+      "county": "Yakutat",
+      "popPct": 3.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 17864,
+    "pres2020New": 28.7,
+    "pres2020Old": 11.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-32; it draws from the old HD-2 (97%), the old HD-5 (3%). Counties: gained Fairbanks North Star (100%); lost Kodiak Island, Valdez-Cordova, Kenai Peninsula, Yakutat. 2020 presidential margin R+11.1 on the 2016\u20132020 lines \u2192 R+28.7 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 51.2,
+      "key": "3",
+      "popPct": 94.6
+     },
+     {
+      "areaPct": 46.2,
+      "key": "6",
+      "popPct": 4.2
+     },
+     {
+      "areaPct": 2.6,
+      "key": "5",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Juneau",
+      "popPct": 76.8
+     },
+     {
+      "county": "Haines",
+      "popPct": 12.2
+     },
+     {
+      "county": "Skagway",
+      "popPct": 7.0
+     },
+     {
+      "county": "Hoonah-Angoon",
+      "popPct": 4.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 18101,
+    "pres2020New": 49.0,
+    "pres2020Old": -40.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-33; it draws from the old HD-3 (95%), the old HD-6 (4%), the old HD-5 (1%). Counties: gained Fairbanks North Star (100%); lost Juneau, Haines, Skagway, Hoonah-Angoon. 2020 presidential margin D+40.9 on the 2016\u20132020 lines \u2192 R+49.0 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 1.2,
+      "key": "4",
+      "popPct": 54.3
+     },
+     {
+      "areaPct": 98.5,
+      "key": "6",
+      "popPct": 42.4
+     },
+     {
+      "areaPct": 0.0,
+      "key": "3",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Juneau",
+      "popPct": 99.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 15183,
+    "pres2020New": 22.1,
+    "pres2020Old": -11.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-34; it draws from the old HD-4 (54%), the old HD-6 (42%), the old HD-3 (3%). Counties: gained Fairbanks North Star (100%); lost Juneau. 2020 presidential margin D+11.5 on the 2016\u20132020 lines \u2192 R+22.1 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 91.3,
+      "key": "5",
+      "popPct": 82.6
+     },
+     {
+      "areaPct": 8.6,
+      "key": "4",
+      "popPct": 17.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Sitka",
+      "popPct": 49.2
+     },
+     {
+      "county": "Prince of Wales-Hyder",
+      "popPct": 21.7
+     },
+     {
+      "county": "Petersburg",
+      "popPct": 19.7
+     },
+     {
+      "county": "Hoonah-Angoon",
+      "popPct": 9.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 17973,
+    "pres2020New": -9.1,
+    "pres2020Old": -2.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-35; it draws from the old HD-5 (83%), the old HD-4 (17%). Counties: gained Fairbanks North Star (100%); lost Sitka, Prince of Wales-Hyder, Petersburg, Hoonah-Angoon. 2020 presidential margin D+2.6 on the 2016\u20132020 lines \u2192 D+9.1 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 53.8,
+      "key": "6",
+      "popPct": 34.9
+     },
+     {
+      "areaPct": 0.3,
+      "key": "4",
+      "popPct": 28.5
+     },
+     {
+      "areaPct": 4.2,
+      "key": "9",
+      "popPct": 23.1
+     },
+     {
+      "areaPct": 14.5,
+      "key": "39",
+      "popPct": 6.6
+     },
+     {
+      "areaPct": 15.7,
+      "key": "37",
+      "popPct": 5.0
+     },
+     {
+      "areaPct": 11.5,
+      "key": "40",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 32.8
+     },
+     {
+      "county": "Southeast Fairbanks",
+      "popPct": 31.6
+     },
+     {
+      "county": "Yukon-Koyukuk",
+      "popPct": 24.9
+     },
+     {
+      "county": "Valdez-Cordova",
+      "popPct": 10.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 32.8
+     },
+     {
+      "county": "Southeast Fairbanks",
+      "popPct": 31.6
+     },
+     {
+      "county": "Yukon-Koyukuk",
+      "popPct": 24.9
+     },
+     {
+      "county": "Valdez-Cordova",
+      "popPct": 10.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Ketchikan Gateway",
+      "popPct": 77.0
+     },
+     {
+      "county": "Wrangell",
+      "popPct": 11.8
+     },
+     {
+      "county": "Prince of Wales-Hyder",
+      "popPct": 11.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 21531,
+    "pres2020New": 15.1,
+    "pres2020Old": 14.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-36; it draws from the old HD-6 (35%), the old HD-4 (28%), the old HD-9 (23%) and 3 more. Counties: gained Fairbanks North Star (33%), Southeast Fairbanks (32%), Yukon-Koyukuk (25%) and 1 more; lost Ketchikan Gateway, Wrangell, Prince of Wales-Hyder. 2020 presidential margin R+14.1 on the 2016\u20132020 lines \u2192 R+15.1 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 79.9,
+      "key": "37",
+      "popPct": 88.5
+     },
+     {
+      "areaPct": 7.0,
+      "key": "38",
+      "popPct": 7.8
+     },
+     {
+      "areaPct": 13.1,
+      "key": "32",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Aleutians West",
+      "popPct": 28.9
+     },
+     {
+      "county": "Dillingham",
+      "popPct": 26.8
+     },
+     {
+      "county": "Aleutians East",
+      "popPct": 18.9
+     },
+     {
+      "county": "Bethel",
+      "popPct": 8.9
+     },
+     {
+      "county": "Lake and Peninsula",
+      "popPct": 8.2
+     },
+     {
+      "county": "Bristol Bay",
+      "popPct": 4.6
+     },
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 3.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 3.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Yukon-Koyukuk",
+      "popPct": 6.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 18124,
+    "pres2020New": -8.7,
+    "pres2020Old": -4.0,
+    "retainedAreaPct": 79.9,
+    "retainedPopPct": 88.5,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-37; gained the rest from the old HD-38 (8%), the old HD-32 (4%). Counties: gained Kenai Peninsula (3%); lost Yukon-Koyukuk. 2020 presidential margin D+4.0 on the 2016\u20132020 lines \u2192 D+8.7 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 86.0,
+      "key": "38",
+      "popPct": 94.7
+     },
+     {
+      "areaPct": 14.0,
+      "key": "39",
+      "popPct": 5.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bethel",
+      "popPct": 94.7
+     },
+     {
+      "county": "Kusilvak",
+      "popPct": 5.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 18008,
+    "pres2020New": -26.8,
+    "pres2020Old": -27.7,
+    "retainedAreaPct": 86.0,
+    "retainedPopPct": 94.7,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-38; gained the rest from the old HD-39 (5%). Spans Bethel, Kusilvak counties. 2020 presidential margin D+27.7 on the 2016\u20132020 lines \u2192 D+26.8 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 95.1,
+      "key": "39",
+      "popPct": 94.7
+     },
+     {
+      "areaPct": 4.9,
+      "key": "38",
+      "popPct": 5.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Nome",
+      "popPct": 57.3
+     },
+     {
+      "county": "Kusilvak",
+      "popPct": 42.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Yukon-Koyukuk",
+      "popPct": 7.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 17458,
+    "pres2020New": -26.7,
+    "pres2020Old": -27.9,
+    "retainedAreaPct": 95.1,
+    "retainedPopPct": 94.7,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-39; gained the rest from the old HD-38 (5%). Counties: lost Yukon-Koyukuk. 2020 presidential margin D+27.9 on the 2016\u20132020 lines \u2192 D+26.7 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 98.8,
+      "key": "33",
+      "popPct": 67.2
+     },
+     {
+      "areaPct": 1.1,
+      "key": "34",
+      "popPct": 32.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Juneau",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Juneau",
+      "popPct": 99.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 20371,
+    "pres2020New": -34.1,
+    "pres2020Old": -6.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-4; it draws from the old HD-33 (67%), the old HD-34 (33%). Counties: gained Juneau (100%); lost Fairbanks North Star. 2020 presidential margin D+6.3 on the 2016\u20132020 lines \u2192 D+34.1 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "40",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "North Slope",
+      "popPct": 58.6
+     },
+     {
+      "county": "Northwest Arctic",
+      "popPct": 41.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Yukon-Koyukuk",
+      "popPct": 2.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 18824,
+    "pres2020New": -5.6,
+    "pres2020Old": -7.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Counties: lost Yukon-Koyukuk.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "32",
+      "popPct": 85.2
+     },
+     {
+      "areaPct": 0.2,
+      "key": "29",
+      "popPct": 14.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kodiak Island",
+      "popPct": 68.6
+     },
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 16.6
+     },
+     {
+      "county": "Valdez-Cordova",
+      "popPct": 14.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kodiak Island",
+      "popPct": 68.6
+     },
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 16.6
+     },
+     {
+      "county": "Valdez-Cordova",
+      "popPct": 14.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 19036,
+    "pres2020New": 11.1,
+    "pres2020Old": -1.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-5; it draws from the old HD-32 (85%), the old HD-29 (15%). Counties: gained Kodiak Island (69%), Kenai Peninsula (17%), Valdez-Cordova (15%); lost Fairbanks North Star. 2020 presidential margin D+1.5 on the 2016\u20132020 lines \u2192 R+11.1 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 67.7,
+      "key": "31",
+      "popPct": 99.0
+     },
+     {
+      "areaPct": 32.3,
+      "key": "32",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 49.7
+     },
+     {
+      "county": "Yukon-Koyukuk",
+      "popPct": 15.2
+     },
+     {
+      "county": "Southeast Fairbanks",
+      "popPct": 13.1
+     },
+     {
+      "county": "Valdez-Cordova",
+      "popPct": 12.1
+     },
+     {
+      "county": "Denali",
+      "popPct": 9.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 17607,
+    "pres2020New": 11.3,
+    "pres2020Old": 26.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-6; it draws from the old HD-31 (99%), the old HD-32 (1%). Counties: gained Kenai Peninsula (100%); lost Fairbanks North Star, Yukon-Koyukuk, Southeast Fairbanks, Valdez-Cordova and 1 more. 2020 presidential margin R+26.4 on the 2016\u20132020 lines \u2192 R+11.3 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "30",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 16452,
+    "pres2020New": 45.5,
+    "pres2020Old": 50.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-7; it draws from the old HD-30 (100%). Counties: gained Kenai Peninsula (100%); lost Matanuska-Susitna. 2020 presidential margin R+50.0 on the 2016\u20132020 lines \u2192 R+45.5 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 75.4,
+      "key": "29",
+      "popPct": 76.6
+     },
+     {
+      "areaPct": 0.2,
+      "key": "30",
+      "popPct": 12.3
+     },
+     {
+      "areaPct": 20.3,
+      "key": "31",
+      "popPct": 10.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 20958,
+    "pres2020New": 47.4,
+    "pres2020Old": 57.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-8; it draws from the old HD-29 (77%), the old HD-30 (12%), the old HD-31 (11%). Counties: gained Kenai Peninsula (100%); lost Matanuska-Susitna. 2020 presidential margin R+57.1 on the 2016\u20132020 lines \u2192 R+47.4 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 96.9,
+      "key": "28",
+      "popPct": 93.7
+     },
+     {
+      "areaPct": 0.0,
+      "key": "26",
+      "popPct": 3.9
+     },
+     {
+      "areaPct": 2.8,
+      "key": "9",
+      "popPct": 1.5
+     },
+     {
+      "areaPct": 0.2,
+      "key": "27",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 98.5
+     },
+     {
+      "county": "Valdez-Cordova",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Anchorage",
+      "popPct": 98.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 52.1
+     },
+     {
+      "county": "Southeast Fairbanks",
+      "popPct": 23.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 17718,
+    "pres2020New": -0.2,
+    "pres2020Old": 45.6,
+    "retainedAreaPct": 2.8,
+    "retainedPopPct": 1.5,
+    "text": "A new footprint: only 2% of its population was in the 2016\u20132020 HD-9; it draws from the old HD-28 (94%), the old HD-26 (4%), the old HD-27 (1%). Counties: gained Anchorage (98%); lost Matanuska-Susitna, Southeast Fairbanks. 2020 presidential margin R+45.6 on the 2016\u20132020 lines \u2192 D+0.2 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "A": {
+    "contributors": [
+     {
+      "areaPct": 74.8,
+      "key": "R",
+      "popPct": 97.1
+     },
+     {
+      "areaPct": 19.7,
+      "key": "P",
+      "popPct": 1.8
+     },
+     {
+      "areaPct": 5.5,
+      "key": "Q",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ketchikan Gateway",
+      "popPct": 38.4
+     },
+     {
+      "county": "Sitka",
+      "popPct": 23.3
+     },
+     {
+      "county": "Prince of Wales-Hyder",
+      "popPct": 15.8
+     },
+     {
+      "county": "Petersburg",
+      "popPct": 9.3
+     },
+     {
+      "county": "Wrangell",
+      "popPct": 5.9
+     },
+     {
+      "county": "Hoonah-Angoon",
+      "popPct": 5.5
+     },
+     {
+      "county": "Yakutat",
+      "popPct": 1.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Ketchikan Gateway",
+      "popPct": 38.4
+     },
+     {
+      "county": "Sitka",
+      "popPct": 23.3
+     },
+     {
+      "county": "Prince of Wales-Hyder",
+      "popPct": 15.8
+     },
+     {
+      "county": "Petersburg",
+      "popPct": 9.3
+     },
+     {
+      "county": "Wrangell",
+      "popPct": 5.9
+     },
+     {
+      "county": "Hoonah-Angoon",
+      "popPct": 5.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 36336,
+    "pres2020New": 4.5,
+    "pres2020Old": 11.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 A; it draws from the old R (97%), the old P (2%), the old Q (1%). Counties: gained Ketchikan Gateway (38%), Sitka (23%), Prince of Wales-Hyder (16%) and 3 more; lost Fairbanks North Star. 2020 presidential margin R+11.9 on the 2016\u20132020 lines \u2192 R+4.5 on the current lines.",
+    "toEra": "current"
+   },
+   "B": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "Q",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Juneau",
+      "popPct": 89.1
+     },
+     {
+      "county": "Haines",
+      "popPct": 6.5
+     },
+     {
+      "county": "Skagway",
+      "popPct": 3.4
+     },
+     {
+      "county": "Hoonah-Angoon",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Juneau",
+      "popPct": 89.1
+     },
+     {
+      "county": "Haines",
+      "popPct": 6.5
+     },
+     {
+      "county": "Skagway",
+      "popPct": 3.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 35950,
+    "pres2020New": -26.2,
+    "pres2020Old": 18.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 B; it draws from the old Q (100%). Counties: gained Juneau (89%), Haines (6%), Skagway (3%); lost Fairbanks North Star. 2020 presidential margin R+18.5 on the 2016\u20132020 lines \u2192 D+26.2 on the current lines.",
+    "toEra": "current"
+   },
+   "C": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "P",
+      "popPct": 92.3
+     },
+     {
+      "areaPct": 0.1,
+      "key": "O",
+      "popPct": 7.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 56.7
+     },
+     {
+      "county": "Kodiak Island",
+      "popPct": 35.6
+     },
+     {
+      "county": "Valdez-Cordova",
+      "popPct": 7.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 56.7
+     },
+     {
+      "county": "Kodiak Island",
+      "popPct": 35.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 74.8
+     },
+     {
+      "county": "Yukon-Koyukuk",
+      "popPct": 7.6
+     },
+     {
+      "county": "Southeast Fairbanks",
+      "popPct": 6.6
+     },
+     {
+      "county": "Denali",
+      "popPct": 4.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 36643,
+    "pres2020New": 11.2,
+    "pres2020Old": 13.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 C; it draws from the old P (92%), the old O (8%). Counties: gained Kenai Peninsula (57%), Kodiak Island (36%); lost Fairbanks North Star, Yukon-Koyukuk, Southeast Fairbanks, Denali. 2020 presidential margin R+13.0 on the 2016\u20132020 lines \u2192 R+11.2 on the current lines.",
+    "toEra": "current"
+   },
+   "D": {
+    "contributors": [
+     {
+      "areaPct": 76.4,
+      "key": "O",
+      "popPct": 93.8
+     },
+     {
+      "areaPct": 23.6,
+      "key": "P",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 37410,
+    "pres2020New": 46.6,
+    "pres2020Old": 53.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 D; it draws from the old O (94%), the old P (6%). Counties: gained Kenai Peninsula (100%); lost Matanuska-Susitna. 2020 presidential margin R+53.6 on the 2016\u20132020 lines \u2192 R+46.6 on the current lines.",
+    "toEra": "current"
+   },
+   "E": {
+    "contributors": [
+     {
+      "areaPct": 3.7,
+      "key": "L",
+      "popPct": 46.3
+     },
+     {
+      "areaPct": 93.4,
+      "key": "N",
+      "popPct": 46.0
+     },
+     {
+      "areaPct": 0.1,
+      "key": "M",
+      "popPct": 6.9
+     },
+     {
+      "areaPct": 2.7,
+      "key": "E",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 99.3
+     },
+     {
+      "county": "Valdez-Cordova",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Anchorage",
+      "popPct": 99.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 76.5
+     },
+     {
+      "county": "Southeast Fairbanks",
+      "popPct": 11.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 36478,
+    "pres2020New": 1.2,
+    "pres2020Old": 46.7,
+    "retainedAreaPct": 2.7,
+    "retainedPopPct": 0.7,
+    "text": "A new footprint: only 1% of its population was in the 2016\u20132020 E; it draws from the old L (46%), the old N (46%), the old M (7%). Counties: gained Anchorage (99%); lost Matanuska-Susitna, Southeast Fairbanks. 2020 presidential margin R+46.7 on the 2016\u20132020 lines \u2192 R+1.2 on the current lines.",
+    "toEra": "current"
+   },
+   "F": {
+    "contributors": [
+     {
+      "areaPct": 78.2,
+      "key": "M",
+      "popPct": 94.0
+     },
+     {
+      "areaPct": 21.8,
+      "key": "N",
+      "popPct": 5.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 80.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 36788,
+    "pres2020New": 2.6,
+    "pres2020Old": 40.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 F; it draws from the old M (94%), the old N (6%). Counties: lost Matanuska-Susitna. 2020 presidential margin R+40.6 on the 2016\u20132020 lines \u2192 R+2.6 on the current lines.",
+    "toEra": "current"
+   },
+   "G": {
+    "contributors": [
+     {
+      "areaPct": 42.9,
+      "key": "I",
+      "popPct": 50.4
+     },
+     {
+      "areaPct": 49.9,
+      "key": "L",
+      "popPct": 38.8
+     },
+     {
+      "areaPct": 6.5,
+      "key": "K",
+      "popPct": 10.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 37019,
+    "pres2020New": -11.5,
+    "pres2020Old": 22.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 G; it draws from the old I (50%), the old L (39%), the old K (10%). Entirely in Anchorage County. 2020 presidential margin R+22.9 on the 2016\u20132020 lines \u2192 D+11.5 on the current lines.",
+    "toEra": "current"
+   },
+   "H": {
+    "contributors": [
+     {
+      "areaPct": 95.8,
+      "key": "K",
+      "popPct": 88.2
+     },
+     {
+      "areaPct": 4.1,
+      "key": "L",
+      "popPct": 10.6
+     },
+     {
+      "areaPct": 0.1,
+      "key": "I",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 35395,
+    "pres2020New": -7.0,
+    "pres2020Old": -5.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 H; it draws from the old K (88%), the old L (11%), the old I (1%). Entirely in Anchorage County. 2020 presidential margin D+5.3 on the 2016\u20132020 lines \u2192 D+7.0 on the current lines.",
+    "toEra": "current"
+   },
+   "I": {
+    "contributors": [
+     {
+      "areaPct": 17.5,
+      "key": "J",
+      "popPct": 56.7
+     },
+     {
+      "areaPct": 53.6,
+      "key": "H",
+      "popPct": 24.1
+     },
+     {
+      "areaPct": 1.8,
+      "key": "I",
+      "popPct": 13.5
+     },
+     {
+      "areaPct": 27.0,
+      "key": "G",
+      "popPct": 5.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31964,
+    "pres2020New": -24.2,
+    "pres2020Old": -21.8,
+    "retainedAreaPct": 1.8,
+    "retainedPopPct": 13.5,
+    "text": "A new footprint: only 14% of its population was in the 2016\u20132020 I; it draws from the old J (57%), the old H (24%), the old G (6%). Entirely in Anchorage County. 2020 presidential margin D+21.8 on the 2016\u20132020 lines \u2192 D+24.2 on the current lines.",
+    "toEra": "current"
+   },
+   "J": {
+    "contributors": [
+     {
+      "areaPct": 35.3,
+      "key": "J",
+      "popPct": 45.9
+     },
+     {
+      "areaPct": 43.8,
+      "key": "I",
+      "popPct": 29.0
+     },
+     {
+      "areaPct": 20.9,
+      "key": "H",
+      "popPct": 25.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 37124,
+    "pres2020New": -16.4,
+    "pres2020Old": -28.5,
+    "retainedAreaPct": 35.3,
+    "retainedPopPct": 45.9,
+    "text": "A new footprint: only 46% of its population was in the 2016\u20132020 J; it draws from the old I (29%), the old H (25%). Entirely in Anchorage County. 2020 presidential margin D+28.5 on the 2016\u20132020 lines \u2192 D+16.4 on the current lines.",
+    "toEra": "current"
+   },
+   "K": {
+    "contributors": [
+     {
+      "areaPct": 47.0,
+      "key": "H",
+      "popPct": 51.0
+     },
+     {
+      "areaPct": 52.9,
+      "key": "N",
+      "popPct": 48.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 35501,
+    "pres2020New": -6.2,
+    "pres2020Old": -8.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 K; it draws from the old H (51%), the old N (49%). Entirely in Anchorage County. 2020 presidential margin D+8.4 on the 2016\u20132020 lines \u2192 D+6.2 on the current lines.",
+    "toEra": "current"
+   },
+   "L": {
+    "contributors": [
+     {
+      "areaPct": 40.1,
+      "key": "G",
+      "popPct": 81.2
+     },
+     {
+      "areaPct": 59.9,
+      "key": "F",
+      "popPct": 18.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 41205,
+    "pres2020New": 25.2,
+    "pres2020Old": 2.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 L; it draws from the old G (81%), the old F (19%). Entirely in Anchorage County. 2020 presidential margin R+2.6 on the 2016\u20132020 lines \u2192 R+25.2 on the current lines.",
+    "toEra": "current"
+   },
+   "M": {
+    "contributors": [
+     {
+      "areaPct": 86.0,
+      "key": "F",
+      "popPct": 76.8
+     },
+     {
+      "areaPct": 8.2,
+      "key": "D",
+      "popPct": 22.3
+     },
+     {
+      "areaPct": 5.8,
+      "key": "E",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 33701,
+    "pres2020New": 45.8,
+    "pres2020Old": 2.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 M; it draws from the old F (77%), the old D (22%), the old E (1%). Counties: gained Matanuska-Susitna (100%); lost Anchorage. 2020 presidential margin R+2.4 on the 2016\u20132020 lines \u2192 R+45.8 on the current lines.",
+    "toEra": "current"
+   },
+   "N": {
+    "contributors": [
+     {
+      "areaPct": 61.5,
+      "key": "D",
+      "popPct": 72.9
+     },
+     {
+      "areaPct": 29.4,
+      "key": "E",
+      "popPct": 15.4
+     },
+     {
+      "areaPct": 9.1,
+      "key": "F",
+      "popPct": 11.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Anchorage",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 34592,
+    "pres2020New": 51.4,
+    "pres2020Old": -2.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 N; it draws from the old D (73%), the old E (15%), the old F (12%). Counties: gained Matanuska-Susitna (100%); lost Anchorage. 2020 presidential margin D+2.9 on the 2016\u20132020 lines \u2192 R+51.4 on the current lines.",
+    "toEra": "current"
+   },
+   "O": {
+    "contributors": [
+     {
+      "areaPct": 69.0,
+      "key": "E",
+      "popPct": 66.7
+     },
+     {
+      "areaPct": 1.5,
+      "key": "D",
+      "popPct": 24.7
+     },
+     {
+      "areaPct": 0.3,
+      "key": "F",
+      "popPct": 4.9
+     },
+     {
+      "areaPct": 29.1,
+      "key": "C",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 86.7
+     },
+     {
+      "county": "Valdez-Cordova",
+      "popPct": 9.7
+     },
+     {
+      "county": "Denali",
+      "popPct": 3.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Matanuska-Susitna",
+      "popPct": 86.7
+     },
+     {
+      "county": "Valdez-Cordova",
+      "popPct": 9.7
+     },
+     {
+      "county": "Denali",
+      "popPct": 3.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 44774,
+    "pres2020New": 42.9,
+    "pres2020Old": 43.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 O; it draws from the old E (67%), the old D (25%), the old F (5%) and 1 more. Counties: gained Matanuska-Susitna (87%), Valdez-Cordova (10%), Denali (4%); lost Kenai Peninsula. 2020 presidential margin R+43.0 on the 2016\u20132020 lines \u2192 R+42.9 on the current lines.",
+    "toEra": "current"
+   },
+   "P": {
+    "contributors": [
+     {
+      "areaPct": 85.7,
+      "key": "A",
+      "popPct": 96.7
+     },
+     {
+      "areaPct": 14.1,
+      "key": "C",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 55.8
+     },
+     {
+      "county": "Kodiak Island",
+      "popPct": 35.0
+     },
+     {
+      "county": "Valdez-Cordova",
+      "popPct": 7.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 37315,
+    "pres2020New": 12.1,
+    "pres2020Old": 13.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 P; it draws from the old A (97%), the old C (3%). Counties: gained Fairbanks North Star (100%); lost Kenai Peninsula, Kodiak Island, Valdez-Cordova. 2020 presidential margin R+13.7 on the 2016\u20132020 lines \u2192 R+12.1 on the current lines.",
+    "toEra": "current"
+   },
+   "Q": {
+    "contributors": [
+     {
+      "areaPct": 2.6,
+      "key": "B",
+      "popPct": 77.5
+     },
+     {
+      "areaPct": 97.4,
+      "key": "C",
+      "popPct": 22.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Juneau",
+      "popPct": 88.2
+     },
+     {
+      "county": "Haines",
+      "popPct": 6.4
+     },
+     {
+      "county": "Skagway",
+      "popPct": 3.4
+     },
+     {
+      "county": "Hoonah-Angoon",
+      "popPct": 2.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 33278,
+    "pres2020New": 35.9,
+    "pres2020Old": -26.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 Q; it draws from the old B (78%), the old C (22%). Counties: gained Fairbanks North Star (100%); lost Juneau, Haines, Skagway, Hoonah-Angoon. 2020 presidential margin D+26.4 on the 2016\u20132020 lines \u2192 R+35.9 on the current lines.",
+    "toEra": "current"
+   },
+   "R": {
+    "contributors": [
+     {
+      "areaPct": 54.1,
+      "key": "C",
+      "popPct": 56.6
+     },
+     {
+      "areaPct": 0.4,
+      "key": "B",
+      "popPct": 23.5
+     },
+     {
+      "areaPct": 4.2,
+      "key": "E",
+      "popPct": 12.6
+     },
+     {
+      "areaPct": 25.8,
+      "key": "T",
+      "popPct": 4.6
+     },
+     {
+      "areaPct": 15.6,
+      "key": "S",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 63.4
+     },
+     {
+      "county": "Southeast Fairbanks",
+      "popPct": 17.2
+     },
+     {
+      "county": "Yukon-Koyukuk",
+      "popPct": 13.6
+     },
+     {
+      "county": "Valdez-Cordova",
+      "popPct": 5.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Fairbanks North Star",
+      "popPct": 63.4
+     },
+     {
+      "county": "Southeast Fairbanks",
+      "popPct": 17.2
+     },
+     {
+      "county": "Yukon-Koyukuk",
+      "popPct": 13.6
+     },
+     {
+      "county": "Valdez-Cordova",
+      "popPct": 5.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Ketchikan Gateway",
+      "popPct": 39.5
+     },
+     {
+      "county": "Sitka",
+      "popPct": 24.0
+     },
+     {
+      "county": "Prince of Wales-Hyder",
+      "popPct": 16.3
+     },
+     {
+      "county": "Petersburg",
+      "popPct": 9.6
+     },
+     {
+      "county": "Wrangell",
+      "popPct": 6.0
+     },
+     {
+      "county": "Hoonah-Angoon",
+      "popPct": 4.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 39504,
+    "pres2020New": 4.2,
+    "pres2020Old": 5.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 R; it draws from the old C (57%), the old B (24%), the old E (13%) and 2 more. Counties: gained Fairbanks North Star (63%), Southeast Fairbanks (17%), Yukon-Koyukuk (14%) and 1 more; lost Ketchikan Gateway, Sitka, Prince of Wales-Hyder, Petersburg and 2 more. 2020 presidential margin R+5.4 on the 2016\u20132020 lines \u2192 R+4.2 on the current lines.",
+    "toEra": "current"
+   },
+   "S": {
+    "contributors": [
+     {
+      "areaPct": 86.7,
+      "key": "S",
+      "popPct": 95.5
+     },
+     {
+      "areaPct": 2.7,
+      "key": "T",
+      "popPct": 2.6
+     },
+     {
+      "areaPct": 10.6,
+      "key": "P",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bethel",
+      "popPct": 51.7
+     },
+     {
+      "county": "Aleutians West",
+      "popPct": 14.5
+     },
+     {
+      "county": "Dillingham",
+      "popPct": 13.5
+     },
+     {
+      "county": "Aleutians East",
+      "popPct": 9.5
+     },
+     {
+      "county": "Lake and Peninsula",
+      "popPct": 4.1
+     },
+     {
+      "county": "Kusilvak",
+      "popPct": 2.6
+     },
+     {
+      "county": "Bristol Bay",
+      "popPct": 2.3
+     },
+     {
+      "county": "Kenai Peninsula",
+      "popPct": 1.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Yukon-Koyukuk",
+      "popPct": 2.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 36132,
+    "pres2020New": -17.4,
+    "pres2020Old": -16.0,
+    "retainedAreaPct": 86.7,
+    "retainedPopPct": 95.5,
+    "text": "Kept 96% of its population from the 2016\u20132020 S; gained the rest from the old T (3%), the old P (2%). Counties: lost Yukon-Koyukuk. 2020 presidential margin D+16.0 on the 2016\u20132020 lines \u2192 D+17.4 on the current lines.",
+    "toEra": "current"
+   },
+   "T": {
+    "contributors": [
+     {
+      "areaPct": 98.8,
+      "key": "T",
+      "popPct": 97.5
+     },
+     {
+      "areaPct": 1.2,
+      "key": "S",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "North Slope",
+      "popPct": 30.5
+     },
+     {
+      "county": "Nome",
+      "popPct": 27.5
+     },
+     {
+      "county": "Northwest Arctic",
+      "popPct": 21.5
+     },
+     {
+      "county": "Kusilvak",
+      "popPct": 20.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Yukon-Koyukuk",
+      "popPct": 4.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 36282,
+    "pres2020New": -17.0,
+    "pres2020Old": -18.7,
+    "retainedAreaPct": 98.8,
+    "retainedPopPct": 97.5,
+    "text": "Kept 98% of its population from the 2016\u20132020 T; gained the rest from the old S (2%). Counties: lost Yukon-Koyukuk. 2020 presidential margin D+18.7 on the 2016\u20132020 lines \u2192 D+17.0 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

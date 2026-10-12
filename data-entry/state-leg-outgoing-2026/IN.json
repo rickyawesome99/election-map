@@ -1,0 +1,174 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 Indiana House of Representatives election",
+   "senate": "2026 Indiana Senate election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "30": [
+   {
+    "name": "Michael Karickhoff",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retired"
+   }
+  ],
+  "34": [
+   {
+    "name": "Sue Errington",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retired"
+   }
+  ],
+  "56": [
+   {
+    "name": "Brad Barrett",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retired"
+   }
+  ],
+  "57": [
+   {
+    "name": "Craig Haggard",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retired to run for U.S. House for 4th district"
+   }
+  ],
+  "58": [
+   {
+    "name": "Michelle Davis",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retired to run for Indiana Senate"
+   }
+  ],
+  "63": [
+   {
+    "name": "Shane Lindauer",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retired"
+   }
+  ],
+  "70": [
+   {
+    "name": "Karen Engleman",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retired"
+   }
+  ],
+  "72": [
+   {
+    "name": "Edward Clere",
+    "party": "O",
+    "category": "running for other office",
+    "reason": "retired to run for mayor of New Albany in 2027"
+   }
+  ],
+  "9": [
+   {
+    "name": "Patricia Boy",
+    "party": "D",
+    "category": "resigned",
+    "reason": "resigned her seat early in October 2025"
+   }
+  ]
+ },
+ "senate": {
+  "1": [
+   {
+    "name": "Dan Dernulc",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Trevor De Vries"
+   }
+  ],
+  "11": [
+   {
+    "name": "Linda Rogers",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Brian Schmutzler"
+   }
+  ],
+  "17": [
+   {
+    "name": "Nick McKinley",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Chris Parker"
+   }
+  ],
+  "19": [
+   {
+    "name": "Travis Holdman",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Blake Fiechter"
+   }
+  ],
+  "21": [
+   {
+    "name": "Jim Buck",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Tracey Powell"
+   }
+  ],
+  "29": [
+   {
+    "name": "J. D. Ford",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retired to run for Indiana's 5th congressional district"
+   }
+  ],
+  "31": [
+   {
+    "name": "Kyle Walker",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retired"
+   }
+  ],
+  "39": [
+   {
+    "name": "Eric Bassler",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retired"
+   }
+  ],
+  "41": [
+   {
+    "name": "Greg Walker",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Michelle Davis"
+   }
+  ],
+  "46": [
+   {
+    "name": "Andrea Hunley",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retired to run for mayor of Indianapolis in 2027"
+   }
+  ],
+  "6": [
+   {
+    "name": "Rick Niemeyer",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Jay Starkey"
+   }
+  ]
+ }
+}

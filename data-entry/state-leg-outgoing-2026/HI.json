@@ -1,0 +1,70 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 Hawaii House of Representatives election",
+   "senate": "2026 Hawaii Senate election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "21": [
+   {
+    "name": "Jackson Sayama",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "running for the Hawaii State Senate, Senate District 10"
+   }
+  ],
+  "26": [
+   {
+    "name": "Della Au Belatti",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "running for lieutenant governor"
+   }
+  ],
+  "39": [
+   {
+    "name": "Elijah Pierick",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "running for the Hawaii State Senate, Senate District 19"
+   }
+  ],
+  "43": [
+   {
+    "name": "Kanani Souza",
+    "party": "?",
+    "category": "lost primary",
+    "reason": "lost renomination to Sheila Medeiros. The primary election result was invalidated by the Supreme Court of Hawaii and a special general election will be held between Medeiros and Souza concurrent with the regularly scheduled general election"
+   }
+  ]
+ },
+ "senate": {
+  "10": [
+   {
+    "name": "Les Ihara Jr.",
+    "party": "?",
+    "category": "lost primary",
+    "reason": "lost renomination to Jackson Sayama"
+   }
+  ],
+  "13": [
+   {
+    "name": "Karl Rhoads",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "18": [
+   {
+    "name": "Michelle Kidani",
+    "party": "D",
+    "category": "resigned",
+    "reason": "retired on June 30, 2026; Danielle Bass was appointed in August 2026 to serve the rest of her term"
+   }
+  ]
+ }
+}

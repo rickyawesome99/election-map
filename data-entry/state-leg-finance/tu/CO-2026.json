@@ -1,0 +1,5717 @@
+{
+ "state": "CO",
+ "cycle": 2026,
+ "fetched": "2026-10-11",
+ "dataThrough": "06/30/2026",
+ "races": [
+  {
+   "office": "Colorado House of Representatives District 1",
+   "url": "/co/race/colorado-house-of-representatives-district-1-71621",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 20812.0,
+   "totalExpenditures": 21649.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Javier Mabrey",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 20626.0,
+       "expenditures": 0.0,
+       "status": "$21,519.62",
+       "url": "/co/candidate/javier-mabrey"
+      },
+      {
+       "name": "Joseph Montoya",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 185.54,
+       "expenditures": 0.0,
+       "status": "$129.82",
+       "url": "/co/candidate/joseph-montoya"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Javier Mabrey",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 20626.0,
+       "expenditures": 0.0,
+       "status": "$21,519.62",
+       "url": "/co/candidate/javier-mabrey"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Joseph Montoya",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 185.54,
+       "expenditures": 0.0,
+       "status": "$129.82",
+       "url": "/co/candidate/joseph-montoya"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "Colorado House of Representatives District 10",
+   "url": "/co/race/colorado-house-of-representatives-district-10-71622",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 36620.0,
+   "totalExpenditures": 42584.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Junie Joseph",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 36619.69,
+       "expenditures": 0.0,
+       "status": "$42,584.04",
+       "url": "/co/candidate/junie-joseph"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Junie Joseph",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 36619.69,
+       "expenditures": 0.0,
+       "status": "$42,584.04",
+       "url": "/co/candidate/junie-joseph"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "Colorado House of Representatives District 11",
+   "url": "/co/race/colorado-house-of-representatives-district-11-71623",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 46144.0,
+   "totalExpenditures": 20523.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Karen Ann Mccormick",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 46143.92,
+       "expenditures": 0.0,
+       "status": "$20,522.71",
+       "url": "/co/candidate/karen-ann-mccormick"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Karen Ann Mccormick",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 46143.92,
+       "expenditures": 0.0,
+       "status": "$20,522.71",
+       "url": "/co/candidate/karen-ann-mccormick"
+      },
+      {
+       "name": "Brian Batz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/brian-batz"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "Colorado House of Representatives District 12",
+   "url": "/co/race/colorado-house-of-representatives-district-12-71624",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 3418.0,
+   "totalExpenditures": 10437.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Kyle Brown",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3418.0,
+       "expenditures": 0.0,
+       "status": "$10,426.71",
+       "url": "/co/candidate/kyle-brown"
+      },
+      {
+       "name": "Ryan Rhatigan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$10.46",
+       "url": "/co/candidate/ryan-rhatigan"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Kyle Brown",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3418.0,
+       "expenditures": 0.0,
+       "status": "$10,426.71",
+       "url": "/co/candidate/kyle-brown"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Ryan Rhatigan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$10.46",
+       "url": "/co/candidate/ryan-rhatigan"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "Colorado House of Representatives District 13",
+   "url": "/co/race/colorado-house-of-representatives-district-13-71625",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 75836.0,
+   "totalExpenditures": 58983.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Consuelo Redhorse",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 21323.4,
+       "expenditures": 373.0,
+       "status": "$13,224.84",
+       "url": "/co/candidate/consuelo-redhorse"
+      },
+      {
+       "name": "Miguel Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3905.0,
+       "expenditures": 0.0,
+       "status": "$3,070.99",
+       "url": "/co/candidate/miguel-martinez"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Consuelo Redhorse",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 21323.4,
+       "expenditures": 373.0,
+       "status": "$13,224.84",
+       "url": "/co/candidate/consuelo-redhorse"
+      },
+      {
+       "name": "Chris Floyd",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 50608.0,
+       "expenditures": 0.0,
+       "status": "$42,687.01",
+       "url": "/co/candidate/chris-floyd"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Miguel Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3905.0,
+       "expenditures": 0.0,
+       "status": "$3,070.99",
+       "url": "/co/candidate/miguel-martinez"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "Colorado House of Representatives District 14",
+   "url": "/co/race/colorado-house-of-representatives-district-14-71626",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 79715.0,
+   "totalExpenditures": 75548.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ava Flanell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 59780.54,
+       "expenditures": 0.0,
+       "status": "$31,348.35",
+       "url": "/co/candidate/ava-flanell"
+      },
+      {
+       "name": "Sarah Emery",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10728.85,
+       "expenditures": 3161.74,
+       "status": "$5,729.78",
+       "url": "/co/candidate/sarah-emery"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Sarah Emery",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10728.85,
+       "expenditures": 3161.74,
+       "status": "$5,729.78",
+       "url": "/co/candidate/sarah-emery"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Ava Flanell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 59780.54,
+       "expenditures": 0.0,
+       "status": "$31,348.35",
+       "url": "/co/candidate/ava-flanell"
+      },
+      {
+       "name": "Rose Pugliese",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7100.26,
+       "expenditures": 0.0,
+       "status": "$37,070.68",
+       "url": "/co/candidate/rose-pugliese"
+      },
+      {
+       "name": "Troy Vanderhule",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2105.0,
+       "expenditures": 0.0,
+       "status": "$1,398.97",
+       "url": "/co/candidate/troy-vanderhule"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "Colorado House of Representatives District 15",
+   "url": "/co/race/colorado-house-of-representatives-district-15-71627",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 5541.0,
+   "totalExpenditures": 2792.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jeff Livingston",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 643.9,
+       "expenditures": 0.0,
+       "status": "$1,292.05",
+       "url": "/co/candidate/jeff-livingston"
+      },
+      {
+       "name": "Pricella Tiegen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4740.91,
+       "expenditures": 0.0,
+       "status": "$1,313.29",
+       "url": "/co/candidate/pricella-tiegen"
+      },
+      {
+       "name": "Doug Jones",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 156.0,
+       "expenditures": 305.0,
+       "status": "$186.90",
+       "url": "/co/candidate/doug-jones"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Jeff Livingston",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 643.9,
+       "expenditures": 0.0,
+       "status": "$1,292.05",
+       "url": "/co/candidate/jeff-livingston"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Pricella Tiegen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4740.91,
+       "expenditures": 0.0,
+       "status": "$1,313.29",
+       "url": "/co/candidate/pricella-tiegen"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "Colorado House of Representatives District 16",
+   "url": "/co/race/colorado-house-of-representatives-district-16-71628",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 82087.0,
+   "totalExpenditures": 48749.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Stephanie J Vigil",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 52959.22,
+       "expenditures": 0.0,
+       "status": "$41,671.96",
+       "url": "/co/candidate/stephanie-j-vigil"
+      },
+      {
+       "name": "Jill Haffley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26989.67,
+       "expenditures": 6329.62,
+       "status": "$5,627.74",
+       "url": "/co/candidate/jill-haffley"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Stephanie J Vigil",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 52959.22,
+       "expenditures": 0.0,
+       "status": "$41,671.96",
+       "url": "/co/candidate/stephanie-j-vigil"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Jill Haffley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26989.67,
+       "expenditures": 6329.62,
+       "status": "$5,627.74",
+       "url": "/co/candidate/jill-haffley"
+      },
+      {
+       "name": "Jamie Koch",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2138.01,
+       "expenditures": 651.37,
+       "status": "$1,449.55",
+       "url": "/co/candidate/jamie-koch"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "Colorado House of Representatives District 17",
+   "url": "/co/race/colorado-house-of-representatives-district-17-71629",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 34987.0,
+   "totalExpenditures": 25482.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Regina English",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16330.0,
+       "expenditures": 0.0,
+       "status": "$15,008.71",
+       "url": "/co/candidate/regina-english"
+      },
+      {
+       "name": "Laura Martin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1040.0,
+       "expenditures": 100.0,
+       "status": "$277.36",
+       "url": "/co/candidate/laura-martin"
+      },
+      {
+       "name": "Sherrea Elliott-Sterling",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/sherrea-elliott-sterling"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Regina English",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16330.0,
+       "expenditures": 0.0,
+       "status": "$15,008.71",
+       "url": "/co/candidate/regina-english"
+      },
+      {
+       "name": "Chauncy Johnson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17617.0,
+       "expenditures": 0.0,
+       "status": "$10,195.99",
+       "url": "/co/candidate/chauncy-johnson"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Laura Martin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1040.0,
+       "expenditures": 100.0,
+       "status": "$277.36",
+       "url": "/co/candidate/laura-martin"
+      },
+      {
+       "name": "Isaiah Blais",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/isaiah-blais"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "Colorado House of Representatives District 18",
+   "url": "/co/race/colorado-house-of-representatives-district-18-71630",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 39804.0,
+   "totalExpenditures": 11816.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Amy Paschal",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 32356.92,
+       "expenditures": 0.0,
+       "status": "$6,101.86",
+       "url": "/co/candidate/amy-paschal"
+      },
+      {
+       "name": "Adriana Cuva",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6824.99,
+       "expenditures": 3000.0,
+       "status": "$4,615.36",
+       "url": "/co/candidate/adriana-cuva"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Amy Paschal",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 32356.92,
+       "expenditures": 0.0,
+       "status": "$6,101.86",
+       "url": "/co/candidate/amy-paschal"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Adriana Cuva",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6824.99,
+       "expenditures": 3000.0,
+       "status": "$4,615.36",
+       "url": "/co/candidate/adriana-cuva"
+      },
+      {
+       "name": "James R Boelens Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 622.44,
+       "expenditures": 0.0,
+       "status": "$1,098.92",
+       "url": "/co/candidate/james-r-boelens-jr"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "Colorado House of Representatives District 19",
+   "url": "/co/race/colorado-house-of-representatives-district-19-71631",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 181466.0,
+   "totalExpenditures": 192044.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Dan Woog",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 53360.0,
+       "expenditures": 0.0,
+       "status": "$11,378.97",
+       "url": "/co/candidate/dan-woog"
+      },
+      {
+       "name": "Jillaire Mcmillan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47093.42,
+       "expenditures": 20000.0,
+       "status": "$59,021.93",
+       "url": "/co/candidate/jillaire-mcmillan"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Jillaire Mcmillan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 47093.42,
+       "expenditures": 20000.0,
+       "status": "$59,021.93",
+       "url": "/co/candidate/jillaire-mcmillan"
+      },
+      {
+       "name": "Anil K Pesaramelli",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 56479.96,
+       "expenditures": 50000.0,
+       "status": "$96,774.05",
+       "url": "/co/candidate/anil-k-pesaramelli"
+      },
+      {
+       "name": "Colton Plahn",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 24532.33,
+       "expenditures": 337.03,
+       "status": "$24,869.36",
+       "url": "/co/candidate/colton-plahn"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Dan Woog",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 53360.0,
+       "expenditures": 0.0,
+       "status": "$11,378.97",
+       "url": "/co/candidate/dan-woog"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "Colorado House of Representatives District 2",
+   "url": "/co/race/colorado-house-of-representatives-district-2-71632",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 41924.0,
+   "totalExpenditures": 32352.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Scott Baldermann",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8600.0,
+       "expenditures": 0.0,
+       "status": "$9,022.11",
+       "url": "/co/candidate/scott-baldermann"
+      },
+      {
+       "name": "Carey Marin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2424.17,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/carey-marin"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Scott Baldermann",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8600.0,
+       "expenditures": 0.0,
+       "status": "$9,022.11",
+       "url": "/co/candidate/scott-baldermann"
+      },
+      {
+       "name": "Michael Neil",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17308.26,
+       "expenditures": 500.0,
+       "status": "$4,390.42",
+       "url": "/co/candidate/michael-neil"
+      },
+      {
+       "name": "Owen Mark Perkins",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 311.63,
+       "expenditures": 0.0,
+       "status": "$311.63",
+       "url": "/co/candidate/owen-mark-perkins"
+      },
+      {
+       "name": "Tracy Winchester",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13280.0,
+       "expenditures": 5000.0,
+       "status": "$18,627.83",
+       "url": "/co/candidate/tracy-winchester"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Carey Marin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2424.17,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/carey-marin"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "Colorado House of Representatives District 20",
+   "url": "/co/race/colorado-house-of-representatives-district-20-71633",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 35203.0,
+   "totalExpenditures": 33006.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jarvis Caldwell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 35203.0,
+       "expenditures": 0.0,
+       "status": "$33,005.87",
+       "url": "/co/candidate/jarvis-caldwell"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Jarvis Caldwell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 35203.0,
+       "expenditures": 0.0,
+       "status": "$33,005.87",
+       "url": "/co/candidate/jarvis-caldwell"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "Colorado House of Representatives District 21",
+   "url": "/co/race/colorado-house-of-representatives-district-21-71634",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 23579.0,
+   "totalExpenditures": 21644.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Michelle Tweed",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 845.8,
+       "expenditures": 0.0,
+       "status": "$1,434.73",
+       "url": "/co/candidate/michelle-tweed"
+      },
+      {
+       "name": "Brenda S Miller",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5520.0,
+       "expenditures": 5000.0,
+       "status": "$3,481.27",
+       "url": "/co/candidate/brenda-s-miller"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Michelle Tweed",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 845.8,
+       "expenditures": 0.0,
+       "status": "$1,434.73",
+       "url": "/co/candidate/michelle-tweed"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Brenda S Miller",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5520.0,
+       "expenditures": 5000.0,
+       "status": "$3,481.27",
+       "url": "/co/candidate/brenda-s-miller"
+      },
+      {
+       "name": "Mary Bradfield",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11886.54,
+       "expenditures": 0.0,
+       "status": "$11,159.46",
+       "url": "/co/candidate/mary-bradfield"
+      },
+      {
+       "name": "Alexander Africa",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5326.25,
+       "expenditures": 3623.65,
+       "status": "$5,568.81",
+       "url": "/co/candidate/alexander-africa"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "Colorado House of Representatives District 22",
+   "url": "/co/race/colorado-house-of-representatives-district-22-71635",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 6769.0,
+   "totalExpenditures": 12394.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ken Degraaf",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 4110.36,
+       "expenditures": 2500.0,
+       "status": "$7,583.11",
+       "url": "/co/candidate/ken-degraaf"
+      },
+      {
+       "name": "Michael Pierson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2658.9,
+       "expenditures": 3000.0,
+       "status": "$4,810.78",
+       "url": "/co/candidate/michael-pierson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Michael Pierson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2658.9,
+       "expenditures": 3000.0,
+       "status": "$4,810.78",
+       "url": "/co/candidate/michael-pierson"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Ken Degraaf",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 4110.36,
+       "expenditures": 2500.0,
+       "status": "$7,583.11",
+       "url": "/co/candidate/ken-degraaf"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "Colorado House of Representatives District 23",
+   "url": "/co/race/colorado-house-of-representatives-district-23-71636",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 152016.0,
+   "totalExpenditures": 76363.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Alexis Hoffkling",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 105570.87,
+       "expenditures": 0.0,
+       "status": "$40,518.30",
+       "url": "/co/candidate/alexis-hoffkling"
+      },
+      {
+       "name": "Ross Metler",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 1535.84,
+       "expenditures": 114.46,
+       "status": "$83.76",
+       "url": "/co/candidate/ross-metler"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Alexis Hoffkling",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 105570.87,
+       "expenditures": 0.0,
+       "status": "$40,518.30",
+       "url": "/co/candidate/alexis-hoffkling"
+      },
+      {
+       "name": "Valerie M Beck",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 44909.0,
+       "expenditures": 0.0,
+       "status": "$35,675.87",
+       "url": "/co/candidate/valerie-m-beck"
+      },
+      {
+       "name": "Jeremiah Medina",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$85.00",
+       "url": "/co/candidate/jeremiah-medina"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "Colorado House of Representatives District 24",
+   "url": "/co/race/colorado-house-of-representatives-district-24-71637",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 11205.0,
+   "totalExpenditures": 23162.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Lisa Feret",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 8690.0,
+       "expenditures": 0.0,
+       "status": "$21,920.37",
+       "url": "/co/candidate/lisa-feret"
+      },
+      {
+       "name": "Kristopher Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2515.2,
+       "expenditures": 0.0,
+       "status": "$1,242.04",
+       "url": "/co/candidate/kristopher-johnson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Lisa Feret",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 8690.0,
+       "expenditures": 0.0,
+       "status": "$21,920.37",
+       "url": "/co/candidate/lisa-feret"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Kristopher Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2515.2,
+       "expenditures": 0.0,
+       "status": "$1,242.04",
+       "url": "/co/candidate/kristopher-johnson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "Colorado House of Representatives District 25",
+   "url": "/co/race/colorado-house-of-representatives-district-25-71638",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 48732.0,
+   "totalExpenditures": 22758.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Tammy Story",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 22252.62,
+       "expenditures": 0.0,
+       "status": "$18,760.74",
+       "url": "/co/candidate/tammy-story"
+      },
+      {
+       "name": "Mark Herzfeld",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18010.0,
+       "expenditures": 1000.0,
+       "status": "$2,915.73",
+       "url": "/co/candidate/mark-herzfeld"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Tammy Story",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 22252.62,
+       "expenditures": 0.0,
+       "status": "$18,760.74",
+       "url": "/co/candidate/tammy-story"
+      },
+      {
+       "name": "Kevin Brown",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8469.39,
+       "expenditures": 0.0,
+       "status": "$1,081.79",
+       "url": "/co/candidate/kevin-brown"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Mark Herzfeld",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18010.0,
+       "expenditures": 1000.0,
+       "status": "$2,915.73",
+       "url": "/co/candidate/mark-herzfeld"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "Colorado House of Representatives District 26",
+   "url": "/co/race/colorado-house-of-representatives-district-26-71639",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 45624.0,
+   "totalExpenditures": 7015.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Meghan Lukens",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 44589.15,
+       "expenditures": 0.0,
+       "status": "$6,879.65",
+       "url": "/co/candidate/meghan-lukens"
+      },
+      {
+       "name": "James Kellogg",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1034.87,
+       "expenditures": 0.0,
+       "status": "$134.87",
+       "url": "/co/candidate/james-kellogg"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Meghan Lukens",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 44589.15,
+       "expenditures": 0.0,
+       "status": "$6,879.65",
+       "url": "/co/candidate/meghan-lukens"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "James Kellogg",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1034.87,
+       "expenditures": 0.0,
+       "status": "$134.87",
+       "url": "/co/candidate/james-kellogg"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "Colorado House of Representatives District 27",
+   "url": "/co/race/colorado-house-of-representatives-district-27-71640",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 61832.0,
+   "totalExpenditures": 16428.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Danielle Varda",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 56767.23,
+       "expenditures": 500.0,
+       "status": "$12,967.95",
+       "url": "/co/candidate/danielle-varda"
+      },
+      {
+       "name": "Eric Bodenstab",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2440.0,
+       "expenditures": 500.0,
+       "status": "$835.12",
+       "url": "/co/candidate/eric-bodenstab"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Danielle Varda",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 56767.23,
+       "expenditures": 500.0,
+       "status": "$12,967.95",
+       "url": "/co/candidate/danielle-varda"
+      },
+      {
+       "name": "Caitlyn Sullivan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2625.0,
+       "expenditures": 0.0,
+       "status": "$2,625.00",
+       "url": "/co/candidate/caitlyn-sullivan"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Eric Bodenstab",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2440.0,
+       "expenditures": 500.0,
+       "status": "$835.12",
+       "url": "/co/candidate/eric-bodenstab"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "Colorado House of Representatives District 28",
+   "url": "/co/race/colorado-house-of-representatives-district-28-71641",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 37430.0,
+   "totalExpenditures": 3028.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "David L Rein Jr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 37430.12,
+       "expenditures": 2500.0,
+       "status": "$3,028.32",
+       "url": "/co/candidate/david-l-rein-jr"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "David L Rein Jr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 37430.12,
+       "expenditures": 2500.0,
+       "status": "$3,028.32",
+       "url": "/co/candidate/david-l-rein-jr"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "Colorado House of Representatives District 29",
+   "url": "/co/race/colorado-house-of-representatives-district-29-71642",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 65874.0,
+   "totalExpenditures": 10463.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Lori Beth Goldstein",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 61216.45,
+       "expenditures": 0.0,
+       "status": "$9,459.36",
+       "url": "/co/candidate/lori-beth-goldstein"
+      },
+      {
+       "name": "Kristine Ireland",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4657.24,
+       "expenditures": 0.0,
+       "status": "$1,003.96",
+       "url": "/co/candidate/kristine-ireland"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Lori Beth Goldstein",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 61216.45,
+       "expenditures": 0.0,
+       "status": "$9,459.36",
+       "url": "/co/candidate/lori-beth-goldstein"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Kristine Ireland",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4657.24,
+       "expenditures": 0.0,
+       "status": "$1,003.96",
+       "url": "/co/candidate/kristine-ireland"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "Colorado House of Representatives District 3",
+   "url": "/co/race/colorado-house-of-representatives-district-3-71643",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 79354.0,
+   "totalExpenditures": 22204.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Gena Lara Ozols",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 68972.6,
+       "expenditures": 0.0,
+       "status": "$18,521.23",
+       "url": "/co/candidate/gena-lara-ozols"
+      },
+      {
+       "name": "Rebecca Winegar",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1733.12,
+       "expenditures": 0.0,
+       "status": "$1,398.24",
+       "url": "/co/candidate/rebecca-winegar"
+      },
+      {
+       "name": "Davon Williams",
+       "party": "Unaffiliated",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/davon-williams"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Gena Lara Ozols",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 68972.6,
+       "expenditures": 0.0,
+       "status": "$18,521.23",
+       "url": "/co/candidate/gena-lara-ozols"
+      },
+      {
+       "name": "Michael Barlow-Roach",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8648.0,
+       "expenditures": 5000.0,
+       "status": "$2,284.59",
+       "url": "/co/candidate/michael-barlow-roach"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Rebecca Winegar",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1733.12,
+       "expenditures": 0.0,
+       "status": "$1,398.24",
+       "url": "/co/candidate/rebecca-winegar"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "Colorado House of Representatives District 30",
+   "url": "/co/race/colorado-house-of-representatives-district-30-71644",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 44927.0,
+   "totalExpenditures": 30265.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Rebekah Stewart",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 42411.0,
+       "expenditures": 0.0,
+       "status": "$29,584.30",
+       "url": "/co/candidate/rebekah-stewart"
+      },
+      {
+       "name": "William Switzer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2515.94,
+       "expenditures": 0.0,
+       "status": "$680.36",
+       "url": "/co/candidate/william-switzer"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Rebekah Stewart",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 42411.0,
+       "expenditures": 0.0,
+       "status": "$29,584.30",
+       "url": "/co/candidate/rebekah-stewart"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "William Switzer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2515.94,
+       "expenditures": 0.0,
+       "status": "$680.36",
+       "url": "/co/candidate/william-switzer"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "Colorado House of Representatives District 31",
+   "url": "/co/race/colorado-house-of-representatives-district-31-71645",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 137847.0,
+   "totalExpenditures": 134504.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Gabriel Cervantes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 46538.03,
+       "expenditures": 0.0,
+       "status": "$40,602.56",
+       "url": "/co/candidate/gabriel-cervantes"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Gabriel Cervantes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 46538.03,
+       "expenditures": 0.0,
+       "status": "$40,602.56",
+       "url": "/co/candidate/gabriel-cervantes"
+      },
+      {
+       "name": "Jacque Phillips",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 91309.0,
+       "expenditures": 0.0,
+       "status": "$93,901.91",
+       "url": "/co/candidate/jacque-phillips"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "Colorado House of Representatives District 32",
+   "url": "/co/race/colorado-house-of-representatives-district-32-71646",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 72802.0,
+   "totalExpenditures": 47502.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Christopher Vandijk",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 51367.68,
+       "expenditures": 0.0,
+       "status": "$29,399.81",
+       "url": "/co/candidate/christopher-vandijk"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Christopher Vandijk",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 51367.68,
+       "expenditures": 0.0,
+       "status": "$29,399.81",
+       "url": "/co/candidate/christopher-vandijk"
+      },
+      {
+       "name": "Michael Scanlon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1925.0,
+       "expenditures": 6600.0,
+       "status": "$7,897.60",
+       "url": "/co/candidate/michael-scanlon"
+      },
+      {
+       "name": "Liliana Soto",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6216.0,
+       "expenditures": 0.0,
+       "status": "$5,036.00",
+       "url": "/co/candidate/liliana-soto"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Frederick Alfred Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11062.43,
+       "expenditures": 0.0,
+       "status": "$4,939.43",
+       "url": "/co/candidate/frederick-alfred-jr"
+      },
+      {
+       "name": "Damon Scordo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2230.64,
+       "expenditures": 0.0,
+       "status": "$229.64",
+       "url": "/co/candidate/damon-scordo"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "Colorado House of Representatives District 33",
+   "url": "/co/race/colorado-house-of-representatives-district-33-71647",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 212925.0,
+   "totalExpenditures": 164158.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Kenny Van Nguyen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 93683.79,
+       "expenditures": 0.0,
+       "status": "$63,233.78",
+       "url": "/co/candidate/kenny-van-nguyen"
+      },
+      {
+       "name": "Nate Jorgensen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6143.0,
+       "expenditures": 0.0,
+       "status": "$4,212.92",
+       "url": "/co/candidate/nate-jorgensen"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Kenny Van Nguyen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 93683.79,
+       "expenditures": 0.0,
+       "status": "$63,233.78",
+       "url": "/co/candidate/kenny-van-nguyen"
+      },
+      {
+       "name": "Paloma Delgadillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10493.82,
+       "expenditures": 0.0,
+       "status": "$1,737.48",
+       "url": "/co/candidate/paloma-delgadillo"
+      },
+      {
+       "name": "Heidi Henkel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 102604.6,
+       "expenditures": 0.0,
+       "status": "$94,973.44",
+       "url": "/co/candidate/heidi-henkel"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Nate Jorgensen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6143.0,
+       "expenditures": 0.0,
+       "status": "$4,212.92",
+       "url": "/co/candidate/nate-jorgensen"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "Colorado House of Representatives District 34",
+   "url": "/co/race/colorado-house-of-representatives-district-34-71648",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 5842.0,
+   "totalExpenditures": 7504.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jenny Willford",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 4947.29,
+       "expenditures": 0.0,
+       "status": "$1,701.18",
+       "url": "/co/candidate/jenny-willford"
+      },
+      {
+       "name": "Craig Sullivan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 895.0,
+       "expenditures": 9000.0,
+       "status": "$5,802.88",
+       "url": "/co/candidate/craig-sullivan"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Jenny Willford",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 4947.29,
+       "expenditures": 0.0,
+       "status": "$1,701.18",
+       "url": "/co/candidate/jenny-willford"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Craig Sullivan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 895.0,
+       "expenditures": 9000.0,
+       "status": "$5,802.88",
+       "url": "/co/candidate/craig-sullivan"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "Colorado House of Representatives District 35",
+   "url": "/co/race/colorado-house-of-representatives-district-35-71649",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 6914.0,
+   "totalExpenditures": 3611.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Lorena Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 6914.34,
+       "expenditures": 0.0,
+       "status": "$3,610.79",
+       "url": "/co/candidate/lorena-garcia"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Lorena Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 6914.34,
+       "expenditures": 0.0,
+       "status": "$3,610.79",
+       "url": "/co/candidate/lorena-garcia"
+      },
+      {
+       "name": "Edgar Antillon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/edgar-antillon"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "Colorado House of Representatives District 36",
+   "url": "/co/race/colorado-house-of-representatives-district-36-71650",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 59647.0,
+   "totalExpenditures": 37082.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Michael J Carter",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 58961.0,
+       "expenditures": 0.0,
+       "status": "$36,380.78",
+       "url": "/co/candidate/michael-j-carter-1"
+      },
+      {
+       "name": "Paul Nelson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 322.0,
+       "expenditures": 1000.0,
+       "status": "$666.36",
+       "url": "/co/candidate/paul-nelson-1"
+      },
+      {
+       "name": "Joshua Abblett",
+       "party": "Green",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/joshua-abblett"
+      },
+      {
+       "name": "Andrew Gibson",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$35.21",
+       "url": "/co/candidate/andrew-gibson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Michael J Carter",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 58961.0,
+       "expenditures": 0.0,
+       "status": "$36,380.78",
+       "url": "/co/candidate/michael-j-carter-1"
+      },
+      {
+       "name": "Brienna Parsons",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 364.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/brienna-parsons"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Paul Nelson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 322.0,
+       "expenditures": 1000.0,
+       "status": "$666.36",
+       "url": "/co/candidate/paul-nelson-1"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "Colorado House of Representatives District 37",
+   "url": "/co/race/colorado-house-of-representatives-district-37-71651",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 13450.0,
+   "totalExpenditures": 17206.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Charles Goodrich Clifford IV",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 12376.84,
+       "expenditures": 76000.0,
+       "status": "$15,127.33",
+       "url": "/co/candidate/charles-goodrich-clifford-iv"
+      },
+      {
+       "name": "Jill Maureen Thompson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1050.65,
+       "expenditures": 0.0,
+       "status": "$2,056.10",
+       "url": "/co/candidate/jill-maureen-thompson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Charles Goodrich Clifford IV",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 12376.84,
+       "expenditures": 76000.0,
+       "status": "$15,127.33",
+       "url": "/co/candidate/charles-goodrich-clifford-iv"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Jill Maureen Thompson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1050.65,
+       "expenditures": 0.0,
+       "status": "$2,056.10",
+       "url": "/co/candidate/jill-maureen-thompson"
+      },
+      {
+       "name": "Alex Hart",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22.3,
+       "expenditures": 0.0,
+       "status": "$22.30",
+       "url": "/co/candidate/alex-hart"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "Colorado House of Representatives District 38",
+   "url": "/co/race/colorado-house-of-representatives-district-38-71652",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 23109.0,
+   "totalExpenditures": 1823.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Gretchen Jeannette Rydin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 23109.0,
+       "expenditures": 0.0,
+       "status": "$1,822.92",
+       "url": "/co/candidate/gretchen-jeannette-rydin"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Gretchen Jeannette Rydin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 23109.0,
+       "expenditures": 0.0,
+       "status": "$1,822.92",
+       "url": "/co/candidate/gretchen-jeannette-rydin"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "Colorado House of Representatives District 39",
+   "url": "/co/race/colorado-house-of-representatives-district-39-71653",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 20896.0,
+   "totalExpenditures": 18565.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Brandi Bradley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6450.0,
+       "expenditures": 0.0,
+       "status": "$7,607.17",
+       "url": "/co/candidate/brandi-bradley"
+      },
+      {
+       "name": "Christian Schilder",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12280.09,
+       "expenditures": 0.0,
+       "status": "$5,284.50",
+       "url": "/co/candidate/christian-schilder"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Christian Schilder",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12280.09,
+       "expenditures": 0.0,
+       "status": "$5,284.50",
+       "url": "/co/candidate/christian-schilder"
+      },
+      {
+       "name": "Eric Brody",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 517.74,
+       "expenditures": 0.0,
+       "status": "$959.08",
+       "url": "/co/candidate/eric-brody"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Brandi Bradley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6450.0,
+       "expenditures": 0.0,
+       "status": "$7,607.17",
+       "url": "/co/candidate/brandi-bradley"
+      },
+      {
+       "name": "Deborah Mulvey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1648.28,
+       "expenditures": 3115.0,
+       "status": "$4,714.03",
+       "url": "/co/candidate/deborah-mulvey"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "Colorado House of Representatives District 4",
+   "url": "/co/race/colorado-house-of-representatives-district-4-71654",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 34262.0,
+   "totalExpenditures": 21182.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Cecelia M Espenoza",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 34261.84,
+       "expenditures": 0.0,
+       "status": "$21,181.57",
+       "url": "/co/candidate/cecelia-m-espenoza"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Cecelia M Espenoza",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 34261.84,
+       "expenditures": 0.0,
+       "status": "$21,181.57",
+       "url": "/co/candidate/cecelia-m-espenoza"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "Colorado House of Representatives District 40",
+   "url": "/co/race/colorado-house-of-representatives-district-40-71655",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 3651.0,
+   "totalExpenditures": 2913.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Naquetta O Ricks",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/naquetta-o-ricks"
+      },
+      {
+       "name": "Lawrence Clinton Porter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3651.03,
+       "expenditures": 0.0,
+       "status": "$2,912.56",
+       "url": "/co/candidate/lawrence-clinton-porter"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Naquetta O Ricks",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/naquetta-o-ricks"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Lawrence Clinton Porter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3651.03,
+       "expenditures": 0.0,
+       "status": "$2,912.56",
+       "url": "/co/candidate/lawrence-clinton-porter"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "Colorado House of Representatives District 41",
+   "url": "/co/race/colorado-house-of-representatives-district-41-71656",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 172504.0,
+   "totalExpenditures": 148199.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jamie Jackson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 91726.7,
+       "expenditures": 0.0,
+       "status": "$80,521.44",
+       "url": "/co/candidate/jamie-jackson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Jamie Jackson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 91726.7,
+       "expenditures": 0.0,
+       "status": "$80,521.44",
+       "url": "/co/candidate/jamie-jackson"
+      },
+      {
+       "name": "Aly Frances Dewills-Marcano",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2390.0,
+       "expenditures": 0.0,
+       "status": "$4,657.85",
+       "url": "/co/candidate/aly-frances-dewills-marcano"
+      },
+      {
+       "name": "Anne Keke",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 78386.94,
+       "expenditures": 0.0,
+       "status": "$63,019.26",
+       "url": "/co/candidate/anne-keke"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "Colorado House of Representatives District 42",
+   "url": "/co/race/colorado-house-of-representatives-district-42-71657",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 95293.0,
+   "totalExpenditures": 75100.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Sarah Woodson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 29183.2,
+       "expenditures": 0.0,
+       "status": "$21,812.06",
+       "url": "/co/candidate/sarah-woodson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Sarah Woodson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 29183.2,
+       "expenditures": 0.0,
+       "status": "$21,812.06",
+       "url": "/co/candidate/sarah-woodson"
+      },
+      {
+       "name": "Mandy Lindsay",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 15370.0,
+       "expenditures": 0.0,
+       "status": "$12,824.12",
+       "url": "/co/candidate/mandy-lindsay"
+      },
+      {
+       "name": "Eric Nelson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 50740.0,
+       "expenditures": 0.0,
+       "status": "$39,496.98",
+       "url": "/co/candidate/eric-nelson"
+      },
+      {
+       "name": "Megan Siffring",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$966.55",
+       "url": "/co/candidate/megan-siffring"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "Colorado House of Representatives District 43",
+   "url": "/co/race/colorado-house-of-representatives-district-43-71658",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 89316.0,
+   "totalExpenditures": 25500.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Robert C Marshall",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 55921.85,
+       "expenditures": 0.0,
+       "status": "$16,274.80",
+       "url": "/co/candidate/robert-c-marshall"
+      },
+      {
+       "name": "Nate Marsh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33393.74,
+       "expenditures": 4500.0,
+       "status": "$9,225.27",
+       "url": "/co/candidate/nate-marsh"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Robert C Marshall",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 55921.85,
+       "expenditures": 0.0,
+       "status": "$16,274.80",
+       "url": "/co/candidate/robert-c-marshall"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Nate Marsh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 33393.74,
+       "expenditures": 4500.0,
+       "status": "$9,225.27",
+       "url": "/co/candidate/nate-marsh"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "Colorado House of Representatives District 44",
+   "url": "/co/race/colorado-house-of-representatives-district-44-71659",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 50608.0,
+   "totalExpenditures": 81677.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Anthony Hartsook",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 49483.0,
+       "expenditures": 0.0,
+       "status": "$29,855.17",
+       "url": "/co/candidate/anthony-hartsook"
+      },
+      {
+       "name": "Richard Bowness",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/richard-bowness"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Richard Bowness",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/richard-bowness"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Anthony Hartsook",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 49483.0,
+       "expenditures": 0.0,
+       "status": "$29,855.17",
+       "url": "/co/candidate/anthony-hartsook"
+      },
+      {
+       "name": "Bob Davis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1125.0,
+       "expenditures": 57357.88,
+       "status": "$51,821.33",
+       "url": "/co/candidate/bob-davis"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "Colorado House of Representatives District 45",
+   "url": "/co/race/colorado-house-of-representatives-district-45-71660",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 9149.0,
+   "totalExpenditures": 5631.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Max Brooks",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7565.0,
+       "expenditures": 0.0,
+       "status": "$4,889.00",
+       "url": "/co/candidate/max-brooks"
+      },
+      {
+       "name": "Mike Clarkson Jr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1583.9,
+       "expenditures": 0.0,
+       "status": "$741.81",
+       "url": "/co/candidate/mike-clarkson-jr"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Mike Clarkson Jr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1583.9,
+       "expenditures": 0.0,
+       "status": "$741.81",
+       "url": "/co/candidate/mike-clarkson-jr"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Max Brooks",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7565.0,
+       "expenditures": 0.0,
+       "status": "$4,889.00",
+       "url": "/co/candidate/max-brooks"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "Colorado House of Representatives District 46",
+   "url": "/co/race/colorado-house-of-representatives-district-46-71661",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 18610.0,
+   "totalExpenditures": 9223.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Tisha Mauro",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 13157.94,
+       "expenditures": 0.0,
+       "status": "$980.00",
+       "url": "/co/candidate/tisha-mauro"
+      },
+      {
+       "name": "Jonathan Post",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5452.13,
+       "expenditures": 3700.0,
+       "status": "$8,243.13",
+       "url": "/co/candidate/jonathan-post"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Tisha Mauro",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 13157.94,
+       "expenditures": 0.0,
+       "status": "$980.00",
+       "url": "/co/candidate/tisha-mauro"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Jonathan Post",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5452.13,
+       "expenditures": 3700.0,
+       "status": "$8,243.13",
+       "url": "/co/candidate/jonathan-post"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "Colorado House of Representatives District 47",
+   "url": "/co/race/colorado-house-of-representatives-district-47-71662",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 131425.0,
+   "totalExpenditures": 41377.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ty Winter",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 56878.07,
+       "expenditures": 0.0,
+       "status": "$20,307.03",
+       "url": "/co/candidate/ty-winter"
+      },
+      {
+       "name": "Vic Meyers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 74547.09,
+       "expenditures": 0.0,
+       "status": "$21,069.83",
+       "url": "/co/candidate/vic-meyers"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Vic Meyers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 74547.09,
+       "expenditures": 0.0,
+       "status": "$21,069.83",
+       "url": "/co/candidate/vic-meyers"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Ty Winter",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 56878.07,
+       "expenditures": 0.0,
+       "status": "$20,307.03",
+       "url": "/co/candidate/ty-winter"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "Colorado House of Representatives District 48",
+   "url": "/co/race/colorado-house-of-representatives-district-48-71663",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 24799.0,
+   "totalExpenditures": 22635.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Carlos Barron",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 21756.42,
+       "expenditures": 0.0,
+       "status": "$20,614.85",
+       "url": "/co/candidate/carlos-barron"
+      },
+      {
+       "name": "Dez Packard",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3042.45,
+       "expenditures": 0.0,
+       "status": "$2,020.26",
+       "url": "/co/candidate/dez-packard"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Dez Packard",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3042.45,
+       "expenditures": 0.0,
+       "status": "$2,020.26",
+       "url": "/co/candidate/dez-packard"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Carlos Barron",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 21756.42,
+       "expenditures": 0.0,
+       "status": "$20,614.85",
+       "url": "/co/candidate/carlos-barron"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "Colorado House of Representatives District 49",
+   "url": "/co/race/colorado-house-of-representatives-district-49-71664",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 17109.0,
+   "totalExpenditures": 18173.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Lesley Smith",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 14658.86,
+       "expenditures": 0.0,
+       "status": "$15,219.37",
+       "url": "/co/candidate/lesley-smith"
+      },
+      {
+       "name": "Michael Sheperek",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2450.0,
+       "expenditures": 0.0,
+       "status": "$2,953.81",
+       "url": "/co/candidate/michael-sheperek"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Lesley Smith",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 14658.86,
+       "expenditures": 0.0,
+       "status": "$15,219.37",
+       "url": "/co/candidate/lesley-smith"
+      },
+      {
+       "name": "Brian Batz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/brian-batz"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Michael Sheperek",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2450.0,
+       "expenditures": 0.0,
+       "status": "$2,953.81",
+       "url": "/co/candidate/michael-sheperek"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "Colorado House of Representatives District 5",
+   "url": "/co/race/colorado-house-of-representatives-district-5-71665",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 58215.0,
+   "totalExpenditures": 46865.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Justine Sandoval",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 28964.25,
+       "expenditures": 0.0,
+       "status": "$29,665.50",
+       "url": "/co/candidate/justine-sandoval"
+      },
+      {
+       "name": "Johnnie W Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$577.29",
+       "url": "/co/candidate/johnnie-w-johnson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Justine Sandoval",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 28964.25,
+       "expenditures": 0.0,
+       "status": "$29,665.50",
+       "url": "/co/candidate/justine-sandoval"
+      },
+      {
+       "name": "Trevor Jones",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1712.42,
+       "expenditures": 0.0,
+       "status": "$1,712.42",
+       "url": "/co/candidate/trevor-jones"
+      },
+      {
+       "name": "Rayna Kingston",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13742.11,
+       "expenditures": 0.0,
+       "status": "$12,942.11",
+       "url": "/co/candidate/rayna-kingston"
+      },
+      {
+       "name": "Sterling Thomas Simms",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12950.81,
+       "expenditures": 0.0,
+       "status": "$532.85",
+       "url": "/co/candidate/sterling-thomas-simms"
+      },
+      {
+       "name": "Michelle Tweed",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 845.8,
+       "expenditures": 0.0,
+       "status": "$1,434.73",
+       "url": "/co/candidate/michelle-tweed"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Johnnie W Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$577.29",
+       "url": "/co/candidate/johnnie-w-johnson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "Colorado House of Representatives District 50",
+   "url": "/co/race/colorado-house-of-representatives-district-50-71666",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 74741.0,
+   "totalExpenditures": 40049.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Ryan Gonzalez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 41953.0,
+       "expenditures": 0.0,
+       "status": "$21,887.94",
+       "url": "/co/candidate/ryan-gonzalez"
+      },
+      {
+       "name": "Tommy Butler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25800.0,
+       "expenditures": 0.0,
+       "status": "$3,282.25",
+       "url": "/co/candidate/tommy-butler"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Tommy Butler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25800.0,
+       "expenditures": 0.0,
+       "status": "$3,282.25",
+       "url": "/co/candidate/tommy-butler"
+      },
+      {
+       "name": "Jerry Harvey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6987.85,
+       "expenditures": 10000.0,
+       "status": "$14,878.58",
+       "url": "/co/candidate/jerry-harvey"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Ryan Gonzalez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 41953.0,
+       "expenditures": 0.0,
+       "status": "$21,887.94",
+       "url": "/co/candidate/ryan-gonzalez"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "Colorado House of Representatives District 51",
+   "url": "/co/race/colorado-house-of-representatives-district-51-71667",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 116240.0,
+   "totalExpenditures": 91106.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jacki Marsh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 32406.78,
+       "expenditures": 9550.0,
+       "status": "$24,975.29",
+       "url": "/co/candidate/jacki-marsh"
+      },
+      {
+       "name": "Amy Parks",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 48634.81,
+       "expenditures": 0.0,
+       "status": "$29,460.09",
+       "url": "/co/candidate/amy-parks"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Jacki Marsh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 32406.78,
+       "expenditures": 9550.0,
+       "status": "$24,975.29",
+       "url": "/co/candidate/jacki-marsh"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Amy Parks",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 48634.81,
+       "expenditures": 0.0,
+       "status": "$29,460.09",
+       "url": "/co/candidate/amy-parks"
+      },
+      {
+       "name": "Ron Weinberg",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 13135.0,
+       "expenditures": 0.0,
+       "status": "$17,542.70",
+       "url": "/co/candidate/ron-weinberg"
+      },
+      {
+       "name": "Nancy Rumfelt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18592.97,
+       "expenditures": 84.0,
+       "status": "$15,127.51",
+       "url": "/co/candidate/nancy-rumfelt"
+      },
+      {
+       "name": "Christopher Say",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3470.39,
+       "expenditures": 529.61,
+       "status": "$4,000.00",
+       "url": "/co/candidate/christopher-say"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "Colorado House of Representatives District 52",
+   "url": "/co/race/colorado-house-of-representatives-district-52-71668",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 10176.0,
+   "totalExpenditures": 30155.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Yara Zokaie",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 10175.52,
+       "expenditures": 0.0,
+       "status": "$30,154.64",
+       "url": "/co/candidate/yara-zokaie"
+      },
+      {
+       "name": "Steve Yurash",
+       "party": "Colorado Center",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/steve-yurash"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Yara Zokaie",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 10175.52,
+       "expenditures": 0.0,
+       "status": "$30,154.64",
+       "url": "/co/candidate/yara-zokaie"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "Colorado House of Representatives District 53",
+   "url": "/co/race/colorado-house-of-representatives-district-53-71669",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 25198.0,
+   "totalExpenditures": 26732.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Andrew Boesenecker",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 21900.0,
+       "expenditures": 0.0,
+       "status": "$24,104.21",
+       "url": "/co/candidate/andrew-boesenecker"
+      },
+      {
+       "name": "Daniel Frick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3298.03,
+       "expenditures": 100.0,
+       "status": "$2,628.19",
+       "url": "/co/candidate/daniel-frick"
+      },
+      {
+       "name": "Jeffrey Neale Birdsall",
+       "party": "Unaffiliated",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/jeffrey-neale-birdsall"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Andrew Boesenecker",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 21900.0,
+       "expenditures": 0.0,
+       "status": "$24,104.21",
+       "url": "/co/candidate/andrew-boesenecker"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Daniel Frick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3298.03,
+       "expenditures": 100.0,
+       "status": "$2,628.19",
+       "url": "/co/candidate/daniel-frick"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "Colorado House of Representatives District 54",
+   "url": "/co/race/colorado-house-of-representatives-district-54-71670",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 53564.0,
+   "totalExpenditures": 30617.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Mallory Martin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15839.37,
+       "expenditures": 1100.0,
+       "status": "$11,227.96",
+       "url": "/co/candidate/mallory-martin"
+      },
+      {
+       "name": "Jason Bias",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17279.49,
+       "expenditures": 0.0,
+       "status": "$11,282.44",
+       "url": "/co/candidate/jason-bias"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Mallory Martin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 15839.37,
+       "expenditures": 1100.0,
+       "status": "$11,227.96",
+       "url": "/co/candidate/mallory-martin"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Jason Bias",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17279.49,
+       "expenditures": 0.0,
+       "status": "$11,282.44",
+       "url": "/co/candidate/jason-bias"
+      },
+      {
+       "name": "Nina Anderson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20444.74,
+       "expenditures": 2289.46,
+       "status": "$8,106.16",
+       "url": "/co/candidate/nina-anderson"
+      },
+      {
+       "name": "William Tedrow",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/william-tedrow"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "Colorado House of Representatives District 55",
+   "url": "/co/race/colorado-house-of-representatives-district-55-71671",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 34904.0,
+   "totalExpenditures": 37982.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Rick Taggart",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22326.0,
+       "expenditures": 0.0,
+       "status": "$31,705.87",
+       "url": "/co/candidate/rick-taggart"
+      },
+      {
+       "name": "Brittni Packard",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12578.16,
+       "expenditures": 100.0,
+       "status": "$6,276.18",
+       "url": "/co/candidate/brittni-packard"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Brittni Packard",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12578.16,
+       "expenditures": 100.0,
+       "status": "$6,276.18",
+       "url": "/co/candidate/brittni-packard"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Rick Taggart",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22326.0,
+       "expenditures": 0.0,
+       "status": "$31,705.87",
+       "url": "/co/candidate/rick-taggart"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "Colorado House of Representatives District 56",
+   "url": "/co/race/colorado-house-of-representatives-district-56-71672",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 20084.0,
+   "totalExpenditures": 14733.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Chris Richardson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20084.0,
+       "expenditures": 0.0,
+       "status": "$14,733.08",
+       "url": "/co/candidate/chris-richardson"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Chris Richardson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20084.0,
+       "expenditures": 0.0,
+       "status": "$14,733.08",
+       "url": "/co/candidate/chris-richardson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "Colorado House of Representatives District 57",
+   "url": "/co/race/colorado-house-of-representatives-district-57-71673",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 34620.0,
+   "totalExpenditures": 42868.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Elizabeth Velasco",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 24370.0,
+       "expenditures": 0.0,
+       "status": "$35,762.03",
+       "url": "/co/candidate/elizabeth-velasco"
+      },
+      {
+       "name": "Russell A Andrews",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10250.0,
+       "expenditures": 0.0,
+       "status": "$7,105.52",
+       "url": "/co/candidate/russell-a-andrews"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Elizabeth Velasco",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 24370.0,
+       "expenditures": 0.0,
+       "status": "$35,762.03",
+       "url": "/co/candidate/elizabeth-velasco"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Russell A Andrews",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10250.0,
+       "expenditures": 0.0,
+       "status": "$7,105.52",
+       "url": "/co/candidate/russell-a-andrews"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "Colorado House of Representatives District 58",
+   "url": "/co/race/colorado-house-of-representatives-district-58-71674",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 2455.0,
+   "totalExpenditures": 500.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Larry Don Suckla",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2455.24,
+       "expenditures": 0.0,
+       "status": "$500.00",
+       "url": "/co/candidate/larry-don-suckla"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Larry Don Suckla",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2455.24,
+       "expenditures": 0.0,
+       "status": "$500.00",
+       "url": "/co/candidate/larry-don-suckla"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "Colorado House of Representatives District 59",
+   "url": "/co/race/colorado-house-of-representatives-district-59-71675",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 102110.0,
+   "totalExpenditures": 54178.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Katie Stewart",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 44790.0,
+       "expenditures": 0.0,
+       "status": "$7,032.22",
+       "url": "/co/candidate/katie-stewart"
+      },
+      {
+       "name": "Naomi Riess",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57320.42,
+       "expenditures": 9659.97,
+       "status": "$47,146.09",
+       "url": "/co/candidate/naomi-riess"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Katie Stewart",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 44790.0,
+       "expenditures": 0.0,
+       "status": "$7,032.22",
+       "url": "/co/candidate/katie-stewart"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Naomi Riess",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57320.42,
+       "expenditures": 9659.97,
+       "status": "$47,146.09",
+       "url": "/co/candidate/naomi-riess"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "Colorado House of Representatives District 6",
+   "url": "/co/race/colorado-house-of-representatives-district-6-71676",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 202443.0,
+   "totalExpenditures": 203691.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Iris Halpern",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 82881.22,
+       "expenditures": 8735.66,
+       "status": "$78,640.25",
+       "url": "/co/candidate/iris-halpern"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Iris Halpern",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 82881.22,
+       "expenditures": 8735.66,
+       "status": "$78,640.25",
+       "url": "/co/candidate/iris-halpern"
+      },
+      {
+       "name": "Sean Camacho",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 119561.84,
+       "expenditures": 0.0,
+       "status": "$125,050.87",
+       "url": "/co/candidate/sean-camacho"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "Colorado House of Representatives District 60",
+   "url": "/co/race/colorado-house-of-representatives-district-60-71677",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 15069.0,
+   "totalExpenditures": 13118.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Kathryn Green",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 200.0,
+       "expenditures": 0.0,
+       "status": "$755.90",
+       "url": "/co/candidate/kathryn-green"
+      },
+      {
+       "name": "Matthew Alexander",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14868.66,
+       "expenditures": 0.0,
+       "status": "$12,361.87",
+       "url": "/co/candidate/matthew-alexander"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Kathryn Green",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 200.0,
+       "expenditures": 0.0,
+       "status": "$755.90",
+       "url": "/co/candidate/kathryn-green"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Matthew Alexander",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14868.66,
+       "expenditures": 0.0,
+       "status": "$12,361.87",
+       "url": "/co/candidate/matthew-alexander"
+      },
+      {
+       "name": "Michelle Gray",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/michelle-gray"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "Colorado House of Representatives District 61",
+   "url": "/co/race/colorado-house-of-representatives-district-61-71678",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 44216.0,
+   "totalExpenditures": 13523.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Eliza Carney Hamrick",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 28620.16,
+       "expenditures": 0.0,
+       "status": "$2,879.26",
+       "url": "/co/candidate/eliza-carney-hamrick"
+      },
+      {
+       "name": "Scott Shamblin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15595.38,
+       "expenditures": 0.0,
+       "status": "$10,644.17",
+       "url": "/co/candidate/scott-shamblin"
+      },
+      {
+       "name": "Kevin Lee Gulbranson",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/kevin-lee-gulbranson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Eliza Carney Hamrick",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 28620.16,
+       "expenditures": 0.0,
+       "status": "$2,879.26",
+       "url": "/co/candidate/eliza-carney-hamrick"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Scott Shamblin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15595.38,
+       "expenditures": 0.0,
+       "status": "$10,644.17",
+       "url": "/co/candidate/scott-shamblin"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "Colorado House of Representatives District 62",
+   "url": "/co/race/colorado-house-of-representatives-district-62-71679",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 8971.0,
+   "totalExpenditures": 12949.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Matthew Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 6573.94,
+       "expenditures": 0.0,
+       "status": "$3,400.50",
+       "url": "/co/candidate/matthew-martinez"
+      },
+      {
+       "name": "Steven Rodriguez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1525.0,
+       "expenditures": 0.0,
+       "status": "$630.33",
+       "url": "/co/candidate/steven-rodriguez"
+      },
+      {
+       "name": "Donald Luke Vermillion",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$8,103.39",
+       "url": "/co/candidate/donald-luke-vermillion"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Matthew Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 6573.94,
+       "expenditures": 0.0,
+       "status": "$3,400.50",
+       "url": "/co/candidate/matthew-martinez"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Steven Rodriguez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1525.0,
+       "expenditures": 0.0,
+       "status": "$630.33",
+       "url": "/co/candidate/steven-rodriguez"
+      },
+      {
+       "name": "Evans Auden Gonzalez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 872.0,
+       "expenditures": 0.0,
+       "status": "$815.00",
+       "url": "/co/candidate/evans-auden-gonzalez"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "Colorado House of Representatives District 63",
+   "url": "/co/race/colorado-house-of-representatives-district-63-71680",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 9900.0,
+   "totalExpenditures": 8387.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Dusty Johnson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 9900.0,
+       "expenditures": 0.0,
+       "status": "$8,387.40",
+       "url": "/co/candidate/dusty-johnson"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Dusty Johnson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 9900.0,
+       "expenditures": 0.0,
+       "status": "$8,387.40",
+       "url": "/co/candidate/dusty-johnson"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "63"
+  },
+  {
+   "office": "Colorado House of Representatives District 64",
+   "url": "/co/race/colorado-house-of-representatives-district-64-71681",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 24347.0,
+   "totalExpenditures": 25544.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Scott Slaugh",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 8495.0,
+       "expenditures": 4500.0,
+       "status": "$10,751.49",
+       "url": "/co/candidate/scott-slaugh"
+      },
+      {
+       "name": "Maureen M Dower",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13502.07,
+       "expenditures": 0.0,
+       "status": "$7,744.13",
+       "url": "/co/candidate/maureen-m-dower"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Maureen M Dower",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13502.07,
+       "expenditures": 0.0,
+       "status": "$7,744.13",
+       "url": "/co/candidate/maureen-m-dower"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Scott Slaugh",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 8495.0,
+       "expenditures": 4500.0,
+       "status": "$10,751.49",
+       "url": "/co/candidate/scott-slaugh"
+      },
+      {
+       "name": "Ryan Armagost",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1700.0,
+       "expenditures": 0.0,
+       "status": "$5,908.90",
+       "url": "/co/candidate/ryan-armagost"
+      },
+      {
+       "name": "Colleen Whitlow",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 650.0,
+       "expenditures": 550.0,
+       "status": "$1,139.36",
+       "url": "/co/candidate/colleen-whitlow"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "64"
+  },
+  {
+   "office": "Colorado House of Representatives District 65",
+   "url": "/co/race/colorado-house-of-representatives-district-65-71682",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 23425.0,
+   "totalExpenditures": 12862.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Lori Garcia Sander",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 23425.0,
+       "expenditures": 0.0,
+       "status": "$12,861.52",
+       "url": "/co/candidate/lori-garcia-sander"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Lori Garcia Sander",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 23425.0,
+       "expenditures": 0.0,
+       "status": "$12,861.52",
+       "url": "/co/candidate/lori-garcia-sander"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "65"
+  },
+  {
+   "office": "Colorado House of Representatives District 7",
+   "url": "/co/race/colorado-house-of-representatives-district-7-71683",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 11785.0,
+   "totalExpenditures": 23422.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Jennifer Bacon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 10630.0,
+       "expenditures": 0.0,
+       "status": "$22,238.84",
+       "url": "/co/candidate/jennifer-bacon"
+      },
+      {
+       "name": "Lawrence Clark",
+       "party": "American Constitution",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/lawrence-clark"
+      },
+      {
+       "name": "Jeffrey Wilson",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$38.37",
+       "url": "/co/candidate/jeffrey-wilson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Jennifer Bacon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 10630.0,
+       "expenditures": 0.0,
+       "status": "$22,238.84",
+       "url": "/co/candidate/jennifer-bacon"
+      },
+      {
+       "name": "Raed Salih",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1155.22,
+       "expenditures": 0.0,
+       "status": "$1,145.06",
+       "url": "/co/candidate/raed-salih"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "Colorado House of Representatives District 8",
+   "url": "/co/race/colorado-house-of-representatives-district-8-71684",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 31975.0,
+   "totalExpenditures": 33847.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Lindsay Anne Gilchrist",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 31975.0,
+       "expenditures": 0.0,
+       "status": "$33,847.15",
+       "url": "/co/candidate/lindsay-anne-gilchrist"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Lindsay Anne Gilchrist",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 31975.0,
+       "expenditures": 0.0,
+       "status": "$33,847.15",
+       "url": "/co/candidate/lindsay-anne-gilchrist"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "Colorado House of Representatives District 9",
+   "url": "/co/race/colorado-house-of-representatives-district-9-71685",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 138624.0,
+   "totalExpenditures": 104514.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Monica Vanbuskirk",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 71941.91,
+       "expenditures": 0.0,
+       "status": "$47,133.80",
+       "url": "/co/candidate/monica-vanbuskirk"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Monica Vanbuskirk",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 71941.91,
+       "expenditures": 0.0,
+       "status": "$47,133.80",
+       "url": "/co/candidate/monica-vanbuskirk"
+      },
+      {
+       "name": "Matthew M Curry",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$900.00",
+       "url": "/co/candidate/matthew-m-curry"
+      },
+      {
+       "name": "Samuel Valeriano",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1970.0,
+       "expenditures": 0.0,
+       "status": "$1,241.50",
+       "url": "/co/candidate/samuel-valeriano"
+      },
+      {
+       "name": "Neal Walia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 64712.33,
+       "expenditures": 0.0,
+       "status": "$55,238.82",
+       "url": "/co/candidate/neal-walia"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "Colorado State Senate District 1",
+   "url": "/co/race/colorado-state-senate-district-1-71604",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 26968.0,
+   "totalExpenditures": 20786.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Byron Pelton",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 25992.5,
+       "expenditures": 0.0,
+       "status": "$20,554.50",
+       "url": "/co/candidate/byron-pelton"
+      },
+      {
+       "name": "Jamie Jeffery",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 975.0,
+       "expenditures": 0.0,
+       "status": "$231.62",
+       "url": "/co/candidate/jamie-jeffery"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Jamie Jeffery",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 975.0,
+       "expenditures": 0.0,
+       "status": "$231.62",
+       "url": "/co/candidate/jamie-jeffery"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Byron Pelton",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 25992.5,
+       "expenditures": 0.0,
+       "status": "$20,554.50",
+       "url": "/co/candidate/byron-pelton"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "1"
+  },
+  {
+   "office": "Colorado State Senate District 11",
+   "url": "/co/race/colorado-state-senate-district-11-71611",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 34546.0,
+   "totalExpenditures": 19589.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Thomas E Exum Sr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 23847.81,
+       "expenditures": 0.0,
+       "status": "$7,644.12",
+       "url": "/co/candidate/thomas-e-exum-sr"
+      },
+      {
+       "name": "Levon Stilson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9500.13,
+       "expenditures": 4500.0,
+       "status": "$10,726.72",
+       "url": "/co/candidate/levon-stilson"
+      },
+      {
+       "name": "Janet Turner",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$150.00",
+       "url": "/co/candidate/janet-turner"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Thomas E Exum Sr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 23847.81,
+       "expenditures": 0.0,
+       "status": "$7,644.12",
+       "url": "/co/candidate/thomas-e-exum-sr"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Levon Stilson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9500.13,
+       "expenditures": 4500.0,
+       "status": "$10,726.72",
+       "url": "/co/candidate/levon-stilson"
+      },
+      {
+       "name": "Nickolas Razo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 748.0,
+       "expenditures": 0.0,
+       "status": "$618.00",
+       "url": "/co/candidate/nickolas-razo"
+      },
+      {
+       "name": "Mark Tisdale",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 450.0,
+       "expenditures": 0.0,
+       "status": "$450.00",
+       "url": "/co/candidate/mark-tisdale"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "11"
+  },
+  {
+   "office": "Colorado State Senate District 15",
+   "url": "/co/race/colorado-state-senate-district-15-71613",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 171314.0,
+   "totalExpenditures": 77205.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Janice Marchman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 81486.81,
+       "expenditures": 0.0,
+       "status": "$38,710.07",
+       "url": "/co/candidate/janice-marchman"
+      },
+      {
+       "name": "Rob Woodward",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 89827.0,
+       "expenditures": 0.0,
+       "status": "$38,495.42",
+       "url": "/co/candidate/rob-woodward"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Janice Marchman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 81486.81,
+       "expenditures": 0.0,
+       "status": "$38,710.07",
+       "url": "/co/candidate/janice-marchman"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Rob Woodward",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 89827.0,
+       "expenditures": 0.0,
+       "status": "$38,495.42",
+       "url": "/co/candidate/rob-woodward"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "15"
+  },
+  {
+   "office": "Colorado State Senate District 20",
+   "url": "/co/race/colorado-state-senate-district-20-71615",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 97927.0,
+   "totalExpenditures": 46759.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Sheila Lieder",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 90617.29,
+       "expenditures": 0.0,
+       "status": "$40,913.74",
+       "url": "/co/candidate/sheila-lieder"
+      },
+      {
+       "name": "Rich Mancuso",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7310.0,
+       "expenditures": 1500.0,
+       "status": "$5,845.09",
+       "url": "/co/candidate/rich-mancuso"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Sheila Lieder",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 90617.29,
+       "expenditures": 0.0,
+       "status": "$40,913.74",
+       "url": "/co/candidate/sheila-lieder"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Rich Mancuso",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7310.0,
+       "expenditures": 1500.0,
+       "status": "$5,845.09",
+       "url": "/co/candidate/rich-mancuso"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "20"
+  },
+  {
+   "office": "Colorado State Senate District 22",
+   "url": "/co/race/colorado-state-senate-district-22-71616",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 61876.0,
+   "totalExpenditures": 65583.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Monica Duran",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 60591.0,
+       "expenditures": 0.0,
+       "status": "$52,448.89",
+       "url": "/co/candidate/monica-duran"
+      },
+      {
+       "name": "Stephen Harkess",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 350.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/stephen-harkess"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Monica Duran",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 60591.0,
+       "expenditures": 0.0,
+       "status": "$52,448.89",
+       "url": "/co/candidate/monica-duran"
+      },
+      {
+       "name": "Jessie Danielson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 935.0,
+       "expenditures": 0.0,
+       "status": "$13,134.11",
+       "url": "/co/candidate/jessie-danielson"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Stephen Harkess",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 350.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/stephen-harkess"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "22"
+  },
+  {
+   "office": "Colorado State Senate District 24",
+   "url": "/co/race/colorado-state-senate-district-24-71617",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 40675.0,
+   "totalExpenditures": 1677.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Kyle Mullica",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 40675.0,
+       "expenditures": 0.0,
+       "status": "$1,676.57",
+       "url": "/co/candidate/kyle-mullica"
+      },
+      {
+       "name": "Kevin Allen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/kevin-allen"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Kyle Mullica",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 40675.0,
+       "expenditures": 0.0,
+       "status": "$1,676.57",
+       "url": "/co/candidate/kyle-mullica"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Kevin Allen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/kevin-allen"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "24"
+  },
+  {
+   "office": "Colorado State Senate District 25",
+   "url": "/co/race/colorado-state-senate-district-25-114077",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 112576.0,
+   "totalExpenditures": 123636.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "William S Lindstedt",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 83363.49,
+       "expenditures": 0.0,
+       "status": "$45,455.48",
+       "url": "/co/candidate/william-s-lindstedt"
+      },
+      {
+       "name": "Rich Guggenheim",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7316.66,
+       "expenditures": 12000.0,
+       "status": "$17,383.19",
+       "url": "/co/candidate/rich-guggenheim"
+      },
+      {
+       "name": "Mark Bromley",
+       "party": "Unaffiliated",
+       "incumbent": false,
+       "contributions": 648.51,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/mark-bromley"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "William S Lindstedt",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 83363.49,
+       "expenditures": 0.0,
+       "status": "$45,455.48",
+       "url": "/co/candidate/william-s-lindstedt"
+      },
+      {
+       "name": "Shannon Bird",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 21247.75,
+       "expenditures": 0.0,
+       "status": "$60,797.50",
+       "url": "/co/candidate/shannon-bird"
+      },
+      {
+       "name": "Thomas Klenow",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/thomas-klenow"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Rich Guggenheim",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7316.66,
+       "expenditures": 12000.0,
+       "status": "$17,383.19",
+       "url": "/co/candidate/rich-guggenheim"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "25"
+  },
+  {
+   "office": "Colorado State Senate District 27",
+   "url": "/co/race/colorado-state-senate-district-27-114078",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 29954.0,
+   "totalExpenditures": 32838.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Tom Sullivan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/tom-sullivan"
+      },
+      {
+       "name": "Danielle Lammon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 29078.0,
+       "expenditures": 10000.0,
+       "status": "$32,510.92",
+       "url": "/co/candidate/danielle-lammon"
+      },
+      {
+       "name": "Michele Poague",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/michele-poague"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Tom Sullivan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/tom-sullivan"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Danielle Lammon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 29078.0,
+       "expenditures": 10000.0,
+       "status": "$32,510.92",
+       "url": "/co/candidate/danielle-lammon"
+      },
+      {
+       "name": "Darryl Gibbs",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 876.0,
+       "expenditures": 0.0,
+       "status": "$327.38",
+       "url": "/co/candidate/darryl-gibbs"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "27"
+  },
+  {
+   "office": "Colorado State Senate District 3",
+   "url": "/co/race/colorado-state-senate-district-3-71606",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 169738.0,
+   "totalExpenditures": 91104.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Aaron Gutierrez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 40962.49,
+       "expenditures": 50.0,
+       "status": "$24,654.80",
+       "url": "/co/candidate/aaron-gutierrez"
+      },
+      {
+       "name": "Dana Charles",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 77535.44,
+       "expenditures": 0.0,
+       "status": "$25,371.43",
+       "url": "/co/candidate/dana-charles"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Aaron Gutierrez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 40962.49,
+       "expenditures": 50.0,
+       "status": "$24,654.80",
+       "url": "/co/candidate/aaron-gutierrez"
+      },
+      {
+       "name": "Nick Hinrichsen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/nick-hinrichsen"
+      },
+      {
+       "name": "Charles Perko",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2166.96,
+       "expenditures": 700.0,
+       "status": "$1,075.13",
+       "url": "/co/candidate/charles-perko"
+      },
+      {
+       "name": "Taylor Voss",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 49073.57,
+       "expenditures": 0.0,
+       "status": "$40,003.03",
+       "url": "/co/candidate/taylor-voss"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Dana Charles",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 77535.44,
+       "expenditures": 0.0,
+       "status": "$25,371.43",
+       "url": "/co/candidate/dana-charles"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "3"
+  },
+  {
+   "office": "Colorado State Senate District 30",
+   "url": "/co/race/colorado-state-senate-district-30-71618",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 94318.0,
+   "totalExpenditures": 24999.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "John Carson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 60003.44,
+       "expenditures": 21500.0,
+       "status": "$24,518.07",
+       "url": "/co/candidate/john-carson"
+      },
+      {
+       "name": "Kevin Leung",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 34314.41,
+       "expenditures": 0.0,
+       "status": "$481.34",
+       "url": "/co/candidate/kevin-leung"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Kevin Leung",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 34314.41,
+       "expenditures": 0.0,
+       "status": "$481.34",
+       "url": "/co/candidate/kevin-leung"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "John Carson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 60003.44,
+       "expenditures": 21500.0,
+       "status": "$24,518.07",
+       "url": "/co/candidate/john-carson"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "30"
+  },
+  {
+   "office": "Colorado State Senate District 32",
+   "url": "/co/race/colorado-state-senate-district-32-71619",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 101589.0,
+   "totalExpenditures": 36446.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Emily Sirota",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 101588.95,
+       "expenditures": 0.0,
+       "status": "$35,163.03",
+       "url": "/co/candidate/emily-sirota"
+      },
+      {
+       "name": "Sydnnia Wulff",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 1233.0,
+       "status": "$1,283.00",
+       "url": "/co/candidate/sydnnia-wulff"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Emily Sirota",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 101588.95,
+       "expenditures": 0.0,
+       "status": "$35,163.03",
+       "url": "/co/candidate/emily-sirota"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Sydnnia Wulff",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 1233.0,
+       "status": "$1,283.00",
+       "url": "/co/candidate/sydnnia-wulff"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "32"
+  },
+  {
+   "office": "Colorado State Senate District 34",
+   "url": "/co/race/colorado-state-senate-district-34-71620",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 227266.0,
+   "totalExpenditures": 205407.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Graciela Garcia Irlando",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 94881.48,
+       "expenditures": 0.0,
+       "status": "$77,339.92",
+       "url": "/co/candidate/graciela"
+      },
+      {
+       "name": "Jack Daus",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 104.42,
+       "expenditures": 0.0,
+       "status": "$133.21",
+       "url": "/co/candidate/jack-daus"
+      },
+      {
+       "name": "Jennifer Qualteri",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/jennifer-qualteri"
+      },
+      {
+       "name": "Jacob Luria",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/jacob-luria"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Graciela Garcia Irlando",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 94881.48,
+       "expenditures": 0.0,
+       "status": "$77,339.92",
+       "url": "/co/candidate/graciela"
+      },
+      {
+       "name": "Andrs Carrera",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 124220.0,
+       "expenditures": 0.0,
+       "status": "$122,669.55",
+       "url": "/co/candidate/andrs-carrera"
+      },
+      {
+       "name": "Michael Guzman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8060.38,
+       "expenditures": 0.0,
+       "status": "$5,264.11",
+       "url": "/co/candidate/michael-guzman"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Jack Daus",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 104.42,
+       "expenditures": 0.0,
+       "status": "$133.21",
+       "url": "/co/candidate/jack-daus"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "34"
+  },
+  {
+   "office": "Colorado State Senate District 35",
+   "url": "/co/race/colorado-state-senate-district-35-114079",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 22298.0,
+   "totalExpenditures": 17857.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Rod Pelton",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 15948.43,
+       "expenditures": 0.0,
+       "status": "$13,234.01",
+       "url": "/co/candidate/rod-pelton"
+      },
+      {
+       "name": "Duane Gurule",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2280.0,
+       "expenditures": 0.0,
+       "status": "$751.58",
+       "url": "/co/candidate/duane-gurule"
+      },
+      {
+       "name": "Travis Star Nelson",
+       "party": "Unaffiliated",
+       "incumbent": false,
+       "contributions": 4069.96,
+       "expenditures": 0.0,
+       "status": "$3,871.88",
+       "url": "/co/candidate/travis-star-nelson"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Duane Gurule",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2280.0,
+       "expenditures": 0.0,
+       "status": "$751.58",
+       "url": "/co/candidate/duane-gurule"
+      },
+      {
+       "name": "Travis Star Nelson",
+       "party": "Unaffiliated",
+       "incumbent": false,
+       "contributions": 4069.96,
+       "expenditures": 0.0,
+       "status": "$3,871.88",
+       "url": "/co/candidate/travis-star-nelson"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Rod Pelton",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 15948.43,
+       "expenditures": 0.0,
+       "status": "$13,234.01",
+       "url": "/co/candidate/rod-pelton"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "35"
+  },
+  {
+   "office": "Colorado State Senate District 4",
+   "url": "/co/race/colorado-state-senate-district-4-114075",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 55836.0,
+   "totalExpenditures": 70751.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Justin Kurth",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6949.46,
+       "expenditures": 0.0,
+       "status": "$3,605.97",
+       "url": "/co/candidate/justin-kurth"
+      },
+      {
+       "name": "Ted Collins III",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 41162.66,
+       "expenditures": 50000.0,
+       "status": "$54,579.29",
+       "url": "/co/candidate/ted-collins-iii"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Justin Kurth",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6949.46,
+       "expenditures": 0.0,
+       "status": "$3,605.97",
+       "url": "/co/candidate/justin-kurth"
+      },
+      {
+       "name": "Nicolas Livingston",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 218.87,
+       "expenditures": 0.0,
+       "status": "$218.87",
+       "url": "/co/candidate/nicolas-livingston"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Ted Collins III",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 41162.66,
+       "expenditures": 50000.0,
+       "status": "$54,579.29",
+       "url": "/co/candidate/ted-collins-iii"
+      },
+      {
+       "name": "Kevin Conrad",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7505.0,
+       "expenditures": 9500.0,
+       "status": "$12,346.64",
+       "url": "/co/candidate/kevin-conrad"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "4"
+  },
+  {
+   "office": "Colorado State Senate District 7",
+   "url": "/co/race/colorado-state-senate-district-7-71609",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 21095.0,
+   "totalExpenditures": 3544.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Janice Rich",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 21095.0,
+       "expenditures": 0.0,
+       "status": "$3,544.31",
+       "url": "/co/candidate/janice-rich"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Janice Rich",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 21095.0,
+       "expenditures": 0.0,
+       "status": "$3,544.31",
+       "url": "/co/candidate/janice-rich"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "7"
+  },
+  {
+   "office": "Colorado State Senate District 8",
+   "url": "/co/race/colorado-state-senate-district-8-114076",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 71527.0,
+   "totalExpenditures": 15505.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "Dylan Roberts",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 69581.5,
+       "expenditures": 0.0,
+       "status": "$15,490.51",
+       "url": "/co/candidate/dylan-roberts"
+      },
+      {
+       "name": "Corey Joseph Marshall",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1945.0,
+       "expenditures": 0.0,
+       "status": "$14.00",
+       "url": "/co/candidate/corey-joseph-marshall"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Dylan Roberts",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 69581.5,
+       "expenditures": 0.0,
+       "status": "$15,490.51",
+       "url": "/co/candidate/dylan-roberts"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Corey Joseph Marshall",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1945.0,
+       "expenditures": 0.0,
+       "status": "$14.00",
+       "url": "/co/candidate/corey-joseph-marshall"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "8"
+  },
+  {
+   "office": "Colorado State Senate District 9",
+   "url": "/co/race/colorado-state-senate-district-9-71610",
+   "dataThrough": "06/30/2026",
+   "stage": "General Election",
+   "totalContributions": 103287.0,
+   "totalExpenditures": 90402.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 3, 2026",
+     "candidates": [
+      {
+       "name": "William Moses",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1495.34,
+       "expenditures": 0.0,
+       "status": "$731.64",
+       "url": "/co/candidate/william-moses"
+      },
+      {
+       "name": "Terri Carver",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 101792.11,
+       "expenditures": 26000.0,
+       "status": "$89,670.55",
+       "url": "/co/candidate/terri-carver"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "William Moses",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1495.34,
+       "expenditures": 0.0,
+       "status": "$731.64",
+       "url": "/co/candidate/william-moses"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 30, 2026",
+     "candidates": [
+      {
+       "name": "Terri Carver",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 101792.11,
+       "expenditures": 26000.0,
+       "status": "$89,670.55",
+       "url": "/co/candidate/terri-carver"
+      },
+      {
+       "name": "Lynda Wilson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/co/candidate/lynda-wilson"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "9"
+  }
+ ]
+}

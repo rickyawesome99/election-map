@@ -1,0 +1,8462 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 93.9,
+      "key": "14",
+      "popPct": 79.8
+     },
+     {
+      "areaPct": 6.1,
+      "key": "13",
+      "popPct": 20.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Woodbury",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Woodbury",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Dickinson",
+      "popPct": 41.7
+     },
+     {
+      "county": "Lyon",
+      "popPct": 38.3
+     },
+     {
+      "county": "Osceola",
+      "popPct": 19.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31814,
+    "pres2020New": -8.2,
+    "pres2020Old": 50.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-1; it draws from the old HD-14 (80%), the old HD-13 (20%). Counties: gained Woodbury (100%); lost Dickinson, Lyon, Osceola. 2020 presidential margin R+50.7 on the 2016\u20132020 lines \u2192 D+8.2 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 64.6,
+      "key": "2",
+      "popPct": 50.1
+     },
+     {
+      "areaPct": 18.2,
+      "key": "1",
+      "popPct": 40.7
+     },
+     {
+      "areaPct": 12.3,
+      "key": "8",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 4.9,
+      "key": "7",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dickinson",
+      "popPct": 55.4
+     },
+     {
+      "county": "Palo Alto",
+      "popPct": 28.0
+     },
+     {
+      "county": "Kossuth",
+      "popPct": 9.3
+     },
+     {
+      "county": "Clay",
+      "popPct": 7.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dickinson",
+      "popPct": 55.4
+     },
+     {
+      "county": "Palo Alto",
+      "popPct": 28.0
+     },
+     {
+      "county": "Kossuth",
+      "popPct": 9.3
+     },
+     {
+      "county": "Clay",
+      "popPct": 7.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Calhoun",
+      "popPct": 33.1
+     },
+     {
+      "county": "Humboldt",
+      "popPct": 32.1
+     },
+     {
+      "county": "Pocahontas",
+      "popPct": 23.5
+     },
+     {
+      "county": "Webster",
+      "popPct": 11.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31939,
+    "pres2020New": 36.9,
+    "pres2020Old": 45.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-10; it draws from the old HD-2 (50%), the old HD-1 (41%), the old HD-8 (7%) and 1 more. Counties: gained Dickinson (55%), Palo Alto (28%), Kossuth (9%) and 1 more; lost Calhoun, Humboldt, Pocahontas, Webster. 2020 presidential margin R+45.7 on the 2016\u20132020 lines \u2192 R+36.9 on the current lines.",
+    "toEra": "current"
+   },
+   "100": {
+    "contributors": [
+     {
+      "areaPct": 58.9,
+      "key": "83",
+      "popPct": 86.9
+     },
+     {
+      "areaPct": 41.1,
+      "key": "84",
+      "popPct": 13.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lee",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lee",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Dubuque",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31871,
+    "pres2020New": 18.5,
+    "pres2020Old": -6.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-100; it draws from the old HD-83 (87%), the old HD-84 (13%). Counties: gained Lee (100%); lost Dubuque. 2020 presidential margin D+6.9 on the 2016\u20132020 lines \u2192 R+18.5 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 73.1,
+      "key": "12",
+      "popPct": 82.6
+     },
+     {
+      "areaPct": 21.7,
+      "key": "18",
+      "popPct": 10.9
+     },
+     {
+      "areaPct": 5.1,
+      "key": "22",
+      "popPct": 6.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carroll",
+      "popPct": 64.8
+     },
+     {
+      "county": "Audubon",
+      "popPct": 17.7
+     },
+     {
+      "county": "Shelby",
+      "popPct": 10.9
+     },
+     {
+      "county": "Pottawattamie",
+      "popPct": 6.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Carroll",
+      "popPct": 64.8
+     },
+     {
+      "county": "Audubon",
+      "popPct": 17.7
+     },
+     {
+      "county": "Shelby",
+      "popPct": 10.9
+     },
+     {
+      "county": "Pottawattamie",
+      "popPct": 6.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Buena Vista",
+      "popPct": 67.8
+     },
+     {
+      "county": "Sac",
+      "popPct": 32.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32013,
+    "pres2020New": 37.5,
+    "pres2020Old": 34.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-11; it draws from the old HD-12 (83%), the old HD-18 (11%), the old HD-22 (7%). Counties: gained Carroll (65%), Audubon (18%), Shelby (11%) and 1 more; lost Buena Vista, Sac. 2020 presidential margin R+34.8 on the 2016\u20132020 lines \u2192 R+37.5 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 50.0,
+      "key": "18",
+      "popPct": 67.2
+     },
+     {
+      "areaPct": 30.1,
+      "key": "17",
+      "popPct": 22.0
+     },
+     {
+      "areaPct": 19.9,
+      "key": "12",
+      "popPct": 10.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Crawford",
+      "popPct": 51.9
+     },
+     {
+      "county": "Shelby",
+      "popPct": 26.0
+     },
+     {
+      "county": "Ida",
+      "popPct": 22.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Shelby",
+      "popPct": 26.0
+     },
+     {
+      "county": "Ida",
+      "popPct": 22.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Carroll",
+      "popPct": 69.4
+     },
+     {
+      "county": "Audubon",
+      "popPct": 19.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31794,
+    "pres2020New": 41.2,
+    "pres2020Old": 38.7,
+    "retainedAreaPct": 19.9,
+    "retainedPopPct": 10.8,
+    "text": "A new footprint: only 11% of its population was in the 2016\u20132020 HD-12; it draws from the old HD-18 (67%), the old HD-17 (22%). Counties: gained Shelby (26%), Ida (22%); lost Carroll, Audubon. 2020 presidential margin R+38.7 on the 2016\u20132020 lines \u2192 R+41.2 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 30.4,
+      "key": "5",
+      "popPct": 44.1
+     },
+     {
+      "areaPct": 47.4,
+      "key": "17",
+      "popPct": 39.9
+     },
+     {
+      "areaPct": 17.3,
+      "key": "3",
+      "popPct": 12.2
+     },
+     {
+      "areaPct": 4.8,
+      "key": "6",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Woodbury",
+      "popPct": 31.6
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 30.9
+     },
+     {
+      "county": "Monona",
+      "popPct": 27.6
+     },
+     {
+      "county": "Cherokee",
+      "popPct": 9.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Monona",
+      "popPct": 27.6
+     },
+     {
+      "county": "Cherokee",
+      "popPct": 9.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31810,
+    "pres2020New": 49.0,
+    "pres2020Old": 5.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-13; it draws from the old HD-5 (44%), the old HD-17 (40%), the old HD-3 (12%) and 1 more. Counties: gained Monona (28%), Cherokee (10%). 2020 presidential margin R+5.6 on the 2016\u20132020 lines \u2192 R+49.0 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "6",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Woodbury",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31879,
+    "pres2020New": 21.9,
+    "pres2020Old": -4.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-14; it draws from the old HD-6 (100%). Entirely in Woodbury County. 2020 presidential margin D+4.0 on the 2016\u20132020 lines \u2192 R+21.9 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 28.1,
+      "key": "22",
+      "popPct": 54.2
+     },
+     {
+      "areaPct": 45.0,
+      "key": "17",
+      "popPct": 29.9
+     },
+     {
+      "areaPct": 26.8,
+      "key": "18",
+      "popPct": 15.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pottawattamie",
+      "popPct": 54.3
+     },
+     {
+      "county": "Harrison",
+      "popPct": 45.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Harrison",
+      "popPct": 45.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31823,
+    "pres2020New": 32.7,
+    "pres2020Old": 5.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-15; it draws from the old HD-22 (54%), the old HD-17 (30%), the old HD-18 (16%). Counties: gained Harrison (46%). 2020 presidential margin R+5.0 on the 2016\u20132020 lines \u2192 R+32.7 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 62.8,
+      "key": "23",
+      "popPct": 66.3
+     },
+     {
+      "areaPct": 23.2,
+      "key": "22",
+      "popPct": 28.2
+     },
+     {
+      "areaPct": 14.0,
+      "key": "21",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mills",
+      "popPct": 45.5
+     },
+     {
+      "county": "Pottawattamie",
+      "popPct": 33.8
+     },
+     {
+      "county": "Fremont",
+      "popPct": 20.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Mills",
+      "popPct": 45.5
+     },
+     {
+      "county": "Fremont",
+      "popPct": 20.8
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31804,
+    "pres2020New": 40.3,
+    "pres2020Old": 3.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-16; it draws from the old HD-23 (66%), the old HD-22 (28%), the old HD-21 (6%). Counties: gained Mills (46%), Fremont (21%). 2020 presidential margin R+3.9 on the 2016\u20132020 lines \u2192 R+40.3 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 65.0,
+      "key": "24",
+      "popPct": 55.0
+     },
+     {
+      "areaPct": 35.0,
+      "key": "21",
+      "popPct": 45.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Union",
+      "popPct": 33.3
+     },
+     {
+      "county": "Page",
+      "popPct": 21.8
+     },
+     {
+      "county": "Taylor",
+      "popPct": 18.5
+     },
+     {
+      "county": "Ringgold",
+      "popPct": 14.7
+     },
+     {
+      "county": "Adams",
+      "popPct": 11.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Union",
+      "popPct": 33.3
+     },
+     {
+      "county": "Page",
+      "popPct": 21.8
+     },
+     {
+      "county": "Taylor",
+      "popPct": 18.5
+     },
+     {
+      "county": "Ringgold",
+      "popPct": 14.7
+     },
+     {
+      "county": "Adams",
+      "popPct": 11.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Harrison",
+      "popPct": 32.6
+     },
+     {
+      "county": "Monona",
+      "popPct": 30.0
+     },
+     {
+      "county": "Ida",
+      "popPct": 23.9
+     },
+     {
+      "county": "Woodbury",
+      "popPct": 13.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31736,
+    "pres2020New": 41.6,
+    "pres2020Old": 43.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-17; it draws from the old HD-24 (55%), the old HD-21 (45%). Counties: gained Union (33%), Page (22%), Taylor (18%) and 2 more; lost Harrison, Monona, Ida, Woodbury. 2020 presidential margin R+43.0 on the 2016\u20132020 lines \u2192 R+41.6 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 31.5,
+      "key": "21",
+      "popPct": 35.8
+     },
+     {
+      "areaPct": 37.1,
+      "key": "24",
+      "popPct": 34.6
+     },
+     {
+      "areaPct": 21.0,
+      "key": "23",
+      "popPct": 24.1
+     },
+     {
+      "areaPct": 10.4,
+      "key": "20",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 41.1
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 32.5
+     },
+     {
+      "county": "Page",
+      "popPct": 25.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cass",
+      "popPct": 41.1
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 32.5
+     },
+     {
+      "county": "Page",
+      "popPct": 25.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Crawford",
+      "popPct": 43.7
+     },
+     {
+      "county": "Shelby",
+      "popPct": 39.3
+     },
+     {
+      "county": "Harrison",
+      "popPct": 16.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31771,
+    "pres2020New": 39.3,
+    "pres2020Old": 37.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-18; it draws from the old HD-21 (36%), the old HD-24 (35%), the old HD-23 (24%) and 1 more. Counties: gained Cass (41%), Montgomery (32%), Page (26%); lost Crawford, Shelby, Harrison. 2020 presidential margin R+37.9 on the 2016\u20132020 lines \u2192 R+39.3 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 85.0,
+      "key": "16",
+      "popPct": 69.0
+     },
+     {
+      "areaPct": 4.9,
+      "key": "15",
+      "popPct": 19.1
+     },
+     {
+      "areaPct": 10.1,
+      "key": "22",
+      "popPct": 11.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pottawattamie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pottawattamie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Dallas",
+      "popPct": 85.6
+     },
+     {
+      "county": "Polk",
+      "popPct": 14.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31936,
+    "pres2020New": 5.8,
+    "pres2020Old": 12.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-19; it draws from the old HD-16 (69%), the old HD-15 (19%), the old HD-22 (12%). Counties: gained Pottawattamie (100%); lost Dallas, Polk. 2020 presidential margin R+12.5 on the 2016\u20132020 lines \u2192 R+5.8 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 55.8,
+      "key": "13",
+      "popPct": 81.0
+     },
+     {
+      "areaPct": 6.8,
+      "key": "14",
+      "popPct": 15.1
+     },
+     {
+      "areaPct": 37.3,
+      "key": "5",
+      "popPct": 3.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Woodbury",
+      "popPct": 98.8
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Woodbury",
+      "popPct": 98.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Clay",
+      "popPct": 54.4
+     },
+     {
+      "county": "Palo Alto",
+      "popPct": 29.8
+     },
+     {
+      "county": "Dickinson",
+      "popPct": 15.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32188,
+    "pres2020New": 11.3,
+    "pres2020Old": 38.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-2; it draws from the old HD-13 (81%), the old HD-14 (15%), the old HD-5 (4%). Counties: gained Woodbury (99%); lost Clay, Palo Alto, Dickinson. 2020 presidential margin R+38.1 on the 2016\u20132020 lines \u2192 R+11.3 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 79.5,
+      "key": "15",
+      "popPct": 74.8
+     },
+     {
+      "areaPct": 20.5,
+      "key": "16",
+      "popPct": 25.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pottawattamie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pottawattamie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Guthrie",
+      "popPct": 35.4
+     },
+     {
+      "county": "Dallas",
+      "popPct": 33.0
+     },
+     {
+      "county": "Adair",
+      "popPct": 25.6
+     },
+     {
+      "county": "Cass",
+      "popPct": 5.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31679,
+    "pres2020New": 3.4,
+    "pres2020Old": 28.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-20; it draws from the old HD-15 (75%), the old HD-16 (25%). Counties: gained Pottawattamie (100%); lost Guthrie, Dallas, Adair, Cass. 2020 presidential margin R+28.0 on the 2016\u20132020 lines \u2192 R+3.4 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 37.6,
+      "key": "26",
+      "popPct": 56.4
+     },
+     {
+      "areaPct": 43.7,
+      "key": "28",
+      "popPct": 35.1
+     },
+     {
+      "areaPct": 18.7,
+      "key": "25",
+      "popPct": 8.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Warren",
+      "popPct": 64.9
+     },
+     {
+      "county": "Marion",
+      "popPct": 35.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Warren",
+      "popPct": 64.9
+     },
+     {
+      "county": "Marion",
+      "popPct": 35.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Union",
+      "popPct": 41.9
+     },
+     {
+      "county": "Cass",
+      "popPct": 39.1
+     },
+     {
+      "county": "Adams",
+      "popPct": 12.7
+     },
+     {
+      "county": "Pottawattamie",
+      "popPct": 6.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31787,
+    "pres2020New": 18.4,
+    "pres2020Old": 36.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-21; it draws from the old HD-26 (56%), the old HD-28 (35%), the old HD-25 (8%). Counties: gained Warren (65%), Marion (35%); lost Union, Cass, Adams, Pottawattamie. 2020 presidential margin R+36.5 on the 2016\u20132020 lines \u2192 R+18.4 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 40.3,
+      "key": "25",
+      "popPct": 50.6
+     },
+     {
+      "areaPct": 57.9,
+      "key": "26",
+      "popPct": 47.1
+     },
+     {
+      "areaPct": 1.8,
+      "key": "42",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Warren",
+      "popPct": 98.2
+     },
+     {
+      "county": "Polk",
+      "popPct": 1.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Warren",
+      "popPct": 98.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pottawattamie",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31758,
+    "pres2020New": 17.3,
+    "pres2020Old": 30.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-22; it draws from the old HD-25 (51%), the old HD-26 (47%), the old HD-42 (2%). Counties: gained Warren (98%); lost Pottawattamie. 2020 presidential margin R+30.6 on the 2016\u20132020 lines \u2192 R+17.3 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 36.6,
+      "key": "25",
+      "popPct": 52.0
+     },
+     {
+      "areaPct": 37.1,
+      "key": "20",
+      "popPct": 23.5
+     },
+     {
+      "areaPct": 7.6,
+      "key": "19",
+      "popPct": 15.0
+     },
+     {
+      "areaPct": 11.6,
+      "key": "21",
+      "popPct": 4.9
+     },
+     {
+      "areaPct": 7.0,
+      "key": "27",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Madison",
+      "popPct": 51.9
+     },
+     {
+      "county": "Adair",
+      "popPct": 23.5
+     },
+     {
+      "county": "Dallas",
+      "popPct": 15.0
+     },
+     {
+      "county": "Union",
+      "popPct": 4.9
+     },
+     {
+      "county": "Clarke",
+      "popPct": 4.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Madison",
+      "popPct": 51.9
+     },
+     {
+      "county": "Adair",
+      "popPct": 23.5
+     },
+     {
+      "county": "Dallas",
+      "popPct": 15.0
+     },
+     {
+      "county": "Union",
+      "popPct": 4.9
+     },
+     {
+      "county": "Clarke",
+      "popPct": 4.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Mills",
+      "popPct": 50.3
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 26.6
+     },
+     {
+      "county": "Fremont",
+      "popPct": 23.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31840,
+    "pres2020New": 36.0,
+    "pres2020Old": 37.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-23; it draws from the old HD-25 (52%), the old HD-20 (24%), the old HD-19 (15%) and 2 more. Counties: gained Madison (52%), Adair (24%), Dallas (15%) and 2 more; lost Mills, Montgomery, Fremont. 2020 presidential margin R+37.9 on the 2016\u20132020 lines \u2192 R+36.0 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 82.0,
+      "key": "27",
+      "popPct": 88.8
+     },
+     {
+      "areaPct": 13.0,
+      "key": "28",
+      "popPct": 9.0
+     },
+     {
+      "areaPct": 5.0,
+      "key": "80",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lucas",
+      "popPct": 27.2
+     },
+     {
+      "county": "Clarke",
+      "popPct": 26.2
+     },
+     {
+      "county": "Decatur",
+      "popPct": 23.9
+     },
+     {
+      "county": "Wayne",
+      "popPct": 20.5
+     },
+     {
+      "county": "Appanoose",
+      "popPct": 2.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lucas",
+      "popPct": 27.2
+     },
+     {
+      "county": "Clarke",
+      "popPct": 26.2
+     },
+     {
+      "county": "Decatur",
+      "popPct": 23.9
+     },
+     {
+      "county": "Wayne",
+      "popPct": 20.5
+     },
+     {
+      "county": "Appanoose",
+      "popPct": 2.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Page",
+      "popPct": 53.2
+     },
+     {
+      "county": "Taylor",
+      "popPct": 20.7
+     },
+     {
+      "county": "Ringgold",
+      "popPct": 16.4
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 9.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31767,
+    "pres2020New": 41.6,
+    "pres2020Old": 46.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-24; it draws from the old HD-27 (89%), the old HD-28 (9%), the old HD-80 (2%). Counties: gained Lucas (27%), Clarke (26%), Decatur (24%) and 2 more; lost Page, Taylor, Ringgold, Montgomery. 2020 presidential margin R+46.4 on the 2016\u20132020 lines \u2192 R+41.6 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 88.5,
+      "key": "81",
+      "popPct": 95.9
+     },
+     {
+      "areaPct": 11.5,
+      "key": "80",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Wapello",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Wapello",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Warren",
+      "popPct": 52.4
+     },
+     {
+      "county": "Madison",
+      "popPct": 46.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31972,
+    "pres2020New": 20.0,
+    "pres2020Old": 25.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-25; it draws from the old HD-81 (96%), the old HD-80 (4%). Counties: gained Wapello (100%); lost Warren, Madison. 2020 presidential margin R+25.2 on the 2016\u20132020 lines \u2192 R+20.0 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 67.3,
+      "key": "80",
+      "popPct": 71.3
+     },
+     {
+      "areaPct": 32.7,
+      "key": "82",
+      "popPct": 28.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Appanoose",
+      "popPct": 36.6
+     },
+     {
+      "county": "Davis",
+      "popPct": 28.6
+     },
+     {
+      "county": "Monroe",
+      "popPct": 23.9
+     },
+     {
+      "county": "Wapello",
+      "popPct": 10.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Appanoose",
+      "popPct": 36.6
+     },
+     {
+      "county": "Davis",
+      "popPct": 28.6
+     },
+     {
+      "county": "Monroe",
+      "popPct": 23.9
+     },
+     {
+      "county": "Wapello",
+      "popPct": 10.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Warren",
+      "popPct": 99.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31768,
+    "pres2020New": 45.2,
+    "pres2020Old": 16.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-26; it draws from the old HD-80 (71%), the old HD-82 (29%). Counties: gained Appanoose (37%), Davis (29%), Monroe (24%) and 1 more; lost Warren. 2020 presidential margin R+16.2 on the 2016\u20132020 lines \u2192 R+45.2 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 67.4,
+      "key": "44",
+      "popPct": 80.9
+     },
+     {
+      "areaPct": 32.6,
+      "key": "19",
+      "popPct": 19.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dallas",
+      "popPct": 98.9
+     },
+     {
+      "county": "Polk",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dallas",
+      "popPct": 98.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Clarke",
+      "popPct": 33.0
+     },
+     {
+      "county": "Decatur",
+      "popPct": 25.6
+     },
+     {
+      "county": "Wayne",
+      "popPct": 21.9
+     },
+     {
+      "county": "Lucas",
+      "popPct": 19.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31708,
+    "pres2020New": -3.2,
+    "pres2020Old": 41.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-27; it draws from the old HD-44 (81%), the old HD-19 (19%). Counties: gained Dallas (99%); lost Clarke, Decatur, Wayne, Lucas. 2020 presidential margin R+41.1 on the 2016\u20132020 lines \u2192 D+3.2 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 11.4,
+      "key": "44",
+      "popPct": 57.7
+     },
+     {
+      "areaPct": 88.6,
+      "key": "19",
+      "popPct": 42.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dallas",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dallas",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Marion",
+      "popPct": 67.5
+     },
+     {
+      "county": "Jasper",
+      "popPct": 23.2
+     },
+     {
+      "county": "Lucas",
+      "popPct": 9.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32112,
+    "pres2020New": -0.2,
+    "pres2020Old": 35.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-28; it draws from the old HD-44 (58%), the old HD-19 (42%). Counties: gained Dallas (100%); lost Marion, Jasper, Lucas. 2020 presidential margin R+35.6 on the 2016\u20132020 lines \u2192 D+0.2 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 79.6,
+      "key": "33",
+      "popPct": 86.5
+     },
+     {
+      "areaPct": 6.2,
+      "key": "31",
+      "popPct": 10.8
+     },
+     {
+      "areaPct": 14.1,
+      "key": "30",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Jasper",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31902,
+    "pres2020New": -24.0,
+    "pres2020Old": 15.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-29; it draws from the old HD-33 (86%), the old HD-31 (11%), the old HD-30 (3%). Counties: gained Polk (100%); lost Jasper. 2020 presidential margin R+15.9 on the 2016\u20132020 lines \u2192 D+24.0 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 44.9,
+      "key": "5",
+      "popPct": 48.9
+     },
+     {
+      "areaPct": 46.5,
+      "key": "4",
+      "popPct": 46.9
+     },
+     {
+      "areaPct": 8.5,
+      "key": "3",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sioux",
+      "popPct": 50.4
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 49.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "O'Brien",
+      "popPct": 47.1
+     },
+     {
+      "county": "Cherokee",
+      "popPct": 39.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31959,
+    "pres2020New": 51.9,
+    "pres2020Old": 52.5,
+    "retainedAreaPct": 8.5,
+    "retainedPopPct": 4.2,
+    "text": "A new footprint: only 4% of its population was in the 2016\u20132020 HD-3; it draws from the old HD-5 (49%), the old HD-4 (47%). Counties: lost O'Brien, Cherokee. 2020 presidential margin R+52.5 on the 2016\u20132020 lines \u2192 R+51.9 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 38.7,
+      "key": "34",
+      "popPct": 72.9
+     },
+     {
+      "areaPct": 53.8,
+      "key": "41",
+      "popPct": 14.0
+     },
+     {
+      "areaPct": 7.5,
+      "key": "33",
+      "popPct": 13.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31892,
+    "pres2020New": -21.2,
+    "pres2020Old": 12.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-30; it draws from the old HD-34 (73%), the old HD-41 (14%), the old HD-33 (13%). Entirely in Polk County. 2020 presidential margin R+12.2 on the 2016\u20132020 lines \u2192 D+21.2 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 84.4,
+      "key": "42",
+      "popPct": 72.7
+     },
+     {
+      "areaPct": 10.9,
+      "key": "43",
+      "popPct": 20.0
+     },
+     {
+      "areaPct": 4.6,
+      "key": "44",
+      "popPct": 7.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 92.6
+     },
+     {
+      "county": "Dallas",
+      "popPct": 7.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dallas",
+      "popPct": 7.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 32062,
+    "pres2020New": -17.7,
+    "pres2020Old": -5.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-31; it draws from the old HD-42 (73%), the old HD-43 (20%), the old HD-44 (7%). Counties: gained Dallas (7%). 2020 presidential margin D+5.4 on the 2016\u20132020 lines \u2192 D+17.7 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 83.8,
+      "key": "43",
+      "popPct": 77.6
+     },
+     {
+      "areaPct": 16.1,
+      "key": "42",
+      "popPct": 22.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 32175,
+    "pres2020New": -20.9,
+    "pres2020Old": -33.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-32; it draws from the old HD-43 (78%), the old HD-42 (22%). Entirely in Polk County. 2020 presidential margin D+33.2 on the 2016\u20132020 lines \u2192 D+20.9 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 71.9,
+      "key": "32",
+      "popPct": 68.3
+     },
+     {
+      "areaPct": 17.2,
+      "key": "31",
+      "popPct": 20.0
+     },
+     {
+      "areaPct": 8.3,
+      "key": "35",
+      "popPct": 9.6
+     },
+     {
+      "areaPct": 2.2,
+      "key": "38",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31915,
+    "pres2020New": -33.4,
+    "pres2020Old": -26.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-33; it draws from the old HD-32 (68%), the old HD-31 (20%), the old HD-35 (10%) and 1 more. Entirely in Polk County. 2020 presidential margin D+26.6 on the 2016\u20132020 lines \u2192 D+33.4 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 79.6,
+      "key": "35",
+      "popPct": 73.2
+     },
+     {
+      "areaPct": 11.9,
+      "key": "41",
+      "popPct": 17.8
+     },
+     {
+      "areaPct": 8.4,
+      "key": "36",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31860,
+    "pres2020New": -52.8,
+    "pres2020Old": -31.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-34; it draws from the old HD-35 (73%), the old HD-41 (18%), the old HD-36 (9%). Entirely in Polk County. 2020 presidential margin D+31.1 on the 2016\u20132020 lines \u2192 D+52.8 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 81.1,
+      "key": "36",
+      "popPct": 86.3
+     },
+     {
+      "areaPct": 7.8,
+      "key": "35",
+      "popPct": 7.0
+     },
+     {
+      "areaPct": 11.1,
+      "key": "41",
+      "popPct": 6.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31902,
+    "pres2020New": -39.4,
+    "pres2020Old": -44.9,
+    "retainedAreaPct": 7.8,
+    "retainedPopPct": 7.0,
+    "text": "A new footprint: only 7% of its population was in the 2016\u20132020 HD-35; it draws from the old HD-36 (86%), the old HD-41 (7%). Entirely in Polk County. 2020 presidential margin D+44.9 on the 2016\u20132020 lines \u2192 D+39.4 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 64.9,
+      "key": "41",
+      "popPct": 57.6
+     },
+     {
+      "areaPct": 30.7,
+      "key": "34",
+      "popPct": 36.2
+     },
+     {
+      "areaPct": 4.4,
+      "key": "33",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31939,
+    "pres2020New": -52.2,
+    "pres2020Old": -39.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-36; it draws from the old HD-41 (58%), the old HD-34 (36%), the old HD-33 (6%). Entirely in Polk County. 2020 presidential margin D+39.7 on the 2016\u20132020 lines \u2192 D+52.2 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 35.1,
+      "key": "79",
+      "popPct": 51.7
+     },
+     {
+      "areaPct": 54.0,
+      "key": "28",
+      "popPct": 39.2
+     },
+     {
+      "areaPct": 10.9,
+      "key": "29",
+      "popPct": 9.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 70.1
+     },
+     {
+      "county": "Jasper",
+      "popPct": 18.4
+     },
+     {
+      "county": "Mahaska",
+      "popPct": 11.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Marion",
+      "popPct": 70.1
+     },
+     {
+      "county": "Jasper",
+      "popPct": 18.4
+     },
+     {
+      "county": "Mahaska",
+      "popPct": 11.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31835,
+    "pres2020New": 41.1,
+    "pres2020Old": 1.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-37; it draws from the old HD-79 (52%), the old HD-28 (39%), the old HD-29 (9%). Counties: gained Marion (70%), Jasper (18%), Mahaska (12%); lost Polk. 2020 presidential margin R+1.8 on the 2016\u20132020 lines \u2192 R+41.1 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 86.2,
+      "key": "29",
+      "popPct": 87.0
+     },
+     {
+      "areaPct": 13.7,
+      "key": "28",
+      "popPct": 13.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jasper",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jasper",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31898,
+    "pres2020New": 18.6,
+    "pres2020Old": 2.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-38; it draws from the old HD-29 (87%), the old HD-28 (13%). Counties: gained Jasper (100%); lost Polk. 2020 presidential margin R+2.3 on the 2016\u20132020 lines \u2192 R+18.6 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 66.2,
+      "key": "31",
+      "popPct": 60.0
+     },
+     {
+      "areaPct": 15.2,
+      "key": "32",
+      "popPct": 29.7
+     },
+     {
+      "areaPct": 18.3,
+      "key": "30",
+      "popPct": 10.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31720,
+    "pres2020New": -5.2,
+    "pres2020Old": -3.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-39; it draws from the old HD-31 (60%), the old HD-32 (30%), the old HD-30 (10%). Entirely in Polk County. 2020 presidential margin D+3.3 on the 2016\u20132020 lines \u2192 D+5.2 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 25.3,
+      "key": "4",
+      "popPct": 56.2
+     },
+     {
+      "areaPct": 63.1,
+      "key": "1",
+      "popPct": 37.6
+     },
+     {
+      "areaPct": 11.5,
+      "key": "3",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sioux",
+      "popPct": 62.3
+     },
+     {
+      "county": "Lyon",
+      "popPct": 37.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lyon",
+      "popPct": 37.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31702,
+    "pres2020New": 71.1,
+    "pres2020Old": 65.4,
+    "retainedAreaPct": 25.3,
+    "retainedPopPct": 56.2,
+    "text": "Kept 56% of its population from the 2016\u20132020 HD-4; gained the rest from the old HD-1 (38%), the old HD-3 (6%). Counties: gained Lyon (38%). 2020 presidential margin R+65.4 on the 2016\u20132020 lines \u2192 R+71.1 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 50.3,
+      "key": "30",
+      "popPct": 59.3
+     },
+     {
+      "areaPct": 49.1,
+      "key": "38",
+      "popPct": 40.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 32292,
+    "pres2020New": 4.0,
+    "pres2020Old": -12.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-40; it draws from the old HD-30 (59%), the old HD-38 (40%). Entirely in Polk County. 2020 presidential margin D+12.4 on the 2016\u20132020 lines \u2192 R+4.0 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 98.2,
+      "key": "37",
+      "popPct": 98.6
+     },
+     {
+      "areaPct": 1.8,
+      "key": "38",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 32099,
+    "pres2020New": -0.4,
+    "pres2020Old": -50.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-41; it draws from the old HD-37 (99%), the old HD-38 (1%). Entirely in Polk County. 2020 presidential margin D+50.7 on the 2016\u20132020 lines \u2192 D+0.4 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 79.8,
+      "key": "38",
+      "popPct": 60.1
+     },
+     {
+      "areaPct": 20.2,
+      "key": "37",
+      "popPct": 39.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Warren",
+      "popPct": 2.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31840,
+    "pres2020New": -0.5,
+    "pres2020Old": -17.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-42; it draws from the old HD-38 (60%), the old HD-37 (40%). Counties: lost Warren. 2020 presidential margin D+17.4 on the 2016\u20132020 lines \u2192 D+0.5 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 66.8,
+      "key": "39",
+      "popPct": 83.7
+     },
+     {
+      "areaPct": 33.2,
+      "key": "38",
+      "popPct": 16.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 32171,
+    "pres2020New": -4.8,
+    "pres2020Old": -20.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-43; it draws from the old HD-39 (84%), the old HD-38 (16%). Entirely in Polk County. 2020 presidential margin D+20.0 on the 2016\u20132020 lines \u2192 D+4.8 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 91.8,
+      "key": "40",
+      "popPct": 97.5
+     },
+     {
+      "areaPct": 8.0,
+      "key": "36",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Dallas",
+      "popPct": 99.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31853,
+    "pres2020New": -12.3,
+    "pres2020Old": -7.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-44; it draws from the old HD-40 (98%), the old HD-36 (2%). Counties: lost Dallas. 2020 presidential margin D+7.1 on the 2016\u20132020 lines \u2192 D+12.3 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 59.1,
+      "key": "30",
+      "popPct": 60.7
+     },
+     {
+      "areaPct": 11.4,
+      "key": "19",
+      "popPct": 20.0
+     },
+     {
+      "areaPct": 7.5,
+      "key": "39",
+      "popPct": 7.3
+     },
+     {
+      "areaPct": 19.2,
+      "key": "37",
+      "popPct": 6.7
+     },
+     {
+      "areaPct": 2.7,
+      "key": "38",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Polk",
+      "popPct": 99.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Story",
+      "popPct": 99.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31762,
+    "pres2020New": 21.8,
+    "pres2020Old": -34.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-45; it draws from the old HD-30 (61%), the old HD-19 (20%), the old HD-39 (7%) and 2 more. Counties: gained Polk (100%); lost Story. 2020 presidential margin D+34.1 on the 2016\u20132020 lines \u2192 R+21.8 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 92.1,
+      "key": "19",
+      "popPct": 51.4
+     },
+     {
+      "areaPct": 7.9,
+      "key": "39",
+      "popPct": 48.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 51.1
+     },
+     {
+      "county": "Dallas",
+      "popPct": 48.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Polk",
+      "popPct": 51.1
+     },
+     {
+      "county": "Dallas",
+      "popPct": 48.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Story",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31678,
+    "pres2020New": 4.8,
+    "pres2020Old": -33.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-46; it draws from the old HD-19 (51%), the old HD-39 (49%). Counties: gained Polk (51%), Dallas (49%); lost Story. 2020 presidential margin D+33.9 on the 2016\u20132020 lines \u2192 R+4.8 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 55.9,
+      "key": "20",
+      "popPct": 64.2
+     },
+     {
+      "areaPct": 41.2,
+      "key": "47",
+      "popPct": 27.6
+     },
+     {
+      "areaPct": 2.9,
+      "key": "19",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dallas",
+      "popPct": 39.1
+     },
+     {
+      "county": "Guthrie",
+      "popPct": 33.0
+     },
+     {
+      "county": "Greene",
+      "popPct": 27.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dallas",
+      "popPct": 39.1
+     },
+     {
+      "county": "Guthrie",
+      "popPct": 33.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Boone",
+      "popPct": 70.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31832,
+    "pres2020New": 24.1,
+    "pres2020Old": 19.2,
+    "retainedAreaPct": 41.2,
+    "retainedPopPct": 27.6,
+    "text": "A new footprint: only 28% of its population was in the 2016\u20132020 HD-47; it draws from the old HD-20 (64%), the old HD-19 (8%). Counties: gained Dallas (39%), Guthrie (33%); lost Boone. 2020 presidential margin R+19.2 on the 2016\u20132020 lines \u2192 R+24.1 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 63.8,
+      "key": "47",
+      "popPct": 65.1
+     },
+     {
+      "areaPct": 32.5,
+      "key": "48",
+      "popPct": 22.9
+     },
+     {
+      "areaPct": 3.7,
+      "key": "45",
+      "popPct": 11.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Boone",
+      "popPct": 83.3
+     },
+     {
+      "county": "Story",
+      "popPct": 16.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Hamilton",
+      "popPct": 47.1
+     },
+     {
+      "county": "Webster",
+      "popPct": 12.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32106,
+    "pres2020New": 11.3,
+    "pres2020Old": 20.0,
+    "retainedAreaPct": 32.5,
+    "retainedPopPct": 22.9,
+    "text": "A new footprint: only 23% of its population was in the 2016\u20132020 HD-48; it draws from the old HD-47 (65%), the old HD-45 (12%). Counties: lost Hamilton, Webster. 2020 presidential margin R+20.0 on the 2016\u20132020 lines \u2192 R+11.3 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 96.7,
+      "key": "45",
+      "popPct": 54.8
+     },
+     {
+      "areaPct": 3.3,
+      "key": "46",
+      "popPct": 45.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Story",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Hardin",
+      "popPct": 21.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31861,
+    "pres2020New": -36.2,
+    "pres2020Old": 19.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-49; it draws from the old HD-45 (55%), the old HD-46 (45%). Counties: lost Hardin. 2020 presidential margin R+19.3 on the 2016\u20132020 lines \u2192 D+36.2 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 62.2,
+      "key": "3",
+      "popPct": 71.1
+     },
+     {
+      "areaPct": 27.7,
+      "key": "1",
+      "popPct": 19.4
+     },
+     {
+      "areaPct": 10.0,
+      "key": "11",
+      "popPct": 9.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "O'Brien",
+      "popPct": 44.2
+     },
+     {
+      "county": "Cherokee",
+      "popPct": 26.7
+     },
+     {
+      "county": "Osceola",
+      "popPct": 19.4
+     },
+     {
+      "county": "Buena Vista",
+      "popPct": 9.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "O'Brien",
+      "popPct": 44.2
+     },
+     {
+      "county": "Cherokee",
+      "popPct": 26.7
+     },
+     {
+      "county": "Osceola",
+      "popPct": 19.4
+     },
+     {
+      "county": "Buena Vista",
+      "popPct": 9.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Plymouth",
+      "popPct": 80.0
+     },
+     {
+      "county": "Woodbury",
+      "popPct": 20.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31904,
+    "pres2020New": 50.8,
+    "pres2020Old": 48.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-5; it draws from the old HD-3 (71%), the old HD-1 (19%), the old HD-11 (10%). Counties: gained O'Brien (44%), Cherokee (27%), Osceola (19%) and 1 more; lost Plymouth, Woodbury. 2020 presidential margin R+48.9 on the 2016\u20132020 lines \u2192 R+50.8 on the current lines.",
+    "toEra": "current"
+   },
+   "50": {
+    "contributors": [
+     {
+      "areaPct": 62.8,
+      "key": "46",
+      "popPct": 57.0
+     },
+     {
+      "areaPct": 29.8,
+      "key": "45",
+      "popPct": 39.2
+     },
+     {
+      "areaPct": 7.4,
+      "key": "48",
+      "popPct": 3.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Story",
+      "popPct": 98.9
+     },
+     {
+      "county": "Boone",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Story",
+      "popPct": 98.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Grundy",
+      "popPct": 41.5
+     },
+     {
+      "county": "Hardin",
+      "popPct": 33.9
+     },
+     {
+      "county": "Butler",
+      "popPct": 24.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31630,
+    "pres2020New": -35.6,
+    "pres2020Old": 34.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-50; it draws from the old HD-46 (57%), the old HD-45 (39%), the old HD-48 (4%). Counties: gained Story (99%); lost Grundy, Hardin, Butler. 2020 presidential margin R+34.4 on the 2016\u20132020 lines \u2192 D+35.6 on the current lines.",
+    "toEra": "current"
+   },
+   "51": {
+    "contributors": [
+     {
+      "areaPct": 42.5,
+      "key": "49",
+      "popPct": 59.6
+     },
+     {
+      "areaPct": 29.5,
+      "key": "72",
+      "popPct": 16.3
+     },
+     {
+      "areaPct": 3.4,
+      "key": "48",
+      "popPct": 11.7
+     },
+     {
+      "areaPct": 20.2,
+      "key": "71",
+      "popPct": 9.2
+     },
+     {
+      "areaPct": 4.4,
+      "key": "45",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Story",
+      "popPct": 74.5
+     },
+     {
+      "county": "Marshall",
+      "popPct": 25.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Story",
+      "popPct": 74.5
+     },
+     {
+      "county": "Marshall",
+      "popPct": 25.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Mitchell",
+      "popPct": 35.5
+     },
+     {
+      "county": "Howard",
+      "popPct": 31.6
+     },
+     {
+      "county": "Worth",
+      "popPct": 24.8
+     },
+     {
+      "county": "Winneshiek",
+      "popPct": 8.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32179,
+    "pres2020New": 17.7,
+    "pres2020Old": 28.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-51; it draws from the old HD-49 (60%), the old HD-72 (16%), the old HD-48 (12%) and 2 more. Counties: gained Story (74%), Marshall (25%); lost Mitchell, Howard, Worth, Winneshiek. 2020 presidential margin R+28.0 on the 2016\u20132020 lines \u2192 R+17.7 on the current lines.",
+    "toEra": "current"
+   },
+   "52": {
+    "contributors": [
+     {
+      "areaPct": 12.5,
+      "key": "71",
+      "popPct": 86.0
+     },
+     {
+      "areaPct": 87.5,
+      "key": "72",
+      "popPct": 14.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marshall",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Marshall",
+      "popPct": 99.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Floyd",
+      "popPct": 53.1
+     },
+     {
+      "county": "Chickasaw",
+      "popPct": 40.9
+     },
+     {
+      "county": "Cerro Gordo",
+      "popPct": 6.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31914,
+    "pres2020New": -0.9,
+    "pres2020Old": 25.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-52; it draws from the old HD-71 (86%), the old HD-72 (14%). Counties: gained Marshall (100%); lost Floyd, Chickasaw, Cerro Gordo. 2020 presidential margin R+25.1 on the 2016\u20132020 lines \u2192 D+0.9 on the current lines.",
+    "toEra": "current"
+   },
+   "53": {
+    "contributors": [
+     {
+      "areaPct": 50.4,
+      "key": "76",
+      "popPct": 58.7
+     },
+     {
+      "areaPct": 49.6,
+      "key": "72",
+      "popPct": 41.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Poweshiek",
+      "popPct": 58.6
+     },
+     {
+      "county": "Tama",
+      "popPct": 41.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Poweshiek",
+      "popPct": 58.6
+     },
+     {
+      "county": "Tama",
+      "popPct": 41.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cerro Gordo",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31784,
+    "pres2020New": 13.7,
+    "pres2020Old": -3.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-53; it draws from the old HD-76 (59%), the old HD-72 (41%). Counties: gained Poweshiek (59%), Tama (41%); lost Cerro Gordo. 2020 presidential margin D+3.4 on the 2016\u20132020 lines \u2192 R+13.7 on the current lines.",
+    "toEra": "current"
+   },
+   "54": {
+    "contributors": [
+     {
+      "areaPct": 66.6,
+      "key": "50",
+      "popPct": 70.3
+     },
+     {
+      "areaPct": 24.0,
+      "key": "49",
+      "popPct": 21.3
+     },
+     {
+      "areaPct": 2.8,
+      "key": "63",
+      "popPct": 5.1
+     },
+     {
+      "areaPct": 6.5,
+      "key": "60",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hardin",
+      "popPct": 52.9
+     },
+     {
+      "county": "Grundy",
+      "popPct": 38.6
+     },
+     {
+      "county": "Black Hawk",
+      "popPct": 8.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hardin",
+      "popPct": 52.9
+     },
+     {
+      "county": "Grundy",
+      "popPct": 38.6
+     },
+     {
+      "county": "Black Hawk",
+      "popPct": 8.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cerro Gordo",
+      "popPct": 40.5
+     },
+     {
+      "county": "Franklin",
+      "popPct": 34.9
+     },
+     {
+      "county": "Butler",
+      "popPct": 24.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31862,
+    "pres2020New": 33.5,
+    "pres2020Old": 30.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-54; it draws from the old HD-50 (70%), the old HD-49 (21%), the old HD-63 (5%) and 1 more. Counties: gained Hardin (53%), Grundy (39%), Black Hawk (8%); lost Cerro Gordo, Franklin, Butler. 2020 presidential margin R+30.9 on the 2016\u20132020 lines \u2192 R+33.5 on the current lines.",
+    "toEra": "current"
+   },
+   "55": {
+    "contributors": [
+     {
+      "areaPct": 43.3,
+      "key": "48",
+      "popPct": 48.4
+     },
+     {
+      "areaPct": 41.3,
+      "key": "54",
+      "popPct": 31.3
+     },
+     {
+      "areaPct": 2.7,
+      "key": "49",
+      "popPct": 16.2
+     },
+     {
+      "areaPct": 12.7,
+      "key": "8",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hamilton",
+      "popPct": 46.9
+     },
+     {
+      "county": "Franklin",
+      "popPct": 31.4
+     },
+     {
+      "county": "Story",
+      "popPct": 17.6
+     },
+     {
+      "county": "Wright",
+      "popPct": 4.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hamilton",
+      "popPct": 46.9
+     },
+     {
+      "county": "Franklin",
+      "popPct": 31.4
+     },
+     {
+      "county": "Story",
+      "popPct": 17.6
+     },
+     {
+      "county": "Wright",
+      "popPct": 4.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Winneshiek",
+      "popPct": 60.9
+     },
+     {
+      "county": "Fayette",
+      "popPct": 31.5
+     },
+     {
+      "county": "Clayton",
+      "popPct": 7.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32036,
+    "pres2020New": 26.8,
+    "pres2020Old": 9.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-55; it draws from the old HD-48 (48%), the old HD-54 (31%), the old HD-49 (16%) and 1 more. Counties: gained Hamilton (47%), Franklin (31%), Story (18%) and 1 more; lost Winneshiek, Fayette, Clayton. 2020 presidential margin R+9.8 on the 2016\u20132020 lines \u2192 R+26.8 on the current lines.",
+    "toEra": "current"
+   },
+   "56": {
+    "contributors": [
+     {
+      "areaPct": 69.1,
+      "key": "8",
+      "popPct": 70.0
+     },
+     {
+      "areaPct": 30.9,
+      "key": "10",
+      "popPct": 30.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Wright",
+      "popPct": 36.3
+     },
+     {
+      "county": "Hancock",
+      "popPct": 33.6
+     },
+     {
+      "county": "Humboldt",
+      "popPct": 29.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Wright",
+      "popPct": 36.3
+     },
+     {
+      "county": "Hancock",
+      "popPct": 33.6
+     },
+     {
+      "county": "Humboldt",
+      "popPct": 29.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Clayton",
+      "popPct": 51.2
+     },
+     {
+      "county": "Allamakee",
+      "popPct": 48.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32024,
+    "pres2020New": 40.6,
+    "pres2020Old": 30.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-56; it draws from the old HD-8 (70%), the old HD-10 (30%). Counties: gained Wright (36%), Hancock (34%), Humboldt (30%); lost Clayton, Allamakee. 2020 presidential margin R+30.4 on the 2016\u20132020 lines \u2192 R+40.6 on the current lines.",
+    "toEra": "current"
+   },
+   "57": {
+    "contributors": [
+     {
+      "areaPct": 20.1,
+      "key": "63",
+      "popPct": 55.1
+     },
+     {
+      "areaPct": 29.7,
+      "key": "50",
+      "popPct": 22.8
+     },
+     {
+      "areaPct": 50.1,
+      "key": "54",
+      "popPct": 22.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bremer",
+      "popPct": 55.2
+     },
+     {
+      "county": "Butler",
+      "popPct": 44.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Bremer",
+      "popPct": 55.2
+     },
+     {
+      "county": "Butler",
+      "popPct": 44.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Dubuque",
+      "popPct": 99.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31918,
+    "pres2020New": 22.2,
+    "pres2020Old": 22.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-57; it draws from the old HD-63 (55%), the old HD-50 (23%), the old HD-54 (22%). Counties: gained Bremer (55%), Butler (45%); lost Dubuque. 2020 presidential margin R+22.2 on the 2016\u20132020 lines \u2192 R+22.2 on the current lines.",
+    "toEra": "current"
+   },
+   "58": {
+    "contributors": [
+     {
+      "areaPct": 75.9,
+      "key": "52",
+      "popPct": 77.0
+     },
+     {
+      "areaPct": 24.0,
+      "key": "63",
+      "popPct": 23.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Floyd",
+      "popPct": 39.6
+     },
+     {
+      "county": "Chickasaw",
+      "popPct": 37.4
+     },
+     {
+      "county": "Bremer",
+      "popPct": 22.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Floyd",
+      "popPct": 39.6
+     },
+     {
+      "county": "Chickasaw",
+      "popPct": 37.4
+     },
+     {
+      "county": "Bremer",
+      "popPct": 22.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Jackson",
+      "popPct": 63.8
+     },
+     {
+      "county": "Jones",
+      "popPct": 26.6
+     },
+     {
+      "county": "Dubuque",
+      "popPct": 9.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32185,
+    "pres2020New": 26.3,
+    "pres2020Old": 26.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-58; it draws from the old HD-52 (77%), the old HD-63 (23%). Counties: gained Floyd (40%), Chickasaw (37%), Bremer (23%); lost Jackson, Jones, Dubuque. 2020 presidential margin R+26.5 on the 2016\u20132020 lines \u2192 R+26.3 on the current lines.",
+    "toEra": "current"
+   },
+   "59": {
+    "contributors": [
+     {
+      "areaPct": 41.2,
+      "key": "53",
+      "popPct": 92.5
+     },
+     {
+      "areaPct": 38.8,
+      "key": "52",
+      "popPct": 5.6
+     },
+     {
+      "areaPct": 19.9,
+      "key": "54",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cerro Gordo",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cerro Gordo",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Black Hawk",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32090,
+    "pres2020New": -0.4,
+    "pres2020Old": -16.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-59; it draws from the old HD-53 (92%), the old HD-52 (6%), the old HD-54 (2%). Counties: gained Cerro Gordo (100%); lost Black Hawk. 2020 presidential margin D+16.8 on the 2016\u20132020 lines \u2192 D+0.4 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 54.5,
+      "key": "11",
+      "popPct": 55.8
+     },
+     {
+      "areaPct": 45.5,
+      "key": "2",
+      "popPct": 44.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Buena Vista",
+      "popPct": 55.8
+     },
+     {
+      "county": "Clay",
+      "popPct": 44.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Buena Vista",
+      "popPct": 55.8
+     },
+     {
+      "county": "Clay",
+      "popPct": 44.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Woodbury",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31884,
+    "pres2020New": 29.9,
+    "pres2020Old": 23.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-6; it draws from the old HD-11 (56%), the old HD-2 (44%). Counties: gained Buena Vista (56%), Clay (44%); lost Woodbury. 2020 presidential margin R+23.2 on the 2016\u20132020 lines \u2192 R+29.9 on the current lines.",
+    "toEra": "current"
+   },
+   "60": {
+    "contributors": [
+     {
+      "areaPct": 74.6,
+      "key": "51",
+      "popPct": 56.4
+     },
+     {
+      "areaPct": 18.3,
+      "key": "54",
+      "popPct": 34.6
+     },
+     {
+      "areaPct": 7.0,
+      "key": "52",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cerro Gordo",
+      "popPct": 34.5
+     },
+     {
+      "county": "Mitchell",
+      "popPct": 33.1
+     },
+     {
+      "county": "Worth",
+      "popPct": 23.2
+     },
+     {
+      "county": "Floyd",
+      "popPct": 9.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cerro Gordo",
+      "popPct": 34.5
+     },
+     {
+      "county": "Mitchell",
+      "popPct": 33.1
+     },
+     {
+      "county": "Worth",
+      "popPct": 23.2
+     },
+     {
+      "county": "Floyd",
+      "popPct": 9.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Black Hawk",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31903,
+    "pres2020New": 25.7,
+    "pres2020Old": -2.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-60; it draws from the old HD-51 (56%), the old HD-54 (35%), the old HD-52 (9%). Counties: gained Cerro Gordo (34%), Mitchell (33%), Worth (23%) and 1 more; lost Black Hawk. 2020 presidential margin D+2.3 on the 2016\u20132020 lines \u2192 R+25.7 on the current lines.",
+    "toEra": "current"
+   },
+   "61": {
+    "contributors": [
+     {
+      "areaPct": 50.1,
+      "key": "61",
+      "popPct": 54.2
+     },
+     {
+      "areaPct": 35.6,
+      "key": "60",
+      "popPct": 33.1
+     },
+     {
+      "areaPct": 14.3,
+      "key": "62",
+      "popPct": 12.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Black Hawk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 32132,
+    "pres2020New": -12.8,
+    "pres2020Old": -11.3,
+    "retainedAreaPct": 50.1,
+    "retainedPopPct": 54.2,
+    "text": "Kept 54% of its population from the 2016\u20132020 HD-61; gained the rest from the old HD-60 (33%), the old HD-62 (13%). Entirely in Black Hawk County. 2020 presidential margin D+11.3 on the 2016\u20132020 lines \u2192 D+12.8 on the current lines.",
+    "toEra": "current"
+   },
+   "62": {
+    "contributors": [
+     {
+      "areaPct": 86.5,
+      "key": "62",
+      "popPct": 57.8
+     },
+     {
+      "areaPct": 8.4,
+      "key": "61",
+      "popPct": 29.0
+     },
+     {
+      "areaPct": 5.1,
+      "key": "60",
+      "popPct": 13.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Black Hawk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 32192,
+    "pres2020New": -32.5,
+    "pres2020Old": -24.6,
+    "retainedAreaPct": 86.5,
+    "retainedPopPct": 57.8,
+    "text": "Kept 58% of its population from the 2016\u20132020 HD-62; gained the rest from the old HD-61 (29%), the old HD-60 (13%). Entirely in Black Hawk County. 2020 presidential margin D+24.6 on the 2016\u20132020 lines \u2192 D+32.5 on the current lines.",
+    "toEra": "current"
+   },
+   "63": {
+    "contributors": [
+     {
+      "areaPct": 48.7,
+      "key": "55",
+      "popPct": 62.9
+     },
+     {
+      "areaPct": 51.3,
+      "key": "51",
+      "popPct": 37.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Winneshiek",
+      "popPct": 62.8
+     },
+     {
+      "county": "Howard",
+      "popPct": 29.6
+     },
+     {
+      "county": "Fayette",
+      "popPct": 7.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Winneshiek",
+      "popPct": 62.8
+     },
+     {
+      "county": "Howard",
+      "popPct": 29.6
+     },
+     {
+      "county": "Fayette",
+      "popPct": 7.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Bremer",
+      "popPct": 80.5
+     },
+     {
+      "county": "Black Hawk",
+      "popPct": 19.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31868,
+    "pres2020New": 13.7,
+    "pres2020Old": 18.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-63; it draws from the old HD-55 (63%), the old HD-51 (37%). Counties: gained Winneshiek (63%), Howard (30%), Fayette (7%); lost Bremer, Black Hawk. 2020 presidential margin R+18.8 on the 2016\u20132020 lines \u2192 R+13.7 on the current lines.",
+    "toEra": "current"
+   },
+   "64": {
+    "contributors": [
+     {
+      "areaPct": 90.3,
+      "key": "56",
+      "popPct": 90.8
+     },
+     {
+      "areaPct": 7.3,
+      "key": "55",
+      "popPct": 6.7
+     },
+     {
+      "areaPct": 2.4,
+      "key": "57",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clayton",
+      "popPct": 53.2
+     },
+     {
+      "county": "Allamakee",
+      "popPct": 44.2
+     },
+     {
+      "county": "Dubuque",
+      "popPct": 2.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Clayton",
+      "popPct": 53.2
+     },
+     {
+      "county": "Allamakee",
+      "popPct": 44.2
+     },
+     {
+      "county": "Dubuque",
+      "popPct": 2.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Buchanan",
+      "popPct": 64.7
+     },
+     {
+      "county": "Fayette",
+      "popPct": 35.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31920,
+    "pres2020New": 29.4,
+    "pres2020Old": 18.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-64; it draws from the old HD-56 (91%), the old HD-55 (7%), the old HD-57 (3%). Counties: gained Clayton (53%), Allamakee (44%), Dubuque (2%); lost Buchanan, Fayette. 2020 presidential margin R+18.9 on the 2016\u20132020 lines \u2192 R+29.4 on the current lines.",
+    "toEra": "current"
+   },
+   "65": {
+    "contributors": [
+     {
+      "areaPct": 92.5,
+      "key": "57",
+      "popPct": 98.4
+     },
+     {
+      "areaPct": 7.3,
+      "key": "58",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dubuque",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dubuque",
+      "popPct": 99.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31740,
+    "pres2020New": 21.4,
+    "pres2020Old": -35.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-65; it draws from the old HD-57 (98%), the old HD-58 (1%). Counties: gained Dubuque (100%); lost Linn. 2020 presidential margin D+35.7 on the 2016\u20132020 lines \u2192 R+21.4 on the current lines.",
+    "toEra": "current"
+   },
+   "66": {
+    "contributors": [
+     {
+      "areaPct": 83.5,
+      "key": "58",
+      "popPct": 60.7
+     },
+     {
+      "areaPct": 16.4,
+      "key": "96",
+      "popPct": 39.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jones",
+      "popPct": 64.5
+     },
+     {
+      "county": "Jackson",
+      "popPct": 35.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jones",
+      "popPct": 64.5
+     },
+     {
+      "county": "Jackson",
+      "popPct": 35.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31980,
+    "pres2020New": 25.9,
+    "pres2020Old": -19.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-66; it draws from the old HD-58 (61%), the old HD-96 (39%). Counties: gained Jones (64%), Jackson (35%); lost Linn. 2020 presidential margin D+19.1 on the 2016\u20132020 lines \u2192 R+25.9 on the current lines.",
+    "toEra": "current"
+   },
+   "67": {
+    "contributors": [
+     {
+      "areaPct": 61.8,
+      "key": "96",
+      "popPct": 55.2
+     },
+     {
+      "areaPct": 19.0,
+      "key": "64",
+      "popPct": 32.5
+     },
+     {
+      "areaPct": 4.0,
+      "key": "58",
+      "popPct": 7.5
+     },
+     {
+      "areaPct": 15.3,
+      "key": "95",
+      "popPct": 4.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Delaware",
+      "popPct": 55.1
+     },
+     {
+      "county": "Buchanan",
+      "popPct": 37.2
+     },
+     {
+      "county": "Dubuque",
+      "popPct": 7.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Delaware",
+      "popPct": 55.1
+     },
+     {
+      "county": "Buchanan",
+      "popPct": 37.2
+     },
+     {
+      "county": "Dubuque",
+      "popPct": 7.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31705,
+    "pres2020New": 27.6,
+    "pres2020Old": -8.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-67; it draws from the old HD-96 (55%), the old HD-64 (32%), the old HD-58 (8%) and 1 more. Counties: gained Delaware (55%), Buchanan (37%), Dubuque (8%); lost Linn. 2020 presidential margin D+8.5 on the 2016\u20132020 lines \u2192 R+27.6 on the current lines.",
+    "toEra": "current"
+   },
+   "68": {
+    "contributors": [
+     {
+      "areaPct": 59.4,
+      "key": "64",
+      "popPct": 60.1
+     },
+     {
+      "areaPct": 21.1,
+      "key": "55",
+      "popPct": 21.4
+     },
+     {
+      "areaPct": 16.1,
+      "key": "63",
+      "popPct": 13.8
+     },
+     {
+      "areaPct": 0.2,
+      "key": "62",
+      "popPct": 2.4
+     },
+     {
+      "areaPct": 3.3,
+      "key": "61",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fayette",
+      "popPct": 54.0
+     },
+     {
+      "county": "Buchanan",
+      "popPct": 27.6
+     },
+     {
+      "county": "Black Hawk",
+      "popPct": 18.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Fayette",
+      "popPct": 54.0
+     },
+     {
+      "county": "Buchanan",
+      "popPct": 27.6
+     },
+     {
+      "county": "Black Hawk",
+      "popPct": 18.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31770,
+    "pres2020New": 22.8,
+    "pres2020Old": -9.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-68; it draws from the old HD-64 (60%), the old HD-55 (21%), the old HD-63 (14%) and 2 more. Counties: gained Fayette (54%), Buchanan (28%), Black Hawk (18%); lost Linn. 2020 presidential margin D+9.4 on the 2016\u20132020 lines \u2192 R+22.8 on the current lines.",
+    "toEra": "current"
+   },
+   "69": {
+    "contributors": [
+     {
+      "areaPct": 91.2,
+      "key": "98",
+      "popPct": 85.2
+     },
+     {
+      "areaPct": 8.8,
+      "key": "97",
+      "popPct": 14.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clinton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Clinton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Linn",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32007,
+    "pres2020New": 2.8,
+    "pres2020Old": -16.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-69; it draws from the old HD-98 (85%), the old HD-97 (15%). Counties: gained Clinton (100%); lost Linn. 2020 presidential margin D+16.8 on the 2016\u20132020 lines \u2192 R+2.8 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 66.0,
+      "key": "10",
+      "popPct": 63.5
+     },
+     {
+      "areaPct": 28.0,
+      "key": "11",
+      "popPct": 30.7
+     },
+     {
+      "areaPct": 2.6,
+      "key": "48",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 3.4,
+      "key": "9",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Calhoun",
+      "popPct": 31.0
+     },
+     {
+      "county": "Sac",
+      "popPct": 30.7
+     },
+     {
+      "county": "Pocahontas",
+      "popPct": 22.0
+     },
+     {
+      "county": "Webster",
+      "popPct": 16.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Calhoun",
+      "popPct": 31.0
+     },
+     {
+      "county": "Sac",
+      "popPct": 30.7
+     },
+     {
+      "county": "Pocahontas",
+      "popPct": 22.0
+     },
+     {
+      "county": "Webster",
+      "popPct": 16.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Winnebago",
+      "popPct": 36.8
+     },
+     {
+      "county": "Emmet",
+      "popPct": 32.1
+     },
+     {
+      "county": "Kossuth",
+      "popPct": 30.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31944,
+    "pres2020New": 46.8,
+    "pres2020Old": 31.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-7; it draws from the old HD-10 (64%), the old HD-11 (31%), the old HD-48 (4%) and 1 more. Counties: gained Calhoun (31%), Sac (31%), Pocahontas (22%) and 1 more; lost Winnebago, Emmet, Kossuth. 2020 presidential margin R+31.4 on the 2016\u20132020 lines \u2192 R+46.8 on the current lines.",
+    "toEra": "current"
+   },
+   "70": {
+    "contributors": [
+     {
+      "areaPct": 80.1,
+      "key": "97",
+      "popPct": 69.1
+     },
+     {
+      "areaPct": 14.8,
+      "key": "58",
+      "popPct": 25.6
+     },
+     {
+      "areaPct": 5.0,
+      "key": "98",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 0.2,
+      "key": "92",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clinton",
+      "popPct": 45.8
+     },
+     {
+      "county": "Scott",
+      "popPct": 28.8
+     },
+     {
+      "county": "Jackson",
+      "popPct": 25.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Clinton",
+      "popPct": 45.8
+     },
+     {
+      "county": "Scott",
+      "popPct": 28.8
+     },
+     {
+      "county": "Jackson",
+      "popPct": 25.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31801,
+    "pres2020New": 22.5,
+    "pres2020Old": -20.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-70; it draws from the old HD-97 (69%), the old HD-58 (26%), the old HD-98 (3%) and 1 more. Counties: gained Clinton (46%), Scott (29%), Jackson (25%); lost Linn. 2020 presidential margin D+20.5 on the 2016\u20132020 lines \u2192 R+22.5 on the current lines.",
+    "toEra": "current"
+   },
+   "71": {
+    "contributors": [
+     {
+      "areaPct": 68.8,
+      "key": "99",
+      "popPct": 56.4
+     },
+     {
+      "areaPct": 27.8,
+      "key": "100",
+      "popPct": 42.7
+     },
+     {
+      "areaPct": 3.4,
+      "key": "57",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dubuque",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dubuque",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Marshall",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32169,
+    "pres2020New": -14.9,
+    "pres2020Old": -3.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-71; it draws from the old HD-99 (56%), the old HD-100 (43%), the old HD-57 (1%). Counties: gained Dubuque (100%); lost Marshall. 2020 presidential margin D+3.8 on the 2016\u20132020 lines \u2192 D+14.9 on the current lines.",
+    "toEra": "current"
+   },
+   "72": {
+    "contributors": [
+     {
+      "areaPct": 29.8,
+      "key": "100",
+      "popPct": 53.8
+     },
+     {
+      "areaPct": 21.7,
+      "key": "99",
+      "popPct": 40.5
+     },
+     {
+      "areaPct": 48.6,
+      "key": "57",
+      "popPct": 5.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dubuque",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dubuque",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Tama",
+      "popPct": 57.8
+     },
+     {
+      "county": "Marshall",
+      "popPct": 32.0
+     },
+     {
+      "county": "Black Hawk",
+      "popPct": 10.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32152,
+    "pres2020New": -3.7,
+    "pres2020Old": 24.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-72; it draws from the old HD-100 (54%), the old HD-99 (40%), the old HD-57 (6%). Counties: gained Dubuque (100%); lost Tama, Marshall, Black Hawk. 2020 presidential margin R+24.9 on the 2016\u20132020 lines \u2192 D+3.7 on the current lines.",
+    "toEra": "current"
+   },
+   "73": {
+    "contributors": [
+     {
+      "areaPct": 60.6,
+      "key": "68",
+      "popPct": 53.4
+     },
+     {
+      "areaPct": 33.0,
+      "key": "67",
+      "popPct": 40.6
+     },
+     {
+      "areaPct": 6.2,
+      "key": "95",
+      "popPct": 5.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cedar",
+      "popPct": 57.2
+     },
+     {
+      "county": "Johnson",
+      "popPct": 34.2
+     },
+     {
+      "county": "Muscatine",
+      "popPct": 8.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31744,
+    "pres2020New": -7.8,
+    "pres2020Old": 5.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-73; it draws from the old HD-68 (53%), the old HD-67 (41%), the old HD-95 (6%). Counties: gained Linn (100%); lost Cedar, Johnson, Muscatine. 2020 presidential margin R+5.0 on the 2016\u20132020 lines \u2192 D+7.8 on the current lines.",
+    "toEra": "current"
+   },
+   "74": {
+    "contributors": [
+     {
+      "areaPct": 33.2,
+      "key": "67",
+      "popPct": 37.3
+     },
+     {
+      "areaPct": 34.2,
+      "key": "68",
+      "popPct": 33.4
+     },
+     {
+      "areaPct": 22.9,
+      "key": "66",
+      "popPct": 23.0
+     },
+     {
+      "areaPct": 9.7,
+      "key": "65",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Johnson",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31600,
+    "pres2020New": -19.6,
+    "pres2020Old": -49.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-74; it draws from the old HD-67 (37%), the old HD-68 (33%), the old HD-66 (23%) and 1 more. Counties: gained Linn (100%); lost Johnson. 2020 presidential margin D+49.4 on the 2016\u20132020 lines \u2192 D+19.6 on the current lines.",
+    "toEra": "current"
+   },
+   "75": {
+    "contributors": [
+     {
+      "areaPct": 96.4,
+      "key": "59",
+      "popPct": 91.7
+     },
+     {
+      "areaPct": 3.5,
+      "key": "60",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Black Hawk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Black Hawk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Benton",
+      "popPct": 85.1
+     },
+     {
+      "county": "Iowa",
+      "popPct": 14.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31669,
+    "pres2020New": -15.2,
+    "pres2020Old": 27.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-75; it draws from the old HD-59 (92%), the old HD-60 (8%). Counties: gained Black Hawk (100%); lost Benton, Iowa. 2020 presidential margin R+27.4 on the 2016\u20132020 lines \u2192 D+15.2 on the current lines.",
+    "toEra": "current"
+   },
+   "76": {
+    "contributors": [
+     {
+      "areaPct": 5.9,
+      "key": "60",
+      "popPct": 46.0
+     },
+     {
+      "areaPct": 46.7,
+      "key": "72",
+      "popPct": 22.1
+     },
+     {
+      "areaPct": 1.2,
+      "key": "62",
+      "popPct": 17.7
+     },
+     {
+      "areaPct": 20.1,
+      "key": "61",
+      "popPct": 10.8
+     },
+     {
+      "areaPct": 26.1,
+      "key": "75",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Black Hawk",
+      "popPct": 84.1
+     },
+     {
+      "county": "Tama",
+      "popPct": 12.7
+     },
+     {
+      "county": "Benton",
+      "popPct": 3.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Black Hawk",
+      "popPct": 84.1
+     },
+     {
+      "county": "Tama",
+      "popPct": 12.7
+     },
+     {
+      "county": "Benton",
+      "popPct": 3.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Poweshiek",
+      "popPct": 60.2
+     },
+     {
+      "county": "Iowa",
+      "popPct": 39.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31695,
+    "pres2020New": 13.9,
+    "pres2020Old": 18.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-76; it draws from the old HD-60 (46%), the old HD-72 (22%), the old HD-62 (18%) and 2 more. Counties: gained Black Hawk (84%), Tama (13%), Benton (3%); lost Poweshiek, Iowa. 2020 presidential margin R+18.1 on the 2016\u20132020 lines \u2192 R+13.9 on the current lines.",
+    "toEra": "current"
+   },
+   "77": {
+    "contributors": [
+     {
+      "areaPct": 97.1,
+      "key": "69",
+      "popPct": 89.2
+     },
+     {
+      "areaPct": 2.6,
+      "key": "65",
+      "popPct": 10.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Johnson",
+      "popPct": 99.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31879,
+    "pres2020New": -19.0,
+    "pres2020Old": -18.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-77; it draws from the old HD-69 (89%), the old HD-65 (10%). Counties: gained Linn (100%); lost Johnson. 2020 presidential margin D+18.5 on the 2016\u20132020 lines \u2192 D+19.0 on the current lines.",
+    "toEra": "current"
+   },
+   "78": {
+    "contributors": [
+     {
+      "areaPct": 85.3,
+      "key": "65",
+      "popPct": 77.9
+     },
+     {
+      "areaPct": 10.7,
+      "key": "69",
+      "popPct": 13.9
+     },
+     {
+      "areaPct": 3.7,
+      "key": "66",
+      "popPct": 8.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Washington",
+      "popPct": 66.9
+     },
+     {
+      "county": "Keokuk",
+      "popPct": 32.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31738,
+    "pres2020New": -38.1,
+    "pres2020Old": 26.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-78; it draws from the old HD-65 (78%), the old HD-69 (14%), the old HD-66 (8%). Counties: gained Linn (100%); lost Washington, Keokuk. 2020 presidential margin R+26.7 on the 2016\u20132020 lines \u2192 D+38.1 on the current lines.",
+    "toEra": "current"
+   },
+   "79": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "70",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Mahaska",
+      "popPct": 58.3
+     },
+     {
+      "county": "Marion",
+      "popPct": 41.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32001,
+    "pres2020New": -21.4,
+    "pres2020Old": 42.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-79; it draws from the old HD-70 (100%). Counties: gained Linn (100%); lost Mahaska, Marion. 2020 presidential margin R+42.1 on the 2016\u20132020 lines \u2192 D+21.4 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 57.5,
+      "key": "9",
+      "popPct": 91.0
+     },
+     {
+      "areaPct": 42.5,
+      "key": "48",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Webster",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Webster",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Wright",
+      "popPct": 43.4
+     },
+     {
+      "county": "Hancock",
+      "popPct": 36.3
+     },
+     {
+      "county": "Kossuth",
+      "popPct": 20.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31874,
+    "pres2020New": 19.6,
+    "pres2020Old": 41.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-8; it draws from the old HD-9 (91%), the old HD-48 (9%). Counties: gained Webster (100%); lost Wright, Hancock, Kossuth. 2020 presidential margin R+41.2 on the 2016\u20132020 lines \u2192 R+19.6 on the current lines.",
+    "toEra": "current"
+   },
+   "80": {
+    "contributors": [
+     {
+      "areaPct": 49.7,
+      "key": "66",
+      "popPct": 66.2
+     },
+     {
+      "areaPct": 44.3,
+      "key": "67",
+      "popPct": 30.6
+     },
+     {
+      "areaPct": 5.8,
+      "key": "95",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Appanoose",
+      "popPct": 42.5
+     },
+     {
+      "county": "Monroe",
+      "popPct": 26.2
+     },
+     {
+      "county": "Wapello",
+      "popPct": 16.2
+     },
+     {
+      "county": "Mahaska",
+      "popPct": 15.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31907,
+    "pres2020New": -10.2,
+    "pres2020Old": 45.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-80; it draws from the old HD-66 (66%), the old HD-67 (31%), the old HD-95 (3%). Counties: gained Linn (100%); lost Appanoose, Monroe, Wapello, Mahaska. 2020 presidential margin R+45.9 on the 2016\u20132020 lines \u2192 D+10.2 on the current lines.",
+    "toEra": "current"
+   },
+   "81": {
+    "contributors": [
+     {
+      "areaPct": 33.8,
+      "key": "89",
+      "popPct": 56.6
+     },
+     {
+      "areaPct": 52.7,
+      "key": "92",
+      "popPct": 34.4
+     },
+     {
+      "areaPct": 13.5,
+      "key": "94",
+      "popPct": 9.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Scott",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Scott",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Wapello",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32141,
+    "pres2020New": -8.9,
+    "pres2020Old": 18.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-81; it draws from the old HD-89 (57%), the old HD-92 (34%), the old HD-94 (9%). Counties: gained Scott (100%); lost Wapello. 2020 presidential margin R+18.7 on the 2016\u20132020 lines \u2192 D+8.9 on the current lines.",
+    "toEra": "current"
+   },
+   "82": {
+    "contributors": [
+     {
+      "areaPct": 67.9,
+      "key": "73",
+      "popPct": 58.3
+     },
+     {
+      "areaPct": 16.6,
+      "key": "92",
+      "popPct": 19.3
+     },
+     {
+      "areaPct": 8.6,
+      "key": "88",
+      "popPct": 17.1
+     },
+     {
+      "areaPct": 6.8,
+      "key": "91",
+      "popPct": 5.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cedar",
+      "popPct": 58.2
+     },
+     {
+      "county": "Muscatine",
+      "popPct": 22.5
+     },
+     {
+      "county": "Scott",
+      "popPct": 19.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cedar",
+      "popPct": 58.2
+     },
+     {
+      "county": "Muscatine",
+      "popPct": 22.5
+     },
+     {
+      "county": "Scott",
+      "popPct": 19.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Jefferson",
+      "popPct": 45.9
+     },
+     {
+      "county": "Davis",
+      "popPct": 30.1
+     },
+     {
+      "county": "Van Buren",
+      "popPct": 23.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31759,
+    "pres2020New": 16.0,
+    "pres2020Old": 23.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-82; it draws from the old HD-73 (58%), the old HD-92 (19%), the old HD-88 (17%) and 1 more. Counties: gained Cedar (58%), Muscatine (22%), Scott (19%); lost Jefferson, Davis, Van Buren. 2020 presidential margin R+23.2 on the 2016\u20132020 lines \u2192 R+16.0 on the current lines.",
+    "toEra": "current"
+   },
+   "83": {
+    "contributors": [
+     {
+      "areaPct": 88.5,
+      "key": "95",
+      "popPct": 82.5
+     },
+     {
+      "areaPct": 11.5,
+      "key": "68",
+      "popPct": 17.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Linn",
+      "popPct": 99.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Linn",
+      "popPct": 99.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Lee",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32144,
+    "pres2020New": 6.8,
+    "pres2020Old": 15.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-83; it draws from the old HD-95 (82%), the old HD-68 (17%). Counties: gained Linn (99%); lost Lee. 2020 presidential margin R+15.7 on the 2016\u20132020 lines \u2192 R+6.8 on the current lines.",
+    "toEra": "current"
+   },
+   "84": {
+    "contributors": [
+     {
+      "areaPct": 82.3,
+      "key": "75",
+      "popPct": 77.1
+     },
+     {
+      "areaPct": 4.3,
+      "key": "69",
+      "popPct": 13.3
+     },
+     {
+      "areaPct": 9.8,
+      "key": "95",
+      "popPct": 6.5
+     },
+     {
+      "areaPct": 3.6,
+      "key": "70",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Benton",
+      "popPct": 77.0
+     },
+     {
+      "county": "Linn",
+      "popPct": 22.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Benton",
+      "popPct": 77.0
+     },
+     {
+      "county": "Linn",
+      "popPct": 22.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Henry",
+      "popPct": 68.8
+     },
+     {
+      "county": "Lee",
+      "popPct": 17.8
+     },
+     {
+      "county": "Washington",
+      "popPct": 7.0
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 6.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31823,
+    "pres2020New": 22.1,
+    "pres2020Old": 34.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-84; it draws from the old HD-75 (77%), the old HD-69 (13%), the old HD-95 (6%) and 1 more. Counties: gained Benton (77%), Linn (23%); lost Henry, Lee, Washington, Jefferson. 2020 presidential margin R+34.7 on the 2016\u20132020 lines \u2192 R+22.1 on the current lines.",
+    "toEra": "current"
+   },
+   "85": {
+    "contributors": [
+     {
+      "areaPct": 7.2,
+      "key": "77",
+      "popPct": 56.6
+     },
+     {
+      "areaPct": 79.0,
+      "key": "73",
+      "popPct": 19.2
+     },
+     {
+      "areaPct": 12.5,
+      "key": "74",
+      "popPct": 16.3
+     },
+     {
+      "areaPct": 1.3,
+      "key": "85",
+      "popPct": 7.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Johnson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 32091,
+    "pres2020New": -31.2,
+    "pres2020Old": -62.1,
+    "retainedAreaPct": 1.3,
+    "retainedPopPct": 7.9,
+    "text": "A new footprint: only 8% of its population was in the 2016\u20132020 HD-85; it draws from the old HD-77 (57%), the old HD-73 (19%), the old HD-74 (16%). Entirely in Johnson County. 2020 presidential margin D+62.1 on the 2016\u20132020 lines \u2192 D+31.2 on the current lines.",
+    "toEra": "current"
+   },
+   "86": {
+    "contributors": [
+     {
+      "areaPct": 91.6,
+      "key": "74",
+      "popPct": 92.4
+     },
+     {
+      "areaPct": 8.3,
+      "key": "85",
+      "popPct": 7.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Johnson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31973,
+    "pres2020New": -53.2,
+    "pres2020Old": -58.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-86; it draws from the old HD-74 (92%), the old HD-85 (8%). Entirely in Johnson County. 2020 presidential margin D+58.1 on the 2016\u20132020 lines \u2192 D+53.2 on the current lines.",
+    "toEra": "current"
+   },
+   "87": {
+    "contributors": [
+     {
+      "areaPct": 81.4,
+      "key": "82",
+      "popPct": 60.5
+     },
+     {
+      "areaPct": 18.6,
+      "key": "84",
+      "popPct": 39.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 38.7
+     },
+     {
+      "county": "Henry",
+      "popPct": 38.5
+     },
+     {
+      "county": "Van Buren",
+      "popPct": 22.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jefferson",
+      "popPct": 38.7
+     },
+     {
+      "county": "Henry",
+      "popPct": 38.5
+     },
+     {
+      "county": "Van Buren",
+      "popPct": 22.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Des Moines",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31721,
+    "pres2020New": 17.0,
+    "pres2020Old": -3.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-87; it draws from the old HD-82 (60%), the old HD-84 (40%). Counties: gained Jefferson (39%), Henry (38%), Van Buren (23%); lost Des Moines. 2020 presidential margin D+3.2 on the 2016\u20132020 lines \u2192 R+17.0 on the current lines.",
+    "toEra": "current"
+   },
+   "88": {
+    "contributors": [
+     {
+      "areaPct": 7.1,
+      "key": "79",
+      "popPct": 44.4
+     },
+     {
+      "areaPct": 48.3,
+      "key": "78",
+      "popPct": 31.4
+     },
+     {
+      "areaPct": 23.5,
+      "key": "80",
+      "popPct": 13.6
+     },
+     {
+      "areaPct": 12.2,
+      "key": "82",
+      "popPct": 5.8
+     },
+     {
+      "areaPct": 9.0,
+      "key": "84",
+      "popPct": 4.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mahaska",
+      "popPct": 58.0
+     },
+     {
+      "county": "Keokuk",
+      "popPct": 31.4
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 10.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Mahaska",
+      "popPct": 58.0
+     },
+     {
+      "county": "Keokuk",
+      "popPct": 31.4
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 10.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Louisa",
+      "popPct": 35.4
+     },
+     {
+      "county": "Des Moines",
+      "popPct": 33.1
+     },
+     {
+      "county": "Muscatine",
+      "popPct": 31.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31933,
+    "pres2020New": 43.8,
+    "pres2020Old": 25.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-88; it draws from the old HD-79 (44%), the old HD-78 (31%), the old HD-80 (14%) and 2 more. Counties: gained Mahaska (58%), Keokuk (31%), Jefferson (11%); lost Louisa, Des Moines, Muscatine. 2020 presidential margin R+25.8 on the 2016\u20132020 lines \u2192 R+43.8 on the current lines.",
+    "toEra": "current"
+   },
+   "89": {
+    "contributors": [
+     {
+      "areaPct": 91.9,
+      "key": "86",
+      "popPct": 81.9
+     },
+     {
+      "areaPct": 7.1,
+      "key": "74",
+      "popPct": 9.8
+     },
+     {
+      "areaPct": 0.9,
+      "key": "85",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Johnson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Johnson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Scott",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31874,
+    "pres2020New": -60.5,
+    "pres2020Old": -11.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-89; it draws from the old HD-86 (82%), the old HD-74 (10%), the old HD-85 (8%). Counties: gained Johnson (100%); lost Scott. 2020 presidential margin D+11.9 on the 2016\u20132020 lines \u2192 D+60.5 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 76.6,
+      "key": "7",
+      "popPct": 88.6
+     },
+     {
+      "areaPct": 23.4,
+      "key": "8",
+      "popPct": 11.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kossuth",
+      "popPct": 37.3
+     },
+     {
+      "county": "Winnebago",
+      "popPct": 33.4
+     },
+     {
+      "county": "Emmet",
+      "popPct": 29.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kossuth",
+      "popPct": 37.3
+     },
+     {
+      "county": "Winnebago",
+      "popPct": 33.4
+     },
+     {
+      "county": "Emmet",
+      "popPct": 29.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Webster",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31951,
+    "pres2020New": 33.5,
+    "pres2020Old": 18.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-9; it draws from the old HD-7 (89%), the old HD-8 (11%). Counties: gained Kossuth (37%), Winnebago (33%), Emmet (29%); lost Webster. 2020 presidential margin R+18.0 on the 2016\u20132020 lines \u2192 R+33.5 on the current lines.",
+    "toEra": "current"
+   },
+   "90": {
+    "contributors": [
+     {
+      "areaPct": 80.7,
+      "key": "85",
+      "popPct": 78.3
+     },
+     {
+      "areaPct": 15.0,
+      "key": "86",
+      "popPct": 19.8
+     },
+     {
+      "areaPct": 4.3,
+      "key": "73",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Johnson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Johnson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Scott",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31810,
+    "pres2020New": -59.9,
+    "pres2020Old": -20.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-90; it draws from the old HD-85 (78%), the old HD-86 (20%), the old HD-73 (2%). Counties: gained Johnson (100%); lost Scott. 2020 presidential margin D+20.4 on the 2016\u20132020 lines \u2192 D+59.9 on the current lines.",
+    "toEra": "current"
+   },
+   "91": {
+    "contributors": [
+     {
+      "areaPct": 25.1,
+      "key": "77",
+      "popPct": 41.9
+     },
+     {
+      "areaPct": 53.5,
+      "key": "76",
+      "popPct": 38.2
+     },
+     {
+      "areaPct": 17.5,
+      "key": "75",
+      "popPct": 13.6
+     },
+     {
+      "areaPct": 3.9,
+      "key": "73",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Iowa",
+      "popPct": 52.1
+     },
+     {
+      "county": "Johnson",
+      "popPct": 47.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Iowa",
+      "popPct": 52.1
+     },
+     {
+      "county": "Johnson",
+      "popPct": 47.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Muscatine",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32159,
+    "pres2020New": 10.2,
+    "pres2020Old": 7.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-91; it draws from the old HD-77 (42%), the old HD-76 (38%), the old HD-75 (14%) and 1 more. Counties: gained Iowa (52%), Johnson (48%); lost Muscatine. 2020 presidential margin R+7.4 on the 2016\u20132020 lines \u2192 R+10.2 on the current lines.",
+    "toEra": "current"
+   },
+   "92": {
+    "contributors": [
+     {
+      "areaPct": 58.0,
+      "key": "78",
+      "popPct": 63.8
+     },
+     {
+      "areaPct": 23.6,
+      "key": "77",
+      "popPct": 19.4
+     },
+     {
+      "areaPct": 4.3,
+      "key": "73",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 13.6,
+      "key": "84",
+      "popPct": 6.4
+     },
+     {
+      "areaPct": 0.4,
+      "key": "86",
+      "popPct": 3.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 69.9
+     },
+     {
+      "county": "Johnson",
+      "popPct": 29.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Washington",
+      "popPct": 69.9
+     },
+     {
+      "county": "Johnson",
+      "popPct": 29.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Scott",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32170,
+    "pres2020New": 10.3,
+    "pres2020Old": 8.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-92; it draws from the old HD-78 (64%), the old HD-77 (19%), the old HD-73 (7%) and 2 more. Counties: gained Washington (70%), Johnson (30%); lost Scott. 2020 presidential margin R+8.8 on the 2016\u20132020 lines \u2192 R+10.3 on the current lines.",
+    "toEra": "current"
+   },
+   "93": {
+    "contributors": [
+     {
+      "areaPct": 78.6,
+      "key": "94",
+      "popPct": 84.6
+     },
+     {
+      "areaPct": 21.4,
+      "key": "97",
+      "popPct": 15.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Scott",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31959,
+    "pres2020New": 3.3,
+    "pres2020Old": -14.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-93; it draws from the old HD-94 (85%), the old HD-97 (15%). Entirely in Scott County. 2020 presidential margin D+14.8 on the 2016\u20132020 lines \u2192 R+3.3 on the current lines.",
+    "toEra": "current"
+   },
+   "94": {
+    "contributors": [
+     {
+      "areaPct": 8.9,
+      "key": "93",
+      "popPct": 50.6
+     },
+     {
+      "areaPct": 8.6,
+      "key": "94",
+      "popPct": 25.3
+     },
+     {
+      "areaPct": 43.2,
+      "key": "92",
+      "popPct": 22.6
+     },
+     {
+      "areaPct": 39.3,
+      "key": "97",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Scott",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31884,
+    "pres2020New": 1.8,
+    "pres2020Old": 1.0,
+    "retainedAreaPct": 8.6,
+    "retainedPopPct": 25.3,
+    "text": "A new footprint: only 25% of its population was in the 2016\u20132020 HD-94; it draws from the old HD-93 (51%), the old HD-92 (23%), the old HD-97 (2%). Entirely in Scott County. 2020 presidential margin R+1.0 on the 2016\u20132020 lines \u2192 R+1.8 on the current lines.",
+    "toEra": "current"
+   },
+   "95": {
+    "contributors": [
+     {
+      "areaPct": 71.1,
+      "key": "88",
+      "popPct": 66.7
+     },
+     {
+      "areaPct": 26.1,
+      "key": "84",
+      "popPct": 25.8
+     },
+     {
+      "areaPct": 1.1,
+      "key": "91",
+      "popPct": 4.5
+     },
+     {
+      "areaPct": 1.8,
+      "key": "87",
+      "popPct": 3.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Louisa",
+      "popPct": 33.9
+     },
+     {
+      "county": "Des Moines",
+      "popPct": 26.8
+     },
+     {
+      "county": "Henry",
+      "popPct": 25.6
+     },
+     {
+      "county": "Muscatine",
+      "popPct": 13.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Louisa",
+      "popPct": 33.9
+     },
+     {
+      "county": "Des Moines",
+      "popPct": 26.8
+     },
+     {
+      "county": "Henry",
+      "popPct": 25.6
+     },
+     {
+      "county": "Muscatine",
+      "popPct": 13.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Linn",
+      "popPct": 94.6
+     },
+     {
+      "county": "Buchanan",
+      "popPct": 4.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31985,
+    "pres2020New": 33.4,
+    "pres2020Old": 8.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-95; it draws from the old HD-88 (67%), the old HD-84 (26%), the old HD-91 (4%) and 1 more. Counties: gained Louisa (34%), Des Moines (27%), Henry (26%) and 1 more; lost Linn, Buchanan. 2020 presidential margin R+8.9 on the 2016\u20132020 lines \u2192 R+33.4 on the current lines.",
+    "toEra": "current"
+   },
+   "96": {
+    "contributors": [
+     {
+      "areaPct": 64.5,
+      "key": "91",
+      "popPct": 87.5
+     },
+     {
+      "areaPct": 1.6,
+      "key": "73",
+      "popPct": 8.8
+     },
+     {
+      "areaPct": 33.9,
+      "key": "88",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Muscatine",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Muscatine",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Delaware",
+      "popPct": 58.1
+     },
+     {
+      "county": "Jones",
+      "popPct": 41.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31770,
+    "pres2020New": 5.5,
+    "pres2020Old": 27.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-96; it draws from the old HD-91 (88%), the old HD-73 (9%), the old HD-88 (4%). Counties: gained Muscatine (100%); lost Delaware, Jones. 2020 presidential margin R+27.4 on the 2016\u20132020 lines \u2192 R+5.5 on the current lines.",
+    "toEra": "current"
+   },
+   "97": {
+    "contributors": [
+     {
+      "areaPct": 53.2,
+      "key": "93",
+      "popPct": 49.2
+     },
+     {
+      "areaPct": 21.9,
+      "key": "90",
+      "popPct": 30.7
+     },
+     {
+      "areaPct": 13.8,
+      "key": "89",
+      "popPct": 10.2
+     },
+     {
+      "areaPct": 11.1,
+      "key": "92",
+      "popPct": 9.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Scott",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Clinton",
+      "popPct": 56.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31586,
+    "pres2020New": -28.1,
+    "pres2020Old": 21.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-97; it draws from the old HD-93 (49%), the old HD-90 (31%), the old HD-89 (10%) and 1 more. Counties: lost Clinton. 2020 presidential margin R+21.0 on the 2016\u20132020 lines \u2192 D+28.1 on the current lines.",
+    "toEra": "current"
+   },
+   "98": {
+    "contributors": [
+     {
+      "areaPct": 58.6,
+      "key": "90",
+      "popPct": 62.9
+     },
+     {
+      "areaPct": 6.6,
+      "key": "89",
+      "popPct": 27.7
+     },
+     {
+      "areaPct": 34.8,
+      "key": "92",
+      "popPct": 9.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Scott",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Scott",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Clinton",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31784,
+    "pres2020New": -7.9,
+    "pres2020Old": 2.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-98; it draws from the old HD-90 (63%), the old HD-89 (28%), the old HD-92 (9%). Counties: gained Scott (100%); lost Clinton. 2020 presidential margin R+2.3 on the 2016\u20132020 lines \u2192 D+7.9 on the current lines.",
+    "toEra": "current"
+   },
+   "99": {
+    "contributors": [
+     {
+      "areaPct": 13.9,
+      "key": "87",
+      "popPct": 86.6
+     },
+     {
+      "areaPct": 41.0,
+      "key": "88",
+      "popPct": 8.1
+     },
+     {
+      "areaPct": 26.8,
+      "key": "84",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 18.3,
+      "key": "83",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Des Moines",
+      "popPct": 94.6
+     },
+     {
+      "county": "Lee",
+      "popPct": 5.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Des Moines",
+      "popPct": 94.6
+     },
+     {
+      "county": "Lee",
+      "popPct": 5.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Dubuque",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 32028,
+    "pres2020New": 2.5,
+    "pres2020Old": -13.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-99; it draws from the old HD-87 (87%), the old HD-88 (8%), the old HD-84 (4%) and 1 more. Counties: gained Des Moines (95%), Lee (5%); lost Dubuque. 2020 presidential margin D+13.2 on the 2016\u20132020 lines \u2192 R+2.5 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 67.5,
+      "key": "7",
+      "popPct": 98.0
+     },
+     {
+      "areaPct": 32.5,
+      "key": "3",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Woodbury",
+      "popPct": 99.3
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Woodbury",
+      "popPct": 99.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Dickinson",
+      "popPct": 28.9
+     },
+     {
+      "county": "Clay",
+      "popPct": 26.7
+     },
+     {
+      "county": "Lyon",
+      "popPct": 19.5
+     },
+     {
+      "county": "Palo Alto",
+      "popPct": 14.6
+     },
+     {
+      "county": "Osceola",
+      "popPct": 10.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63999,
+    "pres2020New": 2.8,
+    "pres2020Old": 44.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-1; it draws from the old SD-7 (98%), the old SD-3 (2%). Counties: gained Woodbury (99%); lost Dickinson, Clay, Lyon, Palo Alto and 1 more. 2020 presidential margin R+44.8 on the 2016\u20132020 lines \u2192 R+2.8 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 92.2,
+      "key": "8",
+      "popPct": 94.0
+     },
+     {
+      "areaPct": 7.8,
+      "key": "11",
+      "popPct": 6.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pottawattamie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pottawattamie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Dallas",
+      "popPct": 66.0
+     },
+     {
+      "county": "Guthrie",
+      "popPct": 13.2
+     },
+     {
+      "county": "Adair",
+      "popPct": 9.6
+     },
+     {
+      "county": "Polk",
+      "popPct": 9.0
+     },
+     {
+      "county": "Cass",
+      "popPct": 2.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63599,
+    "pres2020New": 4.9,
+    "pres2020Old": 17.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-10; it draws from the old SD-8 (94%), the old SD-11 (6%). Counties: gained Pottawattamie (100%); lost Dallas, Guthrie, Adair, Polk and 1 more. 2020 presidential margin R+17.8 on the 2016\u20132020 lines \u2192 R+4.9 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 76.2,
+      "key": "13",
+      "popPct": 81.3
+     },
+     {
+      "areaPct": 23.0,
+      "key": "14",
+      "popPct": 17.6
+     },
+     {
+      "areaPct": 0.9,
+      "key": "21",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Warren",
+      "popPct": 81.5
+     },
+     {
+      "county": "Marion",
+      "popPct": 17.6
+     },
+     {
+      "county": "Polk",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Warren",
+      "popPct": 81.5
+     },
+     {
+      "county": "Marion",
+      "popPct": 17.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pottawattamie",
+      "popPct": 55.5
+     },
+     {
+      "county": "Union",
+      "popPct": 19.9
+     },
+     {
+      "county": "Cass",
+      "popPct": 18.6
+     },
+     {
+      "county": "Adams",
+      "popPct": 6.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63545,
+    "pres2020New": 17.8,
+    "pres2020Old": 33.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-11; it draws from the old SD-13 (81%), the old SD-14 (18%), the old SD-21 (1%). Counties: gained Warren (82%), Marion (18%); lost Pottawattamie, Union, Cass, Adams. 2020 presidential margin R+33.2 on the 2016\u20132020 lines \u2192 R+17.8 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 55.8,
+      "key": "14",
+      "popPct": 51.1
+     },
+     {
+      "areaPct": 16.3,
+      "key": "13",
+      "popPct": 26.0
+     },
+     {
+      "areaPct": 19.9,
+      "key": "10",
+      "popPct": 19.3
+     },
+     {
+      "areaPct": 5.2,
+      "key": "11",
+      "popPct": 2.5
+     },
+     {
+      "areaPct": 2.8,
+      "key": "40",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Madison",
+      "popPct": 26.0
+     },
+     {
+      "county": "Clarke",
+      "popPct": 15.4
+     },
+     {
+      "county": "Lucas",
+      "popPct": 13.6
+     },
+     {
+      "county": "Decatur",
+      "popPct": 11.9
+     },
+     {
+      "county": "Adair",
+      "popPct": 11.8
+     },
+     {
+      "county": "Wayne",
+      "popPct": 10.2
+     },
+     {
+      "county": "Dallas",
+      "popPct": 7.5
+     },
+     {
+      "county": "Union",
+      "popPct": 2.5
+     },
+     {
+      "county": "Appanoose",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Madison",
+      "popPct": 26.0
+     },
+     {
+      "county": "Clarke",
+      "popPct": 15.4
+     },
+     {
+      "county": "Lucas",
+      "popPct": 13.6
+     },
+     {
+      "county": "Decatur",
+      "popPct": 11.9
+     },
+     {
+      "county": "Adair",
+      "popPct": 11.8
+     },
+     {
+      "county": "Wayne",
+      "popPct": 10.2
+     },
+     {
+      "county": "Dallas",
+      "popPct": 7.5
+     },
+     {
+      "county": "Union",
+      "popPct": 2.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Page",
+      "popPct": 26.5
+     },
+     {
+      "county": "Mills",
+      "popPct": 25.3
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 18.1
+     },
+     {
+      "county": "Fremont",
+      "popPct": 11.7
+     },
+     {
+      "county": "Taylor",
+      "popPct": 10.3
+     },
+     {
+      "county": "Ringgold",
+      "popPct": 8.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63606,
+    "pres2020New": 38.6,
+    "pres2020Old": 41.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-12; it draws from the old SD-14 (51%), the old SD-13 (26%), the old SD-10 (19%) and 2 more. Counties: gained Madison (26%), Clarke (15%), Lucas (14%) and 5 more; lost Page, Mills, Montgomery, Fremont and 2 more. 2020 presidential margin R+41.9 on the 2016\u20132020 lines \u2192 R+38.6 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 40.6,
+      "key": "41",
+      "popPct": 62.4
+     },
+     {
+      "areaPct": 59.4,
+      "key": "40",
+      "popPct": 37.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Wapello",
+      "popPct": 55.5
+     },
+     {
+      "county": "Appanoose",
+      "popPct": 18.2
+     },
+     {
+      "county": "Davis",
+      "popPct": 14.3
+     },
+     {
+      "county": "Monroe",
+      "popPct": 11.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Wapello",
+      "popPct": 55.5
+     },
+     {
+      "county": "Appanoose",
+      "popPct": 18.2
+     },
+     {
+      "county": "Davis",
+      "popPct": 14.3
+     },
+     {
+      "county": "Monroe",
+      "popPct": 11.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Warren",
+      "popPct": 74.9
+     },
+     {
+      "county": "Madison",
+      "popPct": 24.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63740,
+    "pres2020New": 33.6,
+    "pres2020Old": 21.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-13; it draws from the old SD-41 (62%), the old SD-40 (38%). Counties: gained Wapello (56%), Appanoose (18%), Davis (14%) and 1 more; lost Warren, Madison. 2020 presidential margin R+21.0 on the 2016\u20132020 lines \u2192 R+33.6 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 23.5,
+      "key": "22",
+      "popPct": 69.2
+     },
+     {
+      "areaPct": 76.4,
+      "key": "10",
+      "popPct": 30.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dallas",
+      "popPct": 99.4
+     },
+     {
+      "county": "Polk",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dallas",
+      "popPct": 99.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Marion",
+      "popPct": 34.3
+     },
+     {
+      "county": "Clarke",
+      "popPct": 16.2
+     },
+     {
+      "county": "Lucas",
+      "popPct": 14.3
+     },
+     {
+      "county": "Decatur",
+      "popPct": 12.6
+     },
+     {
+      "county": "Jasper",
+      "popPct": 11.8
+     },
+     {
+      "county": "Wayne",
+      "popPct": 10.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63819,
+    "pres2020New": -1.7,
+    "pres2020Old": 38.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-14; it draws from the old SD-22 (69%), the old SD-10 (31%). Counties: gained Dallas (99%); lost Marion, Clarke, Lucas, Decatur and 2 more. 2020 presidential margin R+38.2 on the 2016\u20132020 lines \u2192 D+1.7 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 65.9,
+      "key": "17",
+      "popPct": 86.3
+     },
+     {
+      "areaPct": 22.1,
+      "key": "21",
+      "popPct": 7.0
+     },
+     {
+      "areaPct": 3.7,
+      "key": "16",
+      "popPct": 5.4
+     },
+     {
+      "areaPct": 8.3,
+      "key": "15",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Jasper",
+      "popPct": 42.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63804,
+    "pres2020New": -22.5,
+    "pres2020Old": 13.8,
+    "retainedAreaPct": 8.3,
+    "retainedPopPct": 1.4,
+    "text": "A new footprint: only 1% of its population was in the 2016\u20132020 SD-15; it draws from the old SD-17 (86%), the old SD-21 (7%), the old SD-16 (5%). Counties: lost Jasper. 2020 presidential margin R+13.8 on the 2016\u20132020 lines \u2192 D+22.5 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 36.1,
+      "key": "22",
+      "popPct": 52.6
+     },
+     {
+      "areaPct": 63.8,
+      "key": "21",
+      "popPct": 47.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 96.3
+     },
+     {
+      "county": "Dallas",
+      "popPct": 3.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dallas",
+      "popPct": 3.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 64244,
+    "pres2020New": -19.3,
+    "pres2020Old": -18.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-16; it draws from the old SD-22 (53%), the old SD-21 (47%). Counties: gained Dallas (4%). 2020 presidential margin D+18.7 on the 2016\u20132020 lines \u2192 D+19.3 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 45.5,
+      "key": "18",
+      "popPct": 45.8
+     },
+     {
+      "areaPct": 47.5,
+      "key": "16",
+      "popPct": 44.2
+     },
+     {
+      "areaPct": 5.6,
+      "key": "21",
+      "popPct": 9.0
+     },
+     {
+      "areaPct": 1.2,
+      "key": "19",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 63805,
+    "pres2020New": -43.1,
+    "pres2020Old": -29.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-17; it draws from the old SD-18 (46%), the old SD-16 (44%), the old SD-21 (9%) and 1 more. Entirely in Polk County. 2020 presidential margin D+29.0 on the 2016\u20132020 lines \u2192 D+43.1 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 34.4,
+      "key": "18",
+      "popPct": 46.7
+     },
+     {
+      "areaPct": 44.1,
+      "key": "21",
+      "popPct": 32.1
+     },
+     {
+      "areaPct": 21.5,
+      "key": "17",
+      "popPct": 21.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 63809,
+    "pres2020New": -45.8,
+    "pres2020Old": -41.5,
+    "retainedAreaPct": 34.4,
+    "retainedPopPct": 46.7,
+    "text": "A new footprint: only 47% of its population was in the 2016\u20132020 SD-18; it draws from the old SD-21 (32%), the old SD-17 (21%). Entirely in Polk County. 2020 presidential margin D+41.5 on the 2016\u20132020 lines \u2192 D+45.8 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 41.8,
+      "key": "15",
+      "popPct": 48.1
+     },
+     {
+      "areaPct": 37.5,
+      "key": "14",
+      "popPct": 26.1
+     },
+     {
+      "areaPct": 20.7,
+      "key": "40",
+      "popPct": 25.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jasper",
+      "popPct": 59.2
+     },
+     {
+      "county": "Marion",
+      "popPct": 35.0
+     },
+     {
+      "county": "Mahaska",
+      "popPct": 5.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jasper",
+      "popPct": 59.2
+     },
+     {
+      "county": "Marion",
+      "popPct": 35.0
+     },
+     {
+      "county": "Mahaska",
+      "popPct": 5.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63734,
+    "pres2020New": 30.5,
+    "pres2020Old": 2.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-19; it draws from the old SD-15 (48%), the old SD-14 (26%), the old SD-40 (26%). Counties: gained Jasper (59%), Marion (35%), Mahaska (6%); lost Polk. 2020 presidential margin R+2.0 on the 2016\u20132020 lines \u2192 R+30.5 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 45.5,
+      "key": "2",
+      "popPct": 56.7
+     },
+     {
+      "areaPct": 21.3,
+      "key": "3",
+      "popPct": 24.5
+     },
+     {
+      "areaPct": 33.2,
+      "key": "1",
+      "popPct": 18.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sioux",
+      "popPct": 56.3
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 24.9
+     },
+     {
+      "county": "Lyon",
+      "popPct": 18.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lyon",
+      "popPct": 18.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "O'Brien",
+      "popPct": 22.5
+     },
+     {
+      "county": "Cherokee",
+      "popPct": 18.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63661,
+    "pres2020New": 61.5,
+    "pres2020Old": 59.1,
+    "retainedAreaPct": 45.5,
+    "retainedPopPct": 56.7,
+    "text": "Kept 57% of its population from the 2016\u20132020 SD-2; gained the rest from the old SD-3 (24%), the old SD-1 (19%). Counties: gained Lyon (19%); lost O'Brien, Cherokee. 2020 presidential margin R+59.1 on the 2016\u20132020 lines \u2192 R+61.5 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 30.8,
+      "key": "16",
+      "popPct": 44.8
+     },
+     {
+      "areaPct": 38.3,
+      "key": "15",
+      "popPct": 35.0
+     },
+     {
+      "areaPct": 30.8,
+      "key": "19",
+      "popPct": 20.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 64001,
+    "pres2020New": -0.3,
+    "pres2020Old": -7.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-20; it draws from the old SD-16 (45%), the old SD-15 (35%), the old SD-19 (20%). Entirely in Polk County. 2020 presidential margin D+7.1 on the 2016\u20132020 lines \u2192 D+0.3 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "19",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 63940,
+    "pres2020New": -0.5,
+    "pres2020Old": -33.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-21; it draws from the old SD-19 (100%). Entirely in Polk County. 2020 presidential margin D+33.7 on the 2016\u20132020 lines \u2192 D+0.5 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 74.8,
+      "key": "20",
+      "popPct": 90.6
+     },
+     {
+      "areaPct": 22.6,
+      "key": "19",
+      "popPct": 8.2
+     },
+     {
+      "areaPct": 2.6,
+      "key": "18",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Dallas",
+      "popPct": 59.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 64007,
+    "pres2020New": -8.6,
+    "pres2020Old": -12.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-22; it draws from the old SD-20 (91%), the old SD-19 (8%), the old SD-18 (1%). Counties: lost Dallas. 2020 presidential margin D+12.5 on the 2016\u20132020 lines \u2192 D+8.6 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 35.5,
+      "key": "10",
+      "popPct": 35.7
+     },
+     {
+      "areaPct": 41.5,
+      "key": "15",
+      "popPct": 30.4
+     },
+     {
+      "areaPct": 7.6,
+      "key": "20",
+      "popPct": 27.9
+     },
+     {
+      "areaPct": 15.4,
+      "key": "19",
+      "popPct": 6.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 75.3
+     },
+     {
+      "county": "Dallas",
+      "popPct": 24.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Polk",
+      "popPct": 75.3
+     },
+     {
+      "county": "Dallas",
+      "popPct": 24.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Story",
+      "popPct": 99.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63451,
+    "pres2020New": 13.4,
+    "pres2020Old": -34.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-23; it draws from the old SD-10 (36%), the old SD-15 (30%), the old SD-20 (28%) and 1 more. Counties: gained Polk (75%), Dallas (24%); lost Story. 2020 presidential margin D+34.1 on the 2016\u20132020 lines \u2192 R+13.4 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 57.8,
+      "key": "24",
+      "popPct": 57.9
+     },
+     {
+      "areaPct": 41.1,
+      "key": "10",
+      "popPct": 36.1
+     },
+     {
+      "areaPct": 1.1,
+      "key": "23",
+      "popPct": 5.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Boone",
+      "popPct": 41.8
+     },
+     {
+      "county": "Dallas",
+      "popPct": 19.5
+     },
+     {
+      "county": "Guthrie",
+      "popPct": 16.4
+     },
+     {
+      "county": "Greene",
+      "popPct": 13.7
+     },
+     {
+      "county": "Story",
+      "popPct": 8.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dallas",
+      "popPct": 19.5
+     },
+     {
+      "county": "Guthrie",
+      "popPct": 16.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hamilton",
+      "popPct": 24.4
+     },
+     {
+      "county": "Webster",
+      "popPct": 6.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63940,
+    "pres2020New": 17.4,
+    "pres2020Old": 19.6,
+    "retainedAreaPct": 57.8,
+    "retainedPopPct": 57.9,
+    "text": "Kept 58% of its population from the 2016\u20132020 SD-24; gained the rest from the old SD-10 (36%), the old SD-23 (6%). Counties: gained Dallas (20%), Guthrie (16%); lost Hamilton, Webster. 2020 presidential margin R+19.6 on the 2016\u20132020 lines \u2192 R+17.4 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 98.6,
+      "key": "23",
+      "popPct": 98.1
+     },
+     {
+      "areaPct": 1.4,
+      "key": "24",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Story",
+      "popPct": 99.5
+     },
+     {
+      "county": "Boone",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Hardin",
+      "popPct": 27.7
+     },
+     {
+      "county": "Grundy",
+      "popPct": 20.2
+     },
+     {
+      "county": "Butler",
+      "popPct": 11.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63490,
+    "pres2020New": -35.9,
+    "pres2020Old": 26.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-25; it draws from the old SD-23 (98%), the old SD-24 (2%). Counties: lost Hardin, Grundy, Butler. 2020 presidential margin R+26.6 on the 2016\u20132020 lines \u2192 D+35.9 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 57.4,
+      "key": "36",
+      "popPct": 62.6
+     },
+     {
+      "areaPct": 35.9,
+      "key": "25",
+      "popPct": 29.9
+     },
+     {
+      "areaPct": 2.9,
+      "key": "24",
+      "popPct": 5.9
+     },
+     {
+      "areaPct": 3.7,
+      "key": "23",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marshall",
+      "popPct": 62.3
+     },
+     {
+      "county": "Story",
+      "popPct": 37.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Marshall",
+      "popPct": 62.3
+     },
+     {
+      "county": "Story",
+      "popPct": 37.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Floyd",
+      "popPct": 26.4
+     },
+     {
+      "county": "Chickasaw",
+      "popPct": 20.3
+     },
+     {
+      "county": "Mitchell",
+      "popPct": 17.9
+     },
+     {
+      "county": "Howard",
+      "popPct": 15.9
+     },
+     {
+      "county": "Worth",
+      "popPct": 12.5
+     },
+     {
+      "county": "Winneshiek",
+      "popPct": 4.0
+     },
+     {
+      "county": "Cerro Gordo",
+      "popPct": 3.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 64091,
+    "pres2020New": 10.0,
+    "pres2020Old": 26.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-26; it draws from the old SD-36 (63%), the old SD-25 (30%), the old SD-24 (6%) and 1 more. Counties: gained Marshall (62%), Story (37%); lost Floyd, Chickasaw, Mitchell, Howard and 3 more. 2020 presidential margin R+26.6 on the 2016\u20132020 lines \u2192 R+10.0 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 45.7,
+      "key": "25",
+      "popPct": 45.9
+     },
+     {
+      "areaPct": 25.0,
+      "key": "38",
+      "popPct": 29.3
+     },
+     {
+      "areaPct": 24.6,
+      "key": "36",
+      "popPct": 20.6
+     },
+     {
+      "areaPct": 1.4,
+      "key": "32",
+      "popPct": 2.5
+     },
+     {
+      "areaPct": 3.3,
+      "key": "30",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Poweshiek",
+      "popPct": 29.3
+     },
+     {
+      "county": "Hardin",
+      "popPct": 26.5
+     },
+     {
+      "county": "Tama",
+      "popPct": 20.6
+     },
+     {
+      "county": "Grundy",
+      "popPct": 19.3
+     },
+     {
+      "county": "Black Hawk",
+      "popPct": 4.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Poweshiek",
+      "popPct": 29.3
+     },
+     {
+      "county": "Hardin",
+      "popPct": 26.5
+     },
+     {
+      "county": "Tama",
+      "popPct": 20.6
+     },
+     {
+      "county": "Grundy",
+      "popPct": 19.3
+     },
+     {
+      "county": "Black Hawk",
+      "popPct": 4.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cerro Gordo",
+      "popPct": 70.7
+     },
+     {
+      "county": "Franklin",
+      "popPct": 17.2
+     },
+     {
+      "county": "Butler",
+      "popPct": 12.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63646,
+    "pres2020New": 23.9,
+    "pres2020Old": 14.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-27; it draws from the old SD-25 (46%), the old SD-38 (29%), the old SD-36 (21%) and 2 more. Counties: gained Poweshiek (29%), Hardin (26%), Tama (21%) and 2 more; lost Cerro Gordo, Franklin, Butler. 2020 presidential margin R+14.2 on the 2016\u20132020 lines \u2192 R+23.9 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 40.9,
+      "key": "4",
+      "popPct": 37.1
+     },
+     {
+      "areaPct": 21.7,
+      "key": "24",
+      "popPct": 24.2
+     },
+     {
+      "areaPct": 20.6,
+      "key": "27",
+      "popPct": 15.6
+     },
+     {
+      "areaPct": 15.4,
+      "key": "5",
+      "popPct": 15.0
+     },
+     {
+      "areaPct": 1.4,
+      "key": "25",
+      "popPct": 8.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hamilton",
+      "popPct": 23.4
+     },
+     {
+      "county": "Wright",
+      "popPct": 20.1
+     },
+     {
+      "county": "Hancock",
+      "popPct": 16.8
+     },
+     {
+      "county": "Franklin",
+      "popPct": 15.7
+     },
+     {
+      "county": "Humboldt",
+      "popPct": 15.0
+     },
+     {
+      "county": "Story",
+      "popPct": 8.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hamilton",
+      "popPct": 23.4
+     },
+     {
+      "county": "Wright",
+      "popPct": 20.1
+     },
+     {
+      "county": "Hancock",
+      "popPct": 16.8
+     },
+     {
+      "county": "Franklin",
+      "popPct": 15.7
+     },
+     {
+      "county": "Humboldt",
+      "popPct": 15.0
+     },
+     {
+      "county": "Story",
+      "popPct": 8.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Winneshiek",
+      "popPct": 30.4
+     },
+     {
+      "county": "Clayton",
+      "popPct": 29.3
+     },
+     {
+      "county": "Allamakee",
+      "popPct": 24.5
+     },
+     {
+      "county": "Fayette",
+      "popPct": 15.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 64060,
+    "pres2020New": 33.7,
+    "pres2020Old": 19.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-28; it draws from the old SD-4 (37%), the old SD-24 (24%), the old SD-27 (16%) and 2 more. Counties: gained Hamilton (23%), Wright (20%), Hancock (17%) and 3 more; lost Winneshiek, Clayton, Allamakee, Fayette. 2020 presidential margin R+19.8 on the 2016\u20132020 lines \u2192 R+33.7 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 22.6,
+      "key": "32",
+      "popPct": 39.0
+     },
+     {
+      "areaPct": 47.5,
+      "key": "26",
+      "popPct": 38.7
+     },
+     {
+      "areaPct": 11.1,
+      "key": "25",
+      "popPct": 11.4
+     },
+     {
+      "areaPct": 18.8,
+      "key": "27",
+      "popPct": 11.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bremer",
+      "popPct": 39.0
+     },
+     {
+      "county": "Butler",
+      "popPct": 22.2
+     },
+     {
+      "county": "Floyd",
+      "popPct": 19.9
+     },
+     {
+      "county": "Chickasaw",
+      "popPct": 18.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Bremer",
+      "popPct": 39.0
+     },
+     {
+      "county": "Butler",
+      "popPct": 22.2
+     },
+     {
+      "county": "Floyd",
+      "popPct": 19.9
+     },
+     {
+      "county": "Chickasaw",
+      "popPct": 18.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Dubuque",
+      "popPct": 57.2
+     },
+     {
+      "county": "Jackson",
+      "popPct": 30.0
+     },
+     {
+      "county": "Jones",
+      "popPct": 12.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 64103,
+    "pres2020New": 24.2,
+    "pres2020Old": 24.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-29; it draws from the old SD-32 (39%), the old SD-26 (39%), the old SD-25 (11%) and 1 more. Counties: gained Bremer (39%), Butler (22%), Floyd (20%) and 1 more; lost Dubuque, Jackson, Jones. 2020 presidential margin R+24.1 on the 2016\u20132020 lines \u2192 R+24.2 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 40.0,
+      "key": "2",
+      "popPct": 35.6
+     },
+     {
+      "areaPct": 25.9,
+      "key": "6",
+      "popPct": 32.6
+     },
+     {
+      "areaPct": 34.1,
+      "key": "1",
+      "popPct": 31.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Buena Vista",
+      "popPct": 32.6
+     },
+     {
+      "county": "O'Brien",
+      "popPct": 22.1
+     },
+     {
+      "county": "Clay",
+      "popPct": 22.1
+     },
+     {
+      "county": "Cherokee",
+      "popPct": 13.4
+     },
+     {
+      "county": "Osceola",
+      "popPct": 9.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Buena Vista",
+      "popPct": 32.6
+     },
+     {
+      "county": "O'Brien",
+      "popPct": 22.1
+     },
+     {
+      "county": "Clay",
+      "popPct": 22.1
+     },
+     {
+      "county": "Cherokee",
+      "popPct": 13.4
+     },
+     {
+      "county": "Osceola",
+      "popPct": 9.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Woodbury",
+      "popPct": 61.4
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 38.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63788,
+    "pres2020New": 41.2,
+    "pres2020Old": 36.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-3; it draws from the old SD-2 (36%), the old SD-6 (33%), the old SD-1 (32%). Counties: gained Buena Vista (33%), O'Brien (22%), Clay (22%) and 2 more; lost Woodbury, Plymouth. 2020 presidential margin R+36.2 on the 2016\u20132020 lines \u2192 R+41.2 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 28.4,
+      "key": "27",
+      "popPct": 64.6
+     },
+     {
+      "areaPct": 71.6,
+      "key": "26",
+      "popPct": 35.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cerro Gordo",
+      "popPct": 67.3
+     },
+     {
+      "county": "Mitchell",
+      "popPct": 16.5
+     },
+     {
+      "county": "Worth",
+      "popPct": 11.6
+     },
+     {
+      "county": "Floyd",
+      "popPct": 4.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cerro Gordo",
+      "popPct": 67.3
+     },
+     {
+      "county": "Mitchell",
+      "popPct": 16.5
+     },
+     {
+      "county": "Worth",
+      "popPct": 11.6
+     },
+     {
+      "county": "Floyd",
+      "popPct": 4.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Black Hawk",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63993,
+    "pres2020New": 13.2,
+    "pres2020Old": -8.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-30; it draws from the old SD-27 (65%), the old SD-26 (35%). Counties: gained Cerro Gordo (67%), Mitchell (16%), Worth (12%) and 1 more; lost Black Hawk. 2020 presidential margin D+8.7 on the 2016\u20132020 lines \u2192 R+13.2 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 82.1,
+      "key": "31",
+      "popPct": 76.8
+     },
+     {
+      "areaPct": 17.9,
+      "key": "30",
+      "popPct": 23.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Black Hawk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 64326,
+    "pres2020New": -21.8,
+    "pres2020Old": -17.5,
+    "retainedAreaPct": 82.1,
+    "retainedPopPct": 76.8,
+    "text": "Kept 77% of its population from the 2016\u20132020 SD-31; gained the rest from the old SD-30 (23%). Entirely in Black Hawk County. 2020 presidential margin D+17.5 on the 2016\u20132020 lines \u2192 D+21.8 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 74.7,
+      "key": "28",
+      "popPct": 80.2
+     },
+     {
+      "areaPct": 24.0,
+      "key": "26",
+      "popPct": 18.6
+     },
+     {
+      "areaPct": 1.3,
+      "key": "29",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Winneshiek",
+      "popPct": 31.4
+     },
+     {
+      "county": "Clayton",
+      "popPct": 26.6
+     },
+     {
+      "county": "Allamakee",
+      "popPct": 22.2
+     },
+     {
+      "county": "Howard",
+      "popPct": 14.8
+     },
+     {
+      "county": "Fayette",
+      "popPct": 3.7
+     },
+     {
+      "county": "Dubuque",
+      "popPct": 1.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Winneshiek",
+      "popPct": 31.4
+     },
+     {
+      "county": "Clayton",
+      "popPct": 26.6
+     },
+     {
+      "county": "Allamakee",
+      "popPct": 22.2
+     },
+     {
+      "county": "Howard",
+      "popPct": 14.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Bremer",
+      "popPct": 41.3
+     },
+     {
+      "county": "Buchanan",
+      "popPct": 31.5
+     },
+     {
+      "county": "Black Hawk",
+      "popPct": 10.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63788,
+    "pres2020New": 21.4,
+    "pres2020Old": 18.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-32; it draws from the old SD-28 (80%), the old SD-26 (19%), the old SD-29 (1%). Counties: gained Winneshiek (31%), Clayton (27%), Allamakee (22%) and 1 more; lost Bremer, Buchanan, Black Hawk. 2020 presidential margin R+18.9 on the 2016\u20132020 lines \u2192 R+21.4 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 88.4,
+      "key": "29",
+      "popPct": 80.2
+     },
+     {
+      "areaPct": 11.6,
+      "key": "48",
+      "popPct": 19.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dubuque",
+      "popPct": 49.7
+     },
+     {
+      "county": "Jones",
+      "popPct": 32.4
+     },
+     {
+      "county": "Jackson",
+      "popPct": 17.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dubuque",
+      "popPct": 49.7
+     },
+     {
+      "county": "Jones",
+      "popPct": 32.4
+     },
+     {
+      "county": "Jackson",
+      "popPct": 17.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63717,
+    "pres2020New": 23.6,
+    "pres2020Old": -26.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-33; it draws from the old SD-29 (80%), the old SD-48 (20%). Counties: gained Dubuque (50%), Jones (32%), Jackson (18%); lost Linn. 2020 presidential margin D+26.8 on the 2016\u20132020 lines \u2192 R+23.6 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 48.7,
+      "key": "32",
+      "popPct": 53.3
+     },
+     {
+      "areaPct": 36.5,
+      "key": "48",
+      "popPct": 30.0
+     },
+     {
+      "areaPct": 11.1,
+      "key": "28",
+      "popPct": 10.7
+     },
+     {
+      "areaPct": 1.9,
+      "key": "29",
+      "popPct": 3.8
+     },
+     {
+      "areaPct": 1.8,
+      "key": "31",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Buchanan",
+      "popPct": 32.4
+     },
+     {
+      "county": "Delaware",
+      "popPct": 27.5
+     },
+     {
+      "county": "Fayette",
+      "popPct": 27.0
+     },
+     {
+      "county": "Black Hawk",
+      "popPct": 9.2
+     },
+     {
+      "county": "Dubuque",
+      "popPct": 3.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Buchanan",
+      "popPct": 32.4
+     },
+     {
+      "county": "Delaware",
+      "popPct": 27.5
+     },
+     {
+      "county": "Fayette",
+      "popPct": 27.0
+     },
+     {
+      "county": "Black Hawk",
+      "popPct": 9.2
+     },
+     {
+      "county": "Dubuque",
+      "popPct": 3.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63476,
+    "pres2020New": 25.3,
+    "pres2020Old": -8.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-34; it draws from the old SD-32 (53%), the old SD-48 (30%), the old SD-28 (11%) and 2 more. Counties: gained Buchanan (32%), Delaware (28%), Fayette (27%) and 2 more; lost Linn. 2020 presidential margin D+8.9 on the 2016\u20132020 lines \u2192 R+25.3 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 88.6,
+      "key": "49",
+      "popPct": 86.1
+     },
+     {
+      "areaPct": 11.2,
+      "key": "29",
+      "popPct": 12.8
+     },
+     {
+      "areaPct": 0.1,
+      "key": "46",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clinton",
+      "popPct": 73.0
+     },
+     {
+      "county": "Scott",
+      "popPct": 14.3
+     },
+     {
+      "county": "Jackson",
+      "popPct": 12.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Clinton",
+      "popPct": 73.0
+     },
+     {
+      "county": "Scott",
+      "popPct": 14.3
+     },
+     {
+      "county": "Jackson",
+      "popPct": 12.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Linn",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63807,
+    "pres2020New": 13.3,
+    "pres2020Old": -18.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-35; it draws from the old SD-49 (86%), the old SD-29 (13%), the old SD-46 (1%). Counties: gained Clinton (73%), Scott (14%), Jackson (13%); lost Linn. 2020 presidential margin D+18.6 on the 2016\u20132020 lines \u2192 R+13.3 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 59.8,
+      "key": "50",
+      "popPct": 96.7
+     },
+     {
+      "areaPct": 40.2,
+      "key": "29",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dubuque",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dubuque",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Marshall",
+      "popPct": 66.3
+     },
+     {
+      "county": "Tama",
+      "popPct": 28.7
+     },
+     {
+      "county": "Black Hawk",
+      "popPct": 5.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 64324,
+    "pres2020New": -9.0,
+    "pres2020Old": 12.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-36; it draws from the old SD-50 (97%), the old SD-29 (3%). Counties: gained Dubuque (100%); lost Marshall, Tama, Black Hawk. 2020 presidential margin R+12.5 on the 2016\u20132020 lines \u2192 D+9.0 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 84.3,
+      "key": "34",
+      "popPct": 82.4
+     },
+     {
+      "areaPct": 11.8,
+      "key": "33",
+      "popPct": 14.6
+     },
+     {
+      "areaPct": 3.9,
+      "key": "48",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Johnson",
+      "popPct": 69.6
+     },
+     {
+      "county": "Cedar",
+      "popPct": 26.4
+     },
+     {
+      "county": "Muscatine",
+      "popPct": 4.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63346,
+    "pres2020New": -13.4,
+    "pres2020Old": -23.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-37; it draws from the old SD-34 (82%), the old SD-33 (15%), the old SD-48 (3%). Counties: gained Linn (100%); lost Johnson, Cedar, Muscatine. 2020 presidential margin D+23.1 on the 2016\u20132020 lines \u2192 D+13.4 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 10.0,
+      "key": "30",
+      "popPct": 73.0
+     },
+     {
+      "areaPct": 20.3,
+      "key": "31",
+      "popPct": 14.3
+     },
+     {
+      "areaPct": 44.7,
+      "key": "36",
+      "popPct": 11.1
+     },
+     {
+      "areaPct": 24.9,
+      "key": "38",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Black Hawk",
+      "popPct": 92.0
+     },
+     {
+      "county": "Tama",
+      "popPct": 6.4
+     },
+     {
+      "county": "Benton",
+      "popPct": 1.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Black Hawk",
+      "popPct": 92.0
+     },
+     {
+      "county": "Tama",
+      "popPct": 6.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Poweshiek",
+      "popPct": 30.6
+     },
+     {
+      "county": "Iowa",
+      "popPct": 27.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63363,
+    "pres2020New": -0.3,
+    "pres2020Old": 22.7,
+    "retainedAreaPct": 24.9,
+    "retainedPopPct": 1.6,
+    "text": "A new footprint: only 2% of its population was in the 2016\u20132020 SD-38; it draws from the old SD-30 (73%), the old SD-31 (14%), the old SD-36 (11%). Counties: gained Black Hawk (92%), Tama (6%); lost Poweshiek, Iowa. 2020 presidential margin R+22.7 on the 2016\u20132020 lines \u2192 D+0.3 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 79.1,
+      "key": "35",
+      "popPct": 51.8
+     },
+     {
+      "areaPct": 20.7,
+      "key": "33",
+      "popPct": 48.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Johnson",
+      "popPct": 55.3
+     },
+     {
+      "county": "Washington",
+      "popPct": 29.9
+     },
+     {
+      "county": "Keokuk",
+      "popPct": 14.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63615,
+    "pres2020New": -28.9,
+    "pres2020Old": 0.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-39; it draws from the old SD-35 (52%), the old SD-33 (48%). Counties: gained Linn (100%); lost Johnson, Washington, Keokuk. 2020 presidential margin R+0.9 on the 2016\u20132020 lines \u2192 D+28.9 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 67.6,
+      "key": "5",
+      "popPct": 78.4
+     },
+     {
+      "areaPct": 23.6,
+      "key": "6",
+      "popPct": 15.4
+     },
+     {
+      "areaPct": 8.8,
+      "key": "24",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Webster",
+      "popPct": 58.0
+     },
+     {
+      "county": "Calhoun",
+      "popPct": 15.5
+     },
+     {
+      "county": "Sac",
+      "popPct": 15.4
+     },
+     {
+      "county": "Pocahontas",
+      "popPct": 11.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Webster",
+      "popPct": 58.0
+     },
+     {
+      "county": "Calhoun",
+      "popPct": 15.5
+     },
+     {
+      "county": "Sac",
+      "popPct": 15.4
+     },
+     {
+      "county": "Pocahontas",
+      "popPct": 11.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kossuth",
+      "popPct": 25.4
+     },
+     {
+      "county": "Wright",
+      "popPct": 22.0
+     },
+     {
+      "county": "Hancock",
+      "popPct": 18.4
+     },
+     {
+      "county": "Winnebago",
+      "popPct": 18.2
+     },
+     {
+      "county": "Emmet",
+      "popPct": 15.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63818,
+    "pres2020New": 34.2,
+    "pres2020Old": 36.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-4; it draws from the old SD-5 (78%), the old SD-6 (15%), the old SD-24 (6%). Counties: gained Webster (58%), Calhoun (16%), Sac (15%) and 1 more; lost Kossuth, Wright, Hancock, Winnebago and 1 more. 2020 presidential margin R+36.3 on the 2016\u20132020 lines \u2192 R+34.2 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 30.6,
+      "key": "35",
+      "popPct": 50.1
+     },
+     {
+      "areaPct": 34.5,
+      "key": "33",
+      "popPct": 33.1
+     },
+     {
+      "areaPct": 30.8,
+      "key": "34",
+      "popPct": 15.3
+     },
+     {
+      "areaPct": 4.1,
+      "key": "48",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Linn",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Mahaska",
+      "popPct": 37.3
+     },
+     {
+      "county": "Marion",
+      "popPct": 21.4
+     },
+     {
+      "county": "Appanoose",
+      "popPct": 20.7
+     },
+     {
+      "county": "Monroe",
+      "popPct": 12.7
+     },
+     {
+      "county": "Wapello",
+      "popPct": 7.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63915,
+    "pres2020New": -15.6,
+    "pres2020Old": 44.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-40; it draws from the old SD-35 (50%), the old SD-33 (33%), the old SD-34 (15%) and 1 more. Counties: gained Linn (100%); lost Mahaska, Marion, Appanoose, Monroe and 1 more. 2020 presidential margin R+44.0 on the 2016\u20132020 lines \u2192 D+15.6 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 24.4,
+      "key": "46",
+      "popPct": 29.6
+     },
+     {
+      "areaPct": 65.6,
+      "key": "37",
+      "popPct": 29.0
+     },
+     {
+      "areaPct": 1.2,
+      "key": "45",
+      "popPct": 28.4
+     },
+     {
+      "areaPct": 8.3,
+      "key": "44",
+      "popPct": 8.5
+     },
+     {
+      "areaPct": 0.5,
+      "key": "47",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Scott",
+      "popPct": 59.9
+     },
+     {
+      "county": "Cedar",
+      "popPct": 28.9
+     },
+     {
+      "county": "Muscatine",
+      "popPct": 11.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Scott",
+      "popPct": 59.9
+     },
+     {
+      "county": "Cedar",
+      "popPct": 28.9
+     },
+     {
+      "county": "Muscatine",
+      "popPct": 11.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Wapello",
+      "popPct": 50.4
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 22.8
+     },
+     {
+      "county": "Davis",
+      "popPct": 15.0
+     },
+     {
+      "county": "Van Buren",
+      "popPct": 11.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63898,
+    "pres2020New": 4.1,
+    "pres2020Old": 21.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-41; it draws from the old SD-46 (30%), the old SD-37 (29%), the old SD-45 (28%) and 2 more. Counties: gained Scott (60%), Cedar (29%), Muscatine (11%); lost Wapello, Jefferson, Davis, Van Buren. 2020 presidential margin R+21.2 on the 2016\u20132020 lines \u2192 R+4.1 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 40.6,
+      "key": "48",
+      "popPct": 44.7
+     },
+     {
+      "areaPct": 50.0,
+      "key": "38",
+      "popPct": 38.4
+     },
+     {
+      "areaPct": 4.5,
+      "key": "34",
+      "popPct": 8.7
+     },
+     {
+      "areaPct": 4.8,
+      "key": "35",
+      "popPct": 8.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Linn",
+      "popPct": 61.2
+     },
+     {
+      "county": "Benton",
+      "popPct": 38.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Linn",
+      "popPct": 61.2
+     },
+     {
+      "county": "Benton",
+      "popPct": 38.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Lee",
+      "popPct": 57.9
+     },
+     {
+      "county": "Henry",
+      "popPct": 35.3
+     },
+     {
+      "county": "Washington",
+      "popPct": 3.6
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 3.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63961,
+    "pres2020New": 14.1,
+    "pres2020Old": 25.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-42; it draws from the old SD-48 (45%), the old SD-38 (38%), the old SD-34 (9%) and 1 more. Counties: gained Linn (61%), Benton (38%); lost Lee, Henry, Washington, Jefferson. 2020 presidential margin R+25.7 on the 2016\u20132020 lines \u2192 R+14.1 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 91.5,
+      "key": "37",
+      "popPct": 63.9
+     },
+     {
+      "areaPct": 6.3,
+      "key": "39",
+      "popPct": 28.4
+     },
+     {
+      "areaPct": 2.2,
+      "key": "43",
+      "popPct": 7.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Johnson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 64082,
+    "pres2020New": -41.7,
+    "pres2020Old": -60.2,
+    "retainedAreaPct": 2.2,
+    "retainedPopPct": 7.8,
+    "text": "A new footprint: only 8% of its population was in the 2016\u20132020 SD-43; it draws from the old SD-37 (64%), the old SD-39 (28%). Entirely in Johnson County. 2020 presidential margin D+60.2 on the 2016\u20132020 lines \u2192 D+41.7 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 39.5,
+      "key": "41",
+      "popPct": 33.1
+     },
+     {
+      "areaPct": 18.5,
+      "key": "40",
+      "popPct": 29.1
+     },
+     {
+      "areaPct": 12.8,
+      "key": "42",
+      "popPct": 22.1
+     },
+     {
+      "areaPct": 29.2,
+      "key": "39",
+      "popPct": 15.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mahaska",
+      "popPct": 29.1
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 24.6
+     },
+     {
+      "county": "Henry",
+      "popPct": 19.2
+     },
+     {
+      "county": "Keokuk",
+      "popPct": 15.7
+     },
+     {
+      "county": "Van Buren",
+      "popPct": 11.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Mahaska",
+      "popPct": 29.1
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 24.6
+     },
+     {
+      "county": "Henry",
+      "popPct": 19.2
+     },
+     {
+      "county": "Keokuk",
+      "popPct": 15.7
+     },
+     {
+      "county": "Van Buren",
+      "popPct": 11.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Des Moines",
+      "popPct": 65.5
+     },
+     {
+      "county": "Louisa",
+      "popPct": 18.3
+     },
+     {
+      "county": "Muscatine",
+      "popPct": 16.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63653,
+    "pres2020New": 30.6,
+    "pres2020Old": 12.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-44; it draws from the old SD-41 (33%), the old SD-40 (29%), the old SD-42 (22%) and 1 more. Counties: gained Mahaska (29%), Jefferson (25%), Henry (19%) and 2 more; lost Des Moines, Louisa, Muscatine. 2020 presidential margin R+12.2 on the 2016\u20132020 lines \u2192 R+30.6 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 94.0,
+      "key": "43",
+      "popPct": 94.2
+     },
+     {
+      "areaPct": 6.0,
+      "key": "37",
+      "popPct": 5.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Johnson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Johnson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Scott",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63665,
+    "pres2020New": -60.1,
+    "pres2020Old": -15.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-45; it draws from the old SD-43 (94%), the old SD-37 (6%). Counties: gained Johnson (100%); lost Scott. 2020 presidential margin D+15.6 on the 2016\u20132020 lines \u2192 D+60.1 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 52.9,
+      "key": "39",
+      "popPct": 62.5
+     },
+     {
+      "areaPct": 36.2,
+      "key": "38",
+      "popPct": 25.9
+     },
+     {
+      "areaPct": 4.1,
+      "key": "37",
+      "popPct": 6.8
+     },
+     {
+      "areaPct": 6.7,
+      "key": "42",
+      "popPct": 3.2
+     },
+     {
+      "areaPct": 0.2,
+      "key": "43",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Johnson",
+      "popPct": 38.9
+     },
+     {
+      "county": "Washington",
+      "popPct": 35.0
+     },
+     {
+      "county": "Iowa",
+      "popPct": 26.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Johnson",
+      "popPct": 38.9
+     },
+     {
+      "county": "Washington",
+      "popPct": 35.0
+     },
+     {
+      "county": "Iowa",
+      "popPct": 26.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Scott",
+      "popPct": 50.2
+     },
+     {
+      "county": "Muscatine",
+      "popPct": 49.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 64332,
+    "pres2020New": 10.3,
+    "pres2020Old": 8.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-46; it draws from the old SD-39 (62%), the old SD-38 (26%), the old SD-37 (7%) and 2 more. Counties: gained Johnson (39%), Washington (35%), Iowa (26%); lost Scott, Muscatine. 2020 presidential margin R+8.2 on the 2016\u20132020 lines \u2192 R+10.3 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 36.3,
+      "key": "47",
+      "popPct": 80.2
+     },
+     {
+      "areaPct": 29.9,
+      "key": "46",
+      "popPct": 11.3
+     },
+     {
+      "areaPct": 33.8,
+      "key": "49",
+      "popPct": 8.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Scott",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 63843,
+    "pres2020New": 2.6,
+    "pres2020Old": -6.0,
+    "retainedAreaPct": 36.3,
+    "retainedPopPct": 80.2,
+    "text": "Kept 80% of its population from the 2016\u20132020 SD-47; gained the rest from the old SD-46 (11%), the old SD-49 (8%). Entirely in Scott County. 2020 presidential margin D+6.0 on the 2016\u20132020 lines \u2192 R+2.6 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 6.8,
+      "key": "46",
+      "popPct": 45.9
+     },
+     {
+      "areaPct": 69.3,
+      "key": "44",
+      "popPct": 36.8
+     },
+     {
+      "areaPct": 23.8,
+      "key": "42",
+      "popPct": 12.9
+     },
+     {
+      "areaPct": 0.1,
+      "key": "37",
+      "popPct": 4.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Muscatine",
+      "popPct": 56.6
+     },
+     {
+      "county": "Louisa",
+      "popPct": 17.0
+     },
+     {
+      "county": "Des Moines",
+      "popPct": 13.4
+     },
+     {
+      "county": "Henry",
+      "popPct": 12.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Muscatine",
+      "popPct": 56.6
+     },
+     {
+      "county": "Louisa",
+      "popPct": 17.0
+     },
+     {
+      "county": "Des Moines",
+      "popPct": 13.4
+     },
+     {
+      "county": "Henry",
+      "popPct": 12.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Linn",
+      "popPct": 49.5
+     },
+     {
+      "county": "Delaware",
+      "popPct": 27.7
+     },
+     {
+      "county": "Jones",
+      "popPct": 20.0
+     },
+     {
+      "county": "Buchanan",
+      "popPct": 2.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63755,
+    "pres2020New": 20.4,
+    "pres2020Old": 17.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-48; it draws from the old SD-46 (46%), the old SD-44 (37%), the old SD-42 (13%) and 1 more. Counties: gained Muscatine (57%), Louisa (17%), Des Moines (13%) and 1 more; lost Linn, Delaware, Jones, Buchanan. 2020 presidential margin R+17.1 on the 2016\u20132020 lines \u2192 R+20.4 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 59.8,
+      "key": "45",
+      "popPct": 65.8
+     },
+     {
+      "areaPct": 9.7,
+      "key": "47",
+      "popPct": 24.5
+     },
+     {
+      "areaPct": 30.5,
+      "key": "46",
+      "popPct": 9.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Scott",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Clinton",
+      "popPct": 77.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63372,
+    "pres2020New": -17.9,
+    "pres2020Old": 13.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-49; it draws from the old SD-45 (66%), the old SD-47 (24%), the old SD-46 (10%). Counties: lost Clinton. 2020 presidential margin R+13.1 on the 2016\u20132020 lines \u2192 D+17.9 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 60.1,
+      "key": "4",
+      "popPct": 54.6
+     },
+     {
+      "areaPct": 39.9,
+      "key": "1",
+      "popPct": 45.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dickinson",
+      "popPct": 27.8
+     },
+     {
+      "county": "Kossuth",
+      "popPct": 23.3
+     },
+     {
+      "county": "Winnebago",
+      "popPct": 16.7
+     },
+     {
+      "county": "Emmet",
+      "popPct": 14.6
+     },
+     {
+      "county": "Palo Alto",
+      "popPct": 14.0
+     },
+     {
+      "county": "Clay",
+      "popPct": 3.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Dickinson",
+      "popPct": 27.8
+     },
+     {
+      "county": "Kossuth",
+      "popPct": 23.3
+     },
+     {
+      "county": "Winnebago",
+      "popPct": 16.7
+     },
+     {
+      "county": "Emmet",
+      "popPct": 14.6
+     },
+     {
+      "county": "Palo Alto",
+      "popPct": 14.0
+     },
+     {
+      "county": "Clay",
+      "popPct": 3.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Webster",
+      "popPct": 55.4
+     },
+     {
+      "county": "Calhoun",
+      "popPct": 16.6
+     },
+     {
+      "county": "Humboldt",
+      "popPct": 16.1
+     },
+     {
+      "county": "Pocahontas",
+      "popPct": 11.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63889,
+    "pres2020New": 35.3,
+    "pres2020Old": 33.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-5; it draws from the old SD-4 (55%), the old SD-1 (45%). Counties: gained Dickinson (28%), Kossuth (23%), Winnebago (17%) and 3 more; lost Webster, Calhoun, Humboldt, Pocahontas. 2020 presidential margin R+33.0 on the 2016\u20132020 lines \u2192 R+35.3 on the current lines.",
+    "toEra": "current"
+   },
+   "50": {
+    "contributors": [
+     {
+      "areaPct": 82.4,
+      "key": "42",
+      "popPct": 52.5
+     },
+     {
+      "areaPct": 17.6,
+      "key": "44",
+      "popPct": 47.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lee",
+      "popPct": 52.6
+     },
+     {
+      "county": "Des Moines",
+      "popPct": 47.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lee",
+      "popPct": 52.6
+     },
+     {
+      "county": "Des Moines",
+      "popPct": 47.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Dubuque",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63899,
+    "pres2020New": 10.4,
+    "pres2020Old": -10.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-50; it draws from the old SD-42 (52%), the old SD-44 (48%). Counties: gained Lee (53%), Des Moines (47%); lost Dubuque. 2020 presidential margin D+10.3 on the 2016\u20132020 lines \u2192 R+10.4 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 51.4,
+      "key": "9",
+      "popPct": 49.9
+     },
+     {
+      "areaPct": 46.0,
+      "key": "6",
+      "popPct": 46.8
+     },
+     {
+      "areaPct": 2.5,
+      "key": "11",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carroll",
+      "popPct": 32.5
+     },
+     {
+      "county": "Crawford",
+      "popPct": 25.9
+     },
+     {
+      "county": "Shelby",
+      "popPct": 18.4
+     },
+     {
+      "county": "Ida",
+      "popPct": 11.0
+     },
+     {
+      "county": "Audubon",
+      "popPct": 8.9
+     },
+     {
+      "county": "Pottawattamie",
+      "popPct": 3.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Shelby",
+      "popPct": 18.4
+     },
+     {
+      "county": "Ida",
+      "popPct": 11.0
+     },
+     {
+      "county": "Pottawattamie",
+      "popPct": 3.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Buena Vista",
+      "popPct": 34.3
+     },
+     {
+      "county": "Sac",
+      "popPct": 16.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63807,
+    "pres2020New": 39.2,
+    "pres2020Old": 36.9,
+    "retainedAreaPct": 46.0,
+    "retainedPopPct": 46.8,
+    "text": "A new footprint: only 47% of its population was in the 2016\u20132020 SD-6; it draws from the old SD-9 (50%), the old SD-11 (3%). Counties: gained Shelby (18%), Ida (11%), Pottawattamie (3%); lost Buena Vista, Sac. 2020 presidential margin R+36.9 on the 2016\u20132020 lines \u2192 R+39.2 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 38.0,
+      "key": "3",
+      "popPct": 74.0
+     },
+     {
+      "areaPct": 45.4,
+      "key": "9",
+      "popPct": 19.9
+     },
+     {
+      "areaPct": 16.6,
+      "key": "2",
+      "popPct": 6.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Woodbury",
+      "popPct": 65.8
+     },
+     {
+      "county": "Plymouth",
+      "popPct": 15.4
+     },
+     {
+      "county": "Monona",
+      "popPct": 13.8
+     },
+     {
+      "county": "Cherokee",
+      "popPct": 5.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Monona",
+      "popPct": 13.8
+     },
+     {
+      "county": "Cherokee",
+      "popPct": 5.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 63692,
+    "pres2020New": 36.5,
+    "pres2020Old": 0.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-7; it draws from the old SD-3 (74%), the old SD-9 (20%), the old SD-2 (6%). Counties: gained Monona (14%), Cherokee (5%). 2020 presidential margin R+0.9 on the 2016\u20132020 lines \u2192 R+36.5 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 33.7,
+      "key": "11",
+      "popPct": 44.0
+     },
+     {
+      "areaPct": 38.3,
+      "key": "12",
+      "popPct": 33.1
+     },
+     {
+      "areaPct": 28.0,
+      "key": "9",
+      "popPct": 22.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pottawattamie",
+      "popPct": 44.0
+     },
+     {
+      "county": "Harrison",
+      "popPct": 22.9
+     },
+     {
+      "county": "Mills",
+      "popPct": 22.7
+     },
+     {
+      "county": "Fremont",
+      "popPct": 10.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Harrison",
+      "popPct": 22.9
+     },
+     {
+      "county": "Mills",
+      "popPct": 22.7
+     },
+     {
+      "county": "Fremont",
+      "popPct": 10.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 63642,
+    "pres2020New": 36.4,
+    "pres2020Old": 4.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-8; it draws from the old SD-11 (44%), the old SD-12 (33%), the old SD-9 (23%). Counties: gained Harrison (23%), Mills (23%), Fremont (10%). 2020 presidential margin R+4.4 on the 2016\u20132020 lines \u2192 R+36.4 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 62.2,
+      "key": "12",
+      "popPct": 56.8
+     },
+     {
+      "areaPct": 33.6,
+      "key": "11",
+      "popPct": 40.4
+     },
+     {
+      "areaPct": 4.3,
+      "key": "10",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Page",
+      "popPct": 23.8
+     },
+     {
+      "county": "Cass",
+      "popPct": 20.6
+     },
+     {
+      "county": "Union",
+      "popPct": 16.6
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 16.3
+     },
+     {
+      "county": "Taylor",
+      "popPct": 9.3
+     },
+     {
+      "county": "Ringgold",
+      "popPct": 7.4
+     },
+     {
+      "county": "Adams",
+      "popPct": 5.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Page",
+      "popPct": 23.8
+     },
+     {
+      "county": "Cass",
+      "popPct": 20.6
+     },
+     {
+      "county": "Union",
+      "popPct": 16.6
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 16.3
+     },
+     {
+      "county": "Taylor",
+      "popPct": 9.3
+     },
+     {
+      "county": "Ringgold",
+      "popPct": 7.4
+     },
+     {
+      "county": "Adams",
+      "popPct": 5.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Harrison",
+      "popPct": 24.6
+     },
+     {
+      "county": "Crawford",
+      "popPct": 22.1
+     },
+     {
+      "county": "Shelby",
+      "popPct": 19.9
+     },
+     {
+      "county": "Monona",
+      "popPct": 14.8
+     },
+     {
+      "county": "Ida",
+      "popPct": 11.8
+     },
+     {
+      "county": "Woodbury",
+      "popPct": 6.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 63507,
+    "pres2020New": 40.4,
+    "pres2020Old": 40.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-9; it draws from the old SD-12 (57%), the old SD-11 (40%), the old SD-10 (3%). Counties: gained Page (24%), Cass (21%), Union (17%) and 4 more; lost Harrison, Crawford, Shelby, Monona and 2 more. 2020 presidential margin R+40.6 on the 2016\u20132020 lines \u2192 R+40.4 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

@@ -1,0 +1,374 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 Michigan House of Representatives election",
+   "senate": "2026 Michigan Senate election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "101": [
+   {
+    "name": "Joseph Fox",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for the state senate"
+   }
+  ],
+  "108": [
+   {
+    "name": "David Prestin",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for the state senate"
+   }
+  ],
+  "11": [
+   {
+    "name": "Donavan McKinney",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for the U.S. House of Representatives"
+   }
+  ],
+  "15": [
+   {
+    "name": "Erin Byrnes",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for the state senate"
+   }
+  ],
+  "18": [
+   {
+    "name": "Jason Hoskins",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for the state senate"
+   }
+  ],
+  "2": [
+   {
+    "name": "Tullio Liberati",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "22": [
+   {
+    "name": "Matt Koleszar",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for the state senate"
+   }
+  ],
+  "31": [
+   {
+    "name": "Reggie Miller",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "4": [
+   {
+    "name": "Karen Whitsett",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "41": [
+   {
+    "name": "Julie Rogers",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for the state senate"
+   }
+  ],
+  "5": [
+   {
+    "name": "Regina Weiss",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "54": [
+   {
+    "name": "Donni Steele",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for the state senate"
+   }
+  ],
+  "59": [
+   {
+    "name": "Doug Wozniak",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for the state senate"
+   }
+  ],
+  "6": [
+   {
+    "name": "Natalie Price",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for the state senate"
+   }
+  ],
+  "63": [
+   {
+    "name": "Jay DeBoyer",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for lieutenant governor"
+   }
+  ],
+  "74": [
+   {
+    "name": "Kara Hope",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "78": [
+   {
+    "name": "Gina Johnsen",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for the state senate"
+   }
+  ],
+  "8": [
+   {
+    "name": "Helena Scott",
+    "party": "D",
+    "category": "lost primary",
+    "reason": "lost renomination to Chris Gilmer-Hill"
+   }
+  ],
+  "80": [
+   {
+    "name": "Phil Skaggs",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for the state senate"
+   }
+  ],
+  "84": [
+   {
+    "name": "Carol Glanville",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for the state senate"
+   }
+  ],
+  "89": [
+   {
+    "name": "Luke Meerman",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "9": [
+   {
+    "name": "Joe Tate",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "90": [
+   {
+    "name": "Bryan Posthumus",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "97": [
+   {
+    "name": "Matthew Bierlein",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for the state senate"
+   }
+  ]
+ },
+ "senate": {
+  "1": [
+   {
+    "name": "Erika Geiss",
+    "party": "D",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "10": [
+   {
+    "name": "Paul Wojno",
+    "party": "D",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "13": [
+   {
+    "name": "Rosemary Bayer",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "15": [
+   {
+    "name": "Jeff Irwin",
+    "party": "D",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "19": [
+   {
+    "name": "Sean McCann",
+    "party": "D",
+    "category": "term-limited",
+    "reason": "term-limited and running for U.S. Congress"
+   }
+  ],
+  "2": [
+   {
+    "name": "Sylvia Santana",
+    "party": "D",
+    "category": "term-limited",
+    "reason": "term-limited and running for Michigan State University Board of Trustees"
+   }
+  ],
+  "20": [
+   {
+    "name": "Aric Nesbitt",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "22": [
+   {
+    "name": "Lana Theis",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "23": [
+   {
+    "name": "Jim Runestad",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "24": [
+   {
+    "name": "Ruth Johnson",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "25": [
+   {
+    "name": "Dan Lauwers",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "26": [
+   {
+    "name": "Kevin Daley",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "28": [
+   {
+    "name": "Sam Singh",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "29": [
+   {
+    "name": "Winnie Brinks",
+    "party": "D",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "3": [
+   {
+    "name": "Stephanie Chang",
+    "party": "D",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "31": [
+   {
+    "name": "Roger Victory",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited and running for Michigan State University Board of Trustees"
+   }
+  ],
+  "32": [
+   {
+    "name": "Jon Bumstead",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "33": [
+   {
+    "name": "Rick Outman",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "38": [
+   {
+    "name": "Ed McBroom",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "7": [
+   {
+    "name": "Jeremy Moss",
+    "party": "D",
+    "category": "term-limited",
+    "reason": "term-limited and running for U.S. Congress"
+   }
+  ],
+  "8": [
+   {
+    "name": "Mallory McMorrow",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ]
+ }
+}

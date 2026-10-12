@@ -1,0 +1,6937 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 89.6,
+      "key": "1",
+      "popPct": 84.2
+     },
+     {
+      "areaPct": 8.0,
+      "key": "12",
+      "popPct": 14.3
+     },
+     {
+      "areaPct": 2.4,
+      "key": "2",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67789,
+    "pres2020New": -37.8,
+    "pres2020Old": -38.4,
+    "retainedAreaPct": 89.6,
+    "retainedPopPct": 84.2,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-1; gained the rest from the old HD-12 (14%), the old HD-2 (2%). Entirely in Lake County. 2020 presidential margin D+38.4 on the 2016\u20132020 lines \u2192 D+37.8 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 93.1,
+      "key": "10",
+      "popPct": 92.9
+     },
+     {
+      "areaPct": 6.9,
+      "key": "4",
+      "popPct": 7.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Porter",
+      "popPct": 99.5
+     },
+     {
+      "county": "Lake",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68134,
+    "pres2020New": -0.7,
+    "pres2020Old": -2.5,
+    "retainedAreaPct": 93.1,
+    "retainedPopPct": 92.9,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-10; gained the rest from the old HD-4 (7%). Spans Porter, Lake counties. 2020 presidential margin D+2.5 on the 2016\u20132020 lines \u2192 D+0.7 on the current lines.",
+    "toEra": "current"
+   },
+   "100": {
+    "contributors": [
+     {
+      "areaPct": 92.3,
+      "key": "100",
+      "popPct": 87.2
+     },
+     {
+      "areaPct": 5.0,
+      "key": "98",
+      "popPct": 8.0
+     },
+     {
+      "areaPct": 2.6,
+      "key": "96",
+      "popPct": 4.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67826,
+    "pres2020New": -40.5,
+    "pres2020Old": -36.6,
+    "retainedAreaPct": 92.3,
+    "retainedPopPct": 87.2,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-100; gained the rest from the old HD-98 (8%), the old HD-96 (5%). Entirely in Marion County. 2020 presidential margin D+36.6 on the 2016\u20132020 lines \u2192 D+40.5 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 34.7,
+      "key": "11",
+      "popPct": 62.2
+     },
+     {
+      "areaPct": 52.3,
+      "key": "16",
+      "popPct": 35.5
+     },
+     {
+      "areaPct": 13.0,
+      "key": "13",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lake",
+      "popPct": 54.5
+     },
+     {
+      "county": "Jasper",
+      "popPct": 22.1
+     },
+     {
+      "county": "Newton",
+      "popPct": 15.7
+     },
+     {
+      "county": "Porter",
+      "popPct": 7.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jasper",
+      "popPct": 22.1
+     },
+     {
+      "county": "Newton",
+      "popPct": 15.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68121,
+    "pres2020New": 41.6,
+    "pres2020Old": 33.3,
+    "retainedAreaPct": 34.7,
+    "retainedPopPct": 62.2,
+    "text": "Kept 62% of its population from the 2016\u20132020 HD-11; gained the rest from the old HD-16 (36%), the old HD-13 (2%). Counties: gained Jasper (22%), Newton (16%). 2020 presidential margin R+33.3 on the 2016\u20132020 lines \u2192 R+41.6 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 66.5,
+      "key": "12",
+      "popPct": 81.5
+     },
+     {
+      "areaPct": 28.1,
+      "key": "15",
+      "popPct": 12.9
+     },
+     {
+      "areaPct": 4.4,
+      "key": "2",
+      "popPct": 3.4
+     },
+     {
+      "areaPct": 0.8,
+      "key": "14",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68383,
+    "pres2020New": -8.3,
+    "pres2020Old": -9.9,
+    "retainedAreaPct": 66.5,
+    "retainedPopPct": 81.5,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-12; gained the rest from the old HD-15 (13%), the old HD-2 (3%), the old HD-14 (2%). Entirely in Lake County. 2020 presidential margin D+9.9 on the 2016\u20132020 lines \u2192 D+8.3 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 89.9,
+      "key": "13",
+      "popPct": 78.5
+     },
+     {
+      "areaPct": 3.0,
+      "key": "26",
+      "popPct": 9.6
+     },
+     {
+      "areaPct": 6.1,
+      "key": "42",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 1.0,
+      "key": "25",
+      "popPct": 4.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tippecanoe",
+      "popPct": 43.0
+     },
+     {
+      "county": "Fountain",
+      "popPct": 21.6
+     },
+     {
+      "county": "Benton",
+      "popPct": 12.9
+     },
+     {
+      "county": "Warren",
+      "popPct": 12.4
+     },
+     {
+      "county": "Newton",
+      "popPct": 4.6
+     },
+     {
+      "county": "Jasper",
+      "popPct": 2.9
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 2.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "White",
+      "popPct": 3.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67302,
+    "pres2020New": 39.8,
+    "pres2020Old": 42.5,
+    "retainedAreaPct": 89.9,
+    "retainedPopPct": 78.5,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-13; gained the rest from the old HD-26 (10%), the old HD-42 (7%), the old HD-25 (5%). Counties: lost White. 2020 presidential margin R+42.5 on the 2016\u20132020 lines \u2192 R+39.8 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 83.8,
+      "key": "14",
+      "popPct": 85.6
+     },
+     {
+      "areaPct": 9.0,
+      "key": "15",
+      "popPct": 7.7
+     },
+     {
+      "areaPct": 6.2,
+      "key": "19",
+      "popPct": 6.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67328,
+    "pres2020New": -48.1,
+    "pres2020Old": -54.4,
+    "retainedAreaPct": 83.8,
+    "retainedPopPct": 85.6,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-14; gained the rest from the old HD-15 (8%), the old HD-19 (7%). Entirely in Lake County. 2020 presidential margin D+54.4 on the 2016\u20132020 lines \u2192 D+48.1 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 59.8,
+      "key": "15",
+      "popPct": 75.4
+     },
+     {
+      "areaPct": 40.2,
+      "key": "11",
+      "popPct": 24.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67322,
+    "pres2020New": 15.1,
+    "pres2020Old": 9.2,
+    "retainedAreaPct": 59.8,
+    "retainedPopPct": 75.4,
+    "text": "Kept 75% of its population from the 2016\u20132020 HD-15; gained the rest from the old HD-11 (25%). Entirely in Lake County. 2020 presidential margin R+9.2 on the 2016\u20132020 lines \u2192 R+15.1 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 57.2,
+      "key": "16",
+      "popPct": 52.2
+     },
+     {
+      "areaPct": 25.1,
+      "key": "25",
+      "popPct": 33.3
+     },
+     {
+      "areaPct": 5.1,
+      "key": "20",
+      "popPct": 10.8
+     },
+     {
+      "areaPct": 12.5,
+      "key": "13",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "White",
+      "popPct": 35.9
+     },
+     {
+      "county": "Starke",
+      "popPct": 25.4
+     },
+     {
+      "county": "Jasper",
+      "popPct": 23.6
+     },
+     {
+      "county": "Pulaski",
+      "popPct": 14.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "White",
+      "popPct": 35.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Newton",
+      "popPct": 14.3
+     },
+     {
+      "county": "Fulton",
+      "popPct": 2.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67728,
+    "pres2020New": 46.5,
+    "pres2020Old": 49.0,
+    "retainedAreaPct": 57.2,
+    "retainedPopPct": 52.2,
+    "text": "Kept 52% of its population from the 2016\u20132020 HD-16; gained the rest from the old HD-25 (33%), the old HD-20 (11%), the old HD-13 (4%). Counties: gained White (36%); lost Newton, Fulton. 2020 presidential margin R+49.0 on the 2016\u20132020 lines \u2192 R+46.5 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 73.8,
+      "key": "17",
+      "popPct": 91.4
+     },
+     {
+      "areaPct": 21.0,
+      "key": "16",
+      "popPct": 6.3
+     },
+     {
+      "areaPct": 5.2,
+      "key": "23",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marshall",
+      "popPct": 65.8
+     },
+     {
+      "county": "Fulton",
+      "popPct": 30.4
+     },
+     {
+      "county": "Pulaski",
+      "popPct": 3.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pulaski",
+      "popPct": 3.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67245,
+    "pres2020New": 43.2,
+    "pres2020Old": 42.6,
+    "retainedAreaPct": 73.8,
+    "retainedPopPct": 91.4,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-17; gained the rest from the old HD-16 (6%), the old HD-23 (2%). Counties: gained Pulaski (4%). 2020 presidential margin R+42.6 on the 2016\u20132020 lines \u2192 R+43.2 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 64.3,
+      "key": "82",
+      "popPct": 55.5
+     },
+     {
+      "areaPct": 16.5,
+      "key": "22",
+      "popPct": 29.6
+     },
+     {
+      "areaPct": 18.8,
+      "key": "83",
+      "popPct": 13.2
+     },
+     {
+      "areaPct": 0.5,
+      "key": "49",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Noble",
+      "popPct": 43.2
+     },
+     {
+      "county": "Kosciusko",
+      "popPct": 22.2
+     },
+     {
+      "county": "Whitley",
+      "popPct": 20.9
+     },
+     {
+      "county": "Elkhart",
+      "popPct": 13.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Noble",
+      "popPct": 43.2
+     },
+     {
+      "county": "Whitley",
+      "popPct": 20.9
+     },
+     {
+      "county": "Elkhart",
+      "popPct": 13.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Wabash",
+      "popPct": 48.8
+     },
+     {
+      "county": "Grant",
+      "popPct": 5.5
+     },
+     {
+      "county": "Miami",
+      "popPct": 2.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 68382,
+    "pres2020New": 53.1,
+    "pres2020Old": 52.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-18; it draws from the old HD-82 (56%), the old HD-22 (30%), the old HD-83 (13%) and 1 more. Counties: gained Noble (43%), Whitley (21%), Elkhart (14%); lost Wabash, Grant, Miami. 2020 presidential margin R+52.2 on the 2016\u20132020 lines \u2192 R+53.1 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 56.4,
+      "key": "19",
+      "popPct": 86.8
+     },
+     {
+      "areaPct": 31.4,
+      "key": "11",
+      "popPct": 9.3
+     },
+     {
+      "areaPct": 12.2,
+      "key": "4",
+      "popPct": 3.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lake",
+      "popPct": 82.0
+     },
+     {
+      "county": "Porter",
+      "popPct": 18.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67477,
+    "pres2020New": 15.1,
+    "pres2020Old": 10.2,
+    "retainedAreaPct": 56.4,
+    "retainedPopPct": 86.8,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-19; gained the rest from the old HD-11 (9%), the old HD-4 (4%). Spans Lake, Porter counties. 2020 presidential margin R+10.2 on the 2016\u20132020 lines \u2192 R+15.1 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 79.0,
+      "key": "2",
+      "popPct": 79.0
+     },
+     {
+      "areaPct": 10.4,
+      "key": "3",
+      "popPct": 11.0
+     },
+     {
+      "areaPct": 3.9,
+      "key": "1",
+      "popPct": 7.4
+     },
+     {
+      "areaPct": 6.6,
+      "key": "14",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67913,
+    "pres2020New": -67.9,
+    "pres2020Old": -69.7,
+    "retainedAreaPct": 79.0,
+    "retainedPopPct": 79.0,
+    "text": "Kept 79% of its population from the 2016\u20132020 HD-2; gained the rest from the old HD-3 (11%), the old HD-1 (7%), the old HD-14 (2%). Entirely in Lake County. 2020 presidential margin D+69.7 on the 2016\u20132020 lines \u2192 D+67.9 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 88.0,
+      "key": "20",
+      "popPct": 85.8
+     },
+     {
+      "areaPct": 12.0,
+      "key": "9",
+      "popPct": 14.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "LaPorte",
+      "popPct": 90.9
+     },
+     {
+      "county": "Starke",
+      "popPct": 8.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67780,
+    "pres2020New": 23.6,
+    "pres2020Old": 25.6,
+    "retainedAreaPct": 88.0,
+    "retainedPopPct": 85.8,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-20; gained the rest from the old HD-9 (14%). Spans LaPorte, Starke counties. 2020 presidential margin R+25.6 on the 2016\u20132020 lines \u2192 R+23.6 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 65.0,
+      "key": "21",
+      "popPct": 79.8
+     },
+     {
+      "areaPct": 33.2,
+      "key": "22",
+      "popPct": 15.7
+     },
+     {
+      "areaPct": 1.8,
+      "key": "5",
+      "popPct": 4.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Elkhart",
+      "popPct": 92.0
+     },
+     {
+      "county": "St. Joseph",
+      "popPct": 7.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67384,
+    "pres2020New": 28.1,
+    "pres2020Old": 23.2,
+    "retainedAreaPct": 65.0,
+    "retainedPopPct": 79.8,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-21; gained the rest from the old HD-22 (16%), the old HD-5 (4%). Spans Elkhart, St. Joseph counties. 2020 presidential margin R+23.2 on the 2016\u20132020 lines \u2192 R+28.1 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 45.8,
+      "key": "22",
+      "popPct": 55.9
+     },
+     {
+      "areaPct": 54.2,
+      "key": "18",
+      "popPct": 44.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kosciusko",
+      "popPct": 96.3
+     },
+     {
+      "county": "Wabash",
+      "popPct": 3.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Wabash",
+      "popPct": 3.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Elkhart",
+      "popPct": 22.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67396,
+    "pres2020New": 51.2,
+    "pres2020Old": 51.4,
+    "retainedAreaPct": 45.8,
+    "retainedPopPct": 55.9,
+    "text": "Kept 56% of its population from the 2016\u20132020 HD-22; gained the rest from the old HD-18 (44%). Counties: gained Wabash (4%); lost Elkhart. 2020 presidential margin R+51.4 on the 2016\u20132020 lines \u2192 R+51.2 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 67.1,
+      "key": "23",
+      "popPct": 86.7
+     },
+     {
+      "areaPct": 18.5,
+      "key": "25",
+      "popPct": 6.7
+     },
+     {
+      "areaPct": 14.4,
+      "key": "38",
+      "popPct": 6.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 50.0
+     },
+     {
+      "county": "Miami",
+      "popPct": 49.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Fulton",
+      "popPct": 2.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 68325,
+    "pres2020New": 46.0,
+    "pres2020Old": 45.6,
+    "retainedAreaPct": 67.1,
+    "retainedPopPct": 86.7,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-23; gained the rest from the old HD-25 (7%), the old HD-38 (7%). Counties: lost Fulton. 2020 presidential margin R+45.6 on the 2016\u20132020 lines \u2192 R+46.0 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 35.7,
+      "key": "24",
+      "popPct": 69.6
+     },
+     {
+      "areaPct": 39.2,
+      "key": "32",
+      "popPct": 28.5
+     },
+     {
+      "areaPct": 25.1,
+      "key": "41",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hamilton",
+      "popPct": 91.6
+     },
+     {
+      "county": "Boone",
+      "popPct": 8.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68479,
+    "pres2020New": 7.5,
+    "pres2020Old": -0.4,
+    "retainedAreaPct": 35.7,
+    "retainedPopPct": 69.6,
+    "text": "Kept 70% of its population from the 2016\u20132020 HD-24; gained the rest from the old HD-32 (28%), the old HD-41 (2%). Spans Hamilton, Boone counties. 2020 presidential margin D+0.4 on the 2016\u20132020 lines \u2192 R+7.5 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 31.7,
+      "key": "24",
+      "popPct": 48.9
+     },
+     {
+      "areaPct": 40.0,
+      "key": "28",
+      "popPct": 37.6
+     },
+     {
+      "areaPct": 4.7,
+      "key": "40",
+      "popPct": 11.2
+     },
+     {
+      "areaPct": 23.6,
+      "key": "41",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Boone",
+      "popPct": 58.3
+     },
+     {
+      "county": "Hendricks",
+      "popPct": 41.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Boone",
+      "popPct": 58.3
+     },
+     {
+      "county": "Hendricks",
+      "popPct": 41.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "White",
+      "popPct": 33.6
+     },
+     {
+      "county": "Tippecanoe",
+      "popPct": 32.4
+     },
+     {
+      "county": "Carroll",
+      "popPct": 18.1
+     },
+     {
+      "county": "Clinton",
+      "popPct": 8.9
+     },
+     {
+      "county": "Cass",
+      "popPct": 6.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67419,
+    "pres2020New": 5.2,
+    "pres2020Old": 37.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-25; it draws from the old HD-24 (49%), the old HD-28 (38%), the old HD-40 (11%) and 1 more. Counties: gained Boone (58%), Hendricks (42%); lost White, Tippecanoe, Carroll, Clinton and 1 more. 2020 presidential margin R+37.9 on the 2016\u20132020 lines \u2192 R+5.2 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 51.3,
+      "key": "26",
+      "popPct": 74.1
+     },
+     {
+      "areaPct": 4.4,
+      "key": "27",
+      "popPct": 19.8
+     },
+     {
+      "areaPct": 8.2,
+      "key": "25",
+      "popPct": 3.9
+     },
+     {
+      "areaPct": 36.1,
+      "key": "13",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tippecanoe",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67807,
+    "pres2020New": -25.3,
+    "pres2020Old": -13.4,
+    "retainedAreaPct": 51.3,
+    "retainedPopPct": 74.1,
+    "text": "Kept 74% of its population from the 2016\u20132020 HD-26; gained the rest from the old HD-27 (20%), the old HD-25 (4%), the old HD-13 (2%). Entirely in Tippecanoe County. 2020 presidential margin D+13.4 on the 2016\u20132020 lines \u2192 D+25.3 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 76.5,
+      "key": "27",
+      "popPct": 74.0
+     },
+     {
+      "areaPct": 9.1,
+      "key": "26",
+      "popPct": 19.3
+     },
+     {
+      "areaPct": 9.8,
+      "key": "13",
+      "popPct": 4.8
+     },
+     {
+      "areaPct": 4.7,
+      "key": "25",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tippecanoe",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68014,
+    "pres2020New": -7.1,
+    "pres2020Old": -11.9,
+    "retainedAreaPct": 76.5,
+    "retainedPopPct": 74.0,
+    "text": "Kept 74% of its population from the 2016\u20132020 HD-27; gained the rest from the old HD-26 (19%), the old HD-13 (5%), the old HD-25 (2%). Entirely in Tippecanoe County. 2020 presidential margin D+11.9 on the 2016\u20132020 lines \u2192 D+7.1 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 59.9,
+      "key": "28",
+      "popPct": 69.6
+     },
+     {
+      "areaPct": 1.8,
+      "key": "40",
+      "popPct": 17.2
+     },
+     {
+      "areaPct": 37.8,
+      "key": "41",
+      "popPct": 12.5
+     },
+     {
+      "areaPct": 0.5,
+      "key": "91",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hendricks",
+      "popPct": 87.4
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 7.4
+     },
+     {
+      "county": "Boone",
+      "popPct": 5.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Montgomery",
+      "popPct": 7.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 66885,
+    "pres2020New": 43.0,
+    "pres2020Old": 36.1,
+    "retainedAreaPct": 59.9,
+    "retainedPopPct": 69.6,
+    "text": "Kept 70% of its population from the 2016\u20132020 HD-28; gained the rest from the old HD-40 (17%), the old HD-41 (12%), the old HD-91 (1%). Counties: gained Montgomery (7%). 2020 presidential margin R+36.1 on the 2016\u20132020 lines \u2192 R+43.0 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "29",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hamilton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68203,
+    "pres2020New": 18.2,
+    "pres2020Old": 18.5,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Hamilton County.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 93.4,
+      "key": "3",
+      "popPct": 78.6
+     },
+     {
+      "areaPct": 5.7,
+      "key": "19",
+      "popPct": 17.3
+     },
+     {
+      "areaPct": 0.5,
+      "key": "14",
+      "popPct": 2.3
+     },
+     {
+      "areaPct": 0.4,
+      "key": "2",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67843,
+    "pres2020New": -32.7,
+    "pres2020Old": -47.8,
+    "retainedAreaPct": 93.4,
+    "retainedPopPct": 78.6,
+    "text": "Kept 79% of its population from the 2016\u20132020 HD-3; gained the rest from the old HD-19 (17%), the old HD-14 (2%), the old HD-2 (2%). Entirely in Lake County. 2020 presidential margin D+47.8 on the 2016\u20132020 lines \u2192 D+32.7 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 82.5,
+      "key": "30",
+      "popPct": 87.7
+     },
+     {
+      "areaPct": 4.2,
+      "key": "38",
+      "popPct": 10.8
+     },
+     {
+      "areaPct": 13.3,
+      "key": "32",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Howard",
+      "popPct": 97.5
+     },
+     {
+      "county": "Grant",
+      "popPct": 2.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67429,
+    "pres2020New": 28.6,
+    "pres2020Old": 28.0,
+    "retainedAreaPct": 82.5,
+    "retainedPopPct": 87.7,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-30; gained the rest from the old HD-38 (11%), the old HD-32 (2%). Spans Howard, Grant counties. 2020 presidential margin R+28.0 on the 2016\u20132020 lines \u2192 R+28.6 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 32.2,
+      "key": "31",
+      "popPct": 60.4
+     },
+     {
+      "areaPct": 48.8,
+      "key": "32",
+      "popPct": 25.1
+     },
+     {
+      "areaPct": 7.7,
+      "key": "30",
+      "popPct": 9.4
+     },
+     {
+      "areaPct": 11.3,
+      "key": "18",
+      "popPct": 5.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grant",
+      "popPct": 95.6
+     },
+     {
+      "county": "Madison",
+      "popPct": 4.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Madison",
+      "popPct": 4.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Blackford",
+      "popPct": 19.5
+     },
+     {
+      "county": "Delaware",
+      "popPct": 10.7
+     },
+     {
+      "county": "Wells",
+      "popPct": 2.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67914,
+    "pres2020New": 38.7,
+    "pres2020Old": 37.4,
+    "retainedAreaPct": 32.2,
+    "retainedPopPct": 60.4,
+    "text": "Kept 60% of its population from the 2016\u20132020 HD-31; gained the rest from the old HD-32 (25%), the old HD-30 (9%), the old HD-18 (5%). Counties: gained Madison (4%); lost Blackford, Delaware, Wells. 2020 presidential margin R+37.4 on the 2016\u20132020 lines \u2192 R+38.7 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 47.6,
+      "key": "37",
+      "popPct": 55.5
+     },
+     {
+      "areaPct": 35.9,
+      "key": "39",
+      "popPct": 27.7
+     },
+     {
+      "areaPct": 10.5,
+      "key": "87",
+      "popPct": 12.8
+     },
+     {
+      "areaPct": 6.0,
+      "key": "24",
+      "popPct": 4.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hamilton",
+      "popPct": 87.8
+     },
+     {
+      "county": "Marion",
+      "popPct": 12.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Marion",
+      "popPct": 12.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Tipton",
+      "popPct": 22.0
+     },
+     {
+      "county": "Grant",
+      "popPct": 20.3
+     },
+     {
+      "county": "Madison",
+      "popPct": 4.2
+     },
+     {
+      "county": "Delaware",
+      "popPct": 2.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 68104,
+    "pres2020New": -6.4,
+    "pres2020Old": 41.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-32; it draws from the old HD-37 (56%), the old HD-39 (28%), the old HD-87 (13%) and 1 more. Counties: gained Marion (12%); lost Tipton, Grant, Madison, Delaware. 2020 presidential margin R+41.1 on the 2016\u20132020 lines \u2192 D+6.4 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 82.3,
+      "key": "33",
+      "popPct": 81.2
+     },
+     {
+      "areaPct": 15.8,
+      "key": "31",
+      "popPct": 17.6
+     },
+     {
+      "areaPct": 1.9,
+      "key": "54",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Randolph",
+      "popPct": 36.1
+     },
+     {
+      "county": "Jay",
+      "popPct": 23.9
+     },
+     {
+      "county": "Delaware",
+      "popPct": 21.1
+     },
+     {
+      "county": "Blackford",
+      "popPct": 17.7
+     },
+     {
+      "county": "Henry",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Blackford",
+      "popPct": 17.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67932,
+    "pres2020New": 47.6,
+    "pres2020Old": 47.8,
+    "retainedAreaPct": 82.3,
+    "retainedPopPct": 81.2,
+    "text": "Kept 81% of its population from the 2016\u20132020 HD-33; gained the rest from the old HD-31 (18%), the old HD-54 (1%). Counties: gained Blackford (18%). 2020 presidential margin R+47.8 on the 2016\u20132020 lines \u2192 R+47.6 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 63.2,
+      "key": "34",
+      "popPct": 88.1
+     },
+     {
+      "areaPct": 25.5,
+      "key": "35",
+      "popPct": 7.8
+     },
+     {
+      "areaPct": 11.3,
+      "key": "33",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Delaware",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67715,
+    "pres2020New": -6.7,
+    "pres2020Old": -11.8,
+    "retainedAreaPct": 63.2,
+    "retainedPopPct": 88.1,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-34; gained the rest from the old HD-35 (8%), the old HD-33 (4%). Entirely in Delaware County. 2020 presidential margin D+11.8 on the 2016\u20132020 lines \u2192 D+6.7 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 71.8,
+      "key": "35",
+      "popPct": 81.8
+     },
+     {
+      "areaPct": 12.8,
+      "key": "31",
+      "popPct": 9.7
+     },
+     {
+      "areaPct": 6.8,
+      "key": "53",
+      "popPct": 5.8
+     },
+     {
+      "areaPct": 8.5,
+      "key": "32",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Madison",
+      "popPct": 55.7
+     },
+     {
+      "county": "Delaware",
+      "popPct": 44.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67547,
+    "pres2020New": 35.0,
+    "pres2020Old": 31.7,
+    "retainedAreaPct": 71.8,
+    "retainedPopPct": 81.8,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-35; gained the rest from the old HD-31 (10%), the old HD-53 (6%), the old HD-32 (3%). Spans Madison, Delaware counties. 2020 presidential margin R+31.7 on the 2016\u20132020 lines \u2192 R+35.0 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 78.1,
+      "key": "36",
+      "popPct": 91.3
+     },
+     {
+      "areaPct": 5.5,
+      "key": "35",
+      "popPct": 6.4
+     },
+     {
+      "areaPct": 16.4,
+      "key": "53",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Madison",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67359,
+    "pres2020New": 9.2,
+    "pres2020Old": 8.0,
+    "retainedAreaPct": 78.1,
+    "retainedPopPct": 91.3,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-36; gained the rest from the old HD-35 (6%), the old HD-53 (2%). Entirely in Madison County. 2020 presidential margin R+8.0 on the 2016\u20132020 lines \u2192 R+9.2 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 13.8,
+      "key": "37",
+      "popPct": 64.5
+     },
+     {
+      "areaPct": 41.2,
+      "key": "29",
+      "popPct": 18.8
+     },
+     {
+      "areaPct": 44.9,
+      "key": "32",
+      "popPct": 16.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hamilton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68136,
+    "pres2020New": 11.4,
+    "pres2020Old": -1.7,
+    "retainedAreaPct": 13.8,
+    "retainedPopPct": 64.5,
+    "text": "Kept 64% of its population from the 2016\u20132020 HD-37; gained the rest from the old HD-29 (19%), the old HD-32 (17%). Entirely in Hamilton County. 2020 presidential margin D+1.7 on the 2016\u20132020 lines \u2192 R+11.4 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 46.5,
+      "key": "38",
+      "popPct": 46.1
+     },
+     {
+      "areaPct": 25.2,
+      "key": "25",
+      "popPct": 27.0
+     },
+     {
+      "areaPct": 25.4,
+      "key": "32",
+      "popPct": 22.7
+     },
+     {
+      "areaPct": 2.9,
+      "key": "23",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carroll",
+      "popPct": 29.8
+     },
+     {
+      "county": "Howard",
+      "popPct": 26.5
+     },
+     {
+      "county": "Tipton",
+      "popPct": 22.7
+     },
+     {
+      "county": "Tippecanoe",
+      "popPct": 8.9
+     },
+     {
+      "county": "Clinton",
+      "popPct": 6.4
+     },
+     {
+      "county": "Cass",
+      "popPct": 5.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Tipton",
+      "popPct": 22.7
+     },
+     {
+      "county": "Tippecanoe",
+      "popPct": 8.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67542,
+    "pres2020New": 48.2,
+    "pres2020Old": 46.0,
+    "retainedAreaPct": 46.5,
+    "retainedPopPct": 46.1,
+    "text": "A new footprint: only 46% of its population was in the 2016\u20132020 HD-38; it draws from the old HD-25 (27%), the old HD-32 (23%), the old HD-23 (4%). Counties: gained Tipton (23%), Tippecanoe (9%). 2020 presidential margin R+46.0 on the 2016\u20132020 lines \u2192 R+48.2 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 79.1,
+      "key": "39",
+      "popPct": 79.6
+     },
+     {
+      "areaPct": 15.4,
+      "key": "24",
+      "popPct": 15.4
+     },
+     {
+      "areaPct": 5.4,
+      "key": "32",
+      "popPct": 4.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hamilton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68291,
+    "pres2020New": 1.2,
+    "pres2020Old": -2.1,
+    "retainedAreaPct": 79.1,
+    "retainedPopPct": 79.6,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-39; gained the rest from the old HD-24 (15%), the old HD-32 (5%). Entirely in Hamilton County. 2020 presidential margin D+2.1 on the 2016\u20132020 lines \u2192 R+1.2 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 39.1,
+      "key": "4",
+      "popPct": 86.6
+     },
+     {
+      "areaPct": 60.9,
+      "key": "11",
+      "popPct": 13.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Porter",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67939,
+    "pres2020New": 6.5,
+    "pres2020Old": 4.2,
+    "retainedAreaPct": 39.1,
+    "retainedPopPct": 86.6,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-4; gained the rest from the old HD-11 (13%). Entirely in Porter County. 2020 presidential margin R+4.2 on the 2016\u20132020 lines \u2192 R+6.5 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 87.0,
+      "key": "40",
+      "popPct": 90.6
+     },
+     {
+      "areaPct": 3.7,
+      "key": "91",
+      "popPct": 6.7
+     },
+     {
+      "areaPct": 9.3,
+      "key": "28",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hendricks",
+      "popPct": 99.4
+     },
+     {
+      "county": "Marion",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68523,
+    "pres2020New": 14.6,
+    "pres2020Old": 11.3,
+    "retainedAreaPct": 87.0,
+    "retainedPopPct": 90.6,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-40; gained the rest from the old HD-91 (7%), the old HD-28 (3%). Spans Hendricks, Marion counties. 2020 presidential margin R+11.3 on the 2016\u20132020 lines \u2192 R+14.6 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 44.7,
+      "key": "41",
+      "popPct": 38.5
+     },
+     {
+      "areaPct": 29.4,
+      "key": "38",
+      "popPct": 33.7
+     },
+     {
+      "areaPct": 25.5,
+      "key": "25",
+      "popPct": 21.4
+     },
+     {
+      "areaPct": 0.4,
+      "key": "27",
+      "popPct": 6.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clinton",
+      "popPct": 42.4
+     },
+     {
+      "county": "Boone",
+      "popPct": 34.2
+     },
+     {
+      "county": "Tippecanoe",
+      "popPct": 22.8
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Clinton",
+      "popPct": 42.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68062,
+    "pres2020New": 40.1,
+    "pres2020Old": 46.3,
+    "retainedAreaPct": 44.7,
+    "retainedPopPct": 38.5,
+    "text": "A new footprint: only 38% of its population was in the 2016\u20132020 HD-41; it draws from the old HD-38 (34%), the old HD-25 (21%), the old HD-27 (6%). Counties: gained Clinton (42%). 2020 presidential margin R+46.3 on the 2016\u20132020 lines \u2192 R+40.1 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 77.6,
+      "key": "42",
+      "popPct": 85.0
+     },
+     {
+      "areaPct": 17.6,
+      "key": "44",
+      "popPct": 11.9
+     },
+     {
+      "areaPct": 4.1,
+      "key": "13",
+      "popPct": 2.1
+     },
+     {
+      "areaPct": 0.7,
+      "key": "43",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clay",
+      "popPct": 30.4
+     },
+     {
+      "county": "Parke",
+      "popPct": 24.1
+     },
+     {
+      "county": "Vermillion",
+      "popPct": 22.8
+     },
+     {
+      "county": "Vigo",
+      "popPct": 19.7
+     },
+     {
+      "county": "Fountain",
+      "popPct": 2.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67340,
+    "pres2020New": 47.4,
+    "pres2020Old": 46.1,
+    "retainedAreaPct": 77.6,
+    "retainedPopPct": 85.0,
+    "text": "Kept 85% of its population from the 2016\u20132020 HD-42; gained the rest from the old HD-44 (12%), the old HD-13 (2%), the old HD-43 (1%). Spans Clay, Parke, Vermillion, Vigo and 1 more counties. 2020 presidential margin R+46.1 on the 2016\u20132020 lines \u2192 R+47.4 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 97.2,
+      "key": "43",
+      "popPct": 92.7
+     },
+     {
+      "areaPct": 2.8,
+      "key": "46",
+      "popPct": 7.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Vigo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67513,
+    "pres2020New": 3.5,
+    "pres2020Old": 3.5,
+    "retainedAreaPct": 97.2,
+    "retainedPopPct": 92.7,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-43; gained the rest from the old HD-46 (7%). Entirely in Vigo County. 2020 presidential margin R+3.5 on the 2016\u20132020 lines \u2192 R+3.5 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 61.2,
+      "key": "44",
+      "popPct": 54.1
+     },
+     {
+      "areaPct": 30.2,
+      "key": "41",
+      "popPct": 42.2
+     },
+     {
+      "areaPct": 8.6,
+      "key": "13",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Putnam",
+      "popPct": 54.0
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 45.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Montgomery",
+      "popPct": 45.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Morgan",
+      "popPct": 23.9
+     },
+     {
+      "county": "Clay",
+      "popPct": 8.5
+     },
+     {
+      "county": "Owen",
+      "popPct": 6.1
+     },
+     {
+      "county": "Parke",
+      "popPct": 4.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67919,
+    "pres2020New": 48.4,
+    "pres2020Old": 54.0,
+    "retainedAreaPct": 61.2,
+    "retainedPopPct": 54.1,
+    "text": "Kept 54% of its population from the 2016\u20132020 HD-44; gained the rest from the old HD-41 (42%), the old HD-13 (4%). Counties: gained Montgomery (46%); lost Morgan, Clay, Owen, Parke. 2020 presidential margin R+54.0 on the 2016\u20132020 lines \u2192 R+48.4 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 57.7,
+      "key": "45",
+      "popPct": 53.8
+     },
+     {
+      "areaPct": 41.5,
+      "key": "62",
+      "popPct": 45.1
+     },
+     {
+      "areaPct": 0.9,
+      "key": "63",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Greene",
+      "popPct": 45.2
+     },
+     {
+      "county": "Sullivan",
+      "popPct": 30.7
+     },
+     {
+      "county": "Knox",
+      "popPct": 12.7
+     },
+     {
+      "county": "Daviess",
+      "popPct": 6.2
+     },
+     {
+      "county": "Vigo",
+      "popPct": 5.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67912,
+    "pres2020New": 53.6,
+    "pres2020Old": 47.5,
+    "retainedAreaPct": 57.7,
+    "retainedPopPct": 53.8,
+    "text": "Kept 54% of its population from the 2016\u20132020 HD-45; gained the rest from the old HD-62 (45%), the old HD-63 (1%). Spans Greene, Sullivan, Knox, Daviess and 1 more counties. 2020 presidential margin R+47.5 on the 2016\u20132020 lines \u2192 R+53.6 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 88.1,
+      "key": "46",
+      "popPct": 90.4
+     },
+     {
+      "areaPct": 10.3,
+      "key": "44",
+      "popPct": 5.8
+     },
+     {
+      "areaPct": 1.5,
+      "key": "45",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Vigo",
+      "popPct": 32.4
+     },
+     {
+      "county": "Owen",
+      "popPct": 31.5
+     },
+     {
+      "county": "Monroe",
+      "popPct": 26.9
+     },
+     {
+      "county": "Clay",
+      "popPct": 9.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67259,
+    "pres2020New": 32.2,
+    "pres2020Old": 28.9,
+    "retainedAreaPct": 88.1,
+    "retainedPopPct": 90.4,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-46; gained the rest from the old HD-44 (6%), the old HD-45 (4%). Spans Vigo, Owen, Monroe, Clay counties. 2020 presidential margin R+28.9 on the 2016\u20132020 lines \u2192 R+32.2 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 37.9,
+      "key": "47",
+      "popPct": 71.0
+     },
+     {
+      "areaPct": 49.0,
+      "key": "57",
+      "popPct": 20.8
+     },
+     {
+      "areaPct": 13.1,
+      "key": "65",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Johnson",
+      "popPct": 79.1
+     },
+     {
+      "county": "Shelby",
+      "popPct": 20.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Shelby",
+      "popPct": 20.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Morgan",
+      "popPct": 15.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 68416,
+    "pres2020New": 44.4,
+    "pres2020Old": 40.5,
+    "retainedAreaPct": 37.9,
+    "retainedPopPct": 71.0,
+    "text": "Kept 71% of its population from the 2016\u20132020 HD-47; gained the rest from the old HD-57 (21%), the old HD-65 (8%). Counties: gained Shelby (21%); lost Morgan. 2020 presidential margin R+40.5 on the 2016\u20132020 lines \u2192 R+44.4 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "48",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Elkhart",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67469,
+    "pres2020New": 24.5,
+    "pres2020Old": 24.5,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Elkhart County.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "49",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Elkhart",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67971,
+    "pres2020New": 26.3,
+    "pres2020Old": 26.5,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Elkhart County.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 75.9,
+      "key": "5",
+      "popPct": 78.4
+     },
+     {
+      "areaPct": 22.7,
+      "key": "21",
+      "popPct": 19.7
+     },
+     {
+      "areaPct": 1.4,
+      "key": "7",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Joseph",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67124,
+    "pres2020New": 7.2,
+    "pres2020Old": 2.4,
+    "retainedAreaPct": 75.9,
+    "retainedPopPct": 78.4,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-5; gained the rest from the old HD-21 (20%), the old HD-7 (2%). Entirely in St. Joseph County. 2020 presidential margin R+2.4 on the 2016\u20132020 lines \u2192 R+7.2 on the current lines.",
+    "toEra": "current"
+   },
+   "50": {
+    "contributors": [
+     {
+      "areaPct": 47.7,
+      "key": "50",
+      "popPct": 54.0
+     },
+     {
+      "areaPct": 47.9,
+      "key": "18",
+      "popPct": 44.8
+     },
+     {
+      "areaPct": 4.4,
+      "key": "31",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Huntington",
+      "popPct": 54.0
+     },
+     {
+      "county": "Wabash",
+      "popPct": 42.1
+     },
+     {
+      "county": "Miami",
+      "popPct": 2.7
+     },
+     {
+      "county": "Wells",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Wabash",
+      "popPct": 42.1
+     },
+     {
+      "county": "Miami",
+      "popPct": 2.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Allen",
+      "popPct": 35.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67858,
+    "pres2020New": 50.1,
+    "pres2020Old": 37.4,
+    "retainedAreaPct": 47.7,
+    "retainedPopPct": 54.0,
+    "text": "Kept 54% of its population from the 2016\u20132020 HD-50; gained the rest from the old HD-18 (45%), the old HD-31 (1%). Counties: gained Wabash (42%), Miami (3%); lost Allen. 2020 presidential margin R+37.4 on the 2016\u20132020 lines \u2192 R+50.1 on the current lines.",
+    "toEra": "current"
+   },
+   "51": {
+    "contributors": [
+     {
+      "areaPct": 94.1,
+      "key": "51",
+      "popPct": 94.8
+     },
+     {
+      "areaPct": 5.9,
+      "key": "82",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "LaGrange",
+      "popPct": 59.0
+     },
+     {
+      "county": "Steuben",
+      "popPct": 40.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68446,
+    "pres2020New": 46.9,
+    "pres2020Old": 46.4,
+    "retainedAreaPct": 94.1,
+    "retainedPopPct": 94.8,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-51; gained the rest from the old HD-82 (5%). Spans LaGrange, Steuben counties. 2020 presidential margin R+46.4 on the 2016\u20132020 lines \u2192 R+46.9 on the current lines.",
+    "toEra": "current"
+   },
+   "52": {
+    "contributors": [
+     {
+      "areaPct": 76.3,
+      "key": "52",
+      "popPct": 68.2
+     },
+     {
+      "areaPct": 13.3,
+      "key": "82",
+      "popPct": 26.5
+     },
+     {
+      "areaPct": 10.4,
+      "key": "51",
+      "popPct": 5.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "DeKalb",
+      "popPct": 64.0
+     },
+     {
+      "county": "Noble",
+      "popPct": 26.6
+     },
+     {
+      "county": "Steuben",
+      "popPct": 9.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Noble",
+      "popPct": 26.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Allen",
+      "popPct": 36.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67658,
+    "pres2020New": 46.5,
+    "pres2020Old": 41.0,
+    "retainedAreaPct": 76.3,
+    "retainedPopPct": 68.2,
+    "text": "Kept 68% of its population from the 2016\u20132020 HD-52; gained the rest from the old HD-82 (26%), the old HD-51 (5%). Counties: gained Noble (27%); lost Allen. 2020 presidential margin R+41.0 on the 2016\u20132020 lines \u2192 R+46.5 on the current lines.",
+    "toEra": "current"
+   },
+   "53": {
+    "contributors": [
+     {
+      "areaPct": 88.9,
+      "key": "53",
+      "popPct": 79.6
+     },
+     {
+      "areaPct": 7.0,
+      "key": "57",
+      "popPct": 14.1
+     },
+     {
+      "areaPct": 1.8,
+      "key": "36",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 2.2,
+      "key": "88",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hancock",
+      "popPct": 78.2
+     },
+     {
+      "county": "Madison",
+      "popPct": 21.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68191,
+    "pres2020New": 41.6,
+    "pres2020Old": 40.9,
+    "retainedAreaPct": 88.9,
+    "retainedPopPct": 79.6,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-53; gained the rest from the old HD-57 (14%), the old HD-36 (4%), the old HD-88 (3%). Spans Hancock, Madison counties. 2020 presidential margin R+40.9 on the 2016\u20132020 lines \u2192 R+41.6 on the current lines.",
+    "toEra": "current"
+   },
+   "54": {
+    "contributors": [
+     {
+      "areaPct": 64.6,
+      "key": "54",
+      "popPct": 86.9
+     },
+     {
+      "areaPct": 28.2,
+      "key": "55",
+      "popPct": 7.7
+     },
+     {
+      "areaPct": 3.5,
+      "key": "57",
+      "popPct": 3.3
+     },
+     {
+      "areaPct": 3.8,
+      "key": "53",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Henry",
+      "popPct": 69.8
+     },
+     {
+      "county": "Rush",
+      "popPct": 24.2
+     },
+     {
+      "county": "Shelby",
+      "popPct": 3.3
+     },
+     {
+      "county": "Hancock",
+      "popPct": 2.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Shelby",
+      "popPct": 3.3
+     },
+     {
+      "county": "Hancock",
+      "popPct": 2.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Wayne",
+      "popPct": 6.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67472,
+    "pres2020New": 48.2,
+    "pres2020Old": 46.1,
+    "retainedAreaPct": 64.6,
+    "retainedPopPct": 86.9,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-54; gained the rest from the old HD-55 (8%), the old HD-57 (3%), the old HD-53 (2%). Counties: gained Shelby (3%), Hancock (2%); lost Wayne. 2020 presidential margin R+46.1 on the 2016\u20132020 lines \u2192 R+48.2 on the current lines.",
+    "toEra": "current"
+   },
+   "55": {
+    "contributors": [
+     {
+      "areaPct": 48.1,
+      "key": "55",
+      "popPct": 63.3
+     },
+     {
+      "areaPct": 48.8,
+      "key": "68",
+      "popPct": 35.0
+     },
+     {
+      "areaPct": 3.1,
+      "key": "67",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fayette",
+      "popPct": 34.8
+     },
+     {
+      "county": "Franklin",
+      "popPct": 33.7
+     },
+     {
+      "county": "Ripley",
+      "popPct": 15.3
+     },
+     {
+      "county": "Union",
+      "popPct": 10.5
+     },
+     {
+      "county": "Decatur",
+      "popPct": 5.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Union",
+      "popPct": 10.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Rush",
+      "popPct": 8.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67369,
+    "pres2020New": 57.8,
+    "pres2020Old": 53.6,
+    "retainedAreaPct": 48.1,
+    "retainedPopPct": 63.3,
+    "text": "Kept 63% of its population from the 2016\u20132020 HD-55; gained the rest from the old HD-68 (35%), the old HD-67 (2%). Counties: gained Union (10%); lost Rush. 2020 presidential margin R+53.6 on the 2016\u20132020 lines \u2192 R+57.8 on the current lines.",
+    "toEra": "current"
+   },
+   "56": {
+    "contributors": [
+     {
+      "areaPct": 84.7,
+      "key": "56",
+      "popPct": 93.2
+     },
+     {
+      "areaPct": 15.3,
+      "key": "54",
+      "popPct": 6.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Wayne",
+      "popPct": 98.8
+     },
+     {
+      "county": "Henry",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67299,
+    "pres2020New": 29.4,
+    "pres2020Old": 27.8,
+    "retainedAreaPct": 84.7,
+    "retainedPopPct": 93.2,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-56; gained the rest from the old HD-54 (7%). Spans Wayne, Henry counties. 2020 presidential margin R+27.8 on the 2016\u20132020 lines \u2192 R+29.4 on the current lines.",
+    "toEra": "current"
+   },
+   "57": {
+    "contributors": [
+     {
+      "areaPct": 32.9,
+      "key": "91",
+      "popPct": 23.6
+     },
+     {
+      "areaPct": 15.3,
+      "key": "93",
+      "popPct": 23.5
+     },
+     {
+      "areaPct": 27.7,
+      "key": "60",
+      "popPct": 19.9
+     },
+     {
+      "areaPct": 4.1,
+      "key": "58",
+      "popPct": 14.9
+     },
+     {
+      "areaPct": 18.2,
+      "key": "47",
+      "popPct": 12.6
+     },
+     {
+      "areaPct": 1.8,
+      "key": "40",
+      "popPct": 5.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Johnson",
+      "popPct": 40.7
+     },
+     {
+      "county": "Morgan",
+      "popPct": 30.2
+     },
+     {
+      "county": "Hendricks",
+      "popPct": 29.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Johnson",
+      "popPct": 40.7
+     },
+     {
+      "county": "Morgan",
+      "popPct": 30.2
+     },
+     {
+      "county": "Hendricks",
+      "popPct": 29.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Shelby",
+      "popPct": 68.6
+     },
+     {
+      "county": "Bartholomew",
+      "popPct": 16.6
+     },
+     {
+      "county": "Hancock",
+      "popPct": 14.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67511,
+    "pres2020New": 33.2,
+    "pres2020Old": 46.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-57; it draws from the old HD-91 (24%), the old HD-93 (24%), the old HD-60 (20%) and 3 more. Counties: gained Johnson (41%), Morgan (30%), Hendricks (29%); lost Shelby, Bartholomew, Hancock. 2020 presidential margin R+46.5 on the 2016\u20132020 lines \u2192 R+33.2 on the current lines.",
+    "toEra": "current"
+   },
+   "58": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "58",
+      "popPct": 98.1
+     },
+     {
+      "areaPct": 0.3,
+      "key": "47",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Johnson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67734,
+    "pres2020New": 30.4,
+    "pres2020Old": 29.2,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 98.1,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-58; gained the rest from the old HD-47 (2%). Entirely in Johnson County. 2020 presidential margin R+29.2 on the 2016\u20132020 lines \u2192 R+30.4 on the current lines.",
+    "toEra": "current"
+   },
+   "59": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "59",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bartholomew",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67651,
+    "pres2020New": 20.8,
+    "pres2020Old": 22.2,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Bartholomew County.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 78.9,
+      "key": "6",
+      "popPct": 80.7
+     },
+     {
+      "areaPct": 12.7,
+      "key": "7",
+      "popPct": 9.9
+     },
+     {
+      "areaPct": 8.4,
+      "key": "5",
+      "popPct": 9.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Joseph",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68035,
+    "pres2020New": -36.9,
+    "pres2020Old": -35.1,
+    "retainedAreaPct": 78.9,
+    "retainedPopPct": 80.7,
+    "text": "Kept 81% of its population from the 2016\u20132020 HD-6; gained the rest from the old HD-7 (10%), the old HD-5 (9%). Entirely in St. Joseph County. 2020 presidential margin D+35.1 on the 2016\u20132020 lines \u2192 D+36.9 on the current lines.",
+    "toEra": "current"
+   },
+   "60": {
+    "contributors": [
+     {
+      "areaPct": 57.2,
+      "key": "60",
+      "popPct": 51.9
+     },
+     {
+      "areaPct": 8.5,
+      "key": "47",
+      "popPct": 23.9
+     },
+     {
+      "areaPct": 33.7,
+      "key": "44",
+      "popPct": 22.7
+     },
+     {
+      "areaPct": 0.6,
+      "key": "93",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Morgan",
+      "popPct": 76.1
+     },
+     {
+      "county": "Johnson",
+      "popPct": 18.4
+     },
+     {
+      "county": "Monroe",
+      "popPct": 5.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Johnson",
+      "popPct": 18.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67385,
+    "pres2020New": 49.6,
+    "pres2020Old": 22.1,
+    "retainedAreaPct": 57.2,
+    "retainedPopPct": 51.9,
+    "text": "Kept 52% of its population from the 2016\u20132020 HD-60; gained the rest from the old HD-47 (24%), the old HD-44 (23%), the old HD-93 (2%). Counties: gained Johnson (18%). 2020 presidential margin R+22.1 on the 2016\u20132020 lines \u2192 R+49.6 on the current lines.",
+    "toEra": "current"
+   },
+   "61": {
+    "contributors": [
+     {
+      "areaPct": 87.2,
+      "key": "61",
+      "popPct": 87.4
+     },
+     {
+      "areaPct": 11.8,
+      "key": "60",
+      "popPct": 10.7
+     },
+     {
+      "areaPct": 1.0,
+      "key": "62",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Monroe",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68280,
+    "pres2020New": -62.3,
+    "pres2020Old": -61.0,
+    "retainedAreaPct": 87.2,
+    "retainedPopPct": 87.4,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-61; gained the rest from the old HD-60 (11%), the old HD-62 (2%). Entirely in Monroe County. 2020 presidential margin D+61.0 on the 2016\u20132020 lines \u2192 D+62.3 on the current lines.",
+    "toEra": "current"
+   },
+   "62": {
+    "contributors": [
+     {
+      "areaPct": 12.6,
+      "key": "62",
+      "popPct": 43.3
+     },
+     {
+      "areaPct": 67.2,
+      "key": "65",
+      "popPct": 33.2
+     },
+     {
+      "areaPct": 10.3,
+      "key": "60",
+      "popPct": 17.3
+     },
+     {
+      "areaPct": 2.1,
+      "key": "61",
+      "popPct": 3.9
+     },
+     {
+      "areaPct": 7.9,
+      "key": "73",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Monroe",
+      "popPct": 72.7
+     },
+     {
+      "county": "Brown",
+      "popPct": 22.5
+     },
+     {
+      "county": "Jackson",
+      "popPct": 4.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Brown",
+      "popPct": 22.5
+     },
+     {
+      "county": "Jackson",
+      "popPct": 4.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Greene",
+      "popPct": 42.0
+     },
+     {
+      "county": "Daviess",
+      "popPct": 5.3
+     },
+     {
+      "county": "Martin",
+      "popPct": 4.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 68480,
+    "pres2020New": -0.5,
+    "pres2020Old": 21.4,
+    "retainedAreaPct": 12.6,
+    "retainedPopPct": 43.3,
+    "text": "A new footprint: only 43% of its population was in the 2016\u20132020 HD-62; it draws from the old HD-65 (33%), the old HD-60 (17%), the old HD-61 (4%) and 1 more. Counties: gained Brown (22%), Jackson (5%); lost Greene, Daviess, Martin. 2020 presidential margin R+21.4 on the 2016\u20132020 lines \u2192 D+0.5 on the current lines.",
+    "toEra": "current"
+   },
+   "63": {
+    "contributors": [
+     {
+      "areaPct": 73.2,
+      "key": "63",
+      "popPct": 90.5
+     },
+     {
+      "areaPct": 17.8,
+      "key": "62",
+      "popPct": 4.5
+     },
+     {
+      "areaPct": 4.7,
+      "key": "74",
+      "popPct": 3.7
+     },
+     {
+      "areaPct": 4.3,
+      "key": "45",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Daviess",
+      "popPct": 42.6
+     },
+     {
+      "county": "Dubois",
+      "popPct": 38.9
+     },
+     {
+      "county": "Martin",
+      "popPct": 14.4
+     },
+     {
+      "county": "Pike",
+      "popPct": 4.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68324,
+    "pres2020New": 50.8,
+    "pres2020Old": 50.2,
+    "retainedAreaPct": 73.2,
+    "retainedPopPct": 90.5,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-63; gained the rest from the old HD-62 (4%), the old HD-74 (4%), the old HD-45 (1%). Spans Daviess, Dubois, Martin, Pike counties. 2020 presidential margin R+50.2 on the 2016\u20132020 lines \u2192 R+50.8 on the current lines.",
+    "toEra": "current"
+   },
+   "64": {
+    "contributors": [
+     {
+      "areaPct": 91.7,
+      "key": "64",
+      "popPct": 62.8
+     },
+     {
+      "areaPct": 7.5,
+      "key": "45",
+      "popPct": 32.7
+     },
+     {
+      "areaPct": 0.8,
+      "key": "78",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Gibson",
+      "popPct": 41.3
+     },
+     {
+      "county": "Knox",
+      "popPct": 40.9
+     },
+     {
+      "county": "Vanderburgh",
+      "popPct": 17.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Posey",
+      "popPct": 4.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67381,
+    "pres2020New": 44.7,
+    "pres2020Old": 44.1,
+    "retainedAreaPct": 91.7,
+    "retainedPopPct": 62.8,
+    "text": "Kept 63% of its population from the 2016\u20132020 HD-64; gained the rest from the old HD-45 (33%), the old HD-78 (4%). Counties: lost Posey. 2020 presidential margin R+44.1 on the 2016\u20132020 lines \u2192 R+44.7 on the current lines.",
+    "toEra": "current"
+   },
+   "65": {
+    "contributors": [
+     {
+      "areaPct": 38.3,
+      "key": "65",
+      "popPct": 53.9
+     },
+     {
+      "areaPct": 50.5,
+      "key": "73",
+      "popPct": 37.1
+     },
+     {
+      "areaPct": 11.2,
+      "key": "74",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lawrence",
+      "popPct": 66.3
+     },
+     {
+      "county": "Orange",
+      "popPct": 26.9
+     },
+     {
+      "county": "Washington",
+      "popPct": 4.9
+     },
+     {
+      "county": "Jackson",
+      "popPct": 1.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 26.9
+     },
+     {
+      "county": "Washington",
+      "popPct": 4.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Brown",
+      "popPct": 23.7
+     },
+     {
+      "county": "Monroe",
+      "popPct": 8.7
+     },
+     {
+      "county": "Johnson",
+      "popPct": 8.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67944,
+    "pres2020New": 50.4,
+    "pres2020Old": 42.8,
+    "retainedAreaPct": 38.3,
+    "retainedPopPct": 53.9,
+    "text": "Kept 54% of its population from the 2016\u20132020 HD-65; gained the rest from the old HD-73 (37%), the old HD-74 (9%). Counties: gained Orange (27%), Washington (5%); lost Brown, Monroe, Johnson. 2020 presidential margin R+42.8 on the 2016\u20132020 lines \u2192 R+50.4 on the current lines.",
+    "toEra": "current"
+   },
+   "66": {
+    "contributors": [
+     {
+      "areaPct": 79.7,
+      "key": "66",
+      "popPct": 62.3
+     },
+     {
+      "areaPct": 4.0,
+      "key": "70",
+      "popPct": 20.3
+     },
+     {
+      "areaPct": 13.6,
+      "key": "73",
+      "popPct": 12.8
+     },
+     {
+      "areaPct": 2.7,
+      "key": "71",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clark",
+      "popPct": 68.8
+     },
+     {
+      "county": "Scott",
+      "popPct": 20.6
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 10.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67897,
+    "pres2020New": 37.4,
+    "pres2020Old": 37.9,
+    "retainedAreaPct": 79.7,
+    "retainedPopPct": 62.3,
+    "text": "Kept 62% of its population from the 2016\u20132020 HD-66; gained the rest from the old HD-70 (20%), the old HD-73 (13%), the old HD-71 (4%). Spans Clark, Scott, Jefferson counties. 2020 presidential margin R+37.9 on the 2016\u20132020 lines \u2192 R+37.4 on the current lines.",
+    "toEra": "current"
+   },
+   "67": {
+    "contributors": [
+     {
+      "areaPct": 66.8,
+      "key": "67",
+      "popPct": 45.6
+     },
+     {
+      "areaPct": 30.6,
+      "key": "69",
+      "popPct": 32.8
+     },
+     {
+      "areaPct": 2.6,
+      "key": "66",
+      "popPct": 21.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 37.1
+     },
+     {
+      "county": "Jennings",
+      "popPct": 29.5
+     },
+     {
+      "county": "Ripley",
+      "popPct": 27.5
+     },
+     {
+      "county": "Decatur",
+      "popPct": 5.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Switzerland",
+      "popPct": 15.6
+     },
+     {
+      "county": "Dearborn",
+      "popPct": 15.4
+     },
+     {
+      "county": "Ohio",
+      "popPct": 9.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 68124,
+    "pres2020New": 51.0,
+    "pres2020Old": 58.3,
+    "retainedAreaPct": 66.8,
+    "retainedPopPct": 45.6,
+    "text": "A new footprint: only 46% of its population was in the 2016\u20132020 HD-67; it draws from the old HD-69 (33%), the old HD-66 (22%). Counties: lost Switzerland, Dearborn, Ohio. 2020 presidential margin R+58.3 on the 2016\u20132020 lines \u2192 R+51.0 on the current lines.",
+    "toEra": "current"
+   },
+   "68": {
+    "contributors": [
+     {
+      "areaPct": 37.5,
+      "key": "68",
+      "popPct": 61.2
+     },
+     {
+      "areaPct": 62.5,
+      "key": "67",
+      "popPct": 38.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dearborn",
+      "popPct": 75.4
+     },
+     {
+      "county": "Switzerland",
+      "popPct": 14.5
+     },
+     {
+      "county": "Ohio",
+      "popPct": 8.8
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 1.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Switzerland",
+      "popPct": 14.5
+     },
+     {
+      "county": "Ohio",
+      "popPct": 8.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Franklin",
+      "popPct": 25.4
+     },
+     {
+      "county": "Union",
+      "popPct": 11.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67218,
+    "pres2020New": 54.6,
+    "pres2020Old": 59.4,
+    "retainedAreaPct": 37.5,
+    "retainedPopPct": 61.2,
+    "text": "Kept 61% of its population from the 2016\u20132020 HD-68; gained the rest from the old HD-67 (39%). Counties: gained Switzerland (14%), Ohio (9%); lost Franklin, Union. 2020 presidential margin R+59.4 on the 2016\u20132020 lines \u2192 R+54.6 on the current lines.",
+    "toEra": "current"
+   },
+   "69": {
+    "contributors": [
+     {
+      "areaPct": 36.1,
+      "key": "69",
+      "popPct": 57.2
+     },
+     {
+      "areaPct": 45.7,
+      "key": "73",
+      "popPct": 25.6
+     },
+     {
+      "areaPct": 15.1,
+      "key": "66",
+      "popPct": 15.2
+     },
+     {
+      "areaPct": 3.1,
+      "key": "59",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jackson",
+      "popPct": 60.8
+     },
+     {
+      "county": "Washington",
+      "popPct": 21.4
+     },
+     {
+      "county": "Scott",
+      "popPct": 15.1
+     },
+     {
+      "county": "Bartholomew",
+      "popPct": 2.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Washington",
+      "popPct": 21.4
+     },
+     {
+      "county": "Scott",
+      "popPct": 15.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Jennings",
+      "popPct": 32.3
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 8.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 68238,
+    "pres2020New": 51.3,
+    "pres2020Old": 52.2,
+    "retainedAreaPct": 36.1,
+    "retainedPopPct": 57.2,
+    "text": "Kept 57% of its population from the 2016\u20132020 HD-69; gained the rest from the old HD-73 (26%), the old HD-66 (15%), the old HD-59 (2%). Counties: gained Washington (21%), Scott (15%); lost Jennings, Jefferson. 2020 presidential margin R+52.2 on the 2016\u20132020 lines \u2192 R+51.3 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 84.1,
+      "key": "7",
+      "popPct": 82.2
+     },
+     {
+      "areaPct": 12.4,
+      "key": "8",
+      "popPct": 8.2
+     },
+     {
+      "areaPct": 0.4,
+      "key": "6",
+      "popPct": 5.7
+     },
+     {
+      "areaPct": 3.0,
+      "key": "17",
+      "popPct": 2.6
+     },
+     {
+      "areaPct": 0.1,
+      "key": "5",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Joseph",
+      "popPct": 94.7
+     },
+     {
+      "county": "LaPorte",
+      "popPct": 2.7
+     },
+     {
+      "county": "Marshall",
+      "popPct": 2.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "LaPorte",
+      "popPct": 2.7
+     },
+     {
+      "county": "Marshall",
+      "popPct": 2.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68087,
+    "pres2020New": 13.3,
+    "pres2020Old": 7.0,
+    "retainedAreaPct": 84.1,
+    "retainedPopPct": 82.2,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-7; gained the rest from the old HD-8 (8%), the old HD-6 (6%), the old HD-17 (3%) and 1 more. Counties: gained LaPorte (3%), Marshall (3%). 2020 presidential margin R+7.0 on the 2016\u20132020 lines \u2192 R+13.3 on the current lines.",
+    "toEra": "current"
+   },
+   "70": {
+    "contributors": [
+     {
+      "areaPct": 71.0,
+      "key": "70",
+      "popPct": 77.4
+     },
+     {
+      "areaPct": 26.7,
+      "key": "73",
+      "popPct": 18.0
+     },
+     {
+      "areaPct": 2.2,
+      "key": "72",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Harrison",
+      "popPct": 57.2
+     },
+     {
+      "county": "Floyd",
+      "popPct": 16.1
+     },
+     {
+      "county": "Washington",
+      "popPct": 14.9
+     },
+     {
+      "county": "Clark",
+      "popPct": 11.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Washington",
+      "popPct": 14.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68226,
+    "pres2020New": 44.3,
+    "pres2020Old": 40.1,
+    "retainedAreaPct": 71.0,
+    "retainedPopPct": 77.4,
+    "text": "Kept 77% of its population from the 2016\u20132020 HD-70; gained the rest from the old HD-73 (18%), the old HD-72 (4%). Counties: gained Washington (15%). 2020 presidential margin R+40.1 on the 2016\u20132020 lines \u2192 R+44.3 on the current lines.",
+    "toEra": "current"
+   },
+   "71": {
+    "contributors": [
+     {
+      "areaPct": 98.3,
+      "key": "71",
+      "popPct": 98.0
+     },
+     {
+      "areaPct": 1.6,
+      "key": "72",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clark",
+      "popPct": 98.1
+     },
+     {
+      "county": "Floyd",
+      "popPct": 1.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67883,
+    "pres2020New": -0.5,
+    "pres2020Old": 0.3,
+    "retainedAreaPct": 98.3,
+    "retainedPopPct": 98.0,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-71; gained the rest from the old HD-72 (2%). Spans Clark, Floyd counties. 2020 presidential margin R+0.3 on the 2016\u20132020 lines \u2192 D+0.5 on the current lines.",
+    "toEra": "current"
+   },
+   "72": {
+    "contributors": [
+     {
+      "areaPct": 75.1,
+      "key": "72",
+      "popPct": 95.7
+     },
+     {
+      "areaPct": 24.9,
+      "key": "70",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Floyd",
+      "popPct": 98.6
+     },
+     {
+      "county": "Clark",
+      "popPct": 1.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68477,
+    "pres2020New": 11.0,
+    "pres2020Old": 10.9,
+    "retainedAreaPct": 75.1,
+    "retainedPopPct": 95.7,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-72; gained the rest from the old HD-70 (4%). Spans Floyd, Clark counties. 2020 presidential margin R+10.9 on the 2016\u20132020 lines \u2192 R+11.0 on the current lines.",
+    "toEra": "current"
+   },
+   "73": {
+    "contributors": [
+     {
+      "areaPct": 52.6,
+      "key": "57",
+      "popPct": 57.9
+     },
+     {
+      "areaPct": 22.9,
+      "key": "55",
+      "popPct": 25.1
+     },
+     {
+      "areaPct": 6.5,
+      "key": "69",
+      "popPct": 9.2
+     },
+     {
+      "areaPct": 15.8,
+      "key": "67",
+      "popPct": 6.2
+     },
+     {
+      "areaPct": 2.3,
+      "key": "59",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Shelby",
+      "popPct": 42.1
+     },
+     {
+      "county": "Decatur",
+      "popPct": 27.7
+     },
+     {
+      "county": "Bartholomew",
+      "popPct": 19.2
+     },
+     {
+      "county": "Jennings",
+      "popPct": 11.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Shelby",
+      "popPct": 42.1
+     },
+     {
+      "county": "Decatur",
+      "popPct": 27.7
+     },
+     {
+      "county": "Bartholomew",
+      "popPct": 19.2
+     },
+     {
+      "county": "Jennings",
+      "popPct": 11.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Washington",
+      "popPct": 43.1
+     },
+     {
+      "county": "Orange",
+      "popPct": 18.6
+     },
+     {
+      "county": "Clark",
+      "popPct": 13.4
+     },
+     {
+      "county": "Lawrence",
+      "popPct": 12.9
+     },
+     {
+      "county": "Jackson",
+      "popPct": 8.8
+     },
+     {
+      "county": "Harrison",
+      "popPct": 2.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 68349,
+    "pres2020New": 48.4,
+    "pres2020Old": 52.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-73; it draws from the old HD-57 (58%), the old HD-55 (25%), the old HD-69 (9%) and 2 more. Counties: gained Shelby (42%), Decatur (28%), Bartholomew (19%) and 1 more; lost Washington, Orange, Clark, Lawrence and 2 more. 2020 presidential margin R+52.4 on the 2016\u20132020 lines \u2192 R+48.4 on the current lines.",
+    "toEra": "current"
+   },
+   "74": {
+    "contributors": [
+     {
+      "areaPct": 80.0,
+      "key": "74",
+      "popPct": 81.8
+     },
+     {
+      "areaPct": 14.8,
+      "key": "75",
+      "popPct": 14.8
+     },
+     {
+      "areaPct": 5.2,
+      "key": "63",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Spencer",
+      "popPct": 29.4
+     },
+     {
+      "county": "Perry",
+      "popPct": 27.8
+     },
+     {
+      "county": "Dubois",
+      "popPct": 25.1
+     },
+     {
+      "county": "Crawford",
+      "popPct": 15.2
+     },
+     {
+      "county": "Orange",
+      "popPct": 2.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68065,
+    "pres2020New": 36.0,
+    "pres2020Old": 35.9,
+    "retainedAreaPct": 80.0,
+    "retainedPopPct": 81.8,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-74; gained the rest from the old HD-75 (15%), the old HD-63 (3%). Spans Spencer, Perry, Dubois, Crawford and 1 more counties. 2020 presidential margin R+35.9 on the 2016\u20132020 lines \u2192 R+36.0 on the current lines.",
+    "toEra": "current"
+   },
+   "75": {
+    "contributors": [
+     {
+      "areaPct": 77.9,
+      "key": "75",
+      "popPct": 82.6
+     },
+     {
+      "areaPct": 20.6,
+      "key": "64",
+      "popPct": 9.1
+     },
+     {
+      "areaPct": 1.2,
+      "key": "63",
+      "popPct": 4.2
+     },
+     {
+      "areaPct": 0.2,
+      "key": "78",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Warrick",
+      "popPct": 78.1
+     },
+     {
+      "county": "Pike",
+      "popPct": 14.1
+     },
+     {
+      "county": "Gibson",
+      "popPct": 7.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Gibson",
+      "popPct": 7.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Spencer",
+      "popPct": 15.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67650,
+    "pres2020New": 33.3,
+    "pres2020Old": 33.3,
+    "retainedAreaPct": 77.9,
+    "retainedPopPct": 82.6,
+    "text": "Kept 83% of its population from the 2016\u20132020 HD-75; gained the rest from the old HD-64 (9%), the old HD-63 (4%), the old HD-78 (4%). Counties: gained Gibson (8%); lost Spencer. 2020 presidential margin R+33.3 on the 2016\u20132020 lines \u2192 R+33.3 on the current lines.",
+    "toEra": "current"
+   },
+   "76": {
+    "contributors": [
+     {
+      "areaPct": 79.3,
+      "key": "76",
+      "popPct": 86.1
+     },
+     {
+      "areaPct": 20.7,
+      "key": "64",
+      "popPct": 13.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Vanderburgh",
+      "popPct": 62.6
+     },
+     {
+      "county": "Posey",
+      "popPct": 37.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68020,
+    "pres2020New": 30.2,
+    "pres2020Old": 27.2,
+    "retainedAreaPct": 79.3,
+    "retainedPopPct": 86.1,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-76; gained the rest from the old HD-64 (14%). Spans Vanderburgh, Posey counties. 2020 presidential margin R+27.2 on the 2016\u20132020 lines \u2192 R+30.2 on the current lines.",
+    "toEra": "current"
+   },
+   "77": {
+    "contributors": [
+     {
+      "areaPct": 85.2,
+      "key": "77",
+      "popPct": 86.9
+     },
+     {
+      "areaPct": 5.2,
+      "key": "78",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 9.6,
+      "key": "76",
+      "popPct": 6.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Vanderburgh",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67900,
+    "pres2020New": -16.7,
+    "pres2020Old": -17.1,
+    "retainedAreaPct": 85.2,
+    "retainedPopPct": 86.9,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-77; gained the rest from the old HD-78 (7%), the old HD-76 (6%). Entirely in Vanderburgh County. 2020 presidential margin D+17.1 on the 2016\u20132020 lines \u2192 D+16.7 on the current lines.",
+    "toEra": "current"
+   },
+   "78": {
+    "contributors": [
+     {
+      "areaPct": 83.9,
+      "key": "78",
+      "popPct": 84.8
+     },
+     {
+      "areaPct": 13.8,
+      "key": "64",
+      "popPct": 9.9
+     },
+     {
+      "areaPct": 2.2,
+      "key": "77",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Vanderburgh",
+      "popPct": 83.5
+     },
+     {
+      "county": "Warrick",
+      "popPct": 16.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68440,
+    "pres2020New": 16.0,
+    "pres2020Old": 16.1,
+    "retainedAreaPct": 83.9,
+    "retainedPopPct": 84.8,
+    "text": "Kept 85% of its population from the 2016\u20132020 HD-78; gained the rest from the old HD-64 (10%), the old HD-77 (5%). Spans Vanderburgh, Warrick counties. 2020 presidential margin R+16.1 on the 2016\u20132020 lines \u2192 R+16.0 on the current lines.",
+    "toEra": "current"
+   },
+   "79": {
+    "contributors": [
+     {
+      "areaPct": 64.3,
+      "key": "79",
+      "popPct": 83.4
+     },
+     {
+      "areaPct": 15.5,
+      "key": "50",
+      "popPct": 8.9
+     },
+     {
+      "areaPct": 15.8,
+      "key": "33",
+      "popPct": 6.3
+     },
+     {
+      "areaPct": 4.5,
+      "key": "31",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Adams",
+      "popPct": 53.2
+     },
+     {
+      "county": "Wells",
+      "popPct": 40.5
+     },
+     {
+      "county": "Jay",
+      "popPct": 6.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jay",
+      "popPct": 6.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Allen",
+      "popPct": 15.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67471,
+    "pres2020New": 54.9,
+    "pres2020Old": 51.3,
+    "retainedAreaPct": 64.3,
+    "retainedPopPct": 83.4,
+    "text": "Kept 83% of its population from the 2016\u20132020 HD-79; gained the rest from the old HD-50 (9%), the old HD-33 (6%), the old HD-31 (1%). Counties: gained Jay (6%); lost Allen. 2020 presidential margin R+51.3 on the 2016\u20132020 lines \u2192 R+54.9 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 93.0,
+      "key": "8",
+      "popPct": 84.4
+     },
+     {
+      "areaPct": 3.3,
+      "key": "6",
+      "popPct": 10.5
+     },
+     {
+      "areaPct": 3.7,
+      "key": "5",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Joseph",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "LaPorte",
+      "popPct": 9.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 68106,
+    "pres2020New": -16.1,
+    "pres2020Old": -6.9,
+    "retainedAreaPct": 93.0,
+    "retainedPopPct": 84.4,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-8; gained the rest from the old HD-6 (10%), the old HD-5 (5%). Counties: lost LaPorte. 2020 presidential margin D+6.9 on the 2016\u20132020 lines \u2192 D+16.1 on the current lines.",
+    "toEra": "current"
+   },
+   "80": {
+    "contributors": [
+     {
+      "areaPct": 44.5,
+      "key": "80",
+      "popPct": 77.8
+     },
+     {
+      "areaPct": 46.5,
+      "key": "50",
+      "popPct": 22.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Allen",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67680,
+    "pres2020New": -37.9,
+    "pres2020Old": -53.9,
+    "retainedAreaPct": 44.5,
+    "retainedPopPct": 77.8,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-80; gained the rest from the old HD-50 (22%). Entirely in Allen County. 2020 presidential margin D+53.9 on the 2016\u20132020 lines \u2192 D+37.9 on the current lines.",
+    "toEra": "current"
+   },
+   "81": {
+    "contributors": [
+     {
+      "areaPct": 22.4,
+      "key": "81",
+      "popPct": 52.5
+     },
+     {
+      "areaPct": 22.9,
+      "key": "52",
+      "popPct": 38.8
+     },
+     {
+      "areaPct": 54.8,
+      "key": "82",
+      "popPct": 8.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Allen",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67715,
+    "pres2020New": 24.4,
+    "pres2020Old": 1.8,
+    "retainedAreaPct": 22.4,
+    "retainedPopPct": 52.5,
+    "text": "Kept 52% of its population from the 2016\u20132020 HD-81; gained the rest from the old HD-52 (39%), the old HD-82 (9%). Entirely in Allen County. 2020 presidential margin R+1.8 on the 2016\u20132020 lines \u2192 R+24.4 on the current lines.",
+    "toEra": "current"
+   },
+   "82": {
+    "contributors": [
+     {
+      "areaPct": 37.9,
+      "key": "81",
+      "popPct": 41.6
+     },
+     {
+      "areaPct": 29.3,
+      "key": "85",
+      "popPct": 26.5
+     },
+     {
+      "areaPct": 24.7,
+      "key": "80",
+      "popPct": 23.6
+     },
+     {
+      "areaPct": 5.0,
+      "key": "50",
+      "popPct": 5.0
+     },
+     {
+      "areaPct": 3.0,
+      "key": "84",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Allen",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Noble",
+      "popPct": 72.6
+     },
+     {
+      "county": "Whitley",
+      "popPct": 8.0
+     },
+     {
+      "county": "LaGrange",
+      "popPct": 5.5
+     },
+     {
+      "county": "Elkhart",
+      "popPct": 4.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67122,
+    "pres2020New": -17.2,
+    "pres2020Old": 51.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-82; it draws from the old HD-81 (42%), the old HD-85 (26%), the old HD-80 (24%) and 2 more. Counties: lost Noble, Whitley, LaGrange, Elkhart. 2020 presidential margin R+51.1 on the 2016\u20132020 lines \u2192 D+17.2 on the current lines.",
+    "toEra": "current"
+   },
+   "83": {
+    "contributors": [
+     {
+      "areaPct": 97.6,
+      "key": "83",
+      "popPct": 93.1
+     },
+     {
+      "areaPct": 2.4,
+      "key": "81",
+      "popPct": 6.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Allen",
+      "popPct": 69.8
+     },
+     {
+      "county": "Whitley",
+      "popPct": 30.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67547,
+    "pres2020New": 22.2,
+    "pres2020Old": 27.4,
+    "retainedAreaPct": 97.6,
+    "retainedPopPct": 93.1,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-83; gained the rest from the old HD-81 (7%). Spans Allen, Whitley counties. 2020 presidential margin R+27.4 on the 2016\u20132020 lines \u2192 R+22.2 on the current lines.",
+    "toEra": "current"
+   },
+   "84": {
+    "contributors": [
+     {
+      "areaPct": 97.4,
+      "key": "84",
+      "popPct": 97.6
+     },
+     {
+      "areaPct": 2.6,
+      "key": "85",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Allen",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67520,
+    "pres2020New": 17.4,
+    "pres2020Old": 17.6,
+    "retainedAreaPct": 97.4,
+    "retainedPopPct": 97.6,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-84; gained the rest from the old HD-85 (2%). Entirely in Allen County. 2020 presidential margin R+17.6 on the 2016\u20132020 lines \u2192 R+17.4 on the current lines.",
+    "toEra": "current"
+   },
+   "85": {
+    "contributors": [
+     {
+      "areaPct": 58.0,
+      "key": "85",
+      "popPct": 72.7
+     },
+     {
+      "areaPct": 28.4,
+      "key": "79",
+      "popPct": 15.5
+     },
+     {
+      "areaPct": 12.0,
+      "key": "50",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 0.4,
+      "key": "84",
+      "popPct": 4.0
+     },
+     {
+      "areaPct": 1.2,
+      "key": "83",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Allen",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67754,
+    "pres2020New": 42.2,
+    "pres2020Old": 32.0,
+    "retainedAreaPct": 58.0,
+    "retainedPopPct": 72.7,
+    "text": "Kept 73% of its population from the 2016\u20132020 HD-85; gained the rest from the old HD-79 (16%), the old HD-50 (7%), the old HD-84 (4%) and 1 more. Entirely in Allen County. 2020 presidential margin R+32.0 on the 2016\u20132020 lines \u2192 R+42.2 on the current lines.",
+    "toEra": "current"
+   },
+   "86": {
+    "contributors": [
+     {
+      "areaPct": 89.4,
+      "key": "86",
+      "popPct": 88.3
+     },
+     {
+      "areaPct": 9.1,
+      "key": "87",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 1.4,
+      "key": "96",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 99.2
+     },
+     {
+      "county": "Hamilton",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68408,
+    "pres2020New": -44.8,
+    "pres2020Old": -44.3,
+    "retainedAreaPct": 89.4,
+    "retainedPopPct": 88.3,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-86; gained the rest from the old HD-87 (7%), the old HD-96 (4%). Spans Marion, Hamilton counties. 2020 presidential margin D+44.3 on the 2016\u20132020 lines \u2192 D+44.8 on the current lines.",
+    "toEra": "current"
+   },
+   "87": {
+    "contributors": [
+     {
+      "areaPct": 64.4,
+      "key": "87",
+      "popPct": 72.9
+     },
+     {
+      "areaPct": 18.2,
+      "key": "88",
+      "popPct": 14.9
+     },
+     {
+      "areaPct": 14.2,
+      "key": "95",
+      "popPct": 6.2
+     },
+     {
+      "areaPct": 3.2,
+      "key": "86",
+      "popPct": 6.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67746,
+    "pres2020New": -28.2,
+    "pres2020Old": -30.3,
+    "retainedAreaPct": 64.4,
+    "retainedPopPct": 72.9,
+    "text": "Kept 73% of its population from the 2016\u20132020 HD-87; gained the rest from the old HD-88 (15%), the old HD-95 (6%), the old HD-86 (6%). Entirely in Marion County. 2020 presidential margin D+30.3 on the 2016\u20132020 lines \u2192 D+28.2 on the current lines.",
+    "toEra": "current"
+   },
+   "88": {
+    "contributors": [
+     {
+      "areaPct": 79.1,
+      "key": "88",
+      "popPct": 89.2
+     },
+     {
+      "areaPct": 20.9,
+      "key": "53",
+      "popPct": 10.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hancock",
+      "popPct": 35.7
+     },
+     {
+      "county": "Hamilton",
+      "popPct": 28.9
+     },
+     {
+      "county": "Marion",
+      "popPct": 24.6
+     },
+     {
+      "county": "Madison",
+      "popPct": 10.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Madison",
+      "popPct": 10.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68368,
+    "pres2020New": 12.2,
+    "pres2020Old": 7.9,
+    "retainedAreaPct": 79.1,
+    "retainedPopPct": 89.2,
+    "text": "Kept 89% of its population from the 2016\u20132020 HD-88; gained the rest from the old HD-53 (11%). Counties: gained Madison (11%). 2020 presidential margin R+7.9 on the 2016\u20132020 lines \u2192 R+12.2 on the current lines.",
+    "toEra": "current"
+   },
+   "89": {
+    "contributors": [
+     {
+      "areaPct": 85.8,
+      "key": "89",
+      "popPct": 79.0
+     },
+     {
+      "areaPct": 9.7,
+      "key": "90",
+      "popPct": 10.7
+     },
+     {
+      "areaPct": 4.4,
+      "key": "100",
+      "popPct": 10.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68192,
+    "pres2020New": -4.5,
+    "pres2020Old": -1.3,
+    "retainedAreaPct": 85.8,
+    "retainedPopPct": 79.0,
+    "text": "Kept 79% of its population from the 2016\u20132020 HD-89; gained the rest from the old HD-90 (11%), the old HD-100 (10%). Entirely in Marion County. 2020 presidential margin D+1.3 on the 2016\u20132020 lines \u2192 D+4.5 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 64.2,
+      "key": "9",
+      "popPct": 81.1
+     },
+     {
+      "areaPct": 26.9,
+      "key": "8",
+      "popPct": 6.9
+     },
+     {
+      "areaPct": 7.8,
+      "key": "4",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 1.2,
+      "key": "10",
+      "popPct": 5.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "LaPorte",
+      "popPct": 71.3
+     },
+     {
+      "county": "Porter",
+      "popPct": 28.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68359,
+    "pres2020New": -6.1,
+    "pres2020Old": -5.9,
+    "retainedAreaPct": 64.2,
+    "retainedPopPct": 81.1,
+    "text": "Kept 81% of its population from the 2016\u20132020 HD-9; gained the rest from the old HD-8 (7%), the old HD-4 (6%), the old HD-10 (6%). Spans LaPorte, Porter counties. 2020 presidential margin D+5.9 on the 2016\u20132020 lines \u2192 D+6.1 on the current lines.",
+    "toEra": "current"
+   },
+   "90": {
+    "contributors": [
+     {
+      "areaPct": 98.4,
+      "key": "90",
+      "popPct": 97.3
+     },
+     {
+      "areaPct": 1.5,
+      "key": "89",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67902,
+    "pres2020New": 20.1,
+    "pres2020Old": 18.6,
+    "retainedAreaPct": 98.4,
+    "retainedPopPct": 97.3,
+    "text": "Kept 97% of its population from the 2016\u20132020 HD-90; gained the rest from the old HD-89 (3%). Entirely in Marion County. 2020 presidential margin R+18.6 on the 2016\u20132020 lines \u2192 R+20.1 on the current lines.",
+    "toEra": "current"
+   },
+   "91": {
+    "contributors": [
+     {
+      "areaPct": 88.9,
+      "key": "91",
+      "popPct": 68.1
+     },
+     {
+      "areaPct": 11.1,
+      "key": "93",
+      "popPct": 31.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Hendricks",
+      "popPct": 28.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 68318,
+    "pres2020New": 19.5,
+    "pres2020Old": 22.3,
+    "retainedAreaPct": 88.9,
+    "retainedPopPct": 68.1,
+    "text": "Kept 68% of its population from the 2016\u20132020 HD-91; gained the rest from the old HD-93 (32%). Counties: lost Hendricks. 2020 presidential margin R+22.3 on the 2016\u20132020 lines \u2192 R+19.5 on the current lines.",
+    "toEra": "current"
+   },
+   "92": {
+    "contributors": [
+     {
+      "areaPct": 64.7,
+      "key": "92",
+      "popPct": 90.0
+     },
+     {
+      "areaPct": 34.0,
+      "key": "86",
+      "popPct": 7.3
+     },
+     {
+      "areaPct": 1.2,
+      "key": "99",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67548,
+    "pres2020New": -16.9,
+    "pres2020Old": -13.6,
+    "retainedAreaPct": 64.7,
+    "retainedPopPct": 90.0,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-92; gained the rest from the old HD-86 (7%), the old HD-99 (3%). Entirely in Marion County. 2020 presidential margin D+13.6 on the 2016\u20132020 lines \u2192 D+16.9 on the current lines.",
+    "toEra": "current"
+   },
+   "93": {
+    "contributors": [
+     {
+      "areaPct": 42.8,
+      "key": "93",
+      "popPct": 48.1
+     },
+     {
+      "areaPct": 19.4,
+      "key": "89",
+      "popPct": 18.4
+     },
+     {
+      "areaPct": 16.5,
+      "key": "97",
+      "popPct": 15.9
+     },
+     {
+      "areaPct": 13.2,
+      "key": "91",
+      "popPct": 10.2
+     },
+     {
+      "areaPct": 8.1,
+      "key": "90",
+      "popPct": 7.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Johnson",
+      "popPct": 23.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 67999,
+    "pres2020New": 15.5,
+    "pres2020Old": 20.4,
+    "retainedAreaPct": 42.8,
+    "retainedPopPct": 48.1,
+    "text": "A new footprint: only 48% of its population was in the 2016\u20132020 HD-93; it draws from the old HD-89 (18%), the old HD-97 (16%), the old HD-91 (10%) and 1 more. Counties: lost Johnson. 2020 presidential margin R+20.4 on the 2016\u20132020 lines \u2192 R+15.5 on the current lines.",
+    "toEra": "current"
+   },
+   "94": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "94",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 67211,
+    "pres2020New": -70.7,
+    "pres2020Old": -70.7,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Marion County.",
+    "toEra": "current"
+   },
+   "95": {
+    "contributors": [
+     {
+      "areaPct": 84.5,
+      "key": "95",
+      "popPct": 89.5
+     },
+     {
+      "areaPct": 9.0,
+      "key": "87",
+      "popPct": 5.9
+     },
+     {
+      "areaPct": 6.5,
+      "key": "88",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68330,
+    "pres2020New": -51.5,
+    "pres2020Old": -57.5,
+    "retainedAreaPct": 84.5,
+    "retainedPopPct": 89.5,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-95; gained the rest from the old HD-87 (6%), the old HD-88 (4%). Entirely in Marion County. 2020 presidential margin D+57.5 on the 2016\u20132020 lines \u2192 D+51.5 on the current lines.",
+    "toEra": "current"
+   },
+   "96": {
+    "contributors": [
+     {
+      "areaPct": 94.2,
+      "key": "96",
+      "popPct": 94.8
+     },
+     {
+      "areaPct": 5.7,
+      "key": "99",
+      "popPct": 5.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68258,
+    "pres2020New": -73.0,
+    "pres2020Old": -71.8,
+    "retainedAreaPct": 94.2,
+    "retainedPopPct": 94.8,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-96; gained the rest from the old HD-99 (5%). Entirely in Marion County. 2020 presidential margin D+71.8 on the 2016\u20132020 lines \u2192 D+73.0 on the current lines.",
+    "toEra": "current"
+   },
+   "97": {
+    "contributors": [
+     {
+      "areaPct": 92.7,
+      "key": "97",
+      "popPct": 87.3
+     },
+     {
+      "areaPct": 7.2,
+      "key": "92",
+      "popPct": 12.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68349,
+    "pres2020New": -12.9,
+    "pres2020Old": -9.1,
+    "retainedAreaPct": 92.7,
+    "retainedPopPct": 87.3,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-97; gained the rest from the old HD-92 (13%). Entirely in Marion County. 2020 presidential margin D+9.1 on the 2016\u20132020 lines \u2192 D+12.9 on the current lines.",
+    "toEra": "current"
+   },
+   "98": {
+    "contributors": [
+     {
+      "areaPct": 94.9,
+      "key": "98",
+      "popPct": 93.0
+     },
+     {
+      "areaPct": 5.1,
+      "key": "95",
+      "popPct": 6.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 99.4
+     },
+     {
+      "county": "Hancock",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68080,
+    "pres2020New": -65.1,
+    "pres2020Old": -62.5,
+    "retainedAreaPct": 94.9,
+    "retainedPopPct": 93.0,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-98; gained the rest from the old HD-95 (7%). Spans Marion, Hancock counties. 2020 presidential margin D+62.5 on the 2016\u20132020 lines \u2192 D+65.1 on the current lines.",
+    "toEra": "current"
+   },
+   "99": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "99",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 68053,
+    "pres2020New": -64.9,
+    "pres2020Old": -64.9,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Marion County.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 43.4,
+      "key": "1",
+      "popPct": 47.9
+     },
+     {
+      "areaPct": 34.3,
+      "key": "6",
+      "popPct": 30.4
+     },
+     {
+      "areaPct": 19.0,
+      "key": "2",
+      "popPct": 18.1
+     },
+     {
+      "areaPct": 3.3,
+      "key": "3",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 135824,
+    "pres2020New": 0.9,
+    "pres2020Old": -9.8,
+    "retainedAreaPct": 43.4,
+    "retainedPopPct": 47.9,
+    "text": "A new footprint: only 48% of its population was in the 2016\u20132020 SD-1; it draws from the old SD-6 (30%), the old SD-2 (18%), the old SD-3 (4%). Entirely in Lake County. 2020 presidential margin D+9.8 on the 2016\u20132020 lines \u2192 R+0.9 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 13.9,
+      "key": "10",
+      "popPct": 70.2
+     },
+     {
+      "areaPct": 86.1,
+      "key": "8",
+      "popPct": 29.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Joseph",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 133993,
+    "pres2020New": -21.8,
+    "pres2020Old": -29.9,
+    "retainedAreaPct": 13.9,
+    "retainedPopPct": 70.2,
+    "text": "Kept 70% of its population from the 2016\u20132020 SD-10; gained the rest from the old SD-8 (30%). Entirely in St. Joseph County. 2020 presidential margin D+29.9 on the 2016\u20132020 lines \u2192 D+21.8 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 62.6,
+      "key": "11",
+      "popPct": 80.6
+     },
+     {
+      "areaPct": 3.3,
+      "key": "10",
+      "popPct": 11.0
+     },
+     {
+      "areaPct": 34.1,
+      "key": "12",
+      "popPct": 8.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Joseph",
+      "popPct": 60.4
+     },
+     {
+      "county": "Elkhart",
+      "popPct": 39.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 133057,
+    "pres2020New": 11.0,
+    "pres2020Old": 9.6,
+    "retainedAreaPct": 62.6,
+    "retainedPopPct": 80.6,
+    "text": "Kept 81% of its population from the 2016\u20132020 SD-11; gained the rest from the old SD-10 (11%), the old SD-12 (8%). Spans St. Joseph, Elkhart counties. 2020 presidential margin R+9.6 on the 2016\u20132020 lines \u2192 R+11.0 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 84.7,
+      "key": "12",
+      "popPct": 78.3
+     },
+     {
+      "areaPct": 1.9,
+      "key": "11",
+      "popPct": 12.2
+     },
+     {
+      "areaPct": 13.4,
+      "key": "9",
+      "popPct": 9.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Elkhart",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Kosciusko",
+      "popPct": 6.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 135488,
+    "pres2020New": 22.1,
+    "pres2020Old": 29.7,
+    "retainedAreaPct": 84.7,
+    "retainedPopPct": 78.3,
+    "text": "Kept 78% of its population from the 2016\u20132020 SD-12; gained the rest from the old SD-11 (12%), the old SD-9 (10%). Counties: lost Kosciusko. 2020 presidential margin R+29.7 on the 2016\u20132020 lines \u2192 R+22.1 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "13",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Noble",
+      "popPct": 35.3
+     },
+     {
+      "county": "LaGrange",
+      "popPct": 30.1
+     },
+     {
+      "county": "Steuben",
+      "popPct": 25.5
+     },
+     {
+      "county": "DeKalb",
+      "popPct": 9.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 134532,
+    "pres2020New": 47.8,
+    "pres2020Old": 47.8,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Noble, LaGrange, Steuben, DeKalb counties.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 98.6,
+      "key": "14",
+      "popPct": 74.6
+     },
+     {
+      "areaPct": 1.4,
+      "key": "15",
+      "popPct": 24.6
+     },
+     {
+      "areaPct": 0.0,
+      "key": "16",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Allen",
+      "popPct": 76.9
+     },
+     {
+      "county": "DeKalb",
+      "popPct": 23.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 134649,
+    "pres2020New": 20.9,
+    "pres2020Old": 31.3,
+    "retainedAreaPct": 98.6,
+    "retainedPopPct": 74.6,
+    "text": "Kept 75% of its population from the 2016\u20132020 SD-14; gained the rest from the old SD-15 (25%), the old SD-16 (1%). Spans Allen, DeKalb counties. 2020 presidential margin R+31.3 on the 2016\u20132020 lines \u2192 R+20.9 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 73.8,
+      "key": "15",
+      "popPct": 72.6
+     },
+     {
+      "areaPct": 23.7,
+      "key": "14",
+      "popPct": 25.8
+     },
+     {
+      "areaPct": 2.5,
+      "key": "16",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Allen",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 138183,
+    "pres2020New": 17.2,
+    "pres2020Old": 3.1,
+    "retainedAreaPct": 73.8,
+    "retainedPopPct": 72.6,
+    "text": "Kept 73% of its population from the 2016\u20132020 SD-15; gained the rest from the old SD-14 (26%), the old SD-16 (2%). Entirely in Allen County. 2020 presidential margin R+3.1 on the 2016\u20132020 lines \u2192 R+17.2 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 36.9,
+      "key": "16",
+      "popPct": 70.5
+     },
+     {
+      "areaPct": 62.6,
+      "key": "17",
+      "popPct": 23.1
+     },
+     {
+      "areaPct": 0.5,
+      "key": "15",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Allen",
+      "popPct": 74.8
+     },
+     {
+      "county": "Whitley",
+      "popPct": 25.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 137672,
+    "pres2020New": 19.6,
+    "pres2020Old": 7.9,
+    "retainedAreaPct": 36.9,
+    "retainedPopPct": 70.5,
+    "text": "Kept 70% of its population from the 2016\u20132020 SD-16; gained the rest from the old SD-17 (23%), the old SD-15 (6%). Spans Allen, Whitley counties. 2020 presidential margin R+7.9 on the 2016\u20132020 lines \u2192 R+19.6 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 66.6,
+      "key": "17",
+      "popPct": 69.2
+     },
+     {
+      "areaPct": 26.1,
+      "key": "19",
+      "popPct": 23.5
+     },
+     {
+      "areaPct": 7.2,
+      "key": "21",
+      "popPct": 7.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grant",
+      "popPct": 49.6
+     },
+     {
+      "county": "Huntington",
+      "popPct": 27.3
+     },
+     {
+      "county": "Wabash",
+      "popPct": 23.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Whitley",
+      "popPct": 25.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 134312,
+    "pres2020New": 44.8,
+    "pres2020Old": 45.2,
+    "retainedAreaPct": 66.6,
+    "retainedPopPct": 69.2,
+    "text": "Kept 69% of its population from the 2016\u20132020 SD-17; gained the rest from the old SD-19 (24%), the old SD-21 (7%). Counties: lost Whitley. 2020 presidential margin R+45.2 on the 2016\u20132020 lines \u2192 R+44.8 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 84.0,
+      "key": "18",
+      "popPct": 80.3
+     },
+     {
+      "areaPct": 12.3,
+      "key": "21",
+      "popPct": 12.1
+     },
+     {
+      "areaPct": 3.6,
+      "key": "9",
+      "popPct": 7.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cass",
+      "popPct": 28.3
+     },
+     {
+      "county": "Miami",
+      "popPct": 27.0
+     },
+     {
+      "county": "Kosciusko",
+      "popPct": 17.2
+     },
+     {
+      "county": "Fulton",
+      "popPct": 15.3
+     },
+     {
+      "county": "Howard",
+      "popPct": 12.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Howard",
+      "popPct": 12.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Marshall",
+      "popPct": 9.4
+     },
+     {
+      "county": "Carroll",
+      "popPct": 5.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 133364,
+    "pres2020New": 49.9,
+    "pres2020Old": 49.2,
+    "retainedAreaPct": 84.0,
+    "retainedPopPct": 80.3,
+    "text": "Kept 80% of its population from the 2016\u20132020 SD-18; gained the rest from the old SD-21 (12%), the old SD-9 (8%). Counties: gained Howard (12%); lost Marshall, Carroll. 2020 presidential margin R+49.2 on the 2016\u20132020 lines \u2192 R+49.9 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 93.5,
+      "key": "19",
+      "popPct": 70.6
+     },
+     {
+      "areaPct": 6.4,
+      "key": "16",
+      "popPct": 28.8
+     },
+     {
+      "areaPct": 0.1,
+      "key": "15",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Allen",
+      "popPct": 29.3
+     },
+     {
+      "county": "Adams",
+      "popPct": 26.2
+     },
+     {
+      "county": "Wells",
+      "popPct": 20.6
+     },
+     {
+      "county": "Jay",
+      "popPct": 15.0
+     },
+     {
+      "county": "Blackford",
+      "popPct": 8.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Allen",
+      "popPct": 29.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Grant",
+      "popPct": 17.7
+     },
+     {
+      "county": "Huntington",
+      "popPct": 6.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 136747,
+    "pres2020New": 36.8,
+    "pres2020Old": 52.2,
+    "retainedAreaPct": 93.5,
+    "retainedPopPct": 70.6,
+    "text": "Kept 71% of its population from the 2016\u20132020 SD-19; gained the rest from the old SD-16 (29%), the old SD-15 (1%). Counties: gained Allen (29%); lost Grant, Huntington. 2020 presidential margin R+52.2 on the 2016\u20132020 lines \u2192 R+36.8 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 68.6,
+      "key": "2",
+      "popPct": 51.8
+     },
+     {
+      "areaPct": 31.4,
+      "key": "1",
+      "popPct": 48.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 134199,
+    "pres2020New": -35.1,
+    "pres2020Old": -47.5,
+    "retainedAreaPct": 68.6,
+    "retainedPopPct": 51.8,
+    "text": "Kept 52% of its population from the 2016\u20132020 SD-2; gained the rest from the old SD-1 (48%). Entirely in Lake County. 2020 presidential margin D+47.5 on the 2016\u20132020 lines \u2192 D+35.1 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 69.0,
+      "key": "20",
+      "popPct": 73.4
+     },
+     {
+      "areaPct": 7.2,
+      "key": "30",
+      "popPct": 14.3
+     },
+     {
+      "areaPct": 1.8,
+      "key": "29",
+      "popPct": 6.2
+     },
+     {
+      "areaPct": 22.0,
+      "key": "21",
+      "popPct": 6.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hamilton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 135399,
+    "pres2020New": 11.4,
+    "pres2020Old": 11.5,
+    "retainedAreaPct": 69.0,
+    "retainedPopPct": 73.4,
+    "text": "Kept 73% of its population from the 2016\u20132020 SD-20; gained the rest from the old SD-30 (14%), the old SD-29 (6%), the old SD-21 (6%). Entirely in Hamilton County. 2020 presidential margin R+11.5 on the 2016\u20132020 lines \u2192 R+11.4 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 87.7,
+      "key": "21",
+      "popPct": 64.1
+     },
+     {
+      "areaPct": 12.3,
+      "key": "20",
+      "popPct": 35.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Howard",
+      "popPct": 49.2
+     },
+     {
+      "county": "Hamilton",
+      "popPct": 39.5
+     },
+     {
+      "county": "Tipton",
+      "popPct": 11.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Grant",
+      "popPct": 7.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 137394,
+    "pres2020New": 24.7,
+    "pres2020Old": 37.9,
+    "retainedAreaPct": 87.7,
+    "retainedPopPct": 64.1,
+    "text": "Kept 64% of its population from the 2016\u20132020 SD-21; gained the rest from the old SD-20 (36%). Counties: lost Grant. 2020 presidential margin R+37.9 on the 2016\u20132020 lines \u2192 R+24.7 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 19.5,
+      "key": "22",
+      "popPct": 52.0
+     },
+     {
+      "areaPct": 53.9,
+      "key": "7",
+      "popPct": 43.0
+     },
+     {
+      "areaPct": 26.6,
+      "key": "18",
+      "popPct": 5.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tippecanoe",
+      "popPct": 85.0
+     },
+     {
+      "county": "Carroll",
+      "popPct": 14.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Carroll",
+      "popPct": 14.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 134951,
+    "pres2020New": 14.1,
+    "pres2020Old": -3.2,
+    "retainedAreaPct": 19.5,
+    "retainedPopPct": 52.0,
+    "text": "Kept 52% of its population from the 2016\u20132020 SD-22; gained the rest from the old SD-7 (43%), the old SD-18 (5%). Counties: gained Carroll (15%). 2020 presidential margin D+3.2 on the 2016\u20132020 lines \u2192 R+14.1 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 12.5,
+      "key": "22",
+      "popPct": 53.5
+     },
+     {
+      "areaPct": 87.5,
+      "key": "23",
+      "popPct": 46.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tippecanoe",
+      "popPct": 53.6
+     },
+     {
+      "county": "Fountain",
+      "popPct": 12.4
+     },
+     {
+      "county": "Parke",
+      "popPct": 12.1
+     },
+     {
+      "county": "Vermillion",
+      "popPct": 11.5
+     },
+     {
+      "county": "Warren",
+      "popPct": 6.2
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 4.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Tippecanoe",
+      "popPct": 53.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Boone",
+      "popPct": 30.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 133720,
+    "pres2020New": 23.0,
+    "pres2020Old": 42.2,
+    "retainedAreaPct": 87.5,
+    "retainedPopPct": 46.5,
+    "text": "A new footprint: only 46% of its population was in the 2016\u20132020 SD-23; it draws from the old SD-22 (54%). Counties: gained Tippecanoe (54%); lost Boone. 2020 presidential margin R+42.2 on the 2016\u20132020 lines \u2192 R+23.0 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 97.8,
+      "key": "24",
+      "popPct": 94.8
+     },
+     {
+      "areaPct": 2.2,
+      "key": "37",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hendricks",
+      "popPct": 80.9
+     },
+     {
+      "county": "Putnam",
+      "popPct": 18.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 135840,
+    "pres2020New": 23.7,
+    "pres2020Old": 25.5,
+    "retainedAreaPct": 97.8,
+    "retainedPopPct": 94.8,
+    "text": "Kept 95% of its population from the 2016\u20132020 SD-24; gained the rest from the old SD-37 (5%). Spans Hendricks, Putnam counties. 2020 presidential margin R+25.5 on the 2016\u20132020 lines \u2192 R+23.7 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 77.3,
+      "key": "26",
+      "popPct": 61.3
+     },
+     {
+      "areaPct": 7.3,
+      "key": "25",
+      "popPct": 35.0
+     },
+     {
+      "areaPct": 15.3,
+      "key": "21",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Madison",
+      "popPct": 96.2
+     },
+     {
+      "county": "Hamilton",
+      "popPct": 3.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hamilton",
+      "popPct": 3.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Delaware",
+      "popPct": 62.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 135197,
+    "pres2020New": 24.2,
+    "pres2020Old": 3.7,
+    "retainedAreaPct": 7.3,
+    "retainedPopPct": 35.0,
+    "text": "A new footprint: only 35% of its population was in the 2016\u20132020 SD-25; it draws from the old SD-26 (61%), the old SD-21 (4%). Counties: gained Hamilton (4%); lost Delaware. 2020 presidential margin R+3.7 on the 2016\u20132020 lines \u2192 R+24.2 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 19.5,
+      "key": "25",
+      "popPct": 57.1
+     },
+     {
+      "areaPct": 27.1,
+      "key": "26",
+      "popPct": 24.9
+     },
+     {
+      "areaPct": 53.4,
+      "key": "27",
+      "popPct": 18.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Delaware",
+      "popPct": 82.0
+     },
+     {
+      "county": "Randolph",
+      "popPct": 18.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Randolph",
+      "popPct": 18.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Madison",
+      "popPct": 63.4
+     },
+     {
+      "county": "Henry",
+      "popPct": 10.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 136405,
+    "pres2020New": 20.5,
+    "pres2020Old": 32.7,
+    "retainedAreaPct": 27.1,
+    "retainedPopPct": 24.9,
+    "text": "A new footprint: only 25% of its population was in the 2016\u20132020 SD-26; it draws from the old SD-25 (57%), the old SD-27 (18%). Counties: gained Randolph (18%); lost Madison, Henry. 2020 presidential margin R+32.7 on the 2016\u20132020 lines \u2192 R+20.5 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 66.2,
+      "key": "27",
+      "popPct": 63.6
+     },
+     {
+      "areaPct": 21.7,
+      "key": "42",
+      "popPct": 26.0
+     },
+     {
+      "areaPct": 12.1,
+      "key": "26",
+      "popPct": 10.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Wayne",
+      "popPct": 49.5
+     },
+     {
+      "county": "Henry",
+      "popPct": 36.2
+     },
+     {
+      "county": "Franklin",
+      "popPct": 8.8
+     },
+     {
+      "county": "Union",
+      "popPct": 5.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Henry",
+      "popPct": 36.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Randolph",
+      "popPct": 19.8
+     },
+     {
+      "county": "Dearborn",
+      "popPct": 9.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 134364,
+    "pres2020New": 40.5,
+    "pres2020Old": 44.7,
+    "retainedAreaPct": 66.2,
+    "retainedPopPct": 63.6,
+    "text": "Kept 64% of its population from the 2016\u20132020 SD-27; gained the rest from the old SD-42 (26%), the old SD-26 (10%). Counties: gained Henry (36%); lost Randolph, Dearborn. 2020 presidential margin R+44.7 on the 2016\u20132020 lines \u2192 R+40.5 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 93.8,
+      "key": "28",
+      "popPct": 83.2
+     },
+     {
+      "areaPct": 6.0,
+      "key": "42",
+      "popPct": 15.8
+     },
+     {
+      "areaPct": 0.2,
+      "key": "32",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hancock",
+      "popPct": 58.2
+     },
+     {
+      "county": "Shelby",
+      "popPct": 23.4
+     },
+     {
+      "county": "Marion",
+      "popPct": 18.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 136844,
+    "pres2020New": 29.4,
+    "pres2020Old": 19.2,
+    "retainedAreaPct": 93.8,
+    "retainedPopPct": 83.2,
+    "text": "Kept 83% of its population from the 2016\u20132020 SD-28; gained the rest from the old SD-42 (16%), the old SD-32 (1%). Spans Hancock, Shelby, Marion counties. 2020 presidential margin R+19.2 on the 2016\u20132020 lines \u2192 R+29.4 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 81.5,
+      "key": "29",
+      "popPct": 86.2
+     },
+     {
+      "areaPct": 8.0,
+      "key": "30",
+      "popPct": 5.1
+     },
+     {
+      "areaPct": 2.9,
+      "key": "35",
+      "popPct": 4.5
+     },
+     {
+      "areaPct": 7.0,
+      "key": "23",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 0.6,
+      "key": "33",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 48.7
+     },
+     {
+      "county": "Hamilton",
+      "popPct": 33.4
+     },
+     {
+      "county": "Boone",
+      "popPct": 17.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 138024,
+    "pres2020New": -14.9,
+    "pres2020Old": -21.6,
+    "retainedAreaPct": 81.5,
+    "retainedPopPct": 86.2,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-29; gained the rest from the old SD-30 (5%), the old SD-35 (4%), the old SD-23 (3%) and 1 more. Spans Marion, Hamilton, Boone counties. 2020 presidential margin D+21.6 on the 2016\u20132020 lines \u2192 D+14.9 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 88.1,
+      "key": "3",
+      "popPct": 80.8
+     },
+     {
+      "areaPct": 11.9,
+      "key": "2",
+      "popPct": 19.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lake",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 136398,
+    "pres2020New": -50.5,
+    "pres2020Old": -47.6,
+    "retainedAreaPct": 88.1,
+    "retainedPopPct": 80.8,
+    "text": "Kept 81% of its population from the 2016\u20132020 SD-3; gained the rest from the old SD-2 (19%). Entirely in Lake County. 2020 presidential margin D+47.6 on the 2016\u20132020 lines \u2192 D+50.5 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 53.6,
+      "key": "30",
+      "popPct": 57.5
+     },
+     {
+      "areaPct": 22.0,
+      "key": "29",
+      "popPct": 14.9
+     },
+     {
+      "areaPct": 13.0,
+      "key": "31",
+      "popPct": 14.0
+     },
+     {
+      "areaPct": 11.4,
+      "key": "33",
+      "popPct": 13.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 99.2
+     },
+     {
+      "county": "Hamilton",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 134856,
+    "pres2020New": -42.5,
+    "pres2020Old": -28.2,
+    "retainedAreaPct": 53.6,
+    "retainedPopPct": 57.5,
+    "text": "Kept 58% of its population from the 2016\u20132020 SD-30; gained the rest from the old SD-29 (15%), the old SD-31 (14%), the old SD-33 (14%). Spans Marion, Hamilton counties. 2020 presidential margin D+28.2 on the 2016\u20132020 lines \u2192 D+42.5 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 76.5,
+      "key": "31",
+      "popPct": 74.6
+     },
+     {
+      "areaPct": 11.2,
+      "key": "20",
+      "popPct": 13.8
+     },
+     {
+      "areaPct": 12.3,
+      "key": "30",
+      "popPct": 11.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hamilton",
+      "popPct": 77.2
+     },
+     {
+      "county": "Marion",
+      "popPct": 22.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 136936,
+    "pres2020New": -1.2,
+    "pres2020Old": -9.6,
+    "retainedAreaPct": 76.5,
+    "retainedPopPct": 74.6,
+    "text": "Kept 75% of its population from the 2016\u20132020 SD-31; gained the rest from the old SD-20 (14%), the old SD-30 (12%). Spans Hamilton, Marion counties. 2020 presidential margin D+9.6 on the 2016\u20132020 lines \u2192 D+1.2 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 56.9,
+      "key": "32",
+      "popPct": 73.0
+     },
+     {
+      "areaPct": 43.0,
+      "key": "41",
+      "popPct": 27.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 72.9
+     },
+     {
+      "county": "Johnson",
+      "popPct": 27.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Johnson",
+      "popPct": 27.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 137732,
+    "pres2020New": 16.5,
+    "pres2020Old": 10.8,
+    "retainedAreaPct": 56.9,
+    "retainedPopPct": 73.0,
+    "text": "Kept 73% of its population from the 2016\u20132020 SD-32; gained the rest from the old SD-41 (27%). Counties: gained Johnson (27%). 2020 presidential margin R+10.8 on the 2016\u20132020 lines \u2192 R+16.5 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 89.0,
+      "key": "33",
+      "popPct": 84.0
+     },
+     {
+      "areaPct": 8.3,
+      "key": "30",
+      "popPct": 11.0
+     },
+     {
+      "areaPct": 1.9,
+      "key": "29",
+      "popPct": 3.7
+     },
+     {
+      "areaPct": 0.8,
+      "key": "34",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 135654,
+    "pres2020New": -68.0,
+    "pres2020Old": -70.8,
+    "retainedAreaPct": 89.0,
+    "retainedPopPct": 84.0,
+    "text": "Kept 84% of its population from the 2016\u20132020 SD-33; gained the rest from the old SD-30 (11%), the old SD-29 (4%), the old SD-34 (1%). Entirely in Marion County. 2020 presidential margin D+70.8 on the 2016\u20132020 lines \u2192 D+68.0 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 58.6,
+      "key": "34",
+      "popPct": 69.8
+     },
+     {
+      "areaPct": 30.3,
+      "key": "31",
+      "popPct": 21.7
+     },
+     {
+      "areaPct": 6.2,
+      "key": "28",
+      "popPct": 4.9
+     },
+     {
+      "areaPct": 4.9,
+      "key": "30",
+      "popPct": 3.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 138367,
+    "pres2020New": -62.8,
+    "pres2020Old": -69.5,
+    "retainedAreaPct": 58.6,
+    "retainedPopPct": 69.8,
+    "text": "Kept 70% of its population from the 2016\u20132020 SD-34; gained the rest from the old SD-31 (22%), the old SD-28 (5%), the old SD-30 (4%). Entirely in Marion County. 2020 presidential margin D+69.5 on the 2016\u20132020 lines \u2192 D+62.8 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "35",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 70.8
+     },
+     {
+      "county": "Hendricks",
+      "popPct": 29.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 137487,
+    "pres2020New": 15.1,
+    "pres2020Old": 14.3,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Marion, Hendricks counties.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 74.5,
+      "key": "36",
+      "popPct": 71.6
+     },
+     {
+      "areaPct": 13.1,
+      "key": "32",
+      "popPct": 15.0
+     },
+     {
+      "areaPct": 6.0,
+      "key": "41",
+      "popPct": 7.0
+     },
+     {
+      "areaPct": 6.3,
+      "key": "37",
+      "popPct": 6.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 80.5
+     },
+     {
+      "county": "Johnson",
+      "popPct": 19.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 136607,
+    "pres2020New": 18.7,
+    "pres2020Old": 3.9,
+    "retainedAreaPct": 74.5,
+    "retainedPopPct": 71.6,
+    "text": "Kept 72% of its population from the 2016\u20132020 SD-36; gained the rest from the old SD-32 (15%), the old SD-41 (7%), the old SD-37 (6%). Spans Marion, Johnson counties. 2020 presidential margin R+3.9 on the 2016\u20132020 lines \u2192 R+18.7 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 88.5,
+      "key": "37",
+      "popPct": 88.5
+     },
+     {
+      "areaPct": 0.5,
+      "key": "36",
+      "popPct": 6.6
+     },
+     {
+      "areaPct": 11.0,
+      "key": "39",
+      "popPct": 4.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Morgan",
+      "popPct": 52.5
+     },
+     {
+      "county": "Johnson",
+      "popPct": 30.9
+     },
+     {
+      "county": "Owen",
+      "popPct": 8.3
+     },
+     {
+      "county": "Putnam",
+      "popPct": 8.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 136612,
+    "pres2020New": 48.9,
+    "pres2020Old": 48.2,
+    "retainedAreaPct": 88.5,
+    "retainedPopPct": 88.5,
+    "text": "Kept 88% of its population from the 2016\u20132020 SD-37; gained the rest from the old SD-36 (7%), the old SD-39 (5%). Spans Morgan, Johnson, Owen, Putnam counties. 2020 presidential margin R+48.2 on the 2016\u20132020 lines \u2192 R+48.9 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 65.2,
+      "key": "38",
+      "popPct": 91.9
+     },
+     {
+      "areaPct": 34.8,
+      "key": "39",
+      "popPct": 8.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Vigo",
+      "popPct": 76.9
+     },
+     {
+      "county": "Clay",
+      "popPct": 19.3
+     },
+     {
+      "county": "Sullivan",
+      "popPct": 3.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Sullivan",
+      "popPct": 3.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 137739,
+    "pres2020New": 25.0,
+    "pres2020Old": 21.5,
+    "retainedAreaPct": 65.2,
+    "retainedPopPct": 91.9,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-38; gained the rest from the old SD-39 (8%). Counties: gained Sullivan (4%). 2020 presidential margin R+21.5 on the 2016\u20132020 lines \u2192 R+25.0 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 87.1,
+      "key": "39",
+      "popPct": 79.7
+     },
+     {
+      "areaPct": 12.9,
+      "key": "48",
+      "popPct": 20.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Knox",
+      "popPct": 26.6
+     },
+     {
+      "county": "Daviess",
+      "popPct": 24.6
+     },
+     {
+      "county": "Greene",
+      "popPct": 22.6
+     },
+     {
+      "county": "Sullivan",
+      "popPct": 11.6
+     },
+     {
+      "county": "Owen",
+      "popPct": 7.2
+     },
+     {
+      "county": "Martin",
+      "popPct": 7.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Clay",
+      "popPct": 4.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 135812,
+    "pres2020New": 52.9,
+    "pres2020Old": 55.0,
+    "retainedAreaPct": 87.1,
+    "retainedPopPct": 79.7,
+    "text": "Kept 80% of its population from the 2016\u20132020 SD-39; gained the rest from the old SD-48 (20%). Counties: lost Clay. 2020 presidential margin R+55.0 on the 2016\u20132020 lines \u2192 R+52.9 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 96.4,
+      "key": "4",
+      "popPct": 92.3
+     },
+     {
+      "areaPct": 3.6,
+      "key": "8",
+      "popPct": 7.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Porter",
+      "popPct": 64.2
+     },
+     {
+      "county": "LaPorte",
+      "popPct": 35.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 136135,
+    "pres2020New": -3.9,
+    "pres2020Old": -1.7,
+    "retainedAreaPct": 96.4,
+    "retainedPopPct": 92.3,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-4; gained the rest from the old SD-8 (8%). Spans Porter, LaPorte counties. 2020 presidential margin D+1.7 on the 2016\u20132020 lines \u2192 D+3.9 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 83.8,
+      "key": "40",
+      "popPct": 97.3
+     },
+     {
+      "areaPct": 16.2,
+      "key": "44",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Monroe",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 133173,
+    "pres2020New": -29.6,
+    "pres2020Old": -31.2,
+    "retainedAreaPct": 83.8,
+    "retainedPopPct": 97.3,
+    "text": "Kept 97% of its population from the 2016\u20132020 SD-40; gained the rest from the old SD-44 (3%). Entirely in Monroe County. 2020 presidential margin D+31.2 on the 2016\u20132020 lines \u2192 D+29.6 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 50.0,
+      "key": "41",
+      "popPct": 70.6
+     },
+     {
+      "areaPct": 25.6,
+      "key": "44",
+      "popPct": 21.0
+     },
+     {
+      "areaPct": 24.4,
+      "key": "43",
+      "popPct": 8.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bartholomew",
+      "popPct": 59.4
+     },
+     {
+      "county": "Johnson",
+      "popPct": 40.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 138207,
+    "pres2020New": 31.8,
+    "pres2020Old": 29.6,
+    "retainedAreaPct": 50.0,
+    "retainedPopPct": 70.6,
+    "text": "Kept 71% of its population from the 2016\u20132020 SD-41; gained the rest from the old SD-44 (21%), the old SD-43 (8%). Spans Bartholomew, Johnson counties. 2020 presidential margin R+29.6 on the 2016\u20132020 lines \u2192 R+31.8 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 52.9,
+      "key": "42",
+      "popPct": 52.0
+     },
+     {
+      "areaPct": 42.9,
+      "key": "43",
+      "popPct": 44.5
+     },
+     {
+      "areaPct": 2.8,
+      "key": "27",
+      "popPct": 1.8
+     },
+     {
+      "areaPct": 1.3,
+      "key": "28",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ripley",
+      "popPct": 21.1
+     },
+     {
+      "county": "Decatur",
+      "popPct": 19.2
+     },
+     {
+      "county": "Fayette",
+      "popPct": 17.1
+     },
+     {
+      "county": "Jennings",
+      "popPct": 12.9
+     },
+     {
+      "county": "Rush",
+      "popPct": 12.1
+     },
+     {
+      "county": "Shelby",
+      "popPct": 9.5
+     },
+     {
+      "county": "Franklin",
+      "popPct": 8.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jennings",
+      "popPct": 12.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Henry",
+      "popPct": 27.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 137251,
+    "pres2020New": 56.8,
+    "pres2020Old": 48.8,
+    "retainedAreaPct": 52.9,
+    "retainedPopPct": 52.0,
+    "text": "Kept 52% of its population from the 2016\u20132020 SD-42; gained the rest from the old SD-43 (44%), the old SD-27 (2%), the old SD-28 (2%). Counties: gained Jennings (13%); lost Henry. 2020 presidential margin R+48.8 on the 2016\u20132020 lines \u2192 R+56.8 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 56.6,
+      "key": "45",
+      "popPct": 50.3
+     },
+     {
+      "areaPct": 37.2,
+      "key": "43",
+      "popPct": 41.2
+     },
+     {
+      "areaPct": 6.2,
+      "key": "27",
+      "popPct": 8.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dearborn",
+      "popPct": 37.9
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 24.8
+     },
+     {
+      "county": "Scott",
+      "popPct": 18.1
+     },
+     {
+      "county": "Jennings",
+      "popPct": 7.4
+     },
+     {
+      "county": "Switzerland",
+      "popPct": 7.3
+     },
+     {
+      "county": "Ohio",
+      "popPct": 4.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jefferson",
+      "popPct": 24.8
+     },
+     {
+      "county": "Scott",
+      "popPct": 18.1
+     },
+     {
+      "county": "Switzerland",
+      "popPct": 7.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Decatur",
+      "popPct": 18.9
+     },
+     {
+      "county": "Ripley",
+      "popPct": 14.4
+     },
+     {
+      "county": "Bartholomew",
+      "popPct": 9.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 133731,
+    "pres2020New": 48.6,
+    "pres2020Old": 55.4,
+    "retainedAreaPct": 37.2,
+    "retainedPopPct": 41.2,
+    "text": "A new footprint: only 41% of its population was in the 2016\u20132020 SD-43; it draws from the old SD-45 (50%), the old SD-27 (8%). Counties: gained Jefferson (25%), Scott (18%), Switzerland (7%); lost Decatur, Ripley, Bartholomew. 2020 presidential margin R+55.4 on the 2016\u20132020 lines \u2192 R+48.6 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 66.8,
+      "key": "44",
+      "popPct": 77.5
+     },
+     {
+      "areaPct": 22.6,
+      "key": "47",
+      "popPct": 14.9
+     },
+     {
+      "areaPct": 6.6,
+      "key": "45",
+      "popPct": 4.0
+     },
+     {
+      "areaPct": 2.9,
+      "key": "40",
+      "popPct": 2.3
+     },
+     {
+      "areaPct": 1.1,
+      "key": "43",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jackson",
+      "popPct": 34.5
+     },
+     {
+      "county": "Lawrence",
+      "popPct": 33.8
+     },
+     {
+      "county": "Orange",
+      "popPct": 14.8
+     },
+     {
+      "county": "Brown",
+      "popPct": 11.6
+     },
+     {
+      "county": "Monroe",
+      "popPct": 4.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 14.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Bartholomew",
+      "popPct": 21.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 133324,
+    "pres2020New": 44.4,
+    "pres2020Old": 41.1,
+    "retainedAreaPct": 66.8,
+    "retainedPopPct": 77.5,
+    "text": "Kept 78% of its population from the 2016\u20132020 SD-44; gained the rest from the old SD-47 (15%), the old SD-45 (4%), the old SD-40 (2%) and 1 more. Counties: gained Orange (15%); lost Bartholomew. 2020 presidential margin R+41.1 on the 2016\u20132020 lines \u2192 R+44.4 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 8.7,
+      "key": "46",
+      "popPct": 51.8
+     },
+     {
+      "areaPct": 91.3,
+      "key": "45",
+      "popPct": 48.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clark",
+      "popPct": 89.3
+     },
+     {
+      "county": "Floyd",
+      "popPct": 10.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Floyd",
+      "popPct": 10.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Jefferson",
+      "popPct": 24.0
+     },
+     {
+      "county": "Scott",
+      "popPct": 17.5
+     },
+     {
+      "county": "Switzerland",
+      "popPct": 7.0
+     },
+     {
+      "county": "Jackson",
+      "popPct": 3.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 135931,
+    "pres2020New": 17.5,
+    "pres2020Old": 37.1,
+    "retainedAreaPct": 91.3,
+    "retainedPopPct": 48.2,
+    "text": "A new footprint: only 48% of its population was in the 2016\u20132020 SD-45; it draws from the old SD-46 (52%). Counties: gained Floyd (11%); lost Jefferson, Scott, Switzerland, Jackson. 2020 presidential margin R+37.1 on the 2016\u20132020 lines \u2192 R+17.5 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 20.7,
+      "key": "34",
+      "popPct": 31.4
+     },
+     {
+      "areaPct": 39.1,
+      "key": "36",
+      "popPct": 29.4
+     },
+     {
+      "areaPct": 21.1,
+      "key": "32",
+      "popPct": 18.7
+     },
+     {
+      "areaPct": 13.3,
+      "key": "28",
+      "popPct": 13.5
+     },
+     {
+      "areaPct": 3.9,
+      "key": "33",
+      "popPct": 5.9
+     },
+     {
+      "areaPct": 1.9,
+      "key": "35",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Marion",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Floyd",
+      "popPct": 58.3
+     },
+     {
+      "county": "Clark",
+      "popPct": 41.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 136184,
+    "pres2020New": -39.7,
+    "pres2020Old": 8.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-46; it draws from the old SD-34 (31%), the old SD-36 (29%), the old SD-32 (19%) and 3 more. Counties: gained Marion (100%); lost Floyd, Clark. 2020 presidential margin R+8.4 on the 2016\u20132020 lines \u2192 D+39.7 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 87.7,
+      "key": "47",
+      "popPct": 50.8
+     },
+     {
+      "areaPct": 12.3,
+      "key": "46",
+      "popPct": 49.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Floyd",
+      "popPct": 49.1
+     },
+     {
+      "county": "Harrison",
+      "popPct": 29.3
+     },
+     {
+      "county": "Washington",
+      "popPct": 20.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Floyd",
+      "popPct": 49.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Orange",
+      "popPct": 15.2
+     },
+     {
+      "county": "Perry",
+      "popPct": 14.5
+     },
+     {
+      "county": "Dubois",
+      "popPct": 9.7
+     },
+     {
+      "county": "Crawford",
+      "popPct": 8.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 133486,
+    "pres2020New": 31.1,
+    "pres2020Old": 43.7,
+    "retainedAreaPct": 87.7,
+    "retainedPopPct": 50.8,
+    "text": "Kept 51% of its population from the 2016\u20132020 SD-47; gained the rest from the old SD-46 (49%). Counties: gained Floyd (49%); lost Orange, Perry, Dubois, Crawford. 2020 presidential margin R+43.7 on the 2016\u20132020 lines \u2192 R+31.1 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 48.5,
+      "key": "48",
+      "popPct": 59.0
+     },
+     {
+      "areaPct": 39.9,
+      "key": "47",
+      "popPct": 30.6
+     },
+     {
+      "areaPct": 11.6,
+      "key": "49",
+      "popPct": 10.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Dubois",
+      "popPct": 31.5
+     },
+     {
+      "county": "Gibson",
+      "popPct": 23.7
+     },
+     {
+      "county": "Spencer",
+      "popPct": 14.4
+     },
+     {
+      "county": "Perry",
+      "popPct": 13.7
+     },
+     {
+      "county": "Pike",
+      "popPct": 8.8
+     },
+     {
+      "county": "Crawford",
+      "popPct": 7.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Perry",
+      "popPct": 13.7
+     },
+     {
+      "county": "Crawford",
+      "popPct": 7.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Knox",
+      "popPct": 21.5
+     },
+     {
+      "county": "Warrick",
+      "popPct": 14.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 138399,
+    "pres2020New": 41.2,
+    "pres2020Old": 41.5,
+    "retainedAreaPct": 48.5,
+    "retainedPopPct": 59.0,
+    "text": "Kept 59% of its population from the 2016\u20132020 SD-48; gained the rest from the old SD-47 (31%), the old SD-49 (10%). Counties: gained Perry (14%), Crawford (8%); lost Knox, Warrick. 2020 presidential margin R+41.5 on the 2016\u20132020 lines \u2192 R+41.2 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 99.3,
+      "key": "49",
+      "popPct": 84.9
+     },
+     {
+      "areaPct": 0.7,
+      "key": "50",
+      "popPct": 15.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Vanderburgh",
+      "popPct": 81.0
+     },
+     {
+      "county": "Posey",
+      "popPct": 19.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Gibson",
+      "popPct": 11.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 134154,
+    "pres2020New": 18.1,
+    "pres2020Old": 28.4,
+    "retainedAreaPct": 99.3,
+    "retainedPopPct": 84.9,
+    "text": "Kept 85% of its population from the 2016\u20132020 SD-49; gained the rest from the old SD-50 (15%). Counties: lost Gibson. 2020 presidential margin R+28.4 on the 2016\u20132020 lines \u2192 R+18.1 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 61.2,
+      "key": "5",
+      "popPct": 78.1
+     },
+     {
+      "areaPct": 37.6,
+      "key": "7",
+      "popPct": 18.8
+     },
+     {
+      "areaPct": 1.2,
+      "key": "4",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Porter",
+      "popPct": 63.7
+     },
+     {
+      "county": "White",
+      "popPct": 18.4
+     },
+     {
+      "county": "Pulaski",
+      "popPct": 9.3
+     },
+     {
+      "county": "Jasper",
+      "popPct": 8.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "White",
+      "popPct": 18.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Starke",
+      "popPct": 7.1
+     },
+     {
+      "county": "LaPorte",
+      "popPct": 3.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 133837,
+    "pres2020New": 23.1,
+    "pres2020Old": 24.0,
+    "retainedAreaPct": 61.2,
+    "retainedPopPct": 78.1,
+    "text": "Kept 78% of its population from the 2016\u20132020 SD-5; gained the rest from the old SD-7 (19%), the old SD-4 (3%). Counties: gained White (18%); lost Starke, LaPorte. 2020 presidential margin R+24.0 on the 2016\u20132020 lines \u2192 R+23.1 on the current lines.",
+    "toEra": "current"
+   },
+   "50": {
+    "contributors": [
+     {
+      "areaPct": 36.7,
+      "key": "50",
+      "popPct": 85.7
+     },
+     {
+      "areaPct": 63.3,
+      "key": "48",
+      "popPct": 14.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Vanderburgh",
+      "popPct": 52.4
+     },
+     {
+      "county": "Warrick",
+      "popPct": 47.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 135104,
+    "pres2020New": 17.7,
+    "pres2020Old": 9.0,
+    "retainedAreaPct": 36.7,
+    "retainedPopPct": 85.7,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-50; gained the rest from the old SD-48 (14%). Spans Vanderburgh, Warrick counties. 2020 presidential margin R+9.0 on the 2016\u20132020 lines \u2192 R+17.7 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 79.1,
+      "key": "6",
+      "popPct": 78.8
+     },
+     {
+      "areaPct": 11.9,
+      "key": "5",
+      "popPct": 11.6
+     },
+     {
+      "areaPct": 0.2,
+      "key": "3",
+      "popPct": 5.1
+     },
+     {
+      "areaPct": 8.8,
+      "key": "7",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lake",
+      "popPct": 67.5
+     },
+     {
+      "county": "Jasper",
+      "popPct": 16.1
+     },
+     {
+      "county": "Newton",
+      "popPct": 10.1
+     },
+     {
+      "county": "Benton",
+      "popPct": 6.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jasper",
+      "popPct": 16.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 136776,
+    "pres2020New": 31.1,
+    "pres2020Old": 27.8,
+    "retainedAreaPct": 79.1,
+    "retainedPopPct": 78.8,
+    "text": "Kept 79% of its population from the 2016\u20132020 SD-6; gained the rest from the old SD-5 (12%), the old SD-3 (5%), the old SD-7 (4%). Counties: gained Jasper (16%). 2020 presidential margin R+27.8 on the 2016\u20132020 lines \u2192 R+31.1 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 40.6,
+      "key": "23",
+      "popPct": 50.1
+     },
+     {
+      "areaPct": 43.3,
+      "key": "7",
+      "popPct": 30.7
+     },
+     {
+      "areaPct": 9.8,
+      "key": "24",
+      "popPct": 18.0
+     },
+     {
+      "areaPct": 6.3,
+      "key": "21",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Boone",
+      "popPct": 34.3
+     },
+     {
+      "county": "Clinton",
+      "popPct": 24.1
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 23.6
+     },
+     {
+      "county": "Hendricks",
+      "popPct": 18.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Montgomery",
+      "popPct": 23.6
+     },
+     {
+      "county": "Hendricks",
+      "popPct": 18.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Tippecanoe",
+      "popPct": 33.9
+     },
+     {
+      "county": "White",
+      "popPct": 18.8
+     },
+     {
+      "county": "Carroll",
+      "popPct": 10.2
+     },
+     {
+      "county": "Jasper",
+      "popPct": 5.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 137474,
+    "pres2020New": 38.0,
+    "pres2020Old": 32.5,
+    "retainedAreaPct": 43.3,
+    "retainedPopPct": 30.7,
+    "text": "A new footprint: only 31% of its population was in the 2016\u20132020 SD-7; it draws from the old SD-23 (50%), the old SD-24 (18%), the old SD-21 (1%). Counties: gained Montgomery (24%), Hendricks (18%); lost Tippecanoe, White, Carroll, Jasper. 2020 presidential margin R+32.5 on the 2016\u20132020 lines \u2192 R+38.0 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 48.2,
+      "key": "8",
+      "popPct": 58.2
+     },
+     {
+      "areaPct": 17.8,
+      "key": "9",
+      "popPct": 21.5
+     },
+     {
+      "areaPct": 19.0,
+      "key": "5",
+      "popPct": 10.3
+     },
+     {
+      "areaPct": 14.6,
+      "key": "18",
+      "popPct": 8.8
+     },
+     {
+      "areaPct": 0.5,
+      "key": "4",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "LaPorte",
+      "popPct": 47.6
+     },
+     {
+      "county": "Marshall",
+      "popPct": 27.8
+     },
+     {
+      "county": "Starke",
+      "popPct": 17.3
+     },
+     {
+      "county": "St. Joseph",
+      "popPct": 7.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Marshall",
+      "popPct": 27.8
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 134114,
+    "pres2020New": 31.5,
+    "pres2020Old": 16.6,
+    "retainedAreaPct": 48.2,
+    "retainedPopPct": 58.2,
+    "text": "Kept 58% of its population from the 2016\u20132020 SD-8; gained the rest from the old SD-9 (22%), the old SD-5 (10%), the old SD-18 (9%) and 1 more. Counties: gained Marshall (28%). 2020 presidential margin R+16.6 on the 2016\u20132020 lines \u2192 R+31.5 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 78.2,
+      "key": "9",
+      "popPct": 62.0
+     },
+     {
+      "areaPct": 1.5,
+      "key": "10",
+      "popPct": 18.0
+     },
+     {
+      "areaPct": 19.1,
+      "key": "12",
+      "popPct": 12.6
+     },
+     {
+      "areaPct": 1.2,
+      "key": "11",
+      "popPct": 7.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kosciusko",
+      "popPct": 42.9
+     },
+     {
+      "county": "St. Joseph",
+      "popPct": 36.6
+     },
+     {
+      "county": "Elkhart",
+      "popPct": 13.8
+     },
+     {
+      "county": "Marshall",
+      "popPct": 6.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 133892,
+    "pres2020New": 35.8,
+    "pres2020Old": 42.9,
+    "retainedAreaPct": 78.2,
+    "retainedPopPct": 62.0,
+    "text": "Kept 62% of its population from the 2016\u20132020 SD-9; gained the rest from the old SD-10 (18%), the old SD-12 (13%), the old SD-11 (7%). Spans Kosciusko, St. Joseph, Elkhart, Marshall counties. 2020 presidential margin R+42.9 on the 2016\u20132020 lines \u2192 R+35.8 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

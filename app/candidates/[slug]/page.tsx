@@ -8,9 +8,16 @@ import BackLink from "@/components/BackLink";
 import { pastElectionHref } from "@/lib/pastElections";
 import { warForCandidate, type WarSlim } from "@/lib/modelSlices";
 import { WAR_BAD, WAR_GOOD, careerWar } from "@/components/tpl/format";
+import { findStateLegCandidate, getStateLegCandidatePage, type StateLegCandidatePage, type StateLegRace } from "@/lib/stateLegCandidateIndex";
+import { StateLegCurrentRow, StateLegPastRow, type LegProjection, type RaceMoney } from "@/components/candidates/StateLegRaceRow";
+import { stateLegMoney } from "@/lib/stateLegMoney";
+import { projectDistrict } from "@/lib/stateLegForecast";
+import { stateLegDistricts } from "@/data/stateLegDistricts";
 
-// 1,077 candidate pages: rendered on first request and cached until the next deploy rather than
-// prebuilt (they were ~45% of the build's pages), the same arrangement as the county pages.
+// ~1,100 federal and ~38,000 state legislative candidate pages: rendered on first request and
+// cached until the next deploy rather than prebuilt, the same arrangement as the county pages.
+// A person with both records (a state legislator who ran for Congress) gets one page: the two
+// indexes are joined on name and state, and either index's slug resolves to it.
 export const dynamicParams = true;
 
 const GENERAL_ELECTION = "November 3, 2026";
@@ -19,11 +26,45 @@ export async function generateStaticParams() {
   return [];
 }
 
+/** Both records behind one slug, in either order. */
+function resolve(slug: string): { federal: ReturnType<typeof getCandidatePage>; leg: StateLegCandidatePage | null } {
+  const federal = getCandidatePage(slug);
+  let leg = getStateLegCandidatePage(slug);
+  if (federal && !leg) leg = findStateLegCandidate(federal.name, federal.state);
+  let fed = federal;
+  if (leg && !fed) {
+    const f = getCandidatePage(candidateSlugOf(leg.name));
+    if (f && f.state === leg.stateName) fed = f;
+  }
+  return { federal: fed, leg };
+}
+const candidateSlugOf = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const candidate = getCandidatePage(slug);
-  if (!candidate) return { title: "Candidate Not Found" };
-  return { title: `${candidate.name} — Candidate Profile` };
+  const { federal, leg } = resolve(slug);
+  if (!federal && !leg) return { title: "Candidate Not Found" };
+  const name = federal?.name ?? leg!.name;
+  const canonical = federal ? `/candidates/${federal.slug}` : `/candidates/${leg!.slug}`;
+  return { title: `${name} — Candidate Profile`, alternates: { canonical } };
+}
+
+/** The candidate's own contributions in a race, and everyone else's, from the state filings. */
+function legMoney(race: StateLegRace, name: string): RaceMoney {
+  const m = stateLegMoney(race.abbr, race.chamber, race.district, race.year);
+  if (!m) return null;
+  const mine = m.candidates.find((c) => c.name === name) ?? m.candidates.find((c) => c.matched && c.party === race.party && race.others.every((o) => o.name !== c.name));
+  if (!mine?.matched) return null;
+  const others = m.candidates.filter((c) => c !== mine && c.matched && c.contributions != null);
+  return { contributions: mine.contributions, opponents: others.length ? others.reduce((s, c) => s + (c.contributions ?? 0), 0) : null, dataThrough: m.dataThrough, source: m.source };
+}
+
+function legProjection(race: StateLegRace): LegProjection {
+  if (!race.isCurrent) return null;
+  const d = stateLegDistricts[race.abbr]?.[race.chamber]?.find((x) => x.number === race.district);
+  if (!d) return null;
+  const p = projectDistrict(race.abbr, race.chamber, d);
+  return { margin: p.margin, rating: p.rating, pD: p.pD, contest: p.contest };
 }
 
 function partyLabel(party: "D" | "R" | "I") {
@@ -91,28 +132,53 @@ export default async function CandidatePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const candidate = getCandidatePage(slug);
-  if (!candidate) notFound();
+  const { federal, leg } = resolve(slug);
+  if (!federal && !leg) notFound();
 
+  // The federal record leads the profile where there is one; the state legislative record fills in.
+  const legParty: "D" | "R" | "I" = leg?.party === "D" || leg?.party === "R" ? leg.party : "I";
+  const candidate = federal ?? {
+    name: leg!.name, slug: leg!.slug, party: legParty, tab: "house" as const, state: leg!.stateName,
+    currentPosition: leg!.position, currentRace: undefined, history: [],
+  };
   const photo = candidatePhotos[candidate.name] ?? null;
   const accent = partyAccent(candidate.party);
   const subtle = partySubtle(candidate.party);
 
-  const backHref = candidate.currentRace?.racePath ?? (candidate.tab === "president" ? "/analysis/popular-vote" : `/${candidate.tab}`);
+  const legCurrent = (leg?.races ?? []).filter((r) => r.isCurrent);
+  const legPast = (leg?.races ?? []).filter((r) => !r.isCurrent);
+  const legPositionHref = leg?.positionHref ?? legCurrent[0]?.href ?? legPast[0]?.href;
+  // The race's own spelling of this person (the finance join is keyed on the atlas's list for that year).
+  const legName = (race: StateLegRace) => {
+    const m = stateLegMoney(race.abbr, race.chamber, race.district, race.year);
+    return m?.candidates.find((c) => leg!.spellings.includes(c.name))?.name ?? leg!.name;
+  };
+
+  const backHref = candidate.currentRace?.racePath ?? (federal ? (candidate.tab === "president" ? "/analysis/popular-vote" : `/${candidate.tab}`) : legPositionHref ?? "/legislatures");
   const raceTypeSuffix = candidate.tab === "house" ? " House" : candidate.tab === "senate" ? " Senate" : candidate.tab === "governor" ? " Governor" : " President";
   const backLabel =
     candidate.currentRace
       ? candidate.currentRace.raceName + raceTypeSuffix
-      : candidate.tab === "house" ? "House Races" : candidate.tab === "senate" ? "Senate Races" : candidate.tab === "governor" ? "Governor Races" : "Popular Vote";
+      : federal
+        ? candidate.tab === "house" ? "House Races" : candidate.tab === "senate" ? "Senate Races" : candidate.tab === "governor" ? "Governor Races" : "Popular Vote"
+        : (legCurrent[0] ?? legPast[0]) ? `${leg!.stateName} ${(legCurrent[0] ?? legPast[0]).chamberLabel}` : "State Legislatures";
 
   const currentEntries = candidate.history.filter(h => h.isCurrent);
   const pastEntries = candidate.history.filter(h => !h.isCurrent);
   const otherCurrentEntries = currentEntries.filter(e => e.raceId !== candidate.currentRace?.id);
 
-  const wins = pastEntries.filter(wonEntry).length;
-  const losses = pastEntries.length - wins;
+  const wins = pastEntries.filter(wonEntry).length + (leg?.wins ?? 0);
+  const losses = (pastEntries.length - pastEntries.filter(wonEntry).length) + (leg?.losses ?? 0);
 
-  const positionLabel = candidate.currentPosition ? candidate.currentPosition.split(" · ")[0] : null;
+  const positionLabel = candidate.currentPosition ? candidate.currentPosition.split(" · ")[0] : leg?.position ? leg.position.split(" · ")[0] : null;
+  // A state legislator's seat is named next to the title and links to the district.
+  const positionDetail = !federal?.currentPosition && leg?.position ? leg.position.split(" · ")[1] : null;
+
+  // One timeline: federal and state legislative races interleaved, newest first.
+  type Item = { year: number; order: number; node: React.ReactNode };
+  const legProjections = new Map(legCurrent.map((r) => [r, legProjection(r)]));
+  const hasCurrent = !!candidate.currentRace || legCurrent.length > 0;
+  const totalPast = pastEntries.length + legPast.length;
 
   // Wins Above Replacement, the same numbers as the TPL tab's candidate record (/model/candidates).
   const war = warForCandidate(candidate.name);
@@ -167,13 +233,13 @@ export default async function CandidatePage({
 
               {positionLabel && (
                 <p className="text-[13.5px] font-medium mt-1" style={{ color: "var(--app-text-muted)" }}>
-                  {positionLabel}
+                  {positionDetail && legPositionHref ? <a href={legPositionHref} className="hover:underline">{positionLabel} &middot; {positionDetail}</a> : positionLabel}
                 </p>
               )}
 
               <div className="flex items-center gap-1.5 flex-wrap mt-2.5">
                 <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full" style={{ background: subtle, color: accent }}>
-                  {partyLabel(candidate.party)}
+                  {leg && !federal && leg.party === "O" && legCurrent[0]?.partyLabel ? legCurrent[0].partyLabel.replace(/ Party$/, "") : partyLabel(candidate.party)}
                 </span>
                 {candidate.state && (
                   <span
@@ -185,6 +251,12 @@ export default async function CandidatePage({
                 )}
               </div>
 
+              {leg?.outgoing2026 && (
+                <p className="text-[12px] mt-2" style={{ color: "var(--app-text-muted)" }}>
+                  Not seeking re-election to <a href={leg.outgoing2026.href} className="hover:underline font-semibold">{leg.stateName} {leg.outgoing2026.districtShort}</a> in 2026: {leg.outgoing2026.reason || leg.outgoing2026.category}.
+                </p>
+              )}
+
               <div className="mt-4">
                 <div className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-very-muted)" }}>
                   Race Record
@@ -192,6 +264,11 @@ export default async function CandidatePage({
                 <div className="text-[1.15rem] font-extrabold tabular-nums mt-0.5">
                   {wins}W&ndash;{losses}L
                 </div>
+                {leg && legPast.length > 0 && (
+                  <div className="text-[11px] mt-0.5" style={{ color: "var(--app-text-very-muted)" }}>
+                    {legPast.length} state legislative general{legPast.length === 1 ? "" : "s"} on file{legPast.some((r) => r.winner == null) ? ", some without a marked winner" : ""}
+                  </div>
+                )}
               </div>
 
               {lastWar && (
@@ -219,26 +296,27 @@ export default async function CandidatePage({
             {/* Race column */}
             <div className="flex flex-col gap-9">
 
-              {candidate.currentRace && (() => {
-                const { bg, text } = getRatingColors(candidate.currentRace.rating);
-                const opponent = candidate.currentRace.opponent;
+              {hasCurrent && (() => {
+                const { bg, text } = candidate.currentRace ? getRatingColors(candidate.currentRace.rating) : { bg: "", text: "" };
+                const opponent = candidate.currentRace?.opponent;
                 const opponentAccent = opponent ? partyAccent(opponent.party) : null;
+                const nCurrent = currentEntries.length + legCurrent.length;
                 return (
                   <section>
                     <div className="flex flex-col sm:flex-row sm:items-baseline gap-1.5 sm:gap-3 pb-3 mb-1" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
                       <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>
-                        {currentEntries.length > 1 ? "2026 Races" : "2026 Race"}
+                        {nCurrent > 1 ? "2026 Races" : "2026 Race"}
                       </h2>
                       <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
                         General &middot; {GENERAL_ELECTION}
                       </span>
                     </div>
 
-                    <a href={candidate.currentRace.racePath} className="block py-5" style={{ borderBottom: otherCurrentEntries.length > 0 ? "1px solid var(--app-border)" : "none" }}>
+                    {candidate.currentRace && <a href={candidate.currentRace.racePath} className="block py-5" style={{ borderBottom: otherCurrentEntries.length > 0 || legCurrent.length > 0 ? "1px solid var(--app-border)" : "none" }}>
                       <div className="flex items-start justify-between gap-4">
                         <div className="min-w-0">
                           <div className="text-[11px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
-                            {candidate.currentRace.raceName} &middot; {raceTypeLabel(candidate.currentRace.raceType)}
+                            {candidate.currentRace!.raceName} &middot; {raceTypeLabel(candidate.currentRace!.raceType)}
                           </div>
                           <div className="flex flex-col gap-0.5">
                             {opponent && (
@@ -248,31 +326,31 @@ export default async function CandidatePage({
                             )}
                             <span className="truncate" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: accent }}>
                               {candidate.name}
-                              {candidate.currentRace.incumbent && (
+                              {candidate.currentRace!.incumbent && (
                                 <span className="text-[13px] font-semibold" style={{ color: "var(--app-text-muted)" }}> Inc.</span>
                               )}
                             </span>
                           </div>
                         </div>
                         <div className="text-right shrink-0">
-                          <div className="tabular-nums font-extrabold" style={{ fontSize: "1.6rem", lineHeight: 1, color: marginColor(candidate.currentRace.margin) }}>
-                            {fmtMargin(candidate.currentRace.margin)}
+                          <div className="tabular-nums font-extrabold" style={{ fontSize: "1.6rem", lineHeight: 1, color: marginColor(candidate.currentRace!.margin) }}>
+                            {fmtMargin(candidate.currentRace!.margin)}
                           </div>
                           <div className="mt-1.5">
                             <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full" style={{ background: bg, color: text }}>
-                              {candidate.currentRace.rating}
+                              {candidate.currentRace!.rating}
                             </span>
                           </div>
                         </div>
                       </div>
-                    </a>
+                    </a>}
 
                     {otherCurrentEntries.map((entry, i) => (
                       <a
                         key={i}
                         href={entry.racePath}
                         className="flex items-center justify-between gap-3 py-3.5"
-                        style={{ borderBottom: i < otherCurrentEntries.length - 1 ? "1px solid var(--app-border)" : "none" }}
+                        style={{ borderBottom: i < otherCurrentEntries.length - 1 || legCurrent.length > 0 ? "1px solid var(--app-border)" : "none" }}
                       >
                         <div className="flex items-center gap-2 min-w-0">
                           <span className="text-sm font-semibold hover:underline truncate" style={{ color: "var(--app-text-primary)" }}>
@@ -289,6 +367,9 @@ export default async function CandidatePage({
                         </span>
                       </a>
                     ))}
+                    {legCurrent.map((race, i) => (
+                      <StateLegCurrentRow key={`${race.chamber}-${race.district}-${i}`} race={race} projection={legProjections.get(race) ?? null} money={legMoney(race, legName(race))} last={i === legCurrent.length - 1} />
+                    ))}
                   </section>
                 );
               })()}
@@ -299,16 +380,33 @@ export default async function CandidatePage({
                     Electoral History
                   </h2>
                   <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-                    {pastEntries.length} prior race{pastEntries.length !== 1 ? "s" : ""} on file
+                    {totalPast} prior race{totalPast !== 1 ? "s" : ""} on file
                   </span>
                 </div>
 
-                {pastEntries.length === 0 ? (
+                {totalPast === 0 ? (
                   <div className="text-sm italic py-5" style={{ color: "var(--app-text-muted)" }}>
                     No Recent Electoral History
                   </div>
                 ) : (
-                  pastEntries.map((entry, i) => {
+                  ([
+                    ...pastEntries.map((entry, i): Item => ({ year: entry.year, order: 0, node: renderFederal(entry, i) })),
+                    ...legPast.map((race, i): Item => ({ year: race.year, order: 1, node: <StateLegPastRow key={`leg-${i}`} race={race} money={legMoney(race, legName(race))} last /> })),
+                  ] as Item[]).sort((a, b) => b.year - a.year || a.order - b.order).map((item, i, all) => (
+                    <div key={i} style={{ borderBottom: i < all.length - 1 ? "1px solid var(--app-border)" : "none" }}>{item.node}</div>
+                  ))
+                )}
+              </section>
+
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  );
+
+  function renderFederal(entry: CandidateHistoryEntry, i: number) {
+    return (() => {
                     const entryAccent = partyAccent(entry.party);
                     const oppAccent = partyAccent(entry.oppParty);
                     const won = wonEntry(entry);
@@ -323,7 +421,7 @@ export default async function CandidatePage({
                     const ev = entry.side === "dem" ? entry.demEV : entry.repEV;
                     const entryWar = warRowsFor(war, entry);
                     return (
-                      <div key={i} className="py-5" style={{ borderBottom: i < pastEntries.length - 1 ? "1px solid var(--app-border)" : "none" }}>
+                      <div key={i} className="py-5">
                         <div className="flex items-start justify-between gap-4 mb-2.5">
                           <div className="flex items-center gap-2 min-w-0 flex-wrap">
                             <span className="text-sm font-bold tabular-nums shrink-0" style={{ color: "var(--app-text-primary)" }}>
@@ -393,14 +491,6 @@ export default async function CandidatePage({
                         })()}
                       </div>
                     );
-                  })
-                )}
-              </section>
-
-            </div>
-          </div>
-        </main>
-      </div>
-    </div>
-  );
+    })();
+  }
 }

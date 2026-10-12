@@ -1,0 +1,310 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 New York State Assembly election",
+   "senate": "2026 New York State Senate election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "102": [
+   {
+    "name": "Chris Tague",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "running for State Senate"
+   }
+  ],
+  "117": [
+   {
+    "name": "Ken Blankenbush",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "118": [
+   {
+    "name": "Robert Smullen",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "running for the United States House of Representatives"
+   }
+  ],
+  "119": [
+   {
+    "name": "Marianne Buttenschon",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "12": [
+   {
+    "name": "Keith Brown",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "120": [
+   {
+    "name": "William A. Barclay",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "123": [
+   {
+    "name": "Donna Lupardo",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "129": [
+   {
+    "name": "Bill Magnarelli",
+    "party": "D",
+    "category": "lost primary",
+    "reason": "lost renomination to Maurice Brown"
+   }
+  ],
+  "130": [
+   {
+    "name": "Brian Manktelow",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "131": [
+   {
+    "name": "Jeff Gallahan",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "14": [
+   {
+    "name": "David McDonough",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "141": [
+   {
+    "name": "Crystal Peoples-Stokes",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "145": [
+   {
+    "name": "Angelo Morinello",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "149": [
+   {
+    "name": "Jonathan Rivera",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "running for State Senate"
+   }
+  ],
+  "15": [
+   {
+    "name": "Jake Blumencranz",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "running for State Senate"
+   }
+  ],
+  "16": [
+   {
+    "name": "Daniel Norber",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "23": [
+   {
+    "name": "Stacey Pheffer Amato",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "30": [
+   {
+    "name": "Steven Raga",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "running for State Senate"
+   }
+  ],
+  "32": [
+   {
+    "name": "Vivian E. Cook",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "34": [
+   {
+    "name": "Jessica González-Rojas",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "running for State Senate"
+   }
+  ],
+  "37": [
+   {
+    "name": "Claire Valdez",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "running for the United States House of Representatives"
+   }
+  ],
+  "38": [
+   {
+    "name": "Jenifer Rajkumar",
+    "party": "D",
+    "category": "lost primary",
+    "reason": "lost renomination to David Orkin"
+   }
+  ],
+  "54": [
+   {
+    "name": "Erik Dilan",
+    "party": "D",
+    "category": "lost primary",
+    "reason": "lost renomination to Christian Celeste Tate"
+   }
+  ],
+  "56": [
+   {
+    "name": "Stefani Zinerman",
+    "party": "D",
+    "category": "lost primary",
+    "reason": "lost renomination to Eon Huntley"
+   }
+  ],
+  "65": [
+   {
+    "name": "Grace Lee",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "running for State Senate"
+   }
+  ],
+  "66": [
+   {
+    "name": "Deborah J. Glick",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "68": [
+   {
+    "name": "Eddie Gibbs",
+    "party": "D",
+    "category": "lost primary",
+    "reason": "lost renomination to Diana Ayala"
+   }
+  ],
+  "69": [
+   {
+    "name": "Micah Lasher",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "running for the United States House of Representatives"
+   }
+  ],
+  "7": [
+   {
+    "name": "Jarett Gandolfo",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "running for State Senate"
+   }
+  ],
+  "73": [
+   {
+    "name": "Alex Bores",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "running for the United States House of Representatives"
+   }
+  ],
+  "90": [
+   {
+    "name": "Nader Sayegh",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ]
+ },
+ "senate": {
+  "13": [
+   {
+    "name": "Jessica Ramos",
+    "party": "D",
+    "category": "lost primary",
+    "reason": "lost renomination to Jessica González-Rojas"
+   }
+  ],
+  "27": [
+   {
+    "name": "Brian P. Kavanagh",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "51": [
+   {
+    "name": "Peter Oberacker",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for the U.S. House of Representatives"
+   }
+  ],
+  "61": [
+   {
+    "name": "Jeremy Zellner",
+    "party": "D",
+    "category": "lost primary",
+    "reason": "lost renomination to Jonathan Rivera"
+   }
+  ],
+  "7": [
+   {
+    "name": "Jack Martins",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "8": [
+   {
+    "name": "Alexis Weik",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ]
+ }
+}

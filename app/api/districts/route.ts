@@ -1,3 +1,4 @@
+import { districtHash } from "@/lib/stateLegAtlas";
 import { NextRequest, NextResponse } from "next/server";
 import { unstable_cache } from "next/cache";
 import { statesData } from "@/data/statesData";
@@ -53,9 +54,10 @@ function senateHref(abbr: string, name: string): string | null {
 
 /** A chamber's seats for one address — a district can elect more than one member, and in New
  *  Hampshire an address is also covered by a floterial district that elects more on top. */
-function chamberRows(districts: StateLegDistrict[], chamberLabel: string, href: string | null): OfficeRowData[] {
+function chamberRows(districts: StateLegDistrict[], chamberLabel: string, hrefFor: (key: string) => string): OfficeRowData[] {
   const rows: OfficeRowData[] = [];
   for (const d of districts) {
+    const href = hrefFor(d.number);
     const name = (d.label ?? d.number)
       .replace(/^(State\s+)?(House|Senate|Legislative|Delegate|Assembly)\s+(Sub)?District\s+/i, "District ")
       .replace(/\s+(State\s+(House|Senate)\s+)?(Senatorial\s+)?District$/i, "");
@@ -94,7 +96,8 @@ function resolveLookup(geo: Record<string, Record<string, string>[]>): AddressLo
   const senateDistricts = findRepresentingDistricts(abbr, "senate", sldu?.GEOID ?? null, sldu?.BASENAME ?? null);
   const houseDistricts = findRepresentingDistricts(abbr, "house", sldl?.GEOID ?? null, sldl?.BASENAME ?? null);
   const isUnicameral = abbr === "NE";
-  const legislatureHref = (chamber: "house" | "senate") => `/states/${stateMatch.id}/legislature#${chamber}`;
+  // Straight to the district's view in the chamber atlas.
+  const legislatureHref = (chamber: "house" | "senate") => (key: string) => `/states/${stateMatch.id}/legislature/${chamber}${districtHash(chamber, key)}`;
 
   const statewideData = officeholders[abbr];
   const statewide: OfficeRowData[] = [];

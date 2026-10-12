@@ -1,0 +1,2968 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 94.2,
+      "key": "1",
+      "popPct": 71.8
+     },
+     {
+      "areaPct": 5.8,
+      "key": "6",
+      "popPct": 28.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Yavapai",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Maricopa",
+      "popPct": 31.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 236564,
+    "pres2020New": 29.2,
+    "pres2020Old": 35.1,
+    "retainedAreaPct": 94.2,
+    "retainedPopPct": 71.8,
+    "text": "Kept 72% of its population from the 2016\u20132020 HD-1; gained the rest from the old HD-6 (28%). Counties: lost Maricopa. 2020 presidential margin R+35.1 on the 2016\u20132020 lines \u2192 R+29.2 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 61.8,
+      "key": "25",
+      "popPct": 55.0
+     },
+     {
+      "areaPct": 37.6,
+      "key": "16",
+      "popPct": 44.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 95.9
+     },
+     {
+      "county": "Pinal",
+      "popPct": 4.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maricopa",
+      "popPct": 95.9
+     },
+     {
+      "county": "Pinal",
+      "popPct": 4.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pima",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 233196,
+    "pres2020New": 20.4,
+    "pres2020Old": -18.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-10; it draws from the old HD-25 (55%), the old HD-16 (45%). Counties: gained Maricopa (96%), Pinal (4%); lost Pima. 2020 presidential margin D+18.4 on the 2016\u20132020 lines \u2192 R+20.4 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 92.9,
+      "key": "27",
+      "popPct": 89.9
+     },
+     {
+      "areaPct": 6.1,
+      "key": "19",
+      "popPct": 6.2
+     },
+     {
+      "areaPct": 0.9,
+      "key": "26",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pima",
+      "popPct": 55.4
+     },
+     {
+      "county": "Pinal",
+      "popPct": 44.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 239191,
+    "pres2020New": -51.6,
+    "pres2020Old": 7.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-11; it draws from the old HD-27 (90%), the old HD-19 (6%), the old HD-26 (4%). Counties: gained Maricopa (100%); lost Pima, Pinal. 2020 presidential margin R+7.6 on the 2016\u20132020 lines \u2192 D+51.6 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 39.2,
+      "key": "18",
+      "popPct": 79.2
+     },
+     {
+      "areaPct": 5.1,
+      "key": "17",
+      "popPct": 14.7
+     },
+     {
+      "areaPct": 54.8,
+      "key": "27",
+      "popPct": 3.1
+     },
+     {
+      "areaPct": 0.8,
+      "key": "26",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 236999,
+    "pres2020New": -18.5,
+    "pres2020Old": 18.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-12; it draws from the old HD-18 (79%), the old HD-17 (15%), the old HD-27 (3%) and 1 more. Entirely in Maricopa County. 2020 presidential margin R+18.8 on the 2016\u20132020 lines \u2192 D+18.5 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 91.5,
+      "key": "17",
+      "popPct": 90.2
+     },
+     {
+      "areaPct": 5.2,
+      "key": "12",
+      "popPct": 6.6
+     },
+     {
+      "areaPct": 3.3,
+      "key": "18",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Yuma",
+      "popPct": 31.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 236214,
+    "pres2020New": -3.1,
+    "pres2020Old": 21.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-13; it draws from the old HD-17 (90%), the old HD-12 (7%), the old HD-18 (3%). Counties: lost Yuma. 2020 presidential margin R+21.7 on the 2016\u20132020 lines \u2192 D+3.1 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 95.8,
+      "key": "12",
+      "popPct": 95.3
+     },
+     {
+      "areaPct": 4.1,
+      "key": "17",
+      "popPct": 4.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cochise",
+      "popPct": 55.8
+     },
+     {
+      "county": "Pima",
+      "popPct": 24.9
+     },
+     {
+      "county": "Graham",
+      "popPct": 15.1
+     },
+     {
+      "county": "Greenlee",
+      "popPct": 4.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 243747,
+    "pres2020New": 15.0,
+    "pres2020Old": 24.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-14; it draws from the old HD-12 (95%), the old HD-17 (5%). Counties: gained Maricopa (100%); lost Cochise, Pima, Graham, Greenlee. 2020 presidential margin R+24.3 on the 2016\u20132020 lines \u2192 R+15.0 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 32.5,
+      "key": "16",
+      "popPct": 48.9
+     },
+     {
+      "areaPct": 40.0,
+      "key": "8",
+      "popPct": 26.9
+     },
+     {
+      "areaPct": 27.5,
+      "key": "12",
+      "popPct": 24.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 55.4
+     },
+     {
+      "county": "Pinal",
+      "popPct": 44.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pinal",
+      "popPct": 44.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 237526,
+    "pres2020New": 27.0,
+    "pres2020Old": 10.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-15; it draws from the old HD-16 (49%), the old HD-8 (27%), the old HD-12 (24%). Counties: gained Pinal (45%). 2020 presidential margin R+10.6 on the 2016\u20132020 lines \u2192 R+27.0 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 47.9,
+      "key": "11",
+      "popPct": 47.1
+     },
+     {
+      "areaPct": 48.2,
+      "key": "8",
+      "popPct": 41.8
+     },
+     {
+      "areaPct": 1.3,
+      "key": "3",
+      "popPct": 9.1
+     },
+     {
+      "areaPct": 2.7,
+      "key": "27",
+      "popPct": 1.4
+     },
+     {
+      "areaPct": 0.0,
+      "key": "9",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pinal",
+      "popPct": 81.9
+     },
+     {
+      "county": "Pima",
+      "popPct": 16.7
+     },
+     {
+      "county": "Maricopa",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pima",
+      "popPct": 16.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 246055,
+    "pres2020New": 3.8,
+    "pres2020Old": 23.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-16; it draws from the old HD-11 (47%), the old HD-8 (42%), the old HD-3 (9%) and 2 more. Counties: gained Pima (17%). 2020 presidential margin R+23.6 on the 2016\u20132020 lines \u2192 R+3.8 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 42.0,
+      "key": "11",
+      "popPct": 55.6
+     },
+     {
+      "areaPct": 5.3,
+      "key": "10",
+      "popPct": 30.2
+     },
+     {
+      "areaPct": 48.5,
+      "key": "14",
+      "popPct": 12.8
+     },
+     {
+      "areaPct": 0.1,
+      "key": "9",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pima",
+      "popPct": 94.4
+     },
+     {
+      "county": "Pinal",
+      "popPct": 5.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pima",
+      "popPct": 94.4
+     },
+     {
+      "county": "Pinal",
+      "popPct": 5.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Maricopa",
+      "popPct": 99.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 242051,
+    "pres2020New": 4.3,
+    "pres2020Old": -3.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-17; it draws from the old HD-11 (56%), the old HD-10 (30%), the old HD-14 (13%) and 1 more. Counties: gained Pima (94%), Pinal (6%); lost Maricopa. 2020 presidential margin D+3.7 on the 2016\u20132020 lines \u2192 R+4.3 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 81.9,
+      "key": "9",
+      "popPct": 68.4
+     },
+     {
+      "areaPct": 17.8,
+      "key": "10",
+      "popPct": 31.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pima",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pima",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 240531,
+    "pres2020New": -24.2,
+    "pres2020Old": -17.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-18; it draws from the old HD-9 (68%), the old HD-10 (32%). Counties: gained Pima (100%); lost Maricopa. 2020 presidential margin D+17.7 on the 2016\u20132020 lines \u2192 D+24.2 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 95.7,
+      "key": "14",
+      "popPct": 84.8
+     },
+     {
+      "areaPct": 4.3,
+      "key": "2",
+      "popPct": 15.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cochise",
+      "popPct": 53.7
+     },
+     {
+      "county": "Pima",
+      "popPct": 25.0
+     },
+     {
+      "county": "Graham",
+      "popPct": 15.4
+     },
+     {
+      "county": "Greenlee",
+      "popPct": 4.4
+     },
+     {
+      "county": "Santa Cruz",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cochise",
+      "popPct": 53.7
+     },
+     {
+      "county": "Pima",
+      "popPct": 25.0
+     },
+     {
+      "county": "Graham",
+      "popPct": 15.4
+     },
+     {
+      "county": "Greenlee",
+      "popPct": 4.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 219268,
+    "pres2020New": 22.9,
+    "pres2020Old": -39.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-19; it draws from the old HD-14 (85%), the old HD-2 (15%). Counties: gained Cochise (54%), Pima (25%), Graham (15%) and 1 more; lost Maricopa. 2020 presidential margin D+39.4 on the 2016\u20132020 lines \u2192 R+22.9 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 27.8,
+      "key": "20",
+      "popPct": 50.5
+     },
+     {
+      "areaPct": 62.9,
+      "key": "15",
+      "popPct": 33.7
+     },
+     {
+      "areaPct": 9.3,
+      "key": "28",
+      "popPct": 15.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pima",
+      "popPct": 78.2
+     },
+     {
+      "county": "Santa Cruz",
+      "popPct": 21.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 237674,
+    "pres2020New": 1.8,
+    "pres2020Old": -22.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-2; it draws from the old HD-20 (50%), the old HD-15 (34%), the old HD-28 (16%). Counties: gained Maricopa (100%); lost Pima, Santa Cruz. 2020 presidential margin D+22.1 on the 2016\u20132020 lines \u2192 R+1.8 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 80.3,
+      "key": "3",
+      "popPct": 68.6
+     },
+     {
+      "areaPct": 12.9,
+      "key": "9",
+      "popPct": 21.8
+     },
+     {
+      "areaPct": 3.5,
+      "key": "4",
+      "popPct": 4.6
+     },
+     {
+      "areaPct": 2.5,
+      "key": "2",
+      "popPct": 4.0
+     },
+     {
+      "areaPct": 0.7,
+      "key": "10",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pima",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pima",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 238524,
+    "pres2020New": -50.7,
+    "pres2020Old": 0.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-20; it draws from the old HD-3 (69%), the old HD-9 (22%), the old HD-4 (5%) and 2 more. Counties: gained Pima (100%); lost Maricopa. 2020 presidential margin R+0.3 on the 2016\u20132020 lines \u2192 D+50.7 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 85.1,
+      "key": "2",
+      "popPct": 69.9
+     },
+     {
+      "areaPct": 0.7,
+      "key": "10",
+      "popPct": 26.8
+     },
+     {
+      "areaPct": 13.5,
+      "key": "14",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pima",
+      "popPct": 79.3
+     },
+     {
+      "county": "Santa Cruz",
+      "popPct": 17.7
+     },
+     {
+      "county": "Cochise",
+      "popPct": 3.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pima",
+      "popPct": 79.3
+     },
+     {
+      "county": "Santa Cruz",
+      "popPct": 17.7
+     },
+     {
+      "county": "Cochise",
+      "popPct": 3.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 251353,
+    "pres2020New": -27.3,
+    "pres2020Old": 9.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-21; it draws from the old HD-2 (70%), the old HD-10 (27%), the old HD-14 (3%). Counties: gained Pima (79%), Santa Cruz (18%), Cochise (3%); lost Maricopa. 2020 presidential margin R+9.0 on the 2016\u20132020 lines \u2192 D+27.3 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 86.7,
+      "key": "19",
+      "popPct": 82.5
+     },
+     {
+      "areaPct": 10.8,
+      "key": "29",
+      "popPct": 17.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 243434,
+    "pres2020New": -34.7,
+    "pres2020Old": 23.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-22; it draws from the old HD-19 (82%), the old HD-29 (17%). Entirely in Maricopa County. 2020 presidential margin R+23.9 on the 2016\u20132020 lines \u2192 D+34.7 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 97.3,
+      "key": "4",
+      "popPct": 81.7
+     },
+     {
+      "areaPct": 0.3,
+      "key": "3",
+      "popPct": 9.2
+     },
+     {
+      "areaPct": 0.7,
+      "key": "13",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Yuma",
+      "popPct": 52.3
+     },
+     {
+      "county": "Maricopa",
+      "popPct": 30.3
+     },
+     {
+      "county": "Pima",
+      "popPct": 17.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Yuma",
+      "popPct": 52.3
+     },
+     {
+      "county": "Pima",
+      "popPct": 17.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 236925,
+    "pres2020New": -12.8,
+    "pres2020Old": 9.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-23; it draws from the old HD-4 (82%), the old HD-3 (9%), the old HD-13 (9%). Counties: gained Yuma (52%), Pima (17%). 2020 presidential margin R+9.2 on the 2016\u20132020 lines \u2192 D+12.8 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 56.3,
+      "key": "29",
+      "popPct": 60.9
+     },
+     {
+      "areaPct": 19.5,
+      "key": "30",
+      "popPct": 18.8
+     },
+     {
+      "areaPct": 12.6,
+      "key": "19",
+      "popPct": 10.9
+     },
+     {
+      "areaPct": 11.6,
+      "key": "20",
+      "popPct": 9.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 233966,
+    "pres2020New": -32.1,
+    "pres2020Old": -42.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-24; it draws from the old HD-29 (61%), the old HD-30 (19%), the old HD-19 (11%) and 1 more. Entirely in Maricopa County. 2020 presidential margin D+42.7 on the 2016\u20132020 lines \u2192 D+32.1 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 84.6,
+      "key": "13",
+      "popPct": 82.0
+     },
+     {
+      "areaPct": 0.2,
+      "key": "22",
+      "popPct": 11.0
+     },
+     {
+      "areaPct": 15.2,
+      "key": "4",
+      "popPct": 7.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 66.5
+     },
+     {
+      "county": "Yuma",
+      "popPct": 33.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Yuma",
+      "popPct": 33.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 238426,
+    "pres2020New": 24.0,
+    "pres2020Old": 15.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-25; it draws from the old HD-13 (82%), the old HD-22 (11%), the old HD-4 (7%). Counties: gained Yuma (34%). 2020 presidential margin R+15.9 on the 2016\u20132020 lines \u2192 R+24.0 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 74.9,
+      "key": "30",
+      "popPct": 78.2
+     },
+     {
+      "areaPct": 12.9,
+      "key": "29",
+      "popPct": 13.5
+     },
+     {
+      "areaPct": 5.4,
+      "key": "20",
+      "popPct": 4.4
+     },
+     {
+      "areaPct": 3.0,
+      "key": "24",
+      "popPct": 3.4
+     },
+     {
+      "areaPct": 3.7,
+      "key": "19",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 234880,
+    "pres2020New": -38.7,
+    "pres2020Old": -35.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-26; it draws from the old HD-30 (78%), the old HD-29 (14%), the old HD-20 (4%) and 2 more. Entirely in Maricopa County. 2020 presidential margin D+35.3 on the 2016\u20132020 lines \u2192 D+38.7 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 27.7,
+      "key": "20",
+      "popPct": 35.7
+     },
+     {
+      "areaPct": 30.2,
+      "key": "21",
+      "popPct": 32.0
+     },
+     {
+      "areaPct": 23.9,
+      "key": "22",
+      "popPct": 19.4
+     },
+     {
+      "areaPct": 9.7,
+      "key": "15",
+      "popPct": 6.7
+     },
+     {
+      "areaPct": 3.3,
+      "key": "28",
+      "popPct": 4.2
+     },
+     {
+      "areaPct": 5.1,
+      "key": "29",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 242672,
+    "pres2020New": 8.1,
+    "pres2020Old": -51.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-27; it draws from the old HD-20 (36%), the old HD-21 (32%), the old HD-22 (19%) and 3 more. Entirely in Maricopa County. 2020 presidential margin D+51.6 on the 2016\u20132020 lines \u2192 R+8.1 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 56.6,
+      "key": "22",
+      "popPct": 53.7
+     },
+     {
+      "areaPct": 7.1,
+      "key": "21",
+      "popPct": 28.0
+     },
+     {
+      "areaPct": 11.6,
+      "key": "15",
+      "popPct": 15.7
+     },
+     {
+      "areaPct": 24.8,
+      "key": "1",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 230218,
+    "pres2020New": 23.3,
+    "pres2020Old": -11.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-28; it draws from the old HD-22 (54%), the old HD-21 (28%), the old HD-15 (16%) and 1 more. Entirely in Maricopa County. 2020 presidential margin D+11.8 on the 2016\u20132020 lines \u2192 R+23.3 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 6.5,
+      "key": "21",
+      "popPct": 39.7
+     },
+     {
+      "areaPct": 33.8,
+      "key": "22",
+      "popPct": 31.7
+     },
+     {
+      "areaPct": 57.4,
+      "key": "13",
+      "popPct": 23.3
+     },
+     {
+      "areaPct": 2.3,
+      "key": "29",
+      "popPct": 5.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 241908,
+    "pres2020New": 13.1,
+    "pres2020Old": -35.5,
+    "retainedAreaPct": 2.3,
+    "retainedPopPct": 5.3,
+    "text": "A new footprint: only 5% of its population was in the 2016\u20132020 HD-29; it draws from the old HD-21 (40%), the old HD-22 (32%), the old HD-13 (23%). Entirely in Maricopa County. 2020 presidential margin D+35.5 on the 2016\u20132020 lines \u2192 R+13.1 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 80.3,
+      "key": "23",
+      "popPct": 57.0
+     },
+     {
+      "areaPct": 17.7,
+      "key": "1",
+      "popPct": 29.3
+     },
+     {
+      "areaPct": 2.0,
+      "key": "15",
+      "popPct": 13.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pima",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 240862,
+    "pres2020New": 20.9,
+    "pres2020Old": -46.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-3; it draws from the old HD-23 (57%), the old HD-1 (29%), the old HD-15 (14%). Counties: gained Maricopa (100%); lost Pima. 2020 presidential margin D+46.2 on the 2016\u20132020 lines \u2192 R+20.9 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 95.0,
+      "key": "5",
+      "popPct": 96.6
+     },
+     {
+      "areaPct": 5.0,
+      "key": "13",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mohave",
+      "popPct": 89.6
+     },
+     {
+      "county": "La Paz",
+      "popPct": 7.1
+     },
+     {
+      "county": "Maricopa",
+      "popPct": 3.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Mohave",
+      "popPct": 89.6
+     },
+     {
+      "county": "La Paz",
+      "popPct": 7.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 236093,
+    "pres2020New": 50.7,
+    "pres2020Old": -33.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-30; it draws from the old HD-5 (97%), the old HD-13 (3%). Counties: gained Mohave (90%), La Paz (7%). 2020 presidential margin D+33.4 on the 2016\u20132020 lines \u2192 R+50.7 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 44.9,
+      "key": "28",
+      "popPct": 36.6
+     },
+     {
+      "areaPct": 28.4,
+      "key": "15",
+      "popPct": 32.5
+     },
+     {
+      "areaPct": 26.2,
+      "key": "23",
+      "popPct": 29.9
+     },
+     {
+      "areaPct": 0.5,
+      "key": "24",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Yuma",
+      "popPct": 51.4
+     },
+     {
+      "county": "Pima",
+      "popPct": 13.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 241595,
+    "pres2020New": -0.8,
+    "pres2020Old": -13.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-4; it draws from the old HD-28 (37%), the old HD-15 (32%), the old HD-23 (30%) and 1 more. Counties: lost Yuma, Pima. 2020 presidential margin D+13.0 on the 2016\u20132020 lines \u2192 D+0.8 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 49.7,
+      "key": "24",
+      "popPct": 60.3
+     },
+     {
+      "areaPct": 47.0,
+      "key": "28",
+      "popPct": 36.1
+     },
+     {
+      "areaPct": 1.4,
+      "key": "27",
+      "popPct": 2.0
+     },
+     {
+      "areaPct": 1.9,
+      "key": "30",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Mohave",
+      "popPct": 92.7
+     },
+     {
+      "county": "La Paz",
+      "popPct": 7.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 238748,
+    "pres2020New": -39.5,
+    "pres2020Old": 50.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-5; it draws from the old HD-24 (60%), the old HD-28 (36%), the old HD-27 (2%) and 1 more. Counties: gained Maricopa (100%); lost Mohave, La Paz. 2020 presidential margin R+50.8 on the 2016\u20132020 lines \u2192 D+39.5 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 93.0,
+      "key": "7",
+      "popPct": 73.8
+     },
+     {
+      "areaPct": 6.9,
+      "key": "6",
+      "popPct": 26.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Coconino",
+      "popPct": 40.2
+     },
+     {
+      "county": "Apache",
+      "popPct": 29.9
+     },
+     {
+      "county": "Navajo",
+      "popPct": 23.7
+     },
+     {
+      "county": "Gila",
+      "popPct": 3.3
+     },
+     {
+      "county": "Graham",
+      "popPct": 2.1
+     },
+     {
+      "county": "Mohave",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Apache",
+      "popPct": 29.9
+     },
+     {
+      "county": "Graham",
+      "popPct": 2.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Yavapai",
+      "popPct": 28.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 221132,
+    "pres2020New": -33.2,
+    "pres2020Old": 8.3,
+    "retainedAreaPct": 6.9,
+    "retainedPopPct": 26.1,
+    "text": "A new footprint: only 26% of its population was in the 2016\u20132020 HD-6; it draws from the old HD-7 (74%). Counties: gained Apache (30%), Graham (2%); lost Yavapai. 2020 presidential margin R+8.3 on the 2016\u20132020 lines \u2192 D+33.2 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 65.5,
+      "key": "6",
+      "popPct": 43.2
+     },
+     {
+      "areaPct": 24.0,
+      "key": "8",
+      "popPct": 25.1
+     },
+     {
+      "areaPct": 0.9,
+      "key": "16",
+      "popPct": 19.1
+     },
+     {
+      "areaPct": 9.7,
+      "key": "7",
+      "popPct": 12.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pinal",
+      "popPct": 37.1
+     },
+     {
+      "county": "Coconino",
+      "popPct": 22.5
+     },
+     {
+      "county": "Navajo",
+      "popPct": 21.7
+     },
+     {
+      "county": "Gila",
+      "popPct": 18.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pinal",
+      "popPct": 37.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Apache",
+      "popPct": 34.0
+     },
+     {
+      "county": "Graham",
+      "popPct": 2.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 248685,
+    "pres2020New": 24.3,
+    "pres2020Old": -27.4,
+    "retainedAreaPct": 9.7,
+    "retainedPopPct": 12.6,
+    "text": "A new footprint: only 13% of its population was in the 2016\u20132020 HD-7; it draws from the old HD-6 (43%), the old HD-8 (25%), the old HD-16 (19%). Counties: gained Pinal (37%); lost Apache, Graham. 2020 presidential margin D+27.4 on the 2016\u20132020 lines \u2192 R+24.3 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 78.4,
+      "key": "26",
+      "popPct": 48.3
+     },
+     {
+      "areaPct": 9.6,
+      "key": "24",
+      "popPct": 28.1
+     },
+     {
+      "areaPct": 3.7,
+      "key": "23",
+      "popPct": 10.7
+     },
+     {
+      "areaPct": 4.1,
+      "key": "25",
+      "popPct": 5.6
+     },
+     {
+      "areaPct": 1.6,
+      "key": "28",
+      "popPct": 3.8
+     },
+     {
+      "areaPct": 2.2,
+      "key": "27",
+      "popPct": 2.7
+     },
+     {
+      "areaPct": 0.4,
+      "key": "18",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pinal",
+      "popPct": 92.3
+     },
+     {
+      "county": "Gila",
+      "popPct": 7.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 248455,
+    "pres2020New": -28.3,
+    "pres2020Old": 15.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-8; it draws from the old HD-26 (48%), the old HD-24 (28%), the old HD-23 (11%) and 4 more. Counties: gained Maricopa (100%); lost Pinal, Gila. 2020 presidential margin R+15.2 on the 2016\u20132020 lines \u2192 D+28.3 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 37.4,
+      "key": "26",
+      "popPct": 43.4
+     },
+     {
+      "areaPct": 45.3,
+      "key": "25",
+      "popPct": 42.0
+     },
+     {
+      "areaPct": 17.3,
+      "key": "18",
+      "popPct": 14.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pima",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 234608,
+    "pres2020New": -6.2,
+    "pres2020Old": -25.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-9; it draws from the old HD-26 (43%), the old HD-25 (42%), the old HD-18 (14%). Counties: gained Maricopa (100%); lost Pima. 2020 presidential margin D+25.9 on the 2016\u20132020 lines \u2192 D+6.2 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 94.2,
+      "key": "1",
+      "popPct": 71.8
+     },
+     {
+      "areaPct": 5.8,
+      "key": "6",
+      "popPct": 28.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Yavapai",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Maricopa",
+      "popPct": 31.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 236564,
+    "pres2020New": 29.2,
+    "pres2020Old": 35.1,
+    "retainedAreaPct": 94.2,
+    "retainedPopPct": 71.8,
+    "text": "Kept 72% of its population from the 2016\u20132020 SD-1; gained the rest from the old SD-6 (28%). Counties: lost Maricopa. 2020 presidential margin R+35.1 on the 2016\u20132020 lines \u2192 R+29.2 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 61.8,
+      "key": "25",
+      "popPct": 55.0
+     },
+     {
+      "areaPct": 37.6,
+      "key": "16",
+      "popPct": 44.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 95.9
+     },
+     {
+      "county": "Pinal",
+      "popPct": 4.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maricopa",
+      "popPct": 95.9
+     },
+     {
+      "county": "Pinal",
+      "popPct": 4.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pima",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 233196,
+    "pres2020New": 20.4,
+    "pres2020Old": -18.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-10; it draws from the old SD-25 (55%), the old SD-16 (45%). Counties: gained Maricopa (96%), Pinal (4%); lost Pima. 2020 presidential margin D+18.4 on the 2016\u20132020 lines \u2192 R+20.4 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 92.9,
+      "key": "27",
+      "popPct": 89.9
+     },
+     {
+      "areaPct": 6.1,
+      "key": "19",
+      "popPct": 6.2
+     },
+     {
+      "areaPct": 0.9,
+      "key": "26",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pima",
+      "popPct": 55.4
+     },
+     {
+      "county": "Pinal",
+      "popPct": 44.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 239191,
+    "pres2020New": -51.6,
+    "pres2020Old": 7.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-11; it draws from the old SD-27 (90%), the old SD-19 (6%), the old SD-26 (4%). Counties: gained Maricopa (100%); lost Pima, Pinal. 2020 presidential margin R+7.6 on the 2016\u20132020 lines \u2192 D+51.6 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 39.2,
+      "key": "18",
+      "popPct": 79.2
+     },
+     {
+      "areaPct": 5.1,
+      "key": "17",
+      "popPct": 14.7
+     },
+     {
+      "areaPct": 54.8,
+      "key": "27",
+      "popPct": 3.1
+     },
+     {
+      "areaPct": 0.8,
+      "key": "26",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 236999,
+    "pres2020New": -18.5,
+    "pres2020Old": 18.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-12; it draws from the old SD-18 (79%), the old SD-17 (15%), the old SD-27 (3%) and 1 more. Entirely in Maricopa County. 2020 presidential margin R+18.8 on the 2016\u20132020 lines \u2192 D+18.5 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 91.5,
+      "key": "17",
+      "popPct": 90.2
+     },
+     {
+      "areaPct": 5.2,
+      "key": "12",
+      "popPct": 6.6
+     },
+     {
+      "areaPct": 3.3,
+      "key": "18",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Yuma",
+      "popPct": 31.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 236214,
+    "pres2020New": -3.1,
+    "pres2020Old": 21.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-13; it draws from the old SD-17 (90%), the old SD-12 (7%), the old SD-18 (3%). Counties: lost Yuma. 2020 presidential margin R+21.7 on the 2016\u20132020 lines \u2192 D+3.1 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 95.8,
+      "key": "12",
+      "popPct": 95.3
+     },
+     {
+      "areaPct": 4.1,
+      "key": "17",
+      "popPct": 4.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cochise",
+      "popPct": 55.8
+     },
+     {
+      "county": "Pima",
+      "popPct": 24.9
+     },
+     {
+      "county": "Graham",
+      "popPct": 15.1
+     },
+     {
+      "county": "Greenlee",
+      "popPct": 4.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 243747,
+    "pres2020New": 15.0,
+    "pres2020Old": 24.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-14; it draws from the old SD-12 (95%), the old SD-17 (5%). Counties: gained Maricopa (100%); lost Cochise, Pima, Graham, Greenlee. 2020 presidential margin R+24.3 on the 2016\u20132020 lines \u2192 R+15.0 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 32.5,
+      "key": "16",
+      "popPct": 48.9
+     },
+     {
+      "areaPct": 40.0,
+      "key": "8",
+      "popPct": 26.9
+     },
+     {
+      "areaPct": 27.5,
+      "key": "12",
+      "popPct": 24.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 55.4
+     },
+     {
+      "county": "Pinal",
+      "popPct": 44.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pinal",
+      "popPct": 44.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 237526,
+    "pres2020New": 27.0,
+    "pres2020Old": 10.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-15; it draws from the old SD-16 (49%), the old SD-8 (27%), the old SD-12 (24%). Counties: gained Pinal (45%). 2020 presidential margin R+10.6 on the 2016\u20132020 lines \u2192 R+27.0 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 47.9,
+      "key": "11",
+      "popPct": 47.1
+     },
+     {
+      "areaPct": 48.2,
+      "key": "8",
+      "popPct": 41.8
+     },
+     {
+      "areaPct": 1.3,
+      "key": "3",
+      "popPct": 9.1
+     },
+     {
+      "areaPct": 2.7,
+      "key": "27",
+      "popPct": 1.4
+     },
+     {
+      "areaPct": 0.0,
+      "key": "9",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pinal",
+      "popPct": 81.9
+     },
+     {
+      "county": "Pima",
+      "popPct": 16.7
+     },
+     {
+      "county": "Maricopa",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pima",
+      "popPct": 16.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 246055,
+    "pres2020New": 3.8,
+    "pres2020Old": 23.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-16; it draws from the old SD-11 (47%), the old SD-8 (42%), the old SD-3 (9%) and 2 more. Counties: gained Pima (17%). 2020 presidential margin R+23.6 on the 2016\u20132020 lines \u2192 R+3.8 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 42.0,
+      "key": "11",
+      "popPct": 55.6
+     },
+     {
+      "areaPct": 5.3,
+      "key": "10",
+      "popPct": 30.2
+     },
+     {
+      "areaPct": 48.5,
+      "key": "14",
+      "popPct": 12.8
+     },
+     {
+      "areaPct": 0.1,
+      "key": "9",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pima",
+      "popPct": 94.4
+     },
+     {
+      "county": "Pinal",
+      "popPct": 5.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pima",
+      "popPct": 94.4
+     },
+     {
+      "county": "Pinal",
+      "popPct": 5.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Maricopa",
+      "popPct": 99.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 242051,
+    "pres2020New": 4.3,
+    "pres2020Old": -3.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-17; it draws from the old SD-11 (56%), the old SD-10 (30%), the old SD-14 (13%) and 1 more. Counties: gained Pima (94%), Pinal (6%); lost Maricopa. 2020 presidential margin D+3.7 on the 2016\u20132020 lines \u2192 R+4.3 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 81.9,
+      "key": "9",
+      "popPct": 68.4
+     },
+     {
+      "areaPct": 17.8,
+      "key": "10",
+      "popPct": 31.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pima",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pima",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 240531,
+    "pres2020New": -24.2,
+    "pres2020Old": -17.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-18; it draws from the old SD-9 (68%), the old SD-10 (32%). Counties: gained Pima (100%); lost Maricopa. 2020 presidential margin D+17.7 on the 2016\u20132020 lines \u2192 D+24.2 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 95.7,
+      "key": "14",
+      "popPct": 84.8
+     },
+     {
+      "areaPct": 4.3,
+      "key": "2",
+      "popPct": 15.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cochise",
+      "popPct": 53.7
+     },
+     {
+      "county": "Pima",
+      "popPct": 25.0
+     },
+     {
+      "county": "Graham",
+      "popPct": 15.4
+     },
+     {
+      "county": "Greenlee",
+      "popPct": 4.4
+     },
+     {
+      "county": "Santa Cruz",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cochise",
+      "popPct": 53.7
+     },
+     {
+      "county": "Pima",
+      "popPct": 25.0
+     },
+     {
+      "county": "Graham",
+      "popPct": 15.4
+     },
+     {
+      "county": "Greenlee",
+      "popPct": 4.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 219268,
+    "pres2020New": 22.9,
+    "pres2020Old": -39.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-19; it draws from the old SD-14 (85%), the old SD-2 (15%). Counties: gained Cochise (54%), Pima (25%), Graham (15%) and 1 more; lost Maricopa. 2020 presidential margin D+39.4 on the 2016\u20132020 lines \u2192 R+22.9 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 27.8,
+      "key": "20",
+      "popPct": 50.5
+     },
+     {
+      "areaPct": 62.9,
+      "key": "15",
+      "popPct": 33.7
+     },
+     {
+      "areaPct": 9.3,
+      "key": "28",
+      "popPct": 15.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pima",
+      "popPct": 78.2
+     },
+     {
+      "county": "Santa Cruz",
+      "popPct": 21.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 237674,
+    "pres2020New": 1.8,
+    "pres2020Old": -22.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-2; it draws from the old SD-20 (50%), the old SD-15 (34%), the old SD-28 (16%). Counties: gained Maricopa (100%); lost Pima, Santa Cruz. 2020 presidential margin D+22.1 on the 2016\u20132020 lines \u2192 R+1.8 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 80.3,
+      "key": "3",
+      "popPct": 68.6
+     },
+     {
+      "areaPct": 12.9,
+      "key": "9",
+      "popPct": 21.8
+     },
+     {
+      "areaPct": 3.5,
+      "key": "4",
+      "popPct": 4.6
+     },
+     {
+      "areaPct": 2.5,
+      "key": "2",
+      "popPct": 4.0
+     },
+     {
+      "areaPct": 0.7,
+      "key": "10",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pima",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pima",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 238524,
+    "pres2020New": -50.7,
+    "pres2020Old": 0.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-20; it draws from the old SD-3 (69%), the old SD-9 (22%), the old SD-4 (5%) and 2 more. Counties: gained Pima (100%); lost Maricopa. 2020 presidential margin R+0.3 on the 2016\u20132020 lines \u2192 D+50.7 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 85.1,
+      "key": "2",
+      "popPct": 69.9
+     },
+     {
+      "areaPct": 0.7,
+      "key": "10",
+      "popPct": 26.8
+     },
+     {
+      "areaPct": 13.5,
+      "key": "14",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pima",
+      "popPct": 79.3
+     },
+     {
+      "county": "Santa Cruz",
+      "popPct": 17.7
+     },
+     {
+      "county": "Cochise",
+      "popPct": 3.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pima",
+      "popPct": 79.3
+     },
+     {
+      "county": "Santa Cruz",
+      "popPct": 17.7
+     },
+     {
+      "county": "Cochise",
+      "popPct": 3.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 251353,
+    "pres2020New": -27.3,
+    "pres2020Old": 9.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-21; it draws from the old SD-2 (70%), the old SD-10 (27%), the old SD-14 (3%). Counties: gained Pima (79%), Santa Cruz (18%), Cochise (3%); lost Maricopa. 2020 presidential margin R+9.0 on the 2016\u20132020 lines \u2192 D+27.3 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 86.7,
+      "key": "19",
+      "popPct": 82.5
+     },
+     {
+      "areaPct": 10.8,
+      "key": "29",
+      "popPct": 17.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 243434,
+    "pres2020New": -34.7,
+    "pres2020Old": 23.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-22; it draws from the old SD-19 (82%), the old SD-29 (17%). Entirely in Maricopa County. 2020 presidential margin R+23.9 on the 2016\u20132020 lines \u2192 D+34.7 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 97.3,
+      "key": "4",
+      "popPct": 81.7
+     },
+     {
+      "areaPct": 0.3,
+      "key": "3",
+      "popPct": 9.2
+     },
+     {
+      "areaPct": 0.7,
+      "key": "13",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Yuma",
+      "popPct": 52.3
+     },
+     {
+      "county": "Maricopa",
+      "popPct": 30.3
+     },
+     {
+      "county": "Pima",
+      "popPct": 17.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Yuma",
+      "popPct": 52.3
+     },
+     {
+      "county": "Pima",
+      "popPct": 17.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 236925,
+    "pres2020New": -12.8,
+    "pres2020Old": 9.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-23; it draws from the old SD-4 (82%), the old SD-3 (9%), the old SD-13 (9%). Counties: gained Yuma (52%), Pima (17%). 2020 presidential margin R+9.2 on the 2016\u20132020 lines \u2192 D+12.8 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 56.3,
+      "key": "29",
+      "popPct": 60.9
+     },
+     {
+      "areaPct": 19.5,
+      "key": "30",
+      "popPct": 18.8
+     },
+     {
+      "areaPct": 12.6,
+      "key": "19",
+      "popPct": 10.9
+     },
+     {
+      "areaPct": 11.6,
+      "key": "20",
+      "popPct": 9.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 233966,
+    "pres2020New": -32.1,
+    "pres2020Old": -42.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-24; it draws from the old SD-29 (61%), the old SD-30 (19%), the old SD-19 (11%) and 1 more. Entirely in Maricopa County. 2020 presidential margin D+42.7 on the 2016\u20132020 lines \u2192 D+32.1 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 84.6,
+      "key": "13",
+      "popPct": 82.0
+     },
+     {
+      "areaPct": 0.2,
+      "key": "22",
+      "popPct": 11.0
+     },
+     {
+      "areaPct": 15.2,
+      "key": "4",
+      "popPct": 7.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 66.5
+     },
+     {
+      "county": "Yuma",
+      "popPct": 33.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Yuma",
+      "popPct": 33.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 238426,
+    "pres2020New": 24.0,
+    "pres2020Old": 15.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-25; it draws from the old SD-13 (82%), the old SD-22 (11%), the old SD-4 (7%). Counties: gained Yuma (34%). 2020 presidential margin R+15.9 on the 2016\u20132020 lines \u2192 R+24.0 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 74.9,
+      "key": "30",
+      "popPct": 78.2
+     },
+     {
+      "areaPct": 12.9,
+      "key": "29",
+      "popPct": 13.5
+     },
+     {
+      "areaPct": 5.4,
+      "key": "20",
+      "popPct": 4.4
+     },
+     {
+      "areaPct": 3.0,
+      "key": "24",
+      "popPct": 3.4
+     },
+     {
+      "areaPct": 3.7,
+      "key": "19",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 234880,
+    "pres2020New": -38.7,
+    "pres2020Old": -35.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-26; it draws from the old SD-30 (78%), the old SD-29 (14%), the old SD-20 (4%) and 2 more. Entirely in Maricopa County. 2020 presidential margin D+35.3 on the 2016\u20132020 lines \u2192 D+38.7 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 27.7,
+      "key": "20",
+      "popPct": 35.7
+     },
+     {
+      "areaPct": 30.2,
+      "key": "21",
+      "popPct": 32.0
+     },
+     {
+      "areaPct": 23.9,
+      "key": "22",
+      "popPct": 19.4
+     },
+     {
+      "areaPct": 9.7,
+      "key": "15",
+      "popPct": 6.7
+     },
+     {
+      "areaPct": 3.3,
+      "key": "28",
+      "popPct": 4.2
+     },
+     {
+      "areaPct": 5.1,
+      "key": "29",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 242672,
+    "pres2020New": 8.1,
+    "pres2020Old": -51.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-27; it draws from the old SD-20 (36%), the old SD-21 (32%), the old SD-22 (19%) and 3 more. Entirely in Maricopa County. 2020 presidential margin D+51.6 on the 2016\u20132020 lines \u2192 R+8.1 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 56.6,
+      "key": "22",
+      "popPct": 53.7
+     },
+     {
+      "areaPct": 7.1,
+      "key": "21",
+      "popPct": 28.0
+     },
+     {
+      "areaPct": 11.6,
+      "key": "15",
+      "popPct": 15.7
+     },
+     {
+      "areaPct": 24.8,
+      "key": "1",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 230218,
+    "pres2020New": 23.3,
+    "pres2020Old": -11.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-28; it draws from the old SD-22 (54%), the old SD-21 (28%), the old SD-15 (16%) and 1 more. Entirely in Maricopa County. 2020 presidential margin D+11.8 on the 2016\u20132020 lines \u2192 R+23.3 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 6.5,
+      "key": "21",
+      "popPct": 39.7
+     },
+     {
+      "areaPct": 33.8,
+      "key": "22",
+      "popPct": 31.7
+     },
+     {
+      "areaPct": 57.4,
+      "key": "13",
+      "popPct": 23.3
+     },
+     {
+      "areaPct": 2.3,
+      "key": "29",
+      "popPct": 5.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 241908,
+    "pres2020New": 13.1,
+    "pres2020Old": -35.5,
+    "retainedAreaPct": 2.3,
+    "retainedPopPct": 5.3,
+    "text": "A new footprint: only 5% of its population was in the 2016\u20132020 SD-29; it draws from the old SD-21 (40%), the old SD-22 (32%), the old SD-13 (23%). Entirely in Maricopa County. 2020 presidential margin D+35.5 on the 2016\u20132020 lines \u2192 R+13.1 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 80.3,
+      "key": "23",
+      "popPct": 57.0
+     },
+     {
+      "areaPct": 17.7,
+      "key": "1",
+      "popPct": 29.3
+     },
+     {
+      "areaPct": 2.0,
+      "key": "15",
+      "popPct": 13.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pima",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 240862,
+    "pres2020New": 20.9,
+    "pres2020Old": -46.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-3; it draws from the old SD-23 (57%), the old SD-1 (29%), the old SD-15 (14%). Counties: gained Maricopa (100%); lost Pima. 2020 presidential margin D+46.2 on the 2016\u20132020 lines \u2192 R+20.9 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 95.0,
+      "key": "5",
+      "popPct": 96.6
+     },
+     {
+      "areaPct": 5.0,
+      "key": "13",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mohave",
+      "popPct": 89.6
+     },
+     {
+      "county": "La Paz",
+      "popPct": 7.1
+     },
+     {
+      "county": "Maricopa",
+      "popPct": 3.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Mohave",
+      "popPct": 89.6
+     },
+     {
+      "county": "La Paz",
+      "popPct": 7.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 236093,
+    "pres2020New": 50.7,
+    "pres2020Old": -33.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-30; it draws from the old SD-5 (97%), the old SD-13 (3%). Counties: gained Mohave (90%), La Paz (7%). 2020 presidential margin D+33.4 on the 2016\u20132020 lines \u2192 R+50.7 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 44.9,
+      "key": "28",
+      "popPct": 36.6
+     },
+     {
+      "areaPct": 28.4,
+      "key": "15",
+      "popPct": 32.5
+     },
+     {
+      "areaPct": 26.2,
+      "key": "23",
+      "popPct": 29.9
+     },
+     {
+      "areaPct": 0.5,
+      "key": "24",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Yuma",
+      "popPct": 51.4
+     },
+     {
+      "county": "Pima",
+      "popPct": 13.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 241595,
+    "pres2020New": -0.8,
+    "pres2020Old": -13.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-4; it draws from the old SD-28 (37%), the old SD-15 (32%), the old SD-23 (30%) and 1 more. Counties: lost Yuma, Pima. 2020 presidential margin D+13.0 on the 2016\u20132020 lines \u2192 D+0.8 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 49.7,
+      "key": "24",
+      "popPct": 60.3
+     },
+     {
+      "areaPct": 47.0,
+      "key": "28",
+      "popPct": 36.1
+     },
+     {
+      "areaPct": 1.4,
+      "key": "27",
+      "popPct": 2.0
+     },
+     {
+      "areaPct": 1.9,
+      "key": "30",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Mohave",
+      "popPct": 92.7
+     },
+     {
+      "county": "La Paz",
+      "popPct": 7.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 238748,
+    "pres2020New": -39.5,
+    "pres2020Old": 50.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-5; it draws from the old SD-24 (60%), the old SD-28 (36%), the old SD-27 (2%) and 1 more. Counties: gained Maricopa (100%); lost Mohave, La Paz. 2020 presidential margin R+50.8 on the 2016\u20132020 lines \u2192 D+39.5 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 93.0,
+      "key": "7",
+      "popPct": 73.8
+     },
+     {
+      "areaPct": 6.9,
+      "key": "6",
+      "popPct": 26.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Coconino",
+      "popPct": 40.2
+     },
+     {
+      "county": "Apache",
+      "popPct": 29.9
+     },
+     {
+      "county": "Navajo",
+      "popPct": 23.7
+     },
+     {
+      "county": "Gila",
+      "popPct": 3.3
+     },
+     {
+      "county": "Graham",
+      "popPct": 2.1
+     },
+     {
+      "county": "Mohave",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Apache",
+      "popPct": 29.9
+     },
+     {
+      "county": "Graham",
+      "popPct": 2.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Yavapai",
+      "popPct": 28.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 221132,
+    "pres2020New": -33.2,
+    "pres2020Old": 8.3,
+    "retainedAreaPct": 6.9,
+    "retainedPopPct": 26.1,
+    "text": "A new footprint: only 26% of its population was in the 2016\u20132020 SD-6; it draws from the old SD-7 (74%). Counties: gained Apache (30%), Graham (2%); lost Yavapai. 2020 presidential margin R+8.3 on the 2016\u20132020 lines \u2192 D+33.2 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 65.5,
+      "key": "6",
+      "popPct": 43.2
+     },
+     {
+      "areaPct": 24.0,
+      "key": "8",
+      "popPct": 25.1
+     },
+     {
+      "areaPct": 0.9,
+      "key": "16",
+      "popPct": 19.1
+     },
+     {
+      "areaPct": 9.7,
+      "key": "7",
+      "popPct": 12.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pinal",
+      "popPct": 37.1
+     },
+     {
+      "county": "Coconino",
+      "popPct": 22.5
+     },
+     {
+      "county": "Navajo",
+      "popPct": 21.7
+     },
+     {
+      "county": "Gila",
+      "popPct": 18.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pinal",
+      "popPct": 37.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Apache",
+      "popPct": 34.0
+     },
+     {
+      "county": "Graham",
+      "popPct": 2.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 248685,
+    "pres2020New": 24.3,
+    "pres2020Old": -27.4,
+    "retainedAreaPct": 9.7,
+    "retainedPopPct": 12.6,
+    "text": "A new footprint: only 13% of its population was in the 2016\u20132020 SD-7; it draws from the old SD-6 (43%), the old SD-8 (25%), the old SD-16 (19%). Counties: gained Pinal (37%); lost Apache, Graham. 2020 presidential margin D+27.4 on the 2016\u20132020 lines \u2192 R+24.3 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 78.4,
+      "key": "26",
+      "popPct": 48.3
+     },
+     {
+      "areaPct": 9.6,
+      "key": "24",
+      "popPct": 28.1
+     },
+     {
+      "areaPct": 3.7,
+      "key": "23",
+      "popPct": 10.7
+     },
+     {
+      "areaPct": 4.1,
+      "key": "25",
+      "popPct": 5.6
+     },
+     {
+      "areaPct": 1.6,
+      "key": "28",
+      "popPct": 3.8
+     },
+     {
+      "areaPct": 2.2,
+      "key": "27",
+      "popPct": 2.7
+     },
+     {
+      "areaPct": 0.4,
+      "key": "18",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pinal",
+      "popPct": 92.3
+     },
+     {
+      "county": "Gila",
+      "popPct": 7.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 248455,
+    "pres2020New": -28.3,
+    "pres2020Old": 15.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-8; it draws from the old SD-26 (48%), the old SD-24 (28%), the old SD-23 (11%) and 4 more. Counties: gained Maricopa (100%); lost Pinal, Gila. 2020 presidential margin R+15.2 on the 2016\u20132020 lines \u2192 D+28.3 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 37.4,
+      "key": "26",
+      "popPct": 43.4
+     },
+     {
+      "areaPct": 45.3,
+      "key": "25",
+      "popPct": 42.0
+     },
+     {
+      "areaPct": 17.3,
+      "key": "18",
+      "popPct": 14.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Maricopa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pima",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 234608,
+    "pres2020New": -6.2,
+    "pres2020Old": -25.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-9; it draws from the old SD-26 (43%), the old SD-25 (42%), the old SD-18 (14%). Counties: gained Maricopa (100%); lost Pima. 2020 presidential margin D+25.9 on the 2016\u20132020 lines \u2192 D+6.2 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

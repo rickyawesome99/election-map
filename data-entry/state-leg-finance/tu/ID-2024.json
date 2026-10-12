@@ -1,0 +1,6069 @@
+{
+ "state": "ID",
+ "cycle": 2024,
+ "fetched": "2026-10-11",
+ "dataThrough": "12/31/2024",
+ "races": [
+  {
+   "office": "Idaho House of Representatives District 10A",
+   "url": "/id/race/idaho-house-of-representatives-district-10a-66014",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 138547.0,
+   "totalExpenditures": 186160.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mike Moyle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 136181.0,
+       "expenditures": 0.0,
+       "status": "$183,694.13",
+       "url": "/id/candidate/mike-moyle?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nancy Parker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2366.16,
+       "expenditures": 100.0,
+       "status": "$2,466.16",
+       "url": "/id/candidate/nancy-parker?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Nancy Parker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2366.16,
+       "expenditures": 100.0,
+       "status": "$2,466.16",
+       "url": "/id/candidate/nancy-parker?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Mike Moyle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 136181.0,
+       "expenditures": 0.0,
+       "status": "$183,694.13",
+       "url": "/id/candidate/mike-moyle?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 10B",
+   "url": "/id/race/idaho-house-of-representatives-district-10b-66015",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 20233.0,
+   "totalExpenditures": 9416.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Bruce Skaug",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20233.0,
+       "expenditures": 0.0,
+       "status": "$9,415.51",
+       "url": "/id/candidate/bruce-skaug?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Bruce Skaug",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20233.0,
+       "expenditures": 0.0,
+       "status": "$9,415.51",
+       "url": "/id/candidate/bruce-skaug?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 11A",
+   "url": "/id/race/idaho-house-of-representatives-district-11a-66016",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 93293.0,
+   "totalExpenditures": 83075.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Kent Marmon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38140.28,
+       "expenditures": 0.0,
+       "status": "$32,058.94",
+       "url": "/id/candidate/kent-marmon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Anthony Porto",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11980.68,
+       "expenditures": 0.0,
+       "status": "$11,094.15",
+       "url": "/id/candidate/anthony-porto?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Anthony Porto",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11980.68,
+       "expenditures": 0.0,
+       "status": "$11,094.15",
+       "url": "/id/candidate/anthony-porto?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Kent Marmon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38140.28,
+       "expenditures": 0.0,
+       "status": "$32,058.94",
+       "url": "/id/candidate/kent-marmon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Julie Yamamoto",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38902.0,
+       "expenditures": 0.0,
+       "status": "$36,921.80",
+       "url": "/id/candidate/julie-yamamoto?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nicole Hyland",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4270.01,
+       "expenditures": 1071.47,
+       "status": "$2,999.77",
+       "url": "/id/candidate/nicole-hyland?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 11B",
+   "url": "/id/race/idaho-house-of-representatives-district-11b-66017",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 45850.0,
+   "totalExpenditures": 48609.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lucas Cayler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 41190.26,
+       "expenditures": 1000.0,
+       "status": "$43,947.59",
+       "url": "/id/candidate/lucas-cayler?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Marisela Pesina",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4660.0,
+       "expenditures": 0.0,
+       "status": "$4,661.66",
+       "url": "/id/candidate/marisela-pesina?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Marisela Pesina",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4660.0,
+       "expenditures": 0.0,
+       "status": "$4,661.66",
+       "url": "/id/candidate/marisela-pesina?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Lucas Cayler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 41190.26,
+       "expenditures": 1000.0,
+       "status": "$43,947.59",
+       "url": "/id/candidate/lucas-cayler?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 12A",
+   "url": "/id/race/idaho-house-of-representatives-district-12a-66018",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 39523.0,
+   "totalExpenditures": 30233.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jeffrey Cornilles",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 36216.06,
+       "expenditures": 0.0,
+       "status": "$26,926.22",
+       "url": "/id/candidate/jeffrey-cornilles?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Jeffrey Cornilles",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 36216.06,
+       "expenditures": 0.0,
+       "status": "$26,926.22",
+       "url": "/id/candidate/jeffrey-cornilles?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jarome Bell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3307.03,
+       "expenditures": 0.0,
+       "status": "$3,307.03",
+       "url": "/id/candidate/jarome-bell?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 12B",
+   "url": "/id/race/idaho-house-of-representatives-district-12b-66019",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 24481.0,
+   "totalExpenditures": 18879.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jaron Crane",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 21771.06,
+       "expenditures": 0.0,
+       "status": "$15,672.16",
+       "url": "/id/candidate/jaron-crane?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Donald Benson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2710.0,
+       "expenditures": 435.47,
+       "status": "$3,206.91",
+       "url": "/id/candidate/donald-benson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Donald Benson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2710.0,
+       "expenditures": 435.47,
+       "status": "$3,206.91",
+       "url": "/id/candidate/donald-benson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Jaron Crane",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 21771.06,
+       "expenditures": 0.0,
+       "status": "$15,672.16",
+       "url": "/id/candidate/jaron-crane?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 13A",
+   "url": "/id/race/idaho-house-of-representatives-district-13a-66020",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 44934.0,
+   "totalExpenditures": 20700.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Brent Crane",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38700.0,
+       "expenditures": 0.0,
+       "status": "$14,649.02",
+       "url": "/id/candidate/brent-crane?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Clifford Hohman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6233.57,
+       "expenditures": 0.0,
+       "status": "$6,051.29",
+       "url": "/id/candidate/clifford-hohman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Clifford Hohman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6233.57,
+       "expenditures": 0.0,
+       "status": "$6,051.29",
+       "url": "/id/candidate/clifford-hohman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Brent Crane",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38700.0,
+       "expenditures": 0.0,
+       "status": "$14,649.02",
+       "url": "/id/candidate/brent-crane?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 13B",
+   "url": "/id/race/idaho-house-of-representatives-district-13b-66021",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 47000.0,
+   "totalExpenditures": 58205.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Steven Tanner",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18393.36,
+       "expenditures": 0.0,
+       "status": "$17,685.24",
+       "url": "/id/candidate/steven-tanner?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Steven Tanner",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18393.36,
+       "expenditures": 0.0,
+       "status": "$17,685.24",
+       "url": "/id/candidate/steven-tanner?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kenny Wroten",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 19602.33,
+       "expenditures": 0.0,
+       "status": "$27,461.68",
+       "url": "/id/candidate/kenny-wroten?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Amy Henry",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9003.82,
+       "expenditures": 843.36,
+       "status": "$13,057.95",
+       "url": "/id/candidate/amy-henry?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 14A",
+   "url": "/id/race/idaho-house-of-representatives-district-14a-66022",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 8750.0,
+   "totalExpenditures": 12830.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ted Hill",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 8750.0,
+       "expenditures": 0.0,
+       "status": "$12,830.20",
+       "url": "/id/candidate/ted-hill?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Ted Hill",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 8750.0,
+       "expenditures": 0.0,
+       "status": "$12,830.20",
+       "url": "/id/candidate/ted-hill?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 14B",
+   "url": "/id/race/idaho-house-of-representatives-district-14b-66023",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 13929.0,
+   "totalExpenditures": 6286.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Josh Tanner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 13929.41,
+       "expenditures": 50000.0,
+       "status": "$6,285.73",
+       "url": "/id/candidate/josh-tanner?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jo Daly",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/id/candidate/jo-daly?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Jo Daly",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/id/candidate/jo-daly?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Josh Tanner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 13929.41,
+       "expenditures": 50000.0,
+       "status": "$6,285.73",
+       "url": "/id/candidate/josh-tanner?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 15A",
+   "url": "/id/race/idaho-house-of-representatives-district-15a-66024",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 200051.0,
+   "totalExpenditures": 263864.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Steve Berch",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 148073.47,
+       "expenditures": 0.0,
+       "status": "$202,522.72",
+       "url": "/id/candidate/steve-berch?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Annette Tipton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 49169.19,
+       "expenditures": 0.0,
+       "status": "$60,402.76",
+       "url": "/id/candidate/annette-tipton?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Steve Berch",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 148073.47,
+       "expenditures": 0.0,
+       "status": "$202,522.72",
+       "url": "/id/candidate/steve-berch?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Annette Tipton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 49169.19,
+       "expenditures": 0.0,
+       "status": "$60,402.76",
+       "url": "/id/candidate/annette-tipton?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Steven Keyser",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2808.28,
+       "expenditures": 0.0,
+       "status": "$938.28",
+       "url": "/id/candidate/steven-keyser?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 15B",
+   "url": "/id/race/idaho-house-of-representatives-district-15b-66025",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 58252.0,
+   "totalExpenditures": 48223.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Dori Healey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 55051.66,
+       "expenditures": 0.0,
+       "status": "$42,280.35",
+       "url": "/id/candidate/dori-healey?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Ivan Hurlburt",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3200.0,
+       "expenditures": 0.0,
+       "status": "$5,943.03",
+       "url": "/id/candidate/ivan-hurlburt?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Dori Healey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 55051.66,
+       "expenditures": 0.0,
+       "status": "$42,280.35",
+       "url": "/id/candidate/dori-healey?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 16A",
+   "url": "/id/race/idaho-house-of-representatives-district-16a-66026",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 29757.0,
+   "totalExpenditures": 30201.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Sonia Galaviz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 29432.0,
+       "expenditures": 0.0,
+       "status": "$29,287.73",
+       "url": "/id/candidate/sonia-galaviz?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chandler Hadraba",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 325.0,
+       "expenditures": 1000.0,
+       "status": "$913.68",
+       "url": "/id/candidate/chandler-hadraba?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Sonia Galaviz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 29432.0,
+       "expenditures": 0.0,
+       "status": "$29,287.73",
+       "url": "/id/candidate/sonia-galaviz?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Chandler Hadraba",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 325.0,
+       "expenditures": 1000.0,
+       "status": "$913.68",
+       "url": "/id/candidate/chandler-hadraba?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 16B",
+   "url": "/id/race/idaho-house-of-representatives-district-16b-66027",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 104641.0,
+   "totalExpenditures": 104979.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Todd Achilles",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 89667.61,
+       "expenditures": 0.0,
+       "status": "$89,117.87",
+       "url": "/id/candidate/todd-achilles?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jacquelyn Davidson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4957.02,
+       "expenditures": 0.0,
+       "status": "$4,165.44",
+       "url": "/id/candidate/jacquelyn-davidson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Todd Achilles",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 89667.61,
+       "expenditures": 0.0,
+       "status": "$89,117.87",
+       "url": "/id/candidate/todd-achilles?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jon Chu",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 10016.0,
+       "expenditures": 1000.0,
+       "status": "$11,696.07",
+       "url": "/id/candidate/jon-chu?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Jacquelyn Davidson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4957.02,
+       "expenditures": 0.0,
+       "status": "$4,165.44",
+       "url": "/id/candidate/jacquelyn-davidson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 17A",
+   "url": "/id/race/idaho-house-of-representatives-district-17a-66028",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 15712.0,
+   "totalExpenditures": 14549.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "John Gannon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 15712.0,
+       "expenditures": 0.0,
+       "status": "$14,549.44",
+       "url": "/id/candidate/john-gannon?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "John Gannon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 15712.0,
+       "expenditures": 0.0,
+       "status": "$14,549.44",
+       "url": "/id/candidate/john-gannon?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 17B",
+   "url": "/id/race/idaho-house-of-representatives-district-17b-66029",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 23001.0,
+   "totalExpenditures": 17623.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Megan Egbert",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16837.0,
+       "expenditures": 0.0,
+       "status": "$11,459.73",
+       "url": "/id/candidate/megan-egbert?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jazz Alexis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6163.74,
+       "expenditures": 0.0,
+       "status": "$6,163.74",
+       "url": "/id/candidate/jazz-alexis?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Megan Egbert",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16837.0,
+       "expenditures": 0.0,
+       "status": "$11,459.73",
+       "url": "/id/candidate/megan-egbert?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Jazz Alexis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6163.74,
+       "expenditures": 0.0,
+       "status": "$6,163.74",
+       "url": "/id/candidate/jazz-alexis?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 18A",
+   "url": "/id/race/idaho-house-of-representatives-district-18a-66030",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 78640.0,
+   "totalExpenditures": 99597.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ilana Rubel",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 78640.0,
+       "expenditures": 0.0,
+       "status": "$99,597.33",
+       "url": "/id/candidate/ilana-rubel?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Ilana Rubel",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 78640.0,
+       "expenditures": 0.0,
+       "status": "$99,597.33",
+       "url": "/id/candidate/ilana-rubel?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 18B",
+   "url": "/id/race/idaho-house-of-representatives-district-18b-66031",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 17025.0,
+   "totalExpenditures": 7669.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Brooke Green",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 17025.0,
+       "expenditures": 0.0,
+       "status": "$7,668.77",
+       "url": "/id/candidate/brooke-green?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Brooke Green",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 17025.0,
+       "expenditures": 0.0,
+       "status": "$7,668.77",
+       "url": "/id/candidate/brooke-green?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 19A",
+   "url": "/id/race/idaho-house-of-representatives-district-19a-66032",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 39729.0,
+   "totalExpenditures": 25078.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Monica Church",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 39728.89,
+       "expenditures": 0.0,
+       "status": "$25,077.80",
+       "url": "/id/candidate/monica-church?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Monica Church",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 39728.89,
+       "expenditures": 0.0,
+       "status": "$25,077.80",
+       "url": "/id/candidate/monica-church?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 19B",
+   "url": "/id/race/idaho-house-of-representatives-district-19b-66033",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 39900.0,
+   "totalExpenditures": 27080.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Chris Mathias",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 39900.0,
+       "expenditures": 0.0,
+       "status": "$27,079.92",
+       "url": "/id/candidate/chris-mathias?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Chris Mathias",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 39900.0,
+       "expenditures": 0.0,
+       "status": "$27,079.92",
+       "url": "/id/candidate/chris-mathias?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 1A",
+   "url": "/id/race/idaho-house-of-representatives-district-1a-66034",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 97570.0,
+   "totalExpenditures": 102495.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mark Sauter",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 63406.0,
+       "expenditures": 5000.0,
+       "status": "$66,479.17",
+       "url": "/id/candidate/mark-sauter?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Karen Matthee",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25013.45,
+       "expenditures": 0.0,
+       "status": "$25,013.25",
+       "url": "/id/candidate/karen-matthee?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Karen Matthee",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25013.45,
+       "expenditures": 0.0,
+       "status": "$25,013.25",
+       "url": "/id/candidate/karen-matthee?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Mark Sauter",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 63406.0,
+       "expenditures": 5000.0,
+       "status": "$66,479.17",
+       "url": "/id/candidate/mark-sauter?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jane Sauter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9150.97,
+       "expenditures": 2400.0,
+       "status": "$11,002.98",
+       "url": "/id/candidate/jane-sauter?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 1B",
+   "url": "/id/race/idaho-house-of-representatives-district-1b-66035",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 73798.0,
+   "totalExpenditures": 73753.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Cornel Rasor",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38942.22,
+       "expenditures": 0.0,
+       "status": "$39,091.76",
+       "url": "/id/candidate/cornel-rasor?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kathryn Larson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 34855.73,
+       "expenditures": 0.0,
+       "status": "$34,661.43",
+       "url": "/id/candidate/kathryn-larson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Kathryn Larson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 34855.73,
+       "expenditures": 0.0,
+       "status": "$34,661.43",
+       "url": "/id/candidate/kathryn-larson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Cornel Rasor",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38942.22,
+       "expenditures": 0.0,
+       "status": "$39,091.76",
+       "url": "/id/candidate/cornel-rasor?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 20A",
+   "url": "/id/race/idaho-house-of-representatives-district-20a-66036",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 28600.0,
+   "totalExpenditures": 34531.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Joe Palmer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 28500.0,
+       "expenditures": 0.0,
+       "status": "$34,487.45",
+       "url": "/id/candidate/joe-palmer?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Isaiah Navarro",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 100.0,
+       "expenditures": 0.0,
+       "status": "$43.90",
+       "url": "/id/candidate/isaiah-navarro?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Isaiah Navarro",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 100.0,
+       "expenditures": 0.0,
+       "status": "$43.90",
+       "url": "/id/candidate/isaiah-navarro?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Joe Palmer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 28500.0,
+       "expenditures": 0.0,
+       "status": "$34,487.45",
+       "url": "/id/candidate/joe-palmer?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 20B",
+   "url": "/id/race/idaho-house-of-representatives-district-20b-66037",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 34450.0,
+   "totalExpenditures": 7790.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "James Holtzclaw",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 34450.0,
+       "expenditures": 0.0,
+       "status": "$7,790.02",
+       "url": "/id/candidate/james-holtzclaw?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "James Holtzclaw",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 34450.0,
+       "expenditures": 0.0,
+       "status": "$7,790.02",
+       "url": "/id/candidate/james-holtzclaw?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 21A",
+   "url": "/id/race/idaho-house-of-representatives-district-21a-66038",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 55081.0,
+   "totalExpenditures": 48478.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "James Petzke",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 50148.2,
+       "expenditures": 0.0,
+       "status": "$42,670.53",
+       "url": "/id/candidate/james-petzke?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "James Petzke",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 50148.2,
+       "expenditures": 0.0,
+       "status": "$42,670.53",
+       "url": "/id/candidate/james-petzke?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Adam Nelson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4932.69,
+       "expenditures": 5807.69,
+       "status": "$5,807.69",
+       "url": "/id/candidate/adam-nelson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 21B",
+   "url": "/id/race/idaho-house-of-representatives-district-21b-66039",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 39220.0,
+   "totalExpenditures": 27621.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jeff Ehlers",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 27171.88,
+       "expenditures": 0.0,
+       "status": "$13,573.02",
+       "url": "/id/candidate/jeff-ehlers?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Becky Mckinstry",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9603.86,
+       "expenditures": 2000.0,
+       "status": "$11,603.86",
+       "url": "/id/candidate/becky-mckinstry?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Daniel Weston",
+       "party": "Constitution",
+       "incumbent": false,
+       "contributions": 2444.5,
+       "expenditures": 0.0,
+       "status": "$2,444.50",
+       "url": "/id/candidate/daniel-weston?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Constitution Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Daniel Weston",
+       "party": "Constitution",
+       "incumbent": false,
+       "contributions": 2444.5,
+       "expenditures": 0.0,
+       "status": "$2,444.50",
+       "url": "/id/candidate/daniel-weston?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Becky Mckinstry",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9603.86,
+       "expenditures": 2000.0,
+       "status": "$11,603.86",
+       "url": "/id/candidate/becky-mckinstry?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Jeff Ehlers",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 27171.88,
+       "expenditures": 0.0,
+       "status": "$13,573.02",
+       "url": "/id/candidate/jeff-ehlers?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 22A",
+   "url": "/id/race/idaho-house-of-representatives-district-22a-66040",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 41139.0,
+   "totalExpenditures": 36497.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "John Vanderwoude",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38400.0,
+       "expenditures": 0.0,
+       "status": "$33,775.11",
+       "url": "/id/candidate/john-vanderwoude?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Loren Petty",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2738.7,
+       "expenditures": 0.0,
+       "status": "$2,721.40",
+       "url": "/id/candidate/loren-petty?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Loren Petty",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2738.7,
+       "expenditures": 0.0,
+       "status": "$2,721.40",
+       "url": "/id/candidate/loren-petty?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "John Vanderwoude",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38400.0,
+       "expenditures": 0.0,
+       "status": "$33,775.11",
+       "url": "/id/candidate/john-vanderwoude?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 22B",
+   "url": "/id/race/idaho-house-of-representatives-district-22b-66041",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 80070.0,
+   "totalExpenditures": 82075.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jason Monks",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 75640.0,
+       "expenditures": 0.0,
+       "status": "$75,950.37",
+       "url": "/id/candidate/jason-monks?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Jason Monks",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 75640.0,
+       "expenditures": 0.0,
+       "status": "$75,950.37",
+       "url": "/id/candidate/jason-monks?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Marisa Keith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4430.0,
+       "expenditures": 2370.0,
+       "status": "$6,124.79",
+       "url": "/id/candidate/marisa-keith?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 23A",
+   "url": "/id/race/idaho-house-of-representatives-district-23a-66042",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 43973.0,
+   "totalExpenditures": 42399.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Chris Bruce",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7369.5,
+       "expenditures": 0.0,
+       "status": "$4,033.19",
+       "url": "/id/candidate/chris-bruce?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Chris Bruce",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7369.5,
+       "expenditures": 0.0,
+       "status": "$4,033.19",
+       "url": "/id/candidate/chris-bruce?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Melissa Durrant",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 36603.91,
+       "expenditures": 12000.0,
+       "status": "$38,365.60",
+       "url": "/id/candidate/melissa-durrant?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 23B",
+   "url": "/id/race/idaho-house-of-representatives-district-23b-66043",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 46676.0,
+   "totalExpenditures": 36642.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Shawn Dygert",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46676.13,
+       "expenditures": 3245.36,
+       "status": "$36,641.60",
+       "url": "/id/candidate/shawn-dygert?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Shawn Dygert",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46676.13,
+       "expenditures": 3245.36,
+       "status": "$36,641.60",
+       "url": "/id/candidate/shawn-dygert?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 24A",
+   "url": "/id/race/idaho-house-of-representatives-district-24a-66044",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 31841.0,
+   "totalExpenditures": 32234.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Clint Hostetler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 31840.72,
+       "expenditures": 0.0,
+       "status": "$32,234.18",
+       "url": "/id/candidate/clint-hostetler?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Clint Hostetler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 31840.72,
+       "expenditures": 0.0,
+       "status": "$32,234.18",
+       "url": "/id/candidate/clint-hostetler?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 24B",
+   "url": "/id/race/idaho-house-of-representatives-district-24b-66045",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 29684.0,
+   "totalExpenditures": 27538.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Steve Miller",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22525.0,
+       "expenditures": 3000.0,
+       "status": "$20,390.16",
+       "url": "/id/candidate/steve-miller?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Steve Miller",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22525.0,
+       "expenditures": 3000.0,
+       "status": "$20,390.16",
+       "url": "/id/candidate/steve-miller?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jeff Faulkner",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7159.18,
+       "expenditures": 2100.0,
+       "status": "$7,147.77",
+       "url": "/id/candidate/jeff-faulkner?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 25A",
+   "url": "/id/race/idaho-house-of-representatives-district-25a-66046",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 34183.0,
+   "totalExpenditures": 26274.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lance Clow",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 31744.14,
+       "expenditures": 0.0,
+       "status": "$24,202.58",
+       "url": "/id/candidate/lance-clow?cycle=2024-election-cycle"
+      },
+      {
+       "name": "W Lane Startin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2438.45,
+       "expenditures": 1476.11,
+       "status": "$2,071.13",
+       "url": "/id/candidate/w-lane-startin?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "W Lane Startin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2438.45,
+       "expenditures": 1476.11,
+       "status": "$2,071.13",
+       "url": "/id/candidate/w-lane-startin?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Lance Clow",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 31744.14,
+       "expenditures": 0.0,
+       "status": "$24,202.58",
+       "url": "/id/candidate/lance-clow?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 25B",
+   "url": "/id/race/idaho-house-of-representatives-district-25b-66047",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 35151.0,
+   "totalExpenditures": 37857.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "David Leavitt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15183.19,
+       "expenditures": 1374.5,
+       "status": "$16,441.07",
+       "url": "/id/candidate/david-leavitt?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "David Leavitt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15183.19,
+       "expenditures": 1374.5,
+       "status": "$16,441.07",
+       "url": "/id/candidate/david-leavitt?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gregory Lanting",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 19968.14,
+       "expenditures": 0.0,
+       "status": "$21,416.27",
+       "url": "/id/candidate/gregory-lanting?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 26A",
+   "url": "/id/race/idaho-house-of-representatives-district-26a-66048",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 48182.0,
+   "totalExpenditures": 51321.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mike Pohanka",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 40090.14,
+       "expenditures": 0.0,
+       "status": "$43,385.67",
+       "url": "/id/candidate/mike-pohanka?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Mike Pohanka",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 40090.14,
+       "expenditures": 0.0,
+       "status": "$43,385.67",
+       "url": "/id/candidate/mike-pohanka?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kally Schiffler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8091.36,
+       "expenditures": 1400.0,
+       "status": "$7,935.33",
+       "url": "/id/candidate/kally-schiffler?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 26B",
+   "url": "/id/race/idaho-house-of-representatives-district-26b-66049",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 122916.0,
+   "totalExpenditures": 135604.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jack Nelsen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 52998.72,
+       "expenditures": 3262.0,
+       "status": "$69,096.13",
+       "url": "/id/candidate/jack-nelsen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chris Hansen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 57072.43,
+       "expenditures": 0.0,
+       "status": "$54,653.44",
+       "url": "/id/candidate/chris-hansen?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Chris Hansen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 57072.43,
+       "expenditures": 0.0,
+       "status": "$54,653.44",
+       "url": "/id/candidate/chris-hansen?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Jack Nelsen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 52998.72,
+       "expenditures": 3262.0,
+       "status": "$69,096.13",
+       "url": "/id/candidate/jack-nelsen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lyle Johnstone",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12845.0,
+       "expenditures": 1338.86,
+       "status": "$11,854.15",
+       "url": "/id/candidate/lyle-johnstone?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 27A",
+   "url": "/id/race/idaho-house-of-representatives-district-27a-66050",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 26616.0,
+   "totalExpenditures": 24783.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Douglas Pickett",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22927.5,
+       "expenditures": 0.0,
+       "status": "$21,094.50",
+       "url": "/id/candidate/douglas-pickett?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Damian Rodriguez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3688.0,
+       "expenditures": 0.0,
+       "status": "$3,688.00",
+       "url": "/id/candidate/damian-rodriguez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Damian Rodriguez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3688.0,
+       "expenditures": 0.0,
+       "status": "$3,688.00",
+       "url": "/id/candidate/damian-rodriguez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Douglas Pickett",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22927.5,
+       "expenditures": 0.0,
+       "status": "$21,094.50",
+       "url": "/id/candidate/douglas-pickett?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 27B",
+   "url": "/id/race/idaho-house-of-representatives-district-27b-66051",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 32899.0,
+   "totalExpenditures": 33204.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Clay Handy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 21200.0,
+       "expenditures": 0.0,
+       "status": "$20,843.30",
+       "url": "/id/candidate/clay-handy?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Clay Handy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 21200.0,
+       "expenditures": 0.0,
+       "status": "$20,843.30",
+       "url": "/id/candidate/clay-handy?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Patrick Field",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11699.0,
+       "expenditures": 850.0,
+       "status": "$12,360.79",
+       "url": "/id/candidate/patrick-field?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 28A",
+   "url": "/id/race/idaho-house-of-representatives-district-28a-66052",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 47479.0,
+   "totalExpenditures": 56578.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Richard Cheatum",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 35907.64,
+       "expenditures": 100.0,
+       "status": "$37,082.39",
+       "url": "/id/candidate/richard-cheatum?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Richard Cheatum",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 35907.64,
+       "expenditures": 100.0,
+       "status": "$37,082.39",
+       "url": "/id/candidate/richard-cheatum?cycle=2024-election-cycle"
+      },
+      {
+       "name": "James Lamborn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9668.61,
+       "expenditures": 325.0,
+       "status": "$9,381.36",
+       "url": "/id/candidate/james-lamborn?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mike Saville",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1903.0,
+       "expenditures": 8211.0,
+       "status": "$10,114.00",
+       "url": "/id/candidate/mike-saville?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 28B",
+   "url": "/id/race/idaho-house-of-representatives-district-28b-66053",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 36548.0,
+   "totalExpenditures": 37717.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Dan Garner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 36547.77,
+       "expenditures": 4100.0,
+       "status": "$37,716.92",
+       "url": "/id/candidate/dan-garner?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jayson Meline",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/id/candidate/jayson-meline?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Jayson Meline",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/id/candidate/jayson-meline?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Dan Garner",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 36547.77,
+       "expenditures": 4100.0,
+       "status": "$37,716.92",
+       "url": "/id/candidate/dan-garner?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 29A",
+   "url": "/id/race/idaho-house-of-representatives-district-29a-66054",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 127715.0,
+   "totalExpenditures": 100854.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Dustin Manwaring",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 68350.6,
+       "expenditures": 0.0,
+       "status": "$53,238.23",
+       "url": "/id/candidate/dustin-manwaring?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mary Shea",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 59363.95,
+       "expenditures": 0.0,
+       "status": "$47,616.13",
+       "url": "/id/candidate/mary-shea?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Mary Shea",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 59363.95,
+       "expenditures": 0.0,
+       "status": "$47,616.13",
+       "url": "/id/candidate/mary-shea?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Dustin Manwaring",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 68350.6,
+       "expenditures": 0.0,
+       "status": "$53,238.23",
+       "url": "/id/candidate/dustin-manwaring?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 29B",
+   "url": "/id/race/idaho-house-of-representatives-district-29b-66055",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 80674.0,
+   "totalExpenditures": 74641.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tanya Burgoyne",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14740.0,
+       "expenditures": 0.0,
+       "status": "$14,703.60",
+       "url": "/id/candidate/tanya-burgoyne?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nathan Roberts",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 65934.03,
+       "expenditures": 0.0,
+       "status": "$59,937.87",
+       "url": "/id/candidate/nathan-roberts?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Nathan Roberts",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 65934.03,
+       "expenditures": 0.0,
+       "status": "$59,937.87",
+       "url": "/id/candidate/nathan-roberts?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Tanya Burgoyne",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14740.0,
+       "expenditures": 0.0,
+       "status": "$14,703.60",
+       "url": "/id/candidate/tanya-burgoyne?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 2A",
+   "url": "/id/race/idaho-house-of-representatives-district-2a-66056",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 40229.0,
+   "totalExpenditures": 44230.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Heather Scott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17182.93,
+       "expenditures": 0.0,
+       "status": "$23,745.16",
+       "url": "/id/candidate/heather-scott?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Loree Peery",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 23045.73,
+       "expenditures": 0.0,
+       "status": "$20,484.90",
+       "url": "/id/candidate/loree-peery?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Loree Peery",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 23045.73,
+       "expenditures": 0.0,
+       "status": "$20,484.90",
+       "url": "/id/candidate/loree-peery?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Heather Scott",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 17182.93,
+       "expenditures": 0.0,
+       "status": "$23,745.16",
+       "url": "/id/candidate/heather-scott?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 2B",
+   "url": "/id/race/idaho-house-of-representatives-district-2b-66057",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 21890.0,
+   "totalExpenditures": 20145.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Dale Hawkins",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 21889.96,
+       "expenditures": 0.0,
+       "status": "$20,144.88",
+       "url": "/id/candidate/dale-hawkins?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Dale Hawkins",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 21889.96,
+       "expenditures": 0.0,
+       "status": "$20,144.88",
+       "url": "/id/candidate/dale-hawkins?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 30A",
+   "url": "/id/race/idaho-house-of-representatives-district-30a-66058",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 47015.0,
+   "totalExpenditures": 44105.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "David Cannon",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 33455.0,
+       "expenditures": 15000.0,
+       "status": "$28,835.53",
+       "url": "/id/candidate/david-cannon?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "David Cannon",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 33455.0,
+       "expenditures": 15000.0,
+       "status": "$28,835.53",
+       "url": "/id/candidate/david-cannon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joshua Sorensen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13559.98,
+       "expenditures": 2979.08,
+       "status": "$15,268.99",
+       "url": "/id/candidate/joshua-sorensen?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 30B",
+   "url": "/id/race/idaho-house-of-representatives-district-30b-66059",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 52383.0,
+   "totalExpenditures": 60894.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ben Fuhriman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35696.45,
+       "expenditures": 8470.18,
+       "status": "$35,943.02",
+       "url": "/id/candidate/ben-fuhriman?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Breane Buckingham",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/id/candidate/breane-buckingham?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Breane Buckingham",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/id/candidate/breane-buckingham?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Ben Fuhriman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35696.45,
+       "expenditures": 8470.18,
+       "status": "$35,943.02",
+       "url": "/id/candidate/ben-fuhriman?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Julianne Young",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 16687.0,
+       "expenditures": 0.0,
+       "status": "$24,950.70",
+       "url": "/id/candidate/julianne-young?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 31A",
+   "url": "/id/race/idaho-house-of-representatives-district-31a-66060",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 28507.0,
+   "totalExpenditures": 9982.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jerald Raymond",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 28506.9,
+       "expenditures": 0.0,
+       "status": "$9,981.53",
+       "url": "/id/candidate/jerald-raymond?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Jerald Raymond",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 28506.9,
+       "expenditures": 0.0,
+       "status": "$9,981.53",
+       "url": "/id/candidate/jerald-raymond?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 31B",
+   "url": "/id/race/idaho-house-of-representatives-district-31b-66061",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 80175.0,
+   "totalExpenditures": 101198.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Rod Furniss",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 57431.0,
+       "expenditures": 0.0,
+       "status": "$66,785.50",
+       "url": "/id/candidate/rod-furniss?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Rod Furniss",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 57431.0,
+       "expenditures": 0.0,
+       "status": "$66,785.50",
+       "url": "/id/candidate/rod-furniss?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Karey Hanks",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22744.2,
+       "expenditures": 0.0,
+       "status": "$34,412.53",
+       "url": "/id/candidate/karey-hanks?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 32A",
+   "url": "/id/race/idaho-house-of-representatives-district-32a-66062",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 74117.0,
+   "totalExpenditures": 74450.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Stephanie Mickelsen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 57651.47,
+       "expenditures": 12098.76,
+       "status": "$58,230.19",
+       "url": "/id/candidate/stephanie-mickelsen?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Stephanie Mickelsen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 57651.47,
+       "expenditures": 12098.76,
+       "status": "$58,230.19",
+       "url": "/id/candidate/stephanie-mickelsen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sean Crystal",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/id/candidate/sean-crystal?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kelly Golden",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16465.13,
+       "expenditures": 0.0,
+       "status": "$16,219.45",
+       "url": "/id/candidate/kelly-golden?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 32B",
+   "url": "/id/race/idaho-house-of-representatives-district-32b-66063",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 203275.0,
+   "totalExpenditures": 220061.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Wendy Horman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 108166.85,
+       "expenditures": 0.0,
+       "status": "$124,953.07",
+       "url": "/id/candidate/wendy-horman?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Cecile Perez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2041.29,
+       "expenditures": 0.0,
+       "status": "$2,041.29",
+       "url": "/id/candidate/cecile-perez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Wendy Horman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 108166.85,
+       "expenditures": 0.0,
+       "status": "$124,953.07",
+       "url": "/id/candidate/wendy-horman?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Bryan Smith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 93067.06,
+       "expenditures": 89040.24,
+       "status": "$93,067.06",
+       "url": "/id/candidate/bryan-smith?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 33A",
+   "url": "/id/race/idaho-house-of-representatives-district-33a-66064",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 44197.0,
+   "totalExpenditures": 30540.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Barbara Ehardt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 37579.2,
+       "expenditures": 0.0,
+       "status": "$22,464.98",
+       "url": "/id/candidate/barbara-ehardt?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Miranda Marquit",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6617.58,
+       "expenditures": 0.0,
+       "status": "$8,075.48",
+       "url": "/id/candidate/miranda-marquit?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Miranda Marquit",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6617.58,
+       "expenditures": 0.0,
+       "status": "$8,075.48",
+       "url": "/id/candidate/miranda-marquit?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Barbara Ehardt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 37579.2,
+       "expenditures": 0.0,
+       "status": "$22,464.98",
+       "url": "/id/candidate/barbara-ehardt?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 33B",
+   "url": "/id/race/idaho-house-of-representatives-district-33b-66065",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 25233.0,
+   "totalExpenditures": 24089.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Marco Erickson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 21112.07,
+       "expenditures": 0.0,
+       "status": "$20,109.23",
+       "url": "/id/candidate/marco-erickson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Marco Erickson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 21112.07,
+       "expenditures": 0.0,
+       "status": "$20,109.23",
+       "url": "/id/candidate/marco-erickson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jilene Burger",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4121.38,
+       "expenditures": 0.0,
+       "status": "$3,979.52",
+       "url": "/id/candidate/jilene-burger?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 34A",
+   "url": "/id/race/idaho-house-of-representatives-district-34a-66066",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 20512.0,
+   "totalExpenditures": 14241.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jon Weber",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20512.09,
+       "expenditures": 0.0,
+       "status": "$14,240.68",
+       "url": "/id/candidate/jon-weber?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Jon Weber",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20512.09,
+       "expenditures": 0.0,
+       "status": "$14,240.68",
+       "url": "/id/candidate/jon-weber?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 34B",
+   "url": "/id/race/idaho-house-of-representatives-district-34b-66067",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 51036.0,
+   "totalExpenditures": 34788.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Britt Raybould",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 49850.0,
+       "expenditures": 0.0,
+       "status": "$33,710.55",
+       "url": "/id/candidate/britt-raybould?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Britt Raybould",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 49850.0,
+       "expenditures": 0.0,
+       "status": "$33,710.55",
+       "url": "/id/candidate/britt-raybould?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Larry Golden",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1186.0,
+       "expenditures": 0.0,
+       "status": "$1,077.29",
+       "url": "/id/candidate/larry-golden?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 35A",
+   "url": "/id/race/idaho-house-of-representatives-district-35a-66068",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 22220.0,
+   "totalExpenditures": 3998.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Kevin Andrus",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 19100.0,
+       "expenditures": 0.0,
+       "status": "$993.00",
+       "url": "/id/candidate/kevin-andrus?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joseph Messerly",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3120.24,
+       "expenditures": 0.0,
+       "status": "$3,005.45",
+       "url": "/id/candidate/joseph-messerly?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Joseph Messerly",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3120.24,
+       "expenditures": 0.0,
+       "status": "$3,005.45",
+       "url": "/id/candidate/joseph-messerly?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Kevin Andrus",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 19100.0,
+       "expenditures": 0.0,
+       "status": "$993.00",
+       "url": "/id/candidate/kevin-andrus?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chad Christensen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/id/candidate/chad-christensen?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 35B",
+   "url": "/id/race/idaho-house-of-representatives-district-35b-66069",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 119211.0,
+   "totalExpenditures": 122084.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Josh Wheeler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 64023.37,
+       "expenditures": 0.0,
+       "status": "$52,074.45",
+       "url": "/id/candidate/josh-wheeler?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Marguerite Shaw",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9738.35,
+       "expenditures": 0.0,
+       "status": "$9,738.35",
+       "url": "/id/candidate/marguerite-shaw?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Marguerite Shaw",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9738.35,
+       "expenditures": 0.0,
+       "status": "$9,738.35",
+       "url": "/id/candidate/marguerite-shaw?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Josh Wheeler",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 64023.37,
+       "expenditures": 0.0,
+       "status": "$52,074.45",
+       "url": "/id/candidate/josh-wheeler?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brett Skidmore",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45449.0,
+       "expenditures": 7000.0,
+       "status": "$60,271.20",
+       "url": "/id/candidate/brett-skidmore?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 3A",
+   "url": "/id/race/idaho-house-of-representatives-district-3a-66070",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 12304.0,
+   "totalExpenditures": 5273.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Vito Barbieri",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 10878.72,
+       "expenditures": 0.0,
+       "status": "$3,847.70",
+       "url": "/id/candidate/vito-barbieri?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dale Broadsword",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1425.0,
+       "expenditures": 0.0,
+       "status": "$1,425.00",
+       "url": "/id/candidate/dale-broadsword?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Dale Broadsword",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1425.0,
+       "expenditures": 0.0,
+       "status": "$1,425.00",
+       "url": "/id/candidate/dale-broadsword?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Vito Barbieri",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 10878.72,
+       "expenditures": 0.0,
+       "status": "$3,847.70",
+       "url": "/id/candidate/vito-barbieri?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 3B",
+   "url": "/id/race/idaho-house-of-representatives-district-3b-66071",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 29700.0,
+   "totalExpenditures": 7329.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jordan Redman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 29700.0,
+       "expenditures": 0.0,
+       "status": "$7,329.16",
+       "url": "/id/candidate/jordan-redman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Jordan Redman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 29700.0,
+       "expenditures": 0.0,
+       "status": "$7,329.16",
+       "url": "/id/candidate/jordan-redman?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 4A",
+   "url": "/id/race/idaho-house-of-representatives-district-4a-66072",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 6475.0,
+   "totalExpenditures": 26887.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Joe Alfieri",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6200.0,
+       "expenditures": 14650.65,
+       "status": "$26,886.81",
+       "url": "/id/candidate/joe-alfieri?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Angela Chandler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 275.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/id/candidate/angela-chandler?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Angela Chandler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 275.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/id/candidate/angela-chandler?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Joe Alfieri",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6200.0,
+       "expenditures": 14650.65,
+       "status": "$26,886.81",
+       "url": "/id/candidate/joe-alfieri?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 4B",
+   "url": "/id/race/idaho-house-of-representatives-district-4b-66073",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 28043.0,
+   "totalExpenditures": 47429.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Elaine Price",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 27543.41,
+       "expenditures": 20000.0,
+       "status": "$45,009.56",
+       "url": "/id/candidate/elaine-price?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Elaine Price",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 27543.41,
+       "expenditures": 20000.0,
+       "status": "$45,009.56",
+       "url": "/id/candidate/elaine-price?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Raglin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 500.0,
+       "expenditures": 2000.0,
+       "status": "$2,419.62",
+       "url": "/id/candidate/david-raglin?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 5A",
+   "url": "/id/race/idaho-house-of-representatives-district-5a-66074",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 19905.0,
+   "totalExpenditures": 15440.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ronald Mendive",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 16700.0,
+       "expenditures": 0.0,
+       "status": "$9,708.90",
+       "url": "/id/candidate/ronald-mendive?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kristy Johnson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3205.0,
+       "expenditures": 2526.36,
+       "status": "$5,731.36",
+       "url": "/id/candidate/kristy-johnson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Kristy Johnson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3205.0,
+       "expenditures": 2526.36,
+       "status": "$5,731.36",
+       "url": "/id/candidate/kristy-johnson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Ronald Mendive",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 16700.0,
+       "expenditures": 0.0,
+       "status": "$9,708.90",
+       "url": "/id/candidate/ronald-mendive?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 5B",
+   "url": "/id/race/idaho-house-of-representatives-district-5b-66075",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 6150.0,
+   "totalExpenditures": 4773.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tony Wisniewski",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6150.0,
+       "expenditures": 0.0,
+       "status": "$4,773.24",
+       "url": "/id/candidate/tony-wisniewski?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Tony Wisniewski",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 6150.0,
+       "expenditures": 0.0,
+       "status": "$4,773.24",
+       "url": "/id/candidate/tony-wisniewski?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 6A",
+   "url": "/id/race/idaho-house-of-representatives-district-6a-66076",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 173559.0,
+   "totalExpenditures": 178876.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lori Mccann",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 90585.0,
+       "expenditures": 0.0,
+       "status": "$98,885.62",
+       "url": "/id/candidate/lori-mccann?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Trish Carter-Goodheart",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 57426.02,
+       "expenditures": 0.0,
+       "status": "$28,150.84",
+       "url": "/id/candidate/trish-carter-goodheart?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ryan Augusta",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 196.2,
+       "expenditures": 0.0,
+       "status": "$196.20",
+       "url": "/id/candidate/ryan-augusta?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Trish Carter-Goodheart",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 57426.02,
+       "expenditures": 0.0,
+       "status": "$28,150.84",
+       "url": "/id/candidate/trish-carter-goodheart?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Lori Mccann",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 90585.0,
+       "expenditures": 0.0,
+       "status": "$98,885.62",
+       "url": "/id/candidate/lori-mccann?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Colton Bennett",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14768.56,
+       "expenditures": 0.0,
+       "status": "$20,082.51",
+       "url": "/id/candidate/colton-bennett?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Dalby",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10582.98,
+       "expenditures": 20305.5,
+       "status": "$31,560.78",
+       "url": "/id/candidate/david-dalby?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 6B",
+   "url": "/id/race/idaho-house-of-representatives-district-6b-66077",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 133759.0,
+   "totalExpenditures": 131859.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Brandon Mitchell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 51300.17,
+       "expenditures": 4000.0,
+       "status": "$50,760.58",
+       "url": "/id/candidate/brandon-mitchell?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kathy Dawes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 82459.24,
+       "expenditures": 200.0,
+       "status": "$81,098.87",
+       "url": "/id/candidate/kathy-dawes?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Kathy Dawes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 82459.24,
+       "expenditures": 200.0,
+       "status": "$81,098.87",
+       "url": "/id/candidate/kathy-dawes?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Brandon Mitchell",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 51300.17,
+       "expenditures": 4000.0,
+       "status": "$50,760.58",
+       "url": "/id/candidate/brandon-mitchell?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 7A",
+   "url": "/id/race/idaho-house-of-representatives-district-7a-66078",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 21543.0,
+   "totalExpenditures": 22017.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Kyle Harris",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7989.57,
+       "expenditures": 1900.0,
+       "status": "$8,563.96",
+       "url": "/id/candidate/kyle-harris?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Kyle Harris",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7989.57,
+       "expenditures": 1900.0,
+       "status": "$8,563.96",
+       "url": "/id/candidate/kyle-harris?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Michael Kingsley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1047.95,
+       "expenditures": 0.0,
+       "status": "$947.95",
+       "url": "/id/candidate/michael-kingsley?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jim Chmelik",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12505.0,
+       "expenditures": 0.0,
+       "status": "$12,505.00",
+       "url": "/id/candidate/jim-chmelik?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 7B",
+   "url": "/id/race/idaho-house-of-representatives-district-7b-66079",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 28420.0,
+   "totalExpenditures": 27121.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Charlie Shepherd",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 25060.0,
+       "expenditures": 0.0,
+       "status": "$22,760.21",
+       "url": "/id/candidate/charlie-shepherd?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Charlie Shepherd",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 25060.0,
+       "expenditures": 0.0,
+       "status": "$22,760.21",
+       "url": "/id/candidate/charlie-shepherd?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Larry Dunn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3360.0,
+       "expenditures": 0.0,
+       "status": "$4,360.83",
+       "url": "/id/candidate/larry-dunn?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 8A",
+   "url": "/id/race/idaho-house-of-representatives-district-8a-66080",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 69136.0,
+   "totalExpenditures": 91543.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Rob Beiswenger",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 30165.73,
+       "expenditures": 0.0,
+       "status": "$39,066.44",
+       "url": "/id/candidate/rob-beiswenger?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Rob Beiswenger",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 30165.73,
+       "expenditures": 0.0,
+       "status": "$39,066.44",
+       "url": "/id/candidate/rob-beiswenger?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Matthew Bundy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 38970.0,
+       "expenditures": 0.0,
+       "status": "$52,476.85",
+       "url": "/id/candidate/matthew-bundy?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 8B",
+   "url": "/id/race/idaho-house-of-representatives-district-8b-66081",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 64218.0,
+   "totalExpenditures": 96524.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Faye Thompson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22063.18,
+       "expenditures": 0.0,
+       "status": "$19,444.12",
+       "url": "/id/candidate/faye-thompson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jared Dawson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4455.0,
+       "expenditures": 0.0,
+       "status": "$4,858.65",
+       "url": "/id/candidate/jared-dawson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Jared Dawson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4455.0,
+       "expenditures": 0.0,
+       "status": "$4,858.65",
+       "url": "/id/candidate/jared-dawson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Faye Thompson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22063.18,
+       "expenditures": 0.0,
+       "status": "$19,444.12",
+       "url": "/id/candidate/faye-thompson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Megan Blanksma",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 37700.0,
+       "expenditures": 0.0,
+       "status": "$72,221.27",
+       "url": "/id/candidate/megan-blanksma?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8",
+   "post": "B"
+  },
+  {
+   "office": "Idaho House of Representatives District 9A",
+   "url": "/id/race/idaho-house-of-representatives-district-9a-66082",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 140263.0,
+   "totalExpenditures": 131634.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "John Shirts",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 109956.9,
+       "expenditures": 0.0,
+       "status": "$93,223.81",
+       "url": "/id/candidate/john-shirts?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "John Shirts",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 109956.9,
+       "expenditures": 0.0,
+       "status": "$93,223.81",
+       "url": "/id/candidate/john-shirts?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jacyn Gallagher",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 30306.0,
+       "expenditures": 5221.0,
+       "status": "$38,409.74",
+       "url": "/id/candidate/jacyn-gallagher?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9",
+   "post": "A"
+  },
+  {
+   "office": "Idaho House of Representatives District 9B",
+   "url": "/id/race/idaho-house-of-representatives-district-9b-66083",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 38303.0,
+   "totalExpenditures": 33350.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Judy Boyle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 26100.0,
+       "expenditures": 0.0,
+       "status": "$21,307.72",
+       "url": "/id/candidate/judy-boyle?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jody Keeler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11503.11,
+       "expenditures": 800.0,
+       "status": "$11,503.11",
+       "url": "/id/candidate/jody-keeler?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gregory Diacogiannis",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 700.0,
+       "expenditures": 0.0,
+       "status": "$538.70",
+       "url": "/id/candidate/gregory-diacogiannis?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Jody Keeler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11503.11,
+       "expenditures": 800.0,
+       "status": "$11,503.11",
+       "url": "/id/candidate/jody-keeler?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Judy Boyle",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 26100.0,
+       "expenditures": 0.0,
+       "status": "$21,307.72",
+       "url": "/id/candidate/judy-boyle?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9",
+   "post": "B"
+  },
+  {
+   "office": "Idaho State Senate District 1",
+   "url": "/id/race/idaho-state-senate-district-1-65979",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 236231.0,
+   "totalExpenditures": 265805.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "James Woodward",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 130281.0,
+       "expenditures": 0.0,
+       "status": "$134,280.25",
+       "url": "/id/candidate/james-woodward?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Steven Johnson",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 12566.44,
+       "expenditures": 3100.0,
+       "status": "$13,507.98",
+       "url": "/id/candidate/steven-johnson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Daniel Rose",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 2643.75,
+       "expenditures": 0.0,
+       "status": "$2,440.72",
+       "url": "/id/candidate/daniel-rose?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "James Woodward",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 130281.0,
+       "expenditures": 0.0,
+       "status": "$134,280.25",
+       "url": "/id/candidate/james-woodward?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Scott Herndon",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 90739.78,
+       "expenditures": 0.0,
+       "status": "$115,576.41",
+       "url": "/id/candidate/scott-herndon?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "1"
+  },
+  {
+   "office": "Idaho State Senate District 10",
+   "url": "/id/race/idaho-state-senate-district-10-65980",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 112637.0,
+   "totalExpenditures": 112651.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tammy Nichols",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 45600.82,
+       "expenditures": 0.0,
+       "status": "$42,267.35",
+       "url": "/id/candidate/tammy-nichols?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Letishia Silva",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 875.0,
+       "expenditures": 0.0,
+       "status": "$500.93",
+       "url": "/id/candidate/letishia-silva?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Letishia Silva",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 875.0,
+       "expenditures": 0.0,
+       "status": "$500.93",
+       "url": "/id/candidate/letishia-silva?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Tammy Nichols",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 45600.82,
+       "expenditures": 0.0,
+       "status": "$42,267.35",
+       "url": "/id/candidate/tammy-nichols?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lori Bishop",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 66161.27,
+       "expenditures": 0.0,
+       "status": "$69,882.49",
+       "url": "/id/candidate/lori-bishop?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "10"
+  },
+  {
+   "office": "Idaho State Senate District 11",
+   "url": "/id/race/idaho-state-senate-district-11-65981",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 65848.0,
+   "totalExpenditures": 34899.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Camille Blaylock",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54698.53,
+       "expenditures": 0.0,
+       "status": "$28,548.30",
+       "url": "/id/candidate/camille-blaylock?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Camille Blaylock",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54698.53,
+       "expenditures": 0.0,
+       "status": "$28,548.30",
+       "url": "/id/candidate/camille-blaylock?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chris Trakel",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 11149.62,
+       "expenditures": 0.0,
+       "status": "$6,350.76",
+       "url": "/id/candidate/chris-trakel?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "11"
+  },
+  {
+   "office": "Idaho State Senate District 12",
+   "url": "/id/race/idaho-state-senate-district-12-65982",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 30375.0,
+   "totalExpenditures": 17757.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ben Adams",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 30375.0,
+       "expenditures": 0.0,
+       "status": "$17,756.91",
+       "url": "/id/candidate/ben-adams?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Ben Adams",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 30375.0,
+       "expenditures": 0.0,
+       "status": "$17,756.91",
+       "url": "/id/candidate/ben-adams?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "12"
+  },
+  {
+   "office": "Idaho State Senate District 13",
+   "url": "/id/race/idaho-state-senate-district-13-65983",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 116268.0,
+   "totalExpenditures": 124967.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Brian Lenney",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 50788.32,
+       "expenditures": 0.0,
+       "status": "$57,700.94",
+       "url": "/id/candidate/brian-lenney?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Brian Lenney",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 50788.32,
+       "expenditures": 0.0,
+       "status": "$57,700.94",
+       "url": "/id/candidate/brian-lenney?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jeff Agenbroad",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 65479.71,
+       "expenditures": 20000.0,
+       "status": "$67,266.07",
+       "url": "/id/candidate/jeff-agenbroad?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "13"
+  },
+  {
+   "office": "Idaho State Senate District 14",
+   "url": "/id/race/idaho-state-senate-district-14-65984",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 670.0,
+   "totalExpenditures": 439.0,
+   "elections": [
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Mac Raslan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 670.0,
+       "expenditures": 0.0,
+       "status": "$438.78",
+       "url": "/id/candidate/mac-raslan?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "14"
+  },
+  {
+   "office": "Idaho State Senate District 15",
+   "url": "/id/race/idaho-state-senate-district-15-65985",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 96867.0,
+   "totalExpenditures": 116663.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Codi Galloway",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 96867.12,
+       "expenditures": 20000.0,
+       "status": "$116,663.47",
+       "url": "/id/candidate/codi-galloway?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Codi Galloway",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 96867.12,
+       "expenditures": 20000.0,
+       "status": "$116,663.47",
+       "url": "/id/candidate/codi-galloway?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "15"
+  },
+  {
+   "office": "Idaho State Senate District 16",
+   "url": "/id/race/idaho-state-senate-district-16-65986",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 35542.0,
+   "totalExpenditures": 34343.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ali Rabe",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 32892.19,
+       "expenditures": 0.0,
+       "status": "$30,127.11",
+       "url": "/id/candidate/ali-rabe?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Douglas Rich",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2617.77,
+       "expenditures": 3123.07,
+       "status": "$4,183.75",
+       "url": "/id/candidate/douglas-rich?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Ali Rabe",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 32892.19,
+       "expenditures": 0.0,
+       "status": "$30,127.11",
+       "url": "/id/candidate/ali-rabe?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Justin Mitson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 31.9,
+       "expenditures": 0.0,
+       "status": "$31.90",
+       "url": "/id/candidate/justin-mitson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "16"
+  },
+  {
+   "office": "Idaho State Senate District 17",
+   "url": "/id/race/idaho-state-senate-district-17-65987",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 22526.0,
+   "totalExpenditures": 15243.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Carrie Semmelroth",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 22526.11,
+       "expenditures": 0.0,
+       "status": "$15,242.75",
+       "url": "/id/candidate/carrie-semmelroth?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Carrie Semmelroth",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 22526.11,
+       "expenditures": 0.0,
+       "status": "$15,242.75",
+       "url": "/id/candidate/carrie-semmelroth?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "17"
+  },
+  {
+   "office": "Idaho State Senate District 18",
+   "url": "/id/race/idaho-state-senate-district-18-65988",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 76606.0,
+   "totalExpenditures": 73054.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Janie Ward-Engelking",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 65745.0,
+       "expenditures": 0.0,
+       "status": "$62,360.42",
+       "url": "/id/candidate/janie-ward-engelking?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dan Bridges",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10860.53,
+       "expenditures": 0.0,
+       "status": "$10,693.40",
+       "url": "/id/candidate/dan-bridges?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Janie Ward-Engelking",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 65745.0,
+       "expenditures": 0.0,
+       "status": "$62,360.42",
+       "url": "/id/candidate/janie-ward-engelking?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Dan Bridges",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10860.53,
+       "expenditures": 0.0,
+       "status": "$10,693.40",
+       "url": "/id/candidate/dan-bridges?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "18"
+  },
+  {
+   "office": "Idaho State Senate District 19",
+   "url": "/id/race/idaho-state-senate-district-19-65989",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 64370.0,
+   "totalExpenditures": 78893.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Melissa Wintrow",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 64370.0,
+       "expenditures": 0.0,
+       "status": "$78,892.71",
+       "url": "/id/candidate/melissa-wintrow?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Melissa Wintrow",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 64370.0,
+       "expenditures": 0.0,
+       "status": "$78,892.71",
+       "url": "/id/candidate/melissa-wintrow?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "19"
+  },
+  {
+   "office": "Idaho State Senate District 2",
+   "url": "/id/race/idaho-state-senate-district-2-65990",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 27973.0,
+   "totalExpenditures": 22016.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Phil Hart",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 27973.0,
+       "expenditures": 0.0,
+       "status": "$22,015.60",
+       "url": "/id/candidate/phil-hart?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Phil Hart",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 27973.0,
+       "expenditures": 0.0,
+       "status": "$22,015.60",
+       "url": "/id/candidate/phil-hart?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "2"
+  },
+  {
+   "office": "Idaho State Senate District 20",
+   "url": "/id/race/idaho-state-senate-district-20-65991",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 95485.0,
+   "totalExpenditures": 123674.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Josh Keyser",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24274.36,
+       "expenditures": 0.0,
+       "status": "$30,563.69",
+       "url": "/id/candidate/josh-keyser?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Josh Keyser",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24274.36,
+       "expenditures": 0.0,
+       "status": "$30,563.69",
+       "url": "/id/candidate/josh-keyser?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chuck Winder",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 71210.87,
+       "expenditures": 0.0,
+       "status": "$93,110.57",
+       "url": "/id/candidate/chuck-winder?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "20"
+  },
+  {
+   "office": "Idaho State Senate District 21",
+   "url": "/id/race/idaho-state-senate-district-21-65992",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 77449.0,
+   "totalExpenditures": 45422.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Treg Bernt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 70564.37,
+       "expenditures": 10000.0,
+       "status": "$38,537.43",
+       "url": "/id/candidate/treg-bernt?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Treg Bernt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 70564.37,
+       "expenditures": 10000.0,
+       "status": "$38,537.43",
+       "url": "/id/candidate/treg-bernt?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brenda Bourn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6884.89,
+       "expenditures": 0.0,
+       "status": "$6,884.89",
+       "url": "/id/candidate/brenda-bourn?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "21"
+  },
+  {
+   "office": "Idaho State Senate District 22",
+   "url": "/id/race/idaho-state-senate-district-22-65993",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 33850.0,
+   "totalExpenditures": 23068.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lori Den Hartog",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 33850.0,
+       "expenditures": 0.0,
+       "status": "$23,067.71",
+       "url": "/id/candidate/lori-den-hartog?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Lori Den Hartog",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 33850.0,
+       "expenditures": 0.0,
+       "status": "$23,067.71",
+       "url": "/id/candidate/lori-den-hartog?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "22"
+  },
+  {
+   "office": "Idaho State Senate District 23",
+   "url": "/id/race/idaho-state-senate-district-23-65994",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 29150.0,
+   "totalExpenditures": 13028.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Todd Lakey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 29150.0,
+       "expenditures": 0.0,
+       "status": "$13,028.48",
+       "url": "/id/candidate/todd-lakey?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Todd Lakey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 29150.0,
+       "expenditures": 0.0,
+       "status": "$13,028.48",
+       "url": "/id/candidate/todd-lakey?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "23"
+  },
+  {
+   "office": "Idaho State Senate District 24",
+   "url": "/id/race/idaho-state-senate-district-24-65995",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 102536.0,
+   "totalExpenditures": 118773.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Glenneda Zuiderveld",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 42023.65,
+       "expenditures": 0.0,
+       "status": "$57,006.28",
+       "url": "/id/candidate/glenneda-zuiderveld?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Glenneda Zuiderveld",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 42023.65,
+       "expenditures": 0.0,
+       "status": "$57,006.28",
+       "url": "/id/candidate/glenneda-zuiderveld?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Alexandra Caval",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 60512.18,
+       "expenditures": 10000.0,
+       "status": "$61,766.53",
+       "url": "/id/candidate/alexandra-caval?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "24"
+  },
+  {
+   "office": "Idaho State Senate District 25",
+   "url": "/id/race/idaho-state-senate-district-25-65996",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 62257.0,
+   "totalExpenditures": 88386.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Josh Kohl",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20713.04,
+       "expenditures": 8000.0,
+       "status": "$31,080.95",
+       "url": "/id/candidate/josh-kohl?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Josh Kohl",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20713.04,
+       "expenditures": 8000.0,
+       "status": "$31,080.95",
+       "url": "/id/candidate/josh-kohl?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Linda Wright Hartgen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 41544.01,
+       "expenditures": 561.74,
+       "status": "$57,305.50",
+       "url": "/id/candidate/linda-wright-hartgen?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "25"
+  },
+  {
+   "office": "Idaho State Senate District 26",
+   "url": "/id/race/idaho-state-senate-district-26-65997",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 167382.0,
+   "totalExpenditures": 137545.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ron Taylor",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 73473.41,
+       "expenditures": 0.0,
+       "status": "$33,564.41",
+       "url": "/id/candidate/ron-taylor?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Laurie Lickley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 86340.58,
+       "expenditures": 0.0,
+       "status": "$96,212.47",
+       "url": "/id/candidate/laurie-lickley?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kala Tate",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 7567.61,
+       "expenditures": 317.11,
+       "status": "$7,767.79",
+       "url": "/id/candidate/kala-tate?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Ron Taylor",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 73473.41,
+       "expenditures": 0.0,
+       "status": "$33,564.41",
+       "url": "/id/candidate/ron-taylor?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Laurie Lickley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 86340.58,
+       "expenditures": 0.0,
+       "status": "$96,212.47",
+       "url": "/id/candidate/laurie-lickley?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "26"
+  },
+  {
+   "office": "Idaho State Senate District 27",
+   "url": "/id/race/idaho-state-senate-district-27-65998",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 59967.0,
+   "totalExpenditures": 57418.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Kelly Anthon",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 59966.61,
+       "expenditures": 0.0,
+       "status": "$57,418.18",
+       "url": "/id/candidate/kelly-anthon?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Kelly Anthon",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 59966.61,
+       "expenditures": 0.0,
+       "status": "$57,418.18",
+       "url": "/id/candidate/kelly-anthon?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "27"
+  },
+  {
+   "office": "Idaho State Senate District 28",
+   "url": "/id/race/idaho-state-senate-district-28-65999",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 55133.0,
+   "totalExpenditures": 33331.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jim Guthrie",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 53230.05,
+       "expenditures": 0.0,
+       "status": "$23,217.07",
+       "url": "/id/candidate/jim-guthrie?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mike Saville",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 1903.0,
+       "expenditures": 8211.0,
+       "status": "$10,114.00",
+       "url": "/id/candidate/mike-saville?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Jim Guthrie",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 53230.05,
+       "expenditures": 0.0,
+       "status": "$23,217.07",
+       "url": "/id/candidate/jim-guthrie?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "28"
+  },
+  {
+   "office": "Idaho State Senate District 29",
+   "url": "/id/race/idaho-state-senate-district-29-66000",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 94778.0,
+   "totalExpenditures": 77857.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "James Ruchti",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 94777.6,
+       "expenditures": 0.0,
+       "status": "$77,857.17",
+       "url": "/id/candidate/james-ruchti?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "James Ruchti",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 94777.6,
+       "expenditures": 0.0,
+       "status": "$77,857.17",
+       "url": "/id/candidate/james-ruchti?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "29"
+  },
+  {
+   "office": "Idaho State Senate District 3",
+   "url": "/id/race/idaho-state-senate-district-3-66001",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 27350.0,
+   "totalExpenditures": 11899.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Douglas Okuniewicz",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 27350.0,
+       "expenditures": 7430.08,
+       "status": "$11,899.43",
+       "url": "/id/candidate/douglas-okuniewicz?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brian Seguin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/id/candidate/brian-seguin?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Brian Seguin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/id/candidate/brian-seguin?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Douglas Okuniewicz",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 27350.0,
+       "expenditures": 7430.08,
+       "status": "$11,899.43",
+       "url": "/id/candidate/douglas-okuniewicz?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "3"
+  },
+  {
+   "office": "Idaho State Senate District 30",
+   "url": "/id/race/idaho-state-senate-district-30-66002",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 74987.0,
+   "totalExpenditures": 72973.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Julie Vanorden",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 59543.57,
+       "expenditures": 8839.96,
+       "status": "$58,890.55",
+       "url": "/id/candidate/julie-vanorden?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Julie Vanorden",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 59543.57,
+       "expenditures": 8839.96,
+       "status": "$58,890.55",
+       "url": "/id/candidate/julie-vanorden?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jerry Bingham",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15443.9,
+       "expenditures": 0.0,
+       "status": "$14,082.87",
+       "url": "/id/candidate/jerry-bingham?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "30"
+  },
+  {
+   "office": "Idaho State Senate District 31",
+   "url": "/id/race/idaho-state-senate-district-31-66003",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 33025.0,
+   "totalExpenditures": 30068.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Van Burtenshaw",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 33024.8,
+       "expenditures": 0.0,
+       "status": "$30,068.40",
+       "url": "/id/candidate/van-burtenshaw?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Van Burtenshaw",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 33024.8,
+       "expenditures": 0.0,
+       "status": "$30,068.40",
+       "url": "/id/candidate/van-burtenshaw?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "31"
+  },
+  {
+   "office": "Idaho State Senate District 32",
+   "url": "/id/race/idaho-state-senate-district-32-66004",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 76214.0,
+   "totalExpenditures": 75747.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Kevin Cook",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 63499.85,
+       "expenditures": 0.0,
+       "status": "$63,153.85",
+       "url": "/id/candidate/kevin-cook?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Kevin Cook",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 63499.85,
+       "expenditures": 0.0,
+       "status": "$63,153.85",
+       "url": "/id/candidate/kevin-cook?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Keith Newberry",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12713.81,
+       "expenditures": 7643.0,
+       "status": "$12,593.35",
+       "url": "/id/candidate/keith-newberry?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "32"
+  },
+  {
+   "office": "Idaho State Senate District 33",
+   "url": "/id/race/idaho-state-senate-district-33-66005",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 36268.0,
+   "totalExpenditures": 30698.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Dave Lent",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 33012.07,
+       "expenditures": 0.0,
+       "status": "$26,322.65",
+       "url": "/id/candidate/dave-lent?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Dave Lent",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 33012.07,
+       "expenditures": 0.0,
+       "status": "$26,322.65",
+       "url": "/id/candidate/dave-lent?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Bryan Scholz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3256.0,
+       "expenditures": 971.17,
+       "status": "$4,375.33",
+       "url": "/id/candidate/bryan-scholz?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "33"
+  },
+  {
+   "office": "Idaho State Senate District 34",
+   "url": "/id/race/idaho-state-senate-district-34-66006",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 26750.0,
+   "totalExpenditures": 8152.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Douglas Ricks",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 24855.27,
+       "expenditures": 0.0,
+       "status": "$6,156.46",
+       "url": "/id/candidate/douglas-ricks?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Marsha Craner",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1895.12,
+       "expenditures": 0.0,
+       "status": "$1,995.12",
+       "url": "/id/candidate/marsha-craner?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Marsha Craner",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1895.12,
+       "expenditures": 0.0,
+       "status": "$1,995.12",
+       "url": "/id/candidate/marsha-craner?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Douglas Ricks",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 24855.27,
+       "expenditures": 0.0,
+       "status": "$6,156.46",
+       "url": "/id/candidate/douglas-ricks?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "34"
+  },
+  {
+   "office": "Idaho State Senate District 35",
+   "url": "/id/race/idaho-state-senate-district-35-66007",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 102635.0,
+   "totalExpenditures": 76624.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mark Harris",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 85666.0,
+       "expenditures": 0.0,
+       "status": "$56,268.27",
+       "url": "/id/candidate/mark-harris?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Mark Harris",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 85666.0,
+       "expenditures": 0.0,
+       "status": "$56,268.27",
+       "url": "/id/candidate/mark-harris?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Douglas Toomer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16969.2,
+       "expenditures": 3500.0,
+       "status": "$20,355.40",
+       "url": "/id/candidate/douglas-toomer?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "35"
+  },
+  {
+   "office": "Idaho State Senate District 4",
+   "url": "/id/race/idaho-state-senate-district-4-66008",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 23685.0,
+   "totalExpenditures": 13543.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ben Toews",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20670.28,
+       "expenditures": 0.0,
+       "status": "$11,909.69",
+       "url": "/id/candidate/ben-toews?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Carissa Hober",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3015.0,
+       "expenditures": 0.0,
+       "status": "$1,632.81",
+       "url": "/id/candidate/carissa-hober?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Carissa Hober",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3015.0,
+       "expenditures": 0.0,
+       "status": "$1,632.81",
+       "url": "/id/candidate/carissa-hober?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Ben Toews",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 20670.28,
+       "expenditures": 0.0,
+       "status": "$11,909.69",
+       "url": "/id/candidate/ben-toews?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "4"
+  },
+  {
+   "office": "Idaho State Senate District 5",
+   "url": "/id/race/idaho-state-senate-district-5-66009",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 31289.0,
+   "totalExpenditures": 19493.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Carl Bjerke",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 28216.0,
+       "expenditures": 0.0,
+       "status": "$11,065.70",
+       "url": "/id/candidate/carl-bjerke?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Carl Bjerke",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 28216.0,
+       "expenditures": 0.0,
+       "status": "$11,065.70",
+       "url": "/id/candidate/carl-bjerke?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Cheri Zao",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3073.0,
+       "expenditures": 6745.0,
+       "status": "$8,427.54",
+       "url": "/id/candidate/cheri-zao?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "5"
+  },
+  {
+   "office": "Idaho State Senate District 6",
+   "url": "/id/race/idaho-state-senate-district-6-66010",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 163519.0,
+   "totalExpenditures": 151820.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Daniel Foreman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 23960.0,
+       "expenditures": 0.0,
+       "status": "$21,987.12",
+       "url": "/id/candidate/daniel-foreman?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Julia Parker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 114638.64,
+       "expenditures": 0.0,
+       "status": "$101,671.74",
+       "url": "/id/candidate/julia-parker?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Julia Parker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 114638.64,
+       "expenditures": 0.0,
+       "status": "$101,671.74",
+       "url": "/id/candidate/julia-parker?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Daniel Foreman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 23960.0,
+       "expenditures": 0.0,
+       "status": "$21,987.12",
+       "url": "/id/candidate/daniel-foreman?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Robert Blair",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24920.31,
+       "expenditures": 3500.0,
+       "status": "$28,161.50",
+       "url": "/id/candidate/robert-blair?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "6"
+  },
+  {
+   "office": "Idaho State Senate District 7",
+   "url": "/id/race/idaho-state-senate-district-7-66011",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 26619.0,
+   "totalExpenditures": 42653.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Cindy Carlson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 19898.31,
+       "expenditures": 5950.0,
+       "status": "$36,345.93",
+       "url": "/id/candidate/cindy-carlson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Bill Farmer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6721.0,
+       "expenditures": 0.0,
+       "status": "$6,307.25",
+       "url": "/id/candidate/bill-farmer?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Bill Farmer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6721.0,
+       "expenditures": 0.0,
+       "status": "$6,307.25",
+       "url": "/id/candidate/bill-farmer?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Cindy Carlson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 19898.31,
+       "expenditures": 5950.0,
+       "status": "$36,345.93",
+       "url": "/id/candidate/cindy-carlson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "7"
+  },
+  {
+   "office": "Idaho State Senate District 8",
+   "url": "/id/race/idaho-state-senate-district-8-66012",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 35203.0,
+   "totalExpenditures": 31617.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Christy Zito",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/id/candidate/christy-zito?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Christy Zito",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/id/candidate/christy-zito?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Geoffrey Schroeder",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 35202.7,
+       "expenditures": 0.0,
+       "status": "$31,616.68",
+       "url": "/id/candidate/geoffrey-schroeder?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "8"
+  },
+  {
+   "office": "Idaho State Senate District 9",
+   "url": "/id/race/idaho-state-senate-district-9-66013",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 59939.0,
+   "totalExpenditures": 91440.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Brandon Shippy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 55878.0,
+       "expenditures": 300.0,
+       "status": "$87,820.14",
+       "url": "/id/candidate/brandon-shippy?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Rachel Buck",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4061.43,
+       "expenditures": 0.0,
+       "status": "$3,620.01",
+       "url": "/id/candidate/rachel-buck?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Rachel Buck",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4061.43,
+       "expenditures": 0.0,
+       "status": "$3,620.01",
+       "url": "/id/candidate/rachel-buck?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "May 21, 2024",
+     "candidates": [
+      {
+       "name": "Brandon Shippy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 55878.0,
+       "expenditures": 300.0,
+       "status": "$87,820.14",
+       "url": "/id/candidate/brandon-shippy?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "9"
+  }
+ ]
+}

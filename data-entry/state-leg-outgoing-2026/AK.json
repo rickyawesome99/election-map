@@ -1,0 +1,86 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 Alaska House of Representatives election",
+   "senate": "2026 Alaska Senate election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "13": [
+   {
+    "name": "Andy Josephson",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "18": [
+   {
+    "name": "David Nelson",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "24": [
+   {
+    "name": "Dan Saddler",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "34": [
+   {
+    "name": "Frank Tomaszewski",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for State Senate"
+   }
+  ],
+  "37": [
+   {
+    "name": "Bryce Edgmon",
+    "party": "O",
+    "category": "running for other office",
+    "reason": "retiring to run for State Senate"
+   }
+  ],
+  "5": [
+   {
+    "name": "Louise Stutes",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for State Senate"
+   }
+  ]
+ },
+ "senate": {
+  "C": [
+   {
+    "name": "Gary Stevens",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "Q": [
+   {
+    "name": "Robert Myers Jr.",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "S": [
+   {
+    "name": "Lyman Hoffman",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ]
+ }
+}

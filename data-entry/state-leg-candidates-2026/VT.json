@@ -1,0 +1,2132 @@
+{
+ "house": {
+  "Addison-1": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Robin Scheu",
+     "party": "D"
+    },
+    {
+     "name": "Mike Roy",
+     "party": "D"
+    }
+   ],
+   "seats": 2
+  },
+  "Addison-2": {
+   "candidates": [
+    {
+     "name": "Tanya Byker",
+     "party": "D"
+    },
+    {
+     "name": "Annie Wilson",
+     "party": "R"
+    }
+   ]
+  },
+  "Addison-3": {
+   "candidates": [
+    {
+     "name": "John Stroup",
+     "party": "D"
+    },
+    {
+     "name": "Ariel Bolles",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Rob North",
+     "party": "R"
+    },
+    {
+     "name": "Joe Baker",
+     "party": "R"
+    },
+    {
+     "name": "Ariel Bolles",
+     "party": "D",
+     "partyLabel": "Democratic Party, Vermont Progressive Party"
+    }
+   ],
+   "seats": 2
+  },
+  "Addison-4": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Karen Lueders",
+     "party": "D"
+    },
+    {
+     "name": "Jeanne Albert",
+     "party": "D"
+    },
+    {
+     "name": "Lynn Dike",
+     "party": "R"
+    },
+    {
+     "name": "Chanin Hill",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Addison-5": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jubilee McGill",
+     "party": "D"
+    },
+    {
+     "name": "Del Thompson",
+     "party": "R"
+    }
+   ]
+  },
+  "Addison-Rutland": {
+   "candidates": [
+    {
+     "name": "Jonathan Hescock",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jim Casey",
+     "party": "R"
+    }
+   ]
+  },
+  "Bennington-1": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jonathan Cooper",
+     "party": "D"
+    },
+    {
+     "name": "Charles Jewett",
+     "party": "R"
+    }
+   ]
+  },
+  "Bennington-2": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Timothy Corcoran II",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Will Greer",
+     "party": "D"
+    },
+    {
+     "name": "Anthony Cook",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Bennington-3": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "David Durfee",
+     "party": "D"
+    },
+    {
+     "name": "Victor Harwood Jr.",
+     "party": "R"
+    }
+   ]
+  },
+  "Bennington-4": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Rob Hunter",
+     "party": "D"
+    },
+    {
+     "name": "Thomas West",
+     "party": "D"
+    },
+    {
+     "name": "Al Clayton",
+     "party": "R"
+    },
+    {
+     "name": "Michael Fernandez",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ],
+   "seats": 2
+  },
+  "Bennington-5": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Michael Nigro",
+     "party": "D"
+    },
+    {
+     "name": "Tom Blakely",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mary Morrissey",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Bennington-Rutland": {
+   "candidates": [
+    {
+     "name": "Mike Rice",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Sandy Pinsonault",
+     "party": "R"
+    }
+   ]
+  },
+  "Caledonia-1": {
+   "candidates": [
+    {
+     "name": "David Tucker",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Debra Powers",
+     "party": "R"
+    }
+   ]
+  },
+  "Caledonia-2": {
+   "candidates": [
+    {
+     "name": "Audrey Grant",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Michael Southworth",
+     "party": "R"
+    }
+   ]
+  },
+  "Caledonia-3": {
+   "candidates": [
+    {
+     "name": "Dennis LaBounty",
+     "party": "D"
+    },
+    {
+     "name": "Bill Coleman",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Beth Quimby",
+     "party": "R"
+    },
+    {
+     "name": "Erik LaVallee",
+     "party": "R"
+    },
+    {
+     "name": "Bill Coleman",
+     "party": "D",
+     "partyLabel": "Vermont Progressive Party, Democratic Party"
+    }
+   ],
+   "seats": 2
+  },
+  "Caledonia-Essex": {
+   "candidates": [
+    {
+     "name": "Amanda Cochrane",
+     "party": "D"
+    },
+    {
+     "name": "Heather Whitemore Young",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Deborah Cordz Dolgin",
+     "party": "R"
+    },
+    {
+     "name": "Steven Dolgin",
+     "party": "R"
+    },
+    {
+     "name": "Brandolyn Bradley",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ],
+   "seats": 2
+  },
+  "Caledonia-Washington": {
+   "candidates": [
+    {
+     "name": "Eric Bach",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Greg Burtt",
+     "party": "R"
+    }
+   ]
+  },
+  "Chittenden-1": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jana Brown",
+     "party": "D"
+    }
+   ]
+  },
+  "Chittenden-10": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kate Nugent",
+     "party": "D"
+    }
+   ]
+  },
+  "Chittenden-11": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Brian Minier",
+     "party": "D"
+    }
+   ]
+  },
+  "Chittenden-12": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Martin LaLonde",
+     "party": "D"
+    }
+   ]
+  },
+  "Chittenden-13": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Bram Kleppner",
+     "party": "D"
+    },
+    {
+     "name": "Karen Paul",
+     "party": "D"
+    }
+   ],
+   "seats": 2
+  },
+  "Chittenden-14": {
+   "candidates": [
+    {
+     "name": "Elizabeth Allen-Pennebaker",
+     "party": "D"
+    },
+    {
+     "name": "Adam Franz",
+     "party": "D"
+    },
+    {
+     "name": "Aaliyah Davila",
+     "party": "R"
+    },
+    {
+     "name": "Adam Franz",
+     "party": "D",
+     "partyLabel": "Vermont Progressive Party, Democratic Party"
+    }
+   ],
+   "seats": 2
+  },
+  "Chittenden-15": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Brian Cina",
+     "party": "D"
+    },
+    {
+     "name": "Benjamin Bosley",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Brian Cina",
+     "party": "D",
+     "partyLabel": "Vermont Progressive Party, Democratic Party"
+    },
+    {
+     "incumbent": true,
+     "name": "Troy Headrick",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ],
+   "seats": 2
+  },
+  "Chittenden-16": {
+   "candidates": [
+    {
+     "name": "Trang Do",
+     "party": "D"
+    },
+    {
+     "name": "Jeffrey Peterson",
+     "party": "D"
+    },
+    {
+     "name": "Trang Do",
+     "party": "D",
+     "partyLabel": "Vermont Progressive Party, Democratic Party"
+    },
+    {
+     "name": "Jeffrey Peterson",
+     "party": "D",
+     "partyLabel": "Vermont Progressive Party, Democratic Party"
+    },
+    {
+     "name": "Christopher Haessly",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ],
+   "seats": 2
+  },
+  "Chittenden-17": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Abbey Duke",
+     "party": "D"
+    }
+   ]
+  },
+  "Chittenden-18": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Carol Ode",
+     "party": "D"
+    },
+    {
+     "name": "Ali Dieng",
+     "party": "D"
+    },
+    {
+     "name": "Dave Hartnett",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ],
+   "seats": 2
+  },
+  "Chittenden-19": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Sarita Austin",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Wendy Critchlow",
+     "party": "D"
+    },
+    {
+     "name": "Spencer Sherman",
+     "party": "R"
+    },
+    {
+     "name": "Alex Thibault",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Chittenden-2": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Angela Arsenault",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Erin Brady",
+     "party": "D"
+    }
+   ],
+   "seats": 2
+  },
+  "Chittenden-20": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Doug Bishop",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Gayle Pezzo",
+     "party": "D"
+    },
+    {
+     "name": "Bill Bezio",
+     "party": "R"
+    },
+    {
+     "name": "Doug Wood",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Chittenden-21": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Daisy Berbeco",
+     "party": "D"
+    },
+    {
+     "name": "Matt Gile",
+     "party": "D"
+    },
+    {
+     "name": "Matt Gile",
+     "party": "D",
+     "partyLabel": "Vermont Progressive Party, Democratic Party"
+    }
+   ],
+   "seats": 2
+  },
+  "Chittenden-22": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Karen Dolan",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Lori Houghton",
+     "party": "D"
+    },
+    {
+     "name": "Brent Boerger",
+     "party": "R"
+    },
+    {
+     "name": "Seth Manley",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Chittenden-23": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Golrang Garofano",
+     "party": "D"
+    },
+    {
+     "name": "Erik Post",
+     "party": "D"
+    },
+    {
+     "name": "Pearl Beckage",
+     "party": "R"
+    },
+    {
+     "name": "Lynn U. Smith",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Chittenden-24": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Alyssa Black",
+     "party": "D"
+    },
+    {
+     "name": "Stephanie Mack",
+     "party": "R"
+    }
+   ]
+  },
+  "Chittenden-25": {
+   "candidates": [
+    {
+     "name": "Julia Andrews",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Brenda Steady",
+     "party": "R"
+    }
+   ]
+  },
+  "Chittenden-3": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Edye Graning",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Trevor Squirrell",
+     "party": "D"
+    }
+   ],
+   "seats": 2
+  },
+  "Chittenden-4": {
+   "candidates": [
+    {
+     "name": "Kelsey Pasteris",
+     "party": "D"
+    },
+    {
+     "name": "John Kingston",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "Chittenden-5": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Chea Waters Evans",
+     "party": "D"
+    }
+   ]
+  },
+  "Chittenden-6": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kate Lalley",
+     "party": "D"
+    },
+    {
+     "name": "Deb Mayfield",
+     "party": "R"
+    }
+   ]
+  },
+  "Chittenden-7": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Shawn Sweeney",
+     "party": "D"
+    }
+   ]
+  },
+  "Chittenden-8": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Bridget Burkhardt",
+     "party": "D"
+    },
+    {
+     "name": "Mitchel Cypes",
+     "party": "R"
+    }
+   ]
+  },
+  "Chittenden-9": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Emilie Krasnow",
+     "party": "D"
+    }
+   ]
+  },
+  "Chittenden-Franklin": {
+   "candidates": [
+    {
+     "name": "Henry Bonges III",
+     "party": "D"
+    },
+    {
+     "name": "Natalie Cashen",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Kumulia Long",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Anthony Micklus",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Essex-Caledonia": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "John Kascenska",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "John Kascenska",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "John Kascenska",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party"
+    }
+   ]
+  },
+  "Essex-Orleans": {
+   "candidates": [
+    {
+     "name": "David Jacobs",
+     "party": "R"
+    },
+    {
+     "name": "John Lally",
+     "party": "O",
+     "partyLabel": "Women's Liberation Vegi-Aryan Party"
+    }
+   ]
+  },
+  "Franklin-1": {
+   "candidates": [
+    {
+     "name": "Caroline Bright",
+     "party": "D"
+    },
+    {
+     "name": "Julie Filiberti",
+     "party": "D"
+    },
+    {
+     "name": "Keith Billado",
+     "party": "R"
+    },
+    {
+     "name": "Bob Stebbins",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Franklin-2": {
+   "candidates": [
+    {
+     "name": "Pam McCarthy",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Eileen Dickinson",
+     "party": "R"
+    }
+   ]
+  },
+  "Franklin-3": {
+   "candidates": [
+    {
+     "name": "Suzanne Kenyon",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Joe Luneau",
+     "party": "R"
+    }
+   ]
+  },
+  "Franklin-4": {
+   "candidates": [
+    {
+     "name": "Tamar Bouchard",
+     "party": "D"
+    },
+    {
+     "name": "Carmela Mayette",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Thomas Oliver",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Matthew Walker",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Franklin-5": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Lisa Hango",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Wayne Laroche",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Lisa Hango",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Wayne Laroche",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Lisa Hango",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party"
+    },
+    {
+     "incumbent": true,
+     "name": "Wayne Laroche",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party"
+    }
+   ],
+   "seats": 2
+  },
+  "Franklin-6": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "James Gregoire",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "James Gregoire",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "James Gregoire",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party"
+    }
+   ]
+  },
+  "Franklin-7": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Allen Demar",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Allen Demar",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Allen Demar",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party"
+    }
+   ]
+  },
+  "Franklin-8": {
+   "candidates": [
+    {
+     "name": "Zach Scheffler",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jack Brigham",
+     "party": "R"
+    }
+   ]
+  },
+  "Grand Isle-Chittenden": {
+   "candidates": [
+    {
+     "name": "Sylvia Jensen",
+     "party": "D"
+    },
+    {
+     "name": "Dave Skinner",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Michael Morgan",
+     "party": "R"
+    },
+    {
+     "name": "Josie Henry",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Lamoille-1": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jed Lipsky",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "Lamoille-2": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Daniel Noyes",
+     "party": "D"
+    },
+    {
+     "name": "Jim Lipinski",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Richard Bailey",
+     "party": "R"
+    },
+    {
+     "name": "Malcolm Teale",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Lamoille-3": {
+   "candidates": [
+    {
+     "name": "Deb Nevil",
+     "party": "D"
+    },
+    {
+     "name": "Rebecca Pitre",
+     "party": "R"
+    },
+    {
+     "name": "Adam Howard",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "Lamoille-Washington": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Saudia LaMont",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "David Yacovone",
+     "party": "D"
+    },
+    {
+     "name": "Susanna Burnham",
+     "party": "R"
+    },
+    {
+     "name": "Jason Thompson",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Orange-1": {
+   "candidates": [
+    {
+     "name": "Gregory Wilson",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Michael Tagliavia",
+     "party": "R"
+    }
+   ]
+  },
+  "Orange-2": {
+   "candidates": [
+    {
+     "name": "Lance Mills",
+     "party": "D"
+    },
+    {
+     "name": "Nicholas DiLorenzo",
+     "party": "R"
+    }
+   ]
+  },
+  "Orange-3": {
+   "candidates": [
+    {
+     "name": "Fran Covey",
+     "party": "R"
+    }
+   ]
+  },
+  "Orange-Caledonia": {
+   "candidates": [
+    {
+     "name": "Aiden Otterman",
+     "party": "D"
+    },
+    {
+     "name": "Tom Otterman",
+     "party": "R"
+    },
+    {
+     "name": "Susan Culp",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "Orange-Washington-Addison": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Larry Satcowitz",
+     "party": "D"
+    },
+    {
+     "name": "Emery Mattheis",
+     "party": "D"
+    },
+    {
+     "name": "Lance Ryan",
+     "party": "R"
+    },
+    {
+     "name": "Stephen Webster",
+     "party": "R"
+    },
+    {
+     "name": "Emery Mattheis",
+     "party": "D",
+     "partyLabel": "Vermont Progressive Party, Democratic Party"
+    }
+   ],
+   "seats": 2
+  },
+  "Orleans-1": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Richard Nelson",
+     "party": "R"
+    }
+   ]
+  },
+  "Orleans-2": {
+   "candidates": [
+    {
+     "name": "Xavier Stevens",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Woodman Page",
+     "party": "R"
+    }
+   ]
+  },
+  "Orleans-3": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Ken Wells",
+     "party": "R"
+    }
+   ]
+  },
+  "Orleans-4": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Leanne Harple",
+     "party": "D"
+    }
+   ]
+  },
+  "Orleans-Lamoille": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Mark Higley",
+     "party": "D"
+    },
+    {
+     "name": "Praneet Menon",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mark Higley",
+     "party": "R"
+    },
+    {
+     "name": "Praneet Menon",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Mark Higley",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party"
+    },
+    {
+     "name": "Praneet Menon",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party"
+    }
+   ],
+   "seats": 2
+  },
+  "Rutland-1": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Patricia McCoy",
+     "party": "R"
+    }
+   ]
+  },
+  "Rutland-10": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "William Canfield",
+     "party": "R"
+    }
+   ]
+  },
+  "Rutland-11": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Valorie Taylor",
+     "party": "R"
+    }
+   ]
+  },
+  "Rutland-2": {
+   "candidates": [
+    {
+     "name": "Marsha Cassel",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "David Bosch",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Tom Burditt",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Rutland-3": {
+   "candidates": [
+    {
+     "name": "Chris Brown",
+     "party": "R"
+    }
+   ]
+  },
+  "Rutland-4": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Christopher Howland",
+     "party": "R"
+    }
+   ]
+  },
+  "Rutland-5": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Eric Maguire",
+     "party": "R"
+    }
+   ]
+  },
+  "Rutland-6": {
+   "candidates": [
+    {
+     "name": "Chris Siliski",
+     "party": "D"
+    },
+    {
+     "name": "Cynthia Laskevich",
+     "party": "R"
+    }
+   ]
+  },
+  "Rutland-7": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Chris Keyser",
+     "party": "R"
+    }
+   ]
+  },
+  "Rutland-8": {
+   "candidates": [
+    {
+     "name": "Genevieve Duchesneau",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Alicia Malay",
+     "party": "R"
+    }
+   ]
+  },
+  "Rutland-9": {
+   "candidates": [
+    {
+     "name": "Jeff Haylon",
+     "party": "D"
+    },
+    {
+     "name": "Aida Nielsen",
+     "party": "R"
+    }
+   ]
+  },
+  "Rutland-Bennington": {
+   "candidates": [
+    {
+     "name": "Jessica Van Oort",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Chris Pritchard",
+     "party": "R"
+    },
+    {
+     "name": "Jessica Van Oort",
+     "party": "D",
+     "partyLabel": "Democratic Party, Vermont Progressive Party"
+    }
+   ]
+  },
+  "Rutland-Windsor": {
+   "candidates": [
+    {
+     "name": "Phoebe Tucker",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Kevin Winter",
+     "party": "R"
+    }
+   ]
+  },
+  "Washington-1": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kenneth Goslant",
+     "party": "D"
+    },
+    {
+     "name": "Lucas Herring",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Kenneth Goslant",
+     "party": "R"
+    },
+    {
+     "name": "Lucas Herring",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Kenneth Goslant",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party"
+    },
+    {
+     "name": "Lucas Herring",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party"
+    }
+   ],
+   "seats": 2
+  },
+  "Washington-2": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Dara Torre",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Candice White",
+     "party": "D"
+    }
+   ],
+   "seats": 2
+  },
+  "Washington-3": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Teddy Waszazak",
+     "party": "D"
+    },
+    {
+     "name": "Sonya Spaulding",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Michael Boutin",
+     "party": "R"
+    },
+    {
+     "name": "John Santorello",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Washington-4": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kate McCann",
+     "party": "D"
+    },
+    {
+     "name": "Jared Duval",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Kate McCann",
+     "party": "D",
+     "partyLabel": "Democratic Party, Vermont Progressive Party"
+    },
+    {
+     "name": "Jared Duval",
+     "party": "D",
+     "partyLabel": "Democratic Party, Vermont Progressive Party"
+    }
+   ],
+   "seats": 2
+  },
+  "Washington-5": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Elanor Chapin",
+     "party": "D"
+    }
+   ]
+  },
+  "Washington-6": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Marc Mihaly",
+     "party": "D"
+    }
+   ]
+  },
+  "Washington-Chittenden": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Theresa Wood",
+     "party": "D"
+    },
+    {
+     "name": "Katarina Lisaius",
+     "party": "D"
+    }
+   ],
+   "seats": 2
+  },
+  "Washington-Orange": {
+   "candidates": [
+    {
+     "name": "Melissa Battah",
+     "party": "D"
+    },
+    {
+     "name": "Emily Wheeler-Reynolds",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Gina Galfetti",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "David Soucy",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Windham-1": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Zon Eastes",
+     "party": "D"
+    },
+    {
+     "name": "Nancy Gassett",
+     "party": "R"
+    }
+   ]
+  },
+  "Windham-2": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Laura Sibilia",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "Windham-3": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Michelle Bos-Lun",
+     "party": "D"
+    },
+    {
+     "name": "Chris Lundberg",
+     "party": "D"
+    },
+    {
+     "name": "Nicole Cota",
+     "party": "R"
+    },
+    {
+     "name": "Ryan Coyne",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Windham-4": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Mike Mrowicki",
+     "party": "D"
+    },
+    {
+     "name": "Lynne Wilkins",
+     "party": "R"
+    },
+    {
+     "name": "Ian Diamondstone",
+     "party": "O",
+     "partyLabel": "Green Mountain Peace and Justice Party of Vermont"
+    }
+   ]
+  },
+  "Windham-5": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Emily Long",
+     "party": "D"
+    }
+   ]
+  },
+  "Windham-6": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Emily Carris-Duncan",
+     "party": "D"
+    }
+   ]
+  },
+  "Windham-7": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Emilie Kornheiser",
+     "party": "D"
+    },
+    {
+     "name": "Aaron Smith",
+     "party": "R"
+    }
+   ]
+  },
+  "Windham-8": {
+   "candidates": [
+    {
+     "name": "Daniel Quipp",
+     "party": "D"
+    },
+    {
+     "name": "Bill Harvey",
+     "party": "R"
+    }
+   ]
+  },
+  "Windham-9": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Ian Goodnow",
+     "party": "D"
+    }
+   ]
+  },
+  "Windham-Windsor-Bennington": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Christopher Morrow",
+     "party": "D"
+    },
+    {
+     "name": "E. Stuart Coleman",
+     "party": "R"
+    }
+   ]
+  },
+  "Windsor-1": {
+   "candidates": [
+    {
+     "name": "Dylan Morse",
+     "party": "D"
+    },
+    {
+     "name": "John Tansey",
+     "party": "D"
+    },
+    {
+     "name": "Rich Thomas",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ],
+   "seats": 2
+  },
+  "Windsor-2": {
+   "candidates": [
+    {
+     "name": "Mark Yuengling",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "VL Coffin",
+     "party": "R"
+    }
+   ]
+  },
+  "Windsor-3": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Alice Emmons",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Kristi Morris",
+     "party": "D"
+    },
+    {
+     "name": "Randy Gray",
+     "party": "R"
+    },
+    {
+     "name": "Judy Stern",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Windsor-4": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Michael Hoyt",
+     "party": "D"
+    },
+    {
+     "name": "Justin Schoville",
+     "party": "O",
+     "partyLabel": "Green Mountain Peace and Justice Party of Vermont"
+    },
+    {
+     "name": "Kyle Hansen",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ]
+  },
+  "Windsor-5": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Charlie Kimbell",
+     "party": "D"
+    }
+   ]
+  },
+  "Windsor-6": {
+   "candidates": [
+    {
+     "name": "Alanna Ojibway",
+     "party": "D"
+    },
+    {
+     "name": "Jimmy Coleman",
+     "party": "D"
+    },
+    {
+     "name": "Alanna Ojibway",
+     "party": "D",
+     "partyLabel": "Democratic Party, Vermont Progressive Party"
+    },
+    {
+     "name": "Jimmy Coleman",
+     "party": "D",
+     "partyLabel": "Vermont Progressive Party, Democratic Party"
+    }
+   ],
+   "seats": 2
+  },
+  "Windsor-Addison": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kirk White",
+     "party": "D"
+    },
+    {
+     "name": "Michael White",
+     "party": "R"
+    }
+   ]
+  },
+  "Windsor-Orange-1": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "John O'Brien",
+     "party": "D"
+    },
+    {
+     "name": "Bruce Post",
+     "party": "R"
+    }
+   ]
+  },
+  "Windsor-Orange-2": {
+   "candidates": [
+    {
+     "name": "Lauren Morando Rhim",
+     "party": "D"
+    },
+    {
+     "name": "Dee Gish",
+     "party": "D"
+    },
+    {
+     "name": "Dee Gish",
+     "party": "D",
+     "partyLabel": "Democratic Party, Vermont Progressive Party"
+    }
+   ],
+   "seats": 2
+  },
+  "Windsor-Windham": {
+   "candidates": [
+    {
+     "name": "Will Hoser",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Thomas Charlton",
+     "party": "R"
+    }
+   ]
+  }
+ },
+ "meta": {
+  "fetched": "2026-10-10",
+  "source": "Ballotpedia chamber election pages, 2026"
+ },
+ "senate": {
+  "Addison": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Ruth Hardy",
+     "party": "D"
+    },
+    {
+     "name": "Hannah Sessions",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Steven Heffernan",
+     "party": "R"
+    },
+    {
+     "name": "Andrew Klein",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Bennington": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Seth Bongartz",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Robert Plunkett",
+     "party": "D"
+    },
+    {
+     "name": "Lawrence Whitmire",
+     "party": "R"
+    },
+    {
+     "name": "Josh Williams",
+     "party": "R"
+    },
+    {
+     "name": "Rachel Shaw",
+     "party": "O",
+     "partyLabel": "Vermont Progressive Party"
+    }
+   ],
+   "seats": 2
+  },
+  "Caledonia": {
+   "candidates": [
+    {
+     "name": "David Roth",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Scott Beck",
+     "party": "R"
+    }
+   ]
+  },
+  "Chittenden Central": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Martine Gulick",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Tanya Vyhovsky",
+     "party": "D"
+    },
+    {
+     "name": "Nikhil Goyal",
+     "party": "D"
+    },
+    {
+     "name": "Louis Manno",
+     "party": "R"
+    }
+   ],
+   "seats": 3
+  },
+  "Chittenden North": {
+   "candidates": [
+    {
+     "name": "Irene Wrenner",
+     "party": "D"
+    },
+    {
+     "name": "Ashley Bartley",
+     "party": "R"
+    }
+   ]
+  },
+  "Chittenden South East": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Thomas Chittenden",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Virginia Lyons",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Kesha Ram Hinsdale",
+     "party": "D"
+    },
+    {
+     "name": "Bruce Roy",
+     "party": "R"
+    },
+    {
+     "name": "Javen Sears",
+     "party": "R"
+    },
+    {
+     "name": "Rohan St. Marthe",
+     "party": "R"
+    }
+   ],
+   "seats": 3
+  },
+  "Essex": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Russ Ingalls",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Russ Ingalls",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Russ Ingalls",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party"
+    }
+   ]
+  },
+  "Franklin": {
+   "candidates": [
+    {
+     "name": "Alexander Bobella",
+     "party": "D"
+    },
+    {
+     "name": "Gregory Rainville",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Randy Brock",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Robert Norris",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Grand Isle": {
+   "candidates": [
+    {
+     "name": "Kim Gleason",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Patrick Brennan",
+     "party": "R"
+    }
+   ]
+  },
+  "Lamoille": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Richard Westman",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Richard Westman",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Richard Westman",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party"
+    }
+   ]
+  },
+  "Orange": {
+   "candidates": [
+    {
+     "name": "Monique Priestley",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "John Benson",
+     "party": "R"
+    }
+   ]
+  },
+  "Orleans": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "John Morley, III",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "John Morley, III",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "John Morley, III",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party"
+    }
+   ]
+  },
+  "Rutland": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Brian Collamore",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "David Weeks",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Terry Williams",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Brian Collamore",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "David Weeks",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Terry Williams",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Brian Collamore",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party"
+    },
+    {
+     "incumbent": true,
+     "name": "David Weeks",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party"
+    },
+    {
+     "incumbent": true,
+     "name": "Terry Williams",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party"
+    },
+    {
+     "name": "David Wolk",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ],
+   "seats": 3
+  },
+  "Washington": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Ann Cummings",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Andrew Perchlik",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Anne Watson",
+     "party": "D"
+    },
+    {
+     "name": "Rob LaClair",
+     "party": "R"
+    },
+    {
+     "name": "Christopher Neddo",
+     "party": "R"
+    },
+    {
+     "name": "Peter Schmeeckle",
+     "party": "R"
+    }
+   ],
+   "seats": 3
+  },
+  "Windham": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Wendy Harrison",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Nader Hashim",
+     "party": "D"
+    },
+    {
+     "name": "Dale Gassett",
+     "party": "R"
+    },
+    {
+     "name": "Rusty Sage",
+     "party": "R"
+    }
+   ],
+   "seats": 2
+  },
+  "Windsor": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Joe Major",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Rebecca White",
+     "party": "D"
+    },
+    {
+     "name": "Elizabeth Burrows",
+     "party": "D"
+    },
+    {
+     "name": "Jonathan Gleason",
+     "party": "R"
+    },
+    {
+     "name": "Andrea Murray",
+     "party": "R"
+    },
+    {
+     "name": "Jack Williams",
+     "party": "R"
+    },
+    {
+     "name": "Joe Izzo",
+     "party": "O",
+     "partyLabel": "Independent"
+    }
+   ],
+   "seats": 3
+  }
+ }
+}

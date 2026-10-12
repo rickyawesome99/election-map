@@ -12,7 +12,9 @@
      {
       "name": "Christopher Lt Todd",
       "party": "D",
-      "votes": 5821
+      "votes": 5821,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Kanoa Wilson",
@@ -35,7 +37,9 @@
      {
       "name": "Greggor Ilagan",
       "party": "D",
-      "votes": 6573
+      "votes": 6573,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Keikilani Ho",
@@ -53,7 +57,9 @@
      {
       "name": "Jeanne Kapela",
       "party": "D",
-      "votes": 5737
+      "votes": 5737,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Ashley Oyama",
@@ -76,7 +82,9 @@
      {
       "name": "Kirstin Kahaloa",
       "party": "D",
-      "votes": 6221
+      "votes": 6221,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Sylvie M Madison",
@@ -94,7 +102,9 @@
      {
       "name": "Nicole Lowen",
       "party": "D",
-      "votes": 4920
+      "votes": 4920,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Timothy A \"Tim\" Dalhouse",
@@ -112,7 +122,9 @@
      {
       "name": "David A Tarnas",
       "party": "D",
-      "votes": 6331
+      "votes": 6331,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Monique Cobbadams Perreira",
@@ -130,7 +142,9 @@
      {
       "name": "Terez \"Tamato\" Amato",
       "party": "D",
-      "votes": 6657
+      "votes": 6657,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Aileen R \"Lily\" Acain",
@@ -148,7 +162,9 @@
      {
       "name": "Kyle T Yamashita",
       "party": "D",
-      "votes": 7794
+      "votes": 7794,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Dan Johnson",
@@ -171,7 +187,9 @@
      {
       "name": "Mahina Poepoe",
       "party": "D",
-      "votes": 7174
+      "votes": 7174,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Scott Adam",
@@ -189,7 +207,9 @@
      {
       "name": "Elle Cochran",
       "party": "D",
-      "votes": 4303
+      "votes": 4303,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Kelly J Armstrong",
@@ -207,7 +227,9 @@
      {
       "name": "Nadine K Nakamura",
       "party": "D",
-      "votes": 6656
+      "votes": 6656,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "David A Moranz",
@@ -225,7 +247,8 @@
      {
       "name": "Luke A Evslin",
       "party": "D",
-      "votes": 6479
+      "votes": 6479,
+      "winner": true
      },
      {
       "name": "Steve Yoder",
@@ -243,7 +266,9 @@
      {
       "name": "Daynette \"Dee\" Morikawa",
       "party": "D",
-      "votes": 6450
+      "votes": 6450,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Michael H Jauch",
@@ -261,7 +286,8 @@
      {
       "name": "Tina Nakada Grandinetti",
       "party": "D",
-      "votes": 7556
+      "votes": 7556,
+      "winner": true
      },
      {
       "name": "Corinne S Solomon",
@@ -279,7 +305,9 @@
      {
       "name": "Jackson D Sayama",
       "party": "D",
-      "votes": 8129
+      "votes": 8129,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Joelle Seashell",
@@ -297,7 +325,9 @@
      {
       "name": "Andrew Takuya Garrett",
       "party": "D",
-      "votes": 8427
+      "votes": 8427,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Jeffrey H Imamura",
@@ -315,7 +345,9 @@
      {
       "name": "Adrian Tam",
       "party": "D",
-      "votes": 5973
+      "votes": 5973,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Jillian T Anderson",
@@ -333,7 +365,9 @@
      {
       "name": "Jenna Takenouchi",
       "party": "D",
-      "votes": 7928
+      "votes": 7928,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Margaret U Lim",
@@ -351,7 +385,8 @@
      {
       "name": "Ikaika Lardizabal Hussey",
       "party": "D",
-      "votes": 4068
+      "votes": 4068,
+      "winner": true
      },
      {
       "name": "Carole Kauhiwai Kaapu",
@@ -369,7 +404,8 @@
      {
       "name": "Shirley Ann Labadan Templo",
       "party": "D",
-      "votes": 3397
+      "votes": 3397,
+      "winner": true
      },
      {
       "name": "P M Azinga",
@@ -387,7 +423,9 @@
      {
       "name": "Linda Ichiyama",
       "party": "D",
-      "votes": 5579
+      "votes": 5579,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Nancy A Valdez",
@@ -405,12 +443,14 @@
      {
       "name": "Garner Musashi Shimizu",
       "party": "R",
-      "votes": 4596
+      "votes": 4596,
+      "winner": true
      },
      {
       "name": "Micah Pookela Kim Aiu",
       "party": "D",
-      "votes": 4518
+      "votes": 4518,
+      "incumbent": true
      }
     ]
    },
@@ -423,7 +463,9 @@
      {
       "name": "Gregg Takayama",
       "party": "D",
-      "votes": 6840
+      "votes": 6840,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Gaius Dupio",
@@ -441,7 +483,8 @@
      {
       "name": "Trish la Chica",
       "party": "D",
-      "votes": 8770
+      "votes": 8770,
+      "winner": true
      },
      {
       "name": "Taylor Kaaumoana",
@@ -459,7 +502,9 @@
      {
       "name": "Lauren Cheape Matsumoto",
       "party": "R",
-      "votes": 8776
+      "votes": 8776,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Alexander Kekuanao'A Ozawa",
@@ -477,7 +522,9 @@
      {
       "name": "Elijah Pierick",
       "party": "R",
-      "votes": 4712
+      "votes": 4712,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Corey Rosenlee",
@@ -495,12 +542,14 @@
      {
       "name": "Julie Reyes Oda",
       "party": "R",
-      "votes": 4300
+      "votes": 4300,
+      "winner": true
      },
      {
       "name": "Rose Martinez",
       "party": "D",
-      "votes": 3836
+      "votes": 3836,
+      "incumbent": true
      },
      {
       "name": "Christian P Ulufanua",
@@ -518,7 +567,9 @@
      {
       "name": "David A Alcos",
       "party": "R",
-      "votes": 5474
+      "votes": 5474,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "John H Clark",
@@ -536,7 +587,9 @@
      {
       "name": "Diamond Garcia",
       "party": "R",
-      "votes": 4802
+      "votes": 4802,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Anthony Makana Paris",
@@ -554,7 +607,8 @@
      {
       "name": "Chris Muraoka",
       "party": "R",
-      "votes": 3123
+      "votes": 3123,
+      "winner": true
      },
      {
       "name": "Desire Auguste Desoto",
@@ -572,7 +626,9 @@
      {
       "name": "Amy A Perruso",
       "party": "D",
-      "votes": 5432
+      "votes": 5432,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Daniel Michael Gabriel",
@@ -590,7 +646,9 @@
      {
       "name": "Sean Quinlan",
       "party": "D",
-      "votes": 4616
+      "votes": 4616,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "John W \"Johnny\" Aguirre",
@@ -608,7 +666,9 @@
      {
       "name": "Lisa C Kitagawa",
       "party": "D",
-      "votes": 8578
+      "votes": 8578,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Asheemo N \"Koda\" Daily",
@@ -626,7 +686,9 @@
      {
       "name": "Scot Matayoshi",
       "party": "D",
-      "votes": 7711
+      "votes": 7711,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Josiah \"Brahkruz\" Ubando",
@@ -644,7 +706,8 @@
      {
       "name": "Mike Lee",
       "party": "D",
-      "votes": 9791
+      "votes": 9791,
+      "winner": true
      },
      {
       "name": "Timothy D Connelly",
@@ -667,7 +730,9 @@
      {
       "name": "Dru Mamo Kanuha",
       "party": "D",
-      "votes": 13112
+      "votes": 13112,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Kurt \"Sulli\" Sullivan",
@@ -685,7 +750,9 @@
      {
       "name": "Angus Lk McKelvey",
       "party": "D",
-      "votes": 11528
+      "votes": 11528,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Sheila Walker",
@@ -703,7 +770,9 @@
      {
       "name": "Lynn Pualani Decoite",
       "party": "D",
-      "votes": 15892
+      "votes": 15892,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Gabby MacAraeg",
@@ -721,7 +790,9 @@
      {
       "name": "Sharon y Moriwaki",
       "party": "D",
-      "votes": 12789
+      "votes": 12789,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Shotaro Dabbs",
@@ -739,7 +810,9 @@
      {
       "name": "Brandon Elefante",
       "party": "D",
-      "votes": 16454
+      "votes": 16454,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Pat Beekman",
@@ -757,7 +830,9 @@
      {
       "name": "Michelle N Kidani",
       "party": "D",
-      "votes": 13706
+      "votes": 13706,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Emil Svrcina",
@@ -775,7 +850,8 @@
      {
       "name": "Samantha Decorte",
       "party": "R",
-      "votes": 6859
+      "votes": 6859,
+      "winner": true
      },
      {
       "name": "Cedric Asuega Gates",
@@ -793,7 +869,9 @@
      {
       "name": "Brenton Awa",
       "party": "R",
-      "votes": 10594
+      "votes": 10594,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Ben Shafer",

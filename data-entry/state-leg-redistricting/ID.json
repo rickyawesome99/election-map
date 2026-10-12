@@ -1,0 +1,3050 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 89.0,
+      "key": "1",
+      "popPct": 91.5
+     },
+     {
+      "areaPct": 11.0,
+      "key": "7",
+      "popPct": 8.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bonner",
+      "popPct": 77.6
+     },
+     {
+      "county": "Boundary",
+      "popPct": 22.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 53755,
+    "pres2020New": 38.2,
+    "pres2020Old": 40.3,
+    "retainedAreaPct": 89.0,
+    "retainedPopPct": 91.5,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-1; gained the rest from the old HD-7 (8%). Spans Bonner, Boundary counties. 2020 presidential margin R+40.3 on the 2016\u20132020 lines \u2192 R+38.2 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 55.0,
+      "key": "11",
+      "popPct": 38.2
+     },
+     {
+      "areaPct": 14.1,
+      "key": "14",
+      "popPct": 20.9
+     },
+     {
+      "areaPct": 4.6,
+      "key": "10",
+      "popPct": 17.8
+     },
+     {
+      "areaPct": 6.3,
+      "key": "12",
+      "popPct": 17.5
+     },
+     {
+      "areaPct": 20.0,
+      "key": "9",
+      "popPct": 5.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Canyon",
+      "popPct": 78.9
+     },
+     {
+      "county": "Ada",
+      "popPct": 21.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Ada",
+      "popPct": 21.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 54283,
+    "pres2020New": 49.1,
+    "pres2020Old": 27.7,
+    "retainedAreaPct": 4.6,
+    "retainedPopPct": 17.8,
+    "text": "A new footprint: only 18% of its population was in the 2016\u20132020 HD-10; it draws from the old HD-11 (38%), the old HD-14 (21%), the old HD-12 (18%) and 1 more. Counties: gained Ada (21%). 2020 presidential margin R+27.7 on the 2016\u20132020 lines \u2192 R+49.1 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 89.8,
+      "key": "10",
+      "popPct": 93.6
+     },
+     {
+      "areaPct": 9.8,
+      "key": "11",
+      "popPct": 5.8
+     },
+     {
+      "areaPct": 0.4,
+      "key": "12",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Canyon",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45709,
+    "pres2020New": 25.7,
+    "pres2020Old": 55.5,
+    "retainedAreaPct": 9.8,
+    "retainedPopPct": 5.8,
+    "text": "A new footprint: only 6% of its population was in the 2016\u20132020 HD-11; it draws from the old HD-10 (94%), the old HD-12 (1%). Entirely in Canyon County. 2020 presidential margin R+55.5 on the 2016\u20132020 lines \u2192 R+25.7 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 68.8,
+      "key": "12",
+      "popPct": 70.3
+     },
+     {
+      "areaPct": 21.2,
+      "key": "13",
+      "popPct": 28.7
+     },
+     {
+      "areaPct": 10.0,
+      "key": "11",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Canyon",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 52216,
+    "pres2020New": 32.9,
+    "pres2020Old": 33.9,
+    "retainedAreaPct": 68.8,
+    "retainedPopPct": 70.3,
+    "text": "Kept 70% of its population from the 2016\u20132020 HD-12; gained the rest from the old HD-13 (29%), the old HD-11 (1%). Entirely in Canyon County. 2020 presidential margin R+33.9 on the 2016\u20132020 lines \u2192 R+32.9 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 36.1,
+      "key": "13",
+      "popPct": 76.8
+     },
+     {
+      "areaPct": 29.0,
+      "key": "12",
+      "popPct": 17.6
+     },
+     {
+      "areaPct": 34.9,
+      "key": "11",
+      "popPct": 5.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Canyon",
+      "popPct": 99.3
+     },
+     {
+      "county": "Ada",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 52122,
+    "pres2020New": 35.3,
+    "pres2020Old": 33.6,
+    "retainedAreaPct": 36.1,
+    "retainedPopPct": 76.8,
+    "text": "Kept 77% of its population from the 2016\u20132020 HD-13; gained the rest from the old HD-12 (18%), the old HD-11 (6%). Spans Canyon, Ada counties. 2020 presidential margin R+33.6 on the 2016\u20132020 lines \u2192 R+35.3 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 13.1,
+      "key": "14",
+      "popPct": 67.6
+     },
+     {
+      "areaPct": 86.8,
+      "key": "8",
+      "popPct": 32.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 67.6
+     },
+     {
+      "county": "Gem",
+      "popPct": 32.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Gem",
+      "popPct": 32.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 59051,
+    "pres2020New": 41.2,
+    "pres2020Old": 36.7,
+    "retainedAreaPct": 13.1,
+    "retainedPopPct": 67.6,
+    "text": "Kept 68% of its population from the 2016\u20132020 HD-14; gained the rest from the old HD-8 (32%). Counties: gained Gem (32%). 2020 presidential margin R+36.7 on the 2016\u20132020 lines \u2192 R+41.2 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 79.9,
+      "key": "15",
+      "popPct": 87.5
+     },
+     {
+      "areaPct": 18.1,
+      "key": "20",
+      "popPct": 10.6
+     },
+     {
+      "areaPct": 2.0,
+      "key": "17",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 52311,
+    "pres2020New": 5.0,
+    "pres2020Old": 4.4,
+    "retainedAreaPct": 79.9,
+    "retainedPopPct": 87.5,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-15; gained the rest from the old HD-20 (11%), the old HD-17 (2%). Entirely in Ada County. 2020 presidential margin R+4.4 on the 2016\u20132020 lines \u2192 R+5.0 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 92.4,
+      "key": "16",
+      "popPct": 93.1
+     },
+     {
+      "areaPct": 7.5,
+      "key": "17",
+      "popPct": 6.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51325,
+    "pres2020New": -20.3,
+    "pres2020Old": -20.6,
+    "retainedAreaPct": 92.4,
+    "retainedPopPct": 93.1,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-16; gained the rest from the old HD-17 (7%). Entirely in Ada County. 2020 presidential margin D+20.6 on the 2016\u20132020 lines \u2192 D+20.3 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 60.7,
+      "key": "17",
+      "popPct": 73.1
+     },
+     {
+      "areaPct": 28.3,
+      "key": "18",
+      "popPct": 17.1
+     },
+     {
+      "areaPct": 10.6,
+      "key": "21",
+      "popPct": 9.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 52096,
+    "pres2020New": -16.4,
+    "pres2020Old": -26.9,
+    "retainedAreaPct": 60.7,
+    "retainedPopPct": 73.1,
+    "text": "Kept 73% of its population from the 2016\u20132020 HD-17; gained the rest from the old HD-18 (17%), the old HD-21 (10%). Entirely in Ada County. 2020 presidential margin D+26.9 on the 2016\u20132020 lines \u2192 D+16.4 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 89.2,
+      "key": "18",
+      "popPct": 86.3
+     },
+     {
+      "areaPct": 0.7,
+      "key": "17",
+      "popPct": 13.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51273,
+    "pres2020New": -26.9,
+    "pres2020Old": -21.9,
+    "retainedAreaPct": 89.2,
+    "retainedPopPct": 86.3,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-18; gained the rest from the old HD-17 (13%). Entirely in Ada County. 2020 presidential margin D+21.9 on the 2016\u20132020 lines \u2192 D+26.9 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 99.0,
+      "key": "19",
+      "popPct": 99.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51131,
+    "pres2020New": -37.8,
+    "pres2020Old": -37.8,
+    "retainedAreaPct": 99.0,
+    "retainedPopPct": 99.5,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Ada County.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 75.6,
+      "key": "7",
+      "popPct": 44.0
+     },
+     {
+      "areaPct": 11.1,
+      "key": "2",
+      "popPct": 29.9
+     },
+     {
+      "areaPct": 11.4,
+      "key": "5",
+      "popPct": 18.1
+     },
+     {
+      "areaPct": 1.8,
+      "key": "1",
+      "popPct": 8.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kootenai",
+      "popPct": 29.9
+     },
+     {
+      "county": "Shoshone",
+      "popPct": 25.1
+     },
+     {
+      "county": "Benewah",
+      "popPct": 18.1
+     },
+     {
+      "county": "Clearwater",
+      "popPct": 16.6
+     },
+     {
+      "county": "Bonner",
+      "popPct": 10.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Shoshone",
+      "popPct": 25.1
+     },
+     {
+      "county": "Benewah",
+      "popPct": 18.1
+     },
+     {
+      "county": "Clearwater",
+      "popPct": 16.6
+     },
+     {
+      "county": "Bonner",
+      "popPct": 10.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 52546,
+    "pres2020New": 55.9,
+    "pres2020Old": 53.0,
+    "retainedAreaPct": 11.1,
+    "retainedPopPct": 29.9,
+    "text": "A new footprint: only 30% of its population was in the 2016\u20132020 HD-2; it draws from the old HD-7 (44%), the old HD-5 (18%), the old HD-1 (8%). Counties: gained Shoshone (25%), Benewah (18%), Clearwater (17%) and 1 more. 2020 presidential margin R+53.0 on the 2016\u20132020 lines \u2192 R+55.9 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 44.3,
+      "key": "20",
+      "popPct": 73.8
+     },
+     {
+      "areaPct": 55.7,
+      "key": "14",
+      "popPct": 26.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49877,
+    "pres2020New": 27.2,
+    "pres2020Old": 21.6,
+    "retainedAreaPct": 44.3,
+    "retainedPopPct": 73.8,
+    "text": "Kept 74% of its population from the 2016\u20132020 HD-20; gained the rest from the old HD-14 (26%). Entirely in Ada County. 2020 presidential margin R+21.6 on the 2016\u20132020 lines \u2192 R+27.2 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 45.1,
+      "key": "22",
+      "popPct": 38.0
+     },
+     {
+      "areaPct": 23.9,
+      "key": "20",
+      "popPct": 27.5
+     },
+     {
+      "areaPct": 18.9,
+      "key": "21",
+      "popPct": 20.4
+     },
+     {
+      "areaPct": 12.1,
+      "key": "14",
+      "popPct": 14.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 50470,
+    "pres2020New": 27.5,
+    "pres2020Old": 21.7,
+    "retainedAreaPct": 18.9,
+    "retainedPopPct": 20.4,
+    "text": "A new footprint: only 20% of its population was in the 2016\u20132020 HD-21; it draws from the old HD-22 (38%), the old HD-20 (28%), the old HD-14 (14%). Entirely in Ada County. 2020 presidential margin R+21.7 on the 2016\u20132020 lines \u2192 R+27.5 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 48.4,
+      "key": "21",
+      "popPct": 84.2
+     },
+     {
+      "areaPct": 51.6,
+      "key": "22",
+      "popPct": 15.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 54452,
+    "pres2020New": 24.3,
+    "pres2020Old": 41.1,
+    "retainedAreaPct": 51.6,
+    "retainedPopPct": 15.8,
+    "text": "A new footprint: only 16% of its population was in the 2016\u20132020 HD-22; it draws from the old HD-21 (84%). Entirely in Ada County. 2020 presidential margin R+41.1 on the 2016\u20132020 lines \u2192 R+24.3 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 7.0,
+      "key": "22",
+      "popPct": 51.0
+     },
+     {
+      "areaPct": 2.2,
+      "key": "11",
+      "popPct": 26.3
+     },
+     {
+      "areaPct": 90.8,
+      "key": "23",
+      "popPct": 19.7
+     },
+     {
+      "areaPct": 0.0,
+      "key": "12",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 50.9
+     },
+     {
+      "county": "Canyon",
+      "popPct": 29.3
+     },
+     {
+      "county": "Owyhee",
+      "popPct": 19.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Ada",
+      "popPct": 50.9
+     },
+     {
+      "county": "Canyon",
+      "popPct": 29.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Elmore",
+      "popPct": 60.9
+     },
+     {
+      "county": "Twin Falls",
+      "popPct": 13.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 60399,
+    "pres2020New": 53.7,
+    "pres2020Old": 53.3,
+    "retainedAreaPct": 90.8,
+    "retainedPopPct": 19.7,
+    "text": "A new footprint: only 20% of its population was in the 2016\u20132020 HD-23; it draws from the old HD-22 (51%), the old HD-11 (26%), the old HD-12 (3%). Counties: gained Ada (51%), Canyon (29%); lost Elmore, Twin Falls. 2020 presidential margin R+53.3 on the 2016\u20132020 lines \u2192 R+53.7 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 34.4,
+      "key": "25",
+      "popPct": 52.8
+     },
+     {
+      "areaPct": 48.8,
+      "key": "26",
+      "popPct": 30.5
+     },
+     {
+      "areaPct": 16.5,
+      "key": "23",
+      "popPct": 11.5
+     },
+     {
+      "areaPct": 0.2,
+      "key": "24",
+      "popPct": 5.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Twin Falls",
+      "popPct": 68.9
+     },
+     {
+      "county": "Gooding",
+      "popPct": 28.5
+     },
+     {
+      "county": "Camas",
+      "popPct": 2.0
+     },
+     {
+      "county": "Jerome",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Gooding",
+      "popPct": 28.5
+     },
+     {
+      "county": "Camas",
+      "popPct": 2.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 54611,
+    "pres2020New": 57.3,
+    "pres2020Old": 35.4,
+    "retainedAreaPct": 0.2,
+    "retainedPopPct": 5.1,
+    "text": "A new footprint: only 5% of its population was in the 2016\u20132020 HD-24; it draws from the old HD-25 (53%), the old HD-26 (30%), the old HD-23 (12%). Counties: gained Gooding (28%), Camas (2%). 2020 presidential margin R+35.4 on the 2016\u20132020 lines \u2192 R+57.3 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "24",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Twin Falls",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Jerome",
+      "popPct": 45.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 52101,
+    "pres2020New": 34.8,
+    "pres2020Old": 54.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-25; it draws from the old HD-24 (100%). Counties: lost Jerome. 2020 presidential margin R+54.1 on the 2016\u20132020 lines \u2192 R+34.8 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 86.5,
+      "key": "26",
+      "popPct": 54.8
+     },
+     {
+      "areaPct": 13.5,
+      "key": "25",
+      "popPct": 45.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Blaine",
+      "popPct": 45.2
+     },
+     {
+      "county": "Jerome",
+      "popPct": 44.9
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 9.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jerome",
+      "popPct": 44.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Gooding",
+      "popPct": 33.7
+     },
+     {
+      "county": "Camas",
+      "popPct": 2.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 53645,
+    "pres2020New": 0.1,
+    "pres2020Old": -0.3,
+    "retainedAreaPct": 86.5,
+    "retainedPopPct": 54.8,
+    "text": "Kept 55% of its population from the 2016\u20132020 HD-26; gained the rest from the old HD-25 (45%). Counties: gained Jerome (45%); lost Gooding, Camas. 2020 presidential margin D+0.3 on the 2016\u20132020 lines \u2192 R+0.1 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 73.6,
+      "key": "27",
+      "popPct": 91.0
+     },
+     {
+      "areaPct": 26.4,
+      "key": "32",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cassia",
+      "popPct": 47.5
+     },
+     {
+      "county": "Minidoka",
+      "popPct": 43.4
+     },
+     {
+      "county": "Oneida",
+      "popPct": 8.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Oneida",
+      "popPct": 8.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 50832,
+    "pres2020New": 65.0,
+    "pres2020Old": 63.3,
+    "retainedAreaPct": 73.6,
+    "retainedPopPct": 91.0,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-27; gained the rest from the old HD-32 (9%). Counties: gained Oneida (9%). 2020 presidential margin R+63.3 on the 2016\u20132020 lines \u2192 R+65.0 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 74.7,
+      "key": "28",
+      "popPct": 71.1
+     },
+     {
+      "areaPct": 22.6,
+      "key": "32",
+      "popPct": 25.0
+     },
+     {
+      "areaPct": 2.7,
+      "key": "29",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bannock",
+      "popPct": 61.0
+     },
+     {
+      "county": "Franklin",
+      "popPct": 25.0
+     },
+     {
+      "county": "Power",
+      "popPct": 13.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Franklin",
+      "popPct": 25.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 56671,
+    "pres2020New": 46.3,
+    "pres2020Old": 36.0,
+    "retainedAreaPct": 74.7,
+    "retainedPopPct": 71.1,
+    "text": "Kept 71% of its population from the 2016\u20132020 HD-28; gained the rest from the old HD-32 (25%), the old HD-29 (4%). Counties: gained Franklin (25%). 2020 presidential margin R+36.0 on the 2016\u20132020 lines \u2192 R+46.3 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 85.7,
+      "key": "29",
+      "popPct": 87.2
+     },
+     {
+      "areaPct": 14.3,
+      "key": "28",
+      "popPct": 12.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bannock",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49493,
+    "pres2020New": 8.6,
+    "pres2020Old": 8.0,
+    "retainedAreaPct": 85.7,
+    "retainedPopPct": 87.2,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-29; gained the rest from the old HD-28 (13%). Entirely in Bannock County. 2020 presidential margin R+8.0 on the 2016\u20132020 lines \u2192 R+8.6 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 90.1,
+      "key": "2",
+      "popPct": 65.4
+     },
+     {
+      "areaPct": 9.5,
+      "key": "3",
+      "popPct": 27.9
+     },
+     {
+      "areaPct": 0.4,
+      "key": "4",
+      "popPct": 6.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kootenai",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 57835,
+    "pres2020New": 51.2,
+    "pres2020Old": 49.7,
+    "retainedAreaPct": 9.5,
+    "retainedPopPct": 27.9,
+    "text": "A new footprint: only 28% of its population was in the 2016\u20132020 HD-3; it draws from the old HD-2 (65%), the old HD-4 (7%). Entirely in Kootenai County. 2020 presidential margin R+49.7 on the 2016\u20132020 lines \u2192 R+51.2 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 48.6,
+      "key": "31",
+      "popPct": 94.9
+     },
+     {
+      "areaPct": 51.4,
+      "key": "35",
+      "popPct": 5.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bingham",
+      "popPct": 94.9
+     },
+     {
+      "county": "Butte",
+      "popPct": 5.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Bingham",
+      "popPct": 94.9
+     },
+     {
+      "county": "Butte",
+      "popPct": 5.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Bonneville",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 50566,
+    "pres2020New": 56.9,
+    "pres2020Old": 49.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-30; it draws from the old HD-31 (95%), the old HD-35 (5%). Counties: gained Bingham (95%), Butte (5%); lost Bonneville. 2020 presidential margin R+49.2 on the 2016\u20132020 lines \u2192 R+56.9 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 51.1,
+      "key": "35",
+      "popPct": 85.0
+     },
+     {
+      "areaPct": 48.9,
+      "key": "8",
+      "popPct": 15.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 57.9
+     },
+     {
+      "county": "Fremont",
+      "popPct": 25.2
+     },
+     {
+      "county": "Lemhi",
+      "popPct": 15.0
+     },
+     {
+      "county": "Clark",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jefferson",
+      "popPct": 57.9
+     },
+     {
+      "county": "Fremont",
+      "popPct": 25.2
+     },
+     {
+      "county": "Lemhi",
+      "popPct": 15.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Bingham",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 53037,
+    "pres2020New": 68.5,
+    "pres2020Old": 55.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-31; it draws from the old HD-35 (85%), the old HD-8 (15%). Counties: gained Jefferson (58%), Fremont (25%), Lemhi (15%); lost Bingham. 2020 presidential margin R+55.9 on the 2016\u20132020 lines \u2192 R+68.5 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "30",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bonneville",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Franklin",
+      "popPct": 28.7
+     },
+     {
+      "county": "Teton",
+      "popPct": 23.4
+     },
+     {
+      "county": "Caribou",
+      "popPct": 14.2
+     },
+     {
+      "county": "Bear Lake",
+      "popPct": 12.9
+     },
+     {
+      "county": "Oneida",
+      "popPct": 9.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 49038,
+    "pres2020New": 47.8,
+    "pres2020Old": 54.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-32; it draws from the old HD-30 (100%). Counties: lost Franklin, Teton, Caribou, Bear Lake and 1 more. 2020 presidential margin R+54.0 on the 2016\u20132020 lines \u2192 R+47.8 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 80.6,
+      "key": "33",
+      "popPct": 94.5
+     },
+     {
+      "areaPct": 19.4,
+      "key": "30",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bonneville",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51508,
+    "pres2020New": 27.7,
+    "pres2020Old": 26.6,
+    "retainedAreaPct": 80.6,
+    "retainedPopPct": 94.5,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-33; gained the rest from the old HD-30 (6%). Entirely in Bonneville County. 2020 presidential margin R+26.6 on the 2016\u20132020 lines \u2192 R+27.7 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "34",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Madison",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Bonneville",
+      "popPct": 14.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 52919,
+    "pres2020New": 63.6,
+    "pres2020Old": 65.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Counties: lost Bonneville.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 89.5,
+      "key": "32",
+      "popPct": 59.6
+     },
+     {
+      "areaPct": 4.9,
+      "key": "34",
+      "popPct": 17.8
+     },
+     {
+      "areaPct": 0.5,
+      "key": "30",
+      "popPct": 16.9
+     },
+     {
+      "areaPct": 5.2,
+      "key": "28",
+      "popPct": 5.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bonneville",
+      "popPct": 45.7
+     },
+     {
+      "county": "Teton",
+      "popPct": 22.5
+     },
+     {
+      "county": "Caribou",
+      "popPct": 13.7
+     },
+     {
+      "county": "Bear Lake",
+      "popPct": 12.4
+     },
+     {
+      "county": "Bannock",
+      "popPct": 5.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Bonneville",
+      "popPct": 45.7
+     },
+     {
+      "county": "Teton",
+      "popPct": 22.5
+     },
+     {
+      "county": "Caribou",
+      "popPct": 13.7
+     },
+     {
+      "county": "Bear Lake",
+      "popPct": 12.4
+     },
+     {
+      "county": "Bannock",
+      "popPct": 5.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Jefferson",
+      "popPct": 64.5
+     },
+     {
+      "county": "Fremont",
+      "popPct": 28.1
+     },
+     {
+      "county": "Butte",
+      "popPct": 5.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 51372,
+    "pres2020New": 49.4,
+    "pres2020Old": 71.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-35; it draws from the old HD-32 (60%), the old HD-34 (18%), the old HD-30 (17%) and 1 more. Counties: gained Bonneville (46%), Teton (22%), Caribou (14%) and 2 more; lost Jefferson, Fremont, Butte. 2020 presidential margin R+71.7 on the 2016\u20132020 lines \u2192 R+49.4 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 90.8,
+      "key": "4",
+      "popPct": 99.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kootenai",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 48389,
+    "pres2020New": 22.1,
+    "pres2020Old": 24.6,
+    "retainedAreaPct": 90.8,
+    "retainedPopPct": 99.8,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Kootenai County.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 98.3,
+      "key": "3",
+      "popPct": 90.3
+     },
+     {
+      "areaPct": 1.7,
+      "key": "4",
+      "popPct": 9.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kootenai",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kootenai",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Latah",
+      "popPct": 80.5
+     },
+     {
+      "county": "Benewah",
+      "popPct": 19.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 49435,
+    "pres2020New": 46.9,
+    "pres2020Old": 8.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-5; it draws from the old HD-3 (90%), the old HD-4 (10%). Counties: gained Kootenai (100%); lost Latah, Benewah. 2020 presidential margin R+8.4 on the 2016\u20132020 lines \u2192 R+46.9 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 51.5,
+      "key": "5",
+      "popPct": 74.0
+     },
+     {
+      "areaPct": 48.5,
+      "key": "6",
+      "popPct": 26.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Latah",
+      "popPct": 73.9
+     },
+     {
+      "county": "Nez Perce",
+      "popPct": 19.4
+     },
+     {
+      "county": "Lewis",
+      "popPct": 5.8
+     },
+     {
+      "county": "Idaho",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Latah",
+      "popPct": 73.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 53432,
+    "pres2020New": 5.3,
+    "pres2020Old": 35.9,
+    "retainedAreaPct": 48.5,
+    "retainedPopPct": 26.0,
+    "text": "A new footprint: only 26% of its population was in the 2016\u20132020 HD-6; it draws from the old HD-5 (74%). Counties: gained Latah (74%). 2020 presidential margin R+35.9 on the 2016\u20132020 lines \u2192 R+5.3 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 3.2,
+      "key": "6",
+      "popPct": 60.2
+     },
+     {
+      "areaPct": 83.4,
+      "key": "7",
+      "popPct": 31.4
+     },
+     {
+      "areaPct": 13.4,
+      "key": "9",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Nez Perce",
+      "popPct": 60.2
+     },
+     {
+      "county": "Idaho",
+      "popPct": 31.3
+     },
+     {
+      "county": "Adams",
+      "popPct": 8.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Nez Perce",
+      "popPct": 60.2
+     },
+     {
+      "county": "Adams",
+      "popPct": 8.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Shoshone",
+      "popPct": 29.8
+     },
+     {
+      "county": "Clearwater",
+      "popPct": 19.7
+     },
+     {
+      "county": "Bonner",
+      "popPct": 13.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 52630,
+    "pres2020New": 50.1,
+    "pres2020Old": 54.9,
+    "retainedAreaPct": 83.4,
+    "retainedPopPct": 31.4,
+    "text": "A new footprint: only 31% of its population was in the 2016\u20132020 HD-7; it draws from the old HD-6 (60%), the old HD-9 (8%). Counties: gained Nez Perce (60%), Adams (8%); lost Shoshone, Clearwater, Bonner. 2020 presidential margin R+54.9 on the 2016\u20132020 lines \u2192 R+50.1 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 22.7,
+      "key": "23",
+      "popPct": 54.8
+     },
+     {
+      "areaPct": 77.3,
+      "key": "8",
+      "popPct": 45.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Elmore",
+      "popPct": 54.7
+     },
+     {
+      "county": "Valley",
+      "popPct": 22.4
+     },
+     {
+      "county": "Boise",
+      "popPct": 14.5
+     },
+     {
+      "county": "Custer",
+      "popPct": 8.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Elmore",
+      "popPct": 54.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Gem",
+      "popPct": 37.5
+     },
+     {
+      "county": "Lemhi",
+      "popPct": 15.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 52297,
+    "pres2020New": 37.8,
+    "pres2020Old": 45.8,
+    "retainedAreaPct": 77.3,
+    "retainedPopPct": 45.2,
+    "text": "A new footprint: only 45% of its population was in the 2016\u20132020 HD-8; it draws from the old HD-23 (55%). Counties: gained Elmore (55%); lost Gem, Lemhi. 2020 presidential margin R+45.8 on the 2016\u20132020 lines \u2192 R+37.8 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 94.1,
+      "key": "9",
+      "popPct": 73.5
+     },
+     {
+      "areaPct": 5.9,
+      "key": "11",
+      "popPct": 22.0
+     },
+     {
+      "areaPct": 0.0,
+      "key": "10",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Payette",
+      "popPct": 45.2
+     },
+     {
+      "county": "Canyon",
+      "popPct": 36.1
+     },
+     {
+      "county": "Washington",
+      "popPct": 18.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Adams",
+      "popPct": 8.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 56277,
+    "pres2020New": 57.6,
+    "pres2020Old": 58.7,
+    "retainedAreaPct": 94.1,
+    "retainedPopPct": 73.5,
+    "text": "Kept 74% of its population from the 2016\u20132020 HD-9; gained the rest from the old HD-11 (22%), the old HD-10 (4%). Counties: lost Adams. 2020 presidential margin R+58.7 on the 2016\u20132020 lines \u2192 R+57.6 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 89.0,
+      "key": "1",
+      "popPct": 91.5
+     },
+     {
+      "areaPct": 11.0,
+      "key": "7",
+      "popPct": 8.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bonner",
+      "popPct": 77.6
+     },
+     {
+      "county": "Boundary",
+      "popPct": 22.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 53755,
+    "pres2020New": 38.2,
+    "pres2020Old": 40.3,
+    "retainedAreaPct": 89.0,
+    "retainedPopPct": 91.5,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-1; gained the rest from the old SD-7 (8%). Spans Bonner, Boundary counties. 2020 presidential margin R+40.3 on the 2016\u20132020 lines \u2192 R+38.2 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 55.0,
+      "key": "11",
+      "popPct": 38.2
+     },
+     {
+      "areaPct": 14.1,
+      "key": "14",
+      "popPct": 20.9
+     },
+     {
+      "areaPct": 4.6,
+      "key": "10",
+      "popPct": 17.8
+     },
+     {
+      "areaPct": 6.3,
+      "key": "12",
+      "popPct": 17.5
+     },
+     {
+      "areaPct": 20.0,
+      "key": "9",
+      "popPct": 5.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Canyon",
+      "popPct": 78.9
+     },
+     {
+      "county": "Ada",
+      "popPct": 21.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Ada",
+      "popPct": 21.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 54283,
+    "pres2020New": 49.1,
+    "pres2020Old": 27.7,
+    "retainedAreaPct": 4.6,
+    "retainedPopPct": 17.8,
+    "text": "A new footprint: only 18% of its population was in the 2016\u20132020 SD-10; it draws from the old SD-11 (38%), the old SD-14 (21%), the old SD-12 (18%) and 1 more. Counties: gained Ada (21%). 2020 presidential margin R+27.7 on the 2016\u20132020 lines \u2192 R+49.1 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 89.8,
+      "key": "10",
+      "popPct": 93.6
+     },
+     {
+      "areaPct": 9.8,
+      "key": "11",
+      "popPct": 5.8
+     },
+     {
+      "areaPct": 0.4,
+      "key": "12",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Canyon",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45709,
+    "pres2020New": 25.7,
+    "pres2020Old": 55.5,
+    "retainedAreaPct": 9.8,
+    "retainedPopPct": 5.8,
+    "text": "A new footprint: only 6% of its population was in the 2016\u20132020 SD-11; it draws from the old SD-10 (94%), the old SD-12 (1%). Entirely in Canyon County. 2020 presidential margin R+55.5 on the 2016\u20132020 lines \u2192 R+25.7 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 68.8,
+      "key": "12",
+      "popPct": 70.3
+     },
+     {
+      "areaPct": 21.2,
+      "key": "13",
+      "popPct": 28.7
+     },
+     {
+      "areaPct": 10.0,
+      "key": "11",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Canyon",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 52216,
+    "pres2020New": 32.9,
+    "pres2020Old": 33.9,
+    "retainedAreaPct": 68.8,
+    "retainedPopPct": 70.3,
+    "text": "Kept 70% of its population from the 2016\u20132020 SD-12; gained the rest from the old SD-13 (29%), the old SD-11 (1%). Entirely in Canyon County. 2020 presidential margin R+33.9 on the 2016\u20132020 lines \u2192 R+32.9 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 36.1,
+      "key": "13",
+      "popPct": 76.8
+     },
+     {
+      "areaPct": 29.0,
+      "key": "12",
+      "popPct": 17.6
+     },
+     {
+      "areaPct": 34.9,
+      "key": "11",
+      "popPct": 5.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Canyon",
+      "popPct": 99.3
+     },
+     {
+      "county": "Ada",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 52122,
+    "pres2020New": 35.3,
+    "pres2020Old": 33.6,
+    "retainedAreaPct": 36.1,
+    "retainedPopPct": 76.8,
+    "text": "Kept 77% of its population from the 2016\u20132020 SD-13; gained the rest from the old SD-12 (18%), the old SD-11 (6%). Spans Canyon, Ada counties. 2020 presidential margin R+33.6 on the 2016\u20132020 lines \u2192 R+35.3 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 13.1,
+      "key": "14",
+      "popPct": 67.6
+     },
+     {
+      "areaPct": 86.8,
+      "key": "8",
+      "popPct": 32.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 67.6
+     },
+     {
+      "county": "Gem",
+      "popPct": 32.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Gem",
+      "popPct": 32.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 59051,
+    "pres2020New": 41.2,
+    "pres2020Old": 36.7,
+    "retainedAreaPct": 13.1,
+    "retainedPopPct": 67.6,
+    "text": "Kept 68% of its population from the 2016\u20132020 SD-14; gained the rest from the old SD-8 (32%). Counties: gained Gem (32%). 2020 presidential margin R+36.7 on the 2016\u20132020 lines \u2192 R+41.2 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 79.9,
+      "key": "15",
+      "popPct": 87.5
+     },
+     {
+      "areaPct": 18.1,
+      "key": "20",
+      "popPct": 10.6
+     },
+     {
+      "areaPct": 2.0,
+      "key": "17",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 52311,
+    "pres2020New": 5.0,
+    "pres2020Old": 4.4,
+    "retainedAreaPct": 79.9,
+    "retainedPopPct": 87.5,
+    "text": "Kept 88% of its population from the 2016\u20132020 SD-15; gained the rest from the old SD-20 (11%), the old SD-17 (2%). Entirely in Ada County. 2020 presidential margin R+4.4 on the 2016\u20132020 lines \u2192 R+5.0 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 92.4,
+      "key": "16",
+      "popPct": 93.1
+     },
+     {
+      "areaPct": 7.5,
+      "key": "17",
+      "popPct": 6.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51325,
+    "pres2020New": -20.3,
+    "pres2020Old": -20.6,
+    "retainedAreaPct": 92.4,
+    "retainedPopPct": 93.1,
+    "text": "Kept 93% of its population from the 2016\u20132020 SD-16; gained the rest from the old SD-17 (7%). Entirely in Ada County. 2020 presidential margin D+20.6 on the 2016\u20132020 lines \u2192 D+20.3 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 60.7,
+      "key": "17",
+      "popPct": 73.1
+     },
+     {
+      "areaPct": 28.3,
+      "key": "18",
+      "popPct": 17.1
+     },
+     {
+      "areaPct": 10.6,
+      "key": "21",
+      "popPct": 9.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 52096,
+    "pres2020New": -16.4,
+    "pres2020Old": -26.9,
+    "retainedAreaPct": 60.7,
+    "retainedPopPct": 73.1,
+    "text": "Kept 73% of its population from the 2016\u20132020 SD-17; gained the rest from the old SD-18 (17%), the old SD-21 (10%). Entirely in Ada County. 2020 presidential margin D+26.9 on the 2016\u20132020 lines \u2192 D+16.4 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 89.2,
+      "key": "18",
+      "popPct": 86.3
+     },
+     {
+      "areaPct": 0.7,
+      "key": "17",
+      "popPct": 13.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51273,
+    "pres2020New": -26.9,
+    "pres2020Old": -21.9,
+    "retainedAreaPct": 89.2,
+    "retainedPopPct": 86.3,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-18; gained the rest from the old SD-17 (13%). Entirely in Ada County. 2020 presidential margin D+21.9 on the 2016\u20132020 lines \u2192 D+26.9 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 99.0,
+      "key": "19",
+      "popPct": 99.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51131,
+    "pres2020New": -37.8,
+    "pres2020Old": -37.8,
+    "retainedAreaPct": 99.0,
+    "retainedPopPct": 99.5,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Ada County.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 75.6,
+      "key": "7",
+      "popPct": 44.0
+     },
+     {
+      "areaPct": 11.1,
+      "key": "2",
+      "popPct": 29.9
+     },
+     {
+      "areaPct": 11.4,
+      "key": "5",
+      "popPct": 18.1
+     },
+     {
+      "areaPct": 1.8,
+      "key": "1",
+      "popPct": 8.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kootenai",
+      "popPct": 29.9
+     },
+     {
+      "county": "Shoshone",
+      "popPct": 25.1
+     },
+     {
+      "county": "Benewah",
+      "popPct": 18.1
+     },
+     {
+      "county": "Clearwater",
+      "popPct": 16.6
+     },
+     {
+      "county": "Bonner",
+      "popPct": 10.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Shoshone",
+      "popPct": 25.1
+     },
+     {
+      "county": "Benewah",
+      "popPct": 18.1
+     },
+     {
+      "county": "Clearwater",
+      "popPct": 16.6
+     },
+     {
+      "county": "Bonner",
+      "popPct": 10.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 52546,
+    "pres2020New": 55.9,
+    "pres2020Old": 53.0,
+    "retainedAreaPct": 11.1,
+    "retainedPopPct": 29.9,
+    "text": "A new footprint: only 30% of its population was in the 2016\u20132020 SD-2; it draws from the old SD-7 (44%), the old SD-5 (18%), the old SD-1 (8%). Counties: gained Shoshone (25%), Benewah (18%), Clearwater (17%) and 1 more. 2020 presidential margin R+53.0 on the 2016\u20132020 lines \u2192 R+55.9 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 44.3,
+      "key": "20",
+      "popPct": 73.8
+     },
+     {
+      "areaPct": 55.7,
+      "key": "14",
+      "popPct": 26.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49877,
+    "pres2020New": 27.2,
+    "pres2020Old": 21.6,
+    "retainedAreaPct": 44.3,
+    "retainedPopPct": 73.8,
+    "text": "Kept 74% of its population from the 2016\u20132020 SD-20; gained the rest from the old SD-14 (26%). Entirely in Ada County. 2020 presidential margin R+21.6 on the 2016\u20132020 lines \u2192 R+27.2 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 45.1,
+      "key": "22",
+      "popPct": 38.0
+     },
+     {
+      "areaPct": 23.9,
+      "key": "20",
+      "popPct": 27.5
+     },
+     {
+      "areaPct": 18.9,
+      "key": "21",
+      "popPct": 20.4
+     },
+     {
+      "areaPct": 12.1,
+      "key": "14",
+      "popPct": 14.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 50470,
+    "pres2020New": 27.5,
+    "pres2020Old": 21.7,
+    "retainedAreaPct": 18.9,
+    "retainedPopPct": 20.4,
+    "text": "A new footprint: only 20% of its population was in the 2016\u20132020 SD-21; it draws from the old SD-22 (38%), the old SD-20 (28%), the old SD-14 (14%). Entirely in Ada County. 2020 presidential margin R+21.7 on the 2016\u20132020 lines \u2192 R+27.5 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 48.4,
+      "key": "21",
+      "popPct": 84.2
+     },
+     {
+      "areaPct": 51.6,
+      "key": "22",
+      "popPct": 15.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 54452,
+    "pres2020New": 24.3,
+    "pres2020Old": 41.1,
+    "retainedAreaPct": 51.6,
+    "retainedPopPct": 15.8,
+    "text": "A new footprint: only 16% of its population was in the 2016\u20132020 SD-22; it draws from the old SD-21 (84%). Entirely in Ada County. 2020 presidential margin R+41.1 on the 2016\u20132020 lines \u2192 R+24.3 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 7.0,
+      "key": "22",
+      "popPct": 51.0
+     },
+     {
+      "areaPct": 2.2,
+      "key": "11",
+      "popPct": 26.3
+     },
+     {
+      "areaPct": 90.8,
+      "key": "23",
+      "popPct": 19.7
+     },
+     {
+      "areaPct": 0.0,
+      "key": "12",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ada",
+      "popPct": 50.9
+     },
+     {
+      "county": "Canyon",
+      "popPct": 29.3
+     },
+     {
+      "county": "Owyhee",
+      "popPct": 19.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Ada",
+      "popPct": 50.9
+     },
+     {
+      "county": "Canyon",
+      "popPct": 29.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Elmore",
+      "popPct": 60.9
+     },
+     {
+      "county": "Twin Falls",
+      "popPct": 13.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 60399,
+    "pres2020New": 53.7,
+    "pres2020Old": 53.3,
+    "retainedAreaPct": 90.8,
+    "retainedPopPct": 19.7,
+    "text": "A new footprint: only 20% of its population was in the 2016\u20132020 SD-23; it draws from the old SD-22 (51%), the old SD-11 (26%), the old SD-12 (3%). Counties: gained Ada (51%), Canyon (29%); lost Elmore, Twin Falls. 2020 presidential margin R+53.3 on the 2016\u20132020 lines \u2192 R+53.7 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 34.4,
+      "key": "25",
+      "popPct": 52.8
+     },
+     {
+      "areaPct": 48.8,
+      "key": "26",
+      "popPct": 30.5
+     },
+     {
+      "areaPct": 16.5,
+      "key": "23",
+      "popPct": 11.5
+     },
+     {
+      "areaPct": 0.2,
+      "key": "24",
+      "popPct": 5.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Twin Falls",
+      "popPct": 68.9
+     },
+     {
+      "county": "Gooding",
+      "popPct": 28.5
+     },
+     {
+      "county": "Camas",
+      "popPct": 2.0
+     },
+     {
+      "county": "Jerome",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Gooding",
+      "popPct": 28.5
+     },
+     {
+      "county": "Camas",
+      "popPct": 2.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 54611,
+    "pres2020New": 57.3,
+    "pres2020Old": 35.4,
+    "retainedAreaPct": 0.2,
+    "retainedPopPct": 5.1,
+    "text": "A new footprint: only 5% of its population was in the 2016\u20132020 SD-24; it draws from the old SD-25 (53%), the old SD-26 (30%), the old SD-23 (12%). Counties: gained Gooding (28%), Camas (2%). 2020 presidential margin R+35.4 on the 2016\u20132020 lines \u2192 R+57.3 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "24",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Twin Falls",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Jerome",
+      "popPct": 45.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 52101,
+    "pres2020New": 34.8,
+    "pres2020Old": 54.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-25; it draws from the old SD-24 (100%). Counties: lost Jerome. 2020 presidential margin R+54.1 on the 2016\u20132020 lines \u2192 R+34.8 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 86.5,
+      "key": "26",
+      "popPct": 54.8
+     },
+     {
+      "areaPct": 13.5,
+      "key": "25",
+      "popPct": 45.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Blaine",
+      "popPct": 45.2
+     },
+     {
+      "county": "Jerome",
+      "popPct": 44.9
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 9.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jerome",
+      "popPct": 44.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Gooding",
+      "popPct": 33.7
+     },
+     {
+      "county": "Camas",
+      "popPct": 2.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 53645,
+    "pres2020New": 0.1,
+    "pres2020Old": -0.3,
+    "retainedAreaPct": 86.5,
+    "retainedPopPct": 54.8,
+    "text": "Kept 55% of its population from the 2016\u20132020 SD-26; gained the rest from the old SD-25 (45%). Counties: gained Jerome (45%); lost Gooding, Camas. 2020 presidential margin D+0.3 on the 2016\u20132020 lines \u2192 R+0.1 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 73.6,
+      "key": "27",
+      "popPct": 91.0
+     },
+     {
+      "areaPct": 26.4,
+      "key": "32",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cassia",
+      "popPct": 47.5
+     },
+     {
+      "county": "Minidoka",
+      "popPct": 43.4
+     },
+     {
+      "county": "Oneida",
+      "popPct": 8.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Oneida",
+      "popPct": 8.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 50832,
+    "pres2020New": 65.0,
+    "pres2020Old": 63.3,
+    "retainedAreaPct": 73.6,
+    "retainedPopPct": 91.0,
+    "text": "Kept 91% of its population from the 2016\u20132020 SD-27; gained the rest from the old SD-32 (9%). Counties: gained Oneida (9%). 2020 presidential margin R+63.3 on the 2016\u20132020 lines \u2192 R+65.0 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 74.7,
+      "key": "28",
+      "popPct": 71.1
+     },
+     {
+      "areaPct": 22.6,
+      "key": "32",
+      "popPct": 25.0
+     },
+     {
+      "areaPct": 2.7,
+      "key": "29",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bannock",
+      "popPct": 61.0
+     },
+     {
+      "county": "Franklin",
+      "popPct": 25.0
+     },
+     {
+      "county": "Power",
+      "popPct": 13.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Franklin",
+      "popPct": 25.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 56671,
+    "pres2020New": 46.3,
+    "pres2020Old": 36.0,
+    "retainedAreaPct": 74.7,
+    "retainedPopPct": 71.1,
+    "text": "Kept 71% of its population from the 2016\u20132020 SD-28; gained the rest from the old SD-32 (25%), the old SD-29 (4%). Counties: gained Franklin (25%). 2020 presidential margin R+36.0 on the 2016\u20132020 lines \u2192 R+46.3 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 85.7,
+      "key": "29",
+      "popPct": 87.2
+     },
+     {
+      "areaPct": 14.3,
+      "key": "28",
+      "popPct": 12.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bannock",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49493,
+    "pres2020New": 8.6,
+    "pres2020Old": 8.0,
+    "retainedAreaPct": 85.7,
+    "retainedPopPct": 87.2,
+    "text": "Kept 87% of its population from the 2016\u20132020 SD-29; gained the rest from the old SD-28 (13%). Entirely in Bannock County. 2020 presidential margin R+8.0 on the 2016\u20132020 lines \u2192 R+8.6 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 90.1,
+      "key": "2",
+      "popPct": 65.4
+     },
+     {
+      "areaPct": 9.5,
+      "key": "3",
+      "popPct": 27.9
+     },
+     {
+      "areaPct": 0.4,
+      "key": "4",
+      "popPct": 6.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kootenai",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 57835,
+    "pres2020New": 51.2,
+    "pres2020Old": 49.7,
+    "retainedAreaPct": 9.5,
+    "retainedPopPct": 27.9,
+    "text": "A new footprint: only 28% of its population was in the 2016\u20132020 SD-3; it draws from the old SD-2 (65%), the old SD-4 (7%). Entirely in Kootenai County. 2020 presidential margin R+49.7 on the 2016\u20132020 lines \u2192 R+51.2 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 48.6,
+      "key": "31",
+      "popPct": 94.9
+     },
+     {
+      "areaPct": 51.4,
+      "key": "35",
+      "popPct": 5.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bingham",
+      "popPct": 94.9
+     },
+     {
+      "county": "Butte",
+      "popPct": 5.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Bingham",
+      "popPct": 94.9
+     },
+     {
+      "county": "Butte",
+      "popPct": 5.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Bonneville",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 50566,
+    "pres2020New": 56.9,
+    "pres2020Old": 49.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-30; it draws from the old SD-31 (95%), the old SD-35 (5%). Counties: gained Bingham (95%), Butte (5%); lost Bonneville. 2020 presidential margin R+49.2 on the 2016\u20132020 lines \u2192 R+56.9 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 51.1,
+      "key": "35",
+      "popPct": 85.0
+     },
+     {
+      "areaPct": 48.9,
+      "key": "8",
+      "popPct": 15.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 57.9
+     },
+     {
+      "county": "Fremont",
+      "popPct": 25.2
+     },
+     {
+      "county": "Lemhi",
+      "popPct": 15.0
+     },
+     {
+      "county": "Clark",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jefferson",
+      "popPct": 57.9
+     },
+     {
+      "county": "Fremont",
+      "popPct": 25.2
+     },
+     {
+      "county": "Lemhi",
+      "popPct": 15.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Bingham",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 53037,
+    "pres2020New": 68.5,
+    "pres2020Old": 55.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-31; it draws from the old SD-35 (85%), the old SD-8 (15%). Counties: gained Jefferson (58%), Fremont (25%), Lemhi (15%); lost Bingham. 2020 presidential margin R+55.9 on the 2016\u20132020 lines \u2192 R+68.5 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "30",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bonneville",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Franklin",
+      "popPct": 28.7
+     },
+     {
+      "county": "Teton",
+      "popPct": 23.4
+     },
+     {
+      "county": "Caribou",
+      "popPct": 14.2
+     },
+     {
+      "county": "Bear Lake",
+      "popPct": 12.9
+     },
+     {
+      "county": "Oneida",
+      "popPct": 9.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 49038,
+    "pres2020New": 47.8,
+    "pres2020Old": 54.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-32; it draws from the old SD-30 (100%). Counties: lost Franklin, Teton, Caribou, Bear Lake and 1 more. 2020 presidential margin R+54.0 on the 2016\u20132020 lines \u2192 R+47.8 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 80.6,
+      "key": "33",
+      "popPct": 94.5
+     },
+     {
+      "areaPct": 19.4,
+      "key": "30",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bonneville",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51509,
+    "pres2020New": 27.7,
+    "pres2020Old": 26.6,
+    "retainedAreaPct": 80.6,
+    "retainedPopPct": 94.5,
+    "text": "Kept 94% of its population from the 2016\u20132020 SD-33; gained the rest from the old SD-30 (6%). Entirely in Bonneville County. 2020 presidential margin R+26.6 on the 2016\u20132020 lines \u2192 R+27.7 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "34",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Madison",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Bonneville",
+      "popPct": 14.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 52919,
+    "pres2020New": 63.6,
+    "pres2020Old": 65.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Counties: lost Bonneville.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 89.5,
+      "key": "32",
+      "popPct": 59.6
+     },
+     {
+      "areaPct": 4.9,
+      "key": "34",
+      "popPct": 17.8
+     },
+     {
+      "areaPct": 0.5,
+      "key": "30",
+      "popPct": 16.9
+     },
+     {
+      "areaPct": 5.2,
+      "key": "28",
+      "popPct": 5.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bonneville",
+      "popPct": 45.7
+     },
+     {
+      "county": "Teton",
+      "popPct": 22.5
+     },
+     {
+      "county": "Caribou",
+      "popPct": 13.7
+     },
+     {
+      "county": "Bear Lake",
+      "popPct": 12.4
+     },
+     {
+      "county": "Bannock",
+      "popPct": 5.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Bonneville",
+      "popPct": 45.7
+     },
+     {
+      "county": "Teton",
+      "popPct": 22.5
+     },
+     {
+      "county": "Caribou",
+      "popPct": 13.7
+     },
+     {
+      "county": "Bear Lake",
+      "popPct": 12.4
+     },
+     {
+      "county": "Bannock",
+      "popPct": 5.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Jefferson",
+      "popPct": 64.5
+     },
+     {
+      "county": "Fremont",
+      "popPct": 28.1
+     },
+     {
+      "county": "Butte",
+      "popPct": 5.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 51372,
+    "pres2020New": 49.4,
+    "pres2020Old": 71.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-35; it draws from the old SD-32 (60%), the old SD-34 (18%), the old SD-30 (17%) and 1 more. Counties: gained Bonneville (46%), Teton (22%), Caribou (14%) and 2 more; lost Jefferson, Fremont, Butte. 2020 presidential margin R+71.7 on the 2016\u20132020 lines \u2192 R+49.4 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 90.8,
+      "key": "4",
+      "popPct": 99.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kootenai",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 48389,
+    "pres2020New": 22.1,
+    "pres2020Old": 24.6,
+    "retainedAreaPct": 90.8,
+    "retainedPopPct": 99.8,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Kootenai County.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 98.3,
+      "key": "3",
+      "popPct": 90.3
+     },
+     {
+      "areaPct": 1.7,
+      "key": "4",
+      "popPct": 9.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kootenai",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kootenai",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Latah",
+      "popPct": 80.5
+     },
+     {
+      "county": "Benewah",
+      "popPct": 19.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 49435,
+    "pres2020New": 46.9,
+    "pres2020Old": 8.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-5; it draws from the old SD-3 (90%), the old SD-4 (10%). Counties: gained Kootenai (100%); lost Latah, Benewah. 2020 presidential margin R+8.4 on the 2016\u20132020 lines \u2192 R+46.9 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 51.5,
+      "key": "5",
+      "popPct": 74.0
+     },
+     {
+      "areaPct": 48.5,
+      "key": "6",
+      "popPct": 26.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Latah",
+      "popPct": 73.9
+     },
+     {
+      "county": "Nez Perce",
+      "popPct": 19.4
+     },
+     {
+      "county": "Lewis",
+      "popPct": 5.8
+     },
+     {
+      "county": "Idaho",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Latah",
+      "popPct": 73.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 53432,
+    "pres2020New": 5.3,
+    "pres2020Old": 35.9,
+    "retainedAreaPct": 48.5,
+    "retainedPopPct": 26.0,
+    "text": "A new footprint: only 26% of its population was in the 2016\u20132020 SD-6; it draws from the old SD-5 (74%). Counties: gained Latah (74%). 2020 presidential margin R+35.9 on the 2016\u20132020 lines \u2192 R+5.3 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 3.2,
+      "key": "6",
+      "popPct": 60.2
+     },
+     {
+      "areaPct": 83.4,
+      "key": "7",
+      "popPct": 31.4
+     },
+     {
+      "areaPct": 13.4,
+      "key": "9",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Nez Perce",
+      "popPct": 60.2
+     },
+     {
+      "county": "Idaho",
+      "popPct": 31.3
+     },
+     {
+      "county": "Adams",
+      "popPct": 8.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Nez Perce",
+      "popPct": 60.2
+     },
+     {
+      "county": "Adams",
+      "popPct": 8.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Shoshone",
+      "popPct": 29.8
+     },
+     {
+      "county": "Clearwater",
+      "popPct": 19.7
+     },
+     {
+      "county": "Bonner",
+      "popPct": 13.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 52630,
+    "pres2020New": 50.1,
+    "pres2020Old": 54.9,
+    "retainedAreaPct": 83.4,
+    "retainedPopPct": 31.4,
+    "text": "A new footprint: only 31% of its population was in the 2016\u20132020 SD-7; it draws from the old SD-6 (60%), the old SD-9 (8%). Counties: gained Nez Perce (60%), Adams (8%); lost Shoshone, Clearwater, Bonner. 2020 presidential margin R+54.9 on the 2016\u20132020 lines \u2192 R+50.1 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 22.7,
+      "key": "23",
+      "popPct": 54.8
+     },
+     {
+      "areaPct": 77.3,
+      "key": "8",
+      "popPct": 45.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Elmore",
+      "popPct": 54.7
+     },
+     {
+      "county": "Valley",
+      "popPct": 22.4
+     },
+     {
+      "county": "Boise",
+      "popPct": 14.5
+     },
+     {
+      "county": "Custer",
+      "popPct": 8.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Elmore",
+      "popPct": 54.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Gem",
+      "popPct": 37.5
+     },
+     {
+      "county": "Lemhi",
+      "popPct": 15.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 52297,
+    "pres2020New": 37.8,
+    "pres2020Old": 45.8,
+    "retainedAreaPct": 77.3,
+    "retainedPopPct": 45.2,
+    "text": "A new footprint: only 45% of its population was in the 2016\u20132020 SD-8; it draws from the old SD-23 (55%). Counties: gained Elmore (55%); lost Gem, Lemhi. 2020 presidential margin R+45.8 on the 2016\u20132020 lines \u2192 R+37.8 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 94.1,
+      "key": "9",
+      "popPct": 73.5
+     },
+     {
+      "areaPct": 5.9,
+      "key": "11",
+      "popPct": 22.0
+     },
+     {
+      "areaPct": 0.0,
+      "key": "10",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Payette",
+      "popPct": 45.2
+     },
+     {
+      "county": "Canyon",
+      "popPct": 36.1
+     },
+     {
+      "county": "Washington",
+      "popPct": 18.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Adams",
+      "popPct": 8.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 56277,
+    "pres2020New": 57.6,
+    "pres2020Old": 58.7,
+    "retainedAreaPct": 94.1,
+    "retainedPopPct": 73.5,
+    "text": "Kept 74% of its population from the 2016\u20132020 SD-9; gained the rest from the old SD-11 (22%), the old SD-10 (4%). Counties: lost Adams. 2020 presidential margin R+58.7 on the 2016\u20132020 lines \u2192 R+57.6 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

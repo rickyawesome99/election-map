@@ -1,0 +1,6437 @@
+{
+ "state": "NM",
+ "cycle": 2024,
+ "fetched": "2026-10-11",
+ "dataThrough": "12/31/2024",
+ "races": [
+  {
+   "office": "New Mexico House of Representatives District 1",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-1-68018",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 183023.0,
+   "totalExpenditures": 165311.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Rodney D Montoya",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 162163.24,
+       "expenditures": 0.0,
+       "status": "$144,450.91",
+       "url": "/nm/candidate/rodney-d-montoya?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Rodney D Montoya",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 162163.24,
+       "expenditures": 0.0,
+       "status": "$144,450.91",
+       "url": "/nm/candidate/rodney-d-montoya?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Keith M Neil",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20860.22,
+       "expenditures": 0.0,
+       "status": "$20,860.22",
+       "url": "/nm/candidate/keith-m-neil?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "New Mexico House of Representatives District 10",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-10-68019",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 33751.0,
+   "totalExpenditures": 26798.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "G Andres Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 33750.58,
+       "expenditures": 5125.91,
+       "status": "$26,797.78",
+       "url": "/nm/candidate/g-andres-romero?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "G Andres Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 33750.58,
+       "expenditures": 5125.91,
+       "status": "$26,797.78",
+       "url": "/nm/candidate/g-andres-romero?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "New Mexico House of Representatives District 11",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-11-68020",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 598633.0,
+   "totalExpenditures": 615233.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Javier I Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 567537.57,
+       "expenditures": 0.0,
+       "status": "$594,535.36",
+       "url": "/nm/candidate/javier-i-martinez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Bart H Kinney III",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 31095.76,
+       "expenditures": 0.0,
+       "status": "$20,697.83",
+       "url": "/nm/candidate/bart-h-kinney-iii?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Javier I Martinez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 567537.57,
+       "expenditures": 0.0,
+       "status": "$594,535.36",
+       "url": "/nm/candidate/javier-i-martinez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Bart H Kinney III",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 31095.76,
+       "expenditures": 0.0,
+       "status": "$20,697.83",
+       "url": "/nm/candidate/bart-h-kinney-iii?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "New Mexico House of Representatives District 12",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-12-68021",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 106939.0,
+   "totalExpenditures": 13888.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Art De La Cruz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 106799.33,
+       "expenditures": 0.0,
+       "status": "$13,414.88",
+       "url": "/nm/candidate/art-de-la-cruz?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Art De La Cruz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 106799.33,
+       "expenditures": 0.0,
+       "status": "$13,414.88",
+       "url": "/nm/candidate/art-de-la-cruz?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Steve Tafoya",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 140.0,
+       "expenditures": 1400.0,
+       "status": "$473.50",
+       "url": "/nm/candidate/steve-tafoya?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "New Mexico House of Representatives District 13",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-13-68022",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 96466.0,
+   "totalExpenditures": 55940.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Patricia Roybal Caballero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 80276.7,
+       "expenditures": 92.44,
+       "status": "$42,795.45",
+       "url": "/nm/candidate/patricia-roybal-caballero?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Patricia Roybal Caballero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 80276.7,
+       "expenditures": 92.44,
+       "status": "$42,795.45",
+       "url": "/nm/candidate/patricia-roybal-caballero?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Teresa Garcia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16188.88,
+       "expenditures": 0.0,
+       "status": "$13,145.01",
+       "url": "/nm/candidate/teresa-garcia?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "New Mexico House of Representatives District 14",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-14-68023",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 32075.0,
+   "totalExpenditures": 25938.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Miguel P Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 30089.03,
+       "expenditures": 0.0,
+       "status": "$23,366.58",
+       "url": "/nm/candidate/miguel-p-garcia?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Konnie L Legried",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1986.4,
+       "expenditures": 600.0,
+       "status": "$2,571.40",
+       "url": "/nm/candidate/konnie-l-legried?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Miguel P Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 30089.03,
+       "expenditures": 0.0,
+       "status": "$23,366.58",
+       "url": "/nm/candidate/miguel-p-garcia?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Konnie L Legried",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1986.4,
+       "expenditures": 600.0,
+       "status": "$2,571.40",
+       "url": "/nm/candidate/konnie-l-legried?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "New Mexico House of Representatives District 15",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-15-68024",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 248874.0,
+   "totalExpenditures": 176952.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Day M Hochman-Vigil",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 248873.7,
+       "expenditures": 8000.0,
+       "status": "$176,951.73",
+       "url": "/nm/candidate/day-m-hochman-vigil?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Day M Hochman-Vigil",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 248873.7,
+       "expenditures": 8000.0,
+       "status": "$176,951.73",
+       "url": "/nm/candidate/day-m-hochman-vigil?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "New Mexico House of Representatives District 16",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-16-68025",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 211195.0,
+   "totalExpenditures": 184793.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Yanira Gurrola",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 138693.42,
+       "expenditures": 830.29,
+       "status": "$115,163.91",
+       "url": "/nm/candidate/yanira-gurrola?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Leland Bohannon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 30974.78,
+       "expenditures": 0.0,
+       "status": "$30,974.78",
+       "url": "/nm/candidate/leland-bohannon?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Yanira Gurrola",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 138693.42,
+       "expenditures": 830.29,
+       "status": "$115,163.91",
+       "url": "/nm/candidate/yanira-gurrola?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Marsella Duarte",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 41527.16,
+       "expenditures": 0.0,
+       "status": "$38,654.16",
+       "url": "/nm/candidate/marsella-duarte?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Leland Bohannon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 30974.78,
+       "expenditures": 0.0,
+       "status": "$30,974.78",
+       "url": "/nm/candidate/leland-bohannon?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "New Mexico House of Representatives District 17",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-17-68026",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 322592.0,
+   "totalExpenditures": 223986.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Cynthia D Borrego",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 265915.8,
+       "expenditures": 0.0,
+       "status": "$167,354.87",
+       "url": "/nm/candidate/cynthia-d-borrego?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joshua T Neal",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 56675.74,
+       "expenditures": 0.0,
+       "status": "$56,631.42",
+       "url": "/nm/candidate/joshua-t-neal?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Cynthia D Borrego",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 265915.8,
+       "expenditures": 0.0,
+       "status": "$167,354.87",
+       "url": "/nm/candidate/cynthia-d-borrego?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Joshua T Neal",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 56675.74,
+       "expenditures": 0.0,
+       "status": "$56,631.42",
+       "url": "/nm/candidate/joshua-t-neal?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "New Mexico House of Representatives District 18",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-18-68027",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 353652.0,
+   "totalExpenditures": 333699.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Marianna Anaya",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 169328.6,
+       "expenditures": 0.0,
+       "status": "$156,377.06",
+       "url": "/nm/candidate/marianna-anaya?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Marianna Anaya",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 169328.6,
+       "expenditures": 0.0,
+       "status": "$156,377.06",
+       "url": "/nm/candidate/marianna-anaya?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gloria S Doherty",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 56033.0,
+       "expenditures": 2271.96,
+       "status": "$52,828.00",
+       "url": "/nm/candidate/gloria-s-doherty?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Juan F Larranaga",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2705.0,
+       "expenditures": 704.07,
+       "status": "$3,409.07",
+       "url": "/nm/candidate/juan-f-larranaga?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Anjali Taneja",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 125585.17,
+       "expenditures": 0.0,
+       "status": "$121,084.63",
+       "url": "/nm/candidate/anjali-taneja?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "New Mexico House of Representatives District 19",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-19-68028",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 89147.0,
+   "totalExpenditures": 39342.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Janelle Anyanonu",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 82652.14,
+       "expenditures": 5000.0,
+       "status": "$35,846.67",
+       "url": "/nm/candidate/janelle-anyanonu?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Leanna Derrick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6495.0,
+       "expenditures": 0.0,
+       "status": "$3,495.00",
+       "url": "/nm/candidate/leanna-derrick?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Janelle Anyanonu",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 82652.14,
+       "expenditures": 5000.0,
+       "status": "$35,846.67",
+       "url": "/nm/candidate/janelle-anyanonu?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Leanna Derrick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6495.0,
+       "expenditures": 0.0,
+       "status": "$3,495.00",
+       "url": "/nm/candidate/leanna-derrick?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "New Mexico House of Representatives District 2",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-2-68029",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 45699.0,
+   "totalExpenditures": 34448.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mark Duncan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 45698.51,
+       "expenditures": 3535.58,
+       "status": "$34,447.99",
+       "url": "/nm/candidate/mark-duncan?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Mark Duncan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 45698.51,
+       "expenditures": 3535.58,
+       "status": "$34,447.99",
+       "url": "/nm/candidate/mark-duncan?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "New Mexico House of Representatives District 20",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-20-68030",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 593029.0,
+   "totalExpenditures": 427381.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Meredith A Dixon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 524986.1,
+       "expenditures": 0.0,
+       "status": "$384,801.81",
+       "url": "/nm/candidate/meredith-a-dixon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tracy Major",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 68043.35,
+       "expenditures": 2350.0,
+       "status": "$42,579.49",
+       "url": "/nm/candidate/tracy-major?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Meredith A Dixon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 524986.1,
+       "expenditures": 0.0,
+       "status": "$384,801.81",
+       "url": "/nm/candidate/meredith-a-dixon?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Tracy Major",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 68043.35,
+       "expenditures": 2350.0,
+       "status": "$42,579.49",
+       "url": "/nm/candidate/tracy-major?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "New Mexico House of Representatives District 21",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-21-68031",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 48503.0,
+   "totalExpenditures": 28241.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Debra M Sarinana",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 48503.38,
+       "expenditures": 0.0,
+       "status": "$28,241.32",
+       "url": "/nm/candidate/debra-m-sarinana?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Debra M Sarinana",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 48503.38,
+       "expenditures": 0.0,
+       "status": "$28,241.32",
+       "url": "/nm/candidate/debra-m-sarinana?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "New Mexico House of Representatives District 22",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-22-68032",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 115546.0,
+   "totalExpenditures": 95660.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Stefani Lord",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 99348.68,
+       "expenditures": 0.0,
+       "status": "$82,634.31",
+       "url": "/nm/candidate/stefani-lord?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Fred Ponzlov",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12498.0,
+       "expenditures": 200.0,
+       "status": "$10,196.14",
+       "url": "/nm/candidate/fred-ponzlov?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Zachary Withers",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 3699.0,
+       "expenditures": 0.0,
+       "status": "$2,829.83",
+       "url": "/nm/candidate/zachary-withers?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Fred Ponzlov",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12498.0,
+       "expenditures": 200.0,
+       "status": "$10,196.14",
+       "url": "/nm/candidate/fred-ponzlov?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Stefani Lord",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 99348.68,
+       "expenditures": 0.0,
+       "status": "$82,634.31",
+       "url": "/nm/candidate/stefani-lord?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "New Mexico House of Representatives District 23",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-23-68033",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 140611.0,
+   "totalExpenditures": 103779.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Alan Martinez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 95360.32,
+       "expenditures": 0.0,
+       "status": "$70,431.14",
+       "url": "/nm/candidate/alan-martinez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Frank Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 45250.33,
+       "expenditures": 2540.0,
+       "status": "$33,348.02",
+       "url": "/nm/candidate/frank-smith?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Frank Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 45250.33,
+       "expenditures": 2540.0,
+       "status": "$33,348.02",
+       "url": "/nm/candidate/frank-smith?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Alan Martinez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 95360.32,
+       "expenditures": 0.0,
+       "status": "$70,431.14",
+       "url": "/nm/candidate/alan-martinez?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "New Mexico House of Representatives District 24",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-24-68034",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 145974.0,
+   "totalExpenditures": 84669.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Elizabeth L Thomson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 139531.53,
+       "expenditures": 0.0,
+       "status": "$79,779.56",
+       "url": "/nm/candidate/elizabeth-l-thomson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Daffron",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3525.0,
+       "expenditures": 700.0,
+       "status": "$1,971.67",
+       "url": "/nm/candidate/david-daffron?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ann Edenfield",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2917.88,
+       "expenditures": 0.0,
+       "status": "$2,917.88",
+       "url": "/nm/candidate/ann-edenfield?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Elizabeth L Thomson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 139531.53,
+       "expenditures": 0.0,
+       "status": "$79,779.56",
+       "url": "/nm/candidate/elizabeth-l-thomson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Ann Edenfield",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2917.88,
+       "expenditures": 0.0,
+       "status": "$2,917.88",
+       "url": "/nm/candidate/ann-edenfield?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "New Mexico House of Representatives District 25",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-25-68035",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 92095.0,
+   "totalExpenditures": 40418.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Cristina Parajon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 91804.6,
+       "expenditures": 282.24,
+       "status": "$40,127.84",
+       "url": "/nm/candidate/cristina-parajon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Denis Litvinenko",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 290.0,
+       "expenditures": 0.0,
+       "status": "$290.00",
+       "url": "/nm/candidate/denis-litvinenko?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Cristina Parajon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 91804.6,
+       "expenditures": 282.24,
+       "status": "$40,127.84",
+       "url": "/nm/candidate/cristina-parajon?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Denis Litvinenko",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 290.0,
+       "expenditures": 0.0,
+       "status": "$290.00",
+       "url": "/nm/candidate/denis-litvinenko?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "New Mexico House of Representatives District 26",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-26-68036",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 114225.0,
+   "totalExpenditures": 18984.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Eleanor Chavez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 113549.18,
+       "expenditures": 2000.0,
+       "status": "$18,419.33",
+       "url": "/nm/candidate/eleanor-chavez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Patrick B Sais",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 675.37,
+       "expenditures": 0.0,
+       "status": "$564.92",
+       "url": "/nm/candidate/patrick-b-sais?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Eleanor Chavez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 113549.18,
+       "expenditures": 2000.0,
+       "status": "$18,419.33",
+       "url": "/nm/candidate/eleanor-chavez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Patrick B Sais",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 675.37,
+       "expenditures": 0.0,
+       "status": "$564.92",
+       "url": "/nm/candidate/patrick-b-sais?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "New Mexico House of Representatives District 27",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-27-68037",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 472571.0,
+   "totalExpenditures": 327078.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Marian Matthews",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 381932.65,
+       "expenditures": 0.0,
+       "status": "$238,703.76",
+       "url": "/nm/candidate/marian-matthews?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Greg Gallegos",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20382.23,
+       "expenditures": 1000.0,
+       "status": "$18,403.26",
+       "url": "/nm/candidate/greg-gallegos?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Marian Matthews",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 381932.65,
+       "expenditures": 0.0,
+       "status": "$238,703.76",
+       "url": "/nm/candidate/marian-matthews?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Greg Seeley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 70256.34,
+       "expenditures": 0.0,
+       "status": "$69,971.02",
+       "url": "/nm/candidate/greg-seeley?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Greg Gallegos",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20382.23,
+       "expenditures": 1000.0,
+       "status": "$18,403.26",
+       "url": "/nm/candidate/greg-gallegos?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "New Mexico House of Representatives District 28",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-28-68038",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 386095.0,
+   "totalExpenditures": 212492.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Pamelya Herndon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 358603.0,
+       "expenditures": 0.0,
+       "status": "$200,727.55",
+       "url": "/nm/candidate/pamelya-herndon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Marcie M May",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27492.49,
+       "expenditures": 0.0,
+       "status": "$11,764.54",
+       "url": "/nm/candidate/marcie-m-may?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Pamelya Herndon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 358603.0,
+       "expenditures": 0.0,
+       "status": "$200,727.55",
+       "url": "/nm/candidate/pamelya-herndon?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Marcie M May",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27492.49,
+       "expenditures": 0.0,
+       "status": "$11,764.54",
+       "url": "/nm/candidate/marcie-m-may?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "New Mexico House of Representatives District 29",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-29-68039",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 478709.0,
+   "totalExpenditures": 308031.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Joy Garratt",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 306787.42,
+       "expenditures": 0.0,
+       "status": "$203,636.38",
+       "url": "/nm/candidate/joy-garratt?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gregory Cunningham",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 171921.63,
+       "expenditures": 500.0,
+       "status": "$104,394.44",
+       "url": "/nm/candidate/gregory-cunningham?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Joy Garratt",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 306787.42,
+       "expenditures": 0.0,
+       "status": "$203,636.38",
+       "url": "/nm/candidate/joy-garratt?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Gregory Cunningham",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 171921.63,
+       "expenditures": 500.0,
+       "status": "$104,394.44",
+       "url": "/nm/candidate/gregory-cunningham?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "New Mexico House of Representatives District 3",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-3-68040",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 10850.0,
+   "totalExpenditures": 8230.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "William A Hall II",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 10850.0,
+       "expenditures": 0.0,
+       "status": "$8,229.70",
+       "url": "/nm/candidate/william-a-hall-ii?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "William A Hall II",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 10850.0,
+       "expenditures": 0.0,
+       "status": "$8,229.70",
+       "url": "/nm/candidate/william-a-hall-ii?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "New Mexico House of Representatives District 30",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-30-68041",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 201521.0,
+   "totalExpenditures": 135034.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Elizabeth Diane Torres-Velasquez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 90371.53,
+       "expenditures": 0.0,
+       "status": "$57,196.34",
+       "url": "/nm/candidate/elizabeth-diane-torres-velasquez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lori Robertson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 110174.39,
+       "expenditures": 5400.0,
+       "status": "$76,862.25",
+       "url": "/nm/candidate/lori-robertson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jared Secret",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 425.0,
+       "expenditures": 0.0,
+       "status": "$425.00",
+       "url": "/nm/candidate/jared-secret?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Elizabeth Diane Torres-Velasquez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 90371.53,
+       "expenditures": 0.0,
+       "status": "$57,196.34",
+       "url": "/nm/candidate/elizabeth-diane-torres-velasquez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jared Secret",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 425.0,
+       "expenditures": 0.0,
+       "status": "$425.00",
+       "url": "/nm/candidate/jared-secret?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Victoria Dore",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 550.0,
+       "expenditures": 0.0,
+       "status": "$550.00",
+       "url": "/nm/candidate/victoria-dore?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "New Mexico House of Representatives District 31",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-31-68042",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 639679.0,
+   "totalExpenditures": 517786.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Nicole Chavez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 251668.62,
+       "expenditures": 25000.0,
+       "status": "$215,002.11",
+       "url": "/nm/candidate/nicole-chavez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Vicky Estrada-Bustillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 342227.65,
+       "expenditures": 0.0,
+       "status": "$246,614.94",
+       "url": "/nm/candidate/vicky-estrada-bustillo?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Vicky Estrada-Bustillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 342227.65,
+       "expenditures": 0.0,
+       "status": "$246,614.94",
+       "url": "/nm/candidate/vicky-estrada-bustillo?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Nicole Chavez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 251668.62,
+       "expenditures": 25000.0,
+       "status": "$215,002.11",
+       "url": "/nm/candidate/nicole-chavez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sarah Jane Allen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 41400.0,
+       "expenditures": 26376.69,
+       "status": "$52,647.66",
+       "url": "/nm/candidate/sarah-jane-allen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Patrick W Huested",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4383.0,
+       "expenditures": 0.0,
+       "status": "$3,521.76",
+       "url": "/nm/candidate/patrick-w-huested?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "New Mexico House of Representatives District 32",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-32-68043",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 186123.0,
+   "totalExpenditures": 200669.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jenifer M Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 150736.51,
+       "expenditures": 0.0,
+       "status": "$118,952.39",
+       "url": "/nm/candidate/jenifer-m-jones?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Linda S Alvarez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18137.51,
+       "expenditures": 55413.6,
+       "status": "$68,941.61",
+       "url": "/nm/candidate/linda-s-alvarez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Linda S Alvarez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18137.51,
+       "expenditures": 55413.6,
+       "status": "$68,941.61",
+       "url": "/nm/candidate/linda-s-alvarez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Andrew S Hernandez III",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17249.36,
+       "expenditures": 0.0,
+       "status": "$12,774.68",
+       "url": "/nm/candidate/andrew-s-hernandez-iii?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jenifer M Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 150736.51,
+       "expenditures": 0.0,
+       "status": "$118,952.39",
+       "url": "/nm/candidate/jenifer-m-jones?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "New Mexico House of Representatives District 33",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-33-68044",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 110613.0,
+   "totalExpenditures": 76688.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Micaela Lara Cadena",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 110613.38,
+       "expenditures": 0.0,
+       "status": "$76,688.08",
+       "url": "/nm/candidate/micaela-lara-cadena?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Micaela Lara Cadena",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 110613.38,
+       "expenditures": 0.0,
+       "status": "$76,688.08",
+       "url": "/nm/candidate/micaela-lara-cadena?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "New Mexico House of Representatives District 34",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-34-68045",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 130694.0,
+   "totalExpenditures": 83834.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ray Lara",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 129617.82,
+       "expenditures": 0.0,
+       "status": "$83,656.79",
+       "url": "/nm/candidate/ray-lara?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Larry M Sedillo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1075.83,
+       "expenditures": 62.0,
+       "status": "$177.00",
+       "url": "/nm/candidate/larry-m-sedillo?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Ray Lara",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 129617.82,
+       "expenditures": 0.0,
+       "status": "$83,656.79",
+       "url": "/nm/candidate/ray-lara?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Larry M Sedillo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1075.83,
+       "expenditures": 62.0,
+       "status": "$177.00",
+       "url": "/nm/candidate/larry-m-sedillo?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "New Mexico House of Representatives District 35",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-35-68046",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 102040.0,
+   "totalExpenditures": 92052.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Angelica Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 60130.32,
+       "expenditures": 0.0,
+       "status": "$50,172.81",
+       "url": "/nm/candidate/angelica-rubio?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Angelica Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 60130.32,
+       "expenditures": 0.0,
+       "status": "$50,172.81",
+       "url": "/nm/candidate/angelica-rubio?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gabriel Duran",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 41909.51,
+       "expenditures": 0.0,
+       "status": "$41,879.50",
+       "url": "/nm/candidate/gabriel-duran?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "New Mexico House of Representatives District 36",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-36-68047",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 804411.0,
+   "totalExpenditures": 613968.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Nathan Small",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 543899.71,
+       "expenditures": 0.0,
+       "status": "$395,772.53",
+       "url": "/nm/candidate/nathan-small?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kimberly Skaggs",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 260511.45,
+       "expenditures": 21984.75,
+       "status": "$218,195.32",
+       "url": "/nm/candidate/kimberly-skaggs?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Nathan Small",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 543899.71,
+       "expenditures": 0.0,
+       "status": "$395,772.53",
+       "url": "/nm/candidate/nathan-small?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Kimberly Skaggs",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 260511.45,
+       "expenditures": 21984.75,
+       "status": "$218,195.32",
+       "url": "/nm/candidate/kimberly-skaggs?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "New Mexico House of Representatives District 37",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-37-68048",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 75155.0,
+   "totalExpenditures": 55297.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Joanne J Ferrary",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 75155.45,
+       "expenditures": 0.0,
+       "status": "$55,296.78",
+       "url": "/nm/candidate/joanne-j-ferrary?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Joanne J Ferrary",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 75155.45,
+       "expenditures": 0.0,
+       "status": "$55,296.78",
+       "url": "/nm/candidate/joanne-j-ferrary?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Ronnie A Sisneros",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/ronnie-a-sisneros?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "New Mexico House of Representatives District 38",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-38-68049",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 963791.0,
+   "totalExpenditures": 687528.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Rebecca L Dow",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 453609.29,
+       "expenditures": 0.0,
+       "status": "$353,919.36",
+       "url": "/nm/candidate/rebecca-l-dow?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tara Jaramillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 510182.09,
+       "expenditures": 0.0,
+       "status": "$333,608.60",
+       "url": "/nm/candidate/tara-jaramillo?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Tara Jaramillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 510182.09,
+       "expenditures": 0.0,
+       "status": "$333,608.60",
+       "url": "/nm/candidate/tara-jaramillo?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Rebecca L Dow",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 453609.29,
+       "expenditures": 0.0,
+       "status": "$353,919.36",
+       "url": "/nm/candidate/rebecca-l-dow?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "New Mexico House of Representatives District 39",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-39-68050",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 544565.0,
+   "totalExpenditures": 342562.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Luis M Terrazas",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 226807.69,
+       "expenditures": 0.0,
+       "status": "$160,088.39",
+       "url": "/nm/candidate/luis-m-terrazas?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gabby Begay",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 316520.96,
+       "expenditures": 172.0,
+       "status": "$181,010.82",
+       "url": "/nm/candidate/gabby-begay?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Gabby Begay",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 316520.96,
+       "expenditures": 172.0,
+       "status": "$181,010.82",
+       "url": "/nm/candidate/gabby-begay?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gilbert Guadiana",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1236.0,
+       "expenditures": 400.0,
+       "status": "$1,462.56",
+       "url": "/nm/candidate/gilbert-guadiana?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Luis M Terrazas",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 226807.69,
+       "expenditures": 0.0,
+       "status": "$160,088.39",
+       "url": "/nm/candidate/luis-m-terrazas?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "New Mexico House of Representatives District 4",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-4-68051",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 79988.0,
+   "totalExpenditures": 73389.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Joseph F Hernandez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 77792.29,
+       "expenditures": 0.0,
+       "status": "$71,518.33",
+       "url": "/nm/candidate/joseph-f-hernandez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lincoln Mark",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1595.36,
+       "expenditures": 50.0,
+       "status": "$1,270.36",
+       "url": "/nm/candidate/lincoln-mark?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Joseph F Hernandez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 77792.29,
+       "expenditures": 0.0,
+       "status": "$71,518.33",
+       "url": "/nm/candidate/joseph-f-hernandez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Christina J Aspaas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/christina-j-aspaas?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Cheryl L George",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 600.0,
+       "expenditures": 0.0,
+       "status": "$600.00",
+       "url": "/nm/candidate/cheryl-l-george?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Lincoln Mark",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1595.36,
+       "expenditures": 50.0,
+       "status": "$1,270.36",
+       "url": "/nm/candidate/lincoln-mark?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "New Mexico House of Representatives District 40",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-40-68052",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 249390.0,
+   "totalExpenditures": 110145.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Joseph L Sanchez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 230971.42,
+       "expenditures": 0.0,
+       "status": "$93,628.36",
+       "url": "/nm/candidate/joseph-l-sanchez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Diego M Olivas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18418.12,
+       "expenditures": 0.0,
+       "status": "$16,516.21",
+       "url": "/nm/candidate/diego-m-olivas?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Joseph L Sanchez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 230971.42,
+       "expenditures": 0.0,
+       "status": "$93,628.36",
+       "url": "/nm/candidate/joseph-l-sanchez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Diego M Olivas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18418.12,
+       "expenditures": 0.0,
+       "status": "$16,516.21",
+       "url": "/nm/candidate/diego-m-olivas?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "New Mexico House of Representatives District 41",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-41-68053",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 143040.0,
+   "totalExpenditures": 131285.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Susan K Herrera",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 121275.67,
+       "expenditures": 800.0,
+       "status": "$109,520.81",
+       "url": "/nm/candidate/susan-k-herrera?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Susan K Herrera",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 121275.67,
+       "expenditures": 800.0,
+       "status": "$109,520.81",
+       "url": "/nm/candidate/susan-k-herrera?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Margaret C Campos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 21764.49,
+       "expenditures": 0.0,
+       "status": "$21,764.49",
+       "url": "/nm/candidate/margaret-c-campos?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "New Mexico House of Representatives District 42",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-42-68054",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 52457.0,
+   "totalExpenditures": 46356.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Kristina Ortez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 52457.03,
+       "expenditures": 0.0,
+       "status": "$46,355.52",
+       "url": "/nm/candidate/kristina-ortez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Kristina Ortez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 52457.03,
+       "expenditures": 0.0,
+       "status": "$46,355.52",
+       "url": "/nm/candidate/kristina-ortez?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "New Mexico House of Representatives District 43",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-43-68055",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 224319.0,
+   "totalExpenditures": 50573.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Christine Chandler",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 224130.92,
+       "expenditures": 0.0,
+       "status": "$50,285.08",
+       "url": "/nm/candidate/christine-chandler?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chris Luchini",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 100.0,
+       "status": "$100.00",
+       "url": "/nm/candidate/chris-luchini?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Phillip M Mach",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 187.58,
+       "expenditures": 0.0,
+       "status": "$187.58",
+       "url": "/nm/candidate/phillip-m-mach?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Christine Chandler",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 224130.92,
+       "expenditures": 0.0,
+       "status": "$50,285.08",
+       "url": "/nm/candidate/christine-chandler?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Libertarian Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Chris Luchini",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 100.0,
+       "status": "$100.00",
+       "url": "/nm/candidate/chris-luchini?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Phillip M Mach",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 187.58,
+       "expenditures": 0.0,
+       "status": "$187.58",
+       "url": "/nm/candidate/phillip-m-mach?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "New Mexico House of Representatives District 44",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-44-68056",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 477290.0,
+   "totalExpenditures": 308890.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Kathleen M Cates",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 332339.32,
+       "expenditures": 2520.64,
+       "status": "$214,781.77",
+       "url": "/nm/candidate/kathleen-m-cates?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ali Ennenga",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 144950.41,
+       "expenditures": 0.0,
+       "status": "$94,107.84",
+       "url": "/nm/candidate/ali-ennenga?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Kathleen M Cates",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 332339.32,
+       "expenditures": 2520.64,
+       "status": "$214,781.77",
+       "url": "/nm/candidate/kathleen-m-cates?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Ali Ennenga",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 144950.41,
+       "expenditures": 0.0,
+       "status": "$94,107.84",
+       "url": "/nm/candidate/ali-ennenga?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "New Mexico House of Representatives District 45",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-45-68057",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 101414.0,
+   "totalExpenditures": 84092.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Linda M Serrato",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 101414.06,
+       "expenditures": 4260.66,
+       "status": "$84,091.92",
+       "url": "/nm/candidate/linda-m-serrato?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Linda M Serrato",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 101414.06,
+       "expenditures": 4260.66,
+       "status": "$84,091.92",
+       "url": "/nm/candidate/linda-m-serrato?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "New Mexico House of Representatives District 46",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-46-68058",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 59422.0,
+   "totalExpenditures": 18582.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Andrea D Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 59422.15,
+       "expenditures": 0.0,
+       "status": "$18,581.69",
+       "url": "/nm/candidate/andrea-d-romero?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Andrea D Romero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 59422.15,
+       "expenditures": 0.0,
+       "status": "$18,581.69",
+       "url": "/nm/candidate/andrea-d-romero?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "New Mexico House of Representatives District 47",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-47-68059",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 254715.0,
+   "totalExpenditures": 114716.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Reena C Szczepanski",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 254715.37,
+       "expenditures": 0.0,
+       "status": "$114,715.94",
+       "url": "/nm/candidate/reena-c-szczepanski?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Reena C Szczepanski",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 254715.37,
+       "expenditures": 0.0,
+       "status": "$114,715.94",
+       "url": "/nm/candidate/reena-c-szczepanski?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "New Mexico House of Representatives District 48",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-48-68060",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 67442.0,
+   "totalExpenditures": 19059.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tara Lujan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 67442.38,
+       "expenditures": 0.0,
+       "status": "$19,059.35",
+       "url": "/nm/candidate/tara-lujan?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Tara Lujan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 67442.38,
+       "expenditures": 0.0,
+       "status": "$19,059.35",
+       "url": "/nm/candidate/tara-lujan?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "New Mexico House of Representatives District 49",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-49-68061",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 378737.0,
+   "totalExpenditures": 219510.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Gail Missy Armstrong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 378737.22,
+       "expenditures": 100000.0,
+       "status": "$219,510.42",
+       "url": "/nm/candidate/gail-missy-armstrong?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Gail Missy Armstrong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 378737.22,
+       "expenditures": 100000.0,
+       "status": "$219,510.42",
+       "url": "/nm/candidate/gail-missy-armstrong?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "New Mexico House of Representatives District 5",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-5-68062",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 88348.0,
+   "totalExpenditures": 40907.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Doreen Wonda Johnson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 88348.33,
+       "expenditures": 0.0,
+       "status": "$40,906.89",
+       "url": "/nm/candidate/doreen-wonda-johnson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Doreen Wonda Johnson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 88348.33,
+       "expenditures": 0.0,
+       "status": "$40,906.89",
+       "url": "/nm/candidate/doreen-wonda-johnson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "New Mexico House of Representatives District 50",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-50-68063",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 133813.0,
+   "totalExpenditures": 87307.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Matthew Mcqueen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 113990.75,
+       "expenditures": 0.0,
+       "status": "$64,589.60",
+       "url": "/nm/candidate/matthew-mcqueen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ken Brennan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18831.05,
+       "expenditures": 3736.53,
+       "status": "$22,068.56",
+       "url": "/nm/candidate/ken-brennan?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Matthew Mcqueen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 113990.75,
+       "expenditures": 0.0,
+       "status": "$64,589.60",
+       "url": "/nm/candidate/matthew-mcqueen?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Ken Brennan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18831.05,
+       "expenditures": 3736.53,
+       "status": "$22,068.56",
+       "url": "/nm/candidate/ken-brennan?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Wendy A Lossing",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 991.23,
+       "expenditures": 0.0,
+       "status": "$648.37",
+       "url": "/nm/candidate/wendy-a-lossing?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "New Mexico House of Representatives District 51",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-51-68064",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 65464.0,
+   "totalExpenditures": 52616.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "John Block",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 55782.34,
+       "expenditures": 0.0,
+       "status": "$43,341.20",
+       "url": "/nm/candidate/john-block?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ashlie Myers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9681.34,
+       "expenditures": 0.0,
+       "status": "$6,507.76",
+       "url": "/nm/candidate/ashlie-myers?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Ashlie Myers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9681.34,
+       "expenditures": 0.0,
+       "status": "$6,507.76",
+       "url": "/nm/candidate/ashlie-myers?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Steve W Brockett",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 24235.94,
+       "status": "$2,767.21",
+       "url": "/nm/candidate/steve-w-brockett?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "John Block",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 55782.34,
+       "expenditures": 0.0,
+       "status": "$43,341.20",
+       "url": "/nm/candidate/john-block?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "New Mexico House of Representatives District 52",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-52-68065",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 411291.0,
+   "totalExpenditures": 268003.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Doreen Y Gallegos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 411291.42,
+       "expenditures": 0.0,
+       "status": "$268,002.75",
+       "url": "/nm/candidate/doreen-y-gallegos?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Doreen Y Gallegos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 411291.42,
+       "expenditures": 0.0,
+       "status": "$268,002.75",
+       "url": "/nm/candidate/doreen-y-gallegos?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "New Mexico House of Representatives District 53",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-53-68066",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 584643.0,
+   "totalExpenditures": 417016.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Sarah Silva",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 237389.67,
+       "expenditures": 0.0,
+       "status": "$161,204.96",
+       "url": "/nm/candidate/sarah-silva?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jon Hill",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25718.41,
+       "expenditures": 14287.0,
+       "status": "$39,084.00",
+       "url": "/nm/candidate/jon-hill?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Liz Winterrowd",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 159269.87,
+       "expenditures": 1926.64,
+       "status": "$109,395.60",
+       "url": "/nm/candidate/liz-winterrowd?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jon Hill",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25718.41,
+       "expenditures": 14287.0,
+       "status": "$39,084.00",
+       "url": "/nm/candidate/jon-hill?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Willie Madrid",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 162264.95,
+       "expenditures": 0.0,
+       "status": "$107,331.45",
+       "url": "/nm/candidate/willie-madrid?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Liz Winterrowd",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 159269.87,
+       "expenditures": 1926.64,
+       "status": "$109,395.60",
+       "url": "/nm/candidate/liz-winterrowd?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "New Mexico House of Representatives District 54",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-54-68067",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 21116.0,
+   "totalExpenditures": 7371.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jonathan Henry",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20816.2,
+       "expenditures": 0.0,
+       "status": "$7,371.11",
+       "url": "/nm/candidate/jonathan-henry?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chris Ehmling",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 300.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/chris-ehmling?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Libertarian Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Chris Ehmling",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 300.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/chris-ehmling?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jonathan Henry",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20816.2,
+       "expenditures": 0.0,
+       "status": "$7,371.11",
+       "url": "/nm/candidate/jonathan-henry?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "New Mexico House of Representatives District 55",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-55-68068",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 106783.0,
+   "totalExpenditures": 89037.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Cathrynn Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 106782.74,
+       "expenditures": 0.0,
+       "status": "$89,037.44",
+       "url": "/nm/candidate/cathrynn-brown?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Cathrynn Brown",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 106782.74,
+       "expenditures": 0.0,
+       "status": "$89,037.44",
+       "url": "/nm/candidate/cathrynn-brown?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "New Mexico House of Representatives District 56",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-56-68069",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 111272.0,
+   "totalExpenditures": 74191.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Harlan Vincent",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 111272.09,
+       "expenditures": 0.0,
+       "status": "$74,190.79",
+       "url": "/nm/candidate/harlan-vincent?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Harlan Vincent",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 111272.09,
+       "expenditures": 0.0,
+       "status": "$74,190.79",
+       "url": "/nm/candidate/harlan-vincent?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "New Mexico House of Representatives District 57",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-57-68070",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 420935.0,
+   "totalExpenditures": 258396.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Catherine Cullen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 135594.38,
+       "expenditures": 0.0,
+       "status": "$84,332.05",
+       "url": "/nm/candidate/catherine-cullen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Michelle E Sandoval",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 251653.43,
+       "expenditures": 0.0,
+       "status": "$148,842.52",
+       "url": "/nm/candidate/michelle-e-sandoval?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Michelle E Sandoval",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 251653.43,
+       "expenditures": 0.0,
+       "status": "$148,842.52",
+       "url": "/nm/candidate/michelle-e-sandoval?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Catherine Cullen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 135594.38,
+       "expenditures": 0.0,
+       "status": "$84,332.05",
+       "url": "/nm/candidate/catherine-cullen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "John D'Antonio",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26719.0,
+       "expenditures": 10393.2,
+       "status": "$22,999.15",
+       "url": "/nm/candidate/john-dantonio?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Corrine Rios",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6968.0,
+       "expenditures": 5126.61,
+       "status": "$2,222.77",
+       "url": "/nm/candidate/corrine-rios?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "New Mexico House of Representatives District 58",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-58-68071",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 20750.0,
+   "totalExpenditures": 5940.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Angelita Mejia",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20750.0,
+       "expenditures": 2050.0,
+       "status": "$5,939.61",
+       "url": "/nm/candidate/angelita-mejia?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Angelita Mejia",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20750.0,
+       "expenditures": 2050.0,
+       "status": "$5,939.61",
+       "url": "/nm/candidate/angelita-mejia?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "New Mexico House of Representatives District 59",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-59-68072",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 147208.0,
+   "totalExpenditures": 114041.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jared Hembree",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 142107.66,
+       "expenditures": 0.0,
+       "status": "$108,924.93",
+       "url": "/nm/candidate/jared-hembree?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jared Hembree",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 142107.66,
+       "expenditures": 0.0,
+       "status": "$108,924.93",
+       "url": "/nm/candidate/jared-hembree?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tracy De La Rosa",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5100.0,
+       "expenditures": 16.49,
+       "status": "$5,116.49",
+       "url": "/nm/candidate/tracy-de-la-rosa?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "New Mexico House of Representatives District 6",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-6-68073",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 203490.0,
+   "totalExpenditures": 173749.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Eliseo L Alcon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 182919.07,
+       "expenditures": 1021.25,
+       "status": "$154,772.50",
+       "url": "/nm/candidate/eliseo-l-alcon-1?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Paul L Spencer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17952.03,
+       "expenditures": 0.0,
+       "status": "$16,358.11",
+       "url": "/nm/candidate/paul-l-spencer?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Eliseo L Alcon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 182919.07,
+       "expenditures": 1021.25,
+       "status": "$154,772.50",
+       "url": "/nm/candidate/eliseo-l-alcon-1?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Priscilla Benally",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2618.78,
+       "expenditures": 0.0,
+       "status": "$2,618.78",
+       "url": "/nm/candidate/priscilla-benally?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Paul L Spencer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17952.03,
+       "expenditures": 0.0,
+       "status": "$16,358.11",
+       "url": "/nm/candidate/paul-l-spencer?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "New Mexico House of Representatives District 60",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-60-68074",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 175732.0,
+   "totalExpenditures": 109901.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Joshua Hernandez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 149661.13,
+       "expenditures": 0.0,
+       "status": "$98,794.65",
+       "url": "/nm/candidate/joshua-hernandez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Luke Jungmann",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26070.5,
+       "expenditures": 0.0,
+       "status": "$11,105.87",
+       "url": "/nm/candidate/luke-jungmann?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Luke Jungmann",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26070.5,
+       "expenditures": 0.0,
+       "status": "$11,105.87",
+       "url": "/nm/candidate/luke-jungmann?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Joshua Hernandez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 149661.13,
+       "expenditures": 0.0,
+       "status": "$98,794.65",
+       "url": "/nm/candidate/joshua-hernandez?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "New Mexico House of Representatives District 61",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-61-68075",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 84515.0,
+   "totalExpenditures": 62571.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Randall T Pettigrew",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 84515.45,
+       "expenditures": 0.0,
+       "status": "$62,571.19",
+       "url": "/nm/candidate/randall-t-pettigrew?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Randall T Pettigrew",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 84515.45,
+       "expenditures": 0.0,
+       "status": "$62,571.19",
+       "url": "/nm/candidate/randall-t-pettigrew?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "New Mexico House of Representatives District 62",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-62-68076",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 191839.0,
+   "totalExpenditures": 170667.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Elaine Sena Cortez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 95033.61,
+       "expenditures": 0.0,
+       "status": "$92,674.74",
+       "url": "/nm/candidate/elaine-sena-cortez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Elaine Sena Cortez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 95033.61,
+       "expenditures": 0.0,
+       "status": "$92,674.74",
+       "url": "/nm/candidate/elaine-sena-cortez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Debra Hicks",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 60606.11,
+       "expenditures": 0.0,
+       "status": "$48,487.38",
+       "url": "/nm/candidate/debra-hicks?cycle=2024-election-cycle"
+      },
+      {
+       "name": "D'Nae Robinett Mills",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 36199.34,
+       "expenditures": 0.0,
+       "status": "$29,505.11",
+       "url": "/nm/candidate/dnae-robinett-mills?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "New Mexico House of Representatives District 63",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-63-68077",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 0.0,
+   "totalExpenditures": 0.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Martin R Zamora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/martin-r-zamora-1?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Martin R Zamora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/nm/candidate/martin-r-zamora-1?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "63"
+  },
+  {
+   "office": "New Mexico House of Representatives District 64",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-64-68078",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 68678.0,
+   "totalExpenditures": 28865.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Andrea R Reeb",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 68677.57,
+       "expenditures": 0.0,
+       "status": "$28,865.15",
+       "url": "/nm/candidate/andrea-r-reeb?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Andrea R Reeb",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 68677.57,
+       "expenditures": 0.0,
+       "status": "$28,865.15",
+       "url": "/nm/candidate/andrea-r-reeb?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "64"
+  },
+  {
+   "office": "New Mexico House of Representatives District 65",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-65-68079",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 226031.0,
+   "totalExpenditures": 131901.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Derrick J Lente",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 226031.07,
+       "expenditures": 0.0,
+       "status": "$131,900.64",
+       "url": "/nm/candidate/derrick-j-lente?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Derrick J Lente",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 226031.07,
+       "expenditures": 0.0,
+       "status": "$131,900.64",
+       "url": "/nm/candidate/derrick-j-lente?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "65"
+  },
+  {
+   "office": "New Mexico House of Representatives District 66",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-66-68080",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 54333.0,
+   "totalExpenditures": 63762.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jimmy G Mason",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 54332.56,
+       "expenditures": 0.0,
+       "status": "$63,762.49",
+       "url": "/nm/candidate/jimmy-g-mason?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jimmy G Mason",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 54332.56,
+       "expenditures": 0.0,
+       "status": "$63,762.49",
+       "url": "/nm/candidate/jimmy-g-mason?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "66"
+  },
+  {
+   "office": "New Mexico House of Representatives District 67",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-67-68081",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 71648.0,
+   "totalExpenditures": 27877.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jackey O Chatfield",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 71648.0,
+       "expenditures": 0.0,
+       "status": "$27,876.54",
+       "url": "/nm/candidate/jackey-o-chatfield?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jackey O Chatfield",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 71648.0,
+       "expenditures": 0.0,
+       "status": "$27,876.54",
+       "url": "/nm/candidate/jackey-o-chatfield?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "67"
+  },
+  {
+   "office": "New Mexico House of Representatives District 68",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-68-68082",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 389971.0,
+   "totalExpenditures": 290019.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Charlotte Little",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 355819.22,
+       "expenditures": 0.0,
+       "status": "$261,509.94",
+       "url": "/nm/candidate/charlotte-little?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nathan Brooks",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 29379.08,
+       "expenditures": 0.0,
+       "status": "$24,012.30",
+       "url": "/nm/candidate/nathan-brooks?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Charlotte Little",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 355819.22,
+       "expenditures": 0.0,
+       "status": "$261,509.94",
+       "url": "/nm/candidate/charlotte-little?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Nathan Brooks",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 29379.08,
+       "expenditures": 0.0,
+       "status": "$24,012.30",
+       "url": "/nm/candidate/nathan-brooks?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Virginia Gonzales",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4772.86,
+       "expenditures": 0.0,
+       "status": "$4,496.70",
+       "url": "/nm/candidate/virginia-gonzales?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "68"
+  },
+  {
+   "office": "New Mexico House of Representatives District 69",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-69-68083",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 282540.0,
+   "totalExpenditures": 182153.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Michelle P Abeyta",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 69019.2,
+       "expenditures": 1994.02,
+       "status": "$50,919.30",
+       "url": "/nm/candidate/michelle-p-abeyta?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Michelle P Abeyta",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 69019.2,
+       "expenditures": 1994.02,
+       "status": "$50,919.30",
+       "url": "/nm/candidate/michelle-p-abeyta?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Harry Garcia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 212320.67,
+       "expenditures": 0.0,
+       "status": "$130,033.75",
+       "url": "/nm/candidate/harry-garcia?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Stanley Michael",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1200.0,
+       "expenditures": 0.0,
+       "status": "$1,200.00",
+       "url": "/nm/candidate/stanley-michael?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "69"
+  },
+  {
+   "office": "New Mexico House of Representatives District 7",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-7-68084",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 67832.0,
+   "totalExpenditures": 63872.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tanya Mirabal Moya",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 67832.18,
+       "expenditures": 0.0,
+       "status": "$63,871.82",
+       "url": "/nm/candidate/tanya-mirabal-moya?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Tanya Mirabal Moya",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 67832.18,
+       "expenditures": 0.0,
+       "status": "$63,871.82",
+       "url": "/nm/candidate/tanya-mirabal-moya?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "New Mexico House of Representatives District 70",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-70-68085",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 361144.0,
+   "totalExpenditures": 300694.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Anita Gonzales",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 105702.68,
+       "expenditures": 0.0,
+       "status": "$95,343.26",
+       "url": "/nm/candidate/anita-gonzales?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Anita Gonzales",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 105702.68,
+       "expenditures": 0.0,
+       "status": "$95,343.26",
+       "url": "/nm/candidate/anita-gonzales?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ambrose Castellano",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 255441.25,
+       "expenditures": 0.0,
+       "status": "$205,350.58",
+       "url": "/nm/candidate/ambrose-castellano?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "70"
+  },
+  {
+   "office": "New Mexico House of Representatives District 8",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-8-68086",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 87913.0,
+   "totalExpenditures": 48147.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Brian G Baca",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 87913.33,
+       "expenditures": 0.0,
+       "status": "$48,146.91",
+       "url": "/nm/candidate/brian-g-baca?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Brian G Baca",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 87913.33,
+       "expenditures": 0.0,
+       "status": "$48,146.91",
+       "url": "/nm/candidate/brian-g-baca?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "New Mexico House of Representatives District 9",
+   "url": "/nm/race/new-mexico-house-of-representatives-district-9-68087",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 502739.0,
+   "totalExpenditures": 224968.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Patty A Lundstrom",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 483894.55,
+       "expenditures": 0.0,
+       "status": "$214,391.06",
+       "url": "/nm/candidate/patty-a-lundstrom?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Patty A Lundstrom",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 483894.55,
+       "expenditures": 0.0,
+       "status": "$214,391.06",
+       "url": "/nm/candidate/patty-a-lundstrom?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Christopher Brian Hudson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18526.87,
+       "expenditures": 0.0,
+       "status": "$8,670.21",
+       "url": "/nm/candidate/christopher-brian-hudson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Arval T Mccabe",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 317.7,
+       "expenditures": 1906.6,
+       "status": "$1,906.60",
+       "url": "/nm/candidate/arval-t-mccabe?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "New Mexico State Senate District 1",
+   "url": "/nm/race/new-mexico-state-senate-district-1-67976",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 102551.0,
+   "totalExpenditures": 89925.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "William E Sharer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 102551.3,
+       "expenditures": 0.0,
+       "status": "$89,924.99",
+       "url": "/nm/candidate/william-e-sharer?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "William E Sharer",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 102551.3,
+       "expenditures": 0.0,
+       "status": "$89,924.99",
+       "url": "/nm/candidate/william-e-sharer?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "1"
+  },
+  {
+   "office": "New Mexico State Senate District 10",
+   "url": "/nm/race/new-mexico-state-senate-district-10-67985",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 438203.0,
+   "totalExpenditures": 374661.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Katy M Duhigg",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 267202.32,
+       "expenditures": 0.0,
+       "status": "$223,608.84",
+       "url": "/nm/candidate/katy-m-duhigg?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Rudy B Mora",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 171000.44,
+       "expenditures": 0.0,
+       "status": "$151,051.89",
+       "url": "/nm/candidate/rudy-b-mora?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Katy M Duhigg",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 267202.32,
+       "expenditures": 0.0,
+       "status": "$223,608.84",
+       "url": "/nm/candidate/katy-m-duhigg?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Rudy B Mora",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 171000.44,
+       "expenditures": 0.0,
+       "status": "$151,051.89",
+       "url": "/nm/candidate/rudy-b-mora?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "10"
+  },
+  {
+   "office": "New Mexico State Senate District 11",
+   "url": "/nm/race/new-mexico-state-senate-district-11-67986",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 99617.0,
+   "totalExpenditures": 78901.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Linda M Lopez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 86666.42,
+       "expenditures": 0.0,
+       "status": "$66,250.75",
+       "url": "/nm/candidate/linda-m-lopez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Linda M Lopez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 86666.42,
+       "expenditures": 0.0,
+       "status": "$66,250.75",
+       "url": "/nm/candidate/linda-m-lopez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Richard Carrion",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12950.09,
+       "expenditures": 0.0,
+       "status": "$12,650.09",
+       "url": "/nm/candidate/richard-carrion?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "11"
+  },
+  {
+   "office": "New Mexico State Senate District 12",
+   "url": "/nm/race/new-mexico-state-senate-district-12-67987",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 616201.0,
+   "totalExpenditures": 506088.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jay C Block",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 268532.21,
+       "expenditures": 0.0,
+       "status": "$263,840.95",
+       "url": "/nm/candidate/jay-c-block?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Phillip Ramirez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 194196.89,
+       "expenditures": 5500.0,
+       "status": "$92,593.23",
+       "url": "/nm/candidate/phillip-ramirez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Phillip Ramirez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 194196.89,
+       "expenditures": 5500.0,
+       "status": "$92,593.23",
+       "url": "/nm/candidate/phillip-ramirez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jay C Block",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 268532.21,
+       "expenditures": 0.0,
+       "status": "$263,840.95",
+       "url": "/nm/candidate/jay-c-block?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Candace Gould",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 153472.02,
+       "expenditures": 15000.0,
+       "status": "$149,653.94",
+       "url": "/nm/candidate/candace-gould?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "12"
+  },
+  {
+   "office": "New Mexico State Senate District 13",
+   "url": "/nm/race/new-mexico-state-senate-district-13-67988",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 250517.0,
+   "totalExpenditures": 226282.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Debbie O'Malley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 124883.32,
+       "expenditures": 5000.0,
+       "status": "$111,969.12",
+       "url": "/nm/candidate/debbie-omalley?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Debbie O'Malley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 124883.32,
+       "expenditures": 5000.0,
+       "status": "$111,969.12",
+       "url": "/nm/candidate/debbie-omalley?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Bill B O'Neill",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 125634.01,
+       "expenditures": 0.0,
+       "status": "$114,313.25",
+       "url": "/nm/candidate/bill-b-oneill?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "13"
+  },
+  {
+   "office": "New Mexico State Senate District 14",
+   "url": "/nm/race/new-mexico-state-senate-district-14-67989",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 396779.0,
+   "totalExpenditures": 206843.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Michael Padilla",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 396779.41,
+       "expenditures": 21.71,
+       "status": "$206,843.45",
+       "url": "/nm/candidate/michael-padilla?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Michael Padilla",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 396779.41,
+       "expenditures": 21.71,
+       "status": "$206,843.45",
+       "url": "/nm/candidate/michael-padilla?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "14"
+  },
+  {
+   "office": "New Mexico State Senate District 15",
+   "url": "/nm/race/new-mexico-state-senate-district-15-67990",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 454419.0,
+   "totalExpenditures": 352140.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Heather Berghmans",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 251363.41,
+       "expenditures": 0.0,
+       "status": "$160,421.94",
+       "url": "/nm/candidate/heather-berghmans?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Craig Degenhardt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5216.93,
+       "expenditures": 1000.0,
+       "status": "$2,542.81",
+       "url": "/nm/candidate/craig-degenhardt?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Heather Berghmans",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 251363.41,
+       "expenditures": 0.0,
+       "status": "$160,421.94",
+       "url": "/nm/candidate/heather-berghmans?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Daniel A Ivey-Soto",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 197838.73,
+       "expenditures": 0.0,
+       "status": "$189,175.45",
+       "url": "/nm/candidate/daniel-a-ivey-soto?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Craig Degenhardt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5216.93,
+       "expenditures": 1000.0,
+       "status": "$2,542.81",
+       "url": "/nm/candidate/craig-degenhardt?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "15"
+  },
+  {
+   "office": "New Mexico State Senate District 16",
+   "url": "/nm/race/new-mexico-state-senate-district-16-67991",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 58072.0,
+   "totalExpenditures": 8507.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Antoinette Sedillo Lopez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 58071.73,
+       "expenditures": 0.0,
+       "status": "$8,507.43",
+       "url": "/nm/candidate/antoinette-sedillo-lopez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Antoinette Sedillo Lopez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 58071.73,
+       "expenditures": 0.0,
+       "status": "$8,507.43",
+       "url": "/nm/candidate/antoinette-sedillo-lopez?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "16"
+  },
+  {
+   "office": "New Mexico State Senate District 17",
+   "url": "/nm/race/new-mexico-state-senate-district-17-67992",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 300657.0,
+   "totalExpenditures": 235124.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mimi Stewart",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 300656.8,
+       "expenditures": 0.0,
+       "status": "$235,124.43",
+       "url": "/nm/candidate/mimi-stewart?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Mimi Stewart",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 300656.8,
+       "expenditures": 0.0,
+       "status": "$235,124.43",
+       "url": "/nm/candidate/mimi-stewart?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "17"
+  },
+  {
+   "office": "New Mexico State Senate District 18",
+   "url": "/nm/race/new-mexico-state-senate-district-18-67993",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 558185.0,
+   "totalExpenditures": 430091.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Natalie R Figueroa",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 306197.93,
+       "expenditures": 0.0,
+       "status": "$198,856.61",
+       "url": "/nm/candidate/natalie-r-figueroa?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kurstin S Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 251987.32,
+       "expenditures": 0.0,
+       "status": "$231,234.27",
+       "url": "/nm/candidate/kurstin-s-johnson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Natalie R Figueroa",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 306197.93,
+       "expenditures": 0.0,
+       "status": "$198,856.61",
+       "url": "/nm/candidate/natalie-r-figueroa?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Kurstin S Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 251987.32,
+       "expenditures": 0.0,
+       "status": "$231,234.27",
+       "url": "/nm/candidate/kurstin-s-johnson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "18"
+  },
+  {
+   "office": "New Mexico State Senate District 19",
+   "url": "/nm/race/new-mexico-state-senate-district-19-67994",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 32218.0,
+   "totalExpenditures": 34479.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Anthony A Thornton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$10,800.75",
+       "url": "/nm/candidate/anthony-a-thornton?cycle=2024-election-cycle"
+      },
+      {
+       "name": "William B Scott",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 32217.71,
+       "expenditures": 0.0,
+       "status": "$23,677.89",
+       "url": "/nm/candidate/william-b-scott?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "William B Scott",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 32217.71,
+       "expenditures": 0.0,
+       "status": "$23,677.89",
+       "url": "/nm/candidate/william-b-scott?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Anthony A Thornton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$10,800.75",
+       "url": "/nm/candidate/anthony-a-thornton?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "19"
+  },
+  {
+   "office": "New Mexico State Senate District 2",
+   "url": "/nm/race/new-mexico-state-senate-district-2-67977",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 32441.0,
+   "totalExpenditures": 16536.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Steve Lanier",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23046.06,
+       "expenditures": 0.0,
+       "status": "$7,740.56",
+       "url": "/nm/candidate/steve-lanier?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Songtree Pioche",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9395.0,
+       "expenditures": 0.0,
+       "status": "$8,795.00",
+       "url": "/nm/candidate/songtree-pioche?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Songtree Pioche",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9395.0,
+       "expenditures": 0.0,
+       "status": "$8,795.00",
+       "url": "/nm/candidate/songtree-pioche?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Steve Lanier",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23046.06,
+       "expenditures": 0.0,
+       "status": "$7,740.56",
+       "url": "/nm/candidate/steve-lanier?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "2"
+  },
+  {
+   "office": "New Mexico State Senate District 20",
+   "url": "/nm/race/new-mexico-state-senate-district-20-67995",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 543998.0,
+   "totalExpenditures": 401079.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Martin E Hickey",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 418262.89,
+       "expenditures": 0.0,
+       "status": "$277,260.61",
+       "url": "/nm/candidate/martin-e-hickey?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Wayne Yevoli",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 125735.06,
+       "expenditures": 0.0,
+       "status": "$123,818.55",
+       "url": "/nm/candidate/wayne-yevoli?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Martin E Hickey",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 418262.89,
+       "expenditures": 0.0,
+       "status": "$277,260.61",
+       "url": "/nm/candidate/martin-e-hickey?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Wayne Yevoli",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 125735.06,
+       "expenditures": 0.0,
+       "status": "$123,818.55",
+       "url": "/nm/candidate/wayne-yevoli?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "20"
+  },
+  {
+   "office": "New Mexico State Senate District 21",
+   "url": "/nm/race/new-mexico-state-senate-district-21-67996",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 306977.0,
+   "totalExpenditures": 362754.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Nicole L Tobiassen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 232845.12,
+       "expenditures": 0.0,
+       "status": "$210,293.64",
+       "url": "/nm/candidate/nicole-l-tobiassen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Athena Christodoulou",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 63667.82,
+       "expenditures": 20000.0,
+       "status": "$67,782.42",
+       "url": "/nm/candidate/athena-christodoulou?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Athena Christodoulou",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 63667.82,
+       "expenditures": 20000.0,
+       "status": "$67,782.42",
+       "url": "/nm/candidate/athena-christodoulou?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Phil Snedeker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3150.0,
+       "expenditures": 5290.99,
+       "status": "$7,417.42",
+       "url": "/nm/candidate/phil-snedeker?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Nicole L Tobiassen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 232845.12,
+       "expenditures": 0.0,
+       "status": "$210,293.64",
+       "url": "/nm/candidate/nicole-l-tobiassen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "John C Morton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1720.0,
+       "expenditures": 23851.95,
+       "status": "$24,853.93",
+       "url": "/nm/candidate/john-c-morton?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Michael C Wiener",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5594.0,
+       "expenditures": 61274.41,
+       "status": "$52,406.92",
+       "url": "/nm/candidate/michael-c-wiener?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "21"
+  },
+  {
+   "office": "New Mexico State Senate District 22",
+   "url": "/nm/race/new-mexico-state-senate-district-22-67997",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 112921.0,
+   "totalExpenditures": 66862.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Benny Shendo Jr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 112921.03,
+       "expenditures": 0.0,
+       "status": "$66,861.54",
+       "url": "/nm/candidate/benny-shendo-jr?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Benny Shendo Jr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 112921.03,
+       "expenditures": 0.0,
+       "status": "$66,861.54",
+       "url": "/nm/candidate/benny-shendo-jr?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "22"
+  },
+  {
+   "office": "New Mexico State Senate District 23",
+   "url": "/nm/race/new-mexico-state-senate-district-23-67998",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 299571.0,
+   "totalExpenditures": 246339.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Harold J Pope Jr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 207923.08,
+       "expenditures": 0.0,
+       "status": "$128,253.31",
+       "url": "/nm/candidate/harold-j-pope-jr?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Terry L Aragon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 77928.12,
+       "expenditures": 6607.65,
+       "status": "$77,364.79",
+       "url": "/nm/candidate/terry-l-aragon?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Harold J Pope Jr",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 207923.08,
+       "expenditures": 0.0,
+       "status": "$128,253.31",
+       "url": "/nm/candidate/harold-j-pope-jr?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Terry L Aragon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 77928.12,
+       "expenditures": 6607.65,
+       "status": "$77,364.79",
+       "url": "/nm/candidate/terry-l-aragon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Manuel Gonzales III",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13720.0,
+       "expenditures": 100.0,
+       "status": "$40,721.14",
+       "url": "/nm/candidate/manuel-gonzales-iii?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "23"
+  },
+  {
+   "office": "New Mexico State Senate District 24",
+   "url": "/nm/race/new-mexico-state-senate-district-24-67999",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 227511.0,
+   "totalExpenditures": 176128.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Linda M Trujillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 147390.92,
+       "expenditures": 7812.82,
+       "status": "$103,870.89",
+       "url": "/nm/candidate/linda-m-trujillo?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Linda M Trujillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 147390.92,
+       "expenditures": 7812.82,
+       "status": "$103,870.89",
+       "url": "/nm/candidate/linda-m-trujillo?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Anna C Hansen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 52414.66,
+       "expenditures": 0.0,
+       "status": "$50,381.00",
+       "url": "/nm/candidate/anna-c-hansen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Veronica R Krupnick",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27705.18,
+       "expenditures": 0.0,
+       "status": "$21,876.30",
+       "url": "/nm/candidate/veronica-r-krupnick?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "24"
+  },
+  {
+   "office": "New Mexico State Senate District 25",
+   "url": "/nm/race/new-mexico-state-senate-district-25-68000",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 300663.0,
+   "totalExpenditures": 209160.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Peter Wirth",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 300663.1,
+       "expenditures": 0.0,
+       "status": "$209,160.10",
+       "url": "/nm/candidate/peter-wirth?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Peter Wirth",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 300663.1,
+       "expenditures": 0.0,
+       "status": "$209,160.10",
+       "url": "/nm/candidate/peter-wirth?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "25"
+  },
+  {
+   "office": "New Mexico State Senate District 26",
+   "url": "/nm/race/new-mexico-state-senate-district-26-68001",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 465158.0,
+   "totalExpenditures": 442580.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Antonio Moe Maestas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 359621.59,
+       "expenditures": 2500.0,
+       "status": "$346,823.41",
+       "url": "/nm/candidate/antonio-moe-maestas?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Antonio Moe Maestas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 359621.59,
+       "expenditures": 2500.0,
+       "status": "$346,823.41",
+       "url": "/nm/candidate/antonio-moe-maestas?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Julie Radoslovich",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 105536.13,
+       "expenditures": 0.0,
+       "status": "$95,756.32",
+       "url": "/nm/candidate/julie-radoslovich?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "26"
+  },
+  {
+   "office": "New Mexico State Senate District 27",
+   "url": "/nm/race/new-mexico-state-senate-district-27-68002",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 392392.0,
+   "totalExpenditures": 378786.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Pat Boone",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 97514.88,
+       "expenditures": 48259.0,
+       "status": "$127,497.39",
+       "url": "/nm/candidate/pat-boone?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Pat Boone",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 97514.88,
+       "expenditures": 48259.0,
+       "status": "$127,497.39",
+       "url": "/nm/candidate/pat-boone?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Greg Nibert",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 280152.35,
+       "expenditures": 0.0,
+       "status": "$236,563.53",
+       "url": "/nm/candidate/greg-nibert?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Larry E Marker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14725.0,
+       "expenditures": 0.0,
+       "status": "$14,725.00",
+       "url": "/nm/candidate/larry-e-marker?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "27"
+  },
+  {
+   "office": "New Mexico State Senate District 28",
+   "url": "/nm/race/new-mexico-state-senate-district-28-68003",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 581002.0,
+   "totalExpenditures": 396488.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Gabriel J Ramos",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 224681.89,
+       "expenditures": 346.77,
+       "status": "$218,880.65",
+       "url": "/nm/candidate/gabriel-j-ramos?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Siah Correa Hemphill",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 187940.58,
+       "expenditures": 0.0,
+       "status": "$85,893.92",
+       "url": "/nm/candidate/siah-correa-hemphill?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chris Ponce",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 168379.06,
+       "expenditures": 0.0,
+       "status": "$91,713.52",
+       "url": "/nm/candidate/chris-ponce?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Siah Correa Hemphill",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 187940.58,
+       "expenditures": 0.0,
+       "status": "$85,893.92",
+       "url": "/nm/candidate/siah-correa-hemphill?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Gabriel J Ramos",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 224681.89,
+       "expenditures": 346.77,
+       "status": "$218,880.65",
+       "url": "/nm/candidate/gabriel-j-ramos?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "28"
+  },
+  {
+   "office": "New Mexico State Senate District 29",
+   "url": "/nm/race/new-mexico-state-senate-district-29-68004",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 318796.0,
+   "totalExpenditures": 210444.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Joshua A Sanchez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 128418.0,
+       "expenditures": 3000.0,
+       "status": "$116,710.17",
+       "url": "/nm/candidate/joshua-a-sanchez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tina R Garcia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 190377.67,
+       "expenditures": 18000.0,
+       "status": "$93,733.60",
+       "url": "/nm/candidate/tina-r-garcia?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Tina R Garcia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 190377.67,
+       "expenditures": 18000.0,
+       "status": "$93,733.60",
+       "url": "/nm/candidate/tina-r-garcia?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Joshua A Sanchez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 128418.0,
+       "expenditures": 3000.0,
+       "status": "$116,710.17",
+       "url": "/nm/candidate/joshua-a-sanchez?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "29"
+  },
+  {
+   "office": "New Mexico State Senate District 3",
+   "url": "/nm/race/new-mexico-state-senate-district-3-67978",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 49697.0,
+   "totalExpenditures": 23800.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Shannon D Pinto",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 47573.25,
+       "expenditures": 0.0,
+       "status": "$21,702.65",
+       "url": "/nm/candidate/shannon-d-pinto?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Shannon D Pinto",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 47573.25,
+       "expenditures": 0.0,
+       "status": "$21,702.65",
+       "url": "/nm/candidate/shannon-d-pinto?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sherylene M Yazzie",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2124.19,
+       "expenditures": 0.0,
+       "status": "$2,097.26",
+       "url": "/nm/candidate/sherylene-m-yazzie?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "3"
+  },
+  {
+   "office": "New Mexico State Senate District 30",
+   "url": "/nm/race/new-mexico-state-senate-district-30-68005",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 334177.0,
+   "totalExpenditures": 293317.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Angel M Charley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 137328.02,
+       "expenditures": 5000.0,
+       "status": "$121,692.78",
+       "url": "/nm/candidate/angel-m-charley?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Angel M Charley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 137328.02,
+       "expenditures": 5000.0,
+       "status": "$121,692.78",
+       "url": "/nm/candidate/angel-m-charley?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Clemente Sanchez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 196849.28,
+       "expenditures": 0.0,
+       "status": "$171,624.20",
+       "url": "/nm/candidate/clemente-sanchez?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "30"
+  },
+  {
+   "office": "New Mexico State Senate District 31",
+   "url": "/nm/race/new-mexico-state-senate-district-31-68006",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 319602.0,
+   "totalExpenditures": 66867.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Joseph Cervantes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 319601.55,
+       "expenditures": 0.0,
+       "status": "$66,866.95",
+       "url": "/nm/candidate/joseph-cervantes?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Joseph Cervantes",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 319601.55,
+       "expenditures": 0.0,
+       "status": "$66,866.95",
+       "url": "/nm/candidate/joseph-cervantes?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "31"
+  },
+  {
+   "office": "New Mexico State Senate District 32",
+   "url": "/nm/race/new-mexico-state-senate-district-32-68007",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 307689.0,
+   "totalExpenditures": 287930.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Candy Spence Ezzell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 241014.32,
+       "expenditures": 0.0,
+       "status": "$221,254.89",
+       "url": "/nm/candidate/candy-spence-ezzell?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Candy Spence Ezzell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 241014.32,
+       "expenditures": 0.0,
+       "status": "$221,254.89",
+       "url": "/nm/candidate/candy-spence-ezzell?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chad Hamill",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 66675.0,
+       "expenditures": 0.0,
+       "status": "$66,675.00",
+       "url": "/nm/candidate/chad-hamill?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "32"
+  },
+  {
+   "office": "New Mexico State Senate District 33",
+   "url": "/nm/race/new-mexico-state-senate-district-33-68008",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 148266.0,
+   "totalExpenditures": 152028.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Nicholas Paul",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 101626.16,
+       "expenditures": 8000.0,
+       "status": "$83,629.86",
+       "url": "/nm/candidate/nicholas-paul?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Nicholas Paul",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 101626.16,
+       "expenditures": 8000.0,
+       "status": "$83,629.86",
+       "url": "/nm/candidate/nicholas-paul?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lynn Crawford",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24250.0,
+       "expenditures": 28000.0,
+       "status": "$46,008.30",
+       "url": "/nm/candidate/lynn-crawford?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Rhonda B Romack",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 22390.15,
+       "expenditures": 20000.0,
+       "status": "$22,390.15",
+       "url": "/nm/candidate/rhonda-b-romack?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "33"
+  },
+  {
+   "office": "New Mexico State Senate District 34",
+   "url": "/nm/race/new-mexico-state-senate-district-34-68009",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 321464.0,
+   "totalExpenditures": 205000.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "James G Townsend",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 321463.77,
+       "expenditures": 0.0,
+       "status": "$204,999.74",
+       "url": "/nm/candidate/james-g-townsend?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "James G Townsend",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 321463.77,
+       "expenditures": 0.0,
+       "status": "$204,999.74",
+       "url": "/nm/candidate/james-g-townsend?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "34"
+  },
+  {
+   "office": "New Mexico State Senate District 35",
+   "url": "/nm/race/new-mexico-state-senate-district-35-68010",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 424694.0,
+   "totalExpenditures": 112580.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Crystal D Brantley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 424693.83,
+       "expenditures": 0.0,
+       "status": "$112,579.99",
+       "url": "/nm/candidate/crystal-d-brantley?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Crystal D Brantley",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 424693.83,
+       "expenditures": 0.0,
+       "status": "$112,579.99",
+       "url": "/nm/candidate/crystal-d-brantley?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "35"
+  },
+  {
+   "office": "New Mexico State Senate District 36",
+   "url": "/nm/race/new-mexico-state-senate-district-36-68011",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 172200.0,
+   "totalExpenditures": 123982.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jeff Steinborn",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 108020.03,
+       "expenditures": 0.0,
+       "status": "$45,870.70",
+       "url": "/nm/candidate/jeff-steinborn?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dave Tofsted",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 64179.77,
+       "expenditures": 14000.0,
+       "status": "$78,111.77",
+       "url": "/nm/candidate/dave-tofsted?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Jeff Steinborn",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 108020.03,
+       "expenditures": 0.0,
+       "status": "$45,870.70",
+       "url": "/nm/candidate/jeff-steinborn?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Dave Tofsted",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 64179.77,
+       "expenditures": 14000.0,
+       "status": "$78,111.77",
+       "url": "/nm/candidate/dave-tofsted?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "36"
+  },
+  {
+   "office": "New Mexico State Senate District 37",
+   "url": "/nm/race/new-mexico-state-senate-district-37-68012",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 39894.0,
+   "totalExpenditures": 28786.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "William Soules",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 39894.06,
+       "expenditures": 0.0,
+       "status": "$28,786.26",
+       "url": "/nm/candidate/william-soules?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "William Soules",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 39894.06,
+       "expenditures": 0.0,
+       "status": "$28,786.26",
+       "url": "/nm/candidate/william-soules?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "37"
+  },
+  {
+   "office": "New Mexico State Senate District 38",
+   "url": "/nm/race/new-mexico-state-senate-district-38-68013",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 312015.0,
+   "totalExpenditures": 229454.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Carrie Hamblen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 167540.52,
+       "expenditures": 0.0,
+       "status": "$76,602.54",
+       "url": "/nm/candidate/carrie-hamblen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Samantha Barncastle Salopek",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 144474.67,
+       "expenditures": 15000.0,
+       "status": "$152,851.57",
+       "url": "/nm/candidate/samantha-barncastle-salopek?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Carrie Hamblen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 167540.52,
+       "expenditures": 0.0,
+       "status": "$76,602.54",
+       "url": "/nm/candidate/carrie-hamblen?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Samantha Barncastle Salopek",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 144474.67,
+       "expenditures": 15000.0,
+       "status": "$152,851.57",
+       "url": "/nm/candidate/samantha-barncastle-salopek?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "38"
+  },
+  {
+   "office": "New Mexico State Senate District 39",
+   "url": "/nm/race/new-mexico-state-senate-district-39-68014",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 119111.0,
+   "totalExpenditures": 34811.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Liz Stefanics",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 119111.38,
+       "expenditures": 0.0,
+       "status": "$34,810.62",
+       "url": "/nm/candidate/liz-stefanics?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Liz Stefanics",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 119111.38,
+       "expenditures": 0.0,
+       "status": "$34,810.62",
+       "url": "/nm/candidate/liz-stefanics?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "39"
+  },
+  {
+   "office": "New Mexico State Senate District 4",
+   "url": "/nm/race/new-mexico-state-senate-district-4-67979",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 590251.0,
+   "totalExpenditures": 290657.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "George K Munoz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 580541.41,
+       "expenditures": 0.0,
+       "status": "$280,946.98",
+       "url": "/nm/candidate/george-k-munoz?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "George K Munoz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 580541.41,
+       "expenditures": 0.0,
+       "status": "$280,946.98",
+       "url": "/nm/candidate/george-k-munoz?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Keith E Hillock",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9709.96,
+       "expenditures": 0.0,
+       "status": "$9,709.96",
+       "url": "/nm/candidate/keith-e-hillock?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "4"
+  },
+  {
+   "office": "New Mexico State Senate District 40",
+   "url": "/nm/race/new-mexico-state-senate-district-40-68015",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 289376.0,
+   "totalExpenditures": 239484.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Craig W Brandt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 263495.13,
+       "expenditures": 0.0,
+       "status": "$214,986.06",
+       "url": "/nm/candidate/craig-w-brandt?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Amina N Everett",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25881.32,
+       "expenditures": 338.0,
+       "status": "$24,497.93",
+       "url": "/nm/candidate/amina-n-everett?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Amina N Everett",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25881.32,
+       "expenditures": 338.0,
+       "status": "$24,497.93",
+       "url": "/nm/candidate/amina-n-everett?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Craig W Brandt",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 263495.13,
+       "expenditures": 0.0,
+       "status": "$214,986.06",
+       "url": "/nm/candidate/craig-w-brandt?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "40"
+  },
+  {
+   "office": "New Mexico State Senate District 41",
+   "url": "/nm/race/new-mexico-state-senate-district-41-68016",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 170628.0,
+   "totalExpenditures": 127141.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "David M Gallegos",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 170627.77,
+       "expenditures": 0.0,
+       "status": "$127,140.93",
+       "url": "/nm/candidate/david-m-gallegos?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "David M Gallegos",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 170627.77,
+       "expenditures": 0.0,
+       "status": "$127,140.93",
+       "url": "/nm/candidate/david-m-gallegos?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "41"
+  },
+  {
+   "office": "New Mexico State Senate District 42",
+   "url": "/nm/race/new-mexico-state-senate-district-42-68017",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 542453.0,
+   "totalExpenditures": 627070.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Larry R Scott",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 343287.38,
+       "expenditures": 7000.0,
+       "status": "$325,655.81",
+       "url": "/nm/candidate/larry-r-scott?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Larry R Scott",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 343287.38,
+       "expenditures": 7000.0,
+       "status": "$325,655.81",
+       "url": "/nm/candidate/larry-r-scott?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Steven McCutcheon",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 199165.75,
+       "expenditures": 107304.22,
+       "status": "$301,414.22",
+       "url": "/nm/candidate/steven-mccutcheon?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "42"
+  },
+  {
+   "office": "New Mexico State Senate District 5",
+   "url": "/nm/race/new-mexico-state-senate-district-5-67980",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 101918.0,
+   "totalExpenditures": 36479.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Leo Jaramillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 101918.37,
+       "expenditures": 0.0,
+       "status": "$36,478.70",
+       "url": "/nm/candidate/leo-jaramillo?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Leo Jaramillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 101918.37,
+       "expenditures": 0.0,
+       "status": "$36,478.70",
+       "url": "/nm/candidate/leo-jaramillo?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "5"
+  },
+  {
+   "office": "New Mexico State Senate District 6",
+   "url": "/nm/race/new-mexico-state-senate-district-6-67981",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 73524.0,
+   "totalExpenditures": 36012.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Roberto Bobby Jesse Gonzales",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 73523.78,
+       "expenditures": 0.0,
+       "status": "$36,011.85",
+       "url": "/nm/candidate/roberto-bobby-jesse-gonzales?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Roberto Bobby Jesse Gonzales",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 73523.78,
+       "expenditures": 0.0,
+       "status": "$36,011.85",
+       "url": "/nm/candidate/roberto-bobby-jesse-gonzales?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "6"
+  },
+  {
+   "office": "New Mexico State Senate District 7",
+   "url": "/nm/race/new-mexico-state-senate-district-7-67982",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 161342.0,
+   "totalExpenditures": 141933.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Pat Woods",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 161341.57,
+       "expenditures": 1000.0,
+       "status": "$141,932.91",
+       "url": "/nm/candidate/pat-woods?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Pat Woods",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 161341.57,
+       "expenditures": 1000.0,
+       "status": "$141,932.91",
+       "url": "/nm/candidate/pat-woods?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "7"
+  },
+  {
+   "office": "New Mexico State Senate District 8",
+   "url": "/nm/race/new-mexico-state-senate-district-8-67983",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 158950.0,
+   "totalExpenditures": 126549.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Pete Campos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 145084.77,
+       "expenditures": 0.0,
+       "status": "$108,172.65",
+       "url": "/nm/candidate/pete-campos?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Pete Campos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 145084.77,
+       "expenditures": 0.0,
+       "status": "$108,172.65",
+       "url": "/nm/candidate/pete-campos?cycle=2024-election-cycle"
+      },
+      {
+       "name": "G Michael Lopez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13865.48,
+       "expenditures": 15000.0,
+       "status": "$18,376.38",
+       "url": "/nm/candidate/g-michael-lopez?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "8"
+  },
+  {
+   "office": "New Mexico State Senate District 9",
+   "url": "/nm/race/new-mexico-state-senate-district-9-67984",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 554953.0,
+   "totalExpenditures": 449843.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Cindy Nava",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 328664.83,
+       "expenditures": 0.0,
+       "status": "$261,025.21",
+       "url": "/nm/candidate/cindy-nava?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Audrey D Mendonca-Trujillo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 99318.06,
+       "expenditures": 0.0,
+       "status": "$73,409.77",
+       "url": "/nm/candidate/audrey-d-mendonca-trujillo?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Cindy Nava",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 328664.83,
+       "expenditures": 0.0,
+       "status": "$261,025.21",
+       "url": "/nm/candidate/cindy-nava?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Heather Balas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 113530.0,
+       "expenditures": 4571.88,
+       "status": "$106,058.02",
+       "url": "/nm/candidate/heather-balas?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 4, 2024",
+     "candidates": [
+      {
+       "name": "Audrey D Mendonca-Trujillo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 99318.06,
+       "expenditures": 0.0,
+       "status": "$73,409.77",
+       "url": "/nm/candidate/audrey-d-mendonca-trujillo?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Frida S Vasquez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 13440.44,
+       "expenditures": 0.0,
+       "status": "$9,349.50",
+       "url": "/nm/candidate/frida-s-vasquez?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "9"
+  }
+ ]
+}

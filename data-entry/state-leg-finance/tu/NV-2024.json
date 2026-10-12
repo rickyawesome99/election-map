@@ -1,0 +1,3620 @@
+{
+ "state": "NV",
+ "cycle": 2024,
+ "fetched": "2026-10-11",
+ "dataThrough": "12/31/2024",
+ "races": [
+  {
+   "office": "Nevada State Assembly District 1",
+   "url": "/nv/race/nevada-state-assembly-district-1-67706",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 489529.0,
+   "totalExpenditures": 502437.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Daniele Monroe-Moreno",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 484139.84,
+       "expenditures": 497495.39,
+       "status": "Won",
+       "url": "/nv/candidate/daniele-monroe-moreno?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Garland Brinkley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5389.19,
+       "expenditures": 4941.23,
+       "status": "Lost",
+       "url": "/nv/candidate/garland-brinkley?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Daniele Monroe-Moreno",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 484139.84,
+       "expenditures": 497495.39,
+       "status": "Advanced",
+       "url": "/nv/candidate/daniele-monroe-moreno?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Garland Brinkley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5389.19,
+       "expenditures": 4941.23,
+       "status": "Advanced",
+       "url": "/nv/candidate/garland-brinkley?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "Nevada State Assembly District 10",
+   "url": "/nv/race/nevada-state-assembly-district-10-67707",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 199181.0,
+   "totalExpenditures": 129712.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Venise Karris",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 186559.77,
+       "expenditures": 120991.49,
+       "status": "Won",
+       "url": "/nv/candidate/venise-karris?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sean Moore",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 962.35,
+       "status": "Lost",
+       "url": "/nv/candidate/sean-moore?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Venise Karris",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 186559.77,
+       "expenditures": 120991.49,
+       "status": "Advanced",
+       "url": "/nv/candidate/venise-karris?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kyle Greenwood",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/kyle-greenwood?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Valerie Thomason",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12620.97,
+       "expenditures": 7757.89,
+       "status": "Lost",
+       "url": "/nv/candidate/valerie-thomason?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "Nevada State Assembly District 11",
+   "url": "/nv/race/nevada-state-assembly-district-11-67708",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 162485.0,
+   "totalExpenditures": 131800.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Cinthia Moore",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 105852.37,
+       "expenditures": 73511.77,
+       "status": "Won",
+       "url": "/nv/candidate/cinthia-moore?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jeffrey Lustick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 56367.96,
+       "expenditures": 58065.26,
+       "status": "Lost",
+       "url": "/nv/candidate/jeffrey-lustick?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Cinthia Moore",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 105852.37,
+       "expenditures": 73511.77,
+       "status": "Advanced",
+       "url": "/nv/candidate/cinthia-moore?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Thomas Lambert",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 264.8,
+       "expenditures": 223.0,
+       "status": "Lost",
+       "url": "/nv/candidate/thomas-lambert?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Jeffrey Lustick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 56367.96,
+       "expenditures": 58065.26,
+       "status": "Advanced",
+       "url": "/nv/candidate/jeffrey-lustick?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Anthony Manesa",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/anthony-manesa?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "Nevada State Assembly District 12",
+   "url": "/nv/race/nevada-state-assembly-district-12-67709",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 472547.0,
+   "totalExpenditures": 459306.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Max Carter II",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 310032.54,
+       "expenditures": 314332.24,
+       "status": "Won",
+       "url": "/nv/candidate/max-carter-ii?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nancy Roecker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 159234.27,
+       "expenditures": 141928.32,
+       "status": "Lost",
+       "url": "/nv/candidate/nancy-roecker?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Max Carter II",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 310032.54,
+       "expenditures": 314332.24,
+       "status": "Advanced",
+       "url": "/nv/candidate/max-carter-ii?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Nancy Roecker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 159234.27,
+       "expenditures": 141928.32,
+       "status": "Advanced",
+       "url": "/nv/candidate/nancy-roecker?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Al Rojas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3280.0,
+       "expenditures": 3045.91,
+       "status": "Lost",
+       "url": "/nv/candidate/al-rojas?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "Nevada State Assembly District 13",
+   "url": "/nv/race/nevada-state-assembly-district-13-67710",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 236681.0,
+   "totalExpenditures": 131061.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Brian Hibbetts",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 234968.29,
+       "expenditures": 128916.24,
+       "status": "Won",
+       "url": "/nv/candidate/brian-hibbetts?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Daniel Andrews",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1712.39,
+       "expenditures": 2144.36,
+       "status": "Lost",
+       "url": "/nv/candidate/daniel-andrews?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Daniel Andrews",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1712.39,
+       "expenditures": 2144.36,
+       "status": "Advanced",
+       "url": "/nv/candidate/daniel-andrews?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Brian Hibbetts",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 234968.29,
+       "expenditures": 128916.24,
+       "status": "Advanced",
+       "url": "/nv/candidate/brian-hibbetts?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "Nevada State Assembly District 14",
+   "url": "/nv/race/nevada-state-assembly-district-14-67711",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 183062.0,
+   "totalExpenditures": 209357.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Erica Mosca",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 183062.24,
+       "expenditures": 209356.98,
+       "status": "Won",
+       "url": "/nv/candidate/erica-mosca?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Erica Mosca",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 183062.24,
+       "expenditures": 209356.98,
+       "status": "Advanced",
+       "url": "/nv/candidate/erica-mosca?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "Nevada State Assembly District 15",
+   "url": "/nv/race/nevada-state-assembly-district-15-67712",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 337332.0,
+   "totalExpenditures": 229985.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Howard Watts III",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 335861.14,
+       "expenditures": 228421.23,
+       "status": "Won",
+       "url": "/nv/candidate/howard-watts-iii?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Melissa Lynn Spence",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1470.69,
+       "expenditures": 1563.59,
+       "status": "Lost",
+       "url": "/nv/candidate/melissa-lynn-spence?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jordy de la Caridad Viciedo Prado",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/jordy-de-la-caridad-viciedo-prado?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Howard Watts III",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 335861.14,
+       "expenditures": 228421.23,
+       "status": "Advanced",
+       "url": "/nv/candidate/howard-watts-iii?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Melissa Lynn Spence",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1470.69,
+       "expenditures": 1563.59,
+       "status": "Advanced",
+       "url": "/nv/candidate/melissa-lynn-spence?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "Nevada State Assembly District 16",
+   "url": "/nv/race/nevada-state-assembly-district-16-67713",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 119739.0,
+   "totalExpenditures": 105834.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Cecelia Gonzalez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 116088.81,
+       "expenditures": 70524.92,
+       "status": "Won",
+       "url": "/nv/candidate/cecelia-gonzalez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "James Neville",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1500.0,
+       "expenditures": 33203.88,
+       "status": "Lost",
+       "url": "/nv/candidate/james-neville?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jose Pena",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/jose-pena?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Cecelia Gonzalez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 116088.81,
+       "expenditures": 70524.92,
+       "status": "Advanced",
+       "url": "/nv/candidate/cecelia-gonzalez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Eva Chase",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/eva-chase?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "James Neville",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1500.0,
+       "expenditures": 33203.88,
+       "status": "Advanced",
+       "url": "/nv/candidate/james-neville?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Benjamin Donlon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/benjamin-donlon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Socorro Keenan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2150.0,
+       "expenditures": 2105.0,
+       "status": "Lost",
+       "url": "/nv/candidate/socorro-keenan?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "Nevada State Assembly District 17",
+   "url": "/nv/race/nevada-state-assembly-district-17-67714",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 227885.0,
+   "totalExpenditures": 207303.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Linda Hunt",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 117821.82,
+       "expenditures": 92749.19,
+       "status": "Won",
+       "url": "/nv/candidate/linda-hunt?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Robert Olson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3500.0,
+       "expenditures": 4723.67,
+       "status": "Lost",
+       "url": "/nv/candidate/robert-olson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Linda Hunt",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 117821.82,
+       "expenditures": 92749.19,
+       "status": "Advanced",
+       "url": "/nv/candidate/linda-hunt?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mishon Montgomery",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 102910.11,
+       "expenditures": 105216.25,
+       "status": "Lost",
+       "url": "/nv/candidate/mishon-montgomery?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chauntille Roberts",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3653.0,
+       "expenditures": 4613.4,
+       "status": "Lost",
+       "url": "/nv/candidate/chauntille-roberts?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Robert Olson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3500.0,
+       "expenditures": 4723.67,
+       "status": "Advanced",
+       "url": "/nv/candidate/robert-olson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "Nevada State Assembly District 18",
+   "url": "/nv/race/nevada-state-assembly-district-18-67715",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 103666.0,
+   "totalExpenditures": 100325.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Venicia Considine",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 103666.13,
+       "expenditures": 100198.89,
+       "status": "Won",
+       "url": "/nv/candidate/venicia-considine?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Antario Brown",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 126.16,
+       "status": "Lost",
+       "url": "/nv/candidate/antario-brown?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Venicia Considine",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 103666.13,
+       "expenditures": 100198.89,
+       "status": "Advanced",
+       "url": "/nv/candidate/venicia-considine?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Antario Brown",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 126.16,
+       "status": "Advanced",
+       "url": "/nv/candidate/antario-brown?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "Nevada State Assembly District 19",
+   "url": "/nv/race/nevada-state-assembly-district-19-67716",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 314949.0,
+   "totalExpenditures": 242167.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Thaddeus Yurek III",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 314948.79,
+       "expenditures": 242167.46,
+       "status": "Won",
+       "url": "/nv/candidate/thaddeus-yurek-iii?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Thaddeus Yurek III",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 314948.79,
+       "expenditures": 242167.46,
+       "status": "Advanced",
+       "url": "/nv/candidate/thaddeus-yurek-iii?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "Nevada State Assembly District 2",
+   "url": "/nv/race/nevada-state-assembly-district-2-67717",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 530909.0,
+   "totalExpenditures": 496266.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Heidi Kasama",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 399078.91,
+       "expenditures": 370492.35,
+       "status": "Won",
+       "url": "/nv/candidate/heidi-kasama?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ronald Nelsen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 131829.61,
+       "expenditures": 125774.09,
+       "status": "Lost",
+       "url": "/nv/candidate/ronald-nelsen?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Ronald Nelsen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 131829.61,
+       "expenditures": 125774.09,
+       "status": "Advanced",
+       "url": "/nv/candidate/ronald-nelsen?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Heidi Kasama",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 399078.91,
+       "expenditures": 370492.35,
+       "status": "Advanced",
+       "url": "/nv/candidate/heidi-kasama?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "Nevada State Assembly District 20",
+   "url": "/nv/race/nevada-state-assembly-district-20-67718",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 79257.0,
+   "totalExpenditures": 54224.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "David Orentlicher",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 79256.91,
+       "expenditures": 54223.96,
+       "status": "Won",
+       "url": "/nv/candidate/david-orentlicher?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Stan Vaughan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/stan-vaughan?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "David Orentlicher",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 79256.91,
+       "expenditures": 54223.96,
+       "status": "Advanced",
+       "url": "/nv/candidate/david-orentlicher?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Stan Vaughan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/stan-vaughan?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "Nevada State Assembly District 21",
+   "url": "/nv/race/nevada-state-assembly-district-21-67719",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1057259.0,
+   "totalExpenditures": 1098281.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Elaine Marzola",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 744243.58,
+       "expenditures": 782519.87,
+       "status": "Won",
+       "url": "/nv/candidate/elaine-marzola?cycle=2024-election-cycle"
+      },
+      {
+       "name": "April Arndt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 267109.49,
+       "expenditures": 268678.52,
+       "status": "Lost",
+       "url": "/nv/candidate/april-arndt?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Elaine Marzola",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 744243.58,
+       "expenditures": 782519.87,
+       "status": "Advanced",
+       "url": "/nv/candidate/elaine-marzola?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "April Arndt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 267109.49,
+       "expenditures": 268678.52,
+       "status": "Advanced",
+       "url": "/nv/candidate/april-arndt?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jon Petrick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45906.3,
+       "expenditures": 47082.7,
+       "status": "Lost",
+       "url": "/nv/candidate/jon-petrick?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "Nevada State Assembly District 22",
+   "url": "/nv/race/nevada-state-assembly-district-22-67720",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 195957.0,
+   "totalExpenditures": 143048.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Melissa Hardy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 195957.08,
+       "expenditures": 143047.87,
+       "status": "Won",
+       "url": "/nv/candidate/melissa-hardy?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Melissa Hardy",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 195957.08,
+       "expenditures": 143047.87,
+       "status": "Advanced",
+       "url": "/nv/candidate/melissa-hardy?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "Nevada State Assembly District 23",
+   "url": "/nv/race/nevada-state-assembly-district-23-67721",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 206982.0,
+   "totalExpenditures": 204161.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Danielle Gallant",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 206982.3,
+       "expenditures": 204161.28,
+       "status": "Won",
+       "url": "/nv/candidate/danielle-gallant?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Danielle Gallant",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 206982.3,
+       "expenditures": 204161.28,
+       "status": "Advanced",
+       "url": "/nv/candidate/danielle-gallant?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "Nevada State Assembly District 24",
+   "url": "/nv/race/nevada-state-assembly-district-24-67722",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 155187.0,
+   "totalExpenditures": 125664.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Erica Roth",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 146745.44,
+       "expenditures": 116399.25,
+       "status": "Won",
+       "url": "/nv/candidate/erica-roth?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Terisia Kolesnick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8441.11,
+       "expenditures": 9264.85,
+       "status": "Lost",
+       "url": "/nv/candidate/terisia-kolesnick?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Erica Roth",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 146745.44,
+       "expenditures": 116399.25,
+       "status": "Advanced",
+       "url": "/nv/candidate/erica-roth?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Michael Bellaty",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/michael-bellaty?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Terisia Kolesnick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8441.11,
+       "expenditures": 9264.85,
+       "status": "Advanced",
+       "url": "/nv/candidate/terisia-kolesnick?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "Nevada State Assembly District 25",
+   "url": "/nv/race/nevada-state-assembly-district-25-67723",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 778800.0,
+   "totalExpenditures": 776976.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Selena La Rue Hatch",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 226824.97,
+       "expenditures": 221953.53,
+       "status": "Won",
+       "url": "/nv/candidate/selena-la-rue-hatch?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Diana Sande",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 551975.35,
+       "expenditures": 555022.66,
+       "status": "Lost",
+       "url": "/nv/candidate/diana-sande?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Selena La Rue Hatch",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 226824.97,
+       "expenditures": 221953.53,
+       "status": "Advanced",
+       "url": "/nv/candidate/selena-la-rue-hatch?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Diana Sande",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 551975.35,
+       "expenditures": 555022.66,
+       "status": "Advanced",
+       "url": "/nv/candidate/diana-sande?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "Nevada State Assembly District 26",
+   "url": "/nv/race/nevada-state-assembly-district-26-67724",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 182691.0,
+   "totalExpenditures": 188127.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Richard Delong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 173033.8,
+       "expenditures": 179482.46,
+       "status": "Won",
+       "url": "/nv/candidate/richard-delong?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Diana Sullivan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9656.93,
+       "expenditures": 8644.67,
+       "status": "Lost",
+       "url": "/nv/candidate/diana-sullivan?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Diana Sullivan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9656.93,
+       "expenditures": 8644.67,
+       "status": "Advanced",
+       "url": "/nv/candidate/diana-sullivan?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Scott Savage",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/scott-savage?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Richard Delong",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 173033.8,
+       "expenditures": 179482.46,
+       "status": "Advanced",
+       "url": "/nv/candidate/richard-delong?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "Nevada State Assembly District 27",
+   "url": "/nv/race/nevada-state-assembly-district-27-67725",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 311250.0,
+   "totalExpenditures": 283016.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Heather Goulding",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 157958.84,
+       "expenditures": 129341.99,
+       "status": "Won",
+       "url": "/nv/candidate/heather-goulding?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Carmen Ortiz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9366.44,
+       "expenditures": 13725.54,
+       "status": "Lost",
+       "url": "/nv/candidate/carmen-ortiz?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Heather Goulding",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 157958.84,
+       "expenditures": 129341.99,
+       "status": "Advanced",
+       "url": "/nv/candidate/heather-goulding?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Alex Velto",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 143925.01,
+       "expenditures": 139948.32,
+       "status": "Lost",
+       "url": "/nv/candidate/alex-velto?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Carmen Ortiz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9366.44,
+       "expenditures": 13725.54,
+       "status": "Advanced",
+       "url": "/nv/candidate/carmen-ortiz?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "Nevada State Assembly District 28",
+   "url": "/nv/race/nevada-state-assembly-district-28-67726",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 186900.0,
+   "totalExpenditures": 78955.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Reuben D'Silva",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 186899.55,
+       "expenditures": 78954.73,
+       "status": "Won",
+       "url": "/nv/candidate/reuben-dsilva?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Reuben D'Silva",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 186899.55,
+       "expenditures": 78954.73,
+       "status": "Advanced",
+       "url": "/nv/candidate/reuben-dsilva?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "Nevada State Assembly District 29",
+   "url": "/nv/race/nevada-state-assembly-district-29-67727",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 660269.0,
+   "totalExpenditures": 611099.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Joseph Dalia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 401052.49,
+       "expenditures": 349225.61,
+       "status": "Won",
+       "url": "/nv/candidate/joseph-dalia?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Annette Dawson Owens",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 247941.4,
+       "expenditures": 250557.34,
+       "status": "Lost",
+       "url": "/nv/candidate/annette-dawson-owens?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Joseph Dalia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 401052.49,
+       "expenditures": 349225.61,
+       "status": "Advanced",
+       "url": "/nv/candidate/joseph-dalia?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Annette Dawson Owens",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 247941.4,
+       "expenditures": 250557.34,
+       "status": "Advanced",
+       "url": "/nv/candidate/annette-dawson-owens?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Yadusha Williams",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11274.65,
+       "expenditures": 11316.42,
+       "status": "Lost",
+       "url": "/nv/candidate/yadusha-williams?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "Nevada State Assembly District 3",
+   "url": "/nv/race/nevada-state-assembly-district-3-67728",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 251007.0,
+   "totalExpenditures": 192416.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Selena Torres",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 239301.58,
+       "expenditures": 181085.27,
+       "status": "Won",
+       "url": "/nv/candidate/selena-torres?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Michele Rizza",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11305.0,
+       "expenditures": 11330.96,
+       "status": "Lost",
+       "url": "/nv/candidate/michele-rizza?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Maximillian Quinteros",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 400.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/maximillian-quinteros?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Selena Torres",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 239301.58,
+       "expenditures": 181085.27,
+       "status": "Advanced",
+       "url": "/nv/candidate/selena-torres?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Michele Rizza",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11305.0,
+       "expenditures": 11330.96,
+       "status": "Advanced",
+       "url": "/nv/candidate/michele-rizza?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "Nevada State Assembly District 30",
+   "url": "/nv/race/nevada-state-assembly-district-30-67729",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 138289.0,
+   "totalExpenditures": 88149.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Natha Anderson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 136945.0,
+       "expenditures": 86949.34,
+       "status": "Won",
+       "url": "/nv/candidate/natha-anderson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Morgan Kolvet",
+       "party": "No Political",
+       "incumbent": false,
+       "contributions": 1344.38,
+       "expenditures": 1199.38,
+       "status": "Withdrew",
+       "url": "/nv/candidate/morgan-kolvet?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Natha Anderson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 136945.0,
+       "expenditures": 86949.34,
+       "status": "Advanced",
+       "url": "/nv/candidate/natha-anderson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "Nevada State Assembly District 31",
+   "url": "/nv/race/nevada-state-assembly-district-31-67730",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 125357.0,
+   "totalExpenditures": 116895.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jill Dickman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 125357.46,
+       "expenditures": 116894.99,
+       "status": "Won",
+       "url": "/nv/candidate/jill-dickman?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Stuart MacKie",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/stuart-mackie?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Stuart MacKie",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/stuart-mackie?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Jill Dickman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 125357.46,
+       "expenditures": 116894.99,
+       "status": "Advanced",
+       "url": "/nv/candidate/jill-dickman?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "Nevada State Assembly District 32",
+   "url": "/nv/race/nevada-state-assembly-district-32-67731",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 141100.0,
+   "totalExpenditures": 138873.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Alexis Hansen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 135450.0,
+       "expenditures": 138673.08,
+       "status": "Won",
+       "url": "/nv/candidate/alexis-hansen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Arnold Thomas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/arnold-thomas?cycle=2024-election-cycle"
+      },
+      {
+       "name": "John Gerhardt",
+       "party": "No Political",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/john-gerhardt?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Arnold Thomas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/arnold-thomas?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Alexis Hansen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 135450.0,
+       "expenditures": 138673.08,
+       "status": "Advanced",
+       "url": "/nv/candidate/alexis-hansen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jason Bushey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5650.0,
+       "expenditures": 200.0,
+       "status": "Lost",
+       "url": "/nv/candidate/jason-bushey?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "Nevada State Assembly District 33",
+   "url": "/nv/race/nevada-state-assembly-district-33-67732",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 156686.0,
+   "totalExpenditures": 123129.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Bert Gurr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 156686.23,
+       "expenditures": 123128.52,
+       "status": "Won",
+       "url": "/nv/candidate/bert-gurr?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Darryl Baber",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/darryl-baber?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Bert Gurr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 156686.23,
+       "expenditures": 123128.52,
+       "status": "Advanced",
+       "url": "/nv/candidate/bert-gurr?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "Nevada State Assembly District 34",
+   "url": "/nv/race/nevada-state-assembly-district-34-67733",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 499217.0,
+   "totalExpenditures": 480073.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Hanadi Nadeem",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 173187.12,
+       "expenditures": 160905.12,
+       "status": "Won",
+       "url": "/nv/candidate/hanadi-nadeem?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brandon Davis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 121603.85,
+       "expenditures": 114741.92,
+       "status": "Lost",
+       "url": "/nv/candidate/brandon-davis?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Hanadi Nadeem",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 173187.12,
+       "expenditures": 160905.12,
+       "status": "Advanced",
+       "url": "/nv/candidate/hanadi-nadeem?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Brandon Davis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 121603.85,
+       "expenditures": 114741.92,
+       "status": "Advanced",
+       "url": "/nv/candidate/brandon-davis?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Clement Ziroli III",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 204425.63,
+       "expenditures": 204425.63,
+       "status": "Lost",
+       "url": "/nv/candidate/clement-ziroli-iii?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "Nevada State Assembly District 35",
+   "url": "/nv/race/nevada-state-assembly-district-35-67734",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 849322.0,
+   "totalExpenditures": 668276.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Rebecca Edgeworth",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 547998.98,
+       "expenditures": 426369.03,
+       "status": "Won",
+       "url": "/nv/candidate/rebecca-edgeworth?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sharifa Wahab",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 301323.32,
+       "expenditures": 241907.08,
+       "status": "Lost",
+       "url": "/nv/candidate/sharifa-wahab?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Sharifa Wahab",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 301323.32,
+       "expenditures": 241907.08,
+       "status": "Advanced",
+       "url": "/nv/candidate/sharifa-wahab?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Rebecca Edgeworth",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 547998.98,
+       "expenditures": 426369.03,
+       "status": "Advanced",
+       "url": "/nv/candidate/rebecca-edgeworth?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "Nevada State Assembly District 36",
+   "url": "/nv/race/nevada-state-assembly-district-36-67735",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 273545.0,
+   "totalExpenditures": 202986.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Gregory Hafen II",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 271804.97,
+       "expenditures": 201871.41,
+       "status": "Won",
+       "url": "/nv/candidate/gregory-hafen-ii?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Marlene Drake",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1740.0,
+       "expenditures": 1114.69,
+       "status": "Lost",
+       "url": "/nv/candidate/marlene-drake?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Marlene Drake",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1740.0,
+       "expenditures": 1114.69,
+       "status": "Advanced",
+       "url": "/nv/candidate/marlene-drake?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Gregory Hafen II",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 271804.97,
+       "expenditures": 201871.41,
+       "status": "Advanced",
+       "url": "/nv/candidate/gregory-hafen-ii?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "Nevada State Assembly District 37",
+   "url": "/nv/race/nevada-state-assembly-district-37-67736",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1046942.0,
+   "totalExpenditures": 1061300.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Shea Backus",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 556637.55,
+       "expenditures": 568548.45,
+       "status": "Won",
+       "url": "/nv/candidate/shea-backus?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Brog",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 490304.13,
+       "expenditures": 492751.77,
+       "status": "Lost",
+       "url": "/nv/candidate/david-brog?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Shea Backus",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 556637.55,
+       "expenditures": 568548.45,
+       "status": "Advanced",
+       "url": "/nv/candidate/shea-backus?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "David Brog",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 490304.13,
+       "expenditures": 492751.77,
+       "status": "Advanced",
+       "url": "/nv/candidate/david-brog?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "Nevada State Assembly District 38",
+   "url": "/nv/race/nevada-state-assembly-district-38-67737",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 127301.0,
+   "totalExpenditures": 66154.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Gregory Koenig",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 127301.0,
+       "expenditures": 66154.32,
+       "status": "Won",
+       "url": "/nv/candidate/gregory-koenig?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Gregory Koenig",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 127301.0,
+       "expenditures": 66154.32,
+       "status": "Advanced",
+       "url": "/nv/candidate/gregory-koenig?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "Nevada State Assembly District 39",
+   "url": "/nv/race/nevada-state-assembly-district-39-67738",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 138796.0,
+   "totalExpenditures": 109377.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ken Gray",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 115074.0,
+       "expenditures": 85168.43,
+       "status": "Won",
+       "url": "/nv/candidate/ken-gray?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Erich Obermayr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 23722.01,
+       "expenditures": 24209.0,
+       "status": "Lost",
+       "url": "/nv/candidate/erich-obermayr?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Erich Obermayr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 23722.01,
+       "expenditures": 24209.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/erich-obermayr?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Ken Gray",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 115074.0,
+       "expenditures": 85168.43,
+       "status": "Advanced",
+       "url": "/nv/candidate/ken-gray?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "Nevada State Assembly District 4",
+   "url": "/nv/race/nevada-state-assembly-district-4-67739",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1283291.0,
+   "totalExpenditures": 1220046.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lisa Cole",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 583287.93,
+       "expenditures": 529746.28,
+       "status": "Won",
+       "url": "/nv/candidate/lisa-cole?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ryan Hampton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 700003.42,
+       "expenditures": 690299.96,
+       "status": "Lost",
+       "url": "/nv/candidate/ryan-hampton?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Ryan Hampton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 700003.42,
+       "expenditures": 690299.96,
+       "status": "Advanced",
+       "url": "/nv/candidate/ryan-hampton?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Lisa Cole",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 583287.93,
+       "expenditures": 529746.28,
+       "status": "Advanced",
+       "url": "/nv/candidate/lisa-cole?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "Nevada State Assembly District 40",
+   "url": "/nv/race/nevada-state-assembly-district-40-67740",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 266270.0,
+   "totalExpenditures": 252758.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Philip O'Neill",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 253592.94,
+       "expenditures": 240534.16,
+       "status": "Won",
+       "url": "/nv/candidate/philip-oneill?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Katherine Ramsey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8325.0,
+       "expenditures": 7825.88,
+       "status": "Lost",
+       "url": "/nv/candidate/katherine-ramsey?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Katherine Ramsey",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8325.0,
+       "expenditures": 7825.88,
+       "status": "Advanced",
+       "url": "/nv/candidate/katherine-ramsey?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Philip O'Neill",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 253592.94,
+       "expenditures": 240534.16,
+       "status": "Advanced",
+       "url": "/nv/candidate/philip-oneill?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Drew Ribar",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4352.14,
+       "expenditures": 4398.04,
+       "status": "Lost",
+       "url": "/nv/candidate/drew-ribar?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "Nevada State Assembly District 41",
+   "url": "/nv/race/nevada-state-assembly-district-41-67741",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 740011.0,
+   "totalExpenditures": 693982.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Sandra Jauregui",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 736348.25,
+       "expenditures": 690420.77,
+       "status": "Won",
+       "url": "/nv/candidate/sandra-jauregui?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Sandra Jauregui",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 736348.25,
+       "expenditures": 690420.77,
+       "status": "Advanced",
+       "url": "/nv/candidate/sandra-jauregui?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Guadalupe Reyes",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3663.0,
+       "expenditures": 3561.07,
+       "status": "Lost",
+       "url": "/nv/candidate/guadalupe-reyes?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "Nevada State Assembly District 42",
+   "url": "/nv/race/nevada-state-assembly-district-42-67742",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 232142.0,
+   "totalExpenditures": 177387.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tracy Brown-May",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 207296.97,
+       "expenditures": 160237.21,
+       "status": "Won",
+       "url": "/nv/candidate/tracy-brown-may?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kevin Child",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/kevin-child?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Tracy Brown-May",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 207296.97,
+       "expenditures": 160237.21,
+       "status": "Advanced",
+       "url": "/nv/candidate/tracy-brown-may?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sayed Zaidi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 105.0,
+       "status": "Lost",
+       "url": "/nv/candidate/sayed-zaidi?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Kevin Child",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/kevin-child?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Katrin Ivanoff",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24845.0,
+       "expenditures": 17044.92,
+       "status": "Lost",
+       "url": "/nv/candidate/katrin-ivanoff?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "Nevada State Assembly District 5",
+   "url": "/nv/race/nevada-state-assembly-district-5-67743",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 331528.0,
+   "totalExpenditures": 257837.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Brittney Miller",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 246569.22,
+       "expenditures": 185201.27,
+       "status": "Won",
+       "url": "/nv/candidate/brittney-miller?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kelly Quinn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45054.79,
+       "expenditures": 37627.59,
+       "status": "Lost",
+       "url": "/nv/candidate/kelly-quinn?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ronald Morgan",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/ronald-morgan?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Brittney Miller",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 246569.22,
+       "expenditures": 185201.27,
+       "status": "Advanced",
+       "url": "/nv/candidate/brittney-miller?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Kelly Quinn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45054.79,
+       "expenditures": 37627.59,
+       "status": "Advanced",
+       "url": "/nv/candidate/kelly-quinn?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Alan Bigelow",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 39903.82,
+       "expenditures": 35008.32,
+       "status": "Lost",
+       "url": "/nv/candidate/alan-bigelow?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "Nevada State Assembly District 6",
+   "url": "/nv/race/nevada-state-assembly-district-6-67744",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 47886.0,
+   "totalExpenditures": 25390.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jovan Jackson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 39365.75,
+       "expenditures": 18990.78,
+       "status": "Won",
+       "url": "/nv/candidate/jovan-jackson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nephi Oliva",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/nephi-oliva?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Walter Jones",
+       "party": "No Political",
+       "incumbent": false,
+       "contributions": 4100.0,
+       "expenditures": 1965.0,
+       "status": "Lost",
+       "url": "/nv/candidate/walter-jones?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Jovan Jackson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 39365.75,
+       "expenditures": 18990.78,
+       "status": "Advanced",
+       "url": "/nv/candidate/jovan-jackson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Derek Rimson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4420.0,
+       "expenditures": 4433.92,
+       "status": "Lost",
+       "url": "/nv/candidate/derek-rimson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Nephi Oliva",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/nephi-oliva?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Geraldine Lewis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/geraldine-lewis?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "Nevada State Assembly District 7",
+   "url": "/nv/race/nevada-state-assembly-district-7-67745",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 117091.0,
+   "totalExpenditures": 55257.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tanya Flanagan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 117090.7,
+       "expenditures": 55257.49,
+       "status": "Won",
+       "url": "/nv/candidate/tanya-flanagan?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Tanya Flanagan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 117090.7,
+       "expenditures": 55257.49,
+       "status": "Advanced",
+       "url": "/nv/candidate/tanya-flanagan?cycle=2024-election-cycle"
+      },
+      {
+       "name": "James Fennell",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/james-fennell?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "Nevada State Assembly District 8",
+   "url": "/nv/race/nevada-state-assembly-district-8-67746",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 384361.0,
+   "totalExpenditures": 371430.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Duy Nguyen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 310737.51,
+       "expenditures": 316760.42,
+       "status": "Won",
+       "url": "/nv/candidate/duy-nguyen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kelly Chapman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 73623.15,
+       "expenditures": 54669.92,
+       "status": "Lost",
+       "url": "/nv/candidate/kelly-chapman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Duy Nguyen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 310737.51,
+       "expenditures": 316760.42,
+       "status": "Advanced",
+       "url": "/nv/candidate/duy-nguyen?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Kelly Chapman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 73623.15,
+       "expenditures": 54669.92,
+       "status": "Advanced",
+       "url": "/nv/candidate/kelly-chapman?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "Nevada State Assembly District 9",
+   "url": "/nv/race/nevada-state-assembly-district-9-67747",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1033551.0,
+   "totalExpenditures": 893043.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Steve Yeager",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 986574.23,
+       "expenditures": 844616.77,
+       "status": "Won",
+       "url": "/nv/candidate/steve-yeager?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Erica Neely",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46366.77,
+       "expenditures": 48270.13,
+       "status": "Lost",
+       "url": "/nv/candidate/erica-neely?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Steve Yeager",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 986574.23,
+       "expenditures": 844616.77,
+       "status": "Advanced",
+       "url": "/nv/candidate/steve-yeager?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Adeline Celio",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 610.0,
+       "expenditures": 155.88,
+       "status": "Lost",
+       "url": "/nv/candidate/adeline-celio?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Erica Neely",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46366.77,
+       "expenditures": 48270.13,
+       "status": "Advanced",
+       "url": "/nv/candidate/erica-neely?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "Nevada State Senate District 1",
+   "url": "/nv/race/nevada-state-senate-district-1-67696",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 280789.0,
+   "totalExpenditures": 229925.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Michelee Shelly Crawford",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 269597.96,
+       "expenditures": 218451.24,
+       "status": "Won",
+       "url": "/nv/candidate/michelee-shelly-crawford?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Patricia Brinkley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11190.65,
+       "expenditures": 11474.16,
+       "status": "Lost",
+       "url": "/nv/candidate/patricia-brinkley?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Michelee Shelly Crawford",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 269597.96,
+       "expenditures": 218451.24,
+       "status": "Advanced",
+       "url": "/nv/candidate/michelee-shelly-crawford?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Patricia Brinkley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11190.65,
+       "expenditures": 11474.16,
+       "status": "Advanced",
+       "url": "/nv/candidate/patricia-brinkley?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "1"
+  },
+  {
+   "office": "Nevada State Senate District 11",
+   "url": "/nv/race/nevada-state-senate-district-11-67702",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1475364.0,
+   "totalExpenditures": 1354334.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lori Rogich",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 808780.29,
+       "expenditures": 678495.14,
+       "status": "Won",
+       "url": "/nv/candidate/lori-rogich?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dallas Harris",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 656263.89,
+       "expenditures": 664381.03,
+       "status": "Lost",
+       "url": "/nv/candidate/dallas-harris?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Dallas Harris",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 656263.89,
+       "expenditures": 664381.03,
+       "status": "Advanced",
+       "url": "/nv/candidate/dallas-harris?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Raymond Davis Jr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 100.0,
+       "expenditures": 100.0,
+       "status": "Withdrew",
+       "url": "/nv/candidate/raymond-davis-jr?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Lori Rogich",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 808780.29,
+       "expenditures": 678495.14,
+       "status": "Advanced",
+       "url": "/nv/candidate/lori-rogich?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jenann Logan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6350.0,
+       "expenditures": 7099.93,
+       "status": "Withdrew",
+       "url": "/nv/candidate/jenann-logan?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brian Paonessa",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3870.0,
+       "expenditures": 4257.63,
+       "status": "Lost",
+       "url": "/nv/candidate/brian-paonessa?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "11"
+  },
+  {
+   "office": "Nevada State Senate District 15",
+   "url": "/nv/race/nevada-state-senate-district-15-67703",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 828489.0,
+   "totalExpenditures": 910744.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Angela Taylor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 518989.81,
+       "expenditures": 588711.72,
+       "status": "Won",
+       "url": "/nv/candidate/angela-taylor?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Michael Ginsburg",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 156255.0,
+       "expenditures": 156672.19,
+       "status": "Lost",
+       "url": "/nv/candidate/michael-ginsburg?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Angela Taylor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 518989.81,
+       "expenditures": 588711.72,
+       "status": "Advanced",
+       "url": "/nv/candidate/angela-taylor?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Naomi Duerr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 114637.5,
+       "expenditures": 127093.32,
+       "status": "Lost",
+       "url": "/nv/candidate/naomi-duerr?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Johnny Kerns",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1000.0,
+       "expenditures": 695.05,
+       "status": "Lost",
+       "url": "/nv/candidate/johnny-kerns?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Michael Ginsburg",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 156255.0,
+       "expenditures": 156672.19,
+       "status": "Advanced",
+       "url": "/nv/candidate/michael-ginsburg?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sharron Angle",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 36607.02,
+       "expenditures": 36114.04,
+       "status": "Lost",
+       "url": "/nv/candidate/sharron-angle?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Charles Neumann",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1000.0,
+       "expenditures": 1457.24,
+       "status": "Lost",
+       "url": "/nv/candidate/charles-neumann?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "15"
+  },
+  {
+   "office": "Nevada State Senate District 18",
+   "url": "/nv/race/nevada-state-senate-district-18-67704",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 701270.0,
+   "totalExpenditures": 644302.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "John Steinbeck",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 535699.11,
+       "expenditures": 468965.66,
+       "status": "Won",
+       "url": "/nv/candidate/john-steinbeck?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ronald Bilodeau",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3093.48,
+       "expenditures": 2661.34,
+       "status": "Lost",
+       "url": "/nv/candidate/ronald-bilodeau?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Ronald Bilodeau",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3093.48,
+       "expenditures": 2661.34,
+       "status": "Advanced",
+       "url": "/nv/candidate/ronald-bilodeau?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Donald Connors",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 147.3,
+       "status": "Lost",
+       "url": "/nv/candidate/donald-connors?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Iman Joseph",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1596.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/iman-joseph?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "John Steinbeck",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 535699.11,
+       "expenditures": 468965.66,
+       "status": "Advanced",
+       "url": "/nv/candidate/john-steinbeck?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Josh Leavitt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 128181.0,
+       "expenditures": 119433.28,
+       "status": "Lost",
+       "url": "/nv/candidate/josh-leavitt?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Richard Mcarthur",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 32700.0,
+       "expenditures": 53094.06,
+       "status": "Lost",
+       "url": "/nv/candidate/richard-mcarthur?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "18"
+  },
+  {
+   "office": "Nevada State Senate District 19",
+   "url": "/nv/race/nevada-state-senate-district-19-67705",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 170487.0,
+   "totalExpenditures": 121822.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "John Ellison",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 140045.0,
+       "expenditures": 90267.97,
+       "status": "Won",
+       "url": "/nv/candidate/john-ellison?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "John Ellison",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 140045.0,
+       "expenditures": 90267.97,
+       "status": "Advanced",
+       "url": "/nv/candidate/john-ellison?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chelsy Fischer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2355.0,
+       "expenditures": 2654.8,
+       "status": "Lost",
+       "url": "/nv/candidate/chelsy-fischer?cycle=2024-election-cycle"
+      },
+      {
+       "name": "William Hockstedler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 28086.89,
+       "expenditures": 28899.31,
+       "status": "Lost",
+       "url": "/nv/candidate/william-hockstedler?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "19"
+  },
+  {
+   "office": "Nevada State Senate District 3",
+   "url": "/nv/race/nevada-state-senate-district-3-67697",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1010195.0,
+   "totalExpenditures": 1002480.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Rochelle Nguyen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 898634.04,
+       "expenditures": 889609.6,
+       "status": "Won",
+       "url": "/nv/candidate/rochelle-nguyen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brent Howard",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 105.0,
+       "expenditures": 105.0,
+       "status": "Lost",
+       "url": "/nv/candidate/brent-howard?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Keya Jones",
+       "party": "No Political",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 2775.24,
+       "status": "Lost",
+       "url": "/nv/candidate/keya-jones?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Rochelle Nguyen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 898634.04,
+       "expenditures": 889609.6,
+       "status": "Advanced",
+       "url": "/nv/candidate/rochelle-nguyen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Geoconda Hughes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 111455.48,
+       "expenditures": 109990.09,
+       "status": "Lost",
+       "url": "/nv/candidate/geoconda-hughes?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Brent Howard",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 105.0,
+       "expenditures": 105.0,
+       "status": "Advanced",
+       "url": "/nv/candidate/brent-howard?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "3"
+  },
+  {
+   "office": "Nevada State Senate District 4",
+   "url": "/nv/race/nevada-state-senate-district-4-67698",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 297919.0,
+   "totalExpenditures": 260516.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Dina Neal",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 274046.0,
+       "expenditures": 237844.44,
+       "status": "Won",
+       "url": "/nv/candidate/dina-neal?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Dina Neal",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 274046.0,
+       "expenditures": 237844.44,
+       "status": "Advanced",
+       "url": "/nv/candidate/dina-neal?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Laura Perkins",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 23873.34,
+       "expenditures": 22672.01,
+       "status": "Lost",
+       "url": "/nv/candidate/laura-perkins?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "4"
+  },
+  {
+   "office": "Nevada State Senate District 5",
+   "url": "/nv/race/nevada-state-senate-district-5-67699",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1399684.0,
+   "totalExpenditures": 1402444.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Carrie Buck",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 579523.23,
+       "expenditures": 553957.75,
+       "status": "Won",
+       "url": "/nv/candidate/carrie-buck?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jennifer Atlas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 518348.14,
+       "expenditures": 556991.54,
+       "status": "Lost",
+       "url": "/nv/candidate/jennifer-atlas?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Jennifer Atlas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 518348.14,
+       "expenditures": 556991.54,
+       "status": "Advanced",
+       "url": "/nv/candidate/jennifer-atlas?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Christian Bishop",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 301813.12,
+       "expenditures": 291494.21,
+       "status": "Lost",
+       "url": "/nv/candidate/christian-bishop?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Carrie Buck",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 579523.23,
+       "expenditures": 553957.75,
+       "status": "Advanced",
+       "url": "/nv/candidate/carrie-buck?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "5"
+  },
+  {
+   "office": "Nevada State Senate District 6",
+   "url": "/nv/race/nevada-state-senate-district-6-67700",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1511452.0,
+   "totalExpenditures": 1492982.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Nicole Cannizzaro",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1292977.04,
+       "expenditures": 1278517.33,
+       "status": "Won",
+       "url": "/nv/candidate/nicole-cannizzaro?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jill Douglass",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 216668.05,
+       "expenditures": 214081.78,
+       "status": "Lost",
+       "url": "/nv/candidate/jill-douglass?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brad Barnhill",
+       "party": "Independent American",
+       "incumbent": false,
+       "contributions": 1050.0,
+       "expenditures": 382.39,
+       "status": "Lost",
+       "url": "/nv/candidate/brad-barnhill?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Nicole Cannizzaro",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1292977.04,
+       "expenditures": 1278517.33,
+       "status": "Advanced",
+       "url": "/nv/candidate/nicole-cannizzaro?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Jill Douglass",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 216668.05,
+       "expenditures": 214081.78,
+       "status": "Advanced",
+       "url": "/nv/candidate/jill-douglass?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joshua Stacy",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 756.98,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/nv/candidate/joshua-stacy?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "6"
+  },
+  {
+   "office": "Nevada State Senate District 7",
+   "url": "/nv/race/nevada-state-senate-district-7-67701",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 333998.0,
+   "totalExpenditures": 213090.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Roberta Lange",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 332497.11,
+       "expenditures": 209739.64,
+       "status": "Won",
+       "url": "/nv/candidate/roberta-lange?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Leonel Henderson Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1500.59,
+       "expenditures": 3350.51,
+       "status": "Lost",
+       "url": "/nv/candidate/leonel-henderson-jr?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Roberta Lange",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 332497.11,
+       "expenditures": 209739.64,
+       "status": "Advanced",
+       "url": "/nv/candidate/roberta-lange?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "June 11, 2024",
+     "candidates": [
+      {
+       "name": "Leonel Henderson Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1500.59,
+       "expenditures": 3350.51,
+       "status": "Advanced",
+       "url": "/nv/candidate/leonel-henderson-jr?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "7"
+  }
+ ]
+}

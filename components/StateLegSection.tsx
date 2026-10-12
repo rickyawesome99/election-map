@@ -3,6 +3,7 @@
 import { Fragment, useState, useCallback, useMemo, useEffect, useSyncExternalStore } from "react";
 import StateLegDistrictMap from "./StateLegDistrictMap";
 import StateLegDistrictTable, { districtRowCount } from "./StateLegDistrictTable";
+import { candidateSlug } from "@/lib/candidateSlug";
 import StateLegCompositionBox from "./StateLegCompositionBox";
 import type { Chamber, StateLegDistrict } from "@/data/stateLegDistricts";
 import type { StateLegEntry } from "@/data/forecastData";
@@ -25,6 +26,7 @@ function subscribeToHash(onChange: () => void): () => void {
 
 import { ELECTION_YEAR as electionYear } from "@/lib/electionYear";
 import { districtResultMargin, useStateLegResults } from "@/lib/useStateLegResults";
+import { districtHash } from "@/lib/stateLegAtlas";
 import { districtDisplayLabel, isUnassignedResultKey } from "@/lib/stateLegDistrictKey";
 import { fmtMargin } from "@/lib/colorScale";
 
@@ -60,6 +62,7 @@ function SelectedDistrictPanel({
   result,
   resultsYear,
   onClose,
+  profileHref,
 }: {
   districtKey: string;
   districtLabel: string;
@@ -69,12 +72,14 @@ function SelectedDistrictPanel({
   result?: StateLegDistrictResult;
   resultsYear: number | null;
   onClose: () => void;
+  /** The district's page in the atlas (/states/[id]/legislature/[chamber]#hd-N). */
+  profileHref?: string;
 }) {
   const incumbents = district?.incumbents ?? [];
   // Zero-vote lines are ballot bookkeeping the source files under the office ("Blank Ballots"
   // in the New England states, an unused write-in slot), not somebody who ran. Where they carry
   // real votes they stay, since those votes are inside the district's Other total.
-  const namedCandidates = (result?.candidates ?? []).filter((c) => c.votes > 0);
+  const namedCandidates = (result?.candidates ?? []).filter((c) => c.votes == null || c.votes > 0);
   const isPresidentialView = viewMode === "president";
   const isResultsView = viewMode === "results";
   const resultMargin = districtResultMargin(result);
@@ -142,7 +147,7 @@ function SelectedDistrictPanel({
                     <span className="ml-1 font-bold">({c.party})</span>
                   </span>
                   <span className="shrink-0 tabular-nums" style={{ color: PARTY_COLOR[c.party] }}>
-                    {c.votes.toLocaleString()}
+                    {c.votes == null ? "—" : c.votes.toLocaleString()}
                   </span>
                 </div>
               ))}
@@ -191,6 +196,11 @@ function SelectedDistrictPanel({
         <div className="text-[10px] leading-snug" style={{ color: "var(--app-text-very-muted)" }}>
           Last elected {district.lastElection}
         </div>
+      )}
+      {profileHref && (
+        <a href={profileHref} className="mt-1.5 inline-block text-[11px] font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>
+          Full district profile →
+        </a>
       )}
     </section>
   );
@@ -545,7 +555,7 @@ export default function StateLegSection({
       if (!rows) continue;
       for (const [key, result] of Object.entries(rows)) {
         if (isUnassignedResultKey(key)) continue;
-        const named = (result.candidates ?? []).filter((c) => c.votes > 0).length;
+        const named = (result.candidates ?? []).filter((c) => c.votes == null || c.votes > 0).length;
         // With no names the panel falls back to party buckets: D, R, and Other where it ran.
         const lines = named > 0 ? named : result.othVotes ? 3 : 2;
         if (lines > bestLines) {
@@ -599,6 +609,7 @@ export default function StateLegSection({
       result={results?.[selectedKey]}
       resultsYear={activeYear}
       onClose={() => setSelectedKey(null)}
+      profileHref={`/states/${stateAbbr.toLowerCase()}/legislature/${activeChamber}${districtHash(activeChamber, selectedKey)}`}
     />
   ) : null;
 
@@ -797,6 +808,8 @@ export default function StateLegSection({
           results={results}
           resultsYear={activeYear}
           resultsLoading={resultsLoading}
+          atlasHref={(key) => `/states/${stateAbbr.toLowerCase()}/legislature/${activeChamber}${districtHash(activeChamber, key)}`}
+          candidateHref={(name) => `/candidates/${candidateSlug(name)}-${stateAbbr.toLowerCase()}`}
           viewMode={viewMode}
           selectedKey={selectedKey}
           onSelect={setSelectedKey}

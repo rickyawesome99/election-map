@@ -1,0 +1,4870 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 80.7,
+      "key": "1",
+      "popPct": 84.5
+     },
+     {
+      "areaPct": 9.3,
+      "key": "5",
+      "popPct": 11.4
+     },
+     {
+      "areaPct": 9.8,
+      "key": "2",
+      "popPct": 4.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Denver",
+      "popPct": 82.6
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 11.3
+     },
+     {
+      "county": "Arapahoe",
+      "popPct": 6.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 88247,
+    "pres2020New": -37.3,
+    "pres2020Old": -35.3,
+    "retainedAreaPct": 80.7,
+    "retainedPopPct": 84.5,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-1; gained the rest from the old HD-5 (11%), the old HD-2 (4%). Spans Denver, Jefferson, Arapahoe counties. 2020 presidential margin D+35.3 on the 2016\u20132020 lines \u2192 D+37.3 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 91.2,
+      "key": "10",
+      "popPct": 80.1
+     },
+     {
+      "areaPct": 8.7,
+      "key": "13",
+      "popPct": 19.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Boulder",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 90085,
+    "pres2020New": -76.6,
+    "pres2020Old": -73.9,
+    "retainedAreaPct": 91.2,
+    "retainedPopPct": 80.1,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-10; gained the rest from the old HD-13 (20%). Entirely in Boulder County. 2020 presidential margin D+73.9 on the 2016\u20132020 lines \u2192 D+76.6 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 74.0,
+      "key": "11",
+      "popPct": 77.2
+     },
+     {
+      "areaPct": 26.0,
+      "key": "12",
+      "popPct": 22.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Boulder",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 87732,
+    "pres2020New": -38.9,
+    "pres2020Old": -38.7,
+    "retainedAreaPct": 74.0,
+    "retainedPopPct": 77.2,
+    "text": "Kept 77% of its population from the 2016\u20132020 HD-11; gained the rest from the old HD-12 (23%). Entirely in Boulder County. 2020 presidential margin D+38.7 on the 2016\u20132020 lines \u2192 D+38.9 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 50.3,
+      "key": "12",
+      "popPct": 65.9
+     },
+     {
+      "areaPct": 11.4,
+      "key": "33",
+      "popPct": 16.0
+     },
+     {
+      "areaPct": 21.1,
+      "key": "10",
+      "popPct": 11.5
+     },
+     {
+      "areaPct": 17.2,
+      "key": "11",
+      "popPct": 6.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Boulder",
+      "popPct": 97.9
+     },
+     {
+      "county": "Broomfield",
+      "popPct": 2.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 85645,
+    "pres2020New": -57.0,
+    "pres2020Old": -51.5,
+    "retainedAreaPct": 50.3,
+    "retainedPopPct": 65.9,
+    "text": "Kept 66% of its population from the 2016\u20132020 HD-12; gained the rest from the old HD-33 (16%), the old HD-10 (12%), the old HD-11 (7%). Spans Boulder, Broomfield counties. 2020 presidential margin D+51.5 on the 2016\u20132020 lines \u2192 D+57.0 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 13.2,
+      "key": "61",
+      "popPct": 42.4
+     },
+     {
+      "areaPct": 41.0,
+      "key": "60",
+      "popPct": 38.7
+     },
+     {
+      "areaPct": 45.8,
+      "key": "13",
+      "popPct": 18.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Summit",
+      "popPct": 34.0
+     },
+     {
+      "county": "Chaffee",
+      "popPct": 19.4
+     },
+     {
+      "county": "Park",
+      "popPct": 19.3
+     },
+     {
+      "county": "Grand",
+      "popPct": 17.2
+     },
+     {
+      "county": "Lake",
+      "popPct": 8.1
+     },
+     {
+      "county": "Jackson",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Summit",
+      "popPct": 34.0
+     },
+     {
+      "county": "Chaffee",
+      "popPct": 19.4
+     },
+     {
+      "county": "Park",
+      "popPct": 19.3
+     },
+     {
+      "county": "Lake",
+      "popPct": 8.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Boulder",
+      "popPct": 59.1
+     },
+     {
+      "county": "Clear Creek",
+      "popPct": 11.8
+     },
+     {
+      "county": "Gilpin",
+      "popPct": 7.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 90700,
+    "pres2020New": -10.7,
+    "pres2020Old": -45.8,
+    "retainedAreaPct": 45.8,
+    "retainedPopPct": 18.8,
+    "text": "A new footprint: only 19% of its population was in the 2016\u20132020 HD-13; it draws from the old HD-61 (42%), the old HD-60 (39%). Counties: gained Summit (34%), Chaffee (19%), Park (19%) and 1 more; lost Boulder, Clear Creek, Gilpin. 2020 presidential margin D+45.8 on the 2016\u20132020 lines \u2192 D+10.7 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 56.7,
+      "key": "14",
+      "popPct": 63.1
+     },
+     {
+      "areaPct": 39.8,
+      "key": "20",
+      "popPct": 32.3
+     },
+     {
+      "areaPct": 1.7,
+      "key": "15",
+      "popPct": 3.0
+     },
+     {
+      "areaPct": 1.7,
+      "key": "16",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "El Paso",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 89627,
+    "pres2020New": 15.7,
+    "pres2020Old": 18.1,
+    "retainedAreaPct": 56.7,
+    "retainedPopPct": 63.1,
+    "text": "Kept 63% of its population from the 2016\u20132020 HD-14; gained the rest from the old HD-20 (32%), the old HD-15 (3%), the old HD-16 (2%). Entirely in El Paso County. 2020 presidential margin R+18.1 on the 2016\u20132020 lines \u2192 R+15.7 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 64.5,
+      "key": "15",
+      "popPct": 91.7
+     },
+     {
+      "areaPct": 35.3,
+      "key": "19",
+      "popPct": 7.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "El Paso",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 86613,
+    "pres2020New": 14.7,
+    "pres2020Old": 15.0,
+    "retainedAreaPct": 64.5,
+    "retainedPopPct": 91.7,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-15; gained the rest from the old HD-19 (8%). Entirely in El Paso County. 2020 presidential margin R+15.0 on the 2016\u20132020 lines \u2192 R+14.7 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 53.7,
+      "key": "16",
+      "popPct": 48.8
+     },
+     {
+      "areaPct": 27.5,
+      "key": "18",
+      "popPct": 31.4
+     },
+     {
+      "areaPct": 7.2,
+      "key": "17",
+      "popPct": 10.9
+     },
+     {
+      "areaPct": 11.6,
+      "key": "15",
+      "popPct": 8.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "El Paso",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 88820,
+    "pres2020New": -5.8,
+    "pres2020Old": 7.5,
+    "retainedAreaPct": 53.7,
+    "retainedPopPct": 48.8,
+    "text": "A new footprint: only 49% of its population was in the 2016\u20132020 HD-16; it draws from the old HD-18 (31%), the old HD-17 (11%), the old HD-15 (9%). Entirely in El Paso County. 2020 presidential margin R+7.5 on the 2016\u20132020 lines \u2192 D+5.8 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 44.9,
+      "key": "17",
+      "popPct": 85.1
+     },
+     {
+      "areaPct": 6.9,
+      "key": "18",
+      "popPct": 5.3
+     },
+     {
+      "areaPct": 45.1,
+      "key": "15",
+      "popPct": 4.8
+     },
+     {
+      "areaPct": 2.7,
+      "key": "20",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "El Paso",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 87436,
+    "pres2020New": -16.1,
+    "pres2020Old": -14.8,
+    "retainedAreaPct": 44.9,
+    "retainedPopPct": 85.1,
+    "text": "Kept 85% of its population from the 2016\u20132020 HD-17; gained the rest from the old HD-18 (5%), the old HD-15 (5%), the old HD-20 (4%). Entirely in El Paso County. 2020 presidential margin D+14.8 on the 2016\u20132020 lines \u2192 D+16.1 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 13.4,
+      "key": "18",
+      "popPct": 56.6
+     },
+     {
+      "areaPct": 61.3,
+      "key": "20",
+      "popPct": 41.6
+     },
+     {
+      "areaPct": 25.0,
+      "key": "21",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "El Paso",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 87268,
+    "pres2020New": -9.0,
+    "pres2020Old": -22.6,
+    "retainedAreaPct": 13.4,
+    "retainedPopPct": 56.6,
+    "text": "Kept 57% of its population from the 2016\u20132020 HD-18; gained the rest from the old HD-20 (42%), the old HD-21 (2%). Entirely in El Paso County. 2020 presidential margin D+22.6 on the 2016\u20132020 lines \u2192 D+9.0 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 76.9,
+      "key": "63",
+      "popPct": 72.0
+     },
+     {
+      "areaPct": 6.0,
+      "key": "33",
+      "popPct": 14.4
+     },
+     {
+      "areaPct": 17.1,
+      "key": "12",
+      "popPct": 13.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weld",
+      "popPct": 70.5
+     },
+     {
+      "county": "Boulder",
+      "popPct": 27.6
+     },
+     {
+      "county": "Broomfield",
+      "popPct": 1.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Weld",
+      "popPct": 70.5
+     },
+     {
+      "county": "Boulder",
+      "popPct": 27.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "El Paso",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 89074,
+    "pres2020New": -6.3,
+    "pres2020Old": 40.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-19; it draws from the old HD-63 (72%), the old HD-33 (14%), the old HD-12 (14%). Counties: gained Weld (70%), Boulder (28%); lost El Paso. 2020 presidential margin R+40.0 on the 2016\u20132020 lines \u2192 D+6.3 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 61.7,
+      "key": "2",
+      "popPct": 68.0
+     },
+     {
+      "areaPct": 38.3,
+      "key": "6",
+      "popPct": 32.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Denver",
+      "popPct": 98.7
+     },
+     {
+      "county": "Arapahoe",
+      "popPct": 1.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 88058,
+    "pres2020New": -58.1,
+    "pres2020Old": -67.6,
+    "retainedAreaPct": 61.7,
+    "retainedPopPct": 68.0,
+    "text": "Kept 68% of its population from the 2016\u20132020 HD-2; gained the rest from the old HD-6 (32%). Spans Denver, Arapahoe counties. 2020 presidential margin D+67.6 on the 2016\u20132020 lines \u2192 D+58.1 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 60.4,
+      "key": "19",
+      "popPct": 84.0
+     },
+     {
+      "areaPct": 39.1,
+      "key": "20",
+      "popPct": 14.4
+     },
+     {
+      "areaPct": 0.4,
+      "key": "14",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "El Paso",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 93010,
+    "pres2020New": 35.0,
+    "pres2020Old": 6.6,
+    "retainedAreaPct": 39.1,
+    "retainedPopPct": 14.4,
+    "text": "A new footprint: only 14% of its population was in the 2016\u20132020 HD-20; it draws from the old HD-19 (84%), the old HD-14 (2%). Entirely in El Paso County. 2020 presidential margin R+6.6 on the 2016\u20132020 lines \u2192 R+35.0 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "21",
+      "popPct": 98.6
+     },
+     {
+      "areaPct": 0.2,
+      "key": "17",
+      "popPct": 0.8
+     },
+     {
+      "areaPct": 0.0,
+      "key": "20",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "El Paso",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 88855,
+    "pres2020New": 11.7,
+    "pres2020Old": 12.2,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 98.6,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-21; gained the rest from the old HD-17 (1%), the old HD-20 (0%). Entirely in El Paso County. 2020 presidential margin R+12.2 on the 2016\u20132020 lines \u2192 R+11.7 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 44.4,
+      "key": "14",
+      "popPct": 46.9
+     },
+     {
+      "areaPct": 45.9,
+      "key": "16",
+      "popPct": 44.2
+     },
+     {
+      "areaPct": 9.7,
+      "key": "15",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "El Paso",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "El Paso",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Jefferson",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 87156,
+    "pres2020New": 13.8,
+    "pres2020Old": -1.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-22; it draws from the old HD-14 (47%), the old HD-16 (44%), the old HD-15 (9%). Counties: gained El Paso (100%); lost Jefferson. 2020 presidential margin D+1.2 on the 2016\u20132020 lines \u2192 R+13.8 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 56.7,
+      "key": "23",
+      "popPct": 53.6
+     },
+     {
+      "areaPct": 40.5,
+      "key": "24",
+      "popPct": 42.1
+     },
+     {
+      "areaPct": 1.8,
+      "key": "28",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 0.9,
+      "key": "27",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 87152,
+    "pres2020New": -29.0,
+    "pres2020Old": -28.3,
+    "retainedAreaPct": 56.7,
+    "retainedPopPct": 53.6,
+    "text": "Kept 54% of its population from the 2016\u20132020 HD-23; gained the rest from the old HD-24 (42%), the old HD-28 (3%), the old HD-27 (1%). Entirely in Jefferson County. 2020 presidential margin D+28.3 on the 2016\u20132020 lines \u2192 D+29.0 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 58.1,
+      "key": "27",
+      "popPct": 67.2
+     },
+     {
+      "areaPct": 15.6,
+      "key": "29",
+      "popPct": 19.5
+     },
+     {
+      "areaPct": 20.7,
+      "key": "24",
+      "popPct": 7.6
+     },
+     {
+      "areaPct": 2.3,
+      "key": "32",
+      "popPct": 3.3
+     },
+     {
+      "areaPct": 3.4,
+      "key": "25",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 96.9
+     },
+     {
+      "county": "Adams",
+      "popPct": 3.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Adams",
+      "popPct": 3.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 88053,
+    "pres2020New": -16.6,
+    "pres2020Old": -31.9,
+    "retainedAreaPct": 20.7,
+    "retainedPopPct": 7.6,
+    "text": "A new footprint: only 8% of its population was in the 2016\u20132020 HD-24; it draws from the old HD-27 (67%), the old HD-29 (20%), the old HD-32 (3%) and 1 more. Counties: gained Adams (3%). 2020 presidential margin D+31.9 on the 2016\u20132020 lines \u2192 D+16.6 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 97.3,
+      "key": "25",
+      "popPct": 58.2
+     },
+     {
+      "areaPct": 2.7,
+      "key": "22",
+      "popPct": 41.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 90019,
+    "pres2020New": -8.0,
+    "pres2020Old": -12.0,
+    "retainedAreaPct": 97.3,
+    "retainedPopPct": 58.2,
+    "text": "Kept 58% of its population from the 2016\u20132020 HD-25; gained the rest from the old HD-22 (42%). Entirely in Jefferson County. 2020 presidential margin D+12.0 on the 2016\u20132020 lines \u2192 D+8.0 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 32.5,
+      "key": "26",
+      "popPct": 78.3
+     },
+     {
+      "areaPct": 67.5,
+      "key": "57",
+      "popPct": 21.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Eagle",
+      "popPct": 50.9
+     },
+     {
+      "county": "Routt",
+      "popPct": 27.2
+     },
+     {
+      "county": "Moffat",
+      "popPct": 14.6
+     },
+     {
+      "county": "Rio Blanco",
+      "popPct": 7.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Moffat",
+      "popPct": 14.6
+     },
+     {
+      "county": "Rio Blanco",
+      "popPct": 7.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 91157,
+    "pres2020New": -8.1,
+    "pres2020Old": -29.0,
+    "retainedAreaPct": 32.5,
+    "retainedPopPct": 78.3,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-26; gained the rest from the old HD-57 (22%). Counties: gained Moffat (15%), Rio Blanco (7%). 2020 presidential margin D+29.0 on the 2016\u20132020 lines \u2192 D+8.1 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 10.3,
+      "key": "24",
+      "popPct": 36.4
+     },
+     {
+      "areaPct": 13.3,
+      "key": "27",
+      "popPct": 36.1
+     },
+     {
+      "areaPct": 1.6,
+      "key": "29",
+      "popPct": 18.2
+     },
+     {
+      "areaPct": 74.7,
+      "key": "25",
+      "popPct": 8.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 90639,
+    "pres2020New": -20.2,
+    "pres2020Old": -13.3,
+    "retainedAreaPct": 13.3,
+    "retainedPopPct": 36.1,
+    "text": "A new footprint: only 36% of its population was in the 2016\u20132020 HD-27; it draws from the old HD-24 (36%), the old HD-29 (18%), the old HD-25 (9%). Entirely in Jefferson County. 2020 presidential margin D+13.3 on the 2016\u20132020 lines \u2192 D+20.2 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 48.4,
+      "key": "28",
+      "popPct": 38.5
+     },
+     {
+      "areaPct": 26.4,
+      "key": "22",
+      "popPct": 34.4
+     },
+     {
+      "areaPct": 19.5,
+      "key": "25",
+      "popPct": 22.0
+     },
+     {
+      "areaPct": 5.6,
+      "key": "23",
+      "popPct": 5.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 99.2
+     },
+     {
+      "county": "Denver",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 85062,
+    "pres2020New": -10.3,
+    "pres2020Old": -25.5,
+    "retainedAreaPct": 48.4,
+    "retainedPopPct": 38.5,
+    "text": "A new footprint: only 38% of its population was in the 2016\u20132020 HD-28; it draws from the old HD-22 (34%), the old HD-25 (22%), the old HD-23 (5%). Spans Jefferson, Denver counties. 2020 presidential margin D+25.5 on the 2016\u20132020 lines \u2192 D+10.3 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 41.6,
+      "key": "35",
+      "popPct": 52.3
+     },
+     {
+      "areaPct": 58.2,
+      "key": "29",
+      "popPct": 47.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Adams",
+      "popPct": 50.8
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 45.7
+     },
+     {
+      "county": "Broomfield",
+      "popPct": 3.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Adams",
+      "popPct": 50.8
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 88675,
+    "pres2020New": -21.2,
+    "pres2020Old": -21.2,
+    "retainedAreaPct": 58.2,
+    "retainedPopPct": 47.6,
+    "text": "A new footprint: only 48% of its population was in the 2016\u20132020 HD-29; it draws from the old HD-35 (52%). Counties: gained Adams (51%). 2020 presidential margin D+21.2 on the 2016\u20132020 lines \u2192 D+21.2 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 72.6,
+      "key": "3",
+      "popPct": 55.6
+     },
+     {
+      "areaPct": 26.8,
+      "key": "9",
+      "popPct": 44.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Arapahoe",
+      "popPct": 64.6
+     },
+     {
+      "county": "Denver",
+      "popPct": 35.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 85251,
+    "pres2020New": -37.1,
+    "pres2020Old": -28.7,
+    "retainedAreaPct": 72.6,
+    "retainedPopPct": 55.6,
+    "text": "Kept 56% of its population from the 2016\u20132020 HD-3; gained the rest from the old HD-9 (44%). Spans Arapahoe, Denver counties. 2020 presidential margin D+28.7 on the 2016\u20132020 lines \u2192 D+37.1 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 52.6,
+      "key": "28",
+      "popPct": 56.2
+     },
+     {
+      "areaPct": 43.4,
+      "key": "23",
+      "popPct": 37.9
+     },
+     {
+      "areaPct": 4.0,
+      "key": "24",
+      "popPct": 5.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 92.9
+     },
+     {
+      "county": "Denver",
+      "popPct": 7.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jefferson",
+      "popPct": 92.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Adams",
+      "popPct": 92.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 86916,
+    "pres2020New": -32.6,
+    "pres2020Old": -19.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-30; it draws from the old HD-28 (56%), the old HD-23 (38%), the old HD-24 (6%). Counties: gained Jefferson (93%); lost Adams. 2020 presidential margin D+19.3 on the 2016\u20132020 lines \u2192 D+32.6 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 49.4,
+      "key": "31",
+      "popPct": 59.8
+     },
+     {
+      "areaPct": 11.7,
+      "key": "34",
+      "popPct": 21.7
+     },
+     {
+      "areaPct": 38.9,
+      "key": "30",
+      "popPct": 18.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Adams",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 86665,
+    "pres2020New": -20.8,
+    "pres2020Old": -16.3,
+    "retainedAreaPct": 49.4,
+    "retainedPopPct": 59.8,
+    "text": "Kept 60% of its population from the 2016\u20132020 HD-31; gained the rest from the old HD-34 (22%), the old HD-30 (18%). Entirely in Adams County. 2020 presidential margin D+16.3 on the 2016\u20132020 lines \u2192 D+20.8 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 72.1,
+      "key": "32",
+      "popPct": 64.1
+     },
+     {
+      "areaPct": 26.6,
+      "key": "30",
+      "popPct": 29.7
+     },
+     {
+      "areaPct": 1.2,
+      "key": "31",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Adams",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 90706,
+    "pres2020New": -21.1,
+    "pres2020Old": -33.9,
+    "retainedAreaPct": 72.1,
+    "retainedPopPct": 64.1,
+    "text": "Kept 64% of its population from the 2016\u20132020 HD-32; gained the rest from the old HD-30 (30%), the old HD-31 (6%). Entirely in Adams County. 2020 presidential margin D+33.9 on the 2016\u20132020 lines \u2192 D+21.1 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 66.5,
+      "key": "33",
+      "popPct": 83.7
+     },
+     {
+      "areaPct": 29.0,
+      "key": "56",
+      "popPct": 12.1
+     },
+     {
+      "areaPct": 3.4,
+      "key": "34",
+      "popPct": 2.2
+     },
+     {
+      "areaPct": 1.0,
+      "key": "31",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Broomfield",
+      "popPct": 78.6
+     },
+     {
+      "county": "Adams",
+      "popPct": 16.4
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 3.0
+     },
+     {
+      "county": "Boulder",
+      "popPct": 1.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 87946,
+    "pres2020New": -22.4,
+    "pres2020Old": -31.9,
+    "retainedAreaPct": 66.5,
+    "retainedPopPct": 83.7,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-33; gained the rest from the old HD-56 (12%), the old HD-34 (2%), the old HD-31 (2%). Spans Broomfield, Adams, Jefferson, Boulder counties. 2020 presidential margin D+31.9 on the 2016\u20132020 lines \u2192 D+22.4 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 56.9,
+      "key": "34",
+      "popPct": 61.3
+     },
+     {
+      "areaPct": 27.7,
+      "key": "31",
+      "popPct": 29.9
+     },
+     {
+      "areaPct": 12.8,
+      "key": "30",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Adams",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 85655,
+    "pres2020New": -12.1,
+    "pres2020Old": -18.4,
+    "retainedAreaPct": 56.9,
+    "retainedPopPct": 61.3,
+    "text": "Kept 61% of its population from the 2016\u20132020 HD-34; gained the rest from the old HD-31 (30%), the old HD-30 (8%). Entirely in Adams County. 2020 presidential margin D+18.4 on the 2016\u20132020 lines \u2192 D+12.1 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 40.5,
+      "key": "35",
+      "popPct": 47.6
+     },
+     {
+      "areaPct": 44.4,
+      "key": "32",
+      "popPct": 31.5
+     },
+     {
+      "areaPct": 11.3,
+      "key": "34",
+      "popPct": 16.8
+     },
+     {
+      "areaPct": 3.8,
+      "key": "29",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Adams",
+      "popPct": 95.3
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 4.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 86235,
+    "pres2020New": -33.9,
+    "pres2020Old": -25.1,
+    "retainedAreaPct": 40.5,
+    "retainedPopPct": 47.6,
+    "text": "A new footprint: only 48% of its population was in the 2016\u20132020 HD-35; it draws from the old HD-32 (32%), the old HD-34 (17%), the old HD-29 (4%). Spans Adams, Jefferson counties. 2020 presidential margin D+25.1 on the 2016\u20132020 lines \u2192 D+33.9 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 59.6,
+      "key": "30",
+      "popPct": 54.9
+     },
+     {
+      "areaPct": 38.6,
+      "key": "36",
+      "popPct": 41.4
+     },
+     {
+      "areaPct": 0.3,
+      "key": "40",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Adams",
+      "popPct": 46.7
+     },
+     {
+      "county": "Arapahoe",
+      "popPct": 44.6
+     },
+     {
+      "county": "Denver",
+      "popPct": 8.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Denver",
+      "popPct": 8.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 87711,
+    "pres2020New": -33.3,
+    "pres2020Old": -25.2,
+    "retainedAreaPct": 38.6,
+    "retainedPopPct": 41.4,
+    "text": "A new footprint: only 41% of its population was in the 2016\u20132020 HD-36; it draws from the old HD-30 (55%), the old HD-40 (4%). Counties: gained Denver (9%). 2020 presidential margin D+25.2 on the 2016\u20132020 lines \u2192 D+33.3 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 56.4,
+      "key": "37",
+      "popPct": 49.4
+     },
+     {
+      "areaPct": 30.0,
+      "key": "3",
+      "popPct": 31.2
+     },
+     {
+      "areaPct": 10.2,
+      "key": "38",
+      "popPct": 17.9
+     },
+     {
+      "areaPct": 3.3,
+      "key": "40",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Arapahoe",
+      "popPct": 98.5
+     },
+     {
+      "county": "Denver",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 87460,
+    "pres2020New": -20.5,
+    "pres2020Old": -18.1,
+    "retainedAreaPct": 56.4,
+    "retainedPopPct": 49.4,
+    "text": "A new footprint: only 49% of its population was in the 2016\u20132020 HD-37; it draws from the old HD-3 (31%), the old HD-38 (18%), the old HD-40 (1%). Spans Arapahoe, Denver counties. 2020 presidential margin D+18.1 on the 2016\u20132020 lines \u2192 D+20.5 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 81.5,
+      "key": "38",
+      "popPct": 76.5
+     },
+     {
+      "areaPct": 12.2,
+      "key": "22",
+      "popPct": 13.4
+     },
+     {
+      "areaPct": 5.6,
+      "key": "3",
+      "popPct": 9.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Arapahoe",
+      "popPct": 85.1
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 14.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 89169,
+    "pres2020New": -13.6,
+    "pres2020Old": -15.2,
+    "retainedAreaPct": 81.5,
+    "retainedPopPct": 76.5,
+    "text": "Kept 76% of its population from the 2016\u20132020 HD-38; gained the rest from the old HD-22 (13%), the old HD-3 (10%). Spans Arapahoe, Jefferson counties. 2020 presidential margin D+15.2 on the 2016\u20132020 lines \u2192 D+13.6 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 93.4,
+      "key": "39",
+      "popPct": 51.4
+     },
+     {
+      "areaPct": 2.3,
+      "key": "44",
+      "popPct": 27.8
+     },
+     {
+      "areaPct": 4.2,
+      "key": "45",
+      "popPct": 20.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Teller",
+      "popPct": 27.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 88842,
+    "pres2020New": 10.6,
+    "pres2020Old": 19.8,
+    "retainedAreaPct": 93.4,
+    "retainedPopPct": 51.4,
+    "text": "Kept 51% of its population from the 2016\u20132020 HD-39; gained the rest from the old HD-44 (28%), the old HD-45 (21%). Counties: lost Teller. 2020 presidential margin R+19.8 on the 2016\u20132020 lines \u2192 R+10.6 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 92.2,
+      "key": "4",
+      "popPct": 89.3
+     },
+     {
+      "areaPct": 4.9,
+      "key": "5",
+      "popPct": 6.5
+     },
+     {
+      "areaPct": 2.9,
+      "key": "1",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Denver",
+      "popPct": 97.4
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 2.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 86710,
+    "pres2020New": -65.4,
+    "pres2020Old": -65.7,
+    "retainedAreaPct": 92.2,
+    "retainedPopPct": 89.3,
+    "text": "Kept 89% of its population from the 2016\u20132020 HD-4; gained the rest from the old HD-5 (6%), the old HD-1 (4%). Spans Denver, Jefferson counties. 2020 presidential margin D+65.7 on the 2016\u20132020 lines \u2192 D+65.4 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 86.1,
+      "key": "40",
+      "popPct": 83.0
+     },
+     {
+      "areaPct": 13.6,
+      "key": "36",
+      "popPct": 16.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Arapahoe",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 91063,
+    "pres2020New": -25.0,
+    "pres2020Old": -26.3,
+    "retainedAreaPct": 86.1,
+    "retainedPopPct": 83.0,
+    "text": "Kept 83% of its population from the 2016\u20132020 HD-40; gained the rest from the old HD-36 (17%). Entirely in Arapahoe County. 2020 presidential margin D+26.3 on the 2016\u20132020 lines \u2192 D+25.0 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 74.9,
+      "key": "41",
+      "popPct": 69.2
+     },
+     {
+      "areaPct": 14.8,
+      "key": "36",
+      "popPct": 16.8
+     },
+     {
+      "areaPct": 6.5,
+      "key": "42",
+      "popPct": 8.6
+     },
+     {
+      "areaPct": 3.8,
+      "key": "40",
+      "popPct": 5.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Arapahoe",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Denver",
+      "popPct": 5.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 88962,
+    "pres2020New": -36.0,
+    "pres2020Old": -39.2,
+    "retainedAreaPct": 74.9,
+    "retainedPopPct": 69.2,
+    "text": "Kept 69% of its population from the 2016\u20132020 HD-41; gained the rest from the old HD-36 (17%), the old HD-42 (9%), the old HD-40 (5%). Counties: lost Denver. 2020 presidential margin D+39.2 on the 2016\u20132020 lines \u2192 D+36.0 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 80.6,
+      "key": "42",
+      "popPct": 83.0
+     },
+     {
+      "areaPct": 19.3,
+      "key": "36",
+      "popPct": 17.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Arapahoe",
+      "popPct": 96.1
+     },
+     {
+      "county": "Adams",
+      "popPct": 2.8
+     },
+     {
+      "county": "Denver",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 90401,
+    "pres2020New": -48.5,
+    "pres2020Old": -48.8,
+    "retainedAreaPct": 80.6,
+    "retainedPopPct": 83.0,
+    "text": "Kept 83% of its population from the 2016\u20132020 HD-42; gained the rest from the old HD-36 (17%). Spans Arapahoe, Adams, Denver counties. 2020 presidential margin D+48.8 on the 2016\u20132020 lines \u2192 D+48.5 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 92.4,
+      "key": "43",
+      "popPct": 90.9
+     },
+     {
+      "areaPct": 7.5,
+      "key": "39",
+      "popPct": 9.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 88020,
+    "pres2020New": -6.2,
+    "pres2020Old": -6.3,
+    "retainedAreaPct": 92.4,
+    "retainedPopPct": 90.9,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-43; gained the rest from the old HD-39 (9%). Entirely in Douglas County. 2020 presidential margin D+6.3 on the 2016\u20132020 lines \u2192 D+6.2 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 45.7,
+      "key": "44",
+      "popPct": 88.3
+     },
+     {
+      "areaPct": 47.8,
+      "key": "39",
+      "popPct": 7.5
+     },
+     {
+      "areaPct": 6.0,
+      "key": "45",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 90150,
+    "pres2020New": 7.8,
+    "pres2020Old": 3.8,
+    "retainedAreaPct": 45.7,
+    "retainedPopPct": 88.3,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-44; gained the rest from the old HD-39 (8%), the old HD-45 (4%). Entirely in Douglas County. 2020 presidential margin R+3.8 on the 2016\u20132020 lines \u2192 R+7.8 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 82.6,
+      "key": "45",
+      "popPct": 98.7
+     },
+     {
+      "areaPct": 17.4,
+      "key": "39",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 88258,
+    "pres2020New": 17.1,
+    "pres2020Old": 16.1,
+    "retainedAreaPct": 82.6,
+    "retainedPopPct": 98.7,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-45; gained the rest from the old HD-39 (1%). Entirely in Douglas County. 2020 presidential margin R+16.1 on the 2016\u20132020 lines \u2192 R+17.1 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 18.8,
+      "key": "47",
+      "popPct": 46.5
+     },
+     {
+      "areaPct": 79.1,
+      "key": "46",
+      "popPct": 43.3
+     },
+     {
+      "areaPct": 2.1,
+      "key": "62",
+      "popPct": 10.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pueblo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 92866,
+    "pres2020New": -4.3,
+    "pres2020Old": -2.5,
+    "retainedAreaPct": 79.1,
+    "retainedPopPct": 43.3,
+    "text": "A new footprint: only 43% of its population was in the 2016\u20132020 HD-46; it draws from the old HD-47 (46%), the old HD-62 (10%). Entirely in Pueblo County. 2020 presidential margin D+2.5 on the 2016\u20132020 lines \u2192 D+4.3 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 78.1,
+      "key": "64",
+      "popPct": 48.7
+     },
+     {
+      "areaPct": 15.9,
+      "key": "47",
+      "popPct": 36.5
+     },
+     {
+      "areaPct": 0.0,
+      "key": "46",
+      "popPct": 7.8
+     },
+     {
+      "areaPct": 6.0,
+      "key": "62",
+      "popPct": 7.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pueblo",
+      "popPct": 23.2
+     },
+     {
+      "county": "Otero",
+      "popPct": 21.1
+     },
+     {
+      "county": "Las Animas",
+      "popPct": 16.5
+     },
+     {
+      "county": "Prowers",
+      "popPct": 13.6
+     },
+     {
+      "county": "Huerfano",
+      "popPct": 7.0
+     },
+     {
+      "county": "Crowley",
+      "popPct": 6.7
+     },
+     {
+      "county": "Bent",
+      "popPct": 6.4
+     },
+     {
+      "county": "Baca",
+      "popPct": 4.0
+     },
+     {
+      "county": "Kiowa",
+      "popPct": 1.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Las Animas",
+      "popPct": 16.5
+     },
+     {
+      "county": "Prowers",
+      "popPct": 13.6
+     },
+     {
+      "county": "Huerfano",
+      "popPct": 7.0
+     },
+     {
+      "county": "Crowley",
+      "popPct": 6.7
+     },
+     {
+      "county": "Bent",
+      "popPct": 6.4
+     },
+     {
+      "county": "Baca",
+      "popPct": 4.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Fremont",
+      "popPct": 7.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 88444,
+    "pres2020New": 27.2,
+    "pres2020Old": 13.2,
+    "retainedAreaPct": 15.9,
+    "retainedPopPct": 36.5,
+    "text": "A new footprint: only 36% of its population was in the 2016\u20132020 HD-47; it draws from the old HD-64 (49%), the old HD-46 (8%), the old HD-62 (7%). Counties: gained Las Animas (16%), Prowers (14%), Huerfano (7%) and 3 more; lost Fremont. 2020 presidential margin R+13.2 on the 2016\u20132020 lines \u2192 R+27.2 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 7.6,
+      "key": "56",
+      "popPct": 51.9
+     },
+     {
+      "areaPct": 58.6,
+      "key": "63",
+      "popPct": 31.3
+     },
+     {
+      "areaPct": 29.4,
+      "key": "48",
+      "popPct": 12.9
+     },
+     {
+      "areaPct": 3.9,
+      "key": "30",
+      "popPct": 2.2
+     },
+     {
+      "areaPct": 0.5,
+      "key": "50",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Adams",
+      "popPct": 54.2
+     },
+     {
+      "county": "Weld",
+      "popPct": 45.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Adams",
+      "popPct": 54.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 91221,
+    "pres2020New": 18.0,
+    "pres2020Old": 26.9,
+    "retainedAreaPct": 29.4,
+    "retainedPopPct": 12.9,
+    "text": "A new footprint: only 13% of its population was in the 2016\u20132020 HD-48; it draws from the old HD-56 (52%), the old HD-63 (31%), the old HD-30 (2%) and 1 more. Counties: gained Adams (54%). 2020 presidential margin R+26.9 on the 2016\u20132020 lines \u2192 R+18.0 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 27.1,
+      "key": "13",
+      "popPct": 49.4
+     },
+     {
+      "areaPct": 66.9,
+      "key": "49",
+      "popPct": 33.0
+     },
+     {
+      "areaPct": 5.4,
+      "key": "11",
+      "popPct": 11.4
+     },
+     {
+      "areaPct": 0.1,
+      "key": "10",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 0.5,
+      "key": "51",
+      "popPct": 1.8
+     },
+     {
+      "areaPct": 0.1,
+      "key": "33",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Boulder",
+      "popPct": 48.0
+     },
+     {
+      "county": "Larimer",
+      "popPct": 34.7
+     },
+     {
+      "county": "Clear Creek",
+      "popPct": 10.4
+     },
+     {
+      "county": "Gilpin",
+      "popPct": 6.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Boulder",
+      "popPct": 48.0
+     },
+     {
+      "county": "Clear Creek",
+      "popPct": 10.4
+     },
+     {
+      "county": "Gilpin",
+      "popPct": 6.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Weld",
+      "popPct": 24.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 88890,
+    "pres2020New": -33.3,
+    "pres2020Old": 11.4,
+    "retainedAreaPct": 66.9,
+    "retainedPopPct": 33.0,
+    "text": "A new footprint: only 33% of its population was in the 2016\u20132020 HD-49; it draws from the old HD-13 (49%), the old HD-11 (11%), the old HD-10 (4%) and 2 more. Counties: gained Boulder (48%), Clear Creek (10%), Gilpin (7%); lost Weld. 2020 presidential margin R+11.4 on the 2016\u20132020 lines \u2192 D+33.3 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 90.6,
+      "key": "5",
+      "popPct": 90.5
+     },
+     {
+      "areaPct": 6.7,
+      "key": "2",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 2.7,
+      "key": "4",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Denver",
+      "popPct": 95.0
+     },
+     {
+      "county": "Adams",
+      "popPct": 5.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 85978,
+    "pres2020New": -65.9,
+    "pres2020Old": -63.4,
+    "retainedAreaPct": 90.6,
+    "retainedPopPct": 90.5,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-5; gained the rest from the old HD-2 (6%), the old HD-4 (3%). Spans Denver, Adams counties. 2020 presidential margin D+63.4 on the 2016\u20132020 lines \u2192 D+65.9 on the current lines.",
+    "toEra": "current"
+   },
+   "50": {
+    "contributors": [
+     {
+      "areaPct": 89.4,
+      "key": "50",
+      "popPct": 92.7
+     },
+     {
+      "areaPct": 10.6,
+      "key": "48",
+      "popPct": 7.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weld",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 83601,
+    "pres2020New": -5.3,
+    "pres2020Old": -4.4,
+    "retainedAreaPct": 89.4,
+    "retainedPopPct": 92.7,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-50; gained the rest from the old HD-48 (7%). Entirely in Weld County. 2020 presidential margin D+4.4 on the 2016\u20132020 lines \u2192 D+5.3 on the current lines.",
+    "toEra": "current"
+   },
+   "51": {
+    "contributors": [
+     {
+      "areaPct": 91.0,
+      "key": "51",
+      "popPct": 99.3
+     },
+     {
+      "areaPct": 9.0,
+      "key": "49",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Larimer",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 87632,
+    "pres2020New": 4.0,
+    "pres2020Old": 4.2,
+    "retainedAreaPct": 91.0,
+    "retainedPopPct": 99.3,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-51; gained the rest from the old HD-49 (1%). Entirely in Larimer County. 2020 presidential margin R+4.2 on the 2016\u20132020 lines \u2192 R+4.0 on the current lines.",
+    "toEra": "current"
+   },
+   "52": {
+    "contributors": [
+     {
+      "areaPct": 61.7,
+      "key": "52",
+      "popPct": 71.1
+     },
+     {
+      "areaPct": 27.5,
+      "key": "53",
+      "popPct": 28.1
+     },
+     {
+      "areaPct": 10.5,
+      "key": "49",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Larimer",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 89752,
+    "pres2020New": -29.6,
+    "pres2020Old": -35.4,
+    "retainedAreaPct": 61.7,
+    "retainedPopPct": 71.1,
+    "text": "Kept 71% of its population from the 2016\u20132020 HD-52; gained the rest from the old HD-53 (28%), the old HD-49 (1%). Entirely in Larimer County. 2020 presidential margin D+35.4 on the 2016\u20132020 lines \u2192 D+29.6 on the current lines.",
+    "toEra": "current"
+   },
+   "53": {
+    "contributors": [
+     {
+      "areaPct": 41.7,
+      "key": "53",
+      "popPct": 65.5
+     },
+     {
+      "areaPct": 49.5,
+      "key": "52",
+      "popPct": 34.0
+     },
+     {
+      "areaPct": 8.8,
+      "key": "49",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Larimer",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 91081,
+    "pres2020New": -48.1,
+    "pres2020Old": -42.1,
+    "retainedAreaPct": 41.7,
+    "retainedPopPct": 65.5,
+    "text": "Kept 66% of its population from the 2016\u20132020 HD-53; gained the rest from the old HD-52 (34%), the old HD-49 (0%). Entirely in Larimer County. 2020 presidential margin D+42.1 on the 2016\u20132020 lines \u2192 D+48.1 on the current lines.",
+    "toEra": "current"
+   },
+   "54": {
+    "contributors": [
+     {
+      "areaPct": 92.8,
+      "key": "54",
+      "popPct": 79.7
+     },
+     {
+      "areaPct": 7.1,
+      "key": "61",
+      "popPct": 10.8
+     },
+     {
+      "areaPct": 0.1,
+      "key": "55",
+      "popPct": 9.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mesa",
+      "popPct": 76.0
+     },
+     {
+      "county": "Delta",
+      "popPct": 24.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 93047,
+    "pres2020New": 42.0,
+    "pres2020Old": 40.9,
+    "retainedAreaPct": 92.8,
+    "retainedPopPct": 79.7,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-54; gained the rest from the old HD-61 (11%), the old HD-55 (10%). Spans Mesa, Delta counties. 2020 presidential margin R+40.9 on the 2016\u20132020 lines \u2192 R+42.0 on the current lines.",
+    "toEra": "current"
+   },
+   "55": {
+    "contributors": [
+     {
+      "areaPct": 75.8,
+      "key": "55",
+      "popPct": 89.6
+     },
+     {
+      "areaPct": 24.2,
+      "key": "54",
+      "popPct": 10.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mesa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 84978,
+    "pres2020New": 17.8,
+    "pres2020Old": 18.1,
+    "retainedAreaPct": 75.8,
+    "retainedPopPct": 89.6,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-55; gained the rest from the old HD-54 (10%). Entirely in Mesa County. 2020 presidential margin R+18.1 on the 2016\u20132020 lines \u2192 R+17.8 on the current lines.",
+    "toEra": "current"
+   },
+   "56": {
+    "contributors": [
+     {
+      "areaPct": 40.1,
+      "key": "64",
+      "popPct": 34.5
+     },
+     {
+      "areaPct": 11.9,
+      "key": "56",
+      "popPct": 26.8
+     },
+     {
+      "areaPct": 11.0,
+      "key": "19",
+      "popPct": 22.9
+     },
+     {
+      "areaPct": 35.7,
+      "key": "65",
+      "popPct": 9.6
+     },
+     {
+      "areaPct": 0.0,
+      "key": "36",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 1.2,
+      "key": "30",
+      "popPct": 2.7
+     },
+     {
+      "areaPct": 0.0,
+      "key": "21",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Elbert",
+      "popPct": 28.4
+     },
+     {
+      "county": "El Paso",
+      "popPct": 23.5
+     },
+     {
+      "county": "Arapahoe",
+      "popPct": 18.0
+     },
+     {
+      "county": "Adams",
+      "popPct": 14.3
+     },
+     {
+      "county": "Kit Carson",
+      "popPct": 7.7
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 6.2
+     },
+     {
+      "county": "Cheyenne",
+      "popPct": 1.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Elbert",
+      "popPct": 28.4
+     },
+     {
+      "county": "El Paso",
+      "popPct": 23.5
+     },
+     {
+      "county": "Kit Carson",
+      "popPct": 7.7
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 6.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 91869,
+    "pres2020New": 48.5,
+    "pres2020Old": 10.9,
+    "retainedAreaPct": 11.9,
+    "retainedPopPct": 26.8,
+    "text": "A new footprint: only 27% of its population was in the 2016\u20132020 HD-56; it draws from the old HD-64 (34%), the old HD-19 (23%), the old HD-65 (10%) and 3 more. Counties: gained Elbert (28%), El Paso (24%), Kit Carson (8%) and 1 more. 2020 presidential margin R+10.9 on the 2016\u20132020 lines \u2192 R+48.5 on the current lines.",
+    "toEra": "current"
+   },
+   "57": {
+    "contributors": [
+     {
+      "areaPct": 71.2,
+      "key": "57",
+      "popPct": 69.9
+     },
+     {
+      "areaPct": 23.4,
+      "key": "61",
+      "popPct": 19.7
+     },
+     {
+      "areaPct": 5.4,
+      "key": "26",
+      "popPct": 10.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Garfield",
+      "popPct": 70.0
+     },
+     {
+      "county": "Pitkin",
+      "popPct": 19.6
+     },
+     {
+      "county": "Eagle",
+      "popPct": 10.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pitkin",
+      "popPct": 19.6
+     },
+     {
+      "county": "Eagle",
+      "popPct": 10.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Moffat",
+      "popPct": 16.3
+     },
+     {
+      "county": "Rio Blanco",
+      "popPct": 8.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 88267,
+    "pres2020New": -19.0,
+    "pres2020Old": 15.0,
+    "retainedAreaPct": 71.2,
+    "retainedPopPct": 69.9,
+    "text": "Kept 70% of its population from the 2016\u20132020 HD-57; gained the rest from the old HD-61 (20%), the old HD-26 (10%). Counties: gained Pitkin (20%), Eagle (10%); lost Moffat, Rio Blanco. 2020 presidential margin R+15.0 on the 2016\u20132020 lines \u2192 D+19.0 on the current lines.",
+    "toEra": "current"
+   },
+   "58": {
+    "contributors": [
+     {
+      "areaPct": 48.2,
+      "key": "58",
+      "popPct": 65.0
+     },
+     {
+      "areaPct": 25.1,
+      "key": "61",
+      "popPct": 19.0
+     },
+     {
+      "areaPct": 26.7,
+      "key": "59",
+      "popPct": 16.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montrose",
+      "popPct": 47.5
+     },
+     {
+      "county": "Gunnison",
+      "popPct": 18.8
+     },
+     {
+      "county": "Delta",
+      "popPct": 9.8
+     },
+     {
+      "county": "San Miguel",
+      "popPct": 9.0
+     },
+     {
+      "county": "Montezuma",
+      "popPct": 5.8
+     },
+     {
+      "county": "Ouray",
+      "popPct": 5.4
+     },
+     {
+      "county": "Dolores",
+      "popPct": 2.6
+     },
+     {
+      "county": "Hinsdale",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Gunnison",
+      "popPct": 18.8
+     },
+     {
+      "county": "Delta",
+      "popPct": 9.8
+     },
+     {
+      "county": "Ouray",
+      "popPct": 5.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 89756,
+    "pres2020New": 9.5,
+    "pres2020Old": 22.4,
+    "retainedAreaPct": 48.2,
+    "retainedPopPct": 65.0,
+    "text": "Kept 65% of its population from the 2016\u20132020 HD-58; gained the rest from the old HD-61 (19%), the old HD-59 (16%). Counties: gained Gunnison (19%), Delta (10%), Ouray (5%). 2020 presidential margin R+22.4 on the 2016\u20132020 lines \u2192 R+9.5 on the current lines.",
+    "toEra": "current"
+   },
+   "59": {
+    "contributors": [
+     {
+      "areaPct": 69.3,
+      "key": "59",
+      "popPct": 77.2
+     },
+     {
+      "areaPct": 30.7,
+      "key": "58",
+      "popPct": 22.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "La Plata",
+      "popPct": 61.6
+     },
+     {
+      "county": "Montezuma",
+      "popPct": 22.8
+     },
+     {
+      "county": "Archuleta",
+      "popPct": 14.8
+     },
+     {
+      "county": "San Juan",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Montezuma",
+      "popPct": 22.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Gunnison",
+      "popPct": 10.4
+     },
+     {
+      "county": "Ouray",
+      "popPct": 5.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 90326,
+    "pres2020New": -5.5,
+    "pres2020Old": -11.8,
+    "retainedAreaPct": 69.3,
+    "retainedPopPct": 77.2,
+    "text": "Kept 77% of its population from the 2016\u20132020 HD-59; gained the rest from the old HD-58 (23%). Counties: gained Montezuma (23%); lost Gunnison, Ouray. 2020 presidential margin D+11.8 on the 2016\u20132020 lines \u2192 D+5.5 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 69.8,
+      "key": "6",
+      "popPct": 46.2
+     },
+     {
+      "areaPct": 19.8,
+      "key": "8",
+      "popPct": 27.2
+     },
+     {
+      "areaPct": 8.6,
+      "key": "2",
+      "popPct": 24.1
+     },
+     {
+      "areaPct": 1.6,
+      "key": "5",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Denver",
+      "popPct": 97.4
+     },
+     {
+      "county": "Arapahoe",
+      "popPct": 2.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 86901,
+    "pres2020New": -71.1,
+    "pres2020Old": -55.0,
+    "retainedAreaPct": 69.8,
+    "retainedPopPct": 46.2,
+    "text": "A new footprint: only 46% of its population was in the 2016\u20132020 HD-6; it draws from the old HD-8 (27%), the old HD-2 (24%), the old HD-5 (2%). Spans Denver, Arapahoe counties. 2020 presidential margin D+55.0 on the 2016\u20132020 lines \u2192 D+71.1 on the current lines.",
+    "toEra": "current"
+   },
+   "60": {
+    "contributors": [
+     {
+      "areaPct": 66.1,
+      "key": "60",
+      "popPct": 53.1
+     },
+     {
+      "areaPct": 17.9,
+      "key": "39",
+      "popPct": 26.5
+     },
+     {
+      "areaPct": 0.5,
+      "key": "46",
+      "popPct": 12.1
+     },
+     {
+      "areaPct": 15.5,
+      "key": "47",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fremont",
+      "popPct": 52.4
+     },
+     {
+      "county": "Teller",
+      "popPct": 26.0
+     },
+     {
+      "county": "Pueblo",
+      "popPct": 14.1
+     },
+     {
+      "county": "Custer",
+      "popPct": 5.1
+     },
+     {
+      "county": "Chaffee",
+      "popPct": 1.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Teller",
+      "popPct": 26.0
+     },
+     {
+      "county": "Pueblo",
+      "popPct": 14.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Park",
+      "popPct": 20.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 93190,
+    "pres2020New": 36.0,
+    "pres2020Old": 20.9,
+    "retainedAreaPct": 66.1,
+    "retainedPopPct": 53.1,
+    "text": "Kept 53% of its population from the 2016\u20132020 HD-60; gained the rest from the old HD-39 (26%), the old HD-46 (12%), the old HD-47 (8%). Counties: gained Teller (26%), Pueblo (14%); lost Park. 2020 presidential margin R+20.9 on the 2016\u20132020 lines \u2192 R+36.0 on the current lines.",
+    "toEra": "current"
+   },
+   "61": {
+    "contributors": [
+     {
+      "areaPct": 28.4,
+      "key": "37",
+      "popPct": 46.2
+     },
+     {
+      "areaPct": 39.7,
+      "key": "56",
+      "popPct": 35.2
+     },
+     {
+      "areaPct": 16.0,
+      "key": "36",
+      "popPct": 14.9
+     },
+     {
+      "areaPct": 14.9,
+      "key": "39",
+      "popPct": 3.1
+     },
+     {
+      "areaPct": 1.0,
+      "key": "40",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Arapahoe",
+      "popPct": 96.7
+     },
+     {
+      "county": "Douglas",
+      "popPct": 3.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Arapahoe",
+      "popPct": 96.7
+     },
+     {
+      "county": "Douglas",
+      "popPct": 3.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Summit",
+      "popPct": 37.2
+     },
+     {
+      "county": "Delta",
+      "popPct": 22.8
+     },
+     {
+      "county": "Pitkin",
+      "popPct": 20.9
+     },
+     {
+      "county": "Gunnison",
+      "popPct": 9.9
+     },
+     {
+      "county": "Lake",
+      "popPct": 8.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 89196,
+    "pres2020New": -10.5,
+    "pres2020Old": -24.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-61; it draws from the old HD-37 (46%), the old HD-56 (35%), the old HD-36 (15%) and 2 more. Counties: gained Arapahoe (97%), Douglas (3%); lost Summit, Delta, Pitkin, Gunnison and 1 more. 2020 presidential margin D+24.1 on the 2016\u20132020 lines \u2192 D+10.5 on the current lines.",
+    "toEra": "current"
+   },
+   "62": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "62",
+      "popPct": 71.8
+     },
+     {
+      "areaPct": 0.1,
+      "key": "46",
+      "popPct": 28.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pueblo",
+      "popPct": 47.1
+     },
+     {
+      "county": "Alamosa",
+      "popPct": 18.5
+     },
+     {
+      "county": "Rio Grande",
+      "popPct": 13.1
+     },
+     {
+      "county": "Conejos",
+      "popPct": 8.5
+     },
+     {
+      "county": "Saguache",
+      "popPct": 7.2
+     },
+     {
+      "county": "Costilla",
+      "popPct": 3.9
+     },
+     {
+      "county": "Mineral",
+      "popPct": 1.0
+     },
+     {
+      "county": "Huerfano",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 88435,
+    "pres2020New": -10.9,
+    "pres2020Old": -3.2,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 71.8,
+    "text": "Kept 72% of its population from the 2016\u20132020 HD-62; gained the rest from the old HD-46 (28%). Spans Pueblo, Alamosa, Rio Grande, Conejos and 4 more counties. 2020 presidential margin D+3.2 on the 2016\u20132020 lines \u2192 D+10.9 on the current lines.",
+    "toEra": "current"
+   },
+   "63": {
+    "contributors": [
+     {
+      "areaPct": 54.5,
+      "key": "65",
+      "popPct": 71.8
+     },
+     {
+      "areaPct": 23.6,
+      "key": "63",
+      "popPct": 11.9
+     },
+     {
+      "areaPct": 1.5,
+      "key": "48",
+      "popPct": 9.8
+     },
+     {
+      "areaPct": 20.4,
+      "key": "64",
+      "popPct": 5.1
+     },
+     {
+      "areaPct": 0.0,
+      "key": "50",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Morgan",
+      "popPct": 30.9
+     },
+     {
+      "county": "Weld",
+      "popPct": 23.1
+     },
+     {
+      "county": "Logan",
+      "popPct": 22.9
+     },
+     {
+      "county": "Yuma",
+      "popPct": 10.6
+     },
+     {
+      "county": "Washington",
+      "popPct": 5.2
+     },
+     {
+      "county": "Phillips",
+      "popPct": 4.8
+     },
+     {
+      "county": "Sedgwick",
+      "popPct": 2.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Morgan",
+      "popPct": 30.9
+     },
+     {
+      "county": "Logan",
+      "popPct": 22.9
+     },
+     {
+      "county": "Yuma",
+      "popPct": 10.6
+     },
+     {
+      "county": "Washington",
+      "popPct": 5.2
+     },
+     {
+      "county": "Phillips",
+      "popPct": 4.8
+     },
+     {
+      "county": "Sedgwick",
+      "popPct": 2.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 94076,
+    "pres2020New": 54.3,
+    "pres2020Old": 18.0,
+    "retainedAreaPct": 23.6,
+    "retainedPopPct": 11.9,
+    "text": "A new footprint: only 12% of its population was in the 2016\u20132020 HD-63; it draws from the old HD-65 (72%), the old HD-48 (10%), the old HD-64 (5%) and 1 more. Counties: gained Morgan (31%), Logan (23%), Yuma (11%) and 3 more. 2020 presidential margin R+18.0 on the 2016\u20132020 lines \u2192 R+54.3 on the current lines.",
+    "toEra": "current"
+   },
+   "64": {
+    "contributors": [
+     {
+      "areaPct": 50.3,
+      "key": "48",
+      "popPct": 70.4
+     },
+     {
+      "areaPct": 28.0,
+      "key": "49",
+      "popPct": 15.5
+     },
+     {
+      "areaPct": 0.7,
+      "key": "50",
+      "popPct": 8.0
+     },
+     {
+      "areaPct": 21.0,
+      "key": "63",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weld",
+      "popPct": 86.3
+     },
+     {
+      "county": "Larimer",
+      "popPct": 13.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Weld",
+      "popPct": 86.3
+     },
+     {
+      "county": "Larimer",
+      "popPct": 13.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Elbert",
+      "popPct": 32.7
+     },
+     {
+      "county": "Las Animas",
+      "popPct": 18.3
+     },
+     {
+      "county": "Prowers",
+      "popPct": 15.1
+     },
+     {
+      "county": "Crowley",
+      "popPct": 7.4
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 7.1
+     },
+     {
+      "county": "Bent",
+      "popPct": 7.1
+     },
+     {
+      "county": "Washington",
+      "popPct": 6.0
+     },
+     {
+      "county": "Baca",
+      "popPct": 4.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 89399,
+    "pres2020New": 20.0,
+    "pres2020Old": 45.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-64; it draws from the old HD-48 (70%), the old HD-49 (16%), the old HD-50 (8%) and 1 more. Counties: gained Weld (86%), Larimer (14%); lost Elbert, Las Animas, Prowers, Crowley and 4 more. 2020 presidential margin R+45.5 on the 2016\u20132020 lines \u2192 R+20.0 on the current lines.",
+    "toEra": "current"
+   },
+   "65": {
+    "contributors": [
+     {
+      "areaPct": 72.9,
+      "key": "49",
+      "popPct": 80.3
+     },
+     {
+      "areaPct": 26.1,
+      "key": "48",
+      "popPct": 15.9
+     },
+     {
+      "areaPct": 0.8,
+      "key": "52",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 0.2,
+      "key": "53",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Larimer",
+      "popPct": 53.5
+     },
+     {
+      "county": "Weld",
+      "popPct": 46.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Larimer",
+      "popPct": 53.5
+     },
+     {
+      "county": "Weld",
+      "popPct": 46.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Morgan",
+      "popPct": 38.1
+     },
+     {
+      "county": "Logan",
+      "popPct": 28.2
+     },
+     {
+      "county": "Yuma",
+      "popPct": 13.0
+     },
+     {
+      "county": "Kit Carson",
+      "popPct": 9.3
+     },
+     {
+      "county": "Phillips",
+      "popPct": 5.9
+     },
+     {
+      "county": "Sedgwick",
+      "popPct": 3.1
+     },
+     {
+      "county": "Cheyenne",
+      "popPct": 2.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 87817,
+    "pres2020New": 18.1,
+    "pres2020Old": 53.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-65; it draws from the old HD-49 (80%), the old HD-48 (16%), the old HD-52 (3%) and 1 more. Counties: gained Larimer (54%), Weld (46%); lost Morgan, Logan, Yuma, Kit Carson and 3 more. 2020 presidential margin R+53.8 on the 2016\u20132020 lines \u2192 R+18.1 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "7",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Denver",
+      "popPct": 89.3
+     },
+     {
+      "county": "Adams",
+      "popPct": 10.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 86118,
+    "pres2020New": -62.8,
+    "pres2020Old": -65.8,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Denver, Adams counties.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 57.9,
+      "key": "8",
+      "popPct": 65.8
+     },
+     {
+      "areaPct": 40.5,
+      "key": "7",
+      "popPct": 30.7
+     },
+     {
+      "areaPct": 1.6,
+      "key": "5",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Denver",
+      "popPct": 98.4
+     },
+     {
+      "county": "Adams",
+      "popPct": 1.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 95186,
+    "pres2020New": -76.9,
+    "pres2020Old": -78.7,
+    "retainedAreaPct": 57.9,
+    "retainedPopPct": 65.8,
+    "text": "Kept 66% of its population from the 2016\u20132020 HD-8; gained the rest from the old HD-7 (31%), the old HD-5 (3%). Spans Denver, Adams counties. 2020 presidential margin D+78.7 on the 2016\u20132020 lines \u2192 D+76.9 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 57.0,
+      "key": "9",
+      "popPct": 53.5
+     },
+     {
+      "areaPct": 20.6,
+      "key": "41",
+      "popPct": 25.2
+     },
+     {
+      "areaPct": 19.7,
+      "key": "6",
+      "popPct": 19.7
+     },
+     {
+      "areaPct": 2.7,
+      "key": "2",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Denver",
+      "popPct": 75.9
+     },
+     {
+      "county": "Arapahoe",
+      "popPct": 24.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 90484,
+    "pres2020New": -53.2,
+    "pres2020Old": -48.9,
+    "retainedAreaPct": 57.0,
+    "retainedPopPct": 53.5,
+    "text": "Kept 54% of its population from the 2016\u20132020 HD-9; gained the rest from the old HD-41 (25%), the old HD-6 (20%), the old HD-2 (2%). Spans Denver, Arapahoe counties. 2020 presidential margin D+48.9 on the 2016\u20132020 lines \u2192 D+53.2 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "1",
+      "popPct": 66.0
+     },
+     {
+      "areaPct": 1.0,
+      "key": "13",
+      "popPct": 29.0
+     },
+     {
+      "areaPct": 0.3,
+      "key": "23",
+      "popPct": 4.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weld",
+      "popPct": 57.3
+     },
+     {
+      "county": "Morgan",
+      "popPct": 17.2
+     },
+     {
+      "county": "Logan",
+      "popPct": 12.7
+     },
+     {
+      "county": "Yuma",
+      "popPct": 5.9
+     },
+     {
+      "county": "Washington",
+      "popPct": 2.9
+     },
+     {
+      "county": "Phillips",
+      "popPct": 2.7
+     },
+     {
+      "county": "Sedgwick",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Elbert",
+      "popPct": 17.0
+     },
+     {
+      "county": "Kit Carson",
+      "popPct": 4.6
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 3.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 169770,
+    "pres2020New": 41.1,
+    "pres2020Old": 52.8,
+    "retainedAreaPct": 98.7,
+    "retainedPopPct": 66.0,
+    "text": "Kept 66% of its population from the 2016\u20132020 SD-1; gained the rest from the old SD-13 (29%), the old SD-23 (5%). Counties: lost Elbert, Kit Carson, Lincoln. 2020 presidential margin R+52.8 on the 2016\u20132020 lines \u2192 R+41.1 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 62.3,
+      "key": "10",
+      "popPct": 77.9
+     },
+     {
+      "areaPct": 37.5,
+      "key": "12",
+      "popPct": 22.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "El Paso",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 166131,
+    "pres2020New": 11.7,
+    "pres2020Old": 10.3,
+    "retainedAreaPct": 62.3,
+    "retainedPopPct": 77.9,
+    "text": "Kept 78% of its population from the 2016\u20132020 SD-10; gained the rest from the old SD-12 (22%). Entirely in El Paso County. 2020 presidential margin R+10.3 on the 2016\u20132020 lines \u2192 R+11.7 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 27.4,
+      "key": "11",
+      "popPct": 64.9
+     },
+     {
+      "areaPct": 68.4,
+      "key": "12",
+      "popPct": 30.5
+     },
+     {
+      "areaPct": 1.4,
+      "key": "10",
+      "popPct": 4.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "El Paso",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 165652,
+    "pres2020New": -7.6,
+    "pres2020Old": -21.6,
+    "retainedAreaPct": 27.4,
+    "retainedPopPct": 64.9,
+    "text": "Kept 65% of its population from the 2016\u20132020 SD-11; gained the rest from the old SD-12 (30%), the old SD-10 (4%). Entirely in El Paso County. 2020 presidential margin D+21.6 on the 2016\u20132020 lines \u2192 D+7.6 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 9.9,
+      "key": "12",
+      "popPct": 47.5
+     },
+     {
+      "areaPct": 3.5,
+      "key": "11",
+      "popPct": 23.8
+     },
+     {
+      "areaPct": 77.8,
+      "key": "2",
+      "popPct": 22.8
+     },
+     {
+      "areaPct": 8.5,
+      "key": "9",
+      "popPct": 3.1
+     },
+     {
+      "areaPct": 0.3,
+      "key": "10",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "El Paso",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 168434,
+    "pres2020New": -3.8,
+    "pres2020Old": 11.3,
+    "retainedAreaPct": 9.9,
+    "retainedPopPct": 47.5,
+    "text": "A new footprint: only 48% of its population was in the 2016\u20132020 SD-12; it draws from the old SD-11 (24%), the old SD-2 (23%), the old SD-9 (3%) and 1 more. Entirely in El Paso County. 2020 presidential margin R+11.3 on the 2016\u20132020 lines \u2192 D+3.8 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 80.9,
+      "key": "13",
+      "popPct": 70.9
+     },
+     {
+      "areaPct": 19.1,
+      "key": "25",
+      "popPct": 29.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weld",
+      "popPct": 70.9
+     },
+     {
+      "county": "Adams",
+      "popPct": 29.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Adams",
+      "popPct": 29.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 152541,
+    "pres2020New": 3.1,
+    "pres2020Old": 9.1,
+    "retainedAreaPct": 80.9,
+    "retainedPopPct": 70.9,
+    "text": "Kept 71% of its population from the 2016\u20132020 SD-13; gained the rest from the old SD-25 (29%). Counties: gained Adams (29%). 2020 presidential margin R+9.1 on the 2016\u20132020 lines \u2192 R+3.1 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 62.7,
+      "key": "14",
+      "popPct": 93.7
+     },
+     {
+      "areaPct": 36.1,
+      "key": "15",
+      "popPct": 5.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Larimer",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157509,
+    "pres2020New": -40.5,
+    "pres2020Old": -38.9,
+    "retainedAreaPct": 62.7,
+    "retainedPopPct": 93.7,
+    "text": "Kept 94% of its population from the 2016\u20132020 SD-14; gained the rest from the old SD-15 (6%). Entirely in Larimer County. 2020 presidential margin D+38.9 on the 2016\u20132020 lines \u2192 D+40.5 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 80.9,
+      "key": "15",
+      "popPct": 84.3
+     },
+     {
+      "areaPct": 16.7,
+      "key": "18",
+      "popPct": 13.5
+     },
+     {
+      "areaPct": 2.3,
+      "key": "16",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Larimer",
+      "popPct": 84.7
+     },
+     {
+      "county": "Boulder",
+      "popPct": 15.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Boulder",
+      "popPct": 15.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 164019,
+    "pres2020New": -6.6,
+    "pres2020Old": 2.2,
+    "retainedAreaPct": 80.9,
+    "retainedPopPct": 84.3,
+    "text": "Kept 84% of its population from the 2016\u20132020 SD-15; gained the rest from the old SD-18 (14%), the old SD-16 (1%). Counties: gained Boulder (15%). 2020 presidential margin R+2.2 on the 2016\u20132020 lines \u2192 D+6.6 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 26.6,
+      "key": "27",
+      "popPct": 34.4
+     },
+     {
+      "areaPct": 32.3,
+      "key": "26",
+      "popPct": 28.4
+     },
+     {
+      "areaPct": 21.3,
+      "key": "22",
+      "popPct": 20.9
+     },
+     {
+      "areaPct": 17.2,
+      "key": "16",
+      "popPct": 15.3
+     },
+     {
+      "areaPct": 2.5,
+      "key": "20",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Arapahoe",
+      "popPct": 62.1
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 37.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Boulder",
+      "popPct": 9.6
+     },
+     {
+      "county": "Denver",
+      "popPct": 9.2
+     },
+     {
+      "county": "Gilpin",
+      "popPct": 3.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 166238,
+    "pres2020New": -11.0,
+    "pres2020Old": -19.6,
+    "retainedAreaPct": 17.2,
+    "retainedPopPct": 15.3,
+    "text": "A new footprint: only 15% of its population was in the 2016\u20132020 SD-16; it draws from the old SD-27 (34%), the old SD-26 (28%), the old SD-22 (21%) and 1 more. Counties: lost Boulder, Denver, Gilpin. 2020 presidential margin D+19.6 on the 2016\u20132020 lines \u2192 D+11.0 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 64.2,
+      "key": "17",
+      "popPct": 86.2
+     },
+     {
+      "areaPct": 25.7,
+      "key": "23",
+      "popPct": 13.0
+     },
+     {
+      "areaPct": 10.1,
+      "key": "18",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Boulder",
+      "popPct": 85.9
+     },
+     {
+      "county": "Weld",
+      "popPct": 12.1
+     },
+     {
+      "county": "Broomfield",
+      "popPct": 2.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Weld",
+      "popPct": 12.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 166407,
+    "pres2020New": -38.2,
+    "pres2020Old": -44.9,
+    "retainedAreaPct": 64.2,
+    "retainedPopPct": 86.2,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-17; gained the rest from the old SD-23 (13%), the old SD-18 (1%). Counties: gained Weld (12%). 2020 presidential margin D+44.9 on the 2016\u20132020 lines \u2192 D+38.2 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 82.7,
+      "key": "18",
+      "popPct": 79.7
+     },
+     {
+      "areaPct": 10.9,
+      "key": "17",
+      "popPct": 12.5
+     },
+     {
+      "areaPct": 6.4,
+      "key": "16",
+      "popPct": 7.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Boulder",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 161100,
+    "pres2020New": -70.0,
+    "pres2020Old": -69.1,
+    "retainedAreaPct": 82.7,
+    "retainedPopPct": 79.7,
+    "text": "Kept 80% of its population from the 2016\u20132020 SD-18; gained the rest from the old SD-17 (12%), the old SD-16 (8%). Entirely in Boulder County. 2020 presidential margin D+69.1 on the 2016\u20132020 lines \u2192 D+70.0 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 86.0,
+      "key": "19",
+      "popPct": 90.7
+     },
+     {
+      "areaPct": 12.8,
+      "key": "20",
+      "popPct": 7.5
+     },
+     {
+      "areaPct": 1.2,
+      "key": "21",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 97.2
+     },
+     {
+      "county": "Adams",
+      "popPct": 1.7
+     },
+     {
+      "county": "Broomfield",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 162676,
+    "pres2020New": -17.4,
+    "pres2020Old": -17.9,
+    "retainedAreaPct": 86.0,
+    "retainedPopPct": 90.7,
+    "text": "Kept 91% of its population from the 2016\u20132020 SD-19; gained the rest from the old SD-20 (8%), the old SD-21 (2%). Spans Jefferson, Adams, Broomfield counties. 2020 presidential margin D+17.9 on the 2016\u20132020 lines \u2192 D+17.4 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 95.9,
+      "key": "4",
+      "popPct": 93.2
+     },
+     {
+      "areaPct": 3.9,
+      "key": "30",
+      "popPct": 6.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Douglas",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "El Paso",
+      "popPct": 37.5
+     },
+     {
+      "county": "Fremont",
+      "popPct": 30.5
+     },
+     {
+      "county": "Teller",
+      "popPct": 15.2
+     },
+     {
+      "county": "Park",
+      "popPct": 10.8
+     },
+     {
+      "county": "Clear Creek",
+      "popPct": 5.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 164965,
+    "pres2020New": 12.5,
+    "pres2020Old": 28.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-2; it draws from the old SD-4 (93%), the old SD-30 (7%). Counties: gained Douglas (100%); lost El Paso, Fremont, Teller, Park and 1 more. 2020 presidential margin R+28.5 on the 2016\u20132020 lines \u2192 R+12.5 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 19.5,
+      "key": "20",
+      "popPct": 50.8
+     },
+     {
+      "areaPct": 4.8,
+      "key": "22",
+      "popPct": 31.4
+     },
+     {
+      "areaPct": 75.4,
+      "key": "16",
+      "popPct": 17.0
+     },
+     {
+      "areaPct": 0.3,
+      "key": "19",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 168338,
+    "pres2020New": -15.9,
+    "pres2020Old": -20.6,
+    "retainedAreaPct": 19.5,
+    "retainedPopPct": 50.8,
+    "text": "Kept 51% of its population from the 2016\u20132020 SD-20; gained the rest from the old SD-22 (31%), the old SD-16 (17%), the old SD-19 (1%). Entirely in Jefferson County. 2020 presidential margin D+20.6 on the 2016\u20132020 lines \u2192 D+15.9 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 7.5,
+      "key": "21",
+      "popPct": 88.5
+     },
+     {
+      "areaPct": 59.8,
+      "key": "25",
+      "popPct": 8.2
+     },
+     {
+      "areaPct": 32.7,
+      "key": "29",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Adams",
+      "popPct": 96.4
+     },
+     {
+      "county": "Arapahoe",
+      "popPct": 3.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Arapahoe",
+      "popPct": 3.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 168874,
+    "pres2020New": -15.4,
+    "pres2020Old": -27.6,
+    "retainedAreaPct": 7.5,
+    "retainedPopPct": 88.5,
+    "text": "Kept 88% of its population from the 2016\u20132020 SD-21; gained the rest from the old SD-25 (8%), the old SD-29 (3%). Counties: gained Arapahoe (3%). 2020 presidential margin D+27.6 on the 2016\u20132020 lines \u2192 D+15.4 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 42.3,
+      "key": "20",
+      "popPct": 41.3
+     },
+     {
+      "areaPct": 25.6,
+      "key": "22",
+      "popPct": 41.3
+     },
+     {
+      "areaPct": 31.5,
+      "key": "16",
+      "popPct": 16.7
+     },
+     {
+      "areaPct": 0.5,
+      "key": "19",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 96.2
+     },
+     {
+      "county": "Denver",
+      "popPct": 3.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 162872,
+    "pres2020New": -34.2,
+    "pres2020Old": -19.4,
+    "retainedAreaPct": 25.6,
+    "retainedPopPct": 41.3,
+    "text": "A new footprint: only 41% of its population was in the 2016\u20132020 SD-22; it draws from the old SD-20 (41%), the old SD-16 (17%), the old SD-19 (1%). Spans Jefferson, Denver counties. 2020 presidential margin D+19.4 on the 2016\u20132020 lines \u2192 D+34.2 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 65.8,
+      "key": "23",
+      "popPct": 69.6
+     },
+     {
+      "areaPct": 3.6,
+      "key": "14",
+      "popPct": 14.4
+     },
+     {
+      "areaPct": 9.8,
+      "key": "15",
+      "popPct": 8.8
+     },
+     {
+      "areaPct": 15.2,
+      "key": "13",
+      "popPct": 6.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weld",
+      "popPct": 62.1
+     },
+     {
+      "county": "Larimer",
+      "popPct": 37.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Broomfield",
+      "popPct": 31.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 164570,
+    "pres2020New": 14.0,
+    "pres2020Old": 1.3,
+    "retainedAreaPct": 65.8,
+    "retainedPopPct": 69.6,
+    "text": "Kept 70% of its population from the 2016\u20132020 SD-23; gained the rest from the old SD-14 (14%), the old SD-15 (9%), the old SD-13 (7%). Counties: lost Broomfield. 2020 presidential margin R+1.3 on the 2016\u20132020 lines \u2192 R+14.0 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 42.6,
+      "key": "24",
+      "popPct": 48.3
+     },
+     {
+      "areaPct": 51.1,
+      "key": "25",
+      "popPct": 42.7
+     },
+     {
+      "areaPct": 6.3,
+      "key": "21",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Adams",
+      "popPct": 98.9
+     },
+     {
+      "county": "Broomfield",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 168210,
+    "pres2020New": -12.8,
+    "pres2020Old": -15.0,
+    "retainedAreaPct": 42.6,
+    "retainedPopPct": 48.3,
+    "text": "A new footprint: only 48% of its population was in the 2016\u20132020 SD-24; it draws from the old SD-25 (43%), the old SD-21 (9%). Spans Adams, Broomfield counties. 2020 presidential margin D+15.0 on the 2016\u20132020 lines \u2192 D+12.8 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 37.9,
+      "key": "24",
+      "popPct": 52.1
+     },
+     {
+      "areaPct": 60.5,
+      "key": "23",
+      "popPct": 44.3
+     },
+     {
+      "areaPct": 1.5,
+      "key": "21",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Adams",
+      "popPct": 55.9
+     },
+     {
+      "county": "Broomfield",
+      "popPct": 41.2
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 1.8
+     },
+     {
+      "county": "Boulder",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Broomfield",
+      "popPct": 41.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Denver",
+      "popPct": 4.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 166248,
+    "pres2020New": -23.4,
+    "pres2020Old": -7.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-25; it draws from the old SD-24 (52%), the old SD-23 (44%), the old SD-21 (4%). Counties: gained Broomfield (41%); lost Denver. 2020 presidential margin D+7.8 on the 2016\u20132020 lines \u2192 D+23.4 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 64.2,
+      "key": "26",
+      "popPct": 52.4
+     },
+     {
+      "areaPct": 15.9,
+      "key": "31",
+      "popPct": 27.3
+     },
+     {
+      "areaPct": 13.5,
+      "key": "16",
+      "popPct": 12.2
+     },
+     {
+      "areaPct": 4.9,
+      "key": "27",
+      "popPct": 6.9
+     },
+     {
+      "areaPct": 1.4,
+      "key": "32",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Arapahoe",
+      "popPct": 64.3
+     },
+     {
+      "county": "Denver",
+      "popPct": 32.4
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 3.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 163873,
+    "pres2020New": -34.1,
+    "pres2020Old": -28.6,
+    "retainedAreaPct": 64.2,
+    "retainedPopPct": 52.4,
+    "text": "Kept 52% of its population from the 2016\u20132020 SD-26; gained the rest from the old SD-31 (27%), the old SD-16 (12%), the old SD-27 (7%) and 1 more. Spans Arapahoe, Denver, Jefferson counties. 2020 presidential margin D+28.6 on the 2016\u20132020 lines \u2192 D+34.1 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 15.2,
+      "key": "27",
+      "popPct": 49.3
+     },
+     {
+      "areaPct": 8.3,
+      "key": "28",
+      "popPct": 26.8
+     },
+     {
+      "areaPct": 69.9,
+      "key": "29",
+      "popPct": 19.2
+     },
+     {
+      "areaPct": 5.2,
+      "key": "26",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 1.4,
+      "key": "4",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Arapahoe",
+      "popPct": 98.6
+     },
+     {
+      "county": "Douglas",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 165239,
+    "pres2020New": -14.3,
+    "pres2020Old": -18.0,
+    "retainedAreaPct": 15.2,
+    "retainedPopPct": 49.3,
+    "text": "A new footprint: only 49% of its population was in the 2016\u20132020 SD-27; it draws from the old SD-28 (27%), the old SD-29 (19%), the old SD-26 (4%) and 1 more. Spans Arapahoe, Douglas counties. 2020 presidential margin D+18.0 on the 2016\u20132020 lines \u2192 D+14.3 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 36.4,
+      "key": "29",
+      "popPct": 52.8
+     },
+     {
+      "areaPct": 57.3,
+      "key": "25",
+      "popPct": 29.9
+     },
+     {
+      "areaPct": 6.2,
+      "key": "28",
+      "popPct": 17.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Arapahoe",
+      "popPct": 67.7
+     },
+     {
+      "county": "Adams",
+      "popPct": 27.0
+     },
+     {
+      "county": "Denver",
+      "popPct": 5.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Adams",
+      "popPct": 27.0
+     },
+     {
+      "county": "Denver",
+      "popPct": 5.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 162744,
+    "pres2020New": -36.4,
+    "pres2020Old": -26.0,
+    "retainedAreaPct": 6.2,
+    "retainedPopPct": 17.3,
+    "text": "A new footprint: only 17% of its population was in the 2016\u20132020 SD-28; it draws from the old SD-29 (53%), the old SD-25 (30%). Counties: gained Adams (27%), Denver (5%). 2020 presidential margin D+26.0 on the 2016\u20132020 lines \u2192 D+36.4 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 58.5,
+      "key": "28",
+      "popPct": 56.6
+     },
+     {
+      "areaPct": 27.0,
+      "key": "29",
+      "popPct": 30.2
+     },
+     {
+      "areaPct": 14.5,
+      "key": "26",
+      "popPct": 13.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Arapahoe",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 162280,
+    "pres2020New": -34.6,
+    "pres2020Old": -24.9,
+    "retainedAreaPct": 27.0,
+    "retainedPopPct": 30.2,
+    "text": "A new footprint: only 30% of its population was in the 2016\u20132020 SD-29; it draws from the old SD-28 (57%), the old SD-26 (13%). Entirely in Arapahoe County. 2020 presidential margin D+24.9 on the 2016\u20132020 lines \u2192 D+34.6 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 17.5,
+      "key": "3",
+      "popPct": 88.7
+     },
+     {
+      "areaPct": 82.5,
+      "key": "35",
+      "popPct": 11.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pueblo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 168162,
+    "pres2020New": -1.8,
+    "pres2020Old": -6.9,
+    "retainedAreaPct": 17.5,
+    "retainedPopPct": 88.7,
+    "text": "Kept 89% of its population from the 2016\u20132020 SD-3; gained the rest from the old SD-35 (11%). Entirely in Pueblo County. 2020 presidential margin D+6.9 on the 2016\u20132020 lines \u2192 D+1.8 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 80.7,
+      "key": "30",
+      "popPct": 91.1
+     },
+     {
+      "areaPct": 19.3,
+      "key": "4",
+      "popPct": 8.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Douglas",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 166941,
+    "pres2020New": -1.3,
+    "pres2020Old": -2.0,
+    "retainedAreaPct": 80.7,
+    "retainedPopPct": 91.1,
+    "text": "Kept 91% of its population from the 2016\u20132020 SD-30; gained the rest from the old SD-4 (9%). Entirely in Douglas County. 2020 presidential margin D+2.0 on the 2016\u20132020 lines \u2192 D+1.3 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 45.8,
+      "key": "31",
+      "popPct": 43.7
+     },
+     {
+      "areaPct": 34.0,
+      "key": "32",
+      "popPct": 29.9
+     },
+     {
+      "areaPct": 13.4,
+      "key": "33",
+      "popPct": 13.8
+     },
+     {
+      "areaPct": 6.8,
+      "key": "34",
+      "popPct": 12.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Denver",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Arapahoe",
+      "popPct": 9.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 161414,
+    "pres2020New": -66.5,
+    "pres2020Old": -58.9,
+    "retainedAreaPct": 45.8,
+    "retainedPopPct": 43.7,
+    "text": "A new footprint: only 44% of its population was in the 2016\u20132020 SD-31; it draws from the old SD-32 (30%), the old SD-33 (14%), the old SD-34 (13%). Counties: lost Arapahoe. 2020 presidential margin D+58.9 on the 2016\u20132020 lines \u2192 D+66.5 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 62.3,
+      "key": "32",
+      "popPct": 60.7
+     },
+     {
+      "areaPct": 31.3,
+      "key": "31",
+      "popPct": 33.3
+     },
+     {
+      "areaPct": 6.2,
+      "key": "16",
+      "popPct": 5.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Denver",
+      "popPct": 93.4
+     },
+     {
+      "county": "Arapahoe",
+      "popPct": 3.8
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 2.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Jefferson",
+      "popPct": 2.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 161219,
+    "pres2020New": -51.6,
+    "pres2020Old": -56.4,
+    "retainedAreaPct": 62.3,
+    "retainedPopPct": 60.7,
+    "text": "Kept 61% of its population from the 2016\u20132020 SD-32; gained the rest from the old SD-31 (33%), the old SD-16 (6%). Counties: gained Jefferson (3%). 2020 presidential margin D+56.4 on the 2016\u20132020 lines \u2192 D+51.6 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "33",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Denver",
+      "popPct": 93.5
+     },
+     {
+      "county": "Adams",
+      "popPct": 6.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 166713,
+    "pres2020New": -71.6,
+    "pres2020Old": -72.0,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Denver, Adams counties.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 88.4,
+      "key": "34",
+      "popPct": 91.1
+     },
+     {
+      "areaPct": 11.5,
+      "key": "32",
+      "popPct": 8.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Denver",
+      "popPct": 96.1
+     },
+     {
+      "county": "Adams",
+      "popPct": 2.8
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 166910,
+    "pres2020New": -65.7,
+    "pres2020Old": -65.3,
+    "retainedAreaPct": 88.4,
+    "retainedPopPct": 91.1,
+    "text": "Kept 91% of its population from the 2016\u20132020 SD-34; gained the rest from the old SD-32 (9%). Spans Denver, Adams, Jefferson counties. 2020 presidential margin D+65.3 on the 2016\u20132020 lines \u2192 D+65.7 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 62.0,
+      "key": "35",
+      "popPct": 39.3
+     },
+     {
+      "areaPct": 32.5,
+      "key": "1",
+      "popPct": 23.2
+     },
+     {
+      "areaPct": 0.5,
+      "key": "9",
+      "popPct": 22.7
+     },
+     {
+      "areaPct": 4.7,
+      "key": "2",
+      "popPct": 11.9
+     },
+     {
+      "areaPct": 0.2,
+      "key": "12",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "El Paso",
+      "popPct": 37.5
+     },
+     {
+      "county": "Elbert",
+      "popPct": 14.9
+     },
+     {
+      "county": "Otero",
+      "popPct": 10.7
+     },
+     {
+      "county": "Las Animas",
+      "popPct": 8.3
+     },
+     {
+      "county": "Prowers",
+      "popPct": 6.9
+     },
+     {
+      "county": "Kit Carson",
+      "popPct": 4.1
+     },
+     {
+      "county": "Huerfano",
+      "popPct": 3.9
+     },
+     {
+      "county": "Crowley",
+      "popPct": 3.4
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 3.3
+     },
+     {
+      "county": "Bent",
+      "popPct": 3.2
+     },
+     {
+      "county": "Baca",
+      "popPct": 2.0
+     },
+     {
+      "county": "Cheyenne",
+      "popPct": 1.0
+     },
+     {
+      "county": "Kiowa",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "El Paso",
+      "popPct": 37.5
+     },
+     {
+      "county": "Elbert",
+      "popPct": 14.9
+     },
+     {
+      "county": "Kit Carson",
+      "popPct": 4.1
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 3.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pueblo",
+      "popPct": 13.7
+     },
+     {
+      "county": "Alamosa",
+      "popPct": 11.8
+     },
+     {
+      "county": "Rio Grande",
+      "popPct": 8.3
+     },
+     {
+      "county": "Conejos",
+      "popPct": 5.4
+     },
+     {
+      "county": "Saguache",
+      "popPct": 4.6
+     },
+     {
+      "county": "Custer",
+      "popPct": 3.4
+     },
+     {
+      "county": "Costilla",
+      "popPct": 2.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 174614,
+    "pres2020New": 42.2,
+    "pres2020Old": 20.0,
+    "retainedAreaPct": 62.0,
+    "retainedPopPct": 39.3,
+    "text": "A new footprint: only 39% of its population was in the 2016\u20132020 SD-35; it draws from the old SD-1 (23%), the old SD-9 (23%), the old SD-2 (12%) and 1 more. Counties: gained El Paso (38%), Elbert (15%), Kit Carson (4%) and 1 more; lost Pueblo, Alamosa, Rio Grande, Conejos and 3 more. 2020 presidential margin R+20.0 on the 2016\u20132020 lines \u2192 R+42.2 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 58.0,
+      "key": "2",
+      "popPct": 51.3
+     },
+     {
+      "areaPct": 18.8,
+      "key": "5",
+      "popPct": 15.2
+     },
+     {
+      "areaPct": 5.0,
+      "key": "16",
+      "popPct": 13.2
+     },
+     {
+      "areaPct": 7.8,
+      "key": "4",
+      "popPct": 12.1
+     },
+     {
+      "areaPct": 0.1,
+      "key": "20",
+      "popPct": 3.4
+     },
+     {
+      "areaPct": 10.0,
+      "key": "35",
+      "popPct": 2.7
+     },
+     {
+      "areaPct": 0.3,
+      "key": "30",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fremont",
+      "popPct": 27.5
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 17.0
+     },
+     {
+      "county": "Douglas",
+      "popPct": 13.8
+     },
+     {
+      "county": "Teller",
+      "popPct": 13.7
+     },
+     {
+      "county": "Chaffee",
+      "popPct": 10.9
+     },
+     {
+      "county": "Park",
+      "popPct": 9.9
+     },
+     {
+      "county": "Lake",
+      "popPct": 4.1
+     },
+     {
+      "county": "Custer",
+      "popPct": 2.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Fremont",
+      "popPct": 27.5
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 17.0
+     },
+     {
+      "county": "Teller",
+      "popPct": 13.7
+     },
+     {
+      "county": "Chaffee",
+      "popPct": 10.9
+     },
+     {
+      "county": "Park",
+      "popPct": 9.9
+     },
+     {
+      "county": "Lake",
+      "popPct": 4.1
+     },
+     {
+      "county": "Custer",
+      "popPct": 2.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 177377,
+    "pres2020New": 18.1,
+    "pres2020Old": 15.2,
+    "retainedAreaPct": 7.8,
+    "retainedPopPct": 12.1,
+    "text": "A new footprint: only 12% of its population was in the 2016\u20132020 SD-4; it draws from the old SD-2 (51%), the old SD-5 (15%), the old SD-16 (13%) and 3 more. Counties: gained Fremont (28%), Jefferson (17%), Teller (14%) and 4 more. 2020 presidential margin R+15.2 on the 2016\u20132020 lines \u2192 R+18.1 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 83.6,
+      "key": "5",
+      "popPct": 47.6
+     },
+     {
+      "areaPct": 8.3,
+      "key": "8",
+      "popPct": 28.8
+     },
+     {
+      "areaPct": 8.0,
+      "key": "6",
+      "popPct": 23.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Garfield",
+      "popPct": 28.9
+     },
+     {
+      "county": "Montrose",
+      "popPct": 23.6
+     },
+     {
+      "county": "Delta",
+      "popPct": 17.7
+     },
+     {
+      "county": "Pitkin",
+      "popPct": 11.8
+     },
+     {
+      "county": "Gunnison",
+      "popPct": 11.6
+     },
+     {
+      "county": "Eagle",
+      "popPct": 5.9
+     },
+     {
+      "county": "Hinsdale",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Garfield",
+      "popPct": 28.9
+     },
+     {
+      "county": "Montrose",
+      "popPct": 23.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Chaffee",
+      "popPct": 13.0
+     },
+     {
+      "county": "Lake",
+      "popPct": 4.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 146563,
+    "pres2020New": -1.6,
+    "pres2020Old": -14.2,
+    "retainedAreaPct": 83.6,
+    "retainedPopPct": 47.6,
+    "text": "A new footprint: only 48% of its population was in the 2016\u20132020 SD-5; it draws from the old SD-8 (29%), the old SD-6 (24%). Counties: gained Garfield (29%), Montrose (24%); lost Chaffee, Lake. 2020 presidential margin D+14.2 on the 2016\u20132020 lines \u2192 D+1.6 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 54.9,
+      "key": "6",
+      "popPct": 72.1
+     },
+     {
+      "areaPct": 45.1,
+      "key": "35",
+      "popPct": 27.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "La Plata",
+      "popPct": 33.7
+     },
+     {
+      "county": "Montezuma",
+      "popPct": 15.7
+     },
+     {
+      "county": "Alamosa",
+      "popPct": 9.9
+     },
+     {
+      "county": "Archuleta",
+      "popPct": 8.1
+     },
+     {
+      "county": "Rio Grande",
+      "popPct": 7.0
+     },
+     {
+      "county": "Montrose",
+      "popPct": 4.9
+     },
+     {
+      "county": "San Miguel",
+      "popPct": 4.9
+     },
+     {
+      "county": "Conejos",
+      "popPct": 4.5
+     },
+     {
+      "county": "Saguache",
+      "popPct": 3.8
+     },
+     {
+      "county": "Ouray",
+      "popPct": 3.0
+     },
+     {
+      "county": "Costilla",
+      "popPct": 2.1
+     },
+     {
+      "county": "Dolores",
+      "popPct": 1.4
+     },
+     {
+      "county": "Mineral",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Alamosa",
+      "popPct": 9.9
+     },
+     {
+      "county": "Rio Grande",
+      "popPct": 7.0
+     },
+     {
+      "county": "Conejos",
+      "popPct": 4.5
+     },
+     {
+      "county": "Saguache",
+      "popPct": 3.8
+     },
+     {
+      "county": "Costilla",
+      "popPct": 2.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 165021,
+    "pres2020New": -1.1,
+    "pres2020Old": 4.9,
+    "retainedAreaPct": 54.9,
+    "retainedPopPct": 72.1,
+    "text": "Kept 72% of its population from the 2016\u20132020 SD-6; gained the rest from the old SD-35 (28%). Counties: gained Alamosa (10%), Rio Grande (7%), Conejos (4%) and 2 more. 2020 presidential margin R+4.9 on the 2016\u20132020 lines \u2192 D+1.1 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 94.4,
+      "key": "7",
+      "popPct": 96.7
+     },
+     {
+      "areaPct": 5.6,
+      "key": "5",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mesa",
+      "popPct": 96.7
+     },
+     {
+      "county": "Delta",
+      "popPct": 3.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Delta",
+      "popPct": 3.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 160959,
+    "pres2020New": 28.4,
+    "pres2020Old": 28.0,
+    "retainedAreaPct": 94.4,
+    "retainedPopPct": 96.7,
+    "text": "Kept 97% of its population from the 2016\u20132020 SD-7; gained the rest from the old SD-5 (3%). Counties: gained Delta (3%). 2020 presidential margin R+28.0 on the 2016\u20132020 lines \u2192 R+28.4 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 89.1,
+      "key": "8",
+      "popPct": 64.3
+     },
+     {
+      "areaPct": 7.9,
+      "key": "5",
+      "popPct": 27.0
+     },
+     {
+      "areaPct": 2.1,
+      "key": "2",
+      "popPct": 5.4
+     },
+     {
+      "areaPct": 0.8,
+      "key": "16",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Eagle",
+      "popPct": 26.9
+     },
+     {
+      "county": "Summit",
+      "popPct": 17.7
+     },
+     {
+      "county": "Routt",
+      "popPct": 14.2
+     },
+     {
+      "county": "Garfield",
+      "popPct": 11.1
+     },
+     {
+      "county": "Grand",
+      "popPct": 9.0
+     },
+     {
+      "county": "Moffat",
+      "popPct": 7.6
+     },
+     {
+      "county": "Clear Creek",
+      "popPct": 5.4
+     },
+     {
+      "county": "Rio Blanco",
+      "popPct": 3.7
+     },
+     {
+      "county": "Gilpin",
+      "popPct": 3.3
+     },
+     {
+      "county": "Jackson",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Eagle",
+      "popPct": 26.9
+     },
+     {
+      "county": "Clear Creek",
+      "popPct": 5.4
+     },
+     {
+      "county": "Gilpin",
+      "popPct": 3.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 174454,
+    "pres2020New": -10.9,
+    "pres2020Old": -5.7,
+    "retainedAreaPct": 89.1,
+    "retainedPopPct": 64.3,
+    "text": "Kept 64% of its population from the 2016\u20132020 SD-8; gained the rest from the old SD-5 (27%), the old SD-2 (5%), the old SD-16 (3%). Counties: gained Eagle (27%), Clear Creek (5%), Gilpin (3%). 2020 presidential margin D+5.7 on the 2016\u20132020 lines \u2192 D+10.9 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 97.3,
+      "key": "9",
+      "popPct": 89.5
+     },
+     {
+      "areaPct": 2.5,
+      "key": "10",
+      "popPct": 10.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "El Paso",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 164678,
+    "pres2020New": 19.3,
+    "pres2020Old": 23.7,
+    "retainedAreaPct": 97.3,
+    "retainedPopPct": 89.5,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-9; gained the rest from the old SD-10 (10%). Entirely in El Paso County. 2020 presidential margin R+23.7 on the 2016\u20132020 lines \u2192 R+19.3 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

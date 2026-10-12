@@ -11,7 +11,7 @@
 // structural lean from the nearest presidential result and gives the row
 // IMPUTED_RACE_WEIGHT in aggregation (see lib/tplCompute.ts).
 
-export type RaceEligibility = "eligible" | "no-dem" | "no-rep" | "same-party" | "fragmented";
+export type RaceEligibility = "eligible" | "no-dem" | "no-rep" | "same-party" | "fragmented" | "unopposed";
 
 // Independents who function as a major party's nominee: they caucus with the
 // party and the party fields no candidate against them, so their slot margin
@@ -106,4 +106,5 @@ export const ELIGIBILITY_LABELS: Record<Exclude<RaceEligibility, "eligible">, st
   "no-rep": "No Republican nominee",
   "same-party": "Same-party general",
   fragmented: "Jungle general — party fields fragmented",
+  unopposed: "Unopposed legislative seats — no R-vs-D race in those districts",
 };

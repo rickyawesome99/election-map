@@ -292,20 +292,6 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
         <div className="flex flex-col gap-8">
 
           <section>
-            <LedgerSectionHead label="About this Race" />
-            <AboutRaceCard
-              bare
-              title="About this Race"
-              description={race.raceDesc ?? "[Placeholder — overview of this gubernatorial race, the powers of the office, key issues, and political context to be filled in.]"}
-              items={[
-                { label: "Term Length", value: "4 Years" },
-                { label: "Incumbent", value: currentGovernorName },
-                { label: "Party", value: currentGovernorParty ? (currentGovernorParty === "D" ? "Democrat" : currentGovernorParty === "R" ? "Republican" : "Independent") : "TBD" },
-              ]}
-            />
-          </section>
-
-          <section>
             <LedgerSectionHead label={countyProjection ? "Projected Vote" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
             {race.candidates ? (() => {
               const rows = (
@@ -320,6 +306,20 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             })() : (
               <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</p>
             )}
+          </section>
+
+          <section>
+            <LedgerSectionHead label="About this Race" />
+            <AboutRaceCard
+              bare
+              title="About this Race"
+              description={race.raceDesc ?? "[Placeholder — overview of this gubernatorial race, the powers of the office, key issues, and political context to be filled in.]"}
+              items={[
+                { label: "Term Length", value: "4 Years" },
+                { label: "Incumbent", value: currentGovernorName },
+                { label: "Party", value: currentGovernorParty ? (currentGovernorParty === "D" ? "Democrat" : currentGovernorParty === "R" ? "Republican" : "Independent") : "TBD" },
+              ]}
+            />
           </section>
 
           <section>

@@ -1,0 +1,4952 @@
+{
+ "state": "AZ",
+ "cycle": 2024,
+ "fetched": "2026-10-11",
+ "dataThrough": "12/31/2024",
+ "races": [
+  {
+   "office": "Arizona House of Representatives District 1",
+   "url": "/az/race/arizona-house-of-representatives-district-1-64868",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 276626.0,
+   "totalExpenditures": 245399.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Selina Bliss",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 63351.98,
+       "expenditures": 23424.93,
+       "status": "Won",
+       "url": "/az/candidate/selina-bliss-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Quang Nguyen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 57099.1,
+       "expenditures": 65792.08,
+       "status": "Won",
+       "url": "/az/candidate/quang-nguyen-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jay Ruby",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 61053.36,
+       "expenditures": 61060.21,
+       "status": "Lost",
+       "url": "/az/candidate/jay-ruby?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Marcia Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 60384.0,
+       "expenditures": 60384.0,
+       "status": "Lost",
+       "url": "/az/candidate/marcia-smith?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Jay Ruby",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 61053.36,
+       "expenditures": 61060.21,
+       "status": "Advanced",
+       "url": "/az/candidate/jay-ruby?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Marcia Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 60384.0,
+       "expenditures": 60384.0,
+       "status": "Advanced",
+       "url": "/az/candidate/marcia-smith?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Selina Bliss",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 63351.98,
+       "expenditures": 23424.93,
+       "status": "Advanced",
+       "url": "/az/candidate/selina-bliss-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Quang Nguyen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 57099.1,
+       "expenditures": 65792.08,
+       "status": "Advanced",
+       "url": "/az/candidate/quang-nguyen-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Shawn Dell Wildman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 34738.0,
+       "expenditures": 34737.52,
+       "status": "Lost",
+       "url": "/az/candidate/shawn-dell-wildman?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "Arizona House of Representatives District 10",
+   "url": "/az/race/arizona-house-of-representatives-district-10-64869",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 200486.0,
+   "totalExpenditures": 175551.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ralph Heap",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46485.0,
+       "expenditures": 44938.44,
+       "status": "Won",
+       "url": "/az/candidate/ralph-heap?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Justin Olson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 65454.41,
+       "expenditures": 45149.01,
+       "status": "Won",
+       "url": "/az/candidate/justin-olson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Helen Hunter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 56412.89,
+       "expenditures": 56706.06,
+       "status": "Lost",
+       "url": "/az/candidate/helen-hunter?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Stephanie Simmons",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8338.61,
+       "expenditures": 5095.47,
+       "status": "Lost",
+       "url": "/az/candidate/stephanie-simmons?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Helen Hunter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 56412.89,
+       "expenditures": 56706.06,
+       "status": "Advanced",
+       "url": "/az/candidate/helen-hunter?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Stephanie Simmons",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8338.61,
+       "expenditures": 5095.47,
+       "status": "Advanced",
+       "url": "/az/candidate/stephanie-simmons?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Ralph Heap",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46485.0,
+       "expenditures": 44938.44,
+       "status": "Advanced",
+       "url": "/az/candidate/ralph-heap?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Justin Olson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 65454.41,
+       "expenditures": 45149.01,
+       "status": "Advanced",
+       "url": "/az/candidate/justin-olson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Matt Greer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23795.0,
+       "expenditures": 23661.66,
+       "status": "Lost",
+       "url": "/az/candidate/matt-greer?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "Arizona House of Representatives District 11",
+   "url": "/az/race/arizona-house-of-representatives-district-11-64870",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 321038.0,
+   "totalExpenditures": 284295.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Junelle Cavero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 66266.02,
+       "expenditures": 63918.81,
+       "status": "Won",
+       "url": "/az/candidate/junelle-cavero?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Oscar De Los Santos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 101492.41,
+       "expenditures": 93625.1,
+       "status": "Won",
+       "url": "/az/candidate/oscar-de-los-santos?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Cesar Aleman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54133.0,
+       "expenditures": 54133.0,
+       "status": "Lost",
+       "url": "/az/candidate/cesar-aleman?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joseph Dailey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54680.24,
+       "expenditures": 54595.24,
+       "status": "Lost",
+       "url": "/az/candidate/joseph-dailey?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Junelle Cavero",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 66266.02,
+       "expenditures": 63918.81,
+       "status": "Advanced",
+       "url": "/az/candidate/junelle-cavero?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Oscar De Los Santos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 101492.41,
+       "expenditures": 93625.1,
+       "status": "Advanced",
+       "url": "/az/candidate/oscar-de-los-santos?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Michael Butts",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 609.79,
+       "status": "Disqualified",
+       "url": "/az/candidate/michael-butts?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Izaak Ruiz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 44466.11,
+       "expenditures": 17413.22,
+       "status": "Lost",
+       "url": "/az/candidate/izaak-ruiz?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Cesar Aleman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54133.0,
+       "expenditures": 54133.0,
+       "status": "Advanced",
+       "url": "/az/candidate/cesar-aleman?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joseph Dailey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54680.24,
+       "expenditures": 54595.24,
+       "status": "Advanced",
+       "url": "/az/candidate/joseph-dailey?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "Arizona House of Representatives District 12",
+   "url": "/az/race/arizona-house-of-representatives-district-12-64871",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 162903.0,
+   "totalExpenditures": 131059.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Patricia Contreras",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 62822.0,
+       "expenditures": 51707.96,
+       "status": "Won",
+       "url": "/az/candidate/patricia-contreras?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Stacey Travers",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 43373.72,
+       "expenditures": 22643.14,
+       "status": "Won",
+       "url": "/az/candidate/stacey-travers?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lawrence Hudson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 56707.4,
+       "expenditures": 56707.4,
+       "status": "Lost",
+       "url": "/az/candidate/lawrence-hudson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Patricia Contreras",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 62822.0,
+       "expenditures": 51707.96,
+       "status": "Advanced",
+       "url": "/az/candidate/patricia-contreras?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Stacey Travers",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 43373.72,
+       "expenditures": 22643.14,
+       "status": "Advanced",
+       "url": "/az/candidate/stacey-travers?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Lawrence Hudson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 56707.4,
+       "expenditures": 56707.4,
+       "status": "Advanced",
+       "url": "/az/candidate/lawrence-hudson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "Arizona House of Representatives District 13",
+   "url": "/az/race/arizona-house-of-representatives-district-13-64872",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1068486.0,
+   "totalExpenditures": 985413.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Julie Willoughby",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 161747.22,
+       "expenditures": 150852.12,
+       "status": "Won",
+       "url": "/az/candidate/julie-willoughby-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jeff Weninger",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 182430.62,
+       "expenditures": 157918.25,
+       "status": "Won",
+       "url": "/az/candidate/jeff-weninger-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nicholas Gonzales",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 305445.25,
+       "expenditures": 288017.52,
+       "status": "Lost",
+       "url": "/az/candidate/nicholas-gonzales?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brandy Reese",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 418086.79,
+       "expenditures": 388251.81,
+       "status": "Lost",
+       "url": "/az/candidate/brandy-reese?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Cody Hannah",
+       "party": "Green",
+       "incumbent": false,
+       "contributions": 775.69,
+       "expenditures": 373.72,
+       "status": "Lost",
+       "url": "/az/candidate/cody-hannah?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Nicholas Gonzales",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 305445.25,
+       "expenditures": 288017.52,
+       "status": "Advanced",
+       "url": "/az/candidate/nicholas-gonzales?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brandy Reese",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 418086.79,
+       "expenditures": 388251.81,
+       "status": "Advanced",
+       "url": "/az/candidate/brandy-reese?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Green Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Cody Hannah",
+       "party": "Green",
+       "incumbent": false,
+       "contributions": 775.69,
+       "expenditures": 373.72,
+       "status": "Advanced",
+       "url": "/az/candidate/cody-hannah?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Julie Willoughby",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 161747.22,
+       "expenditures": 150852.12,
+       "status": "Advanced",
+       "url": "/az/candidate/julie-willoughby-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jeff Weninger",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 182430.62,
+       "expenditures": 157918.25,
+       "status": "Advanced",
+       "url": "/az/candidate/jeff-weninger-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "Arizona House of Representatives District 14",
+   "url": "/az/race/arizona-house-of-representatives-district-14-64873",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 534916.0,
+   "totalExpenditures": 571633.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Laurin Hendrix",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 92055.0,
+       "expenditures": 134761.24,
+       "status": "Won",
+       "url": "/az/candidate/laurin-hendrix?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Khyl Powell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 95417.17,
+       "expenditures": 90500.64,
+       "status": "Won",
+       "url": "/az/candidate/khyl-powell?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Scott Menor",
+       "party": "Green",
+       "incumbent": false,
+       "contributions": 4724.88,
+       "expenditures": 4724.88,
+       "status": "Lost",
+       "url": "/az/candidate/scott-menor?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Kristin Clark",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/az/candidate/kristin-clark?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Green Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Scott Menor",
+       "party": "Green",
+       "incumbent": false,
+       "contributions": 4724.88,
+       "expenditures": 4724.88,
+       "status": "Advanced",
+       "url": "/az/candidate/scott-menor?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Laurin Hendrix",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 92055.0,
+       "expenditures": 134761.24,
+       "status": "Advanced",
+       "url": "/az/candidate/laurin-hendrix?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Khyl Powell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 95417.17,
+       "expenditures": 90500.64,
+       "status": "Advanced",
+       "url": "/az/candidate/khyl-powell?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joel Coen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57276.7,
+       "expenditures": 56204.21,
+       "status": "Lost",
+       "url": "/az/candidate/joel-coen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lalani Hunsaker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 246458.84,
+       "expenditures": 246458.84,
+       "status": "Lost",
+       "url": "/az/candidate/lalani-hunsaker?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Andrew Jackson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38983.0,
+       "expenditures": 38983.0,
+       "status": "Lost",
+       "url": "/az/candidate/andrew-jackson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "Arizona House of Representatives District 15",
+   "url": "/az/race/arizona-house-of-representatives-district-15-64874",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 545278.0,
+   "totalExpenditures": 505366.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Neal Carter",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 53030.0,
+       "expenditures": 55785.63,
+       "status": "Won",
+       "url": "/az/candidate/neal-carter-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Michael Way",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 416981.92,
+       "expenditures": 381099.27,
+       "status": "Won",
+       "url": "/az/candidate/michael-way?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Barbara Beneitone",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 54838.0,
+       "expenditures": 54838.0,
+       "status": "Lost",
+       "url": "/az/candidate/barbara-beneitone?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Barbara Beneitone",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 54838.0,
+       "expenditures": 54838.0,
+       "status": "Advanced",
+       "url": "/az/candidate/barbara-beneitone?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Neal Carter",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 53030.0,
+       "expenditures": 55785.63,
+       "status": "Advanced",
+       "url": "/az/candidate/neal-carter-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Michael Way",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 416981.92,
+       "expenditures": 381099.27,
+       "status": "Advanced",
+       "url": "/az/candidate/michael-way?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Peter Anello",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16927.41,
+       "expenditures": 13643.56,
+       "status": "Lost",
+       "url": "/az/candidate/peter-anello?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Alex Stovall",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3500.37,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/az/candidate/alex-stovall?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "Arizona House of Representatives District 16",
+   "url": "/az/race/arizona-house-of-representatives-district-16-64875",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 873896.0,
+   "totalExpenditures": 858310.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Teresa Martinez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 212804.31,
+       "expenditures": 201586.01,
+       "status": "Won",
+       "url": "/az/candidate/teresa-martinez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chris Lopez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 227532.44,
+       "expenditures": 217502.61,
+       "status": "Won",
+       "url": "/az/candidate/chris-lopez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Keith Seaman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 348590.63,
+       "expenditures": 348194.1,
+       "status": "Lost",
+       "url": "/az/candidate/keith-seaman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Keith Seaman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 348590.63,
+       "expenditures": 348194.1,
+       "status": "Advanced",
+       "url": "/az/candidate/keith-seaman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Teresa Martinez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 212804.31,
+       "expenditures": 201586.01,
+       "status": "Advanced",
+       "url": "/az/candidate/teresa-martinez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chris Lopez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 227532.44,
+       "expenditures": 217502.61,
+       "status": "Advanced",
+       "url": "/az/candidate/chris-lopez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Rob Hudelson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 47280.91,
+       "expenditures": 54014.86,
+       "status": "Lost",
+       "url": "/az/candidate/rob-hudelson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gabby Mercer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 37687.87,
+       "expenditures": 37012.14,
+       "status": "Lost",
+       "url": "/az/candidate/gabby-mercer?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "Arizona House of Representatives District 17",
+   "url": "/az/race/arizona-house-of-representatives-district-17-64876",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 861760.0,
+   "totalExpenditures": 839306.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Rachel Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 152705.12,
+       "expenditures": 143233.57,
+       "status": "Won",
+       "url": "/az/candidate/rachel-jones?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kevin Volk",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 533634.25,
+       "expenditures": 523199.06,
+       "status": "Won",
+       "url": "/az/candidate/kevin-volk?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Cory McGarr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 175420.39,
+       "expenditures": 172873.7,
+       "status": "Lost",
+       "url": "/az/candidate/cory-mcgarr?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Kevin Volk",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 533634.25,
+       "expenditures": 523199.06,
+       "status": "Advanced",
+       "url": "/az/candidate/kevin-volk?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Rachel Jones",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 152705.12,
+       "expenditures": 143233.57,
+       "status": "Advanced",
+       "url": "/az/candidate/rachel-jones?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Cory McGarr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 175420.39,
+       "expenditures": 172873.7,
+       "status": "Advanced",
+       "url": "/az/candidate/cory-mcgarr?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Anna Orth",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/az/candidate/anna-orth?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "Arizona House of Representatives District 18",
+   "url": "/az/race/arizona-house-of-representatives-district-18-64877",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 189662.0,
+   "totalExpenditures": 171558.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Nancy Gutierrez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 37702.68,
+       "expenditures": 26521.56,
+       "status": "Won",
+       "url": "/az/candidate/nancy-gutierrez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Christopher Mathis",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 97604.02,
+       "expenditures": 90680.99,
+       "status": "Won",
+       "url": "/az/candidate/christopher-mathis?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Leonard J Rosenblum",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54355.78,
+       "expenditures": 54354.96,
+       "status": "Lost",
+       "url": "/az/candidate/leonard-j-rosenblum?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Nancy Gutierrez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 37702.68,
+       "expenditures": 26521.56,
+       "status": "Advanced",
+       "url": "/az/candidate/nancy-gutierrez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Christopher Mathis",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 97604.02,
+       "expenditures": 90680.99,
+       "status": "Advanced",
+       "url": "/az/candidate/christopher-mathis?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Leonard J Rosenblum",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54355.78,
+       "expenditures": 54354.96,
+       "status": "Advanced",
+       "url": "/az/candidate/leonard-j-rosenblum?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "Arizona House of Representatives District 19",
+   "url": "/az/race/arizona-house-of-representatives-district-19-64878",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 135898.0,
+   "totalExpenditures": 127732.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lupe Diaz",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 37637.88,
+       "expenditures": 19937.49,
+       "status": "Won",
+       "url": "/az/candidate/lupe-diaz?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gail Griffin",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 64075.0,
+       "expenditures": 73909.58,
+       "status": "Won",
+       "url": "/az/candidate/gail-griffin-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gregg Frostrom",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 34185.0,
+       "expenditures": 33885.0,
+       "status": "Lost",
+       "url": "/az/candidate/gregg-frostrom?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Gregg Frostrom",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 34185.0,
+       "expenditures": 33885.0,
+       "status": "Advanced",
+       "url": "/az/candidate/gregg-frostrom?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Lupe Diaz",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 37637.88,
+       "expenditures": 19937.49,
+       "status": "Advanced",
+       "url": "/az/candidate/lupe-diaz?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gail Griffin",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 64075.0,
+       "expenditures": 73909.58,
+       "status": "Advanced",
+       "url": "/az/candidate/gail-griffin-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "Arizona House of Representatives District 2",
+   "url": "/az/race/arizona-house-of-representatives-district-2-64879",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 818836.0,
+   "totalExpenditures": 721445.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Justin Wilmeth",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 175704.61,
+       "expenditures": 106319.36,
+       "status": "Won",
+       "url": "/az/candidate/justin-wilmeth-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Stephanie Simacek",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 407558.34,
+       "expenditures": 394381.55,
+       "status": "Won",
+       "url": "/az/candidate/stephanie-simacek?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ari Bradshaw",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 210822.86,
+       "expenditures": 197708.56,
+       "status": "Lost",
+       "url": "/az/candidate/ari-bradshaw?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Thomas Simes",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 24750.0,
+       "expenditures": 22941.0,
+       "status": "Lost",
+       "url": "/az/candidate/thomas-simes?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Stephanie Simacek",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 407558.34,
+       "expenditures": 394381.55,
+       "status": "Advanced",
+       "url": "/az/candidate/stephanie-simacek?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Justin Wilmeth",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 175704.61,
+       "expenditures": 106319.36,
+       "status": "Advanced",
+       "url": "/az/candidate/justin-wilmeth-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ari Bradshaw",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 210822.86,
+       "expenditures": 197708.56,
+       "status": "Advanced",
+       "url": "/az/candidate/ari-bradshaw?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Neil Desanti",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 94.19,
+       "status": "Withdrew",
+       "url": "/az/candidate/neil-desanti-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "Arizona House of Representatives District 20",
+   "url": "/az/race/arizona-house-of-representatives-district-20-64880",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 172958.0,
+   "totalExpenditures": 170038.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Alma C Hernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 148038.45,
+       "expenditures": 146419.87,
+       "status": "Won",
+       "url": "/az/candidate/alma-c-hernandez-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Betty Villegas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 24920.0,
+       "expenditures": 23618.24,
+       "status": "Won",
+       "url": "/az/candidate/betty-villegas?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Alma C Hernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 148038.45,
+       "expenditures": 146419.87,
+       "status": "Advanced",
+       "url": "/az/candidate/alma-c-hernandez-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Betty Villegas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 24920.0,
+       "expenditures": 23618.24,
+       "status": "Advanced",
+       "url": "/az/candidate/betty-villegas?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "Arizona House of Representatives District 21",
+   "url": "/az/race/arizona-house-of-representatives-district-21-64881",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 244474.0,
+   "totalExpenditures": 248593.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Consuelo Hernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 139823.75,
+       "expenditures": 152423.6,
+       "status": "Won",
+       "url": "/az/candidate/consuelo-hernandez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Stephanie Stahl Hamilton",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 79598.39,
+       "expenditures": 78379.33,
+       "status": "Won",
+       "url": "/az/candidate/stephanie-stahl-hamilton-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Christopher Kibbey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 650.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/az/candidate/christopher-kibbey?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Consuelo Hernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 139823.75,
+       "expenditures": 152423.6,
+       "status": "Advanced",
+       "url": "/az/candidate/consuelo-hernandez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Stephanie Stahl Hamilton",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 79598.39,
+       "expenditures": 78379.33,
+       "status": "Advanced",
+       "url": "/az/candidate/stephanie-stahl-hamilton-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Briana Ortega",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 24402.0,
+       "expenditures": 17790.05,
+       "status": "Lost",
+       "url": "/az/candidate/briana-ortega?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Christopher Kibbey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 650.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/az/candidate/christopher-kibbey?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "Arizona House of Representatives District 22",
+   "url": "/az/race/arizona-house-of-representatives-district-22-64882",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 233518.0,
+   "totalExpenditures": 230924.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Guadalupe Chavira Contreras",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 125120.0,
+       "expenditures": 127337.02,
+       "status": "Won",
+       "url": "/az/candidate/guadalupe-chavira-contreras-mr-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Elda Luna-Najera",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 37001.62,
+       "expenditures": 33811.85,
+       "status": "Won",
+       "url": "/az/candidate/elda-luna-najera?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Blaine Griffin Sr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 754.62,
+       "expenditures": 754.62,
+       "status": "Lost",
+       "url": "/az/candidate/blaine-griffin-sr?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Diana Gail Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2401.66,
+       "expenditures": 1785.8,
+       "status": "Lost",
+       "url": "/az/candidate/diana-gail-jones-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Guadalupe Chavira Contreras",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 125120.0,
+       "expenditures": 127337.02,
+       "status": "Advanced",
+       "url": "/az/candidate/guadalupe-chavira-contreras-mr-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Elda Luna-Najera",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 37001.62,
+       "expenditures": 33811.85,
+       "status": "Advanced",
+       "url": "/az/candidate/elda-luna-najera?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Betsy Munoz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 35280.0,
+       "expenditures": 35280.0,
+       "status": "Lost",
+       "url": "/az/candidate/betsy-munoz?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jennifer Wynne",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 32960.0,
+       "expenditures": 31954.22,
+       "status": "Lost",
+       "url": "/az/candidate/jennifer-wynne?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Blaine Griffin Sr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 754.62,
+       "expenditures": 754.62,
+       "status": "Advanced",
+       "url": "/az/candidate/blaine-griffin-sr?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Diana Gail Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2401.66,
+       "expenditures": 1785.8,
+       "status": "Advanced",
+       "url": "/az/candidate/diana-gail-jones-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "Arizona House of Representatives District 23",
+   "url": "/az/race/arizona-house-of-representatives-district-23-64883",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 503450.0,
+   "totalExpenditures": 374332.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mariana Sandoval",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 159594.78,
+       "expenditures": 99194.87,
+       "status": "Won",
+       "url": "/az/candidate/mariana-sandoval-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Michele Pena",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 105725.96,
+       "expenditures": 110032.43,
+       "status": "Won",
+       "url": "/az/candidate/michele-pena?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Matias Rosales",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 202109.72,
+       "expenditures": 129085.18,
+       "status": "Lost",
+       "url": "/az/candidate/matias-rosales?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Mariana Sandoval",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 159594.78,
+       "expenditures": 99194.87,
+       "status": "Advanced",
+       "url": "/az/candidate/mariana-sandoval-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Matias Rosales",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 202109.72,
+       "expenditures": 129085.18,
+       "status": "Advanced",
+       "url": "/az/candidate/matias-rosales?cycle=2024-election-cycle"
+      },
+      {
+       "name": "James Holmes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 36020.0,
+       "expenditures": 36020.0,
+       "status": "Lost",
+       "url": "/az/candidate/james-holmes?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Michele Pena",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 105725.96,
+       "expenditures": 110032.43,
+       "status": "Advanced",
+       "url": "/az/candidate/michele-pena?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "Arizona House of Representatives District 24",
+   "url": "/az/race/arizona-house-of-representatives-district-24-64884",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 110312.0,
+   "totalExpenditures": 105601.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lydia Hernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16950.0,
+       "expenditures": 16591.81,
+       "status": "Won",
+       "url": "/az/candidate/lydia-hernandez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Anna Lynn Abeytia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 56979.06,
+       "expenditures": 54896.69,
+       "status": "Won",
+       "url": "/az/candidate/anna-lynn-abeytia?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Lydia Hernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 16950.0,
+       "expenditures": 16591.81,
+       "status": "Advanced",
+       "url": "/az/candidate/lydia-hernandez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Anna Lynn Abeytia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 56979.06,
+       "expenditures": 54896.69,
+       "status": "Advanced",
+       "url": "/az/candidate/anna-lynn-abeytia?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Hector Jaramillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 36382.55,
+       "expenditures": 34112.98,
+       "status": "Lost",
+       "url": "/az/candidate/hector-jaramillo?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "Arizona House of Representatives District 25",
+   "url": "/az/race/arizona-house-of-representatives-district-25-64885",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 297077.0,
+   "totalExpenditures": 253655.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Michael Carbone",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 116100.3,
+       "expenditures": 79379.48,
+       "status": "Won",
+       "url": "/az/candidate/michael-carbone?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nickolas Scott Kupper",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 56884.0,
+       "expenditures": 50774.25,
+       "status": "Won",
+       "url": "/az/candidate/nickolas-scott-kupper?cycle=2024-election-cycle"
+      },
+      {
+       "name": "William Olear",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 56146.0,
+       "expenditures": 55431.46,
+       "status": "Lost",
+       "url": "/az/candidate/william-olear?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "William Olear",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 56146.0,
+       "expenditures": 55431.46,
+       "status": "Advanced",
+       "url": "/az/candidate/william-olear?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Libertarian Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Nathan Madden",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 3380.64,
+       "expenditures": 3380.64,
+       "status": "Withdrew",
+       "url": "/az/candidate/nathan-madden?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Michael Carbone",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 116100.3,
+       "expenditures": 79379.48,
+       "status": "Advanced",
+       "url": "/az/candidate/michael-carbone?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nickolas Scott Kupper",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 56884.0,
+       "expenditures": 50774.25,
+       "status": "Advanced",
+       "url": "/az/candidate/nickolas-scott-kupper?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gary Garcia Snyder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27739.06,
+       "expenditures": 27862.17,
+       "status": "Lost",
+       "url": "/az/candidate/gary-garcia-snyder?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Steve Markegard",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 36827.0,
+       "expenditures": 36827.0,
+       "status": "Lost",
+       "url": "/az/candidate/steve-markegard?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "Arizona House of Representatives District 26",
+   "url": "/az/race/arizona-house-of-representatives-district-26-64886",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 180325.0,
+   "totalExpenditures": 169624.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Cesar Aguilar",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 43232.08,
+       "expenditures": 35655.67,
+       "status": "Won",
+       "url": "/az/candidate/cesar-aguilar?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Quanta Crews",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 28836.92,
+       "expenditures": 25696.17,
+       "status": "Won",
+       "url": "/az/candidate/quanta-crews?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Skyla Edwards",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54098.0,
+       "expenditures": 54114.4,
+       "status": "Lost",
+       "url": "/az/candidate/skyla-edwards?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Frank L Roberts",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54158.0,
+       "expenditures": 54158.0,
+       "status": "Lost",
+       "url": "/az/candidate/frank-l-roberts?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Cesar Aguilar",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 43232.08,
+       "expenditures": 35655.67,
+       "status": "Advanced",
+       "url": "/az/candidate/cesar-aguilar?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Quanta Crews",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 28836.92,
+       "expenditures": 25696.17,
+       "status": "Advanced",
+       "url": "/az/candidate/quanta-crews?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Skyla Edwards",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54098.0,
+       "expenditures": 54114.4,
+       "status": "Advanced",
+       "url": "/az/candidate/skyla-edwards?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Frank L Roberts",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54158.0,
+       "expenditures": 54158.0,
+       "status": "Advanced",
+       "url": "/az/candidate/frank-l-roberts?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "Arizona House of Representatives District 27",
+   "url": "/az/race/arizona-house-of-representatives-district-27-64887",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 416887.0,
+   "totalExpenditures": 397440.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lisa Fink",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 58244.73,
+       "expenditures": 58244.73,
+       "status": "Won",
+       "url": "/az/candidate/lisa-fink?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tony Rivero",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 85487.39,
+       "expenditures": 84957.19,
+       "status": "Won",
+       "url": "/az/candidate/jose-rivero-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Deborah Howard",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 233717.0,
+       "expenditures": 214838.2,
+       "status": "Lost",
+       "url": "/az/candidate/deborah-howard?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Deborah Howard",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 233717.0,
+       "expenditures": 214838.2,
+       "status": "Advanced",
+       "url": "/az/candidate/deborah-howard?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Lisa Fink",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 58244.73,
+       "expenditures": 58244.73,
+       "status": "Advanced",
+       "url": "/az/candidate/lisa-fink?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tony Rivero",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 85487.39,
+       "expenditures": 84957.19,
+       "status": "Advanced",
+       "url": "/az/candidate/jose-rivero-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Linda J Busam",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18125.27,
+       "expenditures": 16406.59,
+       "status": "Lost",
+       "url": "/az/candidate/linda-j-busam?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brian Morris",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21312.93,
+       "expenditures": 22992.93,
+       "status": "Lost",
+       "url": "/az/candidate/brian-morris?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "Arizona House of Representatives District 28",
+   "url": "/az/race/arizona-house-of-representatives-district-28-64888",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 212382.0,
+   "totalExpenditures": 152169.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "David A Livingston",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 125207.27,
+       "expenditures": 79328.88,
+       "status": "Won",
+       "url": "/az/candidate/david-alan-livingston-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Beverly Pingerelli",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 54169.15,
+       "expenditures": 41580.18,
+       "status": "Won",
+       "url": "/az/candidate/beverly-pingerelli-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Barbara Fike",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2578.0,
+       "expenditures": 2578.0,
+       "status": "Lost",
+       "url": "/az/candidate/barbara-fike?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Barbara Fike",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2578.0,
+       "expenditures": 2578.0,
+       "status": "Advanced",
+       "url": "/az/candidate/barbara-fike?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "David A Livingston",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 125207.27,
+       "expenditures": 79328.88,
+       "status": "Advanced",
+       "url": "/az/candidate/david-alan-livingston-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Beverly Pingerelli",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 54169.15,
+       "expenditures": 41580.18,
+       "status": "Advanced",
+       "url": "/az/candidate/beverly-pingerelli-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Susan Black",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 30427.2,
+       "expenditures": 28682.07,
+       "status": "Lost",
+       "url": "/az/candidate/susan-black?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "Arizona House of Representatives District 29",
+   "url": "/az/race/arizona-house-of-representatives-district-29-64889",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 381461.0,
+   "totalExpenditures": 189381.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Steve Montenegro",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 176454.86,
+       "expenditures": 56023.74,
+       "status": "Won",
+       "url": "/az/candidate/steve-montenegro-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "James Taylor",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17000.0,
+       "expenditures": 14384.38,
+       "status": "Won",
+       "url": "/az/candidate/james-taylor?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tanairi Ochoa-Martinez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 54113.0,
+       "expenditures": 54113.0,
+       "status": "Lost",
+       "url": "/az/candidate/tanairi-ochoa-martinez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Thomas Tzitzura",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 55028.0,
+       "expenditures": 54840.87,
+       "status": "Lost",
+       "url": "/az/candidate/thomas-tzitzura?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Tanairi Ochoa-Martinez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 54113.0,
+       "expenditures": 54113.0,
+       "status": "Advanced",
+       "url": "/az/candidate/tanairi-ochoa-martinez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Thomas Tzitzura",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 55028.0,
+       "expenditures": 54840.87,
+       "status": "Advanced",
+       "url": "/az/candidate/thomas-tzitzura?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Raymer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/az/candidate/david-raymer?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Steve Montenegro",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 176454.86,
+       "expenditures": 56023.74,
+       "status": "Advanced",
+       "url": "/az/candidate/steve-montenegro-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "James Taylor",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17000.0,
+       "expenditures": 14384.38,
+       "status": "Advanced",
+       "url": "/az/candidate/james-taylor?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Austin Smith",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 72540.0,
+       "expenditures": 9705.03,
+       "status": "Withdrew",
+       "url": "/az/candidate/austin-smith?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Amy Lynn Heusted",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6325.0,
+       "expenditures": 313.88,
+       "status": "Lost",
+       "url": "/az/candidate/amy-lynn-heusted?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "Arizona House of Representatives District 3",
+   "url": "/az/race/arizona-house-of-representatives-district-3-64890",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 287915.0,
+   "totalExpenditures": 276869.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Joseph Chaplik",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 150605.45,
+       "expenditures": 168299.51,
+       "status": "Won",
+       "url": "/az/candidate/joseph-chaplik-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Alexander Kolodin",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 78132.0,
+       "expenditures": 49391.83,
+       "status": "Won",
+       "url": "/az/candidate/alexander-kolodin-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "C Richard Corles",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 59178.0,
+       "expenditures": 59178.0,
+       "status": "Lost",
+       "url": "/az/candidate/c-richard-corles?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "C Richard Corles",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 59178.0,
+       "expenditures": 59178.0,
+       "status": "Advanced",
+       "url": "/az/candidate/c-richard-corles?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Joseph Chaplik",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 150605.45,
+       "expenditures": 168299.51,
+       "status": "Advanced",
+       "url": "/az/candidate/joseph-chaplik-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Alexander Kolodin",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 78132.0,
+       "expenditures": 49391.83,
+       "status": "Advanced",
+       "url": "/az/candidate/alexander-kolodin-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "Arizona House of Representatives District 30",
+   "url": "/az/race/arizona-house-of-representatives-district-30-64891",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 172176.0,
+   "totalExpenditures": 121931.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Leo Biasiucci",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 109249.93,
+       "expenditures": 75082.58,
+       "status": "Won",
+       "url": "/az/candidate/leo-biasiucci-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "John Gillette",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 26421.12,
+       "expenditures": 21837.48,
+       "status": "Won",
+       "url": "/az/candidate/john-gillette?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Monica Timberlake",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 36505.26,
+       "expenditures": 25011.14,
+       "status": "Lost",
+       "url": "/az/candidate/monica-timberlake?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Monica Timberlake",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 36505.26,
+       "expenditures": 25011.14,
+       "status": "Advanced",
+       "url": "/az/candidate/monica-timberlake?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Leo Biasiucci",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 109249.93,
+       "expenditures": 75082.58,
+       "status": "Advanced",
+       "url": "/az/candidate/leo-biasiucci-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "John Gillette",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 26421.12,
+       "expenditures": 21837.48,
+       "status": "Advanced",
+       "url": "/az/candidate/john-gillette?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "Arizona House of Representatives District 4",
+   "url": "/az/race/arizona-house-of-representatives-district-4-64892",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 2155205.0,
+   "totalExpenditures": 2104243.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Matthew Gress",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 665694.95,
+       "expenditures": 654197.49,
+       "status": "Won",
+       "url": "/az/candidate/matthew-gress?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Pamela Carter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 196736.61,
+       "expenditures": 189341.4,
+       "status": "Won",
+       "url": "/az/candidate/pamela-carter?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kelli Butler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 603130.92,
+       "expenditures": 595663.72,
+       "status": "Lost",
+       "url": "/az/candidate/kelli-butler-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Karen Gresham",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 689642.28,
+       "expenditures": 665040.63,
+       "status": "Lost",
+       "url": "/az/candidate/karen-gresham?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Kelli Butler",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 603130.92,
+       "expenditures": 595663.72,
+       "status": "Advanced",
+       "url": "/az/candidate/kelli-butler-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Karen Gresham",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 689642.28,
+       "expenditures": 665040.63,
+       "status": "Advanced",
+       "url": "/az/candidate/karen-gresham?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Matthew Gress",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 665694.95,
+       "expenditures": 654197.49,
+       "status": "Advanced",
+       "url": "/az/candidate/matthew-gress?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Pamela Carter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 196736.61,
+       "expenditures": 189341.4,
+       "status": "Advanced",
+       "url": "/az/candidate/pamela-carter?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "Arizona House of Representatives District 5",
+   "url": "/az/race/arizona-house-of-representatives-district-5-64893",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 270386.0,
+   "totalExpenditures": 233235.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Sarah Liguori",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 78142.01,
+       "expenditures": 63920.9,
+       "status": "Won",
+       "url": "/az/candidate/sarah-liguori?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Aaron Marquez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 78218.43,
+       "expenditures": 69384.32,
+       "status": "Won",
+       "url": "/az/candidate/aaron-marquez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Reina Patocs",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38126.02,
+       "expenditures": 32649.63,
+       "status": "Lost",
+       "url": "/az/candidate/reina-patocs?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Sarah Liguori",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 78142.01,
+       "expenditures": 63920.9,
+       "status": "Advanced",
+       "url": "/az/candidate/sarah-liguori?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Aaron Marquez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 78218.43,
+       "expenditures": 69384.32,
+       "status": "Advanced",
+       "url": "/az/candidate/aaron-marquez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Charles Lucking",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 43459.0,
+       "expenditures": 43151.65,
+       "status": "Lost",
+       "url": "/az/candidate/charles-lucking?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dorri Thyden",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 32440.62,
+       "expenditures": 24128.66,
+       "status": "Lost",
+       "url": "/az/candidate/dorri-thyden?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Reina Patocs",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38126.02,
+       "expenditures": 32649.63,
+       "status": "Advanced",
+       "url": "/az/candidate/reina-patocs?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "Arizona House of Representatives District 6",
+   "url": "/az/race/arizona-house-of-representatives-district-6-64894",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 13775.0,
+   "totalExpenditures": 16277.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mae Peshlakai",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1000.0,
+       "expenditures": 5029.97,
+       "status": "Won",
+       "url": "/az/candidate/mae-peshlakai?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Myron Tsosie",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 6370.0,
+       "expenditures": 4844.2,
+       "status": "Won",
+       "url": "/az/candidate/myron-tsosie-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lloyd Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3523.17,
+       "expenditures": 3520.35,
+       "status": "Lost",
+       "url": "/az/candidate/lloyd-johnson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Rich King",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2882.24,
+       "expenditures": 2882.24,
+       "status": "Lost",
+       "url": "/az/candidate/rich-king?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Mae Peshlakai",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1000.0,
+       "expenditures": 5029.97,
+       "status": "Advanced",
+       "url": "/az/candidate/mae-peshlakai?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Myron Tsosie",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 6370.0,
+       "expenditures": 4844.2,
+       "status": "Advanced",
+       "url": "/az/candidate/myron-tsosie-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Angela Maloney",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/az/candidate/angela-maloney?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Lloyd Johnson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3523.17,
+       "expenditures": 3520.35,
+       "status": "Advanced",
+       "url": "/az/candidate/lloyd-johnson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Rich King",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2882.24,
+       "expenditures": 2882.24,
+       "status": "Advanced",
+       "url": "/az/candidate/rich-king?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "Arizona House of Representatives District 7",
+   "url": "/az/race/arizona-house-of-representatives-district-7-64895",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 422521.0,
+   "totalExpenditures": 414090.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "David Marshall",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 71495.88,
+       "expenditures": 68262.18,
+       "status": "Won",
+       "url": "/az/candidate/david-marshall?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Walter Blackman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 87987.22,
+       "expenditures": 84281.1,
+       "status": "Won",
+       "url": "/az/candidate/walt-blackman-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kevin Chiquete",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8949.6,
+       "expenditures": 6578.18,
+       "status": "Lost",
+       "url": "/az/candidate/kevin-chiquete?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nancy Hartl",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13209.33,
+       "expenditures": 17165.47,
+       "status": "Lost",
+       "url": "/az/candidate/nancy-hartl?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Kevin Chiquete",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8949.6,
+       "expenditures": 6578.18,
+       "status": "Advanced",
+       "url": "/az/candidate/kevin-chiquete?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nancy Hartl",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13209.33,
+       "expenditures": 17165.47,
+       "status": "Advanced",
+       "url": "/az/candidate/nancy-hartl?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "David Marshall",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 71495.88,
+       "expenditures": 68262.18,
+       "status": "Advanced",
+       "url": "/az/candidate/david-marshall?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Walter Blackman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 87987.22,
+       "expenditures": 84281.1,
+       "status": "Advanced",
+       "url": "/az/candidate/walt-blackman-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Andrew Costanzo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14955.19,
+       "expenditures": 14879.64,
+       "status": "Lost",
+       "url": "/az/candidate/andrew-costanzo?cycle=2024-election-cycle"
+      },
+      {
+       "name": "John Fillmore",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 66400.0,
+       "expenditures": 66400.0,
+       "status": "Lost",
+       "url": "/az/candidate/john-fillmore-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Barby Allyn Ingle",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 8985.0,
+       "expenditures": 5985.0,
+       "status": "Lost",
+       "url": "/az/candidate/barby-allyn-ingle?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Steven Slaton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 150538.43,
+       "expenditures": 150538.43,
+       "status": "Lost",
+       "url": "/az/candidate/steven-slaton?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "Arizona House of Representatives District 8",
+   "url": "/az/race/arizona-house-of-representatives-district-8-64896",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 219921.0,
+   "totalExpenditures": 176860.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Janeen Connolly",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 110057.72,
+       "expenditures": 68839.81,
+       "status": "Won",
+       "url": "/az/candidate/janeen-connolly?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brian Garcia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 63243.04,
+       "expenditures": 63243.04,
+       "status": "Won",
+       "url": "/az/candidate/brian-garcia?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Caden Darrow",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20553.4,
+       "expenditures": 18676.37,
+       "status": "Lost",
+       "url": "/az/candidate/caden-darrow?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Janeen Connolly",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 110057.72,
+       "expenditures": 68839.81,
+       "status": "Advanced",
+       "url": "/az/candidate/janeen-connolly?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brian Garcia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 63243.04,
+       "expenditures": 63243.04,
+       "status": "Advanced",
+       "url": "/az/candidate/brian-garcia?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Juan Mendez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26066.59,
+       "expenditures": 26101.24,
+       "status": "Lost",
+       "url": "/az/candidate/juan-jose-mendez-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Caden Darrow",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20553.4,
+       "expenditures": 18676.37,
+       "status": "Advanced",
+       "url": "/az/candidate/caden-darrow?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "Arizona House of Representatives District 9",
+   "url": "/az/race/arizona-house-of-representatives-district-9-64897",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 818703.0,
+   "totalExpenditures": 883009.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lorena Austin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 334358.48,
+       "expenditures": 365972.62,
+       "status": "Won",
+       "url": "/az/candidate/lorena-austin?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Seth Blattman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 324274.0,
+       "expenditures": 353990.59,
+       "status": "Won",
+       "url": "/az/candidate/seth-blattman-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kylie Barber",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 73883.4,
+       "expenditures": 67369.66,
+       "status": "Lost",
+       "url": "/az/candidate/kylie-barber?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mary Ann Mendoza",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 86187.56,
+       "expenditures": 95676.0,
+       "status": "Lost",
+       "url": "/az/candidate/mary-ann-mendoza?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Lorena Austin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 334358.48,
+       "expenditures": 365972.62,
+       "status": "Advanced",
+       "url": "/az/candidate/lorena-austin?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Seth Blattman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 324274.0,
+       "expenditures": 353990.59,
+       "status": "Advanced",
+       "url": "/az/candidate/seth-blattman-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Kylie Barber",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 73883.4,
+       "expenditures": 67369.66,
+       "status": "Advanced",
+       "url": "/az/candidate/kylie-barber?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mary Ann Mendoza",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 86187.56,
+       "expenditures": 95676.0,
+       "status": "Advanced",
+       "url": "/az/candidate/mary-ann-mendoza?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "Arizona State Senate District 1",
+   "url": "/az/race/arizona-state-senate-district-1-64838",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1185120.0,
+   "totalExpenditures": 1308017.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mark Finchem",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 827238.51,
+       "expenditures": 912453.99,
+       "status": "Won",
+       "url": "/az/candidate/mark-finchem-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mike Fogel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 60051.5,
+       "expenditures": 59823.93,
+       "status": "Lost",
+       "url": "/az/candidate/mike-fogel?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Mike Fogel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 60051.5,
+       "expenditures": 59823.93,
+       "status": "Advanced",
+       "url": "/az/candidate/mike-fogel?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Mark Finchem",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 827238.51,
+       "expenditures": 912453.99,
+       "status": "Advanced",
+       "url": "/az/candidate/mark-finchem-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ken Bennett",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 131250.0,
+       "expenditures": 152805.02,
+       "status": "Lost",
+       "url": "/az/candidate/ken-bennett?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Steven Zipperman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 166580.1,
+       "expenditures": 182934.25,
+       "status": "Lost",
+       "url": "/az/candidate/steven-zipperman?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "1"
+  },
+  {
+   "office": "Arizona State Senate District 10",
+   "url": "/az/race/arizona-state-senate-district-10-64839",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 75480.0,
+   "totalExpenditures": 70289.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "David Farnsworth",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 13825.0,
+       "expenditures": 8688.13,
+       "status": "Won",
+       "url": "/az/candidate/david-christian-farnsworth-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Robert Doyle",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 61654.68,
+       "expenditures": 61600.91,
+       "status": "Lost",
+       "url": "/az/candidate/robert-doyle?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Robert Doyle",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 61654.68,
+       "expenditures": 61600.91,
+       "status": "Advanced",
+       "url": "/az/candidate/robert-doyle?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "David Farnsworth",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 13825.0,
+       "expenditures": 8688.13,
+       "status": "Advanced",
+       "url": "/az/candidate/david-christian-farnsworth-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "10"
+  },
+  {
+   "office": "Arizona State Senate District 11",
+   "url": "/az/race/arizona-state-senate-district-11-64840",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 135423.0,
+   "totalExpenditures": 122575.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Catherine H Miranda",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 80660.0,
+       "expenditures": 67829.98,
+       "status": "Won",
+       "url": "/az/candidate/catherine-miranda-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joshua Ayala",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54763.0,
+       "expenditures": 54745.43,
+       "status": "Lost",
+       "url": "/az/candidate/joshua-ayala?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Catherine H Miranda",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 80660.0,
+       "expenditures": 67829.98,
+       "status": "Advanced",
+       "url": "/az/candidate/catherine-miranda-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Joshua Ayala",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54763.0,
+       "expenditures": 54745.43,
+       "status": "Advanced",
+       "url": "/az/candidate/joshua-ayala?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "11"
+  },
+  {
+   "office": "Arizona State Senate District 12",
+   "url": "/az/race/arizona-state-senate-district-12-64841",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 146994.0,
+   "totalExpenditures": 162596.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Denise Mitzi Epstein",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 91395.28,
+       "expenditures": 106997.13,
+       "status": "Won",
+       "url": "/az/candidate/denise-mitzi-epstein-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Cara L Vicini",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 55598.96,
+       "expenditures": 55598.96,
+       "status": "Lost",
+       "url": "/az/candidate/cara-l-vicini?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Denise Mitzi Epstein",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 91395.28,
+       "expenditures": 106997.13,
+       "status": "Advanced",
+       "url": "/az/candidate/denise-mitzi-epstein-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Cara L Vicini",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 55598.96,
+       "expenditures": 55598.96,
+       "status": "Advanced",
+       "url": "/az/candidate/cara-l-vicini?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "12"
+  },
+  {
+   "office": "Arizona State Senate District 13",
+   "url": "/az/race/arizona-state-senate-district-13-64842",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 552438.0,
+   "totalExpenditures": 456547.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "JD Mesnard",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 275042.34,
+       "expenditures": 212746.03,
+       "status": "Won",
+       "url": "/az/candidate/jd-mesnard-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sharon Lee Winters",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 277395.37,
+       "expenditures": 243800.74,
+       "status": "Lost",
+       "url": "/az/candidate/sharon-lee-winters?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Sharon Lee Winters",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 277395.37,
+       "expenditures": 243800.74,
+       "status": "Advanced",
+       "url": "/az/candidate/sharon-lee-winters?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "JD Mesnard",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 275042.34,
+       "expenditures": 212746.03,
+       "status": "Advanced",
+       "url": "/az/candidate/jd-mesnard-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "13"
+  },
+  {
+   "office": "Arizona State Senate District 14",
+   "url": "/az/race/arizona-state-senate-district-14-64843",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 236654.0,
+   "totalExpenditures": 113462.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Warren Petersen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 182515.81,
+       "expenditures": 59323.78,
+       "status": "Won",
+       "url": "/az/candidate/warren-petersen-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Elizabeth Brown",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 54138.0,
+       "expenditures": 54138.0,
+       "status": "Lost",
+       "url": "/az/candidate/elizabeth-brown?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Elizabeth Brown",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 54138.0,
+       "expenditures": 54138.0,
+       "status": "Advanced",
+       "url": "/az/candidate/elizabeth-brown?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Warren Petersen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 182515.81,
+       "expenditures": 59323.78,
+       "status": "Advanced",
+       "url": "/az/candidate/warren-petersen-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "14"
+  },
+  {
+   "office": "Arizona State Senate District 15",
+   "url": "/az/race/arizona-state-senate-district-15-64844",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 76663.0,
+   "totalExpenditures": 125488.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jake Hoffman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22110.05,
+       "expenditures": 70934.79,
+       "status": "Won",
+       "url": "/az/candidate/jake-hoffman-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Alan Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 54553.0,
+       "expenditures": 54553.0,
+       "status": "Lost",
+       "url": "/az/candidate/alan-smith?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Alan Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 54553.0,
+       "expenditures": 54553.0,
+       "status": "Advanced",
+       "url": "/az/candidate/alan-smith?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Jake Hoffman",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 22110.05,
+       "expenditures": 70934.79,
+       "status": "Advanced",
+       "url": "/az/candidate/jake-hoffman-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "15"
+  },
+  {
+   "office": "Arizona State Senate District 16",
+   "url": "/az/race/arizona-state-senate-district-16-64845",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 446278.0,
+   "totalExpenditures": 451298.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Thomas J Shope Jr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 289647.85,
+       "expenditures": 302997.14,
+       "status": "Won",
+       "url": "/az/candidate/thomas-shope-jr-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Stacey Seaman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 156630.1,
+       "expenditures": 148301.29,
+       "status": "Lost",
+       "url": "/az/candidate/stacey-seaman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Stacey Seaman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 156630.1,
+       "expenditures": 148301.29,
+       "status": "Advanced",
+       "url": "/az/candidate/stacey-seaman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Thomas J Shope Jr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 289647.85,
+       "expenditures": 302997.14,
+       "status": "Advanced",
+       "url": "/az/candidate/thomas-shope-jr-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "16"
+  },
+  {
+   "office": "Arizona State Senate District 17",
+   "url": "/az/race/arizona-state-senate-district-17-64846",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 996892.0,
+   "totalExpenditures": 1017513.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Vince Leach",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 356049.27,
+       "expenditures": 351554.49,
+       "status": "Won",
+       "url": "/az/candidate/venden-vince-w-leach-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "John Mclean",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 542783.45,
+       "expenditures": 540511.56,
+       "status": "Lost",
+       "url": "/az/candidate/john-mclean?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "John Mclean",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 542783.45,
+       "expenditures": 540511.56,
+       "status": "Advanced",
+       "url": "/az/candidate/john-mclean?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Vince Leach",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 356049.27,
+       "expenditures": 351554.49,
+       "status": "Advanced",
+       "url": "/az/candidate/venden-vince-w-leach-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Justine L Wadsack",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 98058.9,
+       "expenditures": 125447.08,
+       "status": "Lost",
+       "url": "/az/candidate/justine-l-wadsack-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "17"
+  },
+  {
+   "office": "Arizona State Senate District 18",
+   "url": "/az/race/arizona-state-senate-district-18-64847",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 82570.0,
+   "totalExpenditures": 49255.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Priya Sundareshan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 82570.47,
+       "expenditures": 49254.58,
+       "status": "Won",
+       "url": "/az/candidate/priya-sundareshan?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Priya Sundareshan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 82570.47,
+       "expenditures": 49254.58,
+       "status": "Advanced",
+       "url": "/az/candidate/priya-sundareshan?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "18"
+  },
+  {
+   "office": "Arizona State Senate District 19",
+   "url": "/az/race/arizona-state-senate-district-19-64848",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 192331.0,
+   "totalExpenditures": 115160.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "David Gowan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 134314.16,
+       "expenditures": 57334.44,
+       "status": "Won",
+       "url": "/az/candidate/david-gowan-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Bob Karp",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 58017.07,
+       "expenditures": 57825.67,
+       "status": "Lost",
+       "url": "/az/candidate/bob-karp-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Bob Karp",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 58017.07,
+       "expenditures": 57825.67,
+       "status": "Advanced",
+       "url": "/az/candidate/bob-karp-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "David Gowan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 134314.16,
+       "expenditures": 57334.44,
+       "status": "Advanced",
+       "url": "/az/candidate/david-gowan-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "19"
+  },
+  {
+   "office": "Arizona State Senate District 2",
+   "url": "/az/race/arizona-state-senate-district-2-64849",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1007282.0,
+   "totalExpenditures": 1059649.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Shawnna Bolick",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 388931.02,
+       "expenditures": 385980.33,
+       "status": "Won",
+       "url": "/az/candidate/shawnna-bolick-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Judy Schwiebert",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 590834.3,
+       "expenditures": 646175.54,
+       "status": "Lost",
+       "url": "/az/candidate/judy-schwiebert-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Judy Schwiebert",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 590834.3,
+       "expenditures": 646175.54,
+       "status": "Advanced",
+       "url": "/az/candidate/judy-schwiebert-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Shawnna Bolick",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 388931.02,
+       "expenditures": 385980.33,
+       "status": "Advanced",
+       "url": "/az/candidate/shawnna-bolick-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Josh Barnett",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27516.2,
+       "expenditures": 27493.45,
+       "status": "Lost",
+       "url": "/az/candidate/josh-barnett?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "2"
+  },
+  {
+   "office": "Arizona State Senate District 20",
+   "url": "/az/race/arizona-state-senate-district-20-64850",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 11226.0,
+   "totalExpenditures": 14522.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Sally Ann Gonzales",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 11225.65,
+       "expenditures": 14521.95,
+       "status": "Won",
+       "url": "/az/candidate/sally-ann-gonzales-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Sally Ann Gonzales",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 11225.65,
+       "expenditures": 14521.95,
+       "status": "Advanced",
+       "url": "/az/candidate/sally-ann-gonzales-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "20"
+  },
+  {
+   "office": "Arizona State Senate District 21",
+   "url": "/az/race/arizona-state-senate-district-21-64851",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 29944.0,
+   "totalExpenditures": 35459.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Rosanna Gabaldon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 29944.0,
+       "expenditures": 35458.74,
+       "status": "Won",
+       "url": "/az/candidate/rosanna-gabaldon-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Rosanna Gabaldon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 29944.0,
+       "expenditures": 35458.74,
+       "status": "Advanced",
+       "url": "/az/candidate/rosanna-gabaldon-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "21"
+  },
+  {
+   "office": "Arizona State Senate District 22",
+   "url": "/az/race/arizona-state-senate-district-22-64852",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 131313.0,
+   "totalExpenditures": 129206.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Eva Diaz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 97181.68,
+       "expenditures": 92479.06,
+       "status": "Won",
+       "url": "/az/candidate/eva-diaz?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Eva Diaz",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 97181.68,
+       "expenditures": 92479.06,
+       "status": "Advanced",
+       "url": "/az/candidate/eva-diaz?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Leezah Sun",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 34131.0,
+       "expenditures": 36726.57,
+       "status": "Lost",
+       "url": "/az/candidate/leezah-sun-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "22"
+  },
+  {
+   "office": "Arizona State Senate District 23",
+   "url": "/az/race/arizona-state-senate-district-23-64853",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 158411.0,
+   "totalExpenditures": 102563.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Brian Fernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 116707.42,
+       "expenditures": 60534.95,
+       "status": "Won",
+       "url": "/az/candidate/brian-fernandez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Michelle Altherr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 39180.44,
+       "expenditures": 39180.44,
+       "status": "Lost",
+       "url": "/az/candidate/michelle-altherr?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Brian Fernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 116707.42,
+       "expenditures": 60534.95,
+       "status": "Advanced",
+       "url": "/az/candidate/brian-fernandez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jesus Lugo Jr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2523.19,
+       "expenditures": 2847.62,
+       "status": "Lost",
+       "url": "/az/candidate/jesus-lugo-jr?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Michelle Altherr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 39180.44,
+       "expenditures": 39180.44,
+       "status": "Advanced",
+       "url": "/az/candidate/michelle-altherr?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "23"
+  },
+  {
+   "office": "Arizona State Senate District 24",
+   "url": "/az/race/arizona-state-senate-district-24-64854",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 218373.0,
+   "totalExpenditures": 211925.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Analise Ortiz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 193130.18,
+       "expenditures": 186682.2,
+       "status": "Won",
+       "url": "/az/candidate/analise-ortiz?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Analise Ortiz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 193130.18,
+       "expenditures": 186682.2,
+       "status": "Advanced",
+       "url": "/az/candidate/analise-ortiz?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mario Garcia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 25242.37,
+       "expenditures": 25242.37,
+       "status": "Lost",
+       "url": "/az/candidate/mario-garcia?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "24"
+  },
+  {
+   "office": "Arizona State Senate District 25",
+   "url": "/az/race/arizona-state-senate-district-25-64855",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 147112.0,
+   "totalExpenditures": 106975.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Timothy Dunn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 144800.0,
+       "expenditures": 104663.01,
+       "status": "Won",
+       "url": "/az/candidate/timothy-dunn-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Sonya Willis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2311.51,
+       "expenditures": 2311.51,
+       "status": "Withdrew",
+       "url": "/az/candidate/sonya-willis?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Timothy Dunn",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 144800.0,
+       "expenditures": 104663.01,
+       "status": "Advanced",
+       "url": "/az/candidate/timothy-dunn-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "25"
+  },
+  {
+   "office": "Arizona State Senate District 26",
+   "url": "/az/race/arizona-state-senate-district-26-64856",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 139694.0,
+   "totalExpenditures": 133522.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Flavio Bravo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 85206.2,
+       "expenditures": 79033.5,
+       "status": "Won",
+       "url": "/az/candidate/flavio-bravo?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Victor Harris",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54488.0,
+       "expenditures": 54488.0,
+       "status": "Lost",
+       "url": "/az/candidate/victor-harris?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Flavio Bravo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 85206.2,
+       "expenditures": 79033.5,
+       "status": "Advanced",
+       "url": "/az/candidate/flavio-bravo?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Victor Harris",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54488.0,
+       "expenditures": 54488.0,
+       "status": "Advanced",
+       "url": "/az/candidate/victor-harris?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "26"
+  },
+  {
+   "office": "Arizona State Senate District 27",
+   "url": "/az/race/arizona-state-senate-district-27-64857",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 56886.0,
+   "totalExpenditures": 38312.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Kevin Payne",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 43188.59,
+       "expenditures": 24614.12,
+       "status": "Won",
+       "url": "/az/candidate/kevin-payne-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Joshua Abbott",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13697.63,
+       "expenditures": 13697.63,
+       "status": "Withdrew",
+       "url": "/az/candidate/joshua-abbott?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Kevin Payne",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 43188.59,
+       "expenditures": 24614.12,
+       "status": "Advanced",
+       "url": "/az/candidate/kevin-payne-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "27"
+  },
+  {
+   "office": "Arizona State Senate District 28",
+   "url": "/az/race/arizona-state-senate-district-28-64858",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 60433.0,
+   "totalExpenditures": 34147.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Frank Carroll",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 60432.87,
+       "expenditures": 34146.97,
+       "status": "Won",
+       "url": "/az/candidate/frank-carroll-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Frank Carroll",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 60432.87,
+       "expenditures": 34146.97,
+       "status": "Advanced",
+       "url": "/az/candidate/frank-carroll-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "28"
+  },
+  {
+   "office": "Arizona State Senate District 29",
+   "url": "/az/race/arizona-state-senate-district-29-64859",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 195302.0,
+   "totalExpenditures": 184776.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Janae Shamp",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 136121.21,
+       "expenditures": 125595.11,
+       "status": "Won",
+       "url": "/az/candidate/janae-shamp?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Eric Stafford",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 59180.6,
+       "expenditures": 59180.6,
+       "status": "Lost",
+       "url": "/az/candidate/eric-stafford?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Eric Stafford",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 59180.6,
+       "expenditures": 59180.6,
+       "status": "Advanced",
+       "url": "/az/candidate/eric-stafford?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Janae Shamp",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 136121.21,
+       "expenditures": 125595.11,
+       "status": "Advanced",
+       "url": "/az/candidate/janae-shamp?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "29"
+  },
+  {
+   "office": "Arizona State Senate District 3",
+   "url": "/az/race/arizona-state-senate-district-3-64860",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 74407.0,
+   "totalExpenditures": 31327.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "John Kavanagh",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 74407.32,
+       "expenditures": 31327.4,
+       "status": "Won",
+       "url": "/az/candidate/john-kavanagh-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "John Kavanagh",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 74407.32,
+       "expenditures": 31327.4,
+       "status": "Advanced",
+       "url": "/az/candidate/john-kavanagh-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "3"
+  },
+  {
+   "office": "Arizona State Senate District 30",
+   "url": "/az/race/arizona-state-senate-district-30-64861",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 154240.0,
+   "totalExpenditures": 137933.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Hildy L Angius",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 83689.87,
+       "expenditures": 74639.31,
+       "status": "Won",
+       "url": "/az/candidate/hildy-l-angius?cycle=2024-election-cycle"
+      },
+      {
+       "name": "J'aime Morgaine",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 58248.34,
+       "expenditures": 52346.22,
+       "status": "Lost",
+       "url": "/az/candidate/jaime-morgaine?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "J'aime Morgaine",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 58248.34,
+       "expenditures": 52346.22,
+       "status": "Advanced",
+       "url": "/az/candidate/jaime-morgaine?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Hildy L Angius",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 83689.87,
+       "expenditures": 74639.31,
+       "status": "Advanced",
+       "url": "/az/candidate/hildy-l-angius?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ashley Gerich",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2326.31,
+       "expenditures": 1004.65,
+       "status": "Lost",
+       "url": "/az/candidate/ashley-gerich?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kimberly Zanon",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9975.08,
+       "expenditures": 9943.08,
+       "status": "Lost",
+       "url": "/az/candidate/kimberly-zanon?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "30"
+  },
+  {
+   "office": "Arizona State Senate District 4",
+   "url": "/az/race/arizona-state-senate-district-4-64862",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 913451.0,
+   "totalExpenditures": 896624.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Carine Werner",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 408621.35,
+       "expenditures": 389219.77,
+       "status": "Won",
+       "url": "/az/candidate/carine-werner?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Christine Marsh",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 504129.26,
+       "expenditures": 506700.7,
+       "status": "Lost",
+       "url": "/az/candidate/christine-porter-marsh-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Christine Marsh",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 504129.26,
+       "expenditures": 506700.7,
+       "status": "Advanced",
+       "url": "/az/candidate/christine-porter-marsh-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Carine Werner",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 408621.35,
+       "expenditures": 389219.77,
+       "status": "Advanced",
+       "url": "/az/candidate/carine-werner?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kenneth Bowers Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 700.0,
+       "expenditures": 703.8,
+       "status": "Lost",
+       "url": "/az/candidate/kenneth-robinson-bowers-jr-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "4"
+  },
+  {
+   "office": "Arizona State Senate District 5",
+   "url": "/az/race/arizona-state-senate-district-5-64863",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 60004.0,
+   "totalExpenditures": 92329.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lela Alston",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 59615.61,
+       "expenditures": 91899.4,
+       "status": "Won",
+       "url": "/az/candidate/lela-alston-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joshua Ortega",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 388.56,
+       "expenditures": 429.16,
+       "status": "Lost",
+       "url": "/az/candidate/joshua-ortega?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Lela Alston",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 59615.61,
+       "expenditures": 91899.4,
+       "status": "Advanced",
+       "url": "/az/candidate/lela-alston-can?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Joshua Ortega",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 388.56,
+       "expenditures": 429.16,
+       "status": "Advanced",
+       "url": "/az/candidate/joshua-ortega?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "5"
+  },
+  {
+   "office": "Arizona State Senate District 6",
+   "url": "/az/race/arizona-state-senate-district-6-64864",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 10325.0,
+   "totalExpenditures": 9766.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Theresa Hatathlie",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 10324.91,
+       "expenditures": 9766.19,
+       "status": "Won",
+       "url": "/az/candidate/theresa-hatathlie?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Theresa Hatathlie",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 10324.91,
+       "expenditures": 9766.19,
+       "status": "Advanced",
+       "url": "/az/candidate/theresa-hatathlie?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "6"
+  },
+  {
+   "office": "Arizona State Senate District 7",
+   "url": "/az/race/arizona-state-senate-district-7-64865",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1302004.0,
+   "totalExpenditures": 1438201.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Wendy Rogers",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1090048.33,
+       "expenditures": 1151913.81,
+       "status": "Won",
+       "url": "/az/candidate/wendy-rogers-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Haley Creighton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11568.97,
+       "expenditures": 11568.97,
+       "status": "Lost",
+       "url": "/az/candidate/haley-creighton?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Haley Creighton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11568.97,
+       "expenditures": 11568.97,
+       "status": "Advanced",
+       "url": "/az/candidate/haley-creighton?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Roberto Reveles",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 29412.49,
+       "expenditures": 27949.0,
+       "status": "Lost",
+       "url": "/az/candidate/roberto-reveles?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Wendy Rogers",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1090048.33,
+       "expenditures": 1151913.81,
+       "status": "Advanced",
+       "url": "/az/candidate/wendy-rogers-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Cook",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 170974.48,
+       "expenditures": 246769.53,
+       "status": "Lost",
+       "url": "/az/candidate/david-cook-can?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "7"
+  },
+  {
+   "office": "Arizona State Senate District 8",
+   "url": "/az/race/arizona-state-senate-district-8-64866",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 184422.0,
+   "totalExpenditures": 183920.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lauren Kuby",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 102082.35,
+       "expenditures": 97680.42,
+       "status": "Won",
+       "url": "/az/candidate/lauren-kuby?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Roxana Holzapfel",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 73344.39,
+       "expenditures": 77244.94,
+       "status": "Lost",
+       "url": "/az/candidate/roxana-holzapfel?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Lauren Kuby",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 102082.35,
+       "expenditures": 97680.42,
+       "status": "Advanced",
+       "url": "/az/candidate/lauren-kuby?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Melody Hernandez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/az/candidate/melody-savannah-hernandez-can?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ivan Pemberton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 8995.0,
+       "expenditures": 8995.0,
+       "status": "Lost",
+       "url": "/az/candidate/ivan-pemberton?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Roxana Holzapfel",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 73344.39,
+       "expenditures": 77244.94,
+       "status": "Advanced",
+       "url": "/az/candidate/roxana-holzapfel?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "8"
+  },
+  {
+   "office": "Arizona State Senate District 9",
+   "url": "/az/race/arizona-state-senate-district-9-64867",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 362492.0,
+   "totalExpenditures": 459955.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Eva Burch",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 233898.42,
+       "expenditures": 288045.24,
+       "status": "Won",
+       "url": "/az/candidate/eva-burch?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Robert Scantlebury",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 126164.37,
+       "expenditures": 167085.3,
+       "status": "Lost",
+       "url": "/az/candidate/robert-scantlebury?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Eva Burch",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 233898.42,
+       "expenditures": 288045.24,
+       "status": "Advanced",
+       "url": "/az/candidate/eva-burch?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "July 30, 2024",
+     "candidates": [
+      {
+       "name": "Robert Scantlebury",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 126164.37,
+       "expenditures": 167085.3,
+       "status": "Advanced",
+       "url": "/az/candidate/robert-scantlebury?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Christopher Stapley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2429.59,
+       "expenditures": 4824.05,
+       "status": "Lost",
+       "url": "/az/candidate/christopher-stapley?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "9"
+  }
+ ]
+}

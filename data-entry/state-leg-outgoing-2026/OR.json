@@ -1,0 +1,86 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 Oregon House of Representatives election",
+   "senate": "2026 Oregon State Senate election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "11": [
+   {
+    "name": "Jami Cate",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for State Senate (eliminated in the State Senate primary)"
+   }
+  ],
+  "17": [
+   {
+    "name": "Ed Diehl",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for the governorship of Oregon (eliminated in the gubernatorial primary)"
+   }
+  ],
+  "18": [
+   {
+    "name": "Rick Lewis",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "27": [
+   {
+    "name": "Ken Helm",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "40": [
+   {
+    "name": "Annessa Hartman",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring due to illness"
+   }
+  ],
+  "52": [
+   {
+    "name": "Jeff Helfrich",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for State Senate"
+   }
+  ],
+  "7": [
+   {
+    "name": "John Lively",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "9": [
+   {
+    "name": "Boomer Wright",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ]
+ },
+ "senate": {
+  "3": [
+   {
+    "name": "Jeff Golden",
+    "party": "D",
+    "category": "retiring",
+    "reason": "2019 is retiring"
+   }
+  ]
+ }
+}

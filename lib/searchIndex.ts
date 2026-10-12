@@ -12,6 +12,11 @@ import {
 
 import { getAllCandidateSlugs, getCandidatePage } from "@/lib/candidateIndex";
 import { pastElectionSearchEntries } from "@/lib/pastElections";
+import { stateLegDistricts, UNICAMERAL_STATES } from "@/data/stateLegDistricts";
+import { statesData } from "@/data/statesData";
+import { districtHash, shortDistrictName } from "@/lib/stateLegAtlas";
+import { getAllStateLegCandidatePages } from "@/lib/stateLegCandidateIndex";
+import type { LegislatorSearchRow } from "@/lib/searchQuery";
 
 import type { SearchEntry } from "@/lib/searchQuery";
 export type { SearchEntry };
@@ -139,7 +144,39 @@ function buildIndex(): SearchEntry[] {
       if (entry) entry.terms += ` ${candidate.name}`;
     }
   }
+  // State legislative districts: one entry per district, landing on its atlas page. Added after
+  // the kind/sublabel pass above so the "/states" href is not relabelled as a governor seat.
+  for (const state of statesData) {
+    const chambers = stateLegDistricts[state.abbr];
+    if (!chambers) continue;
+    const unicameral = UNICAMERAL_STATES.has(state.abbr);
+    for (const chamber of ["house", "senate"] as const) {
+      const districts = chambers[chamber];
+      if (!districts || (unicameral && chamber === "house")) continue;
+      const chamberLabel = unicameral ? "Legislature" : chamber === "house" ? "State House" : "State Senate";
+      for (const d of districts) {
+        const members = (d.incumbents ?? []).map((i) => i.name).join(", ");
+        entries.push({
+          kind: "seat",
+          label: `${state.name} ${chamberLabel} District ${d.number}`,
+          sublabel: `State legislative district${members ? ` · ${members}` : ""}`,
+          href: `/states/${state.id}/legislature/${chamber}${districtHash(chamber, d.number)}`,
+          terms: `${state.name} ${state.abbr} ${chamberLabel} ${chamber === "house" ? "hd" : "sd"} ${d.number} district legislature legislative ${members}`.toLowerCase(),
+        });
+      }
+    }
+  }
   return [...new Map(entries.map((entry) => [`${entry.kind}:${entry.href}`, entry])).values()];
 }
 
 export const searchIndex = buildIndex();
+
+/** [name, slug, state abbr, party, chamber + district, latest year, sitting 1/0] per state legislative candidate. */
+export const legislatorSearchRows: LegislatorSearchRow[] = getAllStateLegCandidatePages()
+  .filter((p) => p.races.length > 0 || p.position)
+  .map((p) => {
+    const latest = p.races[0];
+    const seat = p.positionChamber && p.positionDistrict ? { chamber: p.positionChamber, district: p.positionDistrict } : latest ? { chamber: latest.chamber, district: latest.district } : null;
+    const where = seat ? `${UNICAMERAL_STATES.has(p.abbr) ? "Legislature" : seat.chamber === "house" ? "State House" : "State Senate"} ${shortDistrictName(seat.chamber, seat.district)}` : "";
+    return [p.name, p.slug, p.abbr, p.party, where, latest?.year ?? 0, p.position ? 1 : 0];
+  });

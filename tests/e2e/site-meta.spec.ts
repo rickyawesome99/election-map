@@ -11,9 +11,12 @@ test("the footer links to the About page", async ({ page }) => {
 });
 
 test("the sitemap lists race, past-election, candidate and county pages, and no redirects", async ({ request }) => {
-  const xml = await (await request.get("/sitemap.xml")).text();
+  // Split since the state legislative candidate pages: /sitemap/0.xml is the site, the rest those pages.
+  const xml = await (await request.get("/sitemap/0.xml")).text();
   const paths = [...xml.matchAll(/<loc>([^<]*)<\/loc>/g)].map((m) => new URL(m[1]).pathname);
   expect(paths.length).toBeGreaterThan(9000);
+  const legXml = await (await request.get("/sitemap/1.xml")).text();
+  expect(legXml).toContain("/candidates/bill-roemer-oh");
   for (const p of ["/about", "/senate/ga", "/senate/me2", "/house/oh-09", "/governor/oh", "/house/oh-09/2024", "/president/pa/2024", "/methodology/sources"]) expect(paths).toContain(p);
   expect(paths.some((p) => p.startsWith("/candidates/"))).toBe(true);
   expect(paths.some((p) => p.startsWith("/historical/"))).toBe(true);
@@ -24,7 +27,8 @@ test("the sitemap lists race, past-election, candidate and county pages, and no 
 test("robots.txt points at the sitemap and keeps crawlers out of the audit pages", async ({ request }) => {
   const txt = await (await request.get("/robots.txt")).text();
   expect(txt).toMatch(/Disallow: \/audit\//);
-  expect(txt).toMatch(/Sitemap: .*\/sitemap\.xml/);
+  expect(txt).toMatch(/Sitemap: .*\/sitemap\/0\.xml/);
+  expect(txt).toMatch(/Sitemap: .*\/sitemap\/1\.xml/);
 });
 
 test("pages carry share cards: the site card by default, a race card on race pages", async ({ page, request }) => {

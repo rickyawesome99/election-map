@@ -1,0 +1,109 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 Pennsylvania House of Representatives election",
+   "senate": "2026 Pennsylvania Senate election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "100": [
+   {
+    "name": "Bryan Cutler",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retired"
+   }
+  ],
+  "121": [
+   {
+    "name": "Eddie Day Pashinski",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retired"
+   }
+  ],
+  "130": [
+   {
+    "name": "David Maloney",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retired"
+   }
+  ],
+  "148": [
+   {
+    "name": "Mary Jo Daley",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retired"
+   }
+  ],
+  "166": [
+   {
+    "name": "Greg Vitali",
+    "party": "D",
+    "category": "lost primary",
+    "reason": "lost renomination to Judy Trombetta"
+   }
+  ],
+  "195": [
+   {
+    "name": "Keith Harris",
+    "party": "D",
+    "category": "lost primary",
+    "reason": "lost renomination to Sierra McNeil"
+   }
+  ],
+  "200": [
+   {
+    "name": "Chris Rabb",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retired to run for U.S. House"
+   }
+  ],
+  "22": [
+   {
+    "name": "Ana Tiburcio",
+    "party": "D",
+    "category": "lost primary",
+    "reason": "lost renomination to Ce-Ce Gerlach"
+   }
+  ],
+  "45": [
+   {
+    "name": "Anita Kulik",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retired"
+   }
+  ],
+  "50": [
+   {
+    "name": "Bud Cook",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Ben Humble"
+   }
+  ],
+  "88": [
+   {
+    "name": "Sheryl Delozier",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retired"
+   }
+  ],
+  "98": [
+   {
+    "name": "Tom Jones",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retired to run for run for State Senate"
+   }
+  ]
+ },
+ "senate": {}
+}

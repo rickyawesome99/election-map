@@ -1,0 +1,59 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 South Carolina House of Representatives election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "115": [
+   {
+    "name": "Spencer Wetmore",
+    "party": "D",
+    "category": "not running",
+    "reason": ""
+   }
+  ],
+  "4": [
+   {
+    "name": "Davey Hiott",
+    "party": "R",
+    "category": "not running",
+    "reason": ""
+   }
+  ],
+  "52": [
+   {
+    "name": "Jermaine Johnson",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "running for governor"
+   }
+  ],
+  "86": [
+   {
+    "name": "Bill Taylor",
+    "party": "R",
+    "category": "not running",
+    "reason": ""
+   }
+  ],
+  "96": [
+   {
+    "name": "Ryan McCabe",
+    "party": "R",
+    "category": "not running",
+    "reason": ""
+   }
+  ],
+  "99": [
+   {
+    "name": "Mark Smith",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "running for South Carolina's 1st congressional district"
+   }
+  ]
+ }
+}

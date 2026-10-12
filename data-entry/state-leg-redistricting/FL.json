@@ -1,0 +1,7596 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 99.1,
+      "key": "1",
+      "popPct": 96.4
+     },
+     {
+      "areaPct": 0.9,
+      "key": "2",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Escambia",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 178249,
+    "pres2020New": 22.1,
+    "pres2020Old": 22.5,
+    "retainedAreaPct": 99.1,
+    "retainedPopPct": 96.4,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-1; gained the rest from the old HD-2 (4%). Entirely in Escambia County. 2020 presidential margin R+22.5 on the 2016\u20132020 lines \u2192 R+22.1 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 62.8,
+      "key": "10",
+      "popPct": 56.7
+     },
+     {
+      "areaPct": 23.9,
+      "key": "19",
+      "popPct": 24.3
+     },
+     {
+      "areaPct": 4.5,
+      "key": "21",
+      "popPct": 12.9
+     },
+     {
+      "areaPct": 8.7,
+      "key": "20",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Columbia",
+      "popPct": 37.8
+     },
+     {
+      "county": "Alachua",
+      "popPct": 22.3
+     },
+     {
+      "county": "Bradford",
+      "popPct": 15.5
+     },
+     {
+      "county": "Baker",
+      "popPct": 15.4
+     },
+     {
+      "county": "Union",
+      "popPct": 8.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Bradford",
+      "popPct": 15.5
+     },
+     {
+      "county": "Union",
+      "popPct": 8.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Suwannee",
+      "popPct": 26.7
+     },
+     {
+      "county": "Hamilton",
+      "popPct": 8.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 183217,
+    "pres2020New": 41.1,
+    "pres2020Old": 50.4,
+    "retainedAreaPct": 62.8,
+    "retainedPopPct": 56.7,
+    "text": "Kept 57% of its population from the 2016\u20132020 HD-10; gained the rest from the old HD-19 (24%), the old HD-21 (13%), the old HD-20 (6%). Counties: gained Bradford (16%), Union (9%); lost Suwannee, Hamilton. 2020 presidential margin R+50.4 on the 2016\u20132020 lines \u2192 R+41.1 on the current lines.",
+    "toEra": "current"
+   },
+   "100": {
+    "contributors": [
+     {
+      "areaPct": 97.8,
+      "key": "93",
+      "popPct": 90.2
+     },
+     {
+      "areaPct": 1.3,
+      "key": "94",
+      "popPct": 5.3
+     },
+     {
+      "areaPct": 0.9,
+      "key": "92",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Broward",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 57.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 179203,
+    "pres2020New": -0.5,
+    "pres2020Old": -3.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-100; it draws from the old HD-93 (90%), the old HD-94 (5%), the old HD-92 (4%). Counties: lost Miami-Dade. 2020 presidential margin D+3.5 on the 2016\u20132020 lines \u2192 D+0.5 on the current lines.",
+    "toEra": "current"
+   },
+   "101": {
+    "contributors": [
+     {
+      "areaPct": 35.0,
+      "key": "99",
+      "popPct": 49.0
+     },
+     {
+      "areaPct": 58.3,
+      "key": "100",
+      "popPct": 40.2
+     },
+     {
+      "areaPct": 6.7,
+      "key": "98",
+      "popPct": 10.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Broward",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 178778,
+    "pres2020New": -14.2,
+    "pres2020Old": -44.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-101; it draws from the old HD-99 (49%), the old HD-100 (40%), the old HD-98 (11%). Entirely in Broward County. 2020 presidential margin D+44.4 on the 2016\u20132020 lines \u2192 D+14.2 on the current lines.",
+    "toEra": "current"
+   },
+   "102": {
+    "contributors": [
+     {
+      "areaPct": 63.6,
+      "key": "98",
+      "popPct": 62.0
+     },
+     {
+      "areaPct": 30.2,
+      "key": "99",
+      "popPct": 26.4
+     },
+     {
+      "areaPct": 3.8,
+      "key": "97",
+      "popPct": 6.2
+     },
+     {
+      "areaPct": 1.4,
+      "key": "104",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 1.0,
+      "key": "102",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Broward",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 51.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 182879,
+    "pres2020New": -15.8,
+    "pres2020Old": -51.1,
+    "retainedAreaPct": 1.0,
+    "retainedPopPct": 2.5,
+    "text": "A new footprint: only 2% of its population was in the 2016\u20132020 HD-102; it draws from the old HD-98 (62%), the old HD-99 (26%), the old HD-97 (6%) and 1 more. Counties: lost Miami-Dade. 2020 presidential margin D+51.1 on the 2016\u20132020 lines \u2192 D+15.8 on the current lines.",
+    "toEra": "current"
+   },
+   "103": {
+    "contributors": [
+     {
+      "areaPct": 78.4,
+      "key": "104",
+      "popPct": 79.5
+     },
+     {
+      "areaPct": 14.0,
+      "key": "105",
+      "popPct": 9.4
+     },
+     {
+      "areaPct": 5.5,
+      "key": "103",
+      "popPct": 8.8
+     },
+     {
+      "areaPct": 2.0,
+      "key": "98",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Broward",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 76.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 181831,
+    "pres2020New": -18.6,
+    "pres2020Old": 8.6,
+    "retainedAreaPct": 5.5,
+    "retainedPopPct": 8.8,
+    "text": "A new footprint: only 9% of its population was in the 2016\u20132020 HD-103; it draws from the old HD-104 (80%), the old HD-105 (9%), the old HD-98 (2%). Counties: lost Miami-Dade. 2020 presidential margin R+8.6 on the 2016\u20132020 lines \u2192 D+18.6 on the current lines.",
+    "toEra": "current"
+   },
+   "104": {
+    "contributors": [
+     {
+      "areaPct": 57.9,
+      "key": "102",
+      "popPct": 62.1
+     },
+     {
+      "areaPct": 19.7,
+      "key": "103",
+      "popPct": 14.9
+     },
+     {
+      "areaPct": 8.3,
+      "key": "104",
+      "popPct": 7.9
+     },
+     {
+      "areaPct": 5.1,
+      "key": "107",
+      "popPct": 7.0
+     },
+     {
+      "areaPct": 5.6,
+      "key": "101",
+      "popPct": 4.3
+     },
+     {
+      "areaPct": 3.3,
+      "key": "99",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Broward",
+      "popPct": 70.6
+     },
+     {
+      "county": "Miami-Dade",
+      "popPct": 29.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 29.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 178944,
+    "pres2020New": -45.1,
+    "pres2020Old": -15.8,
+    "retainedAreaPct": 8.3,
+    "retainedPopPct": 7.9,
+    "text": "A new footprint: only 8% of its population was in the 2016\u20132020 HD-104; it draws from the old HD-102 (62%), the old HD-103 (15%), the old HD-107 (7%) and 2 more. Counties: gained Miami-Dade (29%). 2020 presidential margin D+15.8 on the 2016\u20132020 lines \u2192 D+45.1 on the current lines.",
+    "toEra": "current"
+   },
+   "105": {
+    "contributors": [
+     {
+      "areaPct": 86.9,
+      "key": "101",
+      "popPct": 86.5
+     },
+     {
+      "areaPct": 9.8,
+      "key": "99",
+      "popPct": 8.9
+     },
+     {
+      "areaPct": 3.3,
+      "key": "102",
+      "popPct": 4.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Broward",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 54.8
+     },
+     {
+      "county": "Collier",
+      "popPct": 35.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 183221,
+    "pres2020New": -43.8,
+    "pres2020Old": 6.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-105; it draws from the old HD-101 (86%), the old HD-99 (9%), the old HD-102 (5%). Counties: lost Miami-Dade, Collier. 2020 presidential margin R+6.5 on the 2016\u20132020 lines \u2192 D+43.8 on the current lines.",
+    "toEra": "current"
+   },
+   "106": {
+    "contributors": [
+     {
+      "areaPct": 54.7,
+      "key": "113",
+      "popPct": 50.6
+     },
+     {
+      "areaPct": 45.3,
+      "key": "100",
+      "popPct": 49.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Collier",
+      "popPct": 99.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 179978,
+    "pres2020New": -10.2,
+    "pres2020Old": 26.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-106; it draws from the old HD-113 (51%), the old HD-100 (49%). Counties: gained Miami-Dade (100%); lost Collier. 2020 presidential margin R+26.8 on the 2016\u20132020 lines \u2192 D+10.2 on the current lines.",
+    "toEra": "current"
+   },
+   "107": {
+    "contributors": [
+     {
+      "areaPct": 61.6,
+      "key": "107",
+      "popPct": 70.0
+     },
+     {
+      "areaPct": 23.5,
+      "key": "102",
+      "popPct": 18.4
+     },
+     {
+      "areaPct": 9.2,
+      "key": "109",
+      "popPct": 5.9
+     },
+     {
+      "areaPct": 4.8,
+      "key": "100",
+      "popPct": 5.0
+     },
+     {
+      "areaPct": 0.9,
+      "key": "108",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 183450,
+    "pres2020New": -54.3,
+    "pres2020Old": -56.8,
+    "retainedAreaPct": 61.6,
+    "retainedPopPct": 70.0,
+    "text": "Kept 70% of its population from the 2016\u20132020 HD-107; gained the rest from the old HD-102 (18%), the old HD-109 (6%), the old HD-100 (5%) and 1 more. Entirely in Miami-Dade County. 2020 presidential margin D+56.8 on the 2016\u20132020 lines \u2192 D+54.3 on the current lines.",
+    "toEra": "current"
+   },
+   "108": {
+    "contributors": [
+     {
+      "areaPct": 81.9,
+      "key": "108",
+      "popPct": 76.7
+     },
+     {
+      "areaPct": 11.5,
+      "key": "107",
+      "popPct": 14.9
+     },
+     {
+      "areaPct": 4.3,
+      "key": "109",
+      "popPct": 5.8
+     },
+     {
+      "areaPct": 2.3,
+      "key": "113",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 180913,
+    "pres2020New": -62.7,
+    "pres2020Old": -65.2,
+    "retainedAreaPct": 81.9,
+    "retainedPopPct": 76.7,
+    "text": "Kept 77% of its population from the 2016\u20132020 HD-108; gained the rest from the old HD-107 (15%), the old HD-109 (6%), the old HD-113 (3%). Entirely in Miami-Dade County. 2020 presidential margin D+65.2 on the 2016\u20132020 lines \u2192 D+62.7 on the current lines.",
+    "toEra": "current"
+   },
+   "109": {
+    "contributors": [
+     {
+      "areaPct": 84.1,
+      "key": "109",
+      "popPct": 73.4
+     },
+     {
+      "areaPct": 7.2,
+      "key": "111",
+      "popPct": 13.2
+     },
+     {
+      "areaPct": 7.3,
+      "key": "108",
+      "popPct": 10.1
+     },
+     {
+      "areaPct": 1.3,
+      "key": "113",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 182192,
+    "pres2020New": -52.0,
+    "pres2020Old": -53.4,
+    "retainedAreaPct": 84.1,
+    "retainedPopPct": 73.4,
+    "text": "Kept 73% of its population from the 2016\u20132020 HD-109; gained the rest from the old HD-111 (13%), the old HD-108 (10%), the old HD-113 (3%). Entirely in Miami-Dade County. 2020 presidential margin D+53.4 on the 2016\u20132020 lines \u2192 D+52.0 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 96.8,
+      "key": "18",
+      "popPct": 99.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clay",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Clay",
+      "popPct": 99.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Duval",
+      "popPct": 52.1
+     },
+     {
+      "county": "Nassau",
+      "popPct": 47.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 177943,
+    "pres2020New": 33.4,
+    "pres2020Old": 32.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-11; it draws from the old HD-18 (100%). Counties: gained Clay (100%); lost Duval, Nassau. 2020 presidential margin R+32.6 on the 2016\u20132020 lines \u2192 R+33.4 on the current lines.",
+    "toEra": "current"
+   },
+   "110": {
+    "contributors": [
+     {
+      "areaPct": 54.0,
+      "key": "110",
+      "popPct": 63.9
+     },
+     {
+      "areaPct": 27.0,
+      "key": "103",
+      "popPct": 21.2
+     },
+     {
+      "areaPct": 9.1,
+      "key": "102",
+      "popPct": 9.1
+     },
+     {
+      "areaPct": 4.6,
+      "key": "111",
+      "popPct": 5.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 177447,
+    "pres2020New": 20.5,
+    "pres2020Old": 23.3,
+    "retainedAreaPct": 54.0,
+    "retainedPopPct": 63.9,
+    "text": "Kept 64% of its population from the 2016\u20132020 HD-110; gained the rest from the old HD-103 (21%), the old HD-102 (9%), the old HD-111 (5%). Entirely in Miami-Dade County. 2020 presidential margin R+23.3 on the 2016\u20132020 lines \u2192 R+20.5 on the current lines.",
+    "toEra": "current"
+   },
+   "111": {
+    "contributors": [
+     {
+      "areaPct": 22.9,
+      "key": "103",
+      "popPct": 56.0
+     },
+     {
+      "areaPct": 68.8,
+      "key": "105",
+      "popPct": 26.0
+     },
+     {
+      "areaPct": 5.0,
+      "key": "116",
+      "popPct": 7.4
+     },
+     {
+      "areaPct": 2.7,
+      "key": "115",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 0.5,
+      "key": "118",
+      "popPct": 4.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 184489,
+    "pres2020New": 15.2,
+    "pres2020Old": 24.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-111; it draws from the old HD-103 (56%), the old HD-105 (26%), the old HD-116 (7%) and 2 more. Entirely in Miami-Dade County. 2020 presidential margin R+24.6 on the 2016\u20132020 lines \u2192 R+15.2 on the current lines.",
+    "toEra": "current"
+   },
+   "112": {
+    "contributors": [
+     {
+      "areaPct": 67.0,
+      "key": "111",
+      "popPct": 62.0
+     },
+     {
+      "areaPct": 12.5,
+      "key": "110",
+      "popPct": 22.2
+     },
+     {
+      "areaPct": 4.6,
+      "key": "112",
+      "popPct": 8.5
+     },
+     {
+      "areaPct": 2.7,
+      "key": "113",
+      "popPct": 6.5
+     },
+     {
+      "areaPct": 8.4,
+      "key": "115",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 186102,
+    "pres2020New": 28.2,
+    "pres2020Old": -10.6,
+    "retainedAreaPct": 4.6,
+    "retainedPopPct": 8.5,
+    "text": "A new footprint: only 8% of its population was in the 2016\u20132020 HD-112; it draws from the old HD-111 (62%), the old HD-110 (22%), the old HD-113 (6%) and 1 more. Entirely in Miami-Dade County. 2020 presidential margin D+10.6 on the 2016\u20132020 lines \u2192 R+28.2 on the current lines.",
+    "toEra": "current"
+   },
+   "113": {
+    "contributors": [
+     {
+      "areaPct": 83.3,
+      "key": "112",
+      "popPct": 65.4
+     },
+     {
+      "areaPct": 16.1,
+      "key": "113",
+      "popPct": 29.9
+     },
+     {
+      "areaPct": 0.6,
+      "key": "109",
+      "popPct": 4.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 186614,
+    "pres2020New": -12.0,
+    "pres2020Old": -18.3,
+    "retainedAreaPct": 16.1,
+    "retainedPopPct": 29.9,
+    "text": "A new footprint: only 30% of its population was in the 2016\u20132020 HD-113; it draws from the old HD-112 (65%), the old HD-109 (5%). Entirely in Miami-Dade County. 2020 presidential margin D+18.3 on the 2016\u20132020 lines \u2192 D+12.0 on the current lines.",
+    "toEra": "current"
+   },
+   "114": {
+    "contributors": [
+     {
+      "areaPct": 51.8,
+      "key": "114",
+      "popPct": 59.5
+     },
+     {
+      "areaPct": 41.0,
+      "key": "112",
+      "popPct": 23.7
+     },
+     {
+      "areaPct": 4.8,
+      "key": "115",
+      "popPct": 13.8
+     },
+     {
+      "areaPct": 2.4,
+      "key": "111",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 173923,
+    "pres2020New": -0.7,
+    "pres2020Old": 0.4,
+    "retainedAreaPct": 51.8,
+    "retainedPopPct": 59.5,
+    "text": "Kept 60% of its population from the 2016\u20132020 HD-114; gained the rest from the old HD-112 (24%), the old HD-115 (14%), the old HD-111 (3%). Entirely in Miami-Dade County. 2020 presidential margin R+0.4 on the 2016\u20132020 lines \u2192 D+0.7 on the current lines.",
+    "toEra": "current"
+   },
+   "115": {
+    "contributors": [
+     {
+      "areaPct": 56.6,
+      "key": "115",
+      "popPct": 66.3
+     },
+     {
+      "areaPct": 42.8,
+      "key": "114",
+      "popPct": 32.5
+     },
+     {
+      "areaPct": 0.5,
+      "key": "117",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 183905,
+    "pres2020New": 1.8,
+    "pres2020Old": 5.0,
+    "retainedAreaPct": 56.6,
+    "retainedPopPct": 66.3,
+    "text": "Kept 66% of its population from the 2016\u20132020 HD-115; gained the rest from the old HD-114 (32%), the old HD-117 (1%). Entirely in Miami-Dade County. 2020 presidential margin R+5.0 on the 2016\u20132020 lines \u2192 R+1.8 on the current lines.",
+    "toEra": "current"
+   },
+   "116": {
+    "contributors": [
+     {
+      "areaPct": 85.3,
+      "key": "116",
+      "popPct": 83.7
+     },
+     {
+      "areaPct": 12.0,
+      "key": "105",
+      "popPct": 13.4
+     },
+     {
+      "areaPct": 2.3,
+      "key": "115",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 180512,
+    "pres2020New": 20.0,
+    "pres2020Old": 17.7,
+    "retainedAreaPct": 85.3,
+    "retainedPopPct": 83.7,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-116; gained the rest from the old HD-105 (13%), the old HD-115 (3%). Entirely in Miami-Dade County. 2020 presidential margin R+17.7 on the 2016\u20132020 lines \u2192 R+20.0 on the current lines.",
+    "toEra": "current"
+   },
+   "117": {
+    "contributors": [
+     {
+      "areaPct": 87.2,
+      "key": "117",
+      "popPct": 87.7
+     },
+     {
+      "areaPct": 10.2,
+      "key": "120",
+      "popPct": 9.8
+     },
+     {
+      "areaPct": 2.5,
+      "key": "115",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 179534,
+    "pres2020New": -30.2,
+    "pres2020Old": -30.7,
+    "retainedAreaPct": 87.2,
+    "retainedPopPct": 87.7,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-117; gained the rest from the old HD-120 (10%), the old HD-115 (2%). Entirely in Miami-Dade County. 2020 presidential margin D+30.7 on the 2016\u20132020 lines \u2192 D+30.2 on the current lines.",
+    "toEra": "current"
+   },
+   "118": {
+    "contributors": [
+     {
+      "areaPct": 61.5,
+      "key": "118",
+      "popPct": 64.3
+     },
+     {
+      "areaPct": 14.7,
+      "key": "119",
+      "popPct": 23.0
+     },
+     {
+      "areaPct": 21.7,
+      "key": "120",
+      "popPct": 10.8
+     },
+     {
+      "areaPct": 1.3,
+      "key": "117",
+      "popPct": 1.4
+     },
+     {
+      "areaPct": 0.7,
+      "key": "115",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 182534,
+    "pres2020New": 16.0,
+    "pres2020Old": 13.2,
+    "retainedAreaPct": 61.5,
+    "retainedPopPct": 64.3,
+    "text": "Kept 64% of its population from the 2016\u20132020 HD-118; gained the rest from the old HD-119 (23%), the old HD-120 (11%), the old HD-117 (1%) and 1 more. Entirely in Miami-Dade County. 2020 presidential margin R+13.2 on the 2016\u20132020 lines \u2192 R+16.0 on the current lines.",
+    "toEra": "current"
+   },
+   "119": {
+    "contributors": [
+     {
+      "areaPct": 42.4,
+      "key": "119",
+      "popPct": 67.5
+     },
+     {
+      "areaPct": 15.1,
+      "key": "118",
+      "popPct": 20.3
+     },
+     {
+      "areaPct": 14.9,
+      "key": "105",
+      "popPct": 11.2
+     },
+     {
+      "areaPct": 27.5,
+      "key": "120",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 183269,
+    "pres2020New": 8.6,
+    "pres2020Old": 15.9,
+    "retainedAreaPct": 42.4,
+    "retainedPopPct": 67.5,
+    "text": "Kept 68% of its population from the 2016\u20132020 HD-119; gained the rest from the old HD-118 (20%), the old HD-105 (11%), the old HD-120 (1%). Entirely in Miami-Dade County. 2020 presidential margin R+15.9 on the 2016\u20132020 lines \u2192 R+8.6 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 46.5,
+      "key": "15",
+      "popPct": 46.8
+     },
+     {
+      "areaPct": 46.5,
+      "key": "16",
+      "popPct": 41.8
+     },
+     {
+      "areaPct": 6.4,
+      "key": "13",
+      "popPct": 9.5
+     },
+     {
+      "areaPct": 0.7,
+      "key": "12",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Duval",
+      "popPct": 99.3
+     },
+     {
+      "county": "Clay",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 184742,
+    "pres2020New": 4.9,
+    "pres2020Old": 10.3,
+    "retainedAreaPct": 0.7,
+    "retainedPopPct": 1.9,
+    "text": "A new footprint: only 2% of its population was in the 2016\u20132020 HD-12; it draws from the old HD-15 (47%), the old HD-16 (42%), the old HD-13 (10%). Spans Duval, Clay counties. 2020 presidential margin R+10.3 on the 2016\u20132020 lines \u2192 R+4.9 on the current lines.",
+    "toEra": "current"
+   },
+   "120": {
+    "contributors": [
+     {
+      "areaPct": 91.4,
+      "key": "120",
+      "popPct": 77.6
+     },
+     {
+      "areaPct": 0.2,
+      "key": "117",
+      "popPct": 19.5
+     },
+     {
+      "areaPct": 8.0,
+      "key": "105",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 55.9
+     },
+     {
+      "county": "Monroe",
+      "popPct": 44.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 187872,
+    "pres2020New": 4.9,
+    "pres2020Old": 6.6,
+    "retainedAreaPct": 91.4,
+    "retainedPopPct": 77.6,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-120; gained the rest from the old HD-117 (20%), the old HD-105 (3%). Spans Miami-Dade, Monroe counties. 2020 presidential margin R+6.6 on the 2016\u20132020 lines \u2192 R+4.9 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 65.0,
+      "key": "14",
+      "popPct": 54.4
+     },
+     {
+      "areaPct": 28.6,
+      "key": "15",
+      "popPct": 31.4
+     },
+     {
+      "areaPct": 6.4,
+      "key": "13",
+      "popPct": 14.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Duval",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 177446,
+    "pres2020New": -28.5,
+    "pres2020Old": -32.0,
+    "retainedAreaPct": 6.4,
+    "retainedPopPct": 14.1,
+    "text": "A new footprint: only 14% of its population was in the 2016\u20132020 HD-13; it draws from the old HD-14 (54%), the old HD-15 (31%). Entirely in Duval County. 2020 presidential margin D+32.0 on the 2016\u20132020 lines \u2192 D+28.5 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 52.4,
+      "key": "13",
+      "popPct": 70.2
+     },
+     {
+      "areaPct": 37.7,
+      "key": "14",
+      "popPct": 24.2
+     },
+     {
+      "areaPct": 2.6,
+      "key": "12",
+      "popPct": 4.2
+     },
+     {
+      "areaPct": 7.4,
+      "key": "11",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Duval",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 175312,
+    "pres2020New": -31.4,
+    "pres2020Old": -33.1,
+    "retainedAreaPct": 37.7,
+    "retainedPopPct": 24.2,
+    "text": "A new footprint: only 24% of its population was in the 2016\u20132020 HD-14; it draws from the old HD-13 (70%), the old HD-12 (4%), the old HD-11 (1%). Entirely in Duval County. 2020 presidential margin D+33.1 on the 2016\u20132020 lines \u2192 D+31.4 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 75.9,
+      "key": "11",
+      "popPct": 59.9
+     },
+     {
+      "areaPct": 12.2,
+      "key": "14",
+      "popPct": 22.6
+     },
+     {
+      "areaPct": 11.8,
+      "key": "15",
+      "popPct": 17.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Duval",
+      "popPct": 50.4
+     },
+     {
+      "county": "Nassau",
+      "popPct": 49.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Nassau",
+      "popPct": 49.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 181429,
+    "pres2020New": 27.8,
+    "pres2020Old": 0.0,
+    "retainedAreaPct": 11.8,
+    "retainedPopPct": 17.5,
+    "text": "A new footprint: only 18% of its population was in the 2016\u20132020 HD-15; it draws from the old HD-11 (60%), the old HD-14 (23%). Counties: gained Nassau (50%). 2020 presidential margin Even  on the 2016\u20132020 lines \u2192 R+27.8 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 34.1,
+      "key": "12",
+      "popPct": 55.1
+     },
+     {
+      "areaPct": 64.3,
+      "key": "11",
+      "popPct": 41.9
+     },
+     {
+      "areaPct": 1.6,
+      "key": "13",
+      "popPct": 3.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Duval",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 181164,
+    "pres2020New": 15.2,
+    "pres2020Old": 10.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-16; it draws from the old HD-12 (55%), the old HD-11 (42%), the old HD-13 (3%). Entirely in Duval County. 2020 presidential margin R+10.9 on the 2016\u20132020 lines \u2192 R+15.2 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 80.9,
+      "key": "16",
+      "popPct": 65.0
+     },
+     {
+      "areaPct": 19.0,
+      "key": "12",
+      "popPct": 35.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Duval",
+      "popPct": 99.1
+     },
+     {
+      "county": "St. Johns",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Duval",
+      "popPct": 99.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 185814,
+    "pres2020New": 6.9,
+    "pres2020Old": 26.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-17; it draws from the old HD-16 (65%), the old HD-12 (35%). Counties: gained Duval (99%). 2020 presidential margin R+26.1 on the 2016\u20132020 lines \u2192 R+6.9 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "17",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Johns",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "St. Johns",
+      "popPct": 99.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Clay",
+      "popPct": 99.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 176638,
+    "pres2020New": 30.4,
+    "pres2020Old": 33.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-18; it draws from the old HD-17 (100%). Counties: gained St. Johns (100%); lost Clay. 2020 presidential margin R+33.3 on the 2016\u20132020 lines \u2192 R+30.4 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 91.8,
+      "key": "24",
+      "popPct": 76.1
+     },
+     {
+      "areaPct": 8.2,
+      "key": "17",
+      "popPct": 23.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Flagler",
+      "popPct": 67.0
+     },
+     {
+      "county": "St. Johns",
+      "popPct": 32.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Flagler",
+      "popPct": 67.0
+     },
+     {
+      "county": "St. Johns",
+      "popPct": 32.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Putnam",
+      "popPct": 46.2
+     },
+     {
+      "county": "Clay",
+      "popPct": 25.3
+     },
+     {
+      "county": "Bradford",
+      "popPct": 18.0
+     },
+     {
+      "county": "Union",
+      "popPct": 10.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 171662,
+    "pres2020New": 17.5,
+    "pres2020Old": 48.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-19; it draws from the old HD-24 (76%), the old HD-17 (24%). Counties: gained Flagler (67%), St. Johns (33%); lost Putnam, Clay, Bradford, Union. 2020 presidential margin R+48.1 on the 2016\u20132020 lines \u2192 R+17.5 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 82.9,
+      "key": "2",
+      "popPct": 89.3
+     },
+     {
+      "areaPct": 16.3,
+      "key": "3",
+      "popPct": 9.7
+     },
+     {
+      "areaPct": 0.8,
+      "key": "1",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Escambia",
+      "popPct": 81.8
+     },
+     {
+      "county": "Santa Rosa",
+      "popPct": 18.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 176871,
+    "pres2020New": 13.3,
+    "pres2020Old": 10.1,
+    "retainedAreaPct": 82.9,
+    "retainedPopPct": 89.3,
+    "text": "Kept 89% of its population from the 2016\u20132020 HD-2; gained the rest from the old HD-3 (10%), the old HD-1 (1%). Spans Escambia, Santa Rosa counties. 2020 presidential margin R+10.1 on the 2016\u20132020 lines \u2192 R+13.3 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 62.3,
+      "key": "19",
+      "popPct": 61.6
+     },
+     {
+      "areaPct": 22.8,
+      "key": "23",
+      "popPct": 16.0
+     },
+     {
+      "areaPct": 10.6,
+      "key": "24",
+      "popPct": 12.9
+     },
+     {
+      "areaPct": 4.2,
+      "key": "17",
+      "popPct": 9.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Putnam",
+      "popPct": 39.8
+     },
+     {
+      "county": "St. Johns",
+      "popPct": 22.1
+     },
+     {
+      "county": "Clay",
+      "popPct": 21.7
+     },
+     {
+      "county": "Marion",
+      "popPct": 16.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Putnam",
+      "popPct": 39.8
+     },
+     {
+      "county": "St. Johns",
+      "popPct": 22.1
+     },
+     {
+      "county": "Clay",
+      "popPct": 21.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Alachua",
+      "popPct": 75.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 183867,
+    "pres2020New": 42.3,
+    "pres2020Old": -32.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-20; it draws from the old HD-19 (62%), the old HD-23 (16%), the old HD-24 (13%) and 1 more. Counties: gained Putnam (40%), St. Johns (22%), Clay (22%); lost Alachua. 2020 presidential margin D+32.3 on the 2016\u20132020 lines \u2192 R+42.3 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 92.3,
+      "key": "20",
+      "popPct": 77.8
+     },
+     {
+      "areaPct": 1.0,
+      "key": "21",
+      "popPct": 10.4
+     },
+     {
+      "areaPct": 4.4,
+      "key": "23",
+      "popPct": 8.6
+     },
+     {
+      "areaPct": 2.3,
+      "key": "22",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Alachua",
+      "popPct": 66.1
+     },
+     {
+      "county": "Marion",
+      "popPct": 33.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Marion",
+      "popPct": 33.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Gilchrist",
+      "popPct": 9.6
+     },
+     {
+      "county": "Dixie",
+      "popPct": 9.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 174963,
+    "pres2020New": -30.6,
+    "pres2020Old": -4.3,
+    "retainedAreaPct": 1.0,
+    "retainedPopPct": 10.4,
+    "text": "A new footprint: only 10% of its population was in the 2016\u20132020 HD-21; it draws from the old HD-20 (78%), the old HD-23 (9%), the old HD-22 (3%). Counties: gained Marion (34%); lost Gilchrist, Dixie. 2020 presidential margin D+4.3 on the 2016\u20132020 lines \u2192 D+30.6 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 24.1,
+      "key": "21",
+      "popPct": 68.5
+     },
+     {
+      "areaPct": 73.1,
+      "key": "22",
+      "popPct": 23.5
+     },
+     {
+      "areaPct": 2.8,
+      "key": "20",
+      "popPct": 8.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Alachua",
+      "popPct": 66.7
+     },
+     {
+      "county": "Levy",
+      "popPct": 23.5
+     },
+     {
+      "county": "Gilchrist",
+      "popPct": 9.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Alachua",
+      "popPct": 66.7
+     },
+     {
+      "county": "Gilchrist",
+      "popPct": 9.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Marion",
+      "popPct": 75.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 182816,
+    "pres2020New": 1.5,
+    "pres2020Old": 26.2,
+    "retainedAreaPct": 73.1,
+    "retainedPopPct": 23.5,
+    "text": "A new footprint: only 24% of its population was in the 2016\u20132020 HD-22; it draws from the old HD-21 (68%), the old HD-20 (8%). Counties: gained Alachua (67%), Gilchrist (10%); lost Marion. 2020 presidential margin R+26.2 on the 2016\u20132020 lines \u2192 R+1.5 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 84.9,
+      "key": "34",
+      "popPct": 84.9
+     },
+     {
+      "areaPct": 15.1,
+      "key": "22",
+      "popPct": 15.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Citrus",
+      "popPct": 84.5
+     },
+     {
+      "county": "Marion",
+      "popPct": 15.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Citrus",
+      "popPct": 84.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 181284,
+    "pres2020New": 40.0,
+    "pres2020Old": 33.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-23; it draws from the old HD-34 (85%), the old HD-22 (15%). Counties: gained Citrus (84%). 2020 presidential margin R+33.5 on the 2016\u20132020 lines \u2192 R+40.0 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 77.9,
+      "key": "22",
+      "popPct": 61.2
+     },
+     {
+      "areaPct": 14.7,
+      "key": "23",
+      "popPct": 36.5
+     },
+     {
+      "areaPct": 3.4,
+      "key": "33",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Marion",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Flagler",
+      "popPct": 62.0
+     },
+     {
+      "county": "St. Johns",
+      "popPct": 20.9
+     },
+     {
+      "county": "Volusia",
+      "popPct": 17.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 168392,
+    "pres2020New": 23.2,
+    "pres2020Old": 24.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-24; it draws from the old HD-22 (61%), the old HD-23 (36%), the old HD-33 (2%). Counties: gained Marion (100%); lost Flagler, St. Johns, Volusia. 2020 presidential margin R+24.4 on the 2016\u20132020 lines \u2192 R+23.2 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "32",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lake",
+      "popPct": 99.1
+     },
+     {
+      "county": "Orange",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lake",
+      "popPct": 99.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Volusia",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 176446,
+    "pres2020New": 11.8,
+    "pres2020Old": 20.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-25; it draws from the old HD-32 (100%). Counties: gained Lake (99%); lost Volusia. 2020 presidential margin R+20.9 on the 2016\u20132020 lines \u2192 R+11.8 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 47.2,
+      "key": "31",
+      "popPct": 51.4
+     },
+     {
+      "areaPct": 32.5,
+      "key": "33",
+      "popPct": 28.5
+     },
+     {
+      "areaPct": 20.3,
+      "key": "32",
+      "popPct": 20.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lake",
+      "popPct": 99.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lake",
+      "popPct": 99.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Volusia",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 175107,
+    "pres2020New": 24.3,
+    "pres2020Old": 1.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-26; it draws from the old HD-31 (51%), the old HD-33 (28%), the old HD-32 (20%). Counties: gained Lake (99%); lost Volusia. 2020 presidential margin R+1.8 on the 2016\u20132020 lines \u2192 R+24.3 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 34.5,
+      "key": "23",
+      "popPct": 36.4
+     },
+     {
+      "areaPct": 3.3,
+      "key": "27",
+      "popPct": 21.0
+     },
+     {
+      "areaPct": 30.9,
+      "key": "31",
+      "popPct": 17.2
+     },
+     {
+      "areaPct": 3.5,
+      "key": "33",
+      "popPct": 12.0
+     },
+     {
+      "areaPct": 25.8,
+      "key": "24",
+      "popPct": 7.9
+     },
+     {
+      "areaPct": 1.9,
+      "key": "26",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 48.4
+     },
+     {
+      "county": "Volusia",
+      "popPct": 33.9
+     },
+     {
+      "county": "Lake",
+      "popPct": 17.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Marion",
+      "popPct": 48.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 188219,
+    "pres2020New": 31.6,
+    "pres2020Old": 13.6,
+    "retainedAreaPct": 3.3,
+    "retainedPopPct": 21.0,
+    "text": "A new footprint: only 21% of its population was in the 2016\u20132020 HD-27; it draws from the old HD-23 (36%), the old HD-31 (17%), the old HD-33 (12%) and 2 more. Counties: gained Marion (48%). 2020 presidential margin R+13.6 on the 2016\u20132020 lines \u2192 R+31.6 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 43.3,
+      "key": "26",
+      "popPct": 56.3
+     },
+     {
+      "areaPct": 30.2,
+      "key": "25",
+      "popPct": 36.8
+     },
+     {
+      "areaPct": 26.5,
+      "key": "24",
+      "popPct": 6.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Volusia",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Volusia",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Seminole",
+      "popPct": 99.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 179791,
+    "pres2020New": 7.8,
+    "pres2020Old": 0.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-28; it draws from the old HD-26 (56%), the old HD-25 (37%), the old HD-24 (7%). Counties: gained Volusia (100%); lost Seminole. 2020 presidential margin R+0.1 on the 2016\u20132020 lines \u2192 R+7.8 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 54.5,
+      "key": "27",
+      "popPct": 60.1
+     },
+     {
+      "areaPct": 39.4,
+      "key": "26",
+      "popPct": 37.2
+     },
+     {
+      "areaPct": 2.9,
+      "key": "24",
+      "popPct": 2.1
+     },
+     {
+      "areaPct": 3.1,
+      "key": "25",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Volusia",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Volusia",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Seminole",
+      "popPct": 99.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 172275,
+    "pres2020New": 6.3,
+    "pres2020Old": -0.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-29; it draws from the old HD-27 (60%), the old HD-26 (37%), the old HD-24 (2%) and 1 more. Counties: gained Volusia (100%); lost Seminole. 2020 presidential margin D+0.3 on the 2016\u20132020 lines \u2192 R+6.3 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "3",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Santa Rosa",
+      "popPct": 84.0
+     },
+     {
+      "county": "Okaloosa",
+      "popPct": 15.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 184124,
+    "pres2020New": 50.9,
+    "pres2020Old": 49.5,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Santa Rosa, Okaloosa counties.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 18.4,
+      "key": "25",
+      "popPct": 58.9
+     },
+     {
+      "areaPct": 18.9,
+      "key": "50",
+      "popPct": 24.4
+     },
+     {
+      "areaPct": 43.7,
+      "key": "27",
+      "popPct": 16.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Volusia",
+      "popPct": 75.5
+     },
+     {
+      "county": "Brevard",
+      "popPct": 24.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Volusia",
+      "popPct": 75.5
+     },
+     {
+      "county": "Brevard",
+      "popPct": 24.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Seminole",
+      "popPct": 67.4
+     },
+     {
+      "county": "Orange",
+      "popPct": 32.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 180848,
+    "pres2020New": 25.9,
+    "pres2020Old": -13.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-30; it draws from the old HD-25 (59%), the old HD-50 (24%), the old HD-27 (17%). Counties: gained Volusia (76%), Brevard (24%); lost Seminole, Orange. 2020 presidential margin D+13.8 on the 2016\u20132020 lines \u2192 R+25.9 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 81.4,
+      "key": "51",
+      "popPct": 75.3
+     },
+     {
+      "areaPct": 8.3,
+      "key": "50",
+      "popPct": 15.1
+     },
+     {
+      "areaPct": 10.3,
+      "key": "52",
+      "popPct": 9.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Brevard",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Brevard",
+      "popPct": 99.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Lake",
+      "popPct": 64.4
+     },
+     {
+      "county": "Orange",
+      "popPct": 35.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 178686,
+    "pres2020New": 21.5,
+    "pres2020Old": 19.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-31; it draws from the old HD-51 (75%), the old HD-50 (15%), the old HD-52 (10%). Counties: gained Brevard (100%); lost Lake, Orange. 2020 presidential margin R+19.4 on the 2016\u20132020 lines \u2192 R+21.5 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 79.2,
+      "key": "52",
+      "popPct": 82.7
+     },
+     {
+      "areaPct": 20.8,
+      "key": "51",
+      "popPct": 17.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Brevard",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Brevard",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Lake",
+      "popPct": 99.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 181913,
+    "pres2020New": 16.3,
+    "pres2020Old": 12.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-32; it draws from the old HD-52 (83%), the old HD-51 (17%). Counties: gained Brevard (100%); lost Lake. 2020 presidential margin R+12.4 on the 2016\u20132020 lines \u2192 R+16.3 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 93.9,
+      "key": "53",
+      "popPct": 91.8
+     },
+     {
+      "areaPct": 6.1,
+      "key": "52",
+      "popPct": 8.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Brevard",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Brevard",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Sumter",
+      "popPct": 63.2
+     },
+     {
+      "county": "Lake",
+      "popPct": 23.9
+     },
+     {
+      "county": "Marion",
+      "popPct": 12.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 182187,
+    "pres2020New": 5.8,
+    "pres2020Old": 35.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-33; it draws from the old HD-53 (92%), the old HD-52 (8%). Counties: gained Brevard (100%); lost Sumter, Lake, Marion. 2020 presidential margin R+35.6 on the 2016\u20132020 lines \u2192 R+5.8 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 81.3,
+      "key": "54",
+      "popPct": 89.0
+     },
+     {
+      "areaPct": 18.7,
+      "key": "53",
+      "popPct": 11.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Indian River",
+      "popPct": 88.9
+     },
+     {
+      "county": "Brevard",
+      "popPct": 10.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Indian River",
+      "popPct": 88.9
+     },
+     {
+      "county": "Brevard",
+      "popPct": 10.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Citrus",
+      "popPct": 88.6
+     },
+     {
+      "county": "Hernando",
+      "popPct": 11.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 179273,
+    "pres2020New": 22.4,
+    "pres2020Old": 41.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-34; it draws from the old HD-54 (89%), the old HD-53 (11%). Counties: gained Indian River (89%), Brevard (11%); lost Citrus, Hernando. 2020 presidential margin R+41.0 on the 2016\u20132020 lines \u2192 R+22.4 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 20.6,
+      "key": "50",
+      "popPct": 54.0
+     },
+     {
+      "areaPct": 1.1,
+      "key": "49",
+      "popPct": 28.1
+     },
+     {
+      "areaPct": 78.4,
+      "key": "42",
+      "popPct": 17.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 82.2
+     },
+     {
+      "county": "Osceola",
+      "popPct": 17.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 82.2
+     },
+     {
+      "county": "Osceola",
+      "popPct": 17.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hernando",
+      "popPct": 99.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 174976,
+    "pres2020New": -4.3,
+    "pres2020Old": 28.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-35; it draws from the old HD-50 (54%), the old HD-49 (28%), the old HD-42 (18%). Counties: gained Orange (82%), Osceola (18%); lost Hernando. 2020 presidential margin R+28.8 on the 2016\u20132020 lines \u2192 D+4.3 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 37.5,
+      "key": "29",
+      "popPct": 67.3
+     },
+     {
+      "areaPct": 62.5,
+      "key": "28",
+      "popPct": 32.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Seminole",
+      "popPct": 99.4
+     },
+     {
+      "county": "Volusia",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Seminole",
+      "popPct": 99.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pasco",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 181253,
+    "pres2020New": -4.2,
+    "pres2020Old": 21.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-36; it draws from the old HD-29 (67%), the old HD-28 (33%). Counties: gained Seminole (99%); lost Pasco. 2020 presidential margin R+21.6 on the 2016\u20132020 lines \u2192 D+4.2 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 23.9,
+      "key": "49",
+      "popPct": 54.8
+     },
+     {
+      "areaPct": 73.2,
+      "key": "28",
+      "popPct": 39.7
+     },
+     {
+      "areaPct": 0.7,
+      "key": "30",
+      "popPct": 3.2
+     },
+     {
+      "areaPct": 0.6,
+      "key": "47",
+      "popPct": 1.7
+     },
+     {
+      "areaPct": 1.5,
+      "key": "50",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 59.0
+     },
+     {
+      "county": "Seminole",
+      "popPct": 41.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 59.0
+     },
+     {
+      "county": "Seminole",
+      "popPct": 41.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pasco",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 171875,
+    "pres2020New": -11.5,
+    "pres2020Old": 24.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-37; it draws from the old HD-49 (55%), the old HD-28 (40%), the old HD-30 (3%) and 2 more. Counties: gained Orange (59%), Seminole (41%); lost Pasco. 2020 presidential margin R+24.3 on the 2016\u20132020 lines \u2192 D+11.5 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 56.5,
+      "key": "30",
+      "popPct": 61.5
+     },
+     {
+      "areaPct": 35.2,
+      "key": "28",
+      "popPct": 29.2
+     },
+     {
+      "areaPct": 8.4,
+      "key": "29",
+      "popPct": 9.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Seminole",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Seminole",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pasco",
+      "popPct": 99.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 169863,
+    "pres2020New": -7.9,
+    "pres2020Old": 13.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-38; it draws from the old HD-30 (62%), the old HD-28 (29%), the old HD-29 (9%). Counties: gained Seminole (100%); lost Pasco. 2020 presidential margin R+13.8 on the 2016\u20132020 lines \u2192 D+7.9 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 39.0,
+      "key": "31",
+      "popPct": 36.7
+     },
+     {
+      "areaPct": 45.4,
+      "key": "45",
+      "popPct": 32.7
+     },
+     {
+      "areaPct": 12.7,
+      "key": "29",
+      "popPct": 22.4
+     },
+     {
+      "areaPct": 1.8,
+      "key": "30",
+      "popPct": 6.2
+     },
+     {
+      "areaPct": 1.1,
+      "key": "44",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 71.9
+     },
+     {
+      "county": "Seminole",
+      "popPct": 28.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 71.9
+     },
+     {
+      "county": "Seminole",
+      "popPct": 28.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Polk",
+      "popPct": 79.7
+     },
+     {
+      "county": "Osceola",
+      "popPct": 20.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 182445,
+    "pres2020New": -1.1,
+    "pres2020Old": 16.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-39; it draws from the old HD-31 (37%), the old HD-45 (33%), the old HD-29 (22%) and 2 more. Counties: gained Orange (72%), Seminole (28%); lost Polk, Osceola. 2020 presidential margin R+16.1 on the 2016\u20132020 lines \u2192 D+1.1 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "4",
+      "popPct": 98.7
+     },
+     {
+      "areaPct": 0.4,
+      "key": "3",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Okaloosa",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 182328,
+    "pres2020New": 35.6,
+    "pres2020Old": 35.6,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 98.7,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-4; gained the rest from the old HD-3 (1%). Entirely in Okaloosa County. 2020 presidential margin R+35.6 on the 2016\u20132020 lines \u2192 R+35.6 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 67.2,
+      "key": "45",
+      "popPct": 68.1
+     },
+     {
+      "areaPct": 14.1,
+      "key": "46",
+      "popPct": 14.3
+     },
+     {
+      "areaPct": 9.9,
+      "key": "30",
+      "popPct": 9.4
+     },
+     {
+      "areaPct": 8.7,
+      "key": "47",
+      "popPct": 8.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 172280,
+    "pres2020New": -43.1,
+    "pres2020Old": 13.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-40; it draws from the old HD-45 (68%), the old HD-46 (14%), the old HD-30 (9%) and 1 more. Counties: gained Orange (100%); lost Polk. 2020 presidential margin R+13.9 on the 2016\u20132020 lines \u2192 D+43.1 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 80.7,
+      "key": "46",
+      "popPct": 89.7
+     },
+     {
+      "areaPct": 10.6,
+      "key": "44",
+      "popPct": 6.7
+     },
+     {
+      "areaPct": 3.4,
+      "key": "45",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 5.3,
+      "key": "48",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Polk",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 174965,
+    "pres2020New": -56.4,
+    "pres2020Old": 4.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-41; it draws from the old HD-46 (90%), the old HD-44 (7%), the old HD-45 (3%) and 1 more. Counties: gained Orange (100%); lost Polk. 2020 presidential margin R+4.7 on the 2016\u20132020 lines \u2192 D+56.4 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 77.4,
+      "key": "47",
+      "popPct": 80.0
+     },
+     {
+      "areaPct": 21.7,
+      "key": "30",
+      "popPct": 18.7
+     },
+     {
+      "areaPct": 0.8,
+      "key": "48",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 99.4
+     },
+     {
+      "county": "Seminole",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 99.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Osceola",
+      "popPct": 64.7
+     },
+     {
+      "county": "Polk",
+      "popPct": 35.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 189469,
+    "pres2020New": -18.1,
+    "pres2020Old": 6.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-42; it draws from the old HD-47 (80%), the old HD-30 (19%), the old HD-48 (1%). Counties: gained Orange (99%); lost Osceola, Polk. 2020 presidential margin R+6.5 on the 2016\u20132020 lines \u2192 D+18.1 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 23.8,
+      "key": "48",
+      "popPct": 44.7
+     },
+     {
+      "areaPct": 18.1,
+      "key": "49",
+      "popPct": 26.7
+     },
+     {
+      "areaPct": 51.1,
+      "key": "50",
+      "popPct": 22.6
+     },
+     {
+      "areaPct": 6.9,
+      "key": "47",
+      "popPct": 6.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Osceola",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 170295,
+    "pres2020New": -24.6,
+    "pres2020Old": -30.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-43; it draws from the old HD-48 (45%), the old HD-49 (27%), the old HD-50 (23%) and 1 more. Counties: gained Orange (100%); lost Osceola. 2020 presidential margin D+30.7 on the 2016\u20132020 lines \u2192 D+24.6 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 47.5,
+      "key": "48",
+      "popPct": 51.1
+     },
+     {
+      "areaPct": 42.9,
+      "key": "44",
+      "popPct": 43.6
+     },
+     {
+      "areaPct": 9.4,
+      "key": "50",
+      "popPct": 5.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 171936,
+    "pres2020New": -24.2,
+    "pres2020Old": -9.8,
+    "retainedAreaPct": 42.9,
+    "retainedPopPct": 43.6,
+    "text": "A new footprint: only 44% of its population was in the 2016\u20132020 HD-44; it draws from the old HD-48 (51%), the old HD-50 (5%). Entirely in Orange County. 2020 presidential margin D+9.8 on the 2016\u20132020 lines \u2192 D+24.2 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 73.2,
+      "key": "44",
+      "popPct": 82.3
+     },
+     {
+      "areaPct": 26.8,
+      "key": "39",
+      "popPct": 17.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 82.3
+     },
+     {
+      "county": "Osceola",
+      "popPct": 17.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Osceola",
+      "popPct": 17.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 178421,
+    "pres2020New": -5.4,
+    "pres2020Old": -38.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-45; it draws from the old HD-44 (82%), the old HD-39 (18%). Counties: gained Osceola (18%). 2020 presidential margin D+38.3 on the 2016\u20132020 lines \u2192 D+5.4 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 51.8,
+      "key": "43",
+      "popPct": 82.0
+     },
+     {
+      "areaPct": 36.1,
+      "key": "42",
+      "popPct": 13.1
+     },
+     {
+      "areaPct": 12.1,
+      "key": "39",
+      "popPct": 5.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Osceola",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Osceola",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Orange",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 176030,
+    "pres2020New": -30.7,
+    "pres2020Old": -61.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-46; it draws from the old HD-43 (82%), the old HD-42 (13%), the old HD-39 (5%). Counties: gained Osceola (100%); lost Orange. 2020 presidential margin D+61.6 on the 2016\u20132020 lines \u2192 D+30.7 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 72.0,
+      "key": "42",
+      "popPct": 46.7
+     },
+     {
+      "areaPct": 21.1,
+      "key": "43",
+      "popPct": 38.6
+     },
+     {
+      "areaPct": 6.8,
+      "key": "48",
+      "popPct": 14.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Osceola",
+      "popPct": 85.2
+     },
+     {
+      "county": "Orange",
+      "popPct": 14.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Osceola",
+      "popPct": 85.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 175604,
+    "pres2020New": -13.4,
+    "pres2020Old": -18.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-47; it draws from the old HD-42 (47%), the old HD-43 (39%), the old HD-48 (15%). Counties: gained Osceola (85%). 2020 presidential margin D+18.0 on the 2016\u20132020 lines \u2192 D+13.4 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 14.5,
+      "key": "41",
+      "popPct": 54.3
+     },
+     {
+      "areaPct": 78.6,
+      "key": "42",
+      "popPct": 40.4
+     },
+     {
+      "areaPct": 6.8,
+      "key": "56",
+      "popPct": 5.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 99.4
+     },
+     {
+      "county": "Osceola",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Polk",
+      "popPct": 99.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Orange",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 187707,
+    "pres2020New": 9.8,
+    "pres2020Old": -30.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-48; it draws from the old HD-41 (54%), the old HD-42 (40%), the old HD-56 (5%). Counties: gained Polk (99%); lost Orange. 2020 presidential margin D+30.0 on the 2016\u20132020 lines \u2192 R+9.8 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 87.2,
+      "key": "56",
+      "popPct": 53.0
+     },
+     {
+      "areaPct": 2.7,
+      "key": "40",
+      "popPct": 22.1
+     },
+     {
+      "areaPct": 7.5,
+      "key": "39",
+      "popPct": 14.3
+     },
+     {
+      "areaPct": 2.5,
+      "key": "41",
+      "popPct": 10.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Polk",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Orange",
+      "popPct": 99.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 173221,
+    "pres2020New": 26.8,
+    "pres2020Old": -24.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-49; it draws from the old HD-56 (53%), the old HD-40 (22%), the old HD-39 (14%) and 1 more. Counties: gained Polk (100%); lost Orange. 2020 presidential margin D+24.0 on the 2016\u20132020 lines \u2192 R+26.8 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 85.8,
+      "key": "5",
+      "popPct": 92.5
+     },
+     {
+      "areaPct": 14.2,
+      "key": "7",
+      "popPct": 7.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Walton",
+      "popPct": 41.6
+     },
+     {
+      "county": "Jackson",
+      "popPct": 26.0
+     },
+     {
+      "county": "Washington",
+      "popPct": 14.0
+     },
+     {
+      "county": "Holmes",
+      "popPct": 10.7
+     },
+     {
+      "county": "Calhoun",
+      "popPct": 7.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Calhoun",
+      "popPct": 7.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Bay",
+      "popPct": 6.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 181243,
+    "pres2020New": 53.2,
+    "pres2020Old": 53.7,
+    "retainedAreaPct": 85.8,
+    "retainedPopPct": 92.5,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-5; gained the rest from the old HD-7 (8%). Counties: gained Calhoun (8%); lost Bay. 2020 presidential margin R+53.7 on the 2016\u20132020 lines \u2192 R+53.2 on the current lines.",
+    "toEra": "current"
+   },
+   "50": {
+    "contributors": [
+     {
+      "areaPct": 60.9,
+      "key": "40",
+      "popPct": 75.1
+     },
+     {
+      "areaPct": 39.0,
+      "key": "39",
+      "popPct": 24.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Polk",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Orange",
+      "popPct": 66.9
+     },
+     {
+      "county": "Brevard",
+      "popPct": 33.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 179059,
+    "pres2020New": 14.7,
+    "pres2020Old": 2.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-50; it draws from the old HD-40 (75%), the old HD-39 (25%). Counties: gained Polk (100%); lost Orange, Brevard. 2020 presidential margin R+2.0 on the 2016\u20132020 lines \u2192 R+14.7 on the current lines.",
+    "toEra": "current"
+   },
+   "51": {
+    "contributors": [
+     {
+      "areaPct": 72.5,
+      "key": "39",
+      "popPct": 52.9
+     },
+     {
+      "areaPct": 27.5,
+      "key": "41",
+      "popPct": 47.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 98.9
+     },
+     {
+      "county": "Osceola",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Polk",
+      "popPct": 98.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Brevard",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 185080,
+    "pres2020New": 7.4,
+    "pres2020Old": 18.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-51; it draws from the old HD-39 (53%), the old HD-41 (47%). Counties: gained Polk (99%); lost Brevard. 2020 presidential margin R+18.8 on the 2016\u20132020 lines \u2192 R+7.4 on the current lines.",
+    "toEra": "current"
+   },
+   "52": {
+    "contributors": [
+     {
+      "areaPct": 65.8,
+      "key": "33",
+      "popPct": 69.0
+     },
+     {
+      "areaPct": 34.2,
+      "key": "35",
+      "popPct": 31.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sumter",
+      "popPct": 68.9
+     },
+     {
+      "county": "Hernando",
+      "popPct": 30.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Sumter",
+      "popPct": 68.9
+     },
+     {
+      "county": "Hernando",
+      "popPct": 30.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Brevard",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 187922,
+    "pres2020New": 36.5,
+    "pres2020Old": 17.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-52; it draws from the old HD-33 (69%), the old HD-35 (31%). Counties: gained Sumter (69%), Hernando (31%); lost Brevard. 2020 presidential margin R+17.5 on the 2016\u20132020 lines \u2192 R+36.5 on the current lines.",
+    "toEra": "current"
+   },
+   "53": {
+    "contributors": [
+     {
+      "areaPct": 30.4,
+      "key": "35",
+      "popPct": 69.3
+     },
+     {
+      "areaPct": 7.6,
+      "key": "37",
+      "popPct": 11.8
+     },
+     {
+      "areaPct": 46.0,
+      "key": "34",
+      "popPct": 11.3
+     },
+     {
+      "areaPct": 16.0,
+      "key": "36",
+      "popPct": 7.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hernando",
+      "popPct": 80.6
+     },
+     {
+      "county": "Pasco",
+      "popPct": 19.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hernando",
+      "popPct": 80.6
+     },
+     {
+      "county": "Pasco",
+      "popPct": 19.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Brevard",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 169264,
+    "pres2020New": 29.3,
+    "pres2020Old": 8.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-53; it draws from the old HD-35 (69%), the old HD-37 (12%), the old HD-34 (11%) and 1 more. Counties: gained Hernando (81%), Pasco (19%); lost Brevard. 2020 presidential margin R+8.4 on the 2016\u20132020 lines \u2192 R+29.3 on the current lines.",
+    "toEra": "current"
+   },
+   "54": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "38",
+      "popPct": 97.6
+     },
+     {
+      "areaPct": 0.6,
+      "key": "37",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pasco",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pasco",
+      "popPct": 99.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Indian River",
+      "popPct": 88.6
+     },
+     {
+      "county": "St. Lucie",
+      "popPct": 11.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 174652,
+    "pres2020New": 12.9,
+    "pres2020Old": 20.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-54; it draws from the old HD-38 (98%), the old HD-37 (2%). Counties: gained Pasco (100%); lost Indian River, St. Lucie. 2020 presidential margin R+20.4 on the 2016\u20132020 lines \u2192 R+12.9 on the current lines.",
+    "toEra": "current"
+   },
+   "55": {
+    "contributors": [
+     {
+      "areaPct": 67.0,
+      "key": "37",
+      "popPct": 87.6
+     },
+     {
+      "areaPct": 32.8,
+      "key": "38",
+      "popPct": 11.4
+     },
+     {
+      "areaPct": 0.2,
+      "key": "36",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pasco",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pasco",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Highlands",
+      "popPct": 63.8
+     },
+     {
+      "county": "Okeechobee",
+      "popPct": 24.9
+     },
+     {
+      "county": "Glades",
+      "popPct": 7.6
+     },
+     {
+      "county": "St. Lucie",
+      "popPct": 3.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 177261,
+    "pres2020New": 22.3,
+    "pres2020Old": 37.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-55; it draws from the old HD-37 (88%), the old HD-38 (11%), the old HD-36 (1%). Counties: gained Pasco (100%); lost Highlands, Okeechobee, Glades, St. Lucie. 2020 presidential margin R+37.6 on the 2016\u20132020 lines \u2192 R+22.3 on the current lines.",
+    "toEra": "current"
+   },
+   "56": {
+    "contributors": [
+     {
+      "areaPct": 97.0,
+      "key": "36",
+      "popPct": 88.9
+     },
+     {
+      "areaPct": 3.0,
+      "key": "37",
+      "popPct": 11.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pasco",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pasco",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Polk",
+      "popPct": 63.1
+     },
+     {
+      "county": "DeSoto",
+      "popPct": 21.0
+     },
+     {
+      "county": "Hardee",
+      "popPct": 15.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 176986,
+    "pres2020New": 20.6,
+    "pres2020Old": 29.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-56; it draws from the old HD-36 (89%), the old HD-37 (11%). Counties: gained Pasco (100%); lost Polk, DeSoto, Hardee. 2020 presidential margin R+29.6 on the 2016\u20132020 lines \u2192 R+20.6 on the current lines.",
+    "toEra": "current"
+   },
+   "57": {
+    "contributors": [
+     {
+      "areaPct": 83.5,
+      "key": "65",
+      "popPct": 71.4
+     },
+     {
+      "areaPct": 15.6,
+      "key": "64",
+      "popPct": 27.9
+     },
+     {
+      "areaPct": 0.8,
+      "key": "67",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pinellas",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pinellas",
+      "popPct": 99.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 182831,
+    "pres2020New": 11.4,
+    "pres2020Old": 3.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-57; it draws from the old HD-65 (71%), the old HD-64 (28%), the old HD-67 (1%). Counties: gained Pinellas (100%); lost Hillsborough. 2020 presidential margin R+3.4 on the 2016\u20132020 lines \u2192 R+11.4 on the current lines.",
+    "toEra": "current"
+   },
+   "58": {
+    "contributors": [
+     {
+      "areaPct": 14.6,
+      "key": "67",
+      "popPct": 55.7
+     },
+     {
+      "areaPct": 78.6,
+      "key": "66",
+      "popPct": 23.0
+     },
+     {
+      "areaPct": 6.5,
+      "key": "65",
+      "popPct": 21.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pinellas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pinellas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hillsborough",
+      "popPct": 99.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 168616,
+    "pres2020New": 6.0,
+    "pres2020Old": 9.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-58; it draws from the old HD-67 (56%), the old HD-66 (23%), the old HD-65 (21%). Counties: gained Pinellas (100%); lost Hillsborough. 2020 presidential margin R+9.4 on the 2016\u20132020 lines \u2192 R+6.0 on the current lines.",
+    "toEra": "current"
+   },
+   "59": {
+    "contributors": [
+     {
+      "areaPct": 58.7,
+      "key": "66",
+      "popPct": 59.5
+     },
+     {
+      "areaPct": 37.2,
+      "key": "67",
+      "popPct": 37.4
+     },
+     {
+      "areaPct": 4.0,
+      "key": "68",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pinellas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pinellas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 174984,
+    "pres2020New": 10.7,
+    "pres2020Old": -3.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-59; it draws from the old HD-66 (60%), the old HD-67 (37%), the old HD-68 (3%). Counties: gained Pinellas (100%); lost Hillsborough. 2020 presidential margin D+3.0 on the 2016\u20132020 lines \u2192 R+10.7 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 79.3,
+      "key": "6",
+      "popPct": 93.5
+     },
+     {
+      "areaPct": 20.7,
+      "key": "5",
+      "popPct": 6.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bay",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 175216,
+    "pres2020New": 43.4,
+    "pres2020Old": 41.6,
+    "retainedAreaPct": 79.3,
+    "retainedPopPct": 93.5,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-6; gained the rest from the old HD-5 (6%). Entirely in Bay County. 2020 presidential margin R+41.6 on the 2016\u20132020 lines \u2192 R+43.4 on the current lines.",
+    "toEra": "current"
+   },
+   "60": {
+    "contributors": [
+     {
+      "areaPct": 85.8,
+      "key": "68",
+      "popPct": 89.6
+     },
+     {
+      "areaPct": 2.4,
+      "key": "69",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 11.2,
+      "key": "67",
+      "popPct": 3.2
+     },
+     {
+      "areaPct": 0.7,
+      "key": "70",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pinellas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pinellas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 170717,
+    "pres2020New": -10.6,
+    "pres2020Old": -0.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-60; it draws from the old HD-68 (90%), the old HD-69 (5%), the old HD-67 (3%) and 1 more. Counties: gained Pinellas (100%); lost Hillsborough. 2020 presidential margin D+0.5 on the 2016\u20132020 lines \u2192 D+10.6 on the current lines.",
+    "toEra": "current"
+   },
+   "61": {
+    "contributors": [
+     {
+      "areaPct": 64.5,
+      "key": "69",
+      "popPct": 87.2
+     },
+     {
+      "areaPct": 8.0,
+      "key": "66",
+      "popPct": 11.7
+     },
+     {
+      "areaPct": 27.5,
+      "key": "70",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pinellas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pinellas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 175742,
+    "pres2020New": 5.0,
+    "pres2020Old": -56.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-61; it draws from the old HD-69 (87%), the old HD-66 (12%), the old HD-70 (1%). Counties: gained Pinellas (100%); lost Hillsborough. 2020 presidential margin D+56.8 on the 2016\u20132020 lines \u2192 R+5.0 on the current lines.",
+    "toEra": "current"
+   },
+   "62": {
+    "contributors": [
+     {
+      "areaPct": 37.4,
+      "key": "70",
+      "popPct": 40.1
+     },
+     {
+      "areaPct": 8.4,
+      "key": "59",
+      "popPct": 19.0
+     },
+     {
+      "areaPct": 5.9,
+      "key": "57",
+      "popPct": 13.6
+     },
+     {
+      "areaPct": 5.5,
+      "key": "61",
+      "popPct": 11.0
+     },
+     {
+      "areaPct": 6.5,
+      "key": "68",
+      "popPct": 7.3
+     },
+     {
+      "areaPct": 34.6,
+      "key": "60",
+      "popPct": 5.8
+     },
+     {
+      "areaPct": 1.6,
+      "key": "58",
+      "popPct": 2.4
+     },
+     {
+      "areaPct": 0.1,
+      "key": "69",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 55.4
+     },
+     {
+      "county": "Pinellas",
+      "popPct": 44.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pinellas",
+      "popPct": 44.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 179127,
+    "pres2020New": -42.7,
+    "pres2020Old": -13.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-62; it draws from the old HD-70 (40%), the old HD-59 (19%), the old HD-57 (14%) and 5 more. Counties: gained Pinellas (45%). 2020 presidential margin D+13.6 on the 2016\u20132020 lines \u2192 D+42.7 on the current lines.",
+    "toEra": "current"
+   },
+   "63": {
+    "contributors": [
+     {
+      "areaPct": 71.5,
+      "key": "61",
+      "popPct": 79.9
+     },
+     {
+      "areaPct": 25.2,
+      "key": "58",
+      "popPct": 17.0
+     },
+     {
+      "areaPct": 2.9,
+      "key": "63",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 175948,
+    "pres2020New": -52.9,
+    "pres2020Old": -11.7,
+    "retainedAreaPct": 2.9,
+    "retainedPopPct": 3.0,
+    "text": "A new footprint: only 3% of its population was in the 2016\u20132020 HD-63; it draws from the old HD-61 (80%), the old HD-58 (17%). Entirely in Hillsborough County. 2020 presidential margin D+11.7 on the 2016\u20132020 lines \u2192 D+52.9 on the current lines.",
+    "toEra": "current"
+   },
+   "64": {
+    "contributors": [
+     {
+      "areaPct": 92.8,
+      "key": "62",
+      "popPct": 92.4
+     },
+     {
+      "areaPct": 5.8,
+      "key": "61",
+      "popPct": 6.2
+     },
+     {
+      "areaPct": 1.3,
+      "key": "60",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Pinellas",
+      "popPct": 29.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 178646,
+    "pres2020New": -15.4,
+    "pres2020Old": 5.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-64; it draws from the old HD-62 (92%), the old HD-61 (6%), the old HD-60 (1%). Counties: lost Pinellas. 2020 presidential margin R+5.1 on the 2016\u20132020 lines \u2192 D+15.4 on the current lines.",
+    "toEra": "current"
+   },
+   "65": {
+    "contributors": [
+     {
+      "areaPct": 92.3,
+      "key": "60",
+      "popPct": 86.4
+     },
+     {
+      "areaPct": 5.0,
+      "key": "64",
+      "popPct": 9.5
+     },
+     {
+      "areaPct": 2.5,
+      "key": "62",
+      "popPct": 3.4
+     },
+     {
+      "areaPct": 0.2,
+      "key": "61",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pinellas",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 175934,
+    "pres2020New": -4.3,
+    "pres2020Old": 11.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-65; it draws from the old HD-60 (86%), the old HD-64 (10%), the old HD-62 (3%) and 1 more. Counties: gained Hillsborough (100%); lost Pinellas. 2020 presidential margin R+11.6 on the 2016\u20132020 lines \u2192 D+4.3 on the current lines.",
+    "toEra": "current"
+   },
+   "66": {
+    "contributors": [
+     {
+      "areaPct": 64.9,
+      "key": "64",
+      "popPct": 58.8
+     },
+     {
+      "areaPct": 34.8,
+      "key": "63",
+      "popPct": 39.7
+     },
+     {
+      "areaPct": 0.3,
+      "key": "61",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pinellas",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 176693,
+    "pres2020New": 5.1,
+    "pres2020Old": 13.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-66; it draws from the old HD-64 (59%), the old HD-63 (40%), the old HD-61 (2%). Counties: gained Hillsborough (100%); lost Pinellas. 2020 presidential margin R+13.4 on the 2016\u20132020 lines \u2192 R+5.1 on the current lines.",
+    "toEra": "current"
+   },
+   "67": {
+    "contributors": [
+     {
+      "areaPct": 44.2,
+      "key": "63",
+      "popPct": 61.7
+     },
+     {
+      "areaPct": 50.2,
+      "key": "58",
+      "popPct": 25.1
+     },
+     {
+      "areaPct": 5.5,
+      "key": "59",
+      "popPct": 13.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pinellas",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 179649,
+    "pres2020New": -19.2,
+    "pres2020Old": 3.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-67; it draws from the old HD-63 (62%), the old HD-58 (25%), the old HD-59 (13%). Counties: gained Hillsborough (100%); lost Pinellas. 2020 presidential margin R+3.6 on the 2016\u20132020 lines \u2192 D+19.2 on the current lines.",
+    "toEra": "current"
+   },
+   "68": {
+    "contributors": [
+     {
+      "areaPct": 73.7,
+      "key": "58",
+      "popPct": 56.4
+     },
+     {
+      "areaPct": 7.1,
+      "key": "59",
+      "popPct": 29.6
+     },
+     {
+      "areaPct": 19.2,
+      "key": "57",
+      "popPct": 14.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 99.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pinellas",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 172161,
+    "pres2020New": 22.6,
+    "pres2020Old": -9.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-68; it draws from the old HD-58 (56%), the old HD-59 (30%), the old HD-57 (14%). Counties: gained Hillsborough (100%); lost Pinellas. 2020 presidential margin D+9.2 on the 2016\u20132020 lines \u2192 R+22.6 on the current lines.",
+    "toEra": "current"
+   },
+   "69": {
+    "contributors": [
+     {
+      "areaPct": 91.2,
+      "key": "57",
+      "popPct": 57.9
+     },
+     {
+      "areaPct": 8.7,
+      "key": "59",
+      "popPct": 42.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pinellas",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 182819,
+    "pres2020New": 2.4,
+    "pres2020Old": 1.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-69; it draws from the old HD-57 (58%), the old HD-59 (42%). Counties: gained Hillsborough (100%); lost Pinellas. 2020 presidential margin R+1.9 on the 2016\u20132020 lines \u2192 R+2.4 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 73.6,
+      "key": "7",
+      "popPct": 57.6
+     },
+     {
+      "areaPct": 13.7,
+      "key": "10",
+      "popPct": 31.2
+     },
+     {
+      "areaPct": 11.8,
+      "key": "21",
+      "popPct": 9.1
+     },
+     {
+      "areaPct": 0.7,
+      "key": "9",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Suwannee",
+      "popPct": 23.4
+     },
+     {
+      "county": "Wakulla",
+      "popPct": 18.3
+     },
+     {
+      "county": "Taylor",
+      "popPct": 11.8
+     },
+     {
+      "county": "Dixie",
+      "popPct": 8.9
+     },
+     {
+      "county": "Gulf",
+      "popPct": 7.7
+     },
+     {
+      "county": "Hamilton",
+      "popPct": 7.5
+     },
+     {
+      "county": "Franklin",
+      "popPct": 6.8
+     },
+     {
+      "county": "Leon",
+      "popPct": 5.4
+     },
+     {
+      "county": "Lafayette",
+      "popPct": 4.5
+     },
+     {
+      "county": "Liberty",
+      "popPct": 4.2
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Suwannee",
+      "popPct": 23.4
+     },
+     {
+      "county": "Dixie",
+      "popPct": 8.9
+     },
+     {
+      "county": "Hamilton",
+      "popPct": 7.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Madison",
+      "popPct": 11.7
+     },
+     {
+      "county": "Calhoun",
+      "popPct": 9.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 184143,
+    "pres2020New": 49.1,
+    "pres2020Old": 40.1,
+    "retainedAreaPct": 73.6,
+    "retainedPopPct": 57.6,
+    "text": "Kept 58% of its population from the 2016\u20132020 HD-7; gained the rest from the old HD-10 (31%), the old HD-21 (9%), the old HD-9 (2%). Counties: gained Suwannee (23%), Dixie (9%), Hamilton (8%); lost Madison, Calhoun. 2020 presidential margin R+40.1 on the 2016\u20132020 lines \u2192 R+49.1 on the current lines.",
+    "toEra": "current"
+   },
+   "70": {
+    "contributors": [
+     {
+      "areaPct": 33.7,
+      "key": "57",
+      "popPct": 48.2
+     },
+     {
+      "areaPct": 30.6,
+      "key": "73",
+      "popPct": 23.8
+     },
+     {
+      "areaPct": 11.9,
+      "key": "60",
+      "popPct": 14.1
+     },
+     {
+      "areaPct": 23.8,
+      "key": "70",
+      "popPct": 13.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 74.4
+     },
+     {
+      "county": "Manatee",
+      "popPct": 25.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Pinellas",
+      "popPct": 45.0
+     },
+     {
+      "county": "Sarasota",
+      "popPct": 10.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 168037,
+    "pres2020New": 8.4,
+    "pres2020Old": -43.6,
+    "retainedAreaPct": 23.8,
+    "retainedPopPct": 13.9,
+    "text": "A new footprint: only 14% of its population was in the 2016\u20132020 HD-70; it draws from the old HD-57 (48%), the old HD-73 (24%), the old HD-60 (14%). Counties: lost Pinellas, Sarasota. 2020 presidential margin D+43.6 on the 2016\u20132020 lines \u2192 R+8.4 on the current lines.",
+    "toEra": "current"
+   },
+   "71": {
+    "contributors": [
+     {
+      "areaPct": 88.9,
+      "key": "71",
+      "popPct": 66.7
+     },
+     {
+      "areaPct": 5.5,
+      "key": "70",
+      "popPct": 20.5
+     },
+     {
+      "areaPct": 5.6,
+      "key": "73",
+      "popPct": 12.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Manatee",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Sarasota",
+      "popPct": 13.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 181227,
+    "pres2020New": 9.6,
+    "pres2020Old": 8.5,
+    "retainedAreaPct": 88.9,
+    "retainedPopPct": 66.7,
+    "text": "Kept 67% of its population from the 2016\u20132020 HD-71; gained the rest from the old HD-70 (20%), the old HD-73 (13%). Counties: lost Sarasota. 2020 presidential margin R+8.5 on the 2016\u20132020 lines \u2192 R+9.6 on the current lines.",
+    "toEra": "current"
+   },
+   "72": {
+    "contributors": [
+     {
+      "areaPct": 97.3,
+      "key": "73",
+      "popPct": 75.1
+     },
+     {
+      "areaPct": 1.5,
+      "key": "71",
+      "popPct": 16.3
+     },
+     {
+      "areaPct": 1.2,
+      "key": "70",
+      "popPct": 8.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Manatee",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Manatee",
+      "popPct": 99.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Sarasota",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 175524,
+    "pres2020New": 19.2,
+    "pres2020Old": 2.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-72; it draws from the old HD-73 (75%), the old HD-71 (16%), the old HD-70 (9%). Counties: gained Manatee (100%); lost Sarasota. 2020 presidential margin R+2.9 on the 2016\u20132020 lines \u2192 R+19.2 on the current lines.",
+    "toEra": "current"
+   },
+   "73": {
+    "contributors": [
+     {
+      "areaPct": 35.4,
+      "key": "72",
+      "popPct": 56.3
+     },
+     {
+      "areaPct": 26.0,
+      "key": "74",
+      "popPct": 23.5
+     },
+     {
+      "areaPct": 37.4,
+      "key": "71",
+      "popPct": 12.5
+     },
+     {
+      "areaPct": 1.2,
+      "key": "70",
+      "popPct": 7.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sarasota",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Manatee",
+      "popPct": 87.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 181885,
+    "pres2020New": 0.8,
+    "pres2020Old": 22.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-73; it draws from the old HD-72 (56%), the old HD-74 (24%), the old HD-71 (12%) and 1 more. Counties: lost Manatee. 2020 presidential margin R+22.4 on the 2016\u20132020 lines \u2192 R+0.8 on the current lines.",
+    "toEra": "current"
+   },
+   "74": {
+    "contributors": [
+     {
+      "areaPct": 65.0,
+      "key": "74",
+      "popPct": 44.7
+     },
+     {
+      "areaPct": 6.2,
+      "key": "72",
+      "popPct": 37.9
+     },
+     {
+      "areaPct": 28.3,
+      "key": "73",
+      "popPct": 14.9
+     },
+     {
+      "areaPct": 0.5,
+      "key": "70",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sarasota",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 185378,
+    "pres2020New": 16.7,
+    "pres2020Old": 21.1,
+    "retainedAreaPct": 65.0,
+    "retainedPopPct": 44.7,
+    "text": "A new footprint: only 45% of its population was in the 2016\u20132020 HD-74; it draws from the old HD-72 (38%), the old HD-73 (15%), the old HD-70 (2%). Entirely in Sarasota County. 2020 presidential margin R+21.1 on the 2016\u20132020 lines \u2192 R+16.7 on the current lines.",
+    "toEra": "current"
+   },
+   "75": {
+    "contributors": [
+     {
+      "areaPct": 67.7,
+      "key": "75",
+      "popPct": 63.4
+     },
+     {
+      "areaPct": 32.3,
+      "key": "74",
+      "popPct": 36.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Charlotte",
+      "popPct": 63.0
+     },
+     {
+      "county": "Sarasota",
+      "popPct": 37.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Sarasota",
+      "popPct": 37.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 182332,
+    "pres2020New": 23.2,
+    "pres2020Old": 26.5,
+    "retainedAreaPct": 67.7,
+    "retainedPopPct": 63.4,
+    "text": "Kept 63% of its population from the 2016\u20132020 HD-75; gained the rest from the old HD-74 (37%). Counties: gained Sarasota (37%). 2020 presidential margin R+26.5 on the 2016\u20132020 lines \u2192 R+23.2 on the current lines.",
+    "toEra": "current"
+   },
+   "76": {
+    "contributors": [
+     {
+      "areaPct": 42.9,
+      "key": "75",
+      "popPct": 38.9
+     },
+     {
+      "areaPct": 8.2,
+      "key": "79",
+      "popPct": 33.4
+     },
+     {
+      "areaPct": 46.7,
+      "key": "56",
+      "popPct": 18.5
+     },
+     {
+      "areaPct": 2.3,
+      "key": "77",
+      "popPct": 9.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lee",
+      "popPct": 42.6
+     },
+     {
+      "county": "Charlotte",
+      "popPct": 38.9
+     },
+     {
+      "county": "DeSoto",
+      "popPct": 18.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Charlotte",
+      "popPct": 38.9
+     },
+     {
+      "county": "DeSoto",
+      "popPct": 18.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 183355,
+    "pres2020New": 30.4,
+    "pres2020Old": 22.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-76; it draws from the old HD-75 (39%), the old HD-79 (33%), the old HD-56 (18%) and 1 more. Counties: gained Charlotte (39%), DeSoto (18%). 2020 presidential margin R+22.9 on the 2016\u20132020 lines \u2192 R+30.4 on the current lines.",
+    "toEra": "current"
+   },
+   "77": {
+    "contributors": [
+     {
+      "areaPct": 47.8,
+      "key": "79",
+      "popPct": 69.3
+     },
+     {
+      "areaPct": 46.7,
+      "key": "78",
+      "popPct": 16.7
+     },
+     {
+      "areaPct": 5.5,
+      "key": "76",
+      "popPct": 14.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lee",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 182238,
+    "pres2020New": 12.7,
+    "pres2020Old": 25.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-77; it draws from the old HD-79 (69%), the old HD-78 (17%), the old HD-76 (14%). Entirely in Lee County. 2020 presidential margin R+25.6 on the 2016\u20132020 lines \u2192 R+12.7 on the current lines.",
+    "toEra": "current"
+   },
+   "78": {
+    "contributors": [
+     {
+      "areaPct": 85.0,
+      "key": "78",
+      "popPct": 88.3
+     },
+     {
+      "areaPct": 12.9,
+      "key": "76",
+      "popPct": 11.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lee",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 184912,
+    "pres2020New": 6.7,
+    "pres2020Old": 8.8,
+    "retainedAreaPct": 85.0,
+    "retainedPopPct": 88.3,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-78; gained the rest from the old HD-76 (11%). Entirely in Lee County. 2020 presidential margin R+8.8 on the 2016\u20132020 lines \u2192 R+6.7 on the current lines.",
+    "toEra": "current"
+   },
+   "79": {
+    "contributors": [
+     {
+      "areaPct": 94.7,
+      "key": "77",
+      "popPct": 97.9
+     },
+     {
+      "areaPct": 4.3,
+      "key": "78",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lee",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 181055,
+    "pres2020New": 25.8,
+    "pres2020Old": 18.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-79; it draws from the old HD-77 (98%), the old HD-78 (2%). Entirely in Lee County. 2020 presidential margin R+18.3 on the 2016\u20132020 lines \u2192 R+25.8 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 93.3,
+      "key": "8",
+      "popPct": 88.2
+     },
+     {
+      "areaPct": 2.6,
+      "key": "9",
+      "popPct": 10.1
+     },
+     {
+      "areaPct": 4.1,
+      "key": "7",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Leon",
+      "popPct": 74.2
+     },
+     {
+      "county": "Gadsden",
+      "popPct": 25.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 172081,
+    "pres2020New": -50.4,
+    "pres2020Old": -53.8,
+    "retainedAreaPct": 93.3,
+    "retainedPopPct": 88.2,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-8; gained the rest from the old HD-9 (10%), the old HD-7 (2%). Spans Leon, Gadsden counties. 2020 presidential margin D+53.8 on the 2016\u20132020 lines \u2192 D+50.4 on the current lines.",
+    "toEra": "current"
+   },
+   "80": {
+    "contributors": [
+     {
+      "areaPct": 88.0,
+      "key": "76",
+      "popPct": 72.3
+     },
+     {
+      "areaPct": 1.8,
+      "key": "80",
+      "popPct": 14.7
+     },
+     {
+      "areaPct": 10.1,
+      "key": "106",
+      "popPct": 12.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lee",
+      "popPct": 73.1
+     },
+     {
+      "county": "Collier",
+      "popPct": 26.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lee",
+      "popPct": 73.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hendry",
+      "popPct": 20.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 184861,
+    "pres2020New": 25.5,
+    "pres2020Old": 24.7,
+    "retainedAreaPct": 1.8,
+    "retainedPopPct": 14.7,
+    "text": "A new footprint: only 15% of its population was in the 2016\u20132020 HD-80; it draws from the old HD-76 (72%), the old HD-106 (12%). Counties: gained Lee (73%); lost Hendry. 2020 presidential margin R+24.7 on the 2016\u20132020 lines \u2192 R+25.5 on the current lines.",
+    "toEra": "current"
+   },
+   "81": {
+    "contributors": [
+     {
+      "areaPct": 97.0,
+      "key": "106",
+      "popPct": 77.3
+     },
+     {
+      "areaPct": 2.3,
+      "key": "80",
+      "popPct": 16.5
+     },
+     {
+      "areaPct": 0.7,
+      "key": "105",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Collier",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Collier",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Palm Beach",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 180320,
+    "pres2020New": 25.0,
+    "pres2020Old": -15.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-81; it draws from the old HD-106 (77%), the old HD-80 (16%), the old HD-105 (6%). Counties: gained Collier (100%); lost Palm Beach. 2020 presidential margin D+15.1 on the 2016\u20132020 lines \u2192 R+25.0 on the current lines.",
+    "toEra": "current"
+   },
+   "82": {
+    "contributors": [
+     {
+      "areaPct": 60.8,
+      "key": "80",
+      "popPct": 71.2
+     },
+     {
+      "areaPct": 33.7,
+      "key": "105",
+      "popPct": 28.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Collier",
+      "popPct": 78.6
+     },
+     {
+      "county": "Hendry",
+      "popPct": 21.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Collier",
+      "popPct": 78.6
+     },
+     {
+      "county": "Hendry",
+      "popPct": 21.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Martin",
+      "popPct": 56.5
+     },
+     {
+      "county": "Palm Beach",
+      "popPct": 43.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 184685,
+    "pres2020New": 21.9,
+    "pres2020Old": 21.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-82; it draws from the old HD-80 (71%), the old HD-105 (28%). Counties: gained Collier (79%), Hendry (21%); lost Martin, Palm Beach. 2020 presidential margin R+21.5 on the 2016\u20132020 lines \u2192 R+21.9 on the current lines.",
+    "toEra": "current"
+   },
+   "83": {
+    "contributors": [
+     {
+      "areaPct": 82.4,
+      "key": "55",
+      "popPct": 85.8
+     },
+     {
+      "areaPct": 17.6,
+      "key": "56",
+      "popPct": 14.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Highlands",
+      "popPct": 56.5
+     },
+     {
+      "county": "Okeechobee",
+      "popPct": 22.1
+     },
+     {
+      "county": "Hardee",
+      "popPct": 14.6
+     },
+     {
+      "county": "Glades",
+      "popPct": 6.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Highlands",
+      "popPct": 56.5
+     },
+     {
+      "county": "Okeechobee",
+      "popPct": 22.1
+     },
+     {
+      "county": "Hardee",
+      "popPct": 14.6
+     },
+     {
+      "county": "Glades",
+      "popPct": 6.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "St. Lucie",
+      "popPct": 65.9
+     },
+     {
+      "county": "Martin",
+      "popPct": 34.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 178332,
+    "pres2020New": 38.2,
+    "pres2020Old": 7.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-83; it draws from the old HD-55 (86%), the old HD-56 (14%). Counties: gained Highlands (56%), Okeechobee (22%), Hardee (15%) and 1 more; lost St. Lucie, Martin. 2020 presidential margin R+7.3 on the 2016\u20132020 lines \u2192 R+38.2 on the current lines.",
+    "toEra": "current"
+   },
+   "84": {
+    "contributors": [
+     {
+      "areaPct": 36.6,
+      "key": "84",
+      "popPct": 86.4
+     },
+     {
+      "areaPct": 20.8,
+      "key": "54",
+      "popPct": 10.9
+     },
+     {
+      "areaPct": 41.9,
+      "key": "55",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Lucie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 185020,
+    "pres2020New": 3.6,
+    "pres2020Old": 1.0,
+    "retainedAreaPct": 36.6,
+    "retainedPopPct": 86.4,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-84; gained the rest from the old HD-54 (11%), the old HD-55 (3%). Entirely in St. Lucie County. 2020 presidential margin R+1.0 on the 2016\u20132020 lines \u2192 R+3.6 on the current lines.",
+    "toEra": "current"
+   },
+   "85": {
+    "contributors": [
+     {
+      "areaPct": 67.3,
+      "key": "83",
+      "popPct": 86.5
+     },
+     {
+      "areaPct": 8.2,
+      "key": "84",
+      "popPct": 10.5
+     },
+     {
+      "areaPct": 24.5,
+      "key": "82",
+      "popPct": 3.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Lucie",
+      "popPct": 80.3
+     },
+     {
+      "county": "Martin",
+      "popPct": 19.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "St. Lucie",
+      "popPct": 80.3
+     },
+     {
+      "county": "Martin",
+      "popPct": 19.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Palm Beach",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 179585,
+    "pres2020New": 6.0,
+    "pres2020Old": 8.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-85; it draws from the old HD-83 (86%), the old HD-84 (10%), the old HD-82 (3%). Counties: gained St. Lucie (80%), Martin (20%); lost Palm Beach. 2020 presidential margin R+8.9 on the 2016\u20132020 lines \u2192 R+6.0 on the current lines.",
+    "toEra": "current"
+   },
+   "86": {
+    "contributors": [
+     {
+      "areaPct": 92.1,
+      "key": "82",
+      "popPct": 80.4
+     },
+     {
+      "areaPct": 7.9,
+      "key": "83",
+      "popPct": 19.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Martin",
+      "popPct": 68.7
+     },
+     {
+      "county": "Palm Beach",
+      "popPct": 31.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Martin",
+      "popPct": 68.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 180458,
+    "pres2020New": 20.9,
+    "pres2020Old": -13.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-86; it draws from the old HD-82 (80%), the old HD-83 (20%). Counties: gained Martin (69%). 2020 presidential margin D+13.8 on the 2016\u20132020 lines \u2192 R+20.9 on the current lines.",
+    "toEra": "current"
+   },
+   "87": {
+    "contributors": [
+     {
+      "areaPct": 34.1,
+      "key": "85",
+      "popPct": 44.5
+     },
+     {
+      "areaPct": 5.4,
+      "key": "88",
+      "popPct": 21.7
+     },
+     {
+      "areaPct": 55.0,
+      "key": "89",
+      "popPct": 19.7
+     },
+     {
+      "areaPct": 3.5,
+      "key": "82",
+      "popPct": 8.7
+     },
+     {
+      "areaPct": 1.8,
+      "key": "87",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Palm Beach",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 183362,
+    "pres2020New": 0.2,
+    "pres2020Old": -19.8,
+    "retainedAreaPct": 1.8,
+    "retainedPopPct": 5.2,
+    "text": "A new footprint: only 5% of its population was in the 2016\u20132020 HD-87; it draws from the old HD-85 (44%), the old HD-88 (22%), the old HD-89 (20%) and 1 more. Entirely in Palm Beach County. 2020 presidential margin D+19.8 on the 2016\u20132020 lines \u2192 R+0.2 on the current lines.",
+    "toEra": "current"
+   },
+   "88": {
+    "contributors": [
+     {
+      "areaPct": 50.3,
+      "key": "88",
+      "popPct": 55.1
+     },
+     {
+      "areaPct": 28.5,
+      "key": "86",
+      "popPct": 26.8
+     },
+     {
+      "areaPct": 13.8,
+      "key": "87",
+      "popPct": 12.3
+     },
+     {
+      "areaPct": 7.4,
+      "key": "85",
+      "popPct": 5.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Palm Beach",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 172406,
+    "pres2020New": -51.2,
+    "pres2020Old": -53.0,
+    "retainedAreaPct": 50.3,
+    "retainedPopPct": 55.1,
+    "text": "Kept 55% of its population from the 2016\u20132020 HD-88; gained the rest from the old HD-86 (27%), the old HD-87 (12%), the old HD-85 (6%). Entirely in Palm Beach County. 2020 presidential margin D+53.0 on the 2016\u20132020 lines \u2192 D+51.2 on the current lines.",
+    "toEra": "current"
+   },
+   "89": {
+    "contributors": [
+     {
+      "areaPct": 65.2,
+      "key": "87",
+      "popPct": 72.5
+     },
+     {
+      "areaPct": 32.3,
+      "key": "90",
+      "popPct": 23.4
+     },
+     {
+      "areaPct": 2.6,
+      "key": "88",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Palm Beach",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 180631,
+    "pres2020New": -19.5,
+    "pres2020Old": -0.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-89; it draws from the old HD-87 (72%), the old HD-90 (23%), the old HD-88 (4%). Entirely in Palm Beach County. 2020 presidential margin D+0.5 on the 2016\u20132020 lines \u2192 D+19.5 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 24.5,
+      "key": "9",
+      "popPct": 80.1
+     },
+     {
+      "areaPct": 75.4,
+      "key": "7",
+      "popPct": 16.7
+     },
+     {
+      "areaPct": 0.2,
+      "key": "8",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Leon",
+      "popPct": 83.2
+     },
+     {
+      "county": "Madison",
+      "popPct": 9.7
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 7.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Madison",
+      "popPct": 9.7
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 7.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 184918,
+    "pres2020New": -10.0,
+    "pres2020Old": -13.9,
+    "retainedAreaPct": 24.5,
+    "retainedPopPct": 80.1,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-9; gained the rest from the old HD-7 (17%), the old HD-8 (3%). Counties: gained Madison (10%), Jefferson (7%). 2020 presidential margin D+13.9 on the 2016\u20132020 lines \u2192 D+10.0 on the current lines.",
+    "toEra": "current"
+   },
+   "90": {
+    "contributors": [
+     {
+      "areaPct": 63.4,
+      "key": "89",
+      "popPct": 35.8
+     },
+     {
+      "areaPct": 12.5,
+      "key": "90",
+      "popPct": 24.6
+     },
+     {
+      "areaPct": 9.6,
+      "key": "88",
+      "popPct": 21.9
+     },
+     {
+      "areaPct": 14.5,
+      "key": "91",
+      "popPct": 17.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Palm Beach",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 179393,
+    "pres2020New": -21.7,
+    "pres2020Old": -20.0,
+    "retainedAreaPct": 12.5,
+    "retainedPopPct": 24.6,
+    "text": "A new footprint: only 25% of its population was in the 2016\u20132020 HD-90; it draws from the old HD-89 (36%), the old HD-88 (22%), the old HD-91 (18%). Entirely in Palm Beach County. 2020 presidential margin D+20.0 on the 2016\u20132020 lines \u2192 D+21.7 on the current lines.",
+    "toEra": "current"
+   },
+   "91": {
+    "contributors": [
+     {
+      "areaPct": 63.1,
+      "key": "89",
+      "popPct": 42.8
+     },
+     {
+      "areaPct": 27.1,
+      "key": "91",
+      "popPct": 36.8
+     },
+     {
+      "areaPct": 9.8,
+      "key": "81",
+      "popPct": 20.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Palm Beach",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 179947,
+    "pres2020New": -4.5,
+    "pres2020Old": -18.4,
+    "retainedAreaPct": 27.1,
+    "retainedPopPct": 36.8,
+    "text": "A new footprint: only 37% of its population was in the 2016\u20132020 HD-91; it draws from the old HD-89 (43%), the old HD-81 (20%). Entirely in Palm Beach County. 2020 presidential margin D+18.4 on the 2016\u20132020 lines \u2192 D+4.5 on the current lines.",
+    "toEra": "current"
+   },
+   "92": {
+    "contributors": [
+     {
+      "areaPct": 60.6,
+      "key": "81",
+      "popPct": 42.7
+     },
+     {
+      "areaPct": 27.5,
+      "key": "91",
+      "popPct": 40.4
+     },
+     {
+      "areaPct": 11.9,
+      "key": "90",
+      "popPct": 16.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Palm Beach",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Broward",
+      "popPct": 96.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 181203,
+    "pres2020New": -19.9,
+    "pres2020Old": -39.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-92; it draws from the old HD-81 (43%), the old HD-91 (40%), the old HD-90 (17%). Counties: lost Broward. 2020 presidential margin D+39.8 on the 2016\u20132020 lines \u2192 D+19.9 on the current lines.",
+    "toEra": "current"
+   },
+   "93": {
+    "contributors": [
+     {
+      "areaPct": 57.1,
+      "key": "86",
+      "popPct": 42.9
+     },
+     {
+      "areaPct": 14.5,
+      "key": "90",
+      "popPct": 33.1
+     },
+     {
+      "areaPct": 26.7,
+      "key": "81",
+      "popPct": 15.9
+     },
+     {
+      "areaPct": 1.8,
+      "key": "87",
+      "popPct": 8.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Palm Beach",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Palm Beach",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Broward",
+      "popPct": 99.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 178820,
+    "pres2020New": -10.3,
+    "pres2020Old": 0.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-93; it draws from the old HD-86 (43%), the old HD-90 (33%), the old HD-81 (16%) and 1 more. Counties: gained Palm Beach (100%); lost Broward. 2020 presidential margin Even  on the 2016\u20132020 lines \u2192 D+10.3 on the current lines.",
+    "toEra": "current"
+   },
+   "94": {
+    "contributors": [
+     {
+      "areaPct": 18.2,
+      "key": "85",
+      "popPct": 50.3
+     },
+     {
+      "areaPct": 1.6,
+      "key": "86",
+      "popPct": 30.8
+     },
+     {
+      "areaPct": 80.2,
+      "key": "81",
+      "popPct": 18.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Palm Beach",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Palm Beach",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Broward",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 179124,
+    "pres2020New": -0.4,
+    "pres2020Old": -59.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-94; it draws from the old HD-85 (50%), the old HD-86 (31%), the old HD-81 (19%). Counties: gained Palm Beach (100%); lost Broward. 2020 presidential margin D+59.5 on the 2016\u20132020 lines \u2192 D+0.4 on the current lines.",
+    "toEra": "current"
+   },
+   "95": {
+    "contributors": [
+     {
+      "areaPct": 95.0,
+      "key": "96",
+      "popPct": 93.4
+     },
+     {
+      "areaPct": 2.1,
+      "key": "92",
+      "popPct": 3.3
+     },
+     {
+      "areaPct": 1.2,
+      "key": "95",
+      "popPct": 1.9
+     },
+     {
+      "areaPct": 1.8,
+      "key": "97",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Broward",
+      "popPct": 99.1
+     },
+     {
+      "county": "Palm Beach",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 184324,
+    "pres2020New": -23.6,
+    "pres2020Old": -67.3,
+    "retainedAreaPct": 1.2,
+    "retainedPopPct": 1.9,
+    "text": "A new footprint: only 2% of its population was in the 2016\u20132020 HD-95; it draws from the old HD-96 (93%), the old HD-92 (3%), the old HD-97 (1%). Spans Broward, Palm Beach counties. 2020 presidential margin D+67.3 on the 2016\u20132020 lines \u2192 D+23.6 on the current lines.",
+    "toEra": "current"
+   },
+   "96": {
+    "contributors": [
+     {
+      "areaPct": 58.5,
+      "key": "97",
+      "popPct": 85.3
+     },
+     {
+      "areaPct": 0.2,
+      "key": "98",
+      "popPct": 9.5
+     },
+     {
+      "areaPct": 0.2,
+      "key": "96",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Broward",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 174362,
+    "pres2020New": -31.0,
+    "pres2020Old": -22.5,
+    "retainedAreaPct": 0.2,
+    "retainedPopPct": 5.2,
+    "text": "A new footprint: only 5% of its population was in the 2016\u20132020 HD-96; it draws from the old HD-97 (85%), the old HD-98 (10%). Entirely in Broward County. 2020 presidential margin D+22.5 on the 2016\u20132020 lines \u2192 D+31.0 on the current lines.",
+    "toEra": "current"
+   },
+   "97": {
+    "contributors": [
+     {
+      "areaPct": 75.1,
+      "key": "95",
+      "popPct": 83.3
+     },
+     {
+      "areaPct": 9.4,
+      "key": "98",
+      "popPct": 6.2
+     },
+     {
+      "areaPct": 9.6,
+      "key": "92",
+      "popPct": 5.1
+     },
+     {
+      "areaPct": 5.5,
+      "key": "97",
+      "popPct": 5.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Broward",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 182068,
+    "pres2020New": -61.7,
+    "pres2020Old": -30.0,
+    "retainedAreaPct": 5.5,
+    "retainedPopPct": 5.1,
+    "text": "A new footprint: only 5% of its population was in the 2016\u20132020 HD-97; it draws from the old HD-95 (83%), the old HD-98 (6%), the old HD-92 (5%). Entirely in Broward County. 2020 presidential margin D+30.0 on the 2016\u20132020 lines \u2192 D+61.7 on the current lines.",
+    "toEra": "current"
+   },
+   "98": {
+    "contributors": [
+     {
+      "areaPct": 87.2,
+      "key": "92",
+      "popPct": 83.8
+     },
+     {
+      "areaPct": 9.3,
+      "key": "94",
+      "popPct": 12.6
+     },
+     {
+      "areaPct": 3.0,
+      "key": "93",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Broward",
+      "popPct": 96.7
+     },
+     {
+      "county": "Palm Beach",
+      "popPct": 3.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Palm Beach",
+      "popPct": 3.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 188492,
+    "pres2020New": -41.0,
+    "pres2020Old": -20.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-98; it draws from the old HD-92 (84%), the old HD-94 (13%), the old HD-93 (3%). Counties: gained Palm Beach (3%). 2020 presidential margin D+20.4 on the 2016\u20132020 lines \u2192 D+41.0 on the current lines.",
+    "toEra": "current"
+   },
+   "99": {
+    "contributors": [
+     {
+      "areaPct": 74.4,
+      "key": "94",
+      "popPct": 75.4
+     },
+     {
+      "areaPct": 13.2,
+      "key": "99",
+      "popPct": 11.3
+     },
+     {
+      "areaPct": 5.2,
+      "key": "95",
+      "popPct": 9.4
+     },
+     {
+      "areaPct": 5.5,
+      "key": "98",
+      "popPct": 2.5
+     },
+     {
+      "areaPct": 1.6,
+      "key": "93",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Broward",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 182225,
+    "pres2020New": -55.3,
+    "pres2020Old": -14.4,
+    "retainedAreaPct": 13.2,
+    "retainedPopPct": 11.3,
+    "text": "A new footprint: only 11% of its population was in the 2016\u20132020 HD-99; it draws from the old HD-94 (75%), the old HD-95 (9%), the old HD-98 (2%) and 1 more. Entirely in Broward County. 2020 presidential margin D+14.4 on the 2016\u20132020 lines \u2192 D+55.3 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 88.0,
+      "key": "1",
+      "popPct": 95.0
+     },
+     {
+      "areaPct": 12.0,
+      "key": "2",
+      "popPct": 5.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Escambia",
+      "popPct": 59.9
+     },
+     {
+      "county": "Santa Rosa",
+      "popPct": 34.8
+     },
+     {
+      "county": "Okaloosa",
+      "popPct": 5.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 538611,
+    "pres2020New": 28.6,
+    "pres2020Old": 27.1,
+    "retainedAreaPct": 88.0,
+    "retainedPopPct": 95.0,
+    "text": "Kept 95% of its population from the 2016\u20132020 SD-1; gained the rest from the old SD-2 (5%). Spans Escambia, Santa Rosa, Okaloosa counties. 2020 presidential margin R+27.1 on the 2016\u20132020 lines \u2192 R+28.6 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 94.3,
+      "key": "9",
+      "popPct": 87.9
+     },
+     {
+      "areaPct": 3.8,
+      "key": "13",
+      "popPct": 8.0
+     },
+     {
+      "areaPct": 1.9,
+      "key": "11",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Seminole",
+      "popPct": 87.8
+     },
+     {
+      "county": "Orange",
+      "popPct": 12.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Seminole",
+      "popPct": 87.8
+     },
+     {
+      "county": "Orange",
+      "popPct": 12.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pasco",
+      "popPct": 36.3
+     },
+     {
+      "county": "Hernando",
+      "popPct": 35.5
+     },
+     {
+      "county": "Citrus",
+      "popPct": 28.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 535470,
+    "pres2020New": -4.4,
+    "pres2020Old": 32.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-10; it draws from the old SD-9 (88%), the old SD-13 (8%), the old SD-11 (4%). Counties: gained Seminole (88%), Orange (12%); lost Pasco, Hernando, Citrus. 2020 presidential margin R+32.1 on the 2016\u20132020 lines \u2192 D+4.4 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 75.9,
+      "key": "10",
+      "popPct": 75.9
+     },
+     {
+      "areaPct": 24.1,
+      "key": "12",
+      "popPct": 24.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hernando",
+      "popPct": 36.1
+     },
+     {
+      "county": "Citrus",
+      "popPct": 28.5
+     },
+     {
+      "county": "Sumter",
+      "popPct": 24.1
+     },
+     {
+      "county": "Pasco",
+      "popPct": 11.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hernando",
+      "popPct": 36.1
+     },
+     {
+      "county": "Citrus",
+      "popPct": 28.5
+     },
+     {
+      "county": "Sumter",
+      "popPct": 24.1
+     },
+     {
+      "county": "Pasco",
+      "popPct": 11.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Orange",
+      "popPct": 99.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 537947,
+    "pres2020New": 35.3,
+    "pres2020Old": -30.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-11; it draws from the old SD-10 (76%), the old SD-12 (24%). Counties: gained Hernando (36%), Citrus (28%), Sumter (24%) and 1 more; lost Orange. 2020 presidential margin D+30.8 on the 2016\u20132020 lines \u2192 R+35.3 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 69.8,
+      "key": "22",
+      "popPct": 84.1
+     },
+     {
+      "areaPct": 14.8,
+      "key": "20",
+      "popPct": 11.6
+     },
+     {
+      "areaPct": 15.4,
+      "key": "26",
+      "popPct": 4.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 99.4
+     },
+     {
+      "county": "Osceola",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Polk",
+      "popPct": 99.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Lake",
+      "popPct": 44.2
+     },
+     {
+      "county": "Marion",
+      "popPct": 33.3
+     },
+     {
+      "county": "Sumter",
+      "popPct": 22.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 531566,
+    "pres2020New": 9.0,
+    "pres2020Old": 29.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-12; it draws from the old SD-22 (84%), the old SD-20 (12%), the old SD-26 (4%). Counties: gained Polk (99%); lost Lake, Marion, Sumter. 2020 presidential margin R+29.0 on the 2016\u20132020 lines \u2192 R+9.0 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 65.9,
+      "key": "12",
+      "popPct": 48.1
+     },
+     {
+      "areaPct": 23.8,
+      "key": "22",
+      "popPct": 23.3
+     },
+     {
+      "areaPct": 8.7,
+      "key": "15",
+      "popPct": 22.3
+     },
+     {
+      "areaPct": 1.6,
+      "key": "11",
+      "popPct": 6.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lake",
+      "popPct": 70.7
+     },
+     {
+      "county": "Orange",
+      "popPct": 29.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lake",
+      "popPct": 70.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 538455,
+    "pres2020New": 13.0,
+    "pres2020Old": -20.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-13; it draws from the old SD-12 (48%), the old SD-22 (23%), the old SD-15 (22%) and 1 more. Counties: gained Lake (71%). 2020 presidential margin D+20.3 on the 2016\u20132020 lines \u2192 R+13.0 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 92.1,
+      "key": "18",
+      "popPct": 94.6
+     },
+     {
+      "areaPct": 7.1,
+      "key": "20",
+      "popPct": 5.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Volusia",
+      "popPct": 57.1
+     },
+     {
+      "county": "Brevard",
+      "popPct": 42.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 537143,
+    "pres2020New": -4.0,
+    "pres2020Old": 17.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-14; it draws from the old SD-18 (95%), the old SD-20 (5%). Counties: gained Hillsborough (100%); lost Volusia, Brevard. 2020 presidential margin R+17.7 on the 2016\u20132020 lines \u2192 D+4.0 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 96.6,
+      "key": "11",
+      "popPct": 93.7
+     },
+     {
+      "areaPct": 2.4,
+      "key": "13",
+      "popPct": 4.8
+     },
+     {
+      "areaPct": 1.0,
+      "key": "15",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Osceola",
+      "popPct": 54.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 533124,
+    "pres2020New": -32.9,
+    "pres2020Old": -14.8,
+    "retainedAreaPct": 1.0,
+    "retainedPopPct": 1.5,
+    "text": "A new footprint: only 2% of its population was in the 2016\u20132020 SD-15; it draws from the old SD-11 (94%), the old SD-13 (5%). Counties: lost Osceola. 2020 presidential margin D+14.8 on the 2016\u20132020 lines \u2192 D+32.9 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 85.3,
+      "key": "19",
+      "popPct": 76.4
+     },
+     {
+      "areaPct": 4.4,
+      "key": "20",
+      "popPct": 16.0
+     },
+     {
+      "areaPct": 7.1,
+      "key": "21",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 0.9,
+      "key": "18",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 2.4,
+      "key": "24",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hillsborough",
+      "popPct": 79.0
+     },
+     {
+      "county": "Pinellas",
+      "popPct": 21.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hillsborough",
+      "popPct": 79.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pasco",
+      "popPct": 32.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 538612,
+    "pres2020New": -36.6,
+    "pres2020Old": 11.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-16; it draws from the old SD-19 (76%), the old SD-20 (16%), the old SD-21 (4%) and 2 more. Counties: gained Hillsborough (79%); lost Pasco. 2020 presidential margin R+11.7 on the 2016\u20132020 lines \u2192 D+36.6 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 60.9,
+      "key": "13",
+      "popPct": 89.7
+     },
+     {
+      "areaPct": 39.1,
+      "key": "15",
+      "popPct": 10.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orange",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orange",
+      "popPct": 99.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Brevard",
+      "popPct": 70.6
+     },
+     {
+      "county": "Indian River",
+      "popPct": 29.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 535485,
+    "pres2020New": -19.9,
+    "pres2020Old": 15.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-17; it draws from the old SD-13 (90%), the old SD-15 (10%). Counties: gained Orange (100%); lost Brevard, Indian River. 2020 presidential margin R+15.8 on the 2016\u20132020 lines \u2192 D+19.9 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 96.8,
+      "key": "24",
+      "popPct": 90.1
+     },
+     {
+      "areaPct": 1.9,
+      "key": "16",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 1.3,
+      "key": "19",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pinellas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pinellas",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hillsborough",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 537547,
+    "pres2020New": 4.8,
+    "pres2020Old": -3.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-18; it draws from the old SD-24 (90%), the old SD-16 (7%), the old SD-19 (3%). Counties: gained Pinellas (100%); lost Hillsborough. 2020 presidential margin D+3.6 on the 2016\u20132020 lines \u2192 R+4.8 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 65.7,
+      "key": "17",
+      "popPct": 71.2
+     },
+     {
+      "areaPct": 34.3,
+      "key": "14",
+      "popPct": 28.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Brevard",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Brevard",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hillsborough",
+      "popPct": 78.4
+     },
+     {
+      "county": "Pinellas",
+      "popPct": 21.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 538658,
+    "pres2020New": 15.2,
+    "pres2020Old": -30.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-19; it draws from the old SD-17 (71%), the old SD-14 (29%). Counties: gained Brevard (100%); lost Hillsborough, Pinellas. 2020 presidential margin D+30.4 on the 2016\u20132020 lines \u2192 R+15.2 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 87.0,
+      "key": "2",
+      "popPct": 90.4
+     },
+     {
+      "areaPct": 4.0,
+      "key": "1",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 9.0,
+      "key": "3",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Okaloosa",
+      "popPct": 33.8
+     },
+     {
+      "county": "Bay",
+      "popPct": 32.5
+     },
+     {
+      "county": "Walton",
+      "popPct": 14.1
+     },
+     {
+      "county": "Jackson",
+      "popPct": 8.8
+     },
+     {
+      "county": "Washington",
+      "popPct": 4.7
+     },
+     {
+      "county": "Holmes",
+      "popPct": 3.6
+     },
+     {
+      "county": "Calhoun",
+      "popPct": 2.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Calhoun",
+      "popPct": 2.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 539421,
+    "pres2020New": 44.3,
+    "pres2020Old": 45.5,
+    "retainedAreaPct": 87.0,
+    "retainedPopPct": 90.4,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-2; gained the rest from the old SD-1 (7%), the old SD-3 (2%). Counties: gained Calhoun (2%). 2020 presidential margin R+45.5 on the 2016\u20132020 lines \u2192 R+44.3 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 97.4,
+      "key": "21",
+      "popPct": 80.4
+     },
+     {
+      "areaPct": 2.6,
+      "key": "19",
+      "popPct": 19.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Manatee",
+      "popPct": 55.9
+     },
+     {
+      "county": "Hillsborough",
+      "popPct": 44.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Manatee",
+      "popPct": 55.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pasco",
+      "popPct": 35.5
+     },
+     {
+      "county": "Polk",
+      "popPct": 11.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 537569,
+    "pres2020New": 12.2,
+    "pres2020Old": 7.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-20; it draws from the old SD-21 (80%), the old SD-19 (20%). Counties: gained Manatee (56%); lost Pasco, Polk. 2020 presidential margin R+7.2 on the 2016\u20132020 lines \u2192 R+12.2 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 87.3,
+      "key": "16",
+      "popPct": 87.0
+     },
+     {
+      "areaPct": 12.3,
+      "key": "10",
+      "popPct": 12.2
+     },
+     {
+      "areaPct": 0.4,
+      "key": "24",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pinellas",
+      "popPct": 56.7
+     },
+     {
+      "county": "Pasco",
+      "popPct": 43.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pinellas",
+      "popPct": 56.7
+     },
+     {
+      "county": "Pasco",
+      "popPct": 43.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Manatee",
+      "popPct": 67.9
+     },
+     {
+      "county": "Hillsborough",
+      "popPct": 32.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 537015,
+    "pres2020New": 14.3,
+    "pres2020Old": 15.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-21; it draws from the old SD-16 (87%), the old SD-10 (12%), the old SD-24 (1%). Counties: gained Pinellas (57%), Pasco (43%); lost Manatee, Hillsborough. 2020 presidential margin R+15.5 on the 2016\u20132020 lines \u2192 R+14.3 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 85.4,
+      "key": "23",
+      "popPct": 81.4
+     },
+     {
+      "areaPct": 14.6,
+      "key": "21",
+      "popPct": 18.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sarasota",
+      "popPct": 81.5
+     },
+     {
+      "county": "Manatee",
+      "popPct": 18.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Sarasota",
+      "popPct": 81.5
+     },
+     {
+      "county": "Manatee",
+      "popPct": 18.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Polk",
+      "popPct": 79.1
+     },
+     {
+      "county": "Lake",
+      "popPct": 20.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 533328,
+    "pres2020New": 10.7,
+    "pres2020Old": 6.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-22; it draws from the old SD-23 (81%), the old SD-21 (19%). Counties: gained Sarasota (82%), Manatee (18%); lost Polk, Lake. 2020 presidential margin R+6.2 on the 2016\u20132020 lines \u2192 R+10.7 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 62.0,
+      "key": "20",
+      "popPct": 70.7
+     },
+     {
+      "areaPct": 34.7,
+      "key": "10",
+      "popPct": 13.7
+     },
+     {
+      "areaPct": 1.7,
+      "key": "19",
+      "popPct": 8.7
+     },
+     {
+      "areaPct": 1.6,
+      "key": "21",
+      "popPct": 6.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pasco",
+      "popPct": 50.6
+     },
+     {
+      "county": "Hillsborough",
+      "popPct": 49.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Pasco",
+      "popPct": 50.6
+     },
+     {
+      "county": "Hillsborough",
+      "popPct": 49.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Sarasota",
+      "popPct": 80.2
+     },
+     {
+      "county": "Charlotte",
+      "popPct": 19.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 533409,
+    "pres2020New": 11.4,
+    "pres2020Old": 13.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-23; it draws from the old SD-20 (71%), the old SD-10 (14%), the old SD-19 (9%) and 1 more. Counties: gained Pasco (51%), Hillsborough (49%); lost Sarasota, Charlotte. 2020 presidential margin R+13.6 on the 2016\u20132020 lines \u2192 R+11.4 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 67.1,
+      "key": "30",
+      "popPct": 53.0
+     },
+     {
+      "areaPct": 32.9,
+      "key": "31",
+      "popPct": 47.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Palm Beach",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Palm Beach",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Pinellas",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 543503,
+    "pres2020New": -24.1,
+    "pres2020Old": 5.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-24; it draws from the old SD-30 (53%), the old SD-31 (47%). Counties: gained Palm Beach (100%); lost Pinellas. 2020 presidential margin R+5.9 on the 2016\u20132020 lines \u2192 D+24.1 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "15",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Osceola",
+      "popPct": 73.2
+     },
+     {
+      "county": "Orange",
+      "popPct": 26.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Osceola",
+      "popPct": 73.2
+     },
+     {
+      "county": "Orange",
+      "popPct": 26.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "St. Lucie",
+      "popPct": 61.9
+     },
+     {
+      "county": "Martin",
+      "popPct": 29.8
+     },
+     {
+      "county": "Palm Beach",
+      "popPct": 8.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 530881,
+    "pres2020New": -18.2,
+    "pres2020Old": 10.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-25; it draws from the old SD-15 (100%). Counties: gained Osceola (73%), Orange (27%); lost St. Lucie, Martin, Palm Beach. 2020 presidential margin R+10.4 on the 2016\u20132020 lines \u2192 D+18.2 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 7.8,
+      "key": "31",
+      "popPct": 51.4
+     },
+     {
+      "areaPct": 87.4,
+      "key": "29",
+      "popPct": 46.8
+     },
+     {
+      "areaPct": 0.3,
+      "key": "30",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Palm Beach",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Palm Beach",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Polk",
+      "popPct": 34.9
+     },
+     {
+      "county": "Highlands",
+      "popPct": 20.3
+     },
+     {
+      "county": "Charlotte",
+      "popPct": 15.9
+     },
+     {
+      "county": "Okeechobee",
+      "popPct": 7.9
+     },
+     {
+      "county": "DeSoto",
+      "popPct": 6.8
+     },
+     {
+      "county": "Lee",
+      "popPct": 6.5
+     },
+     {
+      "county": "Hardee",
+      "popPct": 5.2
+     },
+     {
+      "county": "Glades",
+      "popPct": 2.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 542316,
+    "pres2020New": -16.9,
+    "pres2020Old": 31.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-26; it draws from the old SD-31 (51%), the old SD-29 (47%), the old SD-30 (2%). Counties: gained Palm Beach (100%); lost Polk, Highlands, Charlotte, Okeechobee and 4 more. 2020 presidential margin R+31.9 on the 2016\u20132020 lines \u2192 D+16.9 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 85.0,
+      "key": "26",
+      "popPct": 59.3
+     },
+     {
+      "areaPct": 10.4,
+      "key": "23",
+      "popPct": 19.9
+     },
+     {
+      "areaPct": 1.5,
+      "key": "27",
+      "popPct": 8.1
+     },
+     {
+      "areaPct": 1.8,
+      "key": "22",
+      "popPct": 7.8
+     },
+     {
+      "areaPct": 1.3,
+      "key": "28",
+      "popPct": 4.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Polk",
+      "popPct": 35.7
+     },
+     {
+      "county": "Charlotte",
+      "popPct": 34.3
+     },
+     {
+      "county": "Lee",
+      "popPct": 18.9
+     },
+     {
+      "county": "DeSoto",
+      "popPct": 6.3
+     },
+     {
+      "county": "Hardee",
+      "popPct": 4.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Polk",
+      "popPct": 35.7
+     },
+     {
+      "county": "Charlotte",
+      "popPct": 34.3
+     },
+     {
+      "county": "DeSoto",
+      "popPct": 6.3
+     },
+     {
+      "county": "Hardee",
+      "popPct": 4.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 542051,
+    "pres2020New": 27.5,
+    "pres2020Old": 18.4,
+    "retainedAreaPct": 1.5,
+    "retainedPopPct": 8.1,
+    "text": "A new footprint: only 8% of its population was in the 2016\u20132020 SD-27; it draws from the old SD-26 (59%), the old SD-23 (20%), the old SD-22 (8%) and 1 more. Counties: gained Polk (36%), Charlotte (34%), DeSoto (6%) and 1 more. 2020 presidential margin R+18.4 on the 2016\u20132020 lines \u2192 R+27.5 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 98.8,
+      "key": "28",
+      "popPct": 91.5
+     },
+     {
+      "areaPct": 1.1,
+      "key": "27",
+      "popPct": 8.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Collier",
+      "popPct": 69.2
+     },
+     {
+      "county": "Lee",
+      "popPct": 23.5
+     },
+     {
+      "county": "Hendry",
+      "popPct": 7.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 541900,
+    "pres2020New": 22.4,
+    "pres2020Old": 22.9,
+    "retainedAreaPct": 98.8,
+    "retainedPopPct": 91.5,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-28; gained the rest from the old SD-27 (8%). Spans Collier, Lee, Hendry counties. 2020 presidential margin R+22.9 on the 2016\u20132020 lines \u2192 R+22.4 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 14.3,
+      "key": "25",
+      "popPct": 41.6
+     },
+     {
+      "areaPct": 14.7,
+      "key": "17",
+      "popPct": 29.8
+     },
+     {
+      "areaPct": 71.0,
+      "key": "26",
+      "popPct": 28.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Lucie",
+      "popPct": 41.7
+     },
+     {
+      "county": "Indian River",
+      "popPct": 29.7
+     },
+     {
+      "county": "Highlands",
+      "popPct": 18.8
+     },
+     {
+      "county": "Okeechobee",
+      "popPct": 7.3
+     },
+     {
+      "county": "Glades",
+      "popPct": 2.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "St. Lucie",
+      "popPct": 41.7
+     },
+     {
+      "county": "Indian River",
+      "popPct": 29.7
+     },
+     {
+      "county": "Highlands",
+      "popPct": 18.8
+     },
+     {
+      "county": "Okeechobee",
+      "popPct": 7.3
+     },
+     {
+      "county": "Glades",
+      "popPct": 2.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Palm Beach",
+      "popPct": 73.5
+     },
+     {
+      "county": "Broward",
+      "popPct": 26.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 535580,
+    "pres2020New": 18.1,
+    "pres2020Old": -11.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-29; it draws from the old SD-25 (42%), the old SD-17 (30%), the old SD-26 (29%). Counties: gained St. Lucie (42%), Indian River (30%), Highlands (19%) and 2 more; lost Palm Beach, Broward. 2020 presidential margin D+11.0 on the 2016\u20132020 lines \u2192 R+18.1 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 79.1,
+      "key": "3",
+      "popPct": 87.3
+     },
+     {
+      "areaPct": 20.9,
+      "key": "5",
+      "popPct": 12.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Leon",
+      "popPct": 53.9
+     },
+     {
+      "county": "Gadsden",
+      "popPct": 8.2
+     },
+     {
+      "county": "Suwannee",
+      "popPct": 8.0
+     },
+     {
+      "county": "Wakulla",
+      "popPct": 6.2
+     },
+     {
+      "county": "Taylor",
+      "popPct": 4.0
+     },
+     {
+      "county": "Madison",
+      "popPct": 3.3
+     },
+     {
+      "county": "Dixie",
+      "popPct": 3.0
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 2.7
+     },
+     {
+      "county": "Gulf",
+      "popPct": 2.6
+     },
+     {
+      "county": "Hamilton",
+      "popPct": 2.6
+     },
+     {
+      "county": "Franklin",
+      "popPct": 2.3
+     },
+     {
+      "county": "Lafayette",
+      "popPct": 1.5
+     },
+     {
+      "county": "Liberty",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Suwannee",
+      "popPct": 8.0
+     },
+     {
+      "county": "Dixie",
+      "popPct": 3.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Calhoun",
+      "popPct": 2.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 541142,
+    "pres2020New": -3.0,
+    "pres2020Old": -9.3,
+    "retainedAreaPct": 79.1,
+    "retainedPopPct": 87.3,
+    "text": "Kept 87% of its population from the 2016\u20132020 SD-3; gained the rest from the old SD-5 (13%). Counties: gained Suwannee (8%), Dixie (3%); lost Calhoun. 2020 presidential margin D+9.3 on the 2016\u20132020 lines \u2192 D+3.0 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 57.7,
+      "key": "29",
+      "popPct": 50.6
+     },
+     {
+      "areaPct": 18.5,
+      "key": "33",
+      "popPct": 20.1
+     },
+     {
+      "areaPct": 11.9,
+      "key": "32",
+      "popPct": 15.5
+     },
+     {
+      "areaPct": 11.8,
+      "key": "34",
+      "popPct": 13.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Broward",
+      "popPct": 74.2
+     },
+     {
+      "county": "Palm Beach",
+      "popPct": 25.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Broward",
+      "popPct": 74.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 536070,
+    "pres2020New": -21.4,
+    "pres2020Old": -10.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-30; it draws from the old SD-29 (51%), the old SD-33 (20%), the old SD-32 (16%) and 1 more. Counties: gained Broward (74%). 2020 presidential margin D+10.3 on the 2016\u20132020 lines \u2192 D+21.4 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 86.4,
+      "key": "25",
+      "popPct": 57.1
+     },
+     {
+      "areaPct": 13.6,
+      "key": "30",
+      "popPct": 42.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Palm Beach",
+      "popPct": 50.9
+     },
+     {
+      "county": "Martin",
+      "popPct": 29.4
+     },
+     {
+      "county": "St. Lucie",
+      "popPct": 19.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Martin",
+      "popPct": 29.4
+     },
+     {
+      "county": "St. Lucie",
+      "popPct": 19.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 540884,
+    "pres2020New": 10.8,
+    "pres2020Old": -22.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-31; it draws from the old SD-25 (57%), the old SD-30 (43%). Counties: gained Martin (29%), St. Lucie (20%). 2020 presidential margin D+22.1 on the 2016\u20132020 lines \u2192 R+10.8 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 67.8,
+      "key": "33",
+      "popPct": 74.6
+     },
+     {
+      "areaPct": 29.5,
+      "key": "32",
+      "popPct": 21.8
+     },
+     {
+      "areaPct": 2.7,
+      "key": "34",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Broward",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 542354,
+    "pres2020New": -50.6,
+    "pres2020Old": -18.6,
+    "retainedAreaPct": 29.5,
+    "retainedPopPct": 21.8,
+    "text": "A new footprint: only 22% of its population was in the 2016\u20132020 SD-32; it draws from the old SD-33 (75%), the old SD-34 (4%). Entirely in Broward County. 2020 presidential margin D+18.6 on the 2016\u20132020 lines \u2192 D+50.6 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 93.3,
+      "key": "27",
+      "popPct": 91.4
+     },
+     {
+      "areaPct": 6.7,
+      "key": "28",
+      "popPct": 8.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lee",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lee",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Broward",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 531879,
+    "pres2020New": 19.4,
+    "pres2020Old": -56.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-33; it draws from the old SD-27 (91%), the old SD-28 (9%). Counties: gained Lee (100%); lost Broward. 2020 presidential margin D+56.0 on the 2016\u20132020 lines \u2192 R+19.4 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 72.1,
+      "key": "38",
+      "popPct": 56.9
+     },
+     {
+      "areaPct": 26.9,
+      "key": "35",
+      "popPct": 41.5
+     },
+     {
+      "areaPct": 1.0,
+      "key": "36",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Broward",
+      "popPct": 98.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 531527,
+    "pres2020New": -56.4,
+    "pres2020Old": -14.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-34; it draws from the old SD-38 (57%), the old SD-35 (42%), the old SD-36 (2%). Counties: gained Miami-Dade (100%); lost Broward. 2020 presidential margin D+14.2 on the 2016\u20132020 lines \u2192 D+56.4 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 94.8,
+      "key": "32",
+      "popPct": 54.7
+     },
+     {
+      "areaPct": 4.8,
+      "key": "35",
+      "popPct": 40.0
+     },
+     {
+      "areaPct": 0.4,
+      "key": "34",
+      "popPct": 5.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Broward",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 49.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 541794,
+    "pres2020New": -23.6,
+    "pres2020Old": -50.8,
+    "retainedAreaPct": 4.8,
+    "retainedPopPct": 40.0,
+    "text": "A new footprint: only 40% of its population was in the 2016\u20132020 SD-35; it draws from the old SD-32 (55%), the old SD-34 (5%). Counties: lost Miami-Dade. 2020 presidential margin D+50.8 on the 2016\u20132020 lines \u2192 D+23.6 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 55.0,
+      "key": "37",
+      "popPct": 60.6
+     },
+     {
+      "areaPct": 24.4,
+      "key": "38",
+      "popPct": 19.4
+     },
+     {
+      "areaPct": 16.4,
+      "key": "39",
+      "popPct": 15.7
+     },
+     {
+      "areaPct": 4.1,
+      "key": "36",
+      "popPct": 4.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 539588,
+    "pres2020New": 0.0,
+    "pres2020Old": 18.0,
+    "retainedAreaPct": 4.1,
+    "retainedPopPct": 4.3,
+    "text": "A new footprint: only 4% of its population was in the 2016\u20132020 SD-36; it draws from the old SD-37 (61%), the old SD-38 (19%), the old SD-39 (16%). Entirely in Miami-Dade County. 2020 presidential margin R+18.0 on the 2016\u20132020 lines \u2192 Even  on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 88.5,
+      "key": "34",
+      "popPct": 71.8
+     },
+     {
+      "areaPct": 5.0,
+      "key": "38",
+      "popPct": 14.8
+     },
+     {
+      "areaPct": 3.7,
+      "key": "35",
+      "popPct": 8.9
+     },
+     {
+      "areaPct": 2.3,
+      "key": "32",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 0.5,
+      "key": "33",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Broward",
+      "popPct": 83.4
+     },
+     {
+      "county": "Miami-Dade",
+      "popPct": 16.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Broward",
+      "popPct": 83.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 544433,
+    "pres2020New": -13.3,
+    "pres2020Old": -5.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-37; it draws from the old SD-34 (72%), the old SD-38 (15%), the old SD-35 (9%) and 2 more. Counties: gained Broward (83%). 2020 presidential margin D+5.2 on the 2016\u20132020 lines \u2192 D+13.3 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 13.3,
+      "key": "40",
+      "popPct": 42.2
+     },
+     {
+      "areaPct": 60.1,
+      "key": "37",
+      "popPct": 32.5
+     },
+     {
+      "areaPct": 26.6,
+      "key": "39",
+      "popPct": 25.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 542570,
+    "pres2020New": -7.2,
+    "pres2020Old": -36.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-38; it draws from the old SD-40 (42%), the old SD-37 (32%), the old SD-39 (25%). Entirely in Miami-Dade County. 2020 presidential margin D+36.2 on the 2016\u20132020 lines \u2192 D+7.2 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 88.1,
+      "key": "36",
+      "popPct": 87.3
+     },
+     {
+      "areaPct": 8.0,
+      "key": "39",
+      "popPct": 7.4
+     },
+     {
+      "areaPct": 3.0,
+      "key": "35",
+      "popPct": 4.3
+     },
+     {
+      "areaPct": 0.9,
+      "key": "37",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Monroe",
+      "popPct": 15.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 538502,
+    "pres2020New": 18.4,
+    "pres2020Old": 9.0,
+    "retainedAreaPct": 8.0,
+    "retainedPopPct": 7.4,
+    "text": "A new footprint: only 7% of its population was in the 2016\u20132020 SD-39; it draws from the old SD-36 (87%), the old SD-35 (4%), the old SD-37 (1%). Counties: lost Monroe. 2020 presidential margin R+9.0 on the 2016\u20132020 lines \u2192 R+18.4 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 98.2,
+      "key": "4",
+      "popPct": 98.3
+     },
+     {
+      "areaPct": 1.8,
+      "key": "6",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Duval",
+      "popPct": 83.3
+     },
+     {
+      "county": "Nassau",
+      "popPct": 16.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 554439,
+    "pres2020New": 19.9,
+    "pres2020Old": 19.5,
+    "retainedAreaPct": 98.2,
+    "retainedPopPct": 98.3,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-4; gained the rest from the old SD-6 (2%). Spans Duval, Nassau counties. 2020 presidential margin R+19.5 on the 2016\u20132020 lines \u2192 R+19.9 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 99.3,
+      "key": "39",
+      "popPct": 51.4
+     },
+     {
+      "areaPct": 0.7,
+      "key": "40",
+      "popPct": 48.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Miami-Dade",
+      "popPct": 84.7
+     },
+     {
+      "county": "Monroe",
+      "popPct": 15.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Monroe",
+      "popPct": 15.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 542531,
+    "pres2020New": 10.1,
+    "pres2020Old": 5.5,
+    "retainedAreaPct": 0.7,
+    "retainedPopPct": 48.6,
+    "text": "A new footprint: only 49% of its population was in the 2016\u20132020 SD-40; it draws from the old SD-39 (51%). Counties: gained Monroe (15%). 2020 presidential margin R+5.5 on the 2016\u20132020 lines \u2192 R+10.1 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 86.9,
+      "key": "6",
+      "popPct": 94.8
+     },
+     {
+      "areaPct": 13.1,
+      "key": "4",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Duval",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Duval",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Clay",
+      "popPct": 42.6
+     },
+     {
+      "county": "Columbia",
+      "popPct": 13.6
+     },
+     {
+      "county": "Levy",
+      "popPct": 8.5
+     },
+     {
+      "county": "Suwannee",
+      "popPct": 8.5
+     },
+     {
+      "county": "Baker",
+      "popPct": 5.6
+     },
+     {
+      "county": "Bradford",
+      "popPct": 5.6
+     },
+     {
+      "county": "Marion",
+      "popPct": 3.7
+     },
+     {
+      "county": "Gilchrist",
+      "popPct": 3.5
+     },
+     {
+      "county": "Dixie",
+      "popPct": 3.3
+     },
+     {
+      "county": "Union",
+      "popPct": 3.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 531474,
+    "pres2020New": -22.2,
+    "pres2020Old": 45.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-5; it draws from the old SD-6 (95%), the old SD-4 (5%). Counties: gained Duval (100%); lost Clay, Columbia, Levy, Suwannee and 6 more. 2020 presidential margin R+45.8 on the 2016\u20132020 lines \u2192 D+22.2 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 85.6,
+      "key": "5",
+      "popPct": 70.3
+     },
+     {
+      "areaPct": 14.4,
+      "key": "8",
+      "popPct": 29.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clay",
+      "popPct": 40.3
+     },
+     {
+      "county": "Alachua",
+      "popPct": 29.7
+     },
+     {
+      "county": "Columbia",
+      "popPct": 12.9
+     },
+     {
+      "county": "Baker",
+      "popPct": 5.3
+     },
+     {
+      "county": "Bradford",
+      "popPct": 5.3
+     },
+     {
+      "county": "Gilchrist",
+      "popPct": 3.3
+     },
+     {
+      "county": "Union",
+      "popPct": 3.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Clay",
+      "popPct": 40.3
+     },
+     {
+      "county": "Alachua",
+      "popPct": 29.7
+     },
+     {
+      "county": "Columbia",
+      "popPct": 12.9
+     },
+     {
+      "county": "Baker",
+      "popPct": 5.3
+     },
+     {
+      "county": "Bradford",
+      "popPct": 5.3
+     },
+     {
+      "county": "Gilchrist",
+      "popPct": 3.3
+     },
+     {
+      "county": "Union",
+      "popPct": 3.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Duval",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 538181,
+    "pres2020New": 23.3,
+    "pres2020Old": -24.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-6; it draws from the old SD-5 (70%), the old SD-8 (30%). Counties: gained Clay (40%), Alachua (30%), Columbia (13%) and 4 more; lost Duval. 2020 presidential margin D+24.0 on the 2016\u20132020 lines \u2192 R+23.3 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 67.4,
+      "key": "7",
+      "popPct": 86.5
+     },
+     {
+      "areaPct": 32.6,
+      "key": "8",
+      "popPct": 13.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Johns",
+      "popPct": 50.4
+     },
+     {
+      "county": "Flagler",
+      "popPct": 21.3
+     },
+     {
+      "county": "Volusia",
+      "popPct": 14.6
+     },
+     {
+      "county": "Putnam",
+      "popPct": 13.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Putnam",
+      "popPct": 13.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 541525,
+    "pres2020New": 25.8,
+    "pres2020Old": 20.6,
+    "retainedAreaPct": 67.4,
+    "retainedPopPct": 86.5,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-7; gained the rest from the old SD-8 (14%). Counties: gained Putnam (14%). 2020 presidential margin R+20.6 on the 2016\u20132020 lines \u2192 R+25.8 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 73.6,
+      "key": "14",
+      "popPct": 67.3
+     },
+     {
+      "areaPct": 20.7,
+      "key": "7",
+      "popPct": 23.3
+     },
+     {
+      "areaPct": 5.7,
+      "key": "9",
+      "popPct": 9.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Volusia",
+      "popPct": 87.2
+     },
+     {
+      "county": "Brevard",
+      "popPct": 12.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Volusia",
+      "popPct": 87.2
+     },
+     {
+      "county": "Brevard",
+      "popPct": 12.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Alachua",
+      "popPct": 53.9
+     },
+     {
+      "county": "Marion",
+      "popPct": 31.8
+     },
+     {
+      "county": "Putnam",
+      "popPct": 14.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 542054,
+    "pres2020New": 14.9,
+    "pres2020Old": -1.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-8; it draws from the old SD-14 (67%), the old SD-7 (23%), the old SD-9 (10%). Counties: gained Volusia (87%), Brevard (12%); lost Alachua, Marion, Putnam. 2020 presidential margin D+1.4 on the 2016\u20132020 lines \u2192 R+14.9 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 37.5,
+      "key": "8",
+      "popPct": 52.6
+     },
+     {
+      "areaPct": 16.7,
+      "key": "12",
+      "popPct": 35.9
+     },
+     {
+      "areaPct": 45.9,
+      "key": "5",
+      "popPct": 11.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Marion",
+      "popPct": 69.9
+     },
+     {
+      "county": "Alachua",
+      "popPct": 22.1
+     },
+     {
+      "county": "Levy",
+      "popPct": 8.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Marion",
+      "popPct": 69.9
+     },
+     {
+      "county": "Alachua",
+      "popPct": 22.1
+     },
+     {
+      "county": "Levy",
+      "popPct": 8.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Seminole",
+      "popPct": 89.8
+     },
+     {
+      "county": "Volusia",
+      "popPct": 9.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 537647,
+    "pres2020New": 16.2,
+    "pres2020Old": -0.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-9; it draws from the old SD-8 (53%), the old SD-12 (36%), the old SD-5 (12%). Counties: gained Marion (70%), Alachua (22%), Levy (8%); lost Seminole, Volusia. 2020 presidential margin D+0.2 on the 2016\u20132020 lines \u2192 R+16.2 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

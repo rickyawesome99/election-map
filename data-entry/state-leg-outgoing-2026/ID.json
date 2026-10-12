@@ -1,0 +1,143 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 Idaho House of Representatives election",
+   "senate": "2026 Idaho Senate election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "1": [
+   {
+    "name": "Mark Sauter",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Jane Sauter",
+    "post": "A"
+   }
+  ],
+  "11": [
+   {
+    "name": "Lucas Cayler",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Debbie Geyer",
+    "post": "B"
+   }
+  ],
+  "16": [
+   {
+    "name": "Soñia Galaviz",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for state senate",
+    "post": "A"
+   }
+  ],
+  "22": [
+   {
+    "name": "John Vander Woude",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring",
+    "post": "A"
+   }
+  ],
+  "24": [
+   {
+    "name": "Steve Miller",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Chance Requa",
+    "post": "B"
+   }
+  ],
+  "25": [
+   {
+    "name": "Don Hall",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring",
+    "post": "A"
+   },
+   {
+    "name": "David Leavitt",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Cherie Vollmer",
+    "post": "B"
+   }
+  ],
+  "26": [
+   {
+    "name": "Jack Nelsen",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring",
+    "post": "B"
+   }
+  ],
+  "29": [
+   {
+    "name": "Tanya Burgoyne",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Jennifer Miles",
+    "post": "B"
+   }
+  ],
+  "6": [
+   {
+    "name": "Lori McCann",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for state senate",
+    "post": "A"
+   }
+  ],
+  "8": [
+   {
+    "name": "Faye Thompson",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Brian Beckley",
+    "post": "B"
+   }
+  ]
+ },
+ "senate": {
+  "1": [
+   {
+    "name": "Jim Woodward",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Scott Herndon"
+   }
+  ],
+  "16": [
+   {
+    "name": "Alison Rabe",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "24": [
+   {
+    "name": "Glenneda Zuiderveld",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Bret Reinke"
+   }
+  ],
+  "25": [
+   {
+    "name": "Josh Kohl",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to Casey Swensen"
+   }
+  ]
+ }
+}

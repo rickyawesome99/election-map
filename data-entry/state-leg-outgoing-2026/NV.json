@@ -1,0 +1,61 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 Nevada Assembly election",
+   "senate": "2026 Nevada Senate election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "1": [
+   {
+    "name": "Daniele Monroe-Moreno",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for mayor of North Las Vegas"
+   }
+  ],
+  "2": [
+   {
+    "name": "Heidi Kasama",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for the Clark County Commission"
+   }
+  ],
+  "29": [
+   {
+    "name": "Joe Dalia",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for treasurer"
+   }
+  ],
+  "40": [
+   {
+    "name": "P. K. O'Neill",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "41": [
+   {
+    "name": "Sandra Jauregui",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for Lieutenant-governor"
+   }
+  ],
+  "9": [
+   {
+    "name": "Steve Yeager",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ]
+ },
+ "senate": {}
+}

@@ -1,0 +1,4404 @@
+{
+ "house": {
+  "current": {
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 82.5,
+      "key": "10",
+      "popPct": 77.0
+     },
+     {
+      "areaPct": 8.4,
+      "key": "44B",
+      "popPct": 13.9
+     },
+     {
+      "areaPct": 4.9,
+      "key": "12",
+      "popPct": 8.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 98.9
+     },
+     {
+      "county": "Howard",
+      "popPct": 1.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 134668,
+    "pres2020New": -56.8,
+    "pres2020Old": -64.3,
+    "retainedAreaPct": 82.5,
+    "retainedPopPct": 77.0,
+    "text": "Kept 77% of its population from the 2018 HD-10; gained the rest from the old HD-44B (14%), the old HD-12 (9%). Spans Baltimore, Howard counties. 2020 presidential margin D+64.3 on the 2018 lines \u2192 D+56.8 on the current lines.",
+    "toEra": "current"
+   },
+   "11A": {
+    "contributors": [
+     {
+      "areaPct": 72.0,
+      "key": "11",
+      "popPct": 87.7
+     },
+     {
+      "areaPct": 13.8,
+      "key": "10",
+      "popPct": 11.1
+     },
+     {
+      "areaPct": 14.2,
+      "key": "42B",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Baltimore",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 40231,
+    "pres2020New": -63.8,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-11A; it draws from the old HD-11 (88%), the old HD-10 (11%), the old HD-42B (1%). Counties: gained Baltimore (100%).",
+    "toEra": "current"
+   },
+   "11B": {
+    "contributors": [
+     {
+      "areaPct": 92.2,
+      "key": "11",
+      "popPct": 92.3
+     },
+     {
+      "areaPct": 6.9,
+      "key": "42B",
+      "popPct": 4.7
+     },
+     {
+      "areaPct": 0.4,
+      "key": "42A",
+      "popPct": 2.1
+     },
+     {
+      "areaPct": 0.5,
+      "key": "10",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 98.3
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 1.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Baltimore",
+      "popPct": 98.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 89632,
+    "pres2020New": -33.7,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-11B; it draws from the old HD-11 (92%), the old HD-42B (5%), the old HD-42A (2%) and 1 more. Counties: gained Baltimore (98%).",
+    "toEra": "current"
+   },
+   "12A": {
+    "contributors": [
+     {
+      "areaPct": 73.6,
+      "key": "12",
+      "popPct": 74.1
+     },
+     {
+      "areaPct": 17.7,
+      "key": "13",
+      "popPct": 18.6
+     },
+     {
+      "areaPct": 8.7,
+      "key": "9B",
+      "popPct": 7.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Howard",
+      "popPct": 97.2
+     },
+     {
+      "county": "Anne Arundel",
+      "popPct": 2.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Howard",
+      "popPct": 97.2
+     },
+     {
+      "county": "Anne Arundel",
+      "popPct": 2.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 87720,
+    "pres2020New": -52.6,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-12A; it draws from the old HD-12 (74%), the old HD-13 (19%), the old HD-9B (7%). Counties: gained Howard (97%), Anne Arundel (3%).",
+    "toEra": "current"
+   },
+   "12B": {
+    "contributors": [
+     {
+      "areaPct": 74.7,
+      "key": "31A",
+      "popPct": 91.7
+     },
+     {
+      "areaPct": 22.3,
+      "key": "32",
+      "popPct": 6.4
+     },
+     {
+      "areaPct": 2.9,
+      "key": "31B",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 96.7
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 2.2
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 96.7
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 2.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 45236,
+    "pres2020New": -13.7,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-12B; it draws from the old HD-31A (92%), the old HD-32 (6%), the old HD-31B (2%). Counties: gained Anne Arundel (97%), Baltimore (2%).",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 71.8,
+      "key": "13",
+      "popPct": 93.1
+     },
+     {
+      "areaPct": 27.7,
+      "key": "9A",
+      "popPct": 5.9
+     },
+     {
+      "areaPct": 0.5,
+      "key": "12",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Howard",
+      "popPct": 96.7
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 1.9
+     },
+     {
+      "county": "Prince George's",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 129925,
+    "pres2020New": -53.5,
+    "pres2020Old": -53.3,
+    "retainedAreaPct": 71.8,
+    "retainedPopPct": 93.1,
+    "text": "Kept 93% of its population from the 2018 HD-13; gained the rest from the old HD-9A (6%), the old HD-12 (1%). Spans Howard, Montgomery, Prince George's counties. 2020 presidential margin D+53.3 on the 2018 lines \u2192 D+53.5 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 93.7,
+      "key": "14",
+      "popPct": 90.5
+     },
+     {
+      "areaPct": 2.7,
+      "key": "39",
+      "popPct": 5.4
+     },
+     {
+      "areaPct": 3.6,
+      "key": "19",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montgomery",
+      "popPct": 99.1
+     },
+     {
+      "county": "Prince George's",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 132393,
+    "pres2020New": -49.5,
+    "pres2020Old": -46.9,
+    "retainedAreaPct": 93.7,
+    "retainedPopPct": 90.5,
+    "text": "Kept 90% of its population from the 2018 HD-14; gained the rest from the old HD-39 (5%), the old HD-19 (4%). Spans Montgomery, Prince George's counties. 2020 presidential margin D+46.9 on the 2018 lines \u2192 D+49.5 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "15",
+      "popPct": 98.5
+     },
+     {
+      "areaPct": 0.4,
+      "key": "16",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montgomery",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 128598,
+    "pres2020New": -50.5,
+    "pres2020Old": -50.4,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 98.5,
+    "text": "Kept 98% of its population from the 2018 HD-15; gained the rest from the old HD-16 (1%). Entirely in Montgomery County. 2020 presidential margin D+50.4 on the 2018 lines \u2192 D+50.5 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "16",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montgomery",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 132614,
+    "pres2020New": -66.0,
+    "pres2020Old": -65.9,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2018 map. Entirely in Montgomery County.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "17",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montgomery",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 133718,
+    "pres2020New": -59.9,
+    "pres2020Old": -59.7,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2018 map. Entirely in Montgomery County.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "18",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montgomery",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 128256,
+    "pres2020New": -68.5,
+    "pres2020Old": -68.5,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2018 map. Entirely in Montgomery County.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 98.6,
+      "key": "19",
+      "popPct": 97.1
+     },
+     {
+      "areaPct": 1.3,
+      "key": "39",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montgomery",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 129672,
+    "pres2020New": -55.2,
+    "pres2020Old": -54.7,
+    "retainedAreaPct": 98.6,
+    "retainedPopPct": 97.1,
+    "text": "Kept 97% of its population from the 2018 HD-19; gained the rest from the old HD-39 (3%). Entirely in Montgomery County. 2020 presidential margin D+54.7 on the 2018 lines \u2192 D+55.2 on the current lines.",
+    "toEra": "current"
+   },
+   "1A": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "1A",
+      "popPct": 90.9
+     },
+     {
+      "areaPct": 0.6,
+      "key": "1B",
+      "popPct": 9.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Garrett",
+      "popPct": 68.0
+     },
+     {
+      "county": "Allegany",
+      "popPct": 32.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 42796,
+    "pres2020New": 51.2,
+    "pres2020Old": 56.3,
+    "retainedAreaPct": 99.4,
+    "retainedPopPct": 90.9,
+    "text": "Kept 91% of its population from the 2018 HD-1A; gained the rest from the old HD-1B (9%). Spans Garrett, Allegany counties. 2020 presidential margin R+56.3 on the 2018 lines \u2192 R+51.2 on the current lines.",
+    "toEra": "current"
+   },
+   "1B": {
+    "contributors": [
+     {
+      "areaPct": 90.5,
+      "key": "1B",
+      "popPct": 68.8
+     },
+     {
+      "areaPct": 9.5,
+      "key": "1C",
+      "popPct": 31.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Allegany",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 46993,
+    "pres2020New": 33.7,
+    "pres2020Old": 36.0,
+    "retainedAreaPct": 90.5,
+    "retainedPopPct": 68.8,
+    "text": "Kept 69% of its population from the 2018 HD-1B; gained the rest from the old HD-1C (31%). Entirely in Allegany County. 2020 presidential margin R+36.0 on the 2018 lines \u2192 R+33.7 on the current lines.",
+    "toEra": "current"
+   },
+   "1C": {
+    "contributors": [
+     {
+      "areaPct": 87.0,
+      "key": "1C",
+      "popPct": 53.5
+     },
+     {
+      "areaPct": 6.6,
+      "key": "2A",
+      "popPct": 44.0
+     },
+     {
+      "areaPct": 6.4,
+      "key": "1B",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 84.2
+     },
+     {
+      "county": "Allegany",
+      "popPct": 15.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 45412,
+    "pres2020New": 46.7,
+    "pres2020Old": 44.9,
+    "retainedAreaPct": 87.0,
+    "retainedPopPct": 53.5,
+    "text": "Kept 54% of its population from the 2018 HD-1C; gained the rest from the old HD-2A (44%), the old HD-1B (2%). Spans Washington, Allegany counties. 2020 presidential margin R+44.9 on the 2018 lines \u2192 R+46.7 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "20",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montgomery",
+      "popPct": 94.4
+     },
+     {
+      "county": "Prince George's",
+      "popPct": 5.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 129875,
+    "pres2020New": -78.7,
+    "pres2020Old": -78.7,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2018 map. Spans Montgomery, Prince George's counties.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 83.2,
+      "key": "21",
+      "popPct": 88.6
+     },
+     {
+      "areaPct": 16.6,
+      "key": "33",
+      "popPct": 9.9
+     },
+     {
+      "areaPct": 0.1,
+      "key": "47B",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Prince George's",
+      "popPct": 83.6
+     },
+     {
+      "county": "Anne Arundel",
+      "popPct": 15.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 136940,
+    "pres2020New": -58.3,
+    "pres2020Old": -55.6,
+    "retainedAreaPct": 83.2,
+    "retainedPopPct": 88.6,
+    "text": "Kept 89% of its population from the 2018 HD-21; gained the rest from the old HD-33 (10%), the old HD-47B (1%). Spans Prince George's, Anne Arundel counties. 2020 presidential margin D+55.6 on the 2018 lines \u2192 D+58.3 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "22",
+      "popPct": 99.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Prince George's",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 135722,
+    "pres2020New": -78.1,
+    "pres2020Old": -78.4,
+    "retainedAreaPct": 99.4,
+    "retainedPopPct": 99.0,
+    "text": "Kept 99% of its population from the 2018 HD-22. Entirely in Prince George's County. 2020 presidential margin D+78.4 on the 2018 lines \u2192 D+78.1 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 70.7,
+      "key": "23B",
+      "popPct": 68.0
+     },
+     {
+      "areaPct": 19.4,
+      "key": "23A",
+      "popPct": 28.8
+     },
+     {
+      "areaPct": 9.8,
+      "key": "27B",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Prince George's",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Prince George's",
+      "popPct": 99.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 134131,
+    "pres2020New": -74.0,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-23; it draws from the old HD-23B (68%), the old HD-23A (29%), the old HD-27B (3%). Counties: gained Prince George's (100%).",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 87.9,
+      "key": "24",
+      "popPct": 87.9
+     },
+     {
+      "areaPct": 4.7,
+      "key": "22",
+      "popPct": 6.6
+     },
+     {
+      "areaPct": 4.7,
+      "key": "23A",
+      "popPct": 2.8
+     },
+     {
+      "areaPct": 1.0,
+      "key": "25",
+      "popPct": 1.5
+     },
+     {
+      "areaPct": 1.3,
+      "key": "23B",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Prince George's",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 137454,
+    "pres2020New": -86.8,
+    "pres2020Old": -87.9,
+    "retainedAreaPct": 87.9,
+    "retainedPopPct": 87.9,
+    "text": "Kept 88% of its population from the 2018 HD-24; gained the rest from the old HD-22 (7%), the old HD-23A (3%), the old HD-25 (2%) and 1 more. Entirely in Prince George's County. 2020 presidential margin D+87.9 on the 2018 lines \u2192 D+86.8 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 86.7,
+      "key": "25",
+      "popPct": 88.6
+     },
+     {
+      "areaPct": 2.3,
+      "key": "24",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 6.4,
+      "key": "27B",
+      "popPct": 4.3
+     },
+     {
+      "areaPct": 2.1,
+      "key": "27A",
+      "popPct": 1.0
+     },
+     {
+      "areaPct": 2.5,
+      "key": "23B",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Prince George's",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 134456,
+    "pres2020New": -89.0,
+    "pres2020Old": -89.3,
+    "retainedAreaPct": 86.7,
+    "retainedPopPct": 88.6,
+    "text": "Kept 89% of its population from the 2018 HD-25; gained the rest from the old HD-24 (5%), the old HD-27B (4%), the old HD-27A (1%) and 1 more. Entirely in Prince George's County. 2020 presidential margin D+89.3 on the 2018 lines \u2192 D+89.0 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 92.6,
+      "key": "26",
+      "popPct": 94.3
+     },
+     {
+      "areaPct": 1.6,
+      "key": "25",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 5.7,
+      "key": "27A",
+      "popPct": 1.6
+     },
+     {
+      "areaPct": 0.1,
+      "key": "24",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Prince George's",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 134103,
+    "pres2020New": -84.7,
+    "pres2020Old": -84.6,
+    "retainedAreaPct": 92.6,
+    "retainedPopPct": 94.3,
+    "text": "Kept 94% of its population from the 2018 HD-26; gained the rest from the old HD-25 (4%), the old HD-27A (2%), the old HD-24 (0%). Entirely in Prince George's County. 2020 presidential margin D+84.6 on the 2018 lines \u2192 D+84.7 on the current lines.",
+    "toEra": "current"
+   },
+   "27A": {
+    "contributors": [
+     {
+      "areaPct": 67.2,
+      "key": "27A",
+      "popPct": 65.9
+     },
+     {
+      "areaPct": 32.8,
+      "key": "28",
+      "popPct": 34.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Charles",
+      "popPct": 69.6
+     },
+     {
+      "county": "Prince George's",
+      "popPct": 30.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 47140,
+    "pres2020New": -60.9,
+    "pres2020Old": -63.1,
+    "retainedAreaPct": 67.2,
+    "retainedPopPct": 65.9,
+    "text": "Kept 66% of its population from the 2018 HD-27A; gained the rest from the old HD-28 (34%). Spans Charles, Prince George's counties. 2020 presidential margin D+63.1 on the 2018 lines \u2192 D+60.9 on the current lines.",
+    "toEra": "current"
+   },
+   "27B": {
+    "contributors": [
+     {
+      "areaPct": 59.2,
+      "key": "27B",
+      "popPct": 48.1
+     },
+     {
+      "areaPct": 35.4,
+      "key": "27A",
+      "popPct": 26.4
+     },
+     {
+      "areaPct": 5.4,
+      "key": "27C",
+      "popPct": 25.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Calvert",
+      "popPct": 50.2
+     },
+     {
+      "county": "Prince George's",
+      "popPct": 47.2
+     },
+     {
+      "county": "Anne Arundel",
+      "popPct": 2.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 48243,
+    "pres2020New": -33.6,
+    "pres2020Old": -27.7,
+    "retainedAreaPct": 59.2,
+    "retainedPopPct": 48.1,
+    "text": "A new footprint: only 48% of its population was in the 2018 HD-27B; it draws from the old HD-27A (26%), the old HD-27C (26%). Spans Calvert, Prince George's, Anne Arundel counties. 2020 presidential margin D+27.7 on the 2018 lines \u2192 D+33.6 on the current lines.",
+    "toEra": "current"
+   },
+   "27C": {
+    "contributors": [
+     {
+      "areaPct": 72.9,
+      "key": "27C",
+      "popPct": 72.4
+     },
+     {
+      "areaPct": 26.3,
+      "key": "27B",
+      "popPct": 26.9
+     },
+     {
+      "areaPct": 0.8,
+      "key": "29C",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Calvert",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 45790,
+    "pres2020New": 9.0,
+    "pres2020Old": 5.4,
+    "retainedAreaPct": 72.9,
+    "retainedPopPct": 72.4,
+    "text": "Kept 72% of its population from the 2018 HD-27C; gained the rest from the old HD-27B (27%), the old HD-29C (1%). Entirely in Calvert County. 2020 presidential margin R+5.4 on the 2018 lines \u2192 R+9.0 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 96.4,
+      "key": "28",
+      "popPct": 97.8
+     },
+     {
+      "areaPct": 3.6,
+      "key": "27A",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Charles",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 134312,
+    "pres2020New": -38.8,
+    "pres2020Old": -42.0,
+    "retainedAreaPct": 96.4,
+    "retainedPopPct": 97.8,
+    "text": "Kept 98% of its population from the 2018 HD-28; gained the rest from the old HD-27A (2%). Entirely in Charles County. 2020 presidential margin D+42.0 on the 2018 lines \u2192 D+38.8 on the current lines.",
+    "toEra": "current"
+   },
+   "29A": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "29A",
+      "popPct": 98.7
+     },
+     {
+      "areaPct": 0.4,
+      "key": "29C",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Mary's",
+      "popPct": 99.2
+     },
+     {
+      "county": "Charles",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 45242,
+    "pres2020New": 32.4,
+    "pres2020Old": 32.8,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 98.7,
+    "text": "Kept 99% of its population from the 2018 HD-29A; gained the rest from the old HD-29C (1%). Spans St. Mary's, Charles counties. 2020 presidential margin R+32.8 on the 2018 lines \u2192 R+32.4 on the current lines.",
+    "toEra": "current"
+   },
+   "29B": {
+    "contributors": [
+     {
+      "areaPct": 96.9,
+      "key": "29B",
+      "popPct": 88.3
+     },
+     {
+      "areaPct": 3.1,
+      "key": "29C",
+      "popPct": 11.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Mary's",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 44353,
+    "pres2020New": -12.5,
+    "pres2020Old": -10.3,
+    "retainedAreaPct": 96.9,
+    "retainedPopPct": 88.3,
+    "text": "Kept 88% of its population from the 2018 HD-29B; gained the rest from the old HD-29C (12%). Entirely in St. Mary's County. 2020 presidential margin D+10.3 on the 2018 lines \u2192 D+12.5 on the current lines.",
+    "toEra": "current"
+   },
+   "29C": {
+    "contributors": [
+     {
+      "areaPct": 77.1,
+      "key": "29C",
+      "popPct": 88.1
+     },
+     {
+      "areaPct": 22.9,
+      "key": "29B",
+      "popPct": 11.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Mary's",
+      "popPct": 53.0
+     },
+     {
+      "county": "Calvert",
+      "popPct": 47.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 45667,
+    "pres2020New": 10.0,
+    "pres2020Old": 8.3,
+    "retainedAreaPct": 77.1,
+    "retainedPopPct": 88.1,
+    "text": "Kept 88% of its population from the 2018 HD-29C; gained the rest from the old HD-29B (12%). Spans St. Mary's, Calvert counties. 2020 presidential margin R+8.3 on the 2018 lines \u2192 R+10.0 on the current lines.",
+    "toEra": "current"
+   },
+   "2A": {
+    "contributors": [
+     {
+      "areaPct": 75.9,
+      "key": "2A",
+      "popPct": 83.6
+     },
+     {
+      "areaPct": 23.5,
+      "key": "4",
+      "popPct": 14.7
+     },
+     {
+      "areaPct": 0.3,
+      "key": "2B",
+      "popPct": 1.1
+     },
+     {
+      "areaPct": 0.4,
+      "key": "1C",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 85.0
+     },
+     {
+      "county": "Frederick",
+      "popPct": 14.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Frederick",
+      "popPct": 14.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 85674,
+    "pres2020New": 25.3,
+    "pres2020Old": 24.8,
+    "retainedAreaPct": 75.9,
+    "retainedPopPct": 83.6,
+    "text": "Kept 84% of its population from the 2018 HD-2A; gained the rest from the old HD-4 (15%), the old HD-2B (1%), the old HD-1C (0%). Counties: gained Frederick (15%). 2020 presidential margin R+24.8 on the 2018 lines \u2192 R+25.3 on the current lines.",
+    "toEra": "current"
+   },
+   "2B": {
+    "contributors": [
+     {
+      "areaPct": 95.8,
+      "key": "2B",
+      "popPct": 97.7
+     },
+     {
+      "areaPct": 4.2,
+      "key": "2A",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 43355,
+    "pres2020New": -12.2,
+    "pres2020Old": -12.7,
+    "retainedAreaPct": 95.8,
+    "retainedPopPct": 97.7,
+    "text": "Kept 98% of its population from the 2018 HD-2B; gained the rest from the old HD-2A (2%). Entirely in Washington County. 2020 presidential margin D+12.7 on the 2018 lines \u2192 D+12.2 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 58.3,
+      "key": "3A",
+      "popPct": 76.7
+     },
+     {
+      "areaPct": 39.5,
+      "key": "3B",
+      "popPct": 22.7
+     },
+     {
+      "areaPct": 2.2,
+      "key": "4",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Frederick",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Frederick",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 122161,
+    "pres2020New": -34.3,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-3; it draws from the old HD-3A (77%), the old HD-3B (23%), the old HD-4 (1%). Counties: gained Frederick (100%).",
+    "toEra": "current"
+   },
+   "30A": {
+    "contributors": [
+     {
+      "areaPct": 90.1,
+      "key": "30A",
+      "popPct": 96.0
+     },
+     {
+      "areaPct": 9.7,
+      "key": "33",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 84853,
+    "pres2020New": -33.1,
+    "pres2020Old": -33.7,
+    "retainedAreaPct": 90.1,
+    "retainedPopPct": 96.0,
+    "text": "Kept 96% of its population from the 2018 HD-30A; gained the rest from the old HD-33 (4%). Entirely in Anne Arundel County. 2020 presidential margin D+33.7 on the 2018 lines \u2192 D+33.1 on the current lines.",
+    "toEra": "current"
+   },
+   "30B": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "30B",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 97.7
+     },
+     {
+      "county": "Prince George's",
+      "popPct": 2.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 42465,
+    "pres2020New": 6.5,
+    "pres2020Old": 6.5,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2018 map. Spans Anne Arundel, Prince George's counties.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 68.5,
+      "key": "31B",
+      "popPct": 71.3
+     },
+     {
+      "areaPct": 27.2,
+      "key": "33",
+      "popPct": 22.0
+     },
+     {
+      "areaPct": 3.7,
+      "key": "32",
+      "popPct": 5.5
+     },
+     {
+      "areaPct": 0.6,
+      "key": "31A",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 131503,
+    "pres2020New": 10.4,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-31; it draws from the old HD-31B (71%), the old HD-33 (22%), the old HD-32 (6%) and 1 more. Counties: gained Anne Arundel (100%).",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 97.8,
+      "key": "32",
+      "popPct": 97.2
+     },
+     {
+      "areaPct": 1.1,
+      "key": "31A",
+      "popPct": 2.1
+     },
+     {
+      "areaPct": 1.0,
+      "key": "33",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 98.3
+     },
+     {
+      "county": "Howard",
+      "popPct": 1.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 137716,
+    "pres2020New": -32.2,
+    "pres2020Old": -33.2,
+    "retainedAreaPct": 97.8,
+    "retainedPopPct": 97.2,
+    "text": "Kept 97% of its population from the 2018 HD-32; gained the rest from the old HD-31A (2%), the old HD-33 (1%). Spans Anne Arundel, Howard counties. 2020 presidential margin D+33.2 on the 2018 lines \u2192 D+32.2 on the current lines.",
+    "toEra": "current"
+   },
+   "33A": {
+    "contributors": [
+     {
+      "areaPct": 62.6,
+      "key": "21",
+      "popPct": 63.5
+     },
+     {
+      "areaPct": 14.5,
+      "key": "32",
+      "popPct": 23.1
+     },
+     {
+      "areaPct": 22.8,
+      "key": "33",
+      "popPct": 13.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 37734,
+    "pres2020New": -36.7,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-33A; it draws from the old HD-21 (64%), the old HD-32 (23%), the old HD-33 (13%). Counties: gained Anne Arundel (100%).",
+    "toEra": "current"
+   },
+   "33B": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "33",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 99.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 47345,
+    "pres2020New": -10.1,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-33B; it draws from the old HD-33 (100%). Counties: gained Anne Arundel (100%).",
+    "toEra": "current"
+   },
+   "33C": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "33",
+      "popPct": 97.9
+     },
+     {
+      "areaPct": 1.3,
+      "key": "30A",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 42803,
+    "pres2020New": -13.6,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-33C; it draws from the old HD-33 (98%), the old HD-30A (2%). Counties: gained Anne Arundel (100%).",
+    "toEra": "current"
+   },
+   "34A": {
+    "contributors": [
+     {
+      "areaPct": 99.2,
+      "key": "34A",
+      "popPct": 96.2
+     },
+     {
+      "areaPct": 0.6,
+      "key": "7",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Harford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 86672,
+    "pres2020New": -19.2,
+    "pres2020Old": -19.6,
+    "retainedAreaPct": 99.2,
+    "retainedPopPct": 96.2,
+    "text": "Kept 96% of its population from the 2018 HD-34A; gained the rest from the old HD-7 (4%). Entirely in Harford County. 2020 presidential margin D+19.6 on the 2018 lines \u2192 D+19.2 on the current lines.",
+    "toEra": "current"
+   },
+   "34B": {
+    "contributors": [
+     {
+      "areaPct": 95.5,
+      "key": "34B",
+      "popPct": 93.0
+     },
+     {
+      "areaPct": 4.3,
+      "key": "34A",
+      "popPct": 6.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Harford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 45444,
+    "pres2020New": 8.2,
+    "pres2020Old": 9.2,
+    "retainedAreaPct": 95.5,
+    "retainedPopPct": 93.0,
+    "text": "Kept 93% of its population from the 2018 HD-34B; gained the rest from the old HD-34A (7%). Entirely in Harford County. 2020 presidential margin R+9.2 on the 2018 lines \u2192 R+8.2 on the current lines.",
+    "toEra": "current"
+   },
+   "35A": {
+    "contributors": [
+     {
+      "areaPct": 90.6,
+      "key": "35B",
+      "popPct": 78.8
+     },
+     {
+      "areaPct": 9.3,
+      "key": "7",
+      "popPct": 20.5
+     },
+     {
+      "areaPct": 0.1,
+      "key": "34B",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Harford",
+      "popPct": 93.5
+     },
+     {
+      "county": "Cecil",
+      "popPct": 6.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Harford",
+      "popPct": 93.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 89147,
+    "pres2020New": 32.8,
+    "pres2020Old": 23.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-35A; it draws from the old HD-35B (79%), the old HD-7 (20%), the old HD-34B (0%). Counties: gained Harford (94%). 2020 presidential margin R+23.8 on the 2018 lines \u2192 R+32.8 on the current lines.",
+    "toEra": "current"
+   },
+   "35B": {
+    "contributors": [
+     {
+      "areaPct": 52.0,
+      "key": "35A",
+      "popPct": 61.6
+     },
+     {
+      "areaPct": 48.0,
+      "key": "35B",
+      "popPct": 38.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cecil",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Harford",
+      "popPct": 73.7
+     }
+    ],
+    "fromEra": "2018",
+    "pop2020": 44786,
+    "pres2020New": 34.7,
+    "pres2020Old": 35.1,
+    "retainedAreaPct": 48.0,
+    "retainedPopPct": 38.4,
+    "text": "A new footprint: only 38% of its population was in the 2018 HD-35B; it draws from the old HD-35A (62%). Counties: lost Harford. 2020 presidential margin R+35.1 on the 2018 lines \u2192 R+34.7 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 95.1,
+      "key": "36",
+      "popPct": 87.2
+     },
+     {
+      "areaPct": 4.9,
+      "key": "35A",
+      "popPct": 12.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cecil",
+      "popPct": 39.4
+     },
+     {
+      "county": "Queen Anne's",
+      "popPct": 37.0
+     },
+     {
+      "county": "Kent",
+      "popPct": 14.4
+     },
+     {
+      "county": "Caroline",
+      "popPct": 9.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 134849,
+    "pres2020New": 20.0,
+    "pres2020Old": 21.3,
+    "retainedAreaPct": 95.1,
+    "retainedPopPct": 87.2,
+    "text": "Kept 87% of its population from the 2018 HD-36; gained the rest from the old HD-35A (13%). Spans Cecil, Queen Anne's, Kent, Caroline counties. 2020 presidential margin R+21.3 on the 2018 lines \u2192 R+20.0 on the current lines.",
+    "toEra": "current"
+   },
+   "37A": {
+    "contributors": [
+     {
+      "areaPct": 94.6,
+      "key": "37A",
+      "popPct": 92.2
+     },
+     {
+      "areaPct": 3.2,
+      "key": "38B",
+      "popPct": 6.4
+     },
+     {
+      "areaPct": 2.2,
+      "key": "37B",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Wicomico",
+      "popPct": 67.7
+     },
+     {
+      "county": "Dorchester",
+      "popPct": 32.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 44453,
+    "pres2020New": -30.3,
+    "pres2020Old": -33.9,
+    "retainedAreaPct": 94.6,
+    "retainedPopPct": 92.2,
+    "text": "Kept 92% of its population from the 2018 HD-37A; gained the rest from the old HD-38B (6%), the old HD-37B (1%). Spans Wicomico, Dorchester counties. 2020 presidential margin D+33.9 on the 2018 lines \u2192 D+30.3 on the current lines.",
+    "toEra": "current"
+   },
+   "37B": {
+    "contributors": [
+     {
+      "areaPct": 88.7,
+      "key": "37B",
+      "popPct": 87.1
+     },
+     {
+      "areaPct": 11.3,
+      "key": "36",
+      "popPct": 12.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Talbot",
+      "popPct": 40.7
+     },
+     {
+      "county": "Caroline",
+      "popPct": 22.5
+     },
+     {
+      "county": "Dorchester",
+      "popPct": 19.8
+     },
+     {
+      "county": "Wicomico",
+      "popPct": 16.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 92054,
+    "pres2020New": 16.4,
+    "pres2020Old": 15.3,
+    "retainedAreaPct": 88.7,
+    "retainedPopPct": 87.1,
+    "text": "Kept 87% of its population from the 2018 HD-37B; gained the rest from the old HD-36 (13%). Spans Talbot, Caroline, Dorchester, Wicomico counties. 2020 presidential margin R+15.3 on the 2018 lines \u2192 R+16.4 on the current lines.",
+    "toEra": "current"
+   },
+   "38A": {
+    "contributors": [
+     {
+      "areaPct": 93.0,
+      "key": "38A",
+      "popPct": 89.6
+     },
+     {
+      "areaPct": 3.6,
+      "key": "37B",
+      "popPct": 8.1
+     },
+     {
+      "areaPct": 3.4,
+      "key": "38C",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Somerset",
+      "popPct": 50.9
+     },
+     {
+      "county": "Worcester",
+      "popPct": 40.9
+     },
+     {
+      "county": "Wicomico",
+      "popPct": 8.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Wicomico",
+      "popPct": 8.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 48317,
+    "pres2020New": 13.0,
+    "pres2020Old": 10.5,
+    "retainedAreaPct": 93.0,
+    "retainedPopPct": 89.6,
+    "text": "Kept 90% of its population from the 2018 HD-38A; gained the rest from the old HD-37B (8%), the old HD-38C (2%). Counties: gained Wicomico (8%). 2020 presidential margin R+10.5 on the 2018 lines \u2192 R+13.0 on the current lines.",
+    "toEra": "current"
+   },
+   "38B": {
+    "contributors": [
+     {
+      "areaPct": 91.4,
+      "key": "38B",
+      "popPct": 95.4
+     },
+     {
+      "areaPct": 8.5,
+      "key": "37A",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Wicomico",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 38605,
+    "pres2020New": -8.2,
+    "pres2020Old": -3.3,
+    "retainedAreaPct": 91.4,
+    "retainedPopPct": 95.4,
+    "text": "Kept 95% of its population from the 2018 HD-38B; gained the rest from the old HD-37A (5%). Entirely in Wicomico County. 2020 presidential margin D+3.3 on the 2018 lines \u2192 D+8.2 on the current lines.",
+    "toEra": "current"
+   },
+   "38C": {
+    "contributors": [
+     {
+      "areaPct": 93.1,
+      "key": "38C",
+      "popPct": 87.1
+     },
+     {
+      "areaPct": 6.9,
+      "key": "38B",
+      "popPct": 12.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Worcester",
+      "popPct": 68.3
+     },
+     {
+      "county": "Wicomico",
+      "popPct": 31.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 47938,
+    "pres2020New": 27.2,
+    "pres2020Old": 28.8,
+    "retainedAreaPct": 93.1,
+    "retainedPopPct": 87.1,
+    "text": "Kept 87% of its population from the 2018 HD-38C; gained the rest from the old HD-38B (13%). Spans Worcester, Wicomico counties. 2020 presidential margin R+28.8 on the 2018 lines \u2192 R+27.2 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 93.5,
+      "key": "39",
+      "popPct": 93.7
+     },
+     {
+      "areaPct": 6.4,
+      "key": "17",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montgomery",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 129125,
+    "pres2020New": -56.3,
+    "pres2020Old": -55.9,
+    "retainedAreaPct": 93.5,
+    "retainedPopPct": 93.7,
+    "text": "Kept 94% of its population from the 2018 HD-39; gained the rest from the old HD-17 (6%). Entirely in Montgomery County. 2020 presidential margin D+55.9 on the 2018 lines \u2192 D+56.3 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 84.2,
+      "key": "4",
+      "popPct": 83.6
+     },
+     {
+      "areaPct": 15.4,
+      "key": "3B",
+      "popPct": 16.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Frederick",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Carroll",
+      "popPct": 9.4
+     }
+    ],
+    "fromEra": "2018",
+    "pop2020": 135306,
+    "pres2020New": 4.8,
+    "pres2020Old": 10.4,
+    "retainedAreaPct": 84.2,
+    "retainedPopPct": 83.6,
+    "text": "Kept 84% of its population from the 2018 HD-4; gained the rest from the old HD-3B (16%). Counties: lost Carroll. 2020 presidential margin R+10.4 on the 2018 lines \u2192 R+4.8 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 78.7,
+      "key": "40",
+      "popPct": 76.5
+     },
+     {
+      "areaPct": 16.3,
+      "key": "44A",
+      "popPct": 16.3
+     },
+     {
+      "areaPct": 2.2,
+      "key": "43",
+      "popPct": 2.8
+     },
+     {
+      "areaPct": 0.9,
+      "key": "45",
+      "popPct": 2.2
+     },
+     {
+      "areaPct": 1.7,
+      "key": "41",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 124991,
+    "pres2020New": -83.5,
+    "pres2020Old": -81.6,
+    "retainedAreaPct": 78.7,
+    "retainedPopPct": 76.5,
+    "text": "Kept 76% of its population from the 2018 HD-40; gained the rest from the old HD-44A (16%), the old HD-43 (3%), the old HD-45 (2%) and 1 more. Entirely in Baltimore County. 2020 presidential margin D+81.6 on the 2018 lines \u2192 D+83.5 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 86.8,
+      "key": "41",
+      "popPct": 85.3
+     },
+     {
+      "areaPct": 8.5,
+      "key": "44A",
+      "popPct": 10.5
+     },
+     {
+      "areaPct": 2.9,
+      "key": "43",
+      "popPct": 2.4
+     },
+     {
+      "areaPct": 1.8,
+      "key": "40",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 124720,
+    "pres2020New": -72.0,
+    "pres2020Old": -71.6,
+    "retainedAreaPct": 86.8,
+    "retainedPopPct": 85.3,
+    "text": "Kept 85% of its population from the 2018 HD-41; gained the rest from the old HD-44A (10%), the old HD-43 (2%), the old HD-40 (2%). Entirely in Baltimore County. 2020 presidential margin D+71.6 on the 2018 lines \u2192 D+72.0 on the current lines.",
+    "toEra": "current"
+   },
+   "42A": {
+    "contributors": [
+     {
+      "areaPct": 62.2,
+      "key": "42B",
+      "popPct": 73.0
+     },
+     {
+      "areaPct": 31.3,
+      "key": "7",
+      "popPct": 24.6
+     },
+     {
+      "areaPct": 6.5,
+      "key": "10",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 45492,
+    "pres2020New": 9.2,
+    "pres2020Old": -51.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-42A; it draws from the old HD-42B (73%), the old HD-7 (25%), the old HD-10 (2%). Entirely in Baltimore County. 2020 presidential margin D+51.4 on the 2018 lines \u2192 R+9.2 on the current lines.",
+    "toEra": "current"
+   },
+   "42B": {
+    "contributors": [
+     {
+      "areaPct": 87.5,
+      "key": "42B",
+      "popPct": 67.6
+     },
+     {
+      "areaPct": 9.5,
+      "key": "11",
+      "popPct": 26.9
+     },
+     {
+      "areaPct": 3.0,
+      "key": "42A",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 36340,
+    "pres2020New": -27.6,
+    "pres2020Old": -7.6,
+    "retainedAreaPct": 87.5,
+    "retainedPopPct": 67.6,
+    "text": "Kept 68% of its population from the 2018 HD-42B; gained the rest from the old HD-11 (27%), the old HD-42A (6%). Entirely in Baltimore County. 2020 presidential margin D+7.6 on the 2018 lines \u2192 D+27.6 on the current lines.",
+    "toEra": "current"
+   },
+   "42C": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "5",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carroll",
+      "popPct": 99.3
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Carroll",
+      "popPct": 99.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 51962,
+    "pres2020New": 29.7,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-42C; it draws from the old HD-5 (100%). Counties: gained Carroll (99%).",
+    "toEra": "current"
+   },
+   "43A": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "43",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Baltimore",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 85264,
+    "pres2020New": -87.3,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-43A; it draws from the old HD-43 (100%). Counties: gained Baltimore (100%).",
+    "toEra": "current"
+   },
+   "43B": {
+    "contributors": [
+     {
+      "areaPct": 95.4,
+      "key": "42A",
+      "popPct": 92.5
+     },
+     {
+      "areaPct": 3.9,
+      "key": "8",
+      "popPct": 6.8
+     },
+     {
+      "areaPct": 0.6,
+      "key": "42B",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 97.8
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 2.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Baltimore",
+      "popPct": 97.8
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 2.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 39855,
+    "pres2020New": -53.8,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-43B; it draws from the old HD-42A (92%), the old HD-8 (7%), the old HD-42B (1%). Counties: gained Baltimore (98%), Baltimore (2%).",
+    "toEra": "current"
+   },
+   "44A": {
+    "contributors": [
+     {
+      "areaPct": 78.7,
+      "key": "12",
+      "popPct": 74.8
+     },
+     {
+      "areaPct": 21.2,
+      "key": "44B",
+      "popPct": 25.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 92.0
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 4.0
+     },
+     {
+      "county": "Anne Arundel",
+      "popPct": 4.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 4.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 43701,
+    "pres2020New": -21.9,
+    "pres2020Old": -88.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-44A; it draws from the old HD-12 (75%), the old HD-44B (25%). Counties: gained Anne Arundel (4%). 2020 presidential margin D+88.2 on the 2018 lines \u2192 D+21.9 on the current lines.",
+    "toEra": "current"
+   },
+   "44B": {
+    "contributors": [
+     {
+      "areaPct": 56.1,
+      "key": "44B",
+      "popPct": 64.0
+     },
+     {
+      "areaPct": 31.6,
+      "key": "12",
+      "popPct": 20.5
+     },
+     {
+      "areaPct": 12.2,
+      "key": "10",
+      "popPct": 15.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 98.2
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 1.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 80211,
+    "pres2020New": -63.7,
+    "pres2020Old": -65.1,
+    "retainedAreaPct": 56.1,
+    "retainedPopPct": 64.0,
+    "text": "Kept 64% of its population from the 2018 HD-44B; gained the rest from the old HD-12 (20%), the old HD-10 (15%). Spans Baltimore, Baltimore counties. 2020 presidential margin D+65.1 on the 2018 lines \u2192 D+63.7 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 82.4,
+      "key": "45",
+      "popPct": 82.1
+     },
+     {
+      "areaPct": 13.0,
+      "key": "43",
+      "popPct": 13.7
+     },
+     {
+      "areaPct": 4.5,
+      "key": "46",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 124305,
+    "pres2020New": -80.5,
+    "pres2020Old": -81.1,
+    "retainedAreaPct": 82.4,
+    "retainedPopPct": 82.1,
+    "text": "Kept 82% of its population from the 2018 HD-45; gained the rest from the old HD-43 (14%), the old HD-46 (4%). Entirely in Baltimore County. 2020 presidential margin D+81.1 on the 2018 lines \u2192 D+80.5 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "46",
+      "popPct": 95.0
+     },
+     {
+      "areaPct": 0.9,
+      "key": "40",
+      "popPct": 3.3
+     },
+     {
+      "areaPct": 0.3,
+      "key": "45",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 99.2
+     },
+     {
+      "county": "Anne Arundel",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 126257,
+    "pres2020New": -63.2,
+    "pres2020Old": -62.2,
+    "retainedAreaPct": 98.7,
+    "retainedPopPct": 95.0,
+    "text": "Kept 95% of its population from the 2018 HD-46; gained the rest from the old HD-40 (3%), the old HD-45 (2%). Spans Baltimore, Anne Arundel counties. 2020 presidential margin D+62.2 on the 2018 lines \u2192 D+63.2 on the current lines.",
+    "toEra": "current"
+   },
+   "47A": {
+    "contributors": [
+     {
+      "areaPct": 98.2,
+      "key": "47A",
+      "popPct": 98.2
+     },
+     {
+      "areaPct": 1.0,
+      "key": "47B",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Prince George's",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 90784,
+    "pres2020New": -82.4,
+    "pres2020Old": -82.4,
+    "retainedAreaPct": 98.2,
+    "retainedPopPct": 98.2,
+    "text": "Kept 98% of its population from the 2018 HD-47A; gained the rest from the old HD-47B (1%). Entirely in Prince George's County. 2020 presidential margin D+82.4 on the 2018 lines \u2192 D+82.4 on the current lines.",
+    "toEra": "current"
+   },
+   "47B": {
+    "contributors": [
+     {
+      "areaPct": 84.6,
+      "key": "47B",
+      "popPct": 96.2
+     },
+     {
+      "areaPct": 14.7,
+      "key": "21",
+      "popPct": 3.1
+     },
+     {
+      "areaPct": 0.6,
+      "key": "22",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Prince George's",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 44510,
+    "pres2020New": -77.2,
+    "pres2020Old": -78.5,
+    "retainedAreaPct": 84.6,
+    "retainedPopPct": 96.2,
+    "text": "Kept 96% of its population from the 2018 HD-47B; gained the rest from the old HD-21 (3%), the old HD-22 (1%). Entirely in Prince George's County. 2020 presidential margin D+78.5 on the 2018 lines \u2192 D+77.2 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 80.4,
+      "key": "5",
+      "popPct": 65.1
+     },
+     {
+      "areaPct": 11.5,
+      "key": "9A",
+      "popPct": 22.7
+     },
+     {
+      "areaPct": 8.1,
+      "key": "4",
+      "popPct": 12.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carroll",
+      "popPct": 96.9
+     },
+     {
+      "county": "Frederick",
+      "popPct": 1.7
+     },
+     {
+      "county": "Howard",
+      "popPct": 0.9
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 122459,
+    "pres2020New": 20.9,
+    "pres2020Old": 27.0,
+    "retainedAreaPct": 80.4,
+    "retainedPopPct": 65.1,
+    "text": "Kept 65% of its population from the 2018 HD-5; gained the rest from the old HD-9A (23%), the old HD-4 (12%). Spans Carroll, Frederick, Howard, Baltimore counties. 2020 presidential margin R+27.0 on the 2018 lines \u2192 R+20.9 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 97.6,
+      "key": "6",
+      "popPct": 93.9
+     },
+     {
+      "areaPct": 2.4,
+      "key": "7",
+      "popPct": 6.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 130267,
+    "pres2020New": 15.0,
+    "pres2020Old": 13.4,
+    "retainedAreaPct": 97.6,
+    "retainedPopPct": 93.9,
+    "text": "Kept 94% of its population from the 2018 HD-6; gained the rest from the old HD-7 (6%). Entirely in Baltimore County. 2020 presidential margin R+13.4 on the 2018 lines \u2192 R+15.0 on the current lines.",
+    "toEra": "current"
+   },
+   "7A": {
+    "contributors": [
+     {
+      "areaPct": 79.3,
+      "key": "7",
+      "popPct": 57.2
+     },
+     {
+      "areaPct": 8.4,
+      "key": "8",
+      "popPct": 24.6
+     },
+     {
+      "areaPct": 12.3,
+      "key": "42B",
+      "popPct": 18.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Baltimore",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 88145,
+    "pres2020New": 8.6,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-7A; it draws from the old HD-7 (57%), the old HD-8 (25%), the old HD-42B (18%). Counties: gained Baltimore (100%).",
+    "toEra": "current"
+   },
+   "7B": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "7",
+      "popPct": 97.0
+     },
+     {
+      "areaPct": 0.3,
+      "key": "34B",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Harford",
+      "popPct": 96.1
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 3.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Harford",
+      "popPct": 96.1
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 3.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 45419,
+    "pres2020New": 26.1,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2018 HD-7B; it draws from the old HD-7 (97%), the old HD-34B (3%). Counties: gained Harford (96%), Baltimore (4%).",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 78.0,
+      "key": "8",
+      "popPct": 81.9
+     },
+     {
+      "areaPct": 7.1,
+      "key": "6",
+      "popPct": 5.1
+     },
+     {
+      "areaPct": 4.4,
+      "key": "42B",
+      "popPct": 4.8
+     },
+     {
+      "areaPct": 7.1,
+      "key": "7",
+      "popPct": 4.6
+     },
+     {
+      "areaPct": 3.4,
+      "key": "42A",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 126233,
+    "pres2020New": -25.9,
+    "pres2020Old": -19.8,
+    "retainedAreaPct": 78.0,
+    "retainedPopPct": 81.9,
+    "text": "Kept 82% of its population from the 2018 HD-8; gained the rest from the old HD-6 (5%), the old HD-42B (5%), the old HD-7 (5%) and 1 more. Entirely in Baltimore County. 2020 presidential margin D+19.8 on the 2018 lines \u2192 D+25.9 on the current lines.",
+    "toEra": "current"
+   },
+   "9A": {
+    "contributors": [
+     {
+      "areaPct": 77.4,
+      "key": "9A",
+      "popPct": 69.4
+     },
+     {
+      "areaPct": 12.7,
+      "key": "14",
+      "popPct": 12.5
+     },
+     {
+      "areaPct": 4.0,
+      "key": "13",
+      "popPct": 10.4
+     },
+     {
+      "areaPct": 5.9,
+      "key": "15",
+      "popPct": 7.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Howard",
+      "popPct": 76.5
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 20.3
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 2.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Carroll",
+      "popPct": 27.8
+     }
+    ],
+    "fromEra": "2018",
+    "pop2020": 89023,
+    "pres2020New": -21.8,
+    "pres2020Old": -10.8,
+    "retainedAreaPct": 77.4,
+    "retainedPopPct": 69.4,
+    "text": "Kept 69% of its population from the 2018 HD-9A; gained the rest from the old HD-14 (12%), the old HD-13 (10%), the old HD-15 (8%). Counties: lost Carroll. 2020 presidential margin D+10.8 on the 2018 lines \u2192 D+21.8 on the current lines.",
+    "toEra": "current"
+   },
+   "9B": {
+    "contributors": [
+     {
+      "areaPct": 92.4,
+      "key": "9B",
+      "popPct": 92.3
+     },
+     {
+      "areaPct": 6.1,
+      "key": "12",
+      "popPct": 6.4
+     },
+     {
+      "areaPct": 1.5,
+      "key": "9A",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Howard",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 43689,
+    "pres2020New": -43.1,
+    "pres2020Old": -41.5,
+    "retainedAreaPct": 92.4,
+    "retainedPopPct": 92.3,
+    "text": "Kept 92% of its population from the 2018 HD-9B; gained the rest from the old HD-12 (6%), the old HD-9A (1%). Entirely in Howard County. 2020 presidential margin D+41.5 on the 2018 lines \u2192 D+43.1 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 97.8,
+      "key": "1",
+      "popPct": 85.2
+     },
+     {
+      "areaPct": 2.2,
+      "key": "2",
+      "popPct": 14.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Allegany",
+      "popPct": 50.1
+     },
+     {
+      "county": "Washington",
+      "popPct": 28.3
+     },
+     {
+      "county": "Garrett",
+      "popPct": 21.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 135203,
+    "pres2020New": 44.0,
+    "pres2020Old": 46.2,
+    "retainedAreaPct": 97.8,
+    "retainedPopPct": 85.2,
+    "text": "Kept 85% of its population from the 2018 SD-1; gained the rest from the old SD-2 (15%). Spans Allegany, Washington, Garrett counties. 2020 presidential margin R+46.2 on the 2018 lines \u2192 R+44.0 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 82.5,
+      "key": "10",
+      "popPct": 77.0
+     },
+     {
+      "areaPct": 8.4,
+      "key": "44",
+      "popPct": 13.9
+     },
+     {
+      "areaPct": 4.9,
+      "key": "12",
+      "popPct": 8.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 98.9
+     },
+     {
+      "county": "Howard",
+      "popPct": 1.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 134645,
+    "pres2020New": -56.8,
+    "pres2020Old": -64.3,
+    "retainedAreaPct": 82.5,
+    "retainedPopPct": 77.0,
+    "text": "Kept 77% of its population from the 2018 SD-10; gained the rest from the old SD-44 (14%), the old SD-12 (9%). Spans Baltimore, Howard counties. 2020 presidential margin D+64.3 on the 2018 lines \u2192 D+56.8 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 85.8,
+      "key": "11",
+      "popPct": 90.9
+     },
+     {
+      "areaPct": 9.5,
+      "key": "42",
+      "popPct": 5.1
+     },
+     {
+      "areaPct": 4.7,
+      "key": "10",
+      "popPct": 4.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 98.8
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 129872,
+    "pres2020New": -41.7,
+    "pres2020Old": -42.3,
+    "retainedAreaPct": 85.8,
+    "retainedPopPct": 90.9,
+    "text": "Kept 91% of its population from the 2018 SD-11; gained the rest from the old SD-42 (5%), the old SD-10 (4%). Spans Baltimore, Baltimore counties. 2020 presidential margin D+42.3 on the 2018 lines \u2192 D+41.7 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 46.8,
+      "key": "12",
+      "popPct": 48.9
+     },
+     {
+      "areaPct": 28.2,
+      "key": "31",
+      "popPct": 31.8
+     },
+     {
+      "areaPct": 11.3,
+      "key": "13",
+      "popPct": 12.3
+     },
+     {
+      "areaPct": 5.6,
+      "key": "9",
+      "popPct": 4.8
+     },
+     {
+      "areaPct": 8.1,
+      "key": "32",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Howard",
+      "popPct": 64.2
+     },
+     {
+      "county": "Anne Arundel",
+      "popPct": 34.6
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 132853,
+    "pres2020New": -42.2,
+    "pres2020Old": -39.1,
+    "retainedAreaPct": 46.8,
+    "retainedPopPct": 48.9,
+    "text": "A new footprint: only 49% of its population was in the 2018 SD-12; it draws from the old SD-31 (32%), the old SD-13 (12%), the old SD-9 (5%) and 1 more. Spans Howard, Anne Arundel, Baltimore counties. 2020 presidential margin D+39.1 on the 2018 lines \u2192 D+42.2 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 71.8,
+      "key": "13",
+      "popPct": 93.1
+     },
+     {
+      "areaPct": 27.7,
+      "key": "9",
+      "popPct": 5.9
+     },
+     {
+      "areaPct": 0.5,
+      "key": "12",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Howard",
+      "popPct": 96.7
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 1.9
+     },
+     {
+      "county": "Prince George's",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 129939,
+    "pres2020New": -53.5,
+    "pres2020Old": -53.3,
+    "retainedAreaPct": 71.8,
+    "retainedPopPct": 93.1,
+    "text": "Kept 93% of its population from the 2018 SD-13; gained the rest from the old SD-9 (6%), the old SD-12 (1%). Spans Howard, Montgomery, Prince George's counties. 2020 presidential margin D+53.3 on the 2018 lines \u2192 D+53.5 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 93.7,
+      "key": "14",
+      "popPct": 90.5
+     },
+     {
+      "areaPct": 2.7,
+      "key": "39",
+      "popPct": 5.4
+     },
+     {
+      "areaPct": 3.6,
+      "key": "19",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montgomery",
+      "popPct": 99.1
+     },
+     {
+      "county": "Prince George's",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 132388,
+    "pres2020New": -49.5,
+    "pres2020Old": -46.9,
+    "retainedAreaPct": 93.7,
+    "retainedPopPct": 90.5,
+    "text": "Kept 90% of its population from the 2018 SD-14; gained the rest from the old SD-39 (5%), the old SD-19 (4%). Spans Montgomery, Prince George's counties. 2020 presidential margin D+46.9 on the 2018 lines \u2192 D+49.5 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "15",
+      "popPct": 98.5
+     },
+     {
+      "areaPct": 0.4,
+      "key": "16",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montgomery",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 128617,
+    "pres2020New": -50.5,
+    "pres2020Old": -50.4,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 98.5,
+    "text": "Kept 98% of its population from the 2018 SD-15; gained the rest from the old SD-16 (1%). Entirely in Montgomery County. 2020 presidential margin D+50.4 on the 2018 lines \u2192 D+50.5 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "16",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montgomery",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 132597,
+    "pres2020New": -66.0,
+    "pres2020Old": -65.9,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2018 map. Entirely in Montgomery County.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "17",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montgomery",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 133739,
+    "pres2020New": -59.9,
+    "pres2020Old": -59.7,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2018 map. Entirely in Montgomery County.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "18",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montgomery",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 128278,
+    "pres2020New": -68.5,
+    "pres2020Old": -68.5,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2018 map. Entirely in Montgomery County.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 98.6,
+      "key": "19",
+      "popPct": 97.1
+     },
+     {
+      "areaPct": 1.3,
+      "key": "39",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montgomery",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 129657,
+    "pres2020New": -55.2,
+    "pres2020Old": -54.7,
+    "retainedAreaPct": 98.6,
+    "retainedPopPct": 97.1,
+    "text": "Kept 97% of its population from the 2018 SD-19; gained the rest from the old SD-39 (3%). Entirely in Montgomery County. 2020 presidential margin D+54.7 on the 2018 lines \u2192 D+55.2 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 77.0,
+      "key": "2",
+      "popPct": 89.9
+     },
+     {
+      "areaPct": 22.6,
+      "key": "4",
+      "popPct": 9.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 90.0
+     },
+     {
+      "county": "Frederick",
+      "popPct": 9.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Frederick",
+      "popPct": 9.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 129027,
+    "pres2020New": 15.4,
+    "pres2020Old": 15.5,
+    "retainedAreaPct": 77.0,
+    "retainedPopPct": 89.9,
+    "text": "Kept 90% of its population from the 2018 SD-2; gained the rest from the old SD-4 (10%). Counties: gained Frederick (10%). 2020 presidential margin R+15.5 on the 2018 lines \u2192 R+15.4 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "20",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montgomery",
+      "popPct": 94.4
+     },
+     {
+      "county": "Prince George's",
+      "popPct": 5.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 129899,
+    "pres2020New": -78.7,
+    "pres2020Old": -78.7,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2018 map. Spans Montgomery, Prince George's counties.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 83.2,
+      "key": "21",
+      "popPct": 88.6
+     },
+     {
+      "areaPct": 16.6,
+      "key": "33",
+      "popPct": 9.9
+     },
+     {
+      "areaPct": 0.1,
+      "key": "47",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Prince George's",
+      "popPct": 83.6
+     },
+     {
+      "county": "Anne Arundel",
+      "popPct": 15.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 136945,
+    "pres2020New": -58.3,
+    "pres2020Old": -55.6,
+    "retainedAreaPct": 83.2,
+    "retainedPopPct": 88.6,
+    "text": "Kept 89% of its population from the 2018 SD-21; gained the rest from the old SD-33 (10%), the old SD-47 (1%). Spans Prince George's, Anne Arundel counties. 2020 presidential margin D+55.6 on the 2018 lines \u2192 D+58.3 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 99.3,
+      "key": "22",
+      "popPct": 99.0
+     },
+     {
+      "areaPct": 0.4,
+      "key": "47",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Prince George's",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 135711,
+    "pres2020New": -78.1,
+    "pres2020Old": -78.4,
+    "retainedAreaPct": 99.3,
+    "retainedPopPct": 99.0,
+    "text": "Kept 99% of its population from the 2018 SD-22; gained the rest from the old SD-47 (1%). Entirely in Prince George's County. 2020 presidential margin D+78.4 on the 2018 lines \u2192 D+78.1 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 90.1,
+      "key": "23",
+      "popPct": 96.8
+     },
+     {
+      "areaPct": 9.8,
+      "key": "27",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Prince George's",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 134151,
+    "pres2020New": -74.0,
+    "pres2020Old": -73.9,
+    "retainedAreaPct": 90.1,
+    "retainedPopPct": 96.8,
+    "text": "Kept 97% of its population from the 2018 SD-23; gained the rest from the old SD-27 (3%). Entirely in Prince George's County. 2020 presidential margin D+73.9 on the 2018 lines \u2192 D+74.0 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 87.9,
+      "key": "24",
+      "popPct": 87.9
+     },
+     {
+      "areaPct": 4.7,
+      "key": "22",
+      "popPct": 6.7
+     },
+     {
+      "areaPct": 6.1,
+      "key": "23",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 1.0,
+      "key": "25",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Prince George's",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 137443,
+    "pres2020New": -86.8,
+    "pres2020Old": -87.9,
+    "retainedAreaPct": 87.9,
+    "retainedPopPct": 87.9,
+    "text": "Kept 88% of its population from the 2018 SD-24; gained the rest from the old SD-22 (7%), the old SD-23 (4%), the old SD-25 (2%). Entirely in Prince George's County. 2020 presidential margin D+87.9 on the 2018 lines \u2192 D+86.8 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 86.7,
+      "key": "25",
+      "popPct": 88.6
+     },
+     {
+      "areaPct": 8.5,
+      "key": "27",
+      "popPct": 5.3
+     },
+     {
+      "areaPct": 2.3,
+      "key": "24",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 2.5,
+      "key": "23",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Prince George's",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 134457,
+    "pres2020New": -89.0,
+    "pres2020Old": -89.3,
+    "retainedAreaPct": 86.7,
+    "retainedPopPct": 88.6,
+    "text": "Kept 89% of its population from the 2018 SD-25; gained the rest from the old SD-27 (5%), the old SD-24 (5%), the old SD-23 (1%). Entirely in Prince George's County. 2020 presidential margin D+89.3 on the 2018 lines \u2192 D+89.0 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 92.6,
+      "key": "26",
+      "popPct": 94.3
+     },
+     {
+      "areaPct": 1.6,
+      "key": "25",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 5.7,
+      "key": "27",
+      "popPct": 1.6
+     },
+     {
+      "areaPct": 0.1,
+      "key": "24",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Prince George's",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 134104,
+    "pres2020New": -84.7,
+    "pres2020Old": -84.6,
+    "retainedAreaPct": 92.6,
+    "retainedPopPct": 94.3,
+    "text": "Kept 94% of its population from the 2018 SD-26; gained the rest from the old SD-25 (4%), the old SD-27 (2%), the old SD-24 (0%). Entirely in Prince George's County. 2020 presidential margin D+84.6 on the 2018 lines \u2192 D+84.7 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 92.3,
+      "key": "27",
+      "popPct": 88.4
+     },
+     {
+      "areaPct": 7.3,
+      "key": "28",
+      "popPct": 11.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Calvert",
+      "popPct": 49.5
+     },
+     {
+      "county": "Prince George's",
+      "popPct": 26.4
+     },
+     {
+      "county": "Charles",
+      "popPct": 23.3
+     },
+     {
+      "county": "Anne Arundel",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 141182,
+    "pres2020New": -28.8,
+    "pres2020Old": -30.2,
+    "retainedAreaPct": 92.3,
+    "retainedPopPct": 88.4,
+    "text": "Kept 88% of its population from the 2018 SD-27; gained the rest from the old SD-28 (11%). Spans Calvert, Prince George's, Charles, Anne Arundel counties. 2020 presidential margin D+30.2 on the 2018 lines \u2192 D+28.8 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 96.4,
+      "key": "28",
+      "popPct": 97.8
+     },
+     {
+      "areaPct": 3.6,
+      "key": "27",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Charles",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 134307,
+    "pres2020New": -38.8,
+    "pres2020Old": -42.0,
+    "retainedAreaPct": 96.4,
+    "retainedPopPct": 97.8,
+    "text": "Kept 98% of its population from the 2018 SD-28; gained the rest from the old SD-27 (2%). Entirely in Charles County. 2020 presidential margin D+42.0 on the 2018 lines \u2192 D+38.8 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "29",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Mary's",
+      "popPct": 83.9
+     },
+     {
+      "county": "Calvert",
+      "popPct": 15.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 135263,
+    "pres2020New": 11.4,
+    "pres2020Old": 11.4,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2018 map. Spans St. Mary's, Calvert counties.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 97.8,
+      "key": "3",
+      "popPct": 99.4
+     },
+     {
+      "areaPct": 2.2,
+      "key": "4",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Frederick",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 122160,
+    "pres2020New": -34.3,
+    "pres2020Old": -29.1,
+    "retainedAreaPct": 97.8,
+    "retainedPopPct": 99.4,
+    "text": "Kept 99% of its population from the 2018 SD-3; gained the rest from the old SD-4 (1%). Entirely in Frederick County. 2020 presidential margin D+29.1 on the 2018 lines \u2192 D+34.3 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 97.5,
+      "key": "30",
+      "popPct": 97.5
+     },
+     {
+      "areaPct": 2.5,
+      "key": "33",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 99.2
+     },
+     {
+      "county": "Prince George's",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 127318,
+    "pres2020New": -19.5,
+    "pres2020Old": -19.5,
+    "retainedAreaPct": 97.5,
+    "retainedPopPct": 97.5,
+    "text": "Kept 98% of its population from the 2018 SD-30; gained the rest from the old SD-33 (2%). Spans Anne Arundel, Prince George's counties. 2020 presidential margin D+19.5 on the 2018 lines \u2192 D+19.5 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 69.1,
+      "key": "31",
+      "popPct": 72.5
+     },
+     {
+      "areaPct": 27.2,
+      "key": "33",
+      "popPct": 22.0
+     },
+     {
+      "areaPct": 3.7,
+      "key": "32",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 131566,
+    "pres2020New": 10.4,
+    "pres2020Old": 9.7,
+    "retainedAreaPct": 69.1,
+    "retainedPopPct": 72.5,
+    "text": "Kept 72% of its population from the 2018 SD-31; gained the rest from the old SD-33 (22%), the old SD-32 (6%). Entirely in Anne Arundel County. 2020 presidential margin R+9.7 on the 2018 lines \u2192 R+10.4 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 97.8,
+      "key": "32",
+      "popPct": 97.2
+     },
+     {
+      "areaPct": 1.2,
+      "key": "31",
+      "popPct": 2.1
+     },
+     {
+      "areaPct": 1.0,
+      "key": "33",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 98.3
+     },
+     {
+      "county": "Howard",
+      "popPct": 1.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 137711,
+    "pres2020New": -32.2,
+    "pres2020Old": -33.2,
+    "retainedAreaPct": 97.8,
+    "retainedPopPct": 97.2,
+    "text": "Kept 97% of its population from the 2018 SD-32; gained the rest from the old SD-31 (2%), the old SD-33 (1%). Spans Anne Arundel, Howard counties. 2020 presidential margin D+33.2 on the 2018 lines \u2192 D+32.2 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 90.6,
+      "key": "33",
+      "popPct": 73.7
+     },
+     {
+      "areaPct": 7.4,
+      "key": "21",
+      "popPct": 18.7
+     },
+     {
+      "areaPct": 1.7,
+      "key": "32",
+      "popPct": 6.8
+     },
+     {
+      "areaPct": 0.3,
+      "key": "30",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Anne Arundel",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 127896,
+    "pres2020New": -18.2,
+    "pres2020Old": -13.3,
+    "retainedAreaPct": 90.6,
+    "retainedPopPct": 73.7,
+    "text": "Kept 74% of its population from the 2018 SD-33; gained the rest from the old SD-21 (19%), the old SD-32 (7%), the old SD-30 (1%). Entirely in Anne Arundel County. 2020 presidential margin D+13.3 on the 2018 lines \u2192 D+18.2 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 99.3,
+      "key": "34",
+      "popPct": 97.4
+     },
+     {
+      "areaPct": 0.6,
+      "key": "7",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Harford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 132123,
+    "pres2020New": -8.6,
+    "pres2020Old": -8.6,
+    "retainedAreaPct": 99.3,
+    "retainedPopPct": 97.4,
+    "text": "Kept 97% of its population from the 2018 SD-34; gained the rest from the old SD-7 (3%). Entirely in Harford County. 2020 presidential margin D+8.6 on the 2018 lines \u2192 D+8.6 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 93.8,
+      "key": "35",
+      "popPct": 85.9
+     },
+     {
+      "areaPct": 6.1,
+      "key": "7",
+      "popPct": 13.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Harford",
+      "popPct": 62.2
+     },
+     {
+      "county": "Cecil",
+      "popPct": 37.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 133932,
+    "pres2020New": 33.3,
+    "pres2020Old": 32.0,
+    "retainedAreaPct": 93.8,
+    "retainedPopPct": 85.9,
+    "text": "Kept 86% of its population from the 2018 SD-35; gained the rest from the old SD-7 (14%). Spans Harford, Cecil counties. 2020 presidential margin R+32.0 on the 2018 lines \u2192 R+33.3 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 95.1,
+      "key": "36",
+      "popPct": 87.2
+     },
+     {
+      "areaPct": 4.9,
+      "key": "35",
+      "popPct": 12.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cecil",
+      "popPct": 39.4
+     },
+     {
+      "county": "Queen Anne's",
+      "popPct": 37.0
+     },
+     {
+      "county": "Kent",
+      "popPct": 14.4
+     },
+     {
+      "county": "Caroline",
+      "popPct": 9.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 134848,
+    "pres2020New": 20.0,
+    "pres2020Old": 21.3,
+    "retainedAreaPct": 95.1,
+    "retainedPopPct": 87.2,
+    "text": "Kept 87% of its population from the 2018 SD-36; gained the rest from the old SD-35 (13%). Spans Cecil, Queen Anne's, Kent, Caroline counties. 2020 presidential margin R+21.3 on the 2018 lines \u2192 R+20.0 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 89.6,
+      "key": "37",
+      "popPct": 89.2
+     },
+     {
+      "areaPct": 10.0,
+      "key": "36",
+      "popPct": 8.7
+     },
+     {
+      "areaPct": 0.4,
+      "key": "38",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Wicomico",
+      "popPct": 33.3
+     },
+     {
+      "county": "Talbot",
+      "popPct": 27.5
+     },
+     {
+      "county": "Dorchester",
+      "popPct": 23.9
+     },
+     {
+      "county": "Caroline",
+      "popPct": 15.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 136508,
+    "pres2020New": 5.2,
+    "pres2020Old": 3.4,
+    "retainedAreaPct": 89.6,
+    "retainedPopPct": 89.2,
+    "text": "Kept 89% of its population from the 2018 SD-37; gained the rest from the old SD-36 (9%), the old SD-38 (2%). Spans Wicomico, Talbot, Dorchester, Caroline counties. 2020 presidential margin R+3.4 on the 2018 lines \u2192 R+5.2 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 97.2,
+      "key": "38",
+      "popPct": 95.8
+     },
+     {
+      "areaPct": 2.8,
+      "key": "37",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Wicomico",
+      "popPct": 42.9
+     },
+     {
+      "county": "Worcester",
+      "popPct": 38.9
+     },
+     {
+      "county": "Somerset",
+      "popPct": 18.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 134859,
+    "pres2020New": 13.9,
+    "pres2020Old": 13.7,
+    "retainedAreaPct": 97.2,
+    "retainedPopPct": 95.8,
+    "text": "Kept 96% of its population from the 2018 SD-38; gained the rest from the old SD-37 (4%). Spans Wicomico, Worcester, Somerset counties. 2020 presidential margin R+13.7 on the 2018 lines \u2192 R+13.9 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 93.5,
+      "key": "39",
+      "popPct": 93.7
+     },
+     {
+      "areaPct": 6.4,
+      "key": "17",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Montgomery",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 129103,
+    "pres2020New": -56.3,
+    "pres2020Old": -55.9,
+    "retainedAreaPct": 93.5,
+    "retainedPopPct": 93.7,
+    "text": "Kept 94% of its population from the 2018 SD-39; gained the rest from the old SD-17 (6%). Entirely in Montgomery County. 2020 presidential margin D+55.9 on the 2018 lines \u2192 D+56.3 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 84.2,
+      "key": "4",
+      "popPct": 83.6
+     },
+     {
+      "areaPct": 15.8,
+      "key": "3",
+      "popPct": 16.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Frederick",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Carroll",
+      "popPct": 9.4
+     }
+    ],
+    "fromEra": "2018",
+    "pop2020": 135306,
+    "pres2020New": 4.8,
+    "pres2020Old": 10.4,
+    "retainedAreaPct": 84.2,
+    "retainedPopPct": 83.6,
+    "text": "Kept 84% of its population from the 2018 SD-4; gained the rest from the old SD-3 (16%). Counties: lost Carroll. 2020 presidential margin R+10.4 on the 2018 lines \u2192 R+4.8 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 78.7,
+      "key": "40",
+      "popPct": 76.5
+     },
+     {
+      "areaPct": 16.3,
+      "key": "44",
+      "popPct": 16.3
+     },
+     {
+      "areaPct": 2.2,
+      "key": "43",
+      "popPct": 2.8
+     },
+     {
+      "areaPct": 0.9,
+      "key": "45",
+      "popPct": 2.2
+     },
+     {
+      "areaPct": 1.7,
+      "key": "41",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 124991,
+    "pres2020New": -83.5,
+    "pres2020Old": -81.6,
+    "retainedAreaPct": 78.7,
+    "retainedPopPct": 76.5,
+    "text": "Kept 76% of its population from the 2018 SD-40; gained the rest from the old SD-44 (16%), the old SD-43 (3%), the old SD-45 (2%) and 1 more. Entirely in Baltimore County. 2020 presidential margin D+81.6 on the 2018 lines \u2192 D+83.5 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 86.7,
+      "key": "41",
+      "popPct": 85.2
+     },
+     {
+      "areaPct": 8.6,
+      "key": "44",
+      "popPct": 10.6
+     },
+     {
+      "areaPct": 2.9,
+      "key": "43",
+      "popPct": 2.4
+     },
+     {
+      "areaPct": 1.8,
+      "key": "40",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 124785,
+    "pres2020New": -72.0,
+    "pres2020Old": -71.5,
+    "retainedAreaPct": 86.7,
+    "retainedPopPct": 85.2,
+    "text": "Kept 85% of its population from the 2018 SD-41; gained the rest from the old SD-44 (11%), the old SD-43 (2%), the old SD-40 (2%). Entirely in Baltimore County. 2020 presidential margin D+71.5 on the 2018 lines \u2192 D+72.0 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 42.3,
+      "key": "42",
+      "popPct": 44.7
+     },
+     {
+      "areaPct": 33.9,
+      "key": "5",
+      "popPct": 38.8
+     },
+     {
+      "areaPct": 19.4,
+      "key": "7",
+      "popPct": 8.4
+     },
+     {
+      "areaPct": 0.4,
+      "key": "11",
+      "popPct": 7.3
+     },
+     {
+      "areaPct": 4.1,
+      "key": "10",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 61.4
+     },
+     {
+      "county": "Carroll",
+      "popPct": 38.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Carroll",
+      "popPct": 38.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 133788,
+    "pres2020New": 8.4,
+    "pres2020Old": -20.4,
+    "retainedAreaPct": 42.3,
+    "retainedPopPct": 44.7,
+    "text": "A new footprint: only 45% of its population was in the 2018 SD-42; it draws from the old SD-5 (39%), the old SD-7 (8%), the old SD-11 (7%) and 1 more. Counties: gained Carroll (39%). 2020 presidential margin D+20.4 on the 2018 lines \u2192 R+8.4 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 57.8,
+      "key": "43",
+      "popPct": 68.2
+     },
+     {
+      "areaPct": 40.5,
+      "key": "42",
+      "popPct": 29.7
+     },
+     {
+      "areaPct": 1.7,
+      "key": "8",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 68.9
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 31.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 125133,
+    "pres2020New": -76.7,
+    "pres2020Old": -85.0,
+    "retainedAreaPct": 57.8,
+    "retainedPopPct": 68.2,
+    "text": "Kept 68% of its population from the 2018 SD-43; gained the rest from the old SD-42 (30%), the old SD-8 (2%). Spans Baltimore, Baltimore counties. 2020 presidential margin D+85.0 on the 2018 lines \u2192 D+76.7 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 46.3,
+      "key": "44",
+      "popPct": 50.3
+     },
+     {
+      "areaPct": 44.9,
+      "key": "12",
+      "popPct": 39.7
+     },
+     {
+      "areaPct": 8.8,
+      "key": "10",
+      "popPct": 10.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 96.1
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 2.5
+     },
+     {
+      "county": "Anne Arundel",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 123881,
+    "pres2020New": -51.7,
+    "pres2020Old": -70.3,
+    "retainedAreaPct": 46.3,
+    "retainedPopPct": 50.3,
+    "text": "Kept 50% of its population from the 2018 SD-44; gained the rest from the old SD-12 (40%), the old SD-10 (10%). Spans Baltimore, Baltimore, Anne Arundel counties. 2020 presidential margin D+70.3 on the 2018 lines \u2192 D+51.7 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 82.4,
+      "key": "45",
+      "popPct": 82.1
+     },
+     {
+      "areaPct": 13.0,
+      "key": "43",
+      "popPct": 13.7
+     },
+     {
+      "areaPct": 4.5,
+      "key": "46",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 124308,
+    "pres2020New": -80.5,
+    "pres2020Old": -81.1,
+    "retainedAreaPct": 82.4,
+    "retainedPopPct": 82.1,
+    "text": "Kept 82% of its population from the 2018 SD-45; gained the rest from the old SD-43 (14%), the old SD-46 (4%). Entirely in Baltimore County. 2020 presidential margin D+81.1 on the 2018 lines \u2192 D+80.5 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "46",
+      "popPct": 95.0
+     },
+     {
+      "areaPct": 0.9,
+      "key": "40",
+      "popPct": 3.3
+     },
+     {
+      "areaPct": 0.3,
+      "key": "45",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 99.2
+     },
+     {
+      "county": "Anne Arundel",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 126254,
+    "pres2020New": -63.2,
+    "pres2020Old": -62.2,
+    "retainedAreaPct": 98.7,
+    "retainedPopPct": 95.0,
+    "text": "Kept 95% of its population from the 2018 SD-46; gained the rest from the old SD-40 (3%), the old SD-45 (2%). Spans Baltimore, Anne Arundel counties. 2020 presidential margin D+62.2 on the 2018 lines \u2192 D+63.2 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 95.8,
+      "key": "47",
+      "popPct": 98.4
+     },
+     {
+      "areaPct": 3.5,
+      "key": "21",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Prince George's",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 135250,
+    "pres2020New": -81.3,
+    "pres2020Old": -81.6,
+    "retainedAreaPct": 95.8,
+    "retainedPopPct": 98.4,
+    "text": "Kept 98% of its population from the 2018 SD-47; gained the rest from the old SD-21 (1%). Entirely in Prince George's County. 2020 presidential margin D+81.6 on the 2018 lines \u2192 D+81.3 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 80.4,
+      "key": "5",
+      "popPct": 65.1
+     },
+     {
+      "areaPct": 11.5,
+      "key": "9",
+      "popPct": 22.7
+     },
+     {
+      "areaPct": 8.1,
+      "key": "4",
+      "popPct": 12.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carroll",
+      "popPct": 96.9
+     },
+     {
+      "county": "Frederick",
+      "popPct": 1.7
+     },
+     {
+      "county": "Howard",
+      "popPct": 0.9
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 122454,
+    "pres2020New": 20.9,
+    "pres2020Old": 27.0,
+    "retainedAreaPct": 80.4,
+    "retainedPopPct": 65.1,
+    "text": "Kept 65% of its population from the 2018 SD-5; gained the rest from the old SD-9 (23%), the old SD-4 (12%). Spans Carroll, Frederick, Howard, Baltimore counties. 2020 presidential margin R+27.0 on the 2018 lines \u2192 R+20.9 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 97.6,
+      "key": "6",
+      "popPct": 93.9
+     },
+     {
+      "areaPct": 2.4,
+      "key": "7",
+      "popPct": 6.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 130265,
+    "pres2020New": 15.0,
+    "pres2020Old": 13.4,
+    "retainedAreaPct": 97.6,
+    "retainedPopPct": 93.9,
+    "text": "Kept 94% of its population from the 2018 SD-6; gained the rest from the old SD-7 (6%). Entirely in Baltimore County. 2020 presidential margin R+13.4 on the 2018 lines \u2192 R+15.0 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 90.4,
+      "key": "7",
+      "popPct": 70.7
+     },
+     {
+      "areaPct": 3.8,
+      "key": "8",
+      "popPct": 16.3
+     },
+     {
+      "areaPct": 5.6,
+      "key": "42",
+      "popPct": 12.0
+     },
+     {
+      "areaPct": 0.2,
+      "key": "34",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 67.3
+     },
+     {
+      "county": "Harford",
+      "popPct": 32.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 133559,
+    "pres2020New": 15.0,
+    "pres2020Old": 21.0,
+    "retainedAreaPct": 90.4,
+    "retainedPopPct": 70.7,
+    "text": "Kept 71% of its population from the 2018 SD-7; gained the rest from the old SD-8 (16%), the old SD-42 (12%), the old SD-34 (1%). Spans Baltimore, Harford counties. 2020 presidential margin R+21.0 on the 2018 lines \u2192 R+15.0 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 78.1,
+      "key": "8",
+      "popPct": 82.0
+     },
+     {
+      "areaPct": 7.8,
+      "key": "42",
+      "popPct": 8.4
+     },
+     {
+      "areaPct": 7.1,
+      "key": "6",
+      "popPct": 5.1
+     },
+     {
+      "areaPct": 7.1,
+      "key": "7",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Baltimore",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2018",
+    "pop2020": 126230,
+    "pres2020New": -25.9,
+    "pres2020Old": -19.8,
+    "retainedAreaPct": 78.1,
+    "retainedPopPct": 82.0,
+    "text": "Kept 82% of its population from the 2018 SD-8; gained the rest from the old SD-42 (8%), the old SD-6 (5%), the old SD-7 (5%). Entirely in Baltimore County. 2020 presidential margin D+19.8 on the 2018 lines \u2192 D+25.9 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 79.2,
+      "key": "9",
+      "popPct": 77.3
+     },
+     {
+      "areaPct": 11.3,
+      "key": "14",
+      "popPct": 8.4
+     },
+     {
+      "areaPct": 3.6,
+      "key": "13",
+      "popPct": 7.0
+     },
+     {
+      "areaPct": 5.3,
+      "key": "15",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 0.7,
+      "key": "12",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Howard",
+      "popPct": 84.2
+     },
+     {
+      "county": "Montgomery",
+      "popPct": 13.6
+     },
+     {
+      "county": "Baltimore",
+      "popPct": 2.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Carroll",
+      "popPct": 18.8
+     }
+    ],
+    "fromEra": "2018",
+    "pop2020": 132718,
+    "pres2020New": -28.3,
+    "pres2020Old": -20.0,
+    "retainedAreaPct": 79.2,
+    "retainedPopPct": 77.3,
+    "text": "Kept 77% of its population from the 2018 SD-9; gained the rest from the old SD-14 (8%), the old SD-13 (7%), the old SD-15 (5%) and 1 more. Counties: lost Carroll. 2020 presidential margin D+20.0 on the 2018 lines \u2192 D+28.3 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

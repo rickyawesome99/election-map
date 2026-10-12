@@ -303,6 +303,26 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
         <div className="flex flex-col gap-8">
 
           <section>
+            <LedgerSectionHead label={countyProjection ? "Projected Vote" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
+            {(() => {
+              const rows = (
+                <CandidatesLedgerSection
+                  candidates={withProjectedVotes(race.candidates
+                    ? [
+                        { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
+                        { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
+                      ]
+                    : [
+                        { name: "Democrat", party: "D", pct: demVoteShare, placeholder: true },
+                        { name: "Republican", party: "R", pct: repVoteShare, placeholder: true },
+                      ], countyProjection)}
+                />
+              );
+              return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} /> : rows;
+            })()}
+          </section>
+
+          <section>
             <LedgerSectionHead label="About this District" />
             {race.raceDesc && (
               <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--app-text-primary)" }}>
@@ -328,26 +348,6 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
                 {demographicsNote}
               </p>
             )}
-          </section>
-
-          <section>
-            <LedgerSectionHead label={countyProjection ? "Projected Vote" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
-            {(() => {
-              const rows = (
-                <CandidatesLedgerSection
-                  candidates={withProjectedVotes(race.candidates
-                    ? [
-                        { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
-                        { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
-                      ]
-                    : [
-                        { name: "Democrat", party: "D", pct: demVoteShare, placeholder: true },
-                        { name: "Republican", party: "R", pct: repVoteShare, placeholder: true },
-                      ], countyProjection)}
-                />
-              );
-              return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} /> : rows;
-            })()}
           </section>
 
           <section>

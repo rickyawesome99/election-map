@@ -29,6 +29,11 @@ export default function AnalysisPage() {
               <div><h3 className="text-xl sm:text-2xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Turnout Analysis</h3><p className="mt-1.5 text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>Who votes, where, and in which races: turnout in every general election since 2016 by state, House district and county, presidential against midterm electorates, drop-off down the ticket, and a county-by-county estimate of {electionYear} turnout for every Senate, governor and House race.</p></div>
               <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
             </a>
+            <a href="/legislatures" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
+              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Legislatures</div>
+              <div><h3 className="text-xl sm:text-2xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>State Legislatures</h3><p className="mt-1.5 text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>Every chamber on the 2026 ballot, simulated seat by seat from the district atlas: projected composition, control odds and the chambers in play.</p></div>
+              <span className="text-sm" style={{ color: "var(--app-text-very-muted)" }}>→</span>
+            </a>
             <a href="/analysis/forecasts" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-1.5 sm:gap-6 items-baseline py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
               <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Forecasts</div>
               <div><h3 className="text-lg sm:text-xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Forecast Comparison</h3><p className="mt-1 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>How our House, Senate and governor forecasts line up against the major published models and race ratings: chamber toplines, how often each agrees with ours, and every race with every call.</p></div>

@@ -1,0 +1,4244 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 57.0,
+      "key": "1",
+      "popPct": 57.4
+     },
+     {
+      "areaPct": 20.9,
+      "key": "46",
+      "popPct": 23.7
+     },
+     {
+      "areaPct": 16.5,
+      "key": "45",
+      "popPct": 10.5
+     },
+     {
+      "areaPct": 3.0,
+      "key": "21",
+      "popPct": 4.2
+     },
+     {
+      "areaPct": 2.6,
+      "key": "32",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 58.6
+     },
+     {
+      "county": "Snohomish",
+      "popPct": 41.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157533,
+    "pres2020New": -44.3,
+    "pres2020Old": -37.1,
+    "retainedAreaPct": 57.0,
+    "retainedPopPct": 57.4,
+    "text": "Kept 57% of its population from the 2016\u20132020 HD-1; gained the rest from the old HD-46 (24%), the old HD-45 (10%), the old HD-21 (4%) and 1 more. Spans King, Snohomish counties. 2020 presidential margin D+37.1 on the 2016\u20132020 lines \u2192 D+44.3 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 95.6,
+      "key": "10",
+      "popPct": 80.8
+     },
+     {
+      "areaPct": 2.5,
+      "key": "39",
+      "popPct": 13.8
+     },
+     {
+      "areaPct": 1.0,
+      "key": "40",
+      "popPct": 3.2
+     },
+     {
+      "areaPct": 1.0,
+      "key": "38",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Island",
+      "popPct": 55.4
+     },
+     {
+      "county": "Snohomish",
+      "popPct": 32.1
+     },
+     {
+      "county": "Skagit",
+      "popPct": 12.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156738,
+    "pres2020New": -6.0,
+    "pres2020Old": -6.4,
+    "retainedAreaPct": 95.6,
+    "retainedPopPct": 80.8,
+    "text": "Kept 81% of its population from the 2016\u20132020 HD-10; gained the rest from the old HD-39 (14%), the old HD-40 (3%), the old HD-38 (2%). Spans Island, Snohomish, Skagit counties. 2020 presidential margin D+6.4 on the 2016\u20132020 lines \u2192 D+6.0 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 79.5,
+      "key": "11",
+      "popPct": 81.8
+     },
+     {
+      "areaPct": 5.9,
+      "key": "33",
+      "popPct": 6.8
+     },
+     {
+      "areaPct": 7.5,
+      "key": "37",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 7.0,
+      "key": "41",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156711,
+    "pres2020New": -40.9,
+    "pres2020Old": -43.6,
+    "retainedAreaPct": 79.5,
+    "retainedPopPct": 81.8,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-11; gained the rest from the old HD-33 (7%), the old HD-37 (6%), the old HD-41 (5%). Entirely in King County. 2020 presidential margin D+43.6 on the 2016\u20132020 lines \u2192 D+40.9 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 70.4,
+      "key": "12",
+      "popPct": 48.5
+     },
+     {
+      "areaPct": 19.7,
+      "key": "39",
+      "popPct": 28.7
+     },
+     {
+      "areaPct": 9.7,
+      "key": "5",
+      "popPct": 22.2
+     },
+     {
+      "areaPct": 0.2,
+      "key": "45",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Chelan",
+      "popPct": 48.3
+     },
+     {
+      "county": "Snohomish",
+      "popPct": 28.3
+     },
+     {
+      "county": "King",
+      "popPct": 23.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Snohomish",
+      "popPct": 28.3
+     },
+     {
+      "county": "King",
+      "popPct": 23.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Douglas",
+      "popPct": 28.0
+     },
+     {
+      "county": "Okanogan",
+      "popPct": 13.7
+     },
+     {
+      "county": "Grant",
+      "popPct": 5.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 157863,
+    "pres2020New": -2.6,
+    "pres2020Old": 11.7,
+    "retainedAreaPct": 70.4,
+    "retainedPopPct": 48.5,
+    "text": "A new footprint: only 48% of its population was in the 2016\u20132020 HD-12; it draws from the old HD-39 (29%), the old HD-5 (22%), the old HD-45 (1%). Counties: gained Snohomish (28%), King (23%); lost Douglas, Okanogan, Grant. 2020 presidential margin R+11.7 on the 2016\u20132020 lines \u2192 D+2.6 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 84.9,
+      "key": "13",
+      "popPct": 86.0
+     },
+     {
+      "areaPct": 12.5,
+      "key": "12",
+      "popPct": 8.9
+     },
+     {
+      "areaPct": 2.5,
+      "key": "9",
+      "popPct": 5.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grant",
+      "popPct": 62.2
+     },
+     {
+      "county": "Kittitas",
+      "popPct": 28.5
+     },
+     {
+      "county": "Adams",
+      "popPct": 5.1
+     },
+     {
+      "county": "Douglas",
+      "popPct": 3.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Adams",
+      "popPct": 5.1
+     },
+     {
+      "county": "Douglas",
+      "popPct": 3.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Lincoln",
+      "popPct": 7.2
+     },
+     {
+      "county": "Yakima",
+      "popPct": 2.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 155371,
+    "pres2020New": 24.7,
+    "pres2020Old": 27.1,
+    "retainedAreaPct": 84.9,
+    "retainedPopPct": 86.0,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-13; gained the rest from the old HD-12 (9%), the old HD-9 (5%). Counties: gained Adams (5%), Douglas (4%); lost Lincoln, Yakima. 2020 presidential margin R+27.1 on the 2016\u20132020 lines \u2192 R+24.7 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 15.3,
+      "key": "15",
+      "popPct": 49.7
+     },
+     {
+      "areaPct": 73.4,
+      "key": "14",
+      "popPct": 26.9
+     },
+     {
+      "areaPct": 11.3,
+      "key": "16",
+      "popPct": 23.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Yakima",
+      "popPct": 71.9
+     },
+     {
+      "county": "Franklin",
+      "popPct": 18.1
+     },
+     {
+      "county": "Benton",
+      "popPct": 5.1
+     },
+     {
+      "county": "Klickitat",
+      "popPct": 4.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Franklin",
+      "popPct": 18.1
+     },
+     {
+      "county": "Benton",
+      "popPct": 5.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Skamania",
+      "popPct": 8.2
+     },
+     {
+      "county": "Clark",
+      "popPct": 2.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 156281,
+    "pres2020New": -15.0,
+    "pres2020Old": 8.7,
+    "retainedAreaPct": 73.4,
+    "retainedPopPct": 26.9,
+    "text": "A new footprint: only 27% of its population was in the 2016\u20132020 HD-14; it draws from the old HD-15 (50%), the old HD-16 (23%). Counties: gained Franklin (18%), Benton (5%); lost Skamania, Clark. 2020 presidential margin R+8.7 on the 2016\u20132020 lines \u2192 D+15.0 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 56.5,
+      "key": "14",
+      "popPct": 46.8
+     },
+     {
+      "areaPct": 32.9,
+      "key": "15",
+      "popPct": 42.7
+     },
+     {
+      "areaPct": 8.5,
+      "key": "16",
+      "popPct": 8.1
+     },
+     {
+      "areaPct": 2.1,
+      "key": "13",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Yakima",
+      "popPct": 91.8
+     },
+     {
+      "county": "Benton",
+      "popPct": 8.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Benton",
+      "popPct": 8.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157129,
+    "pres2020New": 20.6,
+    "pres2020Old": 5.5,
+    "retainedAreaPct": 32.9,
+    "retainedPopPct": 42.7,
+    "text": "A new footprint: only 43% of its population was in the 2016\u20132020 HD-15; it draws from the old HD-14 (47%), the old HD-16 (8%), the old HD-13 (2%). Counties: gained Benton (8%). 2020 presidential margin R+5.5 on the 2016\u20132020 lines \u2192 R+20.6 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 44.2,
+      "key": "16",
+      "popPct": 44.8
+     },
+     {
+      "areaPct": 36.5,
+      "key": "9",
+      "popPct": 27.5
+     },
+     {
+      "areaPct": 12.8,
+      "key": "8",
+      "popPct": 26.3
+     },
+     {
+      "areaPct": 6.5,
+      "key": "13",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Walla Walla",
+      "popPct": 38.7
+     },
+     {
+      "county": "Benton",
+      "popPct": 30.7
+     },
+     {
+      "county": "Franklin",
+      "popPct": 29.2
+     },
+     {
+      "county": "Grant",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Columbia",
+      "popPct": 2.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 161364,
+    "pres2020New": 14.9,
+    "pres2020Old": 16.3,
+    "retainedAreaPct": 44.2,
+    "retainedPopPct": 44.8,
+    "text": "A new footprint: only 45% of its population was in the 2016\u20132020 HD-16; it draws from the old HD-9 (28%), the old HD-8 (26%), the old HD-13 (1%). Counties: lost Columbia. 2020 presidential margin R+16.3 on the 2016\u20132020 lines \u2192 R+14.9 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 3.3,
+      "key": "18",
+      "popPct": 44.8
+     },
+     {
+      "areaPct": 0.5,
+      "key": "17",
+      "popPct": 35.4
+     },
+     {
+      "areaPct": 96.2,
+      "key": "14",
+      "popPct": 19.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clark",
+      "popPct": 82.6
+     },
+     {
+      "county": "Klickitat",
+      "popPct": 9.8
+     },
+     {
+      "county": "Skamania",
+      "popPct": 7.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Klickitat",
+      "popPct": 9.8
+     },
+     {
+      "county": "Skamania",
+      "popPct": 7.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157908,
+    "pres2020New": -6.7,
+    "pres2020Old": -3.6,
+    "retainedAreaPct": 0.5,
+    "retainedPopPct": 35.4,
+    "text": "A new footprint: only 35% of its population was in the 2016\u20132020 HD-17; it draws from the old HD-18 (45%), the old HD-14 (20%). Counties: gained Klickitat (10%), Skamania (8%). 2020 presidential margin D+3.6 on the 2016\u20132020 lines \u2192 D+6.7 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 53.6,
+      "key": "17",
+      "popPct": 48.4
+     },
+     {
+      "areaPct": 37.5,
+      "key": "18",
+      "popPct": 30.9
+     },
+     {
+      "areaPct": 8.9,
+      "key": "49",
+      "popPct": 20.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clark",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 155827,
+    "pres2020New": 0.1,
+    "pres2020Old": 3.5,
+    "retainedAreaPct": 37.5,
+    "retainedPopPct": 30.9,
+    "text": "A new footprint: only 31% of its population was in the 2016\u20132020 HD-18; it draws from the old HD-17 (48%), the old HD-49 (21%). Entirely in Clark County. 2020 presidential margin R+3.5 on the 2016\u20132020 lines \u2192 R+0.1 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 86.3,
+      "key": "19",
+      "popPct": 82.4
+     },
+     {
+      "areaPct": 10.0,
+      "key": "20",
+      "popPct": 13.7
+     },
+     {
+      "areaPct": 3.7,
+      "key": "24",
+      "popPct": 3.0
+     },
+     {
+      "areaPct": 0.1,
+      "key": "35",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cowlitz",
+      "popPct": 48.7
+     },
+     {
+      "county": "Grays Harbor",
+      "popPct": 17.6
+     },
+     {
+      "county": "Pacific",
+      "popPct": 14.9
+     },
+     {
+      "county": "Lewis",
+      "popPct": 12.9
+     },
+     {
+      "county": "Thurston",
+      "popPct": 3.2
+     },
+     {
+      "county": "Wahkiakum",
+      "popPct": 2.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Thurston",
+      "popPct": 3.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157234,
+    "pres2020New": 14.3,
+    "pres2020Old": 9.2,
+    "retainedAreaPct": 86.3,
+    "retainedPopPct": 82.4,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-19; gained the rest from the old HD-20 (14%), the old HD-24 (3%), the old HD-35 (1%). Counties: gained Thurston (3%). 2020 presidential margin R+9.2 on the 2016\u20132020 lines \u2192 R+14.3 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 84.6,
+      "key": "2",
+      "popPct": 77.9
+     },
+     {
+      "areaPct": 0.6,
+      "key": "29",
+      "popPct": 9.1
+     },
+     {
+      "areaPct": 0.6,
+      "key": "28",
+      "popPct": 6.3
+     },
+     {
+      "areaPct": 14.1,
+      "key": "20",
+      "popPct": 6.0
+     },
+     {
+      "areaPct": 0.1,
+      "key": "22",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pierce",
+      "popPct": 57.6
+     },
+     {
+      "county": "Thurston",
+      "popPct": 42.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157911,
+    "pres2020New": 15.0,
+    "pres2020Old": 13.8,
+    "retainedAreaPct": 84.6,
+    "retainedPopPct": 77.9,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-2; gained the rest from the old HD-29 (9%), the old HD-28 (6%), the old HD-20 (6%) and 1 more. Spans Pierce, Thurston counties. 2020 presidential margin R+13.8 on the 2016\u20132020 lines \u2192 R+15.0 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 91.1,
+      "key": "20",
+      "popPct": 69.2
+     },
+     {
+      "areaPct": 8.0,
+      "key": "18",
+      "popPct": 28.5
+     },
+     {
+      "areaPct": 0.2,
+      "key": "17",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lewis",
+      "popPct": 38.8
+     },
+     {
+      "county": "Clark",
+      "popPct": 37.9
+     },
+     {
+      "county": "Cowlitz",
+      "popPct": 21.2
+     },
+     {
+      "county": "Thurston",
+      "popPct": 2.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 159501,
+    "pres2020New": 27.5,
+    "pres2020Old": 30.0,
+    "retainedAreaPct": 91.1,
+    "retainedPopPct": 69.2,
+    "text": "Kept 69% of its population from the 2016\u20132020 HD-20; gained the rest from the old HD-18 (28%), the old HD-17 (2%). Spans Lewis, Clark, Cowlitz, Thurston counties. 2020 presidential margin R+30.0 on the 2016\u20132020 lines \u2192 R+27.5 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 90.7,
+      "key": "21",
+      "popPct": 90.1
+     },
+     {
+      "areaPct": 2.8,
+      "key": "32",
+      "popPct": 6.0
+     },
+     {
+      "areaPct": 5.2,
+      "key": "38",
+      "popPct": 2.1
+     },
+     {
+      "areaPct": 1.4,
+      "key": "44",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Snohomish",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 158453,
+    "pres2020New": -37.7,
+    "pres2020Old": -36.6,
+    "retainedAreaPct": 90.7,
+    "retainedPopPct": 90.1,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-21; gained the rest from the old HD-32 (6%), the old HD-38 (2%), the old HD-44 (2%). Entirely in Snohomish County. 2020 presidential margin D+36.6 on the 2016\u20132020 lines \u2192 D+37.7 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 97.9,
+      "key": "22",
+      "popPct": 97.7
+     },
+     {
+      "areaPct": 2.1,
+      "key": "35",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Thurston",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157501,
+    "pres2020New": -35.5,
+    "pres2020Old": -35.3,
+    "retainedAreaPct": 97.9,
+    "retainedPopPct": 97.7,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-22; gained the rest from the old HD-35 (2%). Entirely in Thurston County. 2020 presidential margin D+35.3 on the 2016\u20132020 lines \u2192 D+35.5 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 98.1,
+      "key": "23",
+      "popPct": 92.4
+     },
+     {
+      "areaPct": 1.8,
+      "key": "35",
+      "popPct": 6.5
+     },
+     {
+      "areaPct": 0.1,
+      "key": "26",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kitsap",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 158278,
+    "pres2020New": -30.1,
+    "pres2020Old": -29.6,
+    "retainedAreaPct": 98.1,
+    "retainedPopPct": 92.4,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-23; gained the rest from the old HD-35 (6%), the old HD-26 (1%). Entirely in Kitsap County. 2020 presidential margin D+29.6 on the 2016\u20132020 lines \u2192 D+30.1 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "24",
+      "popPct": 90.9
+     },
+     {
+      "areaPct": 0.3,
+      "key": "19",
+      "popPct": 9.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clallam",
+      "popPct": 48.8
+     },
+     {
+      "county": "Grays Harbor",
+      "popPct": 30.3
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 20.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 158107,
+    "pres2020New": -10.7,
+    "pres2020Old": -10.7,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 90.9,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-24; gained the rest from the old HD-19 (9%). Spans Clallam, Grays Harbor, Jefferson counties. 2020 presidential margin D+10.7 on the 2016\u20132020 lines \u2192 D+10.7 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 86.3,
+      "key": "25",
+      "popPct": 83.8
+     },
+     {
+      "areaPct": 9.1,
+      "key": "2",
+      "popPct": 14.8
+     },
+     {
+      "areaPct": 4.6,
+      "key": "31",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pierce",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 158805,
+    "pres2020New": -1.8,
+    "pres2020Old": -3.8,
+    "retainedAreaPct": 86.3,
+    "retainedPopPct": 83.8,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-25; gained the rest from the old HD-2 (15%), the old HD-31 (1%). Entirely in Pierce County. 2020 presidential margin D+3.8 on the 2016\u20132020 lines \u2192 D+1.8 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 88.8,
+      "key": "26",
+      "popPct": 95.5
+     },
+     {
+      "areaPct": 11.2,
+      "key": "35",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kitsap",
+      "popPct": 55.5
+     },
+     {
+      "county": "Pierce",
+      "popPct": 44.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157950,
+    "pres2020New": -5.6,
+    "pres2020Old": -6.0,
+    "retainedAreaPct": 88.8,
+    "retainedPopPct": 95.5,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-26; gained the rest from the old HD-35 (4%). Spans Kitsap, Pierce counties. 2020 presidential margin D+6.0 on the 2016\u20132020 lines \u2192 D+5.6 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 77.3,
+      "key": "27",
+      "popPct": 73.8
+     },
+     {
+      "areaPct": 6.1,
+      "key": "29",
+      "popPct": 9.8
+     },
+     {
+      "areaPct": 7.0,
+      "key": "28",
+      "popPct": 9.4
+     },
+     {
+      "areaPct": 9.5,
+      "key": "25",
+      "popPct": 7.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pierce",
+      "popPct": 98.5
+     },
+     {
+      "county": "King",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156297,
+    "pres2020New": -43.1,
+    "pres2020Old": -43.4,
+    "retainedAreaPct": 77.3,
+    "retainedPopPct": 73.8,
+    "text": "Kept 74% of its population from the 2016\u20132020 HD-27; gained the rest from the old HD-29 (10%), the old HD-28 (9%), the old HD-25 (7%). Spans Pierce, King counties. 2020 presidential margin D+43.4 on the 2016\u20132020 lines \u2192 D+43.1 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 97.1,
+      "key": "28",
+      "popPct": 82.7
+     },
+     {
+      "areaPct": 2.9,
+      "key": "29",
+      "popPct": 17.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pierce",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 158495,
+    "pres2020New": -20.6,
+    "pres2020Old": -19.1,
+    "retainedAreaPct": 97.1,
+    "retainedPopPct": 82.7,
+    "text": "Kept 83% of its population from the 2016\u20132020 HD-28; gained the rest from the old HD-29 (17%). Entirely in Pierce County. 2020 presidential margin D+19.1 on the 2016\u20132020 lines \u2192 D+20.6 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 69.1,
+      "key": "29",
+      "popPct": 67.0
+     },
+     {
+      "areaPct": 18.2,
+      "key": "27",
+      "popPct": 22.8
+     },
+     {
+      "areaPct": 12.5,
+      "key": "25",
+      "popPct": 10.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pierce",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 153208,
+    "pres2020New": -23.6,
+    "pres2020Old": -21.6,
+    "retainedAreaPct": 69.1,
+    "retainedPopPct": 67.0,
+    "text": "Kept 67% of its population from the 2016\u20132020 HD-29; gained the rest from the old HD-27 (23%), the old HD-25 (10%). Entirely in Pierce County. 2020 presidential margin D+21.6 on the 2016\u20132020 lines \u2192 D+23.6 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 59.2,
+      "key": "3",
+      "popPct": 68.8
+     },
+     {
+      "areaPct": 40.8,
+      "key": "6",
+      "popPct": 31.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Spokane",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156314,
+    "pres2020New": -23.4,
+    "pres2020Old": -18.5,
+    "retainedAreaPct": 59.2,
+    "retainedPopPct": 68.8,
+    "text": "Kept 69% of its population from the 2016\u20132020 HD-3; gained the rest from the old HD-6 (31%). Entirely in Spokane County. 2020 presidential margin D+18.5 on the 2016\u20132020 lines \u2192 D+23.4 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 94.6,
+      "key": "30",
+      "popPct": 93.3
+     },
+     {
+      "areaPct": 1.5,
+      "key": "31",
+      "popPct": 3.9
+     },
+     {
+      "areaPct": 3.6,
+      "key": "47",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Pierce",
+      "popPct": 4.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 157016,
+    "pres2020New": -23.0,
+    "pres2020Old": -22.3,
+    "retainedAreaPct": 94.6,
+    "retainedPopPct": 93.3,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-30; gained the rest from the old HD-31 (4%), the old HD-47 (2%). Counties: lost Pierce. 2020 presidential margin D+22.3 on the 2016\u20132020 lines \u2192 D+23.0 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 93.6,
+      "key": "31",
+      "popPct": 85.1
+     },
+     {
+      "areaPct": 5.6,
+      "key": "2",
+      "popPct": 9.1
+     },
+     {
+      "areaPct": 0.6,
+      "key": "30",
+      "popPct": 5.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pierce",
+      "popPct": 85.1
+     },
+     {
+      "county": "King",
+      "popPct": 14.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156156,
+    "pres2020New": 6.8,
+    "pres2020Old": 5.7,
+    "retainedAreaPct": 93.6,
+    "retainedPopPct": 85.1,
+    "text": "Kept 85% of its population from the 2016\u20132020 HD-31; gained the rest from the old HD-2 (9%), the old HD-30 (5%). Spans Pierce, King counties. 2020 presidential margin R+5.7 on the 2016\u20132020 lines \u2192 R+6.8 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 91.6,
+      "key": "32",
+      "popPct": 85.3
+     },
+     {
+      "areaPct": 7.7,
+      "key": "1",
+      "popPct": 13.1
+     },
+     {
+      "areaPct": 0.5,
+      "key": "46",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Snohomish",
+      "popPct": 50.6
+     },
+     {
+      "county": "King",
+      "popPct": 49.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157197,
+    "pres2020New": -54.0,
+    "pres2020Old": -53.7,
+    "retainedAreaPct": 91.6,
+    "retainedPopPct": 85.3,
+    "text": "Kept 85% of its population from the 2016\u20132020 HD-32; gained the rest from the old HD-1 (13%), the old HD-46 (1%). Spans Snohomish, King counties. 2020 presidential margin D+53.7 on the 2016\u20132020 lines \u2192 D+54.0 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 83.7,
+      "key": "33",
+      "popPct": 86.7
+     },
+     {
+      "areaPct": 16.2,
+      "key": "34",
+      "popPct": 13.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156325,
+    "pres2020New": -41.2,
+    "pres2020Old": -40.3,
+    "retainedAreaPct": 83.7,
+    "retainedPopPct": 86.7,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-33; gained the rest from the old HD-34 (13%). Entirely in King County. 2020 presidential margin D+40.3 on the 2016\u20132020 lines \u2192 D+41.2 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 92.8,
+      "key": "34",
+      "popPct": 85.4
+     },
+     {
+      "areaPct": 1.6,
+      "key": "33",
+      "popPct": 6.2
+     },
+     {
+      "areaPct": 4.6,
+      "key": "11",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 0.7,
+      "key": "37",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 0.3,
+      "key": "43",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 158383,
+    "pres2020New": -69.4,
+    "pres2020Old": -67.4,
+    "retainedAreaPct": 92.8,
+    "retainedPopPct": 85.4,
+    "text": "Kept 85% of its population from the 2016\u20132020 HD-34; gained the rest from the old HD-33 (6%), the old HD-11 (4%), the old HD-37 (3%) and 1 more. Entirely in King County. 2020 presidential margin D+67.4 on the 2016\u20132020 lines \u2192 D+69.4 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 93.9,
+      "key": "35",
+      "popPct": 80.9
+     },
+     {
+      "areaPct": 5.0,
+      "key": "20",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 0.1,
+      "key": "22",
+      "popPct": 5.3
+     },
+     {
+      "areaPct": 0.5,
+      "key": "2",
+      "popPct": 2.8
+     },
+     {
+      "areaPct": 0.2,
+      "key": "23",
+      "popPct": 2.5
+     },
+     {
+      "areaPct": 0.2,
+      "key": "26",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mason",
+      "popPct": 42.0
+     },
+     {
+      "county": "Thurston",
+      "popPct": 39.0
+     },
+     {
+      "county": "Kitsap",
+      "popPct": 19.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156437,
+    "pres2020New": 0.8,
+    "pres2020Old": -0.4,
+    "retainedAreaPct": 93.9,
+    "retainedPopPct": 80.9,
+    "text": "Kept 81% of its population from the 2016\u20132020 HD-35; gained the rest from the old HD-20 (7%), the old HD-22 (5%), the old HD-2 (3%) and 2 more. Spans Mason, Thurston, Kitsap counties. 2020 presidential margin D+0.4 on the 2016\u20132020 lines \u2192 R+0.8 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 97.1,
+      "key": "36",
+      "popPct": 93.5
+     },
+     {
+      "areaPct": 2.8,
+      "key": "43",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157529,
+    "pres2020New": -80.8,
+    "pres2020Old": -79.7,
+    "retainedAreaPct": 97.1,
+    "retainedPopPct": 93.5,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-36; gained the rest from the old HD-43 (6%). Entirely in King County. 2020 presidential margin D+79.7 on the 2016\u20132020 lines \u2192 D+80.8 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 90.4,
+      "key": "37",
+      "popPct": 90.7
+     },
+     {
+      "areaPct": 9.3,
+      "key": "11",
+      "popPct": 8.4
+     },
+     {
+      "areaPct": 0.3,
+      "key": "43",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156080,
+    "pres2020New": -77.1,
+    "pres2020Old": -76.0,
+    "retainedAreaPct": 90.4,
+    "retainedPopPct": 90.7,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-37; gained the rest from the old HD-11 (8%), the old HD-43 (1%). Entirely in King County. 2020 presidential margin D+76.0 on the 2016\u20132020 lines \u2192 D+77.1 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 94.9,
+      "key": "38",
+      "popPct": 83.0
+     },
+     {
+      "areaPct": 4.0,
+      "key": "44",
+      "popPct": 11.0
+     },
+     {
+      "areaPct": 0.9,
+      "key": "21",
+      "popPct": 4.7
+     },
+     {
+      "areaPct": 0.2,
+      "key": "39",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Snohomish",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 155651,
+    "pres2020New": -20.9,
+    "pres2020Old": -21.1,
+    "retainedAreaPct": 94.9,
+    "retainedPopPct": 83.0,
+    "text": "Kept 83% of its population from the 2016\u20132020 HD-38; gained the rest from the old HD-44 (11%), the old HD-21 (5%), the old HD-39 (1%). Entirely in Snohomish County. 2020 presidential margin D+21.1 on the 2016\u20132020 lines \u2192 D+20.9 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 90.6,
+      "key": "39",
+      "popPct": 50.7
+     },
+     {
+      "areaPct": 1.5,
+      "key": "44",
+      "popPct": 33.0
+     },
+     {
+      "areaPct": 7.2,
+      "key": "10",
+      "popPct": 8.3
+     },
+     {
+      "areaPct": 0.2,
+      "key": "38",
+      "popPct": 6.3
+     },
+     {
+      "areaPct": 0.5,
+      "key": "40",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Snohomish",
+      "popPct": 74.1
+     },
+     {
+      "county": "Skagit",
+      "popPct": 25.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157909,
+    "pres2020New": 6.1,
+    "pres2020Old": 8.8,
+    "retainedAreaPct": 90.6,
+    "retainedPopPct": 50.7,
+    "text": "Kept 51% of its population from the 2016\u20132020 HD-39; gained the rest from the old HD-44 (33%), the old HD-10 (8%), the old HD-38 (6%) and 1 more. Spans Snohomish, Skagit counties. 2020 presidential margin R+8.8 on the 2016\u20132020 lines \u2192 R+6.1 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 73.5,
+      "key": "4",
+      "popPct": 95.3
+     },
+     {
+      "areaPct": 26.5,
+      "key": "7",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Spokane",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156564,
+    "pres2020New": 18.5,
+    "pres2020Old": 17.9,
+    "retainedAreaPct": 73.5,
+    "retainedPopPct": 95.3,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-4; gained the rest from the old HD-7 (5%). Entirely in Spokane County. 2020 presidential margin R+17.9 on the 2016\u20132020 lines \u2192 R+18.5 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 97.3,
+      "key": "40",
+      "popPct": 89.2
+     },
+     {
+      "areaPct": 2.4,
+      "key": "10",
+      "popPct": 8.4
+     },
+     {
+      "areaPct": 0.3,
+      "key": "42",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Whatcom",
+      "popPct": 45.0
+     },
+     {
+      "county": "Skagit",
+      "popPct": 43.7
+     },
+     {
+      "county": "San Juan",
+      "popPct": 11.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157112,
+    "pres2020New": -38.0,
+    "pres2020Old": -39.2,
+    "retainedAreaPct": 97.3,
+    "retainedPopPct": 89.2,
+    "text": "Kept 89% of its population from the 2016\u20132020 HD-40; gained the rest from the old HD-10 (8%), the old HD-42 (2%). Spans Whatcom, Skagit, San Juan counties. 2020 presidential margin D+39.2 on the 2016\u20132020 lines \u2192 D+38.0 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 85.1,
+      "key": "41",
+      "popPct": 83.7
+     },
+     {
+      "areaPct": 10.3,
+      "key": "48",
+      "popPct": 10.8
+     },
+     {
+      "areaPct": 4.3,
+      "key": "45",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157348,
+    "pres2020New": -46.4,
+    "pres2020Old": -45.8,
+    "retainedAreaPct": 85.1,
+    "retainedPopPct": 83.7,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-41; gained the rest from the old HD-48 (11%), the old HD-45 (5%). Entirely in King County. 2020 presidential margin D+45.8 on the 2016\u20132020 lines \u2192 D+46.4 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "42",
+      "popPct": 98.7
+     },
+     {
+      "areaPct": 0.1,
+      "key": "40",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Whatcom",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156434,
+    "pres2020New": -9.7,
+    "pres2020Old": -10.0,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 98.7,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-42; gained the rest from the old HD-40 (1%). Entirely in Whatcom County. 2020 presidential margin D+10.0 on the 2016\u20132020 lines \u2192 D+9.7 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 62.2,
+      "key": "43",
+      "popPct": 78.7
+     },
+     {
+      "areaPct": 11.9,
+      "key": "36",
+      "popPct": 14.7
+     },
+     {
+      "areaPct": 17.9,
+      "key": "46",
+      "popPct": 4.3
+     },
+     {
+      "areaPct": 7.9,
+      "key": "37",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156395,
+    "pres2020New": -83.3,
+    "pres2020Old": -84.7,
+    "retainedAreaPct": 62.2,
+    "retainedPopPct": 78.7,
+    "text": "Kept 79% of its population from the 2016\u20132020 HD-43; gained the rest from the old HD-36 (15%), the old HD-46 (4%), the old HD-37 (2%). Entirely in King County. 2020 presidential margin D+84.7 on the 2016\u20132020 lines \u2192 D+83.3 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 46.7,
+      "key": "44",
+      "popPct": 58.1
+     },
+     {
+      "areaPct": 30.4,
+      "key": "1",
+      "popPct": 32.2
+     },
+     {
+      "areaPct": 21.6,
+      "key": "39",
+      "popPct": 4.1
+     },
+     {
+      "areaPct": 0.8,
+      "key": "21",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 0.6,
+      "key": "38",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Snohomish",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156310,
+    "pres2020New": -21.4,
+    "pres2020Old": -15.8,
+    "retainedAreaPct": 46.7,
+    "retainedPopPct": 58.1,
+    "text": "Kept 58% of its population from the 2016\u20132020 HD-44; gained the rest from the old HD-1 (32%), the old HD-39 (4%), the old HD-21 (4%) and 1 more. Entirely in Snohomish County. 2020 presidential margin D+15.8 on the 2016\u20132020 lines \u2192 D+21.4 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 79.5,
+      "key": "45",
+      "popPct": 84.8
+     },
+     {
+      "areaPct": 1.6,
+      "key": "48",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 3.3,
+      "key": "1",
+      "popPct": 6.2
+     },
+     {
+      "areaPct": 15.6,
+      "key": "5",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157237,
+    "pres2020New": -44.4,
+    "pres2020Old": -43.8,
+    "retainedAreaPct": 79.5,
+    "retainedPopPct": 84.8,
+    "text": "Kept 85% of its population from the 2016\u20132020 HD-45; gained the rest from the old HD-48 (7%), the old HD-1 (6%), the old HD-5 (2%). Entirely in King County. 2020 presidential margin D+43.8 on the 2016\u20132020 lines \u2192 D+44.4 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 83.1,
+      "key": "46",
+      "popPct": 69.4
+     },
+     {
+      "areaPct": 14.9,
+      "key": "43",
+      "popPct": 27.1
+     },
+     {
+      "areaPct": 1.8,
+      "key": "36",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156809,
+    "pres2020New": -79.7,
+    "pres2020Old": -72.7,
+    "retainedAreaPct": 83.1,
+    "retainedPopPct": 69.4,
+    "text": "Kept 69% of its population from the 2016\u20132020 HD-46; gained the rest from the old HD-43 (27%), the old HD-36 (3%). Entirely in King County. 2020 presidential margin D+72.7 on the 2016\u20132020 lines \u2192 D+79.7 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 83.4,
+      "key": "47",
+      "popPct": 94.6
+     },
+     {
+      "areaPct": 6.9,
+      "key": "31",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 9.5,
+      "key": "5",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157162,
+    "pres2020New": -19.6,
+    "pres2020Old": -19.6,
+    "retainedAreaPct": 83.4,
+    "retainedPopPct": 94.6,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-47; gained the rest from the old HD-31 (4%), the old HD-5 (2%). Entirely in King County. 2020 presidential margin D+19.6 on the 2016\u20132020 lines \u2192 D+19.6 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 92.0,
+      "key": "48",
+      "popPct": 88.7
+     },
+     {
+      "areaPct": 6.9,
+      "key": "41",
+      "popPct": 10.3
+     },
+     {
+      "areaPct": 1.1,
+      "key": "45",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157774,
+    "pres2020New": -47.7,
+    "pres2020Old": -47.7,
+    "retainedAreaPct": 92.0,
+    "retainedPopPct": 88.7,
+    "text": "Kept 89% of its population from the 2016\u20132020 HD-48; gained the rest from the old HD-41 (10%), the old HD-45 (1%). Entirely in King County. 2020 presidential margin D+47.7 on the 2016\u20132020 lines \u2192 D+47.7 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 87.6,
+      "key": "49",
+      "popPct": 79.3
+     },
+     {
+      "areaPct": 12.4,
+      "key": "17",
+      "popPct": 20.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clark",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156772,
+    "pres2020New": -22.3,
+    "pres2020Old": -22.7,
+    "retainedAreaPct": 87.6,
+    "retainedPopPct": 79.3,
+    "text": "Kept 79% of its population from the 2016\u20132020 HD-49; gained the rest from the old HD-17 (21%). Entirely in Clark County. 2020 presidential margin D+22.7 on the 2016\u20132020 lines \u2192 D+22.3 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 45.6,
+      "key": "5",
+      "popPct": 76.4
+     },
+     {
+      "areaPct": 51.6,
+      "key": "31",
+      "popPct": 11.5
+     },
+     {
+      "areaPct": 1.0,
+      "key": "47",
+      "popPct": 4.3
+     },
+     {
+      "areaPct": 0.8,
+      "key": "11",
+      "popPct": 4.0
+     },
+     {
+      "areaPct": 1.0,
+      "key": "41",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157316,
+    "pres2020New": -18.6,
+    "pres2020Old": -23.3,
+    "retainedAreaPct": 45.6,
+    "retainedPopPct": 76.4,
+    "text": "Kept 76% of its population from the 2016\u20132020 HD-5; gained the rest from the old HD-31 (12%), the old HD-47 (4%), the old HD-11 (4%) and 1 more. Entirely in King County. 2020 presidential margin D+23.3 on the 2016\u20132020 lines \u2192 D+18.6 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 40.5,
+      "key": "6",
+      "popPct": 48.4
+     },
+     {
+      "areaPct": 57.7,
+      "key": "7",
+      "popPct": 27.7
+     },
+     {
+      "areaPct": 1.9,
+      "key": "3",
+      "popPct": 23.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Spokane",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 159240,
+    "pres2020New": 10.7,
+    "pres2020Old": -4.1,
+    "retainedAreaPct": 40.5,
+    "retainedPopPct": 48.4,
+    "text": "A new footprint: only 48% of its population was in the 2016\u20132020 HD-6; it draws from the old HD-7 (28%), the old HD-3 (24%). Entirely in Spokane County. 2020 presidential margin D+4.1 on the 2016\u20132020 lines \u2192 R+10.7 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 62.0,
+      "key": "7",
+      "popPct": 62.2
+     },
+     {
+      "areaPct": 38.0,
+      "key": "12",
+      "popPct": 37.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stevens",
+      "popPct": 29.2
+     },
+     {
+      "county": "Okanogan",
+      "popPct": 26.7
+     },
+     {
+      "county": "Douglas",
+      "popPct": 22.8
+     },
+     {
+      "county": "Pend Oreille",
+      "popPct": 8.5
+     },
+     {
+      "county": "Spokane",
+      "popPct": 6.1
+     },
+     {
+      "county": "Ferry",
+      "popPct": 4.6
+     },
+     {
+      "county": "Chelan",
+      "popPct": 2.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Douglas",
+      "popPct": 22.8
+     },
+     {
+      "county": "Chelan",
+      "popPct": 2.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157391,
+    "pres2020New": 29.9,
+    "pres2020Old": 33.7,
+    "retainedAreaPct": 62.0,
+    "retainedPopPct": 62.2,
+    "text": "Kept 62% of its population from the 2016\u20132020 HD-7; gained the rest from the old HD-12 (38%). Counties: gained Douglas (23%), Chelan (2%). 2020 presidential margin R+33.7 on the 2016\u20132020 lines \u2192 R+29.9 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 10.0,
+      "key": "8",
+      "popPct": 77.0
+     },
+     {
+      "areaPct": 88.6,
+      "key": "16",
+      "popPct": 14.0
+     },
+     {
+      "areaPct": 1.4,
+      "key": "9",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Benton",
+      "popPct": 86.6
+     },
+     {
+      "county": "Franklin",
+      "popPct": 13.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Franklin",
+      "popPct": 13.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157862,
+    "pres2020New": 22.2,
+    "pres2020Old": 16.7,
+    "retainedAreaPct": 10.0,
+    "retainedPopPct": 77.0,
+    "text": "Kept 77% of its population from the 2016\u20132020 HD-8; gained the rest from the old HD-16 (14%), the old HD-9 (9%). Counties: gained Franklin (13%). 2020 presidential margin R+16.7 on the 2016\u20132020 lines \u2192 R+22.2 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 63.6,
+      "key": "9",
+      "popPct": 59.8
+     },
+     {
+      "areaPct": 2.0,
+      "key": "6",
+      "popPct": 22.3
+     },
+     {
+      "areaPct": 0.3,
+      "key": "4",
+      "popPct": 8.5
+     },
+     {
+      "areaPct": 24.9,
+      "key": "13",
+      "popPct": 6.9
+     },
+     {
+      "areaPct": 9.3,
+      "key": "16",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Spokane",
+      "popPct": 36.7
+     },
+     {
+      "county": "Whitman",
+      "popPct": 31.2
+     },
+     {
+      "county": "Asotin",
+      "popPct": 13.2
+     },
+     {
+      "county": "Adams",
+      "popPct": 8.0
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 6.8
+     },
+     {
+      "county": "Columbia",
+      "popPct": 2.5
+     },
+     {
+      "county": "Garfield",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lincoln",
+      "popPct": 6.8
+     },
+     {
+      "county": "Columbia",
+      "popPct": 2.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Franklin",
+      "popPct": 36.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 158090,
+    "pres2020New": 14.9,
+    "pres2020Old": 17.8,
+    "retainedAreaPct": 63.6,
+    "retainedPopPct": 59.8,
+    "text": "Kept 60% of its population from the 2016\u20132020 HD-9; gained the rest from the old HD-6 (22%), the old HD-4 (8%), the old HD-13 (7%) and 1 more. Counties: gained Lincoln (7%), Columbia (2%); lost Franklin. 2020 presidential margin R+17.8 on the 2016\u20132020 lines \u2192 R+14.9 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 57.0,
+      "key": "1",
+      "popPct": 57.4
+     },
+     {
+      "areaPct": 20.9,
+      "key": "46",
+      "popPct": 23.7
+     },
+     {
+      "areaPct": 16.5,
+      "key": "45",
+      "popPct": 10.5
+     },
+     {
+      "areaPct": 3.0,
+      "key": "21",
+      "popPct": 4.2
+     },
+     {
+      "areaPct": 2.6,
+      "key": "32",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 58.6
+     },
+     {
+      "county": "Snohomish",
+      "popPct": 41.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157533,
+    "pres2020New": -44.3,
+    "pres2020Old": -37.1,
+    "retainedAreaPct": 57.0,
+    "retainedPopPct": 57.4,
+    "text": "Kept 57% of its population from the 2016\u20132020 SD-1; gained the rest from the old SD-46 (24%), the old SD-45 (10%), the old SD-21 (4%) and 1 more. Spans King, Snohomish counties. 2020 presidential margin D+37.1 on the 2016\u20132020 lines \u2192 D+44.3 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 95.6,
+      "key": "10",
+      "popPct": 80.8
+     },
+     {
+      "areaPct": 2.5,
+      "key": "39",
+      "popPct": 13.8
+     },
+     {
+      "areaPct": 1.0,
+      "key": "40",
+      "popPct": 3.2
+     },
+     {
+      "areaPct": 1.0,
+      "key": "38",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Island",
+      "popPct": 55.4
+     },
+     {
+      "county": "Snohomish",
+      "popPct": 32.1
+     },
+     {
+      "county": "Skagit",
+      "popPct": 12.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156738,
+    "pres2020New": -6.0,
+    "pres2020Old": -6.4,
+    "retainedAreaPct": 95.6,
+    "retainedPopPct": 80.8,
+    "text": "Kept 81% of its population from the 2016\u20132020 SD-10; gained the rest from the old SD-39 (14%), the old SD-40 (3%), the old SD-38 (2%). Spans Island, Snohomish, Skagit counties. 2020 presidential margin D+6.4 on the 2016\u20132020 lines \u2192 D+6.0 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 79.5,
+      "key": "11",
+      "popPct": 81.8
+     },
+     {
+      "areaPct": 5.9,
+      "key": "33",
+      "popPct": 6.8
+     },
+     {
+      "areaPct": 7.5,
+      "key": "37",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 7.0,
+      "key": "41",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156711,
+    "pres2020New": -40.9,
+    "pres2020Old": -43.6,
+    "retainedAreaPct": 79.5,
+    "retainedPopPct": 81.8,
+    "text": "Kept 82% of its population from the 2016\u20132020 SD-11; gained the rest from the old SD-33 (7%), the old SD-37 (6%), the old SD-41 (5%). Entirely in King County. 2020 presidential margin D+43.6 on the 2016\u20132020 lines \u2192 D+40.9 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 70.4,
+      "key": "12",
+      "popPct": 48.5
+     },
+     {
+      "areaPct": 19.7,
+      "key": "39",
+      "popPct": 28.7
+     },
+     {
+      "areaPct": 9.7,
+      "key": "5",
+      "popPct": 22.2
+     },
+     {
+      "areaPct": 0.2,
+      "key": "45",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Chelan",
+      "popPct": 48.3
+     },
+     {
+      "county": "Snohomish",
+      "popPct": 28.3
+     },
+     {
+      "county": "King",
+      "popPct": 23.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Snohomish",
+      "popPct": 28.3
+     },
+     {
+      "county": "King",
+      "popPct": 23.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Douglas",
+      "popPct": 28.0
+     },
+     {
+      "county": "Okanogan",
+      "popPct": 13.7
+     },
+     {
+      "county": "Grant",
+      "popPct": 5.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 157863,
+    "pres2020New": -2.6,
+    "pres2020Old": 11.7,
+    "retainedAreaPct": 70.4,
+    "retainedPopPct": 48.5,
+    "text": "A new footprint: only 48% of its population was in the 2016\u20132020 SD-12; it draws from the old SD-39 (29%), the old SD-5 (22%), the old SD-45 (1%). Counties: gained Snohomish (28%), King (23%); lost Douglas, Okanogan, Grant. 2020 presidential margin R+11.7 on the 2016\u20132020 lines \u2192 D+2.6 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 84.9,
+      "key": "13",
+      "popPct": 86.0
+     },
+     {
+      "areaPct": 12.5,
+      "key": "12",
+      "popPct": 8.9
+     },
+     {
+      "areaPct": 2.5,
+      "key": "9",
+      "popPct": 5.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grant",
+      "popPct": 62.2
+     },
+     {
+      "county": "Kittitas",
+      "popPct": 28.5
+     },
+     {
+      "county": "Adams",
+      "popPct": 5.1
+     },
+     {
+      "county": "Douglas",
+      "popPct": 3.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Adams",
+      "popPct": 5.1
+     },
+     {
+      "county": "Douglas",
+      "popPct": 3.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Lincoln",
+      "popPct": 7.2
+     },
+     {
+      "county": "Yakima",
+      "popPct": 2.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 155371,
+    "pres2020New": 24.7,
+    "pres2020Old": 27.1,
+    "retainedAreaPct": 84.9,
+    "retainedPopPct": 86.0,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-13; gained the rest from the old SD-12 (9%), the old SD-9 (5%). Counties: gained Adams (5%), Douglas (4%); lost Lincoln, Yakima. 2020 presidential margin R+27.1 on the 2016\u20132020 lines \u2192 R+24.7 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 15.3,
+      "key": "15",
+      "popPct": 49.7
+     },
+     {
+      "areaPct": 73.4,
+      "key": "14",
+      "popPct": 26.9
+     },
+     {
+      "areaPct": 11.3,
+      "key": "16",
+      "popPct": 23.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Yakima",
+      "popPct": 71.9
+     },
+     {
+      "county": "Franklin",
+      "popPct": 18.1
+     },
+     {
+      "county": "Benton",
+      "popPct": 5.1
+     },
+     {
+      "county": "Klickitat",
+      "popPct": 4.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Franklin",
+      "popPct": 18.1
+     },
+     {
+      "county": "Benton",
+      "popPct": 5.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Skamania",
+      "popPct": 8.2
+     },
+     {
+      "county": "Clark",
+      "popPct": 2.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 156281,
+    "pres2020New": -15.0,
+    "pres2020Old": 8.7,
+    "retainedAreaPct": 73.4,
+    "retainedPopPct": 26.9,
+    "text": "A new footprint: only 27% of its population was in the 2016\u20132020 SD-14; it draws from the old SD-15 (50%), the old SD-16 (23%). Counties: gained Franklin (18%), Benton (5%); lost Skamania, Clark. 2020 presidential margin R+8.7 on the 2016\u20132020 lines \u2192 D+15.0 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 56.5,
+      "key": "14",
+      "popPct": 46.8
+     },
+     {
+      "areaPct": 32.9,
+      "key": "15",
+      "popPct": 42.7
+     },
+     {
+      "areaPct": 8.5,
+      "key": "16",
+      "popPct": 8.1
+     },
+     {
+      "areaPct": 2.1,
+      "key": "13",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Yakima",
+      "popPct": 91.8
+     },
+     {
+      "county": "Benton",
+      "popPct": 8.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Benton",
+      "popPct": 8.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157129,
+    "pres2020New": 20.6,
+    "pres2020Old": 5.5,
+    "retainedAreaPct": 32.9,
+    "retainedPopPct": 42.7,
+    "text": "A new footprint: only 43% of its population was in the 2016\u20132020 SD-15; it draws from the old SD-14 (47%), the old SD-16 (8%), the old SD-13 (2%). Counties: gained Benton (8%). 2020 presidential margin R+5.5 on the 2016\u20132020 lines \u2192 R+20.6 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 44.2,
+      "key": "16",
+      "popPct": 44.8
+     },
+     {
+      "areaPct": 36.5,
+      "key": "9",
+      "popPct": 27.5
+     },
+     {
+      "areaPct": 12.8,
+      "key": "8",
+      "popPct": 26.3
+     },
+     {
+      "areaPct": 6.5,
+      "key": "13",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Walla Walla",
+      "popPct": 38.7
+     },
+     {
+      "county": "Benton",
+      "popPct": 30.7
+     },
+     {
+      "county": "Franklin",
+      "popPct": 29.2
+     },
+     {
+      "county": "Grant",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Columbia",
+      "popPct": 2.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 161364,
+    "pres2020New": 14.9,
+    "pres2020Old": 16.3,
+    "retainedAreaPct": 44.2,
+    "retainedPopPct": 44.8,
+    "text": "A new footprint: only 45% of its population was in the 2016\u20132020 SD-16; it draws from the old SD-9 (28%), the old SD-8 (26%), the old SD-13 (1%). Counties: lost Columbia. 2020 presidential margin R+16.3 on the 2016\u20132020 lines \u2192 R+14.9 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 3.3,
+      "key": "18",
+      "popPct": 44.8
+     },
+     {
+      "areaPct": 0.5,
+      "key": "17",
+      "popPct": 35.4
+     },
+     {
+      "areaPct": 96.2,
+      "key": "14",
+      "popPct": 19.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clark",
+      "popPct": 82.6
+     },
+     {
+      "county": "Klickitat",
+      "popPct": 9.8
+     },
+     {
+      "county": "Skamania",
+      "popPct": 7.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Klickitat",
+      "popPct": 9.8
+     },
+     {
+      "county": "Skamania",
+      "popPct": 7.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157908,
+    "pres2020New": -6.7,
+    "pres2020Old": -3.6,
+    "retainedAreaPct": 0.5,
+    "retainedPopPct": 35.4,
+    "text": "A new footprint: only 35% of its population was in the 2016\u20132020 SD-17; it draws from the old SD-18 (45%), the old SD-14 (20%). Counties: gained Klickitat (10%), Skamania (8%). 2020 presidential margin D+3.6 on the 2016\u20132020 lines \u2192 D+6.7 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 53.6,
+      "key": "17",
+      "popPct": 48.4
+     },
+     {
+      "areaPct": 37.5,
+      "key": "18",
+      "popPct": 30.9
+     },
+     {
+      "areaPct": 8.9,
+      "key": "49",
+      "popPct": 20.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clark",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 155827,
+    "pres2020New": 0.1,
+    "pres2020Old": 3.5,
+    "retainedAreaPct": 37.5,
+    "retainedPopPct": 30.9,
+    "text": "A new footprint: only 31% of its population was in the 2016\u20132020 SD-18; it draws from the old SD-17 (48%), the old SD-49 (21%). Entirely in Clark County. 2020 presidential margin R+3.5 on the 2016\u20132020 lines \u2192 R+0.1 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 86.3,
+      "key": "19",
+      "popPct": 82.4
+     },
+     {
+      "areaPct": 10.0,
+      "key": "20",
+      "popPct": 13.7
+     },
+     {
+      "areaPct": 3.7,
+      "key": "24",
+      "popPct": 3.0
+     },
+     {
+      "areaPct": 0.1,
+      "key": "35",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cowlitz",
+      "popPct": 48.7
+     },
+     {
+      "county": "Grays Harbor",
+      "popPct": 17.6
+     },
+     {
+      "county": "Pacific",
+      "popPct": 14.9
+     },
+     {
+      "county": "Lewis",
+      "popPct": 12.9
+     },
+     {
+      "county": "Thurston",
+      "popPct": 3.2
+     },
+     {
+      "county": "Wahkiakum",
+      "popPct": 2.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Thurston",
+      "popPct": 3.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157234,
+    "pres2020New": 14.3,
+    "pres2020Old": 9.2,
+    "retainedAreaPct": 86.3,
+    "retainedPopPct": 82.4,
+    "text": "Kept 82% of its population from the 2016\u20132020 SD-19; gained the rest from the old SD-20 (14%), the old SD-24 (3%), the old SD-35 (1%). Counties: gained Thurston (3%). 2020 presidential margin R+9.2 on the 2016\u20132020 lines \u2192 R+14.3 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 84.6,
+      "key": "2",
+      "popPct": 77.9
+     },
+     {
+      "areaPct": 0.6,
+      "key": "29",
+      "popPct": 9.1
+     },
+     {
+      "areaPct": 0.6,
+      "key": "28",
+      "popPct": 6.3
+     },
+     {
+      "areaPct": 14.1,
+      "key": "20",
+      "popPct": 6.0
+     },
+     {
+      "areaPct": 0.1,
+      "key": "22",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pierce",
+      "popPct": 57.6
+     },
+     {
+      "county": "Thurston",
+      "popPct": 42.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157911,
+    "pres2020New": 15.0,
+    "pres2020Old": 13.8,
+    "retainedAreaPct": 84.6,
+    "retainedPopPct": 77.9,
+    "text": "Kept 78% of its population from the 2016\u20132020 SD-2; gained the rest from the old SD-29 (9%), the old SD-28 (6%), the old SD-20 (6%) and 1 more. Spans Pierce, Thurston counties. 2020 presidential margin R+13.8 on the 2016\u20132020 lines \u2192 R+15.0 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 91.1,
+      "key": "20",
+      "popPct": 69.2
+     },
+     {
+      "areaPct": 8.0,
+      "key": "18",
+      "popPct": 28.5
+     },
+     {
+      "areaPct": 0.2,
+      "key": "17",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lewis",
+      "popPct": 38.8
+     },
+     {
+      "county": "Clark",
+      "popPct": 37.9
+     },
+     {
+      "county": "Cowlitz",
+      "popPct": 21.2
+     },
+     {
+      "county": "Thurston",
+      "popPct": 2.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 159501,
+    "pres2020New": 27.5,
+    "pres2020Old": 30.0,
+    "retainedAreaPct": 91.1,
+    "retainedPopPct": 69.2,
+    "text": "Kept 69% of its population from the 2016\u20132020 SD-20; gained the rest from the old SD-18 (28%), the old SD-17 (2%). Spans Lewis, Clark, Cowlitz, Thurston counties. 2020 presidential margin R+30.0 on the 2016\u20132020 lines \u2192 R+27.5 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 90.7,
+      "key": "21",
+      "popPct": 90.1
+     },
+     {
+      "areaPct": 2.8,
+      "key": "32",
+      "popPct": 6.0
+     },
+     {
+      "areaPct": 5.2,
+      "key": "38",
+      "popPct": 2.1
+     },
+     {
+      "areaPct": 1.4,
+      "key": "44",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Snohomish",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 158453,
+    "pres2020New": -37.7,
+    "pres2020Old": -36.6,
+    "retainedAreaPct": 90.7,
+    "retainedPopPct": 90.1,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-21; gained the rest from the old SD-32 (6%), the old SD-38 (2%), the old SD-44 (2%). Entirely in Snohomish County. 2020 presidential margin D+36.6 on the 2016\u20132020 lines \u2192 D+37.7 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 97.9,
+      "key": "22",
+      "popPct": 97.7
+     },
+     {
+      "areaPct": 2.1,
+      "key": "35",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Thurston",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157501,
+    "pres2020New": -35.5,
+    "pres2020Old": -35.3,
+    "retainedAreaPct": 97.9,
+    "retainedPopPct": 97.7,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-22; gained the rest from the old SD-35 (2%). Entirely in Thurston County. 2020 presidential margin D+35.3 on the 2016\u20132020 lines \u2192 D+35.5 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 98.1,
+      "key": "23",
+      "popPct": 92.4
+     },
+     {
+      "areaPct": 1.8,
+      "key": "35",
+      "popPct": 6.5
+     },
+     {
+      "areaPct": 0.1,
+      "key": "26",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kitsap",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 158278,
+    "pres2020New": -30.1,
+    "pres2020Old": -29.6,
+    "retainedAreaPct": 98.1,
+    "retainedPopPct": 92.4,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-23; gained the rest from the old SD-35 (6%), the old SD-26 (1%). Entirely in Kitsap County. 2020 presidential margin D+29.6 on the 2016\u20132020 lines \u2192 D+30.1 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "24",
+      "popPct": 90.9
+     },
+     {
+      "areaPct": 0.3,
+      "key": "19",
+      "popPct": 9.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clallam",
+      "popPct": 48.8
+     },
+     {
+      "county": "Grays Harbor",
+      "popPct": 30.3
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 20.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 158107,
+    "pres2020New": -10.7,
+    "pres2020Old": -10.7,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 90.9,
+    "text": "Kept 91% of its population from the 2016\u20132020 SD-24; gained the rest from the old SD-19 (9%). Spans Clallam, Grays Harbor, Jefferson counties. 2020 presidential margin D+10.7 on the 2016\u20132020 lines \u2192 D+10.7 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 86.3,
+      "key": "25",
+      "popPct": 83.8
+     },
+     {
+      "areaPct": 9.1,
+      "key": "2",
+      "popPct": 14.8
+     },
+     {
+      "areaPct": 4.6,
+      "key": "31",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pierce",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 158805,
+    "pres2020New": -1.8,
+    "pres2020Old": -3.8,
+    "retainedAreaPct": 86.3,
+    "retainedPopPct": 83.8,
+    "text": "Kept 84% of its population from the 2016\u20132020 SD-25; gained the rest from the old SD-2 (15%), the old SD-31 (1%). Entirely in Pierce County. 2020 presidential margin D+3.8 on the 2016\u20132020 lines \u2192 D+1.8 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 88.8,
+      "key": "26",
+      "popPct": 95.5
+     },
+     {
+      "areaPct": 11.2,
+      "key": "35",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kitsap",
+      "popPct": 55.5
+     },
+     {
+      "county": "Pierce",
+      "popPct": 44.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157950,
+    "pres2020New": -5.6,
+    "pres2020Old": -6.0,
+    "retainedAreaPct": 88.8,
+    "retainedPopPct": 95.5,
+    "text": "Kept 96% of its population from the 2016\u20132020 SD-26; gained the rest from the old SD-35 (4%). Spans Kitsap, Pierce counties. 2020 presidential margin D+6.0 on the 2016\u20132020 lines \u2192 D+5.6 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 77.3,
+      "key": "27",
+      "popPct": 73.8
+     },
+     {
+      "areaPct": 6.1,
+      "key": "29",
+      "popPct": 9.8
+     },
+     {
+      "areaPct": 7.0,
+      "key": "28",
+      "popPct": 9.4
+     },
+     {
+      "areaPct": 9.5,
+      "key": "25",
+      "popPct": 7.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pierce",
+      "popPct": 98.5
+     },
+     {
+      "county": "King",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156297,
+    "pres2020New": -43.1,
+    "pres2020Old": -43.4,
+    "retainedAreaPct": 77.3,
+    "retainedPopPct": 73.8,
+    "text": "Kept 74% of its population from the 2016\u20132020 SD-27; gained the rest from the old SD-29 (10%), the old SD-28 (9%), the old SD-25 (7%). Spans Pierce, King counties. 2020 presidential margin D+43.4 on the 2016\u20132020 lines \u2192 D+43.1 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 97.1,
+      "key": "28",
+      "popPct": 82.7
+     },
+     {
+      "areaPct": 2.9,
+      "key": "29",
+      "popPct": 17.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pierce",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 158495,
+    "pres2020New": -20.6,
+    "pres2020Old": -19.1,
+    "retainedAreaPct": 97.1,
+    "retainedPopPct": 82.7,
+    "text": "Kept 83% of its population from the 2016\u20132020 SD-28; gained the rest from the old SD-29 (17%). Entirely in Pierce County. 2020 presidential margin D+19.1 on the 2016\u20132020 lines \u2192 D+20.6 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 69.1,
+      "key": "29",
+      "popPct": 67.0
+     },
+     {
+      "areaPct": 18.2,
+      "key": "27",
+      "popPct": 22.8
+     },
+     {
+      "areaPct": 12.5,
+      "key": "25",
+      "popPct": 10.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pierce",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 153208,
+    "pres2020New": -23.6,
+    "pres2020Old": -21.6,
+    "retainedAreaPct": 69.1,
+    "retainedPopPct": 67.0,
+    "text": "Kept 67% of its population from the 2016\u20132020 SD-29; gained the rest from the old SD-27 (23%), the old SD-25 (10%). Entirely in Pierce County. 2020 presidential margin D+21.6 on the 2016\u20132020 lines \u2192 D+23.6 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 59.2,
+      "key": "3",
+      "popPct": 68.8
+     },
+     {
+      "areaPct": 40.8,
+      "key": "6",
+      "popPct": 31.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Spokane",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156314,
+    "pres2020New": -23.4,
+    "pres2020Old": -18.5,
+    "retainedAreaPct": 59.2,
+    "retainedPopPct": 68.8,
+    "text": "Kept 69% of its population from the 2016\u20132020 SD-3; gained the rest from the old SD-6 (31%). Entirely in Spokane County. 2020 presidential margin D+18.5 on the 2016\u20132020 lines \u2192 D+23.4 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 94.6,
+      "key": "30",
+      "popPct": 93.3
+     },
+     {
+      "areaPct": 1.5,
+      "key": "31",
+      "popPct": 3.9
+     },
+     {
+      "areaPct": 3.6,
+      "key": "47",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Pierce",
+      "popPct": 4.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 157016,
+    "pres2020New": -23.0,
+    "pres2020Old": -22.3,
+    "retainedAreaPct": 94.6,
+    "retainedPopPct": 93.3,
+    "text": "Kept 93% of its population from the 2016\u20132020 SD-30; gained the rest from the old SD-31 (4%), the old SD-47 (2%). Counties: lost Pierce. 2020 presidential margin D+22.3 on the 2016\u20132020 lines \u2192 D+23.0 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 93.6,
+      "key": "31",
+      "popPct": 85.1
+     },
+     {
+      "areaPct": 5.6,
+      "key": "2",
+      "popPct": 9.1
+     },
+     {
+      "areaPct": 0.6,
+      "key": "30",
+      "popPct": 5.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pierce",
+      "popPct": 85.1
+     },
+     {
+      "county": "King",
+      "popPct": 14.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156156,
+    "pres2020New": 6.8,
+    "pres2020Old": 5.7,
+    "retainedAreaPct": 93.6,
+    "retainedPopPct": 85.1,
+    "text": "Kept 85% of its population from the 2016\u20132020 SD-31; gained the rest from the old SD-2 (9%), the old SD-30 (5%). Spans Pierce, King counties. 2020 presidential margin R+5.7 on the 2016\u20132020 lines \u2192 R+6.8 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 91.6,
+      "key": "32",
+      "popPct": 85.3
+     },
+     {
+      "areaPct": 7.7,
+      "key": "1",
+      "popPct": 13.1
+     },
+     {
+      "areaPct": 0.5,
+      "key": "46",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Snohomish",
+      "popPct": 50.6
+     },
+     {
+      "county": "King",
+      "popPct": 49.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157197,
+    "pres2020New": -54.0,
+    "pres2020Old": -53.7,
+    "retainedAreaPct": 91.6,
+    "retainedPopPct": 85.3,
+    "text": "Kept 85% of its population from the 2016\u20132020 SD-32; gained the rest from the old SD-1 (13%), the old SD-46 (1%). Spans Snohomish, King counties. 2020 presidential margin D+53.7 on the 2016\u20132020 lines \u2192 D+54.0 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 83.7,
+      "key": "33",
+      "popPct": 86.7
+     },
+     {
+      "areaPct": 16.2,
+      "key": "34",
+      "popPct": 13.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156325,
+    "pres2020New": -41.2,
+    "pres2020Old": -40.3,
+    "retainedAreaPct": 83.7,
+    "retainedPopPct": 86.7,
+    "text": "Kept 87% of its population from the 2016\u20132020 SD-33; gained the rest from the old SD-34 (13%). Entirely in King County. 2020 presidential margin D+40.3 on the 2016\u20132020 lines \u2192 D+41.2 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 92.8,
+      "key": "34",
+      "popPct": 85.4
+     },
+     {
+      "areaPct": 1.6,
+      "key": "33",
+      "popPct": 6.2
+     },
+     {
+      "areaPct": 4.6,
+      "key": "11",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 0.7,
+      "key": "37",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 0.3,
+      "key": "43",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 158383,
+    "pres2020New": -69.4,
+    "pres2020Old": -67.4,
+    "retainedAreaPct": 92.8,
+    "retainedPopPct": 85.4,
+    "text": "Kept 85% of its population from the 2016\u20132020 SD-34; gained the rest from the old SD-33 (6%), the old SD-11 (4%), the old SD-37 (3%) and 1 more. Entirely in King County. 2020 presidential margin D+67.4 on the 2016\u20132020 lines \u2192 D+69.4 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 93.9,
+      "key": "35",
+      "popPct": 80.9
+     },
+     {
+      "areaPct": 5.0,
+      "key": "20",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 0.1,
+      "key": "22",
+      "popPct": 5.3
+     },
+     {
+      "areaPct": 0.5,
+      "key": "2",
+      "popPct": 2.8
+     },
+     {
+      "areaPct": 0.2,
+      "key": "23",
+      "popPct": 2.5
+     },
+     {
+      "areaPct": 0.2,
+      "key": "26",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Mason",
+      "popPct": 42.0
+     },
+     {
+      "county": "Thurston",
+      "popPct": 39.0
+     },
+     {
+      "county": "Kitsap",
+      "popPct": 19.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156437,
+    "pres2020New": 0.8,
+    "pres2020Old": -0.4,
+    "retainedAreaPct": 93.9,
+    "retainedPopPct": 80.9,
+    "text": "Kept 81% of its population from the 2016\u20132020 SD-35; gained the rest from the old SD-20 (7%), the old SD-22 (5%), the old SD-2 (3%) and 2 more. Spans Mason, Thurston, Kitsap counties. 2020 presidential margin D+0.4 on the 2016\u20132020 lines \u2192 R+0.8 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 97.1,
+      "key": "36",
+      "popPct": 93.5
+     },
+     {
+      "areaPct": 2.8,
+      "key": "43",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157529,
+    "pres2020New": -80.8,
+    "pres2020Old": -79.7,
+    "retainedAreaPct": 97.1,
+    "retainedPopPct": 93.5,
+    "text": "Kept 94% of its population from the 2016\u20132020 SD-36; gained the rest from the old SD-43 (6%). Entirely in King County. 2020 presidential margin D+79.7 on the 2016\u20132020 lines \u2192 D+80.8 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 90.4,
+      "key": "37",
+      "popPct": 90.7
+     },
+     {
+      "areaPct": 9.3,
+      "key": "11",
+      "popPct": 8.4
+     },
+     {
+      "areaPct": 0.3,
+      "key": "43",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156080,
+    "pres2020New": -77.1,
+    "pres2020Old": -76.0,
+    "retainedAreaPct": 90.4,
+    "retainedPopPct": 90.7,
+    "text": "Kept 91% of its population from the 2016\u20132020 SD-37; gained the rest from the old SD-11 (8%), the old SD-43 (1%). Entirely in King County. 2020 presidential margin D+76.0 on the 2016\u20132020 lines \u2192 D+77.1 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 94.9,
+      "key": "38",
+      "popPct": 83.0
+     },
+     {
+      "areaPct": 4.0,
+      "key": "44",
+      "popPct": 11.0
+     },
+     {
+      "areaPct": 0.9,
+      "key": "21",
+      "popPct": 4.7
+     },
+     {
+      "areaPct": 0.2,
+      "key": "39",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Snohomish",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 155651,
+    "pres2020New": -20.9,
+    "pres2020Old": -21.1,
+    "retainedAreaPct": 94.9,
+    "retainedPopPct": 83.0,
+    "text": "Kept 83% of its population from the 2016\u20132020 SD-38; gained the rest from the old SD-44 (11%), the old SD-21 (5%), the old SD-39 (1%). Entirely in Snohomish County. 2020 presidential margin D+21.1 on the 2016\u20132020 lines \u2192 D+20.9 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 90.6,
+      "key": "39",
+      "popPct": 50.7
+     },
+     {
+      "areaPct": 1.5,
+      "key": "44",
+      "popPct": 33.0
+     },
+     {
+      "areaPct": 7.2,
+      "key": "10",
+      "popPct": 8.3
+     },
+     {
+      "areaPct": 0.2,
+      "key": "38",
+      "popPct": 6.3
+     },
+     {
+      "areaPct": 0.5,
+      "key": "40",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Snohomish",
+      "popPct": 74.1
+     },
+     {
+      "county": "Skagit",
+      "popPct": 25.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157909,
+    "pres2020New": 6.1,
+    "pres2020Old": 8.8,
+    "retainedAreaPct": 90.6,
+    "retainedPopPct": 50.7,
+    "text": "Kept 51% of its population from the 2016\u20132020 SD-39; gained the rest from the old SD-44 (33%), the old SD-10 (8%), the old SD-38 (6%) and 1 more. Spans Snohomish, Skagit counties. 2020 presidential margin R+8.8 on the 2016\u20132020 lines \u2192 R+6.1 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 73.5,
+      "key": "4",
+      "popPct": 95.3
+     },
+     {
+      "areaPct": 26.5,
+      "key": "7",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Spokane",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156564,
+    "pres2020New": 18.5,
+    "pres2020Old": 17.9,
+    "retainedAreaPct": 73.5,
+    "retainedPopPct": 95.3,
+    "text": "Kept 95% of its population from the 2016\u20132020 SD-4; gained the rest from the old SD-7 (5%). Entirely in Spokane County. 2020 presidential margin R+17.9 on the 2016\u20132020 lines \u2192 R+18.5 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 97.3,
+      "key": "40",
+      "popPct": 89.2
+     },
+     {
+      "areaPct": 2.4,
+      "key": "10",
+      "popPct": 8.4
+     },
+     {
+      "areaPct": 0.3,
+      "key": "42",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Whatcom",
+      "popPct": 45.0
+     },
+     {
+      "county": "Skagit",
+      "popPct": 43.7
+     },
+     {
+      "county": "San Juan",
+      "popPct": 11.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157112,
+    "pres2020New": -38.0,
+    "pres2020Old": -39.2,
+    "retainedAreaPct": 97.3,
+    "retainedPopPct": 89.2,
+    "text": "Kept 89% of its population from the 2016\u20132020 SD-40; gained the rest from the old SD-10 (8%), the old SD-42 (2%). Spans Whatcom, Skagit, San Juan counties. 2020 presidential margin D+39.2 on the 2016\u20132020 lines \u2192 D+38.0 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 85.1,
+      "key": "41",
+      "popPct": 83.7
+     },
+     {
+      "areaPct": 10.3,
+      "key": "48",
+      "popPct": 10.8
+     },
+     {
+      "areaPct": 4.3,
+      "key": "45",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157348,
+    "pres2020New": -46.4,
+    "pres2020Old": -45.8,
+    "retainedAreaPct": 85.1,
+    "retainedPopPct": 83.7,
+    "text": "Kept 84% of its population from the 2016\u20132020 SD-41; gained the rest from the old SD-48 (11%), the old SD-45 (5%). Entirely in King County. 2020 presidential margin D+45.8 on the 2016\u20132020 lines \u2192 D+46.4 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "42",
+      "popPct": 98.7
+     },
+     {
+      "areaPct": 0.1,
+      "key": "40",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Whatcom",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156434,
+    "pres2020New": -9.7,
+    "pres2020Old": -10.0,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 98.7,
+    "text": "Kept 99% of its population from the 2016\u20132020 SD-42; gained the rest from the old SD-40 (1%). Entirely in Whatcom County. 2020 presidential margin D+10.0 on the 2016\u20132020 lines \u2192 D+9.7 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 62.2,
+      "key": "43",
+      "popPct": 78.7
+     },
+     {
+      "areaPct": 11.9,
+      "key": "36",
+      "popPct": 14.7
+     },
+     {
+      "areaPct": 17.9,
+      "key": "46",
+      "popPct": 4.3
+     },
+     {
+      "areaPct": 7.9,
+      "key": "37",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156395,
+    "pres2020New": -83.3,
+    "pres2020Old": -84.7,
+    "retainedAreaPct": 62.2,
+    "retainedPopPct": 78.7,
+    "text": "Kept 79% of its population from the 2016\u20132020 SD-43; gained the rest from the old SD-36 (15%), the old SD-46 (4%), the old SD-37 (2%). Entirely in King County. 2020 presidential margin D+84.7 on the 2016\u20132020 lines \u2192 D+83.3 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 46.7,
+      "key": "44",
+      "popPct": 58.1
+     },
+     {
+      "areaPct": 30.4,
+      "key": "1",
+      "popPct": 32.2
+     },
+     {
+      "areaPct": 21.6,
+      "key": "39",
+      "popPct": 4.1
+     },
+     {
+      "areaPct": 0.8,
+      "key": "21",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 0.6,
+      "key": "38",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Snohomish",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156310,
+    "pres2020New": -21.4,
+    "pres2020Old": -15.8,
+    "retainedAreaPct": 46.7,
+    "retainedPopPct": 58.1,
+    "text": "Kept 58% of its population from the 2016\u20132020 SD-44; gained the rest from the old SD-1 (32%), the old SD-39 (4%), the old SD-21 (4%) and 1 more. Entirely in Snohomish County. 2020 presidential margin D+15.8 on the 2016\u20132020 lines \u2192 D+21.4 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 79.5,
+      "key": "45",
+      "popPct": 84.8
+     },
+     {
+      "areaPct": 1.6,
+      "key": "48",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 3.3,
+      "key": "1",
+      "popPct": 6.2
+     },
+     {
+      "areaPct": 15.6,
+      "key": "5",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157237,
+    "pres2020New": -44.4,
+    "pres2020Old": -43.8,
+    "retainedAreaPct": 79.5,
+    "retainedPopPct": 84.8,
+    "text": "Kept 85% of its population from the 2016\u20132020 SD-45; gained the rest from the old SD-48 (7%), the old SD-1 (6%), the old SD-5 (2%). Entirely in King County. 2020 presidential margin D+43.8 on the 2016\u20132020 lines \u2192 D+44.4 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 83.1,
+      "key": "46",
+      "popPct": 69.4
+     },
+     {
+      "areaPct": 14.9,
+      "key": "43",
+      "popPct": 27.1
+     },
+     {
+      "areaPct": 1.8,
+      "key": "36",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156809,
+    "pres2020New": -79.7,
+    "pres2020Old": -72.7,
+    "retainedAreaPct": 83.1,
+    "retainedPopPct": 69.4,
+    "text": "Kept 69% of its population from the 2016\u20132020 SD-46; gained the rest from the old SD-43 (27%), the old SD-36 (3%). Entirely in King County. 2020 presidential margin D+72.7 on the 2016\u20132020 lines \u2192 D+79.7 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 83.4,
+      "key": "47",
+      "popPct": 94.6
+     },
+     {
+      "areaPct": 6.9,
+      "key": "31",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 9.5,
+      "key": "5",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157162,
+    "pres2020New": -19.6,
+    "pres2020Old": -19.6,
+    "retainedAreaPct": 83.4,
+    "retainedPopPct": 94.6,
+    "text": "Kept 95% of its population from the 2016\u20132020 SD-47; gained the rest from the old SD-31 (4%), the old SD-5 (2%). Entirely in King County. 2020 presidential margin D+19.6 on the 2016\u20132020 lines \u2192 D+19.6 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 92.0,
+      "key": "48",
+      "popPct": 88.7
+     },
+     {
+      "areaPct": 6.9,
+      "key": "41",
+      "popPct": 10.3
+     },
+     {
+      "areaPct": 1.1,
+      "key": "45",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157774,
+    "pres2020New": -47.7,
+    "pres2020Old": -47.7,
+    "retainedAreaPct": 92.0,
+    "retainedPopPct": 88.7,
+    "text": "Kept 89% of its population from the 2016\u20132020 SD-48; gained the rest from the old SD-41 (10%), the old SD-45 (1%). Entirely in King County. 2020 presidential margin D+47.7 on the 2016\u20132020 lines \u2192 D+47.7 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 87.6,
+      "key": "49",
+      "popPct": 79.3
+     },
+     {
+      "areaPct": 12.4,
+      "key": "17",
+      "popPct": 20.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Clark",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 156772,
+    "pres2020New": -22.3,
+    "pres2020Old": -22.7,
+    "retainedAreaPct": 87.6,
+    "retainedPopPct": 79.3,
+    "text": "Kept 79% of its population from the 2016\u20132020 SD-49; gained the rest from the old SD-17 (21%). Entirely in Clark County. 2020 presidential margin D+22.7 on the 2016\u20132020 lines \u2192 D+22.3 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 45.6,
+      "key": "5",
+      "popPct": 76.4
+     },
+     {
+      "areaPct": 51.6,
+      "key": "31",
+      "popPct": 11.5
+     },
+     {
+      "areaPct": 1.0,
+      "key": "47",
+      "popPct": 4.3
+     },
+     {
+      "areaPct": 0.8,
+      "key": "11",
+      "popPct": 4.0
+     },
+     {
+      "areaPct": 1.0,
+      "key": "41",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "King",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157316,
+    "pres2020New": -18.6,
+    "pres2020Old": -23.3,
+    "retainedAreaPct": 45.6,
+    "retainedPopPct": 76.4,
+    "text": "Kept 76% of its population from the 2016\u20132020 SD-5; gained the rest from the old SD-31 (12%), the old SD-47 (4%), the old SD-11 (4%) and 1 more. Entirely in King County. 2020 presidential margin D+23.3 on the 2016\u20132020 lines \u2192 D+18.6 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 40.5,
+      "key": "6",
+      "popPct": 48.4
+     },
+     {
+      "areaPct": 57.7,
+      "key": "7",
+      "popPct": 27.7
+     },
+     {
+      "areaPct": 1.9,
+      "key": "3",
+      "popPct": 23.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Spokane",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 159240,
+    "pres2020New": 10.7,
+    "pres2020Old": -4.1,
+    "retainedAreaPct": 40.5,
+    "retainedPopPct": 48.4,
+    "text": "A new footprint: only 48% of its population was in the 2016\u20132020 SD-6; it draws from the old SD-7 (28%), the old SD-3 (24%). Entirely in Spokane County. 2020 presidential margin D+4.1 on the 2016\u20132020 lines \u2192 R+10.7 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 62.0,
+      "key": "7",
+      "popPct": 62.2
+     },
+     {
+      "areaPct": 38.0,
+      "key": "12",
+      "popPct": 37.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Stevens",
+      "popPct": 29.2
+     },
+     {
+      "county": "Okanogan",
+      "popPct": 26.7
+     },
+     {
+      "county": "Douglas",
+      "popPct": 22.8
+     },
+     {
+      "county": "Pend Oreille",
+      "popPct": 8.5
+     },
+     {
+      "county": "Spokane",
+      "popPct": 6.1
+     },
+     {
+      "county": "Ferry",
+      "popPct": 4.6
+     },
+     {
+      "county": "Chelan",
+      "popPct": 2.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Douglas",
+      "popPct": 22.8
+     },
+     {
+      "county": "Chelan",
+      "popPct": 2.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157391,
+    "pres2020New": 29.9,
+    "pres2020Old": 33.7,
+    "retainedAreaPct": 62.0,
+    "retainedPopPct": 62.2,
+    "text": "Kept 62% of its population from the 2016\u20132020 SD-7; gained the rest from the old SD-12 (38%). Counties: gained Douglas (23%), Chelan (2%). 2020 presidential margin R+33.7 on the 2016\u20132020 lines \u2192 R+29.9 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 10.0,
+      "key": "8",
+      "popPct": 77.0
+     },
+     {
+      "areaPct": 88.6,
+      "key": "16",
+      "popPct": 14.0
+     },
+     {
+      "areaPct": 1.4,
+      "key": "9",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Benton",
+      "popPct": 86.6
+     },
+     {
+      "county": "Franklin",
+      "popPct": 13.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Franklin",
+      "popPct": 13.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 157862,
+    "pres2020New": 22.2,
+    "pres2020Old": 16.7,
+    "retainedAreaPct": 10.0,
+    "retainedPopPct": 77.0,
+    "text": "Kept 77% of its population from the 2016\u20132020 SD-8; gained the rest from the old SD-16 (14%), the old SD-9 (9%). Counties: gained Franklin (13%). 2020 presidential margin R+16.7 on the 2016\u20132020 lines \u2192 R+22.2 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 63.6,
+      "key": "9",
+      "popPct": 59.8
+     },
+     {
+      "areaPct": 2.0,
+      "key": "6",
+      "popPct": 22.3
+     },
+     {
+      "areaPct": 0.3,
+      "key": "4",
+      "popPct": 8.5
+     },
+     {
+      "areaPct": 24.9,
+      "key": "13",
+      "popPct": 6.9
+     },
+     {
+      "areaPct": 9.3,
+      "key": "16",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Spokane",
+      "popPct": 36.7
+     },
+     {
+      "county": "Whitman",
+      "popPct": 31.2
+     },
+     {
+      "county": "Asotin",
+      "popPct": 13.2
+     },
+     {
+      "county": "Adams",
+      "popPct": 8.0
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 6.8
+     },
+     {
+      "county": "Columbia",
+      "popPct": 2.5
+     },
+     {
+      "county": "Garfield",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lincoln",
+      "popPct": 6.8
+     },
+     {
+      "county": "Columbia",
+      "popPct": 2.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Franklin",
+      "popPct": 36.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 158090,
+    "pres2020New": 14.9,
+    "pres2020Old": 17.8,
+    "retainedAreaPct": 63.6,
+    "retainedPopPct": 59.8,
+    "text": "Kept 60% of its population from the 2016\u20132020 SD-9; gained the rest from the old SD-6 (22%), the old SD-4 (8%), the old SD-13 (7%) and 1 more. Counties: gained Lincoln (7%), Columbia (2%); lost Franklin. 2020 presidential margin R+17.8 on the 2016\u20132020 lines \u2192 R+14.9 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

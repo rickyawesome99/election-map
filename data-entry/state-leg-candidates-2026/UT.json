@@ -1,0 +1,1241 @@
+{
+ "house": {
+  "1": {
+   "candidates": [
+    {
+     "name": "Chris Reid",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Thomas Peterson",
+     "party": "R"
+    },
+    {
+     "name": "Jason O'Dell",
+     "party": "O",
+     "partyLabel": "Constitution Party"
+    }
+   ]
+  },
+  "10": {
+   "candidates": [
+    {
+     "name": "Rosemary Lesser",
+     "party": "D"
+    },
+    {
+     "name": "Jim Alvey",
+     "party": "R"
+    }
+   ]
+  },
+  "11": {
+   "candidates": [
+    {
+     "name": "Dave Calder",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Katy Hall",
+     "party": "R"
+    }
+   ]
+  },
+  "12": {
+   "candidates": [
+    {
+     "name": "Anna Graff",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mike Schultz",
+     "party": "R"
+    }
+   ]
+  },
+  "13": {
+   "candidates": [
+    {
+     "name": "Jeffrey Anderson",
+     "party": "D"
+    },
+    {
+     "name": "Erik Craythorne",
+     "party": "R"
+    },
+    {
+     "name": "Tony De Mille",
+     "party": "O",
+     "partyLabel": "Utah Forward Party"
+    }
+   ]
+  },
+  "14": {
+   "candidates": [
+    {
+     "name": "Brandon Young",
+     "party": "D"
+    },
+    {
+     "name": "John Taylor",
+     "party": "R"
+    }
+   ]
+  },
+  "15": {
+   "candidates": [
+    {
+     "name": "Anne Berbert",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Ariel Defay",
+     "party": "R"
+    }
+   ]
+  },
+  "16": {
+   "candidates": [
+    {
+     "name": "Abigail Treasure",
+     "party": "D"
+    },
+    {
+     "name": "Bob Stevenson",
+     "party": "R"
+    }
+   ]
+  },
+  "17": {
+   "candidates": [
+    {
+     "name": "Eric Last",
+     "party": "D"
+    },
+    {
+     "name": "Lili Bitner",
+     "party": "R"
+    }
+   ]
+  },
+  "18": {
+   "candidates": [
+    {
+     "name": "Scott Troxel",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Paul Cutler",
+     "party": "R"
+    }
+   ]
+  },
+  "19": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Raymond Ward",
+     "party": "R"
+    }
+   ]
+  },
+  "2": {
+   "candidates": [
+    {
+     "name": "Barbara Haggerty",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mike Petersen",
+     "party": "R"
+    }
+   ]
+  },
+  "20": {
+   "candidates": [
+    {
+     "name": "Phil Graves",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Melissa Ballard",
+     "party": "R"
+    }
+   ]
+  },
+  "21": {
+   "candidates": [
+    {
+     "name": "Stephen Otterstrom",
+     "party": "D"
+    }
+   ]
+  },
+  "22": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jen Dailey-Provost",
+     "party": "D"
+    },
+    {
+     "name": "Char Varga",
+     "party": "R"
+    }
+   ]
+  },
+  "23": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Hoang Nguyen",
+     "party": "D"
+    },
+    {
+     "name": "Franklin Robinson",
+     "party": "R"
+    },
+    {
+     "name": "Cabot Nelson",
+     "party": "O",
+     "partyLabel": "Utah Forward Party"
+    }
+   ]
+  },
+  "24": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Grant Amjad Miller",
+     "party": "D"
+    },
+    {
+     "name": "Braeden Oswald",
+     "party": "R"
+    }
+   ]
+  },
+  "25": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Angela Romero",
+     "party": "D"
+    },
+    {
+     "name": "Richard Nowak",
+     "party": "R"
+    }
+   ]
+  },
+  "26": {
+   "candidates": [
+    {
+     "name": "Michael Finch",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Matt MacPherson",
+     "party": "R"
+    }
+   ]
+  },
+  "27": {
+   "candidates": [
+    {
+     "name": "Liz Oates",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Anthony Loubet",
+     "party": "R"
+    }
+   ]
+  },
+  "28": {
+   "candidates": [
+    {
+     "name": "Anita Dalrymple",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Nicholeen Peck",
+     "party": "R"
+    },
+    {
+     "name": "Wales Nematollahi",
+     "party": "O",
+     "partyLabel": "Utah Forward Party"
+    }
+   ]
+  },
+  "29": {
+   "candidates": [
+    {
+     "name": "Sara Snow",
+     "party": "D"
+    },
+    {
+     "name": "Sheldon Birch",
+     "party": "R"
+    },
+    {
+     "name": "Jonathan Garrard",
+     "party": "O",
+     "partyLabel": "Constitution Party"
+    },
+    {
+     "name": "Tynley Bean",
+     "party": "O",
+     "partyLabel": "Utah Forward Party"
+    }
+   ]
+  },
+  "3": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jason Thompson",
+     "party": "R"
+    },
+    {
+     "name": "Patrick Belmont",
+     "party": "O",
+     "partyLabel": "Unaffiliated"
+    }
+   ]
+  },
+  "30": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jake Fitisemanu",
+     "party": "D"
+    },
+    {
+     "name": "Dave Parke",
+     "party": "R"
+    }
+   ]
+  },
+  "31": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Verona Mauga",
+     "party": "D"
+    },
+    {
+     "name": "Melody Jones",
+     "party": "R"
+    }
+   ]
+  },
+  "32": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Sahara Hayes",
+     "party": "D"
+    },
+    {
+     "name": "Aileen Hampton",
+     "party": "R"
+    }
+   ]
+  },
+  "33": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Doug Owens",
+     "party": "D"
+    },
+    {
+     "name": "Anna Reeves",
+     "party": "R"
+    }
+   ]
+  },
+  "34": {
+   "candidates": [
+    {
+     "name": "Julie Jackson",
+     "party": "D"
+    }
+   ]
+  },
+  "35": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Rosalba Dominguez",
+     "party": "D"
+    },
+    {
+     "name": "Monique Ketcham",
+     "party": "R"
+    }
+   ]
+  },
+  "36": {
+   "candidates": [
+    {
+     "name": "Blake Townsend",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jim Dunnigan",
+     "party": "R"
+    }
+   ]
+  },
+  "37": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Ashlee Matthews",
+     "party": "D"
+    },
+    {
+     "name": "Casey Saxton",
+     "party": "R"
+    }
+   ]
+  },
+  "38": {
+   "candidates": [
+    {
+     "name": "Chris McConnehey",
+     "party": "R"
+    },
+    {
+     "name": "Sergio Sotelo",
+     "party": "O",
+     "partyLabel": "Unaffiliated"
+    }
+   ]
+  },
+  "39": {
+   "candidates": [
+    {
+     "name": "Drew Howells",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Ken Ivory",
+     "party": "R"
+    }
+   ]
+  },
+  "4": {
+   "candidates": [
+    {
+     "name": "Zane Woolstenhulme",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Tiara Auxier",
+     "party": "R"
+    }
+   ]
+  },
+  "40": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Andrew Stoddard",
+     "party": "D"
+    }
+   ]
+  },
+  "41": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "John Arthur",
+     "party": "D"
+    },
+    {
+     "name": "Darren Croft",
+     "party": "R"
+    }
+   ]
+  },
+  "42": {
+   "candidates": [
+    {
+     "name": "Iva Williams",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Clint Okerlund",
+     "party": "R"
+    }
+   ]
+  },
+  "43": {
+   "candidates": [
+    {
+     "name": "Ofa Matagi",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Steven Eliason",
+     "party": "R"
+    }
+   ]
+  },
+  "44": {
+   "candidates": [
+    {
+     "name": "Jess Birtcher",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jordan Teuscher",
+     "party": "R"
+    }
+   ]
+  },
+  "45": {
+   "candidates": [
+    {
+     "name": "Rod Moser",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Tracy Miller",
+     "party": "R"
+    }
+   ]
+  },
+  "46": {
+   "candidates": [
+    {
+     "name": "Braxten Rutherford",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Cal Roberts",
+     "party": "R"
+    }
+   ]
+  },
+  "47": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Mark Strong",
+     "party": "R"
+    }
+   ]
+  },
+  "48": {
+   "candidates": [
+    {
+     "name": "Benyde Walker",
+     "party": "D"
+    },
+    {
+     "name": "Jake Hunsaker",
+     "party": "R"
+    }
+   ]
+  },
+  "49": {
+   "candidates": [
+    {
+     "name": "Lillian Bowles",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Candice Pierucci",
+     "party": "R"
+    }
+   ]
+  },
+  "5": {
+   "candidates": [
+    {
+     "name": "Kendra Penry",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Casey Snider",
+     "party": "R"
+    }
+   ]
+  },
+  "50": {
+   "candidates": [
+    {
+     "name": "Kristin Meyer",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Stephanie Gricius",
+     "party": "R"
+    }
+   ]
+  },
+  "51": {
+   "candidates": [
+    {
+     "name": "Brett Nielsen",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Leah Hansen",
+     "party": "R"
+    }
+   ]
+  },
+  "52": {
+   "candidates": [
+    {
+     "name": "Nicole Melling",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Cory Maloy",
+     "party": "R"
+    },
+    {
+     "name": "Charlie Tautuaa",
+     "party": "O",
+     "partyLabel": "Unaffiliated",
+     "writeIn": true
+    }
+   ]
+  },
+  "53": {
+   "candidates": [
+    {
+     "name": "Kevin Slater",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Kay Christofferson",
+     "party": "R"
+    },
+    {
+     "name": "John Boyd",
+     "party": "O",
+     "partyLabel": "Utah Forward Party"
+    }
+   ]
+  },
+  "54": {
+   "candidates": [
+    {
+     "name": "Kristina Robinson",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Kristen Chevrier",
+     "party": "R"
+    }
+   ]
+  },
+  "55": {
+   "candidates": [
+    {
+     "name": "Travis Hysell",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jon Hawkins",
+     "party": "R"
+    }
+   ]
+  },
+  "56": {
+   "candidates": [
+    {
+     "name": "Natassja Grossman",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Val Peterson",
+     "party": "R"
+    }
+   ]
+  },
+  "57": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Nelson Abbott",
+     "party": "R"
+    },
+    {
+     "name": "Nancy Lee Peterson",
+     "party": "O",
+     "partyLabel": "Unaffiliated",
+     "writeIn": true
+    }
+   ]
+  },
+  "58": {
+   "candidates": [
+    {
+     "name": "Karli Black",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "David Shallenberger",
+     "party": "R"
+    }
+   ]
+  },
+  "59": {
+   "candidates": [
+    {
+     "name": "Celeste Johnson",
+     "party": "D"
+    },
+    {
+     "name": "Luke Searle",
+     "party": "R"
+    }
+   ]
+  },
+  "6": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Robert Bishop",
+     "party": "R"
+    },
+    {
+     "name": "James Rich",
+     "party": "O",
+     "partyLabel": "Utah Forward Party"
+    }
+   ]
+  },
+  "60": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Grant Pace",
+     "party": "R"
+    }
+   ]
+  },
+  "61": {
+   "candidates": [
+    {
+     "name": "Alan Jimenez",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Lisa Shepherd",
+     "party": "R"
+    },
+    {
+     "name": "Jennifer Doud",
+     "party": "O",
+     "partyLabel": "Constitution Party"
+    }
+   ]
+  },
+  "62": {
+   "candidates": [
+    {
+     "name": "David Chappell",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Norman Thurston",
+     "party": "R"
+    }
+   ]
+  },
+  "63": {
+   "candidates": [
+    {
+     "name": "Mark Youngquist",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Stephen Whyte",
+     "party": "R"
+    },
+    {
+     "name": "Julie Smith",
+     "party": "O",
+     "partyLabel": "Utah Forward Party"
+    }
+   ]
+  },
+  "64": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jackie Larson",
+     "party": "R"
+    },
+    {
+     "name": "Alan Wessman",
+     "party": "O",
+     "partyLabel": "Unaffiliated"
+    }
+   ]
+  },
+  "65": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Doug Welton",
+     "party": "R"
+    }
+   ]
+  },
+  "66": {
+   "candidates": [
+    {
+     "name": "Breanne Mashek",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Troy Shelley",
+     "party": "R"
+    },
+    {
+     "name": "Russell Hatch",
+     "party": "O",
+     "partyLabel": "Constitution Party"
+    }
+   ]
+  },
+  "67": {
+   "candidates": [
+    {
+     "name": "Carl Adam Ingwell",
+     "party": "D"
+    },
+    {
+     "name": "JR Bird",
+     "party": "R"
+    }
+   ]
+  },
+  "68": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Scott H. Chew",
+     "party": "R"
+    },
+    {
+     "name": "Sonya Ray",
+     "party": "O",
+     "partyLabel": "Constitution Party"
+    }
+   ]
+  },
+  "69": {
+   "candidates": [
+    {
+     "name": "Tracie Yellowman Tso",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Logan Monson",
+     "party": "R"
+    }
+   ]
+  },
+  "7": {
+   "candidates": [
+    {
+     "name": "Bianca Mittendorf",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Ryan Wilcox",
+     "party": "R"
+    }
+   ]
+  },
+  "70": {
+   "candidates": [
+    {
+     "name": "Stacey Pendergraft",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Carl R. Albrecht",
+     "party": "R"
+    },
+    {
+     "name": "Zeno Parry",
+     "party": "O",
+     "partyLabel": "Utah Forward Party"
+    }
+   ]
+  },
+  "71": {
+   "candidates": [
+    {
+     "name": "Thomas Loveheart",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Rex Shipp",
+     "party": "R"
+    }
+   ]
+  },
+  "72": {
+   "candidates": [
+    {
+     "name": "Eva Weldon",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Joseph Elison",
+     "party": "R"
+    },
+    {
+     "name": "April Pinkston",
+     "party": "O",
+     "partyLabel": "Constitution Party"
+    }
+   ]
+  },
+  "73": {
+   "candidates": [
+    {
+     "name": "Glenn Webb",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Colin Jack",
+     "party": "R"
+    }
+   ]
+  },
+  "74": {
+   "candidates": [
+    {
+     "name": "Jeffrey Lipe",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Neil Walter",
+     "party": "R"
+    }
+   ]
+  },
+  "75": {
+   "candidates": [
+    {
+     "name": "Rebecca Winsor",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Walt Brooks",
+     "party": "R"
+    }
+   ]
+  },
+  "8": {
+   "candidates": [
+    {
+     "name": "Kim James",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jason Kyle",
+     "party": "R"
+    },
+    {
+     "name": "Libby Shelton",
+     "party": "O",
+     "partyLabel": "Utah Forward Party"
+    }
+   ]
+  },
+  "9": {
+   "candidates": [
+    {
+     "name": "Angela Choberka",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Jake Sawyer",
+     "party": "R"
+    }
+   ]
+  }
+ },
+ "meta": {
+  "fetched": "2026-10-10",
+  "source": "Ballotpedia chamber election pages, 2026"
+ },
+ "senate": {
+  "1": {
+   "candidates": [
+    {
+     "name": "Claudia Bigler",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Scott Sandall",
+     "party": "R"
+    },
+    {
+     "name": "Julie Quinlan",
+     "party": "O",
+     "partyLabel": "Utah Forward Party"
+    }
+   ]
+  },
+  "11": {
+   "candidates": [
+    {
+     "name": "Brooks Benson",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Emily Buss",
+     "party": "O",
+     "partyLabel": "Utah Forward Party"
+    }
+   ]
+  },
+  "12": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Karen Kwan",
+     "party": "D"
+    },
+    {
+     "name": "Deidre Tyler",
+     "party": "R"
+    }
+   ]
+  },
+  "13": {
+   "candidates": [
+    {
+     "name": "Silvia Catten",
+     "party": "D"
+    },
+    {
+     "name": "Ryan L. Mahoney",
+     "party": "R"
+    },
+    {
+     "name": "Colin Smith",
+     "party": "O",
+     "partyLabel": "Utah Forward Party"
+    }
+   ]
+  },
+  "14": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Stephanie Pitcher",
+     "party": "D"
+    }
+   ]
+  },
+  "18": {
+   "candidates": [
+    {
+     "name": "A. Dane Anderson",
+     "party": "D"
+    },
+    {
+     "name": "Doug Fiefia",
+     "party": "R"
+    }
+   ]
+  },
+  "19": {
+   "candidates": [
+    {
+     "name": "Shana Anderson",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Kirk Cullimore",
+     "party": "R"
+    }
+   ]
+  },
+  "20": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Ronald Winterton",
+     "party": "R"
+    },
+    {
+     "name": "Annette McRae",
+     "party": "O",
+     "partyLabel": "Utah Forward Party"
+    }
+   ]
+  },
+  "21": {
+   "candidates": [
+    {
+     "name": "Kandee Myers",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Brady Brammer",
+     "party": "R"
+    },
+    {
+     "name": "Wayne Woodfield",
+     "party": "O",
+     "partyLabel": "Utah Forward Party"
+    }
+   ]
+  },
+  "23": {
+   "candidates": [
+    {
+     "name": "Tucker Smith",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Keith Grover",
+     "party": "R"
+    }
+   ]
+  },
+  "28": {
+   "candidates": [
+    {
+     "name": "Richard S. Robillard",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Evan Vickers",
+     "party": "R"
+    }
+   ]
+  },
+  "5": {
+   "candidates": [
+    {
+     "name": "CJ Hernandez",
+     "party": "D"
+    },
+    {
+     "name": "Jill Koford",
+     "party": "R"
+    }
+   ]
+  },
+  "6": {
+   "candidates": [
+    {
+     "name": "Jared Neal",
+     "party": "D"
+    },
+    {
+     "name": "Tami Tran",
+     "party": "R"
+    },
+    {
+     "name": "Josh Smith",
+     "party": "O",
+     "partyLabel": "Utah Forward Party"
+    }
+   ]
+  },
+  "7": {
+   "candidates": [
+    {
+     "name": "Garret Rushforth",
+     "party": "D"
+    },
+    {
+     "name": "Stephanie Hollist",
+     "party": "R"
+    },
+    {
+     "name": "Jeffrey Ostler",
+     "party": "O",
+     "partyLabel": "Constitution Party"
+    }
+   ]
+  },
+  "9": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jennifer Plumb",
+     "party": "D"
+    },
+    {
+     "name": "Thaddeus A. Evans",
+     "party": "R"
+    },
+    {
+     "name": "J. Lowry Snow",
+     "party": "O",
+     "partyLabel": "Utah Forward Party"
+    }
+   ]
+  }
+ }
+}

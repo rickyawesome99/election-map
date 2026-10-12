@@ -6,1075 +6,2789 @@
     "demVotes": 10219,
     "repVotes": 11384,
     "othVotes": 0,
-    "totalVotes": 21603
+    "totalVotes": 21603,
+    "candidates": [
+     {
+      "name": "James M. Kelcourse",
+      "party": "R",
+      "votes": 11384,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Jennifer A. Roccorunnion",
+      "party": "D",
+      "votes": 10219
+     }
+    ]
    },
    "2nd Essex": {
     "demVotes": 11264,
     "repVotes": 11588,
     "othVotes": 0,
-    "totalVotes": 22852
+    "totalVotes": 22852,
+    "candidates": [
+     {
+      "name": "Leonard Mirra",
+      "party": "R",
+      "votes": 11588,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Christina Eckert",
+      "party": "D",
+      "votes": 11264
+     }
+    ]
    },
    "3rd Essex": {
     "demVotes": 10638,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 10638,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Andres X. Vargas",
+      "party": "D",
+      "votes": 10638,
+      "winner": true
+     }
+    ]
    },
    "4th Essex": {
     "demVotes": 10236,
     "repVotes": 13210,
     "othVotes": 0,
-    "totalVotes": 23446
+    "totalVotes": 23446,
+    "candidates": [
+     {
+      "name": "Bradford R. Hill",
+      "party": "R",
+      "votes": 13210,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Allison M. Gustavson",
+      "party": "D",
+      "votes": 10236
+     }
+    ]
    },
    "5th Essex": {
     "demVotes": 13617,
     "repVotes": 0,
     "othVotes": 5428,
     "totalVotes": 19045,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Annmargaret Ferrante",
+      "party": "D",
+      "votes": 13617,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "James K. Gardner",
+      "party": "O",
+      "votes": 5428
+     }
+    ]
    },
    "6th Essex": {
     "demVotes": 14615,
     "repVotes": 0,
     "othVotes": 2500,
     "totalVotes": 17115,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Jerald A. Parisella",
+      "party": "D",
+      "votes": 14615,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Donato H. Paglia",
+      "party": "O",
+      "votes": 2500
+     }
+    ]
    },
    "7th Essex": {
     "demVotes": 16097,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 16097,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Paul F. Tucker",
+      "party": "D",
+      "votes": 16097,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "8th Essex": {
     "demVotes": 16625,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 16625,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Lori A. Ehrlich",
+      "party": "D",
+      "votes": 16625,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "9th Essex": {
     "demVotes": 6373,
     "repVotes": 11647,
     "othVotes": 0,
-    "totalVotes": 18020
+    "totalVotes": 18020,
+    "candidates": [
+     {
+      "name": "Donald H. Wong",
+      "party": "R",
+      "votes": 11647,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Matthew Crescenzo",
+      "party": "D",
+      "votes": 6373
+     }
+    ]
    },
    "10th Essex": {
     "demVotes": 8703,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 8703,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Daniel H. Cahill",
+      "party": "D",
+      "votes": 8703,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "11th Essex": {
     "demVotes": 8948,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 8948,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Peter L. Capano",
+      "party": "D",
+      "votes": 8948,
+      "winner": true
+     }
+    ]
    },
    "12th Essex": {
     "demVotes": 13250,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 13250,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Thomas P. Walsh",
+      "party": "D",
+      "votes": 13250,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "13th Essex": {
     "demVotes": 10199,
     "repVotes": 9627,
     "othVotes": 0,
-    "totalVotes": 19826
+    "totalVotes": 19826,
+    "candidates": [
+     {
+      "name": "Theodore C. Speliotis",
+      "party": "D",
+      "votes": 10199,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Mark B. Mezzina",
+      "party": "R",
+      "votes": 9627
+     }
+    ]
    },
    "14th Essex": {
     "demVotes": 9756,
     "repVotes": 5379,
     "othVotes": 0,
-    "totalVotes": 15135
+    "totalVotes": 15135,
+    "candidates": [
+     {
+      "name": "Christina A. Minicucci",
+      "party": "D",
+      "votes": 9756,
+      "winner": true
+     },
+     {
+      "name": "Ryan R. Losco",
+      "party": "R",
+      "votes": 5379
+     }
+    ]
    },
    "15th Essex": {
     "demVotes": 12155,
     "repVotes": 0,
     "othVotes": 3129,
     "totalVotes": 15284,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Linda Deancampbell",
+      "party": "D",
+      "votes": 12155,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Anand Gonsalves",
+      "party": "O",
+      "votes": 3129
+     }
+    ]
    },
    "16th Essex": {
     "demVotes": 7041,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 7041,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Marcos A. Devers",
+      "party": "D",
+      "votes": 7041,
+      "winner": true
+     }
+    ]
    },
    "17th Essex": {
     "demVotes": 9070,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 9070,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Frank A. Moran",
+      "party": "D",
+      "votes": 9070,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "18th Essex": {
     "demVotes": 11663,
     "repVotes": 9587,
     "othVotes": 0,
-    "totalVotes": 21250
+    "totalVotes": 21250,
+    "candidates": [
+     {
+      "name": "Tram T. Nguyen",
+      "party": "D",
+      "votes": 11663,
+      "winner": true
+     },
+     {
+      "name": "James J. Lyons Jr.",
+      "party": "R",
+      "votes": 9587,
+      "incumbent": true
+     }
+    ]
    },
    "1st Bristol": {
     "demVotes": 0,
     "repVotes": 13820,
     "othVotes": 0,
     "totalVotes": 13820,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Fred Jay Barrows",
+      "party": "R",
+      "votes": 13820,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "1st Hampden": {
     "demVotes": 5613,
     "repVotes": 11549,
     "othVotes": 0,
-    "totalVotes": 17162
+    "totalVotes": 17162,
+    "candidates": [
+     {
+      "name": "Todd M. Smola",
+      "party": "R",
+      "votes": 11549,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Tanya V. Neslusan",
+      "party": "D",
+      "votes": 5613
+     }
+    ]
    },
    "1st Norfolk": {
     "demVotes": 12815,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 12815,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Bruce J. Ayers",
+      "party": "D",
+      "votes": 12815,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "1st Suffolk": {
     "demVotes": 8435,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 8435,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Adrian C. Madaro",
+      "party": "D",
+      "votes": 8435,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "2nd Bristol": {
     "demVotes": 8271,
     "repVotes": 5905,
     "othVotes": 0,
-    "totalVotes": 14176
+    "totalVotes": 14176,
+    "candidates": [
+     {
+      "name": "James K. Hawkins",
+      "party": "D",
+      "votes": 8271,
+      "winner": true
+     },
+     {
+      "name": "Julie A. Hall",
+      "party": "R",
+      "votes": 5905
+     }
+    ]
    },
    "2nd Hampden": {
     "demVotes": 10980,
     "repVotes": 8602,
     "othVotes": 0,
-    "totalVotes": 19582
+    "totalVotes": 19582,
+    "candidates": [
+     {
+      "name": "Brian M. Ashe",
+      "party": "D",
+      "votes": 10980,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Allison P. Werder",
+      "party": "R",
+      "votes": 8602
+     }
+    ]
    },
    "2nd Norfolk": {
     "demVotes": 10691,
     "repVotes": 4428,
     "othVotes": 0,
-    "totalVotes": 15119
+    "totalVotes": 15119,
+    "candidates": [
+     {
+      "name": "Tackey Chan",
+      "party": "D",
+      "votes": 10691,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "William Burke",
+      "party": "R",
+      "votes": 4428
+     }
+    ]
    },
    "2nd Suffolk": {
     "demVotes": 10488,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 10488,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Daniel Joseph Ryan",
+      "party": "D",
+      "votes": 10488,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "3rd Bristol": {
     "demVotes": 5215,
     "repVotes": 8334,
     "othVotes": 0,
-    "totalVotes": 13549
+    "totalVotes": 13549,
+    "candidates": [
+     {
+      "name": "Shaunna L. Oconnell",
+      "party": "R",
+      "votes": 8334,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Emily J. M. Farrer",
+      "party": "D",
+      "votes": 5215
+     }
+    ]
    },
    "3rd Hampden": {
     "demVotes": 5617,
     "repVotes": 10902,
     "othVotes": 0,
-    "totalVotes": 16519
+    "totalVotes": 16519,
+    "candidates": [
+     {
+      "name": "Nicholas A. Boldyga",
+      "party": "R",
+      "votes": 10902,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Forrest W. Bradford",
+      "party": "D",
+      "votes": 5617
+     }
+    ]
    },
    "3rd Norfolk": {
     "demVotes": 10726,
     "repVotes": 4857,
     "othVotes": 0,
-    "totalVotes": 15583
+    "totalVotes": 15583,
+    "candidates": [
+     {
+      "name": "Ronald Mariano",
+      "party": "D",
+      "votes": 10726,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Stephen F. Tougas",
+      "party": "R",
+      "votes": 4857
+     }
+    ]
    },
    "3rd Suffolk": {
     "demVotes": 14499,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 14499,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Aaron M. Michlewitz",
+      "party": "D",
+      "votes": 14499,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "4th Bristol": {
     "demVotes": 0,
     "repVotes": 13299,
     "othVotes": 0,
     "totalVotes": 13299,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Steven S. Howitt",
+      "party": "R",
+      "votes": 13299,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "4th Hampden": {
     "demVotes": 11734,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 11734,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "John C. Velis",
+      "party": "D",
+      "votes": 11734,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "4th Norfolk": {
     "demVotes": 14747,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 14747,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "James Michael Murphy",
+      "party": "D",
+      "votes": 14747,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "4th Suffolk": {
     "demVotes": 15516,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 15516,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "David Biele",
+      "party": "D",
+      "votes": 15516,
+      "winner": true
+     }
+    ]
    },
    "5th Bristol": {
     "demVotes": 12387,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 12387,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Patricia A. Haddad",
+      "party": "D",
+      "votes": 12387,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "5th Hampden": {
     "demVotes": 10199,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 10199,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Aaron Vega",
+      "party": "D",
+      "votes": 10199,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "5th Norfolk": {
     "demVotes": 13355,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 13355,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Mark J. Cusack",
+      "party": "D",
+      "votes": 13355,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "5th Suffolk": {
     "demVotes": 8527,
     "repVotes": 0,
     "othVotes": 1053,
     "totalVotes": 9580,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Liz Miranda",
+      "party": "D",
+      "votes": 8527,
+      "winner": true
+     },
+     {
+      "name": "Althea Garrison",
+      "party": "O",
+      "votes": 1053
+     }
+    ]
    },
    "6th Bristol": {
     "demVotes": 6959,
     "repVotes": 4225,
     "othVotes": 0,
-    "totalVotes": 11184
+    "totalVotes": 11184,
+    "candidates": [
+     {
+      "name": "Carole A. Fiola",
+      "party": "D",
+      "votes": 6959,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "David L. Steinhof",
+      "party": "R",
+      "votes": 4225
+     }
+    ]
    },
    "6th Hampden": {
     "demVotes": 9519,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 9519,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Michael J. Finn",
+      "party": "D",
+      "votes": 9519,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "6th Norfolk": {
     "demVotes": 13800,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 13800,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "William C. Galvin",
+      "party": "D",
+      "votes": 13800,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "6th Suffolk": {
     "demVotes": 10427,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 10427,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Russell E. Holmes",
+      "party": "D",
+      "votes": 10427,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "7th Bristol": {
     "demVotes": 5852,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 5852,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Alan Silvia",
+      "party": "D",
+      "votes": 5852,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "7th Hampden": {
     "demVotes": 12668,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 12668,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Thomas M. Petrolati",
+      "party": "D",
+      "votes": 12668,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "7th Norfolk": {
     "demVotes": 13933,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 13933,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "William J. Driscoll Jr.",
+      "party": "D",
+      "votes": 13933,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "7th Suffolk": {
     "demVotes": 7318,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 7318,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Chynah Tyler",
+      "party": "D",
+      "votes": 7318,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "8th Bristol": {
     "demVotes": 11171,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 11171,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Paul Schmid III",
+      "party": "D",
+      "votes": 11171,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "8th Hampden": {
     "demVotes": 10790,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 10790,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Joseph F. Wagner",
+      "party": "D",
+      "votes": 10790,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "8th Norfolk": {
     "demVotes": 14734,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 14734,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Louis L. Kafka",
+      "party": "D",
+      "votes": 14734,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "8th Suffolk": {
     "demVotes": 14613,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 14613,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Jay D. Livingstone",
+      "party": "D",
+      "votes": 14613,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "9th Bristol": {
     "demVotes": 11579,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 11579,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Christopher M. Markey",
+      "party": "D",
+      "votes": 11579,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "9th Hampden": {
     "demVotes": 9873,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 9873,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Jose F. Tosado",
+      "party": "D",
+      "votes": 9873,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "9th Norfolk": {
     "demVotes": 8437,
     "repVotes": 12029,
     "othVotes": 0,
-    "totalVotes": 20466
+    "totalVotes": 20466,
+    "candidates": [
+     {
+      "name": "Shawn C. Dooley",
+      "party": "R",
+      "votes": 12029,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Brian P. Hamlin",
+      "party": "D",
+      "votes": 8437
+     }
+    ]
    },
    "9th Suffolk": {
     "demVotes": 11241,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 11241,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Jon Santiago",
+      "party": "D",
+      "votes": 11241,
+      "winner": true
+     }
+    ]
    },
    "10th Bristol": {
     "demVotes": 13191,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 13191,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "William M. Straus",
+      "party": "D",
+      "votes": 13191,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "10th Hampden": {
     "demVotes": 6417,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 6417,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Carlos Gonzalez",
+      "party": "D",
+      "votes": 6417,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "10th Norfolk": {
     "demVotes": 11412,
     "repVotes": 8087,
     "othVotes": 0,
-    "totalVotes": 19499
+    "totalVotes": 19499,
+    "candidates": [
+     {
+      "name": "Jeffrey N. Roy",
+      "party": "D",
+      "votes": 11412,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Patrick R. Casey",
+      "party": "R",
+      "votes": 8087
+     }
+    ]
    },
    "10th Suffolk": {
     "demVotes": 15367,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 15367,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Edward F. Coppinger",
+      "party": "D",
+      "votes": 15367,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "11th Bristol": {
     "demVotes": 8125,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 8125,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Christopher Hendricks",
+      "party": "D",
+      "votes": 8125,
+      "winner": true
+     }
+    ]
    },
    "11th Hampden": {
     "demVotes": 7875,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 7875,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Bud L. Williams",
+      "party": "D",
+      "votes": 7875,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "11th Norfolk": {
     "demVotes": 14046,
     "repVotes": 6904,
     "othVotes": 0,
-    "totalVotes": 20950
+    "totalVotes": 20950,
+    "candidates": [
+     {
+      "name": "Paul McMurtry",
+      "party": "D",
+      "votes": 14046,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "John G. McDonald",
+      "party": "R",
+      "votes": 6904
+     }
+    ]
    },
    "11th Suffolk": {
     "demVotes": 14726,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 14726,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Elizabeth A. Malia",
+      "party": "D",
+      "votes": 14726,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "12th Bristol": {
     "demVotes": 7689,
     "repVotes": 8365,
     "othVotes": 0,
-    "totalVotes": 16054
+    "totalVotes": 16054,
+    "candidates": [
+     {
+      "name": "Norman J. Orrall",
+      "party": "R",
+      "votes": 8365,
+      "winner": true
+     },
+     {
+      "name": "Allin John Frawley",
+      "party": "D",
+      "votes": 7689
+     }
+    ]
    },
    "12th Hampden": {
     "demVotes": 12140,
     "repVotes": 0,
     "othVotes": 3515,
     "totalVotes": 15655,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Angelo J. Puppolo Jr.",
+      "party": "D",
+      "votes": 12140,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Donald J. Flannery",
+      "party": "O",
+      "votes": 3515
+     }
+    ]
    },
    "12th Norfolk": {
     "demVotes": 14352,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 14352,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "John H. Rogers",
+      "party": "D",
+      "votes": 14352,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "12th Suffolk": {
     "demVotes": 13320,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 13320,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Dan Cullinane",
+      "party": "D",
+      "votes": 13320,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "13th Bristol": {
     "demVotes": 7829,
     "repVotes": 0,
     "othVotes": 2110,
     "totalVotes": 9939,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Antonio D. F. Cabral",
+      "party": "D",
+      "votes": 7829,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Michael Janson",
+      "party": "O",
+      "votes": 2110
+     }
+    ]
    },
    "13th Norfolk": {
     "demVotes": 17835,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 17835,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Denise C. Garlick",
+      "party": "D",
+      "votes": 17835,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "13th Suffolk": {
     "demVotes": 12046,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 12046,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Daniel J. Hunt",
+      "party": "D",
+      "votes": 12046,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "14th Bristol": {
     "demVotes": 0,
     "repVotes": 13239,
     "othVotes": 0,
     "totalVotes": 13239,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Elizabeth A. Poirier",
+      "party": "R",
+      "votes": 13239,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "14th Norfolk": {
     "demVotes": 15638,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 15638,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Alice Hanlonpeisch",
+      "party": "D",
+      "votes": 15638,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "14th Suffolk": {
     "demVotes": 13505,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 13505,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Angelo M. Scaccia",
+      "party": "D",
+      "votes": 13505,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "15th Norfolk": {
     "demVotes": 14869,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 14869,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Tommy Vitolo",
+      "party": "D",
+      "votes": 14869,
+      "winner": true
+     }
+    ]
    },
    "15th Suffolk": {
     "demVotes": 14051,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 14051,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Nika Elugardo",
+      "party": "D",
+      "votes": 14051,
+      "winner": true
+     }
+    ]
    },
    "16th Suffolk": {
     "demVotes": 9127,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 9127,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Roselee Vincent",
+      "party": "D",
+      "votes": 9127,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "17th Suffolk": {
     "demVotes": 11944,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 11944,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Kevin G. Honan",
+      "party": "D",
+      "votes": 11944,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "18th Suffolk": {
     "demVotes": 9463,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 9463,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Michael J. Moran",
+      "party": "D",
+      "votes": 9463,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "19th Suffolk": {
     "demVotes": 10392,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 10392,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Robert A. Deleo",
+      "party": "D",
+      "votes": 10392,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "1st Franklin": {
     "demVotes": 17716,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 17716,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Natalie M. Blais",
+      "party": "D",
+      "votes": 17716,
+      "winner": true
+     }
+    ]
    },
    "1st Plymouth": {
     "demVotes": 9898,
     "repVotes": 10853,
     "othVotes": 0,
-    "totalVotes": 20751
+    "totalVotes": 20751,
+    "candidates": [
+     {
+      "name": "Mathew J. Muratore",
+      "party": "R",
+      "votes": 10853,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "John T. Mahoney Jr.",
+      "party": "D",
+      "votes": 9898
+     }
+    ]
    },
    "2nd Franklin": {
     "demVotes": 4663,
     "repVotes": 0,
     "othVotes": 11026,
     "totalVotes": 15689,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Susannah Whipps M. Lee",
+      "party": "O",
+      "votes": 11026,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "John William Arena",
+      "party": "D",
+      "votes": 4663
+     }
+    ]
    },
    "2nd Plymouth": {
     "demVotes": 7485,
     "repVotes": 9813,
     "othVotes": 0,
-    "totalVotes": 17298
+    "totalVotes": 17298,
+    "candidates": [
+     {
+      "name": "Susan Gifford",
+      "party": "R",
+      "votes": 9813,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Sarah G. Hewins",
+      "party": "D",
+      "votes": 7485
+     }
+    ]
    },
    "3rd Plymouth": {
     "demVotes": 12209,
     "repVotes": 9198,
     "othVotes": 0,
-    "totalVotes": 21407
+    "totalVotes": 21407,
+    "candidates": [
+     {
+      "name": "Joan Meschino",
+      "party": "D",
+      "votes": 12209,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Kristen G. Arute",
+      "party": "R",
+      "votes": 9198
+     }
+    ]
    },
    "4th Plymouth": {
     "demVotes": 12353,
     "repVotes": 7340,
     "othVotes": 1952,
-    "totalVotes": 21645
+    "totalVotes": 21645,
+    "candidates": [
+     {
+      "name": "Patrick Joseph Kearney",
+      "party": "D",
+      "votes": 12353,
+      "winner": true
+     },
+     {
+      "name": "Edward J. Oconnell",
+      "party": "R",
+      "votes": 7340
+     },
+     {
+      "name": "Nathaniel K. Powell",
+      "party": "O",
+      "votes": 1569
+     },
+     {
+      "name": "Joseph M. Armstrong",
+      "party": "O",
+      "votes": 383
+     }
+    ]
    },
    "5th Plymouth": {
     "demVotes": 9903,
     "repVotes": 10616,
     "othVotes": 0,
-    "totalVotes": 20519
+    "totalVotes": 20519,
+    "candidates": [
+     {
+      "name": "David F. Decoste",
+      "party": "R",
+      "votes": 10616,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Alison M. Demong",
+      "party": "D",
+      "votes": 9903
+     }
+    ]
    },
    "6th Plymouth": {
     "demVotes": 15689,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 15689,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Josh S. Cutler",
+      "party": "D",
+      "votes": 15689,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "7th Plymouth": {
     "demVotes": 8130,
     "repVotes": 10263,
     "othVotes": 0,
-    "totalVotes": 18393
+    "totalVotes": 18393,
+    "candidates": [
+     {
+      "name": "Alyson M. Sullivan",
+      "party": "R",
+      "votes": 10263,
+      "winner": true
+     },
+     {
+      "name": "Alex A. Bezanson",
+      "party": "D",
+      "votes": 8130
+     }
+    ]
    },
    "8th Plymouth": {
     "demVotes": 0,
     "repVotes": 12101,
     "othVotes": 0,
     "totalVotes": 12101,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Angelo L. Demilia",
+      "party": "R",
+      "votes": 12101,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "9th Plymouth": {
     "demVotes": 7955,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 7955,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Gerard J. Cassidy",
+      "party": "D",
+      "votes": 7955,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "10th Plymouth": {
     "demVotes": 7983,
     "repVotes": 6161,
     "othVotes": 0,
-    "totalVotes": 14144
+    "totalVotes": 14144,
+    "candidates": [
+     {
+      "name": "Michelle M. Dubois",
+      "party": "D",
+      "votes": 7983,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "John F. Cruz",
+      "party": "R",
+      "votes": 6161
+     }
+    ]
    },
    "11th Plymouth": {
     "demVotes": 12336,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 12336,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Claire D. Cronin",
+      "party": "D",
+      "votes": 12336,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "12th Plymouth": {
     "demVotes": 10581,
     "repVotes": 9560,
     "othVotes": 0,
-    "totalVotes": 20141
+    "totalVotes": 20141,
+    "candidates": [
+     {
+      "name": "Kathleen R. Lanatra",
+      "party": "D",
+      "votes": 10581,
+      "winner": true
+     },
+     {
+      "name": "Joseph M. Truschelli",
+      "party": "R",
+      "votes": 9560
+     }
+    ]
    },
    "1st Berkshire": {
     "demVotes": 12209,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 12209,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "John P. Barrett III",
+      "party": "D",
+      "votes": 12209,
+      "winner": true
+     }
+    ]
    },
    "1st Hampshire": {
     "demVotes": 18001,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 18001,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Lindsay N. Sabadosa",
+      "party": "D",
+      "votes": 18001,
+      "winner": true
+     }
+    ]
    },
    "1st Middlesex": {
     "demVotes": 0,
     "repVotes": 15340,
     "othVotes": 0,
     "totalVotes": 15340,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Sheila C. Harrington",
+      "party": "R",
+      "votes": 15340,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "1st Worcester": {
     "demVotes": 0,
     "repVotes": 15899,
     "othVotes": 4513,
     "totalVotes": 20412,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Kimberly N. Ferguson",
+      "party": "R",
+      "votes": 15899,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Matthew O. Moncreaff",
+      "party": "O",
+      "votes": 4513
+     }
+    ]
    },
    "2nd Berkshire": {
     "demVotes": 15083,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 15083,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Paul W. Mark",
+      "party": "D",
+      "votes": 15083,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "2nd Hampshire": {
     "demVotes": 14662,
     "repVotes": 5073,
     "othVotes": 0,
-    "totalVotes": 19735
+    "totalVotes": 19735,
+    "candidates": [
+     {
+      "name": "Daniel R. Carey",
+      "party": "D",
+      "votes": 14662,
+      "winner": true
+     },
+     {
+      "name": "Donald Peltier",
+      "party": "R",
+      "votes": 5073
+     }
+    ]
    },
    "2nd Middlesex": {
     "demVotes": 14301,
     "repVotes": 7899,
     "othVotes": 0,
-    "totalVotes": 22200
+    "totalVotes": 22200,
+    "candidates": [
+     {
+      "name": "James Arciero",
+      "party": "D",
+      "votes": 14301,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Kathleen Lynch",
+      "party": "R",
+      "votes": 7899
+     }
+    ]
    },
    "2nd Worcester": {
     "demVotes": 8054,
     "repVotes": 6484,
     "othVotes": 0,
-    "totalVotes": 14538
+    "totalVotes": 14538,
+    "candidates": [
+     {
+      "name": "Jonathan D. Zlotnik",
+      "party": "D",
+      "votes": 8054,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Edward A. Gravel",
+      "party": "R",
+      "votes": 6484
+     }
+    ]
    },
    "3rd Berkshire": {
     "demVotes": 11661,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 11661,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Tricia Farleybouvier",
+      "party": "D",
+      "votes": 11661,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "3rd Hampshire": {
     "demVotes": 9375,
     "repVotes": 0,
     "othVotes": 3098,
     "totalVotes": 12473,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Mindy Domb",
+      "party": "D",
+      "votes": 9375,
+      "winner": true
+     },
+     {
+      "name": "Solomon Israel Goldsteinrose",
+      "party": "O",
+      "votes": 3098,
+      "incumbent": true
+     }
+    ]
    },
    "3rd Middlesex": {
     "demVotes": 17045,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 17045,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Kate Hogan",
+      "party": "D",
+      "votes": 17045,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "3rd Worcester": {
     "demVotes": 8520,
     "repVotes": 3894,
     "othVotes": 0,
-    "totalVotes": 12414
+    "totalVotes": 12414,
+    "candidates": [
+     {
+      "name": "Stephan Hay",
+      "party": "D",
+      "votes": 8520,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Elmer Eubanksarchbold",
+      "party": "R",
+      "votes": 3894
+     }
+    ]
    },
    "4th Berkshire": {
     "demVotes": 16442,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 16442,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "William Pignatelli",
+      "party": "D",
+      "votes": 16442,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "4th Middlesex": {
     "demVotes": 10303,
     "repVotes": 5907,
     "othVotes": 0,
-    "totalVotes": 16210
+    "totalVotes": 16210,
+    "candidates": [
+     {
+      "name": "Danielle W. Gregoire",
+      "party": "D",
+      "votes": 10303,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Paul R. Ferro",
+      "party": "R",
+      "votes": 5907
+     }
+    ]
    },
    "4th Worcester": {
     "demVotes": 8480,
     "repVotes": 6590,
     "othVotes": 0,
-    "totalVotes": 15070
+    "totalVotes": 15070,
+    "candidates": [
+     {
+      "name": "Natalie Higgins",
+      "party": "D",
+      "votes": 8480,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Richard E. Palmieri",
+      "party": "R",
+      "votes": 6590
+     }
+    ]
    },
    "5th Middlesex": {
     "demVotes": 17524,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 17524,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "David Paul Linsky",
+      "party": "D",
+      "votes": 17524,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "5th Worcester": {
     "demVotes": 7079,
     "repVotes": 10395,
     "othVotes": 0,
-    "totalVotes": 17474
+    "totalVotes": 17474,
+    "candidates": [
+     {
+      "name": "Donald R. Berthiaume Jr.",
+      "party": "R",
+      "votes": 10395,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Jean Anne Strauss",
+      "party": "D",
+      "votes": 7079
+     }
+    ]
    },
    "6th Middlesex": {
     "demVotes": 13670,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 13670,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Maria D. Robinson",
+      "party": "D",
+      "votes": 13670,
+      "winner": true
+     }
+    ]
    },
    "6th Worcester": {
     "demVotes": 0,
     "repVotes": 11271,
     "othVotes": 0,
     "totalVotes": 11271,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Peter J. Durant",
+      "party": "R",
+      "votes": 11271,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "7th Middlesex": {
     "demVotes": 10326,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 10326,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Jack Patrick Lewis",
+      "party": "D",
+      "votes": 10326,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "7th Worcester": {
     "demVotes": 5924,
     "repVotes": 11222,
     "othVotes": 0,
-    "totalVotes": 17146
+    "totalVotes": 17146,
+    "candidates": [
+     {
+      "name": "Paul K. Frost",
+      "party": "R",
+      "votes": 11222,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Terry Burkedotson",
+      "party": "D",
+      "votes": 5924
+     }
+    ]
    },
    "8th Middlesex": {
     "demVotes": 16953,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 16953,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Carolyn C. Dykema",
+      "party": "D",
+      "votes": 16953,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "8th Worcester": {
     "demVotes": 8607,
     "repVotes": 9145,
     "othVotes": 0,
-    "totalVotes": 17752
+    "totalVotes": 17752,
+    "candidates": [
+     {
+      "name": "Michael J. Soter",
+      "party": "R",
+      "votes": 9145,
+      "winner": true
+     },
+     {
+      "name": "Patrick J. Malone",
+      "party": "D",
+      "votes": 8607
+     }
+    ]
    },
    "9th Middlesex": {
     "demVotes": 14193,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 14193,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Thomas M. Stanley",
+      "party": "D",
+      "votes": 14193,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "9th Worcester": {
     "demVotes": 0,
     "repVotes": 14958,
     "othVotes": 0,
     "totalVotes": 14958,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "David K. Muradian Jr.",
+      "party": "R",
+      "votes": 14958,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "10th Middlesex": {
     "demVotes": 11078,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 11078,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "John J. Lawn Jr.",
+      "party": "D",
+      "votes": 11078,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "10th Worcester": {
     "demVotes": 9673,
     "repVotes": 7566,
     "othVotes": 0,
-    "totalVotes": 17239
+    "totalVotes": 17239,
+    "candidates": [
+     {
+      "name": "Brian W. Murray",
+      "party": "D",
+      "votes": 9673,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Sandra Slattery E. Biagetti",
+      "party": "R",
+      "votes": 7566
+     }
+    ]
    },
    "11th Middlesex": {
     "demVotes": 15776,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 15776,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Kay S. Khan",
+      "party": "D",
+      "votes": 15776,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "11th Worcester": {
     "demVotes": 0,
     "repVotes": 15427,
     "othVotes": 0,
     "totalVotes": 15427,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Hannah E. Kane",
+      "party": "R",
+      "votes": 15427,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "12th Middlesex": {
     "demVotes": 15449,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 15449,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Ruth B. Balser",
+      "party": "D",
+      "votes": 15449,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "12th Worcester": {
     "demVotes": 13381,
     "repVotes": 0,
     "othVotes": 4362,
     "totalVotes": 17743,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Harold P. Naughton Jr.",
+      "party": "D",
+      "votes": 13381,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Stanley P. Marcinczyk Jr.",
+      "party": "O",
+      "votes": 4362
+     }
+    ]
    },
    "13th Middlesex": {
     "demVotes": 15943,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 15943,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Carmine Lawrencegentile",
+      "party": "D",
+      "votes": 15943,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "13th Worcester": {
     "demVotes": 11403,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 11403,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "John J. Mahoney Jr.",
+      "party": "D",
+      "votes": 11403,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "14th Middlesex": {
     "demVotes": 16926,
     "repVotes": 0,
     "othVotes": 1877,
     "totalVotes": 18803,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Tami L. Gouveia",
+      "party": "D",
+      "votes": 16926,
+      "winner": true
+     },
+     {
+      "name": "Daniel L. Factor",
+      "party": "O",
+      "votes": 1877
+     }
+    ]
    },
    "14th Worcester": {
     "demVotes": 11057,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 11057,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "James J. Oday",
+      "party": "D",
+      "votes": 11057,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "15th Middlesex": {
     "demVotes": 16154,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 16154,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Michelle Ciccolo",
+      "party": "D",
+      "votes": 16154,
+      "winner": true
+     }
+    ]
    },
    "15th Worcester": {
     "demVotes": 6812,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 6812,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Mary S. Keefe",
+      "party": "D",
+      "votes": 6812,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "16th Middlesex": {
     "demVotes": 10538,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 10538,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Thomas A. Golden Jr.",
+      "party": "D",
+      "votes": 10538,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "16th Worcester": {
     "demVotes": 7372,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 7372,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Daniel M. Donahue",
+      "party": "D",
+      "votes": 7372,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "17th Middlesex": {
     "demVotes": 9589,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 9589,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "David M. Nangle",
+      "party": "D",
+      "votes": 9589,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "17th Worcester": {
     "demVotes": 6808,
     "repVotes": 4662,
     "othVotes": 0,
-    "totalVotes": 11470
+    "totalVotes": 11470,
+    "candidates": [
+     {
+      "name": "David Henry Argoskyleboeuf",
+      "party": "D",
+      "votes": 6808,
+      "winner": true
+     },
+     {
+      "name": "Paul J. Fullen",
+      "party": "R",
+      "votes": 4662
+     }
+    ]
    },
    "18th Middlesex": {
     "demVotes": 5872,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 5872,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Rady Mom",
+      "party": "D",
+      "votes": 5872,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "18th Worcester": {
     "demVotes": 0,
     "repVotes": 12841,
     "othVotes": 0,
     "totalVotes": 12841,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Joseph D. McKenna",
+      "party": "R",
+      "votes": 12841,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "19th Middlesex": {
     "demVotes": 9153,
     "repVotes": 8247,
     "othVotes": 1569,
-    "totalVotes": 18969
+    "totalVotes": 18969,
+    "candidates": [
+     {
+      "name": "David Allenrobertson",
+      "party": "D",
+      "votes": 9153,
+      "winner": true
+     },
+     {
+      "name": "Pina Prinzivalli",
+      "party": "R",
+      "votes": 8247
+     },
+     {
+      "name": "Patricia W. M. Meuse",
+      "party": "O",
+      "votes": 1569
+     }
+    ]
    },
    "1st Barnstable": {
     "demVotes": 9610,
     "repVotes": 13558,
     "othVotes": 0,
-    "totalVotes": 23168
+    "totalVotes": 23168,
+    "candidates": [
+     {
+      "name": "Timothy R. Whelan",
+      "party": "R",
+      "votes": 13558,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Steven Leibowitz",
+      "party": "D",
+      "votes": 9610
+     }
+    ]
    },
    "20th Middlesex": {
     "demVotes": 0,
     "repVotes": 17035,
     "othVotes": 0,
     "totalVotes": 17035,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Bradley H. Jones Jr.",
+      "party": "R",
+      "votes": 17035,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "21st Middlesex": {
     "demVotes": 14545,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 14545,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Kenneth I. Gordon",
+      "party": "D",
+      "votes": 14545,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "22nd Middlesex": {
     "demVotes": 6581,
     "repVotes": 10610,
     "othVotes": 0,
-    "totalVotes": 17191
+    "totalVotes": 17191,
+    "candidates": [
+     {
+      "name": "Marc T. Lombardo",
+      "party": "R",
+      "votes": 10610,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Christopher J. Tribou",
+      "party": "D",
+      "votes": 6581
+     }
+    ]
    },
    "23rd Middlesex": {
     "demVotes": 19926,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 19926,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Sean Garballey",
+      "party": "D",
+      "votes": 19926,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "24th Middlesex": {
     "demVotes": 17838,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 17838,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "David M. Rogers",
+      "party": "D",
+      "votes": 17838,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "25th Middlesex": {
     "demVotes": 14688,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 14688,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Marjorie C. Decker",
+      "party": "D",
+      "votes": 14688,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "26th Middlesex": {
     "demVotes": 14823,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 14823,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Mike Connolly",
+      "party": "D",
+      "votes": 14823,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "27th Middlesex": {
     "demVotes": 18524,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 18524,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Denise Provost",
+      "party": "D",
+      "votes": 18524,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "28th Middlesex": {
     "demVotes": 8302,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 8302,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Joseph W. McGonagle Jr.",
+      "party": "D",
+      "votes": 8302,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "29th Middlesex": {
     "demVotes": 17979,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 17979,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Jonathan Hecht",
+      "party": "D",
+      "votes": 17979,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "2nd Barnstable": {
     "demVotes": 8988,
     "repVotes": 9753,
     "othVotes": 0,
-    "totalVotes": 18741
+    "totalVotes": 18741,
+    "candidates": [
+     {
+      "name": "William L. Crocker Jr.",
+      "party": "R",
+      "votes": 9753,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Paul J. Cusack",
+      "party": "D",
+      "votes": 8988
+     }
+    ]
    },
    "30th Middlesex": {
     "demVotes": 12180,
     "repVotes": 5244,
     "othVotes": 0,
-    "totalVotes": 17424
+    "totalVotes": 17424,
+    "candidates": [
+     {
+      "name": "Richard M. Haggerty",
+      "party": "D",
+      "votes": 12180,
+      "winner": true
+     },
+     {
+      "name": "Claire M. Malaguti",
+      "party": "R",
+      "votes": 5244
+     }
+    ]
    },
    "31st Middlesex": {
     "demVotes": 13000,
     "repVotes": 8195,
     "othVotes": 0,
-    "totalVotes": 21195
+    "totalVotes": 21195,
+    "candidates": [
+     {
+      "name": "Michael Seamusday",
+      "party": "D",
+      "votes": 13000,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Caroline Colarusso",
+      "party": "R",
+      "votes": 8195
+     }
+    ]
    },
    "32nd Middlesex": {
     "demVotes": 16606,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 16606,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Paul A. Brodeur",
+      "party": "D",
+      "votes": 16606,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "33rd Middlesex": {
     "demVotes": 9728,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 9728,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Steven Ultrino",
+      "party": "D",
+      "votes": 9728,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "34th Middlesex": {
     "demVotes": 14781,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 14781,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Christine P. Barber",
+      "party": "D",
+      "votes": 14781,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "35th Middlesex": {
     "demVotes": 13126,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 13126,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Paul J. Donato Sr.",
+      "party": "D",
+      "votes": 13126,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "36th Middlesex": {
     "demVotes": 11427,
     "repVotes": 6651,
     "othVotes": 0,
-    "totalVotes": 18078
+    "totalVotes": 18078,
+    "candidates": [
+     {
+      "name": "Colleen M. Garry",
+      "party": "D",
+      "votes": 11427,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Raymond G. Leczynski",
+      "party": "R",
+      "votes": 6651
+     }
+    ]
    },
    "37th Middlesex": {
     "demVotes": 15738,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 15738,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Jennifer E. Benson",
+      "party": "D",
+      "votes": 15738,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "3rd Barnstable": {
     "demVotes": 0,
     "repVotes": 16353,
     "othVotes": 0,
     "totalVotes": 16353,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "David T. Vieira",
+      "party": "R",
+      "votes": 16353,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "4th Barnstable": {
     "demVotes": 20784,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 20784,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Sarah K. Peake",
+      "party": "D",
+      "votes": 20784,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "5th Barnstable": {
     "demVotes": 8605,
     "repVotes": 11500,
     "othVotes": 0,
-    "totalVotes": 20105
+    "totalVotes": 20105,
+    "candidates": [
+     {
+      "name": "Randy Hunt",
+      "party": "R",
+      "votes": 11500,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Jack Stanton",
+      "party": "D",
+      "votes": 8605
+     }
+    ]
    },
    "Barnstable-Dukes-Nantucket": {
     "demVotes": 18061,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 18061,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Dylan A. Fernandes",
+      "party": "D",
+      "votes": 18061,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    }
   }
  },
@@ -1087,245 +2801,670 @@
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 31109,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "James T. Welch",
+      "party": "D",
+      "votes": 31109,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "First Essex": {
     "demVotes": 46338,
     "repVotes": 23539,
     "othVotes": 0,
-    "totalVotes": 69877
+    "totalVotes": 69877,
+    "candidates": [
+     {
+      "name": "Diana Dizoglio",
+      "party": "D",
+      "votes": 46338,
+      "winner": true
+     },
+     {
+      "name": "Alexander Leightonwilliams",
+      "party": "R",
+      "votes": 23539
+     }
+    ]
    },
    "Third Essex": {
     "demVotes": 47179,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 47179,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Brendan P. Crighton",
+      "party": "D",
+      "votes": 47179,
+      "winner": true
+     }
+    ]
    },
    "Second Essex": {
     "demVotes": 59282,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 59282,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Joan B. Lovely",
+      "party": "D",
+      "votes": 59282,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "First Suffolk": {
     "demVotes": 50180,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 50180,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Nick Collins",
+      "party": "D",
+      "votes": 50180,
+      "winner": true
+     }
+    ]
    },
    "Second Suffolk": {
     "demVotes": 50742,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 50742,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Sonia Rosa Changdiaz",
+      "party": "D",
+      "votes": 50742,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "Fifth Middlesex": {
     "demVotes": 47561,
     "repVotes": 23393,
     "othVotes": 0,
-    "totalVotes": 70954
+    "totalVotes": 70954,
+    "candidates": [
+     {
+      "name": "Jason M. Lewis",
+      "party": "D",
+      "votes": 47561,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Erin K. Calvobacci",
+      "party": "R",
+      "votes": 23393
+     }
+    ]
    },
    "First Middlesex": {
     "demVotes": 35068,
     "repVotes": 19825,
     "othVotes": 0,
-    "totalVotes": 54893
+    "totalVotes": 54893,
+    "candidates": [
+     {
+      "name": "Edward J. Kennedy",
+      "party": "D",
+      "votes": 35068,
+      "winner": true
+     },
+     {
+      "name": "John A. MacDonald",
+      "party": "R",
+      "votes": 19825
+     }
+    ]
    },
    "First Worcester": {
     "demVotes": 46611,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 46611,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Harriette L. Chandler",
+      "party": "D",
+      "votes": 46611,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "Third Middlesex": {
     "demVotes": 59499,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 59499,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Michael J. Barrett",
+      "party": "D",
+      "votes": 59499,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "plymouthnorfolk": {
     "demVotes": 36533,
     "repVotes": 42065,
     "othVotes": 4503,
-    "totalVotes": 83101
+    "totalVotes": 83101,
+    "candidates": [
+     {
+      "name": "Patrick M. Oconnor",
+      "party": "R",
+      "votes": 42065,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Katie L. McBrine",
+      "party": "D",
+      "votes": 36533
+     },
+     {
+      "name": "Stephen D. Gill",
+      "party": "O",
+      "votes": 4503
+     }
+    ]
    },
    "Cape and Islands": {
     "demVotes": 58196,
     "repVotes": 35500,
     "othVotes": 0,
-    "totalVotes": 93696
+    "totalVotes": 93696,
+    "candidates": [
+     {
+      "name": "Julian Andre Cyr",
+      "party": "D",
+      "votes": 58196,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "John G. Flores",
+      "party": "R",
+      "votes": 35500
+     }
+    ]
    },
    "Fourth Middlesex": {
     "demVotes": 59993,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 59993,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Cindy F. Friedman",
+      "party": "D",
+      "votes": 59993,
+      "winner": true
+     }
+    ]
    },
    "Second Middlesex": {
     "demVotes": 70099,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 70099,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Patricia D. Jehlen",
+      "party": "D",
+      "votes": 70099,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "Second Worcester": {
     "demVotes": 51630,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 51630,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Michael O. Moore",
+      "party": "D",
+      "votes": 51630,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "worcesternorfolk": {
     "demVotes": 27195,
     "repVotes": 37513,
     "othVotes": 0,
-    "totalVotes": 64708
+    "totalVotes": 64708,
+    "candidates": [
+     {
+      "name": "Ryan C. Fattman",
+      "party": "R",
+      "votes": 37513,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Thomas M. Merolli",
+      "party": "D",
+      "votes": 27195
+     }
+    ]
    },
    "plymouthbristol-1": {
     "demVotes": 48652,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 48652,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Marc R. Pacheco",
+      "party": "D",
+      "votes": 48652,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "plymouthbristol-2": {
     "demVotes": 37494,
     "repVotes": 18879,
     "othVotes": 0,
-    "totalVotes": 56373
+    "totalVotes": 56373,
+    "candidates": [
+     {
+      "name": "Michael D. Brady",
+      "party": "D",
+      "votes": 37494,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Scott Hall",
+      "party": "R",
+      "votes": 18879
+     }
+    ]
    },
    "Bristol and Norfolk": {
     "demVotes": 41846,
     "repVotes": 27248,
     "othVotes": 0,
-    "totalVotes": 69094
+    "totalVotes": 69094,
+    "candidates": [
+     {
+      "name": "Paul R. Feeney",
+      "party": "D",
+      "votes": 41846,
+      "winner": true
+     },
+     {
+      "name": "Jacob J. Ventura",
+      "party": "R",
+      "votes": 27248
+     }
+    ]
    },
    "Norfolk and Suffolk": {
     "demVotes": 58443,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 58443,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Michael F. Rush",
+      "party": "D",
+      "votes": 58443,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "Norfolk and Plymouth": {
     "demVotes": 43656,
     "repVotes": 0,
     "othVotes": 13909,
     "totalVotes": 57565,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "John F. Keenan",
+      "party": "D",
+      "votes": 43656,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Alexander N. Mendez",
+      "party": "O",
+      "votes": 13909
+     }
+    ]
    },
    "Hampden and Hampshire": {
     "demVotes": 51633,
     "repVotes": 45300,
     "othVotes": 0,
     "totalVotes": 96933,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Eric P. Lesser",
+      "party": "D",
+      "votes": 51633,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Donald F. Humason Jr.",
+      "party": "R",
+      "votes": 45300,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "Middlesex and Norfolk": {
     "demVotes": 115074,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 115074,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Cynthia Stonecreem",
+      "party": "D",
+      "votes": 60727,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Karen E. Spilka",
+      "party": "D",
+      "votes": 54347,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "Middlesex and Suffolk": {
     "demVotes": 46144,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 46144,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Sal N. Didomenico",
+      "party": "D",
+      "votes": 46144,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "Suffolk and Middlesex": {
     "demVotes": 95677,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 95677,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "William N. Brownsberger",
+      "party": "D",
+      "votes": 50823,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Joseph A. Boncore",
+      "party": "D",
+      "votes": 44854,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "norfolkbristolplymouth": {
     "demVotes": 54198,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 54198,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Walter F. Timilty Jr.",
+      "party": "D",
+      "votes": 54198,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "Middlesex and Worcester": {
     "demVotes": 50828,
     "repVotes": 25546,
     "othVotes": 0,
-    "totalVotes": 76374
+    "totalVotes": 76374,
+    "candidates": [
+     {
+      "name": "James B. Eldridge",
+      "party": "D",
+      "votes": 50828,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Margaret W. Busse",
+      "party": "R",
+      "votes": 25546
+     }
+    ]
    },
    "Plymouth and Barnstable": {
     "demVotes": 32365,
     "repVotes": 46229,
     "othVotes": 0,
-    "totalVotes": 78594
+    "totalVotes": 78594,
+    "candidates": [
+     {
+      "name": "Vinny M. Demacedo",
+      "party": "R",
+      "votes": 46229,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Deborah A. Rudolf",
+      "party": "D",
+      "votes": 32365
+     }
+    ]
    },
    "Worcester and Middlesex": {
     "demVotes": 27935,
     "repVotes": 33199,
     "othVotes": 0,
-    "totalVotes": 61134
+    "totalVotes": 61134,
+    "candidates": [
+     {
+      "name": "Dean Tran",
+      "party": "R",
+      "votes": 33199,
+      "winner": true
+     },
+     {
+      "name": "Susan A. Chalifouxzephir",
+      "party": "D",
+      "votes": 27935
+     }
+    ]
    },
    "norfolkbristolmiddlesex": {
     "demVotes": 37830,
     "repVotes": 35856,
     "othVotes": 0,
-    "totalVotes": 73686
+    "totalVotes": 73686,
+    "candidates": [
+     {
+      "name": "Rebecca L. Rausch",
+      "party": "D",
+      "votes": 37830,
+      "winner": true
+     },
+     {
+      "name": "Richard J. Ross",
+      "party": "R",
+      "votes": 35856,
+      "incumbent": true
+     }
+    ]
    },
    "First Essex and Middlesex": {
     "demVotes": 0,
     "repVotes": 68902,
     "othVotes": 0,
     "totalVotes": 68902,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Bruce E. Tarr",
+      "party": "R",
+      "votes": 68902,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "First Bristol and Plymouth": {
     "demVotes": 39168,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 39168,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Michael J. Rodrigues",
+      "party": "D",
+      "votes": 39168,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "Second Essex and Middlesex": {
     "demVotes": 35854,
     "repVotes": 21202,
     "othVotes": 0,
-    "totalVotes": 57056
+    "totalVotes": 57056,
+    "candidates": [
+     {
+      "name": "Barry R. Finegold",
+      "party": "D",
+      "votes": 35854,
+      "winner": true
+     },
+     {
+      "name": "Joseph M. Espinola III",
+      "party": "R",
+      "votes": 21202
+     }
+    ]
    },
    "Second Bristol and Plymouth": {
     "demVotes": 39839,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 39839,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Mark C. Montigny",
+      "party": "D",
+      "votes": 39839,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "Hampshire-Franklin-Worcester": {
     "demVotes": 56857,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 56857,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Joanne M. Comerford",
+      "party": "D",
+      "votes": 56857,
+      "winner": true
+     }
+    ]
    },
    "berkshirehampshirefranklinhampden": {
     "demVotes": 55828,
     "repVotes": 0,
     "othVotes": 0,
     "totalVotes": 55828,
-    "uncontested": true
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Adam G. Hinds",
+      "party": "D",
+      "votes": 55828,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
    },
    "worcesterhampdenhampshiremiddlesex": {
     "demVotes": 37150,
     "repVotes": 30519,
     "othVotes": 0,
-    "totalVotes": 67669
+    "totalVotes": 67669,
+    "candidates": [
+     {
+      "name": "Anne M. Gobi",
+      "party": "D",
+      "votes": 37150,
+      "incumbent": true,
+      "winner": true
+     },
+     {
+      "name": "Steven R. Hall",
+      "party": "R",
+      "votes": 30519
+     }
+    ]
    }
   }
  }

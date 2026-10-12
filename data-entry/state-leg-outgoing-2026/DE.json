@@ -1,0 +1,62 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 Delaware House of Representatives election",
+   "senate": "2026 Delaware Senate election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "23": [
+   {
+    "name": "Mara Gorman",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for state senate in the 8th district"
+   }
+  ],
+  "33": [
+   {
+    "name": "Charles Postles Jr.",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "38": [
+   {
+    "name": "Ronald E. Gray",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "41": [
+   {
+    "name": "Richard G. Collins",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ]
+ },
+ "senate": {
+  "15": [
+   {
+    "name": "David G. Lawson",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "8": [
+   {
+    "name": "David Sokola",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ]
+ }
+}

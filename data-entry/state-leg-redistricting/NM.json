@@ -1,0 +1,4681 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "1",
+      "popPct": 81.8
+     },
+     {
+      "areaPct": 0.4,
+      "key": "2",
+      "popPct": 18.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Juan",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28119,
+    "pres2020New": 51.5,
+    "pres2020Old": 50.2,
+    "retainedAreaPct": 99.5,
+    "retainedPopPct": 81.8,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-1; gained the rest from the old HD-2 (18%). Entirely in San Juan County. 2020 presidential margin R+50.2 on the 2016\u20132020 lines \u2192 R+51.5 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 42.0,
+      "key": "10",
+      "popPct": 81.6
+     },
+     {
+      "areaPct": 1.4,
+      "key": "12",
+      "popPct": 9.0
+     },
+     {
+      "areaPct": 6.8,
+      "key": "26",
+      "popPct": 4.8
+     },
+     {
+      "areaPct": 0.3,
+      "key": "18",
+      "popPct": 3.0
+     },
+     {
+      "areaPct": 49.5,
+      "key": "69",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30883,
+    "pres2020New": -24.1,
+    "pres2020Old": -23.5,
+    "retainedAreaPct": 42.0,
+    "retainedPopPct": 81.6,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-10; gained the rest from the old HD-12 (9%), the old HD-26 (5%), the old HD-18 (3%) and 1 more. Entirely in Bernalillo County. 2020 presidential margin D+23.5 on the 2016\u20132020 lines \u2192 D+24.1 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 71.9,
+      "key": "11",
+      "popPct": 76.8
+     },
+     {
+      "areaPct": 14.8,
+      "key": "18",
+      "popPct": 12.1
+     },
+     {
+      "areaPct": 13.3,
+      "key": "17",
+      "popPct": 11.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30907,
+    "pres2020New": -54.1,
+    "pres2020Old": -57.4,
+    "retainedAreaPct": 71.9,
+    "retainedPopPct": 76.8,
+    "text": "Kept 77% of its population from the 2016\u20132020 HD-11; gained the rest from the old HD-18 (12%), the old HD-17 (11%). Entirely in Bernalillo County. 2020 presidential margin D+57.4 on the 2016\u20132020 lines \u2192 D+54.1 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 71.8,
+      "key": "12",
+      "popPct": 79.0
+     },
+     {
+      "areaPct": 28.1,
+      "key": "14",
+      "popPct": 20.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30851,
+    "pres2020New": -34.3,
+    "pres2020Old": -32.0,
+    "retainedAreaPct": 71.8,
+    "retainedPopPct": 79.0,
+    "text": "Kept 79% of its population from the 2016\u20132020 HD-12; gained the rest from the old HD-14 (21%). Entirely in Bernalillo County. 2020 presidential margin D+32.0 on the 2016\u20132020 lines \u2192 D+34.3 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 96.3,
+      "key": "13",
+      "popPct": 96.4
+     },
+     {
+      "areaPct": 3.5,
+      "key": "12",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31065,
+    "pres2020New": -31.3,
+    "pres2020Old": -31.9,
+    "retainedAreaPct": 96.3,
+    "retainedPopPct": 96.4,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-13; gained the rest from the old HD-12 (4%). Entirely in Bernalillo County. 2020 presidential margin D+31.9 on the 2016\u20132020 lines \u2192 D+31.3 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 75.8,
+      "key": "14",
+      "popPct": 71.6
+     },
+     {
+      "areaPct": 17.1,
+      "key": "11",
+      "popPct": 19.8
+     },
+     {
+      "areaPct": 2.5,
+      "key": "18",
+      "popPct": 3.7
+     },
+     {
+      "areaPct": 2.8,
+      "key": "12",
+      "popPct": 2.8
+     },
+     {
+      "areaPct": 1.4,
+      "key": "10",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30153,
+    "pres2020New": -48.2,
+    "pres2020Old": -39.8,
+    "retainedAreaPct": 75.8,
+    "retainedPopPct": 71.6,
+    "text": "Kept 72% of its population from the 2016\u20132020 HD-14; gained the rest from the old HD-11 (20%), the old HD-18 (4%), the old HD-12 (3%) and 1 more. Entirely in Bernalillo County. 2020 presidential margin D+39.8 on the 2016\u20132020 lines \u2192 D+48.2 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 62.8,
+      "key": "17",
+      "popPct": 72.7
+     },
+     {
+      "areaPct": 37.2,
+      "key": "15",
+      "popPct": 27.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30979,
+    "pres2020New": -30.9,
+    "pres2020Old": -18.1,
+    "retainedAreaPct": 37.2,
+    "retainedPopPct": 27.2,
+    "text": "A new footprint: only 27% of its population was in the 2016\u20132020 HD-15; it draws from the old HD-17 (73%). Entirely in Bernalillo County. 2020 presidential margin D+18.1 on the 2016\u20132020 lines \u2192 D+30.9 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 92.5,
+      "key": "16",
+      "popPct": 88.7
+     },
+     {
+      "areaPct": 7.4,
+      "key": "26",
+      "popPct": 11.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30716,
+    "pres2020New": -27.2,
+    "pres2020Old": -28.0,
+    "retainedAreaPct": 92.5,
+    "retainedPopPct": 88.7,
+    "text": "Kept 89% of its population from the 2016\u20132020 HD-16; gained the rest from the old HD-26 (11%). Entirely in Bernalillo County. 2020 presidential margin D+28.0 on the 2016\u20132020 lines \u2192 D+27.2 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 46.4,
+      "key": "23",
+      "popPct": 46.6
+     },
+     {
+      "areaPct": 28.7,
+      "key": "68",
+      "popPct": 41.2
+     },
+     {
+      "areaPct": 24.2,
+      "key": "15",
+      "popPct": 11.7
+     },
+     {
+      "areaPct": 0.6,
+      "key": "29",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 98.9
+     },
+     {
+      "county": "Sandoval",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30944,
+    "pres2020New": -13.0,
+    "pres2020Old": -34.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-17; it draws from the old HD-23 (47%), the old HD-68 (41%), the old HD-15 (12%) and 1 more. Spans Bernalillo, Sandoval counties. 2020 presidential margin D+34.1 on the 2016\u20132020 lines \u2192 D+13.0 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 71.8,
+      "key": "18",
+      "popPct": 70.2
+     },
+     {
+      "areaPct": 19.4,
+      "key": "19",
+      "popPct": 22.9
+     },
+     {
+      "areaPct": 8.1,
+      "key": "10",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 0.7,
+      "key": "11",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31036,
+    "pres2020New": -67.0,
+    "pres2020Old": -66.6,
+    "retainedAreaPct": 71.8,
+    "retainedPopPct": 70.2,
+    "text": "Kept 70% of its population from the 2016\u20132020 HD-18; gained the rest from the old HD-19 (23%), the old HD-10 (6%), the old HD-11 (1%). Entirely in Bernalillo County. 2020 presidential margin D+66.6 on the 2016\u20132020 lines \u2192 D+67.0 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 72.4,
+      "key": "19",
+      "popPct": 62.8
+     },
+     {
+      "areaPct": 27.5,
+      "key": "21",
+      "popPct": 37.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30619,
+    "pres2020New": -47.7,
+    "pres2020Old": -55.0,
+    "retainedAreaPct": 72.4,
+    "retainedPopPct": 62.8,
+    "text": "Kept 63% of its population from the 2016\u20132020 HD-19; gained the rest from the old HD-21 (37%). Entirely in Bernalillo County. 2020 presidential margin D+55.0 on the 2016\u20132020 lines \u2192 D+47.7 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 26.1,
+      "key": "2",
+      "popPct": 60.5
+     },
+     {
+      "areaPct": 43.0,
+      "key": "4",
+      "popPct": 20.6
+     },
+     {
+      "areaPct": 1.4,
+      "key": "1",
+      "popPct": 16.0
+     },
+     {
+      "areaPct": 29.5,
+      "key": "65",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Juan",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28268,
+    "pres2020New": 35.7,
+    "pres2020Old": 40.1,
+    "retainedAreaPct": 26.1,
+    "retainedPopPct": 60.5,
+    "text": "Kept 60% of its population from the 2016\u20132020 HD-2; gained the rest from the old HD-4 (21%), the old HD-1 (16%), the old HD-65 (3%). Entirely in San Juan County. 2020 presidential margin R+40.1 on the 2016\u20132020 lines \u2192 R+35.7 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 86.3,
+      "key": "20",
+      "popPct": 80.9
+     },
+     {
+      "areaPct": 7.8,
+      "key": "28",
+      "popPct": 13.8
+     },
+     {
+      "areaPct": 0.9,
+      "key": "21",
+      "popPct": 5.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31002,
+    "pres2020New": -13.9,
+    "pres2020Old": -13.1,
+    "retainedAreaPct": 86.3,
+    "retainedPopPct": 80.9,
+    "text": "Kept 81% of its population from the 2016\u20132020 HD-20; gained the rest from the old HD-28 (14%), the old HD-21 (5%). Entirely in Bernalillo County. 2020 presidential margin D+13.1 on the 2016\u20132020 lines \u2192 D+13.9 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 53.3,
+      "key": "21",
+      "popPct": 53.4
+     },
+     {
+      "areaPct": 19.7,
+      "key": "20",
+      "popPct": 20.8
+     },
+     {
+      "areaPct": 20.3,
+      "key": "24",
+      "popPct": 19.7
+     },
+     {
+      "areaPct": 6.6,
+      "key": "10",
+      "popPct": 6.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29926,
+    "pres2020New": -20.4,
+    "pres2020Old": -27.6,
+    "retainedAreaPct": 53.3,
+    "retainedPopPct": 53.4,
+    "text": "Kept 53% of its population from the 2016\u20132020 HD-21; gained the rest from the old HD-20 (21%), the old HD-24 (20%), the old HD-10 (6%). Entirely in Bernalillo County. 2020 presidential margin D+27.6 on the 2016\u20132020 lines \u2192 D+20.4 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 11.6,
+      "key": "22",
+      "popPct": 57.8
+     },
+     {
+      "areaPct": 45.8,
+      "key": "50",
+      "popPct": 25.2
+     },
+     {
+      "areaPct": 41.1,
+      "key": "70",
+      "popPct": 9.0
+     },
+     {
+      "areaPct": 0.9,
+      "key": "31",
+      "popPct": 5.0
+     },
+     {
+      "areaPct": 0.6,
+      "key": "28",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 66.8
+     },
+     {
+      "county": "Torrance",
+      "popPct": 32.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Torrance",
+      "popPct": 32.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Sandoval",
+      "popPct": 22.2
+     },
+     {
+      "county": "Santa Fe",
+      "popPct": 18.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 30953,
+    "pres2020New": 9.5,
+    "pres2020Old": 0.2,
+    "retainedAreaPct": 11.6,
+    "retainedPopPct": 57.8,
+    "text": "Kept 58% of its population from the 2016\u20132020 HD-22; gained the rest from the old HD-50 (25%), the old HD-70 (9%), the old HD-31 (5%) and 1 more. Counties: gained Torrance (32%); lost Sandoval, Santa Fe. 2020 presidential margin R+0.2 on the 2016\u20132020 lines \u2192 R+9.5 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 86.8,
+      "key": "44",
+      "popPct": 73.2
+     },
+     {
+      "areaPct": 9.9,
+      "key": "60",
+      "popPct": 23.5
+     },
+     {
+      "areaPct": 3.3,
+      "key": "57",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sandoval",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Bernalillo",
+      "popPct": 63.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 30962,
+    "pres2020New": 4.2,
+    "pres2020Old": -15.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-23; it draws from the old HD-44 (73%), the old HD-60 (24%), the old HD-57 (3%). Counties: lost Bernalillo. 2020 presidential margin D+15.7 on the 2016\u20132020 lines \u2192 R+4.2 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 46.8,
+      "key": "24",
+      "popPct": 51.1
+     },
+     {
+      "areaPct": 26.0,
+      "key": "30",
+      "popPct": 23.6
+     },
+     {
+      "areaPct": 20.6,
+      "key": "25",
+      "popPct": 18.5
+     },
+     {
+      "areaPct": 6.6,
+      "key": "28",
+      "popPct": 6.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30824,
+    "pres2020New": -20.3,
+    "pres2020Old": -21.1,
+    "retainedAreaPct": 46.8,
+    "retainedPopPct": 51.1,
+    "text": "Kept 51% of its population from the 2016\u20132020 HD-24; gained the rest from the old HD-30 (24%), the old HD-25 (18%), the old HD-28 (7%). Entirely in Bernalillo County. 2020 presidential margin D+21.1 on the 2016\u20132020 lines \u2192 D+20.3 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 75.3,
+      "key": "25",
+      "popPct": 74.0
+     },
+     {
+      "areaPct": 9.4,
+      "key": "30",
+      "popPct": 9.5
+     },
+     {
+      "areaPct": 6.7,
+      "key": "19",
+      "popPct": 7.7
+     },
+     {
+      "areaPct": 6.4,
+      "key": "17",
+      "popPct": 6.7
+     },
+     {
+      "areaPct": 2.1,
+      "key": "18",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30402,
+    "pres2020New": -39.6,
+    "pres2020Old": -36.7,
+    "retainedAreaPct": 75.3,
+    "retainedPopPct": 74.0,
+    "text": "Kept 74% of its population from the 2016\u20132020 HD-25; gained the rest from the old HD-30 (10%), the old HD-19 (8%), the old HD-17 (7%) and 1 more. Entirely in Bernalillo County. 2020 presidential margin D+36.7 on the 2016\u20132020 lines \u2192 D+39.6 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 98.0,
+      "key": "26",
+      "popPct": 74.5
+     },
+     {
+      "areaPct": 1.0,
+      "key": "29",
+      "popPct": 12.5
+     },
+     {
+      "areaPct": 0.7,
+      "key": "13",
+      "popPct": 9.1
+     },
+     {
+      "areaPct": 0.3,
+      "key": "16",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30951,
+    "pres2020New": -27.5,
+    "pres2020Old": -25.2,
+    "retainedAreaPct": 98.0,
+    "retainedPopPct": 74.5,
+    "text": "Kept 74% of its population from the 2016\u20132020 HD-26; gained the rest from the old HD-29 (12%), the old HD-13 (9%), the old HD-16 (4%). Entirely in Bernalillo County. 2020 presidential margin D+25.2 on the 2016\u20132020 lines \u2192 D+27.5 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 62.4,
+      "key": "27",
+      "popPct": 62.0
+     },
+     {
+      "areaPct": 15.7,
+      "key": "15",
+      "popPct": 17.3
+     },
+     {
+      "areaPct": 7.0,
+      "key": "24",
+      "popPct": 11.2
+     },
+     {
+      "areaPct": 7.9,
+      "key": "31",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 6.9,
+      "key": "17",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30879,
+    "pres2020New": -13.4,
+    "pres2020Old": -10.2,
+    "retainedAreaPct": 62.4,
+    "retainedPopPct": 62.0,
+    "text": "Kept 62% of its population from the 2016\u20132020 HD-27; gained the rest from the old HD-15 (17%), the old HD-24 (11%), the old HD-31 (5%) and 1 more. Entirely in Bernalillo County. 2020 presidential margin D+10.2 on the 2016\u20132020 lines \u2192 D+13.4 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 71.5,
+      "key": "28",
+      "popPct": 69.8
+     },
+     {
+      "areaPct": 14.3,
+      "key": "31",
+      "popPct": 15.3
+     },
+     {
+      "areaPct": 14.3,
+      "key": "24",
+      "popPct": 14.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30942,
+    "pres2020New": -13.5,
+    "pres2020Old": -12.2,
+    "retainedAreaPct": 71.5,
+    "retainedPopPct": 69.8,
+    "text": "Kept 70% of its population from the 2016\u20132020 HD-28; gained the rest from the old HD-31 (15%), the old HD-24 (15%). Entirely in Bernalillo County. 2020 presidential margin D+12.2 on the 2016\u20132020 lines \u2192 D+13.5 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 97.9,
+      "key": "29",
+      "popPct": 65.9
+     },
+     {
+      "areaPct": 0.7,
+      "key": "23",
+      "popPct": 16.8
+     },
+     {
+      "areaPct": 0.4,
+      "key": "68",
+      "popPct": 10.4
+     },
+     {
+      "areaPct": 0.4,
+      "key": "16",
+      "popPct": 6.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30242,
+    "pres2020New": -14.0,
+    "pres2020Old": -12.5,
+    "retainedAreaPct": 97.9,
+    "retainedPopPct": 65.9,
+    "text": "Kept 66% of its population from the 2016\u20132020 HD-29; gained the rest from the old HD-23 (17%), the old HD-68 (10%), the old HD-16 (7%). Entirely in Bernalillo County. 2020 presidential margin D+12.5 on the 2016\u20132020 lines \u2192 D+14.0 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 97.8,
+      "key": "3",
+      "popPct": 90.4
+     },
+     {
+      "areaPct": 2.2,
+      "key": "2",
+      "popPct": 9.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Juan",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28059,
+    "pres2020New": 53.5,
+    "pres2020Old": 53.9,
+    "retainedAreaPct": 97.8,
+    "retainedPopPct": 90.4,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-3; gained the rest from the old HD-2 (10%). Entirely in San Juan County. 2020 presidential margin R+53.9 on the 2016\u20132020 lines \u2192 R+53.5 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 52.5,
+      "key": "30",
+      "popPct": 62.5
+     },
+     {
+      "areaPct": 42.9,
+      "key": "27",
+      "popPct": 32.7
+     },
+     {
+      "areaPct": 4.6,
+      "key": "15",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30534,
+    "pres2020New": -14.8,
+    "pres2020Old": -20.5,
+    "retainedAreaPct": 52.5,
+    "retainedPopPct": 62.5,
+    "text": "Kept 62% of its population from the 2016\u20132020 HD-30; gained the rest from the old HD-27 (33%), the old HD-15 (5%). Entirely in Bernalillo County. 2020 presidential margin D+20.5 on the 2016\u20132020 lines \u2192 D+14.8 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 88.6,
+      "key": "31",
+      "popPct": 76.0
+     },
+     {
+      "areaPct": 11.4,
+      "key": "15",
+      "popPct": 23.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30270,
+    "pres2020New": -4.5,
+    "pres2020Old": -5.7,
+    "retainedAreaPct": 88.6,
+    "retainedPopPct": 76.0,
+    "text": "Kept 76% of its population from the 2016\u20132020 HD-31; gained the rest from the old HD-15 (24%). Entirely in Bernalillo County. 2020 presidential margin D+5.7 on the 2016\u20132020 lines \u2192 D+4.5 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 95.1,
+      "key": "32",
+      "popPct": 93.9
+     },
+     {
+      "areaPct": 4.9,
+      "key": "39",
+      "popPct": 6.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Luna",
+      "popPct": 81.6
+     },
+     {
+      "county": "Hidalgo",
+      "popPct": 12.2
+     },
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 6.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 6.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31142,
+    "pres2020New": 9.7,
+    "pres2020Old": 10.4,
+    "retainedAreaPct": 95.1,
+    "retainedPopPct": 93.9,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-32; gained the rest from the old HD-39 (6%). Counties: gained Do\u00f1a Ana (6%). 2020 presidential margin R+10.4 on the 2016\u20132020 lines \u2192 R+9.7 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 12.2,
+      "key": "33",
+      "popPct": 91.7
+     },
+     {
+      "areaPct": 87.8,
+      "key": "39",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30939,
+    "pres2020New": -23.6,
+    "pres2020Old": -26.7,
+    "retainedAreaPct": 12.2,
+    "retainedPopPct": 91.7,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-33; gained the rest from the old HD-39 (8%). Entirely in Do\u00f1a Ana County. 2020 presidential margin D+26.7 on the 2016\u20132020 lines \u2192 D+23.6 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "34",
+      "popPct": 98.5
+     },
+     {
+      "areaPct": 0.5,
+      "key": "52",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30343,
+    "pres2020New": -27.1,
+    "pres2020Old": -27.9,
+    "retainedAreaPct": 99.5,
+    "retainedPopPct": 98.5,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-34; gained the rest from the old HD-52 (2%). Entirely in Do\u00f1a Ana County. 2020 presidential margin D+27.9 on the 2016\u20132020 lines \u2192 D+27.1 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 78.5,
+      "key": "35",
+      "popPct": 90.6
+     },
+     {
+      "areaPct": 15.6,
+      "key": "36",
+      "popPct": 4.5
+     },
+     {
+      "areaPct": 4.4,
+      "key": "33",
+      "popPct": 3.2
+     },
+     {
+      "areaPct": 1.6,
+      "key": "37",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30411,
+    "pres2020New": -23.9,
+    "pres2020Old": -23.1,
+    "retainedAreaPct": 78.5,
+    "retainedPopPct": 90.6,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-35; gained the rest from the old HD-36 (4%), the old HD-33 (3%), the old HD-37 (2%). Entirely in Do\u00f1a Ana County. 2020 presidential margin D+23.1 on the 2016\u20132020 lines \u2192 D+23.9 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 51.6,
+      "key": "36",
+      "popPct": 69.0
+     },
+     {
+      "areaPct": 48.4,
+      "key": "39",
+      "popPct": 30.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30558,
+    "pres2020New": -8.2,
+    "pres2020Old": -10.1,
+    "retainedAreaPct": 51.6,
+    "retainedPopPct": 69.0,
+    "text": "Kept 69% of its population from the 2016\u20132020 HD-36; gained the rest from the old HD-39 (31%). Entirely in Do\u00f1a Ana County. 2020 presidential margin D+10.1 on the 2016\u20132020 lines \u2192 D+8.2 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 85.3,
+      "key": "37",
+      "popPct": 89.7
+     },
+     {
+      "areaPct": 14.5,
+      "key": "35",
+      "popPct": 10.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29690,
+    "pres2020New": -17.1,
+    "pres2020Old": -15.2,
+    "retainedAreaPct": 85.3,
+    "retainedPopPct": 89.7,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-37; gained the rest from the old HD-35 (10%). Entirely in Do\u00f1a Ana County. 2020 presidential margin D+15.2 on the 2016\u20132020 lines \u2192 D+17.1 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 4.3,
+      "key": "36",
+      "popPct": 33.7
+     },
+     {
+      "areaPct": 30.0,
+      "key": "49",
+      "popPct": 31.8
+     },
+     {
+      "areaPct": 45.7,
+      "key": "38",
+      "popPct": 16.7
+     },
+     {
+      "areaPct": 17.6,
+      "key": "53",
+      "popPct": 11.6
+     },
+     {
+      "areaPct": 2.4,
+      "key": "39",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 51.5
+     },
+     {
+      "county": "Socorro",
+      "popPct": 31.8
+     },
+     {
+      "county": "Sierra",
+      "popPct": 16.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 51.5
+     },
+     {
+      "county": "Socorro",
+      "popPct": 31.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Grant",
+      "popPct": 63.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 30662,
+    "pres2020New": -3.9,
+    "pres2020Old": 6.1,
+    "retainedAreaPct": 45.7,
+    "retainedPopPct": 16.7,
+    "text": "A new footprint: only 17% of its population was in the 2016\u20132020 HD-38; it draws from the old HD-36 (34%), the old HD-49 (32%), the old HD-53 (12%) and 1 more. Counties: gained Do\u00f1a Ana (52%), Socorro (32%); lost Grant. 2020 presidential margin R+6.1 on the 2016\u20132020 lines \u2192 D+3.9 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 63.5,
+      "key": "38",
+      "popPct": 63.3
+     },
+     {
+      "areaPct": 11.4,
+      "key": "39",
+      "popPct": 35.0
+     },
+     {
+      "areaPct": 16.5,
+      "key": "49",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grant",
+      "popPct": 97.3
+     },
+     {
+      "county": "Catron",
+      "popPct": 1.4
+     },
+     {
+      "county": "Hidalgo",
+      "popPct": 1.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 57.4
+     },
+     {
+      "county": "Sierra",
+      "popPct": 5.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 28963,
+    "pres2020New": -5.4,
+    "pres2020Old": -5.1,
+    "retainedAreaPct": 11.4,
+    "retainedPopPct": 35.0,
+    "text": "A new footprint: only 35% of its population was in the 2016\u20132020 HD-39; it draws from the old HD-38 (63%), the old HD-49 (1%). Counties: lost Do\u00f1a Ana, Sierra. 2020 presidential margin D+5.1 on the 2016\u20132020 lines \u2192 D+5.4 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 60.4,
+      "key": "4",
+      "popPct": 80.9
+     },
+     {
+      "areaPct": 0.1,
+      "key": "2",
+      "popPct": 8.7
+     },
+     {
+      "areaPct": 39.5,
+      "key": "5",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 0.0,
+      "key": "1",
+      "popPct": 4.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Juan",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28155,
+    "pres2020New": -14.8,
+    "pres2020Old": -7.5,
+    "retainedAreaPct": 60.4,
+    "retainedPopPct": 80.9,
+    "text": "Kept 81% of its population from the 2016\u20132020 HD-4; gained the rest from the old HD-2 (9%), the old HD-5 (6%), the old HD-1 (4%). Entirely in San Juan County. 2020 presidential margin D+7.5 on the 2016\u20132020 lines \u2192 D+14.8 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 88.4,
+      "key": "40",
+      "popPct": 78.2
+     },
+     {
+      "areaPct": 10.4,
+      "key": "67",
+      "popPct": 13.6
+     },
+     {
+      "areaPct": 0.2,
+      "key": "41",
+      "popPct": 5.7
+     },
+     {
+      "areaPct": 0.8,
+      "key": "70",
+      "popPct": 2.0
+     },
+     {
+      "areaPct": 0.2,
+      "key": "42",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rio Arriba",
+      "popPct": 47.4
+     },
+     {
+      "county": "Colfax",
+      "popPct": 30.8
+     },
+     {
+      "county": "Mora",
+      "popPct": 13.6
+     },
+     {
+      "county": "San Miguel",
+      "popPct": 7.6
+     },
+     {
+      "county": "Taos",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30795,
+    "pres2020New": -22.4,
+    "pres2020Old": -26.6,
+    "retainedAreaPct": 88.4,
+    "retainedPopPct": 78.2,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-40; gained the rest from the old HD-67 (14%), the old HD-41 (6%), the old HD-70 (2%) and 1 more. Spans Rio Arriba, Colfax, Mora, San Miguel and 1 more counties. 2020 presidential margin D+26.6 on the 2016\u20132020 lines \u2192 D+22.4 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 78.6,
+      "key": "41",
+      "popPct": 92.3
+     },
+     {
+      "areaPct": 21.4,
+      "key": "43",
+      "popPct": 7.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rio Arriba",
+      "popPct": 80.2
+     },
+     {
+      "county": "Taos",
+      "popPct": 12.9
+     },
+     {
+      "county": "Sandoval",
+      "popPct": 5.0
+     },
+     {
+      "county": "Santa Fe",
+      "popPct": 1.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Sandoval",
+      "popPct": 5.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29195,
+    "pres2020New": -31.2,
+    "pres2020Old": -35.9,
+    "retainedAreaPct": 78.6,
+    "retainedPopPct": 92.3,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-41; gained the rest from the old HD-43 (7%). Counties: gained Sandoval (5%). 2020 presidential margin D+35.9 on the 2016\u20132020 lines \u2192 D+31.2 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 92.7,
+      "key": "42",
+      "popPct": 99.0
+     },
+     {
+      "areaPct": 7.3,
+      "key": "41",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Taos",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30562,
+    "pres2020New": -53.6,
+    "pres2020Old": -53.6,
+    "retainedAreaPct": 92.7,
+    "retainedPopPct": 99.0,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-42; gained the rest from the old HD-41 (1%). Entirely in Taos County. 2020 presidential margin D+53.6 on the 2016\u20132020 lines \u2192 D+53.6 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "43",
+      "popPct": 95.6
+     },
+     {
+      "areaPct": 0.3,
+      "key": "45",
+      "popPct": 4.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Los Alamos",
+      "popPct": 64.7
+     },
+     {
+      "county": "Santa Fe",
+      "popPct": 26.2
+     },
+     {
+      "county": "Sandoval",
+      "popPct": 9.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Rio Arriba",
+      "popPct": 2.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 29554,
+    "pres2020New": -28.3,
+    "pres2020Old": -25.1,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 95.6,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-43; gained the rest from the old HD-45 (4%). Counties: lost Rio Arriba. 2020 presidential margin D+25.1 on the 2016\u20132020 lines \u2192 D+28.3 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 44.6,
+      "key": "23",
+      "popPct": 36.2
+     },
+     {
+      "areaPct": 22.9,
+      "key": "44",
+      "popPct": 35.0
+     },
+     {
+      "areaPct": 27.8,
+      "key": "15",
+      "popPct": 19.0
+     },
+     {
+      "areaPct": 4.5,
+      "key": "60",
+      "popPct": 9.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sandoval",
+      "popPct": 80.4
+     },
+     {
+      "county": "Bernalillo",
+      "popPct": 19.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Bernalillo",
+      "popPct": 19.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30502,
+    "pres2020New": -8.7,
+    "pres2020Old": 2.8,
+    "retainedAreaPct": 22.9,
+    "retainedPopPct": 35.0,
+    "text": "A new footprint: only 35% of its population was in the 2016\u20132020 HD-44; it draws from the old HD-23 (36%), the old HD-15 (19%), the old HD-60 (10%). Counties: gained Bernalillo (20%). 2020 presidential margin R+2.8 on the 2016\u20132020 lines \u2192 D+8.7 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 99.1,
+      "key": "45",
+      "popPct": 98.4
+     },
+     {
+      "areaPct": 0.7,
+      "key": "43",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Santa Fe",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29899,
+    "pres2020New": -54.9,
+    "pres2020Old": -54.6,
+    "retainedAreaPct": 99.1,
+    "retainedPopPct": 98.4,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-45; gained the rest from the old HD-43 (1%). Entirely in Santa Fe County. 2020 presidential margin D+54.6 on the 2016\u20132020 lines \u2192 D+54.9 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "46",
+      "popPct": 92.2
+     },
+     {
+      "areaPct": 0.2,
+      "key": "47",
+      "popPct": 4.0
+     },
+     {
+      "areaPct": 0.1,
+      "key": "48",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Santa Fe",
+      "popPct": 99.4
+     },
+     {
+      "county": "Rio Arriba",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30934,
+    "pres2020New": -58.5,
+    "pres2020Old": -57.5,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 92.2,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-46; gained the rest from the old HD-47 (4%), the old HD-48 (4%). Spans Santa Fe, Rio Arriba counties. 2020 presidential margin D+57.5 on the 2016\u20132020 lines \u2192 D+58.5 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "47",
+      "popPct": 82.6
+     },
+     {
+      "areaPct": 1.3,
+      "key": "48",
+      "popPct": 17.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Santa Fe",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29898,
+    "pres2020New": -64.6,
+    "pres2020Old": -62.5,
+    "retainedAreaPct": 98.7,
+    "retainedPopPct": 82.6,
+    "text": "Kept 83% of its population from the 2016\u20132020 HD-47; gained the rest from the old HD-48 (17%). Entirely in Santa Fe County. 2020 presidential margin D+62.5 on the 2016\u20132020 lines \u2192 D+64.6 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 84.0,
+      "key": "48",
+      "popPct": 83.9
+     },
+     {
+      "areaPct": 10.6,
+      "key": "46",
+      "popPct": 9.6
+     },
+     {
+      "areaPct": 3.6,
+      "key": "45",
+      "popPct": 4.1
+     },
+     {
+      "areaPct": 1.8,
+      "key": "43",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Santa Fe",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30106,
+    "pres2020New": -61.6,
+    "pres2020Old": -64.2,
+    "retainedAreaPct": 84.0,
+    "retainedPopPct": 83.9,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-48; gained the rest from the old HD-46 (10%), the old HD-45 (4%), the old HD-43 (2%). Entirely in Santa Fe County. 2020 presidential margin D+64.2 on the 2016\u20132020 lines \u2192 D+61.6 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 83.0,
+      "key": "49",
+      "popPct": 44.7
+     },
+     {
+      "areaPct": 2.1,
+      "key": "50",
+      "popPct": 24.8
+     },
+     {
+      "areaPct": 9.1,
+      "key": "38",
+      "popPct": 16.2
+     },
+     {
+      "areaPct": 0.2,
+      "key": "8",
+      "popPct": 6.9
+     },
+     {
+      "areaPct": 5.7,
+      "key": "39",
+      "popPct": 5.5
+     },
+     {
+      "areaPct": 0.0,
+      "key": "7",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Valencia",
+      "popPct": 50.0
+     },
+     {
+      "county": "Sierra",
+      "popPct": 21.6
+     },
+     {
+      "county": "Socorro",
+      "popPct": 17.7
+     },
+     {
+      "county": "Catron",
+      "popPct": 10.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Sierra",
+      "popPct": 21.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29823,
+    "pres2020New": 20.1,
+    "pres2020Old": 9.6,
+    "retainedAreaPct": 83.0,
+    "retainedPopPct": 44.7,
+    "text": "A new footprint: only 45% of its population was in the 2016\u20132020 HD-49; it draws from the old HD-50 (25%), the old HD-38 (16%), the old HD-8 (7%) and 2 more. Counties: gained Sierra (22%). 2020 presidential margin R+9.6 on the 2016\u20132020 lines \u2192 R+20.1 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 66.7,
+      "key": "5",
+      "popPct": 83.3
+     },
+     {
+      "areaPct": 29.5,
+      "key": "9",
+      "popPct": 14.7
+     },
+     {
+      "areaPct": 1.1,
+      "key": "6",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "McKinley",
+      "popPct": 80.0
+     },
+     {
+      "county": "San Juan",
+      "popPct": 20.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28321,
+    "pres2020New": -41.6,
+    "pres2020Old": -37.0,
+    "retainedAreaPct": 66.7,
+    "retainedPopPct": 83.3,
+    "text": "Kept 83% of its population from the 2016\u20132020 HD-5; gained the rest from the old HD-9 (15%), the old HD-6 (2%). Spans McKinley, San Juan counties. 2020 presidential margin D+37.0 on the 2016\u20132020 lines \u2192 D+41.6 on the current lines.",
+    "toEra": "current"
+   },
+   "50": {
+    "contributors": [
+     {
+      "areaPct": 52.4,
+      "key": "50",
+      "popPct": 40.5
+     },
+     {
+      "areaPct": 18.4,
+      "key": "22",
+      "popPct": 37.5
+     },
+     {
+      "areaPct": 16.4,
+      "key": "47",
+      "popPct": 21.0
+     },
+     {
+      "areaPct": 12.8,
+      "key": "70",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Santa Fe",
+      "popPct": 80.6
+     },
+     {
+      "county": "Sandoval",
+      "popPct": 19.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Sandoval",
+      "popPct": 19.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Torrance",
+      "popPct": 31.7
+     },
+     {
+      "county": "Valencia",
+      "popPct": 25.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 30205,
+    "pres2020New": -25.1,
+    "pres2020Old": -9.3,
+    "retainedAreaPct": 52.4,
+    "retainedPopPct": 40.5,
+    "text": "A new footprint: only 40% of its population was in the 2016\u20132020 HD-50; it draws from the old HD-22 (38%), the old HD-47 (21%), the old HD-70 (1%). Counties: gained Sandoval (19%); lost Torrance, Valencia. 2020 presidential margin D+9.3 on the 2016\u20132020 lines \u2192 D+25.1 on the current lines.",
+    "toEra": "current"
+   },
+   "51": {
+    "contributors": [
+     {
+      "areaPct": 35.6,
+      "key": "51",
+      "popPct": 71.7
+     },
+     {
+      "areaPct": 9.0,
+      "key": "56",
+      "popPct": 14.4
+     },
+     {
+      "areaPct": 55.4,
+      "key": "54",
+      "popPct": 13.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Otero",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31050,
+    "pres2020New": 23.2,
+    "pres2020Old": 21.5,
+    "retainedAreaPct": 35.6,
+    "retainedPopPct": 71.7,
+    "text": "Kept 72% of its population from the 2016\u20132020 HD-51; gained the rest from the old HD-56 (14%), the old HD-54 (14%). Entirely in Otero County. 2020 presidential margin R+21.5 on the 2016\u20132020 lines \u2192 R+23.2 on the current lines.",
+    "toEra": "current"
+   },
+   "52": {
+    "contributors": [
+     {
+      "areaPct": 94.3,
+      "key": "52",
+      "popPct": 87.9
+     },
+     {
+      "areaPct": 5.0,
+      "key": "34",
+      "popPct": 5.5
+     },
+     {
+      "areaPct": 0.3,
+      "key": "37",
+      "popPct": 3.7
+     },
+     {
+      "areaPct": 0.2,
+      "key": "33",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30228,
+    "pres2020New": -28.8,
+    "pres2020Old": -29.0,
+    "retainedAreaPct": 94.3,
+    "retainedPopPct": 87.9,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-52; gained the rest from the old HD-34 (6%), the old HD-37 (4%), the old HD-33 (3%). Entirely in Do\u00f1a Ana County. 2020 presidential margin D+29.0 on the 2016\u20132020 lines \u2192 D+28.8 on the current lines.",
+    "toEra": "current"
+   },
+   "53": {
+    "contributors": [
+     {
+      "areaPct": 97.0,
+      "key": "53",
+      "popPct": 73.3
+     },
+     {
+      "areaPct": 3.0,
+      "key": "37",
+      "popPct": 26.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 63.3
+     },
+     {
+      "county": "Otero",
+      "popPct": 36.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31083,
+    "pres2020New": -9.4,
+    "pres2020Old": -2.0,
+    "retainedAreaPct": 97.0,
+    "retainedPopPct": 73.3,
+    "text": "Kept 73% of its population from the 2016\u20132020 HD-53; gained the rest from the old HD-37 (27%). Spans Do\u00f1a Ana, Otero counties. 2020 presidential margin D+2.0 on the 2016\u20132020 lines \u2192 D+9.4 on the current lines.",
+    "toEra": "current"
+   },
+   "54": {
+    "contributors": [
+     {
+      "areaPct": 76.5,
+      "key": "54",
+      "popPct": 41.4
+     },
+     {
+      "areaPct": 15.0,
+      "key": "53",
+      "popPct": 17.9
+     },
+     {
+      "areaPct": 7.5,
+      "key": "56",
+      "popPct": 17.3
+     },
+     {
+      "areaPct": 0.0,
+      "key": "55",
+      "popPct": 11.9
+     },
+     {
+      "areaPct": 1.0,
+      "key": "51",
+      "popPct": 11.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Eddy",
+      "popPct": 51.8
+     },
+     {
+      "county": "Otero",
+      "popPct": 47.7
+     },
+     {
+      "county": "Chaves",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30522,
+    "pres2020New": 55.5,
+    "pres2020Old": 49.0,
+    "retainedAreaPct": 76.5,
+    "retainedPopPct": 41.4,
+    "text": "A new footprint: only 41% of its population was in the 2016\u20132020 HD-54; it draws from the old HD-53 (18%), the old HD-56 (17%), the old HD-55 (12%) and 1 more. Spans Eddy, Otero, Chaves counties. 2020 presidential margin R+49.0 on the 2016\u20132020 lines \u2192 R+55.5 on the current lines.",
+    "toEra": "current"
+   },
+   "55": {
+    "contributors": [
+     {
+      "areaPct": 49.4,
+      "key": "55",
+      "popPct": 73.1
+     },
+     {
+      "areaPct": 50.4,
+      "key": "61",
+      "popPct": 18.5
+     },
+     {
+      "areaPct": 0.2,
+      "key": "54",
+      "popPct": 8.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Eddy",
+      "popPct": 81.5
+     },
+     {
+      "county": "Lea",
+      "popPct": 18.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lea",
+      "popPct": 18.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30606,
+    "pres2020New": 52.4,
+    "pres2020Old": 52.3,
+    "retainedAreaPct": 49.4,
+    "retainedPopPct": 73.1,
+    "text": "Kept 73% of its population from the 2016\u20132020 HD-55; gained the rest from the old HD-61 (18%), the old HD-54 (8%). Counties: gained Lea (18%). 2020 presidential margin R+52.3 on the 2016\u20132020 lines \u2192 R+52.4 on the current lines.",
+    "toEra": "current"
+   },
+   "56": {
+    "contributors": [
+     {
+      "areaPct": 15.8,
+      "key": "56",
+      "popPct": 60.0
+     },
+     {
+      "areaPct": 72.1,
+      "key": "59",
+      "popPct": 26.4
+     },
+     {
+      "areaPct": 12.1,
+      "key": "54",
+      "popPct": 13.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lincoln",
+      "popPct": 64.9
+     },
+     {
+      "county": "Otero",
+      "popPct": 35.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31109,
+    "pres2020New": 34.9,
+    "pres2020Old": 29.0,
+    "retainedAreaPct": 15.8,
+    "retainedPopPct": 60.0,
+    "text": "Kept 60% of its population from the 2016\u20132020 HD-56; gained the rest from the old HD-59 (26%), the old HD-54 (14%). Spans Lincoln, Otero counties. 2020 presidential margin R+29.0 on the 2016\u20132020 lines \u2192 R+34.9 on the current lines.",
+    "toEra": "current"
+   },
+   "57": {
+    "contributors": [
+     {
+      "areaPct": 98.9,
+      "key": "57",
+      "popPct": 91.1
+     },
+     {
+      "areaPct": 1.1,
+      "key": "44",
+      "popPct": 8.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sandoval",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30535,
+    "pres2020New": -2.6,
+    "pres2020Old": -1.4,
+    "retainedAreaPct": 98.9,
+    "retainedPopPct": 91.1,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-57; gained the rest from the old HD-44 (9%). Entirely in Sandoval County. 2020 presidential margin D+1.4 on the 2016\u20132020 lines \u2192 D+2.6 on the current lines.",
+    "toEra": "current"
+   },
+   "58": {
+    "contributors": [
+     {
+      "areaPct": 74.1,
+      "key": "58",
+      "popPct": 92.6
+     },
+     {
+      "areaPct": 0.0,
+      "key": "59",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 25.9,
+      "key": "54",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Chaves",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29739,
+    "pres2020New": 31.0,
+    "pres2020Old": 30.0,
+    "retainedAreaPct": 74.1,
+    "retainedPopPct": 92.6,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-58; gained the rest from the old HD-59 (5%), the old HD-54 (2%). Entirely in Chaves County. 2020 presidential margin R+30.0 on the 2016\u20132020 lines \u2192 R+31.0 on the current lines.",
+    "toEra": "current"
+   },
+   "59": {
+    "contributors": [
+     {
+      "areaPct": 98.3,
+      "key": "59",
+      "popPct": 67.0
+     },
+     {
+      "areaPct": 1.7,
+      "key": "66",
+      "popPct": 33.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Chaves",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Lincoln",
+      "popPct": 26.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 30473,
+    "pres2020New": 43.5,
+    "pres2020Old": 44.1,
+    "retainedAreaPct": 98.3,
+    "retainedPopPct": 67.0,
+    "text": "Kept 67% of its population from the 2016\u20132020 HD-59; gained the rest from the old HD-66 (33%). Counties: lost Lincoln. 2020 presidential margin R+44.1 on the 2016\u20132020 lines \u2192 R+43.5 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 88.7,
+      "key": "6",
+      "popPct": 87.7
+     },
+     {
+      "areaPct": 6.4,
+      "key": "69",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 1.9,
+      "key": "9",
+      "popPct": 3.3
+     },
+     {
+      "areaPct": 3.1,
+      "key": "5",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "McKinley",
+      "popPct": 60.0
+     },
+     {
+      "county": "Cibola",
+      "popPct": 40.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28878,
+    "pres2020New": -25.9,
+    "pres2020Old": -30.1,
+    "retainedAreaPct": 88.7,
+    "retainedPopPct": 87.7,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-6; gained the rest from the old HD-69 (6%), the old HD-9 (3%), the old HD-5 (3%). Spans McKinley, Cibola counties. 2020 presidential margin D+30.1 on the 2016\u20132020 lines \u2192 D+25.9 on the current lines.",
+    "toEra": "current"
+   },
+   "60": {
+    "contributors": [
+     {
+      "areaPct": 75.1,
+      "key": "60",
+      "popPct": 73.7
+     },
+     {
+      "areaPct": 24.9,
+      "key": "57",
+      "popPct": 26.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sandoval",
+      "popPct": 99.1
+     },
+     {
+      "county": "Bernalillo",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30819,
+    "pres2020New": 3.1,
+    "pres2020Old": 2.4,
+    "retainedAreaPct": 75.1,
+    "retainedPopPct": 73.7,
+    "text": "Kept 74% of its population from the 2016\u20132020 HD-60; gained the rest from the old HD-57 (26%). Spans Sandoval, Bernalillo counties. 2020 presidential margin R+2.4 on the 2016\u20132020 lines \u2192 R+3.1 on the current lines.",
+    "toEra": "current"
+   },
+   "61": {
+    "contributors": [
+     {
+      "areaPct": 97.3,
+      "key": "61",
+      "popPct": 83.0
+     },
+     {
+      "areaPct": 2.7,
+      "key": "62",
+      "popPct": 17.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lea",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30760,
+    "pres2020New": 42.5,
+    "pres2020Old": 51.1,
+    "retainedAreaPct": 97.3,
+    "retainedPopPct": 83.0,
+    "text": "Kept 83% of its population from the 2016\u20132020 HD-61; gained the rest from the old HD-62 (17%). Entirely in Lea County. 2020 presidential margin R+51.1 on the 2016\u20132020 lines \u2192 R+42.5 on the current lines.",
+    "toEra": "current"
+   },
+   "62": {
+    "contributors": [
+     {
+      "areaPct": 58.4,
+      "key": "62",
+      "popPct": 97.6
+     },
+     {
+      "areaPct": 41.6,
+      "key": "66",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lea",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31013,
+    "pres2020New": 64.5,
+    "pres2020Old": 62.3,
+    "retainedAreaPct": 58.4,
+    "retainedPopPct": 97.6,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-62; gained the rest from the old HD-66 (2%). Entirely in Lea County. 2020 presidential margin R+62.3 on the 2016\u20132020 lines \u2192 R+64.5 on the current lines.",
+    "toEra": "current"
+   },
+   "63": {
+    "contributors": [
+     {
+      "areaPct": 99.2,
+      "key": "63",
+      "popPct": 86.1
+     },
+     {
+      "areaPct": 0.2,
+      "key": "64",
+      "popPct": 13.2
+     },
+     {
+      "areaPct": 0.6,
+      "key": "70",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Curry",
+      "popPct": 62.7
+     },
+     {
+      "county": "Roosevelt",
+      "popPct": 16.6
+     },
+     {
+      "county": "Guadalupe",
+      "popPct": 14.5
+     },
+     {
+      "county": "De Baca",
+      "popPct": 5.5
+     },
+     {
+      "county": "San Miguel",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 30794,
+    "pres2020New": 16.7,
+    "pres2020Old": 16.9,
+    "retainedAreaPct": 99.2,
+    "retainedPopPct": 86.1,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-63; gained the rest from the old HD-64 (13%), the old HD-70 (1%). Spans Curry, Roosevelt, Guadalupe, De Baca and 1 more counties. 2020 presidential margin R+16.9 on the 2016\u20132020 lines \u2192 R+16.7 on the current lines.",
+    "toEra": "current"
+   },
+   "64": {
+    "contributors": [
+     {
+      "areaPct": 1.2,
+      "key": "64",
+      "popPct": 41.2
+     },
+     {
+      "areaPct": 59.8,
+      "key": "66",
+      "popPct": 35.2
+     },
+     {
+      "areaPct": 11.6,
+      "key": "67",
+      "popPct": 19.8
+     },
+     {
+      "areaPct": 27.4,
+      "key": "59",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Curry",
+      "popPct": 46.9
+     },
+     {
+      "county": "Roosevelt",
+      "popPct": 45.1
+     },
+     {
+      "county": "Chaves",
+      "popPct": 8.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Roosevelt",
+      "popPct": 45.1
+     },
+     {
+      "county": "Chaves",
+      "popPct": 8.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31233,
+    "pres2020New": 52.0,
+    "pres2020Old": 44.7,
+    "retainedAreaPct": 1.2,
+    "retainedPopPct": 41.2,
+    "text": "A new footprint: only 41% of its population was in the 2016\u20132020 HD-64; it draws from the old HD-66 (35%), the old HD-67 (20%), the old HD-59 (4%). Counties: gained Roosevelt (45%), Chaves (8%). 2020 presidential margin R+44.7 on the 2016\u20132020 lines \u2192 R+52.0 on the current lines.",
+    "toEra": "current"
+   },
+   "65": {
+    "contributors": [
+     {
+      "areaPct": 85.6,
+      "key": "65",
+      "popPct": 92.0
+     },
+     {
+      "areaPct": 6.9,
+      "key": "69",
+      "popPct": 3.2
+     },
+     {
+      "areaPct": 0.3,
+      "key": "22",
+      "popPct": 2.5
+     },
+     {
+      "areaPct": 3.1,
+      "key": "3",
+      "popPct": 1.2
+     },
+     {
+      "areaPct": 3.4,
+      "key": "41",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sandoval",
+      "popPct": 76.0
+     },
+     {
+      "county": "Rio Arriba",
+      "popPct": 13.5
+     },
+     {
+      "county": "San Juan",
+      "popPct": 10.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28792,
+    "pres2020New": -48.5,
+    "pres2020Old": -52.1,
+    "retainedAreaPct": 85.6,
+    "retainedPopPct": 92.0,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-65; gained the rest from the old HD-69 (3%), the old HD-22 (2%), the old HD-3 (1%) and 1 more. Spans Sandoval, Rio Arriba, San Juan counties. 2020 presidential margin D+52.1 on the 2016\u20132020 lines \u2192 D+48.5 on the current lines.",
+    "toEra": "current"
+   },
+   "66": {
+    "contributors": [
+     {
+      "areaPct": 16.5,
+      "key": "54",
+      "popPct": 44.1
+     },
+     {
+      "areaPct": 68.5,
+      "key": "66",
+      "popPct": 26.7
+     },
+     {
+      "areaPct": 13.6,
+      "key": "55",
+      "popPct": 25.8
+     },
+     {
+      "areaPct": 1.3,
+      "key": "62",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Eddy",
+      "popPct": 69.9
+     },
+     {
+      "county": "Lea",
+      "popPct": 22.7
+     },
+     {
+      "county": "Chaves",
+      "popPct": 7.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Eddy",
+      "popPct": 69.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Roosevelt",
+      "popPct": 32.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 30866,
+    "pres2020New": 52.0,
+    "pres2020Old": 51.8,
+    "retainedAreaPct": 68.5,
+    "retainedPopPct": 26.7,
+    "text": "A new footprint: only 27% of its population was in the 2016\u20132020 HD-66; it draws from the old HD-54 (44%), the old HD-55 (26%), the old HD-62 (3%). Counties: gained Eddy (70%); lost Roosevelt. 2020 presidential margin R+51.8 on the 2016\u20132020 lines \u2192 R+52.0 on the current lines.",
+    "toEra": "current"
+   },
+   "67": {
+    "contributors": [
+     {
+      "areaPct": 96.5,
+      "key": "67",
+      "popPct": 54.5
+     },
+     {
+      "areaPct": 3.5,
+      "key": "64",
+      "popPct": 45.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Curry",
+      "popPct": 46.5
+     },
+     {
+      "county": "Quay",
+      "popPct": 28.1
+     },
+     {
+      "county": "Union",
+      "popPct": 13.1
+     },
+     {
+      "county": "Colfax",
+      "popPct": 9.3
+     },
+     {
+      "county": "Harding",
+      "popPct": 2.1
+     },
+     {
+      "county": "San Miguel",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Roosevelt",
+      "popPct": 16.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 31141,
+    "pres2020New": 39.4,
+    "pres2020Old": 37.1,
+    "retainedAreaPct": 96.5,
+    "retainedPopPct": 54.5,
+    "text": "Kept 54% of its population from the 2016\u20132020 HD-67; gained the rest from the old HD-64 (46%). Counties: lost Roosevelt. 2020 presidential margin R+37.1 on the 2016\u20132020 lines \u2192 R+39.4 on the current lines.",
+    "toEra": "current"
+   },
+   "68": {
+    "contributors": [
+     {
+      "areaPct": 59.5,
+      "key": "29",
+      "popPct": 53.5
+     },
+     {
+      "areaPct": 40.4,
+      "key": "68",
+      "popPct": 46.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 31616,
+    "pres2020New": -10.6,
+    "pres2020Old": -11.0,
+    "retainedAreaPct": 40.4,
+    "retainedPopPct": 46.5,
+    "text": "A new footprint: only 46% of its population was in the 2016\u20132020 HD-68; it draws from the old HD-29 (54%). Entirely in Bernalillo County. 2020 presidential margin D+11.0 on the 2016\u20132020 lines \u2192 D+10.6 on the current lines.",
+    "toEra": "current"
+   },
+   "69": {
+    "contributors": [
+     {
+      "areaPct": 87.4,
+      "key": "69",
+      "popPct": 92.1
+     },
+     {
+      "areaPct": 1.1,
+      "key": "6",
+      "popPct": 2.8
+     },
+     {
+      "areaPct": 8.2,
+      "key": "5",
+      "popPct": 2.7
+     },
+     {
+      "areaPct": 3.2,
+      "key": "49",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cibola",
+      "popPct": 54.6
+     },
+     {
+      "county": "McKinley",
+      "popPct": 19.2
+     },
+     {
+      "county": "Bernalillo",
+      "popPct": 13.9
+     },
+     {
+      "county": "Valencia",
+      "popPct": 5.5
+     },
+     {
+      "county": "Socorro",
+      "popPct": 5.5
+     },
+     {
+      "county": "San Juan",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28585,
+    "pres2020New": -30.0,
+    "pres2020Old": -26.1,
+    "retainedAreaPct": 87.4,
+    "retainedPopPct": 92.1,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-69; gained the rest from the old HD-6 (3%), the old HD-5 (3%), the old HD-49 (2%). Spans Cibola, McKinley, Bernalillo, Valencia and 2 more counties. 2020 presidential margin D+26.1 on the 2016\u20132020 lines \u2192 D+30.0 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 94.5,
+      "key": "7",
+      "popPct": 75.6
+     },
+     {
+      "areaPct": 2.3,
+      "key": "8",
+      "popPct": 13.9
+     },
+     {
+      "areaPct": 2.7,
+      "key": "49",
+      "popPct": 10.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Valencia",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29836,
+    "pres2020New": 5.9,
+    "pres2020Old": 9.0,
+    "retainedAreaPct": 94.5,
+    "retainedPopPct": 75.6,
+    "text": "Kept 76% of its population from the 2016\u20132020 HD-7; gained the rest from the old HD-8 (14%), the old HD-49 (10%). Entirely in Valencia County. 2020 presidential margin R+9.0 on the 2016\u20132020 lines \u2192 R+5.9 on the current lines.",
+    "toEra": "current"
+   },
+   "70": {
+    "contributors": [
+     {
+      "areaPct": 93.0,
+      "key": "70",
+      "popPct": 79.7
+     },
+     {
+      "areaPct": 6.5,
+      "key": "40",
+      "popPct": 12.9
+     },
+     {
+      "areaPct": 0.4,
+      "key": "50",
+      "popPct": 7.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Miguel",
+      "popPct": 82.9
+     },
+     {
+      "county": "Torrance",
+      "popPct": 17.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29376,
+    "pres2020New": -26.6,
+    "pres2020Old": -22.8,
+    "retainedAreaPct": 93.0,
+    "retainedPopPct": 79.7,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-70; gained the rest from the old HD-40 (13%), the old HD-50 (7%). Spans San Miguel, Torrance counties. 2020 presidential margin D+22.8 on the 2016\u20132020 lines \u2192 D+26.6 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 88.9,
+      "key": "8",
+      "popPct": 84.0
+     },
+     {
+      "areaPct": 11.0,
+      "key": "7",
+      "popPct": 16.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Valencia",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29904,
+    "pres2020New": 13.5,
+    "pres2020Old": 11.5,
+    "retainedAreaPct": 88.9,
+    "retainedPopPct": 84.0,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-8; gained the rest from the old HD-7 (16%). Entirely in Valencia County. 2020 presidential margin R+11.5 on the 2016\u20132020 lines \u2192 R+13.5 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 65.1,
+      "key": "9",
+      "popPct": 82.2
+     },
+     {
+      "areaPct": 32.9,
+      "key": "6",
+      "popPct": 10.4
+     },
+     {
+      "areaPct": 2.0,
+      "key": "5",
+      "popPct": 7.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "McKinley",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "San Juan",
+      "popPct": 7.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 27423,
+    "pres2020New": -32.2,
+    "pres2020Old": -36.3,
+    "retainedAreaPct": 65.1,
+    "retainedPopPct": 82.2,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-9; gained the rest from the old HD-6 (10%), the old HD-5 (8%). Counties: lost San Juan. 2020 presidential margin D+36.3 on the 2016\u20132020 lines \u2192 D+32.2 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 19.3,
+      "key": "1",
+      "popPct": 84.4
+     },
+     {
+      "areaPct": 5.7,
+      "key": "3",
+      "popPct": 10.4
+     },
+     {
+      "areaPct": 58.3,
+      "key": "2",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 16.7,
+      "key": "22",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Juan",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 47072,
+    "pres2020New": 31.9,
+    "pres2020Old": 37.1,
+    "retainedAreaPct": 19.3,
+    "retainedPopPct": 84.4,
+    "text": "Kept 84% of its population from the 2016\u20132020 SD-1; gained the rest from the old SD-3 (10%), the old SD-2 (4%), the old SD-22 (2%). Entirely in San Juan County. 2020 presidential margin R+37.1 on the 2016\u20132020 lines \u2192 R+31.9 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 43.6,
+      "key": "13",
+      "popPct": 42.4
+     },
+     {
+      "areaPct": 15.3,
+      "key": "23",
+      "popPct": 24.5
+     },
+     {
+      "areaPct": 29.0,
+      "key": "10",
+      "popPct": 21.9
+     },
+     {
+      "areaPct": 5.1,
+      "key": "12",
+      "popPct": 7.4
+     },
+     {
+      "areaPct": 7.0,
+      "key": "9",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Sandoval",
+      "popPct": 16.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 49600,
+    "pres2020New": -27.6,
+    "pres2020Old": -13.2,
+    "retainedAreaPct": 29.0,
+    "retainedPopPct": 21.9,
+    "text": "A new footprint: only 22% of its population was in the 2016\u20132020 SD-10; it draws from the old SD-13 (42%), the old SD-23 (24%), the old SD-12 (7%) and 1 more. Counties: lost Sandoval. 2020 presidential margin D+13.2 on the 2016\u20132020 lines \u2192 D+27.6 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 89.7,
+      "key": "11",
+      "popPct": 92.0
+     },
+     {
+      "areaPct": 9.4,
+      "key": "12",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 0.7,
+      "key": "26",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 50462,
+    "pres2020New": -33.6,
+    "pres2020Old": -33.4,
+    "retainedAreaPct": 89.7,
+    "retainedPopPct": 92.0,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-11; gained the rest from the old SD-12 (7%), the old SD-26 (1%). Entirely in Bernalillo County. 2020 presidential margin D+33.4 on the 2016\u20132020 lines \u2192 D+33.6 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 38.8,
+      "key": "10",
+      "popPct": 32.7
+     },
+     {
+      "areaPct": 24.0,
+      "key": "9",
+      "popPct": 28.5
+     },
+     {
+      "areaPct": 26.4,
+      "key": "40",
+      "popPct": 27.5
+     },
+     {
+      "areaPct": 10.9,
+      "key": "23",
+      "popPct": 11.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sandoval",
+      "popPct": 65.7
+     },
+     {
+      "county": "Bernalillo",
+      "popPct": 34.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Sandoval",
+      "popPct": 65.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 50854,
+    "pres2020New": -1.8,
+    "pres2020Old": -56.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-12; it draws from the old SD-10 (33%), the old SD-9 (28%), the old SD-40 (28%) and 1 more. Counties: gained Sandoval (66%). 2020 presidential margin D+56.2 on the 2016\u20132020 lines \u2192 D+1.8 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 61.2,
+      "key": "13",
+      "popPct": 50.8
+     },
+     {
+      "areaPct": 32.1,
+      "key": "12",
+      "popPct": 44.9
+     },
+     {
+      "areaPct": 3.3,
+      "key": "10",
+      "popPct": 3.1
+     },
+     {
+      "areaPct": 2.7,
+      "key": "15",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 48859,
+    "pres2020New": -46.6,
+    "pres2020Old": -37.4,
+    "retainedAreaPct": 61.2,
+    "retainedPopPct": 50.8,
+    "text": "Kept 51% of its population from the 2016\u20132020 SD-13; gained the rest from the old SD-12 (45%), the old SD-10 (3%), the old SD-15 (1%). Entirely in Bernalillo County. 2020 presidential margin D+37.4 on the 2016\u20132020 lines \u2192 D+46.6 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 33.7,
+      "key": "14",
+      "popPct": 92.2
+     },
+     {
+      "areaPct": 0.9,
+      "key": "12",
+      "popPct": 6.3
+     },
+     {
+      "areaPct": 65.4,
+      "key": "29",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49321,
+    "pres2020New": -26.3,
+    "pres2020Old": -24.7,
+    "retainedAreaPct": 33.7,
+    "retainedPopPct": 92.2,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-14; gained the rest from the old SD-12 (6%), the old SD-29 (1%). Entirely in Bernalillo County. 2020 presidential margin D+24.7 on the 2016\u20132020 lines \u2192 D+26.3 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 70.7,
+      "key": "15",
+      "popPct": 80.0
+     },
+     {
+      "areaPct": 5.3,
+      "key": "21",
+      "popPct": 7.7
+     },
+     {
+      "areaPct": 12.8,
+      "key": "12",
+      "popPct": 4.7
+     },
+     {
+      "areaPct": 8.0,
+      "key": "16",
+      "popPct": 4.3
+     },
+     {
+      "areaPct": 3.2,
+      "key": "18",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49954,
+    "pres2020New": -25.0,
+    "pres2020Old": -26.0,
+    "retainedAreaPct": 70.7,
+    "retainedPopPct": 80.0,
+    "text": "Kept 80% of its population from the 2016\u20132020 SD-15; gained the rest from the old SD-21 (8%), the old SD-12 (5%), the old SD-16 (4%) and 1 more. Entirely in Bernalillo County. 2020 presidential margin D+26.0 on the 2016\u20132020 lines \u2192 D+25.0 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 87.7,
+      "key": "16",
+      "popPct": 67.4
+     },
+     {
+      "areaPct": 6.2,
+      "key": "12",
+      "popPct": 16.5
+     },
+     {
+      "areaPct": 6.0,
+      "key": "19",
+      "popPct": 16.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 50420,
+    "pres2020New": -54.6,
+    "pres2020Old": -57.9,
+    "retainedAreaPct": 87.7,
+    "retainedPopPct": 67.4,
+    "text": "Kept 67% of its population from the 2016\u20132020 SD-16; gained the rest from the old SD-12 (16%), the old SD-19 (16%). Entirely in Bernalillo County. 2020 presidential margin D+57.9 on the 2016\u20132020 lines \u2192 D+54.6 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 79.9,
+      "key": "17",
+      "popPct": 86.5
+     },
+     {
+      "areaPct": 12.6,
+      "key": "16",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 7.4,
+      "key": "19",
+      "popPct": 6.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49000,
+    "pres2020New": -31.7,
+    "pres2020Old": -29.8,
+    "retainedAreaPct": 79.9,
+    "retainedPopPct": 86.5,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-17; gained the rest from the old SD-16 (7%), the old SD-19 (6%). Entirely in Bernalillo County. 2020 presidential margin D+29.8 on the 2016\u20132020 lines \u2192 D+31.7 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 58.0,
+      "key": "18",
+      "popPct": 63.1
+     },
+     {
+      "areaPct": 18.6,
+      "key": "16",
+      "popPct": 15.8
+     },
+     {
+      "areaPct": 15.8,
+      "key": "15",
+      "popPct": 14.2
+     },
+     {
+      "areaPct": 7.6,
+      "key": "20",
+      "popPct": 7.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51808,
+    "pres2020New": -20.2,
+    "pres2020Old": -16.6,
+    "retainedAreaPct": 58.0,
+    "retainedPopPct": 63.1,
+    "text": "Kept 63% of its population from the 2016\u20132020 SD-18; gained the rest from the old SD-16 (16%), the old SD-15 (14%), the old SD-20 (7%). Entirely in Bernalillo County. 2020 presidential margin D+16.6 on the 2016\u20132020 lines \u2192 D+20.2 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 94.3,
+      "key": "19",
+      "popPct": 80.4
+     },
+     {
+      "areaPct": 0.9,
+      "key": "20",
+      "popPct": 15.4
+     },
+     {
+      "areaPct": 0.7,
+      "key": "21",
+      "popPct": 3.0
+     },
+     {
+      "areaPct": 4.1,
+      "key": "39",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 60.7
+     },
+     {
+      "county": "Santa Fe",
+      "popPct": 20.9
+     },
+     {
+      "county": "Torrance",
+      "popPct": 16.7
+     },
+     {
+      "county": "Sandoval",
+      "popPct": 1.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 50419,
+    "pres2020New": 7.9,
+    "pres2020Old": 9.3,
+    "retainedAreaPct": 94.3,
+    "retainedPopPct": 80.4,
+    "text": "Kept 80% of its population from the 2016\u20132020 SD-19; gained the rest from the old SD-20 (15%), the old SD-21 (3%), the old SD-39 (1%). Spans Bernalillo, Santa Fe, Torrance, Sandoval counties. 2020 presidential margin R+9.3 on the 2016\u20132020 lines \u2192 R+7.9 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 97.6,
+      "key": "2",
+      "popPct": 83.6
+     },
+     {
+      "areaPct": 2.4,
+      "key": "1",
+      "popPct": 16.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Juan",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 47022,
+    "pres2020New": 54.7,
+    "pres2020Old": 55.0,
+    "retainedAreaPct": 97.6,
+    "retainedPopPct": 83.6,
+    "text": "Kept 84% of its population from the 2016\u20132020 SD-2; gained the rest from the old SD-1 (16%). Entirely in San Juan County. 2020 presidential margin R+55.0 on the 2016\u20132020 lines \u2192 R+54.7 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 89.3,
+      "key": "20",
+      "popPct": 68.3
+     },
+     {
+      "areaPct": 6.0,
+      "key": "18",
+      "popPct": 21.8
+     },
+     {
+      "areaPct": 2.1,
+      "key": "17",
+      "popPct": 7.3
+     },
+     {
+      "areaPct": 0.8,
+      "key": "15",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 50561,
+    "pres2020New": -17.4,
+    "pres2020Old": -14.6,
+    "retainedAreaPct": 89.3,
+    "retainedPopPct": 68.3,
+    "text": "Kept 68% of its population from the 2016\u20132020 SD-20; gained the rest from the old SD-18 (22%), the old SD-17 (7%), the old SD-15 (2%). Entirely in Bernalillo County. 2020 presidential margin D+14.6 on the 2016\u20132020 lines \u2192 D+17.4 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 90.8,
+      "key": "21",
+      "popPct": 87.0
+     },
+     {
+      "areaPct": 4.7,
+      "key": "18",
+      "popPct": 7.4
+     },
+     {
+      "areaPct": 4.5,
+      "key": "20",
+      "popPct": 5.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51839,
+    "pres2020New": -5.2,
+    "pres2020Old": -4.8,
+    "retainedAreaPct": 90.8,
+    "retainedPopPct": 87.0,
+    "text": "Kept 87% of its population from the 2016\u20132020 SD-21; gained the rest from the old SD-18 (7%), the old SD-20 (6%). Entirely in Bernalillo County. 2020 presidential margin D+4.8 on the 2016\u20132020 lines \u2192 D+5.2 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 85.0,
+      "key": "22",
+      "popPct": 81.8
+     },
+     {
+      "areaPct": 0.0,
+      "key": "40",
+      "popPct": 7.5
+     },
+     {
+      "areaPct": 8.8,
+      "key": "4",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 4.6,
+      "key": "5",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 1.5,
+      "key": "2",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sandoval",
+      "popPct": 53.2
+     },
+     {
+      "county": "McKinley",
+      "popPct": 24.0
+     },
+     {
+      "county": "Rio Arriba",
+      "popPct": 12.8
+     },
+     {
+      "county": "San Juan",
+      "popPct": 6.8
+     },
+     {
+      "county": "Bernalillo",
+      "popPct": 3.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49596,
+    "pres2020New": -31.7,
+    "pres2020Old": -32.3,
+    "retainedAreaPct": 85.0,
+    "retainedPopPct": 81.8,
+    "text": "Kept 82% of its population from the 2016\u20132020 SD-22; gained the rest from the old SD-40 (8%), the old SD-4 (7%), the old SD-5 (3%) and 1 more. Spans Sandoval, McKinley, Rio Arriba, San Juan and 1 more counties. 2020 presidential margin D+32.3 on the 2016\u20132020 lines \u2192 D+31.7 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 95.6,
+      "key": "23",
+      "popPct": 70.8
+     },
+     {
+      "areaPct": 3.1,
+      "key": "26",
+      "popPct": 17.3
+     },
+     {
+      "areaPct": 0.5,
+      "key": "10",
+      "popPct": 9.9
+     },
+     {
+      "areaPct": 0.5,
+      "key": "13",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 52559,
+    "pres2020New": -16.6,
+    "pres2020Old": -11.8,
+    "retainedAreaPct": 95.6,
+    "retainedPopPct": 70.8,
+    "text": "Kept 71% of its population from the 2016\u20132020 SD-23; gained the rest from the old SD-26 (17%), the old SD-10 (10%), the old SD-13 (2%). Entirely in Bernalillo County. 2020 presidential margin D+11.8 on the 2016\u20132020 lines \u2192 D+16.6 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 97.2,
+      "key": "24",
+      "popPct": 96.9
+     },
+     {
+      "areaPct": 2.7,
+      "key": "39",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Santa Fe",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51007,
+    "pres2020New": -58.8,
+    "pres2020Old": -58.8,
+    "retainedAreaPct": 97.2,
+    "retainedPopPct": 96.9,
+    "text": "Kept 97% of its population from the 2016\u20132020 SD-24; gained the rest from the old SD-39 (3%). Entirely in Santa Fe County. 2020 presidential margin D+58.8 on the 2016\u20132020 lines \u2192 D+58.8 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 99.1,
+      "key": "25",
+      "popPct": 95.5
+     },
+     {
+      "areaPct": 0.2,
+      "key": "24",
+      "popPct": 4.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Santa Fe",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51132,
+    "pres2020New": -64.9,
+    "pres2020Old": -65.1,
+    "retainedAreaPct": 99.1,
+    "retainedPopPct": 95.5,
+    "text": "Kept 96% of its population from the 2016\u20132020 SD-25; gained the rest from the old SD-24 (4%). Entirely in Santa Fe County. 2020 presidential margin D+65.1 on the 2016\u20132020 lines \u2192 D+64.9 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 74.1,
+      "key": "26",
+      "popPct": 82.3
+     },
+     {
+      "areaPct": 12.8,
+      "key": "12",
+      "popPct": 9.1
+     },
+     {
+      "areaPct": 8.2,
+      "key": "13",
+      "popPct": 5.3
+     },
+     {
+      "areaPct": 4.9,
+      "key": "23",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bernalillo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49862,
+    "pres2020New": -28.9,
+    "pres2020Old": -30.4,
+    "retainedAreaPct": 74.1,
+    "retainedPopPct": 82.3,
+    "text": "Kept 82% of its population from the 2016\u20132020 SD-26; gained the rest from the old SD-12 (9%), the old SD-13 (5%), the old SD-23 (3%). Entirely in Bernalillo County. 2020 presidential margin D+30.4 on the 2016\u20132020 lines \u2192 D+28.9 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 97.3,
+      "key": "27",
+      "popPct": 76.7
+     },
+     {
+      "areaPct": 1.8,
+      "key": "33",
+      "popPct": 13.2
+     },
+     {
+      "areaPct": 0.9,
+      "key": "7",
+      "popPct": 7.9
+     },
+     {
+      "areaPct": 0.0,
+      "key": "32",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Chaves",
+      "popPct": 42.6
+     },
+     {
+      "county": "Roosevelt",
+      "popPct": 37.0
+     },
+     {
+      "county": "Curry",
+      "popPct": 14.9
+     },
+     {
+      "county": "De Baca",
+      "popPct": 3.3
+     },
+     {
+      "county": "Lea",
+      "popPct": 2.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51845,
+    "pres2020New": 47.9,
+    "pres2020Old": 44.0,
+    "retainedAreaPct": 97.3,
+    "retainedPopPct": 76.7,
+    "text": "Kept 77% of its population from the 2016\u20132020 SD-27; gained the rest from the old SD-33 (13%), the old SD-7 (8%), the old SD-32 (2%). Spans Chaves, Roosevelt, Curry, De Baca and 1 more counties. 2020 presidential margin R+44.0 on the 2016\u20132020 lines \u2192 R+47.9 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 77.7,
+      "key": "35",
+      "popPct": 50.7
+     },
+     {
+      "areaPct": 22.3,
+      "key": "28",
+      "popPct": 49.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grant",
+      "popPct": 49.3
+     },
+     {
+      "county": "Luna",
+      "popPct": 43.2
+     },
+     {
+      "county": "Hidalgo",
+      "popPct": 7.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Luna",
+      "popPct": 43.2
+     },
+     {
+      "county": "Hidalgo",
+      "popPct": 7.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Socorro",
+      "popPct": 31.5
+     },
+     {
+      "county": "Catron",
+      "popPct": 7.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 50870,
+    "pres2020New": -4.3,
+    "pres2020Old": -1.0,
+    "retainedAreaPct": 22.3,
+    "retainedPopPct": 49.3,
+    "text": "A new footprint: only 49% of its population was in the 2016\u20132020 SD-28; it draws from the old SD-35 (51%). Counties: gained Luna (43%), Hidalgo (8%); lost Socorro, Catron. 2020 presidential margin D+1.0 on the 2016\u20132020 lines \u2192 D+4.3 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 6.0,
+      "key": "29",
+      "popPct": 57.9
+     },
+     {
+      "areaPct": 5.3,
+      "key": "30",
+      "popPct": 21.3
+     },
+     {
+      "areaPct": 88.8,
+      "key": "28",
+      "popPct": 20.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Valencia",
+      "popPct": 79.2
+     },
+     {
+      "county": "Socorro",
+      "popPct": 20.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Socorro",
+      "popPct": 20.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Bernalillo",
+      "popPct": 5.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 51756,
+    "pres2020New": 8.5,
+    "pres2020Old": 5.7,
+    "retainedAreaPct": 6.0,
+    "retainedPopPct": 57.9,
+    "text": "Kept 58% of its population from the 2016\u20132020 SD-29; gained the rest from the old SD-30 (21%), the old SD-28 (21%). Counties: gained Socorro (21%); lost Bernalillo. 2020 presidential margin R+5.7 on the 2016\u20132020 lines \u2192 R+8.5 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 71.0,
+      "key": "3",
+      "popPct": 77.8
+     },
+     {
+      "areaPct": 2.2,
+      "key": "4",
+      "popPct": 13.9
+     },
+     {
+      "areaPct": 10.2,
+      "key": "2",
+      "popPct": 4.7
+     },
+     {
+      "areaPct": 16.7,
+      "key": "22",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "McKinley",
+      "popPct": 56.7
+     },
+     {
+      "county": "San Juan",
+      "popPct": 43.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 45780,
+    "pres2020New": -28.7,
+    "pres2020Old": -28.9,
+    "retainedAreaPct": 71.0,
+    "retainedPopPct": 77.8,
+    "text": "Kept 78% of its population from the 2016\u20132020 SD-3; gained the rest from the old SD-4 (14%), the old SD-2 (5%), the old SD-22 (4%). Spans McKinley, San Juan counties. 2020 presidential margin D+28.9 on the 2016\u20132020 lines \u2192 D+28.7 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 83.8,
+      "key": "30",
+      "popPct": 64.7
+     },
+     {
+      "areaPct": 11.6,
+      "key": "29",
+      "popPct": 20.1
+     },
+     {
+      "areaPct": 1.4,
+      "key": "14",
+      "popPct": 10.0
+     },
+     {
+      "areaPct": 3.2,
+      "key": "4",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Valencia",
+      "popPct": 45.7
+     },
+     {
+      "county": "Cibola",
+      "popPct": 25.5
+     },
+     {
+      "county": "Bernalillo",
+      "popPct": 14.9
+     },
+     {
+      "county": "McKinley",
+      "popPct": 9.7
+     },
+     {
+      "county": "Socorro",
+      "popPct": 4.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Bernalillo",
+      "popPct": 14.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 48142,
+    "pres2020New": -16.7,
+    "pres2020Old": -2.2,
+    "retainedAreaPct": 83.8,
+    "retainedPopPct": 64.7,
+    "text": "Kept 65% of its population from the 2016\u20132020 SD-30; gained the rest from the old SD-29 (20%), the old SD-14 (10%), the old SD-4 (5%). Counties: gained Bernalillo (15%). 2020 presidential margin D+2.2 on the 2016\u20132020 lines \u2192 D+16.7 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 88.6,
+      "key": "31",
+      "popPct": 76.1
+     },
+     {
+      "areaPct": 11.4,
+      "key": "34",
+      "popPct": 23.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 83.2
+     },
+     {
+      "county": "Otero",
+      "popPct": 16.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Otero",
+      "popPct": 16.8
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49786,
+    "pres2020New": -29.2,
+    "pres2020Old": -27.9,
+    "retainedAreaPct": 88.6,
+    "retainedPopPct": 76.1,
+    "text": "Kept 76% of its population from the 2016\u20132020 SD-31; gained the rest from the old SD-34 (24%). Counties: gained Otero (17%). 2020 presidential margin D+27.9 on the 2016\u20132020 lines \u2192 D+29.2 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 89.3,
+      "key": "32",
+      "popPct": 78.7
+     },
+     {
+      "areaPct": 8.3,
+      "key": "42",
+      "popPct": 13.1
+     },
+     {
+      "areaPct": 0.1,
+      "key": "33",
+      "popPct": 6.8
+     },
+     {
+      "areaPct": 2.3,
+      "key": "27",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Chaves",
+      "popPct": 76.5
+     },
+     {
+      "county": "Eddy",
+      "popPct": 23.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Otero",
+      "popPct": 8.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 51895,
+    "pres2020New": 40.8,
+    "pres2020Old": 30.0,
+    "retainedAreaPct": 89.3,
+    "retainedPopPct": 78.7,
+    "text": "Kept 79% of its population from the 2016\u20132020 SD-32; gained the rest from the old SD-42 (13%), the old SD-33 (7%), the old SD-27 (1%). Counties: lost Otero. 2020 presidential margin R+30.0 on the 2016\u20132020 lines \u2192 R+40.8 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 36.4,
+      "key": "33",
+      "popPct": 66.2
+     },
+     {
+      "areaPct": 47.7,
+      "key": "39",
+      "popPct": 15.0
+     },
+     {
+      "areaPct": 15.7,
+      "key": "32",
+      "popPct": 11.4
+     },
+     {
+      "areaPct": 0.2,
+      "key": "34",
+      "popPct": 7.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Otero",
+      "popPct": 54.7
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 38.9
+     },
+     {
+      "county": "Chaves",
+      "popPct": 6.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51928,
+    "pres2020New": 30.4,
+    "pres2020Old": 32.3,
+    "retainedAreaPct": 36.4,
+    "retainedPopPct": 66.2,
+    "text": "Kept 66% of its population from the 2016\u20132020 SD-33; gained the rest from the old SD-39 (15%), the old SD-32 (11%), the old SD-34 (7%). Spans Otero, Lincoln, Chaves counties. 2020 presidential margin R+32.3 on the 2016\u20132020 lines \u2192 R+30.4 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 87.5,
+      "key": "34",
+      "popPct": 70.5
+     },
+     {
+      "areaPct": 11.6,
+      "key": "42",
+      "popPct": 12.6
+     },
+     {
+      "areaPct": 0.0,
+      "key": "41",
+      "popPct": 11.9
+     },
+     {
+      "areaPct": 0.9,
+      "key": "33",
+      "popPct": 4.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Otero",
+      "popPct": 60.2
+     },
+     {
+      "county": "Eddy",
+      "popPct": 39.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 6.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 51749,
+    "pres2020New": 38.3,
+    "pres2020Old": 33.8,
+    "retainedAreaPct": 87.5,
+    "retainedPopPct": 70.5,
+    "text": "Kept 70% of its population from the 2016\u20132020 SD-34; gained the rest from the old SD-42 (13%), the old SD-41 (12%), the old SD-33 (5%). Counties: lost Do\u00f1a Ana. 2020 presidential margin R+33.8 on the 2016\u20132020 lines \u2192 R+38.3 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 5.3,
+      "key": "37",
+      "popPct": 41.9
+     },
+     {
+      "areaPct": 27.3,
+      "key": "35",
+      "popPct": 34.2
+     },
+     {
+      "areaPct": 67.3,
+      "key": "28",
+      "popPct": 20.0
+     },
+     {
+      "areaPct": 0.1,
+      "key": "36",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 50.6
+     },
+     {
+      "county": "Sierra",
+      "popPct": 22.1
+     },
+     {
+      "county": "Socorro",
+      "popPct": 7.3
+     },
+     {
+      "county": "Catron",
+      "popPct": 6.8
+     },
+     {
+      "county": "Luna",
+      "popPct": 6.6
+     },
+     {
+      "county": "Grant",
+      "popPct": 5.9
+     },
+     {
+      "county": "Hidalgo",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Socorro",
+      "popPct": 7.3
+     },
+     {
+      "county": "Catron",
+      "popPct": 6.8
+     },
+     {
+      "county": "Grant",
+      "popPct": 5.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 52509,
+    "pres2020New": 12.6,
+    "pres2020Old": 11.1,
+    "retainedAreaPct": 27.3,
+    "retainedPopPct": 34.2,
+    "text": "A new footprint: only 34% of its population was in the 2016\u20132020 SD-35; it draws from the old SD-37 (42%), the old SD-28 (20%), the old SD-36 (4%). Counties: gained Socorro (7%), Catron (7%), Grant (6%). 2020 presidential margin R+11.1 on the 2016\u20132020 lines \u2192 R+12.6 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "36",
+      "popPct": 87.8
+     },
+     {
+      "areaPct": 0.2,
+      "key": "38",
+      "popPct": 6.7
+     },
+     {
+      "areaPct": 0.3,
+      "key": "37",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 50563,
+    "pres2020New": -15.8,
+    "pres2020Old": -13.7,
+    "retainedAreaPct": 99.5,
+    "retainedPopPct": 87.8,
+    "text": "Kept 88% of its population from the 2016\u20132020 SD-36; gained the rest from the old SD-38 (7%), the old SD-37 (6%). Entirely in Do\u00f1a Ana County. 2020 presidential margin D+13.7 on the 2016\u20132020 lines \u2192 D+15.8 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 19.8,
+      "key": "37",
+      "popPct": 70.7
+     },
+     {
+      "areaPct": 0.3,
+      "key": "38",
+      "popPct": 15.1
+     },
+     {
+      "areaPct": 79.8,
+      "key": "31",
+      "popPct": 8.2
+     },
+     {
+      "areaPct": 0.1,
+      "key": "36",
+      "popPct": 6.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49469,
+    "pres2020New": -17.8,
+    "pres2020Old": -12.8,
+    "retainedAreaPct": 19.8,
+    "retainedPopPct": 70.7,
+    "text": "Kept 71% of its population from the 2016\u20132020 SD-37; gained the rest from the old SD-38 (15%), the old SD-31 (8%), the old SD-36 (6%). Entirely in Do\u00f1a Ana County. 2020 presidential margin D+12.8 on the 2016\u20132020 lines \u2192 D+17.8 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 80.0,
+      "key": "38",
+      "popPct": 70.5
+     },
+     {
+      "areaPct": 6.7,
+      "key": "31",
+      "popPct": 16.1
+     },
+     {
+      "areaPct": 13.3,
+      "key": "35",
+      "popPct": 9.4
+     },
+     {
+      "areaPct": 0.0,
+      "key": "36",
+      "popPct": 4.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Do\u00f1a Ana",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51492,
+    "pres2020New": -22.7,
+    "pres2020Old": -28.3,
+    "retainedAreaPct": 80.0,
+    "retainedPopPct": 70.5,
+    "text": "Kept 70% of its population from the 2016\u20132020 SD-38; gained the rest from the old SD-31 (16%), the old SD-35 (9%), the old SD-36 (4%). Entirely in Do\u00f1a Ana County. 2020 presidential margin D+28.3 on the 2016\u20132020 lines \u2192 D+22.7 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 97.9,
+      "key": "39",
+      "popPct": 70.6
+     },
+     {
+      "areaPct": 1.1,
+      "key": "29",
+      "popPct": 17.7
+     },
+     {
+      "areaPct": 0.8,
+      "key": "25",
+      "popPct": 9.0
+     },
+     {
+      "areaPct": 0.0,
+      "key": "24",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Santa Fe",
+      "popPct": 51.7
+     },
+     {
+      "county": "Valencia",
+      "popPct": 25.6
+     },
+     {
+      "county": "Torrance",
+      "popPct": 13.0
+     },
+     {
+      "county": "San Miguel",
+      "popPct": 9.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Lincoln",
+      "popPct": 15.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 51580,
+    "pres2020New": -30.6,
+    "pres2020Old": -11.8,
+    "retainedAreaPct": 97.9,
+    "retainedPopPct": 70.6,
+    "text": "Kept 71% of its population from the 2016\u20132020 SD-39; gained the rest from the old SD-29 (18%), the old SD-25 (9%), the old SD-24 (3%). Counties: lost Lincoln. 2020 presidential margin D+11.8 on the 2016\u20132020 lines \u2192 D+30.6 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 72.7,
+      "key": "4",
+      "popPct": 76.8
+     },
+     {
+      "areaPct": 11.1,
+      "key": "30",
+      "popPct": 14.8
+     },
+     {
+      "areaPct": 16.0,
+      "key": "3",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "McKinley",
+      "popPct": 61.3
+     },
+     {
+      "county": "Cibola",
+      "popPct": 30.0
+     },
+     {
+      "county": "San Juan",
+      "popPct": 8.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49633,
+    "pres2020New": -22.3,
+    "pres2020Old": -28.5,
+    "retainedAreaPct": 72.7,
+    "retainedPopPct": 76.8,
+    "text": "Kept 77% of its population from the 2016\u20132020 SD-4; gained the rest from the old SD-30 (15%), the old SD-3 (8%). Spans McKinley, Cibola, San Juan counties. 2020 presidential margin D+28.5 on the 2016\u20132020 lines \u2192 D+22.3 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 15.9,
+      "key": "40",
+      "popPct": 76.3
+     },
+     {
+      "areaPct": 62.1,
+      "key": "22",
+      "popPct": 11.7
+     },
+     {
+      "areaPct": 21.7,
+      "key": "10",
+      "popPct": 6.3
+     },
+     {
+      "areaPct": 0.3,
+      "key": "9",
+      "popPct": 5.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sandoval",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51725,
+    "pres2020New": 2.7,
+    "pres2020Old": 1.8,
+    "retainedAreaPct": 15.9,
+    "retainedPopPct": 76.3,
+    "text": "Kept 76% of its population from the 2016\u20132020 SD-40; gained the rest from the old SD-22 (12%), the old SD-10 (6%), the old SD-9 (6%). Entirely in Sandoval County. 2020 presidential margin R+1.8 on the 2016\u20132020 lines \u2192 R+2.7 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 99.0,
+      "key": "41",
+      "popPct": 96.4
+     },
+     {
+      "areaPct": 0.9,
+      "key": "34",
+      "popPct": 3.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lea",
+      "popPct": 70.5
+     },
+     {
+      "county": "Eddy",
+      "popPct": 29.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 50959,
+    "pres2020New": 47.8,
+    "pres2020Old": 43.9,
+    "retainedAreaPct": 99.0,
+    "retainedPopPct": 96.4,
+    "text": "Kept 96% of its population from the 2016\u20132020 SD-41; gained the rest from the old SD-34 (4%). Spans Lea, Eddy counties. 2020 presidential margin R+43.9 on the 2016\u20132020 lines \u2192 R+47.8 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "42",
+      "popPct": 90.3
+     },
+     {
+      "areaPct": 0.1,
+      "key": "34",
+      "popPct": 8.8
+     },
+     {
+      "areaPct": 0.1,
+      "key": "41",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lea",
+      "popPct": 72.0
+     },
+     {
+      "county": "Eddy",
+      "popPct": 27.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51918,
+    "pres2020New": 62.5,
+    "pres2020Old": 64.0,
+    "retainedAreaPct": 99.4,
+    "retainedPopPct": 90.3,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-42; gained the rest from the old SD-34 (9%), the old SD-41 (1%). Spans Lea, Eddy counties. 2020 presidential margin R+64.0 on the 2016\u20132020 lines \u2192 R+62.5 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "5",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rio Arriba",
+      "popPct": 64.1
+     },
+     {
+      "county": "Los Alamos",
+      "popPct": 27.3
+     },
+     {
+      "county": "Santa Fe",
+      "popPct": 8.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 49361,
+    "pres2020New": -34.9,
+    "pres2020Old": -34.0,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Rio Arriba, Los Alamos, Santa Fe counties.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 92.6,
+      "key": "6",
+      "popPct": 98.9
+     },
+     {
+      "areaPct": 0.1,
+      "key": "5",
+      "popPct": 0.6
+     },
+     {
+      "areaPct": 7.3,
+      "key": "8",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Taos",
+      "popPct": 61.7
+     },
+     {
+      "county": "Santa Fe",
+      "popPct": 19.2
+     },
+     {
+      "county": "Los Alamos",
+      "popPct": 11.0
+     },
+     {
+      "county": "Rio Arriba",
+      "popPct": 8.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51500,
+    "pres2020New": -46.2,
+    "pres2020Old": -46.5,
+    "retainedAreaPct": 92.6,
+    "retainedPopPct": 98.9,
+    "text": "Kept 99% of its population from the 2016\u20132020 SD-6; gained the rest from the old SD-5 (1%), the old SD-8 (0%). Spans Taos, Santa Fe, Los Alamos, Rio Arriba counties. 2020 presidential margin D+46.5 on the 2016\u20132020 lines \u2192 D+46.2 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 98.8,
+      "key": "7",
+      "popPct": 86.4
+     },
+     {
+      "areaPct": 0.0,
+      "key": "27",
+      "popPct": 13.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Curry",
+      "popPct": 78.6
+     },
+     {
+      "county": "Quay",
+      "popPct": 13.4
+     },
+     {
+      "county": "Union",
+      "popPct": 7.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51810,
+    "pres2020New": 40.1,
+    "pres2020Old": 44.9,
+    "retainedAreaPct": 98.8,
+    "retainedPopPct": 86.4,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-7; gained the rest from the old SD-27 (14%). Spans Curry, Quay, Union counties. 2020 presidential margin R+44.9 on the 2016\u20132020 lines \u2192 R+40.1 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 95.1,
+      "key": "8",
+      "popPct": 91.9
+     },
+     {
+      "areaPct": 3.7,
+      "key": "39",
+      "popPct": 6.8
+     },
+     {
+      "areaPct": 1.2,
+      "key": "6",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "San Miguel",
+      "popPct": 46.0
+     },
+     {
+      "county": "Colfax",
+      "popPct": 25.7
+     },
+     {
+      "county": "Guadalupe",
+      "popPct": 9.2
+     },
+     {
+      "county": "Mora",
+      "popPct": 8.6
+     },
+     {
+      "county": "Taos",
+      "popPct": 5.6
+     },
+     {
+      "county": "Quay",
+      "popPct": 3.7
+     },
+     {
+      "county": "Harding",
+      "popPct": 1.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 48331,
+    "pres2020New": -18.1,
+    "pres2020Old": -15.7,
+    "retainedAreaPct": 95.1,
+    "retainedPopPct": 91.9,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-8; gained the rest from the old SD-39 (7%), the old SD-6 (1%). Spans San Miguel, Colfax, Guadalupe, Mora and 3 more counties. 2020 presidential margin D+15.7 on the 2016\u20132020 lines \u2192 D+18.1 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 96.4,
+      "key": "9",
+      "popPct": 64.6
+     },
+     {
+      "areaPct": 2.2,
+      "key": "10",
+      "popPct": 30.1
+     },
+     {
+      "areaPct": 1.4,
+      "key": "40",
+      "popPct": 5.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sandoval",
+      "popPct": 70.4
+     },
+     {
+      "county": "Bernalillo",
+      "popPct": 29.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 51575,
+    "pres2020New": -16.5,
+    "pres2020Old": -11.4,
+    "retainedAreaPct": 96.4,
+    "retainedPopPct": 64.6,
+    "text": "Kept 65% of its population from the 2016\u20132020 SD-9; gained the rest from the old SD-10 (30%), the old SD-40 (5%). Spans Sandoval, Bernalillo counties. 2020 presidential margin D+11.4 on the 2016\u20132020 lines \u2192 D+16.5 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

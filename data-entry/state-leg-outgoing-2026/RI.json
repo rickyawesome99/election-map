@@ -1,0 +1,37 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 Rhode Island House of Representatives election",
+   "senate": "2026 Rhode Island Senate election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "32": [
+   {
+    "name": "Robert Craven",
+    "party": "D",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "67": [
+   {
+    "name": "Jason Knight",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for attorney general"
+   }
+  ],
+  "7": [
+   {
+    "name": "David Morales",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for mayor of Providence"
+   }
+  ]
+ },
+ "senate": {}
+}

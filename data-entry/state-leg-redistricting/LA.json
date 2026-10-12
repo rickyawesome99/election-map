@@ -1,0 +1,6070 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 90.6,
+      "key": "1",
+      "popPct": 74.0
+     },
+     {
+      "areaPct": 8.2,
+      "key": "7",
+      "popPct": 15.3
+     },
+     {
+      "areaPct": 0.8,
+      "key": "4",
+      "popPct": 8.2
+     },
+     {
+      "areaPct": 0.1,
+      "key": "5",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Caddo",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Bossier",
+      "popPct": 17.2
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 44951,
+    "pres2020New": 46.6,
+    "pres2020Old": 50.9,
+    "retainedAreaPct": 90.6,
+    "retainedPopPct": 74.0,
+    "text": "Kept 74% of its population from the 2019 HD-1; gained the rest from the old HD-7 (15%), the old HD-4 (8%), the old HD-5 (2%). Counties: lost Bossier. 2020 presidential margin R+50.9 on the 2019 lines \u2192 R+46.6 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 58.5,
+      "key": "10",
+      "popPct": 83.7
+     },
+     {
+      "areaPct": 41.5,
+      "key": "1",
+      "popPct": 16.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Webster",
+      "popPct": 83.6
+     },
+     {
+      "county": "Bossier",
+      "popPct": 16.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44142,
+    "pres2020New": 33.0,
+    "pres2020Old": 33.8,
+    "retainedAreaPct": 58.5,
+    "retainedPopPct": 83.7,
+    "text": "Kept 84% of its population from the 2019 HD-10; gained the rest from the old HD-1 (16%). Spans Webster, Bossier counties. 2020 presidential margin R+33.8 on the 2019 lines \u2192 R+33.0 on the current lines.",
+    "toEra": "current"
+   },
+   "100": {
+    "contributors": [
+     {
+      "areaPct": 8.2,
+      "key": "100",
+      "popPct": 84.0
+     },
+     {
+      "areaPct": 91.8,
+      "key": "103",
+      "popPct": 16.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orleans",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44409,
+    "pres2020New": -71.8,
+    "pres2020Old": -84.8,
+    "retainedAreaPct": 8.2,
+    "retainedPopPct": 84.0,
+    "text": "Kept 84% of its population from the 2019 HD-100; gained the rest from the old HD-103 (16%). Entirely in Orleans County. 2020 presidential margin D+84.8 on the 2019 lines \u2192 D+71.8 on the current lines.",
+    "toEra": "current"
+   },
+   "101": {
+    "contributors": [
+     {
+      "areaPct": 83.4,
+      "key": "101",
+      "popPct": 76.5
+     },
+     {
+      "areaPct": 7.8,
+      "key": "69",
+      "popPct": 10.2
+     },
+     {
+      "areaPct": 5.0,
+      "key": "66",
+      "popPct": 7.7
+     },
+     {
+      "areaPct": 3.7,
+      "key": "65",
+      "popPct": 5.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "East Baton Rouge",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45287,
+    "pres2020New": -42.6,
+    "pres2020Old": -60.2,
+    "retainedAreaPct": 83.4,
+    "retainedPopPct": 76.5,
+    "text": "Kept 76% of its population from the 2019 HD-101; gained the rest from the old HD-69 (10%), the old HD-66 (8%), the old HD-65 (6%). Entirely in East Baton Rouge County. 2020 presidential margin D+60.2 on the 2019 lines \u2192 D+42.6 on the current lines.",
+    "toEra": "current"
+   },
+   "102": {
+    "contributors": [
+     {
+      "areaPct": 98.0,
+      "key": "102",
+      "popPct": 95.5
+     },
+     {
+      "areaPct": 2.0,
+      "key": "105",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orleans",
+      "popPct": 98.5
+     },
+     {
+      "county": "St. Bernard",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45226,
+    "pres2020New": -68.7,
+    "pres2020Old": -68.9,
+    "retainedAreaPct": 98.0,
+    "retainedPopPct": 95.5,
+    "text": "Kept 96% of its population from the 2019 HD-102; gained the rest from the old HD-105 (4%). Spans Orleans, St. Bernard counties. 2020 presidential margin D+68.9 on the 2019 lines \u2192 D+68.7 on the current lines.",
+    "toEra": "current"
+   },
+   "103": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "103",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Bernard",
+      "popPct": 97.2
+     },
+     {
+      "county": "Orleans",
+      "popPct": 2.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Plaquemines",
+      "popPct": 3.9
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 43758,
+    "pres2020New": 28.4,
+    "pres2020Old": 21.5,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2019 map. Counties: lost Plaquemines.",
+    "toEra": "current"
+   },
+   "104": {
+    "contributors": [
+     {
+      "areaPct": 92.9,
+      "key": "104",
+      "popPct": 87.1
+     },
+     {
+      "areaPct": 7.1,
+      "key": "89",
+      "popPct": 12.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Tammany",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45191,
+    "pres2020New": 36.6,
+    "pres2020Old": 37.2,
+    "retainedAreaPct": 92.9,
+    "retainedPopPct": 87.1,
+    "text": "Kept 87% of its population from the 2019 HD-104; gained the rest from the old HD-89 (13%). Entirely in St. Tammany County. 2020 presidential margin R+37.2 on the 2019 lines \u2192 R+36.6 on the current lines.",
+    "toEra": "current"
+   },
+   "105": {
+    "contributors": [
+     {
+      "areaPct": 38.0,
+      "key": "105",
+      "popPct": 90.4
+     },
+     {
+      "areaPct": 0.0,
+      "key": "85",
+      "popPct": 5.3
+     },
+     {
+      "areaPct": 62.0,
+      "key": "103",
+      "popPct": 4.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Plaquemines",
+      "popPct": 55.3
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 32.5
+     },
+     {
+      "county": "Orleans",
+      "popPct": 12.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 43382,
+    "pres2020New": 6.2,
+    "pres2020Old": 5.6,
+    "retainedAreaPct": 38.0,
+    "retainedPopPct": 90.4,
+    "text": "Kept 90% of its population from the 2019 HD-105; gained the rest from the old HD-85 (5%), the old HD-103 (4%). Spans Plaquemines, Jefferson, Orleans counties. 2020 presidential margin R+5.6 on the 2019 lines \u2192 R+6.2 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 95.6,
+      "key": "11",
+      "popPct": 95.8
+     },
+     {
+      "areaPct": 4.3,
+      "key": "13",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lincoln",
+      "popPct": 55.6
+     },
+     {
+      "county": "Claiborne",
+      "popPct": 33.3
+     },
+     {
+      "county": "Bienville",
+      "popPct": 11.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 42434,
+    "pres2020New": -19.2,
+    "pres2020Old": -16.7,
+    "retainedAreaPct": 95.6,
+    "retainedPopPct": 95.8,
+    "text": "Kept 96% of its population from the 2019 HD-11; gained the rest from the old HD-13 (4%). Spans Lincoln, Claiborne, Bienville counties. 2020 presidential margin D+16.7 on the 2019 lines \u2192 D+19.2 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 95.7,
+      "key": "12",
+      "popPct": 98.1
+     },
+     {
+      "areaPct": 4.3,
+      "key": "11",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lincoln",
+      "popPct": 54.0
+     },
+     {
+      "county": "Union",
+      "popPct": 45.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45916,
+    "pres2020New": 53.1,
+    "pres2020Old": 53.3,
+    "retainedAreaPct": 95.7,
+    "retainedPopPct": 98.1,
+    "text": "Kept 98% of its population from the 2019 HD-12; gained the rest from the old HD-11 (2%). Spans Lincoln, Union counties. 2020 presidential margin R+53.3 on the 2019 lines \u2192 R+53.1 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 83.9,
+      "key": "13",
+      "popPct": 83.0
+     },
+     {
+      "areaPct": 15.3,
+      "key": "22",
+      "popPct": 14.1
+     },
+     {
+      "areaPct": 0.7,
+      "key": "23",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jackson",
+      "popPct": 33.9
+     },
+     {
+      "county": "Winn",
+      "popPct": 31.1
+     },
+     {
+      "county": "Bienville",
+      "popPct": 18.7
+     },
+     {
+      "county": "Natchitoches",
+      "popPct": 16.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Natchitoches",
+      "popPct": 16.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Ouachita",
+      "popPct": 6.3
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 44224,
+    "pres2020New": 39.9,
+    "pres2020Old": 43.9,
+    "retainedAreaPct": 83.9,
+    "retainedPopPct": 83.0,
+    "text": "Kept 83% of its population from the 2019 HD-13; gained the rest from the old HD-22 (14%), the old HD-23 (3%). Counties: gained Natchitoches (16%); lost Ouachita. 2020 presidential margin R+43.9 on the 2019 lines \u2192 R+39.9 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 93.5,
+      "key": "14",
+      "popPct": 94.6
+     },
+     {
+      "areaPct": 6.5,
+      "key": "15",
+      "popPct": 5.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ouachita",
+      "popPct": 98.4
+     },
+     {
+      "county": "Morehouse",
+      "popPct": 1.1
+     },
+     {
+      "county": "Union",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44228,
+    "pres2020New": 48.3,
+    "pres2020Old": 50.1,
+    "retainedAreaPct": 93.5,
+    "retainedPopPct": 94.6,
+    "text": "Kept 95% of its population from the 2019 HD-14; gained the rest from the old HD-15 (5%). Spans Ouachita, Morehouse, Union counties. 2020 presidential margin R+50.1 on the 2019 lines \u2192 R+48.3 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 81.5,
+      "key": "15",
+      "popPct": 94.0
+     },
+     {
+      "areaPct": 18.4,
+      "key": "13",
+      "popPct": 5.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ouachita",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 43948,
+    "pres2020New": 78.2,
+    "pres2020Old": 79.0,
+    "retainedAreaPct": 81.5,
+    "retainedPopPct": 94.0,
+    "text": "Kept 94% of its population from the 2019 HD-15; gained the rest from the old HD-13 (6%). Entirely in Ouachita County. 2020 presidential margin R+79.0 on the 2019 lines \u2192 R+78.2 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 83.6,
+      "key": "16",
+      "popPct": 95.2
+     },
+     {
+      "areaPct": 16.3,
+      "key": "14",
+      "popPct": 4.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ouachita",
+      "popPct": 61.3
+     },
+     {
+      "county": "Morehouse",
+      "popPct": 38.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 42356,
+    "pres2020New": -33.5,
+    "pres2020Old": -37.9,
+    "retainedAreaPct": 83.6,
+    "retainedPopPct": 95.2,
+    "text": "Kept 95% of its population from the 2019 HD-16; gained the rest from the old HD-14 (5%). Spans Ouachita, Morehouse counties. 2020 presidential margin D+37.9 on the 2019 lines \u2192 D+33.5 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 96.7,
+      "key": "17",
+      "popPct": 94.7
+     },
+     {
+      "areaPct": 3.3,
+      "key": "15",
+      "popPct": 5.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ouachita",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 42794,
+    "pres2020New": -49.0,
+    "pres2020Old": -52.9,
+    "retainedAreaPct": 96.7,
+    "retainedPopPct": 94.7,
+    "text": "Kept 95% of its population from the 2019 HD-17; gained the rest from the old HD-15 (5%). Entirely in Ouachita County. 2020 presidential margin D+52.9 on the 2019 lines \u2192 D+49.0 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 76.3,
+      "key": "18",
+      "popPct": 79.9
+     },
+     {
+      "areaPct": 23.7,
+      "key": "62",
+      "popPct": 20.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Pointe Coupee",
+      "popPct": 45.7
+     },
+     {
+      "county": "West Feliciana",
+      "popPct": 32.3
+     },
+     {
+      "county": "West Baton Rouge",
+      "popPct": 18.9
+     },
+     {
+      "county": "Iberville",
+      "popPct": 2.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 46572,
+    "pres2020New": 21.5,
+    "pres2020Old": 19.7,
+    "retainedAreaPct": 76.3,
+    "retainedPopPct": 79.9,
+    "text": "Kept 80% of its population from the 2019 HD-18; gained the rest from the old HD-62 (20%). Spans Pointe Coupee, West Feliciana, West Baton Rouge, Iberville counties. 2020 presidential margin R+19.7 on the 2019 lines \u2192 R+21.5 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 85.0,
+      "key": "19",
+      "popPct": 88.3
+     },
+     {
+      "areaPct": 15.0,
+      "key": "14",
+      "popPct": 11.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Richland",
+      "popPct": 45.4
+     },
+     {
+      "county": "West Carroll",
+      "popPct": 22.3
+     },
+     {
+      "county": "Morehouse",
+      "popPct": 21.3
+     },
+     {
+      "county": "Madison",
+      "popPct": 9.0
+     },
+     {
+      "county": "East Carroll",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Ouachita",
+      "popPct": 2.7
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 43143,
+    "pres2020New": 48.3,
+    "pres2020Old": 43.1,
+    "retainedAreaPct": 85.0,
+    "retainedPopPct": 88.3,
+    "text": "Kept 88% of its population from the 2019 HD-19; gained the rest from the old HD-14 (12%). Counties: lost Ouachita. 2020 presidential margin R+43.1 on the 2019 lines \u2192 R+48.3 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 77.5,
+      "key": "2",
+      "popPct": 81.1
+     },
+     {
+      "areaPct": 18.7,
+      "key": "4",
+      "popPct": 11.3
+     },
+     {
+      "areaPct": 3.6,
+      "key": "8",
+      "popPct": 7.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Caddo",
+      "popPct": 81.8
+     },
+     {
+      "county": "Bossier",
+      "popPct": 18.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45622,
+    "pres2020New": -60.0,
+    "pres2020Old": -60.0,
+    "retainedAreaPct": 77.5,
+    "retainedPopPct": 81.1,
+    "text": "Kept 81% of its population from the 2019 HD-2; gained the rest from the old HD-4 (11%), the old HD-8 (8%). Spans Caddo, Bossier counties. 2020 presidential margin D+60.0 on the 2019 lines \u2192 D+60.0 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 83.4,
+      "key": "20",
+      "popPct": 83.4
+     },
+     {
+      "areaPct": 10.6,
+      "key": "22",
+      "popPct": 8.3
+     },
+     {
+      "areaPct": 3.1,
+      "key": "15",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 2.6,
+      "key": "19",
+      "popPct": 2.5
+     },
+     {
+      "areaPct": 0.3,
+      "key": "17",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Franklin",
+      "popPct": 33.1
+     },
+     {
+      "county": "Caldwell",
+      "popPct": 22.7
+     },
+     {
+      "county": "LaSalle",
+      "popPct": 20.4
+     },
+     {
+      "county": "Catahoula",
+      "popPct": 15.1
+     },
+     {
+      "county": "Ouachita",
+      "popPct": 8.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Ouachita",
+      "popPct": 8.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 42292,
+    "pres2020New": 69.3,
+    "pres2020Old": 56.2,
+    "retainedAreaPct": 83.4,
+    "retainedPopPct": 83.4,
+    "text": "Kept 83% of its population from the 2019 HD-20; gained the rest from the old HD-22 (8%), the old HD-15 (4%), the old HD-19 (2%) and 1 more. Counties: gained Ouachita (8%). 2020 presidential margin R+56.2 on the 2019 lines \u2192 R+69.3 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 86.3,
+      "key": "21",
+      "popPct": 81.8
+     },
+     {
+      "areaPct": 12.8,
+      "key": "20",
+      "popPct": 15.8
+     },
+     {
+      "areaPct": 0.9,
+      "key": "19",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Concordia",
+      "popPct": 42.0
+     },
+     {
+      "county": "East Carroll",
+      "popPct": 15.8
+     },
+     {
+      "county": "Madison",
+      "popPct": 14.3
+     },
+     {
+      "county": "Franklin",
+      "popPct": 12.7
+     },
+     {
+      "county": "Tensas",
+      "popPct": 9.4
+     },
+     {
+      "county": "Catahoula",
+      "popPct": 5.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Franklin",
+      "popPct": 12.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44297,
+    "pres2020New": -6.6,
+    "pres2020Old": -6.2,
+    "retainedAreaPct": 86.3,
+    "retainedPopPct": 81.8,
+    "text": "Kept 82% of its population from the 2019 HD-21; gained the rest from the old HD-20 (16%), the old HD-19 (2%). Counties: gained Franklin (13%). 2020 presidential margin D+6.2 on the 2019 lines \u2192 D+6.6 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 96.9,
+      "key": "22",
+      "popPct": 65.6
+     },
+     {
+      "areaPct": 3.1,
+      "key": "23",
+      "popPct": 34.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Grant",
+      "popPct": 51.1
+     },
+     {
+      "county": "Natchitoches",
+      "popPct": 34.5
+     },
+     {
+      "county": "LaSalle",
+      "popPct": 14.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Red River",
+      "popPct": 11.8
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 43184,
+    "pres2020New": 50.7,
+    "pres2020Old": 70.4,
+    "retainedAreaPct": 96.9,
+    "retainedPopPct": 65.6,
+    "text": "Kept 66% of its population from the 2019 HD-22; gained the rest from the old HD-23 (34%). Counties: lost Red River. 2020 presidential margin R+70.4 on the 2019 lines \u2192 R+50.7 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 36.9,
+      "key": "91",
+      "popPct": 35.9
+     },
+     {
+      "areaPct": 24.7,
+      "key": "97",
+      "popPct": 26.1
+     },
+     {
+      "areaPct": 25.0,
+      "key": "93",
+      "popPct": 25.0
+     },
+     {
+      "areaPct": 13.3,
+      "key": "94",
+      "popPct": 13.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orleans",
+      "popPct": 99.0
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 1.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Orleans",
+      "popPct": 99.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Natchitoches",
+      "popPct": 68.8
+     },
+     {
+      "county": "De Soto",
+      "popPct": 24.9
+     },
+     {
+      "county": "Red River",
+      "popPct": 6.2
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 42586,
+    "pres2020New": -80.3,
+    "pres2020Old": -25.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2019 HD-23; it draws from the old HD-91 (36%), the old HD-97 (26%), the old HD-93 (25%) and 1 more. Counties: gained Orleans (99%); lost Natchitoches, De Soto, Red River. 2020 presidential margin D+25.2 on the 2019 lines \u2192 D+80.3 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 73.9,
+      "key": "24",
+      "popPct": 62.3
+     },
+     {
+      "areaPct": 2.1,
+      "key": "30",
+      "popPct": 19.7
+     },
+     {
+      "areaPct": 24.0,
+      "key": "32",
+      "popPct": 18.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Vernon",
+      "popPct": 55.5
+     },
+     {
+      "county": "Sabine",
+      "popPct": 26.5
+     },
+     {
+      "county": "Beauregard",
+      "popPct": 17.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Beauregard",
+      "popPct": 17.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Natchitoches",
+      "popPct": 9.9
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 42726,
+    "pres2020New": 75.7,
+    "pres2020Old": 75.9,
+    "retainedAreaPct": 73.9,
+    "retainedPopPct": 62.3,
+    "text": "Kept 62% of its population from the 2019 HD-24; gained the rest from the old HD-30 (20%), the old HD-32 (18%). Counties: gained Beauregard (18%); lost Natchitoches. 2020 presidential margin R+75.9 on the 2019 lines \u2192 R+75.7 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 31.2,
+      "key": "25",
+      "popPct": 61.1
+     },
+     {
+      "areaPct": 28.9,
+      "key": "23",
+      "popPct": 26.3
+     },
+     {
+      "areaPct": 39.9,
+      "key": "24",
+      "popPct": 9.7
+     },
+     {
+      "areaPct": 0.1,
+      "key": "26",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rapides",
+      "popPct": 63.9
+     },
+     {
+      "county": "Natchitoches",
+      "popPct": 36.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Natchitoches",
+      "popPct": 36.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 43186,
+    "pres2020New": 43.0,
+    "pres2020Old": 51.1,
+    "retainedAreaPct": 31.2,
+    "retainedPopPct": 61.1,
+    "text": "Kept 61% of its population from the 2019 HD-25; gained the rest from the old HD-23 (26%), the old HD-24 (10%), the old HD-26 (3%). Counties: gained Natchitoches (36%). 2020 presidential margin R+51.1 on the 2019 lines \u2192 R+43.0 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 66.2,
+      "key": "26",
+      "popPct": 82.7
+     },
+     {
+      "areaPct": 31.9,
+      "key": "25",
+      "popPct": 14.0
+     },
+     {
+      "areaPct": 2.0,
+      "key": "27",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rapides",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44602,
+    "pres2020New": -46.4,
+    "pres2020Old": -49.3,
+    "retainedAreaPct": 66.2,
+    "retainedPopPct": 82.7,
+    "text": "Kept 83% of its population from the 2019 HD-26; gained the rest from the old HD-25 (14%), the old HD-27 (3%). Entirely in Rapides County. 2020 presidential margin D+49.3 on the 2019 lines \u2192 D+46.4 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "27",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rapides",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44248,
+    "pres2020New": 72.7,
+    "pres2020Old": 69.4,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2019 map. Entirely in Rapides County.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 81.3,
+      "key": "28",
+      "popPct": 92.6
+     },
+     {
+      "areaPct": 13.7,
+      "key": "38",
+      "popPct": 5.5
+     },
+     {
+      "areaPct": 5.0,
+      "key": "40",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Avoyelles",
+      "popPct": 92.1
+     },
+     {
+      "county": "St. Landry",
+      "popPct": 7.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "St. Landry",
+      "popPct": 7.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 42867,
+    "pres2020New": 42.0,
+    "pres2020Old": 40.8,
+    "retainedAreaPct": 81.3,
+    "retainedPopPct": 92.6,
+    "text": "Kept 93% of its population from the 2019 HD-28; gained the rest from the old HD-38 (6%), the old HD-40 (2%). Counties: gained St. Landry (7%). 2020 presidential margin R+40.8 on the 2019 lines \u2192 R+42.0 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 64.5,
+      "key": "29",
+      "popPct": 76.2
+     },
+     {
+      "areaPct": 33.3,
+      "key": "18",
+      "popPct": 13.9
+     },
+     {
+      "areaPct": 1.7,
+      "key": "67",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 0.6,
+      "key": "61",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "East Baton Rouge",
+      "popPct": 60.6
+     },
+     {
+      "county": "West Baton Rouge",
+      "popPct": 39.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44495,
+    "pres2020New": -55.3,
+    "pres2020Old": -63.9,
+    "retainedAreaPct": 64.5,
+    "retainedPopPct": 76.2,
+    "text": "Kept 76% of its population from the 2019 HD-29; gained the rest from the old HD-18 (14%), the old HD-67 (7%), the old HD-61 (3%). Spans East Baton Rouge, West Baton Rouge counties. 2020 presidential margin D+63.9 on the 2019 lines \u2192 D+55.3 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 55.9,
+      "key": "3",
+      "popPct": 65.1
+     },
+     {
+      "areaPct": 25.8,
+      "key": "7",
+      "popPct": 21.5
+     },
+     {
+      "areaPct": 18.2,
+      "key": "5",
+      "popPct": 13.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Caddo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 46053,
+    "pres2020New": -58.1,
+    "pres2020Old": -85.2,
+    "retainedAreaPct": 55.9,
+    "retainedPopPct": 65.1,
+    "text": "Kept 65% of its population from the 2019 HD-3; gained the rest from the old HD-7 (22%), the old HD-5 (13%). Entirely in Caddo County. 2020 presidential margin D+85.2 on the 2019 lines \u2192 D+58.1 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 67.4,
+      "key": "30",
+      "popPct": 79.2
+     },
+     {
+      "areaPct": 23.3,
+      "key": "32",
+      "popPct": 11.1
+     },
+     {
+      "areaPct": 9.3,
+      "key": "24",
+      "popPct": 9.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Vernon",
+      "popPct": 59.6
+     },
+     {
+      "county": "Beauregard",
+      "popPct": 40.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 42280,
+    "pres2020New": 43.4,
+    "pres2020Old": 32.5,
+    "retainedAreaPct": 67.4,
+    "retainedPopPct": 79.2,
+    "text": "Kept 79% of its population from the 2019 HD-30; gained the rest from the old HD-32 (11%), the old HD-24 (10%). Spans Vernon, Beauregard counties. 2020 presidential margin R+32.5 on the 2019 lines \u2192 R+43.4 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 68.8,
+      "key": "31",
+      "popPct": 75.6
+     },
+     {
+      "areaPct": 3.4,
+      "key": "47",
+      "popPct": 14.1
+     },
+     {
+      "areaPct": 27.8,
+      "key": "49",
+      "popPct": 10.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lafayette",
+      "popPct": 64.9
+     },
+     {
+      "county": "Vermilion",
+      "popPct": 35.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 46529,
+    "pres2020New": 48.4,
+    "pres2020Old": 56.1,
+    "retainedAreaPct": 68.8,
+    "retainedPopPct": 75.6,
+    "text": "Kept 76% of its population from the 2019 HD-31; gained the rest from the old HD-47 (14%), the old HD-49 (10%). Spans Lafayette, Vermilion counties. 2020 presidential margin R+56.1 on the 2019 lines \u2192 R+48.4 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 62.8,
+      "key": "32",
+      "popPct": 70.1
+     },
+     {
+      "areaPct": 17.1,
+      "key": "35",
+      "popPct": 16.7
+     },
+     {
+      "areaPct": 15.3,
+      "key": "33",
+      "popPct": 10.0
+     },
+     {
+      "areaPct": 3.8,
+      "key": "47",
+      "popPct": 2.6
+     },
+     {
+      "areaPct": 1.0,
+      "key": "37",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Allen",
+      "popPct": 53.4
+     },
+     {
+      "county": "Calcasieu",
+      "popPct": 30.9
+     },
+     {
+      "county": "Beauregard",
+      "popPct": 14.8
+     },
+     {
+      "county": "Jefferson Davis",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 42436,
+    "pres2020New": 66.0,
+    "pres2020Old": 65.0,
+    "retainedAreaPct": 62.8,
+    "retainedPopPct": 70.1,
+    "text": "Kept 70% of its population from the 2019 HD-32; gained the rest from the old HD-35 (17%), the old HD-33 (10%), the old HD-47 (3%) and 1 more. Spans Allen, Calcasieu, Beauregard, Jefferson Davis counties. 2020 presidential margin R+65.0 on the 2019 lines \u2192 R+66.0 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 77.8,
+      "key": "33",
+      "popPct": 97.9
+     },
+     {
+      "areaPct": 22.2,
+      "key": "47",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Calcasieu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44247,
+    "pres2020New": 63.3,
+    "pres2020Old": 64.8,
+    "retainedAreaPct": 77.8,
+    "retainedPopPct": 97.9,
+    "text": "Kept 98% of its population from the 2019 HD-33; gained the rest from the old HD-47 (2%). Entirely in Calcasieu County. 2020 presidential margin R+64.8 on the 2019 lines \u2192 R+63.3 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 98.5,
+      "key": "34",
+      "popPct": 96.4
+     },
+     {
+      "areaPct": 1.5,
+      "key": "35",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Calcasieu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45767,
+    "pres2020New": -68.1,
+    "pres2020Old": -61.1,
+    "retainedAreaPct": 98.5,
+    "retainedPopPct": 96.4,
+    "text": "Kept 96% of its population from the 2019 HD-34; gained the rest from the old HD-35 (4%). Entirely in Calcasieu County. 2020 presidential margin D+61.1 on the 2019 lines \u2192 D+68.1 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 98.8,
+      "key": "35",
+      "popPct": 91.4
+     },
+     {
+      "areaPct": 1.0,
+      "key": "34",
+      "popPct": 4.8
+     },
+     {
+      "areaPct": 0.2,
+      "key": "36",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Calcasieu",
+      "popPct": 88.3
+     },
+     {
+      "county": "Beauregard",
+      "popPct": 11.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 46037,
+    "pres2020New": 60.8,
+    "pres2020Old": 65.6,
+    "retainedAreaPct": 98.8,
+    "retainedPopPct": 91.4,
+    "text": "Kept 91% of its population from the 2019 HD-35; gained the rest from the old HD-34 (5%), the old HD-36 (4%). Spans Calcasieu, Beauregard counties. 2020 presidential margin R+65.6 on the 2019 lines \u2192 R+60.8 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "36",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Calcasieu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45049,
+    "pres2020New": 43.0,
+    "pres2020Old": 43.6,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2019 map. Entirely in Calcasieu County.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 98.8,
+      "key": "37",
+      "popPct": 98.1
+     },
+     {
+      "areaPct": 1.2,
+      "key": "34",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson Davis",
+      "popPct": 68.4
+     },
+     {
+      "county": "Calcasieu",
+      "popPct": 30.0
+     },
+     {
+      "county": "Acadia",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45700,
+    "pres2020New": 52.7,
+    "pres2020Old": 54.6,
+    "retainedAreaPct": 98.8,
+    "retainedPopPct": 98.1,
+    "text": "Kept 98% of its population from the 2019 HD-37; gained the rest from the old HD-34 (2%). Spans Jefferson Davis, Calcasieu, Acadia counties. 2020 presidential margin R+54.6 on the 2019 lines \u2192 R+52.7 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 50.8,
+      "key": "38",
+      "popPct": 67.7
+     },
+     {
+      "areaPct": 44.7,
+      "key": "25",
+      "popPct": 30.2
+     },
+     {
+      "areaPct": 4.1,
+      "key": "27",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Evangeline",
+      "popPct": 68.0
+     },
+     {
+      "county": "Rapides",
+      "popPct": 32.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Rapides",
+      "popPct": 32.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "St. Landry",
+      "popPct": 30.9
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 42292,
+    "pres2020New": 49.8,
+    "pres2020Old": 44.0,
+    "retainedAreaPct": 50.8,
+    "retainedPopPct": 67.7,
+    "text": "Kept 68% of its population from the 2019 HD-38; gained the rest from the old HD-25 (30%), the old HD-27 (2%). Counties: gained Rapides (32%); lost St. Landry. 2020 presidential margin R+44.0 on the 2019 lines \u2192 R+49.8 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 79.7,
+      "key": "39",
+      "popPct": 83.6
+     },
+     {
+      "areaPct": 6.0,
+      "key": "45",
+      "popPct": 10.4
+     },
+     {
+      "areaPct": 12.2,
+      "key": "42",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 2.0,
+      "key": "31",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lafayette",
+      "popPct": 98.7
+     },
+     {
+      "county": "St. Landry",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 42254,
+    "pres2020New": 32.4,
+    "pres2020Old": 35.0,
+    "retainedAreaPct": 79.7,
+    "retainedPopPct": 83.6,
+    "text": "Kept 84% of its population from the 2019 HD-39; gained the rest from the old HD-45 (10%), the old HD-42 (4%), the old HD-31 (2%). Spans Lafayette, St. Landry counties. 2020 presidential margin R+35.0 on the 2019 lines \u2192 R+32.4 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 78.7,
+      "key": "4",
+      "popPct": 64.5
+     },
+     {
+      "areaPct": 7.5,
+      "key": "5",
+      "popPct": 19.7
+     },
+     {
+      "areaPct": 11.0,
+      "key": "3",
+      "popPct": 12.6
+     },
+     {
+      "areaPct": 2.1,
+      "key": "7",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Caddo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 46432,
+    "pres2020New": -52.4,
+    "pres2020Old": -49.9,
+    "retainedAreaPct": 78.7,
+    "retainedPopPct": 64.5,
+    "text": "Kept 64% of its population from the 2019 HD-4; gained the rest from the old HD-5 (20%), the old HD-3 (13%), the old HD-7 (3%). Entirely in Caddo County. 2020 presidential margin D+49.9 on the 2019 lines \u2192 D+52.4 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 76.5,
+      "key": "40",
+      "popPct": 79.4
+     },
+     {
+      "areaPct": 13.8,
+      "key": "39",
+      "popPct": 12.2
+     },
+     {
+      "areaPct": 9.7,
+      "key": "38",
+      "popPct": 8.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Landry",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45263,
+    "pres2020New": -11.8,
+    "pres2020Old": -18.3,
+    "retainedAreaPct": 76.5,
+    "retainedPopPct": 79.4,
+    "text": "Kept 79% of its population from the 2019 HD-40; gained the rest from the old HD-39 (12%), the old HD-38 (8%). Entirely in St. Landry County. 2020 presidential margin D+18.3 on the 2019 lines \u2192 D+11.8 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 91.0,
+      "key": "41",
+      "popPct": 85.5
+     },
+     {
+      "areaPct": 6.2,
+      "key": "40",
+      "popPct": 9.8
+     },
+     {
+      "areaPct": 2.3,
+      "key": "39",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Landry",
+      "popPct": 46.8
+     },
+     {
+      "county": "Acadia",
+      "popPct": 44.7
+     },
+     {
+      "county": "Evangeline",
+      "popPct": 8.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44745,
+    "pres2020New": 55.9,
+    "pres2020Old": 59.4,
+    "retainedAreaPct": 91.0,
+    "retainedPopPct": 85.5,
+    "text": "Kept 86% of its population from the 2019 HD-41; gained the rest from the old HD-40 (10%), the old HD-39 (4%). Spans St. Landry, Acadia, Evangeline counties. 2020 presidential margin R+59.4 on the 2019 lines \u2192 R+55.9 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 74.3,
+      "key": "42",
+      "popPct": 78.2
+     },
+     {
+      "areaPct": 9.6,
+      "key": "31",
+      "popPct": 15.3
+     },
+     {
+      "areaPct": 16.0,
+      "key": "41",
+      "popPct": 6.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Acadia",
+      "popPct": 82.6
+     },
+     {
+      "county": "Lafayette",
+      "popPct": 16.7
+     },
+     {
+      "county": "Vermilion",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45670,
+    "pres2020New": 54.3,
+    "pres2020Old": 49.2,
+    "retainedAreaPct": 74.3,
+    "retainedPopPct": 78.2,
+    "text": "Kept 78% of its population from the 2019 HD-42; gained the rest from the old HD-31 (15%), the old HD-41 (6%). Spans Acadia, Lafayette, Vermilion counties. 2020 presidential margin R+49.2 on the 2019 lines \u2192 R+54.3 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 94.7,
+      "key": "43",
+      "popPct": 95.2
+     },
+     {
+      "areaPct": 5.3,
+      "key": "96",
+      "popPct": 4.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lafayette",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 42591,
+    "pres2020New": 48.8,
+    "pres2020Old": 54.3,
+    "retainedAreaPct": 94.7,
+    "retainedPopPct": 95.2,
+    "text": "Kept 95% of its population from the 2019 HD-43; gained the rest from the old HD-96 (5%). Entirely in Lafayette County. 2020 presidential margin R+54.3 on the 2019 lines \u2192 R+48.8 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 69.7,
+      "key": "44",
+      "popPct": 88.1
+     },
+     {
+      "areaPct": 18.2,
+      "key": "39",
+      "popPct": 7.2
+     },
+     {
+      "areaPct": 12.1,
+      "key": "96",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lafayette",
+      "popPct": 98.9
+     },
+     {
+      "county": "St. Martin",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 42511,
+    "pres2020New": -41.7,
+    "pres2020Old": -48.2,
+    "retainedAreaPct": 69.7,
+    "retainedPopPct": 88.1,
+    "text": "Kept 88% of its population from the 2019 HD-44; gained the rest from the old HD-39 (7%), the old HD-96 (5%). Spans Lafayette, St. Martin counties. 2020 presidential margin D+48.2 on the 2019 lines \u2192 D+41.7 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 85.7,
+      "key": "45",
+      "popPct": 84.0
+     },
+     {
+      "areaPct": 14.3,
+      "key": "31",
+      "popPct": 16.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lafayette",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 43316,
+    "pres2020New": 31.0,
+    "pres2020Old": 28.0,
+    "retainedAreaPct": 85.7,
+    "retainedPopPct": 84.0,
+    "text": "Kept 84% of its population from the 2019 HD-45; gained the rest from the old HD-31 (16%). Entirely in Lafayette County. 2020 presidential margin R+28.0 on the 2019 lines \u2192 R+31.0 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 55.3,
+      "key": "46",
+      "popPct": 79.5
+     },
+     {
+      "areaPct": 40.8,
+      "key": "38",
+      "popPct": 15.5
+     },
+     {
+      "areaPct": 2.1,
+      "key": "39",
+      "popPct": 3.4
+     },
+     {
+      "areaPct": 0.4,
+      "key": "96",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Martin",
+      "popPct": 69.9
+     },
+     {
+      "county": "St. Landry",
+      "popPct": 29.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Iberia",
+      "popPct": 7.8
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 43603,
+    "pres2020New": 48.4,
+    "pres2020Old": 48.9,
+    "retainedAreaPct": 55.3,
+    "retainedPopPct": 79.5,
+    "text": "Kept 80% of its population from the 2019 HD-46; gained the rest from the old HD-38 (16%), the old HD-39 (3%), the old HD-96 (1%). Counties: lost Iberia. 2020 presidential margin R+48.9 on the 2019 lines \u2192 R+48.4 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 74.0,
+      "key": "47",
+      "popPct": 72.0
+     },
+     {
+      "areaPct": 1.4,
+      "key": "36",
+      "popPct": 15.3
+     },
+     {
+      "areaPct": 0.1,
+      "key": "34",
+      "popPct": 4.8
+     },
+     {
+      "areaPct": 1.7,
+      "key": "37",
+      "popPct": 4.6
+     },
+     {
+      "areaPct": 22.8,
+      "key": "49",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Vermilion",
+      "popPct": 57.3
+     },
+     {
+      "county": "Calcasieu",
+      "popPct": 30.5
+     },
+     {
+      "county": "Cameron",
+      "popPct": 12.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 46463,
+    "pres2020New": 68.4,
+    "pres2020Old": 61.6,
+    "retainedAreaPct": 74.0,
+    "retainedPopPct": 72.0,
+    "text": "Kept 72% of its population from the 2019 HD-47; gained the rest from the old HD-36 (15%), the old HD-34 (5%), the old HD-37 (5%) and 1 more. Spans Vermilion, Calcasieu, Cameron counties. 2020 presidential margin R+61.6 on the 2019 lines \u2192 R+68.4 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 53.9,
+      "key": "48",
+      "popPct": 78.2
+     },
+     {
+      "areaPct": 19.5,
+      "key": "96",
+      "popPct": 13.8
+     },
+     {
+      "areaPct": 25.1,
+      "key": "46",
+      "popPct": 6.8
+     },
+     {
+      "areaPct": 1.6,
+      "key": "49",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Iberia",
+      "popPct": 65.0
+     },
+     {
+      "county": "Lafayette",
+      "popPct": 26.6
+     },
+     {
+      "county": "St. Martin",
+      "popPct": 8.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45357,
+    "pres2020New": 57.8,
+    "pres2020Old": 56.9,
+    "retainedAreaPct": 53.9,
+    "retainedPopPct": 78.2,
+    "text": "Kept 78% of its population from the 2019 HD-48; gained the rest from the old HD-96 (14%), the old HD-46 (7%), the old HD-49 (1%). Spans Iberia, Lafayette, St. Martin counties. 2020 presidential margin R+56.9 on the 2019 lines \u2192 R+57.8 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 96.3,
+      "key": "49",
+      "popPct": 54.4
+     },
+     {
+      "areaPct": 3.0,
+      "key": "48",
+      "popPct": 23.3
+     },
+     {
+      "areaPct": 0.6,
+      "key": "43",
+      "popPct": 21.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lafayette",
+      "popPct": 37.5
+     },
+     {
+      "county": "Vermilion",
+      "popPct": 31.7
+     },
+     {
+      "county": "Iberia",
+      "popPct": 30.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lafayette",
+      "popPct": 37.5
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45720,
+    "pres2020New": 66.5,
+    "pres2020Old": 47.6,
+    "retainedAreaPct": 96.3,
+    "retainedPopPct": 54.4,
+    "text": "Kept 54% of its population from the 2019 HD-49; gained the rest from the old HD-48 (23%), the old HD-43 (22%). Counties: gained Lafayette (38%). 2020 presidential margin R+47.6 on the 2019 lines \u2192 R+66.5 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 4.0,
+      "key": "5",
+      "popPct": 30.5
+     },
+     {
+      "areaPct": 6.9,
+      "key": "9",
+      "popPct": 24.8
+     },
+     {
+      "areaPct": 0.6,
+      "key": "6",
+      "popPct": 20.4
+     },
+     {
+      "areaPct": 55.4,
+      "key": "22",
+      "popPct": 11.4
+     },
+     {
+      "areaPct": 7.6,
+      "key": "23",
+      "popPct": 5.4
+     },
+     {
+      "areaPct": 15.7,
+      "key": "10",
+      "popPct": 4.1
+     },
+     {
+      "areaPct": 9.8,
+      "key": "7",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bossier",
+      "popPct": 48.2
+     },
+     {
+      "county": "Caddo",
+      "popPct": 34.4
+     },
+     {
+      "county": "Red River",
+      "popPct": 16.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Red River",
+      "popPct": 16.7
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45283,
+    "pres2020New": 45.7,
+    "pres2020Old": 20.8,
+    "retainedAreaPct": 4.0,
+    "retainedPopPct": 30.5,
+    "text": "A new footprint: only 30% of its population was in the 2019 HD-5; it draws from the old HD-9 (25%), the old HD-6 (20%), the old HD-22 (11%) and 3 more. Counties: gained Red River (17%). 2020 presidential margin R+20.8 on the 2019 lines \u2192 R+45.7 on the current lines.",
+    "toEra": "current"
+   },
+   "50": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "50",
+      "popPct": 93.9
+     },
+     {
+      "areaPct": 0.1,
+      "key": "51",
+      "popPct": 6.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Mary",
+      "popPct": 96.7
+     },
+     {
+      "county": "St. Martin",
+      "popPct": 3.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 43163,
+    "pres2020New": 28.3,
+    "pres2020Old": 25.6,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 93.9,
+    "text": "Kept 94% of its population from the 2019 HD-50; gained the rest from the old HD-51 (6%). Spans St. Mary, St. Martin counties. 2020 presidential margin R+25.6 on the 2019 lines \u2192 R+28.3 on the current lines.",
+    "toEra": "current"
+   },
+   "51": {
+    "contributors": [
+     {
+      "areaPct": 86.6,
+      "key": "51",
+      "popPct": 66.7
+     },
+     {
+      "areaPct": 2.6,
+      "key": "52",
+      "popPct": 15.2
+     },
+     {
+      "areaPct": 2.2,
+      "key": "54",
+      "popPct": 9.9
+     },
+     {
+      "areaPct": 1.0,
+      "key": "55",
+      "popPct": 7.5
+     },
+     {
+      "areaPct": 7.5,
+      "key": "50",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Terrebonne",
+      "popPct": 48.3
+     },
+     {
+      "county": "Lafourche",
+      "popPct": 24.9
+     },
+     {
+      "county": "St. Mary",
+      "popPct": 16.2
+     },
+     {
+      "county": "Assumption",
+      "popPct": 10.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 46428,
+    "pres2020New": 46.0,
+    "pres2020Old": 46.7,
+    "retainedAreaPct": 86.6,
+    "retainedPopPct": 66.7,
+    "text": "Kept 67% of its population from the 2019 HD-51; gained the rest from the old HD-52 (15%), the old HD-54 (10%), the old HD-55 (8%) and 1 more. Spans Terrebonne, Lafourche, St. Mary, Assumption counties. 2020 presidential margin R+46.7 on the 2019 lines \u2192 R+46.0 on the current lines.",
+    "toEra": "current"
+   },
+   "52": {
+    "contributors": [
+     {
+      "areaPct": 93.0,
+      "key": "52",
+      "popPct": 78.3
+     },
+     {
+      "areaPct": 3.1,
+      "key": "53",
+      "popPct": 19.7
+     },
+     {
+      "areaPct": 3.9,
+      "key": "51",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Terrebonne",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Lafourche",
+      "popPct": 9.2
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 43238,
+    "pres2020New": 58.2,
+    "pres2020Old": 59.1,
+    "retainedAreaPct": 93.0,
+    "retainedPopPct": 78.3,
+    "text": "Kept 78% of its population from the 2019 HD-52; gained the rest from the old HD-53 (20%), the old HD-51 (2%). Counties: lost Lafourche. 2020 presidential margin R+59.1 on the 2019 lines \u2192 R+58.2 on the current lines.",
+    "toEra": "current"
+   },
+   "53": {
+    "contributors": [
+     {
+      "areaPct": 46.6,
+      "key": "53",
+      "popPct": 76.5
+     },
+     {
+      "areaPct": 53.0,
+      "key": "51",
+      "popPct": 21.8
+     },
+     {
+      "areaPct": 0.4,
+      "key": "52",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Terrebonne",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 43040,
+    "pres2020New": 49.2,
+    "pres2020Old": 52.2,
+    "retainedAreaPct": 46.6,
+    "retainedPopPct": 76.5,
+    "text": "Kept 76% of its population from the 2019 HD-53; gained the rest from the old HD-51 (22%), the old HD-52 (2%). Entirely in Terrebonne County. 2020 presidential margin R+52.2 on the 2019 lines \u2192 R+49.2 on the current lines.",
+    "toEra": "current"
+   },
+   "54": {
+    "contributors": [
+     {
+      "areaPct": 94.2,
+      "key": "54",
+      "popPct": 88.4
+     },
+     {
+      "areaPct": 2.1,
+      "key": "52",
+      "popPct": 10.4
+     },
+     {
+      "areaPct": 3.7,
+      "key": "53",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lafourche",
+      "popPct": 97.1
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 2.2
+     },
+     {
+      "county": "Terrebonne",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 42857,
+    "pres2020New": 78.9,
+    "pres2020Old": 77.9,
+    "retainedAreaPct": 94.2,
+    "retainedPopPct": 88.4,
+    "text": "Kept 88% of its population from the 2019 HD-54; gained the rest from the old HD-52 (10%), the old HD-53 (1%). Spans Lafourche, Jefferson, Terrebonne counties. 2020 presidential margin R+77.9 on the 2019 lines \u2192 R+78.9 on the current lines.",
+    "toEra": "current"
+   },
+   "55": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "55",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lafourche",
+      "popPct": 99.1
+     },
+     {
+      "county": "Terrebonne",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45073,
+    "pres2020New": 47.3,
+    "pres2020Old": 44.9,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2019 map. Spans Lafourche, Terrebonne counties.",
+    "toEra": "current"
+   },
+   "56": {
+    "contributors": [
+     {
+      "areaPct": 93.7,
+      "key": "56",
+      "popPct": 90.3
+     },
+     {
+      "areaPct": 0.8,
+      "key": "57",
+      "popPct": 6.7
+     },
+     {
+      "areaPct": 5.5,
+      "key": "92",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Charles",
+      "popPct": 98.1
+     },
+     {
+      "county": "St. John the Baptist",
+      "popPct": 1.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 46338,
+    "pres2020New": 40.7,
+    "pres2020Old": 41.8,
+    "retainedAreaPct": 93.7,
+    "retainedPopPct": 90.3,
+    "text": "Kept 90% of its population from the 2019 HD-56; gained the rest from the old HD-57 (7%), the old HD-92 (3%). Spans St. Charles, St. John the Baptist counties. 2020 presidential margin R+41.8 on the 2019 lines \u2192 R+40.7 on the current lines.",
+    "toEra": "current"
+   },
+   "57": {
+    "contributors": [
+     {
+      "areaPct": 33.8,
+      "key": "57",
+      "popPct": 88.3
+     },
+     {
+      "areaPct": 65.8,
+      "key": "56",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 0.4,
+      "key": "81",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. John the Baptist",
+      "popPct": 83.4
+     },
+     {
+      "county": "St. Charles",
+      "popPct": 16.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 42704,
+    "pres2020New": -33.0,
+    "pres2020Old": -37.2,
+    "retainedAreaPct": 33.8,
+    "retainedPopPct": 88.3,
+    "text": "Kept 88% of its population from the 2019 HD-57; gained the rest from the old HD-56 (7%), the old HD-81 (4%). Spans St. John the Baptist, St. Charles counties. 2020 presidential margin D+37.2 on the 2019 lines \u2192 D+33.0 on the current lines.",
+    "toEra": "current"
+   },
+   "58": {
+    "contributors": [
+     {
+      "areaPct": 58.5,
+      "key": "58",
+      "popPct": 68.8
+     },
+     {
+      "areaPct": 17.2,
+      "key": "81",
+      "popPct": 13.3
+     },
+     {
+      "areaPct": 0.7,
+      "key": "88",
+      "popPct": 9.1
+     },
+     {
+      "areaPct": 23.0,
+      "key": "57",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 0.5,
+      "key": "59",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ascension",
+      "popPct": 53.2
+     },
+     {
+      "county": "St. James",
+      "popPct": 32.5
+     },
+     {
+      "county": "St. John the Baptist",
+      "popPct": 13.2
+     },
+     {
+      "county": "Assumption",
+      "popPct": 0.5
+     },
+     {
+      "county": "Lafourche",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "St. John the Baptist",
+      "popPct": 13.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Iberville",
+      "popPct": 9.8
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 45198,
+    "pres2020New": -32.8,
+    "pres2020Old": -40.0,
+    "retainedAreaPct": 58.5,
+    "retainedPopPct": 68.8,
+    "text": "Kept 69% of its population from the 2019 HD-58; gained the rest from the old HD-81 (13%), the old HD-88 (9%), the old HD-57 (7%) and 1 more. Counties: gained St. John the Baptist (13%); lost Iberville. 2020 presidential margin D+40.0 on the 2019 lines \u2192 D+32.8 on the current lines.",
+    "toEra": "current"
+   },
+   "59": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "59",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ascension",
+      "popPct": 98.3
+     },
+     {
+      "county": "East Baton Rouge",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45673,
+    "pres2020New": 41.2,
+    "pres2020Old": 43.8,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2019 map. Spans Ascension, East Baton Rouge counties.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 57.1,
+      "key": "6",
+      "popPct": 69.8
+     },
+     {
+      "areaPct": 42.8,
+      "key": "5",
+      "popPct": 30.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Caddo",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Bossier",
+      "popPct": 26.7
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 44181,
+    "pres2020New": 30.7,
+    "pres2020Old": 29.9,
+    "retainedAreaPct": 57.1,
+    "retainedPopPct": 69.8,
+    "text": "Kept 70% of its population from the 2019 HD-6; gained the rest from the old HD-5 (30%). Counties: lost Bossier. 2020 presidential margin R+29.9 on the 2019 lines \u2192 R+30.7 on the current lines.",
+    "toEra": "current"
+   },
+   "60": {
+    "contributors": [
+     {
+      "areaPct": 93.5,
+      "key": "60",
+      "popPct": 90.1
+     },
+     {
+      "areaPct": 5.3,
+      "key": "58",
+      "popPct": 8.8
+     },
+     {
+      "areaPct": 1.0,
+      "key": "51",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Iberville",
+      "popPct": 63.8
+     },
+     {
+      "county": "Assumption",
+      "popPct": 34.9
+     },
+     {
+      "county": "St. James",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44883,
+    "pres2020New": 9.0,
+    "pres2020Old": 17.1,
+    "retainedAreaPct": 93.5,
+    "retainedPopPct": 90.1,
+    "text": "Kept 90% of its population from the 2019 HD-60; gained the rest from the old HD-58 (9%), the old HD-51 (1%). Spans Iberville, Assumption, St. James counties. 2020 presidential margin R+17.1 on the 2019 lines \u2192 R+9.0 on the current lines.",
+    "toEra": "current"
+   },
+   "61": {
+    "contributors": [
+     {
+      "areaPct": 83.1,
+      "key": "61",
+      "popPct": 84.4
+     },
+     {
+      "areaPct": 16.8,
+      "key": "101",
+      "popPct": 15.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "East Baton Rouge",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44068,
+    "pres2020New": -72.1,
+    "pres2020Old": -71.3,
+    "retainedAreaPct": 83.1,
+    "retainedPopPct": 84.4,
+    "text": "Kept 84% of its population from the 2019 HD-61; gained the rest from the old HD-101 (16%). Entirely in East Baton Rouge County. 2020 presidential margin D+71.3 on the 2019 lines \u2192 D+72.1 on the current lines.",
+    "toEra": "current"
+   },
+   "62": {
+    "contributors": [
+     {
+      "areaPct": 74.9,
+      "key": "62",
+      "popPct": 52.8
+     },
+     {
+      "areaPct": 1.7,
+      "key": "63",
+      "popPct": 18.4
+     },
+     {
+      "areaPct": 3.5,
+      "key": "64",
+      "popPct": 14.0
+     },
+     {
+      "areaPct": 0.5,
+      "key": "29",
+      "popPct": 10.9
+     },
+     {
+      "areaPct": 19.5,
+      "key": "72",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "East Baton Rouge",
+      "popPct": 54.5
+     },
+     {
+      "county": "East Feliciana",
+      "popPct": 45.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "West Feliciana",
+      "popPct": 21.7
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 42902,
+    "pres2020New": -15.6,
+    "pres2020Old": 18.2,
+    "retainedAreaPct": 74.9,
+    "retainedPopPct": 52.8,
+    "text": "Kept 53% of its population from the 2019 HD-62; gained the rest from the old HD-63 (18%), the old HD-64 (14%), the old HD-29 (11%) and 1 more. Counties: lost West Feliciana. 2020 presidential margin R+18.2 on the 2019 lines \u2192 D+15.6 on the current lines.",
+    "toEra": "current"
+   },
+   "63": {
+    "contributors": [
+     {
+      "areaPct": 70.8,
+      "key": "63",
+      "popPct": 74.0
+     },
+     {
+      "areaPct": 29.1,
+      "key": "62",
+      "popPct": 25.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "East Baton Rouge",
+      "popPct": 99.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44605,
+    "pres2020New": -34.6,
+    "pres2020Old": -56.8,
+    "retainedAreaPct": 70.8,
+    "retainedPopPct": 74.0,
+    "text": "Kept 74% of its population from the 2019 HD-63; gained the rest from the old HD-62 (26%). Entirely in East Baton Rouge County. 2020 presidential margin D+56.8 on the 2019 lines \u2192 D+34.6 on the current lines.",
+    "toEra": "current"
+   },
+   "64": {
+    "contributors": [
+     {
+      "areaPct": 87.6,
+      "key": "64",
+      "popPct": 66.4
+     },
+     {
+      "areaPct": 4.8,
+      "key": "71",
+      "popPct": 19.1
+     },
+     {
+      "areaPct": 7.5,
+      "key": "95",
+      "popPct": 14.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Livingston",
+      "popPct": 87.7
+     },
+     {
+      "county": "East Baton Rouge",
+      "popPct": 12.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45683,
+    "pres2020New": 72.7,
+    "pres2020Old": 58.2,
+    "retainedAreaPct": 87.6,
+    "retainedPopPct": 66.4,
+    "text": "Kept 66% of its population from the 2019 HD-64; gained the rest from the old HD-71 (19%), the old HD-95 (14%). Spans Livingston, East Baton Rouge counties. 2020 presidential margin R+58.2 on the 2019 lines \u2192 R+72.7 on the current lines.",
+    "toEra": "current"
+   },
+   "65": {
+    "contributors": [
+     {
+      "areaPct": 69.3,
+      "key": "65",
+      "popPct": 83.8
+     },
+     {
+      "areaPct": 30.7,
+      "key": "64",
+      "popPct": 16.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "East Baton Rouge",
+      "popPct": 97.9
+     },
+     {
+      "county": "Livingston",
+      "popPct": 2.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44226,
+    "pres2020New": 46.9,
+    "pres2020Old": 36.5,
+    "retainedAreaPct": 69.3,
+    "retainedPopPct": 83.8,
+    "text": "Kept 84% of its population from the 2019 HD-65; gained the rest from the old HD-64 (16%). Spans East Baton Rouge, Livingston counties. 2020 presidential margin R+36.5 on the 2019 lines \u2192 R+46.9 on the current lines.",
+    "toEra": "current"
+   },
+   "66": {
+    "contributors": [
+     {
+      "areaPct": 94.3,
+      "key": "66",
+      "popPct": 87.7
+     },
+     {
+      "areaPct": 5.6,
+      "key": "65",
+      "popPct": 12.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "East Baton Rouge",
+      "popPct": 94.2
+     },
+     {
+      "county": "Iberville",
+      "popPct": 4.7
+     },
+     {
+      "county": "Livingston",
+      "popPct": 0.6
+     },
+     {
+      "county": "Ascension",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 43731,
+    "pres2020New": 40.9,
+    "pres2020Old": 37.7,
+    "retainedAreaPct": 94.3,
+    "retainedPopPct": 87.7,
+    "text": "Kept 88% of its population from the 2019 HD-66; gained the rest from the old HD-65 (12%). Spans East Baton Rouge, Iberville, Livingston, Ascension counties. 2020 presidential margin R+37.7 on the 2019 lines \u2192 R+40.9 on the current lines.",
+    "toEra": "current"
+   },
+   "67": {
+    "contributors": [
+     {
+      "areaPct": 78.1,
+      "key": "67",
+      "popPct": 75.4
+     },
+     {
+      "areaPct": 19.8,
+      "key": "70",
+      "popPct": 16.7
+     },
+     {
+      "areaPct": 1.9,
+      "key": "66",
+      "popPct": 7.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "East Baton Rouge",
+      "popPct": 99.3
+     },
+     {
+      "county": "West Baton Rouge",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 43636,
+    "pres2020New": -60.0,
+    "pres2020Old": -62.9,
+    "retainedAreaPct": 78.1,
+    "retainedPopPct": 75.4,
+    "text": "Kept 75% of its population from the 2019 HD-67; gained the rest from the old HD-70 (17%), the old HD-66 (8%). Spans East Baton Rouge, West Baton Rouge counties. 2020 presidential margin D+62.9 on the 2019 lines \u2192 D+60.0 on the current lines.",
+    "toEra": "current"
+   },
+   "68": {
+    "contributors": [
+     {
+      "areaPct": 86.8,
+      "key": "68",
+      "popPct": 84.5
+     },
+     {
+      "areaPct": 13.1,
+      "key": "70",
+      "popPct": 15.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "East Baton Rouge",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44465,
+    "pres2020New": 12.9,
+    "pres2020Old": 12.2,
+    "retainedAreaPct": 86.8,
+    "retainedPopPct": 84.5,
+    "text": "Kept 84% of its population from the 2019 HD-68; gained the rest from the old HD-70 (15%). Entirely in East Baton Rouge County. 2020 presidential margin R+12.2 on the 2019 lines \u2192 R+12.9 on the current lines.",
+    "toEra": "current"
+   },
+   "69": {
+    "contributors": [
+     {
+      "areaPct": 84.7,
+      "key": "69",
+      "popPct": 85.6
+     },
+     {
+      "areaPct": 14.0,
+      "key": "68",
+      "popPct": 12.8
+     },
+     {
+      "areaPct": 1.3,
+      "key": "66",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "East Baton Rouge",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 46601,
+    "pres2020New": 24.0,
+    "pres2020Old": 20.2,
+    "retainedAreaPct": 84.7,
+    "retainedPopPct": 85.6,
+    "text": "Kept 86% of its population from the 2019 HD-69; gained the rest from the old HD-68 (13%), the old HD-66 (2%). Entirely in East Baton Rouge County. 2020 presidential margin R+20.2 on the 2019 lines \u2192 R+24.0 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 60.2,
+      "key": "7",
+      "popPct": 56.2
+     },
+     {
+      "areaPct": 21.1,
+      "key": "23",
+      "popPct": 22.8
+     },
+     {
+      "areaPct": 18.6,
+      "key": "24",
+      "popPct": 16.8
+     },
+     {
+      "areaPct": 0.1,
+      "key": "5",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "De Soto",
+      "popPct": 62.0
+     },
+     {
+      "county": "Sabine",
+      "popPct": 24.9
+     },
+     {
+      "county": "Caddo",
+      "popPct": 13.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 43318,
+    "pres2020New": 36.1,
+    "pres2020Old": 40.3,
+    "retainedAreaPct": 60.2,
+    "retainedPopPct": 56.2,
+    "text": "Kept 56% of its population from the 2019 HD-7; gained the rest from the old HD-23 (23%), the old HD-24 (17%), the old HD-5 (4%). Spans De Soto, Sabine, Caddo counties. 2020 presidential margin R+40.3 on the 2019 lines \u2192 R+36.1 on the current lines.",
+    "toEra": "current"
+   },
+   "70": {
+    "contributors": [
+     {
+      "areaPct": 65.9,
+      "key": "70",
+      "popPct": 75.3
+     },
+     {
+      "areaPct": 23.9,
+      "key": "66",
+      "popPct": 12.4
+     },
+     {
+      "areaPct": 3.8,
+      "key": "67",
+      "popPct": 10.1
+     },
+     {
+      "areaPct": 6.3,
+      "key": "68",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "East Baton Rouge",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45424,
+    "pres2020New": 12.6,
+    "pres2020Old": 7.9,
+    "retainedAreaPct": 65.9,
+    "retainedPopPct": 75.3,
+    "text": "Kept 75% of its population from the 2019 HD-70; gained the rest from the old HD-66 (12%), the old HD-67 (10%), the old HD-68 (2%). Entirely in East Baton Rouge County. 2020 presidential margin R+7.9 on the 2019 lines \u2192 R+12.6 on the current lines.",
+    "toEra": "current"
+   },
+   "71": {
+    "contributors": [
+     {
+      "areaPct": 86.4,
+      "key": "71",
+      "popPct": 85.2
+     },
+     {
+      "areaPct": 13.5,
+      "key": "95",
+      "popPct": 14.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Livingston",
+      "popPct": 98.2
+     },
+     {
+      "county": "East Baton Rouge",
+      "popPct": 1.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 42984,
+    "pres2020New": 55.9,
+    "pres2020Old": 59.4,
+    "retainedAreaPct": 86.4,
+    "retainedPopPct": 85.2,
+    "text": "Kept 85% of its population from the 2019 HD-71; gained the rest from the old HD-95 (15%). Spans Livingston, East Baton Rouge counties. 2020 presidential margin R+59.4 on the 2019 lines \u2192 R+55.9 on the current lines.",
+    "toEra": "current"
+   },
+   "72": {
+    "contributors": [
+     {
+      "areaPct": 84.0,
+      "key": "72",
+      "popPct": 89.3
+     },
+     {
+      "areaPct": 15.9,
+      "key": "74",
+      "popPct": 10.0
+     },
+     {
+      "areaPct": 0.2,
+      "key": "86",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tangipahoa",
+      "popPct": 74.5
+     },
+     {
+      "county": "St. Helena",
+      "popPct": 25.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "East Feliciana",
+      "popPct": 4.2
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 42796,
+    "pres2020New": -16.2,
+    "pres2020Old": -24.9,
+    "retainedAreaPct": 84.0,
+    "retainedPopPct": 89.3,
+    "text": "Kept 89% of its population from the 2019 HD-72; gained the rest from the old HD-74 (10%), the old HD-86 (1%). Counties: lost East Feliciana. 2020 presidential margin D+24.9 on the 2019 lines \u2192 D+16.2 on the current lines.",
+    "toEra": "current"
+   },
+   "73": {
+    "contributors": [
+     {
+      "areaPct": 71.6,
+      "key": "73",
+      "popPct": 89.6
+     },
+     {
+      "areaPct": 28.4,
+      "key": "86",
+      "popPct": 10.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tangipahoa",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 46481,
+    "pres2020New": 58.4,
+    "pres2020Old": 51.4,
+    "retainedAreaPct": 71.6,
+    "retainedPopPct": 89.6,
+    "text": "Kept 90% of its population from the 2019 HD-73; gained the rest from the old HD-86 (10%). Entirely in Tangipahoa County. 2020 presidential margin R+51.4 on the 2019 lines \u2192 R+58.4 on the current lines.",
+    "toEra": "current"
+   },
+   "74": {
+    "contributors": [
+     {
+      "areaPct": 80.0,
+      "key": "74",
+      "popPct": 61.0
+     },
+     {
+      "areaPct": 9.8,
+      "key": "77",
+      "popPct": 22.3
+     },
+     {
+      "areaPct": 4.3,
+      "key": "104",
+      "popPct": 10.0
+     },
+     {
+      "areaPct": 0.7,
+      "key": "90",
+      "popPct": 5.1
+     },
+     {
+      "areaPct": 5.2,
+      "key": "75",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Tammany",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Tangipahoa",
+      "popPct": 21.1
+     },
+     {
+      "county": "Washington",
+      "popPct": 16.3
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 44168,
+    "pres2020New": 62.9,
+    "pres2020Old": 63.6,
+    "retainedAreaPct": 80.0,
+    "retainedPopPct": 61.0,
+    "text": "Kept 61% of its population from the 2019 HD-74; gained the rest from the old HD-77 (22%), the old HD-104 (10%), the old HD-90 (5%) and 1 more. Counties: lost Tangipahoa, Washington. 2020 presidential margin R+63.6 on the 2019 lines \u2192 R+62.9 on the current lines.",
+    "toEra": "current"
+   },
+   "75": {
+    "contributors": [
+     {
+      "areaPct": 73.7,
+      "key": "75",
+      "popPct": 84.2
+     },
+     {
+      "areaPct": 26.3,
+      "key": "74",
+      "popPct": 15.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "St. Tammany",
+      "popPct": 2.0
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 45463,
+    "pres2020New": 37.6,
+    "pres2020Old": 33.0,
+    "retainedAreaPct": 73.7,
+    "retainedPopPct": 84.2,
+    "text": "Kept 84% of its population from the 2019 HD-75; gained the rest from the old HD-74 (16%). Counties: lost St. Tammany. 2020 presidential margin R+33.0 on the 2019 lines \u2192 R+37.6 on the current lines.",
+    "toEra": "current"
+   },
+   "76": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "76",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Tammany",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 43308,
+    "pres2020New": 26.5,
+    "pres2020Old": 26.7,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2019 map. Entirely in St. Tammany County.",
+    "toEra": "current"
+   },
+   "77": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "77",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Tammany",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 43280,
+    "pres2020New": 53.3,
+    "pres2020Old": 53.3,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2019 map. Entirely in St. Tammany County.",
+    "toEra": "current"
+   },
+   "78": {
+    "contributors": [
+     {
+      "areaPct": 93.6,
+      "key": "78",
+      "popPct": 93.2
+     },
+     {
+      "areaPct": 2.8,
+      "key": "80",
+      "popPct": 3.3
+     },
+     {
+      "areaPct": 3.2,
+      "key": "82",
+      "popPct": 3.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44498,
+    "pres2020New": 44.3,
+    "pres2020Old": 44.0,
+    "retainedAreaPct": 93.6,
+    "retainedPopPct": 93.2,
+    "text": "Kept 93% of its population from the 2019 HD-78; gained the rest from the old HD-80 (3%), the old HD-82 (3%). Entirely in Jefferson County. 2020 presidential margin R+44.0 on the 2019 lines \u2192 R+44.3 on the current lines.",
+    "toEra": "current"
+   },
+   "79": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "79",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45625,
+    "pres2020New": 32.3,
+    "pres2020Old": 32.3,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2019 map. Entirely in Jefferson County.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 97.8,
+      "key": "8",
+      "popPct": 99.1
+     },
+     {
+      "areaPct": 1.3,
+      "key": "1",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bossier",
+      "popPct": 98.1
+     },
+     {
+      "county": "Caddo",
+      "popPct": 1.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45312,
+    "pres2020New": 47.3,
+    "pres2020Old": 39.3,
+    "retainedAreaPct": 97.8,
+    "retainedPopPct": 99.1,
+    "text": "Kept 99% of its population from the 2019 HD-8; gained the rest from the old HD-1 (1%). Spans Bossier, Caddo counties. 2020 presidential margin R+39.3 on the 2019 lines \u2192 R+47.3 on the current lines.",
+    "toEra": "current"
+   },
+   "80": {
+    "contributors": [
+     {
+      "areaPct": 93.0,
+      "key": "80",
+      "popPct": 95.3
+     },
+     {
+      "areaPct": 6.8,
+      "key": "94",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 46246,
+    "pres2020New": 32.2,
+    "pres2020Old": 30.9,
+    "retainedAreaPct": 93.0,
+    "retainedPopPct": 95.3,
+    "text": "Kept 95% of its population from the 2019 HD-80; gained the rest from the old HD-94 (5%). Entirely in Jefferson County. 2020 presidential margin R+30.9 on the 2019 lines \u2192 R+32.2 on the current lines.",
+    "toEra": "current"
+   },
+   "81": {
+    "contributors": [
+     {
+      "areaPct": 79.4,
+      "key": "81",
+      "popPct": 65.5
+     },
+     {
+      "areaPct": 5.9,
+      "key": "88",
+      "popPct": 15.9
+     },
+     {
+      "areaPct": 0.8,
+      "key": "95",
+      "popPct": 11.9
+     },
+     {
+      "areaPct": 13.9,
+      "key": "58",
+      "popPct": 6.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Livingston",
+      "popPct": 56.3
+     },
+     {
+      "county": "Ascension",
+      "popPct": 31.2
+     },
+     {
+      "county": "St. James",
+      "popPct": 12.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "St. John the Baptist",
+      "popPct": 11.1
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 43686,
+    "pres2020New": 63.6,
+    "pres2020Old": 53.7,
+    "retainedAreaPct": 79.4,
+    "retainedPopPct": 65.5,
+    "text": "Kept 66% of its population from the 2019 HD-81; gained the rest from the old HD-88 (16%), the old HD-95 (12%), the old HD-58 (7%). Counties: lost St. John the Baptist. 2020 presidential margin R+53.7 on the 2019 lines \u2192 R+63.6 on the current lines.",
+    "toEra": "current"
+   },
+   "82": {
+    "contributors": [
+     {
+      "areaPct": 98.5,
+      "key": "82",
+      "popPct": 97.0
+     },
+     {
+      "areaPct": 1.3,
+      "key": "80",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 46280,
+    "pres2020New": 27.2,
+    "pres2020Old": 27.5,
+    "retainedAreaPct": 98.5,
+    "retainedPopPct": 97.0,
+    "text": "Kept 97% of its population from the 2019 HD-82; gained the rest from the old HD-80 (3%). Entirely in Jefferson County. 2020 presidential margin R+27.5 on the 2019 lines \u2192 R+27.2 on the current lines.",
+    "toEra": "current"
+   },
+   "83": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "83",
+      "popPct": 99.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 43962,
+    "pres2020New": -30.4,
+    "pres2020Old": -30.5,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.8,
+    "text": "Lines unchanged from the 2019 map. Entirely in Jefferson County.",
+    "toEra": "current"
+   },
+   "84": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "84",
+      "popPct": 98.6
+     },
+     {
+      "areaPct": 0.0,
+      "key": "87",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 42539,
+    "pres2020New": 37.1,
+    "pres2020Old": 37.4,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 98.6,
+    "text": "Kept 99% of its population from the 2019 HD-84; gained the rest from the old HD-87 (1%). Entirely in Jefferson County. 2020 presidential margin R+37.4 on the 2019 lines \u2192 R+37.1 on the current lines.",
+    "toEra": "current"
+   },
+   "85": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "85",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 99.0
+     },
+     {
+      "county": "Orleans",
+      "popPct": 1.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44341,
+    "pres2020New": -8.2,
+    "pres2020Old": -10.0,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2019 map. Spans Jefferson, Orleans counties.",
+    "toEra": "current"
+   },
+   "86": {
+    "contributors": [
+     {
+      "areaPct": 67.6,
+      "key": "86",
+      "popPct": 90.0
+     },
+     {
+      "areaPct": 32.3,
+      "key": "74",
+      "popPct": 10.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tangipahoa",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45765,
+    "pres2020New": 47.6,
+    "pres2020Old": 49.1,
+    "retainedAreaPct": 67.6,
+    "retainedPopPct": 90.0,
+    "text": "Kept 90% of its population from the 2019 HD-86; gained the rest from the old HD-74 (10%). Entirely in Tangipahoa County. 2020 presidential margin R+49.1 on the 2019 lines \u2192 R+47.6 on the current lines.",
+    "toEra": "current"
+   },
+   "87": {
+    "contributors": [
+     {
+      "areaPct": 96.2,
+      "key": "87",
+      "popPct": 92.0
+     },
+     {
+      "areaPct": 3.5,
+      "key": "105",
+      "popPct": 7.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45512,
+    "pres2020New": -51.1,
+    "pres2020Old": -52.8,
+    "retainedAreaPct": 96.2,
+    "retainedPopPct": 92.0,
+    "text": "Kept 92% of its population from the 2019 HD-87; gained the rest from the old HD-105 (8%). Entirely in Jefferson County. 2020 presidential margin D+52.8 on the 2019 lines \u2192 D+51.1 on the current lines.",
+    "toEra": "current"
+   },
+   "88": {
+    "contributors": [
+     {
+      "areaPct": 92.2,
+      "key": "88",
+      "popPct": 87.4
+     },
+     {
+      "areaPct": 7.8,
+      "key": "59",
+      "popPct": 12.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ascension",
+      "popPct": 98.4
+     },
+     {
+      "county": "Livingston",
+      "popPct": 1.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 42459,
+    "pres2020New": 56.5,
+    "pres2020Old": 53.7,
+    "retainedAreaPct": 92.2,
+    "retainedPopPct": 87.4,
+    "text": "Kept 87% of its population from the 2019 HD-88; gained the rest from the old HD-59 (13%). Spans Ascension, Livingston counties. 2020 presidential margin R+53.7 on the 2019 lines \u2192 R+56.5 on the current lines.",
+    "toEra": "current"
+   },
+   "89": {
+    "contributors": [
+     {
+      "areaPct": 53.2,
+      "key": "89",
+      "popPct": 85.4
+     },
+     {
+      "areaPct": 46.7,
+      "key": "77",
+      "popPct": 14.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Tammany",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45224,
+    "pres2020New": 52.0,
+    "pres2020Old": 49.7,
+    "retainedAreaPct": 53.2,
+    "retainedPopPct": 85.4,
+    "text": "Kept 85% of its population from the 2019 HD-89; gained the rest from the old HD-77 (15%). Entirely in St. Tammany County. 2020 presidential margin R+49.7 on the 2019 lines \u2192 R+52.0 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 98.8,
+      "key": "9",
+      "popPct": 84.7
+     },
+     {
+      "areaPct": 0.5,
+      "key": "8",
+      "popPct": 9.8
+     },
+     {
+      "areaPct": 0.8,
+      "key": "6",
+      "popPct": 5.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bossier",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 43504,
+    "pres2020New": 43.3,
+    "pres2020Old": 49.0,
+    "retainedAreaPct": 98.8,
+    "retainedPopPct": 84.7,
+    "text": "Kept 85% of its population from the 2019 HD-9; gained the rest from the old HD-8 (10%), the old HD-6 (5%). Entirely in Bossier County. 2020 presidential margin R+49.0 on the 2019 lines \u2192 R+43.3 on the current lines.",
+    "toEra": "current"
+   },
+   "90": {
+    "contributors": [
+     {
+      "areaPct": 96.1,
+      "key": "90",
+      "popPct": 94.8
+     },
+     {
+      "areaPct": 3.9,
+      "key": "76",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Tammany",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 43395,
+    "pres2020New": 32.2,
+    "pres2020Old": 35.0,
+    "retainedAreaPct": 96.1,
+    "retainedPopPct": 94.8,
+    "text": "Kept 95% of its population from the 2019 HD-90; gained the rest from the old HD-76 (5%). Entirely in St. Tammany County. 2020 presidential margin R+35.0 on the 2019 lines \u2192 R+32.2 on the current lines.",
+    "toEra": "current"
+   },
+   "91": {
+    "contributors": [
+     {
+      "areaPct": 74.5,
+      "key": "91",
+      "popPct": 76.7
+     },
+     {
+      "areaPct": 10.2,
+      "key": "93",
+      "popPct": 11.7
+     },
+     {
+      "areaPct": 15.3,
+      "key": "98",
+      "popPct": 11.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orleans",
+      "popPct": 98.0
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 2.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 42535,
+    "pres2020New": -72.6,
+    "pres2020Old": -78.7,
+    "retainedAreaPct": 74.5,
+    "retainedPopPct": 76.7,
+    "text": "Kept 77% of its population from the 2019 HD-91; gained the rest from the old HD-93 (12%), the old HD-98 (12%). Spans Orleans, Jefferson counties. 2020 presidential margin D+78.7 on the 2019 lines \u2192 D+72.6 on the current lines.",
+    "toEra": "current"
+   },
+   "92": {
+    "contributors": [
+     {
+      "areaPct": 96.3,
+      "key": "92",
+      "popPct": 93.6
+     },
+     {
+      "areaPct": 3.6,
+      "key": "78",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "St. Charles",
+      "popPct": 3.3
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 45131,
+    "pres2020New": -8.2,
+    "pres2020Old": -8.9,
+    "retainedAreaPct": 96.3,
+    "retainedPopPct": 93.6,
+    "text": "Kept 94% of its population from the 2019 HD-92; gained the rest from the old HD-78 (6%). Counties: lost St. Charles. 2020 presidential margin D+8.9 on the 2019 lines \u2192 D+8.2 on the current lines.",
+    "toEra": "current"
+   },
+   "93": {
+    "contributors": [
+     {
+      "areaPct": 71.5,
+      "key": "93",
+      "popPct": 74.8
+     },
+     {
+      "areaPct": 28.4,
+      "key": "99",
+      "popPct": 25.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orleans",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 44135,
+    "pres2020New": -81.8,
+    "pres2020Old": -77.3,
+    "retainedAreaPct": 71.5,
+    "retainedPopPct": 74.8,
+    "text": "Kept 75% of its population from the 2019 HD-93; gained the rest from the old HD-99 (25%). Entirely in Orleans County. 2020 presidential margin D+77.3 on the 2019 lines \u2192 D+81.8 on the current lines.",
+    "toEra": "current"
+   },
+   "94": {
+    "contributors": [
+     {
+      "areaPct": 98.3,
+      "key": "94",
+      "popPct": 97.8
+     },
+     {
+      "areaPct": 1.3,
+      "key": "80",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orleans",
+      "popPct": 53.9
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 46.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45814,
+    "pres2020New": 18.7,
+    "pres2020Old": 10.4,
+    "retainedAreaPct": 98.3,
+    "retainedPopPct": 97.8,
+    "text": "Kept 98% of its population from the 2019 HD-94; gained the rest from the old HD-80 (2%). Spans Orleans, Jefferson counties. 2020 presidential margin R+10.4 on the 2019 lines \u2192 R+18.7 on the current lines.",
+    "toEra": "current"
+   },
+   "95": {
+    "contributors": [
+     {
+      "areaPct": 73.0,
+      "key": "95",
+      "popPct": 64.4
+     },
+     {
+      "areaPct": 5.0,
+      "key": "73",
+      "popPct": 20.8
+     },
+     {
+      "areaPct": 22.0,
+      "key": "81",
+      "popPct": 14.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Livingston",
+      "popPct": 78.6
+     },
+     {
+      "county": "Tangipahoa",
+      "popPct": 21.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Tangipahoa",
+      "popPct": 21.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 43393,
+    "pres2020New": 65.0,
+    "pres2020Old": 71.9,
+    "retainedAreaPct": 73.0,
+    "retainedPopPct": 64.4,
+    "text": "Kept 64% of its population from the 2019 HD-95; gained the rest from the old HD-73 (21%), the old HD-81 (15%). Counties: gained Tangipahoa (21%). 2020 presidential margin R+71.9 on the 2019 lines \u2192 R+65.0 on the current lines.",
+    "toEra": "current"
+   },
+   "96": {
+    "contributors": [
+     {
+      "areaPct": 15.8,
+      "key": "96",
+      "popPct": 63.6
+     },
+     {
+      "areaPct": 46.0,
+      "key": "49",
+      "popPct": 19.9
+     },
+     {
+      "areaPct": 36.3,
+      "key": "46",
+      "popPct": 8.6
+     },
+     {
+      "areaPct": 1.4,
+      "key": "48",
+      "popPct": 6.3
+     },
+     {
+      "areaPct": 0.5,
+      "key": "44",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Iberia",
+      "popPct": 57.2
+     },
+     {
+      "county": "St. Martin",
+      "popPct": 35.1
+     },
+     {
+      "county": "Lafayette",
+      "popPct": 7.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45742,
+    "pres2020New": -17.9,
+    "pres2020Old": -17.1,
+    "retainedAreaPct": 15.8,
+    "retainedPopPct": 63.6,
+    "text": "Kept 64% of its population from the 2019 HD-96; gained the rest from the old HD-49 (20%), the old HD-46 (9%), the old HD-48 (6%) and 1 more. Spans Iberia, St. Martin, Lafayette counties. 2020 presidential margin D+17.1 on the 2019 lines \u2192 D+17.9 on the current lines.",
+    "toEra": "current"
+   },
+   "97": {
+    "contributors": [
+     {
+      "areaPct": 91.5,
+      "key": "97",
+      "popPct": 93.6
+     },
+     {
+      "areaPct": 8.4,
+      "key": "99",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orleans",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45747,
+    "pres2020New": -80.6,
+    "pres2020Old": -79.4,
+    "retainedAreaPct": 91.5,
+    "retainedPopPct": 93.6,
+    "text": "Kept 94% of its population from the 2019 HD-97; gained the rest from the old HD-99 (6%). Entirely in Orleans County. 2020 presidential margin D+79.4 on the 2019 lines \u2192 D+80.6 on the current lines.",
+    "toEra": "current"
+   },
+   "98": {
+    "contributors": [
+     {
+      "areaPct": 97.8,
+      "key": "98",
+      "popPct": 96.2
+     },
+     {
+      "areaPct": 2.1,
+      "key": "91",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orleans",
+      "popPct": 90.7
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 9.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 43350,
+    "pres2020New": -53.2,
+    "pres2020Old": -54.6,
+    "retainedAreaPct": 97.8,
+    "retainedPopPct": 96.2,
+    "text": "Kept 96% of its population from the 2019 HD-98; gained the rest from the old HD-91 (4%). Spans Orleans, Jefferson counties. 2020 presidential margin D+54.6 on the 2019 lines \u2192 D+53.2 on the current lines.",
+    "toEra": "current"
+   },
+   "99": {
+    "contributors": [
+     {
+      "areaPct": 94.3,
+      "key": "99",
+      "popPct": 79.9
+     },
+     {
+      "areaPct": 5.6,
+      "key": "100",
+      "popPct": 20.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orleans",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 45984,
+    "pres2020New": -89.4,
+    "pres2020Old": -89.6,
+    "retainedAreaPct": 94.3,
+    "retainedPopPct": 79.9,
+    "text": "Kept 80% of its population from the 2019 HD-99; gained the rest from the old HD-100 (20%). Entirely in Orleans County. 2020 presidential margin D+89.6 on the 2019 lines \u2192 D+89.4 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "1",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Tammany",
+      "popPct": 90.2
+     },
+     {
+      "county": "St. Bernard",
+      "popPct": 8.7
+     },
+     {
+      "county": "Orleans",
+      "popPct": 1.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 115678,
+    "pres2020New": 34.8,
+    "pres2020Old": 33.8,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2019 map. Spans St. Tammany, St. Bernard, Orleans counties.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 94.2,
+      "key": "10",
+      "popPct": 92.3
+     },
+     {
+      "areaPct": 5.3,
+      "key": "9",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 0.5,
+      "key": "19",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 123837,
+    "pres2020New": 33.4,
+    "pres2020Old": 33.2,
+    "retainedAreaPct": 94.2,
+    "retainedPopPct": 92.3,
+    "text": "Kept 92% of its population from the 2019 SD-10; gained the rest from the old SD-9 (7%), the old SD-19 (1%). Entirely in Jefferson County. 2020 presidential margin R+33.2 on the 2019 lines \u2192 R+33.4 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 87.0,
+      "key": "11",
+      "popPct": 94.1
+     },
+     {
+      "areaPct": 6.2,
+      "key": "12",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 6.8,
+      "key": "1",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Tammany",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Tangipahoa",
+      "popPct": 14.4
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 114484,
+    "pres2020New": 47.3,
+    "pres2020Old": 49.5,
+    "retainedAreaPct": 87.0,
+    "retainedPopPct": 94.1,
+    "text": "Kept 94% of its population from the 2019 SD-11; gained the rest from the old SD-12 (4%), the old SD-1 (2%). Counties: lost Tangipahoa. 2020 presidential margin R+49.5 on the 2019 lines \u2192 R+47.3 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 93.6,
+      "key": "12",
+      "popPct": 90.2
+     },
+     {
+      "areaPct": 4.6,
+      "key": "11",
+      "popPct": 8.7
+     },
+     {
+      "areaPct": 1.8,
+      "key": "1",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 39.6
+     },
+     {
+      "county": "Tangipahoa",
+      "popPct": 33.2
+     },
+     {
+      "county": "St. Tammany",
+      "popPct": 27.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 114204,
+    "pres2020New": 43.9,
+    "pres2020Old": 39.6,
+    "retainedAreaPct": 93.6,
+    "retainedPopPct": 90.2,
+    "text": "Kept 90% of its population from the 2019 SD-12; gained the rest from the old SD-11 (9%), the old SD-1 (1%). Spans Washington, Tangipahoa, St. Tammany counties. 2020 presidential margin R+39.6 on the 2019 lines \u2192 R+43.9 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 88.9,
+      "key": "13",
+      "popPct": 89.3
+     },
+     {
+      "areaPct": 11.1,
+      "key": "18",
+      "popPct": 10.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Livingston",
+      "popPct": 98.9
+     },
+     {
+      "county": "East Baton Rouge",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Tangipahoa",
+      "popPct": 7.5
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 114876,
+    "pres2020New": 69.3,
+    "pres2020Old": 72.1,
+    "retainedAreaPct": 88.9,
+    "retainedPopPct": 89.3,
+    "text": "Kept 89% of its population from the 2019 SD-13; gained the rest from the old SD-18 (11%). Counties: lost Tangipahoa. 2020 presidential margin R+72.1 on the 2019 lines \u2192 R+69.3 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "14",
+      "popPct": 99.1
+     },
+     {
+      "areaPct": 0.3,
+      "key": "16",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "East Baton Rouge",
+      "popPct": 98.0
+     },
+     {
+      "county": "Iberville",
+      "popPct": 1.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 120870,
+    "pres2020New": -58.4,
+    "pres2020Old": -58.8,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.1,
+    "text": "Kept 99% of its population from the 2019 SD-14; gained the rest from the old SD-16 (1%). Spans East Baton Rouge, Iberville counties. 2020 presidential margin D+58.8 on the 2019 lines \u2192 D+58.4 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "15",
+      "popPct": 98.4
+     },
+     {
+      "areaPct": 0.4,
+      "key": "16",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "East Baton Rouge",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 115781,
+    "pres2020New": -59.2,
+    "pres2020Old": -58.7,
+    "retainedAreaPct": 99.4,
+    "retainedPopPct": 98.4,
+    "text": "Kept 98% of its population from the 2019 SD-15; gained the rest from the old SD-16 (2%). Entirely in East Baton Rouge County. 2020 presidential margin D+58.7 on the 2019 lines \u2192 D+59.2 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "16",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "East Baton Rouge",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 118900,
+    "pres2020New": 23.2,
+    "pres2020Old": 21.8,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2019 map. Entirely in East Baton Rouge County.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 71.6,
+      "key": "17",
+      "popPct": 66.4
+     },
+     {
+      "areaPct": 13.6,
+      "key": "24",
+      "popPct": 15.8
+     },
+     {
+      "areaPct": 9.6,
+      "key": "22",
+      "popPct": 10.4
+     },
+     {
+      "areaPct": 0.4,
+      "key": "2",
+      "popPct": 4.5
+     },
+     {
+      "areaPct": 4.7,
+      "key": "28",
+      "popPct": 2.3
+     },
+     {
+      "areaPct": 0.1,
+      "key": "26",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Landry",
+      "popPct": 24.0
+     },
+     {
+      "county": "Pointe Coupee",
+      "popPct": 18.5
+     },
+     {
+      "county": "East Feliciana",
+      "popPct": 17.2
+     },
+     {
+      "county": "West Baton Rouge",
+      "popPct": 12.6
+     },
+     {
+      "county": "Iberville",
+      "popPct": 11.4
+     },
+     {
+      "county": "East Baton Rouge",
+      "popPct": 7.9
+     },
+     {
+      "county": "St. Martin",
+      "popPct": 3.6
+     },
+     {
+      "county": "West Feliciana",
+      "popPct": 2.0
+     },
+     {
+      "county": "St. Helena",
+      "popPct": 1.4
+     },
+     {
+      "county": "Lafayette",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "St. Landry",
+      "popPct": 24.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Assumption",
+      "popPct": 9.2
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 113721,
+    "pres2020New": 32.4,
+    "pres2020Old": 24.1,
+    "retainedAreaPct": 71.6,
+    "retainedPopPct": 66.4,
+    "text": "Kept 66% of its population from the 2019 SD-17; gained the rest from the old SD-24 (16%), the old SD-22 (10%), the old SD-2 (4%) and 2 more. Counties: gained St. Landry (24%); lost Assumption. 2020 presidential margin R+24.1 on the 2019 lines \u2192 R+32.4 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "18",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ascension",
+      "popPct": 87.1
+     },
+     {
+      "county": "Livingston",
+      "popPct": 7.6
+     },
+     {
+      "county": "St. James",
+      "popPct": 4.6
+     },
+     {
+      "county": "East Baton Rouge",
+      "popPct": 0.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 118222,
+    "pres2020New": 53.0,
+    "pres2020Old": 52.7,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2019 map. Spans Ascension, Livingston, St. James, East Baton Rouge counties.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 73.5,
+      "key": "19",
+      "popPct": 76.1
+     },
+     {
+      "areaPct": 7.7,
+      "key": "21",
+      "popPct": 8.9
+     },
+     {
+      "areaPct": 7.9,
+      "key": "2",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 0.1,
+      "key": "10",
+      "popPct": 5.1
+     },
+     {
+      "areaPct": 0.4,
+      "key": "8",
+      "popPct": 3.1
+     },
+     {
+      "areaPct": 10.3,
+      "key": "20",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Charles",
+      "popPct": 42.8
+     },
+     {
+      "county": "Lafourche",
+      "popPct": 21.0
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 20.9
+     },
+     {
+      "county": "St. John the Baptist",
+      "popPct": 15.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 122782,
+    "pres2020New": 22.8,
+    "pres2020Old": 14.6,
+    "retainedAreaPct": 73.5,
+    "retainedPopPct": 76.1,
+    "text": "Kept 76% of its population from the 2019 SD-19; gained the rest from the old SD-21 (9%), the old SD-2 (6%), the old SD-10 (5%) and 2 more. Spans St. Charles, Lafourche, Jefferson, St. John the Baptist counties. 2020 presidential margin R+14.6 on the 2019 lines \u2192 R+22.8 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 85.1,
+      "key": "2",
+      "popPct": 79.7
+     },
+     {
+      "areaPct": 8.6,
+      "key": "19",
+      "popPct": 10.3
+     },
+     {
+      "areaPct": 6.0,
+      "key": "17",
+      "popPct": 7.0
+     },
+     {
+      "areaPct": 0.2,
+      "key": "21",
+      "popPct": 1.6
+     },
+     {
+      "areaPct": 0.1,
+      "key": "18",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. John the Baptist",
+      "popPct": 20.3
+     },
+     {
+      "county": "Ascension",
+      "popPct": 18.5
+     },
+     {
+      "county": "Iberville",
+      "popPct": 14.5
+     },
+     {
+      "county": "Lafourche",
+      "popPct": 13.4
+     },
+     {
+      "county": "St. James",
+      "popPct": 12.8
+     },
+     {
+      "county": "West Baton Rouge",
+      "popPct": 10.4
+     },
+     {
+      "county": "Assumption",
+      "popPct": 9.4
+     },
+     {
+      "county": "East Baton Rouge",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 116051,
+    "pres2020New": -33.0,
+    "pres2020Old": -23.5,
+    "retainedAreaPct": 85.1,
+    "retainedPopPct": 79.7,
+    "text": "Kept 80% of its population from the 2019 SD-2; gained the rest from the old SD-19 (10%), the old SD-17 (7%), the old SD-21 (2%) and 1 more. Spans St. John the Baptist, Ascension, Iberville, Lafourche and 4 more counties. 2020 presidential margin D+23.5 on the 2019 lines \u2192 D+33.0 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 97.9,
+      "key": "20",
+      "popPct": 87.1
+     },
+     {
+      "areaPct": 0.5,
+      "key": "21",
+      "popPct": 10.8
+     },
+     {
+      "areaPct": 1.6,
+      "key": "19",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Terrebonne",
+      "popPct": 62.8
+     },
+     {
+      "county": "Lafourche",
+      "popPct": 37.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 123358,
+    "pres2020New": 61.8,
+    "pres2020Old": 60.7,
+    "retainedAreaPct": 97.9,
+    "retainedPopPct": 87.1,
+    "text": "Kept 87% of its population from the 2019 SD-20; gained the rest from the old SD-21 (11%), the old SD-19 (2%). Spans Terrebonne, Lafourche counties. 2020 presidential margin R+60.7 on the 2019 lines \u2192 R+61.8 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 78.4,
+      "key": "21",
+      "popPct": 79.0
+     },
+     {
+      "areaPct": 17.8,
+      "key": "17",
+      "popPct": 9.6
+     },
+     {
+      "areaPct": 3.7,
+      "key": "22",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 0.1,
+      "key": "2",
+      "popPct": 3.3
+     },
+     {
+      "areaPct": 0.0,
+      "key": "20",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "St. Mary",
+      "popPct": 41.8
+     },
+     {
+      "county": "Terrebonne",
+      "popPct": 26.9
+     },
+     {
+      "county": "Iberia",
+      "popPct": 12.3
+     },
+     {
+      "county": "Lafourche",
+      "popPct": 9.3
+     },
+     {
+      "county": "Assumption",
+      "popPct": 8.4
+     },
+     {
+      "county": "St. Martin",
+      "popPct": 1.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Assumption",
+      "popPct": 8.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 118238,
+    "pres2020New": 38.6,
+    "pres2020Old": 38.7,
+    "retainedAreaPct": 78.4,
+    "retainedPopPct": 79.0,
+    "text": "Kept 79% of its population from the 2019 SD-21; gained the rest from the old SD-17 (10%), the old SD-22 (6%), the old SD-2 (3%) and 1 more. Counties: gained Assumption (8%). 2020 presidential margin R+38.7 on the 2019 lines \u2192 R+38.6 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 97.4,
+      "key": "22",
+      "popPct": 77.0
+     },
+     {
+      "areaPct": 1.5,
+      "key": "23",
+      "popPct": 21.7
+     },
+     {
+      "areaPct": 0.3,
+      "key": "21",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Iberia",
+      "popPct": 43.9
+     },
+     {
+      "county": "St. Martin",
+      "popPct": 30.9
+     },
+     {
+      "county": "Lafayette",
+      "popPct": 25.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "St. Landry",
+      "popPct": 6.6
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 125545,
+    "pres2020New": 40.0,
+    "pres2020Old": 42.3,
+    "retainedAreaPct": 97.4,
+    "retainedPopPct": 77.0,
+    "text": "Kept 77% of its population from the 2019 SD-22; gained the rest from the old SD-23 (22%), the old SD-21 (1%). Counties: lost St. Landry. 2020 presidential margin R+42.3 on the 2019 lines \u2192 R+40.0 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 70.7,
+      "key": "23",
+      "popPct": 86.2
+     },
+     {
+      "areaPct": 27.3,
+      "key": "26",
+      "popPct": 12.8
+     },
+     {
+      "areaPct": 2.0,
+      "key": "24",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lafayette",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 125007,
+    "pres2020New": 45.4,
+    "pres2020Old": 44.9,
+    "retainedAreaPct": 70.7,
+    "retainedPopPct": 86.2,
+    "text": "Kept 86% of its population from the 2019 SD-23; gained the rest from the old SD-26 (13%), the old SD-24 (1%). Entirely in Lafayette County. 2020 presidential margin R+44.9 on the 2019 lines \u2192 R+45.4 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 64.2,
+      "key": "24",
+      "popPct": 79.8
+     },
+     {
+      "areaPct": 16.3,
+      "key": "26",
+      "popPct": 9.3
+     },
+     {
+      "areaPct": 15.0,
+      "key": "28",
+      "popPct": 5.5
+     },
+     {
+      "areaPct": 0.3,
+      "key": "23",
+      "popPct": 2.8
+     },
+     {
+      "areaPct": 4.2,
+      "key": "22",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lafayette",
+      "popPct": 55.2
+     },
+     {
+      "county": "St. Landry",
+      "popPct": 38.0
+     },
+     {
+      "county": "St. Martin",
+      "popPct": 6.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 124791,
+    "pres2020New": -16.2,
+    "pres2020Old": -14.1,
+    "retainedAreaPct": 64.2,
+    "retainedPopPct": 79.8,
+    "text": "Kept 80% of its population from the 2019 SD-24; gained the rest from the old SD-26 (9%), the old SD-28 (6%), the old SD-23 (3%) and 1 more. Spans Lafayette, St. Landry, St. Martin counties. 2020 presidential margin D+14.1 on the 2019 lines \u2192 D+16.2 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "25",
+      "popPct": 85.2
+     },
+     {
+      "areaPct": 0.2,
+      "key": "27",
+      "popPct": 14.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Calcasieu",
+      "popPct": 65.2
+     },
+     {
+      "county": "Jefferson Davis",
+      "popPct": 25.7
+     },
+     {
+      "county": "Cameron",
+      "popPct": 4.6
+     },
+     {
+      "county": "Acadia",
+      "popPct": 4.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 122971,
+    "pres2020New": 47.2,
+    "pres2020Old": 56.2,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 85.2,
+    "text": "Kept 85% of its population from the 2019 SD-25; gained the rest from the old SD-27 (15%). Spans Calcasieu, Jefferson Davis, Cameron, Acadia counties. 2020 presidential margin R+56.2 on the 2019 lines \u2192 R+47.2 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 80.0,
+      "key": "26",
+      "popPct": 74.3
+     },
+     {
+      "areaPct": 13.2,
+      "key": "25",
+      "popPct": 20.7
+     },
+     {
+      "areaPct": 6.8,
+      "key": "28",
+      "popPct": 4.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Vermilion",
+      "popPct": 46.2
+     },
+     {
+      "county": "Acadia",
+      "popPct": 42.7
+     },
+     {
+      "county": "Lafayette",
+      "popPct": 11.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "St. Landry",
+      "popPct": 6.1
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 123870,
+    "pres2020New": 58.8,
+    "pres2020Old": 54.0,
+    "retainedAreaPct": 80.0,
+    "retainedPopPct": 74.3,
+    "text": "Kept 74% of its population from the 2019 SD-26; gained the rest from the old SD-25 (21%), the old SD-28 (5%). Counties: lost St. Landry. 2020 presidential margin R+54.0 on the 2019 lines \u2192 R+58.8 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 62.9,
+      "key": "27",
+      "popPct": 92.4
+     },
+     {
+      "areaPct": 37.1,
+      "key": "30",
+      "popPct": 7.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Calcasieu",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 117234,
+    "pres2020New": 27.7,
+    "pres2020Old": 16.0,
+    "retainedAreaPct": 62.9,
+    "retainedPopPct": 92.4,
+    "text": "Kept 92% of its population from the 2019 SD-27; gained the rest from the old SD-30 (8%). Entirely in Calcasieu County. 2020 presidential margin R+16.0 on the 2019 lines \u2192 R+27.7 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 89.5,
+      "key": "28",
+      "popPct": 82.5
+     },
+     {
+      "areaPct": 6.5,
+      "key": "31",
+      "popPct": 16.2
+     },
+     {
+      "areaPct": 0.1,
+      "key": "24",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Avoyelles",
+      "popPct": 28.8
+     },
+     {
+      "county": "Evangeline",
+      "popPct": 28.4
+     },
+     {
+      "county": "Allen",
+      "popPct": 19.9
+     },
+     {
+      "county": "Rapides",
+      "popPct": 16.3
+     },
+     {
+      "county": "St. Landry",
+      "popPct": 6.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Rapides",
+      "popPct": 16.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Acadia",
+      "popPct": 5.4
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 114354,
+    "pres2020New": 48.1,
+    "pres2020Old": 43.8,
+    "retainedAreaPct": 89.5,
+    "retainedPopPct": 82.5,
+    "text": "Kept 82% of its population from the 2019 SD-28; gained the rest from the old SD-31 (16%), the old SD-24 (1%). Counties: gained Rapides (16%); lost Acadia. 2020 presidential margin R+43.8 on the 2019 lines \u2192 R+48.1 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 72.5,
+      "key": "29",
+      "popPct": 81.2
+     },
+     {
+      "areaPct": 21.6,
+      "key": "31",
+      "popPct": 11.3
+     },
+     {
+      "areaPct": 4.2,
+      "key": "35",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 1.8,
+      "key": "28",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rapides",
+      "popPct": 48.2
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 20.9
+     },
+     {
+      "county": "Natchitoches",
+      "popPct": 11.8
+     },
+     {
+      "county": "Winn",
+      "popPct": 5.6
+     },
+     {
+      "county": "Jackson",
+      "popPct": 4.5
+     },
+     {
+      "county": "Grant",
+      "popPct": 4.3
+     },
+     {
+      "county": "Bienville",
+      "popPct": 2.5
+     },
+     {
+      "county": "Avoyelles",
+      "popPct": 2.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Avoyelles",
+      "popPct": 2.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 119612,
+    "pres2020New": -27.1,
+    "pres2020Old": -23.7,
+    "retainedAreaPct": 72.5,
+    "retainedPopPct": 81.2,
+    "text": "Kept 81% of its population from the 2019 SD-29; gained the rest from the old SD-31 (11%), the old SD-35 (5%), the old SD-28 (2%). Counties: gained Avoyelles (2%). 2020 presidential margin D+23.7 on the 2019 lines \u2192 D+27.1 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 88.4,
+      "key": "3",
+      "popPct": 72.7
+     },
+     {
+      "areaPct": 5.8,
+      "key": "4",
+      "popPct": 21.1
+     },
+     {
+      "areaPct": 5.8,
+      "key": "1",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orleans",
+      "popPct": 72.8
+     },
+     {
+      "county": "St. Bernard",
+      "popPct": 27.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Jefferson",
+      "popPct": 23.4
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 119502,
+    "pres2020New": -56.1,
+    "pres2020Old": -50.8,
+    "retainedAreaPct": 88.4,
+    "retainedPopPct": 72.7,
+    "text": "Kept 73% of its population from the 2019 SD-3; gained the rest from the old SD-4 (21%), the old SD-1 (6%). Counties: lost Jefferson. 2020 presidential margin D+50.8 on the 2019 lines \u2192 D+56.1 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 88.2,
+      "key": "30",
+      "popPct": 92.0
+     },
+     {
+      "areaPct": 11.8,
+      "key": "31",
+      "popPct": 8.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Vernon",
+      "popPct": 43.0
+     },
+     {
+      "county": "Beauregard",
+      "popPct": 32.0
+     },
+     {
+      "county": "Calcasieu",
+      "popPct": 16.9
+     },
+     {
+      "county": "Rapides",
+      "popPct": 8.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Rapides",
+      "popPct": 8.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 113755,
+    "pres2020New": 67.0,
+    "pres2020Old": 66.8,
+    "retainedAreaPct": 88.2,
+    "retainedPopPct": 92.0,
+    "text": "Kept 92% of its population from the 2019 SD-30; gained the rest from the old SD-31 (8%). Counties: gained Rapides (8%). 2020 presidential margin R+66.8 on the 2019 lines \u2192 R+67.0 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 72.6,
+      "key": "31",
+      "popPct": 53.2
+     },
+     {
+      "areaPct": 1.1,
+      "key": "37",
+      "popPct": 24.0
+     },
+     {
+      "areaPct": 11.2,
+      "key": "38",
+      "popPct": 12.2
+     },
+     {
+      "areaPct": 12.7,
+      "key": "36",
+      "popPct": 9.8
+     },
+     {
+      "areaPct": 2.4,
+      "key": "29",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Natchitoches",
+      "popPct": 19.4
+     },
+     {
+      "county": "Sabine",
+      "popPct": 18.3
+     },
+     {
+      "county": "Bossier",
+      "popPct": 15.4
+     },
+     {
+      "county": "Caddo",
+      "popPct": 12.8
+     },
+     {
+      "county": "De Soto",
+      "popPct": 8.1
+     },
+     {
+      "county": "Bienville",
+      "popPct": 6.4
+     },
+     {
+      "county": "Red River",
+      "popPct": 6.3
+     },
+     {
+      "county": "Rapides",
+      "popPct": 5.4
+     },
+     {
+      "county": "Winn",
+      "popPct": 4.0
+     },
+     {
+      "county": "Webster",
+      "popPct": 3.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Bossier",
+      "popPct": 15.4
+     },
+     {
+      "county": "Caddo",
+      "popPct": 12.8
+     },
+     {
+      "county": "De Soto",
+      "popPct": 8.1
+     },
+     {
+      "county": "Bienville",
+      "popPct": 6.4
+     },
+     {
+      "county": "Webster",
+      "popPct": 3.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Grant",
+      "popPct": 2.4
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 120964,
+    "pres2020New": 42.6,
+    "pres2020Old": 51.5,
+    "retainedAreaPct": 72.6,
+    "retainedPopPct": 53.2,
+    "text": "Kept 53% of its population from the 2019 SD-31; gained the rest from the old SD-37 (24%), the old SD-38 (12%), the old SD-36 (10%) and 1 more. Counties: gained Bossier (15%), Caddo (13%), De Soto (8%) and 2 more; lost Grant. 2020 presidential margin R+51.5 on the 2019 lines \u2192 R+42.6 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 96.4,
+      "key": "32",
+      "popPct": 92.7
+     },
+     {
+      "areaPct": 0.2,
+      "key": "35",
+      "popPct": 4.4
+     },
+     {
+      "areaPct": 0.8,
+      "key": "34",
+      "popPct": 1.8
+     },
+     {
+      "areaPct": 0.9,
+      "key": "31",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Rapides",
+      "popPct": 22.0
+     },
+     {
+      "county": "Franklin",
+      "popPct": 17.2
+     },
+     {
+      "county": "LaSalle",
+      "popPct": 12.9
+     },
+     {
+      "county": "West Feliciana",
+      "popPct": 11.4
+     },
+     {
+      "county": "Concordia",
+      "popPct": 10.6
+     },
+     {
+      "county": "Caldwell",
+      "popPct": 8.4
+     },
+     {
+      "county": "Catahoula",
+      "popPct": 7.8
+     },
+     {
+      "county": "Ouachita",
+      "popPct": 4.0
+     },
+     {
+      "county": "Avoyelles",
+      "popPct": 3.5
+     },
+     {
+      "county": "Richland",
+      "popPct": 1.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 114228,
+    "pres2020New": 61.7,
+    "pres2020Old": 61.7,
+    "retainedAreaPct": 96.4,
+    "retainedPopPct": 92.7,
+    "text": "Kept 93% of its population from the 2019 SD-32; gained the rest from the old SD-35 (4%), the old SD-34 (2%), the old SD-31 (1%). Spans Rapides, Franklin, LaSalle, West Feliciana and 6 more counties. 2020 presidential margin R+61.7 on the 2019 lines \u2192 R+61.7 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 79.8,
+      "key": "33",
+      "popPct": 81.6
+     },
+     {
+      "areaPct": 14.9,
+      "key": "36",
+      "popPct": 9.8
+     },
+     {
+      "areaPct": 3.9,
+      "key": "35",
+      "popPct": 6.4
+     },
+     {
+      "areaPct": 0.7,
+      "key": "29",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ouachita",
+      "popPct": 37.5
+     },
+     {
+      "county": "Union",
+      "popPct": 18.3
+     },
+     {
+      "county": "Claiborne",
+      "popPct": 12.1
+     },
+     {
+      "county": "Morehouse",
+      "popPct": 8.4
+     },
+     {
+      "county": "West Carroll",
+      "popPct": 8.2
+     },
+     {
+      "county": "Webster",
+      "popPct": 6.9
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 6.5
+     },
+     {
+      "county": "Bienville",
+      "popPct": 1.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Webster",
+      "popPct": 6.9
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 116975,
+    "pres2020New": 51.5,
+    "pres2020Old": 46.0,
+    "retainedAreaPct": 79.8,
+    "retainedPopPct": 81.6,
+    "text": "Kept 82% of its population from the 2019 SD-33; gained the rest from the old SD-36 (10%), the old SD-35 (6%), the old SD-29 (2%). Counties: gained Webster (7%). 2020 presidential margin R+46.0 on the 2019 lines \u2192 R+51.5 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 91.7,
+      "key": "34",
+      "popPct": 84.2
+     },
+     {
+      "areaPct": 3.7,
+      "key": "33",
+      "popPct": 13.2
+     },
+     {
+      "areaPct": 4.5,
+      "key": "32",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ouachita",
+      "popPct": 45.0
+     },
+     {
+      "county": "Richland",
+      "popPct": 15.5
+     },
+     {
+      "county": "Morehouse",
+      "popPct": 14.3
+     },
+     {
+      "county": "Madison",
+      "popPct": 9.0
+     },
+     {
+      "county": "East Carroll",
+      "popPct": 6.6
+     },
+     {
+      "county": "Concordia",
+      "popPct": 5.8
+     },
+     {
+      "county": "Tensas",
+      "popPct": 3.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 113532,
+    "pres2020New": -29.8,
+    "pres2020Old": -31.3,
+    "retainedAreaPct": 91.7,
+    "retainedPopPct": 84.2,
+    "text": "Kept 84% of its population from the 2019 SD-34; gained the rest from the old SD-33 (13%), the old SD-32 (3%). Spans Ouachita, Richland, Morehouse, Madison and 3 more counties. 2020 presidential margin D+31.3 on the 2019 lines \u2192 D+29.8 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 92.4,
+      "key": "35",
+      "popPct": 85.1
+     },
+     {
+      "areaPct": 7.3,
+      "key": "29",
+      "popPct": 7.9
+     },
+     {
+      "areaPct": 0.3,
+      "key": "34",
+      "popPct": 7.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Ouachita",
+      "popPct": 50.9
+     },
+     {
+      "county": "Grant",
+      "popPct": 14.4
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 13.4
+     },
+     {
+      "county": "Rapides",
+      "popPct": 11.1
+     },
+     {
+      "county": "Jackson",
+      "popPct": 8.2
+     },
+     {
+      "county": "Winn",
+      "popPct": 1.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 117797,
+    "pres2020New": 60.8,
+    "pres2020Old": 64.6,
+    "retainedAreaPct": 92.4,
+    "retainedPopPct": 85.1,
+    "text": "Kept 85% of its population from the 2019 SD-35; gained the rest from the old SD-29 (8%), the old SD-34 (7%). Spans Ouachita, Grant, Lincoln, Rapides and 2 more counties. 2020 presidential margin R+64.6 on the 2019 lines \u2192 R+60.8 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 95.1,
+      "key": "36",
+      "popPct": 74.6
+     },
+     {
+      "areaPct": 4.8,
+      "key": "37",
+      "popPct": 24.9
+     },
+     {
+      "areaPct": 0.2,
+      "key": "39",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Bossier",
+      "popPct": 78.6
+     },
+     {
+      "county": "Webster",
+      "popPct": 19.4
+     },
+     {
+      "county": "Caddo",
+      "popPct": 1.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Bienville",
+      "popPct": 6.2
+     },
+     {
+      "county": "Claiborne",
+      "popPct": 3.0
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 124616,
+    "pres2020New": 40.9,
+    "pres2020Old": 46.9,
+    "retainedAreaPct": 95.1,
+    "retainedPopPct": 74.6,
+    "text": "Kept 75% of its population from the 2019 SD-36; gained the rest from the old SD-37 (25%), the old SD-39 (0%). Counties: lost Bienville, Claiborne. 2020 presidential margin R+46.9 on the 2019 lines \u2192 R+40.9 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 52.7,
+      "key": "6",
+      "popPct": 46.4
+     },
+     {
+      "areaPct": 29.4,
+      "key": "11",
+      "popPct": 29.8
+     },
+     {
+      "areaPct": 11.1,
+      "key": "12",
+      "popPct": 12.5
+     },
+     {
+      "areaPct": 6.8,
+      "key": "13",
+      "popPct": 11.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tangipahoa",
+      "popPct": 84.1
+     },
+     {
+      "county": "St. Tammany",
+      "popPct": 13.0
+     },
+     {
+      "county": "Livingston",
+      "popPct": 2.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Tangipahoa",
+      "popPct": 84.1
+     },
+     {
+      "county": "St. Tammany",
+      "popPct": 13.0
+     },
+     {
+      "county": "Livingston",
+      "popPct": 2.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Bossier",
+      "popPct": 51.4
+     },
+     {
+      "county": "Caddo",
+      "popPct": 48.6
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 113435,
+    "pres2020New": 39.0,
+    "pres2020Old": 19.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2019 SD-37; it draws from the old SD-6 (46%), the old SD-11 (30%), the old SD-12 (12%) and 1 more. Counties: gained Tangipahoa (84%), St. Tammany (13%), Livingston (3%); lost Bossier, Caddo. 2020 presidential margin R+19.5 on the 2019 lines \u2192 R+39.0 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 91.9,
+      "key": "38",
+      "popPct": 74.5
+     },
+     {
+      "areaPct": 1.3,
+      "key": "37",
+      "popPct": 20.9
+     },
+     {
+      "areaPct": 6.8,
+      "key": "39",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Caddo",
+      "popPct": 86.0
+     },
+     {
+      "county": "De Soto",
+      "popPct": 13.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 124219,
+    "pres2020New": 23.2,
+    "pres2020Old": 14.1,
+    "retainedAreaPct": 91.9,
+    "retainedPopPct": 74.5,
+    "text": "Kept 74% of its population from the 2019 SD-38; gained the rest from the old SD-37 (21%), the old SD-39 (5%). Spans Caddo, De Soto counties. 2020 presidential margin R+14.1 on the 2019 lines \u2192 R+23.2 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 95.8,
+      "key": "39",
+      "popPct": 77.6
+     },
+     {
+      "areaPct": 1.6,
+      "key": "37",
+      "popPct": 19.3
+     },
+     {
+      "areaPct": 2.1,
+      "key": "38",
+      "popPct": 3.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Caddo",
+      "popPct": 93.1
+     },
+     {
+      "county": "Bossier",
+      "popPct": 6.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 124912,
+    "pres2020New": -38.0,
+    "pres2020Old": -35.3,
+    "retainedAreaPct": 95.8,
+    "retainedPopPct": 77.6,
+    "text": "Kept 78% of its population from the 2019 SD-39; gained the rest from the old SD-37 (19%), the old SD-38 (3%). Spans Caddo, Bossier counties. 2020 presidential margin D+35.3 on the 2019 lines \u2192 D+38.0 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 91.0,
+      "key": "4",
+      "popPct": 88.6
+     },
+     {
+      "areaPct": 6.7,
+      "key": "3",
+      "popPct": 6.9
+     },
+     {
+      "areaPct": 2.3,
+      "key": "5",
+      "popPct": 4.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orleans",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 118069,
+    "pres2020New": -60.3,
+    "pres2020Old": -64.0,
+    "retainedAreaPct": 91.0,
+    "retainedPopPct": 88.6,
+    "text": "Kept 89% of its population from the 2019 SD-4; gained the rest from the old SD-3 (7%), the old SD-5 (4%). Entirely in Orleans County. 2020 presidential margin D+64.0 on the 2019 lines \u2192 D+60.3 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 57.1,
+      "key": "5",
+      "popPct": 84.4
+     },
+     {
+      "areaPct": 40.1,
+      "key": "3",
+      "popPct": 10.4
+     },
+     {
+      "areaPct": 1.9,
+      "key": "8",
+      "popPct": 3.1
+     },
+     {
+      "areaPct": 0.9,
+      "key": "4",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Orleans",
+      "popPct": 82.3
+     },
+     {
+      "county": "Jefferson",
+      "popPct": 17.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 123738,
+    "pres2020New": -75.1,
+    "pres2020Old": -73.8,
+    "retainedAreaPct": 57.1,
+    "retainedPopPct": 84.4,
+    "text": "Kept 84% of its population from the 2019 SD-5; gained the rest from the old SD-3 (10%), the old SD-8 (3%), the old SD-4 (2%). Spans Orleans, Jefferson counties. 2020 presidential margin D+73.8 on the 2019 lines \u2192 D+75.1 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 34.6,
+      "key": "6",
+      "popPct": 68.0
+     },
+     {
+      "areaPct": 9.0,
+      "key": "13",
+      "popPct": 12.0
+     },
+     {
+      "areaPct": 38.6,
+      "key": "17",
+      "popPct": 10.1
+     },
+     {
+      "areaPct": 16.7,
+      "key": "18",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 1.1,
+      "key": "15",
+      "popPct": 2.7
+     },
+     {
+      "areaPct": 0.1,
+      "key": "16",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "East Baton Rouge",
+      "popPct": 77.0
+     },
+     {
+      "county": "Livingston",
+      "popPct": 14.5
+     },
+     {
+      "county": "St. Helena",
+      "popPct": 8.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Tangipahoa",
+      "popPct": 39.7
+     }
+    ],
+    "fromEra": "2019",
+    "pop2020": 117700,
+    "pres2020New": 41.9,
+    "pres2020Old": 33.9,
+    "retainedAreaPct": 34.6,
+    "retainedPopPct": 68.0,
+    "text": "Kept 68% of its population from the 2019 SD-6; gained the rest from the old SD-13 (12%), the old SD-17 (10%), the old SD-18 (5%) and 2 more. Counties: lost Tangipahoa. 2020 presidential margin R+33.9 on the 2019 lines \u2192 R+41.9 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 2.0,
+      "key": "7",
+      "popPct": 73.3
+     },
+     {
+      "areaPct": 4.1,
+      "key": "8",
+      "popPct": 20.7
+     },
+     {
+      "areaPct": 0.2,
+      "key": "3",
+      "popPct": 4.5
+     },
+     {
+      "areaPct": 93.7,
+      "key": "1",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 55.2
+     },
+     {
+      "county": "Orleans",
+      "popPct": 40.1
+     },
+     {
+      "county": "Plaquemines",
+      "popPct": 4.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 124459,
+    "pres2020New": -54.9,
+    "pres2020Old": -41.8,
+    "retainedAreaPct": 2.0,
+    "retainedPopPct": 73.3,
+    "text": "Kept 73% of its population from the 2019 SD-7; gained the rest from the old SD-8 (21%), the old SD-3 (4%), the old SD-1 (2%). Spans Jefferson, Orleans, Plaquemines counties. 2020 presidential margin D+41.8 on the 2019 lines \u2192 D+54.9 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 97.3,
+      "key": "8",
+      "popPct": 73.1
+     },
+     {
+      "areaPct": 2.5,
+      "key": "7",
+      "popPct": 16.9
+     },
+     {
+      "areaPct": 0.2,
+      "key": "3",
+      "popPct": 10.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 84.0
+     },
+     {
+      "county": "Plaquemines",
+      "popPct": 15.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 120915,
+    "pres2020New": 22.9,
+    "pres2020Old": 6.4,
+    "retainedAreaPct": 97.3,
+    "retainedPopPct": 73.1,
+    "text": "Kept 73% of its population from the 2019 SD-8; gained the rest from the old SD-7 (17%), the old SD-3 (10%). Spans Jefferson, Plaquemines counties. 2020 presidential margin R+6.4 on the 2019 lines \u2192 R+22.9 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 93.5,
+      "key": "9",
+      "popPct": 91.5
+     },
+     {
+      "areaPct": 3.6,
+      "key": "5",
+      "popPct": 8.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Jefferson",
+      "popPct": 83.1
+     },
+     {
+      "county": "Orleans",
+      "popPct": 16.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2019",
+    "pop2020": 124552,
+    "pres2020New": 19.2,
+    "pres2020Old": 24.6,
+    "retainedAreaPct": 93.5,
+    "retainedPopPct": 91.5,
+    "text": "Kept 92% of its population from the 2019 SD-9; gained the rest from the old SD-5 (8%). Spans Jefferson, Orleans counties. 2020 presidential margin R+24.6 on the 2019 lines \u2192 R+19.2 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}

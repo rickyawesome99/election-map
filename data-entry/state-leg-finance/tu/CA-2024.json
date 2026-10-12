@@ -1,0 +1,6458 @@
+{
+ "state": "CA",
+ "cycle": 2024,
+ "fetched": "2026-10-11",
+ "dataThrough": "12/31/2024",
+ "races": [
+  {
+   "office": "California State Assembly District 1",
+   "url": "/ca/race/california-state-assembly-district-1-65018",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 573247.0,
+   "totalExpenditures": 790806.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Heather Hadwick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 296474.5,
+       "expenditures": 0.0,
+       "status": "$405,885.30",
+       "url": "/ca/candidate/heather-hadwick?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tenessa Audette",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 158116.97,
+       "expenditures": 20000.0,
+       "status": "$240,358.00",
+       "url": "/ca/candidate/tenessa-audette?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Tenessa Audette",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 158116.97,
+       "expenditures": 20000.0,
+       "status": "$240,358.00",
+       "url": "/ca/candidate/tenessa-audette?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Heather Hadwick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 296474.5,
+       "expenditures": 0.0,
+       "status": "$405,885.30",
+       "url": "/ca/candidate/heather-hadwick?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Melissa Hunt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 28612.91,
+       "expenditures": 500.0,
+       "status": "$30,590.84",
+       "url": "/ca/candidate/melissa-hunt?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mark Mezzano",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 90042.16,
+       "expenditures": 38500.0,
+       "status": "$113,971.81",
+       "url": "/ca/candidate/mark-mezzano?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "California State Assembly District 10",
+   "url": "/ca/race/california-state-assembly-district-10-65019",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1268517.0,
+   "totalExpenditures": 1390525.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Stephanie Nguyen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1268267.22,
+       "expenditures": 0.0,
+       "status": "$1,386,740.76",
+       "url": "/ca/candidate/stephanie-nguyen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Vinaya Singh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 250.0,
+       "expenditures": 3000.0,
+       "status": "$3,784.29",
+       "url": "/ca/candidate/vinaya-singh?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Stephanie Nguyen",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1268267.22,
+       "expenditures": 0.0,
+       "status": "$1,386,740.76",
+       "url": "/ca/candidate/stephanie-nguyen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Vinaya Singh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 250.0,
+       "expenditures": 3000.0,
+       "status": "$3,784.29",
+       "url": "/ca/candidate/vinaya-singh?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "California State Assembly District 11",
+   "url": "/ca/race/california-state-assembly-district-11-65020",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1390854.0,
+   "totalExpenditures": 1591171.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lori Wilson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1353278.61,
+       "expenditures": 0.0,
+       "status": "$1,552,410.24",
+       "url": "/ca/candidate/lori-wilson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Ennis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27569.0,
+       "expenditures": 2500.0,
+       "status": "$28,968.52",
+       "url": "/ca/candidate/david-ennis?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Lori Wilson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1353278.61,
+       "expenditures": 0.0,
+       "status": "$1,552,410.24",
+       "url": "/ca/candidate/lori-wilson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Ennis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27569.0,
+       "expenditures": 2500.0,
+       "status": "$28,968.52",
+       "url": "/ca/candidate/david-ennis?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Wanda Wallis",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10006.7,
+       "expenditures": 0.0,
+       "status": "$9,792.69",
+       "url": "/ca/candidate/wanda-wallis?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "California State Assembly District 12",
+   "url": "/ca/race/california-state-assembly-district-12-65021",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1059792.0,
+   "totalExpenditures": 1056704.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Damon Connolly",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1052004.39,
+       "expenditures": 0.0,
+       "status": "$1,051,403.95",
+       "url": "/ca/candidate/damon-connolly?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Andrew Podshadley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7787.22,
+       "expenditures": 0.0,
+       "status": "$5,300.07",
+       "url": "/ca/candidate/andrew-podshadley?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Damon Connolly",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1052004.39,
+       "expenditures": 0.0,
+       "status": "$1,051,403.95",
+       "url": "/ca/candidate/damon-connolly?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Andrew Podshadley",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 7787.22,
+       "expenditures": 0.0,
+       "status": "$5,300.07",
+       "url": "/ca/candidate/andrew-podshadley?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "California State Assembly District 13",
+   "url": "/ca/race/california-state-assembly-district-13-65022",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1545345.0,
+   "totalExpenditures": 2458312.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Rhodesia Ransom",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1004016.65,
+       "expenditures": 0.0,
+       "status": "$1,324,716.97",
+       "url": "/ca/candidate/rhodesia-ransom?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Denise Aguilar Mendez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 70037.31,
+       "expenditures": 0.0,
+       "status": "$82,148.92",
+       "url": "/ca/candidate/denise-aguilar-mendez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Rhodesia Ransom",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1004016.65,
+       "expenditures": 0.0,
+       "status": "$1,324,716.97",
+       "url": "/ca/candidate/rhodesia-ransom?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Denise Aguilar Mendez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 70037.31,
+       "expenditures": 0.0,
+       "status": "$82,148.92",
+       "url": "/ca/candidate/denise-aguilar-mendez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Edith Villapudua",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 471291.09,
+       "expenditures": 0.0,
+       "status": "$1,051,446.53",
+       "url": "/ca/candidate/edith-villapudua?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "California State Assembly District 14",
+   "url": "/ca/race/california-state-assembly-district-14-65023",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1455161.0,
+   "totalExpenditures": 1147113.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Buffy Wicks",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1452701.63,
+       "expenditures": 0.0,
+       "status": "$1,144,653.56",
+       "url": "/ca/candidate/buffy-wicks?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Buffy Wicks",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1452701.63,
+       "expenditures": 0.0,
+       "status": "$1,144,653.56",
+       "url": "/ca/candidate/buffy-wicks?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Utkarsh Jain",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2459.0,
+       "expenditures": 0.0,
+       "status": "$2,459.00",
+       "url": "/ca/candidate/utkarsh-jain?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "California State Assembly District 15",
+   "url": "/ca/race/california-state-assembly-district-15-65024",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1175541.0,
+   "totalExpenditures": 1398199.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Avila Farias",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 660646.46,
+       "expenditures": 0.0,
+       "status": "$661,448.26",
+       "url": "/ca/candidate/avila-farias?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sonia Ledo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 75280.71,
+       "expenditures": 0.0,
+       "status": "$103,827.77",
+       "url": "/ca/candidate/sonia-ledo?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Avila Farias",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 660646.46,
+       "expenditures": 0.0,
+       "status": "$661,448.26",
+       "url": "/ca/candidate/avila-farias?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sonia Ledo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 75280.71,
+       "expenditures": 0.0,
+       "status": "$103,827.77",
+       "url": "/ca/candidate/sonia-ledo?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Karen Mitchoff",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 108027.11,
+       "expenditures": 10000.0,
+       "status": "$199,404.14",
+       "url": "/ca/candidate/karen-mitchoff?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Monica Wilson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 331586.51,
+       "expenditures": 0.0,
+       "status": "$433,518.66",
+       "url": "/ca/candidate/monica-wilson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "California State Assembly District 16",
+   "url": "/ca/race/california-state-assembly-district-16-65025",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 777142.0,
+   "totalExpenditures": 1648381.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Rebecca Bauer-Kahan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 747635.52,
+       "expenditures": 0.0,
+       "status": "$1,616,591.06",
+       "url": "/ca/candidate/rebecca-bauer-kahan?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joe Rubay",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 29506.83,
+       "expenditures": 12500.0,
+       "status": "$31,789.54",
+       "url": "/ca/candidate/joe-rubay?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Rebecca Bauer-Kahan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 747635.52,
+       "expenditures": 0.0,
+       "status": "$1,616,591.06",
+       "url": "/ca/candidate/rebecca-bauer-kahan?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joe Rubay",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 29506.83,
+       "expenditures": 12500.0,
+       "status": "$31,789.54",
+       "url": "/ca/candidate/joe-rubay?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "California State Assembly District 17",
+   "url": "/ca/race/california-state-assembly-district-17-65026",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1318216.0,
+   "totalExpenditures": 1743781.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Matt Haney",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1318216.01,
+       "expenditures": 0.0,
+       "status": "$1,743,780.60",
+       "url": "/ca/candidate/matt-haney?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Matt Haney",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1318216.01,
+       "expenditures": 0.0,
+       "status": "$1,743,780.60",
+       "url": "/ca/candidate/matt-haney?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "California State Assembly District 18",
+   "url": "/ca/race/california-state-assembly-district-18-65027",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1132489.0,
+   "totalExpenditures": 1175733.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mia Bonta",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1122932.26,
+       "expenditures": 0.0,
+       "status": "$1,165,860.70",
+       "url": "/ca/candidate/mia-bonta?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Andre Sandford",
+       "party": "American Independent of California",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/andre-sandford?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Mia Bonta",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1122932.26,
+       "expenditures": 0.0,
+       "status": "$1,165,860.70",
+       "url": "/ca/candidate/mia-bonta?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Andre Sandford",
+       "party": "American Independent of California",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/andre-sandford?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Cheyenne Kenney",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9557.0,
+       "expenditures": 0.0,
+       "status": "$9,872.12",
+       "url": "/ca/candidate/cheyenne-kenney?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mindy Pechenuk",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/mindy-pechenuk?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "California State Assembly District 19",
+   "url": "/ca/race/california-state-assembly-district-19-65028",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1943808.0,
+   "totalExpenditures": 2814233.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Catherine Stefani",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1596220.1,
+       "expenditures": 0.0,
+       "status": "$2,318,881.06",
+       "url": "/ca/candidate/catherine-stefani?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Lee",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 347587.62,
+       "expenditures": 0.0,
+       "status": "$495,352.20",
+       "url": "/ca/candidate/david-lee?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "David Lee",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 347587.62,
+       "expenditures": 0.0,
+       "status": "$495,352.20",
+       "url": "/ca/candidate/david-lee?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Catherine Stefani",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1596220.1,
+       "expenditures": 0.0,
+       "status": "$2,318,881.06",
+       "url": "/ca/candidate/catherine-stefani?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "California State Assembly District 2",
+   "url": "/ca/race/california-state-assembly-district-2-65029",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 2876353.0,
+   "totalExpenditures": 4122100.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Chris Rogers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 831778.5,
+       "expenditures": 0.0,
+       "status": "$923,707.60",
+       "url": "/ca/candidate/chris-rogers?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Michael Greer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26731.65,
+       "expenditures": 20000.0,
+       "status": "$53,396.55",
+       "url": "/ca/candidate/michael-greer?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Chris Rogers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 831778.5,
+       "expenditures": 0.0,
+       "status": "$923,707.60",
+       "url": "/ca/candidate/chris-rogers?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Michael Greer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26731.65,
+       "expenditures": 20000.0,
+       "status": "$53,396.55",
+       "url": "/ca/candidate/michael-greer?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Rusty Hicks",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 750861.7,
+       "expenditures": 0.0,
+       "status": "$1,126,514.94",
+       "url": "/ca/candidate/rusty-hicks?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ariel Kelley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1111151.02,
+       "expenditures": 100000.0,
+       "status": "$1,762,734.42",
+       "url": "/ca/candidate/ariel-kelley?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Frankie Myers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 155830.0,
+       "expenditures": 0.0,
+       "status": "$255,746.42",
+       "url": "/ca/candidate/frankie-myers?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "California State Assembly District 20",
+   "url": "/ca/race/california-state-assembly-district-20-65030",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 909743.0,
+   "totalExpenditures": 811906.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Liz Ortega-Toro",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 909742.54,
+       "expenditures": 0.0,
+       "status": "$811,905.51",
+       "url": "/ca/candidate/liz-ortega-toro?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Liz Ortega-Toro",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 909742.54,
+       "expenditures": 0.0,
+       "status": "$811,905.51",
+       "url": "/ca/candidate/liz-ortega-toro?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "California State Assembly District 21",
+   "url": "/ca/race/california-state-assembly-district-21-65031",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 999608.0,
+   "totalExpenditures": 1226698.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Diane Papan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 999608.3,
+       "expenditures": 0.0,
+       "status": "$1,226,698.47",
+       "url": "/ca/candidate/diane-papan?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Diane Papan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 999608.3,
+       "expenditures": 0.0,
+       "status": "$1,226,698.47",
+       "url": "/ca/candidate/diane-papan?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "California State Assembly District 22",
+   "url": "/ca/race/california-state-assembly-district-22-65032",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1299821.0,
+   "totalExpenditures": 1252141.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Juan Alanis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1089578.62,
+       "expenditures": 25000.0,
+       "status": "$917,298.12",
+       "url": "/ca/candidate/juan-alanis?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jessica Self",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 210242.65,
+       "expenditures": 0.0,
+       "status": "$334,842.39",
+       "url": "/ca/candidate/jessica-self?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Juan Alanis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1089578.62,
+       "expenditures": 25000.0,
+       "status": "$917,298.12",
+       "url": "/ca/candidate/juan-alanis?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jessica Self",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 210242.65,
+       "expenditures": 0.0,
+       "status": "$334,842.39",
+       "url": "/ca/candidate/jessica-self?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "California State Assembly District 23",
+   "url": "/ca/race/california-state-assembly-district-23-65033",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1935092.0,
+   "totalExpenditures": 2258158.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Marc Berman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1746680.57,
+       "expenditures": 0.0,
+       "status": "$2,003,879.70",
+       "url": "/ca/candidate/marc-berman?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lydia Kou",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 149412.82,
+       "expenditures": 0.0,
+       "status": "$211,784.66",
+       "url": "/ca/candidate/lydia-kou?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Marc Berman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1746680.57,
+       "expenditures": 0.0,
+       "status": "$2,003,879.70",
+       "url": "/ca/candidate/marc-berman?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lydia Kou",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 149412.82,
+       "expenditures": 0.0,
+       "status": "$211,784.66",
+       "url": "/ca/candidate/lydia-kou?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Allan Marson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/allan-marson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gus Mattammal",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38998.45,
+       "expenditures": 0.0,
+       "status": "$42,493.53",
+       "url": "/ca/candidate/gus-mattammal?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "California State Assembly District 24",
+   "url": "/ca/race/california-state-assembly-district-24-65034",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 742310.0,
+   "totalExpenditures": 1364421.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Alex Lee",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 739984.2,
+       "expenditures": 0.0,
+       "status": "$1,362,356.59",
+       "url": "/ca/candidate/alex-lee?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Bob Brunton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2325.34,
+       "expenditures": 0.0,
+       "status": "$2,064.19",
+       "url": "/ca/candidate/bob-brunton?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Alex Lee",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 739984.2,
+       "expenditures": 0.0,
+       "status": "$1,362,356.59",
+       "url": "/ca/candidate/alex-lee?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Bob Brunton",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2325.34,
+       "expenditures": 0.0,
+       "status": "$2,064.19",
+       "url": "/ca/candidate/bob-brunton?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "California State Assembly District 25",
+   "url": "/ca/race/california-state-assembly-district-25-65035",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 711040.0,
+   "totalExpenditures": 786405.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Ash Kalra",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 711040.2,
+       "expenditures": 0.0,
+       "status": "$786,404.51",
+       "url": "/ca/candidate/ash-kalra?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ted Stroll",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/ted-stroll?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Ash Kalra",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 711040.2,
+       "expenditures": 0.0,
+       "status": "$786,404.51",
+       "url": "/ca/candidate/ash-kalra?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ted Stroll",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/ted-stroll?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lan Ngo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/lan-ngo?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "California State Assembly District 26",
+   "url": "/ca/race/california-state-assembly-district-26-65036",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 2649101.0,
+   "totalExpenditures": 4010549.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Patrick Ahrens",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1095750.61,
+       "expenditures": 0.0,
+       "status": "$1,757,634.82",
+       "url": "/ca/candidate/patrick-ahrens?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tara Sreekrishnan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1000926.81,
+       "expenditures": 75000.0,
+       "status": "$1,360,772.27",
+       "url": "/ca/candidate/tara-sreekrishnan?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Patrick Ahrens",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1095750.61,
+       "expenditures": 0.0,
+       "status": "$1,757,634.82",
+       "url": "/ca/candidate/patrick-ahrens?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tara Sreekrishnan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1000926.81,
+       "expenditures": 75000.0,
+       "status": "$1,360,772.27",
+       "url": "/ca/candidate/tara-sreekrishnan?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Omar Din",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 552423.28,
+       "expenditures": 0.0,
+       "status": "$892,141.59",
+       "url": "/ca/candidate/omar-din?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ashish Garg",
+       "party": "No party preference",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/ashish-garg?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "California State Assembly District 27",
+   "url": "/ca/race/california-state-assembly-district-27-65037",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 6251539.0,
+   "totalExpenditures": 7925771.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Esmeralda Soria",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 4956970.58,
+       "expenditures": 0.0,
+       "status": "$6,336,902.20",
+       "url": "/ca/candidate/esmeralda-soria?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joanna Garcia Rose",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1294568.0,
+       "expenditures": 0.0,
+       "status": "$1,588,869.16",
+       "url": "/ca/candidate/joanna-garcia-rose?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Esmeralda Soria",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 4956970.58,
+       "expenditures": 0.0,
+       "status": "$6,336,902.20",
+       "url": "/ca/candidate/esmeralda-soria?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joanna Garcia Rose",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1294568.0,
+       "expenditures": 0.0,
+       "status": "$1,588,869.16",
+       "url": "/ca/candidate/joanna-garcia-rose?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "California State Assembly District 28",
+   "url": "/ca/race/california-state-assembly-district-28-65038",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 938290.0,
+   "totalExpenditures": 1032343.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Gail Pellerin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 858433.53,
+       "expenditures": 0.0,
+       "status": "$911,365.41",
+       "url": "/ca/candidate/gail-pellerin?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Liz Lawler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 79856.65,
+       "expenditures": 79000.0,
+       "status": "$120,977.63",
+       "url": "/ca/candidate/liz-lawler?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Gail Pellerin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 858433.53,
+       "expenditures": 0.0,
+       "status": "$911,365.41",
+       "url": "/ca/candidate/gail-pellerin?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Liz Lawler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 79856.65,
+       "expenditures": 79000.0,
+       "status": "$120,977.63",
+       "url": "/ca/candidate/liz-lawler?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "California State Assembly District 29",
+   "url": "/ca/race/california-state-assembly-district-29-65039",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 4247961.0,
+   "totalExpenditures": 4344258.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Robert Rivas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 4234984.94,
+       "expenditures": 0.0,
+       "status": "$4,329,819.33",
+       "url": "/ca/candidate/robert-rivas?cycle=2024-election-cycle"
+      },
+      {
+       "name": "JW Paine",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12975.98,
+       "expenditures": 2000.0,
+       "status": "$14,438.75",
+       "url": "/ca/candidate/jw-paine?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Robert Rivas",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 4234984.94,
+       "expenditures": 0.0,
+       "status": "$4,329,819.33",
+       "url": "/ca/candidate/robert-rivas?cycle=2024-election-cycle"
+      },
+      {
+       "name": "JW Paine",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12975.98,
+       "expenditures": 2000.0,
+       "status": "$14,438.75",
+       "url": "/ca/candidate/jw-paine?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "California State Assembly District 3",
+   "url": "/ca/race/california-state-assembly-district-3-65040",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 2390718.0,
+   "totalExpenditures": 2882782.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "James Gallagher",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2390718.48,
+       "expenditures": 0.0,
+       "status": "$2,882,781.56",
+       "url": "/ca/candidate/james-gallagher?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "James Gallagher",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2390718.48,
+       "expenditures": 0.0,
+       "status": "$2,882,781.56",
+       "url": "/ca/candidate/james-gallagher?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "California State Assembly District 30",
+   "url": "/ca/race/california-state-assembly-district-30-65041",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1108343.0,
+   "totalExpenditures": 1584030.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Dawn Addis",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1070909.3,
+       "expenditures": 0.0,
+       "status": "$1,546,076.66",
+       "url": "/ca/candidate/dawn-addis?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dalila Epperson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 37433.5,
+       "expenditures": 2000.0,
+       "status": "$37,953.50",
+       "url": "/ca/candidate/dalila-epperson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Dawn Addis",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1070909.3,
+       "expenditures": 0.0,
+       "status": "$1,546,076.66",
+       "url": "/ca/candidate/dawn-addis?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dalila Epperson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 37433.5,
+       "expenditures": 2000.0,
+       "status": "$37,953.50",
+       "url": "/ca/candidate/dalila-epperson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "California State Assembly District 31",
+   "url": "/ca/race/california-state-assembly-district-31-65042",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 415217.0,
+   "totalExpenditures": 592063.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Joaquin Arambula",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 403909.0,
+       "expenditures": 0.0,
+       "status": "$580,754.68",
+       "url": "/ca/candidate/joaquin-arambula?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Solomon Verduzco",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11308.09,
+       "expenditures": 0.0,
+       "status": "$11,308.09",
+       "url": "/ca/candidate/solomon-verduzco?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Joaquin Arambula",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 403909.0,
+       "expenditures": 0.0,
+       "status": "$580,754.68",
+       "url": "/ca/candidate/joaquin-arambula?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Solomon Verduzco",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11308.09,
+       "expenditures": 0.0,
+       "status": "$11,308.09",
+       "url": "/ca/candidate/solomon-verduzco?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "31"
+  },
+  {
+   "office": "California State Assembly District 32",
+   "url": "/ca/race/california-state-assembly-district-32-65043",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 830590.0,
+   "totalExpenditures": 1327300.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Vince Fong",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 665509.59,
+       "expenditures": 0.0,
+       "status": "$1,089,891.58",
+       "url": "/ca/candidate/vince-fong?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ken Weir",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 165080.74,
+       "expenditures": 0.0,
+       "status": "$237,408.37",
+       "url": "/ca/candidate/ken-weir?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Vince Fong",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 665509.59,
+       "expenditures": 0.0,
+       "status": "$1,089,891.58",
+       "url": "/ca/candidate/vince-fong?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ken Weir",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 165080.74,
+       "expenditures": 0.0,
+       "status": "$237,408.37",
+       "url": "/ca/candidate/ken-weir?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "32"
+  },
+  {
+   "office": "California State Assembly District 33",
+   "url": "/ca/race/california-state-assembly-district-33-65044",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 998019.0,
+   "totalExpenditures": 1199603.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Alexandra Macedo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 941163.46,
+       "expenditures": 0.0,
+       "status": "$1,107,036.33",
+       "url": "/ca/candidate/alexandra-macedo?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Xavier Avila",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 56855.36,
+       "expenditures": 25000.0,
+       "status": "$92,567.00",
+       "url": "/ca/candidate/xavier-avila?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Xavier Avila",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 56855.36,
+       "expenditures": 25000.0,
+       "status": "$92,567.00",
+       "url": "/ca/candidate/xavier-avila?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Alexandra Macedo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 941163.46,
+       "expenditures": 0.0,
+       "status": "$1,107,036.33",
+       "url": "/ca/candidate/alexandra-macedo?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ruben Macareno",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/ruben-macareno?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "33"
+  },
+  {
+   "office": "California State Assembly District 34",
+   "url": "/ca/race/california-state-assembly-district-34-65045",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 660321.0,
+   "totalExpenditures": 540176.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Thomas Lackey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 507261.09,
+       "expenditures": 0.0,
+       "status": "$410,032.28",
+       "url": "/ca/candidate/thomas-lackey?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ricardo Ortega",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 153060.31,
+       "expenditures": 0.0,
+       "status": "$130,143.64",
+       "url": "/ca/candidate/ricardo-ortega?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Thomas Lackey",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 507261.09,
+       "expenditures": 0.0,
+       "status": "$410,032.28",
+       "url": "/ca/candidate/thomas-lackey?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ricardo Ortega",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 153060.31,
+       "expenditures": 0.0,
+       "status": "$130,143.64",
+       "url": "/ca/candidate/ricardo-ortega?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "34"
+  },
+  {
+   "office": "California State Assembly District 35",
+   "url": "/ca/race/california-state-assembly-district-35-65046",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1615637.0,
+   "totalExpenditures": 1289673.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jasmeet Bains",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1615637.36,
+       "expenditures": 0.0,
+       "status": "$1,289,673.41",
+       "url": "/ca/candidate/jasmeet-bains?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Robert Rosas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/robert-rosas?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Jasmeet Bains",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1615637.36,
+       "expenditures": 0.0,
+       "status": "$1,289,673.41",
+       "url": "/ca/candidate/jasmeet-bains?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Robert Rosas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/robert-rosas?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "35"
+  },
+  {
+   "office": "California State Assembly District 36",
+   "url": "/ca/race/california-state-assembly-district-36-65047",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 3888738.0,
+   "totalExpenditures": 3389748.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jeff Gonzalez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1327715.93,
+       "expenditures": 0.0,
+       "status": "$756,319.83",
+       "url": "/ca/candidate/jeff-gonzalez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joey Acuna",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1987146.89,
+       "expenditures": 0.0,
+       "status": "$2,557,031.20",
+       "url": "/ca/candidate/joey-acuna?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Joey Acuna",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1987146.89,
+       "expenditures": 0.0,
+       "status": "$2,557,031.20",
+       "url": "/ca/candidate/joey-acuna?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jeff Gonzalez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1327715.93,
+       "expenditures": 0.0,
+       "status": "$756,319.83",
+       "url": "/ca/candidate/jeff-gonzalez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Waymond Fermon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 4695.0,
+       "expenditures": 0.0,
+       "status": "$26.10",
+       "url": "/ca/candidate/waymond-fermon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Edgard Garcia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 35117.0,
+       "expenditures": 15806.45,
+       "status": "$49,123.45",
+       "url": "/ca/candidate/edgard-garcia?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tomas Oliva",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 21217.4,
+       "expenditures": 0.0,
+       "status": "$24,915.17",
+       "url": "/ca/candidate/tomas-oliva?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kalin Morse",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 512846.24,
+       "expenditures": 750.0,
+       "status": "$2,331.94",
+       "url": "/ca/candidate/kalin-morse?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "36"
+  },
+  {
+   "office": "California State Assembly District 37",
+   "url": "/ca/race/california-state-assembly-district-37-65048",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1136385.0,
+   "totalExpenditures": 898554.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Gregg Hart",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1132504.7,
+       "expenditures": 0.0,
+       "status": "$890,907.62",
+       "url": "/ca/candidate/gregg-hart?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sari Domingues",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3880.0,
+       "expenditures": 0.0,
+       "status": "$7,646.00",
+       "url": "/ca/candidate/sari-domingues?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Gregg Hart",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1132504.7,
+       "expenditures": 0.0,
+       "status": "$890,907.62",
+       "url": "/ca/candidate/gregg-hart?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sari Domingues",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3880.0,
+       "expenditures": 0.0,
+       "status": "$7,646.00",
+       "url": "/ca/candidate/sari-domingues?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "37"
+  },
+  {
+   "office": "California State Assembly District 38",
+   "url": "/ca/race/california-state-assembly-district-38-65049",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 717877.0,
+   "totalExpenditures": 1628112.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Stephen Bennett",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 678391.43,
+       "expenditures": 0.0,
+       "status": "$1,591,796.44",
+       "url": "/ca/candidate/stephen-bennett?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Deb Baber",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 39485.73,
+       "expenditures": 30125.94,
+       "status": "$36,315.59",
+       "url": "/ca/candidate/deb-baber?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Stephen Bennett",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 678391.43,
+       "expenditures": 0.0,
+       "status": "$1,591,796.44",
+       "url": "/ca/candidate/stephen-bennett?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Deb Baber",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 39485.73,
+       "expenditures": 30125.94,
+       "status": "$36,315.59",
+       "url": "/ca/candidate/deb-baber?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "38"
+  },
+  {
+   "office": "California State Assembly District 39",
+   "url": "/ca/race/california-state-assembly-district-39-65050",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1227860.0,
+   "totalExpenditures": 1236798.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Juan Carrillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1208487.16,
+       "expenditures": 0.0,
+       "status": "$1,224,586.51",
+       "url": "/ca/candidate/juan-carrillo?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Paul Marsh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19373.0,
+       "expenditures": 0.0,
+       "status": "$12,211.91",
+       "url": "/ca/candidate/paul-marsh?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Juan Carrillo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1208487.16,
+       "expenditures": 0.0,
+       "status": "$1,224,586.51",
+       "url": "/ca/candidate/juan-carrillo?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Paul Marsh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 19373.0,
+       "expenditures": 0.0,
+       "status": "$12,211.91",
+       "url": "/ca/candidate/paul-marsh?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "39"
+  },
+  {
+   "office": "California State Assembly District 4",
+   "url": "/ca/race/california-state-assembly-district-4-65051",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1420344.0,
+   "totalExpenditures": 2388007.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Cecilia Aguiar-Curry",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1420343.78,
+       "expenditures": 0.0,
+       "status": "$2,388,006.95",
+       "url": "/ca/candidate/cecilia-aguiar-curry?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Cecilia Aguiar-Curry",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1420343.78,
+       "expenditures": 0.0,
+       "status": "$2,388,006.95",
+       "url": "/ca/candidate/cecilia-aguiar-curry?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "California State Assembly District 40",
+   "url": "/ca/race/california-state-assembly-district-40-65052",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 4359546.0,
+   "totalExpenditures": 4347840.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Pilar Schiavo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 4020406.95,
+       "expenditures": 0.0,
+       "status": "$3,965,285.39",
+       "url": "/ca/candidate/pilar-schiavo?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Patrick Lee Gipson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 339139.18,
+       "expenditures": 30000.0,
+       "status": "$382,554.30",
+       "url": "/ca/candidate/patrick-lee-gipson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Pilar Schiavo",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 4020406.95,
+       "expenditures": 0.0,
+       "status": "$3,965,285.39",
+       "url": "/ca/candidate/pilar-schiavo?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Patrick Lee Gipson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 339139.18,
+       "expenditures": 30000.0,
+       "status": "$382,554.30",
+       "url": "/ca/candidate/patrick-lee-gipson?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "40"
+  },
+  {
+   "office": "California State Assembly District 41",
+   "url": "/ca/race/california-state-assembly-district-41-65053",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 3001880.0,
+   "totalExpenditures": 4092073.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "John Harabedian",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2122393.68,
+       "expenditures": 50000.0,
+       "status": "$2,785,148.86",
+       "url": "/ca/candidate/john-harabedian?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "John Harabedian",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2122393.68,
+       "expenditures": 50000.0,
+       "status": "$2,785,148.86",
+       "url": "/ca/candidate/john-harabedian?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jed Leano",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 334805.78,
+       "expenditures": 0.0,
+       "status": "$462,440.68",
+       "url": "/ca/candidate/jed-leano?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Phlunte Riddle",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 544680.3,
+       "expenditures": 13575.0,
+       "status": "$844,483.40",
+       "url": "/ca/candidate/phlunte-riddle?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "41"
+  },
+  {
+   "office": "California State Assembly District 42",
+   "url": "/ca/race/california-state-assembly-district-42-65054",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1286909.0,
+   "totalExpenditures": 2550334.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jacqui Irwin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1108377.63,
+       "expenditures": 0.0,
+       "status": "$2,354,773.69",
+       "url": "/ca/candidate/jacqui-irwin?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ted Nordblum",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 178530.9,
+       "expenditures": 0.0,
+       "status": "$195,560.43",
+       "url": "/ca/candidate/ted-nordblum?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Jacqui Irwin",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1108377.63,
+       "expenditures": 0.0,
+       "status": "$2,354,773.69",
+       "url": "/ca/candidate/jacqui-irwin?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ted Nordblum",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 178530.9,
+       "expenditures": 0.0,
+       "status": "$195,560.43",
+       "url": "/ca/candidate/ted-nordblum?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "42"
+  },
+  {
+   "office": "California State Assembly District 43",
+   "url": "/ca/race/california-state-assembly-district-43-65055",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 806645.0,
+   "totalExpenditures": 928713.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Celeste Rodriguez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 769796.73,
+       "expenditures": 0.0,
+       "status": "$899,653.87",
+       "url": "/ca/candidate/celeste-rodriguez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Celeste Rodriguez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 769796.73,
+       "expenditures": 0.0,
+       "status": "$899,653.87",
+       "url": "/ca/candidate/celeste-rodriguez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Walter Garcia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33947.01,
+       "expenditures": 5000.0,
+       "status": "$25,965.04",
+       "url": "/ca/candidate/walter-garcia?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Felicia Novick",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2901.0,
+       "expenditures": 0.0,
+       "status": "$3,093.68",
+       "url": "/ca/candidate/felicia-novick?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "43"
+  },
+  {
+   "office": "California State Assembly District 44",
+   "url": "/ca/race/california-state-assembly-district-44-65056",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 2087866.0,
+   "totalExpenditures": 2517628.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Nick Schultz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1176706.08,
+       "expenditures": 10000.0,
+       "status": "$1,385,216.96",
+       "url": "/ca/candidate/nick-schultz?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Nick Schultz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1176706.08,
+       "expenditures": 10000.0,
+       "status": "$1,385,216.96",
+       "url": "/ca/candidate/nick-schultz?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Elen Asatryan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 388568.82,
+       "expenditures": 2000.0,
+       "status": "$471,840.76",
+       "url": "/ca/candidate/elen-asatryan?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ed Han",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 194759.6,
+       "expenditures": 0.0,
+       "status": "$193,937.30",
+       "url": "/ca/candidate/ed-han?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Carmenita Helligar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6693.96,
+       "expenditures": 0.0,
+       "status": "$6,694.65",
+       "url": "/ca/candidate/carmenita-helligar?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Steve Pierson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 268756.55,
+       "expenditures": 50000.0,
+       "status": "$407,557.39",
+       "url": "/ca/candidate/steve-pierson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Adam Pryor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6199.66,
+       "expenditures": 0.0,
+       "status": "$6,199.66",
+       "url": "/ca/candidate/adam-pryor?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Adam Summer",
+       "party": "No party preference",
+       "incumbent": false,
+       "contributions": 46181.0,
+       "expenditures": 0.0,
+       "status": "$46,181.00",
+       "url": "/ca/candidate/adam-summer?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "44"
+  },
+  {
+   "office": "California State Assembly District 45",
+   "url": "/ca/race/california-state-assembly-district-45-65057",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 969292.0,
+   "totalExpenditures": 2647309.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "James Ramos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 969292.36,
+       "expenditures": 0.0,
+       "status": "$2,647,308.76",
+       "url": "/ca/candidate/james-ramos?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "James Ramos",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 969292.36,
+       "expenditures": 0.0,
+       "status": "$2,647,308.76",
+       "url": "/ca/candidate/james-ramos?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "45"
+  },
+  {
+   "office": "California State Assembly District 46",
+   "url": "/ca/race/california-state-assembly-district-46-65058",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1857406.0,
+   "totalExpenditures": 2906488.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jesse Gabriel",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1841433.49,
+       "expenditures": 0.0,
+       "status": "$2,888,717.94",
+       "url": "/ca/candidate/jesse-gabriel?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tracey Schroeder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15972.82,
+       "expenditures": 2761.91,
+       "status": "$17,770.26",
+       "url": "/ca/candidate/tracey-schroeder?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Jesse Gabriel",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1841433.49,
+       "expenditures": 0.0,
+       "status": "$2,888,717.94",
+       "url": "/ca/candidate/jesse-gabriel?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tracey Schroeder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 15972.82,
+       "expenditures": 2761.91,
+       "status": "$17,770.26",
+       "url": "/ca/candidate/tracey-schroeder?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "46"
+  },
+  {
+   "office": "California State Assembly District 47",
+   "url": "/ca/race/california-state-assembly-district-47-65059",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 6634288.0,
+   "totalExpenditures": 7156469.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Greg Wallis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2787232.03,
+       "expenditures": 0.0,
+       "status": "$2,842,238.01",
+       "url": "/ca/candidate/greg-wallis?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Christy Holstege",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3847055.94,
+       "expenditures": 0.0,
+       "status": "$4,314,230.61",
+       "url": "/ca/candidate/christy-holstege?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Greg Wallis",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2787232.03,
+       "expenditures": 0.0,
+       "status": "$2,842,238.01",
+       "url": "/ca/candidate/greg-wallis?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Christy Holstege",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3847055.94,
+       "expenditures": 0.0,
+       "status": "$4,314,230.61",
+       "url": "/ca/candidate/christy-holstege?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "47"
+  },
+  {
+   "office": "California State Assembly District 48",
+   "url": "/ca/race/california-state-assembly-district-48-65060",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 3198539.0,
+   "totalExpenditures": 4112718.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Blanca Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3013922.03,
+       "expenditures": 0.0,
+       "status": "$3,850,748.82",
+       "url": "/ca/candidate/blanca-rubio?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Blanca Rubio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 3013922.03,
+       "expenditures": 0.0,
+       "status": "$3,850,748.82",
+       "url": "/ca/candidate/blanca-rubio?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Brian Tabatabai",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 184616.71,
+       "expenditures": 60000.0,
+       "status": "$261,968.81",
+       "url": "/ca/candidate/brian-tabatabai?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "48"
+  },
+  {
+   "office": "California State Assembly District 49",
+   "url": "/ca/race/california-state-assembly-district-49-65061",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1608841.0,
+   "totalExpenditures": 2839776.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mike Fong",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1458886.44,
+       "expenditures": 0.0,
+       "status": "$2,607,426.89",
+       "url": "/ca/candidate/mike-fong?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Long David Liu",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 149954.99,
+       "expenditures": 80500.0,
+       "status": "$232,348.70",
+       "url": "/ca/candidate/david-liu?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Mike Fong",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1458886.44,
+       "expenditures": 0.0,
+       "status": "$2,607,426.89",
+       "url": "/ca/candidate/mike-fong?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Long David Liu",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 149954.99,
+       "expenditures": 80500.0,
+       "status": "$232,348.70",
+       "url": "/ca/candidate/david-liu?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "49"
+  },
+  {
+   "office": "California State Assembly District 5",
+   "url": "/ca/race/california-state-assembly-district-5-65062",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1096059.0,
+   "totalExpenditures": 1026524.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Joe Patterson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 962724.33,
+       "expenditures": 0.0,
+       "status": "$862,786.48",
+       "url": "/ca/candidate/joe-patterson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Neva Parker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 133334.21,
+       "expenditures": 2000.0,
+       "status": "$163,737.38",
+       "url": "/ca/candidate/neva-parker?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Joe Patterson",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 962724.33,
+       "expenditures": 0.0,
+       "status": "$862,786.48",
+       "url": "/ca/candidate/joe-patterson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Neva Parker",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 133334.21,
+       "expenditures": 2000.0,
+       "status": "$163,737.38",
+       "url": "/ca/candidate/neva-parker?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "California State Assembly District 50",
+   "url": "/ca/race/california-state-assembly-district-50-65063",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 2116865.0,
+   "totalExpenditures": 2355719.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Robert Garcia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 622889.23,
+       "expenditures": 100000.0,
+       "status": "$659,574.38",
+       "url": "/ca/candidate/robert-garcia?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Adam Perez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 939945.39,
+       "expenditures": 100.0,
+       "status": "$1,242,629.41",
+       "url": "/ca/candidate/adam-perez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Robert Garcia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 622889.23,
+       "expenditures": 100000.0,
+       "status": "$659,574.38",
+       "url": "/ca/candidate/robert-garcia?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Adam Perez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 939945.39,
+       "expenditures": 100.0,
+       "status": "$1,242,629.41",
+       "url": "/ca/candidate/adam-perez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "DeJonae Shaw",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 554030.55,
+       "expenditures": 0.0,
+       "status": "$453,515.26",
+       "url": "/ca/candidate/dejonae-shaw?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "50"
+  },
+  {
+   "office": "California State Assembly District 51",
+   "url": "/ca/race/california-state-assembly-district-51-65064",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1456618.0,
+   "totalExpenditures": 1503416.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Rick Chavez Zbur",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1451093.15,
+       "expenditures": 25000.0,
+       "status": "$1,497,891.27",
+       "url": "/ca/candidate/rick-chavez-zbur?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Rick Chavez Zbur",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1451093.15,
+       "expenditures": 25000.0,
+       "status": "$1,497,891.27",
+       "url": "/ca/candidate/rick-chavez-zbur?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Shiva Bagheri",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5525.0,
+       "expenditures": 1014.68,
+       "status": "$5,525.00",
+       "url": "/ca/candidate/shiva-bagheri?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "51"
+  },
+  {
+   "office": "California State Assembly District 52",
+   "url": "/ca/race/california-state-assembly-district-52-65065",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 2279503.0,
+   "totalExpenditures": 3234494.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jessica Caloza",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1601816.27,
+       "expenditures": 0.0,
+       "status": "$2,150,494.08",
+       "url": "/ca/candidate/jessica-caloza?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Franky Carrillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 210798.89,
+       "expenditures": 305500.0,
+       "status": "$553,042.07",
+       "url": "/ca/candidate/franky-carrillo?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Jessica Caloza",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1601816.27,
+       "expenditures": 0.0,
+       "status": "$2,150,494.08",
+       "url": "/ca/candidate/jessica-caloza?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Franky Carrillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 210798.89,
+       "expenditures": 305500.0,
+       "status": "$553,042.07",
+       "url": "/ca/candidate/franky-carrillo?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Genesis Coronado",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17196.99,
+       "expenditures": 3000.0,
+       "status": "$22,751.46",
+       "url": "/ca/candidate/genesis-coronado?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Giron",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 260734.11,
+       "expenditures": 33000.0,
+       "status": "$299,178.04",
+       "url": "/ca/candidate/david-giron?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Carlos León",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 56239.0,
+       "expenditures": 0.0,
+       "status": "$55,989.00",
+       "url": "/ca/candidate/carlos-leon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sofia Quinones",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1642.0,
+       "expenditures": 0.0,
+       "status": "$2,452.25",
+       "url": "/ca/candidate/sofia-quinones?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ari Ruiz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 131076.12,
+       "expenditures": 0.0,
+       "status": "$150,586.85",
+       "url": "/ca/candidate/ari-ruiz?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "52"
+  },
+  {
+   "office": "California State Assembly District 53",
+   "url": "/ca/race/california-state-assembly-district-53-65066",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1585062.0,
+   "totalExpenditures": 2129657.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Michelle Rodriguez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 809722.97,
+       "expenditures": 0.0,
+       "status": "$1,153,420.46",
+       "url": "/ca/candidate/michelle-rodriguez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nick Wilson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 178812.0,
+       "expenditures": 500.0,
+       "status": "$176,707.39",
+       "url": "/ca/candidate/nick-wilson?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Michelle Rodriguez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 809722.97,
+       "expenditures": 0.0,
+       "status": "$1,153,420.46",
+       "url": "/ca/candidate/michelle-rodriguez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nick Wilson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 178812.0,
+       "expenditures": 500.0,
+       "status": "$176,707.39",
+       "url": "/ca/candidate/nick-wilson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Carlos Goytia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5425.0,
+       "expenditures": 0.0,
+       "status": "$24,185.24",
+       "url": "/ca/candidate/carlos-goytia?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Javier Hernandez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 253234.06,
+       "expenditures": 32500.0,
+       "status": "$341,293.15",
+       "url": "/ca/candidate/javier-hernandez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Robert Torres",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 337867.82,
+       "expenditures": 7000.0,
+       "status": "$434,050.46",
+       "url": "/ca/candidate/robert-torres?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "53"
+  },
+  {
+   "office": "California State Assembly District 54",
+   "url": "/ca/race/california-state-assembly-district-54-65067",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1826122.0,
+   "totalExpenditures": 2073366.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mark Gonzalez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1650961.81,
+       "expenditures": 0.0,
+       "status": "$1,860,221.01",
+       "url": "/ca/candidate/mark-gonzalez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "John Yi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 172636.45,
+       "expenditures": 0.0,
+       "status": "$210,663.55",
+       "url": "/ca/candidate/john-yi?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Mark Gonzalez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1650961.81,
+       "expenditures": 0.0,
+       "status": "$1,860,221.01",
+       "url": "/ca/candidate/mark-gonzalez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "John Yi",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 172636.45,
+       "expenditures": 0.0,
+       "status": "$210,663.55",
+       "url": "/ca/candidate/john-yi?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Elaine Alaniz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2523.86,
+       "expenditures": 2326.54,
+       "status": "$2,481.38",
+       "url": "/ca/candidate/elaine-alaniz?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "54"
+  },
+  {
+   "office": "California State Assembly District 55",
+   "url": "/ca/race/california-state-assembly-district-55-65068",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1152205.0,
+   "totalExpenditures": 1193293.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Isaac Bryan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1152205.25,
+       "expenditures": 0.0,
+       "status": "$1,193,293.29",
+       "url": "/ca/candidate/isaac-bryan?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Keith Cascio",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/keith-cascio?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Isaac Bryan",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1152205.25,
+       "expenditures": 0.0,
+       "status": "$1,193,293.29",
+       "url": "/ca/candidate/isaac-bryan?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Keith Cascio",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/keith-cascio?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "55"
+  },
+  {
+   "office": "California State Assembly District 56",
+   "url": "/ca/race/california-state-assembly-district-56-65069",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1238754.0,
+   "totalExpenditures": 1569678.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lisa Calderon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1212901.94,
+       "expenditures": 0.0,
+       "status": "$1,542,707.23",
+       "url": "/ca/candidate/lisa-calderon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jessica Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25851.89,
+       "expenditures": 0.0,
+       "status": "$26,970.59",
+       "url": "/ca/candidate/jessica-martinez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Lisa Calderon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1212901.94,
+       "expenditures": 0.0,
+       "status": "$1,542,707.23",
+       "url": "/ca/candidate/lisa-calderon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jessica Martinez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25851.89,
+       "expenditures": 0.0,
+       "status": "$26,970.59",
+       "url": "/ca/candidate/jessica-martinez?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "56"
+  },
+  {
+   "office": "California State Assembly District 57",
+   "url": "/ca/race/california-state-assembly-district-57-65070",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 2664338.0,
+   "totalExpenditures": 3274491.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Sade Elhawary",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1457214.66,
+       "expenditures": 0.0,
+       "status": "$1,524,968.02",
+       "url": "/ca/candidate/sade-elhawary?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Efren Martinez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 855099.14,
+       "expenditures": 22000.0,
+       "status": "$1,339,468.70",
+       "url": "/ca/candidate/efren-martinez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Sade Elhawary",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1457214.66,
+       "expenditures": 0.0,
+       "status": "$1,524,968.02",
+       "url": "/ca/candidate/sade-elhawary?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Efren Martinez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 855099.14,
+       "expenditures": 22000.0,
+       "status": "$1,339,468.70",
+       "url": "/ca/candidate/efren-martinez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Greg Akili",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 125568.98,
+       "expenditures": 36200.0,
+       "status": "$168,741.20",
+       "url": "/ca/candidate/greg-akili?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dulce Vasquez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 226455.39,
+       "expenditures": 0.0,
+       "status": "$241,312.92",
+       "url": "/ca/candidate/dulce-vasquez?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "57"
+  },
+  {
+   "office": "California State Assembly District 58",
+   "url": "/ca/race/california-state-assembly-district-58-65071",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1543454.0,
+   "totalExpenditures": 2327972.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Leticia Castillo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 97113.23,
+       "expenditures": 0.0,
+       "status": "$85,499.42",
+       "url": "/ca/candidate/leticia-castillo?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Clarissa Cervantes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1062066.78,
+       "expenditures": 0.0,
+       "status": "$1,654,548.83",
+       "url": "/ca/candidate/clarissa-cervantes?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Clarissa Cervantes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1062066.78,
+       "expenditures": 0.0,
+       "status": "$1,654,548.83",
+       "url": "/ca/candidate/clarissa-cervantes?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Leticia Castillo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 97113.23,
+       "expenditures": 0.0,
+       "status": "$85,499.42",
+       "url": "/ca/candidate/leticia-castillo?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ronaldo Fierro",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 384274.06,
+       "expenditures": 100000.0,
+       "status": "$587,923.31",
+       "url": "/ca/candidate/ronaldo-fierro?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "58"
+  },
+  {
+   "office": "California State Assembly District 59",
+   "url": "/ca/race/california-state-assembly-district-59-65072",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1226555.0,
+   "totalExpenditures": 960335.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Phillip Chen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1188919.99,
+       "expenditures": 0.0,
+       "status": "$922,700.76",
+       "url": "/ca/candidate/phillip-chen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dave Obrand",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 37634.69,
+       "expenditures": 0.0,
+       "status": "$37,634.69",
+       "url": "/ca/candidate/dave-obrand?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Phillip Chen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1188919.99,
+       "expenditures": 0.0,
+       "status": "$922,700.76",
+       "url": "/ca/candidate/phillip-chen?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dave Obrand",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 37634.69,
+       "expenditures": 0.0,
+       "status": "$37,634.69",
+       "url": "/ca/candidate/dave-obrand?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "59"
+  },
+  {
+   "office": "California State Assembly District 6",
+   "url": "/ca/race/california-state-assembly-district-6-65073",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 2275653.0,
+   "totalExpenditures": 3101841.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Maggy Krell",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1239632.47,
+       "expenditures": 30000.0,
+       "status": "$1,562,539.32",
+       "url": "/ca/candidate/maggy-krell?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Maggy Krell",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1239632.47,
+       "expenditures": 30000.0,
+       "status": "$1,562,539.32",
+       "url": "/ca/candidate/maggy-krell?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Emmanuel Amanfor",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3831.63,
+       "expenditures": 2000.0,
+       "status": "$2,688.12",
+       "url": "/ca/candidate/emmanuel-amanfor?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sean Frame",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/sean-frame?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Rosanna Herber",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 183949.28,
+       "expenditures": 33000.0,
+       "status": "$300,718.31",
+       "url": "/ca/candidate/rosanna-herber?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Alex Lazar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11032.72,
+       "expenditures": 10250.0,
+       "status": "$12,972.07",
+       "url": "/ca/candidate/alex-lazar?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Carlos Marquez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 232968.52,
+       "expenditures": 40000.0,
+       "status": "$343,717.51",
+       "url": "/ca/candidate/carlos-marquez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Evan Minton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 252754.38,
+       "expenditures": 0.0,
+       "status": "$358,810.84",
+       "url": "/ca/candidate/evan-minton?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Paula Villescaz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 346809.66,
+       "expenditures": 0.0,
+       "status": "$517,289.58",
+       "url": "/ca/candidate/paula-villescaz?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Preston Romero",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4674.12,
+       "expenditures": 1100.0,
+       "status": "$3,105.00",
+       "url": "/ca/candidate/preston-romero?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "California State Assembly District 60",
+   "url": "/ca/race/california-state-assembly-district-60-65074",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 796181.0,
+   "totalExpenditures": 957919.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Corey Jackson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 736919.21,
+       "expenditures": 0.0,
+       "status": "$893,988.78",
+       "url": "/ca/candidate/corey-jackson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ronald Edwards",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46695.71,
+       "expenditures": 2261.21,
+       "status": "$47,522.96",
+       "url": "/ca/candidate/ronald-edwards?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Corey Jackson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 736919.21,
+       "expenditures": 0.0,
+       "status": "$893,988.78",
+       "url": "/ca/candidate/corey-jackson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ronald Edwards",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46695.71,
+       "expenditures": 2261.21,
+       "status": "$47,522.96",
+       "url": "/ca/candidate/ronald-edwards?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Hector Diaz Nava",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12565.63,
+       "expenditures": 13300.0,
+       "status": "$16,406.90",
+       "url": "/ca/candidate/diaz-nava?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "60"
+  },
+  {
+   "office": "California State Assembly District 61",
+   "url": "/ca/race/california-state-assembly-district-61-65075",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1164604.0,
+   "totalExpenditures": 1420730.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tina McKinnor",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1164604.36,
+       "expenditures": 0.0,
+       "status": "$1,420,730.27",
+       "url": "/ca/candidate/tina-mckinnor?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Tina McKinnor",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1164604.36,
+       "expenditures": 0.0,
+       "status": "$1,420,730.27",
+       "url": "/ca/candidate/tina-mckinnor?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "61"
+  },
+  {
+   "office": "California State Assembly District 62",
+   "url": "/ca/race/california-state-assembly-district-62-65076",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 922744.0,
+   "totalExpenditures": 1593094.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jose Solache",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 911544.3,
+       "expenditures": 0.0,
+       "status": "$1,591,768.64",
+       "url": "/ca/candidate/jose-solache?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Jose Solache",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 911544.3,
+       "expenditures": 0.0,
+       "status": "$1,591,768.64",
+       "url": "/ca/candidate/jose-solache?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Maria Estrada",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 11200.0,
+       "expenditures": 200.0,
+       "status": "$1,324.88",
+       "url": "/ca/candidate/maria-estrada?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "62"
+  },
+  {
+   "office": "California State Assembly District 63",
+   "url": "/ca/race/california-state-assembly-district-63-65077",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 596486.0,
+   "totalExpenditures": 662857.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Bill Essayli",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 496538.18,
+       "expenditures": 0.0,
+       "status": "$534,878.90",
+       "url": "/ca/candidate/bill-essayli?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Christopher Shoults",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 99947.56,
+       "expenditures": 800.0,
+       "status": "$127,978.31",
+       "url": "/ca/candidate/christopher-shoults?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Bill Essayli",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 496538.18,
+       "expenditures": 0.0,
+       "status": "$534,878.90",
+       "url": "/ca/candidate/bill-essayli?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Christopher Shoults",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 99947.56,
+       "expenditures": 800.0,
+       "status": "$127,978.31",
+       "url": "/ca/candidate/christopher-shoults?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "63"
+  },
+  {
+   "office": "California State Assembly District 64",
+   "url": "/ca/race/california-state-assembly-district-64-65078",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1534364.0,
+   "totalExpenditures": 1631961.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Blanca Pacheco",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1493782.71,
+       "expenditures": 0.0,
+       "status": "$1,584,160.58",
+       "url": "/ca/candidate/blanca-pacheco?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Raul Ortiz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 40580.9,
+       "expenditures": 0.0,
+       "status": "$47,800.25",
+       "url": "/ca/candidate/raul-ortiz?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Blanca Pacheco",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1493782.71,
+       "expenditures": 0.0,
+       "status": "$1,584,160.58",
+       "url": "/ca/candidate/blanca-pacheco?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Raul Ortiz",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 40580.9,
+       "expenditures": 0.0,
+       "status": "$47,800.25",
+       "url": "/ca/candidate/raul-ortiz?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "64"
+  },
+  {
+   "office": "California State Assembly District 65",
+   "url": "/ca/race/california-state-assembly-district-65-65079",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1201033.0,
+   "totalExpenditures": 1367898.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Mike Gipson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1201033.18,
+       "expenditures": 100.0,
+       "status": "$1,367,898.07",
+       "url": "/ca/candidate/mike-gipson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lydia A. Gutiérrez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/lydia-a-gutierrez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Mike Gipson",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1201033.18,
+       "expenditures": 100.0,
+       "status": "$1,367,898.07",
+       "url": "/ca/candidate/mike-gipson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lydia A. Gutiérrez",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/lydia-a-gutierrez?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "65"
+  },
+  {
+   "office": "California State Assembly District 66",
+   "url": "/ca/race/california-state-assembly-district-66-65080",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 542675.0,
+   "totalExpenditures": 779901.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Al Muratsuchi",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 542674.65,
+       "expenditures": 0.0,
+       "status": "$779,901.35",
+       "url": "/ca/candidate/al-muratsuchi?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Al Muratsuchi",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 542674.65,
+       "expenditures": 0.0,
+       "status": "$779,901.35",
+       "url": "/ca/candidate/al-muratsuchi?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "66"
+  },
+  {
+   "office": "California State Assembly District 67",
+   "url": "/ca/race/california-state-assembly-district-67-65081",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1015941.0,
+   "totalExpenditures": 1086946.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Sharon Quirk- Silva",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1015940.76,
+       "expenditures": 0.0,
+       "status": "$1,086,946.35",
+       "url": "/ca/candidate/sharon-quirk-silva?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Sharon Quirk- Silva",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1015940.76,
+       "expenditures": 0.0,
+       "status": "$1,086,946.35",
+       "url": "/ca/candidate/sharon-quirk-silva?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "67"
+  },
+  {
+   "office": "California State Assembly District 68",
+   "url": "/ca/race/california-state-assembly-district-68-65082",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1506240.0,
+   "totalExpenditures": 1901428.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Avelino Valencia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1506240.08,
+       "expenditures": 0.0,
+       "status": "$1,901,428.45",
+       "url": "/ca/candidate/avelino-valencia?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mike Tardif",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/mike-tardif?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Avelino Valencia",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1506240.08,
+       "expenditures": 0.0,
+       "status": "$1,901,428.45",
+       "url": "/ca/candidate/avelino-valencia?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Mike Tardif",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/mike-tardif?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "68"
+  },
+  {
+   "office": "California State Assembly District 69",
+   "url": "/ca/race/california-state-assembly-district-69-65083",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1223343.0,
+   "totalExpenditures": 1905492.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Josh Lowenthal",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1223342.84,
+       "expenditures": 0.0,
+       "status": "$1,905,491.81",
+       "url": "/ca/candidate/josh-lowenthal?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Josh Lowenthal",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1223342.84,
+       "expenditures": 0.0,
+       "status": "$1,905,491.81",
+       "url": "/ca/candidate/josh-lowenthal?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "69"
+  },
+  {
+   "office": "California State Assembly District 7",
+   "url": "/ca/race/california-state-assembly-district-7-65084",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 4443024.0,
+   "totalExpenditures": 4398712.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Josh Hoover",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2411939.84,
+       "expenditures": 0.0,
+       "status": "$3,132,697.59",
+       "url": "/ca/candidate/josh-hoover?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Porsche Middleton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1849229.44,
+       "expenditures": 0.0,
+       "status": "$922,338.98",
+       "url": "/ca/candidate/porsche-middleton?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Josh Hoover",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2411939.84,
+       "expenditures": 0.0,
+       "status": "$3,132,697.59",
+       "url": "/ca/candidate/josh-hoover?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Porsche Middleton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1849229.44,
+       "expenditures": 0.0,
+       "status": "$922,338.98",
+       "url": "/ca/candidate/porsche-middleton?cycle=2024-election-cycle"
+      },
+      {
+       "name": "YK Chalamcherla",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 181854.39,
+       "expenditures": 0.0,
+       "status": "$343,675.84",
+       "url": "/ca/candidate/yk-chalamcherla?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "California State Assembly District 70",
+   "url": "/ca/race/california-state-assembly-district-70-65085",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1334525.0,
+   "totalExpenditures": 1178860.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tri Ta",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 832397.89,
+       "expenditures": 0.0,
+       "status": "$815,382.67",
+       "url": "/ca/candidate/tri-ta?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jimmy Pham",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 502127.03,
+       "expenditures": 22297.72,
+       "status": "$363,477.35",
+       "url": "/ca/candidate/jimmy-pham?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Tri Ta",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 832397.89,
+       "expenditures": 0.0,
+       "status": "$815,382.67",
+       "url": "/ca/candidate/tri-ta?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jimmy Pham",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 502127.03,
+       "expenditures": 22297.72,
+       "status": "$363,477.35",
+       "url": "/ca/candidate/jimmy-pham?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "70"
+  },
+  {
+   "office": "California State Assembly District 71",
+   "url": "/ca/race/california-state-assembly-district-71-65086",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 632942.0,
+   "totalExpenditures": 627852.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Kate Sanchez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 632942.03,
+       "expenditures": 0.0,
+       "status": "$627,851.98",
+       "url": "/ca/candidate/kate-sanchez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Kate Sanchez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 632942.03,
+       "expenditures": 0.0,
+       "status": "$627,851.98",
+       "url": "/ca/candidate/kate-sanchez?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "71"
+  },
+  {
+   "office": "California State Assembly District 72",
+   "url": "/ca/race/california-state-assembly-district-72-65087",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 951284.0,
+   "totalExpenditures": 966349.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Diane Dixon",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 924922.29,
+       "expenditures": 0.0,
+       "status": "$944,358.37",
+       "url": "/ca/candidate/diane-dixon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dom Jones",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26361.84,
+       "expenditures": 0.0,
+       "status": "$21,990.17",
+       "url": "/ca/candidate/dom-jones?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Diane Dixon",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 924922.29,
+       "expenditures": 0.0,
+       "status": "$944,358.37",
+       "url": "/ca/candidate/diane-dixon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dom Jones",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26361.84,
+       "expenditures": 0.0,
+       "status": "$21,990.17",
+       "url": "/ca/candidate/dom-jones?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "72"
+  },
+  {
+   "office": "California State Assembly District 73",
+   "url": "/ca/race/california-state-assembly-district-73-65088",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1856963.0,
+   "totalExpenditures": 1530457.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Cottie Petrie-Norris",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1800143.5,
+       "expenditures": 0.0,
+       "status": "$1,445,955.23",
+       "url": "/ca/candidate/cottie-petrie-norris?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Scott Peotter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 56819.96,
+       "expenditures": 500.0,
+       "status": "$84,502.04",
+       "url": "/ca/candidate/scott-peotter?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Cottie Petrie-Norris",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1800143.5,
+       "expenditures": 0.0,
+       "status": "$1,445,955.23",
+       "url": "/ca/candidate/cottie-petrie-norris?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Scott Peotter",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 56819.96,
+       "expenditures": 500.0,
+       "status": "$84,502.04",
+       "url": "/ca/candidate/scott-peotter?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "73"
+  },
+  {
+   "office": "California State Assembly District 74",
+   "url": "/ca/race/california-state-assembly-district-74-65089",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 8459979.0,
+   "totalExpenditures": 9063626.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Laurie Davies",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3269619.43,
+       "expenditures": 0.0,
+       "status": "$3,104,530.73",
+       "url": "/ca/candidate/laurie-davies?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chris Duncan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5190359.65,
+       "expenditures": 0.0,
+       "status": "$5,959,095.56",
+       "url": "/ca/candidate/chris-duncan?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Laurie Davies",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3269619.43,
+       "expenditures": 0.0,
+       "status": "$3,104,530.73",
+       "url": "/ca/candidate/laurie-davies?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Chris Duncan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5190359.65,
+       "expenditures": 0.0,
+       "status": "$5,959,095.56",
+       "url": "/ca/candidate/chris-duncan?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "74"
+  },
+  {
+   "office": "California State Assembly District 75",
+   "url": "/ca/race/california-state-assembly-district-75-65090",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 4672550.0,
+   "totalExpenditures": 6379322.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Carl DeMaio",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3153641.2,
+       "expenditures": 100000.0,
+       "status": "$4,187,191.69",
+       "url": "/ca/candidate/carl-demaio?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Andrew Hayes",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1293377.63,
+       "expenditures": 20000.0,
+       "status": "$1,945,344.94",
+       "url": "/ca/candidate/andrew-hayes?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Carl DeMaio",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3153641.2,
+       "expenditures": 100000.0,
+       "status": "$4,187,191.69",
+       "url": "/ca/candidate/carl-demaio?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Andrew Hayes",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1293377.63,
+       "expenditures": 20000.0,
+       "status": "$1,945,344.94",
+       "url": "/ca/candidate/andrew-hayes?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joy Frew",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 26713.03,
+       "expenditures": 10000.0,
+       "status": "$30,764.06",
+       "url": "/ca/candidate/joy-frew?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kevin Juza",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 36576.11,
+       "expenditures": 6500.0,
+       "status": "$38,584.30",
+       "url": "/ca/candidate/kevin-juza?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jack J Fernandes",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 162241.64,
+       "expenditures": 10000.0,
+       "status": "$177,437.29",
+       "url": "/ca/candidate/jack-j-fernandes?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "75"
+  },
+  {
+   "office": "California State Assembly District 76",
+   "url": "/ca/race/california-state-assembly-district-76-65091",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 7219667.0,
+   "totalExpenditures": 4701886.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Darshana Patel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5181257.94,
+       "expenditures": 0.0,
+       "status": "$2,221,648.38",
+       "url": "/ca/candidate/darshana-patel?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kristie Bruce-Lane",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1632330.87,
+       "expenditures": 30500.0,
+       "status": "$1,899,206.08",
+       "url": "/ca/candidate/kristie-bruce-lane?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Darshana Patel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5181257.94,
+       "expenditures": 0.0,
+       "status": "$2,221,648.38",
+       "url": "/ca/candidate/darshana-patel?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kristie Bruce-Lane",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1632330.87,
+       "expenditures": 30500.0,
+       "status": "$1,899,206.08",
+       "url": "/ca/candidate/kristie-bruce-lane?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Joseph Rocha",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 406078.54,
+       "expenditures": 0.0,
+       "status": "$581,031.88",
+       "url": "/ca/candidate/joseph-rocha?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "76"
+  },
+  {
+   "office": "California State Assembly District 77",
+   "url": "/ca/race/california-state-assembly-district-77-65092",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 825741.0,
+   "totalExpenditures": 1419858.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tasha Boerner Horvath",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 825740.78,
+       "expenditures": 0.0,
+       "status": "$1,419,857.55",
+       "url": "/ca/candidate/tasha-boerner-horvath?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Tasha Boerner Horvath",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 825740.78,
+       "expenditures": 0.0,
+       "status": "$1,419,857.55",
+       "url": "/ca/candidate/tasha-boerner-horvath?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "77"
+  },
+  {
+   "office": "California State Assembly District 78",
+   "url": "/ca/race/california-state-assembly-district-78-65093",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 956027.0,
+   "totalExpenditures": 1483233.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Chris Ward",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 956027.41,
+       "expenditures": 0.0,
+       "status": "$1,483,233.39",
+       "url": "/ca/candidate/chris-ward?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Chris Ward",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 956027.41,
+       "expenditures": 0.0,
+       "status": "$1,483,233.39",
+       "url": "/ca/candidate/chris-ward?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "78"
+  },
+  {
+   "office": "California State Assembly District 79",
+   "url": "/ca/race/california-state-assembly-district-79-65094",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1539973.0,
+   "totalExpenditures": 2194088.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "LaShae Sharp-Collins",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 505596.44,
+       "expenditures": 1500.0,
+       "status": "$743,637.30",
+       "url": "/ca/candidate/lashae-sharp-collins?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Colin Parent",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1010729.04,
+       "expenditures": 0.0,
+       "status": "$1,426,853.45",
+       "url": "/ca/candidate/colin-parent?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Colin Parent",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1010729.04,
+       "expenditures": 0.0,
+       "status": "$1,426,853.45",
+       "url": "/ca/candidate/colin-parent?cycle=2024-election-cycle"
+      },
+      {
+       "name": "LaShae Sharp-Collins",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 505596.44,
+       "expenditures": 1500.0,
+       "status": "$743,637.30",
+       "url": "/ca/candidate/lashae-sharp-collins?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Racquel Vasquez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 23647.89,
+       "expenditures": 5000.0,
+       "status": "$23,596.84",
+       "url": "/ca/candidate/racquel-vasquez?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "79"
+  },
+  {
+   "office": "California State Assembly District 8",
+   "url": "/ca/race/california-state-assembly-district-8-65095",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1615084.0,
+   "totalExpenditures": 1894106.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "David Tangipa",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1030714.17,
+       "expenditures": 0.0,
+       "status": "$1,071,061.02",
+       "url": "/ca/candidate/david-tangipa?cycle=2024-election-cycle"
+      },
+      {
+       "name": "George Radanovich",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 584370.12,
+       "expenditures": 0.0,
+       "status": "$823,045.16",
+       "url": "/ca/candidate/george-radanovich?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "George Radanovich",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 584370.12,
+       "expenditures": 0.0,
+       "status": "$823,045.16",
+       "url": "/ca/candidate/george-radanovich?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Tangipa",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1030714.17,
+       "expenditures": 0.0,
+       "status": "$1,071,061.02",
+       "url": "/ca/candidate/david-tangipa?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "California State Assembly District 80",
+   "url": "/ca/race/california-state-assembly-district-80-65096",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1186100.0,
+   "totalExpenditures": 1963169.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "David Alvarez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1173871.93,
+       "expenditures": 0.0,
+       "status": "$1,946,994.15",
+       "url": "/ca/candidate/david-alvarez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Michael Williams",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12228.34,
+       "expenditures": 500.0,
+       "status": "$16,175.12",
+       "url": "/ca/candidate/michael-williams?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "David Alvarez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1173871.93,
+       "expenditures": 0.0,
+       "status": "$1,946,994.15",
+       "url": "/ca/candidate/david-alvarez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Michael Williams",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12228.34,
+       "expenditures": 500.0,
+       "status": "$16,175.12",
+       "url": "/ca/candidate/michael-williams?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "80"
+  },
+  {
+   "office": "California State Assembly District 9",
+   "url": "/ca/race/california-state-assembly-district-9-65097",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1254037.0,
+   "totalExpenditures": 1635840.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Heath Flora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1254036.83,
+       "expenditures": 0.0,
+       "status": "$1,635,840.44",
+       "url": "/ca/candidate/heath-flora?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tami Nobriga",
+       "party": "American Independent of California",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/tami-nobriga?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Heath Flora",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 1254036.83,
+       "expenditures": 0.0,
+       "status": "$1,635,840.44",
+       "url": "/ca/candidate/heath-flora?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tami Nobriga",
+       "party": "American Independent of California",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/tami-nobriga?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Rosella Rowlison",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/rosella-rowlison?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "California State Senate District 1",
+   "url": "/ca/race/california-state-senate-district-1-64998",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 672290.0,
+   "totalExpenditures": 796922.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Megan Dahle",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 655970.25,
+       "expenditures": 0.0,
+       "status": "$745,885.65",
+       "url": "/ca/candidate/megan-dahle?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Fennell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16319.72,
+       "expenditures": 42466.53,
+       "status": "$51,036.30",
+       "url": "/ca/candidate/david-fennell?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Megan Dahle",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 655970.25,
+       "expenditures": 0.0,
+       "status": "$745,885.65",
+       "url": "/ca/candidate/megan-dahle?cycle=2024-election-cycle"
+      },
+      {
+       "name": "David Fennell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 16319.72,
+       "expenditures": 42466.53,
+       "status": "$51,036.30",
+       "url": "/ca/candidate/david-fennell?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "1"
+  },
+  {
+   "office": "California State Senate District 11",
+   "url": "/ca/race/california-state-senate-district-11-65003",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1575936.0,
+   "totalExpenditures": 2171917.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Scott Wiener",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1456956.62,
+       "expenditures": 0.0,
+       "status": "$2,053,682.59",
+       "url": "/ca/candidate/scott-wiener?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Yvette Corkrean",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 118979.57,
+       "expenditures": 10000.0,
+       "status": "$118,234.80",
+       "url": "/ca/candidate/yvette-corkrean?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Scott Wiener",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1456956.62,
+       "expenditures": 0.0,
+       "status": "$2,053,682.59",
+       "url": "/ca/candidate/scott-wiener?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Yvette Corkrean",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 118979.57,
+       "expenditures": 10000.0,
+       "status": "$118,234.80",
+       "url": "/ca/candidate/yvette-corkrean?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "11"
+  },
+  {
+   "office": "California State Senate District 13",
+   "url": "/ca/race/california-state-senate-district-13-65004",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 922369.0,
+   "totalExpenditures": 1350169.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Josh Becker",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 916260.09,
+       "expenditures": 0.0,
+       "status": "$1,346,140.02",
+       "url": "/ca/candidate/josh-becker?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Alex Glew",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1600.0,
+       "expenditures": 0.0,
+       "status": "$1,600.00",
+       "url": "/ca/candidate/alex-glew?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Josh Becker",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 916260.09,
+       "expenditures": 0.0,
+       "status": "$1,346,140.02",
+       "url": "/ca/candidate/josh-becker?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Alex Glew",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1600.0,
+       "expenditures": 0.0,
+       "status": "$1,600.00",
+       "url": "/ca/candidate/alex-glew?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Christina Laskowski",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4509.11,
+       "expenditures": 0.0,
+       "status": "$2,429.25",
+       "url": "/ca/candidate/christina-laskowski?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "13"
+  },
+  {
+   "office": "California State Senate District 15",
+   "url": "/ca/race/california-state-senate-district-15-65005",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1383693.0,
+   "totalExpenditures": 962362.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Dave Cortese",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1383693.06,
+       "expenditures": 12000.0,
+       "status": "$956,631.01",
+       "url": "/ca/candidate/dave-cortese?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Robert Howell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 10000.0,
+       "status": "$5,730.50",
+       "url": "/ca/candidate/robert-howell?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Dave Cortese",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1383693.06,
+       "expenditures": 12000.0,
+       "status": "$956,631.01",
+       "url": "/ca/candidate/dave-cortese?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Robert Howell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 10000.0,
+       "status": "$5,730.50",
+       "url": "/ca/candidate/robert-howell?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "15"
+  },
+  {
+   "office": "California State Senate District 17",
+   "url": "/ca/race/california-state-senate-district-17-65006",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 993382.0,
+   "totalExpenditures": 1130446.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "John Laird",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 966515.36,
+       "expenditures": 0.0,
+       "status": "$1,103,479.42",
+       "url": "/ca/candidate/john-laird?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tony Virrueta",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26867.0,
+       "expenditures": 7300.0,
+       "status": "$26,967.00",
+       "url": "/ca/candidate/tony-virrueta?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "John Laird",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 966515.36,
+       "expenditures": 0.0,
+       "status": "$1,103,479.42",
+       "url": "/ca/candidate/john-laird?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Tony Virrueta",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 26867.0,
+       "expenditures": 7300.0,
+       "status": "$26,967.00",
+       "url": "/ca/candidate/tony-virrueta?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "17"
+  },
+  {
+   "office": "California State Senate District 19",
+   "url": "/ca/race/california-state-senate-district-19-65007",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 4287128.0,
+   "totalExpenditures": 3193239.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Rosilicie Ochoa Bogh",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2086869.18,
+       "expenditures": 0.0,
+       "status": "$1,337,172.04",
+       "url": "/ca/candidate/rosilicie-ochoa-bogh?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lisa Middleton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2200258.93,
+       "expenditures": 5000.0,
+       "status": "$1,856,067.23",
+       "url": "/ca/candidate/lisa-middleton?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Rosilicie Ochoa Bogh",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 2086869.18,
+       "expenditures": 0.0,
+       "status": "$1,337,172.04",
+       "url": "/ca/candidate/rosilicie-ochoa-bogh?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lisa Middleton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2200258.93,
+       "expenditures": 5000.0,
+       "status": "$1,856,067.23",
+       "url": "/ca/candidate/lisa-middleton?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "19"
+  },
+  {
+   "office": "California State Senate District 21",
+   "url": "/ca/race/california-state-senate-district-21-65008",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 999370.0,
+   "totalExpenditures": 1176395.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "S Monique Limon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 999370.1,
+       "expenditures": 0.0,
+       "status": "$1,176,395.23",
+       "url": "/ca/candidate/s-monique-limon?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "S Monique Limon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 999370.1,
+       "expenditures": 0.0,
+       "status": "$1,176,395.23",
+       "url": "/ca/candidate/s-monique-limon?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "21"
+  },
+  {
+   "office": "California State Senate District 23",
+   "url": "/ca/race/california-state-senate-district-23-65009",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 8666551.0,
+   "totalExpenditures": 9088021.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Suzette Martinez Valladares",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2500011.53,
+       "expenditures": 0.0,
+       "status": "$3,400,104.74",
+       "url": "/ca/candidate/suzette-martinez-valladares?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kip Mueller",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6152836.16,
+       "expenditures": 500000.0,
+       "status": "$5,670,098.06",
+       "url": "/ca/candidate/kip-mueller?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Kip Mueller",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6152836.16,
+       "expenditures": 500000.0,
+       "status": "$5,670,098.06",
+       "url": "/ca/candidate/kip-mueller?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Suzette Martinez Valladares",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2500011.53,
+       "expenditures": 0.0,
+       "status": "$3,400,104.74",
+       "url": "/ca/candidate/suzette-martinez-valladares?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ollie McCaulley",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/ollie-mccaulley?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Eric Ohlsen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13703.0,
+       "expenditures": 0.0,
+       "status": "$17,817.83",
+       "url": "/ca/candidate/eric-ohlsen?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "23"
+  },
+  {
+   "office": "California State Senate District 25",
+   "url": "/ca/race/california-state-senate-district-25-65010",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 7430327.0,
+   "totalExpenditures": 10170133.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Sasha Renee Perez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1468652.25,
+       "expenditures": 5500.0,
+       "status": "$1,491,886.40",
+       "url": "/ca/candidate/sasha-renee-perez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Elizabeth Ahlers",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 314364.92,
+       "expenditures": 100000.0,
+       "status": "$577,298.33",
+       "url": "/ca/candidate/elizabeth-ahlers?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Sasha Renee Perez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1468652.25,
+       "expenditures": 5500.0,
+       "status": "$1,491,886.40",
+       "url": "/ca/candidate/sasha-renee-perez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Elizabeth Ahlers",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 314364.92,
+       "expenditures": 100000.0,
+       "status": "$577,298.33",
+       "url": "/ca/candidate/elizabeth-ahlers?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sandra Armenta",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 135099.94,
+       "expenditures": 5999.0,
+       "status": "$148,167.87",
+       "url": "/ca/candidate/sandra-armenta?cycle=2024-election-cycle"
+      },
+      {
+       "name": "John Harabedian",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2122393.68,
+       "expenditures": 50000.0,
+       "status": "$2,785,148.86",
+       "url": "/ca/candidate/john-harabedian?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Yvonne Yiu",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 3389816.69,
+       "expenditures": 100000.0,
+       "status": "$5,167,631.79",
+       "url": "/ca/candidate/yvonne-yiu?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "25"
+  },
+  {
+   "office": "California State Senate District 27",
+   "url": "/ca/race/california-state-senate-district-27-65011",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 696575.0,
+   "totalExpenditures": 981157.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Henry Stern",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 601175.7,
+       "expenditures": 0.0,
+       "status": "$855,551.63",
+       "url": "/ca/candidate/henry-stern?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lucie Volotzky",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57149.83,
+       "expenditures": 5000.0,
+       "status": "$62,151.84",
+       "url": "/ca/candidate/lucie-volotzky?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Henry Stern",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 601175.7,
+       "expenditures": 0.0,
+       "status": "$855,551.63",
+       "url": "/ca/candidate/henry-stern?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lucie Volotzky",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57149.83,
+       "expenditures": 5000.0,
+       "status": "$62,151.84",
+       "url": "/ca/candidate/lucie-volotzky?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Susan Collins",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 38249.32,
+       "expenditures": 30000.0,
+       "status": "$63,453.38",
+       "url": "/ca/candidate/susan-collins?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "27"
+  },
+  {
+   "office": "California State Senate District 29",
+   "url": "/ca/race/california-state-senate-district-29-65012",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1645912.0,
+   "totalExpenditures": 1798830.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Eloise Reyes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1570089.27,
+       "expenditures": 0.0,
+       "status": "$1,733,916.89",
+       "url": "/ca/candidate/eloise-reyes?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Carlos Garcia",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 75822.42,
+       "expenditures": 0.0,
+       "status": "$64,913.03",
+       "url": "/ca/candidate/carlos-garcia?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Eloise Reyes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1570089.27,
+       "expenditures": 0.0,
+       "status": "$1,733,916.89",
+       "url": "/ca/candidate/eloise-reyes?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Carlos Garcia",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 75822.42,
+       "expenditures": 0.0,
+       "status": "$64,913.03",
+       "url": "/ca/candidate/carlos-garcia?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "29"
+  },
+  {
+   "office": "California State Senate District 3",
+   "url": "/ca/race/california-state-senate-district-3-64999",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1848062.0,
+   "totalExpenditures": 2579124.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Christopher Cabaldon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1015610.65,
+       "expenditures": 15000.0,
+       "status": "$1,256,314.84",
+       "url": "/ca/candidate/christopher-cabaldon?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Christopher Cabaldon",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1015610.65,
+       "expenditures": 15000.0,
+       "status": "$1,256,314.84",
+       "url": "/ca/candidate/christopher-cabaldon?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jackie Elward",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 273398.8,
+       "expenditures": 0.0,
+       "status": "$390,608.95",
+       "url": "/ca/candidate/jackie-elward?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Alfredo Pedroza",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12149.0,
+       "expenditures": 0.0,
+       "status": "$12,149.00",
+       "url": "/ca/candidate/alfredo-pedroza?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Rozzana Verder-Aliga",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 546903.56,
+       "expenditures": 0.0,
+       "status": "$920,051.38",
+       "url": "/ca/candidate/rozzana-verder-aliga?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "3"
+  },
+  {
+   "office": "California State Senate District 31",
+   "url": "/ca/race/california-state-senate-district-31-65013",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1915499.0,
+   "totalExpenditures": 3908471.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Sabrina Cervantes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1561624.55,
+       "expenditures": 0.0,
+       "status": "$2,566,737.64",
+       "url": "/ca/candidate/sabrina-cervantes?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Cynthia Navarro",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2995.0,
+       "expenditures": 0.0,
+       "status": "$1,595.00",
+       "url": "/ca/candidate/cynthia-navarro?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Sabrina Cervantes",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1561624.55,
+       "expenditures": 0.0,
+       "status": "$2,566,737.64",
+       "url": "/ca/candidate/sabrina-cervantes?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Cynthia Navarro",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 2995.0,
+       "expenditures": 0.0,
+       "status": "$1,595.00",
+       "url": "/ca/candidate/cynthia-navarro?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Angelo Farooq",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 350879.42,
+       "expenditures": 0.0,
+       "status": "$1,340,138.14",
+       "url": "/ca/candidate/angelo-farooq?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "31"
+  },
+  {
+   "office": "California State Senate District 33",
+   "url": "/ca/race/california-state-senate-district-33-65014",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1119978.0,
+   "totalExpenditures": 1102205.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Lena Gonzalez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1119977.6,
+       "expenditures": 0.0,
+       "status": "$1,102,204.66",
+       "url": "/ca/candidate/lena-gonzalez?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Lena Gonzalez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 1119977.6,
+       "expenditures": 0.0,
+       "status": "$1,102,204.66",
+       "url": "/ca/candidate/lena-gonzalez?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "33"
+  },
+  {
+   "office": "California State Senate District 35",
+   "url": "/ca/race/california-state-senate-district-35-65015",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1916504.0,
+   "totalExpenditures": 2794483.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Laura Richardson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 647474.55,
+       "expenditures": 324750.0,
+       "status": "$1,013,041.95",
+       "url": "/ca/candidate/laura-richardson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Michelle Chambers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 939685.22,
+       "expenditures": 0.0,
+       "status": "$1,214,554.95",
+       "url": "/ca/candidate/michelle-chambers?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Michelle Chambers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 939685.22,
+       "expenditures": 0.0,
+       "status": "$1,214,554.95",
+       "url": "/ca/candidate/michelle-chambers?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Laura Richardson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 647474.55,
+       "expenditures": 324750.0,
+       "status": "$1,013,041.95",
+       "url": "/ca/candidate/laura-richardson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Lamar Lyons",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1219.5,
+       "expenditures": 55000.0,
+       "status": "$66,213.44",
+       "url": "/ca/candidate/lamar-lyons?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Alex Monteiro",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 102761.04,
+       "expenditures": 78500.0,
+       "status": "$229,141.93",
+       "url": "/ca/candidate/alex-monteiro?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Albert Robles",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 67621.0,
+       "expenditures": 5000.0,
+       "status": "$76,824.77",
+       "url": "/ca/candidate/albert-robles?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jennifer Williams",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 140747.0,
+       "expenditures": 0.0,
+       "status": "$159,396.87",
+       "url": "/ca/candidate/jennifer-williams?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nilo Michelin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5548.62,
+       "expenditures": 51000.0,
+       "status": "$23,402.94",
+       "url": "/ca/candidate/nilo-michelin?cycle=2024-election-cycle"
+      },
+      {
+       "name": "James Spencer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 11447.44,
+       "expenditures": 5000.0,
+       "status": "$11,906.58",
+       "url": "/ca/candidate/james-spencer?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "35"
+  },
+  {
+   "office": "California State Senate District 37",
+   "url": "/ca/race/california-state-senate-district-37-65016",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 9054005.0,
+   "totalExpenditures": 6636178.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Steven Choi",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 922301.0,
+       "expenditures": 0.0,
+       "status": "$388,186.76",
+       "url": "/ca/candidate/steven-choi?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Josh Newman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 6959511.52,
+       "expenditures": 0.0,
+       "status": "$5,233,171.14",
+       "url": "/ca/candidate/josh-newman?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Josh Newman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 6959511.52,
+       "expenditures": 0.0,
+       "status": "$5,233,171.14",
+       "url": "/ca/candidate/josh-newman?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Steven Choi",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 922301.0,
+       "expenditures": 0.0,
+       "status": "$388,186.76",
+       "url": "/ca/candidate/steven-choi?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dave Min",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 333.0,
+       "expenditures": 0.0,
+       "status": "$245,470.20",
+       "url": "/ca/candidate/dave-min?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Gabrielle Ashbaugh",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6229.29,
+       "expenditures": 0.0,
+       "status": "$550.00",
+       "url": "/ca/candidate/gabrielle-ashbaugh?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Leticia Correa",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6229.29,
+       "expenditures": 0.0,
+       "status": "$550.00",
+       "url": "/ca/candidate/leticia-correa?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Stephanie Le",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6229.29,
+       "expenditures": 0.0,
+       "status": "$550.00",
+       "url": "/ca/candidate/stephanie-le?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Alex Mohajer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 240630.58,
+       "expenditures": 0.0,
+       "status": "$273,537.02",
+       "url": "/ca/candidate/alex-mohajer?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jacob Creer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6229.29,
+       "expenditures": 0.0,
+       "status": "$550.00",
+       "url": "/ca/candidate/jacob-creer?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jenny Suarez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6229.29,
+       "expenditures": 0.0,
+       "status": "$550.00",
+       "url": "/ca/candidate/jenny-suarez?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Ali Kowsari",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18259.86,
+       "expenditures": 15000.0,
+       "status": "$28,837.98",
+       "url": "/ca/candidate/ali-kowsari?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Anthony Kuo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 328049.04,
+       "expenditures": 0.0,
+       "status": "$188,598.93",
+       "url": "/ca/candidate/anthony-kuo?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Crystal Miles",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 310454.7,
+       "expenditures": 50000.0,
+       "status": "$183,953.47",
+       "url": "/ca/candidate/crystal-miles?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Guy Selleck",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 243318.4,
+       "expenditures": 100000.0,
+       "status": "$91,672.06",
+       "url": "/ca/candidate/guy-selleck?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "37"
+  },
+  {
+   "office": "California State Senate District 39",
+   "url": "/ca/race/california-state-senate-district-39-65017",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 1732466.0,
+   "totalExpenditures": 3755458.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Akilah Weber",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1584435.01,
+       "expenditures": 0.0,
+       "status": "$2,621,997.84",
+       "url": "/ca/candidate/akilah-weber?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Akilah Weber",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1584435.01,
+       "expenditures": 0.0,
+       "status": "$2,621,997.84",
+       "url": "/ca/candidate/akilah-weber?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Nathan Fletcher",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 148031.0,
+       "expenditures": 0.0,
+       "status": "$1,133,459.78",
+       "url": "/ca/candidate/nathan-fletcher?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "39"
+  },
+  {
+   "office": "California State Senate District 5",
+   "url": "/ca/race/california-state-senate-district-5-65000",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 3652221.0,
+   "totalExpenditures": 4800785.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jerry Mcnerney",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 994167.35,
+       "expenditures": 0.0,
+       "status": "$985,351.85",
+       "url": "/ca/candidate/jerry-mcnerney?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jim Shoemaker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 144000.99,
+       "expenditures": 3519.44,
+       "status": "$125,887.70",
+       "url": "/ca/candidate/jim-shoemaker?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Jerry Mcnerney",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 994167.35,
+       "expenditures": 0.0,
+       "status": "$985,351.85",
+       "url": "/ca/candidate/jerry-mcnerney?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jim Shoemaker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 144000.99,
+       "expenditures": 3519.44,
+       "status": "$125,887.70",
+       "url": "/ca/candidate/jim-shoemaker?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Rhodesia Ransom",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1004016.65,
+       "expenditures": 0.0,
+       "status": "$1,324,716.97",
+       "url": "/ca/candidate/rhodesia-ransom?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Carlos Villapudua",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1038744.9,
+       "expenditures": 0.0,
+       "status": "$1,313,382.38",
+       "url": "/ca/candidate/carlos-villapudua?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Edith Villapudua",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 471291.09,
+       "expenditures": 0.0,
+       "status": "$1,051,446.53",
+       "url": "/ca/candidate/edith-villapudua?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "5"
+  },
+  {
+   "office": "California State Senate District 7",
+   "url": "/ca/race/california-state-senate-district-7-65001",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 3105391.0,
+   "totalExpenditures": 3514900.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Jesse Arreguin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1734132.88,
+       "expenditures": 100.0,
+       "status": "$1,938,770.31",
+       "url": "/ca/candidate/jesse-arreguin?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jovanka Beckles",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 352980.77,
+       "expenditures": 26000.0,
+       "status": "$389,594.20",
+       "url": "/ca/candidate/jovanka-beckles?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Jesse Arreguin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1734132.88,
+       "expenditures": 100.0,
+       "status": "$1,938,770.31",
+       "url": "/ca/candidate/jesse-arreguin?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jovanka Beckles",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 352980.77,
+       "expenditures": 26000.0,
+       "status": "$389,594.20",
+       "url": "/ca/candidate/jovanka-beckles?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Dan Kalb",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 376663.69,
+       "expenditures": 7625.0,
+       "status": "$573,393.31",
+       "url": "/ca/candidate/dan-kalb?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Kathryn Lybarger",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 622375.64,
+       "expenditures": 0.0,
+       "status": "$605,528.57",
+       "url": "/ca/candidate/kathryn-lybarger?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Sandre Swanson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 19238.0,
+       "expenditures": 4200.0,
+       "status": "$7,613.21",
+       "url": "/ca/candidate/sandre-swanson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Jeanne Solnordal",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "$0.00",
+       "url": "/ca/candidate/jeanne-solnordal?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "7"
+  },
+  {
+   "office": "California State Senate District 9",
+   "url": "/ca/race/california-state-senate-district-9-65002",
+   "dataThrough": "12/31/2024",
+   "stage": "Results Final",
+   "totalContributions": 2559988.0,
+   "totalExpenditures": 4114459.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 5, 2024",
+     "candidates": [
+      {
+       "name": "Tim Grayson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2290515.97,
+       "expenditures": 0.0,
+       "status": "$3,839,134.70",
+       "url": "/ca/candidate/tim-grayson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Marisol Rubio",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 269471.81,
+       "expenditures": 13750.0,
+       "status": "$275,324.62",
+       "url": "/ca/candidate/marisol-rubio?cycle=2024-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Primary Election",
+     "date": "March 5, 2024",
+     "candidates": [
+      {
+       "name": "Tim Grayson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2290515.97,
+       "expenditures": 0.0,
+       "status": "$3,839,134.70",
+       "url": "/ca/candidate/tim-grayson?cycle=2024-election-cycle"
+      },
+      {
+       "name": "Marisol Rubio",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 269471.81,
+       "expenditures": 13750.0,
+       "status": "$275,324.62",
+       "url": "/ca/candidate/marisol-rubio?cycle=2024-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "9"
+  }
+ ]
+}

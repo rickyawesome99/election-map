@@ -10,6 +10,7 @@ import { normalizeGeographyWinding } from "@/lib/geoWinding";
 import { ABBR_TO_FIPS } from "@/lib/fips";
 import { getRaceColor, getRatingColors, fmtMargin } from "@/lib/colorScale";
 import { districtDisplayLabel, indexByNormalizedKey, lookupByDistrictCode } from "@/lib/stateLegDistrictKey";
+import { extractDistrictCode } from "@/lib/stateLegBoundaryCode";
 import { districtResultMargin } from "@/lib/useStateLegResults";
 import { isDistrictUp, seatsUpIn } from "@/lib/stateLegUpcoming";
 import type { Chamber, StateLegDistrict } from "@/data/stateLegDistricts";
@@ -43,50 +44,6 @@ type DistrictGeometry = {
 // whole boundary file whenever `parseGeographies` changes identity — an inline arrow did that on
 // every render, i.e. on every hover.
 const parseDistrictGeographies = (geographies: DistrictGeometry[]) => geographies.map(normalizeGeographyWinding);
-
-// Mirrors BOUNDARY_CODE_OVERRIDES/extractDistrictCode in scripts/build-state-leg-incumbents.mjs —
-// that script computes each StateLegDistrict's `number` from the boundary file's DISTRICT/NAMELSAD
-// properties (not a plain DISTRICT lookup), because DISTRICT alone is truncated to a plain integer
-// and can collapse two real districts (e.g. ND House "4A"/"4B" both report DISTRICT "4") or, for a
-// few states, doesn't correspond to Open States' numbering scheme at all (MA's named districts, AK
-// Senate's lettered districts). The map must key off the same computed code as `number`, or split
-// districts fall through to the default fill with no hover tooltip. Keep in sync with the build
-// script if a future state needs a new override there, and with the copy in
-// scripts/verify-state-leg-historical-maps.mjs, which checks the same join for past years.
-//
-// The suffixes are matched loosely because TIGER has renamed these layers across vintages: a
-// Vermont Senate district is "Bennington Senatorial District" in the current file and "Bennington
-// State Senate District" in the 2020 one, and the historical maps go through this same function.
-const BOUNDARY_CODE_OVERRIDES: Record<string, (properties: { NAMELSAD?: string }) => string | undefined> = {
-  MA_house: (properties) => properties.NAMELSAD?.replace(/\s+District$/, ""),
-  MA_senate: (properties) => properties.NAMELSAD?.replace(/\s+District$/, ""),
-  AK_senate: (properties) => properties.NAMELSAD?.trim().split(/\s+/).pop(),
-  // VT districts are named, not numbered — DISTRICT is "NaN". Confirmed via research, 2026-08-26.
-  // NH numbers its House districts within each county. The current (custom-sourced) file already
-  // carries them as "BE1"/"CH14" in DISTRICT, but TIGER spells the same district out as "State
-  // House District Belknap County No. 1" with a DISTRICT of "6" that repeats across counties -
-  // so the county's first two letters are put back in front, which is exactly the state's own
-  // code. Returns nothing for the current file, which falls through to its DISTRICT.
-  NH_house: (properties) => {
-    const parts = properties.NAMELSAD?.match(/District\s+(\S+)\s+County\s+No\.\s*(\d+)$/);
-    return parts ? `${parts[1].slice(0, 2).toUpperCase()}${Number(parts[2])}` : undefined;
-  },
-  VT_house: (properties) => properties.NAMELSAD?.replace(/\s+(State\s+)?House\s+District$/, ""),
-  VT_senate: (properties) => properties.NAMELSAD?.replace(/\s+((State\s+)?Senate|Senatorial)\s+District$/, ""),
-};
-
-function extractDistrictCode(stateAbbr: string, chamber: Chamber, properties: { DISTRICT?: string; NAMELSAD?: string }): string | undefined {
-  // An override that returns nothing falls through to the default rules - NH_house needs that,
-  // because only the historical files carry the county-phrased name it rewrites.
-  const overridden = BOUNDARY_CODE_OVERRIDES[`${stateAbbr}_${chamber}`]?.(properties);
-  if (overridden) return overridden;
-  const { DISTRICT, NAMELSAD } = properties;
-  const lastToken = NAMELSAD?.trim().split(/\s+/).pop();
-  if (lastToken && DISTRICT && new RegExp(`^0*${DISTRICT}[A-Za-z]+$`).test(lastToken)) {
-    return lastToken;
-  }
-  return DISTRICT;
-}
 
 const CHAMBER_LABEL: Record<Chamber, string> = {
   house: "State House",
@@ -151,6 +108,7 @@ export default function StateLegDistrictMap({
   selectedKey = null,
   onSelect,
   overlay = null,
+  custom = null,
 }: {
   stateAbbr: string;
   stateName: string;
@@ -176,6 +134,11 @@ export default function StateLegDistrictMap({
   /** Floated over the map's bottom-left corner, where the click that opened it happened.
    *  Used for the selected-district panel on desktop, so opening it costs no page layout. */
   overlay?: ReactNode;
+  /**
+   * A caller-defined shading (the atlas's 2026 projection): per-district fill, tooltip lines,
+   * legend and footnote. When set it replaces the view-mode fill, tooltip body and legend.
+   */
+  custom?: { fill: Record<string, string>; tip: Record<string, { label: string; value: string; color?: string }[]>; legend: { label: string; bg: string }[]; note?: string } | null;
 }) {
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
@@ -251,6 +214,7 @@ export default function StateLegDistrictMap({
   const hasPres2024 = Object.keys(pres2024).length > 0;
   const hasResults = !!results && Object.keys(results).length > 0;
   const fillForDistrict = useCallback((districtNumber?: string) => {
+    if (custom) return (districtNumber && custom.fill[districtNumber]) || (darkMode ? NO_DATA_FILL.dark : NO_DATA_FILL.light);
     if (!districtNumber) return districtFill;
     if (isResultsView) {
       const result = resultFor(districtNumber);
@@ -279,7 +243,7 @@ export default function StateLegDistrictMap({
     const colors = OTHER_FILL[party];
     if (!colors) return districtFill;
     return darkMode ? colors.dark : colors.light;
-  }, [isResultsView, resultFor, hasResults, viewMode, pres2024, hasPres2024, partyByNumber, darkMode, districtFill, districtByNumber, upcomingYear]);
+  }, [isResultsView, resultFor, hasResults, viewMode, pres2024, hasPres2024, partyByNumber, darkMode, districtFill, districtByNumber, upcomingYear, custom]);
 
   const handleHoverEnter = useCallback((key: string) => setHoveredKey(key), []);
   const handleHoverLeave = useCallback(() => setHoveredKey(null), []);
@@ -366,7 +330,7 @@ export default function StateLegDistrictMap({
 
   const hoveredDistrict = hoveredKey ? districtByNumber[hoveredKey] : undefined;
   const hoveredLabel = hoveredKey ? hoveredDistrict?.label ?? districtDisplayLabel(hoveredKey, chamberLabel) : "";
-  const showMarginLegend = !!hasDistricts && ((viewMode === "president" && hasPres2024) || (isResultsView && hasResults));
+  const showMarginLegend = !!hasDistricts && (!!custom || (viewMode === "president" && hasPres2024) || (isResultsView && hasResults));
   const hasEstimatedPres = Object.values(pres2024).some((p) => p.estimated);
 
   return (
@@ -386,7 +350,7 @@ export default function StateLegDistrictMap({
           // Names where the source carried them (2024 only); zero-vote bookkeeping lines
           // ("Blank Ballots") are not candidacies and are dropped. See StateLegSection.
           const hoveredCandidates = isResultsView
-            ? (hoveredResult?.candidates ?? []).filter((c) => c.votes > 0)
+            ? (hoveredResult?.candidates ?? []).filter((c) => c.votes == null || c.votes > 0)
             : [];
           // Wider only when it has names to fit — a 190px box truncates most of them.
           const tipW = hoveredCandidates.length > 0 ? 240 : 190;
@@ -403,7 +367,16 @@ export default function StateLegDistrictMap({
               }}
             >
               <div className="font-bold text-xs mb-1.5">{hoveredLabel}</div>
-              {isResultsView ? (
+              {custom ? (
+                <div className="flex flex-col gap-0.5">
+                  {(custom.tip[hoveredKey] ?? [{ label: "No projection", value: "" }]).map((line, i) => (
+                    <div key={i} className="flex items-baseline justify-between gap-2">
+                      <span style={{ fontSize: 11, color: line.color ?? "var(--app-text-muted)" }}>{line.label}</span>
+                      <span className="font-semibold tabular-nums" style={{ fontSize: 11, color: line.color ?? "var(--app-text-primary)" }}>{line.value}</span>
+                    </div>
+                  ))}
+                </div>
+              ) : isResultsView ? (
                 hoveredResult ? (
                   hoveredMargin == null ? (
                     <div className="italic" style={{ fontSize: 11, color: "var(--app-text-very-muted)" }}>
@@ -424,7 +397,7 @@ export default function StateLegDistrictMap({
                               className="font-semibold tabular-nums shrink-0"
                               style={{ fontSize: 11, color: `var(--party-${c.party === "D" ? "dem" : c.party === "R" ? "rep" : "ind"})` }}
                             >
-                              {c.votes.toLocaleString()}
+                              {c.votes == null ? "—" : c.votes.toLocaleString()}
                             </span>
                           </div>
                         ))
@@ -627,7 +600,7 @@ export default function StateLegDistrictMap({
         className={`col-start-1 row-start-1 flex h-5 items-center gap-x-3 overflow-x-auto scrollbar-none md:h-auto md:flex-wrap md:gap-y-1${showMarginLegend ? "" : " invisible"}`}
         aria-hidden={!showMarginLegend}
       >
-        {MARGIN_LEGEND.map(({ label, bg }) => (
+        {(custom?.legend ?? MARGIN_LEGEND).map(({ label, bg }) => (
           <div key={label} className="flex items-center gap-1">
             <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: bg }} />
             <span className="whitespace-nowrap text-[9px] font-medium" style={{ color: "var(--app-text-muted)" }}>{label}</span>
@@ -680,6 +653,9 @@ export default function StateLegDistrictMap({
                 className={`col-start-1 row-start-1 flex flex-col gap-1${active ? "" : " invisible"}`}
                 aria-hidden={!active}
               >
+                {variant === "seats" && custom?.note && (
+                  <div className="text-[10px] italic" style={{ color: "var(--app-text-very-muted)" }}>{custom.note}</div>
+                )}
                 {variant === "upcoming" && (
                   <div className="text-[10px] italic" style={{ color: "var(--app-text-very-muted)" }}>
                     Shading shows only which seats are contested — no ratings have been set for {upcomingYear} yet.

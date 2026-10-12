@@ -1,0 +1,5051 @@
+{
+ "state": "AZ",
+ "cycle": 2022,
+ "fetched": "2026-10-11",
+ "dataThrough": "12/31/2022",
+ "races": [
+  {
+   "office": "Arizona House of Representatives District 1",
+   "url": "/az/race/arizona-house-of-representatives-district-1-56296",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 262802.0,
+   "totalExpenditures": 252239.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Quang Nguyen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 63159.0,
+       "expenditures": 58073.3,
+       "status": "Won",
+       "url": "/az/candidate/quang-nguyen-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Selina Bliss",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 49521.77,
+       "expenditures": 49537.57,
+       "status": "Won",
+       "url": "/az/candidate/selina-bliss-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Cathy Ransom",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 50545.14,
+       "expenditures": 50523.63,
+       "status": "Lost",
+       "url": "/az/candidate/cathy-ransom?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Neil Sinclair",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 50083.63,
+       "expenditures": 43072.93,
+       "status": "Lost",
+       "url": "/az/candidate/neil-sinclair?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Cathy Ransom",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 50545.14,
+       "expenditures": 50523.63,
+       "status": "Advanced",
+       "url": "/az/candidate/cathy-ransom?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Neil Sinclair",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 50083.63,
+       "expenditures": 43072.93,
+       "status": "Advanced",
+       "url": "/az/candidate/neil-sinclair?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Quang Nguyen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 63159.0,
+       "expenditures": 58073.3,
+       "status": "Advanced",
+       "url": "/az/candidate/quang-nguyen-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Selina Bliss",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 49521.77,
+       "expenditures": 49537.57,
+       "status": "Advanced",
+       "url": "/az/candidate/selina-bliss-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Judy Burges",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 40234.34,
+       "expenditures": 40152.31,
+       "status": "Lost",
+       "url": "/az/candidate/judy-burges-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ryan Cadigan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3932.0,
+       "expenditures": 3932.0,
+       "status": "Lost",
+       "url": "/az/candidate/ryan-cadigan?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Stephen Gesell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5326.59,
+       "expenditures": 6947.31,
+       "status": "Withdrew",
+       "url": "/az/candidate/stephen-gesell?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "1"
+  },
+  {
+   "office": "Arizona House of Representatives District 10",
+   "url": "/az/race/arizona-house-of-representatives-district-10-56297",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 47547.0,
+   "totalExpenditures": 36469.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Justin Heap",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21675.0,
+       "expenditures": 14203.46,
+       "status": "Won",
+       "url": "/az/candidate/justin-heap?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Barbara Parker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23287.0,
+       "expenditures": 18220.94,
+       "status": "Won",
+       "url": "/az/candidate/barbara-parker?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Helen Hunter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2585.32,
+       "expenditures": 4044.54,
+       "status": "Lost",
+       "url": "/az/candidate/helen-hunter?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Helen Hunter",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2585.32,
+       "expenditures": 4044.54,
+       "status": "Advanced",
+       "url": "/az/candidate/helen-hunter?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Justin Heap",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 21675.0,
+       "expenditures": 14203.46,
+       "status": "Advanced",
+       "url": "/az/candidate/justin-heap?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Barbara Parker",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23287.0,
+       "expenditures": 18220.94,
+       "status": "Advanced",
+       "url": "/az/candidate/barbara-parker?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "10"
+  },
+  {
+   "office": "Arizona House of Representatives District 11",
+   "url": "/az/race/arizona-house-of-representatives-district-11-56298",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 277862.0,
+   "totalExpenditures": 240694.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Marcelino Quiñonez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 65490.0,
+       "expenditures": 55087.87,
+       "status": "Won",
+       "url": "/az/candidate/marcelino-quinonez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Oscar De Los Santos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 49703.29,
+       "expenditures": 48858.12,
+       "status": "Won",
+       "url": "/az/candidate/oscar-de-los-santos?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tatiana Pena",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 49540.88,
+       "expenditures": 49234.34,
+       "status": "Lost",
+       "url": "/az/candidate/tatiana-pena-m-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Marcelino Quiñonez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 65490.0,
+       "expenditures": 55087.87,
+       "status": "Advanced",
+       "url": "/az/candidate/marcelino-quinonez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Oscar De Los Santos",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 49703.29,
+       "expenditures": 48858.12,
+       "status": "Advanced",
+       "url": "/az/candidate/oscar-de-los-santos?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Shams Abdussamad",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 31963.01,
+       "expenditures": 31963.01,
+       "status": "Lost",
+       "url": "/az/candidate/shams-abdussamad?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Michael Butts",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 19693.92,
+       "expenditures": 19084.13,
+       "status": "Lost",
+       "url": "/az/candidate/michael-butts?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Wesley Leasy",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 22045.09,
+       "expenditures": 22246.42,
+       "status": "Lost",
+       "url": "/az/candidate/wesley-leasy?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Shawn Pearson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 5350.0,
+       "expenditures": 4599.94,
+       "status": "Withdrew",
+       "url": "/az/candidate/shawn-pearson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Naketa Ross",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 34075.41,
+       "expenditures": 9619.93,
+       "status": "Lost",
+       "url": "/az/candidate/naketa-ross?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Tatiana Pena",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 49540.88,
+       "expenditures": 49234.34,
+       "status": "Advanced",
+       "url": "/az/candidate/tatiana-pena-m-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "11"
+  },
+  {
+   "office": "Arizona House of Representatives District 12",
+   "url": "/az/race/arizona-house-of-representatives-district-12-56299",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 673198.0,
+   "totalExpenditures": 668494.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Patricia Contreras",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 81760.53,
+       "expenditures": 74442.74,
+       "status": "Won",
+       "url": "/az/candidate/patricia-contreras?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Stacey Travers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 91013.21,
+       "expenditures": 54759.77,
+       "status": "Won",
+       "url": "/az/candidate/stacey-travers?cycle=2022-election-cycle"
+      },
+      {
+       "name": "James Chaston",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 163062.09,
+       "expenditures": 159165.91,
+       "status": "Lost",
+       "url": "/az/candidate/james-chaston?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Terry Roe",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 103842.47,
+       "expenditures": 93550.46,
+       "status": "Lost",
+       "url": "/az/candidate/terry-roe?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Patricia Contreras",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 81760.53,
+       "expenditures": 74442.74,
+       "status": "Advanced",
+       "url": "/az/candidate/patricia-contreras?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Stacey Travers",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 91013.21,
+       "expenditures": 54759.77,
+       "status": "Advanced",
+       "url": "/az/candidate/stacey-travers?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Sam Huang",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9290.0,
+       "expenditures": 12242.48,
+       "status": "Lost",
+       "url": "/az/candidate/sam-huang?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ajlan Kurdoglu",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 135055.06,
+       "expenditures": 201365.58,
+       "status": "Lost",
+       "url": "/az/candidate/ajlan-kurdoglu-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Paul Weich",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 89174.15,
+       "expenditures": 72966.67,
+       "status": "Lost",
+       "url": "/az/candidate/paul-weich?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "James Chaston",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 163062.09,
+       "expenditures": 159165.91,
+       "status": "Advanced",
+       "url": "/az/candidate/james-chaston?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Terry Roe",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 103842.47,
+       "expenditures": 93550.46,
+       "status": "Advanced",
+       "url": "/az/candidate/terry-roe?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "12"
+  },
+  {
+   "office": "Arizona House of Representatives District 13",
+   "url": "/az/race/arizona-house-of-representatives-district-13-56300",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 520989.0,
+   "totalExpenditures": 437455.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jennifer Pawlik",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 215907.72,
+       "expenditures": 188760.15,
+       "status": "Won",
+       "url": "/az/candidate/jennifer-lynn-pawlik-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Liz Harris",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 89535.62,
+       "expenditures": 44317.81,
+       "status": "Won",
+       "url": "/az/candidate/liz-harris-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Julie Willoughby",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 102685.27,
+       "expenditures": 102526.92,
+       "status": "Lost",
+       "url": "/az/candidate/julie-willoughby-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Jennifer Pawlik",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 215907.72,
+       "expenditures": 188760.15,
+       "status": "Advanced",
+       "url": "/az/candidate/jennifer-lynn-pawlik-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Liz Harris",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 89535.62,
+       "expenditures": 44317.81,
+       "status": "Advanced",
+       "url": "/az/candidate/liz-harris-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Julie Willoughby",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 102685.27,
+       "expenditures": 102526.92,
+       "status": "Advanced",
+       "url": "/az/candidate/julie-willoughby-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Josh Askey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 14560.8,
+       "expenditures": 13060.8,
+       "status": "Lost",
+       "url": "/az/candidate/josh-askey?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ron Hardin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 57625.0,
+       "expenditures": 50508.7,
+       "status": "Lost",
+       "url": "/az/candidate/ron-hardin?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Don Maes",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 40674.14,
+       "expenditures": 38280.64,
+       "status": "Lost",
+       "url": "/az/candidate/don-maes?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "13"
+  },
+  {
+   "office": "Arizona House of Representatives District 14",
+   "url": "/az/race/arizona-house-of-representatives-district-14-56301",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 231806.0,
+   "totalExpenditures": 148897.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Travis Grantham",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 48095.0,
+       "expenditures": 29448.6,
+       "status": "Won",
+       "url": "/az/candidate/travis-grantham-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Laurin Hendrix",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 102550.0,
+       "expenditures": 50200.63,
+       "status": "Won",
+       "url": "/az/candidate/laurin-hendrix?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Brandy Reese",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 52043.3,
+       "expenditures": 40786.92,
+       "status": "Lost",
+       "url": "/az/candidate/brandy-reese?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Brandy Reese",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 52043.3,
+       "expenditures": 40786.92,
+       "status": "Advanced",
+       "url": "/az/candidate/brandy-reese?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Travis Grantham",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 48095.0,
+       "expenditures": 29448.6,
+       "status": "Advanced",
+       "url": "/az/candidate/travis-grantham-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Laurin Hendrix",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 102550.0,
+       "expenditures": 50200.63,
+       "status": "Advanced",
+       "url": "/az/candidate/laurin-hendrix?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Natalie Dibernardo",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18475.0,
+       "expenditures": 17817.73,
+       "status": "Lost",
+       "url": "/az/candidate/natalie-dibernardo?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Suzanne Lunt",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10642.82,
+       "expenditures": 10642.82,
+       "status": "Lost",
+       "url": "/az/candidate/suzanne-lunt?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "14"
+  },
+  {
+   "office": "Arizona House of Representatives District 15",
+   "url": "/az/race/arizona-house-of-representatives-district-15-56302",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 47365.0,
+   "totalExpenditures": 37854.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Neal Carter",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 12269.7,
+       "expenditures": 3260.26,
+       "status": "Won",
+       "url": "/az/candidate/neal-carter-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jacqueline Parker",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 35095.26,
+       "expenditures": 34593.8,
+       "status": "Won",
+       "url": "/az/candidate/jacqueline-parker-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Neal Carter",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 12269.7,
+       "expenditures": 3260.26,
+       "status": "Advanced",
+       "url": "/az/candidate/neal-carter-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jacqueline Parker",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 35095.26,
+       "expenditures": 34593.8,
+       "status": "Advanced",
+       "url": "/az/candidate/jacqueline-parker-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "15"
+  },
+  {
+   "office": "Arizona House of Representatives District 16",
+   "url": "/az/race/arizona-house-of-representatives-district-16-56303",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 257216.0,
+   "totalExpenditures": 231527.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Teresa Martinez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 98654.38,
+       "expenditures": 87700.95,
+       "status": "Won",
+       "url": "/az/candidate/teresa-martinez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Keith Seaman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 100285.01,
+       "expenditures": 97052.02,
+       "status": "Won",
+       "url": "/az/candidate/keith-seaman?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rob Hudelson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 58276.16,
+       "expenditures": 46774.44,
+       "status": "Lost",
+       "url": "/az/candidate/rob-hudelson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Keith Seaman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 100285.01,
+       "expenditures": 97052.02,
+       "status": "Advanced",
+       "url": "/az/candidate/keith-seaman?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Teresa Martinez",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 98654.38,
+       "expenditures": 87700.95,
+       "status": "Advanced",
+       "url": "/az/candidate/teresa-martinez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rob Hudelson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 58276.16,
+       "expenditures": 46774.44,
+       "status": "Advanced",
+       "url": "/az/candidate/rob-hudelson?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "16"
+  },
+  {
+   "office": "Arizona House of Representatives District 17",
+   "url": "/az/race/arizona-house-of-representatives-district-17-56304",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 477768.0,
+   "totalExpenditures": 428739.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Rachel Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 80471.38,
+       "expenditures": 79312.32,
+       "status": "Won",
+       "url": "/az/candidate/rachel-jones?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Cory McGarr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 114209.62,
+       "expenditures": 102924.02,
+       "status": "Won",
+       "url": "/az/candidate/cory-mcgarr?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Dana Allmond",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 149094.86,
+       "expenditures": 117846.14,
+       "status": "Lost",
+       "url": "/az/candidate/dana-allmond?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Brian Radford",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 61535.89,
+       "expenditures": 56367.89,
+       "status": "Lost",
+       "url": "/az/candidate/brian-radford?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Dana Allmond",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 149094.86,
+       "expenditures": 117846.14,
+       "status": "Advanced",
+       "url": "/az/candidate/dana-allmond?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Brian Radford",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 61535.89,
+       "expenditures": 56367.89,
+       "status": "Advanced",
+       "url": "/az/candidate/brian-radford?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Rachel Jones",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 80471.38,
+       "expenditures": 79312.32,
+       "status": "Advanced",
+       "url": "/az/candidate/rachel-jones?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Cory McGarr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 114209.62,
+       "expenditures": 102924.02,
+       "status": "Advanced",
+       "url": "/az/candidate/cory-mcgarr?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kirk Fiehler",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27889.21,
+       "expenditures": 27734.32,
+       "status": "Lost",
+       "url": "/az/candidate/kirk-fiehler?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Anna Orth",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24298.68,
+       "expenditures": 24298.68,
+       "status": "Lost",
+       "url": "/az/candidate/anna-orth?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Sherrylyn Young",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20267.86,
+       "expenditures": 20255.86,
+       "status": "Lost",
+       "url": "/az/candidate/sherrylyn-young?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "17"
+  },
+  {
+   "office": "Arizona House of Representatives District 18",
+   "url": "/az/race/arizona-house-of-representatives-district-18-56305",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 254513.0,
+   "totalExpenditures": 221659.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Christopher Mathis",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 122827.67,
+       "expenditures": 103920.13,
+       "status": "Won",
+       "url": "/az/candidate/christopher-mathis?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Nancy Gutierrez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 43480.63,
+       "expenditures": 29241.73,
+       "status": "Won",
+       "url": "/az/candidate/nancy-gutierrez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Linda Evans",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4865.02,
+       "expenditures": 3330.53,
+       "status": "Lost",
+       "url": "/az/candidate/linda-evans?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Christopher Mathis",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 122827.67,
+       "expenditures": 103920.13,
+       "status": "Advanced",
+       "url": "/az/candidate/christopher-mathis?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Nancy Gutierrez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 43480.63,
+       "expenditures": 29241.73,
+       "status": "Advanced",
+       "url": "/az/candidate/nancy-gutierrez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Nathan Davis",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 42349.0,
+       "expenditures": 42349.0,
+       "status": "Lost",
+       "url": "/az/candidate/nathan-davis?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kat Stratford",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 39670.02,
+       "expenditures": 35906.89,
+       "status": "Lost",
+       "url": "/az/candidate/kat-stratford?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Charlie Verdin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1270.78,
+       "expenditures": 1270.78,
+       "status": "Lost",
+       "url": "/az/candidate/charlie-verdin?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Libertarian Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Peter McMillan",
+       "party": "Libertarian",
+       "incumbent": false,
+       "contributions": 50.0,
+       "expenditures": 5639.6,
+       "status": "Withdrew",
+       "url": "/az/candidate/peter-mcmillan?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Linda Evans",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4865.02,
+       "expenditures": 3330.53,
+       "status": "Advanced",
+       "url": "/az/candidate/linda-evans?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "18"
+  },
+  {
+   "office": "Arizona House of Representatives District 19",
+   "url": "/az/race/arizona-house-of-representatives-district-19-56306",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 114050.0,
+   "totalExpenditures": 110736.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Lupe Diaz",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 28103.33,
+       "expenditures": 22946.58,
+       "status": "Won",
+       "url": "/az/candidate/lupe-diaz?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Gail Griffin",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 37100.7,
+       "expenditures": 38943.43,
+       "status": "Won",
+       "url": "/az/candidate/gail-griffin-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Sanda Clark",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48846.46,
+       "expenditures": 48846.46,
+       "status": "Lost",
+       "url": "/az/candidate/sanda-clark?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Sanda Clark",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48846.46,
+       "expenditures": 48846.46,
+       "status": "Advanced",
+       "url": "/az/candidate/sanda-clark?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Lupe Diaz",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 28103.33,
+       "expenditures": 22946.58,
+       "status": "Advanced",
+       "url": "/az/candidate/lupe-diaz?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Gail Griffin",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 37100.7,
+       "expenditures": 38943.43,
+       "status": "Advanced",
+       "url": "/az/candidate/gail-griffin-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "19"
+  },
+  {
+   "office": "Arizona House of Representatives District 2",
+   "url": "/az/race/arizona-house-of-representatives-district-2-56307",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 620274.0,
+   "totalExpenditures": 568117.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Judy Schwiebert",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 319327.74,
+       "expenditures": 295412.75,
+       "status": "Won",
+       "url": "/az/candidate/judy-schwiebert-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Justin Wilmeth",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 154382.73,
+       "expenditures": 126280.52,
+       "status": "Won",
+       "url": "/az/candidate/justin-wilmeth-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Christian Lamar",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 65328.88,
+       "expenditures": 65188.98,
+       "status": "Lost",
+       "url": "/az/candidate/christian-lamar?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Judy Schwiebert",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 319327.74,
+       "expenditures": 295412.75,
+       "status": "Advanced",
+       "url": "/az/candidate/judy-schwiebert-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Justin Wilmeth",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 154382.73,
+       "expenditures": 126280.52,
+       "status": "Advanced",
+       "url": "/az/candidate/justin-wilmeth-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Christian Lamar",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 65328.88,
+       "expenditures": 65188.98,
+       "status": "Advanced",
+       "url": "/az/candidate/christian-lamar?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Neil Desanti",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/az/candidate/neil-desanti-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Pierce Waychoff",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 81235.0,
+       "expenditures": 81235.0,
+       "status": "Lost",
+       "url": "/az/candidate/pierce-waychoff?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "2"
+  },
+  {
+   "office": "Arizona House of Representatives District 20",
+   "url": "/az/race/arizona-house-of-representatives-district-20-56308",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 172884.0,
+   "totalExpenditures": 171607.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Andres Cano",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 112920.8,
+       "expenditures": 91352.06,
+       "status": "Won",
+       "url": "/az/candidate/andres-cano-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Alma C Hernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 59963.44,
+       "expenditures": 80255.14,
+       "status": "Won",
+       "url": "/az/candidate/alma-c-hernandez-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Andres Cano",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 112920.8,
+       "expenditures": 91352.06,
+       "status": "Advanced",
+       "url": "/az/candidate/andres-cano-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Alma C Hernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 59963.44,
+       "expenditures": 80255.14,
+       "status": "Advanced",
+       "url": "/az/candidate/alma-c-hernandez-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "20"
+  },
+  {
+   "office": "Arizona House of Representatives District 21",
+   "url": "/az/race/arizona-house-of-representatives-district-21-56309",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 214572.0,
+   "totalExpenditures": 184389.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Consuelo Hernandez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 84662.88,
+       "expenditures": 69523.21,
+       "status": "Won",
+       "url": "/az/candidate/consuelo-hernandez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Stephanie Stahl Hamilton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 104919.87,
+       "expenditures": 90278.07,
+       "status": "Won",
+       "url": "/az/candidate/stephanie-stahl-hamilton-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Damien Richard Kennedy",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4721.82,
+       "expenditures": 4721.82,
+       "status": "Lost",
+       "url": "/az/candidate/damien-richard-kennedy?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Deborah McEwen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10516.41,
+       "expenditures": 10496.69,
+       "status": "Lost",
+       "url": "/az/candidate/deborah-ann-mcewen-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Consuelo Hernandez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 84662.88,
+       "expenditures": 69523.21,
+       "status": "Advanced",
+       "url": "/az/candidate/consuelo-hernandez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Stephanie Stahl Hamilton",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 104919.87,
+       "expenditures": 90278.07,
+       "status": "Advanced",
+       "url": "/az/candidate/stephanie-stahl-hamilton-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Akanni Oyegbola",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 9751.1,
+       "expenditures": 9369.27,
+       "status": "Lost",
+       "url": "/az/candidate/akanni-oyegbola?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Damien Richard Kennedy",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4721.82,
+       "expenditures": 4721.82,
+       "status": "Advanced",
+       "url": "/az/candidate/damien-richard-kennedy?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Deborah McEwen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 10516.41,
+       "expenditures": 10496.69,
+       "status": "Advanced",
+       "url": "/az/candidate/deborah-ann-mcewen-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "21"
+  },
+  {
+   "office": "Arizona House of Representatives District 22",
+   "url": "/az/race/arizona-house-of-representatives-district-22-56310",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 255265.0,
+   "totalExpenditures": 264598.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Guadalupe Chavira Contreras",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 86150.0,
+       "expenditures": 77223.48,
+       "status": "Won",
+       "url": "/az/candidate/guadalupe-chavira-contreras-mr-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Leezah Sun",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 64807.0,
+       "expenditures": 62241.35,
+       "status": "Won",
+       "url": "/az/candidate/leezah-sun-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jayaker Joseph Nagamalla",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 478.7,
+       "expenditures": 453.7,
+       "status": "Withdrew",
+       "url": "/az/candidate/jayaker-joseph-nagamalla?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jeannette Garcia",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3068.59,
+       "expenditures": 2827.38,
+       "status": "Lost",
+       "url": "/az/candidate/jeannette-garcia?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Guadalupe Chavira Contreras",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 86150.0,
+       "expenditures": 77223.48,
+       "status": "Advanced",
+       "url": "/az/candidate/guadalupe-chavira-contreras-mr-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Leezah Sun",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 64807.0,
+       "expenditures": 62241.35,
+       "status": "Advanced",
+       "url": "/az/candidate/leezah-sun-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Lorenzo Sierra",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 82601.91,
+       "expenditures": 105754.09,
+       "status": "Lost",
+       "url": "/az/candidate/lorenzo-sierra-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Natacha Chavez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18159.11,
+       "expenditures": 16098.17,
+       "status": "Lost",
+       "url": "/az/candidate/natacha-chavez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Jayaker Joseph Nagamalla",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 478.7,
+       "expenditures": 453.7,
+       "status": "Advanced",
+       "url": "/az/candidate/jayaker-joseph-nagamalla?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "22"
+  },
+  {
+   "office": "Arizona House of Representatives District 23",
+   "url": "/az/race/arizona-house-of-representatives-district-23-56311",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 71287.0,
+   "totalExpenditures": 68855.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Mariana Sandoval",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48976.0,
+       "expenditures": 48976.0,
+       "status": "Won",
+       "url": "/az/candidate/mariana-sandoval-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Michele Pena",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9203.5,
+       "expenditures": 2135.35,
+       "status": "Won",
+       "url": "/az/candidate/michele-pena?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jesus Lugo Jr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13107.01,
+       "expenditures": 17743.53,
+       "status": "Lost",
+       "url": "/az/candidate/jesus-lugo-jr?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Jesus Lugo Jr",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 13107.01,
+       "expenditures": 17743.53,
+       "status": "Advanced",
+       "url": "/az/candidate/jesus-lugo-jr?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mariana Sandoval",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48976.0,
+       "expenditures": 48976.0,
+       "status": "Advanced",
+       "url": "/az/candidate/mariana-sandoval-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Michele Pena",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 9203.5,
+       "expenditures": 2135.35,
+       "status": "Advanced",
+       "url": "/az/candidate/michele-pena?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "23"
+  },
+  {
+   "office": "Arizona House of Representatives District 24",
+   "url": "/az/race/arizona-house-of-representatives-district-24-56312",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 168044.0,
+   "totalExpenditures": 143268.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Lydia Hernandez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Won",
+       "url": "/az/candidate/lydia-hernandez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Analise Ortiz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 137398.83,
+       "expenditures": 119193.7,
+       "status": "Won",
+       "url": "/az/candidate/analise-ortiz?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Lydia Hernandez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/az/candidate/lydia-hernandez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Analise Ortiz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 137398.83,
+       "expenditures": 119193.7,
+       "status": "Advanced",
+       "url": "/az/candidate/analise-ortiz?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Anna Lynn Abeytia",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 29809.73,
+       "expenditures": 24073.91,
+       "status": "Lost",
+       "url": "/az/candidate/anna-lynn-abeytia?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Hector Jaramillo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 835.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/az/candidate/hector-jaramillo?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "24"
+  },
+  {
+   "office": "Arizona House of Representatives District 25",
+   "url": "/az/race/arizona-house-of-representatives-district-25-56313",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 239838.0,
+   "totalExpenditures": 232205.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Timothy Dunn",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 96140.0,
+       "expenditures": 94721.33,
+       "status": "Won",
+       "url": "/az/candidate/timothy-dunn-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Michael Carbone",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54562.43,
+       "expenditures": 44938.77,
+       "status": "Won",
+       "url": "/az/candidate/michael-carbone?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Timothy Dunn",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 96140.0,
+       "expenditures": 94721.33,
+       "status": "Advanced",
+       "url": "/az/candidate/timothy-dunn-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Michael Carbone",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 54562.43,
+       "expenditures": 44938.77,
+       "status": "Advanced",
+       "url": "/az/candidate/michael-carbone?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joel John",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 89136.0,
+       "expenditures": 92544.42,
+       "status": "Lost",
+       "url": "/az/candidate/joel-dee-john-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "25"
+  },
+  {
+   "office": "Arizona House of Representatives District 26",
+   "url": "/az/race/arizona-house-of-representatives-district-26-56314",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 201350.0,
+   "totalExpenditures": 183562.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Cesar Aguilar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33323.01,
+       "expenditures": 33315.86,
+       "status": "Won",
+       "url": "/az/candidate/cesar-aguilar?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Flavio Bravo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 71303.5,
+       "expenditures": 60971.46,
+       "status": "Won",
+       "url": "/az/candidate/flavio-bravo?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Frank L Roberts",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/az/candidate/frank-l-roberts?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Cesar Aguilar",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 33323.01,
+       "expenditures": 33315.86,
+       "status": "Advanced",
+       "url": "/az/candidate/cesar-aguilar?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Flavio Bravo",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 71303.5,
+       "expenditures": 60971.46,
+       "status": "Advanced",
+       "url": "/az/candidate/flavio-bravo?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Christian Solorio",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 65586.0,
+       "expenditures": 59389.7,
+       "status": "Lost",
+       "url": "/az/candidate/christian-solorio?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Gil Hacohen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 18982.89,
+       "expenditures": 18982.89,
+       "status": "Lost",
+       "url": "/az/candidate/gil-hacohen?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Frank L Roberts",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/az/candidate/frank-l-roberts?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Caden Darrow",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12154.49,
+       "expenditures": 10901.94,
+       "status": "Withdrew",
+       "url": "/az/candidate/caden-darrow?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "26"
+  },
+  {
+   "office": "Arizona House of Representatives District 27",
+   "url": "/az/race/arizona-house-of-representatives-district-27-56315",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 325939.0,
+   "totalExpenditures": 210190.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Kevin Payne",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 77755.0,
+       "expenditures": 50976.37,
+       "status": "Won",
+       "url": "/az/candidate/kevin-payne-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Benjamin Toma",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 199004.95,
+       "expenditures": 113149.88,
+       "status": "Won",
+       "url": "/az/candidate/benjamin-toma-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Don Kissinger",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 21727.2,
+       "expenditures": 18423.74,
+       "status": "Lost",
+       "url": "/az/candidate/don-kissinger?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Don Kissinger",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 21727.2,
+       "expenditures": 18423.74,
+       "status": "Advanced",
+       "url": "/az/candidate/don-kissinger?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Kevin Payne",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 77755.0,
+       "expenditures": 50976.37,
+       "status": "Advanced",
+       "url": "/az/candidate/kevin-payne-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Benjamin Toma",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 199004.95,
+       "expenditures": 113149.88,
+       "status": "Advanced",
+       "url": "/az/candidate/benjamin-toma-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jay Lloyd Griffin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 120.0,
+       "expenditures": 2227.7,
+       "status": "Lost",
+       "url": "/az/candidate/jay-lloyd-griffin?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Brian Morris",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27332.16,
+       "expenditures": 25411.85,
+       "status": "Lost",
+       "url": "/az/candidate/brian-morris?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "27"
+  },
+  {
+   "office": "Arizona House of Representatives District 28",
+   "url": "/az/race/arizona-house-of-representatives-district-28-56316",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 197563.0,
+   "totalExpenditures": 186700.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Beverly Pingerelli",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 67662.49,
+       "expenditures": 38945.51,
+       "status": "Won",
+       "url": "/az/candidate/beverly-pingerelli-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David A Livingston",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 99527.18,
+       "expenditures": 118218.16,
+       "status": "Won",
+       "url": "/az/candidate/david-alan-livingston-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Stephanie Holbrook",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6151.01,
+       "expenditures": 6151.01,
+       "status": "Lost",
+       "url": "/az/candidate/stephanie-holbrook?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Stephanie Holbrook",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 6151.01,
+       "expenditures": 6151.01,
+       "status": "Advanced",
+       "url": "/az/candidate/stephanie-holbrook?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Beverly Pingerelli",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 67662.49,
+       "expenditures": 38945.51,
+       "status": "Advanced",
+       "url": "/az/candidate/beverly-pingerelli-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David A Livingston",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 99527.18,
+       "expenditures": 118218.16,
+       "status": "Advanced",
+       "url": "/az/candidate/david-alan-livingston-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Susan Black",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 24222.35,
+       "expenditures": 23385.46,
+       "status": "Lost",
+       "url": "/az/candidate/susan-black?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "28"
+  },
+  {
+   "office": "Arizona House of Representatives District 29",
+   "url": "/az/race/arizona-house-of-representatives-district-29-56317",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 202354.0,
+   "totalExpenditures": 144270.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Steve Montenegro",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 97469.0,
+       "expenditures": 58796.65,
+       "status": "Won",
+       "url": "/az/candidate/steve-montenegro-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Austin Smith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 61484.59,
+       "expenditures": 47032.59,
+       "status": "Won",
+       "url": "/az/candidate/austin-smith?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Scott Podeyn",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12356.48,
+       "expenditures": 11023.87,
+       "status": "Lost",
+       "url": "/az/candidate/scott-podeyn?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Scott Podeyn",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12356.48,
+       "expenditures": 11023.87,
+       "status": "Advanced",
+       "url": "/az/candidate/scott-podeyn?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Steve Montenegro",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 97469.0,
+       "expenditures": 58796.65,
+       "status": "Advanced",
+       "url": "/az/candidate/steve-montenegro-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Austin Smith",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 61484.59,
+       "expenditures": 47032.59,
+       "status": "Advanced",
+       "url": "/az/candidate/austin-smith?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Hop Nguyen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5403.0,
+       "expenditures": 5126.9,
+       "status": "Lost",
+       "url": "/az/candidate/hop-h-nguyen-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Trey Terry",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 25641.27,
+       "expenditures": 22289.91,
+       "status": "Lost",
+       "url": "/az/candidate/trey-terry?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "29"
+  },
+  {
+   "office": "Arizona House of Representatives District 3",
+   "url": "/az/race/arizona-house-of-representatives-district-3-56318",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 547853.0,
+   "totalExpenditures": 471160.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Joseph Chaplik",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 270621.28,
+       "expenditures": 209550.69,
+       "status": "Won",
+       "url": "/az/candidate/joseph-chaplik-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Alexander Kolodin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 131760.85,
+       "expenditures": 125875.25,
+       "status": "Won",
+       "url": "/az/candidate/alexander-kolodin-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Joseph Chaplik",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 270621.28,
+       "expenditures": 209550.69,
+       "status": "Advanced",
+       "url": "/az/candidate/joseph-chaplik-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Alexander Kolodin",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 131760.85,
+       "expenditures": 125875.25,
+       "status": "Advanced",
+       "url": "/az/candidate/alexander-kolodin-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Nicole Cantelme",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 117970.9,
+       "expenditures": 109433.94,
+       "status": "Lost",
+       "url": "/az/candidate/nicole-cantelme?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Darin Mitchell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 27500.15,
+       "expenditures": 26300.15,
+       "status": "Lost",
+       "url": "/az/candidate/darin-mitchell?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "3"
+  },
+  {
+   "office": "Arizona House of Representatives District 30",
+   "url": "/az/race/arizona-house-of-representatives-district-30-56319",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 160836.0,
+   "totalExpenditures": 159230.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Leo Biasiucci",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 111448.1,
+       "expenditures": 111051.8,
+       "status": "Won",
+       "url": "/az/candidate/leo-biasiucci-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "John Gillette",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12792.21,
+       "expenditures": 11662.86,
+       "status": "Won",
+       "url": "/az/candidate/john-gillette?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Leo Biasiucci",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 111448.1,
+       "expenditures": 111051.8,
+       "status": "Advanced",
+       "url": "/az/candidate/leo-biasiucci-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "John Gillette",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12792.21,
+       "expenditures": 11662.86,
+       "status": "Advanced",
+       "url": "/az/candidate/john-gillette?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Donna McCoy",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 28282.22,
+       "expenditures": 28282.22,
+       "status": "Lost",
+       "url": "/az/candidate/donna-mccoy?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Nohl B Rosen",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 1989.0,
+       "expenditures": 1908.82,
+       "status": "Lost",
+       "url": "/az/candidate/nohl-b-rosen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Marianne Salem",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 6324.61,
+       "expenditures": 6324.61,
+       "status": "Lost",
+       "url": "/az/candidate/marianne-salem?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "30"
+  },
+  {
+   "office": "Arizona House of Representatives District 4",
+   "url": "/az/race/arizona-house-of-representatives-district-4-56320",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 1489417.0,
+   "totalExpenditures": 1444782.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Laura Terech",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 359636.63,
+       "expenditures": 337420.36,
+       "status": "Won",
+       "url": "/az/candidate/laura-terech?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Matthew Gress",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 574899.39,
+       "expenditures": 564490.59,
+       "status": "Won",
+       "url": "/az/candidate/matthew-gress?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Maria Syms",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 170777.05,
+       "expenditures": 160124.32,
+       "status": "Lost",
+       "url": "/az/candidate/maria-syms?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Laura Terech",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 359636.63,
+       "expenditures": 337420.36,
+       "status": "Advanced",
+       "url": "/az/candidate/laura-terech?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Matthew Gress",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 574899.39,
+       "expenditures": 564490.59,
+       "status": "Advanced",
+       "url": "/az/candidate/matthew-gress?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Maria Syms",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 170777.05,
+       "expenditures": 160124.32,
+       "status": "Advanced",
+       "url": "/az/candidate/maria-syms?cycle=2022-election-cycle"
+      },
+      {
+       "name": "John Arnold",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 190390.0,
+       "expenditures": 190390.0,
+       "status": "Lost",
+       "url": "/az/candidate/john-arnold?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kenneth Bowers Jr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 348.0,
+       "status": "Lost",
+       "url": "/az/candidate/kenneth-robinson-bowers-jr-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Vera Gebran",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 158561.45,
+       "expenditures": 157356.26,
+       "status": "Lost",
+       "url": "/az/candidate/vera-gebran?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jana Jackson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35152.39,
+       "expenditures": 34652.39,
+       "status": "Lost",
+       "url": "/az/candidate/jana-jackson-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "4"
+  },
+  {
+   "office": "Arizona House of Representatives District 5",
+   "url": "/az/race/arizona-house-of-representatives-district-5-56321",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 655701.0,
+   "totalExpenditures": 609284.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jennifer Longdon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 160213.07,
+       "expenditures": 136425.22,
+       "status": "Won",
+       "url": "/az/candidate/jennifer-longdon-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Amish Shah",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 182233.22,
+       "expenditures": 179191.33,
+       "status": "Won",
+       "url": "/az/candidate/amish-shah-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jennifer Treadwell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38640.09,
+       "expenditures": 38371.02,
+       "status": "Lost",
+       "url": "/az/candidate/jennifer-treadwell?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Jennifer Longdon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 160213.07,
+       "expenditures": 136425.22,
+       "status": "Advanced",
+       "url": "/az/candidate/jennifer-longdon-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Amish Shah",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 182233.22,
+       "expenditures": 179191.33,
+       "status": "Advanced",
+       "url": "/az/candidate/amish-shah-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Sarah Liguori",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 76029.0,
+       "expenditures": 63834.19,
+       "status": "Lost",
+       "url": "/az/candidate/sarah-liguori?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Aaron Marquez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 88653.84,
+       "expenditures": 88123.43,
+       "status": "Lost",
+       "url": "/az/candidate/aaron-marquez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Brianna Westbrook",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 81649.22,
+       "expenditures": 75057.0,
+       "status": "Lost",
+       "url": "/az/candidate/brianna-westbrook?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Jennifer Treadwell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 38640.09,
+       "expenditures": 38371.02,
+       "status": "Advanced",
+       "url": "/az/candidate/jennifer-treadwell?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Donna McCoy",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 28282.22,
+       "expenditures": 28282.22,
+       "status": "Withdrew",
+       "url": "/az/candidate/donna-mccoy?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "5"
+  },
+  {
+   "office": "Arizona House of Representatives District 6",
+   "url": "/az/race/arizona-house-of-representatives-district-6-56322",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 12031.0,
+   "totalExpenditures": 7270.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Myron Tsosie",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Won",
+       "url": "/az/candidate/myron-tsosie-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mae Peshlakai",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7025.0,
+       "expenditures": 2289.71,
+       "status": "Won",
+       "url": "/az/candidate/mae-peshlakai?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Myron Tsosie",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Advanced",
+       "url": "/az/candidate/myron-tsosie-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mae Peshlakai",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7025.0,
+       "expenditures": 2289.71,
+       "status": "Advanced",
+       "url": "/az/candidate/mae-peshlakai?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Deydrek Scott",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 1073.78,
+       "expenditures": 1047.86,
+       "status": "Lost",
+       "url": "/az/candidate/deydrek-scott?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Ryan Cadigan",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3932.0,
+       "expenditures": 3932.0,
+       "status": "Withdrew",
+       "url": "/az/candidate/ryan-cadigan?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "6"
+  },
+  {
+   "office": "Arizona House of Representatives District 7",
+   "url": "/az/race/arizona-house-of-representatives-district-7-56323",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 200235.0,
+   "totalExpenditures": 152060.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "David Cook",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 109650.95,
+       "expenditures": 61667.53,
+       "status": "Won",
+       "url": "/az/candidate/david-cook-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David Marshall",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 51149.9,
+       "expenditures": 38440.16,
+       "status": "Won",
+       "url": "/az/candidate/david-marshall?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "David Cook",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 109650.95,
+       "expenditures": 61667.53,
+       "status": "Advanced",
+       "url": "/az/candidate/david-cook-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David Marshall",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 51149.9,
+       "expenditures": 38440.16,
+       "status": "Advanced",
+       "url": "/az/candidate/david-marshall?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Brenda Barton",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 7114.5,
+       "expenditures": 2920.41,
+       "status": "Withdrew",
+       "url": "/az/candidate/brenda-barton-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "John Fillmore",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 32320.0,
+       "expenditures": 49031.6,
+       "status": "Lost",
+       "url": "/az/candidate/john-fillmore-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "7"
+  },
+  {
+   "office": "Arizona House of Representatives District 8",
+   "url": "/az/race/arizona-house-of-representatives-district-8-56324",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 105644.0,
+   "totalExpenditures": 95982.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Melody Hernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 21408.6,
+       "expenditures": 12998.88,
+       "status": "Won",
+       "url": "/az/candidate/melody-savannah-hernandez-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Athena Salman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 48691.43,
+       "expenditures": 48691.43,
+       "status": "Won",
+       "url": "/az/candidate/athena-salman-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Caden Darrow",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12154.49,
+       "expenditures": 10901.94,
+       "status": "Lost",
+       "url": "/az/candidate/caden-darrow?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bill \"Wjl\" Loughrige",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23389.62,
+       "expenditures": 23389.62,
+       "status": "Lost",
+       "url": "/az/candidate/bill-wjl-loughrige-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Melody Hernandez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 21408.6,
+       "expenditures": 12998.88,
+       "status": "Advanced",
+       "url": "/az/candidate/melody-savannah-hernandez-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Athena Salman",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 48691.43,
+       "expenditures": 48691.43,
+       "status": "Advanced",
+       "url": "/az/candidate/athena-salman-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Caden Darrow",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 12154.49,
+       "expenditures": 10901.94,
+       "status": "Advanced",
+       "url": "/az/candidate/caden-darrow?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bill \"Wjl\" Loughrige",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 23389.62,
+       "expenditures": 23389.62,
+       "status": "Advanced",
+       "url": "/az/candidate/bill-wjl-loughrige-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "8"
+  },
+  {
+   "office": "Arizona House of Representatives District 9",
+   "url": "/az/race/arizona-house-of-representatives-district-9-56325",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 596863.0,
+   "totalExpenditures": 452568.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Lorena Austin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 290612.62,
+       "expenditures": 226595.18,
+       "status": "Won",
+       "url": "/az/candidate/lorena-austin?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Seth Blattman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 211530.89,
+       "expenditures": 171990.95,
+       "status": "Won",
+       "url": "/az/candidate/seth-blattman-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mary Ann Mendoza",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 48259.15,
+       "expenditures": 31224.68,
+       "status": "Lost",
+       "url": "/az/candidate/mary-ann-mendoza?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kathy Pearce",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46460.0,
+       "expenditures": 22757.44,
+       "status": "Lost",
+       "url": "/az/candidate/kathy-pearce?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Lorena Austin",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 290612.62,
+       "expenditures": 226595.18,
+       "status": "Advanced",
+       "url": "/az/candidate/lorena-austin?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Seth Blattman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 211530.89,
+       "expenditures": 171990.95,
+       "status": "Advanced",
+       "url": "/az/candidate/seth-blattman-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Mary Ann Mendoza",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 48259.15,
+       "expenditures": 31224.68,
+       "status": "Advanced",
+       "url": "/az/candidate/mary-ann-mendoza?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kathy Pearce",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 46460.0,
+       "expenditures": 22757.44,
+       "status": "Advanced",
+       "url": "/az/candidate/kathy-pearce?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "house",
+   "district": "9"
+  },
+  {
+   "office": "Arizona State Senate District 1",
+   "url": "/az/race/arizona-state-senate-district-1-56266",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 613437.0,
+   "totalExpenditures": 561638.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Ken Bennett",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 135336.45,
+       "expenditures": 111419.37,
+       "status": "Won",
+       "url": "/az/candidate/ken-bennett?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mike Fogel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 50333.73,
+       "expenditures": 50245.38,
+       "status": "Lost",
+       "url": "/az/candidate/mike-fogel?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Mike Fogel",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 50333.73,
+       "expenditures": 50245.38,
+       "status": "Advanced",
+       "url": "/az/candidate/mike-fogel?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Ken Bennett",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 135336.45,
+       "expenditures": 111419.37,
+       "status": "Advanced",
+       "url": "/az/candidate/ken-bennett?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Noel Campbell",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 115663.87,
+       "expenditures": 115663.87,
+       "status": "Withdrew",
+       "url": "/az/candidate/noel-campbell-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Anne Marie Ward",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 35834.84,
+       "expenditures": 33748.01,
+       "status": "Withdrew",
+       "url": "/az/candidate/anne-marie-ward?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Steven Zipperman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 276267.9,
+       "expenditures": 250561.01,
+       "status": "Lost",
+       "url": "/az/candidate/steven-zipperman?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "1"
+  },
+  {
+   "office": "Arizona State Senate District 10",
+   "url": "/az/race/arizona-state-senate-district-10-56267",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 523711.0,
+   "totalExpenditures": 490322.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "David Farnsworth",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 83457.61,
+       "expenditures": 78766.55,
+       "status": "Won",
+       "url": "/az/candidate/david-christian-farnsworth-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Nick Fierro",
+       "party": "Independent",
+       "incumbent": false,
+       "contributions": 16448.72,
+       "expenditures": 3171.23,
+       "status": "Lost",
+       "url": "/az/candidate/nick-fierro-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "David Farnsworth",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 83457.61,
+       "expenditures": 78766.55,
+       "status": "Advanced",
+       "url": "/az/candidate/david-christian-farnsworth-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Russell Bowers",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 423804.59,
+       "expenditures": 408384.0,
+       "status": "Lost",
+       "url": "/az/candidate/russell-w-rusty-bowers-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "10"
+  },
+  {
+   "office": "Arizona State Senate District 11",
+   "url": "/az/race/arizona-state-senate-district-11-56268",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 149420.0,
+   "totalExpenditures": 125280.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Catherine H Miranda",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 76180.0,
+       "expenditures": 53455.47,
+       "status": "Won",
+       "url": "/az/candidate/catherine-miranda-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Maryn M Brannies",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45593.87,
+       "expenditures": 44439.63,
+       "status": "Lost",
+       "url": "/az/candidate/maryn-m-brannies?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Catherine H Miranda",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 76180.0,
+       "expenditures": 53455.47,
+       "status": "Advanced",
+       "url": "/az/candidate/catherine-miranda-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Junelle Cavero",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/az/candidate/junelle-cavero?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Janelle Wood",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 27646.33,
+       "expenditures": 27384.89,
+       "status": "Lost",
+       "url": "/az/candidate/janelle-wood?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Maryn M Brannies",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 45593.87,
+       "expenditures": 44439.63,
+       "status": "Advanced",
+       "url": "/az/candidate/maryn-m-brannies?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "11"
+  },
+  {
+   "office": "Arizona State Senate District 12",
+   "url": "/az/race/arizona-state-senate-district-12-56269",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 275819.0,
+   "totalExpenditures": 270860.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Denise Mitzi Epstein",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 195386.63,
+       "expenditures": 188146.15,
+       "status": "Won",
+       "url": "/az/candidate/denise-mitzi-epstein-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David Richardson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 60041.92,
+       "expenditures": 54023.33,
+       "status": "Lost",
+       "url": "/az/candidate/david-richardson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Denise Mitzi Epstein",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 195386.63,
+       "expenditures": 188146.15,
+       "status": "Advanced",
+       "url": "/az/candidate/denise-mitzi-epstein-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "David Richardson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 60041.92,
+       "expenditures": 54023.33,
+       "status": "Advanced",
+       "url": "/az/candidate/david-richardson?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Suzanne Sharer",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 20390.0,
+       "expenditures": 28690.62,
+       "status": "Lost",
+       "url": "/az/candidate/suzanne-sharer-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "12"
+  },
+  {
+   "office": "Arizona State Senate District 13",
+   "url": "/az/race/arizona-state-senate-district-13-56270",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 541538.0,
+   "totalExpenditures": 494047.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "JD Mesnard",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 259119.08,
+       "expenditures": 251655.55,
+       "status": "Won",
+       "url": "/az/candidate/jd-mesnard-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Cynthia Hans",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 269677.15,
+       "expenditures": 233400.6,
+       "status": "Lost",
+       "url": "/az/candidate/cynthia-hans?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Cynthia Hans",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 269677.15,
+       "expenditures": 233400.6,
+       "status": "Advanced",
+       "url": "/az/candidate/cynthia-hans?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Michael Morris",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 12742.17,
+       "expenditures": 8990.66,
+       "status": "Lost",
+       "url": "/az/candidate/michael-morris?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "JD Mesnard",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 259119.08,
+       "expenditures": 251655.55,
+       "status": "Advanced",
+       "url": "/az/candidate/jd-mesnard-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "13"
+  },
+  {
+   "office": "Arizona State Senate District 14",
+   "url": "/az/race/arizona-state-senate-district-14-56271",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 35825.0,
+   "totalExpenditures": 34534.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Warren Petersen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 35825.0,
+       "expenditures": 33902.99,
+       "status": "Won",
+       "url": "/az/candidate/warren-petersen-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kristin Clark",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 631.45,
+       "status": "Lost",
+       "url": "/az/candidate/kristin-clark?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Warren Petersen",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 35825.0,
+       "expenditures": 33902.99,
+       "status": "Advanced",
+       "url": "/az/candidate/warren-petersen-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "14"
+  },
+  {
+   "office": "Arizona State Senate District 15",
+   "url": "/az/race/arizona-state-senate-district-15-56272",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 71668.0,
+   "totalExpenditures": 40537.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Jake Hoffman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 64466.0,
+       "expenditures": 34639.88,
+       "status": "Won",
+       "url": "/az/candidate/jake-hoffman-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Alan Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7201.85,
+       "expenditures": 5896.69,
+       "status": "Lost",
+       "url": "/az/candidate/alan-smith?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Alan Smith",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 7201.85,
+       "expenditures": 5896.69,
+       "status": "Advanced",
+       "url": "/az/candidate/alan-smith?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Jake Hoffman",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 64466.0,
+       "expenditures": 34639.88,
+       "status": "Advanced",
+       "url": "/az/candidate/jake-hoffman-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "15"
+  },
+  {
+   "office": "Arizona State Senate District 16",
+   "url": "/az/race/arizona-state-senate-district-16-56273",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 276015.0,
+   "totalExpenditures": 204086.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Thomas J Shope Jr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 227405.22,
+       "expenditures": 200026.33,
+       "status": "Won",
+       "url": "/az/candidate/thomas-shope-jr-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Taylor Kerby",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48610.11,
+       "expenditures": 4059.47,
+       "status": "Lost",
+       "url": "/az/candidate/taylor-kerby?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Taylor Kerby",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48610.11,
+       "expenditures": 4059.47,
+       "status": "Advanced",
+       "url": "/az/candidate/taylor-kerby?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Thomas J Shope Jr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 227405.22,
+       "expenditures": 200026.33,
+       "status": "Advanced",
+       "url": "/az/candidate/thomas-shope-jr-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "16"
+  },
+  {
+   "office": "Arizona State Senate District 17",
+   "url": "/az/race/arizona-state-senate-district-17-56274",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 364723.0,
+   "totalExpenditures": 338986.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Justine L Wadsack",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 115689.34,
+       "expenditures": 84348.97,
+       "status": "Won",
+       "url": "/az/candidate/justine-l-wadsack-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Mike Nickerson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48839.1,
+       "expenditures": 48539.86,
+       "status": "Lost",
+       "url": "/az/candidate/mike-nickerson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Mike Nickerson",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 48839.1,
+       "expenditures": 48539.86,
+       "status": "Advanced",
+       "url": "/az/candidate/mike-nickerson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Justine L Wadsack",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 115689.34,
+       "expenditures": 84348.97,
+       "status": "Advanced",
+       "url": "/az/candidate/justine-l-wadsack-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Vince Leach",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 172022.65,
+       "expenditures": 177996.46,
+       "status": "Lost",
+       "url": "/az/candidate/venden-vince-w-leach-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Robert Barr",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 28172.0,
+       "expenditures": 28100.35,
+       "status": "Lost",
+       "url": "/az/candidate/robert-barr?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "17"
+  },
+  {
+   "office": "Arizona State Senate District 18",
+   "url": "/az/race/arizona-state-senate-district-18-56275",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 501923.0,
+   "totalExpenditures": 482789.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Priya Sundareshan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 151502.66,
+       "expenditures": 138078.36,
+       "status": "Won",
+       "url": "/az/candidate/priya-sundareshan?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Stan Caine",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 47194.58,
+       "expenditures": 45846.98,
+       "status": "Lost",
+       "url": "/az/candidate/stan-caine?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Priya Sundareshan",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 151502.66,
+       "expenditures": 138078.36,
+       "status": "Advanced",
+       "url": "/az/candidate/priya-sundareshan?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Morgan Abraham",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 303226.0,
+       "expenditures": 298863.4,
+       "status": "Lost",
+       "url": "/az/candidate/morgan-abraham?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Stan Caine",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 47194.58,
+       "expenditures": 45846.98,
+       "status": "Advanced",
+       "url": "/az/candidate/stan-caine?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "18"
+  },
+  {
+   "office": "Arizona State Senate District 19",
+   "url": "/az/race/arizona-state-senate-district-19-56276",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 149551.0,
+   "totalExpenditures": 44678.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "David Gowan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 149550.84,
+       "expenditures": 44677.85,
+       "status": "Won",
+       "url": "/az/candidate/david-gowan-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "David Gowan",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 149550.84,
+       "expenditures": 44677.85,
+       "status": "Advanced",
+       "url": "/az/candidate/david-gowan-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "19"
+  },
+  {
+   "office": "Arizona State Senate District 2",
+   "url": "/az/race/arizona-state-senate-district-2-56277",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 538962.0,
+   "totalExpenditures": 458361.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Steve Kaiser",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 225922.24,
+       "expenditures": 173573.09,
+       "status": "Won",
+       "url": "/az/candidate/steve-kaiser-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jeanne Casteen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 269032.43,
+       "expenditures": 242738.51,
+       "status": "Lost",
+       "url": "/az/candidate/jeanne-casteen?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Jeanne Casteen",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 269032.43,
+       "expenditures": 242738.51,
+       "status": "Advanced",
+       "url": "/az/candidate/jeanne-casteen?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rosanna Gabaldon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 44006.9,
+       "expenditures": 42049.51,
+       "status": "Withdrew",
+       "url": "/az/candidate/rosanna-gabaldon-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Steve Kaiser",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 225922.24,
+       "expenditures": 173573.09,
+       "status": "Advanced",
+       "url": "/az/candidate/steve-kaiser-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "2"
+  },
+  {
+   "office": "Arizona State Senate District 20",
+   "url": "/az/race/arizona-state-senate-district-20-56278",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 170718.0,
+   "totalExpenditures": 165507.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Sally Ann Gonzales",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 20478.45,
+       "expenditures": 9654.93,
+       "status": "Won",
+       "url": "/az/candidate/sally-ann-gonzales-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Sally Ann Gonzales",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 20478.45,
+       "expenditures": 9654.93,
+       "status": "Advanced",
+       "url": "/az/candidate/sally-ann-gonzales-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Anthony T Kern",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 150240.0,
+       "expenditures": 155852.52,
+       "status": "Withdrew",
+       "url": "/az/candidate/anthony-t-kern-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "20"
+  },
+  {
+   "office": "Arizona State Senate District 21",
+   "url": "/az/race/arizona-state-senate-district-21-56279",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 49568.0,
+   "totalExpenditures": 46468.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Rosanna Gabaldon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 44006.9,
+       "expenditures": 42049.51,
+       "status": "Won",
+       "url": "/az/candidate/rosanna-gabaldon-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jim Cleveland",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4961.24,
+       "expenditures": 4293.89,
+       "status": "Lost",
+       "url": "/az/candidate/jim-cleveland?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Rosanna Gabaldon",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 44006.9,
+       "expenditures": 42049.51,
+       "status": "Advanced",
+       "url": "/az/candidate/rosanna-gabaldon-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Jim Cleveland",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4961.24,
+       "expenditures": 4293.89,
+       "status": "Advanced",
+       "url": "/az/candidate/jim-cleveland?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Dan Dellinges",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 600.0,
+       "expenditures": 124.62,
+       "status": "Withdrew",
+       "url": "/az/candidate/dan-dellinges?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "21"
+  },
+  {
+   "office": "Arizona State Senate District 22",
+   "url": "/az/race/arizona-state-senate-district-22-56280",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 252303.0,
+   "totalExpenditures": 284269.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Eva Diaz",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 120172.93,
+       "expenditures": 118022.01,
+       "status": "Won",
+       "url": "/az/candidate/eva-diaz?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Diego Espinoza",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 64825.0,
+       "expenditures": 82865.15,
+       "status": "Withdrew",
+       "url": "/az/candidate/jose-diego-espinoza-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Steve Chapman",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16985.0,
+       "expenditures": 16916.29,
+       "status": "Lost",
+       "url": "/az/candidate/steve-chapman?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Bryan Kilgore",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/az/candidate/bryan-kilgore?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Steven Robinson",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 17929.4,
+       "expenditures": 10832.68,
+       "status": "Lost",
+       "url": "/az/candidate/steven-robinson?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Diego Espinoza",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 64825.0,
+       "expenditures": 82865.15,
+       "status": "Advanced",
+       "url": "/az/candidate/jose-diego-espinoza-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Richard Andrade",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 32390.43,
+       "expenditures": 55633.28,
+       "status": "Lost",
+       "url": "/az/candidate/richard-andrade-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "22"
+  },
+  {
+   "office": "Arizona State Senate District 23",
+   "url": "/az/race/arizona-state-senate-district-23-56281",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 184553.0,
+   "totalExpenditures": 175952.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Brian Fernandez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 112925.24,
+       "expenditures": 104446.75,
+       "status": "Won",
+       "url": "/az/candidate/brian-fernandez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Gary Garcia Snyder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 71627.96,
+       "expenditures": 71504.84,
+       "status": "Lost",
+       "url": "/az/candidate/gary-garcia-snyder?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Brian Fernandez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 112925.24,
+       "expenditures": 104446.75,
+       "status": "Advanced",
+       "url": "/az/candidate/brian-fernandez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Gary Garcia Snyder",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 71627.96,
+       "expenditures": 71504.84,
+       "status": "Advanced",
+       "url": "/az/candidate/gary-garcia-snyder?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "23"
+  },
+  {
+   "office": "Arizona State Senate District 24",
+   "url": "/az/race/arizona-state-senate-district-24-56282",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 119875.0,
+   "totalExpenditures": 67120.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Anna Hernandez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 67518.03,
+       "expenditures": 45743.49,
+       "status": "Won",
+       "url": "/az/candidate/anna-hernandez?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Anna Hernandez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 67518.03,
+       "expenditures": 45743.49,
+       "status": "Advanced",
+       "url": "/az/candidate/anna-hernandez?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Cesar Chavez",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 52357.03,
+       "expenditures": 21376.82,
+       "status": "Lost",
+       "url": "/az/candidate/cesar-chavez-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "24"
+  },
+  {
+   "office": "Arizona State Senate District 25",
+   "url": "/az/race/arizona-state-senate-district-25-56283",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 77017.0,
+   "totalExpenditures": 29955.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Sine Kerr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 77017.0,
+       "expenditures": 29955.0,
+       "status": "Won",
+       "url": "/az/candidate/sine-kerr-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Nick Thomas",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Withdrew",
+       "url": "/az/candidate/nick-thomas?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Sine Kerr",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 77017.0,
+       "expenditures": 29955.0,
+       "status": "Advanced",
+       "url": "/az/candidate/sine-kerr-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "25"
+  },
+  {
+   "office": "Arizona State Senate District 26",
+   "url": "/az/race/arizona-state-senate-district-26-56284",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 70723.0,
+   "totalExpenditures": 46473.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Raquel Teran",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 70722.71,
+       "expenditures": 46472.53,
+       "status": "Won",
+       "url": "/az/candidate/raquel-teran-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Raquel Teran",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 70722.71,
+       "expenditures": 46472.53,
+       "status": "Advanced",
+       "url": "/az/candidate/raquel-teran-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "26"
+  },
+  {
+   "office": "Arizona State Senate District 27",
+   "url": "/az/race/arizona-state-senate-district-27-56285",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 173863.0,
+   "totalExpenditures": 166226.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Anthony T Kern",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 150240.0,
+       "expenditures": 155852.52,
+       "status": "Won",
+       "url": "/az/candidate/anthony-t-kern-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Brittani Barraza",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17662.7,
+       "expenditures": 4413.67,
+       "status": "Lost",
+       "url": "/az/candidate/brittani-barraza?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Brittani Barraza",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 17662.7,
+       "expenditures": 4413.67,
+       "status": "Advanced",
+       "url": "/az/candidate/brittani-barraza?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Anthony T Kern",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 150240.0,
+       "expenditures": 155852.52,
+       "status": "Advanced",
+       "url": "/az/candidate/anthony-t-kern-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jamie Kelly",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 5960.05,
+       "expenditures": 5960.05,
+       "status": "Lost",
+       "url": "/az/candidate/jamie-kelly?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "27"
+  },
+  {
+   "office": "Arizona State Senate District 28",
+   "url": "/az/race/arizona-state-senate-district-28-56286",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 101023.0,
+   "totalExpenditures": 85694.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Frank Carroll",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 67950.0,
+       "expenditures": 50687.57,
+       "status": "Won",
+       "url": "/az/candidate/frank-carroll-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David Sandoval",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 14140.0,
+       "expenditures": 13164.36,
+       "status": "Lost",
+       "url": "/az/candidate/david-sandoval?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "David Sandoval",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 14140.0,
+       "expenditures": 13164.36,
+       "status": "Advanced",
+       "url": "/az/candidate/david-sandoval?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Frank Carroll",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 67950.0,
+       "expenditures": 50687.57,
+       "status": "Advanced",
+       "url": "/az/candidate/frank-carroll-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Clair Van Steenwyk",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 18933.0,
+       "expenditures": 21841.98,
+       "status": "Lost",
+       "url": "/az/candidate/clair-van-steenwyk?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "28"
+  },
+  {
+   "office": "Arizona State Senate District 29",
+   "url": "/az/race/arizona-state-senate-district-29-56287",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 292357.0,
+   "totalExpenditures": 213079.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Janae Shamp",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 164443.31,
+       "expenditures": 79462.35,
+       "status": "Won",
+       "url": "/az/candidate/janae-shamp?cycle=2022-election-cycle"
+      },
+      {
+       "name": "David Raymer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2223.0,
+       "expenditures": 2223.0,
+       "status": "Lost",
+       "url": "/az/candidate/david-raymer?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "David Raymer",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2223.0,
+       "expenditures": 2223.0,
+       "status": "Advanced",
+       "url": "/az/candidate/david-raymer?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Janae Shamp",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 164443.31,
+       "expenditures": 79462.35,
+       "status": "Advanced",
+       "url": "/az/candidate/janae-shamp?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Ryan Eldridge",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 4600.19,
+       "expenditures": 4550.19,
+       "status": "Lost",
+       "url": "/az/candidate/ryan-eldridge?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Joanne W Osborne",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 121090.58,
+       "expenditures": 126843.48,
+       "status": "Lost",
+       "url": "/az/candidate/joanne-w-osborne-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "29"
+  },
+  {
+   "office": "Arizona State Senate District 3",
+   "url": "/az/race/arizona-state-senate-district-3-56288",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 365400.0,
+   "totalExpenditures": 354417.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "John Kavanagh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 119762.8,
+       "expenditures": 109451.65,
+       "status": "Won",
+       "url": "/az/candidate/john-kavanagh-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Thomas Dugger",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16790.51,
+       "expenditures": 16881.15,
+       "status": "Lost",
+       "url": "/az/candidate/thomas-dugger?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Thomas Dugger",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 16790.51,
+       "expenditures": 16881.15,
+       "status": "Advanced",
+       "url": "/az/candidate/thomas-dugger?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "John Kavanagh",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 119762.8,
+       "expenditures": 109451.65,
+       "status": "Advanced",
+       "url": "/az/candidate/john-kavanagh-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jan Dubauskas",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 228846.8,
+       "expenditures": 228084.24,
+       "status": "Lost",
+       "url": "/az/candidate/jan-dubauskas?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "3"
+  },
+  {
+   "office": "Arizona State Senate District 30",
+   "url": "/az/race/arizona-state-senate-district-30-56289",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 42405.0,
+   "totalExpenditures": 60075.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Sonny Borrelli",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 42405.0,
+       "expenditures": 60074.74,
+       "status": "Won",
+       "url": "/az/candidate/sonny-borrelli-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Sonny Borrelli",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 42405.0,
+       "expenditures": 60074.74,
+       "status": "Advanced",
+       "url": "/az/candidate/sonny-borrelli-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "30"
+  },
+  {
+   "office": "Arizona State Senate District 4",
+   "url": "/az/race/arizona-state-senate-district-4-56290",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 852180.0,
+   "totalExpenditures": 856742.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Christine Marsh",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 435317.6,
+       "expenditures": 433986.18,
+       "status": "Won",
+       "url": "/az/candidate/christine-porter-marsh-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Nancy K Barto",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 416862.65,
+       "expenditures": 422755.97,
+       "status": "Lost",
+       "url": "/az/candidate/nancy-kay-barto-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Christine Marsh",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 435317.6,
+       "expenditures": 433986.18,
+       "status": "Advanced",
+       "url": "/az/candidate/christine-porter-marsh-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Nancy K Barto",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 416862.65,
+       "expenditures": 422755.97,
+       "status": "Advanced",
+       "url": "/az/candidate/nancy-kay-barto-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "4"
+  },
+  {
+   "office": "Arizona State Senate District 5",
+   "url": "/az/race/arizona-state-senate-district-5-56291",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 225599.0,
+   "totalExpenditures": 216439.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Lela Alston",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 64260.0,
+       "expenditures": 55315.03,
+       "status": "Won",
+       "url": "/az/candidate/lela-alston-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jeff Silvey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3409.24,
+       "expenditures": 3409.24,
+       "status": "Lost",
+       "url": "/az/candidate/jeff-silvey?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Lela Alston",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 64260.0,
+       "expenditures": 55315.03,
+       "status": "Advanced",
+       "url": "/az/candidate/lela-alston-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Jack Drumm",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 2660.57,
+       "expenditures": 2660.57,
+       "status": "Withdrew",
+       "url": "/az/candidate/jack-drumm?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Al Jones",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 141247.72,
+       "expenditures": 141247.72,
+       "status": "Lost",
+       "url": "/az/candidate/al-jones?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Sarah Tyree",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 14021.0,
+       "expenditures": 13806.1,
+       "status": "Lost",
+       "url": "/az/candidate/sarah-tyree-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Jeff Silvey",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3409.24,
+       "expenditures": 3409.24,
+       "status": "Advanced",
+       "url": "/az/candidate/jeff-silvey?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "5"
+  },
+  {
+   "office": "Arizona State Senate District 6",
+   "url": "/az/race/arizona-state-senate-district-6-56292",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 3364183.0,
+   "totalExpenditures": 3274207.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Theresa Hatathlie",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 10102.36,
+       "expenditures": 5269.01,
+       "status": "Won",
+       "url": "/az/candidate/theresa-hatathlie?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Rich King",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 0.0,
+       "expenditures": 0.0,
+       "status": "Lost",
+       "url": "/az/candidate/rich-king?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Theresa Hatathlie",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 10102.36,
+       "expenditures": 5269.01,
+       "status": "Advanced",
+       "url": "/az/candidate/theresa-hatathlie?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Wendy Rogers",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3354080.16,
+       "expenditures": 3268938.27,
+       "status": "Withdrew",
+       "url": "/az/candidate/wendy-rogers-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "6"
+  },
+  {
+   "office": "Arizona State Senate District 7",
+   "url": "/az/race/arizona-state-senate-district-7-56293",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 3474843.0,
+   "totalExpenditures": 3390588.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Wendy Rogers",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3354080.16,
+       "expenditures": 3268938.27,
+       "status": "Won",
+       "url": "/az/candidate/wendy-rogers-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kyle Nitschke",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 49179.51,
+       "expenditures": 49179.51,
+       "status": "Lost",
+       "url": "/az/candidate/kyle-nitschke?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Kyle Nitschke",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 49179.51,
+       "expenditures": 49179.51,
+       "status": "Advanced",
+       "url": "/az/candidate/kyle-nitschke?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Wendy Rogers",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 3354080.16,
+       "expenditures": 3268938.27,
+       "status": "Advanced",
+       "url": "/az/candidate/wendy-rogers-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Kelly Townsend",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 71583.28,
+       "expenditures": 72469.77,
+       "status": "Lost",
+       "url": "/az/candidate/kelly-townsend-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "7"
+  },
+  {
+   "office": "Arizona State Senate District 8",
+   "url": "/az/race/arizona-state-senate-district-8-56294",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 139311.0,
+   "totalExpenditures": 132689.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Juan Mendez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 47827.04,
+       "expenditures": 47827.04,
+       "status": "Won",
+       "url": "/az/candidate/juan-jose-mendez-can?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Roxana Holzapfel",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 88002.45,
+       "expenditures": 83613.51,
+       "status": "Lost",
+       "url": "/az/candidate/roxana-holzapfel?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Juan Mendez",
+       "party": "Democratic",
+       "incumbent": true,
+       "contributions": 47827.04,
+       "expenditures": 47827.04,
+       "status": "Advanced",
+       "url": "/az/candidate/juan-jose-mendez-can?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Roxana Holzapfel",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 88002.45,
+       "expenditures": 83613.51,
+       "status": "Advanced",
+       "url": "/az/candidate/roxana-holzapfel?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Todd Howard",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 3481.27,
+       "expenditures": 1248.8,
+       "status": "Withdrew",
+       "url": "/az/candidate/todd-howard?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "8"
+  },
+  {
+   "office": "Arizona State Senate District 9",
+   "url": "/az/race/arizona-state-senate-district-9-56295",
+   "dataThrough": "12/31/2022",
+   "stage": "Results Final",
+   "totalContributions": 586212.0,
+   "totalExpenditures": 478923.0,
+   "elections": [
+    {
+     "label": "General Election",
+     "date": "November 8, 2022",
+     "candidates": [
+      {
+       "name": "Eva Burch",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 365447.47,
+       "expenditures": 295923.44,
+       "status": "Won",
+       "url": "/az/candidate/eva-burch?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Robert Scantlebury",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 135337.77,
+       "expenditures": 91936.44,
+       "status": "Lost",
+       "url": "/az/candidate/robert-scantlebury?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Democratic Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Eva Burch",
+       "party": "Democratic",
+       "incumbent": false,
+       "contributions": 365447.47,
+       "expenditures": 295923.44,
+       "status": "Advanced",
+       "url": "/az/candidate/eva-burch?cycle=2022-election-cycle"
+      }
+     ]
+    },
+    {
+     "label": "Republican Party Primary Election",
+     "date": "August 2, 2022",
+     "candidates": [
+      {
+       "name": "Robert Scantlebury",
+       "party": "Republican",
+       "incumbent": false,
+       "contributions": 135337.77,
+       "expenditures": 91936.44,
+       "status": "Advanced",
+       "url": "/az/candidate/robert-scantlebury?cycle=2022-election-cycle"
+      },
+      {
+       "name": "Tyler Pace",
+       "party": "Republican",
+       "incumbent": true,
+       "contributions": 85427.07,
+       "expenditures": 91063.61,
+       "status": "Lost",
+       "url": "/az/candidate/tyler-pace-can?cycle=2022-election-cycle"
+      }
+     ]
+    }
+   ],
+   "chamber": "senate",
+   "district": "9"
+  }
+ ]
+}

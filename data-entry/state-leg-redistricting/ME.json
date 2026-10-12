@@ -1,0 +1,7910 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "151",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8683,
+    "pres2020New": 10.1,
+    "pres2020Old": -41.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-1; it draws from the old HD-151 (100%). Counties: gained Aroostook (100%); lost York. 2020 presidential margin D+41.1 on the 2016\u20132020 lines \u2192 R+10.1 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 37.5,
+      "key": "139",
+      "popPct": 51.4
+     },
+     {
+      "areaPct": 45.3,
+      "key": "141",
+      "popPct": 27.1
+     },
+     {
+      "areaPct": 6.5,
+      "key": "140",
+      "popPct": 12.4
+     },
+     {
+      "areaPct": 1.6,
+      "key": "138",
+      "popPct": 5.8
+     },
+     {
+      "areaPct": 9.1,
+      "key": "137",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9092,
+    "pres2020New": 23.9,
+    "pres2020Old": 3.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-10; it draws from the old HD-139 (51%), the old HD-141 (27%), the old HD-140 (12%) and 2 more. Counties: gained Washington (100%); lost York. 2020 presidential margin R+3.9 on the 2016\u20132020 lines \u2192 R+23.9 on the current lines.",
+    "toEra": "current"
+   },
+   "100": {
+    "contributors": [
+     {
+      "areaPct": 67.0,
+      "key": "50",
+      "popPct": 59.4
+     },
+     {
+      "areaPct": 32.9,
+      "key": "49",
+      "popPct": 40.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 76.7
+     },
+     {
+      "county": "Sagadahoc",
+      "popPct": 23.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 76.7
+     },
+     {
+      "county": "Sagadahoc",
+      "popPct": 23.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 7626,
+    "pres2020New": -43.4,
+    "pres2020Old": 33.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-100; it draws from the old HD-50 (59%), the old HD-49 (40%). Counties: gained Cumberland (77%), Sagadahoc (23%); lost Penobscot. 2020 presidential margin R+33.3 on the 2016\u20132020 lines \u2192 D+43.4 on the current lines.",
+    "toEra": "current"
+   },
+   "101": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "49",
+      "popPct": 95.9
+     },
+     {
+      "areaPct": 0.5,
+      "key": "50",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 99.3
+     },
+     {
+      "county": "Androscoggin",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 99.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9422,
+    "pres2020New": -43.5,
+    "pres2020Old": 0.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-101; it draws from the old HD-49 (96%), the old HD-50 (4%). Counties: gained Cumberland (99%); lost Penobscot. 2020 presidential margin R+0.4 on the 2016\u20132020 lines \u2192 D+43.5 on the current lines.",
+    "toEra": "current"
+   },
+   "102": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "48",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 98.7
+     },
+     {
+      "county": "Androscoggin",
+      "popPct": 1.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 98.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8737,
+    "pres2020New": -43.2,
+    "pres2020Old": 27.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-102; it draws from the old HD-48 (100%). Counties: gained Cumberland (99%); lost Penobscot. 2020 presidential margin R+27.3 on the 2016\u20132020 lines \u2192 D+43.2 on the current lines.",
+    "toEra": "current"
+   },
+   "103": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "47",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8990,
+    "pres2020New": -52.9,
+    "pres2020Old": 27.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-103; it draws from the old HD-47 (100%). Counties: gained Cumberland (100%); lost Penobscot. 2020 presidential margin R+27.8 on the 2016\u20132020 lines \u2192 D+52.9 on the current lines.",
+    "toEra": "current"
+   },
+   "104": {
+    "contributors": [
+     {
+      "areaPct": 69.3,
+      "key": "65",
+      "popPct": 59.9
+     },
+     {
+      "areaPct": 30.7,
+      "key": "67",
+      "popPct": 40.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 97.2
+     },
+     {
+      "county": "Androscoggin",
+      "popPct": 2.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 97.2
+     },
+     {
+      "county": "Androscoggin",
+      "popPct": 2.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9478,
+    "pres2020New": -0.6,
+    "pres2020Old": 36.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-104; it draws from the old HD-65 (60%), the old HD-67 (40%). Counties: gained Cumberland (97%), Androscoggin (3%); lost Penobscot. 2020 presidential margin R+36.7 on the 2016\u20132020 lines \u2192 D+0.6 on the current lines.",
+    "toEra": "current"
+   },
+   "105": {
+    "contributors": [
+     {
+      "areaPct": 46.3,
+      "key": "46",
+      "popPct": 47.7
+     },
+     {
+      "areaPct": 40.8,
+      "key": "67",
+      "popPct": 39.8
+     },
+     {
+      "areaPct": 12.8,
+      "key": "45",
+      "popPct": 12.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Somerset",
+      "popPct": 99.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8539,
+    "pres2020New": -15.6,
+    "pres2020Old": 38.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-105; it draws from the old HD-46 (48%), the old HD-67 (40%), the old HD-45 (12%). Counties: gained Cumberland (100%); lost Somerset. 2020 presidential margin R+38.0 on the 2016\u20132020 lines \u2192 D+15.6 on the current lines.",
+    "toEra": "current"
+   },
+   "106": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "24",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Somerset",
+      "popPct": 60.2
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 39.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9729,
+    "pres2020New": -4.8,
+    "pres2020Old": 21.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-106; it draws from the old HD-24 (100%). Counties: gained Cumberland (100%); lost Somerset, Kennebec. 2020 presidential margin R+21.2 on the 2016\u20132020 lines \u2192 D+4.8 on the current lines.",
+    "toEra": "current"
+   },
+   "107": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "25",
+      "popPct": 98.7
+     },
+     {
+      "areaPct": 1.3,
+      "key": "24",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Somerset",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8705,
+    "pres2020New": -4.8,
+    "pres2020Old": 7.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-107; it draws from the old HD-25 (99%), the old HD-24 (1%). Counties: gained Cumberland (100%); lost Somerset. 2020 presidential margin R+7.8 on the 2016\u20132020 lines \u2192 D+4.8 on the current lines.",
+    "toEra": "current"
+   },
+   "108": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "26",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 98.7
+     },
+     {
+      "county": "York",
+      "popPct": 1.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 98.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Somerset",
+      "popPct": 96.9
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 2.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9651,
+    "pres2020New": -20.0,
+    "pres2020Old": 12.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-108; it draws from the old HD-26 (100%). Counties: gained Cumberland (99%); lost Somerset, Kennebec. 2020 presidential margin R+12.7 on the 2016\u20132020 lines \u2192 D+20.0 on the current lines.",
+    "toEra": "current"
+   },
+   "109": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "27",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8694,
+    "pres2020New": -20.0,
+    "pres2020Old": -30.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-109; it draws from the old HD-27 (100%). Counties: gained Cumberland (100%); lost Kennebec. 2020 presidential margin D+30.7 on the 2016\u20132020 lines \u2192 D+20.0 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 93.9,
+      "key": "138",
+      "popPct": 74.5
+     },
+     {
+      "areaPct": 6.1,
+      "key": "139",
+      "popPct": 25.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9242,
+    "pres2020New": 21.1,
+    "pres2020Old": -30.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-11; it draws from the old HD-138 (74%), the old HD-139 (26%). Counties: gained Washington (100%); lost York. 2020 presidential margin D+30.3 on the 2016\u20132020 lines \u2192 R+21.1 on the current lines.",
+    "toEra": "current"
+   },
+   "110": {
+    "contributors": [
+     {
+      "areaPct": 42.1,
+      "key": "45",
+      "popPct": 93.1
+     },
+     {
+      "areaPct": 57.9,
+      "key": "47",
+      "popPct": 6.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9103,
+    "pres2020New": -39.4,
+    "pres2020Old": -21.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-110; it draws from the old HD-45 (93%), the old HD-47 (7%). Counties: gained Cumberland (100%); lost Kennebec. 2020 presidential margin D+21.9 on the 2016\u20132020 lines \u2192 D+39.4 on the current lines.",
+    "toEra": "current"
+   },
+   "111": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "44",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Somerset",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 10746,
+    "pres2020New": -38.8,
+    "pres2020Old": 21.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-111; it draws from the old HD-44 (100%). Counties: gained Cumberland (100%); lost Somerset. 2020 presidential margin R+21.0 on the 2016\u20132020 lines \u2192 D+38.8 on the current lines.",
+    "toEra": "current"
+   },
+   "112": {
+    "contributors": [
+     {
+      "areaPct": 82.6,
+      "key": "43",
+      "popPct": 93.5
+     },
+     {
+      "areaPct": 17.3,
+      "key": "44",
+      "popPct": 6.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Franklin",
+      "popPct": 57.3
+     },
+     {
+      "county": "Somerset",
+      "popPct": 42.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 6362,
+    "pres2020New": -41.3,
+    "pres2020Old": 14.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-112; it draws from the old HD-43 (94%), the old HD-44 (6%). Counties: gained Cumberland (100%); lost Franklin, Somerset. 2020 presidential margin R+14.2 on the 2016\u20132020 lines \u2192 D+41.3 on the current lines.",
+    "toEra": "current"
+   },
+   "113": {
+    "contributors": [
+     {
+      "areaPct": 54.3,
+      "key": "36",
+      "popPct": 56.6
+     },
+     {
+      "areaPct": 45.4,
+      "key": "37",
+      "popPct": 43.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Franklin",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 14929,
+    "pres2020New": -55.1,
+    "pres2020Old": -11.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-113; it draws from the old HD-36 (57%), the old HD-37 (43%). Counties: gained Cumberland (100%); lost Franklin. 2020 presidential margin D+11.6 on the 2016\u20132020 lines \u2192 D+55.1 on the current lines.",
+    "toEra": "current"
+   },
+   "114": {
+    "contributors": [
+     {
+      "areaPct": 78.7,
+      "key": "42",
+      "popPct": 79.1
+     },
+     {
+      "areaPct": 15.8,
+      "key": "36",
+      "popPct": 15.7
+     },
+     {
+      "areaPct": 5.3,
+      "key": "43",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Franklin",
+      "popPct": 99.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 10088,
+    "pres2020New": -59.9,
+    "pres2020Old": 12.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-114; it draws from the old HD-42 (79%), the old HD-36 (16%), the old HD-43 (5%). Counties: gained Cumberland (100%); lost Franklin. 2020 presidential margin R+12.3 on the 2016\u20132020 lines \u2192 D+59.9 on the current lines.",
+    "toEra": "current"
+   },
+   "115": {
+    "contributors": [
+     {
+      "areaPct": 42.4,
+      "key": "42",
+      "popPct": 44.3
+     },
+     {
+      "areaPct": 25.5,
+      "key": "41",
+      "popPct": 29.4
+     },
+     {
+      "areaPct": 12.8,
+      "key": "36",
+      "popPct": 13.2
+     },
+     {
+      "areaPct": 19.2,
+      "key": "40",
+      "popPct": 13.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Oxford",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 5362,
+    "pres2020New": -65.2,
+    "pres2020Old": 11.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-115; it draws from the old HD-42 (44%), the old HD-41 (29%), the old HD-36 (13%) and 1 more. Counties: gained Cumberland (100%); lost Oxford. 2020 presidential margin R+11.9 on the 2016\u20132020 lines \u2192 D+65.2 on the current lines.",
+    "toEra": "current"
+   },
+   "116": {
+    "contributors": [
+     {
+      "areaPct": 72.2,
+      "key": "37",
+      "popPct": 57.4
+     },
+     {
+      "areaPct": 27.2,
+      "key": "41",
+      "popPct": 42.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Oxford",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 4960,
+    "pres2020New": -59.9,
+    "pres2020Old": 22.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-116; it draws from the old HD-37 (57%), the old HD-41 (42%). Counties: gained Cumberland (100%); lost Oxford. 2020 presidential margin R+22.2 on the 2016\u20132020 lines \u2192 D+59.9 on the current lines.",
+    "toEra": "current"
+   },
+   "117": {
+    "contributors": [
+     {
+      "areaPct": 66.4,
+      "key": "38",
+      "popPct": 81.2
+     },
+     {
+      "areaPct": 25.4,
+      "key": "37",
+      "popPct": 13.0
+     },
+     {
+      "areaPct": 7.0,
+      "key": "40",
+      "popPct": 5.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Oxford",
+      "popPct": 72.1
+     },
+     {
+      "county": "Franklin",
+      "popPct": 27.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 11340,
+    "pres2020New": -78.9,
+    "pres2020Old": 1.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-117; it draws from the old HD-38 (81%), the old HD-37 (13%), the old HD-40 (6%). Counties: gained Cumberland (100%); lost Oxford, Franklin. 2020 presidential margin R+1.0 on the 2016\u20132020 lines \u2192 D+78.9 on the current lines.",
+    "toEra": "current"
+   },
+   "118": {
+    "contributors": [
+     {
+      "areaPct": 74.8,
+      "key": "40",
+      "popPct": 98.0
+     },
+     {
+      "areaPct": 24.4,
+      "key": "39",
+      "popPct": 1.2
+     },
+     {
+      "areaPct": 0.4,
+      "key": "41",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Somerset",
+      "popPct": 95.7
+     },
+     {
+      "county": "Piscataquis",
+      "popPct": 3.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 2451,
+    "pres2020New": -77.8,
+    "pres2020Old": 32.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-118; it draws from the old HD-40 (98%), the old HD-39 (1%), the old HD-41 (1%). Counties: gained Cumberland (100%); lost Somerset, Piscataquis. 2020 presidential margin R+32.8 on the 2016\u20132020 lines \u2192 D+77.8 on the current lines.",
+    "toEra": "current"
+   },
+   "119": {
+    "contributors": [
+     {
+      "areaPct": 68.8,
+      "key": "39",
+      "popPct": 68.3
+     },
+     {
+      "areaPct": 30.4,
+      "key": "47",
+      "popPct": 16.1
+     },
+     {
+      "areaPct": 0.7,
+      "key": "38",
+      "popPct": 15.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Piscataquis",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 14600,
+    "pres2020New": -76.2,
+    "pres2020Old": 28.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-119; it draws from the old HD-39 (68%), the old HD-47 (16%), the old HD-38 (16%). Counties: gained Cumberland (100%); lost Piscataquis. 2020 presidential margin R+28.4 on the 2016\u20132020 lines \u2192 D+76.2 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 88.2,
+      "key": "136",
+      "popPct": 82.1
+     },
+     {
+      "areaPct": 11.8,
+      "key": "137",
+      "popPct": 17.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hancock",
+      "popPct": 86.9
+     },
+     {
+      "county": "Washington",
+      "popPct": 13.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hancock",
+      "popPct": 86.9
+     },
+     {
+      "county": "Washington",
+      "popPct": 13.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8824,
+    "pres2020New": 9.4,
+    "pres2020Old": -30.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-12; it draws from the old HD-136 (82%), the old HD-137 (18%). Counties: gained Hancock (87%), Washington (13%); lost York. 2020 presidential margin D+30.1 on the 2016\u20132020 lines \u2192 R+9.4 on the current lines.",
+    "toEra": "current"
+   },
+   "120": {
+    "contributors": [
+     {
+      "areaPct": 82.6,
+      "key": "33",
+      "popPct": 79.4
+     },
+     {
+      "areaPct": 17.3,
+      "key": "32",
+      "popPct": 20.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Piscataquis",
+      "popPct": 99.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9564,
+    "pres2020New": -49.5,
+    "pres2020Old": 24.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-120; it draws from the old HD-33 (79%), the old HD-32 (21%). Counties: gained Cumberland (100%); lost Piscataquis. 2020 presidential margin R+24.0 on the 2016\u20132020 lines \u2192 D+49.5 on the current lines.",
+    "toEra": "current"
+   },
+   "121": {
+    "contributors": [
+     {
+      "areaPct": 65.6,
+      "key": "32",
+      "popPct": 71.4
+     },
+     {
+      "areaPct": 17.9,
+      "key": "33",
+      "popPct": 20.9
+     },
+     {
+      "areaPct": 2.9,
+      "key": "31",
+      "popPct": 6.0
+     },
+     {
+      "areaPct": 13.5,
+      "key": "30",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8036,
+    "pres2020New": -45.3,
+    "pres2020Old": 29.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-121; it draws from the old HD-32 (71%), the old HD-33 (21%), the old HD-31 (6%) and 1 more. Counties: gained Cumberland (100%); lost Penobscot. 2020 presidential margin R+29.0 on the 2016\u20132020 lines \u2192 D+45.3 on the current lines.",
+    "toEra": "current"
+   },
+   "122": {
+    "contributors": [
+     {
+      "areaPct": 96.3,
+      "key": "31",
+      "popPct": 95.9
+     },
+     {
+      "areaPct": 3.6,
+      "key": "32",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9094,
+    "pres2020New": -59.2,
+    "pres2020Old": -19.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-122; it draws from the old HD-31 (96%), the old HD-32 (4%). Counties: gained Cumberland (100%); lost Penobscot. 2020 presidential margin D+19.5 on the 2016\u20132020 lines \u2192 D+59.2 on the current lines.",
+    "toEra": "current"
+   },
+   "123": {
+    "contributors": [
+     {
+      "areaPct": 99.0,
+      "key": "30",
+      "popPct": 99.1
+     },
+     {
+      "areaPct": 1.0,
+      "key": "32",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9385,
+    "pres2020New": -56.3,
+    "pres2020Old": -48.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-123; it draws from the old HD-30 (99%), the old HD-32 (1%). Counties: gained Cumberland (100%); lost Penobscot. 2020 presidential margin D+48.9 on the 2016\u20132020 lines \u2192 D+56.3 on the current lines.",
+    "toEra": "current"
+   },
+   "124": {
+    "contributors": [
+     {
+      "areaPct": 93.0,
+      "key": "29",
+      "popPct": 93.1
+     },
+     {
+      "areaPct": 6.9,
+      "key": "28",
+      "popPct": 6.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 12291,
+    "pres2020New": -28.7,
+    "pres2020Old": -32.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-124; it draws from the old HD-29 (93%), the old HD-28 (7%). Counties: gained Cumberland (100%); lost Penobscot. 2020 presidential margin D+32.7 on the 2016\u20132020 lines \u2192 D+28.7 on the current lines.",
+    "toEra": "current"
+   },
+   "125": {
+    "contributors": [
+     {
+      "areaPct": 83.5,
+      "key": "28",
+      "popPct": 83.6
+     },
+     {
+      "areaPct": 16.4,
+      "key": "29",
+      "popPct": 16.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 98.6
+     },
+     {
+      "county": "York",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 98.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 4383,
+    "pres2020New": -28.8,
+    "pres2020Old": -21.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-125; it draws from the old HD-28 (84%), the old HD-29 (16%). Counties: gained Cumberland (99%); lost Penobscot. 2020 presidential margin D+21.3 on the 2016\u20132020 lines \u2192 D+28.8 on the current lines.",
+    "toEra": "current"
+   },
+   "126": {
+    "contributors": [
+     {
+      "areaPct": 9.7,
+      "key": "34",
+      "popPct": 36.4
+     },
+     {
+      "areaPct": 31.0,
+      "key": "28",
+      "popPct": 25.7
+     },
+     {
+      "areaPct": 34.6,
+      "key": "15",
+      "popPct": 19.1
+     },
+     {
+      "areaPct": 18.8,
+      "key": "27",
+      "popPct": 15.6
+     },
+     {
+      "areaPct": 5.8,
+      "key": "16",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 81.5
+     },
+     {
+      "county": "York",
+      "popPct": 18.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 81.5
+     },
+     {
+      "county": "York",
+      "popPct": 18.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 13208,
+    "pres2020New": -29.6,
+    "pres2020Old": -21.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-126; it draws from the old HD-34 (36%), the old HD-28 (26%), the old HD-15 (19%) and 2 more. Counties: gained Cumberland (82%), York (18%); lost Penobscot. 2020 presidential margin D+21.3 on the 2016\u20132020 lines \u2192 D+29.6 on the current lines.",
+    "toEra": "current"
+   },
+   "127": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "34",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 5762,
+    "pres2020New": -33.3,
+    "pres2020Old": -21.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-127; it draws from the old HD-34 (100%). Counties: gained Cumberland (100%); lost Penobscot. 2020 presidential margin D+21.3 on the 2016\u20132020 lines \u2192 D+33.3 on the current lines.",
+    "toEra": "current"
+   },
+   "128": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "35",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9791,
+    "pres2020New": -33.3,
+    "pres2020Old": 0.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-128; it draws from the old HD-35 (100%). Counties: gained Cumberland (100%); lost Penobscot. 2020 presidential margin R+0.2 on the 2016\u20132020 lines \u2192 D+33.3 on the current lines.",
+    "toEra": "current"
+   },
+   "129": {
+    "contributors": [
+     {
+      "areaPct": 80.1,
+      "key": "15",
+      "popPct": 60.7
+     },
+     {
+      "areaPct": 7.0,
+      "key": "14",
+      "popPct": 33.6
+     },
+     {
+      "areaPct": 12.6,
+      "key": "16",
+      "popPct": 5.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 7833,
+    "pres2020New": -26.5,
+    "pres2020Old": 11.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-129; it draws from the old HD-15 (61%), the old HD-14 (34%), the old HD-16 (5%). Counties: gained York (100%); lost Penobscot. 2020 presidential margin R+11.2 on the 2016\u20132020 lines \u2192 D+26.5 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 65.7,
+      "key": "132",
+      "popPct": 94.8
+     },
+     {
+      "areaPct": 34.3,
+      "key": "136",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hancock",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hancock",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8863,
+    "pres2020New": 3.1,
+    "pres2020Old": -21.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-13; it draws from the old HD-132 (95%), the old HD-136 (5%). Counties: gained Hancock (100%); lost York. 2020 presidential margin D+21.9 on the 2016\u20132020 lines \u2192 R+3.1 on the current lines.",
+    "toEra": "current"
+   },
+   "130": {
+    "contributors": [
+     {
+      "areaPct": 73.1,
+      "key": "14",
+      "popPct": 50.4
+     },
+     {
+      "areaPct": 26.8,
+      "key": "15",
+      "popPct": 49.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hancock",
+      "popPct": 54.4
+     },
+     {
+      "county": "Penobscot",
+      "popPct": 45.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9600,
+    "pres2020New": -26.4,
+    "pres2020Old": 9.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-130; it draws from the old HD-14 (50%), the old HD-15 (50%). Counties: gained York (100%); lost Hancock, Penobscot. 2020 presidential margin R+9.1 on the 2016\u20132020 lines \u2192 D+26.4 on the current lines.",
+    "toEra": "current"
+   },
+   "131": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "13",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hancock",
+      "popPct": 73.9
+     },
+     {
+      "county": "Waldo",
+      "popPct": 26.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8960,
+    "pres2020New": -21.9,
+    "pres2020Old": 1.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-131; it draws from the old HD-13 (100%). Counties: gained York (100%); lost Hancock, Waldo. 2020 presidential margin R+1.0 on the 2016\u20132020 lines \u2192 D+21.9 on the current lines.",
+    "toEra": "current"
+   },
+   "132": {
+    "contributors": [
+     {
+      "areaPct": 90.3,
+      "key": "12",
+      "popPct": 90.8
+     },
+     {
+      "areaPct": 9.2,
+      "key": "11",
+      "popPct": 9.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hancock",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 597,
+    "pres2020New": -30.4,
+    "pres2020Old": 0.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-132; it draws from the old HD-12 (91%), the old HD-11 (9%). Counties: gained York (100%); lost Hancock. 2020 presidential margin Even  on the 2016\u20132020 lines \u2192 D+30.4 on the current lines.",
+    "toEra": "current"
+   },
+   "133": {
+    "contributors": [
+     {
+      "areaPct": 98.3,
+      "key": "11",
+      "popPct": 98.8
+     },
+     {
+      "areaPct": 1.2,
+      "key": "12",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hancock",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 7151,
+    "pres2020New": -30.3,
+    "pres2020Old": -29.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-133; it draws from the old HD-11 (99%), the old HD-12 (1%). Counties: gained York (100%); lost Hancock. 2020 presidential margin D+29.8 on the 2016\u20132020 lines \u2192 D+30.3 on the current lines.",
+    "toEra": "current"
+   },
+   "134": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "9",
+      "popPct": 99.4
+     },
+     {
+      "areaPct": 0.5,
+      "key": "8",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hancock",
+      "popPct": 79.9
+     },
+     {
+      "county": "Knox",
+      "popPct": 20.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 21860,
+    "pres2020New": -31.0,
+    "pres2020Old": -26.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-134; it draws from the old HD-9 (99%), the old HD-8 (1%). Counties: gained York (100%); lost Hancock, Knox. 2020 presidential margin D+26.2 on the 2016\u20132020 lines \u2192 D+31.0 on the current lines.",
+    "toEra": "current"
+   },
+   "135": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "8",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hancock",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8095,
+    "pres2020New": -32.9,
+    "pres2020Old": -41.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-135; it draws from the old HD-8 (100%). Counties: gained York (100%); lost Hancock. 2020 presidential margin D+41.7 on the 2016\u20132020 lines \u2192 D+32.9 on the current lines.",
+    "toEra": "current"
+   },
+   "136": {
+    "contributors": [
+     {
+      "areaPct": 52.6,
+      "key": "17",
+      "popPct": 57.2
+     },
+     {
+      "areaPct": 36.0,
+      "key": "21",
+      "popPct": 32.5
+     },
+     {
+      "areaPct": 11.3,
+      "key": "10",
+      "popPct": 10.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Hancock",
+      "popPct": 86.0
+     },
+     {
+      "county": "Washington",
+      "popPct": 14.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9465,
+    "pres2020New": 6.5,
+    "pres2020Old": 12.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-136; it draws from the old HD-17 (57%), the old HD-21 (32%), the old HD-10 (10%). Counties: gained York (100%); lost Hancock, Washington. 2020 presidential margin R+12.0 on the 2016\u20132020 lines \u2192 R+6.5 on the current lines.",
+    "toEra": "current"
+   },
+   "137": {
+    "contributors": [
+     {
+      "areaPct": 85.9,
+      "key": "16",
+      "popPct": 84.2
+     },
+     {
+      "areaPct": 13.9,
+      "key": "22",
+      "popPct": 15.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 64.4
+     },
+     {
+      "county": "Hancock",
+      "popPct": 28.7
+     },
+     {
+      "county": "Washington",
+      "popPct": 6.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9783,
+    "pres2020New": 5.9,
+    "pres2020Old": 27.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-137; it draws from the old HD-16 (84%), the old HD-22 (16%). Counties: gained York (100%); lost Penobscot, Hancock, Washington. 2020 presidential margin R+27.9 on the 2016\u20132020 lines \u2192 R+5.9 on the current lines.",
+    "toEra": "current"
+   },
+   "138": {
+    "contributors": [
+     {
+      "areaPct": 59.1,
+      "key": "22",
+      "popPct": 61.8
+     },
+     {
+      "areaPct": 14.8,
+      "key": "16",
+      "popPct": 20.9
+     },
+     {
+      "areaPct": 26.1,
+      "key": "68",
+      "popPct": 17.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 97.6
+     },
+     {
+      "county": "Cumberland",
+      "popPct": 2.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 97.6
+     },
+     {
+      "county": "Cumberland",
+      "popPct": 2.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8753,
+    "pres2020New": 12.8,
+    "pres2020Old": 27.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-138; it draws from the old HD-22 (62%), the old HD-16 (21%), the old HD-68 (17%). Counties: gained York (98%), Cumberland (2%); lost Washington. 2020 presidential margin R+27.0 on the 2016\u20132020 lines \u2192 R+12.8 on the current lines.",
+    "toEra": "current"
+   },
+   "139": {
+    "contributors": [
+     {
+      "areaPct": 22.8,
+      "key": "17",
+      "popPct": 42.0
+     },
+     {
+      "areaPct": 57.9,
+      "key": "21",
+      "popPct": 36.2
+     },
+     {
+      "areaPct": 12.8,
+      "key": "22",
+      "popPct": 19.2
+     },
+     {
+      "areaPct": 6.5,
+      "key": "68",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8587,
+    "pres2020New": 9.8,
+    "pres2020Old": 8.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-139; it draws from the old HD-17 (42%), the old HD-21 (36%), the old HD-22 (19%) and 1 more. Counties: gained York (100%); lost Washington. 2020 presidential margin R+8.2 on the 2016\u20132020 lines \u2192 R+9.8 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 75.8,
+      "key": "135",
+      "popPct": 98.2
+     },
+     {
+      "areaPct": 24.2,
+      "key": "134",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hancock",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hancock",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9115,
+    "pres2020New": -41.8,
+    "pres2020Old": -26.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-14; it draws from the old HD-135 (98%), the old HD-134 (2%). Counties: gained Hancock (100%); lost York. 2020 presidential margin D+26.3 on the 2016\u20132020 lines \u2192 D+41.8 on the current lines.",
+    "toEra": "current"
+   },
+   "140": {
+    "contributors": [
+     {
+      "areaPct": 92.1,
+      "key": "10",
+      "popPct": 93.7
+     },
+     {
+      "areaPct": 7.8,
+      "key": "17",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8834,
+    "pres2020New": 3.7,
+    "pres2020Old": 9.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-140; it draws from the old HD-10 (94%), the old HD-17 (6%). Counties: gained York (100%); lost Washington. 2020 presidential margin R+9.7 on the 2016\u20132020 lines \u2192 R+3.7 on the current lines.",
+    "toEra": "current"
+   },
+   "141": {
+    "contributors": [
+     {
+      "areaPct": 16.7,
+      "key": "19",
+      "popPct": 56.3
+     },
+     {
+      "areaPct": 73.0,
+      "key": "21",
+      "popPct": 37.4
+     },
+     {
+      "areaPct": 10.2,
+      "key": "20",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 50.4
+     },
+     {
+      "county": "Washington",
+      "popPct": 49.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 10467,
+    "pres2020New": 7.8,
+    "pres2020Old": 44.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-141; it draws from the old HD-19 (56%), the old HD-21 (37%), the old HD-20 (6%). Counties: gained York (100%); lost Penobscot, Washington. 2020 presidential margin R+44.0 on the 2016\u20132020 lines \u2192 R+7.8 on the current lines.",
+    "toEra": "current"
+   },
+   "142": {
+    "contributors": [
+     {
+      "areaPct": 92.7,
+      "key": "18",
+      "popPct": 97.2
+     },
+     {
+      "areaPct": 7.2,
+      "key": "19",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 7680,
+    "pres2020New": -7.2,
+    "pres2020Old": 34.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-142; it draws from the old HD-18 (97%), the old HD-19 (3%). Counties: gained York (100%); lost Penobscot. 2020 presidential margin R+34.2 on the 2016\u20132020 lines \u2192 D+7.2 on the current lines.",
+    "toEra": "current"
+   },
+   "143": {
+    "contributors": [
+     {
+      "areaPct": 72.3,
+      "key": "4",
+      "popPct": 61.2
+     },
+     {
+      "areaPct": 23.7,
+      "key": "19",
+      "popPct": 20.0
+     },
+     {
+      "areaPct": 4.0,
+      "key": "18",
+      "popPct": 18.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8403,
+    "pres2020New": 2.4,
+    "pres2020Old": 22.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-143; it draws from the old HD-4 (61%), the old HD-19 (20%), the old HD-18 (19%). Counties: gained York (100%); lost Penobscot. 2020 presidential margin R+22.1 on the 2016\u20132020 lines \u2192 R+2.4 on the current lines.",
+    "toEra": "current"
+   },
+   "144": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "20",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9140,
+    "pres2020New": 23.4,
+    "pres2020Old": 31.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-144; it draws from the old HD-20 (100%). Counties: gained York (100%); lost Aroostook. 2020 presidential margin R+31.7 on the 2016\u20132020 lines \u2192 R+23.4 on the current lines.",
+    "toEra": "current"
+   },
+   "145": {
+    "contributors": [
+     {
+      "areaPct": 82.9,
+      "key": "7",
+      "popPct": 83.0
+     },
+     {
+      "areaPct": 17.1,
+      "key": "4",
+      "popPct": 17.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Aroostook",
+      "popPct": 93.3
+     },
+     {
+      "county": "Penobscot",
+      "popPct": 6.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8180,
+    "pres2020New": -14.6,
+    "pres2020Old": 46.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-145; it draws from the old HD-7 (83%), the old HD-4 (17%). Counties: gained York (100%); lost Aroostook, Penobscot. 2020 presidential margin R+46.6 on the 2016\u20132020 lines \u2192 D+14.6 on the current lines.",
+    "toEra": "current"
+   },
+   "146": {
+    "contributors": [
+     {
+      "areaPct": 63.1,
+      "key": "4",
+      "popPct": 55.9
+     },
+     {
+      "areaPct": 27.5,
+      "key": "7",
+      "popPct": 35.8
+     },
+     {
+      "areaPct": 9.4,
+      "key": "3",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8818,
+    "pres2020New": -25.6,
+    "pres2020Old": 30.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-146; it draws from the old HD-4 (56%), the old HD-7 (36%), the old HD-3 (8%). Counties: gained York (100%); lost Aroostook. 2020 presidential margin R+30.6 on the 2016\u20132020 lines \u2192 D+25.6 on the current lines.",
+    "toEra": "current"
+   },
+   "147": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "3",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9641,
+    "pres2020New": -29.0,
+    "pres2020Old": 9.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-147; it draws from the old HD-3 (100%). Counties: gained York (100%); lost Aroostook. 2020 presidential margin R+9.1 on the 2016\u20132020 lines \u2192 D+29.0 on the current lines.",
+    "toEra": "current"
+   },
+   "148": {
+    "contributors": [
+     {
+      "areaPct": 68.6,
+      "key": "5",
+      "popPct": 77.2
+     },
+     {
+      "areaPct": 31.4,
+      "key": "6",
+      "popPct": 22.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 11011,
+    "pres2020New": 4.2,
+    "pres2020Old": 15.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-148; it draws from the old HD-5 (77%), the old HD-6 (23%). Counties: gained York (100%); lost Aroostook. 2020 presidential margin R+15.9 on the 2016\u20132020 lines \u2192 R+4.2 on the current lines.",
+    "toEra": "current"
+   },
+   "149": {
+    "contributors": [
+     {
+      "areaPct": 78.6,
+      "key": "6",
+      "popPct": 82.7
+     },
+     {
+      "areaPct": 15.5,
+      "key": "5",
+      "popPct": 10.4
+     },
+     {
+      "areaPct": 5.9,
+      "key": "2",
+      "popPct": 6.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8127,
+    "pres2020New": -16.4,
+    "pres2020Old": 13.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-149; it draws from the old HD-6 (83%), the old HD-5 (10%), the old HD-2 (7%). Counties: gained York (100%); lost Aroostook. 2020 presidential margin R+13.1 on the 2016\u20132020 lines \u2192 D+16.4 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 94.4,
+      "key": "134",
+      "popPct": 90.9
+     },
+     {
+      "areaPct": 5.6,
+      "key": "133",
+      "popPct": 9.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hancock",
+      "popPct": 85.0
+     },
+     {
+      "county": "Knox",
+      "popPct": 15.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hancock",
+      "popPct": 85.0
+     },
+     {
+      "county": "Knox",
+      "popPct": 15.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 99.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9132,
+    "pres2020New": -26.1,
+    "pres2020Old": -26.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-15; it draws from the old HD-134 (91%), the old HD-133 (9%). Counties: gained Hancock (85%), Knox (15%); lost York. 2020 presidential margin D+26.5 on the 2016\u20132020 lines \u2192 D+26.1 on the current lines.",
+    "toEra": "current"
+   },
+   "150": {
+    "contributors": [
+     {
+      "areaPct": 95.1,
+      "key": "2",
+      "popPct": 97.6
+     },
+     {
+      "areaPct": 4.6,
+      "key": "1",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8143,
+    "pres2020New": -22.9,
+    "pres2020Old": -2.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-150; it draws from the old HD-2 (98%), the old HD-1 (2%). Counties: gained York (100%); lost Aroostook. 2020 presidential margin D+2.2 on the 2016\u20132020 lines \u2192 D+22.9 on the current lines.",
+    "toEra": "current"
+   },
+   "151": {
+    "contributors": [
+     {
+      "areaPct": 95.4,
+      "key": "1",
+      "popPct": 95.4
+     },
+     {
+      "areaPct": 4.6,
+      "key": "2",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9900,
+    "pres2020New": -41.1,
+    "pres2020Old": 10.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-151; it draws from the old HD-1 (95%), the old HD-2 (5%). Counties: gained York (100%); lost Aroostook. 2020 presidential margin R+10.2 on the 2016\u20132020 lines \u2192 D+41.1 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 89.4,
+      "key": "133",
+      "popPct": 83.3
+     },
+     {
+      "areaPct": 10.6,
+      "key": "132",
+      "popPct": 16.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hancock",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hancock",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 99.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9465,
+    "pres2020New": -25.2,
+    "pres2020Old": 4.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-16; it draws from the old HD-133 (83%), the old HD-132 (17%). Counties: gained Hancock (100%); lost York. 2020 presidential margin R+4.0 on the 2016\u20132020 lines \u2192 D+25.2 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 34.3,
+      "key": "130",
+      "popPct": 56.1
+     },
+     {
+      "areaPct": 65.7,
+      "key": "131",
+      "popPct": 43.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hancock",
+      "popPct": 97.5
+     },
+     {
+      "county": "Penobscot",
+      "popPct": 2.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hancock",
+      "popPct": 97.5
+     },
+     {
+      "county": "Penobscot",
+      "popPct": 2.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8808,
+    "pres2020New": 0.0,
+    "pres2020Old": 12.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-17; it draws from the old HD-130 (56%), the old HD-131 (44%). Counties: gained Hancock (98%), Penobscot (2%); lost York. 2020 presidential margin R+12.1 on the 2016\u20132020 lines \u2192 Even  on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 67.6,
+      "key": "137",
+      "popPct": 36.8
+     },
+     {
+      "areaPct": 4.1,
+      "key": "131",
+      "popPct": 25.9
+     },
+     {
+      "areaPct": 2.5,
+      "key": "138",
+      "popPct": 12.4
+     },
+     {
+      "areaPct": 2.0,
+      "key": "129",
+      "popPct": 9.4
+     },
+     {
+      "areaPct": 17.3,
+      "key": "141",
+      "popPct": 9.4
+     },
+     {
+      "areaPct": 6.4,
+      "key": "136",
+      "popPct": 6.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hancock",
+      "popPct": 42.1
+     },
+     {
+      "county": "Penobscot",
+      "popPct": 41.2
+     },
+     {
+      "county": "Washington",
+      "popPct": 16.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hancock",
+      "popPct": 42.1
+     },
+     {
+      "county": "Penobscot",
+      "popPct": 41.2
+     },
+     {
+      "county": "Washington",
+      "popPct": 16.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8952,
+    "pres2020New": 28.1,
+    "pres2020Old": -7.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-18; it draws from the old HD-137 (37%), the old HD-131 (26%), the old HD-138 (12%) and 3 more. Counties: gained Hancock (42%), Penobscot (41%), Washington (17%); lost York. 2020 presidential margin D+7.4 on the 2016\u20132020 lines \u2192 R+28.1 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 68.3,
+      "key": "129",
+      "popPct": 58.9
+     },
+     {
+      "areaPct": 31.6,
+      "key": "130",
+      "popPct": 41.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9283,
+    "pres2020New": 16.6,
+    "pres2020Old": -1.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-19; it draws from the old HD-129 (59%), the old HD-130 (41%). Counties: gained Penobscot (99%); lost York. 2020 presidential margin D+1.2 on the 2016\u20132020 lines \u2192 R+16.6 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 94.3,
+      "key": "150",
+      "popPct": 95.9
+     },
+     {
+      "areaPct": 5.7,
+      "key": "146",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9130,
+    "pres2020New": -0.5,
+    "pres2020Old": -23.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-2; it draws from the old HD-150 (96%), the old HD-146 (4%). Counties: gained Aroostook (100%); lost York. 2020 presidential margin D+23.4 on the 2016\u20132020 lines \u2192 D+0.5 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 78.7,
+      "key": "128",
+      "popPct": 78.7
+     },
+     {
+      "areaPct": 21.3,
+      "key": "129",
+      "popPct": 21.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9388,
+    "pres2020New": 0.2,
+    "pres2020Old": 22.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-20; it draws from the old HD-128 (79%), the old HD-129 (21%). Counties: gained Penobscot (100%); lost York. 2020 presidential margin R+22.9 on the 2016\u20132020 lines \u2192 R+0.2 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 97.5,
+      "key": "127",
+      "popPct": 98.0
+     },
+     {
+      "areaPct": 2.0,
+      "key": "124",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8210,
+    "pres2020New": -21.3,
+    "pres2020Old": 9.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-21; it draws from the old HD-127 (98%), the old HD-124 (2%). Counties: gained Penobscot (100%); lost York. 2020 presidential margin R+9.0 on the 2016\u20132020 lines \u2192 D+21.3 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 97.9,
+      "key": "126",
+      "popPct": 97.9
+     },
+     {
+      "areaPct": 1.1,
+      "key": "125",
+      "popPct": 1.1
+     },
+     {
+      "areaPct": 1.0,
+      "key": "127",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 92.6
+     },
+     {
+      "county": "Cumberland",
+      "popPct": 7.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 6567,
+    "pres2020New": -21.3,
+    "pres2020Old": 12.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-22; it draws from the old HD-126 (98%), the old HD-125 (1%), the old HD-127 (1%). Counties: gained Penobscot (100%); lost York, Cumberland. 2020 presidential margin R+12.0 on the 2016\u20132020 lines \u2192 D+21.3 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 50.4,
+      "key": "125",
+      "popPct": 50.5
+     },
+     {
+      "areaPct": 49.5,
+      "key": "124",
+      "popPct": 49.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 99.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 13289,
+    "pres2020New": -21.3,
+    "pres2020Old": 3.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-23; it draws from the old HD-125 (50%), the old HD-124 (50%). Counties: gained Penobscot (100%); lost Cumberland. 2020 presidential margin R+3.9 on the 2016\u20132020 lines \u2192 D+21.3 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 77.1,
+      "key": "124",
+      "popPct": 79.4
+     },
+     {
+      "areaPct": 15.9,
+      "key": "129",
+      "popPct": 14.1
+     },
+     {
+      "areaPct": 5.9,
+      "key": "123",
+      "popPct": 5.3
+     },
+     {
+      "areaPct": 1.2,
+      "key": "128",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 13754,
+    "pres2020New": -33.6,
+    "pres2020Old": -4.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-24; it draws from the old HD-124 (79%), the old HD-129 (14%), the old HD-123 (5%) and 1 more. Counties: gained Penobscot (100%); lost Cumberland. 2020 presidential margin D+4.8 on the 2016\u20132020 lines \u2192 D+33.6 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 76.7,
+      "key": "123",
+      "popPct": 76.7
+     },
+     {
+      "areaPct": 23.2,
+      "key": "124",
+      "popPct": 23.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 3213,
+    "pres2020New": -48.9,
+    "pres2020Old": -4.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-25; it draws from the old HD-123 (77%), the old HD-124 (23%). Counties: gained Penobscot (100%); lost Cumberland. 2020 presidential margin D+4.8 on the 2016\u20132020 lines \u2192 D+48.9 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 56.0,
+      "key": "122",
+      "popPct": 83.6
+     },
+     {
+      "areaPct": 43.7,
+      "key": "137",
+      "popPct": 16.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 98.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9328,
+    "pres2020New": -14.4,
+    "pres2020Old": -20.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-26; it draws from the old HD-122 (84%), the old HD-137 (16%). Counties: gained Penobscot (100%); lost Cumberland. 2020 presidential margin D+20.0 on the 2016\u20132020 lines \u2192 D+14.4 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 85.4,
+      "key": "121",
+      "popPct": 89.9
+     },
+     {
+      "areaPct": 14.5,
+      "key": "137",
+      "popPct": 10.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9425,
+    "pres2020New": 30.5,
+    "pres2020Old": -21.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-27; it draws from the old HD-121 (90%), the old HD-137 (10%). Counties: gained Penobscot (100%); lost Cumberland. 2020 presidential margin D+21.9 on the 2016\u20132020 lines \u2192 R+30.5 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 63.6,
+      "key": "142",
+      "popPct": 86.6
+     },
+     {
+      "areaPct": 23.9,
+      "key": "137",
+      "popPct": 8.9
+     },
+     {
+      "areaPct": 12.4,
+      "key": "141",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 98.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8689,
+    "pres2020New": 33.8,
+    "pres2020Old": -28.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-28; it draws from the old HD-142 (87%), the old HD-137 (9%), the old HD-141 (5%). Counties: gained Penobscot (100%); lost Cumberland. 2020 presidential margin D+28.7 on the 2016\u20132020 lines \u2192 R+33.8 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 80.3,
+      "key": "143",
+      "popPct": 89.2
+     },
+     {
+      "areaPct": 3.4,
+      "key": "141",
+      "popPct": 6.0
+     },
+     {
+      "areaPct": 13.4,
+      "key": "142",
+      "popPct": 2.8
+     },
+     {
+      "areaPct": 2.8,
+      "key": "145",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9090,
+    "pres2020New": 26.0,
+    "pres2020Old": -28.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-29; it draws from the old HD-143 (89%), the old HD-141 (6%), the old HD-142 (3%) and 1 more. Counties: gained Penobscot (100%); lost Cumberland. 2020 presidential margin D+28.7 on the 2016\u20132020 lines \u2192 R+26.0 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 75.9,
+      "key": "148",
+      "popPct": 79.7
+     },
+     {
+      "areaPct": 8.0,
+      "key": "146",
+      "popPct": 13.2
+     },
+     {
+      "areaPct": 16.1,
+      "key": "149",
+      "popPct": 7.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9246,
+    "pres2020New": 18.3,
+    "pres2020Old": -29.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-3; it draws from the old HD-148 (80%), the old HD-146 (13%), the old HD-149 (7%). Counties: gained Aroostook (100%); lost York. 2020 presidential margin D+29.0 on the 2016\u20132020 lines \u2192 R+18.3 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 96.5,
+      "key": "119",
+      "popPct": 91.2
+     },
+     {
+      "areaPct": 0.5,
+      "key": "105",
+      "popPct": 5.1
+     },
+     {
+      "areaPct": 3.0,
+      "key": "118",
+      "popPct": 3.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Piscataquis",
+      "popPct": 94.1
+     },
+     {
+      "county": "Somerset",
+      "popPct": 5.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Piscataquis",
+      "popPct": 94.1
+     },
+     {
+      "county": "Somerset",
+      "popPct": 5.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8626,
+    "pres2020New": 28.6,
+    "pres2020Old": -56.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-30; it draws from the old HD-119 (91%), the old HD-105 (5%), the old HD-118 (4%). Counties: gained Piscataquis (94%), Somerset (6%); lost Cumberland. 2020 presidential margin D+56.3 on the 2016\u20132020 lines \u2192 R+28.6 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "120",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Piscataquis",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Piscataquis",
+      "popPct": 99.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8679,
+    "pres2020New": 24.0,
+    "pres2020Old": -59.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-31; it draws from the old HD-120 (100%). Counties: gained Piscataquis (100%); lost Cumberland. 2020 presidential margin D+59.2 on the 2016\u20132020 lines \u2192 R+24.0 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 96.0,
+      "key": "104",
+      "popPct": 97.4
+     },
+     {
+      "areaPct": 4.0,
+      "key": "137",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8758,
+    "pres2020New": 36.9,
+    "pres2020Old": -45.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-32; it draws from the old HD-104 (97%), the old HD-137 (3%). Counties: gained Penobscot (100%); lost Cumberland. 2020 presidential margin D+45.0 on the 2016\u20132020 lines \u2192 R+36.9 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 97.6,
+      "key": "100",
+      "popPct": 97.8
+     },
+     {
+      "areaPct": 2.4,
+      "key": "103",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9116,
+    "pres2020New": 33.5,
+    "pres2020Old": -49.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-33; it draws from the old HD-100 (98%), the old HD-103 (2%). Counties: gained Penobscot (100%); lost Cumberland. 2020 presidential margin D+49.8 on the 2016\u20132020 lines \u2192 R+33.5 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "102",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8934,
+    "pres2020New": 27.3,
+    "pres2020Old": -33.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-34; it draws from the old HD-102 (100%). Counties: gained Penobscot (100%); lost Cumberland. 2020 presidential margin D+33.3 on the 2016\u20132020 lines \u2192 R+27.3 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "103",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9328,
+    "pres2020New": 27.5,
+    "pres2020Old": -33.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-35; it draws from the old HD-103 (100%). Counties: gained Penobscot (100%); lost Cumberland. 2020 presidential margin D+33.3 on the 2016\u20132020 lines \u2192 R+27.5 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "101",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.0
+     },
+     {
+      "county": "Waldo",
+      "popPct": 1.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 99.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9304,
+    "pres2020New": 0.4,
+    "pres2020Old": -52.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-36; it draws from the old HD-101 (100%). Counties: gained Penobscot (99%); lost Cumberland. 2020 presidential margin D+52.5 on the 2016\u20132020 lines \u2192 R+0.4 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 65.6,
+      "key": "98",
+      "popPct": 76.4
+     },
+     {
+      "areaPct": 34.3,
+      "key": "131",
+      "popPct": 23.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Waldo",
+      "popPct": 98.9
+     },
+     {
+      "county": "Hancock",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Waldo",
+      "popPct": 98.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9459,
+    "pres2020New": 4.4,
+    "pres2020Old": -61.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-37; it draws from the old HD-98 (76%), the old HD-131 (24%). Counties: gained Waldo (99%); lost Cumberland. 2020 presidential margin D+61.0 on the 2016\u20132020 lines \u2192 R+4.4 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 78.5,
+      "key": "99",
+      "popPct": 70.9
+     },
+     {
+      "areaPct": 13.3,
+      "key": "98",
+      "popPct": 20.4
+     },
+     {
+      "areaPct": 8.2,
+      "key": "97",
+      "popPct": 8.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Waldo",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Waldo",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9069,
+    "pres2020New": 9.3,
+    "pres2020Old": -80.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-38; it draws from the old HD-99 (71%), the old HD-98 (20%), the old HD-97 (9%). Counties: gained Waldo (100%); lost Cumberland. 2020 presidential margin D+80.6 on the 2016\u20132020 lines \u2192 R+9.3 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 83.8,
+      "key": "97",
+      "popPct": 89.7
+     },
+     {
+      "areaPct": 16.2,
+      "key": "96",
+      "popPct": 10.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Waldo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Waldo",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9464,
+    "pres2020New": -30.5,
+    "pres2020Old": -76.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-39; it draws from the old HD-97 (90%), the old HD-96 (10%). Counties: gained Waldo (100%); lost Cumberland. 2020 presidential margin D+76.5 on the 2016\u20132020 lines \u2192 D+30.5 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 52.9,
+      "key": "149",
+      "popPct": 80.8
+     },
+     {
+      "areaPct": 47.1,
+      "key": "146",
+      "popPct": 19.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9152,
+    "pres2020New": 16.3,
+    "pres2020Old": -16.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-4; it draws from the old HD-149 (81%), the old HD-146 (19%). Counties: gained Aroostook (100%); lost York. 2020 presidential margin D+16.2 on the 2016\u20132020 lines \u2192 R+16.3 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 60.0,
+      "key": "96",
+      "popPct": 76.4
+     },
+     {
+      "areaPct": 11.7,
+      "key": "95",
+      "popPct": 16.2
+     },
+     {
+      "areaPct": 24.1,
+      "key": "94",
+      "popPct": 6.7
+     },
+     {
+      "areaPct": 4.1,
+      "key": "134",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Waldo",
+      "popPct": 83.7
+     },
+     {
+      "county": "Knox",
+      "popPct": 16.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Waldo",
+      "popPct": 83.7
+     },
+     {
+      "county": "Knox",
+      "popPct": 16.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8690,
+    "pres2020New": -11.7,
+    "pres2020Old": -77.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-40; it draws from the old HD-96 (76%), the old HD-95 (16%), the old HD-94 (7%) and 1 more. Counties: gained Waldo (84%), Knox (16%); lost Cumberland. 2020 presidential margin D+77.2 on the 2016\u20132020 lines \u2192 D+11.7 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "94",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Knox",
+      "popPct": 95.9
+     },
+     {
+      "county": "Waldo",
+      "popPct": 4.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Knox",
+      "popPct": 95.9
+     },
+     {
+      "county": "Waldo",
+      "popPct": 4.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8876,
+    "pres2020New": -47.7,
+    "pres2020Old": -63.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-41; it draws from the old HD-94 (100%). Counties: gained Knox (96%), Waldo (4%); lost Cumberland. 2020 presidential margin D+63.1 on the 2016\u20132020 lines \u2192 D+47.7 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 7.4,
+      "key": "93",
+      "popPct": 95.0
+     },
+     {
+      "areaPct": 17.6,
+      "key": "134",
+      "popPct": 4.2
+     },
+     {
+      "areaPct": 75.0,
+      "key": "92",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Knox",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Knox",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8486,
+    "pres2020New": -27.2,
+    "pres2020Old": -61.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-42; it draws from the old HD-93 (95%), the old HD-134 (4%), the old HD-92 (1%). Counties: gained Knox (100%); lost Cumberland. 2020 presidential margin D+61.4 on the 2016\u20132020 lines \u2192 D+27.2 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 97.2,
+      "key": "92",
+      "popPct": 95.7
+     },
+     {
+      "areaPct": 2.8,
+      "key": "93",
+      "popPct": 4.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Knox",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Knox",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8724,
+    "pres2020New": -15.2,
+    "pres2020Old": -43.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-43; it draws from the old HD-92 (96%), the old HD-93 (4%). Counties: gained Knox (100%); lost Cumberland. 2020 presidential margin D+43.0 on the 2016\u20132020 lines \u2192 D+15.2 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 82.8,
+      "key": "95",
+      "popPct": 85.8
+     },
+     {
+      "areaPct": 17.2,
+      "key": "91",
+      "popPct": 14.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Knox",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Knox",
+      "popPct": 99.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8940,
+    "pres2020New": 3.5,
+    "pres2020Old": -38.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-44; it draws from the old HD-95 (86%), the old HD-91 (14%). Counties: gained Knox (100%); lost Cumberland. 2020 presidential margin D+38.8 on the 2016\u20132020 lines \u2192 R+3.5 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 77.7,
+      "key": "91",
+      "popPct": 90.5
+     },
+     {
+      "areaPct": 22.3,
+      "key": "90",
+      "popPct": 9.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lincoln",
+      "popPct": 68.8
+     },
+     {
+      "county": "Knox",
+      "popPct": 31.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lincoln",
+      "popPct": 68.8
+     },
+     {
+      "county": "Knox",
+      "popPct": 31.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8720,
+    "pres2020New": 6.9,
+    "pres2020Old": -34.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-45; it draws from the old HD-91 (90%), the old HD-90 (10%). Counties: gained Lincoln (69%), Knox (31%); lost Cumberland. 2020 presidential margin D+34.5 on the 2016\u20132020 lines \u2192 R+6.9 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 92.8,
+      "key": "90",
+      "popPct": 87.6
+     },
+     {
+      "areaPct": 7.2,
+      "key": "88",
+      "popPct": 12.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lincoln",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lincoln",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 54.9
+     },
+     {
+      "county": "Androscoggin",
+      "popPct": 45.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8834,
+    "pres2020New": -27.5,
+    "pres2020Old": -15.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-46; it draws from the old HD-90 (88%), the old HD-88 (12%). Counties: gained Lincoln (100%); lost Cumberland, Androscoggin. 2020 presidential margin D+15.7 on the 2016\u20132020 lines \u2192 D+27.5 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 68.4,
+      "key": "88",
+      "popPct": 52.7
+     },
+     {
+      "areaPct": 31.6,
+      "key": "87",
+      "popPct": 47.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lincoln",
+      "popPct": 97.7
+     },
+     {
+      "county": "Sagadahoc",
+      "popPct": 2.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lincoln",
+      "popPct": 97.7
+     },
+     {
+      "county": "Sagadahoc",
+      "popPct": 2.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9411,
+    "pres2020New": 2.7,
+    "pres2020Old": -55.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-47; it draws from the old HD-88 (53%), the old HD-87 (47%). Counties: gained Lincoln (98%), Sagadahoc (2%); lost Cumberland. 2020 presidential margin D+55.1 on the 2016\u20132020 lines \u2192 R+2.7 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 97.6,
+      "key": "89",
+      "popPct": 98.2
+     },
+     {
+      "areaPct": 2.4,
+      "key": "90",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lincoln",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lincoln",
+      "popPct": 99.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 98.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8686,
+    "pres2020New": -18.1,
+    "pres2020Old": -41.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-48; it draws from the old HD-89 (98%), the old HD-90 (2%). Counties: gained Lincoln (100%); lost Cumberland. 2020 presidential margin D+41.5 on the 2016\u20132020 lines \u2192 D+18.1 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 92.6,
+      "key": "53",
+      "popPct": 77.8
+     },
+     {
+      "areaPct": 7.4,
+      "key": "51",
+      "popPct": 22.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sagadahoc",
+      "popPct": 98.9
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 91.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8683,
+    "pres2020New": -8.6,
+    "pres2020Old": -43.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-49; it draws from the old HD-53 (78%), the old HD-51 (22%). Counties: lost Cumberland. 2020 presidential margin D+43.5 on the 2016\u20132020 lines \u2192 D+8.6 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 71.1,
+      "key": "147",
+      "popPct": 71.1
+     },
+     {
+      "areaPct": 28.9,
+      "key": "148",
+      "popPct": 28.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8797,
+    "pres2020New": 9.2,
+    "pres2020Old": 4.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-5; it draws from the old HD-147 (71%), the old HD-148 (29%). Counties: gained Aroostook (100%); lost York. 2020 presidential margin R+4.4 on the 2016\u20132020 lines \u2192 R+9.2 on the current lines.",
+    "toEra": "current"
+   },
+   "50": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "52",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sagadahoc",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 88.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8751,
+    "pres2020New": -36.9,
+    "pres2020Old": -43.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-50; it draws from the old HD-52 (100%). Counties: lost Cumberland. 2020 presidential margin D+43.3 on the 2016\u20132020 lines \u2192 D+36.9 on the current lines.",
+    "toEra": "current"
+   },
+   "51": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "54",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sagadahoc",
+      "popPct": 97.5
+     },
+     {
+      "county": "Cumberland",
+      "popPct": 2.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 7240,
+    "pres2020New": -24.1,
+    "pres2020Old": -24.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-51; it draws from the old HD-54 (100%). Spans Sagadahoc, Cumberland counties. 2020 presidential margin D+24.5 on the 2016\u20132020 lines \u2192 D+24.1 on the current lines.",
+    "toEra": "current"
+   },
+   "52": {
+    "contributors": [
+     {
+      "areaPct": 97.9,
+      "key": "55",
+      "popPct": 97.2
+     },
+     {
+      "areaPct": 2.1,
+      "key": "53",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sagadahoc",
+      "popPct": 97.4
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 2.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kennebec",
+      "popPct": 2.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8740,
+    "pres2020New": 1.0,
+    "pres2020Old": -36.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-52; it draws from the old HD-55 (97%), the old HD-53 (3%). Counties: gained Kennebec (3%). 2020 presidential margin D+36.9 on the 2016\u20132020 lines \u2192 R+1.0 on the current lines.",
+    "toEra": "current"
+   },
+   "53": {
+    "contributors": [
+     {
+      "areaPct": 40.1,
+      "key": "87",
+      "popPct": 50.6
+     },
+     {
+      "areaPct": 22.5,
+      "key": "88",
+      "popPct": 30.5
+     },
+     {
+      "areaPct": 37.4,
+      "key": "53",
+      "popPct": 18.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 80.3
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 18.8
+     },
+     {
+      "county": "Sagadahoc",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kennebec",
+      "popPct": 80.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9121,
+    "pres2020New": 13.3,
+    "pres2020Old": -6.2,
+    "retainedAreaPct": 37.4,
+    "retainedPopPct": 18.9,
+    "text": "A new footprint: only 19% of its population was in the 2016\u20132020 HD-53; it draws from the old HD-87 (51%), the old HD-88 (30%). Counties: gained Kennebec (80%). 2020 presidential margin D+6.2 on the 2016\u20132020 lines \u2192 R+13.3 on the current lines.",
+    "toEra": "current"
+   },
+   "54": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "83",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Sagadahoc",
+      "popPct": 95.1
+     },
+     {
+      "county": "Cumberland",
+      "popPct": 4.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8956,
+    "pres2020New": -7.6,
+    "pres2020Old": -24.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-54; it draws from the old HD-83 (100%). Counties: gained Kennebec (100%); lost Sagadahoc, Cumberland. 2020 presidential margin D+24.1 on the 2016\u20132020 lines \u2192 D+7.6 on the current lines.",
+    "toEra": "current"
+   },
+   "55": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "84",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Sagadahoc",
+      "popPct": 97.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8697,
+    "pres2020New": -9.5,
+    "pres2020Old": 2.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-55; it draws from the old HD-84 (100%). Counties: lost Sagadahoc. 2020 presidential margin R+2.6 on the 2016\u20132020 lines \u2192 D+9.5 on the current lines.",
+    "toEra": "current"
+   },
+   "56": {
+    "contributors": [
+     {
+      "areaPct": 98.9,
+      "key": "82",
+      "popPct": 98.8
+     },
+     {
+      "areaPct": 1.1,
+      "key": "81",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 80.7
+     },
+     {
+      "county": "Androscoggin",
+      "popPct": 19.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kennebec",
+      "popPct": 80.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Sagadahoc",
+      "popPct": 5.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9260,
+    "pres2020New": 18.4,
+    "pres2020Old": 12.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-56; it draws from the old HD-82 (99%), the old HD-81 (1%). Counties: gained Kennebec (81%); lost Sagadahoc. 2020 presidential margin R+12.2 on the 2016\u20132020 lines \u2192 R+18.4 on the current lines.",
+    "toEra": "current"
+   },
+   "57": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "81",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Androscoggin",
+      "popPct": 99.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8718,
+    "pres2020New": -8.3,
+    "pres2020Old": 26.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-57; it draws from the old HD-81 (100%). Counties: gained Kennebec (100%); lost Androscoggin. 2020 presidential margin R+26.4 on the 2016\u20132020 lines \u2192 D+8.3 on the current lines.",
+    "toEra": "current"
+   },
+   "58": {
+    "contributors": [
+     {
+      "areaPct": 80.2,
+      "key": "76",
+      "popPct": 84.3
+     },
+     {
+      "areaPct": 19.8,
+      "key": "113",
+      "popPct": 15.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 84.3
+     },
+     {
+      "county": "Franklin",
+      "popPct": 15.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kennebec",
+      "popPct": 84.3
+     },
+     {
+      "county": "Franklin",
+      "popPct": 15.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9315,
+    "pres2020New": 5.3,
+    "pres2020Old": 1.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-58; it draws from the old HD-76 (84%), the old HD-113 (16%). Counties: gained Kennebec (84%), Franklin (16%); lost Androscoggin. 2020 presidential margin R+1.3 on the 2016\u20132020 lines \u2192 R+5.3 on the current lines.",
+    "toEra": "current"
+   },
+   "59": {
+    "contributors": [
+     {
+      "areaPct": 98.1,
+      "key": "86",
+      "popPct": 98.0
+     },
+     {
+      "areaPct": 1.8,
+      "key": "85",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9112,
+    "pres2020New": -10.9,
+    "pres2020Old": -13.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-59; it draws from the old HD-86 (98%), the old HD-85 (2%). Counties: gained Kennebec (100%); lost Androscoggin. 2020 presidential margin D+13.0 on the 2016\u20132020 lines \u2192 D+10.9 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 17.7,
+      "key": "146",
+      "popPct": 59.9
+     },
+     {
+      "areaPct": 79.0,
+      "key": "145",
+      "popPct": 40.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8732,
+    "pres2020New": 37.8,
+    "pres2020Old": -12.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-6; it draws from the old HD-146 (60%), the old HD-145 (40%). Counties: gained Aroostook (100%); lost York. 2020 presidential margin D+12.6 on the 2016\u20132020 lines \u2192 R+37.8 on the current lines.",
+    "toEra": "current"
+   },
+   "60": {
+    "contributors": [
+     {
+      "areaPct": 62.5,
+      "key": "85",
+      "popPct": 70.0
+     },
+     {
+      "areaPct": 37.5,
+      "key": "80",
+      "popPct": 30.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9787,
+    "pres2020New": -12.4,
+    "pres2020Old": -33.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-60; it draws from the old HD-85 (70%), the old HD-80 (30%). Counties: gained Kennebec (100%); lost Androscoggin. 2020 presidential margin D+33.0 on the 2016\u20132020 lines \u2192 D+12.4 on the current lines.",
+    "toEra": "current"
+   },
+   "61": {
+    "contributors": [
+     {
+      "areaPct": 52.8,
+      "key": "80",
+      "popPct": 51.0
+     },
+     {
+      "areaPct": 47.1,
+      "key": "77",
+      "popPct": 49.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8869,
+    "pres2020New": 14.4,
+    "pres2020Old": -21.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-61; it draws from the old HD-80 (51%), the old HD-77 (49%). Counties: gained Kennebec (100%); lost Androscoggin. 2020 presidential margin D+21.4 on the 2016\u20132020 lines \u2192 R+14.4 on the current lines.",
+    "toEra": "current"
+   },
+   "62": {
+    "contributors": [
+     {
+      "areaPct": 35.6,
+      "key": "79",
+      "popPct": 47.9
+     },
+     {
+      "areaPct": 37.0,
+      "key": "80",
+      "popPct": 35.1
+     },
+     {
+      "areaPct": 27.3,
+      "key": "96",
+      "popPct": 17.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 76.4
+     },
+     {
+      "county": "Waldo",
+      "popPct": 16.8
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 6.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kennebec",
+      "popPct": 76.4
+     },
+     {
+      "county": "Waldo",
+      "popPct": 16.8
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 6.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9211,
+    "pres2020New": 17.4,
+    "pres2020Old": -10.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-62; it draws from the old HD-79 (48%), the old HD-80 (35%), the old HD-96 (17%). Counties: gained Kennebec (76%), Waldo (17%), Lincoln (7%); lost Androscoggin. 2020 presidential margin D+10.7 on the 2016\u20132020 lines \u2192 R+17.4 on the current lines.",
+    "toEra": "current"
+   },
+   "63": {
+    "contributors": [
+     {
+      "areaPct": 34.2,
+      "key": "78",
+      "popPct": 73.7
+     },
+     {
+      "areaPct": 45.5,
+      "key": "79",
+      "popPct": 19.5
+     },
+     {
+      "areaPct": 20.3,
+      "key": "99",
+      "popPct": 6.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 93.1
+     },
+     {
+      "county": "Waldo",
+      "popPct": 6.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kennebec",
+      "popPct": 93.1
+     },
+     {
+      "county": "Waldo",
+      "popPct": 6.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 10476,
+    "pres2020New": 9.6,
+    "pres2020Old": -4.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-63; it draws from the old HD-78 (74%), the old HD-79 (20%), the old HD-99 (7%). Counties: gained Kennebec (93%), Waldo (7%); lost Androscoggin. 2020 presidential margin D+4.1 on the 2016\u20132020 lines \u2192 R+9.6 on the current lines.",
+    "toEra": "current"
+   },
+   "64": {
+    "contributors": [
+     {
+      "areaPct": 80.7,
+      "key": "110",
+      "popPct": 86.2
+     },
+     {
+      "areaPct": 2.9,
+      "key": "109",
+      "popPct": 10.5
+     },
+     {
+      "areaPct": 16.4,
+      "key": "78",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 7426,
+    "pres2020New": -29.3,
+    "pres2020Old": -6.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-64; it draws from the old HD-110 (86%), the old HD-109 (10%), the old HD-78 (3%). Counties: gained Kennebec (100%); lost Androscoggin. 2020 presidential margin D+6.6 on the 2016\u20132020 lines \u2192 D+29.3 on the current lines.",
+    "toEra": "current"
+   },
+   "65": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "109",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 62.8
+     },
+     {
+      "county": "Androscoggin",
+      "popPct": 37.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8627,
+    "pres2020New": -30.7,
+    "pres2020Old": 4.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-65; it draws from the old HD-109 (100%). Counties: gained Kennebec (100%); lost Cumberland, Androscoggin. 2020 presidential margin R+4.0 on the 2016\u20132020 lines \u2192 D+30.7 on the current lines.",
+    "toEra": "current"
+   },
+   "66": {
+    "contributors": [
+     {
+      "areaPct": 20.0,
+      "key": "77",
+      "popPct": 54.2
+     },
+     {
+      "areaPct": 7.0,
+      "key": "110",
+      "popPct": 20.4
+     },
+     {
+      "areaPct": 45.2,
+      "key": "108",
+      "popPct": 18.7
+     },
+     {
+      "areaPct": 27.8,
+      "key": "112",
+      "popPct": 6.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 74.3
+     },
+     {
+      "county": "Somerset",
+      "popPct": 25.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Kennebec",
+      "popPct": 74.3
+     },
+     {
+      "county": "Somerset",
+      "popPct": 25.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 67.0
+     },
+     {
+      "county": "Androscoggin",
+      "popPct": 32.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8753,
+    "pres2020New": 8.6,
+    "pres2020Old": 3.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-66; it draws from the old HD-77 (54%), the old HD-110 (20%), the old HD-108 (19%) and 1 more. Counties: gained Kennebec (74%), Somerset (25%); lost Cumberland, Androscoggin. 2020 presidential margin R+3.7 on the 2016\u20132020 lines \u2192 R+8.6 on the current lines.",
+    "toEra": "current"
+   },
+   "67": {
+    "contributors": [
+     {
+      "areaPct": 65.2,
+      "key": "108",
+      "popPct": 70.5
+     },
+     {
+      "areaPct": 32.6,
+      "key": "79",
+      "popPct": 27.7
+     },
+     {
+      "areaPct": 2.2,
+      "key": "78",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Somerset",
+      "popPct": 68.4
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 31.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Somerset",
+      "popPct": 68.4
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 31.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9199,
+    "pres2020New": 15.4,
+    "pres2020Old": -2.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-67; it draws from the old HD-108 (70%), the old HD-79 (28%), the old HD-78 (2%). Counties: gained Somerset (68%), Kennebec (32%); lost Cumberland. 2020 presidential margin D+2.0 on the 2016\u20132020 lines \u2192 R+15.4 on the current lines.",
+    "toEra": "current"
+   },
+   "68": {
+    "contributors": [
+     {
+      "areaPct": 54.8,
+      "key": "106",
+      "popPct": 77.5
+     },
+     {
+      "areaPct": 45.2,
+      "key": "99",
+      "popPct": 22.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Somerset",
+      "popPct": 43.1
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 34.8
+     },
+     {
+      "county": "Waldo",
+      "popPct": 22.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Somerset",
+      "popPct": 43.1
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 34.8
+     },
+     {
+      "county": "Waldo",
+      "popPct": 22.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 78.8
+     },
+     {
+      "county": "York",
+      "popPct": 19.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9392,
+    "pres2020New": 20.5,
+    "pres2020Old": 14.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-68; it draws from the old HD-106 (78%), the old HD-99 (22%). Counties: gained Somerset (43%), Kennebec (35%), Waldo (22%); lost Cumberland, York. 2020 presidential margin R+14.6 on the 2016\u20132020 lines \u2192 R+20.5 on the current lines.",
+    "toEra": "current"
+   },
+   "69": {
+    "contributors": [
+     {
+      "areaPct": 89.4,
+      "key": "105",
+      "popPct": 89.9
+     },
+     {
+      "areaPct": 10.5,
+      "key": "106",
+      "popPct": 10.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Somerset",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Somerset",
+      "popPct": 99.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 84.6
+     },
+     {
+      "county": "Oxford",
+      "popPct": 15.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8752,
+    "pres2020New": 37.4,
+    "pres2020Old": -1.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-69; it draws from the old HD-105 (90%), the old HD-106 (10%). Counties: gained Somerset (100%); lost Cumberland, Oxford. 2020 presidential margin D+1.9 on the 2016\u20132020 lines \u2192 R+37.4 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 23.0,
+      "key": "144",
+      "popPct": 69.8
+     },
+     {
+      "areaPct": 77.0,
+      "key": "145",
+      "popPct": 30.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8671,
+    "pres2020New": 30.3,
+    "pres2020Old": -14.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-7; it draws from the old HD-144 (70%), the old HD-145 (30%). Counties: gained Aroostook (100%); lost York. 2020 presidential margin D+14.6 on the 2016\u20132020 lines \u2192 R+30.3 on the current lines.",
+    "toEra": "current"
+   },
+   "70": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "107",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Somerset",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Somerset",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Oxford",
+      "popPct": 99.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8620,
+    "pres2020New": 7.7,
+    "pres2020Old": 0.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-70; it draws from the old HD-107 (100%). Counties: gained Somerset (100%); lost Oxford. 2020 presidential margin R+0.6 on the 2016\u20132020 lines \u2192 R+7.7 on the current lines.",
+    "toEra": "current"
+   },
+   "71": {
+    "contributors": [
+     {
+      "areaPct": 71.4,
+      "key": "111",
+      "popPct": 84.8
+     },
+     {
+      "areaPct": 27.9,
+      "key": "118",
+      "popPct": 14.1
+     },
+     {
+      "areaPct": 0.8,
+      "key": "107",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Somerset",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Somerset",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Oxford",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9321,
+    "pres2020New": 21.7,
+    "pres2020Old": 3.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-71; it draws from the old HD-111 (85%), the old HD-118 (14%), the old HD-107 (1%). Counties: gained Somerset (100%); lost Oxford. 2020 presidential margin R+3.2 on the 2016\u20132020 lines \u2192 R+21.7 on the current lines.",
+    "toEra": "current"
+   },
+   "72": {
+    "contributors": [
+     {
+      "areaPct": 95.3,
+      "key": "118",
+      "popPct": 56.7
+     },
+     {
+      "areaPct": 2.0,
+      "key": "112",
+      "popPct": 26.4
+     },
+     {
+      "areaPct": 1.7,
+      "key": "111",
+      "popPct": 11.3
+     },
+     {
+      "areaPct": 1.0,
+      "key": "105",
+      "popPct": 5.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Somerset",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Somerset",
+      "popPct": 99.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Oxford",
+      "popPct": 65.7
+     },
+     {
+      "county": "Androscoggin",
+      "popPct": 33.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8665,
+    "pres2020New": 31.2,
+    "pres2020Old": 19.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-72; it draws from the old HD-118 (57%), the old HD-112 (26%), the old HD-111 (11%) and 1 more. Counties: gained Somerset (100%); lost Oxford, Androscoggin. 2020 presidential margin R+19.9 on the 2016\u20132020 lines \u2192 R+31.2 on the current lines.",
+    "toEra": "current"
+   },
+   "73": {
+    "contributors": [
+     {
+      "areaPct": 54.7,
+      "key": "117",
+      "popPct": 45.9
+     },
+     {
+      "areaPct": 12.6,
+      "key": "112",
+      "popPct": 39.2
+     },
+     {
+      "areaPct": 32.7,
+      "key": "118",
+      "popPct": 14.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Franklin",
+      "popPct": 68.5
+     },
+     {
+      "county": "Oxford",
+      "popPct": 17.4
+     },
+     {
+      "county": "Somerset",
+      "popPct": 14.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Franklin",
+      "popPct": 68.5
+     },
+     {
+      "county": "Somerset",
+      "popPct": 14.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8829,
+    "pres2020New": 11.6,
+    "pres2020Old": 10.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-73; it draws from the old HD-117 (46%), the old HD-112 (39%), the old HD-118 (15%). Counties: gained Franklin (68%), Somerset (14%). 2020 presidential margin R+10.5 on the 2016\u20132020 lines \u2192 R+11.6 on the current lines.",
+    "toEra": "current"
+   },
+   "74": {
+    "contributors": [
+     {
+      "areaPct": 47.3,
+      "key": "114",
+      "popPct": 76.4
+     },
+     {
+      "areaPct": 52.7,
+      "key": "112",
+      "popPct": 23.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Franklin",
+      "popPct": 91.3
+     },
+     {
+      "county": "Somerset",
+      "popPct": 8.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Somerset",
+      "popPct": 8.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Androscoggin",
+      "popPct": 45.7
+     },
+     {
+      "county": "Oxford",
+      "popPct": 2.8
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9153,
+    "pres2020New": 13.1,
+    "pres2020Old": 10.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-74; it draws from the old HD-114 (76%), the old HD-112 (24%). Counties: gained Somerset (9%); lost Androscoggin, Oxford. 2020 presidential margin R+10.7 on the 2016\u20132020 lines \u2192 R+13.1 on the current lines.",
+    "toEra": "current"
+   },
+   "75": {
+    "contributors": [
+     {
+      "areaPct": 59.8,
+      "key": "113",
+      "popPct": 85.1
+     },
+     {
+      "areaPct": 40.2,
+      "key": "114",
+      "popPct": 14.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Franklin",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Franklin",
+      "popPct": 99.6
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Androscoggin",
+      "popPct": 99.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8920,
+    "pres2020New": -11.8,
+    "pres2020Old": 21.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-75; it draws from the old HD-113 (85%), the old HD-114 (15%). Counties: gained Franklin (100%); lost Androscoggin. 2020 presidential margin R+21.1 on the 2016\u20132020 lines \u2192 D+11.8 on the current lines.",
+    "toEra": "current"
+   },
+   "76": {
+    "contributors": [
+     {
+      "areaPct": 79.3,
+      "key": "74",
+      "popPct": 87.9
+     },
+     {
+      "areaPct": 20.7,
+      "key": "75",
+      "popPct": 12.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Androscoggin",
+      "popPct": 50.2
+     },
+     {
+      "county": "Franklin",
+      "popPct": 47.1
+     },
+     {
+      "county": "Oxford",
+      "popPct": 2.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Androscoggin",
+      "popPct": 50.2
+     },
+     {
+      "county": "Franklin",
+      "popPct": 47.1
+     },
+     {
+      "county": "Oxford",
+      "popPct": 2.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kennebec",
+      "popPct": 99.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9394,
+    "pres2020New": 11.0,
+    "pres2020Old": 0.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-76; it draws from the old HD-74 (88%), the old HD-75 (12%). Counties: gained Androscoggin (50%), Franklin (47%), Oxford (2%); lost Kennebec. 2020 presidential margin R+0.6 on the 2016\u20132020 lines \u2192 R+11.0 on the current lines.",
+    "toEra": "current"
+   },
+   "77": {
+    "contributors": [
+     {
+      "areaPct": 96.1,
+      "key": "116",
+      "popPct": 95.5
+     },
+     {
+      "areaPct": 3.9,
+      "key": "74",
+      "popPct": 4.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Oxford",
+      "popPct": 95.8
+     },
+     {
+      "county": "Androscoggin",
+      "popPct": 4.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Oxford",
+      "popPct": 95.8
+     },
+     {
+      "county": "Androscoggin",
+      "popPct": 4.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kennebec",
+      "popPct": 99.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9238,
+    "pres2020New": 21.8,
+    "pres2020Old": 10.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-77; it draws from the old HD-116 (96%), the old HD-74 (4%). Counties: gained Oxford (96%), Androscoggin (4%); lost Kennebec. 2020 presidential margin R+10.9 on the 2016\u20132020 lines \u2192 R+21.8 on the current lines.",
+    "toEra": "current"
+   },
+   "78": {
+    "contributors": [
+     {
+      "areaPct": 50.6,
+      "key": "115",
+      "popPct": 68.8
+     },
+     {
+      "areaPct": 49.4,
+      "key": "117",
+      "popPct": 31.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Oxford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Oxford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kennebec",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9262,
+    "pres2020New": 1.0,
+    "pres2020Old": 3.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-78; it draws from the old HD-115 (69%), the old HD-117 (31%). Counties: gained Oxford (100%); lost Kennebec. 2020 presidential margin R+3.7 on the 2016\u20132020 lines \u2192 R+1.0 on the current lines.",
+    "toEra": "current"
+   },
+   "79": {
+    "contributors": [
+     {
+      "areaPct": 26.1,
+      "key": "73",
+      "popPct": 55.7
+     },
+     {
+      "areaPct": 58.4,
+      "key": "115",
+      "popPct": 25.3
+     },
+     {
+      "areaPct": 15.5,
+      "key": "71",
+      "popPct": 19.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Oxford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Oxford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kennebec",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9291,
+    "pres2020New": 12.3,
+    "pres2020Old": 19.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-79; it draws from the old HD-73 (56%), the old HD-115 (25%), the old HD-71 (19%). Counties: gained Oxford (100%); lost Kennebec. 2020 presidential margin R+19.4 on the 2016\u20132020 lines \u2192 R+12.3 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 53.8,
+      "key": "141",
+      "popPct": 41.8
+     },
+     {
+      "areaPct": 38.1,
+      "key": "144",
+      "popPct": 32.9
+     },
+     {
+      "areaPct": 8.1,
+      "key": "145",
+      "popPct": 25.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Aroostook",
+      "popPct": 53.8
+     },
+     {
+      "county": "Penobscot",
+      "popPct": 32.5
+     },
+     {
+      "county": "Washington",
+      "popPct": 13.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Aroostook",
+      "popPct": 53.8
+     },
+     {
+      "county": "Penobscot",
+      "popPct": 32.5
+     },
+     {
+      "county": "Washington",
+      "popPct": 13.7
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8725,
+    "pres2020New": 48.0,
+    "pres2020Old": -32.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-8; it draws from the old HD-141 (42%), the old HD-144 (33%), the old HD-145 (25%). Counties: gained Aroostook (54%), Penobscot (32%), Washington (14%); lost York. 2020 presidential margin D+32.9 on the 2016\u20132020 lines \u2192 R+48.0 on the current lines.",
+    "toEra": "current"
+   },
+   "80": {
+    "contributors": [
+     {
+      "areaPct": 58.8,
+      "key": "72",
+      "popPct": 65.5
+     },
+     {
+      "areaPct": 41.2,
+      "key": "73",
+      "popPct": 34.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Oxford",
+      "popPct": 99.2
+     },
+     {
+      "county": "Cumberland",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Oxford",
+      "popPct": 99.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kennebec",
+      "popPct": 94.2
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 5.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9288,
+    "pres2020New": 18.6,
+    "pres2020Old": 11.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-80; it draws from the old HD-72 (66%), the old HD-73 (34%). Counties: gained Oxford (99%); lost Kennebec, Lincoln. 2020 presidential margin R+11.3 on the 2016\u20132020 lines \u2192 R+18.6 on the current lines.",
+    "toEra": "current"
+   },
+   "81": {
+    "contributors": [
+     {
+      "areaPct": 39.4,
+      "key": "71",
+      "popPct": 77.7
+     },
+     {
+      "areaPct": 60.6,
+      "key": "117",
+      "popPct": 22.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Oxford",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Oxford",
+      "popPct": 99.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9072,
+    "pres2020New": -0.7,
+    "pres2020Old": -8.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-81; it draws from the old HD-71 (78%), the old HD-117 (22%). Counties: gained Oxford (100%); lost Kennebec. 2020 presidential margin D+8.0 on the 2016\u20132020 lines \u2192 D+0.7 on the current lines.",
+    "toEra": "current"
+   },
+   "82": {
+    "contributors": [
+     {
+      "areaPct": 98.6,
+      "key": "70",
+      "popPct": 99.2
+     },
+     {
+      "areaPct": 1.4,
+      "key": "117",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Oxford",
+      "popPct": 99.3
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Oxford",
+      "popPct": 99.3
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kennebec",
+      "popPct": 80.5
+     },
+     {
+      "county": "Androscoggin",
+      "popPct": 19.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9313,
+    "pres2020New": 0.6,
+    "pres2020Old": 18.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-82; it draws from the old HD-70 (99%), the old HD-117 (1%). Counties: gained Oxford (99%); lost Kennebec, Androscoggin. 2020 presidential margin R+18.6 on the 2016\u20132020 lines \u2192 R+0.6 on the current lines.",
+    "toEra": "current"
+   },
+   "83": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "69",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 84.6
+     },
+     {
+      "county": "Oxford",
+      "popPct": 15.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 84.6
+     },
+     {
+      "county": "Oxford",
+      "popPct": 15.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9062,
+    "pres2020New": -1.9,
+    "pres2020Old": -7.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-83; it draws from the old HD-69 (100%). Counties: gained Cumberland (85%), Oxford (15%); lost Kennebec. 2020 presidential margin D+7.6 on the 2016\u20132020 lines \u2192 D+1.9 on the current lines.",
+    "toEra": "current"
+   },
+   "84": {
+    "contributors": [
+     {
+      "areaPct": 88.8,
+      "key": "68",
+      "popPct": 78.9
+     },
+     {
+      "areaPct": 11.2,
+      "key": "23",
+      "popPct": 21.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 97.9
+     },
+     {
+      "county": "Oxford",
+      "popPct": 1.2
+     },
+     {
+      "county": "York",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 97.9
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9305,
+    "pres2020New": 14.2,
+    "pres2020Old": -9.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-84; it draws from the old HD-68 (79%), the old HD-23 (21%). Counties: gained Cumberland (98%); lost Kennebec. 2020 presidential margin D+9.5 on the 2016\u20132020 lines \u2192 R+14.2 on the current lines.",
+    "toEra": "current"
+   },
+   "85": {
+    "contributors": [
+     {
+      "areaPct": 92.6,
+      "key": "23",
+      "popPct": 92.7
+     },
+     {
+      "areaPct": 7.4,
+      "key": "22",
+      "popPct": 7.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 98.5
+     },
+     {
+      "county": "York",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 98.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8283,
+    "pres2020New": 3.9,
+    "pres2020Old": -14.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-85; it draws from the old HD-23 (93%), the old HD-22 (7%). Counties: gained Cumberland (98%); lost Kennebec. 2020 presidential margin D+14.7 on the 2016\u20132020 lines \u2192 R+3.9 on the current lines.",
+    "toEra": "current"
+   },
+   "86": {
+    "contributors": [
+     {
+      "areaPct": 72.6,
+      "key": "66",
+      "popPct": 74.0
+     },
+     {
+      "areaPct": 27.3,
+      "key": "67",
+      "popPct": 26.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 92.3
+     },
+     {
+      "county": "Androscoggin",
+      "popPct": 7.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 92.3
+     },
+     {
+      "county": "Androscoggin",
+      "popPct": 7.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8962,
+    "pres2020New": 0.7,
+    "pres2020Old": -10.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-86; it draws from the old HD-66 (74%), the old HD-67 (26%). Counties: gained Cumberland (92%), Androscoggin (7%); lost Kennebec. 2020 presidential margin D+10.7 on the 2016\u20132020 lines \u2192 R+0.7 on the current lines.",
+    "toEra": "current"
+   },
+   "87": {
+    "contributors": [
+     {
+      "areaPct": 21.3,
+      "key": "72",
+      "popPct": 37.5
+     },
+     {
+      "areaPct": 44.7,
+      "key": "65",
+      "popPct": 35.5
+     },
+     {
+      "areaPct": 34.0,
+      "key": "66",
+      "popPct": 27.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Androscoggin",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Androscoggin",
+      "popPct": 99.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Kennebec",
+      "popPct": 50.2
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 47.8
+     },
+     {
+      "county": "Sagadahoc",
+      "popPct": 2.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8269,
+    "pres2020New": 13.9,
+    "pres2020Old": 4.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-87; it draws from the old HD-72 (38%), the old HD-65 (36%), the old HD-66 (27%). Counties: gained Androscoggin (100%); lost Kennebec, Lincoln, Sagadahoc. 2020 presidential margin R+4.2 on the 2016\u20132020 lines \u2192 R+13.9 on the current lines.",
+    "toEra": "current"
+   },
+   "88": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "63",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Lincoln",
+      "popPct": 68.3
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 31.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 13954,
+    "pres2020New": -4.1,
+    "pres2020Old": 9.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-88; it draws from the old HD-63 (100%). Counties: gained Androscoggin (100%); lost Lincoln, Kennebec. 2020 presidential margin R+9.4 on the 2016\u20132020 lines \u2192 D+4.1 on the current lines.",
+    "toEra": "current"
+   },
+   "89": {
+    "contributors": [
+     {
+      "areaPct": 93.3,
+      "key": "62",
+      "popPct": 90.6
+     },
+     {
+      "areaPct": 6.6,
+      "key": "64",
+      "popPct": 9.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Lincoln",
+      "popPct": 99.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 711,
+    "pres2020New": -10.2,
+    "pres2020Old": -18.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-89; it draws from the old HD-62 (91%), the old HD-64 (9%). Counties: gained Androscoggin (100%); lost Lincoln. 2020 presidential margin D+18.1 on the 2016\u20132020 lines \u2192 D+10.2 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 74.7,
+      "key": "140",
+      "popPct": 82.6
+     },
+     {
+      "areaPct": 4.1,
+      "key": "139",
+      "popPct": 14.4
+     },
+     {
+      "areaPct": 21.2,
+      "key": "141",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Washington",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8943,
+    "pres2020New": 4.5,
+    "pres2020Old": -31.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-9; it draws from the old HD-140 (83%), the old HD-139 (14%), the old HD-141 (3%). Counties: gained Washington (100%); lost York. 2020 presidential margin D+31.0 on the 2016\u20132020 lines \u2192 R+4.5 on the current lines.",
+    "toEra": "current"
+   },
+   "90": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "64",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Lincoln",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 12192,
+    "pres2020New": -6.5,
+    "pres2020Old": -29.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-90; it draws from the old HD-64 (100%). Counties: gained Androscoggin (100%); lost Lincoln. 2020 presidential margin D+29.8 on the 2016\u20132020 lines \u2192 D+6.5 on the current lines.",
+    "toEra": "current"
+   },
+   "91": {
+    "contributors": [
+     {
+      "areaPct": 80.5,
+      "key": "75",
+      "popPct": 87.7
+     },
+     {
+      "areaPct": 19.4,
+      "key": "76",
+      "popPct": 12.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Androscoggin",
+      "popPct": 87.1
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 12.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Androscoggin",
+      "popPct": 87.1
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 12.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Lincoln",
+      "popPct": 56.7
+     },
+     {
+      "county": "Knox",
+      "popPct": 43.1
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9208,
+    "pres2020New": 15.8,
+    "pres2020Old": 10.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-91; it draws from the old HD-75 (88%), the old HD-76 (12%). Counties: gained Androscoggin (87%), Kennebec (12%); lost Lincoln, Knox. 2020 presidential margin R+10.4 on the 2016\u20132020 lines \u2192 R+15.8 on the current lines.",
+    "toEra": "current"
+   },
+   "92": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "57",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Androscoggin",
+      "popPct": 99.2
+     },
+     {
+      "county": "Sagadahoc",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Androscoggin",
+      "popPct": 99.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Knox",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9420,
+    "pres2020New": 26.4,
+    "pres2020Old": -15.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-92; it draws from the old HD-57 (100%). Counties: gained Androscoggin (99%); lost Knox. 2020 presidential margin D+15.7 on the 2016\u20132020 lines \u2192 R+26.4 on the current lines.",
+    "toEra": "current"
+   },
+   "93": {
+    "contributors": [
+     {
+      "areaPct": 80.7,
+      "key": "59",
+      "popPct": 67.0
+     },
+     {
+      "areaPct": 19.1,
+      "key": "60",
+      "popPct": 33.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Knox",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8833,
+    "pres2020New": -24.9,
+    "pres2020Old": -25.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-93; it draws from the old HD-59 (67%), the old HD-60 (33%). Counties: gained Androscoggin (100%); lost Knox. 2020 presidential margin D+25.5 on the 2016\u20132020 lines \u2192 D+24.9 on the current lines.",
+    "toEra": "current"
+   },
+   "94": {
+    "contributors": [
+     {
+      "areaPct": 11.6,
+      "key": "60",
+      "popPct": 50.3
+     },
+     {
+      "areaPct": 85.7,
+      "key": "59",
+      "popPct": 40.5
+     },
+     {
+      "areaPct": 2.6,
+      "key": "61",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Knox",
+      "popPct": 90.0
+     },
+     {
+      "county": "Waldo",
+      "popPct": 10.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 10183,
+    "pres2020New": -18.5,
+    "pres2020Old": -47.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-94; it draws from the old HD-60 (50%), the old HD-59 (40%), the old HD-61 (9%). Counties: gained Androscoggin (100%); lost Knox, Waldo. 2020 presidential margin D+47.4 on the 2016\u20132020 lines \u2192 D+18.5 on the current lines.",
+    "toEra": "current"
+   },
+   "95": {
+    "contributors": [
+     {
+      "areaPct": 76.2,
+      "key": "61",
+      "popPct": 84.9
+     },
+     {
+      "areaPct": 23.4,
+      "key": "59",
+      "popPct": 14.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Knox",
+      "popPct": 99.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8078,
+    "pres2020New": -19.0,
+    "pres2020Old": 1.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-95; it draws from the old HD-61 (85%), the old HD-59 (15%). Counties: gained Androscoggin (100%); lost Knox. 2020 presidential margin R+1.4 on the 2016\u20132020 lines \u2192 D+19.0 on the current lines.",
+    "toEra": "current"
+   },
+   "96": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "58",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Waldo",
+      "popPct": 99.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 10006,
+    "pres2020New": 1.3,
+    "pres2020Old": -3.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-96; it draws from the old HD-58 (100%). Counties: gained Androscoggin (100%); lost Waldo. 2020 presidential margin D+3.2 on the 2016\u20132020 lines \u2192 R+1.3 on the current lines.",
+    "toEra": "current"
+   },
+   "97": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "56",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Androscoggin",
+      "popPct": 97.5
+     },
+     {
+      "county": "Sagadahoc",
+      "popPct": 2.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Androscoggin",
+      "popPct": 97.5
+     },
+     {
+      "county": "Sagadahoc",
+      "popPct": 2.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Waldo",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9142,
+    "pres2020New": 12.3,
+    "pres2020Old": -31.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-97; it draws from the old HD-56 (100%). Counties: gained Androscoggin (98%), Sagadahoc (2%); lost Waldo. 2020 presidential margin D+31.4 on the 2016\u20132020 lines \u2192 R+12.3 on the current lines.",
+    "toEra": "current"
+   },
+   "98": {
+    "contributors": [
+     {
+      "areaPct": 62.8,
+      "key": "46",
+      "popPct": 53.9
+     },
+     {
+      "areaPct": 10.2,
+      "key": "54",
+      "popPct": 24.3
+     },
+     {
+      "areaPct": 15.7,
+      "key": "55",
+      "popPct": 10.1
+     },
+     {
+      "areaPct": 9.6,
+      "key": "48",
+      "popPct": 5.9
+     },
+     {
+      "areaPct": 1.7,
+      "key": "56",
+      "popPct": 5.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Androscoggin",
+      "popPct": 46.6
+     },
+     {
+      "county": "Sagadahoc",
+      "popPct": 34.1
+     },
+     {
+      "county": "Cumberland",
+      "popPct": 19.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Androscoggin",
+      "popPct": 46.6
+     },
+     {
+      "county": "Sagadahoc",
+      "popPct": 34.1
+     },
+     {
+      "county": "Cumberland",
+      "popPct": 19.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Waldo",
+      "popPct": 99.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9605,
+    "pres2020New": -7.6,
+    "pres2020Old": 7.4,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-98; it draws from the old HD-46 (54%), the old HD-54 (24%), the old HD-55 (10%) and 2 more. Counties: gained Androscoggin (47%), Sagadahoc (34%), Cumberland (19%); lost Waldo. 2020 presidential margin R+7.4 on the 2016\u20132020 lines \u2192 D+7.6 on the current lines.",
+    "toEra": "current"
+   },
+   "99": {
+    "contributors": [
+     {
+      "areaPct": 93.9,
+      "key": "51",
+      "popPct": 69.3
+     },
+     {
+      "areaPct": 6.1,
+      "key": "50",
+      "popPct": 30.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 97.2
+     },
+     {
+      "county": "Sagadahoc",
+      "popPct": 2.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 97.2
+     },
+     {
+      "county": "Sagadahoc",
+      "popPct": 2.8
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Waldo",
+      "popPct": 99.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 9726,
+    "pres2020New": -33.0,
+    "pres2020Old": 10.3,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-99; it draws from the old HD-51 (69%), the old HD-50 (31%). Counties: gained Cumberland (97%), Sagadahoc (3%); lost Waldo. 2020 presidential margin R+10.3 on the 2016\u20132020 lines \u2192 D+33.0 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 97.5,
+      "key": "1",
+      "popPct": 89.9
+     },
+     {
+      "areaPct": 2.5,
+      "key": "2",
+      "popPct": 10.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Aroostook",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 37641,
+    "pres2020New": 11.5,
+    "pres2020Old": 10.6,
+    "retainedAreaPct": 97.5,
+    "retainedPopPct": 89.9,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-1; gained the rest from the old SD-2 (10%). Entirely in Aroostook County. 2020 presidential margin R+10.6 on the 2016\u20132020 lines \u2192 R+11.5 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 68.1,
+      "key": "8",
+      "popPct": 68.5
+     },
+     {
+      "areaPct": 25.1,
+      "key": "10",
+      "popPct": 29.9
+     },
+     {
+      "areaPct": 6.7,
+      "key": "7",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 82.3
+     },
+     {
+      "county": "Hancock",
+      "popPct": 17.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Hancock",
+      "popPct": 17.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 40763,
+    "pres2020New": 9.2,
+    "pres2020Old": 25.0,
+    "retainedAreaPct": 25.1,
+    "retainedPopPct": 29.9,
+    "text": "A new footprint: only 30% of its population was in the 2016\u20132020 SD-10; it draws from the old SD-8 (68%), the old SD-7 (2%). Counties: gained Hancock (17%). 2020 presidential margin R+25.0 on the 2016\u20132020 lines \u2192 R+9.2 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 98.6,
+      "key": "11",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Waldo",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39666,
+    "pres2020New": -5.2,
+    "pres2020Old": -5.2,
+    "retainedAreaPct": 98.6,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Waldo County.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "12",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Knox",
+      "popPct": 98.9
+     },
+     {
+      "county": "Waldo",
+      "popPct": 1.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 38859,
+    "pres2020New": -21.4,
+    "pres2020Old": -21.6,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Knox, Waldo counties.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "13",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lincoln",
+      "popPct": 88.1
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 7.0
+     },
+     {
+      "county": "Knox",
+      "popPct": 4.3
+     },
+     {
+      "county": "Sagadahoc",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 37741,
+    "pres2020New": -8.1,
+    "pres2020Old": -8.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Lincoln, Kennebec, Knox, Sagadahoc counties.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 90.6,
+      "key": "14",
+      "popPct": 97.1
+     },
+     {
+      "areaPct": 9.4,
+      "key": "22",
+      "popPct": 2.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 99.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 38962,
+    "pres2020New": -2.3,
+    "pres2020Old": -1.7,
+    "retainedAreaPct": 90.6,
+    "retainedPopPct": 97.1,
+    "text": "Kept 97% of its population from the 2016\u20132020 SD-14; gained the rest from the old SD-22 (3%). Entirely in Kennebec County. 2020 presidential margin D+1.7 on the 2016\u20132020 lines \u2192 D+2.3 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 67.3,
+      "key": "15",
+      "popPct": 86.7
+     },
+     {
+      "areaPct": 32.7,
+      "key": "17",
+      "popPct": 13.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 37443,
+    "pres2020New": 0.4,
+    "pres2020Old": 0.4,
+    "retainedAreaPct": 67.3,
+    "retainedPopPct": 86.7,
+    "text": "Kept 87% of its population from the 2016\u20132020 SD-15; gained the rest from the old SD-17 (13%). Entirely in Kennebec County. 2020 presidential margin R+0.4 on the 2016\u20132020 lines \u2192 R+0.4 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 83.9,
+      "key": "16",
+      "popPct": 83.8
+     },
+     {
+      "areaPct": 16.1,
+      "key": "15",
+      "popPct": 16.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Kennebec",
+      "popPct": 83.5
+     },
+     {
+      "county": "Somerset",
+      "popPct": 16.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 38496,
+    "pres2020New": -6.3,
+    "pres2020Old": -3.1,
+    "retainedAreaPct": 83.9,
+    "retainedPopPct": 83.8,
+    "text": "Kept 84% of its population from the 2016\u20132020 SD-16; gained the rest from the old SD-15 (16%). Spans Kennebec, Somerset counties. 2020 presidential margin D+3.1 on the 2016\u20132020 lines \u2192 D+6.3 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 73.1,
+      "key": "22",
+      "popPct": 83.6
+     },
+     {
+      "areaPct": 17.6,
+      "key": "18",
+      "popPct": 13.4
+     },
+     {
+      "areaPct": 9.3,
+      "key": "17",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Androscoggin",
+      "popPct": 86.1
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 12.3
+     },
+     {
+      "county": "Sagadahoc",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Androscoggin",
+      "popPct": 86.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Franklin",
+      "popPct": 80.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 38751,
+    "pres2020New": 19.8,
+    "pres2020Old": 3.7,
+    "retainedAreaPct": 9.3,
+    "retainedPopPct": 3.0,
+    "text": "A new footprint: only 3% of its population was in the 2016\u20132020 SD-17; it draws from the old SD-22 (84%), the old SD-18 (13%). Counties: gained Androscoggin (86%); lost Franklin. 2020 presidential margin R+3.7 on the 2016\u20132020 lines \u2192 R+19.8 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 74.9,
+      "key": "19",
+      "popPct": 77.0
+     },
+     {
+      "areaPct": 7.0,
+      "key": "20",
+      "popPct": 14.9
+     },
+     {
+      "areaPct": 18.1,
+      "key": "18",
+      "popPct": 8.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Oxford",
+      "popPct": 65.6
+     },
+     {
+      "county": "Cumberland",
+      "popPct": 19.6
+     },
+     {
+      "county": "Androscoggin",
+      "popPct": 14.8
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Cumberland",
+      "popPct": 19.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39465,
+    "pres2020New": 5.6,
+    "pres2020Old": 10.9,
+    "retainedAreaPct": 18.1,
+    "retainedPopPct": 8.1,
+    "text": "A new footprint: only 8% of its population was in the 2016\u20132020 SD-18; it draws from the old SD-19 (77%), the old SD-20 (15%). Counties: gained Cumberland (20%). 2020 presidential margin R+10.9 on the 2016\u20132020 lines \u2192 R+5.6 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 59.1,
+      "key": "18",
+      "popPct": 74.1
+     },
+     {
+      "areaPct": 40.9,
+      "key": "17",
+      "popPct": 25.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Oxford",
+      "popPct": 74.6
+     },
+     {
+      "county": "Franklin",
+      "popPct": 25.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Franklin",
+      "popPct": 25.4
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Cumberland",
+      "popPct": 34.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 38926,
+    "pres2020New": 10.3,
+    "pres2020Old": 5.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-19; it draws from the old SD-18 (74%), the old SD-17 (26%). Counties: gained Franklin (25%); lost Cumberland. 2020 presidential margin R+5.8 on the 2016\u20132020 lines \u2192 R+10.3 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 83.8,
+      "key": "2",
+      "popPct": 78.7
+     },
+     {
+      "areaPct": 15.2,
+      "key": "5",
+      "popPct": 21.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Aroostook",
+      "popPct": 74.0
+     },
+     {
+      "county": "Penobscot",
+      "popPct": 26.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39830,
+    "pres2020New": 29.9,
+    "pres2020Old": 31.3,
+    "retainedAreaPct": 83.8,
+    "retainedPopPct": 78.7,
+    "text": "Kept 79% of its population from the 2016\u20132020 SD-2; gained the rest from the old SD-5 (21%). Spans Aroostook, Penobscot counties. 2020 presidential margin R+31.3 on the 2016\u20132020 lines \u2192 R+29.9 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 80.4,
+      "key": "20",
+      "popPct": 89.5
+     },
+     {
+      "areaPct": 19.5,
+      "key": "22",
+      "popPct": 10.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Androscoggin",
+      "popPct": 86.2
+     },
+     {
+      "county": "Cumberland",
+      "popPct": 13.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39851,
+    "pres2020New": -3.4,
+    "pres2020Old": -0.2,
+    "retainedAreaPct": 80.4,
+    "retainedPopPct": 89.5,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-20; gained the rest from the old SD-22 (10%). Spans Androscoggin, Cumberland counties. 2020 presidential margin D+0.2 on the 2016\u20132020 lines \u2192 D+3.4 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "21",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Androscoggin",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 37093,
+    "pres2020New": -14.1,
+    "pres2020Old": -14.1,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Androscoggin County.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 21.5,
+      "key": "26",
+      "popPct": 30.6
+     },
+     {
+      "areaPct": 34.0,
+      "key": "33",
+      "popPct": 28.8
+     },
+     {
+      "areaPct": 29.0,
+      "key": "19",
+      "popPct": 23.5
+     },
+     {
+      "areaPct": 8.0,
+      "key": "31",
+      "popPct": 10.1
+     },
+     {
+      "areaPct": 7.6,
+      "key": "34",
+      "popPct": 7.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 46.5
+     },
+     {
+      "county": "Cumberland",
+      "popPct": 45.0
+     },
+     {
+      "county": "Oxford",
+      "popPct": 8.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "York",
+      "popPct": 46.5
+     },
+     {
+      "county": "Cumberland",
+      "popPct": 45.0
+     },
+     {
+      "county": "Oxford",
+      "popPct": 8.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Androscoggin",
+      "popPct": 86.0
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 12.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 38414,
+    "pres2020New": 12.6,
+    "pres2020Old": 16.6,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-22; it draws from the old SD-26 (31%), the old SD-33 (29%), the old SD-19 (24%) and 2 more. Counties: gained York (46%), Cumberland (45%), Oxford (8%); lost Androscoggin, Kennebec. 2020 presidential margin R+16.6 on the 2016\u20132020 lines \u2192 R+12.6 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 86.5,
+      "key": "24",
+      "popPct": 85.7
+     },
+     {
+      "areaPct": 13.5,
+      "key": "25",
+      "popPct": 14.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 94.8
+     },
+     {
+      "county": "Sagadahoc",
+      "popPct": 4.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Lincoln",
+      "popPct": 4.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 43247,
+    "pres2020New": -41.4,
+    "pres2020Old": -15.2,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-23; it draws from the old SD-24 (86%), the old SD-25 (14%). Counties: lost Lincoln. 2020 presidential margin D+15.2 on the 2016\u20132020 lines \u2192 D+41.4 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "23",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sagadahoc",
+      "popPct": 93.6
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 4.4
+     },
+     {
+      "county": "Cumberland",
+      "popPct": 1.3
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lincoln",
+      "popPct": 4.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 38454,
+    "pres2020New": -15.2,
+    "pres2020Old": -38.1,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-24; it draws from the old SD-23 (100%). Counties: gained Lincoln (4%). 2020 presidential margin D+38.1 on the 2016\u20132020 lines \u2192 D+15.2 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 85.7,
+      "key": "25",
+      "popPct": 88.9
+     },
+     {
+      "areaPct": 14.3,
+      "key": "24",
+      "popPct": 11.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 36740,
+    "pres2020New": -31.2,
+    "pres2020Old": -35.9,
+    "retainedAreaPct": 85.7,
+    "retainedPopPct": 88.9,
+    "text": "Kept 89% of its population from the 2016\u20132020 SD-25; gained the rest from the old SD-24 (11%). Entirely in Cumberland County. 2020 presidential margin D+35.9 on the 2016\u20132020 lines \u2192 D+31.2 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 92.3,
+      "key": "26",
+      "popPct": 68.3
+     },
+     {
+      "areaPct": 3.0,
+      "key": "28",
+      "popPct": 19.3
+     },
+     {
+      "areaPct": 4.6,
+      "key": "25",
+      "popPct": 12.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39046,
+    "pres2020New": -11.9,
+    "pres2020Old": -0.2,
+    "retainedAreaPct": 92.3,
+    "retainedPopPct": 68.3,
+    "text": "Kept 68% of its population from the 2016\u20132020 SD-26; gained the rest from the old SD-28 (19%), the old SD-25 (12%). Entirely in Cumberland County. 2020 presidential margin D+0.2 on the 2016\u20132020 lines \u2192 D+11.9 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 84.3,
+      "key": "28",
+      "popPct": 83.7
+     },
+     {
+      "areaPct": 5.6,
+      "key": "27",
+      "popPct": 8.9
+     },
+     {
+      "areaPct": 10.1,
+      "key": "25",
+      "popPct": 7.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 36729,
+    "pres2020New": -50.4,
+    "pres2020Old": -72.5,
+    "retainedAreaPct": 5.6,
+    "retainedPopPct": 8.9,
+    "text": "A new footprint: only 9% of its population was in the 2016\u20132020 SD-27; it draws from the old SD-28 (84%), the old SD-25 (7%). Entirely in Cumberland County. 2020 presidential margin D+72.5 on the 2016\u20132020 lines \u2192 D+50.4 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 72.0,
+      "key": "27",
+      "popPct": 94.1
+     },
+     {
+      "areaPct": 28.0,
+      "key": "25",
+      "popPct": 5.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39627,
+    "pres2020New": -73.4,
+    "pres2020Old": -47.5,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-28; it draws from the old SD-27 (94%), the old SD-25 (6%). Entirely in Cumberland County. 2020 presidential margin D+47.5 on the 2016\u20132020 lines \u2192 D+73.4 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "29",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 43512,
+    "pres2020New": -48.4,
+    "pres2020Old": -48.0,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Cumberland County.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 45.2,
+      "key": "3",
+      "popPct": 57.2
+     },
+     {
+      "areaPct": 29.1,
+      "key": "10",
+      "popPct": 20.3
+     },
+     {
+      "areaPct": 14.8,
+      "key": "16",
+      "popPct": 15.4
+     },
+     {
+      "areaPct": 10.9,
+      "key": "4",
+      "popPct": 7.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Somerset",
+      "popPct": 64.6
+     },
+     {
+      "county": "Penobscot",
+      "popPct": 20.3
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 15.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Penobscot",
+      "popPct": 20.3
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39736,
+    "pres2020New": 22.9,
+    "pres2020Old": 20.2,
+    "retainedAreaPct": 45.2,
+    "retainedPopPct": 57.2,
+    "text": "Kept 57% of its population from the 2016\u20132020 SD-3; gained the rest from the old SD-10 (20%), the old SD-16 (15%), the old SD-4 (7%). Counties: gained Penobscot (20%). 2020 presidential margin R+20.2 on the 2016\u20132020 lines \u2192 R+22.9 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 97.1,
+      "key": "30",
+      "popPct": 97.3
+     },
+     {
+      "areaPct": 2.9,
+      "key": "29",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Cumberland",
+      "popPct": 99.2
+     },
+     {
+      "county": "York",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 33011,
+    "pres2020New": -24.1,
+    "pres2020Old": -18.8,
+    "retainedAreaPct": 97.1,
+    "retainedPopPct": 97.3,
+    "text": "Kept 97% of its population from the 2016\u20132020 SD-30; gained the rest from the old SD-29 (3%). Spans Cumberland, York counties. 2020 presidential margin D+18.8 on the 2016\u20132020 lines \u2192 D+24.1 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 69.9,
+      "key": "31",
+      "popPct": 81.1
+     },
+     {
+      "areaPct": 30.0,
+      "key": "30",
+      "popPct": 18.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 37690,
+    "pres2020New": -18.4,
+    "pres2020Old": -15.8,
+    "retainedAreaPct": 69.9,
+    "retainedPopPct": 81.1,
+    "text": "Kept 81% of its population from the 2016\u20132020 SD-31; gained the rest from the old SD-30 (19%). Entirely in York County. 2020 presidential margin D+15.8 on the 2016\u20132020 lines \u2192 D+18.4 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 81.1,
+      "key": "32",
+      "popPct": 87.6
+     },
+     {
+      "areaPct": 18.9,
+      "key": "31",
+      "popPct": 12.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 38239,
+    "pres2020New": -13.2,
+    "pres2020Old": -17.3,
+    "retainedAreaPct": 81.1,
+    "retainedPopPct": 87.6,
+    "text": "Kept 88% of its population from the 2016\u20132020 SD-32; gained the rest from the old SD-31 (12%). Entirely in York County. 2020 presidential margin D+17.3 on the 2016\u20132020 lines \u2192 D+13.2 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 55.8,
+      "key": "33",
+      "popPct": 75.8
+     },
+     {
+      "areaPct": 29.4,
+      "key": "34",
+      "popPct": 16.4
+     },
+     {
+      "areaPct": 14.7,
+      "key": "32",
+      "popPct": 7.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39460,
+    "pres2020New": 5.9,
+    "pres2020Old": 5.1,
+    "retainedAreaPct": 55.8,
+    "retainedPopPct": 75.8,
+    "text": "Kept 76% of its population from the 2016\u20132020 SD-33; gained the rest from the old SD-34 (16%), the old SD-32 (8%). Entirely in York County. 2020 presidential margin R+5.1 on the 2016\u20132020 lines \u2192 R+5.9 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 75.1,
+      "key": "34",
+      "popPct": 84.9
+     },
+     {
+      "areaPct": 20.3,
+      "key": "32",
+      "popPct": 9.2
+     },
+     {
+      "areaPct": 4.6,
+      "key": "35",
+      "popPct": 6.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39411,
+    "pres2020New": -16.8,
+    "pres2020Old": -8.9,
+    "retainedAreaPct": 75.1,
+    "retainedPopPct": 84.9,
+    "text": "Kept 85% of its population from the 2016\u20132020 SD-34; gained the rest from the old SD-32 (9%), the old SD-35 (6%). Entirely in York County. 2020 presidential margin D+8.9 on the 2016\u20132020 lines \u2192 D+16.8 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "35",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "York",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 39554,
+    "pres2020New": -30.0,
+    "pres2020Old": -28.4,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in York County.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 95.1,
+      "key": "4",
+      "popPct": 59.7
+     },
+     {
+      "areaPct": 4.9,
+      "key": "10",
+      "popPct": 40.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 58.8
+     },
+     {
+      "county": "Piscataquis",
+      "popPct": 41.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Somerset",
+      "popPct": 26.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 40798,
+    "pres2020New": 31.6,
+    "pres2020Old": 31.7,
+    "retainedAreaPct": 95.1,
+    "retainedPopPct": 59.7,
+    "text": "Kept 60% of its population from the 2016\u20132020 SD-4; gained the rest from the old SD-10 (40%). Counties: lost Somerset. 2020 presidential margin R+31.7 on the 2016\u20132020 lines \u2192 R+31.6 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 14.1,
+      "key": "17",
+      "popPct": 50.4
+     },
+     {
+      "areaPct": 80.0,
+      "key": "3",
+      "popPct": 33.1
+     },
+     {
+      "areaPct": 5.9,
+      "key": "4",
+      "popPct": 16.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Franklin",
+      "popPct": 48.9
+     },
+     {
+      "county": "Somerset",
+      "popPct": 46.6
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 4.5
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Franklin",
+      "popPct": 48.9
+     },
+     {
+      "county": "Somerset",
+      "popPct": 46.6
+     },
+     {
+      "county": "Kennebec",
+      "popPct": 4.5
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 39549,
+    "pres2020New": 14.8,
+    "pres2020Old": -6.7,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-5; it draws from the old SD-17 (50%), the old SD-3 (33%), the old SD-4 (16%). Counties: gained Franklin (49%), Somerset (47%), Kennebec (4%); lost Penobscot. 2020 presidential margin D+6.7 on the 2016\u20132020 lines \u2192 R+14.8 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 79.6,
+      "key": "6",
+      "popPct": 84.7
+     },
+     {
+      "areaPct": 12.2,
+      "key": "7",
+      "popPct": 15.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washington",
+      "popPct": 76.4
+     },
+     {
+      "county": "Hancock",
+      "popPct": 23.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 40704,
+    "pres2020New": 17.5,
+    "pres2020Old": 18.1,
+    "retainedAreaPct": 79.6,
+    "retainedPopPct": 84.7,
+    "text": "Kept 85% of its population from the 2016\u20132020 SD-6; gained the rest from the old SD-7 (15%). Spans Washington, Hancock counties. 2020 presidential margin R+18.1 on the 2016\u20132020 lines \u2192 R+17.5 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 80.3,
+      "key": "7",
+      "popPct": 86.4
+     },
+     {
+      "areaPct": 10.5,
+      "key": "8",
+      "popPct": 13.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hancock",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 38696,
+    "pres2020New": -22.6,
+    "pres2020Old": -17.4,
+    "retainedAreaPct": 80.3,
+    "retainedPopPct": 86.4,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-7; gained the rest from the old SD-8 (13%). Entirely in Hancock County. 2020 presidential margin D+17.4 on the 2016\u20132020 lines \u2192 D+22.6 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 30.6,
+      "key": "5",
+      "popPct": 75.1
+     },
+     {
+      "areaPct": 26.6,
+      "key": "8",
+      "popPct": 15.5
+     },
+     {
+      "areaPct": 34.3,
+      "key": "2",
+      "popPct": 5.5
+     },
+     {
+      "areaPct": 8.5,
+      "key": "4",
+      "popPct": 3.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Hancock",
+      "popPct": 29.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 38042,
+    "pres2020New": -3.2,
+    "pres2020Old": 9.6,
+    "retainedAreaPct": 26.6,
+    "retainedPopPct": 15.5,
+    "text": "A new footprint: only 16% of its population was in the 2016\u20132020 SD-8; it draws from the old SD-5 (75%), the old SD-2 (6%), the old SD-4 (4%). Counties: lost Hancock. 2020 presidential margin R+9.6 on the 2016\u20132020 lines \u2192 D+3.2 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "9",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Penobscot",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 38214,
+    "pres2020New": -12.3,
+    "pres2020Old": -12.3,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Penobscot County.",
+    "toEra": "current"
+   }
+  }
+ }
+}

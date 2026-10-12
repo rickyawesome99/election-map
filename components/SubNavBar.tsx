@@ -7,6 +7,7 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState, useSyncExter
 const TABS: { key: string; label: string; href?: string }[] = [
   { key: "overview",         label: "Overview" },
   { key: "forecast",         label: "Forecast" },
+  { key: "legislatures",     label: "Legislatures" },
   { key: "historical",       label: "Historical" },
   { key: "model",            label: "TPL" },
   { key: "analysis",         label: "Analysis",        href: "/analysis" },
@@ -17,6 +18,8 @@ const TABS: { key: string; label: string; href?: string }[] = [
 function getActiveTab(pathname: string): string | null {
   if (pathname === "/house" || pathname === "/senate" || pathname === "/governor"
     || pathname.startsWith("/house/") || pathname.startsWith("/senate/") || pathname.startsWith("/governor/")) return "forecast";
+  // The national board and every state's chamber pages (/states/ks/legislature/house).
+  if (pathname === "/legislatures" || /^\/states\/[^/]+\/legislature(\/|$)/.test(pathname)) return "legislatures";
   if (pathname === "/historical" || pathname.startsWith("/historical/")) return "historical";
   if (pathname === "/model" || pathname.startsWith("/model/")) return "model";
   if (pathname === "/district-finder") return "district-finder";

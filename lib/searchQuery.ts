@@ -6,7 +6,24 @@ export type SearchEntry = {
   terms: string;
   kind?: "state" | "seat" | "race" | "candidate";
   year?: number;
+  /** `terms` already normalized (the legislator rows, expanded client-side), so queryIndex can skip it. */
+  normTerms?: string;
 };
+
+/** A state legislative candidate in /api/search-index-legislators: name, slug, state, party, where, latest year, sitting (1/0). */
+export type LegislatorSearchRow = [string, string, string, string, string, number, number];
+
+const STATE_NAME: Record<string, string> = { AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California", CO: "Colorado", CT: "Connecticut", DE: "Delaware", FL: "Florida", GA: "Georgia", HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa", KS: "Kansas", KY: "Kentucky", LA: "Louisiana", ME: "Maine", MD: "Maryland", MA: "Massachusetts", MI: "Michigan", MN: "Minnesota", MS: "Mississippi", MO: "Missouri", MT: "Montana", NE: "Nebraska", NV: "Nevada", NH: "New Hampshire", NJ: "New Jersey", NM: "New Mexico", NY: "New York", NC: "North Carolina", ND: "North Dakota", OH: "Ohio", OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina", SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah", VT: "Vermont", VA: "Virginia", WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming" };
+
+export function expandLegislatorRows(rows: LegislatorSearchRow[]): SearchEntry[] {
+  return rows.map(([name, slug, abbr, party, where, year, sitting]) => ({
+    kind: "candidate", label: name, year: year || undefined,
+    sublabel: `${sitting ? "State legislator" : "State legislative candidate"} · ${party} · ${STATE_NAME[abbr] ?? abbr} ${where}`,
+    href: `/candidates/${slug}`,
+    terms: "",
+    normTerms: normalize(`${name} ${abbr} ${STATE_NAME[abbr] ?? ""} ${where} legislature`),
+  }));
+}
 
 function normalize(value: string): string {
   return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
@@ -27,7 +44,7 @@ export function queryIndex(entries: SearchEntry[], raw: string, maxResults = 12)
   const words = q.split(/\s+/);
   const hasYear = words.some((word) => /^\d{4}$/.test(word));
   const scored = entries.flatMap((entry) => {
-    const terms = normalize(entry.terms).split(/\s+/);
+    const terms = (entry.normTerms ?? normalize(entry.terms)).split(/\s+/);
     if (!words.every((word) => terms.some((term) => term === word || (!/^\d+$/.test(word) && word.length > 2 && term.startsWith(word))))) return [];
     const label = normalize(entry.label);
     const score = (label === q ? 100 : label.startsWith(q) ? 40 : 0)

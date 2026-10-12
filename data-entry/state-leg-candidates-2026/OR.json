@@ -1,0 +1,1273 @@
+{
+ "house": {
+  "1": {
+   "candidates": [
+    {
+     "name": "Bret Cecil",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Court Boice",
+     "party": "R"
+    }
+   ]
+  },
+  "10": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "David Gomberg",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "David Gomberg",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "David Gomberg",
+     "party": "D",
+     "partyLabel": "Democratic Party, Republican Party, Independent Party of Oregon"
+    }
+   ]
+  },
+  "11": {
+   "candidates": [
+    {
+     "name": "Ivan Maluski",
+     "party": "D"
+    },
+    {
+     "name": "Ken Jackola",
+     "party": "R"
+    },
+    {
+     "name": "Ivan Maluski",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party, Independent Party of Oregon"
+    }
+   ]
+  },
+  "12": {
+   "candidates": [
+    {
+     "name": "Amber Smith",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Darin Harbick",
+     "party": "R"
+    }
+   ]
+  },
+  "13": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Nancy Nathanson",
+     "party": "D"
+    },
+    {
+     "name": "Jonathan Abrahamsen",
+     "party": "R"
+    }
+   ]
+  },
+  "14": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Julie Fahey",
+     "party": "D"
+    },
+    {
+     "name": "Kevin Burton",
+     "party": "R"
+    }
+   ]
+  },
+  "15": {
+   "candidates": [
+    {
+     "name": "Joanna Robinson",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Shelly Boshart Davis",
+     "party": "R"
+    },
+    {
+     "name": "Joanna Robinson",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party, Independent Party of Oregon"
+    }
+   ]
+  },
+  "16": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Sarah McDonald",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Sarah McDonald",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Sarah McDonald",
+     "party": "D",
+     "partyLabel": "Democratic Party, Republican Party"
+    }
+   ]
+  },
+  "17": {
+   "candidates": [
+    {
+     "name": "David Nelson",
+     "party": "D"
+    },
+    {
+     "name": "Dan Farrington",
+     "party": "R"
+    }
+   ]
+  },
+  "18": {
+   "candidates": [
+    {
+     "name": "Roy Kaufmann",
+     "party": "D"
+    },
+    {
+     "name": "Amanda Staehely",
+     "party": "R"
+    },
+    {
+     "name": "Roy Kaufmann",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party, Independent Party of Oregon"
+    },
+    {
+     "name": "Patrick Marnell",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "19": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Tom Andersen",
+     "party": "D"
+    },
+    {
+     "name": "Anna Munson",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Tom Andersen",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party, Independent Party of Oregon"
+    },
+    {
+     "name": "Anna Munson",
+     "party": "R",
+     "partyLabel": "Republican Party, Libertarian Party"
+    }
+   ]
+  },
+  "2": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Virgle Osborne",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Virgle Osborne",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Virgle Osborne",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party"
+    }
+   ]
+  },
+  "20": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Paul Evans",
+     "party": "D"
+    },
+    {
+     "name": "Andrew Fudge",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Paul Evans",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Andrew Fudge",
+     "party": "R",
+     "partyLabel": "Republican Party, Independent Party of Oregon"
+    },
+    {
+     "name": "Taylor Rickey",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "21": {
+   "candidates": [
+    {
+     "name": "Michael Welsh",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Kevin Mannix",
+     "party": "R"
+    },
+    {
+     "name": "Michael Welsh",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "22": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Lesly Mu\u00f1oz",
+     "party": "D"
+    },
+    {
+     "name": "Noemi Legaspi",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Lesly Mu\u00f1oz",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party, Independent Party of Oregon"
+    },
+    {
+     "name": "Noemi Legaspi",
+     "party": "R",
+     "partyLabel": "Republican Party, Libertarian Party"
+    }
+   ]
+  },
+  "23": {
+   "candidates": [
+    {
+     "name": "Kriss Wright",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Anna Scharf",
+     "party": "R"
+    }
+   ]
+  },
+  "24": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Lucetta Elmer",
+     "party": "R"
+    }
+   ]
+  },
+  "25": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Ben Bowman",
+     "party": "D"
+    },
+    {
+     "name": "Bob Niemeyer",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Ben Bowman",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "26": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Sue Rieke Smith",
+     "party": "D"
+    },
+    {
+     "name": "Stephanie Carkin",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Sue Rieke Smith",
+     "party": "D",
+     "partyLabel": "Democratic Party, Independent Party of Oregon"
+    },
+    {
+     "name": "Stephanie Carkin",
+     "party": "R",
+     "partyLabel": "Republican Party, Libertarian Party"
+    },
+    {
+     "name": "Steph Terrio",
+     "party": "O",
+     "partyLabel": "Pacific Green Party of Oregon, Progressive Party"
+    }
+   ]
+  },
+  "27": {
+   "candidates": [
+    {
+     "name": "Tammy Carpenter",
+     "party": "D"
+    },
+    {
+     "name": "G. Mark Norman",
+     "party": "R"
+    },
+    {
+     "name": "Tammy Carpenter",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party, Progressive Party"
+    }
+   ]
+  },
+  "28": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Dacia Grayber",
+     "party": "D"
+    },
+    {
+     "name": "Randall Fryer",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Dacia Grayber",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party, Independent Party of Oregon"
+    }
+   ]
+  },
+  "29": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Susan McLain",
+     "party": "D"
+    },
+    {
+     "name": "Brian Schimmel",
+     "party": "R"
+    },
+    {
+     "name": "Brian Schimmel",
+     "party": "R",
+     "partyLabel": "Republican Party, Independent Party of Oregon"
+    }
+   ]
+  },
+  "3": {
+   "candidates": [
+    {
+     "name": "Susan Fischer-Maki",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Dwayne Yunker",
+     "party": "R"
+    }
+   ]
+  },
+  "30": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Nathan Sosa",
+     "party": "D"
+    },
+    {
+     "name": "Charles Ross",
+     "party": "R"
+    }
+   ]
+  },
+  "31": {
+   "candidates": [
+    {
+     "name": "Tom Forest",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Darcey Edwards",
+     "party": "R"
+    }
+   ]
+  },
+  "32": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Cyrus Javadi",
+     "party": "D"
+    },
+    {
+     "name": "Max Sherman",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Cyrus Javadi",
+     "party": "D",
+     "partyLabel": "Democratic Party, Independent Party of Oregon"
+    }
+   ]
+  },
+  "33": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Shannon Isadore",
+     "party": "D"
+    },
+    {
+     "name": "Ciatta Thompson",
+     "party": "R"
+    }
+   ]
+  },
+  "34": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Mari Watanabe",
+     "party": "D"
+    },
+    {
+     "name": "Shaunie Cousins",
+     "party": "R"
+    }
+   ]
+  },
+  "35": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Farrah Chaichi",
+     "party": "D"
+    },
+    {
+     "name": "Dan Martin",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Farrah Chaichi",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "36": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Hai Pham",
+     "party": "D"
+    },
+    {
+     "name": "Michael Orth",
+     "party": "R"
+    }
+   ]
+  },
+  "37": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jules Walters",
+     "party": "D"
+    },
+    {
+     "name": "Chad Parker",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Jules Walters",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party, Independent Party of Oregon"
+    }
+   ]
+  },
+  "38": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Daniel Nguyen",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Daniel Nguyen",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Daniel Nguyen",
+     "party": "D",
+     "partyLabel": "Democratic Party, Republican Party"
+    }
+   ]
+  },
+  "39": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "April Dobson",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "April Dobson",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "April Dobson",
+     "party": "D",
+     "partyLabel": "Republican Party, Democratic Party, Independent Party of Oregon"
+    }
+   ]
+  },
+  "4": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Alek Skarlatos",
+     "party": "R"
+    }
+   ]
+  },
+  "40": {
+   "candidates": [
+    {
+     "name": "Michael Sugar",
+     "party": "D"
+    },
+    {
+     "name": "Adam Baker",
+     "party": "R"
+    },
+    {
+     "name": "Michael Sugar",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Pat Hubbell",
+     "party": "O",
+     "partyLabel": "Independent Party of Oregon"
+    }
+   ]
+  },
+  "41": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Mark Gamba",
+     "party": "D"
+    },
+    {
+     "name": "Elvis Clark",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Mark Gamba",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "42": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Rob Nosse",
+     "party": "D"
+    },
+    {
+     "name": "Morey Straus",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "43": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Tawna Sanchez",
+     "party": "D"
+    },
+    {
+     "name": "Tim LeMaster",
+     "party": "R"
+    }
+   ]
+  },
+  "44": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Travis Nelson",
+     "party": "D"
+    },
+    {
+     "name": "Margo Logan",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Travis Nelson",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "45": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Thuy Tran",
+     "party": "D"
+    },
+    {
+     "name": "Jason Boyce",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Thuy Tran",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "46": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Willy Chotzen",
+     "party": "D"
+    },
+    {
+     "name": "Leo Morley",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Willy Chotzen",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "47": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Andrea Valderrama",
+     "party": "D"
+    }
+   ]
+  },
+  "48": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Lamar Wise",
+     "party": "D"
+    },
+    {
+     "name": "Andrew Morrison",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Lamar Wise",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party, Independent Party of Oregon"
+    }
+   ]
+  },
+  "49": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Zach Hudson",
+     "party": "D"
+    },
+    {
+     "name": "Ann Walker",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Zach Hudson",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "5": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Pam Marsh",
+     "party": "D"
+    },
+    {
+     "name": "Alexander Krigsvold",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Pam Marsh",
+     "party": "D",
+     "partyLabel": "Democratic Party, Independent Party of Oregon"
+    }
+   ]
+  },
+  "50": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Ricki Ruiz",
+     "party": "D"
+    },
+    {
+     "name": "Brian Gray",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Ricki Ruiz",
+     "party": "D",
+     "partyLabel": "Democratic Party, Independent Party of Oregon"
+    }
+   ]
+  },
+  "51": {
+   "candidates": [
+    {
+     "name": "Darla Mead",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Matt Bunch",
+     "party": "R"
+    },
+    {
+     "name": "Darla Mead",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "52": {
+   "candidates": [
+    {
+     "name": "Hank Sanders",
+     "party": "D"
+    },
+    {
+     "name": "Scott Hege",
+     "party": "R"
+    },
+    {
+     "name": "Hank Sanders",
+     "party": "D",
+     "partyLabel": "Democratic Party, Independent Party of Oregon"
+    }
+   ]
+  },
+  "53": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Emerson Levy",
+     "party": "D"
+    },
+    {
+     "name": "Michael Summers",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Emerson Levy",
+     "party": "D",
+     "partyLabel": "Democratic Party, Independent Party of Oregon"
+    },
+    {
+     "name": "Michael Summers",
+     "party": "R",
+     "partyLabel": "Republican Party, Libertarian Party"
+    }
+   ]
+  },
+  "54": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Jason Kropf",
+     "party": "D"
+    }
+   ]
+  },
+  "55": {
+   "candidates": [
+    {
+     "name": "Colby Simmons",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "E. Werner Reschke",
+     "party": "R"
+    }
+   ]
+  },
+  "56": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Emily McIntire",
+     "party": "R"
+    }
+   ]
+  },
+  "57": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Greg Smith",
+     "party": "R"
+    },
+    {
+     "name": "Josiah Dean",
+     "party": "O",
+     "partyLabel": "Pacific Green Party of Oregon"
+    }
+   ]
+  },
+  "58": {
+   "candidates": [
+    {
+     "name": "Brian Campbell",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Bobby Levy",
+     "party": "R"
+    }
+   ]
+  },
+  "59": {
+   "candidates": [
+    {
+     "name": "Lawrence Jones",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Vikki Breese-Iverson",
+     "party": "R"
+    }
+   ]
+  },
+  "6": {
+   "candidates": [
+    {
+     "name": "John Holm",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Kim Wallan",
+     "party": "R"
+    }
+   ]
+  },
+  "60": {
+   "candidates": [
+    {
+     "name": "Beth Spell",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Mark Owens",
+     "party": "R"
+    }
+   ]
+  },
+  "7": {
+   "candidates": [
+    {
+     "name": "Kori Rodley",
+     "party": "D"
+    },
+    {
+     "name": "Adam Wilson",
+     "party": "R"
+    },
+    {
+     "name": "Kori Rodley",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Adam Wilson",
+     "party": "R",
+     "partyLabel": "Republican Party, Libertarian Party"
+    }
+   ]
+  },
+  "8": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Lisa Fragala",
+     "party": "D"
+    },
+    {
+     "name": "Bill Vivian",
+     "party": "R"
+    }
+   ]
+  },
+  "9": {
+   "candidates": [
+    {
+     "name": "John Scheirman",
+     "party": "D"
+    },
+    {
+     "name": "Claire Lynn",
+     "party": "R"
+    }
+   ]
+  }
+ },
+ "meta": {
+  "fetched": "2026-10-10",
+  "source": "Ballotpedia chamber election pages, 2026"
+ },
+ "senate": {
+  "10": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Deb Patterson",
+     "party": "D"
+    },
+    {
+     "name": "Angela Plowhead",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Deb Patterson",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Angela Plowhead",
+     "party": "R",
+     "partyLabel": "Republican Party, Libertarian Party"
+    }
+   ]
+  },
+  "11": {
+   "candidates": [
+    {
+     "name": "Virginia Stapleton",
+     "party": "D"
+    },
+    {
+     "name": "Tracy Cramer",
+     "party": "R"
+    },
+    {
+     "name": "Virginia Stapleton",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "13": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Courtney Neron",
+     "party": "D"
+    },
+    {
+     "name": "Glenn Lancaster",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Courtney Neron",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Tim Nelson",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "15": {
+   "candidates": [
+    {
+     "name": "Myrna Munoz",
+     "party": "D"
+    },
+    {
+     "name": "Harold Hutchison",
+     "party": "R"
+    },
+    {
+     "name": "Myrna Munoz",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "16": {
+   "candidates": [
+    {
+     "name": "Rachel Armitage",
+     "party": "D"
+    },
+    {
+     "name": "Courtney Bangs",
+     "party": "R"
+    },
+    {
+     "name": "Melisa Finkle",
+     "party": "O",
+     "partyLabel": "Independent Party of Oregon"
+    }
+   ]
+  },
+  "17": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Lisa Reynolds",
+     "party": "D"
+    },
+    {
+     "name": "John Chee",
+     "party": "R"
+    }
+   ]
+  },
+  "19": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Rob Wagner",
+     "party": "D"
+    },
+    {
+     "name": "Mary Dirksen",
+     "party": "R"
+    }
+   ]
+  },
+  "20": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Mark Meek",
+     "party": "D"
+    },
+    {
+     "name": "Michele Stroh",
+     "party": "R"
+    }
+   ]
+  },
+  "24": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Kayse Jama",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Kayse Jama",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    }
+   ]
+  },
+  "26": {
+   "candidates": [
+    {
+     "name": "Nicole Bassett",
+     "party": "D"
+    },
+    {
+     "name": "Jeffrey Helfrich",
+     "party": "R"
+    },
+    {
+     "name": "Nicole Bassett",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party, Independent Party of Oregon"
+    }
+   ]
+  },
+  "3": {
+   "candidates": [
+    {
+     "name": "Denise Krause",
+     "party": "D"
+    },
+    {
+     "name": "Brad Hicks",
+     "party": "R"
+    },
+    {
+     "name": "Brad Hicks",
+     "party": "R",
+     "partyLabel": "Republican Party, Libertarian Party"
+    },
+    {
+     "name": "Clay Bearnson",
+     "party": "O",
+     "partyLabel": "Independent Party of Oregon, Pacific Green Party of Oregon"
+    }
+   ]
+  },
+  "4": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Floyd Prozanski",
+     "party": "D"
+    },
+    {
+     "incumbent": true,
+     "name": "Floyd Prozanski",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "Floyd Prozanski",
+     "party": "D",
+     "partyLabel": "Democratic Party, Republican Party"
+    }
+   ]
+  },
+  "6": {
+   "candidates": [
+    {
+     "name": "Sierrah Williams",
+     "party": "D"
+    },
+    {
+     "name": "Jack Tibbetts",
+     "party": "R"
+    },
+    {
+     "name": "Sierrah Williams",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party"
+    },
+    {
+     "name": "Caleb Ticer",
+     "party": "O",
+     "partyLabel": "Libertarian Party"
+    }
+   ]
+  },
+  "7": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "James Manning",
+     "party": "D"
+    },
+    {
+     "name": "Jack Huff",
+     "party": "R"
+    },
+    {
+     "incumbent": true,
+     "name": "James Manning",
+     "party": "D",
+     "partyLabel": "Democratic Party, Working Families Party, Independent Party of Oregon"
+    }
+   ]
+  },
+  "8": {
+   "candidates": [
+    {
+     "incumbent": true,
+     "name": "Sara Gelser Blouin",
+     "party": "D"
+    },
+    {
+     "name": "Valerie Draper Woldeit",
+     "party": "R"
+    }
+   ]
+  }
+ }
+}

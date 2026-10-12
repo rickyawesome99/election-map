@@ -1,0 +1,190 @@
+{
+ "meta": {
+  "fetched": "2026-10-10",
+  "titles": {
+   "house": "2026 Arkansas House of Representatives election",
+   "senate": "2026 Arkansas Senate election"
+  },
+  "unmatched": []
+ },
+ "house": {
+  "1": [
+   {
+    "name": "Jeremy Wooldridge",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for state senate in District 21"
+   }
+  ],
+  "20": [
+   {
+    "name": "Denise Garner",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for state senate in District 30"
+   }
+  ],
+  "35": [
+   {
+    "name": "Jessie McGruder",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for state senate in District 9"
+   }
+  ],
+  "42": [
+   {
+    "name": "Stephen Meeks",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "46": [
+   {
+    "name": "Jon S. Eubanks",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "5": [
+   {
+    "name": "Ron McNair",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "6": [
+   {
+    "name": "Harlan Breaux",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "70": [
+   {
+    "name": "Carlton Wing",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "71": [
+   {
+    "name": "Brandon Achor",
+    "party": "R",
+    "category": "running for other office",
+    "reason": "retiring to run for state senate in District 13"
+   }
+  ],
+  "72": [
+   {
+    "name": "Tracy Steele",
+    "party": "D",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "77": [
+   {
+    "name": "Fred Allen",
+    "party": "D",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "79": [
+   {
+    "name": "Tara Shephard",
+    "party": "D",
+    "category": "running for other office",
+    "reason": "retiring to run for state senate in District 15"
+   }
+  ],
+  "92": [
+   {
+    "name": "Julie Mayberry",
+    "party": "R",
+    "category": "retiring",
+    "reason": "retiring"
+   }
+  ],
+  "94": [
+   {
+    "name": "Jeff Wardlaw",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "97": [
+   {
+    "name": "Matthew Shepherd",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "99": [
+   {
+    "name": "Lane Jean",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ]
+ },
+ "senate": {
+  "13": [
+   {
+    "name": "Jane English",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "15": [
+   {
+    "name": "Fredrick Love",
+    "party": "D",
+    "category": "term-limited",
+    "reason": "term-limited and running for governor"
+   }
+  ],
+  "16": [
+   {
+    "name": "Kim Hammer",
+    "party": "R",
+    "category": "term-limited",
+    "reason": "term-limited and running for secretary of state"
+   }
+  ],
+  "21": [
+   {
+    "name": "Blake Johnson",
+    "party": "R",
+    "category": "lost primary",
+    "reason": "lost renomination to state representative Jeremy Wooldridge"
+   }
+  ],
+  "30": [
+   {
+    "name": "Greg Leding",
+    "party": "D",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ],
+  "9": [
+   {
+    "name": "Reginald Murdock",
+    "party": "D",
+    "category": "term-limited",
+    "reason": "term-limited"
+   }
+  ]
+ }
+}

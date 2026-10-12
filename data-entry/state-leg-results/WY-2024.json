@@ -11,14 +11,17 @@
      {
       "name": "Chip Neiman",
       "party": "R",
-      "votes": 5096
+      "votes": 5096,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 124
      }
-    ]
+    ],
+    "uncontested": true
    },
    "2": {
     "demVotes": 0,
@@ -29,14 +32,16 @@
      {
       "name": "JD Williams",
       "party": "R",
-      "votes": 3834
+      "votes": 3834,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 248
      }
-    ]
+    ],
+    "uncontested": true
    },
    "3": {
     "demVotes": 0,
@@ -47,14 +52,17 @@
      {
       "name": "Abby Angelos",
       "party": "R",
-      "votes": 3753
+      "votes": 3753,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 36
      }
-    ]
+    ],
+    "uncontested": true
    },
    "4": {
     "demVotes": 1014,
@@ -65,7 +73,9 @@
      {
       "name": "Jeremy Haroldson",
       "party": "R",
-      "votes": 3516
+      "votes": 3516,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Charles Randolph",
@@ -88,14 +98,17 @@
      {
       "name": "Scott Smith",
       "party": "R",
-      "votes": 3893
+      "votes": 3893,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 303
      }
-    ]
+    ],
+    "uncontested": true
    },
    "6": {
     "demVotes": 0,
@@ -106,14 +119,17 @@
      {
       "name": "Tomi Strock",
       "party": "R",
-      "votes": 3742
+      "votes": 3742,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 290
      }
-    ]
+    ],
+    "uncontested": true
    },
    "7": {
     "demVotes": 1456,
@@ -124,7 +140,9 @@
      {
       "name": "Bob Nicholas",
       "party": "R",
-      "votes": 2791
+      "votes": 2791,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Jordan Evans",
@@ -147,14 +165,16 @@
      {
       "name": "Steve Johnson",
       "party": "R",
-      "votes": 4229
+      "votes": 4229,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 345
      }
-    ]
+    ],
+    "uncontested": true
    },
    "9": {
     "demVotes": 0,
@@ -165,14 +185,17 @@
      {
       "name": "Landon J Brown",
       "party": "R",
-      "votes": 3453
+      "votes": 3453,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 276
      }
-    ]
+    ],
+    "uncontested": true
    },
    "10": {
     "demVotes": 0,
@@ -183,7 +206,9 @@
      {
       "name": "John Eklund",
       "party": "R",
-      "votes": 3963
+      "votes": 3963,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "For",
@@ -206,7 +231,8 @@
      {
       "name": "Jacob Wasserburger",
       "party": "R",
-      "votes": 1774
+      "votes": 1774,
+      "winner": true
      },
      {
       "name": "Sara Burlingame",
@@ -229,14 +255,17 @@
      {
       "name": "Clarence Styvar",
       "party": "R",
-      "votes": 2252
+      "votes": 2252,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 139
      }
-    ]
+    ],
+    "uncontested": true
    },
    "13": {
     "demVotes": 1941,
@@ -247,7 +276,9 @@
      {
       "name": "Ken Chestek",
       "party": "D",
-      "votes": 1941
+      "votes": 1941,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Shane Swett",
@@ -270,7 +301,9 @@
      {
       "name": "Trey Sherwood",
       "party": "D",
-      "votes": 2472
+      "votes": 2472,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Joe Giustozzi",
@@ -293,14 +326,16 @@
      {
       "name": "Pamela Thayer",
       "party": "R",
-      "votes": 2790
+      "votes": 2790,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 97
      }
-    ]
+    ],
+    "uncontested": true
    },
    "16": {
     "demVotes": 3545,
@@ -311,14 +346,17 @@
      {
       "name": "Mike Yin",
       "party": "D",
-      "votes": 3545
+      "votes": 3545,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 121
      }
-    ]
+    ],
+    "uncontested": true
    },
    "17": {
     "demVotes": 0,
@@ -329,14 +367,17 @@
      {
       "name": "Jt Larson",
       "party": "R",
-      "votes": 2590
+      "votes": 2590,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 122
      }
-    ]
+    ],
+    "uncontested": true
    },
    "18": {
     "demVotes": 0,
@@ -347,14 +388,17 @@
      {
       "name": "Scott Heiner",
       "party": "R",
-      "votes": 3781
+      "votes": 3781,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 115
      }
-    ]
+    ],
+    "uncontested": true
    },
    "19": {
     "demVotes": 0,
@@ -365,14 +409,16 @@
      {
       "name": "Joe Webb",
       "party": "R",
-      "votes": 3012
+      "votes": 3012,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 918
      }
-    ]
+    ],
+    "uncontested": true
    },
    "20": {
     "demVotes": 0,
@@ -383,14 +429,16 @@
      {
       "name": "Mike Schmid",
       "party": "R",
-      "votes": 4354
+      "votes": 4354,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 232
      }
-    ]
+    ],
+    "uncontested": true
    },
    "21": {
     "demVotes": 0,
@@ -401,14 +449,16 @@
      {
       "name": "McKay L Erickson",
       "party": "R",
-      "votes": 4947
+      "votes": 4947,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 48
      }
-    ]
+    ],
+    "uncontested": true
    },
    "22": {
     "demVotes": 0,
@@ -419,14 +469,17 @@
      {
       "name": "Andrew P Byron",
       "party": "R",
-      "votes": 4189
+      "votes": 4189,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 140
      }
-    ]
+    ],
+    "uncontested": true
    },
    "23": {
     "demVotes": 4434,
@@ -437,14 +490,17 @@
      {
       "name": "Liz Storer",
       "party": "D",
-      "votes": 4434
+      "votes": 4434,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 229
      }
-    ]
+    ],
+    "uncontested": true
    },
    "24": {
     "demVotes": 0,
@@ -455,14 +511,16 @@
      {
       "name": "Nina Webber",
       "party": "R",
-      "votes": 3372
+      "votes": 3372,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 755
      }
-    ]
+    ],
+    "uncontested": true
    },
    "25": {
     "demVotes": 0,
@@ -473,14 +531,16 @@
      {
       "name": "Paul Hoeft",
       "party": "R",
-      "votes": 3673
+      "votes": 3673,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 240
      }
-    ]
+    ],
+    "uncontested": true
    },
    "26": {
     "demVotes": 0,
@@ -491,14 +551,17 @@
      {
       "name": "Dalton Banks",
       "party": "R",
-      "votes": 3942
+      "votes": 3942,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 100
      }
-    ]
+    ],
+    "uncontested": true
    },
    "27": {
     "demVotes": 0,
@@ -509,14 +572,17 @@
      {
       "name": "Martha Lawley",
       "party": "R",
-      "votes": 3918
+      "votes": 3918,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 105
      }
-    ]
+    ],
+    "uncontested": true
    },
    "28": {
     "demVotes": 857,
@@ -527,7 +593,9 @@
      {
       "name": "John R Winter",
       "party": "R",
-      "votes": 3986
+      "votes": 3986,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Larry Alwin",
@@ -550,7 +618,9 @@
      {
       "name": "Ken Pendergraft",
       "party": "R",
-      "votes": 3009
+      "votes": 3009,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Martha J Wright",
@@ -573,14 +643,16 @@
      {
       "name": "Tom Kelly",
       "party": "R",
-      "votes": 3944
+      "votes": 3944,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 143
      }
-    ]
+    ],
+    "uncontested": true
    },
    "31": {
     "demVotes": 0,
@@ -591,14 +663,17 @@
      {
       "name": "John W Bear",
       "party": "R",
-      "votes": 2726
+      "votes": 2726,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 116
      }
-    ]
+    ],
+    "uncontested": true
    },
    "32": {
     "demVotes": 0,
@@ -609,14 +684,17 @@
      {
       "name": "Ken L Clouston",
       "party": "R",
-      "votes": 3342
+      "votes": 3342,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 110
      }
-    ]
+    ],
+    "uncontested": true
    },
    "33": {
     "demVotes": 1675,
@@ -627,12 +705,14 @@
      {
       "name": "Ivan D Posey",
       "party": "D",
-      "votes": 1675
+      "votes": 1675,
+      "winner": true
      },
      {
       "name": "Sarah Penn",
       "party": "R",
-      "votes": 1210
+      "votes": 1210,
+      "incumbent": true
      },
      {
       "name": "Write-In",
@@ -650,14 +730,17 @@
      {
       "name": "Pepper L Ottman",
       "party": "R",
-      "votes": 4117
+      "votes": 4117,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 116
      }
-    ]
+    ],
+    "uncontested": true
    },
    "35": {
     "demVotes": 0,
@@ -668,14 +751,17 @@
      {
       "name": "Tony Locke",
       "party": "R",
-      "votes": 3409
+      "votes": 3409,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 242
      }
-    ]
+    ],
+    "uncontested": true
    },
    "36": {
     "demVotes": 0,
@@ -686,14 +772,17 @@
      {
       "name": "Art Washut",
       "party": "R",
-      "votes": 2727
+      "votes": 2727,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 84
      }
-    ]
+    ],
+    "uncontested": true
    },
    "37": {
     "demVotes": 0,
@@ -704,14 +793,17 @@
      {
       "name": "Steve Harshman",
       "party": "R",
-      "votes": 4004
+      "votes": 4004,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 184
      }
-    ]
+    ],
+    "uncontested": true
    },
    "38": {
     "demVotes": 0,
@@ -722,14 +814,16 @@
      {
       "name": "Jayme Lien",
       "party": "R",
-      "votes": 3253
+      "votes": 3253,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 148
      }
-    ]
+    ],
+    "uncontested": true
    },
    "39": {
     "demVotes": 0,
@@ -740,14 +834,17 @@
      {
       "name": "Cody Wylie",
       "party": "R",
-      "votes": 2966
+      "votes": 2966,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 108
      }
-    ]
+    ],
+    "uncontested": true
    },
    "40": {
     "demVotes": 0,
@@ -758,14 +855,16 @@
      {
       "name": "Marilyn Connoly",
       "party": "R",
-      "votes": 4806
+      "votes": 4806,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 251
      }
-    ]
+    ],
+    "uncontested": true
    },
    "41": {
     "demVotes": 1852,
@@ -776,7 +875,8 @@
      {
       "name": "Gary Brown",
       "party": "R",
-      "votes": 2039
+      "votes": 2039,
+      "winner": true
      },
      {
       "name": "Jen Solis",
@@ -799,7 +899,8 @@
      {
       "name": "Rob Geringer",
       "party": "R",
-      "votes": 3270
+      "votes": 3270,
+      "winner": true
      },
      {
       "name": "Bob Ray",
@@ -822,14 +923,16 @@
      {
       "name": "Ann Lucas",
       "party": "R",
-      "votes": 3540
+      "votes": 3540,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 314
      }
-    ]
+    ],
+    "uncontested": true
    },
    "44": {
     "demVotes": 0,
@@ -840,14 +943,16 @@
      {
       "name": "Lee Filer",
       "party": "R",
-      "votes": 2265
+      "votes": 2265,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 155
      }
-    ]
+    ],
+    "uncontested": true
    },
    "45": {
     "demVotes": 2493,
@@ -858,7 +963,9 @@
      {
       "name": "Karlee Provenza",
       "party": "D",
-      "votes": 2493
+      "votes": 2493,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Paul Crouch",
@@ -881,7 +988,9 @@
      {
       "name": "Ocean Andrew",
       "party": "R",
-      "votes": 3411
+      "votes": 3411,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Chris Lowry",
@@ -904,7 +1013,8 @@
      {
       "name": "Bob Davis",
       "party": "R",
-      "votes": 3488
+      "votes": 3488,
+      "winner": true
      },
      {
       "name": "James A Wilson",
@@ -927,14 +1037,16 @@
      {
       "name": "Darin M McCann",
       "party": "R",
-      "votes": 2715
+      "votes": 2715,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 99
      }
-    ]
+    ],
+    "uncontested": true
    },
    "49": {
     "demVotes": 0,
@@ -945,14 +1057,17 @@
      {
       "name": "Robert Wharff",
       "party": "R",
-      "votes": 3046
+      "votes": 3046,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 344
      }
-    ]
+    ],
+    "uncontested": true
    },
    "50": {
     "demVotes": 0,
@@ -963,14 +1078,16 @@
      {
       "name": "Rachel Rodriguez-Williams",
       "party": "R",
-      "votes": 4510
+      "votes": 4510,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 260
      }
-    ]
+    ],
+    "uncontested": true
    },
    "51": {
     "demVotes": 0,
@@ -981,14 +1098,16 @@
      {
       "name": "Laurie Bratten",
       "party": "R",
-      "votes": 4910
+      "votes": 4910,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 222
      }
-    ]
+    ],
+    "uncontested": true
    },
    "52": {
     "demVotes": 0,
@@ -999,14 +1118,17 @@
      {
       "name": "Reuben Tarver",
       "party": "R",
-      "votes": 3402
+      "votes": 3402,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 42
      }
-    ]
+    ],
+    "uncontested": true
    },
    "53": {
     "demVotes": 0,
@@ -1017,14 +1139,17 @@
      {
       "name": "Christopher R Knapp",
       "party": "R",
-      "votes": 2466
+      "votes": 2466,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 52
      }
-    ]
+    ],
+    "uncontested": true
    },
    "54": {
     "demVotes": 0,
@@ -1035,14 +1160,17 @@
      {
       "name": "Lloyd Charles Larsen",
       "party": "R",
-      "votes": 3821
+      "votes": 3821,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 371
      }
-    ]
+    ],
+    "uncontested": true
    },
    "55": {
     "demVotes": 0,
@@ -1053,14 +1181,16 @@
      {
       "name": "Joel Guggenmos",
       "party": "R",
-      "votes": 2858
+      "votes": 2858,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 363
      }
-    ]
+    ],
+    "uncontested": true
    },
    "56": {
     "demVotes": 0,
@@ -1071,14 +1201,16 @@
      {
       "name": "Elissa Campbell",
       "party": "R",
-      "votes": 2938
+      "votes": 2938,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 160
      }
-    ]
+    ],
+    "uncontested": true
    },
    "57": {
     "demVotes": 0,
@@ -1089,14 +1221,16 @@
      {
       "name": "Julie Jarvis",
       "party": "R",
-      "votes": 2405
+      "votes": 2405,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 200
      }
-    ]
+    ],
+    "uncontested": true
    },
    "58": {
     "demVotes": 0,
@@ -1107,14 +1241,17 @@
      {
       "name": "Bill Allemand",
       "party": "R",
-      "votes": 3055
+      "votes": 3055,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 95
      }
-    ]
+    ],
+    "uncontested": true
    },
    "59": {
     "demVotes": 0,
@@ -1125,14 +1262,16 @@
      {
       "name": "Jr. Riggins",
       "party": "R",
-      "votes": 2740
+      "votes": 2740,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 91
      }
-    ]
+    ],
+    "uncontested": true
    },
    "60": {
     "demVotes": 951,
@@ -1143,7 +1282,8 @@
      {
       "name": "Marlene Brady",
       "party": "R",
-      "votes": 2484
+      "votes": 2484,
+      "winner": true
      },
      {
       "name": "Carmen Whitehead",
@@ -1166,14 +1306,17 @@
      {
       "name": "Daniel J Singh",
       "party": "R",
-      "votes": 2516
+      "votes": 2516,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 168
      }
-    ]
+    ],
+    "uncontested": true
    },
    "62": {
     "demVotes": 0,
@@ -1184,14 +1327,16 @@
      {
       "name": "Kevin Campbell",
       "party": "R",
-      "votes": 3496
+      "votes": 3496,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 66
      }
-    ]
+    ],
+    "uncontested": true
    }
   }
  },
@@ -1207,14 +1352,17 @@
      {
       "name": "Brian Boner",
       "party": "R",
-      "votes": 7712
+      "votes": 7712,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 138
      }
-    ]
+    ],
+    "uncontested": true
    },
    "4": {
     "demVotes": 0,
@@ -1225,14 +1373,17 @@
      {
       "name": "Tara Nethercott",
       "party": "R",
-      "votes": 8255
+      "votes": 8255,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 307
      }
-    ]
+    ],
+    "uncontested": true
    },
    "6": {
     "demVotes": 0,
@@ -1243,14 +1394,16 @@
      {
       "name": "Darin Smith",
       "party": "R",
-      "votes": 8484
+      "votes": 8484,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 402
      }
-    ]
+    ],
+    "uncontested": true
    },
    "8": {
     "demVotes": 2464,
@@ -1261,7 +1414,8 @@
      {
       "name": "Jared Olsen",
       "party": "R",
-      "votes": 3444
+      "votes": 3444,
+      "winner": true
      },
      {
       "name": "Marguerite Herman",
@@ -1284,7 +1438,8 @@
      {
       "name": "Gary E Crum",
       "party": "R",
-      "votes": 6331
+      "votes": 6331,
+      "winner": true
      },
      {
       "name": "Mike Selmer",
@@ -1307,7 +1462,9 @@
      {
       "name": "John K Kolb",
       "party": "R",
-      "votes": 4359
+      "votes": 4359,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Kenilynn S Zanetti",
@@ -1330,14 +1487,16 @@
      {
       "name": "Laura Taliaferro Pearson",
       "party": "R",
-      "votes": 8025
+      "votes": 8025,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 494
      }
-    ]
+    ],
+    "uncontested": true
    },
    "16": {
     "demVotes": 0,
@@ -1348,14 +1507,17 @@
      {
       "name": "Dan Dockstader",
       "party": "R",
-      "votes": 8830
+      "votes": 8830,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 274
      }
-    ]
+    ],
+    "uncontested": true
    },
    "18": {
     "demVotes": 0,
@@ -1366,14 +1528,17 @@
      {
       "name": "Tim A French",
       "party": "R",
-      "votes": 8568
+      "votes": 8568,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 505
      }
-    ]
+    ],
+    "uncontested": true
    },
    "20": {
     "demVotes": 0,
@@ -1384,14 +1549,17 @@
      {
       "name": "Ed Cooper",
       "party": "R",
-      "votes": 8236
+      "votes": 8236,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 240
      }
-    ]
+    ],
+    "uncontested": true
    },
    "22": {
     "demVotes": 0,
@@ -1402,14 +1570,16 @@
      {
       "name": "Barry Crago",
       "party": "R",
-      "votes": 8599
+      "votes": 8599,
+      "winner": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 554
      }
-    ]
+    ],
+    "uncontested": true
    },
    "24": {
     "demVotes": 0,
@@ -1420,14 +1590,17 @@
      {
       "name": "Troy D McKeown",
       "party": "R",
-      "votes": 5305
+      "votes": 5305,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 452
      }
-    ]
+    ],
+    "uncontested": true
    },
    "26": {
     "demVotes": 0,
@@ -1438,14 +1611,17 @@
      {
       "name": "Tim Salazar",
       "party": "R",
-      "votes": 7266
+      "votes": 7266,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 224
      }
-    ]
+    ],
+    "uncontested": true
    },
    "28": {
     "demVotes": 0,
@@ -1456,14 +1632,17 @@
      {
       "name": "Jim Anderson",
       "party": "R",
-      "votes": 5354
+      "votes": 5354,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 312
      }
-    ]
+    ],
+    "uncontested": true
    },
    "30": {
     "demVotes": 0,
@@ -1474,14 +1653,17 @@
      {
       "name": "Charles K Scott",
       "party": "R",
-      "votes": 6406
+      "votes": 6406,
+      "winner": true,
+      "incumbent": true
      },
      {
       "name": "Write-In",
       "party": "O",
       "votes": 213
      }
-    ]
+    ],
+    "uncontested": true
    }
   }
  }

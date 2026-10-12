@@ -1,0 +1,6193 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 89.4,
+      "key": "1",
+      "popPct": 94.1
+     },
+     {
+      "areaPct": 10.3,
+      "key": "7",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23557,
+    "pres2020New": -79.4,
+    "pres2020Old": -78.8,
+    "retainedAreaPct": 89.4,
+    "retainedPopPct": 94.1,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-1; gained the rest from the old HD-7 (6%). Entirely in Hartford County. 2020 presidential margin D+78.8 on the 2016\u20132020 lines \u2192 D+79.4 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "10",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23777,
+    "pres2020New": -44.9,
+    "pres2020Old": -44.9,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Hartford County.",
+    "toEra": "current"
+   },
+   "100": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "100",
+      "popPct": 97.6
+     },
+     {
+      "areaPct": 0.3,
+      "key": "33",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23918,
+    "pres2020New": -32.3,
+    "pres2020Old": -31.8,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 97.6,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-100; gained the rest from the old HD-33 (2%). Entirely in Middlesex County. 2020 presidential margin D+31.8 on the 2016\u20132020 lines \u2192 D+32.3 on the current lines.",
+    "toEra": "current"
+   },
+   "101": {
+    "contributors": [
+     {
+      "areaPct": 94.4,
+      "key": "101",
+      "popPct": 96.2
+     },
+     {
+      "areaPct": 5.5,
+      "key": "86",
+      "popPct": 3.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 74.4
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 25.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23171,
+    "pres2020New": -19.3,
+    "pres2020Old": -20.3,
+    "retainedAreaPct": 94.4,
+    "retainedPopPct": 96.2,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-101; gained the rest from the old HD-86 (4%). Spans New Haven, Middlesex counties. 2020 presidential margin D+20.3 on the 2016\u20132020 lines \u2192 D+19.3 on the current lines.",
+    "toEra": "current"
+   },
+   "102": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "102",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23286,
+    "pres2020New": -18.9,
+    "pres2020Old": -18.9,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in New Haven County.",
+    "toEra": "current"
+   },
+   "103": {
+    "contributors": [
+     {
+      "areaPct": 50.9,
+      "key": "103",
+      "popPct": 60.6
+     },
+     {
+      "areaPct": 26.4,
+      "key": "88",
+      "popPct": 15.1
+     },
+     {
+      "areaPct": 10.0,
+      "key": "89",
+      "popPct": 13.1
+     },
+     {
+      "areaPct": 11.9,
+      "key": "90",
+      "popPct": 9.2
+     },
+     {
+      "areaPct": 0.8,
+      "key": "91",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Hartford",
+      "popPct": 17.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 21967,
+    "pres2020New": -14.2,
+    "pres2020Old": -8.4,
+    "retainedAreaPct": 50.9,
+    "retainedPopPct": 60.6,
+    "text": "Kept 61% of its population from the 2016\u20132020 HD-103; gained the rest from the old HD-88 (15%), the old HD-89 (13%), the old HD-90 (9%) and 1 more. Counties: lost Hartford. 2020 presidential margin D+8.4 on the 2016\u20132020 lines \u2192 D+14.2 on the current lines.",
+    "toEra": "current"
+   },
+   "104": {
+    "contributors": [
+     {
+      "areaPct": 96.7,
+      "key": "104",
+      "popPct": 99.0
+     },
+     {
+      "areaPct": 3.3,
+      "key": "105",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22060,
+    "pres2020New": -9.6,
+    "pres2020Old": -10.3,
+    "retainedAreaPct": 96.7,
+    "retainedPopPct": 99.0,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-104; gained the rest from the old HD-105 (1%). Entirely in New Haven County. 2020 presidential margin D+10.3 on the 2016\u20132020 lines \u2192 D+9.6 on the current lines.",
+    "toEra": "current"
+   },
+   "105": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "105",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23999,
+    "pres2020New": 13.5,
+    "pres2020Old": 13.3,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in New Haven County.",
+    "toEra": "current"
+   },
+   "106": {
+    "contributors": [
+     {
+      "areaPct": 77.4,
+      "key": "106",
+      "popPct": 81.7
+     },
+     {
+      "areaPct": 15.0,
+      "key": "112",
+      "popPct": 14.1
+     },
+     {
+      "areaPct": 7.6,
+      "key": "2",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 99.1
+     },
+     {
+      "county": "New Haven",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23892,
+    "pres2020New": -13.6,
+    "pres2020Old": -14.1,
+    "retainedAreaPct": 77.4,
+    "retainedPopPct": 81.7,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-106; gained the rest from the old HD-112 (14%), the old HD-2 (4%). Spans Fairfield, New Haven counties. 2020 presidential margin D+14.1 on the 2016\u20132020 lines \u2192 D+13.6 on the current lines.",
+    "toEra": "current"
+   },
+   "107": {
+    "contributors": [
+     {
+      "areaPct": 72.2,
+      "key": "107",
+      "popPct": 84.5
+     },
+     {
+      "areaPct": 24.4,
+      "key": "106",
+      "popPct": 12.8
+     },
+     {
+      "areaPct": 3.4,
+      "key": "2",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 99.1
+     },
+     {
+      "county": "Litchfield",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25641,
+    "pres2020New": -4.5,
+    "pres2020Old": -5.2,
+    "retainedAreaPct": 72.2,
+    "retainedPopPct": 84.5,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-107; gained the rest from the old HD-106 (13%), the old HD-2 (3%). Spans Fairfield, Litchfield counties. 2020 presidential margin D+5.2 on the 2016\u20132020 lines \u2192 D+4.5 on the current lines.",
+    "toEra": "current"
+   },
+   "108": {
+    "contributors": [
+     {
+      "areaPct": 93.1,
+      "key": "108",
+      "popPct": 76.7
+     },
+     {
+      "areaPct": 4.8,
+      "key": "138",
+      "popPct": 16.1
+     },
+     {
+      "areaPct": 1.4,
+      "key": "107",
+      "popPct": 3.7
+     },
+     {
+      "areaPct": 0.6,
+      "key": "109",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 89.7
+     },
+     {
+      "county": "Litchfield",
+      "popPct": 10.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27075,
+    "pres2020New": -1.5,
+    "pres2020Old": -2.0,
+    "retainedAreaPct": 93.1,
+    "retainedPopPct": 76.7,
+    "text": "Kept 77% of its population from the 2016\u20132020 HD-108; gained the rest from the old HD-138 (16%), the old HD-107 (4%), the old HD-109 (3%). Spans Fairfield, Litchfield counties. 2020 presidential margin D+2.0 on the 2016\u20132020 lines \u2192 D+1.5 on the current lines.",
+    "toEra": "current"
+   },
+   "109": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "109",
+      "popPct": 99.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23780,
+    "pres2020New": -17.3,
+    "pres2020Old": -17.2,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.8,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Fairfield County.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 95.9,
+      "key": "11",
+      "popPct": 92.0
+     },
+     {
+      "areaPct": 3.5,
+      "key": "12",
+      "popPct": 7.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24297,
+    "pres2020New": -49.5,
+    "pres2020Old": -45.9,
+    "retainedAreaPct": 95.9,
+    "retainedPopPct": 92.0,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-11; gained the rest from the old HD-12 (8%). Entirely in Hartford County. 2020 presidential margin D+45.9 on the 2016\u20132020 lines \u2192 D+49.5 on the current lines.",
+    "toEra": "current"
+   },
+   "110": {
+    "contributors": [
+     {
+      "areaPct": 98.9,
+      "key": "110",
+      "popPct": 99.0
+     },
+     {
+      "areaPct": 0.8,
+      "key": "2",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23809,
+    "pres2020New": -32.8,
+    "pres2020Old": -33.0,
+    "retainedAreaPct": 98.9,
+    "retainedPopPct": 99.0,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-110; gained the rest from the old HD-2 (1%). Entirely in Fairfield County. 2020 presidential margin D+33.0 on the 2016\u20132020 lines \u2192 D+32.8 on the current lines.",
+    "toEra": "current"
+   },
+   "111": {
+    "contributors": [
+     {
+      "areaPct": 93.5,
+      "key": "111",
+      "popPct": 95.3
+     },
+     {
+      "areaPct": 6.5,
+      "key": "138",
+      "popPct": 4.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22880,
+    "pres2020New": -28.1,
+    "pres2020Old": -28.4,
+    "retainedAreaPct": 93.5,
+    "retainedPopPct": 95.3,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-111; gained the rest from the old HD-138 (5%). Entirely in Fairfield County. 2020 presidential margin D+28.4 on the 2016\u20132020 lines \u2192 D+28.1 on the current lines.",
+    "toEra": "current"
+   },
+   "112": {
+    "contributors": [
+     {
+      "areaPct": 72.0,
+      "key": "112",
+      "popPct": 78.3
+     },
+     {
+      "areaPct": 2.9,
+      "key": "134",
+      "popPct": 10.5
+     },
+     {
+      "areaPct": 24.6,
+      "key": "135",
+      "popPct": 10.0
+     },
+     {
+      "areaPct": 0.5,
+      "key": "123",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24048,
+    "pres2020New": -2.2,
+    "pres2020Old": -0.5,
+    "retainedAreaPct": 72.0,
+    "retainedPopPct": 78.3,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-112; gained the rest from the old HD-134 (10%), the old HD-135 (10%), the old HD-123 (1%). Entirely in Fairfield County. 2020 presidential margin D+0.5 on the 2016\u20132020 lines \u2192 D+2.2 on the current lines.",
+    "toEra": "current"
+   },
+   "113": {
+    "contributors": [
+     {
+      "areaPct": 88.3,
+      "key": "113",
+      "popPct": 92.2
+     },
+     {
+      "areaPct": 11.6,
+      "key": "122",
+      "popPct": 7.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 92.8
+     },
+     {
+      "county": "New Haven",
+      "popPct": 7.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25280,
+    "pres2020New": 7.2,
+    "pres2020Old": 7.0,
+    "retainedAreaPct": 88.3,
+    "retainedPopPct": 92.2,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-113; gained the rest from the old HD-122 (8%). Spans Fairfield, New Haven counties. 2020 presidential margin R+7.0 on the 2016\u20132020 lines \u2192 R+7.2 on the current lines.",
+    "toEra": "current"
+   },
+   "114": {
+    "contributors": [
+     {
+      "areaPct": 87.3,
+      "key": "114",
+      "popPct": 74.5
+     },
+     {
+      "areaPct": 11.1,
+      "key": "91",
+      "popPct": 18.9
+     },
+     {
+      "areaPct": 1.6,
+      "key": "104",
+      "popPct": 6.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28391,
+    "pres2020New": -20.8,
+    "pres2020Old": -15.1,
+    "retainedAreaPct": 87.3,
+    "retainedPopPct": 74.5,
+    "text": "Kept 74% of its population from the 2016\u20132020 HD-114; gained the rest from the old HD-91 (19%), the old HD-104 (7%). Entirely in New Haven County. 2020 presidential margin D+15.1 on the 2016\u20132020 lines \u2192 D+20.8 on the current lines.",
+    "toEra": "current"
+   },
+   "115": {
+    "contributors": [
+     {
+      "areaPct": 98.1,
+      "key": "115",
+      "popPct": 99.1
+     },
+     {
+      "areaPct": 1.8,
+      "key": "117",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23441,
+    "pres2020New": -22.7,
+    "pres2020Old": -22.8,
+    "retainedAreaPct": 98.1,
+    "retainedPopPct": 99.1,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-115; gained the rest from the old HD-117 (1%). Entirely in New Haven County. 2020 presidential margin D+22.8 on the 2016\u20132020 lines \u2192 D+22.7 on the current lines.",
+    "toEra": "current"
+   },
+   "116": {
+    "contributors": [
+     {
+      "areaPct": 96.2,
+      "key": "116",
+      "popPct": 96.5
+     },
+     {
+      "areaPct": 2.9,
+      "key": "117",
+      "popPct": 1.8
+     },
+     {
+      "areaPct": 0.9,
+      "key": "115",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22829,
+    "pres2020New": -51.4,
+    "pres2020Old": -53.8,
+    "retainedAreaPct": 96.2,
+    "retainedPopPct": 96.5,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-116; gained the rest from the old HD-117 (2%), the old HD-115 (2%). Entirely in New Haven County. 2020 presidential margin D+53.8 on the 2016\u20132020 lines \u2192 D+51.4 on the current lines.",
+    "toEra": "current"
+   },
+   "117": {
+    "contributors": [
+     {
+      "areaPct": 87.1,
+      "key": "117",
+      "popPct": 93.9
+     },
+     {
+      "areaPct": 8.0,
+      "key": "119",
+      "popPct": 2.9
+     },
+     {
+      "areaPct": 4.2,
+      "key": "114",
+      "popPct": 1.8
+     },
+     {
+      "areaPct": 0.7,
+      "key": "115",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23014,
+    "pres2020New": -6.8,
+    "pres2020Old": -6.8,
+    "retainedAreaPct": 87.1,
+    "retainedPopPct": 93.9,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-117; gained the rest from the old HD-119 (3%), the old HD-114 (2%), the old HD-115 (1%). Entirely in New Haven County. 2020 presidential margin D+6.8 on the 2016\u20132020 lines \u2192 D+6.8 on the current lines.",
+    "toEra": "current"
+   },
+   "118": {
+    "contributors": [
+     {
+      "areaPct": 97.6,
+      "key": "118",
+      "popPct": 98.1
+     },
+     {
+      "areaPct": 2.4,
+      "key": "119",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23072,
+    "pres2020New": -14.3,
+    "pres2020Old": -14.4,
+    "retainedAreaPct": 97.6,
+    "retainedPopPct": 98.1,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-118; gained the rest from the old HD-119 (2%). Entirely in New Haven County. 2020 presidential margin D+14.4 on the 2016\u20132020 lines \u2192 D+14.3 on the current lines.",
+    "toEra": "current"
+   },
+   "119": {
+    "contributors": [
+     {
+      "areaPct": 90.6,
+      "key": "119",
+      "popPct": 93.8
+     },
+     {
+      "areaPct": 9.3,
+      "key": "114",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 99.2
+     },
+     {
+      "county": "Fairfield",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23643,
+    "pres2020New": -7.7,
+    "pres2020Old": -8.0,
+    "retainedAreaPct": 90.6,
+    "retainedPopPct": 93.8,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-119; gained the rest from the old HD-114 (6%). Spans New Haven, Fairfield counties. 2020 presidential margin D+8.0 on the 2016\u20132020 lines \u2192 D+7.7 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 91.3,
+      "key": "12",
+      "popPct": 91.0
+     },
+     {
+      "areaPct": 5.9,
+      "key": "13",
+      "popPct": 6.6
+     },
+     {
+      "areaPct": 1.1,
+      "key": "9",
+      "popPct": 1.5
+     },
+     {
+      "areaPct": 1.6,
+      "key": "11",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 99.2
+     },
+     {
+      "county": "Tolland",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23538,
+    "pres2020New": -40.7,
+    "pres2020Old": -40.9,
+    "retainedAreaPct": 91.3,
+    "retainedPopPct": 91.0,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-12; gained the rest from the old HD-13 (7%), the old HD-9 (2%), the old HD-11 (1%). Spans Hartford, Tolland counties. 2020 presidential margin D+40.9 on the 2016\u20132020 lines \u2192 D+40.7 on the current lines.",
+    "toEra": "current"
+   },
+   "120": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "120",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 92.7
+     },
+     {
+      "county": "New Haven",
+      "popPct": 7.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24062,
+    "pres2020New": -15.9,
+    "pres2020Old": -16.0,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Fairfield, New Haven counties.",
+    "toEra": "current"
+   },
+   "121": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "121",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23633,
+    "pres2020New": -37.2,
+    "pres2020Old": -37.2,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Fairfield County.",
+    "toEra": "current"
+   },
+   "122": {
+    "contributors": [
+     {
+      "areaPct": 90.2,
+      "key": "122",
+      "popPct": 86.5
+     },
+     {
+      "areaPct": 9.1,
+      "key": "123",
+      "popPct": 12.9
+     },
+     {
+      "areaPct": 0.7,
+      "key": "113",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 97.5
+     },
+     {
+      "county": "New Haven",
+      "popPct": 2.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23779,
+    "pres2020New": 0.5,
+    "pres2020Old": 2.9,
+    "retainedAreaPct": 90.2,
+    "retainedPopPct": 86.5,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-122; gained the rest from the old HD-123 (13%), the old HD-113 (0%). Spans Fairfield, New Haven counties. 2020 presidential margin R+2.9 on the 2016\u20132020 lines \u2192 R+0.5 on the current lines.",
+    "toEra": "current"
+   },
+   "123": {
+    "contributors": [
+     {
+      "areaPct": 90.1,
+      "key": "123",
+      "popPct": 88.7
+     },
+     {
+      "areaPct": 6.8,
+      "key": "122",
+      "popPct": 6.1
+     },
+     {
+      "areaPct": 3.1,
+      "key": "134",
+      "popPct": 5.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23663,
+    "pres2020New": -9.7,
+    "pres2020Old": -10.5,
+    "retainedAreaPct": 90.1,
+    "retainedPopPct": 88.7,
+    "text": "Kept 89% of its population from the 2016\u20132020 HD-123; gained the rest from the old HD-122 (6%), the old HD-134 (5%). Entirely in Fairfield County. 2020 presidential margin D+10.5 on the 2016\u20132020 lines \u2192 D+9.7 on the current lines.",
+    "toEra": "current"
+   },
+   "124": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "124",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 21581,
+    "pres2020New": -67.3,
+    "pres2020Old": -67.7,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Fairfield County.",
+    "toEra": "current"
+   },
+   "125": {
+    "contributors": [
+     {
+      "areaPct": 51.9,
+      "key": "125",
+      "popPct": 46.7
+     },
+     {
+      "areaPct": 31.5,
+      "key": "147",
+      "popPct": 34.5
+     },
+     {
+      "areaPct": 9.4,
+      "key": "142",
+      "popPct": 11.0
+     },
+     {
+      "areaPct": 5.4,
+      "key": "141",
+      "popPct": 5.9
+     },
+     {
+      "areaPct": 1.7,
+      "key": "149",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22931,
+    "pres2020New": -20.4,
+    "pres2020Old": -23.8,
+    "retainedAreaPct": 51.9,
+    "retainedPopPct": 46.7,
+    "text": "A new footprint: only 47% of its population was in the 2016\u20132020 HD-125; it draws from the old HD-147 (34%), the old HD-142 (11%), the old HD-141 (6%) and 1 more. Entirely in Fairfield County. 2020 presidential margin D+23.8 on the 2016\u20132020 lines \u2192 D+20.4 on the current lines.",
+    "toEra": "current"
+   },
+   "126": {
+    "contributors": [
+     {
+      "areaPct": 96.3,
+      "key": "126",
+      "popPct": 93.2
+     },
+     {
+      "areaPct": 3.0,
+      "key": "124",
+      "popPct": 5.5
+     },
+     {
+      "areaPct": 0.6,
+      "key": "128",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24693,
+    "pres2020New": -63.3,
+    "pres2020Old": -63.7,
+    "retainedAreaPct": 96.3,
+    "retainedPopPct": 93.2,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-126; gained the rest from the old HD-124 (6%), the old HD-128 (1%). Entirely in Fairfield County. 2020 presidential margin D+63.7 on the 2016\u20132020 lines \u2192 D+63.3 on the current lines.",
+    "toEra": "current"
+   },
+   "127": {
+    "contributors": [
+     {
+      "areaPct": 86.5,
+      "key": "127",
+      "popPct": 84.1
+     },
+     {
+      "areaPct": 8.6,
+      "key": "126",
+      "popPct": 8.2
+     },
+     {
+      "areaPct": 4.8,
+      "key": "129",
+      "popPct": 7.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22099,
+    "pres2020New": -45.4,
+    "pres2020Old": -43.7,
+    "retainedAreaPct": 86.5,
+    "retainedPopPct": 84.1,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-127; gained the rest from the old HD-126 (8%), the old HD-129 (8%). Entirely in Fairfield County. 2020 presidential margin D+43.7 on the 2016\u20132020 lines \u2192 D+45.4 on the current lines.",
+    "toEra": "current"
+   },
+   "128": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "128",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24295,
+    "pres2020New": -66.4,
+    "pres2020Old": -66.4,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Fairfield County.",
+    "toEra": "current"
+   },
+   "129": {
+    "contributors": [
+     {
+      "areaPct": 89.6,
+      "key": "129",
+      "popPct": 90.6
+     },
+     {
+      "areaPct": 10.0,
+      "key": "130",
+      "popPct": 9.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25365,
+    "pres2020New": -55.1,
+    "pres2020Old": -54.2,
+    "retainedAreaPct": 89.6,
+    "retainedPopPct": 90.6,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-129; gained the rest from the old HD-130 (9%). Entirely in Fairfield County. 2020 presidential margin D+54.2 on the 2016\u20132020 lines \u2192 D+55.1 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 73.5,
+      "key": "13",
+      "popPct": 83.3
+     },
+     {
+      "areaPct": 2.2,
+      "key": "12",
+      "popPct": 9.1
+     },
+     {
+      "areaPct": 23.7,
+      "key": "31",
+      "popPct": 6.0
+     },
+     {
+      "areaPct": 0.5,
+      "key": "9",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23233,
+    "pres2020New": -33.4,
+    "pres2020Old": -33.2,
+    "retainedAreaPct": 73.5,
+    "retainedPopPct": 83.3,
+    "text": "Kept 83% of its population from the 2016\u20132020 HD-13; gained the rest from the old HD-12 (9%), the old HD-31 (6%), the old HD-9 (2%). Entirely in Hartford County. 2020 presidential margin D+33.2 on the 2016\u20132020 lines \u2192 D+33.4 on the current lines.",
+    "toEra": "current"
+   },
+   "130": {
+    "contributors": [
+     {
+      "areaPct": 84.2,
+      "key": "130",
+      "popPct": 87.4
+     },
+     {
+      "areaPct": 14.5,
+      "key": "124",
+      "popPct": 9.1
+     },
+     {
+      "areaPct": 1.2,
+      "key": "128",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24556,
+    "pres2020New": -68.8,
+    "pres2020Old": -67.9,
+    "retainedAreaPct": 84.2,
+    "retainedPopPct": 87.4,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-130; gained the rest from the old HD-124 (9%), the old HD-128 (3%). Entirely in Fairfield County. 2020 presidential margin D+67.9 on the 2016\u20132020 lines \u2192 D+68.8 on the current lines.",
+    "toEra": "current"
+   },
+   "131": {
+    "contributors": [
+     {
+      "areaPct": 93.3,
+      "key": "131",
+      "popPct": 91.0
+     },
+     {
+      "areaPct": 6.6,
+      "key": "69",
+      "popPct": 8.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 98.9
+     },
+     {
+      "county": "Fairfield",
+      "popPct": 1.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24501,
+    "pres2020New": 14.3,
+    "pres2020Old": 14.9,
+    "retainedAreaPct": 93.3,
+    "retainedPopPct": 91.0,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-131; gained the rest from the old HD-69 (9%). Spans New Haven, Fairfield counties. 2020 presidential margin R+14.9 on the 2016\u20132020 lines \u2192 R+14.3 on the current lines.",
+    "toEra": "current"
+   },
+   "132": {
+    "contributors": [
+     {
+      "areaPct": 81.1,
+      "key": "132",
+      "popPct": 68.7
+     },
+     {
+      "areaPct": 18.8,
+      "key": "133",
+      "popPct": 31.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23195,
+    "pres2020New": -32.0,
+    "pres2020Old": -31.2,
+    "retainedAreaPct": 81.1,
+    "retainedPopPct": 68.7,
+    "text": "Kept 69% of its population from the 2016\u20132020 HD-132; gained the rest from the old HD-133 (31%). Entirely in Fairfield County. 2020 presidential margin D+31.2 on the 2016\u20132020 lines \u2192 D+32.0 on the current lines.",
+    "toEra": "current"
+   },
+   "133": {
+    "contributors": [
+     {
+      "areaPct": 64.9,
+      "key": "133",
+      "popPct": 61.6
+     },
+     {
+      "areaPct": 8.1,
+      "key": "127",
+      "popPct": 21.3
+     },
+     {
+      "areaPct": 15.7,
+      "key": "132",
+      "popPct": 12.2
+     },
+     {
+      "areaPct": 11.2,
+      "key": "134",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27263,
+    "pres2020New": -34.1,
+    "pres2020Old": -33.5,
+    "retainedAreaPct": 64.9,
+    "retainedPopPct": 61.6,
+    "text": "Kept 62% of its population from the 2016\u20132020 HD-133; gained the rest from the old HD-127 (21%), the old HD-132 (12%), the old HD-134 (5%). Entirely in Fairfield County. 2020 presidential margin D+33.5 on the 2016\u20132020 lines \u2192 D+34.1 on the current lines.",
+    "toEra": "current"
+   },
+   "134": {
+    "contributors": [
+     {
+      "areaPct": 87.2,
+      "key": "134",
+      "popPct": 79.9
+     },
+     {
+      "areaPct": 12.7,
+      "key": "132",
+      "popPct": 20.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23954,
+    "pres2020New": -24.9,
+    "pres2020Old": -22.5,
+    "retainedAreaPct": 87.2,
+    "retainedPopPct": 79.9,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-134; gained the rest from the old HD-132 (20%). Entirely in Fairfield County. 2020 presidential margin D+22.5 on the 2016\u20132020 lines \u2192 D+24.9 on the current lines.",
+    "toEra": "current"
+   },
+   "135": {
+    "contributors": [
+     {
+      "areaPct": 84.8,
+      "key": "135",
+      "popPct": 87.7
+     },
+     {
+      "areaPct": 15.2,
+      "key": "2",
+      "popPct": 12.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24354,
+    "pres2020New": -32.8,
+    "pres2020Old": -31.6,
+    "retainedAreaPct": 84.8,
+    "retainedPopPct": 87.7,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-135; gained the rest from the old HD-2 (12%). Entirely in Fairfield County. 2020 presidential margin D+31.6 on the 2016\u20132020 lines \u2192 D+32.8 on the current lines.",
+    "toEra": "current"
+   },
+   "136": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "136",
+      "popPct": 99.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23586,
+    "pres2020New": -50.8,
+    "pres2020Old": -50.9,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 99.8,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Fairfield County.",
+    "toEra": "current"
+   },
+   "137": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "137",
+      "popPct": 99.1
+     },
+     {
+      "areaPct": 0.2,
+      "key": "140",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23797,
+    "pres2020New": -42.2,
+    "pres2020Old": -41.6,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 99.1,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-137; gained the rest from the old HD-140 (1%). Entirely in Fairfield County. 2020 presidential margin D+41.6 on the 2016\u20132020 lines \u2192 D+42.2 on the current lines.",
+    "toEra": "current"
+   },
+   "138": {
+    "contributors": [
+     {
+      "areaPct": 93.0,
+      "key": "138",
+      "popPct": 80.2
+     },
+     {
+      "areaPct": 1.0,
+      "key": "110",
+      "popPct": 8.5
+     },
+     {
+      "areaPct": 3.0,
+      "key": "2",
+      "popPct": 6.3
+     },
+     {
+      "areaPct": 2.6,
+      "key": "108",
+      "popPct": 2.5
+     },
+     {
+      "areaPct": 0.4,
+      "key": "109",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 21728,
+    "pres2020New": -15.3,
+    "pres2020Old": -13.0,
+    "retainedAreaPct": 93.0,
+    "retainedPopPct": 80.2,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-138; gained the rest from the old HD-110 (8%), the old HD-2 (6%), the old HD-108 (2%) and 1 more. Entirely in Fairfield County. 2020 presidential margin D+13.0 on the 2016\u20132020 lines \u2192 D+15.3 on the current lines.",
+    "toEra": "current"
+   },
+   "139": {
+    "contributors": [
+     {
+      "areaPct": 56.3,
+      "key": "139",
+      "popPct": 58.0
+     },
+     {
+      "areaPct": 23.3,
+      "key": "42",
+      "popPct": 19.1
+     },
+     {
+      "areaPct": 6.5,
+      "key": "46",
+      "popPct": 12.8
+     },
+     {
+      "areaPct": 11.3,
+      "key": "40",
+      "popPct": 8.7
+     },
+     {
+      "areaPct": 2.6,
+      "key": "47",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "New London",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 28532,
+    "pres2020New": -13.3,
+    "pres2020Old": -9.5,
+    "retainedAreaPct": 56.3,
+    "retainedPopPct": 58.0,
+    "text": "Kept 58% of its population from the 2016\u20132020 HD-139; gained the rest from the old HD-42 (19%), the old HD-46 (13%), the old HD-40 (9%) and 1 more. Entirely in New London County. 2020 presidential margin D+9.5 on the 2016\u20132020 lines \u2192 D+13.3 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 92.8,
+      "key": "14",
+      "popPct": 97.2
+     },
+     {
+      "areaPct": 7.2,
+      "key": "11",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24949,
+    "pres2020New": -25.9,
+    "pres2020Old": -26.3,
+    "retainedAreaPct": 92.8,
+    "retainedPopPct": 97.2,
+    "text": "Kept 97% of its population from the 2016\u20132020 HD-14; gained the rest from the old HD-11 (3%). Entirely in Hartford County. 2020 presidential margin D+26.3 on the 2016\u20132020 lines \u2192 D+25.9 on the current lines.",
+    "toEra": "current"
+   },
+   "140": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "140",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23132,
+    "pres2020New": -55.0,
+    "pres2020Old": -54.9,
+    "retainedAreaPct": 99.4,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Fairfield County.",
+    "toEra": "current"
+   },
+   "141": {
+    "contributors": [
+     {
+      "areaPct": 93.3,
+      "key": "141",
+      "popPct": 85.2
+     },
+     {
+      "areaPct": 6.7,
+      "key": "147",
+      "popPct": 14.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24402,
+    "pres2020New": -27.1,
+    "pres2020Old": -29.0,
+    "retainedAreaPct": 93.3,
+    "retainedPopPct": 85.2,
+    "text": "Kept 85% of its population from the 2016\u20132020 HD-141; gained the rest from the old HD-147 (15%). Entirely in Fairfield County. 2020 presidential margin D+29.0 on the 2016\u20132020 lines \u2192 D+27.1 on the current lines.",
+    "toEra": "current"
+   },
+   "142": {
+    "contributors": [
+     {
+      "areaPct": 84.9,
+      "key": "142",
+      "popPct": 84.4
+     },
+     {
+      "areaPct": 9.4,
+      "key": "141",
+      "popPct": 10.6
+     },
+     {
+      "areaPct": 5.3,
+      "key": "125",
+      "popPct": 3.4
+     },
+     {
+      "areaPct": 0.4,
+      "key": "140",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 20969,
+    "pres2020New": -29.1,
+    "pres2020Old": -26.5,
+    "retainedAreaPct": 84.9,
+    "retainedPopPct": 84.4,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-142; gained the rest from the old HD-141 (11%), the old HD-125 (3%), the old HD-140 (2%). Entirely in Fairfield County. 2020 presidential margin D+26.5 on the 2016\u20132020 lines \u2192 D+29.1 on the current lines.",
+    "toEra": "current"
+   },
+   "143": {
+    "contributors": [
+     {
+      "areaPct": 58.6,
+      "key": "143",
+      "popPct": 54.5
+     },
+     {
+      "areaPct": 20.7,
+      "key": "142",
+      "popPct": 23.1
+     },
+     {
+      "areaPct": 9.8,
+      "key": "137",
+      "popPct": 16.3
+     },
+     {
+      "areaPct": 10.9,
+      "key": "136",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24044,
+    "pres2020New": -29.3,
+    "pres2020Old": -28.6,
+    "retainedAreaPct": 58.6,
+    "retainedPopPct": 54.5,
+    "text": "Kept 54% of its population from the 2016\u20132020 HD-143; gained the rest from the old HD-142 (23%), the old HD-137 (16%), the old HD-136 (6%). Entirely in Fairfield County. 2020 presidential margin D+28.6 on the 2016\u20132020 lines \u2192 D+29.3 on the current lines.",
+    "toEra": "current"
+   },
+   "144": {
+    "contributors": [
+     {
+      "areaPct": 16.8,
+      "key": "146",
+      "popPct": 50.6
+     },
+     {
+      "areaPct": 81.2,
+      "key": "144",
+      "popPct": 49.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 21920,
+    "pres2020New": -35.1,
+    "pres2020Old": -25.5,
+    "retainedAreaPct": 81.2,
+    "retainedPopPct": 49.1,
+    "text": "A new footprint: only 49% of its population was in the 2016\u20132020 HD-144; it draws from the old HD-146 (51%). Entirely in Fairfield County. 2020 presidential margin D+25.5 on the 2016\u20132020 lines \u2192 D+35.1 on the current lines.",
+    "toEra": "current"
+   },
+   "145": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "145",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 19986,
+    "pres2020New": -60.5,
+    "pres2020Old": -60.8,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Fairfield County.",
+    "toEra": "current"
+   },
+   "146": {
+    "contributors": [
+     {
+      "areaPct": 92.7,
+      "key": "146",
+      "popPct": 90.0
+     },
+     {
+      "areaPct": 5.1,
+      "key": "145",
+      "popPct": 9.4
+     },
+     {
+      "areaPct": 2.2,
+      "key": "148",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 19509,
+    "pres2020New": -50.3,
+    "pres2020Old": -49.9,
+    "retainedAreaPct": 92.7,
+    "retainedPopPct": 90.0,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-146; gained the rest from the old HD-145 (9%), the old HD-148 (1%). Entirely in Fairfield County. 2020 presidential margin D+49.9 on the 2016\u20132020 lines \u2192 D+50.3 on the current lines.",
+    "toEra": "current"
+   },
+   "147": {
+    "contributors": [
+     {
+      "areaPct": 35.0,
+      "key": "144",
+      "popPct": 54.0
+     },
+     {
+      "areaPct": 62.9,
+      "key": "147",
+      "popPct": 45.2
+     },
+     {
+      "areaPct": 2.0,
+      "key": "149",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23794,
+    "pres2020New": -28.4,
+    "pres2020Old": -26.9,
+    "retainedAreaPct": 62.9,
+    "retainedPopPct": 45.2,
+    "text": "A new footprint: only 45% of its population was in the 2016\u20132020 HD-147; it draws from the old HD-144 (54%), the old HD-149 (1%). Entirely in Fairfield County. 2020 presidential margin D+26.9 on the 2016\u20132020 lines \u2192 D+28.4 on the current lines.",
+    "toEra": "current"
+   },
+   "148": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "148",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 33205,
+    "pres2020New": -40.9,
+    "pres2020Old": -40.9,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Fairfield County.",
+    "toEra": "current"
+   },
+   "149": {
+    "contributors": [
+     {
+      "areaPct": 95.3,
+      "key": "149",
+      "popPct": 91.5
+     },
+     {
+      "areaPct": 2.5,
+      "key": "147",
+      "popPct": 3.6
+     },
+     {
+      "areaPct": 1.2,
+      "key": "151",
+      "popPct": 2.7
+     },
+     {
+      "areaPct": 1.1,
+      "key": "144",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25049,
+    "pres2020New": -19.3,
+    "pres2020Old": -18.8,
+    "retainedAreaPct": 95.3,
+    "retainedPopPct": 91.5,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-149; gained the rest from the old HD-147 (4%), the old HD-151 (3%), the old HD-144 (2%). Entirely in Fairfield County. 2020 presidential margin D+18.8 on the 2016\u20132020 lines \u2192 D+19.3 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 97.2,
+      "key": "15",
+      "popPct": 90.9
+     },
+     {
+      "areaPct": 2.8,
+      "key": "18",
+      "popPct": 9.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23693,
+    "pres2020New": -70.7,
+    "pres2020Old": -69.9,
+    "retainedAreaPct": 97.2,
+    "retainedPopPct": 90.9,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-15; gained the rest from the old HD-18 (9%). Entirely in Hartford County. 2020 presidential margin D+69.9 on the 2016\u20132020 lines \u2192 D+70.7 on the current lines.",
+    "toEra": "current"
+   },
+   "150": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "150",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23161,
+    "pres2020New": -33.0,
+    "pres2020Old": -33.2,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Fairfield County.",
+    "toEra": "current"
+   },
+   "151": {
+    "contributors": [
+     {
+      "areaPct": 96.1,
+      "key": "151",
+      "popPct": 95.3
+     },
+     {
+      "areaPct": 1.3,
+      "key": "150",
+      "popPct": 4.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23962,
+    "pres2020New": -24.6,
+    "pres2020Old": -24.0,
+    "retainedAreaPct": 96.1,
+    "retainedPopPct": 95.3,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-151; gained the rest from the old HD-150 (4%). Entirely in Fairfield County. 2020 presidential margin D+24.0 on the 2016\u20132020 lines \u2192 D+24.6 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "16",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24517,
+    "pres2020New": -29.2,
+    "pres2020Old": -29.2,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Hartford County.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 94.7,
+      "key": "17",
+      "popPct": 95.9
+     },
+     {
+      "areaPct": 5.3,
+      "key": "19",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22997,
+    "pres2020New": -20.4,
+    "pres2020Old": -20.2,
+    "retainedAreaPct": 94.7,
+    "retainedPopPct": 95.9,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-17; gained the rest from the old HD-19 (4%). Entirely in Hartford County. 2020 presidential margin D+20.2 on the 2016\u20132020 lines \u2192 D+20.4 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 91.4,
+      "key": "18",
+      "popPct": 91.4
+     },
+     {
+      "areaPct": 8.4,
+      "key": "20",
+      "popPct": 8.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22674,
+    "pres2020New": -58.5,
+    "pres2020Old": -58.1,
+    "retainedAreaPct": 91.4,
+    "retainedPopPct": 91.4,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-18; gained the rest from the old HD-20 (9%). Entirely in Hartford County. 2020 presidential margin D+58.1 on the 2016\u20132020 lines \u2192 D+58.5 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 89.5,
+      "key": "19",
+      "popPct": 84.0
+     },
+     {
+      "areaPct": 3.7,
+      "key": "20",
+      "popPct": 8.4
+     },
+     {
+      "areaPct": 6.5,
+      "key": "17",
+      "popPct": 5.9
+     },
+     {
+      "areaPct": 0.3,
+      "key": "18",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 26498,
+    "pres2020New": -45.4,
+    "pres2020Old": -44.8,
+    "retainedAreaPct": 89.5,
+    "retainedPopPct": 84.0,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-19; gained the rest from the old HD-20 (8%), the old HD-17 (6%), the old HD-18 (2%). Entirely in Hartford County. 2020 presidential margin D+44.8 on the 2016\u20132020 lines \u2192 D+45.4 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 88.5,
+      "key": "2",
+      "popPct": 73.7
+     },
+     {
+      "areaPct": 5.5,
+      "key": "107",
+      "popPct": 13.3
+     },
+     {
+      "areaPct": 6.0,
+      "key": "138",
+      "popPct": 13.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25268,
+    "pres2020New": -17.4,
+    "pres2020Old": -16.7,
+    "retainedAreaPct": 88.5,
+    "retainedPopPct": 73.7,
+    "text": "Kept 74% of its population from the 2016\u20132020 HD-2; gained the rest from the old HD-107 (13%), the old HD-138 (13%). Entirely in Fairfield County. 2020 presidential margin D+16.7 on the 2016\u20132020 lines \u2192 D+17.4 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 48.7,
+      "key": "20",
+      "popPct": 64.4
+     },
+     {
+      "areaPct": 43.3,
+      "key": "27",
+      "popPct": 31.0
+     },
+     {
+      "areaPct": 7.9,
+      "key": "24",
+      "popPct": 4.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25173,
+    "pres2020New": -33.1,
+    "pres2020Old": -46.0,
+    "retainedAreaPct": 48.7,
+    "retainedPopPct": 64.4,
+    "text": "Kept 64% of its population from the 2016\u20132020 HD-20; gained the rest from the old HD-27 (31%), the old HD-24 (5%). Entirely in Hartford County. 2020 presidential margin D+46.0 on the 2016\u20132020 lines \u2192 D+33.1 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 91.1,
+      "key": "21",
+      "popPct": 92.5
+     },
+     {
+      "areaPct": 8.9,
+      "key": "19",
+      "popPct": 7.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22687,
+    "pres2020New": -21.9,
+    "pres2020Old": -21.4,
+    "retainedAreaPct": 91.1,
+    "retainedPopPct": 92.5,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-21; gained the rest from the old HD-19 (8%). Entirely in Hartford County. 2020 presidential margin D+21.4 on the 2016\u20132020 lines \u2192 D+21.9 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 52.0,
+      "key": "22",
+      "popPct": 67.3
+     },
+     {
+      "areaPct": 21.7,
+      "key": "21",
+      "popPct": 15.4
+     },
+     {
+      "areaPct": 18.3,
+      "key": "30",
+      "popPct": 14.6
+     },
+     {
+      "areaPct": 8.0,
+      "key": "80",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25993,
+    "pres2020New": -1.3,
+    "pres2020Old": -5.8,
+    "retainedAreaPct": 52.0,
+    "retainedPopPct": 67.3,
+    "text": "Kept 67% of its population from the 2016\u20132020 HD-22; gained the rest from the old HD-21 (15%), the old HD-30 (15%), the old HD-80 (3%). Entirely in Hartford County. 2020 presidential margin D+5.8 on the 2016\u20132020 lines \u2192 D+1.3 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "23",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 57.5
+     },
+     {
+      "county": "New London",
+      "popPct": 42.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23296,
+    "pres2020New": -19.0,
+    "pres2020Old": -19.0,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Middlesex, New London counties.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 67.5,
+      "key": "24",
+      "popPct": 63.0
+     },
+     {
+      "areaPct": 25.3,
+      "key": "22",
+      "popPct": 24.2
+     },
+     {
+      "areaPct": 7.1,
+      "key": "25",
+      "popPct": 12.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24421,
+    "pres2020New": -34.4,
+    "pres2020Old": -29.6,
+    "retainedAreaPct": 67.5,
+    "retainedPopPct": 63.0,
+    "text": "Kept 63% of its population from the 2016\u20132020 HD-24; gained the rest from the old HD-22 (24%), the old HD-25 (13%). Entirely in Hartford County. 2020 presidential margin D+29.6 on the 2016\u20132020 lines \u2192 D+34.4 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 90.6,
+      "key": "25",
+      "popPct": 92.3
+     },
+     {
+      "areaPct": 5.2,
+      "key": "24",
+      "popPct": 4.3
+     },
+     {
+      "areaPct": 4.2,
+      "key": "26",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 21301,
+    "pres2020New": -44.0,
+    "pres2020Old": -44.3,
+    "retainedAreaPct": 90.6,
+    "retainedPopPct": 92.3,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-25; gained the rest from the old HD-24 (4%), the old HD-26 (3%). Entirely in Hartford County. 2020 presidential margin D+44.3 on the 2016\u20132020 lines \u2192 D+44.0 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 97.1,
+      "key": "26",
+      "popPct": 94.1
+     },
+     {
+      "areaPct": 2.7,
+      "key": "25",
+      "popPct": 5.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24520,
+    "pres2020New": -27.4,
+    "pres2020Old": -26.9,
+    "retainedAreaPct": 97.1,
+    "retainedPopPct": 94.1,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-26; gained the rest from the old HD-25 (6%). Entirely in Hartford County. 2020 presidential margin D+26.9 on the 2016\u20132020 lines \u2192 D+27.4 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 69.0,
+      "key": "27",
+      "popPct": 65.3
+     },
+     {
+      "areaPct": 23.7,
+      "key": "24",
+      "popPct": 26.3
+     },
+     {
+      "areaPct": 7.3,
+      "key": "29",
+      "popPct": 8.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25440,
+    "pres2020New": -20.3,
+    "pres2020Old": -18.3,
+    "retainedAreaPct": 69.0,
+    "retainedPopPct": 65.3,
+    "text": "Kept 65% of its population from the 2016\u20132020 HD-27; gained the rest from the old HD-24 (26%), the old HD-29 (8%). Entirely in Hartford County. 2020 presidential margin D+18.3 on the 2016\u20132020 lines \u2192 D+20.3 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "28",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24220,
+    "pres2020New": -18.3,
+    "pres2020Old": -18.3,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Hartford County.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 98.9,
+      "key": "29",
+      "popPct": 97.7
+     },
+     {
+      "areaPct": 1.0,
+      "key": "28",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23923,
+    "pres2020New": -15.5,
+    "pres2020Old": -14.8,
+    "retainedAreaPct": 98.9,
+    "retainedPopPct": 97.7,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-29; gained the rest from the old HD-28 (2%). Entirely in Hartford County. 2020 presidential margin D+14.8 on the 2016\u20132020 lines \u2192 D+15.5 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 92.5,
+      "key": "3",
+      "popPct": 91.5
+     },
+     {
+      "areaPct": 5.4,
+      "key": "6",
+      "popPct": 5.7
+     },
+     {
+      "areaPct": 1.8,
+      "key": "1",
+      "popPct": 2.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22137,
+    "pres2020New": -65.9,
+    "pres2020Old": -65.7,
+    "retainedAreaPct": 92.5,
+    "retainedPopPct": 91.5,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-3; gained the rest from the old HD-6 (6%), the old HD-1 (3%). Entirely in Hartford County. 2020 presidential margin D+65.7 on the 2016\u20132020 lines \u2192 D+65.9 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 91.8,
+      "key": "30",
+      "popPct": 85.8
+     },
+     {
+      "areaPct": 4.0,
+      "key": "81",
+      "popPct": 11.8
+     },
+     {
+      "areaPct": 4.1,
+      "key": "83",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 21630,
+    "pres2020New": 2.7,
+    "pres2020Old": 3.6,
+    "retainedAreaPct": 91.8,
+    "retainedPopPct": 85.8,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-30; gained the rest from the old HD-81 (12%), the old HD-83 (2%). Entirely in Hartford County. 2020 presidential margin R+3.6 on the 2016\u20132020 lines \u2192 R+2.7 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 91.8,
+      "key": "31",
+      "popPct": 84.4
+     },
+     {
+      "areaPct": 8.2,
+      "key": "13",
+      "popPct": 15.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 99.0
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 1.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23089,
+    "pres2020New": -26.5,
+    "pres2020Old": -25.4,
+    "retainedAreaPct": 91.8,
+    "retainedPopPct": 84.4,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-31; gained the rest from the old HD-13 (16%). Spans Hartford, Middlesex counties. 2020 presidential margin D+25.4 on the 2016\u20132020 lines \u2192 D+26.5 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "32",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 96.7
+     },
+     {
+      "county": "Hartford",
+      "popPct": 3.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23673,
+    "pres2020New": -11.2,
+    "pres2020Old": -11.3,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Middlesex, Hartford counties.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "33",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 98.5
+     },
+     {
+      "county": "Hartford",
+      "popPct": 1.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23735,
+    "pres2020New": -35.0,
+    "pres2020Old": -35.4,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Middlesex, Hartford counties.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 86.1,
+      "key": "34",
+      "popPct": 91.0
+     },
+     {
+      "areaPct": 13.9,
+      "key": "37",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 91.2
+     },
+     {
+      "county": "New London",
+      "popPct": 8.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23722,
+    "pres2020New": -3.6,
+    "pres2020Old": -4.4,
+    "retainedAreaPct": 86.1,
+    "retainedPopPct": 91.0,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-34; gained the rest from the old HD-37 (9%). Spans Middlesex, New London counties. 2020 presidential margin D+4.4 on the 2016\u20132020 lines \u2192 D+3.6 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "35",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 96.7
+     },
+     {
+      "county": "New Haven",
+      "popPct": 3.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23314,
+    "pres2020New": -11.0,
+    "pres2020Old": -11.0,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Middlesex, New Haven counties.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "36",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 98.5
+     },
+     {
+      "county": "New London",
+      "popPct": 1.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23348,
+    "pres2020New": -18.9,
+    "pres2020Old": -18.9,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Middlesex, New London counties.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 84.8,
+      "key": "37",
+      "popPct": 87.2
+     },
+     {
+      "areaPct": 10.3,
+      "key": "139",
+      "popPct": 10.1
+     },
+     {
+      "areaPct": 4.9,
+      "key": "38",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "New London",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23820,
+    "pres2020New": -20.6,
+    "pres2020Old": -20.8,
+    "retainedAreaPct": 84.8,
+    "retainedPopPct": 87.2,
+    "text": "Kept 87% of its population from the 2016\u20132020 HD-37; gained the rest from the old HD-139 (10%), the old HD-38 (3%). Entirely in New London County. 2020 presidential margin D+20.8 on the 2016\u20132020 lines \u2192 D+20.6 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 94.1,
+      "key": "38",
+      "popPct": 92.9
+     },
+     {
+      "areaPct": 3.6,
+      "key": "42",
+      "popPct": 5.0
+     },
+     {
+      "areaPct": 2.3,
+      "key": "139",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "New London",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24782,
+    "pres2020New": -12.6,
+    "pres2020Old": -13.3,
+    "retainedAreaPct": 94.1,
+    "retainedPopPct": 92.9,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-38; gained the rest from the old HD-42 (5%), the old HD-139 (2%). Entirely in New London County. 2020 presidential margin D+13.3 on the 2016\u20132020 lines \u2192 D+12.6 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 96.3,
+      "key": "39",
+      "popPct": 99.0
+     },
+     {
+      "areaPct": 3.5,
+      "key": "41",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "New London",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17590,
+    "pres2020New": -55.9,
+    "pres2020Old": -55.7,
+    "retainedAreaPct": 96.3,
+    "retainedPopPct": 99.0,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-39; gained the rest from the old HD-41 (1%). Entirely in New London County. 2020 presidential margin D+55.7 on the 2016\u20132020 lines \u2192 D+55.9 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 94.0,
+      "key": "4",
+      "popPct": 90.7
+     },
+     {
+      "areaPct": 4.3,
+      "key": "3",
+      "popPct": 8.0
+     },
+     {
+      "areaPct": 1.1,
+      "key": "7",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 18472,
+    "pres2020New": -68.5,
+    "pres2020Old": -67.9,
+    "retainedAreaPct": 94.0,
+    "retainedPopPct": 90.7,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-4; gained the rest from the old HD-3 (8%), the old HD-7 (1%). Entirely in Hartford County. 2020 presidential margin D+67.9 on the 2016\u20132020 lines \u2192 D+68.5 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 73.7,
+      "key": "40",
+      "popPct": 66.6
+     },
+     {
+      "areaPct": 6.3,
+      "key": "39",
+      "popPct": 19.8
+     },
+     {
+      "areaPct": 19.9,
+      "key": "41",
+      "popPct": 13.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "New London",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29869,
+    "pres2020New": -29.3,
+    "pres2020Old": -18.5,
+    "retainedAreaPct": 73.7,
+    "retainedPopPct": 66.6,
+    "text": "Kept 67% of its population from the 2016\u20132020 HD-40; gained the rest from the old HD-39 (20%), the old HD-41 (14%). Entirely in New London County. 2020 presidential margin D+18.5 on the 2016\u20132020 lines \u2192 D+29.3 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 56.1,
+      "key": "41",
+      "popPct": 72.2
+     },
+     {
+      "areaPct": 43.5,
+      "key": "43",
+      "popPct": 25.7
+     },
+     {
+      "areaPct": 0.4,
+      "key": "40",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New London",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24587,
+    "pres2020New": -33.5,
+    "pres2020Old": -33.7,
+    "retainedAreaPct": 56.1,
+    "retainedPopPct": 72.2,
+    "text": "Kept 72% of its population from the 2016\u20132020 HD-41; gained the rest from the old HD-43 (26%), the old HD-40 (2%). Entirely in New London County. 2020 presidential margin D+33.7 on the 2016\u20132020 lines \u2192 D+33.5 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 40.7,
+      "key": "125",
+      "popPct": 47.6
+     },
+     {
+      "areaPct": 51.5,
+      "key": "143",
+      "popPct": 44.1
+     },
+     {
+      "areaPct": 7.6,
+      "key": "111",
+      "popPct": 8.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "New London",
+      "popPct": 100.0
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 26627,
+    "pres2020New": -30.4,
+    "pres2020Old": -3.0,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-42; it draws from the old HD-125 (48%), the old HD-143 (44%), the old HD-111 (8%). Counties: gained Fairfield (100%); lost New London. 2020 presidential margin D+3.0 on the 2016\u20132020 lines \u2192 D+30.4 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 77.5,
+      "key": "43",
+      "popPct": 68.0
+     },
+     {
+      "areaPct": 22.4,
+      "key": "42",
+      "popPct": 32.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New London",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25236,
+    "pres2020New": -11.2,
+    "pres2020Old": -20.3,
+    "retainedAreaPct": 77.5,
+    "retainedPopPct": 68.0,
+    "text": "Kept 68% of its population from the 2016\u20132020 HD-43; gained the rest from the old HD-42 (32%). Entirely in New London County. 2020 presidential margin D+20.3 on the 2016\u20132020 lines \u2192 D+11.2 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 63.8,
+      "key": "44",
+      "popPct": 84.3
+     },
+     {
+      "areaPct": 35.4,
+      "key": "45",
+      "popPct": 14.8
+     },
+     {
+      "areaPct": 0.8,
+      "key": "51",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Windham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24176,
+    "pres2020New": 18.6,
+    "pres2020Old": 15.6,
+    "retainedAreaPct": 63.8,
+    "retainedPopPct": 84.3,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-44; gained the rest from the old HD-45 (15%), the old HD-51 (1%). Entirely in Windham County. 2020 presidential margin R+15.6 on the 2016\u20132020 lines \u2192 R+18.6 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 66.5,
+      "key": "45",
+      "popPct": 63.1
+     },
+     {
+      "areaPct": 32.9,
+      "key": "42",
+      "popPct": 36.0
+     },
+     {
+      "areaPct": 0.6,
+      "key": "47",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "New London",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Windham",
+      "popPct": 32.7
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 24579,
+    "pres2020New": 8.3,
+    "pres2020Old": 16.3,
+    "retainedAreaPct": 66.5,
+    "retainedPopPct": 63.1,
+    "text": "Kept 63% of its population from the 2016\u20132020 HD-45; gained the rest from the old HD-42 (36%), the old HD-47 (1%). Counties: lost Windham. 2020 presidential margin R+16.3 on the 2016\u20132020 lines \u2192 R+8.3 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 93.0,
+      "key": "46",
+      "popPct": 95.8
+     },
+     {
+      "areaPct": 6.9,
+      "key": "139",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "New London",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 21187,
+    "pres2020New": -28.9,
+    "pres2020Old": -27.9,
+    "retainedAreaPct": 93.0,
+    "retainedPopPct": 95.8,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-46; gained the rest from the old HD-139 (4%). Entirely in New London County. 2020 presidential margin D+27.9 on the 2016\u20132020 lines \u2192 D+28.9 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 81.9,
+      "key": "47",
+      "popPct": 66.8
+     },
+     {
+      "areaPct": 7.0,
+      "key": "45",
+      "popPct": 15.5
+     },
+     {
+      "areaPct": 5.5,
+      "key": "50",
+      "popPct": 8.1
+     },
+     {
+      "areaPct": 5.2,
+      "key": "44",
+      "popPct": 6.2
+     },
+     {
+      "areaPct": 0.5,
+      "key": "139",
+      "popPct": 3.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Windham",
+      "popPct": 63.8
+     },
+     {
+      "county": "New London",
+      "popPct": 36.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25698,
+    "pres2020New": 10.6,
+    "pres2020Old": 8.1,
+    "retainedAreaPct": 81.9,
+    "retainedPopPct": 66.8,
+    "text": "Kept 67% of its population from the 2016\u20132020 HD-47; gained the rest from the old HD-45 (16%), the old HD-50 (8%), the old HD-44 (6%) and 1 more. Spans Windham, New London counties. 2020 presidential margin R+8.1 on the 2016\u20132020 lines \u2192 R+10.6 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 52.4,
+      "key": "48",
+      "popPct": 71.8
+     },
+     {
+      "areaPct": 27.1,
+      "key": "47",
+      "popPct": 14.0
+     },
+     {
+      "areaPct": 16.3,
+      "key": "139",
+      "popPct": 10.0
+     },
+     {
+      "areaPct": 4.2,
+      "key": "34",
+      "popPct": 4.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "New London",
+      "popPct": 98.0
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 1.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Tolland",
+      "popPct": 14.0
+     },
+     {
+      "county": "Windham",
+      "popPct": 3.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 24297,
+    "pres2020New": -4.0,
+    "pres2020Old": -11.3,
+    "retainedAreaPct": 52.4,
+    "retainedPopPct": 71.8,
+    "text": "Kept 72% of its population from the 2016\u20132020 HD-48; gained the rest from the old HD-47 (14%), the old HD-139 (10%), the old HD-34 (4%). Counties: lost Tolland, Windham. 2020 presidential margin D+11.3 on the 2016\u20132020 lines \u2192 D+4.0 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 95.1,
+      "key": "49",
+      "popPct": 94.6
+     },
+     {
+      "areaPct": 4.8,
+      "key": "48",
+      "popPct": 5.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Windham",
+      "popPct": 80.3
+     },
+     {
+      "county": "Tolland",
+      "popPct": 19.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24408,
+    "pres2020New": -30.5,
+    "pres2020Old": -29.7,
+    "retainedAreaPct": 95.1,
+    "retainedPopPct": 94.6,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-49; gained the rest from the old HD-48 (5%). Spans Windham, Tolland counties. 2020 presidential margin D+29.7 on the 2016\u20132020 lines \u2192 D+30.5 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 69.4,
+      "key": "5",
+      "popPct": 83.3
+     },
+     {
+      "areaPct": 1.8,
+      "key": "7",
+      "popPct": 6.5
+     },
+     {
+      "areaPct": 19.3,
+      "key": "11",
+      "popPct": 4.2
+     },
+     {
+      "areaPct": 3.9,
+      "key": "14",
+      "popPct": 3.7
+     },
+     {
+      "areaPct": 5.6,
+      "key": "15",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25057,
+    "pres2020New": -67.2,
+    "pres2020Old": -71.0,
+    "retainedAreaPct": 69.4,
+    "retainedPopPct": 83.3,
+    "text": "Kept 83% of its population from the 2016\u20132020 HD-5; gained the rest from the old HD-7 (6%), the old HD-11 (4%), the old HD-14 (4%) and 1 more. Entirely in Hartford County. 2020 presidential margin D+71.0 on the 2016\u20132020 lines \u2192 D+67.2 on the current lines.",
+    "toEra": "current"
+   },
+   "50": {
+    "contributors": [
+     {
+      "areaPct": 60.9,
+      "key": "50",
+      "popPct": 63.8
+     },
+     {
+      "areaPct": 19.6,
+      "key": "53",
+      "popPct": 16.3
+     },
+     {
+      "areaPct": 6.7,
+      "key": "54",
+      "popPct": 13.1
+     },
+     {
+      "areaPct": 12.7,
+      "key": "47",
+      "popPct": 6.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Windham",
+      "popPct": 87.0
+     },
+     {
+      "county": "Tolland",
+      "popPct": 13.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25656,
+    "pres2020New": -6.1,
+    "pres2020Old": 2.0,
+    "retainedAreaPct": 60.9,
+    "retainedPopPct": 63.8,
+    "text": "Kept 64% of its population from the 2016\u20132020 HD-50; gained the rest from the old HD-53 (16%), the old HD-54 (13%), the old HD-47 (7%). Spans Windham, Tolland counties. 2020 presidential margin R+2.0 on the 2016\u20132020 lines \u2192 D+6.1 on the current lines.",
+    "toEra": "current"
+   },
+   "51": {
+    "contributors": [
+     {
+      "areaPct": 92.7,
+      "key": "51",
+      "popPct": 92.3
+     },
+     {
+      "areaPct": 7.3,
+      "key": "44",
+      "popPct": 7.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Windham",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24944,
+    "pres2020New": 12.6,
+    "pres2020Old": 12.9,
+    "retainedAreaPct": 92.7,
+    "retainedPopPct": 92.3,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-51; gained the rest from the old HD-44 (8%). Entirely in Windham County. 2020 presidential margin R+12.9 on the 2016\u20132020 lines \u2192 R+12.6 on the current lines.",
+    "toEra": "current"
+   },
+   "52": {
+    "contributors": [
+     {
+      "areaPct": 58.8,
+      "key": "52",
+      "popPct": 81.5
+     },
+     {
+      "areaPct": 41.1,
+      "key": "50",
+      "popPct": 18.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tolland",
+      "popPct": 84.2
+     },
+     {
+      "county": "Windham",
+      "popPct": 15.6
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Windham",
+      "popPct": 15.6
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 26663,
+    "pres2020New": 9.4,
+    "pres2020Old": 11.6,
+    "retainedAreaPct": 58.8,
+    "retainedPopPct": 81.5,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-52; gained the rest from the old HD-50 (18%). Counties: gained Windham (16%). 2020 presidential margin R+11.6 on the 2016\u20132020 lines \u2192 R+9.4 on the current lines.",
+    "toEra": "current"
+   },
+   "53": {
+    "contributors": [
+     {
+      "areaPct": 88.8,
+      "key": "53",
+      "popPct": 79.1
+     },
+     {
+      "areaPct": 11.1,
+      "key": "8",
+      "popPct": 20.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tolland",
+      "popPct": 99.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Windham",
+      "popPct": 18.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 23822,
+    "pres2020New": -10.7,
+    "pres2020Old": -9.9,
+    "retainedAreaPct": 88.8,
+    "retainedPopPct": 79.1,
+    "text": "Kept 79% of its population from the 2016\u20132020 HD-53; gained the rest from the old HD-8 (21%). Counties: lost Windham. 2020 presidential margin D+9.9 on the 2016\u20132020 lines \u2192 D+10.7 on the current lines.",
+    "toEra": "current"
+   },
+   "54": {
+    "contributors": [
+     {
+      "areaPct": 70.4,
+      "key": "54",
+      "popPct": 87.9
+     },
+     {
+      "areaPct": 29.6,
+      "key": "48",
+      "popPct": 12.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tolland",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22535,
+    "pres2020New": -53.8,
+    "pres2020Old": -55.5,
+    "retainedAreaPct": 70.4,
+    "retainedPopPct": 87.9,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-54; gained the rest from the old HD-48 (12%). Entirely in Tolland County. 2020 presidential margin D+55.5 on the 2016\u20132020 lines \u2192 D+53.8 on the current lines.",
+    "toEra": "current"
+   },
+   "55": {
+    "contributors": [
+     {
+      "areaPct": 88.2,
+      "key": "55",
+      "popPct": 83.9
+     },
+     {
+      "areaPct": 11.7,
+      "key": "31",
+      "popPct": 16.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tolland",
+      "popPct": 57.9
+     },
+     {
+      "county": "Hartford",
+      "popPct": 39.1
+     },
+     {
+      "county": "New London",
+      "popPct": 2.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24920,
+    "pres2020New": -10.2,
+    "pres2020Old": -7.8,
+    "retainedAreaPct": 88.2,
+    "retainedPopPct": 83.9,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-55; gained the rest from the old HD-31 (16%). Spans Tolland, Hartford, New London counties. 2020 presidential margin D+7.8 on the 2016\u20132020 lines \u2192 D+10.2 on the current lines.",
+    "toEra": "current"
+   },
+   "56": {
+    "contributors": [
+     {
+      "areaPct": 95.7,
+      "key": "56",
+      "popPct": 99.0
+     },
+     {
+      "areaPct": 4.1,
+      "key": "8",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tolland",
+      "popPct": 98.8
+     },
+     {
+      "county": "Hartford",
+      "popPct": 1.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23729,
+    "pres2020New": -25.0,
+    "pres2020Old": -25.0,
+    "retainedAreaPct": 95.7,
+    "retainedPopPct": 99.0,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-56; gained the rest from the old HD-8 (1%). Spans Tolland, Hartford counties. 2020 presidential margin D+25.0 on the 2016\u20132020 lines \u2192 D+25.0 on the current lines.",
+    "toEra": "current"
+   },
+   "57": {
+    "contributors": [
+     {
+      "areaPct": 98.0,
+      "key": "57",
+      "popPct": 91.7
+     },
+     {
+      "areaPct": 2.0,
+      "key": "56",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tolland",
+      "popPct": 77.3
+     },
+     {
+      "county": "Hartford",
+      "popPct": 22.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23104,
+    "pres2020New": -5.5,
+    "pres2020Old": -4.5,
+    "retainedAreaPct": 98.0,
+    "retainedPopPct": 91.7,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-57; gained the rest from the old HD-56 (8%). Spans Tolland, Hartford counties. 2020 presidential margin D+4.5 on the 2016\u20132020 lines \u2192 D+5.5 on the current lines.",
+    "toEra": "current"
+   },
+   "58": {
+    "contributors": [
+     {
+      "areaPct": 98.4,
+      "key": "58",
+      "popPct": 99.3
+     },
+     {
+      "areaPct": 1.5,
+      "key": "59",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23332,
+    "pres2020New": -13.4,
+    "pres2020Old": -13.4,
+    "retainedAreaPct": 98.4,
+    "retainedPopPct": 99.3,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-58; gained the rest from the old HD-59 (1%). Entirely in Hartford County. 2020 presidential margin D+13.4 on the 2016\u20132020 lines \u2192 D+13.4 on the current lines.",
+    "toEra": "current"
+   },
+   "59": {
+    "contributors": [
+     {
+      "areaPct": 78.2,
+      "key": "59",
+      "popPct": 89.2
+     },
+     {
+      "areaPct": 21.7,
+      "key": "57",
+      "popPct": 10.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25237,
+    "pres2020New": -5.6,
+    "pres2020Old": -5.4,
+    "retainedAreaPct": 78.2,
+    "retainedPopPct": 89.2,
+    "text": "Kept 89% of its population from the 2016\u20132020 HD-59; gained the rest from the old HD-57 (11%). Entirely in Hartford County. 2020 presidential margin D+5.4 on the 2016\u20132020 lines \u2192 D+5.6 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 46.0,
+      "key": "6",
+      "popPct": 71.6
+     },
+     {
+      "areaPct": 40.9,
+      "key": "4",
+      "popPct": 19.3
+     },
+     {
+      "areaPct": 12.7,
+      "key": "20",
+      "popPct": 9.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 29514,
+    "pres2020New": -62.4,
+    "pres2020Old": -63.7,
+    "retainedAreaPct": 46.0,
+    "retainedPopPct": 71.6,
+    "text": "Kept 72% of its population from the 2016\u20132020 HD-6; gained the rest from the old HD-4 (19%), the old HD-20 (9%). Entirely in Hartford County. 2020 presidential margin D+63.7 on the 2016\u20132020 lines \u2192 D+62.4 on the current lines.",
+    "toEra": "current"
+   },
+   "60": {
+    "contributors": [
+     {
+      "areaPct": 70.6,
+      "key": "60",
+      "popPct": 73.6
+     },
+     {
+      "areaPct": 16.9,
+      "key": "61",
+      "popPct": 12.0
+     },
+     {
+      "areaPct": 10.1,
+      "key": "15",
+      "popPct": 8.9
+     },
+     {
+      "areaPct": 2.3,
+      "key": "5",
+      "popPct": 5.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22945,
+    "pres2020New": -33.1,
+    "pres2020Old": -24.5,
+    "retainedAreaPct": 70.6,
+    "retainedPopPct": 73.6,
+    "text": "Kept 74% of its population from the 2016\u20132020 HD-60; gained the rest from the old HD-61 (12%), the old HD-15 (9%), the old HD-5 (5%). Entirely in Hartford County. 2020 presidential margin D+24.5 on the 2016\u20132020 lines \u2192 D+33.1 on the current lines.",
+    "toEra": "current"
+   },
+   "61": {
+    "contributors": [
+     {
+      "areaPct": 92.4,
+      "key": "61",
+      "popPct": 75.9
+     },
+     {
+      "areaPct": 7.6,
+      "key": "60",
+      "popPct": 24.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 27606,
+    "pres2020New": -6.1,
+    "pres2020Old": -8.2,
+    "retainedAreaPct": 92.4,
+    "retainedPopPct": 75.9,
+    "text": "Kept 76% of its population from the 2016\u20132020 HD-61; gained the rest from the old HD-60 (24%). Entirely in Hartford County. 2020 presidential margin D+8.2 on the 2016\u20132020 lines \u2192 D+6.1 on the current lines.",
+    "toEra": "current"
+   },
+   "62": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "62",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 56.1
+     },
+     {
+      "county": "Litchfield",
+      "popPct": 43.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23109,
+    "pres2020New": -0.9,
+    "pres2020Old": -0.9,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Hartford, Litchfield counties.",
+    "toEra": "current"
+   },
+   "63": {
+    "contributors": [
+     {
+      "areaPct": 79.4,
+      "key": "63",
+      "popPct": 81.9
+     },
+     {
+      "areaPct": 20.6,
+      "key": "64",
+      "popPct": 18.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Litchfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24080,
+    "pres2020New": 14.1,
+    "pres2020Old": 12.9,
+    "retainedAreaPct": 79.4,
+    "retainedPopPct": 81.9,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-63; gained the rest from the old HD-64 (18%). Entirely in Litchfield County. 2020 presidential margin R+12.9 on the 2016\u20132020 lines \u2192 R+14.1 on the current lines.",
+    "toEra": "current"
+   },
+   "64": {
+    "contributors": [
+     {
+      "areaPct": 82.2,
+      "key": "64",
+      "popPct": 79.1
+     },
+     {
+      "areaPct": 9.7,
+      "key": "69",
+      "popPct": 15.1
+     },
+     {
+      "areaPct": 8.1,
+      "key": "63",
+      "popPct": 5.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Litchfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24135,
+    "pres2020New": -28.6,
+    "pres2020Old": -22.8,
+    "retainedAreaPct": 82.2,
+    "retainedPopPct": 79.1,
+    "text": "Kept 79% of its population from the 2016\u20132020 HD-64; gained the rest from the old HD-69 (15%), the old HD-63 (6%). Entirely in Litchfield County. 2020 presidential margin D+22.8 on the 2016\u20132020 lines \u2192 D+28.6 on the current lines.",
+    "toEra": "current"
+   },
+   "65": {
+    "contributors": [
+     {
+      "areaPct": 89.2,
+      "key": "65",
+      "popPct": 95.4
+     },
+     {
+      "areaPct": 10.7,
+      "key": "63",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Litchfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22999,
+    "pres2020New": 7.6,
+    "pres2020Old": 7.2,
+    "retainedAreaPct": 89.2,
+    "retainedPopPct": 95.4,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-65; gained the rest from the old HD-63 (5%). Entirely in Litchfield County. 2020 presidential margin R+7.2 on the 2016\u20132020 lines \u2192 R+7.6 on the current lines.",
+    "toEra": "current"
+   },
+   "66": {
+    "contributors": [
+     {
+      "areaPct": 95.7,
+      "key": "66",
+      "popPct": 95.7
+     },
+     {
+      "areaPct": 4.3,
+      "key": "68",
+      "popPct": 4.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Litchfield",
+      "popPct": 99.2
+     },
+     {
+      "county": "New Haven",
+      "popPct": 0.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23801,
+    "pres2020New": 2.8,
+    "pres2020Old": 2.5,
+    "retainedAreaPct": 95.7,
+    "retainedPopPct": 95.7,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-66; gained the rest from the old HD-68 (4%). Spans Litchfield, New Haven counties. 2020 presidential margin R+2.5 on the 2016\u20132020 lines \u2192 R+2.8 on the current lines.",
+    "toEra": "current"
+   },
+   "67": {
+    "contributors": [
+     {
+      "areaPct": 83.1,
+      "key": "67",
+      "popPct": 91.1
+     },
+     {
+      "areaPct": 16.9,
+      "key": "108",
+      "popPct": 8.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Litchfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22779,
+    "pres2020New": -2.7,
+    "pres2020Old": -2.9,
+    "retainedAreaPct": 83.1,
+    "retainedPopPct": 91.1,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-67; gained the rest from the old HD-108 (9%). Entirely in Litchfield County. 2020 presidential margin D+2.9 on the 2016\u20132020 lines \u2192 D+2.7 on the current lines.",
+    "toEra": "current"
+   },
+   "68": {
+    "contributors": [
+     {
+      "areaPct": 97.7,
+      "key": "68",
+      "popPct": 90.4
+     },
+     {
+      "areaPct": 2.3,
+      "key": "73",
+      "popPct": 9.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Litchfield",
+      "popPct": 87.4
+     },
+     {
+      "county": "New Haven",
+      "popPct": 12.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24492,
+    "pres2020New": 24.1,
+    "pres2020Old": 25.5,
+    "retainedAreaPct": 97.7,
+    "retainedPopPct": 90.4,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-68; gained the rest from the old HD-73 (10%). Spans Litchfield, New Haven counties. 2020 presidential margin R+25.5 on the 2016\u20132020 lines \u2192 R+24.1 on the current lines.",
+    "toEra": "current"
+   },
+   "69": {
+    "contributors": [
+     {
+      "areaPct": 90.2,
+      "key": "69",
+      "popPct": 80.4
+     },
+     {
+      "areaPct": 5.7,
+      "key": "67",
+      "popPct": 12.3
+     },
+     {
+      "areaPct": 4.1,
+      "key": "131",
+      "popPct": 7.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 65.6
+     },
+     {
+      "county": "Litchfield",
+      "popPct": 32.0
+     },
+     {
+      "county": "Fairfield",
+      "popPct": 2.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22918,
+    "pres2020New": -5.3,
+    "pres2020Old": -9.1,
+    "retainedAreaPct": 90.2,
+    "retainedPopPct": 80.4,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-69; gained the rest from the old HD-67 (12%), the old HD-131 (7%). Spans New Haven, Litchfield, Fairfield counties. 2020 presidential margin D+9.1 on the 2016\u20132020 lines \u2192 D+5.3 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 93.0,
+      "key": "7",
+      "popPct": 96.7
+     },
+     {
+      "areaPct": 6.5,
+      "key": "5",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 19418,
+    "pres2020New": -87.1,
+    "pres2020Old": -87.2,
+    "retainedAreaPct": 93.0,
+    "retainedPopPct": 96.7,
+    "text": "Kept 97% of its population from the 2016\u20132020 HD-7; gained the rest from the old HD-5 (3%). Entirely in Hartford County. 2020 presidential margin D+87.2 on the 2016\u20132020 lines \u2192 D+87.1 on the current lines.",
+    "toEra": "current"
+   },
+   "70": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "70",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23389,
+    "pres2020New": 5.4,
+    "pres2020Old": 5.4,
+    "retainedAreaPct": 99.4,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in New Haven County.",
+    "toEra": "current"
+   },
+   "71": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "71",
+      "popPct": 98.8
+     },
+     {
+      "areaPct": 0.4,
+      "key": "73",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24109,
+    "pres2020New": 5.3,
+    "pres2020Old": 5.4,
+    "retainedAreaPct": 99.5,
+    "retainedPopPct": 98.8,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-71; gained the rest from the old HD-73 (1%). Entirely in New Haven County. 2020 presidential margin R+5.4 on the 2016\u20132020 lines \u2192 R+5.3 on the current lines.",
+    "toEra": "current"
+   },
+   "72": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "72",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23209,
+    "pres2020New": -41.4,
+    "pres2020Old": -40.5,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in New Haven County.",
+    "toEra": "current"
+   },
+   "73": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "73",
+      "popPct": 94.6
+     },
+     {
+      "areaPct": 1.2,
+      "key": "75",
+      "popPct": 5.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24179,
+    "pres2020New": -15.6,
+    "pres2020Old": -14.0,
+    "retainedAreaPct": 98.7,
+    "retainedPopPct": 94.6,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-73; gained the rest from the old HD-75 (5%). Entirely in New Haven County. 2020 presidential margin D+14.0 on the 2016\u20132020 lines \u2192 D+15.6 on the current lines.",
+    "toEra": "current"
+   },
+   "74": {
+    "contributors": [
+     {
+      "areaPct": 93.7,
+      "key": "74",
+      "popPct": 93.9
+     },
+     {
+      "areaPct": 5.7,
+      "key": "72",
+      "popPct": 5.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23901,
+    "pres2020New": -21.9,
+    "pres2020Old": -18.8,
+    "retainedAreaPct": 93.7,
+    "retainedPopPct": 93.9,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-74; gained the rest from the old HD-72 (6%). Entirely in New Haven County. 2020 presidential margin D+18.8 on the 2016\u20132020 lines \u2192 D+21.9 on the current lines.",
+    "toEra": "current"
+   },
+   "75": {
+    "contributors": [
+     {
+      "areaPct": 96.3,
+      "key": "75",
+      "popPct": 97.6
+     },
+     {
+      "areaPct": 2.9,
+      "key": "71",
+      "popPct": 1.4
+     },
+     {
+      "areaPct": 0.8,
+      "key": "73",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 22445,
+    "pres2020New": -38.0,
+    "pres2020Old": -39.1,
+    "retainedAreaPct": 96.3,
+    "retainedPopPct": 97.6,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-75; gained the rest from the old HD-71 (1%), the old HD-73 (1%). Entirely in New Haven County. 2020 presidential margin D+39.1 on the 2016\u20132020 lines \u2192 D+38.0 on the current lines.",
+    "toEra": "current"
+   },
+   "76": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "76",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Litchfield",
+      "popPct": 60.0
+     },
+     {
+      "county": "Hartford",
+      "popPct": 40.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23560,
+    "pres2020New": 14.8,
+    "pres2020Old": 14.8,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Litchfield, Hartford counties.",
+    "toEra": "current"
+   },
+   "77": {
+    "contributors": [
+     {
+      "areaPct": 63.2,
+      "key": "77",
+      "popPct": 82.4
+     },
+     {
+      "areaPct": 34.4,
+      "key": "78",
+      "popPct": 15.1
+     },
+     {
+      "areaPct": 2.4,
+      "key": "79",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25164,
+    "pres2020New": -4.4,
+    "pres2020Old": -6.2,
+    "retainedAreaPct": 63.2,
+    "retainedPopPct": 82.4,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-77; gained the rest from the old HD-78 (15%), the old HD-79 (2%). Entirely in Hartford County. 2020 presidential margin D+6.2 on the 2016\u20132020 lines \u2192 D+4.4 on the current lines.",
+    "toEra": "current"
+   },
+   "78": {
+    "contributors": [
+     {
+      "areaPct": 96.1,
+      "key": "78",
+      "popPct": 85.4
+     },
+     {
+      "areaPct": 3.7,
+      "key": "77",
+      "popPct": 14.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Litchfield",
+      "popPct": 49.8
+     },
+     {
+      "county": "Hartford",
+      "popPct": 49.3
+     },
+     {
+      "county": "New Haven",
+      "popPct": 0.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23073,
+    "pres2020New": 13.5,
+    "pres2020Old": 14.4,
+    "retainedAreaPct": 96.1,
+    "retainedPopPct": 85.4,
+    "text": "Kept 85% of its population from the 2016\u20132020 HD-78; gained the rest from the old HD-77 (14%). Spans Litchfield, Hartford, New Haven counties. 2020 presidential margin R+14.4 on the 2016\u20132020 lines \u2192 R+13.5 on the current lines.",
+    "toEra": "current"
+   },
+   "79": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "79",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24285,
+    "pres2020New": -11.5,
+    "pres2020Old": -11.4,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Hartford County.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 69.0,
+      "key": "8",
+      "popPct": 78.3
+     },
+     {
+      "areaPct": 7.9,
+      "key": "55",
+      "popPct": 10.0
+     },
+     {
+      "areaPct": 15.5,
+      "key": "48",
+      "popPct": 8.3
+     },
+     {
+      "areaPct": 7.4,
+      "key": "47",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tolland",
+      "popPct": 88.6
+     },
+     {
+      "county": "New London",
+      "popPct": 11.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "New London",
+      "popPct": 11.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23407,
+    "pres2020New": -5.8,
+    "pres2020Old": -8.0,
+    "retainedAreaPct": 69.0,
+    "retainedPopPct": 78.3,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-8; gained the rest from the old HD-55 (10%), the old HD-48 (8%), the old HD-47 (3%). Counties: gained New London (11%). 2020 presidential margin D+8.0 on the 2016\u20132020 lines \u2192 D+5.8 on the current lines.",
+    "toEra": "current"
+   },
+   "80": {
+    "contributors": [
+     {
+      "areaPct": 96.9,
+      "key": "80",
+      "popPct": 95.0
+     },
+     {
+      "areaPct": 2.8,
+      "key": "103",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 68.7
+     },
+     {
+      "county": "Hartford",
+      "popPct": 30.7
+     },
+     {
+      "county": "Litchfield",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23173,
+    "pres2020New": 24.5,
+    "pres2020Old": 25.1,
+    "retainedAreaPct": 96.9,
+    "retainedPopPct": 95.0,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-80; gained the rest from the old HD-103 (5%). Spans New Haven, Hartford, Litchfield counties. 2020 presidential margin R+25.1 on the 2016\u20132020 lines \u2192 R+24.5 on the current lines.",
+    "toEra": "current"
+   },
+   "81": {
+    "contributors": [
+     {
+      "areaPct": 82.2,
+      "key": "81",
+      "popPct": 88.2
+     },
+     {
+      "areaPct": 17.7,
+      "key": "103",
+      "popPct": 11.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 97.1
+     },
+     {
+      "county": "New Haven",
+      "popPct": 2.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23618,
+    "pres2020New": 0.4,
+    "pres2020Old": -1.1,
+    "retainedAreaPct": 82.2,
+    "retainedPopPct": 88.2,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-81; gained the rest from the old HD-103 (12%). Spans Hartford, New Haven counties. 2020 presidential margin D+1.1 on the 2016\u20132020 lines \u2192 R+0.4 on the current lines.",
+    "toEra": "current"
+   },
+   "82": {
+    "contributors": [
+     {
+      "areaPct": 91.9,
+      "key": "82",
+      "popPct": 80.2
+     },
+     {
+      "areaPct": 2.4,
+      "key": "84",
+      "popPct": 10.2
+     },
+     {
+      "areaPct": 5.7,
+      "key": "83",
+      "popPct": 9.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Middlesex",
+      "popPct": 16.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 24307,
+    "pres2020New": -19.0,
+    "pres2020Old": -14.7,
+    "retainedAreaPct": 91.9,
+    "retainedPopPct": 80.2,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-82; gained the rest from the old HD-84 (10%), the old HD-83 (10%). Counties: lost Middlesex. 2020 presidential margin D+14.7 on the 2016\u20132020 lines \u2192 D+19.0 on the current lines.",
+    "toEra": "current"
+   },
+   "83": {
+    "contributors": [
+     {
+      "areaPct": 64.0,
+      "key": "83",
+      "popPct": 74.7
+     },
+     {
+      "areaPct": 27.1,
+      "key": "90",
+      "popPct": 17.5
+     },
+     {
+      "areaPct": 8.8,
+      "key": "30",
+      "popPct": 7.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 68.4
+     },
+     {
+      "county": "Hartford",
+      "popPct": 31.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 26039,
+    "pres2020New": -4.7,
+    "pres2020Old": -4.4,
+    "retainedAreaPct": 64.0,
+    "retainedPopPct": 74.7,
+    "text": "Kept 75% of its population from the 2016\u20132020 HD-83; gained the rest from the old HD-90 (18%), the old HD-30 (8%). Spans New Haven, Hartford counties. 2020 presidential margin D+4.4 on the 2016\u20132020 lines \u2192 D+4.7 on the current lines.",
+    "toEra": "current"
+   },
+   "84": {
+    "contributors": [
+     {
+      "areaPct": 90.5,
+      "key": "84",
+      "popPct": 95.0
+     },
+     {
+      "areaPct": 9.1,
+      "key": "83",
+      "popPct": 4.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 21957,
+    "pres2020New": -31.5,
+    "pres2020Old": -34.2,
+    "retainedAreaPct": 90.5,
+    "retainedPopPct": 95.0,
+    "text": "Kept 95% of its population from the 2016\u20132020 HD-84; gained the rest from the old HD-83 (5%). Entirely in New Haven County. 2020 presidential margin D+34.2 on the 2016\u20132020 lines \u2192 D+31.5 on the current lines.",
+    "toEra": "current"
+   },
+   "85": {
+    "contributors": [
+     {
+      "areaPct": 96.4,
+      "key": "85",
+      "popPct": 98.4
+     },
+     {
+      "areaPct": 3.5,
+      "key": "90",
+      "popPct": 1.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 20919,
+    "pres2020New": -11.0,
+    "pres2020Old": -10.6,
+    "retainedAreaPct": 96.4,
+    "retainedPopPct": 98.4,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-85; gained the rest from the old HD-90 (2%). Entirely in New Haven County. 2020 presidential margin D+10.6 on the 2016\u20132020 lines \u2192 D+11.0 on the current lines.",
+    "toEra": "current"
+   },
+   "86": {
+    "contributors": [
+     {
+      "areaPct": 95.0,
+      "key": "86",
+      "popPct": 80.7
+     },
+     {
+      "areaPct": 4.9,
+      "key": "96",
+      "popPct": 19.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 92.7
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 7.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23592,
+    "pres2020New": 8.0,
+    "pres2020Old": 6.3,
+    "retainedAreaPct": 95.0,
+    "retainedPopPct": 80.7,
+    "text": "Kept 81% of its population from the 2016\u20132020 HD-86; gained the rest from the old HD-96 (19%). Spans New Haven, Middlesex counties. 2020 presidential margin R+6.3 on the 2016\u20132020 lines \u2192 R+8.0 on the current lines.",
+    "toEra": "current"
+   },
+   "87": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "87",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24222,
+    "pres2020New": 3.1,
+    "pres2020Old": 3.1,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in New Haven County.",
+    "toEra": "current"
+   },
+   "88": {
+    "contributors": [
+     {
+      "areaPct": 80.8,
+      "key": "88",
+      "popPct": 88.1
+     },
+     {
+      "areaPct": 18.8,
+      "key": "91",
+      "popPct": 11.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23287,
+    "pres2020New": -44.5,
+    "pres2020Old": -41.4,
+    "retainedAreaPct": 80.8,
+    "retainedPopPct": 88.1,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-88; gained the rest from the old HD-91 (12%). Entirely in New Haven County. 2020 presidential margin D+41.4 on the 2016\u20132020 lines \u2192 D+44.5 on the current lines.",
+    "toEra": "current"
+   },
+   "89": {
+    "contributors": [
+     {
+      "areaPct": 86.1,
+      "key": "89",
+      "popPct": 77.9
+     },
+     {
+      "areaPct": 12.1,
+      "key": "103",
+      "popPct": 15.0
+     },
+     {
+      "areaPct": 1.7,
+      "key": "74",
+      "popPct": 6.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 25350,
+    "pres2020New": 6.1,
+    "pres2020Old": 4.7,
+    "retainedAreaPct": 86.1,
+    "retainedPopPct": 77.9,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-89; gained the rest from the old HD-103 (15%), the old HD-74 (7%). Entirely in New Haven County. 2020 presidential margin R+4.7 on the 2016\u20132020 lines \u2192 R+6.1 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "9",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23987,
+    "pres2020New": -35.9,
+    "pres2020Old": -36.1,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Hartford County.",
+    "toEra": "current"
+   },
+   "90": {
+    "contributors": [
+     {
+      "areaPct": 46.9,
+      "key": "90",
+      "popPct": 64.9
+     },
+     {
+      "areaPct": 32.5,
+      "key": "82",
+      "popPct": 17.0
+     },
+     {
+      "areaPct": 2.3,
+      "key": "85",
+      "popPct": 8.8
+     },
+     {
+      "areaPct": 16.6,
+      "key": "86",
+      "popPct": 5.5
+     },
+     {
+      "areaPct": 1.6,
+      "key": "103",
+      "popPct": 3.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 83.9
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 16.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Middlesex",
+      "popPct": 16.1
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24842,
+    "pres2020New": -2.7,
+    "pres2020Old": -5.4,
+    "retainedAreaPct": 46.9,
+    "retainedPopPct": 64.9,
+    "text": "Kept 65% of its population from the 2016\u20132020 HD-90; gained the rest from the old HD-82 (17%), the old HD-85 (9%), the old HD-86 (6%) and 1 more. Counties: gained Middlesex (16%). 2020 presidential margin D+5.4 on the 2016\u20132020 lines \u2192 D+2.7 on the current lines.",
+    "toEra": "current"
+   },
+   "91": {
+    "contributors": [
+     {
+      "areaPct": 94.3,
+      "key": "91",
+      "popPct": 84.0
+     },
+     {
+      "areaPct": 5.5,
+      "key": "94",
+      "popPct": 15.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 19579,
+    "pres2020New": -56.2,
+    "pres2020Old": -50.7,
+    "retainedAreaPct": 94.3,
+    "retainedPopPct": 84.0,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-91; gained the rest from the old HD-94 (16%). Entirely in New Haven County. 2020 presidential margin D+50.7 on the 2016\u20132020 lines \u2192 D+56.2 on the current lines.",
+    "toEra": "current"
+   },
+   "92": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "92",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24011,
+    "pres2020New": -78.5,
+    "pres2020Old": -78.4,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in New Haven County.",
+    "toEra": "current"
+   },
+   "93": {
+    "contributors": [
+     {
+      "areaPct": 98.2,
+      "key": "93",
+      "popPct": 97.7
+     },
+     {
+      "areaPct": 1.8,
+      "key": "92",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23402,
+    "pres2020New": -79.1,
+    "pres2020Old": -78.7,
+    "retainedAreaPct": 98.2,
+    "retainedPopPct": 97.7,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-93; gained the rest from the old HD-92 (2%). Entirely in New Haven County. 2020 presidential margin D+78.7 on the 2016\u20132020 lines \u2192 D+79.1 on the current lines.",
+    "toEra": "current"
+   },
+   "94": {
+    "contributors": [
+     {
+      "areaPct": 98.6,
+      "key": "94",
+      "popPct": 97.9
+     },
+     {
+      "areaPct": 1.1,
+      "key": "96",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23844,
+    "pres2020New": -77.4,
+    "pres2020Old": -73.8,
+    "retainedAreaPct": 98.6,
+    "retainedPopPct": 97.9,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-94; gained the rest from the old HD-96 (2%). Entirely in New Haven County. 2020 presidential margin D+73.8 on the 2016\u20132020 lines \u2192 D+77.4 on the current lines.",
+    "toEra": "current"
+   },
+   "95": {
+    "contributors": [
+     {
+      "areaPct": 92.7,
+      "key": "95",
+      "popPct": 93.7
+     },
+     {
+      "areaPct": 6.3,
+      "key": "116",
+      "popPct": 4.9
+     },
+     {
+      "areaPct": 1.0,
+      "key": "97",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24097,
+    "pres2020New": -58.3,
+    "pres2020Old": -58.3,
+    "retainedAreaPct": 92.7,
+    "retainedPopPct": 93.7,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-95; gained the rest from the old HD-116 (5%), the old HD-97 (1%). Entirely in New Haven County. 2020 presidential margin D+58.3 on the 2016\u20132020 lines \u2192 D+58.3 on the current lines.",
+    "toEra": "current"
+   },
+   "96": {
+    "contributors": [
+     {
+      "areaPct": 90.2,
+      "key": "96",
+      "popPct": 88.9
+     },
+     {
+      "areaPct": 6.5,
+      "key": "93",
+      "popPct": 6.9
+     },
+     {
+      "areaPct": 2.4,
+      "key": "95",
+      "popPct": 3.5
+     },
+     {
+      "areaPct": 0.7,
+      "key": "97",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23609,
+    "pres2020New": -78.8,
+    "pres2020Old": -56.5,
+    "retainedAreaPct": 90.2,
+    "retainedPopPct": 88.9,
+    "text": "Kept 89% of its population from the 2016\u20132020 HD-96; gained the rest from the old HD-93 (7%), the old HD-95 (4%), the old HD-97 (1%). Entirely in New Haven County. 2020 presidential margin D+56.5 on the 2016\u20132020 lines \u2192 D+78.8 on the current lines.",
+    "toEra": "current"
+   },
+   "97": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "97",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 24096,
+    "pres2020New": -42.9,
+    "pres2020Old": -43.1,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in New Haven County.",
+    "toEra": "current"
+   },
+   "98": {
+    "contributors": [
+     {
+      "areaPct": 94.8,
+      "key": "98",
+      "popPct": 97.8
+     },
+     {
+      "areaPct": 5.2,
+      "key": "86",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23186,
+    "pres2020New": -31.4,
+    "pres2020Old": -31.8,
+    "retainedAreaPct": 94.8,
+    "retainedPopPct": 97.8,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-98; gained the rest from the old HD-86 (2%). Entirely in New Haven County. 2020 presidential margin D+31.8 on the 2016\u20132020 lines \u2192 D+31.4 on the current lines.",
+    "toEra": "current"
+   },
+   "99": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "99",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 23469,
+    "pres2020New": 3.7,
+    "pres2020Old": 3.8,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in New Haven County.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 98.8,
+      "key": "1",
+      "popPct": 99.1
+     },
+     {
+      "areaPct": 0.3,
+      "key": "2",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 94398,
+    "pres2020New": -47.9,
+    "pres2020Old": -48.2,
+    "retainedAreaPct": 98.8,
+    "retainedPopPct": 99.1,
+    "text": "Kept 99% of its population from the 2016\u20132020 SD-1; gained the rest from the old SD-2 (1%). Entirely in Hartford County. 2020 presidential margin D+48.2 on the 2016\u20132020 lines \u2192 D+47.9 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "10",
+      "popPct": 99.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 96927,
+    "pres2020New": -69.6,
+    "pres2020Old": -69.2,
+    "retainedAreaPct": 99.5,
+    "retainedPopPct": 99.7,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in New Haven County.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 99.5,
+      "key": "11",
+      "popPct": 98.5
+     },
+     {
+      "areaPct": 0.3,
+      "key": "10",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 94625,
+    "pres2020New": -57.0,
+    "pres2020Old": -53.0,
+    "retainedAreaPct": 99.5,
+    "retainedPopPct": 98.5,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-11; gained the rest from the old SD-10 (1%). Entirely in New Haven County. 2020 presidential margin D+53.0 on the 2016\u20132020 lines \u2192 D+57.0 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 95.2,
+      "key": "12",
+      "popPct": 90.9
+     },
+     {
+      "areaPct": 1.5,
+      "key": "34",
+      "popPct": 7.0
+     },
+     {
+      "areaPct": 3.3,
+      "key": "13",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 86.5
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 13.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 99953,
+    "pres2020New": -16.3,
+    "pres2020Old": -17.0,
+    "retainedAreaPct": 95.2,
+    "retainedPopPct": 90.9,
+    "text": "Kept 91% of its population from the 2016\u20132020 SD-12; gained the rest from the old SD-34 (7%), the old SD-13 (2%). Spans New Haven, Middlesex counties. 2020 presidential margin D+17.0 on the 2016\u20132020 lines \u2192 D+16.3 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 96.8,
+      "key": "13",
+      "popPct": 94.0
+     },
+     {
+      "areaPct": 3.2,
+      "key": "9",
+      "popPct": 6.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 77.6
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 20.6
+     },
+     {
+      "county": "Hartford",
+      "popPct": 1.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 102602,
+    "pres2020New": -20.4,
+    "pres2020Old": -18.6,
+    "retainedAreaPct": 96.8,
+    "retainedPopPct": 94.0,
+    "text": "Kept 94% of its population from the 2016\u20132020 SD-13; gained the rest from the old SD-9 (6%). Spans New Haven, Middlesex, Hartford counties. 2020 presidential margin D+18.6 on the 2016\u20132020 lines \u2192 D+20.4 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "14",
+      "popPct": 98.5
+     },
+     {
+      "areaPct": 0.3,
+      "key": "10",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 95685,
+    "pres2020New": -10.7,
+    "pres2020Old": -10.3,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 98.5,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-14; gained the rest from the old SD-10 (2%). Entirely in New Haven County. 2020 presidential margin D+10.3 on the 2016\u20132020 lines \u2192 D+10.7 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "15",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 103795,
+    "pres2020New": -15.1,
+    "pres2020Old": -14.8,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in New Haven County.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "16",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 58.1
+     },
+     {
+      "county": "Hartford",
+      "popPct": 41.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 102827,
+    "pres2020New": 6.0,
+    "pres2020Old": 6.0,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans New Haven, Hartford counties.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 93.5,
+      "key": "17",
+      "popPct": 96.6
+     },
+     {
+      "areaPct": 6.5,
+      "key": "11",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 100673,
+    "pres2020New": -17.6,
+    "pres2020Old": -17.2,
+    "retainedAreaPct": 93.5,
+    "retainedPopPct": 96.6,
+    "text": "Kept 97% of its population from the 2016\u20132020 SD-17; gained the rest from the old SD-11 (3%). Entirely in New Haven County. 2020 presidential margin D+17.2 on the 2016\u20132020 lines \u2192 D+17.6 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "18",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New London",
+      "popPct": 81.3
+     },
+     {
+      "county": "Windham",
+      "popPct": 18.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 99205,
+    "pres2020New": -8.4,
+    "pres2020Old": -8.4,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans New London, Windham counties.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "19",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New London",
+      "popPct": 79.9
+     },
+     {
+      "county": "Tolland",
+      "popPct": 14.3
+     },
+     {
+      "county": "Hartford",
+      "popPct": 5.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 98716,
+    "pres2020New": -10.0,
+    "pres2020Old": -10.0,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans New London, Tolland, Hartford counties.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 91.2,
+      "key": "2",
+      "popPct": 97.9
+     },
+     {
+      "areaPct": 8.6,
+      "key": "5",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 95819,
+    "pres2020New": -70.3,
+    "pres2020Old": -70.5,
+    "retainedAreaPct": 91.2,
+    "retainedPopPct": 97.9,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-2; gained the rest from the old SD-5 (2%). Entirely in Hartford County. 2020 presidential margin D+70.5 on the 2016\u20132020 lines \u2192 D+70.3 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "20",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "New London",
+      "popPct": 95.3
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 4.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 96130,
+    "pres2020New": -21.5,
+    "pres2020Old": -21.5,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans New London, Middlesex counties.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 94.8,
+      "key": "21",
+      "popPct": 95.4
+     },
+     {
+      "areaPct": 5.1,
+      "key": "32",
+      "popPct": 4.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 89.1
+     },
+     {
+      "county": "New Haven",
+      "popPct": 10.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 104432,
+    "pres2020New": -3.5,
+    "pres2020Old": -3.8,
+    "retainedAreaPct": 94.8,
+    "retainedPopPct": 95.4,
+    "text": "Kept 95% of its population from the 2016\u20132020 SD-21; gained the rest from the old SD-32 (5%). Spans Fairfield, New Haven counties. 2020 presidential margin D+3.8 on the 2016\u20132020 lines \u2192 D+3.5 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "22",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 100677,
+    "pres2020New": -28.8,
+    "pres2020Old": -28.7,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Fairfield County.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "23",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 99601,
+    "pres2020New": -64.7,
+    "pres2020Old": -64.7,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Fairfield County.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 74.8,
+      "key": "24",
+      "popPct": 90.8
+     },
+     {
+      "areaPct": 25.2,
+      "key": "26",
+      "popPct": 9.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 100894,
+    "pres2020New": -18.3,
+    "pres2020Old": -13.4,
+    "retainedAreaPct": 74.8,
+    "retainedPopPct": 90.8,
+    "text": "Kept 91% of its population from the 2016\u20132020 SD-24; gained the rest from the old SD-26 (9%). Entirely in Fairfield County. 2020 presidential margin D+13.4 on the 2016\u20132020 lines \u2192 D+18.3 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "25",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 101426,
+    "pres2020New": -35.3,
+    "pres2020Old": -34.7,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Fairfield County.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 87.6,
+      "key": "26",
+      "popPct": 74.6
+     },
+     {
+      "areaPct": 1.5,
+      "key": "27",
+      "popPct": 13.8
+     },
+     {
+      "areaPct": 9.1,
+      "key": "28",
+      "popPct": 7.3
+     },
+     {
+      "areaPct": 1.7,
+      "key": "25",
+      "popPct": 4.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 102435,
+    "pres2020New": -37.4,
+    "pres2020Old": -33.2,
+    "retainedAreaPct": 87.6,
+    "retainedPopPct": 74.6,
+    "text": "Kept 75% of its population from the 2016\u20132020 SD-26; gained the rest from the old SD-27 (14%), the old SD-28 (7%), the old SD-25 (4%). Entirely in Fairfield County. 2020 presidential margin D+33.2 on the 2016\u20132020 lines \u2192 D+37.4 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "27",
+      "popPct": 97.0
+     },
+     {
+      "areaPct": 1.3,
+      "key": "36",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 104884,
+    "pres2020New": -40.3,
+    "pres2020Old": -38.9,
+    "retainedAreaPct": 98.7,
+    "retainedPopPct": 97.0,
+    "text": "Kept 97% of its population from the 2016\u20132020 SD-27; gained the rest from the old SD-36 (3%). Entirely in Fairfield County. 2020 presidential margin D+38.9 on the 2016\u20132020 lines \u2192 D+40.3 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 90.9,
+      "key": "28",
+      "popPct": 89.8
+     },
+     {
+      "areaPct": 8.2,
+      "key": "26",
+      "popPct": 9.5
+     },
+     {
+      "areaPct": 0.8,
+      "key": "24",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 99.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 107282,
+    "pres2020New": -22.9,
+    "pres2020Old": -25.9,
+    "retainedAreaPct": 90.9,
+    "retainedPopPct": 89.8,
+    "text": "Kept 90% of its population from the 2016\u20132020 SD-28; gained the rest from the old SD-26 (10%), the old SD-24 (1%). Entirely in Fairfield County. 2020 presidential margin D+25.9 on the 2016\u20132020 lines \u2192 D+22.9 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 87.1,
+      "key": "29",
+      "popPct": 95.9
+     },
+     {
+      "areaPct": 12.9,
+      "key": "35",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Windham",
+      "popPct": 70.7
+     },
+     {
+      "county": "Tolland",
+      "popPct": 29.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 104528,
+    "pres2020New": -7.9,
+    "pres2020Old": -7.4,
+    "retainedAreaPct": 87.1,
+    "retainedPopPct": 95.9,
+    "text": "Kept 96% of its population from the 2016\u20132020 SD-29; gained the rest from the old SD-35 (4%). Spans Windham, Tolland counties. 2020 presidential margin D+7.4 on the 2016\u20132020 lines \u2192 D+7.9 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "3",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 89.1
+     },
+     {
+      "county": "Tolland",
+      "popPct": 10.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 100161,
+    "pres2020New": -29.1,
+    "pres2020Old": -28.5,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Hartford, Tolland counties.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 90.8,
+      "key": "30",
+      "popPct": 87.0
+     },
+     {
+      "areaPct": 6.8,
+      "key": "24",
+      "popPct": 11.3
+     },
+     {
+      "areaPct": 2.4,
+      "key": "32",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Litchfield",
+      "popPct": 76.0
+     },
+     {
+      "county": "Fairfield",
+      "popPct": 24.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 106784,
+    "pres2020New": -4.4,
+    "pres2020Old": -5.1,
+    "retainedAreaPct": 90.8,
+    "retainedPopPct": 87.0,
+    "text": "Kept 87% of its population from the 2016\u20132020 SD-30; gained the rest from the old SD-24 (11%), the old SD-32 (2%). Spans Litchfield, Fairfield counties. 2020 presidential margin D+5.1 on the 2016\u20132020 lines \u2192 D+4.4 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "31",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 77.8
+     },
+     {
+      "county": "Litchfield",
+      "popPct": 21.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 100512,
+    "pres2020New": 3.4,
+    "pres2020Old": 3.6,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Hartford, Litchfield counties.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 95.3,
+      "key": "32",
+      "popPct": 86.0
+     },
+     {
+      "areaPct": 1.0,
+      "key": "26",
+      "popPct": 4.8
+     },
+     {
+      "areaPct": 1.0,
+      "key": "24",
+      "popPct": 4.5
+     },
+     {
+      "areaPct": 1.8,
+      "key": "30",
+      "popPct": 3.4
+     },
+     {
+      "areaPct": 0.5,
+      "key": "21",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 46.6
+     },
+     {
+      "county": "Litchfield",
+      "popPct": 39.8
+     },
+     {
+      "county": "Fairfield",
+      "popPct": 13.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 101524,
+    "pres2020New": 7.0,
+    "pres2020Old": 9.0,
+    "retainedAreaPct": 95.3,
+    "retainedPopPct": 86.0,
+    "text": "Kept 86% of its population from the 2016\u20132020 SD-32; gained the rest from the old SD-26 (5%), the old SD-24 (4%), the old SD-30 (3%) and 1 more. Spans New Haven, Litchfield, Fairfield counties. 2020 presidential margin R+9.0 on the 2016\u20132020 lines \u2192 R+7.0 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "33",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Middlesex",
+      "popPct": 81.2
+     },
+     {
+      "county": "New London",
+      "popPct": 18.1
+     },
+     {
+      "county": "New Haven",
+      "popPct": 0.7
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 98323,
+    "pres2020New": -12.2,
+    "pres2020Old": -12.2,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Middlesex, New London, New Haven counties.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 93.1,
+      "key": "34",
+      "popPct": 94.6
+     },
+     {
+      "areaPct": 1.6,
+      "key": "11",
+      "popPct": 3.4
+     },
+     {
+      "areaPct": 5.2,
+      "key": "12",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "New Haven",
+      "popPct": 97.2
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 2.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 93625,
+    "pres2020New": -0.3,
+    "pres2020Old": -0.3,
+    "retainedAreaPct": 93.1,
+    "retainedPopPct": 94.6,
+    "text": "Kept 95% of its population from the 2016\u20132020 SD-34; gained the rest from the old SD-11 (3%), the old SD-12 (2%). Spans New Haven, Middlesex counties. 2020 presidential margin D+0.3 on the 2016\u20132020 lines \u2192 D+0.3 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 98.7,
+      "key": "35",
+      "popPct": 98.7
+     },
+     {
+      "areaPct": 1.3,
+      "key": "29",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Tolland",
+      "popPct": 79.6
+     },
+     {
+      "county": "Windham",
+      "popPct": 19.8
+     },
+     {
+      "county": "Hartford",
+      "popPct": 0.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 97537,
+    "pres2020New": -7.8,
+    "pres2020Old": -8.2,
+    "retainedAreaPct": 98.7,
+    "retainedPopPct": 98.7,
+    "text": "Kept 99% of its population from the 2016\u20132020 SD-35; gained the rest from the old SD-29 (1%). Spans Tolland, Windham, Hartford counties. 2020 presidential margin D+8.2 on the 2016\u20132020 lines \u2192 D+7.8 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 95.5,
+      "key": "36",
+      "popPct": 93.7
+     },
+     {
+      "areaPct": 4.5,
+      "key": "26",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fairfield",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 104067,
+    "pres2020New": -24.5,
+    "pres2020Old": -25.3,
+    "retainedAreaPct": 95.5,
+    "retainedPopPct": 93.7,
+    "text": "Kept 94% of its population from the 2016\u20132020 SD-36; gained the rest from the old SD-26 (6%). Entirely in Fairfield County. 2020 presidential margin D+25.3 on the 2016\u20132020 lines \u2192 D+24.5 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "4",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 91.9
+     },
+     {
+      "county": "Tolland",
+      "popPct": 7.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 102918,
+    "pres2020New": -30.6,
+    "pres2020Old": -30.6,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Hartford, Tolland counties.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "5",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 98516,
+    "pres2020New": -39.3,
+    "pres2020Old": -39.5,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Hartford County.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "6",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 97750,
+    "pres2020New": -20.5,
+    "pres2020Old": -20.4,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Hartford County.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 97.9,
+      "key": "7",
+      "popPct": 97.7
+     },
+     {
+      "areaPct": 1.8,
+      "key": "3",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 88.0
+     },
+     {
+      "county": "Tolland",
+      "popPct": 12.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 101251,
+    "pres2020New": -7.1,
+    "pres2020Old": -7.0,
+    "retainedAreaPct": 97.9,
+    "retainedPopPct": 97.7,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-7; gained the rest from the old SD-3 (2%). Spans Hartford, Tolland counties. 2020 presidential margin D+7.0 on the 2016\u20132020 lines \u2192 D+7.1 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 98.1,
+      "key": "8",
+      "popPct": 99.1
+     },
+     {
+      "areaPct": 1.9,
+      "key": "31",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 57.8
+     },
+     {
+      "county": "Litchfield",
+      "popPct": 42.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 97487,
+    "pres2020New": -10.9,
+    "pres2020Old": -11.2,
+    "retainedAreaPct": 98.1,
+    "retainedPopPct": 99.1,
+    "text": "Kept 99% of its population from the 2016\u20132020 SD-8; gained the rest from the old SD-31 (1%). Spans Hartford, Litchfield counties. 2020 presidential margin D+11.2 on the 2016\u20132020 lines \u2192 D+10.9 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "9",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hartford",
+      "popPct": 57.7
+     },
+     {
+      "county": "Middlesex",
+      "popPct": 42.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 97974,
+    "pres2020New": -19.6,
+    "pres2020Old": -20.6,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Hartford, Middlesex counties.",
+    "toEra": "current"
+   }
+  }
+ }
+}

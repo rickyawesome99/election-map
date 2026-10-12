@@ -7,6 +7,7 @@ import { StateTplMethodology, DistrictTplMethodology, CountyTplMethodology } fro
 import WarMethodology from "@/components/methodology/WarMethodology";
 import PrecinctMethodology from "@/components/methodology/PrecinctMethodology";
 import TurnoutMethodology from "@/components/methodology/TurnoutMethodology";
+import StateLegMethodology from "@/components/methodology/StateLegMethodology";
 import ChangeLog, { RevisionHistory } from "@/components/methodology/ChangeLog";
 import SourcesMethodology from "@/components/methodology/SourcesMethodology";
 import MethodologyToc from "@/components/methodology/MethodologyToc";
@@ -22,6 +23,7 @@ const TABS = [
   { key: "war", label: "WAR", blurb: "Candidate WAR, Expected Result, Vs. Opponent" },
   { key: "precinct-district", label: "Precinct districts", blurb: "Precinct pages: eras, crosswalk, 2026 outlook" },
   { key: "turnout", label: "Turnout", blurb: "Turnout measures and the 2026 turnout estimate" },
+  { key: "state-leg", label: "Legislative atlas", blurb: "State legislative district pages: presidential results by map era, candidates, redistricting" },
   { key: "changelog", label: "Change Log", blurb: "What changed, and when" },
   { key: "sources", label: "Sources", blurb: "Every external source behind the data" },
 ] as const;
@@ -84,6 +86,7 @@ export default async function MethodologyPage({ params }: { params: Promise<{ mo
           {active === "war" && <><WarMethodology /><RevisionHistory model="war" /></>}
           {active === "precinct-district" && <><PrecinctMethodology /><RevisionHistory model="precinct-district" /></>}
           {active === "turnout" && <><TurnoutMethodology /><RevisionHistory model="turnout" /></>}
+          {active === "state-leg" && <><StateLegMethodology /><RevisionHistory model="state-leg" /></>}
           {active === "changelog" && <ChangeLog />}
           {active === "sources" && <SourcesMethodology />}
         </main>

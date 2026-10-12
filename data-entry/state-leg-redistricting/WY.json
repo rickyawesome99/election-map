@@ -1,0 +1,3365 @@
+{
+ "house": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "1",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Crook",
+      "popPct": 75.7
+     },
+     {
+      "county": "Weston",
+      "popPct": 24.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9484,
+    "pres2020New": 80.7,
+    "pres2020Old": 80.7,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Spans Crook, Weston counties.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 88.8,
+      "key": "10",
+      "popPct": 78.4
+     },
+     {
+      "areaPct": 11.2,
+      "key": "7",
+      "popPct": 21.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Goshen",
+      "popPct": 3.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 10146,
+    "pres2020New": 61.7,
+    "pres2020Old": 59.0,
+    "retainedAreaPct": 88.8,
+    "retainedPopPct": 78.4,
+    "text": "Kept 78% of its population from the 2016\u20132020 HD-10; gained the rest from the old HD-7 (22%). Counties: lost Goshen. 2020 presidential margin R+59.0 on the 2016\u20132020 lines \u2192 R+61.7 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 45.2,
+      "key": "11",
+      "popPct": 57.8
+     },
+     {
+      "areaPct": 50.7,
+      "key": "44",
+      "popPct": 41.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8989,
+    "pres2020New": 4.7,
+    "pres2020Old": 13.8,
+    "retainedAreaPct": 45.2,
+    "retainedPopPct": 57.8,
+    "text": "Kept 58% of its population from the 2016\u20132020 HD-11; gained the rest from the old HD-44 (42%). Entirely in Laramie County. 2020 presidential margin R+13.8 on the 2016\u20132020 lines \u2192 R+4.7 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 96.3,
+      "key": "12",
+      "popPct": 86.3
+     },
+     {
+      "areaPct": 0.5,
+      "key": "44",
+      "popPct": 7.7
+     },
+     {
+      "areaPct": 0.6,
+      "key": "11",
+      "popPct": 5.3
+     },
+     {
+      "areaPct": 2.5,
+      "key": "43",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 3827,
+    "pres2020New": 36.2,
+    "pres2020Old": 29.6,
+    "retainedAreaPct": 96.3,
+    "retainedPopPct": 86.3,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-12; gained the rest from the old HD-44 (8%), the old HD-11 (5%), the old HD-43 (1%). Entirely in Laramie County. 2020 presidential margin R+29.6 on the 2016\u20132020 lines \u2192 R+36.2 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 70.6,
+      "key": "46",
+      "popPct": 57.5
+     },
+     {
+      "areaPct": 27.2,
+      "key": "14",
+      "popPct": 40.5
+     },
+     {
+      "areaPct": 2.0,
+      "key": "45",
+      "popPct": 1.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Albany",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 7877,
+    "pres2020New": -14.5,
+    "pres2020Old": -18.9,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-13; it draws from the old HD-46 (58%), the old HD-14 (40%), the old HD-45 (2%). Entirely in Albany County. 2020 presidential margin D+18.9 on the 2016\u20132020 lines \u2192 D+14.5 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 82.7,
+      "key": "14",
+      "popPct": 71.2
+     },
+     {
+      "areaPct": 0.0,
+      "key": "13",
+      "popPct": 25.2
+     },
+     {
+      "areaPct": 16.4,
+      "key": "47",
+      "popPct": 2.6
+     },
+     {
+      "areaPct": 0.9,
+      "key": "46",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Albany",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9203,
+    "pres2020New": -0.2,
+    "pres2020Old": -4.9,
+    "retainedAreaPct": 82.7,
+    "retainedPopPct": 71.2,
+    "text": "Kept 71% of its population from the 2016\u20132020 HD-14; gained the rest from the old HD-13 (25%), the old HD-47 (3%), the old HD-46 (1%). Entirely in Albany County. 2020 presidential margin D+4.9 on the 2016\u20132020 lines \u2192 D+0.2 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 0.6,
+      "key": "15",
+      "popPct": 90.2
+     },
+     {
+      "areaPct": 99.4,
+      "key": "47",
+      "popPct": 9.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carbon",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9031,
+    "pres2020New": 45.5,
+    "pres2020Old": 42.8,
+    "retainedAreaPct": 0.6,
+    "retainedPopPct": 90.2,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-15; gained the rest from the old HD-47 (10%). Entirely in Carbon County. 2020 presidential margin R+42.8 on the 2016\u20132020 lines \u2192 R+45.5 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 99.7,
+      "key": "16",
+      "popPct": 99.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Teton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9383,
+    "pres2020New": -50.1,
+    "pres2020Old": -50.4,
+    "retainedAreaPct": 99.7,
+    "retainedPopPct": 99.9,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Teton County.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 63.6,
+      "key": "17",
+      "popPct": 61.1
+     },
+     {
+      "areaPct": 20.6,
+      "key": "39",
+      "popPct": 25.5
+     },
+     {
+      "areaPct": 15.8,
+      "key": "48",
+      "popPct": 13.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sweetwater",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9832,
+    "pres2020New": 42.4,
+    "pres2020Old": 42.4,
+    "retainedAreaPct": 63.6,
+    "retainedPopPct": 61.1,
+    "text": "Kept 61% of its population from the 2016\u20132020 HD-17; gained the rest from the old HD-39 (26%), the old HD-48 (13%). Entirely in Sweetwater County. 2020 presidential margin R+42.4 on the 2016\u20132020 lines \u2192 R+42.4 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 68.9,
+      "key": "18",
+      "popPct": 46.8
+     },
+     {
+      "areaPct": 0.1,
+      "key": "60",
+      "popPct": 15.1
+     },
+     {
+      "areaPct": 0.1,
+      "key": "39",
+      "popPct": 12.3
+     },
+     {
+      "areaPct": 29.8,
+      "key": "21",
+      "popPct": 9.2
+     },
+     {
+      "areaPct": 0.2,
+      "key": "19",
+      "popPct": 8.6
+     },
+     {
+      "areaPct": 1.0,
+      "key": "47",
+      "popPct": 8.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sweetwater",
+      "popPct": 42.9
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 36.7
+     },
+     {
+      "county": "Uinta",
+      "popPct": 20.4
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 11425,
+    "pres2020New": 65.3,
+    "pres2020Old": 66.5,
+    "retainedAreaPct": 68.9,
+    "retainedPopPct": 46.8,
+    "text": "A new footprint: only 47% of its population was in the 2016\u20132020 HD-18; it draws from the old HD-60 (15%), the old HD-39 (12%), the old HD-21 (9%) and 2 more. Spans Sweetwater, Lincoln, Uinta counties. 2020 presidential margin R+66.5 on the 2016\u20132020 lines \u2192 R+65.3 on the current lines.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "19",
+      "popPct": 83.3
+     },
+     {
+      "areaPct": 0.1,
+      "key": "49",
+      "popPct": 16.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Uinta",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9094,
+    "pres2020New": 72.4,
+    "pres2020Old": 72.0,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 83.3,
+    "text": "Kept 83% of its population from the 2016\u20132020 HD-19; gained the rest from the old HD-49 (17%). Entirely in Uinta County. 2020 presidential margin R+72.0 on the 2016\u20132020 lines \u2192 R+72.4 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 94.1,
+      "key": "2",
+      "popPct": 90.6
+     },
+     {
+      "areaPct": 5.5,
+      "key": "5",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 0.4,
+      "key": "10",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Weston",
+      "popPct": 44.7
+     },
+     {
+      "county": "Goshen",
+      "popPct": 31.1
+     },
+     {
+      "county": "Niobrara",
+      "popPct": 24.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10155,
+    "pres2020New": 69.9,
+    "pres2020Old": 67.8,
+    "retainedAreaPct": 94.1,
+    "retainedPopPct": 90.6,
+    "text": "Kept 91% of its population from the 2016\u20132020 HD-2; gained the rest from the old HD-5 (7%), the old HD-10 (2%). Spans Weston, Goshen, Niobrara counties. 2020 presidential margin R+67.8 on the 2016\u20132020 lines \u2192 R+69.9 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 76.9,
+      "key": "20",
+      "popPct": 86.2
+     },
+     {
+      "areaPct": 15.1,
+      "key": "22",
+      "popPct": 7.7
+     },
+     {
+      "areaPct": 6.3,
+      "key": "21",
+      "popPct": 4.9
+     },
+     {
+      "areaPct": 1.7,
+      "key": "18",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sublette",
+      "popPct": 93.7
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 6.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Lincoln",
+      "popPct": 6.2
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9303,
+    "pres2020New": 63.5,
+    "pres2020Old": 62.4,
+    "retainedAreaPct": 76.9,
+    "retainedPopPct": 86.2,
+    "text": "Kept 86% of its population from the 2016\u20132020 HD-20; gained the rest from the old HD-22 (8%), the old HD-21 (5%), the old HD-18 (1%). Counties: gained Lincoln (6%). 2020 presidential margin R+62.4 on the 2016\u20132020 lines \u2192 R+63.5 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 96.5,
+      "key": "21",
+      "popPct": 92.7
+     },
+     {
+      "areaPct": 3.5,
+      "key": "22",
+      "popPct": 7.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lincoln",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9352,
+    "pres2020New": 78.9,
+    "pres2020Old": 77.8,
+    "retainedAreaPct": 96.5,
+    "retainedPopPct": 92.7,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-21; gained the rest from the old HD-22 (7%). Entirely in Lincoln County. 2020 presidential margin R+77.8 on the 2016\u20132020 lines \u2192 R+78.9 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 75.9,
+      "key": "22",
+      "popPct": 81.6
+     },
+     {
+      "areaPct": 1.3,
+      "key": "23",
+      "popPct": 10.1
+     },
+     {
+      "areaPct": 22.8,
+      "key": "21",
+      "popPct": 8.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lincoln",
+      "popPct": 62.7
+     },
+     {
+      "county": "Teton",
+      "popPct": 37.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Sublette",
+      "popPct": 7.3
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8708,
+    "pres2020New": 7.4,
+    "pres2020Old": 15.0,
+    "retainedAreaPct": 75.9,
+    "retainedPopPct": 81.6,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-22; gained the rest from the old HD-23 (10%), the old HD-21 (8%). Counties: lost Sublette. 2020 presidential margin R+15.0 on the 2016\u20132020 lines \u2192 R+7.4 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 93.6,
+      "key": "23",
+      "popPct": 82.1
+     },
+     {
+      "areaPct": 6.3,
+      "key": "22",
+      "popPct": 11.6
+     },
+     {
+      "areaPct": 0.0,
+      "key": "16",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Teton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10706,
+    "pres2020New": -27.4,
+    "pres2020Old": -28.2,
+    "retainedAreaPct": 93.6,
+    "retainedPopPct": 82.1,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-23; gained the rest from the old HD-22 (12%), the old HD-16 (6%). Entirely in Teton County. 2020 presidential margin D+28.2 on the 2016\u20132020 lines \u2192 D+27.4 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "24",
+      "popPct": 98.2
+     },
+     {
+      "areaPct": 0.4,
+      "key": "50",
+      "popPct": 1.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Park",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8540,
+    "pres2020New": 48.9,
+    "pres2020Old": 48.5,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 98.2,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-24; gained the rest from the old HD-50 (2%). Entirely in Park County. 2020 presidential margin R+48.5 on the 2016\u20132020 lines \u2192 R+48.9 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 75.4,
+      "key": "25",
+      "popPct": 99.3
+     },
+     {
+      "areaPct": 24.6,
+      "key": "50",
+      "popPct": 0.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Park",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8168,
+    "pres2020New": 53.1,
+    "pres2020Old": 55.0,
+    "retainedAreaPct": 75.4,
+    "retainedPopPct": 99.3,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-25; gained the rest from the old HD-50 (1%). Entirely in Park County. 2020 presidential margin R+55.0 on the 2016\u20132020 lines \u2192 R+53.1 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 92.1,
+      "key": "26",
+      "popPct": 88.0
+     },
+     {
+      "areaPct": 4.5,
+      "key": "25",
+      "popPct": 8.2
+     },
+     {
+      "areaPct": 2.5,
+      "key": "28",
+      "popPct": 2.3
+     },
+     {
+      "areaPct": 1.0,
+      "key": "50",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Big Horn",
+      "popPct": 81.9
+     },
+     {
+      "county": "Park",
+      "popPct": 18.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10137,
+    "pres2020New": 70.1,
+    "pres2020Old": 68.7,
+    "retainedAreaPct": 92.1,
+    "retainedPopPct": 88.0,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-26; gained the rest from the old HD-25 (8%), the old HD-28 (2%), the old HD-50 (2%). Spans Big Horn, Park counties. 2020 presidential margin R+68.7 on the 2016\u20132020 lines \u2192 R+70.1 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 97.6,
+      "key": "27",
+      "popPct": 96.4
+     },
+     {
+      "areaPct": 2.4,
+      "key": "28",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washakie",
+      "popPct": 90.8
+     },
+     {
+      "county": "Big Horn",
+      "popPct": 9.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8464,
+    "pres2020New": 65.8,
+    "pres2020Old": 65.7,
+    "retainedAreaPct": 97.6,
+    "retainedPopPct": 96.4,
+    "text": "Kept 96% of its population from the 2016\u20132020 HD-27; gained the rest from the old HD-28 (4%). Spans Washakie, Big Horn counties. 2020 presidential margin R+65.7 on the 2016\u20132020 lines \u2192 R+65.8 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 93.2,
+      "key": "28",
+      "popPct": 83.5
+     },
+     {
+      "areaPct": 5.4,
+      "key": "50",
+      "popPct": 12.9
+     },
+     {
+      "areaPct": 1.3,
+      "key": "26",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Hot Springs",
+      "popPct": 47.2
+     },
+     {
+      "county": "Big Horn",
+      "popPct": 24.9
+     },
+     {
+      "county": "Park",
+      "popPct": 20.7
+     },
+     {
+      "county": "Fremont",
+      "popPct": 7.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9761,
+    "pres2020New": 63.5,
+    "pres2020Old": 65.7,
+    "retainedAreaPct": 93.2,
+    "retainedPopPct": 83.5,
+    "text": "Kept 84% of its population from the 2016\u20132020 HD-28; gained the rest from the old HD-50 (13%), the old HD-26 (4%). Spans Hot Springs, Big Horn, Park, Fremont counties. 2020 presidential margin R+65.7 on the 2016\u20132020 lines \u2192 R+63.5 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 61.8,
+      "key": "29",
+      "popPct": 87.7
+     },
+     {
+      "areaPct": 11.9,
+      "key": "51",
+      "popPct": 9.9
+     },
+     {
+      "areaPct": 26.3,
+      "key": "30",
+      "popPct": 2.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sheridan",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9165,
+    "pres2020New": 39.4,
+    "pres2020Old": 40.8,
+    "retainedAreaPct": 61.8,
+    "retainedPopPct": 87.7,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-29; gained the rest from the old HD-51 (10%), the old HD-30 (2%). Entirely in Sheridan County. 2020 presidential margin R+40.8 on the 2016\u20132020 lines \u2192 R+39.4 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 98.9,
+      "key": "3",
+      "popPct": 57.1
+     },
+     {
+      "areaPct": 0.8,
+      "key": "31",
+      "popPct": 30.8
+     },
+     {
+      "areaPct": 0.3,
+      "key": "32",
+      "popPct": 12.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Campbell",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Converse",
+      "popPct": 27.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 11144,
+    "pres2020New": 82.4,
+    "pres2020Old": 80.6,
+    "retainedAreaPct": 98.9,
+    "retainedPopPct": 57.1,
+    "text": "Kept 57% of its population from the 2016\u20132020 HD-3; gained the rest from the old HD-31 (31%), the old HD-32 (12%). Counties: lost Converse. 2020 presidential margin R+80.6 on the 2016\u20132020 lines \u2192 R+82.4 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "30",
+      "popPct": 97.6
+     },
+     {
+      "areaPct": 0.2,
+      "key": "51",
+      "popPct": 2.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sheridan",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10027,
+    "pres2020New": 51.8,
+    "pres2020Old": 50.7,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 97.6,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-30; gained the rest from the old HD-51 (2%). Entirely in Sheridan County. 2020 presidential margin R+50.7 on the 2016\u20132020 lines \u2192 R+51.8 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 61.4,
+      "key": "31",
+      "popPct": 82.0
+     },
+     {
+      "areaPct": 31.7,
+      "key": "52",
+      "popPct": 12.5
+     },
+     {
+      "areaPct": 6.9,
+      "key": "53",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Campbell",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8645,
+    "pres2020New": 77.7,
+    "pres2020Old": 77.1,
+    "retainedAreaPct": 61.4,
+    "retainedPopPct": 82.0,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-31; gained the rest from the old HD-52 (12%), the old HD-53 (6%). Entirely in Campbell County. 2020 presidential margin R+77.1 on the 2016\u20132020 lines \u2192 R+77.7 on the current lines.",
+    "toEra": "current"
+   },
+   "32": {
+    "contributors": [
+     {
+      "areaPct": 94.7,
+      "key": "32",
+      "popPct": 94.2
+     },
+     {
+      "areaPct": 5.0,
+      "key": "52",
+      "popPct": 5.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Campbell",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9875,
+    "pres2020New": 70.7,
+    "pres2020Old": 71.2,
+    "retainedAreaPct": 94.7,
+    "retainedPopPct": 94.2,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-32; gained the rest from the old HD-52 (6%). Entirely in Campbell County. 2020 presidential margin R+71.2 on the 2016\u20132020 lines \u2192 R+70.7 on the current lines.",
+    "toEra": "current"
+   },
+   "33": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "33",
+      "popPct": 98.7
+     },
+     {
+      "areaPct": 0.0,
+      "key": "55",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fremont",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8536,
+    "pres2020New": -6.0,
+    "pres2020Old": -2.4,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 98.7,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-33; gained the rest from the old HD-55 (1%). Entirely in Fremont County. 2020 presidential margin D+2.4 on the 2016\u20132020 lines \u2192 D+6.0 on the current lines.",
+    "toEra": "current"
+   },
+   "34": {
+    "contributors": [
+     {
+      "areaPct": 89.8,
+      "key": "34",
+      "popPct": 92.5
+     },
+     {
+      "areaPct": 6.8,
+      "key": "33",
+      "popPct": 3.3
+     },
+     {
+      "areaPct": 3.5,
+      "key": "54",
+      "popPct": 3.1
+     },
+     {
+      "areaPct": 0.0,
+      "key": "55",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fremont",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13072,
+    "pres2020New": 61.5,
+    "pres2020Old": 62.6,
+    "retainedAreaPct": 89.8,
+    "retainedPopPct": 92.5,
+    "text": "Kept 92% of its population from the 2016\u20132020 HD-34; gained the rest from the old HD-33 (3%), the old HD-54 (3%), the old HD-55 (1%). Entirely in Fremont County. 2020 presidential margin R+62.6 on the 2016\u20132020 lines \u2192 R+61.5 on the current lines.",
+    "toEra": "current"
+   },
+   "35": {
+    "contributors": [
+     {
+      "areaPct": 32.9,
+      "key": "35",
+      "popPct": 79.7
+     },
+     {
+      "areaPct": 2.0,
+      "key": "57",
+      "popPct": 18.5
+     },
+     {
+      "areaPct": 64.4,
+      "key": "37",
+      "popPct": 0.9
+     },
+     {
+      "areaPct": 0.7,
+      "key": "56",
+      "popPct": 0.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Natrona",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10880,
+    "pres2020New": 45.4,
+    "pres2020Old": 52.2,
+    "retainedAreaPct": 32.9,
+    "retainedPopPct": 79.7,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-35; gained the rest from the old HD-57 (18%), the old HD-37 (1%), the old HD-56 (1%). Entirely in Natrona County. 2020 presidential margin R+52.2 on the 2016\u20132020 lines \u2192 R+45.4 on the current lines.",
+    "toEra": "current"
+   },
+   "36": {
+    "contributors": [
+     {
+      "areaPct": 46.6,
+      "key": "36",
+      "popPct": 68.2
+     },
+     {
+      "areaPct": 34.8,
+      "key": "56",
+      "popPct": 19.9
+     },
+     {
+      "areaPct": 18.5,
+      "key": "35",
+      "popPct": 11.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Natrona",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9453,
+    "pres2020New": 40.9,
+    "pres2020Old": 42.2,
+    "retainedAreaPct": 46.6,
+    "retainedPopPct": 68.2,
+    "text": "Kept 68% of its population from the 2016\u20132020 HD-36; gained the rest from the old HD-56 (20%), the old HD-35 (12%). Entirely in Natrona County. 2020 presidential margin R+42.2 on the 2016\u20132020 lines \u2192 R+40.9 on the current lines.",
+    "toEra": "current"
+   },
+   "37": {
+    "contributors": [
+     {
+      "areaPct": 96.4,
+      "key": "37",
+      "popPct": 94.4
+     },
+     {
+      "areaPct": 0.1,
+      "key": "56",
+      "popPct": 2.5
+     },
+     {
+      "areaPct": 0.2,
+      "key": "59",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Natrona",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9747,
+    "pres2020New": 49.0,
+    "pres2020Old": 49.2,
+    "retainedAreaPct": 96.4,
+    "retainedPopPct": 94.4,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-37; gained the rest from the old HD-56 (2%), the old HD-59 (2%). Entirely in Natrona County. 2020 presidential margin R+49.2 on the 2016\u20132020 lines \u2192 R+49.0 on the current lines.",
+    "toEra": "current"
+   },
+   "38": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "38",
+      "popPct": 93.3
+     },
+     {
+      "areaPct": 0.0,
+      "key": "37",
+      "popPct": 5.3
+     },
+     {
+      "areaPct": 0.0,
+      "key": "59",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Natrona",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8816,
+    "pres2020New": 60.0,
+    "pres2020Old": 60.7,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 93.3,
+    "text": "Kept 93% of its population from the 2016\u20132020 HD-38; gained the rest from the old HD-37 (5%), the old HD-59 (1%). Entirely in Natrona County. 2020 presidential margin R+60.7 on the 2016\u20132020 lines \u2192 R+60.0 on the current lines.",
+    "toEra": "current"
+   },
+   "39": {
+    "contributors": [
+     {
+      "areaPct": 89.5,
+      "key": "39",
+      "popPct": 61.0
+     },
+     {
+      "areaPct": 9.3,
+      "key": "18",
+      "popPct": 30.7
+     },
+     {
+      "areaPct": 1.1,
+      "key": "48",
+      "popPct": 8.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sweetwater",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 7442,
+    "pres2020New": 49.1,
+    "pres2020Old": 49.1,
+    "retainedAreaPct": 89.5,
+    "retainedPopPct": 61.0,
+    "text": "Kept 61% of its population from the 2016\u20132020 HD-39; gained the rest from the old HD-18 (31%), the old HD-48 (8%). Entirely in Sweetwater County. 2020 presidential margin R+49.1 on the 2016\u20132020 lines \u2192 R+49.1 on the current lines.",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 75.2,
+      "key": "4",
+      "popPct": 96.8
+     },
+     {
+      "areaPct": 24.8,
+      "key": "7",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Platte",
+      "popPct": 96.5
+     },
+     {
+      "county": "Laramie",
+      "popPct": 3.2
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Laramie",
+      "popPct": 3.2
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Converse",
+      "popPct": 11.9
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 8888,
+    "pres2020New": 61.4,
+    "pres2020Old": 62.7,
+    "retainedAreaPct": 75.2,
+    "retainedPopPct": 96.8,
+    "text": "Kept 97% of its population from the 2016\u20132020 HD-4; gained the rest from the old HD-7 (3%). Counties: gained Laramie (3%); lost Converse. 2020 presidential margin R+62.7 on the 2016\u20132020 lines \u2192 R+61.4 on the current lines.",
+    "toEra": "current"
+   },
+   "40": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "40",
+      "popPct": 89.3
+     },
+     {
+      "areaPct": 0.3,
+      "key": "51",
+      "popPct": 10.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Johnson",
+      "popPct": 85.4
+     },
+     {
+      "county": "Sheridan",
+      "popPct": 14.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9886,
+    "pres2020New": 59.4,
+    "pres2020Old": 61.5,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 89.3,
+    "text": "Kept 89% of its population from the 2016\u20132020 HD-40; gained the rest from the old HD-51 (11%). Spans Johnson, Sheridan counties. 2020 presidential margin R+61.5 on the 2016\u20132020 lines \u2192 R+59.4 on the current lines.",
+    "toEra": "current"
+   },
+   "41": {
+    "contributors": [
+     {
+      "areaPct": 68.0,
+      "key": "41",
+      "popPct": 57.1
+     },
+     {
+      "areaPct": 26.4,
+      "key": "8",
+      "popPct": 31.1
+     },
+     {
+      "areaPct": 5.5,
+      "key": "11",
+      "popPct": 11.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8773,
+    "pres2020New": 6.5,
+    "pres2020Old": 18.3,
+    "retainedAreaPct": 68.0,
+    "retainedPopPct": 57.1,
+    "text": "Kept 57% of its population from the 2016\u20132020 HD-41; gained the rest from the old HD-8 (31%), the old HD-11 (12%). Entirely in Laramie County. 2020 presidential margin R+18.3 on the 2016\u20132020 lines \u2192 R+6.5 on the current lines.",
+    "toEra": "current"
+   },
+   "42": {
+    "contributors": [
+     {
+      "areaPct": 69.8,
+      "key": "42",
+      "popPct": 73.9
+     },
+     {
+      "areaPct": 28.5,
+      "key": "12",
+      "popPct": 25.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 11777,
+    "pres2020New": 37.2,
+    "pres2020Old": 35.1,
+    "retainedAreaPct": 69.8,
+    "retainedPopPct": 73.9,
+    "text": "Kept 74% of its population from the 2016\u20132020 HD-42; gained the rest from the old HD-12 (26%). Entirely in Laramie County. 2020 presidential margin R+35.1 on the 2016\u20132020 lines \u2192 R+37.2 on the current lines.",
+    "toEra": "current"
+   },
+   "43": {
+    "contributors": [
+     {
+      "areaPct": 72.4,
+      "key": "43",
+      "popPct": 51.7
+     },
+     {
+      "areaPct": 25.7,
+      "key": "10",
+      "popPct": 27.4
+     },
+     {
+      "areaPct": 1.4,
+      "key": "11",
+      "popPct": 15.0
+     },
+     {
+      "areaPct": 0.4,
+      "key": "41",
+      "popPct": 5.3
+     },
+     {
+      "areaPct": 0.0,
+      "key": "44",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 13966,
+    "pres2020New": 33.2,
+    "pres2020Old": 28.8,
+    "retainedAreaPct": 72.4,
+    "retainedPopPct": 51.7,
+    "text": "Kept 52% of its population from the 2016\u20132020 HD-43; gained the rest from the old HD-10 (27%), the old HD-11 (15%), the old HD-41 (5%) and 1 more. Entirely in Laramie County. 2020 presidential margin R+28.8 on the 2016\u20132020 lines \u2192 R+33.2 on the current lines.",
+    "toEra": "current"
+   },
+   "44": {
+    "contributors": [
+     {
+      "areaPct": 78.2,
+      "key": "12",
+      "popPct": 50.0
+     },
+     {
+      "areaPct": 21.8,
+      "key": "44",
+      "popPct": 50.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9838,
+    "pres2020New": 14.8,
+    "pres2020Old": 4.0,
+    "retainedAreaPct": 21.8,
+    "retainedPopPct": 50.0,
+    "text": "Kept 50% of its population from the 2016\u20132020 HD-44; gained the rest from the old HD-12 (50%). Entirely in Laramie County. 2020 presidential margin R+4.0 on the 2016\u20132020 lines \u2192 R+14.8 on the current lines.",
+    "toEra": "current"
+   },
+   "45": {
+    "contributors": [
+     {
+      "areaPct": 37.8,
+      "key": "13",
+      "popPct": 60.1
+     },
+     {
+      "areaPct": 61.8,
+      "key": "45",
+      "popPct": 39.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Albany",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9078,
+    "pres2020New": -26.5,
+    "pres2020Old": -7.6,
+    "retainedAreaPct": 61.8,
+    "retainedPopPct": 39.8,
+    "text": "A new footprint: only 40% of its population was in the 2016\u20132020 HD-45; it draws from the old HD-13 (60%). Entirely in Albany County. 2020 presidential margin D+7.6 on the 2016\u20132020 lines \u2192 D+26.5 on the current lines.",
+    "toEra": "current"
+   },
+   "46": {
+    "contributors": [
+     {
+      "areaPct": 0.6,
+      "key": "45",
+      "popPct": 57.0
+     },
+     {
+      "areaPct": 96.5,
+      "key": "46",
+      "popPct": 42.4
+     },
+     {
+      "areaPct": 2.9,
+      "key": "14",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Albany",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10908,
+    "pres2020New": 21.0,
+    "pres2020Old": 12.9,
+    "retainedAreaPct": 96.5,
+    "retainedPopPct": 42.4,
+    "text": "A new footprint: only 42% of its population was in the 2016\u20132020 HD-46; it draws from the old HD-45 (57%), the old HD-14 (1%). Entirely in Albany County. 2020 presidential margin R+12.9 on the 2016\u20132020 lines \u2192 R+21.0 on the current lines.",
+    "toEra": "current"
+   },
+   "47": {
+    "contributors": [
+     {
+      "areaPct": 66.6,
+      "key": "47",
+      "popPct": 66.6
+     },
+     {
+      "areaPct": 29.8,
+      "key": "17",
+      "popPct": 29.6
+     },
+     {
+      "areaPct": 3.6,
+      "key": "18",
+      "popPct": 2.3
+     },
+     {
+      "areaPct": 0.0,
+      "key": "39",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carbon",
+      "popPct": 50.4
+     },
+     {
+      "county": "Sweetwater",
+      "popPct": 49.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Albany",
+      "popPct": 2.6
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 10932,
+    "pres2020New": 63.0,
+    "pres2020Old": 65.8,
+    "retainedAreaPct": 66.6,
+    "retainedPopPct": 66.6,
+    "text": "Kept 67% of its population from the 2016\u20132020 HD-47; gained the rest from the old HD-17 (30%), the old HD-18 (2%), the old HD-39 (2%). Counties: lost Albany. 2020 presidential margin R+65.8 on the 2016\u20132020 lines \u2192 R+63.0 on the current lines.",
+    "toEra": "current"
+   },
+   "48": {
+    "contributors": [
+     {
+      "areaPct": 48.3,
+      "key": "48",
+      "popPct": 89.3
+     },
+     {
+      "areaPct": 48.7,
+      "key": "18",
+      "popPct": 7.1
+     },
+     {
+      "areaPct": 1.7,
+      "key": "17",
+      "popPct": 3.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sweetwater",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 6206,
+    "pres2020New": 48.5,
+    "pres2020Old": 47.4,
+    "retainedAreaPct": 48.3,
+    "retainedPopPct": 89.3,
+    "text": "Kept 89% of its population from the 2016\u20132020 HD-48; gained the rest from the old HD-18 (7%), the old HD-17 (4%). Entirely in Sweetwater County. 2020 presidential margin R+47.4 on the 2016\u20132020 lines \u2192 R+48.5 on the current lines.",
+    "toEra": "current"
+   },
+   "49": {
+    "contributors": [
+     {
+      "areaPct": 84.5,
+      "key": "49",
+      "popPct": 88.2
+     },
+     {
+      "areaPct": 12.6,
+      "key": "19",
+      "popPct": 9.6
+     },
+     {
+      "areaPct": 2.9,
+      "key": "18",
+      "popPct": 2.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Uinta",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9028,
+    "pres2020New": 51.5,
+    "pres2020Old": 51.5,
+    "retainedAreaPct": 84.5,
+    "retainedPopPct": 88.2,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-49; gained the rest from the old HD-19 (10%), the old HD-18 (2%). Entirely in Uinta County. 2020 presidential margin R+51.5 on the 2016\u20132020 lines \u2192 R+51.5 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 89.8,
+      "key": "5",
+      "popPct": 81.6
+     },
+     {
+      "areaPct": 0.1,
+      "key": "2",
+      "popPct": 15.6
+     },
+     {
+      "areaPct": 10.1,
+      "key": "10",
+      "popPct": 2.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Goshen",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9345,
+    "pres2020New": 57.9,
+    "pres2020Old": 59.0,
+    "retainedAreaPct": 89.8,
+    "retainedPopPct": 81.6,
+    "text": "Kept 82% of its population from the 2016\u20132020 HD-5; gained the rest from the old HD-2 (16%), the old HD-10 (3%). Entirely in Goshen County. 2020 presidential margin R+59.0 on the 2016\u20132020 lines \u2192 R+57.9 on the current lines.",
+    "toEra": "current"
+   },
+   "50": {
+    "contributors": [
+     {
+      "areaPct": 99.4,
+      "key": "50",
+      "popPct": 99.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Park",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9066,
+    "pres2020New": 61.0,
+    "pres2020Old": 60.8,
+    "retainedAreaPct": 99.4,
+    "retainedPopPct": 99.2,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-50. Entirely in Park County. 2020 presidential margin R+60.8 on the 2016\u20132020 lines \u2192 R+61.0 on the current lines.",
+    "toEra": "current"
+   },
+   "51": {
+    "contributors": [
+     {
+      "areaPct": 99.9,
+      "key": "51",
+      "popPct": 87.6
+     },
+     {
+      "areaPct": 0.0,
+      "key": "29",
+      "popPct": 9.3
+     },
+     {
+      "areaPct": 0.0,
+      "key": "30",
+      "popPct": 3.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sheridan",
+      "popPct": 99.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 10290,
+    "pres2020New": 49.0,
+    "pres2020Old": 48.2,
+    "retainedAreaPct": 99.9,
+    "retainedPopPct": 87.6,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-51; gained the rest from the old HD-29 (9%), the old HD-30 (3%). Entirely in Sheridan County. 2020 presidential margin R+48.2 on the 2016\u20132020 lines \u2192 R+49.0 on the current lines.",
+    "toEra": "current"
+   },
+   "52": {
+    "contributors": [
+     {
+      "areaPct": 96.5,
+      "key": "52",
+      "popPct": 89.0
+     },
+     {
+      "areaPct": 0.2,
+      "key": "31",
+      "popPct": 7.6
+     },
+     {
+      "areaPct": 3.4,
+      "key": "3",
+      "popPct": 3.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Campbell",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8043,
+    "pres2020New": 81.8,
+    "pres2020Old": 81.8,
+    "retainedAreaPct": 96.5,
+    "retainedPopPct": 89.0,
+    "text": "Kept 89% of its population from the 2016\u20132020 HD-52; gained the rest from the old HD-31 (8%), the old HD-3 (3%). Entirely in Campbell County. 2020 presidential margin R+81.8 on the 2016\u20132020 lines \u2192 R+81.8 on the current lines.",
+    "toEra": "current"
+   },
+   "53": {
+    "contributors": [
+     {
+      "areaPct": 91.4,
+      "key": "53",
+      "popPct": 90.3
+     },
+     {
+      "areaPct": 8.4,
+      "key": "32",
+      "popPct": 9.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Campbell",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9318,
+    "pres2020New": 70.0,
+    "pres2020Old": 69.8,
+    "retainedAreaPct": 91.4,
+    "retainedPopPct": 90.3,
+    "text": "Kept 90% of its population from the 2016\u20132020 HD-53; gained the rest from the old HD-32 (10%). Entirely in Campbell County. 2020 presidential margin R+69.8 on the 2016\u20132020 lines \u2192 R+70.0 on the current lines.",
+    "toEra": "current"
+   },
+   "54": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "54",
+      "popPct": 100.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fremont",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9462,
+    "pres2020New": 15.8,
+    "pres2020Old": 16.8,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 100.0,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Fremont County.",
+    "toEra": "current"
+   },
+   "55": {
+    "contributors": [
+     {
+      "areaPct": 97.5,
+      "key": "55",
+      "popPct": 98.0
+     },
+     {
+      "areaPct": 1.2,
+      "key": "34",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fremont",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 7479,
+    "pres2020New": 53.1,
+    "pres2020Old": 53.0,
+    "retainedAreaPct": 97.5,
+    "retainedPopPct": 98.0,
+    "text": "Kept 98% of its population from the 2016\u20132020 HD-55; gained the rest from the old HD-34 (2%). Entirely in Fremont County. 2020 presidential margin R+53.0 on the 2016\u20132020 lines \u2192 R+53.1 on the current lines.",
+    "toEra": "current"
+   },
+   "56": {
+    "contributors": [
+     {
+      "areaPct": 90.7,
+      "key": "56",
+      "popPct": 80.4
+     },
+     {
+      "areaPct": 5.3,
+      "key": "57",
+      "popPct": 12.3
+     },
+     {
+      "areaPct": 1.7,
+      "key": "59",
+      "popPct": 4.0
+     },
+     {
+      "areaPct": 2.3,
+      "key": "37",
+      "popPct": 3.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Natrona",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9444,
+    "pres2020New": 24.4,
+    "pres2020Old": 29.4,
+    "retainedAreaPct": 90.7,
+    "retainedPopPct": 80.4,
+    "text": "Kept 80% of its population from the 2016\u20132020 HD-56; gained the rest from the old HD-57 (12%), the old HD-59 (4%), the old HD-37 (3%). Entirely in Natrona County. 2020 presidential margin R+29.4 on the 2016\u20132020 lines \u2192 R+24.4 on the current lines.",
+    "toEra": "current"
+   },
+   "57": {
+    "contributors": [
+     {
+      "areaPct": 73.1,
+      "key": "57",
+      "popPct": 87.9
+     },
+     {
+      "areaPct": 26.1,
+      "key": "35",
+      "popPct": 12.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Natrona",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 6968,
+    "pres2020New": 41.4,
+    "pres2020Old": 35.0,
+    "retainedAreaPct": 73.1,
+    "retainedPopPct": 87.9,
+    "text": "Kept 88% of its population from the 2016\u20132020 HD-57; gained the rest from the old HD-35 (12%). Entirely in Natrona County. 2020 presidential margin R+35.0 on the 2016\u20132020 lines \u2192 R+41.4 on the current lines.",
+    "toEra": "current"
+   },
+   "58": {
+    "contributors": [
+     {
+      "areaPct": 52.3,
+      "key": "58",
+      "popPct": 89.1
+     },
+     {
+      "areaPct": 47.7,
+      "key": "38",
+      "popPct": 10.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Natrona",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9361,
+    "pres2020New": 63.0,
+    "pres2020Old": 63.0,
+    "retainedAreaPct": 52.3,
+    "retainedPopPct": 89.1,
+    "text": "Kept 89% of its population from the 2016\u20132020 HD-58; gained the rest from the old HD-38 (11%). Entirely in Natrona County. 2020 presidential margin R+63.0 on the 2016\u20132020 lines \u2192 R+63.0 on the current lines.",
+    "toEra": "current"
+   },
+   "59": {
+    "contributors": [
+     {
+      "areaPct": 92.7,
+      "key": "59",
+      "popPct": 93.7
+     },
+     {
+      "areaPct": 7.0,
+      "key": "58",
+      "popPct": 6.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Natrona",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9364,
+    "pres2020New": 46.4,
+    "pres2020Old": 44.9,
+    "retainedAreaPct": 92.7,
+    "retainedPopPct": 93.7,
+    "text": "Kept 94% of its population from the 2016\u20132020 HD-59; gained the rest from the old HD-58 (6%). Entirely in Natrona County. 2020 presidential margin R+44.9 on the 2016\u20132020 lines \u2192 R+46.4 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 38.6,
+      "key": "6",
+      "popPct": 62.2
+     },
+     {
+      "areaPct": 56.9,
+      "key": "3",
+      "popPct": 25.8
+     },
+     {
+      "areaPct": 4.5,
+      "key": "4",
+      "popPct": 11.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Converse",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9732,
+    "pres2020New": 73.1,
+    "pres2020Old": 73.9,
+    "retainedAreaPct": 38.6,
+    "retainedPopPct": 62.2,
+    "text": "Kept 62% of its population from the 2016\u20132020 HD-6; gained the rest from the old HD-3 (26%), the old HD-4 (12%). Entirely in Converse County. 2020 presidential margin R+73.9 on the 2016\u20132020 lines \u2192 R+73.1 on the current lines.",
+    "toEra": "current"
+   },
+   "60": {
+    "contributors": [
+     {
+      "areaPct": 98.5,
+      "key": "60",
+      "popPct": 99.5
+     },
+     {
+      "areaPct": 1.4,
+      "key": "39",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sweetwater",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8457,
+    "pres2020New": 50.7,
+    "pres2020Old": 49.7,
+    "retainedAreaPct": 98.5,
+    "retainedPopPct": 99.5,
+    "text": "Kept 100% of its population from the 2016\u20132020 HD-60; gained the rest from the old HD-39 (0%). Entirely in Sweetwater County. 2020 presidential margin R+49.7 on the 2016\u20132020 lines \u2192 R+50.7 on the current lines.",
+    "toEra": "current"
+   },
+   "61": {
+    "contributors": [
+     {
+      "areaPct": 58.9,
+      "key": "41",
+      "popPct": 56.3
+     },
+     {
+      "areaPct": 30.6,
+      "key": "43",
+      "popPct": 30.6
+     },
+     {
+      "areaPct": 7.1,
+      "key": "9",
+      "popPct": 11.0
+     },
+     {
+      "areaPct": 3.4,
+      "key": "11",
+      "popPct": 2.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 7323,
+    "pres2020New": 23.3,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-61; it draws from the old HD-41 (56%), the old HD-43 (31%), the old HD-9 (11%) and 1 more. Counties: gained Laramie (100%).",
+    "toEra": "current"
+   },
+   "62": {
+    "contributors": [
+     {
+      "areaPct": 74.6,
+      "key": "6",
+      "popPct": 40.4
+     },
+     {
+      "areaPct": 6.6,
+      "key": "35",
+      "popPct": 29.7
+     },
+     {
+      "areaPct": 0.1,
+      "key": "36",
+      "popPct": 19.0
+     },
+     {
+      "areaPct": 8.0,
+      "key": "58",
+      "popPct": 9.3
+     },
+     {
+      "areaPct": 10.7,
+      "key": "38",
+      "popPct": 1.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Natrona",
+      "popPct": 59.6
+     },
+     {
+      "county": "Converse",
+      "popPct": 40.4
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Natrona",
+      "popPct": 59.6
+     },
+     {
+      "county": "Converse",
+      "popPct": 40.4
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 9940,
+    "pres2020New": 67.7,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 HD-62; it draws from the old HD-6 (40%), the old HD-35 (30%), the old HD-36 (19%) and 2 more. Counties: gained Natrona (60%), Converse (40%).",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 70.0,
+      "key": "8",
+      "popPct": 69.4
+     },
+     {
+      "areaPct": 15.6,
+      "key": "42",
+      "popPct": 15.3
+     },
+     {
+      "areaPct": 14.3,
+      "key": "7",
+      "popPct": 15.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8788,
+    "pres2020New": 16.5,
+    "pres2020Old": 38.6,
+    "retainedAreaPct": 14.3,
+    "retainedPopPct": 15.3,
+    "text": "A new footprint: only 15% of its population was in the 2016\u20132020 HD-7; it draws from the old HD-8 (69%), the old HD-42 (15%). Entirely in Laramie County. 2020 presidential margin R+38.6 on the 2016\u20132020 lines \u2192 R+16.5 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 97.2,
+      "key": "7",
+      "popPct": 94.0
+     },
+     {
+      "areaPct": 0.5,
+      "key": "9",
+      "popPct": 3.8
+     },
+     {
+      "areaPct": 2.2,
+      "key": "10",
+      "popPct": 1.1
+     },
+     {
+      "areaPct": 0.0,
+      "key": "8",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8024,
+    "pres2020New": 36.9,
+    "pres2020Old": 7.8,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.6,
+    "text": "A new footprint: only 1% of its population was in the 2016\u20132020 HD-8; it draws from the old HD-7 (94%), the old HD-9 (4%), the old HD-10 (1%). Entirely in Laramie County. 2020 presidential margin R+7.8 on the 2016\u20132020 lines \u2192 R+36.9 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 94.7,
+      "key": "9",
+      "popPct": 98.9
+     },
+     {
+      "areaPct": 5.2,
+      "key": "7",
+      "popPct": 1.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 8778,
+    "pres2020New": 21.6,
+    "pres2020Old": 21.8,
+    "retainedAreaPct": 94.7,
+    "retainedPopPct": 98.9,
+    "text": "Kept 99% of its population from the 2016\u20132020 HD-9; gained the rest from the old HD-7 (1%). Entirely in Laramie County. 2020 presidential margin R+21.8 on the 2016\u20132020 lines \u2192 R+21.6 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ },
+ "meta": {
+  "built": "2026-10-10",
+  "minSharePct": 0.5
+ },
+ "senate": {
+  "current": {
+   "1": {
+    "contributors": [
+     {
+      "areaPct": 98.8,
+      "key": "1",
+      "popPct": 94.9
+     },
+     {
+      "areaPct": 1.2,
+      "key": "23",
+      "popPct": 5.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Campbell",
+      "popPct": 45.9
+     },
+     {
+      "county": "Crook",
+      "popPct": 41.0
+     },
+     {
+      "county": "Weston",
+      "popPct": 13.1
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17528,
+    "pres2020New": 81.2,
+    "pres2020Old": 81.1,
+    "retainedAreaPct": 98.8,
+    "retainedPopPct": 94.9,
+    "text": "Kept 95% of its population from the 2016\u20132020 SD-1; gained the rest from the old SD-23 (5%). Spans Campbell, Crook, Weston counties. 2020 presidential margin R+81.1 on the 2016\u20132020 lines \u2192 R+81.2 on the current lines.",
+    "toEra": "current"
+   },
+   "10": {
+    "contributors": [
+     {
+      "areaPct": 89.5,
+      "key": "10",
+      "popPct": 56.5
+     },
+     {
+      "areaPct": 0.2,
+      "key": "9",
+      "popPct": 42.3
+     },
+     {
+      "areaPct": 10.3,
+      "key": "11",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Albany",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 20100,
+    "pres2020New": 12.1,
+    "pres2020Old": 4.8,
+    "retainedAreaPct": 89.5,
+    "retainedPopPct": 56.5,
+    "text": "Kept 56% of its population from the 2016\u20132020 SD-10; gained the rest from the old SD-9 (42%), the old SD-11 (1%). Entirely in Albany County. 2020 presidential margin R+4.8 on the 2016\u20132020 lines \u2192 R+12.1 on the current lines.",
+    "toEra": "current"
+   },
+   "11": {
+    "contributors": [
+     {
+      "areaPct": 71.6,
+      "key": "11",
+      "popPct": 81.7
+     },
+     {
+      "areaPct": 25.3,
+      "key": "12",
+      "popPct": 16.2
+     },
+     {
+      "areaPct": 3.0,
+      "key": "14",
+      "popPct": 1.3
+     },
+     {
+      "areaPct": 0.0,
+      "key": "13",
+      "popPct": 0.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Carbon",
+      "popPct": 72.8
+     },
+     {
+      "county": "Sweetwater",
+      "popPct": 27.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 19963,
+    "pres2020New": 56.0,
+    "pres2020Old": 57.1,
+    "retainedAreaPct": 71.6,
+    "retainedPopPct": 81.7,
+    "text": "Kept 82% of its population from the 2016\u20132020 SD-11; gained the rest from the old SD-12 (16%), the old SD-14 (1%), the old SD-13 (1%). Spans Carbon, Sweetwater counties. 2020 presidential margin R+57.1 on the 2016\u20132020 lines \u2192 R+56.0 on the current lines.",
+    "toEra": "current"
+   },
+   "12": {
+    "contributors": [
+     {
+      "areaPct": 60.7,
+      "key": "12",
+      "popPct": 81.6
+     },
+     {
+      "areaPct": 7.5,
+      "key": "13",
+      "popPct": 15.7
+     },
+     {
+      "areaPct": 31.0,
+      "key": "14",
+      "popPct": 2.7
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sweetwater",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16040,
+    "pres2020New": 44.6,
+    "pres2020Old": 44.6,
+    "retainedAreaPct": 60.7,
+    "retainedPopPct": 81.6,
+    "text": "Kept 82% of its population from the 2016\u20132020 SD-12; gained the rest from the old SD-13 (16%), the old SD-14 (3%). Entirely in Sweetwater County. 2020 presidential margin R+44.6 on the 2016\u20132020 lines \u2192 R+44.6 on the current lines.",
+    "toEra": "current"
+   },
+   "13": {
+    "contributors": [
+     {
+      "areaPct": 91.6,
+      "key": "13",
+      "popPct": 81.7
+     },
+     {
+      "areaPct": 7.4,
+      "key": "14",
+      "popPct": 14.3
+     },
+     {
+      "areaPct": 1.0,
+      "key": "12",
+      "popPct": 4.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sweetwater",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15900,
+    "pres2020New": 50.0,
+    "pres2020Old": 49.4,
+    "retainedAreaPct": 91.6,
+    "retainedPopPct": 81.7,
+    "text": "Kept 82% of its population from the 2016\u20132020 SD-13; gained the rest from the old SD-14 (14%), the old SD-12 (4%). Entirely in Sweetwater County. 2020 presidential margin R+49.4 on the 2016\u20132020 lines \u2192 R+50.0 on the current lines.",
+    "toEra": "current"
+   },
+   "14": {
+    "contributors": [
+     {
+      "areaPct": 74.0,
+      "key": "14",
+      "popPct": 65.0
+     },
+     {
+      "areaPct": 0.1,
+      "key": "13",
+      "popPct": 15.1
+     },
+     {
+      "areaPct": 25.4,
+      "key": "16",
+      "popPct": 10.7
+     },
+     {
+      "areaPct": 0.1,
+      "key": "15",
+      "popPct": 4.7
+     },
+     {
+      "areaPct": 0.5,
+      "key": "11",
+      "popPct": 4.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sublette",
+      "popPct": 42.1
+     },
+     {
+      "county": "Sweetwater",
+      "popPct": 23.7
+     },
+     {
+      "county": "Lincoln",
+      "popPct": 23.0
+     },
+     {
+      "county": "Uinta",
+      "popPct": 11.2
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 20726,
+    "pres2020New": 64.4,
+    "pres2020Old": 64.5,
+    "retainedAreaPct": 74.0,
+    "retainedPopPct": 65.0,
+    "text": "Kept 65% of its population from the 2016\u20132020 SD-14; gained the rest from the old SD-13 (15%), the old SD-16 (11%), the old SD-15 (5%) and 1 more. Spans Sublette, Sweetwater, Lincoln, Uinta counties. 2020 presidential margin R+64.5 on the 2016\u20132020 lines \u2192 R+64.4 on the current lines.",
+    "toEra": "current"
+   },
+   "15": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "15",
+      "popPct": 98.9
+     },
+     {
+      "areaPct": 0.0,
+      "key": "14",
+      "popPct": 1.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Uinta",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 18122,
+    "pres2020New": 62.3,
+    "pres2020Old": 62.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 98.9,
+    "text": "Kept 99% of its population from the 2016\u20132020 SD-15; gained the rest from the old SD-14 (1%). Entirely in Uinta County. 2020 presidential margin R+62.1 on the 2016\u20132020 lines \u2192 R+62.3 on the current lines.",
+    "toEra": "current"
+   },
+   "16": {
+    "contributors": [
+     {
+      "areaPct": 99.1,
+      "key": "16",
+      "popPct": 95.2
+     },
+     {
+      "areaPct": 0.9,
+      "key": "17",
+      "popPct": 4.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Lincoln",
+      "popPct": 82.0
+     },
+     {
+      "county": "Teton",
+      "popPct": 17.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Sublette",
+      "popPct": 3.5
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 18062,
+    "pres2020New": 41.4,
+    "pres2020Old": 45.3,
+    "retainedAreaPct": 99.1,
+    "retainedPopPct": 95.2,
+    "text": "Kept 95% of its population from the 2016\u20132020 SD-16; gained the rest from the old SD-17 (5%). Counties: lost Sublette. 2020 presidential margin R+45.3 on the 2016\u20132020 lines \u2192 R+41.4 on the current lines.",
+    "toEra": "current"
+   },
+   "17": {
+    "contributors": [
+     {
+      "areaPct": 93.7,
+      "key": "17",
+      "popPct": 93.8
+     },
+     {
+      "areaPct": 6.3,
+      "key": "16",
+      "popPct": 6.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Teton",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 20086,
+    "pres2020New": -36.4,
+    "pres2020Old": -37.8,
+    "retainedAreaPct": 93.7,
+    "retainedPopPct": 93.8,
+    "text": "Kept 94% of its population from the 2016\u20132020 SD-17; gained the rest from the old SD-16 (6%). Entirely in Teton County. 2020 presidential margin D+37.8 on the 2016\u20132020 lines \u2192 D+36.4 on the current lines.",
+    "toEra": "current"
+   },
+   "18": {
+    "contributors": [
+     {
+      "areaPct": 99.8,
+      "key": "18",
+      "popPct": 99.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Park",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17606,
+    "pres2020New": 55.0,
+    "pres2020Old": 55.4,
+    "retainedAreaPct": 99.8,
+    "retainedPopPct": 99.8,
+    "text": "Lines unchanged from the 2016\u20132020 map. Entirely in Park County.",
+    "toEra": "current"
+   },
+   "19": {
+    "contributors": [
+     {
+      "areaPct": 95.8,
+      "key": "19",
+      "popPct": 97.5
+     },
+     {
+      "areaPct": 2.4,
+      "key": "20",
+      "popPct": 1.3
+     },
+     {
+      "areaPct": 1.8,
+      "key": "18",
+      "popPct": 1.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Park",
+      "popPct": 54.6
+     },
+     {
+      "county": "Big Horn",
+      "popPct": 45.3
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 18305,
+    "pres2020New": 62.6,
+    "pres2020Old": 62.0,
+    "retainedAreaPct": 95.8,
+    "retainedPopPct": 97.5,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-19; gained the rest from the old SD-20 (1%), the old SD-18 (1%). Spans Park, Big Horn counties. 2020 presidential margin R+62.0 on the 2016\u20132020 lines \u2192 R+62.6 on the current lines.",
+    "toEra": "current"
+   },
+   "2": {
+    "contributors": [
+     {
+      "areaPct": 56.0,
+      "key": "2",
+      "popPct": 57.1
+     },
+     {
+      "areaPct": 2.7,
+      "key": "27",
+      "popPct": 24.6
+     },
+     {
+      "areaPct": 33.6,
+      "key": "23",
+      "popPct": 12.8
+     },
+     {
+      "areaPct": 7.7,
+      "key": "30",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Converse",
+      "popPct": 69.9
+     },
+     {
+      "county": "Natrona",
+      "popPct": 30.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Natrona",
+      "popPct": 30.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Platte",
+      "popPct": 43.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 19672,
+    "pres2020New": 70.5,
+    "pres2020Old": 67.9,
+    "retainedAreaPct": 56.0,
+    "retainedPopPct": 57.1,
+    "text": "Kept 57% of its population from the 2016\u20132020 SD-2; gained the rest from the old SD-27 (25%), the old SD-23 (13%), the old SD-30 (6%). Counties: gained Natrona (30%); lost Platte. 2020 presidential margin R+67.9 on the 2016\u20132020 lines \u2192 R+70.5 on the current lines.",
+    "toEra": "current"
+   },
+   "20": {
+    "contributors": [
+     {
+      "areaPct": 95.7,
+      "key": "20",
+      "popPct": 91.2
+     },
+     {
+      "areaPct": 3.5,
+      "key": "18",
+      "popPct": 6.9
+     },
+     {
+      "areaPct": 0.8,
+      "key": "19",
+      "popPct": 1.9
+     }
+    ],
+    "counties": [
+     {
+      "county": "Washakie",
+      "popPct": 42.2
+     },
+     {
+      "county": "Hot Springs",
+      "popPct": 25.3
+     },
+     {
+      "county": "Big Horn",
+      "popPct": 17.6
+     },
+     {
+      "county": "Park",
+      "popPct": 11.1
+     },
+     {
+      "county": "Fremont",
+      "popPct": 3.8
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 18225,
+    "pres2020New": 64.5,
+    "pres2020Old": 65.7,
+    "retainedAreaPct": 95.7,
+    "retainedPopPct": 91.2,
+    "text": "Kept 91% of its population from the 2016\u20132020 SD-20; gained the rest from the old SD-18 (7%), the old SD-19 (2%). Spans Washakie, Hot Springs, Big Horn, Park and 1 more counties. 2020 presidential margin R+65.7 on the 2016\u20132020 lines \u2192 R+64.5 on the current lines.",
+    "toEra": "current"
+   },
+   "21": {
+    "contributors": [
+     {
+      "areaPct": 94.4,
+      "key": "21",
+      "popPct": 95.7
+     },
+     {
+      "areaPct": 5.5,
+      "key": "22",
+      "popPct": 4.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sheridan",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 19508,
+    "pres2020New": 45.2,
+    "pres2020Old": 45.3,
+    "retainedAreaPct": 94.4,
+    "retainedPopPct": 95.7,
+    "text": "Kept 96% of its population from the 2016\u20132020 SD-21; gained the rest from the old SD-22 (4%). Entirely in Sheridan County. 2020 presidential margin R+45.3 on the 2016\u20132020 lines \u2192 R+45.2 on the current lines.",
+    "toEra": "current"
+   },
+   "22": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "22",
+      "popPct": 92.2
+     },
+     {
+      "areaPct": 0.0,
+      "key": "21",
+      "popPct": 7.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Sheridan",
+      "popPct": 57.5
+     },
+     {
+      "county": "Johnson",
+      "popPct": 42.5
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 19860,
+    "pres2020New": 55.8,
+    "pres2020Old": 56.1,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 92.2,
+    "text": "Kept 92% of its population from the 2016\u20132020 SD-22; gained the rest from the old SD-21 (8%). Spans Sheridan, Johnson counties. 2020 presidential margin R+56.1 on the 2016\u20132020 lines \u2192 R+55.8 on the current lines.",
+    "toEra": "current"
+   },
+   "23": {
+    "contributors": [
+     {
+      "areaPct": 99.6,
+      "key": "23",
+      "popPct": 85.3
+     },
+     {
+      "areaPct": 0.3,
+      "key": "24",
+      "popPct": 9.2
+     },
+     {
+      "areaPct": 0.1,
+      "key": "1",
+      "popPct": 5.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Campbell",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [
+     {
+      "county": "Converse",
+      "popPct": 12.4
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 19789,
+    "pres2020New": 80.6,
+    "pres2020Old": 79.0,
+    "retainedAreaPct": 99.6,
+    "retainedPopPct": 85.3,
+    "text": "Kept 85% of its population from the 2016\u20132020 SD-23; gained the rest from the old SD-24 (9%), the old SD-1 (6%). Counties: lost Converse. 2020 presidential margin R+79.0 on the 2016\u20132020 lines \u2192 R+80.6 on the current lines.",
+    "toEra": "current"
+   },
+   "24": {
+    "contributors": [
+     {
+      "areaPct": 96.6,
+      "key": "24",
+      "popPct": 97.0
+     },
+     {
+      "areaPct": 3.2,
+      "key": "1",
+      "popPct": 3.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Campbell",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 19193,
+    "pres2020New": 70.3,
+    "pres2020Old": 70.6,
+    "retainedAreaPct": 96.6,
+    "retainedPopPct": 97.0,
+    "text": "Kept 97% of its population from the 2016\u20132020 SD-24; gained the rest from the old SD-1 (3%). Entirely in Campbell County. 2020 presidential margin R+70.6 on the 2016\u20132020 lines \u2192 R+70.3 on the current lines.",
+    "toEra": "current"
+   },
+   "25": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "25",
+      "popPct": 99.4
+     },
+     {
+      "areaPct": 0.0,
+      "key": "26",
+      "popPct": 0.6
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fremont",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17998,
+    "pres2020New": 7.8,
+    "pres2020Old": 9.7,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 99.4,
+    "text": "Kept 99% of its population from the 2016\u20132020 SD-25; gained the rest from the old SD-26 (1%). Entirely in Fremont County. 2020 presidential margin R+9.7 on the 2016\u20132020 lines \u2192 R+7.8 on the current lines.",
+    "toEra": "current"
+   },
+   "26": {
+    "contributors": [
+     {
+      "areaPct": 89.8,
+      "key": "26",
+      "popPct": 95.9
+     },
+     {
+      "areaPct": 10.2,
+      "key": "25",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Fremont",
+      "popPct": 99.9
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 20551,
+    "pres2020New": 58.8,
+    "pres2020Old": 59.3,
+    "retainedAreaPct": 89.8,
+    "retainedPopPct": 95.9,
+    "text": "Kept 96% of its population from the 2016\u20132020 SD-26; gained the rest from the old SD-25 (4%). Entirely in Fremont County. 2020 presidential margin R+59.3 on the 2016\u20132020 lines \u2192 R+58.8 on the current lines.",
+    "toEra": "current"
+   },
+   "27": {
+    "contributors": [
+     {
+      "areaPct": 39.3,
+      "key": "27",
+      "popPct": 80.0
+     },
+     {
+      "areaPct": 9.1,
+      "key": "28",
+      "popPct": 19.5
+     },
+     {
+      "areaPct": 51.6,
+      "key": "29",
+      "popPct": 0.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Natrona",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 20333,
+    "pres2020New": 43.3,
+    "pres2020Old": 48.7,
+    "retainedAreaPct": 39.3,
+    "retainedPopPct": 80.0,
+    "text": "Kept 80% of its population from the 2016\u20132020 SD-27; gained the rest from the old SD-28 (20%), the old SD-29 (0%). Entirely in Natrona County. 2020 presidential margin R+48.7 on the 2016\u20132020 lines \u2192 R+43.3 on the current lines.",
+    "toEra": "current"
+   },
+   "28": {
+    "contributors": [
+     {
+      "areaPct": 90.0,
+      "key": "28",
+      "popPct": 90.6
+     },
+     {
+      "areaPct": 7.2,
+      "key": "27",
+      "popPct": 5.2
+     },
+     {
+      "areaPct": 2.8,
+      "key": "29",
+      "popPct": 4.1
+     }
+    ],
+    "counties": [
+     {
+      "county": "Natrona",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16419,
+    "pres2020New": 31.0,
+    "pres2020Old": 32.0,
+    "retainedAreaPct": 90.0,
+    "retainedPopPct": 90.6,
+    "text": "Kept 91% of its population from the 2016\u20132020 SD-28; gained the rest from the old SD-27 (5%), the old SD-29 (4%). Entirely in Natrona County. 2020 presidential margin R+32.0 on the 2016\u20132020 lines \u2192 R+31.0 on the current lines.",
+    "toEra": "current"
+   },
+   "29": {
+    "contributors": [
+     {
+      "areaPct": 96.1,
+      "key": "29",
+      "popPct": 95.3
+     },
+     {
+      "areaPct": 0.8,
+      "key": "30",
+      "popPct": 3.2
+     },
+     {
+      "areaPct": 0.1,
+      "key": "28",
+      "popPct": 1.3
+     }
+    ],
+    "counties": [
+     {
+      "county": "Natrona",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 19107,
+    "pres2020New": 47.9,
+    "pres2020Old": 47.4,
+    "retainedAreaPct": 96.1,
+    "retainedPopPct": 95.3,
+    "text": "Kept 95% of its population from the 2016\u20132020 SD-29; gained the rest from the old SD-30 (3%), the old SD-28 (1%). Entirely in Natrona County. 2020 presidential margin R+47.4 on the 2016\u20132020 lines \u2192 R+47.9 on the current lines.",
+    "toEra": "current"
+   },
+   "3": {
+    "contributors": [
+     {
+      "areaPct": 97.4,
+      "key": "3",
+      "popPct": 97.5
+     },
+     {
+      "areaPct": 2.6,
+      "key": "6",
+      "popPct": 2.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Goshen",
+      "popPct": 64.1
+     },
+     {
+      "county": "Weston",
+      "popPct": 23.3
+     },
+     {
+      "county": "Niobrara",
+      "popPct": 12.6
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 19500,
+    "pres2020New": 64.0,
+    "pres2020Old": 63.6,
+    "retainedAreaPct": 97.4,
+    "retainedPopPct": 97.5,
+    "text": "Kept 98% of its population from the 2016\u20132020 SD-3; gained the rest from the old SD-6 (2%). Spans Goshen, Weston, Niobrara counties. 2020 presidential margin R+63.6 on the 2016\u20132020 lines \u2192 R+64.0 on the current lines.",
+    "toEra": "current"
+   },
+   "30": {
+    "contributors": [
+     {
+      "areaPct": 100.0,
+      "key": "30",
+      "popPct": 96.6
+     },
+     {
+      "areaPct": 0.0,
+      "key": "29",
+      "popPct": 3.2
+     }
+    ],
+    "counties": [
+     {
+      "county": "Natrona",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 18175,
+    "pres2020New": 61.4,
+    "pres2020Old": 61.8,
+    "retainedAreaPct": 100.0,
+    "retainedPopPct": 96.6,
+    "text": "Kept 97% of its population from the 2016\u20132020 SD-30; gained the rest from the old SD-29 (3%). Entirely in Natrona County. 2020 presidential margin R+61.8 on the 2016\u20132020 lines \u2192 R+61.4 on the current lines.",
+    "toEra": "current"
+   },
+   "31": {
+    "contributors": [
+     {
+      "areaPct": 73.2,
+      "key": "7",
+      "popPct": 54.9
+     },
+     {
+      "areaPct": 1.4,
+      "key": "4",
+      "popPct": 22.7
+     },
+     {
+      "areaPct": 25.4,
+      "key": "6",
+      "popPct": 22.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 21383,
+    "pres2020New": 29.9,
+    "pres2020Old": null,
+    "retainedAreaPct": 0.0,
+    "retainedPopPct": 0.0,
+    "text": "A new footprint: none of its population was in the 2016\u20132020 SD-31; it draws from the old SD-7 (55%), the old SD-4 (23%), the old SD-6 (22%). Counties: gained Laramie (100%).",
+    "toEra": "current"
+   },
+   "4": {
+    "contributors": [
+     {
+      "areaPct": 93.1,
+      "key": "4",
+      "popPct": 53.0
+     },
+     {
+      "areaPct": 4.4,
+      "key": "5",
+      "popPct": 44.9
+     },
+     {
+      "areaPct": 2.5,
+      "key": "6",
+      "popPct": 2.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16759,
+    "pres2020New": 26.7,
+    "pres2020Old": 30.8,
+    "retainedAreaPct": 93.1,
+    "retainedPopPct": 53.0,
+    "text": "Kept 53% of its population from the 2016\u20132020 SD-4; gained the rest from the old SD-5 (45%), the old SD-6 (2%). Entirely in Laramie County. 2020 presidential margin R+30.8 on the 2016\u20132020 lines \u2192 R+26.7 on the current lines.",
+    "toEra": "current"
+   },
+   "5": {
+    "contributors": [
+     {
+      "areaPct": 65.4,
+      "key": "5",
+      "popPct": 55.9
+     },
+     {
+      "areaPct": 32.8,
+      "key": "8",
+      "popPct": 42.6
+     },
+     {
+      "areaPct": 0.2,
+      "key": "7",
+      "popPct": 1.4
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 15606,
+    "pres2020New": 37.0,
+    "pres2020Old": 21.4,
+    "retainedAreaPct": 65.4,
+    "retainedPopPct": 55.9,
+    "text": "Kept 56% of its population from the 2016\u20132020 SD-5; gained the rest from the old SD-8 (43%), the old SD-7 (1%). Entirely in Laramie County. 2020 presidential margin R+21.4 on the 2016\u20132020 lines \u2192 R+37.0 on the current lines.",
+    "toEra": "current"
+   },
+   "6": {
+    "contributors": [
+     {
+      "areaPct": 52.1,
+      "key": "2",
+      "popPct": 45.2
+     },
+     {
+      "areaPct": 27.3,
+      "key": "6",
+      "popPct": 41.8
+     },
+     {
+      "areaPct": 20.6,
+      "key": "4",
+      "popPct": 13.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 54.8
+     },
+     {
+      "county": "Platte",
+      "popPct": 45.1
+     }
+    ],
+    "countiesGained": [
+     {
+      "county": "Platte",
+      "popPct": 45.1
+     }
+    ],
+    "countiesLost": [
+     {
+      "county": "Goshen",
+      "popPct": 2.2
+     }
+    ],
+    "fromEra": "2020",
+    "pop2020": 19034,
+    "pres2020New": 61.6,
+    "pres2020Old": 43.4,
+    "retainedAreaPct": 27.3,
+    "retainedPopPct": 41.8,
+    "text": "A new footprint: only 42% of its population was in the 2016\u20132020 SD-6; it draws from the old SD-2 (45%), the old SD-4 (13%). Counties: gained Platte (45%); lost Goshen. 2020 presidential margin R+43.4 on the 2016\u20132020 lines \u2192 R+61.6 on the current lines.",
+    "toEra": "current"
+   },
+   "7": {
+    "contributors": [
+     {
+      "areaPct": 28.7,
+      "key": "6",
+      "popPct": 49.4
+     },
+     {
+      "areaPct": 49.0,
+      "key": "4",
+      "popPct": 29.0
+     },
+     {
+      "areaPct": 18.4,
+      "key": "5",
+      "popPct": 15.5
+     },
+     {
+      "areaPct": 3.9,
+      "key": "7",
+      "popPct": 6.0
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 17538,
+    "pres2020New": 13.9,
+    "pres2020Old": 21.5,
+    "retainedAreaPct": 3.9,
+    "retainedPopPct": 6.0,
+    "text": "A new footprint: only 6% of its population was in the 2016\u20132020 SD-7; it draws from the old SD-6 (49%), the old SD-4 (29%), the old SD-5 (16%). Entirely in Laramie County. 2020 presidential margin R+21.5 on the 2016\u20132020 lines \u2192 R+13.9 on the current lines.",
+    "toEra": "current"
+   },
+   "8": {
+    "contributors": [
+     {
+      "areaPct": 87.6,
+      "key": "8",
+      "popPct": 72.5
+     },
+     {
+      "areaPct": 11.4,
+      "key": "7",
+      "popPct": 27.5
+     }
+    ],
+    "counties": [
+     {
+      "county": "Laramie",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 18797,
+    "pres2020New": 9.4,
+    "pres2020Old": 18.2,
+    "retainedAreaPct": 87.6,
+    "retainedPopPct": 72.5,
+    "text": "Kept 72% of its population from the 2016\u20132020 SD-8; gained the rest from the old SD-7 (28%). Entirely in Laramie County. 2020 presidential margin R+18.2 on the 2016\u20132020 lines \u2192 R+9.4 on the current lines.",
+    "toEra": "current"
+   },
+   "9": {
+    "contributors": [
+     {
+      "areaPct": 52.9,
+      "key": "9",
+      "popPct": 54.2
+     },
+     {
+      "areaPct": 47.1,
+      "key": "10",
+      "popPct": 45.8
+     }
+    ],
+    "counties": [
+     {
+      "county": "Albany",
+      "popPct": 100.0
+     }
+    ],
+    "countiesGained": [],
+    "countiesLost": [],
+    "fromEra": "2020",
+    "pop2020": 16966,
+    "pres2020New": -21.0,
+    "pres2020Old": -12.7,
+    "retainedAreaPct": 52.9,
+    "retainedPopPct": 54.2,
+    "text": "Kept 54% of its population from the 2016\u20132020 SD-9; gained the rest from the old SD-10 (46%). Entirely in Albany County. 2020 presidential margin D+12.7 on the 2016\u20132020 lines \u2192 D+21.0 on the current lines.",
+    "toEra": "current"
+   }
+  }
+ }
+}
